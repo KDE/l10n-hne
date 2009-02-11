@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_battery\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-17 09:40+0100\n"
+"POT-Creation-Date: 2009-01-29 07:19+0100\n"
 "PO-Revision-Date: 2009-01-28 15:25+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: battery.cpp:216
+msgid "General"
+msgstr ""
 
 #: battery.cpp:371
 msgid "Screen Brightness"
@@ -48,80 +52,50 @@ msgstr "पावर प्रबंधन"
 
 #: battery.cpp:510
 #, kde-format
-msgid "<b>1 hour 1 minute</b> remaining<br />"
-msgid_plural "<b>1 hour %1 minutes</b> remaining<br />"
-msgstr[0] "<b>१ घंटा १ मिनट </b> बाकी बचे हे<br />"
-msgstr[1] "<b>1 घंटा %1 मिनट</b> बाकी बचे हे<br />"
+msgid "Time remaining: <b>%1</b><br />"
+msgstr ""
 
-#: battery.cpp:516
-#, kde-format
-msgid "<b>%1 hour %1 minute</b> remaining<br />"
-msgid_plural "<b>%1 hours %2 minute</b> remaining<br />"
-msgstr[0] "<b>%1 घंटा %1 मिनट</b> बाकी बचे हे<br />"
-msgstr[1] "<b>%1 घंटा %2 मिनट</b> बाकी बचे हे<br />"
-
-#: battery.cpp:518
-#, kde-format
-msgid "<b>%1 hour %2 minutes</b> remaining<br />"
-msgid_plural "<b>%1 hours %2 minutes</b> remaining<br />"
-msgstr[0] "<b>%1 घंटा %2 मिनट</b> बाकी बचे हे<br />"
-msgstr[1] "<b>%1 घंटा %2 मिनट</b> बाकी बचे हे<br />"
-
-#: battery.cpp:521
-#, kde-format
-msgid "<b>%1 hours</b> remaining<br />"
-msgstr "<b>%1 घंटा</b> बाकी बचे हे<br />"
-
-#: battery.cpp:525
-#, kde-format
-msgid "<b>%1 minute</b> remaining<br />"
-msgid_plural "<b>%1 minutes</b> remaining<br />"
-msgstr[0] "<b>%1 मिनट</b> बाकी बचे हे<br />"
-msgstr[1] "<b>%1 मिनट</b> बाकी बचे हे<br />"
-
-#: battery.cpp:542
+#: battery.cpp:529
 #, kde-format
 msgid "<b>Battery:</b> %1% (fully charged)<br />"
 msgstr "<b>बैटरी:</b> %1% (पूरा चार्ज हे)<br />"
 
-#: battery.cpp:544
+#: battery.cpp:531
 #, kde-format
 msgctxt "Shown when a time estimate is not available"
 msgid "<b>Battery:</b> %1% (discharging)<br />"
 msgstr "<b>बैटरी:</b> %1% (डिस्चार्ज होवत हे)<br />"
 
-#: battery.cpp:546
+#: battery.cpp:533
 #, kde-format
 msgid "<b>Battery:</b> %1% (charging)<br />"
 msgstr "<b>बैटरी:</b> %1% (चार्ज होवत हे)<br />"
 
-#: battery.cpp:549
+#: battery.cpp:536 battery.cpp:557
 msgctxt "Battery is not plugged in"
 msgid "<b>Battery:</b> not present<br />"
 msgstr "<b>बैटरी:</b> नइ हे<br />"
 
-#: battery.cpp:553
+#: battery.cpp:541
 #, kde-format
 msgid "<b>Battery %1:</b> %2% (fully charged)<br />"
 msgstr "<b>बैटरी %1:</b> %2% (पूरा चार्ज होगे हे)<br />"
 
-#: battery.cpp:555
+#: battery.cpp:543
 #, kde-format
 msgid "<b>Battery %1:</b> %2% (discharging)<br />"
 msgstr "<b>बैटरी %1:</b> %2% (डिस्चार्ज होवत हे)<br />"
 
-#: battery.cpp:557
+#: battery.cpp:545
 #, kde-format
 msgid "<b>Battery %1:</b> %2% (charging)<br />"
 msgstr "<b>बैटरी %1:</b> %2% (चार्ज होवत हे)<br />"
 
-#: battery.cpp:564
-#| msgid "AC Adapter"
+#: battery.cpp:552
 msgid "<b>AC Adapter:</b> Plugged in"
 msgstr "<b>एसी एडाप्टर:</b> प्लग मं लगे हे"
 
-#: battery.cpp:566
-#| msgid "AC Adapter"
+#: battery.cpp:554
 msgid "<b>AC Adapter:</b> Not plugged in"
 msgstr "<b>एसी एडाप्टर:</b> प्लग मं नइ लगे हे"
 
@@ -136,7 +110,6 @@ msgstr "बैटरी मानीटर कान्फिगर करव "
 #. i18n: file: batteryConfig.ui:25
 #. i18n: ectx: property (text), widget (QCheckBox, showBatteryStringCheckBox)
 #: rc.cpp:9
-#| msgid "Show the &charge percentage on the battery"
 msgid "Show the percentage of &charge on the battery"
 msgstr "बैटरी मं चार्ज के प्रतिसत देखाव (&c)"
 
@@ -145,6 +118,29 @@ msgstr "बैटरी मं चार्ज के प्रतिसत द�
 #: rc.cpp:12
 msgid "Show the state for &each battery present"
 msgstr "इहां के हर बेटरी के स्थिति ल देखाव (&e)"
+
+#~ msgid "<b>1 hour 1 minute</b> remaining<br />"
+#~ msgid_plural "<b>1 hour %1 minutes</b> remaining<br />"
+#~ msgstr[0] "<b>१ घंटा १ मिनट </b> बाकी बचे हे<br />"
+#~ msgstr[1] "<b>1 घंटा %1 मिनट</b> बाकी बचे हे<br />"
+
+#~ msgid "<b>%1 hour %1 minute</b> remaining<br />"
+#~ msgid_plural "<b>%1 hours %2 minute</b> remaining<br />"
+#~ msgstr[0] "<b>%1 घंटा %1 मिनट</b> बाकी बचे हे<br />"
+#~ msgstr[1] "<b>%1 घंटा %2 मिनट</b> बाकी बचे हे<br />"
+
+#~ msgid "<b>%1 hour %2 minutes</b> remaining<br />"
+#~ msgid_plural "<b>%1 hours %2 minutes</b> remaining<br />"
+#~ msgstr[0] "<b>%1 घंटा %2 मिनट</b> बाकी बचे हे<br />"
+#~ msgstr[1] "<b>%1 घंटा %2 मिनट</b> बाकी बचे हे<br />"
+
+#~ msgid "<b>%1 hours</b> remaining<br />"
+#~ msgstr "<b>%1 घंटा</b> बाकी बचे हे<br />"
+
+#~ msgid "<b>%1 minute</b> remaining<br />"
+#~ msgid_plural "<b>%1 minutes</b> remaining<br />"
+#~ msgstr[0] "<b>%1 मिनट</b> बाकी बचे हे<br />"
+#~ msgstr[1] "<b>%1 मिनट</b> बाकी बचे हे<br />"
 
 #~ msgid "Battery"
 #~ msgstr "बैटरी"
@@ -220,4 +216,3 @@ msgstr "इहां के हर बेटरी के स्थिति ल
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 #~ "right:0px; -qt-block-indent:0; text-indent:0px;\">घड़ी के नवा आकार बर 0 से "
 #~ "500 के बीच सेट करव. आकार वर्गाकार होही जेमां घड़ी होगी.</p></body></html>"
-
