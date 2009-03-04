@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-29 07:19+0100\n"
+"POT-Creation-Date: 2008-11-18 09:55+0100\n"
 "PO-Revision-Date: 2009-01-29 17:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: WorkSheet.cc:93
 #, kde-format
 msgid "Cannot open the file %1."
-msgstr "फाइल %1 ल खोल नइ सकीस."
+msgstr "फाइल %1 ल खोल नइ सकिस."
 
 #: WorkSheet.cc:101
 #, kde-format
@@ -34,7 +34,8 @@ msgid ""
 "The file %1 does not contain a valid worksheet definition, which must have a "
 "document type 'KSysGuardWorkSheet'."
 msgstr ""
-"फाइल %1 मं कोनो वैध वर्कसीट परिभासा नइ हे जेमां कागद किसिम 'के-सिस-गार्ड-वर्क-सीट' हो."
+"फाइल %1 मं कोनो वैध वर्कसीट परिभासा नइ हे जेमां कागद किसिम 'के-सिस-गार्ड-वर्क-सीट' "
+"हो."
 
 #: WorkSheet.cc:132
 #, kde-format
@@ -44,7 +45,7 @@ msgstr "फाइल %1 मं एक अवैध वर्कसीट आक�
 #: WorkSheet.cc:234
 #, kde-format
 msgid "Cannot save file %1"
-msgstr "फाइल %1 सहेज नइ सकीस"
+msgstr "फाइल %1 सहेज नइ सकिस"
 
 #: WorkSheet.cc:280
 msgid "The clipboard does not contain a valid display description."
@@ -76,7 +77,7 @@ msgstr "का आप मन सचमुच मं प्रदर्सक ल
 
 #: WorkSheet.cc:506
 msgid "Delete Display"
-msgstr "प्रदर्सक मेटारव"
+msgstr "प्रदर्सक मेटाव"
 
 #: WorkSheet.cc:525 WorkSheet.cc:528 WorkSheet.cc:530 WorkSheet.cc:532
 #: WorkSheet.cc:534 WorkSheet.cc:536 WorkSheet.cc:540
@@ -84,11 +85,7 @@ msgid "Dummy"
 msgstr "डमी"
 
 #: ksgrd/SensorAgent.cc:105
-#, fuzzy, kde-format
-#| msgid ""
-#| "Message from %1:\n"
-#| "%2"
-msgctxt "%1 is a host name"
+#, kde-format
 msgid ""
 "Message from %1:\n"
 "%2"
@@ -99,7 +96,7 @@ msgstr ""
 #: ksgrd/SensorShellAgent.cc:127
 #, kde-format
 msgid "Could not run daemon program '%1'."
-msgstr "डेमन प्रोग्राम '%1' नइ चला सकीस."
+msgstr "डेमन प्रोग्राम '%1' नइ चला सकिस."
 
 #: ksgrd/SensorShellAgent.cc:134
 #, kde-format
@@ -130,10 +127,9 @@ msgstr "नाइस लोड"
 msgid "User Load"
 msgstr "कमइया लोड"
 
-#: ksgrd/SensorManager.cc:63
-#, fuzzy
-#| msgid "System Load"
-msgctxt "@item sensor description"
+#. i18n: tag WorkSheet attribute title
+#. i18n: file: ./SystemLoad.sgrd:3
+#: ksgrd/SensorManager.cc:63 rc.cpp:149
 msgid "System Load"
 msgstr "तंत्र लोड"
 
@@ -178,14 +174,17 @@ msgid "Free Memory"
 msgstr "मुक्त मेमोरी"
 
 #: ksgrd/SensorManager.cc:74
+#| msgid "Application Memory"
 msgid "Active Memory"
 msgstr "सक्रिय मेमोरी"
 
 #: ksgrd/SensorManager.cc:75
+#| msgid "Cached Memory"
 msgid "Inactive Memory"
 msgstr "अक्रिय मेमोरी"
 
 #: ksgrd/SensorManager.cc:76
+#| msgid "Used Memory"
 msgid "Wired Memory"
 msgstr "वायर्ड मेमोरी"
 
@@ -232,15 +231,15 @@ msgstr "रीड डाटा"
 
 #: ksgrd/SensorManager.cc:87
 msgid "Written Data"
-msgstr "लिखा होय डाटा"
+msgstr "लिखिस होय डाटा"
 
 #: ksgrd/SensorManager.cc:88
 msgid "Milliseconds spent reading"
-msgstr "पढ़े मं लगिस मिलिसेकन्ड"
+msgstr "पढ़े मं लगिस मिलायकन्ड"
 
 #: ksgrd/SensorManager.cc:89
 msgid "Milliseconds spent writing"
-msgstr "लिखे मं लगिस मिलिसेकन्ड"
+msgstr "लिखे मं लगिस मिलायकन्ड"
 
 #: ksgrd/SensorManager.cc:90
 msgid "I/Os currently in progress"
@@ -307,9 +306,6 @@ msgid "Packets"
 msgstr "पैकेट्स"
 
 #: ksgrd/SensorManager.cc:106
-#, fuzzy
-#| msgid "Carrier"
-msgctxt "@item sensor description ('carrier' is a type of network signal)"
 msgid "Carrier"
 msgstr "कैरियर"
 
@@ -327,7 +323,7 @@ msgstr "कुल संख्या"
 
 #: ksgrd/SensorManager.cc:110 ksgrd/SensorManager.cc:167
 msgid "Table"
-msgstr "तालिका"
+msgstr "टेबल"
 
 #: ksgrd/SensorManager.cc:111
 msgid "Advanced Power Management"
@@ -422,10 +418,12 @@ msgid "Linux Soft Raid (md)"
 msgstr "लिनक्स साफ्ट रेड (एमडी)"
 
 #: ksgrd/SensorManager.cc:134
+#| msgid "Process Count"
 msgid "Processors"
 msgstr "प्रोसेसर"
 
 #: ksgrd/SensorManager.cc:135
+#| msgid "Colors"
 msgid "Cores"
 msgstr "कोर"
 
@@ -507,11 +505,13 @@ msgstr "होस्ट %1 नइ मिलिस"
 
 #: ksgrd/SensorSocketAgent.cc:111
 #, kde-format
+#| msgid ""
+#| "An error occurred with the network (e.g., the network cable was "
+#| "accidentally plugged out) for host %1"
 msgid ""
 "An error occurred with the network (e.g. the network cable was accidentally "
 "unplugged) for host %1."
-msgstr ""
-"होस्ट %1 बर नेटवर्क मं एक गलती होइस (उदा.- नेटवर्क केबल ल दुर्धटनावस निकाल ले गिस)"
+msgstr "होस्ट %1 बर नेटवर्क मं एक गलती होइस (उदा.- नेटवर्क केबल ल दुर्धटनावस निकाल ले गिस)"
 
 #: ksgrd/SensorSocketAgent.cc:115
 #, kde-format
@@ -591,7 +591,9 @@ msgstr "मनमाफिक कमांड"
 msgid ""
 "Select this to use the command you entered below to start ksysguardd on the "
 "remote host."
-msgstr "के सिसगार्ड ल रिमोट होस्ट मं चालू करे बर भरे गे कमांड ल उपयोग करे बर एला चुनव."
+msgstr ""
+"के सिसगार्ड ल रिमोट होस्ट मं चालू करे बर भरे गे कमांड ल उपयोग करे बर "
+"एला चुनव."
 
 #: HostConnector.cc:96
 msgid "Port:"
@@ -613,8 +615,7 @@ msgstr "कमांडः"
 
 #: HostConnector.cc:118
 msgid "Enter the command that runs ksysguardd on the host you want to monitor."
-msgstr ""
-"ओ कमांड भरव जऊन कि के-सिसगार्ड ल ओ होस्ट मं चलाही जऊन ल आप मन मानीटर करत हो."
+msgstr "ओ कमांड भरव जऊन कि के-सिसगार्ड ल ओ होस्ट मं चलाही जऊन ल आप मन मानीटर करत हो."
 
 #: HostConnector.cc:122
 msgid "e.g. ssh -l root remote.host.org ksysguardd"
@@ -633,6 +634,9 @@ msgstr "सीट %1"
 
 #: Workspace.cc:162
 #, kde-format
+#| msgid ""
+#| "The worksheet '%1' contains unsaved data.\n"
+#| "Do you want to save the worksheet?"
 msgid ""
 "The tab '%1' contains unsaved data.\n"
 "Do you want to save the tab?"
@@ -641,6 +645,7 @@ msgstr ""
 "का आप मन टैब ल सहेजना चाहू?"
 
 #: Workspace.cc:177
+#| msgid "*.sgrd|Sensor Files"
 msgid "*.sgrd|Sensor Files (*.sgrd)"
 msgstr "*.sgrd|सेंसर फाइल मन ल (*.sgrd)"
 
@@ -649,16 +654,18 @@ msgid "Select Tab File to Import"
 msgstr "आयात बर टैब फाइल चुनव"
 
 #: Workspace.cc:205 Workspace.cc:226
+#| msgid "You do not have a worksheet that could be saved."
 msgid "You do not have a tab that could be saved."
-msgstr "आप मन तीर कोनो टैब नइ हे जऊन ल सहेजे जा सके."
+msgstr "आप मन तिर कोनो टैब नइ हे जऊन ल सहेजे जा सके."
 
 #: Workspace.cc:233
 msgid "Export Tab"
 msgstr "टैब निर्यात करव"
 
 #: Workspace.cc:251
+#| msgid "There are no worksheets that could be deleted."
 msgid "There are no tabs that could be deleted."
-msgstr "वहाँ कोनो टैब नइ हे जऊन ल मिटाय जा सके."
+msgstr "वहाँ कोनो टैब नइ हे जऊन ल मेटाय जा सके."
 
 #: KSGAppletSettings.cc:34
 msgid "System Guard Applet Settings"
@@ -673,9 +680,6 @@ msgid "Size ratio:"
 msgstr "आकार अनुपातः"
 
 #: KSGAppletSettings.cc:63
-#, fuzzy
-#| msgid "%"
-msgctxt "Number suffix in spinbox"
 msgid "%"
 msgstr "%"
 
@@ -718,8 +722,8 @@ msgid ""
 "Enter the minimum value for the display here. If both values are 0, "
 "automatic range detection is enabled."
 msgstr ""
-"इहां प्रदर्सक बर सबसे कम मान भरव. यदि दुनों मूल्य 0 होही तहां सीमा के पता लगाना अपने "
-"अपन सक्छम होही."
+"इहां प्रदर्सक बर सबसे कम मान भरव. यदि दुनों मूल्य 0 होही तहां सीमा के पता "
+"लगाना अपने अपन सक्छम होही."
 
 #: SensorDisplayLib/DancingBarsSettings.cc:85
 #: SensorDisplayLib/FancyPlotterSettings.cc:110
@@ -732,8 +736,8 @@ msgid ""
 "Enter the maximum value for the display here. If both values are 0, "
 "automatic range detection is enabled."
 msgstr ""
-"इहां प्रदर्सक बर सबसे अधिक मान भरव. यदि दुनों मूल्य 0 होही तहां सीमा के पता लगाना अपने "
-"अपन सक्छम होही."
+"इहां प्रदर्सक बर सबसे अधिक मान भरव. यदि दुनों मूल्य 0 होही तहां सीमा के पता "
+"लगाना अपने अपन सक्छम होही."
 
 #: SensorDisplayLib/DancingBarsSettings.cc:103
 msgid "Alarms"
@@ -785,9 +789,6 @@ msgid "Upper limit:"
 msgstr "ऊपरी सीमाः"
 
 #: SensorDisplayLib/DancingBarsSettings.cc:157
-#, fuzzy
-#| msgid "Look"
-msgctxt "@title:tab Appearance of the bar graph"
 msgid "Look"
 msgstr "रूप"
 
@@ -810,7 +811,7 @@ msgstr "सीमा से बाहिर रंग:"
 #: SensorDisplayLib/DancingBarsSettings.cc:176 SensorDisplayLib/LogFile.cc:100
 #: rc.cpp:86 rc.cpp:101 rc.cpp:113 rc.cpp:128
 msgid "Background color:"
-msgstr "पिछोत के रंगः"
+msgstr "पिछोत अंगना के रंगः"
 
 #: SensorDisplayLib/DancingBarsSettings.cc:183
 #: SensorDisplayLib/FancyPlotterSettings.cc:185
@@ -840,12 +841,12 @@ msgstr "लेबल कान्फिगर करे बर ए बटन ल
 #: SensorDisplayLib/DancingBarsSettings.cc:212
 #: SensorDisplayLib/FancyPlotterSettings.cc:258
 msgid "Delete"
-msgstr "मेटारव"
+msgstr "मेटाव"
 
 #: SensorDisplayLib/DancingBarsSettings.cc:213
 #: SensorDisplayLib/FancyPlotterSettings.cc:259
 msgid "Push this button to delete the sensor."
-msgstr "सेंसर मिटाय बर ए बटन ल दबाव"
+msgstr "सेंसर मेटाय बर ए बटन ल दबाव"
 
 #: SensorDisplayLib/DancingBarsSettings.cc:367
 msgid "Label of Bar Graph"
@@ -957,12 +958,13 @@ msgid "Font:"
 msgstr "फोंटः"
 
 #: SensorDisplayLib/FancyPlotterSettings.cc:214
+#| msgid "Vertical lines:"
 msgid "Grid lines:"
 msgstr "ग्रिड लकीर:"
 
 #: SensorDisplayLib/FancyPlotterSettings.cc:220
 msgid "Background:"
-msgstr "पिछोत:"
+msgstr "पिछोत अंगना:"
 
 #: SensorDisplayLib/FancyPlotterSettings.cc:250
 msgid "Set Color..."
@@ -1003,7 +1005,7 @@ msgstr "गुन (&P)"
 
 #: SensorDisplayLib/SensorDisplay.cc:127 SensorDisplayLib/SensorLogger.cc:603
 msgid "&Remove Display"
-msgstr "प्रदर्सक मेटारव (&R)"
+msgstr "प्रदर्सक मेटाव (&R)"
 
 #: SensorDisplayLib/SensorDisplay.cc:196
 #, kde-format
@@ -1020,16 +1022,12 @@ msgid "99999 XXXX"
 msgstr "99999 XXXX"
 
 #: SensorDisplayLib/FancyPlotter.cc:344
-#, fuzzy, kde-format
-#| msgid "<p><b>%1:</b><br>"
-msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
+#, kde-format
 msgid "<p><b>%1:</b><br>"
 msgstr "<p><b>%1:</b><br>"
 
 #: SensorDisplayLib/FancyPlotter.cc:391
-#, fuzzy, kde-format
-#| msgid "%1 of %2"
-msgctxt "%1 and %2 are sensor's last and maximum value"
+#, kde-format
 msgid "%1 of %2"
 msgstr "%2 मं से %1"
 
@@ -1057,7 +1055,7 @@ msgstr "लाग फाइल"
 
 #: SensorDisplayLib/SensorLogger.cc:608
 msgid "&Remove Sensor"
-msgstr "सेंसर मेटारव (&R)"
+msgstr "सेंसर मेटाव (&R)"
 
 #: SensorDisplayLib/SensorLogger.cc:613
 msgid "&Edit Sensor..."
@@ -1102,10 +1100,6 @@ msgid "Foreground color:"
 msgstr "आगू तरफ के रंगः"
 
 #: SensorDisplayLib/MultiMeterSettings.cc:31
-#, fuzzy
-#| msgid "Multimeter Settings"
-msgctxt ""
-"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
 msgid "Multimeter Settings"
 msgstr "मल्टीमीटर सेटिंग "
 
@@ -1119,7 +1113,7 @@ msgstr "सेंसर लागर सेटिंग"
 
 #: SensorDisplayLib/DummyDisplay.cc:30 SensorDisplayLib/DummyDisplay.cc:38
 msgid "Drop Sensor Here"
-msgstr "सेंसर इहां डालें"
+msgstr "सेंसर इहां डालव"
 
 #: SensorDisplayLib/DummyDisplay.cc:32
 msgid ""
@@ -1274,7 +1268,7 @@ msgstr "जोड़व (&A)"
 #. i18n: ectx: property (text), widget (QPushButton, deleteButton)
 #: rc.cpp:137
 msgid "&Delete"
-msgstr "मेटारव (&D)"
+msgstr "मेटाव (&D)"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:189
 #. i18n: ectx: property (text), widget (QPushButton, changeButton)
@@ -1287,14 +1281,9 @@ msgstr "बदलव (&C)"
 #. i18n: tag display attribute title
 #. i18n: file: ./ProcessTable.sgrd:5
 #: rc.cpp:143 rc.cpp:146
+#| msgid "Process Controller"
 msgid "Process Table"
 msgstr "प्रोसेस टेबल"
-
-#. i18n: tag WorkSheet attribute title
-#. i18n: file: ./SystemLoad.sgrd:3
-#: rc.cpp:149
-msgid "System Load"
-msgstr "तंत्र लोड"
 
 #. i18n: tag display attribute title
 #. i18n: file: ./SystemLoad.sgrd:5
@@ -1311,10 +1300,12 @@ msgstr "मेमोरी अउ स्वेप इतिहास"
 #. i18n: tag display attribute title
 #. i18n: file: ./SystemLoad.sgrd:12
 #: rc.cpp:158
+#| msgid "Network"
 msgid "Network History"
 msgstr "नेटवर्क इतिहास"
 
 #: WorkSheetSettings.cc:40
+#| msgid "Properties"
 msgid "Tab Properties"
 msgstr "टैब गुन"
 
@@ -1384,24 +1375,24 @@ msgid "&Close Tab"
 msgstr "टैब बंद करव (&C)"
 
 #: ksysguard.cc:155
+#| msgid "Monitor remote machine..."
 msgid "Monitor &Remote Machine..."
 msgstr "रिमोट मसीन मानीटर करव... (&R)"
 
 #: ksysguard.cc:156
+#| msgid "&New Worksheet..."
 msgid "&Download New Tabs..."
 msgstr "नवा टैब डाउनलोड करव... (&D)"
 
 #: ksysguard.cc:157
+#| msgid "&Properties"
 msgid "Tab &Properties"
 msgstr "टैब गुन (&P)"
 
 #: ksysguard.cc:449
-#, fuzzy, kde-format
-#| msgid " %1 processes "
-msgid " 1 process "
-msgid_plural " %1 processes "
-msgstr[0] " %1 काम"
-msgstr[1] " %1 काम"
+#, kde-format
+msgid " %1 processes "
+msgstr " %1 काम"
 
 #: ksysguard.cc:455
 #, kde-format
@@ -1409,9 +1400,7 @@ msgid " CPU: %1% "
 msgstr "सीपीयू: %1% "
 
 #: ksysguard.cc:469
-#, fuzzy, kde-format
-#| msgid " Memory: %1 / %2 "
-msgctxt "Arguments are formatted byte sizes (used/total)"
+#, kde-format
 msgid " Memory: %1 / %2 "
 msgstr "मेमोरी: %1 / %2 "
 
@@ -1420,13 +1409,12 @@ msgid " No swap space available "
 msgstr "कोई स्वेप जगह नइ मिलत हे"
 
 #: ksysguard.cc:498
-#, fuzzy, kde-format
-#| msgid " Swap: %1 / %2 "
-msgctxt "Arguments are formatted byte sizes (used/total)"
+#, kde-format
 msgid " Swap: %1 / %2 "
 msgstr "स्वेप: %1 / %2 "
 
 #: ksysguard.cc:543
+#| msgid "(c) 1996-2006 The KDE System Monitor Developers"
 msgid "(c) 1996-2008 The KDE System Monitor Developers"
 msgstr "(c) 1996-2008 केडीई तंत्र मानीटर डेवलपर"
 
@@ -1515,14 +1503,14 @@ msgstr "लोड करे बर वैकल्पिक वर्कसी�
 #~ msgid ""
 #~ "The KSysGuard applet does not support displaying of this type of sensor. "
 #~ "Please choose another sensor."
-#~ msgstr ""
-#~ "के-सिसगार्ड ऐप्लेट एखर किसम के सेंसर ल समर्थित नइ करे. किरपा करके, अउ सेंसर चुनव."
+#~ msgstr "के-सिसगार्ड ऐप्लेट एखर किसम के सेंसर ल समर्थित नइ करे. किरपा करके, अउ सेंसर चुनव."
 
 #~ msgid ""
 #~ "The file %1 does not contain a valid applet definition, which must have a "
 #~ "document type 'KSysGuardApplet'."
 #~ msgstr ""
-#~ "फाइल %1 मं वैध ऐप्लेट परिभासा नइ हे जेमां कागद किसिम 'KSysGuardApplet' होना चाही."
+#~ "फाइल %1 मं वैध ऐप्लेट परिभासा नइ हे जेमां कागद किसिम 'KSysGuardApplet' होना "
+#~ "चाही."
 
 #~ msgid "Drag sensors from the KDE System Guard into this cell."
 #~ msgstr "केडीई तंत्र कवच से संवेदकों ल ए सेल मं खींच लाव"
@@ -1539,7 +1527,7 @@ msgstr "लोड करे बर वैकल्पिक वर्कसी�
 #~ msgstr "वर्कसीट निर्यात करव... (&E)"
 
 #~ msgid "&Remove Worksheet"
-#~ msgstr "वर्कसीट मेटारव (&R)"
+#~ msgstr "वर्कसीट मेटाव (&R)"
 
 #~ msgid "&Worksheet Properties"
 #~ msgstr "वर्कसीट गुन (&W)"
@@ -1567,8 +1555,8 @@ msgstr "लोड करे बर वैकल्पिक वर्कसी�
 #~ "for applet displays. The bar is only visible if the display is large "
 #~ "enough."
 #~ msgstr ""
-#~ "सीर्सक पट्टी ल सक्रिय करे बर एला जांचव. हो सकथे ए सिरिफ ऐप्लेट प्रदर्सन बर ही "
-#~ "उपयोगी होही. पट्टी तभी दिखाई देगी यदि डिस्प्ले काफी बड़ा होही."
+#~ "सीर्सक पट्टी ल सक्रिय करे बर एला जांचव. हो सकथे ए सिरिफ ऐप्लेट प्रदर्सन बर "
+#~ "ही उपयोगी होही. पट्टी तभी दिखाई देगी यदि डिस्प्ले काफी बड़ा होही."
 
 #~ msgid "Horizontal lines:"
 #~ msgstr "आड़ी पंक्तियाँ:"
@@ -1589,3 +1577,4 @@ msgstr "लोड करे बर वैकल्पिक वर्कसी�
 
 #~ msgid "Loading Swap Totals.."
 #~ msgstr "स्वैप योग लोड करत हे..."
+
