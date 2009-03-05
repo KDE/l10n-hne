@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-03 09:57+0100\n"
+"POT-Creation-Date: 2009-02-27 06:59+0100\n"
 "PO-Revision-Date: 2009-02-27 17:34+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -46,11 +46,11 @@ msgstr "लोड करना खारिज"
 msgid "Loading completed"
 msgstr "लोड करना पूरा"
 
-#: src/articlelistview.cpp:182 src/subscriptionlistview.cpp:180
+#: src/articlelistview.cpp:178 src/subscriptionlistview.cpp:181
 msgid "Columns"
 msgstr "खंभा"
 
-#: src/articlelistview.cpp:301
+#: src/articlelistview.cpp:307
 msgid ""
 "<h2>Article list</h2>Here you can browse articles from the currently "
 "selected feed. You can also manage articles, as marking them as persistent "
@@ -59,7 +59,7 @@ msgid ""
 "in an external browser window."
 msgstr ""
 
-#: src/articlelistview.cpp:367
+#: src/articlelistview.cpp:374
 msgid ""
 "<div align=center><h3>No matches</h3>Filter does not match any articles, "
 "please change your criteria and try again.</div>"
@@ -67,13 +67,13 @@ msgstr ""
 "<div align=center><h3>कोई मेल नइ</h3>फिल्टर ल कोनो मिलही जुलता कोनो आलेख नइ "
 "मिलिस. किरपा करके, अपन खोजे के मापदन्डों ल बदलव अउ फिर कोसिस करव</div>"
 
-#: src/articlelistview.cpp:378
+#: src/articlelistview.cpp:385
 msgid ""
 "<div align=center><h3>No feed selected</h3>This area is article list. Select "
 "a feed from the feed list and you will see its articles here.</div>"
 msgstr ""
-"<div align=center><h3>कोई फीड नइ चुने गे</h3>ये छेत्र आलेख सूची हे. फीड सूची मं से "
-"फीड चुनव अउ आप मन इहां आलेख देख सकही.</div>"
+"<div align=center><h3>कोई फीड नइ चुने गे</h3>ये छेत्र आलेख सूची हे. फीड सूची मं से फीड "
+"चुनव अउ आप मन इहां आलेख देख सकही.</div>"
 
 #: src/createfoldercommand.cpp:66
 msgid "Add Folder"
@@ -84,19 +84,16 @@ msgid "Folder name:"
 msgstr "फोल्डर नाम:"
 
 #: src/pageviewer.cpp:101 src/actionmanagerimpl.cpp:543
-#| msgid "Back"
 msgctxt "Go back in browser history"
 msgid "Back"
 msgstr "पीछू"
 
 #: src/pageviewer.cpp:109 src/actionmanagerimpl.cpp:536
-#| msgid "Forward"
 msgctxt "Go forward in browser history"
 msgid "Forward"
 msgstr "आगू"
 
 #: src/pageviewer.cpp:116 src/actionmanagerimpl.cpp:552
-#| msgid "Reload"
 msgctxt "Reload current page"
 msgid "Reload"
 msgstr "री-लोड"
@@ -130,15 +127,16 @@ msgid ""
 "<qt>Are you sure you want to delete this folder and its feeds and subfolders?"
 "</qt>"
 msgstr ""
-"<qt>का आप मन सही मं एखर फोल्डर अउ एखर फीड अउ सबफोल्डर मन ल मिटाना चाहथो ?"
-"</qt>"
+"<qt>का आप मन सही मं एखर फोल्डर अउ एखर फीड अउ सबफोल्डर मन ल मिटाना चाहथो ?</qt>"
 
 #: src/deletesubscriptioncommand.cpp:53
 #, kde-format
 msgid ""
 "<qt>Are you sure you want to delete folder <b>%1</b> and its feeds and "
 "subfolders?</qt>"
-msgstr "का आप मन सचमुच एखर फोल्डर <b>%1</b> अउ एखर फीड मन अउ उप-फोल्डर मन ल मिटाना चाहथो ?"
+msgstr ""
+"का आप मन सचमुच एखर फोल्डर <b>%1</b> अउ एखर फीड मन अउ उप-फोल्डर मन ल मिटाना "
+"चाहथो ?"
 
 #: src/deletesubscriptioncommand.cpp:57
 msgid "Delete Folder"
@@ -167,37 +165,31 @@ msgstr ""
 "2</i></p>"
 
 #: src/pluginmanager.cpp:171
-#| msgid "Name"
 msgctxt "Name of the plugin"
 msgid "Name"
 msgstr "नाम"
 
 #: src/pluginmanager.cpp:172
-#| msgid "Library"
 msgctxt "Library name"
 msgid "Library"
 msgstr "लाइब्रेरी"
 
 #: src/pluginmanager.cpp:173
-#| msgid "Authors"
 msgctxt "Plugin authors"
 msgid "Authors"
 msgstr "लेखक"
 
 #: src/pluginmanager.cpp:174
-#| msgid "Email"
 msgctxt "Plugin authors' emaila addresses"
 msgid "Email"
 msgstr "ईमेल"
 
 #: src/pluginmanager.cpp:175
-#| msgid "Version"
 msgctxt "Plugin version"
 msgid "Version"
 msgstr "संस्करन"
 
 #: src/pluginmanager.cpp:176
-#| msgid "Framework Version"
 msgctxt "Framework version plugin requires"
 msgid "Framework Version"
 msgstr "फ्रेमवर्क संस्करन"
@@ -296,7 +288,7 @@ msgstr "ऊपर स्क्राल करव (&S)"
 msgid "&Scroll Down"
 msgstr "नीचे स्क्राल करव (&S)"
 
-#: src/articleviewer.cpp:643
+#: src/articleviewer.cpp:653
 #, kde-format
 msgctxt "%1: Akregator version; %2: homepage URL; --- end of comment ---"
 msgid ""
@@ -312,40 +304,38 @@ msgid ""
 "<p>Thank you,</p>\n"
 "<p style='margin-bottom: 0px'>&nbsp; &nbsp; The Akregator Team</p>\n"
 msgstr ""
-"<h2 style='margin-top: 0px;'>एकेरेगेट %1 मं आप मन के स्वागत हे</h2><p>एकेरेगेटर, के डेस्कटाप "
-"वातावरन बर एक आरएसएस फीड एग्रीगेटर हे. फीड एग्रीगेटर आप मन ल बहुत से किसिमों के "
-"चीज मन, जऊन मं ब्लाग अउ दुसरा आनलाइन सामग्रियाँ इंटरनेट से प्रदान करथो . एखर बदला मा कि "
-"आप रोज रोज खुद आनलाइन चीज मन के खोज इंटरनेट से करव, एकेरेगेटर आप मन ए काम स्वयं, "
-"अपने अपन तरीके से करथे . </p><p>एकेरेगेटर परिचय अउ अधिक जानकारी बर <a href="
-"\"%2\">एकेरेगेटर जालस्थल</a> मं जाव. यदि आप मन एखर पेज ल दुबारा नइ देखना चाहथो तहां "
-"<a href=\"config:/disable_introduction\">इहां किलिक करव</a>.</p><p>हमन ल उम्मीद "
-"हे कि आप मन एकेरेगेटर के आनंद उठाय हो.</p>\n"
+"<h2 style='margin-top: 0px;'>एकेरेगेट %1 मं आप मन के स्वागत हे</h2><p>एकेरेगेटर, के "
+"डेस्कटाप वातावरन बर एक आरएसएस फीड एग्रीगेटर हे. फीड एग्रीगेटर आप मन ल बहुत से किसिमों "
+"के चीज मन, जऊन मं ब्लाग अउ दुसरा आनलाइन सामग्रियाँ इंटरनेट से प्रदान करथो . एखर बदला "
+"मा कि आप रोज रोज खुद आनलाइन चीज मन के खोज इंटरनेट से करव, एकेरेगेटर आप मन ए काम स्वयं, "
+"अपने अपन तरीके से करथे . </p><p>एकेरेगेटर परिचय अउ अधिक जानकारी बर <a href=\"%2"
+"\">एकेरेगेटर जालस्थल</a> मं जाव. यदि आप मन एखर पेज ल दुबारा नइ देखना चाहथो तहां <a "
+"href=\"config:/disable_introduction\">इहां किलिक करव</a>.</p><p>हमन ल उम्मीद हे "
+"कि आप मन एकेरेगेटर के आनंद उठाय हो.</p>\n"
 "<p>धन्यवाद,</p>\n"
 "<p style='margin-bottom: 0px'>&nbsp; &nbsp; एकेरेगेटर टोली</p>\n"
 
-#: src/articleviewer.cpp:659 src/aboutdata.cpp:35
+#: src/articleviewer.cpp:669 src/aboutdata.cpp:35
 msgid "Akregator"
 msgstr "ए-के-रेगेटर"
 
-#: src/articleviewer.cpp:661
+#: src/articleviewer.cpp:671
 msgid "An RSS feed reader for the K Desktop Environment."
 msgstr "के डेस्कटाप वातावरन बर आरएसएस फीड रीडर."
 
-#: src/articleviewer.cpp:698
+#: src/articleviewer.cpp:708
 msgid "Keep Enabled"
 msgstr ""
 
-#: src/articleviewer.cpp:700
+#: src/articleviewer.cpp:710
 msgid "Disable"
 msgstr ""
 
-#: src/articleviewer.cpp:701
-#| msgid "<qt>Are you sure you want to delete this feed?</qt>"
+#: src/articleviewer.cpp:711
 msgid "Are you sure you want to disable this introduction page?"
 msgstr ""
 
-#: src/articleviewer.cpp:701
-#| msgid "Disable Archiving"
+#: src/articleviewer.cpp:711
 msgid "Disable Introduction Page"
 msgstr ""
 
@@ -380,7 +370,6 @@ msgstr "(%1, %2)"
 
 #: src/articleformatter.cpp:62
 #, kde-format
-#| msgid "<b>Homepage:</b> <a href=\"%1\">%2</a>"
 msgid "<a href=\"%1\">%2</a> %3"
 msgstr "<a href=\"%1\">%2</a> %3"
 
@@ -432,12 +421,12 @@ msgstr ""
 msgid "Complete Story"
 msgstr "पूरा कथा"
 
-#: src/akregator_part.cpp:133
+#: src/akregator_part.cpp:135
 #, kde-format
 msgid "Unable to load storage backend plugin \"%1\". No feeds are archived."
 msgstr "भंडार बैकएन्ड प्लगइन \"%1\" लोड करे मं अक्छम. कोनो फीड भंडारित नइ करिस."
 
-#: src/akregator_part.cpp:133
+#: src/akregator_part.cpp:135
 msgid "Plugin error"
 msgstr "प्लगइन गलती"
 
@@ -475,35 +464,26 @@ msgid ""
 "<qt>The standard feed list is corrupted (invalid XML). A backup was created:"
 "<p><b>%1</b></p></qt>"
 msgstr ""
-"<qt>मानक फीड सूची खराब हे (अवैध एक्सएमएल). एक बैकअप बनाइस:<p><b>%1</b></p></"
-"qt>"
+"<qt>मानक फीड सूची खराब हे (अवैध एक्सएमएल). एक बैकअप बनाइस:<p><b>%1</b></p></qt>"
 
 #: src/akregator_part.cpp:387 src/akregator_part.cpp:389
 msgid "XML Parsing Error"
 msgstr "एक्सएमएल पारसिंग गलती"
 
 #: src/akregator_part.cpp:389
-#| msgid ""
-#| "<qt>The standard feed list is corrupted (invalid XML). A backup was "
-#| "created:<p><b>%1</b></p></qt>"
 msgid ""
 "<qt>The standard feed list is corrupted (invalid XML). Could not create a "
 "backup!</p></qt>"
-msgstr ""
-"<qt>मानक फीड सूची खराब हे (अवैध एक्सएमएल). बैकअप नइ बना सकिस!</p></"
-"qt>"
+msgstr "<qt>मानक फीड सूची खराब हे (अवैध एक्सएमएल). बैकअप नइ बना सकिस!</p></qt>"
 
 #: src/akregator_part.cpp:403
 #, kde-format
-#| msgid ""
-#| "<qt>The standard feed list is corrupted (no valid OPML). A backup was "
-#| "created:<p><b>%1</b></p></qt>"
 msgid ""
 "<qt>The standard feed list is corrupted (no valid OPML). A backup of the "
 "previous list was created:<p><b>%1</b></p></qt>"
 msgstr ""
-"<qt>मानक फीड सूची खराब हे (कोई वैध ओपीएमएल नइ). पिछला सूची के एक बैकअप बनाइस:<p><b>%1</"
-"b></p></qt>"
+"<qt>मानक फीड सूची खराब हे (कोई वैध ओपीएमएल नइ). पिछला सूची के एक बैकअप बनाइस:<p><b>"
+"%1</b></p></qt>"
 
 #: src/akregator_part.cpp:403 src/akregator_part.cpp:405
 #: src/akregator_part.cpp:511
@@ -511,17 +491,14 @@ msgid "OPML Parsing Error"
 msgstr "ओपीएमएल पारसिंग गलती"
 
 #: src/akregator_part.cpp:405
-#| msgid ""
-#| "<qt>The standard feed list is corrupted (no valid OPML). A backup was "
-#| "created:<p><b>%1</b></p></qt>"
 msgid ""
 "<qt>The standard feed list is corrupted (no valid OPML). Could not create a "
 "backup!></p></qt>"
-msgstr "<qt>मानक फीड सूची खराब हे (कोई वैध ओपीएमएल नइ). बैकअप नइ बना सकिस!</p></qt>"
+msgstr ""
+"<qt>मानक फीड सूची खराब हे (कोई वैध ओपीएमएल नइ). बैकअप नइ बना सकिस!</p></qt>"
 
 #: src/akregator_part.cpp:452
 #, kde-format
-#| msgid "Access denied: cannot save feed list (%1)"
 msgid ""
 "Access denied: Cannot save feed list to <b>%1</b>. Please check your "
 "permissions."
@@ -542,8 +519,7 @@ msgid ""
 "The file %1 could not be read, check if it exists or if it is readable for "
 "the current user."
 msgstr ""
-"चुने गे फाइल %1 नइ पढ़ सकिस, देखव कि ए मिलत हे, या अभी हाल के कमइया से पढ़े "
-"जइसन हे."
+"चुने गे फाइल %1 नइ पढ़ सकिस, देखव कि ए मिलत हे, या अभी हाल के कमइया से पढ़े जइसन हे."
 
 #: src/akregator_part.cpp:514
 msgid "Read Error"
@@ -560,7 +536,6 @@ msgstr "निर्यात"
 
 #: src/akregator_part.cpp:535
 #, kde-format
-#| msgid "Access denied: cannot write to file %1"
 msgid "Access denied: cannot write to file %1. Please check your permissions."
 msgstr "पहुंच अस्वीकृत: फाइल %1 मं लिख नइ सकिस. अपन अनुमति जांचव."
 
@@ -594,52 +569,46 @@ msgstr ""
 "फीडों ल जोड़ दे गिस:\n"
 " %1"
 
-#: src/subscriptionlistmodel.cpp:60
+#: src/subscriptionlistmodel.cpp:61
 msgid "Timeout on remote server"
 msgstr ""
 
-#: src/subscriptionlistmodel.cpp:62
+#: src/subscriptionlistmodel.cpp:63
 msgid "Unknown host"
 msgstr ""
 
-#: src/subscriptionlistmodel.cpp:64
-#| msgid "Feed not found from %1."
+#: src/subscriptionlistmodel.cpp:65
 msgid "Feed file not found on remote server"
 msgstr ""
 
-#: src/subscriptionlistmodel.cpp:66
-#| msgid "Could not import the file %1 (no valid OPML)"
+#: src/subscriptionlistmodel.cpp:67
 msgid "Could not read feed (invalid XML)"
 msgstr ""
 
-#: src/subscriptionlistmodel.cpp:68
+#: src/subscriptionlistmodel.cpp:69
 msgid "Could not read feed (unknown format)"
 msgstr ""
 
-#: src/subscriptionlistmodel.cpp:70
-#| msgid "Could not import the file %1 (no valid OPML)"
+#: src/subscriptionlistmodel.cpp:71
 msgid "Could not read feed (invalid feed)"
 msgstr ""
 
-#: src/subscriptionlistmodel.cpp:165
+#: src/subscriptionlistmodel.cpp:167
 #, kde-format
 msgid "Could not fetch feed: %1"
 msgstr ""
 
-#: src/subscriptionlistmodel.cpp:218
-#| msgid "Feeds"
+#: src/subscriptionlistmodel.cpp:219
 msgctxt "Feedlist's column header"
 msgid "Feeds"
 msgstr "फीड्स"
 
-#: src/subscriptionlistmodel.cpp:220
-#| msgid "Unread"
+#: src/subscriptionlistmodel.cpp:221
 msgctxt "Feedlist's column header"
 msgid "Unread"
 msgstr "बिनपढ़ा"
 
-#: src/subscriptionlistmodel.cpp:222
-#| msgid "Total"
+#: src/subscriptionlistmodel.cpp:223
 msgctxt "Feedlist's column header"
 msgid "Total"
 msgstr "कुल"
@@ -649,7 +618,6 @@ msgid "A KDE Feed Reader"
 msgstr "केडीई फीड रीडर"
 
 #: src/aboutdata.cpp:36
-#| msgid "(C) 2004, 2005 Akregator developers"
 msgid "(C) 2004-2008 Akregator developers"
 msgstr "(c) 2004-2008 एकेरेगेटर बनइया"
 
@@ -816,7 +784,6 @@ msgid "&Export Feeds..."
 msgstr "फीड्स निर्यात करव... (&E)"
 
 #: src/actionmanagerimpl.cpp:180
-#| msgid "Configure &Akregator..."
 msgid "&Configure Akregator..."
 msgstr "ए-के-रेगेटर कान्फिगर करव... (&C)"
 
@@ -912,7 +879,6 @@ msgid "Mark selected article as read"
 msgstr "चुने गे संदेस मन ल पढ़िस चिनहा लगाव"
 
 #: src/actionmanagerimpl.cpp:354
-#| msgid "&New"
 msgctxt "as in: mark as new"
 msgid "&New"
 msgstr "नवा (&N)"
@@ -922,7 +888,6 @@ msgid "Mark selected article as new"
 msgstr "चुने गे आलेख ल नवा चिनहा लगाव"
 
 #: src/actionmanagerimpl.cpp:363
-#| msgid "&Unread"
 msgctxt "as in: mark as unread"
 msgid "&Unread"
 msgstr "बिनपढ़ा (&U)"
@@ -1050,30 +1015,25 @@ msgid "Properties of %1"
 msgstr " %1 के गुन"
 
 #: src/dummystorage/storagefactorydummyimpl.cpp:48
-#| msgid "Archive"
 msgid "No Archive"
 msgstr "कोई अभिलेख नइ हे"
 
 #: src/articlemodel.cpp:106
-#| msgid "Untitled"
 msgctxt "Articlelist's column header"
 msgid "Title"
 msgstr "सीर्सक"
 
 #: src/articlemodel.cpp:108
-#| msgid "Feed"
 msgctxt "Articlelist's column header"
 msgid "Feed"
 msgstr "फीड"
 
 #: src/articlemodel.cpp:110
-#| msgid "Date"
 msgctxt "Articlelist's column header"
 msgid "Date"
 msgstr "तारीक"
 
 #: src/articlemodel.cpp:112
-#| msgid "Author"
 msgctxt "Articlelist's column header"
 msgid "Author"
 msgstr "लेखक"
@@ -1089,7 +1049,6 @@ msgid "Content"
 msgstr "सामान"
 
 #: src/searchbar.cpp:77
-#| msgid "S&earch:"
 msgctxt "Title of article searchbar"
 msgid "S&earch:"
 msgstr "खोजव: (&e)"
@@ -1103,19 +1062,16 @@ msgid "All Articles"
 msgstr "सब्बो आलेख"
 
 #: src/searchbar.cpp:98
-#| msgid "Unread"
 msgctxt "Unread articles filter"
 msgid "Unread"
 msgstr "बिनपढ़ा"
 
 #: src/searchbar.cpp:99
-#| msgid "New"
 msgctxt "New articles filter"
 msgid "New"
 msgstr "नवा"
 
 #: src/searchbar.cpp:100
-#| msgid "Important"
 msgctxt "Important articles filter"
 msgid "Important"
 msgstr "जरूरी"
@@ -1149,6 +1105,18 @@ msgid ""
 "tray. Use 'Quit' from the 'File' menu to quit the application.</p></qt>"
 msgstr ""
 
+#: src/akregator_options.h:37 src/akregator_options.h:41
+msgid "Add a feed with the given URL"
+msgstr ""
+
+#: src/akregator_options.h:39
+msgid "When adding feeds, place them in this group"
+msgstr ""
+
+#: src/akregator_options.h:40
+msgid "Hide main window on startup"
+msgstr ""
+
 #: src/feedlist.cpp:166
 msgid "All Feeds"
 msgstr "सब्बो फीड्स"
@@ -1166,7 +1134,6 @@ msgstr ""
 #: configuration/akregator_config_browser.cpp:57
 #: configuration/akregator_config_archive.cpp:64
 #: configuration/akregator_config_appearance.cpp:68
-#| msgid "Frank Osterfeld"
 msgid "(c), 2004 - 2008 Frank Osterfeld"
 msgstr "(c), 2004 - 2008 फ्रैंक ओस्टरफील्ड"
 
@@ -1175,7 +1142,6 @@ msgid "kcmakrgeneralconfig"
 msgstr ""
 
 #: configuration/akregator_config_general.cpp:57
-#| msgid "Concurrent Fetches"
 msgid "Configure Feeds"
 msgstr "फीड कान्फिगर करव"
 
@@ -1282,7 +1248,6 @@ msgstr "मुख्य औजार पट्टी"
 #. i18n: file: src/akregator_part.rc:93
 #. i18n: ectx: ToolBar (browserToolBar)
 #: rc.cpp:32 rc.cpp:143
-#| msgid "Browser"
 msgid "Browser Toolbar"
 msgstr "ब्राउज़र औजारपट्टी"
 
@@ -1473,7 +1438,6 @@ msgstr "क्विक छनइया पट्टी देखाव"
 #. i18n: file: interfaces/akregator.kcfg:14
 #. i18n: ectx: label, entry, group (View)
 #: rc.cpp:155
-#| msgid "Show Quick Filter"
 msgid "Status Filter"
 msgstr "स्थिति छनइया"
 
@@ -1531,91 +1495,91 @@ msgstr "दुसरा विभाजक बर आकार"
 msgid "Second (usually horizontal) splitter widget sizes."
 msgstr "दुसरा (प्राय: आड़ा) विभाजक विजेट आकार."
 
-#. i18n: file: interfaces/akregator.kcfg:66
+#. i18n: file: interfaces/akregator.kcfg:64
 #. i18n: ectx: label, entry, group (Archive)
 #: rc.cpp:185
 msgid "Archive Mode"
 msgstr "अभिलेख मोड"
 
-#. i18n: file: interfaces/akregator.kcfg:70
+#. i18n: file: interfaces/akregator.kcfg:68
 #. i18n: ectx: label, entry, group (Archive)
 #: rc.cpp:188
 msgid "Keep All Articles"
 msgstr "सब्बो आलेख मन ल रखे रहें"
 
-#. i18n: file: interfaces/akregator.kcfg:71
+#. i18n: file: interfaces/akregator.kcfg:69
 #. i18n: ectx: whatsthis, entry, group (Archive)
 #: rc.cpp:191
 msgid "Save an unlimited number of articles."
 msgstr "आलेख मन के असीमित संख्या सहेजव."
 
-#. i18n: file: interfaces/akregator.kcfg:74
+#. i18n: file: interfaces/akregator.kcfg:72
 #. i18n: ectx: label, entry, group (Archive)
 #: rc.cpp:194
 msgid "Limit Number of Articles"
 msgstr "आलेख मन के संख्या सीमित करव"
 
-#. i18n: file: interfaces/akregator.kcfg:75
+#. i18n: file: interfaces/akregator.kcfg:73
 #. i18n: ectx: whatsthis, entry, group (Archive)
 #: rc.cpp:197
 msgid "Limit the number of articles in a feed"
 msgstr "फीड मं आलेख मन के संख्या सीमित करव"
 
-#. i18n: file: interfaces/akregator.kcfg:78
+#. i18n: file: interfaces/akregator.kcfg:76
 #. i18n: ectx: label, entry, group (Archive)
 #: rc.cpp:200
 msgid "Delete Expired Articles"
 msgstr "कालातीत आलेख मन ल मेटाव"
 
-#. i18n: file: interfaces/akregator.kcfg:79
+#. i18n: file: interfaces/akregator.kcfg:77
 #. i18n: ectx: whatsthis, entry, group (Archive)
 #: rc.cpp:203
 msgid "Delete expired articles"
 msgstr "कालातीत आलेख मन ल मेटाव"
 
-#. i18n: file: interfaces/akregator.kcfg:82
+#. i18n: file: interfaces/akregator.kcfg:80
 #. i18n: ectx: label, entry, group (Archive)
 #: rc.cpp:206
 msgid "Disable Archiving"
 msgstr "अभिलेखन अक्छम"
 
-#. i18n: file: interfaces/akregator.kcfg:83
+#. i18n: file: interfaces/akregator.kcfg:81
 #. i18n: ectx: whatsthis, entry, group (Archive)
 #: rc.cpp:209
 msgid "Do not save any articles"
 msgstr "कोनो आलेख मन ल सहेजव नइ"
 
-#. i18n: file: interfaces/akregator.kcfg:88
+#. i18n: file: interfaces/akregator.kcfg:86
 #. i18n: ectx: label, entry, group (Archive)
 #: rc.cpp:212
 msgid "Expiry Age"
 msgstr "कालातीत होए के उम्र"
 
-#. i18n: file: interfaces/akregator.kcfg:89
+#. i18n: file: interfaces/akregator.kcfg:87
 #. i18n: ectx: whatsthis, entry, group (Archive)
 #: rc.cpp:215
 msgid "Default expiry age for articles in days."
 msgstr "आलेख मन के कालातीत होए के डिफाल्ट उम्र दिनों में."
 
-#. i18n: file: interfaces/akregator.kcfg:93
+#. i18n: file: interfaces/akregator.kcfg:91
 #. i18n: ectx: label, entry, group (Archive)
 #: rc.cpp:218
 msgid "Article Limit"
 msgstr "आलेख सीमा"
 
-#. i18n: file: interfaces/akregator.kcfg:94
+#. i18n: file: interfaces/akregator.kcfg:92
 #. i18n: ectx: whatsthis, entry, group (Archive)
 #: rc.cpp:221
 msgid "Number of articles to keep per feed."
 msgstr "प्रति फीड रखे जाय वाले आलेख मन के संख्या."
 
-#. i18n: file: interfaces/akregator.kcfg:98
+#. i18n: file: interfaces/akregator.kcfg:96
 #. i18n: ectx: label, entry, group (Archive)
 #: rc.cpp:224
 msgid "Do Not Expire Important Articles"
 msgstr "जरूरी आलेख मन के अवधि नइ बीते देव"
 
-#. i18n: file: interfaces/akregator.kcfg:99
+#. i18n: file: interfaces/akregator.kcfg:97
 #. i18n: ectx: whatsthis, entry, group (Archive)
 #: rc.cpp:227
 msgid ""
@@ -1623,25 +1587,25 @@ msgid ""
 "removed when limit the archive size by either age or number of the articles."
 msgstr ""
 
-#. i18n: file: interfaces/akregator.kcfg:105
+#. i18n: file: interfaces/akregator.kcfg:103
 #. i18n: ectx: label, entry, group (Network)
 #: rc.cpp:230
 msgid "Concurrent Fetches"
 msgstr "कान्करंट फेचेस"
 
-#. i18n: file: interfaces/akregator.kcfg:106
+#. i18n: file: interfaces/akregator.kcfg:104
 #. i18n: ectx: whatsthis, entry, group (Network)
 #: rc.cpp:233
 msgid "Number of concurrent fetches"
 msgstr "समवर्ती प्राप्ति के संख्या"
 
-#. i18n: file: interfaces/akregator.kcfg:110
+#. i18n: file: interfaces/akregator.kcfg:108
 #. i18n: ectx: label, entry, group (Network)
 #: rc.cpp:236
 msgid "Use HTML Cache"
 msgstr "एचटीएमएल कैस उपयोग करव"
 
-#. i18n: file: interfaces/akregator.kcfg:111
+#. i18n: file: interfaces/akregator.kcfg:109
 #. i18n: ectx: whatsthis, entry, group (Network)
 #: rc.cpp:239
 msgid ""
@@ -1649,7 +1613,7 @@ msgid ""
 "unnecessary traffic. Disable only when necessary."
 msgstr ""
 
-#. i18n: file: interfaces/akregator.kcfg:115
+#. i18n: file: interfaces/akregator.kcfg:113
 #. i18n: ectx: whatsthis, entry, group (Network)
 #: rc.cpp:242
 msgid ""
@@ -1658,104 +1622,104 @@ msgid ""
 "connection because of having \"gator\" in the name."
 msgstr ""
 
-#. i18n: file: interfaces/akregator.kcfg:121
+#. i18n: file: interfaces/akregator.kcfg:119
 #. i18n: ectx: label, entry, group (General)
 #: rc.cpp:245
 msgid "Fetch on startup"
 msgstr "सुरू मं प्राप्त करव"
 
-#. i18n: file: interfaces/akregator.kcfg:122
+#. i18n: file: interfaces/akregator.kcfg:120
 #. i18n: ectx: whatsthis, entry, group (General)
 #: rc.cpp:248
 msgid "Fetch feedlist on startup."
 msgstr "सुरू मं फीडसूची प्राप्त करव."
 
-#. i18n: file: interfaces/akregator.kcfg:126
+#. i18n: file: interfaces/akregator.kcfg:124
 #. i18n: ectx: label, entry, group (General)
 #: rc.cpp:251
 msgid "Mark all feeds as read on startup"
 msgstr "सुरू मं सब्बो फीड्स ल पढ़िस होय चिनहा लगाव."
 
-#. i18n: file: interfaces/akregator.kcfg:127
+#. i18n: file: interfaces/akregator.kcfg:125
 #. i18n: ectx: whatsthis, entry, group (General)
 #: rc.cpp:254
 msgid "Mark all feeds as read on startup."
 msgstr "सुरू मं सब्बो फीड्स ल पढ़िस होय चिनहा लगाव."
 
-#. i18n: file: interfaces/akregator.kcfg:131
+#. i18n: file: interfaces/akregator.kcfg:129
 #. i18n: ectx: label, entry, group (General)
 #: rc.cpp:257
 msgid "Use interval fetching"
 msgstr "अंतराल से प्राप्त करना उपयोग करव"
 
-#. i18n: file: interfaces/akregator.kcfg:132
+#. i18n: file: interfaces/akregator.kcfg:130
 #. i18n: ectx: whatsthis, entry, group (General)
 #: rc.cpp:261
 #, no-c-format, kde-format
 msgid "Fetch all feeds every %1 minutes."
 msgstr "सब्बो फीड्स ल हर एक %1 मिनट मं लाव."
 
-#. i18n: file: interfaces/akregator.kcfg:136
+#. i18n: file: interfaces/akregator.kcfg:134
 #. i18n: ectx: label, entry, group (General)
 #: rc.cpp:264
 msgid "Interval for autofetching"
 msgstr "अपने अपन प्राप्त करे के अंतराल"
 
-#. i18n: file: interfaces/akregator.kcfg:137
+#. i18n: file: interfaces/akregator.kcfg:135
 #. i18n: ectx: whatsthis, entry, group (General)
 #: rc.cpp:267
 msgid "Interval for autofetching in minutes."
 msgstr "अपने अपन प्राप्त करे के अंतराल मिनटों में."
 
-#. i18n: file: interfaces/akregator.kcfg:141
+#. i18n: file: interfaces/akregator.kcfg:139
 #. i18n: ectx: label, entry, group (General)
 #: rc.cpp:270
 msgid "Use notifications"
 msgstr "सूचना मन ल उपयोग करव"
 
-#. i18n: file: interfaces/akregator.kcfg:142
+#. i18n: file: interfaces/akregator.kcfg:140
 #. i18n: ectx: whatsthis, entry, group (General)
 #: rc.cpp:273
 msgid "Specifies if the balloon notifications are used or not."
 msgstr "निरधारित करथे  कि बैलून सूचना मन ल उपयोग के जाय या नइ."
 
-#. i18n: file: interfaces/akregator.kcfg:146
+#. i18n: file: interfaces/akregator.kcfg:144
 #. i18n: ectx: label, entry, group (General)
 #: rc.cpp:276
 msgid "Show tray icon"
 msgstr "तस्तरी चिनहा देखाव"
 
-#. i18n: file: interfaces/akregator.kcfg:147
+#. i18n: file: interfaces/akregator.kcfg:145
 #. i18n: ectx: whatsthis, entry, group (General)
 #: rc.cpp:279
 msgid "Specifies if the tray icon is shown or not."
 msgstr "निरधारित करथे  कि तस्तरी चिनहा देखाय  जाय या नइ."
 
-#. i18n: file: interfaces/akregator.kcfg:153
+#. i18n: file: interfaces/akregator.kcfg:151
 #. i18n: ectx: label, entry, group (Browser)
 #: rc.cpp:282
 msgid "Show close buttons on tabs"
 msgstr "टैब्स मं बन्द बटन देखाव"
 
-#. i18n: file: interfaces/akregator.kcfg:154
+#. i18n: file: interfaces/akregator.kcfg:152
 #. i18n: ectx: whatsthis, entry, group (Browser)
 #: rc.cpp:285
 msgid "Show close buttons on tabs instead of icons"
 msgstr "चिनहा मन के बदले हर टैब के भीतर बन्द बटन दिखाव"
 
-#. i18n: file: interfaces/akregator.kcfg:159
+#. i18n: file: interfaces/akregator.kcfg:157
 #. i18n: ectx: label, entry, group (Browser)
 #: rc.cpp:288
 msgid "Use default KDE web browser"
 msgstr "डिफाल्ट केडीई वेब ब्राउजर के उपयोग करव"
 
-#. i18n: file: interfaces/akregator.kcfg:160
+#. i18n: file: interfaces/akregator.kcfg:158
 #. i18n: ectx: whatsthis, entry, group (Browser)
 #: rc.cpp:291
 msgid "Use KDE web browser when opening in external browser."
 msgstr "जब एक्सटर्नल ब्राउजर मं  खोलेजाही तहां केडीई वेब ब्राउजर के उपयोग करव."
 
-#. i18n: file: interfaces/akregator.kcfg:164
+#. i18n: file: interfaces/akregator.kcfg:162
 #. i18n: ectx: label, entry, group (Browser)
 #. i18n: file: configuration/settings_browser.ui:167
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExternalBrowserUseCustomCommand)
@@ -1763,54 +1727,52 @@ msgstr "जब एक्सटर्नल ब्राउजर मं  खो�
 msgid "Use this command:"
 msgstr "ये कमांड के उपयोग करव:"
 
-#. i18n: file: interfaces/akregator.kcfg:165
+#. i18n: file: interfaces/akregator.kcfg:163
 #. i18n: ectx: whatsthis, entry, group (Browser)
 #: rc.cpp:297
 msgid "Use the specified command when opening in external browser."
 msgstr "जब एक्सटर्नल ब्राउजर के साथ  खोलेजाए तहां निरधारित कमांड के उपयोग करव."
 
-#. i18n: file: interfaces/akregator.kcfg:169
+#. i18n: file: interfaces/akregator.kcfg:167
 #. i18n: ectx: whatsthis, entry, group (Browser)
 #: rc.cpp:301
 #, no-c-format
 msgid "Command to launch external browser.  URL will substitute for %u."
 msgstr "एक्सटर्नल ब्राउजर चालू करे बर कमांड.  यूआरएल %u से प्रतिस्थापित होही."
 
-#. i18n: file: interfaces/akregator.kcfg:173
+#. i18n: file: interfaces/akregator.kcfg:171
 #. i18n: ectx: whatsthis, entry, group (Browser)
 #: rc.cpp:304
 msgid "What the click with left mouse button should do."
 msgstr "डेरी मुसुवा बटन किलिक करे मं का होना चाही."
 
-#. i18n: file: interfaces/akregator.kcfg:182
+#. i18n: file: interfaces/akregator.kcfg:180
 #. i18n: ectx: whatsthis, entry, group (Browser)
 #: rc.cpp:307
 msgid "What the click with middle mouse button should do."
 msgstr "मध्य मुसुवा बटन किलिक करे मं का होना चाही."
 
-#. i18n: file: interfaces/akregator.kcfg:207
+#. i18n: file: interfaces/akregator.kcfg:205
 #. i18n: ectx: label, entry, group (Advanced)
 #: rc.cpp:310
 msgid "Archive Backend"
 msgstr "अभिलेखागार बैकएन्ड"
 
-#. i18n: file: interfaces/akregator.kcfg:211
+#. i18n: file: interfaces/akregator.kcfg:209
 #. i18n: ectx: whatsthis, entry (UseMarkReadDelay), group (Advanced)
 #: rc.cpp:313
 msgid "Whether to delay before marking an article as read upon selecting it."
-msgstr ""
-"जब चुने जाय तहां कोनो आलेख ल पढ़ ले गिस चिनहित करे बर के कुछ देरी "
-"करे जाए."
+msgstr "जब चुने जाय तहां कोनो आलेख ल पढ़ ले गिस चिनहित करे बर के कुछ देरी करे जाए."
 
-#. i18n: file: interfaces/akregator.kcfg:215
+#. i18n: file: interfaces/akregator.kcfg:213
 #. i18n: ectx: whatsthis, entry (MarkReadDelay), group (Advanced)
 #: rc.cpp:316
-msgid "Configurable delay between selecting an article and it being marked as read."
+msgid ""
+"Configurable delay between selecting an article and it being marked as read."
 msgstr ""
-"कोनो आलेख ल चुने के अउ ओला पढ़ ले चिनहित करे के बीच के देरी के कान्फिगर करे जाय "
-"जा सके समय."
+"कोनो आलेख ल चुने के अउ ओला पढ़ ले चिनहित करे के बीच के देरी के कान्फिगर करे जाय जा सके समय."
 
-#. i18n: file: interfaces/akregator.kcfg:219
+#. i18n: file: interfaces/akregator.kcfg:217
 #. i18n: ectx: whatsthis, entry, group (Advanced)
 #: rc.cpp:319
 msgid "Resets the quick filter when changing feeds."
@@ -1911,14 +1873,12 @@ msgstr "आलेख सूची रंग"
 #. i18n: file: configuration/settings_appearance.ui:98
 #. i18n: ectx: property (text), widget (QLabel, lbl_newArticles)
 #: rc.cpp:370
-#| msgid "New articles"
 msgid "New articles:"
 msgstr "नवा आलेख:"
 
 #. i18n: file: configuration/settings_appearance.ui:122
 #. i18n: ectx: property (text), widget (QLabel, lbl_unreadArticles)
 #: rc.cpp:373
-#| msgid "Unread articles"
 msgid "Unread articles:"
 msgstr "बिनपढ़े आलेख:"
 
@@ -2074,7 +2034,6 @@ msgstr "फायरफाक्स %u"
 #. i18n: file: configuration/settings_browser.ui:174
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExternalBrowserUseKdeDefault)
 #: rc.cpp:467
-#| msgid "Use default KDE web browser"
 msgid "Use default web browser"
 msgstr "डिफाल्ट वेब ब्राउजर उपयोग करव"
 
@@ -2135,7 +2094,6 @@ msgstr "पासवर्ड: "
 #. i18n: file: plugins/onlinesync/ui/configurationdialogadd.ui:87
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:512
-#| msgid "&File"
 msgid "File:"
 msgstr "फाइल:"
 
@@ -2160,14 +2118,12 @@ msgstr "वर्नन"
 #. i18n: file: plugins/onlinesync/ui/configurationwidget.ui:51
 #. i18n: ectx: property (text), widget (QPushButton, b_add)
 #: rc.cpp:524
-#| msgid "&Add Feed..."
 msgid "Add..."
 msgstr "जोड़व..."
 
 #. i18n: file: plugins/onlinesync/ui/configurationwidget.ui:58
 #. i18n: ectx: property (text), widget (QPushButton, b_update)
 #: rc.cpp:527
-#| msgid "Loading..."
 msgid "Modify..."
 msgstr "सुधारव..."
 
@@ -2180,14 +2136,12 @@ msgstr "हटाव"
 #. i18n: file: plugins/onlinesync/ui/configurationwidget.ui:94
 #. i18n: ectx: property (text), widget (QLabel, lDeletePolicy)
 #: rc.cpp:533
-#| msgid "Delete Feed"
 msgid "Delete feeds"
 msgstr "फीड मेटाव"
 
 #. i18n: file: plugins/onlinesync/onlinesyncsettings.kcfg:9
 #. i18n: ectx: label, entry, group (Foo)
 #: rc.cpp:536
-#| msgid "&Settings"
 msgid "Bar Settings"
 msgstr "पट्टी सेटिंग"
 
@@ -2278,7 +2232,6 @@ msgid "Send to %1"
 msgstr "%1 मं भेजव"
 
 #: plugins/onlinesync/onlinesyncplugin.cpp:112
-#| msgid "Loading..."
 msgid "Manage..."
 msgstr "प्रबंधित करव..."
 
@@ -2318,4 +2271,3 @@ msgstr "मेटाकिट"
 #~ "style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-"
 #~ "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
 #~ "indent:0px;\">स्थिति:</p></body></html>"
-

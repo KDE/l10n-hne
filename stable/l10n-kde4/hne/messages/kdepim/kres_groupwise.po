@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kres_groupwise\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-25 09:09+0200\n"
+"POT-Creation-Date: 2008-12-05 10:22+0100\n"
 "PO-Revision-Date: 2009-02-28 20:50+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,26 +18,50 @@ msgstr ""
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: kabc_resourcegroupwise.cpp:261
+#: kabc_resourcegroupwise.cpp:208
+#, fuzzy, kde-format
+#| msgid "Retrieve Address Book List From Server"
+msgctxt "Message displayed while fetching the list of address books"
+msgid "Error retrieving your address book list from the server: %1"
+msgstr "सर्वर से पता पुस्तिका सूची प्राप्त करत हे "
+
+#: kabc_resourcegroupwise.cpp:260
 #, kde-format
-#| msgid "Unable to read GroupWise address book: %1"
 msgctxt "label for addressbook load progress"
 msgid "Loading GroupWise resource %1"
 msgstr "ग्रुपवाइज रिसोर्स %1 लोड करत हे"
 
-#: kabc_resourcegroupwise.cpp:336
-#| msgid "Updating System Address Book"
+#: kabc_resourcegroupwise.cpp:335
 msgid "Fetching System Address Book"
 msgstr "तंत्र पता पुस्तिका लावत हे"
 
-#: kabc_resourcegroupwise.cpp:346
-#| msgid "Updating System Address Book"
+#: kabc_resourcegroupwise.cpp:345
 msgid "Fetching User Address Books"
 msgstr "कमइया पता पुस्तिका लावत हे"
 
-#: kabc_resourcegroupwise.cpp:456 kabc_resourcegroupwise.cpp:471
+#: kabc_resourcegroupwise.cpp:398
+#, fuzzy, kde-format
+#| msgid "Fetching System Address Book"
+msgctxt "Message displayed on error fetching the Groupwise system address book"
+msgid "Error while fetching the Groupwise System Address Book: %1"
+msgstr "तंत्र पता पुस्तिका लावत हे"
+
+#: kabc_resourcegroupwise.cpp:422
+#, fuzzy, kde-format
+#| msgid "Unable to read GroupWise address book: %1"
+msgctxt "Message displayed on error fetching the Groupwise user address book"
+msgid "Error while fetching your Groupwise user address book: %1"
+msgstr "ग्रुपवाइज पता-पुस्तिका: %1 ल पढ़े मं अक्छम"
+
+#: kabc_resourcegroupwise.cpp:455 kabc_resourcegroupwise.cpp:470
 msgid "Updating System Address Book"
 msgstr "तंत्र पता पुस्तिका अपडेट करत हे"
+
+#: kabc_resourcegroupwise.cpp:687
+#, kde-format
+msgctxt "Message syncing Groupwise address book"
+msgid "Error calculating how to sync the System Address Book: %1"
+msgstr ""
 
 #: kabc_resourcegroupwiseconfig.cpp:50 kabc_resourcegroupwiseconfig.cpp:52
 msgid "Yes"
@@ -87,19 +111,19 @@ msgstr "कलेन्डर डाउनलोड करत हे"
 msgid "Error parsing calendar data."
 msgstr "कलेन्डर डाटा पारसिंग करे मं गलती."
 
-#: kcal_resourcegroupwise.cpp:248
+#: kcal_resourcegroupwise.cpp:252
 msgid "Unable to login to server: "
 msgstr "सर्वर मं लागिन मं अक्छम:"
 
-#: kcal_resourcegroupwise.cpp:282
+#: kcal_resourcegroupwise.cpp:286
 msgid "Added"
 msgstr "जोड़ दे गिस"
 
-#: kcal_resourcegroupwise.cpp:283
+#: kcal_resourcegroupwise.cpp:287
 msgid "Changed"
 msgstr "बदला"
 
-#: kcal_resourcegroupwise.cpp:284
+#: kcal_resourcegroupwise.cpp:288
 msgid "Deleted"
 msgstr "मेटाइस"
 
@@ -230,7 +254,6 @@ msgstr ""
 #. i18n: file: kresources_kabc_groupwise.kcfg:51
 #. i18n: ectx: label, entry, group (AddressBooks)
 #: rc.cpp:57
-#| msgid "Updating System Address Book"
 msgid "Applications which should load the System Address Book"
 msgstr ""
 
@@ -298,7 +321,8 @@ msgid "The server certificate failed the authenticity test (%1)."
 msgstr "सर्वर प्रमानपत्र प्रमानीकरन जांच (%1) मं सर्वर प्रमानपत्र फेल होइस."
 
 #: soap/ksslsocket.cpp:358
-msgid "Would you like to accept this certificate forever without being prompted?"
+msgid ""
+"Would you like to accept this certificate forever without being prompted?"
 msgstr "का आप मन एखर प्रमानपत्र ल हमेसा बर स्वीकृत करना चाहू बिना पूछे?"
 
 #: soap/ksslsocket.cpp:362
@@ -338,4 +362,3 @@ msgstr "पतापुस्तिका चिनहइया"
 
 #~ msgid "SSL Error"
 #~ msgstr "एसएसएल गलती"
-
