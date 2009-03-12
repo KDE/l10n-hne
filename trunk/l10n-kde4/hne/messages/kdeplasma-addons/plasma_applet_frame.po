@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_frame\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-29 07:22+0100\n"
+"POT-Creation-Date: 2009-02-23 09:50+0100\n"
 "PO-Revision-Date: 2009-02-28 22:37+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,19 +18,25 @@ msgstr ""
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: configdialog.cpp:41
+#: configdialog.cpp:46
 msgid ""
 "This picture of a monitor contains a preview of the picture you currently "
 "have in your frame."
 msgstr ""
 
-#: frame.cpp:141
+#: frame.cpp:119
 msgid "&Open Picture..."
 msgstr "फोटू खोलव...(&O)"
 
-#: frame.cpp:283
-msgid "General"
-msgstr "सामान्य"
+#. i18n: file: imageSettings.ui:21
+#. i18n: ectx: property (text), item, widget (KComboBox, pictureComboBox)
+#: frame.cpp:262 rc.cpp:21
+msgid "Image"
+msgstr "फोटू"
+
+#: frame.cpp:263
+msgid "Appearance"
+msgstr "रूप"
 
 #: picture.cpp:72
 msgctxt "Info"
@@ -42,126 +48,130 @@ msgctxt "Error"
 msgid "Error loading image"
 msgstr "फोटू लोड करे मं गलती"
 
-#. i18n: file: config.ui:25
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#. i18n: file: config.ui:35
-#. i18n: ectx: property (text), item, widget (QComboBox, pictureComboBox)
-#: rc.cpp:3 rc.cpp:6
-msgid "Image"
-msgstr "फोटू"
+#. i18n: file: appearanceSettings.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:3
+#, fuzzy
+#| msgid "Use rounded corners"
+msgid "Rounded corners:"
+msgstr "गोलीय किनारा परयोग करव"
 
-#. i18n: file: config.ui:40
-#. i18n: ectx: property (text), item, widget (QComboBox, pictureComboBox)
+#. i18n: file: appearanceSettings.ui:27
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:6
+#, fuzzy
+#| msgid "Use smooth scaling"
+msgid "Smooth scaling:"
+msgstr "स्मूथ स्केलिंग उपयोग करव"
+
+#. i18n: file: appearanceSettings.ui:37
+#. i18n: ectx: property (toolTip), widget (QCheckBox, smoothScaling)
 #: rc.cpp:9
+msgid ""
+"Use smooth scaling when resizing pictures. Usually pictures look better this "
+"way, but it takes more time to load them."
+msgstr ""
+
+#. i18n: file: appearanceSettings.ui:47
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:12
+#, fuzzy
+#| msgid "Show shadow"
+msgid "Shadow:"
+msgstr "छइंहा दिखाव"
+
+#. i18n: file: appearanceSettings.ui:73
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:15
+#, fuzzy
+#| msgid "Frame color:"
+msgid "Frame:"
+msgstr "फ्रेम रंग:"
+
+#. i18n: file: appearanceSettings.ui:99
+#. i18n: ectx: property (text), widget (QLabel, changeFrameColorLabel)
+#: rc.cpp:18
+msgid "Frame color:"
+msgstr "फ्रेम रंग:"
+
+#. i18n: file: imageSettings.ui:26
+#. i18n: ectx: property (text), item, widget (KComboBox, pictureComboBox)
+#: rc.cpp:24
 msgid "Slideshow"
 msgstr "स्लाइड-सो"
 
-#. i18n: file: config.ui:45
-#. i18n: ectx: property (text), item, widget (QComboBox, pictureComboBox)
-#: rc.cpp:12
+#. i18n: file: imageSettings.ui:31
+#. i18n: ectx: property (text), item, widget (KComboBox, pictureComboBox)
+#: rc.cpp:27
 msgid "Picture of the day"
 msgstr "दिन के चित्र"
 
-#. i18n: file: config.ui:68
+#. i18n: file: imageSettings.ui:54
 #. i18n: ectx: property (text), widget (QLabel, picLabel)
-#: rc.cpp:15
+#: rc.cpp:30
 msgid "Picture:"
 msgstr "फोटू:"
 
-#. i18n: file: config.ui:84
+#. i18n: file: imageSettings.ui:70
 #. i18n: ectx: property (filter), widget (KUrlComboRequester, picRequester)
-#: rc.cpp:18
+#: rc.cpp:33
 msgid "*.png *.jpeg *.jpg *.svg *.svgz"
 msgstr "*.png *.jpeg *.jpg *.svg *.svgz"
 
-#. i18n: file: config.ui:179
+#. i18n: file: imageSettings.ui:158
 #. i18n: ectx: property (text), widget (KPushButton, addDirButton)
-#: rc.cpp:22
+#: rc.cpp:37
 msgid "&Add Folder..."
 msgstr "फोल्डर जोड़व... (&A)"
 
-#. i18n: file: config.ui:189
+#. i18n: file: imageSettings.ui:168
 #. i18n: ectx: property (text), widget (KPushButton, removeDirButton)
-#: rc.cpp:25
+#: rc.cpp:40
 msgid "&Remove Folder"
 msgstr "फोल्डर मेटाव (&R)"
 
-#. i18n: file: config.ui:217
-#. i18n: ectx: property (text), widget (QCheckBox, recursiveCheckBox)
-#: rc.cpp:28
-msgid "&Include Subfolders"
+#. i18n: file: imageSettings.ui:206
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:43
+#, fuzzy
+#| msgid "&Include Subfolders"
+msgid "Include Subfolders:"
 msgstr "सब-फोल्डर सामिल करव (&I)"
 
-#. i18n: file: config.ui:224
-#. i18n: ectx: property (text), widget (QCheckBox, randomCheckBox)
-#: rc.cpp:31
-msgid "Randomize"
+#. i18n: file: imageSettings.ui:226
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:46
+#, fuzzy
+#| msgid "Randomize"
+msgid "Randomize:"
 msgstr "बेतरतीब"
 
-#. i18n: file: config.ui:235
+#. i18n: file: imageSettings.ui:246
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:34
+#: rc.cpp:49
 msgid "Change images every:"
 msgstr "चित्र ल बदलव हर एक:"
 
-#. i18n: file: config.ui:255
+#. i18n: file: imageSettings.ui:269
 #. i18n: ectx: property (displayFormat), widget (QTimeEdit, slideShowDelay)
-#: rc.cpp:37
+#: rc.cpp:52
 msgctxt ""
 "(qtdt-format) Please do not change the quotes (') and translate only the "
 "content of the quotes."
 msgid "hh 'Hours' mm 'Mins' ss 'Secs'"
 msgstr "घघ 'घंटे' मिमि 'मिनट' सेसे 'सेकन्ड'"
 
-#. i18n: file: config.ui:288
+#. i18n: file: imageSettings.ui:302
 #. i18n: ectx: property (text), widget (QLabel, selectPoTDlabel)
-#: rc.cpp:40
+#: rc.cpp:55
 msgid "Select Picture of the day source:"
 msgstr "दिन स्रोत के फोटू चुनव"
 
-#. i18n: file: config.ui:318
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:43
-msgid "Appearance"
-msgstr "रूप"
+#~ msgid "General"
+#~ msgstr "सामान्य"
 
-#. i18n: file: config.ui:329
-#. i18n: ectx: property (text), widget (QCheckBox, roundCheckBox)
-#: rc.cpp:46
-msgid "Use rounded corners"
-msgstr "गोलीय किनारा परयोग करव"
-
-#. i18n: file: config.ui:336
-#. i18n: ectx: property (toolTip), widget (QCheckBox, smoothScaling)
-#: rc.cpp:49
-msgid ""
-"Use smooth scaling when resizing pictures. Usually pictures look better this "
-"way, but it takes more time to load them."
-msgstr ""
-
-#. i18n: file: config.ui:339
-#. i18n: ectx: property (text), widget (QCheckBox, smoothScaling)
-#: rc.cpp:52
-msgid "Use smooth scaling"
-msgstr "स्मूथ स्केलिंग उपयोग करव"
-
-#. i18n: file: config.ui:352
-#. i18n: ectx: property (text), widget (QCheckBox, shadowCheckBox)
-#: rc.cpp:55
-msgid "Show shadow"
-msgstr "छइंहा दिखाव"
-
-#. i18n: file: config.ui:362
-#. i18n: ectx: property (text), widget (QCheckBox, frameCheckBox)
-#: rc.cpp:58
-msgid "Show frame"
-msgstr "फ्रेम दिखाव"
-
-#. i18n: file: config.ui:380
-#. i18n: ectx: property (text), widget (QLabel, changeFrameColorLabel)
-#: rc.cpp:61
-msgid "Frame color:"
-msgstr "फ्रेम रंग:"
+#~ msgid "Show frame"
+#~ msgstr "फ्रेम दिखाव"
 
 #~ msgid "TextLabel"
 #~ msgstr "पाठ लेबल"

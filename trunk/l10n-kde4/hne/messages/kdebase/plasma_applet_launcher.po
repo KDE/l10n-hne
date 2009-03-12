@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_launcher\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-01 06:14+0100\n"
+"POT-Creation-Date: 2009-03-10 10:19+0100\n"
 "PO-Revision-Date: 2009-01-27 17:41+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -50,11 +50,12 @@ msgstr "बाहिर करव"
 msgid "Safely Remove"
 msgstr ""
 
-#: ui/launcher.cpp:159
+#: ui/launcher.cpp:159 simpleapplet/simpleapplet.cpp:181
 msgid "Leave"
 msgstr "छोड़व"
 
 #: ui/launcher.cpp:170 core/favoritesmodel.cpp:44
+#: simpleapplet/simpleapplet.cpp:163
 msgid "Favorites"
 msgstr "निसानी"
 
@@ -66,12 +67,12 @@ msgstr "वर्नमाला से छांटव (अ से ज्ञ)"
 msgid "Sort Alphabetically (Z to A)"
 msgstr "वर्नमाला से छांटव (ज्ञ से अ)"
 
-#: ui/launcher.cpp:199 core/recentlyusedmodel.cpp:101 core/systemmodel.cpp:88
-#: core/searchmodel.cpp:135
+#: ui/launcher.cpp:199 core/recentlyusedmodel.cpp:115 core/systemmodel.cpp:88
+#: core/searchmodel.cpp:135 simpleapplet/simpleapplet.cpp:165
 msgid "Applications"
 msgstr "अनुपरयोग"
 
-#: ui/launcher.cpp:211
+#: ui/launcher.cpp:211 simpleapplet/simpleapplet.cpp:167
 msgid "Recently Used"
 msgstr "हाल ही मं उपयोग करे"
 
@@ -83,7 +84,7 @@ msgstr "हाल ही के अनुपरयोग साफ करव"
 msgid "Clear Recent Documents"
 msgstr "हाल ही के कागद साफ करव"
 
-#: ui/launcher.cpp:231
+#: ui/launcher.cpp:231 simpleapplet/simpleapplet.cpp:166
 msgid "Computer"
 msgstr "कम्प्यूटर"
 
@@ -103,7 +104,7 @@ msgstr "<b>%1 (%2)</b> इहां <b>%3</b>"
 msgid "Search:"
 msgstr "खोजव:"
 
-#: core/leavemodel.cpp:49
+#: core/leavemodel.cpp:49 simpleapplet/simpleapplet.cpp:180
 msgid "Logout"
 msgstr "लागआउट"
 
@@ -111,15 +112,15 @@ msgstr "लागआउट"
 msgid "End session"
 msgstr "सत्र खतम करव"
 
-#: core/leavemodel.cpp:53 simpleapplet/simpleapplet.cpp:398
+#: core/leavemodel.cpp:53
 msgid "Lock"
 msgstr "तालाबंद"
 
-#: core/leavemodel.cpp:55
+#: core/leavemodel.cpp:55 simpleapplet/simpleapplet.cpp:174
 msgid "Lock the screen"
 msgstr "स्क्रीन मं ताला लगाव"
 
-#: core/leavemodel.cpp:57 simpleapplet/simpleapplet.cpp:396
+#: core/leavemodel.cpp:57 simpleapplet/simpleapplet.cpp:172
 msgid "Switch User"
 msgstr "कमइया स्विच करव"
 
@@ -127,26 +128,30 @@ msgstr "कमइया स्विच करव"
 msgid "Start a parallel session as a different user"
 msgstr "एक भिन्न कमइया के रूप मं समानान्तर सत्र चालू करव"
 
-#: core/leavemodel.cpp:61
+#: core/leavemodel.cpp:61 simpleapplet/simpleapplet.cpp:179
 msgid "Shutdown"
 msgstr "बंद करव"
 
 #: core/leavemodel.cpp:63
-msgid "Turn off the computer"
+#, fuzzy
+#| msgid "Turn off the computer"
+msgid "Turn off computer"
 msgstr "कम्प्यूटर बन्द करव"
 
-#: core/leavemodel.cpp:65
+#: core/leavemodel.cpp:65 simpleapplet/simpleapplet.cpp:178
 #, fuzzy
 #| msgid "Restart"
-msgctxt "Restart the computer"
+msgctxt "Restart computer"
 msgid "Restart"
 msgstr "फिर से  चालू करव"
 
 #: core/leavemodel.cpp:67
-msgid "Restart the computer"
+#, fuzzy
+#| msgid "Restart the computer"
+msgid "Restart computer"
 msgstr "कम्प्यूटर फिर से चालू करव"
 
-#: core/leavemodel.cpp:69
+#: core/leavemodel.cpp:69 simpleapplet/simpleapplet.cpp:173
 msgid "Save Session"
 msgstr "सत्र सहेजव"
 
@@ -154,7 +159,7 @@ msgstr "सत्र सहेजव"
 msgid "Save current session for next login"
 msgstr "अगले लागइन बर अभी हाल के के सत्र ल सहेजव"
 
-#: core/leavemodel.cpp:73
+#: core/leavemodel.cpp:73 simpleapplet/simpleapplet.cpp:175
 msgctxt "Puts the system on standby"
 msgid "Standby"
 msgstr "स्टैंडबाय"
@@ -163,11 +168,11 @@ msgstr "स्टैंडबाय"
 msgid "Pause without logging out"
 msgstr "लाग आउट के बिना ठहरव"
 
-#: core/leavemodel.cpp:77
+#: core/leavemodel.cpp:77 simpleapplet/simpleapplet.cpp:176
 msgid "Suspend to Disk"
 msgstr "डिस्क मं सस्पेंड करव"
 
-#: core/leavemodel.cpp:81
+#: core/leavemodel.cpp:81 simpleapplet/simpleapplet.cpp:177
 msgid "Suspend to RAM"
 msgstr "रैम मं सस्पेंड करव"
 
@@ -191,7 +196,7 @@ msgstr "होम फोल्डर"
 msgid "Network Folders"
 msgstr "नेटवर्क फोल्डर्स"
 
-#: core/recentlyusedmodel.cpp:93 core/searchmodel.cpp:221
+#: core/recentlyusedmodel.cpp:107 core/searchmodel.cpp:221
 msgid "Documents"
 msgstr "कागद"
 
@@ -206,6 +211,18 @@ msgstr "हटाय जा सके वाले भंडार"
 #: core/systemmodel.cpp:91
 msgid "Storage"
 msgstr "भंडारन"
+
+#: core/systemmodel.cpp:248 simpleapplet/simpleapplet.cpp:171
+msgid "Run Command..."
+msgstr ""
+
+#: core/systemmodel.cpp:252
+msgid "Run a command or a search query"
+msgstr ""
+
+#: core/systemmodel.cpp:254
+msgid "run:/"
+msgstr ""
 
 #: core/searchmodel.cpp:204
 msgid "Web Searches"
@@ -224,26 +241,26 @@ msgstr "किकआफ"
 msgid "Application Launcher"
 msgstr "अनुपरयोग चालक"
 
-#: applet/applet.cpp:84
+#: applet/applet.cpp:83
 msgid "Kickoff Application Launcher"
 msgstr "किकआफ अनुपरयोग चालक"
 
-#: applet/applet.cpp:85
+#: applet/applet.cpp:84
 msgid ""
 "Favorites, applications, computer places, recently used items and desktop "
 "sessions"
 msgstr ""
 "पसंद के निसानी, अनुपरयोग, कम्प्यूटर जगह, अभी हाल के मं उपयोग करे वाले चीज अउ डेस्कटाप सत्र"
 
-#: applet/applet.cpp:108 simpleapplet/simpleapplet.cpp:248
+#: applet/applet.cpp:107 simpleapplet/simpleapplet.cpp:301
 msgid "Menu Editor"
 msgstr "मेन्यू संपादक "
 
-#: applet/applet.cpp:114
+#: applet/applet.cpp:113
 msgid "Switch to Classic Menu Style"
 msgstr "क्लासिक मेन्यू सैली मं स्विच करव"
 
-#: applet/applet.cpp:148
+#: applet/applet.cpp:147
 msgid "Switch tabs on hover"
 msgstr "मंडराय मं टैब स्विच करव"
 
@@ -261,83 +278,119 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raviratlami@aol.in"
 
-#: simpleapplet/simpleapplet.cpp:254
-msgid "Switch to Kickoff Menu Style"
-msgstr "किकआफ मेन्यू सैली मं स्विच करव"
-
-#: simpleapplet/simpleapplet.cpp:298
-msgctxt "@label:listbox Which category of items to view in a KMenu-like menu"
-msgid "View:"
-msgstr "देखव:"
-
-#: simpleapplet/simpleapplet.cpp:302
-msgctxt "@item:inlistbox View:"
-msgid "Standard"
-msgstr "मानक"
-
-#: simpleapplet/simpleapplet.cpp:303
-msgctxt "@item:inlistbox View:"
-msgid "Favorites"
-msgstr "निसानी"
-
-#: simpleapplet/simpleapplet.cpp:304
-msgctxt "@item:inlistbox View:"
+#: simpleapplet/simpleapplet.cpp:164
+#, fuzzy
+#| msgctxt "@item:inlistbox View:"
+#| msgid "Bookmarks"
 msgid "Bookmarks"
 msgstr "निसानी "
 
-#: simpleapplet/simpleapplet.cpp:305
-msgctxt "@item:inlistbox View:"
-msgid "Applications"
-msgstr "अनुपरयोग"
+#: simpleapplet/simpleapplet.cpp:168
+#, fuzzy
+#| msgid "Clear Recent Applications"
+msgid "Recently Used Applications"
+msgstr "हाल ही के अनुपरयोग साफ करव"
 
-#: simpleapplet/simpleapplet.cpp:306
-msgctxt "@item:inlistbox View:"
-msgid "Computer"
-msgstr "कम्प्यूटर"
-
-#: simpleapplet/simpleapplet.cpp:307
-msgctxt "@item:inlistbox View:"
-msgid "Recently Used"
+#: simpleapplet/simpleapplet.cpp:169
+#, fuzzy
+#| msgid "Recently Used"
+msgid "Recently Used Documents"
 msgstr "हाल ही मं उपयोग करे"
 
-#: simpleapplet/simpleapplet.cpp:308
-msgctxt "@item:inlistbox View:"
-msgid "Leave"
-msgstr "छोड़व"
+#: simpleapplet/simpleapplet.cpp:170
+msgid "System Settings"
+msgstr ""
 
-#: simpleapplet/simpleapplet.cpp:311
+#: simpleapplet/simpleapplet.cpp:237
+#, fuzzy
+#| msgid "Application Launcher"
+msgid "Application Launcher Menu"
+msgstr "अनुपरयोग चालक"
+
+#: simpleapplet/simpleapplet.cpp:307
+msgid "Switch to Kickoff Menu Style"
+msgstr "किकआफ मेन्यू सैली मं स्विच करव"
+
+#: simpleapplet/simpleapplet.cpp:366
+#, fuzzy
+#| msgctxt ""
+#| "@label:listbox Which category of items to view in a KMenu-like menu"
+#| msgid "View:"
+msgid "View"
+msgstr "देखव:"
+
+#: simpleapplet/simpleapplet.cpp:372
+msgid "Icon:"
+msgstr ""
+
+#: simpleapplet/simpleapplet.cpp:379
 msgctxt "@label:listbox How to present applications in a KMenu-like menu"
 msgid "Format:"
 msgstr "फार्मेटः"
 
-#: simpleapplet/simpleapplet.cpp:315
+#: simpleapplet/simpleapplet.cpp:383
 msgctxt "@item:inlistbox Format:"
 msgid "Name Only"
 msgstr "सिरिफ नाम"
 
-#: simpleapplet/simpleapplet.cpp:316
+#: simpleapplet/simpleapplet.cpp:384
 msgctxt "@item:inlistbox Format:"
 msgid "Description Only"
 msgstr "सिरिफ वर्नन"
 
-#: simpleapplet/simpleapplet.cpp:317
+#: simpleapplet/simpleapplet.cpp:385
 msgctxt "@item:inlistbox Format:"
 msgid "Name Description"
 msgstr "नाम वर्नन"
 
-#: simpleapplet/simpleapplet.cpp:318
+#: simpleapplet/simpleapplet.cpp:386
 msgctxt "@item:inlistbox Format:"
 msgid "Description (Name)"
 msgstr "वर्नन (नाम)"
 
-#: simpleapplet/simpleapplet.cpp:319
+#: simpleapplet/simpleapplet.cpp:387
 msgctxt "@item:inlistbox Format:"
 msgid "Name - Description"
 msgstr "नाम - वर्नन"
 
-#: simpleapplet/simpleapplet.cpp:400
-msgid "Leave..."
-msgstr "छोड़व..."
+#: simpleapplet/simpleapplet.cpp:391
+#, fuzzy
+#| msgid "Clear Recent Applications"
+msgid "Recently Used Applications:"
+msgstr "हाल ही के अनुपरयोग साफ करव"
+
+#: simpleapplet/simpleapplet.cpp:401
+#, fuzzy
+#| msgid "Applications"
+msgid "Options"
+msgstr "अनुपरयोग"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Standard"
+#~ msgstr "मानक"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Favorites"
+#~ msgstr "निसानी"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Applications"
+#~ msgstr "अनुपरयोग"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Computer"
+#~ msgstr "कम्प्यूटर"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Recently Used"
+#~ msgstr "हाल ही मं उपयोग करे"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Leave"
+#~ msgstr "छोड़व"
+
+#~ msgid "Leave..."
+#~ msgstr "छोड़व..."
 
 #~ msgid "Sleep"
 #~ msgstr "स्लीप"

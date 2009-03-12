@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-07 06:17+0100\n"
+"POT-Creation-Date: 2009-03-08 10:11+0100\n"
 "PO-Revision-Date: 2009-02-26 15:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -53,22 +53,22 @@ msgstr "फोल्डर बनाव"
 msgid "Enter the name of the folder to create:"
 msgstr ""
 
-#: app/documentpanel.cpp:321 app/thumbnailviewpanel.cpp:100
-#: app/mainwindow.cpp:271 lib/documentview/documentview.cpp:125
+#: app/documentpanel.cpp:319 app/thumbnailviewpanel.cpp:100
+#: app/mainwindow.cpp:271 lib/documentview/documentview.cpp:123
 msgctxt "@title actions category - means actions changing smth in interface"
 msgid "View"
 msgstr "दृस्य"
 
-#: app/documentpanel.cpp:324
+#: app/documentpanel.cpp:322
 msgid "Thumbnail Bar"
 msgstr "लघुफोटू पट्टी"
 
-#: app/documentpanel.cpp:476
+#: app/documentpanel.cpp:474
 msgctxt "@action:button"
 msgid "Discard Changes and Reload"
 msgstr "बदलाव मन ल फेंक देव अउ फिर से लोड करव"
 
-#: app/documentpanel.cpp:478
+#: app/documentpanel.cpp:476
 msgctxt "@info"
 msgid ""
 "This image has been modified. Reloading it will discard all your changes."
@@ -216,27 +216,27 @@ msgctxt "@action:inmenu"
 msgid "Filter by Tag"
 msgstr "टैग से छानव"
 
-#: app/gvcore.cpp:77
+#: app/gvcore.cpp:78
 msgctxt "@info"
 msgid "No image format selected."
 msgstr "कोई फोटू फार्मेट चुने नइ गे हे."
 
-#: app/gvcore.cpp:90
+#: app/gvcore.cpp:91
 #, kde-format
 msgctxt "@info"
 msgid "Gwenview cannot save images as %1."
 msgstr "ग्वेनव्यू फोटू मन ल %1 जइसन सहेज नइ सकिस."
 
-#: app/gvcore.cpp:174
+#: app/gvcore.cpp:175
 msgctxt "@info:progress saving all image changes"
 msgid "Saving..."
 msgstr "सहेजत हे..."
 
-#: app/gvcore.cpp:175
+#: app/gvcore.cpp:176
 msgid "&Stop"
 msgstr "रुकव (&S)"
 
-#: app/gvcore.cpp:208
+#: app/gvcore.cpp:209
 #, kde-format
 msgctxt "@info"
 msgid "One document could not be saved:"
@@ -244,7 +244,7 @@ msgid_plural "%1 documents could not be saved:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: app/gvcore.cpp:215
+#: app/gvcore.cpp:216
 #, kde-format
 msgctxt ""
 "@info %1 is the name of the document which failed to save, %2 is the reason "
@@ -252,22 +252,22 @@ msgctxt ""
 msgid "<filename>%1</filename>: %2"
 msgstr "<filename>%1</filename>: %2"
 
-#: app/gvcore.cpp:233
+#: app/gvcore.cpp:234
 #, kde-format
 msgctxt "@info"
 msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
 msgstr ""
 
-#: app/gvcore.cpp:243
+#: app/gvcore.cpp:244
 msgid "Save using another format"
 msgstr "अऊ दूसर फारमेट के साथ सहेजव"
 
-#: app/gvcore.cpp:246
+#: app/gvcore.cpp:247
 #, kde-format
 msgid "Gwenview cannot save images in '%1' format."
 msgstr "ग्वेनव्यू फोटू मन ल '%1' फारमेट मं सहेज नइ सकिस."
 
-#: app/gvcore.cpp:268
+#: app/gvcore.cpp:269
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -275,7 +275,7 @@ msgid ""
 "Are you sure you want to overwrite it?"
 msgstr ""
 
-#: app/gvcore.cpp:325
+#: app/gvcore.cpp:326
 msgctxt "@info"
 msgid "Gwenview cannot edit this kind of image."
 msgstr "ग्वेनव्यू अइसन फोटू मन के संपादन नइ कर सके"
@@ -288,10 +288,8 @@ msgstr "ग्वेन-व्यू"
 msgid "An Image Viewer"
 msgstr "एक फोटू प्रदर्सक"
 
-#: app/main.cpp:45
-#, fuzzy
-#| msgid "Copyright 2000-2008 Aurélien Gâteau"
-msgid "Copyright 2000-2009 Aurélien Gâteau"
+#: app/main.cpp:45 part/gvpart.cpp:122
+msgid "Copyright 2000-2008 Aurélien Gâteau"
 msgstr "कापीराइट 2000-2008, ओरेलिएन गातेऊ"
 
 #: app/main.cpp:47 part/gvpart.cpp:124
@@ -332,23 +330,49 @@ msgid "Meta Information"
 msgstr "मेटा जानकारी"
 
 #: app/infocontextmanageritem.cpp:218
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "%1 files selected"
 msgctxt "@label"
-msgid "%1 files selected"
-msgstr "%1 फाइल मन ल चुने गे हे"
+msgid "%1 file selected"
+msgid_plural "%1 files selected"
+msgstr[0] "%1 फाइल मन ल चुने गे हे"
+msgstr[1] "%1 फाइल मन ल चुने गे हे"
 
 #: app/infocontextmanageritem.cpp:220
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "One folder selected"
+#| msgid_plural "%1 folders selected"
 msgctxt "@label"
-msgid "One folder selected"
+msgid "%1 folder selected"
 msgid_plural "%1 folders selected"
 msgstr[0] "एक फोल्डर चुने गिस"
 msgstr[1] "%1 फोल्डर चुने गिस"
 
-#: app/infocontextmanageritem.cpp:222
+#: app/infocontextmanageritem.cpp:223
 #, kde-format
-msgctxt "@label"
-msgid "%1 folders and %2 files selected"
+msgid "%1 folder"
+msgid_plural "%1 folders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: app/infocontextmanageritem.cpp:223
+#, fuzzy, kde-format
+#| msgctxt "Slideshow interval in seconds"
+#| msgid "%1 sec"
+#| msgid_plural "%1 secs"
+msgid "%1 file"
+msgid_plural "%1 files"
+msgstr[0] "%1 सेक."
+msgstr[1] "%1 सेक."
+
+#: app/infocontextmanageritem.cpp:223
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "%1 folders and %2 files selected"
+msgctxt "@label. The two parameters are strings like '2 folders' and '1 file'."
+msgid "%1 and %2 selected"
 msgstr "%1 फोल्डर अउ %2 फाइल मन ल चुने गिस"
 
 #: app/imagemetainfodialog.cpp:75
@@ -537,8 +561,10 @@ msgstr "लहुटाव"
 msgid "Resize"
 msgstr "आकार बदलव"
 
-#: app/imageopscontextmanageritem.cpp:101 lib/cropimageoperation.cpp:48
-#: lib/cropsidebar.cpp:120
+#. i18n: file: lib/crop/cropwidget.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
+#: app/imageopscontextmanageritem.cpp:101 lib/crop/cropimageoperation.cpp:48
+#: rc.cpp:135
 msgid "Crop"
 msgstr "काँट छाँट करव"
 
@@ -649,6 +675,26 @@ msgstr[1] "%1 फोटू सुधारे गें."
 msgid "If you quit now, your changes will be lost."
 msgstr "यदि आप मन अभी बाहिर होही, आप मन के बदलाव गंवा हो जाही."
 
+#: lib/crop/cropwidget.cpp:116
+msgid "Square"
+msgstr "वर्ग"
+
+#: lib/crop/cropwidget.cpp:117
+msgid "This Screen"
+msgstr ""
+
+#: lib/crop/cropwidget.cpp:136
+#, fuzzy
+#| msgid "&Width:"
+msgid "Width"
+msgstr "चौड़ाईः (&W)"
+
+#: lib/crop/cropwidget.cpp:136
+#, fuzzy
+#| msgid "Height:"
+msgid "Height"
+msgstr "ऊंचाई:"
+
 #: lib/redeyereduction/redeyereductiontool.cpp:69
 msgid "Click on the red eye you want to fix."
 msgstr ""
@@ -667,27 +713,27 @@ msgctxt "@info:tooltip of custom toolbar button"
 msgid "%1"
 msgstr "%1"
 
-#: lib/documentview/documentview.cpp:130
+#: lib/documentview/documentview.cpp:128
 msgid "Zoom to Fit"
 msgstr "फिट बैठे तक जूम करव"
 
-#: lib/documentview/documentview.cpp:132
+#: lib/documentview/documentview.cpp:130
 msgctxt "@action:button Zoom to fit, shown in status bar, keep it short please"
 msgid "Fit"
 msgstr "फिट"
 
-#: lib/documentview/documentview.cpp:138
+#: lib/documentview/documentview.cpp:136
 msgctxt ""
 "@action:button Zoom to original size, shown in status bar, keep it short "
 "please"
 msgid "100%"
 msgstr "100%"
 
-#: lib/documentview/documentview.cpp:334
+#: lib/documentview/documentview.cpp:332
 msgid "Gwenview does not know how to display this kind of document"
 msgstr ""
 
-#: lib/documentview/documentview.cpp:417
+#: lib/documentview/documentview.cpp:415
 #, kde-format
 msgid "Loading <filename>%1</filename> failed"
 msgstr "<filename>%1</filename> के लोड करे मं फेल"
@@ -709,10 +755,6 @@ msgstr ""
 #: lib/transformimageoperation.cpp:60
 msgid "Transform"
 msgstr "रूपांतरन"
-
-#: lib/cropsidebar.cpp:78
-msgid "Square"
-msgstr "वर्ग"
 
 #: lib/semanticinfo/tagitemdelegate.cpp:65
 msgid "Assign this tag to all selected images"
@@ -830,10 +872,6 @@ msgstr "गुन"
 #: part/gvpart.cpp:118
 msgid "Gwenview KPart"
 msgstr "ग्वेन-व्यू के-पार्ट"
-
-#: part/gvpart.cpp:122
-msgid "Copyright 2000-2008 Aurélien Gâteau"
-msgstr "कापीराइट 2000-2008, ओरेलिएन गातेऊ"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -1109,124 +1147,128 @@ msgstr "ब्राउज"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnlargeSmallerImages)
 #. i18n: file: lib/print/printoptionspage.ui:157
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintEnlargeSmallerImages)
-#: rc.cpp:132 rc.cpp:156
+#: rc.cpp:132 rc.cpp:174
 msgid "Enlarge smaller images"
 msgstr "छोटे फोटू ल बड़ा करव"
 
+#. i18n: file: lib/crop/cropwidget.ui:20
+#. i18n: ectx: property (text), widget (QCheckBox, advancedCheckBox)
+#: rc.cpp:138
+#, fuzzy
+#| msgid "Image Settings"
+msgid "Advanced settings"
+msgstr "फोटू सेटिंग"
+
+#. i18n: file: lib/crop/cropwidget.ui:27
+#. i18n: ectx: property (text), widget (QPushButton, cropButton)
+#: rc.cpp:141
+#, fuzzy
+#| msgid "Crop"
+msgid "&Crop"
+msgstr "काँट छाँट करव"
+
+#. i18n: file: lib/crop/cropwidget.ui:44
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:144
+#, fuzzy
+#| msgid "Rating:"
+msgid "Ratio:"
+msgstr "दरजा:"
+
+#. i18n: file: lib/crop/cropwidget.ui:77
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:147
+#, fuzzy
+#| msgid "Image Position"
+msgid "Position:"
+msgstr "फोटू स्थिति"
+
+#. i18n: file: lib/crop/cropwidget.ui:110
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:150
+#, fuzzy
+#| msgid "Size"
+msgid "Size:"
+msgstr "आकार"
+
 #. i18n: file: lib/redeyereduction/redeyereductionhud.ui:16
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:135
+#: rc.cpp:153
 msgid "Size"
 msgstr "आकार"
 
 #. i18n: file: lib/redeyereduction/redeyereductionhud.ui:43
 #. i18n: ectx: property (text), widget (QToolButton, applyButton)
-#: rc.cpp:138
+#: rc.cpp:156
 msgid "Apply"
 msgstr "लगाव"
 
 #. i18n: file: lib/print/printoptionspage.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
-#: rc.cpp:141
+#: rc.cpp:159
 msgid "Image Settings"
 msgstr "फोटू सेटिंग"
 
 #. i18n: file: lib/print/printoptionspage.ui:34
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:144
+#: rc.cpp:162
 msgid "Image Position"
 msgstr "फोटू स्थिति"
 
 #. i18n: file: lib/print/printoptionspage.ui:77
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:147
+#: rc.cpp:165
 msgid "Scaling"
 msgstr "आकार बदलना"
 
 #. i18n: file: lib/print/printoptionspage.ui:101
 #. i18n: ectx: property (text), widget (QRadioButton, mNoScale)
-#: rc.cpp:150
+#: rc.cpp:168
 msgid "&No scaling"
 msgstr "कोई स्केलिंग नइ (&N)"
 
 #. i18n: file: lib/print/printoptionspage.ui:111
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleToPage)
-#: rc.cpp:153
+#: rc.cpp:171
 msgid "&Fit image to page"
 msgstr "फोटू ल पेज मं फिट करव (&F)"
 
 #. i18n: file: lib/print/printoptionspage.ui:182
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleTo)
-#: rc.cpp:159
+#: rc.cpp:177
 msgid "&Scale to:"
 msgstr "ए आकार मं बदलव: (&S)"
 
 #. i18n: file: lib/print/printoptionspage.ui:232
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:162
+#: rc.cpp:180
 msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
 msgid "x"
 msgstr "x"
 
 #. i18n: file: lib/print/printoptionspage.ui:259
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:165
+#: rc.cpp:183
 msgid "Millimeters"
 msgstr "मिलिसमीटर (मिमी)"
 
 #. i18n: file: lib/print/printoptionspage.ui:264
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:168
+#: rc.cpp:186
 msgid "Centimeters"
 msgstr "सेंटीमीटर (सेमी)"
 
 #. i18n: file: lib/print/printoptionspage.ui:269
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:171
+#: rc.cpp:189
 msgid "Inches"
 msgstr "इंच (इं)"
 
 #. i18n: file: lib/print/printoptionspage.ui:280
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintKeepRatio)
-#: rc.cpp:174
+#: rc.cpp:192
 msgid "Keep ratio"
 msgstr "अनुपात बनाए रखव"
-
-#. i18n: file: lib/cropsidebar.ui:22
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:179
-msgid "&X:"
-msgstr "&X:"
-
-#. i18n: file: lib/cropsidebar.ui:45
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:182
-msgid "&Y:"
-msgstr "&Y:"
-
-#. i18n: file: lib/cropsidebar.ui:61
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:185
-msgid "&Width:"
-msgstr "चौड़ाईः (&W)"
-
-#. i18n: file: lib/cropsidebar.ui:77
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:188
-msgid "&Height:"
-msgstr "ऊंचाईः (&H)"
-
-#. i18n: file: lib/cropsidebar.ui:151
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:191
-msgid "x"
-msgstr "x"
-
-#. i18n: file: lib/cropsidebar.ui:170
-#. i18n: ectx: property (text), widget (QCheckBox, constrainRatioCheckBox)
-#: rc.cpp:194
-msgid "Constrain ratio"
-msgstr "कास्ट्रेन अनुपात"
 
 #. i18n: file: part/gvpart.rc:4
 #. i18n: ectx: Menu (file)
@@ -1239,6 +1281,26 @@ msgstr "फाइल (&F)"
 #: rc.cpp:200
 msgid "&View"
 msgstr "देखव (&V)"
+
+#, fuzzy
+#~| msgid "Copyright 2000-2008 Aurélien Gâteau"
+#~ msgid "Copyright 2000-2009 Aurélien Gâteau"
+#~ msgstr "कापीराइट 2000-2008, ओरेलिएन गातेऊ"
+
+#~ msgid "&X:"
+#~ msgstr "&X:"
+
+#~ msgid "&Y:"
+#~ msgstr "&Y:"
+
+#~ msgid "&Height:"
+#~ msgstr "ऊंचाईः (&H)"
+
+#~ msgid "x"
+#~ msgstr "x"
+
+#~ msgid "Constrain ratio"
+#~ msgstr "कास्ट्रेन अनुपात"
 
 #~ msgid "Could not load <filename>%1</filename>."
 #~ msgstr "<filename>%1</filename> ल लोड नइ कर सकिस."

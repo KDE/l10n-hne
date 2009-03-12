@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-12 06:09+0100\n"
+"POT-Creation-Date: 2009-03-12 10:23+0100\n"
 "PO-Revision-Date: 2009-02-26 22:16+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -28,8 +28,8 @@ msgstr "समूह नाम खाली हे"
 
 #: conf/transfersgroupwidget.cpp:73
 msgid ""
-"A group can not have an empty name\n"
-"Please select a new one"
+"A group can not have an empty name.\n"
+"Please select a new one."
 msgstr ""
 
 #: conf/transfersgroupwidget.cpp:84
@@ -38,8 +38,8 @@ msgstr "समूह नाम पहिली से ही उपयोग म
 
 #: conf/transfersgroupwidget.cpp:84
 msgid ""
-"Another group with this name already exists\n"
-"Please select a different name"
+"Another group with this name already exists.\n"
+"Please select a different name."
 msgstr ""
 
 #: conf/transfersgroupwidget.cpp:102 conf/transfersgroupwidget.cpp:107
@@ -51,7 +51,9 @@ msgid "My Downloads"
 msgstr "मोर डाउनलोड्स"
 
 #: conf/transfersgroupwidget.cpp:130
-msgid "You can not delete this group!"
+#, fuzzy
+#| msgid "You can not delete this group!"
+msgid "You can not delete this group."
 msgstr "आप एखर समूह ल मिटा नइ सकहू!"
 
 #: conf/transfersgroupwidget.cpp:135
@@ -83,9 +85,7 @@ msgstr "नाम बदलव"
 msgid "Select Icon"
 msgstr "चिनहा चुनव"
 
-#. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:81
-#. i18n: ectx: property (text), widget (QPushButton, configureScriptButton)
-#: conf/transfersgroupwidget.cpp:183 rc.cpp:481
+#: conf/transfersgroupwidget.cpp:183
 msgid "Configure..."
 msgstr "कान्फिगर..."
 
@@ -138,11 +138,13 @@ msgid "Network and Downloads"
 msgstr "नेटवर्क अउ डाउनलोड्स"
 
 #: conf/preferencesdialog.cpp:73
-msgid "Webinterface"
+#, fuzzy
+#| msgid "Webinterface"
+msgid "Web Interface"
 msgstr "वेबइंटरफेस"
 
 #: conf/preferencesdialog.cpp:73
-msgid "Control KGet over Network or Internet"
+msgid "Control KGet over a Network or the Internet"
 msgstr ""
 
 #: conf/preferencesdialog.cpp:74
@@ -211,14 +213,14 @@ msgstr "स्थिति"
 #. i18n: file: ui/history/transferhistory.ui:120
 #. i18n: ectx: property (text), item, widget (KComboBox, rangeType)
 #: core/transfertreemodel.cpp:563
-#: transfer-plugins/bittorrent/advanceddetails/torrentfiletreemodel.cpp:257
-#: transfer-plugins/bittorrent/advanceddetails/torrentfilelistmodel.cpp:72
-#: rc.cpp:564
+#: transfer-plugins/bittorrent/advanceddetails/torrentfiletreemodel.cpp:377
+#: transfer-plugins/bittorrent/advanceddetails/torrentfilelistmodel.cpp:70
+#: rc.cpp:565
 msgid "Size"
 msgstr "आकार"
 
 #: core/transfertreemodel.cpp:565
-#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:193
+#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:211
 msgid "Progress"
 msgstr "प्रगति"
 
@@ -246,12 +248,13 @@ msgid "n/a"
 msgstr "n/a"
 
 #: core/transferhandler.cpp:151
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1468
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1481
 #: ui/transferdetails.cpp:89
 msgid "Stalled"
 msgstr "रुका होइस"
 
 #: core/transferhandler.cpp:156 core/transfergrouphandler.cpp:130
+#: transfer-plugins/bittorrent/libbtcore/util/functions.cpp:263
 #: ui/transferdetails.cpp:94
 #, kde-format
 msgid "%1/s"
@@ -260,17 +263,16 @@ msgstr "%1/s"
 #. i18n: file: conf/dlgadvanced.ui:40
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_AfterFinishAction)
 #: core/transferhandler.cpp:372 core/transferhandler.cpp:382
-#: ui/droptarget.cpp:88 rc.cpp:96
+#: ui/droptarget.cpp:93 rc.cpp:96
 msgid "Quit KGet"
 msgstr "के-गेट से बाहिर हों"
 
 #: core/transferhandler.cpp:373
-msgid "KGet quits now because all downloads have been completed."
+msgid "KGet is now closing, as all downloads have completed."
 msgstr ""
 
 #: core/transferhandler.cpp:383
-msgid ""
-"The computer will turn off now because all downloads have been completed."
+msgid "The computer will now turn off, as all downloads have completed."
 msgstr ""
 
 #: core/transfergrouphandler.cpp:114
@@ -343,7 +345,7 @@ msgstr "%1 मं सहेज नइ सके."
 
 #. i18n: file: ui/newtransferwidget.ui:24
 #. i18n: ectx: property (text), widget (KTitleWidget, titleWidget)
-#: core/kget.cpp:777 ui/newtransferdialog.cpp:219 rc.cpp:502
+#: core/kget.cpp:777 ui/newtransferdialog.cpp:219 rc.cpp:503
 msgid "New Download"
 msgstr "नवा डाउनलोड"
 
@@ -432,8 +434,11 @@ msgstr ""
 #: transfer-plugins/kio/transferKio.cpp:37
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:44
 #: transfer-plugins/metalink/metalink.cpp:37
+#, fuzzy
+#| msgctxt "transfer state: connecting"
+#| msgid "Connecting.."
 msgctxt "transfer state: connecting"
-msgid "Connecting.."
+msgid "Connecting...."
 msgstr "कनेक्सन होवत हे..."
 
 #: transfer-plugins/kio/transferKio.cpp:125
@@ -442,15 +447,14 @@ msgid "Aborted"
 msgstr "छोड़ दे गिस"
 
 #: transfer-plugins/kio/transferKio.cpp:153
-msgid "Downloading..."
-msgstr "डाउनलोड करत हे..."
-
 #: transfer-plugins/kio/transferKio.cpp:167
 #: transfer-plugins/kio/transferKio.cpp:182
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:248
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:265
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:282
-msgid "Downloading.."
+#, fuzzy
+#| msgid "Downloading..."
+msgid "Downloading...."
 msgstr "डाउनलोड करत हे..."
 
 #: transfer-plugins/mms/mmsTransfer.cpp:36
@@ -458,7 +462,7 @@ msgstr "डाउनलोड करत हे..."
 #| msgctxt "The transfer is running"
 #| msgid "Running"
 msgctxt "transfer state: running"
-msgid "Running.."
+msgid "Running...."
 msgstr "चलत हे"
 
 #: transfer-plugins/metalink/metalink.cpp:112
@@ -497,144 +501,258 @@ msgstr "डाटा %1 स्कैन करे मं गलती"
 msgid "Scanning data of <b>%1</b> :"
 msgstr "<b>%1</b> के डाटा स्कैन करत हे"
 
-#: transfer-plugins/bittorrent/advanceddetails/torrentfiletreemodel.cpp:256
-#: transfer-plugins/bittorrent/advanceddetails/torrentfilelistmodel.cpp:71
+#: transfer-plugins/bittorrent/advanceddetails/torrentfiletreemodel.cpp:376
+#: transfer-plugins/bittorrent/advanceddetails/torrentfilelistmodel.cpp:69
 msgid "File"
 msgstr "फाइल"
 
-#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:64
+#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:66
 msgctxt "Open file"
 msgid "Open"
 msgstr "खोलव"
 
-#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:66
+#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:68
 msgid "Download first"
 msgstr "पहलि डाउनलोड करव"
 
-#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:67
+#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:69
 msgid "Download normally"
 msgstr "सामान्य डाउनलोड"
 
-#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:68
+#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:70
 msgid "Download last"
 msgstr "आखिरी मं डाउनलोड करव"
 
-#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:70
+#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:72
 msgid "Do Not Download"
 msgstr "डाउनलोड नइ करव"
 
-#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:71
+#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:73
 msgid "Delete File(s)"
 msgstr "फाइल मेटाव"
 
-#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:73
+#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:75
 msgid "Move File"
 msgstr "फाइल खिसकाव"
 
-#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:252
-msgid "You will lose all data in this file, are you sure you want to do this ?"
+#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:77
+msgid "Collapse Folder Tree"
 msgstr ""
 
-#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:253
-msgid ""
-"You will lose all data in these files, are you sure you want to do this ?"
+#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:78
+msgid "Expand Folder Tree"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:266
+msgid "You will lose all data in this file, are you sure you want to do this?"
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:267
-#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:288
+msgid ""
+"You will lose all data in these files, are you sure you want to do this?"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:281
+#: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:302
 msgid "Select a directory to move the data to."
 msgstr ""
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:70
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:152
 msgctxt "Choked"
 msgid "Yes"
 msgstr "हाँ"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:70
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:152
 msgctxt "Not choked"
 msgid "No"
 msgstr "नइ"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:71
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:153
 msgctxt "Snubbed"
 msgid "Yes"
 msgstr "हाँ"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:71
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:153
 msgctxt "Not snubbed"
 msgid "No"
 msgstr "नइ"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:200
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:161
+#, fuzzy
+#| msgctxt "Choked"
+#| msgid "Yes"
+msgctxt "Interested"
+msgid "Yes"
+msgstr "हाँ"
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:161
+#, fuzzy
+#| msgctxt "Not choked"
+#| msgid "No"
+msgctxt "Not Interested"
+msgid "No"
+msgstr "नइ"
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:162
+#, fuzzy
+#| msgctxt "Choked"
+#| msgid "Yes"
+msgctxt "Interesting"
+msgid "Yes"
+msgstr "हाँ"
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:162
+#, fuzzy
+#| msgctxt "Not choked"
+#| msgid "No"
+msgctxt "Not Interesting"
+msgid "No"
+msgstr "नइ"
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:307
 msgid "IP Address"
 msgstr "आईपी पता"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:201
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:308
 msgid "Client"
 msgstr "क्लायंट"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:202
-#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:195
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:309
+#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:213
 msgid "Down Speed"
 msgstr "डाउन गति"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:203
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:310
 msgid "Up Speed"
 msgstr "अपलोड गति"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:204
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:311
 msgid "Choked"
 msgstr "चोक्ड"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:205
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:312
 msgid "Snubbed"
 msgstr "स्नब्ड"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:206
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:313
 msgid "Availability"
 msgstr "मिलत"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:207
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:314
+#: transfer-plugins/bittorrent/libbtcore/util/logsystemmanager.cpp:36
 msgid "DHT"
 msgstr "डीएचटी"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:208
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:315
 msgid "Score"
 msgstr "अंक"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:209
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:316
 msgid "Upload Slot"
 msgstr "अपलोड स्लाट"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:210
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:317
 msgid "Requests"
 msgstr "निवेदन"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:211
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:318
 #: transfer-plugins/bittorrent/advanceddetails/webseedsmodel.cpp:126
 msgid "Downloaded"
 msgstr "डाउनलोडेड"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:212
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:319
 msgid "Uploaded"
 msgstr "अपलोड कर दे गिस"
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:320
+msgid "Interested"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:321
+#, fuzzy
+#| msgid "Integration"
+msgid "Interesting"
+msgstr "एकीकरन"
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:329
+msgid "IP address of the peer"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:330
+msgid "Which client the peer is using"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:331
+#, fuzzy
+#| msgid "Downloaded"
+msgid "Download speed"
+msgstr "डाउनलोडेड"
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:332
+#, fuzzy
+#| msgid "Uploaded"
+msgid "Upload speed"
+msgstr "अपलोड कर दे गिस"
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:333
+msgid ""
+"Whether or not the peer has choked us.  If we are choked, the peer will not "
+"send us any data."
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:334
+msgid "Snubbed means the peer has not sent us any data in the last 2 minutes"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:335
+msgid "How much of the torrent's data the peer has"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:336
+msgid "Whether or not the peer has DHT enabled"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:337
+msgid ""
+"The score of the peer. KTorrent uses this to determine who to upload to."
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:338
+msgid "Only peers which have an upload slot will get data from us"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:339
+msgid "The number of download and upload requests"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:340
+msgid "How much data we have downloaded from this peer"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:341
+msgid "How much data we have uploaded to this peer"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:342
+msgid "Whether the peer is interested in downloading data from us"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:343
+msgid "Whether we are interested in downloading from this peer"
+msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/webseedsmodel.cpp:124
 msgid "URL"
 msgstr "यूआरएल"
 
 #: transfer-plugins/bittorrent/advanceddetails/btadvanceddetailswidget.cpp:54
-#, kde-format
-msgid "Advanced-Details for %1"
-msgstr "%1 बर विस्तृत विवरन"
-
 #: transfer-plugins/bittorrent/advanceddetails/btadvanceddetailswidget.cpp:58
 #, kde-format
 msgid "Advanced Details for %1"
 msgstr "%1 बर विस्तृत विवरन"
 
 #: transfer-plugins/bittorrent/advanceddetails/btadvanceddetailswidget.cpp:66
-#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:197
+#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:214
 msgid "Files"
 msgstr "फाइल"
 
@@ -647,7 +765,7 @@ msgstr "पीअर"
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:154
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: transfer-plugins/bittorrent/advanceddetails/btadvanceddetailswidget.cpp:71
-#: rc.cpp:290 rc.cpp:379
+#: rc.cpp:290 rc.cpp:380
 msgid "Chunks"
 msgstr "चंक"
 
@@ -681,108 +799,129 @@ msgstr "गलत रूप मं यूआरएल."
 
 #: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:101
 #, kde-format
-msgid "There already is a tracker named <b>%1</b> !"
+msgid "There already is a tracker named <b>%1</b>."
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:119
 msgid "Cannot remove torrent default tracker."
 msgstr ""
 
-#: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:223
+#: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:231
 msgid "You cannot add trackers to a private torrent"
 msgstr ""
 
-#: transfer-plugins/bittorrent/advanceddetails/peerview.cpp:55
+#: transfer-plugins/bittorrent/advanceddetails/peerview.cpp:52
 msgid "Kick Peer"
 msgstr "किक पीअर"
 
-#: transfer-plugins/bittorrent/advanceddetails/peerview.cpp:56
+#: transfer-plugins/bittorrent/advanceddetails/peerview.cpp:53
 msgid "Ban Peer"
 msgstr "बेन पीअर"
 
-#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:72
-#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:69
+#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:66
+#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:70
 msgid "Priority"
 msgstr "प्राथमिकता"
 
-#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:73
-#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:70
+#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:67
+#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:71
 msgid "Preview"
 msgstr "प्रिव्यू"
 
-#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:75
-#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:72
+#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:69
+#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:73
 #, no-c-format
 msgctxt "Percent of File Downloaded"
 msgid "% Complete"
 msgstr "% पूरा"
 
-#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:84
-#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:81
+#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:78
+#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:82
 msgctxt "Download first"
 msgid "First"
 msgstr "पहिली"
 
-#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:85
-#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:82
+#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:79
+#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:83
 msgctxt "Download last"
 msgid "Last"
 msgstr "आखरी"
 
-#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:90
+#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:84
 msgctxt "Download Normal (not as first or last)"
 msgid "Normal"
 msgstr "सामान्य"
 
-#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:141
-#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:164
-#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:162
+#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:135
+#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:158
+#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:163
 msgctxt "Preview available"
 msgid "Available"
 msgstr "मिलत "
 
-#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:143
-#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:166
-#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:141
-#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:164
+#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:137
+#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:160
+#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:142
+#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:165
 msgctxt "Preview pending"
 msgid "Pending"
 msgstr "लंबित"
 
-#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:146
-#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:169
-#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:144
-#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:167
+#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:140
+#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:163
+#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:145
+#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:168
 msgctxt "No preview available"
 msgid "No"
 msgstr "नइ"
 
-#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:150
-#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:173
-#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:148
-#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:171
+#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:144
+#: transfer-plugins/bittorrent/advanceddetails/iwfilelistmodel.cpp:167
+#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:150
+#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:170
+#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:176
 #, kde-format
 msgid "%1 %"
 msgstr "%1 %"
 
-#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:192
+#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:210
 msgid "Chunk"
 msgstr "चंक"
 
-#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:194
+#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:212
 msgid "Peer"
 msgstr "पीअर"
 
-#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:196
-msgid "Assigned Peers"
-msgstr "आबंटित पीअर"
+#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:222
+#, fuzzy
+#| msgid "Number of threads:"
+msgid "Number of the chunk"
+msgstr "थ्रेड की संख्या:"
 
-#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:87
+#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:223
+msgid "Download progress of the chunk"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:224
+msgid "Which peer we are downloading it from"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:225
+#, fuzzy
+#| msgid "Download checked"
+msgid "Download speed of the chunk"
+msgstr "चेक करे ल डाउनलोड करव"
+
+#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:226
+msgid "Which files the chunk is located in"
+msgstr ""
+
+#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:88
 msgctxt "Download normally(not as first or last)"
 msgid "Normal"
 msgstr "सामान्य"
 
-#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:139
+#: transfer-plugins/bittorrent/advanceddetails/iwfiletreemodel.cpp:140
 msgctxt "preview available"
 msgid "Available"
 msgstr "मिलत "
@@ -796,73 +935,63 @@ msgid "&Scan Files"
 msgstr "फाइल स्कैन करव (&S)"
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:77
-msgid "Downloading Torrent-File.."
+#, fuzzy
+#| msgid "Downloading Torrent-File.."
+msgid "Downloading Torrent File...."
 msgstr "टोरेंट फाइल डाउनलोड करत हे..."
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:213
+#, fuzzy
+#| msgid "Downloading..."
 msgctxt "transfer state: downloading"
-msgid "Downloading.."
+msgid "Downloading...."
 msgstr "डाउनलोड करत हे..."
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:283
-msgid "Analyzing torrent.."
+#, fuzzy
+#| msgid "Analyzing torrent.."
+msgid "Analyzing torrent...."
 msgstr "टोरेंट एनलाइज करत हे..."
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:332
 #: transfer-plugins/bittorrent/bttransfer.cpp:343
-msgid "An error occurred.."
+#, fuzzy
+#| msgid "An error occurred.."
+msgid "An error occurred...."
 msgstr "एक गलती होइस..."
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:353
+#, fuzzy
+#| msgctxt "Transfer status: seeding"
+#| msgid "Seeding.."
 msgctxt "Transfer status: seeding"
-msgid "Seeding.."
+msgid "Seeding...."
 msgstr "सीडिंग..."
 
 #: transfer-plugins/bittorrent/btsettingswidget.cpp:36
-msgid "Select a default Torrent-Folder"
+#, fuzzy
+#| msgid "Select a default Torrent-Folder"
+msgid "Select a default torrent folder"
 msgstr "डिफाल्ट टोरेंट फोल्डर चुनव"
 
 #: transfer-plugins/bittorrent/btsettingswidget.cpp:38
-msgid "Select a default Temporary-Folder"
+#, fuzzy
+#| msgid "Select a default Temporary-Folder"
+msgid "Select a default temporary folder"
 msgstr "डिफाल्ट अस्थाई फोल्डर चुनव"
 
 #: transfer-plugins/bittorrent/libbtcore/peer/peerid.cpp:203
 msgid "Unknown client"
 msgstr "अग्यात क्लायंट"
 
-#: transfer-plugins/bittorrent/libbtcore/util/functions.cpp:258
-#, kde-format
-msgid "%1 GB"
-msgstr "%1 गी.बा."
-
-#: transfer-plugins/bittorrent/libbtcore/util/functions.cpp:260
-#, kde-format
-msgid "%1 MB"
-msgstr "%1 मे.बा."
-
-#: transfer-plugins/bittorrent/libbtcore/util/functions.cpp:262
-#, kde-format
-msgid "%1 KB"
-msgstr "%1 कि.बा."
-
-#: transfer-plugins/bittorrent/libbtcore/util/functions.cpp:264
-#, kde-format
-msgid "%1 B"
-msgstr "%1 बा"
-
-#: transfer-plugins/bittorrent/libbtcore/util/functions.cpp:270
-#, kde-format
-msgid "%1 KB/s"
-msgstr "%1 किबा/से"
-
-#: transfer-plugins/bittorrent/libbtcore/util/functions.cpp:281
+#: transfer-plugins/bittorrent/libbtcore/util/functions.cpp:274
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
 msgstr[0] "१दिन"
 msgstr[1] "%1 दिन"
 
-#: transfer-plugins/bittorrent/libbtcore/util/log.cpp:124
+#: transfer-plugins/bittorrent/libbtcore/util/log.cpp:119
 #, kde-format
 msgid "Cannot open log file %1 : %2"
 msgstr "लाग फ़ाइल खोल नइ सकिस  %1 : %2"
@@ -877,140 +1006,160 @@ msgstr "एमां लिख नइ सकिस  %1 : %2"
 msgid "Cannot read from %1"
 msgstr " %1 से पढ़ नइ सकिस"
 
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:77
-#, kde-format
-msgid "Cannot create directory %1: %2"
-msgstr ""
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:88
+#, fuzzy, kde-format
+#| msgid "Cannot read from %1"
+msgid "Cannot create directory %1"
+msgstr " %1 से पढ़ नइ सकिस"
 
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:94
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:129
 #, kde-format
 msgid "Cannot symlink %1 to %2: %3"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:111
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:146
 #, kde-format
 msgid "Cannot move %1 to %2: %3"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:127
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:143
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:162
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:178
 #, kde-format
 msgid "Cannot copy %1 to %2: %3"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:204
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:239
 #, kde-format
 msgid "Cannot delete %1: %2"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:221
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:256
 #, kde-format
 msgid "Cannot create %1: %2"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:240
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:274
 #, kde-format
 msgid "Cannot calculate the filesize of %1: %2"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:256
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:290
 #, kde-format
 msgid "Cannot calculate the filesize : %1"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:284
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:313
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:372
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:96
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:318
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:347
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:406
+#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:94
 #, kde-format
 msgid "Cannot open %1 : %2"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:334
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:340
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:343
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:368
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:374
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:377
 #, kde-format
 msgid "Cannot expand file : %1"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:358
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:360
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:392
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:394
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:393
+#: transfer-plugins/bittorrent/libbtcore/util/fileops.cpp:427
 #, kde-format
 msgid "Cannot seek in file : %1"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/download/webseed.cpp:74
-#: transfer-plugins/bittorrent/libbtcore/download/webseed.cpp:114
+#: transfer-plugins/bittorrent/libbtcore/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr ""
+
+#: transfer-plugins/bittorrent/libbtcore/util/logsystemmanager.cpp:34
+#, fuzzy
+#| msgid "Connecting"
+msgid "Connections"
+msgstr "कनेक्सन होवत हे"
+
+#: transfer-plugins/bittorrent/libbtcore/util/logsystemmanager.cpp:35
+#, fuzzy
+#| msgid "Trackers"
+msgid "Tracker"
+msgstr "ट्रेकर"
+
+#: transfer-plugins/bittorrent/libbtcore/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr ""
+
+#: transfer-plugins/bittorrent/libbtcore/download/webseed.cpp:49
+#: transfer-plugins/bittorrent/libbtcore/download/webseed.cpp:92
 #: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:37
 msgid "Not connected"
 msgstr "कनेक्टेड नइ हे"
 
-#: transfer-plugins/bittorrent/libbtcore/download/webseed.cpp:262
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:118
+#: transfer-plugins/bittorrent/libbtcore/download/webseed.cpp:310
+#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:125
 msgid "Connection closed"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:96
+#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:103
 #, kde-format
 msgid "Resolving proxy %1:%2"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:105
+#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:112
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:126
+#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:132
 #, kde-format
 msgid "Error: request failed: %1"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:143
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:205
+#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:148
+#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:212
 msgid "Connected"
 msgstr "कनेक्टेड"
 
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:149
+#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:154
 msgid "Error: Failed to connect to webseed"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:212
+#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:219
 msgid "Connecting"
 msgstr "कनेक्सन होवत हे"
 
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:223
+#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:230
 msgid "Failed to connect to webseed"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:230
+#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:237
 msgid "Failed to resolve hostname of webseed"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:293
+#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:317
 msgid "Error: failed to connect, server not responding"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:302
+#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:326
 msgid "Error: request timed out"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/download/chunkdownload.cpp:323
-#, kde-format
-msgid "%1 peers"
-msgstr " %1 पीअर"
-
-#: transfer-plugins/bittorrent/libbtcore/migrate/ccmigrate.cpp:119
-#: transfer-plugins/bittorrent/libbtcore/migrate/ccmigrate.cpp:125
-#: transfer-plugins/bittorrent/libbtcore/diskio/multifilecache.cpp:665
-#: transfer-plugins/bittorrent/libbtcore/diskio/multifilecache.cpp:745
-#, kde-format
-msgid "Cannot open file %1 : %2"
+#: transfer-plugins/bittorrent/libbtcore/download/httpconnection.cpp:417
+msgid "Redirected without a new location !"
 msgstr ""
+
+#: transfer-plugins/bittorrent/libbtcore/download/chunkdownload.cpp:379
+#, fuzzy, kde-format
+#| msgid "%1 peers"
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] " %1 पीअर"
+msgstr[1] " %1 पीअर"
 
 #: transfer-plugins/bittorrent/libbtcore/migrate/migrate.cpp:45
 #, kde-format
@@ -1041,154 +1190,159 @@ msgstr ""
 msgid "Torrent is incomplete!"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/diskio/singlefilecache.cpp:66
+#: transfer-plugins/bittorrent/libbtcore/diskio/singlefilecache.cpp:71
 #: transfer-plugins/bittorrent/libbtcore/diskio/multifilecache.cpp:106
 #, kde-format
 msgid "Failed to open %1 : %2"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/diskio/singlefilecache.cpp:76
-#: transfer-plugins/bittorrent/libbtcore/diskio/multifilecache.cpp:89
-#: transfer-plugins/bittorrent/libbtcore/diskio/multifilecache.cpp:123
+#: transfer-plugins/bittorrent/libbtcore/diskio/singlefilecache.cpp:82
+#: transfer-plugins/bittorrent/libbtcore/diskio/multifilecache.cpp:133
 #, kde-format
 msgid "Failed to create %1 : %2"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/diskio/chunkmanager.cpp:220
-#: transfer-plugins/bittorrent/libbtcore/diskio/chunkmanager.cpp:451
+#: transfer-plugins/bittorrent/libbtcore/diskio/chunkmanager.cpp:209
+#: transfer-plugins/bittorrent/libbtcore/diskio/chunkmanager.cpp:324
 #, kde-format
 msgid "Cannot open index file %1 : %2"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/diskio/dndfile.cpp:108
+#: transfer-plugins/bittorrent/libbtcore/diskio/dndfile.cpp:89
 #, kde-format
 msgid "Cannot create file %1 : %2"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/diskio/dndfile.cpp:175
+#: transfer-plugins/bittorrent/libbtcore/diskio/dndfile.cpp:137
 #, kde-format
 msgid "Failed to write first chunk to DND file : %1"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/diskio/dndfile.cpp:233
+#: transfer-plugins/bittorrent/libbtcore/diskio/dndfile.cpp:155
 #, kde-format
 msgid "Failed to write last chunk to DND file : %1"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:122
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:245
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:432
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:499
+#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:120
+#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:243
+#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:429
+#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:496
 #, kde-format
 msgid "Cannot open %1 for writing : readonly filesystem"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:255
+#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:253
 #, kde-format
 msgid "Cannot expand file %1 : %2"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:398
+#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:395
 #, kde-format
 msgid "Error : Reading past the end of the file %1"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:403
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:449
+#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:400
+#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:446
 #, kde-format
 msgid "Failed to seek file %1 : %2"
 msgstr "फाइल %1 : %2 सीक करे मं असफल"
 
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:411
+#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:408
 #, kde-format
 msgid "Error reading from %1"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:453
+#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:450
 #, kde-format
 msgid "Failed to write to file %1 : %2"
 msgstr "फाइल %1 : %2 लिखे मं असफल."
 
-#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:526
-#: transfer-plugins/bittorrent/libbtcore/diskio/multifilecache.cpp:729
+#: transfer-plugins/bittorrent/libbtcore/diskio/cachefile.cpp:523
+#: transfer-plugins/bittorrent/libbtcore/diskio/multifilecache.cpp:833
 #, kde-format
 msgid "Cannot preallocate diskspace : %1"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:63
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:125
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:148
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:156
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:163
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:167
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:175
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:189
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:193
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:207
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:216
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:230
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:237
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:243
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:250
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:256
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:272
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:319
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:325
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:328
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:331
+#: transfer-plugins/bittorrent/libbtcore/diskio/multifilecache.cpp:769
+#: transfer-plugins/bittorrent/libbtcore/diskio/multifilecache.cpp:849
+#, kde-format
+msgid "Cannot open file %1 : %2"
+msgstr ""
+
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:65
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:127
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:150
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:158
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:165
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:169
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:177
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:191
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:195
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:209
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:218
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:232
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:239
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:245
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:252
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:258
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:274
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:321
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:327
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:330
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:333
 msgid "Corrupted torrent!"
 msgstr "खराब टोरेंट!"
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:80
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:82
 msgid "Torrent has no announce or nodes field"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:116
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:118
 #, kde-format
 msgid " Unable to open torrent file %1 : %2"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:296
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:302
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:298
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrent.cpp:304
 msgid "Parse Error"
 msgstr "व्याख्या गलती"
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:536
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:528
 #, kde-format
 msgid ""
-"An error occurred while loading the torrent <b>%1</b>.<br/>The torrent is "
-"probably corrupt or is not a torrent file."
+"An error occurred while loading the torrent <b>%1</b>\n"
+"The torrent is probably corrupt or is not a torrent file."
+msgstr ""
+
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:556
+msgid ""
+"An error occurred while loading the torrent.\n"
+"The torrent is probably corrupt or is not a torrent file."
 msgstr ""
 
 #: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:565
-msgid ""
-"An error occurred while loading the torrent.<br/>The torrent is probably "
-"corrupt or is not a torrent file."
-msgstr ""
-
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:574
 #, kde-format
 msgid "Unable to create %1 : %2"
 msgstr "%1 : %2 बनाए मं अक्छम"
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:589
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:580
 #, kde-format
 msgid ""
 "You are already downloading this torrent %1, the list of trackers of both "
 "torrents has been merged."
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:593
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:584
 #, kde-format
 msgid "You are already downloading the torrent %1"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:694
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:683
 #, kde-format
 msgid "Cannot migrate %1 : %2"
 msgstr "माइग्रेट नइ कर सकिस %1 : %2"
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1365
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1379
 #, kde-format
 msgid ""
 "The torrent %1 was started with a previous version of KTorrent. To make sure "
@@ -1197,52 +1351,52 @@ msgid ""
 "press cancel, we will select your home directory."
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1370
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1384
 msgid "Select Folder to Save To"
 msgstr "सहेजे बर फोल्डर चुनव"
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1458
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1471
 msgid "Not started"
 msgstr "सुरू नइ होइस"
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1460
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1473
 msgid "Download completed"
 msgstr "डाउनलोड पूरा"
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1462
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1475
 msgid "Seeding completed"
 msgstr "सीडिंग पूरा"
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1464
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1477
 msgid "Seeding"
 msgstr "सीडिंग"
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1466
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1479
 msgid "Downloading"
 msgstr "डाउनलोड करत हे"
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1470
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1483
 #: transfer-plugins/bittorrent/libbtcore/torrent/peersourcemanager.cpp:162
 msgid "Stopped"
 msgstr "रुक गिस"
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1472
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1485
 msgid "Error: "
 msgstr "गलती:"
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1474
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1487
 msgid "Allocating diskspace"
 msgstr ""
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1476
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1489
 msgid "Queued"
 msgstr "कतार मं"
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1478
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1491
 msgid "Checking data"
 msgstr "डाटा चेक करत हे"
 
-#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1480
+#: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1493
 msgid "Stopped. No space left on device."
 msgstr "बन्द हो गिस. उपकरन मं कोनो जगह नइ बचिस."
 
@@ -1265,6 +1419,12 @@ msgstr "फ़ाइल खोल नइ सकिस %1 : %2"
 #, kde-format
 msgid "Cannot create index file: %1"
 msgstr ""
+
+#: transfer-plugins/bittorrent/libbtcore/tracker/udptracker.cpp:307
+#, fuzzy, kde-format
+#| msgid "Unable to save to: %1"
+msgid "Unable to resolve hostname %1"
+msgstr "%1 मं सहेज नइ सके."
 
 #: transfer-plugins/bittorrent/libbtcore/tracker/udptrackersocket.cpp:66
 #, kde-format
@@ -1293,7 +1453,7 @@ msgstr "फ़ाइल खोल नइ सकिस %1 : %2"
 
 #: transfer-plugins/contentfetch/contentfetch.cpp:47
 msgctxt "Transfer state: processing script"
-msgid "Processing script..."
+msgid "Processing script...."
 msgstr ""
 
 #: transfer-plugins/contentfetch/contentfetch.cpp:78
@@ -1326,13 +1486,20 @@ msgstr ""
 msgid "Edit script"
 msgstr ""
 
+#: transfer-plugins/contentfetch/dlgscriptediting.cpp:48
+#, fuzzy
+#| msgid "Description"
+msgid "Set script file"
+msgstr "वर्नन"
+
 #: ui/tray.cpp:63
 msgid "KGet - Download Manager"
 msgstr "केगेट - डाउनलोड प्रबंधक"
 
 #: ui/groupsettingsdialog.cpp:18
-#, kde-format
-msgid "Group-Settings for %1"
+#, fuzzy, kde-format
+#| msgid "Group-Settings for %1"
+msgid "Group Settings for %1"
 msgstr "%1 बर समूह सेटिंग"
 
 #: ui/transfersviewdelegate.cpp:491
@@ -1412,7 +1579,9 @@ msgid "Finished"
 msgstr "पूरा"
 
 #: ui/history/transferhistory.cpp:247
-msgid "Source-File"
+#, fuzzy
+#| msgid "Source-File"
+msgid "Source File"
 msgstr "स्रोत फाइल"
 
 #: ui/history/transferhistory.cpp:247
@@ -1470,8 +1639,9 @@ msgid "Open file"
 msgstr "फाइल खोलव"
 
 #: ui/transfersettingsdialog.cpp:18
-#, kde-format
-msgid "Transfer-Settings for %1"
+#, fuzzy, kde-format
+#| msgid "Transfer-Settings for %1"
+msgid "Transfer Settings for %1"
 msgstr "%1 बर हस्तांरन सेटिंग"
 
 #: ui/nepomukwidget.cpp:56
@@ -1487,15 +1657,15 @@ msgstr "स्रोत:"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: file: ui/transferdetailsfrm.ui:43
 #. i18n: ectx: property (text), widget (QLabel, destLabel)
-#: ui/transferdetails.cpp:38 rc.cpp:409 rc.cpp:517
+#: ui/transferdetails.cpp:38 rc.cpp:410 rc.cpp:518
 msgid "Saving to:"
 msgstr "इहां सहेजत हे:"
 
-#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:58
+#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: file: ui/transferdetailsfrm.ui:113
 #. i18n: ectx: property (text), widget (QLabel, statusLabel)
-#: ui/transferdetails.cpp:39 rc.cpp:318 rc.cpp:524
+#: ui/transferdetails.cpp:39 rc.cpp:317 rc.cpp:525
 msgid "Status:"
 msgstr "स्थिति:"
 
@@ -1504,42 +1674,55 @@ msgstr "स्थिति:"
 msgid "%1 of %2"
 msgstr "%2 मं से %1"
 
-#: ui/droptarget.cpp:81
+#: ui/droptarget.cpp:86
 msgctxt "fix position for droptarget"
 msgid "Sticky"
 msgstr "स्टिकी"
 
-#: ui/droptarget.cpp:205 mainwindow.cpp:871
-msgid "The dropped file is a KGet-Transferlist"
-msgstr ""
+#: ui/droptarget.cpp:214 mainwindow.cpp:871
+#, fuzzy
+#| msgid "KGet Transfer List"
+msgid "The dropped file is a KGet Transfer List"
+msgstr "केगेट ट्रांसफर सूची"
 
-#: ui/droptarget.cpp:206 mainwindow.cpp:872
+#: ui/droptarget.cpp:215 mainwindow.cpp:872
 msgid "&Download"
 msgstr "डाउनलोड (&D)"
 
-#: ui/droptarget.cpp:207 mainwindow.cpp:873
-msgid "&Load transferlist"
+#: ui/droptarget.cpp:216 mainwindow.cpp:873
+#, fuzzy
+#| msgid "&Load transferlist"
+msgid "&Load transfer list"
 msgstr "ट्रांसफर सूची लोड करव (&L)"
 
-#: ui/droptarget.cpp:263
+#: ui/droptarget.cpp:272
 msgid "Show Main Window"
 msgstr "मुख्य विंडो देखाव"
 
-#: ui/droptarget.cpp:264
+#: ui/droptarget.cpp:273
 msgid "Hide Main Window"
 msgstr "मुख्य विंडो लुकाव"
 
 #. i18n: file: conf/dlgappearance.ui:35
 #. i18n: ectx: property (title), widget (QGroupBox, dropTargetGroup)
-#: ui/droptarget.cpp:339 rc.cpp:141
+#: ui/droptarget.cpp:350 rc.cpp:141
 msgid "Drop Target"
 msgstr "ड्राप लक्छ्य"
 
-#: ui/droptarget.cpp:340
+#: ui/droptarget.cpp:351
 msgid "You can drag download links into the drop target."
 msgstr "आप डाउनलोड संकली ल ड्ऱाप लक्छ्य मं खींच कर ला सकथो ."
 
-#: ui/droptarget.cpp:381
+#: ui/droptarget.cpp:412
+#, kde-format
+msgid "%1(%2% %3/%4) Speed:%5/s"
+msgstr ""
+
+#: ui/droptarget.cpp:426
+msgid "Ready"
+msgstr ""
+
+#: ui/droptarget.cpp:436
 msgid ""
 "Drop target has been hidden. If you want to show it again, go to Settings-"
 ">Configure KGet->Look & Feel."
@@ -1547,7 +1730,7 @@ msgstr ""
 "ड्राप लक्छ्य छुपा हे. यदि आप मन एला फिर से दिखाना चाहथो तहां सेटिंग->केगेट कान्फिगर करव-"
 ">रूप & रंग मं जाव."
 
-#: ui/droptarget.cpp:383
+#: ui/droptarget.cpp:438
 msgid "Hiding drop target"
 msgstr "ड्राप लक्छ्य छुपाना"
 
@@ -1598,7 +1781,7 @@ msgid "Import Links"
 msgstr "संकली आयात करव"
 
 #: ui/linkview/kget_linkview.cpp:77
-msgid "Filter files here..."
+msgid "Filter files here...."
 msgstr ""
 
 #: ui/linkview/kget_linkview.cpp:82
@@ -1606,7 +1789,7 @@ msgid "Contains"
 msgstr ""
 
 #: ui/linkview/kget_linkview.cpp:83
-msgid "Does not Contain"
+msgid "Does not contain"
 msgstr ""
 
 #: ui/linkview/kget_linkview.cpp:94
@@ -1630,6 +1813,9 @@ msgid "Deselect all"
 msgstr "सब्बो मतचुनव"
 
 #: ui/linkview/kget_linkview.cpp:138
+#, fuzzy
+#| msgid "Check selected"
+msgctxt "Check as in mark, not as in verify"
 msgid "Check selected"
 msgstr "चुने गे ल जांचव"
 
@@ -1642,6 +1828,9 @@ msgid "Show web content"
 msgstr ""
 
 #: ui/linkview/kget_linkview.cpp:143
+#, fuzzy
+#| msgid "Download checked"
+msgctxt "Check as in mark, not as in verify"
 msgid "Download checked"
 msgstr "चेक करे ल डाउनलोड करव"
 
@@ -1652,7 +1841,7 @@ msgid "Cancel"
 msgstr "खारिज करव"
 
 #: ui/linkview/kget_linkview.cpp:219
-msgid "Auxiliar header"
+msgid "Auxiliary header"
 msgstr ""
 
 #: ui/linkview/kget_linkview.cpp:220
@@ -1661,7 +1850,7 @@ msgstr "फाइल नाम"
 
 #. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:37
 #. i18n: ectx: property (text), widget (QTreeWidget, scriptTreeWidget)
-#: ui/linkview/kget_linkview.cpp:221 rc.cpp:469
+#: ui/linkview/kget_linkview.cpp:221 rc.cpp:470
 msgid "Description"
 msgstr "वर्नन"
 
@@ -1724,8 +1913,11 @@ msgid "%1/s"
 msgstr "%1/s"
 
 #: extensions/webinterface/httpserver.cpp:154
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "KGet Webinterface"
 msgctxt "@label"
-msgid "KGet Webinterface"
+msgid "KGet Web Interface"
 msgstr "केगेट वेबइंटरफेस"
 
 #: extensions/webinterface/httpserver.cpp:155
@@ -1779,8 +1971,10 @@ msgid "Saving to:"
 msgstr "इहां सहेजत हे:"
 
 #: extensions/webinterface/httpserver.cpp:165
+#, fuzzy
+#| msgid "Webinterface"
 msgctxt "@label Title in header"
-msgid "Webinterface"
+msgid "Web Interface"
 msgstr "वेबइंटरफेस"
 
 #: extensions/webinterface/httpserver.cpp:166
@@ -1825,7 +2019,7 @@ msgstr "डाउनलोड्स"
 
 #: extensions/webinterface/httpserver.cpp:176
 msgctxt "@label text in footer"
-msgid "KGet Webinterface | Valid XHTML 1.0 Strict &amp; CSS"
+msgid "KGet Web Interface | Valid XHTML 1.0 Strict &amp; CSS"
 msgstr ""
 
 #: main.cpp:113 mainwindow.cpp:85 mainwindow.cpp:436
@@ -1837,8 +2031,14 @@ msgid "An advanced download manager for KDE"
 msgstr "केडीई बर एक उन्नत डाउनलोड प्रबंधक"
 
 #: main.cpp:117
+#, fuzzy
+#| msgid ""
+#| "(C) 2005 - 2008, The KGet developers\n"
+#| "(C) 2001 - 2002, Patrick Charbonnier\n"
+#| "(C) 2002, Carsten Pfeiffer\n"
+#| "(C) 1998 - 2000, Matej Koss"
 msgid ""
-"(C) 2005 - 2008, The KGet developers\n"
+"(C) 2005 - 2009, The KGet developers\n"
 "(C) 2001 - 2002, Patrick Charbonnier\n"
 "(C) 2002, Carsten Pfeiffer\n"
 "(C) 1998 - 2000, Matej Koss"
@@ -1921,7 +2121,9 @@ msgid "Mensur Zahirovic (Nookie)"
 msgstr "मेन्सुर जोहिरोविक (नुकी)"
 
 #: main.cpp:132
-msgid "Design of Webinterface"
+#, fuzzy
+#| msgid "Design of Webinterface"
+msgid "Design of Web Interface"
 msgstr "वेबइंटरफेस के डिजाइन"
 
 #: main.cpp:137
@@ -1961,7 +2163,9 @@ msgid "&Export Transfers List..."
 msgstr "ट्रांसफर सूची निर्यात करव... (&E)"
 
 #: mainwindow.cpp:177
-msgid "&Export Transfers as Plain Text"
+#, fuzzy
+#| msgid "&Export Transfers as Plain Text"
+msgid "&Export Transfers as Plain Text..."
 msgstr "ट्रांसफर ल सादा पाठ जइसन निर्यात करव... (&E)"
 
 #: mainwindow.cpp:183
@@ -2136,8 +2340,10 @@ msgstr "प्रति समूह सबसे अधिक डाउनल�
 #. i18n: file: conf/dlgnetwork.ui:28
 #. i18n: ectx: property (text), widget (QLabel, lbl_maxnum)
 #: rc.cpp:8
-msgid "Downloads number:"
-msgstr "डाउनलोड संख्या:"
+#, fuzzy
+#| msgid "Number of threads:"
+msgid "Number of downloads:"
+msgstr "थ्रेड की संख्या:"
 
 #. i18n: file: conf/dlgnetwork.ui:45
 #. i18n: ectx: property (text), widget (QLabel, lbl_maxnum_2)
@@ -2154,7 +2360,9 @@ msgstr "गति सीमा"
 #. i18n: file: conf/dlgnetwork.ui:71
 #. i18n: ectx: property (text), widget (QLabel, dllimitlb)
 #: rc.cpp:17
-msgid "Global Download-Limit:"
+#, fuzzy
+#| msgid "Global Download-Limit:"
+msgid "Global Download Limit:"
 msgstr "वैस्विक डाउनलोड सीमा:"
 
 #. i18n: file: conf/dlgnetwork.ui:78
@@ -2170,7 +2378,9 @@ msgstr "कि.बा./s"
 #. i18n: file: conf/dlgnetwork.ui:94
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:23
-msgid "Global Upload-Limit:"
+#, fuzzy
+#| msgid "Global Upload-Limit:"
+msgid "Global Upload Limit:"
 msgstr "वैस्विक अपलोड सीमा:"
 
 #. i18n: file: conf/dlgnetwork.ui:117
@@ -2248,7 +2458,9 @@ msgstr "लक्छ्य फोल्डर अउ एक्सटेंसन
 #. i18n: file: conf/dlgdirectories.ui:104
 #. i18n: ectx: property (text), widget (QTableWidget, folderForExtensionList)
 #: rc.cpp:68
-msgid "File-Extension"
+#, fuzzy
+#| msgid "File-Extension"
+msgid "File Extension"
 msgstr "फाइल-एक्सटेंसन"
 
 #. i18n: file: conf/dlgdirectories.ui:109
@@ -2300,8 +2512,11 @@ msgstr "सुरू मं:"
 #. i18n: file: conf/dlgadvanced.ui:56
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartupAction)
 #: rc.cpp:102
-msgid "Restore Download-State"
-msgstr ""
+#, fuzzy
+#| msgctxt "redownload selected transfer item"
+#| msgid "Redownload Selected"
+msgid "Restore Download State"
+msgstr "चुने गे ल फिर से डाउनलोड करव"
 
 #. i18n: file: conf/dlgadvanced.ui:61
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartupAction)
@@ -2402,7 +2617,9 @@ msgstr ""
 #. i18n: file: conf/dlgwebinterface.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_WebinterfaceEnabled)
 #: rc.cpp:156
-msgid "Enable Webinterface"
+#, fuzzy
+#| msgid "Enable Webinterface"
+msgid "Enable Web Interface"
 msgstr "वेबइंटरफेस सक्छम करव"
 
 #. i18n: file: conf/dlgwebinterface.ui:31
@@ -2423,7 +2640,7 @@ msgstr "कमइया:"
 #. i18n: ectx: property (text), widget (QLabel, passwordLabel)
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:87
 #. i18n: ectx: property (text), widget (QLabel, passwordLabel)
-#: rc.cpp:165 rc.cpp:439
+#: rc.cpp:165 rc.cpp:440
 msgid "Password:"
 msgstr "पासवर्ड: "
 
@@ -2498,7 +2715,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, removeEngineBt)
 #. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:67
 #. i18n: ectx: property (text), widget (QPushButton, removeScriptButton)
-#: rc.cpp:207 rc.cpp:475
+#: rc.cpp:207 rc.cpp:476
 #, fuzzy
 #| msgctxt "@action:button"
 #| msgid "Remove"
@@ -2508,20 +2725,26 @@ msgstr "हटाव"
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:16
 #. i18n: ectx: property (text), widget (QLabel, torrent_label)
 #: rc.cpp:210
-msgid "Scanning data of torrent :"
-msgstr ""
+#, fuzzy
+#| msgid "Scanning data of <b>%1</b> :"
+msgid "Scanning data of torrent:"
+msgstr "<b>%1</b> के डाटा स्कैन करत हे"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:30
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #: rc.cpp:213
-msgid "Number of chunks found :"
-msgstr ""
+#, fuzzy
+#| msgid "Number of threads:"
+msgid "Number of chunks found:"
+msgstr "थ्रेड की संख्या:"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:40
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #: rc.cpp:216
-msgid "Number of chunks failed :"
-msgstr ""
+#, fuzzy
+#| msgid "Number of threads:"
+msgid "Number of chunks failed:"
+msgstr "थ्रेड की संख्या:"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -2573,7 +2796,7 @@ msgstr "कोई सीमा नइ"
 #. i18n: ectx: property (suffix), widget (QSpinBox, downloadBox)
 #. i18n: file: ui/groupsettingsdialog.ui:84
 #. i18n: ectx: property (suffix), widget (QSpinBox, uploadBox)
-#: rc.cpp:252 rc.cpp:261 rc.cpp:490 rc.cpp:496 rc.cpp:543 rc.cpp:549
+#: rc.cpp:252 rc.cpp:261 rc.cpp:491 rc.cpp:497 rc.cpp:544 rc.cpp:550
 msgid "KiB"
 msgstr "कि.बा."
 
@@ -2586,7 +2809,9 @@ msgstr "प्रति ट्रांसफर अपलोड सीमा:"
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:109
 #. i18n: ectx: property (text), widget (QLabel, torrentFolderLabel)
 #: rc.cpp:267
-msgid "Default Torrent-Folder:"
+#, fuzzy
+#| msgid "Default Torrent-Folder:"
+msgid "Default torrent folder:"
 msgstr "डिफाल्ट टोरेंट फोल्डर:"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:129
@@ -2598,7 +2823,7 @@ msgstr "डिफाल्ट अस्थाई फोल्डर"
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:146
 #. i18n: ectx: property (text), widget (QCheckBox, preallocBox)
 #: rc.cpp:273
-msgid "Preallocate disk-space"
+msgid "Pre-allocate disk space"
 msgstr ""
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/webseedstab.ui:21
@@ -2650,7 +2875,7 @@ msgstr "अभी हाल मं डाउनलोड करत हे:"
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:163
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:299 rc.cpp:382
+#: rc.cpp:299 rc.cpp:383
 msgid "Downloaded:"
 msgstr "डाउनलोडेड:"
 
@@ -2658,7 +2883,7 @@ msgstr "डाउनलोडेड:"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:205
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:302 rc.cpp:400
+#: rc.cpp:302 rc.cpp:401
 msgid "Excluded:"
 msgstr "अलावा:"
 
@@ -2684,77 +2909,85 @@ msgstr "अभी हाल के ट्रैकर"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: file: ui/newtransferwidget.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:314 rc.cpp:505
+#: rc.cpp:314 rc.cpp:506
 msgid "URL:"
 msgstr "यूआरएल:"
 
-#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:84
+#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:78
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:322 rc.cpp:355
+#: rc.cpp:320 rc.cpp:356
 msgid "Seeders:"
 msgstr "सीडर्स:"
 
-#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:108
-#. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:325
-msgid "Times Downloaded:"
-msgstr "अतेक बार डाउनलोडेड:"
-
-#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:132
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:328
-msgid "Next Update In:"
-msgstr ""
-
-#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:156
+#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:102
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:99
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:331 rc.cpp:367
+#: rc.cpp:323 rc.cpp:368
 msgid "Leechers:"
 msgstr "लीचर्स:"
 
-#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:195
-#. i18n: ectx: property (text), widget (KPushButton, m_update_tracker)
-#: rc.cpp:334
-msgid "Update Tracker"
-msgstr "ट्रैकर अद्यतन करव"
+#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:126
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: rc.cpp:326
+msgid "Times Downloaded:"
+msgstr "अतेक बार डाउनलोडेड:"
 
-#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:218
+#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:150
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:329
+msgid "Next Update In:"
+msgstr ""
+
+#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:189
+#. i18n: ectx: property (text), widget (KPushButton, m_announce)
+#: rc.cpp:332
+msgid "Manual Announce"
+msgstr ""
+
+#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:196
+#. i18n: ectx: property (text), widget (QPushButton, m_scrape)
+#: rc.cpp:335
+#, fuzzy
+#| msgid "Score"
+msgid "Scrape"
+msgstr "अंक"
+
+#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:219
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:337
+#: rc.cpp:338
 msgid "Available Trackers"
 msgstr "मिलत ट्रेकर"
 
-#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:231
+#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:232
 #. i18n: ectx: property (text), widget (KPushButton, m_add_tracker)
-#: rc.cpp:340
+#: rc.cpp:341
 msgid "Add Tracker"
 msgstr "ट्रैकर जोड़व"
 
-#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:243
+#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:244
 #. i18n: ectx: property (text), widget (KPushButton, m_remove_tracker)
-#: rc.cpp:343
+#: rc.cpp:344
 msgid "Remove Tracker"
 msgstr "ट्रैकर मेटाव"
 
-#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:250
+#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:251
 #. i18n: ectx: property (text), widget (KPushButton, m_change_tracker)
-#: rc.cpp:346
+#: rc.cpp:347
 msgid "Change Tracker"
 msgstr "ट्रैकर बदलव"
 
-#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:270
+#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:271
 #. i18n: ectx: property (text), widget (KPushButton, m_restore_defaults)
-#: rc.cpp:349
+#: rc.cpp:350
 msgid "Restore Defaults"
 msgstr "डिफाल्ट बहाल करव"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:29
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:352
+#: rc.cpp:353
 msgid "Stats"
 msgstr "स्थिति"
 
@@ -2774,33 +3007,37 @@ msgstr "स्थिति"
 #. i18n: ectx: property (text), widget (QLabel, chunksAllLabel)
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:212
 #. i18n: ectx: property (text), widget (QLabel, chunksExcludedLabel)
-#: rc.cpp:358 rc.cpp:364 rc.cpp:370 rc.cpp:376 rc.cpp:385 rc.cpp:391
-#: rc.cpp:397 rc.cpp:403
+#: rc.cpp:359 rc.cpp:365 rc.cpp:371 rc.cpp:377 rc.cpp:386 rc.cpp:392
+#: rc.cpp:398 rc.cpp:404
 msgid "<n>"
 msgstr "<n>"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:73
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:361
-msgid "Download-Speed:"
+#: rc.cpp:362
+#, fuzzy
+#| msgid "Download-Speed:"
+msgid "Download Speed:"
 msgstr "डाउनलोड गति:"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:125
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: rc.cpp:373
-msgid "Upload-Speed:"
+#: rc.cpp:374
+#, fuzzy
+#| msgid "Upload-Speed:"
+msgid "Upload Speed:"
 msgstr "अपलोड गति:"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:177
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:388
+#: rc.cpp:389
 msgctxt "chunks left"
 msgid "Left:"
 msgstr "बाकी:"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:191
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:394
+#: rc.cpp:395
 msgctxt "all chunks"
 msgid "All:"
 msgstr "सब्बो:"
@@ -2809,23 +3046,23 @@ msgstr "सब्बो:"
 #. i18n: ectx: property (text), widget (QLabel, label_11)
 #. i18n: file: ui/transferdetailsfrm.ui:50
 #. i18n: ectx: property (text), widget (QLabel, sourceLabel)
-#: rc.cpp:406 rc.cpp:520
+#: rc.cpp:407 rc.cpp:521
 msgctxt "source-file"
 msgid "Source:"
 msgstr "स्रोत:"
 
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, fileSettingGroupBox)
-#: rc.cpp:412
+#: rc.cpp:413
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Settings"
-msgid "File-Settings"
+msgid "File Settings"
 msgstr "सेटिंग"
 
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:25
 #. i18n: ectx: property (text), widget (QLabel, fileNameLabel)
-#: rc.cpp:415
+#: rc.cpp:416
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "File name"
@@ -2834,51 +3071,51 @@ msgstr "फाइल नाम"
 
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:33
 #. i18n: ectx: property (text), item, widget (QComboBox, fileNameComboBox)
-#: rc.cpp:418
+#: rc.cpp:419
 msgid "Use normalized name"
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:38
 #. i18n: ectx: property (text), item, widget (QComboBox, fileNameComboBox)
-#: rc.cpp:421
+#: rc.cpp:422
 msgid "Use literal name"
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:46
 #. i18n: ectx: property (text), widget (QLabel, qualityLabel)
-#: rc.cpp:424
+#: rc.cpp:425
 msgid "Quality:"
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:54
 #. i18n: ectx: property (text), item, widget (QComboBox, qualityComboBox)
-#: rc.cpp:427
+#: rc.cpp:428
 msgid "Best quality (.mp4)"
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:59
 #. i18n: ectx: property (text), item, widget (QComboBox, qualityComboBox)
-#: rc.cpp:430
+#: rc.cpp:431
 msgid "Normal quality (.flv)"
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:70
 #. i18n: ectx: property (toolTip), widget (QGroupBox, loginGroupBox)
-#: rc.cpp:433
+#: rc.cpp:434
 msgid ""
-"Provide login info of your youtube account in order to access restricted "
+"Provide login info of your YouTube account in order to access restricted "
 "media."
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:73
 #. i18n: ectx: property (title), widget (QGroupBox, loginGroupBox)
-#: rc.cpp:436
+#: rc.cpp:437
 msgid "Login Info"
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:101
 #. i18n: ectx: property (text), widget (QLabel, usernameLabel)
-#: rc.cpp:442
+#: rc.cpp:443
 #, fuzzy
 #| msgid "User:"
 msgid "Username:"
@@ -2886,25 +3123,25 @@ msgstr "कमइया:"
 
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:113
 #. i18n: ectx: property (toolTip), widget (QCheckBox, useNetrcCheck)
-#: rc.cpp:445
+#: rc.cpp:446
 msgid ".netrc must have a hostname called 'youtube'."
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:116
 #. i18n: ectx: property (text), widget (QCheckBox, useNetrcCheck)
-#: rc.cpp:448
+#: rc.cpp:449
 msgid "User .netrc file"
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/dlgscriptediting.ui:29
 #. i18n: ectx: property (text), widget (QLabel, scriptUrlRegexpLabel)
-#: rc.cpp:451
+#: rc.cpp:452
 msgid "Regexp:"
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/dlgscriptediting.ui:36
 #. i18n: ectx: property (text), widget (QLabel, scriptPathLabel)
-#: rc.cpp:454
+#: rc.cpp:455
 #, fuzzy
 #| msgid "Port:"
 msgid "Path:"
@@ -2912,7 +3149,7 @@ msgstr "पोर्टः"
 
 #. i18n: file: transfer-plugins/contentfetch/dlgscriptediting.ui:43
 #. i18n: ectx: property (text), widget (QLabel, scriptDescriptionLabel)
-#: rc.cpp:457
+#: rc.cpp:458
 #, fuzzy
 #| msgid "Description"
 msgid "Description:"
@@ -2920,193 +3157,243 @@ msgstr "वर्नन"
 
 #. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:16
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget)
-#: rc.cpp:460
+#: rc.cpp:461
 msgid "User Scripts"
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:27
 #. i18n: ectx: property (text), widget (QTreeWidget, scriptTreeWidget)
-#: rc.cpp:463
+#: rc.cpp:464
 msgid "Path"
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:32
 #. i18n: ectx: property (text), widget (QTreeWidget, scriptTreeWidget)
-#: rc.cpp:466
+#: rc.cpp:467
 msgid "RegExp"
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:60
 #. i18n: ectx: property (text), widget (QPushButton, newScriptButton)
-#: rc.cpp:472
-msgid "New Script..."
+#: rc.cpp:473
+msgid "New Script...."
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:74
 #. i18n: ectx: property (text), widget (QPushButton, editScriptButton)
-#: rc.cpp:478
+#: rc.cpp:479
 #, fuzzy
 #| msgid "Edit"
-msgid "Edit..."
+msgid "Edit...."
 msgstr "संपादन"
+
+#. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:81
+#. i18n: ectx: property (text), widget (QPushButton, configureScriptButton)
+#: rc.cpp:482
+#, fuzzy
+#| msgid "Configure..."
+msgid "Configure...."
+msgstr "कान्फिगर..."
 
 #. i18n: file: ui/transfersettingsdialog.ui:22
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget)
-#: rc.cpp:484
-msgid "Transfer-Settings"
+#: rc.cpp:485
+#, fuzzy
+#| msgid "Transfer-Settings"
+msgid "Transfer Settings"
 msgstr "ट्रांसफर-विवरन"
 
 #. i18n: file: ui/transfersettingsdialog.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, uploadCheck)
-#: rc.cpp:487
+#: rc.cpp:488
 msgid "Upload Limit"
 msgstr "अपलोड सीमा"
 
 #. i18n: file: ui/transfersettingsdialog.ui:51
 #. i18n: ectx: property (text), widget (QCheckBox, downloadCheck)
-#: rc.cpp:493
+#: rc.cpp:494
 msgid "Download Limit"
 msgstr "डाउनलोड सीमा"
 
 #. i18n: file: ui/transfersettingsdialog.ui:71
 #. i18n: ectx: property (text), widget (QCheckBox, ratioCheck)
-#: rc.cpp:499
+#: rc.cpp:500
 msgid "Maximum Share Ratio"
 msgstr ""
 
 #. i18n: file: ui/newtransferwidget.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:508
+#: rc.cpp:509
 msgid "Destination:"
 msgstr "गंतव्य:"
 
 #. i18n: file: ui/newtransferwidget.ui:53
 #. i18n: ectx: property (text), widget (QCheckBox, defaultFolderButton)
-#: rc.cpp:511
+#: rc.cpp:512
 msgid "Set as default folder"
 msgstr "डिफाल्ट फोल्डर के रूप मं सेट करव"
 
 #. i18n: file: ui/newtransferwidget.ui:60
 #. i18n: ectx: property (text), widget (QLabel, groupLabel)
-#: rc.cpp:514
+#: rc.cpp:515
 msgid "Transfer Group:"
 msgstr "ट्रांसफर समूह:"
 
 #. i18n: file: ui/transferdetailsfrm.ui:164
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:530
+#: rc.cpp:531
 msgid "Remaining Time:"
 msgstr "बाकी समय:"
 
 #. i18n: file: ui/groupsettingsdialog.ui:19
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget)
-#: rc.cpp:534
-msgid "Group-Settings"
+#: rc.cpp:535
+#, fuzzy
+#| msgid "Group-Settings"
+msgid "Group Settings"
 msgstr "समूह सेटिंग"
 
 #. i18n: file: ui/groupsettingsdialog.ui:28
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:537
+#: rc.cpp:538
 msgid "Default folder:"
 msgstr "डिफाल्ट फोल्डर:"
 
 #. i18n: file: ui/groupsettingsdialog.ui:42
 #. i18n: ectx: property (text), widget (QCheckBox, downloadCheck)
-#: rc.cpp:540
+#: rc.cpp:541
 msgid "Maximum download speed"
 msgstr "अधिकतम डाउनलोड गति"
 
 #. i18n: file: ui/groupsettingsdialog.ui:68
 #. i18n: ectx: property (text), widget (QCheckBox, uploadCheck)
-#: rc.cpp:546
+#: rc.cpp:547
 msgid "Maximum upload speed"
 msgstr "अधिकतम अपलोड गति"
 
 #. i18n: file: ui/history/transferhistory.ui:26
 #. i18n: ectx: property (text), widget (QPushButton, clearButton)
-#: rc.cpp:552
+#: rc.cpp:553
 msgid "Clear History"
 msgstr "इतिहास साफ करव"
 
 #. i18n: file: ui/history/transferhistory.ui:46
 #. i18n: ectx: property (title), widget (KButtonGroup, viewmodesgroup)
-#: rc.cpp:555
+#: rc.cpp:556
 msgctxt "View modes"
 msgid "View Modes"
 msgstr "मोड्स देखाव"
 
 #. i18n: file: ui/history/transferhistory.ui:99
 #. i18n: ectx: property (title), widget (KButtonGroup, kbuttongroup_2)
-#: rc.cpp:558
+#: rc.cpp:559
 msgid "Select ranges"
 msgstr "सीमा चुनव"
 
 #. i18n: file: ui/history/transferhistory.ui:115
 #. i18n: ectx: property (text), item, widget (KComboBox, rangeType)
-#: rc.cpp:561
+#: rc.cpp:562
 msgid "Date"
 msgstr "तारीक"
 
 #. i18n: file: ui/history/transferhistory.ui:125
 #. i18n: ectx: property (text), item, widget (KComboBox, rangeType)
-#: rc.cpp:567
+#: rc.cpp:568
 msgid "Host"
 msgstr "होस्ट"
 
 #. i18n: file: ui/history/transferhistory.ui:136
 #. i18n: ectx: property (title), widget (KButtonGroup, kbuttongroup_3)
-#: rc.cpp:570
+#: rc.cpp:571
 msgid "Filter history"
 msgstr "फिल्टर इतिहास "
 
 #. i18n: file: ui/history/transferhistory.ui:165
 #. i18n: ectx: property (text), widget (KLineEdit, searchBar)
-#: rc.cpp:573
+#: rc.cpp:574
 msgctxt "delete selected transfer"
 msgid "Delete Selected"
 msgstr "चुने गे ल मेटाव"
 
 #. i18n: file: ui/history/transferhistory.ui:170
 #. i18n: ectx: property (text), widget (KLineEdit, searchBar)
-#: rc.cpp:576
+#: rc.cpp:577
 msgid "Download"
 msgstr "डाउनलोड"
 
 #. i18n: file: ui/kgetui.rc:4
 #. i18n: ectx: Menu (file)
-#: rc.cpp:579
+#: rc.cpp:580
 msgid "&File"
 msgstr "फाइल (&F)"
 
 #. i18n: file: ui/kgetui.rc:16
 #. i18n: ectx: Menu (Downloads)
-#: rc.cpp:582
+#: rc.cpp:583
 msgid "&Downloads"
 msgstr "डाउनलोड (&D)"
 
 #. i18n: file: ui/kgetui.rc:26
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:585
+#: rc.cpp:586
 msgid "&Settings"
 msgstr "सेटिंग (&S)"
 
 #. i18n: file: ui/kgetui.rc:30
 #. i18n: ectx: Menu (help)
-#: rc.cpp:588
+#: rc.cpp:589
 msgid "&Help"
 msgstr "मदद (&H)"
 
 #. i18n: file: ui/kgetui.rc:33
 #. i18n: ectx: ToolBar (kget_toolbar)
-#: rc.cpp:591
+#: rc.cpp:592
 msgid "Main Toolbar"
 msgstr "मुख्य औजार पट्टी"
 
 #. i18n: file: extensions/konqueror/kget_plug_in.rc:4
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:594
+#: rc.cpp:595
 msgid "&Tools"
 msgstr "औजार (&T)"
+
+#~ msgid "Downloading.."
+#~ msgstr "डाउनलोड करत हे..."
+
+#~ msgid "Advanced-Details for %1"
+#~ msgstr "%1 बर विस्तृत विवरन"
+
+#~ msgid "Assigned Peers"
+#~ msgstr "आबंटित पीअर"
+
+#~ msgctxt "transfer state: downloading"
+#~ msgid "Downloading.."
+#~ msgstr "डाउनलोड करत हे..."
+
+#~ msgid "%1 GB"
+#~ msgstr "%1 गी.बा."
+
+#~ msgid "%1 MB"
+#~ msgstr "%1 मे.बा."
+
+#~ msgid "%1 KB"
+#~ msgstr "%1 कि.बा."
+
+#~ msgid "%1 B"
+#~ msgstr "%1 बा"
+
+#~ msgid "%1 KB/s"
+#~ msgstr "%1 किबा/से"
+
+#~ msgctxt "@label Title in header"
+#~ msgid "Webinterface"
+#~ msgstr "वेबइंटरफेस"
+
+#~ msgid "Downloads number:"
+#~ msgstr "डाउनलोड संख्या:"
+
+#~ msgid "Update Tracker"
+#~ msgstr "ट्रैकर अद्यतन करव"
 
 #~ msgid "kBi/s"
 #~ msgstr "किबा/से."

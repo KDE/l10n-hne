@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksnapshot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-25 07:10+0100\n"
+"POT-Creation-Date: 2009-03-09 10:58+0100\n"
 "PO-Revision-Date: 2009-02-26 15:40+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -85,24 +85,24 @@ msgstr "स्क्रीन सफलता से पकड़िस."
 msgid "Preview of the snapshot image (%1 x %2)"
 msgstr "स्नैपसाट फोटू के प्रिव्यू (%1 x %2)"
 
-#: ksnapshotobject.cpp:110
+#: ksnapshotobject.cpp:111
 msgid "File Exists"
 msgstr "फाइल अस्तित्व मं हे"
 
-#: ksnapshotobject.cpp:111
+#: ksnapshotobject.cpp:112
 #, kde-format
 msgid "<qt>Do you really want to overwrite <b>%1</b>?</qt>"
 msgstr "<qt>का आप मन सचमुच मं एखर ऊपर लिखना चाहथो <b>%1</b>?</qt>"
 
-#: ksnapshotobject.cpp:112
+#: ksnapshotobject.cpp:113
 msgid "Overwrite"
 msgstr "मेटाय के लिखव"
 
-#: ksnapshotobject.cpp:148
+#: ksnapshotobject.cpp:149
 msgid "Unable to Save Image"
 msgstr "फोटू सहेजे मं अक्छम"
 
-#: ksnapshotobject.cpp:149
+#: ksnapshotobject.cpp:150
 #, kde-format
 msgid ""
 "KSnapshot was unable to save the image to\n"
@@ -111,11 +111,11 @@ msgstr ""
 "के-स्नेपसाट फोटू ल इहां सहेजे मं अक्छम\n"
 "%1."
 
-#: ksnapshotobject.cpp:171
+#: ksnapshotobject.cpp:172
 msgid "Title"
 msgstr "सीर्सक"
 
-#: ksnapshotobject.cpp:173
+#: ksnapshotobject.cpp:174
 msgid "Window Class"
 msgstr "विंडो वर्ग"
 
@@ -191,13 +191,13 @@ msgstr "स्नेपसाट देरी सेकन्ड में"
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, spinDelay)
 #: rc.cpp:13
 msgid ""
-"<qt>\n"
+"<qt><p>\n"
 "This is the number of seconds to wait after clicking the <i>New Snapshot</i> "
 "button before taking the snapshot.\n"
-"<p>\n"
+"</p><p>\n"
 "This is very useful for getting windows, menus and other items on the screen "
 "set up just the way you want.\n"
-"<p>\n"
+"</p><p>\n"
 "If <i>no delay</i> is set, the program will wait for a mouse click before "
 "taking a snapshot.\n"
 "</p>\n"
@@ -247,15 +247,15 @@ msgstr "विंडो सजावट सामिल करव (&w)"
 msgid ""
 "<qt>Using this menu, you can select from the five following snapshot modes:\n"
 "<p>\n"
-"<b>Full Screen</b> - captures the entire desktop.<br>\n"
+"<b>Full Screen</b> - captures the entire desktop.<br/>\n"
 "<b>Window Under Cursor</b> - captures only the window (or menu) that is "
-"under the mouse cursor when the snapshot is taken.<br>\n"
+"under the mouse cursor when the snapshot is taken.<br/>\n"
 "<b>Region</b> - captures only the region of the desktop that you specify. "
 "When taking a new snapshot in this mode you will be able to select any area "
-"of the screen by clicking and dragging the mouse.<br>\n"
+"of the screen by clicking and dragging the mouse.<br/>\n"
 "<b>Section of Window</b> - captures only a section of the window. When "
 "taking a new snapshot in this mode you will be able to select any child "
-"window by moving the mouse over it.<br>\n"
+"window by moving the mouse over it.<br/>\n"
 "<b>Current Screen</b> - if you have multiple screens, this captures the "
 "screen containing the mouse cursor when the snapshot is taken.\n"
 "</p></qt>"
@@ -359,7 +359,14 @@ msgid ""
 msgstr ""
 "मुसुवा के साथ एक छेत्र चुनव. स्नैपसाट ले बर एंटर कुंजी दबाव अउ बाहिर होए बर एस्केप कुंजी."
 
-#: snapshottimer.cpp:87
+#: snapshottimer.cpp:35
+#, fuzzy, kde-format
+#| msgid "Snapshot will be taken in 1 second"
+#| msgid_plural "Snapshot will be taken in %1 seconds"
+msgid "Snapshot will be taken in %1 seconds"
+msgstr "स्नेपसाट १ सेकन्ड में ले जाही"
+
+#: snapshottimer.cpp:88
 #, kde-format
 msgid "Snapshot will be taken in 1 second"
 msgid_plural "Snapshot will be taken in %1 seconds"

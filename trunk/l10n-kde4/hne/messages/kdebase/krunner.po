@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krunner\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-15 05:59+0100\n"
+"POT-Creation-Date: 2009-03-02 09:56+0100\n"
 "PO-Revision-Date: 2009-01-29 17:54+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,17 +18,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 0.2\n"
 
-#: interfaces/default/interface.cpp:76 interfaces/default/interface.cpp:77
+#: interfaces/default/interface.cpp:77 interfaces/default/interface.cpp:78
 #: interfaces/quicksand/qs_dialog.cpp:50 interfaces/quicksand/qs_dialog.cpp:51
 msgid "Settings"
 msgstr "सेटिंग"
 
-#: interfaces/default/interface.cpp:96 interfaces/default/interface.cpp:97
-#: krunnerapp.cpp:202 krunnerapp.cpp:203
+#: interfaces/default/interface.cpp:97 interfaces/default/interface.cpp:98
+#: krunnerapp.cpp:149
 msgid "Show System Activity"
 msgstr "तंत्र काम मन ल देखाव"
 
-#: interfaces/default/interface.cpp:455
+#: interfaces/default/interface.cpp:456
 #, fuzzy, kde-format
 #| msgid "%1 %2"
 msgid "%1: %2"
@@ -86,84 +86,90 @@ msgstr[0] "<qt><nobr>आप मन १ सेकन्ड मं अपने �
 msgstr[1] "<qt><nobr>आप मन %1 सेकन्ड मं अपने अपन लाग आउट हो जाहू</nobr></qt>"
 
 #: lock/main.cc:61
-msgid "KRunner Locker"
-msgstr "के-रनर ताला"
+msgid "KDE Screen Locker"
+msgstr ""
 
-#: lock/main.cc:61
-msgid "Session Locker for KRunner"
+#: lock/main.cc:62
+#, fuzzy
+#| msgid "Session Locker for KRunner"
+msgid "Session Locker for KDE Workspace"
 msgstr "केरनर बर सत्र ताला"
 
-#: lock/main.cc:64
+#: lock/main.cc:65
 msgid "Force session locking"
 msgstr "सत्र मं ताला लगाय बर मजबूर करव"
 
-#: lock/main.cc:65
+#: lock/main.cc:66
 msgid "Only start screen saver"
 msgstr "सिरिफ स्क्रीन सेवर चालू करव"
 
-#: lock/main.cc:66
+#: lock/main.cc:67
 msgid "Only use the blank screen saver"
 msgstr "सिरिफ खाली(ब्लैंक) स्क्रीन सेवर उपयोग करव"
 
-#: lock/main.cc:67
+#: lock/main.cc:68
 msgid "start with plasma unlocked for configuring"
 msgstr "कानफिगर करे बर प्लाज्मा ल बिना ताला के सुरू करव"
 
-#: lock/lockprocess.cc:796
+#: lock/lockprocess.cc:795
 msgid "Will not lock the session, as unlocking would be impossible:\n"
 msgstr "सत्र ल ताला नइ लगा सके, काबर कि स्क्रीन के ताला खोलना संभव नइ हे:\n"
 
-#: lock/lockprocess.cc:800
+#: lock/lockprocess.cc:799
 msgid "Cannot start <i>kcheckpass</i>."
 msgstr "चालू नइ कर सकिस <i>के-चेकपास</i>."
 
-#: lock/lockprocess.cc:801
+#: lock/lockprocess.cc:800
 msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not setuid root."
 msgstr "<i>के-चेकपास</i> काम करे मं अक्छम हे. हो सकथे ये setuid रूट नइ हे."
 
-#: lock/lockprocess.cc:863
+#: lock/lockprocess.cc:862
 msgid "No appropriate greeter plugin configured."
 msgstr "कोई उपयुक्त ग्रीटर प्लगइन कान्फिगर नइ हे."
 
-#: lock/lockdlg.cc:98
+#: lock/lockdlg.cc:97
 msgid "<nobr><b>The session is locked</b></nobr><br />"
 msgstr "<nobr><b>सत्र तालाबंद हे</b></nobr><br />"
 
-#: lock/lockdlg.cc:99
+#: lock/lockdlg.cc:98
 #, kde-format
 msgid "<nobr><b>The session was locked by %1</b></nobr><br />"
 msgstr "<nobr><b>ए सत्र ल %1 ह तालाबंद करे हे</b></nobr><br />"
 
-#: lock/lockdlg.cc:112
+#: lock/lockdlg.cc:111
 msgid "Unl&ock"
 msgstr "ताला खोलव (&o)"
 
-#: lock/lockdlg.cc:114
+#: lock/lockdlg.cc:113
 msgid "Sw&itch User..."
 msgstr "कमइया बदलव (&i)..."
 
-#: lock/lockdlg.cc:182
+#: lock/lockdlg.cc:181
 msgid "<b>Unlocking failed</b>"
 msgstr "<b>ताला खोले मं फेल</b>"
 
-#: lock/lockdlg.cc:190
+#: lock/lockdlg.cc:189
 msgid "<b>Warning: Caps Lock on</b>"
 msgstr "<b>चेतावनी: केप्स लाक चालू हे</b>"
 
-#: lock/lockdlg.cc:422
-#, kde-format
+#: lock/lockdlg.cc:421
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot unlock the session because the authentication system failed to "
+#| "work;\n"
+#| "you must kill krunner_lock (pid %1) manually."
 msgid ""
 "Cannot unlock the session because the authentication system failed to work;\n"
-"you must kill krunner_lock (pid %1) manually."
+"you must kill kscreenlocker (pid %1) manually."
 msgstr ""
 "सत्र के ताला नइ हटाय जा सकिस काबर कि प्रमानीकरन तंत्र काम करे मं फेल रहिस;\n"
 "आप मन ल खुद krunner_lock (pid %1) ल बन्द (kill) करना होही."
 
-#: lock/lockdlg.cc:511
+#: lock/lockdlg.cc:510
 msgid "&Start New Session"
 msgstr "नवा सत्र चालू करव (&S)"
 
-#: lock/lockdlg.cc:519
+#: lock/lockdlg.cc:518
 #, kde-format
 msgid ""
 "You have chosen to open another desktop session instead of resuming the "
@@ -177,28 +183,28 @@ msgid ""
 "between sessions."
 msgstr ""
 
-#: lock/lockdlg.cc:532
+#: lock/lockdlg.cc:531
 msgid "&Do not ask again"
 msgstr "दुबारा मत पूछव (&D)"
 
-#: lock/lockdlg.cc:588
+#: lock/lockdlg.cc:587
 msgid "Session"
 msgstr "सत्र"
 
-#: lock/lockdlg.cc:588
+#: lock/lockdlg.cc:587
 msgid "Location"
 msgstr "जगह"
 
-#: lock/lockdlg.cc:616
+#: lock/lockdlg.cc:615
 msgctxt "session"
 msgid "&Activate"
 msgstr "सक्रिय करव (&A)"
 
-#: lock/lockdlg.cc:625
+#: lock/lockdlg.cc:624
 msgid "Start &New Session"
 msgstr "नवा सत्र चालू करव (&N)"
 
-#: krunnerdialog.cpp:57 krunnerapp.cpp:191 krunnerapp.cpp:192
+#: krunnerdialog.cpp:58 krunnerapp.cpp:138
 msgid "Run Command"
 msgstr "कमांड चलाव"
 
@@ -260,39 +266,39 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raviratlami@aol.in"
 
-#: krunnerapp.cpp:196 krunnerapp.cpp:197
+#: krunnerapp.cpp:143
 msgid "Run Command on clipboard contents"
 msgstr "क्लिपबोर्ड सामान मं कमांड चलाव"
 
-#: krunnerapp.cpp:214 krunnerapp.cpp:215
+#: krunnerapp.cpp:161
 msgid "Switch User"
 msgstr "कमइया स्विच करव"
 
-#: krunnerapp.cpp:221 krunnerapp.cpp:222
+#: krunnerapp.cpp:168
 msgid "Lock Session"
 msgstr "सत्र मं ताला लगाव"
 
-#: krunnerapp.cpp:229 krunnerapp.cpp:230
+#: krunnerapp.cpp:176
 msgid "Log Out"
 msgstr "लाग आउट"
 
-#: krunnerapp.cpp:234 krunnerapp.cpp:235
+#: krunnerapp.cpp:181
 msgid "Log Out Without Confirmation"
 msgstr "पुस्टि करे बिना लाग आउट करव"
 
-#: krunnerapp.cpp:239 krunnerapp.cpp:240
+#: krunnerapp.cpp:186
 msgid "Halt Without Confirmation"
 msgstr "पुस्टि करे बिना बन्द (हाल्ट) करव"
 
-#: krunnerapp.cpp:244 krunnerapp.cpp:245
+#: krunnerapp.cpp:191
 msgid "Reboot Without Confirmation"
 msgstr "पुस्टि करे बिना फिर से चालू (रिबूट) करव"
 
-#: krunnerapp.cpp:296
+#: krunnerapp.cpp:242
 msgid "System Activity"
 msgstr "तंत्र काम"
 
-#: krunnerapp.cpp:405
+#: krunnerapp.cpp:351
 msgid ""
 "Could not log out properly.\n"
 "The session manager cannot be contacted. You can try to force a shutdown by "
@@ -303,6 +309,9 @@ msgstr ""
 "सत्र प्रबंधक से संपर्क नइ हो सकिस. आप मन कंट्रोल+आल्ट+बैकस्पेस  दबा कर कम्प्यूटर ल जबरन बन्द "
 "कर सकथो . टीप लेव कि, कम्पयूटर ल जबरन बन्द करे से आप मन के अभी हाल के सत्र सहेजे नइ जा "
 "सकही."
+
+#~ msgid "KRunner Locker"
+#~ msgstr "के-रनर ताला"
 
 #, fuzzy
 #~| msgid "KRunner Settings"
