@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-13 10:22+0100\n"
+"POT-Creation-Date: 2009-03-14 10:51+0100\n"
 "PO-Revision-Date: 2009-02-28 20:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1386,18 +1386,18 @@ msgstr "%1 - %2"
 msgid "- %1"
 msgstr "- %1"
 
-#: views/agendaview/koagendaview.cpp:557
+#: views/agendaview/koagendaview.cpp:524
 #, kde-format
 msgctxt "short_weekday date (e.g. Mon 13)"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: views/agendaview/koagendaview.cpp:726
+#: views/agendaview/koagendaview.cpp:693
 #: views/multiagendaview/multiagendaview.cpp:56
 msgid "All Day"
 msgstr "पूरा दिन"
 
-#: views/agendaview/koagendaview.cpp:1489
+#: views/agendaview/koagendaview.cpp:1458
 msgid "Unable to modify this to-do, because it cannot be locked."
 msgstr "ये काम सूची ल सुधार नइ कर सकिस काबर कि एला तालाबंद नइ कर सकिस."
 
@@ -2447,7 +2447,7 @@ msgctxt "@info:tooltip"
 msgid "Set an advanced alarm"
 msgstr ""
 
-#: koeditorgeneral.cpp:413
+#: koeditorgeneral.cpp:415
 #, fuzzy, kde-format
 #| msgid "1 advanced reminder configured"
 msgctxt "@label"
@@ -2456,21 +2456,21 @@ msgid_plural "%1 reminders configured"
 msgstr[0] "१ उन्नत स्मरन कान्फिगर करिस"
 msgstr[1] "१ उन्नत स्मरन कान्फिगर करिस"
 
-#: koeditorgeneral.cpp:440
+#: koeditorgeneral.cpp:442
 #, fuzzy
 #| msgid "1 advanced reminder configured"
 msgctxt "@label"
 msgid "1 advanced reminder configured"
 msgstr "१ उन्नत स्मरन कान्फिगर करिस"
 
-#: koeditorgeneral.cpp:585
+#: koeditorgeneral.cpp:587
 #, fuzzy
 #| msgid "No attendees"
 msgctxt "@label"
 msgid "No attendees"
 msgstr "कोई उपस्थिति नइ"
 
-#: koeditorgeneral.cpp:588
+#: koeditorgeneral.cpp:590
 #, fuzzy, kde-format
 #| msgid "One attendee"
 #| msgid_plural "%1 attendees"
@@ -2480,7 +2480,7 @@ msgid_plural "%1 attendees"
 msgstr[0] "१ उपस्थित"
 msgstr[1] "%1 उपस्थित"
 
-#: koeditorgeneral.cpp:599
+#: koeditorgeneral.cpp:601
 #, fuzzy
 #| msgid "Please specify a valid due date."
 msgctxt "@info"
@@ -2933,7 +2933,7 @@ msgid "The item \"%1\" will be permanently deleted."
 msgstr "चीज \"%1\" ल स्थायी रूप से मिटा दे जाही."
 
 #: calendarview.cpp:823 calendarview.cpp:1267 calendarview.cpp:1279
-#: calendarview.cpp:2138 calendarview.cpp:2201 calendarview.cpp:2212
+#: calendarview.cpp:2138 calendarview.cpp:2201 calendarview.cpp:2232
 msgid "KOrganizer Confirmation"
 msgstr "के-आर्गेनाइजर पुस्टिकरन"
 
@@ -3156,69 +3156,77 @@ msgid ""
 "to delete it and all its recurrences?"
 msgstr ""
 
-#: calendarview.cpp:2207
+#: calendarview.cpp:2209
+#, fuzzy
+#| msgid "Delete &Future"
+msgid "Also Delete &Future"
+msgstr "भविस्य मेटाव (&F)"
+
+#: calendarview.cpp:2213
 #, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
-"only the current one on %2, only all future recurrences, or all its "
-"recurrences?"
+"only the current one on %2, also future occurrences, or all its occurrences?"
 msgstr ""
 
-#: calendarview.cpp:2213
+#: calendarview.cpp:2220
+#, kde-format
+msgid ""
+"The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
+"only the current one on %2 or all its occurrences?"
+msgstr ""
+
+#: calendarview.cpp:2233
 msgid "Delete C&urrent"
 msgstr "अभी हाल के मेटाव (&u)"
 
-#: calendarview.cpp:2214
-msgid "Delete &Future"
-msgstr "भविस्य मेटाव (&F)"
-
-#: calendarview.cpp:2215
+#: calendarview.cpp:2235
 msgid "Delete &All"
 msgstr "सब्बो मेटाव (&A)"
 
-#: calendarview.cpp:2301
+#: calendarview.cpp:2322
 msgid "Delete all completed to-dos?"
 msgstr "सब्बो काम-सूची मेटाव?"
 
-#: calendarview.cpp:2302
+#: calendarview.cpp:2323
 msgid "Purge To-dos"
 msgstr "काम-सूची अलग करव"
 
-#: calendarview.cpp:2303
+#: calendarview.cpp:2324
 msgid "Purge"
 msgstr "मेटाव"
 
-#: calendarview.cpp:2307
+#: calendarview.cpp:2328
 msgid "Purging completed to-dos"
 msgstr "काम-सूची अलग करना पूरा"
 
-#: calendarview.cpp:2324
+#: calendarview.cpp:2345
 msgid "Unable to purge to-dos with uncompleted children."
 msgstr "कामसूची ल अधूरा सिसु के साथ अलग करे मं अक्छम."
 
-#: calendarview.cpp:2325
+#: calendarview.cpp:2346
 msgid "Delete To-do"
 msgstr "कामसूची मेटाव"
 
-#: calendarview.cpp:2334
+#: calendarview.cpp:2355
 msgid "Unable to edit item: it is locked by another process."
 msgstr ""
 
-#: calendarview.cpp:2367
+#: calendarview.cpp:2388
 #, kde-format
 msgid "Unable to copy the item to %1."
 msgstr "चीज ल %1 मं नकल करे मं अक्छम."
 
-#: calendarview.cpp:2368
+#: calendarview.cpp:2389
 msgid "Copying Failed"
 msgstr "नकल करना फेल"
 
-#: calendarview.cpp:2412
+#: calendarview.cpp:2433
 #, kde-format
 msgid "Unable to move the item to  %1."
 msgstr "चीज ल %1 मं खिसकाय मं अक्छम."
 
-#: calendarview.cpp:2413
+#: calendarview.cpp:2434
 msgid "Moving Failed"
 msgstr "खिसकाना फेल"
 
