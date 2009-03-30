@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-29 11:44+0200\n"
+"POT-Creation-Date: 2009-03-30 10:52+0200\n"
 "PO-Revision-Date: 2009-02-18 14:22+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -65,8 +65,8 @@ msgstr ""
 "कोई एनकोडर चुने नइ गे हे.\n"
 "किरपा करके, कान्फिगरेसन तिर कोनो एक एनकोडर चुनव."
 
-#: encoder.cpp:74 encoderconfigimp.cpp:144 encoderconfigimp.cpp:185
-#: encoderconfigimp.cpp:226
+#: encoder.cpp:74 encoderconfigimp.cpp:149 encoderconfigimp.cpp:189
+#: encoderconfigimp.cpp:230
 msgid "No Encoder Selected"
 msgstr "कोई एनकोडर चुने नइ गिस"
 
@@ -122,43 +122,53 @@ msgstr ""
 "वेव फाइल मिटा दे गे हे.\n"
 "का आप मन पूरा एनकोडर आउटपुट देखना चाहू?"
 
-#: encoderconfigimp.cpp:121
+#: encoderconfigimp.cpp:100
+msgid "The default encoder has to accept wav as input."
+msgstr ""
+
+#: encoderconfigimp.cpp:100 encoderconfigimp.cpp:194 encoderconfigimp.cpp:235
+msgid "Not Allowed"
+msgstr ""
+
+#: encoderconfigimp.cpp:127
 #, fuzzy
 #| msgid "Encoder"
 msgid "Add Encoder"
 msgstr "एनकोडर"
 
-#: encoderconfigimp.cpp:144 encoderconfigimp.cpp:185 encoderconfigimp.cpp:226
+#: encoderconfigimp.cpp:149 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
 msgid "Please select an encoder."
 msgstr "किरपा करके, एक एनकोडर चुनव"
 
-#: encoderconfigimp.cpp:168
+#: encoderconfigimp.cpp:172
 #, fuzzy
 #| msgid "Encoder"
 msgid "Copy Encoder"
 msgstr "एनकोडर"
 
-#: encoderconfigimp.cpp:190
-msgid "At least one encoder must exist."
-msgstr "कम से कम एक एनकोडर मिलत होना जरूरी हे."
-
-#: encoderconfigimp.cpp:190
-msgid "Can Not Remove"
-msgstr "मिटा नइ सकिस"
-
 #: encoderconfigimp.cpp:194
+msgid "WAV is not allowed to be removed."
+msgstr ""
+
+#: encoderconfigimp.cpp:198
 msgid "Delete encoder?"
 msgstr "एनकोडर मेटाव?"
 
-#: encoderconfigimp.cpp:194
+#: encoderconfigimp.cpp:198
 msgid "Delete Encoder"
 msgstr "एनकोडर मेटाव"
 
-#: encoderconfigimp.cpp:241
+#: encoderconfigimp.cpp:235
+msgid ""
+"WAV is not allowed to be changed.\n"
+"You can copy it to adjust it to your needs."
+msgstr ""
+
+#: encoderconfigimp.cpp:250
 msgid "Configure Encoder"
 msgstr "एनकोडर कान्फिगर करव"
 
-#: encoderconfigimp.cpp:373 kaudiocreator.cpp:379
+#: encoderconfigimp.cpp:384 kaudiocreator.cpp:393
 msgid "Encoder Configuration"
 msgstr "एनकोडर कान्फिगरेसन"
 
@@ -242,7 +252,7 @@ msgstr "सीडीडीबी तलास (&C)"
 msgid "Searching"
 msgstr ""
 
-#: kaudiocreator.cpp:199
+#: kaudiocreator.cpp:199 kaudiocreator.cpp:232
 msgid "WAV"
 msgstr "वेव"
 
@@ -260,78 +270,78 @@ msgstr ""
 msgid "FLAC Best"
 msgstr "एफएलएसी"
 
-#: kaudiocreator.cpp:270
+#: kaudiocreator.cpp:284
 msgid "CD Inserted"
 msgstr "सीडी घुसाइस"
 
-#: kaudiocreator.cpp:272
+#: kaudiocreator.cpp:286
 msgid "No Audio CD detected"
 msgstr "कोई आडियो सीडी पता नइ लगा"
 
-#: kaudiocreator.cpp:279
+#: kaudiocreator.cpp:293
 #, kde-format
 msgid "Default encoder: %1"
 msgstr "डिफाल्ट एनकोडर: %1"
 
-#: kaudiocreator.cpp:284
+#: kaudiocreator.cpp:298
 msgid "Idle."
 msgstr "निस्क्रिय"
 
-#: kaudiocreator.cpp:293
+#: kaudiocreator.cpp:307
 #, kde-format
 msgid "Ripping (%1 active, %2 queued)"
 msgstr "रिप करत हे (%1 सक्रिय, %2 कतार में)"
 
-#: kaudiocreator.cpp:297
+#: kaudiocreator.cpp:311
 #, kde-format
 msgid "Encoding (%1 active, %2 queued)"
 msgstr "एनकोडिंग (%1 सक्रिय, %2 कतार में)"
 
-#: kaudiocreator.cpp:315
+#: kaudiocreator.cpp:329
 msgid "There are unfinished jobs in the queue. Would you like to quit anyway?"
 msgstr "कतार मं अधूरा काम हे. जऊन घलोक हो, आप मन बाहिर होना चाहू?"
 
-#: kaudiocreator.cpp:315
+#: kaudiocreator.cpp:329
 msgid "Unfinished Jobs in Queue"
 msgstr "कतार मं अधूरा काम हे"
 
 #. i18n: file: general.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, General)
-#: kaudiocreator.cpp:356 rc.cpp:196
+#: kaudiocreator.cpp:370 rc.cpp:196
 msgid "General"
 msgstr "सामान्य"
 
-#: kaudiocreator.cpp:357
+#: kaudiocreator.cpp:371
 msgid "General Configuration"
 msgstr "सामान्य कान्फिगरेसन"
 
-#: kaudiocreator.cpp:359
+#: kaudiocreator.cpp:373
 msgid "CD"
 msgstr "सीडी"
 
-#: kaudiocreator.cpp:360
+#: kaudiocreator.cpp:374
 msgid "CD Configuration"
 msgstr "सीडी कान्फिगरेसन"
 
-#: kaudiocreator.cpp:370
+#: kaudiocreator.cpp:384
 msgid "CDDB"
 msgstr "सीडीडीबी"
 
-#: kaudiocreator.cpp:370
+#: kaudiocreator.cpp:384
 msgid "CDDB Configuration"
 msgstr "सीडीडीबी कान्फिगरेसन"
 
-#: kaudiocreator.cpp:376
+#: kaudiocreator.cpp:390
 msgid "Ripper"
 msgstr "रिप्पर"
 
-#: kaudiocreator.cpp:376
+#: kaudiocreator.cpp:390
 msgid "Ripper Configuration"
 msgstr "रिप्पर कान्फिगरेसन"
 
 #. i18n: file: encodefile.ui:75
 #. i18n: ectx: property (text), widget (QTreeWidget, fileList)
-#: kaudiocreator.cpp:379 rc.cpp:33
+#: kaudiocreator.cpp:393 rc.cpp:33
 msgid "Encoder"
 msgstr "एनकोडर"
 
@@ -1382,6 +1392,12 @@ msgstr "उदाहरनः %1"
 #: job.h:32
 msgid "Other"
 msgstr "अन्य"
+
+#~ msgid "At least one encoder must exist."
+#~ msgstr "कम से कम एक एनकोडर मिलत होना जरूरी हे."
+
+#~ msgid "Can Not Remove"
+#~ msgstr "मिटा नइ सकिस"
 
 #, fuzzy
 #~| msgid "Encode File"
