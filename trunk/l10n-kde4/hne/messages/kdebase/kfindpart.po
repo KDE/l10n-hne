@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-28 11:06+0100\n"
+"POT-Creation-Date: 2009-04-01 11:15+0200\n"
 "PO-Revision-Date: 2009-02-05 18:13+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,38 +18,39 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 0.2\n"
 
-#: kfinddlg.cpp:37
+#: kfinddlg.cpp:50
 msgid "Find Files/Folders"
 msgstr "फाइल/फोल्डर खोजव"
 
-#: kfinddlg.cpp:58 kfinddlg.cpp:179
-msgid "Ready."
-msgstr "तैयार."
+#: kfinddlg.cpp:71 kfinddlg.cpp:191
+msgctxt "the application is currently idle, there is no active search"
+msgid "Idle."
+msgstr ""
 
-#: kfinddlg.cpp:114 kfinddlg.cpp:218 kfinddlg.cpp:247
+#: kfinddlg.cpp:126 kfinddlg.cpp:230 kfinddlg.cpp:259
 #, kde-format
 msgid "one file found"
 msgid_plural "%1 files found"
 msgstr[0] "एक फाइल मिलिस"
 msgstr[1] "%1 फाइल मन ल मिलिस"
 
-#: kfinddlg.cpp:154
+#: kfinddlg.cpp:166
 msgid "Searching..."
 msgstr "खोजत हे..."
 
-#: kfinddlg.cpp:181
+#: kfinddlg.cpp:193
 msgid "Aborted."
 msgstr "छोड़िस."
 
-#: kfinddlg.cpp:184 kfinddlg.cpp:189 kfinddlg.cpp:195
+#: kfinddlg.cpp:196 kfinddlg.cpp:201 kfinddlg.cpp:207
 msgid "Error."
 msgstr "गलती."
 
-#: kfinddlg.cpp:185
+#: kfinddlg.cpp:197
 msgid "Please specify an absolute path in the \"Look in\" box."
 msgstr "किरपा करके, \"ये मां देखव\" डब्बा मं निरपेक्छ (एब्सल्यूट) रस्ता निरधारित करव."
 
-#: kfinddlg.cpp:190
+#: kfinddlg.cpp:202
 msgid "Could not find the specified folder."
 msgstr "निरधारित फोल्डर नइ खोज सकिस."
 
@@ -60,39 +61,138 @@ msgctxt "Name of the component that finds things"
 msgid "Find Component"
 msgstr "अवयव खोजव"
 
-#: kftabdlg.cpp:60
+#: kfindtreeview.cpp:47
+msgid "Read-write"
+msgstr "पढ़े-लिखे बर"
+
+#: kfindtreeview.cpp:48
+msgid "Read-only"
+msgstr "सिरिफ पढ़े बर"
+
+#: kfindtreeview.cpp:49
+msgid "Write-only"
+msgstr "सिरिफ लिखे बर"
+
+#: kfindtreeview.cpp:50
+msgid "Inaccessible"
+msgstr "नइ पहुंच सके"
+
+#: kfindtreeview.cpp:69
+#, fuzzy
+#| msgid "Name"
+msgctxt "file name column"
+msgid "Name"
+msgstr "नाम"
+
+#: kfindtreeview.cpp:71
+#, fuzzy
+#| msgid "In Subfolder"
+msgctxt "name of the containing folder"
+msgid "In Subfolder"
+msgstr "सब-फोल्डर में"
+
+#: kfindtreeview.cpp:73
+#, fuzzy
+#| msgid "Size"
+msgctxt "file size column"
+msgid "Size"
+msgstr "आकार"
+
+#: kfindtreeview.cpp:75
+#, fuzzy
+#| msgid "Modified"
+msgctxt "modified date column"
+msgid "Modified"
+msgstr "परिवर्धित"
+
+#: kfindtreeview.cpp:77
+#, fuzzy
+#| msgid "Permissions"
+msgctxt "file permissions column"
+msgid "Permissions"
+msgstr "अनुमति"
+
+#: kfindtreeview.cpp:79
+#, fuzzy
+#| msgid "First Matching Line"
+msgctxt "first matching line of the query string in this file"
+msgid "First Matching Line"
+msgstr "मिलत जुलत पहला लाइन"
+
+#: kfindtreeview.cpp:340
+msgid "&Open containing folder(s)"
+msgstr ""
+
+#: kfindtreeview.cpp:344
+#, fuzzy
+#| msgid "Delete"
+msgid "&Delete"
+msgstr "मेटाव"
+
+#: kfindtreeview.cpp:349
+msgid "&Move to Trash"
+msgstr ""
+
+#: kfindtreeview.cpp:432
+msgid "Save Results As"
+msgstr "परिनाम अइसन सहेजव"
+
+#: kfindtreeview.cpp:433
+msgid "HTML page"
+msgstr ""
+
+#: kfindtreeview.cpp:433
+msgid "Text file"
+msgstr ""
+
+#: kfindtreeview.cpp:453
+msgid "Unable to save results."
+msgstr "परिनाम मन ल सहेजना संभव नइ हे."
+
+#: kfindtreeview.cpp:469
+msgid "KFind Results File"
+msgstr "के-फाइंड परिनाम फाइल"
+
+#: kfindtreeview.cpp:490
+msgid "Results were saved to file\n"
+msgstr "परिनाम ल फाइल मं सहेजिस\n"
+
+#: kftabdlg.cpp:73
+#, fuzzy
+#| msgid "&Named:"
+msgctxt "this is the label for the name textfield"
 msgid "&Named:"
 msgstr "नामः (&N)"
 
-#: kftabdlg.cpp:63
+#: kftabdlg.cpp:76
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "आप मन वाइल्ड-कार्ड अउ \";\" के उपयोग बहुत से नांव मन ल अलग करे बर कर सकथो "
 
-#: kftabdlg.cpp:67
+#: kftabdlg.cpp:80
 msgid "Look &in:"
 msgstr "ये मां देखव: (&i)"
 
-#: kftabdlg.cpp:70
+#: kftabdlg.cpp:83
 msgid "Include &subfolders"
 msgstr "सब-फोल्डर सामिल करव (&s)"
 
-#: kftabdlg.cpp:71
+#: kftabdlg.cpp:84
 msgid "Case s&ensitive search"
 msgstr "अक्छर संवेदनसील खोज (&e)"
 
-#: kftabdlg.cpp:72
+#: kftabdlg.cpp:85
 msgid "&Browse..."
 msgstr "ब्राउज... (&B)"
 
-#: kftabdlg.cpp:73
+#: kftabdlg.cpp:86
 msgid "&Use files index"
 msgstr "फाइल निर्देसिका उपयोग करव (&U)"
 
-#: kftabdlg.cpp:74
+#: kftabdlg.cpp:87
 msgid "Show &hidden files"
 msgstr ""
 
-#: kftabdlg.cpp:92
+#: kftabdlg.cpp:105
 msgid ""
 "<qt>Enter the filename you are looking for. <br />Alternatives may be "
 "separated by a semicolon \";\".<br /><br />The filename may contain the "
@@ -106,124 +206,133 @@ msgid ""
 "li></ul></qt>"
 msgstr ""
 
-#: kftabdlg.cpp:113
+#: kftabdlg.cpp:126
 msgid ""
 "<qt>This lets you use the files' index created by the <i>slocate</i> package "
 "to speed-up the search; remember to update the index from time to time "
 "(using <i>updatedb</i>).</qt>"
 msgstr ""
 
-#: kftabdlg.cpp:159
+#: kftabdlg.cpp:172
 msgid "Find all files created or &modified:"
 msgstr "सब्बो बनाय गे या परिवर्धित फाइल मन ल खोजव: (&m)"
 
-#: kftabdlg.cpp:161
+#: kftabdlg.cpp:174
 msgid "&between"
 msgstr "के बीच मं (&b)"
 
-#: kftabdlg.cpp:162
+#: kftabdlg.cpp:175
 msgid "&during the previous"
 msgstr "पिछले के समय (&d)"
 
-#: kftabdlg.cpp:163
+#: kftabdlg.cpp:176
 msgid "and"
 msgstr "अउ"
 
-#: kftabdlg.cpp:168
+#: kftabdlg.cpp:181
 msgid "minute(s)"
 msgstr "मिनट"
 
-#: kftabdlg.cpp:169
+#: kftabdlg.cpp:182
 msgid "hour(s)"
 msgstr "घंटा"
 
-#: kftabdlg.cpp:170
+#: kftabdlg.cpp:183
+#, fuzzy
+#| msgid "day(s)"
+msgctxt "use date ranges to search files by modified time"
 msgid "day(s)"
 msgstr "दिन"
 
-#: kftabdlg.cpp:171
+#: kftabdlg.cpp:184
 msgid "month(s)"
 msgstr "महिना"
 
-#: kftabdlg.cpp:172
+#: kftabdlg.cpp:185
 msgid "year(s)"
 msgstr "साल"
 
-#: kftabdlg.cpp:190
+#: kftabdlg.cpp:203
 msgid "File &size is:"
 msgstr "फाइल आकार हे: (&s)"
 
-#: kftabdlg.cpp:204
+#: kftabdlg.cpp:217
 msgid "Files owned by &user:"
 msgstr "फाइल ए कमइया के मालिकाना मं हे: (&u)"
 
-#: kftabdlg.cpp:209
+#: kftabdlg.cpp:222
 msgid "Owned by &group:"
 msgstr "समूह के मालिकाना मं हे: (&g)"
 
-#: kftabdlg.cpp:212
+#: kftabdlg.cpp:225
+#, fuzzy
+#| msgid "(none)"
+msgctxt "file size isn't considered in the search"
 msgid "(none)"
 msgstr "(कुछ नइ)"
 
-#: kftabdlg.cpp:213
+#: kftabdlg.cpp:226
 msgid "At Least"
 msgstr "कम से कम"
 
-#: kftabdlg.cpp:214
+#: kftabdlg.cpp:227
 msgid "At Most"
 msgstr "अधिक से अधिक"
 
-#: kftabdlg.cpp:215
+#: kftabdlg.cpp:228
 msgid "Equal To"
 msgstr "के बराबर"
 
-#: kftabdlg.cpp:217
+#: kftabdlg.cpp:230
 msgid "Bytes"
 msgstr "बाइट्स"
 
-#: kftabdlg.cpp:218
+#: kftabdlg.cpp:231
 #, fuzzy
 msgid "KiB"
 msgstr "कि.बा."
 
-#: kftabdlg.cpp:219
+#: kftabdlg.cpp:232
 #, fuzzy
 msgid "MiB"
 msgstr "मे.बा."
 
-#: kftabdlg.cpp:220
+#: kftabdlg.cpp:233
 #, fuzzy
 msgid "GiB"
 msgstr "गी.बा."
 
-#: kftabdlg.cpp:285
+#: kftabdlg.cpp:298
+#, fuzzy
+#| msgid "File &type:"
+msgctxt "label for the file type combobox"
 msgid "File &type:"
 msgstr "फाइल किसिमः (&t)"
 
-#: kftabdlg.cpp:290
+#: kftabdlg.cpp:303
 msgid "C&ontaining text:"
 msgstr "पाठ ल धरे हे: (&o)"
 
-#: kftabdlg.cpp:296
+#: kftabdlg.cpp:309
 msgid ""
 "<qt>If specified, only files that contain this text are found. Note that not "
 "all file types from the list above are supported. Please refer to the "
 "documentation for a list of supported file types.</qt>"
 msgstr ""
 
-#: kftabdlg.cpp:304
+#: kftabdlg.cpp:317
 msgid "Case s&ensitive"
 msgstr "अक्छर संवेदनसील (&e)"
 
-#: kftabdlg.cpp:305
+#: kftabdlg.cpp:318
 msgid "Include &binary files"
 msgstr "बाइनरी फाइल मन ल सामिल करव (&b)"
 
-#: kftabdlg.cpp:306
+#: kftabdlg.cpp:319
 msgid "Regular e&xpression"
 msgstr "रेगुलर एक्सप्रेसन (&x)"
 
-#: kftabdlg.cpp:309
+#: kftabdlg.cpp:322
 msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
 "contain text (for example program files and images).</qt>"
@@ -231,71 +340,74 @@ msgstr ""
 "<qt>ये आप मन ल कोनो किसम के फाइल मं खोजन देथे , इहां तक कि ओमां घलोक जऊन मं प्रायः "
 "कोई पाठ नइ होथे ( उदाहरन बर, प्रोग्राम फाइल मन मं अउर फोटू मन मं).</qt>"
 
-#: kftabdlg.cpp:317
+#: kftabdlg.cpp:330
 msgid "&Edit..."
 msgstr "संपादन... (&E)"
 
-#: kftabdlg.cpp:323
+#: kftabdlg.cpp:336
 msgid "fo&r:"
 msgstr "बरः (&r)"
 
-#: kftabdlg.cpp:325
+#: kftabdlg.cpp:338
 msgid "Search &metainfo sections:"
 msgstr "खोजे के मेटा जानकारी खन्ड: (&m)"
 
-#: kftabdlg.cpp:329
+#: kftabdlg.cpp:342
 msgid "All Files & Folders"
 msgstr "सब्बो फोल्डर अउ फाइल मन ल"
 
-#: kftabdlg.cpp:330
+#: kftabdlg.cpp:343
 msgid "Files"
 msgstr "फाइल"
 
-#: kftabdlg.cpp:331
+#: kftabdlg.cpp:344
 msgid "Folders"
 msgstr "फोल्डर"
 
-#: kftabdlg.cpp:332
+#: kftabdlg.cpp:345
 msgid "Symbolic Links"
 msgstr "सिंबालिक संकली"
 
-#: kftabdlg.cpp:333
+#: kftabdlg.cpp:346
 msgid "Special Files (Sockets, Device Files, ...)"
 msgstr "विसिस्ट फाइल मन ल (साकेट्स, उपकरन फाइल मन ल,...)"
 
-#: kftabdlg.cpp:334
+#: kftabdlg.cpp:347
 msgid "Executable Files"
 msgstr "चलाय जा सके वाले फाइल मन ल"
 
-#: kftabdlg.cpp:335
+#: kftabdlg.cpp:348
 msgid "SUID Executable Files"
 msgstr "एसयूआईडी चलाय जा सके वाले फाइल मन ल"
 
-#: kftabdlg.cpp:336
+#: kftabdlg.cpp:349
 msgid "All Images"
 msgstr "सब्बो फोटू"
 
-#: kftabdlg.cpp:337
+#: kftabdlg.cpp:350
 msgid "All Video"
 msgstr "सब्बो वीडियो"
 
-#: kftabdlg.cpp:338
+#: kftabdlg.cpp:351
 msgid "All Sounds"
 msgstr "सब्बो अवाज"
 
-#: kftabdlg.cpp:389
+#: kftabdlg.cpp:402
 msgid "Name/&Location"
 msgstr "नाम/जगह  (&L)"
 
-#: kftabdlg.cpp:390
+#: kftabdlg.cpp:403
+#, fuzzy
+#| msgid "C&ontents"
+msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "विसय चीज (&o)"
 
-#: kftabdlg.cpp:391
+#: kftabdlg.cpp:404
 msgid "&Properties"
 msgstr "गुन (&P)"
 
-#: kftabdlg.cpp:396
+#: kftabdlg.cpp:409
 msgid ""
 "<qt>Search within files' specific comments/metainfo<br />These are some "
 "examples:<br /><ul><li><b>Audio files (mp3...)</b> Search in id3 tag for a "
@@ -303,236 +415,140 @@ msgid ""
 "resolution, comment...</li></ul></qt>"
 msgstr ""
 
-#: kftabdlg.cpp:404
+#: kftabdlg.cpp:417
 msgid ""
 "<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
 "(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
 "Search only in Resolution, Bitdepth...</li></ul></qt>"
 msgstr ""
 
-#: kftabdlg.cpp:597
+#: kftabdlg.cpp:610
 msgid "Unable to search within a period which is less than a minute."
 msgstr "एक समय के भीतर खोजे मं अक्छम जऊन कि एक मिनट से कम हे."
 
-#: kftabdlg.cpp:608
+#: kftabdlg.cpp:621
 msgid "The date is not valid."
 msgstr "तारीक वैध नइ हे."
 
-#: kftabdlg.cpp:610
+#: kftabdlg.cpp:623
 msgid "Invalid date range."
 msgstr "अवैध तारीक सीमा."
 
-#: kftabdlg.cpp:612
+#: kftabdlg.cpp:625
 msgid "Unable to search dates in the future."
 msgstr "भविस्य मं तारीक खोजे मं अक्छम."
 
-#: kftabdlg.cpp:674
+#: kftabdlg.cpp:687
 msgid "Size is too big. Set maximum size value?"
 msgstr "आकार बहुत बड़ा हे. सबसे अधिक आकार मूल्य सेट करव?"
 
-#: kftabdlg.cpp:674
+#: kftabdlg.cpp:687
 msgid "Error"
 msgstr "गलती"
 
-#: kftabdlg.cpp:674
+#: kftabdlg.cpp:687
 msgid "Set"
 msgstr "सेट"
 
-#: kftabdlg.cpp:674
+#: kftabdlg.cpp:687
 msgid "Do Not Set"
 msgstr "सेट नइ करव"
 
-#: kfwin.cpp:46
-msgid "Read-write"
-msgstr "पढ़े-लिखे बर"
-
-#: kfwin.cpp:47
-msgid "Read-only"
-msgstr "सिरिफ पढ़े बर"
-
-#: kfwin.cpp:48
-msgid "Write-only"
-msgstr "सिरिफ लिखे बर"
-
-#: kfwin.cpp:49
-msgid "Inaccessible"
-msgstr "नइ पहुंच सके"
-
-#: kfwin.cpp:60
-#, fuzzy
-#| msgid "Name"
-msgctxt "file name column"
-msgid "Name"
-msgstr "नाम"
-
-#: kfwin.cpp:60
-#, fuzzy
-#| msgid "In Subfolder"
-msgctxt "name of the containing folder"
-msgid "In Subfolder"
-msgstr "सब-फोल्डर में"
-
-#: kfwin.cpp:60
-#, fuzzy
-#| msgid "Size"
-msgctxt "file size column"
-msgid "Size"
-msgstr "आकार"
-
-#: kfwin.cpp:60
-#, fuzzy
-#| msgid "Modified"
-msgctxt "modified date column"
-msgid "Modified"
-msgstr "परिवर्धित"
-
-#: kfwin.cpp:60
-#, fuzzy
-#| msgid "Permissions"
-msgctxt "file permissions column"
-msgid "Permissions"
-msgstr "अनुमति"
-
-#: kfwin.cpp:60
-#, fuzzy
-#| msgid "First Matching Line"
-msgctxt "first matching line of the query string in this file"
-msgid "First Matching Line"
-msgstr "मिलत जुलत पहला लाइन"
-
-#: kfwin.cpp:235
-msgid "&Open containing folder(s)"
-msgstr ""
-
-#: kfwin.cpp:239
-#, fuzzy
-#| msgid "Delete"
-msgid "&Delete"
-msgstr "मेटाव"
-
-#: kfwin.cpp:244
-msgid "&Move to Trash"
-msgstr ""
-
-#: kfwin.cpp:305
-msgid "Save Results As"
-msgstr "परिनाम अइसन सहेजव"
-
-#: kfwin.cpp:306
-msgid "HTML page"
-msgstr ""
-
-#: kfwin.cpp:306
-msgid "Text file"
-msgstr ""
-
-#: kfwin.cpp:326
-msgid "Unable to save results."
-msgstr "परिनाम मन ल सहेजना संभव नइ हे."
-
-#: kfwin.cpp:341
-msgid "KFind Results File"
-msgstr "के-फाइंड परिनाम फाइल"
-
-#: kfwin.cpp:364
-msgid "Results were saved to file\n"
-msgstr "परिनाम ल फाइल मं सहेजिस\n"
-
-#: kquery.cpp:497
+#: kquery.cpp:527
 msgid "Error while using locate"
 msgstr "लोकेट उपयोग करे मं गलती होइस"
 
-#: main.cpp:12
+#: main.cpp:30
 msgid "KDE file find utility"
 msgstr "केडीई फाइल खोजे के यूटिलिटी"
 
-#: main.cpp:16
+#: main.cpp:34
 msgid "KFind"
 msgstr "के-फाइंड"
 
-#: main.cpp:18
+#: main.cpp:36
 msgid "(c) 1998-2003, The KDE Developers"
 msgstr "(c) 1998-2003, केडीई बनइया मन"
 
-#: main.cpp:20
+#: main.cpp:38
 msgid "Eric Coquelle"
 msgstr "एरिक काकेल्ले"
 
-#: main.cpp:20
+#: main.cpp:38
 msgid "Current Maintainer"
 msgstr "अभी हाल के मेंटेनर"
 
-#: main.cpp:21
+#: main.cpp:39
 msgid "Mark W. Webb"
 msgstr "मार्क डबल्यू वेब"
 
-#: main.cpp:21
+#: main.cpp:39
 msgid "Developer"
 msgstr "डेवलपर"
 
-#: main.cpp:22
+#: main.cpp:40
 msgid "Beppe Grimaldi"
 msgstr "बेप्पे गिरमाल्दी"
 
-#: main.cpp:22
+#: main.cpp:40
 msgid "UI Design & more search options"
 msgstr "यूआई डिजाइन अउ अधिक खोजे के विकल्प"
 
-#: main.cpp:23
+#: main.cpp:41
 msgid "Martin Hartig"
 msgstr "मार्टिन हार्टिग"
 
-#: main.cpp:24
+#: main.cpp:42
 msgid "Stephan Kulow"
 msgstr "स्टीफन कुलोव"
 
-#: main.cpp:25
+#: main.cpp:43
 msgid "Mario Weilguni"
 msgstr "मारियो वेइलगुनी"
 
-#: main.cpp:26
+#: main.cpp:44
 msgid "Alex Zepeda"
 msgstr "एलेक्स जेपेदा"
 
-#: main.cpp:27
+#: main.cpp:45
 #, fuzzy
 #| msgid "Miroslav Fl�r"
 msgid "Miroslav Flídr"
 msgstr "मिरोस्लाव फ्लेर"
 
-#: main.cpp:28
+#: main.cpp:46
 msgid "Harri Porten"
 msgstr "हेरी पोर्तेन"
 
-#: main.cpp:29
+#: main.cpp:47
 msgid "Dima Rogozin"
 msgstr "दिमा रोगोजऊन"
 
-#: main.cpp:30
+#: main.cpp:48
 msgid "Carsten Pfeiffer"
 msgstr "कार्स्टेन फेइफर"
 
-#: main.cpp:31
+#: main.cpp:49
 msgid "Hans Petter Bieker"
 msgstr "हेंस पीटर बीइकर"
 
-#: main.cpp:32
+#: main.cpp:50
 msgid "Waldo Bastian"
 msgstr "वाल्दो बास्तियान"
 
-#: main.cpp:32
+#: main.cpp:50
 msgid "UI Design"
 msgstr "यूआई डिजाइन"
 
-#: main.cpp:33
+#: main.cpp:51
 msgid "Alexander Neundorf"
 msgstr "अलेक्जेंडर न्यून्दार्फ"
 
-#: main.cpp:34
+#: main.cpp:52
 msgid "Clarence Dang"
 msgstr "क्लेरेंस डैंग"
 
-#: main.cpp:39
+#: main.cpp:57
 msgid "Path(s) to search"
 msgstr "खोजे के रस्ता"
 
@@ -545,6 +561,9 @@ msgstr "रविसंकर सिरीवास्तव, जी. करू�
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raviratlami@aol.in"
+
+#~ msgid "Ready."
+#~ msgstr "तैयार."
 
 #~ msgid "Do you really want to delete the selected file?"
 #~ msgid_plural "Do you really want to delete the %1 selected files?"
