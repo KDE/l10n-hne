@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kvpnc\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-06 11:16+0200\n"
+"POT-Creation-Date: 2009-04-07 11:17+0200\n"
 "PO-Revision-Date: 2009-03-02 13:49+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1461,7 +1461,7 @@ msgstr ""
 msgid "PCF import: authentication type found: %1"
 msgstr ""
 
-#: importprofiledialog.cpp:384 kvpncconfig.cpp:3542
+#: importprofiledialog.cpp:384 kvpncconfig.cpp:3542 newprofilewizard.cpp:2552
 msgid "certificate"
 msgstr "प्रमानपत्र"
 
@@ -1910,7 +1910,7 @@ msgid "Group password is empty"
 msgstr "समूह पासवर्ड खाली हे"
 
 #: kvpnc.cpp:1404 kvpnc.cpp:2564 kvpnc.cpp:5224 kvpnc.cpp:6224 kvpnc.cpp:7210
-#: kvpnc.cpp:7548
+#: kvpnc.cpp:7548 newprofilewizard.cpp:2658
 #, fuzzy
 #| msgid "Username is empty!"
 msgid "Username is empty."
@@ -4629,7 +4629,8 @@ msgstr ""
 msgid "Script for restoring defaultroute on kvpnc exit."
 msgstr ""
 
-#: kvpnc.cpp:21744
+#: kvpnc.cpp:21744 networkinterface.cpp:157 utils.cpp:649 utils.cpp:695
+#: utils.cpp:765
 #, kde-format
 msgid "Unable to start proc (%1)."
 msgstr ""
@@ -5712,8 +5713,8 @@ msgstr ""
 #: mainview.cpp:48
 msgid ""
 "The debug console shows useful debug information to solve problems. You need "
-"to turn on debug features for the program you want to produce output in "
-"preferences dialog."
+"to turn on debug features for the program you want to produce output for in "
+"the preferences dialog."
 msgstr ""
 
 #: manageciscocert.cpp:63
@@ -5777,11 +5778,6 @@ msgstr "जोड़व...(&A)"
 msgid "getting IP address from interface"
 msgstr ""
 
-#: networkinterface.cpp:157 utils.cpp:649 utils.cpp:695 utils.cpp:765
-#, kde-format
-msgid "unable to start proc (%1)!"
-msgstr ""
-
 #: newprofiledialog.cpp:141 newprofiledialog.cpp:146 preferencesdialog.cpp:469
 msgid "Cisco (vpnc)"
 msgstr ""
@@ -5795,7 +5791,7 @@ msgid "IPSec (FreeS/WAN)"
 msgstr ""
 
 #: newprofiledialog.cpp:200 newprofiledialog.cpp:201
-msgid "No IP address for remote network entered!"
+msgid "No IP address for remote network entered."
 msgstr ""
 
 #: newprofiledialog.cpp:200 newprofilewizard.cpp:2726
@@ -5804,37 +5800,41 @@ msgstr ""
 msgid "No IP Address"
 msgstr ""
 
-#: newprofiledialog.cpp:209
-msgid "IP address of remote network is not valid!"
+#: newprofiledialog.cpp:209 newprofiledialog.cpp:210
+msgid "IP address of remote network is not valid."
 msgstr ""
 
 #: newprofiledialog.cpp:209 preferencesdialog.cpp:4208
 msgid "Invalid IP Address"
 msgstr "अवैध आईपी पता"
 
-#: newprofiledialog.cpp:210
-msgid "IP address of remote network not valid!"
-msgstr ""
-
-#: newprofiledialog.cpp:267 newprofiledialog.cpp:268
-msgid "Profile name can not contain spaces!"
-msgstr ""
+#: newprofiledialog.cpp:267 newprofiledialog.cpp:268 newprofilewizard.cpp:741
+#: newprofilewizard.cpp:742
+#, fuzzy
+#| msgid "File name cannot be empty!"
+msgid "Profile name cannot contain spaces."
+msgstr "नाम खाली नइ रह सके!"
 
 #: newprofiledialog.cpp:267 newprofilewizard.cpp:741
 msgid "Spaces Not Allowed"
 msgstr ""
 
-#: newprofiledialog.cpp:275 newprofiledialog.cpp:276
-msgid "Profile name can not be empty!"
-msgstr ""
+#: newprofiledialog.cpp:275 newprofiledialog.cpp:276 newprofilewizard.cpp:749
+#: newprofilewizard.cpp:750
+#, fuzzy
+#| msgid "File name cannot be empty!"
+msgid "Profile name cannot be empty."
+msgstr "नाम खाली नइ रह सके!"
 
 #: newprofiledialog.cpp:275 newprofilewizard.cpp:749
 msgid "No Name Entered"
 msgstr ""
 
 #: newprofiledialog.cpp:286 newprofiledialog.cpp:287
-msgid "Profile name already exists!"
-msgstr ""
+#, fuzzy
+#| msgid "Profile name:"
+msgid "Profile name already exists."
+msgstr "प्रोफाइल नाम"
 
 #: newprofiledialog.cpp:286
 msgid "Name Already Exists"
@@ -5913,16 +5913,6 @@ msgid ""
 "Now you have completed all steps for creating a new profile.\n"
 "Click \"Finish\" to continue."
 msgstr ""
-
-#: newprofilewizard.cpp:741 newprofilewizard.cpp:742
-msgid "Profile name can not contain spaces."
-msgstr ""
-
-#: newprofilewizard.cpp:749 newprofilewizard.cpp:750
-#, fuzzy
-#| msgid "File name cannot be empty!"
-msgid "Profile name can not be empty."
-msgstr "नाम खाली नइ रह सके!"
 
 #: newprofilewizard.cpp:785
 #, kde-format
@@ -6068,15 +6058,15 @@ msgstr ""
 #: newprofilewizard.cpp:1355 newprofilewizard.cpp:1357
 #, kde-format
 msgid ""
-"The required daemon (%1) isn't available, you will not be able to use this "
-"connection until the daemon is not installed."
+"The required daemon (%1) is not available, you will not be able to use this "
+"connection until the daemon is installed."
 msgstr ""
 
 #: newprofilewizard.cpp:1370 newprofilewizard.cpp:1372
 #, kde-format
 msgid ""
 "The required version (%1) of FreeSWAN/OpenSWAN was not found. You will not "
-"be able to use the Agressive Mode. It will be used the Main Mode."
+"be able to use Aggressive Mode - Main Mode will be used."
 msgstr ""
 
 #: newprofilewizard.cpp:1391
@@ -6087,8 +6077,8 @@ msgstr ""
 #: newprofilewizard.cpp:1395
 #, kde-format
 msgid ""
-"The required daemons (%1 and %2) aren't available, you will not be able to "
-"use this connection until the daemons are not installed."
+"The required daemons (%1 and %2) are not available, you will not be able to "
+"use this connection until the daemons are installed."
 msgstr ""
 
 #: newprofilewizard.cpp:1414
@@ -6215,7 +6205,7 @@ msgstr "ईएसपी सेटिंग: %1"
 
 #: newprofilewizard.cpp:1621 newprofilewizard.cpp:1622
 #: preferencesdialog.cpp:4421
-msgid "Use custom ESP checked but none selected!"
+msgid "Use custom ESP checked but none selected."
 msgstr ""
 
 #. i18n: file: newprofilewizardfreeswan4.ui:36
@@ -6233,7 +6223,7 @@ msgstr "आईकेई सेटिंग: %1"
 
 #: newprofilewizard.cpp:1646 newprofilewizard.cpp:1647
 #: preferencesdialog.cpp:4415
-msgid "Use custom IKE checked but none selected!"
+msgid "Use custom IKE checked but none selected."
 msgstr ""
 
 #: newprofilewizard.cpp:1653
@@ -6312,7 +6302,7 @@ msgid "PSK settings"
 msgstr ""
 
 #: newprofilewizard.cpp:1906
-msgid "Auth selection: use PSK"
+msgid "Auth selection: use PSK."
 msgstr ""
 
 #: newprofilewizard.cpp:1919
@@ -6327,31 +6317,34 @@ msgid "Certificate settings"
 msgstr ""
 
 #: newprofilewizard.cpp:2008
-msgid "Auth selection: use certificate"
-msgstr ""
+#, fuzzy
+#| msgid "unable to load Private Key!"
+msgid "Auth selection: use certificate."
+msgstr "निजी कुंजी  लोड करे मं अक्छम!"
 
 #: newprofilewizard.cpp:2048
-msgid "Auth selection: use Hybrid"
-msgstr ""
+#, fuzzy
+msgid "Auth selection: use Hybrid."
+msgstr "प्रमानीकरन विधि"
 
 #: newprofilewizard.cpp:2060
-msgid "P12 cert selection: use smartcard"
+msgid "P12 cert selection: use smartcard."
 msgstr ""
 
 #: newprofilewizard.cpp:2068
-msgid "P12 cert selection: cert type is PKCS12"
+msgid "P12 cert selection: cert type is PKCS12."
 msgstr ""
 
 #: newprofilewizard.cpp:2083
-msgid "P12 cert selection: cert type is other"
+msgid "P12 cert selection: cert type is other."
 msgstr ""
 
 #: newprofilewizard.cpp:2095
-msgid "OpenVPN selection: import profile file"
+msgid "OpenVPN selection: import profile file."
 msgstr ""
 
 #: newprofilewizard.cpp:2110 newprofilewizard.cpp:2134
-msgid "OpenVPN auth: authenticate with username and password"
+msgid "OpenVPN auth: authenticate with username and password."
 msgstr ""
 
 #: newprofilewizard.cpp:2123
@@ -6359,49 +6352,49 @@ msgid "OpenVPN settings"
 msgstr ""
 
 #: newprofilewizard.cpp:2125
-msgid "OpenVPN selection: enter data manually"
+msgid "OpenVPN selection: enter data manually."
 msgstr ""
 
 #: newprofilewizard.cpp:2144
-msgid "OpenVPN auth: use only CA cert authenticate with username and password"
+msgid "OpenVPN auth: use only CA cert authenticate with username and password."
 msgstr ""
 
 #: newprofilewizard.cpp:2155
-msgid "OpenVPN auth: dont authenticate with username and password"
+msgid "OpenVPN auth: do not authenticate with username and password."
 msgstr ""
 
 #: newprofilewizard.cpp:2164
 #, kde-format
-msgid "OpenVPN auth: use special authentication algorithm: %1"
+msgid "OpenVPN auth: use special authentication algorithm: %1."
 msgstr ""
 
 #: newprofilewizard.cpp:2171
-msgid "OpenVPN auth: dont use special authentication algorithm"
+msgid "OpenVPN auth: do not use special authentication algorithm."
 msgstr ""
 
 #: newprofilewizard.cpp:2177
-#, kde-format
-msgid "OpenVPN auth: use authentication method: %1"
-msgstr ""
+#, fuzzy, kde-format
+msgid "OpenVPN auth: use authentication method: %1."
+msgstr "प्रमानीकरन विधि"
 
 #: newprofilewizard.cpp:2208
 #, kde-format
-msgid "Using custom DNS server: %1"
+msgid "Using custom DNS server: %1."
 msgstr ""
 
 #: newprofilewizard.cpp:2221
 #, kde-format
-msgid "Using custom DNS search domain: %1"
+msgid "Using custom DNS search domain: %1."
 msgstr ""
 
 #: newprofilewizard.cpp:2238
 #, fuzzy, kde-format
-msgid "Using auth method: %1"
+msgid "Using auth method: %1."
 msgstr "कमइया नाम: %1"
 
 #: newprofilewizard.cpp:2259
 #, kde-format
-msgid "Vtun: use userdefined port: %1"
+msgid "Vtun: use user-defined port: %1."
 msgstr ""
 
 #: newprofilewizard.cpp:2264 newprofilewizard.cpp:2267
@@ -6420,40 +6413,41 @@ msgstr ""
 
 #: newprofilewizard.cpp:2281
 #, kde-format
-msgid "SSH: use userdefined port: %1"
+msgid "SSH: use user-defined port: %1."
 msgstr ""
 
 #: newprofilewizard.cpp:2289
-msgid "SSH: use user password authentication"
-msgstr ""
+#, fuzzy
+msgid "SSH: use user password authentication."
+msgstr "प्रमानीकरन"
 
 #: newprofilewizard.cpp:2295
 #, fuzzy
-msgid "SSH: use key authentication"
+msgid "SSH: use key authentication."
 msgstr "प्रमानीकरन"
 
 #: newprofilewizard.cpp:2305
 #, kde-format
-msgid "SSH: use costum key: %1"
+msgid "SSH: use custom key: %1."
 msgstr ""
 
 #: newprofilewizard.cpp:2311
 #, kde-format
-msgid "SSH: use autotected key: %1"
+msgid "SSH: use auto-detected key: %1."
 msgstr ""
 
 #: newprofilewizard.cpp:2320
 #, kde-format
-msgid "SSH: use ssh config remote script: %1"
+msgid "SSH: use ssh config remote script: %1."
 msgstr ""
 
-#: newprofilewizard.cpp:2329 newprofilewizard.cpp:2534
+#: newprofilewizard.cpp:2329
 msgid "Special server certificate"
 msgstr ""
 
 #: newprofilewizard.cpp:2330 preferencesdialog.cpp:5245
 #, fuzzy, kde-format
-msgid "%1 cant be empty!"
+msgid "%1 cannot be empty."
 msgstr "नाम खाली नइ रह सके!"
 
 #: newprofilewizard.cpp:2350
@@ -6461,8 +6455,10 @@ msgid "local IP address"
 msgstr ""
 
 #: newprofilewizard.cpp:2360
-msgid "Local IP address for virtual IP"
-msgstr ""
+#, fuzzy
+#| msgid "Local IP address: %1"
+msgid "local IP address for virtual IP"
+msgstr "लोकल आईपी पता: %1"
 
 #: newprofilewizard.cpp:2378
 msgid "remote IP address"
@@ -6473,12 +6469,14 @@ msgid "local and remote IP address"
 msgstr ""
 
 #: newprofilewizard.cpp:2389
-msgid "Remote IP address for virtual IP"
+msgid "remote IP address for virtual IP"
 msgstr ""
 
-#: newprofilewizard.cpp:2400 preferencesdialog.cpp:4959
-msgid "No valid netmask entered!"
-msgstr ""
+#: newprofilewizard.cpp:2400
+#, fuzzy
+#| msgid "New profile wizard general"
+msgid "No valid netmask entered."
+msgstr "नवा प्रोफाइल विजार्ड सामान्य"
 
 #: newprofilewizard.cpp:2400 preferencesdialog.cpp:4959
 msgid "No valid netmask"
@@ -6495,13 +6493,14 @@ msgid "Using virtual IP address (local: %1, netmask: %2): "
 msgstr ""
 
 #: newprofilewizard.cpp:2432
-msgid "Not using virtual IP addresses"
+msgid "Not using virtual IP addresses."
 msgstr ""
 
 #: newprofilewizard.cpp:2438
-#, kde-format
-msgid "No valid IP address for %1 entered!"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Local IP address: %1"
+msgid "No valid IP address for %1 entered."
+msgstr "लोकल आईपी पता: %1"
 
 #: newprofilewizard.cpp:2438 preferencesdialog.cpp:4595
 #: preferencesdialog.cpp:4865 preferencesdialog.cpp:4876
@@ -6518,53 +6517,65 @@ msgstr ""
 msgid "Pre shared key file"
 msgstr ""
 
-#: newprofilewizard.cpp:2536 preferencesdialog.cpp:5448
-msgid "Special server certificate can't be empty!"
+#: newprofilewizard.cpp:2534
+msgid "special server certificate"
 msgstr ""
+
+#: newprofilewizard.cpp:2536 preferencesdialog.cpp:5448
+#, fuzzy
+#| msgid "File name cannot be empty!"
+msgid "Special server certificate cannot be empty."
+msgstr "नाम खाली नइ रह सके!"
 
 #: newprofilewizard.cpp:2544
-msgid "CA Certificate can't be empty!"
-msgstr ""
-
-#. i18n: file: newprofilewizardcert4.ui:56
-#. i18n: ectx: property (title), widget (Q3GroupBox, CertificateGroupBox)
-#. i18n: file: profilecertoptionsbase4.ui:19
-#. i18n: ectx: property (windowTitle), widget (QWidget, ProfileCertOptionsBase)
-#: newprofilewizard.cpp:2552 preferencesdialog.cpp:993 rc.cpp:1766 rc.cpp:2852
-msgid "Certificate"
-msgstr "प्रमानपत्र"
+#, fuzzy
+#| msgid "File name cannot be empty!"
+msgid "CA Certificate cannot be empty."
+msgstr "नाम खाली नइ रह सके!"
 
 #: newprofilewizard.cpp:2553
-msgid "Certificate can't be empty!"
-msgstr ""
+#, fuzzy
+#| msgid "File name cannot be empty!"
+msgid "Certificate cannot be empty."
+msgstr "नाम खाली नइ रह सके!"
 
 #: newprofilewizard.cpp:2559
-msgid "Path to private key"
-msgstr ""
+#, fuzzy
+#| msgid "unable to load Private Key!"
+msgid "path to private key"
+msgstr "निजी कुंजी  लोड करे मं अक्छम!"
 
 #: newprofilewizard.cpp:2560
-msgid "Path to private key can't be empty!"
-msgstr ""
+#, fuzzy
+#| msgid "File name cannot be empty!"
+msgid "Path to private key cannot be empty."
+msgstr "नाम खाली नइ रह सके!"
 
 #: newprofilewizard.cpp:2585
 msgid "Special remote ID"
 msgstr ""
 
 #: newprofilewizard.cpp:2587
-msgid "Special remote ID can't be empty!"
-msgstr ""
+#, fuzzy
+#| msgid "File name cannot be empty!"
+msgid "Special remote ID cannot be empty."
+msgstr "नाम खाली नइ रह सके!"
 
 #: newprofilewizard.cpp:2598 preferencesdialog.cpp:5464
-msgid "Slot at smartcard can't be empty!"
-msgstr ""
+#, fuzzy
+#| msgid "File name cannot be empty!"
+msgid "Slot at smartcard cannot be empty."
+msgstr "नाम खाली नइ रह सके!"
 
 #: newprofilewizard.cpp:2598 preferencesdialog.cpp:5464
 msgid "No smartcard slot"
 msgstr ""
 
 #: newprofilewizard.cpp:2606 preferencesdialog.cpp:5472
-msgid "ID for certificate at smartcard can't be empty!"
-msgstr ""
+#, fuzzy
+#| msgid "File name cannot be empty!"
+msgid "ID for certificate at smartcard cannot be empty."
+msgstr "नाम खाली नइ रह सके!"
 
 #: newprofilewizard.cpp:2606 preferencesdialog.cpp:5472
 msgid "No certificate ID"
@@ -6611,16 +6622,12 @@ msgid "recover"
 msgstr ""
 
 #: newprofilewizard.cpp:2642 preferencesdialog.cpp:5509
-msgid "Library path to lib for use with smartcard can't be empty!"
+msgid "Library path to lib for use with smartcard cannot be empty."
 msgstr ""
 
 #: newprofilewizard.cpp:2642 preferencesdialog.cpp:5509
 msgid "No providers lib"
 msgstr ""
-
-#: newprofilewizard.cpp:2658
-msgid "Username is empty!"
-msgstr "कमइयानाम खाली हे!"
 
 #: newprofilewizard.cpp:2664
 #, kde-format
@@ -6628,7 +6635,7 @@ msgid "User options: username: %1"
 msgstr ""
 
 #: newprofilewizard.cpp:2678
-msgid "Password is empty but you have checked to store it!"
+msgid "Password is empty but you have checked to store it."
 msgstr ""
 
 #: newprofilewizard.cpp:2696
@@ -6636,7 +6643,7 @@ msgid "NT domain name"
 msgstr ""
 
 #: newprofilewizard.cpp:2697
-msgid "NT domain name is empty but you have checked to specifiy one!"
+msgid "NT domain name is empty but you have checked to specifiy one."
 msgstr ""
 
 #: newprofilewizard.cpp:2704
@@ -6644,14 +6651,13 @@ msgstr ""
 msgid "User options: NT domain name: %1"
 msgstr ""
 
-#: newprofilewizard.cpp:2726 preferencesdialog.cpp:4899
-#: preferencesdialog.cpp:4900
-msgid "No IP address entered!"
-msgstr ""
+#: newprofilewizard.cpp:2726
+#, fuzzy
+msgid "No IP address entered."
+msgstr "आईपी पता:"
 
 #: newprofilewizard.cpp:2747 newprofilewizard.cpp:2748
-#: preferencesdialog.cpp:4790 preferencesdialog.cpp:4791
-msgid "Invalid values in IP address (remote net)!"
+msgid "Invalid values in IP address (remote net)."
 msgstr ""
 
 #: newprofilewizard.cpp:2747 preferencesdialog.cpp:4790
@@ -6665,7 +6671,7 @@ msgstr "रिमोट नेटवर्क उपयोग करव"
 
 #: newprofilewizard.cpp:2768
 #, fuzzy
-msgid "Remote network is empty!"
+msgid "Remote network is empty."
 msgstr "रिमोट नेटवर्क"
 
 #: newprofilewizard.cpp:2779
@@ -6701,16 +6707,16 @@ msgid "Network route options: additional network: %1/%2 gw %3 %4"
 msgstr ""
 
 #: newprofilewizard.cpp:2857
-msgid "NAT settings: use NAT"
+msgid "NAT settings: use NAT."
 msgstr ""
 
 #: newprofilewizard.cpp:2859
-msgid "NAT settings: use no NAT"
+msgid "NAT settings: use no NAT."
 msgstr ""
 
 #: newprofilewizard.cpp:2862
 #, kde-format
-msgid "NAT settings: use userdefined Port: %1"
+msgid "NAT settings: use user-defined Port: %1."
 msgstr ""
 
 #: newprofilewizard.cpp:2873
@@ -6719,32 +6725,34 @@ msgid "Connect options: connecting to profile \"%1\" after creating it."
 msgstr ""
 
 #: newprofilewizard.cpp:2883
-msgid "Connection status check: use connection status check"
-msgstr ""
+#, fuzzy
+#| msgid "Check connection status"
+msgid "Connection status check: use connection status check."
+msgstr "कनेक्सन स्थिति जांचव"
 
 #: newprofilewizard.cpp:2889
-msgid "Connection status check: dont use connection status check"
+msgid "Connection status check: do not use connection status check."
 msgstr ""
 
 #: newprofilewizard.cpp:2896
-msgid "Connection status check: do reconnect after connection lost"
+msgid "Connection status check: reconnect after connection is lost."
 msgstr ""
 
 #: newprofilewizard.cpp:2902
-msgid "Connection status check: dont reconnect after connection lost"
+msgid "Connection status check: do not reconnect after connection is lost."
 msgstr ""
 
 #: newprofilewizard.cpp:2909
-msgid "Connection status check: ping userdefined IP address"
+msgid "Connection status check: ping user-defined IP address."
 msgstr ""
 
 #: newprofilewizard.cpp:2915
-msgid "Connection status check: dont ping userdefined IP address"
+msgid "Connection status check: do not ping user-defined IP address."
 msgstr ""
 
 #: newprofilewizard.cpp:2923
 #, kde-format
-msgid "Connection status check: use connection interval: %1"
+msgid "Connection status check: use connection interval: %1."
 msgstr ""
 
 #: newprofilewizard.cpp:2924
@@ -6753,11 +6761,11 @@ msgid "Connection status check: success count: %1"
 msgstr ""
 
 #: newprofilewizard.cpp:2938
-msgid "The value of userdefined IP address is not a valid IP address!"
+msgid "The value of the user-defined IP address is not a valid IP address."
 msgstr ""
 
 #: newprofilewizard.cpp:2944
-msgid "Userdefinied IP for ping"
+msgid "user-defined IP for ping"
 msgstr ""
 
 #. i18n: file: newprofiledialogbase4.ui:69
@@ -7190,6 +7198,14 @@ msgstr ""
 msgid "Profile :: Authenticate"
 msgstr ""
 
+#. i18n: file: newprofilewizardcert4.ui:56
+#. i18n: ectx: property (title), widget (Q3GroupBox, CertificateGroupBox)
+#. i18n: file: profilecertoptionsbase4.ui:19
+#. i18n: ectx: property (windowTitle), widget (QWidget, ProfileCertOptionsBase)
+#: preferencesdialog.cpp:993 rc.cpp:1766 rc.cpp:2852
+msgid "Certificate"
+msgstr "प्रमानपत्र"
+
 #: preferencesdialog.cpp:994
 msgid "Profile :: Certificate"
 msgstr ""
@@ -7562,30 +7578,47 @@ msgstr ""
 msgid "No IP address (virtual IP) entered!"
 msgstr ""
 
+#: preferencesdialog.cpp:4790 preferencesdialog.cpp:4791
+msgid "Invalid values in IP address (remote net)!"
+msgstr ""
+
+#: preferencesdialog.cpp:4899 preferencesdialog.cpp:4900
+msgid "No IP address entered!"
+msgstr ""
+
 #: preferencesdialog.cpp:4947 preferencesdialog.cpp:5137
 #: preferencesdialog.cpp:5191
 msgid "No valid IP address"
 msgstr ""
 
-#: preferencesdialog.cpp:5024
-msgid "PSK file can't be empty!"
+#: preferencesdialog.cpp:4959
+msgid "No valid netmask entered!"
 msgstr ""
+
+#: preferencesdialog.cpp:5024
+#, fuzzy
+#| msgid "File name cannot be empty!"
+msgid "PSK file cannot be empty."
+msgstr "नाम खाली नइ रह सके!"
 
 #: preferencesdialog.cpp:5024
 msgid "Empty PSK file"
 msgstr ""
 
 #: preferencesdialog.cpp:5031
-msgid "PSK can't be empty!"
-msgstr ""
+#, fuzzy
+msgid "PSK cannot be empty."
+msgstr "नाम खाली नइ रह सके!"
 
 #: preferencesdialog.cpp:5031
 msgid "Empty PSK"
 msgstr ""
 
 #: preferencesdialog.cpp:5038
-msgid "TLS remote host can't be empty!"
-msgstr ""
+#, fuzzy
+#| msgid "File name cannot be empty!"
+msgid "TLS remote host cannot be empty."
+msgstr "नाम खाली नइ रह सके!"
 
 #: preferencesdialog.cpp:5038
 msgid "Empty TLS remote host"
@@ -7613,8 +7646,10 @@ msgid "No IP address (ping host) entered!"
 msgstr ""
 
 #: preferencesdialog.cpp:5384
-msgid "HTTP proxy server can't be empty!"
-msgstr ""
+#, fuzzy
+#| msgid "File name cannot be empty!"
+msgid "HTTP proxy server cannot be empty."
+msgstr "नाम खाली नइ रह सके!"
 
 #: preferencesdialog.cpp:5384
 #, fuzzy
@@ -7622,7 +7657,7 @@ msgid "Empty HTTP proxy server"
 msgstr "एचटीटीपी प्राक्सी"
 
 #: preferencesdialog.cpp:5396
-msgid "Password for HTTP proxy authentication can't be empty!"
+msgid "Password for HTTP proxy authentication cannot be empty."
 msgstr ""
 
 #: preferencesdialog.cpp:5396
@@ -7630,7 +7665,7 @@ msgid "Empty HTTP proxy password for authentication"
 msgstr ""
 
 #: preferencesdialog.cpp:5404
-msgid "Username for HTTP proxy authentication can't be empty!"
+msgid "Username for HTTP proxy authentication cannot be empty."
 msgstr ""
 
 #: preferencesdialog.cpp:5404
@@ -13546,11 +13581,11 @@ msgid "pppd version is >= 2.4.2, good"
 msgstr ""
 
 #: utils.cpp:649
-msgid "Test require-mppe support of pppd"
+msgid "test require-mppe support of pppd"
 msgstr ""
 
 #: utils.cpp:695
-msgid "Test mppe required support of pppd"
+msgid "test mppe required support of pppd"
 msgstr ""
 
 #: utils.cpp:739
@@ -13564,7 +13599,7 @@ msgid " %1 has no MPPE support."
 msgstr ""
 
 #: utils.cpp:765
-msgid "Test support of replacedefaultroute pppd"
+msgid "test support of replacedefaultroute pppd"
 msgstr ""
 
 #: utils.cpp:779 utils.cpp:1369
@@ -13763,6 +13798,9 @@ msgstr "पथ"
 #, fuzzy
 msgid "Usability:"
 msgstr "उपयोगिता"
+
+#~ msgid "Username is empty!"
+#~ msgstr "कमइयानाम खाली हे!"
 
 #~ msgid "Password is empty!"
 #~ msgstr "पासवर्ड खाली हे!"
