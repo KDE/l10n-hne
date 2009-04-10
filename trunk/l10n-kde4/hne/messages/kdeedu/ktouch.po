@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktouch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-29 11:41+0200\n"
+"POT-Creation-Date: 2009-04-10 11:14+0200\n"
 "PO-Revision-Date: 2009-02-24 19:50+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -795,7 +795,9 @@ msgstr "अवाज"
 
 #. i18n: file: src/ui/ktouchprefsoundpage.ui:37
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_BeepOnError)
-#: rc.cpp:407
+#. i18n: file: src/ktouch.kcfg:47
+#. i18n: ectx: label, entry (BeepOnError), group (General)
+#: rc.cpp:407 rc.cpp:817
 msgid "Emit a beep on each typing error"
 msgstr "हर एक टाइपिंग गलतीयों मं एक बीप बजाव"
 
@@ -1448,307 +1450,547 @@ msgstr "कुंजीपट फोंट ओवरराइड करव"
 msgid "Font for keys on keyboard:"
 msgstr "कुंजीपटल मं कुंजी मन बर फोंट:"
 
+#. i18n: file: src/ktouch.kcfg:9
+#. i18n: ectx: label, entry (CurrentColorScheme), group (Colors)
+#: rc.cpp:790
+msgid "The number of the current color scheme."
+msgstr "अभी हाल के रंग योजना के संख्या."
+
+#. i18n: file: src/ktouch.kcfg:13
+#. i18n: ectx: label, entry (CommonTypingLineColors), group (Colors)
+#: rc.cpp:793
+msgid "Use the same typing line colors independent of color scheme."
+msgstr "रंग योजना से स्वतंत्र, एके टाइपिंग लाइन रंग उपयोग करव."
+
+#. i18n: file: src/ktouch.kcfg:17
+#. i18n: ectx: label, entry (TeacherBackgroundColor), group (Colors)
+#: rc.cpp:796
+#, fuzzy
+#| msgid "The background for the teacher's line"
+msgid "The background color for the teacher's line."
+msgstr "गुरुजी के लकीर बर पिछोत अंगना रंग "
+
+#. i18n: file: src/ktouch.kcfg:21
+#. i18n: ectx: label, entry (TeacherTextColor), group (Colors)
+#: rc.cpp:799
+#, fuzzy
+#| msgid "The color for the teacher's line"
+msgid "The text color for the teacher's line"
+msgstr "गुरुजी के लकीर बर पाठ रंग"
+
+#. i18n: file: src/ktouch.kcfg:25
+#. i18n: ectx: label, entry (StudentBackgroundColor), group (Colors)
+#: rc.cpp:802
+#, fuzzy
+#| msgid "The background color for wrong text (students line)."
+msgid "The background color for the student's line."
+msgstr "गलत पाठ बर पिछोत अंगना रंग (विद्यार्थी पंक्ति)."
+
+#. i18n: file: src/ktouch.kcfg:29
+#. i18n: ectx: label, entry (StudentTextColor), group (Colors)
+#: rc.cpp:805
+#, fuzzy
+#| msgid "Change the text color for the student line"
+msgid "The text color for the student's line"
+msgstr "विद्यार्थी लकीर बर पाठ रंग बदलव"
+
+#. i18n: file: src/ktouch.kcfg:33
+#. i18n: ectx: label, entry (ColorOnError), group (Colors)
+#: rc.cpp:808
+msgid "Whether to use a different background for wrong text or not."
+msgstr "गलत पाठ बर भिन्न पिछोत अंगना उपयोग करव या नइ"
+
+#. i18n: file: src/ktouch.kcfg:37
+#. i18n: ectx: label, entry (ErrorBackgroundColor), group (Colors)
+#: rc.cpp:811
+msgid "The background color for wrong text (students line)."
+msgstr "गलत पाठ बर पिछोत अंगना रंग (विद्यार्थी पंक्ति)."
+
+#. i18n: file: src/ktouch.kcfg:41
+#. i18n: ectx: label, entry (ErrorTextColor), group (Colors)
+#: rc.cpp:814
+msgid "The text color for wrong text (students line)."
+msgstr "गलत पाठ बर पाठ रंग (विद्यार्थी पंक्ति)"
+
+#. i18n: file: src/ktouch.kcfg:51
+#. i18n: ectx: label, entry (SoundOnKeypress), group (General)
+#: rc.cpp:820
+msgid "Play sounds for typing."
+msgstr "टाइपिंग बर अवाज बजाव."
+
+#. i18n: file: src/ktouch.kcfg:55
+#. i18n: ectx: label, entry (SoundOnLevel), group (General)
+#: rc.cpp:823
+#, fuzzy
+#| msgid "&Sound on automatic level change"
+msgid "Play a sound on automatic level change"
+msgstr "अपने अपन स्तर बदलही त अवाज बजाव (&S)"
+
+#. i18n: file: src/ktouch.kcfg:59
+#. i18n: ectx: label, entry (SlidingSpeed), group (General)
+#: rc.cpp:826
+#, fuzzy
+#| msgid "Sliding speed:"
+msgid "The sliding speed"
+msgstr "स्लाइडिंग गति:"
+
+#. i18n: file: src/ktouch.kcfg:63
+#. i18n: ectx: label, entry (MaxSlidingWidgetHeight), group (General)
+#: rc.cpp:829
+msgid "The maximum height of the sliding widget"
+msgstr "स्लाइडिंग विजेट के सबसे अधिक ऊंचाई"
+
+#. i18n: file: src/ktouch.kcfg:67
+#. i18n: ectx: label, entry (OverrideLectureFont), group (General)
+#: rc.cpp:832
+#, fuzzy
+#| msgid "Whether to override the default/predefined keyboard fonts."
+msgid "Override the default/predefined lecture fonts."
+msgstr "का डिफाल्ट/पूर्व-परिभासित कुंजीपट फोंट ल ओवरराइड करव."
+
+#. i18n: file: src/ktouch.kcfg:71
+#. i18n: ectx: label, entry (Font), group (General)
+#: rc.cpp:835
+msgid "The font for the student and teacher lines"
+msgstr "विद्यार्थी अउ सिक्छक पंक्तियों बर फोंट"
+
+#. i18n: file: src/ktouch.kcfg:75
+#. i18n: ectx: label, entry (CurrentLectureFile), group (General)
+#: rc.cpp:838
+msgid "The currently loaded lecture file"
+msgstr "अभी हाल के मं लोड करे गे व्याख्यान फाइल"
+
+#. i18n: file: src/ktouch.kcfg:79
+#. i18n: ectx: label, entry (Right2LeftTyping), group (General)
+#: rc.cpp:841
+msgid "Whether we use right-to-left typing."
+msgstr "का हम जेवनी से डेरी टाइपिंग उपयोग करही."
+
+#. i18n: file: src/ktouch.kcfg:85
+#. i18n: ectx: label, entry (ShowAnimation), group (Keyboard)
+#: rc.cpp:844
+msgid "Whether to use colors on the keys or not."
+msgstr "का कुंजी मन मं रंग के उपयोग करव या नइ."
+
+#. i18n: file: src/ktouch.kcfg:89
+#. i18n: ectx: label, entry (ShowLearnedKeysOnly), group (Keyboard)
+#: rc.cpp:847
+msgid "Whether to show only the learned/known keys or always all keys."
+msgstr "का सिरिफ सीखे गए/ग्यात कुंजी मन ल दिखाना हे या सब्बो कुंजी मन को."
+
+#. i18n: file: src/ktouch.kcfg:93
+#. i18n: ectx: label, entry (ShowKeyboard), group (Keyboard)
+#: rc.cpp:850
+msgid "Whether to show the keyboard display."
+msgstr "का कुंजीपट दिखाना हे"
+
+#. i18n: file: src/ktouch.kcfg:97
+#. i18n: ectx: label, entry (OverrideKeyboardFont), group (Keyboard)
+#: rc.cpp:853
+msgid "Whether to override the default/predefined keyboard fonts."
+msgstr "का डिफाल्ट/पूर्व-परिभासित कुंजीपट फोंट ल ओवरराइड करव."
+
+#. i18n: file: src/ktouch.kcfg:101
+#. i18n: ectx: label, entry (KeyboardFont), group (Keyboard)
+#: rc.cpp:856
+#, fuzzy
+#| msgid "Font for keys on keyboard:"
+msgid "The font for the keys on the keyboard"
+msgstr "कुंजीपटल मं कुंजी मन बर फोंट:"
+
+#. i18n: file: src/ktouch.kcfg:105
+#. i18n: ectx: label, entry (CurrentKeyboardFile), group (Keyboard)
+#: rc.cpp:859
+msgid "The currently loaded keyboard file"
+msgstr "अभी हाल के मं लोड करिस कुंजीपटल फाइल"
+
+#. i18n: file: src/ktouch.kcfg:111
+#. i18n: ectx: label, entry (PressEnterOnLineEnd), group (Training)
+#: rc.cpp:862
+msgid "Requires user to press enter after the line is complete."
+msgstr "जब लाइन पूरा हो जाथे  तहां कमइया ल वटर बटन दबाना होथे ."
+
+#. i18n: file: src/ktouch.kcfg:115
+#. i18n: ectx: label, entry (AutoLevelChange), group (Training)
+#: rc.cpp:865
+#, fuzzy
+#| msgid "A&utomatic level adjustment"
+msgid "Allow automatic level adjustments"
+msgstr "अपने अपन स्तर एडजस्टमेंट"
+
+#. i18n: file: src/ktouch.kcfg:119
+#. i18n: ectx: label, entry (DisableManualLevelChange), group (Training)
+#: rc.cpp:868
+msgid "Disable manual level adjustments when auto-level change is enabled"
+msgstr "जब अपने अपन स्तर बदलाव सक्छम होथे  तहां मेनुअल स्तर एडजस्टमेंट अक्छम कर रखव"
+
+#. i18n: file: src/ktouch.kcfg:123
+#. i18n: ectx: label, entry (RememberLevel), group (Training)
+#: rc.cpp:871
+#, fuzzy
+#| msgid "&Remember level for next program start"
+msgid "Remember the current level for the next KTouch start"
+msgstr "अगले दफा चालू करे बर अभी हाल के स्तर याद रखव (&R)"
+
+#. i18n: file: src/ktouch.kcfg:127
+#. i18n: ectx: label, entry (CurrentTrainingLevel), group (Training)
+#: rc.cpp:874
+msgid "The current training level"
+msgstr "अभी हाल के प्रसिक्छन स्तर"
+
+#. i18n: file: src/ktouch.kcfg:131
+#. i18n: ectx: label, entry (UpSpeedLimit), group (Training)
+#: rc.cpp:877
+#, fuzzy
+#| msgid "Percentage of correctness to increase a level"
+msgid "Number of chars per minute to increase a level"
+msgstr "स्तर बढ़ाय बर सही के प्रतिसत"
+
+#. i18n: file: src/ktouch.kcfg:135
+#. i18n: ectx: label, entry (UpCorrectLimit), group (Training)
+#: rc.cpp:880
+msgid "Percentage of correctness to increase a level"
+msgstr "स्तर बढ़ाय बर सही के प्रतिसत"
+
+#. i18n: file: src/ktouch.kcfg:139
+#. i18n: ectx: label, entry (DownSpeedLimit), group (Training)
+#: rc.cpp:883
+#, fuzzy
+#| msgid "Percentage of correctness to decrease a level"
+msgid "Number of chars per minute to decrease a level"
+msgstr "स्तर कम करे बर सही के प्रतिसत"
+
+#. i18n: file: src/ktouch.kcfg:143
+#. i18n: ectx: label, entry (DownCorrectLimit), group (Training)
+#: rc.cpp:886
+msgid "Percentage of correctness to decrease a level"
+msgstr "स्तर कम करे बर सही के प्रतिसत"
+
+#. i18n: file: src/ktouch.kcfg:147
+#. i18n: ectx: label, entry (NumberOfLinesWorkload), group (Training)
+#: rc.cpp:889
+msgid "How many lines that must be typed before level can change"
+msgstr "कितनी लाइन मन ल टाइप करना होही एखर से पहिली कि स्तर बदले"
+
+#. i18n: file: src/ktouch.kcfg:151
+#. i18n: ectx: label, entry (CompleteWholeTrainingLevel), group (Training)
+#: rc.cpp:892
+msgid "Run minimum one complete level before going up"
+msgstr "ऊपर जाय से पहिली कम से कम एक पूरा स्तर चलाव"
+
+#. i18n: file: src/ktouch.kcfg:157
+#. i18n: ectx: label, entry (MultipleUsers), group (Users)
+#: rc.cpp:895
+msgid "Allow multiple KTouch users for single user account"
+msgstr "एकल कमइया खाता बर बहुत से केटच कमइया स्वीकारव"
+
+#. i18n: file: src/ktouch.kcfg:161
+#. i18n: ectx: label, entry (CurrentUserName), group (Users)
+#: rc.cpp:898
+msgid "The user name of the current user."
+msgstr "अभी हाल के कमइया के कमइया नाम."
+
 #. i18n: file: training/russian.ktouch.xml:3
-#: rc.cpp:789
+#: rc.cpp:900
 msgctxt "Lesson Name"
 msgid "Russian (auto-generated)"
 msgstr ""
 
 #. i18n: file: training/hungarian.ktouch.xml:3
-#: rc.cpp:791
+#: rc.cpp:902
 msgctxt "Lesson Name"
 msgid "Hungarian (auto-generated)"
 msgstr ""
 
 #. i18n: file: training/dvorak-fr-1.ktouch.xml:3
-#: rc.cpp:793
+#: rc.cpp:904
 msgctxt "Lesson Name"
 msgid "Dvorak French (Part 1)"
 msgstr ""
 
 #. i18n: file: training/spanish.ktouch.xml:3
-#: rc.cpp:795
+#: rc.cpp:906
 msgctxt "Lesson Name"
 msgid "Spanish (auto-generated)"
 msgstr ""
 
 #. i18n: file: training/el.ktouch.xml:3
-#: rc.cpp:797
+#: rc.cpp:908
 msgctxt "Lesson Name"
 msgid "Hellenic"
 msgstr ""
 
 #. i18n: file: training/dvorak-fr-2.ktouch.xml:3
-#: rc.cpp:799
+#: rc.cpp:910
 msgctxt "Lesson Name"
 msgid "Dvorak French (Part 2)"
 msgstr ""
 
 #. i18n: file: training/russian_long.ktouch.xml:3
-#: rc.cpp:801
+#: rc.cpp:912
 msgctxt "Lesson Name"
 msgid "Russian (long auto-generated)"
 msgstr ""
 
 #. i18n: file: training/french.ktouch.xml:3
-#: rc.cpp:803
+#: rc.cpp:914
 msgctxt "Lesson Name"
 msgid "French (auto-generated) 1"
 msgstr ""
 
 #. i18n: file: training/espanol2.ktouch.xml:3
-#: rc.cpp:805
+#: rc.cpp:916
 msgctxt "Lesson Name"
 msgid "Spanish (auto-generated) 2"
 msgstr ""
 
 #. i18n: file: training/nederlands.ktouch.xml:3
-#: rc.cpp:807
+#: rc.cpp:918
 msgctxt "Lesson Name"
 msgid "Nederlands (auto-generated)"
 msgstr ""
 
 #. i18n: file: training/nederlands_junior.ktouch.xml:3
-#: rc.cpp:809
+#: rc.cpp:920
 msgctxt "Lesson Name"
 msgid "Nederlands Junior (Nederlands for Kids)"
 msgstr ""
 
 #. i18n: file: training/french2.ktouch.xml:3
-#: rc.cpp:811
+#: rc.cpp:922
 msgctxt "Lesson Name"
 msgid "French (auto-generated) 2"
 msgstr ""
 
 #. i18n: file: training/dvorak_ABCD.ktouch.xml:3
-#: rc.cpp:813
+#: rc.cpp:924
 msgctxt "Lesson Name"
 msgid "Dvorak - ABCD"
 msgstr ""
 
 #. i18n: file: training/bulgarian.ktouch.xml:3
-#: rc.cpp:815
+#: rc.cpp:926
 msgctxt "Lesson Name"
 msgid "Bulgarian (auto-generated)"
 msgstr ""
 
 #. i18n: file: training/finnish_for_kids.ktouch.xml:3
-#: rc.cpp:817
+#: rc.cpp:928
 msgctxt "Lesson Name"
 msgid "Finnish For Kids"
 msgstr ""
 
 #. i18n: file: training/slovak.ktouch.xml:3
 #. i18n: file: training/czech.ktouch.xml:3
-#: rc.cpp:819 rc.cpp:831
+#: rc.cpp:930 rc.cpp:942
 msgctxt "Lesson Name"
 msgid "Czech (auto-generated)"
 msgstr ""
 
 #. i18n: file: training/english.ktouch.xml:3
-#: rc.cpp:821
+#: rc.cpp:932
 msgctxt "Lesson Name"
 msgid "English (auto-generated)"
 msgstr ""
 
 #. i18n: file: training/hungarian_expert.ktouch.xml:3
-#: rc.cpp:823
+#: rc.cpp:934
 msgctxt "Lesson Name"
 msgid "Hungarian (expert)"
 msgstr ""
 
 #. i18n: file: training/colemak.ktouch.xml:3
-#: rc.cpp:825
+#: rc.cpp:936
 msgctxt "Lesson Name"
 msgid "Colemak (auto-generated)"
 msgstr ""
 
 #. i18n: file: training/catalan.ktouch.xml:3
-#: rc.cpp:827
+#: rc.cpp:938
 msgctxt "Lesson Name"
 msgid "Catalan (auto-generated)"
 msgstr ""
 
 #. i18n: file: training/german.ktouch.xml:3
-#: rc.cpp:829
+#: rc.cpp:940
 msgctxt "Lesson Name"
 msgid "German (in 9 levels)"
 msgstr ""
 
 #. i18n: file: training/dvorak_es.ktouch.xml:3
-#: rc.cpp:833
+#: rc.cpp:944
 msgctxt "Lesson Name"
 msgid "Dvorak Spanish"
 msgstr ""
 
 #. i18n: file: training/espanol.ktouch.xml:3
-#: rc.cpp:835
+#: rc.cpp:946
 msgctxt "Lesson Name"
 msgid "Spanish (auto-generated) 1"
 msgstr ""
 
 #. i18n: file: training/italian.ktouch.xml:3
-#: rc.cpp:837
+#: rc.cpp:948
 msgctxt "Lesson Name"
 msgid "Italian (auto-generated)"
 msgstr ""
 
 #. i18n: file: training/turkish.ktouch.xml:3
-#: rc.cpp:839
+#: rc.cpp:950
 msgctxt "Lesson Name"
 msgid "Turkish (auto-generated)"
 msgstr ""
 
 #. i18n: file: training/slovenian.ktouch.xml:3
-#: rc.cpp:841
+#: rc.cpp:952
 msgctxt "Lesson Name"
 msgid "Slovenian"
 msgstr ""
 
 #. i18n: file: training/german.number.ktouch.xml:3
-#: rc.cpp:843
+#: rc.cpp:954
 msgctxt "Lesson Name"
 msgid "German (Number Pad)"
 msgstr ""
 
 #. i18n: file: training/latin.ktouch.xml:3
-#: rc.cpp:845
+#: rc.cpp:956
 msgctxt "Lesson Name"
 msgid "Latin"
 msgstr ""
 
 #. i18n: file: training/german2.ktouch.xml:3
-#: rc.cpp:847
+#: rc.cpp:958
 msgctxt "Lesson Name"
 msgid "German (from Tipptrainer)"
 msgstr ""
 
 #. i18n: file: training/dvorak.ktouch.xml:3
-#: rc.cpp:849
+#: rc.cpp:960
 msgctxt "Lesson Name"
 msgid "Dvorak (auto-generated)"
 msgstr ""
 
 #. i18n: file: training/norwegian.ktouch.xml:3
-#: rc.cpp:851
+#: rc.cpp:962
 msgctxt "Lesson Name"
 msgid "Norwegian"
 msgstr ""
 
 #. i18n: file: training/ukrainian.ktouch.xml:3
-#: rc.cpp:853
+#: rc.cpp:964
 #, fuzzy
 msgctxt "Lesson Name"
 msgid "Ukrainian"
 msgstr "प्रसिक्छन (&r)"
 
 #. i18n: file: training/bulgarian_long.ktouch.xml:3
-#: rc.cpp:855
+#: rc.cpp:966
 msgctxt "Lesson Name"
 msgid "Bulgarian (auto-generated-long)"
 msgstr ""
 
 #. i18n: file: training/german3.ktouch.xml:3
-#: rc.cpp:857
+#: rc.cpp:968
 msgctxt "Lesson Name"
 msgid "German (auto-generated)"
 msgstr ""
 
 #. i18n: file: training/german.neo.ktouch.xml:3
-#: rc.cpp:859
+#: rc.cpp:970
 msgctxt "Lesson Name"
 msgid "German (NEO-Schnellschreiblayout)"
 msgstr ""
 
 #. i18n: file: training/polish.ktouch.xml:3
-#: rc.cpp:861
+#: rc.cpp:972
 msgctxt "Lesson Name"
 msgid "Polish (from TTCoach)"
 msgstr ""
 
 #. i18n: file: training/finnish.ktouch.xml:3
-#: rc.cpp:863
+#: rc.cpp:974
 msgctxt "Lesson Name"
 msgid "Finnish (auto-generated)"
 msgstr ""
 
 #. i18n: file: training/danish2.ktouch.xml:3
-#: rc.cpp:865
+#: rc.cpp:976
 msgctxt "Lesson Name"
 msgid "Danish (auto-generated)"
 msgstr ""
 
 #. i18n: file: training/danish.ktouch.xml:3
-#: rc.cpp:867
+#: rc.cpp:978
 msgctxt "Lesson Name"
 msgid "Danish (complete course)"
 msgstr ""
 
 #. i18n: file: keyboards/sv.keyboard.xml:3
-#: rc.cpp:869
+#: rc.cpp:980
 #, fuzzy
 msgctxt "Keyboard Layout Name"
 msgid "Swedish Keyboard"
 msgstr "कुंजीपट खाका सहेजव"
 
 #. i18n: file: keyboards/dvorak.keyboard.xml:3
-#: rc.cpp:871
+#: rc.cpp:982
 #, fuzzy
 msgctxt "Keyboard Layout Name"
 msgid "English Dvorak"
 msgstr "अंगरेजी कोलेमाक"
 
 #. i18n: file: keyboards/it.keyboard.xml:3
-#: rc.cpp:873
+#: rc.cpp:984
 msgctxt "Keyboard Layout Name"
 msgid "Italian"
 msgstr ""
 
 #. i18n: file: keyboards/fr.keyboard.xml:3
-#: rc.cpp:875
+#: rc.cpp:986
 msgctxt "Keyboard Layout Name"
 msgid "French"
 msgstr ""
 
 #. i18n: file: keyboards/colemak.keyboard.xml:3
-#: rc.cpp:877
+#: rc.cpp:988
 msgctxt "Keyboard Layout Name"
 msgid "English Colemak"
 msgstr "अंगरेजी कोलेमाक"
 
 #. i18n: file: keyboards/en.keyboard.xml:3
-#: rc.cpp:879
+#: rc.cpp:990
 #, fuzzy
 msgctxt "Keyboard Layout Name"
 msgid "English"
 msgstr "अंगरेजी कोलेमाक"
 
 #. i18n: file: keyboards/de.keyboard.xml:3
-#: rc.cpp:881
+#: rc.cpp:992
 msgctxt "Keyboard Layout Name"
 msgid "German"
 msgstr ""
 
 #. i18n: file: keyboards/no.keyboard.xml:3
-#: rc.cpp:883
+#: rc.cpp:994
 msgctxt "Keyboard Layout Name"
 msgid "Norwegian"
 msgstr ""
 
 #. i18n: file: keyboards/dvorak_fr.keyboard.xml:3
-#: rc.cpp:885
+#: rc.cpp:996
 msgctxt "Keyboard Layout Name"
 msgid "French Dvorak"
 msgstr ""
 
 #. i18n: file: keyboards/sl.keyboard.xml:3
-#: rc.cpp:887
+#: rc.cpp:998
 msgctxt "Keyboard Layout Name"
 msgid "Slovenian"
 msgstr ""
 
 #. i18n: file: keyboards/dk.keyboard.xml:3
-#: rc.cpp:889
+#: rc.cpp:1000
 msgctxt "Keyboard Layout Name"
 msgid "Danish"
 msgstr ""
@@ -2356,75 +2598,3 @@ msgstr "खोले बर प्रसिक्छन फाइल"
 
 #~ msgid "default user"
 #~ msgstr "डिफाल्ट कमइया"
-
-#~ msgid "The number of the current color scheme."
-#~ msgstr "अभी हाल के रंग योजना के संख्या."
-
-#~ msgid "Use the same typing line colors independent of color scheme."
-#~ msgstr "रंग योजना से स्वतंत्र, एके टाइपिंग लाइन रंग उपयोग करव."
-
-#~ msgid "Whether to use a different background for wrong text or not."
-#~ msgstr "गलत पाठ बर भिन्न पिछोत अंगना उपयोग करव या नइ"
-
-#~ msgid "The background color for wrong text (students line)."
-#~ msgstr "गलत पाठ बर पिछोत अंगना रंग (विद्यार्थी पंक्ति)."
-
-#~ msgid "The text color for wrong text (students line)."
-#~ msgstr "गलत पाठ बर पाठ रंग (विद्यार्थी पंक्ति)"
-
-#~ msgid "Play sounds for typing."
-#~ msgstr "टाइपिंग बर अवाज बजाव."
-
-#~ msgid "The maximum height of the sliding widget"
-#~ msgstr "स्लाइडिंग विजेट के सबसे अधिक ऊंचाई"
-
-#~ msgid "The font for the student and teacher lines"
-#~ msgstr "विद्यार्थी अउ सिक्छक पंक्तियों बर फोंट"
-
-#~ msgid "The currently loaded lecture file"
-#~ msgstr "अभी हाल के मं लोड करे गे व्याख्यान फाइल"
-
-#~ msgid "Whether we use right-to-left typing."
-#~ msgstr "का हम जेवनी से डेरी टाइपिंग उपयोग करही."
-
-#~ msgid "Whether to use colors on the keys or not."
-#~ msgstr "का कुंजी मन मं रंग के उपयोग करव या नइ."
-
-#~ msgid "Whether to show only the learned/known keys or always all keys."
-#~ msgstr "का सिरिफ सीखे गए/ग्यात कुंजी मन ल दिखाना हे या सब्बो कुंजी मन को."
-
-#~ msgid "Whether to show the keyboard display."
-#~ msgstr "का कुंजीपट दिखाना हे"
-
-#~ msgid "Whether to override the default/predefined keyboard fonts."
-#~ msgstr "का डिफाल्ट/पूर्व-परिभासित कुंजीपट फोंट ल ओवरराइड करव."
-
-#~ msgid "The currently loaded keyboard file"
-#~ msgstr "अभी हाल के मं लोड करिस कुंजीपटल फाइल"
-
-#~ msgid "Requires user to press enter after the line is complete."
-#~ msgstr "जब लाइन पूरा हो जाथे  तहां कमइया ल वटर बटन दबाना होथे ."
-
-#~ msgid "Disable manual level adjustments when auto-level change is enabled"
-#~ msgstr "जब अपने अपन स्तर बदलाव सक्छम होथे  तहां मेनुअल स्तर एडजस्टमेंट अक्छम कर रखव"
-
-#~ msgid "The current training level"
-#~ msgstr "अभी हाल के प्रसिक्छन स्तर"
-
-#~ msgid "Percentage of correctness to increase a level"
-#~ msgstr "स्तर बढ़ाय बर सही के प्रतिसत"
-
-#~ msgid "Percentage of correctness to decrease a level"
-#~ msgstr "स्तर कम करे बर सही के प्रतिसत"
-
-#~ msgid "How many lines that must be typed before level can change"
-#~ msgstr "कितनी लाइन मन ल टाइप करना होही एखर से पहिली कि स्तर बदले"
-
-#~ msgid "Run minimum one complete level before going up"
-#~ msgstr "ऊपर जाय से पहिली कम से कम एक पूरा स्तर चलाव"
-
-#~ msgid "Allow multiple KTouch users for single user account"
-#~ msgstr "एकल कमइया खाता बर बहुत से केटच कमइया स्वीकारव"
-
-#~ msgid "The user name of the current user."
-#~ msgstr "अभी हाल के कमइया के कमइया नाम."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-08 12:03+0200\n"
+"POT-Creation-Date: 2009-04-10 11:16+0200\n"
 "PO-Revision-Date: 2009-03-03 09:35+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -711,7 +711,7 @@ msgstr "यूएस पत्र"
 msgid "US Legal"
 msgstr "यूएस लीगल"
 
-#: main/KoPageFormat.cpp:64
+#: main/KoPageFormat.cpp:64 pigment/compositeops/KoCompositeOpScreen.h:35
 msgid "Screen"
 msgstr "स्क्रीन"
 
@@ -1475,7 +1475,7 @@ msgstr "आनलाइन स्क्रिप्ट पैकैज इनस
 #. i18n: file: guiutils/KoEditColorSet.ui:45
 #. i18n: ectx: property (toolTip), widget (QToolButton, add)
 #: kokross/KoScriptManagerAdd.cpp:304 kokross/KoScriptManagerAdd.cpp:307
-#: rc.cpp:433
+#: rc.cpp:433 pigment/compositeops/KoCompositeOpAdd.h:35
 msgid "Add"
 msgstr "जोड़व"
 
@@ -3163,6 +3163,55 @@ msgstr "पेज स्प्रेड"
 msgid "SVG Gradient"
 msgstr ""
 
+#: pigment/compositeops/KoCompositeOpDodge.h:36
+#, fuzzy
+#| msgid "Nodes"
+msgid "Dodge"
+msgstr "नोड्स"
+
+#: pigment/compositeops/KoCompositeOpMultiply.h:34
+msgid "Multiply"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOpOverlay.h:35
+msgid "Overlay"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOpDivide.h:35
+msgid "Divide"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOpErase.h:39
+#: pigment/colorspaces/KoAlphaColorSpace.cpp:217
+msgid "Erase"
+msgstr "मेटाव"
+
+#: pigment/compositeops/KoCompositeOpSubstract.h:35
+#: pigment/colorspaces/KoAlphaColorSpace.cpp:282
+msgid "Subtract"
+msgstr "घटाव"
+
+#: pigment/compositeops/KoCompositeOpBurn.h:35
+msgid "Burn"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOpOver.h:35
+#: pigment/colorspaces/KoAlphaColorSpace.cpp:43
+msgid "Normal"
+msgstr "सामान्य"
+
+#: pigment/compositeops/KoCompositeOpAlphaDarken.h:40
+#, fuzzy
+#| msgid "Alpha mask"
+msgid "Alphadarken"
+msgstr "अल्फा मास्क"
+
+#: pigment/KoColorSpaceAbstract.h:45
+#, fuzzy
+#| msgid "Company:"
+msgid "Copy"
+msgstr "कम्पनी:"
+
 #: pigment/tests/CCSGraph.cpp:39
 msgid "CCSGraph"
 msgstr "सीसीएसग्राफ"
@@ -3203,21 +3252,15 @@ msgstr "आउटपुट निरधारित करव (ये पीए�
 msgid "name of the output file"
 msgstr "आउटपुट फाइल के नाम"
 
-#: pigment/colorspaces/KoAlphaColorSpace.cpp:43
-msgid "Normal"
-msgstr "सामान्य"
+#: pigment/colorspaces/KoRgbU8ColorSpace.h:62
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:71
+#, fuzzy
+msgid "RGB (8-bit integer/channel)"
+msgstr "आरजीबी 8-बिट इंटीजर/चैनल)"
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:142
 msgid "Clear"
 msgstr "साफ करव"
-
-#: pigment/colorspaces/KoAlphaColorSpace.cpp:217
-msgid "Erase"
-msgstr "मेटाव"
-
-#: pigment/colorspaces/KoAlphaColorSpace.cpp:282
-msgid "Subtract"
-msgstr "घटाव"
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:350
 msgid "Alpha mask"
@@ -3232,14 +3275,25 @@ msgid "Alpha"
 msgstr "अल्फा"
 
 #: pigment/colorspaces/KoRgbU16ColorSpace.cpp:29
+#: pigment/colorspaces/KoRgbU16ColorSpace.h:53
 #, fuzzy
 msgid "RGB (16-bit integer/channel)"
 msgstr "आरजीबी 16-बिट इंटीजर/चैनल)"
 
-#: pigment/colorspaces/KoRgbU8ColorSpace.cc:71
-#, fuzzy
-msgid "RGB (8-bit integer/channel)"
-msgstr "आरजीबी 8-बिट इंटीजर/चैनल)"
+#: pigment/colorspaces/KoAlphaColorSpace.h:125
+#: pigment/colorspaces/KoAlphaColorSpace.h:130
+#: pigment/colorspaces/KoAlphaColorSpace.h:135
+#: pigment/colorspaces/KoAlphaColorSpace.h:140
+#: pigment/colorspaces/KoAlphaColorSpace.h:145
+#: pigment/colorspaces/KoAlphaColorSpace.h:149
+#: pigment/colorspaces/KoAlphaColorSpace.h:153
+msgid "Undefined operation in the alpha colorspace"
+msgstr ""
+
+#: pigment/colorspaces/KoLabColorSpace.h:65
+#: pigment/colorspaces/KoLabColorSpace.cpp:33
+msgid "L*a*b* (16-bit integer/channel)"
+msgstr "L*a*b* (16-बिट इंटीजर/चैनल)"
 
 #: pigment/colorspaces/KoRgbU8ColorSpace.cc:81
 msgid "Darken"
@@ -3257,10 +3311,6 @@ msgstr "मान"
 msgid "Color"
 msgstr "रंग"
 
-#: pigment/colorspaces/KoLabColorSpace.cpp:33
-msgid "L*a*b* (16-bit integer/channel)"
-msgstr "L*a*b* (16-बिट इंटीजर/चैनल)"
-
 #: pigment/colorspaces/KoLabColorSpace.cpp:36
 #: pigment/KoBasicHistogramProducers.cpp:418
 msgid "a*"
@@ -3272,6 +3322,7 @@ msgid "b*"
 msgstr "b*"
 
 #: pigment/KoBasicHistogramProducers.cpp:348
+#: pigment/KoBasicHistogramProducers.h:162
 msgid "Generic RGB Histogram"
 msgstr "जेनेरिक आरजीबी हिस्टोग्राम"
 
@@ -3288,7 +3339,7 @@ msgid "B"
 msgstr "बी"
 
 #: pigment/KoBasicHistogramProducers.cpp:414
-#: pigment/KoColorSpaceRegistry.cpp:160
+#: pigment/KoColorSpaceRegistry.cpp:124
 msgid "L*a*b* Histogram"
 msgstr "L*a*b* हिस्टोग्राम"
 
@@ -3344,7 +3395,13 @@ msgstr "३२ बिट्स फ्लोट (एचडीआर)"
 msgid "ICC Engine"
 msgstr "आईसीसी इंजिन"
 
-#: pigment/KoColorSpaceRegistry.cpp:168
+#: pigment/KoBasicHistogramProducers.h:191
+#, fuzzy
+#| msgid "Generic RGB Histogram"
+msgid "Generic L*a*b* Histogram"
+msgstr "जेनेरिक आरजीबी हिस्टोग्राम"
+
+#: pigment/KoColorSpaceRegistry.cpp:132
 msgid "RGB8 Histogram"
 msgstr "आरजीबी ८ हिस्टोग्राम"
 
