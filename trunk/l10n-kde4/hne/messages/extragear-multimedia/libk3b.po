@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libk3b\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-18 12:00+0200\n"
+"POT-Creation-Date: 2009-04-22 11:36+0200\n"
 "PO-Revision-Date: 2009-02-19 11:04+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -109,7 +109,7 @@ msgstr ""
 #: jobs/k3bcdda2wavreader.cpp:241 projects/datacd/k3bisoimager.cpp:168
 #: projects/videocd/k3bvcdjob.cpp:344
 #: projects/audiocd/k3baudionormalizejob.cpp:186
-#: projects/k3bcdrecordwriter.cpp:880 projects/k3bcdrdaowriter.cpp:753
+#: projects/k3bcdrecordwriter.cpp:886 projects/k3bcdrdaowriter.cpp:753
 #, kde-format
 msgid "%1 returned an unknown error (code %2)."
 msgstr "%1 ह एक अग्यात गलती लहुटाइस (कोड %2)."
@@ -221,6 +221,183 @@ msgstr ""
 msgid ""
 "With this setting K3b will create a two-channel stereo MPEG1 Layer III audio "
 "stream."
+msgstr ""
+
+#: jobs/k3bmetawriter.cpp:303 projects/datacd/k3bdatajob.cpp:759
+#: projects/datacd/k3bdatajob.cpp:785
+#, kde-format
+msgid "Cannot write %1 media using %2. Falling back to default application."
+msgstr ""
+
+#: jobs/k3bmetawriter.cpp:309
+msgid "DVD and Blu-Ray tracks can only be written in MODE1."
+msgstr ""
+
+#: jobs/k3bmetawriter.cpp:328
+msgid ""
+"Missing Blu-Ray support in cdrecord and growisofs. Please update the system."
+msgstr ""
+
+#: jobs/k3bmetawriter.cpp:424 projects/audiocd/k3baudiojob.cpp:253
+msgid "Track lengths below 4 seconds violate the Red Book standard."
+msgstr ""
+
+#: jobs/k3bmetawriter.cpp:442 jobs/k3bmetawriter.cpp:491
+#: jobs/k3bdvdcopyjob.cpp:893 projects/datacd/k3bdatajob.cpp:897
+msgid "Restricted Overwrite is not possible with DVD-R media."
+msgstr "डीवीडी-आर मीडिया के साथ सीमित ओवरराइट मोड संभव नइ हे."
+
+#: jobs/k3bmetawriter.cpp:456 projects/mixedcd/k3bmixedjob.cpp:1231
+#: projects/audiocd/k3baudiojob.cpp:291
+msgid "On-the-fly writing with cdrecord < 2.01a13 not supported."
+msgstr "सीडीरेकार्ड < 2.01a13 के साथ आन-द-फ्लाई लिखना समर्थित नइ करे."
+
+#: jobs/k3bmetawriter.cpp:463 projects/mixedcd/k3bmixedjob.cpp:1237
+#: projects/audiocd/k3baudiojob.cpp:298
+#, kde-format
+msgid "Cdrecord %1 does not support CD-Text writing."
+msgstr "सीडीरेकार्ड %1 सीडी-पाठ लिखना समर्थित नइ करे."
+
+#: jobs/k3bmetawriter.cpp:468 jobs/k3bcdcopyjob.cpp:863
+#: projects/audiocd/k3baudiojob.cpp:303
+msgid "It is not possible to write CD-Text in TAO mode."
+msgstr "टीएओ मोड मं सीडी-पाठ लिखना संभव नइ हे."
+
+#: jobs/k3bmetawriter.cpp:475 projects/datacd/k3bdatajob.cpp:880
+#, kde-format
+msgid ""
+"Your writer (%1 %2) does not support Incremental Streaming with %3 media. "
+"Multisession will not be possible. Continue anyway?"
+msgstr ""
+
+#: jobs/k3bmetawriter.cpp:480 projects/datacd/k3bdatajob.cpp:885
+msgid "No Incremental Streaming"
+msgstr "कोई इन्क्रीमेंटल स्ट्रीमिंग नइ"
+
+#: jobs/k3bmetawriter.cpp:496 projects/datacd/k3bdatajob.cpp:801
+msgid ""
+"DVD+R(W) media do not support write simulation. Do you really want to "
+"continue? The media will actually be written to."
+msgstr ""
+
+#: jobs/k3bmetawriter.cpp:499 jobs/k3bdvdcopyjob.cpp:821
+#: projects/datacd/k3bdatajob.cpp:804
+msgid "No Simulation with DVD+R(W)"
+msgstr "डीवीडी+आर(डबल्यू) के साथ कोनो सिमुलेसन नइ"
+
+#: jobs/k3bmetawriter.cpp:505 jobs/k3bdvdcopyjob.cpp:846
+#: projects/datacd/k3bdatajob.cpp:837
+#, kde-format
+msgid ""
+"Your writer (%1 %2) does not support simulation with DVD-R(W) media. Do you "
+"really want to continue? The media will actually be written to."
+msgstr ""
+
+#: jobs/k3bmetawriter.cpp:510 jobs/k3bdvdcopyjob.cpp:851
+#: projects/datacd/k3bdatajob.cpp:842
+msgid "No Simulation with DVD-R(W)"
+msgstr "डीवीडी-आर(डबल्यू) के साथ कोनो सिमुलेसन नइ"
+
+#: jobs/k3bmetawriter.cpp:525 projects/datacd/k3bdatajob.cpp:1010
+msgid "Most writers do not support writing multisession CDs in DAO mode."
+msgstr ""
+
+#: jobs/k3bmetawriter.cpp:811
+#, fuzzy
+#| msgid "Writing DVD-RW in DAO mode."
+msgid "Writing CD in Session At Once mode."
+msgstr "डीवीडी-आरडबल्यू सीमित डीएओ मोड मं लिखत हे. "
+
+#: jobs/k3bmetawriter.cpp:813
+#, fuzzy
+#| msgid "Writing DVD-RW in DAO mode."
+msgid "Writing CD in Track At Once mode."
+msgstr "डीवीडी-आरडबल्यू सीमित डीएओ मोड मं लिखत हे. "
+
+#: jobs/k3bmetawriter.cpp:815
+#, fuzzy
+#| msgid "Writing DVD-RW in DAO mode."
+msgid "Writing CD in Raw mode."
+msgstr "डीवीडी-आरडबल्यू सीमित डीएओ मोड मं लिखत हे. "
+
+#: jobs/k3bmetawriter.cpp:818
+#, fuzzy
+#| msgid "Copying Multisession Data CD."
+msgid "Appending session to CD"
+msgstr "मल्टीसेसन डाटा सीडी नकल करत हे."
+
+#: jobs/k3bmetawriter.cpp:825
+msgid "Writing rewritable CD in Session At Once mode."
+msgstr ""
+
+#: jobs/k3bmetawriter.cpp:827
+#, fuzzy
+#| msgid "Write in disk at once mode"
+msgid "Writing rewritable CD in Track At Once mode."
+msgstr "डिस्क-एट-वंस मोड मं लिखव"
+
+#: jobs/k3bmetawriter.cpp:829
+#, fuzzy
+#| msgid "Writing DVD-RW in DAO mode."
+msgid "Writing rewritable CD in Raw mode."
+msgstr "डीवीडी-आरडबल्यू सीमित डीएओ मोड मं लिखत हे. "
+
+#: jobs/k3bmetawriter.cpp:832
+msgid "Appending session to rewritable CD."
+msgstr ""
+
+#: jobs/k3bmetawriter.cpp:839 projects/datacd/k3bdatajob.cpp:821
+msgid "Growing ISO9660 filesystem on DVD+RW."
+msgstr "डीवीडी+आरडबल्यू मं आईएसओ9660 फाइलसिसटम ग्रो करत हे."
+
+#: jobs/k3bmetawriter.cpp:841 projects/datacd/k3bdatajob.cpp:859
+msgid "Growing ISO9660 filesystem on DVD-RW in restricted overwrite mode."
+msgstr ""
+
+#: jobs/k3bmetawriter.cpp:843
+#, fuzzy
+#| msgid "Copying Multisession Data CD."
+msgid "Appending session to DVD+R."
+msgstr "मल्टीसेसन डाटा सीडी नकल करत हे."
+
+#: jobs/k3bmetawriter.cpp:845
+#, fuzzy
+#| msgid "Writing Double Layer DVD+R."
+msgid "Appending session to Double Layer DVD+R."
+msgstr "डबल लेयर डीवीडी+आर लिखत हे"
+
+#: jobs/k3bmetawriter.cpp:847
+#, fuzzy, kde-format
+#| msgid "Reading Session %1"
+msgid "Appending session to %1."
+msgstr "सत्र %1 पढ़त हे"
+
+#: jobs/k3bmetawriter.cpp:851 jobs/k3bdvdcopyjob.cpp:872
+#: projects/datacd/k3bdatajob.cpp:856
+msgid "Writing DVD-RW in restricted overwrite mode."
+msgstr "डीवीडी-आरडबल्यू सीमित ओवरराइट मोड मं लिखत हे. "
+
+#: jobs/k3bmetawriter.cpp:853 jobs/k3bdvdcopyjob.cpp:836
+#: projects/datacd/k3bdatajob.cpp:827
+msgid "Writing Double Layer DVD+R."
+msgstr "डबल लेयर डीवीडी+आर लिखत हे"
+
+#: jobs/k3bmetawriter.cpp:855 jobs/k3bmetawriter.cpp:864
+#: jobs/k3bdvdcopyjob.cpp:913
+#, kde-format
+msgid "Writing %1."
+msgstr "%1 लिखत हे."
+
+#: jobs/k3bmetawriter.cpp:857 jobs/k3bdvdcopyjob.cpp:898
+#: projects/datacd/k3bdatajob.cpp:873 projects/datacd/k3bdatajob.cpp:890
+#, kde-format
+msgid "Writing %1 in DAO mode."
+msgstr ""
+
+#: jobs/k3bmetawriter.cpp:859 jobs/k3bdvdcopyjob.cpp:902
+#: projects/datacd/k3bdatajob.cpp:899
+#, kde-format
+msgid "Writing %1 in incremental mode."
 msgstr ""
 
 #: jobs/k3baudiocuefilewritingjob.cpp:113
@@ -443,62 +620,47 @@ msgstr "एक्जीक्यूटेबल %1 नइ मिलिस."
 msgid "Formatting"
 msgstr "फार्मेट करत हे"
 
-#: jobs/k3biso9660imagewritingjob.cpp:86 projects/mixedcd/k3bmixedjob.cpp:221
+#: jobs/k3biso9660imagewritingjob.cpp:82 projects/mixedcd/k3bmixedjob.cpp:221
 #: projects/datacd/k3bdatajob.cpp:149 projects/audiocd/k3baudiojob.cpp:156
 msgid "Preparing data"
 msgstr "डाटा तैयार करव"
 
-#: jobs/k3biso9660imagewritingjob.cpp:89
+#: jobs/k3biso9660imagewritingjob.cpp:85
 #, kde-format
 msgid "Could not find image %1"
 msgstr "इमेज '%1' खोज नइ सकिस"
 
-#: jobs/k3biso9660imagewritingjob.cpp:135 projects/datacd/k3bdatajob.cpp:492
+#: jobs/k3biso9660imagewritingjob.cpp:131 projects/datacd/k3bdatajob.cpp:492
 msgid "Verifying written data"
 msgstr "लिखिस डाटा ल सत्यापित करत हे"
 
-#: jobs/k3biso9660imagewritingjob.cpp:137
+#: jobs/k3biso9660imagewritingjob.cpp:133
 #, kde-format
 msgid "Verifying written copy %1 of %2"
 msgstr "लिखे गे नकल %2 मं से %1 ल सत्यापित करत हे"
 
-#: jobs/k3biso9660imagewritingjob.cpp:208
+#: jobs/k3biso9660imagewritingjob.cpp:204
 msgid "Writing image"
 msgstr "इमेज ल लिखत हे."
 
-#: jobs/k3biso9660imagewritingjob.cpp:210
+#: jobs/k3biso9660imagewritingjob.cpp:206
 #, kde-format
 msgid "Writing copy %1 of %2"
 msgstr "%2 मं से %1 के नकल करत हे "
 
-#: jobs/k3biso9660imagewritingjob.cpp:229
+#: jobs/k3biso9660imagewritingjob.cpp:225
 msgid "Waiting for medium"
 msgstr ""
 
-#: jobs/k3biso9660imagewritingjob.cpp:358
-msgid "Missing tools for Blu-Ray writing. Please update your system."
-msgstr ""
-
-#: jobs/k3biso9660imagewritingjob.cpp:427 jobs/k3bdvdcopyjob.cpp:822
-msgid ""
-"K3b does not support simulation with DVD+R(W) media. Do you really want to "
-"continue? The media will actually be written to."
-msgstr ""
-
-#: jobs/k3biso9660imagewritingjob.cpp:430 jobs/k3bdvdcopyjob.cpp:825
-#: projects/datacd/k3bdatajob.cpp:808
-msgid "No Simulation with DVD+R(W)"
-msgstr "डीवीडी+आर(डबल्यू) के साथ कोनो सिमुलेसन नइ"
-
-#: jobs/k3biso9660imagewritingjob.cpp:469
+#: jobs/k3biso9660imagewritingjob.cpp:332
 msgid "Simulating ISO9660 Image"
 msgstr ""
 
-#: jobs/k3biso9660imagewritingjob.cpp:471
+#: jobs/k3biso9660imagewritingjob.cpp:334
 msgid "Burning ISO9660 Image"
 msgstr ""
 
-#: jobs/k3biso9660imagewritingjob.cpp:473 jobs/k3bbinimagewritingjob.cpp:214
+#: jobs/k3biso9660imagewritingjob.cpp:336 jobs/k3bbinimagewritingjob.cpp:214
 #, kde-format
 msgid " - %1 Copy"
 msgid_plural " - %1 Copies"
@@ -853,10 +1015,6 @@ msgstr "नकल %1 लिखत हे"
 msgid "Writing Copy"
 msgstr "नकल लिखत हे"
 
-#: jobs/k3bcdcopyjob.cpp:863 projects/audiocd/k3baudiojob.cpp:303
-msgid "It is not possible to write CD-Text in TAO mode."
-msgstr "टीएओ मोड मं सीडी-पाठ लिखना संभव नइ हे."
-
 #: jobs/k3bcdcopyjob.cpp:982
 #, kde-format
 msgid "Successfully read session %1."
@@ -886,12 +1044,12 @@ msgid "K3b was unable to eject the written disk. Please do so manually."
 msgstr ""
 
 #: jobs/k3bcdcopyjob.cpp:1101 projects/mixedcd/k3bmixedjob.cpp:539
-#: projects/k3bcdrecordwriter.cpp:726
+#: projects/k3bcdrecordwriter.cpp:729
 msgid "Please reload the medium and press 'ok'"
 msgstr "किरपा करके, मीडिया ल फिर से लोड करव अउ 'ठीक' ल दबाव"
 
 #: jobs/k3bcdcopyjob.cpp:1102 projects/mixedcd/k3bmixedjob.cpp:540
-#: projects/k3bcdrecordwriter.cpp:727
+#: projects/k3bcdrecordwriter.cpp:730
 msgid "Unable to close the tray"
 msgstr "ट्रे ल बंद करे मं अक्छम"
 
@@ -926,7 +1084,7 @@ msgstr ""
 msgid "Copying CD"
 msgstr "सीडी नकल करत हे"
 
-#: jobs/k3bcdcopyjob.cpp:1230 jobs/k3bdvdcopyjob.cpp:952
+#: jobs/k3bcdcopyjob.cpp:1230 jobs/k3bdvdcopyjob.cpp:948
 #, kde-format
 msgid "Creating 1 copy"
 msgid_plural "Creating %1 copies"
@@ -1161,87 +1319,50 @@ msgstr ""
 msgid "Unsupported media type: %1"
 msgstr ""
 
-#: jobs/k3bdvdcopyjob.cpp:807
-msgid "Forced by user. Growisofs will be called without further tests."
-msgstr "कमइया से बाध्य करिस. ग्रोआईएसओएफएस ल आगू के जांच बर बलाही जाही."
+#: jobs/k3bdvdcopyjob.cpp:818
+msgid ""
+"K3b does not support simulation with DVD+R(W) media. Do you really want to "
+"continue? The media will actually be written to."
+msgstr ""
 
-#: jobs/k3bdvdcopyjob.cpp:831
+#: jobs/k3bdvdcopyjob.cpp:827
 msgid "Writing DVD copy"
 msgstr "डीवीडी नकल लिखत हे"
 
-#: jobs/k3bdvdcopyjob.cpp:835 projects/datacd/k3bdatajob.cpp:817
+#: jobs/k3bdvdcopyjob.cpp:831 projects/datacd/k3bdatajob.cpp:813
 msgid "Writing mode ignored when writing DVD+R(W) media."
 msgstr "जब डीवीडी+आर(डबल्यू) मीडिया लिखे जाही तहां लिखे के मोड के अनदेखा करव."
 
-#: jobs/k3bdvdcopyjob.cpp:838 projects/datacd/k3bdatajob.cpp:823
+#: jobs/k3bdvdcopyjob.cpp:834 projects/datacd/k3bdatajob.cpp:819
 msgid "Writing DVD+RW."
 msgstr "डीवीडी+आर(डबल्यू) लिखत हे."
 
-#: jobs/k3bdvdcopyjob.cpp:840 projects/datacd/k3bdatajob.cpp:831
-msgid "Writing Double Layer DVD+R."
-msgstr "डबल लेयर डीवीडी+आर लिखत हे"
-
-#: jobs/k3bdvdcopyjob.cpp:842 projects/datacd/k3bdatajob.cpp:833
+#: jobs/k3bdvdcopyjob.cpp:838 projects/datacd/k3bdatajob.cpp:829
 msgid "Writing DVD+R."
 msgstr "डबल डीवीडी+आर लिखत हे"
 
-#: jobs/k3bdvdcopyjob.cpp:850 projects/datacd/k3bdatajob.cpp:841
-#, kde-format
-msgid ""
-"Your writer (%1 %2) does not support simulation with DVD-R(W) media. Do you "
-"really want to continue? The media will actually be written to."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:855 projects/datacd/k3bdatajob.cpp:846
-msgid "No Simulation with DVD-R(W)"
-msgstr "डीवीडी-आर(डबल्यू) के साथ कोनो सिमुलेसन नइ"
-
-#: jobs/k3bdvdcopyjob.cpp:876 projects/datacd/k3bdatajob.cpp:860
-msgid "Writing DVD-RW in restricted overwrite mode."
-msgstr "डीवीडी-आरडबल्यू सीमित ओवरराइट मोड मं लिखत हे. "
-
-#: jobs/k3bdvdcopyjob.cpp:884
+#: jobs/k3bdvdcopyjob.cpp:880
 msgid "Writing DVD-RW in DAO mode."
 msgstr "डीवीडी-आरडबल्यू सीमित डीएओ मोड मं लिखत हे. "
 
-#: jobs/k3bdvdcopyjob.cpp:888
+#: jobs/k3bdvdcopyjob.cpp:884
 msgid "Writing DVD-RW in incremental mode."
 msgstr ""
 
-#: jobs/k3bdvdcopyjob.cpp:897 projects/datacd/k3bdatajob.cpp:901
-msgid "Restricted Overwrite is not possible with DVD-R media."
-msgstr "डीवीडी-आर मीडिया के साथ सीमित ओवरराइट मोड संभव नइ हे."
-
-#: jobs/k3bdvdcopyjob.cpp:902 projects/datacd/k3bdatajob.cpp:877
-#: projects/datacd/k3bdatajob.cpp:894
-#, kde-format
-msgid "Writing %1 in DAO mode."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:906 projects/datacd/k3bdatajob.cpp:903
-#, kde-format
-msgid "Writing %1 in incremental mode."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:917
-#, kde-format
-msgid "Writing %1."
-msgstr "%1 लिखत हे."
-
-#: jobs/k3bdvdcopyjob.cpp:931 projects/datacd/k3bdatajob.cpp:984
+#: jobs/k3bdvdcopyjob.cpp:927 projects/datacd/k3bdatajob.cpp:980
 #, kde-format
 msgid "Removed image file %1"
 msgstr "इमेज फाइल %1 ल मेटाय गिस"
 
-#: jobs/k3bdvdcopyjob.cpp:939
+#: jobs/k3bdvdcopyjob.cpp:935
 msgid "Creating Image"
 msgstr ""
 
-#: jobs/k3bdvdcopyjob.cpp:943
+#: jobs/k3bdvdcopyjob.cpp:939
 msgid "Copying DVD/BD On-The-Fly"
 msgstr ""
 
-#: jobs/k3bdvdcopyjob.cpp:945
+#: jobs/k3bdvdcopyjob.cpp:941
 msgid "Copying DVD/BD"
 msgstr ""
 
@@ -1282,105 +1403,94 @@ msgstr "प्रसंग चयन"
 msgid "Please select a device:"
 msgstr "किरपा करके, कोनो एक उपकरन चुनव:"
 
-#: tools/k3bmedium.cpp:281
-msgid "No medium information"
-msgstr "कोई मीडियम जानकारी नइ"
-
-#: tools/k3bmedium.cpp:285
-msgid "No medium present"
-msgstr "कोई मीडियम नइ हे"
-
-#: tools/k3bmedium.cpp:289
-#, kde-format
-msgid "Empty %1 medium"
-msgstr ""
-
-#: tools/k3bmedium.cpp:309 tools/k3bmedium.cpp:312
+#: tools/k3bmedium.cpp:280
 msgid "Audio CD"
 msgstr "आडियो सीडी"
 
-#: tools/k3bmedium.cpp:309
+#: tools/k3bmedium.cpp:283
 msgid "Mixed CD"
 msgstr ""
 
-#: tools/k3bmedium.cpp:315
-#, kde-format
-msgid "%1 (Mixed CD)"
-msgstr ""
-
-#: tools/k3bmedium.cpp:322
+#: tools/k3bmedium.cpp:287
 msgid "Video DVD"
 msgstr "वीडियो डीवीडी"
 
-#: tools/k3bmedium.cpp:325
+#: tools/k3bmedium.cpp:290
 msgid "Video CD"
 msgstr "वीडियो सीडी"
 
-#: tools/k3bmedium.cpp:328
-#, kde-format
-msgid "%1 (Appendable Data %2)"
-msgstr ""
-
-#: tools/k3bmedium.cpp:331
-#, kde-format
-msgid "%1 (Complete Data %2)"
-msgstr ""
-
-#: tools/k3bmedium.cpp:336
+#: tools/k3bmedium.cpp:293
 #, kde-format
 msgid "Appendable Data %1"
 msgstr ""
 
-#: tools/k3bmedium.cpp:339
+#: tools/k3bmedium.cpp:296
 #, kde-format
 msgid "Complete Data %1"
 msgstr ""
 
-#: tools/k3bmedium.cpp:347
+#: tools/k3bmedium.cpp:300
+msgid "Empty"
+msgstr ""
+
+#: tools/k3bmedium.cpp:313
+msgid "No medium information"
+msgstr "कोई मीडियम जानकारी नइ"
+
+#: tools/k3bmedium.cpp:317
+msgid "No medium present"
+msgstr "कोई मीडियम नइ हे"
+
+#: tools/k3bmedium.cpp:321
+#, kde-format
+msgid "Empty %1 medium"
+msgstr ""
+
+#: tools/k3bmedium.cpp:362
 #, kde-format
 msgid "Appendable %1 medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:350
+#: tools/k3bmedium.cpp:365
 #, kde-format
 msgid "Complete %1 medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:369
+#: tools/k3bmedium.cpp:382
 #, kde-format
-msgid "1 in %2 track"
+msgid "%1 in 1 track"
 msgid_plural "%1 in %2 tracks"
 msgstr[0] ""
 msgstr[1] ""
 
-#: tools/k3bmedium.cpp:372
+#: tools/k3bmedium.cpp:386
 #, kde-format
 msgid " and %1 session"
 msgid_plural " and %1 sessions"
 msgstr[0] "अउ सत्र %1"
 msgstr[1] "अउ %1 सत्र"
 
-#: tools/k3bmedium.cpp:377
+#: tools/k3bmedium.cpp:391
 #, kde-format
 msgid "Free space: %1"
 msgstr ""
 
-#: tools/k3bmedium.cpp:381
+#: tools/k3bmedium.cpp:395
 #, kde-format
 msgid "Capacity: %1"
 msgstr "छमता: %1 "
 
-#: tools/k3bmedium.cpp:540
+#: tools/k3bmedium.cpp:560
 #, fuzzy, kde-format
 #| msgid "Please insert a rewritable CD medium into drive<p><b>%1 %2 (%3)</b>."
 msgid "Please insert an empty medium into drive<p><b>%1</b>"
 msgstr "किरपा करके, ड्राइव मं रीराइटेबल सीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
 
-#: tools/k3bmedium.cpp:542
+#: tools/k3bmedium.cpp:562
 msgid "Please insert an empty medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:546
+#: tools/k3bmedium.cpp:566
 #, fuzzy, kde-format
 #| msgid ""
 #| "Please insert an empty DVD+R or a DVD+RW medium into drive<p><b>%1 %2 (%3)"
@@ -1390,7 +1500,7 @@ msgstr ""
 "किरपा करके, खाली डीवीडी+आर या डीवीडी+आरडबल्यू मीडियम ड्राइव मं डालव<p><b>%1 %2 (%"
 "3)</b>."
 
-#: tools/k3bmedium.cpp:548
+#: tools/k3bmedium.cpp:568
 #, fuzzy
 #| msgid ""
 #| "Please insert an empty DVD+R or a DVD+RW medium into drive<p><b>%1 %2 (%3)"
@@ -1400,7 +1510,7 @@ msgstr ""
 "किरपा करके, खाली डीवीडी+आर या डीवीडी+आरडबल्यू मीडियम ड्राइव मं डालव<p><b>%1 %2 (%"
 "3)</b>."
 
-#: tools/k3bmedium.cpp:552
+#: tools/k3bmedium.cpp:572
 #, fuzzy, kde-format
 #| msgid ""
 #| "Please insert an empty DVD+R or a DVD+RW medium into drive<p><b>%1 %2 (%3)"
@@ -1410,32 +1520,32 @@ msgstr ""
 "किरपा करके, खाली डीवीडी+आर या डीवीडी+आरडबल्यू मीडियम ड्राइव मं डालव<p><b>%1 %2 (%"
 "3)</b>."
 
-#: tools/k3bmedium.cpp:554
+#: tools/k3bmedium.cpp:574
 msgid "Please insert an empty Blu-Ray medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:558
+#: tools/k3bmedium.cpp:578
 #, fuzzy, kde-format
 #| msgid "Please insert a rewritable CD medium into drive<p><b>%1 %2 (%3)</b>."
 msgid "Please insert an empty CD medium into drive<p><b>%1</b>"
 msgstr "किरपा करके, ड्राइव मं रीराइटेबल सीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
 
-#: tools/k3bmedium.cpp:560
+#: tools/k3bmedium.cpp:580
 msgid "Please insert an empty CD medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:564
+#: tools/k3bmedium.cpp:584
 #, fuzzy, kde-format
 #| msgid ""
 #| "Please insert a rewritable DVD medium into drive<p><b>%1 %2 (%3)</b>."
 msgid "Please insert an empty DVD medium into drive<p><b>%1</b>"
 msgstr "किरपा करके, ड्राइव मं रीराइटेबल डीवीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
 
-#: tools/k3bmedium.cpp:566
+#: tools/k3bmedium.cpp:586
 msgid "Please insert an empty DVD medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:570
+#: tools/k3bmedium.cpp:590
 #, fuzzy, kde-format
 #| msgid ""
 #| "Please insert an empty DVD+R or a DVD+RW medium into drive<p><b>%1 %2 (%3)"
@@ -1445,11 +1555,24 @@ msgstr ""
 "किरपा करके, खाली डीवीडी+आर या डीवीडी+आरडबल्यू मीडियम ड्राइव मं डालव<p><b>%1 %2 (%"
 "3)</b>."
 
-#: tools/k3bmedium.cpp:572
+#: tools/k3bmedium.cpp:592
 msgid "Please insert an empty DVD-DL medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:578
+#: tools/k3bmedium.cpp:596
+#, fuzzy, kde-format
+#| msgid "Please insert a rewritable CD medium into drive<p><b>%1 %2 (%3)</b>."
+msgid ""
+"Please insert an empty medium of size %1 or higher into drive<p><b>%2</b>"
+msgstr "किरपा करके, ड्राइव मं रीराइटेबल सीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
+
+#: tools/k3bmedium.cpp:599
+#, fuzzy, kde-format
+#| msgid "Please insert a rewritable CD medium into drive<p><b>%1 %2 (%3)</b>."
+msgid "Please insert an empty medium of size %1 or higher"
+msgstr "किरपा करके, ड्राइव मं रीराइटेबल सीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
+
+#: tools/k3bmedium.cpp:605
 #, fuzzy, kde-format
 #| msgid ""
 #| "Please insert an empty DVD+R or a DVD+RW medium into drive<p><b>%1 %2 (%3)"
@@ -1459,13 +1582,13 @@ msgstr ""
 "किरपा करके, खाली डीवीडी+आर या डीवीडी+आरडबल्यू मीडियम ड्राइव मं डालव<p><b>%1 %2 (%"
 "3)</b>."
 
-#: tools/k3bmedium.cpp:580
+#: tools/k3bmedium.cpp:607
 #, fuzzy
 #| msgid "The disk is either empty or not appendable."
 msgid "Please insert an empty or appendable medium"
 msgstr "डिस्क या तो खाली हे या एपेडेबल नइ हे."
 
-#: tools/k3bmedium.cpp:584
+#: tools/k3bmedium.cpp:611
 #, fuzzy, kde-format
 #| msgid ""
 #| "Please insert an empty DVD+R or a DVD+RW medium into drive<p><b>%1 %2 (%3)"
@@ -1477,11 +1600,11 @@ msgstr ""
 "किरपा करके, खाली डीवीडी+आर या डीवीडी+आरडबल्यू मीडियम ड्राइव मं डालव<p><b>%1 %2 (%"
 "3)</b>."
 
-#: tools/k3bmedium.cpp:586
+#: tools/k3bmedium.cpp:613
 msgid "Please insert an empty or appendable DVD or Blu-Ray medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:590
+#: tools/k3bmedium.cpp:617
 #, fuzzy, kde-format
 #| msgid ""
 #| "Please insert an empty DVD+R or a DVD+RW medium into drive<p><b>%1 %2 (%3)"
@@ -1492,23 +1615,23 @@ msgstr ""
 "किरपा करके, खाली डीवीडी+आर या डीवीडी+आरडबल्यू मीडियम ड्राइव मं डालव<p><b>%1 %2 (%"
 "3)</b>."
 
-#: tools/k3bmedium.cpp:592
+#: tools/k3bmedium.cpp:619
 msgid "Please insert an empty or appendable Blu-Ray medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:596
+#: tools/k3bmedium.cpp:623
 #, fuzzy, kde-format
 #| msgid "Please insert a rewritable CD medium into drive<p><b>%1 %2 (%3)</b>."
 msgid "Please insert an empty or appendable CD medium into drive<p><b>%1</b>"
 msgstr "किरपा करके, ड्राइव मं रीराइटेबल सीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
 
-#: tools/k3bmedium.cpp:598
+#: tools/k3bmedium.cpp:625
 #, fuzzy
 #| msgid "The disk is either empty or not appendable."
 msgid "Please insert an empty or appendable CD medium"
 msgstr "डिस्क या तो खाली हे या एपेडेबल नइ हे."
 
-#: tools/k3bmedium.cpp:602
+#: tools/k3bmedium.cpp:629
 #, fuzzy, kde-format
 #| msgid ""
 #| "Please insert an empty DVD+R or a DVD+RW medium into drive<p><b>%1 %2 (%3)"
@@ -1518,7 +1641,7 @@ msgstr ""
 "किरपा करके, खाली डीवीडी+आर या डीवीडी+आरडबल्यू मीडियम ड्राइव मं डालव<p><b>%1 %2 (%"
 "3)</b>."
 
-#: tools/k3bmedium.cpp:604
+#: tools/k3bmedium.cpp:631
 #, fuzzy
 #| msgid ""
 #| "Please insert an empty DVD+R or a DVD+RW medium into drive<p><b>%1 %2 (%3)"
@@ -1528,7 +1651,7 @@ msgstr ""
 "किरपा करके, खाली डीवीडी+आर या डीवीडी+आरडबल्यू मीडियम ड्राइव मं डालव<p><b>%1 %2 (%"
 "3)</b>."
 
-#: tools/k3bmedium.cpp:608
+#: tools/k3bmedium.cpp:635
 #, fuzzy, kde-format
 #| msgid ""
 #| "Please insert an empty DVD+R or a DVD+RW medium into drive<p><b>%1 %2 (%3)"
@@ -1539,100 +1662,100 @@ msgstr ""
 "किरपा करके, खाली डीवीडी+आर या डीवीडी+आरडबल्यू मीडियम ड्राइव मं डालव<p><b>%1 %2 (%"
 "3)</b>."
 
-#: tools/k3bmedium.cpp:610
+#: tools/k3bmedium.cpp:637
 msgid "Please insert an empty or appendable DVD-DL medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:616
+#: tools/k3bmedium.cpp:643
 #, fuzzy, kde-format
 #| msgid "Please insert a rewritable CD medium into drive<p><b>%1 %2 (%3)</b>."
 msgid "Please insert a non-empty medium into drive<p><b>%1</b>"
 msgstr "किरपा करके, ड्राइव मं रीराइटेबल सीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
 
-#: tools/k3bmedium.cpp:618
+#: tools/k3bmedium.cpp:645
 msgid "Please insert a non-empty medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:622
+#: tools/k3bmedium.cpp:649
 #, fuzzy, kde-format
 #| msgid "Please insert a rewritable CD medium into drive<p><b>%1 %2 (%3)</b>."
 msgid "Please insert a non-empty rewritable medium into drive<p><b>%1</b>"
 msgstr "किरपा करके, ड्राइव मं रीराइटेबल सीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
 
-#: tools/k3bmedium.cpp:624
+#: tools/k3bmedium.cpp:651
 msgid "Please insert a non-empty rewritable medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:630
+#: tools/k3bmedium.cpp:657
 #, fuzzy, kde-format
 #| msgid "Please insert a rewritable CD medium into drive<p><b>%1 %2 (%3)</b>."
 msgid "Please insert a rewritable medium into drive<p><b>%1</b>"
 msgstr "किरपा करके, ड्राइव मं रीराइटेबल सीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
 
-#: tools/k3bmedium.cpp:632
+#: tools/k3bmedium.cpp:659
 #, fuzzy
 #| msgid "Please insert a rewritable CD medium into drive<p><b>%1 %2 (%3)</b>."
 msgid "Please insert a rewritable medium"
 msgstr "किरपा करके, ड्राइव मं रीराइटेबल सीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
 
-#: tools/k3bmedium.cpp:638 tools/k3bmedium.cpp:684
+#: tools/k3bmedium.cpp:665 tools/k3bmedium.cpp:711
 #, fuzzy, kde-format
 #| msgid "Please insert a rewritable CD medium into drive<p><b>%1 %2 (%3)</b>."
 msgid "Please insert a suitable medium into drive<p><b>%1</b>"
 msgstr "किरपा करके, ड्राइव मं रीराइटेबल सीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
 
-#: tools/k3bmedium.cpp:640 tools/k3bmedium.cpp:686
+#: tools/k3bmedium.cpp:667 tools/k3bmedium.cpp:713
 msgid "Please insert a suitable medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:653
+#: tools/k3bmedium.cpp:680
 #, fuzzy, kde-format
 #| msgid "Please insert a rewritable CD medium into drive<p><b>%1 %2 (%3)</b>."
 msgid "Please insert a Video CD medium into drive<p><b>%1</b>"
 msgstr "किरपा करके, ड्राइव मं रीराइटेबल सीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
 
-#: tools/k3bmedium.cpp:655
+#: tools/k3bmedium.cpp:682
 msgid "Please insert a Video CD medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:659
+#: tools/k3bmedium.cpp:686
 #, fuzzy, kde-format
 #| msgid ""
 #| "Please insert a rewritable DVD medium into drive<p><b>%1 %2 (%3)</b>."
 msgid "Please insert a Video DVD medium into drive<p><b>%1</b>"
 msgstr "किरपा करके, ड्राइव मं रीराइटेबल डीवीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
 
-#: tools/k3bmedium.cpp:661
+#: tools/k3bmedium.cpp:688
 msgid "Please insert a Video DVD medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:665
+#: tools/k3bmedium.cpp:692
 #, fuzzy, kde-format
 #| msgid "Please insert a rewritable CD medium into drive<p><b>%1 %2 (%3)</b>."
 msgid "Please insert a Mixed Mode CD medium into drive<p><b>%1</b>"
 msgstr "किरपा करके, ड्राइव मं रीराइटेबल सीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
 
-#: tools/k3bmedium.cpp:667
+#: tools/k3bmedium.cpp:694
 msgid "Please insert a Mixed Mode CD medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:671
+#: tools/k3bmedium.cpp:698
 #, fuzzy, kde-format
 #| msgid "Please insert a rewritable CD medium into drive<p><b>%1 %2 (%3)</b>."
 msgid "Please insert an Audio CD medium into drive<p><b>%1</b>"
 msgstr "किरपा करके, ड्राइव मं रीराइटेबल सीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
 
-#: tools/k3bmedium.cpp:673
+#: tools/k3bmedium.cpp:700
 msgid "Please insert an Audio CD medium"
 msgstr ""
 
-#: tools/k3bmedium.cpp:677
+#: tools/k3bmedium.cpp:704
 #, fuzzy, kde-format
 #| msgid "Please insert a rewritable CD medium into drive<p><b>%1 %2 (%3)</b>."
 msgid "Please insert a Data medium into drive<p><b>%1</b>"
 msgstr "किरपा करके, ड्राइव मं रीराइटेबल सीडी मीडियम भरव<p><b>%1 %2 (%3)</b>."
 
-#: tools/k3bmedium.cpp:679
+#: tools/k3bmedium.cpp:706
 #, fuzzy
 #| msgid "Please select a device:"
 msgid "Please insert a Data medium"
@@ -2049,7 +2172,7 @@ msgid "Trying to write more than the official disk capacity"
 msgstr "आधिकारिक डिस्क छमता से जादा लिखे के कोसिस करत हे "
 
 #: projects/mixedcd/k3bmixedjob.cpp:1037 projects/k3bgrowisofshandler.cpp:238
-#: projects/k3bcdrecordwriter.cpp:805 projects/k3bcdrdaowriter.cpp:878
+#: projects/k3bcdrecordwriter.cpp:808 projects/k3bcdrdaowriter.cpp:878
 msgid "Data does not fit on disk."
 msgstr "डाटा डिस्क मं जमाव नइ होय."
 
@@ -2076,15 +2199,6 @@ msgstr "बफर फाइल मन ल मिटात हे."
 #, kde-format
 msgid "Could not delete file %1."
 msgstr "फाइल %1 ल मिटा नइ सकिस."
-
-#: projects/mixedcd/k3bmixedjob.cpp:1231 projects/audiocd/k3baudiojob.cpp:291
-msgid "On-the-fly writing with cdrecord < 2.01a13 not supported."
-msgstr "सीडीरेकार्ड < 2.01a13 के साथ आन-द-फ्लाई लिखना समर्थित नइ करे."
-
-#: projects/mixedcd/k3bmixedjob.cpp:1237 projects/audiocd/k3baudiojob.cpp:298
-#, kde-format
-msgid "Cdrecord %1 does not support CD-Text writing."
-msgstr "सीडीरेकार्ड %1 सीडी-पाठ लिखना समर्थित नइ करे."
 
 #: projects/mixedcd/k3bmixedjob.cpp:1240
 msgid "It is not possible to write CD-Text in TAO mode. Try DAO or RAW."
@@ -2143,7 +2257,7 @@ msgid "Closing Disk"
 msgstr "डिस्क बन्द करत हे"
 
 #: projects/k3bgrowisofshandler.cpp:140 projects/k3bgrowisofshandler.cpp:147
-#: projects/k3bgrowisofshandler.cpp:148 projects/k3bcdrecordwriter.cpp:699
+#: projects/k3bgrowisofshandler.cpp:148 projects/k3bcdrecordwriter.cpp:702
 msgid "Closing Session"
 msgstr "सत्र बन्द करत हे"
 
@@ -2195,7 +2309,7 @@ msgstr ""
 msgid "Report the problem if it persists anyway."
 msgstr "समस्या के रपट देव यदि ए बनी रहिथे."
 
-#: projects/k3bgrowisofshandler.cpp:236 projects/k3bcdrecordwriter.cpp:803
+#: projects/k3bgrowisofshandler.cpp:236 projects/k3bcdrecordwriter.cpp:806
 msgid "Data did not fit on disk."
 msgstr "डाटा डिस्क मं जमाव नइ होय."
 
@@ -2372,7 +2486,7 @@ msgid ""
 "contain more than one backslash:"
 msgstr ""
 
-#: projects/datacd/k3bisoimager.cpp:178 projects/k3bcdrecordwriter.cpp:900
+#: projects/datacd/k3bisoimager.cpp:178 projects/k3bcdrecordwriter.cpp:906
 #: projects/k3bcdrdaowriter.cpp:764
 #, kde-format
 msgid "%1 crashed."
@@ -2513,7 +2627,7 @@ msgstr "इमेज  %1में सफलतापूर्वक बनाइ
 msgid "Error while creating ISO image"
 msgstr "आईएसओ इमेज बनाए मं गलती"
 
-#: projects/datacd/k3bdatajob.cpp:427 projects/datacd/k3bdatajob.cpp:813
+#: projects/datacd/k3bdatajob.cpp:427 projects/datacd/k3bdatajob.cpp:809
 #: projects/k3bgrowisofswriter.cpp:385 projects/audiocd/k3baudiojob.cpp:660
 #: projects/k3bcdrecordwriter.cpp:450 projects/k3bcdrdaowriter.cpp:570
 msgid "Writing"
@@ -2527,76 +2641,38 @@ msgstr ""
 msgid "Waiting for a medium"
 msgstr ""
 
-#: projects/datacd/k3bdatajob.cpp:694
-msgid "Forced by user. Writing will continue without further checks."
-msgstr ""
-
-#: projects/datacd/k3bdatajob.cpp:709 projects/datacd/k3bdatajob.cpp:928
+#: projects/datacd/k3bdatajob.cpp:705 projects/datacd/k3bdatajob.cpp:924
 #, kde-format
 msgid "Writing %1"
 msgstr "%1 लिखत हे"
 
-#: projects/datacd/k3bdatajob.cpp:726
+#: projects/datacd/k3bdatajob.cpp:722
 msgid "Unable to determine the last track's datamode. Using default."
 msgstr "आखरी ट्रैक के डाटामोड निरधारित करे मं अक्छम. डिफाल्ट उपयोग करत हे."
 
-#: projects/datacd/k3bdatajob.cpp:763 projects/datacd/k3bdatajob.cpp:789
-#, kde-format
-msgid "Cannot write %1 media using %2. Falling back to default application."
-msgstr ""
-
-#: projects/datacd/k3bdatajob.cpp:805
-msgid ""
-"DVD+R(W) media do not support write simulation. Do you really want to "
-"continue? The media will actually be written to."
-msgstr ""
-
-#: projects/datacd/k3bdatajob.cpp:825
-msgid "Growing ISO9660 filesystem on DVD+RW."
-msgstr "डीवीडी+आरडबल्यू मं आईएसओ9660 फाइलसिसटम ग्रो करत हे."
-
-#: projects/datacd/k3bdatajob.cpp:863
-msgid "Growing ISO9660 filesystem on DVD-RW in restricted overwrite mode."
-msgstr ""
-
-#: projects/datacd/k3bdatajob.cpp:884
-#, kde-format
-msgid ""
-"Your writer (%1 %2) does not support Incremental Streaming with %3 media. "
-"Multisession will not be possible. Continue anyway?"
-msgstr ""
-
-#: projects/datacd/k3bdatajob.cpp:889
-msgid "No Incremental Streaming"
-msgstr "कोई इन्क्रीमेंटल स्ट्रीमिंग नइ"
-
-#: projects/datacd/k3bdatajob.cpp:938
+#: projects/datacd/k3bdatajob.cpp:934
 msgid "Creating Data Image File"
 msgstr "डाटा इमेज फाइल बनात हे"
 
-#: projects/datacd/k3bdatajob.cpp:942
+#: projects/datacd/k3bdatajob.cpp:938
 msgid "Writing Data Project"
 msgstr ""
 
-#: projects/datacd/k3bdatajob.cpp:948
+#: projects/datacd/k3bdatajob.cpp:944
 msgid "Writing Multisession Project"
 msgstr ""
 
-#: projects/datacd/k3bdatajob.cpp:962
+#: projects/datacd/k3bdatajob.cpp:958
 #, fuzzy, kde-format
 msgid "ISO9660 Filesystem (Size: %2) - %1 copy"
 msgid_plural "ISO9660 Filesystem (Size: %2) - %1 copies"
 msgstr[0] "आईएसओ9660 फाइलसिसटम (आकार: %1)"
 msgstr[1] "आईएसओ9660 फाइलसिसटम (आकार: %1)"
 
-#: projects/datacd/k3bdatajob.cpp:967
+#: projects/datacd/k3bdatajob.cpp:963
 #, kde-format
 msgid "ISO9660 Filesystem (Size: %1)"
 msgstr "आईएसओ9660 फाइलसिसटम (आकार: %1)"
-
-#: projects/datacd/k3bdatajob.cpp:1014
-msgid "Most writers do not support writing multisession CDs in DAO mode."
-msgstr ""
 
 #: projects/k3bgrowisofswriter.cpp:161
 #, kde-format
@@ -2628,18 +2704,18 @@ msgstr ""
 msgid "Writing data"
 msgstr "डाटा लिखत हे"
 
-#: projects/k3bgrowisofswriter.cpp:530 projects/k3bcdrecordwriter.cpp:787
+#: projects/k3bgrowisofswriter.cpp:530 projects/k3bcdrecordwriter.cpp:790
 #: projects/k3bcdrdaowriter.cpp:745
 #, kde-format
 msgid "Average overall write speed: %1 KB/s (%2x)"
 msgstr "कुल औसत लिखे के गति: %1 कि.बा/से. (%2x)"
 
-#: projects/k3bgrowisofswriter.cpp:535 projects/k3bcdrecordwriter.cpp:782
+#: projects/k3bgrowisofswriter.cpp:535 projects/k3bcdrecordwriter.cpp:785
 #: projects/k3bcdrdaowriter.cpp:725
 msgid "Simulation successfully completed"
 msgstr ""
 
-#: projects/k3bgrowisofswriter.cpp:537 projects/k3bcdrecordwriter.cpp:784
+#: projects/k3bgrowisofswriter.cpp:537 projects/k3bcdrecordwriter.cpp:787
 #: projects/k3bcdrdaowriter.cpp:733
 msgid "Writing successfully completed"
 msgstr ""
@@ -3025,10 +3101,6 @@ msgstr "ट्रैक्स ल सामान्य करे के सम�
 msgid "Unable to write on-the-fly with these audio sources."
 msgstr ""
 
-#: projects/audiocd/k3baudiojob.cpp:253
-msgid "Track lengths below 4 seconds violate the Red Book standard."
-msgstr ""
-
 #: projects/audiocd/k3baudiojob.cpp:348
 #, kde-format
 msgid "Creating image files in %1"
@@ -3187,196 +3259,196 @@ msgstr "सिरिफ सत्र 1 क्लोन करे जाही."
 msgid "Unable to fixate the disk."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:667 projects/k3bcdrdaowriter.cpp:780
+#: projects/k3bcdrecordwriter.cpp:670 projects/k3bcdrdaowriter.cpp:780
 #, fuzzy, c-format, kde-format
 msgid "Medium or burner does not support writing at %1x speed"
 msgstr "राइटर रा राइटिंग समर्थित नइ करे."
 
-#: projects/k3bcdrecordwriter.cpp:669
+#: projects/k3bcdrecordwriter.cpp:672
 #, c-format, kde-format
 msgid "Switching burn speed up to %1x"
 msgstr "बर्न गति ल बढ़ा कर %1x मं स्विच करत हे"
 
-#: projects/k3bcdrecordwriter.cpp:671
+#: projects/k3bcdrecordwriter.cpp:674
 #, c-format, kde-format
 msgid "Switching burn speed down to %1x"
 msgstr "बर्न गति ल कम कर %1x मं स्विच करत हे"
 
-#: projects/k3bcdrecordwriter.cpp:683
+#: projects/k3bcdrecordwriter.cpp:686
 msgid "Starting disc write"
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:703
+#: projects/k3bcdrecordwriter.cpp:706
 msgid "Writing Leadin"
 msgstr "लीडए लिखत हे"
 
-#: projects/k3bcdrecordwriter.cpp:706
+#: projects/k3bcdrecordwriter.cpp:709
 msgid "Writing Leadout"
 msgstr "लीडआउट लिखत हे"
 
-#: projects/k3bcdrecordwriter.cpp:709
+#: projects/k3bcdrecordwriter.cpp:712
 msgid "Writing pregap"
 msgstr "प्रीगेप लिखत हे"
 
-#: projects/k3bcdrecordwriter.cpp:712
+#: projects/k3bcdrecordwriter.cpp:715
 msgid "Performing Optimum Power Calibration"
 msgstr "ओप्टिमम पावर कैलिब्रेसन करत हे"
 
-#: projects/k3bcdrecordwriter.cpp:715
+#: projects/k3bcdrecordwriter.cpp:718
 msgid "Sending CUE sheet"
 msgstr "क्यू सीट भेजिस जात हे"
 
-#: projects/k3bcdrecordwriter.cpp:718
+#: projects/k3bcdrecordwriter.cpp:721
 msgid "Enabled Burnfree"
 msgstr "बर्नफ्री सक्छम हे"
 
-#: projects/k3bcdrecordwriter.cpp:721
+#: projects/k3bcdrecordwriter.cpp:724
 msgid "Disabled Burnfree"
 msgstr "बर्नफ्री अक्छम हे"
 
-#: projects/k3bcdrecordwriter.cpp:737
+#: projects/k3bcdrecordwriter.cpp:740
 #, kde-format
 msgid "Burnfree was used once."
 msgid_plural "Burnfree was used %1 times."
 msgstr[0] ""
 msgstr[1] ""
 
-#: projects/k3bcdrecordwriter.cpp:743
+#: projects/k3bcdrecordwriter.cpp:746
 #, kde-format
 msgid "Buffer was low once."
 msgid_plural "Buffer was low %1 times."
 msgstr[0] ""
 msgstr[1] ""
 
-#: projects/k3bcdrecordwriter.cpp:807 projects/k3bcdrdaowriter.cpp:880
+#: projects/k3bcdrecordwriter.cpp:810 projects/k3bcdrdaowriter.cpp:880
 msgid "Enable overburning in the advanced K3b settings to burn anyway."
 msgstr "विस्तृत के3बी सेटिंग मन मं जइसन भी हो ओवरबर्निंग ल सक्छम करव."
 
-#: projects/k3bcdrecordwriter.cpp:814
+#: projects/k3bcdrecordwriter.cpp:817
 #, kde-format
 msgid "%1 could not reserve shared memory segment of requested size."
 msgstr "निवेदि आकार के सेयर्ड मेमोरी ल %1 रिजर्व नइ कर सकिस."
 
-#: projects/k3bcdrecordwriter.cpp:815
+#: projects/k3bcdrecordwriter.cpp:818
 msgid "Probably you chose a too large buffer size."
 msgstr "संभवत: आप मन बहुत बड़े बफर आकार चुन ले हो."
 
-#: projects/k3bcdrecordwriter.cpp:818
+#: projects/k3bcdrecordwriter.cpp:821
 msgid "OPC failed. Probably the writer does not like the medium."
 msgstr "ओपीसी फेल. संभवत: राइटर ल मीडियम पसंद नइ आइस."
 
-#: projects/k3bcdrecordwriter.cpp:821
+#: projects/k3bcdrecordwriter.cpp:824
 #, kde-format
 msgid "Unable to set write speed to %1."
 msgstr "लिखे के गति %1 मं सेट करे मं अक्छम."
 
-#: projects/k3bcdrecordwriter.cpp:822
+#: projects/k3bcdrecordwriter.cpp:825
 msgid "Probably this is lower than your writer's lowest writing speed."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:825
+#: projects/k3bcdrecordwriter.cpp:828
 msgid "Unable to send CUE sheet."
 msgstr "क्यू सीट भेजे मं अक्छम."
 
-#: projects/k3bcdrecordwriter.cpp:827 projects/k3bcdrecordwriter.cpp:868
-#: projects/k3bcdrecordwriter.cpp:885
+#: projects/k3bcdrecordwriter.cpp:830 projects/k3bcdrecordwriter.cpp:871
+#: projects/k3bcdrecordwriter.cpp:891
 msgid "Sometimes using TAO writing mode solves this issue."
 msgstr "कभी कभी टीएओ लिखे के मोड से एखर समस्या के हल निकल सकथे."
 
-#: projects/k3bcdrecordwriter.cpp:830
+#: projects/k3bcdrecordwriter.cpp:833
 msgid "Unable to open new session."
 msgstr "नवा सत्र खोले मं अक्छम."
 
-#: projects/k3bcdrecordwriter.cpp:831
+#: projects/k3bcdrecordwriter.cpp:834
 msgid "Probably a problem with the medium."
 msgstr "संभवत: मीडियम के साथ कोनो समस्या हो सकथे."
 
-#: projects/k3bcdrecordwriter.cpp:834
+#: projects/k3bcdrecordwriter.cpp:837
 msgid "The disk might still be readable."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:836
+#: projects/k3bcdrecordwriter.cpp:839
 msgid "Try DAO writing mode."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:839
+#: projects/k3bcdrecordwriter.cpp:842
 #, kde-format
 msgid "%1 has no permission to open the device."
 msgstr "%1 तिर उपकरन ल खोले बर कोनो अनुमति नइ हे."
 
-#: projects/k3bcdrecordwriter.cpp:841
+#: projects/k3bcdrecordwriter.cpp:844
 msgid "You may use K3bsetup2 to solve this problem."
 msgstr "ये समस्या के समाधान करे बर के3बीसेटअप2 के उपयोग कर सकथो."
 
-#: projects/k3bcdrecordwriter.cpp:845
+#: projects/k3bcdrecordwriter.cpp:848
 msgid "Probably a buffer underrun occurred."
 msgstr "सायद बफर अंडररन होइस."
 
-#: projects/k3bcdrecordwriter.cpp:847
+#: projects/k3bcdrecordwriter.cpp:850
 msgid "Please enable Burnfree or choose a lower burning speed."
 msgstr "किरपा करके, बर्नफ्री सक्छम करव या बर्निंग के कम गति चुनव."
 
-#: projects/k3bcdrecordwriter.cpp:849
+#: projects/k3bcdrecordwriter.cpp:852
 msgid "Please choose a lower burning speed."
 msgstr "किरपा करके, बर्निंग के कम गति चुनव."
 
-#: projects/k3bcdrecordwriter.cpp:852
+#: projects/k3bcdrecordwriter.cpp:855
 msgid "Found a high-speed medium not suitable for the writer being used."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:853 projects/k3bcdrecordwriter.cpp:857
+#: projects/k3bcdrecordwriter.cpp:856 projects/k3bcdrecordwriter.cpp:860
 msgid "Use the 'force unsafe operations' option to ignore this."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:856
+#: projects/k3bcdrecordwriter.cpp:859
 msgid "Found a low-speed medium not suitable for the writer being used."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:860
+#: projects/k3bcdrecordwriter.cpp:863
 msgid "Most likely the burning failed due to low-quality media."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:863
+#: projects/k3bcdrecordwriter.cpp:866
 msgid "Another application is blocking the device (most likely automounting)."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:866
+#: projects/k3bcdrecordwriter.cpp:869
 msgid "A write error occurred."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:871
+#: projects/k3bcdrecordwriter.cpp:874
 msgid "Some drives do not support all erase types."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:872
+#: projects/k3bcdrecordwriter.cpp:875
 msgid "Try again using 'Complete' erasing."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:876
+#: projects/k3bcdrecordwriter.cpp:882
 msgid ""
 "Since kernel version 2.6.8 cdrecord cannot use SCSI transport when running "
 "suid root anymore."
 msgstr ""
 
-#: projects/k3bcdrecordwriter.cpp:877
+#: projects/k3bcdrecordwriter.cpp:883
 #, fuzzy
 msgid ""
 "You may use K3b::Setup to solve this problem or remove the suid bit manually."
 msgstr "ये समस्या के समाधान करे बर के3बीसेटअप2 के उपयोग कर सकथो."
 
-#: projects/k3bcdrecordwriter.cpp:888
+#: projects/k3bcdrecordwriter.cpp:894
 msgid "If you are running an unpatched cdrecord version..."
 msgstr "यदि आप मन सीडीरेकार्ड के अनपैच्ड संस्करन चलाथें ..."
 
-#: projects/k3bcdrecordwriter.cpp:889
+#: projects/k3bcdrecordwriter.cpp:895
 msgid "...and this error also occurs with high quality media..."
 msgstr "...अउ ए गलती जादा गुनवत्ता के मीडिया के साथ घलोक होथे..."
 
-#: projects/k3bcdrecordwriter.cpp:890
+#: projects/k3bcdrecordwriter.cpp:896
 msgid "...and the K3b FAQ does not help you..."
 msgstr "...अउ के3बी एफएक्यू आप मन के मदद नइ करे."
 
-#: projects/k3bcdrecordwriter.cpp:891
+#: projects/k3bcdrecordwriter.cpp:897
 msgid "...please include the debugging output in your problem report."
 msgstr "...किरपा करके, अपन समस्या रपट मं डिबगिंग आउटपुट सामिल करव."
 
@@ -3667,6 +3739,9 @@ msgstr ""
 #: videodvd/k3bvideodvd.cpp:323
 msgid "unknown code extension"
 msgstr ""
+
+#~ msgid "Forced by user. Growisofs will be called without further tests."
+#~ msgstr "कमइया से बाध्य करिस. ग्रोआईएसओएफएस ल आगू के जांच बर बलाही जाही."
 
 #~ msgid "Writer does not support buffer underrun free recording (BURNPROOF)"
 #~ msgstr "राइटर बफर अंडररन फ्री रेकार्डिंग समर्थित नइ करे (बर्नप्रूफ)"
