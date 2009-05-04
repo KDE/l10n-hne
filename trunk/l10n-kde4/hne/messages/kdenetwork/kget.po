@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-03 11:07+0200\n"
+"POT-Creation-Date: 2009-05-04 12:03+0200\n"
 "PO-Revision-Date: 2009-02-26 22:16+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -22,69 +22,62 @@ msgstr ""
 msgid "Plugins"
 msgstr "प्लगइन्स"
 
-#: conf/transfersgroupwidget.cpp:75
-msgid "The group name is empty"
-msgstr "समूह नाम खाली हे"
-
-#: conf/transfersgroupwidget.cpp:75
-msgid ""
-"A group can not have an empty name.\n"
-"Please select a new one."
-msgstr ""
-
-#: conf/transfersgroupwidget.cpp:86
+#: conf/transfersgroupwidget.cpp:81
 msgid "Group name already in use"
 msgstr "समूह नाम पहिली से ही उपयोग मं हे"
 
-#: conf/transfersgroupwidget.cpp:86
+#: conf/transfersgroupwidget.cpp:81
 msgid ""
-"Another group with this name already exists.\n"
-"Please select a different name."
+"Another group with this name already exists. Please select a different name."
 msgstr ""
 
-#: conf/transfersgroupwidget.cpp:104 conf/transfersgroupwidget.cpp:109
+#: conf/transfersgroupwidget.cpp:99 conf/transfersgroupwidget.cpp:104
 msgid "New Group"
 msgstr "नवा समूह"
 
-#: conf/transfersgroupwidget.cpp:130 core/kget.cpp:687 ui/contextmenu.cpp:133
-msgid "My Downloads"
-msgstr "मोर डाउनलोड्स"
-
-#: conf/transfersgroupwidget.cpp:132
-#, fuzzy
-msgid "You can not delete this group."
-msgstr "आप एखर समूह ल मिटा नइ सकहू!"
-
-#: conf/transfersgroupwidget.cpp:137
-#, kde-format
-msgid ""
-"Are you sure that you want to remove\n"
-"the group named %1?"
-msgstr ""
+#: conf/transfersgroupwidget.cpp:126
+#, fuzzy, kde-format
+#| msgid ""
+#| "Are you sure that you want to remove\n"
+#| "the group named %1?"
+msgid "Are you sure that you want to remove the group named %1?"
+msgid_plural "Are you sure that you want to remove all selected groups?"
+msgstr[0] ""
+"का आप मन सचमुच समूह नाम %1 \n"
+"को मिटाना चाहथो ?"
+msgstr[1] ""
 "का आप मन सचमुच समूह नाम %1 \n"
 "को मिटाना चाहथो ?"
 
-#: conf/transfersgroupwidget.cpp:170
+#: conf/transfersgroupwidget.cpp:127
+#, fuzzy
+#| msgid "Rename Group"
+msgid "Remove group"
+msgid_plural "Remove groups"
+msgstr[0] "समूह ल नवा नाम देव"
+msgstr[1] "समूह ल नवा नाम देव"
+
+#: conf/transfersgroupwidget.cpp:166
 msgid "Use default directories for groups as suggestion"
 msgstr ""
 
-#: conf/transfersgroupwidget.cpp:175
+#: conf/transfersgroupwidget.cpp:171
 msgid "Add"
 msgstr "जोड़व"
 
-#: conf/transfersgroupwidget.cpp:177
+#: conf/transfersgroupwidget.cpp:173
 msgid "Delete"
 msgstr "मेटाव"
 
-#: conf/transfersgroupwidget.cpp:180
+#: conf/transfersgroupwidget.cpp:176
 msgid "Rename"
 msgstr "नाम बदलव"
 
-#: conf/transfersgroupwidget.cpp:186
+#: conf/transfersgroupwidget.cpp:182
 msgid "Select Icon"
 msgstr "चिनहा चुनव"
 
-#: conf/transfersgroupwidget.cpp:188
+#: conf/transfersgroupwidget.cpp:184
 msgid "Configure..."
 msgstr "कान्फिगर..."
 
@@ -327,6 +320,10 @@ msgstr "%1 मं सहेज नइ सके."
 msgid "Error"
 msgstr "गलती"
 
+#: core/kget.cpp:687 ui/contextmenu.cpp:138
+msgid "My Downloads"
+msgstr "मोर डाउनलोड्स"
+
 #. i18n: file: ui/newtransferwidget.ui:25
 #. i18n: ectx: property (text), widget (KTitleWidget, titleWidget)
 #: core/kget.cpp:799 ui/newtransferdialog.cpp:238 rc.cpp:472
@@ -386,6 +383,12 @@ msgstr ""
 "%1\n"
 " पहिली से ही मौजूद हे. \n"
 "का आप मन एखर ऊपर लिखना चाहथो ?"
+
+#: core/kget.cpp:898
+#, fuzzy
+#| msgid "Overwrite existing file?"
+msgid "Overwrite destination"
+msgstr "अभी हाल के फाइल मेटाय के लिखव?"
 
 #: core/kget.cpp:1027
 #, kde-format
@@ -1472,6 +1475,22 @@ msgstr "ट्रैकर जोड़व"
 msgid "Semantic desktop"
 msgstr ""
 
+#: ui/contextmenu.cpp:147 mainwindow.cpp:182
+#, fuzzy
+#| msgid "Delete Group"
+msgid "Delete Group"
+msgid_plural "Delete Groups"
+msgstr[0] "समूह मेटाव"
+msgstr[1] "समूह मेटाव"
+
+#: ui/contextmenu.cpp:151 mainwindow.cpp:187
+#, fuzzy
+#| msgid "Rename Group"
+msgid "Rename Group"
+msgid_plural "Rename Groups"
+msgstr[0] "समूह ल नवा नाम देव"
+msgstr[1] "समूह ल नवा नाम देव"
+
 #: ui/transfersviewdelegate.cpp:491
 msgid "Transfer details"
 msgstr "ट्रांसफर विवरन"
@@ -1727,6 +1746,7 @@ msgstr "संकली आयात करव"
 
 #: ui/linkview/kget_linkview.cpp:82
 #, fuzzy
+msgctxt "Download the items which have been selected"
 msgid "&Download checked"
 msgstr "चेक करे ल डाउनलोड करव"
 
@@ -2068,14 +2088,6 @@ msgstr "ट्रांसफर सूची निर्यात करव...
 msgid "&Export Transfers as Plain Text..."
 msgstr "ट्रांसफर ल सादा पाठ जइसन निर्यात करव... (&E)"
 
-#: mainwindow.cpp:182
-msgid "Delete Group"
-msgstr "समूह मेटाव"
-
-#: mainwindow.cpp:187
-msgid "Rename Group"
-msgstr "समूह ल नवा नाम देव"
-
 #: mainwindow.cpp:192
 msgid "Set Icon"
 msgstr "चिनहा सेट करव"
@@ -2232,12 +2244,6 @@ msgstr[1] ""
 #, fuzzy
 msgid "Confirm transfer delete"
 msgstr "ट्रांसफर सूची लोड करव (&L)"
-
-#: mainwindow.cpp:573
-#, fuzzy
-#| msgid "Delete"
-msgid "&Delete"
-msgstr "मेटाव"
 
 #: mainwindow.cpp:759
 msgid ""
@@ -3446,6 +3452,18 @@ msgstr ""
 #: rc.cpp:689
 msgid "List of whether the script is enabled"
 msgstr ""
+
+#~ msgid "The group name is empty"
+#~ msgstr "समूह नाम खाली हे"
+
+#, fuzzy
+#~ msgid "You can not delete this group."
+#~ msgstr "आप एखर समूह ल मिटा नइ सकहू!"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "&Delete"
+#~ msgstr "मेटाव"
 
 #, fuzzy
 #~| msgid "Cancel"
