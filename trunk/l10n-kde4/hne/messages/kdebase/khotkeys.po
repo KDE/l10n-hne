@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-27 10:59+0200\n"
+"POT-Creation-Date: 2009-05-05 11:20+0200\n"
 "PO-Revision-Date: 2009-02-05 17:12+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -102,23 +102,22 @@ msgstr "विंडो विवरनः"
 
 #. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:33
 #. i18n: ectx: property (text), widget (QLabel, comment_label)
-#. i18n: file: kcm_hotkeys/hotkeys_widget_base.ui:23
-#. i18n: ectx: attribute (title), widget (QWidget, comment_tab)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:19
+#. i18n: ectx: property (text), widget (QLabel, comment_label)
 #. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:33
 #. i18n: ectx: property (text), widget (QLabel, comment_label)
-#. i18n: file: kcm_hotkeys/hotkeys_widget_base.ui:23
-#. i18n: ectx: attribute (title), widget (QWidget, comment_tab)
-#: rc.cpp:32 rc.cpp:215 kcm_hotkeys/hotkeys_context_menu.cpp:274
-#: kcm_hotkeys/hotkeys_context_menu.cpp:302
-#: kcm_hotkeys/hotkeys_context_menu.cpp:330 kcm_hotkeys/hotkeys_model.cpp:92
-msgid "Comment"
-msgstr "टिप्पनी"
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:19
+#. i18n: ectx: property (text), widget (QLabel, comment_label)
+#: rc.cpp:32 rc.cpp:125
+#, fuzzy
+msgid "Comment:"
+msgstr "टिप्पनीः (&C)"
 
 #. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:40
 #. i18n: ectx: property (text), widget (QLabel, window_title_label)
 #: rc.cpp:35
 #, fuzzy
-msgid "Window Title"
+msgid "Window title:"
 msgstr "विंडो सीर्सकः (&t)"
 
 #. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:48
@@ -237,14 +236,14 @@ msgstr "रेगुलर एक्सप्रेसन से एक जइ�
 #. i18n: ectx: property (text), widget (QLabel, window_class_label)
 #: rc.cpp:59
 #, fuzzy
-msgid "Window Class"
+msgid "Window class:"
 msgstr "विंडो क्लासः (&l)"
 
 #. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:132
 #. i18n: ectx: property (text), widget (QLabel, window_role_label)
 #: rc.cpp:83
 #, fuzzy
-msgid "Window Role"
+msgid "Window role:"
 msgstr "विंडो भूमिका (&r):"
 
 #. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:204
@@ -283,30 +282,25 @@ msgstr "गोठ"
 msgid "Dock"
 msgstr "डाक"
 
-#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:19
-#. i18n: ectx: property (text), widget (QLabel, comment_label)
-#: rc.cpp:125
-#, fuzzy
-msgid "Comment:"
-msgstr "टिप्पनीः (&C)"
-
 #. i18n: file: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:38
 #. i18n: ectx: property (text), widget (QPushButton, edit_button)
 #: rc.cpp:128
 #, fuzzy
-msgid "&Edit"
+msgid "&Edit..."
 msgstr "संपादन..."
 
 #. i18n: file: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:45
 #. i18n: ectx: property (text), widget (QPushButton, new_button)
 #: rc.cpp:131
-msgid "&New"
+#, fuzzy
+#| msgid "&New"
+msgid "&New..."
 msgstr "नवा (&N)"
 
 #. i18n: file: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:52
 #. i18n: ectx: property (text), widget (QPushButton, duplicate_button)
 #: rc.cpp:134
-msgid "&Duplicate"
+msgid "&Duplicate..."
 msgstr ""
 
 #. i18n: file: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:59
@@ -469,6 +463,14 @@ msgstr "कमांड/यूआरएल:"
 msgid "Settings"
 msgstr "अवाज सेटिंग"
 
+#. i18n: file: kcm_hotkeys/hotkeys_widget_base.ui:23
+#. i18n: ectx: attribute (title), widget (QWidget, comment_tab)
+#: rc.cpp:215 kcm_hotkeys/hotkeys_context_menu.cpp:274
+#: kcm_hotkeys/hotkeys_context_menu.cpp:302
+#: kcm_hotkeys/hotkeys_context_menu.cpp:330 kcm_hotkeys/hotkeys_model.cpp:92
+msgid "Comment"
+msgstr "टिप्पनी"
+
 #: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:32
 #, fuzzy
 msgid "Edit Gesture"
@@ -531,12 +533,15 @@ msgid "New Group"
 msgstr "नवा समूह"
 
 #: kcm_hotkeys/hotkeys_context_menu.cpp:147
-msgid "Export"
-msgstr ""
+#, fuzzy
+msgid "Export..."
+msgstr "संपादन..."
 
 #: kcm_hotkeys/hotkeys_context_menu.cpp:148
-msgid "Import"
-msgstr ""
+#, fuzzy
+#| msgid "Import New Actions..."
+msgid "Import..."
+msgstr "नवा काम आयात करव..."
 
 #: kcm_hotkeys/hotkeys_context_menu.cpp:162
 #, fuzzy
@@ -734,6 +739,10 @@ msgid "Menu Editor entries"
 msgstr "मेन्यू संपादक प्रविस्टि"
 
 #, fuzzy
+#~ msgid "&Edit"
+#~ msgstr "संपादन..."
+
+#, fuzzy
 #~ msgid "Active Window"
 #~ msgstr "सक्रिय विंडो"
 
@@ -843,9 +852,6 @@ msgstr "मेन्यू संपादक प्रविस्टि"
 
 #~ msgid "Disable KHotKeys daemon"
 #~ msgstr "के-हाट-की डेमन अक्छम करव"
-
-#~ msgid "Import New Actions..."
-#~ msgstr "नवा काम आयात करव..."
 
 #~ msgid "Keyboard_input_widget_ui"
 #~ msgstr "कुंजीपट_इनपुट_विजेट_यूआई"

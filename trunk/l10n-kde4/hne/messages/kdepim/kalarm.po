@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-30 11:45+0200\n"
+"POT-Creation-Date: 2009-05-05 11:24+0200\n"
 "PO-Revision-Date: 2009-02-27 17:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1275,20 +1275,26 @@ msgid "New Alarms && Templates"
 msgstr "नवा अलार्म टैम्प्लेट्स (&&)"
 
 #: prefdlg.cpp:798
+#, fuzzy
+#| msgctxt "@option:radio"
+#| msgid "Store in default resource"
 msgctxt "@option:radio"
-msgid "Store in default resource"
+msgid "Store in default calendar"
 msgstr "डिफाल्ट संसाधन मं भंडारित करव"
 
 #: prefdlg.cpp:800
 msgctxt "@info:whatsthis"
 msgid ""
-"Add all new alarms and alarm templates to the default resources, without "
+"Add all new alarms and alarm templates to the default calendars, without "
 "prompting."
 msgstr ""
 
 #: prefdlg.cpp:802
+#, fuzzy
+#| msgctxt "@option:radio"
+#| msgid "Prompt for which resource to store in"
 msgctxt "@option:radio"
-msgid "Prompt for which resource to store in"
+msgid "Prompt for which calendar to store in"
 msgstr "किस संसाधन मं भंडारित करना हे ओखर बर पूछव"
 
 #. i18n: file: kalarmconfig.kcfg:93
@@ -1296,10 +1302,10 @@ msgstr "किस संसाधन मं भंडारित करना �
 #: prefdlg.cpp:805 rc.cpp:60 rc.cpp:426
 msgctxt "@info:whatsthis"
 msgid ""
-"<para>When saving a new alarm or alarm template, prompt for which resource "
-"to store it in, if there is more than one active resource.</para><para>Note "
+"<para>When saving a new alarm or alarm template, prompt for which calendar "
+"to store it in, if there is more than one active calendar.</para><para>Note "
 "that archived alarms are always stored in the default archived alarm "
-"resource.</para>"
+"calendar.</para>"
 msgstr ""
 
 #: prefdlg.cpp:810
@@ -1347,19 +1353,24 @@ msgid "Delete all existing archived alarms."
 msgstr "सब्बो अभी हाल के अभिलेखित अलार्म ल मेटाव."
 
 #: prefdlg.cpp:843
+#, fuzzy
+#| msgctxt "@info:whatsthis"
+#| msgid ""
+#| "Delete all existing archived alarms (from the default archived alarm "
+#| "resource only)."
 msgctxt "@info:whatsthis"
 msgid ""
 "Delete all existing archived alarms (from the default archived alarm "
-"resource only)."
+"calendar only)."
 msgstr ""
 "सब्बो अभी हाल के अभिलेखित अलार्म ल मेटाव (सिरिफ डिफाल्ट अभिलेखित अलार्म संसाधन मन से)."
 
 #: prefdlg.cpp:887
 msgctxt "@info"
 msgid ""
-"<para>A default resource is required in order to archive alarms, but none is "
+"<para>A default calendar is required in order to archive alarms, but none is "
 "currently enabled.</para><para>If you wish to keep expired alarms, please "
-"first use the resources view to select a default archived alarms resource.</"
+"first use the calendars view to select a default archived alarms calendar.</"
 "para>"
 msgstr ""
 
@@ -1369,11 +1380,14 @@ msgid "Do you really want to delete all archived alarms?"
 msgstr "का आप मन सचमुच सब्बो अभिलेखित अलार्म ल मिटाना चाहथो ?"
 
 #: prefdlg.cpp:904
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "Do you really want to delete all archived alarms?"
 msgctxt "@info"
 msgid ""
 "Do you really want to delete all alarms in the default archived alarm "
-"resource?"
-msgstr ""
+"calendar?"
+msgstr "का आप मन सचमुच सब्बो अभिलेखित अलार्म ल मिटाना चाहथो ?"
 
 #: prefdlg.cpp:923
 msgctxt "@label"
@@ -1900,7 +1914,7 @@ msgstr "निवेदित फोंट "
 #, kde-format
 msgctxt "@info"
 msgid ""
-"Resource <resource>%1</resource> is in an old format (<application>KAlarm</"
+"Calendar <resource>%1</resource> is in an old format (<application>KAlarm</"
 "application> version %2), and will be read-only unless you choose to update "
 "it to the current format."
 msgstr ""
@@ -1909,7 +1923,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info"
 msgid ""
-"Some or all of the alarms in resource <resource>%1</resource> are in an old "
+"Some or all of the alarms in calendar <resource>%1</resource> are in an old "
 "<application>KAlarm</application> format, and will be read-only unless you "
 "choose to update them to the current format."
 msgstr ""
@@ -1918,10 +1932,10 @@ msgstr ""
 #, kde-format
 msgctxt "@info"
 msgid ""
-"<para>%1</para><para><warning>Do not update the resource if it is shared "
+"<para>%1</para><para><warning>Do not update the calendar if it is shared "
 "with other users who run an older version of <application>KAlarm</"
 "application>. If you do so, they may be unable to use it any more.</"
-"warning></para><para>Do you wish to update the resource?</para>"
+"warning></para><para>Do you wish to update the calendar?</para>"
 msgstr ""
 
 #: functions.cpp:143
@@ -2015,7 +2029,7 @@ msgstr "<para>%1</para><para>का आप मन सही मं बदला�
 #: functions.cpp:976
 #, fuzzy
 msgctxt "@info"
-msgid "You must enable a template resource to save the template in"
+msgid "You must enable a template calendar to save the template in"
 msgstr "जिस संसाधन मं अलार्म ल सहेजना हे ओला आप मन ल चुनना होही"
 
 #: functions.cpp:1139
@@ -2559,9 +2573,12 @@ msgid "No month selected"
 msgstr "कोई महिना चुने नइ गिस"
 
 #: resourceselector.cpp:73
+#, fuzzy
+#| msgctxt "@info/plain"
+#| msgid "Calendar Files"
 msgctxt "@title:group"
-msgid "Resources"
-msgstr "संसाधन "
+msgid "Calendars"
+msgstr "कलेन्डर फाइल मन ल"
 
 #: resourceselector.cpp:77
 msgctxt "@item:inlistbox"
@@ -2579,16 +2596,19 @@ msgid "Alarm Templates"
 msgstr "अलार्म टैम्प्लेट्स"
 
 #: resourceselector.cpp:81
+#, fuzzy
+#| msgctxt "@info:whatsthis"
+#| msgid "Choose which type of data to show alarm resources for"
 msgctxt "@info:whatsthis"
-msgid "Choose which type of data to show alarm resources for"
+msgid "Choose which type of data to show alarm calendars for"
 msgstr "अलार्म संसाधन मन बर कोन से किसिम के डाटा देखाना हे ए चुनव"
 
 #: resourceselector.cpp:95
 msgctxt "@info:whatsthis"
 msgid ""
-"List of available resources of the selected type. The checked state shows "
-"whether a resource is enabled (checked) or disabled (unchecked). The default "
-"resource is shown in bold."
+"List of available calendars of the selected type. The checked state shows "
+"whether a calendar is enabled (checked) or disabled (unchecked). The default "
+"calendar is shown in bold."
 msgstr ""
 
 #: resourceselector.cpp:106 templatedlg.cpp:98
@@ -2597,104 +2617,150 @@ msgid "Edit..."
 msgstr "संपादन..."
 
 #: resourceselector.cpp:111
+#, fuzzy
+#| msgctxt "@info:whatsthis"
+#| msgid "Edit the highlighted resource"
 msgctxt "@info:whatsthis"
-msgid "Edit the highlighted resource"
+msgid "Edit the highlighted calendar"
 msgstr "चमकाय गे संसाधन संपादित करव"
 
 #: resourceselector.cpp:112
 msgctxt "@info:whatsthis"
 msgid ""
-"<para>Remove the highlighted resource from the list.</para><para>The "
-"resource itself is left intact, and may subsequently be reinstated in the "
+"<para>Remove the highlighted calendar from the list.</para><para>The "
+"calendar itself is left intact, and may subsequently be reinstated in the "
 "list if desired.</para>"
 msgstr ""
 
 #: resourceselector.cpp:138
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Add a new active alarm resource"
 msgctxt "@info:tooltip"
-msgid "Add a new active alarm resource"
+msgid "Add a new active alarm calendar"
 msgstr "एक नवा सक्रिय अलार्म संसाधन जोड़व"
 
 #: resourceselector.cpp:142
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Add a new archived alarm resource"
 msgctxt "@info:tooltip"
-msgid "Add a new archived alarm resource"
+msgid "Add a new archived alarm calendar"
 msgstr "एक नवा अभिलेखित अलार्म संसाधन जोड़व"
 
 #: resourceselector.cpp:146
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Add a new alarm template resource"
 msgctxt "@info:tooltip"
-msgid "Add a new alarm template resource"
+msgid "Add a new alarm template calendar"
 msgstr "एक नवा अलार्म टैम्पलेट संसाधन जोड़व"
 
 #: resourceselector.cpp:162 resourceconfigdialog.cpp:47
+#, fuzzy
+#| msgctxt "@title:group"
+#| msgid "Alarm Configuration"
 msgctxt "@title:window"
-msgid "Resource Configuration"
-msgstr "रिसोर्स कान्फिगरेसन"
+msgid "Calendar Configuration"
+msgstr "अलार्म कान्फिगरेसन"
 
 #: resourceselector.cpp:163
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "Select storage type of new resource:"
 msgctxt "@info"
-msgid "Select storage type of new resource:"
+msgid "Select storage type of new calendar:"
 msgstr "नवा रिसोर्स के भंडार सैली चुनव:"
 
 #: resourceselector.cpp:170
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Unable to create resource of type <resource>%1</resource>."
 msgctxt "@info"
-msgid "Unable to create resource of type <resource>%1</resource>."
+msgid "Unable to create calendar of type <resource>%1</resource>."
 msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
 
 #: resourceselector.cpp:173
 #, kde-format
 msgctxt "@info/plain"
-msgid "%1 resource"
-msgstr "रिसोर्स %1 "
+msgid "%1 calendar"
+msgstr ""
 
 #: resourceselector.cpp:212
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "You cannot make your default active alarm resource read-only."
 msgctxt "@info"
-msgid "You cannot make your default active alarm resource read-only."
+msgid "You cannot make your default active alarm calendar read-only."
 msgstr "आप अपन डिफाल्ट सक्रिय अलार्म रिसोर्स ल सिरिफ पढ़िस जाय जा सके नइ बना सके."
 
 #: resourceselector.cpp:219
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "You cannot make your default active alarm resource read-only."
 msgctxt "@info"
 msgid ""
-"You cannot make your default archived alarm resource read-only while expired "
+"You cannot make your default archived alarm calendar read-only while expired "
 "alarms are configured to be kept."
-msgstr ""
+msgstr "आप अपन डिफाल्ट सक्रिय अलार्म रिसोर्स ल सिरिफ पढ़िस जाय जा सके नइ बना सके."
 
 #: resourceselector.cpp:223
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "Do you really want to make your default resource read-only?"
 msgctxt "@info"
-msgid "Do you really want to make your default resource read-only?"
+msgid "Do you really want to make your default calendar read-only?"
 msgstr "का आप मन सचमुच अपन डिफाल्ट रिसोर्स ल सिरिफ पढ़िस जाय जा सके बनाना चाहथो ?"
 
 #: resourceselector.cpp:246
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "You cannot remove your default active alarm resource."
 msgctxt "@info"
-msgid "You cannot remove your default active alarm resource."
+msgid "You cannot remove your default active alarm calendar."
 msgstr "आप अपन डिफाल्ट सक्रिय अलार्म संसाधन ल मिटा नइ सकहू."
 
 #: resourceselector.cpp:253
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "You cannot remove your default active alarm resource."
 msgctxt "@info"
 msgid ""
-"You cannot remove your default archived alarm resource while expired alarms "
+"You cannot remove your default archived alarm calendar while expired alarms "
 "are configured to be kept."
-msgstr ""
+msgstr "आप अपन डिफाल्ट सक्रिय अलार्म संसाधन ल मिटा नइ सकहू."
 
 #: resourceselector.cpp:258
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Do you really want to remove your default resource (<resource>%1</"
+#| "resource>) from the list?"
 msgctxt "@info"
 msgid ""
-"Do you really want to remove your default resource (<resource>%1</resource>) "
+"Do you really want to remove your default calendar (<resource>%1</resource>) "
 "from the list?"
 msgstr ""
 "का आप मन सही मं ए डिफाल्ट संसाधन मन <resource>%1</resource> ल सूची से मिटाना "
 "चाहथो ?"
 
 #: resourceselector.cpp:259
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Do you really want to remove the resource <resource>%1</resource> from "
+#| "the list?"
 msgctxt "@info"
 msgid ""
-"Do you really want to remove the resource <resource>%1</resource> from the "
+"Do you really want to remove the calendar <resource>%1</resource> from the "
 "list?"
 msgstr "का आप मन संसाधन <resource>%1</resource> ल सूची से मिटाना चाहथो ?"
 
 #: resourceselector.cpp:291
-msgctxt "@action Reload resource"
+#, fuzzy
+#| msgctxt "@action Reload resource"
+#| msgid "Re&load"
+msgctxt "@action Reload calendar"
 msgid "Re&load"
 msgstr "फिर से लोड करव (&l)"
 
@@ -2781,7 +2847,10 @@ msgid "General Settings"
 msgstr "सामान्य सेटिंग"
 
 #: resourceconfigdialog.cpp:62
-msgctxt "@label:textbox Resource name"
+#, fuzzy
+#| msgctxt "@label:textbox Resource name"
+#| msgid "Name:"
+msgctxt "@label:textbox Calendar name"
 msgid "Name:"
 msgstr "नाम:"
 
@@ -2791,14 +2860,19 @@ msgid "Read-only"
 msgstr "सिरिफ पढ़े बर"
 
 #: resourceconfigdialog.cpp:80
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title:group"
+#| msgid "<resource>%1</resource> Resource Settings"
 msgctxt "@title:group"
-msgid "<resource>%1</resource> Resource Settings"
+msgid "<resource>%1</resource> Calendar Settings"
 msgstr "<resource>%1</resource> संसाधन सेटिंग"
 
 #: resourceconfigdialog.cpp:122
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "Please enter a resource name."
 msgctxt "@info"
-msgid "Please enter a resource name."
+msgid "Please enter a calendar name."
 msgstr "किरपा करके, संसाधन नाम भरव."
 
 #: latecancel.cpp:37
@@ -3034,8 +3108,11 @@ msgid ""
 msgstr ""
 
 #: editdlg.cpp:980
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "You must select a resource to save the alarm in"
 msgctxt "@info"
-msgid "You must select a resource to save the alarm in"
+msgid "You must select a calendar to save the alarm in"
 msgstr "जिस संसाधन मं अलार्म ल सहेजना हे ओला आप मन ल चुनना होही"
 
 #: editdlg.cpp:1057
@@ -3797,8 +3874,11 @@ msgstr "अलार्म संपादन गोठ मं परयोग �
 #. i18n: file: kalarmconfig.kcfg:92
 #. i18n: ectx: label, entry (AskResource), group (General)
 #: rc.cpp:57 rc.cpp:423
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Prompt for which resource to store in"
 msgctxt "@label"
-msgid "Prompt for which resource to store in"
+msgid "Prompt for which calendar to store in"
 msgstr "किस संसाधन मं भंडारित करना हे ओखर बर पूछव"
 
 #. i18n: file: kalarmconfig.kcfg:97
@@ -4893,12 +4973,18 @@ msgid "Disabled"
 msgstr "अक्छम"
 
 #: resources/alarmresource.cpp:334
-msgctxt "@info/plain Parameter in 'Default resource: Yes/No'"
+#, fuzzy
+#| msgctxt "@info/plain Parameter in 'Default resource: Yes/No'"
+#| msgid "Yes"
+msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
 msgid "Yes"
 msgstr "हाँ"
 
 #: resources/alarmresource.cpp:334
-msgctxt "@info/plain Parameter in 'Default resource: Yes/No'"
+#, fuzzy
+#| msgctxt "@info/plain Parameter in 'Default resource: Yes/No'"
+#| msgid "No"
+msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
 msgid "No"
 msgstr "नइ"
 
@@ -4906,8 +4992,8 @@ msgstr "नइ"
 #, kde-format
 msgctxt "@info"
 msgid ""
-"<title>%1</title><para>Resource type: %2<nl/>Contents: %3<nl/>%4: <filename>%"
-"5</filename><nl/>Permissions: %6<nl/>Status: %7<nl/>Default resource: %8</"
+"<title>%1</title><para>Calendar type: %2<nl/>Contents: %3<nl/>%4: <filename>%"
+"5</filename><nl/>Permissions: %6<nl/>Status: %7<nl/>Default calendar: %8</"
 "para>"
 msgstr ""
 
@@ -4915,7 +5001,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info"
 msgid ""
-"Resource <resource>%1</resource> cannot be made writable since it either was "
+"Calendar <resource>%1</resource> cannot be made writable since it either was "
 "not created by <application>KAlarm</application>, or was created by a newer "
 "version of <application>KAlarm</application>"
 msgstr ""
@@ -5236,20 +5322,29 @@ msgid "%1<nl/>%2: <filename>%3</filename>"
 msgstr "%1<nl/>%2: <filename>%3</filename>"
 
 #: resourcemodelview.cpp:416
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "You cannot disable your default active alarm resource."
 msgctxt "@info"
-msgid "You cannot disable your default active alarm resource."
+msgid "You cannot disable your default active alarm calendar."
 msgstr "आप अपन डिफाल्ट सक्रिय अलार्म रिसोर्स ल अक्छम नइ कर सके."
 
 #: resourcemodelview.cpp:425
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "You cannot disable your default active alarm resource."
 msgctxt "@info"
 msgid ""
-"You cannot disable your default archived alarm resource while expired alarms "
+"You cannot disable your default archived alarm calendar while expired alarms "
 "are configured to be kept."
-msgstr ""
+msgstr "आप अपन डिफाल्ट सक्रिय अलार्म रिसोर्स ल अक्छम नइ कर सके."
 
 #: resourcemodelview.cpp:430
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "Do you really want to disable your default resource?"
 msgctxt "@info"
-msgid "Do you really want to disable your default resource?"
+msgid "Do you really want to disable your default calendar?"
 msgstr "का आप मन सही मं अपन डिफाल्ट रिसोर्स ल अक्छम करना चाहू?"
 
 #: mainwindow.cpp:111
@@ -5532,6 +5627,18 @@ msgstr "जगहः"
 msgctxt "@info/plain Todo calendar item's due date/time"
 msgid "Due:"
 msgstr "तारीकः"
+
+#~ msgctxt "@title:group"
+#~ msgid "Resources"
+#~ msgstr "संसाधन "
+
+#~ msgctxt "@title:window"
+#~ msgid "Resource Configuration"
+#~ msgstr "रिसोर्स कान्फिगरेसन"
+
+#~ msgctxt "@info/plain"
+#~ msgid "%1 resource"
+#~ msgstr "रिसोर्स %1 "
 
 #~ msgctxt "@item:inmenu"
 #~ msgid "Display Alarm"
