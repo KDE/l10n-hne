@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-05 11:22+0200\n"
+"POT-Creation-Date: 2009-05-06 12:10+0200\n"
 "PO-Revision-Date: 2009-03-01 12:04+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 0.3\n"
+
+#: app/extractHereDndPlugin.cpp:47 kerfuffle/extractiondialog.cpp:121
+msgid "Extract here"
+msgstr "इहां निकालव"
 
 #: app/main.cpp:38
 msgid "Ark"
@@ -191,7 +195,7 @@ msgstr "अभिलेख खोलव"
 #: kerfuffle/adddialog.cpp:54
 #, fuzzy
 #| msgid "Source archive"
-msgid "Compress to archive"
+msgid "Compress to Archive"
 msgstr "स्रोत अभिलेख"
 
 #: kerfuffle/addtoarchive.cpp:91
@@ -282,37 +286,37 @@ msgstr ""
 msgid "Folder exists"
 msgstr "फोल्डर मौजूद हे"
 
-#: kerfuffle/extractiondialog.cpp:121
-msgid "Extract here"
-msgstr "इहां निकालव"
-
-#: kerfuffle/extractiondialog.cpp:121 part/part.cpp:321
+#: kerfuffle/extractiondialog.cpp:121 part/part.cpp:321 part/part.cpp:747
 msgid "Cancel"
 msgstr "खारिज करव"
 
-#: kerfuffle/jobs.cpp:138
+#: kerfuffle/jobs.cpp:110
+msgid "Sorry, an error occured while performing the operation."
+msgstr ""
+
+#: kerfuffle/jobs.cpp:141
 msgid "Loading archive..."
 msgstr "अभिलेख लोड करत हे..."
 
-#: kerfuffle/jobs.cpp:186
+#: kerfuffle/jobs.cpp:189
 msgid "Extracting all files"
 msgstr "सब्बो फाइल मन ल बाहिर निकाली जा रही हे"
 
-#: kerfuffle/jobs.cpp:190
+#: kerfuffle/jobs.cpp:193
 #, kde-format
 msgid "Extracting one file"
 msgid_plural "Extracting %1 files"
 msgstr[0] "एक फाइल निकालत हे"
 msgstr[1] "%1 फाइल निकालत हे"
 
-#: kerfuffle/jobs.cpp:225
+#: kerfuffle/jobs.cpp:228
 #, kde-format
 msgid "Adding a file"
 msgid_plural "Adding %1 files"
 msgstr[0] "1 फाइल जोड़त हे"
 msgstr[1] "%1 फाइल जोड़त हे"
 
-#: kerfuffle/jobs.cpp:246
+#: kerfuffle/jobs.cpp:249
 #, kde-format
 msgid "Deleting a file from the archive"
 msgid_plural "Deleting %1 files"
@@ -470,8 +474,10 @@ msgid "Click to preview the selected file"
 msgstr "चुने गे फाइल मन के प्रिव्यू देखे बर इहां किलिक करव"
 
 #: part/part.cpp:198
-msgid "E&xtract..."
-msgstr "एक्सट्रेक्ट... (&x)"
+#, fuzzy
+#| msgid "Extract"
+msgid "E&xtract"
+msgstr "निकालें"
 
 #: part/part.cpp:200
 msgid ""
@@ -510,7 +516,9 @@ msgid "Recent folders"
 msgstr ""
 
 #: part/part.cpp:248
-msgid "Quick extract to..."
+#, fuzzy
+#| msgid "Quick extract to..."
+msgid "Quick Extract To..."
 msgstr "इहां तुरंत एक्सट्रेक्ट..."
 
 #: part/part.cpp:311
@@ -523,11 +531,15 @@ msgid "The file '%1' already exists. Would you like to open it instead?"
 msgstr ""
 
 #: part/part.cpp:321
-msgid "File exists"
+#, fuzzy
+#| msgid "File exists"
+msgid "File Exists"
 msgstr "फाइल अस्तित्व मं हे"
 
 #: part/part.cpp:321
-msgid "Open file"
+#, fuzzy
+#| msgid "Open file"
+msgid "Open File"
 msgstr "फाइल खोलव"
 
 #: part/part.cpp:330
@@ -536,11 +548,13 @@ msgid "Error opening archive: the file '%1' was not found."
 msgstr ""
 
 #: part/part.cpp:330 part/part.cpp:374 part/part.cpp:415
-msgid "Error opening archive"
+#, fuzzy
+#| msgid "Error opening archive"
+msgid "Error Opening Archive"
 msgstr "अभिलेख खोले मं गलती"
 
 #: part/part.cpp:360
-msgid "Unable to determine archive type"
+msgid "Unable to Determine Archive Type"
 msgstr ""
 
 #: part/part.cpp:361
@@ -574,6 +588,16 @@ msgstr "फाइल मन ल जोड़व"
 #: part/part.cpp:717
 msgid "Add Folder"
 msgstr "फोल्डर जोड़व"
+
+#: part/part.cpp:747
+msgid "Deleting these files is not undoable. Are you sure you want to do this?"
+msgstr ""
+
+#: part/part.cpp:747
+#, fuzzy
+#| msgid "&Selected files only"
+msgid "Delete files"
+msgstr "सिरिफ चुने गे फाइल (&S)"
 
 #: plugins/7zipplugin/7zipplugin.cpp:60
 msgid "Unable to find 7zr, 7za or 7z"
@@ -936,6 +960,9 @@ msgstr "सब्बो फाइल (&f)"
 #: rc.cpp:85
 msgid "Open destination folder after extraction"
 msgstr ""
+
+#~ msgid "E&xtract..."
+#~ msgstr "एक्सट्रेक्ट... (&x)"
 
 #~ msgctxt "Timestamp"
 #~ msgid "Time"
