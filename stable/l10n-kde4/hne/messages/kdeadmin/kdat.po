@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdat\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-25 09:08+0200\n"
+"POT-Creation-Date: 2009-05-11 07:07+0200\n"
 "PO-Revision-Date: 2009-02-21 15:12+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -733,6 +733,26 @@ msgstr "के-डैटः लाग सहेजव"
 msgid "&Overwrite"
 msgstr "मेटाय के लिखव (&O)"
 
+#: main.cpp:40
+msgid "tar-based DAT archiver for KDE"
+msgstr "केडीई बर टार आधार से डैट अभिलेखागार"
+
+#: main.cpp:47
+msgid "KDat"
+msgstr "के-डैट"
+
+#: main.cpp:49
+msgid "(c) 1999-2000, Sean Vyain; 2001-2002 Lawrence Widman"
+msgstr "(c) 1999-2000, सीन व्यान; 2001-2002 लारेंस विडमैन"
+
+#: main.cpp:58
+msgid "Cannot allocate memory in kdat"
+msgstr "के-डैट मं मेमोरी एलोकेट नइ कर सके"
+
+#: main.cpp:75
+msgid "Lawrence Widman"
+msgstr "लारेंस विडमैन"
+
 #: Node.cpp:1194 Node.cpp:1264
 msgid "<no tape>"
 msgstr "<कोई टेप नइ>"
@@ -748,6 +768,228 @@ msgstr "बैकअप प्रोफाइल"
 #: OptionsDlg.cpp:37
 msgid "Options"
 msgstr "विकल्प"
+
+#. i18n: file: OptionsDlgWidget.ui:17
+#. i18n: ectx: property (windowTitle), widget (QWidget)
+#: rc.cpp:3
+msgid "Options Widget"
+msgstr "विकल्प विजेट"
+
+#. i18n: file: OptionsDlgWidget.ui:53
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox)
+#: rc.cpp:6
+msgid ""
+"This setting determines the capacity that KDat assumes your backup tapes to "
+"be.  This is used when formatting the tapes."
+msgstr ""
+
+#. i18n: file: OptionsDlgWidget.ui:67
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox)
+#: rc.cpp:9
+msgid ""
+"Tape drives read and write data in individual blocks.  This setting controls "
+"the size of each block, and should be set to your tape drive's block size.  "
+"For floppy tape drives this should be set to <b>10240</b> bytes."
+msgstr ""
+
+#. i18n: file: OptionsDlgWidget.ui:73
+#. i18n: ectx: property (text), item, widget (KComboBox)
+#: rc.cpp:12
+msgid "MB"
+msgstr "मे.बा."
+
+#. i18n: file: OptionsDlgWidget.ui:78
+#. i18n: ectx: property (text), item, widget (KComboBox)
+#: rc.cpp:15
+msgid "GB"
+msgstr "गी.बा."
+
+#. i18n: file: OptionsDlgWidget.ui:88
+#. i18n: ectx: property (whatsThis), item, widget (KComboBox)
+#: rc.cpp:19
+msgid ""
+"This option chooses whether the default tape size to the left is in "
+"megabytes (MB) or gigabytes (GB)."
+msgstr ""
+"ये विकल्प चुनथे  कि डेरी मं दे गे डिफाल्ट टेप आकार मेगाबाइट (मेबा) मं हे या गीगाबाइट "
+"(गीबा) में."
+
+#. i18n: file: OptionsDlgWidget.ui:96
+#. i18n: ectx: property (text), widget (QLabel)
+#: rc.cpp:22
+msgid "bytes"
+msgstr "बाइट्स"
+
+#. i18n: file: OptionsDlgWidget.ui:104
+#. i18n: ectx: property (text), widget (QLabel)
+#: rc.cpp:25
+msgid "Tape block size:"
+msgstr "टेप ब्लाक आकारः"
+
+#. i18n: file: OptionsDlgWidget.ui:115
+#. i18n: ectx: property (text), widget (QLabel)
+#: rc.cpp:28
+msgid "Default tape size:"
+msgstr "डिफाल्ट टेप आकारः"
+
+#. i18n: file: OptionsDlgWidget.ui:136
+#. i18n: ectx: property (text), widget (KPushButton)
+#. i18n: file: OptionsDlgWidget.ui:166
+#. i18n: ectx: property (text), widget (KPushButton)
+#: rc.cpp:31 rc.cpp:43 VerifyOptDlg.cpp:62
+msgid "..."
+msgstr "..."
+
+#. i18n: file: OptionsDlgWidget.ui:139
+#. i18n: ectx: property (toolTip), widget (KPushButton)
+#: rc.cpp:34
+msgid "Browse for the tar command."
+msgstr "टार कमांड बर ब्राउज करव."
+
+#. i18n: file: OptionsDlgWidget.ui:147
+#. i18n: ectx: property (whatsThis), widget (KLineEdit)
+#: rc.cpp:37
+msgid ""
+"The location in the filesystem of the <em>non-rewinding</em> tape device.  "
+"The default is <b>/dev/tape</b>."
+msgstr ""
+" <em>नान-रीवाइंडिंग</em> टेप उपकरन मं फाइल सिसटम मं जगह  डिफाल्ट हे: <b>/dev/tape</"
+"b>."
+
+#. i18n: file: OptionsDlgWidget.ui:155
+#. i18n: ectx: property (text), widget (QLabel)
+#: rc.cpp:40
+msgid "Tar command:"
+msgstr "टार कमांडः"
+
+#. i18n: file: OptionsDlgWidget.ui:169
+#. i18n: ectx: property (toolTip), widget (KPushButton)
+#: rc.cpp:46
+msgid "Browse for the tape device."
+msgstr "टेप उपकरन बर ब्राउज करव"
+
+#. i18n: file: OptionsDlgWidget.ui:177
+#. i18n: ectx: property (whatsThis), widget (KLineEdit)
+#: rc.cpp:49
+msgid ""
+"This setting controls the command that KDat uses to perform the tape "
+"backup.  The full path should be given.  The default is <b>tar</b>."
+msgstr ""
+
+#. i18n: file: OptionsDlgWidget.ui:185
+#. i18n: ectx: property (text), widget (QLabel)
+#: rc.cpp:52
+msgid "Tape device:"
+msgstr "टेप उपकरन:"
+
+#. i18n: file: OptionsDlgWidget.ui:198
+#. i18n: ectx: property (title), widget (QButtonGroup)
+#: rc.cpp:55
+msgid "Tape Drive Options"
+msgstr "टेप ड्राइव विकल्प"
+
+#. i18n: file: OptionsDlgWidget.ui:209
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: rc.cpp:58
+msgid "Load tape on mount"
+msgstr "माउन्ट मं टेप लोड करव"
+
+#. i18n: file: OptionsDlgWidget.ui:212
+#. i18n: ectx: property (toolTip), widget (QCheckBox)
+#: rc.cpp:61
+msgid "<qt>Issue an <tt>mtload</tt> command prior to mounting the tape.</qt>"
+msgstr "<qt>टेप ल माउन्ट करे से पहिली <tt>mtload</tt> कमांड चलाव .</qt>"
+
+#. i18n: file: OptionsDlgWidget.ui:217
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: rc.cpp:64
+msgid ""
+"This command issues an <tt>mtload</tt> command to the tape device before "
+"trying to mount it.\n"
+"\n"
+"This is required by some tape drives."
+msgstr ""
+
+#. i18n: file: OptionsDlgWidget.ui:225
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: rc.cpp:69
+msgid "Lock tape drive on mount"
+msgstr "माउन्ट मं  टेप ड्राइव तालाबंद करव"
+
+#. i18n: file: OptionsDlgWidget.ui:228
+#. i18n: ectx: property (toolTip), widget (QCheckBox)
+#: rc.cpp:72
+msgid "Disable the eject button after mounting the tape."
+msgstr "टेप ल माउन्ट करे के उपरांत इजेक्ट बटन ल अक्छम करव."
+
+#. i18n: file: OptionsDlgWidget.ui:233
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: rc.cpp:75
+msgid ""
+"This option makes KDat try to disable the eject button on the tape drive "
+"after the tape has been mounted.\n"
+"\n"
+"This doesn't work for all tape drives."
+msgstr ""
+
+#. i18n: file: OptionsDlgWidget.ui:241
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: rc.cpp:80
+msgid "Eject tape on unmount"
+msgstr "अनमाउन्ट मं टेप बाहिर करव"
+
+#. i18n: file: OptionsDlgWidget.ui:244
+#. i18n: ectx: property (toolTip), widget (QCheckBox)
+#: rc.cpp:83
+msgid ""
+"Try to eject the tape after it is unmounted.  Do not use this for ftape."
+msgstr ""
+"जब टेप अनमाउन्ट होही तहां टेप ल बाहिर निकाले के कोसिस करव. एखर उपयोग एफटेप बर नइ "
+"करव."
+
+#. i18n: file: OptionsDlgWidget.ui:249
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: rc.cpp:86
+msgid ""
+"Try to eject the tape after it has been unmounted.\n"
+"\n"
+"This option should not be used for floppy-tape drives."
+msgstr ""
+"जब टेप अनमाउन्ट होही तहां टेप ल बाहिर निकाले के कोसिस करव. \n"
+"\n"
+"एखर उपयोग फ्लापी-टेप ड्राइव बर नइ करव."
+
+#. i18n: file: OptionsDlgWidget.ui:257
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: rc.cpp:91
+msgid "Variable block size"
+msgstr "परिवर्तनीय ब्लाक आकार"
+
+#. i18n: file: OptionsDlgWidget.ui:260
+#. i18n: ectx: property (toolTip), widget (QCheckBox)
+#: rc.cpp:94
+msgid "Enable variable-block size support in the tape drive."
+msgstr "टेप ड्राइव मं वेरिएबल-ब्लाक आकार समर्थन सक्छम करव."
+
+#. i18n: file: OptionsDlgWidget.ui:265
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: rc.cpp:97
+msgid ""
+"Some tape drives support different sizes of the data block.  With this "
+"option, KDat will attempt to enable that support.\n"
+"\n"
+"You must still specify the block size."
+msgstr ""
+
+#: rc.cpp:100
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
+
+#: rc.cpp:101
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "raviratlami@aol.in"
 
 #: Tape.cpp:44
 msgid "New Tape"
@@ -1019,14 +1261,6 @@ msgstr "फोल्डर मं बहाल करव:"
 msgid "Verify in folder:"
 msgstr "फोल्डर मं सत्यापित करव:"
 
-#. i18n: file: OptionsDlgWidget.ui:136
-#. i18n: ectx: property (text), widget (KPushButton)
-#. i18n: file: OptionsDlgWidget.ui:166
-#. i18n: ectx: property (text), widget (KPushButton)
-#: VerifyOptDlg.cpp:62 rc.cpp:31 rc.cpp:43
-msgid "..."
-msgstr "..."
-
 #: VerifyOptDlg.cpp:67
 msgid "Restore files:"
 msgstr "फाइल मन ल बहाल करव:"
@@ -1034,237 +1268,3 @@ msgstr "फाइल मन ल बहाल करव:"
 #: VerifyOptDlg.cpp:69
 msgid "Verify files:"
 msgstr "फाइल मन ल सत्यापित करव:"
-
-#: main.cpp:40
-msgid "tar-based DAT archiver for KDE"
-msgstr "केडीई बर टार आधार से डैट अभिलेखागार"
-
-#: main.cpp:47
-msgid "KDat"
-msgstr "के-डैट"
-
-#: main.cpp:49
-msgid "(c) 1999-2000, Sean Vyain; 2001-2002 Lawrence Widman"
-msgstr "(c) 1999-2000, सीन व्यान; 2001-2002 लारेंस विडमैन"
-
-#: main.cpp:58
-msgid "Cannot allocate memory in kdat"
-msgstr "के-डैट मं मेमोरी एलोकेट नइ कर सके"
-
-#: main.cpp:75
-msgid "Lawrence Widman"
-msgstr "लारेंस विडमैन"
-
-#. i18n: file: OptionsDlgWidget.ui:17
-#. i18n: ectx: property (windowTitle), widget (QWidget)
-#: rc.cpp:3
-msgid "Options Widget"
-msgstr "विकल्प विजेट"
-
-#. i18n: file: OptionsDlgWidget.ui:53
-#. i18n: ectx: property (whatsThis), widget (KIntSpinBox)
-#: rc.cpp:6
-msgid ""
-"This setting determines the capacity that KDat assumes your backup tapes to "
-"be.  This is used when formatting the tapes."
-msgstr ""
-
-#. i18n: file: OptionsDlgWidget.ui:67
-#. i18n: ectx: property (whatsThis), widget (KIntSpinBox)
-#: rc.cpp:9
-msgid ""
-"Tape drives read and write data in individual blocks.  This setting controls "
-"the size of each block, and should be set to your tape drive's block size.  "
-"For floppy tape drives this should be set to <b>10240</b> bytes."
-msgstr ""
-
-#. i18n: file: OptionsDlgWidget.ui:73
-#. i18n: ectx: property (text), item, widget (KComboBox)
-#: rc.cpp:12
-msgid "MB"
-msgstr "मे.बा."
-
-#. i18n: file: OptionsDlgWidget.ui:78
-#. i18n: ectx: property (text), item, widget (KComboBox)
-#: rc.cpp:15
-msgid "GB"
-msgstr "गी.बा."
-
-#. i18n: file: OptionsDlgWidget.ui:88
-#. i18n: ectx: property (whatsThis), item, widget (KComboBox)
-#: rc.cpp:19
-msgid ""
-"This option chooses whether the default tape size to the left is in "
-"megabytes (MB) or gigabytes (GB)."
-msgstr ""
-"ये विकल्प चुनथे  कि डेरी मं दे गे डिफाल्ट टेप आकार मेगाबाइट (मेबा) मं हे या गीगाबाइट "
-"(गीबा) में."
-
-#. i18n: file: OptionsDlgWidget.ui:96
-#. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:22
-msgid "bytes"
-msgstr "बाइट्स"
-
-#. i18n: file: OptionsDlgWidget.ui:104
-#. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:25
-msgid "Tape block size:"
-msgstr "टेप ब्लाक आकारः"
-
-#. i18n: file: OptionsDlgWidget.ui:115
-#. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:28
-msgid "Default tape size:"
-msgstr "डिफाल्ट टेप आकारः"
-
-#. i18n: file: OptionsDlgWidget.ui:139
-#. i18n: ectx: property (toolTip), widget (KPushButton)
-#: rc.cpp:34
-msgid "Browse for the tar command."
-msgstr "टार कमांड बर ब्राउज करव."
-
-#. i18n: file: OptionsDlgWidget.ui:147
-#. i18n: ectx: property (whatsThis), widget (KLineEdit)
-#: rc.cpp:37
-msgid ""
-"The location in the filesystem of the <em>non-rewinding</em> tape device.  "
-"The default is <b>/dev/tape</b>."
-msgstr ""
-" <em>नान-रीवाइंडिंग</em> टेप उपकरन मं फाइल सिसटम मं जगह  डिफाल्ट हे: <b>/dev/tape</"
-"b>."
-
-#. i18n: file: OptionsDlgWidget.ui:155
-#. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:40
-msgid "Tar command:"
-msgstr "टार कमांडः"
-
-#. i18n: file: OptionsDlgWidget.ui:169
-#. i18n: ectx: property (toolTip), widget (KPushButton)
-#: rc.cpp:46
-msgid "Browse for the tape device."
-msgstr "टेप उपकरन बर ब्राउज करव"
-
-#. i18n: file: OptionsDlgWidget.ui:177
-#. i18n: ectx: property (whatsThis), widget (KLineEdit)
-#: rc.cpp:49
-msgid ""
-"This setting controls the command that KDat uses to perform the tape "
-"backup.  The full path should be given.  The default is <b>tar</b>."
-msgstr ""
-
-#. i18n: file: OptionsDlgWidget.ui:185
-#. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:52
-msgid "Tape device:"
-msgstr "टेप उपकरन:"
-
-#. i18n: file: OptionsDlgWidget.ui:198
-#. i18n: ectx: property (title), widget (QButtonGroup)
-#: rc.cpp:55
-msgid "Tape Drive Options"
-msgstr "टेप ड्राइव विकल्प"
-
-#. i18n: file: OptionsDlgWidget.ui:209
-#. i18n: ectx: property (text), widget (QCheckBox)
-#: rc.cpp:58
-msgid "Load tape on mount"
-msgstr "माउन्ट मं टेप लोड करव"
-
-#. i18n: file: OptionsDlgWidget.ui:212
-#. i18n: ectx: property (toolTip), widget (QCheckBox)
-#: rc.cpp:61
-msgid "<qt>Issue an <tt>mtload</tt> command prior to mounting the tape.</qt>"
-msgstr "<qt>टेप ल माउन्ट करे से पहिली <tt>mtload</tt> कमांड चलाव .</qt>"
-
-#. i18n: file: OptionsDlgWidget.ui:217
-#. i18n: ectx: property (whatsThis), widget (QCheckBox)
-#: rc.cpp:64
-msgid ""
-"This command issues an <tt>mtload</tt> command to the tape device before "
-"trying to mount it.\n"
-"\n"
-"This is required by some tape drives."
-msgstr ""
-
-#. i18n: file: OptionsDlgWidget.ui:225
-#. i18n: ectx: property (text), widget (QCheckBox)
-#: rc.cpp:69
-msgid "Lock tape drive on mount"
-msgstr "माउन्ट मं  टेप ड्राइव तालाबंद करव"
-
-#. i18n: file: OptionsDlgWidget.ui:228
-#. i18n: ectx: property (toolTip), widget (QCheckBox)
-#: rc.cpp:72
-msgid "Disable the eject button after mounting the tape."
-msgstr "टेप ल माउन्ट करे के उपरांत इजेक्ट बटन ल अक्छम करव."
-
-#. i18n: file: OptionsDlgWidget.ui:233
-#. i18n: ectx: property (whatsThis), widget (QCheckBox)
-#: rc.cpp:75
-msgid ""
-"This option makes KDat try to disable the eject button on the tape drive "
-"after the tape has been mounted.\n"
-"\n"
-"This doesn't work for all tape drives."
-msgstr ""
-
-#. i18n: file: OptionsDlgWidget.ui:241
-#. i18n: ectx: property (text), widget (QCheckBox)
-#: rc.cpp:80
-msgid "Eject tape on unmount"
-msgstr "अनमाउन्ट मं टेप बाहिर करव"
-
-#. i18n: file: OptionsDlgWidget.ui:244
-#. i18n: ectx: property (toolTip), widget (QCheckBox)
-#: rc.cpp:83
-msgid ""
-"Try to eject the tape after it is unmounted.  Do not use this for ftape."
-msgstr ""
-"जब टेप अनमाउन्ट होही तहां टेप ल बाहिर निकाले के कोसिस करव. एखर उपयोग एफटेप बर नइ "
-"करव."
-
-#. i18n: file: OptionsDlgWidget.ui:249
-#. i18n: ectx: property (whatsThis), widget (QCheckBox)
-#: rc.cpp:86
-msgid ""
-"Try to eject the tape after it has been unmounted.\n"
-"\n"
-"This option should not be used for floppy-tape drives."
-msgstr ""
-"जब टेप अनमाउन्ट होही तहां टेप ल बाहिर निकाले के कोसिस करव. \n"
-"\n"
-"एखर उपयोग फ्लापी-टेप ड्राइव बर नइ करव."
-
-#. i18n: file: OptionsDlgWidget.ui:257
-#. i18n: ectx: property (text), widget (QCheckBox)
-#: rc.cpp:91
-msgid "Variable block size"
-msgstr "परिवर्तनीय ब्लाक आकार"
-
-#. i18n: file: OptionsDlgWidget.ui:260
-#. i18n: ectx: property (toolTip), widget (QCheckBox)
-#: rc.cpp:94
-msgid "Enable variable-block size support in the tape drive."
-msgstr "टेप ड्राइव मं वेरिएबल-ब्लाक आकार समर्थन सक्छम करव."
-
-#. i18n: file: OptionsDlgWidget.ui:265
-#. i18n: ectx: property (whatsThis), widget (QCheckBox)
-#: rc.cpp:97
-msgid ""
-"Some tape drives support different sizes of the data block.  With this "
-"option, KDat will attempt to enable that support.\n"
-"\n"
-"You must still specify the block size."
-msgstr ""
-
-#: rc.cpp:100
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
-
-#: rc.cpp:101
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "raviratlami@aol.in"
