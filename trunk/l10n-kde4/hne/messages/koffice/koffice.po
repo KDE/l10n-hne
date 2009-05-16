@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-08 11:14+0200\n"
+"POT-Creation-Date: 2009-05-16 11:57+0200\n"
 "PO-Revision-Date: 2009-03-03 09:35+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1014,7 +1014,7 @@ msgstr ""
 msgid "Warning"
 msgstr "चेतावनी"
 
-#: main/KoMainWindow.cpp:1213
+#: main/KoMainWindow.cpp:1213 kopageapp/KoPAView.cpp:296
 msgid "Import Document"
 msgstr "कागद आयात करव"
 
@@ -1349,7 +1349,8 @@ msgstr "आकार वितरित करव"
 msgid "Lock shapes"
 msgstr "आकार तालाबंद करव"
 
-#: flake/commands/KoPathPointMoveCommand.cpp:31
+#: flake/commands/KoPathPointMoveCommand.cpp:30
+#: flake/commands/KoPathPointMoveCommand.cpp:46
 msgid "Move points"
 msgstr "बिन्दु ल खिसकाव"
 
@@ -3179,7 +3180,7 @@ msgstr "पेज ले-आउट समस्या"
 msgid "The page height is smaller than the top and bottom margins."
 msgstr "पेज ऊँचाई सीर्स अउ तल हासिए से कम हे."
 
-#: guiutils/KoToolBoxFactory.cpp:36 kopageapp/KoPAView.cpp:169
+#: guiutils/KoToolBoxFactory.cpp:36 kopageapp/KoPAView.cpp:171
 #, fuzzy
 msgid "Tools"
 msgstr "पेन औजार"
@@ -3715,69 +3716,93 @@ msgstr "पिछोत अंगना स्लाइड देखाव"
 msgid "Display page background"
 msgstr "पेज पिछोत अंगना देखाव"
 
-#: kopageapp/KoPAView.cpp:213
+#: kopageapp/KoPAView.cpp:215
 msgid "D&elete"
 msgstr "मेटाव (&e)"
 
-#: kopageapp/KoPAView.cpp:223
+#: kopageapp/KoPAView.cpp:225
 msgid "Snap to Grid"
 msgstr "ग्रिड मं स्नेप करव"
 
-#: kopageapp/KoPAView.cpp:228
+#: kopageapp/KoPAView.cpp:230
 msgid "Show Guides"
 msgstr "गाइड देखाव"
 
-#: kopageapp/KoPAView.cpp:230
+#: kopageapp/KoPAView.cpp:232
 msgid "Hide Guides"
 msgstr "गाइड लुकाव"
 
-#: kopageapp/KoPAView.cpp:231
+#: kopageapp/KoPAView.cpp:233
 msgid "Shows or hides guides"
 msgstr "गाइड देखाव या लुकाव"
 
-#: kopageapp/KoPAView.cpp:235
+#: kopageapp/KoPAView.cpp:237
 msgid "Show Master Pages"
 msgstr "मास्टर पेज देखाव"
 
-#: kopageapp/KoPAView.cpp:239
+#: kopageapp/KoPAView.cpp:241
 msgid "Show Rulers"
 msgstr "रूलर देखाव"
 
-#: kopageapp/KoPAView.cpp:241
+#: kopageapp/KoPAView.cpp:243
 msgid "Show/hide the view's rulers"
 msgstr "प्रदर्सक मं मापनी देखाव/लुकाव."
 
-#: kopageapp/KoPAView.cpp:245
+#: kopageapp/KoPAView.cpp:247
 msgid "Insert Page"
 msgstr "पेज भरव"
 
-#: kopageapp/KoPAView.cpp:247 kopageapp/KoPAView.cpp:248
+#: kopageapp/KoPAView.cpp:249 kopageapp/KoPAView.cpp:250
 msgid "Insert a new page after the current one"
 msgstr "अभी हाल के पेज के बाद एक नवा पेज भरव"
 
-#: kopageapp/KoPAView.cpp:251
+#: kopageapp/KoPAView.cpp:253
 msgid "Copy Page"
 msgstr "पेज नकल करव"
 
-#: kopageapp/KoPAView.cpp:253 kopageapp/KoPAView.cpp:254
+#: kopageapp/KoPAView.cpp:255 kopageapp/KoPAView.cpp:256
 msgid "Copy the current page"
 msgstr "अभी हाल के पेज के नकल बनाव"
 
-#: kopageapp/KoPAView.cpp:257
+#: kopageapp/KoPAView.cpp:259
 msgid "Delete Page"
 msgstr "पेज मेटाव"
 
-#: kopageapp/KoPAView.cpp:260 kopageapp/KoPAView.cpp:261
+#: kopageapp/KoPAView.cpp:262 kopageapp/KoPAView.cpp:263
 msgid "Delete the current page"
 msgstr "अभी हाल के पेज मेटाव"
 
-#: kopageapp/KoPAView.cpp:264
+#: kopageapp/KoPAView.cpp:266
 msgid "Master Page..."
 msgstr "मास्टर पेज..."
 
-#: kopageapp/KoPAView.cpp:273
+#: kopageapp/KoPAView.cpp:275
 msgid "Variable"
 msgstr "परिवर्तनीय"
+
+#: kopageapp/KoPAView.cpp:280
+#, fuzzy
+#| msgid "Import Document"
+msgid "Import Document..."
+msgstr "कागद आयात करव"
+
+#: kopageapp/KoPAView.cpp:293
+#, fuzzy
+#| msgid "Import lines:"
+msgid "Import Slideshow"
+msgstr "लकीरें आयात करव:"
+
+#: kopageapp/KoPAView.cpp:325 kopageapp/KoPAView.cpp:329
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not open\n"
+#| "%1"
+msgid ""
+"Could not import\n"
+"%1"
+msgstr ""
+"खोल नइ सकिस:\n"
+"%1"
 
 #: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:165
 #, kde-format
