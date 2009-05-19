@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_gpssync\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-11 12:58+0200\n"
+"POT-Creation-Date: 2009-05-19 11:34+0200\n"
 "PO-Revision-Date: 2009-02-16 13:55+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -46,9 +46,10 @@ msgstr "देसान्तरः"
 msgid "Goto Location"
 msgstr "ये जगह मं जाव"
 
-#: gpseditdialog.cpp:152 gpssyncdialog.cpp:257 gpssyncdialog.cpp:340
-#: gpssyncdialog.cpp:348 gpssyncdialog.cpp:484 gpssyncdialog.cpp:494
-#: gpssyncdialog.cpp:503 gpssyncdialog.cpp:538 gpstracklisteditdialog.cpp:122
+#: gpseditdialog.cpp:152 gpslistviewcontextmenu.cpp:307
+#: gpslistviewcontextmenu.cpp:339 gpssyncdialog.cpp:262 gpssyncdialog.cpp:345
+#: gpssyncdialog.cpp:353 gpssyncdialog.cpp:489 gpssyncdialog.cpp:499
+#: gpssyncdialog.cpp:508 gpssyncdialog.cpp:543 gpstracklisteditdialog.cpp:126
 msgid "GPS Sync"
 msgstr "जीपीएस सिंक"
 
@@ -56,22 +57,22 @@ msgstr "जीपीएस सिंक"
 msgid "A Plugin to edit geographical coordinates"
 msgstr "भौगोलिक निर्देसांक संपादित करे बर एक प्लगइन"
 
-#: gpseditdialog.cpp:156
+#: gpseditdialog.cpp:156 gpssyncdialog.cpp:266
 #, fuzzy
 msgid "(c) 2006-2009, Gilles Caulier"
 msgstr "(c) 2006-2008, गिल्स काउलिएर"
 
-#: gpseditdialog.cpp:158 gpssyncdialog.cpp:263 gpstracklisteditdialog.cpp:128
+#: gpseditdialog.cpp:158 gpssyncdialog.cpp:268 gpstracklisteditdialog.cpp:132
 #: kmlexportconfig.cpp:290
 msgid "Gilles Caulier"
 msgstr "गिल्स काउलिएर"
 
-#: gpseditdialog.cpp:159 gpssyncdialog.cpp:264 gpstracklisteditdialog.cpp:129
+#: gpseditdialog.cpp:159 gpssyncdialog.cpp:269 gpstracklisteditdialog.cpp:133
 #: kmlexportconfig.cpp:287 kmlexportconfig.cpp:291
 msgid "Developer and maintainer"
 msgstr "डेवलपर अउ मेंटेनर"
 
-#: gpseditdialog.cpp:167 gpssyncdialog.cpp:272 gpstracklisteditdialog.cpp:137
+#: gpseditdialog.cpp:167 gpssyncdialog.cpp:277 gpstracklisteditdialog.cpp:141
 #: kmlexportconfig.cpp:299
 #, fuzzy
 msgid "Handbook"
@@ -93,6 +94,28 @@ msgstr "अच्छांस मूल्य सही नइ हे!"
 msgid "Longitude value is not correct!"
 msgstr "देसांतर मूल्य सही नइ हे!"
 
+#: gpslistviewcontextmenu.cpp:78
+#, fuzzy
+#| msgid "Remove Coordinates..."
+msgid "Copy coordinates"
+msgstr "निर्देसांक मेटाव..."
+
+#: gpslistviewcontextmenu.cpp:79
+#, fuzzy
+#| msgid "Edit Coordinates..."
+msgid "Paste coordinates"
+msgstr "निर्देसांक संपादित करव..."
+
+#: gpslistviewcontextmenu.cpp:306
+msgid ""
+"Found more than one point in the clipboard. Can only assign one point at a "
+"time!"
+msgstr ""
+
+#: gpslistviewcontextmenu.cpp:339
+msgid "Could not find any coordinates in the clipboard!"
+msgstr ""
+
 #: gpslistviewitem.cpp:130
 msgid "Interpolated"
 msgstr "इंटरपोलेटेड"
@@ -113,88 +136,88 @@ msgstr "मेटाइस!"
 msgid "Not available"
 msgstr "नइ मिलत"
 
-#: gpssyncdialog.cpp:113 plugin_gpssync.cpp:74
+#: gpssyncdialog.cpp:114 plugin_gpssync.cpp:74
 msgid "Geolocation"
 msgstr "जियोलोकेसन"
 
-#: gpssyncdialog.cpp:116
+#: gpssyncdialog.cpp:117
 msgid "Correlate"
 msgstr "कोरीलेट"
 
-#: gpssyncdialog.cpp:117
+#: gpssyncdialog.cpp:118
 msgid "Edit..."
 msgstr "संपादन..."
 
-#: gpssyncdialog.cpp:118
+#: gpssyncdialog.cpp:119
 msgid "Remove"
 msgstr "हटाव"
 
-#: gpssyncdialog.cpp:120
+#: gpssyncdialog.cpp:121
 msgid ""
 "Correlate in time and interpolate distance of data from GPX file with all "
 "images on the list."
 msgstr ""
 
-#: gpssyncdialog.cpp:121
+#: gpssyncdialog.cpp:122
 msgid "Manually edit GPS coordinates of selected images from the list."
 msgstr "सूची मं से चुने गे फोटू के जीपीएस निर्देसांक मन ल हस्तचालित संपादित करव."
 
-#: gpssyncdialog.cpp:122
+#: gpssyncdialog.cpp:123
 msgid "Remove GPS coordinates of selected images from the list."
 msgstr "सूची मं से चुने गे फोटू के जीपीएस निर्देसांक मन ल मेटाव."
 
-#: gpssyncdialog.cpp:138 gpstracklisteditdialog.cpp:99
+#: gpssyncdialog.cpp:139 gpstracklisteditdialog.cpp:100
 msgid "Date"
 msgstr "तारीक"
 
-#: gpssyncdialog.cpp:140 gpstracklisteditdialog.cpp:101
+#: gpssyncdialog.cpp:141 gpstracklisteditdialog.cpp:102
 msgid "Latitude"
 msgstr "अच्छांस"
 
-#: gpssyncdialog.cpp:142 gpstracklisteditdialog.cpp:103
+#: gpssyncdialog.cpp:143 gpstracklisteditdialog.cpp:104
 msgid "Longitude"
 msgstr "देसान्तर"
 
-#: gpssyncdialog.cpp:144 gpstracklisteditdialog.cpp:105
+#: gpssyncdialog.cpp:145 gpstracklisteditdialog.cpp:106
 msgid "Altitude"
 msgstr "उन्नतांस"
 
-#: gpssyncdialog.cpp:146
+#: gpssyncdialog.cpp:147
 msgid "Status"
 msgstr "स्थिति"
 
-#: gpssyncdialog.cpp:153
+#: gpssyncdialog.cpp:158
 msgid "Settings"
 msgstr "सेटिंग"
 
-#: gpssyncdialog.cpp:156
+#: gpssyncdialog.cpp:161
 msgid "Load GPX File..."
 msgstr "जीपीएक्स फाइल लोड करव..."
 
-#: gpssyncdialog.cpp:158
+#: gpssyncdialog.cpp:163
 msgid "Current GPX file:"
 msgstr "अभी हाल के जीपीएक्स फाइल:"
 
-#: gpssyncdialog.cpp:159
+#: gpssyncdialog.cpp:164
 msgid "No GPX file"
 msgstr "कोई जीपीएक्स फाइल नइ"
 
-#: gpssyncdialog.cpp:163
+#: gpssyncdialog.cpp:168
 msgid "Max. time gap (sec.):"
 msgstr "सबसे अधिक समय अंतराल (सेक.):"
 
-#: gpssyncdialog.cpp:165
+#: gpssyncdialog.cpp:170
 msgid ""
 "Sets the maximum difference in seconds from a GPS track point to the image "
 "time to be matched. If the time difference exceeds this setting, no match "
 "will be attempted."
 msgstr ""
 
-#: gpssyncdialog.cpp:169
+#: gpssyncdialog.cpp:174
 msgid "Time zone:"
 msgstr "समय छेत्र:"
 
-#: gpssyncdialog.cpp:215
+#: gpssyncdialog.cpp:220
 msgid ""
 "<p>Sets the time zone the camera was set to during photo shooting, so that "
 "the time stamps of the images can be converted to GMT to match the GPS time "
@@ -202,66 +225,62 @@ msgid ""
 "(GMT), they are 'ahead of time'.</p>"
 msgstr ""
 
-#: gpssyncdialog.cpp:221
+#: gpssyncdialog.cpp:226
 msgid "Interpolate"
 msgstr "इंटरपोलेट"
 
-#: gpssyncdialog.cpp:222
+#: gpssyncdialog.cpp:227
 msgid ""
 "Set this option to interpolate GPS track points which are not closely "
 "matched to the GPX data file."
 msgstr ""
 
-#: gpssyncdialog.cpp:225
+#: gpssyncdialog.cpp:230
 msgid "Difference in min.:"
 msgstr "मिनट मं अंतर:"
 
-#: gpssyncdialog.cpp:227
+#: gpssyncdialog.cpp:232
 msgid ""
 "Sets the maximum time difference in minutes (240 max.) to interpolate GPX "
 "file points to image time data."
 msgstr ""
 
-#: gpssyncdialog.cpp:260
+#: gpssyncdialog.cpp:265
 msgid "A Plugin to synchronize pictures metadata with a GPS device"
 msgstr "जीपीएस उपकरन से फोटू मेटाडाटा ल सिंक्रोनाइज करे के एक प्लगइन"
 
-#: gpssyncdialog.cpp:261
-msgid "(c) 2006-2008, Gilles Caulier"
-msgstr "(c) 2006-2008, गिल्स काउलिएर"
-
-#: gpssyncdialog.cpp:329 kmlexportconfig.cpp:174
+#: gpssyncdialog.cpp:334 kmlexportconfig.cpp:174
 #, kde-format
 msgid "%1|GPS Exchange Format"
 msgstr "%1|जीपीएस एक्सचेंज फारमेट"
 
-#: gpssyncdialog.cpp:330 kmlexportconfig.cpp:175
+#: gpssyncdialog.cpp:335 kmlexportconfig.cpp:175
 msgid "Select GPX File to Load"
 msgstr "लोड करे बर जीपीएक्स फाइल चुनव"
 
-#: gpssyncdialog.cpp:339 kmlexport.cpp:374
+#: gpssyncdialog.cpp:344 kmlexport.cpp:374
 #, kde-format
 msgid "Cannot parse %1 GPX file!"
 msgstr "जीपीएक्स फाइल %1 ल समझ नइ सकिस!"
 
-#: gpssyncdialog.cpp:347 kmlexport.cpp:380
+#: gpssyncdialog.cpp:352 kmlexport.cpp:380
 #, kde-format
 msgid "The %1 GPX file do not have a date-time track to use!"
 msgstr "जीपीएक्स फाइल %1 मं उपयोग जइसन तारीक समय ट्रैक नइ हे!"
 
-#: gpssyncdialog.cpp:354
+#: gpssyncdialog.cpp:359
 #, kde-format
 msgid "Points parsed: %1"
 msgstr "बिन्दु पार करे: %1"
 
-#: gpssyncdialog.cpp:401
+#: gpssyncdialog.cpp:406
 #, kde-format
 msgid "1 image from the list is not updated."
 msgid_plural "%1 images from the list are not updated."
 msgstr[0] ""
 msgstr[1] ""
 
-#: gpssyncdialog.cpp:405
+#: gpssyncdialog.cpp:410
 #, kde-format
 msgid ""
 "<p>%1\n"
@@ -270,11 +289,11 @@ msgstr ""
 "<p>%1\n"
 "का आप मन सचमुच बदलाव मन ल लागू करे बिना ए विंडो ल बन्द करना चाहथो ?</p>"
 
-#: gpssyncdialog.cpp:483
+#: gpssyncdialog.cpp:488
 msgid "Cannot find pictures to correlate with GPX file data."
 msgstr "जीपीएक्स फाइल डाटा के साथ कोरीलेट करे बर फोटू प्राप्त नइ कर सकिस."
 
-#: gpssyncdialog.cpp:488
+#: gpssyncdialog.cpp:493
 #, kde-format
 msgid ""
 "GPS data of 1 image have been updated on the list using the GPX data file."
@@ -283,38 +302,38 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: gpssyncdialog.cpp:492
+#: gpssyncdialog.cpp:497
 msgid "Press Apply button to update images metadata."
 msgstr "फोटू मेटाडाटा ल अपडेट करे बर लगाव बटन ल दबाव."
 
-#: gpssyncdialog.cpp:502
+#: gpssyncdialog.cpp:507
 msgid ""
 "Please, select at least one image from the list to edit GPS coordinates "
 "manually."
 msgstr ""
 
-#: gpssyncdialog.cpp:537
+#: gpssyncdialog.cpp:542
 msgid ""
 "Please, select at least one image from the list to remove GPS coordinates."
 msgstr ""
 
-#: gpstracklisteditdialog.cpp:86
+#: gpstracklisteditdialog.cpp:87
 msgid "Edit Track List Geographical Coordinates"
 msgstr "भौगोलिक निर्देसांक मन के ट्रैक सूची संपादित करव"
 
-#: gpstracklisteditdialog.cpp:97
+#: gpstracklisteditdialog.cpp:98
 msgid "Id"
 msgstr "आईडी"
 
-#: gpstracklisteditdialog.cpp:107
+#: gpstracklisteditdialog.cpp:108
 msgid "Changed"
 msgstr "बदलिस"
 
-#: gpstracklisteditdialog.cpp:125
+#: gpstracklisteditdialog.cpp:129
 msgid "A Plugin to edit GPS track list"
 msgstr "जीपीएस ट्रैक सूची संपादित करे बर एक प्लगइन"
 
-#: gpstracklisteditdialog.cpp:126
+#: gpstracklisteditdialog.cpp:130
 #, fuzzy
 msgid "(c) 2008-2009, Gilles Caulier"
 msgstr "(c) 2006-2008, गिल्स काउलिएर"
@@ -713,6 +732,9 @@ msgstr "रविसंकर सिरीवास्तव, जी. करू�
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raviratlami@aol.in"
+
+#~ msgid "(c) 2006-2008, Gilles Caulier"
+#~ msgstr "(c) 2006-2008, गिल्स काउलिएर"
 
 #~ msgid "Thumbnail"
 #~ msgstr "छोटे फोटू"
