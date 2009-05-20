@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_gpssync\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-19 11:34+0200\n"
+"POT-Creation-Date: 2009-05-20 12:08+0200\n"
 "PO-Revision-Date: 2009-02-16 13:55+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -25,9 +25,9 @@ msgstr "%1 - भौगोलिक निर्देसांक संपा�
 
 #: gpseditdialog.cpp:106
 msgid ""
-"<p>Use the map on the right to select the location where the picture has "
-"been taken. Click with left mouse button or move the marker on the map to "
-"get the GPS coordinates.</p>"
+"<p>Use the map on the right to select the location where the picture was "
+"taken. Click with left mouse button or move the marker on the map to get the "
+"GPS coordinates.</p>"
 msgstr ""
 
 #: gpseditdialog.cpp:111
@@ -43,7 +43,9 @@ msgid "Longitude:"
 msgstr "देसान्तरः"
 
 #: gpseditdialog.cpp:127
-msgid "Goto Location"
+#, fuzzy
+#| msgid "Goto Location"
+msgid "Go to Location"
 msgstr "ये जगह मं जाव"
 
 #: gpseditdialog.cpp:152 gpslistviewcontextmenu.cpp:307
@@ -79,7 +81,9 @@ msgid "Handbook"
 msgstr "प्लगइन हेंड-बुक"
 
 #: gpseditdialog.cpp:319
-msgid "Altitude value is not correct!"
+#, fuzzy
+#| msgid "Altitude value is not correct!"
+msgid "Altitude value is invalid."
 msgstr "ऊंचाई मूल्य सही नइ हे!"
 
 #: gpseditdialog.cpp:320 gpseditdialog.cpp:328 gpseditdialog.cpp:336
@@ -87,11 +91,15 @@ msgid "Edit Geographical Coordinates"
 msgstr "भौगोलिक निर्देसांक संपादित करव"
 
 #: gpseditdialog.cpp:327
-msgid "Latitude value is not correct!"
+#, fuzzy
+#| msgid "Latitude value is not correct!"
+msgid "Latitude value is invalid."
 msgstr "अच्छांस मूल्य सही नइ हे!"
 
 #: gpseditdialog.cpp:335
-msgid "Longitude value is not correct!"
+#, fuzzy
+#| msgid "Longitude value is not correct!"
+msgid "Longitude value is invalid."
 msgstr "देसांतर मूल्य सही नइ हे!"
 
 #: gpslistviewcontextmenu.cpp:78
@@ -108,12 +116,12 @@ msgstr "निर्देसांक संपादित करव..."
 
 #: gpslistviewcontextmenu.cpp:306
 msgid ""
-"Found more than one point in the clipboard. Can only assign one point at a "
-"time!"
+"Found more than one point on the clipboard - can only assign one point at a "
+"time."
 msgstr ""
 
 #: gpslistviewcontextmenu.cpp:339
-msgid "Could not find any coordinates in the clipboard!"
+msgid "Could not find any coordinates on the clipboard."
 msgstr ""
 
 #: gpslistviewitem.cpp:130
@@ -129,7 +137,9 @@ msgid "Found"
 msgstr "मिलिस"
 
 #: gpslistviewitem.cpp:152
-msgid "Deleted!"
+#, fuzzy
+#| msgid "Deleted!"
+msgid "Deleted"
 msgstr "मेटाइस!"
 
 #: gpslistviewitem.cpp:164
@@ -246,7 +256,9 @@ msgid ""
 msgstr ""
 
 #: gpssyncdialog.cpp:265
-msgid "A Plugin to synchronize pictures metadata with a GPS device"
+#, fuzzy
+#| msgid "A Plugin to synchronize pictures metadata with a GPS device"
+msgid "A Plugin to synchronize pictures' metadata with a GPS device"
 msgstr "जीपीएस उपकरन से फोटू मेटाडाटा ल सिंक्रोनाइज करे के एक प्लगइन"
 
 #: gpssyncdialog.cpp:334 kmlexportconfig.cpp:174
@@ -259,13 +271,15 @@ msgid "Select GPX File to Load"
 msgstr "लोड करे बर जीपीएक्स फाइल चुनव"
 
 #: gpssyncdialog.cpp:344 kmlexport.cpp:374
-#, kde-format
-msgid "Cannot parse %1 GPX file!"
+#, fuzzy, kde-format
+#| msgid "Cannot parse %1 GPX file!"
+msgid "Cannot parse %1 GPX file."
 msgstr "जीपीएक्स फाइल %1 ल समझ नइ सकिस!"
 
-#: gpssyncdialog.cpp:352 kmlexport.cpp:380
-#, kde-format
-msgid "The %1 GPX file do not have a date-time track to use!"
+#: gpssyncdialog.cpp:352
+#, fuzzy, kde-format
+#| msgid "The %1 GPX file do not have a date-time track to use!"
+msgid "The %1 GPX file does not have a date-time track to use."
 msgstr "जीपीएक्स फाइल %1 मं उपयोग जइसन तारीक समय ट्रैक नइ हे!"
 
 #: gpssyncdialog.cpp:359
@@ -295,26 +309,28 @@ msgstr "जीपीएक्स फाइल डाटा के साथ क�
 
 #: gpssyncdialog.cpp:493
 #, kde-format
-msgid ""
-"GPS data of 1 image have been updated on the list using the GPX data file."
+msgid "The GPS data of 1 image have been updated using the GPX data file."
 msgid_plural ""
-"GPS data of %1 images have been updated on the list using the GPX data file."
+"The GPS data of %1 images have been updated using the GPX data file."
 msgstr[0] ""
 msgstr[1] ""
 
 #: gpssyncdialog.cpp:497
-msgid "Press Apply button to update images metadata."
-msgstr "फोटू मेटाडाटा ल अपडेट करे बर लगाव बटन ल दबाव."
+#, fuzzy
+#| msgid "Press Apply button to update images metadata."
+msgid "Press the Apply buttom to update the image's metadata."
+msgid_plural "Press the Apply button to update the images' metadata."
+msgstr[0] "फोटू मेटाडाटा ल अपडेट करे बर लगाव बटन ल दबाव."
+msgstr[1] "फोटू मेटाडाटा ल अपडेट करे बर लगाव बटन ल दबाव."
 
 #: gpssyncdialog.cpp:507
 msgid ""
-"Please, select at least one image from the list to edit GPS coordinates "
+"Please select at least one image from the list to edit GPS coordinates "
 "manually."
 msgstr ""
 
 #: gpssyncdialog.cpp:542
-msgid ""
-"Please, select at least one image from the list to remove GPS coordinates."
+msgid "Please select at least one image from which to remove GPS coordinates."
 msgstr ""
 
 #: gpstracklisteditdialog.cpp:87
@@ -330,7 +346,9 @@ msgid "Changed"
 msgstr "बदलिस"
 
 #: gpstracklisteditdialog.cpp:129
-msgid "A Plugin to edit GPS track list"
+#, fuzzy
+#| msgid "A Plugin to edit GPS track list"
+msgid "A plugin to edit GPS track lists."
 msgstr "जीपीएस ट्रैक सूची संपादित करे बर एक प्लगइन"
 
 #: gpstracklisteditdialog.cpp:130
@@ -368,8 +386,8 @@ msgstr "गूगलमैप से परयोग मं वेब लक्�
 
 #: kmlexportconfig.cpp:90
 msgid ""
-"When using GoogleMap, all image must have complete Url, icons are squared "
-"and when drawing a track, only linetrack is exported"
+"When using GoogleMap, all images must have complete URLs, icons are squared, "
+"and when drawing a track, only line track is exported."
 msgstr ""
 
 #: kmlexportconfig.cpp:102
@@ -403,15 +421,21 @@ msgid "Destination Directory:"
 msgstr "गंतव्य डिरेक्टरी:"
 
 #: kmlexportconfig.cpp:121
-msgid "Select a directory to save the kml file and pictures"
+#, fuzzy
+#| msgid "Select a directory to save the kml file and pictures"
+msgid "Select a directory in which to save the kml file and pictures"
 msgstr "केएमएल फाइल अउ फोटू मन ल सहेजे बर डिरेक्टरी चुनव"
 
 #: kmlexportconfig.cpp:124
-msgid "Destination Url:"
+#, fuzzy
+#| msgid "Destination Url:"
+msgid "Destination URL:"
 msgstr "गंतव्य यूआरएल:"
 
 #: kmlexportconfig.cpp:126
-msgid "File Name:"
+#, fuzzy
+#| msgid "File Name:"
+msgid "Filename:"
 msgstr "फाइल नाम:"
 
 #: kmlexportconfig.cpp:144
@@ -634,8 +658,16 @@ msgid "Could not save icon for image '%1' to '%2'"
 msgstr "फोटू '%1' के चिनहा ल '%2' मं सहेज नइ सकिस"
 
 #: kmlexport.cpp:365
-msgid "No GPX file Chosen!"
+#, fuzzy
+#| msgid "No GPX file Chosen!"
+msgid "No GPX file chosen."
 msgstr "कोई जीपीएक्स फाइल चुने नइ गिस!"
+
+#: kmlexport.cpp:380
+#, fuzzy, kde-format
+#| msgid "The %1 GPX file do not have a date-time track to use!"
+msgid "The %1 GPX file do not have a date-time track to use."
+msgstr "जीपीएक्स फाइल %1 मं उपयोग जइसन तारीक समय ट्रैक नइ हे!"
 
 #: kmlexport.cpp:387
 msgid "Tracks"
@@ -709,7 +741,9 @@ msgid ""
 msgstr ""
 
 #: plugin_gpssync.cpp:325
-msgid "No GPS location have been found in your pictures."
+#, fuzzy
+#| msgid "No GPS location have been found in your pictures."
+msgid "No GPS locations have been found in your pictures."
 msgstr "आप मन के फोटू मन तिर कोनो जीपीएस जगह नइ मिलिस."
 
 #: plugin_gpssync.cpp:383
