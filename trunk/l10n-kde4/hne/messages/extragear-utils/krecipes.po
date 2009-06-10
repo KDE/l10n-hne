@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecipes\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-08 20:39+0200\n"
+"POT-Creation-Date: 2009-06-10 12:31+0200\n"
 "PO-Revision-Date: 2009-02-21 12:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -398,7 +398,7 @@ msgstr "डाटाबेस फाइल:"
 msgid "Open file dialog"
 msgstr "फाइल खोले के गोठ"
 
-#: setupassistant.cpp:627
+#: setupassistant.cpp:627 pref.cpp:398
 msgid "Select SQLite database file"
 msgstr ""
 
@@ -709,7 +709,7 @@ msgstr "स्रेनी"
 
 #: dialogs/setupdisplay.cpp:130 dialogs/editpropertiesdialog.cpp:244
 #: exporters/htmlexporter.cpp:399 exporters/xsltexporter.cpp:61
-#: widgets/unitlistview.cpp:236 krecipesview.cpp:339 krecipesview.cpp:391
+#: widgets/unitlistview.cpp:237 krecipesview.cpp:339 krecipesview.cpp:391
 msgid "Properties"
 msgstr "गुन"
 
@@ -789,7 +789,7 @@ msgstr "खरीदारी सूची"
 #: dialogs/editpropertiesdialog.cpp:242 dialogs/selectpropertydialog.cpp:54
 #: dialogs/ingredientmatcherdialog.cpp:112
 #: dialogs/advancedsearchdialog.cpp:577 dialogs/selectunitdialog.cpp:40
-#: widgets/unitlistview.cpp:126 widgets/categorylistview.cpp:309
+#: widgets/unitlistview.cpp:127 widgets/categorylistview.cpp:309
 #: widgets/categorylistview.cpp:577 widgets/propertylistview.cpp:121
 #: widgets/ingredientlistview.cpp:116 widgets/ingredientlistview.cpp:256
 #: widgets/authorlistview.cpp:63 widgets/authorlistview.cpp:245
@@ -853,7 +853,7 @@ msgstr "मात्रा"
 #: dialogs/refineshoppinglistdialog.cpp:90
 #: dialogs/refineshoppinglistdialog.cpp:121 dialogs/selectunitdialog.cpp:42
 #: dialogs/createunitdialog.cpp:26 dialogs/createunitdialog.cpp:41
-#: widgets/unitlistview.cpp:118
+#: widgets/unitlistview.cpp:119
 msgid "Unit"
 msgstr "इकाई"
 
@@ -1081,7 +1081,7 @@ msgstr "तारे"
 
 #: dialogs/editratingdialog.cpp:142 dialogs/editratingdialog.cpp:169
 #: dialogs/ingredientparserdialog.cpp:97 dialogs/advancedsearchdialog.cpp:645
-#: recipeactionshandler.cpp:62 widgets/unitlistview.cpp:139
+#: recipeactionshandler.cpp:62 widgets/unitlistview.cpp:140
 #: widgets/categorylistview.cpp:320 widgets/propertylistview.cpp:132
 #: widgets/ingredientlistview.cpp:125 widgets/authorlistview.cpp:72
 #: widgets/headerlistview.cpp:74 widgets/prepmethodlistview.cpp:70
@@ -1126,7 +1126,7 @@ msgstr "इकाई बदलाव"
 msgid "New Unit Conversion"
 msgstr "नवा इकाई बदलाव"
 
-#: dialogs/unitsdialog.cpp:69 dialogs/recipeinputdialog.cpp:352 pref.cpp:482
+#: dialogs/unitsdialog.cpp:69 dialogs/recipeinputdialog.cpp:352 pref.cpp:483
 #: widgets/propertylistview.cpp:117 krecipesview.cpp:340 krecipesview.cpp:396
 msgid "Units"
 msgstr "इकाई"
@@ -1155,7 +1155,7 @@ msgstr "फोटो साफ करव"
 msgid "Recipe Name"
 msgstr "रेसिपि नाम"
 
-#: dialogs/recipeinputdialog.cpp:256 widgets/unitlistview.cpp:122
+#: dialogs/recipeinputdialog.cpp:256 widgets/unitlistview.cpp:123
 msgid "Type"
 msgstr "किसिम"
 
@@ -1234,7 +1234,7 @@ msgstr "रेसिपि ल नवा आकार देव"
 msgid "Images"
 msgstr "फोटू"
 
-#: dialogs/recipeinputdialog.cpp:993 widgets/unitlistview.cpp:366
+#: dialogs/recipeinputdialog.cpp:993 widgets/unitlistview.cpp:371
 #: widgets/ingredientinputwidget.cpp:255
 #, fuzzy, kde-format
 msgid "Unit name cannot be longer than 1 character."
@@ -1591,7 +1591,7 @@ msgid "Import Recipes"
 msgstr "रेसिपि आयात करव"
 
 #: dialogs/recipeimportdialog.cpp:47 recipeactionshandler.cpp:236
-#: recipeactionshandler.cpp:247 widgets/unitlistview.cpp:230
+#: recipeactionshandler.cpp:247 widgets/unitlistview.cpp:231
 #: widgets/categorylistview.cpp:399 widgets/ingredientlistview.cpp:176
 #: widgets/authorlistview.cpp:125 widgets/headerlistview.cpp:121
 #: widgets/prepmethodlistview.cpp:115 krecipesview.cpp:462
@@ -1761,20 +1761,24 @@ msgstr "गुन नाम:"
 msgid "Units:"
 msgstr "इकाईयाँ:"
 
-#: dialogs/dependanciesdialog.cpp:61
+#: dialogs/dependanciesdialog.cpp:51
+msgid "Element with Dependencies"
+msgstr ""
+
+#: dialogs/dependanciesdialog.cpp:63
 msgid ""
 "<b>WARNING:</b> The following will have to be removed also, since currently "
 "they use the element you have chosen to be removed."
 msgstr ""
 
-#: dialogs/dependanciesdialog.cpp:64
+#: dialogs/dependanciesdialog.cpp:66
 msgid ""
 "<b>WARNING:</b> The following currently use the element you have chosen to "
 "be removed."
 msgstr ""
 "<b>चेतावनी:</b> नीचे वाले अभी हाल के मं परयोग करे जा रहा तत्व आप मन मेटाय बर चुने हव ."
 
-#: dialogs/dependanciesdialog.cpp:95
+#: dialogs/dependanciesdialog.cpp:97
 msgid "Are you sure you wish to proceed?"
 msgstr "का आप मन सही मं आगू बढ़ना चाहथो ?"
 
@@ -1861,18 +1865,18 @@ msgstr "बहुवचन:"
 msgid "Type:"
 msgstr "किसिमः"
 
-#: dialogs/createunitdialog.cpp:69 widgets/unitlistview.cpp:74
-#: widgets/unitlistview.cpp:145
+#: dialogs/createunitdialog.cpp:69 widgets/unitlistview.cpp:75
+#: widgets/unitlistview.cpp:146
 msgid "Other"
 msgstr "अन्य"
 
-#: dialogs/createunitdialog.cpp:70 widgets/unitlistview.cpp:75
-#: widgets/unitlistview.cpp:146
+#: dialogs/createunitdialog.cpp:70 widgets/unitlistview.cpp:76
+#: widgets/unitlistview.cpp:147
 msgid "Mass"
 msgstr "द्रव्यमान"
 
-#: dialogs/createunitdialog.cpp:71 widgets/unitlistview.cpp:76
-#: widgets/unitlistview.cpp:147
+#: dialogs/createunitdialog.cpp:71 widgets/unitlistview.cpp:77
+#: widgets/unitlistview.cpp:148
 msgid "Volume"
 msgstr "अवाज निर्धारक"
 
@@ -2178,7 +2182,7 @@ msgstr ""
 msgid "Export Recipes"
 msgstr "रेसिपीज निर्यात करव"
 
-#: recipeactionshandler.cpp:253 pref.cpp:558
+#: recipeactionshandler.cpp:253 pref.cpp:559
 msgid "Export"
 msgstr "निर्यात"
 
@@ -2190,7 +2194,7 @@ msgstr "संपीडित के-रेसिपि फार्मेट"
 msgid "Web page"
 msgstr "वेब पेज"
 
-#: recipeactionshandler.cpp:348 pref.cpp:563
+#: recipeactionshandler.cpp:348 pref.cpp:564
 msgid "Plain Text"
 msgstr "सादा पाठ"
 
@@ -2444,48 +2448,48 @@ msgstr "बैकअप"
 msgid "Path to '%1':"
 msgstr "पथ '%1' पर:"
 
-#: pref.cpp:433
+#: pref.cpp:434
 msgid "Re-run wizard on next startup"
 msgstr "अगला बार चालू होए मं विजार्ड फिर से चलाव"
 
-#: pref.cpp:437
+#: pref.cpp:438
 msgid ""
 "Note: Krecipes must be restarted for most server preferences to take effect."
 msgstr ""
 
-#: pref.cpp:483
+#: pref.cpp:484
 msgid "Use abbreviations"
 msgstr "संक्छिप्त उपयोग करव"
 
-#: pref.cpp:519
+#: pref.cpp:520
 msgid "Number Format"
 msgstr "संख्या फारमेट:"
 
-#: pref.cpp:520
+#: pref.cpp:521
 msgid "Fraction"
 msgstr "भिन्न"
 
-#: pref.cpp:521
+#: pref.cpp:522
 msgid "Decimal"
 msgstr "दसमलव"
 
-#: pref.cpp:541
+#: pref.cpp:542
 msgid "Import"
 msgstr "आयात"
 
-#: pref.cpp:543
+#: pref.cpp:544
 msgid "Overwrite recipes with same title"
 msgstr "इसी सीर्सक के साथ रेसिपि ल मेटाय के लिखव"
 
-#: pref.cpp:548
+#: pref.cpp:549
 msgid "Ask which recipes to import"
 msgstr "जऊन रेसिपि ल आयात करना हे उनबर पूछव"
 
-#: pref.cpp:560
+#: pref.cpp:561
 msgid "'Copy to Clipboard' format:"
 msgstr "'क्लिपबोर्ड मं नकल करव' फारमेट:"
 
-#: pref.cpp:587
+#: pref.cpp:588
 msgid ""
 "When this is enabled, the importer will show every recipe in the file(s) and "
 "allow you to select which recipes you want imported.\n"
@@ -2493,11 +2497,11 @@ msgid ""
 "for faster and less memory-intensive imports."
 msgstr ""
 
-#: pref.cpp:622
+#: pref.cpp:623
 msgid "Search as you type"
 msgstr "जइसन जइसन टाइप करते जाव- ढूंढते जाव"
 
-#: pref.cpp:625
+#: pref.cpp:626
 msgid ""
 "In most instances these options do not need to be changed.  However, "
 "limiting the amount of items displayed at once will <b>allow Krecipes to "
@@ -2505,15 +2509,15 @@ msgid ""
 "b>."
 msgstr ""
 
-#: pref.cpp:631
+#: pref.cpp:632
 msgid "Number of categories to display at once:"
 msgstr "स्रेनियों के संख्या जऊन ल एक साथ देखाना हे:"
 
-#: pref.cpp:634 pref.cpp:644
+#: pref.cpp:635 pref.cpp:645
 msgid "Unlimited"
 msgstr "असीमित"
 
-#: pref.cpp:641
+#: pref.cpp:642
 msgid "Number of elements to display at once:"
 msgstr "तत्वों के संख्या जऊन ल एक साथ देखाना हे:"
 
@@ -2671,38 +2675,44 @@ msgstr "न्यूट्रिवट आयात करव"
 msgid "Importing USDA nutrient data"
 msgstr "यूएसडीए न्यूट्रिवट डाटा आयात करत हे "
 
-#: widgets/unitlistview.cpp:119 widgets/unitlistview.cpp:121
+#: widgets/unitlistview.cpp:120 widgets/unitlistview.cpp:122
 msgid "Abbreviation"
 msgstr "संक्छिप्त"
 
-#: widgets/unitlistview.cpp:120
+#: widgets/unitlistview.cpp:121
 msgid "Plural"
 msgstr "बहुवचन"
 
-#: widgets/unitlistview.cpp:138 widgets/categorylistview.cpp:319
+#: widgets/unitlistview.cpp:139 widgets/categorylistview.cpp:319
 #: widgets/propertylistview.cpp:131 widgets/ingredientlistview.cpp:124
 #: widgets/authorlistview.cpp:71 widgets/headerlistview.cpp:73
 #: widgets/prepmethodlistview.cpp:69
 msgid "&Create"
 msgstr "बनाव (&C)"
 
-#: widgets/unitlistview.cpp:141 widgets/categorylistview.cpp:322
+#: widgets/unitlistview.cpp:142 widgets/categorylistview.cpp:322
 #: widgets/propertylistview.cpp:134 widgets/ingredientlistview.cpp:127
 #: widgets/authorlistview.cpp:74 widgets/headerlistview.cpp:76
 #: widgets/prepmethodlistview.cpp:72
 msgid "&Rename"
 msgstr "नाम बदलव (&R)"
 
-#: widgets/unitlistview.cpp:242
+#: widgets/unitlistview.cpp:243
 msgid "Ingredient Weights"
 msgstr "सामग्री भार"
 
-#: widgets/unitlistview.cpp:251 widgets/ingredientlistview.cpp:179
+#: widgets/unitlistview.cpp:252 widgets/ingredientlistview.cpp:179
 #: widgets/headerlistview.cpp:124 widgets/prepmethodlistview.cpp:117
 msgid "You are about to permanantly delete recipes from your database."
 msgstr "आप अपन डाटाबेस से रेसिपि हमेसा बर मेटाय जा रहे हे."
 
-#: widgets/unitlistview.cpp:347
+#: widgets/unitlistview.cpp:272
+#, fuzzy
+#| msgid "&Rename"
+msgid "Rename Unit"
+msgstr "नाम बदलव (&R)"
+
+#: widgets/unitlistview.cpp:352
 msgid ""
 "This unit already exists.  Continuing will merge these two units into one.  "
 "Are you sure?"
