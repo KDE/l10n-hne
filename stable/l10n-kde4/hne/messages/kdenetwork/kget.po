@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-11 07:09+0200\n"
+"POT-Creation-Date: 2009-06-23 07:13+0200\n"
 "PO-Revision-Date: 2009-02-26 22:16+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -46,7 +46,7 @@ msgstr ""
 msgid "New Group"
 msgstr "नवा समूह"
 
-#: conf/transfersgroupwidget.cpp:128 core/kget.cpp:666 ui/contextmenu.cpp:132
+#: conf/transfersgroupwidget.cpp:128 core/kget.cpp:693 ui/contextmenu.cpp:132
 msgid "My Downloads"
 msgstr "मोर डाउनलोड्स"
 
@@ -162,8 +162,8 @@ msgstr "हस्तांतरन प्लगइन"
 msgid "Folder and extension can not be empty."
 msgstr "फोल्डर अउ एक्सटेंसन खाली नइ हो सके."
 
-#: conf/dlgdirectories.cpp:141 core/kget.cpp:454 core/kget.cpp:838
-#: core/kget.cpp:846 transfer-plugins/bittorrent/bttransfer.cpp:333
+#: conf/dlgdirectories.cpp:141 core/kget.cpp:481 core/kget.cpp:893
+#: core/kget.cpp:901 transfer-plugins/bittorrent/bttransfer.cpp:333
 #: transfer-plugins/bittorrent/bttransfer.cpp:344
 msgid "Error"
 msgstr "गलती"
@@ -291,10 +291,10 @@ msgid "Stop"
 msgstr "रुकव"
 
 #: core/transfer.cpp:49 core/transfer.cpp:137 core/transfer.cpp:205
-#: transfer-plugins/kio/transferKio.cpp:55
+#: transfer-plugins/kio/transferKio.cpp:56
 #: transfer-plugins/mms/mmsTransfer.cpp:52
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:62
-#: transfer-plugins/metalink/metalink.cpp:53
+#: transfer-plugins/metalink/metalink.cpp:54
 #: transfer-plugins/bittorrent/bttransfer.cpp:231
 #: transfer-plugins/contentfetch/contentfetch.cpp:64
 msgctxt "transfer state: stopped"
@@ -306,9 +306,9 @@ msgctxt "transfer state: delayed"
 msgid "Delayed"
 msgstr "विलम्बित"
 
-#: core/transfer.cpp:201 transfer-plugins/kio/transferKio.cpp:114
+#: core/transfer.cpp:201 transfer-plugins/kio/transferKio.cpp:116
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:206
-#: transfer-plugins/metalink/metalink.cpp:103
+#: transfer-plugins/metalink/metalink.cpp:105
 #: transfer-plugins/bittorrent/bttransfer.cpp:228
 msgctxt "transfer state: finished"
 msgid "Finished"
@@ -319,11 +319,11 @@ msgstr "पूरा"
 msgid "Error trying to get %1"
 msgstr "%1 ल लाय के कोसिस मं एक गलती होइस"
 
-#: core/kget.cpp:180
+#: core/kget.cpp:206
 msgid "Rename transfer"
 msgstr "ट्रांसफर के नाम बदलव"
 
-#: core/kget.cpp:439
+#: core/kget.cpp:466
 #, kde-format
 msgid ""
 "The file %1 already exists.\n"
@@ -332,26 +332,30 @@ msgstr ""
 "एक फाइल %1 पहिली से ही मौजूद हे\n"
 " मेटाय के लिखव?"
 
-#: core/kget.cpp:440
+#: core/kget.cpp:467
 msgid "Overwrite existing file?"
 msgstr "अभी हाल के फाइल मेटाय के लिखव?"
 
-#: core/kget.cpp:453
+#: core/kget.cpp:480
 #, kde-format
 msgid "Unable to save to: %1"
 msgstr "%1 मं सहेज नइ सके."
 
 #. i18n: file: ui/newtransferwidget.ui:24
 #. i18n: ectx: property (text), widget (KTitleWidget, titleWidget)
-#: core/kget.cpp:777 ui/newtransferdialog.cpp:219 rc.cpp:502
+#: core/kget.cpp:804 ui/newtransferdialog.cpp:219 rc.cpp:502
 msgid "New Download"
 msgstr "नवा डाउनलोड"
 
-#: core/kget.cpp:777
+#: core/kget.cpp:804
 msgid "Enter URL:"
 msgstr "यूआरएल भरव:"
 
 #: core/kget.cpp:837
+msgid "Save As"
+msgstr ""
+
+#: core/kget.cpp:892
 #, kde-format
 msgid ""
 "Malformed URL:\n"
@@ -360,7 +364,7 @@ msgstr ""
 "गलत रूप मं यूआरएल:\n"
 "%1"
 
-#: core/kget.cpp:845
+#: core/kget.cpp:900
 #, kde-format
 msgid ""
 "Malformed URL, protocol missing:\n"
@@ -369,7 +373,7 @@ msgstr ""
 "गलत रूप मं यूआरएल, प्रोटोकाल नइ हे:\n"
 "%1"
 
-#: core/kget.cpp:858
+#: core/kget.cpp:913
 #, kde-format
 msgid ""
 "URL already saved:\n"
@@ -380,15 +384,15 @@ msgstr ""
 "%1\n"
 "फिर से डाउनलोड करव?"
 
-#: core/kget.cpp:859
+#: core/kget.cpp:914
 msgid "Download URL again?"
 msgstr "यूआरएल फिर से डाउनलोड करव?"
 
-#: core/kget.cpp:887 core/kget.cpp:894
+#: core/kget.cpp:942 core/kget.cpp:949
 msgid "Directory is not writable"
 msgstr ""
 
-#: core/kget.cpp:904
+#: core/kget.cpp:959
 #, kde-format
 msgid ""
 "Destination file \n"
@@ -401,13 +405,13 @@ msgstr ""
 " पहिली से ही मौजूद हे. \n"
 "का आप मन एखर ऊपर लिखना चाहथो ?"
 
-#: core/kget.cpp:1034
+#: core/kget.cpp:1089
 #, kde-format
 msgid ""
 "<html><p>Plugin loader could not load the plugin:<br/><i>%1</i></p></html>"
 msgstr "<html><p>प्लगइन लोडर ह प्लगइन ल लोड नइ कर सकिस:<br/><i>%1</i></p></html>"
 
-#: core/kget.cpp:1052
+#: core/kget.cpp:1107
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -418,7 +422,7 @@ msgstr ""
 "%1\n"
 "काबर कि ए एक डिरेक्टरी हे."
 
-#: core/kget.cpp:1062
+#: core/kget.cpp:1117
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -429,24 +433,24 @@ msgstr ""
 "%1\n"
 "काबर कि ए लोकल फाइल नइ हे."
 
-#: transfer-plugins/kio/transferKio.cpp:37
+#: transfer-plugins/kio/transferKio.cpp:38
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:44
-#: transfer-plugins/metalink/metalink.cpp:37
+#: transfer-plugins/metalink/metalink.cpp:38
 msgctxt "transfer state: connecting"
 msgid "Connecting.."
 msgstr "कनेक्सन होवत हे..."
 
-#: transfer-plugins/kio/transferKio.cpp:125
+#: transfer-plugins/kio/transferKio.cpp:127
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:217
 msgid "Aborted"
 msgstr "छोड़ दे गिस"
 
-#: transfer-plugins/kio/transferKio.cpp:153
+#: transfer-plugins/kio/transferKio.cpp:155
 msgid "Downloading..."
 msgstr "डाउनलोड करत हे..."
 
-#: transfer-plugins/kio/transferKio.cpp:167
-#: transfer-plugins/kio/transferKio.cpp:182
+#: transfer-plugins/kio/transferKio.cpp:169
+#: transfer-plugins/kio/transferKio.cpp:184
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:248
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:265
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:282
@@ -461,7 +465,7 @@ msgctxt "transfer state: running"
 msgid "Running.."
 msgstr "चलत हे"
 
-#: transfer-plugins/metalink/metalink.cpp:112
+#: transfer-plugins/metalink/metalink.cpp:114
 msgctxt "transfer state: aborted"
 msgid "Aborted"
 msgstr "छोड़ दे गिस"
@@ -1828,15 +1832,15 @@ msgctxt "@label text in footer"
 msgid "KGet Webinterface | Valid XHTML 1.0 Strict &amp; CSS"
 msgstr ""
 
-#: main.cpp:113 mainwindow.cpp:85 mainwindow.cpp:437
+#: main.cpp:128 mainwindow.cpp:85 mainwindow.cpp:437
 msgid "KGet"
 msgstr "के-गेट"
 
-#: main.cpp:115
+#: main.cpp:130
 msgid "An advanced download manager for KDE"
 msgstr "केडीई बर एक उन्नत डाउनलोड प्रबंधक"
 
-#: main.cpp:117
+#: main.cpp:132
 msgid ""
 "(C) 2005 - 2008, The KGet developers\n"
 "(C) 2001 - 2002, Patrick Charbonnier\n"
@@ -1848,95 +1852,95 @@ msgstr ""
 "(C) 2002, कार्स्टेन पेइफर\n"
 "(C) 1998 - 2000, मातेज कास"
 
-#: main.cpp:121
+#: main.cpp:136
 msgid "<a href=\"mailto:kget@kde.org\">kget@kde.org</a>"
 msgstr "<a href=\"mailto:kget@kde.org\">kget@kde.org</a>"
 
-#: main.cpp:123
+#: main.cpp:138
 msgid "Dario Massarin"
 msgstr "दारियो मासारिन"
 
-#: main.cpp:123
+#: main.cpp:138
 msgid "Maintainer, Core Developer"
 msgstr "मेंटेनर, कोर डेवलपर"
 
-#: main.cpp:124
+#: main.cpp:139
 msgid "Urs Wolfer"
 msgstr "उर वोल्फर"
 
-#: main.cpp:124
+#: main.cpp:139
 msgid "Core Developer"
 msgstr "कोर डेवलपर"
 
-#: main.cpp:125
+#: main.cpp:140
 msgid "Manolo Valdes"
 msgstr "मानोलो वाल्देस"
 
-#: main.cpp:125
+#: main.cpp:140
 msgid "Core Developer, Multithreaded Plugin Author"
 msgstr "कोर डेवलपर, मल्टीथ्रेडेड प्लगइन लेखक"
 
-#: main.cpp:126
+#: main.cpp:141
 msgid "Javier Goday"
 msgstr "जेवियर गोदाय"
 
-#: main.cpp:126
+#: main.cpp:141
 msgid "Developer"
 msgstr "डेवलपर"
 
-#: main.cpp:127
+#: main.cpp:142
 msgid "Lukas Appelhans"
 msgstr "लुकास एपलहान्स"
 
-#: main.cpp:127
+#: main.cpp:142
 msgid "Developer, Torrent Plugin Author"
 msgstr "डेवलपर, टोरेंट प्लगइन लेखक"
 
-#: main.cpp:128
+#: main.cpp:143
 msgid "Patrick Charbonnier"
 msgstr "पैट्रिक कार्बोनियर"
 
-#: main.cpp:128 main.cpp:129 main.cpp:130
+#: main.cpp:143 main.cpp:144 main.cpp:145
 msgid "Former Developer"
 msgstr "पूर्व डेवलपर"
 
-#: main.cpp:129
+#: main.cpp:144
 msgid "Carsten Pfeiffer"
 msgstr "कार्स्टेन फेइफर"
 
-#: main.cpp:130
+#: main.cpp:145
 msgid "Matej Koss"
 msgstr "मातेज कास"
 
-#: main.cpp:131
+#: main.cpp:146
 msgid "Joris Guisson"
 msgstr "जोरिस गुइसन"
 
-#: main.cpp:131
+#: main.cpp:146
 msgid "BTCore (KTorrent) Developer"
 msgstr "बीटीकोर (केटोरेंट) डेवलपर"
 
-#: main.cpp:132
+#: main.cpp:147
 msgid "Mensur Zahirovic (Nookie)"
 msgstr "मेन्सुर जोहिरोविक (नुकी)"
 
-#: main.cpp:132
+#: main.cpp:147
 msgid "Design of Webinterface"
 msgstr "वेबइंटरफेस के डिजाइन"
 
-#: main.cpp:137
+#: main.cpp:152
 msgid "Start KGet with drop target"
 msgstr "के-गेट ड्राप लक्छ्य के साथ चालू करव"
 
-#: main.cpp:138
+#: main.cpp:153
 msgid "Start KGet with hidden main window"
 msgstr "केगेट ल मुख्य विंडो छुपा होय चालू करव"
 
-#: main.cpp:139
+#: main.cpp:154
 msgid "Start KGet without drop target animation"
 msgstr "केगेट ल ड्राप लक्छ्य एनीमेसन के बिना चालू करव"
 
-#: main.cpp:140
+#: main.cpp:155
 msgid "URL(s) to download"
 msgstr "यूआरएल जऊन ल डाउनलोड करे जाही "
 
