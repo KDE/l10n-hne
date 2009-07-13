@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-24 12:21+0200\n"
+"POT-Creation-Date: 2009-07-13 11:43+0200\n"
 "PO-Revision-Date: 2009-03-02 23:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1957,8 +1957,8 @@ msgstr ""
 #. i18n: file: plugins/reportspgz/backend/wrtembed/sectioneditor.ui:255
 #. i18n: ectx: property (text), widget (QPushButton, btnRemove)
 #: main/KexiMainWindow.cpp:4217 rc.cpp:315 rc.cpp:372
-#: plugins/reportspgz/kexireportdesignview.cpp:41
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1169
+#: plugins/reportspgz/kexireportdesignview.cpp:45
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1105
 msgid "Delete"
 msgstr "मेटाव"
 
@@ -2141,12 +2141,12 @@ msgid "Changes page size and margins."
 msgstr "पेज आकार अउ हासिया बदलथे ."
 
 #: main/printing/kexisimpleprintingpagesetup.cpp:449
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:925
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:877
 msgid "Portrait"
 msgstr "खड़ा "
 
 #: main/printing/kexisimpleprintingpagesetup.cpp:449
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:925
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:877
 msgid "Landscape"
 msgstr "आड़ा"
 
@@ -4438,13 +4438,13 @@ msgstr "जोड़व"
 
 #. i18n: file: plugins/reportspgz/backend/wrtembed/sectioneditor.ui:31
 #. i18n: ectx: property (windowTitle), widget (QDialog, SectionEditor)
-#: rc.cpp:318 plugins/reportspgz/kexireportdesignview.cpp:44
+#: rc.cpp:318 plugins/reportspgz/kexireportdesignview.cpp:48
 msgid "Section Editor"
 msgstr "खन्ड संपादक "
 
 #. i18n: file: plugins/reportspgz/backend/wrtembed/sectioneditor.ui:60
 #. i18n: ectx: property (text), widget (QCheckBox, cbReportHeader)
-#: rc.cpp:321 plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:582
+#: rc.cpp:321 plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:585
 msgid "Report Header"
 msgstr "रपट हेडर"
 
@@ -4476,7 +4476,7 @@ msgstr "कोई भी पेज"
 
 #. i18n: file: plugins/reportspgz/backend/wrtembed/sectioneditor.ui:129
 #. i18n: ectx: property (text), widget (QCheckBox, cbReportFooter)
-#: rc.cpp:342 plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:586
+#: rc.cpp:342 plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:589
 msgid "Report Footer"
 msgstr "रपट फूटर"
 
@@ -6118,31 +6118,50 @@ msgstr "रपट इहां %1 सहेजिस"
 msgid "Saved OK"
 msgstr "ठीक सहेजिस"
 
-#: plugins/reportspgz/kexireportdesignview.cpp:35
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1161
+#: plugins/reportspgz/kexisourceselector.cpp:36
+#, fuzzy
+#| msgid "Data"
+msgid "Set Data"
+msgstr "डाटा"
+
+#: plugins/reportspgz/kexisourceselector.cpp:40
+#, fuzzy
+#| msgctxt "General properties"
+#| msgid "General"
+msgid "Internal"
+msgstr "सामान्य"
+
+#: plugins/reportspgz/kexisourceselector.cpp:41
+#, fuzzy
+#| msgid "External Data"
+msgid "External"
+msgstr "बाहिरी डाटा"
+
+#: plugins/reportspgz/kexireportdesignview.cpp:39
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1097
 msgid "Cut"
 msgstr "काटव"
 
-#: plugins/reportspgz/kexireportdesignview.cpp:37
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1162
+#: plugins/reportspgz/kexireportdesignview.cpp:41
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1098
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:66
 msgid "Copy"
 msgstr "नकल"
 
-#: plugins/reportspgz/kexireportdesignview.cpp:39
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1165
+#: plugins/reportspgz/kexireportdesignview.cpp:43
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1101
 msgid "Paste"
 msgstr "चिपकाव"
 
-#: plugins/reportspgz/kexireportdesignview.cpp:47
+#: plugins/reportspgz/kexireportdesignview.cpp:51
 msgid "Raise"
 msgstr "ऊपर उठाव"
 
-#: plugins/reportspgz/kexireportdesignview.cpp:49
+#: plugins/reportspgz/kexireportdesignview.cpp:53
 msgid "Lower"
 msgstr "निचला"
 
-#: plugins/reportspgz/kexireportpart.cpp:57
+#: plugins/reportspgz/kexireportpart.cpp:60
 #, fuzzy
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
@@ -6152,21 +6171,27 @@ msgctxt ""
 msgid "report"
 msgstr "एक रपट"
 
-#: plugins/reportspgz/kexireportpart.cpp:58
+#: plugins/reportspgz/kexireportpart.cpp:61
 msgid "Report"
 msgstr "रपट "
 
-#: plugins/reportspgz/kexireportpart.cpp:59
+#: plugins/reportspgz/kexireportpart.cpp:62
 msgctxt "tooltip"
 msgid "Create new report"
 msgstr "नवा रिपोट बनाव"
 
-#: plugins/reportspgz/kexireportpart.cpp:60
+#: plugins/reportspgz/kexireportpart.cpp:63
 msgctxt "what's this"
 msgid "Creates new report."
 msgstr "नवा रिपोट बनाथे ."
 
-#: plugins/reportspgz/kexireportpart.cpp:131
+#: plugins/reportspgz/kexireportpart.cpp:135
+#, fuzzy
+#| msgid "Row Source"
+msgid "Source"
+msgstr "लकीर स्रोत"
+
+#: plugins/reportspgz/kexireportpart.cpp:139
 msgid "Controls"
 msgstr "कंट्रोल"
 
@@ -6199,66 +6224,66 @@ msgstr "आकार"
 msgid "Check"
 msgstr "चेक"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:402
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:399
 msgid "Report Writer"
 msgstr "रपट लेखक"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:402
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:399
 #, kde-format
 msgid ""
 "The document '%1' contains unsaved changes.\n"
 "Do you want to save the changes before closing?"
 msgstr ""
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:402
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:399
 msgid "Save"
 msgstr "सहेजव"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:402
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:399
 msgid "Discard"
 msgstr "फेंकव"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:402
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:399
 msgid "Cancel"
 msgstr "खारिज करव"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:542
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:545
 msgid "Page Header (Any)"
 msgstr "पेज हेडर (कोई भी)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:546
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:549
 msgid "Page Header (Even)"
 msgstr "पेज हेडर (सम)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:550
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:553
 msgid "Page Header (Odd)"
 msgstr "पेज हेडर (विसम)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:554
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:557
 msgid "Page Header (First)"
 msgstr "पेज हेडर (पहिली)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:558
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:561
 msgid "Page Header (Last)"
 msgstr "पेज हेडर (आखरी)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:562
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:565
 msgid "Page Footer (Any)"
 msgstr "पेज फुटर (कोई भी)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:566
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:569
 msgid "Page Footer (Even)"
 msgstr "पेज फुटर (सम)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:570
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:573
 msgid "Page Footer (Odd)"
 msgstr "पेज फुटर (विसम)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:574
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:577
 msgid "Page Footer (First)"
 msgstr "पेज फुटर (पहिली)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:578
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:581
 msgid "Page Footer (Last)"
 msgstr "पेज फुटर (आखरी)"
 
