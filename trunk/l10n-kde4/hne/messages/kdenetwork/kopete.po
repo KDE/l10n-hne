@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-14 11:35+0200\n"
+"POT-Creation-Date: 2009-07-15 13:07+0200\n"
 "PO-Revision-Date: 2009-02-27 17:13+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -243,7 +243,7 @@ msgstr "ओफलाइन"
 #: protocols/oscar/icq/icqstatusmanager.cpp:37
 #: protocols/oscar/icq/icqprotocol.cpp:450
 #: protocols/oscar/icq/icqprotocol.cpp:532
-#: protocols/skype/libskype/skype.cpp:388
+#: protocols/skype/libskype/skype.cpp:389
 #: protocols/jabber/jingle/jinglecontentdialog.cpp:38
 #: protocols/groupwise/gwprotocol.cpp:66
 msgid "Unknown"
@@ -285,7 +285,7 @@ msgid "File transfer %1 cancelled."
 msgstr "फाइल स्थांतरन %1 खारिज."
 
 #: libkopete/kopetetransfermanager.cpp:469 protocols/qq/qqcontact.cpp:418
-#: protocols/wlm/wlmcontact.cpp:163 protocols/gadu/gaducontact.cpp:100
+#: protocols/wlm/wlmcontact.cpp:180 protocols/gadu/gaducontact.cpp:100
 #: protocols/oscar/oscarcontact.cpp:356
 #: protocols/jabber/jabbercontact.cpp:1078
 #: protocols/jabber/jabbergroupmembercontact.cpp:159
@@ -8088,7 +8088,7 @@ msgstr "लिंग:"
 #. i18n: file: protocols/gadu/ui/gadusearch.ui:264
 #. i18n: ectx: property (text), item, widget (QComboBox, gender)
 #: rc.cpp:2356 rc.cpp:3654 rc.cpp:3702 protocols/oscar/icq/icqprotocol.cpp:199
-#: protocols/skype/skypecontact.cpp:238
+#: protocols/skype/skypecontact.cpp:237
 msgid "Male"
 msgstr "पुरूस"
 
@@ -8105,7 +8105,7 @@ msgstr "पुरूस"
 #. i18n: file: protocols/gadu/ui/gadusearch.ui:269
 #. i18n: ectx: property (text), item, widget (QComboBox, gender)
 #: rc.cpp:2359 rc.cpp:3651 rc.cpp:3705 protocols/oscar/icq/icqprotocol.cpp:198
-#: protocols/skype/skypecontact.cpp:240
+#: protocols/skype/skypecontact.cpp:239
 msgid "Female"
 msgstr "स्त्री"
 
@@ -16822,7 +16822,7 @@ msgstr "कमइया से रोक हटाव"
 msgid "Block User"
 msgstr "कमइया ल रोकव"
 
-#: protocols/qq/qqcontact.cpp:143 protocols/wlm/wlmcontact.cpp:61
+#: protocols/qq/qqcontact.cpp:143 protocols/wlm/wlmcontact.cpp:62
 #: protocols/gadu/gaducontact.cpp:192
 msgid "Show Profile"
 msgstr "प्रोफाइल देखाव"
@@ -17435,39 +17435,45 @@ msgid "MSN Plugin"
 msgstr "एमएसएन प्लगइन"
 
 #: protocols/wlm/ui/wlmeditaccountwidget.cpp:213
-#: protocols/wlm/wlmcontact.cpp:364
+#: protocols/wlm/wlmcontact.cpp:384
 msgid "WLM Plugin"
 msgstr "डबल्यूएलएम प्लगइन"
 
-#: protocols/wlm/wlmcontact.cpp:58
+#: protocols/wlm/wlmcontact.cpp:59
 msgid "Block Contact"
 msgstr "सम्पर्क रोकव"
 
-#: protocols/wlm/wlmcontact.cpp:64
+#: protocols/wlm/wlmcontact.cpp:65
 #, fuzzy
 #| msgid "Clear Photo"
 msgid "Update Photo"
 msgstr "फोटो साफ करव"
 
-#: protocols/wlm/wlmcontact.cpp:363
+#: protocols/wlm/wlmcontact.cpp:69
+#, fuzzy
+#| msgid "&Download and show custom emoticons"
+msgid "&Block custom emoticons"
+msgstr "मनमाफिक चेहराचिनहा डाउनलोड करव अउ देखाव (&D)"
+
+#: protocols/wlm/wlmcontact.cpp:383
 msgid ""
 "<qt>You need to go online to remove a contact from your contact list. This "
 "contact will appear again when you reconnect.</qt>"
 msgstr ""
 
-#: protocols/wlm/wlmcontact.cpp:406
+#: protocols/wlm/wlmcontact.cpp:426
 #, fuzzy
 #| msgid "The contact XXX has added you to his/her contactlist"
 msgid "This contact does not have you in his/her list"
 msgstr "सम्पर्क XXX हर आप मन ल अपन सम्पर्क सूची मं सामिल करिस"
 
-#: protocols/wlm/wlmcontact.cpp:413
+#: protocols/wlm/wlmcontact.cpp:433
 #, fuzzy
 #| msgid "User is blocked"
 msgid "This contact is blocked"
 msgstr "कमइया रोके गे हे"
 
-#: protocols/wlm/wlmcontact.cpp:415
+#: protocols/wlm/wlmcontact.cpp:435
 msgid "This contact does not have you in his/her list and is blocked"
 msgstr ""
 
@@ -20040,131 +20046,145 @@ msgstr "स्काइप"
 msgid "Make Test Call"
 msgstr "मेटा-कान्टेक्ट बनाव"
 
-#: protocols/skype/libskype/skype.cpp:246
-msgid "This version of Skype is too old, consider upgrading"
+#: protocols/skype/skypeaccount.cpp:1010 protocols/skype/skypeaccount.cpp:1027
+#: protocols/skype/skypeaccount.cpp:1032 protocols/skype/skypeaccount.cpp:1058
+msgid "Unknow action from SkypeActionHandler"
 msgstr ""
 
+#: protocols/skype/skypeaccount.cpp:1010 protocols/skype/skypeaccount.cpp:1027
+#: protocols/skype/skypeaccount.cpp:1032 protocols/skype/skypeaccount.cpp:1050
+#: protocols/skype/skypeaccount.cpp:1058
 #: protocols/skype/libskype/skype.cpp:280
 #, fuzzy
 msgid "Skype protocol"
 msgstr "प्रोटोकाल बरः"
 
-#: protocols/skype/libskype/skype.cpp:390
+#: protocols/skype/skypeaccount.cpp:1050
+#, fuzzy
+#| msgid "Could not open contact list file."
+msgid "Contact are not in contact list"
+msgstr "सम्पर्क सूची फाइल खोल नइ सकिस."
+
+#: protocols/skype/libskype/skype.cpp:246
+msgid "This version of Skype is too old, consider upgrading"
+msgstr ""
+
+#: protocols/skype/libskype/skype.cpp:391
 #: protocols/groupwise/libgroupwise/gwerror.cpp:41
 msgid "User not found"
 msgstr "कमइया नइ मिलिस"
 
-#: protocols/skype/libskype/skype.cpp:392
+#: protocols/skype/libskype/skype.cpp:393
 msgid "Does not have multi-user chat capability"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:394
+#: protocols/skype/libskype/skype.cpp:395
 #, fuzzy
 msgid "Chat denied"
 msgstr "संतुस्ट"
 
-#: protocols/skype/libskype/skype.cpp:460
+#: protocols/skype/libskype/skype.cpp:461
 #: protocols/yahoo/libkyahoo/sendfiletask.cpp:103
 msgid "Unknown error"
 msgstr "अग्यात गलती."
 
-#: protocols/skype/libskype/skype.cpp:463
+#: protocols/skype/libskype/skype.cpp:464
 #, fuzzy
 msgid "Misc error"
 msgstr "गलती"
 
-#: protocols/skype/libskype/skype.cpp:466
+#: protocols/skype/libskype/skype.cpp:467
 #, fuzzy
 msgid "User or phone number does not exist"
 msgstr "डिरेक्टरी %1 मौजूद नइ हे"
 
-#: protocols/skype/libskype/skype.cpp:469
+#: protocols/skype/libskype/skype.cpp:470
 #, fuzzy
 msgid "User is offline"
 msgstr "कमइया प्रोफाइल"
 
-#: protocols/skype/libskype/skype.cpp:472
+#: protocols/skype/libskype/skype.cpp:473
 #, fuzzy
 msgid "No proxy found"
 msgstr "होस्ट नइ मिलिस"
 
-#: protocols/skype/libskype/skype.cpp:475
+#: protocols/skype/libskype/skype.cpp:476
 #, fuzzy
 msgid "Session terminated"
 msgstr "सत्र खतम होइस."
 
-#: protocols/skype/libskype/skype.cpp:478
+#: protocols/skype/libskype/skype.cpp:479
 msgid "No common codec found"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:481
+#: protocols/skype/libskype/skype.cpp:482
 msgid "Sound I/O error"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:484
+#: protocols/skype/libskype/skype.cpp:485
 msgid "Problem with remote sound device"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:487
+#: protocols/skype/libskype/skype.cpp:488
 msgid "Call blocked by recipient"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:490
+#: protocols/skype/libskype/skype.cpp:491
 msgid "Recipient not a friend"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:493
+#: protocols/skype/libskype/skype.cpp:494
 msgid "User not authorized by recipient"
 msgstr ""
 
-#: protocols/skype/libskype/skype.cpp:496
+#: protocols/skype/libskype/skype.cpp:497
 #, fuzzy
 msgid "Sound recording error"
 msgstr "कनेक्सन मं गलती"
 
-#: protocols/skype/libskype/skype.cpp:759
+#: protocols/skype/libskype/skype.cpp:762
 #, fuzzy
 msgid "This version of Skype does not support adding users to chat."
 msgstr "ये प्रोटोकाल मं खाता जोड़ना अभी हाल के मं समर्थित नइ हे. "
 
-#: protocols/skype/libskype/skype.cpp:759
+#: protocols/skype/libskype/skype.cpp:762
 #, fuzzy
 msgid "Skype Protocol"
 msgstr "प्रोटोकाल"
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:91
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:90
 #, fuzzy
 msgid "Could not ping Skype"
 msgstr "गपसप मं सामिल नइ हो सकिस"
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:111
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:110
 msgid "Skype did not accept this application"
 msgstr ""
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:122
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:121
 msgid "Skype API syntax error"
 msgstr ""
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:131
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:130
 msgid "Skype API not ready yet, wait a bit longer"
 msgstr ""
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:187
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:186
 msgid ""
 "Could not launch Skype.\n"
 "You need to install the original dynamic linked Skype version 2.0 binary "
 "from http://www.skype.com"
 msgstr ""
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:194
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:299
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:193
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:298
 msgid ""
 "Could not find Skype.\n"
 "You need to install the original dynamic linked Skype version 2.0 binary "
 "from http://www.skype.com"
 msgstr ""
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:238
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:237
 #, kde-format
 msgid ""
 "Could not ping Skype.\n"
@@ -20172,23 +20192,23 @@ msgid ""
 "Error while sending a message to Skype (%1)."
 msgstr ""
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:240
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:239
 #, fuzzy, kde-format
 msgid "Error while sending a message to Skype (%1)."
 msgstr "संदेस भेजे मं एक गलती होइस."
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:248
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:247
 msgid ""
 "Could not ping Skype.\n"
 "You are logged out from Skype, please log in."
 msgstr ""
 
-#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:301
+#: protocols/skype/libskype/skypedbus/skypeconnection.cpp:300
 #, fuzzy
 msgid "Please login to Skype first"
 msgstr "किरपा करके, पहिली कनेक्ट हों."
 
-#: protocols/skype/skypeconference.cpp:44
+#: protocols/skype/skypeconference.cpp:45
 #, fuzzy
 msgid "Conference Call"
 msgstr "कान्फ्रेंस सदस्य"
