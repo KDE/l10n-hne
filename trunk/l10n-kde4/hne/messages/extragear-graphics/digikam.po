@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-26 06:15+0200\n"
+"POT-Creation-Date: 2009-07-27 06:24+0200\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -202,19 +202,19 @@ msgstr "%1 (35मिमी: %2)"
 msgid "%1 ISO"
 msgstr "%1 आईएसओ"
 
-#: libs/imageproperties/imagepropertiesmetadatatab.cpp:95
+#: libs/imageproperties/imagepropertiesmetadatatab.cpp:91
 msgid "EXIF"
 msgstr "एक्सइफ"
 
-#: libs/imageproperties/imagepropertiesmetadatatab.cpp:100
+#: libs/imageproperties/imagepropertiesmetadatatab.cpp:96
 msgid "Makernote"
 msgstr "मेकरनोट"
 
-#: libs/imageproperties/imagepropertiesmetadatatab.cpp:105
+#: libs/imageproperties/imagepropertiesmetadatatab.cpp:101
 msgid "IPTC"
 msgstr "आईपीटीसी"
 
-#: libs/imageproperties/imagepropertiesmetadatatab.cpp:111
+#: libs/imageproperties/imagepropertiesmetadatatab.cpp:107
 msgid "XMP"
 msgstr "एक्सएमपी"
 
@@ -434,12 +434,12 @@ msgstr "पाठ घुमाव जऊन परयोग मं ले हे
 
 #: libs/imageproperties/imagedescedittab.cpp:189
 #: libs/widgets/common/thumbbartooltip.cpp:154 digikam/tooltipfiller.cpp:80
-#: digikam/tooltipfiller.cpp:300
+#: digikam/tooltipfiller.cpp:315
 #: utilities/cameragui/cameraiconviewtooltip.cpp:141
 msgid "Date:"
 msgstr "तारीकः"
 
-#: libs/imageproperties/imagedescedittab.cpp:194 digikam/tooltipfiller.cpp:251
+#: libs/imageproperties/imagedescedittab.cpp:194 digikam/tooltipfiller.cpp:266
 msgid "Rating:"
 msgstr "रेटिंग:"
 
@@ -1715,7 +1715,7 @@ msgid "Reference:"
 msgstr ""
 
 #: libs/template/subjectwidget.cpp:191
-#: libs/widgets/common/thumbbartooltip.cpp:146 digikam/tooltipfiller.cpp:279
+#: libs/widgets/common/thumbbartooltip.cpp:146 digikam/tooltipfiller.cpp:294
 #: utilities/cameragui/cameraiconviewtooltip.cpp:133
 msgid "Name:"
 msgstr "नाम:"
@@ -4766,6 +4766,10 @@ msgstr "मेडियन:"
 msgid "Percent:"
 msgstr "प्रतिसत:"
 
+#: libs/widgets/common/ditemtooltip.cpp:49
+msgid "unavailable"
+msgstr "नइ मिलत "
+
 #: libs/widgets/common/dfontselect.cpp:81
 msgid "System Font"
 msgstr ""
@@ -4786,10 +4790,6 @@ msgstr "डिजीकैम परियोजना वेबसाइट म
 #: libs/widgets/common/searchtextbar.h:62 digikam/digikamapp.cpp:1183
 msgid "Search..."
 msgstr "खोजव..."
-
-#: libs/widgets/common/ditemtooltip.h:59
-msgid "unavailable"
-msgstr "नइ मिलत "
 
 #: libs/widgets/common/filesaveoptionsbox.cpp:102
 msgid "No options available"
@@ -6644,29 +6644,29 @@ msgctxt "caption of the file"
 msgid "Caption:"
 msgstr "सीर्सक:"
 
-#: digikam/tooltipfiller.cpp:241
+#: digikam/tooltipfiller.cpp:238
 msgid "Tags:"
 msgstr "टैग्स:"
 
-#: digikam/tooltipfiller.cpp:275
+#: digikam/tooltipfiller.cpp:290
 #, fuzzy
 msgid "Album Properties"
 msgstr "एलबम गुन..."
 
-#: digikam/tooltipfiller.cpp:285 utilities/fuzzysearch/fuzzysearchview.cpp:332
+#: digikam/tooltipfiller.cpp:300 utilities/fuzzysearch/fuzzysearchview.cpp:332
 msgid "Items:"
 msgstr ""
 
-#: digikam/tooltipfiller.cpp:291
+#: digikam/tooltipfiller.cpp:306
 #, fuzzy
 msgid "Collection:"
 msgstr "संग्रह: (&l)"
 
-#: digikam/tooltipfiller.cpp:307
+#: digikam/tooltipfiller.cpp:322
 msgid "Category:"
 msgstr ""
 
-#: digikam/tooltipfiller.cpp:315
+#: digikam/tooltipfiller.cpp:330
 msgid "Caption:"
 msgstr "सीर्सक:"
 
@@ -7249,8 +7249,9 @@ msgstr "सब्बो फिंगरप्रिंट फिर से ब�
 
 #: digikam/digikamapp.cpp:1237
 #, fuzzy
-msgid "Synchronize All Images with Database"
-msgstr "फोटू मन ल डाटाबेस के साथ सिंक्रोनाइज करव"
+#| msgid "Write metadata to each file"
+msgid "Write Metadata to All Images"
+msgstr "हर एक फाइल मं मेटाडाटा लिखव"
 
 #: digikam/digikamapp.cpp:1252
 msgid "Loading cameras"
@@ -7391,11 +7392,12 @@ msgstr "प्रसंग लोड करत हे"
 
 #: digikam/digikamapp.cpp:2501
 msgid ""
-"Updating the metadata database can take some time. \n"
+"This action will update the metadata of all available files from information "
+"stored in the database. This can take some time. \n"
 "Do you want to continue?"
 msgstr ""
 
-#: digikam/digikamapp.cpp:2512
+#: digikam/digikamapp.cpp:2513
 msgid ""
 "Image thumbnailing can take some time.\n"
 "Which would you prefer?\n"
@@ -7403,22 +7405,22 @@ msgid ""
 "- Rebuild all thumbnails (takes a long time)"
 msgstr ""
 
-#: digikam/digikamapp.cpp:2517 digikam/digikamapp.cpp:2540
+#: digikam/digikamapp.cpp:2518 digikam/digikamapp.cpp:2541
 #: showfoto/showfoto.cpp:1106
 #: utilities/imageeditor/editor/editorwindow.cpp:1126
 #: utilities/cameragui/cameraui.cpp:1860
 msgid "Warning"
 msgstr "चेतावनी"
 
-#: digikam/digikamapp.cpp:2518 digikam/digikamapp.cpp:2541
+#: digikam/digikamapp.cpp:2519 digikam/digikamapp.cpp:2542
 msgid "Scan"
 msgstr "स्केन"
 
-#: digikam/digikamapp.cpp:2519 digikam/digikamapp.cpp:2542
+#: digikam/digikamapp.cpp:2520 digikam/digikamapp.cpp:2543
 msgid "Rebuild All"
 msgstr "सब्बो ल फिर से बनाव"
 
-#: digikam/digikamapp.cpp:2535
+#: digikam/digikamapp.cpp:2536
 msgid ""
 "Image fingerprinting can take some time.\n"
 "Which would you prefer?\n"
@@ -7426,26 +7428,26 @@ msgid ""
 "- Rebuild all fingerprints (takes a long time)"
 msgstr ""
 
-#: digikam/digikamapp.cpp:2593 utilities/cameragui/cameraui.cpp:1019
+#: digikam/digikamapp.cpp:2594 utilities/cameragui/cameraui.cpp:1019
 #, kde-format
 msgid "Size: %1"
 msgstr "आकारः %1"
 
-#: digikam/digikamapp.cpp:2601 utilities/lighttable/lighttablewindow.cpp:1488
+#: digikam/digikamapp.cpp:2602 utilities/lighttable/lighttablewindow.cpp:1488
 #: utilities/lighttable/lighttablewindow.cpp:1512
 #, kde-format
 msgid "zoom: %1%"
 msgstr "जूम:%1% "
 
-#: digikam/digikamapp.cpp:2633
+#: digikam/digikamapp.cpp:2634
 msgid "Select folder to parse"
 msgstr "पार करे बर फोल्डर चुनव"
 
-#: digikam/digikamapp.cpp:2645
+#: digikam/digikamapp.cpp:2646
 msgid "Select folders to import into album"
 msgstr "एलबम मं आयात बर फोल्डर चुनव"
 
-#: digikam/digikamapp.cpp:2657
+#: digikam/digikamapp.cpp:2658
 msgid ""
 "<p>Please select the destination album from the digiKam library to import "
 "folders into.</p>"
@@ -17548,6 +17550,10 @@ msgid ""
 "\n"
 "Build date: %1"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Synchronize All Images with Database"
+#~ msgstr "फोटू मन ल डाटाबेस के साथ सिंक्रोनाइज करव"
 
 #, fuzzy
 #~ msgid "Synchronize Images with Database"
