@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-29 07:25+0200\n"
+"POT-Creation-Date: 2009-07-30 06:25+0200\n"
 "PO-Revision-Date: 2009-01-29 17:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -784,12 +784,12 @@ msgid "Display Range"
 msgstr "प्रदर्सक सीमा"
 
 #: SensorDisplayLib/DancingBarsSettings.cc:73
-#: SensorDisplayLib/FancyPlotterSettings.cc:99
+#: SensorDisplayLib/FancyPlotterSettings.cc:103
 msgid "Minimum value:"
 msgstr "सबसे कम मानः"
 
 #: SensorDisplayLib/DancingBarsSettings.cc:81
-#: SensorDisplayLib/FancyPlotterSettings.cc:106
+#: SensorDisplayLib/FancyPlotterSettings.cc:110
 msgid ""
 "Enter the minimum value for the display here. If both values are 0, "
 "automatic range detection is enabled."
@@ -798,12 +798,12 @@ msgstr ""
 "अपन सक्छम होही."
 
 #: SensorDisplayLib/DancingBarsSettings.cc:85
-#: SensorDisplayLib/FancyPlotterSettings.cc:110
+#: SensorDisplayLib/FancyPlotterSettings.cc:114
 msgid "Maximum value:"
 msgstr "सबसे अधिक मानः"
 
 #: SensorDisplayLib/DancingBarsSettings.cc:93
-#: SensorDisplayLib/FancyPlotterSettings.cc:117
+#: SensorDisplayLib/FancyPlotterSettings.cc:121
 msgid ""
 "Enter the maximum value for the display here. If both values are 0, "
 "automatic range detection is enabled."
@@ -888,7 +888,7 @@ msgid "Background color:"
 msgstr "पिछोत अंगना के रंगः"
 
 #: SensorDisplayLib/DancingBarsSettings.cc:183
-#: SensorDisplayLib/FancyPlotterSettings.cc:185
+#: SensorDisplayLib/FancyPlotterSettings.cc:189
 msgid "Font size:"
 msgstr "फोंट आकारः"
 
@@ -900,7 +900,7 @@ msgid ""
 msgstr ""
 
 #: SensorDisplayLib/DancingBarsSettings.cc:195
-#: SensorDisplayLib/FancyPlotterSettings.cc:230
+#: SensorDisplayLib/FancyPlotterSettings.cc:234
 msgid "Sensors"
 msgstr "सेंसर "
 
@@ -913,12 +913,12 @@ msgid "Push this button to configure the label."
 msgstr "लेबल कान्फिगर करे बर ए बटन ल दबाव"
 
 #: SensorDisplayLib/DancingBarsSettings.cc:212
-#: SensorDisplayLib/FancyPlotterSettings.cc:263
+#: SensorDisplayLib/FancyPlotterSettings.cc:267
 msgid "Delete"
 msgstr "मेटाव"
 
 #: SensorDisplayLib/DancingBarsSettings.cc:213
-#: SensorDisplayLib/FancyPlotterSettings.cc:264
+#: SensorDisplayLib/FancyPlotterSettings.cc:268
 msgid "Push this button to delete the sensor."
 msgstr "सेंसर मेटाय बर ए बटन ल दबाव"
 
@@ -950,72 +950,90 @@ msgstr "स्केल्स"
 msgid "Vertical Scale"
 msgstr "खड़ा स्केल"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:95
-msgid "Automatic range detection"
+#: SensorDisplayLib/FancyPlotterSettings.cc:97
+#, fuzzy
+#| msgid "Automatic range detection"
+msgid "Automatic range"
 msgstr "अपने अपन रेंज डिटेक्सन"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:96
-msgid ""
-"Check this box if you want the display range to adapt dynamically to the "
-"currently displayed values; if you do not check this, you have to specify "
-"the range you want in the fields below."
+#: SensorDisplayLib/FancyPlotterSettings.cc:98
+msgid "Manual with ksysguardd's range"
 msgstr ""
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:123
+#: SensorDisplayLib/FancyPlotterSettings.cc:99
+msgid "Manual with user's range"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:100
+msgid ""
+"Choose between the three following range policy:\n"
+"\n"
+"Automatic range: adapts dynamically to the currently displayed values\n"
+"\n"
+"Manual with ksysguardd's range: uses ksysguardd's range to set the minimum "
+"and maximum value for the axis, please note that if the minimum and maximum "
+"are not given by ksysguardd you should not choose this range policy.\n"
+"\n"
+"Manual with user's range: specify your own minimum and maximum range value "
+"for the axis in the fields below. Any range value provided by ksysguardd "
+"will be ignored."
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:127
 msgid "Horizontal Scale"
 msgstr "आड़ा स्केल"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:129
+#: SensorDisplayLib/FancyPlotterSettings.cc:133
 #, fuzzy
 #| msgid "pixels per time period"
 msgid "Pixels per time period:"
 msgstr "पिक्सल्स प्रति समय अवधि"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:141
+#: SensorDisplayLib/FancyPlotterSettings.cc:145
 msgid "Grid"
 msgstr "ग्रिड"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:146
+#: SensorDisplayLib/FancyPlotterSettings.cc:150
 msgid "Lines"
 msgstr "लकीर"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:152
+#: SensorDisplayLib/FancyPlotterSettings.cc:156
 msgid "Vertical lines"
 msgstr "खड़ी लकीर"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:153
+#: SensorDisplayLib/FancyPlotterSettings.cc:157
 msgid "Check this to activate the vertical lines if display is large enough."
 msgstr "खड़ी पंक्ति ल सक्रिय करे बर एला जांचव यदि प्रदर्सक काफी बड़े हो."
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:156
+#: SensorDisplayLib/FancyPlotterSettings.cc:160
 msgid "Distance:"
 msgstr "दूरीः"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:162
+#: SensorDisplayLib/FancyPlotterSettings.cc:166
 msgid "Enter the distance between two vertical lines here."
 msgstr "दो खड़ी पंक्तियों के बीच के दूरी इहां भरव."
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:166
+#: SensorDisplayLib/FancyPlotterSettings.cc:170
 msgid "Vertical lines scroll"
 msgstr "खड़ी लाइन स्क्राल"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:169
+#: SensorDisplayLib/FancyPlotterSettings.cc:173
 msgid "Horizontal lines"
 msgstr "आड़ी लकीर"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:170
+#: SensorDisplayLib/FancyPlotterSettings.cc:174
 msgid "Check this to enable horizontal lines if display is large enough."
 msgstr "आड़ी लकीर ल सक्छम करे बर एला जांचव यदि प्रदर्सक काफी बड़ा हो."
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:175
+#: SensorDisplayLib/FancyPlotterSettings.cc:179
 msgid "Text"
 msgstr "पाठ"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:181
+#: SensorDisplayLib/FancyPlotterSettings.cc:185
 msgid "Show axis labels"
 msgstr "अक्छ लेबल्स देखाव"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:182
+#: SensorDisplayLib/FancyPlotterSettings.cc:186
 msgid ""
 "Check this box if horizontal lines should be decorated with the values they "
 "mark."
@@ -1025,35 +1043,35 @@ msgstr "ये डब्बा ल चेक करव यदि आड़ी �
 #. i18n: ectx: property (title), widget (QGroupBox, colorFrame)
 #. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:37
 #. i18n: ectx: property (title), widget (QGroupBox, colorFrame)
-#: SensorDisplayLib/FancyPlotterSettings.cc:197 rc.cpp:86 rc.cpp:101
+#: SensorDisplayLib/FancyPlotterSettings.cc:201 rc.cpp:86 rc.cpp:101
 msgid "Colors"
 msgstr "रंग"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:202
+#: SensorDisplayLib/FancyPlotterSettings.cc:206
 msgid "Font:"
 msgstr "फोंटः"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:209
+#: SensorDisplayLib/FancyPlotterSettings.cc:213
 msgid "Grid lines:"
 msgstr "ग्रिड लकीर:"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:215
+#: SensorDisplayLib/FancyPlotterSettings.cc:219
 msgid "Background:"
 msgstr "पिछोत अंगना:"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:255
+#: SensorDisplayLib/FancyPlotterSettings.cc:259
 msgid "Set Color..."
 msgstr "रंग सेट करव..."
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:256
+#: SensorDisplayLib/FancyPlotterSettings.cc:260
 msgid "Push this button to configure the color of the sensor in the diagram."
 msgstr "आकृति के संवेदक मं रंग ल कान्फिगर करे बर ए बटन ल दबाव."
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:268
+#: SensorDisplayLib/FancyPlotterSettings.cc:272
 msgid "Move Up"
 msgstr "ऊपर जाव"
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:273
+#: SensorDisplayLib/FancyPlotterSettings.cc:277
 msgid "Move Down"
 msgstr "नीचे जाव"
 
@@ -1066,7 +1084,7 @@ msgid "OK"
 msgstr "ठीक"
 
 #: SensorDisplayLib/DancingBars.cc:98 SensorDisplayLib/FancyPlotter.cc:202
-#: SensorDisplayLib/FancyPlotter.cc:478
+#: SensorDisplayLib/FancyPlotter.cc:479
 msgid "Error"
 msgstr "गलती"
 
@@ -1092,77 +1110,77 @@ msgctxt "Largest axis title"
 msgid "99999 XXXX"
 msgstr "99999 XXXX"
 
-#: SensorDisplayLib/FancyPlotter.cc:393
+#: SensorDisplayLib/FancyPlotter.cc:394
 #, fuzzy, kde-format
 msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
 msgid "<p><b>%1:</b><br>"
 msgstr "<p><b>%1:</b><br>"
 
-#: SensorDisplayLib/FancyPlotter.cc:431
+#: SensorDisplayLib/FancyPlotter.cc:432
 #, fuzzy, kde-format
 msgctxt "%1 and %2 are sensor's last and maximum value"
 msgid "%1 of %2"
 msgstr "%2 मं से %1"
 
-#: SensorDisplayLib/FancyPlotter.cc:469 SensorDisplayLib/FancyPlotter.cc:521
+#: SensorDisplayLib/FancyPlotter.cc:470 SensorDisplayLib/FancyPlotter.cc:522
 #, kde-format
 msgctxt "units"
 msgid "%1%"
 msgstr ""
 
-#: SensorDisplayLib/FancyPlotter.cc:474
+#: SensorDisplayLib/FancyPlotter.cc:475
 msgid "N/A"
 msgstr ""
 
-#: SensorDisplayLib/FancyPlotter.cc:494
+#: SensorDisplayLib/FancyPlotter.cc:495
 #, kde-format
 msgctxt "units"
 msgid "%1 TiB"
 msgstr ""
 
-#: SensorDisplayLib/FancyPlotter.cc:497
+#: SensorDisplayLib/FancyPlotter.cc:498
 #, kde-format
 msgctxt "units"
 msgid "%1 GiB"
 msgstr ""
 
-#: SensorDisplayLib/FancyPlotter.cc:500
+#: SensorDisplayLib/FancyPlotter.cc:501
 #, kde-format
 msgctxt "units"
 msgid "%1 MiB"
 msgstr ""
 
-#: SensorDisplayLib/FancyPlotter.cc:503
+#: SensorDisplayLib/FancyPlotter.cc:504
 #, kde-format
 msgctxt "units"
 msgid "%1 KiB"
 msgstr ""
 
-#: SensorDisplayLib/FancyPlotter.cc:508
+#: SensorDisplayLib/FancyPlotter.cc:509
 #, kde-format
 msgctxt "units"
 msgid "%1 TiB/s"
 msgstr ""
 
-#: SensorDisplayLib/FancyPlotter.cc:511
+#: SensorDisplayLib/FancyPlotter.cc:512
 #, kde-format
 msgctxt "units"
 msgid "%1 GiB/s"
 msgstr ""
 
-#: SensorDisplayLib/FancyPlotter.cc:514
+#: SensorDisplayLib/FancyPlotter.cc:515
 #, kde-format
 msgctxt "units"
 msgid "%1 MiB/s"
 msgstr ""
 
-#: SensorDisplayLib/FancyPlotter.cc:517
+#: SensorDisplayLib/FancyPlotter.cc:518
 #, kde-format
 msgctxt "units"
 msgid "%1 KiB/s"
 msgstr ""
 
-#: SensorDisplayLib/FancyPlotter.cc:523
+#: SensorDisplayLib/FancyPlotter.cc:524
 #, fuzzy, kde-format
 #| msgid "%"
 msgctxt "unitless - just a number"
@@ -1489,124 +1507,124 @@ msgstr ""
 msgid "KDE System Monitor"
 msgstr "केडीई तंत्र मानीटर"
 
-#: ksysguard.cc:155 ksysguard.cc:527
+#: ksysguard.cc:156 ksysguard.cc:524
 msgid "System Monitor"
 msgstr "तंत्र मानीटर"
 
-#: ksysguard.cc:156
+#: ksysguard.cc:157
 msgid "&New Tab..."
 msgstr "नवा टैब... (&N)"
 
-#: ksysguard.cc:157
+#: ksysguard.cc:158
 msgid "Import Tab Fr&om File..."
 msgstr "टैब ल फाइल से आयात करव...(&o)"
 
-#: ksysguard.cc:158
+#: ksysguard.cc:159
 msgid "Save Tab &As..."
 msgstr "टैब ल अइसन सहेजव... (&A)"
 
-#: ksysguard.cc:159
+#: ksysguard.cc:160
 msgid "&Close Tab"
 msgstr "टैब बंद करव (&C)"
 
-#: ksysguard.cc:160
+#: ksysguard.cc:161
 msgid "Monitor &Remote Machine..."
 msgstr "रिमोट मसीन मानीटर करव... (&R)"
 
-#: ksysguard.cc:161
+#: ksysguard.cc:162
 msgid "&Download New Tabs..."
 msgstr "नवा टैब डाउनलोड करव... (&D)"
 
-#: ksysguard.cc:162
+#: ksysguard.cc:163
 #, fuzzy
 msgid "&Upload Current Tab..."
 msgstr "नवा टैब डाउनलोड करव... (&D)"
 
-#: ksysguard.cc:164
+#: ksysguard.cc:165
 msgid "Tab &Properties"
 msgstr "टैब गुन (&P)"
 
-#: ksysguard.cc:435
+#: ksysguard.cc:354
 #, fuzzy, kde-format
 msgid " 1 process "
 msgid_plural " %1 processes "
 msgstr[0] " %1 काम"
 msgstr[1] " %1 काम"
 
-#: ksysguard.cc:441
+#: ksysguard.cc:438
 #, kde-format
 msgid " CPU: %1% "
 msgstr "सीपीयू: %1% "
 
-#: ksysguard.cc:455
+#: ksysguard.cc:452
 #, fuzzy, kde-format
 msgctxt "Arguments are formatted byte sizes (used/total)"
 msgid " Memory: %1 / %2 "
 msgstr "मेमोरी: %1 / %2 "
 
-#: ksysguard.cc:482
+#: ksysguard.cc:479
 msgid " No swap space available "
 msgstr "कोई स्वेप जगह नइ मिलत हे"
 
-#: ksysguard.cc:484
+#: ksysguard.cc:481
 #, fuzzy, kde-format
 msgctxt "Arguments are formatted byte sizes (used/total)"
 msgid " Swap: %1 / %2 "
 msgstr "स्वेप: %1 / %2 "
 
-#: ksysguard.cc:529
+#: ksysguard.cc:526
 msgid "(c) 1996-2008 The KDE System Monitor Developers"
 msgstr "(c) 1996-2008 केडीई तंत्र मानीटर डेवलपर"
 
-#: ksysguard.cc:530
+#: ksysguard.cc:527
 msgid "John Tapsell"
 msgstr "जान टापसेल"
 
-#: ksysguard.cc:530
+#: ksysguard.cc:527
 msgid "Current Maintainer"
 msgstr "अभी हाल के मेंटेनर"
 
-#: ksysguard.cc:531
+#: ksysguard.cc:528
 msgid "Chris Schlaeger"
 msgstr "क्रिस स्लेगर"
 
-#: ksysguard.cc:531
+#: ksysguard.cc:528
 msgid "Previous Maintainer"
 msgstr "पहिली के मेंटेनर"
 
-#: ksysguard.cc:532
+#: ksysguard.cc:529
 msgid "Greg Martyn"
 msgstr "ग्रेग मार्टिन"
 
-#: ksysguard.cc:533
+#: ksysguard.cc:530
 msgid "Tobias Koenig"
 msgstr "टाबियस कोएनिग"
 
-#: ksysguard.cc:534
+#: ksysguard.cc:531
 msgid "Nicolas Leclercq"
 msgstr "निकोलस लेकलर"
 
-#: ksysguard.cc:535
+#: ksysguard.cc:532
 msgid "Alex Sanda"
 msgstr "एलेक्स सांदा"
 
-#: ksysguard.cc:536
+#: ksysguard.cc:533
 msgid "Bernd Johannes Wuebben"
 msgstr "बर्नड जान्स वुएबेन"
 
-#: ksysguard.cc:537
+#: ksysguard.cc:534
 msgid "Ralf Mueller"
 msgstr "राल्फ मुलर"
 
-#: ksysguard.cc:538
+#: ksysguard.cc:535
 msgid "Hamish Rodda"
 msgstr "हामिस रोदा"
 
-#: ksysguard.cc:539
+#: ksysguard.cc:536
 msgid "Torsten Kasch"
 msgstr "टार्सटन कैस"
 
-#: ksysguard.cc:539
+#: ksysguard.cc:536
 msgid ""
 "Solaris Support\n"
 "Parts derived (by permission) from the sunos5\n"
@@ -1616,7 +1634,7 @@ msgstr ""
 "कुछ भाग ल सन ओएस 5 के \n"
 "विलियम लेफेब्व्रे के \"टाप\" यूटिलिटी से (अनुमति से) ले गे हे."
 
-#: ksysguard.cc:548
+#: ksysguard.cc:545
 msgid "Optional worksheet files to load"
 msgstr "लोड करे बर वैकल्पिक वर्कसीट फाइल मन ल"
 

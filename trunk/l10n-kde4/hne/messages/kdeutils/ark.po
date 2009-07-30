@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-29 07:27+0200\n"
+"POT-Creation-Date: 2009-07-30 06:31+0200\n"
 "PO-Revision-Date: 2009-03-01 12:04+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 0.3\n"
 
-#: app/extractHereDndPlugin.cpp:69 kerfuffle/extractiondialog.cpp:107
+#: app/extractHereDndPlugin.cpp:69 kerfuffle/extractiondialog.cpp:104
 msgid "Extract here"
 msgstr "इहां निकालव"
 
@@ -175,10 +175,6 @@ msgid ""
 "archive, a subfolder by the name of the archive will be created."
 msgstr ""
 
-#: app/main.cpp:107
-msgid "Create a subfolder under the destination directory and extract here."
-msgstr ""
-
 #: app/mainwindow.cpp:126
 msgid "Unable to find Ark's KPart component, please check your installation."
 msgstr "आर्क के केपार्ट अवयव नइ खोज पाया, किरपा करके, अपन इंस्टालेसन जांचव."
@@ -218,28 +214,28 @@ msgstr ""
 msgid "Failed to create the new archive. Permissions might not be sufficient."
 msgstr ""
 
-#: kerfuffle/batchextract.cpp:127 kerfuffle/batchextract.cpp:174
+#: kerfuffle/batchextract.cpp:120 kerfuffle/batchextract.cpp:167
 #, fuzzy
 #| msgid "Extracting one file"
 #| msgid_plural "Extracting %1 files"
 msgid "Extracting file..."
 msgstr "एक फाइल निकालत हे"
 
-#: kerfuffle/batchextract.cpp:128 kerfuffle/batchextract.cpp:175
+#: kerfuffle/batchextract.cpp:121 kerfuffle/batchextract.cpp:168
 msgid "Source archive"
 msgstr "स्रोत अभिलेख"
 
-#: kerfuffle/batchextract.cpp:129 kerfuffle/batchextract.cpp:176
+#: kerfuffle/batchextract.cpp:122 kerfuffle/batchextract.cpp:169
 msgid "Destination"
 msgstr "गंतव्य"
 
-#: kerfuffle/batchextract.cpp:142
+#: kerfuffle/batchextract.cpp:135
 #, fuzzy
 #| msgid "The source file could not be read."
 msgid "The following files could not be extracted:"
 msgstr "स्रोत फाइल पढ़ नइ सकिस."
 
-#: kerfuffle/batchextract.cpp:158
+#: kerfuffle/batchextract.cpp:151
 msgid "There was an error during extraction."
 msgstr ""
 
@@ -263,51 +259,56 @@ msgstr ""
 
 #. i18n: file: kerfuffle/extractiondialog.ui:161
 #. i18n: ectx: property (title), widget (QGroupBox, filesToExtractGroupBox)
-#: kerfuffle/extractiondialog.cpp:54 rc.cpp:72
+#: kerfuffle/extractiondialog.cpp:51 rc.cpp:72
 msgid "Extract"
 msgstr "निकालें"
 
-#: kerfuffle/extractiondialog.cpp:80
+#: kerfuffle/extractiondialog.cpp:77
 msgid "Extract multiple archives"
 msgstr "बहुत अकन अभिलेख मन ल बाहिर निकाव"
 
-#: kerfuffle/extractiondialog.cpp:86
+#: kerfuffle/extractiondialog.cpp:83
 msgid "The subfolder name may not contain the character '/'."
 msgstr ""
 
-#: kerfuffle/extractiondialog.cpp:92
+#: kerfuffle/extractiondialog.cpp:88
 #, kde-format
 msgid "Create folder %1?"
 msgstr "फोल्डर %1 बनाव?"
 
-#: kerfuffle/extractiondialog.cpp:93
+#: kerfuffle/extractiondialog.cpp:89
 msgid "Missing Folder"
 msgstr "गंवाय फोल्डर"
 
-#: kerfuffle/extractiondialog.cpp:93
+#: kerfuffle/extractiondialog.cpp:89
 msgid "Create Folder"
 msgstr "फोल्डर बनाव"
 
-#: kerfuffle/extractiondialog.cpp:93
+#: kerfuffle/extractiondialog.cpp:89
 msgid "Do Not Create"
 msgstr "नइ बनाव"
 
-#: kerfuffle/extractiondialog.cpp:99
+#: kerfuffle/extractiondialog.cpp:95
 msgid "The folder could not be created. Please check permissions."
 msgstr ""
 
-#: kerfuffle/extractiondialog.cpp:107
+#: kerfuffle/extractiondialog.cpp:104
 #, kde-format
 msgid "The folder '%1' already exists. Are you sure you want to extract here?"
 msgstr ""
 
-#: kerfuffle/extractiondialog.cpp:107
+#: kerfuffle/extractiondialog.cpp:104
 msgid "Folder exists"
 msgstr "फोल्डर मौजूद हे"
 
-#: kerfuffle/extractiondialog.cpp:107 part/part.cpp:337 part/part.cpp:734
+#: kerfuffle/extractiondialog.cpp:104 part/part.cpp:337 part/part.cpp:716
 msgid "Cancel"
 msgstr "खारिज करव"
+
+#: kerfuffle/extractiondialog.cpp:112
+#, kde-format
+msgid "The folder '%1' could not be created. Please check permissions."
+msgstr ""
 
 #: kerfuffle/jobs.cpp:111
 #, fuzzy
@@ -315,29 +316,29 @@ msgstr "खारिज करव"
 msgid "An error occurred while performing the operation."
 msgstr "अभिलेख के प्रविस्टि #%1 ल पढ़े के कोसिस के समय एक गलती होइस"
 
-#: kerfuffle/jobs.cpp:142
+#: kerfuffle/jobs.cpp:143
 msgid "Loading archive..."
 msgstr "अभिलेख लोड करत हे..."
 
-#: kerfuffle/jobs.cpp:203
+#: kerfuffle/jobs.cpp:204
 msgid "Extracting all files"
 msgstr "सब्बो फाइल मन ल बाहिर निकाली जा रही हे"
 
-#: kerfuffle/jobs.cpp:205
+#: kerfuffle/jobs.cpp:206
 #, kde-format
 msgid "Extracting one file"
 msgid_plural "Extracting %1 files"
 msgstr[0] "एक फाइल निकालत हे"
 msgstr[1] "%1 फाइल निकालत हे"
 
-#: kerfuffle/jobs.cpp:239
+#: kerfuffle/jobs.cpp:240
 #, kde-format
 msgid "Adding a file"
 msgid_plural "Adding %1 files"
 msgstr[0] "1 फाइल जोड़त हे"
 msgstr[1] "%1 फाइल जोड़त हे"
 
-#: kerfuffle/jobs.cpp:260
+#: kerfuffle/jobs.cpp:261
 #, kde-format
 msgid "Deleting a file from the archive"
 msgid_plural "Deleting %1 files"
@@ -603,24 +604,19 @@ msgstr ""
 msgid "Reading the archive '%1' failed with the error '%2'"
 msgstr ""
 
-#: part/part.cpp:557
-#, kde-format
-msgid "The folder '%1' could not be created. Please check permissions."
-msgstr ""
-
-#: part/part.cpp:699
+#: part/part.cpp:681
 msgid "Add Files"
 msgstr "फाइल मन ल जोड़व"
 
-#: part/part.cpp:707
+#: part/part.cpp:689
 msgid "Add Folder"
 msgstr "फोल्डर जोड़व"
 
-#: part/part.cpp:734
+#: part/part.cpp:716
 msgid "Deleting these files is not undoable. Are you sure you want to do this?"
 msgstr ""
 
-#: part/part.cpp:734
+#: part/part.cpp:716
 #, fuzzy
 #| msgid "&Selected files only"
 msgid "Delete files"

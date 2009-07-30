@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecipes\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-26 06:16+0200\n"
+"POT-Creation-Date: 2009-07-30 06:53+0200\n"
 "PO-Revision-Date: 2009-02-21 12:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -386,40 +386,50 @@ msgstr "सर्वरः"
 msgid "Client:"
 msgstr "क्लायंट:"
 
-#: setupassistant.cpp:583
+#: setupassistant.cpp:514 dialogs/dbimportdialog.cpp:191 pref.cpp:175
+#: pref.cpp:290
+msgid "Port:"
+msgstr "पोर्टः"
+
+#: setupassistant.cpp:518 dialogs/dbimportdialog.cpp:192 pref.cpp:180
+#: pref.cpp:295
+msgid "Default"
+msgstr "डिफाल्ट"
+
+#: setupassistant.cpp:591
 msgid "In this dialog you can adjust SQLite settings."
 msgstr "ये गोठ मं आप मन एसक्यूलाइट सेटिंग के समायोजन कर सकथो ."
 
-#: setupassistant.cpp:597 dialogs/dbimportdialog.cpp:83 pref.cpp:370
+#: setupassistant.cpp:605 dialogs/dbimportdialog.cpp:83 pref.cpp:370
 msgid "Database file:"
 msgstr "डाटाबेस फाइल:"
 
-#: setupassistant.cpp:605
+#: setupassistant.cpp:613
 msgid "Open file dialog"
 msgstr "फाइल खोले के गोठ"
 
-#: setupassistant.cpp:627 pref.cpp:403
+#: setupassistant.cpp:635 pref.cpp:403
 msgid "Select SQLite database file"
 msgstr ""
 
-#: setupassistant.cpp:657
+#: setupassistant.cpp:665
 msgid ""
 "Congratulations; all the necessary configuration setup is done. Press "
 "'Finish' to continue, and enjoy cooking!"
 msgstr ""
 
-#: setupassistant.cpp:753
+#: setupassistant.cpp:761
 msgid ""
 "Krecipes comes with some delicious default recipes and useful data. "
 "<br><br>Would you like to initialize your database with those? Note that "
 "this will erase all your previous recipes if you have any. "
 msgstr ""
 
-#: setupassistant.cpp:772
+#: setupassistant.cpp:780
 msgid "Yes please, initialize the database with the examples"
 msgstr "जी हाँ, किरपा करके, उदाहरओं सहित डाटाबेस ल इनिसियलाइज करव"
 
-#: setupassistant.cpp:779
+#: setupassistant.cpp:787
 msgid ""
 "Krecipes can import nutrient data from the USDA's nutrient database for over "
 "400 foods.  A total of 43 food properties are included for each food, such "
@@ -428,26 +438,26 @@ msgid ""
 "no data loss will occur.  This operation may take several minutes."
 msgstr ""
 
-#: setupassistant.cpp:786
+#: setupassistant.cpp:794
 msgid "Yes please, load the database with nutrient data for 400+ foods."
 msgstr ""
 
-#: setupassistant.cpp:832
+#: setupassistant.cpp:840
 msgid ""
 "Choose the type of database that you want to use. Most users will want to "
 "choose a simple local database here. However, you can also use remote "
 "servers by means of a MySQL or PostgreSQL database."
 msgstr ""
 
-#: setupassistant.cpp:849
+#: setupassistant.cpp:857
 msgid "Simple Local File (SQLite)"
 msgstr "सादा लोकल फाइल (एसक्यूलाइट)"
 
-#: setupassistant.cpp:852
+#: setupassistant.cpp:860
 msgid "Local or Remote MySQL Database"
 msgstr "लोकल या रिमोट माइ-एसक्यूएल डाटाबेस"
 
-#: setupassistant.cpp:855
+#: setupassistant.cpp:863
 msgid "Local or Remote PostgreSQL Database"
 msgstr "लोकल या रिमोट पोस्टग्रे-एसक्यूएल डाटाबेस"
 
@@ -458,14 +468,6 @@ msgstr "डाटाबेस आयात करव"
 #: dialogs/dbimportdialog.cpp:183
 msgid "Database"
 msgstr "डाटाबेस"
-
-#: dialogs/dbimportdialog.cpp:191 pref.cpp:175 pref.cpp:290
-msgid "Port:"
-msgstr "पोर्टः"
-
-#: dialogs/dbimportdialog.cpp:192 pref.cpp:180 pref.cpp:295
-msgid "Default"
-msgstr "डिफाल्ट"
 
 #: dialogs/createcategorydialog.cpp:29 dialogs/createcategorydialog.cpp:41
 msgid "New Category"
@@ -495,13 +497,13 @@ msgstr "मेटाव"
 msgid "Ingredient list"
 msgstr "संघटक सूची"
 
-#: dialogs/ingredientsdialog.cpp:91 dialogs/editpropertiesdialog.cpp:239
+#: dialogs/ingredientsdialog.cpp:91 dialogs/editpropertiesdialog.cpp:243
 msgid "Property Information"
 msgstr "गुन जानकारी"
 
 #: dialogs/ingredientsdialog.cpp:95 dialogs/setupdisplay.cpp:130
 #: dialogs/recipeinputdialog.cpp:427 dialogs/refineshoppinglistdialog.cpp:120
-#: dialogs/advancedsearchdialog.cpp:655 exporters/htmlexporter.cpp:351
+#: dialogs/advancedsearchdialog.cpp:657 exporters/htmlexporter.cpp:351
 #: exporters/xsltexporter.cpp:58 krecipesview.cpp:338 krecipesview.cpp:386
 msgid "Ingredients"
 msgstr "संघटक"
@@ -631,7 +633,7 @@ msgid "Category 1, Category 2, ..."
 msgstr "वर्ग 1, वर्ग 2, ..."
 
 #: dialogs/setupdisplay.cpp:80 dialogs/setupdisplay.cpp:125
-#: dialogs/recipeinputdialog.cpp:428 dialogs/advancedsearchdialog.cpp:678
+#: dialogs/recipeinputdialog.cpp:428 dialogs/advancedsearchdialog.cpp:680
 #: exporters/htmlexporter.cpp:206 exporters/xsltexporter.cpp:50
 msgid "Instructions"
 msgstr "निर्देस"
@@ -679,12 +681,12 @@ msgid "Background"
 msgstr "पिछोत अंगना"
 
 #: dialogs/setupdisplay.cpp:124 dialogs/ingredientmatcherdialog.cpp:109
-#: dialogs/advancedsearchdialog.cpp:576 dialogs/advancedsearchdialog.cpp:653
+#: dialogs/advancedsearchdialog.cpp:578 dialogs/advancedsearchdialog.cpp:655
 msgid "Title"
 msgstr "सीर्सक"
 
 #: dialogs/setupdisplay.cpp:126 dialogs/recipeinputdialog.cpp:263
-#: dialogs/advancedsearchdialog.cpp:673 exporters/htmlexporter.cpp:217
+#: dialogs/advancedsearchdialog.cpp:675 exporters/htmlexporter.cpp:217
 #: exporters/plaintextexporter.cpp:97
 msgid "Preparation Time"
 msgstr "बनाए बर समय"
@@ -694,7 +696,7 @@ msgid "Photo"
 msgstr "फोटो"
 
 #: dialogs/setupdisplay.cpp:128 dialogs/selectauthorsdialog.cpp:34
-#: dialogs/recipeinputdialog.cpp:207 dialogs/advancedsearchdialog.cpp:663
+#: dialogs/recipeinputdialog.cpp:207 dialogs/advancedsearchdialog.cpp:665
 #: exporters/htmlexporter.cpp:242 exporters/plaintextexporter.cpp:79
 #: exporters/xsltexporter.cpp:55 krecipesview.cpp:343 krecipesview.cpp:411
 msgid "Authors"
@@ -707,20 +709,20 @@ msgstr "लेखक"
 msgid "Categories"
 msgstr "स्रेनी"
 
-#: dialogs/setupdisplay.cpp:131 dialogs/editpropertiesdialog.cpp:244
+#: dialogs/setupdisplay.cpp:131 dialogs/editpropertiesdialog.cpp:248
 #: exporters/htmlexporter.cpp:398 exporters/xsltexporter.cpp:60
 #: widgets/unitlistview.cpp:237 krecipesview.cpp:339 krecipesview.cpp:391
 msgid "Properties"
 msgstr "गुन"
 
 #: dialogs/setupdisplay.cpp:132 dialogs/recipeinputdialog.cpp:429
-#: dialogs/advancedsearchdialog.cpp:690 exporters/htmlexporter.cpp:405
+#: dialogs/advancedsearchdialog.cpp:692 exporters/htmlexporter.cpp:405
 #: exporters/plaintextexporter.cpp:142 exporters/xsltexporter.cpp:61
 msgid "Ratings"
 msgstr "दरजा"
 
 #: dialogs/setupdisplay.cpp:133 dialogs/recipeinputdialog.cpp:245
-#: dialogs/advancedsearchdialog.cpp:667 exporters/htmlexporter.cpp:211
+#: dialogs/advancedsearchdialog.cpp:669 exporters/htmlexporter.cpp:211
 #: exporters/xsltexporter.cpp:53
 msgid "Yield"
 msgstr "यील्ड"
@@ -785,10 +787,10 @@ msgid "Shopping List"
 msgstr "खरीदारी सूची"
 
 #: dialogs/shoppinglistdialog.cpp:118 dialogs/selectauthorsdialog.cpp:69
-#: dialogs/editpropertiesdialog.cpp:137 dialogs/editpropertiesdialog.cpp:180
-#: dialogs/editpropertiesdialog.cpp:242 dialogs/selectpropertydialog.cpp:55
+#: dialogs/editpropertiesdialog.cpp:137 dialogs/editpropertiesdialog.cpp:182
+#: dialogs/editpropertiesdialog.cpp:246 dialogs/selectpropertydialog.cpp:55
 #: dialogs/ingredientmatcherdialog.cpp:113
-#: dialogs/advancedsearchdialog.cpp:577 dialogs/selectunitdialog.cpp:40
+#: dialogs/advancedsearchdialog.cpp:579 dialogs/selectunitdialog.cpp:40
 #: widgets/unitlistview.cpp:127 widgets/categorylistview.cpp:310
 #: widgets/categorylistview.cpp:580 widgets/propertylistview.cpp:122
 #: widgets/ingredientlistview.cpp:117 widgets/ingredientlistview.cpp:258
@@ -832,18 +834,18 @@ msgstr "आहार"
 msgid "Day %1"
 msgstr "दिन %1"
 
-#: dialogs/editpropertiesdialog.cpp:136 dialogs/editpropertiesdialog.cpp:241
+#: dialogs/editpropertiesdialog.cpp:136 dialogs/editpropertiesdialog.cpp:245
 msgid "USDA Ingredient"
 msgstr "यूएसडीए संघटक"
 
-#: dialogs/editpropertiesdialog.cpp:175 dialogs/editpropertiesdialog.cpp:247
+#: dialogs/editpropertiesdialog.cpp:177 dialogs/editpropertiesdialog.cpp:251
 #: dialogs/selectpropertydialog.cpp:57 widgets/propertylistview.cpp:117
 #: widgets/propertylistview.cpp:259
 msgid "Property"
 msgstr "गुन"
 
-#: dialogs/editpropertiesdialog.cpp:176 dialogs/editpropertiesdialog.cpp:248
-#: dialogs/editpropertiesdialog.cpp:303 dialogs/editpropertiesdialog.cpp:331
+#: dialogs/editpropertiesdialog.cpp:178 dialogs/editpropertiesdialog.cpp:252
+#: dialogs/editpropertiesdialog.cpp:307 dialogs/editpropertiesdialog.cpp:335
 #: dialogs/recipeinputdialog.cpp:249 dialogs/recipeinputdialog.cpp:345
 #: dialogs/ingredientmatcherdialog.cpp:157
 #: dialogs/ingredientparserdialog.cpp:71
@@ -853,7 +855,7 @@ msgstr "गुन"
 msgid "Amount"
 msgstr "मात्रा"
 
-#: dialogs/editpropertiesdialog.cpp:177 dialogs/editpropertiesdialog.cpp:249
+#: dialogs/editpropertiesdialog.cpp:179 dialogs/editpropertiesdialog.cpp:253
 #: dialogs/ingredientparserdialog.cpp:72
 #: dialogs/ingredientparserdialog.cpp:118
 #: dialogs/refineshoppinglistdialog.cpp:92
@@ -863,55 +865,55 @@ msgstr "मात्रा"
 msgid "Unit"
 msgstr "इकाई"
 
-#: dialogs/editpropertiesdialog.cpp:203 dialogs/editpropertiesdialog.cpp:253
+#: dialogs/editpropertiesdialog.cpp:207 dialogs/editpropertiesdialog.cpp:257
 msgid "Weight"
 msgstr "भार"
 
-#: dialogs/editpropertiesdialog.cpp:204 dialogs/editpropertiesdialog.cpp:254
+#: dialogs/editpropertiesdialog.cpp:208 dialogs/editpropertiesdialog.cpp:258
 msgid "Per Amount"
 msgstr "प्रति मात्रा"
 
-#: dialogs/editpropertiesdialog.cpp:240
+#: dialogs/editpropertiesdialog.cpp:244
 #, kde-format
 msgid "Property Information for <b>%1</b>"
 msgstr "<b>%1</b> बर गुन जानकारी"
 
-#: dialogs/editpropertiesdialog.cpp:243
+#: dialogs/editpropertiesdialog.cpp:247
 msgid "Load ->"
 msgstr "लोड करव ->"
 
-#: dialogs/editpropertiesdialog.cpp:245 dialogs/editpropertiesdialog.cpp:251
-#: dialogs/editratingdialog.cpp:168
+#: dialogs/editpropertiesdialog.cpp:249 dialogs/editpropertiesdialog.cpp:255
+#: dialogs/editratingdialog.cpp:170
 msgid "Add"
 msgstr "जोड़व"
 
 #. i18n: file: widgets/ratingdisplaywidget.ui:175
 #. i18n: ectx: property (text), widget (KPushButton, buttonRemove)
-#: dialogs/editpropertiesdialog.cpp:246 dialogs/editpropertiesdialog.cpp:252
+#: dialogs/editpropertiesdialog.cpp:250 dialogs/editpropertiesdialog.cpp:256
 #: rc.cpp:26
 msgid "Remove"
 msgstr "हटाव"
 
-#: dialogs/editpropertiesdialog.cpp:250
+#: dialogs/editpropertiesdialog.cpp:254
 msgid "Weights"
 msgstr "भार"
 
-#: dialogs/editpropertiesdialog.cpp:280
+#: dialogs/editpropertiesdialog.cpp:284
 msgid ""
 "Recipes may require this information for nutrient analysis. Are you sure you "
 "want to delete this entry?"
 msgstr ""
 
-#: dialogs/editpropertiesdialog.cpp:299 dialogs/editpropertiesdialog.cpp:327
+#: dialogs/editpropertiesdialog.cpp:303 dialogs/editpropertiesdialog.cpp:331
 #: dialogs/ingredientmatcherdialog.cpp:153
 msgid "Enter amount"
 msgstr "मात्रा भरव"
 
-#: dialogs/editpropertiesdialog.cpp:415
+#: dialogs/editpropertiesdialog.cpp:419
 msgid "Property Exists"
 msgstr "गुन मौजूद हे"
 
-#: dialogs/editpropertiesdialog.cpp:415
+#: dialogs/editpropertiesdialog.cpp:419
 msgid ""
 "The property you tried to add already exists in the ingredient with the same "
 "per units."
@@ -1078,21 +1080,21 @@ msgstr "रेटिंग"
 
 #. i18n: file: widgets/ratingdisplaywidget.ui:111
 #. i18n: ectx: property (text), widget (K3ListView, criteriaListView)
-#: dialogs/editratingdialog.cpp:119 dialogs/editratingdialog.cpp:170
-#: dialogs/advancedsearchdialog.cpp:688 rc.cpp:17
+#: dialogs/editratingdialog.cpp:121 dialogs/editratingdialog.cpp:172
+#: dialogs/advancedsearchdialog.cpp:690 rc.cpp:17
 msgid "Criteria"
 msgstr "मापदन्ड"
 
 #. i18n: file: widgets/ratingdisplaywidget.ui:122
 #. i18n: ectx: property (text), widget (K3ListView, criteriaListView)
-#: dialogs/editratingdialog.cpp:120 dialogs/editratingdialog.cpp:171
-#: dialogs/advancedsearchdialog.cpp:525 dialogs/advancedsearchdialog.cpp:689
+#: dialogs/editratingdialog.cpp:122 dialogs/editratingdialog.cpp:173
+#: dialogs/advancedsearchdialog.cpp:525 dialogs/advancedsearchdialog.cpp:691
 #: rc.cpp:20
 msgid "Stars"
 msgstr "तारे"
 
-#: dialogs/editratingdialog.cpp:142 dialogs/editratingdialog.cpp:169
-#: dialogs/ingredientparserdialog.cpp:98 dialogs/advancedsearchdialog.cpp:645
+#: dialogs/editratingdialog.cpp:144 dialogs/editratingdialog.cpp:171
+#: dialogs/ingredientparserdialog.cpp:98 dialogs/advancedsearchdialog.cpp:647
 #: recipeactionshandler.cpp:63 widgets/unitlistview.cpp:140
 #: widgets/categorylistview.cpp:321 widgets/propertylistview.cpp:133
 #: widgets/ingredientlistview.cpp:126 widgets/authorlistview.cpp:72
@@ -1100,19 +1102,19 @@ msgstr "तारे"
 msgid "&Delete"
 msgstr "मेटाव (&D)"
 
-#: dialogs/editratingdialog.cpp:166
+#: dialogs/editratingdialog.cpp:168
 msgid "Criteria:"
 msgstr "मापदन्ड:"
 
-#: dialogs/editratingdialog.cpp:167
+#: dialogs/editratingdialog.cpp:169
 msgid "Stars:"
 msgstr "तारे:"
 
-#: dialogs/editratingdialog.cpp:172
+#: dialogs/editratingdialog.cpp:174
 msgid "Comments:"
 msgstr "टिप्पनियाँ:"
 
-#: dialogs/editratingdialog.cpp:173
+#: dialogs/editratingdialog.cpp:175
 msgid "Rater:"
 msgstr "रेटर:"
 
@@ -1674,104 +1676,104 @@ msgstr "पिछला मर्तबा एक्सेस्डः"
 msgid "Criterion"
 msgstr "मापदन्ड"
 
-#: dialogs/advancedsearchdialog.cpp:654
+#: dialogs/advancedsearchdialog.cpp:656
 msgid "Search using the following criteria:"
 msgstr "निम्न मापदन्ड से खोजें:"
 
-#: dialogs/advancedsearchdialog.cpp:656
+#: dialogs/advancedsearchdialog.cpp:658
 msgid "Uses any of:"
 msgstr "कोई परयोग करथे :"
 
-#: dialogs/advancedsearchdialog.cpp:657
+#: dialogs/advancedsearchdialog.cpp:659
 msgid "Uses all:"
 msgstr "सब्बो उपयोग करथे :"
 
-#: dialogs/advancedsearchdialog.cpp:658
+#: dialogs/advancedsearchdialog.cpp:660
 msgid "Without:"
 msgstr "के बिना:"
 
-#: dialogs/advancedsearchdialog.cpp:659
+#: dialogs/advancedsearchdialog.cpp:661
 msgid "Categories >>"
 msgstr "स्रेनी >>"
 
-#: dialogs/advancedsearchdialog.cpp:660
+#: dialogs/advancedsearchdialog.cpp:662
 msgid "In all:"
 msgstr "सब्बो में:"
 
-#: dialogs/advancedsearchdialog.cpp:661
+#: dialogs/advancedsearchdialog.cpp:663
 msgid "Not in:"
 msgstr "में नइ:"
 
-#: dialogs/advancedsearchdialog.cpp:662
+#: dialogs/advancedsearchdialog.cpp:664
 msgid "In any of:"
 msgstr "कोनो मं भी:"
 
-#: dialogs/advancedsearchdialog.cpp:664
+#: dialogs/advancedsearchdialog.cpp:666
 msgid "By any of:"
 msgstr "कोई भी:"
 
-#: dialogs/advancedsearchdialog.cpp:665
+#: dialogs/advancedsearchdialog.cpp:667
 msgid "By all:"
 msgstr "सब्बो:"
 
-#: dialogs/advancedsearchdialog.cpp:666
+#: dialogs/advancedsearchdialog.cpp:668
 msgid "Not by:"
 msgstr "द्वारा नइ:"
 
-#: dialogs/advancedsearchdialog.cpp:668 dialogs/advancedsearchdialog.cpp:674
+#: dialogs/advancedsearchdialog.cpp:670 dialogs/advancedsearchdialog.cpp:676
 #: widgets/propertylistview.cpp:258
 msgid "Enabled"
 msgstr "सक्छम"
 
-#: dialogs/advancedsearchdialog.cpp:670
+#: dialogs/advancedsearchdialog.cpp:672
 msgid "Yields at least:"
 msgstr "कम से कम यील्ड:"
 
-#: dialogs/advancedsearchdialog.cpp:671
+#: dialogs/advancedsearchdialog.cpp:673
 msgid "Yields at most:"
 msgstr "अधिक से अधिक यील्ड:"
 
-#: dialogs/advancedsearchdialog.cpp:672
+#: dialogs/advancedsearchdialog.cpp:674
 msgid "Yields about:"
 msgstr "लगभग यील्ड :"
 
-#: dialogs/advancedsearchdialog.cpp:676
+#: dialogs/advancedsearchdialog.cpp:678
 msgid "Ready in at most:"
 msgstr "अधिक से अधिक मं तैयार:"
 
-#: dialogs/advancedsearchdialog.cpp:677
+#: dialogs/advancedsearchdialog.cpp:679
 msgid "Ready in about:"
 msgstr "लगभग अतीक मं तैयार:"
 
-#: dialogs/advancedsearchdialog.cpp:679
+#: dialogs/advancedsearchdialog.cpp:681
 msgid "Meta Data"
 msgstr "मेटा डाटा"
 
-#: dialogs/advancedsearchdialog.cpp:680
+#: dialogs/advancedsearchdialog.cpp:682
 msgid "C&lear"
 msgstr "साफ करव (&l)"
 
-#: dialogs/advancedsearchdialog.cpp:681
+#: dialogs/advancedsearchdialog.cpp:683
 msgid "Alt+L"
 msgstr "आल्ट+L"
 
-#: dialogs/advancedsearchdialog.cpp:682
+#: dialogs/advancedsearchdialog.cpp:684
 msgid "&Search"
 msgstr "खोजव (&S)"
 
-#: dialogs/advancedsearchdialog.cpp:683
+#: dialogs/advancedsearchdialog.cpp:685
 msgid "By average:"
 msgstr "औसतन:"
 
-#: dialogs/advancedsearchdialog.cpp:684
+#: dialogs/advancedsearchdialog.cpp:686
 msgid "stars"
 msgstr "तारे"
 
-#: dialogs/advancedsearchdialog.cpp:685
+#: dialogs/advancedsearchdialog.cpp:687
 msgid "By criteria:"
 msgstr "मापदन्ड से:"
 
-#: dialogs/advancedsearchdialog.cpp:986
+#: dialogs/advancedsearchdialog.cpp:988
 msgid "No matching recipes found"
 msgstr "कोई मिलत जुलत रेसिपि नइ मिले"
 
