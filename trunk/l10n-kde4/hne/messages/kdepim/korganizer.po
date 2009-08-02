@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-31 06:20+0200\n"
+"POT-Creation-Date: 2009-08-02 06:03+0200\n"
 "PO-Revision-Date: 2009-02-28 20:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -19,12 +19,12 @@ msgstr ""
 "X-Generator: Lokalize 0.2\n"
 
 #: koeventpopupmenu.cpp:46 views/todoview/kotodoview.cpp:153
-#: actionmanager.cpp:536 actionmanager.cpp:1638 actionmanager.cpp:1671
+#: actionmanager.cpp:536 actionmanager.cpp:1652 actionmanager.cpp:1685
 msgid "&Show"
 msgstr "देखाव (&S)"
 
 #: koeventpopupmenu.cpp:49 views/todoview/kotodoview.cpp:156
-#: actionmanager.cpp:541 actionmanager.cpp:1641 actionmanager.cpp:1672
+#: actionmanager.cpp:541 actionmanager.cpp:1655 actionmanager.cpp:1686
 #: resourceview.cpp:686
 msgid "&Edit..."
 msgstr "संपादन... (&E)"
@@ -1484,8 +1484,8 @@ msgstr ""
 #. i18n: file: filteredit_base.ui:32
 #. i18n: ectx: property (text), widget (QPushButton, mDeleteButton)
 #: views/todoview/kotodoview.cpp:172 views/journalview/journalview.cpp:186
-#: actionmanager.cpp:351 actionmanager.cpp:546 actionmanager.cpp:1644
-#: actionmanager.cpp:1673 rc.cpp:6 rc.cpp:3156
+#: actionmanager.cpp:351 actionmanager.cpp:546 actionmanager.cpp:1658
+#: actionmanager.cpp:1687 rc.cpp:6 rc.cpp:3156
 msgid "&Delete"
 msgstr "मेटाव (&D)"
 
@@ -2424,7 +2424,7 @@ msgctxt "@info"
 msgid "Please specify a title."
 msgstr "किरपा करके, एक वैध सेट तारीक निरधारित करव."
 
-#: koeditorgeneraltodo.cpp:98 koeditorgeneralevent.cpp:88
+#: koeditorgeneraltodo.cpp:98
 msgid "Date && Time"
 msgstr "तारीक अउ समय"
 
@@ -2724,11 +2724,11 @@ msgstr ","
 msgid "Counter-Event Viewer"
 msgstr "प्रति-घटना प्रदर्सक"
 
-#: kocounterdialog.cpp:42 koeditorgeneralevent.cpp:255
+#: kocounterdialog.cpp:42
 msgid "Decline"
 msgstr "अस्वीकार"
 
-#: kocounterdialog.cpp:43 koeditorgeneralevent.cpp:245
+#: kocounterdialog.cpp:43
 msgid "Accept"
 msgstr "स्वीकृत"
 
@@ -3047,7 +3047,7 @@ msgstr "अभिलेख फाइल %1 लिख नइ सकिस. %2"
 msgid "&Previous Day"
 msgstr "पिछला दिन (&P)"
 
-#: calendarview.cpp:1737 actionmanager.cpp:387 actionmanager.cpp:1353
+#: calendarview.cpp:1737 actionmanager.cpp:387 actionmanager.cpp:1367
 #, kde-format
 msgid "&Next Day"
 msgid_plural "&Next %1 Days"
@@ -3421,7 +3421,7 @@ msgctxt "@info:tooltip"
 msgid "Dismiss the reminders for all listed incidences"
 msgstr ""
 
-#: korgac/alarmdialog.cpp:98
+#: korgac/alarmdialog.cpp:98 koeditorgeneralevent.cpp:187
 msgctxt "@action:button"
 msgid "Edit..."
 msgstr "संपादन..."
@@ -3558,47 +3558,58 @@ msgid ""
 "configuration."
 msgstr ""
 
-#: koattendeeeditor.cpp:72 koattendeeeditor.cpp:304
+#: koattendeeeditor.cpp:73 koattendeeeditor.cpp:313
+#, fuzzy
+#| msgid "Identity as organizer:"
+msgctxt "@label"
 msgid "Identity as organizer:"
 msgstr "आर्गेनाइजर के रूप मं पहिचान:"
 
-#: koattendeeeditor.cpp:76
+#: koattendeeeditor.cpp:77
 msgctxt "@info:tooltip"
 msgid "Set the organizer identity"
 msgstr ""
 
-#: koattendeeeditor.cpp:87
+#: koattendeeeditor.cpp:90
+#, fuzzy
+msgctxt "@info:whatsthis"
 msgid ""
 "Edits the name of the attendee selected in the list above, or adds a new "
 "attendee if there are no attendees in the list."
-msgstr ""
+msgstr "ऊपर दे गे सूची मं चुने गे उपस्थित के अभी हाल के उपस्थिति स्थिति संपादित करथे."
 
-#: koattendeeeditor.cpp:92
+#: koattendeeeditor.cpp:94
 msgctxt "@label attendee's name"
 msgid "Na&me:"
 msgstr "नांव: (&m)"
 
-#: koattendeeeditor.cpp:97
+#: koattendeeeditor.cpp:99
+#, fuzzy
+#| msgid "Click to add a new attendee"
+msgctxt "@label"
 msgid "Click to add a new attendee"
 msgstr "नवा उपस्थिति जोड़े बर इहां किलिक करव."
 
-#: koattendeeeditor.cpp:104
+#: koattendeeeditor.cpp:107
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid "Edits the role of the attendee selected in the list above."
 msgstr "ऊपर दे गे सूची मं चुने गे उपस्थित के भूमिका संपादित करव."
 
-#: koattendeeeditor.cpp:107
+#: koattendeeeditor.cpp:110
+#, fuzzy
+#| msgid "Ro&le:"
+msgctxt "@label"
 msgid "Ro&le:"
 msgstr "भूमिकाः (&l)"
 
-#: koattendeeeditor.cpp:112
+#: koattendeeeditor.cpp:115
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Select the attendee participation role"
 msgstr "एजेंडा दृस्य पिछोत अंगना बर इहां पिछोत अंगना रंग चुनव."
 
-#: koattendeeeditor.cpp:123
+#: koattendeeeditor.cpp:126
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid ""
@@ -3606,22 +3617,25 @@ msgid ""
 "above."
 msgstr "ऊपर दे गे सूची मं चुने गे उपस्थित के अभी हाल के उपस्थिति स्थिति संपादित करथे."
 
-#: koattendeeeditor.cpp:127
+#: koattendeeeditor.cpp:130
+#, fuzzy
+#| msgid "Stat&us:"
+msgctxt "@label"
 msgid "Stat&us:"
 msgstr "स्थितिः (&u)"
 
-#: koattendeeeditor.cpp:132
+#: koattendeeeditor.cpp:135
 msgctxt "@info:tooltip"
 msgid "Select the attendee participation status"
 msgstr ""
 
-#: koattendeeeditor.cpp:158
+#: koattendeeeditor.cpp:161
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Request a response from the attendee"
 msgstr "प्रतिकिरिया निवेदित करव (&q)"
 
-#: koattendeeeditor.cpp:161
+#: koattendeeeditor.cpp:164
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid ""
@@ -3629,22 +3643,25 @@ msgid ""
 "request a response concerning attendance."
 msgstr "ऊपर दे गे सूची मं चुने गे उपस्थित के अभी हाल के उपस्थिति स्थिति संपादित करथे."
 
-#: koattendeeeditor.cpp:164
+#: koattendeeeditor.cpp:167
+#, fuzzy
+#| msgid "Re&quest response"
+msgctxt "@option:check"
 msgid "Re&quest response"
 msgstr "प्रतिकिरिया निवेदित करव (&q)"
 
-#: koattendeeeditor.cpp:171
+#: koattendeeeditor.cpp:174
 msgctxt "@action:button new attendee"
 msgid "&New"
 msgstr "नवा (&N)"
 
-#: koattendeeeditor.cpp:173
+#: koattendeeeditor.cpp:176
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Add an attendee"
 msgstr "१ उपस्थित"
 
-#: koattendeeeditor.cpp:176
+#: koattendeeeditor.cpp:179
 msgctxt "@info:whatsthis"
 msgid ""
 "Adds a new attendee to the list. Once the attendee is added, you will be "
@@ -3653,79 +3670,102 @@ msgid ""
 "attendee from your address book, click the 'Select Addressee' button instead."
 msgstr ""
 
-#. i18n: file: koeditoralarms_base.ui:479
-#. i18n: ectx: property (text), widget (QPushButton, mRemoveButton)
-#. i18n: file: publishdialog_base.ui:56
-#. i18n: ectx: property (text), widget (QPushButton, mRemove)
-#. i18n: file: template_management_dialog_base.ui:88
-#. i18n: ectx: property (text), widget (QPushButton, m_buttonRemove)
-#. i18n: file: publishdialog_base.ui:56
-#. i18n: ectx: property (text), widget (QPushButton, mRemove)
-#. i18n: file: koeditoralarms_base.ui:479
-#. i18n: ectx: property (text), widget (QPushButton, mRemoveButton)
-#: koattendeeeditor.cpp:186 rc.cpp:151 rc.cpp:1119 rc.cpp:1309 rc.cpp:2325
-#: rc.cpp:2931 rc.cpp:3045 resourceview.cpp:687
+#: koattendeeeditor.cpp:189
+msgctxt "@action:button"
 msgid "&Remove"
 msgstr "मेटाव (&R)"
 
-#: koattendeeeditor.cpp:188
+#: koattendeeeditor.cpp:191
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Remove the selected attendee"
 msgstr "ऊपर दे गे सूची मं चुने गे उपस्थित ल मेटाथे."
 
-#: koattendeeeditor.cpp:191
+#: koattendeeeditor.cpp:194
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid "Removes the attendee selected in the list above."
 msgstr "ऊपर दे गे सूची मं चुने गे उपस्थित ल मेटाथे."
 
-#: koattendeeeditor.cpp:194
+#: koattendeeeditor.cpp:198
+#, fuzzy
+#| msgid "Select Addressee..."
+msgctxt "@action:button"
 msgid "Select Addressee..."
 msgstr "पावइया चुनव..."
 
-#: koattendeeeditor.cpp:197
+#: koattendeeeditor.cpp:201
 msgctxt "@info:tooltip"
 msgid "Open your address book"
 msgstr ""
 
-#: koattendeeeditor.cpp:200
+#: koattendeeeditor.cpp:204
 msgctxt "@info:whatsthis"
 msgid "Opens your address book, allowing you to select new attendees from it."
 msgstr ""
 
-#: koattendeeeditor.cpp:264
+#: koattendeeeditor.cpp:268
+msgctxt "@info"
 msgid "Please edit the example attendee, before adding more."
 msgstr ""
 
-#: koattendeeeditor.cpp:273 koattendeeeditor.cpp:523
-msgctxt "sample attendee name"
+#: koattendeeeditor.cpp:277 koattendeeeditor.cpp:533
+#, fuzzy
+#| msgctxt "sample attendee name"
+#| msgid "Firstname Lastname"
+msgctxt "@item:intext sample attendee name"
 msgid "Firstname Lastname"
 msgstr "नांव जात"
 
-#: koattendeeeditor.cpp:274
-msgctxt "sample attendee email name"
+#: koattendeeeditor.cpp:278
+#, fuzzy
+#| msgctxt "sample attendee email name"
+#| msgid "name"
+msgctxt "@item:intext sample attendee email name"
 msgid "name"
 msgstr "नांव"
 
-#: koattendeeeditor.cpp:324
-#, kde-format
+#: koattendeeeditor.cpp:307
+#, fuzzy
+#| msgctxt "@item:inlistbox"
+#| msgid "Select Categories"
+msgctxt "@info:tooltip"
+msgid "Select the organizer"
+msgstr "वर्ग चुनव"
+
+#: koattendeeeditor.cpp:310
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "Select the identity to use as the organizer for this incidence."
+msgstr "ये काम बर सेट तारीक सेट करथे."
+
+#: koattendeeeditor.cpp:333
+#, fuzzy, kde-format
+#| msgid "Organizer: %1"
+msgctxt "@label"
 msgid "Organizer: %1"
 msgstr "आर्गेनाइजर: %1"
 
-#: koattendeeeditor.cpp:462
-#, kde-format
+#: koattendeeeditor.cpp:472
+#, fuzzy, kde-format
+#| msgid "Delegated to %1"
+msgctxt "@label"
 msgid "Delegated to %1"
 msgstr "%1 मं प्रतिनिधित्व"
 
-#: koattendeeeditor.cpp:464
-#, kde-format
+#: koattendeeeditor.cpp:474
+#, fuzzy, kde-format
+#| msgid "Delegated from %1"
+msgctxt "@label"
 msgid "Delegated from %1"
 msgstr "%1 से प्रतिनिधित्व"
 
-#: koattendeeeditor.cpp:466
+#: koattendeeeditor.cpp:476
+#, fuzzy
+#| msgid "No item selected."
+msgctxt "@label"
 msgid "Not delegated"
-msgstr ""
+msgstr "कोई चीज नइ चुने गे."
 
 #: kojournaleditor.cpp:76
 msgctxt "@title general journal settings"
@@ -4122,20 +4162,49 @@ msgstr "सहेजिस गिस कलेन्डर '%1'."
 msgid "Do you want to overwrite file \"%1\""
 msgstr "<qt>का आप मन सचमुच संसाधन <b>%1</b> ल मिटाना चाहथो?</qt>"
 
-#: actionmanager.cpp:1175
-msgid "Could not upload file."
-msgstr "फाइल अपलोड नइ कर सकिस."
+#: actionmanager.cpp:1170
+#, fuzzy
+#| msgid "Unable to create the resource."
+msgid "Unable to write the output file."
+msgstr "संसाधन बनाए मं अक्छम."
 
-#: actionmanager.cpp:1219
+#: actionmanager.cpp:1176
+msgid "Unable to write the temporary file for uploading."
+msgstr ""
+
+#: actionmanager.cpp:1179
+#, fuzzy
+#| msgid "Unable to copy the item to %1."
+msgid "Unable to upload the export file."
+msgstr "चीज ल %1 मं नकल करे मं अक्छम."
+
+#: actionmanager.cpp:1187
+#, kde-format
+msgid "Web page successfully written to \"%1\""
+msgstr ""
+
+#: actionmanager.cpp:1189
+#, kde-format
+msgid "Export failed. %1"
+msgstr ""
+
+#: actionmanager.cpp:1192
+#, fuzzy
+#| msgid "Set Your Status"
+msgctxt "@title:window"
+msgid "Export Status"
+msgstr "आप मन के स्थिति सेट करव"
+
+#: actionmanager.cpp:1233
 #, kde-format
 msgid "Unable to save calendar to the file %1."
 msgstr "कलेन्डर ल फाइल %1 मं सहेजे मं अक्छम."
 
-#: actionmanager.cpp:1220
+#: actionmanager.cpp:1234
 msgid "Error"
 msgstr "गलती"
 
-#: actionmanager.cpp:1246
+#: actionmanager.cpp:1260
 msgid ""
 "The calendar has been modified.\n"
 "Do you want to save it?"
@@ -4143,123 +4212,123 @@ msgstr ""
 "कलेन्डर सुधार दे गे हे.\n"
 "का आप मन एला सहेजना चाहू?"
 
-#: actionmanager.cpp:1273
+#: actionmanager.cpp:1287
 msgid "*.ics *.vcs|Calendar Files"
 msgstr "*.vcs *.ics|कलेन्डर फाइल"
 
-#: actionmanager.cpp:1395
+#: actionmanager.cpp:1409
 msgid "Could not start control module for date and time format."
 msgstr "नियंत्रन माड्यूल ल तारीक अउ समय फारमेट मं चालू नइ कर सकिस."
 
-#: actionmanager.cpp:1530
+#: actionmanager.cpp:1544
 msgid "Could not load calendar."
 msgstr "कलेन्डर ल लोड नइ कर सकिस."
 
-#: actionmanager.cpp:1545
+#: actionmanager.cpp:1559
 msgid "The downloaded events will be merged into your current calendar."
 msgstr "आप मन के अभी हाल के कलेन्डर मं डाउनलोड घटना सामिल होही."
 
-#: actionmanager.cpp:1602
+#: actionmanager.cpp:1616
 msgid "&Show Event"
 msgstr "घटना देखाव (&S)"
 
-#: actionmanager.cpp:1605
+#: actionmanager.cpp:1619
 msgid "&Edit Event..."
 msgstr "घटना के संपादन करव... (&E)"
 
-#: actionmanager.cpp:1608
+#: actionmanager.cpp:1622
 msgid "&Delete Event"
 msgstr "घटना मेटाव (&D)"
 
-#: actionmanager.cpp:1615
+#: actionmanager.cpp:1629
 msgid "&Show To-do"
 msgstr "कामसूची देखाव (&S)"
 
-#: actionmanager.cpp:1618
+#: actionmanager.cpp:1632
 msgid "&Edit To-do..."
 msgstr "कामसूची संपादित करव... (&E)"
 
-#: actionmanager.cpp:1621
+#: actionmanager.cpp:1635
 msgid "&Delete To-do"
 msgstr "कामसूची मेटाव (&D)"
 
-#: actionmanager.cpp:1760 actionmanager.cpp:1866
+#: actionmanager.cpp:1774 actionmanager.cpp:1880
 msgid "Attach as &link"
 msgstr "संकली के रुप मं संलग्न करव (&l)"
 
-#: actionmanager.cpp:1761 actionmanager.cpp:1867
+#: actionmanager.cpp:1775 actionmanager.cpp:1881
 msgid "Attach &inline"
 msgstr "इनलाइन संलग्न करव (&i)"
 
-#: actionmanager.cpp:1762
+#: actionmanager.cpp:1776
 msgid "Attach inline &without attachments"
 msgstr "संलग्नकों के बिना इनलाइन संलग्न करव (&w)"
 
-#: actionmanager.cpp:1764 actionmanager.cpp:1869
+#: actionmanager.cpp:1778 actionmanager.cpp:1883
 msgid "C&ancel"
 msgstr "खारिज करव (&a)"
 
-#: actionmanager.cpp:1804
+#: actionmanager.cpp:1818
 msgid "Removing attachments from an email might invalidate its signature."
 msgstr ""
 
-#: actionmanager.cpp:1805
+#: actionmanager.cpp:1819
 msgid "Remove Attachments"
 msgstr "संलग्नक निकालव"
 
-#: actionmanager.cpp:1947 actionmanager.cpp:1956
+#: actionmanager.cpp:1961 actionmanager.cpp:1970
 msgid "Undo"
 msgstr "पहिली जइसन"
 
-#: actionmanager.cpp:1953
+#: actionmanager.cpp:1967
 #, kde-format
 msgid "Undo: %1"
 msgstr "पहिली जइसन: %1"
 
-#: actionmanager.cpp:1963 actionmanager.cpp:1967
+#: actionmanager.cpp:1977 actionmanager.cpp:1981
 msgid "Redo"
 msgstr "दुहराव"
 
-#: actionmanager.cpp:1969
+#: actionmanager.cpp:1983
 #, kde-format
 msgid "Redo (%1)"
 msgstr "दुहराव (%1)"
 
-#: actionmanager.cpp:1983
+#: actionmanager.cpp:1997
 msgid ""
 "The calendar contains unsaved changes. Do you want to save them before "
 "exiting?"
 msgstr "कलेन्डर मं बिन सहेजे गे बदलाव हे. बाहिर जाय से पहिली आप मन का ओला सहेजना चाहू?"
 
-#: actionmanager.cpp:1991
+#: actionmanager.cpp:2005
 msgid "Unable to save the calendar. Do you still want to close this window?"
 msgstr "कलेन्डर ल सहेजे मं अक्छम. का आप मन एखर विंडो ल अभी घलोक बन्द करना चाहू?"
 
-#: actionmanager.cpp:2015
+#: actionmanager.cpp:2029
 msgid "Unable to exit. Saving still in progress."
 msgstr "बाहिर जाय मं अक्छम. सहेजना अभी घलोक प्रगति मं हे."
 
-#: actionmanager.cpp:2059
+#: actionmanager.cpp:2073
 #, kde-format
 msgid ""
 "Saving of '%1' failed. Check that the calendar is properly configured.\n"
 "Ignore problem and save remaining resources or cancel save?"
 msgstr ""
 
-#: actionmanager.cpp:2062
+#: actionmanager.cpp:2076
 msgid "Save Error"
 msgstr "सहेजे मं गलती"
 
-#: actionmanager.cpp:2063
+#: actionmanager.cpp:2077
 msgid "Continue Save"
 msgstr ""
 
-#: actionmanager.cpp:2064
+#: actionmanager.cpp:2078
 #, fuzzy
 msgid "Cancel Save"
 msgstr "खारिज करव (&C)"
 
-#: actionmanager.cpp:2077
+#: actionmanager.cpp:2091
 #, kde-format
 msgid "URL '%1' is invalid."
 msgstr "यूआरएल '%1' अवैध हे."
@@ -4422,46 +4491,46 @@ msgid "Time"
 msgstr "समय"
 
 #. i18n: file: koeditoralarms_base.ui:64
-#. i18n: ectx: property (text), item, widget (QComboBox, mOffsetUnit)
+#. i18n: ectx: property (text), item, widget (KComboBox, mOffsetUnit)
 #: rc.cpp:73 rc.cpp:2967
 msgctxt "@item:inlistbox alarm offset expressed in minutes"
 msgid "Minutes"
 msgstr "मिनट्स"
 
 #. i18n: file: koeditoralarms_base.ui:69
-#. i18n: ectx: property (text), item, widget (QComboBox, mOffsetUnit)
+#. i18n: ectx: property (text), item, widget (KComboBox, mOffsetUnit)
 #: rc.cpp:76 rc.cpp:2970
 msgctxt "@item:inlistbox alarm offset expressed in hours"
 msgid "Hours"
 msgstr "घंटे"
 
 #. i18n: file: koeditoralarms_base.ui:74
-#. i18n: ectx: property (text), item, widget (QComboBox, mOffsetUnit)
+#. i18n: ectx: property (text), item, widget (KComboBox, mOffsetUnit)
 #: rc.cpp:79 rc.cpp:2973
 msgctxt "@item:inlistbox alarm offset expressed in days"
 msgid "Days"
 msgstr "दिन"
 
 #. i18n: file: koeditoralarms_base.ui:83
-#. i18n: ectx: property (text), item, widget (QComboBox, mBeforeAfter)
+#. i18n: ectx: property (text), item, widget (KComboBox, mBeforeAfter)
 #: rc.cpp:82 rc.cpp:2976
 msgid "Before the Start"
 msgstr "सुरू करे से पहिली"
 
 #. i18n: file: koeditoralarms_base.ui:88
-#. i18n: ectx: property (text), item, widget (QComboBox, mBeforeAfter)
+#. i18n: ectx: property (text), item, widget (KComboBox, mBeforeAfter)
 #: rc.cpp:85 rc.cpp:2979
 msgid "After the Start"
 msgstr "सुरू करे के बाद"
 
 #. i18n: file: koeditoralarms_base.ui:93
-#. i18n: ectx: property (text), item, widget (QComboBox, mBeforeAfter)
+#. i18n: ectx: property (text), item, widget (KComboBox, mBeforeAfter)
 #: rc.cpp:88 rc.cpp:2982
 msgid "Before the End"
 msgstr "आखरी से पहिली"
 
 #. i18n: file: koeditoralarms_base.ui:98
-#. i18n: ectx: property (text), item, widget (QComboBox, mBeforeAfter)
+#. i18n: ectx: property (text), item, widget (KComboBox, mBeforeAfter)
 #: rc.cpp:91 rc.cpp:2985
 msgid "After the End"
 msgstr "आखरी के बाद"
@@ -4592,6 +4661,21 @@ msgstr "संदेस के पाठ: (&T)"
 msgid "&To:"
 msgstr "कोः (&T)"
 
+#. i18n: file: koeditoralarms_base.ui:479
+#. i18n: ectx: property (text), widget (QPushButton, mRemoveButton)
+#. i18n: file: publishdialog_base.ui:56
+#. i18n: ectx: property (text), widget (QPushButton, mRemove)
+#. i18n: file: template_management_dialog_base.ui:88
+#. i18n: ectx: property (text), widget (QPushButton, m_buttonRemove)
+#. i18n: file: publishdialog_base.ui:56
+#. i18n: ectx: property (text), widget (QPushButton, mRemove)
+#. i18n: file: koeditoralarms_base.ui:479
+#. i18n: ectx: property (text), widget (QPushButton, mRemoveButton)
+#: rc.cpp:151 rc.cpp:1119 rc.cpp:1309 rc.cpp:2325 rc.cpp:2931 rc.cpp:3045
+#: resourceview.cpp:687
+msgid "&Remove"
+msgstr "मेटाव (&R)"
+
 #. i18n: file: koeditoralarms_base.ui:493
 #. i18n: ectx: property (text), widget (QPushButton, mDuplicateButton)
 #: rc.cpp:157 rc.cpp:3051
@@ -4707,11 +4791,11 @@ msgid "Server Information"
 msgstr "सर्वर जानकारी"
 
 #. i18n: file: kogroupwareprefspage.ui:225
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, publishUrl)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, publishUrl)
 #. i18n: file: kogroupwareprefspage.ui:297
 #. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel7)
 #. i18n: file: kogroupwareprefspage.ui:225
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, publishUrl)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, publishUrl)
 #. i18n: file: kogroupwareprefspage.ui:297
 #. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel7)
 #: rc.cpp:210 rc.cpp:243 rc.cpp:1373 rc.cpp:1406
@@ -4722,19 +4806,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file: kogroupwareprefspage.ui:232
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, publishPassword)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, publishPassword)
 #. i18n: file: kogroupwareprefspage.ui:242
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel2)
 #. i18n: file: kogroupwareprefspage.ui:411
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, retrievePassword)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, retrievePassword)
 #. i18n: file: kogroupwareprefspage.ui:472
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel4)
 #. i18n: file: kogroupwareprefspage.ui:232
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, publishPassword)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, publishPassword)
 #. i18n: file: kogroupwareprefspage.ui:242
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel2)
 #. i18n: file: kogroupwareprefspage.ui:411
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, retrievePassword)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, retrievePassword)
 #. i18n: file: kogroupwareprefspage.ui:472
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel4)
 #: rc.cpp:214 rc.cpp:217 rc.cpp:274 rc.cpp:303 rc.cpp:1377 rc.cpp:1380
@@ -4751,17 +4835,17 @@ msgstr "पासवर्ड: "
 #. i18n: file: kogroupwareprefspage.ui:257
 #. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel6)
 #. i18n: file: kogroupwareprefspage.ui:278
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, publishUser)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, publishUser)
 #. i18n: file: kogroupwareprefspage.ui:423
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, retrieveUser)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, retrieveUser)
 #. i18n: file: kogroupwareprefspage.ui:459
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel3)
 #. i18n: file: kogroupwareprefspage.ui:257
 #. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel6)
 #. i18n: file: kogroupwareprefspage.ui:278
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, publishUser)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, publishUser)
 #. i18n: file: kogroupwareprefspage.ui:423
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, retrieveUser)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, retrieveUser)
 #. i18n: file: kogroupwareprefspage.ui:459
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel3)
 #: rc.cpp:223 rc.cpp:231 rc.cpp:277 rc.cpp:295 rc.cpp:1386 rc.cpp:1394
@@ -4869,11 +4953,11 @@ msgid "Use full email &address for retrieval"
 msgstr "लाने बर पूरा ईमेल पता परयोग करव (&a)"
 
 #. i18n: file: kogroupwareprefspage.ui:435
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, retrieveUrl)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, retrieveUrl)
 #. i18n: file: kogroupwareprefspage.ui:444
 #. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel7_2)
 #. i18n: file: kogroupwareprefspage.ui:435
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, retrieveUrl)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, retrieveUrl)
 #. i18n: file: kogroupwareprefspage.ui:444
 #. i18n: ectx: property (whatsThis), widget (QLabel, TextLabel7_2)
 #: rc.cpp:282 rc.cpp:287 rc.cpp:1445 rc.cpp:1450
@@ -7548,7 +7632,7 @@ msgid "&Title:"
 msgstr "सीर्सकः (&T)"
 
 #. i18n: file: printing/calprinttodoconfig_base.ui:40
-#. i18n: ectx: property (text), widget (QLineEdit, mTitle)
+#. i18n: ectx: property (text), widget (KLineEdit, mTitle)
 #: rc.cpp:2571
 msgid "To-do List"
 msgstr "काम-सूची सूचियाँ"
@@ -7835,11 +7919,11 @@ msgstr ""
 #. i18n: file: printing/calprintmonthconfig_base.ui:49
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromDateLabel)
 #. i18n: file: printing/calprintmonthconfig_base.ui:62
-#. i18n: ectx: property (whatsThis), widget (QComboBox, mFromMonth)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, mFromMonth)
 #. i18n: file: printing/calprintmonthconfig_base.ui:69
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, mFromYear)
 #. i18n: file: printing/calprintmonthconfig_base.ui:95
-#. i18n: ectx: property (whatsThis), widget (QComboBox, mToMonth)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, mToMonth)
 #. i18n: file: printing/calprintmonthconfig_base.ui:102
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, mToYear)
 #: rc.cpp:2823 rc.cpp:2829 rc.cpp:2832 rc.cpp:2841 rc.cpp:2844
@@ -7970,17 +8054,17 @@ msgid "Show holidays as:"
 msgstr "छुट्टियों ल ए रूप मं देखाव:"
 
 #. i18n: file: plugins/printing/year/calprintyearconfig_base.ui:143
-#. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
+#. i18n: ectx: property (text), item, widget (KComboBox, mSubDays)
 #. i18n: file: plugins/printing/year/calprintyearconfig_base.ui:157
-#. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
+#. i18n: ectx: property (text), item, widget (KComboBox, mHolidays)
 #: rc.cpp:3111 rc.cpp:3117
 msgid "Text"
 msgstr "पाठ"
 
 #. i18n: file: plugins/printing/year/calprintyearconfig_base.ui:148
-#. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
+#. i18n: ectx: property (text), item, widget (KComboBox, mSubDays)
 #. i18n: file: plugins/printing/year/calprintyearconfig_base.ui:162
-#. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
+#. i18n: ectx: property (text), item, widget (KComboBox, mHolidays)
 #: rc.cpp:3114 rc.cpp:3120
 msgid "Time Boxes"
 msgstr "समय बक्से"
@@ -8665,8 +8749,7 @@ msgstr "कोई सुरू के तारीक नइ"
 msgid "End date: "
 msgstr "खतम तारीक:"
 
-#: printing/calprintdefaultplugins.cpp:146 koeditorgeneralevent.cpp:525
-#: koeditorgeneralevent.cpp:537
+#: printing/calprintdefaultplugins.cpp:146
 msgid "Duration: "
 msgstr "अवधिः"
 
@@ -8747,14 +8830,14 @@ msgid_plural "%1 days"
 msgstr[0] "1 दिन"
 msgstr[1] "%1 दिन"
 
-#: printing/calprintdefaultplugins.cpp:362 koeditorgeneralevent.cpp:539
+#: printing/calprintdefaultplugins.cpp:362
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
 msgstr[0] "१ घंटा"
 msgstr[1] "%1 घंटे"
 
-#: printing/calprintdefaultplugins.cpp:365 koeditorgeneralevent.cpp:546
+#: printing/calprintdefaultplugins.cpp:365
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
@@ -9105,77 +9188,82 @@ msgstr "काम-सूची छापव (&d)"
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "सब्बो काम सूची ल (ट्री जइसन) एक सूची मं छापव"
 
-#: koeventeditor.cpp:149
+#: koeventeditor.cpp:138
 msgctxt "@title:tab general event settings"
 msgid "General"
 msgstr "सामान्य"
 
-#: koeventeditor.cpp:151 koeventeditor.cpp:177
+#: koeventeditor.cpp:140 koeventeditor.cpp:166
 msgctxt "@info:whatsthis"
 msgid ""
 "The General tab allows you to set the most common options for the event."
 msgstr ""
 
-#: koeventeditor.cpp:165 kotodoeditor.cpp:138
+#: koeventeditor.cpp:154 kotodoeditor.cpp:138
 msgctxt "@title:tab"
 msgid "Details"
 msgstr "विवरन"
 
-#: koeventeditor.cpp:175
+#: koeventeditor.cpp:164
 msgctxt "@title:tab general event settings"
 msgid "&General"
 msgstr "सामान्य (&G)"
 
-#: koeventeditor.cpp:210 kotodoeditor.cpp:185
+#: koeventeditor.cpp:199 kotodoeditor.cpp:185
 msgctxt "@title:tab"
 msgid "Rec&urrence"
 msgstr "आवृत्ति (&u)"
 
-#: koeventeditor.cpp:213
+#: koeventeditor.cpp:202
 msgctxt "@info:whatsthis"
 msgid ""
 "The Recurrence tab allows you to set options on how often this event recurs."
 msgstr ""
 
-#: koeventeditor.cpp:229
+#: koeventeditor.cpp:218
 msgctxt "@title:tab"
 msgid "&Attendees"
 msgstr "उपस्थिति (&A)"
 
-#: koeventeditor.cpp:231
+#: koeventeditor.cpp:220
 msgctxt "@info:whatsthis"
 msgid ""
 "The Free/Busy tab allows you to see whether other attendees are free or busy "
 "during your event."
 msgstr ""
 
-#: koeventeditor.cpp:253
+#: koeventeditor.cpp:242
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit Event : %1"
 msgstr "घटना के संपादन करव : %1"
 
-#: koeventeditor.cpp:261
+#: koeventeditor.cpp:250
 msgctxt "@title:window"
 msgid "New Event"
 msgstr "नवा घटना"
 
-#: koeventeditor.cpp:320
+#: koeventeditor.cpp:310
+msgctxt "@info"
 msgid ""
-"You didn't change the event, thus no counter proposal has been sent to the "
+"You did not modify the event so no counter proposal has been sent to the "
 "organizer."
 msgstr ""
 
-#: koeventeditor.cpp:322
-msgid "No changes"
+#: koeventeditor.cpp:312
+#, fuzzy
+#| msgid "No changes"
+msgctxt "@title:window"
+msgid "No Changes"
 msgstr "कोई बदलाव नइ"
 
-#: koeventeditor.cpp:332
+#: koeventeditor.cpp:323
 #, kde-format
+msgctxt "@item"
 msgid "My counter proposal for: %1"
 msgstr ""
 
-#: koeventeditor.cpp:431
+#: koeventeditor.cpp:422
 msgctxt "@info"
 msgid "Template does not contain a valid event."
 msgstr "टैम्प्लेट एक वैध घटना नइ रखथे."
@@ -9251,186 +9339,273 @@ msgid ""
 "user will be asked whether to import, merge or open in a separate window."
 msgstr ""
 
-#: koeditorgeneralevent.cpp:90
+#: koeditorgeneralevent.cpp:88
+#, fuzzy
+#| msgid "Date && Time"
+msgctxt "@title:group"
+msgid "Date && Time"
+msgstr "तारीक अउ समय"
+
+#: koeditorgeneralevent.cpp:91
+#, fuzzy
+#| msgid "Sets options related to the date and time of the event or to-do."
+msgctxt "@info:whatsthis"
 msgid "Sets options related to the date and time of the event or to-do."
 msgstr "तारीक अउ समय के घटनाोओं या कामसूची से संबंधित विकल्प मन लट करथे."
 
-#: koeditorgeneralevent.cpp:96
+#: koeditorgeneralevent.cpp:97
 msgctxt "@label event start time"
 msgid "&Start:"
 msgstr "सुरूः (&S)"
 
-#: koeditorgeneralevent.cpp:102
+#: koeditorgeneralevent.cpp:103
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Set the start date"
 msgstr "कोई सुरू के तारीक नइ"
 
-#: koeditorgeneralevent.cpp:104
+#: koeditorgeneralevent.cpp:105
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid "Select the starting date for this event."
 msgstr "ये काम बर चालू तारीक सेट करथे "
 
-#: koeditorgeneralevent.cpp:110
+#: koeditorgeneralevent.cpp:111
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Set the start time"
 msgstr "ये काम बर चालू समय सेट करथे."
 
-#: koeditorgeneralevent.cpp:112 koeditorgeneralevent.cpp:154
+#: koeditorgeneralevent.cpp:113 koeditorgeneralevent.cpp:155
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid "Select the starting time for this event."
 msgstr "ये काम बर चालू समय सेट करथे."
 
-#: koeditorgeneralevent.cpp:117
+#: koeditorgeneralevent.cpp:118
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid "Select the timezone for this event. It will also affect recurrences"
 msgstr "ये घटना बर समयछेत्र चुनव. ए पुनरावृत्ति ल घलोक प्रभावित करथे."
 
-#: koeditorgeneralevent.cpp:130
+#: koeditorgeneralevent.cpp:131
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Select the timezone for the start date/time"
 msgstr "ये घटना बर समयछेत्र चुनव. ए पुनरावृत्ति ल घलोक प्रभावित करथे."
 
-#: koeditorgeneralevent.cpp:135
+#: koeditorgeneralevent.cpp:136
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Select the timezone for the end date/time"
 msgstr "ये घटना बर समयछेत्र चुनव. ए पुनरावृत्ति ल घलोक प्रभावित करथे."
 
-#: koeditorgeneralevent.cpp:141
+#: koeditorgeneralevent.cpp:142
+#, fuzzy
+#| msgid "&End:"
+msgctxt "@label"
 msgid "&End:"
 msgstr "आखरीः (&E)"
 
-#: koeditorgeneralevent.cpp:145
+#: koeditorgeneralevent.cpp:146
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Set the end date"
 msgstr "अपडेट भेजव"
 
-#: koeditorgeneralevent.cpp:147
+#: koeditorgeneralevent.cpp:148
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid "Select the ending date for this event."
 msgstr "ये काम बर सेट तारीक सेट करथे."
 
-#: koeditorgeneralevent.cpp:152
+#: koeditorgeneralevent.cpp:153
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Set the end time"
 msgstr "सुरता समय इहां भरव."
 
-#: koeditorgeneralevent.cpp:157
+#: koeditorgeneralevent.cpp:158
+#, fuzzy
+#| msgid "T&ime associated"
+msgctxt "@option:check"
 msgid "T&ime associated"
 msgstr "सम्बद्ध समय (&i)"
 
-#: koeditorgeneralevent.cpp:185 koeventviewerdialog.cpp:36
-msgid "Edit..."
-msgstr "संपादन..."
-
-#: koeditorgeneralevent.cpp:190
+#: koeditorgeneralevent.cpp:192
+#, fuzzy
+#| msgid "Reminder:"
+msgctxt "@label"
 msgid "Reminder:"
 msgstr "स्मरनः"
 
-#: koeditorgeneralevent.cpp:212
+#: koeditorgeneralevent.cpp:214
+#, fuzzy
+#| msgid "S&how time as:"
+msgctxt "@label"
 msgid "S&how time as:"
 msgstr "समय एखर रुप मं देखाव (&h)"
 
-#: koeditorgeneralevent.cpp:215
+#: koeditorgeneralevent.cpp:217
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid "Sets how this time will appear on your Free/Busy information."
 msgstr "सेट करथे  कि कइसन ए समय आप मन के मिलत/व्यस्त जानकारी मं प्रदर्सित हो."
 
-#: koeditorgeneralevent.cpp:222
+#: koeditorgeneralevent.cpp:224
 msgctxt "@info:tooltip"
 msgid "Set this event as Busy or Free time"
 msgstr ""
 
-#: koeditorgeneralevent.cpp:224
-msgctxt "show event as busy time"
+#: koeditorgeneralevent.cpp:226
+#, fuzzy
+#| msgctxt "show event as busy time"
+#| msgid "Busy"
+msgctxt "@item:inlistbox show event as busy time"
 msgid "Busy"
 msgstr "व्यस्त"
 
-#: koeditorgeneralevent.cpp:225
-msgctxt "show event as free time"
+#: koeditorgeneralevent.cpp:227
+#, fuzzy
+#| msgctxt "show event as free time"
+#| msgid "Free"
+msgctxt "@item:inlistbox show event as free time"
 msgid "Free"
 msgstr "मुक्त"
 
-#: koeditorgeneralevent.cpp:240
+#: koeditorgeneralevent.cpp:242
 msgctxt "@info"
 msgid "You have not yet definitely responded to this invitation."
 msgstr ""
 
-#: koeditorgeneralevent.cpp:247
+#: koeditorgeneralevent.cpp:248
+#, fuzzy
+#| msgid "Accept"
+msgctxt "@action:button"
+msgid "Accept"
+msgstr "स्वीकृत"
+
+#: koeditorgeneralevent.cpp:250
 msgctxt "@info:tooltip"
 msgid "Accept the invitation"
 msgstr ""
 
-#: koeditorgeneralevent.cpp:250
+#: koeditorgeneralevent.cpp:253
 msgctxt "@info:whatsthis"
 msgid "Click this button to accept the invitation."
 msgstr ""
 
-#: koeditorgeneralevent.cpp:257
+#: koeditorgeneralevent.cpp:258
+#, fuzzy
+#| msgid "Decline"
+msgctxt "@action:button"
+msgid "Decline"
+msgstr "अस्वीकार"
+
+#: koeditorgeneralevent.cpp:260
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Decline the invitation"
 msgstr "मिटाना पुस्टिकरन"
 
-#: koeditorgeneralevent.cpp:260
+#: koeditorgeneralevent.cpp:263
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid "Click this button to decline the invitation."
 msgstr "एक नवा छनइया परिभासित करे बर ए बटन ल दबाव."
 
-#: koeditorgeneralevent.cpp:526
-#, kde-format
+#: koeditorgeneralevent.cpp:528 koeditorgeneralevent.cpp:540
+#, fuzzy
+#| msgid "Duration: "
+msgctxt "@label"
+msgid "Duration: "
+msgstr "अवधिः"
+
+#: koeditorgeneralevent.cpp:529
+#, fuzzy, kde-format
+#| msgid "1 Day"
+#| msgid_plural "%1 Days"
+msgctxt "@label"
 msgid "1 Day"
 msgid_plural "%1 Days"
 msgstr[0] "1 दिन"
 msgstr[1] "%1 दिन"
 
-#: koeditorgeneralevent.cpp:543
+#: koeditorgeneralevent.cpp:542
+#, fuzzy, kde-format
+#| msgid "1 hour"
+#| msgid_plural "%1 hours"
+msgctxt "@label"
+msgid "1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "१ घंटा"
+msgstr[1] "%1 घंटे"
+
+#: koeditorgeneralevent.cpp:546
+#, fuzzy
+#| msgid ", "
+msgctxt "@label"
 msgid ", "
 msgstr ","
 
-#: koeditorgeneralevent.cpp:556
+#: koeditorgeneralevent.cpp:549
+#, fuzzy, kde-format
+#| msgid "1 minute"
+#| msgid_plural "%1 minutes"
+msgctxt "@label"
+msgid "1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] "1 मिनट"
+msgstr[1] "%1 मिनट"
+
+#: koeditorgeneralevent.cpp:560
+msgctxt "@info:whatsthis"
 msgid ""
 "Shows the duration of the event or to-do with the current start and end "
 "dates and times."
 msgstr ""
 
-#: koeditorgeneralevent.cpp:572
-#, kde-format
+#: koeditorgeneralevent.cpp:577
+#, fuzzy, kde-format
+#| msgid "From: %1   To: %2   %3"
+msgctxt "@label"
 msgid "From: %1   To: %2   %3"
 msgstr "द्वारा: %1   को: %2   %3"
 
-#: koeditorgeneralevent.cpp:582
-#, kde-format
+#: koeditorgeneralevent.cpp:590
+#, fuzzy, kde-format
+#| msgid "Please specify a valid start time, for example '%1'."
+msgctxt "@info"
 msgid "Please specify a valid start time, for example '%1'."
 msgstr "किरपा करके, एक वैध चालू समय निरधारित करव, उदाहरन बर- '%1'."
 
-#: koeditorgeneralevent.cpp:589
-#, kde-format
+#: koeditorgeneralevent.cpp:599
+#, fuzzy, kde-format
+#| msgid "Please specify a valid end time, for example '%1'."
+msgctxt "@info"
 msgid "Please specify a valid end time, for example '%1'."
 msgstr "किरपा करके, एक वैध समापन समय निरधारित करव, उदाहरन बर- '%1'."
 
-#: koeditorgeneralevent.cpp:597
-#, kde-format
+#: koeditorgeneralevent.cpp:609
+#, fuzzy, kde-format
+#| msgid "Please specify a valid start date, for example '%1'."
+msgctxt "@info"
 msgid "Please specify a valid start date, for example '%1'."
 msgstr "किरपा करके, एक वैध चालू तारीक निरधारित करव, उदाहरन बर- '%1'."
 
-#: koeditorgeneralevent.cpp:604
-#, kde-format
+#: koeditorgeneralevent.cpp:618
+#, fuzzy, kde-format
+#| msgid "Please specify a valid end date, for example '%1'."
+msgctxt "@info"
 msgid "Please specify a valid end date, for example '%1'."
 msgstr "किरपा करके, एक वैध समापन तारीक निरधारित करव, उदाहरन बर- '%1'."
 
-#: koeditorgeneralevent.cpp:620
+#: koeditorgeneralevent.cpp:637
+#, fuzzy
+#| msgid ""
+#| "The event ends before it starts.\n"
+#| "Please correct dates and times."
+msgctxt "@info"
 msgid ""
 "The event ends before it starts.\n"
 "Please correct dates and times."
@@ -9471,6 +9646,10 @@ msgstr "सब्बो पुनरावृत्तियाँ (&A)"
 #: koeventviewerdialog.cpp:33
 msgid "Event Viewer"
 msgstr "घटना प्रदर्सक"
+
+#: koeventviewerdialog.cpp:36
+msgid "Edit..."
+msgstr "संपादन..."
 
 #: koeventviewerdialog.cpp:37
 msgid "Show in Context"
@@ -10468,6 +10647,9 @@ msgstr "आगू के हे छापव"
 msgid "Prints a list of all upcoming events and todos."
 msgstr "आने वाले सब्बो घटना अउ काम-सूचियों ल सूची के रूप मं छापव."
 
+#~ msgid "Could not upload file."
+#~ msgstr "फाइल अपलोड नइ कर सकिस."
+
 #~ msgid "KOrganizer Timezone Test"
 #~ msgstr "के-आर्गेनाइजर समयछेत्र जांच"
 
@@ -10682,10 +10864,6 @@ msgstr "आने वाले सब्बो घटना अउ काम-स
 #~ msgctxt "@action:button"
 #~ msgid "&Add..."
 #~ msgstr "जोड़व...(&A)"
-
-#~ msgctxt "@action:button"
-#~ msgid "&Remove"
-#~ msgstr "मेटाव (&R)"
 
 #, fuzzy
 #~| msgid "Holiday"
