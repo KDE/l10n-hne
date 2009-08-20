@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-06 06:22+0200\n"
+"POT-Creation-Date: 2009-08-20 06:14+0200\n"
 "PO-Revision-Date: 2009-02-27 21:59+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -403,8 +403,10 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: dialogs/deletecertificatesdialog.cpp:218
-msgid "Secret Key Deletion"
-msgstr "गोपनीय कुंजी मिटाना"
+#, fuzzy
+#| msgid "Certificate Selection"
+msgid "Secret Certificate Deletion"
+msgstr "प्रमानपत्र चयन"
 
 #: dialogs/certificateselectiondialog.cpp:110
 msgid "Please select one or more of the following certificates:"
@@ -742,16 +744,22 @@ msgid "FlatKeyListModel Test"
 msgstr ""
 
 #: tests/test_keylistmodels.cpp:94
-msgid "Perform flat key listing"
-msgstr ""
+#, fuzzy
+#| msgid "Perform hierarchical key listing"
+msgid "Perform flat certificate listing"
+msgstr "हियरार्चिकल कुंजी सूची चलाव"
 
 #: tests/test_keylistmodels.cpp:95
-msgid "Perform hierarchical key listing"
+#, fuzzy
+#| msgid "Perform hierarchical key listing"
+msgid "Perform hierarchical certificate listing"
 msgstr "हियरार्चिकल कुंजी सूची चलाव"
 
 #: tests/test_keylistmodels.cpp:96
-msgid "Do not list SMIME keys"
-msgstr ""
+#, fuzzy
+#| msgid "This is my certificate"
+msgid "Do not list SMIME certificates"
+msgstr "ए मोर प्रमानपत्र हे"
 
 #: utils/formatting.cpp:205 utils/formatting.cpp:208
 #, kde-format
@@ -760,7 +768,7 @@ msgstr "<tr><th>%1:</th><td>%2</td></tr>"
 
 #: utils/formatting.cpp:217
 #, kde-format
-msgid "%1-bit %2 (secret key available)"
+msgid "%1-bit %2 (secret certificate available)"
 msgstr ""
 
 #: utils/formatting.cpp:219
@@ -936,8 +944,10 @@ msgid "good"
 msgstr "अच्छा"
 
 #: utils/formatting.cpp:468
-msgid "key expired"
-msgstr "एक कुंजी के मियाद खतम हो गे हे."
+#, fuzzy
+#| msgid "This certificate has expired."
+msgid "certificate expired"
+msgstr "प्रमानपत्र के मियाद खतम हो गे हे."
 
 #: utils/formatting.cpp:469
 msgctxt "fake/invalid signature"
@@ -951,14 +961,16 @@ msgid "%1 %2 (%3)"
 msgstr "%1 %2 (%3)"
 
 #: utils/formatting.cpp:528
-#, kde-format
-msgid "Bad signature by unknown key %1: %2"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "New signatures:"
+msgid "Bad signature by unknown certificate %1: %2"
+msgstr "नवा दसखत:"
 
 #: utils/formatting.cpp:530
-#, kde-format
-msgid "Bad signature by an unknown key: %1"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Could not create certificate: %1"
+msgid "Bad signature by an unknown certificate: %1"
+msgstr "प्रमानपत्र बना नइ सकिस: %1"
 
 #: utils/formatting.cpp:532
 #, kde-format
@@ -966,13 +978,17 @@ msgid "Bad signature by %1: %2"
 msgstr ""
 
 #: utils/formatting.cpp:537
-#, kde-format
-msgid "Good signature by unknown key %1."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "(unknown certificate)"
+msgid "Good signature by unknown certificate %1."
+msgstr "(अग्यात प्रमानपत्र)"
 
 #: utils/formatting.cpp:539
-msgid "Good signature by an unknown key."
-msgstr ""
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Create a new certificate"
+msgid "Good signature by an unknown certificate."
+msgstr "नवा प्रमानपत्र बनाव"
 
 #: utils/formatting.cpp:541
 #, kde-format
@@ -981,13 +997,14 @@ msgstr ""
 
 #: utils/formatting.cpp:546
 #, kde-format
-msgid "Invalid signature by unknown key %1: %2"
+msgid "Invalid signature by unknown certificate %1: %2"
 msgstr ""
 
 #: utils/formatting.cpp:548
-#, kde-format
-msgid "Invalid signature by an unknown key: %1"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Could not create certificate: %1"
+msgid "Invalid signature by an unknown certificate: %1"
+msgstr "प्रमानपत्र बना नइ सकिस: %1"
 
 #: utils/formatting.cpp:550
 #, kde-format
@@ -1883,7 +1900,7 @@ msgid "Signing certificate expired"
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:177
-msgid "No public key to verify the signature"
+msgid "No public certificate to verify the signature"
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:179
@@ -1891,8 +1908,10 @@ msgid "Signature expired"
 msgstr "दसखत के मियाद खतम हो गे हे"
 
 #: crypto/decryptverifytask.cpp:181
-msgid "Key missing"
-msgstr "कुंजी गंवा गे हे"
+#, fuzzy
+#| msgid "Certificate Listing Failed"
+msgid "Certificate missing"
+msgstr "प्रमानपत्र सूची बनाए मं फेल"
 
 #: crypto/decryptverifytask.cpp:183
 msgid "CRL missing"
@@ -1940,18 +1959,22 @@ msgid "The signature is valid but the certificate's validity is undefined."
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:225 crypto/decryptverifytask.cpp:231
-msgid "Unknown key"
-msgstr ""
+#, fuzzy
+#| msgid "(unknown certificate)"
+msgid "Unknown certificate"
+msgstr "(अग्यात प्रमानपत्र)"
 
 #: crypto/decryptverifytask.cpp:250
-#, kde-format
-msgid "Signed on %1 with unknown key %2."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "(unknown certificate)"
+msgid "Signed on %1 with unknown certificate %2."
+msgstr "(अग्यात प्रमानपत्र)"
 
 #: crypto/decryptverifytask.cpp:252
-#, kde-format
-msgid "Signed with unknown key %1."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "(unknown certificate)"
+msgid "Signed with unknown certificate %1."
+msgstr "(अग्यात प्रमानपत्र)"
 
 #: crypto/decryptverifytask.cpp:257
 #, kde-format
@@ -1960,19 +1983,22 @@ msgid "Signed on %1 by %2 (Key ID: %3)."
 msgstr ""
 
 #: crypto/decryptverifytask.cpp:262
-#, kde-format
-msgid "Signed by %1 with key %2."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Deleting CA Certificates"
+msgid "Signed by %1 with certificate %2."
+msgstr "सीए प्रमानपत्र मिटात हे"
 
 #: crypto/decryptverifytask.cpp:265
-#, kde-format
-msgid "Signed on %1 with key %2."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Deleting CA Certificates"
+msgid "Signed on %1 with certificate %2."
+msgstr "सीए प्रमानपत्र मिटात हे"
 
 #: crypto/decryptverifytask.cpp:266
-#, kde-format
-msgid "Signed with key %1."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Deleting CA Certificates"
+msgid "Signed with certificate %1."
+msgstr "सीए प्रमानपत्र मिटात हे"
 
 #: crypto/decryptverifytask.cpp:371
 msgid "<b>Verification canceled.</b>"
@@ -2450,17 +2476,23 @@ msgid ""
 msgstr ""
 
 #: commands/learncardkeyscommand.cpp:88
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt><p>An error occurred while trying to delete the certificates:</"
+#| "p><p><b>%1</b></p></qt>"
 msgctxt "@info"
 msgid ""
-"<para>An error occurred while trying to learn the smart card's keys.</para> "
-"<para>The output from <command>%1</command> was: <message>%2</message></para>"
+"<para>An error occurred while trying to learn the smart card's certificates."
+"</para> <para>The output from <command>%1</command> was: <message>%2</"
+"message></para>"
 msgstr ""
+"<qt><p>प्रमानपत्र:</p><p><b>%1</b></p>को मेटाव के कोसिसों के समय एक गलती हो गिस</"
+"qt>"
 
 #: commands/learncardkeyscommand.cpp:94
 #, fuzzy
 #| msgid "Secret key successfully exported."
-msgid "Smart card keys successfully learned."
+msgid "Smart card certificates successfully learned."
 msgstr "गोपनीय कुंजी सफलता से निर्यात करिस."
 
 #: commands/adduseridcommand.cpp:212
@@ -2504,7 +2536,7 @@ msgstr "सर्वर मं प्रमानपत्र निर्या
 #, kde-format
 msgctxt "@info"
 msgid ""
-"Failed to search on keyserver. The error returned was:\n"
+"Failed to search on certificate server. The error returned was:\n"
 "%1"
 msgstr ""
 
@@ -2539,40 +2571,46 @@ msgstr ""
 
 #: commands/exportsecretkeycommand.cpp:129
 #, fuzzy
-#| msgid "Secret Key Export Error"
+#| msgid "OpenPGP Certificate Export Error"
 msgctxt "@title:window"
-msgid "Secret Key Export Error"
-msgstr "गोपनीय कुंजी निर्यात गलती"
+msgid "Secret Certificate Export Error"
+msgstr "ओपनपीजीपी प्रमानपत्र निर्यात गलती"
 
 #: commands/exportsecretkeycommand.cpp:133
 #, fuzzy
-#| msgid "Secret Key Export Finished"
+#| msgid "OpenPGP Certificate Export Finished"
 msgctxt "@title:window"
-msgid "Secret Key Export Finished"
-msgstr "गोपनीय-कुंजी निर्यात पूरा"
+msgid "Secret Certificate Export Finished"
+msgstr "ओपनपीजीपी प्रमानपत्र निर्यात पूरा"
 
 #: commands/exportsecretkeycommand.cpp:138
 #, kde-format
 msgctxt "@info"
 msgid ""
-"<para>The GPG or GpgSM process that tried to export the secret key ended "
-"prematurely because of an unexpected error.</para><para>Please check the "
-"output of <icode>%1</icode> for details.</para>"
+"<para>The GPG or GpgSM process that tried to export the secret certificate "
+"ended prematurely because of an unexpected error.</para><para>Please check "
+"the output of <icode>%1</icode> for details.</para>"
 msgstr ""
 
 #: commands/exportsecretkeycommand.cpp:145
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt><p>An error occurred while trying to export the certificate:</p><p><b>"
+#| "%1</b></p></qt>"
 msgctxt "@info"
 msgid ""
-"<para>An error occurred while trying to export the secret key.</para> "
-"<para>The output from <command>%1</command> was: <message>%2</message></para>"
+"<para>An error occurred while trying to export the secret certificate.</"
+"para> <para>The output from <command>%1</command> was: <message>%2</"
+"message></para>"
 msgstr ""
+"<qt><p>प्रमानपत्र:</p><p><b>%1</b></p> निर्यात करे के कोसिसों के समय एक गलती हो "
+"गिस</qt>"
 
 #: commands/exportsecretkeycommand.cpp:151
 #, fuzzy
 #| msgid "Secret key successfully exported."
 msgctxt "@info"
-msgid "Secret key successfully exported."
+msgid "Secret certificate successfully exported."
 msgstr "गोपनीय कुंजी सफलता से निर्यात करिस."
 
 #: commands/encryptclipboardcommand.cpp:146
@@ -2664,19 +2702,27 @@ msgid "Unchanged:"
 msgstr "बिन बदले:"
 
 #: commands/importcertificatescommand.cpp:271
-msgid "Secret keys processed:"
+#, fuzzy
+#| msgid "Secret keys processed:"
+msgid "Secret certificates processed:"
 msgstr "गोपनीय कुंजियाँ प्रोसेस्ड:"
 
 #: commands/importcertificatescommand.cpp:274
-msgid "Secret keys imported:"
+#, fuzzy
+#| msgid "Secret keys imported:"
+msgid "Secret certificates imported:"
 msgstr "गोपनीय कुंजियाँ आयातित:"
 
 #: commands/importcertificatescommand.cpp:278
-msgid "Secret keys <em>not</em> imported:"
+#, fuzzy
+#| msgid "Secret keys <em>not</em> imported:"
+msgid "Secret certificates <em>not</em> imported:"
 msgstr "गोपनीय कुंजियाँ आयातित <em>नइ</em>:"
 
 #: commands/importcertificatescommand.cpp:281
-msgid "Secret keys unchanged:"
+#, fuzzy
+#| msgid "Secret keys unchanged:"
+msgid "Secret certificates unchanged:"
 msgstr "गोपनीय कुंजियाँ बिन बदले:"
 
 #: commands/importcertificatescommand.cpp:294
@@ -3426,20 +3472,28 @@ msgid ""
 msgstr ""
 
 #: models/keycache.cpp:902
-msgid "Listing public X.509 keys"
-msgstr ""
+#, fuzzy
+#| msgid "This is my certificate"
+msgid "Listing public X.509 certificates"
+msgstr "ए मोर प्रमानपत्र हे"
 
 #: models/keycache.cpp:902
-msgid "Listing private X.509 keys"
-msgstr ""
+#, fuzzy
+#| msgid "Fetch missing issuer certificates"
+msgid "Listing private X.509 certificates"
+msgstr "गुम कमइया प्रमानपत्र प्राप्त करव"
 
 #: models/keycache.cpp:903
-msgid "Listing public OpenPGP keys"
-msgstr ""
+#, fuzzy
+#| msgid "OpenPGP Certificates"
+msgid "Listing public OpenPGP certificates"
+msgstr "ओपनपीजीपी प्रमानपत्र"
 
 #: models/keycache.cpp:903
-msgid "Listing private OpenPGP keys"
-msgstr ""
+#, fuzzy
+#| msgid "My new OpenPGP certificate"
+msgid "Listing private OpenPGP certificates"
+msgstr "मोर नवा ओपनपीजीपी प्रमानपत्र"
 
 #: models/keylistmodel.cpp:248 models/useridlistmodel.cpp:249
 #: newcertificatewizard/newcertificatewizard.cpp:921
@@ -4042,8 +4096,10 @@ msgstr "ए दिन:"
 #. i18n: file: dialogs/exportsecretkeydialog.ui:13
 #. i18n: ectx: property (windowTitle), widget (QDialog, ExportSecretKeyDialog)
 #: rc.cpp:261
-msgid "Export Secret Key"
-msgstr "गोपनीय कुंजी निर्यात करव"
+#, fuzzy
+#| msgid "Export Certificates"
+msgid "Export Secret Certificate"
+msgstr "प्रमानपत्र निर्यात करव"
 
 #. i18n: file: dialogs/exportsecretkeydialog.ui:26
 #. i18n: ectx: property (text), widget (QLabel, outputFileLB)
@@ -4066,8 +4122,10 @@ msgstr ""
 #. i18n: file: dialogs/lookupcertificatesdialog.ui:13
 #. i18n: ectx: property (windowTitle), widget (QDialog, LookupCertificatesDialog)
 #: rc.cpp:273
-msgid "Keyserver Certificate Lookup"
-msgstr ""
+#, fuzzy
+#| msgid "Certifying other Certificates"
+msgid "Certificateserver Certificate Lookup"
+msgstr "दूसर प्रमानपत्र प्रमानित करत हे"
 
 #. i18n: file: dialogs/lookupcertificatesdialog.ui:24
 #. i18n: ectx: property (text), widget (QPushButton, findPB)
@@ -4108,7 +4166,7 @@ msgstr ""
 #. i18n: file: dialogs/certificationoptionswidget.ui:30
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: rc.cpp:297
-msgid "Choose which of your keys to sign with:"
+msgid "Choose which of your certificates to sign with:"
 msgstr ""
 
 #. i18n: file: dialogs/certificationoptionswidget.ui:60
@@ -4245,8 +4303,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:358
 msgid ""
-"<b>Step 2:</b> How thoroughly have you checked that this key actually "
-"belongs to the person it claims it is from?"
+"<b>Step 2:</b> How thoroughly have you checked that this certificate "
+"actually belongs to the person it claims it is from?"
 msgstr ""
 
 #. i18n: file: dialogs/selectchecklevelwidget.ui:26
@@ -4272,8 +4330,8 @@ msgstr ""
 #: rc.cpp:370
 msgid ""
 "Choose this if you know the person, and have asked them whether this was "
-"their key, but you have not verified they are actually in possession of the "
-"secret key."
+"their certificate, but you have not verified they are actually in possession "
+"of the secret certificate."
 msgstr ""
 
 #. i18n: file: dialogs/selectchecklevelwidget.ui:98
@@ -5632,7 +5690,9 @@ msgid "Michel Boyer de la Giroday"
 msgstr "माइकल बोएर दे ला गिरोदे"
 
 #: aboutdata.cpp:68
-msgid "Key-state dependant colors and fonts in the key list"
+#, fuzzy
+#| msgid "Key-state dependant colors and fonts in the key list"
+msgid "Key-state dependant colors and fonts in the certificates list"
 msgstr "कुंजी सूची मं की-स्टेट डिपेंडेंट रंग अउ फोंट."
 
 #: aboutdata.cpp:70
@@ -5969,8 +6029,10 @@ msgid "Export Certificates to Server..."
 msgstr "सर्वर मं प्रमानपत्र निर्यात करव..."
 
 #: mainwindow.cpp:400
-msgid "Export Secret Key..."
-msgstr "गोपनीय कुंजी निर्यात करव..."
+#, fuzzy
+#| msgid "Export Certificates..."
+msgid "Export Secret Certificate..."
+msgstr "प्रमानपत्र निर्यात करव..."
 
 #: mainwindow.cpp:402
 msgid "Lookup Certificates on Server..."
@@ -6110,6 +6172,33 @@ msgstr "प्रमानपत्र प्रबंधक गलती"
 msgid "The GpgSM process ended prematurely because of an unexpected error."
 msgstr "एक अप्रत्यासित गलती के कारन जीपीजी-एसएम काम अचानक खतम होइस."
 
+#~ msgid "Secret Key Deletion"
+#~ msgstr "गोपनीय कुंजी मिटाना"
+
+#~ msgid "key expired"
+#~ msgstr "एक कुंजी के मियाद खतम हो गे हे."
+
+#~ msgid "Key missing"
+#~ msgstr "कुंजी गंवा गे हे"
+
+#, fuzzy
+#~| msgid "Secret Key Export Error"
+#~ msgctxt "@title:window"
+#~ msgid "Secret Key Export Error"
+#~ msgstr "गोपनीय कुंजी निर्यात गलती"
+
+#, fuzzy
+#~| msgid "Secret Key Export Finished"
+#~ msgctxt "@title:window"
+#~ msgid "Secret Key Export Finished"
+#~ msgstr "गोपनीय-कुंजी निर्यात पूरा"
+
+#~ msgid "Export Secret Key"
+#~ msgstr "गोपनीय कुंजी निर्यात करव"
+
+#~ msgid "Export Secret Key..."
+#~ msgstr "गोपनीय कुंजी निर्यात करव..."
+
 #~ msgid "Certificate Download Failed"
 #~ msgstr "प्रमानपत्र ल डाउनलोड करे मं फेल"
 
@@ -6120,11 +6209,6 @@ msgstr "एक अप्रत्यासित गलती के कार�
 #~| msgid "Certificate Download Failed"
 #~ msgid "Certificate Downloads Failed"
 #~ msgstr "प्रमानपत्र ल डाउनलोड करे मं फेल"
-
-#, fuzzy
-#~| msgid "New signatures:"
-#~ msgid "Bad signature by %1."
-#~ msgstr "नवा दसखत:"
 
 #, fuzzy
 #~| msgid "Failed."
@@ -6258,13 +6342,6 @@ msgstr "एक अप्रत्यासित गलती के कार�
 
 #~ msgid "Unable to start %1 process. Please check your installation."
 #~ msgstr "काम %1 चालू कर पाय मं अक्छम. किरपा करके, अपन इंस्टालेसन जांचव."
-
-#~ msgid ""
-#~ "<qt><p>An error occurred while trying to delete the certificates:</"
-#~ "p><p><b>%1</b></p></qt>"
-#~ msgstr ""
-#~ "<qt><p>प्रमानपत्र:</p><p><b>%1</b></p>को मेटाव के कोसिसों के समय एक गलती हो "
-#~ "गिस</qt>"
 
 #~ msgid "Checking key dependencies..."
 #~ msgstr "कुंजी डिपेंडेंसीज के जांच करत हे ..."
@@ -6492,11 +6569,6 @@ msgstr "एक अप्रत्यासित गलती के कार�
 #~ msgid "Exportable signature"
 #~ msgstr "नवा दसखत:"
 
-#, fuzzy
-#~| msgid "Deleting CA Certificates"
-#~ msgid "Sign Certificate..."
-#~ msgstr "सीए प्रमानपत्र मिटात हे"
-
 #~ msgid "Search for external certificates initially"
 #~ msgstr "सुरू मं बाहिरी प्रमानपत्र बर खोजव"
 
@@ -6525,11 +6597,6 @@ msgstr "एक अप्रत्यासित गलती के कार�
 
 #~ msgid "C&RLs"
 #~ msgstr "C&RLs"
-
-#, fuzzy
-#~| msgid "Certificate Listing Failed"
-#~ msgid "Certificate Listing"
-#~ msgstr "प्रमानपत्र सूची बनाए मं फेल"
 
 #, fuzzy
 #~| msgid "Not imported:"
