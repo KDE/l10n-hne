@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-24 06:55+0200\n"
+"POT-Creation-Date: 2009-08-25 07:13+0200\n"
 "PO-Revision-Date: 2009-02-28 13:57+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1411,7 +1411,7 @@ msgstr "पासवर्ड भंडारित नइ करव"
 msgid "Create an Account Later"
 msgstr ""
 
-#: accountwizard.cpp:174 kmfolderdialog.cpp:1164
+#: accountwizard.cpp:174 kmfolderdialog.cpp:1176
 msgid "Location:"
 msgstr "जगहः"
 
@@ -3784,7 +3784,7 @@ msgstr "रंग"
 msgid "Layout"
 msgstr "खाका"
 
-#: configuredialog.cpp:1112 configuredialog.cpp:1146 kmfolderdialog.cpp:882
+#: configuredialog.cpp:1112 configuredialog.cpp:1146 kmfolderdialog.cpp:829
 #: messagelistview/pane.cpp:93
 msgid "Message List"
 msgstr "संदेस सूची"
@@ -4656,7 +4656,7 @@ msgstr "प्रारूप"
 msgid "&Use custom message templates for this identity"
 msgstr "मनमाफिक संदेस टैम्प्लेट उपयोग करव (&U)"
 
-#: identitydialog.cpp:441 kmfolderdialog.cpp:1049
+#: identitydialog.cpp:441 kmfolderdialog.cpp:1061
 msgid "&Copy Global Templates"
 msgstr "वैस्विक टैम्प्लेट्स नकल करव (&C)"
 
@@ -6305,30 +6305,16 @@ msgctxt "@label:textbox Name of the folder."
 msgid "&Name:"
 msgstr "नांव: (&N)"
 
-#: kmfolderdialog.cpp:372 kmfolderdialog.cpp:794 kmcomposewin.cpp:3256
+#: kmfolderdialog.cpp:372 kmfolderdialog.cpp:691 kmcomposewin.cpp:3256
 #: kmfilterdlg.cpp:768 managesievescriptsdialog.cpp:393
 msgid "unnamed"
 msgstr "बेनाम"
 
-#: kmfolderdialog.cpp:399
-msgid "Use custom &icons"
-msgstr "मनमाफिक चिनहा उपयोग करव (&i)"
-
-#: kmfolderdialog.cpp:405
-msgctxt "Icon used for folders with no unread messages."
-msgid "&Normal:"
-msgstr "सामान्य: (&N)"
-
-#: kmfolderdialog.cpp:421
-msgctxt "Icon used for folders which do have unread messages."
-msgid "&Unread:"
-msgstr "बिनपढ़े: (&U)"
-
-#: kmfolderdialog.cpp:459
+#: kmfolderdialog.cpp:398
 msgid "Act on new/unread mail in this folder"
 msgstr "ये फोल्डर मं नवा/बिनपढ़े ईमेल मं का जाय वाले काम"
 
-#: kmfolderdialog.cpp:461
+#: kmfolderdialog.cpp:400
 msgid ""
 "<qt><p>If this option is enabled then you will be notified about new/unread "
 "mail in this folder. Moreover, going to the next/previous folder with unread "
@@ -6339,35 +6325,35 @@ msgid ""
 "spam folder.</p></qt>"
 msgstr ""
 
-#: kmfolderdialog.cpp:478
+#: kmfolderdialog.cpp:417
 msgid "Include this folder in mail checks"
 msgstr "ये फोल्डर ल ईमेल जांच बर सामिल करव"
 
-#: kmfolderdialog.cpp:480
+#: kmfolderdialog.cpp:419
 msgid ""
 "<qt><p>If this option is enabled this folder will be included while checking "
 "new emails.</p><p>Uncheck this option if you want to skip this folder while "
 "checking new emails.</p></qt>"
 msgstr ""
 
-#: kmfolderdialog.cpp:495
+#: kmfolderdialog.cpp:434
 msgid "Keep replies in this folder"
 msgstr "ये फोल्डर मं जवाबों ल रखे रहें"
 
-#: kmfolderdialog.cpp:497
+#: kmfolderdialog.cpp:436
 msgid ""
 "Check this option if you want replies you write to mails in this folder to "
 "be put in this same folder after sending, instead of in the configured sent-"
 "mail folder."
 msgstr ""
 
-#: kmfolderdialog.cpp:508
+#: kmfolderdialog.cpp:447
 #, fuzzy
 #| msgid "The most recently selected folder in the folder selection dialog."
 msgid "Hide this folder in the folder selection dialog"
 msgstr "फोल्डर चयन गोठ मं सबसे वाले चुने गे फोल्डर."
 
-#: kmfolderdialog.cpp:510
+#: kmfolderdialog.cpp:449
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this option if you do not want that this folder is shown in the folder "
@@ -6376,15 +6362,15 @@ msgstr ""
 
 #. i18n: file: ui/imapsettings.ui:315
 #. i18n: ectx: property (text), widget (QCheckBox, useDefaultIdentityCheck)
-#: kmfolderdialog.cpp:527 rc.cpp:315
+#: kmfolderdialog.cpp:466 rc.cpp:315
 msgid "Use &default identity"
 msgstr "डिफाल्ट पहिचान उपयोग करव (&d)"
 
-#: kmfolderdialog.cpp:533
+#: kmfolderdialog.cpp:472
 msgid "&Sender identity:"
 msgstr "प्रेसक पहिचान: (&S)"
 
-#: kmfolderdialog.cpp:539
+#: kmfolderdialog.cpp:478
 msgid ""
 "Select the sender identity to be used when writing new mail or replying to "
 "mail in this folder. This means that if you are in one of your work folders, "
@@ -6393,50 +6379,27 @@ msgid ""
 "main configuration dialog. (Settings -> Configure KMail)"
 msgstr ""
 
-#: kmfolderdialog.cpp:548
-msgid "Show Sender/Receiver Column in List of Messages"
-msgstr "संदेस मन के सूची मं प्रेसक/पावइया खंभा देखाव"
-
-#: kmfolderdialog.cpp:550
-msgid "Sho&w column:"
-msgstr "खंभा देखाव: (&w)"
-
-#: kmfolderdialog.cpp:556
-msgctxt "@item:inlistbox Show default value."
-msgid "Default"
-msgstr "डिफाल्ट"
-
-#: kmfolderdialog.cpp:557
-msgctxt "@item:inlistbox Show sender."
-msgid "Sender"
-msgstr "प्रेसक"
-
-#: kmfolderdialog.cpp:558
-msgctxt "@item:inlistbox Show receiver."
-msgid "Receiver"
-msgstr "पाने वाला"
-
-#: kmfolderdialog.cpp:573
+#: kmfolderdialog.cpp:492
 msgid "&Folder contents:"
 msgstr "फोल्डर सामग्रियाँ: (&F)"
 
-#: kmfolderdialog.cpp:605
+#: kmfolderdialog.cpp:524
 msgid "Generate free/&busy and activate alarms for:"
 msgstr "स्वतंत्र/व्यस्त अउ सक्रिय अलार्म एखर बर जेनरेट करव: (&b)"
 
-#: kmfolderdialog.cpp:611
+#: kmfolderdialog.cpp:530
 msgid "Nobody"
 msgstr "कोनो ल नइ"
 
-#: kmfolderdialog.cpp:612
+#: kmfolderdialog.cpp:531
 msgid "Admins of This Folder"
 msgstr "ये फोल्डर के प्रसासक"
 
-#: kmfolderdialog.cpp:613
+#: kmfolderdialog.cpp:532
 msgid "All Readers of This Folder"
 msgstr "ये फोल्डर के सब्बो पाठक"
 
-#: kmfolderdialog.cpp:615
+#: kmfolderdialog.cpp:534
 msgid ""
 "This setting defines which users sharing this folder should get \"busy\" "
 "periods in their freebusy lists and should see the alarms for the events or "
@@ -6452,27 +6415,27 @@ msgid ""
 "it is not known who will go to those events."
 msgstr ""
 
-#: kmfolderdialog.cpp:633
+#: kmfolderdialog.cpp:552
 msgid ""
 "This setting allows you to disable alarms for folders shared by others. "
 msgstr ""
 
-#: kmfolderdialog.cpp:636
+#: kmfolderdialog.cpp:555
 msgid "Block free/&busy and alarms locally"
 msgstr "स्वतंत्र/व्यस्त अउ लोकल अलार्म रोकव (&b)"
 
-#: kmfolderdialog.cpp:651
+#: kmfolderdialog.cpp:570
 msgid "Share unread state with all users"
 msgstr ""
 
-#: kmfolderdialog.cpp:654
+#: kmfolderdialog.cpp:573
 msgid ""
 "If enabled, the unread state of messages in this folder will be the same for "
 "all users having access to this folder. If disabled (the default), every "
 "user with access to this folder has their own unread state."
 msgstr ""
 
-#: kmfolderdialog.cpp:739
+#: kmfolderdialog.cpp:643
 msgid ""
 "You have configured this folder to contain groupware information and the "
 "general configuration option to hide groupware folders is set. That means "
@@ -6481,132 +6444,169 @@ msgid ""
 "hiding of groupware folders to be able to see it."
 msgstr ""
 
-#: kmfolderdialog.cpp:888
+#: kmfolderdialog.cpp:760
+msgid "Use custom &icons"
+msgstr "मनमाफिक चिनहा उपयोग करव (&i)"
+
+#: kmfolderdialog.cpp:763
+msgctxt "Icon used for folders with no unread messages."
+msgid "&Normal:"
+msgstr "सामान्य: (&N)"
+
+#: kmfolderdialog.cpp:776
+msgctxt "Icon used for folders which do have unread messages."
+msgid "&Unread:"
+msgstr "बिनपढ़े: (&U)"
+
+#: kmfolderdialog.cpp:813
+msgid "Show Sender/Receiver Column in List of Messages"
+msgstr "संदेस मन के सूची मं प्रेसक/पावइया खंभा देखाव"
+
+#: kmfolderdialog.cpp:815
+msgid "Sho&w column:"
+msgstr "खंभा देखाव: (&w)"
+
+#: kmfolderdialog.cpp:819
+msgctxt "@item:inlistbox Show default value."
+msgid "Default"
+msgstr "डिफाल्ट"
+
+#: kmfolderdialog.cpp:820
+msgctxt "@item:inlistbox Show sender."
+msgid "Sender"
+msgstr "प्रेसक"
+
+#: kmfolderdialog.cpp:821
+msgctxt "@item:inlistbox Show receiver."
+msgid "Receiver"
+msgstr "पाने वाला"
+
+#: kmfolderdialog.cpp:835
 #, fuzzy
 #| msgid "Default Aggregation"
 msgid "Use default aggregation"
 msgstr "डिफाल्ट एग्रीगेसन"
 
-#: kmfolderdialog.cpp:895 messagelistview/core/widgetbase.cpp:447
+#: kmfolderdialog.cpp:842 messagelistview/core/widgetbase.cpp:447
 #: messagelistview/core/view.cpp:1524
 msgid "Aggregation"
 msgstr "एग्रीगेसन"
 
-#: kmfolderdialog.cpp:911
+#: kmfolderdialog.cpp:858
 #, fuzzy
 #| msgid "Default Theme"
 msgid "Use default theme"
 msgstr "डिफाल्ट प्रसंग"
 
-#: kmfolderdialog.cpp:918 messagelistview/core/widgetbase.cpp:324
+#: kmfolderdialog.cpp:865 messagelistview/core/widgetbase.cpp:324
 #: messagelistview/core/view.cpp:1530
 msgid "Theme"
 msgstr "प्रसंग"
 
-#: kmfolderdialog.cpp:1034
+#: kmfolderdialog.cpp:1046
 #, fuzzy
 msgid "&Use custom message templates in this folder"
 msgstr "मनमाफिक संदेस टैम्प्लेट उपयोग करव (&U)"
 
-#: kmfolderdialog.cpp:1146
+#: kmfolderdialog.cpp:1158
 #, fuzzy
 msgid "Files"
 msgstr "फाइल"
 
-#: kmfolderdialog.cpp:1154
+#: kmfolderdialog.cpp:1166
 #, fuzzy
 msgctxt "@label:textbox Folder content type (eg. Mail)"
 msgid "Contents:"
 msgstr "सम्पर्क"
 
-#: kmfolderdialog.cpp:1160
+#: kmfolderdialog.cpp:1172
 #, fuzzy
 msgid "Folder type:"
 msgstr "फोल्डर सूची"
 
-#: kmfolderdialog.cpp:1166 kmfolderdialog.cpp:1174
+#: kmfolderdialog.cpp:1178 kmfolderdialog.cpp:1186
 #, fuzzy
 msgctxt "folder size"
 msgid "Not available"
 msgstr "नइ मिलत"
 
-#: kmfolderdialog.cpp:1167 kmfolderdialog.cpp:1175
+#: kmfolderdialog.cpp:1179 kmfolderdialog.cpp:1187
 #, fuzzy
 msgid "Size:"
 msgstr "आकार"
 
-#: kmfolderdialog.cpp:1172
+#: kmfolderdialog.cpp:1184
 msgid "Index:"
 msgstr ""
 
-#: kmfolderdialog.cpp:1179
+#: kmfolderdialog.cpp:1191
 msgid "Recreate Index"
 msgstr ""
 
-#: kmfolderdialog.cpp:1190
+#: kmfolderdialog.cpp:1202
 #, fuzzy
 msgid "Rebuild Local IMAP Cache"
 msgstr "लोकल आईमैप कैस ताजा करव (&R)"
 
-#: kmfolderdialog.cpp:1201
+#: kmfolderdialog.cpp:1213
 #, fuzzy
 msgid "Messages"
 msgstr "संदेस"
 
-#: kmfolderdialog.cpp:1206
+#: kmfolderdialog.cpp:1218
 #, fuzzy
 msgid "Total messages:"
 msgstr "कुल संदेस"
 
-#: kmfolderdialog.cpp:1209
+#: kmfolderdialog.cpp:1221
 #, fuzzy
 msgid "Unread messages:"
 msgstr "बिनपढ़े संदेस"
 
-#: kmfolderdialog.cpp:1218
+#: kmfolderdialog.cpp:1230
 #, fuzzy
 msgctxt "compaction status"
 msgid "Unknown"
 msgstr "अग्यात"
 
-#: kmfolderdialog.cpp:1219
+#: kmfolderdialog.cpp:1231
 #, fuzzy
 msgid "Compaction:"
 msgstr "जगहः"
 
-#: kmfolderdialog.cpp:1221
+#: kmfolderdialog.cpp:1233
 #, fuzzy
 msgid "Compact Now"
 msgstr "फोल्डर काम्पैक्ट करव (&C)"
 
-#: kmfolderdialog.cpp:1241
+#: kmfolderdialog.cpp:1253
 #, fuzzy, kde-format
 msgctxt "File size in bytes"
 msgid "%1 B"
 msgstr "%"
 
-#: kmfolderdialog.cpp:1242
+#: kmfolderdialog.cpp:1254
 #, fuzzy, kde-format
 msgid "%1 (%2)"
 msgstr "मोर %1 (%2)"
 
-#: kmfolderdialog.cpp:1266
+#: kmfolderdialog.cpp:1278
 #, fuzzy
 msgctxt "compaction status"
 msgid "Possible"
 msgstr "दिखत"
 
-#: kmfolderdialog.cpp:1267
+#: kmfolderdialog.cpp:1279
 msgctxt "compaction status"
 msgid "Possible, but unsafe"
 msgstr ""
 
-#: kmfolderdialog.cpp:1269
+#: kmfolderdialog.cpp:1281
 msgctxt "compaction status"
 msgid "Not required"
 msgstr ""
 
-#: kmfolderdialog.cpp:1305
+#: kmfolderdialog.cpp:1317
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -6615,13 +6615,13 @@ msgid ""
 "have a recent backup of the mailbox and messages."
 msgstr ""
 
-#: kmfolderdialog.cpp:1308
+#: kmfolderdialog.cpp:1320
 #, fuzzy
 msgctxt "@title"
 msgid "Really compact folder?"
 msgstr "फोल्डर काम्पैक्ट करव (&C)"
 
-#: kmfolderdialog.cpp:1309
+#: kmfolderdialog.cpp:1321
 #, fuzzy
 msgctxt "@action:button"
 msgid "Compact Folder"
