@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-19 06:10+0200\n"
+"POT-Creation-Date: 2009-09-20 06:26+0200\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -905,12 +905,12 @@ msgid "ICC profile"
 msgstr "आईसीसी प्रोफाइल"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:632
-#: imageplugins/coreplugin/imageplugin_core.cpp:164
+#: imageplugins/coreplugin/imageplugin_core.cpp:166
 msgid "16 bits"
 msgstr "16 बिट्स"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:632
-#: imageplugins/coreplugin/imageplugin_core.cpp:159
+#: imageplugins/coreplugin/imageplugin_core.cpp:161
 msgid "8 bits"
 msgstr "8 बिट्स"
 
@@ -4517,14 +4517,14 @@ msgstr "आईपीटीसी रेकार्ड"
 msgid "XMP viewer"
 msgstr ""
 
-#: libs/widgets/iccprofiles/iccprofilescombobox.cpp:79
+#: libs/widgets/iccprofiles/iccprofilescombobox.cpp:68
 #, fuzzy, kde-format
 #| msgid "%1 (%2)"
 msgctxt "<Profile Description> (<File Name>)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: libs/widgets/iccprofiles/iccprofilescombobox.cpp:148
+#: libs/widgets/iccprofiles/iccprofilescombobox.cpp:243
 msgid ""
 "<ul><li><p><b>Perceptual intent</b> causes the full gamut of the image to be "
 "compressed or expanded to fill the gamut of the destination device, so that "
@@ -5372,6 +5372,7 @@ msgid "Open With"
 msgstr "एखर साथ खोलव"
 
 #: digikam/contextmenuhelper.cpp:244
+#: imageplugins/coreplugin/imageplugin_core.cpp:405
 #, fuzzy
 #| msgid "Shear..."
 msgid "Other..."
@@ -8960,7 +8961,7 @@ msgid "Set here the gamma re-adjustment of the target image."
 msgstr "इहां लक्छ्य फोटू के गामा फिर से समायोजन सेट करव."
 
 #: imageplugins/lenscorrection/imageplugin_lenscorrection.cpp:60
-#: imageplugins/coreplugin/imageplugin_core.cpp:146
+#: imageplugins/coreplugin/imageplugin_core.cpp:148
 msgid "Auto-Correction..."
 msgstr "अपने-अपन-सुधार..."
 
@@ -11332,80 +11333,87 @@ msgstr "फोटोग्राफ रीसाइजिंग सेटिं�
 msgid "Cannot save settings to the Photograph Resizing text file."
 msgstr "फोटोग्राफ रीसाइजिंग पाठ फाइल म सेटिंग सहेज नइ सकिस."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:109
+#: imageplugins/coreplugin/imageplugin_core.cpp:111
 msgid "Blur..."
 msgstr "धुंधला करव..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:114
+#: imageplugins/coreplugin/imageplugin_core.cpp:116
 msgid "Sharpen..."
 msgstr "सुस्पस्ट करव..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:119
+#: imageplugins/coreplugin/imageplugin_core.cpp:121
 msgid "Red Eye..."
 msgstr "रेड आई..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:120
+#: imageplugins/coreplugin/imageplugin_core.cpp:122
 msgid ""
 "This filter can be used to correct red eyes in a photo. Select a region "
 "including the eyes to use this option."
 msgstr ""
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:126
+#: imageplugins/coreplugin/imageplugin_core.cpp:128
 msgid "Brightness/Contrast/Gamma..."
 msgstr "चमकीलापन/कंट्रास्ट/गामा..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:132
+#: imageplugins/coreplugin/imageplugin_core.cpp:134
 msgid "Hue/Saturation/Lightness..."
 msgstr "वर्न/संतृप्ति/प्रकासमान..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:139
+#: imageplugins/coreplugin/imageplugin_core.cpp:141
 msgid "Color Balance..."
 msgstr "रंग संतुलन..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:153
-#: imageplugins/coreplugin/imageplugin_core.cpp:244
+#: imageplugins/coreplugin/imageplugin_core.cpp:155
+#: imageplugins/coreplugin/imageplugin_core.cpp:257
 msgid "Invert"
 msgstr "उलटव"
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:169
-msgid "Color Management..."
-msgstr "रंग प्रबंधन..."
-
 #: imageplugins/coreplugin/imageplugin_core.cpp:177
+#, fuzzy
+#| msgid "Color Space"
+msgid "Color Space Conversion"
+msgstr "रंग जगह"
+
+#: imageplugins/coreplugin/imageplugin_core.cpp:190
 msgid "Black && White..."
 msgstr "काला अउ  सफेद... (&&)"
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:185
+#: imageplugins/coreplugin/imageplugin_core.cpp:198
 msgid "Aspect Ratio Crop..."
 msgstr "आस्पेक्ट रेसो कांट-छांट..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:191
+#: imageplugins/coreplugin/imageplugin_core.cpp:204
 msgid "&Resize..."
 msgstr "नवा-आकार... (&R)"
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:256
+#: imageplugins/coreplugin/imageplugin_core.cpp:269
 msgid "This image is already using a depth of 8 bits / color / pixel."
 msgstr ""
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:263
+#: imageplugins/coreplugin/imageplugin_core.cpp:276
 msgid ""
 "Performing this operation will reduce image color quality. Do you want to "
 "continue?"
 msgstr ""
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:281
+#: imageplugins/coreplugin/imageplugin_core.cpp:294
 msgid "This image is already using a depth of 16 bits / color / pixel."
 msgstr ""
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:321
+#: imageplugins/coreplugin/imageplugin_core.cpp:334
 msgid "Red-Eye Correction Tool"
 msgstr "रेड-आई सुधार औजार"
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:322
+#: imageplugins/coreplugin/imageplugin_core.cpp:335
 msgid ""
 "You need to select a region including the eyes to use the red-eye correction "
 "tool"
 msgstr ""
+
+#: imageplugins/coreplugin/imageplugin_core.cpp:362
+#, fuzzy
+msgid "This image is not color managed."
+msgstr "ये चीज मन के सूची हे जऊन ल मेटाय जाही."
 
 #: imageplugins/coreplugin/rgbtool.cpp:116
 #: imageplugins/coreplugin/rgbtool.cpp:398
@@ -12044,6 +12052,8 @@ msgstr "चुने गे प्रोफाइल उपयोग करव"
 #: imageplugins/coreplugin/iccprooftool.cpp:364
 #: imageplugins/coreplugin/iccprooftool.cpp:424
 #: imageplugins/coreplugin/iccprooftool.cpp:466
+#: imageplugins/coreplugin/profileconversiontool.cpp:136
+#: imageplugins/coreplugin/profileconversiontool.cpp:152
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:249
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:263
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:433
@@ -12639,6 +12649,32 @@ msgstr "काला अउ सफेद सेटिंग फाइल जऊ�
 msgid "Cannot save settings to the Black & White text file."
 msgstr "काला अउ सफेद पाठ फाइल मं सेटिंग सहेजे नइ जा सकिस."
 
+#: imageplugins/coreplugin/profileconversiontool.cpp:113
+#: imageplugins/coreplugin/profileconversiontool.cpp:210
+#: imageplugins/coreplugin/profileconversiontool.cpp:292
+#, fuzzy
+#| msgid "Color Profiles Directory"
+msgid "Color Profile Conversion"
+msgstr "रंग प्रोफाइल डिरेक्ट्री"
+
+#: imageplugins/coreplugin/profileconversiontool.cpp:134
+#, fuzzy
+#| msgid "Color Space"
+msgid "Current Color Space:"
+msgstr "रंग जगह"
+
+#: imageplugins/coreplugin/profileconversiontool.cpp:147
+#, fuzzy
+#| msgid "Convert"
+msgid "Convert to:"
+msgstr "बदलव"
+
+#: imageplugins/coreplugin/profileconversiontool.cpp:150
+#, fuzzy
+#| msgid "Set here the color saturation correction."
+msgid "Select the profile of the color space to convert to."
+msgstr "इहां संतृप्ति मूल्य सेट करव."
+
 #: imageplugins/coreplugin/autocorrectiontool.cpp:100
 msgid "Auto Correction"
 msgstr "अपने-अपन-सुधार"
@@ -13150,17 +13186,19 @@ msgid ""
 "</p>\n"
 msgstr ""
 
-#: utilities/advancedrename/advancedrenamewidget.cpp:194
+#: utilities/advancedrename/advancedrenamewidget.cpp:192
 #, fuzzy
 #| msgid "Modified:"
 msgid "Modifiers"
 msgstr "परिवर्धितः"
 
-#: utilities/advancedrename/advancedrenamewidget.cpp:199
-msgid "You can not apply modifiers to tokens marked with '(x)'."
+#: utilities/advancedrename/advancedrenamewidget.cpp:198
+msgid ""
+"Modifiers can be applied to each token, to change the parse results "
+"individually."
 msgstr ""
 
-#: utilities/advancedrename/advancedrenamewidget.cpp:338
+#: utilities/advancedrename/advancedrenamewidget.cpp:334
 #, fuzzy
 #| msgid "File Renaming Options"
 msgid "Renaming Options"
@@ -13190,7 +13228,7 @@ msgstr ""
 
 #: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:49
 msgid ""
-"directory name of the parent, additional '.' characters move up <br/>in the "
+"directory name of the parent, additional '.' characters move up in the "
 "directory hierarchy"
 msgstr ""
 
@@ -13307,33 +13345,33 @@ msgstr "मनमाफिक"
 msgid "Sequence Number..."
 msgstr "सीक्वेंस नंबर जोड़व"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:128
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:127
 #, fuzzy
 #| msgid "Add Sequence Number"
 msgid "Sequence Number"
 msgstr "सीक्वेंस नंबर जोड़व"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:129
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:128
 #, fuzzy
 msgid "sequence number"
 msgstr "सीक्वेंस नंबर जोड़व"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:131
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:130
 #, fuzzy
 msgid "Sequence Number (start)"
 msgstr "सीक्वेंस नंबर जोड़व"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:132
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:131
 #, fuzzy
 msgid "sequence number (custom start)"
 msgstr "सीक्वेंस नंबर जोड़व"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:134
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:133
 #, fuzzy
 msgid "Sequence Number (start, step)"
 msgstr "सीक्वेंस नंबर जोड़व"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:135
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:134
 msgid "sequence number (custom start + step)"
 msgstr ""
 
@@ -13362,8 +13400,9 @@ msgstr "फोटू फाइल नाम देखाव"
 msgid "Range"
 msgstr "सीमा:"
 
-#: utilities/advancedrename/parsers/modifiers/rangemodifier.cpp:34
-msgid "display only a specific range"
+#: utilities/advancedrename/parsers/modifiers/rangemodifier.cpp:35
+msgid ""
+"display only a specific range (if stop is omitted, move to end of the string)"
 msgstr ""
 
 #: utilities/advancedrename/parsers/modifiers/trimmedmodifier.cpp:34
@@ -13424,28 +13463,18 @@ msgstr ""
 msgid "convert the first letter of each word to uppercase"
 msgstr ""
 
-#: utilities/advancedrename/advancedrenameinput.cpp:83
+#: utilities/advancedrename/advancedrenameinput.cpp:84
 #, fuzzy
 #| msgid "Enter new name (without extension):"
 msgid "Enter renaming string (without extension)"
 msgstr "नवा नाम भरव (बिना एक्सटेंसन):"
 
-#: utilities/advancedrename/advancedrenameinput.cpp:84
+#: utilities/advancedrename/advancedrenameinput.cpp:85
 msgid ""
 "<p>Hold CTRL and move the mouse over the line edit widget to highlight token "
 "words.<br/>To mark a token, press the left mouse button while it is "
 "highlighted.</p>"
 msgstr ""
-
-#: utilities/advancedrename/advancedrenameinput.cpp:330
-#, fuzzy
-msgid "Move selected token to the left"
-msgstr "अभी हाल के चयन ल नवा आभासी एलबम मं सहेजव"
-
-#: utilities/advancedrename/advancedrenameinput.cpp:331
-#, fuzzy
-msgid "Move selected token to the right"
-msgstr "अभी हाल के चयन ल नवा आभासी एलबम मं सहेजव"
 
 #: utilities/gpssearch/gpssearchview.cpp:110
 msgid ""
@@ -18265,6 +18294,17 @@ msgid ""
 "Build date: %1"
 msgstr ""
 
+#~ msgid "Color Management..."
+#~ msgstr "रंग प्रबंधन..."
+
+#, fuzzy
+#~ msgid "Move selected token to the left"
+#~ msgstr "अभी हाल के चयन ल नवा आभासी एलबम मं सहेजव"
+
+#, fuzzy
+#~ msgid "Move selected token to the right"
+#~ msgstr "अभी हाल के चयन ल नवा आभासी एलबम मं सहेजव"
+
 #, fuzzy
 #~ msgctxt "Renaming Options"
 #~ msgid "Options"
@@ -18385,9 +18425,6 @@ msgstr ""
 
 #~ msgid "Soft proof:"
 #~ msgstr "साफ्ट प्रूफ:"
-
-#~ msgid "Convert"
-#~ msgstr "बदलव"
 
 #, fuzzy
 #~| msgid "Apply the default color workspace profile to the image"
