@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-27 06:15+0200\n"
+"POT-Creation-Date: 2009-09-28 06:17+0200\n"
 "PO-Revision-Date: 2009-02-26 22:16+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -242,8 +242,8 @@ msgctxt "A mirror is removed when the file has the wrong download size"
 msgid "%1 removed as it did report a wrong file size."
 msgstr ""
 
-#: core/datasourcefactory.cpp:638 core/kget.cpp:554 core/kget.cpp:908
-#: core/kget.cpp:917 transfer-plugins/metalink/metalink.cpp:193
+#: core/datasourcefactory.cpp:638 core/kget.cpp:554 core/kget.cpp:925
+#: core/kget.cpp:934 transfer-plugins/metalink/metalink.cpp:193
 #: transfer-plugins/bittorrent/bttransfer.cpp:494
 #: transfer-plugins/bittorrent/bttransfer.cpp:505
 #: ui/metalinkcreator/metalinkcreator.cpp:289
@@ -276,6 +276,7 @@ msgstr "विलम्बित"
 
 #: core/transfer.cpp:30 core/transfer.cpp:234 core/transfer.cpp:259
 #: transfer-plugins/mms/mmsTransfer.cpp:52
+#: transfer-plugins/mmsclient/mmsTransfer.cpp:48
 #: transfer-plugins/bittorrent/bttransfer.cpp:321
 #: transfer-plugins/contentfetch/contentfetch.cpp:64
 msgctxt "transfer state: stopped"
@@ -404,26 +405,24 @@ msgid "We are sorry. KGet is unable to download from this protocol"
 msgstr ""
 
 #: core/kget.cpp:816
-#, fuzzy
-#| msgid "Clear History"
-msgid "We are sorry"
-msgstr "इतिहास साफ करव"
+msgid "Protocol unsupported"
+msgstr ""
 
 #. i18n: file: ui/newtransferwidget.ui:25
 #. i18n: ectx: property (text), widget (KTitleWidget, titleWidget)
-#: core/kget.cpp:847 ui/newtransferdialog.cpp:254 rc.cpp:520
+#: core/kget.cpp:868 ui/newtransferdialog.cpp:256 rc.cpp:520
 msgid "New Download"
 msgstr "नवा डाउनलोड"
 
-#: core/kget.cpp:847
+#: core/kget.cpp:868
 msgid "Enter URL:"
 msgstr "यूआरएल भरव:"
 
-#: core/kget.cpp:880
+#: core/kget.cpp:901
 msgid "Save As"
 msgstr ""
 
-#: core/kget.cpp:907
+#: core/kget.cpp:924
 #, kde-format
 msgid ""
 "Malformed URL:\n"
@@ -432,7 +431,7 @@ msgstr ""
 "गलत रूप मं यूआरएल:\n"
 "%1"
 
-#: core/kget.cpp:916
+#: core/kget.cpp:933
 #, kde-format
 msgid ""
 "Malformed URL, protocol missing:\n"
@@ -441,7 +440,7 @@ msgstr ""
 "गलत रूप मं यूआरएल, प्रोटोकाल नइ हे:\n"
 "%1"
 
-#: core/kget.cpp:928
+#: core/kget.cpp:945
 #, kde-format
 msgid ""
 "You have already completed a download from the location: \n"
@@ -451,13 +450,13 @@ msgid ""
 "Download it again?"
 msgstr ""
 
-#: core/kget.cpp:929
+#: core/kget.cpp:946
 #, fuzzy
 #| msgid "Download again"
 msgid "Download it again?"
 msgstr "फिर से डाउनलोड करव"
 
-#: core/kget.cpp:941
+#: core/kget.cpp:958
 #, kde-format
 msgid ""
 "You have a download in progress from the location: \n"
@@ -467,17 +466,17 @@ msgid ""
 "Delete it and download again?"
 msgstr ""
 
-#: core/kget.cpp:942
+#: core/kget.cpp:959
 #, fuzzy
 #| msgid "Download again"
 msgid "Delete it and download again?"
 msgstr "फिर से डाउनलोड करव"
 
-#: core/kget.cpp:965 core/kget.cpp:972
+#: core/kget.cpp:982 core/kget.cpp:989
 msgid "Directory is not writable"
 msgstr ""
 
-#: core/kget.cpp:982
+#: core/kget.cpp:999
 #, kde-format
 msgid ""
 "Destination file \n"
@@ -490,19 +489,19 @@ msgstr ""
 " पहिली से ही मौजूद हे. \n"
 "का आप मन एखर ऊपर लिखना चाहथो ?"
 
-#: core/kget.cpp:983
+#: core/kget.cpp:1000
 #, fuzzy
 #| msgid "Overwrite existing file?"
 msgid "Overwrite destination"
 msgstr "अभी हाल के फाइल मेटाय के लिखव?"
 
-#: core/kget.cpp:1114
+#: core/kget.cpp:1131
 #, kde-format
 msgid ""
 "<html><p>Plugin loader could not load the plugin:<br/><i>%1</i></p></html>"
 msgstr "<html><p>प्लगइन लोडर ह प्लगइन ल लोड नइ कर सकिस:<br/><i>%1</i></p></html>"
 
-#: core/kget.cpp:1132
+#: core/kget.cpp:1149
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -513,7 +512,7 @@ msgstr ""
 "%1\n"
 "काबर कि ए एक डिरेक्टरी हे."
 
-#: core/kget.cpp:1142
+#: core/kget.cpp:1159
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -526,15 +525,15 @@ msgstr ""
 
 #. i18n: file: conf/dlgadvanced.ui:40
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_AfterFinishAction)
-#: core/kget.cpp:1333 core/kget.cpp:1343 ui/droptarget.cpp:94 rc.cpp:65
+#: core/kget.cpp:1350 core/kget.cpp:1360 ui/droptarget.cpp:94 rc.cpp:65
 msgid "Quit KGet"
 msgstr "के-गेट से बाहिर हों"
 
-#: core/kget.cpp:1334
+#: core/kget.cpp:1351
 msgid "KGet is now closing, as all downloads have completed."
 msgstr ""
 
-#: core/kget.cpp:1344
+#: core/kget.cpp:1361
 msgid "The computer will now turn off, as all downloads have completed."
 msgstr ""
 
@@ -556,6 +555,7 @@ msgid "Verification failed."
 msgstr ""
 
 #: transfer-plugins/mms/mmsTransfer.cpp:36
+#: transfer-plugins/mmsclient/mmsTransfer.cpp:38
 #, fuzzy
 msgctxt "transfer state: running"
 msgid "Running...."
@@ -1631,22 +1631,22 @@ msgstr "के-गेट"
 msgid "Download Manager"
 msgstr "डाउनलोड  प्रबंधक"
 
-#: ui/groupsettingsdialog.cpp:24
+#: ui/groupsettingsdialog.cpp:25
 #, fuzzy, kde-format
 msgid "Group Settings for %1"
 msgstr "%1 बर समूह सेटिंग"
 
-#: ui/groupsettingsdialog.cpp:66
+#: ui/groupsettingsdialog.cpp:69
 #, fuzzy
 #| msgid "Manage the groups"
 msgid "Tag Settings for the groups"
 msgstr "समूह मन के प्रबंधन करव"
 
-#: ui/groupsettingsdialog.cpp:79 ui/nepomukwidget.cpp:60
+#: ui/groupsettingsdialog.cpp:82 ui/nepomukwidget.cpp:60
 msgid "Remove Tag"
 msgstr "टैग हटाव"
 
-#: ui/groupsettingsdialog.cpp:81 ui/nepomukwidget.cpp:66
+#: ui/groupsettingsdialog.cpp:84 ui/nepomukwidget.cpp:66
 #, fuzzy
 #| msgid "Add Tracker"
 msgid "Add Tag"
@@ -4393,6 +4393,11 @@ msgstr ""
 #: rc.cpp:955
 msgid "List of whether the script is enabled"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Clear History"
+#~ msgid "We are sorry"
+#~ msgstr "इतिहास साफ करव"
 
 #~ msgid "Rename transfer"
 #~ msgstr "ट्रांसफर के नाम बदलव"
