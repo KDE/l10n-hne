@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-22 06:14+0200\n"
+"POT-Creation-Date: 2009-09-30 06:57+0200\n"
 "PO-Revision-Date: 2009-03-02 23:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -2327,7 +2327,7 @@ msgid ""
 msgstr ""
 "डाटाबेस आयात विजार्ड आप मन ल अभी हाल के डाटाबेस ल केएक्जाई डाटाबेस मं आयात करन देथे ."
 
-#: migration/importwizard.cpp:181 migration/importtablewizard.cpp:119
+#: migration/importwizard.cpp:181 migration/importtablewizard.cpp:121
 msgid ""
 "Click \"Next\" button to continue or \"Cancel\" button to exit this wizard."
 msgstr ""
@@ -2338,7 +2338,7 @@ msgstr ""
 msgid "Welcome to the Database Importing Wizard"
 msgstr "डाटाबेस आयात विजार्ड मं आप मन के स्वागत हे"
 
-#: migration/importwizard.cpp:213 migration/importtablewizard.cpp:152
+#: migration/importwizard.cpp:213 migration/importtablewizard.cpp:154
 msgid "Select Location for Source Database"
 msgstr "स्रोत डाटाबेस बर जगह चुनव"
 
@@ -2386,11 +2386,11 @@ msgstr "सिरिफ ढांचा"
 msgid "Select Type of Import"
 msgstr "आयात के किसिम चुनव"
 
-#: migration/importwizard.cpp:372 migration/importtablewizard.cpp:198
+#: migration/importwizard.cpp:372 migration/importtablewizard.cpp:201
 msgid "Advanced Options"
 msgstr "विस्तृत विकल्प"
 
-#: migration/importwizard.cpp:382 migration/importtablewizard.cpp:207
+#: migration/importwizard.cpp:382 migration/importtablewizard.cpp:210
 msgid "Importing"
 msgstr "आयात करत हे"
 
@@ -2399,7 +2399,7 @@ msgid "Open imported project"
 msgstr "आयातित परियोजना खोलव"
 
 #: migration/importwizard.cpp:406 migration/importwizard.cpp:822
-#: migration/importtablewizard.cpp:224
+#: migration/importtablewizard.cpp:243
 msgid "Success"
 msgstr "सफलता"
 
@@ -2431,7 +2431,7 @@ msgid ""
 "Depending on size of the database this may take some time."
 msgstr ""
 
-#: migration/importwizard.cpp:701 migration/importtablewizard.cpp:340
+#: migration/importwizard.cpp:701 migration/importtablewizard.cpp:375
 msgid "No appropriate migration driver found."
 msgstr "कोई उपयुक्त माइग्रेसन ड्राइवर नइ मिलिस."
 
@@ -2528,7 +2528,19 @@ msgstr "पाठ एनकोडिंग:"
 msgid "Always use this encoding in similar situations"
 msgstr "समान हालत मं हमेसा यही एनकोडिंग परयोग करव"
 
-#: migration/importtablewizard.cpp:116
+#: migration/AlterSchemaWidget.cpp:37
+#, fuzzy
+#| msgid "Column %1"
+msgid "Column Type"
+msgstr "खंभा %1"
+
+#: migration/AlterSchemaWidget.cpp:38
+#: plugins/tables/kexitabledesignerview.cpp:193
+#: plugins/tables/kexitabledesignerview.cpp:430
+msgid "Primary Key"
+msgstr "प्राथमिक कुंजी"
+
+#: migration/importtablewizard.cpp:118
 #, fuzzy
 #| msgid ""
 #| "Database Importing wizard allows you to import an existing database into "
@@ -2539,26 +2551,31 @@ msgid ""
 msgstr ""
 "डाटाबेस आयात विजार्ड आप मन ल अभी हाल के डाटाबेस ल केएक्जाई डाटाबेस मं आयात करन देथे ."
 
-#: migration/importtablewizard.cpp:122
+#: migration/importtablewizard.cpp:124
 #, fuzzy
 #| msgid "Welcome to the Database Importing Wizard"
 msgid "Welcome to the Table Importing Wizard"
 msgstr "डाटाबेस आयात विजार्ड मं आप मन के स्वागत हे"
 
-#: migration/importtablewizard.cpp:166
+#: migration/importtablewizard.cpp:168
 #, fuzzy
 #| msgid "Select Type of Import"
-msgid "Select the Tables to Import"
+msgid "Select the Table to Import"
 msgstr "आयात के किसिम चुनव"
 
-#: migration/importtablewizard.cpp:286
+#: migration/importtablewizard.cpp:226
+msgid "Alter the Detected Design"
+msgstr ""
+
+#: migration/importtablewizard.cpp:323
 msgid ""
 "All required information has now been gathered. Click \"Next\" button to "
 "start importing.\n"
 "\n"
 "Depending on size of the tables this may take some time.\n"
 "\n"
-"You have chosen to import the following tables:\n"
+"You have chosen to import the following table:\n"
+"\n"
 msgstr ""
 
 #: migration/keximigrate.cpp:77 migration/keximigrate.cpp:127
@@ -8398,11 +8415,6 @@ msgstr "टिप्पनियाँ"
 #: plugins/tables/kexitabledesignerview.cpp:164
 msgid "Describes additional comments for the field"
 msgstr "छेत्र बर अतिरिक्त टिप्पनी वर्नित करथे "
-
-#: plugins/tables/kexitabledesignerview.cpp:193
-#: plugins/tables/kexitabledesignerview.cpp:430
-msgid "Primary Key"
-msgstr "प्राथमिक कुंजी"
 
 #: plugins/tables/kexitabledesignerview.cpp:196
 msgid "Sets or removes primary key"
