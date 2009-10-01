@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkblog\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-18 06:17+0200\n"
+"POT-Creation-Date: 2009-10-01 05:54+0200\n"
 "PO-Revision-Date: 2009-02-28 22:06+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -36,7 +36,7 @@ msgstr "सर्वर से प्राप्त परिनाम से �
 msgid "Could not read post."
 msgstr "पोस्ट ल पढ़ नइ सकिस."
 
-#: blogger1.cpp:355 blogger1.cpp:358
+#: blogger1.cpp:355 blogger1.cpp:358 movabletype.cpp:280 movabletype.cpp:283
 msgid "Could not fetch post out of the result from the server."
 msgstr "सर्वर से प्राप्त परिनाम से पोस्ट लाय नइ जा सकिस."
 
@@ -44,7 +44,7 @@ msgstr "सर्वर से प्राप्त परिनाम से �
 msgid "Could not read the postId, not a string or an integer."
 msgstr "पोस्टआईडी पढ़ नइ सकिस, ए वाक्यांस या पूर्नांक नइ हे."
 
-#: blogger1.cpp:409 blogger1.cpp:433 movabletype.cpp:280
+#: blogger1.cpp:409 blogger1.cpp:433 movabletype.cpp:315
 msgid "Could not read the result, not a boolean."
 msgstr "परिनाम पढ़ नइ सकिस, ए बूलिए नइ हे."
 
@@ -113,13 +113,19 @@ msgstr "सर्वर से प्राप्त परिनाम मं �
 msgid "Could not read the result, not a map."
 msgstr "परिनाम पढ़ नइ सकिस, मैप नइ हे."
 
-#: movabletype.cpp:347
+#: movabletype.cpp:380
+#, fuzzy
+#| msgid "Could not read the result, not a boolean."
+msgid "Could not read the result, not a list. Category fetching failed!"
+msgstr "परिनाम पढ़ नइ सकिस, ए बूलिए नइ हे."
+
+#: movabletype.cpp:413
 msgid ""
 "Could not read the result, not a boolean. Category setting failed! We will "
 "still publish now if necessary."
 msgstr ""
 
-#: movabletype.cpp:465
+#: movabletype.cpp:535
 msgid ""
 "Could not fetch list of trackback pings out of the result from the server."
 msgstr ""
