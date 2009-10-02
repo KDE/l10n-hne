@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailody\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-01 06:00+0200\n"
+"POT-Creation-Date: 2009-10-02 06:14+0200\n"
 "PO-Revision-Date: 2009-02-21 10:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -100,6 +100,12 @@ msgstr "डाक डिब्बा (&M)"
 msgid "&Message"
 msgstr "संदेस (&M)"
 
+#. i18n: file: mailviewer/mailodymailviewerui.rc:4
+#. i18n: ectx: Menu (move)
+#: rc.cpp:59
+msgid "&Move"
+msgstr ""
+
 #: src/aboutdata.cpp:30
 msgid "Mailody"
 msgstr "मेलोडी"
@@ -153,7 +159,7 @@ msgid "Idea to call this application Mailody"
 msgstr "ये अनुपरयोग ल मेलोडी नाम सुझाया"
 
 #: src/attachmentwidget.cpp:126 src/messagebodywidget.cpp:212
-#: src/messageheaderwidget.cpp:413
+#: src/messageheaderwidget.cpp:394
 msgid "Open"
 msgstr "खोलव"
 
@@ -307,7 +313,7 @@ msgctxt "No valid mail transport selected"
 msgid "None"
 msgstr "कुछ नइ"
 
-#: src/contacttreemodel.cpp:52
+#: src/contacttreemodel.cpp:53
 #, fuzzy, kde-format
 #| msgctxt "Status message: first is the account, second the message shown"
 #| msgid "[%1] %2"
@@ -589,7 +595,7 @@ msgstr "ईमेल कम्पोज करव"
 msgid "Follow original link"
 msgstr ""
 
-#: src/messagebodywidget.cpp:210 src/messageheaderwidget.cpp:354
+#: src/messagebodywidget.cpp:210 src/messageheaderwidget.cpp:345
 msgid "New Message to..."
 msgstr "को नवा संदेस..."
 
@@ -597,53 +603,59 @@ msgstr "को नवा संदेस..."
 msgid "Open in New Tab"
 msgstr "नवा टैब मं खोलव"
 
-#: src/messagebodywidget.cpp:228 src/messageheaderwidget.cpp:363
+#: src/messagebodywidget.cpp:228 src/messageheaderwidget.cpp:354
 #, fuzzy
 #| msgid "Add to KAddressBook"
 msgid "Add to addressbook"
 msgstr "केएड्रेसबुक मं जोड़व"
 
-#: src/messageheaderwidget.cpp:224
+#: src/messageheaderwidget.cpp:223
 msgid "From"
 msgstr "से"
 
-#: src/messageheaderwidget.cpp:244 src/recipientwidget.cpp:98
+#: src/messageheaderwidget.cpp:243 src/recipientwidget.cpp:98
 msgid "To"
 msgstr "को"
 
-#: src/messageheaderwidget.cpp:263 src/recipientwidget.cpp:98
+#: src/messageheaderwidget.cpp:262 src/recipientwidget.cpp:98
 msgid "Cc"
 msgstr "ए मन ल भी"
 
-#: src/messageheaderwidget.cpp:283
+#: src/messageheaderwidget.cpp:282
 msgid "Resent"
 msgstr "फिर से भेजे गिस"
 
-#: src/messageheaderwidget.cpp:286
+#: src/messageheaderwidget.cpp:285
 #, kde-format
 msgctxt "resent by from-address(1) to to-address(2)"
 msgid "by %1 to %2"
 msgstr "%1 से %2 को"
 
-#: src/messageheaderwidget.cpp:303
+#: src/messageheaderwidget.cpp:302
 msgid "Attachments"
 msgstr "संलग्नक"
 
-#: src/messageheaderwidget.cpp:357
+#: src/messageheaderwidget.cpp:348
 msgid "Copy"
 msgstr "नकल"
 
-#: src/messageheaderwidget.cpp:414
+#: src/messageheaderwidget.cpp:395
 msgid "Open with..."
 msgstr "एखर साथ खोलव..."
 
-#: src/messageheaderwidget.cpp:415
+#: src/messageheaderwidget.cpp:396
 msgid "Save..."
 msgstr "सहेजव..."
 
-#: src/messageheaderwidget.cpp:416
+#: src/messageheaderwidget.cpp:397
 msgid "Save All..."
 msgstr "सब्बो सहेजव..."
+
+#: src/messageheaderwidget.cpp:421
+#, fuzzy
+#| msgid "Save..."
+msgid "Save As"
+msgstr "सहेजव..."
 
 #: src/messageroutewidget.cpp:43
 msgid "Message route"
@@ -935,6 +947,28 @@ msgstr ""
 msgid "&Outgoing"
 msgstr ""
 
+#: mailviewer/main.cpp:9
+msgid "A simple Mail Viewer"
+msgstr ""
+
+#: mailviewer/main.cpp:15
+msgid "MailodyMailViewer"
+msgstr ""
+
+#: mailviewer/main.cpp:16
+#, fuzzy
+#| msgid "(c) 2006-2008 Omat Holding B.V. & Frode M. Døving"
+msgid "(C) 2007 Omat Holding B.V."
+msgstr "(c) 2006-2008 ओमात होल्डिंग बी.वी. अउ फ्रोद एम डोविंग"
+
+#: mailviewer/main.cpp:17
+msgid "Omat Holding B.V."
+msgstr ""
+
+#: mailviewer/main.cpp:21
+msgid "Document to open"
+msgstr ""
+
 #~ msgid "Add to KAddressBook..."
 #~ msgstr "केएड्रेसबुक मं जोड़व..."
 
@@ -949,12 +983,6 @@ msgstr ""
 
 #~ msgid "Do you really want to delete %1 from your KAddressBook?"
 #~ msgstr "का आप मन सही मं %1 ल अपन केएड्रेसबुक से मिटाना चाहथो ?"
-
-#, fuzzy
-#~| msgid "Save..."
-#~ msgctxt "@action:button"
-#~ msgid "Save"
-#~ msgstr "सहेजव..."
 
 #, fuzzy
 #~| msgid "Save as..."
