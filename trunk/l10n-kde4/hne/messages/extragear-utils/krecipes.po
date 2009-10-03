@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecipes\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-02 06:14+0200\n"
+"POT-Creation-Date: 2009-10-03 06:25+0200\n"
 "PO-Revision-Date: 2009-02-21 12:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -408,7 +408,7 @@ msgstr "डाटाबेस फाइल:"
 msgid "Open file dialog"
 msgstr "फाइल खोले के गोठ"
 
-#: setupassistant.cpp:636 pref.cpp:398
+#: setupassistant.cpp:636 pref.cpp:423
 msgid "Select SQLite database file"
 msgstr ""
 
@@ -1142,7 +1142,7 @@ msgstr "इकाई बदलाव"
 msgid "New Unit Conversion"
 msgstr "नवा इकाई बदलाव"
 
-#: dialogs/unitsdialog.cpp:70 dialogs/recipeinputdialog.cpp:348 pref.cpp:483
+#: dialogs/unitsdialog.cpp:70 dialogs/recipeinputdialog.cpp:348 pref.cpp:512
 #: widgets/propertylistview.cpp:120 krecipesview.cpp:346 krecipesview.cpp:441
 msgid "Units"
 msgstr "इकाई"
@@ -2186,7 +2186,7 @@ msgstr ""
 msgid "Export Recipes"
 msgstr "रेसिपीज निर्यात करव"
 
-#: actionshandlers/recipeactionshandler.cpp:255 pref.cpp:559
+#: actionshandlers/recipeactionshandler.cpp:255 pref.cpp:588
 msgid "Export"
 msgstr "निर्यात"
 
@@ -2198,7 +2198,7 @@ msgstr "संपीडित के-रेसिपि फार्मेट"
 msgid "Web page"
 msgstr "वेब पेज"
 
-#: actionshandlers/recipeactionshandler.cpp:350 pref.cpp:564
+#: actionshandlers/recipeactionshandler.cpp:350 pref.cpp:593
 msgid "Plain Text"
 msgstr "सादा पाठ"
 
@@ -2576,13 +2576,21 @@ msgstr ""
 msgid "Unsaved Changes"
 msgstr "सहेजिस नइ गिस बदलाव"
 
-#: convert_sqlite3.cpp:68
+#: convert_sqlite3.cpp:83 convert_sqlite3.cpp:91
+#, kde-format
+msgid ""
+"Unable to find or run the program '%1'.  Either it is not installed on your "
+"system or it is not in $PATH. Do you want to configure other path for this "
+"command?"
+msgstr ""
+
+#: convert_sqlite3.cpp:100
 #, kde-format
 msgid ""
 "Conversion process failed. Probably the file %1 is not an SQLite 2 database."
 msgstr ""
 
-#: convert_sqlite3.cpp:91
+#: convert_sqlite3.cpp:141
 #, kde-format
 msgid "Conversion successful! SQLite 2 database backed up to %1"
 msgstr ""
@@ -2703,48 +2711,68 @@ msgstr ""
 msgid "Select SQLite command"
 msgstr ""
 
-#: pref.cpp:434
+#: pref.cpp:397
+msgid "SQLite converter"
+msgstr ""
+
+#: pref.cpp:400
+msgid "Path to SQLite old version command:"
+msgstr ""
+
+#: pref.cpp:403
+msgid "Select old SQLite version command"
+msgstr ""
+
+#: pref.cpp:406
+msgid "Path to SQLite new version command:"
+msgstr ""
+
+#: pref.cpp:409
+msgid "Select new SQLite version command"
+msgstr ""
+
+#: pref.cpp:463
 msgid "Re-run wizard on next startup"
 msgstr "अगला बार चालू होए मं विजार्ड फिर से चलाव"
 
-#: pref.cpp:440
+#: pref.cpp:469
 msgid ""
 "Note: Krecipes must be restarted for most server preferences to take effect."
 msgstr ""
 
-#: pref.cpp:484
+#: pref.cpp:513
 msgid "Use abbreviations"
 msgstr "संक्छिप्त उपयोग करव"
 
-#: pref.cpp:520
+#: pref.cpp:549
 msgid "Number Format"
 msgstr "संख्या फारमेट:"
 
-#: pref.cpp:521
+#: pref.cpp:550
 msgid "Fraction"
 msgstr "भिन्न"
 
-#: pref.cpp:522
+#: pref.cpp:551
 msgid "Decimal"
 msgstr "दसमलव"
 
-#: pref.cpp:542
+#: pref.cpp:571
 msgid "Import"
 msgstr "आयात"
 
-#: pref.cpp:544
+#: pref.cpp:573
 msgid "Overwrite recipes with same title"
 msgstr "इसी सीर्सक के साथ रेसिपि ल मेटाय के लिखव"
 
-#: pref.cpp:549
+#: pref.cpp:578
 msgid "Ask which recipes to import"
 msgstr "जऊन रेसिपि ल आयात करना हे उनबर पूछव"
 
-#: pref.cpp:561
+#: pref.cpp:590
 msgid "'Copy to Clipboard' format:"
 msgstr "'क्लिपबोर्ड मं नकल करव' फारमेट:"
 
-#: pref.cpp:588
+#: pref.cpp:617
 msgid ""
 "When this is enabled, the importer will show every recipe in the file(s) and "
 "allow you to select which recipes you want imported.\n"
@@ -2752,11 +2780,11 @@ msgid ""
 "for faster and less memory-intensive imports."
 msgstr ""
 
-#: pref.cpp:623
+#: pref.cpp:652
 msgid "Search as you type"
 msgstr "जइसन जइसन टाइप करते जाव- ढूंढते जाव"
 
-#: pref.cpp:626
+#: pref.cpp:655
 msgid ""
 "In most instances these options do not need to be changed.  However, "
 "limiting the amount of items displayed at once will <b>allow Krecipes to "
@@ -2764,15 +2792,15 @@ msgid ""
 "b>."
 msgstr ""
 
-#: pref.cpp:632
+#: pref.cpp:661
 msgid "Number of categories to display at once:"
 msgstr "स्रेनियों के संख्या जऊन ल एक साथ देखाना हे:"
 
-#: pref.cpp:635 pref.cpp:645
+#: pref.cpp:664 pref.cpp:674
 msgid "Unlimited"
 msgstr "असीमित"
 
-#: pref.cpp:642
+#: pref.cpp:671
 msgid "Number of elements to display at once:"
 msgstr "तत्वों के संख्या जऊन ल एक साथ देखाना हे:"
 
