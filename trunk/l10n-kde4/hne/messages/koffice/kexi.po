@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-30 06:57+0200\n"
+"POT-Creation-Date: 2009-10-06 06:05+0200\n"
 "PO-Revision-Date: 2009-03-02 23:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -217,18 +217,27 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raviratlami@aol.in"
 
-#: core/kexipartmanager.cpp:67
+#: core/kexipartmanager.cpp:66
 #, fuzzy, kde-format
 msgid ""
 "No \"%1\" service type installed. Check your Kexi installation. Aborting."
 msgstr "कोई सेवा किसिम \"%1\" इनस्टाल नइ हे! अपन केएक्जाई इंस्टालेसन जांचव. छोड़ा."
 
-#: core/kexipartmanager.cpp:144
+#: core/kexipartmanager.cpp:145 core/kexiinternalpart.cpp:53
+#, fuzzy, kde-format
+#| msgid ""
+#| "Incompatible migration driver's \"%1\" version: found version %2, "
+#| "expected version %3."
+msgid ""
+"Incompatible plugin \"%1\" version: found version %2, expected version %3."
+msgstr "माइग्रेसन ड्राइवर \"%1\" के अनुपयुक्त संस्करन: संस्करन %2 मिलिस, चाही संस्करन %3."
+
+#: core/kexipartmanager.cpp:158
 #, kde-format
 msgid "Error while loading plugin \"%1\""
 msgstr "प्लगइन \"%1\" लोड करे के समय गलती"
 
-#: core/kexipartmanager.cpp:177 core/kexipartmanager.cpp:187
+#: core/kexipartmanager.cpp:191 core/kexipartmanager.cpp:201
 #, kde-format
 msgid "No plugin for class \"%1\""
 msgstr "क्लास \"%1\" बर कोनो प्लगइन नइ"
@@ -362,7 +371,7 @@ msgstr "चीज  \"%1\" खोलना फेल."
 msgid "This project is opened as read only."
 msgstr "ये परियोजना सिरिफ पढ़े जइसन खुले हे."
 
-#: core/kexiproject.cpp:872 main/KexiMainWindow.cpp:4312
+#: core/kexiproject.cpp:872 main/KexiMainWindow.cpp:4311
 msgid "Could not set empty name for this object."
 msgstr "ये चीज बर खाली नाम सेट नइ कर सकिस."
 
@@ -404,7 +413,7 @@ msgid ""
 "opened as read only."
 msgstr ""
 
-#: core/kexiinternalpart.cpp:51
+#: core/kexiinternalpart.cpp:68
 #, kde-format
 msgid "Could not load \"%1\" plugin."
 msgstr "प्लगइन \"%1\" ल लोड नइ कर सकिस."
@@ -414,7 +423,7 @@ msgid ""
 "Design has been changed. You must save it before switching to other view."
 msgstr "डिजाइन बदल गे हे. अउ दृस्य मं स्विच करे से पहिली आप मन ल एला सहेज ले चाही."
 
-#: core/KexiWindow.cpp:673 main/KexiMainWindow.cpp:3411
+#: core/KexiWindow.cpp:673 main/KexiMainWindow.cpp:3410
 #, kde-format
 msgid "Switching to other view failed (%1)."
 msgstr "अऊ दूसर दृस्य मं स्विच करना फेल (%1)."
@@ -1296,665 +1305,665 @@ msgid ""
 "delete it and create a new one?"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:189
+#: main/KexiMainWindow.cpp:188
 msgid "Close the current tab"
 msgstr "अभी हाल के टैब बंद करव"
 
 #. i18n: file: data/kexiui.rc:88
 #. i18n: ectx: Menu (insert)
-#: main/KexiMainWindow.cpp:402 rc.cpp:29
+#: main/KexiMainWindow.cpp:401 rc.cpp:29
 msgid "&Insert"
 msgstr "प्रविस्ट (&I)"
 
 #. i18n: file: data/kexiui.rc:21
 #. i18n: ectx: Menu (project_import)
-#: main/KexiMainWindow.cpp:408 rc.cpp:11
+#: main/KexiMainWindow.cpp:407 rc.cpp:11
 msgid "&Import"
 msgstr "आयात (&I)"
 
 #. i18n: file: data/kexiui.rc:57
 #. i18n: ectx: Menu (edit_paste_special)
-#: main/KexiMainWindow.cpp:409 rc.cpp:23
+#: main/KexiMainWindow.cpp:408 rc.cpp:23
 msgid "Paste &Special"
 msgstr "विसेस चिपकाव (&S)"
 
-#: main/KexiMainWindow.cpp:439
+#: main/KexiMainWindow.cpp:438
 msgctxt "Close the current tab page in Kexi tab interface"
 msgid "Close the current tab"
 msgstr "अभी हाल के टैब बंद करव"
 
 #. i18n: file: data/kexiui.rc:125
 #. i18n: ectx: Menu (window)
-#: main/KexiMainWindow.cpp:481 rc.cpp:47
+#: main/KexiMainWindow.cpp:480 rc.cpp:47
 msgid "&Window"
 msgstr "विंडो (&W)"
 
-#: main/KexiMainWindow.cpp:551
+#: main/KexiMainWindow.cpp:550
 #, kde-format
 msgid ""
 "User interface mode will be switched to IDEAl at next %1 application startup."
 msgstr "कमइया इंटरफेस मोड अगला बार %1 अनुपरयोग के चालू होए मं आईडीईएआई मं स्विच होही."
 
-#: main/KexiMainWindow.cpp:576
+#: main/KexiMainWindow.cpp:575
 #, kde-format
 msgid ""
 "User interface mode will be switched to Childframe at next %1 application "
 "startup."
 msgstr "कमइया इंटरफेस मोड अगला बार %1 अनुपरयोग के चालू होए मं लइकाफ्रेम मं स्विच होही."
 
-#: main/KexiMainWindow.cpp:628
+#: main/KexiMainWindow.cpp:627
 msgid "&New..."
 msgstr "नवा... (&N)"
 
-#: main/KexiMainWindow.cpp:630
+#: main/KexiMainWindow.cpp:629
 msgid "Create a new project"
 msgstr "नवा प्रोजेक्ट बनाइसं"
 
-#: main/KexiMainWindow.cpp:632
+#: main/KexiMainWindow.cpp:631
 msgid "Creates a new project. Currently opened project is not affected."
 msgstr "नवा परियोजना बनाथे . अभी हाल के मं खुले परियोजना प्रभावित नइ होती."
 
-#: main/KexiMainWindow.cpp:637
+#: main/KexiMainWindow.cpp:636
 msgid "Open an existing project"
 msgstr "अभी हाल के परियोजना खोलथे "
 
-#: main/KexiMainWindow.cpp:639
+#: main/KexiMainWindow.cpp:638
 msgid "Opens an existing project. Currently opened project is not affected."
 msgstr "अभी हाल के परियोजना खोलथे . अभी हाल के मं खुले परियोजना प्रभावित नइ होती."
 
-#: main/KexiMainWindow.cpp:643
+#: main/KexiMainWindow.cpp:642
 msgid "&Download Example Databases..."
 msgstr "उदाहरन डाटाबेसेस डाउनलोड करव... (&D)"
 
-#: main/KexiMainWindow.cpp:644
+#: main/KexiMainWindow.cpp:643
 msgid "Download example databases from the Internet"
 msgstr "इंटरनेट से उदाहरन डाटाबेस डाउनलोड करव"
 
-#: main/KexiMainWindow.cpp:645
+#: main/KexiMainWindow.cpp:644
 msgid "Downloads example databases from the Internet."
 msgstr "इंटरनेट से उदाहरन डाटाबेस डाउनलोड करव."
 
 #. i18n: file: data/kexiui.rc:11
 #. i18n: ectx: Menu (file)
-#: main/KexiMainWindow.cpp:654 main/KexiMainWindow.cpp:3211 rc.cpp:8
+#: main/KexiMainWindow.cpp:653 main/KexiMainWindow.cpp:3210 rc.cpp:8
 msgid "Open Recent"
 msgstr "अभी हाल के वाले ल खोलव "
 
-#: main/KexiMainWindow.cpp:674
+#: main/KexiMainWindow.cpp:673
 msgid "Save object changes"
 msgstr "चीज मं करे बदलाव मन ल सहेजव"
 
-#: main/KexiMainWindow.cpp:675
+#: main/KexiMainWindow.cpp:674
 msgid "Saves object changes from currently selected window."
 msgstr "अभी हाल के मं चुने गे विंडो मं से चीज बदलाव मन ल सहेजथे ."
 
-#: main/KexiMainWindow.cpp:680
+#: main/KexiMainWindow.cpp:679
 msgid "Save &As..."
 msgstr "अइसन सहेजव (&A)"
 
-#: main/KexiMainWindow.cpp:681 main/KexiMainWindow.cpp:3227
+#: main/KexiMainWindow.cpp:680 main/KexiMainWindow.cpp:3226
 msgid "Save object as"
 msgstr "चीज अइसन सहेजव"
 
-#: main/KexiMainWindow.cpp:683
+#: main/KexiMainWindow.cpp:682
 msgid ""
 "Saves object changes from currently selected window under a new name (within "
 "the same project)."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:689
+#: main/KexiMainWindow.cpp:688
 msgid "Project Properties"
 msgstr "परियोजना गुन"
 
-#: main/KexiMainWindow.cpp:698
+#: main/KexiMainWindow.cpp:697
 msgid "&Close Project"
 msgstr "परियोजना बन्द करव (&C)"
 
-#: main/KexiMainWindow.cpp:699
+#: main/KexiMainWindow.cpp:698
 msgid "Close the current project"
 msgstr "अभी हाल के परियोजना बन्द करव"
 
-#: main/KexiMainWindow.cpp:700
+#: main/KexiMainWindow.cpp:699
 msgid "Closes the current project."
 msgstr "अभी हाल के परियोजना बन्द करथे ."
 
-#: main/KexiMainWindow.cpp:706
+#: main/KexiMainWindow.cpp:705
 msgid "Quits Kexi application. Kexi prompts you to save changes."
 msgstr "केएक्जाई अनुपरयोग बन्द करथे . बदलाव मन ल सहेजे बर केएक्जाई पूछथे ."
 
-#: main/KexiMainWindow.cpp:711
+#: main/KexiMainWindow.cpp:710
 msgid "&Relationships..."
 msgstr "संबंधता... (&R)"
 
-#: main/KexiMainWindow.cpp:713
+#: main/KexiMainWindow.cpp:712
 msgid "Project relationships"
 msgstr "परियोजना संबंधता"
 
-#: main/KexiMainWindow.cpp:714
+#: main/KexiMainWindow.cpp:713
 msgid "Shows project relationships."
 msgstr "परियोजना संबंधता देखाथे ."
 
-#: main/KexiMainWindow.cpp:723
+#: main/KexiMainWindow.cpp:722
 msgid "&Import Database..."
 msgstr "डाटाबेस आयात करव... (&I)"
 
-#: main/KexiMainWindow.cpp:724
+#: main/KexiMainWindow.cpp:723
 msgid "Import entire database as a Kexi project"
 msgstr "पूरा डाटाबेस केएक्जाई परियोजना के रूप मं आयात करव"
 
-#: main/KexiMainWindow.cpp:726
+#: main/KexiMainWindow.cpp:725
 msgid "Imports entire database as a Kexi project."
 msgstr "पूरा डाटाबेस केएक्जाई परियोजना के रूप मं आयात करथे ."
 
-#: main/KexiMainWindow.cpp:731
+#: main/KexiMainWindow.cpp:730
 #, fuzzy
 #| msgid "Import Database"
 msgid "Import Tables"
 msgstr "डाटाबेस आयात करव"
 
-#: main/KexiMainWindow.cpp:732 main/KexiMainWindow.cpp:733
+#: main/KexiMainWindow.cpp:731 main/KexiMainWindow.cpp:732
 msgid "Import data from an external source into this database"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:741
+#: main/KexiMainWindow.cpp:740
 msgid "&Compact Database..."
 msgstr "डाटाबेस सघन (काम्पैक्ट) करव... (&C)"
 
-#: main/KexiMainWindow.cpp:742
+#: main/KexiMainWindow.cpp:741
 msgid "Compact the current database project"
 msgstr "अभी हाल के डाटाबेस परियोजना ल सघन (काम्पैक्ट) करथे "
 
-#: main/KexiMainWindow.cpp:744
+#: main/KexiMainWindow.cpp:743
 msgid ""
 "Compacts the current database project, so it will take less space and work "
 "faster."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:754
+#: main/KexiMainWindow.cpp:753
 msgctxt "Import->Table Data From File..."
 msgid "Table Data From &File..."
 msgstr "ए फाइल से टेबल डाटा... (&F)"
 
-#: main/KexiMainWindow.cpp:755
+#: main/KexiMainWindow.cpp:754
 msgid "Import table data from a file"
 msgstr "कोनो फाइल से टेबल डाटा आयात करव"
 
-#: main/KexiMainWindow.cpp:756
+#: main/KexiMainWindow.cpp:755
 msgid "Imports table data from a file."
 msgstr "फाइल से टेबल डाटा आयात करथे ."
 
-#: main/KexiMainWindow.cpp:764
+#: main/KexiMainWindow.cpp:763
 msgctxt "Export->Table or Query Data to File..."
 msgid "Table or Query Data to &File..."
 msgstr "फाइल मं टेबल या डाटा क्वैरी करव... (&F)"
 
-#: main/KexiMainWindow.cpp:766
+#: main/KexiMainWindow.cpp:765
 msgid "Export data from the active table or query data to a file"
 msgstr "सक्रिय टेबल या क्वैरी डाटा मं से डाटा ल कोनो फाइल मं निर्यात करव"
 
-#: main/KexiMainWindow.cpp:768
+#: main/KexiMainWindow.cpp:767
 msgid "Exports data from the active table or query data to a file."
 msgstr "सक्रिय टेबल या क्वैरी डाटा मं से डाटा ल कोनो फाइल मं निर्यात करथे ."
 
-#: main/KexiMainWindow.cpp:779
+#: main/KexiMainWindow.cpp:778
 msgid "Print data from the active table or query"
 msgstr "सक्रिय टेबल या क्वैरी मं से डाटा छापव"
 
-#: main/KexiMainWindow.cpp:780
+#: main/KexiMainWindow.cpp:779
 msgid "Prints data from the active table or query."
 msgstr "सक्रिय टेबल या क्वैरी मं से डाटा छापथे ."
 
-#: main/KexiMainWindow.cpp:786
+#: main/KexiMainWindow.cpp:785
 msgid "Show print preview for the active table or query"
 msgstr "सक्रिय टेबल या क्वैरी पेज प्रिव्यू देखाव"
 
-#: main/KexiMainWindow.cpp:788
+#: main/KexiMainWindow.cpp:787
 msgid "Shows print preview for the active table or query."
 msgstr "सक्रिय टेबल या क्वैरी पेज प्रिव्यू देखाथे ."
 
-#: main/KexiMainWindow.cpp:793
+#: main/KexiMainWindow.cpp:792
 #: main/printing/kexisimpleprintpreviewwindow.cpp:183
 msgid "Page Set&up..."
 msgstr "पेज सेटअप... (&u)"
 
-#: main/KexiMainWindow.cpp:795
+#: main/KexiMainWindow.cpp:794
 msgid "Show page setup for printing the active table or query"
 msgstr "सक्रिय टेबल या क्वैरी ल छापे बर पेज सेटअप देखाव"
 
-#: main/KexiMainWindow.cpp:797 widget/KexiProjectListView.cpp:216
+#: main/KexiMainWindow.cpp:796 widget/KexiProjectListView.cpp:216
 msgid "Shows page setup for printing the active table or query."
 msgstr "सक्रिय टेबल या क्वैरी ल छापे बर पेज सेटअप देखाव."
 
-#: main/KexiMainWindow.cpp:812
+#: main/KexiMainWindow.cpp:811
 msgctxt "Paste Special->As Data &Table..."
 msgid "As Data &Table..."
 msgstr "डाटा टेबल के रूप में... (&T)"
 
-#: main/KexiMainWindow.cpp:814
+#: main/KexiMainWindow.cpp:813
 msgid "Paste clipboard data as a table"
 msgstr "टेबल के रूप मं क्लिपबोर्ड डाटा चिपकाव"
 
-#: main/KexiMainWindow.cpp:816
+#: main/KexiMainWindow.cpp:815
 msgid "Pastes clipboard data to a table."
 msgstr "क्लिपबोर्ड डाटा ल एक टेबल मं चिपकाथे ."
 
-#: main/KexiMainWindow.cpp:824
+#: main/KexiMainWindow.cpp:823
 msgctxt "Copy Special->Table or Query Data..."
 msgid "Table or Query as Data Table..."
 msgstr "डाटा टेबल के रूप मं टेबल या क्वैरी..."
 
-#: main/KexiMainWindow.cpp:827
+#: main/KexiMainWindow.cpp:826
 msgid "Copy selected table or query data to clipboard"
 msgstr "चुने गे टेबल या क्वैरी डाटा ल क्लिपबोर्ड मं नकल करव"
 
-#: main/KexiMainWindow.cpp:829
+#: main/KexiMainWindow.cpp:828
 msgid "Copies selected table or query data to clipboard."
 msgstr "चुने गे टेबल या क्वैरी डाटा ल क्लिपबोर्ड मं नकल करथे ."
 
-#: main/KexiMainWindow.cpp:834
+#: main/KexiMainWindow.cpp:833
 msgid "Reverts the most recent editing action."
 msgstr "अति अभी हाल के संपादन काम ल उलटथे ."
 
-#: main/KexiMainWindow.cpp:836
+#: main/KexiMainWindow.cpp:835
 msgid "Reverts the most recent undo action."
 msgstr "अति अभी हाल के पहिली जइसन (अनडू) काम ल उलटथे ."
 
-#: main/KexiMainWindow.cpp:865 widget/KexiProjectListView.cpp:149
+#: main/KexiMainWindow.cpp:864 widget/KexiProjectListView.cpp:149
 msgid "&Delete"
 msgstr "मेटाव (&D)"
 
-#: main/KexiMainWindow.cpp:867
+#: main/KexiMainWindow.cpp:866
 msgid "Delete selected object"
 msgstr "चुने गे चीज ल मेटाव"
 
-#: main/KexiMainWindow.cpp:868
+#: main/KexiMainWindow.cpp:867
 msgid "Deletes currently selected object."
 msgstr "अभी हाल के चुने गे चीज ल मिटाथे ."
 
-#: main/KexiMainWindow.cpp:870
+#: main/KexiMainWindow.cpp:869
 msgid "Delete Row"
 msgstr "लकीर मेटाव"
 
-#: main/KexiMainWindow.cpp:872
+#: main/KexiMainWindow.cpp:871
 msgid "Delete currently selected row"
 msgstr "अभी हाल के चुने गे लकीर मेटाव"
 
-#: main/KexiMainWindow.cpp:873
+#: main/KexiMainWindow.cpp:872
 msgid "Deletes currently selected row."
 msgstr "अभी हाल के चुने गे लकीर ल मिटाथे ."
 
-#: main/KexiMainWindow.cpp:875
+#: main/KexiMainWindow.cpp:874
 msgid "Clear Table Contents"
 msgstr "टेबल सामान साफ करव"
 
-#: main/KexiMainWindow.cpp:877
+#: main/KexiMainWindow.cpp:876
 msgid "Clear table contents"
 msgstr "टेबल सामान साफ करव"
 
-#: main/KexiMainWindow.cpp:878
+#: main/KexiMainWindow.cpp:877
 msgid "Clears table contents."
 msgstr "टेबल सामग्रियाँ साफ करथे ."
 
-#: main/KexiMainWindow.cpp:881
+#: main/KexiMainWindow.cpp:880
 msgid "Edit Item"
 msgstr "चीज के संपादन करव"
 
-#: main/KexiMainWindow.cpp:884
+#: main/KexiMainWindow.cpp:883
 msgid "Edit currently selected item"
 msgstr "अभी हाल के चुने गे चीज ल संपादित करव"
 
-#: main/KexiMainWindow.cpp:885
+#: main/KexiMainWindow.cpp:884
 msgid "Edits currently selected item."
 msgstr "अभी हाल के चुने गे चीज ल संपादित करथे ."
 
-#: main/KexiMainWindow.cpp:887
+#: main/KexiMainWindow.cpp:886
 msgid "&Insert Empty Row"
 msgstr "खाली लकीर भरव (&I)"
 
-#: main/KexiMainWindow.cpp:891
+#: main/KexiMainWindow.cpp:890
 msgid "Insert one empty row above"
 msgstr "ऊपर एक नवा लकीर भरव"
 
-#: main/KexiMainWindow.cpp:893
+#: main/KexiMainWindow.cpp:892
 msgid "Inserts one empty row above currently selected table row."
 msgstr "अभी हाल के चुने गे टेबल लकीर के ऊपर एक खाली लकीर भरव करथे ."
 
-#: main/KexiMainWindow.cpp:950 widget/KexiProjectListView.cpp:86
+#: main/KexiMainWindow.cpp:949 widget/KexiProjectListView.cpp:86
 msgid "Project Navigator"
 msgstr "परियोजना नेविगेटर"
 
-#: main/KexiMainWindow.cpp:952
+#: main/KexiMainWindow.cpp:951
 msgid "Go to project navigator panel"
 msgstr "परियोजना नेविगेटर पेनल मं जाव"
 
-#: main/KexiMainWindow.cpp:953
+#: main/KexiMainWindow.cpp:952
 msgid "Goes to project navigator panel."
 msgstr "परियोजना नेविगेटर पेनल मं जाथे ."
 
-#: main/KexiMainWindow.cpp:960
+#: main/KexiMainWindow.cpp:959
 msgid "Main Area"
 msgstr "मुख्य छेत्र"
 
-#: main/KexiMainWindow.cpp:962
+#: main/KexiMainWindow.cpp:961
 msgid "Go to main area"
 msgstr "मुख्य छेत्र मं जाव"
 
-#: main/KexiMainWindow.cpp:963
+#: main/KexiMainWindow.cpp:962
 msgid "Goes to main area."
 msgstr "मुख्य छेत्र मं जाथे ."
 
-#: main/KexiMainWindow.cpp:969 main/KexiMainWindow.cpp:2112
+#: main/KexiMainWindow.cpp:968 main/KexiMainWindow.cpp:2111
 msgid "Property Editor"
 msgstr "गुन संपादक"
 
-#: main/KexiMainWindow.cpp:971
+#: main/KexiMainWindow.cpp:970
 msgid "Go to property editor panel"
 msgstr "गुन संपातक पेनल मं जाव"
 
-#: main/KexiMainWindow.cpp:972
+#: main/KexiMainWindow.cpp:971
 msgid "Goes to property editor panel."
 msgstr "गुन संपादक पेनल मं जाथे ."
 
-#: main/KexiMainWindow.cpp:979
+#: main/KexiMainWindow.cpp:978
 msgid "&Save Row"
 msgstr "लकीर सहेजव (&S)"
 
-#: main/KexiMainWindow.cpp:981
+#: main/KexiMainWindow.cpp:980
 msgid "Save changes made to the current row"
 msgstr "अभी हाल के लकीर मं करे बदलाव सहेजव"
 
-#: main/KexiMainWindow.cpp:982
+#: main/KexiMainWindow.cpp:981
 msgid "Saves changes made to the current row."
 msgstr "अभी हाल के लकीर मं करे बदलाव मन ल सहेजथे ."
 
-#: main/KexiMainWindow.cpp:985
+#: main/KexiMainWindow.cpp:984
 msgid "&Cancel Row Changes"
 msgstr "लकीर मं करे बदलाव मन केखारिज करव (&C)"
 
-#: main/KexiMainWindow.cpp:988
+#: main/KexiMainWindow.cpp:987
 msgid "Cancel changes made to the current row"
 msgstr "अभी हाल के लकीर मं करे बदलाव मन को खारिज करव"
 
-#: main/KexiMainWindow.cpp:990
+#: main/KexiMainWindow.cpp:989
 msgid "Cancels changes made to the current row."
 msgstr "अभी हाल के लकीर मं करे बदलाव मन को खारिज करथे "
 
-#: main/KexiMainWindow.cpp:994
+#: main/KexiMainWindow.cpp:993
 msgid "&Execute"
 msgstr "चलाव (&E)"
 
-#: main/KexiMainWindow.cpp:999
+#: main/KexiMainWindow.cpp:998
 msgid "&Filter"
 msgstr "फिल्टर (&F)"
 
-#: main/KexiMainWindow.cpp:1025
+#: main/KexiMainWindow.cpp:1024
 msgid "&Font..."
 msgstr "फोंट... (&F)"
 
-#: main/KexiMainWindow.cpp:1027
+#: main/KexiMainWindow.cpp:1026
 msgid "Change font for selected object"
 msgstr "चुने गे चीज के फोंट ल बदलव"
 
-#: main/KexiMainWindow.cpp:1028
+#: main/KexiMainWindow.cpp:1027
 msgid "Changes font for selected object."
 msgstr "चुने गे चीज के फोंट ल बदलथे ."
 
-#: main/KexiMainWindow.cpp:1052
+#: main/KexiMainWindow.cpp:1051
 msgid "&Next Window"
 msgstr "अगला विंडो (&N)"
 
-#: main/KexiMainWindow.cpp:1060
+#: main/KexiMainWindow.cpp:1059
 msgid "Next window"
 msgstr "अगला विंडो"
 
-#: main/KexiMainWindow.cpp:1061
+#: main/KexiMainWindow.cpp:1060
 msgid "Switches to the next window."
 msgstr "अगले विंडो मं स्विच करथे ."
 
-#: main/KexiMainWindow.cpp:1066
+#: main/KexiMainWindow.cpp:1065
 msgid "&Previous Window"
 msgstr "पिछला विंडो (&P)"
 
-#: main/KexiMainWindow.cpp:1074
+#: main/KexiMainWindow.cpp:1073
 msgid "Previous window"
 msgstr "पिछला विंडो"
 
-#: main/KexiMainWindow.cpp:1075
+#: main/KexiMainWindow.cpp:1074
 msgid "Switches to the previous window."
 msgstr "पिछले विंडो मं स्विच करथे ."
 
-#: main/KexiMainWindow.cpp:1086
+#: main/KexiMainWindow.cpp:1085
 msgid "Lets you configure shortcut keys."
 msgstr "आप मन ल सार्टकट कुंजी कान्फिगर करन देथे ."
 
-#: main/KexiMainWindow.cpp:1128
+#: main/KexiMainWindow.cpp:1127
 msgid "Lets you configure Kexi."
 msgstr "आप मन ल केएक्जाई कान्फिगर करन देथे ."
 
-#: main/KexiMainWindow.cpp:1137
+#: main/KexiMainWindow.cpp:1136
 msgid "Shows bug reporting tool for Kexi application."
 msgstr "केएक्जाई अनुपरयोग बर बग रपट औजार देखाथे ."
 
-#: main/KexiMainWindow.cpp:1139
+#: main/KexiMainWindow.cpp:1138
 msgid "Shows \"What's This\" tool."
 msgstr "\"ये का हे\" औजार देखाथे ."
 
-#: main/KexiMainWindow.cpp:1141 migration/importwizard.cpp:959
+#: main/KexiMainWindow.cpp:1140 migration/importwizard.cpp:959
 #: migration/importwizard.cpp:966 migration/importwizard.cpp:968
 #: migration/importwizard.cpp:970 migration/importwizard.cpp:972
 #: migration/importwizard.cpp:974
 msgid "Help"
 msgstr "मदद"
 
-#: main/KexiMainWindow.cpp:1142
+#: main/KexiMainWindow.cpp:1141
 msgid "Shows Kexi Handbook."
 msgstr "केएक्जाई हेन्डबुक देखाथे ."
 
-#: main/KexiMainWindow.cpp:1144
+#: main/KexiMainWindow.cpp:1143
 msgid "Shows information about Kexi application."
 msgstr "केएक्जाई अनुपरयोग परिचय जानकारी देखाथे ."
 
-#: main/KexiMainWindow.cpp:1146
+#: main/KexiMainWindow.cpp:1145
 msgid "Shows information about K Desktop Environment."
 msgstr "के डेस्कटाप वातावरन परिचय जानकारी देखाथे ."
 
-#: main/KexiMainWindow.cpp:1150
+#: main/KexiMainWindow.cpp:1149
 msgid "This shows useful tips on the use of this application."
 msgstr "ये अनुपरयोग बर उपयोगी नुस्खों ल देखाथे ."
 
-#: main/KexiMainWindow.cpp:1153 main/KexiMainWindow.cpp:4469
+#: main/KexiMainWindow.cpp:1152 main/KexiMainWindow.cpp:4468
 msgid "Important Information"
 msgstr "जरूरी जानकारी"
 
-#: main/KexiMainWindow.cpp:1160
+#: main/KexiMainWindow.cpp:1159
 msgid "Give Feedback..."
 msgstr "फीडबैक देव..."
 
-#: main/KexiMainWindow.cpp:1523
+#: main/KexiMainWindow.cpp:1522
 msgid "reason:"
 msgstr "कारन:"
 
-#: main/KexiMainWindow.cpp:1558
+#: main/KexiMainWindow.cpp:1557
 #, kde-format
 msgid ""
 "<qt>Database project %1 does not appear to have been created using Kexi."
 "<br><br>Do you want to import it as a new Kexi project?</qt>"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:1560
+#: main/KexiMainWindow.cpp:1559
 msgctxt "Import Database"
 msgid "&Import..."
 msgstr "आयात... (&I)"
 
-#: main/KexiMainWindow.cpp:1594
+#: main/KexiMainWindow.cpp:1593
 msgid "Select New Project's Location"
 msgstr "नवा परियोजना के जगह चुनव"
 
-#: main/KexiMainWindow.cpp:1685
+#: main/KexiMainWindow.cpp:1684
 #, kde-format
 msgid "cannot create object - unknown object type \"%1\""
 msgstr "चीज बना नइ सकिस - अग्यात चीज किसिम \"%1\""
 
-#: main/KexiMainWindow.cpp:1687
+#: main/KexiMainWindow.cpp:1686
 #, kde-format
 msgid "unknown object type \"%1\""
 msgstr "अग्यात चीज किसिम \"%1\""
 
-#: main/KexiMainWindow.cpp:1695
+#: main/KexiMainWindow.cpp:1694
 #, kde-format
 msgid "cannot create object of type \"%1\""
 msgstr "स्तु \"%1\" किसिम तैयार नइ कर सके"
 
-#: main/KexiMainWindow.cpp:1707
+#: main/KexiMainWindow.cpp:1706
 msgid "making print preview for"
 msgstr "एखर बर छपाई प्रिव्यू बनात हे"
 
-#: main/KexiMainWindow.cpp:1709
+#: main/KexiMainWindow.cpp:1708
 msgid "printing"
 msgstr "छापत हे"
 
-#: main/KexiMainWindow.cpp:1711
+#: main/KexiMainWindow.cpp:1710
 msgctxt "\"executing object\" action"
 msgid "executing"
 msgstr "चलावत हे"
 
-#: main/KexiMainWindow.cpp:1713
+#: main/KexiMainWindow.cpp:1712
 msgid "opening"
 msgstr " खोलत हे"
 
-#: main/KexiMainWindow.cpp:1717
+#: main/KexiMainWindow.cpp:1716
 msgid "table not found"
 msgstr "टेबल नइ मिलिस"
 
-#: main/KexiMainWindow.cpp:1719
+#: main/KexiMainWindow.cpp:1718
 msgid "query not found"
 msgstr "क्वैरी नइ मिलिस"
 
-#: main/KexiMainWindow.cpp:1721
+#: main/KexiMainWindow.cpp:1720
 msgid "macro not found"
 msgstr "मैक्रो नइ मिलिस"
 
-#: main/KexiMainWindow.cpp:1723
+#: main/KexiMainWindow.cpp:1722
 msgid "script not found"
 msgstr "स्क्रिप्ट नइ मिलिस"
 
-#: main/KexiMainWindow.cpp:1725
+#: main/KexiMainWindow.cpp:1724
 msgid "object not found"
 msgstr "आब्जेक्ट नइ मिलिस"
 
-#: main/KexiMainWindow.cpp:1733
+#: main/KexiMainWindow.cpp:1732
 msgid "cannot execute object"
 msgstr "चीज ल चला नइ सकिस"
 
-#: main/KexiMainWindow.cpp:1740
+#: main/KexiMainWindow.cpp:1739
 msgid "cannot print object"
 msgstr "चीज ल छाप नइ सकिस"
 
-#: main/KexiMainWindow.cpp:1747
+#: main/KexiMainWindow.cpp:1746
 msgid "cannot make print preview of object"
 msgstr "चीज के छपाई प्रिव्यू नइ बना सके"
 
-#: main/KexiMainWindow.cpp:1768
+#: main/KexiMainWindow.cpp:1767
 msgid "cannot open object"
 msgstr "चीज खोल नइ सकिस"
 
-#: main/KexiMainWindow.cpp:1782
+#: main/KexiMainWindow.cpp:1781
 msgid ""
 "You have requested selected objects to be automatically opened or processed "
 "on startup. Several objects cannot be opened or processed."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:2137 widget/utils/kexicontextmenuutils.cpp:98
+#: main/KexiMainWindow.cpp:2136 widget/utils/kexicontextmenuutils.cpp:98
 #: widget/KexiPropertyEditorView.cpp:46
 msgid "Properties"
 msgstr "गुन"
 
-#: main/KexiMainWindow.cpp:3168
+#: main/KexiMainWindow.cpp:3167
 msgid "Recently Opened Databases"
 msgstr "हाल ही मं खोले गे डाटाबेस"
 
-#: main/KexiMainWindow.cpp:3187
+#: main/KexiMainWindow.cpp:3186
 msgid "Recently Connected Database Servers"
 msgstr "हाल ही मं कनेक्ट हुए डाटाबेस सर्वर"
 
-#: main/KexiMainWindow.cpp:3281
+#: main/KexiMainWindow.cpp:3280
 msgid "From File..."
 msgstr "फाइल से..."
 
-#: main/KexiMainWindow.cpp:3286
+#: main/KexiMainWindow.cpp:3285
 msgid "From Server..."
 msgstr "सर्वर से..."
 
-#: main/KexiMainWindow.cpp:3397
+#: main/KexiMainWindow.cpp:3396
 #, kde-format
 msgid "Selected view is not supported for \"%1\" object."
 msgstr "चीज \"%1\" बर चुने गे दृस्य समर्थित नइ हे."
 
-#: main/KexiMainWindow.cpp:3399
+#: main/KexiMainWindow.cpp:3398
 #, kde-format
 msgid "Selected view (%1) is not supported by this object type (%2)."
 msgstr "चुने गे दृस्य (%1) एखर चीज किसिम (%2) से समर्थित नइ हे."
 
-#: main/KexiMainWindow.cpp:3496
+#: main/KexiMainWindow.cpp:3495
 msgid "Save Object As"
 msgstr "चीज अइसन सहेजव"
 
-#: main/KexiMainWindow.cpp:3517
+#: main/KexiMainWindow.cpp:3516
 msgid "Do you want to replace it?"
 msgstr "का आप मन एला बदलना चाहथो ?"
 
 #. i18n: file: main/kexifinddialog.ui:103
 #. i18n: ectx: property (text), widget (KPushButton, m_btnReplace)
-#: main/KexiMainWindow.cpp:3519 migration/importwizard.cpp:801 rc.cpp:186
+#: main/KexiMainWindow.cpp:3518 migration/importwizard.cpp:801 rc.cpp:186
 #: widget/utils/kexicontextmenuutils.cpp:230
 msgid "&Replace"
 msgstr "बदलव (&R)"
 
-#: main/KexiMainWindow.cpp:3520
+#: main/KexiMainWindow.cpp:3519
 msgid "&Choose Other Name..."
 msgstr "अऊ दूसरा नाम चुनव (&C)..."
 
-#: main/KexiMainWindow.cpp:3537
+#: main/KexiMainWindow.cpp:3536
 msgid "Please choose other name."
 msgstr "किरपा करके, अउ दूसरा नाम चुनव"
 
-#: main/KexiMainWindow.cpp:3560
+#: main/KexiMainWindow.cpp:3559
 #, kde-format
 msgid "Saving \"%1\" object failed."
 msgstr "चीज \"%1\" सहेजे मं फेल."
 
-#: main/KexiMainWindow.cpp:3577
+#: main/KexiMainWindow.cpp:3576
 #, kde-format
 msgid "Saving new \"%1\" object failed."
 msgstr "नवा चीज \"%1\" सहेजे मं फेल."
 
-#: main/KexiMainWindow.cpp:3629 main/KexiMainWindow.cpp:4926
+#: main/KexiMainWindow.cpp:3628 main/KexiMainWindow.cpp:4925
 msgid "Save changes"
 msgstr "बदलाव सहेजव"
 
-#: main/KexiMainWindow.cpp:3631 main/KexiMainWindow.cpp:4928
+#: main/KexiMainWindow.cpp:3630 main/KexiMainWindow.cpp:4927
 #, kde-format
 msgid ""
 "Pressing this button will save all recent changes made in \"%1\" object."
 msgstr "ये बटन ल दबाय मं चीज \"%1\" मं करे सब्बो वाले बदलाव सहेजे जाही."
 
-#: main/KexiMainWindow.cpp:3635
+#: main/KexiMainWindow.cpp:3634
 #, kde-format
 msgid ""
 "Pressing this button will discard all recent changes made in \"%1\" object."
 msgstr "ये बटन ल दबाय मं चीज \"%1\" मं करे सब्बो वाले बदलाव खारिज हो जाही"
 
-#: main/KexiMainWindow.cpp:3657
+#: main/KexiMainWindow.cpp:3656
 msgid "Do you want to save changes?"
 msgstr "का आप मन बदलाव मन ल सहेजना चाहथो ?"
 
-#: main/KexiMainWindow.cpp:4027
+#: main/KexiMainWindow.cpp:4026
 #, kde-format
 msgctxt "opening is not allowed in \"data view/design view/text view\" mode"
 msgid "opening is not allowed in \"%1\" mode"
 msgstr "\"%1\" मोड मं खोलना स्वीकार नइ हे"
 
-#: main/KexiMainWindow.cpp:4244
+#: main/KexiMainWindow.cpp:4243
 #, kde-format
 msgid ""
 "Do you want to permanently delete:\n"
@@ -1964,48 +1973,48 @@ msgstr ""
 
 #. i18n: file: plugins/reportspgz/koreport/wrtembed/sectioneditor.ui:255
 #. i18n: ectx: property (text), widget (QPushButton, btnRemove)
-#: main/KexiMainWindow.cpp:4248 rc.cpp:342
+#: main/KexiMainWindow.cpp:4247 rc.cpp:342
 #: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1075
 #: plugins/reportspgz/kexireportdesignview.cpp:43
 msgid "Delete"
 msgstr "मेटाव"
 
-#: main/KexiMainWindow.cpp:4298
+#: main/KexiMainWindow.cpp:4297
 msgid "Could not remove object."
 msgstr "चीज के बदल नइ सकिस."
 
-#: main/KexiMainWindow.cpp:4320
+#: main/KexiMainWindow.cpp:4319
 #, kde-format
 msgid "Renaming object \"%1\" failed."
 msgstr "चीज \"%1\" नाम बदलना फेल."
 
-#: main/KexiMainWindow.cpp:4530
+#: main/KexiMainWindow.cpp:4529
 #, kde-format
 msgid "Could not start project \"%1\" in Final Mode."
 msgstr "परियोजना \"%1\" ल फाइनल मोड मं चालू नइ कर सके."
 
-#: main/KexiMainWindow.cpp:4534
+#: main/KexiMainWindow.cpp:4533
 msgid "No Final Mode data found."
 msgstr "कोई फाइनल मोड डाटा नइ मिलिस."
 
-#: main/KexiMainWindow.cpp:4541
+#: main/KexiMainWindow.cpp:4540
 msgid "Error reading Final Mode data."
 msgstr "फाइनल मोड डाटा पढ़े मं गलती."
 
-#: main/KexiMainWindow.cpp:4570
+#: main/KexiMainWindow.cpp:4569
 msgid "Specified plugin does not exist."
 msgstr "निरधारित प्लगइन मौजूद नइ हे."
 
-#: main/KexiMainWindow.cpp:4579
+#: main/KexiMainWindow.cpp:4578
 msgid "Specified object could not be opened."
 msgstr "निरधारित चीज  खोले नइ जा सके."
 
-#: main/KexiMainWindow.cpp:4663
+#: main/KexiMainWindow.cpp:4662
 #, kde-format
 msgid "Compacting database file <nobr>\"%1\"</nobr> is not supported."
 msgstr "डाटाबेस फाइल <nobr>\"%1\"</nobr> सघन (काम्पेक्ट) करना समर्थित नइ हे."
 
-#: main/KexiMainWindow.cpp:4675
+#: main/KexiMainWindow.cpp:4674
 msgid ""
 "The current project has to be closed before compacting the database. It will "
 "be open again after compacting.\n"
@@ -2013,22 +2022,22 @@ msgid ""
 "Do you want to continue?"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:4932
+#: main/KexiMainWindow.cpp:4931
 #, kde-format
 msgid ""
 "Pressing this button will ignore all unsaved changes made in \"%1\" object."
 msgstr ""
 "ये बटन ल दबाय मं एखर चीज \"%1\" मं करे सब्बो बिन सहेजे गे बदलाव मन ल अनदेखा करे जाही."
 
-#: main/KexiMainWindow.cpp:4937
+#: main/KexiMainWindow.cpp:4936
 msgid "Do you want to save changes before printing?"
 msgstr "छापे से पहिली का आप मन बदलाव मन ल सहेजना चाहू?"
 
-#: main/KexiMainWindow.cpp:4939
+#: main/KexiMainWindow.cpp:4938
 msgid "Do you want to save changes before making print preview?"
 msgstr "छपाई प्रिव्यू से पहिली का आप मन बदलाव मन ल सहेजना चाहू?"
 
-#: main/KexiMainWindow.cpp:4941
+#: main/KexiMainWindow.cpp:4940
 msgid "Do you want to save changes before showing page setup?"
 msgstr "पेज सेटअप देखाय से पहिली का आप मन बदलाव मन ल सहेजना चाहू?"
 
@@ -2281,23 +2290,23 @@ msgstr "स्रोत डाटाबेस गैर-यूनिकोड �
 msgid "Kexi Migrate Test"
 msgstr "केएक्जाई माइग्रेट जांच"
 
-#: migration/migratemanager.cpp:166
+#: migration/migratemanager.cpp:165
 msgid "Could not find any import/export database drivers."
 msgstr "कोई आयात/निर्यात डाटाबेस ड्राइवर खोज नइ सकिस."
 
-#: migration/migratemanager.cpp:186
+#: migration/migratemanager.cpp:185
 #, kde-format
 msgid "Could not find import/export database driver \"%1\"."
 msgstr "आयात/निर्यात डाटाबेस ड्राइवर \"%1\" खोज नइ सकिस."
 
-#: migration/migratemanager.cpp:201
+#: migration/migratemanager.cpp:200
 #, kde-format
 msgid ""
 "Incompatible migration driver's \"%1\" version: found version %2, expected "
 "version %3."
 msgstr "माइग्रेसन ड्राइवर \"%1\" के अनुपयुक्त संस्करन: संस्करन %2 मिलिस, चाही संस्करन %3."
 
-#: migration/migratemanager.cpp:215
+#: migration/migratemanager.cpp:214
 #, kde-format
 msgid "Could not load import/export database driver \"%1\"."
 msgstr "आयात/निर्यात डाटाबेस ड्राइवर \"%1\" लोड नइ कर सकिस."
@@ -2431,7 +2440,7 @@ msgid ""
 "Depending on size of the database this may take some time."
 msgstr ""
 
-#: migration/importwizard.cpp:701 migration/importtablewizard.cpp:375
+#: migration/importwizard.cpp:701 migration/importtablewizard.cpp:391
 msgid "No appropriate migration driver found."
 msgstr "कोई उपयुक्त माइग्रेसन ड्राइवर नइ मिलिस."
 
@@ -2520,7 +2529,7 @@ msgid ""
 msgstr ""
 
 #: migration/importoptionsdlg.cpp:69
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:182
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:181
 msgid "Text encoding:"
 msgstr "पाठ एनकोडिंग:"
 
@@ -2529,12 +2538,19 @@ msgid "Always use this encoding in similar situations"
 msgstr "समान हालत मं हमेसा यही एनकोडिंग परयोग करव"
 
 #: migration/AlterSchemaWidget.cpp:37
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:935
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:948
+#, kde-format
+msgid "Column %1"
+msgstr "खंभा %1"
+
+#: migration/AlterSchemaWidget.cpp:38
 #, fuzzy
 #| msgid "Column %1"
 msgid "Column Type"
 msgstr "खंभा %1"
 
-#: migration/AlterSchemaWidget.cpp:38
+#: migration/AlterSchemaWidget.cpp:39
 #: plugins/tables/kexitabledesignerview.cpp:193
 #: plugins/tables/kexitabledesignerview.cpp:430
 msgid "Primary Key"
@@ -2567,7 +2583,7 @@ msgstr "आयात के किसिम चुनव"
 msgid "Alter the Detected Design"
 msgstr ""
 
-#: migration/importtablewizard.cpp:323
+#: migration/importtablewizard.cpp:339
 msgid ""
 "All required information has now been gathered. Click \"Next\" button to "
 "start importing.\n"
@@ -2865,8 +2881,8 @@ msgid "Ignored"
 msgstr "अनदेखा करिस"
 
 #: kexidb/driver_p.cpp:63 plugins/queries/kexiquerydesignerguieditor.cpp:1706
-#: plugins/importexport/csv/kexicsvwidgets.cpp:163
-#: plugins/importexport/csv/kexicsvwidgets.cpp:178
+#: plugins/importexport/csv/kexicsvwidgets.cpp:167
+#: plugins/importexport/csv/kexicsvwidgets.cpp:182
 #: plugins/tables/kexitabledesignerview.cpp:426
 msgid "None"
 msgstr "कुछ नइ"
@@ -2921,7 +2937,7 @@ msgstr "कोई डाटाबेस ड्राइवर नइ मिल�
 msgid "Could not find database driver \"%1\"."
 msgstr "डाटाबेस ड्राइवर \"%1\" नइ मिलिस."
 
-#: kexidb/drivermanager.cpp:225
+#: kexidb/drivermanager.cpp:225 formeditor/widgetlibrary.cpp:243
 #, kde-format
 msgid ""
 "Incompatible database driver's \"%1\" version: found version %2, expected "
@@ -3678,7 +3694,7 @@ msgid "Edit Rich Text"
 msgstr "रिच पाठ संपादित करव"
 
 #: formeditor/factories/stdwidgetfactory.cpp:184 formeditor/form.cpp:721
-#: plugins/forms/kexidbfactory.cpp:77 plugins/forms/kexiformpart.cpp:92
+#: plugins/forms/kexidbfactory.cpp:77 plugins/forms/kexiformpart.cpp:91
 msgid "Form"
 msgstr "फार्म"
 
@@ -5505,7 +5521,7 @@ msgstr "नीचे जाव (&D)"
 msgid "Handle tab order automatically"
 msgstr "टैब अनुक्रम अपने अपन हेंडल करव"
 
-#: formeditor/widgetlibrary.cpp:743
+#: formeditor/widgetlibrary.cpp:761
 #, fuzzy
 #| msgctxt "Mouse Cursor Shape"
 #| msgid "Size Horizontal"
@@ -5513,7 +5529,7 @@ msgctxt "Insert Horizontal Widget"
 msgid "Insert Horizontal"
 msgstr "आकार आड़ा"
 
-#: formeditor/widgetlibrary.cpp:749
+#: formeditor/widgetlibrary.cpp:767
 #, fuzzy
 #| msgctxt "Mouse Cursor Shape"
 #| msgid "Size Vertical"
@@ -5521,13 +5537,13 @@ msgctxt "Insert Vertical Widget"
 msgid "Insert Vertical"
 msgstr "आकार खड़ा"
 
-#: formeditor/widgetlibrary.cpp:753
+#: formeditor/widgetlibrary.cpp:771
 #, fuzzy, kde-format
 #| msgid "Insert AutoField widget"
 msgid "Insert Widget: %1"
 msgstr "अपन आपछेत्र विजेट भरव"
 
-#: formeditor/widgetlibrary.cpp:757
+#: formeditor/widgetlibrary.cpp:775
 #: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:396
 msgid "Cancel"
 msgstr "खारिज करव"
@@ -6484,7 +6500,7 @@ msgid "Opens selected object in the list in text view."
 msgstr "चुने गे चीज ल पाठ दृस्य मं सूची मं खोलथे ."
 
 #: widget/KexiProjectListView.cpp:201
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:69
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:68
 msgid "Export"
 msgstr "निर्यात"
 
@@ -6952,7 +6968,7 @@ msgstr "कमांड बटन"
 msgid "A command button to execute actions"
 msgstr "काम चलाय बर एक कमांड बटन"
 
-#: plugins/forms/kexidbfactory.cpp:278 plugins/forms/kexiformpart.cpp:489
+#: plugins/forms/kexidbfactory.cpp:278 plugins/forms/kexiformpart.cpp:488
 msgid "Data Source"
 msgstr "डाटा स्रोत"
 
@@ -7179,7 +7195,7 @@ msgstr "चुने गे छेत्र ल फारम मं भरव"
 msgid "Inserts selected fields into form"
 msgstr "चुने गे छेत्र ल फारम मं भरव"
 
-#: plugins/forms/kexiformpart.cpp:91
+#: plugins/forms/kexiformpart.cpp:90
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
 "0..9). Use '_' character instead of spaces. First character should be a..z "
@@ -7188,127 +7204,127 @@ msgctxt ""
 msgid "form"
 msgstr "फारम"
 
-#: plugins/forms/kexiformpart.cpp:93
+#: plugins/forms/kexiformpart.cpp:92
 msgctxt "tooltip"
 msgid "Create new form"
 msgstr "नवा फारम बनाथे "
 
-#: plugins/forms/kexiformpart.cpp:94
+#: plugins/forms/kexiformpart.cpp:93
 msgctxt "what's this"
 msgid "Creates new form."
 msgstr "नवा फारम बनाथे ."
 
-#: plugins/forms/kexiformpart.cpp:147 plugins/forms/kexiformpart.cpp:172
+#: plugins/forms/kexiformpart.cpp:146 plugins/forms/kexiformpart.cpp:171
 msgid "Edit Tab Order..."
 msgstr "टैब अनुक्रम संपादित करव..."
 
-#: plugins/forms/kexiformpart.cpp:148
+#: plugins/forms/kexiformpart.cpp:147
 msgid "Adjust Size"
 msgstr "आकार समायोजनइ करव"
 
-#: plugins/forms/kexiformpart.cpp:170
+#: plugins/forms/kexiformpart.cpp:169
 msgid "Clear Widget Contents"
 msgstr "विजेट सामग्रियाँ साफ करव"
 
-#: plugins/forms/kexiformpart.cpp:179
+#: plugins/forms/kexiformpart.cpp:178
 msgid "Layout Widgets"
 msgstr "विजेटों के खाके"
 
-#: plugins/forms/kexiformpart.cpp:183
+#: plugins/forms/kexiformpart.cpp:182
 msgid "&Horizontally"
 msgstr "आड़ा (&H)"
 
-#: plugins/forms/kexiformpart.cpp:185
+#: plugins/forms/kexiformpart.cpp:184
 msgid "&Vertically"
 msgstr "खड़ा (&V)"
 
-#: plugins/forms/kexiformpart.cpp:187
+#: plugins/forms/kexiformpart.cpp:186
 msgid "In &Grid"
 msgstr "ग्रिड मं (&G)"
 
-#: plugins/forms/kexiformpart.cpp:190
+#: plugins/forms/kexiformpart.cpp:189
 msgid "Horizontally in &Splitter"
 msgstr "विभाजक मं आड़ा (&S)"
 
-#: plugins/forms/kexiformpart.cpp:192
+#: plugins/forms/kexiformpart.cpp:191
 msgid "Verti&cally in Splitter"
 msgstr "विभाजक मं खड़ा (&c)"
 
-#: plugins/forms/kexiformpart.cpp:196
+#: plugins/forms/kexiformpart.cpp:195
 msgid "&Break Layout"
 msgstr "खाका ब्रेक करव (&B)"
 
-#: plugins/forms/kexiformpart.cpp:203
+#: plugins/forms/kexiformpart.cpp:202
 msgid "Bring Widget to Front"
 msgstr "विजेट ल सामने लाव"
 
-#: plugins/forms/kexiformpart.cpp:205
+#: plugins/forms/kexiformpart.cpp:204
 msgid "Send Widget to Back"
 msgstr "विजेट ल पीछू भेजव"
 
-#: plugins/forms/kexiformpart.cpp:209
+#: plugins/forms/kexiformpart.cpp:208
 msgid "Other Widgets"
 msgstr "अऊ दूसर विजेट्स"
 
-#: plugins/forms/kexiformpart.cpp:213
+#: plugins/forms/kexiformpart.cpp:212
 msgid "Align Widgets Position"
 msgstr "विजेट जगह जमाव"
 
-#: plugins/forms/kexiformpart.cpp:216
+#: plugins/forms/kexiformpart.cpp:215
 msgid "To Left"
 msgstr "डेरी के तरफ"
 
-#: plugins/forms/kexiformpart.cpp:218
+#: plugins/forms/kexiformpart.cpp:217
 msgid "To Right"
 msgstr "जेवनी के तरफ"
 
-#: plugins/forms/kexiformpart.cpp:220
+#: plugins/forms/kexiformpart.cpp:219
 msgid "To Top"
 msgstr "सीर्स में"
 
-#: plugins/forms/kexiformpart.cpp:222
+#: plugins/forms/kexiformpart.cpp:221
 msgid "To Bottom"
 msgstr "तल में"
 
-#: plugins/forms/kexiformpart.cpp:224 plugins/forms/kexiformpart.cpp:232
+#: plugins/forms/kexiformpart.cpp:223 plugins/forms/kexiformpart.cpp:231
 msgid "To Grid"
 msgstr "ग्रिड में"
 
-#: plugins/forms/kexiformpart.cpp:227
+#: plugins/forms/kexiformpart.cpp:226
 msgid "Adjust Widgets Size"
 msgstr "विजेट आकार ल एडजस्ट करव"
 
-#: plugins/forms/kexiformpart.cpp:230
+#: plugins/forms/kexiformpart.cpp:229
 msgid "To Fit"
 msgstr "पेज के जइसन"
 
-#: plugins/forms/kexiformpart.cpp:234
+#: plugins/forms/kexiformpart.cpp:233
 msgid "To Shortest"
 msgstr "सबसे छोटे में"
 
-#: plugins/forms/kexiformpart.cpp:236
+#: plugins/forms/kexiformpart.cpp:235
 msgid "To Tallest"
 msgstr "सबसे ऊंचे में"
 
-#: plugins/forms/kexiformpart.cpp:238
+#: plugins/forms/kexiformpart.cpp:237
 msgid "To Narrowest"
 msgstr "सबसे संकरे में"
 
-#: plugins/forms/kexiformpart.cpp:240
+#: plugins/forms/kexiformpart.cpp:239
 msgid "To Widest"
 msgstr "सबसे चौड़े में"
 
-#: plugins/forms/kexiformpart.cpp:423
+#: plugins/forms/kexiformpart.cpp:422
 #, kde-format
 msgid "Design of form \"%1\" has been modified."
 msgstr "फारम के डिजाइन \"%1\" सुधार दे गे हे."
 
-#: plugins/forms/kexiformpart.cpp:425
+#: plugins/forms/kexiformpart.cpp:424
 #, kde-format
 msgid "Form \"%1\" already exists."
 msgstr "फारम \"%1\" पहिली से ही मौजूद हे."
 
-#: plugins/forms/kexiformpart.cpp:492
+#: plugins/forms/kexiformpart.cpp:491
 msgid "Widgets"
 msgstr "विजेट्स"
 
@@ -7341,7 +7357,7 @@ msgid "Query Columns"
 msgstr "खंभा क्वैरी करव"
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:225
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1198
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1203
 msgid "Column"
 msgstr "खंभा"
 
@@ -7797,7 +7813,7 @@ msgstr "पेज फुटर (आखरी)"
 
 #: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1068
 #: plugins/reportspgz/kexireportdesignview.cpp:39
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:66
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:65
 msgid "Copy"
 msgstr "नकल"
 
@@ -7985,153 +8001,163 @@ msgstr "नवा रिपोट बनाथे ."
 msgid "Source"
 msgstr "लकीर स्रोत"
 
-#: plugins/importexport/csv/kexicsvwidgets.cpp:67
+#: plugins/importexport/csv/kexicsvwidgets.cpp:71
 msgid "Comma \",\""
 msgstr "विराम \",\""
 
-#: plugins/importexport/csv/kexicsvwidgets.cpp:68
+#: plugins/importexport/csv/kexicsvwidgets.cpp:72
 msgid "Semicolon \";\""
 msgstr "अर्ध विराम \";\""
 
-#: plugins/importexport/csv/kexicsvwidgets.cpp:69
+#: plugins/importexport/csv/kexicsvwidgets.cpp:73
 msgid "Tabulator"
 msgstr "टेबुलेटर"
 
-#: plugins/importexport/csv/kexicsvwidgets.cpp:70
+#: plugins/importexport/csv/kexicsvwidgets.cpp:74
 msgid "Space \" \""
 msgstr "खाली जगह \" \""
 
-#: plugins/importexport/csv/kexicsvwidgets.cpp:71
+#: plugins/importexport/csv/kexicsvwidgets.cpp:75
 msgid "Other"
 msgstr "अन्य"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:79
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:78
 msgid "Copy Data From Table to Clipboard"
 msgstr "टेबल मं से डाटा क्लिपबोर्ड मं नकल करव"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:80
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:88
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:79
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:87
 msgid "Copying data from table:"
 msgstr "टेबल मं से डाटा नकल करत हे:"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:82
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:81
 msgid "Export Data From Table to CSV File"
 msgstr "टेबल मं से सीएसवी फाइल मं डाटा निर्यात करव"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:83
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:82
 msgid "Exporting data from table:"
 msgstr "टेबल मं से डाटा निर्यात करव:"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:87
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:86
 msgid "Copy Data From Query to Clipboard"
 msgstr "क्वैरी मं से क्लिपबोर्ड मं डाटा नकल करव"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:90
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:89
 msgid "Export Data From Query to CSV File"
 msgstr "क्वैरी मं से सीएसवी फाइल मं डाटा निर्यात करव"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:91
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:90
 msgid "Exporting data from query:"
 msgstr "क्वैरी मं से डाटा निर्यात करत हे:"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:95
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:94
 msgid "Could not open data for exporting."
 msgstr "निर्यात बर डाटा खोल नइ सकिस."
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:116
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:115
 msgid "Enter Name of File You Want to Save Data To"
 msgstr "उस फाइल के नाम भरव जेमां आप मन डाटा सहेजना चाहथो "
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:133
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:132
 msgid "To CSV file:"
 msgstr "सीएसवी फाइल में:"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:133
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:132
 msgid "To clipboard:"
 msgstr "क्लिपबोर्ड में:"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:140
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:341
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:139
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:340
 msgid "Show Options >>"
 msgstr "विकल्प देखाव >>"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:147
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:146
 msgid "Options"
 msgstr "विकल्प"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:162
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:221
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:161
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:224
 msgid "Delimiter:"
 msgstr "डेलिमिटर"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:174
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:261
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:173
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:264
 msgid "Text quote:"
 msgstr "पाठ उदाहरन:"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:187
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:186
 msgid "Add column names as the first row"
 msgstr "खंभा नाम ल पहिली लकीर के रूप मं जोड़व"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:192
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:191
 msgid "Always use above options for exporting"
 msgstr "निर्यात बर हमेसा ऊपर के विकल्प मन के परयोग करव"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:206
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:205
 msgid "Copying"
 msgstr "नकल करत हे"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:206
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:205
 msgid "Exporting"
 msgstr "निर्यात करत हे"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:265
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:264
 #, kde-format
 msgid "(rows: %1, columns: %2)"
 msgstr "(पंक्ति: %1, खंभा: %2)"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:267
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:266
 #, kde-format
 msgid "(columns: %1)"
 msgstr "(खंभा: %1)"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:347
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:346
 msgid "Hide Options <<"
 msgstr "विकल्प लुकाव <<"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:363
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:362
 msgid "Defaults"
 msgstr "डिफाल्ट्स"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:167
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:168
 msgid "no"
 msgstr "नइ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:169
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:170
 msgid "false"
 msgstr "गलत"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:172
-msgid "Import CSV Data File"
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:174
+#, fuzzy
+#| msgid "Import CSV Data File"
+msgid "Import CSV Data From File"
 msgstr "सीएसवी डाटा फाइल आयात करव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:180
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:174
+#, fuzzy
+#| msgid "Copy Data From Table to Clipboard"
+msgid "Paste CSV Data From Clipboard"
+msgstr "टेबल मं से डाटा क्लिपबोर्ड मं नकल करव"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:182
 msgid "&Options"
 msgstr "विकल्प (&O)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:183
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:185
 msgid "&Import..."
 msgstr "आयात... (&I)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:206
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:209
 msgid "Preview of data from file:"
 msgstr "फाइल से डाटा प्रिव्यू करव:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:207
-msgid "Preview of data from clipboard:"
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:210
+#, fuzzy
+#| msgid "Preview of data from clipboard:"
+msgid "Preview of data from clipboard"
 msgstr "क्लिपबोर्ड से डाटा प्रिव्यू करव:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:253
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:256
 msgid "Primary key"
 msgstr "प्राथमिक कुंजी"
 
@@ -8143,61 +8169,55 @@ msgstr "अनुकृति डेलिमीटर ल अनदेखा �
 msgid "First row contains column names"
 msgstr "पहिली लकीर मं खंभा नाम सम्मिलित हे"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:336
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:340
 msgid "Open CSV Data File"
 msgstr "सीएसवी डाटा फाइल खोलव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:388
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:392
 msgid "Loading CSV Data"
 msgstr "सीएसवी डाटा लोड करत हे"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:389
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:393
 #, kde-format
 msgid "Loading CSV Data from \"%1\"..."
 msgstr "\"%1\" से सीएसवी डाटा लोड करत हे..."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:477
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:481
 #, kde-format
 msgid "Cannot open input file <nobr>\"%1\"</nobr>."
 msgstr "इनपुट फाइल <nobr>\"%1\"</nobr> खोल नइ सकिस."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:567
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:571
 #, kde-format
 msgid "Start at line (1-%1):"
 msgstr "लकीर मं चालू (1-%1):"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:568
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:572
 msgid "Start at line:"
 msgstr "लकीर मं सुरूः"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:930
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:943
-#, kde-format
-msgid "Column %1"
-msgstr "खंभा %1"
-
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1223
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1228
 msgid "Column name"
 msgstr "खंभा के नाम"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1328
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1333
 #, kde-format
 msgid "Format for column %1:"
 msgstr "खंभा %1 बर फारमेट:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1355
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1381
 msgid "Data set contains no rows. Do you want to import empty table?"
 msgstr "डाटा सेट तिर कोनो लकीर नइ हे. का आप मन खाली टेबल आयात करना चाहथो ?"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1361
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1387
 msgid "No project available."
 msgstr "कोई परियोजना नइ मिलत."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1366
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1392
 msgid "No database connection available."
 msgstr "कोई डााटाबेस कनेक्सन नइ मिलत हे."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1428
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1448
 msgid ""
 "No Primary Key (autonumber) has been defined.\n"
 "Should it be automatically defined on import (recommended)?\n"
@@ -8206,58 +8226,58 @@ msgid ""
 "on database type)."
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1431
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1452
 msgctxt "Add Database Primary Key to a Table"
 msgid "Add Primary Key"
 msgstr "प्राथमिक कुंजी जोड़व"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1432
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1453
 msgctxt "Do Not Add Database Primary Key to a Table"
 msgid "Do Not Add"
 msgstr "जोड़व नइ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1553
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1569
 msgid "Importing CSV Data"
 msgstr "सीएसवी डाटा आयात करत हे"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1558
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1574
 #, kde-format
 msgid "Importing CSV Data from <nobr>\"%1\"</nobr> into \"%2\" table..."
 msgstr "सीएसवी डाटा ल <nobr>\"%1\"</nobr> मं से टेबल \"%2\" मं आयात करत हे..."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1605
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1625
 #, kde-format
 msgid "Data has been successfully imported to table \"%1\"."
 msgstr "डाटा ल सफलतापूर्वक टेबल \"%1\" मं सहेजे गिस."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1615
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1635
 msgctxt "Text type for column"
 msgid "Text"
 msgstr "पाठ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1617
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1637
 msgctxt "Numeric type for column"
 msgid "Number"
 msgstr "नंबर"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1619
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1639
 msgctxt "Currency type for column"
 msgid "Currency"
 msgstr "मुद्रा"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1688
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1708
 #, kde-format
 msgctxt "row count"
 msgid "(rows: %1)"
 msgstr "(पंक्तियाँ: %1)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1692
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1712
 #, kde-format
 msgctxt "row count"
 msgid "(rows: more than %1)"
 msgstr "(पंक्तियाँ: %1 से अधिक)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1693
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1713
 msgid "Not all rows are visible on this preview"
 msgstr "ये प्रिव्यू मं सब्बो पंक्तिया दिखत नइ होही"
 
