@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nepomuk\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-06 05:59+0200\n"
+"POT-Creation-Date: 2009-10-08 06:08+0200\n"
 "PO-Revision-Date: 2009-01-28 15:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -41,7 +41,7 @@ msgstr "नेपोमक कान्फिगरेसन माड्यू�
 msgid "Copyright 2007 Sebastian Trüg"
 msgstr "कापीराइट 2007 सेबेस्तिएन त्रुग"
 
-#: kcm/nepomukserverkcm.cpp:91 server/main.cpp:96 servicestub/main.cpp:74
+#: kcm/nepomukserverkcm.cpp:91 server/main.cpp:96 servicestub/main.cpp:75
 msgid "Sebastian Trüg"
 msgstr "सेबेस्तियन त्रुग"
 
@@ -289,21 +289,21 @@ msgstr "नेपोमक सर्वर - नेपोमक भंडार 
 msgid "(c) 2008, Sebastian Trüg"
 msgstr "(C) 2007, सेबेस्तियन त्रुग"
 
-#: server/main.cpp:96 servicestub/main.cpp:74
+#: server/main.cpp:96 servicestub/main.cpp:75
 msgid "Maintainer"
 msgstr "मेंटेनर"
 
-#: services/storage/repository.cpp:274
+#: services/storage/repository.cpp:282
 msgctxt "@info - notification message"
 msgid "Converting Nepomuk data to a new backend. This might take a while."
 msgstr "नेपोमक डाटा ल नवा बेकएंड मं बदलत हे. एमां कुछ समय लगही"
 
-#: services/storage/repository.cpp:285
+#: services/storage/repository.cpp:293
 msgctxt "@info - notification message"
 msgid "Rebuilding Nepomuk full text search index for new features done."
 msgstr "नवा फीचर बर नेपोमक पूरा पाठ खोज सूची फिर से बन गिस."
 
-#: services/storage/repository.cpp:304
+#: services/storage/repository.cpp:314
 msgctxt "@info - notification message"
 msgid ""
 "Converting Nepomuk data to the new backend failed. Data may still be "
@@ -311,12 +311,12 @@ msgid ""
 msgstr ""
 "नेपोमक डाटा ल नवा बेकएंड मं बदले मं फेल होगे. डाटा ल अपन हाथ से रिकवर करे जा सकही."
 
-#: services/storage/repository.cpp:312
+#: services/storage/repository.cpp:322
 msgctxt "@info - notification message"
 msgid "Successfully converted Nepomuk data to the new backend."
 msgstr "नवा बेकएंड मं नेपोमक डाटा ल सफलता से बदल दे गिस."
 
-#: services/storage/repository.cpp:375
+#: services/storage/repository.cpp:385
 msgctxt "@info - notification message"
 msgid ""
 "Rebuilding Nepomuk full text search index for new features. This will only "
@@ -325,13 +325,20 @@ msgstr ""
 "नवा फीचर बर नेपोमक पूरा पाठ खोज सूची फिर से बनत हे. ए सिरिफ एक बार करे जाही अउ एमां "
 "कुछ समय लगही."
 
-#: services/storage/modelcopyjob.cpp:43
+#: services/storage/modelcopyjob.cpp:124
+#, fuzzy
+#| msgid "Converting Nepomuk database"
+msgctxt "@title job"
 msgid "Converting Nepomuk database"
 msgstr "नेपोमक डाटाबेस बदलत हे"
 
-#: services/storage/modelcopyjob.cpp:78
-msgid "Some data was lost in the conversion."
-msgstr "बदलाव मं कुछ डाटा गंवा गिस."
+#: services/storage/modelcopyjob.cpp:125
+msgid "Old backend"
+msgstr ""
+
+#: services/storage/modelcopyjob.cpp:126
+msgid "New backend"
+msgstr ""
 
 #: services/ontologyloader/ontologyloader.cpp:116
 #, kde-format
@@ -442,18 +449,21 @@ msgstr "%1 मं सुरू के डेस्कटाप खोज सू�
 msgid "Nepomuk Service Stub"
 msgstr "नेपोमक सेवा स्टब"
 
-#: servicestub/main.cpp:77
+#: servicestub/main.cpp:78
 msgctxt "@info:shell"
 msgid "Service to start"
 msgstr "सेवा जऊन ल चालू करना हे"
 
-#: servicestub/main.cpp:93
+#: servicestub/main.cpp:94
 msgid "No service name specified"
 msgstr "कोई सेवा नाम निरधारित नइ हे"
 
-#: servicestub/main.cpp:117
+#: servicestub/main.cpp:118
 msgid "Unknown service name:"
 msgstr "अग्यात सेवा नाम: "
+
+#~ msgid "Some data was lost in the conversion."
+#~ msgstr "बदलाव मं कुछ डाटा गंवा गिस."
 
 #~ msgid "Resuming Strigi file indexing."
 #~ msgstr "स्ट्रिगि फाइल इन्डेक्सिंग फिर से चालू करत हे."
