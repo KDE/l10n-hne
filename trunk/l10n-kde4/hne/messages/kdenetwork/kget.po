@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-10 06:24+0200\n"
+"POT-Creation-Date: 2009-10-14 06:59+0200\n"
 "PO-Revision-Date: 2009-02-26 22:16+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -347,7 +347,7 @@ msgstr "समूह ल नवा नाम देव"
 
 #: core/kget.cpp:243
 msgid ""
-"You have already downloaded that file from another location\n"
+"You have already downloaded that file from another location.\n"
 "\n"
 "Download and delete the previous one?"
 msgstr ""
@@ -401,7 +401,7 @@ msgid "My Downloads"
 msgstr "मोर डाउनलोड्स"
 
 #: core/kget.cpp:816
-msgid "We are sorry. KGet is unable to download from this protocol"
+msgid "Unable to continue: KGet cannot download using this protocol."
 msgstr ""
 
 #: core/kget.cpp:817
@@ -611,7 +611,7 @@ msgid "Downloading Metalink File...."
 msgstr "टोरेंट फाइल डाउनलोड करत हे..."
 
 #: transfer-plugins/metalink/metalink.cpp:193
-msgid "Download failed, no working urls were found."
+msgid "Download failed, no working URLs were found."
 msgstr ""
 
 #: transfer-plugins/metalink/metalink.cpp:194
@@ -641,14 +641,20 @@ msgstr ""
 msgid "Engine name:"
 msgstr "फाइल नाम"
 
+#. i18n: file: transfer-plugins/mirrorsearch/dlgengineediting.ui:30
+#. i18n: ectx: property (text), widget (QLabel, urlLabel)
+#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:34
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: ui/newtransferwidget.ui:34
+#. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: file: ui/metalinkcreator/commondata.ui:167
 #. i18n: ectx: property (text), widget (QLabel, label_23)
 #. i18n: file: ui/metalinkcreator/commondata.ui:237
 #. i18n: ectx: property (text), widget (QLabel, label_21)
-#: transfer-plugins/mirrorsearch/dlgmirrorsearch.cpp:29 rc.cpp:626 rc.cpp:644
-#, fuzzy
-msgid "Url:"
-msgstr "कमइया:"
+#: transfer-plugins/mirrorsearch/dlgmirrorsearch.cpp:29 rc.cpp:188 rc.cpp:310
+#: rc.cpp:526 rc.cpp:626 rc.cpp:644
+msgid "URL:"
+msgstr "यूआरएल:"
 
 #: transfer-plugins/bittorrent/scandlg.cpp:81
 #, kde-format
@@ -1701,7 +1707,7 @@ msgid "&Rename"
 msgstr "नाम बदलव"
 
 #: ui/verificationdialog.cpp:35
-msgid "Add chechksum"
+msgid "Add checksum"
 msgstr ""
 
 #: ui/verificationdialog.cpp:48 ui/mirror/mirrorsettings.cpp:60
@@ -1776,15 +1782,17 @@ msgid "Enter a filename."
 msgstr "समूह नाम भरव"
 
 #: ui/metalinkcreator/filedlg.cpp:114
-msgid "Enter at least one url."
-msgstr ""
+#, fuzzy
+#| msgid "Enter Group Name"
+msgid "Enter at least one URL."
+msgstr "समूह नाम भरव"
 
 #: ui/metalinkcreator/filedlg.cpp:115
 msgid "The filename exists already, choose a different one."
 msgstr ""
 
 #: ui/metalinkcreator/filedlg.cpp:146
-msgid "Required data entered, also consider to enter additional information."
+msgid "Required data entered; also consider entering additional information."
 msgstr ""
 
 #: ui/mirror/mirrorsettings.cpp:44
@@ -2976,7 +2984,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:173
 #, fuzzy
-msgid "Number of simultanous downloaded files:"
+msgid "Number of simultaneous file downloads:"
 msgstr "थ्रेड की संख्या:"
 
 #. i18n: file: transfer-plugins/metalink/dlgmetalink.ui:39
@@ -2992,7 +3000,7 @@ msgstr "फिर से  कोसिसों के संख्या"
 #: rc.cpp:179
 #, fuzzy
 #| msgid "Number of retries:"
-msgid "Number of connections per url:"
+msgid "Number of connections per URL:"
 msgstr "फिर से  कोसिसों के संख्या"
 
 #. i18n: file: transfer-plugins/metalink/fileselection.ui:17
@@ -3000,16 +3008,6 @@ msgstr "फिर से  कोसिसों के संख्या"
 #: rc.cpp:182
 msgid "Select the files you want to be downloaded."
 msgstr ""
-
-#. i18n: file: transfer-plugins/mirrorsearch/dlgengineediting.ui:30
-#. i18n: ectx: property (text), widget (QLabel, urlLabel)
-#. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:34
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: file: ui/newtransferwidget.ui:34
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:188 rc.cpp:310 rc.cpp:526
-msgid "URL:"
-msgstr "यूआरएल:"
 
 #. i18n: file: transfer-plugins/mirrorsearch/dlgmirrorsearch.ui:16
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget)
@@ -3735,7 +3733,7 @@ msgstr ""
 #. i18n: file: ui/metalinkcreator/commondata.ui:66
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, logo)
 #: rc.cpp:602
-msgid "Url to the logo"
+msgid "URL to the logo"
 msgstr ""
 
 #. i18n: file: ui/metalinkcreator/commondata.ui:76
@@ -3788,8 +3786,9 @@ msgstr "थ्रेड की संख्या:"
 #. i18n: file: ui/metalinkcreator/commondata.ui:174
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, lic_url)
 #: rc.cpp:629
-msgid "Url to the license"
-msgstr ""
+#, fuzzy
+msgid "URL to the license"
+msgstr "थ्रेड की संख्या:"
 
 #. i18n: file: ui/metalinkcreator/commondata.ui:208
 #. i18n: ectx: property (text), widget (QLabel, label_20)
@@ -3815,8 +3814,9 @@ msgstr "थ्रेड की संख्या:"
 #. i18n: file: ui/metalinkcreator/commondata.ui:247
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, pub_url)
 #: rc.cpp:650
-msgid "Url to the publisher"
-msgstr ""
+#, fuzzy
+msgid "URL to the publisher"
+msgstr "थ्रेड की संख्या:"
 
 #. i18n: file: ui/metalinkcreator/introduction.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -3824,8 +3824,8 @@ msgstr ""
 msgid ""
 "This assistant allows you to create metalinks from scratch or base them on "
 "existing metalinks. A lot of the fields are optional or recommended, so "
-"enter them at will. The minimum is a save location, at least one file and "
-"one url."
+"enter them if desired. The minimum is a save location, at least one file and "
+"one URL."
 msgstr ""
 
 #. i18n: file: ui/metalinkcreator/introduction.ui:45
@@ -3855,7 +3855,7 @@ msgstr ""
 #. i18n: file: ui/metalinkcreator/general.ui:29
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, origin)
 #: rc.cpp:668
-msgid "Web-Url to the metalink"
+msgid "Web URL to the metalink"
 msgstr ""
 
 #. i18n: file: ui/metalinkcreator/general.ui:36
@@ -3936,8 +3936,10 @@ msgstr ""
 #. i18n: file: ui/metalinkcreator/dragdlg.ui:40
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:713
-msgid "General url:"
-msgstr ""
+#, fuzzy
+#| msgid "Enter URL:"
+msgid "General URL:"
+msgstr "यूआरएल भरव:"
 
 #. i18n: file: ui/metalinkcreator/dragdlg.ui:66
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -3951,8 +3953,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:719
 msgid ""
-"Enter urls here if all the dropped files are on that server and in the same "
-"directory. For each dropped file the url would consist of the entered part "
+"Enter URLs here if all the dropped files are on that server and in the same "
+"directory. For each dropped file the URL would consist of the entered part "
 "and the filename."
 msgstr ""
 
@@ -4017,9 +4019,9 @@ msgstr "फिर से  कोसिसों के संख्या"
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, url)
 #: rc.cpp:746
 #, fuzzy
-#| msgid "Enter Url"
-msgid "Enter an url"
-msgstr "यूआरएल भरव"
+#| msgid "Enter URL:"
+msgid "Enter a URL"
+msgstr "यूआरएल भरव:"
 
 #. i18n: file: ui/mirror/mirroradddlg.ui:63
 #. i18n: ectx: property (text), widget (QLabel, labelPreference)
@@ -4388,13 +4390,13 @@ msgstr "खोज इंजिन उपयोग करव"
 #. i18n: ectx: label, entry (PathList), group (UserScripts)
 #: rc.cpp:934 rc.cpp:937 rc.cpp:943 rc.cpp:949
 #, fuzzy
-msgid "Urls list of the available search engines"
+msgid "List of the available search engine URLs"
 msgstr "खोज इंजिन उपयोग करव"
 
 #. i18n: file: transfer-plugins/contentfetch/kget_contentfetchfactory.kcfg:9
 #. i18n: ectx: label, entry (UrlRegexpList), group (UserScripts)
 #: rc.cpp:946
-msgid "List of the Regexp to match input Url"
+msgid "List of the Regexp to match input URL"
 msgstr ""
 
 #. i18n: file: transfer-plugins/contentfetch/kget_contentfetchfactory.kcfg:21
@@ -4408,6 +4410,19 @@ msgstr ""
 #: rc.cpp:955
 msgid "List of whether the script is enabled"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Url:"
+#~ msgstr "कमइया:"
+
+#, fuzzy
+#~| msgid "Enter Url"
+#~ msgid "Enter an url"
+#~ msgstr "यूआरएल भरव"
+
+#, fuzzy
+#~ msgid "Urls list of the available search engines"
+#~ msgstr "खोज इंजिन उपयोग करव"
 
 #~ msgctxt "delete selected transfer item"
 #~ msgid "Delete Selected"
