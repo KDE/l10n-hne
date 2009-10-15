@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kontact\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-14 07:10+0200\n"
+"POT-Creation-Date: 2009-10-15 06:19+0200\n"
 "PO-Revision-Date: 2009-02-28 14:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -28,25 +28,41 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raviratlami@aol.in"
 
-#. i18n: file: src/kontact.kcfg:14
+#. i18n: file: src/kontact.kcfg:11
+#. i18n: ectx: tooltip, entry (ActivePlugin), group (View)
+#. i18n: file: src/kontact.kcfg:12
+#. i18n: ectx: whatsthis, entry (ActivePlugin), group (View)
+#: rc.cpp:5 rc.cpp:8
+msgid "The currently active plugin"
+msgstr ""
+
+#. i18n: file: src/kontact.kcfg:16
 #. i18n: ectx: label, entry (ForceStartupPlugin), group (View)
-#: rc.cpp:5
-msgid "Always start with specified component:"
+#: rc.cpp:11
+#, fuzzy
+#| msgid "Always start with specified component:"
+msgid "Always start with plugin:"
 msgstr "हमेसा निरधारित अवयव एखर साथ खोलव:"
 
-#. i18n: file: src/kontact.kcfg:15
+#. i18n: file: src/kontact.kcfg:17
+#. i18n: ectx: tooltip, entry (ForceStartupPlugin), group (View)
+#: rc.cpp:14
+msgid "Set the initial plugin on each start"
+msgstr ""
+
+#. i18n: file: src/kontact.kcfg:18
 #. i18n: ectx: whatsthis, entry (ForceStartupPlugin), group (View)
-#: rc.cpp:8
+#: rc.cpp:17
 msgid ""
-"Usually Kontact will come up with the component used before shutdown. Check "
-"this box if you would like a specific component to come up on start instead."
+"Usually Kontact will come up with the plugin used before shutdown. Check "
+"this box if you would like the specified plugin to come up on start instead."
 msgstr ""
 
 #. i18n: file: src/kontactui.rc:6
 #. i18n: ectx: Menu (file)
 #. i18n: file: plugins/knotes/knotes_part.rc:4
 #. i18n: ectx: Menu (file)
-#: rc.cpp:11 rc.cpp:146
+#: rc.cpp:20 rc.cpp:155
 msgid "&File"
 msgstr ""
 
@@ -54,7 +70,7 @@ msgstr ""
 #. i18n: ectx: Menu (settings)
 #. i18n: file: plugins/summary/kontactsummary_part.rc:5
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:14 rc.cpp:143
+#: rc.cpp:23 rc.cpp:152
 #, fuzzy
 #| msgid "Meeting"
 msgid "&Settings"
@@ -62,37 +78,37 @@ msgstr "बैठक"
 
 #. i18n: file: src/kontactui.rc:24
 #. i18n: ectx: Menu (help)
-#: rc.cpp:17
+#: rc.cpp:26
 msgid "&Help"
 msgstr ""
 
 #. i18n: file: src/kontactui.rc:29
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:20
+#: rc.cpp:29
 msgid "Main Toolbar"
 msgstr ""
 
 #. i18n: file: src/kontactui.rc:34
 #. i18n: ectx: ToolBar (navigatorToolBar)
-#: rc.cpp:23
+#: rc.cpp:32
 msgid "Navigator"
 msgstr ""
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, SDSummaryConfig_Base)
-#: rc.cpp:26
+#: rc.cpp:35
 msgid "Special Dates Summary Configuration"
 msgstr ""
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:22
 #. i18n: ectx: property (title), widget (QGroupBox, mDaysGroup)
-#: rc.cpp:29
+#: rc.cpp:38
 msgid "Show Special Dates Starting"
 msgstr ""
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:28
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mDateTodayButton)
-#: rc.cpp:32
+#: rc.cpp:41
 #, fuzzy
 #| msgid "Show s&pecial occasions"
 msgid "Show special occasions for today only"
@@ -100,7 +116,7 @@ msgstr "विसेस अवसर देखाव (&p)"
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:31
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateTodayButton)
-#: rc.cpp:35
+#: rc.cpp:44
 msgid ""
 "Check this box if you want to see special occasions occurring on this date "
 "only."
@@ -114,13 +130,13 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QRadioButton, mDateTodayButton)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:26
 #. i18n: ectx: property (text), widget (QRadioButton, mDateTodayButton)
-#: rc.cpp:38 rc.cpp:218 rc.cpp:374 rc.cpp:479
+#: rc.cpp:47 rc.cpp:227 rc.cpp:383 rc.cpp:488
 msgid "&Today only"
 msgstr "सिरिफ आज (&T)"
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:44
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mDateMonthButton)
-#: rc.cpp:41
+#: rc.cpp:50
 #, fuzzy
 #| msgid "Show s&pecial occasions"
 msgid "Show special occasions starting within the next month"
@@ -128,7 +144,7 @@ msgstr "विसेस अवसर देखाव (&p)"
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:47
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateMonthButton)
-#: rc.cpp:44
+#: rc.cpp:53
 msgid ""
 "Check this box if you want to see special occasions that start sometime "
 "during the next 31 days."
@@ -142,19 +158,19 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QRadioButton, mDateMonthButton)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:42
 #. i18n: ectx: property (text), widget (QRadioButton, mDateMonthButton)
-#: rc.cpp:47 rc.cpp:227 rc.cpp:383 rc.cpp:488
+#: rc.cpp:56 rc.cpp:236 rc.cpp:392 rc.cpp:497
 msgid "Within the next &month (31 days)"
 msgstr ""
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:65
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mDateRangeButton)
-#: rc.cpp:50
+#: rc.cpp:59
 msgid "Select the days for showing upcoming special occasions"
 msgstr ""
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:68
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateRangeButton)
-#: rc.cpp:53
+#: rc.cpp:62
 msgid ""
 "Check this box if you want to specify the number of days in the future for "
 "upcoming special occasions."
@@ -168,19 +184,19 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QRadioButton, mDateRangeButton)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:63
 #. i18n: ectx: property (text), widget (QRadioButton, mDateRangeButton)
-#: rc.cpp:56 rc.cpp:236 rc.cpp:392 rc.cpp:497
+#: rc.cpp:65 rc.cpp:245 rc.cpp:401 rc.cpp:506
 msgid "Within the &next:"
 msgstr ""
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:84
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mCustomDays)
-#: rc.cpp:59
+#: rc.cpp:68
 msgid "Set the number of days to show upcoming special occasions"
 msgstr ""
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:87
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mCustomDays)
-#: rc.cpp:62
+#: rc.cpp:71
 msgid ""
 "Use this spinbox to set the number of days to show upcoming special "
 "occasions up to one year in the future."
@@ -194,7 +210,7 @@ msgstr ""
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, mCustomDays)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:82
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, mCustomDays)
-#: rc.cpp:65 rc.cpp:245 rc.cpp:401 rc.cpp:506
+#: rc.cpp:74 rc.cpp:254 rc.cpp:410 rc.cpp:515
 msgid "1 day"
 msgstr "1 दिन"
 
@@ -206,20 +222,20 @@ msgstr "1 दिन"
 #. i18n: ectx: property (suffix), widget (QSpinBox, mCustomDays)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:85
 #. i18n: ectx: property (suffix), widget (QSpinBox, mCustomDays)
-#: rc.cpp:68 rc.cpp:248 rc.cpp:404 rc.cpp:509
+#: rc.cpp:77 rc.cpp:257 rc.cpp:413 rc.cpp:518
 msgctxt "days to show in summary"
 msgid " days"
 msgstr " दिन"
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:130
 #. i18n: ectx: property (title), widget (QGroupBox, mShowFromCalGroup)
-#: rc.cpp:71
+#: rc.cpp:80
 msgid "Show These Special Dates From Your Calendar"
 msgstr ""
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:136
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowBirthdaysFromCalBox)
-#: rc.cpp:74
+#: rc.cpp:83
 #, fuzzy
 #| msgid "Show &holidays"
 msgid "Show birthdays from your calendar"
@@ -227,7 +243,7 @@ msgstr "छुट्टी देखाव (&h)"
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:139
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowBirthdaysFromCalBox)
-#: rc.cpp:77
+#: rc.cpp:86
 msgid ""
 "Enable this option to include birthdays from your calendar in the upcoming "
 "special occasions summary. Typically, these are events with the \"Birthday\" "
@@ -238,20 +254,20 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, mShowBirthdaysFromCalBox)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:134
 #. i18n: ectx: property (text), widget (QCheckBox, mShowBirthdaysFromCal)
-#: rc.cpp:80 rc.cpp:521
+#: rc.cpp:89 rc.cpp:530
 msgid "Show &birthdays"
 msgstr "जन्मदिन देखाव (&b)"
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:152
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAnniversariesFromCalBox)
-#: rc.cpp:83
+#: rc.cpp:92
 #, fuzzy
 msgid "Show anniversaries from your calendar"
 msgstr "सालगिरह"
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:155
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAnniversariesFromCalBox)
-#: rc.cpp:86
+#: rc.cpp:95
 msgid ""
 "Enable this option to include anniversaries from your calendar in the "
 "upcoming special occasions summary. Typically, these are events with the "
@@ -262,7 +278,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAnniversariesFromCalBox)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:147
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAnniversariesFromCal)
-#: rc.cpp:89 rc.cpp:530
+#: rc.cpp:98 rc.cpp:539
 msgid "Show &anniversaries"
 msgstr "सालगिरह देखाव (&a)"
 
@@ -270,7 +286,7 @@ msgstr "सालगिरह देखाव (&a)"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowHolidaysFromCalBox)
 #. i18n: file: plugins/planner/plannerconfig_base.ui:450
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mHolidaysCal)
-#: rc.cpp:92 rc.cpp:344
+#: rc.cpp:101 rc.cpp:353
 #, fuzzy
 #| msgid "Show &holidays"
 msgid "Show holidays from your calendar"
@@ -278,7 +294,7 @@ msgstr "छुट्टी देखाव (&h)"
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:171
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowHolidaysFromCalBox)
-#: rc.cpp:95
+#: rc.cpp:104
 msgid ""
 "Enable this option to include holidays from your calendar in the upcoming "
 "special occasions summary. These are events from your configured holiday "
@@ -287,7 +303,7 @@ msgstr ""
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:174
 #. i18n: ectx: property (text), widget (QCheckBox, mShowHolidaysFromCalBox)
-#: rc.cpp:98
+#: rc.cpp:107
 msgid "Show &holidays"
 msgstr "छुट्टी देखाव (&h)"
 
@@ -295,7 +311,7 @@ msgstr "छुट्टी देखाव (&h)"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowSpecialsFromCalBox)
 #. i18n: file: plugins/planner/plannerconfig_base.ui:466
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mSpecialOccasionsCal)
-#: rc.cpp:101 rc.cpp:353
+#: rc.cpp:110 rc.cpp:362
 #, fuzzy
 #| msgid "Show s&pecial occasions"
 msgid "Show special occasions from your calendar"
@@ -305,7 +321,7 @@ msgstr "विसेस अवसर देखाव (&p)"
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowSpecialsFromCalBox)
 #. i18n: file: plugins/planner/plannerconfig_base.ui:469
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mSpecialOccasionsCal)
-#: rc.cpp:104 rc.cpp:356
+#: rc.cpp:113 rc.cpp:365
 msgid ""
 "Enable this option to include events from your calendar with the \"special "
 "occasion\" category."
@@ -313,13 +329,13 @@ msgstr ""
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:190
 #. i18n: ectx: property (text), widget (QCheckBox, mShowSpecialsFromCalBox)
-#: rc.cpp:107
+#: rc.cpp:116
 msgid "Show s&pecial occasions"
 msgstr "विसेस अवसर देखाव (&p)"
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:203
 #. i18n: ectx: property (title), widget (QGroupBox, mShowFromKABButtonGroup)
-#: rc.cpp:110
+#: rc.cpp:119
 msgid "Show These Special Dates From Your Contact List"
 msgstr ""
 
@@ -327,14 +343,14 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowBirthdaysFromKABBox)
 #. i18n: file: plugins/planner/plannerconfig_base.ui:418
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mBirthdayConList)
-#: rc.cpp:113 rc.cpp:326
+#: rc.cpp:122 rc.cpp:335
 #, fuzzy
 msgid "Show birthdays from your address book"
 msgstr "सालगिरह"
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:212
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowBirthdaysFromKABBox)
-#: rc.cpp:116
+#: rc.cpp:125
 msgid ""
 "Enable this option to include birthdays from your address book in the "
 "upcoming special occasions summary."
@@ -342,7 +358,7 @@ msgstr ""
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:215
 #. i18n: ectx: property (text), widget (QCheckBox, mShowBirthdaysFromKABBox)
-#: rc.cpp:119
+#: rc.cpp:128
 msgid "Show birth&days"
 msgstr "जन्मदिन देखाव (&d)"
 
@@ -350,14 +366,14 @@ msgstr "जन्मदिन देखाव (&d)"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAnniversariesFromKABBox)
 #. i18n: file: plugins/planner/plannerconfig_base.ui:434
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mAnniversariesConList)
-#: rc.cpp:122 rc.cpp:335
+#: rc.cpp:131 rc.cpp:344
 #, fuzzy
 msgid "Show anniversaries from your address book"
 msgstr "सालगिरह"
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:228
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAnniversariesFromKABBox)
-#: rc.cpp:125
+#: rc.cpp:134
 msgid ""
 "Enable this option to include anniversaries from your address book in the "
 "upcoming special occasions summary."
@@ -365,7 +381,7 @@ msgstr ""
 
 #. i18n: file: plugins/specialdates/sdsummaryconfig_base.ui:231
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAnniversariesFromKABBox)
-#: rc.cpp:128
+#: rc.cpp:137
 msgid "Show anni&versaries"
 msgstr "सालगिरह देखाव (&v)"
 
@@ -375,7 +391,7 @@ msgstr "सालगिरह देखाव (&v)"
 #. i18n: ectx: property (title), widget (QGroupBox, mGroupwareGroup)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:157
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:131 rc.cpp:455 rc.cpp:533
+#: rc.cpp:140 rc.cpp:464 rc.cpp:542
 #, fuzzy
 #| msgid "News Feed Settings"
 msgid "Groupware Settings"
@@ -387,7 +403,7 @@ msgstr "समाचार फीड सेटिंग "
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowMyEventsOnly)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:163
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowMineOnly)
-#: rc.cpp:134 rc.cpp:251 rc.cpp:536
+#: rc.cpp:143 rc.cpp:260 rc.cpp:545
 msgid "Show events belonging to my calendars only"
 msgstr ""
 
@@ -397,7 +413,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowMyEventsOnly)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:166
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowMineOnly)
-#: rc.cpp:137 rc.cpp:254 rc.cpp:539
+#: rc.cpp:146 rc.cpp:263 rc.cpp:548
 msgid ""
 "Check this box if you want the summary to show events belonging to your "
 "calendars only."
@@ -409,7 +425,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, mShowMyEventsOnly)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:169
 #. i18n: ectx: property (text), widget (QCheckBox, mShowMineOnly)
-#: rc.cpp:140 rc.cpp:257 rc.cpp:542
+#: rc.cpp:149 rc.cpp:266 rc.cpp:551
 #, fuzzy
 #| msgid "Show Text Only"
 msgid "Show &my events only"
@@ -417,20 +433,20 @@ msgstr "पाठ देखाव"
 
 #. i18n: file: plugins/knotes/knotes_part.rc:8
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:149
+#: rc.cpp:158
 #, fuzzy
 msgid "&Edit"
 msgstr "कामसूची संपादित करव... (&E)"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, PlannerSummaryConfig_Base)
-#: rc.cpp:152
+#: rc.cpp:161
 msgid "Planner Summary Configuration"
 msgstr "प्लानर सारांस कान्फिगरेसन"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:26
 #. i18n: ectx: attribute (title), widget (QWidget, GeneralTab)
-#: rc.cpp:155
+#: rc.cpp:164
 #, fuzzy
 msgctxt "general settings"
 msgid "General"
@@ -438,19 +454,19 @@ msgstr "सामान्य"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:32
 #. i18n: ectx: property (title), widget (QGroupBox, mGeneralBox)
-#: rc.cpp:158
+#: rc.cpp:167
 msgid "General Configuration"
 msgstr "सामान्य कान्फिगरेसन"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:38
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowRecurrence)
-#: rc.cpp:161
+#: rc.cpp:170
 msgid "Show an icon indicating a recurring item"
 msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:41
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowRecurrence)
-#: rc.cpp:164
+#: rc.cpp:173
 msgid ""
 "Check this box if you want to see an icon that indicates an event or to-do "
 "is recurring."
@@ -458,7 +474,7 @@ msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:44
 #. i18n: ectx: property (text), widget (QCheckBox, mShowRecurrence)
-#: rc.cpp:167
+#: rc.cpp:176
 #, fuzzy
 #| msgid "Show recurrence Icon"
 msgid "Show recurrence icon"
@@ -466,13 +482,13 @@ msgstr "रिकरेंस चिनहा देखाव"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:54
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowReminder)
-#: rc.cpp:170
+#: rc.cpp:179
 msgid "Show an icon indicating the item has a reminder"
 msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:57
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowReminder)
-#: rc.cpp:173
+#: rc.cpp:182
 msgid ""
 "Check this box if you want to see an icon indicating that the event or to-do "
 "has a reminder."
@@ -480,7 +496,7 @@ msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:60
 #. i18n: ectx: property (text), widget (QCheckBox, mShowReminder)
-#: rc.cpp:176
+#: rc.cpp:185
 #, fuzzy
 #| msgid "Show Reminder Icon"
 msgid "Show reminder icon"
@@ -488,7 +504,7 @@ msgstr "रिमाइंडर चिनहा देखाव"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:70
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mUnderline)
-#: rc.cpp:179
+#: rc.cpp:188
 #, fuzzy
 #| msgid "Underline Links"
 msgid "Underline links in descriptions"
@@ -496,13 +512,13 @@ msgstr "कड़ियाँ रेखांकित करव"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:73
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mUnderline)
-#: rc.cpp:182
+#: rc.cpp:191
 msgid "Check this box if you want URL links to be underlined."
 msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:76
 #. i18n: ectx: property (text), widget (QCheckBox, mUnderline)
-#: rc.cpp:185
+#: rc.cpp:194
 #, fuzzy
 #| msgid "Underline Links"
 msgid "Underline links"
@@ -510,7 +526,7 @@ msgstr "कड़ियाँ रेखांकित करव"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:86
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mTodo)
-#: rc.cpp:188
+#: rc.cpp:197
 #, fuzzy
 #| msgid "Show To-dos"
 msgid "Show to-dos in the summary"
@@ -518,13 +534,13 @@ msgstr "कामसूची देखाव"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:89
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mTodo)
-#: rc.cpp:191
+#: rc.cpp:200
 msgid "Check this box if you want to see to-dos in the summary."
 msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:92
 #. i18n: ectx: property (text), widget (QCheckBox, mTodo)
-#: rc.cpp:194
+#: rc.cpp:203
 #, fuzzy
 #| msgid "Show To-dos"
 msgid "Show To-dos in planner"
@@ -532,7 +548,7 @@ msgstr "कामसूची देखाव"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:102
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mSd)
-#: rc.cpp:197
+#: rc.cpp:206
 #, fuzzy
 #| msgid "Show s&pecial occasions"
 msgid "Show special dates in the summary"
@@ -540,13 +556,13 @@ msgstr "विसेस अवसर देखाव (&p)"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:105
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mSd)
-#: rc.cpp:200
+#: rc.cpp:209
 msgid "Check this box if you want to see special dates in the summary."
 msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:108
 #. i18n: ectx: property (text), widget (QCheckBox, mSd)
-#: rc.cpp:203
+#: rc.cpp:212
 #, fuzzy
 #| msgid "Show s&pecial occasions"
 msgid "Show special dates in planner"
@@ -554,13 +570,13 @@ msgstr "विसेस अवसर देखाव (&p)"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:135
 #. i18n: ectx: attribute (title), widget (QWidget, CalendarTab)
-#: rc.cpp:206
+#: rc.cpp:215
 msgid "Events"
 msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:141
 #. i18n: ectx: property (title), widget (QGroupBox, mDaysGroup)
-#: rc.cpp:209
+#: rc.cpp:218
 #, fuzzy
 #| msgid "Synchronize Calendar"
 msgid "Show Calendar Events"
@@ -570,7 +586,7 @@ msgstr "कलेन्डर सिंक्रोनाइज करव"
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mDateTodayButton)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:20
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mDateTodayButton)
-#: rc.cpp:212 rc.cpp:473
+#: rc.cpp:221 rc.cpp:482
 #, fuzzy
 msgid "Show events for today only"
 msgstr "आज चालू होथे "
@@ -579,7 +595,7 @@ msgstr "आज चालू होथे "
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateTodayButton)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:23
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateTodayButton)
-#: rc.cpp:215 rc.cpp:476
+#: rc.cpp:224 rc.cpp:485
 msgid "Check this box if you want to see events occurring on this date only."
 msgstr ""
 
@@ -587,7 +603,7 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mDateMonthButton)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:36
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mDateMonthButton)
-#: rc.cpp:221 rc.cpp:482
+#: rc.cpp:230 rc.cpp:491
 msgid "Show events starting within the next month"
 msgstr ""
 
@@ -595,7 +611,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateMonthButton)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:39
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateMonthButton)
-#: rc.cpp:224 rc.cpp:485
+#: rc.cpp:233 rc.cpp:494
 msgid ""
 "Check this box if you want to see events that start sometime during the next "
 "31 days."
@@ -605,7 +621,7 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mDateRangeButton)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:57
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mDateRangeButton)
-#: rc.cpp:230 rc.cpp:491
+#: rc.cpp:239 rc.cpp:500
 msgid "Select the days for showing upcoming events"
 msgstr ""
 
@@ -613,7 +629,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateRangeButton)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:60
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateRangeButton)
-#: rc.cpp:233 rc.cpp:494
+#: rc.cpp:242 rc.cpp:503
 msgid ""
 "Check this box if you want to specify the number of days in the future for "
 "upcoming events."
@@ -623,7 +639,7 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mCustomDays)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:76
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mCustomDays)
-#: rc.cpp:239 rc.cpp:500
+#: rc.cpp:248 rc.cpp:509
 msgid "Set the number of days to show upcoming events"
 msgstr ""
 
@@ -631,7 +647,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mCustomDays)
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:79
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mCustomDays)
-#: rc.cpp:242 rc.cpp:503
+#: rc.cpp:251 rc.cpp:512
 msgid ""
 "Use this spinbox to set the number of days to show upcoming events up to 1 "
 "year in the future."
@@ -639,7 +655,7 @@ msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:283
 #. i18n: ectx: attribute (title), widget (QWidget, TodoTab)
-#: rc.cpp:260
+#: rc.cpp:269
 #, fuzzy
 msgid "To-dos"
 msgstr "काम-सूची"
@@ -648,20 +664,20 @@ msgstr "काम-सूची"
 #. i18n: ectx: property (title), widget (QGroupBox, mHideGroup)
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:133
 #. i18n: ectx: property (title), widget (QGroupBox, mHideGroup)
-#: rc.cpp:263 rc.cpp:407
+#: rc.cpp:272 rc.cpp:416
 msgid "Hide Following To-do Types"
 msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:295
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mHideCompletedBox)
-#: rc.cpp:266
+#: rc.cpp:275
 #, fuzzy
 msgid "Hide completed to-dos"
 msgstr "कामसूची मेटाव (&D)"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:298
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mHideCompletedBox)
-#: rc.cpp:269
+#: rc.cpp:278
 msgid ""
 "Check this box if you do not want to see to-dos that have already been "
 "completed."
@@ -671,19 +687,19 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, mHideCompletedBox)
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:145
 #. i18n: ectx: property (text), widget (QCheckBox, mHideCompletedBox)
-#: rc.cpp:272 rc.cpp:416
+#: rc.cpp:281 rc.cpp:425
 msgid "&Completed"
 msgstr "पूरा (&C)"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:311
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mHideOpenEndedBox)
-#: rc.cpp:275
+#: rc.cpp:284
 msgid "Hide to-dos without a due date"
 msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:314
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mHideOpenEndedBox)
-#: rc.cpp:278
+#: rc.cpp:287
 msgid "Check this box if you do not want to see open-ended to-dos."
 msgstr ""
 
@@ -691,20 +707,20 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, mHideOpenEndedBox)
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:161
 #. i18n: ectx: property (text), widget (QCheckBox, mHideOpenEndedBox)
-#: rc.cpp:281 rc.cpp:425
+#: rc.cpp:290 rc.cpp:434
 msgid "&Open-ended (no due date)"
 msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:327
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mHideUnstartedBox)
-#: rc.cpp:284
+#: rc.cpp:293
 #, fuzzy
 msgid "Hide unstarted to-dos"
 msgstr "कामसूची मेटाव (&D)"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:330
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mHideUnstartedBox)
-#: rc.cpp:287
+#: rc.cpp:296
 msgid ""
 "Check this box if you do not want to see to-dos with a start date in the "
 "future."
@@ -714,20 +730,20 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, mHideUnstartedBox)
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:177
 #. i18n: ectx: property (text), widget (QCheckBox, mHideUnstartedBox)
-#: rc.cpp:290 rc.cpp:434
+#: rc.cpp:299 rc.cpp:443
 msgid "&Unstarted (start date is in the future)"
 msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:340
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mHideInProgressBox)
-#: rc.cpp:293
+#: rc.cpp:302
 #, fuzzy
 msgid "Hide in-progress to-dos"
 msgstr "प्रगति मं हे"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:343
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mHideInProgressBox)
-#: rc.cpp:296
+#: rc.cpp:305
 msgid ""
 "Check this box if you do not want to see to-dos that have been started but "
 "are not yet completed."
@@ -737,20 +753,20 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, mHideInProgressBox)
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:190
 #. i18n: ectx: property (text), widget (QCheckBox, mHideInProgressBox)
-#: rc.cpp:299 rc.cpp:443
+#: rc.cpp:308 rc.cpp:452
 msgid "&In-progress (started but not completed)"
 msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:353
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mHideOverdueBox)
-#: rc.cpp:302
+#: rc.cpp:311
 #, fuzzy
 msgid "Hide overdue to-dos"
 msgstr "लंबित काम-सूची"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:356
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mHideOverdueBox)
-#: rc.cpp:305
+#: rc.cpp:314
 msgid ""
 "Check this box if you do not want to see to-dos that are past their due date "
 "but have not yet been completed."
@@ -760,7 +776,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, mHideOverdueBox)
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:206
 #. i18n: ectx: property (text), widget (QCheckBox, mHideOverdueBox)
-#: rc.cpp:308 rc.cpp:452
+#: rc.cpp:317 rc.cpp:461
 msgid "Over&due (not completed and beyond due-date)"
 msgstr ""
 
@@ -768,7 +784,7 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowMyTodosOnly)
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:222
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowMineOnly)
-#: rc.cpp:311 rc.cpp:458
+#: rc.cpp:320 rc.cpp:467
 msgid "Show To-dos belonging to my calendars only"
 msgstr ""
 
@@ -776,7 +792,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowMyTodosOnly)
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:225
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowMineOnly)
-#: rc.cpp:314 rc.cpp:461
+#: rc.cpp:323 rc.cpp:470
 msgid ""
 "Check this box if you want the summary to show To-dos belonging to your "
 "calendars only."
@@ -786,7 +802,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, mShowMyTodosOnly)
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:228
 #. i18n: ectx: property (text), widget (QCheckBox, mShowMineOnly)
-#: rc.cpp:317 rc.cpp:464
+#: rc.cpp:326 rc.cpp:473
 #, fuzzy
 #| msgid "Show Icons Only"
 msgid "Show &my To-dos only"
@@ -794,20 +810,20 @@ msgstr "चिनहा देखाव"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:403
 #. i18n: ectx: attribute (title), widget (QWidget, SdTab)
-#: rc.cpp:320
+#: rc.cpp:329
 #, fuzzy
 msgid "Special Dates"
 msgstr "विसिस्ट तारीक देखाव"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:409
 #. i18n: ectx: property (title), widget (QGroupBox, mSdBox)
-#: rc.cpp:323
+#: rc.cpp:332
 msgid "Show these Special Dates"
 msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:421
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mBirthdayConList)
-#: rc.cpp:329
+#: rc.cpp:338
 msgid ""
 "Enable this option to include birthdays from your address book in the "
 "planner summary."
@@ -815,14 +831,14 @@ msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:424
 #. i18n: ectx: property (text), widget (QCheckBox, mBirthdayConList)
-#: rc.cpp:332
+#: rc.cpp:341
 #, fuzzy
 msgid "Show birthdays from address book"
 msgstr "सालगिरह"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:437
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mAnniversariesConList)
-#: rc.cpp:338
+#: rc.cpp:347
 msgid ""
 "Enable this option to include anniversaries from your address book in the "
 "planner summary."
@@ -830,14 +846,14 @@ msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:440
 #. i18n: ectx: property (text), widget (QCheckBox, mAnniversariesConList)
-#: rc.cpp:341
+#: rc.cpp:350
 #, fuzzy
 msgid "Show anniversaries from address book"
 msgstr "सालगिरह"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:453
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mHolidaysCal)
-#: rc.cpp:347
+#: rc.cpp:356
 msgid ""
 "Enable this option to include holidays from your calendar in the planner "
 "summary. These are events from your configured holiday region, or events "
@@ -846,7 +862,7 @@ msgstr ""
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:456
 #. i18n: ectx: property (text), widget (QCheckBox, mHolidaysCal)
-#: rc.cpp:350
+#: rc.cpp:359
 #, fuzzy
 #| msgid "Show &holidays"
 msgid "Show holidays from calendar"
@@ -854,7 +870,7 @@ msgstr "छुट्टी देखाव (&h)"
 
 #. i18n: file: plugins/planner/plannerconfig_base.ui:472
 #. i18n: ectx: property (text), widget (QCheckBox, mSpecialOccasionsCal)
-#: rc.cpp:359
+#: rc.cpp:368
 #, fuzzy
 #| msgid "Show s&pecial occasions"
 msgid "Show special occasions from calendar"
@@ -862,38 +878,38 @@ msgstr "विसेस अवसर देखाव (&p)"
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, TodoSummaryConfig_Base)
-#: rc.cpp:362
+#: rc.cpp:371
 msgid "To-do Summary Configuration"
 msgstr "काम-सूची सारांस कान्फिगरेसन"
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:22
 #. i18n: ectx: property (title), widget (QGroupBox, mDaysGroup)
-#: rc.cpp:365
+#: rc.cpp:374
 msgid "Show To-dos Due"
 msgstr ""
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:28
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mDateTodayButton)
-#: rc.cpp:368
+#: rc.cpp:377
 #, fuzzy
 msgid "Show To-dos due today only"
 msgstr "आज चालू होथे "
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:31
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateTodayButton)
-#: rc.cpp:371
+#: rc.cpp:380
 msgid "Check this box if you want to see To-dos due on this date only."
 msgstr ""
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:44
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mDateMonthButton)
-#: rc.cpp:377
+#: rc.cpp:386
 msgid "Show To-dos due within the next month"
 msgstr ""
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:47
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateMonthButton)
-#: rc.cpp:380
+#: rc.cpp:389
 msgid ""
 "Check this box if you want to see To-dos that are due sometime during the "
 "next 31 days."
@@ -901,13 +917,13 @@ msgstr ""
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:65
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mDateRangeButton)
-#: rc.cpp:386
+#: rc.cpp:395
 msgid "Select the days for showing pending To-dos"
 msgstr ""
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:71
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, mDateRangeButton)
-#: rc.cpp:389
+#: rc.cpp:398
 msgid ""
 "Check this box if you want specify the number of days in the future for "
 "pending To-dos."
@@ -915,13 +931,13 @@ msgstr ""
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:87
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mCustomDays)
-#: rc.cpp:395
+#: rc.cpp:404
 msgid "Set the number of days to show pending To-dos"
 msgstr ""
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:90
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mCustomDays)
-#: rc.cpp:398
+#: rc.cpp:407
 msgid ""
 "Use this spinbox to set the number of days to show pending To-dos up to 1 "
 "year in the future."
@@ -929,14 +945,14 @@ msgstr ""
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:139
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mHideCompletedBox)
-#: rc.cpp:410
+#: rc.cpp:419
 #, fuzzy
 msgid "Hide completed To-dos"
 msgstr "कामसूची मेटाव (&D)"
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:142
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mHideCompletedBox)
-#: rc.cpp:413
+#: rc.cpp:422
 msgid ""
 "Check this box if you do not want to see To-dos that have already been "
 "completed."
@@ -944,25 +960,25 @@ msgstr ""
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:155
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mHideOpenEndedBox)
-#: rc.cpp:419
+#: rc.cpp:428
 msgid "Hide To-dos without a due date"
 msgstr ""
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:158
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mHideOpenEndedBox)
-#: rc.cpp:422
+#: rc.cpp:431
 msgid "Check this box if you do not want to see open-ended To-dos."
 msgstr ""
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:171
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mHideUnstartedBox)
-#: rc.cpp:428
+#: rc.cpp:437
 msgid "Hide unstarted To-dos"
 msgstr ""
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:174
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mHideUnstartedBox)
-#: rc.cpp:431
+#: rc.cpp:440
 msgid ""
 "Check this box if you do not want to see To-dos with a start date in the "
 "future."
@@ -970,14 +986,14 @@ msgstr ""
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:184
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mHideInProgressBox)
-#: rc.cpp:437
+#: rc.cpp:446
 #, fuzzy
 msgid "Hide in-progress To-dos"
 msgstr "प्रगति मं हे"
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:187
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mHideInProgressBox)
-#: rc.cpp:440
+#: rc.cpp:449
 msgid ""
 "Check this box if you do not want to see To-dos that have been started but "
 "are not yet completed."
@@ -985,14 +1001,14 @@ msgstr ""
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:197
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mHideOverdueBox)
-#: rc.cpp:446
+#: rc.cpp:455
 #, fuzzy
 msgid "Hide overdue To-dos"
 msgstr "लंबित काम-सूची"
 
 #. i18n: file: plugins/korganizer/todosummaryconfig_base.ui:203
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mHideOverdueBox)
-#: rc.cpp:449
+#: rc.cpp:458
 msgid ""
 "Check this box if you do not want to see To-dos that are past their due date "
 "but have not yet been completed."
@@ -1000,31 +1016,31 @@ msgstr ""
 
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:8
 #. i18n: ectx: property (windowTitle), widget (QWidget, ApptSummaryConfig_Base)
-#: rc.cpp:467
+#: rc.cpp:476
 msgid "Event Summary Configuration"
 msgstr "सारांस कान्फिगरेसन घटना"
 
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:14
 #. i18n: ectx: property (title), widget (QGroupBox, mDaysButtonGroup)
-#: rc.cpp:470
+#: rc.cpp:479
 msgid "Show Upcoming Events Starting"
 msgstr ""
 
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:122
 #. i18n: ectx: property (title), widget (QGroupBox, mShowButtonGroup)
-#: rc.cpp:512
+#: rc.cpp:521
 msgid "Show These Upcoming Events From Your Calendar"
 msgstr ""
 
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:128
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowBirthdaysFromCal)
-#: rc.cpp:515
+#: rc.cpp:524
 msgid "Show birthdays from your calendar when also using the Birthday resource"
 msgstr ""
 
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:131
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowBirthdaysFromCal)
-#: rc.cpp:518
+#: rc.cpp:527
 msgid ""
 "Enable this option to include birthdays from your calendar in the upcoming "
 "events summary. This option is only available if you are using the Birthdays "
@@ -1033,14 +1049,14 @@ msgstr ""
 
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:141
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAnniversariesFromCal)
-#: rc.cpp:524
+#: rc.cpp:533
 msgid ""
 "Shows anniversaries from your calendar when using the Birthdays resource"
 msgstr ""
 
 #. i18n: file: plugins/korganizer/apptsummaryconfig_base.ui:144
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAnniversariesFromCal)
-#: rc.cpp:527
+#: rc.cpp:536
 msgid ""
 "Enable this option to include anniversaries from your calendar in the "
 "upcoming events summary. This option is only available if you are using the "
@@ -1192,34 +1208,52 @@ msgctxt "@info:whatsthis"
 msgid "Choose this option if you want the sidebar icons to be extra small."
 msgstr ""
 
-#: src/kcmkontact.cpp:94
-msgid "kontactconfig"
-msgstr "कान्टेक्ट-कान्फिग"
-
-#: src/kcmkontact.cpp:95 src/mainwindow.cpp:360
+#: src/kcmkontact.cpp:97
+#, fuzzy
+#| msgid "KDE Kontact"
+msgctxt "@title"
 msgid "KDE Kontact"
 msgstr "केडीई कान्टेक्ट"
 
-#: src/kcmkontact.cpp:97
+#: src/kcmkontact.cpp:101
+#, fuzzy
+#| msgid "(c), 2003 Cornelius Schumacher"
+msgctxt "@info:credit"
 msgid "(c), 2003 Cornelius Schumacher"
 msgstr "(c) 2003 कार्नेलियस सूमेकर"
 
-#: src/kcmkontact.cpp:99 src/main.cpp:174
-#: plugins/summary/summaryview_plugin.cpp:126
+#: src/kcmkontact.cpp:103
+#, fuzzy
+#| msgid "Cornelius Schumacher"
+msgctxt "@info:credit"
 msgid "Cornelius Schumacher"
 msgstr "कार्नेलियस सूमेकर"
 
-#: src/kcmkontact.cpp:100 plugins/kmail/kcmkmailsummary.cpp:70
-#: plugins/knotes/knotes_plugin.cpp:99
-#: plugins/korganizer/kcmapptsummary.cpp:167
-#: plugins/korganizer/kcmtodosummary.cpp:162
-#: plugins/planner/kcmplanner.cpp:243 plugins/planner/plannerplugin.cpp:63
-#: plugins/specialdates/kcmsdsummary.cpp:181
-#: plugins/specialdates/specialdates_plugin.cpp:63
-#: plugins/summary/kcmkontactsummary.cpp:119
-#: plugins/summary/summaryview_plugin.cpp:128
+#: src/kcmkontact.cpp:104 src/kcmkontact.cpp:107
+#: plugins/knotes/knotes_plugin.cpp:117
+msgctxt "@info:credit"
+msgid "Developer"
+msgstr ""
+
+#: src/kcmkontact.cpp:106 plugins/knotes/knotes_plugin.cpp:116
+#, fuzzy
+#| msgid "Tobias Koenig"
+msgctxt "@info:credit"
 msgid "Tobias Koenig"
 msgstr "टाबियस कोएनिग"
+
+#: src/kcmkontact.cpp:118
+msgctxt "@info:tooltip"
+msgid "Select the initial plugin to use on each start"
+msgstr ""
+
+#: src/kcmkontact.cpp:121
+msgctxt "@info:whatsthis"
+msgid ""
+"Select the plugin from this drop down list to be used as the initial plugin "
+"each time Kontact is started. Otherwise, Kontact will restore the last "
+"active plugin from the previous usage."
+msgstr ""
 
 #: src/main.cpp:50
 msgid "KDE personal information manager"
@@ -1266,6 +1300,10 @@ msgstr "डेनियल माल्केनटिन"
 msgid "Don Sanders"
 msgstr "डान सेंडर्स"
 
+#: src/main.cpp:174 plugins/summary/summaryview_plugin.cpp:126
+msgid "Cornelius Schumacher"
+msgstr "कार्नेलियस सूमेकर"
+
 #: src/main.cpp:175
 msgid "Tobias König"
 msgstr "टाबियस कोएनिग"
@@ -1294,25 +1332,45 @@ msgstr "मैथियास होल्जर-क्लूपफेल"
 msgid "Original Author"
 msgstr "मूल लेखक"
 
-#: src/mainwindow.cpp:325
+#: src/mainwindow.cpp:326
+#, fuzzy
+#| msgid "Loading Kontact..."
+msgctxt "@item:intext"
 msgid "Loading Kontact..."
 msgstr "कान्टेक्ट लोड करत हे..."
 
-#: src/mainwindow.cpp:324
+#: src/mainwindow.cpp:325
 #, kde-format
+msgctxt "@item"
 msgid ""
 "<h2 style='text-align:center; margin-top: 0px; margin-bottom: 0px'>%1</h2>"
 msgstr ""
 
-#: src/mainwindow.cpp:335
+#: src/mainwindow.cpp:337
+#, fuzzy
+#| msgid " Initializing..."
+msgctxt "@info:status"
 msgid " Initializing..."
 msgstr "सुरू करत हे..."
 
-#: src/mainwindow.cpp:361
+#: src/mainwindow.cpp:363
+#, fuzzy
+#| msgid "KDE Kontact"
+msgctxt "@item:intext"
+msgid "KDE Kontact"
+msgstr "केडीई कान्टेक्ट"
+
+#: src/mainwindow.cpp:364
+#, fuzzy
+#| msgid "Get Organized!"
+msgctxt "@item:intext"
 msgid "Get Organized!"
 msgstr "ओर्गेनाइज्ड हों!"
 
-#: src/mainwindow.cpp:362
+#: src/mainwindow.cpp:365
+#, fuzzy
+#| msgid "The KDE Personal Information Management Suite"
+msgctxt "@item:intext"
 msgid "The KDE Personal Information Management Suite"
 msgstr "केडीई निजी जानकारी प्रबंधन सूट"
 
@@ -1326,56 +1384,102 @@ msgctxt "@title:menu synchronize pim items (message,calendar,to-do,etc.)"
 msgid "Sync"
 msgstr "सिंक"
 
-#: src/mainwindow.cpp:436
+#: src/mainwindow.cpp:438
+#, fuzzy
+#| msgid "Configure Kontact..."
+msgctxt "@action:inmenu"
 msgid "Configure Kontact..."
 msgstr "कान्टेक्ट कान्फिगर करव..."
 
-#: src/mainwindow.cpp:437
+#: src/mainwindow.cpp:440
 #, fuzzy
 #| msgid "Configure Kontact..."
+msgctxt "@info:status"
 msgid "Configure Kontact"
 msgstr "कान्टेक्ट कान्फिगर करव..."
 
-#: src/mainwindow.cpp:441
+#: src/mainwindow.cpp:443
+msgctxt "@info:whatsthis"
+msgid "You will be presented a dialog where you can configure Kontact."
+msgstr ""
+
+#: src/mainwindow.cpp:449
+#, fuzzy
+#| msgid "&Kontact Introduction"
+msgctxt "@action:inmenu"
 msgid "&Kontact Introduction"
 msgstr "कान्टेक्ट जानकारी (&K)"
 
-#: src/mainwindow.cpp:442
+#: src/mainwindow.cpp:451
 #, fuzzy
 #| msgid "&Kontact Introduction"
+msgctxt "@info:status"
 msgid "Show the Kontact Introduction page"
 msgstr "कान्टेक्ट जानकारी (&K)"
 
-#: src/mainwindow.cpp:446
+#: src/mainwindow.cpp:454
+#, fuzzy
+#| msgid "&Kontact Introduction"
+msgctxt "@info:whatsthis"
+msgid "Choose this option too see the Kontact Introduction page."
+msgstr "कान्टेक्ट जानकारी (&K)"
+
+#: src/mainwindow.cpp:460
+#, fuzzy
+#| msgid "&Tip of the Day"
+msgctxt "@action:inmenu"
 msgid "&Tip of the Day"
 msgstr "आज के नुस्खा (&T)"
 
-#: src/mainwindow.cpp:447
+#: src/mainwindow.cpp:462
+msgctxt "@info:status"
 msgid "Show the Tip-of-the-Day dialog"
 msgstr ""
 
-#: src/mainwindow.cpp:642
-#, kde-format
-msgid "Add plugin %1"
+#: src/mainwindow.cpp:465
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented a dialog showing small tips to help you use this "
+"program more effectively."
 msgstr ""
 
-#: src/mainwindow.cpp:740
+#: src/mainwindow.cpp:662
+#, kde-format
+msgctxt "@info:status"
+msgid "Plugin %1"
+msgstr ""
+
+#: src/mainwindow.cpp:665
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Switch to plugin %1"
+msgstr ""
+
+#: src/mainwindow.cpp:765
+#, fuzzy
+#| msgid "Application is running standalone. Foregrounding..."
+msgctxt "@info:status"
 msgid "Application is running standalone. Foregrounding..."
 msgstr "अनुपरयोग स्टैंडअलोन चलत हे. फोरग्राउंडिंग..."
 
-#: src/mainwindow.cpp:756
-#, kde-format
+#: src/mainwindow.cpp:784
+#, fuzzy, kde-format
+#| msgid "Cannot load part for %1."
+msgctxt "@info"
 msgid "Cannot load part for %1."
 msgstr " %1 बर पार्ट लोड नइ कर सकिस."
 
-#: src/mainwindow.cpp:824
-#, kde-format
-msgctxt "Plugin dependent window title"
+#: src/mainwindow.cpp:853
+#, fuzzy, kde-format
+#| msgctxt "Plugin dependent window title"
+#| msgid "%1 - Kontact"
+msgctxt "@title:window Plugin dependent window title"
 msgid "%1 - Kontact"
 msgstr "%1 - कान्टेक्ट"
 
-#: src/mainwindow.cpp:1145
+#: src/mainwindow.cpp:1177
 #, fuzzy, kde-format
+msgctxt "@info"
 msgid ""
 "<h2 style='text-align:center; margin-top: 0px;'>Welcome to Kontact %1</h2><p "
 "align=\"center\">%2</p><table align=\"center\"><tr><td><a href=\"%3\"><img "
@@ -1399,100 +1503,172 @@ msgstr ""
 "tr></table><p style=\"margin-bottom: 0px\"> <a href=\"%24\">ये परिचय ल छोड़व</"
 "a></p>"
 
-#: src/mainwindow.cpp:1157
+#: src/mainwindow.cpp:1190
 #, fuzzy
+msgctxt "@item:intext"
 msgid ""
 "Kontact handles your e-mail, address book, calendar, to-do list and more."
 msgstr ""
 "कान्टेक्ट आप मन के ईमेल, पतापुस्तिका, कलेन्डर, काम सूची अउ दुसरा घलोक अउ चीज मन ल "
 "सम्हालथे ."
 
-#: src/mainwindow.cpp:1163
+#: src/mainwindow.cpp:1196
+#, fuzzy
+#| msgid "Read Manual"
+msgctxt "@item:intext"
 msgid "Read Manual"
 msgstr "मैनुअल पढ़व"
 
-#: src/mainwindow.cpp:1164
+#: src/mainwindow.cpp:1197
+#, fuzzy
+#| msgid "Learn more about Kontact and its components"
+msgctxt "@item:intext"
 msgid "Learn more about Kontact and its components"
 msgstr "कान्टेक्ट अउ एखर अवयव मन परिचय अउ अधिक जानें"
 
-#: src/mainwindow.cpp:1170
+#: src/mainwindow.cpp:1203
+#, fuzzy
+#| msgid "Visit Kontact Website"
+msgctxt "@item:intext"
 msgid "Visit Kontact Website"
 msgstr "कान्टेक्ट वेबसाइट मं जाव"
 
-#: src/mainwindow.cpp:1171
+#: src/mainwindow.cpp:1204
+#, fuzzy
+#| msgid "Access online resources and tutorials"
+msgctxt "@item:intext"
 msgid "Access online resources and tutorials"
 msgstr "आनलाइन संसाधन मन अउ सिक्छनपाठ मं पहुंचें"
 
-#: src/mainwindow.cpp:1177
+#: src/mainwindow.cpp:1210
+#, fuzzy
+#| msgid "Configure Kontact as Groupware Client"
+msgctxt "@item:intext"
 msgid "Configure Kontact as Groupware Client"
 msgstr "कान्टेक्ट ल ग्रुपवेयर क्लायंट के रूप मं कान्फिगर करव"
 
-#: src/mainwindow.cpp:1178
+#: src/mainwindow.cpp:1211
+#, fuzzy
+#| msgid "Prepare Kontact for use in corporate networks"
+msgctxt "@item:intext"
 msgid "Prepare Kontact for use in corporate networks"
 msgstr "कारपोरेट नेटवर्क मं उपयोग बर कान्टेक्ट ल तैयार करव"
 
-#: plugins/akregator/akregator_plugin.cpp:44
+#: plugins/akregator/akregator_plugin.cpp:46
+#, fuzzy
+#| msgid "New Feed..."
+msgctxt "@action:inmenu"
 msgid "New Feed..."
 msgstr "नवा फीड..."
 
-#: plugins/akregator/akregator_plugin.cpp:47
+#: plugins/akregator/akregator_plugin.cpp:50
+#, fuzzy
+#| msgid "New Contact..."
+msgctxt "@info:status"
 msgid "Create a new feed"
+msgstr "नवा सम्पर्क..."
+
+#: plugins/akregator/akregator_plugin.cpp:53
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can add a new feed."
 msgstr ""
 
-#: plugins/kaddressbook/kaddressbook_plugin.cpp:42
+#: plugins/kaddressbook/kaddressbook_plugin.cpp:43
 #, fuzzy
 #| msgid "New Contact..."
 msgctxt "@action:inmenu"
 msgid "New Contact..."
 msgstr "नवा सम्पर्क..."
 
-#: plugins/kaddressbook/kaddressbook_plugin.cpp:46
+#: plugins/kaddressbook/kaddressbook_plugin.cpp:48
 msgctxt "@info:status"
 msgid "Create a new contact"
 msgstr ""
 
-#: plugins/kaddressbook/kaddressbook_plugin.cpp:50
+#: plugins/kaddressbook/kaddressbook_plugin.cpp:51
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you an create a new contact."
+msgstr ""
+
+#: plugins/kaddressbook/kaddressbook_plugin.cpp:56
 #, fuzzy
 #| msgid "New Contact..."
 msgctxt "@action:inmenu"
 msgid "New Contact Group..."
 msgstr "नवा सम्पर्क..."
 
-#: plugins/kaddressbook/kaddressbook_plugin.cpp:54
+#: plugins/kaddressbook/kaddressbook_plugin.cpp:61
 #, fuzzy
 #| msgid "New Contact..."
 msgctxt "@info:status"
 msgid "Create a new contact group"
 msgstr "नवा सम्पर्क..."
 
-#: plugins/kaddressbook/kaddressbook_plugin.cpp:58
+#: plugins/kaddressbook/kaddressbook_plugin.cpp:64
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you an create a new contact group."
+msgstr ""
+
+#: plugins/kaddressbook/kaddressbook_plugin.cpp:69
 #, fuzzy
 #| msgid "Synchronize Contacts"
 msgctxt "@action:inmenu"
 msgid "Sync Contacts"
 msgstr "सम्पर्क सिंक्रोनाइज करव"
 
-#: plugins/kaddressbook/kaddressbook_plugin.cpp:61
+#: plugins/kaddressbook/kaddressbook_plugin.cpp:73
 #, fuzzy
 #| msgid "Synchronize Contacts"
 msgctxt "@info:status"
 msgid "Synchronize groupware contacts"
 msgstr "सम्पर्क सिंक्रोनाइज करव"
 
-#: plugins/kjots/kjots_plugin.cpp:42
+#: plugins/kaddressbook/kaddressbook_plugin.cpp:76
+#, fuzzy
+#| msgid "Synchronize Contacts"
+msgctxt "@info:whatsthis"
+msgid "Choose this option to synchronize your groupware contacts."
+msgstr "सम्पर्क सिंक्रोनाइज करव"
+
+#: plugins/kjots/kjots_plugin.cpp:44
+#, fuzzy
+#| msgid "New KJots Page"
+msgctxt "@action:inmenu"
 msgid "New KJots Page"
 msgstr "नवा केजाट्स पेज"
 
-#: plugins/kjots/kjots_plugin.cpp:45
+#: plugins/kjots/kjots_plugin.cpp:48
+#, fuzzy
+#| msgid "New Contact..."
+msgctxt "@info:status"
 msgid "Create a new jots page"
+msgstr "नवा सम्पर्क..."
+
+#: plugins/kjots/kjots_plugin.cpp:51
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new jots page."
 msgstr ""
 
-#: plugins/kjots/kjots_plugin.cpp:49
+#: plugins/kjots/kjots_plugin.cpp:56
+#, fuzzy
+#| msgid "New KJots Book"
+msgctxt "@action:inmenu"
 msgid "New KJots Book"
 msgstr "नवा केजाट्स पुस्तक"
 
-#: plugins/kjots/kjots_plugin.cpp:52
+#: plugins/kjots/kjots_plugin.cpp:60
+#, fuzzy
+#| msgid "New Contact..."
+msgctxt "@info:status"
 msgid "Create a new jots book"
+msgstr "नवा सम्पर्क..."
+
+#: plugins/kjots/kjots_plugin.cpp:63
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new jots book."
 msgstr ""
 
 #: plugins/kmail/kcmkmailsummary.cpp:65
@@ -1506,6 +1682,17 @@ msgstr "डाक सारांस कान्फिगरेसन गोठ
 #: plugins/kmail/kcmkmailsummary.cpp:68
 msgid "(c) 2004 Tobias Koenig"
 msgstr "(c) 2004 टाबियस कोएनिग"
+
+#: plugins/kmail/kcmkmailsummary.cpp:70
+#: plugins/korganizer/kcmapptsummary.cpp:167
+#: plugins/korganizer/kcmtodosummary.cpp:162
+#: plugins/planner/kcmplanner.cpp:243 plugins/planner/plannerplugin.cpp:63
+#: plugins/specialdates/kcmsdsummary.cpp:181
+#: plugins/specialdates/specialdates_plugin.cpp:63
+#: plugins/summary/kcmkontactsummary.cpp:119
+#: plugins/summary/summaryview_plugin.cpp:128
+msgid "Tobias Koenig"
+msgstr "टाबियस कोएनिग"
 
 #: plugins/kmail/kcmkmailsummary.cpp:87
 msgid "Summary"
@@ -1535,24 +1722,46 @@ msgctxt "prefix for local folders"
 msgid "Local"
 msgstr "लोकल"
 
-#: plugins/kmail/kmail_plugin.cpp:56
+#: plugins/kmail/kmail_plugin.cpp:58
+#, fuzzy
+#| msgid "New Message..."
+msgctxt "@action:inmenu"
 msgid "New Message..."
 msgstr "नवा संदेस..."
 
-#: plugins/kmail/kmail_plugin.cpp:59
+#: plugins/kmail/kmail_plugin.cpp:62
+#, fuzzy
+#| msgid "New Contact..."
+msgctxt "@info:status"
 msgid "Create a new mail message"
+msgstr "नवा सम्पर्क..."
+
+#: plugins/kmail/kmail_plugin.cpp:65
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create and send a new "
+"email message."
 msgstr ""
 
-#: plugins/kmail/kmail_plugin.cpp:63
+#: plugins/kmail/kmail_plugin.cpp:72
 #, fuzzy
 #| msgid "Send &Mail"
+msgctxt "@action:inmenu"
 msgid "Sync Mail"
 msgstr "डाक भेजव (&M)"
 
-#: plugins/kmail/kmail_plugin.cpp:64
+#: plugins/kmail/kmail_plugin.cpp:74
 #, fuzzy
 #| msgid "Synchronize Mail"
+msgctxt "@info:status"
 msgid "Synchronize groupware mail"
+msgstr "डाक सिंक्रोनाइज करव"
+
+#: plugins/kmail/kmail_plugin.cpp:77
+#, fuzzy
+#| msgid "Synchronize Mail"
+msgctxt "@info:whatsthis"
+msgid "Choose this option to synchronize your groupware email."
 msgstr "डाक सिंक्रोनाइज करव"
 
 #: plugins/kmail/summarywidget.cpp:55
@@ -1579,165 +1788,291 @@ msgstr "आप मन के मानीटर करे जावत फोल
 msgid "Open Folder: \"%1\""
 msgstr "फोल्डर खोलव: \"%1\""
 
-#: plugins/knode/knode_plugin.cpp:43
+#: plugins/knode/knode_plugin.cpp:45
+#, fuzzy
+#| msgid "New Article..."
+msgctxt "@action:inmenu"
 msgid "New Article..."
 msgstr "नवा आलेख..."
 
-#: plugins/knode/knode_plugin.cpp:46
+#: plugins/knode/knode_plugin.cpp:49
+#, fuzzy
+#| msgid "New Contact..."
+msgctxt "@info:status"
 msgid "Create a new Usenet article"
+msgstr "नवा सम्पर्क..."
+
+#: plugins/knode/knode_plugin.cpp:52
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new article to "
+"post on Usenet."
 msgstr ""
 
-#: plugins/knotes/knotes_part.cpp:71
+#: plugins/knotes/knotes_part.cpp:72
 #, fuzzy
 #| msgid "&New"
-msgctxt "create new popup note"
+msgctxt "@action:inmenu create new popup note"
 msgid "&New"
 msgstr "नवा (&N)"
 
-#: plugins/knotes/knotes_part.cpp:75
-msgid "Create a new popup note"
-msgstr ""
-
 #: plugins/knotes/knotes_part.cpp:77
 #, fuzzy
+#| msgid "Read Popup Note: \"%1\""
+msgctxt "@info:status"
+msgid "Create a new popup note"
+msgstr "पापअप नोट पढ़े: \"%1\""
+
+#: plugins/knotes/knotes_part.cpp:80
+msgctxt "@info:whatsthis"
+msgid "You will be presented with a dialog where you can add a new popup note."
+msgstr ""
+
+#: plugins/knotes/knotes_part.cpp:83
+#, fuzzy
+msgctxt "@action:inmenu"
 msgid "Edit..."
 msgstr "कामसूची संपादित करव... (&E)"
 
-#: plugins/knotes/knotes_part.cpp:80
+#: plugins/knotes/knotes_part.cpp:87
 #, fuzzy
 #| msgid "Edit Popup Note"
+msgctxt "@info:status"
 msgid "Edit popup note"
 msgstr "पाप अप नोट संपादित करव"
 
-#: plugins/knotes/knotes_part.cpp:82
+#: plugins/knotes/knotes_part.cpp:90
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can modify an existing popup "
+"note."
+msgstr ""
+
+#: plugins/knotes/knotes_part.cpp:93
+#, fuzzy
+#| msgid "Rename..."
+msgctxt "@action:inmenu"
 msgid "Rename..."
 msgstr "नाम बदलव..."
 
-#: plugins/knotes/knotes_part.cpp:85
+#: plugins/knotes/knotes_part.cpp:97
 #, fuzzy
 #| msgid "Read Popup Note: \"%1\""
+msgctxt "@info:status"
 msgid "Rename popup note"
 msgstr "पापअप नोट पढ़े: \"%1\""
 
-#: plugins/knotes/knotes_part.cpp:87
+#: plugins/knotes/knotes_part.cpp:100
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can rename an existing popup "
+"note."
+msgstr ""
+
+#: plugins/knotes/knotes_part.cpp:103
+#, fuzzy
+#| msgid "Delete"
+msgctxt "@action:inmenu"
 msgid "Delete"
 msgstr "मेटाव"
 
-#: plugins/knotes/knotes_part.cpp:91
+#: plugins/knotes/knotes_part.cpp:108
 #, fuzzy
 #| msgid "&Delete Appointment"
+msgctxt "@info:status"
 msgid "Delete popup note"
 msgstr "नियोजित भेंट मेटाव (&D)"
 
-#: plugins/knotes/knotes_part.cpp:93
+#: plugins/knotes/knotes_part.cpp:111
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be prompted if you really want to permanently remove the selected "
+"popup note."
+msgstr ""
+
+#: plugins/knotes/knotes_part.cpp:115
+#, fuzzy
+#| msgid "Print Selected Notes..."
+msgctxt "@action:inmenu"
 msgid "Print Selected Notes..."
 msgstr "चुने गे नोट्स छापव..."
 
-#: plugins/knotes/knotes_part.cpp:97
+#: plugins/knotes/knotes_part.cpp:120
 #, fuzzy
 #| msgid "Print Popup Notes"
+msgctxt "@info:status"
 msgid "Print popup note"
 msgstr "पापअप नोट्स छापव"
 
-#: plugins/knotes/knotes_part.cpp:158
+#: plugins/knotes/knotes_part.cpp:123
+msgctxt "@info:whatsthis"
+msgid "You will be prompted to print the selected popup note."
+msgstr ""
+
+#: plugins/knotes/knotes_part.cpp:185
+#, fuzzy
+#| msgid "To print notes, first select the notes to print from the list."
+msgctxt "@info"
 msgid "To print notes, first select the notes to print from the list."
 msgstr "नोट्स छापे बर, सूची मं से छापे जाय वाले नोट्स ल पहिली चुनव."
 
-#: plugins/knotes/knotes_part.cpp:159
+#: plugins/knotes/knotes_part.cpp:186
+#, fuzzy
+#| msgid "Print Popup Notes"
+msgctxt "@title:window"
 msgid "Print Popup Notes"
 msgstr "पापअप नोट्स छापव"
 
-#: plugins/knotes/knotes_part.cpp:239 plugins/knotes/knotes_part.cpp:317
-#, kde-format
+#: plugins/knotes/knotes_part.cpp:266 plugins/knotes/knotes_part.cpp:346
+#, fuzzy, kde-format
+#| msgid "Do you really want to delete this note?"
+#| msgid_plural "Do you really want to delete these %1 notes?"
+msgctxt "@info"
 msgid "Do you really want to delete this note?"
 msgid_plural "Do you really want to delete these %1 notes?"
 msgstr[0] "का आप मन सचमुच ए टिप्पनी ल मिटाना चाहथो?"
 msgstr[1] "का आप मन सचमुच %1 टिप्पनी ल मिटाना चाहथो?"
 
-#: plugins/knotes/knotes_part.cpp:240 plugins/knotes/knotes_part.cpp:319
+#: plugins/knotes/knotes_part.cpp:268 plugins/knotes/knotes_part.cpp:348
+#, fuzzy
+#| msgid "Confirm Delete"
+msgctxt "@title:window"
 msgid "Confirm Delete"
 msgstr "मिटाना पुस्टि करव"
 
-#: plugins/knotes/knotes_part.cpp:417
+#: plugins/knotes/knotes_part.cpp:446
 #, fuzzy
 #| msgid "Read Popup Note: \"%1\""
+msgctxt "@title:window"
 msgid "Rename Popup Note"
 msgstr "पापअप नोट पढ़े: \"%1\""
 
-#: plugins/knotes/knotes_part.cpp:418
+#: plugins/knotes/knotes_part.cpp:447
 #, fuzzy
 #| msgid "Name:"
+msgctxt "@label:textbox"
 msgid "New Name:"
 msgstr "नाम:"
 
-#: plugins/knotes/knotes_plugin.cpp:54
+#: plugins/knotes/knotes_plugin.cpp:56
+#, fuzzy
+#| msgid "New Popup Note..."
+msgctxt "@action:inmenu"
 msgid "New Popup Note..."
 msgstr "नवा पाप अप नोट..."
 
-#: plugins/knotes/knotes_plugin.cpp:58
-msgid "Create new popup note"
-msgstr ""
-
 #: plugins/knotes/knotes_plugin.cpp:61
 #, fuzzy
+#| msgid "Read Popup Note: \"%1\""
+msgctxt "@info:status"
+msgid "Create new popup note"
+msgstr "पापअप नोट पढ़े: \"%1\""
+
+#: plugins/knotes/knotes_plugin.cpp:64
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new popup note."
+msgstr ""
+
+#: plugins/knotes/knotes_plugin.cpp:69
+#, fuzzy
 #| msgid "Synchronize Popup Notes"
+msgctxt "@action:inmenu"
 msgid "Sync Popup Notes"
 msgstr "पापअफ नोट ल सिंक्रोनाइज करव"
 
-#: plugins/knotes/knotes_plugin.cpp:64
+#: plugins/knotes/knotes_plugin.cpp:73
 #, fuzzy
 #| msgid "Synchronize Contacts"
+msgctxt "@info:status"
 msgid "Synchronize groupware notes"
 msgstr "सम्पर्क सिंक्रोनाइज करव"
 
-#: plugins/knotes/knotes_plugin.cpp:93
+#: plugins/knotes/knotes_plugin.cpp:76
+#, fuzzy
+#| msgid "Synchronize Contacts"
+msgctxt "@info:whatsthis"
+msgid "Choose this option to synchronize your groupware notes."
+msgstr "सम्पर्क सिंक्रोनाइज करव"
+
+#: plugins/knotes/knotes_plugin.cpp:107
+#, fuzzy
+#| msgid "KNotes"
+msgctxt "@title"
 msgid "KNotes"
 msgstr "के-नोट्स"
 
-#: plugins/knotes/knotes_plugin.cpp:94 plugins/knotes/summarywidget.cpp:49
+#: plugins/knotes/knotes_plugin.cpp:109
+#, fuzzy
+#| msgid "Popup Notes"
+msgctxt "@title"
 msgid "Popup Notes"
 msgstr "पापअप नोट्स"
 
-#: plugins/knotes/knotes_plugin.cpp:96
+#: plugins/knotes/knotes_plugin.cpp:111
+#, fuzzy
+#| msgid "(c) 2003-2004 The Kontact developers"
+msgctxt "@info:credit"
 msgid "(c) 2003-2004 The Kontact developers"
 msgstr "(c) 2003-2004 कान्टेक्ट बनइया मन"
 
-#: plugins/knotes/knotes_plugin.cpp:97
+#: plugins/knotes/knotes_plugin.cpp:113
+#, fuzzy
+#| msgid "Michael Brade"
+msgctxt "@info:credit"
 msgid "Michael Brade"
 msgstr "माइकल ब्रेद"
 
-#: plugins/knotes/knotes_plugin.cpp:98 plugins/planner/plannerplugin.cpp:62
-#: plugins/specialdates/specialdates_plugin.cpp:62
+#: plugins/knotes/knotes_plugin.cpp:114
+#, fuzzy
+#| msgid "Current Maintainer"
+msgctxt "@info:credit"
 msgid "Current Maintainer"
 msgstr "अभी हाल के मेंटेनर"
 
-#: plugins/knotes/knotes_plugin.cpp:136
-#: plugins/korganizer/korganizerplugin.cpp:192
-#: plugins/korganizer/todoplugin.cpp:197
+#: plugins/knotes/knotes_plugin.cpp:155
+#: plugins/korganizer/korganizerplugin.cpp:202
+#: plugins/korganizer/todoplugin.cpp:207
+#, fuzzy
+#| msgid "Meeting"
+msgctxt "@item"
 msgid "Meeting"
 msgstr "बैठक"
 
-#: plugins/knotes/knotes_plugin.cpp:148
-#: plugins/korganizer/korganizerplugin.cpp:206
-#: plugins/korganizer/todoplugin.cpp:211
-#, kde-format
+#: plugins/knotes/knotes_plugin.cpp:167
+#: plugins/korganizer/korganizerplugin.cpp:217
+#: plugins/korganizer/todoplugin.cpp:222
+#, fuzzy, kde-format
+#| msgid "Note: %1"
+msgctxt "@item"
 msgid "Note: %1"
 msgstr "टीप: %1"
 
-#: plugins/knotes/knotes_plugin.cpp:156
+#: plugins/knotes/knotes_plugin.cpp:176
+#, fuzzy
+#| msgid "New Note"
+msgctxt "@item"
 msgid "New Note"
 msgstr "नवा नोट"
 
-#: plugins/knotes/knotes_plugin.cpp:165
-#: plugins/korganizer/korganizerplugin.cpp:229
-#: plugins/korganizer/todoplugin.cpp:233
+#: plugins/knotes/knotes_plugin.cpp:186
+#: plugins/korganizer/korganizerplugin.cpp:241
+#: plugins/korganizer/todoplugin.cpp:245
+#, fuzzy
+#| msgid "Dropping multiple mails is not supported."
+msgctxt "@info"
 msgid "Dropping multiple mails is not supported."
 msgstr "बहुत से ईमेल के ड्राप करना समर्थित नइ हे."
 
-#: plugins/knotes/knotes_plugin.cpp:168
-#: plugins/korganizer/korganizerplugin.cpp:232
-#: plugins/korganizer/todoplugin.cpp:236
-#, kde-format
+#: plugins/knotes/knotes_plugin.cpp:189
+#: plugins/korganizer/korganizerplugin.cpp:244
+#: plugins/korganizer/todoplugin.cpp:248
+#, fuzzy, kde-format
+#| msgid ""
+#| "From: %1\n"
+#| "To: %2\n"
+#| "Subject: %3"
+msgctxt "@item"
 msgid ""
 "From: %1\n"
 "To: %2\n"
@@ -1747,12 +2082,18 @@ msgstr ""
 "को: %2\n"
 "विसय: %3"
 
-#: plugins/knotes/knotes_plugin.cpp:169
-#: plugins/korganizer/korganizerplugin.cpp:240
-#: plugins/korganizer/todoplugin.cpp:244
-#, kde-format
+#: plugins/knotes/knotes_plugin.cpp:192
+#: plugins/korganizer/korganizerplugin.cpp:253
+#: plugins/korganizer/todoplugin.cpp:257
+#, fuzzy, kde-format
+#| msgid "Mail: %1"
+msgctxt "@item"
 msgid "Mail: %1"
 msgstr "डाक: %1"
+
+#: plugins/knotes/summarywidget.cpp:49
+msgid "Popup Notes"
+msgstr "पापअप नोट्स"
 
 #: plugins/knotes/summarywidget.cpp:117
 msgid "No Notes Available"
@@ -1789,25 +2130,44 @@ msgstr "नियोजित भेंट मेटाव (&D)"
 msgid "Edit Event: \"%1\""
 msgstr "घटना संपादित करव: \"%1\""
 
-#: plugins/korganizer/journalplugin.cpp:46
+#: plugins/korganizer/journalplugin.cpp:48
+#, fuzzy
+#| msgid "New Journal..."
+msgctxt "@action:inmenu"
 msgid "New Journal..."
 msgstr "नवा दैनिकी..."
 
-#: plugins/korganizer/journalplugin.cpp:49
+#: plugins/korganizer/journalplugin.cpp:52
+#, fuzzy
+#| msgid "New Contact..."
+msgctxt "@info:status"
 msgid "Create a new journal"
+msgstr "नवा सम्पर्क..."
+
+#: plugins/korganizer/journalplugin.cpp:55
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new journal entry."
 msgstr ""
 
-#: plugins/korganizer/journalplugin.cpp:53
+#: plugins/korganizer/journalplugin.cpp:62
 #, fuzzy
 #| msgid "Synchronize Journal"
+msgctxt "@action:inmenu"
 msgid "Sync Journal"
 msgstr "दैनिकी सिंक्रोनाइज करव"
 
-#: plugins/korganizer/journalplugin.cpp:54
+#: plugins/korganizer/journalplugin.cpp:65
 #, fuzzy
 #| msgid "Synchronize Mail"
+msgctxt "@info:status"
 msgid "Synchronize groupware journal"
 msgstr "डाक सिंक्रोनाइज करव"
+
+#: plugins/korganizer/journalplugin.cpp:68
+msgctxt "@info:whatsthis"
+msgid "Choose this option to synchronize your groupware journal entries."
+msgstr ""
 
 #: plugins/korganizer/kcmapptsummary.cpp:83
 #: plugins/korganizer/kcmtodosummary.cpp:76 plugins/planner/kcmplanner.cpp:90
@@ -1838,25 +2198,44 @@ msgstr "केसीएमटूडूसमरी"
 msgid "Pending To-dos Configuration Dialog"
 msgstr "लंबित कामसूची कान्फिगरेसन गोठ"
 
-#: plugins/korganizer/korganizerplugin.cpp:62
+#: plugins/korganizer/korganizerplugin.cpp:63
+#, fuzzy
+#| msgid "New Event..."
+msgctxt "@action:inmenu"
 msgid "New Event..."
 msgstr "नवा कारक्रम..."
 
-#: plugins/korganizer/korganizerplugin.cpp:65
+#: plugins/korganizer/korganizerplugin.cpp:67
+#, fuzzy
+#| msgid "New Contact..."
+msgctxt "@info:status"
 msgid "Create a new event"
-msgstr ""
+msgstr "नवा सम्पर्क..."
 
 #: plugins/korganizer/korganizerplugin.cpp:70
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new event item."
+msgstr ""
+
+#: plugins/korganizer/korganizerplugin.cpp:76
 #, fuzzy
 #| msgid "Synchronize Calendar"
+msgctxt "@action:inmenu"
 msgid "Sync Calendar"
 msgstr "कलेन्डर सिंक्रोनाइज करव"
 
-#: plugins/korganizer/korganizerplugin.cpp:72
+#: plugins/korganizer/korganizerplugin.cpp:79
 #, fuzzy
 #| msgid "Synchronize Mail"
+msgctxt "@info:status"
 msgid "Synchronize groupware calendar"
 msgstr "डाक सिंक्रोनाइज करव"
+
+#: plugins/korganizer/korganizerplugin.cpp:82
+msgctxt "@info:whatsthis"
+msgid "Choose this option to synchronize your groupware events."
+msgstr ""
 
 #: plugins/korganizer/summaryeventinfo.cpp:54
 #: plugins/specialdates/sdsummarywidget.cpp:288
@@ -1933,22 +2312,45 @@ msgctxt "next occurrence"
 msgid "Next: %1"
 msgstr "टीप: %1"
 
-#: plugins/korganizer/todoplugin.cpp:61
+#: plugins/korganizer/todoplugin.cpp:62
+#, fuzzy
+#| msgid "New To-do..."
+msgctxt "@action:inmenu"
 msgid "New To-do..."
 msgstr "नवा काम सूची..."
 
-#: plugins/korganizer/todoplugin.cpp:64
+#: plugins/korganizer/todoplugin.cpp:66
+#, fuzzy
+#| msgid "New Contact..."
+msgctxt "@info:status"
 msgid "Create a new to-do"
-msgstr ""
+msgstr "नवा सम्पर्क..."
 
 #: plugins/korganizer/todoplugin.cpp:69
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create a new to-do item."
+msgstr ""
+
+#: plugins/korganizer/todoplugin.cpp:75
+#, fuzzy
+#| msgid "Sync To-do List"
+msgctxt "@action:inmenu"
 msgid "Sync To-do List"
 msgstr "काम-सूची सिंक्रोनाइज करव"
 
-#: plugins/korganizer/todoplugin.cpp:70
+#: plugins/korganizer/todoplugin.cpp:77
 #, fuzzy
 #| msgid "Synchronize Contacts"
+msgctxt "@info:status"
 msgid "Synchronize groupware to-do list"
+msgstr "सम्पर्क सिंक्रोनाइज करव"
+
+#: plugins/korganizer/todoplugin.cpp:80
+#, fuzzy
+#| msgid "Synchronize Contacts"
+msgctxt "@info:whatsthis"
+msgid "Choose this option to synchronize your groupware to-do list."
 msgstr "सम्पर्क सिंक्रोनाइज करव"
 
 #: plugins/korganizer/todosummarywidget.cpp:57
@@ -2047,12 +2449,25 @@ msgctxt "Separator for status like this: overdue, completed"
 msgid ","
 msgstr ","
 
-#: plugins/ktimetracker/ktimetracker_plugin.cpp:43
+#: plugins/ktimetracker/ktimetracker_plugin.cpp:45
+#, fuzzy
+#| msgid "New Task"
+msgctxt "@action:inmenu"
 msgid "New Task"
 msgstr "नवा काम"
 
-#: plugins/ktimetracker/ktimetracker_plugin.cpp:46
+#: plugins/ktimetracker/ktimetracker_plugin.cpp:49
+#, fuzzy
+#| msgid "New Contact..."
+msgctxt "@info:status"
 msgid "Create a new time tracking"
+msgstr "नवा सम्पर्क..."
+
+#: plugins/ktimetracker/ktimetracker_plugin.cpp:52
+msgctxt "@info:whatsthis"
+msgid ""
+"You will be presented with a dialog where you can create and start a new "
+"time tracking."
 msgstr ""
 
 #: plugins/planner/kcmplanner.cpp:240
@@ -2176,6 +2591,11 @@ msgstr "कान्टेक्ट प्लानर सारांस"
 #: plugins/specialdates/specialdates_plugin.cpp:60
 msgid "(c) 2004-2005 The KDE PIM Team"
 msgstr "(c) 2004-2005  केडीई पीआईएम टोली"
+
+#: plugins/planner/plannerplugin.cpp:62
+#: plugins/specialdates/specialdates_plugin.cpp:62
+msgid "Current Maintainer"
+msgstr "अभी हाल के मेंटेनर"
 
 #: plugins/specialdates/kcmsdsummary.cpp:175
 msgid "kcmsdsummary"
@@ -2333,6 +2753,9 @@ msgstr "पाप अप नोट संपादित करव"
 msgctxt "@label popup note name"
 msgid "Name:"
 msgstr "नाम:"
+
+#~ msgid "kontactconfig"
+#~ msgstr "कान्टेक्ट-कान्फिग"
 
 #~ msgid " days"
 #~ msgstr " दिन"
