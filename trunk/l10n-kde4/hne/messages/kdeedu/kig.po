@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kig\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-30 06:22+0100\n"
+"POT-Creation-Date: 2009-10-31 06:27+0100\n"
 "PO-Revision-Date: 2009-02-23 13:11+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1753,7 +1753,7 @@ msgstr "एखर सीर्सों से बहुभुज"
 msgid "Construct a polygon by giving its vertices"
 msgstr "एखर दे गे सीर्सों के साथ बहुभुज बनाव"
 
-#: misc/special_constructors.cc:593 misc/special_constructors.cc:744
+#: misc/special_constructors.cc:593
 msgid ""
 "... with this vertex (click on the first vertex to terminate construction)"
 msgstr "... एखर सीर्स के साथ (संरचना ल रोकने बर पहिली वर्टेक्स मं किलिक करव)"
@@ -1776,16 +1776,25 @@ msgstr ""
 msgid "Construct a open polygon"
 msgstr "ये बहुभुज के भुजाओं ल बनाव"
 
+#: misc/special_constructors.cc:744
+#, fuzzy
+#| msgid ""
+#| "... with this vertex (click on the first vertex to terminate construction)"
+msgid ""
+"... with this vertex (click again on the last vertex to terminate "
+"construction)"
+msgstr "... एखर सीर्स के साथ (संरचना ल रोकने बर पहिली वर्टेक्स मं किलिक करव)"
+
 #: misc/special_constructors.cc:745
 #, fuzzy
 #| msgid "Construct a polygon with this vertex"
-msgid "Construct a open polygon (polyline) with this vertex"
+msgid "Construct a polygonal line with this vertex"
 msgstr "ये सीर्स के साथ एक बहुभुज बनाव"
 
 #: misc/special_constructors.cc:752
 #, fuzzy
 #| msgid "Select a point to be a vertex of the new polygon..."
-msgid "Select a point to be a vertex of the new open polygon..."
+msgid "Select a point to be a vertex of the new polygonal line..."
 msgstr "नवा बहुभुज के वर्टेक्स बनाए बर बिन्दु चुनव..."
 
 #: misc/special_constructors.cc:807 misc/special_constructors.cc:874
@@ -1871,15 +1880,15 @@ msgstr "एखर दे गे सीर्सों के साथ बहु
 #| msgid ""
 #| "... with this vertex (click on the first vertex to terminate construction)"
 msgid ""
-"... with this control point (click on the first control point to terminate "
-"construction)"
+"... with this control point (click again on the last control point to "
+"terminate construction)"
 msgstr "... एखर सीर्स के साथ (संरचना ल रोकने बर पहिली वर्टेक्स मं किलिक करव)"
 
 #: misc/special_constructors.cc:1328
 #, fuzzy
-#| msgid "Construct a polygon with this vertex"
-msgid "Construct a polygon with this control point"
-msgstr "ये सीर्स के साथ एक बहुभुज बनाव"
+#| msgid "Construct a circle with this center"
+msgid "Construct a Bézie curve with this control point"
+msgstr "ये केंद्र के साथ एक वृत्त के बनाव"
 
 #: misc/special_constructors.cc:1335
 #, fuzzy
@@ -2917,7 +2926,7 @@ msgstr "जांच परिनाम"
 msgid "Select a point on the curve..."
 msgstr "वक्र मं एक बिन्दु चुनव..."
 
-#: objects/circle_imp.cc:146 objects/polygon_imp.cc:246
+#: objects/circle_imp.cc:146 objects/polygon_imp.cc:276
 msgid "Surface"
 msgstr "सतह"
 
@@ -3458,7 +3467,7 @@ msgstr "ढाल"
 msgid "Equation"
 msgstr "समीकरन"
 
-#: objects/line_imp.cc:123 objects/other_imp.cc:215
+#: objects/line_imp.cc:123 objects/other_imp.cc:215 objects/polygon_imp.cc:273
 msgid "Length"
 msgstr "लंबाई"
 
@@ -4039,184 +4048,278 @@ msgstr "बिन्दु के x निर्देसांक मन के
 msgid "Select a number/length as y coordinate of the point..."
 msgstr "बिन्दु के y निर्देसांक मन के रूप मं संख्या/लंबाई चुनव..."
 
-#: objects/polygon_imp.cc:244
+#: objects/polygon_imp.cc:272
 msgid "Number of sides"
 msgstr "भुजाओं के संख्या"
 
-#: objects/polygon_imp.cc:245
+#: objects/polygon_imp.cc:274
 msgid "Perimeter"
 msgstr "घेरा"
 
-#: objects/polygon_imp.cc:247
+#: objects/polygon_imp.cc:275
+#, fuzzy
+#| msgid "Hide a Curve"
+msgid "Bezier Curve"
+msgstr "वक्र लुकाव"
+
+#: objects/polygon_imp.cc:279
+#, fuzzy
+#| msgid "Add a Polygon"
+msgid "Associated Polygon"
+msgstr "बहुभुज जोड़व"
+
+#: objects/polygon_imp.cc:280
+#, fuzzy
+#| msgid "Move a Polygon"
+msgid "Closed Polygonal"
+msgstr "बहुभुज खिसकाव"
+
+#: objects/polygon_imp.cc:284
+#, fuzzy
+#| msgid "Add a Polygon"
+msgid "Boundary Polygonal"
+msgstr "बहुभुज जोड़व"
+
+#: objects/polygon_imp.cc:285
+msgid "Open Boundary Polygonal"
+msgstr ""
+
+#: objects/polygon_imp.cc:287
+#, fuzzy
+#| msgid "Hide a Polygon"
+msgid "Inside Polygon"
+msgstr "बहुभुज लुकाव"
+
+#: objects/polygon_imp.cc:288
+#, fuzzy
+#| msgid "Polygon"
+msgid "Open Polygonal"
+msgstr "बहुभुज"
+
+#: objects/polygon_imp.cc:293
 msgid "Center of Mass of the Vertices"
 msgstr "सीर्स के केंद्र के द्रव्यमान"
 
-#: objects/polygon_imp.cc:248
+#: objects/polygon_imp.cc:294
 msgid "Winding Number"
 msgstr "वाइंडिंग संख्या"
 
-#: objects/polygon_imp.cc:374
+#: objects/polygon_imp.cc:445
 msgid "polygon"
 msgstr "बहुभुज"
 
-#: objects/polygon_imp.cc:375
+#: objects/polygon_imp.cc:446
 msgid "Select this polygon"
 msgstr "ये बहुभुज ल चुनव"
 
-#: objects/polygon_imp.cc:376
+#: objects/polygon_imp.cc:447
 #, kde-format
 msgid "Select polygon %1"
 msgstr "बहुभुज %1 चुनव"
 
-#: objects/polygon_imp.cc:377
+#: objects/polygon_imp.cc:448
 msgid "Remove a Polygon"
 msgstr "बहुभुज मेटाव"
 
-#: objects/polygon_imp.cc:378
+#: objects/polygon_imp.cc:449
 msgid "Add a Polygon"
 msgstr "बहुभुज जोड़व"
 
-#: objects/polygon_imp.cc:379
+#: objects/polygon_imp.cc:450
 msgid "Move a Polygon"
 msgstr "बहुभुज खिसकाव"
 
-#: objects/polygon_imp.cc:380
+#: objects/polygon_imp.cc:451
 msgid "Attach to this polygon"
 msgstr "ये बहुभुज के साथ संलग्न करव"
 
-#: objects/polygon_imp.cc:381
+#: objects/polygon_imp.cc:452
 msgid "Show a Polygon"
 msgstr "बहुभुज देखाव"
 
-#: objects/polygon_imp.cc:382
+#: objects/polygon_imp.cc:453
 msgid "Hide a Polygon"
 msgstr "बहुभुज लुकाव"
 
-#: objects/polygon_imp.cc:392
+#: objects/polygon_imp.cc:463
+#, fuzzy
+#| msgid "polygon"
+msgid "closed polygonal"
+msgstr "बहुभुज"
+
+#: objects/polygon_imp.cc:464
+#, fuzzy
+#| msgid "Select this polygon"
+msgid "Select this closed polygonal"
+msgstr "ये बहुभुज ल चुनव"
+
+#: objects/polygon_imp.cc:465
+#, fuzzy, kde-format
+#| msgid "Select polygon %1"
+msgid "Select closed polygonal %1"
+msgstr "बहुभुज %1 चुनव"
+
+#: objects/polygon_imp.cc:466
+#, fuzzy
+#| msgid "Remove a Polygon"
+msgid "Remove a closed polygonal"
+msgstr "बहुभुज मेटाव"
+
+#: objects/polygon_imp.cc:467
+#, fuzzy
+#| msgid "Add a Polygon"
+msgid "Add a closed polygonal"
+msgstr "बहुभुज जोड़व"
+
+#: objects/polygon_imp.cc:468
+#, fuzzy
+#| msgid "Move a Polygon"
+msgid "Move a closed polygonal"
+msgstr "बहुभुज खिसकाव"
+
+#: objects/polygon_imp.cc:469
+#, fuzzy
+#| msgid "Attach to this polygon"
+msgid "Attach to this closed polygonal"
+msgstr "ये बहुभुज के साथ संलग्न करव"
+
+#: objects/polygon_imp.cc:470
+#, fuzzy
+#| msgid "Show a Polygon"
+msgid "Show a closed polygonal"
+msgstr "बहुभुज देखाव"
+
+#: objects/polygon_imp.cc:471
+#, fuzzy
+#| msgid "Hide a Polygon"
+msgid "Hide a closed polygonal"
+msgstr "बहुभुज लुकाव"
+
+#: objects/polygon_imp.cc:481
 #, fuzzy
 #| msgid "polygon"
 msgid "polygonal curve"
 msgstr "बहुभुज"
 
-#: objects/polygon_imp.cc:393
+#: objects/polygon_imp.cc:482
 #, fuzzy
 #| msgid "Select this polygon"
 msgid "Select this polygonal curve"
 msgstr "ये बहुभुज ल चुनव"
 
-#: objects/polygon_imp.cc:394
+#: objects/polygon_imp.cc:483
 #, fuzzy, kde-format
 #| msgid "Select polygon %1"
 msgid "Select polygonal curve %1"
 msgstr "बहुभुज %1 चुनव"
 
-#: objects/polygon_imp.cc:395
+#: objects/polygon_imp.cc:484
 #, fuzzy
 #| msgid "Remove a Polygon"
-msgid "Remove a Polygonal curve"
+msgid "Remove a polygonal curve"
 msgstr "बहुभुज मेटाव"
 
-#: objects/polygon_imp.cc:396
+#: objects/polygon_imp.cc:485
 #, fuzzy
 #| msgid "Add a Polygon"
-msgid "Add a Polygonal curve"
+msgid "Add a polygonal curve"
 msgstr "बहुभुज जोड़व"
 
-#: objects/polygon_imp.cc:397
+#: objects/polygon_imp.cc:486
 #, fuzzy
 #| msgid "Move a Polygon"
-msgid "Move a Polygonal curve"
+msgid "Move a polygonal curve"
 msgstr "बहुभुज खिसकाव"
 
-#: objects/polygon_imp.cc:398
+#: objects/polygon_imp.cc:487
 #, fuzzy
 #| msgid "Attach to this polygon"
 msgid "Attach to this polygonal curve"
 msgstr "ये बहुभुज के साथ संलग्न करव"
 
-#: objects/polygon_imp.cc:399
+#: objects/polygon_imp.cc:488
 #, fuzzy
 #| msgid "Show a Polygon"
-msgid "Show a Polygonal curve"
+msgid "Show a polygonal curve"
 msgstr "बहुभुज देखाव"
 
-#: objects/polygon_imp.cc:400
+#: objects/polygon_imp.cc:489
 #, fuzzy
 #| msgid "Hide a Polygon"
-msgid "Hide a Polygonal curve"
+msgid "Hide a polygonal curve"
 msgstr "बहुभुज लुकाव"
 
-#: objects/polygon_imp.cc:410
+#: objects/polygon_imp.cc:499
 msgid "triangle"
 msgstr "त्रिभुज"
 
-#: objects/polygon_imp.cc:411
+#: objects/polygon_imp.cc:500
 msgid "Select this triangle"
 msgstr "ये त्रिभुज ल चुनव"
 
-#: objects/polygon_imp.cc:412
+#: objects/polygon_imp.cc:501
 #, kde-format
 msgid "Select triangle %1"
 msgstr "त्रिभुज %1 ल चुनव"
 
-#: objects/polygon_imp.cc:413
+#: objects/polygon_imp.cc:502
 msgid "Remove a Triangle"
 msgstr "त्रिभुज मेटाव"
 
-#: objects/polygon_imp.cc:414
+#: objects/polygon_imp.cc:503
 msgid "Add a Triangle"
 msgstr "त्रिभुज जोड़व"
 
-#: objects/polygon_imp.cc:415
+#: objects/polygon_imp.cc:504
 msgid "Move a Triangle"
 msgstr "त्रिभुज खिसकाव"
 
-#: objects/polygon_imp.cc:416
+#: objects/polygon_imp.cc:505
 msgid "Attach to this triangle"
 msgstr "ये त्रिभुज के साथ संलग्न करव"
 
-#: objects/polygon_imp.cc:417
+#: objects/polygon_imp.cc:506
 msgid "Show a Triangle"
 msgstr "त्रिभुज देखाव"
 
-#: objects/polygon_imp.cc:418
+#: objects/polygon_imp.cc:507
 msgid "Hide a Triangle"
 msgstr "त्रिभुज लुकाव"
 
-#: objects/polygon_imp.cc:428
+#: objects/polygon_imp.cc:517
 msgid "quadrilateral"
 msgstr "क्वाड्रिलेचरल"
 
-#: objects/polygon_imp.cc:429
+#: objects/polygon_imp.cc:518
 msgid "Select this quadrilateral"
 msgstr "ये चतुर्भुज ल चुनव"
 
-#: objects/polygon_imp.cc:430
+#: objects/polygon_imp.cc:519
 #, kde-format
 msgid "Select quadrilateral %1"
 msgstr "चतुर्भुज %1 ल चुनव"
 
-#: objects/polygon_imp.cc:431
+#: objects/polygon_imp.cc:520
 msgid "Remove a Quadrilateral"
 msgstr "चतुर्भुज मेटाव"
 
-#: objects/polygon_imp.cc:432
+#: objects/polygon_imp.cc:521
 msgid "Add a Quadrilateral"
 msgstr "चतुर्भुज जोड़व"
 
-#: objects/polygon_imp.cc:433
+#: objects/polygon_imp.cc:522
 msgid "Move a Quadrilateral"
 msgstr "चतुर्भुज खिसकाव"
 
-#: objects/polygon_imp.cc:434
+#: objects/polygon_imp.cc:523
 msgid "Attach to this quadrilateral"
 msgstr "ये चतुर्भुज के साथ संलग्न करव"
 
-#: objects/polygon_imp.cc:435
+#: objects/polygon_imp.cc:524
 msgid "Show a Quadrilateral"
 msgstr "चतुर्भुज देखाव"
 
-#: objects/polygon_imp.cc:436
+#: objects/polygon_imp.cc:525
 msgid "Hide a Quadrilateral"
 msgstr "चतुर्भुज लुकाव"
 
@@ -5567,6 +5670,21 @@ msgstr ""
 #: modes/typesdialog.cpp:496
 msgid "More Than One Type Selected"
 msgstr "एक से अधिक किसिम चुने गे"
+
+#, fuzzy
+#~| msgid "Construct a polygon with this vertex"
+#~ msgid "Construct a open polygon (polyline) with this vertex"
+#~ msgstr "ये सीर्स के साथ एक बहुभुज बनाव"
+
+#, fuzzy
+#~| msgid "Select a point to be a vertex of the new polygon..."
+#~ msgid "Select a point to be a vertex of the new open polygon..."
+#~ msgstr "नवा बहुभुज के वर्टेक्स बनाए बर बिन्दु चुनव..."
+
+#, fuzzy
+#~| msgid "Construct a polygon with this vertex"
+#~ msgid "Construct a polygon with this control point"
+#~ msgstr "ये सीर्स के साथ एक बहुभुज बनाव"
 
 #~ msgid "%1 Objects"
 #~ msgstr "%1 चीज"
