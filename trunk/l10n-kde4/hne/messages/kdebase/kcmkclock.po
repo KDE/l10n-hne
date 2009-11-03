@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkclock\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-01 06:23+0200\n"
+"POT-Creation-Date: 2009-11-03 06:09+0100\n"
 "PO-Revision-Date: 2009-02-10 12:26+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,15 +18,7 @@ msgstr ""
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: dtime.cpp:76
-msgid "Set date and time &automatically:"
-msgstr "तारीक अउ समय ल अपने अपन सेट करव: (&a)"
-
-#: dtime.cpp:102
-msgid "Here you can change the system date's day of the month, month and year."
-msgstr "इहां आप मन तंत्र के तारीक, दिन, महिना अउ साल ल बदल सकथो ."
-
-#: dtime.cpp:130
+#: dtime.cpp:98
 msgid ""
 "Here you can change the system time. Click into the hours, minutes or "
 "seconds field to change the relevant value, either using the up and down "
@@ -35,7 +27,12 @@ msgstr ""
 "इहां आप मन तंत्र के समय ल बदल सकथो . घंटा, मिनट या सेकन्ड मं किलिक करव फिर जेवनी दे गए "
 "ऊपर या नीचे बटन के उपयोग से या नवा मान भर के संबंधित समय बदलव."
 
-#: dtime.cpp:215
+#: dtime.cpp:122
+#, kde-format
+msgid "Current local time zone: %1 (%2)"
+msgstr "अभी हाल के लोकल समय छेत्रः %1 (%2)"
+
+#: dtime.cpp:188
 msgid ""
 "Public Time Server (pool.ntp.org),asia.pool.ntp.org,europe.pool.ntp.org,"
 "north-america.pool.ntp.org,oceania.pool.ntp.org"
@@ -43,16 +40,24 @@ msgstr ""
 "पब्लिक टाइम सर्वर (pool.ntp.org),asia.pool.ntp.org,europe.pool.ntp.org,north-"
 "america.pool.ntp.org,oceania.pool.ntp.org"
 
-#: dtime.cpp:275
+#: dtime.cpp:267
 #, kde-format
 msgid "Unable to contact time server: %1."
 msgstr "समय सर्वर : %1 से जुड़े मं असमर्थ."
 
-#: dtime.cpp:279
+#: dtime.cpp:271
 msgid "Can not set date."
 msgstr "तारीक सेट नइ कर सके."
 
-#: dtime.cpp:297 main.cpp:62
+#: dtime.cpp:274
+msgid "Error setting new time zone."
+msgstr "नवा समय छेत्र (टाइम जोन) सेट करे मं गलती."
+
+#: dtime.cpp:275
+msgid "Time zone Error"
+msgstr "समय छेत्र गलती"
+
+#: dtime.cpp:292 main.cpp:61
 msgid ""
 "<h1>Date & Time</h1> This control module can be used to set the system date "
 "and time. As these settings do not only affect you as a user, but rather the "
@@ -66,73 +71,116 @@ msgstr ""
 "करहू. यदि आप मन तिर रूट पासवर्ड नइ हे, फेर चाहथो कि तंत्र के समय सही करे जाना चाही, "
 "किरपा करके, अपन तंत्र प्रसासक से संपर्क करव."
 
-#: main.cpp:54
+#: main.cpp:53
 msgid "kcmclock"
 msgstr "केसीएमक्लाक"
 
-#: main.cpp:54
+#: main.cpp:53
 msgid "KDE Clock Control Module"
 msgstr "केडीई घड़ी नियंत्रन माड्यूल"
 
-#: main.cpp:56
+#: main.cpp:55
 msgid "(c) 1996 - 2001 Luca Montecchiani"
 msgstr "(c) 1996 - 2001 लुका मान्तेचियानी"
 
-#: main.cpp:58
+#: main.cpp:57
 msgid "Luca Montecchiani"
 msgstr "लुका मान्तेचियानी"
 
-#: main.cpp:58
+#: main.cpp:57
 msgid "Original author"
 msgstr "मूल लेखक"
 
-#: main.cpp:59
+#: main.cpp:58
 msgid "Paul Campbell"
 msgstr "पाल कैम्पबेल"
 
-#: main.cpp:59
+#: main.cpp:58
 msgid "Current Maintainer"
 msgstr "अभी हाल के के मेंटेनर"
 
-#: main.cpp:60
+#: main.cpp:59
 msgid "Benjamin Meyer"
 msgstr "बेंजामिन मेयर"
 
-#: main.cpp:60
+#: main.cpp:59
 msgid "Added NTP support"
 msgstr "एनटीपी समर्थन जोड़ दे गे हे"
 
-#: main.cpp:103
+#: main.cpp:97
 #, kde-format
 msgid "Unable to authenticate/execute the action: %1, %2"
 msgstr ""
 
-#: rc.cpp:1
+#. i18n: file: dateandtime.ui:15
+#. i18n: ectx: property (windowTitle), widget (QWidget, DateAndTime)
+#: rc.cpp:3
+msgid "Form"
+msgstr ""
+
+#. i18n: file: dateandtime.ui:25
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: rc.cpp:6
+msgid "Date and Time"
+msgstr ""
+
+#. i18n: file: dateandtime.ui:31
+#. i18n: ectx: property (whatsThis), widget (KDatePicker, cal)
+#: rc.cpp:9
+msgid "Here you can change the system date's day of the month, month and year."
+msgstr "इहां आप मन तंत्र के तारीक, दिन, महिना अउ साल ल बदल सकथो ."
+
+#. i18n: file: dateandtime.ui:49
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: rc.cpp:12
+#, fuzzy
+#| msgid "Time zone Error"
+msgid "Time Zone"
+msgstr "समय छेत्र गलती"
+
+#. i18n: file: dateandtime.ui:55
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:15
+#, fuzzy
+#| msgid "To change the local time zone, select your area from the list below"
+msgid "To change the local time zone, select your area from the list below."
+msgstr "समय छेत्र बदले बर, नीचे दे गे सूची मं से अपन छेत्र चुनव"
+
+#. i18n: file: dateandtime.ui:78
+#. i18n: ectx: property (text), widget (QLabel, m_local)
+#: rc.cpp:18
+#, fuzzy
+#| msgid "Current local time zone: %1 (%2)"
+msgid "Current local time zone:"
+msgstr "अभी हाल के लोकल समय छेत्रः %1 (%2)"
+
+#. i18n: file: dateandtime.ui:105
+#. i18n: ectx: attribute (title), widget (QWidget, tab_3)
+#: rc.cpp:24
+msgid "NTP"
+msgstr ""
+
+#. i18n: file: dateandtime.ui:111
+#. i18n: ectx: property (text), widget (QCheckBox, setDateTimeAuto)
+#: rc.cpp:27
+msgid "Set date and time &automatically:"
+msgstr "तारीक अउ समय ल अपने अपन सेट करव: (&a)"
+
+#. i18n: file: dateandtime.ui:134
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:30
+msgid "Time server:"
+msgstr ""
+
+#: rc.cpp:31
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
 
-#: rc.cpp:2
+#: rc.cpp:32
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raviratlami@aol.in"
-
-#: tzone.cpp:58
-msgid "To change the local time zone, select your area from the list below"
-msgstr "समय छेत्र बदले बर, नीचे दे गे सूची मं से अपन छेत्र चुनव"
-
-#: tzone.cpp:88
-#, kde-format
-msgid "Current local time zone: %1 (%2)"
-msgstr "अभी हाल के लोकल समय छेत्रः %1 (%2)"
-
-#: tzone.cpp:114
-msgid "Error setting new time zone."
-msgstr "नवा समय छेत्र (टाइम जोन) सेट करे मं गलती."
-
-#: tzone.cpp:115
-msgid "Time zone Error"
-msgstr "समय छेत्र गलती"
 
 #~ msgid "Failed to set system date/time/time zone."
 #~ msgstr "तंत्र तारीक/समय/समय क्षेत्र/ सेट करे मं फेल."
