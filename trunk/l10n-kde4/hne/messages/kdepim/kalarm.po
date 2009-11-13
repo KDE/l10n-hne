@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-02 07:01+0100\n"
+"POT-Creation-Date: 2009-11-13 06:13+0100\n"
 "PO-Revision-Date: 2009-02-27 17:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -454,7 +454,7 @@ msgctxt "@info:whatsthis"
 msgid "Enter the name or URL of a text or image file to display."
 msgstr "पाठ या फोटू फाइल के यूआरएल या नाम भरव जऊन ल प्रदर्सित करे जाही ."
 
-#: editdlgtypes.cpp:188 editdlgtypes.cpp:781 sounddlg.cpp:169
+#: editdlgtypes.cpp:188 editdlgtypes.cpp:781 sounddlg.cpp:178
 msgctxt "@info:tooltip"
 msgid "Choose a file"
 msgstr "एक फाइल चुनव"
@@ -799,22 +799,22 @@ msgctxt "@title:window"
 msgid "Edit Audio Alarm"
 msgstr "ईमेल अलार्म संपादित करव"
 
-#: editdlgtypes.cpp:1599
+#: editdlgtypes.cpp:1600
 msgctxt "@info:whatsthis"
 msgid "Check to enter the contents of a script instead of a shell command line"
 msgstr "सैल कमांड लाइन के बदले स्क्रिप्ट के सामान ल भरे बर चुनव"
 
-#: editdlgtypes.cpp:1605
+#: editdlgtypes.cpp:1606
 msgctxt "@info:whatsthis"
 msgid "Enter a shell command to execute."
 msgstr "चलाय बर एक सेल कमांड चुनव."
 
-#: editdlgtypes.cpp:1610
+#: editdlgtypes.cpp:1611
 msgctxt "@info:whatsthis"
 msgid "Enter the contents of a script to execute"
 msgstr "चलाय बर स्क्रिप्ट के सामान भरव"
 
-#: editdlgtypes.cpp:1666
+#: editdlgtypes.cpp:1667
 #, fuzzy
 #| msgctxt "@info:whatsthis"
 #| msgid "Enter the contents of a script to execute"
@@ -2219,19 +2219,19 @@ msgctxt "@info"
 msgid "<para>%1</para><para>(Error communicating with KOrganizer)</para>"
 msgstr "<para>%1</para><para>का आप मन सही मं बदलाव मन ल सहेजना चाहथो ?<para>"
 
-#: functions.cpp:1009
+#: functions.cpp:1012
 #, fuzzy
 msgctxt "@info"
 msgid "You must enable a template calendar to save the template in"
 msgstr "जिस संसाधन मं अलार्म ल सहेजना हे ओला आप मन ल चुनना होही"
 
-#: functions.cpp:1190
+#: functions.cpp:1193
 #, kde-format
 msgctxt "@info Please set the 'From' email address..."
 msgid "<para>%1</para><para>Please set it in the Configuration dialog.</para>"
 msgstr "<para>%1</para><para>किरपा करके, एला प्राथमिकता गोठ मं सेट करव.</para>"
 
-#: functions.cpp:1194
+#: functions.cpp:1197
 msgctxt "@info"
 msgid ""
 "<para>Alarms are currently disabled.</para><para>Do you want to enable "
@@ -2240,17 +2240,17 @@ msgstr ""
 "<para>अलार्म अभी अक्छम हे.</para><para>. का आप मन अलार्मों ल अभी सक्छम करना चाहथो ?"
 "</para>"
 
-#: functions.cpp:1195
+#: functions.cpp:1198
 msgctxt "@action:button"
 msgid "Enable"
 msgstr "सक्छम करव"
 
-#: functions.cpp:1195
+#: functions.cpp:1198
 msgctxt "@action:button"
 msgid "Keep Disabled"
 msgstr "अक्छम बनाए रखव"
 
-#: functions.cpp:1262
+#: functions.cpp:1265
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -2258,12 +2258,12 @@ msgid ""
 msgstr ""
 "<application>केमेल</application> चालू करे मं अक्छम<nl />(<message>%1</message>)"
 
-#: functions.cpp:1540
+#: functions.cpp:1543
 msgctxt "@info"
 msgid "Please select a file to display"
 msgstr "फाइल प्रदर्सित करे बर किरपा करके, चुनव"
 
-#: functions.cpp:1542
+#: functions.cpp:1545
 #, fuzzy
 #| msgctxt "@info"
 #| msgid "Please select a file to display"
@@ -2271,25 +2271,25 @@ msgctxt "@info"
 msgid "Please select a file to play"
 msgstr "फाइल प्रदर्सित करे बर किरपा करके, चुनव"
 
-#: functions.cpp:1548
+#: functions.cpp:1551
 #, kde-format
 msgctxt "@info"
 msgid "<filename>%1</filename> is a folder"
 msgstr "<filename>%1</filename> एक फोल्डर हे"
 
-#: functions.cpp:1550
+#: functions.cpp:1553
 #, kde-format
 msgctxt "@info"
 msgid "<filename>%1</filename> not found"
 msgstr "<filename>%1</filename> नइ मिलिस"
 
-#: functions.cpp:1551
+#: functions.cpp:1554
 #, kde-format
 msgctxt "@info"
 msgid "<filename>%1</filename> is not readable"
 msgstr "<filename>%1</filename> पढ़े जइसन नइ हे"
 
-#: functions.cpp:1552
+#: functions.cpp:1555
 #, kde-format
 msgctxt "@info"
 msgid "<filename>%1</filename> appears not to be a text or image file"
@@ -3655,95 +3655,103 @@ msgctxt "@option:check"
 msgid "Repeat"
 msgstr "दुहराव"
 
-#: sounddlg.cpp:153 sounddlg.cpp:406
+#: sounddlg.cpp:146
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "Sound file:"
+msgctxt "@label"
+msgid "Sound file:"
+msgstr "अवाज फाइल:"
+
+#: sounddlg.cpp:160 sounddlg.cpp:415
 msgctxt "@info:tooltip"
 msgid "Test the sound"
 msgstr "अवाज परीक्छन"
 
-#: sounddlg.cpp:154 sounddlg.cpp:407
+#: sounddlg.cpp:161 sounddlg.cpp:416
 msgctxt "@info:whatsthis"
 msgid "Play the selected sound file."
 msgstr "चुने गे अवाज फाइल बजाव."
 
-#: sounddlg.cpp:160
+#: sounddlg.cpp:167
 msgctxt "@info:whatsthis"
 msgid "Enter the name or URL of a sound file to play."
 msgstr "बजाय बर अवाज फाइल के नाम या यूआरएल भरव."
 
-#: sounddlg.cpp:170
+#: sounddlg.cpp:179
 msgctxt "@info:whatsthis"
 msgid "Select a sound file to play."
 msgstr "बजाय बर अवाज फाइल चुनव."
 
-#: sounddlg.cpp:184
+#: sounddlg.cpp:193
 msgctxt "@info:whatsthis"
 msgid ""
 "If checked, the sound file will be played repeatedly for as long as the "
 "message is displayed."
 msgstr "यदि चुने जाथे , जब तक संदेस प्रदर्सित रहिही, अवाज फाइल बारंबार बजता रहिही."
 
-#: sounddlg.cpp:190
+#: sounddlg.cpp:199
 msgctxt "@title:group Sound volume"
 msgid "Volume"
 msgstr "अवाज निर्धारक"
 
-#: sounddlg.cpp:205
+#: sounddlg.cpp:214
 msgctxt "@option:check"
 msgid "Set volume"
 msgstr "अवाज सेट करव"
 
-#: sounddlg.cpp:208
+#: sounddlg.cpp:217
 msgctxt "@info:whatsthis"
 msgid "Select to choose the volume for playing the sound file."
 msgstr "अवाज फाइल बजाय बर अवाज स्तर बर चुनव."
 
-#: sounddlg.cpp:215
+#: sounddlg.cpp:224
 msgctxt "@info:whatsthis"
 msgid "Choose the volume for playing the sound file."
 msgstr "अवाज फाइल बजाय बर अवाज स्तर चुनव"
 
-#: sounddlg.cpp:220
+#: sounddlg.cpp:229
 msgctxt "@option:check"
 msgid "Fade"
 msgstr "फीका"
 
-#: sounddlg.cpp:223
+#: sounddlg.cpp:232
 msgctxt "@info:whatsthis"
 msgid "Select to fade the volume when the sound file first starts to play."
 msgstr ""
 
-#: sounddlg.cpp:231
+#: sounddlg.cpp:240
 msgctxt "@label:spinbox Time period over which to fade the sound"
 msgid "Fade time:"
 msgstr "धीमा होए के समय:"
 
-#: sounddlg.cpp:238
+#: sounddlg.cpp:247
 msgctxt "@label"
 msgid "seconds"
 msgstr "सेकन्ड"
 
-#: sounddlg.cpp:240
+#: sounddlg.cpp:249
 msgctxt "@info:whatsthis"
 msgid ""
 "Enter how many seconds to fade the sound before reaching the set volume."
 msgstr ""
 
-#: sounddlg.cpp:247
+#: sounddlg.cpp:256
 msgctxt "@label:slider"
 msgid "Initial volume:"
 msgstr "सुरू के अवाज:"
 
-#: sounddlg.cpp:255
+#: sounddlg.cpp:264
 msgctxt "@info:whatsthis"
 msgid "Choose the initial volume for playing the sound file."
 msgstr "अवाज फाइल बजाय बर सुरू के अवाज स्तर चुनव."
 
-#: sounddlg.cpp:393 messagewin.cpp:694
+#: sounddlg.cpp:402 messagewin.cpp:694
 msgctxt "@info:tooltip"
 msgid "Stop sound"
 msgstr "अवाज बन्द करव"
 
-#: sounddlg.cpp:394 messagewin.cpp:695
+#: sounddlg.cpp:403 messagewin.cpp:695
 msgctxt "@info:whatsthis"
 msgid "Stop playing the sound"
 msgstr "बजाना बंद करव"
@@ -5766,37 +5774,37 @@ msgctxt "@action Undo [action]: message"
 msgid "%1 %2: %3"
 msgstr "%1 %2: %3"
 
-#: mainwindow.cpp:1342
+#: mainwindow.cpp:1344
 msgctxt "@item:inlistbox"
 msgid "Display Alarm"
 msgstr "डिस्प्ले अलार्म"
 
-#: mainwindow.cpp:1344
+#: mainwindow.cpp:1346
 msgctxt "@item:inlistbox"
 msgid "Email Alarm"
 msgstr "ईमेल अलार्म"
 
-#: mainwindow.cpp:1346
+#: mainwindow.cpp:1348
 msgctxt "@item:inlistbox"
 msgid "Command Alarm"
 msgstr "कमांड अलार्म"
 
-#: mainwindow.cpp:1348
+#: mainwindow.cpp:1350
 msgctxt "@title:window"
 msgid "Alarm Type"
 msgstr "अलार्म किसिम"
 
-#: mainwindow.cpp:1349
+#: mainwindow.cpp:1351
 msgctxt "@info"
 msgid "Choose alarm type to create:"
 msgstr "अलार्म बनाए बर किसिम चुनव:"
 
-#: mainwindow.cpp:1478
+#: mainwindow.cpp:1480
 msgctxt "@action"
 msgid "Ena&ble"
 msgstr "सक्छम करव (&b)"
 
-#: mainwindow.cpp:1478
+#: mainwindow.cpp:1480
 msgctxt "@action"
 msgid "Disa&ble"
 msgstr "अक्छम करव (&b)"
