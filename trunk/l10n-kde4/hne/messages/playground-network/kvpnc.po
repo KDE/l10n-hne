@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kvpnc\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-23 07:30+0200\n"
+"POT-Creation-Date: 2009-11-19 06:56+0100\n"
 "PO-Revision-Date: 2009-03-02 13:49+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -53,10 +53,8 @@ msgstr "एनरोलमेंट किसिम चुनव..."
 msgid "Certificate authority"
 msgstr "प्रमानपत्र समर्थन"
 
-#: ciscocertificateenrollment.cpp:229
-#, fuzzy
-#| msgid "CA URL"
-msgid "CA Url"
+#: ciscocertificateenrollment.cpp:229 ciscocertificateenrollment.cpp:532
+msgid "CA URL"
 msgstr "सीए यूआरएल"
 
 #: ciscocertificateenrollment.cpp:232
@@ -148,7 +146,7 @@ msgstr "ईमेल (ई):"
 #: ciscocertificateenrollment.cpp:322
 #, fuzzy
 #| msgid "IP address:"
-msgid "IP adress (IP)"
+msgid "IP address (IP)"
 msgstr "आईपी पता:"
 
 #: ciscocertificateenrollment.cpp:324
@@ -286,10 +284,6 @@ msgstr "आनलाइन"
 #, kde-format
 msgid "CA: %1"
 msgstr "सीए: %1"
-
-#: ciscocertificateenrollment.cpp:532
-msgid "CA URL"
-msgstr "सीए यूआरएल"
 
 #: ciscocertificateenrollment.cpp:533
 #, fuzzy
@@ -542,7 +536,8 @@ msgstr "पीएसके"
 
 #. i18n: file: profilenetworkhttpproxyoptionsbase4.ui:236
 #. i18n: ectx: property (text), widget (QLabel, HttpProxyUserTextLabel)
-#: enterpassworddialog.cpp:74 newprofilewizard.cpp:2465 rc.cpp:3621
+#: enterpassworddialog.cpp:74 newprofilewizard.cpp:2465
+#: openvpnmanagementhandler.cpp:258 rc.cpp:3621
 msgid "Username"
 msgstr "कमइयानाम"
 
@@ -4679,7 +4674,7 @@ msgstr ""
 #: kvpnc.cpp:16277
 #, kde-format
 msgid ""
-"The required daemons (ipsec and %1) and helper program (pkcs11-tool) is "
+"The required daemons (ipsec and %1) and helper program (pkcs11-tool) are "
 "available, connect will be enabled."
 msgstr ""
 
@@ -5943,7 +5938,7 @@ msgid "Extra options:"
 msgstr "अतिरिक्त विकल्प:"
 
 #: main.cpp:129
-msgid "Kvpnc must be started as root!"
+msgid "Kvpnc must be started as root."
 msgstr ""
 
 #: mainview.cpp:39
@@ -6459,7 +6454,9 @@ msgstr "कमइया नाम: %1"
 msgid "Local ID (Group ID)"
 msgstr "लोकल आईपी (आभासी):"
 
-#: newprofilewizard.cpp:1551
+#: newprofilewizard.cpp:1551 preferencesdialog.cpp:4385
+#: preferencesdialog.cpp:4387 preferencesdialog.cpp:4586
+#: preferencesdialog.cpp:4588
 #, fuzzy
 msgid "Local ID (Group ID) is empty."
 msgstr "लोकल आईपी (आभासी):"
@@ -6688,6 +6685,7 @@ msgid "Vtun: use user-defined port: %1."
 msgstr ""
 
 #: newprofilewizard.cpp:2151 newprofilewizard.cpp:2154
+#: preferencesdialog.cpp:5166
 #, fuzzy
 #| msgid "New profile wizard general"
 msgid "No profile name entered."
@@ -6762,7 +6760,7 @@ msgstr ""
 msgid "remote IP address for virtual IP"
 msgstr ""
 
-#: newprofilewizard.cpp:2256
+#: newprofilewizard.cpp:2256 preferencesdialog.cpp:4980
 #, fuzzy
 #| msgid "New profile wizard general"
 msgid "No valid netmask entered."
@@ -6941,7 +6939,8 @@ msgstr ""
 msgid "User options: NT domain name: %1"
 msgstr ""
 
-#: newprofilewizard.cpp:2515
+#: newprofilewizard.cpp:2515 preferencesdialog.cpp:4923
+#: preferencesdialog.cpp:4925
 #, fuzzy
 msgid "No IP address entered."
 msgstr "आईपी पता:"
@@ -7066,15 +7065,16 @@ msgstr ""
 
 #: newprofilewizard.cpp:3012 newprofilewizard.cpp:3026
 #: newprofilewizard.cpp:3041
-#, kde-format
-msgid "Import of \"%1\" has been failed."
-msgstr ""
+#, fuzzy, kde-format
+msgid "Import of \"%1\" has failed."
+msgstr "प्रमानीकरन विधि"
 
 #: newprofilewizard.cpp:3013 newprofilewizard.cpp:3027
 #: newprofilewizard.cpp:3042 newprofilewizard.cpp:3133
-#, kde-format
-msgid "Import of \"%1\" (%2) has been failed."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "\"%1\" started."
+msgid "Import of \"%1\" (%2) has failed."
+msgstr "\"%1\" सुरू."
 
 #: newprofilewizard.cpp:3032
 msgid "Import IPSec profile"
@@ -7154,8 +7154,11 @@ msgstr ""
 
 #: openvpnmanagementhandler.cpp:121
 #, kde-format
-msgid "Got no greeting within %1 seconds from management interface, retrying."
-msgstr ""
+msgid "Got no greeting within %1 second from management interface, retrying."
+msgid_plural ""
+"Got no greeting within %1 seconds from management interface, retrying."
+msgstr[0] ""
+msgstr[1] ""
 
 #: openvpnmanagementhandler.cpp:184
 msgid "Got greeting from management interface."
@@ -7174,10 +7177,6 @@ msgstr ""
 #: openvpnmanagementhandler.cpp:247 openvpnmanagementhandler.cpp:248
 msgid "Send username..."
 msgstr ""
-
-#: openvpnmanagementhandler.cpp:258
-msgid "User name"
-msgstr "कमइया नाम"
 
 #: openvpnmanagementhandler.cpp:258
 msgid "Enter username:"
@@ -7241,7 +7240,7 @@ msgstr ""
 
 #: openvpnmanagementhandler.cpp:574
 msgid ""
-"OpenvpnManagementHandler: CA certifcate file could not be loaded! Please "
+"OpenvpnManagementHandler: CA certificate file could not be loaded! Please "
 "check your CA certificate file."
 msgstr ""
 
@@ -7254,7 +7253,7 @@ msgstr "प्रमानपत्र आयात: %1"
 #: openvpnmanagementhandler.cpp:584
 #, kde-format
 msgid ""
-"OpenvpnManagementHandler: Hash algorithm %1 could not found! Please check "
+"OpenvpnManagementHandler: Hash algorithm %1 could not be found. Please check "
 "your OpenVPN settings."
 msgstr ""
 
@@ -7892,20 +7891,17 @@ msgid "any"
 msgstr "कोई भी"
 
 #: preferencesdialog.cpp:4256 preferencesdialog.cpp:4258
-msgid "No remote network entered!"
-msgstr ""
+#, fuzzy
+#| msgid "New profile wizard general"
+msgid "No remote network entered."
+msgstr "नवा प्रोफाइल विजार्ड सामान्य"
 
 #: preferencesdialog.cpp:4257
 msgid "No remote network"
 msgstr ""
 
 #: preferencesdialog.cpp:4279
-msgid "IP address (remote net) is not valid!"
-msgstr ""
-
-#: preferencesdialog.cpp:4385 preferencesdialog.cpp:4387
-#: preferencesdialog.cpp:4586 preferencesdialog.cpp:4588
-msgid "Local ID (Group ID) is empty!"
+msgid "IP address (remote net) is not valid."
 msgstr ""
 
 #: preferencesdialog.cpp:4386 preferencesdialog.cpp:4587
@@ -7922,7 +7918,7 @@ msgstr ""
 
 #: preferencesdialog.cpp:4602 preferencesdialog.cpp:4604
 #, fuzzy
-msgid "Local Source IP address is empty!"
+msgid "Local Source IP address is empty."
 msgstr "लोकल आईपी पता: %1"
 
 #: preferencesdialog.cpp:4603
@@ -7930,23 +7926,25 @@ msgid "Local Source IP empty"
 msgstr ""
 
 #: preferencesdialog.cpp:4618 preferencesdialog.cpp:4620
-msgid "Remote virtual IP address is empty!"
-msgstr ""
+#, fuzzy
+msgid "Remote virtual IP address is empty."
+msgstr "लोकल आईपी पता: %1"
 
 #: preferencesdialog.cpp:4619
 msgid "Remote virtual IP empty"
 msgstr ""
 
 #: preferencesdialog.cpp:4635 preferencesdialog.cpp:4637
-msgid "Remote Source IP address is empty!"
-msgstr ""
+#, fuzzy
+msgid "Remote Source IP address is empty."
+msgstr "लोकल आईपी पता: %1"
 
 #: preferencesdialog.cpp:4636
 msgid "Remote Source IP empty"
 msgstr ""
 
 #: preferencesdialog.cpp:4647 preferencesdialog.cpp:4649
-msgid "Virtual subnets are empty!"
+msgid "Virtual subnets are empty."
 msgstr ""
 
 #: preferencesdialog.cpp:4648
@@ -7959,32 +7957,27 @@ msgstr ""
 #: preferencesdialog.cpp:5175 preferencesdialog.cpp:5185
 #: preferencesdialog.cpp:5228 preferencesdialog.cpp:5239
 #: preferencesdialog.cpp:5291
-msgid "No valid IP address entered!"
-msgstr ""
+#, fuzzy
+#| msgid "Local IP address: %1"
+msgid "No valid IP address entered."
+msgstr "लोकल आईपी पता: %1"
 
 #: preferencesdialog.cpp:4677
-msgid "No IP address (virtual IP) entered!"
-msgstr ""
+#, fuzzy
+msgid "No IP address (virtual IP) entered."
+msgstr "आईपी पता:"
 
 #: preferencesdialog.cpp:4822 preferencesdialog.cpp:4824
-msgid "Invalid values in IP address (remote net)!"
-msgstr ""
-
-#: preferencesdialog.cpp:4923 preferencesdialog.cpp:4925
-msgid "No IP address entered!"
+msgid "Invalid values in IP address (remote net.)"
 msgstr ""
 
 #: preferencesdialog.cpp:4946 preferencesdialog.cpp:4948
-msgid "IP address (remote net) is invalid!"
+msgid "IP address (remote net) is invalid."
 msgstr ""
 
 #: preferencesdialog.cpp:4971 preferencesdialog.cpp:5185
 #: preferencesdialog.cpp:5239
 msgid "No valid IP address"
-msgstr ""
-
-#: preferencesdialog.cpp:4980
-msgid "No valid netmask entered!"
 msgstr ""
 
 #: preferencesdialog.cpp:5056
@@ -8016,13 +8009,11 @@ msgstr "नाम खाली नइ रह सके!"
 msgid "Empty TLS remote host"
 msgstr ""
 
-#: preferencesdialog.cpp:5166
-msgid "No profile name entered!"
-msgstr ""
-
 #: preferencesdialog.cpp:5250
-msgid "Virtual IP address must be enabled!"
-msgstr ""
+#, fuzzy
+#| msgid "Local IP address: %1"
+msgid "Virtual IP address must be enabled."
+msgstr "लोकल आईपी पता: %1"
 
 #: preferencesdialog.cpp:5250
 msgid "Virtual IP address disabled"
@@ -8034,8 +8025,9 @@ msgid "%1 empty"
 msgstr "पीएसके खाली हे"
 
 #: preferencesdialog.cpp:5304 preferencesdialog.cpp:5306
-msgid "No IP address (ping host) entered!"
-msgstr ""
+#, fuzzy
+msgid "No IP address (ping host) entered."
+msgstr "आईपी पता:"
 
 #: preferencesdialog.cpp:5410
 #, fuzzy
@@ -8099,7 +8091,7 @@ msgid "Enter new name for profile:"
 msgstr ""
 
 #: preferencesdialog.cpp:5814 preferencesdialog.cpp:5816
-msgid "Blanks are not allowed in profile names!"
+msgid "Blanks are not allowed in profile names."
 msgstr ""
 
 #: preferencesdialog.cpp:5815
@@ -8109,7 +8101,7 @@ msgstr ""
 #: preferencesdialog.cpp:5823 preferencesdialog.cpp:5825
 #, fuzzy
 #| msgid "File name cannot be empty!"
-msgid "Profile name can be same!"
+msgid "Profile name cannot be the same."
 msgstr "नाम खाली नइ रह सके!"
 
 #: preferencesdialog.cpp:5824
@@ -8219,8 +8211,9 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, RemoteNetAddrLineEdit)
 #: rc.cpp:12
 msgid ""
-"This is the remote network where the connection should going to. Use this at "
-"a PPTP connection for set another network than the retrieved IP is located."
+"This is the remote network to which the connection should be going. Use this "
+"with a PPTP connection to set another network besides that where the "
+"retrieved IP is located."
 msgstr ""
 
 #. i18n: file: addnetworkroutedialogbase4.ui:52
@@ -8653,7 +8646,7 @@ msgstr ""
 #. i18n: file: profileracoonoptionsbase4.ui:264
 #. i18n: ectx: property (toolTip), widget (QCheckBox, PerfectForwardSecurityCheckbox)
 #: rc.cpp:141 rc.cpp:2065 rc.cpp:2705 rc.cpp:3034 rc.cpp:3309 rc.cpp:4101
-msgid "Use perfect forward secrety (PFS)"
+msgid "Use perfect forward secrecy (PFS)"
 msgstr ""
 
 #. i18n: file: advancedprofiledialogbase4.ui:81
@@ -8818,8 +8811,10 @@ msgstr ""
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:112
 #. i18n: ectx: property (toolTip), widget (QCheckBox, RefuseEapCheckbox)
 #: rc.cpp:217
-msgid "Check this for refuse EAP"
-msgstr ""
+#, fuzzy
+#| msgid "Connection refused."
+msgid "Check this to refuse EAP"
+msgstr "कनेक्सन अस्वीकृत"
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:115
 #. i18n: ectx: property (text), widget (QCheckBox, RefuseEapCheckbox)
@@ -8834,7 +8829,7 @@ msgstr ""
 #. i18n: file: profilepptpoptionsbase4.ui:185
 #. i18n: ectx: property (toolTip), widget (QCheckBox, AllowStatefulModeCheckbox)
 #: rc.cpp:223 rc.cpp:2571 rc.cpp:3940
-msgid "Check this for allow stateful mode of MPPE"
+msgid "Check this to allow stateful mode of MPPE"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:145
@@ -8846,7 +8841,7 @@ msgstr ""
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:177
 #. i18n: ectx: property (toolTip), widget (QCheckBox, Refuse40BitEncryptionCheckbox)
 #: rc.cpp:229
-msgid "Check this for refusing 40 bit length encryption of MPPE"
+msgid "Check this to refuse MPPE 40-bit encryption"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:180
@@ -8858,7 +8853,7 @@ msgstr ""
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:193
 #. i18n: ectx: property (toolTip), widget (QCheckBox, requireMppeCheckbox)
 #: rc.cpp:235
-msgid "Check this for use of MPPE encrpytion (enabled by default)"
+msgid "Check this to use MPPE encryption (enabled by default)"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:196
@@ -8874,7 +8869,7 @@ msgstr ""
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:209
 #. i18n: ectx: property (toolTip), widget (QCheckBox, GetDnsFromPeerCheckbox)
 #: rc.cpp:241
-msgid "Check this for retrieve DNS server from peer"
+msgid "Check this to retrieve DNS server from peer"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:212
@@ -8886,7 +8881,7 @@ msgstr ""
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:225
 #. i18n: ectx: property (toolTip), widget (QCheckBox, IkeGroupCheckbox)
 #: rc.cpp:247
-msgid "Check this for use a special Diffie Hellman group"
+msgid "Check this to use a special Diffie Hellman group"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:228
@@ -8897,8 +8892,14 @@ msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:241
 #. i18n: ectx: property (toolTip), widget (QCheckBox, MtuCheckbox)
-#: rc.cpp:253
-msgid "Check this for set a own MTU size"
+#. i18n: file: newprofilewizardnetwork4.ui:282
+#. i18n: ectx: property (toolTip), widget (QCheckBox, MtuCheckbox)
+#. i18n: file: newprofilewizardnetwork4.ui:333
+#. i18n: ectx: property (toolTip), widget (QCheckBox, MruCheckbox)
+#. i18n: file: profilenetworkgeneraloptionsbase4.ui:21
+#. i18n: ectx: property (toolTip), widget (QCheckBox, MtuCheckbox)
+#: rc.cpp:253 rc.cpp:2268 rc.cpp:2283 rc.cpp:3362
+msgid "Check this to set a custom MTU size"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:244
@@ -8910,7 +8911,7 @@ msgstr ""
 #. i18n: file: profilenetworkgeneraloptionsbase4.ui:24
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, MtuCheckbox)
 #: rc.cpp:256 rc.cpp:2271 rc.cpp:2286 rc.cpp:3365
-msgid "If you enable this you can set a own MTU size."
+msgid "If you enable this you can set a custom MTU size."
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:247
@@ -8922,7 +8923,7 @@ msgstr ""
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:260
 #. i18n: ectx: property (toolTip), widget (QCheckBox, PerfectForwardSecurityCheckbox)
 #: rc.cpp:262
-msgid "Check this if you want to select perfect forward secrety method"
+msgid "Check this if you want to select the perfect forward secrecy method"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:263
@@ -8934,7 +8935,7 @@ msgstr ""
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:276
 #. i18n: ectx: property (toolTip), widget (QCheckBox, ApplicationVersionCheckbox)
 #: rc.cpp:268
-msgid "Check if you want to send an own application version string"
+msgid "Check if you want to send a custom application version string"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:279
@@ -8946,19 +8947,19 @@ msgstr ""
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:292
 #. i18n: ectx: property (toolTip), widget (QCheckBox, DnsServerCheckbox)
 #: rc.cpp:274
-msgid "Check this for specify a own DNS server"
+msgid "Check this to specify a custom DNS server"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:295
 #. i18n: ectx: property (text), widget (QCheckBox, DnsServerCheckbox)
 #: rc.cpp:277
-msgid "Userdefinied DNS server:"
+msgid "User-defined DNS server:"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:308
 #. i18n: ectx: property (toolTip), widget (QCheckBox, SetDefaultRouteCheckbox)
 #: rc.cpp:280
-msgid "Check this for adding a new default route"
+msgid "Check this to add a new default route"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:311
@@ -8970,7 +8971,7 @@ msgstr ""
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:324
 #. i18n: ectx: property (toolTip), widget (QCheckBox, UseNoBsdCompCheckbox)
 #: rc.cpp:286
-msgid "Check this for refuse BSD compression (disabled by default)"
+msgid "Check this to refuse BSD compression (disabled by default)"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:327
@@ -8986,7 +8987,7 @@ msgstr ""
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:335
 #. i18n: ectx: property (toolTip), widget (QCheckBox, Refuse128BitEncryptionCheckbox)
 #: rc.cpp:292
-msgid "Check this for refusing 128 bit length encryption of MPPE"
+msgid "Check this to refuse MPPE 128-bit encryption"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:338
@@ -9011,7 +9012,7 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QCheckBox, UseNoDeflateCheckbox)
 #: rc.cpp:304
 msgid ""
-"Check this for disabling deflate decompression method (disabled by default)"
+"Check this to disable the deflate decompression method (disabled by default)"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:389
@@ -9029,7 +9030,7 @@ msgstr ""
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:421
 #. i18n: ectx: property (toolTip), widget (QCheckBox, UseGlobalIpsecSecretCheckbox)
 #: rc.cpp:313
-msgid "Check for use global IPSec secret from /etc/vpnc/default.conf"
+msgid "Check to use the global IPSec secret from /etc/vpnc/default.conf"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:424
@@ -9062,8 +9063,8 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QCheckBox, ReplaceDefaultRouteCheckbox)
 #: rc.cpp:325
 msgid ""
-"Check this for replacing the existing default route. Needs 'set default "
-"route' enabled (warning: only for experts)."
+"Check this to replace the existing default route. Needs 'set default route' "
+"enabled (warning: only for experts)."
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:482
@@ -9089,7 +9090,7 @@ msgstr "F1"
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:514
 #. i18n: ectx: property (toolTip), widget (QPushButton, buttonOk)
 #: rc.cpp:340
-msgid "Click for closing the dialog by accepting the settings"
+msgid "Click to close the dialog and accept the settings"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:517
@@ -9101,7 +9102,7 @@ msgstr "ठीक (&O)"
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:533
 #. i18n: ectx: property (toolTip), widget (QPushButton, buttonCancel)
 #: rc.cpp:346
-msgid "Click for closing the dialog by canceling"
+msgid "Click to close the dialog and cancel any changes"
 msgstr ""
 
 #. i18n: file: advancedprofilesettingsdialogbase4.ui:536
@@ -9172,7 +9173,15 @@ msgstr ""
 
 #. i18n: file: ciscocertificateenrollmentbase4.ui:162
 #. i18n: ectx: property (text), widget (QLabel, FilenameTextLabel)
-#: rc.cpp:382
+#. i18n: file: generateopenvpnkeydialogbase4.ui:23
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: file: importcertificatedialogbase4.ui:28
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: file: importopenvpnprofiledialogbase4.ui:42
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: file: importprofiledialogbase4.ui:36
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:382 rc.cpp:1289 rc.cpp:1339 rc.cpp:1405 rc.cpp:1420
 msgid "Filename:"
 msgstr "फाइलनामः"
 
@@ -9278,7 +9287,8 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, checkMinimizeAfterConnectCheck)
 #: rc.cpp:433
 msgid ""
-"Enable this to let kvpnc minimize in system tray after successful connect."
+"Enable this to let kvpnc minimize to the system tray after successfully "
+"connecting."
 msgstr ""
 
 #. i18n: file: configconnectoptionsbase4.ui:33
@@ -9292,7 +9302,7 @@ msgstr ""
 #: rc.cpp:439
 msgid ""
 "Enable exit without warning\n"
-"about the active connecions"
+"about the active connections"
 msgstr ""
 
 #. i18n: file: configconnectoptionsbase4.ui:73
@@ -9329,7 +9339,7 @@ msgstr "डेमन"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, ProgramsInPathcheckBox)
 #: rc.cpp:458
 msgid ""
-"Search for programs on default places. <br>Uncheck only in non standard "
+"Search for programs in default places. <br>Uncheck only for non-standard "
 "installations."
 msgstr ""
 
@@ -9890,7 +9900,8 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, showDebugCheck)
 #: rc.cpp:842
 msgid ""
-"Enable this if you want to see the debug console <br>in main KVpnc window."
+"Enable this if you want to see the debug console <br>in the main KVpnc "
+"window."
 msgstr ""
 
 #. i18n: file: configdebugoptionsbase4.ui:35
@@ -9946,7 +9957,7 @@ msgstr ""
 #. i18n: file: configgeneraloptionsbase4.ui:32
 #. i18n: ectx: property (toolTip), widget (QCheckBox, useKwalletCheckBox)
 #: rc.cpp:878
-msgid "Use KWallet for secure store passwords"
+msgid "Use KWallet to securely store passwords"
 msgstr ""
 
 #. i18n: file: configgeneraloptionsbase4.ui:38
@@ -9958,7 +9969,8 @@ msgstr ""
 #. i18n: file: configgeneraloptionsbase4.ui:65
 #. i18n: ectx: property (toolTip), widget (QCheckBox, DontQuitOnCloseEventCheckBox)
 #: rc.cpp:884
-msgid "Close button minimizes to system tray <br> instead of quit the program"
+msgid ""
+"Close button minimizes to system tray <br> instead of closing the program"
 msgstr ""
 
 #. i18n: file: configgeneraloptionsbase4.ui:68
@@ -9971,8 +9983,8 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QCheckBox, HideOnStartupCheckBox)
 #: rc.cpp:890
 msgid ""
-"Hides the KVpnc mainwindow on startup. KVpnc is still accessable from dock "
-"menu."
+"Hides the KVpnc main window on startup. KVpnc is still accessable from the "
+"dock menu."
 msgstr ""
 
 #. i18n: file: configgeneraloptionsbase4.ui:98
@@ -10313,8 +10325,14 @@ msgstr "कमइया नाम:"
 #. i18n: ectx: property (toolTip), widget (QLabel, LabelGroupPassword)
 #. i18n: file: enterpassworddialogbase4.ui:181
 #. i18n: ectx: property (toolTip), widget (KLineEdit, PSKLineEdit)
-#: rc.cpp:1220 rc.cpp:1247
-msgid "Pre-shared key for authenticat (shared secret)"
+#. i18n: file: newprofiledialogbase4.ui:135
+#. i18n: ectx: property (toolTip), widget (KLineEdit, PSKLineEdit)
+#. i18n: file: newprofilewizardpsk4.ui:127
+#. i18n: ectx: property (toolTip), widget (KLineEdit, PSKLineEdit)
+#. i18n: file: profilepskoptionsbase4.ui:97
+#. i18n: ectx: property (toolTip), widget (KLineEdit, PSKLineEdit)
+#: rc.cpp:1220 rc.cpp:1247 rc.cpp:1556 rc.cpp:2637 rc.cpp:4009
+msgid "Pre-shared key for authentication (shared secret)"
 msgstr ""
 
 #. i18n: file: enterpassworddialogbase4.ui:55
@@ -10420,18 +10438,6 @@ msgstr ""
 msgid "Passcode:"
 msgstr "पासकोड:"
 
-#. i18n: file: generateopenvpnkeydialogbase4.ui:23
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#. i18n: file: importcertificatedialogbase4.ui:28
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#. i18n: file: importopenvpnprofiledialogbase4.ui:42
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#. i18n: file: importprofiledialogbase4.ui:36
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:1289 rc.cpp:1339 rc.cpp:1405 rc.cpp:1420
-msgid "File name:"
-msgstr "फाइल नामः"
-
 #. i18n: file: generateopenvpnkeydialogbase4.ui:33
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, FilenameUrlrequester)
 #: rc.cpp:1292
@@ -10512,11 +10518,11 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "family:'helvetica'; font-size:12pt;\">Start kvpnc and if vpnc-connect/vpnc-"
 "disconnect is not installed in /usr/sbin change it in settings. Click on "
-"\"New profile...\" to add a new profile. Enter the new name in the upcoming "
-"dialog, fill in the empty fields and save the profile by clicking on \"Save "
-"profile...\". After enter your VPN data, click on \"connect\" to connect to "
-"your VPN server. By default, kvpnc minimizes into system tray after "
-"successful connect. </span><a href=\"#topic\"><span style=\" font-"
+"\"New profile...\" to add a new profile. Enter the new name in the dialog "
+"that appears, fill in the empty fields and save the profile by clicking on "
+"\"Save profile...\". After entering your VPN data, click on \"connect\" to "
+"connect to your VPN server. By default, kvpnc minimizes to the system tray "
+"after successfully connecting. </span><a href=\"#topic\"><span style=\" font-"
 "family:'helvetica'; font-size:12pt; text-decoration: underline; color:"
 "#0000ff;\">back to top</span></a><span style=\" font-family:'helvetica'; "
 "font-size:12pt;\"> </span></p>\n"
@@ -10528,9 +10534,9 @@ msgid ""
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "family:'helvetica'; font-size:12pt;\">To disconnect, click on system tray "
-"and kvpnc main window will be restored. Then click on \"disconnect\". You "
-"can also use toolbar icons or menu entries in system tray context menu. </"
-"span><a href=\"#topic\"><span style=\" font-family:'helvetica'; font-"
+"and the kvpnc main window will be restored. Then click on \"disconnect\". "
+"You can also use toolbar icons or menu entries in the system tray context "
+"menu. </span><a href=\"#topic\"><span style=\" font-family:'helvetica'; font-"
 "size:12pt; text-decoration: underline; color:#0000ff;\">back to top</span></"
 "a><span style=\" font-family:'helvetica'; font-size:12pt;\"> </span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
@@ -10564,7 +10570,7 @@ msgid ""
 "bugs/?group=kvpnc\"><span style=\" font-family:'helvetica'; font-size:12pt; "
 "text-decoration: underline; color:#0000ff;\">https://gna.org/bugs/?"
 "group=kvpnc</span></a><span style=\" font-family:'helvetica'; font-size:12pt;"
-"\"> for submitting new bugs or look for open bugs. </span><a href=\"#topic"
+"\"> for submitting new bugs or to look for open bugs. </span><a href=\"#topic"
 "\"><span style=\" font-family:'helvetica'; font-size:12pt; text-decoration: "
 "underline; color:#0000ff;\">back to top</span></a><span style=\" font-"
 "family:'helvetica'; font-size:12pt;\"> </span></p>\n"
@@ -10674,8 +10680,8 @@ msgstr "पासफ्रेस"
 #. i18n: ectx: property (toolTip), widget (KLineEdit, PrivateKeyPasswordEdit)
 #: rc.cpp:1387
 msgid ""
-"Passphrase to protect private key. Feel free to choose what you want (don't "
-"forget it!)."
+"Passphrase to protect private key. Feel free to choose whichever value you "
+"want (but do not forget it.)"
 msgstr ""
 
 #. i18n: file: importcertificatedialogbase4.ui:236
@@ -10693,7 +10699,7 @@ msgstr ""
 #. i18n: file: importopenvpnprofiledialogbase4.ui:52
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, FilenameUrlrequester)
 #: rc.cpp:1408
-msgid "File name of the OpenVPN config (*.ovpn, *.conf)"
+msgid "Filename of the OpenVPN config (*.ovpn, *.conf)"
 msgstr ""
 
 #. i18n: file: importopenvpnprofiledialogbase4.ui:76
@@ -10721,8 +10727,10 @@ msgstr ""
 #. i18n: file: importprofiledialogbase4.ui:46
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, FilenameUrlrequester)
 #: rc.cpp:1423
-msgid "File name of the Cisco profile (*.PCF)"
-msgstr ""
+#, fuzzy
+#| msgid "Name of the current profile"
+msgid "Filename of the Cisco profile (*.PCF)"
+msgstr "अभी हाल के प्रोफाइल के नांव"
 
 #. i18n: file: kvpncimportprofileselectiondialogbase4.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, KvpncImportProfileSelectionBase)
@@ -10875,7 +10883,7 @@ msgstr "नवा प्रोफाइल जोड़व"
 #. i18n: file: newprofiledialogbase4.ui:28
 #. i18n: ectx: property (toolTip), widget (KPushButton, AdvancedSettingsPushButton)
 #: rc.cpp:1529
-msgid "Advanced settings (mostly not need)"
+msgid "Advanced settings (mostly not needed)"
 msgstr ""
 
 #. i18n: file: newprofiledialogbase4.ui:31
@@ -10924,21 +10932,13 @@ msgstr ""
 msgid "Network device:"
 msgstr "नेटवर्क उपकरनः"
 
-#. i18n: file: newprofiledialogbase4.ui:135
-#. i18n: ectx: property (toolTip), widget (KLineEdit, PSKLineEdit)
-#. i18n: file: newprofilewizardpsk4.ui:127
-#. i18n: ectx: property (toolTip), widget (KLineEdit, PSKLineEdit)
-#. i18n: file: profilepskoptionsbase4.ui:97
-#. i18n: ectx: property (toolTip), widget (KLineEdit, PSKLineEdit)
-#: rc.cpp:1556 rc.cpp:2637 rc.cpp:4009
-msgid "Pre-shared key for authentication (shared secret)"
-msgstr ""
-
 #. i18n: file: newprofiledialogbase4.ui:145
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, x509certURLRequester)
 #: rc.cpp:1559
-msgid "Certificate file name"
-msgstr ""
+#, fuzzy
+#| msgid "Certificate data"
+msgid "Certificate filename"
+msgstr "प्रमानपत्र डाटा"
 
 #. i18n: file: newprofiledialogbase4.ui:155
 #. i18n: ectx: property (text), widget (QLabel, LabelProfilename_2)
@@ -11128,9 +11128,9 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KComboBox, NetworkDeviceComboBox)
 #: rc.cpp:1649 rc.cpp:2169
 msgid ""
-"This is the network device which should be used for the tunnel. <br>Its only "
-"active if needed. If no selection made, <br>\"default\" is set for using the "
-"device where the defaultroute points to."
+"This is the network device which should be used for the tunnel. <br>It is "
+"only active if needed. If no selection is made, <br>\"default\" is set for "
+"using the device where the defaultroute points to."
 msgstr ""
 
 #. i18n: file: newprofiledialogbase4.ui:462
@@ -11151,9 +11151,9 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, RemoteNetAddrLineEdit)
 #: rc.cpp:1664 rc.cpp:2184 rc.cpp:3435
 msgid ""
-"This is the remote network where the connection should going to. <br>Use "
-"this at a PPTP connection for set another network than the retrieved IP is "
-"located."
+"This is the remote network to which the connection should be going. <br>Use "
+"this with a PPTP connection to set another network besides that where the "
+"retrieved IP is located."
 msgstr ""
 
 #. i18n: file: newprofiledialogbase4.ui:501
@@ -11246,8 +11246,8 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, certpathURLRequester)
 #: rc.cpp:1778
 msgid ""
-"In this directory certificates will be searched <br>if no absolute path is "
-"given."
+"Certificates will be searched for in this directory <br>if no absolute path "
+"is given."
 msgstr ""
 
 #. i18n: file: newprofilewizardcert4.ui:102
@@ -11416,7 +11416,7 @@ msgstr ""
 #. i18n: file: newprofilewizardciscomanually4.ui:93
 #. i18n: ectx: property (text), widget (QCheckBox, AllowEmptyGroupPasswordCheckBox)
 #: rc.cpp:1886
-msgid "A&llow empty group password (insecure!)"
+msgid "A&llow empty group password (NB insecure)"
 msgstr ""
 
 #. i18n: file: newprofilewizardciscoselection4.ui:20
@@ -11452,10 +11452,11 @@ msgstr ""
 #: rc.cpp:1919
 msgid ""
 "If checked, the connection status check will be enabled. The parameters "
-"below <br>control how often the gateway will be pinged. It must be minimal "
-"success in a count.<br>Example: interval: 1, success count: 4, means that 4 "
-"pings will be done and minimal one <br>must be success for keep the "
-"connection alive. The delay between the pings are 1 second."
+"below <br>control how often the gateway will be pinged, and the the minimum "
+"of how many of these much succeed.<br>Example: interval: 1, success count: "
+"4, means that 4 pings will be done, and minimum of one <br>must be "
+"successful to keep the connection alive. The delay between the pings is 1 "
+"second."
 msgstr ""
 
 #. i18n: file: newprofilewizardconnectionstatuscheck4.ui:32
@@ -11875,8 +11876,8 @@ msgstr ""
 #: rc.cpp:2145 rc.cpp:3645
 msgid ""
 "You should enable this for IPSec if you are behind a firewall (NAT). <br>For "
-"openvpn this causes using UDP instead of TCP protocol <br>(peer have to use "
-"the same protocol)."
+"openvpn, using UDP instead of TCP causes problems <br>(peers have to use the "
+"same protocol.)"
 msgstr ""
 
 #. i18n: file: newprofilewizardnat4.ui:29
@@ -11922,16 +11923,6 @@ msgstr "नेटवर्क उपकरन"
 #: rc.cpp:2172 rc.cpp:3414
 msgid "Use remote network"
 msgstr "रिमोट नेटवर्क उपयोग करव"
-
-#. i18n: file: newprofilewizardnetwork4.ui:282
-#. i18n: ectx: property (toolTip), widget (QCheckBox, MtuCheckbox)
-#. i18n: file: newprofilewizardnetwork4.ui:333
-#. i18n: ectx: property (toolTip), widget (QCheckBox, MruCheckbox)
-#. i18n: file: profilenetworkgeneraloptionsbase4.ui:21
-#. i18n: ectx: property (toolTip), widget (QCheckBox, MtuCheckbox)
-#: rc.cpp:2268 rc.cpp:2283 rc.cpp:3362
-msgid "Check this to set a custom MTU size"
-msgstr ""
 
 #. i18n: file: newprofilewizardnetwork4.ui:288
 #. i18n: ectx: property (text), widget (QCheckBox, MtuCheckbox)
@@ -12064,7 +12055,7 @@ msgstr ""
 #: rc.cpp:2349
 msgid ""
 "Type of tunnel device for virtual network. Use tun for routed network, and "
-"tap for ethernet bridging."
+"tap for Ethernet bridging."
 msgstr ""
 
 #. i18n: file: newprofilewizardopenvpn4.ui:46
@@ -12072,7 +12063,7 @@ msgstr ""
 #: rc.cpp:2352
 msgid ""
 "This is the type of your tunnel device. It can be tun (virtual Point-to-"
-"Point network device) or tap (virtual ethernet network device). Your "
+"Point network device) or tap (virtual Ethernet network device). Your "
 "administrator will tell you which you have to use. Default is to use the tun "
 "device."
 msgstr ""
@@ -12128,7 +12119,7 @@ msgstr ""
 #. i18n: file: newprofilewizardopenvpn4.ui:136
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, TlsAuthURLRequester)
 #: rc.cpp:2373
-msgid "File name of the static key or passphrase file"
+msgid "Filename of the static key or passphrase file"
 msgstr ""
 
 #. i18n: file: newprofilewizardopenvpn4.ui:145
@@ -12408,7 +12399,7 @@ msgstr "अतिरिक्त विकल्प:"
 #. i18n: file: profilepptpoptionsbase4.ui:53
 #. i18n: ectx: property (toolTip), widget (QCheckBox, UseSearchDomainInResolvConfCheckbox)
 #: rc.cpp:2502 rc.cpp:2511 rc.cpp:3871 rc.cpp:3880
-msgid "Use specified DNS server instead of retrieved from peer"
+msgid "Use specified DNS server instead of that retrieved from peer"
 msgstr ""
 
 #. i18n: file: newprofilewizardpptp4.ui:33
@@ -12493,7 +12484,7 @@ msgstr ""
 #. i18n: file: profilepptpoptionsbase4.ui:122
 #. i18n: ectx: property (toolTip), widget (QCheckBox, DisableCcpCheckbox)
 #: rc.cpp:2541 rc.cpp:3910
-msgid "Disabe Compression Control Protocol negotiation"
+msgid "Disable Compression Control Protocol negotiation"
 msgstr ""
 
 #. i18n: file: newprofilewizardpptp4.ui:125
@@ -12502,7 +12493,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, DisableCcpCheckbox)
 #: rc.cpp:2544 rc.cpp:3913
 msgid ""
-"Check to disabe CCP (Compression Control Protocol) negotiation. This option "
+"Check to disable CCP (Compression Control Protocol) negotiation. This option "
 "should only be required if the peer is buggy and gets confused by requests "
 "from pppd for CCP negotiation."
 msgstr ""
@@ -12561,7 +12552,7 @@ msgstr "अतिरिक्त विकल्प:"
 #. i18n: file: profilepptpoptionsbase4.ui:175
 #. i18n: ectx: property (toolTip), widget (QCheckBox, RequireMppeCheckbox)
 #: rc.cpp:2565 rc.cpp:3934
-msgid "Require Microsoft Point-To-Point Encrpytion (enabled by default)"
+msgid "Require Microsoft Point-To-Point Encryption (enabled by default)"
 msgstr ""
 
 #. i18n: file: newprofilewizardpptp4.ui:188
@@ -12594,8 +12585,8 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QCheckBox, UseNoMPPECompressionCheckbox)
 #: rc.cpp:2583 rc.cpp:3952
 msgid ""
-"Do not use the Microsoft Poit-To-Point Compression protocol. <br>I.e. for "
-"compatibility with watchguard firebox (disabled by default)"
+"Do not use the Microsoft Point-To-Point Compression protocol <br>(i.e. for "
+"compatibility with watchguard firebox, disabled by default.)"
 msgstr ""
 
 #. i18n: file: newprofilewizardpptp4.ui:208
@@ -12604,8 +12595,8 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, UseNoMPPECompressionCheckbox)
 #: rc.cpp:2586 rc.cpp:3955
 msgid ""
-"Check this for disable Microsoft Point-to-Point Compression (MPPC) (i.e. for "
-"compatibility with watchguard firebox)."
+"Check this to disable Microsoft Point-to-Point Compression (MPPC) (i.e. for "
+"compatibility with watchguard firebox.)"
 msgstr ""
 
 #. i18n: file: newprofilewizardpptp4.ui:211
@@ -13003,7 +12994,7 @@ msgstr ""
 #. i18n: file: profileciscooptionsbase4.ui:131
 #. i18n: ectx: property (text), widget (QCheckBox, AllowEmptyGroupPasswordCheckBox)
 #: rc.cpp:2975
-msgid "Allow empt&y group password (insecure!)"
+msgid "Allow empt&y group password (NB insecure)"
 msgstr ""
 
 #. i18n: file: profileciscooptionsbase4.ui:189
@@ -13043,7 +13034,7 @@ msgstr "लोकर पोर्ट संख्या"
 #. i18n: file: profileciscooptionsbase4.ui:274
 #. i18n: ectx: property (toolTip), widget (QCheckBox, DisableDataEncryptionCheckbox)
 #: rc.cpp:2999
-msgid "disables the encrytion for data"
+msgid "disables the encryption for data"
 msgstr ""
 
 #. i18n: file: profileciscooptionsbase4.ui:277
@@ -13313,7 +13304,7 @@ msgstr ""
 #. i18n: file: profileipsecoptionsbase4.ui:178
 #. i18n: ectx: property (text), widget (QLabel, EspHelpActiveLabel)
 #: rc.cpp:3211 rc.cpp:3250
-msgid "<a href=\"http://www.google.de\">Help needed?</a>"
+msgid "<a href=\"http://www.google.com\">Help needed?</a>"
 msgstr ""
 
 #. i18n: file: profileipsecoptionsbase4.ui:65
@@ -13367,14 +13358,14 @@ msgstr ""
 #. i18n: file: profilenetworkgeneraloptionsbase4.ui:75
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, MruCheckbox)
 #: rc.cpp:3380
-msgid "If you enable this you can set a own MRU size."
+msgid "If you enable this you can set a custom MRU size."
 msgstr ""
 
 #. i18n: file: profilenetworkgeneraloptionsbase4.ui:111
 #. i18n: ectx: property (toolTip), widget (QCheckBox, FixPathMtuDiscoveryProblemCheckBox)
 #: rc.cpp:3392
 msgid ""
-"Fixes the path mtu discovery problem by inserting a special firwall rule."
+"Fixes the path MTU discovery problem by inserting a special firewall rule."
 msgstr ""
 
 #. i18n: file: profilenetworkgeneraloptionsbase4.ui:115
@@ -13398,8 +13389,8 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KComboBox, NetworkDeviceComboBox)
 #: rc.cpp:3408
 msgid ""
-"This is the network device which should be used for the tunnel. Its only "
-"active if needed. If no selection made, \"default\" is set for using the "
+"This is the network device which should be used for the tunnel. It is only "
+"active if needed. If no selection is made, \"default\" is set, to use the "
 "device where the defaultroute points to."
 msgstr ""
 
@@ -13446,10 +13437,10 @@ msgstr ""
 #: rc.cpp:3537
 msgid ""
 "If checked, the connection status check will be enabled. The parameters "
-"below control how often the gateway will be pinged and it must be minimal "
-"success in a count.<br>Example: interval 1, success count 4: this means that "
-"4 pings will be done and minimal one must be success for keep the connection "
-"alive. The delay between the pings are 1 sec."
+"below control how often the gateway will be pinged, and the minimum number "
+"which must succeed.<br>Example: interval 1, success count 4: this means that "
+"4 pings will be done, and a minimum of one must be successful to keep the "
+"connection alive. The delay between pings is 1 sec."
 msgstr ""
 
 #. i18n: file: profilenetworkgeneraloptionsbase4.ui:513
@@ -13637,7 +13628,7 @@ msgstr ""
 #. i18n: file: profileopenvpnoptionsbase4.ui:236
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, TlsAuthURLRequester)
 #: rc.cpp:3787
-msgid "File name of static key or passphrase file."
+msgid "Filename of static key or passphrase file."
 msgstr ""
 
 #. i18n: file: profileopenvpnoptionsbase4.ui:243
@@ -13792,7 +13783,7 @@ msgstr ""
 #. i18n: file: profilesshoptionsbase4.ui:167
 #. i18n: ectx: property (text), widget (QRadioButton, CostumKeyRadioButton)
 #: rc.cpp:4299
-msgid "Costum key:"
+msgid "Custom key:"
 msgstr ""
 
 #. i18n: file: profilesshoptionsbase4.ui:197
@@ -13825,7 +13816,7 @@ msgstr "कमइया नाम सहेजव (&u)"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, HideGroupPasswordInAccountDataDialogCheckBox)
 #: rc.cpp:4341
 msgid ""
-"Do not show group password field in dialog for request username/password."
+"Do not show group password field in dialog for requesting username/password."
 msgstr ""
 
 #. i18n: file: profileuseroptionsbase4.ui:152
@@ -13856,13 +13847,13 @@ msgstr ""
 #. i18n: file: profilevtunoptionsbase4.ui:85
 #. i18n: ectx: property (text), widget (QCheckBox, PortCheckbox)
 #: rc.cpp:4362
-msgid "Use userdefined port:"
+msgid "Use user-defined port:"
 msgstr ""
 
 #. i18n: file: toolsinfowidgetbase4.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ToolsInfoWidgetBase)
 #: rc.cpp:4368
-msgid "Tools Information"
+msgid "Tool Information"
 msgstr ""
 
 #. i18n: file: toolsinfowidgetbase4.ui:22
@@ -14001,7 +13992,7 @@ msgstr ""
 
 #: utils.cpp:251
 #, kde-format
-msgid "Chmod of %1 failed!"
+msgid "Chmod of %1 failed."
 msgstr ""
 
 #: utils.cpp:256
@@ -14074,9 +14065,10 @@ msgid "failed"
 msgstr "फेल"
 
 #: utils.cpp:872
-#, kde-format
-msgid "%1 cant be opened!"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Log file can not be opened!"
+msgid "%1 cannot be opened."
+msgstr "लाग फाइल खोले नइ जा सकिस!"
 
 #: utils.cpp:1040
 #, kde-format
@@ -14125,28 +14117,15 @@ msgstr "सिस्को"
 #: vpntypesinfodialog.cpp:184 vpntypesinfodialog.cpp:244
 #: vpntypesinfodialog.cpp:302 vpntypesinfodialog.cpp:369
 #: vpntypesinfodialog.cpp:421
-msgid "all tools"
-msgstr ""
-
-#: vpntypesinfodialog.cpp:76 vpntypesinfodialog.cpp:127
-#: vpntypesinfodialog.cpp:184 vpntypesinfodialog.cpp:244
-#: vpntypesinfodialog.cpp:302 vpntypesinfodialog.cpp:369
-#: vpntypesinfodialog.cpp:421
-#, fuzzy, kde-format
-msgid "%1 found"
-msgstr "नइ मिलिस"
+#, fuzzy
+#| msgid "File not found."
+msgid "All tools found"
+msgstr "फाइल नइ मिलिस."
 
 #: vpntypesinfodialog.cpp:79 vpntypesinfodialog.cpp:130
 #: vpntypesinfodialog.cpp:187 vpntypesinfodialog.cpp:247
 #: vpntypesinfodialog.cpp:305 vpntypesinfodialog.cpp:372
-msgid "some tools"
-msgstr ""
-
-#: vpntypesinfodialog.cpp:79 vpntypesinfodialog.cpp:130
-#: vpntypesinfodialog.cpp:187 vpntypesinfodialog.cpp:247
-#: vpntypesinfodialog.cpp:305
-#, kde-format
-msgid "%1 missing"
+msgid "Some tools missing"
 msgstr ""
 
 #: vpntypesinfodialog.cpp:86
@@ -14207,26 +14186,20 @@ msgstr ""
 msgid "MPPE extensions in kernel"
 msgstr ""
 
-#: vpntypesinfodialog.cpp:191 vpntypesinfodialog.cpp:194
-#: vpntypesinfodialog.cpp:250 vpntypesinfodialog.cpp:253
-#: vpntypesinfodialog.cpp:376 vpntypesinfodialog.cpp:379
-#: vpntypesinfodialog.cpp:425 vpntypesinfodialog.cpp:427
-#, kde-format
-msgid "%1 is missing"
+#: vpntypesinfodialog.cpp:191 vpntypesinfodialog.cpp:376
+msgid "pppd is missing"
+msgstr ""
+
+#: vpntypesinfodialog.cpp:194
+msgid "pptpclient is missing"
 msgstr ""
 
 #: vpntypesinfodialog.cpp:198
-msgid "pptpclient and pppd"
-msgstr ""
-
-#: vpntypesinfodialog.cpp:198 vpntypesinfodialog.cpp:204
-#: vpntypesinfodialog.cpp:256 vpntypesinfodialog.cpp:372
-#, kde-format
-msgid "%1 are missing"
+msgid "pptpclient and pppd are missing"
 msgstr ""
 
 #: vpntypesinfodialog.cpp:204
-msgid "MPPE support"
+msgid "MPPE support is missing"
 msgstr ""
 
 #: vpntypesinfodialog.cpp:235
@@ -14234,8 +14207,16 @@ msgstr ""
 msgid "OpenVPN SSL-VPN"
 msgstr "ओपनवीपीएन (&V)"
 
+#: vpntypesinfodialog.cpp:250
+msgid "openvpn is missing"
+msgstr ""
+
+#: vpntypesinfodialog.cpp:253
+msgid "openssl is missing"
+msgstr ""
+
 #: vpntypesinfodialog.cpp:256
-msgid "openvpn and openssl"
+msgid "openvpn and openssl are missing"
 msgstr ""
 
 #: vpntypesinfodialog.cpp:289
@@ -14247,15 +14228,43 @@ msgstr ""
 msgid "Vtun VPN"
 msgstr "वीट्यून"
 
+#: vpntypesinfodialog.cpp:379
+msgid "vtun is missing"
+msgstr ""
+
+#: vpntypesinfodialog.cpp:425
+msgid "ssh is missing"
+msgstr ""
+
 #: vpntypesinfodialog.cpp:427
 #, fuzzy
-msgid "Password entry tool"
+msgid "Password entry tool is missing"
 msgstr "पासवर्ड खाली हे"
 
 #: listviewtooltip.h:68
 #, fuzzy
 msgid "Path:"
 msgstr "पथ"
+
+#, fuzzy
+#~| msgid "CA URL"
+#~ msgid "CA Url"
+#~ msgstr "सीए यूआरएल"
+
+#~ msgid "User name"
+#~ msgstr "कमइया नाम"
+
+#, fuzzy
+#~| msgid "File name cannot be empty!"
+#~ msgid "Profile name can be same!"
+#~ msgstr "नाम खाली नइ रह सके!"
+
+#~ msgid "File name:"
+#~ msgstr "फाइल नामः"
+
+#, fuzzy
+#~ msgid "%1 found"
+#~ msgstr "नइ मिलिस"
 
 #, fuzzy
 #~| msgid "Department: %1"
