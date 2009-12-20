@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-11 06:17+0200\n"
+"POT-Creation-Date: 2009-12-20 06:12+0100\n"
 "PO-Revision-Date: 2009-02-05 18:13+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -212,20 +212,225 @@ msgstr "सब्बो बनाय गे या परिवर्धित �
 msgid "&between"
 msgstr "के बीच मं (&b)"
 
-#: kftabdlg.cpp:175 kftabdlg.cpp:868
+#: kftabdlg.cpp:176
+msgid "and"
+msgstr "अउ"
+
+#: kftabdlg.cpp:197
+msgid "File &size is:"
+msgstr "फाइल आकार हे: (&s)"
+
+#: kftabdlg.cpp:210
+msgid "Files owned by &user:"
+msgstr "फाइल ए कमइया के मालिकाना मं हे: (&u)"
+
+#: kftabdlg.cpp:215
+msgid "Owned by &group:"
+msgstr "समूह के मालिकाना मं हे: (&g)"
+
+#: kftabdlg.cpp:218
+#, fuzzy
+msgctxt "file size isn't considered in the search"
+msgid "(none)"
+msgstr "(कुछ नइ)"
+
+#: kftabdlg.cpp:219
+msgid "At Least"
+msgstr "कम से कम"
+
+#: kftabdlg.cpp:220
+msgid "At Most"
+msgstr "अधिक से अधिक"
+
+#: kftabdlg.cpp:221
+msgid "Equal To"
+msgstr "के बराबर"
+
+#: kftabdlg.cpp:223 kftabdlg.cpp:889
+#, fuzzy
+#| msgid "Bytes"
+msgid "Byte"
+msgid_plural "Bytes"
+msgstr[0] "बाइट्स"
+msgstr[1] "बाइट्स"
+
+#: kftabdlg.cpp:224
+#, fuzzy
+msgid "KiB"
+msgstr "कि.बा."
+
+#: kftabdlg.cpp:225
+#, fuzzy
+msgid "MiB"
+msgstr "मे.बा."
+
+#: kftabdlg.cpp:226
+#, fuzzy
+msgid "GiB"
+msgstr "गी.बा."
+
+#: kftabdlg.cpp:293
+#, fuzzy
+msgctxt "label for the file type combobox"
+msgid "File &type:"
+msgstr "फाइल किसिमः (&t)"
+
+#: kftabdlg.cpp:298
+msgid "C&ontaining text:"
+msgstr "पाठ ल धरे हे: (&o)"
+
+#: kftabdlg.cpp:304
+msgid ""
+"<qt>If specified, only files that contain this text are found. Note that not "
+"all file types from the list above are supported. Please refer to the "
+"documentation for a list of supported file types.</qt>"
+msgstr ""
+
+#: kftabdlg.cpp:312
+msgid "Case s&ensitive"
+msgstr "अक्छर संवेदनसील (&e)"
+
+#: kftabdlg.cpp:313
+msgid "Include &binary files"
+msgstr "बाइनरी फाइल मन ल सामिल करव (&b)"
+
+#: kftabdlg.cpp:314
+msgid "Regular e&xpression"
+msgstr "रेगुलर एक्सप्रेसन (&x)"
+
+#: kftabdlg.cpp:317
+msgid ""
+"<qt>This lets you search in any type of file, even those that usually do not "
+"contain text (for example program files and images).</qt>"
+msgstr ""
+"<qt>ये आप मन ल कोनो किसम के फाइल मं खोजन देथे , इहां तक कि ओमां घलोक जऊन मं प्रायः "
+"कोई पाठ नइ होथे ( उदाहरन बर, प्रोग्राम फाइल मन मं अउर फोटू मन मं).</qt>"
+
+#: kftabdlg.cpp:325
+msgid "&Edit..."
+msgstr "संपादन... (&E)"
+
+#: kftabdlg.cpp:331
+msgid "fo&r:"
+msgstr "बरः (&r)"
+
+#: kftabdlg.cpp:333
+msgid "Search &metainfo sections:"
+msgstr "खोजे के मेटा जानकारी खन्ड: (&m)"
+
+#: kftabdlg.cpp:337
+msgid "All Files & Folders"
+msgstr "सब्बो फोल्डर अउ फाइल मन ल"
+
+#: kftabdlg.cpp:338
+msgid "Files"
+msgstr "फाइल"
+
+#: kftabdlg.cpp:339
+msgid "Folders"
+msgstr "फोल्डर"
+
+#: kftabdlg.cpp:340
+msgid "Symbolic Links"
+msgstr "सिंबालिक संकली"
+
+#: kftabdlg.cpp:341
+msgid "Special Files (Sockets, Device Files, ...)"
+msgstr "विसिस्ट फाइल मन ल (साकेट्स, उपकरन फाइल मन ल,...)"
+
+#: kftabdlg.cpp:342
+msgid "Executable Files"
+msgstr "चलाय जा सके वाले फाइल मन ल"
+
+#: kftabdlg.cpp:343
+msgid "SUID Executable Files"
+msgstr "एसयूआईडी चलाय जा सके वाले फाइल मन ल"
+
+#: kftabdlg.cpp:344
+msgid "All Images"
+msgstr "सब्बो फोटू"
+
+#: kftabdlg.cpp:345
+msgid "All Video"
+msgstr "सब्बो वीडियो"
+
+#: kftabdlg.cpp:346
+msgid "All Sounds"
+msgstr "सब्बो अवाज"
+
+#: kftabdlg.cpp:397
+msgid "Name/&Location"
+msgstr "नाम/जगह  (&L)"
+
+#: kftabdlg.cpp:398
+#, fuzzy
+msgctxt "tab name: search by contents"
+msgid "C&ontents"
+msgstr "विसय चीज (&o)"
+
+#: kftabdlg.cpp:399
+msgid "&Properties"
+msgstr "गुन (&P)"
+
+#: kftabdlg.cpp:404
+msgid ""
+"<qt>Search within files' specific comments/metainfo<br />These are some "
+"examples:<br /><ul><li><b>Audio files (mp3...)</b> Search in id3 tag for a "
+"title, an album</li><li><b>Images (png...)</b> Search images with a special "
+"resolution, comment...</li></ul></qt>"
+msgstr ""
+
+#: kftabdlg.cpp:412
+msgid ""
+"<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
+"(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
+"Search only in Resolution, Bitdepth...</li></ul></qt>"
+msgstr ""
+
+#: kftabdlg.cpp:605
+msgid "Unable to search within a period which is less than a minute."
+msgstr "एक समय के भीतर खोजे मं अक्छम जऊन कि एक मिनट से कम हे."
+
+#: kftabdlg.cpp:616
+msgid "The date is not valid."
+msgstr "तारीक वैध नइ हे."
+
+#: kftabdlg.cpp:618
+msgid "Invalid date range."
+msgstr "अवैध तारीक सीमा."
+
+#: kftabdlg.cpp:620
+msgid "Unable to search dates in the future."
+msgstr "भविस्य मं तारीक खोजे मं अक्छम."
+
+#: kftabdlg.cpp:682
+msgid "Size is too big. Set maximum size value?"
+msgstr "आकार बहुत बड़ा हे. सबसे अधिक आकार मूल्य सेट करव?"
+
+#: kftabdlg.cpp:682
+msgid "Error"
+msgstr "गलती"
+
+#: kftabdlg.cpp:682
+msgid "Set"
+msgstr "सेट"
+
+#: kftabdlg.cpp:682
+msgid "Do Not Set"
+msgstr "सेट नइ करव"
+
+#: kftabdlg.cpp:879
 #, fuzzy
 #| msgid "&during the previous"
-msgctxt "&during the previous day(s)"
+msgctxt ""
+"during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
+"minutes, 'h' hours, 'd' days, 'm' months, 'y' years"
 msgid "&during the previous"
 msgid_plural "&during the previous"
 msgstr[0] "पिछले के समय (&d)"
 msgstr[1] "पिछले के समय (&d)"
 
-#: kftabdlg.cpp:176
-msgid "and"
-msgstr "अउ"
-
-#: kftabdlg.cpp:180 kftabdlg.cpp:869
+#: kftabdlg.cpp:880
 #, fuzzy
 #| msgid "minute(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -234,7 +439,7 @@ msgid_plural "minutes"
 msgstr[0] "मिनट"
 msgstr[1] "मिनट"
 
-#: kftabdlg.cpp:181 kftabdlg.cpp:870
+#: kftabdlg.cpp:881
 #, fuzzy
 #| msgid "hour(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -243,7 +448,7 @@ msgid_plural "hours"
 msgstr[0] "घंटा"
 msgstr[1] "घंटा"
 
-#: kftabdlg.cpp:182 kftabdlg.cpp:871
+#: kftabdlg.cpp:882
 #, fuzzy
 msgctxt "use date ranges to search files by modified time"
 msgid "day"
@@ -251,7 +456,7 @@ msgid_plural "days"
 msgstr[0] "दिन"
 msgstr[1] "दिन"
 
-#: kftabdlg.cpp:183 kftabdlg.cpp:872
+#: kftabdlg.cpp:883
 #, fuzzy
 #| msgid "month(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -260,7 +465,7 @@ msgid_plural "months"
 msgstr[0] "महिना"
 msgstr[1] "महिना"
 
-#: kftabdlg.cpp:184 kftabdlg.cpp:873
+#: kftabdlg.cpp:884
 #, fuzzy
 #| msgid "year(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -268,209 +473,6 @@ msgid "year"
 msgid_plural "years"
 msgstr[0] "साल"
 msgstr[1] "साल"
-
-#: kftabdlg.cpp:200
-msgid "File &size is:"
-msgstr "फाइल आकार हे: (&s)"
-
-#: kftabdlg.cpp:213
-msgid "Files owned by &user:"
-msgstr "फाइल ए कमइया के मालिकाना मं हे: (&u)"
-
-#: kftabdlg.cpp:218
-msgid "Owned by &group:"
-msgstr "समूह के मालिकाना मं हे: (&g)"
-
-#: kftabdlg.cpp:221
-#, fuzzy
-msgctxt "file size isn't considered in the search"
-msgid "(none)"
-msgstr "(कुछ नइ)"
-
-#: kftabdlg.cpp:222
-msgid "At Least"
-msgstr "कम से कम"
-
-#: kftabdlg.cpp:223
-msgid "At Most"
-msgstr "अधिक से अधिक"
-
-#: kftabdlg.cpp:224
-msgid "Equal To"
-msgstr "के बराबर"
-
-#: kftabdlg.cpp:226 kftabdlg.cpp:878
-#, fuzzy
-#| msgid "Bytes"
-msgid "Byte"
-msgid_plural "Bytes"
-msgstr[0] "बाइट्स"
-msgstr[1] "बाइट्स"
-
-#: kftabdlg.cpp:227
-#, fuzzy
-msgid "KiB"
-msgstr "कि.बा."
-
-#: kftabdlg.cpp:228
-#, fuzzy
-msgid "MiB"
-msgstr "मे.बा."
-
-#: kftabdlg.cpp:229
-#, fuzzy
-msgid "GiB"
-msgstr "गी.बा."
-
-#: kftabdlg.cpp:295
-#, fuzzy
-msgctxt "label for the file type combobox"
-msgid "File &type:"
-msgstr "फाइल किसिमः (&t)"
-
-#: kftabdlg.cpp:300
-msgid "C&ontaining text:"
-msgstr "पाठ ल धरे हे: (&o)"
-
-#: kftabdlg.cpp:306
-msgid ""
-"<qt>If specified, only files that contain this text are found. Note that not "
-"all file types from the list above are supported. Please refer to the "
-"documentation for a list of supported file types.</qt>"
-msgstr ""
-
-#: kftabdlg.cpp:314
-msgid "Case s&ensitive"
-msgstr "अक्छर संवेदनसील (&e)"
-
-#: kftabdlg.cpp:315
-msgid "Include &binary files"
-msgstr "बाइनरी फाइल मन ल सामिल करव (&b)"
-
-#: kftabdlg.cpp:316
-msgid "Regular e&xpression"
-msgstr "रेगुलर एक्सप्रेसन (&x)"
-
-#: kftabdlg.cpp:319
-msgid ""
-"<qt>This lets you search in any type of file, even those that usually do not "
-"contain text (for example program files and images).</qt>"
-msgstr ""
-"<qt>ये आप मन ल कोनो किसम के फाइल मं खोजन देथे , इहां तक कि ओमां घलोक जऊन मं प्रायः "
-"कोई पाठ नइ होथे ( उदाहरन बर, प्रोग्राम फाइल मन मं अउर फोटू मन मं).</qt>"
-
-#: kftabdlg.cpp:327
-msgid "&Edit..."
-msgstr "संपादन... (&E)"
-
-#: kftabdlg.cpp:333
-msgid "fo&r:"
-msgstr "बरः (&r)"
-
-#: kftabdlg.cpp:335
-msgid "Search &metainfo sections:"
-msgstr "खोजे के मेटा जानकारी खन्ड: (&m)"
-
-#: kftabdlg.cpp:339
-msgid "All Files & Folders"
-msgstr "सब्बो फोल्डर अउ फाइल मन ल"
-
-#: kftabdlg.cpp:340
-msgid "Files"
-msgstr "फाइल"
-
-#: kftabdlg.cpp:341
-msgid "Folders"
-msgstr "फोल्डर"
-
-#: kftabdlg.cpp:342
-msgid "Symbolic Links"
-msgstr "सिंबालिक संकली"
-
-#: kftabdlg.cpp:343
-msgid "Special Files (Sockets, Device Files, ...)"
-msgstr "विसिस्ट फाइल मन ल (साकेट्स, उपकरन फाइल मन ल,...)"
-
-#: kftabdlg.cpp:344
-msgid "Executable Files"
-msgstr "चलाय जा सके वाले फाइल मन ल"
-
-#: kftabdlg.cpp:345
-msgid "SUID Executable Files"
-msgstr "एसयूआईडी चलाय जा सके वाले फाइल मन ल"
-
-#: kftabdlg.cpp:346
-msgid "All Images"
-msgstr "सब्बो फोटू"
-
-#: kftabdlg.cpp:347
-msgid "All Video"
-msgstr "सब्बो वीडियो"
-
-#: kftabdlg.cpp:348
-msgid "All Sounds"
-msgstr "सब्बो अवाज"
-
-#: kftabdlg.cpp:399
-msgid "Name/&Location"
-msgstr "नाम/जगह  (&L)"
-
-#: kftabdlg.cpp:400
-#, fuzzy
-msgctxt "tab name: search by contents"
-msgid "C&ontents"
-msgstr "विसय चीज (&o)"
-
-#: kftabdlg.cpp:401
-msgid "&Properties"
-msgstr "गुन (&P)"
-
-#: kftabdlg.cpp:406
-msgid ""
-"<qt>Search within files' specific comments/metainfo<br />These are some "
-"examples:<br /><ul><li><b>Audio files (mp3...)</b> Search in id3 tag for a "
-"title, an album</li><li><b>Images (png...)</b> Search images with a special "
-"resolution, comment...</li></ul></qt>"
-msgstr ""
-
-#: kftabdlg.cpp:414
-msgid ""
-"<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
-"(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
-"Search only in Resolution, Bitdepth...</li></ul></qt>"
-msgstr ""
-
-#: kftabdlg.cpp:607
-msgid "Unable to search within a period which is less than a minute."
-msgstr "एक समय के भीतर खोजे मं अक्छम जऊन कि एक मिनट से कम हे."
-
-#: kftabdlg.cpp:618
-msgid "The date is not valid."
-msgstr "तारीक वैध नइ हे."
-
-#: kftabdlg.cpp:620
-msgid "Invalid date range."
-msgstr "अवैध तारीक सीमा."
-
-#: kftabdlg.cpp:622
-msgid "Unable to search dates in the future."
-msgstr "भविस्य मं तारीक खोजे मं अक्छम."
-
-#: kftabdlg.cpp:684
-msgid "Size is too big. Set maximum size value?"
-msgstr "आकार बहुत बड़ा हे. सबसे अधिक आकार मूल्य सेट करव?"
-
-#: kftabdlg.cpp:684
-msgid "Error"
-msgstr "गलती"
-
-#: kftabdlg.cpp:684
-msgid "Set"
-msgstr "सेट"
-
-#: kftabdlg.cpp:684
-msgid "Do Not Set"
-msgstr "सेट नइ करव"
 
 #: kquery.cpp:552
 msgid "Error while using locate"
