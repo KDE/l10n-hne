@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-31 06:22+0100\n"
+"POT-Creation-Date: 2010-01-01 06:36+0100\n"
 "PO-Revision-Date: 2009-02-17 12:43+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -2363,7 +2363,7 @@ msgid "New"
 msgstr "नवा"
 
 #: Settings/CategoryPage.cpp:85 AnnotationDialog/ListSelect.cpp:287
-#: AnnotationDialog/Dialog.cpp:871 MainWindow/DeleteDialog.cpp:45
+#: AnnotationDialog/Dialog.cpp:871
 msgid "Delete"
 msgstr "मेटाव"
 
@@ -2913,48 +2913,59 @@ msgstr "हाँ"
 msgid "No"
 msgstr "नइ"
 
-#: MainWindow/DeleteDialog.cpp:43
-msgid "Delete from database"
-msgstr "डेटाबेस से मेटाव"
-
-#: MainWindow/DeleteDialog.cpp:55
-msgid "Delete file from disk as well"
-msgstr "डिस्क से घलोक मिटा देव"
-
-#: MainWindow/DeleteDialog.cpp:64
-#, fuzzy, kde-format
-msgid ""
-"<p><b><center><font size=\"+3\">Delete Images/Videos from database<br/>%1 "
-"selected</font></center></b></p>"
+#: MainWindow/DeleteDialog.cpp:45
+msgid "Removing items"
 msgstr ""
-"<p><b><center><font size=\"+3\">पढ़व फाइल जानकारी<br>%1 चुने गे</font></center></"
-"b></p>"
 
-#: MainWindow/DeleteDialog.cpp:102
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p><b>Unable to physically delete %1 file(s). Do you have permission to "
-#| "delete these files?</b></p>"
-msgid ""
-"<p><b>Unable to physically delete a file. Do you have permission to do so?</"
-"b></p>"
-msgid_plural ""
-"<p><b>Unable to physically delete %1 files. Do you have permission to do so?"
-"</b></p>"
+#: MainWindow/DeleteDialog.cpp:47
+msgid "OK"
+msgstr "ठीक"
+
+#: MainWindow/DeleteDialog.cpp:73
+#, kde-format
+msgid "Removing 1 item"
+msgid_plural "Removing %1 items"
 msgstr[0] ""
-"<p><b> %1 फाइल मन ल मेटाय मं अक्छम. के आप मन तिर ए फाइल मन ल मेटाव के अनुमतियां हे?</"
-"b></p>"
 msgstr[1] ""
-"<p><b> %1 फाइल मन ल मेटाय मं अक्छम. के आप मन तिर ए फाइल मन ल मेटाव के अनुमतियां हे?</"
-"b></p>"
 
-#: MainWindow/DeleteDialog.cpp:106
+#: MainWindow/DeleteDialog.cpp:74
+#, kde-format
+msgid ""
+"Selected item will be removed from the database.<br/>What do you want to do "
+"with the file on disk?"
+msgid_plural ""
+"Selected %1 items will be removed from the database.<br/>What do you want to "
+"do with the files on disk?"
+msgstr[0] ""
+msgstr[1] ""
+
+#: MainWindow/DeleteDialog.cpp:80
+msgid "Move file to Trash"
+msgid_plural "Move files to Trash"
+msgstr[0] ""
+msgstr[1] ""
+
+#: MainWindow/DeleteDialog.cpp:81
+#, fuzzy
+#| msgid "Delete file from disk as well"
+msgid "Delete file from disk"
+msgid_plural "Delete files from disk"
+msgstr[0] "डिस्क से घलोक मिटा देव"
+msgstr[1] "डिस्क से घलोक मिटा देव"
+
+#: MainWindow/DeleteDialog.cpp:82
+#, fuzzy
+#| msgid "Delete from database"
+msgid "Only remove the item from database"
+msgid_plural "Only remove the items from database"
+msgstr[0] "डेटाबेस से मेटाव"
+msgstr[1] "डेटाबेस से मेटाव"
+
+#: MainWindow/DeleteDialog.cpp:139
 #, fuzzy
 #| msgid "Error Deleting Files"
-msgid "Error Deleting File"
-msgid_plural "Error Deleting Files"
-msgstr[0] "फाइल मेटाय मं गलती"
-msgstr[1] "फाइल मेटाय मं गलती"
+msgid "Error Deleting Files"
+msgstr "फाइल मेटाय मं गलती"
 
 #: MainWindow/ImageCounter.cpp:32
 #, kde-format
@@ -3796,6 +3807,31 @@ msgstr "छोटेफोटू रीआर्डर करत हे"
 msgid "Generating thumbnails"
 msgstr "छोटेफोटू बनावत हे"
 
+#, fuzzy
+#~ msgid ""
+#~ "<p><b><center><font size=\"+3\">Delete Images/Videos from database<br/>%1 "
+#~ "selected</font></center></b></p>"
+#~ msgstr ""
+#~ "<p><b><center><font size=\"+3\">पढ़व फाइल जानकारी<br>%1 चुने गे</font></"
+#~ "center></b></p>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p><b>Unable to physically delete %1 file(s). Do you have permission to "
+#~| "delete these files?</b></p>"
+#~ msgid ""
+#~ "<p><b>Unable to physically delete a file. Do you have permission to do so?"
+#~ "</b></p>"
+#~ msgid_plural ""
+#~ "<p><b>Unable to physically delete %1 files. Do you have permission to do "
+#~ "so?</b></p>"
+#~ msgstr[0] ""
+#~ "<p><b> %1 फाइल मन ल मेटाय मं अक्छम. के आप मन तिर ए फाइल मन ल मेटाव के अनुमतियां हे?"
+#~ "</b></p>"
+#~ msgstr[1] ""
+#~ "<p><b> %1 फाइल मन ल मेटाय मं अक्छम. के आप मन तिर ए फाइल मन ल मेटाव के अनुमतियां हे?"
+#~ "</b></p>"
+
 #~ msgid "**NONE**"
 #~ msgstr "**कुछ-नइ**"
 
@@ -3851,9 +3887,6 @@ msgstr "छोटेफोटू बनावत हे"
 
 #~ msgid "Failed"
 #~ msgstr "फेल"
-
-#~ msgid "OK"
-#~ msgstr "ठीक"
 
 #~ msgid "Untested"
 #~ msgstr "बिनजांचे"
