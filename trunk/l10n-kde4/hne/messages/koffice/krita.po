@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-10 06:19+0100\n"
+"POT-Creation-Date: 2010-01-12 07:01+0100\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -3813,7 +3813,7 @@ msgstr "ठीक (&O)"
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
 #. i18n: file: plugins/extensions/dockers/defaultdockers/wdgpalettechooser.ui:74
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
-#: rc.cpp:1169 rc.cpp:2464 plugins/tools/tool_polyline/kis_tool_polyline.cc:63
+#: rc.cpp:1169 rc.cpp:2464 ui/tool/kis_tool_polyline_base.cpp:42
 msgid "&Cancel"
 msgstr "खारिज करव (&C)"
 
@@ -8361,6 +8361,12 @@ msgstr "वायसीबीसीआर (८-बिट इंटीजर/च�
 msgid "Selection"
 msgstr "चयन"
 
+#: ui/tool/kis_tool_polyline_base.cpp:39
+#, fuzzy
+#| msgid "&Finish Polygon"
+msgid "&Finish"
+msgstr "बहुभुज पूरा करव (&F)"
+
 #: ui/tool/kis_tool.cc:103
 #, fuzzy
 #| msgid "Foreground Color"
@@ -8379,7 +8385,7 @@ msgstr "आगू तरफ के रंग"
 msgid "No options"
 msgstr "विकल्प"
 
-#: ui/tool/kis_tool_freehand.cc:409 ui/tool/kis_tool_freehand.cc:418
+#: ui/tool/kis_tool_freehand.cc:415 ui/tool/kis_tool_freehand.cc:424
 msgid "Freehand tool"
 msgstr "मुक्तहस्त औजार"
 
@@ -8660,58 +8666,62 @@ msgid "Lukáš Tvrdý"
 msgstr ""
 
 #: ui/kis_aboutdata.h:58
+msgid "Marc Pegon"
+msgstr ""
+
+#: ui/kis_aboutdata.h:59
 msgid "Matthias Elter"
 msgstr "मैथियास एल्टर"
 
-#: ui/kis_aboutdata.h:59
+#: ui/kis_aboutdata.h:60
 msgid "Melchior Franz"
 msgstr "मेलकाइर फ्रेंज"
 
-#: ui/kis_aboutdata.h:60
+#: ui/kis_aboutdata.h:61
 msgid "Michael Koch"
 msgstr "माइकल कोच"
 
-#: ui/kis_aboutdata.h:61
+#: ui/kis_aboutdata.h:62
 msgid "Michael Thaler"
 msgstr "माइकल थेलर"
 
-#: ui/kis_aboutdata.h:62
+#: ui/kis_aboutdata.h:63
 msgid "Patrick Julien"
 msgstr "पैट्रिक जूलियन"
 
-#: ui/kis_aboutdata.h:63
+#: ui/kis_aboutdata.h:64
 msgid "Roger Larsson"
 msgstr "रोजर लार्सन"
 
-#: ui/kis_aboutdata.h:64
+#: ui/kis_aboutdata.h:65
 msgid "Samy Lange"
 msgstr ""
 
-#: ui/kis_aboutdata.h:65
+#: ui/kis_aboutdata.h:66
 msgid "Sven Langkamp"
 msgstr "स्वेन लैंगकैम्प"
 
-#: ui/kis_aboutdata.h:66
+#: ui/kis_aboutdata.h:67
 msgid "Toshitaka Fujioka"
 msgstr "तोसित्का फुजिओका"
 
-#: ui/kis_aboutdata.h:67
+#: ui/kis_aboutdata.h:68
 msgid "Thomas Zander"
 msgstr "थामस जेंडर"
 
-#: ui/kis_aboutdata.h:68
+#: ui/kis_aboutdata.h:69
 msgid "Tom Burdick"
 msgstr "टाम बरडिक"
 
-#: ui/kis_aboutdata.h:69
+#: ui/kis_aboutdata.h:70
 msgid "Vera Lukman"
 msgstr ""
 
-#: ui/kis_aboutdata.h:70
+#: ui/kis_aboutdata.h:71
 msgid "Sander Koning"
 msgstr "सांदर कोनिंग"
 
-#: ui/kis_aboutdata.h:71
+#: ui/kis_aboutdata.h:72
 msgid "Andreas Lundin"
 msgstr "आंद्रेयास लुंडिन"
 
@@ -9783,19 +9793,11 @@ msgstr "पर्सपेक्टिव ट्रांसफारम"
 msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgstr "बहुभुज बनाव. सिफ्ट-मुसुवाकिलिक बहुभुज ल पूरा करही"
 
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:60
-msgid "&Finish Polyline"
-msgstr "बहुलकीर पूरा करव (&F)"
-
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:118
+#: plugins/tools/tool_polyline/kis_tool_polyline.cc:55
 msgid "Polyline"
 msgstr "पालिलाईन"
 
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:317
-msgid "Press shift-mouseclick to end the polyline."
-msgstr "बहुलकीर ल पूरा करे बर सिफ्ट-मुसुवाकिलिक दबाव."
-
-#: plugins/tools/tool_polyline/kis_tool_polyline.h:81
+#: plugins/tools/tool_polyline/kis_tool_polyline.h:54
 msgid "Draw a polyline. Shift-mouseclick ends the polyline."
 msgstr "बहुलकीर बनाव. सिफ्ट-मुसुवाकिलिक बहुलकीर ल पूरा करही"
 
@@ -9938,8 +9940,8 @@ msgstr "एखर आउटलाइन से एक छेत्र चुन�
 msgid "Select similar colors"
 msgstr "एक जइसन रंग चुनव"
 
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:71
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:82
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:72
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:83
 msgid "Polygonal Selection"
 msgstr "बहुभुज चयन"
 
@@ -11080,16 +11082,16 @@ msgstr "एचडीआर परत"
 msgid "JPEG 2000 Export Options"
 msgstr "ज्यामिती विकल्प"
 
+#: plugins/formats/pdf/kis_pdf_import.cpp:100
 #: plugins/formats/pdf/kis_pdf_import.cpp:101
-#: plugins/formats/pdf/kis_pdf_import.cpp:102
 msgid "A password is required to read that pdf"
 msgstr ""
 
-#: plugins/formats/pdf/kis_pdf_import.cpp:111
+#: plugins/formats/pdf/kis_pdf_import.cpp:110
 msgid "PDF Import Options"
 msgstr ""
 
-#: plugins/formats/pdf/kis_pdf_import.cpp:142
+#: plugins/formats/pdf/kis_pdf_import.cpp:141
 #, fuzzy, kde-format
 #| msgid "Layer %1"
 msgid "Page %1"
@@ -11744,6 +11746,12 @@ msgstr "रूलर सहायक"
 msgid "Ruler assistant editor tool"
 msgstr "रूलर सहायक संपादन औजार"
 
+#~ msgid "&Finish Polyline"
+#~ msgstr "बहुलकीर पूरा करव (&F)"
+
+#~ msgid "Press shift-mouseclick to end the polyline."
+#~ msgstr "बहुलकीर ल पूरा करे बर सिफ्ट-मुसुवाकिलिक दबाव."
+
 #~ msgid "Add"
 #~ msgstr "जोड़व"
 
@@ -11774,9 +11782,6 @@ msgstr "रूलर सहायक संपादन औजार"
 
 #~ msgid "Shift-click will end the polygon."
 #~ msgstr "सिफ्ट किलिक करे मं बहुभुज ल पूरा करही."
-
-#~ msgid "&Finish Polygon"
-#~ msgstr "बहुभुज पूरा करव (&F)"
 
 #~ msgid "Example curves tool"
 #~ msgstr "उदाहरन वक्र औजार"
