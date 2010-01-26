@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-27 06:14+0100\n"
+"POT-Creation-Date: 2010-01-26 06:20+0100\n"
 "PO-Revision-Date: 2009-02-18 14:22+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -52,14 +52,14 @@ msgstr "ट्रैक"
 msgid "unknown"
 msgstr ""
 
-#: encodefileimp.cpp:415 tracksimp.cpp:479
+#: encodefileimp.cpp:415 tracksimp.cpp:521
 #, kde-format
 msgid ""
 "%1 Job(s) have been started.  You can watch their progress in the jobs "
 "section."
 msgstr "काम %1 चालू हो गिस.  आप मन एखर प्रगति काम खन्ड मं देख सकथो ."
 
-#: encodefileimp.cpp:417 tracksimp.cpp:481
+#: encodefileimp.cpp:417 tracksimp.cpp:523
 msgid "Jobs have started"
 msgstr "काम चालू हो गए"
 
@@ -68,11 +68,11 @@ msgstr "काम चालू हो गए"
 msgid "File"
 msgstr "सीर्सक"
 
-#: encodefilemodel.cpp:29 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:29 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 msgid "Title"
 msgstr "सीर्सक"
 
-#: encodefilemodel.cpp:29 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:29 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 #, fuzzy
 msgid "Artist"
 msgstr "कलाकारः"
@@ -84,7 +84,7 @@ msgctxt "@title:column"
 msgid "Album"
 msgstr "एल्बम"
 
-#: encodefilemodel.cpp:30 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:30 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 #, fuzzy
 msgid "Comment"
 msgstr "टिप्पनीः"
@@ -94,7 +94,7 @@ msgstr "टिप्पनीः"
 msgid "Genre"
 msgstr "घरानाः"
 
-#: encodefilemodel.cpp:31 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:31 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 msgid "Track"
 msgstr "ट्रैक"
 
@@ -238,7 +238,7 @@ msgstr ""
 msgid "Running"
 msgstr ""
 
-#: jobdelegate.cpp:51 tracksimp.cpp:213
+#: jobdelegate.cpp:51
 msgid "Error"
 msgstr "गलती"
 
@@ -1448,74 +1448,78 @@ msgstr "रिप्पिंग: %1 - %2"
 msgid "Track %1.wav"
 msgstr "ट्रैक"
 
-#: tracksimp.cpp:49 tracksimp.cpp:550
+#: tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 #, fuzzy
 #| msgid "Rip"
 msgctxt "@title:column"
 msgid "Rip"
 msgstr "रिप"
 
-#: tracksimp.cpp:49 tracksimp.cpp:550
+#: tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 msgid "Length"
 msgstr "लंबाई"
 
-#: tracksimp.cpp:103
+#: tracksimp.cpp:116
 msgid "none detected"
 msgstr "पता नइ चलिस"
 
-#: tracksimp.cpp:210
-#, kde-format
-msgid ""
-"CDROM read or access error (or no audio disk in drive).\n"
-"Please make sure you have access permissions to:\n"
-"%1"
-msgstr ""
+#: tracksimp.cpp:178
+#, fuzzy
+#| msgid "Unknown Artist - Unknown Album"
+msgid "Unknown Artist"
+msgstr "अग्यात कलाकार - अग्यात एलबम"
 
-#: tracksimp.cpp:223
+#: tracksimp.cpp:178
+#, fuzzy
+#| msgid "Unknown Artist - Unknown Album"
+msgid "Unknown Album"
+msgstr "अग्यात कलाकार - अग्यात एलबम"
+
+#: tracksimp.cpp:268
 msgid "Please insert a disk."
 msgstr "किरपा करके, एक डिस्क डालव."
 
-#: tracksimp.cpp:224 tracksimp.cpp:250
+#: tracksimp.cpp:269 tracksimp.cpp:295
 msgid "CDDB Failed"
 msgstr "सीडीडीबी फेल"
 
-#: tracksimp.cpp:250
+#: tracksimp.cpp:295
 msgid "Unable to retrieve CDDB information."
 msgstr "सीडीडीबी जानकारी निकालने मं अक्छम."
 
-#: tracksimp.cpp:270
+#: tracksimp.cpp:316
 msgid "Select CDDB entry"
 msgstr "सीडीडीबी प्रविस्टि चुनव"
 
-#: tracksimp.cpp:271
+#: tracksimp.cpp:317
 msgid "Select a CDDB entry:"
 msgstr "सीडीडीबी प्रविस्टि चुनव:"
 
-#: tracksimp.cpp:361
+#: tracksimp.cpp:407
 msgid "CD Editor"
 msgstr "सीडी संपादक"
 
-#: tracksimp.cpp:424
+#: tracksimp.cpp:466
 msgid "No tracks have been selected.  Would you like to rip the entire CD?"
 msgstr ""
 
-#: tracksimp.cpp:425
+#: tracksimp.cpp:467
 msgid "No Tracks Selected"
 msgstr "कोई ट्रैक्स नइ चुने गे"
 
-#: tracksimp.cpp:425
+#: tracksimp.cpp:467
 msgid "Rip CD"
 msgstr "सीडी रिप करव"
 
-#: tracksimp.cpp:434
+#: tracksimp.cpp:476
 msgid "Could not find audiocd:/ protocol. Please install the audiocd ioslave"
 msgstr ""
 
-#: tracksimp.cpp:435
+#: tracksimp.cpp:477
 msgid "Protocol Not Found"
 msgstr "प्रोटोकाल नइ मिलीस"
 
-#: tracksimp.cpp:450
+#: tracksimp.cpp:492
 #, kde-format
 msgid ""
 "Part of the album is not set: %1.\n"
@@ -1523,19 +1527,19 @@ msgid ""
 " Would you like to rip the selected tracks anyway?"
 msgstr ""
 
-#: tracksimp.cpp:450
+#: tracksimp.cpp:492
 msgid "Album Information Incomplete"
 msgstr "एल्बम जानकारी अधूरा"
 
-#: tracksimp.cpp:450
+#: tracksimp.cpp:492
 msgid "Rip"
 msgstr "रिप"
 
-#: tracksimp.cpp:605
+#: tracksimp.cpp:647
 msgid " - "
 msgstr " - "
 
-#: tracksimp.cpp:607
+#: tracksimp.cpp:649
 msgid "No disc"
 msgstr "कोई डिस्क नइ"
 
