@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-30 06:14+0100\n"
+"POT-Creation-Date: 2010-02-05 02:40+0100\n"
 "PO-Revision-Date: 2009-02-28 21:12+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -55,7 +55,7 @@ msgid "SMS"
 msgstr "एसएमएस"
 
 #: addresseeview.cpp:243 ldapsearchdialog.cpp:83 ldapsearchdialog.cpp:162
-#: ldapsearchdialog.cpp:302 ldapsearchdialog.cpp:387
+#: ldapsearchdialog.cpp:305 ldapsearchdialog.cpp:390
 msgid "Email"
 msgstr "ईमेल"
 
@@ -71,7 +71,7 @@ msgstr "ब्लाग फीड"
 msgid "Notes"
 msgstr "टीप"
 
-#: addresseeview.cpp:332 ldapsearchdialog.cpp:95 ldapsearchdialog.cpp:315
+#: addresseeview.cpp:332 ldapsearchdialog.cpp:95 ldapsearchdialog.cpp:318
 msgid "Department"
 msgstr "विभाग"
 
@@ -151,52 +151,92 @@ msgstr "यूआरएल  %1 खोलव"
 msgid "Chat with %1"
 msgstr "के साथ गपसप करव %1"
 
-#: addressesdialog.cpp:126 addressesdialog.cpp:137
+#: addressesdialog.cpp:173 addressesdialog.cpp:184
 msgid "<group>"
 msgstr "<समूह>"
 
 #. i18n: file: addresspicker.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, AddressPickerUI)
-#: addressesdialog.cpp:205 rc.cpp:3
+#: addressesdialog.cpp:300 rc.cpp:3
 msgid "Address Selection"
 msgstr "पता चयन"
 
-#: addressesdialog.cpp:234 addressesdialog.cpp:663
+#: addressesdialog.cpp:337
+#, fuzzy
+#| msgid "&Filter on:"
+msgid "Filter on:"
+msgstr "ए मं फिल्टरः (&F)"
+
+#: addressesdialog.cpp:343
+msgid "Search Directory Service"
+msgstr ""
+
+#: addressesdialog.cpp:350
+#, fuzzy
+#| msgid "&To >>"
+msgid "To >>"
+msgstr "को >> (&T)"
+
+#: addressesdialog.cpp:353
+#, fuzzy
+#| msgid "&CC >>"
+msgid "CC >>"
+msgstr "नकल >> (&C)"
+
+#: addressesdialog.cpp:356
+#, fuzzy
+#| msgid "&BCC >>"
+msgid "BCC >>"
+msgstr "गुमनाम पता.  >> (&B)"
+
+#: addressesdialog.cpp:359
+#, fuzzy
+#| msgid "<< &Remove"
+msgid "<< Remove"
+msgstr "<< मेटाव (&R)"
+
+#: addressesdialog.cpp:375
+#, fuzzy
+#| msgid "Save as &Distribution List..."
+msgid "Save as Distribution List..."
+msgstr "वितरन सूची के रुप मं सहेजव... (&D)"
+
+#: addressesdialog.cpp:490 addressesdialog.cpp:972
 msgid "To"
 msgstr "को"
 
-#: addressesdialog.cpp:243 addressesdialog.cpp:683
+#: addressesdialog.cpp:499 addressesdialog.cpp:992
 msgid "CC"
 msgstr "नकल: "
 
-#: addressesdialog.cpp:252 addressesdialog.cpp:703
+#: addressesdialog.cpp:508 addressesdialog.cpp:1012
 msgid "BCC"
 msgstr "गुमनाम पता.: "
 
-#: addressesdialog.cpp:309 completionordereditor.cpp:221
+#: addressesdialog.cpp:567 completionordereditor.cpp:221
 #: recentaddresses.cpp:185
 msgid "Recent Addresses"
 msgstr "हाल केपते"
 
-#: addressesdialog.cpp:433
+#: addressesdialog.cpp:691
 msgid "Other Addresses"
 msgstr "अऊ दूसर पता"
 
-#: addressesdialog.cpp:817
+#: addressesdialog.cpp:1152
 msgid ""
 "There are no addresses in your list. First add some addresses from your "
 "address book, then try again."
 msgstr ""
 
-#: addressesdialog.cpp:824
+#: addressesdialog.cpp:1159
 msgid "New Distribution List"
 msgstr "नवा वितरन सूची"
 
-#: addressesdialog.cpp:825
+#: addressesdialog.cpp:1160
 msgid "Please enter name:"
 msgstr "किरपा करके, नाम भरव:"
 
-#: addressesdialog.cpp:838
+#: addressesdialog.cpp:1173
 #, kde-format
 msgid ""
 "<qt>Distribution list with the given name <b>%1</b> already exists. Please "
@@ -205,7 +245,27 @@ msgstr ""
 "<qt>दे गे नाम <b>%1</b> के वितरन सूची पहिली से ही मौजूद हे, किरपा करके, एक भिन्न नाम "
 "चुनव.</qt>"
 
-#: addressesdialog.cpp:1000
+#: addressesdialog.cpp:1195 kaddrbookexternal.cpp:57 kaddrbookexternal.cpp:184
+#, fuzzy
+#| msgid "&Address Book"
+msgid "Select Address Book"
+msgstr "पता पुस्तिका (&A)"
+
+#: addressesdialog.cpp:1196
+msgid "Select the address book the new contact group shall be saved in:"
+msgstr ""
+
+#: addressesdialog.cpp:1204
+msgid "New Contact Group"
+msgstr ""
+
+#: addressesdialog.cpp:1205
+#, fuzzy
+#| msgid "Please enter a name for the template:"
+msgid "Please enter name of the new contact group:"
+msgstr "टैम्प्लेट बर किरपा करके, एक नाम भरव:"
+
+#: addressesdialog.cpp:1428
 msgid "Distribution Lists"
 msgstr "वितरन सूची"
 
@@ -319,7 +379,7 @@ msgstr "अवधि हे"
 msgid "Duration"
 msgstr "अवधि"
 
-#: calendardiffalgo.cpp:155 ldapsearchdialog.cpp:98 ldapsearchdialog.cpp:316
+#: calendardiffalgo.cpp:155 ldapsearchdialog.cpp:98 ldapsearchdialog.cpp:319
 msgid "Description"
 msgstr "वर्नन"
 
@@ -448,43 +508,43 @@ msgstr "संपादन पूरा अनुक्रम"
 #: contactstreemodel.cpp:214
 #, fuzzy
 #| msgid "&Address Book"
-msgctxt "@title:column, address books overview"
+msgctxt "@title:column address books overview"
 msgid "Address Books"
 msgstr "पता पुस्तिका (&A)"
 
 #: contactstreemodel.cpp:223
 #, fuzzy
 #| msgid "Name"
-msgctxt "@title:column, name of a person"
+msgctxt "@title:column name of a person"
 msgid "Name"
 msgstr "नाम"
 
 #: contactstreemodel.cpp:229
 #, fuzzy
 #| msgid "Homepage"
-msgctxt "@title:column, home address of a person"
+msgctxt "@title:column home address of a person"
 msgid "Home"
 msgstr "मुख पेज"
 
 #: contactstreemodel.cpp:232
-msgctxt "@title:column, home address of a person"
+msgctxt "@title:column home address of a person"
 msgid "Work"
 msgstr ""
 
 #: contactstreemodel.cpp:235
 #, fuzzy
 #| msgid "Home Number"
-msgctxt "@title:column, phone numbers of a person"
+msgctxt "@title:column phone numbers of a person"
 msgid "Phone Numbers"
 msgstr "घर नंबर"
 
 #: contactstreemodel.cpp:238
-msgctxt "@title:column, the preferred email addresses of a person"
+msgctxt "@title:column the preferred email addresses of a person"
 msgid "Preferred EMail"
 msgstr ""
 
 #: contactstreemodel.cpp:241
-msgctxt "@title:column, all email addresses of a person"
+msgctxt "@title:column all email addresses of a person"
 msgid "All EMails"
 msgstr ""
 
@@ -509,7 +569,7 @@ msgstr "कैस आईमैप"
 msgid "News"
 msgstr "समाचार"
 
-#: foldertreewidget.cpp:381 ldapsearchdialog.cpp:170 ldapsearchdialog.cpp:449
+#: foldertreewidget.cpp:381 ldapsearchdialog.cpp:170 ldapsearchdialog.cpp:452
 msgid "Search"
 msgstr "खोजव"
 
@@ -560,12 +620,6 @@ msgstr "पाप3"
 msgctxt "@item unknown mail account"
 msgid "Unknown"
 msgstr "अग्यात"
-
-#: kaddrbookexternal.cpp:57 kaddrbookexternal.cpp:184
-#, fuzzy
-#| msgid "&Address Book"
-msgid "Select Address Book"
-msgstr "पता पुस्तिका (&A)"
 
 #: kaddrbookexternal.cpp:58 kaddrbookexternal.cpp:185
 msgid "Select the address book the new contact shall be saved in:"
@@ -1281,6 +1335,85 @@ msgctxt "@action:button"
 msgid "Keep Editor Running"
 msgstr "संपादक खुला रहन देव"
 
+#: kpimprefs.cpp:37
+msgctxt "incidence category: appointment"
+msgid "Appointment"
+msgstr ""
+
+#: kpimprefs.cpp:38
+msgctxt "incidence category"
+msgid "Business"
+msgstr ""
+
+#: kpimprefs.cpp:39
+#, fuzzy
+#| msgid "Selection"
+msgctxt "incidence category"
+msgid "Meeting"
+msgstr "चयन"
+
+#: kpimprefs.cpp:40
+msgctxt "incidence category: phone call"
+msgid "Phone Call"
+msgstr ""
+
+#: kpimprefs.cpp:41
+#, fuzzy
+#| msgid "Duration"
+msgctxt "incidence category"
+msgid "Education"
+msgstr "अवधि"
+
+#: kpimprefs.cpp:45
+#, fuzzy
+#| msgctxt "this day"
+#| msgid "today"
+msgctxt ""
+"incidence category: official or unofficial observance of religious/national/"
+"cultural/other significance, often accompanied by celebrations or festivities"
+msgid "Holiday"
+msgstr "आज"
+
+#: kpimprefs.cpp:48
+#, fuzzy
+#| msgid "Location"
+msgctxt ""
+"incidence category: a lengthy time away from work or school, a trip abroad, "
+"or simply a pleasure trip away from home"
+msgid "Vacation"
+msgstr "जगह"
+
+#: kpimprefs.cpp:51
+msgctxt ""
+"incidence category: examples: anniversary of historical or personal event; "
+"big date; remembrance, etc"
+msgid "Special Occasion"
+msgstr ""
+
+#: kpimprefs.cpp:52
+msgctxt "incidence category"
+msgid "Personal"
+msgstr ""
+
+#: kpimprefs.cpp:55
+msgctxt ""
+"incidence category: typically associated with leaving home for business, and "
+"not pleasure"
+msgid "Travel"
+msgstr ""
+
+#: kpimprefs.cpp:56
+msgctxt "incidence category"
+msgid "Miscellaneous"
+msgstr ""
+
+#: kpimprefs.cpp:57
+#, fuzzy
+#| msgid "Show Birthday"
+msgctxt "incidence category"
+msgid "Birthday"
+msgstr "जन्मदिन देखाव"
+
 #: kprefsdialog.cpp:244
 msgid "Choose..."
 msgstr "चुनव..."
@@ -1572,29 +1705,29 @@ msgctxt "fewer widgets"
 msgid "Fewer"
 msgstr "कम"
 
-#: ldapsearchdialog.cpp:81 ldapsearchdialog.cpp:318
+#: ldapsearchdialog.cpp:81 ldapsearchdialog.cpp:321
 msgid "Title"
 msgstr "सीर्सक"
 
-#: ldapsearchdialog.cpp:82 ldapsearchdialog.cpp:301
+#: ldapsearchdialog.cpp:82 ldapsearchdialog.cpp:304
 msgid "Full Name"
 msgstr "पूरा नांव"
 
-#: ldapsearchdialog.cpp:84 ldapsearchdialog.cpp:163 ldapsearchdialog.cpp:303
-#: ldapsearchdialog.cpp:389
+#: ldapsearchdialog.cpp:84 ldapsearchdialog.cpp:163 ldapsearchdialog.cpp:306
+#: ldapsearchdialog.cpp:392
 msgid "Home Number"
 msgstr "घर नंबर"
 
-#: ldapsearchdialog.cpp:85 ldapsearchdialog.cpp:164 ldapsearchdialog.cpp:304
-#: ldapsearchdialog.cpp:391
+#: ldapsearchdialog.cpp:85 ldapsearchdialog.cpp:164 ldapsearchdialog.cpp:307
+#: ldapsearchdialog.cpp:394
 msgid "Work Number"
 msgstr "काम नंबर"
 
-#: ldapsearchdialog.cpp:86 ldapsearchdialog.cpp:305
+#: ldapsearchdialog.cpp:86 ldapsearchdialog.cpp:308
 msgid "Mobile Number"
 msgstr "मोबाइल नंबर"
 
-#: ldapsearchdialog.cpp:87 ldapsearchdialog.cpp:306
+#: ldapsearchdialog.cpp:87 ldapsearchdialog.cpp:309
 msgid "Fax Number"
 msgstr "फैक्स नंबर"
 
@@ -1602,39 +1735,39 @@ msgstr "फैक्स नंबर"
 msgid "Pager"
 msgstr "पेजर"
 
-#: ldapsearchdialog.cpp:89 ldapsearchdialog.cpp:309
+#: ldapsearchdialog.cpp:89 ldapsearchdialog.cpp:312
 msgid "Street"
 msgstr "सड़क"
 
-#: ldapsearchdialog.cpp:90 ldapsearchdialog.cpp:310
+#: ldapsearchdialog.cpp:90 ldapsearchdialog.cpp:313
 msgid "State"
 msgstr "स्थिति"
 
-#: ldapsearchdialog.cpp:91 ldapsearchdialog.cpp:311
+#: ldapsearchdialog.cpp:91 ldapsearchdialog.cpp:314
 msgid "Country"
 msgstr "देस"
 
-#: ldapsearchdialog.cpp:92 ldapsearchdialog.cpp:314
+#: ldapsearchdialog.cpp:92 ldapsearchdialog.cpp:317
 msgid "City"
 msgstr "सहर"
 
-#: ldapsearchdialog.cpp:93 ldapsearchdialog.cpp:308
+#: ldapsearchdialog.cpp:93 ldapsearchdialog.cpp:311
 msgid "Organization"
 msgstr "संगठन "
 
-#: ldapsearchdialog.cpp:94 ldapsearchdialog.cpp:307
+#: ldapsearchdialog.cpp:94 ldapsearchdialog.cpp:310
 msgid "Company"
 msgstr "कम्पनी"
 
-#: ldapsearchdialog.cpp:96 ldapsearchdialog.cpp:312
+#: ldapsearchdialog.cpp:96 ldapsearchdialog.cpp:315
 msgid "Zip Code"
 msgstr "पिन कोड"
 
-#: ldapsearchdialog.cpp:97 ldapsearchdialog.cpp:313
+#: ldapsearchdialog.cpp:97 ldapsearchdialog.cpp:316
 msgid "Postal Address"
 msgstr "डाक के पता"
 
-#: ldapsearchdialog.cpp:99 ldapsearchdialog.cpp:317
+#: ldapsearchdialog.cpp:99 ldapsearchdialog.cpp:320
 msgid "User ID"
 msgstr "कमइया पहिचान"
 
@@ -1654,11 +1787,11 @@ msgstr "मं"
 #. i18n: ectx: property (text), widget (QTreeWidget, mAvailableView)
 #. i18n: file: addresspicker.ui:286
 #. i18n: ectx: property (text), widget (QTreeWidget, mSelectedView)
-#: ldapsearchdialog.cpp:161 ldapsearchdialog.cpp:382 rc.cpp:6 rc.cpp:33
+#: ldapsearchdialog.cpp:161 ldapsearchdialog.cpp:385 rc.cpp:6 rc.cpp:33
 msgid "Name"
 msgstr "नाम"
 
-#: ldapsearchdialog.cpp:168 ldapsearchdialog.cpp:408
+#: ldapsearchdialog.cpp:168 ldapsearchdialog.cpp:411
 msgid "Stop"
 msgstr "रुकव"
 
@@ -1708,7 +1841,7 @@ msgstr "कोई वर्नन नइ मिलत"
 msgid "Cancel this operation."
 msgstr "ये आपरेसन को खारिज करव."
 
-#: progressmanager.cpp:99
+#: progressmanager.cpp:105
 msgid "Aborting..."
 msgstr "छोड़त हे..."
 
@@ -1937,6 +2070,12 @@ msgstr "विस्तृत प्रगति गोठ देखाव"
 msgid "View Columns"
 msgstr "खंभा देखव"
 
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "@title:column, name of a person"
+#~ msgid "Name"
+#~ msgstr "नाम"
+
 #~ msgid ""
 #~ "The external editor is still running.\n"
 #~ "Abort the external editor or leave it open?"
@@ -2018,9 +2157,6 @@ msgstr "खंभा देखव"
 
 #~ msgid "Template Name"
 #~ msgstr "टैम्प्लेट नाम"
-
-#~ msgid "Please enter a name for the template:"
-#~ msgstr "टैम्प्लेट बर किरपा करके, एक नाम भरव:"
 
 #~ msgid "Hide Birthday"
 #~ msgstr "जन्मदिन लुकाव"
