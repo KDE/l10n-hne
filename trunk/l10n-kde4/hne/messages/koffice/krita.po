@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-06 01:57+0100\n"
+"POT-Creation-Date: 2010-02-07 07:49+0100\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -3106,7 +3106,7 @@ msgstr "काँट छाँट करव (&C)"
 
 #. i18n: file: plugins/tools/tool_star/wdg_tool_star.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolStar)
-#: rc.cpp:848 plugins/tools/tool_star/kis_tool_star.cc:121
+#: rc.cpp:848 plugins/tools/tool_star/kis_tool_star.cc:134
 msgid "Star"
 msgstr "तारा"
 
@@ -3372,8 +3372,8 @@ msgstr "आकृतिः"
 #. i18n: file: plugins/paintops/gridbrush/wdgshapeoptions.ui:36
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: rc.cpp:956 rc.cpp:1242 rc.cpp:1566
-#: image/recorder/kis_recorded_ellipse_paint_action.cpp:52
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:67
+#: image/recorder/kis_recorded_shape_paint_action.cpp:54
+#: plugins/tools/defaulttools/kis_tool_ellipse.cc:68
 msgid "Ellipse"
 msgstr "दीर्घवृत्त"
 
@@ -3394,7 +3394,8 @@ msgstr "दीर्घवृत्त"
 #. i18n: file: plugins/filters/blur/wdgblur.ui:130
 #. i18n: ectx: property (text), item, widget (KComboBox, cbShape)
 #: rc.cpp:959 rc.cpp:1245 rc.cpp:1569 rc.cpp:1650
-#: plugins/tools/defaulttools/kis_tool_rectangle.cc:70
+#: image/recorder/kis_recorded_shape_paint_action.cpp:56
+#: plugins/tools/defaulttools/kis_tool_rectangle.cc:80
 msgid "Rectangle"
 msgstr "चतुर्भुज"
 
@@ -3451,6 +3452,7 @@ msgstr "बेतरतीब आफसेट"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:983 rc.cpp:1269
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:27
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
 msgid "Rotation"
 msgstr "परिक्रमन"
 
@@ -4217,7 +4219,7 @@ msgstr "इंक्रीमेंटल"
 
 #. i18n: file: plugins/paintops/libpaintop/wdgcustombrush.ui:62
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: rc.cpp:1374 plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
+#: rc.cpp:1374 plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
 msgid "Pressure"
 msgstr "दबाव"
 
@@ -4569,7 +4571,7 @@ msgstr "गिनइया उपयोग करव"
 
 #. i18n: file: plugins/paintops/dynadraw/wdgdynaoptions.ui:271
 #. i18n: ectx: property (text), widget (QRadioButton, polygonRBox)
-#: rc.cpp:1557 plugins/tools/tool_polygon/kis_tool_polygon.cc:78
+#: rc.cpp:1557 plugins/tools/tool_polygon/kis_tool_polygon.cc:77
 msgid "Polygon"
 msgstr "बहुभुज"
 
@@ -6559,7 +6561,7 @@ msgstr "देखव:"
 
 #. i18n: file: plugins/extensions/shearimage/wdg_shearimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
-#: rc.cpp:2657 image/kis_image.cc:568
+#: rc.cpp:2657 image/kis_image.cc:566
 #: plugins/extensions/shearimage/dlg_shearimage.cc:32
 #: plugins/extensions/shearimage/shearimage.cc:90
 msgid "Shear Image"
@@ -6922,7 +6924,7 @@ msgstr "मत चुनव (&D)"
 
 #. i18n: file: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgRotateImage)
-#: rc.cpp:2910 image/kis_image.cc:516
+#: rc.cpp:2910 image/kis_image.cc:514
 #: plugins/extensions/rotateimage/rotateimage.cc:117
 #: plugins/extensions/rotateimage/dlg_rotateimage.cc:31
 msgid "Rotate Image"
@@ -8961,7 +8963,7 @@ msgstr "परत मं कांटछांट करव"
 msgid "The image contains hidden layers that will be lost."
 msgstr "फोटू मं छुपे परत हे जऊन मिट जाही."
 
-#: ui/kis_layer_manager.cc:795 image/kis_image.cc:765
+#: ui/kis_layer_manager.cc:795 image/kis_image.cc:768
 msgid "Flatten Image"
 msgstr "फोटू ल फैलाव"
 
@@ -9104,8 +9106,8 @@ msgstr "सादा"
 msgid "Locked"
 msgstr ""
 
-#: ui/kis_node_model.cpp:297 image/kis_paint_layer.cc:146
-#: image/kis_paint_layer.cc:153
+#: ui/kis_node_model.cpp:297 image/kis_paint_layer.cc:139
+#: image/kis_paint_layer.cc:146
 msgid "Alpha Locked"
 msgstr ""
 
@@ -9425,12 +9427,12 @@ msgstr ""
 msgid "Matthew Woehlke"
 msgstr ""
 
-#: image/kis_adjustment_layer.cc:88
+#: image/kis_adjustment_layer.cc:124
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:51
 msgid "Filter"
 msgstr "फिल्टर"
 
-#: image/kis_transformation_mask.cpp:110
+#: image/kis_transformation_mask.cpp:111
 #, fuzzy
 msgid "Transformation Mask Settings"
 msgstr "ट्रांसफारमेसन मास्क..."
@@ -9468,7 +9470,7 @@ msgstr "लैंकजोस३"
 msgid "Mitchell"
 msgstr "मिसेल"
 
-#: image/commands/kis_image_resize_command.cpp:38 image/kis_image.cc:394
+#: image/commands/kis_image_resize_command.cpp:38 image/kis_image.cc:392
 msgid "Resize Image"
 msgstr "फोटू ल नवा आकार देव"
 
@@ -9493,7 +9495,7 @@ msgstr "गुन बदलाव"
 msgid "Raise"
 msgstr "उठाव"
 
-#: image/commands/kis_image_convert_type_command.cpp:38 image/kis_image.cc:603
+#: image/commands/kis_image_convert_type_command.cpp:38 image/kis_image.cc:601
 msgid "Convert Image Type"
 msgstr "फोटू किसिम बदलव"
 
@@ -9580,34 +9582,34 @@ msgstr "डिफाल्ट"
 msgid "Rotate Node"
 msgstr "नोड घुमाव"
 
-#: image/kis_image.cc:285
+#: image/kis_image.cc:283
 msgid "background"
 msgstr "पिछोत अंगना"
 
-#: image/kis_image.cc:288
+#: image/kis_image.cc:286
 #, kde-format
 msgid "Layer %1"
 msgstr "लेयर %1"
 
-#: image/kis_image.cc:392
+#: image/kis_image.cc:390
 msgid "Crop Image"
 msgstr "फोटू मं कांट-छांट करव"
 
-#: image/kis_image.cc:426
+#: image/kis_image.cc:424
 #, fuzzy
 #| msgid "Size Curve"
 msgid "Size Canvas"
 msgstr "वक्र ल आकार देव"
 
-#: image/kis_image.cc:475
+#: image/kis_image.cc:473
 msgid "Scale Image"
 msgstr "फोटू आकार बदलव"
 
-#: image/kis_image.cc:801
+#: image/kis_image.cc:798
 msgid "Merge with Layer Below"
 msgstr "नीचे परत मं मिलाव"
 
-#: image/kis_image.cc:841
+#: image/kis_image.cc:835
 #, fuzzy
 #| msgid "Flatten Image"
 msgid "Flatten Layer"
@@ -9617,23 +9619,16 @@ msgstr "फोटू ल फैलाव"
 msgid "Last used"
 msgstr "पिछला उपयोग करिस"
 
+#: image/recorder/kis_recorded_path_paint_action.cpp:62
+#: plugins/tools/defaulttools/kis_tool_path.cc:124
+msgid "Path"
+msgstr "पथ"
+
 #: image/recorder/kis_macro.cc:96
 msgid "Play macro"
 msgstr "मेक्रो चलाव"
 
-#: image/recorder/kis_recorded_polyline_paint_action.cpp:50
-#, fuzzy
-#| msgid "Polyline"
-msgid "Poly line"
-msgstr "पालिलाईन"
-
-#: image/recorder/kis_recorded_bezier_curve_paint_action.cpp:56
-#, fuzzy
-#| msgid "Bezier Curve"
-msgid "Bezier curve"
-msgstr "बेजियर वक्र"
-
-#: image/kis_clone_layer.cpp:199
+#: image/kis_clone_layer.cpp:192
 msgid "Copy From"
 msgstr ""
 
@@ -9683,58 +9678,42 @@ msgstr "फोटू ल एक छेत्र मं कांटछांट 
 msgid "Dyna"
 msgstr ""
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:223
-#: plugins/tools/defaulttools/kis_tool_brush.cc:142
-msgctxt "smooth out the curves while drawing"
-msgid "Smoothness"
-msgstr "स्मूथनेस"
-
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:236
-#: plugins/tools/defaulttools/kis_tool_brush.cc:165
-msgid "Assistant:"
-msgstr "सहायक:"
-
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:238
-#: plugins/tools/defaulttools/kis_tool_brush.cc:167
-msgid "Magnetism:"
-msgstr "मैग्नेटिज्म:"
-
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:248
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:211
 #, fuzzy
 msgid "Initial width:"
 msgstr "पिक्सेल चौड़ाई"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:249
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:212
 #, fuzzy
 msgid "Mass:"
 msgstr "नकाब (&M)"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:250
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:213
 #, fuzzy
 msgid "Drag:"
 msgstr "गोठ"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:251
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:214
 #, fuzzy
 msgid "X angle:"
 msgstr "कोन"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:252
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:215
 #, fuzzy
 msgid "Y angle:"
 msgstr "कोन"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:253
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:216
 #, fuzzy
 msgid "Width range:"
 msgstr "दूरी सीमा:"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:255
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:218
 #, fuzzy
 msgid "Fixed angle:"
 msgstr "त्रिभुज"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.h:170
+#: plugins/tools/tool_dyna/kis_tool_dyna.h:164
 #, fuzzy
 msgid "Paint with brushes using dynamic movements"
 msgstr "ब्रुस के साथ पेंट करव"
@@ -9777,12 +9756,25 @@ msgstr "अभी हाल के परत या फोटू से को�
 msgid "ms"
 msgstr ""
 
+#: plugins/tools/defaulttools/kis_tool_brush.cc:142
+msgctxt "smooth out the curves while drawing"
+msgid "Smoothness"
+msgstr "स्मूथनेस"
+
 #: plugins/tools/defaulttools/kis_tool_brush.cc:147
 #, fuzzy
 msgid "Rate:"
 msgstr "दर:"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:155
+#: plugins/tools/defaulttools/kis_tool_brush.cc:165
+msgid "Assistant:"
+msgstr "सहायक:"
+
+#: plugins/tools/defaulttools/kis_tool_brush.cc:167
+msgid "Magnetism:"
+msgstr "मैग्नेटिज्म:"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:156
 msgctxt "a straight drawn line"
 msgid "Line"
 msgstr "पंक्ति"
@@ -9850,10 +9842,6 @@ msgstr ""
 #: plugins/tools/defaulttools/kis_tool_ellipse.h:55
 msgid "Draw an ellipse"
 msgstr "दीर्घवृत्त बनाव"
-
-#: plugins/tools/defaulttools/kis_tool_path.cc:72
-msgid "Path"
-msgstr "पथ"
 
 #: plugins/tools/defaulttools/kis_tool_gradient.h:124
 msgid "Draw a gradient."
@@ -9954,7 +9942,7 @@ msgstr "पर्सपेक्टिव ट्रांसफारम"
 msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgstr "बहुभुज बनाव. सिफ्ट-मुसुवाकिलिक बहुभुज ल पूरा करही"
 
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:66
+#: plugins/tools/tool_polyline/kis_tool_polyline.cc:65
 msgid "Polyline"
 msgstr "पालिलाईन"
 
@@ -10241,11 +10229,11 @@ msgstr "समय"
 msgid "Drawing angle"
 msgstr "ड्राइंग कोन"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
 msgid "X-Tilt"
 msgstr "एक्स-टेढ़ा"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:42
 msgid "Y-Tilt"
 msgstr "वाय-टेढ़ा"
 
@@ -11439,25 +11427,25 @@ msgstr ""
 msgid "Success"
 msgstr "स्रोत"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:60
+#: plugins/extensions/bigbrother/bigbrother.cc:81
 msgid "Open and play..."
 msgstr "खोलव अउ प्ले करव..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:64
+#: plugins/extensions/bigbrother/bigbrother.cc:85
 #, fuzzy
 #| msgid "Open and play..."
 msgid "Open and edit..."
 msgstr "खोलव अउ प्ले करव..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:68
+#: plugins/extensions/bigbrother/bigbrother.cc:89
 msgid "Save all actions"
 msgstr "सब्बो काम सहेजव"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:72
+#: plugins/extensions/bigbrother/bigbrother.cc:93
 msgid "Start recording macro"
 msgstr "मेक्रो रेकार्ड करना चालू करव"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:76
+#: plugins/extensions/bigbrother/bigbrother.cc:97
 msgid "Stop recording actions"
 msgstr "काम रेकार्ड करना बन्द करव"
 
@@ -12008,6 +11996,16 @@ msgstr "नियमित"
 #: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.h:68
 msgid "Ruler assistant editor tool"
 msgstr "रूलर सहायक संपादन औजार"
+
+#, fuzzy
+#~| msgid "Polyline"
+#~ msgid "Poly line"
+#~ msgstr "पालिलाईन"
+
+#, fuzzy
+#~| msgid "Bezier Curve"
+#~ msgid "Bezier curve"
+#~ msgstr "बेजियर वक्र"
 
 #~ msgid "Freehand tool"
 #~ msgstr "मुक्तहस्त औजार"
