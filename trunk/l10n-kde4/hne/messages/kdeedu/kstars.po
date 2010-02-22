@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-13 06:53+0100\n"
+"POT-Creation-Date: 2010-02-22 07:05+0100\n"
 "PO-Revision-Date: 2009-02-23 19:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -176,7 +176,7 @@ msgstr ""
 "योजना रेकार्ड नइ करे जा सके."
 
 #: colorscheme.cpp:227 colorscheme.cpp:242 kstarsactions.cpp:603
-#: skymap.cpp:1470 tools/modcalcaltaz.cpp:253 tools/modcalcangdist.cpp:144
+#: skymap.cpp:1462 tools/modcalcaltaz.cpp:253 tools/modcalcangdist.cpp:144
 #: tools/modcalcapcoord.cpp:167 tools/modcalcdaylength.cpp:246
 #: tools/modcalceclipticcoords.cpp:203 tools/modcalcgalcoord.cpp:193
 #: tools/modcalcgeodcoord.cpp:232 tools/modcalcjd.cpp:123
@@ -243,39 +243,39 @@ msgstr "30मीटर 1.3सेमी पर"
 msgid "Could not open fov.dat."
 msgstr "fov.dat खोल नइ सकिस."
 
-#: imageviewer.cpp:72 imageviewer.cpp:125
-msgid "KStars image viewer"
-msgstr "के-स्टार फोटू प्रदर्सक"
-
 #. i18n: file: tools/observinglist.ui:532
 #. i18n: ectx: property (text), widget (QPushButton, SaveImage)
 #. i18n: file: indi/telescopeprop.ui:179
 #. i18n: ectx: property (text), widget (QPushButton, saveB)
-#: imageviewer.cpp:74 rc.cpp:3336 rc.cpp:4819
+#: imageviewer.cpp:72 rc.cpp:3336 rc.cpp:4819
 msgid "Save"
 msgstr "सहेजव"
 
-#: imageviewer.cpp:74
+#: imageviewer.cpp:72
 msgid "Save the image to disk"
 msgstr "फोटू ल डिस्क मं सहेजव"
 
-#: imageviewer.cpp:196
+#: imageviewer.cpp:102
+msgid "KStars image viewer"
+msgstr "के-स्टार फोटू प्रदर्सक"
+
+#: imageviewer.cpp:176
 #, kde-format
 msgid "Loading of the image %1 failed."
 msgstr "फोटू %1 ल लोड करे मं फेल."
 
-#: imageviewer.cpp:248 kstarsactions.cpp:525 tools/scriptbuilder.cpp:1041
+#: imageviewer.cpp:226 kstarsactions.cpp:525 tools/scriptbuilder.cpp:1041
 #: dialogs/addcatdialog.cpp:210 fitsviewer/fitsviewer.cpp:290
 #, kde-format
 msgid "A file named \"%1\" already exists. Overwrite it?"
 msgstr "एक फाइल नाम \"%1\" से पहिली से ही अस्तित्व मं हे. एखर ऊपर ही लिखव?"
 
-#: imageviewer.cpp:250 kstarsactions.cpp:527 tools/scriptbuilder.cpp:1043
+#: imageviewer.cpp:228 kstarsactions.cpp:527 tools/scriptbuilder.cpp:1043
 #: dialogs/addcatdialog.cpp:212 fitsviewer/fitsviewer.cpp:292
 msgid "Overwrite File?"
 msgstr "फाइल ल मेटाय के लिखव?"
 
-#: imageviewer.cpp:264
+#: imageviewer.cpp:242
 #, kde-format
 msgid "Saving of the image %1 failed."
 msgstr "फोटू %1 ल सहेजे मं फेल."
@@ -313,8 +313,8 @@ msgid "Show DSS Image"
 msgstr "डीएसएस फोटू देखाव"
 
 #: kspopupmenu.cpp:123 kspopupmenu.cpp:179 kstarsdata.cpp:120
-#: kstarsdata.cpp:121 kstarsinit.cpp:570 tools/observinglist.cpp:510
-#: tools/wutdialog.cpp:262 skycomponents/starcomponent.cpp:483
+#: kstarsdata.cpp:121 kstarsinit.cpp:582 tools/observinglist.cpp:510
+#: tools/wutdialog.cpp:262 skycomponents/starcomponent.cpp:481
 #: dialogs/detaildialog.cpp:134 skyobjects/starobject.cpp:597
 #: skyobjects/starobject.cpp:616 skyobjects/starobject.cpp:621
 #: skyobjects/starobject.cpp:624
@@ -551,7 +551,7 @@ msgstr "स्विच नइ करव"
 msgid "Engage &Tracking"
 msgstr "वगेज ट्रेकिंग (&T)"
 
-#: kstarsactions.cpp:728 kstars.cpp:152 skymap.cpp:416
+#: kstarsactions.cpp:728 kstars.cpp:152 skymap.cpp:409
 msgid "Stop &Tracking"
 msgstr "ट्रेकिंग बंद करव (&T)"
 
@@ -583,11 +583,11 @@ msgstr "वांछित फील्ड-ओफ-व्यू कोन भर�
 msgid "Enter a field-of-view angle in degrees: "
 msgstr "फील्ड-ओफ-व्यू कोन डिग्री मं भरव:"
 
-#: kstarsactions.cpp:834 kstars.cpp:157 kstarsinit.cpp:218
+#: kstarsactions.cpp:834 kstars.cpp:157 kstarsinit.cpp:219
 msgid "Equatorial &Coordinates"
 msgstr "विसुवत निर्देसांक (&C)"
 
-#: kstarsactions.cpp:841 kstars.cpp:157 kstarsinit.cpp:218
+#: kstarsactions.cpp:841 kstars.cpp:157 kstarsinit.cpp:219
 msgid "Horizontal &Coordinates"
 msgstr "छैतिज निर्देसांक (&C)"
 
@@ -35656,187 +35656,187 @@ msgstr "चीज खोजव... (&F)"
 msgid "Set Focus &Manually..."
 msgstr "फोकस हस्तचालित सेट करव... (&M)"
 
-#: kstarsinit.cpp:207
+#: kstarsinit.cpp:208
 msgid "&Default Zoom"
 msgstr "डिफाल्ट जूम (&D)"
 
-#: kstarsinit.cpp:211
+#: kstarsinit.cpp:212
 msgid "&Zoom to Angular Size..."
 msgstr "कोनीय आकार मं जूम करव... (&Z)"
 
-#: kstarsinit.cpp:222
+#: kstarsinit.cpp:223
 msgid "&Lambert Azimuthal Equal-area"
 msgstr "लैम्बार्ट अजिमुथल इक्वल-एरिया (&L)"
 
-#: kstarsinit.cpp:227
+#: kstarsinit.cpp:228
 msgid "&Azimuthal Equidistant"
 msgstr "अजीमुथल इक्विडिस्टेंट (&A)"
 
-#: kstarsinit.cpp:232
+#: kstarsinit.cpp:233
 msgid "&Orthographic"
 msgstr "ओर्थोग्राफिक (&O)"
 
-#: kstarsinit.cpp:237
+#: kstarsinit.cpp:238
 msgid "&Equirectangular"
 msgstr "इक्विरेक्टेंगुलर (&E)"
 
-#: kstarsinit.cpp:242
+#: kstarsinit.cpp:243
 msgid "&Stereographic"
 msgstr "स्टीरियोग्राफिक (&S)"
 
-#: kstarsinit.cpp:247
+#: kstarsinit.cpp:248
 msgid "&Gnomonic"
 msgstr "ग्नोमोनिक (&G)"
 
-#: kstarsinit.cpp:255
+#: kstarsinit.cpp:256
 msgctxt "Show the information boxes"
 msgid "Show &Info Boxes"
 msgstr "जानकारी डब्बा देखाव (&I)"
 
-#: kstarsinit.cpp:259
+#: kstarsinit.cpp:262
 msgctxt "Show time-related info box"
 msgid "Show &Time Box"
 msgstr "समय डब्बा देखाव (&T)"
 
-#: kstarsinit.cpp:263
+#: kstarsinit.cpp:269
 msgctxt "Show focus-related info box"
 msgid "Show &Focus Box"
 msgstr "फोकस डब्बा देखाव (&F)"
 
-#: kstarsinit.cpp:267
+#: kstarsinit.cpp:276
 msgctxt "Show location-related info box"
 msgid "Show &Location Box"
 msgstr "स्थिति डब्बा देखाव (&L)"
 
-#: kstarsinit.cpp:272
+#: kstarsinit.cpp:284
 msgid "Show Main Toolbar"
 msgstr "मुख्य औजार-पट्टी देखाव"
 
-#: kstarsinit.cpp:274
+#: kstarsinit.cpp:286
 msgid "Show View Toolbar"
 msgstr "दृस्य औजार-पट्टी देखाव"
 
-#: kstarsinit.cpp:278
+#: kstarsinit.cpp:290
 msgid "Show Statusbar"
 msgstr "स्थिति-पट्टी देखाव"
 
-#: kstarsinit.cpp:280
+#: kstarsinit.cpp:292
 msgid "Show Az/Alt Field"
 msgstr "Az/Alt फील्ड देखाव"
 
-#: kstarsinit.cpp:282
+#: kstarsinit.cpp:294
 msgid "Show RA/Dec Field"
 msgstr "RA/Dec फील्ड देखाव"
 
-#: kstarsinit.cpp:287
+#: kstarsinit.cpp:299
 msgid "C&olor Schemes"
 msgstr "रंग योजना (&o)"
 
-#: kstarsinit.cpp:288
+#: kstarsinit.cpp:300
 msgid "&Classic"
 msgstr "क्लासिक (&C)"
 
-#: kstarsinit.cpp:289
+#: kstarsinit.cpp:301
 msgid "&Star Chart"
 msgstr "चार्ट चालू करव (&S)"
 
-#: kstarsinit.cpp:290
+#: kstarsinit.cpp:302
 msgid "&Night Vision"
 msgstr "रात अवलोकन (&N)"
 
-#: kstarsinit.cpp:291
+#: kstarsinit.cpp:303
 msgid "&Moonless Night"
 msgstr "चंद्र रहित रात (&M)"
 
-#: kstarsinit.cpp:308
+#: kstarsinit.cpp:320
 msgid "&FOV Symbols"
 msgstr "एफओवी चिनहा (&F)"
 
-#: kstarsinit.cpp:312
+#: kstarsinit.cpp:324
 msgctxt "Location on Earth"
 msgid "&Geographic..."
 msgstr "जियोग्राफिक... (&G)"
 
-#: kstarsinit.cpp:317
+#: kstarsinit.cpp:329
 msgid "Startup Wizard..."
 msgstr "स्टार्टअप विजार्ड..."
 
-#: kstarsinit.cpp:322
+#: kstarsinit.cpp:334
 msgid "Calculator..."
 msgstr "गनक..."
 
-#: kstarsinit.cpp:326
+#: kstarsinit.cpp:338
 msgid "Observing List..."
 msgstr "सूची ल देखत हे..."
 
-#: kstarsinit.cpp:331
+#: kstarsinit.cpp:343
 msgid "AAVSO Light Curves..."
 msgstr "AAVSO लाइट कर्व्स..."
 
-#: kstarsinit.cpp:335
+#: kstarsinit.cpp:347
 msgid "Altitude vs. Time..."
 msgstr "उन्नतांस वि. समय..."
 
-#: kstarsinit.cpp:338
+#: kstarsinit.cpp:350
 msgid "What's up Tonight..."
 msgstr "आज रात मं का हे..."
 
-#: kstarsinit.cpp:341
+#: kstarsinit.cpp:353
 msgid "Sky Calendar..."
 msgstr "आकास कलेन्डर..."
 
-#: kstarsinit.cpp:350
+#: kstarsinit.cpp:362
 msgid "Script Builder..."
 msgstr "स्क्रिप्ट बिल्डर..."
 
-#: kstarsinit.cpp:353
+#: kstarsinit.cpp:365
 msgid "Solar System..."
 msgstr "सौर मन्डल..."
 
-#: kstarsinit.cpp:356
+#: kstarsinit.cpp:368
 msgid "Jupiter's Moons..."
 msgstr "वृहस्पति के चन्द्रमा"
 
-#: kstarsinit.cpp:359
+#: kstarsinit.cpp:371
 msgid "Flags..."
 msgstr ""
 
-#: kstarsinit.cpp:362
+#: kstarsinit.cpp:374
 msgid "Define Equipment..."
 msgstr ""
 
-#: kstarsinit.cpp:365
+#: kstarsinit.cpp:377
 msgid "Add Observer..."
 msgstr ""
 
-#: kstarsinit.cpp:370
+#: kstarsinit.cpp:382
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Ascension Island"
 msgid "Execute the session Plan..."
 msgstr "उचित आरोहन"
 
-#: kstarsinit.cpp:378
+#: kstarsinit.cpp:390
 msgid "Telescope Wizard..."
 msgstr "टेलिस्कोप विजार्ड..."
 
-#: kstarsinit.cpp:381
+#: kstarsinit.cpp:393
 msgid "Telescope Properties..."
 msgstr "दूरदर्सी गुन..."
 
-#: kstarsinit.cpp:383
+#: kstarsinit.cpp:395
 msgid "Device Manager..."
 msgstr "उपकरन प्रबंधक..."
 
-#: kstarsinit.cpp:387
+#: kstarsinit.cpp:399
 msgid "Capture Image Sequence..."
 msgstr "फोटू अनुक्रम कैप्चर करव..."
 
-#: kstarsinit.cpp:391
+#: kstarsinit.cpp:403
 msgid "INDI Control Panel..."
 msgstr "आईएनडीआई नियंत्रन फलक..."
 
-#: kstarsinit.cpp:405
+#: kstarsinit.cpp:417
 msgctxt "Tooltip describing the nature of the time step control"
 msgid ""
 "Use this to set the rate at which time in the simulation flows.\n"
@@ -35846,119 +35846,119 @@ msgid ""
 "of 'X'."
 msgstr ""
 
-#: kstarsinit.cpp:409
+#: kstarsinit.cpp:421
 msgid "Time step control"
 msgstr "समय चरन नियंत्रन"
 
-#: kstarsinit.cpp:414
+#: kstarsinit.cpp:426
 msgctxt "Toggle Stars in the display"
 msgid "Stars"
 msgstr "तारे"
 
-#: kstarsinit.cpp:416
+#: kstarsinit.cpp:428
 msgid "Toggle stars"
 msgstr "तारे टागल करव"
 
-#: kstarsinit.cpp:418
+#: kstarsinit.cpp:430
 msgctxt "Toggle Deep Sky Objects in the display"
 msgid "Deep Sky"
 msgstr "आकास के गहराई में"
 
-#: kstarsinit.cpp:420
+#: kstarsinit.cpp:432
 msgid "Toggle deep sky objects"
 msgstr "गहरे आकास के चीज टागल करव"
 
-#: kstarsinit.cpp:422
+#: kstarsinit.cpp:434
 msgctxt "Toggle Solar System objects in the display"
 msgid "Solar System"
 msgstr "सौर मन्डल"
 
-#: kstarsinit.cpp:424
+#: kstarsinit.cpp:436
 msgid "Toggle Solar system objects"
 msgstr "सौर मन्डल के चीज मन ल टागल करव"
 
-#: kstarsinit.cpp:426
+#: kstarsinit.cpp:438
 msgctxt "Toggle Constellation Lines in the display"
 msgid "Const. Lines"
 msgstr "तारामंडल पंक्तियाँ"
 
-#: kstarsinit.cpp:428
+#: kstarsinit.cpp:440
 msgid "Toggle constellation lines"
 msgstr "तारामंडल लाइन टागल करव"
 
-#: kstarsinit.cpp:430
+#: kstarsinit.cpp:442
 msgctxt "Toggle Constellation Names in the display"
 msgid "Const. Names"
 msgstr "तारामंडल नाम"
 
-#: kstarsinit.cpp:432
+#: kstarsinit.cpp:444
 msgid "Toggle constellation names"
 msgstr "तारामंडल नाम टागल करव"
 
-#: kstarsinit.cpp:434
+#: kstarsinit.cpp:446
 msgctxt "Toggle Constellation Boundaries in the display"
 msgid "C. Boundaries"
 msgstr "ता. सीमा"
 
-#: kstarsinit.cpp:436
+#: kstarsinit.cpp:448
 msgid "Toggle constellation boundaries"
 msgstr "तारामंडल सीमा टागल करव"
 
-#: kstarsinit.cpp:438
+#: kstarsinit.cpp:450
 msgctxt "Toggle Milky Way in the display"
 msgid "Milky Way"
 msgstr "मिल्की वे"
 
-#: kstarsinit.cpp:440
+#: kstarsinit.cpp:452
 msgid "Toggle milky way"
 msgstr "मिल्की ओ मन टागल करव"
 
-#: kstarsinit.cpp:442
+#: kstarsinit.cpp:454
 msgctxt "Toggle Coordinate Grid in the display"
 msgid "Coord. grid"
 msgstr "निर्दे. ग्रिड"
 
-#: kstarsinit.cpp:444
+#: kstarsinit.cpp:456
 msgid "Toggle coordinate grid"
 msgstr "निर्देसांक ग्रिड टागल करव"
 
-#: kstarsinit.cpp:446
+#: kstarsinit.cpp:458
 msgctxt "Toggle the opaque fill of the ground polygon in the display"
 msgid "Ground"
 msgstr "आधार"
 
-#: kstarsinit.cpp:448
+#: kstarsinit.cpp:460
 msgid "Toggle opaque ground"
 msgstr "अपारदर्सी मैदान टागल करव"
 
-#: kstarsinit.cpp:450
+#: kstarsinit.cpp:462
 #, fuzzy
 msgctxt "Toggle flags in the display"
 msgid "Flags"
 msgstr "फ्लेगस्टाफ"
 
-#: kstarsinit.cpp:452
+#: kstarsinit.cpp:464
 #, fuzzy
 msgid "Toggle flags"
 msgstr "तारे टागल करव"
 
-#: kstarsinit.cpp:479
+#: kstarsinit.cpp:491
 msgid "Edit FOV Symbols..."
 msgstr "एफओवी चिनहा के संपादन करव..."
 
-#: kstarsinit.cpp:485
+#: kstarsinit.cpp:497
 msgid " Welcome to KStars "
 msgstr "के-स्टार मं आप मन के स्वागत हे"
 
-#: kstarsinit.cpp:568 skymap.cpp:376 widgets/infoboxwidget.cpp:117
+#: kstarsinit.cpp:580 skymap.cpp:369 widgets/infoboxwidget.cpp:117
 msgid "nothing"
 msgstr "कुछ नइ"
 
-#: kstarsinit.cpp:614
+#: kstarsinit.cpp:626
 msgid "Initial Position is Below Horizon"
 msgstr "सुरू के स्थिति छितिज से नीचे हे"
 
-#: kstarsinit.cpp:615
+#: kstarsinit.cpp:627
 msgid ""
 "The initial position is below the horizon.\n"
 "Would you like to reset to the default position?"
@@ -35966,11 +35966,11 @@ msgstr ""
 "सुरू के स्थिति छितिज से नीचे हे.\n"
 "का आप मन डिफाल्ट स्थिति ल रीसेट करना चाहू?"
 
-#: kstarsinit.cpp:617
+#: kstarsinit.cpp:629
 msgid "Reset Position"
 msgstr "स्थिति रीसेट करव"
 
-#: kstarsinit.cpp:617
+#: kstarsinit.cpp:629
 msgid "Do Not Reset"
 msgstr "रीसेट नइ करव"
 
@@ -43121,7 +43121,7 @@ msgstr "उभारे गे चीज बर विवरन विन्ड�
 
 #. i18n: file: tools/wutdialog.ui:480
 #. i18n: ectx: property (text), widget (KPushButton, DetailButton)
-#: rc.cpp:3752 skymap.cpp:680 dialogs/detaildialog.cpp:79
+#: rc.cpp:3752 skymap.cpp:672 dialogs/detaildialog.cpp:79
 msgid "Object Details"
 msgstr "चीज विवरन"
 
@@ -46865,15 +46865,15 @@ msgstr "सिमक्लाक सेट नइ हो सकिस: अवै
 msgid "New clock scale: %1 sec"
 msgstr "नवा क्लाक स्केल: %1 सेक"
 
-#: skymap.cpp:87 skymap.cpp:1253 skycomponents/horizoncomponent.cpp:293
+#: skymap.cpp:87 skymap.cpp:1245 skycomponents/horizoncomponent.cpp:293
 msgid "Unrecognized coordinate projection: "
 msgstr "अचिनहित निर्देसांक प्रोजेक्सन:"
 
-#: skymap.cpp:398
+#: skymap.cpp:391
 msgid "Requested Position Below Horizon"
 msgstr "निवेदित स्थिति छितिज से नीचे"
 
-#: skymap.cpp:399
+#: skymap.cpp:392
 msgid ""
 "The requested position is below the horizon.\n"
 "Would you like to go there anyway?"
@@ -46881,36 +46881,36 @@ msgstr ""
 "निवेदित जगह छितिज से नीचे हे.\n"
 "जइसन भी हो आप मन वहाँ जाना चाहू?"
 
-#: skymap.cpp:401
+#: skymap.cpp:394
 msgid "Go Anyway"
 msgstr "जइसन भी हो जाव"
 
-#: skymap.cpp:401
+#: skymap.cpp:394
 msgid "Keep Position"
 msgstr "जगह रखे रहें"
 
-#: skymap.cpp:481
+#: skymap.cpp:473
 msgid ""
 "Digitized Sky Survey image provided by the Space Telescope Science Institute "
 "[public domain]."
 msgstr ""
 
-#: skymap.cpp:520
+#: skymap.cpp:512
 msgid ""
 "Sloan Digital Sky Survey image provided by the Astrophysical Research "
 "Consortium [free for non-commercial use]."
 msgstr ""
 
-#: skymap.cpp:565
+#: skymap.cpp:557
 #, kde-format
 msgid "Angular distance: %1"
 msgstr "कोनीय दूरी: %1"
 
-#: skymap.cpp:680
+#: skymap.cpp:672
 msgid "No object selected."
 msgstr "कोई चीज चुने नइ गे हे."
 
-#: skymap.cpp:1469
+#: skymap.cpp:1461
 msgid ""
 "Custom image-links file could not be opened.\n"
 "Link cannot be recorded for future sessions."
@@ -46918,7 +46918,7 @@ msgstr ""
 "मनमाफिक फोटू-संकली फाइल  खोले नइ जा सकिस.\n"
 "भविस्य के सत्र मन बर संकली ल रेकार्ड नइ कर सकिस."
 
-#: skymap.cpp:1487
+#: skymap.cpp:1479
 msgid ""
 "Custom information-links file could not be opened.\n"
 "Link cannot be recorded for future sessions."
@@ -46926,15 +46926,15 @@ msgstr ""
 "मनमाफिक जानकारी-संकली फाइल  खोले नइ जा सकिस.\n"
 "भविस्य के सत्र मन बर संकली ल रेकार्ड नइ कर सकिस."
 
-#: skymap.cpp:1487
+#: skymap.cpp:1479
 msgid "Could not Open File"
 msgstr "फाइल खोल नइ सकिस"
 
-#: skymap.cpp:1521
+#: skymap.cpp:1513
 msgid "Xplanet binary path is empty in config panel."
 msgstr ""
 
-#: skymap.cpp:1626
+#: skymap.cpp:1618
 #, fuzzy, kde-format
 msgid "Run : %1"
 msgstr "सूरुज अस्त: %1"
@@ -49394,11 +49394,11 @@ msgstr ""
 msgid "Loading solar system"
 msgstr "सौर मन्डल लोड करत हे"
 
-#: skycomponents/starcomponent.cpp:75
+#: skycomponents/starcomponent.cpp:73
 msgid "Loading stars"
 msgstr "तारा लोड करत हे"
 
-#: skycomponents/starcomponent.cpp:151
+#: skycomponents/starcomponent.cpp:149
 msgid "Please wait while re-indexing stars ..."
 msgstr ""
 
