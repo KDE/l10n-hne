@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kvpnc\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-23 07:21+0100\n"
+"POT-Creation-Date: 2010-02-24 07:29+0100\n"
 "PO-Revision-Date: 2009-03-02 13:49+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -333,7 +333,7 @@ msgstr "चैलेंज पासवर्ड (क्लियरटेक्
 #: ciscocertificateenrollment.cpp:564 kvpncconfig.cpp:1603
 #: kvpncconfig.cpp:2797 kvpncconfig.cpp:3640 manageciscocert.cpp:55
 #: newprofilewizard.cpp:799 newprofilewizard.cpp:2439
-#: preferencesdialog.cpp:5880 rc.cpp:1637 rc.cpp:1979 rc.cpp:4437
+#: preferencesdialog.cpp:5885 rc.cpp:1637 rc.cpp:1979 rc.cpp:4437
 msgid "Name"
 msgstr "नाम"
 
@@ -1211,7 +1211,7 @@ msgid "Use XAUTH (leftxauthclient found):"
 msgstr ""
 
 #: importipsecprofiledialog.cpp:692 importipsecprofiledialog.cpp:707
-#: importipsecprofiledialog.cpp:731 importopenvpnprofiledialog.cpp:618
+#: importipsecprofiledialog.cpp:731 importopenvpnprofiledialog.cpp:800
 #: importprofiledialog.cpp:345 importprofiledialog.cpp:444 kfeedback.cpp:293
 #: kvpncconfig.cpp:964 kvpncconfig.cpp:968 kvpncconfig.cpp:3526
 #: kvpncconfig.cpp:3541 kvpncconfig.cpp:3565 kvpncconfig.cpp:3937
@@ -1228,8 +1228,8 @@ msgid "yes"
 msgstr "हाँ"
 
 #: importipsecprofiledialog.cpp:696 importipsecprofiledialog.cpp:711
-#: importipsecprofiledialog.cpp:735 importopenvpnprofiledialog.cpp:585
-#: importopenvpnprofiledialog.cpp:593 importprofiledialog.cpp:351
+#: importipsecprofiledialog.cpp:735 importopenvpnprofiledialog.cpp:767
+#: importopenvpnprofiledialog.cpp:775 importprofiledialog.cpp:351
 #: importprofiledialog.cpp:446 kfeedback.cpp:294 kvpncconfig.cpp:966
 #: kvpncconfig.cpp:970 kvpncconfig.cpp:3530 kvpncconfig.cpp:3545
 #: kvpncconfig.cpp:3569 kvpncconfig.cpp:3939 kvpncconfig.cpp:3950
@@ -1312,216 +1312,261 @@ msgstr ""
 msgid "Imported from %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:266
+#: importopenvpnprofiledialog.cpp:272
+msgid "OpenVPN import: inlince ca end found."
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:276 importopenvpnprofiledialog.cpp:589
 #, kde-format
-msgid "OpenVPN import: use user-defined remote port: %1."
+msgid "OpenVPN import: ca file: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:269
+#: importopenvpnprofiledialog.cpp:288 importopenvpnprofiledialog.cpp:325
+#: importopenvpnprofiledialog.cpp:359 importopenvpnprofiledialog.cpp:394
+#, fuzzy, kde-format
+msgid "Creating of \"%1\" has been failed!"
+msgstr "प्रमानीकरन विधि"
+
+#: importopenvpnprofiledialog.cpp:292 importopenvpnprofiledialog.cpp:613
 #, kde-format
-msgid "OpenVPN import: gateway: %1"
+msgid "OpenVPN import: CA certificate: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:275
-#, kde-format
-msgid "OpenVPN import: tunnel device type: %1"
+#: importopenvpnprofiledialog.cpp:306
+msgid "OpenVPN import: inlince cert end found."
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:305
-#, kde-format
-msgid "OpenVPN import: special route found: %1, type: %2"
-msgstr ""
-
-#: importopenvpnprofiledialog.cpp:310
-#, kde-format
-msgid "OpenVPN import: special route found: %1 over %3, type: %2"
-msgstr ""
-
-#: importopenvpnprofiledialog.cpp:321
-#, kde-format
-msgid "OpenVPN import: local port specified: %1"
-msgstr ""
-
-#: importopenvpnprofiledialog.cpp:325
-msgid "OpenVPN import: use LZO compression"
-msgstr ""
-
-#: importopenvpnprofiledialog.cpp:331
+#: importopenvpnprofiledialog.cpp:310 importopenvpnprofiledialog.cpp:494
 #, kde-format
 msgid "OpenVPN import: cert file: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:336 importopenvpnprofiledialog.cpp:368
-#: importopenvpnprofiledialog.cpp:399 importopenvpnprofiledialog.cpp:431
-#: importopenvpnprofiledialog.cpp:481
+#: importopenvpnprofiledialog.cpp:329 importopenvpnprofiledialog.cpp:519
+#, kde-format
+msgid "OpenVPN import: certificate: %1"
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:343
+msgid "OpenVPN import: inlince private key end found."
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:347 importopenvpnprofiledialog.cpp:363
+#: importopenvpnprofiledialog.cpp:557
+#, kde-format
+msgid "OpenVPN import: private key file: %1"
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:377
+msgid "OpenVPN import: inlince tls-auth end found."
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:381 importopenvpnprofiledialog.cpp:398
+#: importopenvpnprofiledialog.cpp:656
+#, kde-format
+msgid "OpenVPN import: TLS auth file: %1"
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:413
+#, kde-format
+msgid "OpenVPN import: username found (via special line): %1"
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:429
+#, kde-format
+msgid "OpenVPN import: use user-defined remote port: %1."
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:432
+#, kde-format
+msgid "OpenVPN import: gateway: %1"
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:438
+#, kde-format
+msgid "OpenVPN import: tunnel device type: %1"
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:468
+#, kde-format
+msgid "OpenVPN import: special route found: %1, type: %2"
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:473
+#, kde-format
+msgid "OpenVPN import: special route found: %1 over %3, type: %2"
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:484
+#, kde-format
+msgid "OpenVPN import: local port specified: %1"
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:488
+msgid "OpenVPN import: use LZO compression"
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:499 importopenvpnprofiledialog.cpp:531
+#: importopenvpnprofiledialog.cpp:562 importopenvpnprofiledialog.cpp:594
+#: importopenvpnprofiledialog.cpp:663
 #, kde-format
 msgid "OpenVPN import: copy %1 to %2"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:347 importopenvpnprofiledialog.cpp:378
-#: importopenvpnprofiledialog.cpp:410 importopenvpnprofiledialog.cpp:441
-#: importopenvpnprofiledialog.cpp:491
+#: importopenvpnprofiledialog.cpp:510 importopenvpnprofiledialog.cpp:541
+#: importopenvpnprofiledialog.cpp:573 importopenvpnprofiledialog.cpp:604
+#: importopenvpnprofiledialog.cpp:673
 #, fuzzy, kde-format
 #| msgid "Country: %1"
 msgid "Could not start %1."
 msgstr "देस: %1"
 
-#: importopenvpnprofiledialog.cpp:356
-#, kde-format
-msgid "OpenVPN import: certificate: %1"
-msgstr ""
-
-#: importopenvpnprofiledialog.cpp:362
+#: importopenvpnprofiledialog.cpp:525
 #, kde-format
 msgid "OpenVPN import: private key file for certificate: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:387
+#: importopenvpnprofiledialog.cpp:550
 #, kde-format
 msgid "OpenVPN import: private key for certificate in file: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:394
-#, kde-format
-msgid "OpenVPN import: private key file: %1"
-msgstr ""
-
-#: importopenvpnprofiledialog.cpp:419
+#: importopenvpnprofiledialog.cpp:582
 #, kde-format
 msgid "OpenVPN import: PSK in file: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:426
-#, kde-format
-msgid "OpenVPN import: ca file: %1"
+#: importopenvpnprofiledialog.cpp:618
+msgid "OpenVPN import: inline ca start found"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:450
-#, kde-format
-msgid "OpenVPN import: CA certificate: %1"
+#: importopenvpnprofiledialog.cpp:623
+msgid "OpenVPN import: inline cert start found"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:455
+#: importopenvpnprofiledialog.cpp:628
+msgid "OpenVPN import: inline private key start found"
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:633
+msgid "OpenVPN import: inline tls-auth start found"
+msgstr ""
+
+#: importopenvpnprofiledialog.cpp:638
 msgid "OpenVPN import: use UDP."
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:459
+#: importopenvpnprofiledialog.cpp:642
 msgid "OpenVPN import: do not use UDP."
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:466
+#: importopenvpnprofiledialog.cpp:648
 msgid "OpenVPN import: use user-defined cipher."
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:474
-#, kde-format
-msgid "OpenVPN import: TLS auth file: %1"
-msgstr ""
-
-#: importopenvpnprofiledialog.cpp:475
+#: importopenvpnprofiledialog.cpp:657
 #, kde-format
 msgid "OpenVPN import: TLS auth direction: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:500
+#: importopenvpnprofiledialog.cpp:682
 msgid "OpenVPN import: use TLS auth"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:508
+#: importopenvpnprofiledialog.cpp:690
 #, kde-format
 msgid "OpenVPN import: use TLS auth direction: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:513
+#: importopenvpnprofiledialog.cpp:695
 msgid "OpenVPN import: use redirect gateway"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:520 importopenvpnprofiledialog.cpp:525
-#: importopenvpnprofiledialog.cpp:541
+#: importopenvpnprofiledialog.cpp:702 importopenvpnprofiledialog.cpp:707
+#: importopenvpnprofiledialog.cpp:723
 #, kde-format
 msgid "OpenVPN import: use NS certificate type: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:530
+#: importopenvpnprofiledialog.cpp:712
 msgid "OpenVPN import: authenticate with username and password"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:536
+#: importopenvpnprofiledialog.cpp:718
 #, kde-format
 msgid "OpenVPN import: use HTTP proxy: %1, Port: %2"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:546
+#: importopenvpnprofiledialog.cpp:728
 #, kde-format
 msgid "OpenVPN import: pkcs12 file found: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:558
+#: importopenvpnprofiledialog.cpp:740
 #, kde-format
 msgid "OpenVPN import: certificate prefix found: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:564
+#: importopenvpnprofiledialog.cpp:746
 #, kde-format
 msgid "OpenVPN import: use tls remote host: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:567
+#: importopenvpnprofiledialog.cpp:749
 msgid ""
 "OpenVPN import: tls remote host option was specified but server is empty, "
 "disabling TLS remote host."
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:572
+#: importopenvpnprofiledialog.cpp:754
 msgid "OpenVPN import: allow IP address change of peer (for DHCP)"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:580
+#: importopenvpnprofiledialog.cpp:762
 #, kde-format
 msgid "OpenVPN import: use virtual IP address. Local: %1, remote: %2"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:585 importopenvpnprofiledialog.cpp:593
+#: importopenvpnprofiledialog.cpp:767 importopenvpnprofiledialog.cpp:775
 #, kde-format
 msgid "OpenVPN import: Disable push from server: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:599
+#: importopenvpnprofiledialog.cpp:781
 #, kde-format
 msgid "OpenVPN import: use fragmention, size: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:613
+#: importopenvpnprofiledialog.cpp:795
 #, kde-format
 msgid "OpenVPN import: use Mssfix, size: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:618
+#: importopenvpnprofiledialog.cpp:800
 #, kde-format
 msgid "OpenVPN import: Disable bind: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:624
+#: importopenvpnprofiledialog.cpp:806
 #, kde-format
 msgid "OpenVPN import: use ping through tunnel every: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:630
+#: importopenvpnprofiledialog.cpp:812
 #, kde-format
 msgid "OpenVPN import: restart ping through tunnel fails after: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:636
+#: importopenvpnprofiledialog.cpp:818
 #, kde-format
 msgid "OpenVPN import: use reneg-sec: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:642
+#: importopenvpnprofiledialog.cpp:824
 #, kde-format
 msgid "OpenVPN import: use usedefinied MTU: %1"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:770 manageciscocert.cpp:143
+#: importopenvpnprofiledialog.cpp:952 manageciscocert.cpp:143
 #: newprofilewizard.cpp:3071
 msgid "Import Certificate..."
 msgstr ""
@@ -1532,7 +1577,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, ImporttypeComboBox)
 #. i18n: file: profileopenvpnoptionsbase4.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, ProfileOpenvpnOptionsBase)
-#: importopenvpnprofiledialog.cpp:779 kvpnc.cpp:691 kvpnc.cpp:841
+#: importopenvpnprofiledialog.cpp:961 kvpnc.cpp:691 kvpnc.cpp:841
 #: kvpnc.cpp:14304 kvpnc.cpp:14318 kvpnc.cpp:16734 kvpnc.cpp:17493
 #: newprofiledialog.cpp:134 newprofilewizard.cpp:3082
 #: openvpnmanagementhandler.cpp:216 preferencesdialog.cpp:608
@@ -1541,17 +1586,17 @@ msgstr ""
 msgid "OpenVPN"
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:801
+#: importopenvpnprofiledialog.cpp:983
 #, kde-format
 msgid "OpenVPN import: import of pkcs12 certificate file %1 was successful."
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:812
+#: importopenvpnprofiledialog.cpp:994
 #, kde-format
 msgid "OpenVPN import: import of pkcs12 certificate file %1 failed."
 msgstr ""
 
-#: importopenvpnprofiledialog.cpp:816
+#: importopenvpnprofiledialog.cpp:998
 msgid "OpenVPN import: import of pkcs12 certificate file was canceled."
 msgstr ""
 
@@ -1616,7 +1661,7 @@ msgid "Cisco certificate import: cert found at cert path."
 msgstr "प्रमानपत्र समर्थन"
 
 #: importprofiledialog.cpp:267 kvpnc.cpp:19399 newprofiledialog.cpp:297
-#: preferencesdialog.cpp:6359
+#: preferencesdialog.cpp:6364
 msgid "Import certificate..."
 msgstr ""
 
@@ -2147,7 +2192,7 @@ msgid "Remote network"
 msgstr "रिमोट नेटवर्क"
 
 #: kvpncconfig.cpp:3678 kvpnc.cpp:1029 kvpnc.cpp:16426 kvpnc.cpp:17306
-#: preferencesdialog.cpp:5951 toolinfo.cpp:314 toolsinfodialog.cpp:120
+#: preferencesdialog.cpp:5956 toolinfo.cpp:314 toolsinfodialog.cpp:120
 msgid "unknown"
 msgstr "अग्यात"
 
@@ -2230,19 +2275,19 @@ msgstr "प्रोफाइल नाम"
 
 #: kvpncconfig.cpp:4103 kvpnc.cpp:16338 kvpnc.cpp:16512 kvpnc.cpp:17588
 #: kvpnc.cpp:17674 kvpnc.cpp:20595 newprofilewizard.cpp:827
-#: preferencesdialog.cpp:6088
+#: preferencesdialog.cpp:6093
 msgid "Name Exists"
 msgstr "नांव मौजूद हे"
 
 #: kvpncconfig.cpp:4104 kvpnc.cpp:16340 kvpnc.cpp:16505 kvpnc.cpp:16514
 #: kvpnc.cpp:17589 kvpnc.cpp:17676 kvpnc.cpp:20596 newprofilewizard.cpp:829
-#: preferencesdialog.cpp:6090 preferencesdialog.cpp:6193
+#: preferencesdialog.cpp:6095 preferencesdialog.cpp:6198
 msgid "New Name"
 msgstr "नवा नाम"
 
 #: kvpncconfig.cpp:4104 kvpnc.cpp:16340 kvpnc.cpp:16505 kvpnc.cpp:16514
 #: kvpnc.cpp:17589 kvpnc.cpp:17676 kvpnc.cpp:20596 newprofilewizard.cpp:829
-#: preferencesdialog.cpp:6090
+#: preferencesdialog.cpp:6095
 msgid "New name for profile:"
 msgstr "प्रोफाइल बर नवा नांव"
 
@@ -2461,7 +2506,7 @@ msgstr ""
 #. i18n: file: profileciscooptionsbase4.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, ProfileCiscoOptionsBase)
 #: kvpnc.cpp:681 kvpnc.cpp:831 kvpnc.cpp:1031 kvpnc.cpp:16428
-#: preferencesdialog.cpp:1390 preferencesdialog.cpp:5953 rc.cpp:3118
+#: preferencesdialog.cpp:1390 preferencesdialog.cpp:5958 rc.cpp:3118
 msgid "Cisco"
 msgstr "सिस्को"
 
@@ -2469,7 +2514,7 @@ msgstr "सिस्को"
 #. i18n: ectx: property (text), item, widget (KComboBox, ImporttypeComboBox)
 #: kvpnc.cpp:683 kvpnc.cpp:833 kvpnc.cpp:1033 kvpnc.cpp:16430 kvpnc.cpp:16628
 #: kvpnc.cpp:17433 newprofilewizard.cpp:3090 preferencesdialog.cpp:611
-#: preferencesdialog.cpp:5955 rc.cpp:1492 toolsinfodialog.cpp:198
+#: preferencesdialog.cpp:5960 rc.cpp:1492 toolsinfodialog.cpp:198
 #: toolsinfodialog.cpp:295 toolsinfodialog.cpp:327 toolsinfodialog.cpp:349
 msgid "Cisco (proprietary)"
 msgstr ""
@@ -2480,7 +2525,7 @@ msgstr ""
 #. i18n: ectx: property (windowTitle), widget (QWidget, ProfilePptpOptionsBase)
 #: kvpnc.cpp:685 kvpnc.cpp:835 kvpnc.cpp:1035 kvpnc.cpp:16432 kvpnc.cpp:16660
 #: kvpnc.cpp:16822 kvpnc.cpp:17451 newprofiledialog.cpp:133
-#: preferencesdialog.cpp:607 preferencesdialog.cpp:5957 rc.cpp:698 rc.cpp:4087
+#: preferencesdialog.cpp:607 preferencesdialog.cpp:5962 rc.cpp:698 rc.cpp:4087
 #: toolsinfodialog.cpp:315 toolsinfodialog.cpp:317
 msgid "PPTP"
 msgstr "पीपीटीपी"
@@ -2574,18 +2619,18 @@ msgstr ""
 msgid "None"
 msgstr "कुछ नइ"
 
-#: kvpnc.cpp:1038 kvpnc.cpp:16435 preferencesdialog.cpp:5960
+#: kvpnc.cpp:1038 kvpnc.cpp:16435 preferencesdialog.cpp:5965
 #: toolsinfodialog.cpp:301
 msgid "Openswan"
 msgstr ""
 
-#: kvpnc.cpp:1040 kvpnc.cpp:16437 preferencesdialog.cpp:5962
+#: kvpnc.cpp:1040 kvpnc.cpp:16437 preferencesdialog.cpp:5967
 #: toolsinfodialog.cpp:303 vpntypesinfodialog.cpp:140
 #: vpntypesinfodialog.cpp:315
 msgid "strongSwan"
 msgstr ""
 
-#: kvpnc.cpp:1042 kvpnc.cpp:16439 preferencesdialog.cpp:5964
+#: kvpnc.cpp:1042 kvpnc.cpp:16439 preferencesdialog.cpp:5969
 #: toolsinfodialog.cpp:305
 msgid "FreeS/WAN"
 msgstr ""
@@ -3382,7 +3427,7 @@ msgid "Using tunnel device type: %1"
 msgstr ""
 
 #: kvpnc.cpp:7225 kvpnc.cpp:7227 kvpnc.cpp:7228 kvpnc.cpp:7243 kvpnc.cpp:7245
-#: kvpnc.cpp:7246 preferencesdialog.cpp:5658
+#: kvpnc.cpp:7246 preferencesdialog.cpp:5663
 msgid "ssh config remote script"
 msgstr ""
 
@@ -4892,29 +4937,29 @@ msgid "New Profile"
 msgstr "नवा प्रोफाइल"
 
 #: kvpnc.cpp:16338 kvpnc.cpp:16512 kvpnc.cpp:17588 kvpnc.cpp:17674
-#: kvpnc.cpp:20595 newprofilewizard.cpp:827 preferencesdialog.cpp:6088
+#: kvpnc.cpp:20595 newprofilewizard.cpp:827 preferencesdialog.cpp:6093
 #, fuzzy
 #| msgid "Profile name:"
 msgid "Profile name exists."
 msgstr "प्रोफाइल नाम"
 
 #: kvpnc.cpp:16343 kvpnc.cpp:16344 kvpnc.cpp:16345 kvpnc.cpp:16389
-#: kvpnc.cpp:16396 preferencesdialog.cpp:6093 preferencesdialog.cpp:6094
-#: preferencesdialog.cpp:6174
+#: kvpnc.cpp:16396 preferencesdialog.cpp:6098 preferencesdialog.cpp:6099
+#: preferencesdialog.cpp:6179
 #, fuzzy
 #| msgid "Rename the current profile"
 msgid "Renaming the newly created profile was canceled."
 msgstr "अभी हाल के प्रोफाइल नाम बदलव"
 
 #: kvpnc.cpp:16370 kvpnc.cpp:16371 kvpnc.cpp:20658 kvpnc.cpp:20659
-#: preferencesdialog.cpp:6161
+#: preferencesdialog.cpp:6166
 #, kde-format
 msgid "Profile \"%1\" added."
 msgstr ""
 
 #: kvpnc.cpp:16390 kvpnc.cpp:16391 kvpnc.cpp:16394 kvpnc.cpp:16395
 #: kvpnc.cpp:16397 kvpnc.cpp:16398 kvpnc.cpp:20679 kvpnc.cpp:20680
-#: preferencesdialog.cpp:6175 preferencesdialog.cpp:6176
+#: preferencesdialog.cpp:6180 preferencesdialog.cpp:6181
 msgid "Creating new profile canceled."
 msgstr ""
 
@@ -4935,12 +4980,12 @@ msgstr "प्रोफाइल सहेजिस."
 msgid "Really delete profile \"%1\" (type: %2, Server: %3)?"
 msgstr ""
 
-#: kvpnc.cpp:16459 newprofilewizard.cpp:3227 preferencesdialog.cpp:5984
+#: kvpnc.cpp:16459 newprofilewizard.cpp:3227 preferencesdialog.cpp:5989
 #: profilenetworkrouteoptions.cpp:81
 msgid "Delete?"
 msgstr "मेटाव?"
 
-#: kvpnc.cpp:16487 kvpnc.cpp:16488 preferencesdialog.cpp:6055
+#: kvpnc.cpp:16487 kvpnc.cpp:16488 preferencesdialog.cpp:6060
 #, kde-format
 msgid "Profile \"%1\" deleted."
 msgstr ""
@@ -4950,7 +4995,7 @@ msgstr ""
 msgid "Rename was canceled."
 msgstr ""
 
-#: kvpnc.cpp:16555 kvpnc.cpp:16556 kvpnc.cpp:16557 preferencesdialog.cpp:6347
+#: kvpnc.cpp:16555 kvpnc.cpp:16556 kvpnc.cpp:16557 preferencesdialog.cpp:6352
 #, fuzzy, kde-format
 msgid "Rename of \"%1\" to \"%2\" was successful."
 msgstr "एनरोलमेंट सफल रहिस."
@@ -5331,7 +5376,7 @@ msgstr "कनेक्टेड: %2@%1 [%3], %4"
 #. i18n: file: configdaemonoptionsbase4.ui:1298
 #. i18n: ectx: property (text), item, widget (KComboBox, PppdKernelLogLevelComboBox)
 #: kvpnc.cpp:17226 kvpnc.cpp:22183 preferencesdialog.cpp:468
-#: preferencesdialog.cpp:472 preferencesdialog.cpp:4391 rc.cpp:746
+#: preferencesdialog.cpp:472 preferencesdialog.cpp:4396 rc.cpp:746
 #: toolsinfodialog.cpp:288
 msgid "none"
 msgstr "कुछ नइ"
@@ -6745,7 +6790,7 @@ msgid "No IP address for remote network entered."
 msgstr ""
 
 #: newprofiledialog.cpp:192 newprofilewizard.cpp:2528
-#: preferencesdialog.cpp:5088 preferencesdialog.cpp:5325
+#: preferencesdialog.cpp:5093 preferencesdialog.cpp:5330
 msgid "No IP Address"
 msgstr ""
 
@@ -6753,7 +6798,7 @@ msgstr ""
 msgid "IP address of remote network is not valid."
 msgstr ""
 
-#: newprofiledialog.cpp:201 preferencesdialog.cpp:4664
+#: newprofiledialog.cpp:201 preferencesdialog.cpp:4669
 msgid "Invalid IP Address"
 msgstr "अवैध आईपी पता"
 
@@ -6948,8 +6993,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, IdLabel)
 #: newprofilewizard.cpp:938 newprofilewizard.cpp:1161
 #: newprofilewizard.cpp:2437 newprofilewizard.cpp:2445
-#: preferencesdialog.cpp:4308 preferencesdialog.cpp:4314
-#: preferencesdialog.cpp:5878 preferencesdialog.cpp:5887 rc.cpp:1955
+#: preferencesdialog.cpp:4313 preferencesdialog.cpp:4319
+#: preferencesdialog.cpp:5883 preferencesdialog.cpp:5892 rc.cpp:1955
 #: rc.cpp:1976 rc.cpp:1988 rc.cpp:4434 rc.cpp:4446 rc.cpp:4464
 msgid "ID"
 msgstr "आईडी"
@@ -7148,9 +7193,9 @@ msgstr "कमइया नाम: %1"
 msgid "Local ID (Group ID)"
 msgstr "लोकल आईपी (आभासी):"
 
-#: newprofilewizard.cpp:1551 preferencesdialog.cpp:4769
-#: preferencesdialog.cpp:4771 preferencesdialog.cpp:4996
-#: preferencesdialog.cpp:4998
+#: newprofilewizard.cpp:1551 preferencesdialog.cpp:4774
+#: preferencesdialog.cpp:4776 preferencesdialog.cpp:5001
+#: preferencesdialog.cpp:5003
 #, fuzzy
 msgid "Local ID (Group ID) is empty."
 msgstr "लोकल आईपी (आभासी):"
@@ -7195,7 +7240,7 @@ msgid "ESP settings: %1"
 msgstr "ईएसपी सेटिंग: %1"
 
 #: newprofilewizard.cpp:1620 newprofilewizard.cpp:1621
-#: preferencesdialog.cpp:4906
+#: preferencesdialog.cpp:4911
 msgid "Use custom ESP checked but none selected."
 msgstr ""
 
@@ -7213,7 +7258,7 @@ msgid "IKE settings: %1"
 msgstr "आईकेई सेटिंग: %1"
 
 #: newprofilewizard.cpp:1640 newprofilewizard.cpp:1641
-#: preferencesdialog.cpp:4901
+#: preferencesdialog.cpp:4906
 msgid "Use custom IKE checked but none selected."
 msgstr ""
 
@@ -7389,13 +7434,13 @@ msgid "Vtun: use user-defined port: %1."
 msgstr ""
 
 #: newprofilewizard.cpp:2164 newprofilewizard.cpp:2167
-#: preferencesdialog.cpp:5544
+#: preferencesdialog.cpp:5549
 #, fuzzy
 #| msgid "New profile wizard general"
 msgid "No profile name entered."
 msgstr "नवा प्रोफाइल विजार्ड सामान्य"
 
-#: newprofilewizard.cpp:2164 preferencesdialog.cpp:5544
+#: newprofilewizard.cpp:2164 preferencesdialog.cpp:5549
 msgid "No profile name"
 msgstr ""
 
@@ -7437,7 +7482,7 @@ msgstr ""
 msgid "Special server certificate"
 msgstr ""
 
-#: newprofilewizard.cpp:2217 preferencesdialog.cpp:5658
+#: newprofilewizard.cpp:2217 preferencesdialog.cpp:5663
 #, fuzzy, kde-format
 msgid "%1 cannot be empty."
 msgstr "नाम खाली नइ रह सके!"
@@ -7464,13 +7509,13 @@ msgstr ""
 msgid "remote IP address for virtual IP"
 msgstr ""
 
-#: newprofilewizard.cpp:2269 preferencesdialog.cpp:5358
+#: newprofilewizard.cpp:2269 preferencesdialog.cpp:5363
 #, fuzzy
 #| msgid "New profile wizard general"
 msgid "No valid netmask entered."
 msgstr "नवा प्रोफाइल विजार्ड सामान्य"
 
-#: newprofilewizard.cpp:2269 preferencesdialog.cpp:5359
+#: newprofilewizard.cpp:2269 preferencesdialog.cpp:5364
 msgid "No valid netmask"
 msgstr ""
 
@@ -7494,10 +7539,10 @@ msgstr ""
 msgid "No valid IP address for %1 entered."
 msgstr "लोकल आईपी पता: %1"
 
-#: newprofilewizard.cpp:2297 preferencesdialog.cpp:5074
-#: preferencesdialog.cpp:5297 preferencesdialog.cpp:5305
-#: preferencesdialog.cpp:5337 preferencesdialog.cpp:5553
-#: preferencesdialog.cpp:5606
+#: newprofilewizard.cpp:2297 preferencesdialog.cpp:5079
+#: preferencesdialog.cpp:5302 preferencesdialog.cpp:5310
+#: preferencesdialog.cpp:5342 preferencesdialog.cpp:5558
+#: preferencesdialog.cpp:5611
 msgid "No Valid IP Address"
 msgstr ""
 
@@ -7509,7 +7554,7 @@ msgstr ""
 msgid "special server certificate"
 msgstr ""
 
-#: newprofilewizard.cpp:2373 preferencesdialog.cpp:5846
+#: newprofilewizard.cpp:2373 preferencesdialog.cpp:5851
 #, fuzzy
 #| msgid "File name cannot be empty!"
 msgid "Special server certificate cannot be empty."
@@ -7549,23 +7594,23 @@ msgstr ""
 msgid "Special remote ID cannot be empty."
 msgstr "नाम खाली नइ रह सके!"
 
-#: newprofilewizard.cpp:2425 preferencesdialog.cpp:5861
+#: newprofilewizard.cpp:2425 preferencesdialog.cpp:5866
 #, fuzzy
 #| msgid "File name cannot be empty!"
 msgid "Slot at smartcard cannot be empty."
 msgstr "नाम खाली नइ रह सके!"
 
-#: newprofilewizard.cpp:2425 preferencesdialog.cpp:5862
+#: newprofilewizard.cpp:2425 preferencesdialog.cpp:5867
 msgid "No smartcard slot"
 msgstr ""
 
-#: newprofilewizard.cpp:2432 preferencesdialog.cpp:5871
+#: newprofilewizard.cpp:2432 preferencesdialog.cpp:5876
 #, fuzzy
 #| msgid "File name cannot be empty!"
 msgid "ID for certificate at smartcard cannot be empty."
 msgstr "नाम खाली नइ रह सके!"
 
-#: newprofilewizard.cpp:2432 preferencesdialog.cpp:5872
+#: newprofilewizard.cpp:2432 preferencesdialog.cpp:5877
 msgid "No certificate ID"
 msgstr ""
 
@@ -7577,8 +7622,8 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, Pkcs11SlotTypeComboBox)
 #. i18n: file: profilesmartcardoptionsbase4.ui:177
 #. i18n: ectx: property (text), item, widget (KComboBox, Pkcs11IdTypeComboBox)
-#: newprofilewizard.cpp:2447 preferencesdialog.cpp:4316
-#: preferencesdialog.cpp:5889 rc.cpp:1982 rc.cpp:1991 rc.cpp:4440 rc.cpp:4449
+#: newprofilewizard.cpp:2447 preferencesdialog.cpp:4321
+#: preferencesdialog.cpp:5894 rc.cpp:1982 rc.cpp:1991 rc.cpp:4440 rc.cpp:4449
 msgid "Label"
 msgstr "लेबल "
 
@@ -7586,8 +7631,8 @@ msgstr "लेबल "
 #. i18n: ectx: property (text), item, widget (KComboBox, Pkcs11SignModeComboBox)
 #. i18n: file: profilesmartcardoptionsbase4.ui:93
 #. i18n: ectx: property (text), item, widget (KComboBox, Pkcs11SignModeComboBox)
-#: newprofilewizard.cpp:2453 preferencesdialog.cpp:4325
-#: preferencesdialog.cpp:5896 rc.cpp:1964 rc.cpp:4422
+#: newprofilewizard.cpp:2453 preferencesdialog.cpp:4330
+#: preferencesdialog.cpp:5901 rc.cpp:1964 rc.cpp:4422
 msgid "auto"
 msgstr "अपने अपन"
 
@@ -7595,8 +7640,8 @@ msgstr "अपने अपन"
 #. i18n: ectx: property (text), item, widget (KComboBox, Pkcs11SignModeComboBox)
 #. i18n: file: profilesmartcardoptionsbase4.ui:98
 #. i18n: ectx: property (text), item, widget (KComboBox, Pkcs11SignModeComboBox)
-#: newprofilewizard.cpp:2455 preferencesdialog.cpp:4327
-#: preferencesdialog.cpp:5898 rc.cpp:1967 rc.cpp:4425
+#: newprofilewizard.cpp:2455 preferencesdialog.cpp:4332
+#: preferencesdialog.cpp:5903 rc.cpp:1967 rc.cpp:4425
 msgid "sign"
 msgstr ""
 
@@ -7604,16 +7649,16 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, Pkcs11SignModeComboBox)
 #. i18n: file: profilesmartcardoptionsbase4.ui:103
 #. i18n: ectx: property (text), item, widget (KComboBox, Pkcs11SignModeComboBox)
-#: newprofilewizard.cpp:2457 preferencesdialog.cpp:4329
-#: preferencesdialog.cpp:5900 rc.cpp:1970 rc.cpp:4428
+#: newprofilewizard.cpp:2457 preferencesdialog.cpp:4334
+#: preferencesdialog.cpp:5905 rc.cpp:1970 rc.cpp:4428
 msgid "recover"
 msgstr ""
 
-#: newprofilewizard.cpp:2466 preferencesdialog.cpp:5912
+#: newprofilewizard.cpp:2466 preferencesdialog.cpp:5917
 msgid "Library path to lib for use with smartcard cannot be empty."
 msgstr ""
 
-#: newprofilewizard.cpp:2466 preferencesdialog.cpp:5913
+#: newprofilewizard.cpp:2466 preferencesdialog.cpp:5918
 msgid "No providers lib"
 msgstr ""
 
@@ -7639,8 +7684,8 @@ msgstr ""
 msgid "User options: NT domain name: %1"
 msgstr ""
 
-#: newprofilewizard.cpp:2528 preferencesdialog.cpp:5324
-#: preferencesdialog.cpp:5326
+#: newprofilewizard.cpp:2528 preferencesdialog.cpp:5329
+#: preferencesdialog.cpp:5331
 #, fuzzy
 msgid "No IP address entered."
 msgstr "आईपी पता:"
@@ -7649,7 +7694,7 @@ msgstr "आईपी पता:"
 msgid "Invalid values in IP address (remote net)."
 msgstr ""
 
-#: newprofilewizard.cpp:2546 preferencesdialog.cpp:5224
+#: newprofilewizard.cpp:2546 preferencesdialog.cpp:5229
 msgid "Invalid Values in IP Address"
 msgstr ""
 
@@ -7799,8 +7844,8 @@ msgstr ""
 msgid "Add Network Route..."
 msgstr ""
 
-#: newprofilewizard.cpp:3368 preferencesdialog.cpp:6868
-#: preferencesdialog.cpp:6875 preferencesdialog.cpp:6882
+#: newprofilewizard.cpp:3368 preferencesdialog.cpp:6873
+#: preferencesdialog.cpp:6880 preferencesdialog.cpp:6887
 #, kde-format
 msgid "Pkcs11IdType: %1"
 msgstr ""
@@ -7809,7 +7854,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, DefaultRouteComboBox)
 #. i18n: file: profilenetworkrouteoptionsbase4.ui:31
 #. i18n: ectx: property (text), item, widget (KComboBox, DefaultRouteComboBox)
-#: newprofilewizard.cpp:3522 preferencesdialog.cpp:4223 rc.cpp:2465
+#: newprofilewizard.cpp:3522 preferencesdialog.cpp:4228 rc.cpp:2465
 #: rc.cpp:3885
 msgid "Keep default route"
 msgstr ""
@@ -7829,11 +7874,11 @@ msgstr ""
 
 #. i18n: file: profilenetworkvirtualipoptionsbase4.ui:30
 #. i18n: ectx: property (text), widget (QLabel, LabelRemoteVirtualIp)
-#: newprofilewizard.cpp:3579 preferencesdialog.cpp:6991 rc.cpp:3925
+#: newprofilewizard.cpp:3579 preferencesdialog.cpp:6996 rc.cpp:3925
 msgid "Remote IP (virtual):"
 msgstr ""
 
-#: newprofilewizard.cpp:3582 preferencesdialog.cpp:6994
+#: newprofilewizard.cpp:3582 preferencesdialog.cpp:6999
 msgid "Netmask for local IP address:"
 msgstr ""
 
@@ -8067,13 +8112,13 @@ msgstr ""
 
 #. i18n: file: configdaemonoptionsbase4.ui:1303
 #. i18n: ectx: property (text), item, widget (KComboBox, PppdKernelLogLevelComboBox)
-#: preferencesdialog.cpp:475 preferencesdialog.cpp:4393 rc.cpp:749
+#: preferencesdialog.cpp:475 preferencesdialog.cpp:4398 rc.cpp:749
 msgid "general"
 msgstr "सामान्य"
 
 #. i18n: file: configdaemonoptionsbase4.ui:1308
 #. i18n: ectx: property (text), item, widget (KComboBox, PppdKernelLogLevelComboBox)
-#: preferencesdialog.cpp:478 preferencesdialog.cpp:4395 rc.cpp:752
+#: preferencesdialog.cpp:478 preferencesdialog.cpp:4400 rc.cpp:752
 msgid "general + packets"
 msgstr "सामान्य + पैकेट"
 
@@ -8514,7 +8559,7 @@ msgstr ""
 #: preferencesdialog.cpp:2811 preferencesdialog.cpp:2813
 #: preferencesdialog.cpp:2862 preferencesdialog.cpp:2864
 #: preferencesdialog.cpp:3136 preferencesdialog.cpp:3140
-#: preferencesdialog.cpp:5430 preferencesdialog.cpp:5441 rc.cpp:1787
+#: preferencesdialog.cpp:5435 preferencesdialog.cpp:5446 rc.cpp:1787
 #: rc.cpp:3046 rc.cpp:4222
 msgid "Pre Shared Key"
 msgstr ""
@@ -8611,7 +8656,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, DefaultRouteComboBox)
 #. i18n: file: profilenetworkrouteoptionsbase4.ui:36
 #. i18n: ectx: property (text), item, widget (KComboBox, DefaultRouteComboBox)
-#: preferencesdialog.cpp:4225 rc.cpp:328 rc.cpp:2468 rc.cpp:3888
+#: preferencesdialog.cpp:4230 rc.cpp:328 rc.cpp:2468 rc.cpp:3888
 msgid "Replace default route"
 msgstr ""
 
@@ -8619,7 +8664,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, Pkcs11IdTypeComboBox)
 #. i18n: file: profilesmartcardoptionsbase4.ui:182
 #. i18n: ectx: property (text), item, widget (KComboBox, Pkcs11IdTypeComboBox)
-#: preferencesdialog.cpp:4318 rc.cpp:1994 rc.cpp:4452
+#: preferencesdialog.cpp:4323 rc.cpp:1994 rc.cpp:4452
 msgid "Subject"
 msgstr "विसय"
 
@@ -8627,205 +8672,205 @@ msgstr "विसय"
 #. i18n: ectx: property (text), item, widget (KComboBox, Pkcs11SignModeComboBox)
 #. i18n: file: profilesmartcardoptionsbase4.ui:108
 #. i18n: ectx: property (text), item, widget (KComboBox, Pkcs11SignModeComboBox)
-#: preferencesdialog.cpp:4331 rc.cpp:1973 rc.cpp:4431
+#: preferencesdialog.cpp:4336 rc.cpp:1973 rc.cpp:4431
 msgid "any"
 msgstr "कोई भी"
 
-#: preferencesdialog.cpp:4640 preferencesdialog.cpp:4642
+#: preferencesdialog.cpp:4645 preferencesdialog.cpp:4647
 #, fuzzy
 #| msgid "New profile wizard general"
 msgid "No remote network entered."
 msgstr "नवा प्रोफाइल विजार्ड सामान्य"
 
-#: preferencesdialog.cpp:4641
+#: preferencesdialog.cpp:4646
 msgid "No remote network"
 msgstr ""
 
-#: preferencesdialog.cpp:4663
+#: preferencesdialog.cpp:4668
 msgid "IP address (remote net) is not valid."
 msgstr ""
 
-#: preferencesdialog.cpp:4770 preferencesdialog.cpp:4997
+#: preferencesdialog.cpp:4775 preferencesdialog.cpp:5002
 msgid "Local ID (Group ID) is empty"
 msgstr ""
 
-#: preferencesdialog.cpp:4802 preferencesdialog.cpp:4803
+#: preferencesdialog.cpp:4807 preferencesdialog.cpp:4808
 #, fuzzy
 msgid "Local Source IP address is empty!"
 msgstr "लोकल आईपी पता: %1"
 
-#: preferencesdialog.cpp:4802 preferencesdialog.cpp:5013
+#: preferencesdialog.cpp:4807 preferencesdialog.cpp:5018
 msgid "Local Source IP empty"
 msgstr ""
 
-#: preferencesdialog.cpp:4811 preferencesdialog.cpp:4812
+#: preferencesdialog.cpp:4816 preferencesdialog.cpp:4817
 #, fuzzy
 msgid "Remote Source IP address is empty!"
 msgstr "लोकल आईपी पता: %1"
 
-#: preferencesdialog.cpp:4811 preferencesdialog.cpp:5046
+#: preferencesdialog.cpp:4816 preferencesdialog.cpp:5051
 msgid "Remote Source IP empty"
 msgstr ""
 
-#: preferencesdialog.cpp:4901
+#: preferencesdialog.cpp:4906
 msgid "No custom IKE"
 msgstr ""
 
-#: preferencesdialog.cpp:4906
+#: preferencesdialog.cpp:4911
 msgid "No custom ESP"
 msgstr ""
 
-#: preferencesdialog.cpp:5012 preferencesdialog.cpp:5014
+#: preferencesdialog.cpp:5017 preferencesdialog.cpp:5019
 #, fuzzy
 msgid "Local Source IP address is empty."
 msgstr "लोकल आईपी पता: %1"
 
-#: preferencesdialog.cpp:5028 preferencesdialog.cpp:5030
+#: preferencesdialog.cpp:5033 preferencesdialog.cpp:5035
 #, fuzzy
 msgid "Remote virtual IP address is empty."
 msgstr "लोकल आईपी पता: %1"
 
-#: preferencesdialog.cpp:5029
+#: preferencesdialog.cpp:5034
 msgid "Remote virtual IP empty"
 msgstr ""
 
-#: preferencesdialog.cpp:5045 preferencesdialog.cpp:5047
+#: preferencesdialog.cpp:5050 preferencesdialog.cpp:5052
 #, fuzzy
 msgid "Remote Source IP address is empty."
 msgstr "लोकल आईपी पता: %1"
 
-#: preferencesdialog.cpp:5057 preferencesdialog.cpp:5059
+#: preferencesdialog.cpp:5062 preferencesdialog.cpp:5064
 msgid "Virtual subnets are empty."
 msgstr ""
 
-#: preferencesdialog.cpp:5058
+#: preferencesdialog.cpp:5063
 msgid "Virtual subnets empty"
 msgstr ""
 
-#: preferencesdialog.cpp:5073 preferencesdialog.cpp:5075
-#: preferencesdialog.cpp:5297 preferencesdialog.cpp:5305
-#: preferencesdialog.cpp:5337 preferencesdialog.cpp:5348
-#: preferencesdialog.cpp:5553 preferencesdialog.cpp:5563
-#: preferencesdialog.cpp:5606 preferencesdialog.cpp:5617
+#: preferencesdialog.cpp:5078 preferencesdialog.cpp:5080
+#: preferencesdialog.cpp:5302 preferencesdialog.cpp:5310
+#: preferencesdialog.cpp:5342 preferencesdialog.cpp:5353
+#: preferencesdialog.cpp:5558 preferencesdialog.cpp:5568
+#: preferencesdialog.cpp:5611 preferencesdialog.cpp:5622
 #, fuzzy
 #| msgid "Local IP address: %1"
 msgid "No valid IP address entered."
 msgstr "लोकल आईपी पता: %1"
 
-#: preferencesdialog.cpp:5087
+#: preferencesdialog.cpp:5092
 #, fuzzy
 msgid "No IP address (virtual IP) entered."
 msgstr "आईपी पता:"
 
-#: preferencesdialog.cpp:5223 preferencesdialog.cpp:5225
+#: preferencesdialog.cpp:5228 preferencesdialog.cpp:5230
 msgid "Invalid values in IP address (remote net.)"
 msgstr ""
 
-#: preferencesdialog.cpp:5349 preferencesdialog.cpp:5563
-#: preferencesdialog.cpp:5617
+#: preferencesdialog.cpp:5354 preferencesdialog.cpp:5568
+#: preferencesdialog.cpp:5622
 msgid "No valid IP address"
 msgstr ""
 
-#: preferencesdialog.cpp:5434
+#: preferencesdialog.cpp:5439
 #, fuzzy
 #| msgid "File name cannot be empty!"
 msgid "PSK file cannot be empty."
 msgstr "नाम खाली नइ रह सके!"
 
-#: preferencesdialog.cpp:5435
+#: preferencesdialog.cpp:5440
 msgid "Empty PSK file"
 msgstr ""
 
-#: preferencesdialog.cpp:5446
+#: preferencesdialog.cpp:5451
 #, fuzzy
 msgid "PSK cannot be empty."
 msgstr "नाम खाली नइ रह सके!"
 
-#: preferencesdialog.cpp:5447
+#: preferencesdialog.cpp:5452
 msgid "Empty PSK"
 msgstr ""
 
-#: preferencesdialog.cpp:5456
+#: preferencesdialog.cpp:5461
 #, fuzzy
 #| msgid "File name cannot be empty!"
 msgid "TLS remote host cannot be empty."
 msgstr "नाम खाली नइ रह सके!"
 
-#: preferencesdialog.cpp:5457
+#: preferencesdialog.cpp:5462
 msgid "Empty TLS remote host"
 msgstr ""
 
-#: preferencesdialog.cpp:5628
+#: preferencesdialog.cpp:5633
 #, fuzzy
 #| msgid "Local IP address: %1"
 msgid "Virtual IP address must be enabled."
 msgstr "लोकल आईपी पता: %1"
 
-#: preferencesdialog.cpp:5628
+#: preferencesdialog.cpp:5633
 msgid "Virtual IP address disabled"
 msgstr ""
 
-#: preferencesdialog.cpp:5658
+#: preferencesdialog.cpp:5663
 #, fuzzy, kde-format
 msgid "%1 empty"
 msgstr "पीएसके खाली हे"
 
-#: preferencesdialog.cpp:5718 preferencesdialog.cpp:5720
+#: preferencesdialog.cpp:5723 preferencesdialog.cpp:5725
 #, fuzzy
 msgid "No hostname/IP address (ping host) entered."
 msgstr "आईपी पता:"
 
-#: preferencesdialog.cpp:5719
+#: preferencesdialog.cpp:5724
 #, fuzzy
 msgid "No hostname/IP address"
 msgstr "आईपी पता:"
 
-#: preferencesdialog.cpp:5779
+#: preferencesdialog.cpp:5784
 #, fuzzy
 #| msgid "File name cannot be empty!"
 msgid "HTTP proxy server cannot be empty."
 msgstr "नाम खाली नइ रह सके!"
 
-#: preferencesdialog.cpp:5780
+#: preferencesdialog.cpp:5785
 #, fuzzy
 msgid "Empty HTTP proxy server"
 msgstr "एचटीटीपी प्राक्सी"
 
-#: preferencesdialog.cpp:5792
+#: preferencesdialog.cpp:5797
 msgid "Password for HTTP proxy authentication cannot be empty."
 msgstr ""
 
-#: preferencesdialog.cpp:5793
+#: preferencesdialog.cpp:5798
 msgid "Empty HTTP proxy password for authentication"
 msgstr ""
 
-#: preferencesdialog.cpp:5802
+#: preferencesdialog.cpp:5807
 msgid "Username for HTTP proxy authentication cannot be empty."
 msgstr ""
 
-#: preferencesdialog.cpp:5803
+#: preferencesdialog.cpp:5808
 msgid "Empty HTTP proxy username for authentication"
 msgstr ""
 
-#: preferencesdialog.cpp:5847
+#: preferencesdialog.cpp:5852
 msgid "No Server Certificate"
 msgstr ""
 
-#: preferencesdialog.cpp:5984
+#: preferencesdialog.cpp:5989
 #, kde-format
 msgid "Really delete \"%1\"?"
 msgstr ""
 
-#: preferencesdialog.cpp:6072
+#: preferencesdialog.cpp:6077
 msgid "New profile"
 msgstr ""
 
-#: preferencesdialog.cpp:6112
+#: preferencesdialog.cpp:6117
 #, kde-format
 msgid "New created profile \"%1\" found in profile list."
 msgstr ""
 
-#: preferencesdialog.cpp:6154
+#: preferencesdialog.cpp:6159
 #, kde-format
 msgid ""
 "Profile \"%1\" added.\n"
@@ -8834,50 +8879,50 @@ msgid ""
 "and press \"Save\" to complete the profile."
 msgstr ""
 
-#: preferencesdialog.cpp:6158
+#: preferencesdialog.cpp:6163
 msgid "Complete Profile"
 msgstr ""
 
-#: preferencesdialog.cpp:6180
+#: preferencesdialog.cpp:6185
 msgid "Creation of the new profile canceled."
 msgstr ""
 
-#: preferencesdialog.cpp:6194
+#: preferencesdialog.cpp:6199
 msgid "Enter new name for profile:"
 msgstr ""
 
-#: preferencesdialog.cpp:6200 preferencesdialog.cpp:6202
+#: preferencesdialog.cpp:6205 preferencesdialog.cpp:6207
 msgid "Blanks are not allowed in profile names."
 msgstr ""
 
-#: preferencesdialog.cpp:6201
+#: preferencesdialog.cpp:6206
 msgid "Illegal Character in Name"
 msgstr ""
 
-#: preferencesdialog.cpp:6209 preferencesdialog.cpp:6211
+#: preferencesdialog.cpp:6214 preferencesdialog.cpp:6216
 #, fuzzy
 #| msgid "File name cannot be empty!"
 msgid "Profile name cannot be the same."
 msgstr "नाम खाली नइ रह सके!"
 
-#: preferencesdialog.cpp:6210
+#: preferencesdialog.cpp:6215
 #, fuzzy
 #| msgid "Save &username"
 msgid "Same name"
 msgstr "कमइया नाम सहेजव (&u)"
 
-#: preferencesdialog.cpp:6350
+#: preferencesdialog.cpp:6355
 #, kde-format
 msgid "Profile \"%1\" renamed to \"%2\"."
 msgstr ""
 
-#: preferencesdialog.cpp:7003
+#: preferencesdialog.cpp:7008
 msgid ""
 "Do you really want disable the use of KWallet? KVpnc will save passwords and "
 "psk in config file if requested."
 msgstr ""
 
-#: preferencesdialog.cpp:7003
+#: preferencesdialog.cpp:7008
 msgid "Disable KWallet?"
 msgstr ""
 
