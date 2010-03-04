@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: okular\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-21 06:45+0100\n"
+"POT-Creation-Date: 2010-03-04 04:12+0100\n"
 "PO-Revision-Date: 2009-02-26 16:58+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,25 +18,29 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 0.2\n"
 
-#: conf/dlgperformance.cpp:43
-msgid ""
-"Keeps used memory as low as possible. Do not reuse anything. (For systems "
-"with low memory.)"
-msgstr ""
-"परयोग के मेमोरी ल सबसे कम बनाए रखथे . फिर से उपयोग कुछ नइ करव (कम मेमोरी सहित सिसटम "
-"बर)"
+#: conf/dlgpresentation.cpp:28
+msgctxt "@label:listbox The current screen, for the presentation mode"
+msgid "Current Screen"
+msgstr "अभी हाल के स्क्रीन"
 
-#: conf/dlgperformance.cpp:46
-msgid ""
-"A good compromise between memory usage and speed gain. Preload next page and "
-"boost searches. (For systems with 256MB of memory, typically.)"
-msgstr ""
+#: conf/dlgpresentation.cpp:29
+msgctxt "@label:listbox The default screen for the presentation mode"
+msgid "Default Screen"
+msgstr "डिफाल्ट स्क्रीन"
 
-#: conf/dlgperformance.cpp:49
-msgid ""
-"Keeps everything in memory. Preload next pages. Boost searches. (For systems "
-"with more than 512MB of memory.)"
-msgstr ""
+#: conf/dlgpresentation.cpp:33
+#, kde-format
+msgctxt "@label:listbox %1 is the screen number (0, 1, ...)"
+msgid "Screen %1"
+msgstr "स्क्रीन %1"
+
+#: conf/dlgpresentation.cpp:48
+#, fuzzy
+#| msgid " sec."
+msgid " second"
+msgid_plural " seconds"
+msgstr[0] " सेक."
+msgstr[1] " सेक."
 
 #: conf/dlgeditor.cpp:28
 msgctxt "Text editor"
@@ -119,7 +123,7 @@ msgstr "प्रेजेन्टेसन मोड बर विकल्प
 
 #. i18n: file: conf/dlgidentitybase.ui:31
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: conf/preferencesdialog.cpp:42 rc.cpp:215
+#: conf/preferencesdialog.cpp:42 rc.cpp:122
 msgid "Identity"
 msgstr "कमइया"
 
@@ -129,7 +133,7 @@ msgstr "पहिचान सेटिंग"
 
 #. i18n: file: conf/dlgeditorbase.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: conf/preferencesdialog.cpp:44 rc.cpp:224
+#: conf/preferencesdialog.cpp:44 rc.cpp:68
 msgid "Editor"
 msgstr "संपादक"
 
@@ -137,29 +141,25 @@ msgstr "संपादक"
 msgid "Editor Options"
 msgstr "संपादक विकल्प"
 
-#: conf/dlgpresentation.cpp:28
-msgctxt "@label:listbox The current screen, for the presentation mode"
-msgid "Current Screen"
-msgstr "अभी हाल के स्क्रीन"
+#: conf/dlgperformance.cpp:43
+msgid ""
+"Keeps used memory as low as possible. Do not reuse anything. (For systems "
+"with low memory.)"
+msgstr ""
+"परयोग के मेमोरी ल सबसे कम बनाए रखथे . फिर से उपयोग कुछ नइ करव (कम मेमोरी सहित सिसटम "
+"बर)"
 
-#: conf/dlgpresentation.cpp:29
-msgctxt "@label:listbox The default screen for the presentation mode"
-msgid "Default Screen"
-msgstr "डिफाल्ट स्क्रीन"
+#: conf/dlgperformance.cpp:46
+msgid ""
+"A good compromise between memory usage and speed gain. Preload next page and "
+"boost searches. (For systems with 256MB of memory, typically.)"
+msgstr ""
 
-#: conf/dlgpresentation.cpp:33
-#, kde-format
-msgctxt "@label:listbox %1 is the screen number (0, 1, ...)"
-msgid "Screen %1"
-msgstr "स्क्रीन %1"
-
-#: conf/dlgpresentation.cpp:48
-#, fuzzy
-#| msgid " sec."
-msgid " second"
-msgid_plural " seconds"
-msgstr[0] " सेक."
-msgstr[1] " सेक."
+#: conf/dlgperformance.cpp:49
+msgid ""
+"Keeps everything in memory. Preload next pages. Boost searches. (For systems "
+"with more than 512MB of memory.)"
+msgstr ""
 
 #: core/action.cpp:91
 #, kde-format
@@ -230,6 +230,12 @@ msgstr "जावा-स्क्रिप्ट स्क्रिप्ट"
 #: core/action.cpp:429
 msgid "Play movie..."
 msgstr "चलचित्र देखाव..."
+
+#: core/sourcereference.cpp:91
+#, kde-format
+msgctxt "'source' is a source file"
+msgid "Source: %1"
+msgstr "स्रोत: %1"
 
 #: core/document.cpp:163
 #, kde-format
@@ -353,6 +359,17 @@ msgstr "फाइल आकार"
 msgid "Page Size"
 msgstr "पेज आकार"
 
+#: core/chooseenginedialog.cpp:22
+msgid "Backend Selection"
+msgstr "बैकएन्ड चयन"
+
+#: core/chooseenginedialog.cpp:33
+#, kde-format
+msgid ""
+"<qt>More than one backend found for the MIME type:<br /><b>%1</b> (%2).<br /"
+"><br />Please select which one to use:</qt>"
+msgstr ""
+
 #: core/generator.cpp:552
 msgid "Plain &Text..."
 msgstr "सादा पाठ... (&T) "
@@ -370,53 +387,6 @@ msgstr "ओपनडाकुमेंट पाठ"
 msgctxt "This is the document format"
 msgid "HTML"
 msgstr "एचटीएमएल"
-
-#: core/sourcereference.cpp:91
-#, kde-format
-msgctxt "'source' is a source file"
-msgid "Source: %1"
-msgstr "स्रोत: %1"
-
-#: core/chooseenginedialog.cpp:22
-msgid "Backend Selection"
-msgstr "बैकएन्ड चयन"
-
-#: core/chooseenginedialog.cpp:33
-#, kde-format
-msgid ""
-"<qt>More than one backend found for the MIME type:<br /><b>%1</b> (%2).<br /"
-"><br />Please select which one to use:</qt>"
-msgstr ""
-
-#: ui/toolaction.cpp:21
-msgid "Selection Tools"
-msgstr "चयन औजार"
-
-#: ui/toolaction.cpp:71 ui/toolaction.cpp:83
-msgid ""
-"Click to use the current selection tool\n"
-"Click and hold to choose another selection tool"
-msgstr ""
-
-#: ui/pageviewannotator.cpp:159
-msgid "Text of the new note:"
-msgstr "नवा नोट के पाठ:"
-
-#: ui/pageviewannotator.cpp:161
-msgid "New Text Note"
-msgstr "नवा पाठ नोट"
-
-#: ui/pageviewannotator.cpp:700
-msgid "Please insert your name or initials:"
-msgstr "किरपा करके, अपन नाम या आद्याक्छर भरव:"
-
-#: ui/pageviewannotator.cpp:701
-msgid "You must set this name:"
-msgstr "आप मन ल ए नाम सेट करना जरूरी हे:"
-
-#: ui/pageviewannotator.cpp:702
-msgid "Annotations author"
-msgstr "एन्नोटेसन लेखक"
 
 #: ui/findbar.cpp:36 ui/presentationsearchbar.cpp:64
 msgid "Close"
@@ -464,336 +434,6 @@ msgstr "केस सेंसिटिव"
 #: ui/findbar.cpp:68
 msgid "From current page"
 msgstr "मौजूदा पेज से"
-
-#: ui/presentationwidget.cpp:142
-#, fuzzy, kde-format
-#| msgid "Presentation"
-msgctxt "[document title/filename] – Presentation"
-msgid "%1 – Presentation"
-msgstr "प्रस्तुतीकरन"
-
-#: ui/presentationwidget.cpp:184
-msgid "Switch Screen"
-msgstr "स्क्रीन स्विच करव"
-
-#: ui/presentationwidget.cpp:191
-#, kde-format
-msgctxt "%1 is the screen number (0, 1, ...)"
-msgid "Screen %1"
-msgstr "स्क्रीन %1"
-
-#: ui/presentationwidget.cpp:198
-msgid "Exit Presentation Mode"
-msgstr "प्रस्तुतीकरन मोड से बाहिर हों"
-
-#: ui/presentationwidget.cpp:318
-#, kde-format
-msgid "Title: %1"
-msgstr "सीर्सक: %1"
-
-#: ui/presentationwidget.cpp:320 ui/guiutils.cpp:156
-#, kde-format
-msgid "Author: %1"
-msgstr "लेखक: %1"
-
-#: ui/presentationwidget.cpp:322
-#, kde-format
-msgid "Pages: %1"
-msgstr "पेज: %1"
-
-#: ui/presentationwidget.cpp:323
-msgid "Click to begin"
-msgstr "सुरू करे बर किलिक करव"
-
-#: ui/presentationwidget.cpp:1277
-msgid ""
-"There are two ways of exiting presentation mode, you can press either ESC "
-"key or click with the quit button that appears when placing the mouse in the "
-"top-right corner. Of course you can cycle windows (Alt+TAB by default)"
-msgstr ""
-
-#: ui/presentationwidget.cpp:1399
-msgctxt ""
-"Reason for inhibiting the screensaver activation, when the presentation mode "
-"is active"
-msgid "Giving a presentation"
-msgstr "प्रस्तुतीकरन देना"
-
-#: ui/thumbnaillist.cpp:870
-msgid "Show bookmarked pages only"
-msgstr "सिरिफ निसानी पेज मन ल ही देखाव"
-
-#: ui/annotationmodel.cpp:297 part.cpp:1731
-#, kde-format
-msgid "Page %1"
-msgstr "पेज %1"
-
-#: ui/minibar.cpp:87
-msgctxt "Layouted like: '5 [pages] of 10'"
-msgid "of"
-msgstr "का"
-
-#: ui/annotationpropertiesdialog.cpp:58
-msgid "&Appearance"
-msgstr "सक्ल-सूरत (&A)"
-
-#: ui/annotationpropertiesdialog.cpp:61
-msgid "&Color:"
-msgstr "रंग: (&C)"
-
-#: ui/annotationpropertiesdialog.cpp:69
-msgid "&Opacity:"
-msgstr "अपारदर्सिता: (&O)"
-
-#: ui/annotationpropertiesdialog.cpp:74
-msgctxt "Suffix for the opacity level, eg '80 %'"
-msgid " %"
-msgstr " %"
-
-#: ui/annotationpropertiesdialog.cpp:91
-msgid "&General"
-msgstr "सामान्य (&G)"
-
-#. i18n: file: conf/dlgidentitybase.ui:55
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: ui/annotationpropertiesdialog.cpp:94 rc.cpp:218
-msgid "&Author:"
-msgstr "लेखकः (&A)"
-
-#: ui/annotationpropertiesdialog.cpp:102
-#, kde-format
-msgid "Created: %1"
-msgstr "निर्मित: %1"
-
-#: ui/annotationpropertiesdialog.cpp:107 ui/annotationpropertiesdialog.cpp:211
-#, kde-format
-msgid "Modified: %1"
-msgstr "परिवर्धित: %1"
-
-#: ui/annotationpropertiesdialog.cpp:152
-msgid "Note Properties"
-msgstr "नोट गुन"
-
-#: ui/annotationpropertiesdialog.cpp:154
-msgid "Inline Note Properties"
-msgstr "इनलाइन नोट गुन"
-
-#: ui/annotationpropertiesdialog.cpp:157
-msgid "Line Properties"
-msgstr "रेखा गुन"
-
-#: ui/annotationpropertiesdialog.cpp:160
-msgid "Geometry Properties"
-msgstr "ज्यामितीय गुन"
-
-#: ui/annotationpropertiesdialog.cpp:163
-msgid "Highlight Properties"
-msgstr "गुन मन ल चमकाव"
-
-#: ui/annotationpropertiesdialog.cpp:166
-msgid "Stamp Properties"
-msgstr "स्टैम्प गुन"
-
-#: ui/annotationpropertiesdialog.cpp:169
-msgid "Ink Properties"
-msgstr "स्याही गुन"
-
-#: ui/annotationpropertiesdialog.cpp:172
-msgid "Caret Properties"
-msgstr "केरट गुन"
-
-#: ui/annotationpropertiesdialog.cpp:175
-msgid "File Attachment Properties"
-msgstr "फाइल अटेचमेंट गुन"
-
-#: ui/annotationpropertiesdialog.cpp:178
-msgid "Sound Properties"
-msgstr "अवाज गुन"
-
-#: ui/annotationpropertiesdialog.cpp:181
-msgid "Movie Properties"
-msgstr "सिनेमा गुन"
-
-#: ui/annotationpropertiesdialog.cpp:184
-msgid "Annotation Properties"
-msgstr "एन्नोटेसन गुन"
-
-#. i18n: tag tool attribute name
-#. i18n: file: ui/data/tools.xml:20
-#: ui/guiutils.cpp:72 ui/annotationwidgets.cpp:218 rc.cpp:305
-msgid "Note"
-msgstr "टिप्पनी"
-
-#. i18n: tag tool attribute name
-#. i18n: file: ui/data/tools.xml:27
-#: ui/guiutils.cpp:74 rc.cpp:308
-msgid "Inline Note"
-msgstr "इनलाइन टिप्पनी"
-
-#: ui/guiutils.cpp:77
-msgid "Line"
-msgstr "पंक्ति"
-
-#: ui/guiutils.cpp:80
-msgid "Geometry"
-msgstr "ज्यामिति"
-
-#: ui/guiutils.cpp:83 ui/annotationwidgets.cpp:397
-msgid "Highlight"
-msgstr "चमकाव"
-
-#. i18n: tag tool attribute name
-#. i18n: file: ui/data/tools.xml:62
-#: ui/guiutils.cpp:86 rc.cpp:323
-msgid "Stamp"
-msgstr "स्टैम्प"
-
-#: ui/guiutils.cpp:89
-msgid "Ink"
-msgstr "स्याही"
-
-#: ui/guiutils.cpp:92
-msgid "Caret"
-msgstr "केरट"
-
-#: ui/guiutils.cpp:95
-msgid "File Attachment"
-msgstr "फाइल संलग्नक"
-
-#: ui/guiutils.cpp:98
-msgid "Sound"
-msgstr "अवाज"
-
-#: ui/guiutils.cpp:101
-msgid "Movie"
-msgstr "सिनेमा"
-
-#: ui/guiutils.cpp:113
-msgctxt "Unknown author"
-msgid "Unknown"
-msgstr "अग्यात"
-
-#: ui/guiutils.cpp:202 ui/propertiesdialog.cpp:261
-#, kde-format
-msgid "Where do you want to save %1?"
-msgstr "%1 ल आप मन कहाँ सहेजना चाहथो ?"
-
-#: ui/guiutils.cpp:211 ui/propertiesdialog.cpp:274
-#, kde-format
-msgid "Could not open \"%1\" for writing. File was not saved."
-msgstr "लिखे बर \"%1\" ल खोल नइ सकिस. फाइल सहेजे नइ गे हे."
-
-#: ui/presentationsearchbar.cpp:78
-msgid "Find Next"
-msgstr "अगला खोजव"
-
-#: ui/side_reviews.cpp:61
-msgid ""
-"<div align=center><h3>No annotations</h3>To create new annotations press F6 "
-"or select <i>Tools -&gt; Review</i> from the menu.</div>"
-msgstr ""
-
-#: ui/side_reviews.cpp:128
-msgid "Group by Page"
-msgstr "पेज आधार मं समूहबद्ध करव"
-
-#: ui/side_reviews.cpp:133
-msgid "Group by Author"
-msgstr "लेखक के आधार मं समूहबद्ध करव"
-
-#: ui/side_reviews.cpp:141
-msgid "Show reviews for current page only"
-msgstr "सिरिफ अभी हाल के पेज बर रीव्यू दिखाव"
-
-#: ui/ktreeviewsearchline.cpp:461
-#, fuzzy
-#| msgid "Search Columns"
-msgid "Search Options"
-msgstr "खोज खंभा"
-
-#: ui/ktreeviewsearchline.cpp:462
-#, fuzzy
-#| msgid "Case Sensitive"
-msgctxt "Enable case sensitive search in the side navigation panels"
-msgid "Case Sensitive"
-msgstr "केस सेंसिटिव"
-
-#: ui/ktreeviewsearchline.cpp:465
-msgctxt "Enable regular expression search in the side navigation panels"
-msgid "Regular Expression"
-msgstr ""
-
-#: ui/ktreeviewsearchline.cpp:471
-msgid "Search Columns"
-msgstr "खोज खंभा"
-
-#: ui/ktreeviewsearchline.cpp:473
-msgid "All Visible Columns"
-msgstr "सब्बो दिखत खंभा"
-
-#: ui/ktreeviewsearchline.cpp:630
-msgid "S&earch:"
-msgstr "खोजव: (&e)"
-
-#: ui/searchwidget.cpp:40
-msgid "Enter at least 3 letters to filter pages"
-msgstr "पेज मन ल छनइया करे बर कम से कम तीन अक्छर भरे होही"
-
-#: ui/searchwidget.cpp:50
-msgid "Case Sensitive"
-msgstr "केस सेंसिटिव"
-
-#: ui/searchwidget.cpp:52
-msgid "Match Phrase"
-msgstr "वाक्यांस मिलाव"
-
-#: ui/searchwidget.cpp:53
-msgid "Match All Words"
-msgstr "सब्बो सब्द मन ल मिलाव"
-
-#: ui/searchwidget.cpp:54
-msgid "Match Any Word"
-msgstr "कोई सब्द ल मिलाव"
-
-#: ui/searchwidget.cpp:73
-msgid "Filter Options"
-msgstr "फिल्टर विकल्प"
-
-#: ui/sidebar.cpp:659 ui/annotationwidgets.cpp:268 shell/main.cpp:39
-#: part.cpp:149
-msgid "Okular"
-msgstr "ओकुलर"
-
-#: ui/sidebar.cpp:660
-msgid "Show Text"
-msgstr "पाठ देखाव"
-
-#: ui/sidebar.cpp:676
-msgid "Small Icons"
-msgstr "छोटे चिनहा"
-
-#: ui/sidebar.cpp:677
-msgid "Normal Icons"
-msgstr "सामान्य चिनहा"
-
-#: ui/sidebar.cpp:678
-msgid "Large Icons"
-msgstr "बड़े चिनहा"
-
-#: ui/videowidget.cpp:115
-msgctxt "start the movie playback"
-msgid "Play"
-msgstr "चलाव"
-
-#: ui/videowidget.cpp:120
-msgctxt "pause the movie playback"
-msgid "Pause"
-msgstr "ठहरव"
-
-#: ui/videowidget.cpp:185
-msgctxt "stop the movie playback"
-msgid "Stop"
-msgstr "रुकव"
 
 #: ui/pageview.cpp:339
 msgid "Zoom"
@@ -1016,14 +656,79 @@ msgstr "नकल करे बर पाठ/चित्र के चारो
 msgid "Select text"
 msgstr "पाठ चुनव"
 
-#: ui/pageviewutils.cpp:380
-msgid "Close this message"
-msgstr "ये संदेस ल बंद करव"
+#: ui/videowidget.cpp:115
+msgctxt "start the movie playback"
+msgid "Play"
+msgstr "चलाव"
 
-#: ui/tts.cpp:52
-#, kde-format
-msgid "Starting KTTSD Failed: %1"
-msgstr "केटीटीएसडी सुरु करे मं फेल: %1"
+#: ui/videowidget.cpp:120
+msgctxt "pause the movie playback"
+msgid "Pause"
+msgstr "ठहरव"
+
+#: ui/videowidget.cpp:185
+msgctxt "stop the movie playback"
+msgid "Stop"
+msgstr "रुकव"
+
+#: ui/toolaction.cpp:21
+msgid "Selection Tools"
+msgstr "चयन औजार"
+
+#: ui/toolaction.cpp:71 ui/toolaction.cpp:83
+msgid ""
+"Click to use the current selection tool\n"
+"Click and hold to choose another selection tool"
+msgstr ""
+
+#: ui/thumbnaillist.cpp:870
+msgid "Show bookmarked pages only"
+msgstr "सिरिफ निसानी पेज मन ल ही देखाव"
+
+#: ui/embeddedfilesdialog.cpp:35
+msgctxt "Unknown date"
+msgid "Unknown"
+msgstr "अग्यात"
+
+#: ui/embeddedfilesdialog.cpp:40
+msgctxt "@title:window"
+msgid "Embedded Files"
+msgstr "भीतर मं बने फाइल"
+
+#: ui/embeddedfilesdialog.cpp:49
+msgctxt "@title:column"
+msgid "Name"
+msgstr "नाम"
+
+#: ui/embeddedfilesdialog.cpp:50
+msgctxt "@title:column"
+msgid "Description"
+msgstr "वर्नन"
+
+#: ui/embeddedfilesdialog.cpp:51
+msgctxt "@title:column"
+msgid "Size"
+msgstr "आकार"
+
+#: ui/embeddedfilesdialog.cpp:52
+msgctxt "@title:column"
+msgid "Created"
+msgstr "बनिस"
+
+#: ui/embeddedfilesdialog.cpp:53
+msgctxt "@title:column"
+msgid "Modified"
+msgstr "सुधरिस"
+
+#: ui/embeddedfilesdialog.cpp:69 ui/annotationwidgets.cpp:518
+msgctxt "Not available size"
+msgid "N/A"
+msgstr "लागू नइ"
+
+#: ui/embeddedfilesdialog.cpp:114
+msgctxt "@action:inmenu"
+msgid "&Save As..."
+msgstr "अइसन सहेजव... (&S)"
 
 #: ui/fileprinterpreview.cpp:114
 msgid "Could not load print preview part"
@@ -1032,6 +737,227 @@ msgstr "छपाई प्रिव्यू हिस्सा लोड न�
 #: ui/fileprinterpreview.cpp:129
 msgid "Print Preview"
 msgstr "छपाई नमूना"
+
+#: ui/side_reviews.cpp:61
+msgid ""
+"<div align=center><h3>No annotations</h3>To create new annotations press F6 "
+"or select <i>Tools -&gt; Review</i> from the menu.</div>"
+msgstr ""
+
+#: ui/side_reviews.cpp:128
+msgid "Group by Page"
+msgstr "पेज आधार मं समूहबद्ध करव"
+
+#: ui/side_reviews.cpp:133
+msgid "Group by Author"
+msgstr "लेखक के आधार मं समूहबद्ध करव"
+
+#: ui/side_reviews.cpp:141
+msgid "Show reviews for current page only"
+msgstr "सिरिफ अभी हाल के पेज बर रीव्यू दिखाव"
+
+#: ui/formwidgets.cpp:350 shell/shell.cpp:242
+msgid "*|All Files"
+msgstr "*|सब्बो फाइल"
+
+#: ui/bookmarklist.cpp:111
+#, kde-format
+msgctxt "%1 is the file name"
+msgid ""
+"%1\n"
+"\n"
+"One bookmark"
+msgid_plural ""
+"%1\n"
+"\n"
+"%2 bookmarks"
+msgstr[0] ""
+"%1\n"
+"\n"
+"%2 निसानी"
+msgstr[1] ""
+"%1\n"
+"\n"
+"%2 निसानी"
+
+#: ui/bookmarklist.cpp:156
+msgid "Current document only"
+msgstr "सिरिफ अभी हाल के कागद"
+
+#: ui/bookmarklist.cpp:246
+msgid "Go to This Bookmark"
+msgstr "ये निसानी मं जाव"
+
+#: ui/bookmarklist.cpp:247
+msgid "Rename Bookmark"
+msgstr "निसानी ल नवा नाम देव"
+
+#: ui/bookmarklist.cpp:248 part.cpp:1270 part.cpp:1733
+msgid "Remove Bookmark"
+msgstr " निसानी  मेटाव"
+
+#: ui/bookmarklist.cpp:273
+#, fuzzy
+#| msgid "Open Document"
+msgctxt "Opens the selected document"
+msgid "Open Document"
+msgstr "कागद खोलव"
+
+#: ui/bookmarklist.cpp:274
+#, fuzzy
+#| msgid "Remove Bookmark"
+msgid "Remove Bookmarks"
+msgstr " निसानी  मेटाव"
+
+#: ui/annotationmodel.cpp:297 part.cpp:1731
+#, kde-format
+msgid "Page %1"
+msgstr "पेज %1"
+
+#. i18n: tag tool attribute name
+#. i18n: file: ui/data/tools.xml:20
+#: ui/guiutils.cpp:72 ui/annotationwidgets.cpp:218 rc.cpp:305
+msgid "Note"
+msgstr "टिप्पनी"
+
+#. i18n: tag tool attribute name
+#. i18n: file: ui/data/tools.xml:27
+#: ui/guiutils.cpp:74 rc.cpp:308
+msgid "Inline Note"
+msgstr "इनलाइन टिप्पनी"
+
+#: ui/guiutils.cpp:77
+msgid "Line"
+msgstr "पंक्ति"
+
+#: ui/guiutils.cpp:80
+msgid "Geometry"
+msgstr "ज्यामिति"
+
+#: ui/guiutils.cpp:83 ui/annotationwidgets.cpp:397
+msgid "Highlight"
+msgstr "चमकाव"
+
+#. i18n: tag tool attribute name
+#. i18n: file: ui/data/tools.xml:62
+#: ui/guiutils.cpp:86 rc.cpp:323
+msgid "Stamp"
+msgstr "स्टैम्प"
+
+#: ui/guiutils.cpp:89
+msgid "Ink"
+msgstr "स्याही"
+
+#: ui/guiutils.cpp:92
+msgid "Caret"
+msgstr "केरट"
+
+#: ui/guiutils.cpp:95
+msgid "File Attachment"
+msgstr "फाइल संलग्नक"
+
+#: ui/guiutils.cpp:98
+msgid "Sound"
+msgstr "अवाज"
+
+#: ui/guiutils.cpp:101
+msgid "Movie"
+msgstr "सिनेमा"
+
+#: ui/guiutils.cpp:113
+msgctxt "Unknown author"
+msgid "Unknown"
+msgstr "अग्यात"
+
+#: ui/guiutils.cpp:156 ui/presentationwidget.cpp:320
+#, kde-format
+msgid "Author: %1"
+msgstr "लेखक: %1"
+
+#: ui/guiutils.cpp:202 ui/propertiesdialog.cpp:261
+#, kde-format
+msgid "Where do you want to save %1?"
+msgstr "%1 ल आप मन कहाँ सहेजना चाहथो ?"
+
+#: ui/guiutils.cpp:211 ui/propertiesdialog.cpp:274
+#, kde-format
+msgid "Could not open \"%1\" for writing. File was not saved."
+msgstr "लिखे बर \"%1\" ल खोल नइ सकिस. फाइल सहेजे नइ गे हे."
+
+#: ui/sidebar.cpp:659 ui/annotationwidgets.cpp:268 shell/main.cpp:39
+#: part.cpp:149
+msgid "Okular"
+msgstr "ओकुलर"
+
+#: ui/sidebar.cpp:660
+msgid "Show Text"
+msgstr "पाठ देखाव"
+
+#: ui/sidebar.cpp:676
+msgid "Small Icons"
+msgstr "छोटे चिनहा"
+
+#: ui/sidebar.cpp:677
+msgid "Normal Icons"
+msgstr "सामान्य चिनहा"
+
+#: ui/sidebar.cpp:678
+msgid "Large Icons"
+msgstr "बड़े चिनहा"
+
+#: ui/pageviewutils.cpp:380
+msgid "Close this message"
+msgstr "ये संदेस ल बंद करव"
+
+#: ui/minibar.cpp:87
+msgctxt "Layouted like: '5 [pages] of 10'"
+msgid "of"
+msgstr "का"
+
+#: ui/pageviewannotator.cpp:159
+msgid "Text of the new note:"
+msgstr "नवा नोट के पाठ:"
+
+#: ui/pageviewannotator.cpp:161
+msgid "New Text Note"
+msgstr "नवा पाठ नोट"
+
+#: ui/pageviewannotator.cpp:700
+msgid "Please insert your name or initials:"
+msgstr "किरपा करके, अपन नाम या आद्याक्छर भरव:"
+
+#: ui/pageviewannotator.cpp:701
+msgid "You must set this name:"
+msgstr "आप मन ल ए नाम सेट करना जरूरी हे:"
+
+#: ui/pageviewannotator.cpp:702
+msgid "Annotations author"
+msgstr "एन्नोटेसन लेखक"
+
+#: ui/annotationpopup.cpp:49
+#, kde-format
+msgid "Annotation"
+msgid_plural "%1 Annotations"
+msgstr[0] "एनोटेसन"
+msgstr[1] "%1 एनोटेसन"
+
+#: ui/annotationpopup.cpp:50
+msgid "&Open Pop-up Note"
+msgstr "पाप अप नोट खोलव (&O)"
+
+#: ui/annotationpopup.cpp:52
+msgid "&Delete"
+msgstr "मेटाव (&D)"
+
+#: ui/annotationpopup.cpp:58 ui/propertiesdialog.cpp:49 part.cpp:521
+msgid "&Properties"
+msgstr "गुन (&P)"
+
+#: ui/annotationpopup.cpp:65
+#, kde-format
+msgctxt "%1 is the name of the file to save"
+msgid "&Save '%1'..."
+msgstr "सहेजव '%1'...(&S)"
 
 #: ui/annotationwidgets.cpp:208
 msgid "Icon"
@@ -1214,11 +1140,6 @@ msgctxt "'File' as normal file, that can be opened, saved, etc.."
 msgid "File"
 msgstr "फाइल"
 
-#: ui/annotationwidgets.cpp:518 ui/embeddedfilesdialog.cpp:68
-msgctxt "Not available size"
-msgid "N/A"
-msgstr "लागू नइ"
-
 #: ui/annotationwidgets.cpp:519
 msgid "No description available."
 msgstr "कोई वर्नन नइ मिलत."
@@ -1251,110 +1172,157 @@ msgctxt "Symbol for caret annotations"
 msgid "P"
 msgstr "पी"
 
-#: ui/bookmarklist.cpp:111
-#, kde-format
-msgctxt "%1 is the file name"
-msgid ""
-"%1\n"
-"\n"
-"One bookmark"
-msgid_plural ""
-"%1\n"
-"\n"
-"%2 bookmarks"
-msgstr[0] ""
-"%1\n"
-"\n"
-"%2 निसानी"
-msgstr[1] ""
-"%1\n"
-"\n"
-"%2 निसानी"
-
-#: ui/bookmarklist.cpp:156
-msgid "Current document only"
-msgstr "सिरिफ अभी हाल के कागद"
-
-#: ui/bookmarklist.cpp:246
-msgid "Go to This Bookmark"
-msgstr "ये निसानी मं जाव"
-
-#: ui/bookmarklist.cpp:247
-msgid "Rename Bookmark"
-msgstr "निसानी ल नवा नाम देव"
-
-#: ui/bookmarklist.cpp:248 part.cpp:1270 part.cpp:1733
-msgid "Remove Bookmark"
-msgstr " निसानी  मेटाव"
-
-#: ui/bookmarklist.cpp:273
+#: ui/ktreeviewsearchline.cpp:461
 #, fuzzy
-#| msgid "Open Document"
-msgctxt "Opens the selected document"
-msgid "Open Document"
-msgstr "कागद खोलव"
+#| msgid "Search Columns"
+msgid "Search Options"
+msgstr "खोज खंभा"
 
-#: ui/bookmarklist.cpp:274
+#: ui/ktreeviewsearchline.cpp:462
 #, fuzzy
-#| msgid "Remove Bookmark"
-msgid "Remove Bookmarks"
-msgstr " निसानी  मेटाव"
+#| msgid "Case Sensitive"
+msgctxt "Enable case sensitive search in the side navigation panels"
+msgid "Case Sensitive"
+msgstr "केस सेंसिटिव"
 
-#: ui/embeddedfilesdialog.cpp:35
-msgctxt "Unknown date"
-msgid "Unknown"
-msgstr "अग्यात"
+#: ui/ktreeviewsearchline.cpp:465
+msgctxt "Enable regular expression search in the side navigation panels"
+msgid "Regular Expression"
+msgstr ""
 
-#: ui/embeddedfilesdialog.cpp:40
-msgctxt "@title:window"
-msgid "Embedded Files"
-msgstr "भीतर मं बने फाइल"
+#: ui/ktreeviewsearchline.cpp:471
+msgid "Search Columns"
+msgstr "खोज खंभा"
 
-#: ui/embeddedfilesdialog.cpp:48
-msgctxt "@title:column"
-msgid "Name"
-msgstr "नाम"
+#: ui/ktreeviewsearchline.cpp:473
+msgid "All Visible Columns"
+msgstr "सब्बो दिखत खंभा"
 
-#: ui/embeddedfilesdialog.cpp:49
-msgctxt "@title:column"
-msgid "Description"
-msgstr "वर्नन"
-
-#: ui/embeddedfilesdialog.cpp:50
-msgctxt "@title:column"
-msgid "Size"
-msgstr "आकार"
-
-#: ui/embeddedfilesdialog.cpp:51
-msgctxt "@title:column"
-msgid "Created"
-msgstr "बनिस"
-
-#: ui/embeddedfilesdialog.cpp:52
-msgctxt "@title:column"
-msgid "Modified"
-msgstr "सुधरिस"
-
-#: ui/embeddedfilesdialog.cpp:106
-msgctxt "@action:inmenu"
-msgid "&Save As..."
-msgstr "अइसन सहेजव... (&S)"
+#: ui/ktreeviewsearchline.cpp:630
+msgid "S&earch:"
+msgstr "खोजव: (&e)"
 
 #: ui/annotwindow.cpp:48
 msgid "Close this note"
 msgstr "ये नोट ल बंद करव"
 
-#: ui/formwidgets.cpp:350 shell/shell.cpp:242
-msgid "*|All Files"
-msgstr "*|सब्बो फाइल"
+#: ui/annotationpropertiesdialog.cpp:58
+msgid "&Appearance"
+msgstr "सक्ल-सूरत (&A)"
+
+#: ui/annotationpropertiesdialog.cpp:61
+msgid "&Color:"
+msgstr "रंग: (&C)"
+
+#: ui/annotationpropertiesdialog.cpp:69
+msgid "&Opacity:"
+msgstr "अपारदर्सिता: (&O)"
+
+#: ui/annotationpropertiesdialog.cpp:74
+msgctxt "Suffix for the opacity level, eg '80 %'"
+msgid " %"
+msgstr " %"
+
+#: ui/annotationpropertiesdialog.cpp:91
+msgid "&General"
+msgstr "सामान्य (&G)"
+
+#. i18n: file: conf/dlgidentitybase.ui:55
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/annotationpropertiesdialog.cpp:94 rc.cpp:125
+msgid "&Author:"
+msgstr "लेखकः (&A)"
+
+#: ui/annotationpropertiesdialog.cpp:102
+#, kde-format
+msgid "Created: %1"
+msgstr "निर्मित: %1"
+
+#: ui/annotationpropertiesdialog.cpp:107 ui/annotationpropertiesdialog.cpp:211
+#, kde-format
+msgid "Modified: %1"
+msgstr "परिवर्धित: %1"
+
+#: ui/annotationpropertiesdialog.cpp:152
+msgid "Note Properties"
+msgstr "नोट गुन"
+
+#: ui/annotationpropertiesdialog.cpp:154
+msgid "Inline Note Properties"
+msgstr "इनलाइन नोट गुन"
+
+#: ui/annotationpropertiesdialog.cpp:157
+msgid "Line Properties"
+msgstr "रेखा गुन"
+
+#: ui/annotationpropertiesdialog.cpp:160
+msgid "Geometry Properties"
+msgstr "ज्यामितीय गुन"
+
+#: ui/annotationpropertiesdialog.cpp:163
+msgid "Highlight Properties"
+msgstr "गुन मन ल चमकाव"
+
+#: ui/annotationpropertiesdialog.cpp:166
+msgid "Stamp Properties"
+msgstr "स्टैम्प गुन"
+
+#: ui/annotationpropertiesdialog.cpp:169
+msgid "Ink Properties"
+msgstr "स्याही गुन"
+
+#: ui/annotationpropertiesdialog.cpp:172
+msgid "Caret Properties"
+msgstr "केरट गुन"
+
+#: ui/annotationpropertiesdialog.cpp:175
+msgid "File Attachment Properties"
+msgstr "फाइल अटेचमेंट गुन"
+
+#: ui/annotationpropertiesdialog.cpp:178
+msgid "Sound Properties"
+msgstr "अवाज गुन"
+
+#: ui/annotationpropertiesdialog.cpp:181
+msgid "Movie Properties"
+msgstr "सिनेमा गुन"
+
+#: ui/annotationpropertiesdialog.cpp:184
+msgid "Annotation Properties"
+msgstr "एन्नोटेसन गुन"
+
+#: ui/searchwidget.cpp:40
+msgid "Enter at least 3 letters to filter pages"
+msgstr "पेज मन ल छनइया करे बर कम से कम तीन अक्छर भरे होही"
+
+#: ui/searchwidget.cpp:50
+msgid "Case Sensitive"
+msgstr "केस सेंसिटिव"
+
+#: ui/searchwidget.cpp:52
+msgid "Match Phrase"
+msgstr "वाक्यांस मिलाव"
+
+#: ui/searchwidget.cpp:53
+msgid "Match All Words"
+msgstr "सब्बो सब्द मन ल मिलाव"
+
+#: ui/searchwidget.cpp:54
+msgid "Match Any Word"
+msgstr "कोई सब्द ल मिलाव"
+
+#: ui/searchwidget.cpp:73
+msgid "Filter Options"
+msgstr "फिल्टर विकल्प"
+
+#: ui/tts.cpp:52
+#, kde-format
+msgid "Starting KTTSD Failed: %1"
+msgstr "केटीटीएसडी सुरु करे मं फेल: %1"
 
 #: ui/propertiesdialog.cpp:44
 msgid "Unknown File"
 msgstr "अग्यात फाइल"
-
-#: ui/propertiesdialog.cpp:49 ui/annotationpopup.cpp:58 part.cpp:521
-msgid "&Properties"
-msgstr "गुन (&P)"
 
 #: ui/propertiesdialog.cpp:58
 msgid "No document opened."
@@ -1516,26 +1484,58 @@ msgstr "किसिम"
 msgid "File"
 msgstr "फाइल"
 
-#: ui/annotationpopup.cpp:49
+#: ui/presentationsearchbar.cpp:78
+msgid "Find Next"
+msgstr "अगला खोजव"
+
+#: ui/presentationwidget.cpp:142
+#, fuzzy, kde-format
+#| msgid "Presentation"
+msgctxt "[document title/filename] – Presentation"
+msgid "%1 – Presentation"
+msgstr "प्रस्तुतीकरन"
+
+#: ui/presentationwidget.cpp:184
+msgid "Switch Screen"
+msgstr "स्क्रीन स्विच करव"
+
+#: ui/presentationwidget.cpp:191
 #, kde-format
-msgid "Annotation"
-msgid_plural "%1 Annotations"
-msgstr[0] "एनोटेसन"
-msgstr[1] "%1 एनोटेसन"
+msgctxt "%1 is the screen number (0, 1, ...)"
+msgid "Screen %1"
+msgstr "स्क्रीन %1"
 
-#: ui/annotationpopup.cpp:50
-msgid "&Open Pop-up Note"
-msgstr "पाप अप नोट खोलव (&O)"
+#: ui/presentationwidget.cpp:198
+msgid "Exit Presentation Mode"
+msgstr "प्रस्तुतीकरन मोड से बाहिर हों"
 
-#: ui/annotationpopup.cpp:52
-msgid "&Delete"
-msgstr "मेटाव (&D)"
-
-#: ui/annotationpopup.cpp:65
+#: ui/presentationwidget.cpp:318
 #, kde-format
-msgctxt "%1 is the name of the file to save"
-msgid "&Save '%1'..."
-msgstr "सहेजव '%1'...(&S)"
+msgid "Title: %1"
+msgstr "सीर्सक: %1"
+
+#: ui/presentationwidget.cpp:322
+#, kde-format
+msgid "Pages: %1"
+msgstr "पेज: %1"
+
+#: ui/presentationwidget.cpp:323
+msgid "Click to begin"
+msgstr "सुरू करे बर किलिक करव"
+
+#: ui/presentationwidget.cpp:1277
+msgid ""
+"There are two ways of exiting presentation mode, you can press either ESC "
+"key or click with the quit button that appears when placing the mouse in the "
+"top-right corner. Of course you can cycle windows (Alt+TAB by default)"
+msgstr ""
+
+#: ui/presentationwidget.cpp:1399
+msgctxt ""
+"Reason for inhibiting the screensaver activation, when the presentation mode "
+"is active"
+msgid "Giving a presentation"
+msgstr "प्रस्तुतीकरन देना"
 
 #: shell/main.cpp:45
 msgid "Page of the document to be shown"
@@ -1971,319 +1971,15 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raviratlami@aol.in"
 
-#. i18n: file: conf/dlgaccessibilitybase.ui:28
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightImages)
-#: rc.cpp:68
-msgid "Draw border around &Images"
-msgstr "फोटू मन के चारों तरफ किनारा बनाव (&I)"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:35
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightLinks)
-#: rc.cpp:71
-msgid "Draw border around &Links"
-msgstr "संकली के चारों तरफ किनारा बनाव (&L)"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:45
-#. i18n: ectx: property (title), widget (QGroupBox, kcfg_ChangeColors)
-#: rc.cpp:74
-msgid "Change &colors"
-msgstr "रंग बदलव (&c)"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:63
-#. i18n: ectx: property (text), widget (QLabel, warn)
-#: rc.cpp:77
-msgid "Warning: these options can badly affect drawing speed."
-msgstr "चेतावनी: ये विकल्प ड्राइंग के गति ल बुरी जइसन प्रभावित करही."
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:78
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:80
-msgid "Color mode:"
-msgstr "रंग विधि:"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:89
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
-#: rc.cpp:83
-msgid "Invert Colors"
-msgstr "रंग उलटव"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:94
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
-#: rc.cpp:86
-msgid "Change Paper Color"
-msgstr "कागज के रंग बदलव"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:99
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
-#: rc.cpp:89
-msgid "Change Dark & Light Colors"
-msgstr "गहरा अउ हल्का रंग बदलव"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:104
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
-#: rc.cpp:92
-msgid "Convert to Black & White"
-msgstr "काला सफेद मं बदलव"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:165
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:95
-msgid "Paper color:"
-msgstr "कागज रंग:"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:218
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:98
-msgid "Dark color:"
-msgstr "गहरा रंग:"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:250
-#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
-#: rc.cpp:101
-msgid "Light color:"
-msgstr "हल्का रंग:"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:291
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:104
-msgid "Threshold:"
-msgstr "देहलीज:"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:323
-#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#: rc.cpp:107
-msgid "Contrast:"
-msgstr "कंट्रास्टः"
-
-#. i18n: file: conf/dlgpresentationbase.ui:19
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:110
-msgid "Navigation"
-msgstr "नेविगेसन"
-
-#. i18n: file: conf/dlgpresentationbase.ui:39
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesAdvance)
-#: rc.cpp:113
-msgid "Advance every:"
-msgstr "हर एक के बाद आगू बढ़व:"
-
-#. i18n: file: conf/dlgpresentationbase.ui:49
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_SlidesAdvanceTime)
-#: rc.cpp:116
-msgid " sec."
-msgstr " सेक."
-
-#. i18n: file: conf/dlgpresentationbase.ui:61
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesLoop)
-#: rc.cpp:119
-msgid "Loop after last page"
-msgstr "आखरी पेज के बाद लूप करव"
-
-#. i18n: file: conf/dlgpresentationbase.ui:71
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#. i18n: file: conf/dlggeneralbase.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:122 rc.cpp:236
-msgid "Appearance"
-msgstr "रूप"
-
-#. i18n: file: conf/dlgpresentationbase.ui:79
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:125
-msgid "Background color:"
-msgstr "पिछोत अंगना के रंगः"
-
-#. i18n: file: conf/dlgpresentationbase.ui:92
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:128
-msgid "Pencil color:"
-msgstr "पेंसिल रंग:"
-
-#. i18n: file: conf/dlgpresentationbase.ui:105
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:131
-msgid "Mouse cursor:"
-msgstr "मुसुवा संकेतक:"
-
-#. i18n: file: conf/dlgpresentationbase.ui:116
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesCursor)
-#: rc.cpp:134
-msgid "Hidden After Delay"
-msgstr "थोड़ी देरी के बाद छिपें"
-
-#. i18n: file: conf/dlgpresentationbase.ui:121
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesCursor)
-#: rc.cpp:137
-msgid "Always Visible"
-msgstr "हमेसा दिखत"
-
-#. i18n: file: conf/dlgpresentationbase.ui:126
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesCursor)
-#: rc.cpp:140
-msgid "Always Hidden"
-msgstr "हमेसा छिपे रहें"
-
-#. i18n: file: conf/dlgpresentationbase.ui:136
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesShowProgress)
-#: rc.cpp:143
-msgid "Show &progress indicator"
-msgstr "प्रगति सूचक दिखाव (&p)"
-
-#. i18n: file: conf/dlgpresentationbase.ui:143
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesShowSummary)
-#: rc.cpp:146
-msgid "Show s&ummary page"
-msgstr "सारांस पेज देखाव (&u)"
-
-#. i18n: file: conf/dlgpresentationbase.ui:153
-#. i18n: ectx: property (title), widget (QGroupBox, kcfg_SlidesTransitionsEnabled)
-#: rc.cpp:149
-msgid "Enable transitions"
-msgstr "ट्रांजीसन सक्छम करव"
-
-#. i18n: file: conf/dlgpresentationbase.ui:165
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:152
-msgid "Default transition:"
-msgstr "डिफाल्ट ट्रांजीसन:"
-
-#. i18n: file: conf/dlgpresentationbase.ui:176
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:155
-msgid "Blinds Vertical"
-msgstr "खड़े मं ब्लाइंड्स"
-
-#. i18n: file: conf/dlgpresentationbase.ui:181
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:158
-msgid "Blinds Horizontal"
-msgstr "आड़े मं ब्लाइंड्स"
-
-#. i18n: file: conf/dlgpresentationbase.ui:186
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:161
-msgid "Box In"
-msgstr "बाक्स इन"
-
-#. i18n: file: conf/dlgpresentationbase.ui:191
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:164
-msgid "Box Out"
-msgstr "बाक्स आउट"
-
-#. i18n: file: conf/dlgpresentationbase.ui:196
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:167
-msgid "Dissolve"
-msgstr "डिजाल्व"
-
-#. i18n: file: conf/dlgpresentationbase.ui:201
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:170
-msgid "Glitter Down"
-msgstr "ग्लिटर नीचे"
-
-#. i18n: file: conf/dlgpresentationbase.ui:206
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:173
-msgid "Glitter Right"
-msgstr "ग्लिटर जेवनी"
-
-#. i18n: file: conf/dlgpresentationbase.ui:211
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:176
-msgid "Glitter Right-Down"
-msgstr "ग्लिटर नीचे, जेवनी"
-
-#. i18n: file: conf/dlgpresentationbase.ui:216
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:179
-msgid "Random Transition"
-msgstr "रेंडम ट्रांजीसन"
-
-#. i18n: file: conf/dlgpresentationbase.ui:221
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:182
-msgid "Replace"
-msgstr "बदलव"
-
-#. i18n: file: conf/dlgpresentationbase.ui:226
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:185
-msgid "Split Horizontal In"
-msgstr "आड़े मं भीतरी तरफ विभाजित करव"
-
-#. i18n: file: conf/dlgpresentationbase.ui:231
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:188
-msgid "Split Horizontal Out"
-msgstr "आड़े मं बाहिरी तरफ विभाजित करव"
-
-#. i18n: file: conf/dlgpresentationbase.ui:236
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:191
-msgid "Split Vertical In"
-msgstr "खड़े मं भीतरी तरफ विभाजित करव"
-
-#. i18n: file: conf/dlgpresentationbase.ui:241
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:194
-msgid "Split Vertical Out"
-msgstr "खड़े मं बाहिरी तरफ विभाजित करव"
-
-#. i18n: file: conf/dlgpresentationbase.ui:246
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:197
-msgid "Wipe Down"
-msgstr "नीचे के तरफ से मेटाव"
-
-#. i18n: file: conf/dlgpresentationbase.ui:251
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:200
-msgid "Wipe Right"
-msgstr "दायीं तरफ से मेटाव"
-
-#. i18n: file: conf/dlgpresentationbase.ui:256
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:203
-msgid "Wipe Left"
-msgstr "बायीं तरफ से मेटाव"
-
-#. i18n: file: conf/dlgpresentationbase.ui:261
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:206
-msgid "Wipe Up"
-msgstr "ऊपर के तरफ मेटाव"
-
-#. i18n: file: conf/dlgpresentationbase.ui:272
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: rc.cpp:209
-msgid "Placement"
-msgstr "निरधारित जगह"
-
-#. i18n: file: conf/dlgpresentationbase.ui:278
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:212
-msgid "Screen:"
-msgstr "स्क्रीन:"
-
-#. i18n: file: conf/dlgidentitybase.ui:71
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:221
-msgid ""
-"<b>Note</b>: the information here is used only for comments and reviews. "
-"Information inserted here will not be transmitted without your knowledge."
-msgstr ""
-
 #. i18n: file: conf/dlgeditorbase.ui:25
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:227
+#: rc.cpp:71
 msgid "Editor:"
 msgstr "संपादक: (&E)"
 
 #. i18n: file: conf/dlgeditorbase.ui:32
 #. i18n: ectx: property (whatsThis), widget (QComboBox, kcfg_ExternalEditor)
-#: rc.cpp:230
+#: rc.cpp:74
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose the editor you want to launch when Okular wants to open a source file."
@@ -2291,105 +1987,409 @@ msgstr ""
 
 #. i18n: file: conf/dlgeditorbase.ui:70
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:233
+#: rc.cpp:77
 msgid "Command:"
 msgstr "कमांड:"
 
-#. i18n: file: conf/dlggeneralbase.ui:40
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowScrollBars)
-#: rc.cpp:239
-msgid "Show scroll&bars"
-msgstr "स्क्राल पट्टी मन देखाव (&b)"
+#. i18n: file: conf/dlgaccessibilitybase.ui:28
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightImages)
+#: rc.cpp:80
+msgid "Draw border around &Images"
+msgstr "फोटू मन के चारों तरफ किनारा बनाव (&I)"
 
-#. i18n: file: conf/dlggeneralbase.ui:50
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SyncThumbnailsViewport)
-#: rc.cpp:242
-msgid "Link the &thumbnails with the page"
-msgstr "छोटेफोटू मन ल पेज से संकली करव (&t)"
+#. i18n: file: conf/dlgaccessibilitybase.ui:35
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightLinks)
+#: rc.cpp:83
+msgid "Draw border around &Links"
+msgstr "संकली के चारों तरफ किनारा बनाव (&L)"
 
-#. i18n: file: conf/dlggeneralbase.ui:57
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowOSD)
-#: rc.cpp:245
-msgid "Show &hints and info messages"
-msgstr "संकेत अउ जानकारी संदेस देखाव (&h)"
+#. i18n: file: conf/dlgaccessibilitybase.ui:45
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_ChangeColors)
+#: rc.cpp:86
+msgid "Change &colors"
+msgstr "रंग बदलव (&c)"
 
-#. i18n: file: conf/dlggeneralbase.ui:105
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:248
-msgid "Program Features"
-msgstr "प्रोग्राम विसेसता"
+#. i18n: file: conf/dlgaccessibilitybase.ui:63
+#. i18n: ectx: property (text), widget (QLabel, warn)
+#: rc.cpp:89
+msgid "Warning: these options can badly affect drawing speed."
+msgstr "चेतावनी: ये विकल्प ड्राइंग के गति ल बुरी जइसन प्रभावित करही."
 
-#. i18n: file: conf/dlggeneralbase.ui:125
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ObeyDRM)
-#: rc.cpp:251
-msgid "&Obey DRM limitations"
-msgstr "डीआरएम सीमा मानें (&O)"
+#. i18n: file: conf/dlgaccessibilitybase.ui:78
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:92
+msgid "Color mode:"
+msgstr "रंग विधि:"
 
-#. i18n: file: conf/dlggeneralbase.ui:132
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_WatchFile)
-#: rc.cpp:254
-msgid "&Reload document on file change"
-msgstr "फाइल बदले मं कागद ल फिर से लोड करव (&R)"
+#. i18n: file: conf/dlgaccessibilitybase.ui:89
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
+#: rc.cpp:95
+msgid "Invert Colors"
+msgstr "रंग उलटव"
 
-#. i18n: file: conf/dlggeneralbase.ui:139
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ChooseGenerators)
-#: rc.cpp:257
-msgid "Show backend selection dialog"
-msgstr "बैकएन्ड चयन गोठ देखाव"
+#. i18n: file: conf/dlgaccessibilitybase.ui:94
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
+#: rc.cpp:98
+msgid "Change Paper Color"
+msgstr "कागज के रंग बदलव"
 
-#. i18n: file: conf/dlggeneralbase.ui:187
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:260
-msgid "View Options"
-msgstr "विकल्प देखाव"
+#. i18n: file: conf/dlgaccessibilitybase.ui:99
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
+#: rc.cpp:101
+msgid "Change Dark & Light Colors"
+msgstr "गहरा अउ हल्का रंग बदलव"
 
-#. i18n: file: conf/dlggeneralbase.ui:201
-#. i18n: ectx: property (text), widget (QLabel, columnLabel)
-#: rc.cpp:263
-msgid "Overview columns:"
-msgstr "ओवरव्यू खंभा:"
+#. i18n: file: conf/dlgaccessibilitybase.ui:104
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
+#: rc.cpp:104
+msgid "Convert to Black & White"
+msgstr "काला सफेद मं बदलव"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:165
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:107
+msgid "Paper color:"
+msgstr "कागज रंग:"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:218
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: rc.cpp:110
+msgid "Dark color:"
+msgstr "गहरा रंग:"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:250
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#: rc.cpp:113
+msgid "Light color:"
+msgstr "हल्का रंग:"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:291
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: rc.cpp:116
+msgid "Threshold:"
+msgstr "देहलीज:"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:323
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
+#: rc.cpp:119
+msgid "Contrast:"
+msgstr "कंट्रास्टः"
+
+#. i18n: file: conf/dlgidentitybase.ui:71
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:128
+msgid ""
+"<b>Note</b>: the information here is used only for comments and reviews. "
+"Information inserted here will not be transmitted without your knowledge."
+msgstr ""
 
 #. i18n: file: conf/dlgperformancebase.ui:22
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:266
+#: rc.cpp:131
 msgid "CPU Usage"
 msgstr "सीपीयू उपयोग"
 
 #. i18n: file: conf/dlgperformancebase.ui:50
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableCompositing)
-#: rc.cpp:269
+#: rc.cpp:134
 msgid "Enable &transparency effects"
 msgstr "पारदर्सिता प्रभाव ल सक्छम करव (t)"
 
 #. i18n: file: conf/dlgperformancebase.ui:57
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableThreading)
-#: rc.cpp:272
+#: rc.cpp:137
 msgid "Enable &background generation"
 msgstr "पिछोत अंगना बनाना सक्छम करव (&b)"
 
 #. i18n: file: conf/dlgperformancebase.ui:109
 #. i18n: ectx: property (title), widget (KButtonGroup, kcfg_MemoryLevel)
-#: rc.cpp:275
+#: rc.cpp:140
 msgid "Memory Usage"
 msgstr "मेमोरी उपयोग"
 
 #. i18n: file: conf/dlgperformancebase.ui:137
 #. i18n: ectx: property (text), widget (QRadioButton, lowRadio)
-#: rc.cpp:278
+#: rc.cpp:143
 msgid "&Low"
 msgstr "कम (&L)"
 
 #. i18n: file: conf/dlgperformancebase.ui:144
 #. i18n: ectx: property (text), widget (QRadioButton, normalRadio)
-#: rc.cpp:281
+#: rc.cpp:146
 msgid "&Normal (default)"
 msgstr "सामान्य (डिफाल्ट) (&N)"
 
 #. i18n: file: conf/dlgperformancebase.ui:151
 #. i18n: ectx: property (text), widget (QRadioButton, aggressiveRadio)
-#: rc.cpp:284
+#: rc.cpp:149
 msgid "&Aggressive"
 msgstr "आक्रामक (&A)"
+
+#. i18n: file: conf/dlgpresentationbase.ui:19
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:152
+msgid "Navigation"
+msgstr "नेविगेसन"
+
+#. i18n: file: conf/dlgpresentationbase.ui:39
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesAdvance)
+#: rc.cpp:155
+msgid "Advance every:"
+msgstr "हर एक के बाद आगू बढ़व:"
+
+#. i18n: file: conf/dlgpresentationbase.ui:49
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_SlidesAdvanceTime)
+#: rc.cpp:158
+msgid " sec."
+msgstr " सेक."
+
+#. i18n: file: conf/dlgpresentationbase.ui:61
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesLoop)
+#: rc.cpp:161
+msgid "Loop after last page"
+msgstr "आखरी पेज के बाद लूप करव"
+
+#. i18n: file: conf/dlgpresentationbase.ui:71
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#. i18n: file: conf/dlggeneralbase.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:164 rc.cpp:257
+msgid "Appearance"
+msgstr "रूप"
+
+#. i18n: file: conf/dlgpresentationbase.ui:79
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: rc.cpp:167
+msgid "Background color:"
+msgstr "पिछोत अंगना के रंगः"
+
+#. i18n: file: conf/dlgpresentationbase.ui:92
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:170
+msgid "Pencil color:"
+msgstr "पेंसिल रंग:"
+
+#. i18n: file: conf/dlgpresentationbase.ui:105
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: rc.cpp:173
+msgid "Mouse cursor:"
+msgstr "मुसुवा संकेतक:"
+
+#. i18n: file: conf/dlgpresentationbase.ui:116
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesCursor)
+#: rc.cpp:176
+msgid "Hidden After Delay"
+msgstr "थोड़ी देरी के बाद छिपें"
+
+#. i18n: file: conf/dlgpresentationbase.ui:121
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesCursor)
+#: rc.cpp:179
+msgid "Always Visible"
+msgstr "हमेसा दिखत"
+
+#. i18n: file: conf/dlgpresentationbase.ui:126
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesCursor)
+#: rc.cpp:182
+msgid "Always Hidden"
+msgstr "हमेसा छिपे रहें"
+
+#. i18n: file: conf/dlgpresentationbase.ui:136
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesShowProgress)
+#: rc.cpp:185
+msgid "Show &progress indicator"
+msgstr "प्रगति सूचक दिखाव (&p)"
+
+#. i18n: file: conf/dlgpresentationbase.ui:143
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesShowSummary)
+#: rc.cpp:188
+msgid "Show s&ummary page"
+msgstr "सारांस पेज देखाव (&u)"
+
+#. i18n: file: conf/dlgpresentationbase.ui:153
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_SlidesTransitionsEnabled)
+#: rc.cpp:191
+msgid "Enable transitions"
+msgstr "ट्रांजीसन सक्छम करव"
+
+#. i18n: file: conf/dlgpresentationbase.ui:165
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:194
+msgid "Default transition:"
+msgstr "डिफाल्ट ट्रांजीसन:"
+
+#. i18n: file: conf/dlgpresentationbase.ui:176
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:197
+msgid "Blinds Vertical"
+msgstr "खड़े मं ब्लाइंड्स"
+
+#. i18n: file: conf/dlgpresentationbase.ui:181
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:200
+msgid "Blinds Horizontal"
+msgstr "आड़े मं ब्लाइंड्स"
+
+#. i18n: file: conf/dlgpresentationbase.ui:186
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:203
+msgid "Box In"
+msgstr "बाक्स इन"
+
+#. i18n: file: conf/dlgpresentationbase.ui:191
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:206
+msgid "Box Out"
+msgstr "बाक्स आउट"
+
+#. i18n: file: conf/dlgpresentationbase.ui:196
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:209
+msgid "Dissolve"
+msgstr "डिजाल्व"
+
+#. i18n: file: conf/dlgpresentationbase.ui:201
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:212
+msgid "Glitter Down"
+msgstr "ग्लिटर नीचे"
+
+#. i18n: file: conf/dlgpresentationbase.ui:206
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:215
+msgid "Glitter Right"
+msgstr "ग्लिटर जेवनी"
+
+#. i18n: file: conf/dlgpresentationbase.ui:211
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:218
+msgid "Glitter Right-Down"
+msgstr "ग्लिटर नीचे, जेवनी"
+
+#. i18n: file: conf/dlgpresentationbase.ui:216
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:221
+msgid "Random Transition"
+msgstr "रेंडम ट्रांजीसन"
+
+#. i18n: file: conf/dlgpresentationbase.ui:221
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:224
+msgid "Replace"
+msgstr "बदलव"
+
+#. i18n: file: conf/dlgpresentationbase.ui:226
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:227
+msgid "Split Horizontal In"
+msgstr "आड़े मं भीतरी तरफ विभाजित करव"
+
+#. i18n: file: conf/dlgpresentationbase.ui:231
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:230
+msgid "Split Horizontal Out"
+msgstr "आड़े मं बाहिरी तरफ विभाजित करव"
+
+#. i18n: file: conf/dlgpresentationbase.ui:236
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:233
+msgid "Split Vertical In"
+msgstr "खड़े मं भीतरी तरफ विभाजित करव"
+
+#. i18n: file: conf/dlgpresentationbase.ui:241
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:236
+msgid "Split Vertical Out"
+msgstr "खड़े मं बाहिरी तरफ विभाजित करव"
+
+#. i18n: file: conf/dlgpresentationbase.ui:246
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:239
+msgid "Wipe Down"
+msgstr "नीचे के तरफ से मेटाव"
+
+#. i18n: file: conf/dlgpresentationbase.ui:251
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:242
+msgid "Wipe Right"
+msgstr "दायीं तरफ से मेटाव"
+
+#. i18n: file: conf/dlgpresentationbase.ui:256
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:245
+msgid "Wipe Left"
+msgstr "बायीं तरफ से मेटाव"
+
+#. i18n: file: conf/dlgpresentationbase.ui:261
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:248
+msgid "Wipe Up"
+msgstr "ऊपर के तरफ मेटाव"
+
+#. i18n: file: conf/dlgpresentationbase.ui:272
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: rc.cpp:251
+msgid "Placement"
+msgstr "निरधारित जगह"
+
+#. i18n: file: conf/dlgpresentationbase.ui:278
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:254
+msgid "Screen:"
+msgstr "स्क्रीन:"
+
+#. i18n: file: conf/dlggeneralbase.ui:40
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowScrollBars)
+#: rc.cpp:260
+msgid "Show scroll&bars"
+msgstr "स्क्राल पट्टी मन देखाव (&b)"
+
+#. i18n: file: conf/dlggeneralbase.ui:50
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SyncThumbnailsViewport)
+#: rc.cpp:263
+msgid "Link the &thumbnails with the page"
+msgstr "छोटेफोटू मन ल पेज से संकली करव (&t)"
+
+#. i18n: file: conf/dlggeneralbase.ui:57
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowOSD)
+#: rc.cpp:266
+msgid "Show &hints and info messages"
+msgstr "संकेत अउ जानकारी संदेस देखाव (&h)"
+
+#. i18n: file: conf/dlggeneralbase.ui:105
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:269
+msgid "Program Features"
+msgstr "प्रोग्राम विसेसता"
+
+#. i18n: file: conf/dlggeneralbase.ui:125
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ObeyDRM)
+#: rc.cpp:272
+msgid "&Obey DRM limitations"
+msgstr "डीआरएम सीमा मानें (&O)"
+
+#. i18n: file: conf/dlggeneralbase.ui:132
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_WatchFile)
+#: rc.cpp:275
+msgid "&Reload document on file change"
+msgstr "फाइल बदले मं कागद ल फिर से लोड करव (&R)"
+
+#. i18n: file: conf/dlggeneralbase.ui:139
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ChooseGenerators)
+#: rc.cpp:278
+msgid "Show backend selection dialog"
+msgstr "बैकएन्ड चयन गोठ देखाव"
+
+#. i18n: file: conf/dlggeneralbase.ui:187
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:281
+msgid "View Options"
+msgstr "विकल्प देखाव"
+
+#. i18n: file: conf/dlggeneralbase.ui:201
+#. i18n: ectx: property (text), widget (QLabel, columnLabel)
+#: rc.cpp:284
+msgid "Overview columns:"
+msgstr "ओवरव्यू खंभा:"
 
 #. i18n: file: ui/data/tools.xml:21
 #: rc.cpp:286
