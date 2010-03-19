@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-18 04:36+0100\n"
+"POT-Creation-Date: 2010-03-19 05:01+0100\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -81,6 +81,7 @@ msgstr "आखरी रंगः"
 
 #: themedesigner/mainwindow.cpp:169 imageplugins/decorate/bordertool.cpp:78
 #: imageplugins/decorate/bordertool.cpp:181
+#: utilities/queuemanager/basetools/decorate/border.cpp:48
 msgid "Add Border"
 msgstr "किनारा जोड़व"
 
@@ -216,7 +217,6 @@ msgstr "इहां आप मन वो पाठ भरव जऊन आप �
 
 #: imageplugins/decorate/inserttexttool.cpp:161
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:115
-#: utilities/queuemanager/basetools/decorate/border.cpp:115
 msgid "Here you can choose the font to be used."
 msgstr "इहां आप मन उपयोग मं आए वाले फोंट ल चुन सकथो."
 
@@ -270,7 +270,6 @@ msgstr "रंगः"
 
 #: imageplugins/decorate/inserttexttool.cpp:216
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:120
-#: utilities/queuemanager/basetools/decorate/border.cpp:120
 msgid "Set here the font color to use."
 msgstr "परयोग मं ले वाले फोंट रंग इहां सेट करव."
 
@@ -1627,7 +1626,7 @@ msgid "This value adjusts the brightness in image corners."
 msgstr ""
 
 #: imageplugins/enhance/antivignettingtool.cpp:86
-#: imageplugins/enhance/antivignettingtool.cpp:182
+#: imageplugins/enhance/antivignettingtool.cpp:180
 msgid "Vignetting Correction"
 msgstr "विगनेटिंग संसोधन"
 
@@ -10898,7 +10897,7 @@ msgstr "<nobr><b>सक्रिय फिल्टर:</b></nobr>"
 msgid "No active filter"
 msgstr "कोई सक्रिय छनइया नइ"
 
-#: digikam/albumtreeview.cpp:815
+#: digikam/albumtreeview.cpp:819
 msgid "Context menu"
 msgstr ""
 
@@ -12034,7 +12033,6 @@ msgstr ""
 
 #: showfoto/setup/setuptooltip.cpp:138
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:116
-#: utilities/queuemanager/basetools/decorate/border.cpp:116
 #, fuzzy
 msgid "Font:"
 msgstr "गननाः"
@@ -12323,75 +12321,69 @@ msgid "A tool to remove/add vignetting to photograph."
 msgstr ""
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:99
-#: utilities/queuemanager/basetools/decorate/border.cpp:99
 #, fuzzy
 msgid "Add Watermark"
 msgstr "कैमरा जोड़व..."
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:100
-#: utilities/queuemanager/basetools/decorate/border.cpp:100
 msgid "A tool to add a visible watermark"
 msgstr ""
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:110
-#: utilities/queuemanager/basetools/decorate/border.cpp:110
 #, fuzzy
 msgid "Enter your watermark string here."
 msgstr "अपन खोज मापदन्ड भरव"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:111
-#: utilities/queuemanager/basetools/decorate/border.cpp:111
 #, fuzzy
 msgid "Text:"
 msgstr "संरचना:"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:121
-#: utilities/queuemanager/basetools/decorate/border.cpp:121
 #, fuzzy
 msgid "Font Color:"
 msgstr "आखरी रंगः"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:125
-#: utilities/queuemanager/basetools/decorate/border.cpp:125
 #, fuzzy
 msgid "Top left"
 msgstr " ऊपरी डेरी:"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:126
-#: utilities/queuemanager/basetools/decorate/border.cpp:126
 #, fuzzy
 msgid "Top right"
 msgstr " ऊपरी जेवनी:"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:127
-#: utilities/queuemanager/basetools/decorate/border.cpp:127
 #, fuzzy
 msgid "Bottom left"
 msgstr " निचला डेरी:"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:128
-#: utilities/queuemanager/basetools/decorate/border.cpp:128
 #, fuzzy
 msgid "Bottom right"
 msgstr " निचला जेवनी:"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:129
-#: utilities/queuemanager/basetools/decorate/border.cpp:129
 #, fuzzy
 msgid "Corner:"
 msgstr "बदलव"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:136
-#: utilities/queuemanager/basetools/decorate/border.cpp:136
 #, fuzzy
 msgid "Enter the string length as a percent of the image width here."
 msgstr "फोटू आकार के प्रतिसत मं किनारा आकार इहां सेट करव."
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:137
-#: utilities/queuemanager/basetools/decorate/border.cpp:137
 #, fuzzy
 msgid "length (%):"
 msgstr "ऊँचाई (%):"
+
+#: utilities/queuemanager/basetools/decorate/border.cpp:49
+#, fuzzy
+#| msgid "A digiKam image plugin to add a border around an image."
+msgid "A tool to add a border around images"
+msgstr "डिजीकैम बर फोटू मं चारों तरफ किनारा जोड़व प्लगइन."
 
 #: utilities/queuemanager/basetools/transform/rotate.cpp:82
 #, fuzzy
@@ -20202,9 +20194,6 @@ msgstr ""
 
 #~ msgid "Add Border Around Photograph"
 #~ msgstr "फोटोग्राफ के चारों तरफ किनारा जोड़व"
-
-#~ msgid "A digiKam image plugin to add a border around an image."
-#~ msgstr "डिजीकैम बर फोटू मं चारों तरफ किनारा जोड़व प्लगइन."
 
 #~ msgid "A digiKam image plugin to process free image rotation."
 #~ msgstr "फोटू ल फ्री घुमाय बर डिजीकैम इमेज प्लगइन."
