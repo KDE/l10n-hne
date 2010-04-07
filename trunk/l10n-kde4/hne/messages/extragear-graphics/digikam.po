@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-06 04:51+0200\n"
+"POT-Creation-Date: 2010-04-07 04:59+0200\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -2439,7 +2439,6 @@ msgstr "<i>नइ मिलत</i>"
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:399
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:420
 #: libs/widgets/common/thumbbartooltip.cpp:206
-#: libs/template/countryselector.cpp:325
 #: utilities/imageeditor/editor/imagewindow.cpp:753
 #: utilities/imageeditor/canvas/undoaction.h:117
 #: utilities/cameragui/cameraiconviewtooltip.cpp:162
@@ -2500,19 +2499,19 @@ msgstr "<b>तारीक</b>:"
 msgid "See more info on the Internet"
 msgstr ""
 
-#: libs/imageproperties/captionedit.cpp:65
+#: libs/imageproperties/captionedit.cpp:67
 #, fuzzy
 #| msgid "Caption:"
 msgid "Captions: "
 msgstr "सीर्सक:"
 
-#: libs/imageproperties/captionedit.cpp:67
+#: libs/imageproperties/captionedit.cpp:69
 #, fuzzy
 #| msgid "Enter your text here!"
 msgid "Enter caption text here."
 msgstr "अपन पाठ इहां भरव!"
 
-#: libs/imageproperties/captionedit.cpp:71
+#: libs/imageproperties/captionedit.cpp:73
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter caption author name here."
@@ -2603,7 +2602,8 @@ msgstr "आईसीसी प्रोफाइल"
 #: libs/dialogs/libsinfodlg.cpp:99 libs/dialogs/libsinfodlg.cpp:104
 #: libs/dialogs/libsinfodlg.cpp:106 libs/dialogs/libsinfodlg.cpp:108
 #: libs/dialogs/libsinfodlg.cpp:110 libs/dialogs/libsinfodlg.cpp:112
-#: libs/dialogs/libsinfodlg.cpp:114
+#: libs/dialogs/libsinfodlg.cpp:114 digikam/componentsinfo.h:81
+#: digikam/dbstatdlg.cpp:106
 msgid "Yes"
 msgstr "हाँ"
 
@@ -2614,7 +2614,8 @@ msgstr "हाँ"
 #: libs/dialogs/libsinfodlg.cpp:99 libs/dialogs/libsinfodlg.cpp:104
 #: libs/dialogs/libsinfodlg.cpp:106 libs/dialogs/libsinfodlg.cpp:108
 #: libs/dialogs/libsinfodlg.cpp:110 libs/dialogs/libsinfodlg.cpp:112
-#: libs/dialogs/libsinfodlg.cpp:114
+#: libs/dialogs/libsinfodlg.cpp:114 digikam/componentsinfo.h:81
+#: digikam/dbstatdlg.cpp:106
 msgid "No"
 msgstr "नइ"
 
@@ -3194,76 +3195,68 @@ msgid ""
 "compression format when you use this setting.</b></p>"
 msgstr ""
 
-#: libs/dimg/filters/nr/nrsettings.cpp:123
+#: libs/dimg/filters/nr/nrsettings.cpp:108
 msgid ""
 "<b>Threshold</b>: Adjusts the threshold for denoising of the image in a "
 "range from 0.0 (none) to 10.0. The threshold is the value below which "
 "everything is considered noise."
 msgstr ""
 
-#: libs/dimg/filters/nr/nrsettings.cpp:127
+#: libs/dimg/filters/nr/nrsettings.cpp:112
 msgid ""
 "<b>Softness</b>: This adjusts the softness of the thresholding (soft as "
 "opposed to hard thresholding). The higher the softness the more noise "
 "remains in the image."
 msgstr ""
 
-#: libs/dimg/filters/nr/nrsettings.cpp:136
-#: libs/dimg/filters/nr/nrsettings.cpp:169
-#: libs/dimg/filters/nr/nrsettings.cpp:196
-#: libs/dimg/filters/nr/nrsettings.cpp:223
+#: libs/dimg/filters/nr/nrsettings.cpp:126
+#: libs/dimg/filters/nr/nrsettings.cpp:153
+#: libs/dimg/filters/nr/nrsettings.cpp:180
 #: libs/dimg/filters/sharp/sharpsettings.cpp:191
 #: utilities/fuzzysearch/fuzzysearchview.cpp:289
 msgid "Threshold:"
 msgstr "देहलीज:"
 
-#: libs/dimg/filters/nr/nrsettings.cpp:143
-#: libs/dimg/filters/nr/nrsettings.cpp:176
-#: libs/dimg/filters/nr/nrsettings.cpp:203
-#: libs/dimg/filters/nr/nrsettings.cpp:230
+#: libs/dimg/filters/nr/nrsettings.cpp:133
+#: libs/dimg/filters/nr/nrsettings.cpp:160
+#: libs/dimg/filters/nr/nrsettings.cpp:187
 #, fuzzy
 #| msgid "Smoothness:"
 msgid "Softness:"
 msgstr "स्मूथनेस:"
 
-#: libs/dimg/filters/nr/nrsettings.cpp:160
-#, fuzzy
-#| msgid "Advanced Settings"
-msgid "Advanced adjustments"
-msgstr "विस्तृत सेटिंग"
-
-#: libs/dimg/filters/nr/nrsettings.cpp:248
+#: libs/dimg/filters/nr/nrsettings.cpp:205
 #, fuzzy
 #| msgid "Luminance:"
 msgid "Luminance"
 msgstr "संदीप्ति:"
 
-#: libs/dimg/filters/nr/nrsettings.cpp:251
+#: libs/dimg/filters/nr/nrsettings.cpp:208
 msgid "Chrominance Red"
 msgstr ""
 
-#: libs/dimg/filters/nr/nrsettings.cpp:254
+#: libs/dimg/filters/nr/nrsettings.cpp:211
 msgid "Chrominance Blue"
 msgstr ""
 
-#: libs/dimg/filters/nr/nrsettings.cpp:428
+#: libs/dimg/filters/nr/nrsettings.cpp:330
 msgid "Photograph Noise Reduction Settings File to Load"
 msgstr "फोटोग्राफ मं सोर कम करे के सेटिंग फाइल जऊन ल लोड करना हे"
 
-#: libs/dimg/filters/nr/nrsettings.cpp:440
+#: libs/dimg/filters/nr/nrsettings.cpp:342
 #, kde-format
 msgid "\"%1\" is not a Photograph Noise Reduction settings text file."
 msgstr "\"%1\" ए फोटोग्राफ सोर कम करे के सेटिंग पाठ फाइल नइ हे."
 
-#: libs/dimg/filters/nr/nrsettings.cpp:465
+#: libs/dimg/filters/nr/nrsettings.cpp:361
 msgid "Cannot load settings from the Photograph Noise Reduction text file."
 msgstr "फोटोग्राफ सोर कम करे के सेटिंग पाठ फाइल से सेटिंग लोड नइ कर सकिस."
 
-#: libs/dimg/filters/nr/nrsettings.cpp:475
+#: libs/dimg/filters/nr/nrsettings.cpp:371
 msgid "Photograph Noise Reduction Settings File to Save"
 msgstr "फोटोग्राफ मं सोर कम करे के सेटिंग फाइल जऊन ल सहेजना हे"
 
-#: libs/dimg/filters/nr/nrsettings.cpp:498
+#: libs/dimg/filters/nr/nrsettings.cpp:390
 msgid "Cannot save settings to the Photograph Noise Reduction text file."
 msgstr "फोटोग्राफ सोर कम करे के सेटिंग पाठ फाइल मं सेटिंग सहेज नइ सकिस."
 
@@ -5428,41 +5421,41 @@ msgstr "अवयव"
 msgid "Info"
 msgstr "जानकारी "
 
-#: libs/dialogs/migrationdlg.cpp:86
+#: libs/dialogs/migrationdlg.cpp:136
 msgid "Migrate ->"
 msgstr ""
 
-#: libs/dialogs/migrationdlg.cpp:87 utilities/cameragui/cameraui.cpp:341
+#: libs/dialogs/migrationdlg.cpp:137 utilities/cameragui/cameraui.cpp:341
 msgid "Cancel"
 msgstr " खारिज करव"
 
-#: libs/dialogs/migrationdlg.cpp:90
+#: libs/dialogs/migrationdlg.cpp:140
 #, fuzzy
 #| msgid "Photographer Information"
 msgid "Progress Information"
 msgstr "फोटोग्राफर जानकारी"
 
-#: libs/dialogs/migrationdlg.cpp:99
+#: libs/dialogs/migrationdlg.cpp:149
 #, fuzzy
 #| msgid "Batch Process"
 msgid "Step Progress"
 msgstr "बैच प्रोसेस"
 
-#: libs/dialogs/migrationdlg.cpp:101
+#: libs/dialogs/migrationdlg.cpp:151
 msgid "Overall Progress"
 msgstr ""
 
-#: libs/dialogs/migrationdlg.cpp:180
+#: libs/dialogs/migrationdlg.cpp:236
 #, fuzzy
 #| msgid "Downloading file %1..."
 msgid "Database copied successfully."
 msgstr "फाइल %1 डाउनलोड करत हे..."
 
-#: libs/dialogs/migrationdlg.cpp:183
+#: libs/dialogs/migrationdlg.cpp:239
 msgid "Database conversion canceled."
 msgstr ""
 
-#: libs/dialogs/migrationdlg.cpp:192
+#: libs/dialogs/migrationdlg.cpp:248
 #, kde-format
 msgid "Step Progress (%1)"
 msgstr ""
@@ -6786,8 +6779,7 @@ msgstr "नइ मिलत "
 msgid "Size: %1"
 msgstr "आकारः %1"
 
-#: libs/widgets/common/thumbbartooltip.cpp:142
-#: libs/template/subjectwidget.cpp:190 digikam/tooltipfiller.cpp:294
+#: libs/widgets/common/thumbbartooltip.cpp:142 digikam/tooltipfiller.cpp:294
 #: utilities/cameragui/cameraiconviewtooltip.cpp:132
 msgid "Name:"
 msgstr "नाम:"
@@ -6920,11 +6912,11 @@ msgstr "अगला चीज मं जाव"
 msgid "Go to the last item"
 msgstr "आखरी चीज मं जाव"
 
-#: libs/widgets/common/databasewidget.cpp:68
+#: libs/widgets/common/databasewidget.cpp:88
 msgid "Database File Path"
 msgstr "डाटाबेस फाइल रस्ता"
 
-#: libs/widgets/common/databasewidget.cpp:70
+#: libs/widgets/common/databasewidget.cpp:90
 msgid ""
 "<p>The location where the database file will be stored on your system. There "
 "is one common database file for all root albums.<br/>Write access is "
@@ -6932,1301 +6924,79 @@ msgid ""
 "system, such as NFS, cannot be used here.</p><p></p>"
 msgstr ""
 
-#: libs/widgets/common/databasewidget.cpp:81
+#: libs/widgets/common/databasewidget.cpp:101
 msgid "Type"
 msgstr "किसिम"
 
-#: libs/widgets/common/databasewidget.cpp:83
+#: libs/widgets/common/databasewidget.cpp:103
 #, fuzzy
 #| msgid "Integral step:"
 msgid "Internal Server"
 msgstr "इंटीग्रल चरन:"
 
-#: libs/widgets/common/databasewidget.cpp:85
+#: libs/widgets/common/databasewidget.cpp:105
 #, fuzzy
 #| msgid "Image Name"
 msgid "Schema Name"
 msgstr "फोटू नाम"
 
-#: libs/widgets/common/databasewidget.cpp:87
+#: libs/widgets/common/databasewidget.cpp:107
 msgid "Thumbnails<br>Schema Name"
 msgstr ""
 
-#: libs/widgets/common/databasewidget.cpp:89
+#: libs/widgets/common/databasewidget.cpp:109
 #, fuzzy
 #| msgid "By Name"
 msgid "Host Name"
 msgstr "नाम से"
 
-#: libs/widgets/common/databasewidget.cpp:91
+#: libs/widgets/common/databasewidget.cpp:111
 #: utilities/setup/setupcamera.cpp:180
 msgid "Port"
 msgstr "पोर्ट"
 
-#: libs/widgets/common/databasewidget.cpp:95
+#: libs/widgets/common/databasewidget.cpp:115
 msgid "Database<br>Connection<br>Options"
 msgstr ""
 
-#: libs/widgets/common/databasewidget.cpp:98
+#: libs/widgets/common/databasewidget.cpp:118
 #, fuzzy
 #| msgid "Upper"
 msgid "User"
 msgstr "ऊपरी"
 
-#: libs/widgets/common/databasewidget.cpp:101
+#: libs/widgets/common/databasewidget.cpp:121
 msgid "Password"
 msgstr ""
 
-#: libs/widgets/common/databasewidget.cpp:105
+#: libs/widgets/common/databasewidget.cpp:125
 #, fuzzy
 #| msgid "By Collection"
 msgid "Check DB Connection"
 msgstr "संग्रह से"
 
-#: libs/widgets/common/databasewidget.cpp:181
+#: libs/widgets/common/databasewidget.cpp:201
 msgid ""
 "You do not seem to have write access to this database folder.\n"
 "Without this access, the caption and tag features will not work."
 msgstr ""
 
-#: libs/widgets/common/databasewidget.cpp:245
+#: libs/widgets/common/databasewidget.cpp:263
 #, fuzzy
 #| msgid "No Database Write Access"
 msgid "Database connection test successful."
 msgstr "डाटाबेस मं लिखे के पहुँच नइ हे"
 
-#: libs/widgets/common/databasewidget.cpp:245
-#: libs/widgets/common/databasewidget.cpp:250
+#: libs/widgets/common/databasewidget.cpp:263
+#: libs/widgets/common/databasewidget.cpp:268
 #, fuzzy
 #| msgid "Statistics"
 msgid "Database connection test"
 msgstr "आंकड़ा"
 
-#: libs/widgets/common/databasewidget.cpp:249
+#: libs/widgets/common/databasewidget.cpp:267
 #, kde-format
 msgid "Database connection test was not successful. <p>Error was: %1</p>"
-msgstr ""
-
-#: libs/template/subjectwidget.cpp:138
-msgid ""
-"Use standard <b><a href='http://www.iptc.org/NewsCodes'>reference code</a></"
-"b>"
-msgstr ""
-
-#: libs/template/subjectwidget.cpp:144
-msgid "Use custom definition"
-msgstr ""
-
-#: libs/template/subjectwidget.cpp:188
-msgid "I.P.R:"
-msgstr ""
-
-#: libs/template/subjectwidget.cpp:189
-msgid "Reference:"
-msgstr ""
-
-#: libs/template/subjectwidget.cpp:191
-#, fuzzy
-#| msgid "Makernote"
-msgid "Matter:"
-msgstr "मेकरनोट"
-
-#: libs/template/subjectwidget.cpp:192
-#, fuzzy
-#| msgid "Details"
-msgid "Detail:"
-msgstr "विवरन"
-
-#: libs/template/subjectwidget.cpp:203
-msgid "&Add"
-msgstr "जोड़व (&A)"
-
-#: libs/template/subjectwidget.cpp:204
-#, fuzzy
-#| msgid "Delete"
-msgid "&Delete"
-msgstr "मेटाव"
-
-#: libs/template/subjectwidget.cpp:205 utilities/setup/setupcategory.cpp:102
-msgid "&Replace"
-msgstr "बदलव (&R)"
-
-#: libs/template/countryselector.cpp:51
-msgid "Afghanistan"
-msgstr ""
-
-#: libs/template/countryselector.cpp:52
-msgid "Albania"
-msgstr ""
-
-#: libs/template/countryselector.cpp:53
-#, fuzzy
-#| msgid "Serial"
-msgid "Algeria"
-msgstr "सीरियल"
-
-#: libs/template/countryselector.cpp:54
-msgid "American Samoa"
-msgstr ""
-
-#: libs/template/countryselector.cpp:55
-msgid "Andorra"
-msgstr ""
-
-#: libs/template/countryselector.cpp:56 libs/template/countryselector.cpp:58
-#, fuzzy
-msgid "Angola"
-msgstr "सीमा:"
-
-#: libs/template/countryselector.cpp:57
-msgid "Anguilla"
-msgstr ""
-
-#: libs/template/countryselector.cpp:59
-msgid "Antarctica"
-msgstr ""
-
-#: libs/template/countryselector.cpp:60
-msgid "Antigua and Barbuda"
-msgstr ""
-
-#: libs/template/countryselector.cpp:61
-#, fuzzy
-#| msgid "Spanish translations"
-msgid "Argentina"
-msgstr "स्पैनी अनुवाद"
-
-#: libs/template/countryselector.cpp:62
-msgid "Armenia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:63
-msgid "Aruba"
-msgstr ""
-
-#: libs/template/countryselector.cpp:64
-#, fuzzy
-#| msgid "Neutral"
-msgid "Australia"
-msgstr "न्यूट्रल"
-
-#: libs/template/countryselector.cpp:65
-#, fuzzy
-#| msgid "Abstract"
-msgid "Austria"
-msgstr "सार"
-
-#: libs/template/countryselector.cpp:66
-msgid "Azerbaijan"
-msgstr ""
-
-#: libs/template/countryselector.cpp:67
-msgid "Bahamas"
-msgstr ""
-
-#: libs/template/countryselector.cpp:68
-#, fuzzy
-#| msgid "Brand:"
-msgid "Bahrain"
-msgstr "ब्रांड:"
-
-#: libs/template/countryselector.cpp:69
-msgid "Bangladesh"
-msgstr ""
-
-#: libs/template/countryselector.cpp:70
-msgid "Barbados"
-msgstr ""
-
-#: libs/template/countryselector.cpp:71
-msgid "Belarus"
-msgstr ""
-
-#: libs/template/countryselector.cpp:72
-#, fuzzy
-#| msgid "Medium"
-msgid "Belgium"
-msgstr "मध्यम"
-
-#: libs/template/countryselector.cpp:73
-#, fuzzy
-#| msgid "Resize"
-msgid "Belize"
-msgstr "आकार बदलव"
-
-#: libs/template/countryselector.cpp:74
-msgid "Benin"
-msgstr ""
-
-#: libs/template/countryselector.cpp:75
-msgid "Bermuda"
-msgstr ""
-
-#: libs/template/countryselector.cpp:76
-msgid "Bhutan"
-msgstr ""
-
-#: libs/template/countryselector.cpp:77
-msgid "Bolivia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:78
-msgid "Bosnia and Herzegovina"
-msgstr ""
-
-#: libs/template/countryselector.cpp:79
-msgid "Botswana"
-msgstr ""
-
-#: libs/template/countryselector.cpp:80
-msgid "Bouvet Island"
-msgstr ""
-
-#: libs/template/countryselector.cpp:81
-msgid "Brazil"
-msgstr ""
-
-#: libs/template/countryselector.cpp:82
-msgid "British Indian Ocean Territory"
-msgstr ""
-
-#: libs/template/countryselector.cpp:83
-msgid "British Virgin Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:84
-msgid "Brunei Darussalam"
-msgstr ""
-
-#: libs/template/countryselector.cpp:85
-msgid "Bulgaria"
-msgstr ""
-
-#: libs/template/countryselector.cpp:86
-msgid "Burkina Faso"
-msgstr ""
-
-#: libs/template/countryselector.cpp:87
-#, fuzzy
-#| msgid "Brand:"
-msgid "Burundi"
-msgstr "ब्रांड:"
-
-#: libs/template/countryselector.cpp:88
-#, fuzzy
-#| msgid "Camera Media"
-msgid "Cambodia"
-msgstr "कैमरा मीडिया"
-
-#: libs/template/countryselector.cpp:89
-#, fuzzy
-#| msgid "Camera"
-msgid "Cameroon"
-msgstr "कैमरा"
-
-#: libs/template/countryselector.cpp:90
-#, fuzzy
-#| msgid "Calendar"
-msgid "Canada"
-msgstr "कलेन्डर"
-
-#: libs/template/countryselector.cpp:91
-#, fuzzy
-#| msgid "&Copy Here"
-msgid "Cape Verde"
-msgstr "इहां नकल करव (&C)"
-
-#: libs/template/countryselector.cpp:92
-#, fuzzy
-#| msgid "Camera and Lens"
-msgid "Cayman Islands"
-msgstr "कैमरा अउ लेंस"
-
-#: libs/template/countryselector.cpp:93
-msgid "Central African Republic"
-msgstr ""
-
-#: libs/template/countryselector.cpp:94
-#, fuzzy
-#| msgid "Candle"
-msgid "Chad"
-msgstr "कैंडल"
-
-#: libs/template/countryselector.cpp:95
-#, fuzzy
-#| msgid "Children"
-msgid "Chile"
-msgstr "चिल्ड्रन"
-
-#: libs/template/countryselector.cpp:96
-#, fuzzy
-#| msgid "Children"
-msgid "China"
-msgstr "चिल्ड्रन"
-
-#: libs/template/countryselector.cpp:97
-msgid "Christmas Island "
-msgstr ""
-
-#: libs/template/countryselector.cpp:98
-msgid "Cocos Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:99
-msgid "Colombia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:100
-#, fuzzy
-#| msgid "Colors"
-msgid "Comoros"
-msgstr "रंग"
-
-#: libs/template/countryselector.cpp:101
-msgid "Zaire"
-msgstr ""
-
-#: libs/template/countryselector.cpp:102
-#, fuzzy
-#| msgid "Count:"
-msgid "Congo"
-msgstr "गननाः"
-
-#: libs/template/countryselector.cpp:103
-msgid "Cook Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:104
-#, fuzzy
-#| msgid "Mosaic"
-msgid "Costa Rica"
-msgstr "मोजाएक"
-
-#: libs/template/countryselector.cpp:105
-msgid "Ivory Coast"
-msgstr ""
-
-#: libs/template/countryselector.cpp:106
-#, fuzzy
-msgid "Cuba"
-msgstr "घन"
-
-#: libs/template/countryselector.cpp:107
-msgid "Cyprus"
-msgstr ""
-
-#: libs/template/countryselector.cpp:108
-msgid "Czech Republic"
-msgstr ""
-
-#: libs/template/countryselector.cpp:109
-msgid "Denmark"
-msgstr ""
-
-#: libs/template/countryselector.cpp:110
-#, fuzzy
-#| msgid "About"
-msgid "Djibouti"
-msgstr "के बारे में"
-
-#: libs/template/countryselector.cpp:111
-msgid "Dominica"
-msgstr ""
-
-#: libs/template/countryselector.cpp:112
-msgid "Dominican Republic"
-msgstr ""
-
-#: libs/template/countryselector.cpp:113
-msgid "Ecuador"
-msgstr ""
-
-#: libs/template/countryselector.cpp:114
-msgid "Egypt"
-msgstr ""
-
-#: libs/template/countryselector.cpp:115
-msgid "El Salvador"
-msgstr ""
-
-#: libs/template/countryselector.cpp:116
-msgid "Equatorial Guinea"
-msgstr ""
-
-#: libs/template/countryselector.cpp:117
-msgid "Eritrea"
-msgstr ""
-
-#: libs/template/countryselector.cpp:118
-msgid "Estonia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:119
-msgid "Ethiopia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:120
-msgid "Faeroe Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:121
-msgid "Falkland Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:122
-msgid "Fiji Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:123
-msgid "Finland"
-msgstr ""
-
-#: libs/template/countryselector.cpp:124
-#, fuzzy
-#| msgid "Cancel"
-msgid "France"
-msgstr " खारिज करव"
-
-#: libs/template/countryselector.cpp:125
-msgid "French Guiana"
-msgstr ""
-
-#: libs/template/countryselector.cpp:126
-msgid "French Polynesia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:127
-msgid "French Southern Territories"
-msgstr ""
-
-#: libs/template/countryselector.cpp:128
-msgid "Gabon"
-msgstr ""
-
-#: libs/template/countryselector.cpp:129
-#, fuzzy
-#| msgid "Gamma:"
-msgid "Gambia"
-msgstr "गामाः"
-
-#: libs/template/countryselector.cpp:130
-#, fuzzy
-#| msgid "Serial"
-msgid "Georgia"
-msgstr "सीरियल"
-
-#: libs/template/countryselector.cpp:131
-msgid "Germany"
-msgstr ""
-
-#: libs/template/countryselector.cpp:132
-msgid "Ghana"
-msgstr ""
-
-#: libs/template/countryselector.cpp:133
-msgid "Gibraltar"
-msgstr ""
-
-#: libs/template/countryselector.cpp:134
-#, fuzzy
-#| msgid "Green"
-msgid "Greece"
-msgstr "हरा"
-
-#: libs/template/countryselector.cpp:135
-#, fuzzy
-#| msgid "Green"
-msgid "Greenland"
-msgstr "हरा"
-
-#: libs/template/countryselector.cpp:136
-#, fuzzy
-#| msgid "Green"
-msgid "Grenada"
-msgstr "हरा"
-
-#: libs/template/countryselector.cpp:137
-msgid "Guadaloupe"
-msgstr ""
-
-#: libs/template/countryselector.cpp:138
-#, fuzzy
-#| msgid "Gamma:"
-msgid "Guam"
-msgstr "गामाः"
-
-#: libs/template/countryselector.cpp:139
-#, fuzzy
-#| msgid "Spanish translations"
-msgid "Guatemala"
-msgstr "स्पैनी अनुवाद"
-
-#: libs/template/countryselector.cpp:140
-#, fuzzy
-#| msgid "Linear"
-msgid "Guinea"
-msgstr "लीनियर"
-
-#: libs/template/countryselector.cpp:141
-msgid "Guinea-Bissau"
-msgstr ""
-
-#: libs/template/countryselector.cpp:142
-#, fuzzy
-#| msgid "Cyan"
-msgid "Guyana"
-msgstr "क्यान"
-
-#: libs/template/countryselector.cpp:143
-msgid "Haiti"
-msgstr ""
-
-#: libs/template/countryselector.cpp:144
-msgid "Heard and McDonald Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:145
-#, fuzzy
-msgid "Vatican"
-msgstr "खड़ा लहुटाव"
-
-#: libs/template/countryselector.cpp:146
-#, fuzzy
-#| msgid "Holidays"
-msgid "Honduras"
-msgstr "अवकास"
-
-#: libs/template/countryselector.cpp:147
-msgid "Hong Kong"
-msgstr ""
-
-#: libs/template/countryselector.cpp:148
-msgid "Croatia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:149
-msgid "Hungary"
-msgstr ""
-
-#: libs/template/countryselector.cpp:150
-msgid "Iceland"
-msgstr ""
-
-#: libs/template/countryselector.cpp:151
-msgid "India"
-msgstr ""
-
-#: libs/template/countryselector.cpp:152
-msgid "Indonesia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:153
-#, fuzzy
-#| msgid "Brand:"
-msgid "Iran"
-msgstr "ब्रांड:"
-
-#: libs/template/countryselector.cpp:154
-msgid "Iraq"
-msgstr ""
-
-#: libs/template/countryselector.cpp:155
-#, fuzzy
-#| msgid "Brand:"
-msgid "Ireland"
-msgstr "ब्रांड:"
-
-#: libs/template/countryselector.cpp:156
-#, fuzzy
-#| msgid "Travel"
-msgid "Israel"
-msgstr "यात्रा"
-
-#: libs/template/countryselector.cpp:157
-#, fuzzy
-#| msgid "today"
-msgid "Italy"
-msgstr "आज"
-
-#: libs/template/countryselector.cpp:158
-msgid "Jamaica"
-msgstr ""
-
-#: libs/template/countryselector.cpp:159
-msgid "Japan"
-msgstr ""
-
-#: libs/template/countryselector.cpp:160
-msgid "Jordan"
-msgstr ""
-
-#: libs/template/countryselector.cpp:161
-msgid "Kazakhstan"
-msgstr ""
-
-#: libs/template/countryselector.cpp:162
-msgid "Kenya"
-msgstr ""
-
-#: libs/template/countryselector.cpp:163
-msgid "Kiribati"
-msgstr ""
-
-#: libs/template/countryselector.cpp:164
-#, fuzzy
-#| msgid "More"
-msgid "North-Korea"
-msgstr "अधिक"
-
-#: libs/template/countryselector.cpp:165
-#, fuzzy
-#| msgid "More"
-msgid "South-Korea"
-msgstr "अधिक"
-
-#: libs/template/countryselector.cpp:166
-msgid "Kuwait"
-msgstr ""
-
-#: libs/template/countryselector.cpp:167
-msgid "Kyrgyz Republic"
-msgstr ""
-
-#: libs/template/countryselector.cpp:168
-#, fuzzy
-#| msgid "Lab"
-msgid "Lao"
-msgstr "लैब"
-
-#: libs/template/countryselector.cpp:169
-msgid "Latvia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:170
-msgid "Lebanon"
-msgstr ""
-
-#: libs/template/countryselector.cpp:171
-msgid "Lesotho"
-msgstr ""
-
-#: libs/template/countryselector.cpp:172
-#, fuzzy
-#| msgid "LibKdcraw"
-msgid "Liberia"
-msgstr "लिबकेडीक्रा"
-
-#: libs/template/countryselector.cpp:173
-msgid "Libyan Arab Jamahiriya"
-msgstr ""
-
-#: libs/template/countryselector.cpp:174
-#, fuzzy
-#| msgid "German translations"
-msgid "Liechtenstein"
-msgstr "जर्मन अनुवाद"
-
-#: libs/template/countryselector.cpp:175
-msgid "Lithuania"
-msgstr ""
-
-#: libs/template/countryselector.cpp:176
-msgid "Luxembourg"
-msgstr ""
-
-#: libs/template/countryselector.cpp:177
-msgid "Macao"
-msgstr ""
-
-#: libs/template/countryselector.cpp:178
-#, fuzzy
-#| msgid "Median:"
-msgid "Macedonia"
-msgstr "मेडियन:"
-
-#: libs/template/countryselector.cpp:179
-msgid "Madagascar"
-msgstr ""
-
-#: libs/template/countryselector.cpp:180
-msgid "Malawi"
-msgstr ""
-
-#: libs/template/countryselector.cpp:181
-msgid "Malaysia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:182
-msgid "Maldives"
-msgstr ""
-
-#: libs/template/countryselector.cpp:183
-#, fuzzy
-msgid "Mali"
-msgstr "मुख्य:"
-
-#: libs/template/countryselector.cpp:184
-#, fuzzy
-#| msgid "Magenta"
-msgid "Malta"
-msgstr "मजेंटा"
-
-#: libs/template/countryselector.cpp:185
-msgid "Marshall Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:186
-#, fuzzy
-#| msgid "Maintainer"
-msgid "Martinique"
-msgstr "मेंटेनर"
-
-#: libs/template/countryselector.cpp:187
-#, fuzzy
-#| msgid "Maintainer"
-msgid "Mauritania"
-msgstr "मेंटेनर"
-
-#: libs/template/countryselector.cpp:188
-msgid "Mauritius"
-msgstr ""
-
-#: libs/template/countryselector.cpp:189
-#, fuzzy
-#| msgid "Makernote"
-msgid "Mayotte"
-msgstr "मेकरनोट"
-
-#: libs/template/countryselector.cpp:190
-msgid "Mexico"
-msgstr ""
-
-#: libs/template/countryselector.cpp:191
-msgid "Micronesia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:192
-msgid "Moldova"
-msgstr ""
-
-#: libs/template/countryselector.cpp:193
-#, fuzzy
-#| msgid "Mosaic"
-msgid "Monaco"
-msgstr "मोजाएक"
-
-#: libs/template/countryselector.cpp:194
-msgid "Mongolia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:195
-#, fuzzy
-#| msgid "Contrast:"
-msgid "Montserrat"
-msgstr "कंट्रास्टः"
-
-#: libs/template/countryselector.cpp:196
-msgid "Morocco"
-msgstr ""
-
-#: libs/template/countryselector.cpp:197
-msgid "Mozambique"
-msgstr ""
-
-#: libs/template/countryselector.cpp:198
-#, fuzzy
-#| msgid "My Calendar"
-msgid "Myanmar"
-msgstr "मेरा कलेन्डर"
-
-#: libs/template/countryselector.cpp:199
-msgid "Namibia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:200
-#, fuzzy
-#| msgid "Nature"
-msgid "Nauru"
-msgstr "प्रकृति"
-
-#: libs/template/countryselector.cpp:201
-#, fuzzy
-#| msgid "Neutral"
-msgid "Nepal"
-msgstr "न्यूट्रल"
-
-#: libs/template/countryselector.cpp:202
-msgid "Netherlands Antilles"
-msgstr ""
-
-#: libs/template/countryselector.cpp:203
-#, fuzzy
-#| msgid "Dutch translations"
-msgid "Netherlands"
-msgstr "डच अनुवाद"
-
-#: libs/template/countryselector.cpp:204
-msgid "New Caledonia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:205
-msgid "New Zealand"
-msgstr ""
-
-#: libs/template/countryselector.cpp:206
-msgid "Nicaragua"
-msgstr ""
-
-#: libs/template/countryselector.cpp:207
-msgid "Niger"
-msgstr ""
-
-#: libs/template/countryselector.cpp:208
-#, fuzzy
-#| msgid "Serial"
-msgid "Nigeria"
-msgstr "सीरियल"
-
-#: libs/template/countryselector.cpp:209
-#, fuzzy
-#| msgid "Noise:"
-msgid "Niue"
-msgstr "सोर:"
-
-#: libs/template/countryselector.cpp:210
-msgid "Norfolk Island"
-msgstr ""
-
-#: libs/template/countryselector.cpp:211
-msgid "Northern Mariana Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:212
-#, fuzzy
-#| msgctxt "Rotation of an unrotated image"
-#| msgid "Normal"
-msgid "Norway"
-msgstr "सामान्य"
-
-#: libs/template/countryselector.cpp:213
-msgid "Oman"
-msgstr ""
-
-#: libs/template/countryselector.cpp:214
-msgid "Pakistan"
-msgstr ""
-
-#: libs/template/countryselector.cpp:215
-msgid "Palau"
-msgstr ""
-
-#: libs/template/countryselector.cpp:216
-msgid "Palestinian Territory"
-msgstr ""
-
-#: libs/template/countryselector.cpp:217
-msgid "Panama"
-msgstr ""
-
-#: libs/template/countryselector.cpp:218
-msgid "Papua New Guinea"
-msgstr ""
-
-#: libs/template/countryselector.cpp:219
-#, fuzzy
-#| msgid "Party"
-msgid "Paraguay"
-msgstr "पार्टी"
-
-#: libs/template/countryselector.cpp:220
-#, fuzzy
-#| msgid "Paper"
-msgid "Peru"
-msgstr "कागज"
-
-#: libs/template/countryselector.cpp:221
-msgid "Philippines"
-msgstr ""
-
-#: libs/template/countryselector.cpp:222
-msgid "Pitcairn Island"
-msgstr ""
-
-#: libs/template/countryselector.cpp:223
-#, fuzzy
-#| msgctxt "'Return pictures modified between...and..."
-#| msgid "and"
-msgid "Poland"
-msgstr "और"
-
-#: libs/template/countryselector.cpp:224
-#, fuzzy
-#| msgid "Perceptual"
-msgid "Portugal"
-msgstr "परपेचुअल"
-
-#: libs/template/countryselector.cpp:225
-msgid "Puerto Rico"
-msgstr ""
-
-#: libs/template/countryselector.cpp:226
-msgid "Qatar"
-msgstr ""
-
-#: libs/template/countryselector.cpp:227
-#, fuzzy
-msgid "Reunion"
-msgstr "सूर्य"
-
-#: libs/template/countryselector.cpp:228
-msgid "Romania"
-msgstr ""
-
-#: libs/template/countryselector.cpp:229
-msgid "Russian Federation"
-msgstr ""
-
-#: libs/template/countryselector.cpp:230
-#, fuzzy
-#| msgctxt "'Return pictures modified between...and..."
-#| msgid "and"
-msgid "Rwanda"
-msgstr "और"
-
-#: libs/template/countryselector.cpp:231
-msgid "St. Helena"
-msgstr ""
-
-#: libs/template/countryselector.cpp:232
-msgid "St. Kitts and Nevis"
-msgstr ""
-
-#: libs/template/countryselector.cpp:233
-msgid "St. Lucia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:234
-msgid "St. Pierre and Miquelon"
-msgstr ""
-
-#: libs/template/countryselector.cpp:235
-msgid "St. Vincent and the Grenadines"
-msgstr ""
-
-#: libs/template/countryselector.cpp:236
-msgid "Samoa"
-msgstr ""
-
-#: libs/template/countryselector.cpp:237
-msgid "San Marino"
-msgstr ""
-
-#: libs/template/countryselector.cpp:238
-msgid "Sao Tome and Principe"
-msgstr ""
-
-#: libs/template/countryselector.cpp:239
-msgid "Saudi Arabia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:240
-#, fuzzy
-#| msgid "General"
-msgid "Senegal"
-msgstr "सामान्य"
-
-#: libs/template/countryselector.cpp:241
-msgid "Serbia and Montenegro"
-msgstr ""
-
-#: libs/template/countryselector.cpp:242
-#, fuzzy
-#| msgid "Searches"
-msgid "Seychelles"
-msgstr "खोज"
-
-#: libs/template/countryselector.cpp:243
-#, fuzzy
-#| msgid "Sepia Tone"
-msgid "Sierra Leone"
-msgstr "सीपिया टोन"
-
-#: libs/template/countryselector.cpp:244
-#, fuzzy
-#| msgid "Angles (in degrees):"
-msgid "Singapore"
-msgstr "डिग्री मं कोन:"
-
-#: libs/template/countryselector.cpp:245
-msgid "Slovakia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:246
-msgid "Slovenia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:247
-msgid "Solomon Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:248
-#, fuzzy
-msgid "Somalia"
-msgstr "ठोस"
-
-#: libs/template/countryselector.cpp:249
-msgid "South Africa"
-msgstr ""
-
-#: libs/template/countryselector.cpp:250
-msgid "South Georgia and the South Sandwich Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:251
-#, fuzzy
-#| msgid "Scan"
-msgid "Spain"
-msgstr "स्केन"
-
-#: libs/template/countryselector.cpp:252
-msgid "Sri Lanka"
-msgstr ""
-
-#: libs/template/countryselector.cpp:253
-#, fuzzy
-#| msgid "Sun"
-msgid "Sudan"
-msgstr "सूर्य"
-
-#: libs/template/countryselector.cpp:254
-#, fuzzy
-#| msgid "Sunrise"
-msgid "Suriname"
-msgstr "सनराइज"
-
-#: libs/template/countryselector.cpp:255
-msgid "Svalbard & Jan Mayen Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:256
-msgid "Swaziland"
-msgstr ""
-
-#: libs/template/countryselector.cpp:257
-msgid "Sweden"
-msgstr ""
-
-#: libs/template/countryselector.cpp:258
-#, fuzzy
-#| msgid "German translations"
-msgid "Switzerland"
-msgstr "जर्मन अनुवाद"
-
-#: libs/template/countryselector.cpp:259
-msgid "Syrian Arab Republic"
-msgstr ""
-
-#: libs/template/countryselector.cpp:260
-msgid "Taiwan"
-msgstr ""
-
-#: libs/template/countryselector.cpp:261
-msgid "Tajikistan"
-msgstr ""
-
-#: libs/template/countryselector.cpp:262
-msgid "Tanzania"
-msgstr ""
-
-#: libs/template/countryselector.cpp:263
-msgid "Thailand"
-msgstr ""
-
-#: libs/template/countryselector.cpp:264
-msgid "Timor-Leste"
-msgstr ""
-
-#: libs/template/countryselector.cpp:265
-#, fuzzy
-#| msgid "Todo"
-msgid "Togo"
-msgstr "काम-सूची"
-
-#: libs/template/countryselector.cpp:266
-msgid "Tokelau Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:267
-#, fuzzy
-#| msgid "Tone"
-msgid "Tonga"
-msgstr "टोन"
-
-#: libs/template/countryselector.cpp:268
-msgid "Trinidad and Tobago"
-msgstr ""
-
-#: libs/template/countryselector.cpp:269
-msgid "Tunisia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:270
-#, fuzzy
-#| msgid "Try"
-msgid "Turkey"
-msgstr "कोसिस करव"
-
-#: libs/template/countryselector.cpp:271
-msgid "Turkmenistan"
-msgstr ""
-
-#: libs/template/countryselector.cpp:272
-msgid "Turks and Caicos Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:273
-msgid "Tuvalu"
-msgstr ""
-
-#: libs/template/countryselector.cpp:274
-msgid "US Virgin Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:275
-#, fuzzy
-#| msgctxt "'Return pictures modified between...and..."
-#| msgid "and"
-msgid "Uganda"
-msgstr "और"
-
-#: libs/template/countryselector.cpp:276
-msgid "Ukraine"
-msgstr ""
-
-#: libs/template/countryselector.cpp:277
-msgid "United Arab Emirates"
-msgstr ""
-
-#: libs/template/countryselector.cpp:278
-msgid "United Kingdom"
-msgstr ""
-
-#: libs/template/countryselector.cpp:279
-msgid "United States Minor Outlying Islands"
-msgstr ""
-
-#: libs/template/countryselector.cpp:280
-msgid "United States of America"
-msgstr ""
-
-#: libs/template/countryselector.cpp:281
-msgid "Uruguay, Eastern Republic of"
-msgstr ""
-
-#: libs/template/countryselector.cpp:282
-msgid "Uzbekistan"
-msgstr ""
-
-#: libs/template/countryselector.cpp:283
-#, fuzzy
-#| msgid "Manufacturer"
-msgid "Vanuatu"
-msgstr "उत्पादक"
-
-#: libs/template/countryselector.cpp:284
-msgid "Venezuela"
-msgstr ""
-
-#: libs/template/countryselector.cpp:285
-#, fuzzy
-#| msgid "File Name"
-msgid "Viet Nam"
-msgstr "फाइल नाम"
-
-#: libs/template/countryselector.cpp:286
-msgid "Wallis and Futuna Islands "
-msgstr ""
-
-#: libs/template/countryselector.cpp:287
-msgid "Western Sahara"
-msgstr ""
-
-#: libs/template/countryselector.cpp:288
-#, fuzzy
-#| msgid "Green"
-msgid "Yemen"
-msgstr "हरा"
-
-#: libs/template/countryselector.cpp:289
-msgid "Zambia"
-msgstr ""
-
-#: libs/template/countryselector.cpp:290
-msgid "Zimbabwe"
-msgstr ""
-
-#: libs/template/countryselector.cpp:294
-#, fuzzy
-#| msgid "Iterations:"
-msgid "United Nations"
-msgstr "पुनरूक्तियाँ:"
-
-#: libs/template/countryselector.cpp:295
-msgid "European Union"
-msgstr ""
-
-#: libs/template/countryselector.cpp:296
-#, fuzzy
-#| msgid "Color Space"
-msgid "Space"
-msgstr "रंग जगह"
-
-#: libs/template/countryselector.cpp:297
-#, fuzzy
-#| msgid "At least"
-msgid "At Sea"
-msgstr "कम से कम"
-
-#: libs/template/countryselector.cpp:298
-#, fuzzy
-#| msgid "On right"
-msgid "In Flight"
-msgstr "जेवनी बाजू मं"
-
-#: libs/template/countryselector.cpp:299
-msgid "England"
-msgstr ""
-
-#: libs/template/countryselector.cpp:300
-#, fuzzy
-#| msgid "Scan"
-msgid "Scotland"
-msgstr "स्केन"
-
-#: libs/template/countryselector.cpp:301
-msgid "Northern Ireland"
-msgstr ""
-
-#: libs/template/countryselector.cpp:302
-#, fuzzy
-#| msgid "Wall"
-msgid "Wales"
-msgstr "दीवार"
-
-#: libs/template/countryselector.cpp:303
-#, fuzzy
-#| msgid "Perspective"
-msgid "Palestine"
-msgstr "परिदृस्य"
-
-#: libs/template/countryselector.cpp:304
-#, fuzzy
-#| msgid "Gamma:"
-msgid "Gaza"
-msgstr "गामाः"
-
-#: libs/template/countryselector.cpp:305
-msgid "Jericho"
 msgstr ""
 
 #: libs/template/subjectedit.cpp:55
@@ -8316,745 +7086,19 @@ msgstr "मेटाव (&R)"
 msgid "Do not change"
 msgstr "कुछ नइ करव"
 
-#: libs/template/altlangstredit.cpp:69
-#, fuzzy
-#| msgid "Default"
-msgid "Default Language"
-msgstr "डिफाल्ट"
-
-#: libs/template/altlangstredit.cpp:73
-msgid "Afrikaans (South Africa)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:74
-msgid "Amharic (Ethiopia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:75
-msgid "Arabic (UAE)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:76
-msgid "Arabic (Bahrain)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:77
-msgid "Arabic (Algeria)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:78
-msgid "Arabic (Egypt)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:79
-msgid "Arabic (Iraq)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:80
-msgid "Arabic (Jordan)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:81
-msgid "Arabic (Kuwait)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:82
-msgid "Arabic (Lebanon)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:83
-msgid "Arabic (Libya)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:84
-msgid "Arabic (Morocco)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:85
-msgid "Arabic (Oman)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:86
-msgid "Arabic (Qatar)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:87
-msgid "Arabic (Saudi Arabia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:88
-msgid "Arabic (Syria)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:89
-msgid "Arabic (Tunisia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:90
-msgid "Arabic (Yemen)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:91
-msgid "Assamese (India)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:92
-msgid "Bashkir (Russia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:93
-#, fuzzy
-#| msgid "Gaussian Blur"
-msgid "Belarusian (Belarus)"
-msgstr "गासियन फीका"
-
-#: libs/template/altlangstredit.cpp:94
-msgid "Bulgarian (Bulgaria)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:95
-msgid "Bengali (India)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:96
-msgid "Tibetan (Bhutan)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:97
-msgid "Tibetan (PRC)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:98
-msgid "Breton (France)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:99
-msgid "Catalan (Andorra)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:100
-msgid "Catalan (Spain)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:101
-msgid "Catalan (France)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:102
-msgid "Corsican (France)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:103
-msgid "Czech (Czech Republic)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:104
-msgid "Welsh (United Kingdom)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:105
-msgid "Danish (Denmark)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:106
-msgid "German (Austria)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:107
-#, fuzzy
-#| msgid "German translations"
-msgid "German (Switzerland)"
-msgstr "जर्मन अनुवाद"
-
-#: libs/template/altlangstredit.cpp:108
-msgid "German (Germany)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:109
-#, fuzzy
-#| msgid "German translations"
-msgid "German (Liechtenstein)"
-msgstr "जर्मन अनुवाद"
-
-#: libs/template/altlangstredit.cpp:110
-msgid "German (Luxembourg)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:111
-msgid "Greek (Greece)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:112
-msgid "English (Australia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:113
-msgid "English (Belize)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:114
-msgid "English (Canada)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:115
-msgid "English (Caribbean)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:116
-msgid "English (United Kingdom)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:117
-msgid "English (Ireland)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:118
-msgid "English (India)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:119
-msgid "English (Jamaica)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:120
-msgid "English (Malaysia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:121
-msgid "English (New Zealand)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:122
-msgid "English (Philippines)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:123
-#, fuzzy
-#| msgid "Angles (in degrees):"
-msgid "English (Singapore)"
-msgstr "डिग्री मं कोन:"
-
-#: libs/template/altlangstredit.cpp:124
-msgid "English (Trinidad)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:125
-msgid "English (United States)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:126
-msgid "English (South Africa)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:127
-msgid "English (Zimbabwe)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:128
-#, fuzzy
-#| msgid "Spanish translations"
-msgid "Spanish (Argentina)"
-msgstr "स्पैनी अनुवाद"
-
-#: libs/template/altlangstredit.cpp:129
-msgid "Spanish (Bolivia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:130
-msgid "Spanish (Chile)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:131
-msgid "Spanish (Colombia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:132
-msgid "Spanish (Costa Rica)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:133
-msgid "Spanish (Dominican Republic)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:134
-msgid "Spanish (Ecuador)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:135
-#, fuzzy
-#| msgid "Spanish translations"
-msgid "Spanish (Spain)"
-msgstr "स्पैनी अनुवाद"
-
-#: libs/template/altlangstredit.cpp:136
-#, fuzzy
-#| msgid "Spanish translations"
-msgid "Spanish (Guatemala)"
-msgstr "स्पैनी अनुवाद"
-
-#: libs/template/altlangstredit.cpp:137
-msgid "Spanish (Honduras)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:138
-msgid "Spanish (Mexico)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:139
-msgid "Spanish (Nicaragua)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:140
-#, fuzzy
-#| msgid "Spanish translations"
-msgid "Spanish (Panama)"
-msgstr "स्पैनी अनुवाद"
-
-#: libs/template/altlangstredit.cpp:141
-msgid "Spanish (Peru)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:142
-msgid "Spanish (Puerto Rico)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:143
-msgid "Spanish (Paraguay)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:144
-msgid "Spanish (El Salvador)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:145
-msgid "Spanish (Uruguay)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:146
-msgid "Spanish (United States)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:147
-msgid "Spanish (Venezuela)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:148
-msgid "Estonian (Estonia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:149
-msgid "Basque (Basque Country)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:150
-msgid "Persian (Iran)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:151
-msgid "Finnish (Finland)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:152
-msgid "Faeroese (Faero Islands)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:153
-msgid "French (Belgium)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:154
-msgid "French (Canada)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:155
-msgid "French (Switzerland)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:156
-msgid "French (France)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:157
-msgid "French (Luxembourg)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:158
-msgid "French (Monaco)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:159
-msgid "Frisian (Netherlands)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:160
-msgid "Irish (Ireland)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:161
-msgid "Galician (Galicia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:162
-msgid "Gujarati (India)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:163
-msgid "Hebrew (Israel)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:164
-msgid "Hindi (India)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:165
-msgid "Croatian (Bosnia and Herzegovina, Latin)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:166
-msgid "Croatian (Croatia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:167
-msgid "Hungarian (Hungary)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:168
-msgid "Armenian (Armenia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:169
-msgid "(Indonesian)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:170
-msgid "Yi (PRC)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:171
-msgid "Icelandic (Iceland)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:172
-#, fuzzy
-#| msgid "Italian translations"
-msgid "Italian (Switzerland)"
-msgstr "इतालवी अनुवाद"
-
-#: libs/template/altlangstredit.cpp:173
-#, fuzzy
-#| msgid "Italian translations"
-msgid "Italian (Italy)"
-msgstr "इतालवी अनुवाद"
-
-#: libs/template/altlangstredit.cpp:174
-msgid "Japanese (Japan)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:175
-msgid "Georgian (Georgia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:176
-msgid "Kazakh (Kazakhstan)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:177
-msgid "Greenlandic (Greenland)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:178
-msgid "Khmer (Cambodia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:179
-msgid "Kannada (India)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:180
-#, fuzzy
-#| msgid "More"
-msgid "Korean (South Korea)"
-msgstr "अधिक"
-
-#: libs/template/altlangstredit.cpp:181
-msgid "Kyrgyz (Kyrgyzstan)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:182
-msgid "Luxembourgish (Luxembourg)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:183
-msgid "Lao (Lao PDR)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:184
-msgid "Lithuanian (Lithuania)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:185
-msgid "Latvian (Latvia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:186
-msgid "Maori (New Zealand)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:187
-msgid "Macedonian (Macedonia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:188
-msgid "Malayalam (India)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:189
-msgid "Mongolian (PRC)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:190
-msgid "Mongolian (Mongolia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:191
-msgid "Marathi (India)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:192
-msgid "Malay (Brunei Darussalam)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:193
-msgid "Malay (Malaysia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:194
-msgid "Maltese (Malta)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:195
-msgid "Norwegian Bokmål (Norway)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:196
-msgid "Nepali (Nepal)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:197
-msgid "Dutch (Belgium)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:198
-#, fuzzy
-#| msgid "Dutch translations"
-msgid "Dutch (Netherlands)"
-msgstr "डच अनुवाद"
-
-#: libs/template/altlangstredit.cpp:199
-msgid "Norwegian Nynorsk (Norway)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:200
-msgid "Sesotho sa Leboa (South Africa)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:201
-msgid "Occitan (France)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:202
-msgid "Oriya (India)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:203
-msgid "Punjabi (India)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:204
-msgid "Polish (Poland)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:205
-msgid "Pashto (Afghanistan)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:206
-msgid "Portuguese (Brazil)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:207
-msgid "Portuguese (Portugal)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:208
-msgid "Romansh (Switzerland)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:209
-msgid "Romanian (Romania)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:210
-msgid "Russian (Russia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:211
-msgid "Kinyarwanda (Rwanda)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:212
-msgid "Sanskrit (India)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:213
-msgid "Sami (Northern, Finland)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:214
-msgid "Sami (Northern, Norway)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:215
-msgid "Sami (Northern, Sweden)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:216
-msgid "Sinhala (Sri Lanka)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:217
-msgid "Slovak (Slovakia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:218
-msgid "Slovenian (Slovenia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:219
-msgid "Albanian (Albania)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:220
-msgid "Swedish (Finland)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:221
-msgid "Swedish (Sweden)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:222
-msgid "Swahili (Kenya)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:223
-msgid "Tamil (India)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:224
-msgid "Telugu (India)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:225
-msgid "Thai (Thailand)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:226
-msgid "Turkmen (Turkmenistan)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:227
-msgid "Setswana Tswana (South Africa)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:228
-msgid "Urdu (India)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:229
-msgid "Turkish (Turkey)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:230
-msgid "Tatar (Russia)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:231
-msgid "Uighur (PRC)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:232
-msgid "Ukrainian (Ukraine)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:233
-msgid "Urdu (Pakistan)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:234
-msgid "Vietnamese (Vietnam)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:235
-msgid "Wolof (Senegal)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:236
-msgid "isiXhosa Xhosa (South Africa)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:237
-msgid "Yoruba (Nigeria)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:238
-msgid "Chinese (PRC)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:239
-msgid "Chinese (Hong Kong SAR, PRC)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:240
-msgid "Chinese (Macao SAR)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:241
-msgid "Chinese (Singapore)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:242
-msgid "Chinese (Taiwan)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:243
-msgid "isiZulu Zulu (South Africa)"
-msgstr ""
-
-#: libs/template/altlangstredit.cpp:270
-#, fuzzy
-#| msgid "Remove this Tag"
-msgid "Remove entry for this language"
-msgstr "ये टैग मेटाव"
-
-#: libs/template/altlangstredit.cpp:275
-#, fuzzy
-#| msgid "Select the gamma input value here."
-msgid "Select item language here."
-msgstr "इहां गामा इनपुट मूल्य चुनव."
-
-#: libs/template/templatepanel.cpp:119
+#: libs/template/templatepanel.cpp:124
 #, fuzzy
 #| msgid "Author"
 msgid "Author Names:"
 msgstr "लेखक"
 
-#: libs/template/templatepanel.cpp:122
+#: libs/template/templatepanel.cpp:127
 msgid ""
 "Enter the names of the photograph's creators. Use semi-colons as separator "
 "here."
 msgstr ""
 
-#: libs/template/templatepanel.cpp:124
+#: libs/template/templatepanel.cpp:129
 msgid ""
 "<p>This field should contain the names of the persons who created the "
 "photograph. If it is not appropriate to add the name of the photographer "
@@ -9065,19 +7109,19 @@ msgid ""
 "characters.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:133
+#: libs/template/templatepanel.cpp:138
 #, fuzzy
 #| msgid "Author Title:"
 msgid "Authors' Positions:"
 msgstr "लेखक शीर्षक:"
 
-#: libs/template/templatepanel.cpp:136
+#: libs/template/templatepanel.cpp:141
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the job titles of the authors here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: libs/template/templatepanel.cpp:138
+#: libs/template/templatepanel.cpp:143
 msgid ""
 "<p>This field should contain the job titles of the authors. Examples might "
 "include titles such as: Staff Photographer, Freelance Photographer, or "
@@ -9086,17 +7130,17 @@ msgid ""
 "this field is limited to 32 ASCII characters.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:146 libs/template/templateviewer.cpp:160
+#: libs/template/templatepanel.cpp:151 libs/template/templateviewer.cpp:165
 msgid "Credit:"
 msgstr "क्रेडिट:"
 
-#: libs/template/templatepanel.cpp:149
+#: libs/template/templatepanel.cpp:154
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the photograph credit here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: libs/template/templatepanel.cpp:151
+#: libs/template/templatepanel.cpp:156
 msgid ""
 "<p>(synonymous to Provider): Use the Provider field to identify who is "
 "providing the photograph. This does not necessarily have to be the author. "
@@ -9108,17 +7152,17 @@ msgid ""
 "characters.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:161 libs/template/templateviewer.cpp:162
+#: libs/template/templatepanel.cpp:166 libs/template/templateviewer.cpp:167
 msgid "Copyright:"
 msgstr "कापीराइट:"
 
-#: libs/template/templatepanel.cpp:163
+#: libs/template/templatepanel.cpp:168
 msgid ""
 "Enter the copyright notice to identify the current owner(s) of the copyright "
 "here."
 msgstr ""
 
-#: libs/template/templatepanel.cpp:164
+#: libs/template/templatepanel.cpp:169
 msgid ""
 "<p>The Copyright Notice should contain any necessary copyright notice for "
 "claiming the intellectual property, and should identify the current owner(s) "
@@ -9144,16 +7188,16 @@ msgid ""
 "this field is limited to 128 ASCII characters.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:184
+#: libs/template/templatepanel.cpp:189
 msgid "Right Usage Terms:"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:186
+#: libs/template/templatepanel.cpp:191
 msgid ""
 "Enter the list of instructions on how a resource can be legally used here."
 msgstr ""
 
-#: libs/template/templatepanel.cpp:187
+#: libs/template/templatepanel.cpp:192
 msgid ""
 "<p>The Right Usage Terms field should be used to list instructions on how a "
 "resource can be legally used.<p>With XMP, you can include more than one "
@@ -9161,17 +7205,17 @@ msgid ""
 "not exist with IPTC.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:195 libs/template/templateviewer.cpp:166
+#: libs/template/templatepanel.cpp:200 libs/template/templateviewer.cpp:171
 msgid "Source:"
 msgstr "स्रोत:"
 
-#: libs/template/templatepanel.cpp:198
+#: libs/template/templatepanel.cpp:203
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the original owner of the photograph here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: libs/template/templatepanel.cpp:200
+#: libs/template/templatepanel.cpp:205
 msgid ""
 "<p>The Source field should be used to identify the original owner or "
 "copyright holder of the photograph. The value of this field should never be "
@@ -9185,243 +7229,243 @@ msgid ""
 "this field is limited to 32 ASCII characters.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:212 libs/template/templateviewer.cpp:168
+#: libs/template/templatepanel.cpp:217 libs/template/templateviewer.cpp:173
 #, fuzzy
 #| msgid "Iterations:"
 msgid "Instructions:"
 msgstr "पुनरूक्तियाँ:"
 
-#: libs/template/templatepanel.cpp:215
+#: libs/template/templatepanel.cpp:220
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the editorial notice here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: libs/template/templatepanel.cpp:217
+#: libs/template/templatepanel.cpp:222
 msgid ""
 "<p>The Instructions field should be used to list editorial instructions "
 "concerning the use of photograph.</p><p>With IPTC, this field is limited to "
 "256 ASCII characters.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:240 libs/template/templateviewer.cpp:181
+#: libs/template/templatepanel.cpp:245 libs/template/templateviewer.cpp:186
 #, fuzzy
 #| msgid "Lightness"
 msgid "Rights"
 msgstr "उजालापन"
 
-#: libs/template/templatepanel.cpp:247 libs/template/templatepanel.cpp:316
-#: libs/template/templateviewer.cpp:192 libs/template/templateviewer.cpp:214
+#: libs/template/templatepanel.cpp:252 libs/template/templatepanel.cpp:321
+#: libs/template/templateviewer.cpp:197 libs/template/templateviewer.cpp:219
 #, fuzzy
 #| msgid "Count:"
 msgid "Country:"
 msgstr "गननाः"
 
-#: libs/template/templatepanel.cpp:250
+#: libs/template/templatepanel.cpp:255
 msgid "<p>Select here the country where the photograph was taken.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:255 libs/template/templateviewer.cpp:190
-#: libs/template/templateviewer.cpp:212
+#: libs/template/templatepanel.cpp:260 libs/template/templateviewer.cpp:195
+#: libs/template/templateviewer.cpp:217
 #, fuzzy
 #| msgid "Preview"
 msgid "Province/State:"
 msgstr "प्रिव्यू"
 
-#: libs/template/templatepanel.cpp:258
+#: libs/template/templatepanel.cpp:263
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the province or state of contents here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: libs/template/templatepanel.cpp:260
+#: libs/template/templatepanel.cpp:265
 msgid ""
 "<p>This field should contain the province or state where the photograph was "
 "taken.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:265 libs/template/templatepanel.cpp:306
-#: libs/template/templateviewer.cpp:186 libs/template/templateviewer.cpp:210
+#: libs/template/templatepanel.cpp:270 libs/template/templatepanel.cpp:311
+#: libs/template/templateviewer.cpp:191 libs/template/templateviewer.cpp:215
 #, fuzzy
 #| msgid "Capacity:"
 msgid "City:"
 msgstr "छमता:"
 
-#: libs/template/templatepanel.cpp:268
+#: libs/template/templatepanel.cpp:273
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the city of contents here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: libs/template/templatepanel.cpp:270
+#: libs/template/templatepanel.cpp:275
 msgid ""
 "<p>This field should contain the name of the city where the photograph was "
 "taken.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:275 libs/template/templateviewer.cpp:188
+#: libs/template/templatepanel.cpp:280 libs/template/templateviewer.cpp:193
 #, fuzzy
 #| msgid "Geolocation"
 msgid "Sublocation:"
 msgstr "जियोलोकेसन"
 
-#: libs/template/templatepanel.cpp:278
+#: libs/template/templatepanel.cpp:283
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the city sublocation of contents here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: libs/template/templatepanel.cpp:280
+#: libs/template/templatepanel.cpp:285
 msgid ""
 "<p>This field should contain the sublocation of the city where the "
 "photograph was taken.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:299 libs/template/templateviewer.cpp:201
+#: libs/template/templatepanel.cpp:304 libs/template/templateviewer.cpp:206
 #, fuzzy
 #| msgid "Geolocation"
 msgid "Location"
 msgstr "जियोलोकेसन"
 
-#: libs/template/templatepanel.cpp:309
+#: libs/template/templatepanel.cpp:314
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the city name of the lead author here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: libs/template/templatepanel.cpp:311
+#: libs/template/templatepanel.cpp:316
 msgid ""
 "<p>This field should contain the city name where the lead author lives.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:319
+#: libs/template/templatepanel.cpp:324
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the country name of the lead author here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: libs/template/templatepanel.cpp:321
+#: libs/template/templatepanel.cpp:326
 msgid ""
 "<p>This field should contain the country name where the lead author lives.</"
 "p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:326 libs/template/templateviewer.cpp:206
+#: libs/template/templatepanel.cpp:331 libs/template/templateviewer.cpp:211
 msgid "Address:"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:329
+#: libs/template/templatepanel.cpp:334
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the address of the lead author here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: libs/template/templatepanel.cpp:331
+#: libs/template/templatepanel.cpp:336
 msgid ""
 "<p>This field should contain the address where the lead author lives.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:336 libs/template/templateviewer.cpp:208
+#: libs/template/templatepanel.cpp:341 libs/template/templateviewer.cpp:213
 msgid "Postal Code:"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:339
+#: libs/template/templatepanel.cpp:344
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the postal code of the lead author here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: libs/template/templatepanel.cpp:341
+#: libs/template/templatepanel.cpp:346
 msgid ""
 "<p>This field should contain the postal code where the lead author lives.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:346
+#: libs/template/templatepanel.cpp:351
 #, fuzzy
 #| msgid "Preview"
 msgid "Province:"
 msgstr "प्रिव्यू"
 
-#: libs/template/templatepanel.cpp:349
+#: libs/template/templatepanel.cpp:354
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the province of the lead author here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: libs/template/templatepanel.cpp:351
+#: libs/template/templatepanel.cpp:356
 msgid ""
 "<p>This field should contain the province where the lead author lives.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:356 libs/template/templateviewer.cpp:218
+#: libs/template/templatepanel.cpp:361 libs/template/templateviewer.cpp:223
 msgid "Email:"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:359
+#: libs/template/templatepanel.cpp:364
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the email of the lead author here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: libs/template/templatepanel.cpp:361
+#: libs/template/templatepanel.cpp:366
 msgid "<p>This field should contain the email of the lead author.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:366 libs/template/templateviewer.cpp:216
+#: libs/template/templatepanel.cpp:371 libs/template/templateviewer.cpp:221
 #, fuzzy
 #| msgid "Power:"
 msgid "Phone:"
 msgstr "पावर:"
 
-#: libs/template/templatepanel.cpp:369
+#: libs/template/templatepanel.cpp:374
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the phone number of the lead author here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: libs/template/templatepanel.cpp:371
+#: libs/template/templatepanel.cpp:376
 msgid "<p>This field should contain the phone number of the lead author.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:376 libs/template/templateviewer.cpp:220
+#: libs/template/templatepanel.cpp:381 libs/template/templateviewer.cpp:225
 msgid "URL:"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:379
+#: libs/template/templatepanel.cpp:384
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the web site URL of the lead author here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: libs/template/templatepanel.cpp:381
+#: libs/template/templatepanel.cpp:386
 msgid "<p>This field should contain the web site URL of the lead author.</p>"
 msgstr ""
 
-#: libs/template/templatepanel.cpp:408 libs/template/templateviewer.cpp:233
+#: libs/template/templatepanel.cpp:413 libs/template/templateviewer.cpp:238
 #, fuzzy
 #| msgid "Contrast:"
 msgid "Contact"
 msgstr "कंट्रास्टः"
 
-#: libs/template/templatepanel.cpp:422 libs/template/templateviewer.cpp:241
+#: libs/template/templatepanel.cpp:427 libs/template/templateviewer.cpp:246
 #, fuzzy
 #| msgid "Subject Distance"
 msgid "Subjects"
 msgstr "विसय दूरी"
 
-#: libs/template/templateviewer.cpp:156
+#: libs/template/templateviewer.cpp:161
 #, fuzzy
 #| msgid "Name:"
 msgid "Names:"
 msgstr "नाम:"
 
-#: libs/template/templateviewer.cpp:158
+#: libs/template/templateviewer.cpp:163
 #, fuzzy
 #| msgid "Erosion:"
 msgid "Position:"
 msgstr "इरोजन:"
 
-#: libs/template/templateviewer.cpp:164
+#: libs/template/templateviewer.cpp:169
 #, fuzzy
 #| msgid "Tags:"
 msgid "Usages:"
@@ -9526,13 +7570,25 @@ msgstr "ये टैग मेटाव"
 msgid "Go to this Tag"
 msgstr "ये टैग मेटाव"
 
-#: digikam/componentsinfo.h:68
+#: digikam/componentsinfo.h:69
 msgid "LibGphoto2"
 msgstr "लिब-जी-फोटो२"
 
-#: digikam/componentsinfo.h:71
+#: digikam/componentsinfo.h:72
 msgid "LibKipi"
 msgstr "लिबकिपि"
+
+#: digikam/componentsinfo.h:77 digikam/dbstatdlg.cpp:101
+#, fuzzy
+#| msgid "Create Database Folder?"
+msgid "Database backend"
+msgstr "डाटाबेस फोल्डर बनाव ?"
+
+#: digikam/componentsinfo.h:82 digikam/dbstatdlg.cpp:107
+#, fuzzy
+#| msgid "Integral step:"
+msgid "Database internal server"
+msgstr "इंटीग्रल चरन:"
 
 #: digikam/albumicongroupitem.cpp:117 digikam/imagecategorydrawer.cpp:251
 #, fuzzy, kde-format
@@ -9542,11 +7598,11 @@ msgid_plural "Album Date: %2 %3 %4 - %1 Items"
 msgstr[0] "%1 %2 - 1 वस्तु"
 msgstr[1] "%1 %2 - %3 वस्तु"
 
-#: digikam/leftsidebarwidgets.cpp:163 digikam/dbstatdlg.cpp:86
+#: digikam/leftsidebarwidgets.cpp:163 digikam/dbstatdlg.cpp:89
 msgid "Albums"
 msgstr "एल्बम"
 
-#: digikam/leftsidebarwidgets.cpp:253 digikam/dbstatdlg.cpp:91
+#: digikam/leftsidebarwidgets.cpp:253 digikam/dbstatdlg.cpp:93
 #: utilities/searchwindow/searchfields.cpp:112
 #: utilities/searchwindow/searchfields.cpp:119
 #: utilities/searchwindow/searchfields.cpp:130
@@ -9633,7 +7689,7 @@ msgstr "फजी खोज"
 msgid "Map Searches"
 msgstr "मैप खोज"
 
-#: digikam/dbstatdlg.cpp:57 digikam/digikamapp.cpp:1094
+#: digikam/dbstatdlg.cpp:58 digikam/digikamapp.cpp:1094
 #: utilities/queuemanager/queuemgrwindow.cpp:454
 #: utilities/lighttable/lighttablewindow.cpp:601
 #: utilities/imageeditor/editor/imagewindow.cpp:484
@@ -9643,19 +7699,19 @@ msgstr "मैप खोज"
 msgid "Database Statistics"
 msgstr "आंकड़ा"
 
-#: digikam/dbstatdlg.cpp:58
+#: digikam/dbstatdlg.cpp:59
 #, fuzzy
 #| msgid "File Format"
 msgid "Format"
 msgstr "फाइल फार्मेट"
 
-#: digikam/dbstatdlg.cpp:58
+#: digikam/dbstatdlg.cpp:59
 #, fuzzy
 #| msgid "Count:"
 msgid "Count"
 msgstr "गननाः"
 
-#: digikam/dbstatdlg.cpp:74
+#: digikam/dbstatdlg.cpp:76
 #, fuzzy
 msgid "Total Items"
 msgstr "चीज"
@@ -10252,13 +8308,13 @@ msgctxt "default theme name"
 msgid "Default"
 msgstr "डिफाल्ट"
 
-#: digikam/databaseguierrorhandler.cpp:156
+#: digikam/databaseguierrorhandler.cpp:203
 msgid ""
 "Error while opening the database.\n"
-"Digikam will try to automatically reconnect to the database."
+"digiKam will try to automatically reconnect to the database."
 msgstr ""
 
-#: digikam/databaseguierrorhandler.cpp:181
+#: digikam/databaseguierrorhandler.cpp:229
 #, kde-format
 msgid ""
 "<p><b>A database error occurred.</b></p>Details:\n"
@@ -16069,14 +14125,18 @@ msgid ""
 msgstr ""
 
 #: utilities/setup/setupcategory.cpp:100 utilities/setup/setupcamera.cpp:195
-#: utilities/setup/setuptemplate.cpp:121
+#: utilities/setup/setuptemplate.cpp:126
 msgid "&Add..."
 msgstr "जोड़व...(&A)"
 
 #: utilities/setup/setupcategory.cpp:101 utilities/setup/setupcamera.cpp:197
-#: utilities/setup/setuptemplate.cpp:123
+#: utilities/setup/setuptemplate.cpp:128
 msgid "&Remove"
 msgstr "मेटाव (&R)"
+
+#: utilities/setup/setupcategory.cpp:102
+msgid "&Replace"
+msgstr "बदलव (&R)"
 
 #: utilities/setup/setupcollections.cpp:96
 msgid "Root Album Folders"
@@ -17229,25 +15289,25 @@ msgstr "फोटू सीर्सक ल स्क्रीन के नी�
 msgid "Show the digiKam image rating at the bottom of the screen."
 msgstr "डिजिकेम फोटू दरजा ल स्क्रीन के नीचे देखाव."
 
-#: utilities/setup/setuptemplate.cpp:89
+#: utilities/setup/setuptemplate.cpp:94
 #, fuzzy
 #| msgid "&Replace"
 msgid "Template Title:"
 msgstr "बदलव (&R)"
 
-#: utilities/setup/setuptemplate.cpp:92
+#: utilities/setup/setuptemplate.cpp:97
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Enter the metadata template title here."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: utilities/setup/setuptemplate.cpp:93
+#: utilities/setup/setuptemplate.cpp:98
 msgid ""
 "<p>Enter the metadata template title here. This title will be used to "
 "identify a template in your collection.</p>"
 msgstr ""
 
-#: utilities/setup/setuptemplate.cpp:103
+#: utilities/setup/setuptemplate.cpp:108
 msgid ""
 "<b>Note: These information are used to set <b><a href='http://en.wikipedia."
 "org/wiki/Extensible_Metadata_Platform'>XMP</a></b> and <b><a href='http://en."
@@ -17257,19 +15317,19 @@ msgid ""
 "tag sizes are limited. Use contextual help for details.</b>"
 msgstr ""
 
-#: utilities/setup/setuptemplate.cpp:125
+#: utilities/setup/setuptemplate.cpp:130
 #, fuzzy
 #| msgid "&Replace"
 msgid "&Replace..."
 msgstr "बदलव (&R)"
 
-#: utilities/setup/setuptemplate.cpp:235 utilities/setup/setuptemplate.cpp:264
+#: utilities/setup/setuptemplate.cpp:240 utilities/setup/setuptemplate.cpp:269
 #, fuzzy
 #| msgid "Select the text rotation to use here."
 msgid "Cannot register new metadata template without title."
 msgstr "पाठ घुमाव जऊन परयोग मं ले हे ओला इहां चुनव"
 
-#: utilities/setup/setuptemplate.cpp:241
+#: utilities/setup/setuptemplate.cpp:246
 #, fuzzy, kde-format
 #| msgid "Tag name already exists"
 msgid "A metadata template named '%1' already exists."
@@ -18983,6 +17043,542 @@ msgid ""
 "\n"
 "Build date: %1"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Advanced Settings"
+#~ msgid "Advanced adjustments"
+#~ msgstr "विस्तृत सेटिंग"
+
+#, fuzzy
+#~| msgid "Makernote"
+#~ msgid "Matter:"
+#~ msgstr "मेकरनोट"
+
+#, fuzzy
+#~| msgid "Details"
+#~ msgid "Detail:"
+#~ msgstr "विवरन"
+
+#~ msgid "&Add"
+#~ msgstr "जोड़व (&A)"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "&Delete"
+#~ msgstr "मेटाव"
+
+#, fuzzy
+#~| msgid "Serial"
+#~ msgid "Algeria"
+#~ msgstr "सीरियल"
+
+#, fuzzy
+#~ msgid "Angola"
+#~ msgstr "सीमा:"
+
+#, fuzzy
+#~| msgid "Spanish translations"
+#~ msgid "Argentina"
+#~ msgstr "स्पैनी अनुवाद"
+
+#, fuzzy
+#~| msgid "Neutral"
+#~ msgid "Australia"
+#~ msgstr "न्यूट्रल"
+
+#, fuzzy
+#~| msgid "Abstract"
+#~ msgid "Austria"
+#~ msgstr "सार"
+
+#, fuzzy
+#~| msgid "Brand:"
+#~ msgid "Bahrain"
+#~ msgstr "ब्रांड:"
+
+#, fuzzy
+#~| msgid "Medium"
+#~ msgid "Belgium"
+#~ msgstr "मध्यम"
+
+#, fuzzy
+#~| msgid "Resize"
+#~ msgid "Belize"
+#~ msgstr "आकार बदलव"
+
+#, fuzzy
+#~| msgid "Brand:"
+#~ msgid "Burundi"
+#~ msgstr "ब्रांड:"
+
+#, fuzzy
+#~| msgid "Camera Media"
+#~ msgid "Cambodia"
+#~ msgstr "कैमरा मीडिया"
+
+#, fuzzy
+#~| msgid "Camera"
+#~ msgid "Cameroon"
+#~ msgstr "कैमरा"
+
+#, fuzzy
+#~| msgid "Calendar"
+#~ msgid "Canada"
+#~ msgstr "कलेन्डर"
+
+#, fuzzy
+#~| msgid "&Copy Here"
+#~ msgid "Cape Verde"
+#~ msgstr "इहां नकल करव (&C)"
+
+#, fuzzy
+#~| msgid "Camera and Lens"
+#~ msgid "Cayman Islands"
+#~ msgstr "कैमरा अउ लेंस"
+
+#, fuzzy
+#~| msgid "Candle"
+#~ msgid "Chad"
+#~ msgstr "कैंडल"
+
+#, fuzzy
+#~| msgid "Children"
+#~ msgid "Chile"
+#~ msgstr "चिल्ड्रन"
+
+#, fuzzy
+#~| msgid "Children"
+#~ msgid "China"
+#~ msgstr "चिल्ड्रन"
+
+#, fuzzy
+#~| msgid "Colors"
+#~ msgid "Comoros"
+#~ msgstr "रंग"
+
+#, fuzzy
+#~| msgid "Count:"
+#~ msgid "Congo"
+#~ msgstr "गननाः"
+
+#, fuzzy
+#~| msgid "Mosaic"
+#~ msgid "Costa Rica"
+#~ msgstr "मोजाएक"
+
+#, fuzzy
+#~ msgid "Cuba"
+#~ msgstr "घन"
+
+#, fuzzy
+#~| msgid "About"
+#~ msgid "Djibouti"
+#~ msgstr "के बारे में"
+
+#, fuzzy
+#~| msgid "Cancel"
+#~ msgid "France"
+#~ msgstr " खारिज करव"
+
+#, fuzzy
+#~| msgid "Gamma:"
+#~ msgid "Gambia"
+#~ msgstr "गामाः"
+
+#, fuzzy
+#~| msgid "Serial"
+#~ msgid "Georgia"
+#~ msgstr "सीरियल"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "Greece"
+#~ msgstr "हरा"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "Greenland"
+#~ msgstr "हरा"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "Grenada"
+#~ msgstr "हरा"
+
+#, fuzzy
+#~| msgid "Gamma:"
+#~ msgid "Guam"
+#~ msgstr "गामाः"
+
+#, fuzzy
+#~| msgid "Spanish translations"
+#~ msgid "Guatemala"
+#~ msgstr "स्पैनी अनुवाद"
+
+#, fuzzy
+#~| msgid "Linear"
+#~ msgid "Guinea"
+#~ msgstr "लीनियर"
+
+#, fuzzy
+#~| msgid "Cyan"
+#~ msgid "Guyana"
+#~ msgstr "क्यान"
+
+#, fuzzy
+#~ msgid "Vatican"
+#~ msgstr "खड़ा लहुटाव"
+
+#, fuzzy
+#~| msgid "Holidays"
+#~ msgid "Honduras"
+#~ msgstr "अवकास"
+
+#, fuzzy
+#~| msgid "Brand:"
+#~ msgid "Iran"
+#~ msgstr "ब्रांड:"
+
+#, fuzzy
+#~| msgid "Brand:"
+#~ msgid "Ireland"
+#~ msgstr "ब्रांड:"
+
+#, fuzzy
+#~| msgid "Travel"
+#~ msgid "Israel"
+#~ msgstr "यात्रा"
+
+#, fuzzy
+#~| msgid "today"
+#~ msgid "Italy"
+#~ msgstr "आज"
+
+#, fuzzy
+#~| msgid "More"
+#~ msgid "North-Korea"
+#~ msgstr "अधिक"
+
+#, fuzzy
+#~| msgid "More"
+#~ msgid "South-Korea"
+#~ msgstr "अधिक"
+
+#, fuzzy
+#~| msgid "Lab"
+#~ msgid "Lao"
+#~ msgstr "लैब"
+
+#, fuzzy
+#~| msgid "LibKdcraw"
+#~ msgid "Liberia"
+#~ msgstr "लिबकेडीक्रा"
+
+#, fuzzy
+#~| msgid "German translations"
+#~ msgid "Liechtenstein"
+#~ msgstr "जर्मन अनुवाद"
+
+#, fuzzy
+#~| msgid "Median:"
+#~ msgid "Macedonia"
+#~ msgstr "मेडियन:"
+
+#, fuzzy
+#~ msgid "Mali"
+#~ msgstr "मुख्य:"
+
+#, fuzzy
+#~| msgid "Magenta"
+#~ msgid "Malta"
+#~ msgstr "मजेंटा"
+
+#, fuzzy
+#~| msgid "Maintainer"
+#~ msgid "Martinique"
+#~ msgstr "मेंटेनर"
+
+#, fuzzy
+#~| msgid "Maintainer"
+#~ msgid "Mauritania"
+#~ msgstr "मेंटेनर"
+
+#, fuzzy
+#~| msgid "Makernote"
+#~ msgid "Mayotte"
+#~ msgstr "मेकरनोट"
+
+#, fuzzy
+#~| msgid "Mosaic"
+#~ msgid "Monaco"
+#~ msgstr "मोजाएक"
+
+#, fuzzy
+#~| msgid "Contrast:"
+#~ msgid "Montserrat"
+#~ msgstr "कंट्रास्टः"
+
+#, fuzzy
+#~| msgid "My Calendar"
+#~ msgid "Myanmar"
+#~ msgstr "मेरा कलेन्डर"
+
+#, fuzzy
+#~| msgid "Nature"
+#~ msgid "Nauru"
+#~ msgstr "प्रकृति"
+
+#, fuzzy
+#~| msgid "Neutral"
+#~ msgid "Nepal"
+#~ msgstr "न्यूट्रल"
+
+#, fuzzy
+#~| msgid "Dutch translations"
+#~ msgid "Netherlands"
+#~ msgstr "डच अनुवाद"
+
+#, fuzzy
+#~| msgid "Serial"
+#~ msgid "Nigeria"
+#~ msgstr "सीरियल"
+
+#, fuzzy
+#~| msgid "Noise:"
+#~ msgid "Niue"
+#~ msgstr "सोर:"
+
+#, fuzzy
+#~| msgctxt "Rotation of an unrotated image"
+#~| msgid "Normal"
+#~ msgid "Norway"
+#~ msgstr "सामान्य"
+
+#, fuzzy
+#~| msgid "Party"
+#~ msgid "Paraguay"
+#~ msgstr "पार्टी"
+
+#, fuzzy
+#~| msgid "Paper"
+#~ msgid "Peru"
+#~ msgstr "कागज"
+
+#, fuzzy
+#~| msgctxt "'Return pictures modified between...and..."
+#~| msgid "and"
+#~ msgid "Poland"
+#~ msgstr "और"
+
+#, fuzzy
+#~| msgid "Perceptual"
+#~ msgid "Portugal"
+#~ msgstr "परपेचुअल"
+
+#, fuzzy
+#~ msgid "Reunion"
+#~ msgstr "सूर्य"
+
+#, fuzzy
+#~| msgctxt "'Return pictures modified between...and..."
+#~| msgid "and"
+#~ msgid "Rwanda"
+#~ msgstr "और"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "Senegal"
+#~ msgstr "सामान्य"
+
+#, fuzzy
+#~| msgid "Searches"
+#~ msgid "Seychelles"
+#~ msgstr "खोज"
+
+#, fuzzy
+#~| msgid "Sepia Tone"
+#~ msgid "Sierra Leone"
+#~ msgstr "सीपिया टोन"
+
+#, fuzzy
+#~| msgid "Angles (in degrees):"
+#~ msgid "Singapore"
+#~ msgstr "डिग्री मं कोन:"
+
+#, fuzzy
+#~ msgid "Somalia"
+#~ msgstr "ठोस"
+
+#, fuzzy
+#~| msgid "Scan"
+#~ msgid "Spain"
+#~ msgstr "स्केन"
+
+#, fuzzy
+#~| msgid "Sun"
+#~ msgid "Sudan"
+#~ msgstr "सूर्य"
+
+#, fuzzy
+#~| msgid "Sunrise"
+#~ msgid "Suriname"
+#~ msgstr "सनराइज"
+
+#, fuzzy
+#~| msgid "German translations"
+#~ msgid "Switzerland"
+#~ msgstr "जर्मन अनुवाद"
+
+#, fuzzy
+#~| msgid "Todo"
+#~ msgid "Togo"
+#~ msgstr "काम-सूची"
+
+#, fuzzy
+#~| msgid "Tone"
+#~ msgid "Tonga"
+#~ msgstr "टोन"
+
+#, fuzzy
+#~| msgid "Try"
+#~ msgid "Turkey"
+#~ msgstr "कोसिस करव"
+
+#, fuzzy
+#~| msgctxt "'Return pictures modified between...and..."
+#~| msgid "and"
+#~ msgid "Uganda"
+#~ msgstr "और"
+
+#, fuzzy
+#~| msgid "Manufacturer"
+#~ msgid "Vanuatu"
+#~ msgstr "उत्पादक"
+
+#, fuzzy
+#~| msgid "File Name"
+#~ msgid "Viet Nam"
+#~ msgstr "फाइल नाम"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "Yemen"
+#~ msgstr "हरा"
+
+#, fuzzy
+#~| msgid "Iterations:"
+#~ msgid "United Nations"
+#~ msgstr "पुनरूक्तियाँ:"
+
+#, fuzzy
+#~| msgid "Color Space"
+#~ msgid "Space"
+#~ msgstr "रंग जगह"
+
+#, fuzzy
+#~| msgid "At least"
+#~ msgid "At Sea"
+#~ msgstr "कम से कम"
+
+#, fuzzy
+#~| msgid "On right"
+#~ msgid "In Flight"
+#~ msgstr "जेवनी बाजू मं"
+
+#, fuzzy
+#~| msgid "Scan"
+#~ msgid "Scotland"
+#~ msgstr "स्केन"
+
+#, fuzzy
+#~| msgid "Wall"
+#~ msgid "Wales"
+#~ msgstr "दीवार"
+
+#, fuzzy
+#~| msgid "Perspective"
+#~ msgid "Palestine"
+#~ msgstr "परिदृस्य"
+
+#, fuzzy
+#~| msgid "Gamma:"
+#~ msgid "Gaza"
+#~ msgstr "गामाः"
+
+#, fuzzy
+#~| msgid "Default"
+#~ msgid "Default Language"
+#~ msgstr "डिफाल्ट"
+
+#, fuzzy
+#~| msgid "Gaussian Blur"
+#~ msgid "Belarusian (Belarus)"
+#~ msgstr "गासियन फीका"
+
+#, fuzzy
+#~| msgid "German translations"
+#~ msgid "German (Switzerland)"
+#~ msgstr "जर्मन अनुवाद"
+
+#, fuzzy
+#~| msgid "German translations"
+#~ msgid "German (Liechtenstein)"
+#~ msgstr "जर्मन अनुवाद"
+
+#, fuzzy
+#~| msgid "Angles (in degrees):"
+#~ msgid "English (Singapore)"
+#~ msgstr "डिग्री मं कोन:"
+
+#, fuzzy
+#~| msgid "Spanish translations"
+#~ msgid "Spanish (Argentina)"
+#~ msgstr "स्पैनी अनुवाद"
+
+#, fuzzy
+#~| msgid "Spanish translations"
+#~ msgid "Spanish (Spain)"
+#~ msgstr "स्पैनी अनुवाद"
+
+#, fuzzy
+#~| msgid "Spanish translations"
+#~ msgid "Spanish (Guatemala)"
+#~ msgstr "स्पैनी अनुवाद"
+
+#, fuzzy
+#~| msgid "Spanish translations"
+#~ msgid "Spanish (Panama)"
+#~ msgstr "स्पैनी अनुवाद"
+
+#, fuzzy
+#~| msgid "Italian translations"
+#~ msgid "Italian (Switzerland)"
+#~ msgstr "इतालवी अनुवाद"
+
+#, fuzzy
+#~| msgid "Italian translations"
+#~ msgid "Italian (Italy)"
+#~ msgstr "इतालवी अनुवाद"
+
+#, fuzzy
+#~| msgid "More"
+#~ msgid "Korean (South Korea)"
+#~ msgstr "अधिक"
+
+#, fuzzy
+#~| msgid "Dutch translations"
+#~ msgid "Dutch (Netherlands)"
+#~ msgstr "डच अनुवाद"
+
+#, fuzzy
+#~| msgid "Remove this Tag"
+#~ msgid "Remove entry for this language"
+#~ msgstr "ये टैग मेटाव"
+
+#, fuzzy
+#~| msgid "Select the gamma input value here."
+#~ msgid "Select item language here."
+#~ msgstr "इहां गामा इनपुट मूल्य चुनव."
 
 #, fuzzy
 #~| msgid "Marble"
