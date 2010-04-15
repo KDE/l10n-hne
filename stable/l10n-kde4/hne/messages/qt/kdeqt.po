@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeqt\n"
 "Report-Msgid-Bugs-To: qt-bugs@trolltech.com\n"
-"POT-Creation-Date: 2010-04-11 01:30+0200\n"
+"POT-Creation-Date: 2010-04-15 01:28+0200\n"
 "PO-Revision-Date: 2009-03-02 21:02+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1579,25 +1579,6 @@ msgctxt "QIODevice"
 msgid "No space left on device"
 msgstr "उपकरन तिर कोनो जगह नइ बचिस"
 
-#: corelib/io/qprocess.cpp:856 corelib/io/qprocess.cpp:908
-#: corelib/io/qprocess_win.cpp:573 corelib/io/qprocess_win.cpp:623
-#, fuzzy
-msgid "Error reading from process"
-msgstr "एसएसएल सत्र %1 बनाए मं गलती"
-
-#: corelib/io/qprocess.cpp:955 corelib/io/qprocess.cpp:1781
-#: corelib/io/qprocess_win.cpp:763
-msgid "Error writing to process"
-msgstr ""
-
-#: corelib/io/qprocess.cpp:1025
-msgid "Process crashed"
-msgstr ""
-
-#: corelib/io/qprocess.cpp:1984
-msgid "No program defined"
-msgstr ""
-
 #: corelib/io/qprocess_unix.cpp:406 corelib/io/qprocess_win.cpp:137
 msgid "Could not open input redirection for reading"
 msgstr ""
@@ -1623,6 +1604,17 @@ msgstr "साकेट आपरेसन टाइम आउट होइस"
 #: corelib/io/qprocess_win.cpp:403
 #, qt-format
 msgid "Process failed to start: %1"
+msgstr ""
+
+#: corelib/io/qprocess_win.cpp:573 corelib/io/qprocess_win.cpp:623
+#: corelib/io/qprocess.cpp:866 corelib/io/qprocess.cpp:918
+#, fuzzy
+msgid "Error reading from process"
+msgstr "एसएसएल सत्र %1 बनाए मं गलती"
+
+#: corelib/io/qprocess_win.cpp:763 corelib/io/qprocess.cpp:965
+#: corelib/io/qprocess.cpp:1791
+msgid "Error writing to process"
 msgstr ""
 
 #: corelib/io/qfile.cpp:703 corelib/io/qfile.cpp:858
@@ -1664,6 +1656,14 @@ msgstr ""
 #: network/socket/qnativesocketengine.cpp:272 network/ssl/qsslerror.cpp:285
 msgid "Unknown error"
 msgstr "अग्यात गलती"
+
+#: corelib/io/qprocess.cpp:1035
+msgid "Process crashed"
+msgstr ""
+
+#: corelib/io/qprocess.cpp:1994
+msgid "No program defined"
+msgstr ""
 
 #: corelib/kernel/qsharedmemory.cpp:223
 #, qt-format
@@ -3859,10 +3859,6 @@ msgstr "+"
 msgid "F%1"
 msgstr "F%1"
 
-#: gui/kernel/qwidget.cpp:5757
-msgid "*"
-msgstr "*"
-
 #: gui/kernel/qsoftkeymanager.cpp:63
 msgid "Ok"
 msgstr ""
@@ -3877,6 +3873,10 @@ msgstr "चुनव"
 #: gui/kernel/qsoftkeymanager_s60.cpp:318
 msgid "Exit"
 msgstr "बाहिर"
+
+#: gui/kernel/qwidget.cpp:5761
+msgid "*"
+msgstr "*"
 
 #: gui/painting/qprinterinfo_unix.cpp:110
 msgid "locally connected"
@@ -4108,97 +4108,97 @@ msgctxt "QFontDatabase"
 msgid "N'Ko"
 msgstr "नइ"
 
-#: gui/text/qtextcontrol.cpp:2027 gui/widgets/qlineedit.cpp:2072
+#: gui/text/qtextcontrol.cpp:2029 gui/widgets/qlineedit.cpp:2072
 #: qt3support/text/q3textedit.cpp:5429
 msgid "&Undo"
 msgstr "पहिली जइसन (&U)"
 
-#: gui/text/qtextcontrol.cpp:2029 gui/widgets/qlineedit.cpp:2076
+#: gui/text/qtextcontrol.cpp:2031 gui/widgets/qlineedit.cpp:2076
 #: qt3support/text/q3textedit.cpp:5430
 msgid "&Redo"
 msgstr "दुहराव (&R)"
 
-#: gui/text/qtextcontrol.cpp:2033 gui/widgets/qlineedit.cpp:2085
+#: gui/text/qtextcontrol.cpp:2035 gui/widgets/qlineedit.cpp:2085
 #: qt3support/text/q3textedit.cpp:5435
 msgid "Cu&t"
 msgstr "काटव (&t)"
 
-#: gui/text/qtextcontrol.cpp:2038 gui/widgets/qlineedit.cpp:2091
+#: gui/text/qtextcontrol.cpp:2040 gui/widgets/qlineedit.cpp:2091
 #: qt3support/text/q3textedit.cpp:5436
 msgid "&Copy"
 msgstr "नकल (&C)"
 
-#: gui/text/qtextcontrol.cpp:2045
+#: gui/text/qtextcontrol.cpp:2047
 msgid "Copy &Link Location"
 msgstr "संकली जगह नकल करव (&L)"
 
-#: gui/text/qtextcontrol.cpp:2051 gui/widgets/qlineedit.cpp:2097
+#: gui/text/qtextcontrol.cpp:2053 gui/widgets/qlineedit.cpp:2097
 #: qt3support/text/q3textedit.cpp:5438
 msgid "&Paste"
 msgstr "चिपकाव (&P)"
 
-#: gui/text/qtextcontrol.cpp:2054 gui/widgets/qlineedit.cpp:2104
+#: gui/text/qtextcontrol.cpp:2056 gui/widgets/qlineedit.cpp:2104
 #: qt3support/sql/q3datatable.cpp:793
 #: scripttools/debugging/qscriptbreakpointswidget.cpp:304
 msgid "Delete"
 msgstr "मेटाव"
 
-#: gui/text/qtextcontrol.cpp:2061 gui/widgets/qlineedit.cpp:2112
+#: gui/text/qtextcontrol.cpp:2063 gui/widgets/qlineedit.cpp:2112
 #: qt3support/text/q3textedit.cpp:5445 qt3support/text/q3textedit.cpp:5447
 msgid "Select All"
 msgstr "सब्बो चुनव"
 
-#: gui/text/qtextcontrol.cpp:2960
+#: gui/text/qtextcontrol.cpp:2962
 msgctxt "QUnicodeControlCharacterMenu"
 msgid "LRM Left-to-right mark"
 msgstr "एलआरएम डेरी से जेवनी चिनहा"
 
-#: gui/text/qtextcontrol.cpp:2961
+#: gui/text/qtextcontrol.cpp:2963
 msgctxt "QUnicodeControlCharacterMenu"
 msgid "RLM Right-to-left mark"
 msgstr "आरएलएम जेवनी से डेरी चिनहा"
 
-#: gui/text/qtextcontrol.cpp:2962
+#: gui/text/qtextcontrol.cpp:2964
 msgctxt "QUnicodeControlCharacterMenu"
 msgid "ZWJ Zero width joiner"
 msgstr "ZWJ सून्य चौड़ाई जोड़क"
 
-#: gui/text/qtextcontrol.cpp:2963
+#: gui/text/qtextcontrol.cpp:2965
 msgctxt "QUnicodeControlCharacterMenu"
 msgid "ZWNJ Zero width non-joiner"
 msgstr "ZWNJ सून्य चौड़ाई नान-जाइनर"
 
-#: gui/text/qtextcontrol.cpp:2964
+#: gui/text/qtextcontrol.cpp:2966
 msgctxt "QUnicodeControlCharacterMenu"
 msgid "ZWSP Zero width space"
 msgstr "ZWSP सून्य चौड़ाई जगह"
 
-#: gui/text/qtextcontrol.cpp:2965
+#: gui/text/qtextcontrol.cpp:2967
 msgctxt "QUnicodeControlCharacterMenu"
 msgid "LRE Start of left-to-right embedding"
 msgstr "LRE डेरी से जेवनी एम्बेडिंग के सुरू"
 
-#: gui/text/qtextcontrol.cpp:2966
+#: gui/text/qtextcontrol.cpp:2968
 msgctxt "QUnicodeControlCharacterMenu"
 msgid "RLE Start of right-to-left embedding"
 msgstr "RLE जेवनी से डेरी एम्बेडिंग के सुरू"
 
-#: gui/text/qtextcontrol.cpp:2967
+#: gui/text/qtextcontrol.cpp:2969
 msgctxt "QUnicodeControlCharacterMenu"
 msgid "LRO Start of left-to-right override"
 msgstr "LRO डेरी से जेवनी ओवरराइड के सुरू"
 
-#: gui/text/qtextcontrol.cpp:2968
+#: gui/text/qtextcontrol.cpp:2970
 msgctxt "QUnicodeControlCharacterMenu"
 msgid "RLO Start of right-to-left override"
 msgstr "RLO जेवनी से डेरी ओवरराइड के सुरू"
 
-#: gui/text/qtextcontrol.cpp:2969
+#: gui/text/qtextcontrol.cpp:2971
 msgctxt "QUnicodeControlCharacterMenu"
 msgid "PDF Pop directional formatting"
 msgstr "PDF पाप डायरेक्सनल फारमेटिंग"
 
-#: gui/text/qtextcontrol.cpp:2975
+#: gui/text/qtextcontrol.cpp:2977
 msgid "Insert Unicode control character"
 msgstr "यूनिकोड कंट्रोल अक्छर भरव"
 
@@ -4412,10 +4412,10 @@ msgstr "बहाल करव"
 
 #: gui/widgets/qmdisubwindow.cpp:352 gui/widgets/qworkspace.cpp:113
 #: plugins/accessible/compat/q3complexwidgets.cpp:256
-#: plugins/accessible/widgets/complexwidgets.cpp:1836
 #: plugins/accessible/widgets/qaccessiblemenu.cpp:157
 #: plugins/accessible/widgets/qaccessiblemenu.cpp:382
 #: plugins/accessible/widgets/qaccessiblewidgets.cpp:1239
+#: plugins/accessible/widgets/complexwidgets.cpp:1837
 #: scripttools/debugging/qscriptbreakpointswidget.cpp:81
 #: scripttools/debugging/qscriptdebuggercodefinderwidget.cpp:141
 msgid "Close"
@@ -4883,17 +4883,12 @@ msgctxt "QSocks5SocketEngine"
 msgid "Network operation timed out"
 msgstr "नेटवर्क आपरेसन टाइमआउट"
 
-#: network/socket/qtcpserver.cpp:282 network/socket/qabstractsocket.cpp:549
+#: network/socket/qabstractsocket.cpp:549
 #: network/socket/qabstractsocket.cpp:1358
-#: network/socket/qabstractsocket.cpp:1578
+#: network/socket/qabstractsocket.cpp:1578 network/socket/qtcpserver.cpp:292
 #, fuzzy
 msgid "Operation on socket is not supported"
 msgstr "आपरेसन %1 मं समर्थित नइ हे"
-
-#: network/socket/qudpsocket.cpp:179
-#, fuzzy
-msgid "This platform does not support IPv6"
-msgstr "ये प्लेटफारम मं आईपीवी६ के समर्थन नइ हे"
 
 #: network/socket/qabstractsocket.cpp:1781
 msgid "Socket operation timed out"
@@ -4902,6 +4897,11 @@ msgstr "साकेट आपरेसन टाइम आउट होइस"
 #: network/socket/qabstractsocket.cpp:2161
 msgid "Socket is not connected"
 msgstr "साकेट कनेक्टेड नइ हे"
+
+#: network/socket/qudpsocket.cpp:189
+#, fuzzy
+msgid "This platform does not support IPv6"
+msgstr "ये प्लेटफारम मं आईपीवी६ के समर्थन नइ हे"
 
 #: network/ssl/qsslerror.cpp:216
 msgid "The issuer certificate could not be found"
@@ -5098,21 +5098,13 @@ msgstr "विंडो बन्द करथे "
 msgid "Displays the name of the window and contains controls to manipulate it"
 msgstr "विंडो के नाम प्रदर्सित करथे  अउ एला बदले के नियंत्रक हे"
 
-#: plugins/accessible/widgets/complexwidgets.cpp:1510
-msgid "Scroll Left"
-msgstr "डेरी स्क्राल करव"
-
-#: plugins/accessible/widgets/complexwidgets.cpp:1510
-msgid "Scroll Right"
-msgstr "जेवनी स्क्राल करव"
-
-#: plugins/accessible/widgets/complexwidgets.cpp:1771
-#: plugins/accessible/widgets/complexwidgets.cpp:1836
 #: plugins/accessible/widgets/qaccessiblemenu.cpp:158
 #: plugins/accessible/widgets/qaccessiblemenu.cpp:383
 #: plugins/accessible/widgets/simplewidgets.cpp:110
 #: plugins/accessible/widgets/simplewidgets.cpp:434
 #: plugins/accessible/widgets/simplewidgets.cpp:442
+#: plugins/accessible/widgets/complexwidgets.cpp:1772
+#: plugins/accessible/widgets/complexwidgets.cpp:1837
 msgid "Open"
 msgstr "खोलव"
 
@@ -5184,6 +5176,14 @@ msgstr "टागल करव"
 #: plugins/accessible/widgets/simplewidgets.cpp:438
 msgid "Press"
 msgstr "दबाव"
+
+#: plugins/accessible/widgets/complexwidgets.cpp:1511
+msgid "Scroll Left"
+msgstr "डेरी स्क्राल करव"
+
+#: plugins/accessible/widgets/complexwidgets.cpp:1511
+msgid "Scroll Right"
+msgstr "जेवनी स्क्राल करव"
 
 #: plugins/inputmethods/imsw-multi/qmultiinputcontext.cpp:88
 msgid "Select IM"
