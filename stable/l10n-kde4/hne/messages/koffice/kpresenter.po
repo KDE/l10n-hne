@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-08 04:21+0100\n"
+"POT-Creation-Date: 2010-04-24 01:33+0200\n"
 "PO-Revision-Date: 2009-03-03 10:38+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -135,13 +135,13 @@ msgstr "आड़ा उलटा"
 #: plugins/pageeffects/matrixwipe/waterfallwipe/KPrWaterfallWipeEffectFactory.cpp:64
 #: plugins/pageeffects/matrixwipe/boxsnakes/KPrBoxSnakesWipeEffectFactory.cpp:69
 #: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:77
-#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:100
 #: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:68
+#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:100
 #: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:71
 #: plugins/pageeffects/iriswipe/starWipe/KPrStarWipeEffectFactory.cpp:116
 #: plugins/pageeffects/iriswipe/pentagonWipe/KPrPentagonWipeEffectFactory.cpp:77
-#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:73
 #: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:103
+#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:73
 #: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:72
 #: plugins/pageeffects/iriswipe/hexagonWipe/KPrHexagonWipeEffectFactory.cpp:89
 msgid "Unknown subtype"
@@ -855,6 +855,10 @@ msgstr "वृत्त"
 msgid "Circle Reverse"
 msgstr ""
 
+#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:32
+msgid "RoundRect"
+msgstr ""
+
 #: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:31
 msgid "Triangle"
 msgstr "त्रिभुज"
@@ -880,10 +884,6 @@ msgstr "डेरी"
 #: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:95
 msgid "Left Reverse"
 msgstr "डेरी उलटा"
-
-#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:32
-msgid "RoundRect"
-msgstr ""
 
 #: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:30
 msgid "Iris"
@@ -937,6 +937,10 @@ msgstr ""
 msgid "Pentagon"
 msgstr "पंचभुज"
 
+#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:31
+msgid "ArrowHead"
+msgstr ""
+
 #: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:30
 msgid "Misc"
 msgstr "विविध"
@@ -956,10 +960,6 @@ msgstr "कीहोल"
 #: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:65
 msgid "Keyhole Reverse"
 msgstr "कीहोल उलटा"
-
-#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:31
-msgid "ArrowHead"
-msgstr ""
 
 #: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:32
 msgid "Eye"
@@ -1098,13 +1098,107 @@ msgstr ""
 msgid "Confirm action"
 msgstr ""
 
+#: part/KPrView.cpp:65
+msgid "Show Master Slides"
+msgstr ""
+
+#: part/KPrView.cpp:66
+#, fuzzy
+#| msgid "Configure Slide Show..."
+msgid "Import Slideshow..."
+msgstr "स्लाइड-सो कान्फिगर करव..."
+
+#: part/KPrView.cpp:67
+msgid "Insert Slide"
+msgstr "स्लाइड भरव"
+
+#: part/KPrView.cpp:68 part/KPrView.cpp:69
+msgid "Insert a new slide after the current one"
+msgstr ""
+
+#: part/KPrView.cpp:70
+msgid "Copy Slide"
+msgstr "स्लाइड नकल करव"
+
+#: part/KPrView.cpp:71 part/KPrView.cpp:72
+msgid "Copy the current slide"
+msgstr "अभी हाल के स्लाइड नकल करव"
+
+#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
+#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
+#: part/KPrView.cpp:73 rc.cpp:206
+msgid "Delete Slide"
+msgstr "स्लाइड मेटाव"
+
+#: part/KPrView.cpp:74 part/KPrView.cpp:75
+msgid "Delete the current slide"
+msgstr "अभी हाल के स्लाइड मेटाव"
+
+#: part/KPrView.cpp:76
+msgid "Master Slide..."
+msgstr "मास्टर स्लाइड..."
+
+#: part/KPrView.cpp:77
+msgid "Previous Slide"
+msgstr "पिछला स्लाइड"
+
+#: part/KPrView.cpp:78 part/KPrPresenterViewInterface.cpp:67
+msgid "Next Slide"
+msgstr "अगला स्लाइड"
+
+#: part/KPrView.cpp:79
+msgid "First Slide"
+msgstr "पहिली स्लाइड"
+
+#: part/KPrView.cpp:80
+msgid "Last Slide"
+msgstr "आखरी स्लाइड"
+
+#: part/KPrView.cpp:81
+#, fuzzy
+#| msgid "Configure Presenter View..."
+msgid "Configure KPresenter..."
+msgstr "प्रजेन्टर दृस्य कान्फिगर करव..."
+
+#: part/KPrView.cpp:142
+msgid "Normal"
+msgstr "सामान्य"
+
+#: part/KPrView.cpp:148
+msgid "Notes"
+msgstr "टीप"
+
+#: part/KPrView.cpp:157
+msgid "Create Appear Animation"
+msgstr "प्रकट एनिमेसन बनाव"
+
+#: part/KPrView.cpp:161
+msgid "Edit Custom Slide Shows..."
+msgstr "मनमाफिक स्लाइडसो संपादित करव..."
+
+#: part/KPrView.cpp:165
+msgid "Start Presentation"
+msgstr "प्रस्तुतीकरन चालू करव"
+
+#: part/KPrView.cpp:168
+msgid "From Current Slide"
+msgstr "अभी हाल के स्लाइड से"
+
+#: part/KPrView.cpp:173
+msgid "From First Slide"
+msgstr "पहिली स्लाइड से"
+
+#: part/KPrView.cpp:178
+msgid "Configure Slide Show..."
+msgstr "स्लाइड-सो कान्फिगर करव..."
+
+#: part/KPrView.cpp:182
+msgid "Configure Presenter View..."
+msgstr "प्रजेन्टर दृस्य कान्फिगर करव..."
+
 #: part/KPrPlaceholderShapeFactory.cpp:31
 msgid "Placeholder shape"
 msgstr ""
-
-#: part/KPrPresenterViewInterface.cpp:67 part/KPrView.cpp:78
-msgid "Next Slide"
-msgstr "अगला स्लाइड"
 
 #: part/KPrPresenterViewInterface.cpp:77
 msgid "Speaker Notes"
@@ -1255,6 +1349,10 @@ msgstr ""
 msgid "File to open"
 msgstr "फाइल जऊन ल खोलना हे"
 
+#: part/KPrEndOfSlideShowPage.cpp:68
+msgid "End of presentation. Click to exit."
+msgstr ""
+
 #: part/KPrPresentationDrawWidget.cpp:102
 msgid "Pen Color"
 msgstr ""
@@ -1287,104 +1385,6 @@ msgstr ""
 
 #: part/KPrPresentationDrawWidget.cpp:110
 msgid "Yellow"
-msgstr ""
-
-#: part/KPrView.cpp:65
-msgid "Show Master Slides"
-msgstr ""
-
-#: part/KPrView.cpp:66
-#, fuzzy
-#| msgid "Configure Slide Show..."
-msgid "Import Slideshow..."
-msgstr "स्लाइड-सो कान्फिगर करव..."
-
-#: part/KPrView.cpp:67
-msgid "Insert Slide"
-msgstr "स्लाइड भरव"
-
-#: part/KPrView.cpp:68 part/KPrView.cpp:69
-msgid "Insert a new slide after the current one"
-msgstr ""
-
-#: part/KPrView.cpp:70
-msgid "Copy Slide"
-msgstr "स्लाइड नकल करव"
-
-#: part/KPrView.cpp:71 part/KPrView.cpp:72
-msgid "Copy the current slide"
-msgstr "अभी हाल के स्लाइड नकल करव"
-
-#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
-#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
-#: part/KPrView.cpp:73 rc.cpp:206
-msgid "Delete Slide"
-msgstr "स्लाइड मेटाव"
-
-#: part/KPrView.cpp:74 part/KPrView.cpp:75
-msgid "Delete the current slide"
-msgstr "अभी हाल के स्लाइड मेटाव"
-
-#: part/KPrView.cpp:76
-msgid "Master Slide..."
-msgstr "मास्टर स्लाइड..."
-
-#: part/KPrView.cpp:77
-msgid "Previous Slide"
-msgstr "पिछला स्लाइड"
-
-#: part/KPrView.cpp:79
-msgid "First Slide"
-msgstr "पहिली स्लाइड"
-
-#: part/KPrView.cpp:80
-msgid "Last Slide"
-msgstr "आखरी स्लाइड"
-
-#: part/KPrView.cpp:81
-#, fuzzy
-#| msgid "Configure Presenter View..."
-msgid "Configure KPresenter..."
-msgstr "प्रजेन्टर दृस्य कान्फिगर करव..."
-
-#: part/KPrView.cpp:142
-msgid "Normal"
-msgstr "सामान्य"
-
-#: part/KPrView.cpp:148
-msgid "Notes"
-msgstr "टीप"
-
-#: part/KPrView.cpp:157
-msgid "Create Appear Animation"
-msgstr "प्रकट एनिमेसन बनाव"
-
-#: part/KPrView.cpp:161
-msgid "Edit Custom Slide Shows..."
-msgstr "मनमाफिक स्लाइडसो संपादित करव..."
-
-#: part/KPrView.cpp:165
-msgid "Start Presentation"
-msgstr "प्रस्तुतीकरन चालू करव"
-
-#: part/KPrView.cpp:168
-msgid "From Current Slide"
-msgstr "अभी हाल के स्लाइड से"
-
-#: part/KPrView.cpp:173
-msgid "From First Slide"
-msgstr "पहिली स्लाइड से"
-
-#: part/KPrView.cpp:178
-msgid "Configure Slide Show..."
-msgstr "स्लाइड-सो कान्फिगर करव..."
-
-#: part/KPrView.cpp:182
-msgid "Configure Presenter View..."
-msgstr "प्रजेन्टर दृस्य कान्फिगर करव..."
-
-#: part/KPrEndOfSlideShowPage.cpp:68
-msgid "End of presentation. Click to exit."
 msgstr ""
 
 #. i18n: file: kpresenter.rc:3
