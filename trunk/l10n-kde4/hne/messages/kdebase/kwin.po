@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-29 04:26+0200\n"
+"POT-Creation-Date: 2010-04-26 04:38+0200\n"
 "PO-Revision-Date: 2009-01-28 17:47+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: activation.cpp:747
+#: activation.cpp:750
 #, kde-format
 msgid "Window '%1' demands attention."
 msgstr "विंडो '%1' ध्यान चाहथे."
@@ -603,6 +603,94 @@ msgstr "वैस्विक सार्टकट मं रोक लगा�
 msgid "Suspend Compositing"
 msgstr "कम्पोजिटिंग सस्पेंड करव"
 
+#: kwinbindings.cpp:223
+msgid "Tiling"
+msgstr ""
+
+#: kwinbindings.cpp:224
+#, fuzzy
+#| msgid "Toggle Video Recording"
+msgid "Toggle Tiling"
+msgstr "वीडियो रेकार्डिंग टागल करव"
+
+#: kwinbindings.cpp:225
+msgid "Toggle Orientation"
+msgstr ""
+
+#: kwinbindings.cpp:226
+msgid "Increase Ratio"
+msgstr ""
+
+#: kwinbindings.cpp:227
+msgid "Decrease Ratio"
+msgstr ""
+
+#: kwinbindings.cpp:228
+msgid "Toggle Floating"
+msgstr ""
+
+#: kwinbindings.cpp:230
+#, fuzzy
+#| msgid "Switch to Desktop 1"
+msgid "Switch Focus Left"
+msgstr "डेस्कटाप 1 मं स्विच करव"
+
+#: kwinbindings.cpp:231
+msgid "Switch Focus Right"
+msgstr ""
+
+#: kwinbindings.cpp:232
+#, fuzzy
+#| msgid "Switch One Desktop Up"
+msgid "Switch Focus Up"
+msgstr "एक डेस्कटाप ऊपर स्विच करव"
+
+#: kwinbindings.cpp:233
+#, fuzzy
+#| msgid "Switch One Desktop Down"
+msgid "Switch Focus Down"
+msgstr "एक डेस्कटाप नीचे स्विच करव"
+
+#: kwinbindings.cpp:234
+#, fuzzy
+#| msgid "Left"
+msgid "Move Left"
+msgstr "डेरी"
+
+#: kwinbindings.cpp:235
+#, fuzzy
+#| msgid "Right"
+msgid "Move Right"
+msgstr "जेवनी"
+
+#: kwinbindings.cpp:236
+#, fuzzy
+#| msgid "&Move"
+msgid "Move Up"
+msgstr "खिसकाव (&M) "
+
+#: kwinbindings.cpp:237
+#, fuzzy
+#| msgid "Move Window"
+msgid "Move Down"
+msgstr "विंडो खिसकाव"
+
+#: kwinbindings.cpp:238
+msgid "Next Layout"
+msgstr ""
+
+#: kwinbindings.cpp:239
+msgid "Previous Layout"
+msgstr ""
+
+#: kwinbindings.cpp:241
+msgid "Test Dump tiles"
+msgstr ""
+
+#: kwinbindings.cpp:242
+msgid "Test Below Cursor"
+msgstr ""
+
 #: main.cpp:178
 msgid ""
 "kwin: it looks like there's already a window manager running. kwin not "
@@ -701,6 +789,21 @@ msgstr "raviratlami@aol.in"
 msgctxt "Special entry in alt+tab list for minimizing all windows"
 msgid "Show Desktop"
 msgstr "डेस्कटाप ग्रिड देखाव"
+
+#: tiling.cpp:72
+#, fuzzy
+#| msgid "Disabled"
+msgid "Tiling Disabled"
+msgstr "अक्छम"
+
+#: tiling.cpp:78
+msgid "Tiling Enabled"
+msgstr ""
+
+#: tilinglayoutfactory.cpp:43
+#, kde-format
+msgid "Layout changed to %1"
+msgstr ""
 
 #: useractions.cpp:73
 msgid "Keep &Above Others"
@@ -807,12 +910,12 @@ msgstr "सब्बो डेस्कटाप (&A)"
 msgid "Activate Window (%1)"
 msgstr "विंडो सक्रिय करव (%1)"
 
-#: workspace.cpp:1190 workspace.cpp:1210
+#: workspace.cpp:1210 workspace.cpp:1230
 #, kde-format
 msgid "Desktop %1"
 msgstr "डेस्कटाप %1"
 
-#: workspace.cpp:2603
+#: workspace.cpp:2636
 #, kde-format
 msgid ""
 "You have selected to show a window without its border.\n"
@@ -824,7 +927,7 @@ msgstr ""
 "बिना किनारा, आप मन फिर से मुसुवा के मदद से बार्डर नइ बना पाहू. एखर बदला मा विंडो "
 "संचालन मेन्यू उपयोग करव, जऊन %1 कुंजी सार्टकट से सक्रिय होथे."
 
-#: workspace.cpp:2617
+#: workspace.cpp:2650
 #, kde-format
 msgid ""
 "You have selected to show a window in fullscreen mode.\n"
@@ -1008,18 +1111,12 @@ msgstr "*** कोनो विंडो नइ ***"
 #~ msgid "Advanced"
 #~ msgstr "विस्तृत"
 
-#~ msgid "Disabled"
-#~ msgstr "अक्छम"
-
 #~ msgid "Top"
 #~ msgstr "ऊपर"
 
 #~| msgid "Top-right"
 #~ msgid "Top-Right"
 #~ msgstr "ऊपरी-जेवनी"
-
-#~ msgid "Right"
-#~ msgstr "जेवनी"
 
 #~| msgid "Bottom-right"
 #~ msgid "Bottom-Right"
@@ -1031,9 +1128,6 @@ msgstr "*** कोनो विंडो नइ ***"
 #~| msgid "Bottom-left"
 #~ msgid "Bottom-Left"
 #~ msgstr "निचला-डेरी "
-
-#~ msgid "Left"
-#~ msgstr "डेरी"
 
 #~| msgid "Top-left"
 #~ msgid "Top-Left"
@@ -1094,9 +1188,6 @@ msgstr "*** कोनो विंडो नइ ***"
 
 #~ msgid "Hold Ctrl+Meta keys to see where the mouse cursor is."
 #~ msgstr "मुसुवा संकेतक कहाँ हावे ओला देखे बर कंट्रोल+मेटा कुंजी दबा कर रखव."
-
-#~ msgid "Toggle Video Recording"
-#~ msgstr "वीडियो रेकार्डिंग टागल करव"
 
 #~ msgid "Path to save video:"
 #~ msgstr "वीडियो सहेजे के रस्ता:"
