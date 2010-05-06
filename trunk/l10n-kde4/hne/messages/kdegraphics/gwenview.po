@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-05 04:51+0200\n"
+"POT-Creation-Date: 2010-05-06 04:56+0200\n"
 "PO-Revision-Date: 2009-02-26 15:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -271,52 +271,27 @@ msgstr "एखर साथ खोलव"
 msgid "Other Application..."
 msgstr "अऊ दूसर अनुपरयोग..."
 
-#: app/gvcore.cpp:87
+#: app/gvcore.cpp:83
 msgctxt "@info"
 msgid "No image format selected."
 msgstr "कोई फोटू फार्मेट चुने नइ गे हे."
 
-#: app/gvcore.cpp:100
+#: app/gvcore.cpp:96
 #, kde-format
 msgctxt "@info"
 msgid "Gwenview cannot save images as %1."
 msgstr "ग्वेनव्यू फोटू मन ल %1 जइसन सहेज नइ सकिस."
 
-#: app/gvcore.cpp:172
-msgctxt "@info:progress saving all image changes"
-msgid "Saving..."
-msgstr "सहेजत हे..."
-
-#: app/gvcore.cpp:173
-msgid "&Stop"
-msgstr "रुकव (&S)"
-
-#: app/gvcore.cpp:192
-#, kde-format
-msgctxt "@info"
-msgid "One document could not be saved:"
-msgid_plural "%1 documents could not be saved:"
-msgstr[0] ""
-msgstr[1] ""
-
-#: app/gvcore.cpp:214
-#, kde-format
-msgctxt ""
-"@info %1 is the name of the document which failed to save, %2 is the reason "
-"for the failure"
-msgid "<filename>%1</filename>: %2"
-msgstr "<filename>%1</filename>: %2"
-
-#: app/gvcore.cpp:240
+#: app/gvcore.cpp:183
 msgid "Save using another format"
 msgstr "अऊ दूसर फारमेट के साथ सहेजव"
 
-#: app/gvcore.cpp:243
+#: app/gvcore.cpp:186
 #, kde-format
 msgid "Gwenview cannot save images in '%1' format."
 msgstr "ग्वेनव्यू फोटू मन ल '%1' फारमेट मं सहेज नइ सकिस."
 
-#: app/gvcore.cpp:266
+#: app/gvcore.cpp:209
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -324,21 +299,21 @@ msgid ""
 "Are you sure you want to overwrite it?"
 msgstr ""
 
-#: app/gvcore.cpp:301
+#: app/gvcore.cpp:244
 #, kde-format
 msgctxt "@info"
 msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
 msgstr ""
 
-#: app/gvcore.cpp:319
+#: app/gvcore.cpp:262
 msgid "You are now viewing the new document."
 msgstr ""
 
-#: app/gvcore.cpp:321
+#: app/gvcore.cpp:264
 msgid "Go back to the original"
 msgstr ""
 
-#: app/gvcore.cpp:364
+#: app/gvcore.cpp:307
 msgctxt "@info"
 msgid "Gwenview cannot edit this kind of image."
 msgstr "ग्वेनव्यू अइसन फोटू मन के संपादन नइ कर सके"
@@ -364,7 +339,7 @@ msgstr "प्रतिबिंब"
 msgid "Flip"
 msgstr "लहुटाव"
 
-#: app/imageopscontextmanageritem.cpp:97 lib/resizeimageoperation.cpp:47
+#: app/imageopscontextmanageritem.cpp:97 lib/resizeimageoperation.cpp:82
 msgid "Resize"
 msgstr "आकार बदलव"
 
@@ -853,6 +828,31 @@ msgstr "वहाँ जाव"
 msgid "Save All"
 msgstr "सब्बो सहेजव"
 
+#: app/saveallhelper.cpp:57
+msgctxt "@info:progress saving all image changes"
+msgid "Saving..."
+msgstr "सहेजत हे..."
+
+#: app/saveallhelper.cpp:58
+msgid "&Stop"
+msgstr "रुकव (&S)"
+
+#: app/saveallhelper.cpp:82
+#, kde-format
+msgctxt "@info"
+msgid "One document could not be saved:"
+msgid_plural "%1 documents could not be saved:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: app/saveallhelper.cpp:106
+#, kde-format
+msgctxt ""
+"@info %1 is the name of the document which failed to save, %2 is the reason "
+"for the failure"
+msgid "<filename>%1</filename>: %2"
+msgstr "<filename>%1</filename>: %2"
+
 #: importer/importer.cpp:76
 msgid "Could not create destination folder."
 msgstr ""
@@ -1112,20 +1112,20 @@ msgctxt "@info"
 msgid "Loading image failed."
 msgstr "फोटू ल लोड करे मं फेल."
 
-#: lib/document/savejob.cpp:77
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Could not overwrite file, check that you have the necessary rights to write "
-"in <filename>%1</filename>."
-msgstr ""
-
-#: lib/document/savejob.cpp:101
+#: lib/document/savejob.cpp:104
 #, kde-format
 msgctxt "@info"
 msgid ""
 "Could not open file for writing, check that you have the necessary rights in "
 "<filename>%1</filename>."
+msgstr ""
+
+#: lib/document/savejob.cpp:128
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Could not overwrite file, check that you have the necessary rights to write "
+"in <filename>%1</filename>."
 msgstr ""
 
 #: lib/print/printhelper.cpp:129
