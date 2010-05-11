@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-03 04:59+0200\n"
+"POT-Creation-Date: 2010-05-11 06:01+0200\n"
 "PO-Revision-Date: 2009-03-01 16:30+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,53 +18,31 @@ msgstr ""
 "X-Generator: Lokalize 0.3\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: main_internal.cpp:82 main.cpp:61
+#: kdevideextension.cpp:48
+msgid "Code"
+msgstr "कोड"
+
+#: kdevideextension.cpp:59
+msgid "KDevelop4 Project Files"
+msgstr "के-डेवलप४ परियोजना फाइल"
+
+#: main.cpp:61 main_internal.cpp:82
 msgid "The KDevelop Integrated Development Environment"
 msgstr "के-डेवलप एकीकृत डेवलपमेंट वातावरन"
 
-#: main_internal.cpp:83 main.cpp:62
+#: main.cpp:62 main_internal.cpp:83
 msgid "KDevelop"
 msgstr "के-डेवलप"
-
-#: main_internal.cpp:84
-#, kde-format
-msgid "%1 (using KDevPlatform %2)"
-msgstr ""
-
-#: main_internal.cpp:85 main.cpp:64
-#, fuzzy
-msgid "Copyright 1999-2010, The KDevelop developers"
-msgstr "(c) 1999-2007, के-डेवलप बनइया मन"
-
-#: main_internal.cpp:144 main.cpp:101
-msgid "Specify the binary you want to debug."
-msgstr ""
-
-#: main_internal.cpp:151 main.cpp:108
-#, fuzzy
-#| msgid "&Debug"
-msgid "Debug"
-msgstr "डिबग (&D)"
-
-#: main_internal.cpp:172
-msgid "Cannot find native launch configuration type"
-msgstr ""
-
-#: main_internal.cpp:191
-#, kde-format
-msgid "Cannot find launcher %1"
-msgstr ""
-
-#: main_internal.cpp:227
-#, fuzzy, kde-format
-#| msgid "Could not open file '%1'"
-msgid "Could not open %1"
-msgstr "फाइल '%1' खोल नइ सकहू"
 
 #: main.cpp:63
 #, kde-format
 msgid "%1"
 msgstr ""
+
+#: main.cpp:64 main_internal.cpp:85
+#, fuzzy
+msgid "Copyright 1999-2010, The KDevelop developers"
+msgstr "(c) 1999-2007, के-डेवलप बनइया मन"
 
 #: main.cpp:67
 msgid "Create new session with given name."
@@ -98,6 +76,16 @@ msgstr "परियोजना खोलव"
 msgid "[running]"
 msgstr "चलत हे"
 
+#: main.cpp:101 main_internal.cpp:144
+msgid "Specify the binary you want to debug."
+msgstr ""
+
+#: main.cpp:108 main_internal.cpp:151
+#, fuzzy
+#| msgid "&Debug"
+msgid "Debug"
+msgstr "डिबग (&D)"
+
 #: main.cpp:116
 #, kde-format
 msgid ""
@@ -123,13 +111,25 @@ msgid ""
 "fix your KDevelop installation."
 msgstr ""
 
-#: kdevideextension.cpp:41
-msgid "Code"
-msgstr "कोड"
+#: main_internal.cpp:84
+#, kde-format
+msgid "%1 (using KDevPlatform %2)"
+msgstr ""
 
-#: kdevideextension.cpp:52
-msgid "KDevelop4 Project Files"
-msgstr "के-डेवलप४ परियोजना फाइल"
+#: main_internal.cpp:172
+msgid "Cannot find native launch configuration type"
+msgstr ""
+
+#: main_internal.cpp:191
+#, kde-format
+msgid "Cannot find launcher %1"
+msgstr ""
+
+#: main_internal.cpp:227
+#, fuzzy, kde-format
+#| msgid "Could not open file '%1'"
+msgid "Could not open %1"
+msgstr "फाइल '%1' खोल नइ सकहू"
 
 #: shared_app_init.cpp:29
 msgid "Andreas Pakulat"
@@ -567,7 +567,7 @@ msgstr ""
 #. i18n: ectx: Menu (file)
 #. i18n: file: vendor/kate/katepartui.rc:4
 #. i18n: ectx: Menu (file)
-#: rc.cpp:3 rc.cpp:98 rc.cpp:125
+#: rc.cpp:3 rc.cpp:65 rc.cpp:125
 #, fuzzy
 msgid "&File"
 msgstr "फाइल (&F)"
@@ -576,14 +576,14 @@ msgstr "फाइल (&F)"
 #. i18n: ectx: Menu (edit)
 #. i18n: file: vendor/kate/katepartui.rc:12
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:6 rc.cpp:101 rc.cpp:128
+#: rc.cpp:6 rc.cpp:68 rc.cpp:128
 #, fuzzy
 msgid "&Edit"
 msgstr "संपादन (&E)"
 
 #. i18n: file: katepartui.rc:22
 #. i18n: ectx: Menu (edit_advanced)
-#: rc.cpp:9 rc.cpp:104
+#: rc.cpp:9 rc.cpp:71
 #, fuzzy
 #| msgid "Advanced"
 msgid "&Advanced"
@@ -593,7 +593,7 @@ msgstr "विस्तृत"
 #. i18n: ectx: Menu (view)
 #. i18n: file: vendor/kate/katepartui.rc:37
 #. i18n: ectx: Menu (view)
-#: rc.cpp:12 rc.cpp:107 rc.cpp:131
+#: rc.cpp:12 rc.cpp:74 rc.cpp:131
 #, fuzzy
 msgid "&View"
 msgstr "देखव (&V)"
@@ -602,7 +602,7 @@ msgstr "देखव (&V)"
 #. i18n: ectx: Menu (codefolding)
 #. i18n: file: vendor/kate/katepartui.rc:51
 #. i18n: ectx: Menu (codefolding)
-#: rc.cpp:15 rc.cpp:110 rc.cpp:134
+#: rc.cpp:15 rc.cpp:77 rc.cpp:134
 msgid "&Code Folding"
 msgstr ""
 
@@ -610,7 +610,7 @@ msgstr ""
 #. i18n: ectx: Menu (tools)
 #. i18n: file: vendor/kate/katepartui.rc:64
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:18 rc.cpp:113 rc.cpp:137
+#: rc.cpp:18 rc.cpp:80 rc.cpp:137
 #, fuzzy
 #| msgctxt "@title:menu"
 #| msgid "Tools"
@@ -621,7 +621,7 @@ msgstr "औजार"
 #. i18n: ectx: Menu (wordcompletion)
 #. i18n: file: vendor/kate/katepartui.rc:75
 #. i18n: ectx: Menu (wordcompletion)
-#: rc.cpp:21 rc.cpp:116 rc.cpp:140
+#: rc.cpp:21 rc.cpp:83 rc.cpp:140
 #, fuzzy
 #| msgid "Importoptions:"
 msgid "Word Completion"
@@ -631,7 +631,7 @@ msgstr "आयातविकल्प:"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: vendor/kate/katepartui.rc:104
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:24 rc.cpp:119 rc.cpp:143
+#: rc.cpp:24 rc.cpp:86 rc.cpp:143
 #, fuzzy
 #| msgctxt "@title:menu"
 #| msgid "Settings"
@@ -644,15 +644,17 @@ msgstr "सेटिंग"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: katepartui.rc:130
 #. i18n: ectx: ToolBar (mainToolBar)
+#. i18n: file: kdevelopui.rc:157
+#. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: vendor/kate/katepartui.rc:123
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:27 rc.cpp:60 rc.cpp:95 rc.cpp:122 rc.cpp:146
+#: rc.cpp:27 rc.cpp:60 rc.cpp:89 rc.cpp:122 rc.cpp:146
 msgid "Main Toolbar"
 msgstr "मुख्य औजार पट्टी"
 
 #. i18n: file: kdevelopui.rc:6
 #. i18n: ectx: Menu (session)
-#: rc.cpp:30 rc.cpp:65
+#: rc.cpp:30 rc.cpp:92
 #, fuzzy
 #| msgctxt "@title:menu"
 #| msgid "Settings"
@@ -662,7 +664,7 @@ msgstr "सेटिंग"
 
 #. i18n: file: kdevelopui.rc:10
 #. i18n: ectx: Menu (project)
-#: rc.cpp:33 rc.cpp:68
+#: rc.cpp:33 rc.cpp:95
 #, fuzzy
 msgctxt "@title:menu"
 msgid "&Project"
@@ -670,13 +672,13 @@ msgstr "परियोजना (&P)"
 
 #. i18n: file: kdevelopui.rc:28
 #. i18n: ectx: Menu (run)
-#: rc.cpp:36 rc.cpp:71
+#: rc.cpp:36 rc.cpp:98
 msgid "&Run"
 msgstr "चलाव (&R)"
 
 #. i18n: file: kdevelopui.rc:50
 #. i18n: ectx: Menu (navigation)
-#: rc.cpp:39 rc.cpp:74
+#: rc.cpp:39 rc.cpp:101
 #, fuzzy
 msgctxt "@title:menu"
 msgid "&Navigation"
@@ -684,7 +686,7 @@ msgstr "नेविगेसन"
 
 #. i18n: file: kdevelopui.rc:64
 #. i18n: ectx: Menu (file)
-#: rc.cpp:42 rc.cpp:77
+#: rc.cpp:42 rc.cpp:104
 #, fuzzy
 msgctxt "@title:menu"
 msgid "&File"
@@ -692,7 +694,7 @@ msgstr "फाइल (&F)"
 
 #. i18n: file: kdevelopui.rc:75
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:45 rc.cpp:80
+#: rc.cpp:45 rc.cpp:107
 #, fuzzy
 msgctxt "@title:menu"
 msgid "&Edit"
@@ -700,7 +702,7 @@ msgstr "संपादन (&E)"
 
 #. i18n: file: kdevelopui.rc:88
 #. i18n: ectx: Menu (editor)
-#: rc.cpp:48 rc.cpp:83
+#: rc.cpp:48 rc.cpp:110
 #, fuzzy
 #| msgctxt "@title:menu"
 #| msgid "Edit"
@@ -710,14 +712,14 @@ msgstr "संपादन"
 
 #. i18n: file: kdevelopui.rc:93
 #. i18n: ectx: Menu (code)
-#: rc.cpp:51 rc.cpp:86
+#: rc.cpp:51 rc.cpp:113
 msgctxt "@title:menu"
 msgid "Code"
 msgstr "कोड"
 
 #. i18n: file: kdevelopui.rc:100
 #. i18n: ectx: Menu (window)
-#: rc.cpp:54 rc.cpp:89
+#: rc.cpp:54 rc.cpp:116
 #, fuzzy
 msgctxt "@title:menu"
 msgid "&Window"
@@ -725,7 +727,7 @@ msgstr "विंडो"
 
 #. i18n: file: kdevelopui.rc:142
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:57 rc.cpp:92
+#: rc.cpp:57 rc.cpp:119
 msgctxt "@title:menu"
 msgid "Settings"
 msgstr "सेटिंग"
