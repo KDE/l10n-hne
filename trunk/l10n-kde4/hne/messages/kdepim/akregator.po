@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-03 04:55+0200\n"
+"POT-Creation-Date: 2010-05-22 04:50+0200\n"
 "PO-Revision-Date: 2009-02-27 17:34+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -114,40 +114,6 @@ msgstr "दिदिए होराउ"
 msgid "No Archive"
 msgstr "कोई अभिलेख नइ हे"
 
-#: src/pluginmanager.cpp:165
-msgctxt "Name of the plugin"
-msgid "Name"
-msgstr "नाम"
-
-#: src/pluginmanager.cpp:166
-msgctxt "Library name"
-msgid "Library"
-msgstr "लाइब्रेरी"
-
-#: src/pluginmanager.cpp:167
-msgctxt "Plugin authors"
-msgid "Authors"
-msgstr "लेखक"
-
-#: src/pluginmanager.cpp:168
-msgctxt "Plugin authors' emaila addresses"
-msgid "Email"
-msgstr "ईमेल"
-
-#: src/pluginmanager.cpp:169
-msgctxt "Plugin version"
-msgid "Version"
-msgstr "संस्करन"
-
-#: src/pluginmanager.cpp:170
-msgctxt "Framework version plugin requires"
-msgid "Framework Version"
-msgstr "फ्रेमवर्क संस्करन"
-
-#: src/pluginmanager.cpp:174
-msgid "Plugin Information"
-msgstr "प्लगइन जानकारी"
-
 #: src/pageviewer.cpp:101 src/actionmanagerimpl.cpp:569
 msgctxt "Go back in browser history"
 msgid "Back"
@@ -187,9 +153,30 @@ msgstr "आलेख ल बाहिरी ब्राउजर मं खो�
 msgid "Add to Konqueror Bookmarks"
 msgstr "कान्करर निसानी मं जोड़व"
 
-#: src/feedlist.cpp:177
-msgid "All Feeds"
-msgstr "सब्बो फीड्स"
+#: src/importfeedlistcommand.cpp:64
+#, fuzzy
+msgid "Imported Feeds"
+msgstr "फीड्स आयात करव... (&I)"
+
+#: src/importfeedlistcommand.cpp:96
+msgid "Add Imported Folder"
+msgstr "आयातित फोल्डर जोड़व"
+
+#: src/importfeedlistcommand.cpp:97
+msgid "Imported folder name:"
+msgstr "आयातित फोल्डर नाम:"
+
+#: src/progressmanager.cpp:178
+msgid "Fetch completed"
+msgstr "फीड लाना पूरा"
+
+#: src/progressmanager.cpp:188
+msgid "Fetch error"
+msgstr "फीड लाय मं गलती"
+
+#: src/progressmanager.cpp:198
+msgid "Fetch aborted"
+msgstr "फीड लाना छोड़ दे गिस."
 
 #: src/akregator_options.h:37 src/akregator_options.h:41
 msgid "Add a feed with the given URL"
@@ -203,17 +190,9 @@ msgstr ""
 msgid "Hide main window on startup"
 msgstr ""
 
-#: src/progressmanager.cpp:178
-msgid "Fetch completed"
-msgstr "फीड लाना पूरा"
-
-#: src/progressmanager.cpp:188
-msgid "Fetch error"
-msgstr "फीड लाय मं गलती"
-
-#: src/progressmanager.cpp:198
-msgid "Fetch aborted"
-msgstr "फीड लाना छोड़ दे गिस."
+#: src/feedlist.cpp:177
+msgid "All Feeds"
+msgstr "सब्बो फीड्स"
 
 #: src/akregator_part.cpp:107
 msgid "Akregator News"
@@ -510,6 +489,17 @@ msgstr "फिलिप ड्रोसेलर"
 msgid "Gentoo Ebuild"
 msgstr "जेंटू ई-बिल्ड"
 
+#: src/trayicon.cpp:63
+msgid "Akregator - Feed Reader"
+msgstr "ए-के-रेगेटर - फीड पाठक"
+
+#: src/trayicon.cpp:120
+#, kde-format
+msgid "Akregator - 1 unread article"
+msgid_plural "Akregator - %1 unread articles"
+msgstr[0] "एकेरेगेटर - 1 बिनपढ़ा आलेख"
+msgstr[1] "एकेरेगेटर - %1 बिनपढ़े आलेख"
+
 #: src/articleviewer.cpp:135
 msgid "Copy &Link Address"
 msgstr "संकली पता नकल करव (&L)"
@@ -791,18 +781,35 @@ msgstr ""
 msgid "Docking in System Tray"
 msgstr "तंत्र तस्तरी मं डाक करत हे"
 
-#: src/importfeedlistcommand.cpp:64
-#, fuzzy
-msgid "Imported Feeds"
-msgstr "फीड्स आयात करव... (&I)"
+#: src/articlemodel.cpp:106
+msgctxt "Articlelist's column header"
+msgid "Title"
+msgstr "सीर्सक"
 
-#: src/importfeedlistcommand.cpp:96
-msgid "Add Imported Folder"
-msgstr "आयातित फोल्डर जोड़व"
+#: src/articlemodel.cpp:108
+msgctxt "Articlelist's column header"
+msgid "Feed"
+msgstr "फीड"
 
-#: src/importfeedlistcommand.cpp:97
-msgid "Imported folder name:"
-msgstr "आयातित फोल्डर नाम:"
+#: src/articlemodel.cpp:110
+msgctxt "Articlelist's column header"
+msgid "Date"
+msgstr "तारीक"
+
+#: src/articlemodel.cpp:112
+msgctxt "Articlelist's column header"
+msgid "Author"
+msgstr "लेखक"
+
+#: src/articlemodel.cpp:114
+msgctxt "Articlelist's column header"
+msgid "Description"
+msgstr ""
+
+#: src/articlemodel.cpp:116
+msgctxt "Articlelist's column header"
+msgid "Content"
+msgstr "सामान"
 
 #: src/actionmanagerimpl.cpp:76 src/actionmanagerimpl.cpp:253
 msgid "&Fetch Feed"
@@ -1113,46 +1120,39 @@ msgstr[1] "<qt>का आप मन सही मं ए %1 चुने गे 
 msgid "Delete Article"
 msgstr "आलेख मेटाव"
 
-#: src/articlemodel.cpp:106
-msgctxt "Articlelist's column header"
-msgid "Title"
-msgstr "सीर्सक"
+#: src/pluginmanager.cpp:165
+msgctxt "Name of the plugin"
+msgid "Name"
+msgstr "नाम"
 
-#: src/articlemodel.cpp:108
-msgctxt "Articlelist's column header"
-msgid "Feed"
-msgstr "फीड"
+#: src/pluginmanager.cpp:166
+msgctxt "Library name"
+msgid "Library"
+msgstr "लाइब्रेरी"
 
-#: src/articlemodel.cpp:110
-msgctxt "Articlelist's column header"
-msgid "Date"
-msgstr "तारीक"
-
-#: src/articlemodel.cpp:112
-msgctxt "Articlelist's column header"
-msgid "Author"
+#: src/pluginmanager.cpp:167
+msgctxt "Plugin authors"
+msgid "Authors"
 msgstr "लेखक"
 
-#: src/articlemodel.cpp:114
-msgctxt "Articlelist's column header"
-msgid "Description"
-msgstr ""
+#: src/pluginmanager.cpp:168
+msgctxt "Plugin authors' emaila addresses"
+msgid "Email"
+msgstr "ईमेल"
 
-#: src/articlemodel.cpp:116
-msgctxt "Articlelist's column header"
-msgid "Content"
-msgstr "सामान"
+#: src/pluginmanager.cpp:169
+msgctxt "Plugin version"
+msgid "Version"
+msgstr "संस्करन"
 
-#: src/trayicon.cpp:63
-msgid "Akregator - Feed Reader"
-msgstr "ए-के-रेगेटर - फीड पाठक"
+#: src/pluginmanager.cpp:170
+msgctxt "Framework version plugin requires"
+msgid "Framework Version"
+msgstr "फ्रेमवर्क संस्करन"
 
-#: src/trayicon.cpp:120
-#, kde-format
-msgid "Akregator - 1 unread article"
-msgid_plural "Akregator - %1 unread articles"
-msgstr[0] "एकेरेगेटर - 1 बिनपढ़ा आलेख"
-msgstr[1] "एकेरेगेटर - %1 बिनपढ़े आलेख"
+#: src/pluginmanager.cpp:174
+msgid "Plugin Information"
+msgstr "प्लगइन जानकारी"
 
 #: src/loadfeedlistcommand.cpp:72
 #, fuzzy, kde-format
@@ -1845,7 +1845,7 @@ msgstr ""
 #. i18n: ectx: Menu (edit)
 #. i18n: file: src/akregator_part.rc:14
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:235 rc.cpp:325
+#: rc.cpp:235 rc.cpp:322
 msgid "&Edit"
 msgstr "संपादन (&E)"
 
@@ -1853,17 +1853,17 @@ msgstr "संपादन (&E)"
 #. i18n: ectx: Menu (view)
 #. i18n: file: src/akregator_part.rc:21
 #. i18n: ectx: Menu (view)
-#: rc.cpp:238 rc.cpp:328
+#: rc.cpp:238 rc.cpp:325
 msgid "&View"
 msgstr "देखव (&V)"
 
 #. i18n: file: src/akregator_shell.rc:21
 #. i18n: ectx: Menu (go)
-#. i18n: file: src/pageviewer.rc:34
-#. i18n: ectx: Menu (go)
 #. i18n: file: src/akregator_part.rc:31
 #. i18n: ectx: Menu (go)
-#: rc.cpp:241 rc.cpp:322 rc.cpp:331
+#. i18n: file: src/pageviewer.rc:34
+#. i18n: ectx: Menu (go)
+#: rc.cpp:241 rc.cpp:328 rc.cpp:349
 msgid "&Go"
 msgstr "जाव (&G)"
 
@@ -1871,7 +1871,7 @@ msgstr "जाव (&G)"
 #. i18n: ectx: Menu (feed)
 #. i18n: file: src/akregator_part.rc:44
 #. i18n: ectx: Menu (feed)
-#: rc.cpp:244 rc.cpp:334
+#: rc.cpp:244 rc.cpp:331
 #, fuzzy
 msgid "Fee&d"
 msgstr "फीड"
@@ -1880,7 +1880,7 @@ msgstr "फीड"
 #. i18n: ectx: Menu (article)
 #. i18n: file: src/akregator_part.rc:57
 #. i18n: ectx: Menu (article)
-#: rc.cpp:247 rc.cpp:337
+#: rc.cpp:247 rc.cpp:334
 msgid "&Article"
 msgstr "आलेख (&A)"
 
@@ -1888,7 +1888,7 @@ msgstr "आलेख (&A)"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: src/akregator_part.rc:73
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:250 rc.cpp:340
+#: rc.cpp:250 rc.cpp:337
 msgid "&Settings"
 msgstr "सेटिंग (&S)"
 
@@ -1896,7 +1896,7 @@ msgstr "सेटिंग (&S)"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: src/akregator_part.rc:84
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:253 rc.cpp:343
+#: rc.cpp:253 rc.cpp:340
 msgid "Main Toolbar"
 msgstr "मुख्य औजार पट्टी"
 
@@ -1904,7 +1904,7 @@ msgstr "मुख्य औजार पट्टी"
 #. i18n: ectx: ToolBar (browserToolBar)
 #. i18n: file: src/akregator_part.rc:94
 #. i18n: ectx: ToolBar (browserToolBar)
-#: rc.cpp:256 rc.cpp:346
+#: rc.cpp:256 rc.cpp:343
 msgid "Browser Toolbar"
 msgstr "ब्राउज़र औजारपट्टी"
 
@@ -1912,7 +1912,7 @@ msgstr "ब्राउज़र औजारपट्टी"
 #. i18n: ectx: ToolBar (textToSpeechToolBar)
 #. i18n: file: src/akregator_part.rc:102
 #. i18n: ectx: ToolBar (textToSpeechToolBar)
-#: rc.cpp:259 rc.cpp:349
+#: rc.cpp:259 rc.cpp:346
 msgid "Speech Toolbar"
 msgstr "बोलनेढने के औजार पट्टी"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwordquiz\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-03 04:56+0200\n"
+"POT-Creation-Date: 2010-05-22 04:47+0200\n"
 "PO-Revision-Date: 2009-02-24 22:17+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,9 +18,9 @@ msgstr ""
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: kwqcleardialog.cpp:27
-msgid "Clear Contents"
-msgstr ""
+#: kwqtablemodel.cpp:223 kwordquiz.cpp:673 kwordquiz.cpp:730 kwordquiz.cpp:852
+msgid "Untitled"
+msgstr "बिना सीर्सक"
 
 #: kwqtableview.cpp:189
 msgid "Name:_____________________________ Date:__________"
@@ -53,14 +53,6 @@ msgstr ""
 #| msgid "&Select"
 msgid "Select Sound"
 msgstr "चुनव (&S)"
-
-#: flashview.cpp:66 multipleview.cpp:112 qaview.cpp:146
-msgid "Your answer was correct!"
-msgstr "आप मन के उत्तर सही था!"
-
-#: flashview.cpp:71 multipleview.cpp:121 qaview.cpp:157
-msgid "Your answer was incorrect."
-msgstr "आप मन के उत्तर गलत था."
 
 #: prefcardappearance.cpp:80
 msgctxt "Back of the flashcard"
@@ -135,48 +127,6 @@ msgctxt "@item:inmenu undo link sound"
 msgid "Link Sound"
 msgstr ""
 
-#: kwqtutor.cpp:40
-msgid ""
-"<qt>KWordQuiz Tutor displays flashcards on your screen in a way that allows "
-"you to set a certain time interval at which flashcards will pop up.<br /"
-"><br />The flashcards pop up in a non-intrusive way allowing you to carry on "
-"working without stealing the focus from other programs you might be working "
-"with.<br /><br />Be sure to right-click KWordQuiz Tutor icon on the panel "
-"and select Preferences. There you can assign keyboard shortcuts.</qt>"
-msgstr ""
-
-#: kwqtutor.cpp:46
-msgid "Tutor"
-msgstr ""
-
-#: kwqtutor.cpp:56 kwqtutor.cpp:128
-msgid "Start Exercise"
-msgstr ""
-
-#: kwqtutor.cpp:65
-msgid "Configure KWordQuiz Tutor..."
-msgstr ""
-
-#: kwqtutor.cpp:70
-#, fuzzy
-#| msgid "Flashcard"
-msgid "Close Flash Card"
-msgstr "फ्लैसकार्ड"
-
-#: kwqtutor.cpp:75
-#, fuzzy
-#| msgid "&Flip Card"
-msgid "Flip Flash Card"
-msgstr "कार्ड लहुटाव (&F)"
-
-#: kwqtutor.cpp:120
-msgid "Stop Exercise"
-msgstr ""
-
-#: kwqtutor.cpp:142 kwordquiz.cpp:786
-msgid "Open Vocabulary Document"
-msgstr "सब्दावली कागद खोलव"
-
 #: kwordquizprefs.cpp:36
 msgctxt "@title:group general settings"
 msgid "General"
@@ -235,30 +185,9 @@ msgctxt "@title:group special character settings"
 msgid "Special Characters"
 msgstr "विसिस्ट अक्छर"
 
-#: kwqtutorprefs.cpp:31
-msgctxt "@title:group tutor settings"
-msgid "Tutor"
-msgstr ""
-
-#: kwqtutorprefs.cpp:31
-#, fuzzy
-#| msgctxt "@title:group editor settings"
-#| msgid "Editor Settings"
-msgctxt "@title:group tutor settings"
-msgid "Tutor Settings"
-msgstr "संपादक सेटिंग"
-
-#: kwqtutorprefs.cpp:34
-#, fuzzy
-#| msgid "Shortcut"
-msgctxt "Shortcuts Config"
-msgid "Shortcuts"
-msgstr "सार्टकट"
-
-#: kwqtutorprefs.cpp:34
-#, fuzzy
-msgid "Shortcuts Settings"
-msgstr "प्रस्नोत्तर सेटिंग"
+#: multipleview.cpp:112 qaview.cpp:146 flashview.cpp:66
+msgid "Your answer was correct!"
+msgstr "आप मन के उत्तर सही था!"
 
 #. i18n: file: multipleviewbase.ui:558
 #. i18n: ectx: property (text), widget (QLabel, lblCorrectHeader)
@@ -271,6 +200,10 @@ msgstr "प्रस्नोत्तर सेटिंग"
 #: multipleview.cpp:119 qaview.cpp:155 rc.cpp:420 rc.cpp:858
 msgid "Correct Answer"
 msgstr "सही उत्तर"
+
+#: multipleview.cpp:121 qaview.cpp:157 flashview.cpp:71
+msgid "Your answer was incorrect."
+msgstr "आप मन के उत्तर गलत था."
 
 #. i18n: file: multipleviewbase.ui:353
 #. i18n: ectx: property (text), widget (QLabel, lblPreviousQuestionHeader)
@@ -299,6 +232,11 @@ msgstr "आप मन के उत्तर"
 #: multipleview.cpp:147 qaview.cpp:184
 msgid "Summary"
 msgstr "सारांस"
+
+#: dlglanguage.cpp:31
+#, fuzzy
+msgid "Column Settings"
+msgstr "प्रस्नोत्तर सेटिंग"
 
 #: kwqcommands.h:106
 msgid "Font"
@@ -677,10 +615,6 @@ msgctxt "@info:status ready"
 msgid "Ready"
 msgstr "तैयार"
 
-#: kwordquiz.cpp:673 kwordquiz.cpp:730 kwordquiz.cpp:852 kwqtablemodel.cpp:223
-msgid "Untitled"
-msgstr "बिना सीर्सक"
-
 #: kwordquiz.cpp:722
 msgid ""
 "The current document has been modified.\n"
@@ -696,6 +630,10 @@ msgstr "नवा कागद विंडो खोलत हे..."
 #: kwordquiz.cpp:778
 msgid "&Merge selected files with the current document"
 msgstr "चुने गे फाइल मन ल अभी हाल के कागद के साथ सम्मिलित करव (&M)"
+
+#: kwordquiz.cpp:786 kwqtutor.cpp:142
+msgid "Open Vocabulary Document"
+msgstr "सब्दावली कागद खोलव"
 
 #: kwordquiz.cpp:851
 msgid "Saving file..."
@@ -862,6 +800,69 @@ msgstr "%1 -> %2 बेतरतीब"
 msgid "%1 &lt;-&gt; %2 Randomly"
 msgstr "%1 &lt;-&gt; %2 बेतरतीब"
 
+#: kwqtutor.cpp:40
+msgid ""
+"<qt>KWordQuiz Tutor displays flashcards on your screen in a way that allows "
+"you to set a certain time interval at which flashcards will pop up.<br /"
+"><br />The flashcards pop up in a non-intrusive way allowing you to carry on "
+"working without stealing the focus from other programs you might be working "
+"with.<br /><br />Be sure to right-click KWordQuiz Tutor icon on the panel "
+"and select Preferences. There you can assign keyboard shortcuts.</qt>"
+msgstr ""
+
+#: kwqtutor.cpp:46
+msgid "Tutor"
+msgstr ""
+
+#: kwqtutor.cpp:56 kwqtutor.cpp:128
+msgid "Start Exercise"
+msgstr ""
+
+#: kwqtutor.cpp:65
+msgid "Configure KWordQuiz Tutor..."
+msgstr ""
+
+#: kwqtutor.cpp:70
+#, fuzzy
+#| msgid "Flashcard"
+msgid "Close Flash Card"
+msgstr "फ्लैसकार्ड"
+
+#: kwqtutor.cpp:75
+#, fuzzy
+#| msgid "&Flip Card"
+msgid "Flip Flash Card"
+msgstr "कार्ड लहुटाव (&F)"
+
+#: kwqtutor.cpp:120
+msgid "Stop Exercise"
+msgstr ""
+
+#: kwqtutorprefs.cpp:31
+msgctxt "@title:group tutor settings"
+msgid "Tutor"
+msgstr ""
+
+#: kwqtutorprefs.cpp:31
+#, fuzzy
+#| msgctxt "@title:group editor settings"
+#| msgid "Editor Settings"
+msgctxt "@title:group tutor settings"
+msgid "Tutor Settings"
+msgstr "संपादक सेटिंग"
+
+#: kwqtutorprefs.cpp:34
+#, fuzzy
+#| msgid "Shortcut"
+msgctxt "Shortcuts Config"
+msgid "Shortcuts"
+msgstr "सार्टकट"
+
+#: kwqtutorprefs.cpp:34
+#, fuzzy
+msgid "Shortcuts Settings"
+msgstr "प्रस्नोत्तर सेटिंग"
+
 #: prefcharacter.cpp:44
 msgid "Action"
 msgstr "काम"
@@ -878,6 +879,21 @@ msgstr "अक्छर"
 #, kde-format
 msgid "Special Character %1"
 msgstr "विसिस्ट अक्छर %1"
+
+#: dlgspecchar.cpp:24
+msgctxt "@title:window select character dialog"
+msgid "Select Character"
+msgstr "अक्छर चुनव"
+
+#: dlgspecchar.cpp:31
+msgctxt "@action:button select"
+msgid "&Select"
+msgstr "चुनव (&S)"
+
+#: dlgspecchar.cpp:32
+msgctxt "@info:tooltip select this character"
+msgid "Select this character"
+msgstr "ये अक्छर चुनव"
 
 #: wqprintdialogpage.cpp:30
 msgid "Vocabulary Options"
@@ -966,25 +982,9 @@ msgstr ""
 msgid "File to open"
 msgstr "फाइल जऊन ल खोलना हे"
 
-#: dlglanguage.cpp:31
-#, fuzzy
-msgid "Column Settings"
-msgstr "प्रस्नोत्तर सेटिंग"
-
-#: dlgspecchar.cpp:24
-msgctxt "@title:window select character dialog"
-msgid "Select Character"
-msgstr "अक्छर चुनव"
-
-#: dlgspecchar.cpp:31
-msgctxt "@action:button select"
-msgid "&Select"
-msgstr "चुनव (&S)"
-
-#: dlgspecchar.cpp:32
-msgctxt "@info:tooltip select this character"
-msgid "Select this character"
-msgstr "ये अक्छर चुनव"
+#: kwqcleardialog.cpp:27
+msgid "Clear Contents"
+msgstr ""
 
 #. i18n: file: cleardialogbase.ui:21
 #. i18n: ectx: property (title), widget (KButtonGroup, clearButtonGroup)
