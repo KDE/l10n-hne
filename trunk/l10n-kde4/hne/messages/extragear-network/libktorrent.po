@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-20 05:04+0200\n"
+"POT-Creation-Date: 2010-06-22 06:13+0200\n"
 "PO-Revision-Date: 2009-03-10 17:56+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -146,7 +146,7 @@ msgstr "ठीक"
 msgid "Announcing"
 msgstr "कनेक्सन होवत हे"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:85
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
 #, fuzzy, kde-format
 #| msgid "Error: "
 msgid "Error: %1"
@@ -192,66 +192,72 @@ msgstr "अवैध यूआरएल %1"
 msgid "Invalid tracker URL"
 msgstr "अवैध यूआरएल:"
 
-#: src/torrent/torrentstats.cpp:71
+#: src/torrent/torrentstats.cpp:72
 msgid "Not started"
 msgstr "सुरू नइ होइस"
 
-#: src/torrent/torrentstats.cpp:73
+#: src/torrent/torrentstats.cpp:74
 #, fuzzy
 #| msgid "Download speed"
 msgid "Download completed"
 msgstr "डाउनलोड गति"
 
-#: src/torrent/torrentstats.cpp:75
+#: src/torrent/torrentstats.cpp:76
 msgid "Seeding completed"
 msgstr ""
 
-#: src/torrent/torrentstats.cpp:77
+#: src/torrent/torrentstats.cpp:78
 #, fuzzy
 #| msgid "Pending"
 msgctxt "Status of a torrent file"
 msgid "Seeding"
 msgstr "लंबित"
 
-#: src/torrent/torrentstats.cpp:79
+#: src/torrent/torrentstats.cpp:80
 msgid "Downloading"
 msgstr "डाउनलोड करत हे"
 
-#: src/torrent/torrentstats.cpp:81
+#: src/torrent/torrentstats.cpp:82
 msgid "Stalled"
 msgstr "रुका होइस"
 
-#: src/torrent/torrentstats.cpp:83
+#: src/torrent/torrentstats.cpp:84
 msgid "Stopped"
 msgstr "रुक गिस"
 
-#: src/torrent/torrentstats.cpp:87
+#: src/torrent/torrentstats.cpp:88
 msgid "Allocating diskspace"
 msgstr ""
 
-#: src/torrent/torrentstats.cpp:89
+#: src/torrent/torrentstats.cpp:90
 #, fuzzy
 msgid "Queued for seeding"
 msgstr "डाउनलोड करत हे"
 
-#: src/torrent/torrentstats.cpp:89
+#: src/torrent/torrentstats.cpp:90
 #, fuzzy
 msgid "Queued for downloading"
 msgstr "डाउनलोड करत हे"
 
-#: src/torrent/torrentstats.cpp:91
+#: src/torrent/torrentstats.cpp:92
 #, fuzzy
 #| msgid "Checking Data ..."
 msgid "Checking data"
 msgstr "डाटा चेक करत हे..."
 
-#: src/torrent/torrentstats.cpp:93
+#: src/torrent/torrentstats.cpp:94
 msgid "Stopped. No space left on device."
 msgstr ""
 
-#: src/torrent/torrentstats.cpp:95
+#: src/torrent/torrentstats.cpp:96
 msgid "Paused"
 msgstr "ठहरा"
+
+#: src/torrent/torrentstats.cpp:98
+#, fuzzy
+#| msgid "Pending"
+msgid "Superseeding"
+msgstr "लंबित"
 
 #: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
 #: src/torrent/torrentcreator.cpp:292
@@ -283,38 +289,38 @@ msgstr "फ़ाइल%1 : %2 खोल नइ सकिस"
 msgid "Parse Error"
 msgstr "व्याख्या गलती"
 
-#: src/torrent/torrentcontrol.cpp:305
+#: src/torrent/torrentcontrol.cpp:307
 msgid "Error writing to disk, do you have enough diskspace ?"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:543
+#: src/torrent/torrentcontrol.cpp:545
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
 "torrent is probably corrupt or is not a valid torrent file."
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:573
+#: src/torrent/torrentcontrol.cpp:575
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent:<br/><b>%1</b><br/>The torrent "
 "is probably corrupt or is not a valid torrent file."
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:584
+#: src/torrent/torrentcontrol.cpp:586
 #, fuzzy, kde-format
 #| msgid "Failed to create %1 : %2"
 msgid "Unable to create %1 : %2"
 msgstr "बना नइ सकिस %1 : %2"
 
-#: src/torrent/torrentcontrol.cpp:599
+#: src/torrent/torrentcontrol.cpp:601
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:604
+#: src/torrent/torrentcontrol.cpp:606
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr ""
@@ -549,6 +555,21 @@ msgstr "कनेक्सन बन्द"
 
 #: src/upnp/httprequest.cpp:121
 msgid "Timeout occurred"
+msgstr ""
+
+#: examples/ktcli/main.cpp:40
+#, fuzzy
+#| msgid "Document to open"
+msgid "Torrent to open"
+msgstr "कागद जऊन ल खोलना हे"
+
+#: examples/ktcli/main.cpp:41 examples/ktcli/main.cpp:42
+#, fuzzy
+msgid "Port to use"
+msgstr "सूचना"
+
+#: examples/ktcli/main.cpp:44
+msgid "ktcli"
 msgstr ""
 
 #, fuzzy
@@ -1117,9 +1138,6 @@ msgstr ""
 #~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "जोरिस गुइसन"
-
-#~ msgid "Document to open"
-#~ msgstr "कागद जऊन ल खोलना हे"
 
 #~ msgid "Proxy"
 #~ msgstr "प्राक्सी"
