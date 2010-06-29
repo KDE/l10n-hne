@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecipes\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-27 04:54+0200\n"
+"POT-Creation-Date: 2010-06-29 08:24+0200\n"
 "PO-Revision-Date: 2009-02-21 12:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -187,32 +187,32 @@ msgstr ""
 msgid "Print"
 msgstr " छापव (&P)"
 
-#: actionshandlers/recipeactionshandler.cpp:386
+#: actionshandlers/recipeactionshandler.cpp:388
 msgid "Compressed Krecipes format"
 msgstr "संपीडित के-रेसिपि फार्मेट"
 
-#: actionshandlers/recipeactionshandler.cpp:387
+#: actionshandlers/recipeactionshandler.cpp:389
 msgid "Web page"
 msgstr "वेब पेज"
 
-#: actionshandlers/recipeactionshandler.cpp:388 pref.cpp:498
+#: actionshandlers/recipeactionshandler.cpp:390 pref.cpp:498
 msgid "Plain Text"
 msgstr "सादा पाठ"
 
-#: actionshandlers/recipeactionshandler.cpp:389
+#: actionshandlers/recipeactionshandler.cpp:391
 msgid "Web Book"
 msgstr ""
 
-#: actionshandlers/recipeactionshandler.cpp:430 krecipes.cpp:693
+#: actionshandlers/recipeactionshandler.cpp:432 krecipes.cpp:693
 #, kde-format
 msgid "File \"%1\" exists.  Are you sure you want to overwrite it?"
 msgstr "फाइल \"%1\" मौजूद हे. का आप मन एखर ऊपर ही मेटाय के लिखना चाहू?"
 
-#: actionshandlers/recipeactionshandler.cpp:430
+#: actionshandlers/recipeactionshandler.cpp:432
 msgid "Saving recipe"
 msgstr "रेसिपि सहेजी जा रही हे"
 
-#: actionshandlers/recipeactionshandler.cpp:434
+#: actionshandlers/recipeactionshandler.cpp:436
 msgid "Saving recipes..."
 msgstr "रेसिपि सहेजी जा रही हे..."
 
@@ -3878,13 +3878,17 @@ msgstr "के-रेसिपि मं आप मन के स्वागत
 msgid "Database Type"
 msgstr "डाटाबेस किसिम"
 
-#: setupassistant.cpp:53 setupassistant.cpp:65 pref.cpp:63
-msgid "Server Settings"
-msgstr "सर्वर सेटिंग"
+#: setupassistant.cpp:53
+msgid "Database Management System Settings"
+msgstr ""
 
 #: setupassistant.cpp:57 setupassistant.cpp:61
 msgid "Database Permissions"
 msgstr "डाटाबेस अनुमति"
+
+#: setupassistant.cpp:65
+msgid "Server Settings"
+msgstr "सर्वर सेटिंग"
 
 #: setupassistant.cpp:69
 msgid "Initialize Database"
@@ -4132,7 +4136,7 @@ msgid ""
 "recipe?"
 msgstr ""
 
-#: krecipesview.cpp:768 krecipesview.cpp:843
+#: krecipesview.cpp:768 krecipesview.cpp:855
 msgid "Unsaved changes"
 msgstr "सहेजिस नइ गिस बदलाव"
 
@@ -4141,42 +4145,48 @@ msgstr "सहेजिस नइ गिस बदलाव"
 msgid "Are you sure you want to permanently remove the recipe, %1?"
 msgstr "का सही मं आप मन रेसिपि %1 ल हमेसा बर मिटाना चाहथो ?"
 
-#: krecipesview.cpp:787
+#: krecipesview.cpp:787 krecipesview.cpp:835
 msgid "Confirm remove"
 msgstr "मेटाव के पुस्टि करव"
 
-#: krecipesview.cpp:841
+#: krecipesview.cpp:834
+#, fuzzy
+#| msgid "Are you sure you want to permanently remove the recipe, %1?"
+msgid "Are you sure you want to permanently remove the selected recipes?"
+msgstr "का सही मं आप मन रेसिपि %1 ल हमेसा बर मिटाना चाहथो ?"
+
+#: krecipesview.cpp:853
 msgid ""
 "A recipe contains unsaved changes.\n"
 "Do you want to save changes made to this recipe before creating a new recipe?"
 msgstr ""
 
-#: krecipesview.cpp:987
+#: krecipesview.cpp:999
 msgid "Unable to setup database"
 msgstr "डाटाबेस सेटअप करे मं अक्छम"
 
-#: krecipesview.cpp:999
+#: krecipesview.cpp:1011
 msgid "Code error. No DB support has been included. Exiting"
 msgstr "कोड गलती. कोनो डीबी समर्थन जोड़े नइ गे हे. बाहिर होवत हे"
 
-#: krecipesview.cpp:1161 krecipesview.cpp:1187
+#: krecipesview.cpp:1173 krecipesview.cpp:1199
 msgid "Code error. No DB support was built in. Exiting"
 msgstr "कोड गलती. कोनो डीबी समर्थन बनाय नइ गे हे. बाहिर होवत हे"
 
-#: krecipesview.cpp:1170
+#: krecipesview.cpp:1182
 msgid "Unable to open database"
 msgstr "डाटाबेस ल खोले मं अक्छम"
 
-#: krecipesview.cpp:1192
+#: krecipesview.cpp:1204
 msgid "DB started correctly\n"
 msgstr "डीबी सही किसम से चालू करिस\n"
 
-#: krecipesview.cpp:1200
+#: krecipesview.cpp:1212
 #, kde-format
 msgid "The configured database type (%1) is unsupported."
 msgstr "कान्फिगर डाटाबेस किसिम (%1) असमर्थित हे."
 
-#: krecipesview.cpp:1200
+#: krecipesview.cpp:1212
 msgid ""
 "Unsupported database type. Database must be either MySQL, SQLite, or "
 "PostgreSQL."
@@ -4466,9 +4476,16 @@ msgstr ""
 msgid "Configure"
 msgstr "मेटाव के पुस्टि करव"
 
+#: pref.cpp:63
+#, fuzzy
+#| msgid "Database Type"
+msgid "Database System"
+msgstr "डाटाबेस किसिम"
+
 #: pref.cpp:65
-#, kde-format
-msgid "Database Server Options (%1)"
+#, fuzzy, kde-format
+#| msgid "Database Server Options (%1)"
+msgid "Database Management System Options (%1)"
 msgstr "डाटाबेस सर्वर विकल्प (%1)"
 
 #: pref.cpp:72
