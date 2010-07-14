@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-07-06 05:39+0200\n"
+"POT-Creation-Date: 2010-07-14 05:18+0200\n"
 "PO-Revision-Date: 2009-02-27 21:59+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1254,7 +1254,7 @@ msgid "Encrypt"
 msgstr "एनक्रिप्ट"
 
 #: newcertificatewizard/newcertificatewizard.cpp:1232
-#: dialogs/certifycertificatedialog.cpp:172
+#: dialogs/certifycertificatedialog.cpp:184
 msgid "Certify"
 msgstr "प्रमानित"
 
@@ -2429,40 +2429,60 @@ msgctxt "@title:window"
 msgid "Error"
 msgstr "गलती"
 
-#: crypto/createchecksumscontroller.cpp:203
+#: crypto/createchecksumscontroller.cpp:83
+msgctxt "@info"
+msgid "No checksum files have been created."
+msgstr ""
+
+#: crypto/createchecksumscontroller.cpp:84
+msgctxt "@info"
+msgid "These checksum files have been successfull created:"
+msgstr ""
+
+#: crypto/createchecksumscontroller.cpp:87
+msgctxt "@info"
+msgid "There were no errors."
+msgstr ""
+
+#: crypto/createchecksumscontroller.cpp:88
+msgctxt "@info"
+msgid "The following errors were encountered:"
+msgstr ""
+
+#: crypto/createchecksumscontroller.cpp:266
 msgid ""
 "Create Checksums: input files must be either all checksum files or all files "
 "to be checksummed, not a mixture of both."
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:224
+#: crypto/createchecksumscontroller.cpp:287
 #, fuzzy
 #| msgid "Initial query string"
 msgid "Initializing..."
 msgstr "इनिसियल क्वैरी स्ट्रिंग"
 
-#: crypto/createchecksumscontroller.cpp:224 mainwindow.cpp:661
+#: crypto/createchecksumscontroller.cpp:287 mainwindow.cpp:661
 msgid "Cancel"
 msgstr "खारिज"
 
-#: crypto/createchecksumscontroller.cpp:227
+#: crypto/createchecksumscontroller.cpp:291
 msgctxt "@title:window"
 msgid "Create Checksum Progress"
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:454
+#: crypto/createchecksumscontroller.cpp:519
 #, fuzzy, kde-format
 #| msgid "Could not remove file \"%1\" for overwriting."
 msgid "Failed to open file \"%1\" for reading and writing: %2"
 msgstr "फाइल ल मिटा के लिखे बर \"%1\" ल मिटा नइ सकिस."
 
-#: crypto/createchecksumscontroller.cpp:470
+#: crypto/createchecksumscontroller.cpp:535
 #: crypto/verifychecksumscontroller.cpp:552
 #, kde-format
 msgid "Error while running %1: %2"
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:473
+#: crypto/createchecksumscontroller.cpp:538
 #: crypto/verifychecksumscontroller.cpp:555
 #, fuzzy, kde-format
 #| msgid ""
@@ -2473,32 +2493,32 @@ msgstr ""
 "जीपीजीएसएम चलाय मं फेल:\n"
 "%1"
 
-#: crypto/createchecksumscontroller.cpp:477
+#: crypto/createchecksumscontroller.cpp:542
 #: commands/changeroottrustcommand.cpp:318
 #, kde-format
 msgid "Failed to move file %1 to its final destination, %2: %3"
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:503
+#: crypto/createchecksumscontroller.cpp:569
 msgid "No checksum programs defined."
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:515
+#: crypto/createchecksumscontroller.cpp:581
 #: crypto/verifychecksumscontroller.cpp:588
 msgid "Scanning directories..."
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:530
+#: crypto/createchecksumscontroller.cpp:596
 #: crypto/verifychecksumscontroller.cpp:601
 msgid "Calculating total size..."
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:547
+#: crypto/createchecksumscontroller.cpp:613
 #, kde-format
 msgid "Checksumming (%2) in %1"
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:556
+#: crypto/createchecksumscontroller.cpp:624
 #: crypto/verifychecksumscontroller.cpp:629
 msgid "Done."
 msgstr "पूरा."
@@ -2745,73 +2765,85 @@ msgstr ""
 msgid "S/MIME export file:"
 msgstr ""
 
-#: dialogs/certifycertificatedialog.cpp:127
+#: dialogs/certifycertificatedialog.cpp:129
 msgid "<b>Step 1:</b> Please select the user IDs you wish to certify."
 msgstr ""
 
+#: dialogs/certifycertificatedialog.cpp:138
+msgid "I have verified the fingerprint"
+msgstr ""
+
+#: dialogs/certifycertificatedialog.cpp:157
+#, fuzzy, kde-format
+#| msgid "Certificate Usage:"
+msgid ""
+"Certificate: %1\n"
+"Fingerprint: %2"
+msgstr "प्रमानपत्र उपयोग:"
+
 #. i18n: file: dialogs/certificationoptionswidget.ui:44
 #. i18n: ectx: property (text), widget (QLabel, singleKeyLabel)
-#: dialogs/certifycertificatedialog.cpp:185 rc.cpp:587
+#: dialogs/certifycertificatedialog.cpp:197 rc.cpp:587
 #, no-c-format, kde-format
 msgid "Certification will be performed using certificate %1."
 msgstr ""
 
-#: dialogs/certifycertificatedialog.cpp:215
+#: dialogs/certifycertificatedialog.cpp:227
 msgid "Signed user IDs:"
 msgstr "हस्ताक्छरित कमइया आईडी:"
 
-#: dialogs/certifycertificatedialog.cpp:218
+#: dialogs/certifycertificatedialog.cpp:230
 msgid "<b>Summary:</b>"
 msgstr ""
 
-#: dialogs/certifycertificatedialog.cpp:222
+#: dialogs/certifycertificatedialog.cpp:234
 msgid "Check level:"
 msgstr "स्तर जांचव:"
 
-#: dialogs/certifycertificatedialog.cpp:225
+#: dialogs/certifycertificatedialog.cpp:237
 msgid "Selected secret certificate:"
 msgstr "गुप्त प्रमानपत्र चुनव:"
 
-#: dialogs/certifycertificatedialog.cpp:244
+#: dialogs/certifycertificatedialog.cpp:256
 msgid "Default certificate"
 msgstr "डिफाल्ट प्रमानपत्र"
 
-#: dialogs/certifycertificatedialog.cpp:248
+#: dialogs/certifycertificatedialog.cpp:260
 msgid "No statement made"
 msgstr ""
 
-#: dialogs/certifycertificatedialog.cpp:251
+#: dialogs/certifycertificatedialog.cpp:263
 msgid "Not checked"
 msgstr ""
 
-#: dialogs/certifycertificatedialog.cpp:254
+#: dialogs/certifycertificatedialog.cpp:266
 msgid "Casually checked"
 msgstr ""
 
-#: dialogs/certifycertificatedialog.cpp:257
+#: dialogs/certifycertificatedialog.cpp:269
 msgid "Thoroughly checked"
 msgstr ""
 
-#: dialogs/certifycertificatedialog.cpp:272
+#: dialogs/certifycertificatedialog.cpp:284
 msgid ""
 "The certificate was not certified because it was already certified by the "
 "same certificate."
 msgstr ""
 
-#: dialogs/certifycertificatedialog.cpp:274
+#: dialogs/certifycertificatedialog.cpp:286
 #, kde-format
 msgid "The certificate could not be certified. <b>Error</b>: %1"
 msgstr ""
 
-#: dialogs/certifycertificatedialog.cpp:276
+#: dialogs/certifycertificatedialog.cpp:288
 msgid "Certification canceled."
 msgstr "प्रमानपत्र खारिज"
 
-#: dialogs/certifycertificatedialog.cpp:278
+#: dialogs/certifycertificatedialog.cpp:290
 msgid "Certification successful."
 msgstr ""
 
-#: dialogs/certifycertificatedialog.cpp:351
+#: dialogs/certifycertificatedialog.cpp:363
 #, kde-format
 msgctxt "arg is name, email of certificate holder"
 msgid "Certify Certificate: %1"
@@ -3836,15 +3868,35 @@ msgctxt "The Audit Log is a detailed error log from the gnupg backend"
 msgid "Show Audit Log"
 msgstr ""
 
-#: commands/lookupcertificatescommand.cpp:276
-#: commands/lookupcertificatescommand.cpp:281
+#: commands/lookupcertificatescommand.cpp:210
+msgid ""
+"<p>You seem to be searching for a fingerprint or a key-id.</p><p>Different "
+"keyservers expect different ways to search for these. Some require a \"0x\" "
+"prefix, while others require there be no such prefix.</p><p>If your search "
+"does not yield any results, try removing the 0x prefix from your search.</p>"
+msgstr ""
+
+#: commands/lookupcertificatescommand.cpp:214
+msgid ""
+"<p>You seem to be searching for a fingerprint or a key-id.</p><p>Different "
+"keyservers expect different ways to search for these. Some require a \"0x\" "
+"prefix, while others require there be no such prefix.</p><p>If your search "
+"does not yield any results, try adding the 0x prefix to your search.</p>"
+msgstr ""
+
+#: commands/lookupcertificatescommand.cpp:218
+msgid "Hex-String Search"
+msgstr ""
+
+#: commands/lookupcertificatescommand.cpp:291
+#: commands/lookupcertificatescommand.cpp:296
 #, fuzzy, kde-format
 #| msgid "Export Certificates to Server..."
 msgctxt "@title %1:\"OpenPGP\" or \"CMS\""
 msgid "%1 Certificate Server"
 msgstr "सर्वर मं प्रमानपत्र निर्यात करव..."
 
-#: commands/lookupcertificatescommand.cpp:309
+#: commands/lookupcertificatescommand.cpp:324
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -3852,7 +3904,7 @@ msgid ""
 "%1"
 msgstr ""
 
-#: commands/lookupcertificatescommand.cpp:317
+#: commands/lookupcertificatescommand.cpp:332
 msgctxt "@info"
 msgid ""
 "<para>The query result has been truncated.</para><para>Either the local or a "
@@ -3862,12 +3914,12 @@ msgid ""
 "have to refine your search.</para>"
 msgstr ""
 
-#: commands/lookupcertificatescommand.cpp:325
+#: commands/lookupcertificatescommand.cpp:340
 msgctxt "@title"
 msgid "Result Truncated"
 msgstr ""
 
-#: commands/lookupcertificatescommand.cpp:354
+#: commands/lookupcertificatescommand.cpp:369
 msgctxt "@info"
 msgid ""
 "<para>You do not have any directory servers configured.</para><para>You need "
@@ -3876,7 +3928,7 @@ msgid ""
 "Kleopatra</interface>.</para>"
 msgstr ""
 
-#: commands/lookupcertificatescommand.cpp:359
+#: commands/lookupcertificatescommand.cpp:374
 msgctxt "@title"
 msgid "No Directory Servers Configured"
 msgstr ""
@@ -4050,8 +4102,8 @@ msgstr ""
 #: commands/importcertificatescommand.cpp:343
 #: commands/importcertificatescommand.cpp:406
 #: commands/importcertificatescommand.cpp:443
-#: commands/importcertificatefromfilecommand.cpp:139
-#: commands/importcertificatefromfilecommand.cpp:144
+#: commands/importcertificatefromfilecommand.cpp:137
+#: commands/importcertificatefromfilecommand.cpp:143
 #: commands/importcertificatefromclipboardcommand.cpp:116
 #: commands/importcertificatefromclipboardcommand.cpp:120
 msgid "Certificate Import Failed"
@@ -4176,12 +4228,13 @@ msgctxt "@info"
 msgid "OpenPGP certificates refreshed successfully."
 msgstr "प्रमानपत्र सफलता से बनाय गिस"
 
-#: commands/importcertificatefromfilecommand.cpp:139
-#, kde-format
-msgid "Could not open file %1 for reading"
-msgstr ""
+#: commands/importcertificatefromfilecommand.cpp:137
+#, fuzzy, kde-format
+#| msgid "Could not remove file \"%1\" for overwriting."
+msgid "Could not open file %1 for reading: %2"
+msgstr "फाइल ल मिटा के लिखे बर \"%1\" ल मिटा नइ सकिस."
 
-#: commands/importcertificatefromfilecommand.cpp:144
+#: commands/importcertificatefromfilecommand.cpp:143
 #, kde-format
 msgid "Could not determine certificate type of %1."
 msgstr ""
@@ -4847,32 +4900,33 @@ msgid ""
 "included with Gpg4win are Free Software."
 msgstr ""
 
-#: aboutdata.cpp:120 aboutdata.cpp:127
+#: aboutdata.cpp:112
+msgid ""
+"This Free Software product was developed mostly as part of commercial "
+"contracts by the following companies:<ul><li><a href='http://intevation."
+"net'>Intevation GmbH</a> (Projekt coordination, QA, Compendium)</li><li><a "
+"href='http://www.g10code.com'>g10 Code GmbH</a> (Crypto Funktionality, "
+"GpgOL, GpgEX, GPA)</li> <li><a href='http://www.kdab.com'>KDAB</a> "
+"(Kleopatra)</li></ul>The following persons have contributed (as of 20100706):"
+msgstr ""
+
+#: aboutdata.cpp:121
+msgid ""
+"Till Adam<br>Marcus Brinkmann<br>Brigitte Hamilton<br>Bernhard "
+"Herzog<br>Werner Koch<br>Colin Leroy<br>Marc Mutz<br>Marcel Newmann<br>Frank "
+"Osterfeld<br>Bernhard Reiter<br>Florian v. Samson<br>Emanuel Schütze<br>Dr. "
+"Jan-Oliver Wagner"
+msgstr ""
+
+#: aboutdata.cpp:145 aboutdata.cpp:152
 #, fuzzy
 #| msgid "Passed"
 msgctxt "Version string is a guess"
 msgid "guessed"
 msgstr "सफल"
 
-#: aboutdata.cpp:143
+#: aboutdata.cpp:168
 msgid "Gpg4win"
-msgstr ""
-
-#: aboutdata.cpp:147
-msgid "Intevation GmbH (Project Management)"
-msgstr ""
-
-#: aboutdata.cpp:148
-msgid "g¹ºcode GmbH (Crypto Functionality, GpgOL, GpgEX, GPA)"
-msgstr ""
-
-#: aboutdata.cpp:149
-#, fuzzy
-msgid "KDAB (Kleopatra)"
-msgstr "क्लीयोपेट्रा"
-
-#: aboutdata.cpp:150 aboutdata.cpp:151
-msgid "Gpg4win is being developed by the following companies:"
 msgstr ""
 
 #: crlview.cpp:61
@@ -4895,28 +4949,28 @@ msgstr "प्रमानपत्र प्रबंधक गलती"
 msgid "The GpgSM process ended prematurely because of an unexpected error."
 msgstr "एक अप्रत्यासित गलती के कारन जीपीजी-एसएम काम अचानक खतम होइस."
 
-#: main.cpp:134
+#: main.cpp:136
 msgid "Performing Self-Check..."
 msgstr ""
 
-#: main.cpp:145
+#: main.cpp:147
 msgctxt "did not pass"
 msgid "Self-Check Failed"
 msgstr ""
 
-#: main.cpp:148
+#: main.cpp:150
 msgid "Self-Check Passed"
 msgstr ""
 
-#: main.cpp:163
+#: main.cpp:165
 msgid "Loading certificate cache..."
 msgstr ""
 
-#: main.cpp:166
+#: main.cpp:168
 msgid "Certificate cache loaded."
 msgstr ""
 
-#: main.cpp:197
+#: main.cpp:199
 msgctxt "@info"
 msgid ""
 "<para>The version of the <application>GpgME</application> library you are "
@@ -4926,16 +4980,16 @@ msgid ""
 "administrator for help in resolving this issue.</para>"
 msgstr ""
 
-#: main.cpp:201
+#: main.cpp:203
 msgctxt "@title"
 msgid "GpgME Too Old"
 msgstr ""
 
-#: main.cpp:282
+#: main.cpp:286
 msgid "GPG UI Server Error"
 msgstr ""
 
-#: main.cpp:283
+#: main.cpp:287
 #, kde-format
 msgid ""
 "<qt>The Kleopatra GPG UI Server Module could not be initialized.<br/>The "
@@ -6748,6 +6802,10 @@ msgid ""
 "clients which do not support inline display of D/V results, such as MS "
 "Outlook."
 msgstr ""
+
+#, fuzzy
+#~ msgid "KDAB (Kleopatra)"
+#~ msgstr "क्लीयोपेट्रा"
 
 #, fuzzy
 #~| msgid "Export Certificates..."
