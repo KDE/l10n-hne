@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kanagram\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:44+0200\n"
+"POT-Creation-Date: 2010-08-23 05:30+0200\n"
 "PO-Revision-Date: 2009-02-22 11:43+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -67,7 +67,7 @@ msgstr "सामान्य"
 
 #. i18n: file: vocabsettingswidget.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, VocabSettingsWidget)
-#: kanagram.cpp:841 rc.cpp:92
+#: kanagram.cpp:841 rc.cpp:104
 msgid "Vocabularies"
 msgstr "सब्द संग्रह"
 
@@ -377,7 +377,9 @@ msgstr "के साथ खेलें:"
 
 #. i18n: file: mainsettingswidget.ui:93
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_useSounds)
-#: rc.cpp:86
+#. i18n: file: kanagram.kcfg:13
+#. i18n: ectx: label, entry (useSounds), group (kanagram)
+#: rc.cpp:86 rc.cpp:95
 msgid "Turns sounds on/off."
 msgstr "अवाज चालू/बन्द करथे."
 
@@ -387,27 +389,47 @@ msgstr "अवाज चालू/बन्द करथे."
 msgid "Use sou&nds"
 msgstr "अवाज परयोग करव (&n)"
 
+#. i18n: file: kanagram.kcfg:9
+#. i18n: ectx: label, entry (hintHideTime), group (kanagram)
+#: rc.cpp:92
+msgid ""
+"This setting allows you to set how long Kanagram's hint bubble is shown."
+msgstr ""
+"ये सेटिंग आप मन ल ए सेट करन देथे  कि के-एनाग्राम के युक्ति बुलबुला कतका देर तक दिखत रहिही."
+
+#. i18n: file: kanagram.kcfg:17
+#. i18n: ectx: label, entry (defaultVocab), group (kanagram)
+#: rc.cpp:98
+msgid "Set the default vocabulary"
+msgstr "डिफाल्ट सब्दावली सेट करव"
+
+#. i18n: file: kanagram.kcfg:21
+#. i18n: ectx: label, entry (dataLanguage), group (kanagram)
+#: rc.cpp:101
+msgid "Set the default translation"
+msgstr "डिफाल्ट अनुवाद सेट करव"
+
 #. i18n: file: vocabsettingswidget.ui:48
 #. i18n: ectx: property (whatsThis), widget (QPushButton, btnCreateNew)
-#: rc.cpp:95
+#: rc.cpp:107
 msgid "Creates a new vocabulary."
 msgstr "नवा सब्दसंग्रह बनाथे."
 
 #. i18n: file: vocabsettingswidget.ui:51
 #. i18n: ectx: property (text), widget (QPushButton, btnCreateNew)
-#: rc.cpp:98
+#: rc.cpp:110
 msgid "Create &New"
 msgstr "नवा बनाव (&N)"
 
 #. i18n: file: vocabsettingswidget.ui:58
 #. i18n: ectx: property (toolTip), widget (QPushButton, btnDownloadNew)
-#: rc.cpp:101
+#: rc.cpp:113
 msgid "Download new vocabulary from  \"Get hot new Stuff\""
 msgstr ""
 
 #. i18n: file: vocabsettingswidget.ui:61
 #. i18n: ectx: property (text), widget (QPushButton, btnDownloadNew)
-#: rc.cpp:104
+#: rc.cpp:116
 #, fuzzy
 #| msgid "Download New Vocabularies"
 msgid "Download new vocabulary"
@@ -415,31 +437,31 @@ msgstr "नवा सब्दसंग्रह डाउनलोड करव
 
 #. i18n: file: vocabsettingswidget.ui:73
 #. i18n: ectx: property (whatsThis), widget (QPushButton, btnEdit)
-#: rc.cpp:107
+#: rc.cpp:119
 msgid "Edits the selected vocabulary."
 msgstr "चुने गे सब्द संग्रह ल संपादित करथे."
 
 #. i18n: file: vocabsettingswidget.ui:76
 #. i18n: ectx: property (text), widget (QPushButton, btnEdit)
-#: rc.cpp:110
+#: rc.cpp:122
 msgid "&Edit"
 msgstr "संपादन (&E)"
 
 #. i18n: file: vocabsettingswidget.ui:83
 #. i18n: ectx: property (whatsThis), widget (QTreeWidget, lviewVocab)
-#: rc.cpp:113
+#: rc.cpp:125
 msgid "The list of installed vocabularies."
 msgstr "इनस्टाल सब्द संग्रह के सूची"
 
 #. i18n: file: vocabsettingswidget.ui:90
 #. i18n: ectx: property (text), widget (QTreeWidget, lviewVocab)
-#: rc.cpp:116
+#: rc.cpp:128
 msgid "Title"
 msgstr "सीर्सक"
 
 #. i18n: file: vocabsettingswidget.ui:95
 #. i18n: ectx: property (text), widget (QTreeWidget, lviewVocab)
-#: rc.cpp:119
+#: rc.cpp:131
 msgid "Description"
 msgstr "वर्नन"
 
@@ -454,18 +476,6 @@ msgstr "बदलाव मन ल सहेजे बर गोठ"
 #: vocabedit.cpp:126
 msgid "New Item"
 msgstr ""
-
-#~ msgid ""
-#~ "This setting allows you to set how long Kanagram's hint bubble is shown."
-#~ msgstr ""
-#~ "ये सेटिंग आप मन ल ए सेट करन देथे  कि के-एनाग्राम के युक्ति बुलबुला कतका देर तक दिखत "
-#~ "रहिही."
-
-#~ msgid "Set the default vocabulary"
-#~ msgstr "डिफाल्ट सब्दावली सेट करव"
-
-#~ msgid "Set the default translation"
-#~ msgstr "डिफाल्ट अनुवाद सेट करव"
 
 #~ msgid "New Stuff"
 #~ msgstr "नवा सामग्री"
