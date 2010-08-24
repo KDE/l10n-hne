@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-07-16 05:07+0200\n"
+"POT-Creation-Date: 2010-08-24 06:08+0200\n"
 "PO-Revision-Date: 2009-03-01 09:45+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -164,33 +164,39 @@ msgctxt "@info:whatsthis"
 msgid "A very simple LGPL C++ header file"
 msgstr "एक बहुत ही सादा एलजीपीएल सी++ सीर्सक फाइल"
 
+#. i18n: file: plugins/filetree/ui.rc:4
+#. i18n: ectx: ToolBar (katefiletreeplugin)
+#: rc.cpp:59
+msgid "Kate File Tree"
+msgstr ""
+
 #. i18n: file: data/kateui.rc:5
 #. i18n: ectx: Menu (file)
-#: rc.cpp:59
+#: rc.cpp:62
 msgid "&File"
 msgstr "फाइल (&F)"
 
 #. i18n: file: data/kateui.rc:35
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:62
+#: rc.cpp:65
 msgid "&Edit"
 msgstr "संपादन (&E)"
 
 #. i18n: file: data/kateui.rc:46
 #. i18n: ectx: Menu (go)
-#: rc.cpp:65
+#: rc.cpp:68
 msgid "&Go"
 msgstr ""
 
 #. i18n: file: data/kateui.rc:55
 #. i18n: ectx: Menu (view)
-#: rc.cpp:68
+#: rc.cpp:71
 msgid "&View"
 msgstr "देखव (&V)"
 
 #. i18n: file: data/kateui.rc:58
 #. i18n: ectx: Menu (view-split)
-#: rc.cpp:71
+#: rc.cpp:74
 #, fuzzy
 #| msgid "Split Ve&rtical"
 msgid "Split View"
@@ -198,31 +204,31 @@ msgstr "खड़ा विभाजित करव (&r)"
 
 #. i18n: file: data/kateui.rc:71
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:74
+#: rc.cpp:77
 msgid "&Tools"
 msgstr "औजार (&T)"
 
 #. i18n: file: data/kateui.rc:79
 #. i18n: ectx: Menu (sessions)
-#: rc.cpp:77
+#: rc.cpp:80
 msgid "Sess&ions"
 msgstr "सत्र (&i)"
 
 #. i18n: file: data/kateui.rc:91
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:80
+#: rc.cpp:83
 msgid "&Settings"
 msgstr "सेटिंग (&S)"
 
 #. i18n: file: data/kateui.rc:95
 #. i18n: ectx: Menu (help)
-#: rc.cpp:83
+#: rc.cpp:86
 msgid "&Help"
 msgstr "मदद (&H)"
 
 #. i18n: file: data/kateui.rc:100
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:86
+#: rc.cpp:89
 msgid "Main Toolbar"
 msgstr "मुख्य औजार पट्टी"
 
@@ -1070,11 +1076,12 @@ msgstr ""
 "इहां आप मन के-एटीई के सब्बो मिलत प्लगइन्स ल देख सकथो . जऊन मं चेक मार्क हे, ओ मन लोडेड "
 "हे, अउ अगला बार जब के-एटीई चालू होही तहां लोड होही."
 
-#: app/katefilelist.cpp:55
+#: app/katefilelist.cpp:55 plugins/filetree/katefiletree.cpp:46
 msgid "Close"
 msgstr "बन्द करव"
 
 #: app/katefilelist.cpp:58 app/katemainwindow.cpp:327
+#: plugins/filetree/katefiletree.cpp:48
 msgid "Close the current document."
 msgstr "अभी हाल के कागद बन्द करव"
 
@@ -1624,6 +1631,21 @@ msgstr " लाइन"
 #: app/kateviewspace.cpp:370
 msgid " BLOCK "
 msgstr " ब्लाक"
+
+#: plugins/filetree/katefiletreeplugin.cpp:43
+#: plugins/filetree/katefiletreeplugin.cpp:92
+#, fuzzy
+#| msgid "Document Name"
+msgid "Document Tree"
+msgstr "कागद नाम"
+
+#: plugins/filetree/katefiletreeplugin.cpp:43
+msgid "Show open documents in a tree"
+msgstr ""
+
+#: plugins/filetree/katefiletreeplugin.cpp:130
+msgid "&Show Active"
+msgstr ""
 
 #, fuzzy
 #~| msgid "Plugins"
