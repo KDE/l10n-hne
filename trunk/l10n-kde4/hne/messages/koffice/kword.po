@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-10 06:11+0200\n"
+"POT-Creation-Date: 2010-08-30 05:27+0200\n"
 "PO-Revision-Date: 2009-03-03 11:08+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -215,7 +215,7 @@ msgstr "पेज आकार अउ हासिए (&&)"
 
 #. i18n: file: part/dialogs/KWStartupWidget.ui:51
 #. i18n: ectx: attribute (title), widget (QWidget, columnsTab)
-#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:42
+#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:40
 msgid "Columns"
 msgstr "खंभा"
 
@@ -952,6 +952,12 @@ msgstr "पाठ फ्रेम्स जोड़व"
 msgid "Geometry"
 msgstr "ज्यामिति"
 
+#: part/dialogs/KWPageSettingsDialog.cpp:92
+#, fuzzy
+#| msgid "Page Properties"
+msgid "Change Page Properties"
+msgstr "पेज गुन"
+
 #: part/dialogs/KWSelectBookmarkDialog.cpp:79
 msgid "Rename Bookmark"
 msgstr ""
@@ -995,10 +1001,6 @@ msgstr "फ्रेम बनाव "
 msgid "Create custom outline"
 msgstr "मनमाफिक आउटलाइन बनाव"
 
-#: part/commands/KWPagePropertiesCommand.cpp:36
-msgid "Page Properties"
-msgstr "पेज गुन"
-
 #: part/commands/KWPageRemoveCommand.cpp:32
 msgid "Remove Page"
 msgstr "पेज मेटाव"
@@ -1009,31 +1011,41 @@ msgstr "पेज मेटाव"
 msgid "Clip Frame"
 msgstr "फ्रेम उठाव"
 
-#: part/frames/KWTextFrameSet.cpp:88
+#: part/commands/KWChangePageStyleCommand.cpp:25
+#, fuzzy
+#| msgid "Page edge:"
+msgid "Set Page Style"
+msgstr "पेज किनारा:"
+
+#: part/commands/KWNewPageStyleCommand.cpp:27
+#, fuzzy
+#| msgid "Insert Page"
+msgid "Insert Page Style"
+msgstr "पेज भरव"
+
+#: part/commands/KWPageStylePropertiesCommand.cpp:36
+msgid "Page Properties"
+msgstr "पेज गुन"
+
+#: part/frames/KWTextFrameSet.cpp:90
 msgid "Odd Pages Header"
 msgstr "विसम पेज सीर्स-सूचना"
 
-#: part/frames/KWTextFrameSet.cpp:91
+#: part/frames/KWTextFrameSet.cpp:93
 msgid "Even Pages Header"
 msgstr "सम पेज सीर्स-सूचना"
 
-#: part/frames/KWTextFrameSet.cpp:94
+#: part/frames/KWTextFrameSet.cpp:96
 msgid "Odd Pages Footer"
 msgstr "विसम पेज पाद-सूचना"
 
-#: part/frames/KWTextFrameSet.cpp:97
+#: part/frames/KWTextFrameSet.cpp:99
 msgid "Even Pages Footer"
 msgstr "सम पेज पाद-सूचना"
 
-#: part/frames/KWTextFrameSet.cpp:100
+#: part/frames/KWTextFrameSet.cpp:102
 msgid "Main text"
 msgstr "मुख्य पाठ"
-
-#: part/frames/KWTextFrameSet.cpp:103
-#, fuzzy
-#| msgid "Page Break"
-msgid "Page Background"
-msgstr "पेज ब्रेक"
 
 #: part/KWStatusBar.cpp:39
 msgid "Modified"
@@ -1565,6 +1577,11 @@ msgstr "जरूरी पाठ अवयव नइ मिलिस, केव
 #: part/KWDocument.cpp:835
 msgid "Installation Error"
 msgstr "संस्थापन गलती"
+
+#, fuzzy
+#~| msgid "Page Break"
+#~ msgid "Page Background"
+#~ msgstr "पेज ब्रेक"
 
 #, fuzzy
 #~| msgid "Format"
