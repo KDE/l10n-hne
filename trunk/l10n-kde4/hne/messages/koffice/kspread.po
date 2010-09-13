@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kspread\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-10 06:16+0200\n"
+"POT-Creation-Date: 2010-09-13 05:55+0200\n"
 "PO-Revision-Date: 2009-03-03 11:45+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -2485,15 +2485,15 @@ msgstr "जिम्बाबवे डालर"
 msgid "ZWD"
 msgstr "ZWD"
 
-#: DocBase.cpp:221
+#: DocBase.cpp:220
 msgid "Invalid OASIS OpenDocument file. No office:body tag found."
 msgstr "अवैध ओएसिस ओपनडाक्यूमेंट फाइल. कोनो आफिस:बाडी टैग नइ मिलिस."
 
-#: DocBase.cpp:235
+#: DocBase.cpp:234
 msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
 msgstr "अवैध ओएसिस ओपनडाक्यूमेंट फाइल. office:body के भीतर कोनो टैग नइ मिलिस."
 
-#: DocBase.cpp:237
+#: DocBase.cpp:236
 #, kde-format
 msgid ""
 "This document is not a spreadsheet, but %1. Please try opening it with the "
@@ -3256,8 +3256,7 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox5)
 #. i18n: file: kspread.rc:102
 #. i18n: ectx: Menu (MergeCellMenu)
-#: rc.cpp:249 rc.cpp:773 commands/MergeCommand.cpp:134 commands/Undo.cpp:1878
-#: ui/CellToolBase.cpp:440
+#: rc.cpp:249 rc.cpp:773 commands/MergeCommand.cpp:134 ui/CellToolBase.cpp:440
 msgid "Merge Cells"
 msgstr "कक्छ मन ल मिलाव"
 
@@ -4332,8 +4331,7 @@ msgstr "साफ करव"
 
 #. i18n: file: kspread.rc:41
 #. i18n: ectx: Menu (Delete)
-#: rc.cpp:755 commands/DeleteCommand.cpp:36 commands/Undo.cpp:1292
-#: part/View.cpp:504
+#: rc.cpp:755 commands/DeleteCommand.cpp:36 part/View.cpp:503
 msgid "Delete"
 msgstr "मेटाव"
 
@@ -4353,7 +4351,8 @@ msgstr ""
 
 #. i18n: file: kspread.rc:74
 #. i18n: ectx: Menu (Insert)
-#: rc.cpp:764 ui/CharSelectDia.cpp:57 ui/CharSelectDia.cpp:74
+#: rc.cpp:764 dialogs/CharacterSelectDialog.cpp:59
+#: dialogs/CharacterSelectDialog.cpp:76
 msgid "&Insert"
 msgstr "प्रविस्ट (&I)"
 
@@ -4451,11 +4450,11 @@ msgstr "सक्रिय सीट"
 msgid "Color/Border"
 msgstr "रंग/किनारा"
 
-#: Sheet.cpp:915
+#: Sheet.cpp:914
 msgid "Dependency"
 msgstr "डिपेंडेंसी"
 
-#: Sheet.cpp:2878
+#: Sheet.cpp:2880
 msgid "Invalid document. Sheet name is empty."
 msgstr "अवैध कागद. सीट नाम खाली हे."
 
@@ -8752,7 +8751,7 @@ msgstr "NPV(100%;4;5;7) = 4.125"
 
 #. i18n: file: functions/financial.xml:907
 #. i18n: file: functions/financial.xml:950
-#: xml_doc.cpp:1817 xml_doc.cpp:1840 part/View.cpp:401
+#: xml_doc.cpp:1817 xml_doc.cpp:1840 part/View.cpp:400
 msgid "Last"
 msgstr "आखरी"
 
@@ -15793,7 +15792,7 @@ msgstr "सनि"
 msgid "Sun"
 msgstr "रवि"
 
-#: commands/AutoFillCommand.cpp:692 commands/Undo.cpp:1931
+#: commands/AutoFillCommand.cpp:692
 msgid "Autofill"
 msgstr "अपन आपभरव"
 
@@ -15922,28 +15921,26 @@ msgid "Adjust Rows"
 msgstr "पंक्तियाँ एडजस्ट करव"
 
 #: commands/RowColumnManipulators.cpp:562
-#: commands/RowColumnManipulators.cpp:581 commands/Undo.cpp:278
-#: ui/CellToolBase.cpp:468 ui/CellToolBase_p.cpp:1279
+#: commands/RowColumnManipulators.cpp:581 ui/CellToolBase.cpp:468
+#: ui/CellToolBase_p.cpp:1279
 msgid "Insert Columns"
 msgstr "खंभा भरव"
 
-#: commands/RowColumnManipulators.cpp:583 commands/Undo.cpp:215
-#: ui/CellToolBase.cpp:474
+#: commands/RowColumnManipulators.cpp:583 ui/CellToolBase.cpp:474
 msgid "Remove Columns"
 msgstr "खंभा मेटाव"
 
 #: commands/RowColumnManipulators.cpp:685
-#: commands/RowColumnManipulators.cpp:704 commands/Undo.cpp:392
-#: ui/CellToolBase.cpp:506 ui/CellToolBase_p.cpp:1291
+#: commands/RowColumnManipulators.cpp:704 ui/CellToolBase.cpp:506
+#: ui/CellToolBase_p.cpp:1291
 msgid "Insert Rows"
 msgstr "पंक्तियाँ जोड़व"
 
-#: commands/RowColumnManipulators.cpp:706 commands/Undo.cpp:321
-#: ui/CellToolBase.cpp:512
+#: commands/RowColumnManipulators.cpp:706 ui/CellToolBase.cpp:512
 msgid "Remove Rows"
 msgstr "पंक्तियाँ मेटाव"
 
-#: commands/SheetCommands.cpp:38 part/View.cpp:1740
+#: commands/SheetCommands.cpp:38 part/View.cpp:1739
 msgid "Rename Sheet"
 msgstr "सीट के नाम बदलव"
 
@@ -15952,7 +15949,7 @@ msgstr "सीट के नाम बदलव"
 msgid "Hide Sheet %1"
 msgstr "सीट लुकाव %1"
 
-#: commands/SheetCommands.cpp:60 part/View.cpp:316
+#: commands/SheetCommands.cpp:60 part/View.cpp:315
 msgid "Hide Sheet"
 msgstr "सीट लुकाव"
 
@@ -15970,12 +15967,12 @@ msgstr "सीट दिखाव"
 msgid "Add Sheet"
 msgstr "सीट जोड़व"
 
-#: commands/SheetCommands.cpp:139 part/View.cpp:295
+#: commands/SheetCommands.cpp:139 part/View.cpp:294
 msgid "Duplicate Sheet"
 msgstr "सीट के नकल बनाव"
 
-#: commands/SheetCommands.cpp:177 part/View.cpp:301 part/View.cpp:1712
-#: part/View.cpp:1716 part/View.cpp:1935
+#: commands/SheetCommands.cpp:177 part/View.cpp:300 part/View.cpp:1711
+#: part/View.cpp:1715 part/View.cpp:1934
 msgid "Remove Sheet"
 msgstr "सीट मेटाव"
 
@@ -16002,84 +15999,6 @@ msgstr "सैली रीसेट करव"
 #: commands/StyleCommand.cpp:187
 msgid "Change Style"
 msgstr "सैली बदलव"
-
-#: commands/Undo.cpp:436 ui/CellToolBase.cpp:517
-msgid "Hide Rows"
-msgstr "पंक्तियाँ लुकाव"
-
-#: commands/Undo.cpp:491 ui/CellToolBase.cpp:479
-msgid "Hide Columns"
-msgstr "खंभा लुकाव"
-
-#: commands/Undo.cpp:547 dialogs/ShowColRowDialog.cpp:66
-#: ui/CellToolBase.cpp:532
-msgid "Show Rows"
-msgstr "पंक्तियाँ दिखाव"
-
-#: commands/Undo.cpp:603 dialogs/ShowColRowDialog.cpp:63
-#: ui/CellToolBase.cpp:494
-msgid "Show Columns"
-msgstr "खंभा देखाव"
-
-#: commands/Undo.cpp:661 part/commands/PageLayoutCommand.cpp:35
-#: part/dialogs/PageLayoutDialog.cpp:223
-msgid "Set Page Layout"
-msgstr "पेज ले-आउट सेट करव"
-
-#: commands/Undo.cpp:781
-msgid "Change Format"
-msgstr "फार्मेट बदलव"
-
-#: commands/Undo.cpp:1045 dialogs/AngleDialog.cpp:48
-#: dialogs/AngleDialog.cpp:80
-msgid "Change Angle"
-msgstr "कोन बदलव"
-
-#: commands/Undo.cpp:1077 dialogs/SortDialog.cpp:319
-msgid "Sort"
-msgstr "छांटव"
-
-#: commands/Undo.cpp:1435
-msgid "Drag & Drop"
-msgstr "खींचव अउ छोड़व"
-
-#: commands/Undo.cpp:1516
-msgid "Resize"
-msgstr "आकार बदलव"
-
-#: commands/Undo.cpp:1681
-msgid "Change Text"
-msgstr "पाठ बदलव"
-
-#: commands/Undo.cpp:1994 commands/Undo.cpp:2038
-msgid "Insert Cell"
-msgstr "कक्छ भरव"
-
-#: commands/Undo.cpp:2081 commands/Undo.cpp:2130
-msgid "Remove Cell"
-msgstr "कक्छ मेटाव"
-
-#: commands/Undo.cpp:2179 dialogs/ConditionalDialog.cpp:261
-#: ui/CellToolBase.cpp:587
-msgid "Conditional Styles"
-msgstr "सर्तयुक्त सैली"
-
-#: commands/Undo.cpp:2241
-msgid "Paste"
-msgstr "चिपकाव"
-
-#: commands/Undo.cpp:2243
-msgid "Paste & Insert"
-msgstr "चिपकाव अउ भरव"
-
-#: commands/Undo.cpp:2506
-msgid "Style of Cell"
-msgstr "कक्छ के सैली"
-
-#: commands/Undo.cpp:2606 dialogs/DatabaseDialog.cpp:76
-#: dialogs/DatabaseDialog.cpp:561
-msgid "Insert Data From Database"
-msgstr "डाटाबेस से डाटा भरव"
 
 #: commands/ValidityCommand.cpp:62
 msgid "Remove Validity Check"
@@ -16122,6 +16041,10 @@ msgstr ""
 msgid "Replace Named Area"
 msgstr "नामित छेत्र बदलव"
 
+#: dialogs/AngleDialog.cpp:48 dialogs/AngleDialog.cpp:80
+msgid "Change Angle"
+msgstr "कोन बदलव"
+
 #: dialogs/AngleDialog.cpp:62
 msgid "Angle:"
 msgstr "कोनः"
@@ -16153,6 +16076,18 @@ msgstr "सीट-सैली एक्सएमएल फाइल '%1' नइ
 #, kde-format
 msgid "Parsing error in sheet-style XML file %1."
 msgstr "सीट-सैली एक्सएमएल फाइल %1 मं पार्सिंग गलती."
+
+#: dialogs/CharacterSelectDialog.cpp:50 dialogs/CharacterSelectDialog.cpp:68
+#, fuzzy
+#| msgid "S&pecial Character..."
+msgid "Select Character"
+msgstr "विसिस्ट अक्छर...(&p)"
+
+#: dialogs/CharacterSelectDialog.cpp:60 dialogs/CharacterSelectDialog.cpp:77
+#, fuzzy
+#| msgid "The text that will replace characters in old text"
+msgid "Insert the selected character in the text"
+msgstr "पाठ जऊन जुन्ना पाठ मं अक्छर से बदले जाही"
 
 #: dialogs/CommentDialog.cpp:45
 msgid "Cell Comment"
@@ -16224,6 +16159,10 @@ msgstr "कक्छ सैली"
 msgid "different from"
 msgstr "से भिन्न"
 
+#: dialogs/ConditionalDialog.cpp:261 ui/CellToolBase.cpp:587
+msgid "Conditional Styles"
+msgstr "सर्तयुक्त सैली"
+
 #: dialogs/ConditionalDialog.cpp:476
 msgid ""
 "If the first value is a number, the second value also has to be a number."
@@ -16239,27 +16178,27 @@ msgid "Consolidate"
 msgstr "कंसालिडेट"
 
 #: dialogs/ConsolidateDialog.cpp:104 dialogs/SubtotalDialog.cpp:284
-#: part/View.cpp:461 part/dialogs/PreferenceDialog.cpp:326
+#: part/View.cpp:460 part/dialogs/PreferenceDialog.cpp:326
 msgid "Sum"
 msgstr "जोड़"
 
 #: dialogs/ConsolidateDialog.cpp:105 dialogs/SubtotalDialog.cpp:276
-#: part/View.cpp:482 part/dialogs/PreferenceDialog.cpp:329
+#: part/View.cpp:481 part/dialogs/PreferenceDialog.cpp:329
 msgid "Average"
 msgstr "औसत"
 
 #: dialogs/ConsolidateDialog.cpp:106 dialogs/SubtotalDialog.cpp:277
-#: part/View.cpp:489 part/dialogs/PreferenceDialog.cpp:330
+#: part/View.cpp:488 part/dialogs/PreferenceDialog.cpp:330
 msgid "Count"
 msgstr "गिनती"
 
 #: dialogs/ConsolidateDialog.cpp:107 dialogs/SubtotalDialog.cpp:279
-#: part/View.cpp:475 part/dialogs/PreferenceDialog.cpp:328
+#: part/View.cpp:474 part/dialogs/PreferenceDialog.cpp:328
 msgid "Max"
 msgstr "सबसे अधिक"
 
 #: dialogs/ConsolidateDialog.cpp:108 dialogs/SubtotalDialog.cpp:280
-#: part/View.cpp:468 part/dialogs/PreferenceDialog.cpp:327
+#: part/View.cpp:467 part/dialogs/PreferenceDialog.cpp:327
 msgid "Min"
 msgstr "न्यून."
 
@@ -16365,6 +16304,10 @@ msgstr "पाठ से खंभा"
 #: dialogs/CSVDialog.cpp:114
 msgid "Cannot open input file."
 msgstr "इनपुट फाइल खोल नइ सकिस."
+
+#: dialogs/DatabaseDialog.cpp:76 dialogs/DatabaseDialog.cpp:561
+msgid "Insert Data From Database"
+msgstr "डाटाबेस से डाटा भरव"
 
 #: dialogs/DatabaseDialog.cpp:84
 msgid "Type:"
@@ -16565,7 +16508,7 @@ msgid "You have to select at least one column."
 msgstr "आप मन ल कम से कम एक खंभा चुनना होही."
 
 #: dialogs/DatabaseDialog.cpp:737 dialogs/DatabaseDialog.cpp:738
-#: part/View.cpp:454 part/dialogs/PreferenceDialog.cpp:324
+#: part/View.cpp:453 part/dialogs/PreferenceDialog.cpp:324
 #: part/dialogs/PreferenceDialog.cpp:332 part/dialogs/PreferenceDialog.cpp:460
 #: ui/CellToolBase.cpp:338
 msgid "None"
@@ -17125,8 +17068,8 @@ msgstr "हाल ही के फाइल:"
 msgid "No Entries"
 msgstr "कोई प्रविस्टि नइ"
 
-#: dialogs/LinkDialog.cpp:152 part/View.cpp:370 part/View.cpp:1024
-#: part/View.cpp:1454
+#: dialogs/LinkDialog.cpp:152 part/View.cpp:369 part/View.cpp:1023
+#: part/View.cpp:1453
 msgid "Cell"
 msgstr "कक्छ"
 
@@ -17345,9 +17288,17 @@ msgid ""
 "If the step is negative, the start value must be greater then the end value."
 msgstr ""
 
+#: dialogs/ShowColRowDialog.cpp:63 ui/CellToolBase.cpp:494
+msgid "Show Columns"
+msgstr "खंभा देखाव"
+
 #: dialogs/ShowColRowDialog.cpp:64
 msgid "Select hidden columns to show:"
 msgstr "देखाय बर छुपे खंभा मन ल चुनव:"
+
+#: dialogs/ShowColRowDialog.cpp:66 ui/CellToolBase.cpp:532
+msgid "Show Rows"
+msgstr "पंक्तियाँ दिखाव"
 
 #: dialogs/ShowColRowDialog.cpp:67
 msgid "Select hidden rows to show:"
@@ -17388,6 +17339,10 @@ msgstr "पहिली खंभा मं सीर्सक हे(&F)"
 #| msgid "&First row contains headers"
 msgid "&First row contains column headers"
 msgstr "पहली पंक्ति मं सीर्सक हे(&F)"
+
+#: dialogs/SortDialog.cpp:319
+msgid "Sort"
+msgstr "छांटव"
 
 #: dialogs/SortDialog.cpp:547
 #, fuzzy
@@ -17455,7 +17410,7 @@ msgstr "महा योग"
 msgid "Column '%1' "
 msgstr "खंभा '%1' "
 
-#: dialogs/SubtotalDialog.cpp:278 part/View.cpp:496
+#: dialogs/SubtotalDialog.cpp:278 part/View.cpp:495
 #: part/dialogs/PreferenceDialog.cpp:331
 msgid "CountA"
 msgstr "CountA"
@@ -17758,7 +17713,7 @@ msgstr "ब्रेड हार्ड्स"
 msgid "Implemented, reviewed and tested various functions"
 msgstr "लागू करिस, समीक्छा करिस अउ विविध फंक्सनों ल जांचा."
 
-#: part/CanvasBase.cpp:799
+#: part/CanvasBase.cpp:798
 msgid "Comment:"
 msgstr "टिप्पनीः"
 
@@ -17803,25 +17758,25 @@ msgstr "सैलियों ल लोड नइ कर सकिस."
 msgid "Invalid document. No map tag."
 msgstr "अवैध कागद. कोनो मैप टैग नइ."
 
-#: part/HeaderItems.cpp:187 part/HeaderWidgets.cpp:180
+#: part/HeaderItems.cpp:189 part/HeaderWidgets.cpp:182
 #, kde-format
 msgid "Height: %1 %2"
 msgstr "ऊँचाई: %1 %2"
 
-#: part/HeaderItems.cpp:189 part/HeaderWidgets.cpp:182
+#: part/HeaderItems.cpp:191 part/HeaderWidgets.cpp:184
 msgid "Hide Row"
 msgstr "पंक्ति लुकाव"
 
-#: part/HeaderItems.cpp:360 part/HeaderWidgets.cpp:352
+#: part/HeaderItems.cpp:362 part/HeaderWidgets.cpp:354
 #, kde-format
 msgid "Width: %1 %2"
 msgstr "चौडाई: %1 %2"
 
-#: part/HeaderItems.cpp:362 part/HeaderWidgets.cpp:354
+#: part/HeaderItems.cpp:364 part/HeaderWidgets.cpp:356
 msgid "Hide Column"
 msgstr "खंभा लुकाव"
 
-#: part/Headers.cpp:264 part/Headers.cpp:783 ui/CellToolBase.cpp:2125
+#: part/Headers.cpp:266 part/Headers.cpp:785 ui/CellToolBase.cpp:2125
 #: ui/CellToolBase.cpp:2153 ui/CellToolBase.cpp:2167 ui/CellToolBase.cpp:2189
 #: ui/CellToolBase.cpp:2229 ui/CellToolBase.cpp:2257 ui/CellToolBase.cpp:2271
 #: ui/CellToolBase.cpp:2293
@@ -17846,289 +17801,289 @@ msgstr "छापे बर सीट %1 नइ मिलिस"
 msgid "Nothing to print for sheet(s) %1."
 msgstr "सीट %1 मं छापे बर कुछ नइ हे."
 
-#: part/View.cpp:284
+#: part/View.cpp:283
 #, fuzzy
 #| msgid "Sheet Properties"
 msgid "Sheet Properties..."
 msgstr "सीट गुन"
 
-#: part/View.cpp:287
+#: part/View.cpp:286
 msgid "Modify current sheet's properties"
 msgstr "अभी हाल के सीट के गुन मन ल संपादित करव"
 
-#: part/View.cpp:289 part/View.cpp:300 part/dialogs/PageLayoutDialog.cpp:145
+#: part/View.cpp:288 part/View.cpp:299 part/dialogs/PageLayoutDialog.cpp:145
 msgid "Sheet"
 msgstr "सीट"
 
-#: part/View.cpp:290 part/View.cpp:1930
+#: part/View.cpp:289 part/View.cpp:1929
 msgid "Insert Sheet"
 msgstr "सीट भरव"
 
-#: part/View.cpp:291
+#: part/View.cpp:290
 msgid "Insert a new sheet"
 msgstr "नवा सीट भरव"
 
-#: part/View.cpp:296
+#: part/View.cpp:295
 msgid "Duplicate the selected sheet"
 msgstr "चुने गे सीट के अनुकृति बनाव"
 
-#: part/View.cpp:302 part/View.cpp:1931 part/View.cpp:1936
+#: part/View.cpp:301 part/View.cpp:1930 part/View.cpp:1935
 msgid "Remove the active sheet"
 msgstr "सक्रिय सीट मेटाव"
 
-#: part/View.cpp:306
+#: part/View.cpp:305
 msgid "Rename Sheet..."
 msgstr "सीट के नाम बदलव..."
 
-#: part/View.cpp:309
+#: part/View.cpp:308
 msgid "Rename the active sheet"
 msgstr "सक्रिय सीट के नाम बदलव"
 
-#: part/View.cpp:311
+#: part/View.cpp:310
 msgid "Show Sheet..."
 msgstr "सीट दिखाव..."
 
-#: part/View.cpp:314
+#: part/View.cpp:313
 msgid "Show a hidden sheet"
 msgstr "लुकाए सीट देखाव"
 
-#: part/View.cpp:319
+#: part/View.cpp:318
 msgid "Hide the active sheet"
 msgstr "सक्रिय सीट लुकाव"
 
-#: part/View.cpp:321
+#: part/View.cpp:320
 msgid "Page Layout..."
 msgstr "पेज ले-आउट..."
 
-#: part/View.cpp:324
+#: part/View.cpp:323
 msgid "Specify the layout of the spreadsheet for a printout"
 msgstr "छापे बर स्प्रेडसीट के खाका निरधारित करव"
 
-#: part/View.cpp:326 part/View.cpp:1703
+#: part/View.cpp:325 part/View.cpp:1702
 msgid "Reset Print Range"
 msgstr "छपाीई सीमा रीसेट करव"
 
-#: part/View.cpp:329
+#: part/View.cpp:328
 msgid "Reset the print range in the current sheet"
 msgstr "अभी हाल के सीट मं छपाई सीमा रीसेट करव"
 
-#: part/View.cpp:331
+#: part/View.cpp:330
 msgid "Page Borders"
 msgstr "पेज किनारा"
 
-#: part/View.cpp:332
+#: part/View.cpp:331
 msgid "Show on the spreadsheet where the page borders will be"
 msgstr "वर्कसीट दिखाव जहां पेज किनारा हो"
 
-#: part/View.cpp:336
+#: part/View.cpp:335
 msgid "Recalculate Sheet"
 msgstr "सीट के गनना फिर से करव"
 
-#: part/View.cpp:338 part/View.cpp:346
+#: part/View.cpp:337 part/View.cpp:345
 msgid "Recalculate"
 msgstr "फिर से गनना करव"
 
-#: part/View.cpp:342
+#: part/View.cpp:341
 msgid "Recalculate the value of every cell in the current worksheet"
 msgstr "अभी हाल के वर्कसीट मं हर एक कक्छ के मूल्य ल फिर से गनना करव"
 
-#: part/View.cpp:344
+#: part/View.cpp:343
 msgid "Recalculate Document"
 msgstr "कागद फिर से गनना करव"
 
-#: part/View.cpp:350
+#: part/View.cpp:349
 msgid "Recalculate the value of every cell in all worksheets"
 msgstr "सब्बो वर्कसीटों मं हर एक कक्छ के मूल्य ल फिर से गनना करव"
 
-#: part/View.cpp:352
+#: part/View.cpp:351
 msgid "Protect &Sheet..."
 msgstr "सीट संरक्छित करव... (&S)"
 
-#: part/View.cpp:354
+#: part/View.cpp:353
 msgid "Protect the sheet from being modified"
 msgstr "सीट ल परिवर्धित होए से संरक्छित करव"
 
-#: part/View.cpp:358
+#: part/View.cpp:357
 msgid "Protect &Document..."
 msgstr "कागद संरक्छित करव... (&D)"
 
-#: part/View.cpp:360
+#: part/View.cpp:359
 msgid "Protect the document from being modified"
 msgstr "कागद ल परिवर्धित होए से संरक्छित करव"
 
-#: part/View.cpp:365
+#: part/View.cpp:364
 msgid "&Create Template From Document..."
 msgstr "कागद से टैम्प्लेट तैयार करव... (&C)"
 
-#: part/View.cpp:369
+#: part/View.cpp:368
 msgid "Anchor"
 msgstr "एंकर"
 
-#: part/View.cpp:371 part/View.cpp:1024
+#: part/View.cpp:370 part/View.cpp:1023
 msgid "Page"
 msgstr "पेज"
 
-#: part/View.cpp:373
+#: part/View.cpp:372
 msgid "Switch shape anchoring"
 msgstr ""
 
-#: part/View.cpp:380
+#: part/View.cpp:379
 msgid "Next Sheet"
 msgstr "अगला सीट"
 
-#: part/View.cpp:381
+#: part/View.cpp:380
 msgid "Next"
 msgstr "अगला"
 
-#: part/View.cpp:382
+#: part/View.cpp:381
 msgid "Move to the next sheet"
 msgstr "अगला सीट मं जाव"
 
-#: part/View.cpp:387
+#: part/View.cpp:386
 msgid "Previous Sheet"
 msgstr "पिछला सीट"
 
-#: part/View.cpp:388
+#: part/View.cpp:387
 msgid "Previous"
 msgstr "पिछला"
 
-#: part/View.cpp:389
+#: part/View.cpp:388
 msgid "Move to the previous sheet"
 msgstr "पिछला सीट मं जाव"
 
-#: part/View.cpp:394
+#: part/View.cpp:393
 msgid "First Sheet"
 msgstr "पहिली सीट"
 
-#: part/View.cpp:395
+#: part/View.cpp:394
 msgid "First"
 msgstr "पहिली"
 
-#: part/View.cpp:396
+#: part/View.cpp:395
 msgid "Move to the first sheet"
 msgstr "पहिली सीट मं जाव"
 
-#: part/View.cpp:400
+#: part/View.cpp:399
 msgid "Last Sheet"
 msgstr "आखरी सीट"
 
-#: part/View.cpp:402
+#: part/View.cpp:401
 msgid "Move to the last sheet"
 msgstr "आखरी सीट मं जाव"
 
-#: part/View.cpp:408
+#: part/View.cpp:407
 msgid "Column Header"
 msgstr "खंभा सीर्सक"
 
-#: part/View.cpp:409
+#: part/View.cpp:408
 msgid "Show the column header"
 msgstr "खंभा सीर्सक देखाव"
 
-#: part/View.cpp:414
+#: part/View.cpp:413
 msgid "Row Header"
 msgstr "पंक्ति सीर्सक"
 
-#: part/View.cpp:415
+#: part/View.cpp:414
 msgid "Show the row header"
 msgstr "पंक्ति हेडर देखाव"
 
-#: part/View.cpp:420
+#: part/View.cpp:419
 msgid "Horizontal Scrollbar"
 msgstr "आड़ा स्क्राल पट्टी"
 
-#: part/View.cpp:421
+#: part/View.cpp:420
 msgid "Show the horizontal scrollbar"
 msgstr "आड़ा स्क्राल पट्टी देखाव"
 
-#: part/View.cpp:426
+#: part/View.cpp:425
 msgid "Vertical Scrollbar"
 msgstr "खड़ा स्क्राल पट्टी"
 
-#: part/View.cpp:427
+#: part/View.cpp:426
 msgid "Show the vertical scrollbar"
 msgstr "खड़ा स्क्राल पट्टी दिखाव"
 
-#: part/View.cpp:432
+#: part/View.cpp:431
 msgid "Status Bar"
 msgstr "स्थिति पट्टी"
 
-#: part/View.cpp:433
+#: part/View.cpp:432
 msgid "Show the status bar"
 msgstr "स्थिति पट्टी देखाव"
 
-#: part/View.cpp:438
+#: part/View.cpp:437
 msgid "Tab Bar"
 msgstr "टैब पट्टी"
 
-#: part/View.cpp:439
+#: part/View.cpp:438
 msgid "Show the tab bar"
 msgstr "टैब पट्टी देखाव"
 
-#: part/View.cpp:445
+#: part/View.cpp:444
 msgid "Set various KSpread options"
 msgstr "विविध केस्प्रेड विकल्प मन लट करव"
 
-#: part/View.cpp:458
+#: part/View.cpp:457
 msgid "No calculation"
 msgstr "कोई गनना नइ"
 
-#: part/View.cpp:465
+#: part/View.cpp:464
 msgid "Calculate using sum"
 msgstr "sum के परयोग कर गनना करव"
 
-#: part/View.cpp:472
+#: part/View.cpp:471
 msgid "Calculate using minimum"
 msgstr "minimum के परयोग कर गनना करव"
 
-#: part/View.cpp:479
+#: part/View.cpp:478
 msgid "Calculate using maximum"
 msgstr "maximum के परयोग कर गनना करव"
 
-#: part/View.cpp:486
+#: part/View.cpp:485
 msgid "Calculate using average"
 msgstr "average के परयोग कर गनना करव"
 
-#: part/View.cpp:493
+#: part/View.cpp:492
 msgid "Calculate using the count"
 msgstr "count के परयोग कर गनना करव"
 
-#: part/View.cpp:500
+#: part/View.cpp:499
 msgid "Calculate using the countA"
 msgstr "countA के परयोग कर गनना करव"
 
-#: part/View.cpp:722 part/dialogs/PreferenceDialog.cpp:370
+#: part/View.cpp:721 part/dialogs/PreferenceDialog.cpp:370
 msgid "Tools"
 msgstr "औजार"
 
-#: part/View.cpp:1371 part/View.cpp:1390 part/View.cpp:1734
+#: part/View.cpp:1370 part/View.cpp:1389 part/View.cpp:1733
 msgid "You cannot change a protected sheet."
 msgstr "आप संरक्छित सीट ल बदल नइ सकहू."
 
-#: part/View.cpp:1410
+#: part/View.cpp:1409
 msgid "You cannot hide the last visible sheet."
 msgstr "आप आखरी दिखाई दे रहे सीट ल छुपा नइ सकहू."
 
-#: part/View.cpp:1466
+#: part/View.cpp:1465
 msgid "Protect Document"
 msgstr "कागद संरक्छित करव"
 
-#: part/View.cpp:1469
+#: part/View.cpp:1468
 msgid "Unprotect Document"
 msgstr "कागद असंरक्छित करव"
 
-#: part/View.cpp:1489
+#: part/View.cpp:1488
 msgid "Protect Sheet"
 msgstr "सीट संरक्छित करव"
 
-#: part/View.cpp:1492
+#: part/View.cpp:1491
 msgid "Unprotect Sheet"
 msgstr "सीट असंरक्छित करव"
 
-#: part/View.cpp:1712
+#: part/View.cpp:1711
 msgid "You cannot delete the only sheet."
 msgstr "आप सिरिफ अकेले सीट ल मिटा नइ सकहू."
 
-#: part/View.cpp:1715
+#: part/View.cpp:1714
 msgid ""
 "You are about to remove the active sheet.\n"
 "Do you want to continue?"
@@ -18136,49 +18091,54 @@ msgstr ""
 "आप सक्रिय सीट ल मेटाय वाले हे.\n"
 "का आप मन सचमुच जारी रखना चाहथो ?"
 
-#: part/View.cpp:1716
+#: part/View.cpp:1715
 msgid "&Delete"
 msgstr "मेटाव (&D)"
 
-#: part/View.cpp:1740 ui/CellToolBase.cpp:1598
+#: part/View.cpp:1739 ui/CellToolBase.cpp:1598
 msgid "Enter name:"
 msgstr "नाम भरव:"
 
-#: part/View.cpp:1745
+#: part/View.cpp:1744
 msgid "Sheet name cannot be empty."
 msgstr "सीट नाम नाम खाली नइ हो सके."
 
-#: part/View.cpp:1745 part/View.cpp:1751
+#: part/View.cpp:1744 part/View.cpp:1750
 msgid "Change Sheet Name"
 msgstr "सीट नाम बदलव"
 
-#: part/View.cpp:1751
+#: part/View.cpp:1750
 msgid "This name is already used."
 msgstr "ये नाम पहिली से ही उपयोग मं हे."
 
-#: part/View.cpp:1844
+#: part/View.cpp:1843
 msgid "Sum: "
 msgstr "योग:"
 
-#: part/View.cpp:1847
+#: part/View.cpp:1846
 msgid "Average: "
 msgstr "औसत:"
 
-#: part/View.cpp:1850
+#: part/View.cpp:1849
 msgid "Min: "
 msgstr "न्यून.:"
 
-#: part/View.cpp:1853
+#: part/View.cpp:1852
 msgid "Max: "
 msgstr "अधि:"
 
-#: part/View.cpp:1856
+#: part/View.cpp:1855
 msgid "Count: "
 msgstr "गनना:"
 
-#: part/View.cpp:1859
+#: part/View.cpp:1858
 msgid "CountA: "
 msgstr "CountA: "
+
+#: part/commands/PageLayoutCommand.cpp:35
+#: part/dialogs/PageLayoutDialog.cpp:223
+msgid "Set Page Layout"
+msgstr "पेज ले-आउट सेट करव"
 
 #: part/dialogs/PageLayoutDialog.cpp:103 part/dialogs/PageLayoutDialog.cpp:106
 #: part/dialogs/PageLayoutDialog.cpp:110
@@ -18598,6 +18558,10 @@ msgstr "स्प्रेडसीट मं एक नवा खंभा भ�
 msgid "Removes a column from the spreadsheet"
 msgstr "स्प्रेडसीट मं से कोनो खंभा ल मिटाथे "
 
+#: ui/CellToolBase.cpp:479
+msgid "Hide Columns"
+msgstr "खंभा लुकाव"
+
 #: ui/CellToolBase.cpp:482
 msgid "Hide the column from this"
 msgstr "एमां से खंभा ल लुकाव"
@@ -18641,6 +18605,10 @@ msgstr "स्प्रेडसीट मं एक नवा पंक्त�
 #: ui/CellToolBase.cpp:513
 msgid "Removes a row from the spreadsheet"
 msgstr "स्प्रेडसीट से पंक्ति मेटाव"
+
+#: ui/CellToolBase.cpp:517
+msgid "Hide Rows"
+msgstr "पंक्तियाँ लुकाव"
 
 #: ui/CellToolBase.cpp:520
 msgid "Hide a row from this"
@@ -19230,18 +19198,6 @@ msgstr "बदलाव लगाव"
 msgid "Discard changes"
 msgstr ""
 
-#: ui/CharSelectDia.cpp:48 ui/CharSelectDia.cpp:66
-#, fuzzy
-#| msgid "S&pecial Character..."
-msgid "Select Character"
-msgstr "विसिस्ट अक्छर...(&p)"
-
-#: ui/CharSelectDia.cpp:58 ui/CharSelectDia.cpp:75
-#, fuzzy
-#| msgid "The text that will replace characters in old text"
-msgid "Insert the selected character in the text"
-msgstr "पाठ जऊन जुन्ना पाठ मं अक्छर से बदले जाही"
-
 #: ui/HyperlinkStrategy.cpp:78
 #, fuzzy, kde-format
 #| msgid "Link <i>%1</i> activated"
@@ -19274,6 +19230,33 @@ msgstr "एक कक्छ चुनव"
 #: ui/RegionSelector.cpp:161
 msgid "Select Multiple Cells"
 msgstr "बहुत से कक्छ चुनव"
+
+#~ msgid "Change Format"
+#~ msgstr "फार्मेट बदलव"
+
+#~ msgid "Drag & Drop"
+#~ msgstr "खींचव अउ छोड़व"
+
+#~ msgid "Resize"
+#~ msgstr "आकार बदलव"
+
+#~ msgid "Change Text"
+#~ msgstr "पाठ बदलव"
+
+#~ msgid "Insert Cell"
+#~ msgstr "कक्छ भरव"
+
+#~ msgid "Remove Cell"
+#~ msgstr "कक्छ मेटाव"
+
+#~ msgid "Paste"
+#~ msgstr "चिपकाव"
+
+#~ msgid "Paste & Insert"
+#~ msgstr "चिपकाव अउ भरव"
+
+#~ msgid "Style of Cell"
+#~ msgstr "कक्छ के सैली"
 
 #~ msgid "Subtotal"
 #~ msgstr "उप-योग"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-08 06:59+0200\n"
+"POT-Creation-Date: 2010-09-13 05:54+0200\n"
 "PO-Revision-Date: 2009-03-01 09:45+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1076,12 +1076,12 @@ msgstr ""
 "इहां आप मन के-एटीई के सब्बो मिलत प्लगइन्स ल देख सकथो . जऊन मं चेक मार्क हे, ओ मन लोडेड "
 "हे, अउ अगला बार जब के-एटीई चालू होही तहां लोड होही."
 
-#: app/katefilelist.cpp:55 plugins/filetree/katefiletree.cpp:50
+#: app/katefilelist.cpp:55 plugins/filetree/katefiletree.cpp:51
 msgid "Close"
 msgstr "बन्द करव"
 
 #: app/katefilelist.cpp:58 app/katemainwindow.cpp:327
-#: plugins/filetree/katefiletree.cpp:52
+#: plugins/filetree/katefiletree.cpp:53
 msgid "Close the current document."
 msgstr "अभी हाल के कागद बन्द करव"
 
@@ -1122,10 +1122,14 @@ msgid "Sort &By"
 msgstr "ये आधार छांटव (&B)"
 
 #: app/katefilelist.cpp:78 app/katefilelist.cpp:307
+#: plugins/filetree/katefiletree.cpp:76
+#: plugins/filetree/katefiletreeconfigpage.cpp:74
 msgid "Opening Order"
 msgstr "खोले के क्रम"
 
 #: app/katefilelist.cpp:78 app/katefilelist.cpp:308
+#: plugins/filetree/katefiletree.cpp:67
+#: plugins/filetree/katefiletreeconfigpage.cpp:75
 msgid "Document Name"
 msgstr "कागद नाम"
 
@@ -1137,38 +1141,38 @@ msgstr "यूआरएल"
 msgid "Custom"
 msgstr "मनमाफिक"
 
-#: app/katefilelist.cpp:281
+#: app/katefilelist.cpp:281 plugins/filetree/katefiletreeconfigpage.cpp:48
 msgid "Background Shading"
 msgstr "पिछोत अंगना छइंहा"
 
-#: app/katefilelist.cpp:288
+#: app/katefilelist.cpp:288 plugins/filetree/katefiletreeconfigpage.cpp:55
 msgid "&Viewed documents' shade:"
 msgstr "कागद के छइंहा ल देखिस: (&V)"
 
-#: app/katefilelist.cpp:294
+#: app/katefilelist.cpp:294 plugins/filetree/katefiletreeconfigpage.cpp:61
 msgid "&Modified documents' shade:"
 msgstr "कागद मन के छइंहा सुधारव: (&M)"
 
-#: app/katefilelist.cpp:302
+#: app/katefilelist.cpp:302 plugins/filetree/katefiletreeconfigpage.cpp:69
 msgid "&Sort by:"
 msgstr "ये आधार मं छांटव (&S)"
 
-#: app/katefilelist.cpp:309
+#: app/katefilelist.cpp:309 plugins/filetree/katefiletreeconfigpage.cpp:76
 msgid "Url"
 msgstr "यूआरएल"
 
-#: app/katefilelist.cpp:315
+#: app/katefilelist.cpp:315 plugins/filetree/katefiletreeconfigpage.cpp:93
 msgid ""
 "When background shading is enabled, documents that have been viewed or "
 "edited within the current session will have a shaded background. The most "
 "recent documents have the strongest shade."
 msgstr ""
 
-#: app/katefilelist.cpp:319
+#: app/katefilelist.cpp:319 plugins/filetree/katefiletreeconfigpage.cpp:97
 msgid "Set the color for shading viewed documents."
 msgstr "देखे जा गे कागद मन मं छइंहा करे बर रंग सेट करव"
 
-#: app/katefilelist.cpp:321
+#: app/katefilelist.cpp:321 plugins/filetree/katefiletreeconfigpage.cpp:99
 msgid ""
 "Set the color for modified documents. This color is blended into the color "
 "for viewed files. The most recently edited documents get most of this color."
@@ -1632,20 +1636,86 @@ msgstr " लाइन"
 msgid " BLOCK "
 msgstr " ब्लाक"
 
-#: plugins/filetree/katefiletreeplugin.cpp:43
-#: plugins/filetree/katefiletreeplugin.cpp:92
+#: plugins/filetree/katefiletreeplugin.cpp:46
+#: plugins/filetree/katefiletreeplugin.cpp:111
 #, fuzzy
 #| msgid "Document Name"
 msgid "Document Tree"
 msgstr "कागद नाम"
 
-#: plugins/filetree/katefiletreeplugin.cpp:43
+#: plugins/filetree/katefiletreeplugin.cpp:46
 msgid "Show open documents in a tree"
 msgstr ""
 
-#: plugins/filetree/katefiletreeplugin.cpp:132
+#: plugins/filetree/katefiletreeplugin.cpp:154
 msgid "&Show Active"
 msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:57
+msgid "Tree Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:58
+msgid "Set view style to Tree Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:61
+msgid "List Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:62
+msgid "Set view style to List Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:68
+#, fuzzy
+#| msgid "Document Name"
+msgid "Sort by Document Name"
+msgstr "कागद नाम"
+
+#: plugins/filetree/katefiletree.cpp:72
+#, fuzzy
+#| msgid "Document List"
+msgid "Document Path"
+msgstr "कागद सूची"
+
+#: plugins/filetree/katefiletree.cpp:73
+msgid "Sort by Document Path"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:77
+#, fuzzy
+#| msgid "Opening Order"
+msgid "Sort by Opening Order"
+msgstr "खोले के क्रम"
+
+#: plugins/filetree/katefiletree.cpp:197
+msgid "View Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:201
+#, fuzzy
+#| msgid "Sort &By"
+msgid "Sort By"
+msgstr "ये आधार छांटव (&B)"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:82
+#, fuzzy
+#| msgid "&View"
+msgid "&View Mode:"
+msgstr "देखव (&V)"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:87
+#, fuzzy
+#| msgid "Tool &Views"
+msgid "Tree View"
+msgstr "औजार दृस्य (&V)"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:88
+#, fuzzy
+#| msgid "Split Ve&rtical"
+msgid "List View"
+msgstr "खड़ा विभाजित करव (&r)"
 
 #, fuzzy
 #~| msgid "Plugins"
