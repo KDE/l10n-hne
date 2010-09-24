@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-11 06:03+0200\n"
+"POT-Creation-Date: 2010-09-24 06:05+0200\n"
 "PO-Revision-Date: 2009-03-03 10:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -145,7 +145,7 @@ msgstr ""
 msgid "Resource %1 available from %2 to %3"
 msgstr "संसाधन नइ मिलत"
 
-#: kernel/kptaccount.cpp:812 models/kptresourcemodel.cpp:427
+#: kernel/kptaccount.cpp:812 models/kptresourcemodel.cpp:435
 msgid "Account"
 msgstr "खाता"
 
@@ -350,8 +350,8 @@ msgstr ""
 #: models/kptnodeitemmodel.cpp:643 models/kptnodeitemmodel.cpp:649
 #: models/kptnodeitemmodel.cpp:659 models/kpttreecombobox.cpp:124
 #: models/kptresourcemodel.cpp:189 models/kptresourcemodel.cpp:221
-#: models/kptresourcemodel.cpp:334 models/kptresourcemodel.cpp:338
-#: models/kptresourcemodel.cpp:347 models/kptschedulemodel.cpp:458
+#: models/kptresourcemodel.cpp:342 models/kptresourcemodel.cpp:346
+#: models/kptresourcemodel.cpp:355 models/kptschedulemodel.cpp:458
 #: models/kptschedulemodel.cpp:460 models/kptresourceallocationmodel.cpp:743
 #: ui/kpttaskcostpanel.cpp:49 ui/kptpertresult.cpp:138
 #: ui/kptpertresult.cpp:489 ui/kpttaskgeneralpanel.cpp:70
@@ -1787,7 +1787,7 @@ msgstr "मुख्य परियोजना संपादित करव
 msgid "Resources"
 msgstr "संसाधन "
 
-#: models/kptnodeitemmodel.cpp:2504 models/kptresourcemodel.cpp:1263
+#: models/kptnodeitemmodel.cpp:2504 models/kptresourcemodel.cpp:1271
 #, fuzzy
 #| msgid "Add Resource..."
 msgid "Add resource"
@@ -1951,7 +1951,7 @@ msgstr "कलेन्डर सुधारव"
 #. i18n: file: ui/kptresourceassignmentview.ui:27
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptcalendarmodel.cpp:419 models/kptaccountsmodel.cpp:122
-#: models/kptaccountsmodel.cpp:1026 models/kptresourcemodel.cpp:417
+#: models/kptaccountsmodel.cpp:1026 models/kptresourcemodel.cpp:425
 #: models/kptresourceappointmentsmodel.cpp:908
 #: models/kptresourceappointmentsmodel.cpp:923
 #: models/kptresourceappointmentsmodel.cpp:1484
@@ -2022,7 +2022,7 @@ msgstr "लइका"
 #. i18n: file: ui/kptresourceassignmentview.ui:32
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptrelationmodel.cpp:148 models/kptdocumentmodel.cpp:172
-#: models/kptresourcemodel.cpp:418
+#: models/kptresourcemodel.cpp:426
 #: models/kptresourceappointmentsmodel.cpp:1485
 #: models/kptresourceallocationmodel.cpp:333 rc.cpp:749
 msgid "Type"
@@ -2858,83 +2858,97 @@ msgctxt "@info:tooltip 1=calendar name"
 msgid "Using default calendar: %1"
 msgstr "डिफाल्ट खाता:"
 
-#: models/kptresourcemodel.cpp:267
+#: models/kptresourcemodel.cpp:268
 #, fuzzy, kde-format
 #| msgid "Available:"
+msgctxt "infor:tooltip"
 msgid "Available from: %1"
 msgstr "मिलत:"
 
-#: models/kptresourcemodel.cpp:285
+#: models/kptresourcemodel.cpp:270
+#, kde-format
+msgctxt "infor:tooltip"
+msgid "Available from project target start time: %1"
+msgstr ""
+
+#: models/kptresourcemodel.cpp:290
 #, fuzzy, kde-format
 #| msgid "Available:"
+msgctxt "infor:tooltip"
 msgid "Available until: %1"
 msgstr "मिलत:"
 
-#: models/kptresourcemodel.cpp:303
+#: models/kptresourcemodel.cpp:292
+#, kde-format
+msgctxt "infor:tooltip"
+msgid "Available from project target finish time: %1"
+msgstr ""
+
+#: models/kptresourcemodel.cpp:311
 #, kde-format
 msgid "Cost per hour, normal time: %1"
 msgstr ""
 
-#: models/kptresourcemodel.cpp:321
+#: models/kptresourcemodel.cpp:329
 #, kde-format
 msgid "Cost per hour, overtime: %1"
 msgstr ""
 
-#: models/kptresourcemodel.cpp:338
+#: models/kptresourcemodel.cpp:346
 #, fuzzy, kde-format
 #| msgid "Account:"
 msgid "Account: %1"
 msgstr "खाताः"
 
-#: models/kptresourcemodel.cpp:419
+#: models/kptresourcemodel.cpp:427
 #, fuzzy
 #| msgid "Initials:"
 msgid "Initials"
 msgstr "इनिसियल:"
 
-#: models/kptresourcemodel.cpp:420
+#: models/kptresourcemodel.cpp:428
 msgid "Email"
 msgstr "ईमेल"
 
-#: models/kptresourcemodel.cpp:421
+#: models/kptresourcemodel.cpp:429
 #, fuzzy
 #| msgid "Add Calendar"
 msgid "Calendar"
 msgstr "कलेन्डर जोड़व"
 
-#: models/kptresourcemodel.cpp:422
+#: models/kptresourcemodel.cpp:430
 msgid "Limit (%)"
 msgstr "सीमा (%)"
 
-#: models/kptresourcemodel.cpp:423
+#: models/kptresourcemodel.cpp:431
 #, fuzzy
 #| msgid "Available:"
 msgid "Available From"
 msgstr "मिलत:"
 
-#: models/kptresourcemodel.cpp:424
+#: models/kptresourcemodel.cpp:432
 #, fuzzy
 #| msgid "Available tasks"
 msgid "Available Until"
 msgstr "मिलत काम"
 
-#: models/kptresourcemodel.cpp:425
+#: models/kptresourcemodel.cpp:433
 msgid "Normal Rate"
 msgstr "सामान्य दर"
 
-#: models/kptresourcemodel.cpp:426
+#: models/kptresourcemodel.cpp:434
 #, fuzzy
 #| msgid "Overtime rate:"
 msgid "Overtime Rate"
 msgstr "ओवरटाइम दर:"
 
-#: models/kptresourcemodel.cpp:923
+#: models/kptresourcemodel.cpp:931
 #, fuzzy
 #| msgid "Modify resources"
 msgid "Modify resource account"
 msgstr "संसाधन सुधारव"
 
-#: models/kptresourcemodel.cpp:1151
+#: models/kptresourcemodel.cpp:1159
 #, fuzzy, kde-format
 #| msgid "Per Resource"
 msgid "Move resource"
@@ -2942,7 +2956,7 @@ msgid_plural "Move %1 resources"
 msgstr[0] "संसाधन मन के अनुसार"
 msgstr[1] "संसाधन मन के अनुसार"
 
-#: models/kptresourcemodel.cpp:1170
+#: models/kptresourcemodel.cpp:1178
 #, fuzzy, kde-format
 #| msgid "Per Resource"
 msgid "Copy resource"
@@ -2950,7 +2964,7 @@ msgid_plural "Copy %1 resources"
 msgstr[0] "संसाधन मन के अनुसार"
 msgstr[1] "संसाधन मन के अनुसार"
 
-#: models/kptresourcemodel.cpp:1189
+#: models/kptresourcemodel.cpp:1197
 #: models/kptresourceappointmentsmodel.cpp:1115
 #, fuzzy, kde-format
 #| msgid "Choose resource from addressbook"
@@ -2959,7 +2973,7 @@ msgid_plural "Add %1 resources from address book"
 msgstr[0] "पतापुस्तिका से संसाधन चुनव"
 msgstr[1] "पतापुस्तिका से संसाधन चुनव"
 
-#: models/kptresourcemodel.cpp:1252
+#: models/kptresourcemodel.cpp:1260
 #, fuzzy
 #| msgid "Add Resource Group..."
 msgid "Add resource group"
