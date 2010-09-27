@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmlocale\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:43+0200\n"
+"POT-Creation-Date: 2010-09-27 06:04+0200\n"
 "PO-Revision-Date: 2009-02-09 18:40+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -33,43 +33,53 @@ msgstr "सेट नइ (सामान्य अंगरेजी)"
 
 #. i18n: file: language.ui:28
 #. i18n: ectx: property (text), widget (QLabel, m_crLabel)
-#: kcmlocale.cpp:74 rc.cpp:5
+#: kcmlocale.cpp:75 rc.cpp:5
 msgid "Country or region:"
 msgstr "देस या छेत्र:"
 
 #. i18n: file: language.ui:38
 #. i18n: ectx: property (text), widget (QLabel, m_languagesLabel)
-#: kcmlocale.cpp:75 rc.cpp:8
+#: kcmlocale.cpp:76 rc.cpp:8
 msgid "Languages:"
 msgstr "भाखा:"
 
 #. i18n: file: language.ui:142
 #. i18n: ectx: property (text), widget (QPushButton, languageRemove)
-#: kcmlocale.cpp:76 rc.cpp:14
+#: kcmlocale.cpp:77 rc.cpp:14
 msgid "Remove"
 msgstr "हटाव"
 
-#: kcmlocale.cpp:219
+#: kcmlocale.cpp:232
+#, kde-format
+msgid ""
+"You have the language with code \"%1\" in your list of languages to use for "
+"translation but the localization files for it could not be found. The "
+"language has been removed from your configuration. If you want to add it "
+"again please install the localization files for it and add the language "
+"again."
+msgstr ""
+
+#: kcmlocale.cpp:243
 msgctxt "@item:intext Country"
 msgid "Not set (Generic English)"
 msgstr "सेट नइ (सामान्य अंगरेजी)"
 
-#: kcmlocale.cpp:220
+#: kcmlocale.cpp:244
 #, kde-format
 msgctxt "@info %1 is country name"
 msgid "<html>%1 (<a href=\"changeCountry\">change...</a>)</html>"
 msgstr "<html>%1 (<a href=\"changeCountry\">बदलव...</a>)</html>"
 
-#: kcmlocale.cpp:225
+#: kcmlocale.cpp:249
 msgid "Add Language"
 msgstr "भाखा जोड़व"
 
-#: kcmlocale.cpp:228
+#: kcmlocale.cpp:252
 msgid ""
 "This is where you live. KDE will use the defaults for this country or region."
 msgstr "इहां आप मन रहिथो. केडीई एखर देस या छेत्र के डिफाल्ट उपयोग करही."
 
-#: kcmlocale.cpp:231
+#: kcmlocale.cpp:255
 msgid ""
 "This will add a language to the list. If the language is already in the "
 "list, the old one will be moved instead."
@@ -77,11 +87,11 @@ msgstr ""
 "ये सूची मं एक भाखा जोड़ देही. यदि भाखा सूची मं पहिली से ही होही तहां बदला मं जुन्ना "
 "खिसका दे जाही."
 
-#: kcmlocale.cpp:235
+#: kcmlocale.cpp:259
 msgid "This will remove the highlighted language from the list."
 msgstr "सूची मं से चमकत भाखा ल हटा दे जाही."
 
-#: kcmlocale.cpp:238
+#: kcmlocale.cpp:262
 msgid ""
 "KDE programs will be displayed in the first available language in this "
 "list.\n"
@@ -90,7 +100,7 @@ msgstr ""
 "केडीई प्रोग्राम सूची मं पहिली मिलत भाखा मं प्रदर्सित होही.\n"
 "यदि कोनो भाखा नइ मिलत होही तहां यूएस अंगरेजी उपयोग मं ले जाही."
 
-#: kcmlocale.cpp:245
+#: kcmlocale.cpp:269
 msgid ""
 "Here you can choose your country or region. The settings for languages, "
 "numbers etc. will automatically switch to the corresponding values."
@@ -98,7 +108,7 @@ msgstr ""
 "इहां आप मन देस या छेत्र चुन सकथो. भाखा, संख्या आदि के सेटिंग तदनुरूप मान से अपने अपन स्विच "
 "होही."
 
-#: kcmlocale.cpp:252
+#: kcmlocale.cpp:276
 msgid ""
 "<p>Here you can choose the languages that will be used by KDE. If the first "
 "language in the list is not available, the second will be used, etc. If only "
