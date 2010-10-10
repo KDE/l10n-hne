@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpovmodeler\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-09 06:21+0200\n"
+"POT-Creation-Date: 2010-10-10 06:03+0200\n"
 "PO-Revision-Date: 2009-02-17 13:05+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -693,7 +693,7 @@ msgstr "लोकल"
 msgid "&Preview"
 msgstr "प्रिव्यू (&P)"
 
-#: pmdialogeditbase.cpp:200 pmpovrayoutputwidget.cpp:48 pmpovraywidget.cpp:83
+#: pmdialogeditbase.cpp:200 pmpovrayoutputwidget.cpp:48 pmpovraywidget.cpp:82
 msgid "Povray Output"
 msgstr "पोवरे आउटपुट"
 
@@ -704,7 +704,7 @@ msgid ""
 "See the povray output for details."
 msgstr ""
 
-#: pmdialogeditbase.cpp:561 pmpovraywidget.cpp:356
+#: pmdialogeditbase.cpp:561 pmpovraywidget.cpp:330
 msgid ""
 "There were errors while rendering.\n"
 "See the povray output for details."
@@ -854,11 +854,11 @@ msgstr "कुछ गोलीय चीज"
 msgid "Leonardo Skorianez"
 msgstr "लिओनार्दो स्कोरियानेज"
 
-#: pmfiledialog.cpp:55
+#: pmfiledialog.cpp:57
 msgid "Import"
 msgstr "आयात"
 
-#: pmfiledialog.cpp:88
+#: pmfiledialog.cpp:92
 msgid "Export"
 msgstr "निर्यात"
 
@@ -2215,17 +2215,17 @@ msgstr "अप्रत्यासित टोकन '%1'."
 msgid "Info"
 msgstr "जानकारी "
 
-#: pmparser.cpp:251 pmparser.cpp:267
+#: pmparser.cpp:250 pmparser.cpp:266
 #, fuzzy, kde-format
 msgid "Cannot insert %1 into %2."
 msgstr "%1 ल %2 मं भरव नइ कर सकिस."
 
-#: pmparser.cpp:378 pmparser.cpp:380
+#: pmparser.cpp:377 pmparser.cpp:379
 #, kde-format
 msgid "Undefined object \"%1\"."
 msgstr "अपरिभासित चीज \"%1\"."
 
-#: pmparser.cpp:407
+#: pmparser.cpp:406
 #, kde-format
 msgid "Object \"%1\" is undefined at that point."
 msgstr "ओ बिंदु मं चीज \"%1\" अपरिभासित हे."
@@ -2254,7 +2254,7 @@ msgstr "रेंडर"
 msgid "Render Modes..."
 msgstr "रेंडर मोड्स..."
 
-#: pmpart.cpp:279 pmpovraywidget.cpp:119
+#: pmpart.cpp:279 pmpovraywidget.cpp:118
 msgid "Render Window"
 msgstr "रेंडर विन्डो"
 
@@ -2605,12 +2605,26 @@ msgstr "घोसित"
 msgid "Default"
 msgstr "डिफाल्ट"
 
-#: pmpart.cpp:2816 pmpart.cpp:2821
+#: pmpart.cpp:2816
 msgid "Undo"
 msgstr "पहिली जइसन"
 
-#: pmpart.cpp:2829 pmpart.cpp:2834
+#: pmpart.cpp:2821
+#, fuzzy, kde-format
+#| msgid "Undo"
+msgctxt "Undo the specified action"
+msgid "Undo %1"
+msgstr "पहिली जइसन"
+
+#: pmpart.cpp:2829
 msgid "Redo"
+msgstr "दुहराव"
+
+#: pmpart.cpp:2834
+#, fuzzy, kde-format
+#| msgid "Redo"
+msgctxt "Redo the specified action"
+msgid "Redo %1"
 msgstr "दुहराव"
 
 #: pmpattern.cpp:554
@@ -3239,43 +3253,31 @@ msgstr "पोवरे सिरिफ 20 लाइब्रेरी रस्
 msgid "The list of library paths already contains this path."
 msgstr "लाइब्रेरी रस्ता के सूची मं पहिली ही ए रस्ता हे."
 
-#: pmpovraywidget.cpp:73
+#: pmpovraywidget.cpp:72
 msgid "Stop"
 msgstr "रुकव"
 
-#: pmpovraywidget.cpp:76
+#: pmpovraywidget.cpp:75
 msgid "Suspend"
 msgstr "निलम्बित"
 
-#: pmpovraywidget.cpp:79
+#: pmpovraywidget.cpp:78
 msgid "Resume"
 msgstr "फिर से चालू"
 
-#: pmpovraywidget.cpp:179
+#: pmpovraywidget.cpp:178
 msgid "running"
 msgstr "चलत हे..."
 
-#: pmpovraywidget.cpp:216
+#: pmpovraywidget.cpp:215
 msgid "suspended"
 msgstr "निलंबित हे"
 
-#: pmpovraywidget.cpp:254
+#: pmpovraywidget.cpp:247
 msgid "Malformed URL"
 msgstr "गलत रूप मं यूआरएल"
 
-#: pmpovraywidget.cpp:272
-msgid ""
-"Unknown image format.\n"
-"Please enter a valid suffix."
-msgstr ""
-"अवैध फोटू फारमेट.\n"
-"किरपा करके, वैध उपसर्ग भरव."
-
-#: pmpovraywidget.cpp:279
-msgid "Format is not supported for writing."
-msgstr "फार्मेट लिखे बर समर्थित नइ हे."
-
-#: pmpovraywidget.cpp:318
+#: pmpovraywidget.cpp:292
 msgid ""
 "Could not correctly write the image.\n"
 "Wrong image format?"
@@ -3283,7 +3285,7 @@ msgstr ""
 "फोटू ल सही तरीका से लिख नइ सकिस.\n"
 "गलत फोटू फारमेट?"
 
-#: pmpovraywidget.cpp:322
+#: pmpovraywidget.cpp:296
 msgid ""
 "Could not write the image.\n"
 "Permission denied."
@@ -3291,11 +3293,11 @@ msgstr ""
 "फोटू ल लिख नइ सकिस.\n"
 "अनुमति अस्वीकृत."
 
-#: pmpovraywidget.cpp:345
+#: pmpovraywidget.cpp:319
 msgid "finished"
 msgstr "पूरा"
 
-#: pmpovraywidget.cpp:350
+#: pmpovraywidget.cpp:324
 #, kde-format
 msgid ""
 "Povray exited abnormally (%1).\n"
@@ -3304,7 +3306,7 @@ msgstr ""
 "पोवरे अप्रत्यासित (%1) रूप से बाहिर होइस.\n"
 "विवरन बर पोवरे आउटपुट देखव."
 
-#: pmpovraywidget.cpp:422
+#: pmpovraywidget.cpp:396
 #, kde-format
 msgid "running, %1 pixels/second"
 msgstr "चलत हे, %1 पिकसेल्स/सेकन्ड"
@@ -4399,6 +4401,16 @@ msgstr "पोवरे रेंडरिंग"
 #: rc.cpp:98
 msgid "Graphical View"
 msgstr "चित्रमय दृस्य"
+
+#~ msgid ""
+#~ "Unknown image format.\n"
+#~ "Please enter a valid suffix."
+#~ msgstr ""
+#~ "अवैध फोटू फारमेट.\n"
+#~ "किरपा करके, वैध उपसर्ग भरव."
+
+#~ msgid "Format is not supported for writing."
+#~ msgstr "फार्मेट लिखे बर समर्थित नइ हे."
 
 #~ msgid "You can not add a vector with a color"
 #~ msgstr "आप कोनो सदिस अउ रंग ल जोड़ नइ सकहू"
