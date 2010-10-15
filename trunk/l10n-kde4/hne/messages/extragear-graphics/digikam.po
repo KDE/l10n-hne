@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-14 06:12+0200\n"
+"POT-Creation-Date: 2010-10-15 06:23+0200\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -2271,7 +2271,7 @@ msgid "Select the maximal output intensity value of the histogram here."
 msgstr "इहां हिस्टोग्राम के सबसे अधिक तीव्रता इनपुट मूल्य चुनव."
 
 #: imageplugins/color/adjustlevelstool.cpp:274
-#: libs/widgets/common/curvesbox.cpp:175
+#: libs/dimg/filters/curves/curvesbox.cpp:175
 msgid "All channels shadow tone color picker"
 msgstr "सब्बो चैनल छइंहा टोन रंग चुनइया"
 
@@ -2283,7 +2283,7 @@ msgid ""
 msgstr ""
 
 #: imageplugins/color/adjustlevelstool.cpp:282
-#: libs/widgets/common/curvesbox.cpp:183
+#: libs/dimg/filters/curves/curvesbox.cpp:183
 msgid "All channels middle tone color picker"
 msgstr "सब्बो चैनल मध्य टोन रंग चुनइया"
 
@@ -2295,7 +2295,7 @@ msgid ""
 msgstr ""
 
 #: imageplugins/color/adjustlevelstool.cpp:290
-#: libs/widgets/common/curvesbox.cpp:191
+#: libs/dimg/filters/curves/curvesbox.cpp:191
 msgid "All channels highlight tone color picker"
 msgstr "सब्बो चैनल उभार टोन रंग चुनइया"
 
@@ -2316,8 +2316,8 @@ msgid ""
 msgstr "यदि आप मन ए बटन ल दबाहू, सब्बो चैनल स्तर अपने अपन एडजस्ट हो जाही."
 
 #: imageplugins/color/adjustlevelstool.cpp:318
+#: libs/dimg/filters/curves/curvesbox.cpp:213
 #: libs/dimg/filters/bw/mixersettings.cpp:146
-#: libs/widgets/common/curvesbox.cpp:213
 msgid "&Reset"
 msgstr "रीसेट (&R)"
 
@@ -2379,7 +2379,7 @@ msgstr "चैनल मिक्सर"
 msgid "Adjust Curves"
 msgstr "वक्र एडजस्ट करव"
 
-#: imageplugins/color/adjustcurvestool.cpp:278
+#: imageplugins/color/adjustcurvestool.cpp:281
 msgid "Adjust Curve"
 msgstr "वक्र एडजस्ट करव"
 
@@ -3336,6 +3336,148 @@ msgstr "चमक:"
 msgid "Set here the lightness adjustment of the image."
 msgstr "इहां फोटू के प्रकासमान समायोजन ल सेट करव."
 
+#: libs/dimg/filters/levels/histogrampainter.cpp:409
+#, kde-format
+msgid "x:%1"
+msgstr "x:%1"
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:516
+#: libs/dimg/filters/curves/curveswidget.cpp:182
+#: libs/widgets/iccprofiles/cietonguewidget.cpp:810
+msgid "Loading image..."
+msgstr "फोटू लोड करत हे ..."
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:519
+#: libs/dimg/filters/curves/curveswidget.cpp:187
+msgid "Histogram calculation..."
+msgstr "हिस्टोग्राम गनना..."
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:534
+#: libs/dimg/filters/curves/curveswidget.cpp:201
+msgid ""
+"Histogram\n"
+"calculation\n"
+"failed."
+msgstr ""
+"हिस्टोग्राम\n"
+"गनना\n"
+"फेल."
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:589
+msgid "Mean:"
+msgstr "मीन:"
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:593
+msgid "Pixels:"
+msgstr "पिक्सेल्स:"
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:597
+msgid "Std dev.:"
+msgstr "मान. विच.:"
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:601
+msgid "Count:"
+msgstr "गननाः"
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:605
+msgid "Median:"
+msgstr "मेडियन:"
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:609
+msgid "Percent:"
+msgstr "प्रतिसत:"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:88
+#: utilities/queuemanager/basetools/color/channelmixer.cpp:57
+#: utilities/queuemanager/basetools/color/curvesadjust.cpp:58
+msgid "Channel:"
+msgstr "चैनल:"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:94
+msgid ""
+"<p>Select the histogram scale.</p><p>If the image's maximal counts are "
+"small, you can use the <b>linear</b> scale.</p><p><b>Logarithmic</b> scale "
+"can be used when the maximal counts are big; if it is used, all values "
+"(small and large) will be visible on the graph.</p>"
+msgstr ""
+
+#: libs/dimg/filters/levels/histogrambox.cpp:100
+msgctxt "linear histogram scaling mode"
+msgid "Linear"
+msgstr "लीनियर"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:106
+msgctxt "logarithmic histogram scaling mode"
+msgid "Logarithmic"
+msgstr "लागरिदमिक"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:123
+msgid ""
+"Here you can see the target preview image histogram drawing of the selected "
+"image channel. This one is re-computed at any settings changes."
+msgstr ""
+
+#: libs/dimg/filters/levels/histogrambox.cpp:269
+msgid "<p>Select the histogram channel to display:</p>"
+msgstr "<p>देखाय बर हिस्टोग्राम चैनल चुनव:</p>"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:274
+msgctxt "The luminosity channel"
+msgid "Luminosity"
+msgstr "दीप्ति"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:275
+msgid "<b>Luminosity</b>: display the image's luminosity values."
+msgstr "<b>दीप्ति</b>: फोटू के दीप्ति मूल्य ल देखाव."
+
+#: libs/dimg/filters/levels/histogrambox.cpp:277
+msgctxt "The red channel"
+msgid "Red"
+msgstr "लाल"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:278
+msgid "<b>Red</b>: display the red image-channel values."
+msgstr "<b>लाल</b>: लाल फोटू-चैनल मूल्य देखाव."
+
+#: libs/dimg/filters/levels/histogrambox.cpp:280
+msgctxt "The green channel"
+msgid "Green"
+msgstr "हरियर"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:281
+msgid "<b>Green</b>: display the green image-channel values."
+msgstr "<b>हरियर</b>: हरियर फोटू-चैनल मूल्य देखाव."
+
+#: libs/dimg/filters/levels/histogrambox.cpp:283
+msgctxt "The blue channel"
+msgid "Blue"
+msgstr "नीला"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:284
+msgid "<b>Blue</b>: display the blue image-channel values."
+msgstr "<b>नीला</b>: नीला फोटू-चैनल मूल्य देखाव."
+
+#: libs/dimg/filters/levels/histogrambox.cpp:286
+msgctxt "The colors channel"
+msgid "Colors"
+msgstr "रंग"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:287
+msgid "<b>Colors</b>: Display all color channel values at the same time."
+msgstr "<b>रंग</b>: सब्बो रंग चैनल मूल्य ल एके समय मं देखाव."
+
+#: libs/dimg/filters/levels/histogrambox.cpp:289
+msgctxt "The alpha channel"
+msgid "Alpha"
+msgstr "अल्फा"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:290
+msgid ""
+"<b>Alpha</b>: display the alpha image-channel values. This channel "
+"corresponds to the transparency value and is supported by some image "
+"formats, such as PNG or TIF."
+msgstr ""
+
 #: libs/dimg/filters/bcg/bcgsettings.cpp:87
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:216
 msgid "Brightness:"
@@ -3395,6 +3537,72 @@ msgstr "सहेजे बर गिम्प कर्व्स फाइल"
 #: libs/dimg/filters/curves/curvessettings.cpp:280
 msgid "Cannot save to the Gimp curves text file."
 msgstr "गिम्प कर्व्स पाठ फाइल मं सहेज नइ सकिस."
+
+#: libs/dimg/filters/curves/curvesbox.cpp:143
+msgid "Curve free mode"
+msgstr "वक्र फ्री मोड"
+
+#: libs/dimg/filters/curves/curvesbox.cpp:144
+msgid "With this button, you can draw your curve free-hand with the mouse."
+msgstr "ये बटन के साथ, आप मन मुसुवा के साथ वक्र फ्री ड्राइंग बना सकथो."
+
+#: libs/dimg/filters/curves/curvesbox.cpp:150
+msgid "Curve smooth mode"
+msgstr "वक्र स्मूथ मोड"
+
+#: libs/dimg/filters/curves/curvesbox.cpp:151
+#, fuzzy
+#| msgid ""
+#| "With this button, you constrains the curve type to a smooth line with "
+#| "tension."
+msgid ""
+"With this button, the curve type is constrained to be a smooth line with "
+"tension."
+msgstr "ये बटन के साथ, वक्र किसिम ल खिंचाव के साथ समतल बना सकथो."
+
+#: libs/dimg/filters/curves/curvesbox.cpp:176
+msgid ""
+"With this button, you can pick the color from original image used to set "
+"<b>Shadow Tone</b> smooth curves point on Red, Green, Blue, and Luminosity "
+"channels."
+msgstr ""
+
+#: libs/dimg/filters/curves/curvesbox.cpp:184
+msgid ""
+"With this button, you can pick the color from original image used to set "
+"<b>Middle Tone</b> smooth curves point on Red, Green, Blue, and Luminosity "
+"channels."
+msgstr ""
+
+#: libs/dimg/filters/curves/curvesbox.cpp:192
+msgid ""
+"With this button, you can pick the color from original image used to set "
+"<b>Highlight Tone</b> smooth curves point on Red, Green, Blue, and "
+"Luminosity channels."
+msgstr ""
+
+#: libs/dimg/filters/curves/curvesbox.cpp:215
+msgid "Reset current channel curves' values."
+msgstr "अभी हाल के चैनल वक्र मूल्य मन ल रीसेट करव."
+
+#: libs/dimg/filters/curves/curvesbox.cpp:216
+#, fuzzy
+#| msgid ""
+#| "If you press this button, all channel levels will be adjusted "
+#| "automatically."
+msgid ""
+"If you press this button, all curves' values from the currently selected "
+"channel will be reset to the default values."
+msgstr "यदि आप मन ए बटन ल दबाहू, सब्बो चैनल स्तर अपने अपन एडजस्ट हो जाही."
+
+#: libs/dimg/filters/curves/curveswidget.cpp:292
+#, kde-format
+msgid ""
+"x:%1\n"
+"y:%2"
+msgstr ""
+"x:%1\n"
+"y:%2"
 
 #: libs/dimg/filters/bw/mixersettings.cpp:122
 msgid "Red:"
@@ -6679,12 +6887,6 @@ msgstr "सहेजे बर आईसीसी रंग प्रोफा�
 msgid "ICC Files (*.icc; *.icm)"
 msgstr "आईसीसी फाइल मन ल (*.icc; *.icm)"
 
-#: libs/widgets/iccprofiles/cietonguewidget.cpp:810
-#: libs/widgets/common/curveswidget.cpp:182
-#: libs/widgets/common/histogramwidget.cpp:516
-msgid "Loading image..."
-msgstr "फोटू लोड करत हे ..."
-
 #: libs/widgets/iccprofiles/cietonguewidget.cpp:830
 #, fuzzy
 #| msgid "Uncalibrated"
@@ -6731,106 +6933,10 @@ msgid ""
 "color.</p></li></ul>"
 msgstr ""
 
-#: libs/widgets/common/histogrampainter.cpp:409
-#, kde-format
-msgid "x:%1"
-msgstr "x:%1"
-
 #: libs/widgets/common/thumbbardock.cpp:39
 #, fuzzy
 msgid "Drag to reposition"
 msgstr "फोटू सीर्सक"
-
-#: libs/widgets/common/histogrambox.cpp:88
-#: utilities/queuemanager/basetools/color/channelmixer.cpp:57
-#: utilities/queuemanager/basetools/color/curvesadjust.cpp:58
-msgid "Channel:"
-msgstr "चैनल:"
-
-#: libs/widgets/common/histogrambox.cpp:94
-msgid ""
-"<p>Select the histogram scale.</p><p>If the image's maximal counts are "
-"small, you can use the <b>linear</b> scale.</p><p><b>Logarithmic</b> scale "
-"can be used when the maximal counts are big; if it is used, all values "
-"(small and large) will be visible on the graph.</p>"
-msgstr ""
-
-#: libs/widgets/common/histogrambox.cpp:100
-msgctxt "linear histogram scaling mode"
-msgid "Linear"
-msgstr "लीनियर"
-
-#: libs/widgets/common/histogrambox.cpp:106
-msgctxt "logarithmic histogram scaling mode"
-msgid "Logarithmic"
-msgstr "लागरिदमिक"
-
-#: libs/widgets/common/histogrambox.cpp:123
-msgid ""
-"Here you can see the target preview image histogram drawing of the selected "
-"image channel. This one is re-computed at any settings changes."
-msgstr ""
-
-#: libs/widgets/common/histogrambox.cpp:269
-msgid "<p>Select the histogram channel to display:</p>"
-msgstr "<p>देखाय बर हिस्टोग्राम चैनल चुनव:</p>"
-
-#: libs/widgets/common/histogrambox.cpp:274
-msgctxt "The luminosity channel"
-msgid "Luminosity"
-msgstr "दीप्ति"
-
-#: libs/widgets/common/histogrambox.cpp:275
-msgid "<b>Luminosity</b>: display the image's luminosity values."
-msgstr "<b>दीप्ति</b>: फोटू के दीप्ति मूल्य ल देखाव."
-
-#: libs/widgets/common/histogrambox.cpp:277
-msgctxt "The red channel"
-msgid "Red"
-msgstr "लाल"
-
-#: libs/widgets/common/histogrambox.cpp:278
-msgid "<b>Red</b>: display the red image-channel values."
-msgstr "<b>लाल</b>: लाल फोटू-चैनल मूल्य देखाव."
-
-#: libs/widgets/common/histogrambox.cpp:280
-msgctxt "The green channel"
-msgid "Green"
-msgstr "हरियर"
-
-#: libs/widgets/common/histogrambox.cpp:281
-msgid "<b>Green</b>: display the green image-channel values."
-msgstr "<b>हरियर</b>: हरियर फोटू-चैनल मूल्य देखाव."
-
-#: libs/widgets/common/histogrambox.cpp:283
-msgctxt "The blue channel"
-msgid "Blue"
-msgstr "नीला"
-
-#: libs/widgets/common/histogrambox.cpp:284
-msgid "<b>Blue</b>: display the blue image-channel values."
-msgstr "<b>नीला</b>: नीला फोटू-चैनल मूल्य देखाव."
-
-#: libs/widgets/common/histogrambox.cpp:286
-msgctxt "The colors channel"
-msgid "Colors"
-msgstr "रंग"
-
-#: libs/widgets/common/histogrambox.cpp:287
-msgid "<b>Colors</b>: Display all color channel values at the same time."
-msgstr "<b>रंग</b>: सब्बो रंग चैनल मूल्य ल एके समय मं देखाव."
-
-#: libs/widgets/common/histogrambox.cpp:289
-msgctxt "The alpha channel"
-msgid "Alpha"
-msgstr "अल्फा"
-
-#: libs/widgets/common/histogrambox.cpp:290
-msgid ""
-"<b>Alpha</b>: display the alpha image-channel values. This channel "
-"corresponds to the transparency value and is supported by some image "
-"formats, such as PNG or TIF."
-msgstr ""
 
 #: libs/widgets/common/dfontselect.cpp:80
 msgid "System Font"
@@ -6844,55 +6950,6 @@ msgstr "मनमाफिक"
 #: libs/widgets/common/dfontselect.cpp:83
 msgid "Choose..."
 msgstr ""
-
-#: libs/widgets/common/curveswidget.cpp:187
-#: libs/widgets/common/histogramwidget.cpp:519
-msgid "Histogram calculation..."
-msgstr "हिस्टोग्राम गनना..."
-
-#: libs/widgets/common/curveswidget.cpp:201
-#: libs/widgets/common/histogramwidget.cpp:534
-msgid ""
-"Histogram\n"
-"calculation\n"
-"failed."
-msgstr ""
-"हिस्टोग्राम\n"
-"गनना\n"
-"फेल."
-
-#: libs/widgets/common/curveswidget.cpp:292
-#, kde-format
-msgid ""
-"x:%1\n"
-"y:%2"
-msgstr ""
-"x:%1\n"
-"y:%2"
-
-#: libs/widgets/common/histogramwidget.cpp:589
-msgid "Mean:"
-msgstr "मीन:"
-
-#: libs/widgets/common/histogramwidget.cpp:593
-msgid "Pixels:"
-msgstr "पिक्सेल्स:"
-
-#: libs/widgets/common/histogramwidget.cpp:597
-msgid "Std dev.:"
-msgstr "मान. विच.:"
-
-#: libs/widgets/common/histogramwidget.cpp:601
-msgid "Count:"
-msgstr "गननाः"
-
-#: libs/widgets/common/histogramwidget.cpp:605
-msgid "Median:"
-msgstr "मेडियन:"
-
-#: libs/widgets/common/histogramwidget.cpp:609
-msgid "Percent:"
-msgstr "प्रतिसत:"
 
 #: libs/widgets/common/itemviewimagedelegate.cpp:321
 #, fuzzy, kde-format
@@ -6996,63 +7053,6 @@ msgstr "सफेद संतुलन:"
 #: libs/widgets/common/paniconwidget.cpp:113
 msgid "Pan the image to a region"
 msgstr "फोटू ल कोनो छेत्र मं पैनइ करव"
-
-#: libs/widgets/common/curvesbox.cpp:143
-msgid "Curve free mode"
-msgstr "वक्र फ्री मोड"
-
-#: libs/widgets/common/curvesbox.cpp:144
-msgid "With this button, you can draw your curve free-hand with the mouse."
-msgstr "ये बटन के साथ, आप मन मुसुवा के साथ वक्र फ्री ड्राइंग बना सकथो."
-
-#: libs/widgets/common/curvesbox.cpp:150
-msgid "Curve smooth mode"
-msgstr "वक्र स्मूथ मोड"
-
-#: libs/widgets/common/curvesbox.cpp:151
-#, fuzzy
-#| msgid ""
-#| "With this button, you constrains the curve type to a smooth line with "
-#| "tension."
-msgid ""
-"With this button, the curve type is constrained to be a smooth line with "
-"tension."
-msgstr "ये बटन के साथ, वक्र किसिम ल खिंचाव के साथ समतल बना सकथो."
-
-#: libs/widgets/common/curvesbox.cpp:176
-msgid ""
-"With this button, you can pick the color from original image used to set "
-"<b>Shadow Tone</b> smooth curves point on Red, Green, Blue, and Luminosity "
-"channels."
-msgstr ""
-
-#: libs/widgets/common/curvesbox.cpp:184
-msgid ""
-"With this button, you can pick the color from original image used to set "
-"<b>Middle Tone</b> smooth curves point on Red, Green, Blue, and Luminosity "
-"channels."
-msgstr ""
-
-#: libs/widgets/common/curvesbox.cpp:192
-msgid ""
-"With this button, you can pick the color from original image used to set "
-"<b>Highlight Tone</b> smooth curves point on Red, Green, Blue, and "
-"Luminosity channels."
-msgstr ""
-
-#: libs/widgets/common/curvesbox.cpp:215
-msgid "Reset current channel curves' values."
-msgstr "अभी हाल के चैनल वक्र मूल्य मन ल रीसेट करव."
-
-#: libs/widgets/common/curvesbox.cpp:216
-#, fuzzy
-#| msgid ""
-#| "If you press this button, all channel levels will be adjusted "
-#| "automatically."
-msgid ""
-"If you press this button, all curves' values from the currently selected "
-"channel will be reset to the default values."
-msgstr "यदि आप मन ए बटन ल दबाहू, सब्बो चैनल स्तर अपने अपन एडजस्ट हो जाही."
 
 #: libs/widgets/common/filesaveoptionsbox.cpp:107
 msgid "No options available"
