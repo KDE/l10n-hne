@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-17 06:27+0200\n"
+"POT-Creation-Date: 2010-10-19 07:07+0200\n"
 "PO-Revision-Date: 2009-03-10 17:56+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -109,9 +109,10 @@ msgid "Failed to load feed %1."
 msgstr "<b>%1</b> ल लोड करे मं फेल"
 
 #: plugins/syndication/syndicationactivity.cpp:172
-#, kde-format
-msgid "Failed to create directory for feed %1 : %2"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Failed to create %1 : %2"
+msgid "Failed to create directory for feed %1: %2"
+msgstr "बना नइ सकिस %1 : %2"
 
 #. i18n: file: plugins/syndication/managefiltersdlg.ui:127
 #. i18n: ectx: property (text), widget (QPushButton, m_new_filter)
@@ -1076,6 +1077,7 @@ msgid "Which files the chunk is located in"
 msgstr ""
 
 #: plugins/infowidget/webseedsmodel.cpp:124
+#: plugins/infowidget/trackermodel.cpp:147
 msgid "URL"
 msgstr "यूआरएल"
 
@@ -1179,10 +1181,6 @@ msgstr[1] ""
 #: plugins/infowidget/fileview.cpp:320 plugins/infowidget/fileview.cpp:341
 #: ktorrent/view/view.cpp:340
 msgid "Select a directory to move the data to."
-msgstr ""
-
-#: plugins/infowidget/trackermodel.cpp:147
-msgid "Url"
 msgstr ""
 
 #: plugins/infowidget/trackermodel.cpp:149 ktorrent/view/viewmodel.cpp:454
@@ -1384,7 +1382,7 @@ msgstr "सब्बो फाइल"
 #: plugins/scripting/scriptingplugin.cpp:245
 msgid ""
 "Removing these scripts will fully delete them from your disk. Are you sure "
-"you want to do this ?"
+"you want to do this?"
 msgstr ""
 
 #: plugins/scripting/scriptmodel.cpp:112
@@ -1516,7 +1514,7 @@ msgid "Add a Search Engine"
 msgstr "खोज इंजिन जोड़व"
 
 #: plugins/search/searchprefpage.cpp:105
-msgid "Enter the hostname of the search engine (for example www.google.com) :"
+msgid "Enter the hostname of the search engine (for example www.google.com):"
 msgstr ""
 
 #: plugins/search/searchprefpage.cpp:143
@@ -1568,8 +1566,9 @@ msgstr "सब्बो टोरेंट सुरू करव"
 #: plugins/ipfilter/convertthread.cpp:67
 #: plugins/ipfilter/convertthread.cpp:167
 #: ktorrent/dialogs/importdialog.cpp:278
-#, kde-format
-msgid "Cannot open %1 : %2"
+#, fuzzy, kde-format
+#| msgid "Cannot open %1 : %2"
+msgid "Cannot open %1: %2"
 msgstr "खोल नइ सकिस %1 : %2"
 
 #: plugins/search/searchenginelist.cpp:216
@@ -1578,8 +1577,9 @@ msgid "Failed to parse %1"
 msgstr ""
 
 #: plugins/search/searchenginelist.cpp:365
-#, kde-format
-msgid "Url: <b>%1</b>"
+#, fuzzy, kde-format
+#| msgid "Url: <b>%1</b>"
+msgid "URL: <b>%1</b>"
 msgstr "यूआरएल: <b>%1</b>"
 
 #: plugins/search/searchtoolbar.cpp:68
@@ -1871,7 +1871,7 @@ msgstr "फ़ाइल %1: %2 खोल नइ सकिस"
 
 #: plugins/ipfilter/downloadandconvertjob.cpp:166
 #, kde-format
-msgid "Automatic update of IP filter failed: cannot open zipfile %1"
+msgid "Automatic update of IP filter failed: cannot open zip file %1"
 msgstr ""
 
 #: plugins/ipfilter/downloadandconvertjob.cpp:203
@@ -2562,9 +2562,10 @@ msgid "All Torrents"
 msgstr "सब्बो टोरेंट"
 
 #: ktorrent/dialogs/torrentcreatordlg.cpp:250
+#: ktorrent/dialogs/pastedialog.cpp:105 ktorrent/gui.cpp:356
 #, kde-format
-msgid "Invalid url %1"
-msgstr "अवैध यूआरएल %1"
+msgid "Invalid URL: %1"
+msgstr "अवैध यूआरएल: %1"
 
 #: ktorrent/dialogs/torrentcreatordlg.cpp:256
 msgid "Only HTTP is supported for webseeding."
@@ -2576,7 +2577,7 @@ msgstr ""
 
 #: ktorrent/dialogs/torrentcreatordlg.cpp:294
 msgid ""
-"You have not added a tracker, are you sure you want to create this torrent ?"
+"You have not added a tracker, are you sure you want to create this torrent?"
 msgstr ""
 
 #: ktorrent/dialogs/torrentcreatordlg.cpp:302
@@ -2823,8 +2824,9 @@ msgid "Failed to load <b>%1</b>"
 msgstr "<b>%1</b> ल लोड करे मं फेल"
 
 #: ktorrent/dialogs/torrentmigratordlg.cpp:160
-#, kde-format
-msgid "Failed to import <b>%1</b> : %2"
+#, fuzzy, kde-format
+#| msgid "Failed to import <b>%1</b> : %2"
+msgid "Failed to import <b>%1</b>: %2"
 msgstr "<b>%1</b> ल आयात करे मं फेल :%2"
 
 #: ktorrent/dialogs/torrentmigratordlg.cpp:164
@@ -2833,18 +2835,21 @@ msgid "Imported <b>%1</b>"
 msgstr "<b>%1</b> ल आयात करिस"
 
 #: ktorrent/dialogs/importdialog.cpp:124
-#, kde-format
-msgid "Cannot verify data : %1"
+#, fuzzy, kde-format
+#| msgid "Cannot verify data : %1"
+msgid "Cannot verify data: %1"
 msgstr "डाटा सत्यापित नइ कर सकिस: %1"
 
 #: ktorrent/dialogs/importdialog.cpp:231 ktorrent/dialogs/importdialog.cpp:265
-#, kde-format
-msgid "Cannot load the torrent file : %1"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Cannot create torrent: %1"
+msgid "Cannot load the torrent file: %1"
+msgstr "टोरेंट बना नइ सकिस: %1"
 
 #: ktorrent/dialogs/importdialog.cpp:387 ktorrent/dialogs/importdialog.cpp:404
-#, kde-format
-msgid "Failed to create %1 : %2"
+#, fuzzy, kde-format
+#| msgid "Failed to create %1 : %2"
+msgid "Failed to create %1: %2"
 msgstr "बना नइ सकिस %1 : %2"
 
 #. i18n: file: ktorrent/dialogs/pastedlgbase.ui:14
@@ -2852,11 +2857,6 @@ msgstr "बना नइ सकिस %1 : %2"
 #: ktorrent/dialogs/pastedialog.cpp:38 rc.cpp:2747
 msgid "Open an URL"
 msgstr "यूआरएल खोलव"
-
-#: ktorrent/dialogs/pastedialog.cpp:105 ktorrent/gui.cpp:356
-#, kde-format
-msgid "Invalid URL: %1"
-msgstr "अवैध यूआरएल: %1"
 
 #: ktorrent/statusbar.cpp:39 ktorrent/statusbar.cpp:71
 #, kde-format
@@ -3186,7 +3186,7 @@ msgid "Aaron J. Seigo"
 msgstr "एरान जे. सीगो"
 
 #: ktorrent/main.cpp:140
-msgid "Drag and drop support for plasma applet"
+msgid "Drag and drop support for Plasma applet"
 msgstr ""
 
 #: ktorrent/main.cpp:141
@@ -3202,7 +3202,7 @@ msgid "Amichai Rothman"
 msgstr ""
 
 #: ktorrent/main.cpp:142
-msgid "Patch to make the plasma applet a popup applet"
+msgid "Patch to make the Plasma applet a popup applet"
 msgstr ""
 
 #: ktorrent/main.cpp:143
@@ -3529,7 +3529,7 @@ msgstr ""
 #: ktorrent/core.cpp:1257
 #, kde-format
 msgid ""
-"The file where the data is saved of the torrent \"%1\" is missing. \n"
+"The file where the data is saved of the torrent \"%1\" is missing.\n"
 "Do you want to recreate it?"
 msgstr ""
 
@@ -3713,25 +3713,26 @@ msgstr ""
 #: libktcore/torrent/queuemanager.cpp:243
 msgid ""
 "Not enough disk space for the following torrents. Do you want to start them "
-"anyway ?"
+"anyway?"
 msgstr ""
 
 #: libktcore/torrent/queuemanager.cpp:282
 msgid ""
 "The following torrents have reached their maximum seed time. Do you want to "
-"start them anyway ?"
+"start them anyway?"
 msgstr ""
 
 #: libktcore/torrent/queuemanager.cpp:311
 msgid ""
 "The following torrents have reached their maximum share ratio. Do you want "
-"to start them anyway ?"
+"to start them anyway?"
 msgstr ""
 
 #: libktcore/torrent/queuemanager.cpp:737
-#, kde-format
-msgid "Error starting torrent %1 : %2"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Error scanning data: %1"
+msgid "Error starting torrent %1: %2"
+msgstr "डाटा %1 स्कैन करे मं गलती"
 
 #: libktcore/torrent/queuemanager.cpp:739
 #: libktcore/torrent/queuemanager.cpp:755
@@ -3740,7 +3741,7 @@ msgstr "गलती"
 
 #: libktcore/torrent/queuemanager.cpp:753
 #, kde-format
-msgid "Error stopping torrent %1 : %2"
+msgid "Error stopping torrent %1: %2"
 msgstr ""
 
 #: libktcore/torrent/chunkbar.cpp:93
@@ -9080,6 +9081,9 @@ msgstr ""
 msgid "Maximum seed time in hours (0 = no limit)"
 msgstr ""
 
+#~ msgid "Invalid url %1"
+#~ msgstr "अवैध यूआरएल %1"
+
 #~ msgid "File Exists"
 #~ msgstr "फाइल अस्तित्व मं हे"
 
@@ -9245,9 +9249,6 @@ msgstr ""
 
 #~ msgid "Checking Data ..."
 #~ msgstr "डाटा चेक करत हे..."
-
-#~ msgid "Error scanning data: %1"
-#~ msgstr "डाटा %1 स्कैन करे मं गलती"
 
 #~ msgid "Scanning data of <b>%1</b> :"
 #~ msgstr "<b>%1</b> के डाटा स्कैन करत हे"
