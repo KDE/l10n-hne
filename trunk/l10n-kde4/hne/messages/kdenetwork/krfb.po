@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:46+0200\n"
+"POT-Creation-Date: 2010-10-24 06:22+0200\n"
 "PO-Revision-Date: 2009-02-26 22:21+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,25 +18,19 @@ msgstr ""
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: connectioncontroller.cpp:112
-#, fuzzy, kde-format
-msgid "Refused uninvited connection attempt from %1"
-msgstr "%1 से बिन बुलाए कनेक्सन स्वीकारा"
+#: abstractrfbserver.cpp:221
+msgid "Address already in use"
+msgstr ""
 
-#: connectioncontroller.cpp:123
-#, kde-format
-msgid "Accepted uninvited connection from %1"
-msgstr "%1 से बिन बुलाए कनेक्सन स्वीकारा"
+#: abstractrfbserver.cpp:306
+msgid ""
+"Your X11 Server does not support the required XTest extension version 2.2. "
+"Sharing your desktop is not possible."
+msgstr ""
 
-#: connectioncontroller.cpp:131
-#, kde-format
-msgid "Received connection from %1, on hold (waiting for confirmation)"
-msgstr " %1 से कनेक्सन मिलिस, होल्ड मं रखे (पुस्टि बर इंतजार करत हे)"
-
-#: connectioncontroller.cpp:174 connectioncontroller.cpp:178
-#, kde-format
-msgid "Failed login attempt from %1: wrong password"
-msgstr "लागिन कोसिस %1 से फेल: गलत पासवर्ड"
+#: abstractrfbserver.cpp:307
+msgid "Desktop Sharing Error"
+msgstr "डेस्कटाप साझेदारी गलती"
 
 #: connectiondialog.cpp:32
 msgid "New Connection"
@@ -50,7 +44,7 @@ msgstr "कनेक्सन स्वीकारव"
 msgid "Refuse Connection"
 msgstr "कनेक्सन अस्वीकारव"
 
-#: invitedialog.cpp:34 manageinvitationsdialog.cpp:57
+#: invitedialog.cpp:34 manageinvitationsdialog.cpp:55
 msgid "Invitation"
 msgstr "निमंत्रन"
 
@@ -79,24 +73,30 @@ msgid ""
 "in the configuration."
 msgstr ""
 
-#: krfbserver.cpp:194 krfbserver.cpp:214
+#: krfbconnectioncontroller.cpp:97
+#, fuzzy, kde-format
+msgid "Refused uninvited connection attempt from %1"
+msgstr "%1 से बिन बुलाए कनेक्सन स्वीकारा"
+
+#: krfbconnectioncontroller.cpp:108
+#, kde-format
+msgid "Accepted uninvited connection from %1"
+msgstr "%1 से बिन बुलाए कनेक्सन स्वीकारा"
+
+#: krfbconnectioncontroller.cpp:116
+#, kde-format
+msgid "Received connection from %1, on hold (waiting for confirmation)"
+msgstr " %1 से कनेक्सन मिलिस, होल्ड मं रखे (पुस्टि बर इंतजार करत हे)"
+
+#: krfbconnectioncontroller.cpp:159 krfbconnectioncontroller.cpp:163
+#, kde-format
+msgid "Failed login attempt from %1: wrong password"
+msgstr "लागिन कोसिस %1 से फेल: गलत पासवर्ड"
+
+#: krfbserver.cpp:60 krfbserver.cpp:65
 #, kde-format
 msgid "%1@%2 (shared desktop)"
 msgstr "%1@%2 (साझेदारी डेस्कटाप)"
-
-#: krfbserver.cpp:207
-msgid "Address already in use"
-msgstr ""
-
-#: krfbserver.cpp:302
-msgid ""
-"Your X11 Server does not support the required XTest extension version 2.2. "
-"Sharing your desktop is not possible."
-msgstr ""
-
-#: krfbserver.cpp:303
-msgid "Desktop Sharing Error"
-msgstr "डेस्कटाप साझेदारी गलती"
 
 #: main.cpp:40
 msgid "VNC-compatible server to share KDE desktops"
@@ -204,7 +204,7 @@ msgstr "के-डेस्कटाप पिछोत अंगना अक�
 msgid "Do not show the invitations management dialog at startup"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:95
+#: manageinvitationsdialog.cpp:93
 msgid ""
 "An invitation creates a one-time password that allows the receiver to "
 "connect to your desktop.\n"
@@ -222,7 +222,7 @@ msgid ""
 "in the configuration."
 msgstr ""
 
-#: manageinvitationsdialog.cpp:117
+#: manageinvitationsdialog.cpp:115
 msgid ""
 "When sending an invitation by email, note that everybody who reads this "
 "email will be able to connect to your computer for one hour, or until the "
@@ -235,15 +235,15 @@ msgstr ""
 " जेखर सेती आप मन या तो अपन ईमेल ल कूटबद्ध कर लेव या एला सुरक्छित नेटवर्क के साथ भेजव नइ "
 "कि इंटरनेट से."
 
-#: manageinvitationsdialog.cpp:122
+#: manageinvitationsdialog.cpp:120
 msgid "Send Invitation via Email"
 msgstr "ई-मेल से न्यौता भेजव"
 
-#: manageinvitationsdialog.cpp:143
+#: manageinvitationsdialog.cpp:141
 msgid "Desktop Sharing (VNC) invitation"
 msgstr "डेस्कटाप साझेदारी (वीएनसी) न्यौता"
 
-#: manageinvitationsdialog.cpp:144
+#: manageinvitationsdialog.cpp:142
 #, kde-format
 msgid ""
 "You have been invited to a VNC session. If you have the KDE Remote Desktop "
@@ -259,23 +259,23 @@ msgid ""
 "For security reasons this invitation will expire at %5 (%6)."
 msgstr ""
 
-#: manageinvitationsdialog.cpp:182
+#: manageinvitationsdialog.cpp:180
 msgid "Network"
 msgstr "नेटवर्क"
 
-#: manageinvitationsdialog.cpp:183
+#: manageinvitationsdialog.cpp:181
 msgid "Security"
 msgstr "सुरक्छा"
 
-#: manageinvitationsdialog.cpp:192
+#: manageinvitationsdialog.cpp:190
 msgid "<qt>Are you sure you want to delete all invitations?</qt>"
 msgstr "<qt>का आप मन सही मं सब्बो आमंत्रनों ल मिटाना चाहथो ?</qt>"
 
-#: manageinvitationsdialog.cpp:193 manageinvitationsdialog.cpp:209
+#: manageinvitationsdialog.cpp:191 manageinvitationsdialog.cpp:207
 msgid "Confirm delete Invitations"
 msgstr "निमंत्रनों ल मेटाव के पुस्टि करव"
 
-#: manageinvitationsdialog.cpp:208
+#: manageinvitationsdialog.cpp:206
 msgid "<qt>Are you sure you want to delete this invitation?</qt>"
 msgstr "<qt>का आप मन सही मं एखर निमंत्रन ल मिटाना चाहथो ?</qt>"
 
@@ -658,30 +658,30 @@ msgstr "अनिमंत्रित कनेक्सनों बर पा
 msgid "Preferred Frame Buffer Plugin"
 msgstr ""
 
-#: trayicon.cpp:39 trayicon.cpp:91
+#: trayicon.cpp:38 trayicon.cpp:90
 msgid "Desktop Sharing - disconnected"
 msgstr "डेस्कटाप साझेदारी - डिस्कनेक्टेड"
 
-#: trayicon.cpp:48
+#: trayicon.cpp:47
 msgid "Enable Remote Control"
 msgstr "रिमोट कन्ट्रोल सक्छम करव"
 
-#: trayicon.cpp:49
+#: trayicon.cpp:48
 msgid "Disable Remote Control"
 msgstr "रिमोट नियंत्रन अक्छम करव"
 
-#: trayicon.cpp:79
+#: trayicon.cpp:78
 #, fuzzy, kde-format
 #| msgid "The remote user has closed the connection."
 msgid "The remote user %1 is now connected."
 msgstr "रिमोट कमइया हर कनेक्सन बन्द कर दिस."
 
-#: trayicon.cpp:81
+#: trayicon.cpp:80
 #, kde-format
 msgid "Desktop Sharing - connected with %1"
 msgstr "डेस्कटाप साझेदारी - %1 के साथ कनेक्टेड"
 
-#: trayicon.cpp:93
+#: trayicon.cpp:92
 msgid "The remote user has closed the connection."
 msgstr "रिमोट कमइया हर कनेक्सन बन्द कर दिस."
 
