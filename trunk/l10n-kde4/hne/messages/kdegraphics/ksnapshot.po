@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksnapshot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-30 06:14+0200\n"
+"POT-Creation-Date: 2010-11-09 07:02+0100\n"
 "PO-Revision-Date: 2009-02-26 15:40+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -49,7 +49,7 @@ msgid ""
 msgstr ""
 "मुसुवा के साथ एक छेत्र चुनव. स्नैपसाट ले बर एंटर कुंजी दबाव अउ बाहिर होए बर एस्केप कुंजी."
 
-#: kbackgroundsnapshot.cpp:91 ksnapshot.cpp:228
+#: kbackgroundsnapshot.cpp:91 ksnapshot.cpp:239
 msgid "snapshot"
 msgstr "स्नेपसाट"
 
@@ -65,17 +65,19 @@ msgstr "केबैकग्राउन्डस्नैपसाट"
 msgid "(c) 2007, Montel Laurent"
 msgstr "(c) 2007, मोंटेल लारेंट"
 
-#: ksnapshot.cpp:98
+#: kipiaction.cpp:49 main.cpp:38
+msgid "KSnapshot"
+msgstr "के-स्नेपसाट"
+
+#: ksnapshot.cpp:103
 msgid "Copy"
 msgstr ""
 
-#: ksnapshot.cpp:99
-#, fuzzy
-#| msgid "&Open With"
-msgid "Open With..."
-msgstr "एखर साथ खोलव (&O)"
+#: ksnapshot.cpp:104
+msgid "Send To..."
+msgstr ""
 
-#: ksnapshot.cpp:128
+#: ksnapshot.cpp:133
 #, fuzzy
 #| msgid " sec"
 msgid " second"
@@ -83,40 +85,50 @@ msgid_plural " seconds"
 msgstr[0] "सेक."
 msgstr[1] "सेक."
 
-#: ksnapshot.cpp:237
+#: ksnapshot.cpp:248
 msgid "Quick Save Snapshot &As..."
 msgstr "जल्दी से स्नेपसाट ल अइसन सहेजव... (&A)"
 
-#: ksnapshot.cpp:238
+#: ksnapshot.cpp:249
 msgid ""
 "Save the snapshot to the file specified by the user without showing the file "
 "dialog."
 msgstr "स्नेपसाट ल कमइया से निरधारित फाइल मं फाइल गोठ देखाय बिना सहेजव"
 
-#: ksnapshot.cpp:240
+#: ksnapshot.cpp:251
 msgid "Save Snapshot &As..."
 msgstr "स्नेपसाट अइसन सहेजव... (&A)"
 
-#: ksnapshot.cpp:241
+#: ksnapshot.cpp:252
 msgid "Save the snapshot to the file specified by the user."
 msgstr "कमइया से निरधारित फाइल मं स्नेपसाट ल सहेजव."
 
-#: ksnapshot.cpp:304
+#: ksnapshot.cpp:315
 msgid "Save As"
 msgstr "अइसन सहेजव"
 
-#: ksnapshot.cpp:481
+#: ksnapshot.cpp:506
 msgid "Other Application..."
 msgstr "अऊ दूसर अनुपरयोग..."
 
-#: ksnapshot.cpp:589
+#: ksnapshot.cpp:614
 msgid "The screen has been successfully grabbed."
 msgstr "स्क्रीन सफलता से पकड़िस."
 
-#: ksnapshot.cpp:762
+#: ksnapshot.cpp:787
 #, kde-format
 msgid "Preview of the snapshot image (%1 x %2)"
 msgstr "स्नैपसाट फोटू के प्रिव्यू (%1 x %2)"
+
+#: ksnapshotjobtracker.cpp:60
+msgctxt "Used to join urls"
+msgid ", "
+msgstr ""
+
+#: ksnapshotjobtracker.cpp:60
+#, kde-format
+msgid "Done: %1"
+msgstr ""
 
 #: ksnapshotobject.cpp:112
 msgid "File Exists"
@@ -155,10 +167,6 @@ msgstr "विंडो वर्ग"
 #: main.cpp:34
 msgid "KDE Screenshot Utility"
 msgstr "केडीई स्क्रीनसाट यूटिलिटी"
-
-#: main.cpp:38
-msgid "KSnapshot"
-msgstr "के-स्नेपसाट"
 
 #: main.cpp:40
 msgid ""
@@ -287,15 +295,15 @@ msgstr "कर्सर के नीचे विंडो"
 #. i18n: file: ksnapshotwidget.ui:129
 #. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
 #: rc.cpp:37
-msgid "Region"
-msgstr "छेत्र"
+msgid "Rectangular Region"
+msgstr ""
 
 #. i18n: file: ksnapshotwidget.ui:134
 #. i18n: ectx: property (text), item, widget (QComboBox, comboMode)
 #: rc.cpp:40
 #, fuzzy
 #| msgid "Region"
-msgid "Free Region"
+msgid "Freehand Region"
 msgstr "छेत्र"
 
 #. i18n: file: ksnapshotwidget.ui:139
@@ -372,6 +380,14 @@ msgid "Snapshot will be taken in 1 second"
 msgid_plural "Snapshot will be taken in %1 seconds"
 msgstr[0] "स्नेपसाट १ सेकन्ड में ले जाही"
 msgstr[1] "स्नेपसाट %1 सेकन्ड में ले जाही"
+
+#, fuzzy
+#~| msgid "&Open With"
+#~ msgid "Open With..."
+#~ msgstr "एखर साथ खोलव (&O)"
+
+#~ msgid "Region"
+#~ msgstr "छेत्र"
 
 #~ msgid "&Save As..."
 #~ msgstr "अइसन सहेजव... (&S)"
