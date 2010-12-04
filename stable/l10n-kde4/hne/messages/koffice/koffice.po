@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-02 02:22+0100\n"
+"POT-Creation-Date: 2010-12-04 10:36+0100\n"
 "PO-Revision-Date: 2009-03-03 09:35+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -201,6 +201,10 @@ msgstr "बिन्दु किसिम सेट करव"
 msgid "Separate paths"
 msgstr "अलग पथ"
 
+#: flake/commands/KoConnectionShapeTypeCommand.cpp:31
+msgid "Change Connection"
+msgstr "कनेक्सन बदलव"
+
 #: flake/commands/KoPathSegmentTypeCommand.cpp:132
 msgid "Change segments to curves"
 msgstr "खन्ड ल वक्र के रूप मं बदलव"
@@ -208,10 +212,6 @@ msgstr "खन्ड ल वक्र के रूप मं बदलव"
 #: flake/commands/KoPathSegmentTypeCommand.cpp:134
 msgid "Change segments to lines"
 msgstr "खन्ड ल लकीर मन के रूप मं बदलव"
-
-#: flake/commands/KoConnectionShapeTypeCommand.cpp:31
-msgid "Change Connection"
-msgstr "कनेक्सन बदलव"
 
 #: flake/commands/KoParameterHandleMoveCommand.cpp:34
 msgid "Change parameter"
@@ -253,19 +253,19 @@ msgstr "उपपथ मेटाव"
 msgid "Distribute shapes"
 msgstr "आकार वितरित करव"
 
-#: flake/commands/KoShapeBackgroundCommand.cpp:73
-#: flake/commands/KoShapeBackgroundCommand.cpp:84
-#: flake/commands/KoShapeBackgroundCommand.cpp:99
-msgid "Set background"
-msgstr "पिछोत अंगना सेट करव"
+#: flake/commands/KoPathBreakAtPointCommand.cpp:38
+msgid "Break subpath at points"
+msgstr "उपपथ ल ए बिन्दु मं तोड़ें"
 
 #: flake/commands/KoShapeMoveCommand.cpp:42
 msgid "Move shapes"
 msgstr "आकार खिसकाव"
 
-#: flake/commands/KoPathBreakAtPointCommand.cpp:38
-msgid "Break subpath at points"
-msgstr "उपपथ ल ए बिन्दु मं तोड़ें"
+#: flake/commands/KoShapeBackgroundCommand.cpp:73
+#: flake/commands/KoShapeBackgroundCommand.cpp:84
+#: flake/commands/KoShapeBackgroundCommand.cpp:99
+msgid "Set background"
+msgstr "पिछोत अंगना सेट करव"
 
 #: flake/commands/KoShapeGroupCommand.cpp:93
 msgid "Group shapes"
@@ -313,16 +313,6 @@ msgstr "टाई"
 msgid "A connection between two other shapes"
 msgstr "दो आकार के बीच के कनेक्सन"
 
-#: flake/KoPathShapeFactory.cpp:32
-#, fuzzy
-#| msgid "A simple path shape"
-msgid "Simple path shape"
-msgstr "एक सादा रस्ता आकार"
-
-#: flake/KoPathShapeFactory.cpp:34
-msgid "A simple path shape"
-msgstr "एक सादा रस्ता आकार"
-
 #: flake/KoToolBase.cpp:187 flake/KoToolManager.cpp:356
 msgid "Tool Options"
 msgstr "औजार विकल्प"
@@ -348,6 +338,16 @@ msgstr "सीधा"
 msgid "Curve"
 msgstr "वक्र"
 
+#: flake/KoPathShapeFactory.cpp:32
+#, fuzzy
+#| msgid "A simple path shape"
+msgid "Simple path shape"
+msgstr "एक सादा रस्ता आकार"
+
+#: flake/KoPathShapeFactory.cpp:34
+msgid "A simple path shape"
+msgstr "एक सादा रस्ता आकार"
+
 #: flake/KoShapePaste.cpp:100
 msgid "Paste Shapes"
 msgstr "आकारों ल चिपकाव"
@@ -369,24 +369,94 @@ msgstr ""
 msgid "Blank"
 msgstr "काला"
 
-#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:43
-msgid "Calendar Event"
+#: main/rdf/KoRdfCalendarEvent.cpp:201
+msgid "Area"
 msgstr ""
 
-#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:50
+#: main/rdf/KoRdfCalendarEvent.cpp:202
+#, fuzzy
+#| msgid "Version"
+msgid "Region"
+msgstr "संस्करन"
+
+#: main/rdf/KoRdfCalendarEvent.cpp:453
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not save\n"
+#| "%1"
+msgid ""
+"Could not add entry\n"
+"%1"
+msgstr ""
+"सहेज नइ सकिस\n"
+" %1"
+
+#: main/rdf/KoRdfCalendarEvent.cpp:477
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not save\n"
+#| "%1"
+msgid ""
+"Could not save iCal file\n"
+"%1"
+msgstr ""
+"सहेज नइ सकिस\n"
+" %1"
+
+#: main/rdf/KoRdfLocationTreeWidgetItem.cpp:43
+#, fuzzy
+#| msgid "Document Information"
+msgid "Location Information"
+msgstr "कागद जानकारी"
+
+#: main/rdf/KoSemanticStylesheetsEditor.cpp:113
+#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:113
+msgid "System"
+msgstr ""
+
+#: main/rdf/KoSemanticStylesheetsEditor.cpp:129
+#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:122
+#, fuzzy
+#| msgid "Insert"
+msgid "User"
+msgstr "प्रविस्ट"
+
+#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:53
+#, fuzzy
+#| msgid "Document Information"
+msgid "Contact Information"
+msgstr "कागद जानकारी"
+
 #: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:71
+#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:50
 #, fuzzy
 #| msgid "Add..."
 msgid "Edit..."
 msgstr "जोड़व..."
 
-#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:53
-msgid "Import event to Calendar"
-msgstr ""
+#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:74
+#, fuzzy
+#| msgid "Import Data"
+msgid "Import contact"
+msgstr "डाटा आयात करव"
 
-#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:56
-msgid "Export event to iCal file..."
-msgstr ""
+#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:77
+#, fuzzy
+#| msgid "Export as PDF..."
+msgid "Export as vcard..."
+msgstr "पीडीएफ मं निर्यात करव..."
+
+#: main/rdf/KoDocumentRdf.cpp:306 main/KoDocument.cpp:908
+#: main/KoDocument.cpp:927 main/KoDocument.cpp:957 main/KoDocument.cpp:990
+#, kde-format
+msgid "Not able to write '%1'. Partition full?"
+msgstr "'%1' ल लिखे मं अक्छम. पार्टीसन पूरा भरे हो ?"
+
+#: main/rdf/KoDocumentRdf.cpp:851
+#, fuzzy
+#| msgid "Text Reference"
+msgid "Reference"
+msgstr "पाठ संदर्भ"
 
 #: main/rdf/KoSopranoTableModel.cpp:80
 msgid "Empty"
@@ -432,39 +502,29 @@ msgstr "डाटा"
 msgid "Stored In"
 msgstr "रुक गिस"
 
-#: main/rdf/KoDocumentRdf.cpp:306 main/KoDocument.cpp:908
-#: main/KoDocument.cpp:927 main/KoDocument.cpp:957 main/KoDocument.cpp:990
-#, kde-format
-msgid "Not able to write '%1'. Partition full?"
-msgstr "'%1' ल लिखे मं अक्छम. पार्टीसन पूरा भरे हो ?"
-
-#: main/rdf/KoDocumentRdf.cpp:851
+#: main/rdf/KoRdfSemanticTree.cpp:49
 #, fuzzy
-#| msgid "Text Reference"
-msgid "Reference"
-msgstr "पाठ संदर्भ"
+#| msgid "Replace"
+msgid "People"
+msgstr "बदलव"
 
-#: main/rdf/KoRdfLocationTreeWidgetItem.cpp:43
+#. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:240
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: main/rdf/KoRdfSemanticTree.cpp:52 rc.cpp:182
+msgid "Events"
+msgstr ""
+
+#. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:256
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: main/rdf/KoRdfSemanticTree.cpp:55 rc.cpp:185
 #, fuzzy
-#| msgid "Document Information"
-msgid "Location Information"
-msgstr "कागद जानकारी"
+#| msgid "Actions"
+msgid "Locations"
+msgstr "काम"
 
 #: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:111
 msgid "Apply Stylesheet"
 msgstr ""
-
-#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:113
-#: main/rdf/KoSemanticStylesheetsEditor.cpp:113
-msgid "System"
-msgstr ""
-
-#: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:122
-#: main/rdf/KoSemanticStylesheetsEditor.cpp:129
-#, fuzzy
-#| msgid "Insert"
-msgid "User"
-msgstr "प्रविस्ट"
 
 #: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:136
 msgid "Reapply Current"
@@ -479,77 +539,17 @@ msgstr ""
 msgid "Edit %1"
 msgstr ""
 
-#: main/rdf/KoRdfSemanticTree.cpp:49
-#, fuzzy
-#| msgid "Replace"
-msgid "People"
-msgstr "बदलव"
-
-#. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:240
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: main/rdf/KoRdfSemanticTree.cpp:52 rc.cpp:167
-msgid "Events"
+#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:43
+msgid "Calendar Event"
 msgstr ""
 
-#. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:256
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: main/rdf/KoRdfSemanticTree.cpp:55 rc.cpp:170
-#, fuzzy
-#| msgid "Actions"
-msgid "Locations"
-msgstr "काम"
-
-#: main/rdf/KoRdfCalendarEvent.cpp:201
-msgid "Area"
+#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:53
+msgid "Import event to Calendar"
 msgstr ""
 
-#: main/rdf/KoRdfCalendarEvent.cpp:202
-#, fuzzy
-#| msgid "Version"
-msgid "Region"
-msgstr "संस्करन"
-
-#: main/rdf/KoRdfCalendarEvent.cpp:453
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not save\n"
-#| "%1"
-msgid ""
-"Could not add entry\n"
-"%1"
+#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:56
+msgid "Export event to iCal file..."
 msgstr ""
-"सहेज नइ सकिस\n"
-" %1"
-
-#: main/rdf/KoRdfCalendarEvent.cpp:477
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not save\n"
-#| "%1"
-msgid ""
-"Could not save iCal file\n"
-"%1"
-msgstr ""
-"सहेज नइ सकिस\n"
-" %1"
-
-#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:53
-#, fuzzy
-#| msgid "Document Information"
-msgid "Contact Information"
-msgstr "कागद जानकारी"
-
-#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:74
-#, fuzzy
-#| msgid "Import Data"
-msgid "Import contact"
-msgstr "डाटा आयात करव"
-
-#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:77
-#, fuzzy
-#| msgid "Export as PDF..."
-msgid "Export as vcard..."
-msgstr "पीडीएफ मं निर्यात करव..."
 
 #: main/rdf/KoDocumentRdfEditWidget.cpp:272
 #, kde-format
@@ -690,6 +690,11 @@ msgstr "गाइड लुकाव"
 #, fuzzy
 msgid "Shows or hides grid"
 msgstr "गाइड देखाव या लुकाव"
+
+#: main/KoApplicationAdaptor.cpp:50
+#, kde-format
+msgid "Unknown KOffice MimeType %1. Check your installation."
+msgstr "अग्यात के-आफिस माइम किसिम %1, अपन इंस्टालेसन जांचव."
 
 #: main/KoFilterManager_p.cpp:43
 msgid "Choose Filter"
@@ -878,8 +883,8 @@ msgid ""
 "</p>"
 msgstr "<p>कागद <b>'%1'</b> सुधारे जा गे हे.</p><p>का आप मन एला सहेजना चाहू?</p>"
 
-#: main/KoMainWindow.cpp:1202 main/KoOpenPane.cpp:358 main/KoOpenPane.cpp:362
-#: main/KoExistingDocumentPane.cpp:44
+#: main/KoMainWindow.cpp:1202 main/KoExistingDocumentPane.cpp:44
+#: main/KoOpenPane.cpp:358 main/KoOpenPane.cpp:362
 msgid "Open Document"
 msgstr "कागद खोलव"
 
@@ -1008,14 +1013,6 @@ msgstr "%1 बर बहुत अकन टैम्प्लेट्स ह�
 msgid "Template %1 failed to load."
 msgstr "टैम्पलेट %1 लोड करे मं फेल."
 
-#: main/KoOpenPane.cpp:190
-msgid "Recent Documents"
-msgstr "हाल ही मं प्रयुक्त कागद"
-
-#: main/KoOpenPane.cpp:272
-msgid "Custom Document"
-msgstr "मनमाफिक कागद"
-
 #: main/KoPrintingDialog.cpp:140 main/KoPrintingDialog.cpp:326
 #, kde-format
 msgid "Printing page %1"
@@ -1036,11 +1033,6 @@ msgstr "रुक गिस"
 #: main/KoPrintingDialog.cpp:208
 msgid "Stop"
 msgstr "रुकव"
-
-#: main/KoApplicationAdaptor.cpp:50
-#, kde-format
-msgid "Unknown KOffice MimeType %1. Check your installation."
-msgstr "अग्यात के-आफिस माइम किसिम %1, अपन इंस्टालेसन जांचव."
 
 #: main/KoDocument.cpp:503
 msgid "Making backup..."
@@ -1315,6 +1307,14 @@ msgstr "डेरी हासिया"
 msgid "Right indent"
 msgstr "जेवनी हासिया"
 
+#: main/KoOpenPane.cpp:190
+msgid "Recent Documents"
+msgstr "हाल ही मं प्रयुक्त कागद"
+
+#: main/KoOpenPane.cpp:272
+msgid "Custom Document"
+msgstr "मनमाफिक कागद"
+
 #: main/KoVersionDialog.cpp:48
 msgid "Version"
 msgstr "संस्करन"
@@ -1357,6 +1357,114 @@ msgstr "एक नवा संस्करन जोड़ा जा सकथ�
 #, kde-format
 msgid "Date: %1"
 msgstr "तारीक: %1"
+
+#: main/KoTemplateCreateDia.cpp:117
+msgid "Create Template"
+msgstr "टैम्पलेट बनाव"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:16
+#. i18n: ectx: property (text), widget (QLabel, fullNameLabel)
+#: main/KoTemplateCreateDia.cpp:127 rc.cpp:242
+msgid "Name:"
+msgstr "नाम:"
+
+#: main/KoTemplateCreateDia.cpp:138
+msgid "Group:"
+msgstr "समूहः"
+
+#: main/KoTemplateCreateDia.cpp:153
+msgid "&Add Group..."
+msgstr "समूह जोड़व... (&A)"
+
+#: main/KoTemplateCreateDia.cpp:162
+msgid "Picture"
+msgstr "फोटू"
+
+#: main/KoTemplateCreateDia.cpp:169
+msgid "&Default"
+msgstr "डिफाल्ट (&D)"
+
+#: main/KoTemplateCreateDia.cpp:175
+msgid "Custom"
+msgstr "मनमाफिक"
+
+#: main/KoTemplateCreateDia.cpp:179
+msgid "&Select..."
+msgstr "चुनव... (&S)"
+
+#: main/KoTemplateCreateDia.cpp:184
+msgid "Preview:"
+msgstr "प्रिव्यूः"
+
+#: main/KoTemplateCreateDia.cpp:194
+msgid "Use the new template as default"
+msgstr "नवा टैम्प्लेट ल डिफाल्ट के रूप मं परयोग करव"
+
+#: main/KoTemplateCreateDia.cpp:196
+#, kde-format
+msgid "Use the new template every time %1 starts"
+msgstr "जब %1 चालू होही तहां हमेसा नवा टैम्प्लेट परयोग करव"
+
+#: main/KoTemplateCreateDia.cpp:306
+#, kde-format
+msgid "Do you really want to overwrite the existing '%1' template?"
+msgstr "का आप मन सही मं  अभी हाल के टैम्प्लेट '%1' ल मेटाय के लिखना चाहथो ?"
+
+#: main/KoTemplateCreateDia.cpp:420 main/KoTemplateCreateDia.cpp:426
+msgid "Add Group"
+msgstr "समूह जोड़व"
+
+#: main/KoTemplateCreateDia.cpp:420
+msgid "Enter group name:"
+msgstr "समूह नाम भरव:"
+
+#: main/KoTemplateCreateDia.cpp:426
+msgid "This name is already used."
+msgstr "ये नाम पहिली से ही उपयोग मं हे."
+
+#: main/KoTemplateCreateDia.cpp:450
+msgid "Do you really want to remove that group?"
+msgstr "का आप मन सचमुच ओ समूह ल मिटाना चाहथो ?"
+
+#: main/KoTemplateCreateDia.cpp:451
+msgid "Remove Group"
+msgstr "समूह हटाव"
+
+#: main/KoTemplateCreateDia.cpp:453
+msgid "Do you really want to remove that template?"
+msgstr "का आप मन सचमुच ओ टैम्प्लेट ल मिटाना चाहथो ?"
+
+#: main/KoTemplateCreateDia.cpp:454
+msgid "Remove Template"
+msgstr "टैम्प्लेट मेटाव"
+
+#: main/KoTemplateCreateDia.cpp:458
+msgid "&Delete"
+msgstr "मेटाव (&D)"
+
+#: main/KoTemplateCreateDia.cpp:505
+msgid "Could not load picture."
+msgstr "फोटू लोड नइ कर सकिस."
+
+#: main/KoTemplateCreateDia.cpp:508
+msgid "No picture available."
+msgstr "कोई फोटू नइ मिलत."
+
+#: main/KoRecentDocumentsPane.cpp:75
+msgid "Open This Document"
+msgstr "ये कागद ल खोलव"
+
+#: main/KoRecentDocumentsPane.cpp:148
+#, kde-format
+msgctxt "File modification date and time. %1 is date time"
+msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+msgstr "<tr><td><b>परिवर्धित:</b></td><td>%1</td></tr>"
+
+#: main/KoRecentDocumentsPane.cpp:151
+#, kde-format
+msgctxt "File access date and time. %1 is date time"
+msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+msgstr "<tr><td><b>पहुंचा गिस:</b></td><td>%1</td></tr>"
 
 #: main/KoDocumentInfoDlg.cpp:105 main/KoDocumentInfoDlg.cpp:106
 msgid "General"
@@ -1484,114 +1592,6 @@ msgid ""
 "document now?</qt>"
 msgstr ""
 
-#: main/KoTemplateCreateDia.cpp:117
-msgid "Create Template"
-msgstr "टैम्पलेट बनाव"
-
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:16
-#. i18n: ectx: property (text), widget (QLabel, fullNameLabel)
-#: main/KoTemplateCreateDia.cpp:127 rc.cpp:242
-msgid "Name:"
-msgstr "नाम:"
-
-#: main/KoTemplateCreateDia.cpp:138
-msgid "Group:"
-msgstr "समूहः"
-
-#: main/KoTemplateCreateDia.cpp:153
-msgid "&Add Group..."
-msgstr "समूह जोड़व... (&A)"
-
-#: main/KoTemplateCreateDia.cpp:162
-msgid "Picture"
-msgstr "फोटू"
-
-#: main/KoTemplateCreateDia.cpp:169
-msgid "&Default"
-msgstr "डिफाल्ट (&D)"
-
-#: main/KoTemplateCreateDia.cpp:175
-msgid "Custom"
-msgstr "मनमाफिक"
-
-#: main/KoTemplateCreateDia.cpp:179
-msgid "&Select..."
-msgstr "चुनव... (&S)"
-
-#: main/KoTemplateCreateDia.cpp:184
-msgid "Preview:"
-msgstr "प्रिव्यूः"
-
-#: main/KoTemplateCreateDia.cpp:194
-msgid "Use the new template as default"
-msgstr "नवा टैम्प्लेट ल डिफाल्ट के रूप मं परयोग करव"
-
-#: main/KoTemplateCreateDia.cpp:196
-#, kde-format
-msgid "Use the new template every time %1 starts"
-msgstr "जब %1 चालू होही तहां हमेसा नवा टैम्प्लेट परयोग करव"
-
-#: main/KoTemplateCreateDia.cpp:306
-#, kde-format
-msgid "Do you really want to overwrite the existing '%1' template?"
-msgstr "का आप मन सही मं  अभी हाल के टैम्प्लेट '%1' ल मेटाय के लिखना चाहथो ?"
-
-#: main/KoTemplateCreateDia.cpp:420 main/KoTemplateCreateDia.cpp:426
-msgid "Add Group"
-msgstr "समूह जोड़व"
-
-#: main/KoTemplateCreateDia.cpp:420
-msgid "Enter group name:"
-msgstr "समूह नाम भरव:"
-
-#: main/KoTemplateCreateDia.cpp:426
-msgid "This name is already used."
-msgstr "ये नाम पहिली से ही उपयोग मं हे."
-
-#: main/KoTemplateCreateDia.cpp:450
-msgid "Do you really want to remove that group?"
-msgstr "का आप मन सचमुच ओ समूह ल मिटाना चाहथो ?"
-
-#: main/KoTemplateCreateDia.cpp:451
-msgid "Remove Group"
-msgstr "समूह हटाव"
-
-#: main/KoTemplateCreateDia.cpp:453
-msgid "Do you really want to remove that template?"
-msgstr "का आप मन सचमुच ओ टैम्प्लेट ल मिटाना चाहथो ?"
-
-#: main/KoTemplateCreateDia.cpp:454
-msgid "Remove Template"
-msgstr "टैम्प्लेट मेटाव"
-
-#: main/KoTemplateCreateDia.cpp:458
-msgid "&Delete"
-msgstr "मेटाव (&D)"
-
-#: main/KoTemplateCreateDia.cpp:505
-msgid "Could not load picture."
-msgstr "फोटू लोड नइ कर सकिस."
-
-#: main/KoTemplateCreateDia.cpp:508
-msgid "No picture available."
-msgstr "कोई फोटू नइ मिलत."
-
-#: main/KoRecentDocumentsPane.cpp:75
-msgid "Open This Document"
-msgstr "ये कागद ल खोलव"
-
-#: main/KoRecentDocumentsPane.cpp:148
-#, kde-format
-msgctxt "File modification date and time. %1 is date time"
-msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
-msgstr "<tr><td><b>परिवर्धित:</b></td><td>%1</td></tr>"
-
-#: main/KoRecentDocumentsPane.cpp:151
-#, kde-format
-msgctxt "File access date and time. %1 is date time"
-msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
-msgstr "<tr><td><b>पहुंचा गिस:</b></td><td>%1</td></tr>"
-
 #: main/KoDocumentInfo.cpp:51
 msgid "Unknown"
 msgstr "अग्यात"
@@ -1621,7 +1621,7 @@ msgstr "आनलाइन स्क्रिप्ट पैकैज इनस
 #. i18n: file: widgets/KoEditColorSet.ui:45
 #. i18n: ectx: property (toolTip), widget (QToolButton, add)
 #: kokross/KoScriptManagerAdd.cpp:272 kokross/KoScriptManagerAdd.cpp:275
-#: pigment/compositeops/KoCompositeOpAdd.h:36 rc.cpp:419
+#: pigment/compositeops/KoCompositeOpAdd.h:36 rc.cpp:431
 msgid "Add"
 msgstr "जोड़व"
 
@@ -1714,10 +1714,6 @@ msgid ""
 "permissions to delete the folder \"%1\"."
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOpErase.h:40
-msgid "Erase"
-msgstr "मेटाव"
-
 #: pigment/compositeops/KoCompositeOpMultiply.h:35
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:193
 msgid "Multiply"
@@ -1737,6 +1733,36 @@ msgstr ""
 msgid "Dodge"
 msgstr "नोड्स"
 
+#: pigment/compositeops/KoCompositeOpSubtract.h:37
+#: pigment/colorspaces/KoAlphaColorSpace.cpp:121
+msgid "Subtract"
+msgstr "घटाव"
+
+#: pigment/compositeops/KoCompositeOpInversedSubtract.h:37
+#, fuzzy
+#| msgid "Subtract"
+msgid "Inversed Subtract"
+msgstr "घटाव"
+
+#: pigment/compositeops/KoCompositeOpCopy2.h:42
+#: pigment/compositeops/KoCompositeOpCopy.h:37
+#: koreport/wrtembed/KoReportDesigner.cpp:832
+#: kopageapp/KoPADocumentStructureDocker.cpp:641
+#, fuzzy
+#| msgid "Company:"
+msgid "Copy"
+msgstr "कम्पनी:"
+
+#: pigment/compositeops/KoCompositeOpErase.h:40
+msgid "Erase"
+msgstr "मेटाव"
+
+#: pigment/compositeops/KoCompositeOpSoftlight.h:36
+#, fuzzy
+#| msgid "Straight"
+msgid "Soft light"
+msgstr "सीधा"
+
 #: pigment/compositeops/KoCompositeOpDivide.h:36
 msgid "Divide"
 msgstr ""
@@ -1745,16 +1771,11 @@ msgstr ""
 msgid "Burn"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOpInversedSubtract.h:37
+#: pigment/compositeops/KoCompositeOpHardlight.h:36
 #, fuzzy
-#| msgid "Subtract"
-msgid "Inversed Subtract"
-msgstr "घटाव"
-
-#: pigment/compositeops/KoCompositeOpSubtract.h:37
-#: pigment/colorspaces/KoAlphaColorSpace.cpp:121
-msgid "Subtract"
-msgstr "घटाव"
+#| msgid "&Height:"
+msgid "Hard light"
+msgstr "ऊंचाईः (&H)"
 
 #: pigment/compositeops/KoCompositeOpAlphaDarken.h:42
 #, fuzzy
@@ -1762,30 +1783,9 @@ msgstr "घटाव"
 msgid "Alpha darken"
 msgstr "अल्फा मास्क"
 
-#: pigment/compositeops/KoCompositeOpCopy.h:37
-#: pigment/compositeops/KoCompositeOpCopy2.h:42
-#: koreport/wrtembed/KoReportDesigner.cpp:832
-#: kopageapp/KoPADocumentStructureDocker.cpp:641
-#, fuzzy
-#| msgid "Company:"
-msgid "Copy"
-msgstr "कम्पनी:"
-
 #: pigment/compositeops/KoCompositeOpOver.h:61
 msgid "Normal"
 msgstr "सामान्य"
-
-#: pigment/compositeops/KoCompositeOpSoftlight.h:36
-#, fuzzy
-#| msgid "Straight"
-msgid "Soft light"
-msgstr "सीधा"
-
-#: pigment/compositeops/KoCompositeOpHardlight.h:36
-#, fuzzy
-#| msgid "&Height:"
-msgid "Hard light"
-msgstr "ऊंचाईः (&H)"
 
 #: pigment/resources/KoStopGradient.cpp:421
 msgid "SVG Gradient"
@@ -1985,283 +1985,6 @@ msgstr "रंग"
 msgid "Generic L*a*b* Histogram"
 msgstr "जेनेरिक आरजीबी हिस्टोग्राम"
 
-#: koreport/common/krpos.cpp:26
-msgid "Position"
-msgstr "स्थिति"
-
-#: koreport/common/krsize.cpp:26
-#, fuzzy
-#| msgid "Size:"
-msgid "Size"
-msgstr "आकारः"
-
-#: koreport/common/krsectiondata.cpp:108
-#, fuzzy
-#| msgid "&Height:"
-msgid "Height"
-msgstr "ऊंचाईः (&H)"
-
-#: koreport/common/krsectiondata.cpp:109
-#: koreport/items/label/KoReportItemLabel.cpp:97
-#: koreport/items/field/KoReportItemField.cpp:95
-#: koreport/items/text/KoReportItemText.cpp:122
-#, fuzzy
-#| msgid "Set background"
-msgid "Background Color"
-msgstr "पिछोत अंगना सेट करव"
-
-#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:26
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: file: main/rdf/KoRdfLocationEditWidget.ui:17
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#. i18n: file: main/rdf/KoRdfLocationViewWidget.ui:24
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: koreport/common/KoReportItemBase.cpp:28 rc.cpp:188 rc.cpp:200 rc.cpp:203
-#, fuzzy
-#| msgid "Name:"
-msgid "Name"
-msgstr "नाम:"
-
-#: koreport/common/KoReportItemBase.cpp:28
-#, fuzzy
-#| msgid "Object"
-msgid "Object Name"
-msgstr "चीज"
-
-#: koreport/common/KoReportItemLine.cpp:67
-#: koreport/items/label/KoReportItemLabel.cpp:104
-#: koreport/items/field/KoReportItemField.cpp:103
-#: koreport/items/text/KoReportItemText.cpp:125
-#: koreport/items/check/KoReportItemCheck.cpp:82
-#, fuzzy
-#| msgid "Lighten"
-msgid "Line Weight"
-msgstr "हल्का करव"
-
-#: koreport/common/KoReportItemLine.cpp:68
-#: koreport/items/label/KoReportItemLabel.cpp:105
-#: koreport/items/field/KoReportItemField.cpp:104
-#: koreport/items/text/KoReportItemText.cpp:126
-#: koreport/items/check/KoReportItemCheck.cpp:83
-#, fuzzy
-#| msgid "Color"
-msgid "Line Color"
-msgstr "रंग"
-
-#: koreport/common/KoReportItemLine.cpp:69
-#: koreport/items/label/KoReportItemLabel.cpp:106
-#: koreport/items/field/KoReportItemField.cpp:105
-#: koreport/items/text/KoReportItemText.cpp:127
-#: koreport/items/check/KoReportItemCheck.cpp:84
-#, fuzzy
-#| msgid "Line Border"
-msgid "Line Style"
-msgstr "लकीर चौड़ाई"
-
-#: koreport/wrtembed/reportsection.cpp:97
-#, fuzzy
-#| msgid "Detailed View"
-msgid "Detail"
-msgstr "विस्तृत दृस्य"
-
-#: koreport/wrtembed/sectioneditor.cpp:283
-msgid "Ascending"
-msgstr ""
-
-#: koreport/wrtembed/sectioneditor.cpp:284
-msgid "Descending"
-msgstr ""
-
-#: koreport/wrtembed/sectioneditor.cpp:306
-#: koreport/wrtembed/sectioneditor.cpp:347
-msgid "Error Encountered"
-msgstr ""
-
-#: koreport/wrtembed/sectioneditor.cpp:307
-#: koreport/wrtembed/sectioneditor.cpp:348
-msgid "Unable to add a new group because its name would not be unique"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:492
-msgid "Page Header (Any)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:496
-msgid "Page Header (Even)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:500
-msgid "Page Header (Odd)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:504
-msgid "Page Header (First)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:508
-msgid "Page Header (Last)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:512
-msgid "Page Footer (Any)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:516
-msgid "Page Footer (Even)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:520
-msgid "Page Footer (Odd)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:524
-msgid "Page Footer (First)"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:528
-msgid "Page Footer (Last)"
-msgstr ""
-
-#. i18n: file: koreport/wrtembed/sectioneditor.ui:47
-#. i18n: ectx: property (text), widget (QCheckBox, cbReportHeader)
-#: koreport/wrtembed/KoReportDesigner.cpp:532 rc.cpp:332
-#, fuzzy
-#| msgid "Header"
-msgid "Report Header"
-msgstr "सीर्सक"
-
-#. i18n: file: koreport/wrtembed/sectioneditor.ui:104
-#. i18n: ectx: property (text), widget (QCheckBox, cbReportFooter)
-#: koreport/wrtembed/KoReportDesigner.cpp:536 rc.cpp:353
-#, fuzzy
-#| msgid "Footer"
-msgid "Report Footer"
-msgstr "फूटर"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:608
-#, fuzzy
-#| msgid "Title:"
-msgid "Title"
-msgstr "सीर्सक:"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:608
-msgid "Report Title"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:612
-msgid "Page Size"
-msgstr "पेज आकार"
-
-#. i18n: file: widgets/KoPageLayoutWidget.ui:115
-#. i18n: ectx: property (text), widget (QRadioButton, portrait)
-#: koreport/wrtembed/KoReportDesigner.cpp:616 rc.cpp:533
-msgid "Portrait"
-msgstr "खड़ा "
-
-#. i18n: file: widgets/KoPageLayoutWidget.ui:122
-#. i18n: ectx: property (text), widget (QRadioButton, landscape)
-#: koreport/wrtembed/KoReportDesigner.cpp:616 rc.cpp:536
-msgid "Landscape"
-msgstr "आड़ा"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:617
-#, fuzzy
-#| msgid "Orientation"
-msgid "Page Orientation"
-msgstr "दिसा"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:628
-#, fuzzy
-#| msgid "Page Size"
-msgid "Page Unit"
-msgstr "पेज आकार"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:631
-#, fuzzy
-msgid "Grid Snap"
-msgstr "ग्रिड देखाव (&G)"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:632
-msgid "Grid Divisions"
-msgstr ""
-
-#: koreport/wrtembed/KoReportDesigner.cpp:635
-#, fuzzy
-#| msgid "Margins"
-msgid "Left Margin"
-msgstr "हासिए"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:637
-#, fuzzy
-#| msgid "Right indent"
-msgid "Right Margin"
-msgstr "जेवनी हासिया"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:639
-#, fuzzy
-#| msgid "Margins"
-msgid "Top Margin"
-msgstr "हासिए"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:641
-#, fuzzy
-#| msgid "Margins"
-msgid "Bottom Margin"
-msgstr "हासिए"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:648
-#, fuzzy
-#| msgid "Script Manager"
-msgid "Script Interpreter"
-msgstr "स्क्रिप्ट प्रबंधक"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:650
-#, fuzzy
-#| msgid "Object"
-msgid "Object Script"
-msgstr "चीज"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:831
-#: kopageapp/KoPADocumentStructureDocker.cpp:640
-#, fuzzy
-#| msgid "Custom"
-msgid "Cut"
-msgstr "मनमाफिक"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:835
-#: kopageapp/KoPADocumentStructureDocker.cpp:642
-#, fuzzy
-#| msgid "Date"
-msgid "Paste"
-msgstr "तारीक"
-
-#. i18n: file: koreport/wrtembed/sectioneditor.ui:200
-#. i18n: ectx: property (text), widget (QPushButton, btnRemove)
-#: koreport/wrtembed/KoReportDesigner.cpp:839
-#: widgets/KoResourceItemChooser.cpp:81 kotext/KoTextEditor.cpp:845
-#: kotext/KoTextEditor.cpp:858 rc.cpp:383
-msgid "Delete"
-msgstr "मेटाव"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:1179
-#, fuzzy
-#| msgid "Lines"
-msgid "Line"
-msgstr "पंक्तियाँ"
-
-#: koreport/wrtembed/KoReportDesignerItemBase.cpp:124
-#, fuzzy, kde-format
-#| msgid "%1 %"
-msgctxt "<data-source>: <object>"
-msgid "%1: %2"
-msgstr "%1 %"
-
-#: koreport/wrtembed/reportpropertiesbutton.cpp:27
-msgid ""
-"A button that allows a report's surface to be selected, allowing its "
-"properties to be seen."
-msgstr ""
-
 #: koreport/items/label/KoReportItemLabel.cpp:82
 #, fuzzy
 #| msgid "Collection"
@@ -2335,6 +2058,15 @@ msgstr "खड़ी जमावट सेट करव"
 msgid "Font"
 msgstr "बिन्दु किसिम सेट करव"
 
+#: koreport/items/label/KoReportItemLabel.cpp:97
+#: koreport/items/field/KoReportItemField.cpp:95
+#: koreport/items/text/KoReportItemText.cpp:122
+#: koreport/common/krsectiondata.cpp:109
+#, fuzzy
+#| msgid "Set background"
+msgid "Background Color"
+msgstr "पिछोत अंगना सेट करव"
+
 #: koreport/items/label/KoReportItemLabel.cpp:98
 #: koreport/items/field/KoReportItemField.cpp:96
 #: koreport/items/text/KoReportItemText.cpp:123
@@ -2350,6 +2082,36 @@ msgstr "पिछोत अंगना सेट करव"
 #: widgets/KoColorPopupAction.cpp:85 widgets/KoUniColorChooser.cpp:418
 msgid "Opacity"
 msgstr "अपार्दरसिता"
+
+#: koreport/items/label/KoReportItemLabel.cpp:104
+#: koreport/items/field/KoReportItemField.cpp:103
+#: koreport/items/text/KoReportItemText.cpp:125
+#: koreport/items/check/KoReportItemCheck.cpp:82
+#: koreport/common/KoReportItemLine.cpp:67
+#, fuzzy
+#| msgid "Lighten"
+msgid "Line Weight"
+msgstr "हल्का करव"
+
+#: koreport/items/label/KoReportItemLabel.cpp:105
+#: koreport/items/field/KoReportItemField.cpp:104
+#: koreport/items/text/KoReportItemText.cpp:126
+#: koreport/items/check/KoReportItemCheck.cpp:83
+#: koreport/common/KoReportItemLine.cpp:68
+#, fuzzy
+#| msgid "Color"
+msgid "Line Color"
+msgstr "रंग"
+
+#: koreport/items/label/KoReportItemLabel.cpp:106
+#: koreport/items/field/KoReportItemField.cpp:105
+#: koreport/items/text/KoReportItemText.cpp:127
+#: koreport/items/check/KoReportItemCheck.cpp:84
+#: koreport/common/KoReportItemLine.cpp:69
+#, fuzzy
+#| msgid "Line Border"
+msgid "Line Style"
+msgstr "लकीर चौड़ाई"
 
 #: koreport/items/label/KoReportLabelPlugin.cpp:34
 #, fuzzy
@@ -2443,24 +2205,243 @@ msgstr ""
 msgid "Style"
 msgstr "सैली: (&S)"
 
-#: widgets/KoZoomMode.cpp:25 widgets/KoZoomAction.cpp:166
-#: widgets/KoZoomAction.cpp:168 widgets/KoZoomAction.cpp:180
-#: widgets/KoZoomAction.cpp:182
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
+#: koreport/common/krpos.cpp:26
+msgid "Position"
+msgstr "स्थिति"
 
-#: widgets/KoZoomMode.cpp:26
-msgid "Fit Page Width"
-msgstr "पेज चौड़ाई मं जमाव"
+#: koreport/common/krsize.cpp:26
+#, fuzzy
+#| msgid "Size:"
+msgid "Size"
+msgstr "आकारः"
 
-#: widgets/KoZoomMode.cpp:27
-msgid "Fit Page"
-msgstr "पेज मं जमाव"
+#. i18n: file: main/rdf/KoRdfLocationViewWidget.ui:24
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:26
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: main/rdf/KoRdfLocationEditWidget.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: koreport/common/KoReportItemBase.cpp:28 rc.cpp:83 rc.cpp:107 rc.cpp:203
+#, fuzzy
+#| msgid "Name:"
+msgid "Name"
+msgstr "नाम:"
 
-#: widgets/KoZoomMode.cpp:29
-msgid "Actual Pixels"
-msgstr "सही पिक्सल्स"
+#: koreport/common/KoReportItemBase.cpp:28
+#, fuzzy
+#| msgid "Object"
+msgid "Object Name"
+msgstr "चीज"
+
+#: koreport/common/krsectiondata.cpp:108
+#, fuzzy
+#| msgid "&Height:"
+msgid "Height"
+msgstr "ऊंचाईः (&H)"
+
+#: koreport/wrtembed/reportsection.cpp:97
+#, fuzzy
+#| msgid "Detailed View"
+msgid "Detail"
+msgstr "विस्तृत दृस्य"
+
+#: koreport/wrtembed/KoReportDesignerItemBase.cpp:124
+#, fuzzy, kde-format
+#| msgid "%1 %"
+msgctxt "<data-source>: <object>"
+msgid "%1: %2"
+msgstr "%1 %"
+
+#: koreport/wrtembed/sectioneditor.cpp:283
+msgid "Ascending"
+msgstr ""
+
+#: koreport/wrtembed/sectioneditor.cpp:284
+msgid "Descending"
+msgstr ""
+
+#: koreport/wrtembed/sectioneditor.cpp:306
+#: koreport/wrtembed/sectioneditor.cpp:347
+msgid "Error Encountered"
+msgstr ""
+
+#: koreport/wrtembed/sectioneditor.cpp:307
+#: koreport/wrtembed/sectioneditor.cpp:348
+msgid "Unable to add a new group because its name would not be unique"
+msgstr ""
+
+#: koreport/wrtembed/reportpropertiesbutton.cpp:27
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:492
+msgid "Page Header (Any)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:496
+msgid "Page Header (Even)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:500
+msgid "Page Header (Odd)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:504
+msgid "Page Header (First)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:508
+msgid "Page Header (Last)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:512
+msgid "Page Footer (Any)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:516
+msgid "Page Footer (Even)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:520
+msgid "Page Footer (Odd)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:524
+msgid "Page Footer (First)"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:528
+msgid "Page Footer (Last)"
+msgstr ""
+
+#. i18n: file: koreport/wrtembed/sectioneditor.ui:47
+#. i18n: ectx: property (text), widget (QCheckBox, cbReportHeader)
+#: koreport/wrtembed/KoReportDesigner.cpp:532 rc.cpp:332
+#, fuzzy
+#| msgid "Header"
+msgid "Report Header"
+msgstr "सीर्सक"
+
+#. i18n: file: koreport/wrtembed/sectioneditor.ui:104
+#. i18n: ectx: property (text), widget (QCheckBox, cbReportFooter)
+#: koreport/wrtembed/KoReportDesigner.cpp:536 rc.cpp:353
+#, fuzzy
+#| msgid "Footer"
+msgid "Report Footer"
+msgstr "फूटर"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:608
+#, fuzzy
+#| msgid "Title:"
+msgid "Title"
+msgstr "सीर्सक:"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:608
+msgid "Report Title"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:612
+msgid "Page Size"
+msgstr "पेज आकार"
+
+#. i18n: file: widgets/KoPageLayoutWidget.ui:115
+#. i18n: ectx: property (text), widget (QRadioButton, portrait)
+#: koreport/wrtembed/KoReportDesigner.cpp:616 rc.cpp:545
+msgid "Portrait"
+msgstr "खड़ा "
+
+#. i18n: file: widgets/KoPageLayoutWidget.ui:122
+#. i18n: ectx: property (text), widget (QRadioButton, landscape)
+#: koreport/wrtembed/KoReportDesigner.cpp:616 rc.cpp:548
+msgid "Landscape"
+msgstr "आड़ा"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:617
+#, fuzzy
+#| msgid "Orientation"
+msgid "Page Orientation"
+msgstr "दिसा"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:628
+#, fuzzy
+#| msgid "Page Size"
+msgid "Page Unit"
+msgstr "पेज आकार"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:631
+#, fuzzy
+msgid "Grid Snap"
+msgstr "ग्रिड देखाव (&G)"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:632
+msgid "Grid Divisions"
+msgstr ""
+
+#: koreport/wrtembed/KoReportDesigner.cpp:635
+#, fuzzy
+#| msgid "Margins"
+msgid "Left Margin"
+msgstr "हासिए"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:637
+#, fuzzy
+#| msgid "Right indent"
+msgid "Right Margin"
+msgstr "जेवनी हासिया"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:639
+#, fuzzy
+#| msgid "Margins"
+msgid "Top Margin"
+msgstr "हासिए"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:641
+#, fuzzy
+#| msgid "Margins"
+msgid "Bottom Margin"
+msgstr "हासिए"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:648
+#, fuzzy
+#| msgid "Script Manager"
+msgid "Script Interpreter"
+msgstr "स्क्रिप्ट प्रबंधक"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:650
+#, fuzzy
+#| msgid "Object"
+msgid "Object Script"
+msgstr "चीज"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:831
+#: kopageapp/KoPADocumentStructureDocker.cpp:640
+#, fuzzy
+#| msgid "Custom"
+msgid "Cut"
+msgstr "मनमाफिक"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:835
+#: kopageapp/KoPADocumentStructureDocker.cpp:642
+#, fuzzy
+#| msgid "Date"
+msgid "Paste"
+msgstr "तारीक"
+
+#. i18n: file: koreport/wrtembed/sectioneditor.ui:200
+#. i18n: ectx: property (text), widget (QPushButton, btnRemove)
+#: koreport/wrtembed/KoReportDesigner.cpp:839
+#: widgets/KoResourceItemChooser.cpp:81 kotext/KoTextEditor.cpp:845
+#: kotext/KoTextEditor.cpp:858 rc.cpp:383
+msgid "Delete"
+msgstr "मेटाव"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:1179
+#, fuzzy
+#| msgid "Lines"
+msgid "Line"
+msgstr "पंक्तियाँ"
 
 #: widgets/KoCsvImportDialog.cpp:92
 msgid "Import Data"
@@ -2500,7 +2481,7 @@ msgstr "मुद्रा"
 #. i18n: file: widgets/KoCsvImportDialog.ui:268
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
 #: widgets/KoCsvImportDialog.cpp:222 widgets/KoCsvImportDialog.cpp:575
-#: widgets/KoCsvImportDialog.cpp:682 rc.cpp:485
+#: widgets/KoCsvImportDialog.cpp:682 rc.cpp:497
 msgid "None"
 msgstr "कुछ नइ"
 
@@ -2543,7 +2524,7 @@ msgstr "आमने-सामने के पेज:"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:143
 #. i18n: ectx: property (text), widget (QRadioButton, facingPages)
-#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:545
+#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:557
 msgid "Facing pages"
 msgstr "आमने-सामने के पेज"
 
@@ -2627,6 +2608,25 @@ msgstr "नीले से पीला"
 #: widgets/KoUniColorChooser.cpp:221
 msgid "Opacity:"
 msgstr "अपारदर्सिता:"
+
+#: widgets/KoZoomMode.cpp:25 widgets/KoZoomAction.cpp:166
+#: widgets/KoZoomAction.cpp:168 widgets/KoZoomAction.cpp:180
+#: widgets/KoZoomAction.cpp:182
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
+
+#: widgets/KoZoomMode.cpp:26
+msgid "Fit Page Width"
+msgstr "पेज चौड़ाई मं जमाव"
+
+#: widgets/KoZoomMode.cpp:27
+msgid "Fit Page"
+msgstr "पेज मं जमाव"
+
+#: widgets/KoZoomMode.cpp:29
+msgid "Actual Pixels"
+msgstr "सही पिक्सल्स"
 
 #: widgets/KoZoomAction.cpp:264
 msgid "Use same aspect as pixels"
@@ -2891,7 +2891,7 @@ msgstr "पेज ले-आउट"
 
 #. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:63
 #. i18n: ectx: property (text), widget (QTableWidget, variables)
-#: kopageapp/KoPAView.cpp:339 rc.cpp:89
+#: kopageapp/KoPAView.cpp:339 rc.cpp:92
 msgid "Variable"
 msgstr "परिवर्तनीय"
 
@@ -3336,18 +3336,6 @@ msgstr "के-आफिस भंडारन"
 msgid "Default"
 msgstr "डिफाल्ट"
 
-#: kotext/InsertTextLocator.cpp:29
-#, fuzzy
-#| msgid "Text Reference"
-msgid "Index Reference"
-msgstr "पाठ संदर्भ"
-
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:82 kotext/KoTextEditor_p.h:119 rc.cpp:455
-msgid "Format"
-msgstr "फार्मेट"
-
 #: kotext/KoText.cpp:29
 msgctxt "Underline Style"
 msgid "None"
@@ -3362,6 +3350,12 @@ msgstr "एकल"
 msgctxt "Underline Style"
 msgid "Double"
 msgstr "दोगुना"
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:82 kotext/KoTextEditor_p.h:119 rc.cpp:467
+msgid "Format"
+msgstr "फार्मेट"
 
 #: kotext/KoReplaceStrategy.cpp:56
 msgid ""
@@ -3508,6 +3502,12 @@ msgstr[1] ""
 msgid "Found no match"
 msgstr "कोई जोड़े नइ मिलिस"
 
+#: kotext/InsertTextLocator.cpp:29
+#, fuzzy
+#| msgid "Text Reference"
+msgid "Index Reference"
+msgstr "पाठ संदर्भ"
+
 #: kotext/InsertTextReferenceAction.cpp:35
 #: kotext/InsertTextReferenceAction.cpp:63
 msgid "Text Reference"
@@ -3580,8 +3580,8 @@ msgstr "जूम आउट"
 #. i18n: file: widgets/KoEditColorSet.ui:78
 #. i18n: ectx: property (text), widget (QToolButton, save)
 #: rc.cpp:11 rc.cpp:14 rc.cpp:17 rc.cpp:20 rc.cpp:23 rc.cpp:26 rc.cpp:29
-#: rc.cpp:32 rc.cpp:35 rc.cpp:38 rc.cpp:41 rc.cpp:44 rc.cpp:47 rc.cpp:422
-#: rc.cpp:428 rc.cpp:434 rc.cpp:440
+#: rc.cpp:32 rc.cpp:35 rc.cpp:38 rc.cpp:41 rc.cpp:44 rc.cpp:47 rc.cpp:434
+#: rc.cpp:440 rc.cpp:446 rc.cpp:452
 msgid "..."
 msgstr "..."
 
@@ -3591,57 +3591,9 @@ msgstr "..."
 msgid "Convert To Path"
 msgstr "पथ मं बदलव"
 
-#. i18n: file: flake/SnapGuideConfigWidget.ui:33
-#. i18n: ectx: property (toolTip), widget (QCheckBox, nodeSnapGuide)
-#: rc.cpp:53
-msgid "Nodes"
-msgstr "नोड्स"
-
-#. i18n: file: flake/SnapGuideConfigWidget.ui:53
-#. i18n: ectx: property (toolTip), widget (QCheckBox, extensionSnapGuide)
-#: rc.cpp:56
-msgid "Extension of lines"
-msgstr "लाइन के एक्सटेंसन"
-
-#. i18n: file: flake/SnapGuideConfigWidget.ui:73
-#. i18n: ectx: property (toolTip), widget (QCheckBox, boundingBoxSnapGuide)
-#: rc.cpp:59
-msgid "Bounding box of shape"
-msgstr ""
-
-#. i18n: file: flake/SnapGuideConfigWidget.ui:93
-#. i18n: ectx: property (toolTip), widget (QSpinBox, snapDistance)
-#: rc.cpp:62
-msgid "Proximity distance where snapping happens"
-msgstr ""
-
-#. i18n: file: flake/SnapGuideConfigWidget.ui:96
-#. i18n: ectx: property (suffix), widget (QSpinBox, snapDistance)
-#: rc.cpp:65
-msgid " px"
-msgstr ""
-
-#. i18n: file: flake/SnapGuideConfigWidget.ui:109
-#. i18n: ectx: property (toolTip), widget (QCheckBox, orthogonalSnapGuide)
-#: rc.cpp:68
-msgid "Orthogonal"
-msgstr "ओर्थोगोनल"
-
-#. i18n: file: flake/SnapGuideConfigWidget.ui:129
-#. i18n: ectx: property (toolTip), widget (QCheckBox, intersectionSnapGuide)
-#: rc.cpp:71
-msgid "Intersection of lines"
-msgstr "लाइन के प्रतिक्छेदन"
-
-#. i18n: file: flake/SnapGuideConfigWidget.ui:149
-#. i18n: ectx: property (toolTip), widget (QCheckBox, lineGuideSnapGuide)
-#: rc.cpp:74
-msgid "Guide lines"
-msgstr "गाइड लाइन"
-
 #. i18n: file: flake/KoConnectionShapeConfigWidget.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, KoConnectionShapeConfigWidget)
-#: rc.cpp:77
+#: rc.cpp:53
 msgid "Ellipse Shape"
 msgstr "दीर्घवक्र आकार"
 
@@ -3649,25 +3601,73 @@ msgstr "दीर्घवक्र आकार"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: main/koDocumentInfoAboutWidget.ui:109
 #. i18n: ectx: property (text), widget (QLabel, lblTypeDesc)
-#: rc.cpp:80 rc.cpp:302
+#: rc.cpp:56 rc.cpp:302
 msgid "Type:"
 msgstr "किसिमः"
 
+#. i18n: file: flake/SnapGuideConfigWidget.ui:33
+#. i18n: ectx: property (toolTip), widget (QCheckBox, nodeSnapGuide)
+#: rc.cpp:59
+msgid "Nodes"
+msgstr "नोड्स"
+
+#. i18n: file: flake/SnapGuideConfigWidget.ui:53
+#. i18n: ectx: property (toolTip), widget (QCheckBox, extensionSnapGuide)
+#: rc.cpp:62
+msgid "Extension of lines"
+msgstr "लाइन के एक्सटेंसन"
+
+#. i18n: file: flake/SnapGuideConfigWidget.ui:73
+#. i18n: ectx: property (toolTip), widget (QCheckBox, boundingBoxSnapGuide)
+#: rc.cpp:65
+msgid "Bounding box of shape"
+msgstr ""
+
+#. i18n: file: flake/SnapGuideConfigWidget.ui:93
+#. i18n: ectx: property (toolTip), widget (QSpinBox, snapDistance)
+#: rc.cpp:68
+msgid "Proximity distance where snapping happens"
+msgstr ""
+
+#. i18n: file: flake/SnapGuideConfigWidget.ui:96
+#. i18n: ectx: property (suffix), widget (QSpinBox, snapDistance)
+#: rc.cpp:71
+msgid " px"
+msgstr ""
+
+#. i18n: file: flake/SnapGuideConfigWidget.ui:109
+#. i18n: ectx: property (toolTip), widget (QCheckBox, orthogonalSnapGuide)
+#: rc.cpp:74
+msgid "Orthogonal"
+msgstr "ओर्थोगोनल"
+
+#. i18n: file: flake/SnapGuideConfigWidget.ui:129
+#. i18n: ectx: property (toolTip), widget (QCheckBox, intersectionSnapGuide)
+#: rc.cpp:77
+msgid "Intersection of lines"
+msgstr "लाइन के प्रतिक्छेदन"
+
+#. i18n: file: flake/SnapGuideConfigWidget.ui:149
+#. i18n: ectx: property (toolTip), widget (QCheckBox, lineGuideSnapGuide)
+#: rc.cpp:80
+msgid "Guide lines"
+msgstr "गाइड लाइन"
+
 #. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:83
+#: rc.cpp:86
 msgid "Stylesheet Definition"
 msgstr ""
 
 #. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:29
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:86
+#: rc.cpp:89
 msgid "Variables Available"
 msgstr ""
 
 #. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:68
 #. i18n: ectx: property (text), widget (QTableWidget, variables)
-#: rc.cpp:92
+#: rc.cpp:95
 #, fuzzy
 #| msgid "Decrypt"
 msgid "Description"
@@ -3679,7 +3679,7 @@ msgstr "डीक्रिप्ट"
 #. i18n: ectx: property (text), widget (QPushButton, newTripleButton)
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:84
 #. i18n: ectx: property (text), widget (QPushButton, newNamespaceButton)
-#: rc.cpp:95 rc.cpp:107 rc.cpp:119
+#: rc.cpp:98 rc.cpp:122 rc.cpp:134
 msgid "new"
 msgstr ""
 
@@ -3689,7 +3689,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, deleteTripleButton)
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:91
 #. i18n: ectx: property (text), widget (QPushButton, deleteNamespaceButton)
-#: rc.cpp:98 rc.cpp:113 rc.cpp:122
+#: rc.cpp:101 rc.cpp:128 rc.cpp:137
 #, fuzzy
 #| msgid "Delete"
 msgid "delete"
@@ -3697,13 +3697,35 @@ msgstr "मेटाव"
 
 #. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:113
 #. i18n: ectx: property (text), widget (QTreeWidget, stylesheets)
-#: rc.cpp:101
+#: rc.cpp:104
 msgid "Stylesheet Name"
 msgstr ""
 
+#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:33
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:110
+msgid "Nick"
+msgstr ""
+
+#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:40
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:113
+#, fuzzy
+#| msgid "Number:"
+msgid "Phone Number"
+msgstr "संख्या:"
+
+#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:50
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:116
+#, fuzzy
+#| msgid "Move page"
+msgid "Home Page"
+msgstr "पेज खिसकाव"
+
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:21
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:104
+#: rc.cpp:119
 #, fuzzy
 #| msgid "Title:"
 msgid "Triples"
@@ -3711,7 +3733,7 @@ msgstr "सीर्सक:"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:46
 #. i18n: ectx: property (text), widget (QPushButton, copyTripleButton)
-#: rc.cpp:110
+#: rc.cpp:125
 #, fuzzy
 #| msgid "Company:"
 msgid "copy"
@@ -3719,19 +3741,19 @@ msgstr "कम्पनी:"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:76
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: rc.cpp:116
+#: rc.cpp:131
 msgid "Namespaces"
 msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:123
 #. i18n: ectx: property (text), widget (QTreeWidget, m_namespaceView)
-#: rc.cpp:125
+#: rc.cpp:140
 msgid "Prefix"
 msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:128
 #. i18n: ectx: property (text), widget (QTreeWidget, m_namespaceView)
-#: rc.cpp:128
+#: rc.cpp:143
 #, fuzzy
 #| msgid "Replace"
 msgid "Namespace"
@@ -3739,19 +3761,19 @@ msgstr "बदलव"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:137
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: rc.cpp:131
+#: rc.cpp:146
 msgid "Semantic"
 msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:156
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
-#: rc.cpp:135
+#: rc.cpp:150
 msgid "SPARQL"
 msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:182
 #. i18n: ectx: property (html), widget (QTextEdit, m_sparqlQuery)
-#: rc.cpp:138
+#: rc.cpp:153
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -3802,7 +3824,7 @@ msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:191
 #. i18n: ectx: property (text), widget (QPushButton, m_sparqlExecute)
-#: rc.cpp:158
+#: rc.cpp:173
 #, fuzzy
 #| msgid "US Executive"
 msgid "Execute"
@@ -3810,7 +3832,7 @@ msgstr "यूएस एक्जीक्यूटिव"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:221
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
-#: rc.cpp:161
+#: rc.cpp:176
 #, fuzzy
 #| msgid "Styles"
 msgid "Stylesheets"
@@ -3818,13 +3840,13 @@ msgstr "सैली"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:227
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:164
+#: rc.cpp:179
 msgid "Contacts"
 msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:279
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:173
+#: rc.cpp:188
 msgid ""
 "Set the default stylesheet for Semantic objects in this document. New RDF "
 "objects will use this stylesheet automatically. The buttons allow you to set "
@@ -3840,31 +3862,9 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, m_defaultLocationsSheetButton)
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:310
 #. i18n: ectx: property (text), widget (QPushButton, m_setAllStylesheetsButton)
-#: rc.cpp:176 rc.cpp:179 rc.cpp:182 rc.cpp:185
+#: rc.cpp:191 rc.cpp:194 rc.cpp:197 rc.cpp:200
 msgid "Set For All Existing"
 msgstr ""
-
-#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:33
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:191
-msgid "Nick"
-msgstr ""
-
-#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:40
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:194
-#, fuzzy
-#| msgid "Number:"
-msgid "Phone Number"
-msgstr "संख्या:"
-
-#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:50
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:197
-#, fuzzy
-#| msgid "Move page"
-msgid "Home Page"
-msgstr "पेज खिसकाव"
 
 #. i18n: file: main/rdf/KoRdfCalendarEventEditWidget.ui:20
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -4269,147 +4269,171 @@ msgstr ""
 msgid "&Cancel"
 msgstr "बदलव"
 
+#. i18n: file: widgets/KoShadowConfigWidget.ui:17
+#. i18n: ectx: property (text), widget (QCheckBox, shadowVisible)
+#: rc.cpp:419
+msgid "Show Shadow"
+msgstr "छइंहा देखाव"
+
+#. i18n: file: widgets/KoShadowConfigWidget.ui:27
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:422
+msgid "Shadow Angle:"
+msgstr "कोन दिखाव:"
+
+#. i18n: file: widgets/KoShadowConfigWidget.ui:37
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:425
+msgid "Shadow Offset:"
+msgstr "छइंहा आफसेट:"
+
+#. i18n: file: widgets/KoShadowConfigWidget.ui:47
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:428
+msgid "Shadow Color:"
+msgstr "छइंहा रंग:"
+
 #. i18n: file: widgets/KoEditColorSet.ui:55
 #. i18n: ectx: property (toolTip), widget (QToolButton, remove)
-#: rc.cpp:425
+#: rc.cpp:437
 msgid "Remove"
 msgstr "हटाव"
 
 #. i18n: file: widgets/KoEditColorSet.ui:65
 #. i18n: ectx: property (toolTip), widget (QToolButton, open)
-#: rc.cpp:431
+#: rc.cpp:443
 msgid "Open palette"
 msgstr "रंगपट्टिका खोलव"
 
 #. i18n: file: widgets/KoEditColorSet.ui:75
 #. i18n: ectx: property (toolTip), widget (QToolButton, save)
-#: rc.cpp:437
+#: rc.cpp:449
 msgid "Save palette"
 msgstr "रंगपट्टिका सहेजव"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:52
 #. i18n: ectx: attribute (title), widget (QWidget, m_dataTab)
-#: rc.cpp:443
+#: rc.cpp:455
 msgid "Data"
 msgstr "डाटा"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:66
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: rc.cpp:446
+#: rc.cpp:458
 msgid "E&ncoding:"
 msgstr "एनकोडिंग: (&n)"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:110
 #. i18n: ectx: property (text), widget (QCheckBox, m_firstRowHeader)
-#: rc.cpp:449
+#: rc.cpp:461
 msgid "First row contains headers"
 msgstr "पहली लकीर मं सीर्सक हे."
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:123
 #. i18n: ectx: property (text), widget (QCheckBox, m_firstColHeader)
-#: rc.cpp:452
+#: rc.cpp:464
 msgid "First column contains headers"
 msgstr "पहिली खंभा मं सीर्सक हे"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:159
 #. i18n: ectx: property (title), widget (QGroupBox, m_delimiterBox)
-#: rc.cpp:458
+#: rc.cpp:470
 msgid "Delimiter"
 msgstr "डेलिमिटर"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:165
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioComma)
-#: rc.cpp:461
+#: rc.cpp:473
 msgid "Comma"
 msgstr "विराम चिनहा"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:175
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioSemicolon)
-#: rc.cpp:464
+#: rc.cpp:476
 msgid "Semicolon"
 msgstr "सेमी-कालन"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:182
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioOther)
-#: rc.cpp:467
+#: rc.cpp:479
 msgid "Other"
 msgstr "अन्य"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:189
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioTab)
-#: rc.cpp:470
+#: rc.cpp:482
 msgid "Tabulator"
 msgstr "टेबुलेटर"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:196
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioSpace)
-#: rc.cpp:473
+#: rc.cpp:485
 msgid "Space"
 msgstr "खाली जगह"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:241
 #. i18n: ectx: property (text), widget (QLabel, label2)
-#: rc.cpp:476
+#: rc.cpp:488
 msgid "Text&quote:"
 msgstr "पाठ उदाहरन: (&q)"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:258
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: rc.cpp:479
+#: rc.cpp:491
 msgid "\""
 msgstr "\""
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:263
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: rc.cpp:482
+#: rc.cpp:494
 msgid "'"
 msgstr "'"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:292
 #. i18n: ectx: property (text), widget (QLabel, label3)
-#: rc.cpp:488
+#: rc.cpp:500
 msgid "Decimal symbol:"
 msgstr "दसमलव चिनहाः"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:321
 #. i18n: ectx: property (text), widget (QLabel, label4)
-#: rc.cpp:491
+#: rc.cpp:503
 msgid "Thousands separator:"
 msgstr "हजार अलगइयाः"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:366
 #. i18n: ectx: property (text), widget (QCheckBox, m_ignoreDuplicates)
-#: rc.cpp:494
+#: rc.cpp:506
 msgid "Ignore duplicate delimiters"
 msgstr "अनुकृति डेलिमीटर ल अनदेखा करव"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:373
 #. i18n: ectx: property (text), widget (QLabel, label1)
-#: rc.cpp:497
+#: rc.cpp:509
 msgid "&Format:"
 msgstr "फार्मेट: (&F)"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:387
 #. i18n: ectx: attribute (title), widget (QWidget, m_rangesTab)
-#: rc.cpp:500
+#: rc.cpp:512
 msgid "Ranges"
 msgstr "सीमा"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:393
 #. i18n: ectx: property (text), widget (QPushButton, m_updateButton)
-#: rc.cpp:503
+#: rc.cpp:515
 msgid "Update"
 msgstr "अपडेट"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:460
 #. i18n: ectx: property (text), widget (QLabel, TextLabel3_2)
-#: rc.cpp:506
+#: rc.cpp:518
 msgid "Import columns:"
 msgstr "खंभा आयात करव:"
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:479
 #. i18n: ectx: property (text), widget (QLabel, TextLabel3)
-#: rc.cpp:509
+#: rc.cpp:521
 msgid "Import lines:"
 msgstr "लकीरें आयात करव:"
 
@@ -4417,135 +4441,111 @@ msgstr "लकीरें आयात करव:"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #. i18n: file: widgets/KoCsvImportDialog.ui:512
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:512 rc.cpp:515
+#: rc.cpp:524 rc.cpp:527
 msgid "to"
 msgstr "को"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:17
 #. i18n: ectx: property (text), widget (QLabel, unitsLabel)
-#: rc.cpp:518
+#: rc.cpp:530
 msgid "Unit:"
 msgstr "इकाईः"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:53
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:521
+#: rc.cpp:533
 msgid "Size:"
 msgstr "आकारः"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:66
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:524
+#: rc.cpp:536
 msgid "Width:"
 msgstr "चौड़ाईः"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:93
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:527
+#: rc.cpp:539
 msgid "Height:"
 msgstr "ऊँचाईः"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:108
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:530
+#: rc.cpp:542
 msgid "Orientation:"
 msgstr "दिसा:"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:129
 #. i18n: ectx: property (text), widget (QLabel, facingPageLabel)
-#: rc.cpp:539
+#: rc.cpp:551
 msgid "Facing pages:"
 msgstr "आमने-सामने के पेज:"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:136
 #. i18n: ectx: property (text), widget (QRadioButton, singleSided)
-#: rc.cpp:542
+#: rc.cpp:554
 msgid "Single sided"
 msgstr "एक साइड वाले"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:150
 #. i18n: ectx: property (text), widget (QLabel, directionLabel)
-#: rc.cpp:548
+#: rc.cpp:560
 msgid "Text direction:"
 msgstr "पाठ दिसा:"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:158
 #. i18n: ectx: property (text), item, widget (QComboBox, textDirection)
-#: rc.cpp:551
+#: rc.cpp:563
 msgid "Automatic"
 msgstr "अपने अपन"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:163
 #. i18n: ectx: property (text), item, widget (QComboBox, textDirection)
-#: rc.cpp:554
+#: rc.cpp:566
 msgid "Left to right"
 msgstr "डेरी से जेवनी"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:168
 #. i18n: ectx: property (text), item, widget (QComboBox, textDirection)
-#: rc.cpp:557
+#: rc.cpp:569
 msgid "Right to left"
 msgstr "जेवनी से डेरी"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:176
 #. i18n: ectx: property (title), widget (QGroupBox, margins)
-#: rc.cpp:560
+#: rc.cpp:572
 msgid "Margins"
 msgstr "हासिए"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:204
 #. i18n: ectx: property (text), widget (QLabel, rightLabel)
-#: rc.cpp:563
+#: rc.cpp:575
 msgid "Page edge:"
 msgstr "पेज किनारा:"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:214
 #. i18n: ectx: property (text), widget (QLabel, leftLabel)
-#: rc.cpp:566
+#: rc.cpp:578
 msgid "Binding edge:"
 msgstr "बाइंडिंग किनारा:"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:224
 #. i18n: ectx: property (text), widget (QLabel, label_12)
-#: rc.cpp:569
+#: rc.cpp:581
 msgid "Bottom:"
 msgstr "निचला:"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:241
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:572
+#: rc.cpp:584
 msgid "Top:"
 msgstr "सीर्स:"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:288
 #. i18n: ectx: property (text), widget (QLabel, stylesLabel)
-#: rc.cpp:575
+#: rc.cpp:587
 msgid "Follow style:"
 msgstr ""
-
-#. i18n: file: widgets/KoShadowConfigWidget.ui:17
-#. i18n: ectx: property (text), widget (QCheckBox, shadowVisible)
-#: rc.cpp:578
-msgid "Show Shadow"
-msgstr "छइंहा देखाव"
-
-#. i18n: file: widgets/KoShadowConfigWidget.ui:27
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:581
-msgid "Shadow Angle:"
-msgstr "कोन दिखाव:"
-
-#. i18n: file: widgets/KoShadowConfigWidget.ui:37
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:584
-msgid "Shadow Offset:"
-msgstr "छइंहा आफसेट:"
-
-#. i18n: file: widgets/KoShadowConfigWidget.ui:47
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:587
-msgid "Shadow Color:"
-msgstr "छइंहा रंग:"
 
 #. i18n: file: kopageapp/tools/backgroundTool/BackgroundToolWidget.ui:18
 #. i18n: ectx: property (text), widget (QPushButton, backgroundImage)
