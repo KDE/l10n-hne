@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-01 02:17+0100\n"
+"POT-Creation-Date: 2010-12-09 02:19+0100\n"
 "PO-Revision-Date: 2009-02-28 13:57+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -612,7 +612,7 @@ msgstr "नवा प्रविस्टिः"
 msgid "&Add..."
 msgstr "जोड़व...(&A)"
 
-#: simplestringlisteditor.cpp:88 identitypage.cpp:231
+#: simplestringlisteditor.cpp:88 identitypage.cpp:225
 msgid "&Remove"
 msgstr "मेटाव (&R)"
 
@@ -645,28 +645,28 @@ msgstr "नवा विंडो (&W)"
 msgid "Starting..."
 msgstr "सुरू करत हे..."
 
-#: identitypage.cpp:228
+#: identitypage.cpp:222
 #, kde-format
 msgid "<qt>Do you really want to remove the identity named <b>%1</b>?</qt>"
 msgstr "<qt>का आप मन सचमुच कमइया नाम <b>%1</b> मिटाना चाहू?</qt>"
 
-#: identitypage.cpp:230
+#: identitypage.cpp:224
 msgid "Remove Identity"
 msgstr "पहिचान मेटाव"
 
-#: identitypage.cpp:275 configuredialog.cpp:2521
+#: identitypage.cpp:269 configuredialog.cpp:2521
 msgid "Add..."
 msgstr "जोड़व..."
 
-#: identitypage.cpp:277 configuredialog.cpp:2523
+#: identitypage.cpp:271 configuredialog.cpp:2523
 msgid "Modify..."
 msgstr "सुधारव..."
 
-#: identitypage.cpp:279
+#: identitypage.cpp:273
 msgid "Remove"
 msgstr "हटाव"
 
-#: identitypage.cpp:282
+#: identitypage.cpp:276
 msgid "Set as Default"
 msgstr "डिफाल्ट रूप मं सेट करव"
 
@@ -2700,7 +2700,7 @@ msgid "Distribution list \"%1\" is empty, it cannot be used."
 msgstr ""
 
 #: addressvalidationjob.cpp:71 addressvalidationjob.cpp:80
-#: identitydialog.cpp:609
+#: identitydialog.cpp:607
 msgid "Invalid Email Address"
 msgstr "अवैध ई-मेल पता"
 
@@ -4449,8 +4449,11 @@ msgid "S/MIME encryption certificate:"
 msgstr "एस/माइम एनक्रिप्सन प्रमानपत्र:"
 
 #: identitydialog.cpp:341
-msgid "Preferred crypto message format:"
-msgstr "वांछित क्रिप्टो संदेस फारमेट:"
+#, fuzzy
+#| msgid "Cryptography"
+msgctxt "Preferred format:"
+msgid "Crypto"
+msgstr "क्रिप्टोग्राफी"
 
 #: identitydialog.cpp:355
 msgctxt "@title:tab Advanced identity settings."
@@ -4489,50 +4492,50 @@ msgstr ""
 msgid "D&ictionary:"
 msgstr "सब्दकोस (&i)"
 
-#: identitydialog.cpp:418
+#: identitydialog.cpp:417
 msgid "Sent-mail &folder:"
 msgstr "भेजी-डाक फोल्डरः (&f)"
 
-#: identitydialog.cpp:427
+#: identitydialog.cpp:426
 msgid "&Drafts folder:"
 msgstr "मसौदा फोल्डरः (&D)"
 
-#: identitydialog.cpp:436
+#: identitydialog.cpp:435
 msgid "&Templates folder:"
 msgstr "टैम्पलेट्स फोल्डर: (&T)"
 
-#: identitydialog.cpp:443
+#: identitydialog.cpp:441
 msgid "Special &transport:"
 msgstr "विसेस हस्तांतरनः (&t)"
 
-#: identitydialog.cpp:464
+#: identitydialog.cpp:462
 #, fuzzy
 msgid "&Use custom message templates for this identity"
 msgstr "मनमाफिक संदेस टैम्प्लेट उपयोग करव (&U)"
 
-#: identitydialog.cpp:481 collectiontemplatespage.cpp:78
+#: identitydialog.cpp:479 collectiontemplatespage.cpp:78
 msgid "&Copy Global Templates"
 msgstr "वैस्विक टैम्प्लेट्स नकल करव (&C)"
 
-#: identitydialog.cpp:496 collectiontemplatespage.cpp:40
+#: identitydialog.cpp:494 collectiontemplatespage.cpp:40
 msgid "Templates"
 msgstr "प्रारूप"
 
-#: identitydialog.cpp:504
+#: identitydialog.cpp:502
 msgid "Signature"
 msgstr "दसखत"
 
-#: identitydialog.cpp:513
+#: identitydialog.cpp:511
 msgid "Picture"
 msgstr "चित्र"
 
-#: identitydialog.cpp:600
+#: identitydialog.cpp:598
 #, fuzzy, kde-format
 #| msgid "Invalid Email Address"
 msgid "Invalid Email Alias \"%1\""
 msgstr "अवैध ई-मेल पता"
 
-#: identitydialog.cpp:644
+#: identitydialog.cpp:642
 #, kde-format
 msgid ""
 "One of the configured OpenPGP signing keys does not contain any user ID with "
@@ -4541,14 +4544,14 @@ msgid ""
 "verify signatures made with this configuration."
 msgstr ""
 
-#: identitydialog.cpp:652
+#: identitydialog.cpp:650
 #, kde-format
 msgid ""
 "One of the configured OpenPGP encryption keys does not contain any user ID "
 "with the configured email address for this identity (%1)."
 msgstr ""
 
-#: identitydialog.cpp:658
+#: identitydialog.cpp:656
 #, kde-format
 msgid ""
 "One of the configured S/MIME signing certificates does not contain the "
@@ -4557,41 +4560,41 @@ msgid ""
 "verify signatures made with this configuration."
 msgstr ""
 
-#: identitydialog.cpp:666
+#: identitydialog.cpp:664
 #, kde-format
 msgid ""
 "One of the configured S/MIME encryption certificates does not contain the "
 "configured email address for this identity (%1)."
 msgstr ""
 
-#: identitydialog.cpp:674
+#: identitydialog.cpp:672
 msgid "Email Address Not Found in Key/Certificates"
 msgstr "ई-मेल पता जऊन कुंजी/प्रमानपत्र मं नइ मिलिस"
 
-#: identitydialog.cpp:689
+#: identitydialog.cpp:687
 msgid "The signature file is not valid"
 msgstr "दसखत फाइल वैध नइ हे"
 
-#: identitydialog.cpp:712
+#: identitydialog.cpp:709
 #, kde-format
 msgid "Edit Identity \"%1\""
 msgstr "कमइया के संपादन करव \"%1\""
 
-#: identitydialog.cpp:744
+#: identitydialog.cpp:740
 #, kde-format
 msgid ""
 "The custom sent-mail folder for identity \"%1\" does not exist (anymore); "
 "therefore, the default sent-mail folder will be used."
 msgstr ""
 
-#: identitydialog.cpp:756
+#: identitydialog.cpp:752
 #, kde-format
 msgid ""
 "The custom drafts folder for identity \"%1\" does not exist (anymore); "
 "therefore, the default drafts folder will be used."
 msgstr ""
 
-#: identitydialog.cpp:768
+#: identitydialog.cpp:764
 #, kde-format
 msgid ""
 "The custom templates folder for identity \"%1\" does not exist (anymore); "
@@ -5975,6 +5978,9 @@ msgstr[1] "संलग्नक के रूप मं जोड़व"
 #, kde-format
 msgid "Folder Shortcut %1"
 msgstr ""
+
+#~ msgid "Preferred crypto message format:"
+#~ msgstr "वांछित क्रिप्टो संदेस फारमेट:"
 
 #~ msgctxt "@title:tab General settings for a folder."
 #~ msgid "General"
