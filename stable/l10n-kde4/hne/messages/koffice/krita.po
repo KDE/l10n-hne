@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-04 10:36+0100\n"
+"POT-Creation-Date: 2010-12-09 10:04+0100\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -3360,7 +3360,7 @@ msgstr "निरपेक्छ कलरमेट्रिक"
 #. i18n: file: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgRotateImage)
 #: rc.cpp:1067 plugins/extensions/rotateimage/rotateimage.cc:117
-#: plugins/extensions/rotateimage/dlg_rotateimage.cc:31 image/kis_image.cc:440
+#: plugins/extensions/rotateimage/dlg_rotateimage.cc:31 image/kis_image.cc:443
 msgid "Rotate Image"
 msgstr "फोटू घुमाव"
 
@@ -3688,7 +3688,7 @@ msgstr "परत २"
 #. i18n: file: plugins/extensions/shearimage/wdg_shearimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
 #: rc.cpp:1209 plugins/extensions/shearimage/dlg_shearimage.cc:32
-#: plugins/extensions/shearimage/shearimage.cc:90 image/kis_image.cc:482
+#: plugins/extensions/shearimage/shearimage.cc:90 image/kis_image.cc:485
 msgid "Shear Image"
 msgstr "फोटू कतरें"
 
@@ -10284,29 +10284,33 @@ msgstr "ड्राप छइंहा"
 msgid "Add Drop Shadow"
 msgstr "ड्राप छइंहा जोड़व"
 
-#: plugins/extensions/imagesize/imagesize.cc:76
+#: plugins/extensions/imagesize/imagesize.cc:77
 msgid "Scale To New Size..."
 msgstr "नवा आकार देव..."
 
-#: plugins/extensions/imagesize/imagesize.cc:80
+#: plugins/extensions/imagesize/imagesize.cc:81
 msgid "Size Canvas..."
 msgstr ""
 
-#: plugins/extensions/imagesize/imagesize.cc:84
+#: plugins/extensions/imagesize/imagesize.cc:85
 msgid "Scale &Layer..."
 msgstr "परत के आकार बदलव... (&L)"
 
-#: plugins/extensions/imagesize/imagesize.cc:90
+#: plugins/extensions/imagesize/imagesize.cc:91
 #, fuzzy
 #| msgid "&Scale"
 msgid "&Scale..."
 msgstr "स्केल (&S)"
 
-#: plugins/extensions/imagesize/imagesize.cc:162
+#: plugins/extensions/imagesize/imagesize.cc:123 image/kis_image.cc:416
+msgid "Scale Image"
+msgstr "फोटू आकार बदलव"
+
+#: plugins/extensions/imagesize/imagesize.cc:170
 msgid "Layer Size"
 msgstr "परत आकार"
 
-#: plugins/extensions/imagesize/imagesize.cc:201
+#: plugins/extensions/imagesize/imagesize.cc:209
 msgid "Scale Selection"
 msgstr "स्केल चयन"
 
@@ -12374,7 +12378,7 @@ msgstr "फोटोरियलिस्टिक नइ"
 msgid "Copy From"
 msgstr ""
 
-#: image/kis_transform_visitor.h:147
+#: image/kis_transform_visitor.h:153
 msgid "Rotate Node"
 msgstr "नोड घुमाव"
 
@@ -12437,35 +12441,31 @@ msgstr "लेयर %1"
 msgid "Crop Image"
 msgstr "फोटू मं कांट-छांट करव"
 
-#: image/kis_image.cc:416
-msgid "Scale Image"
-msgstr "फोटू आकार बदलव"
-
-#: image/kis_image.cc:500
+#: image/kis_image.cc:503
 #, fuzzy
 #| msgid "Convert Image Type"
 msgid "Convert Image Color Space"
 msgstr "फोटू किसिम बदलव"
 
-#: image/kis_image.cc:517
+#: image/kis_image.cc:520
 #, fuzzy
 #| msgid "Apply Profile"
 msgid "Assign Profile"
 msgstr "प्रोफाइल लगाव"
 
-#: image/kis_image.cc:538
+#: image/kis_image.cc:541
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:712 ui/kis_layer_manager.cc:789
+#: image/kis_image.cc:715 ui/kis_layer_manager.cc:789
 msgid "Flatten Image"
 msgstr "फोटू ल फैलाव"
 
-#: image/kis_image.cc:769
+#: image/kis_image.cc:772
 msgid "Merge with Layer Below"
 msgstr "नीचे परत मं मिलाव"
 
-#: image/kis_image.cc:794
+#: image/kis_image.cc:797
 #, fuzzy
 #| msgid "Flatten Image"
 msgid "Flatten Layer"
