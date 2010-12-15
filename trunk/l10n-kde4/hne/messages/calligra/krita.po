@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-14 03:07+0100\n"
+"POT-Creation-Date: 2010-12-15 02:52+0100\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1877,7 +1877,7 @@ msgstr "संतृप्ति:"
 #. i18n: ectx: property (text), widget (QRadioButton, lastUsedColorsAlignVertical)
 #. i18n: file: plugins/extensions/dockers/colorselectorng/wdg_color_selector_settings.ui:741
 #. i18n: ectx: property (text), widget (QRadioButton, commonColorsAlignVertical)
-#: rc.cpp:389 rc.cpp:425
+#: rc.cpp:389 rc.cpp:425 ui/tool/kis_tool_paint.cc:259
 #, fuzzy
 #| msgid "Vertical:"
 msgid "Vertical"
@@ -10832,14 +10832,6 @@ msgstr "चैनल सबसे अधिक करव"
 msgid "Minimize Channel"
 msgstr "चैनल सबसे कम करव"
 
-#: plugins/filters/colorsfilters/colorsfilters.cpp:90
-msgid "&Auto Contrast"
-msgstr "अपने अपन कंट्रास्ट (&A)"
-
-#: plugins/filters/colorsfilters/colorsfilters.cpp:243
-msgid "&Desaturate"
-msgstr "डि-सेचुरेट (&D)"
-
 #: plugins/filters/colorsfilters/colorsfilters.h:52
 msgid "Auto Contrast"
 msgstr "अपने अपन कंट्रास्ट"
@@ -10861,7 +10853,15 @@ msgstr "चमक / कंट्रास्ट"
 msgid "&HSV Adjustment..."
 msgstr "एचएसवी समायोजन"
 
-#: plugins/filters/colorsfilters/kis_perchannel_filter.cpp:381
+#: plugins/filters/colorsfilters/colorsfilters.cpp:90
+msgid "&Auto Contrast"
+msgstr "अपने अपन कंट्रास्ट (&A)"
+
+#: plugins/filters/colorsfilters/colorsfilters.cpp:244
+msgid "&Desaturate"
+msgstr "डि-सेचुरेट (&D)"
+
+#: plugins/filters/colorsfilters/kis_perchannel_filter.cpp:380
 msgid "&Color Adjustment curves..."
 msgstr "रंग समायोजन वक्र... (&C)"
 
@@ -13475,18 +13475,6 @@ msgstr "चीनी ब्रस"
 msgid "Decrease Brush Size"
 msgstr "ब्रुस आकार"
 
-#: ui/tool/kis_tool_paint.cc:257
-#, fuzzy
-#| msgid "Crop Image"
-msgid "Mirror: "
-msgstr "फोटू मं कांट-छांट करव"
-
-#: ui/tool/kis_tool_paint.cc:259
-#, fuzzy
-#| msgid "Vertical:"
-msgid "Verical"
-msgstr "खड़ा:"
-
 #: ui/tool/kis_tool_polyline_base.cpp:37
 #, fuzzy
 #| msgid "&Finish Polygon"
@@ -13496,6 +13484,12 @@ msgstr "बहुभुज पूरा करव (&F)"
 #: ui/tool/kis_tool_select_base.cpp:45
 msgid "Selection"
 msgstr "चयन"
+
+#: ui/tool/kis_tool_paint.cc:257
+#, fuzzy
+#| msgid "Crop Image"
+msgid "Mirror: "
+msgstr "फोटू मं कांट-छांट करव"
 
 #: ui/widgets/kis_channelflags_widget.cpp:39
 #, fuzzy
@@ -13541,6 +13535,11 @@ msgstr ""
 #, fuzzy
 msgid "No configuration options."
 msgstr "कोई कान्फिगरेसन विकल्प नइ."
+
+#, fuzzy
+#~| msgid "Vertical:"
+#~ msgid "Verical"
+#~ msgstr "खड़ा:"
 
 #, fuzzy
 #~| msgid "&Scale"
