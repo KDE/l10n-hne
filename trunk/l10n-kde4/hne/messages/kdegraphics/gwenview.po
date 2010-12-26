@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-20 02:18+0100\n"
+"POT-Creation-Date: 2010-12-26 02:58+0100\n"
 "PO-Revision-Date: 2009-02-26 15:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,26 +18,33 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 0.2\n"
 
-#: app/documentpanel.cpp:291 app/thumbnailviewpanel.cpp:108
-#: app/mainwindow.cpp:314 lib/documentview/documentview.cpp:147
+#: app/kipiexportaction.cpp:50
+msgid "Last Used Plugin"
+msgstr ""
+
+#: app/kipiexportaction.cpp:52
+#, fuzzy
+#| msgid "&Plugins"
+msgid "Other Plugins"
+msgstr "प्लगइन्स (&l)"
+
+#: app/kipiexportaction.cpp:62
+#, fuzzy
+#| msgid "No Plugin"
+msgid "No Plugin Found"
+msgstr "कोई प्लगइन नइ हे"
+
+#: app/kipiexportaction.cpp:75
+#, fuzzy
+#| msgid "Square"
+msgid "Share"
+msgstr "वर्ग"
+
+#: app/thumbnailviewpanel.cpp:108 app/mainwindow.cpp:314
+#: app/documentpanel.cpp:291 lib/documentview/documentview.cpp:147
 msgctxt "@title actions category - means actions changing smth in interface"
 msgid "View"
 msgstr "दृस्य"
-
-#: app/documentpanel.cpp:294
-msgid "Thumbnail Bar"
-msgstr "लघुफोटू पट्टी"
-
-#: app/documentpanel.cpp:482
-msgctxt "@action:button"
-msgid "Discard Changes and Reload"
-msgstr "बदलाव मन ल फेंक देव अउ फिर से लोड करव"
-
-#: app/documentpanel.cpp:484
-msgctxt "@info"
-msgid ""
-"This image has been modified. Reloading it will discard all your changes."
-msgstr ""
 
 #: app/thumbnailviewpanel.cpp:110
 msgctxt "@action:inmenu Navigation Bar"
@@ -179,9 +186,27 @@ msgstr "संग्रह"
 msgid "No Plugin"
 msgstr "कोई प्लगइन नइ हे"
 
-#: app/imagemetainfodialog.cpp:120
-msgid "Meta Information"
-msgstr "मेटा जानकारी"
+#: app/startpage.cpp:278
+#, fuzzy
+#| msgid "Places"
+msgid "Add to Places"
+msgstr "जगह"
+
+#: app/startpage.cpp:279
+#, fuzzy
+#| msgid "Create Folder"
+msgid "Forget this URL"
+msgstr "फोल्डर बनाव"
+
+#: app/startpage.cpp:279
+#, fuzzy
+#| msgid "Create Folder"
+msgid "Forget this Folder"
+msgstr "फोल्डर बनाव"
+
+#: app/startpage.cpp:281
+msgid "Forget All"
+msgstr ""
 
 #: app/fileopscontextmanageritem.cpp:82
 #, fuzzy
@@ -271,96 +296,6 @@ msgstr "एखर साथ खोलव"
 msgid "Other Application..."
 msgstr "अऊ दूसर अनुपरयोग..."
 
-#: app/gvcore.cpp:83
-msgctxt "@info"
-msgid "No image format selected."
-msgstr "कोई फोटू फार्मेट चुने नइ गे हे."
-
-#: app/gvcore.cpp:96
-#, kde-format
-msgctxt "@info"
-msgid "Gwenview cannot save images as %1."
-msgstr "ग्वेनव्यू फोटू मन ल %1 जइसन सहेज नइ सकिस."
-
-#: app/gvcore.cpp:181
-msgid "Save using another format"
-msgstr "अऊ दूसर फारमेट के साथ सहेजव"
-
-#: app/gvcore.cpp:184
-#, kde-format
-msgid "Gwenview cannot save images in '%1' format."
-msgstr "ग्वेनव्यू फोटू मन ल '%1' फारमेट मं सहेज नइ सकिस."
-
-#: app/gvcore.cpp:207
-#, kde-format
-msgctxt "@info"
-msgid ""
-"A file named <filename>%1</filename> already exists.\n"
-"Are you sure you want to overwrite it?"
-msgstr ""
-
-#: app/gvcore.cpp:238
-#, kde-format
-msgctxt "@info"
-msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
-msgstr ""
-
-#: app/gvcore.cpp:256
-msgid "You are now viewing the new document."
-msgstr ""
-
-#: app/gvcore.cpp:258
-msgid "Go back to the original"
-msgstr ""
-
-#: app/gvcore.cpp:303 lib/document/documentjob.cpp:78
-msgctxt "@info"
-msgid "Gwenview cannot edit this kind of image."
-msgstr "ग्वेनव्यू अइसन फोटू मन के संपादन नइ कर सके"
-
-#: app/imageopscontextmanageritem.cpp:78
-msgctxt "@title actions category - means actions changing image"
-msgid "Edit"
-msgstr "संपादन"
-
-#: app/imageopscontextmanageritem.cpp:80 lib/transformimageoperation.cpp:69
-msgid "Rotate Left"
-msgstr "डेरी मुड़ें"
-
-#: app/imageopscontextmanageritem.cpp:85 lib/transformimageoperation.cpp:66
-msgid "Rotate Right"
-msgstr "जेवनी मुड़ें"
-
-#: app/imageopscontextmanageritem.cpp:90 lib/transformimageoperation.cpp:72
-msgid "Mirror"
-msgstr "प्रतिबिंब"
-
-#: app/imageopscontextmanageritem.cpp:94 lib/transformimageoperation.cpp:75
-msgid "Flip"
-msgstr "लहुटाव"
-
-#: app/imageopscontextmanageritem.cpp:98 lib/resize/resizeimagedialog.cpp:50
-#: lib/resize/resizeimageoperation.cpp:69
-msgid "Resize"
-msgstr "आकार बदलव"
-
-#. i18n: file: lib/crop/cropwidget.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
-#. i18n: file: lib/crop/cropwidget.ui:32
-#. i18n: ectx: property (text), widget (QToolButton, cropButton)
-#: app/imageopscontextmanageritem.cpp:103 lib/crop/cropimageoperation.cpp:73
-#: rc.cpp:175 rc.cpp:181
-msgid "Crop"
-msgstr "काँट छाँट करव"
-
-#: app/imageopscontextmanageritem.cpp:108
-msgid "Red Eye Reduction"
-msgstr "रेड आई रिडक्सन मोड"
-
-#: app/imageopscontextmanageritem.cpp:135
-msgid "Image Operations"
-msgstr "फोटू आपरेसन्स"
-
 #: app/fileoperations.cpp:72
 msgid "Copy To"
 msgstr "नकल इहां करव"
@@ -428,54 +363,6 @@ msgstr "फाइलनाम"
 msgid "Rename <filename>%1</filename> to:"
 msgstr "<filename>%1</filename>: %2"
 
-#: app/main.cpp:111
-msgid "Gwenview"
-msgstr "ग्वेन-व्यू"
-
-#: app/main.cpp:113 part/gvpart.cpp:122
-msgid "An Image Viewer"
-msgstr "एक फोटू प्रदर्सक"
-
-#: app/main.cpp:115 part/gvpart.cpp:124
-#, fuzzy
-#| msgid "Copyright 2000-2008 Aurélien Gâteau"
-msgid "Copyright 2000-2010 Aurélien Gâteau"
-msgstr "कापीराइट 2000-2008, ओरेलिएन गातेऊ"
-
-#: app/main.cpp:117 importer/main.cpp:45 part/gvpart.cpp:126
-msgid "Aurélien Gâteau"
-msgstr "आरेलियन गातेवू"
-
-#: app/main.cpp:118 importer/main.cpp:46 part/gvpart.cpp:127
-msgid "Main developer"
-msgstr "मुख्य डेवलपर"
-
-#: app/main.cpp:124
-msgid "Start in fullscreen mode"
-msgstr "पूरा स्क्रीन मोड मं चालू करव"
-
-#: app/main.cpp:125
-msgid "Start in slideshow mode"
-msgstr "स्लाइड सो मोड मं चालू करव"
-
-#: app/main.cpp:126
-msgid "A starting file or folder"
-msgstr "फाइल या फोल्डर चालू करत हे"
-
-#: app/configdialog.cpp:69
-msgid "General"
-msgstr "सामान्य"
-
-#: app/configdialog.cpp:90
-msgid "Image View"
-msgstr "फोटू दृस्य"
-
-#: app/configdialog.cpp:95
-#, fuzzy
-#| msgid "Image Settings"
-msgid "Advanced"
-msgstr "फोटू सेटिंग"
-
 #: app/filtercontroller.cpp:124
 msgid "Name contains"
 msgstr "नाम मं हे"
@@ -536,28 +423,6 @@ msgctxt "@action:inmenu"
 msgid "Filter by Tag"
 msgstr "टैग से छानव"
 
-#: app/startpage.cpp:278
-#, fuzzy
-#| msgid "Places"
-msgid "Add to Places"
-msgstr "जगह"
-
-#: app/startpage.cpp:279
-#, fuzzy
-#| msgid "Create Folder"
-msgid "Forget this URL"
-msgstr "फोल्डर बनाव"
-
-#: app/startpage.cpp:279
-#, fuzzy
-#| msgid "Create Folder"
-msgid "Forget this Folder"
-msgstr "फोल्डर बनाव"
-
-#: app/startpage.cpp:281
-msgid "Forget All"
-msgstr ""
-
 #: app/fullscreencontent.cpp:108
 msgctxt "@info:tooltip"
 msgid "Configure Full Screen Mode"
@@ -575,30 +440,6 @@ msgid "%1 sec"
 msgid_plural "%1 secs"
 msgstr[0] "%1 सेक."
 msgstr[1] "%1 सेक."
-
-#: app/semanticinfocontextmanageritem.cpp:137
-msgid "Semantic Information"
-msgstr "सीमेंटिक जानकारी"
-
-#: app/semanticinfocontextmanageritem.cpp:154
-#, fuzzy
-#| msgid "Description:"
-msgid "Description"
-msgstr "वर्नन:"
-
-#: app/semanticinfocontextmanageritem.cpp:168
-msgctxt "@action"
-msgid "Edit Tags"
-msgstr "टैग्स के संपादन करव"
-
-#: app/semanticinfocontextmanageritem.cpp:178
-msgctxt "@action Rating value of zero"
-msgid "Zero"
-msgstr "सून्य"
-
-#: app/semanticinfocontextmanageritem.cpp:214
-msgid "Edit"
-msgstr "संपादन"
 
 #: app/infocontextmanageritem.cpp:85
 #, kde-format
@@ -662,14 +503,6 @@ msgstr[1] "%1 सेक."
 msgctxt "@label. The two parameters are strings like '2 folders' and '1 file'."
 msgid "%1 and %2 selected"
 msgstr "%1 फोल्डर अउ %2 फाइल मन ल चुने गिस"
-
-#: app/kipiimagecollectionselector.cpp:54
-#, kde-format
-msgctxt "%1 is collection name, %2 is image count in collection"
-msgid "%1 (%2 image)"
-msgid_plural "%1 (%2 images)"
-msgstr[0] "%1 (%2 फोटू)"
-msgstr[1] "%1 (%2 फोटू)"
 
 #: app/mainwindow.cpp:323
 msgctxt "@action reload the currently viewed image"
@@ -813,6 +646,14 @@ msgstr[1] "%1 फोटू सुधारे गें."
 msgid "If you quit now, your changes will be lost."
 msgstr "यदि आप मन अभी बाहिर होही, आप मन के बदलाव गंवा हो जाही."
 
+#: app/kipiimagecollectionselector.cpp:54
+#, kde-format
+msgctxt "%1 is collection name, %2 is image count in collection"
+msgid "%1 (%2 image)"
+msgid_plural "%1 (%2 images)"
+msgstr[0] "%1 (%2 फोटू)"
+msgstr[1] "%1 (%2 फोटू)"
+
 #: app/savebar.cpp:85
 msgid ""
 "You have modified many images. To avoid memory problems, you should save "
@@ -850,6 +691,72 @@ msgstr "वहाँ जाव"
 msgid "Save All"
 msgstr "सब्बो सहेजव"
 
+#: app/imagemetainfodialog.cpp:120
+msgid "Meta Information"
+msgstr "मेटा जानकारी"
+
+#: app/documentpanel.cpp:294
+msgid "Thumbnail Bar"
+msgstr "लघुफोटू पट्टी"
+
+#: app/documentpanel.cpp:482
+msgctxt "@action:button"
+msgid "Discard Changes and Reload"
+msgstr "बदलाव मन ल फेंक देव अउ फिर से लोड करव"
+
+#: app/documentpanel.cpp:484
+msgctxt "@info"
+msgid ""
+"This image has been modified. Reloading it will discard all your changes."
+msgstr ""
+
+#: app/gvcore.cpp:83
+msgctxt "@info"
+msgid "No image format selected."
+msgstr "कोई फोटू फार्मेट चुने नइ गे हे."
+
+#: app/gvcore.cpp:96
+#, kde-format
+msgctxt "@info"
+msgid "Gwenview cannot save images as %1."
+msgstr "ग्वेनव्यू फोटू मन ल %1 जइसन सहेज नइ सकिस."
+
+#: app/gvcore.cpp:181
+msgid "Save using another format"
+msgstr "अऊ दूसर फारमेट के साथ सहेजव"
+
+#: app/gvcore.cpp:184
+#, kde-format
+msgid "Gwenview cannot save images in '%1' format."
+msgstr "ग्वेनव्यू फोटू मन ल '%1' फारमेट मं सहेज नइ सकिस."
+
+#: app/gvcore.cpp:207
+#, kde-format
+msgctxt "@info"
+msgid ""
+"A file named <filename>%1</filename> already exists.\n"
+"Are you sure you want to overwrite it?"
+msgstr ""
+
+#: app/gvcore.cpp:238
+#, kde-format
+msgctxt "@info"
+msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
+msgstr ""
+
+#: app/gvcore.cpp:256
+msgid "You are now viewing the new document."
+msgstr ""
+
+#: app/gvcore.cpp:258
+msgid "Go back to the original"
+msgstr ""
+
+#: app/gvcore.cpp:303 lib/document/documentjob.cpp:78
+msgctxt "@info"
+msgid "Gwenview cannot edit this kind of image."
+msgstr "ग्वेनव्यू अइसन फोटू मन के संपादन नइ कर सके"
+
 #: app/saveallhelper.cpp:57
 msgctxt "@info:progress saving all image changes"
 msgid "Saving..."
@@ -875,27 +782,120 @@ msgctxt ""
 msgid "<filename>%1</filename>: %2"
 msgstr "<filename>%1</filename>: %2"
 
-#: app/kipiexportaction.cpp:50
-msgid "Last Used Plugin"
-msgstr ""
+#: app/imageopscontextmanageritem.cpp:78
+msgctxt "@title actions category - means actions changing image"
+msgid "Edit"
+msgstr "संपादन"
 
-#: app/kipiexportaction.cpp:52
-#, fuzzy
-#| msgid "&Plugins"
-msgid "Other Plugins"
-msgstr "प्लगइन्स (&l)"
+#: app/imageopscontextmanageritem.cpp:80 lib/transformimageoperation.cpp:69
+msgid "Rotate Left"
+msgstr "डेरी मुड़ें"
 
-#: app/kipiexportaction.cpp:62
-#, fuzzy
-#| msgid "No Plugin"
-msgid "No Plugin Found"
-msgstr "कोई प्लगइन नइ हे"
+#: app/imageopscontextmanageritem.cpp:85 lib/transformimageoperation.cpp:66
+msgid "Rotate Right"
+msgstr "जेवनी मुड़ें"
 
-#: app/kipiexportaction.cpp:75
+#: app/imageopscontextmanageritem.cpp:90 lib/transformimageoperation.cpp:72
+msgid "Mirror"
+msgstr "प्रतिबिंब"
+
+#: app/imageopscontextmanageritem.cpp:94 lib/transformimageoperation.cpp:75
+msgid "Flip"
+msgstr "लहुटाव"
+
+#: app/imageopscontextmanageritem.cpp:98 lib/resize/resizeimagedialog.cpp:50
+#: lib/resize/resizeimageoperation.cpp:69
+msgid "Resize"
+msgstr "आकार बदलव"
+
+#. i18n: file: lib/crop/cropwidget.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
+#. i18n: file: lib/crop/cropwidget.ui:32
+#. i18n: ectx: property (text), widget (QToolButton, cropButton)
+#: app/imageopscontextmanageritem.cpp:103 lib/crop/cropimageoperation.cpp:73
+#: rc.cpp:175 rc.cpp:181
+msgid "Crop"
+msgstr "काँट छाँट करव"
+
+#: app/imageopscontextmanageritem.cpp:108
+msgid "Red Eye Reduction"
+msgstr "रेड आई रिडक्सन मोड"
+
+#: app/imageopscontextmanageritem.cpp:135
+msgid "Image Operations"
+msgstr "फोटू आपरेसन्स"
+
+#: app/main.cpp:111
+msgid "Gwenview"
+msgstr "ग्वेन-व्यू"
+
+#: app/main.cpp:113 part/gvpart.cpp:122
+msgid "An Image Viewer"
+msgstr "एक फोटू प्रदर्सक"
+
+#: app/main.cpp:115 part/gvpart.cpp:124
 #, fuzzy
-#| msgid "Square"
-msgid "Share"
-msgstr "वर्ग"
+#| msgid "Copyright 2000-2008 Aurélien Gâteau"
+msgid "Copyright 2000-2010 Aurélien Gâteau"
+msgstr "कापीराइट 2000-2008, ओरेलिएन गातेऊ"
+
+#: app/main.cpp:117 importer/main.cpp:45 part/gvpart.cpp:126
+msgid "Aurélien Gâteau"
+msgstr "आरेलियन गातेवू"
+
+#: app/main.cpp:118 importer/main.cpp:46 part/gvpart.cpp:127
+msgid "Main developer"
+msgstr "मुख्य डेवलपर"
+
+#: app/main.cpp:124
+msgid "Start in fullscreen mode"
+msgstr "पूरा स्क्रीन मोड मं चालू करव"
+
+#: app/main.cpp:125
+msgid "Start in slideshow mode"
+msgstr "स्लाइड सो मोड मं चालू करव"
+
+#: app/main.cpp:126
+msgid "A starting file or folder"
+msgstr "फाइल या फोल्डर चालू करत हे"
+
+#: app/configdialog.cpp:69
+msgid "General"
+msgstr "सामान्य"
+
+#: app/configdialog.cpp:90
+msgid "Image View"
+msgstr "फोटू दृस्य"
+
+#: app/configdialog.cpp:95
+#, fuzzy
+#| msgid "Image Settings"
+msgid "Advanced"
+msgstr "फोटू सेटिंग"
+
+#: app/semanticinfocontextmanageritem.cpp:137
+msgid "Semantic Information"
+msgstr "सीमेंटिक जानकारी"
+
+#: app/semanticinfocontextmanageritem.cpp:154
+#, fuzzy
+#| msgid "Description:"
+msgid "Description"
+msgstr "वर्नन:"
+
+#: app/semanticinfocontextmanageritem.cpp:168
+msgctxt "@action"
+msgid "Edit Tags"
+msgstr "टैग्स के संपादन करव"
+
+#: app/semanticinfocontextmanageritem.cpp:178
+msgctxt "@action Rating value of zero"
+msgid "Zero"
+msgstr "सून्य"
+
+#: app/semanticinfocontextmanageritem.cpp:214
+msgid "Edit"
+msgstr "संपादन"
 
 #: importer/importer.cpp:76
 msgid "Could not create destination folder."
@@ -1156,6 +1156,13 @@ msgctxt "@info"
 msgid "Loading image failed."
 msgstr "फोटू ल लोड करे मं फेल."
 
+#: lib/document/loadingjob.cpp:56
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not upload file."
+msgid "Could not load document %1"
+msgstr "फाइल अपलोड नइ कर सकिस"
+
 #: lib/document/savejob.cpp:104
 #, kde-format
 msgctxt "@info"
@@ -1171,13 +1178,6 @@ msgid ""
 "Could not overwrite file, check that you have the necessary rights to write "
 "in <filename>%1</filename>."
 msgstr ""
-
-#: lib/document/loadingjob.cpp:56
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Could not upload file."
-msgid "Could not load document %1"
-msgstr "फाइल अपलोड नइ कर सकिस"
 
 #: lib/print/printhelper.cpp:129
 msgid "Print Image"
@@ -1240,6 +1240,10 @@ msgctxt "@title:column"
 msgid "Value"
 msgstr "मान"
 
+#: lib/transformimageoperation.cpp:80
+msgid "Transform"
+msgstr "रूपांतरन"
+
 #: lib/jpegcontent.cpp:561
 msgctxt "@info"
 msgid "Could not open file for writing."
@@ -1249,10 +1253,6 @@ msgstr "लिखे बर फाइल खोल नइ सकिस."
 msgctxt "@info"
 msgid "No data to store."
 msgstr ""
-
-#: lib/transformimageoperation.cpp:80
-msgid "Transform"
-msgstr "रूपांतरन"
 
 #: lib/statusbartoolbutton.cpp:118 lib/fullscreenbar.cpp:254
 #, kde-format
@@ -1284,124 +1284,40 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raviratlami@aol.in"
 
-#. i18n: file: app/semanticinfosidebaritem.ui:22
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:5
-msgid "Rating:"
-msgstr "दरजा:"
-
-#. i18n: file: app/semanticinfosidebaritem.ui:42
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:8
-msgid "Tags:"
-msgstr "टैग:"
-
-#. i18n: file: app/gwenviewui.rc:56
-#. i18n: ectx: Menu (rating)
-#: rc.cpp:11
-msgid "&Rating"
-msgstr "रेटिंग (&R)"
-
-#. i18n: file: app/gwenviewui.rc:85
-#. i18n: ectx: Menu (plugins)
-#: rc.cpp:14
-msgid "&Plugins"
-msgstr "प्लगइन्स (&l)"
-
-#. i18n: file: app/gwenviewui.rc:88
-#. i18n: ectx: Menu (settings)
-#: rc.cpp:17
-msgid "&Settings"
-msgstr "सेटिंग (&S)"
-
-#. i18n: file: app/gwenviewui.rc:101
-#. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: part/gvpart.rc:15
-#. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:20 rc.cpp:286
-msgid "Main Toolbar"
-msgstr "मुख्य औजार पट्टी"
-
-#. i18n: file: app/generalconfigpage.ui:17
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:23
-#, fuzzy
-#| msgid "&View background color:"
-msgid "Background color:"
-msgstr "पिछोत अंगना के रंग देखाव: (&V)"
-
-#. i18n: file: app/generalconfigpage.ui:51
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:26
-msgid "Videos:"
-msgstr ""
-
-#. i18n: file: app/generalconfigpage.ui:58
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ListVideos)
-#: rc.cpp:29
-#, fuzzy
-#| msgid "Show Sidebar"
-msgid "Show videos"
-msgstr "बाजू पट्टी देखाव"
-
-#. i18n: file: app/thumbnailviewpanel.ui:64
-#. i18n: ectx: property (text), widget (Gwenview::StatusBarToolButton, mAddFilterButton)
-#: rc.cpp:32
-msgid "Add Filter"
-msgstr "फिल्टर जोड़व"
-
-#. i18n: file: app/semanticinfodialog.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, SemanticInfoDialog)
-#: rc.cpp:35
-msgid "Tag Editor"
-msgstr "टैग संपादक"
-
-#. i18n: file: app/semanticinfodialog.ui:31
-#. i18n: ectx: property (text), widget (QPushButton, mPreviousButton)
-#: rc.cpp:38
-msgid "Previous"
-msgstr "पिछला"
-
-#. i18n: file: app/semanticinfodialog.ui:38
-#. i18n: ectx: property (text), widget (QPushButton, mNextButton)
-#: rc.cpp:41
-msgid "Next"
-msgstr "अगला"
-
 #. i18n: file: app/imageviewconfigpage.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:44
+#: rc.cpp:5
 msgid "Transparent background:"
 msgstr "पारदर्सी पिछोत अंगना:"
 
 #. i18n: file: app/imageviewconfigpage.ui:35
 #. i18n: ectx: property (text), widget (QRadioButton, checkBoardRadioButton)
-#: rc.cpp:47
+#: rc.cpp:8
 msgid "&Check board"
 msgstr "चेक बोर्ड (&C)"
 
 #. i18n: file: app/imageviewconfigpage.ui:68
 #. i18n: ectx: property (text), widget (QRadioButton, solidColorRadioButton)
-#: rc.cpp:50
+#: rc.cpp:11
 msgid "&Solid color:"
 msgstr "ठोस रंग: (&S)"
 
 #. i18n: file: app/imageviewconfigpage.ui:116
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:53
+#: rc.cpp:14
 msgid "Mouse wheel behavior:"
 msgstr "मुसुवा चकरी बरताव:"
 
 #. i18n: file: app/imageviewconfigpage.ui:128
 #. i18n: ectx: property (text), widget (QRadioButton, mouseWheelScrollRadioButton)
-#: rc.cpp:56
+#: rc.cpp:17
 msgctxt "@option:radio action on mouse wheel"
 msgid "Scroll"
 msgstr "स्क्राल"
 
 #. i18n: file: app/imageviewconfigpage.ui:155
 #. i18n: ectx: property (text), widget (QRadioButton, mouseWheelBrowseRadioButton)
-#: rc.cpp:59
+#: rc.cpp:20
 msgctxt "@option:radio action on mouse wheel"
 msgid "Browse"
 msgstr "ब्राउज"
@@ -1410,13 +1326,13 @@ msgstr "ब्राउज"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnlargeSmallerImages)
 #. i18n: file: lib/print/printoptionspage.ui:98
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintEnlargeSmallerImages)
-#: rc.cpp:62 rc.cpp:214
+#: rc.cpp:23 rc.cpp:214
 msgid "Enlarge smaller images"
 msgstr "छोटे फोटू ल बड़ा करव"
 
 #. i18n: file: app/imageviewconfigpage.ui:233
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:65
+#: rc.cpp:26
 #, fuzzy
 #| msgid "Thumbnail Bar"
 msgid "<b>Thumbnail Bar</b>"
@@ -1424,7 +1340,7 @@ msgstr "लघुफोटू पट्टी"
 
 #. i18n: file: app/imageviewconfigpage.ui:240
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:68
+#: rc.cpp:29
 #, fuzzy
 #| msgid "File Operations"
 msgid "Orientation:"
@@ -1432,91 +1348,91 @@ msgstr "फाइल काम"
 
 #. i18n: file: app/imageviewconfigpage.ui:252
 #. i18n: ectx: property (text), widget (QRadioButton, horizontalRadioButton)
-#: rc.cpp:71
+#: rc.cpp:32
 msgid "Horizontal"
 msgstr ""
 
 #. i18n: file: app/imageviewconfigpage.ui:276
 #. i18n: ectx: property (text), widget (QRadioButton, verticalRadioButton)
-#: rc.cpp:74
+#: rc.cpp:35
 msgid "Vertical"
 msgstr ""
 
 #. i18n: file: app/imageviewconfigpage.ui:298
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:77
+#: rc.cpp:38
 msgid "Row count:"
 msgstr ""
 
-#. i18n: file: app/fullscreenconfigdialog.ui:16
-#. i18n: ectx: property (text), widget (QLabel, mSlideShowTitle)
-#: rc.cpp:80
-msgid "Slideshow"
-msgstr "स्लाइड-सो"
+#. i18n: file: app/gwenviewui.rc:56
+#. i18n: ectx: Menu (rating)
+#: rc.cpp:41
+msgid "&Rating"
+msgstr "रेटिंग (&R)"
 
-#. i18n: file: app/fullscreenconfigdialog.ui:26
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:83
-msgid "Interval:"
-msgstr "अंतरालः"
+#. i18n: file: app/gwenviewui.rc:85
+#. i18n: ectx: Menu (plugins)
+#: rc.cpp:44
+msgid "&Plugins"
+msgstr "प्लगइन्स (&l)"
 
-#. i18n: file: app/fullscreenconfigdialog.ui:72
-#. i18n: ectx: property (text), widget (QCheckBox, mSlideShowLoopCheckBox)
-#: rc.cpp:86
-msgid "Loop"
-msgstr "लूप"
+#. i18n: file: app/gwenviewui.rc:88
+#. i18n: ectx: Menu (settings)
+#: rc.cpp:47
+msgid "&Settings"
+msgstr "सेटिंग (&S)"
 
-#. i18n: file: app/fullscreenconfigdialog.ui:79
-#. i18n: ectx: property (text), widget (QCheckBox, mSlideShowRandomCheckBox)
-#: rc.cpp:89
-msgid "Random"
-msgstr "बेतरतीब"
+#. i18n: file: app/gwenviewui.rc:101
+#. i18n: ectx: ToolBar (mainToolBar)
+#. i18n: file: part/gvpart.rc:15
+#. i18n: ectx: ToolBar (mainToolBar)
+#: rc.cpp:50 rc.cpp:286
+msgid "Main Toolbar"
+msgstr "मुख्य औजार पट्टी"
 
-#. i18n: file: app/fullscreenconfigdialog.ui:86
-#. i18n: ectx: property (text), widget (QLabel, mMetaDataTitle)
-#: rc.cpp:92
-msgid "Metadata"
-msgstr "मेटाडाटा"
+#. i18n: file: app/startpage.ui:34
+#. i18n: ectx: property (text), widget (QLabel, mHistoryDisabledLabel)
+#: rc.cpp:53
+msgid "History has been disabled."
+msgstr ""
 
-#. i18n: file: app/fullscreenconfigdialog.ui:98
-#. i18n: ectx: property (text), widget (QPushButton, mConfigureDisplayedInformationButton)
-#: rc.cpp:95
-msgid "Configure Displayed Metadata..."
-msgstr "देखाय मेटाडाटा कान्फिगर करव..."
+#. i18n: file: app/startpage.ui:51
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: rc.cpp:56
+msgid "Recent Folders"
+msgstr "मौजूदा फोल्डर"
 
-#. i18n: file: app/fullscreenconfigdialog.ui:120
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:98
-msgid "Appearance"
-msgstr "रूप"
+#. i18n: file: app/startpage.ui:65
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: rc.cpp:59
+#, fuzzy
+#| msgid "Recent Folders"
+msgid "Recent URLs"
+msgstr "मौजूदा फोल्डर"
 
-#. i18n: file: app/fullscreenconfigdialog.ui:130
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:101
-msgid "Theme:"
-msgstr "प्रसंग:"
+#. i18n: file: app/startpage.ui:109
+#. i18n: ectx: attribute (title), widget (QWidget, placesTab)
+#: rc.cpp:62
+msgid "Places"
+msgstr "जगह"
 
-#. i18n: file: app/fullscreenconfigdialog.ui:143
-#. i18n: ectx: property (text), widget (QCheckBox, mShowThumbnailsCheckBox)
-#: rc.cpp:104
-msgid "Show thumbnails"
-msgstr "छोटेफोटू देखाव"
+#. i18n: file: app/startpage.ui:132
+#. i18n: ectx: attribute (title), widget (QWidget, tagsTab)
+#: rc.cpp:65
+msgid "Tags"
+msgstr "टैग"
 
-#. i18n: file: app/fullscreenconfigdialog.ui:155
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:107
-msgid "Height:"
-msgstr "ऊंचाई:"
-
-#. i18n: file: app/fullscreenconfigdialog.ui:223
-#. i18n: ectx: property (text), widget (QPushButton, mCloseButton)
-#: rc.cpp:110
-msgid "Close"
-msgstr "बंद करव"
+#. i18n: file: app/startpage.ui:138
+#. i18n: ectx: property (text), widget (QLabel, mTagLabel)
+#: rc.cpp:68
+msgid ""
+"Browsing by tags is not available. Make sure Nepomuk is properly installed "
+"on your computer."
+msgstr ""
 
 #. i18n: file: app/advancedconfigpage.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:113
+#: rc.cpp:71
 #, fuzzy
 #| msgid "Cancel"
 msgid "Cache:"
@@ -1524,13 +1440,13 @@ msgstr "खारिज करव"
 
 #. i18n: file: app/advancedconfigpage.ui:29
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DeleteThumbnailCacheOnExit)
-#: rc.cpp:116
+#: rc.cpp:74
 msgid "Delete thumbnail cache folder on exit"
 msgstr ""
 
 #. i18n: file: app/advancedconfigpage.ui:52
 #. i18n: ectx: property (text), widget (QLabel, cacheHelpLabel)
-#: rc.cpp:119
+#: rc.cpp:77
 msgid ""
 "Enable this option if you do not have a lot of disk space.\n"
 "Be careful: this will delete the folder named <filename>.thumbnails</"
@@ -1540,55 +1456,139 @@ msgstr ""
 
 #. i18n: file: app/advancedconfigpage.ui:78
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:123
+#: rc.cpp:81
 msgid "History:"
 msgstr ""
 
 #. i18n: file: app/advancedconfigpage.ui:90
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_HistoryEnabled)
-#: rc.cpp:126
+#: rc.cpp:84
 msgid "Remember folders and URLs"
 msgstr ""
 
-#. i18n: file: app/startpage.ui:34
-#. i18n: ectx: property (text), widget (QLabel, mHistoryDisabledLabel)
-#: rc.cpp:129
-msgid "History has been disabled."
-msgstr ""
+#. i18n: file: app/semanticinfosidebaritem.ui:22
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:87
+msgid "Rating:"
+msgstr "दरजा:"
 
-#. i18n: file: app/startpage.ui:51
-#. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:132
-msgid "Recent Folders"
-msgstr "मौजूदा फोल्डर"
+#. i18n: file: app/semanticinfosidebaritem.ui:42
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:90
+msgid "Tags:"
+msgstr "टैग:"
 
-#. i18n: file: app/startpage.ui:65
-#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: rc.cpp:135
+#. i18n: file: app/generalconfigpage.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:93
 #, fuzzy
-#| msgid "Recent Folders"
-msgid "Recent URLs"
-msgstr "मौजूदा फोल्डर"
+#| msgid "&View background color:"
+msgid "Background color:"
+msgstr "पिछोत अंगना के रंग देखाव: (&V)"
 
-#. i18n: file: app/startpage.ui:109
-#. i18n: ectx: attribute (title), widget (QWidget, placesTab)
-#: rc.cpp:138
-msgid "Places"
-msgstr "जगह"
-
-#. i18n: file: app/startpage.ui:132
-#. i18n: ectx: attribute (title), widget (QWidget, tagsTab)
-#: rc.cpp:141
-msgid "Tags"
-msgstr "टैग"
-
-#. i18n: file: app/startpage.ui:138
-#. i18n: ectx: property (text), widget (QLabel, mTagLabel)
-#: rc.cpp:144
-msgid ""
-"Browsing by tags is not available. Make sure Nepomuk is properly installed "
-"on your computer."
+#. i18n: file: app/generalconfigpage.ui:51
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:96
+msgid "Videos:"
 msgstr ""
+
+#. i18n: file: app/generalconfigpage.ui:58
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ListVideos)
+#: rc.cpp:99
+#, fuzzy
+#| msgid "Show Sidebar"
+msgid "Show videos"
+msgstr "बाजू पट्टी देखाव"
+
+#. i18n: file: app/thumbnailviewpanel.ui:64
+#. i18n: ectx: property (text), widget (Gwenview::StatusBarToolButton, mAddFilterButton)
+#: rc.cpp:102
+msgid "Add Filter"
+msgstr "फिल्टर जोड़व"
+
+#. i18n: file: app/semanticinfodialog.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, SemanticInfoDialog)
+#: rc.cpp:105
+msgid "Tag Editor"
+msgstr "टैग संपादक"
+
+#. i18n: file: app/semanticinfodialog.ui:31
+#. i18n: ectx: property (text), widget (QPushButton, mPreviousButton)
+#: rc.cpp:108
+msgid "Previous"
+msgstr "पिछला"
+
+#. i18n: file: app/semanticinfodialog.ui:38
+#. i18n: ectx: property (text), widget (QPushButton, mNextButton)
+#: rc.cpp:111
+msgid "Next"
+msgstr "अगला"
+
+#. i18n: file: app/fullscreenconfigdialog.ui:16
+#. i18n: ectx: property (text), widget (QLabel, mSlideShowTitle)
+#: rc.cpp:114
+msgid "Slideshow"
+msgstr "स्लाइड-सो"
+
+#. i18n: file: app/fullscreenconfigdialog.ui:26
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:117
+msgid "Interval:"
+msgstr "अंतरालः"
+
+#. i18n: file: app/fullscreenconfigdialog.ui:72
+#. i18n: ectx: property (text), widget (QCheckBox, mSlideShowLoopCheckBox)
+#: rc.cpp:120
+msgid "Loop"
+msgstr "लूप"
+
+#. i18n: file: app/fullscreenconfigdialog.ui:79
+#. i18n: ectx: property (text), widget (QCheckBox, mSlideShowRandomCheckBox)
+#: rc.cpp:123
+msgid "Random"
+msgstr "बेतरतीब"
+
+#. i18n: file: app/fullscreenconfigdialog.ui:86
+#. i18n: ectx: property (text), widget (QLabel, mMetaDataTitle)
+#: rc.cpp:126
+msgid "Metadata"
+msgstr "मेटाडाटा"
+
+#. i18n: file: app/fullscreenconfigdialog.ui:98
+#. i18n: ectx: property (text), widget (QPushButton, mConfigureDisplayedInformationButton)
+#: rc.cpp:129
+msgid "Configure Displayed Metadata..."
+msgstr "देखाय मेटाडाटा कान्फिगर करव..."
+
+#. i18n: file: app/fullscreenconfigdialog.ui:120
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:132
+msgid "Appearance"
+msgstr "रूप"
+
+#. i18n: file: app/fullscreenconfigdialog.ui:130
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:135
+msgid "Theme:"
+msgstr "प्रसंग:"
+
+#. i18n: file: app/fullscreenconfigdialog.ui:143
+#. i18n: ectx: property (text), widget (QCheckBox, mShowThumbnailsCheckBox)
+#: rc.cpp:138
+msgid "Show thumbnails"
+msgstr "छोटेफोटू देखाव"
+
+#. i18n: file: app/fullscreenconfigdialog.ui:155
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:141
+msgid "Height:"
+msgstr "ऊंचाई:"
+
+#. i18n: file: app/fullscreenconfigdialog.ui:223
+#. i18n: ectx: property (text), widget (QPushButton, mCloseButton)
+#: rc.cpp:144
+msgid "Close"
+msgstr "बंद करव"
 
 #. i18n: file: importer/importerconfigdialog.ui:17
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoRename)
@@ -1756,9 +1756,45 @@ msgstr "इंच (इं)"
 msgid "Keep ratio"
 msgstr "अनुपात बनाए रखव"
 
+#. i18n: file: lib/resize/resizeimagewidget.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, ResizeImageWidget)
+#: rc.cpp:235
+msgid "Image Resizing"
+msgstr "फोटू आकार बदलना"
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:20
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:238
+#, fuzzy
+#| msgid "Enter the new size of the image:"
+msgid "Enter the new size for this image."
+msgstr "फोटू के नवा आकार भरव:"
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:32
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:241
+msgid "Current size:"
+msgstr ""
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:88
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:245
+#, fuzzy
+#| msgid "Size"
+msgid "New Size:"
+msgstr "आकार"
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:135
+#. i18n: ectx: property (text), widget (QCheckBox, mKeepAspectCheckBox)
+#: rc.cpp:249
+#, fuzzy
+#| msgid "Keep ratio"
+msgid "Keep aspect ratio"
+msgstr "अनुपात बनाए रखव"
+
 #. i18n: file: lib/gwenviewconfig.kcfg:30
 #. i18n: ectx: whatsthis, entry (PercentageOfMemoryUsageWarning), group (General)
-#: rc.cpp:235
+#: rc.cpp:252
 msgid ""
 "The percentage of memory used by Gwenview before it\n"
 "\t\t\twarns the user and suggest saving changes."
@@ -1766,7 +1802,7 @@ msgstr ""
 
 #. i18n: file: lib/gwenviewconfig.kcfg:38
 #. i18n: ectx: whatsthis, entry (BlackListedExtensions), group (General)
-#: rc.cpp:239
+#: rc.cpp:256
 msgid ""
 "A list of filename extensions Gwenview should not try to\n"
 "\t\t\tload. This is useful to exclude raw files which are recognized as\n"
@@ -1776,13 +1812,13 @@ msgstr ""
 
 #. i18n: file: lib/gwenviewconfig.kcfg:190
 #. i18n: ectx: label, entry (random), group (slide show)
-#: rc.cpp:245
+#: rc.cpp:262
 msgid "Display slide show images in random order"
 msgstr ""
 
 #. i18n: file: lib/gwenviewconfig.kcfg:194
 #. i18n: ectx: label, entry (fullscreen), group (slide show)
-#: rc.cpp:248
+#: rc.cpp:265
 #, fuzzy
 #| msgid "Start in fullscreen mode"
 msgid "Show slideshow in fullscreen mode"
@@ -1790,13 +1826,13 @@ msgstr "पूरा स्क्रीन मोड मं चालू कर�
 
 #. i18n: file: lib/gwenviewconfig.kcfg:198
 #. i18n: ectx: label, entry (loop), group (slide show)
-#: rc.cpp:251
+#: rc.cpp:268
 msgid "Loop on images"
 msgstr ""
 
 #. i18n: file: lib/gwenviewconfig.kcfg:202
 #. i18n: ectx: label, entry (stopAtEnd), group (slide show)
-#: rc.cpp:254
+#: rc.cpp:271
 #, fuzzy
 #| msgid "A starting file or folder"
 msgid "Stop at last image of folder"
@@ -1804,45 +1840,9 @@ msgstr "फाइल या फोल्डर चालू करत हे"
 
 #. i18n: file: lib/gwenviewconfig.kcfg:206
 #. i18n: ectx: label, entry (interval), group (slide show)
-#: rc.cpp:257
+#: rc.cpp:274
 msgid "Interval between images (in seconds)"
 msgstr ""
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, ResizeImageWidget)
-#: rc.cpp:263
-msgid "Image Resizing"
-msgstr "फोटू आकार बदलना"
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:20
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:266
-#, fuzzy
-#| msgid "Enter the new size of the image:"
-msgid "Enter the new size for this image."
-msgstr "फोटू के नवा आकार भरव:"
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:32
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:269
-msgid "Current size:"
-msgstr ""
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:88
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:273
-#, fuzzy
-#| msgid "Size"
-msgid "New Size:"
-msgstr "आकार"
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:135
-#. i18n: ectx: property (text), widget (QCheckBox, mKeepAspectCheckBox)
-#: rc.cpp:277
-#, fuzzy
-#| msgid "Keep ratio"
-msgid "Keep aspect ratio"
-msgstr "अनुपात बनाए रखव"
 
 #. i18n: file: part/gvpart.rc:4
 #. i18n: ectx: Menu (file)
