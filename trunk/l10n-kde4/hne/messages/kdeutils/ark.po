@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-11-03 06:25+0100\n"
+"POT-Creation-Date: 2010-12-28 02:27+0100\n"
 "PO-Revision-Date: 2009-03-01 12:04+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -256,15 +256,19 @@ msgid "Extraction failed because of an unexpected error."
 msgstr ""
 
 #: kerfuffle/cliinterface.cpp:532
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Could not open the archive '%1' for writing."
+msgctxt "@info"
 msgid "Failed to locate program <filename>%1</filename> in PATH."
-msgstr ""
+msgstr "अभिलेख '%1' ल लिखे बर खोल नइ सकिस."
 
 #: kerfuffle/cliinterface.cpp:537
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "File '%1' not found in the archive"
+msgctxt "@info"
 msgid ""
 "Found program <filename>%1</filename>, but failed to initialize the process."
-msgstr ""
+msgstr "फाइल अभिलेख '%1' मं नइ मिलिस"
 
 #: kerfuffle/extractiondialog.cpp:60
 #, fuzzy
@@ -282,11 +286,13 @@ msgid "The subfolder name may not contain the character '/'."
 msgstr ""
 
 #: kerfuffle/extractiondialog.cpp:108
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The source file could not be read."
+msgctxt "@info"
 msgid ""
 "The folder <filename>%1</filename> already exists. Are you sure you want to "
 "extract here?"
-msgstr ""
+msgstr "स्रोत फाइल पढ़ नइ सकिस."
 
 #: kerfuffle/extractiondialog.cpp:108
 msgid "Folder exists"
@@ -303,13 +309,16 @@ msgstr "खारिज करव"
 #: kerfuffle/extractiondialog.cpp:117 kerfuffle/extractiondialog.cpp:123
 #, fuzzy, kde-format
 #| msgid "The source file could not be read."
+msgctxt "@info"
 msgid "The folder <filename>%1</filename> could not be created."
 msgstr "स्रोत फाइल पढ़ नइ सकिस."
 
 #: kerfuffle/extractiondialog.cpp:118
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "File '%1' not found in the archive"
+msgctxt "@info"
 msgid "<filename>%1</filename> already exists, but is not a folder."
-msgstr ""
+msgstr "फाइल अभिलेख '%1' मं नइ मिलिस"
 
 #: kerfuffle/extractiondialog.cpp:124
 msgid "Please check your permissions to create it."
@@ -350,6 +359,7 @@ msgstr ""
 
 #: kerfuffle/queries.cpp:178
 #, kde-format
+msgctxt "@info"
 msgid ""
 "The archive <filename>%1</filename> is password protected. Please enter the "
 "password to extract the file."
@@ -566,11 +576,13 @@ msgid "<filename>%1</filename> is a directory."
 msgstr ""
 
 #: part/part.cpp:381
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The source file could not be read."
+msgctxt "@info"
 msgid ""
 "The archive <filename>%1</filename> already exists. Would you like to open "
 "it instead?"
-msgstr ""
+msgstr "स्रोत फाइल पढ़ नइ सकिस."
 
 #: part/part.cpp:381
 #, fuzzy
@@ -604,6 +616,7 @@ msgid "Invalid Archive Type"
 msgstr ""
 
 #: part/part.cpp:422
+msgctxt "@info"
 msgid ""
 "Ark cannot create archives of the type you have chosen.<nl/><nl/>Please "
 "choose another archive type below."
@@ -615,20 +628,24 @@ msgid "Unable to Determine Archive Type"
 msgstr ""
 
 #: part/part.cpp:426
+msgctxt "@info"
 msgid ""
 "Ark was unable to determine the archive type of the filename.<nl/><nl/"
 ">Please choose the correct archive type below."
 msgstr ""
 
 #: part/part.cpp:441
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Could not open the archive '%1' for reading"
+msgctxt "@info"
 msgid ""
 "Ark was not able to open the archive <filename>%1</filename>. No plugin "
 "capable of handling the file was found."
-msgstr ""
+msgstr "अभिलेख '%1' ल पढ़े बर खोल नइ सकिस"
 
 #: part/part.cpp:477
 #, kde-format
+msgctxt "@info"
 msgid ""
 "Loading the archive <filename>%1</filename> failed with the following error: "
 "<message>%2</message>"
@@ -661,6 +678,7 @@ msgstr "सिरिफ चुने गे फाइल (&S)"
 
 #: part/part.cpp:829
 #, kde-format
+msgctxt "@info"
 msgid ""
 "An archive named <filename>%1</filename> already exists. Are you sure you "
 "want to overwrite it?"
@@ -668,59 +686,70 @@ msgstr ""
 
 #: part/part.cpp:843
 #, kde-format
+msgctxt "@info"
 msgid ""
 "The archive <filename>%1</filename> cannot be copied to the specified "
 "location. The archive does not exist anymore."
 msgstr ""
 
 #: part/part.cpp:855
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Could not open the archive '%1' for writing."
+msgctxt "@info"
 msgid ""
 "The archive could not be saved as <filename>%1</filename>. Try saving it to "
 "another location."
-msgstr ""
+msgstr "अभिलेख '%1' ल लिखे बर खोल नइ सकिस."
 
 #: plugins/karchiveplugin/karchiveplugin.cpp:64
 #: plugins/karchiveplugin/karchiveplugin.cpp:74
 #, fuzzy, kde-format
 #| msgid "Could not open the archive '%1' for reading"
+msgctxt "@info"
 msgid "Could not open the archive <filename>%1</filename> for reading"
 msgstr "अभिलेख '%1' ल पढ़े बर खोल नइ सकिस"
 
 #: plugins/karchiveplugin/karchiveplugin.cpp:82
 #, fuzzy, kde-format
 #| msgid "File '%1' not found in the archive"
+msgctxt "@info"
 msgid "File <filename>%1</filename> not found in the archive"
 msgstr "फाइल अभिलेख '%1' मं नइ मिलिस"
 
 #: plugins/karchiveplugin/karchiveplugin.cpp:151
 #, fuzzy, kde-format
 #| msgid "Could not open the archive '%1' for writing."
+msgctxt "@info"
 msgid "Could not open the archive <filename>%1</filename> for writing."
 msgstr "अभिलेख '%1' ल लिखे बर खोल नइ सकिस."
 
 #: plugins/karchiveplugin/karchiveplugin.cpp:168
 #, fuzzy, kde-format
 #| msgid "Could not add the directory %1 to the archive"
+msgctxt "@info"
 msgid "Could not add the directory <filename>%1</filename> to the archive"
 msgstr "डिरेक्टरी %1 ल अभिलेख मं जोड़े नइ जा सकिस"
 
 #: plugins/karchiveplugin/karchiveplugin.cpp:176
 #, fuzzy, kde-format
 #| msgid "Could not add the file %1 to the archive."
+msgctxt "@info"
 msgid "Could not add the file <filename>%1</filename> to the archive."
 msgstr "फाइल %1 ल अभिलेख मं जोड़े नइ जा सकिस."
 
 #: plugins/libarchive/libarchivehandler.cpp:102
 #: plugins/libarchive/libarchivehandler.cpp:159
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Could not open the archive '%1' for reading"
+msgctxt "@info"
 msgid ""
 "Could not open the archive <filename>%1</filename>, libarchive cannot handle "
 "it."
-msgstr ""
+msgstr "अभिलेख '%1' ल पढ़े बर खोल नइ सकिस"
 
 #: plugins/libarchive/libarchivehandler.cpp:125
 #, kde-format
+msgctxt "@info"
 msgid ""
 "The archive reading failed with the following error: <message>%1</message>"
 msgstr ""
@@ -750,6 +779,7 @@ msgstr ""
 #: plugins/libarchive/libarchivehandler.cpp:426
 #: plugins/libarchive/libarchivehandler.cpp:571
 #, kde-format
+msgctxt "@info"
 msgid ""
 "Setting the compression method failed with the following error: <message>%1</"
 "message>"
@@ -764,6 +794,7 @@ msgstr ""
 #: plugins/libarchive/libarchivehandler.cpp:433
 #: plugins/libarchive/libarchivehandler.cpp:577
 #, kde-format
+msgctxt "@info"
 msgid ""
 "Opening the archive for writing failed with the following error: <message>%"
 "1</message>"
@@ -776,21 +807,26 @@ msgid "Ark could not compress <filename>%1</filename>:<nl/>%2"
 msgstr ""
 
 #: plugins/libsinglefileplugin/singlefileplugin.cpp:69
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Could not open the archive '%1' for writing."
+msgctxt "@info"
 msgid "Ark could not extract <filename>%1</filename>."
-msgstr ""
+msgstr "अभिलेख '%1' ल लिखे बर खोल नइ सकिस."
 
 #: plugins/libsinglefileplugin/singlefileplugin.cpp:77
 #, fuzzy, kde-format
 #| msgid "Could not open the archive '%1' for writing."
+msgctxt "@info"
 msgid "Ark could not open <filename>%1</filename> for extraction."
 msgstr "अभिलेख '%1' ल लिखे बर खोल नइ सकिस."
 
 #: plugins/libsinglefileplugin/singlefileplugin.cpp:91
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Could not open the archive '%1' for writing."
+msgctxt "@info"
 msgid ""
 "There was an error while reading <filename>%1</filename> during extraction."
-msgstr ""
+msgstr "अभिलेख '%1' ल लिखे बर खोल नइ सकिस."
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
