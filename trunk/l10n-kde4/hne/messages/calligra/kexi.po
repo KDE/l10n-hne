@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-22 02:54+0100\n"
+"POT-Creation-Date: 2011-01-03 02:56+0100\n"
 "PO-Revision-Date: 2009-03-02 23:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -5324,77 +5324,6 @@ msgstr "पाठ एनकोडिंग:"
 msgid "Always use this encoding in similar situations"
 msgstr "समान हालत मं हमेसा यही एनकोडिंग परयोग करव"
 
-#: migration/importtablewizard.cpp:118
-#, fuzzy
-#| msgid ""
-#| "Database Importing wizard allows you to import an existing database into "
-#| "a Kexi database."
-msgid ""
-"Table importing wizard allows you to import a table from an existing "
-"database into the current Kexi database."
-msgstr ""
-"डाटाबेस आयात विजार्ड आप मन ल अभी हाल के डाटाबेस ल केएक्जाई डाटाबेस मं आयात करन देथे ."
-
-#: migration/importtablewizard.cpp:121 migration/importwizard.cpp:191
-msgid ""
-"Click \"Next\" button to continue or \"Cancel\" button to exit this wizard."
-msgstr ""
-"जारी रखे बर \"अगला\" बटन दबाव या फिर एखर विजार्ड से बाहिर होए बर \"खारिज\" बटन "
-"दबाव."
-
-#: migration/importtablewizard.cpp:124
-#, fuzzy
-#| msgid "Welcome to the Database Importing Wizard"
-msgid "Welcome to the Table Importing Wizard"
-msgstr "डाटाबेस आयात विजार्ड मं आप मन के स्वागत हे"
-
-#: migration/importtablewizard.cpp:155 migration/importwizard.cpp:223
-msgid "Select Location for Source Database"
-msgstr "स्रोत डाटाबेस बर जगह चुनव"
-
-#: migration/importtablewizard.cpp:169
-#, fuzzy
-#| msgid "Select Type of Import"
-msgid "Select the Table to Import"
-msgstr "आयात के किसिम चुनव"
-
-#: migration/importtablewizard.cpp:202 migration/importwizard.cpp:384
-msgid "Advanced Options"
-msgstr "विस्तृत विकल्प"
-
-#: migration/importtablewizard.cpp:211 migration/importwizard.cpp:396
-msgid "Importing"
-msgstr "आयात करत हे"
-
-#: migration/importtablewizard.cpp:227
-msgid "Alter the Detected Design"
-msgstr ""
-
-#: migration/importtablewizard.cpp:244 migration/importwizard.cpp:420
-#: migration/importwizard.cpp:832
-msgid "Success"
-msgstr "सफलता"
-
-#: migration/importtablewizard.cpp:350
-msgid ""
-"All required information has now been gathered. Click \"Next\" button to "
-"start importing.\n"
-"\n"
-"Depending on size of the tables this may take some time.\n"
-"\n"
-"You have chosen to import the following table:\n"
-"\n"
-msgstr ""
-
-#: migration/importtablewizard.cpp:402 migration/importwizard.cpp:711
-msgid "No appropriate migration driver found."
-msgstr "कोई उपयुक्त माइग्रेसन ड्राइवर नइ मिलिस."
-
-#: migration/importtablewizard.cpp:490
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1405
-msgid "No project available."
-msgstr "कोई परियोजना नइ मिलत."
-
 #: migration/importwizard.cpp:69
 msgid "Import Database"
 msgstr "डाटाबेस आयात करव"
@@ -5420,9 +5349,20 @@ msgid ""
 msgstr ""
 "डाटाबेस आयात विजार्ड आप मन ल अभी हाल के डाटाबेस ल केएक्जाई डाटाबेस मं आयात करन देथे ."
 
+#: migration/importwizard.cpp:191 migration/importtablewizard.cpp:121
+msgid ""
+"Click \"Next\" button to continue or \"Cancel\" button to exit this wizard."
+msgstr ""
+"जारी रखे बर \"अगला\" बटन दबाव या फिर एखर विजार्ड से बाहिर होए बर \"खारिज\" बटन "
+"दबाव."
+
 #: migration/importwizard.cpp:194
 msgid "Welcome to the Database Importing Wizard"
 msgstr "डाटाबेस आयात विजार्ड मं आप मन के स्वागत हे"
+
+#: migration/importwizard.cpp:223 migration/importtablewizard.cpp:155
+msgid "Select Location for Source Database"
+msgstr "स्रोत डाटाबेस बर जगह चुनव"
 
 #: migration/importwizard.cpp:235
 msgid "Select Source Database"
@@ -5468,9 +5408,22 @@ msgstr "सिरिफ ढांचा"
 msgid "Select Type of Import"
 msgstr "आयात के किसिम चुनव"
 
+#: migration/importwizard.cpp:384 migration/importtablewizard.cpp:202
+msgid "Advanced Options"
+msgstr "विस्तृत विकल्प"
+
+#: migration/importwizard.cpp:396 migration/importtablewizard.cpp:211
+msgid "Importing"
+msgstr "आयात करत हे"
+
 #: migration/importwizard.cpp:413
 msgid "Open imported project"
 msgstr "आयातित परियोजना खोलव"
+
+#: migration/importwizard.cpp:420 migration/importwizard.cpp:832
+#: migration/importtablewizard.cpp:244
+msgid "Success"
+msgstr "सफलता"
 
 #: migration/importwizard.cpp:431
 msgid "No new database name was entered."
@@ -5499,6 +5452,10 @@ msgid ""
 "\n"
 "Depending on size of the database this may take some time."
 msgstr ""
+
+#: migration/importwizard.cpp:711 migration/importtablewizard.cpp:402
+msgid "No appropriate migration driver found."
+msgstr "कोई उपयुक्त माइग्रेसन ड्राइवर नइ मिलिस."
 
 #: migration/importwizard.cpp:808
 #, kde-format
@@ -5646,6 +5603,53 @@ msgstr "माइग्रेसन ड्राइवर \"%1\" के अन�
 #, kde-format
 msgid "Could not load import/export database driver \"%1\"."
 msgstr "आयात/निर्यात डाटाबेस ड्राइवर \"%1\" लोड नइ कर सकिस."
+
+#: migration/importtablewizard.cpp:118
+#, fuzzy
+#| msgid ""
+#| "Database Importing wizard allows you to import an existing database into "
+#| "a Kexi database."
+msgid ""
+"Table importing wizard allows you to import a table from an existing "
+"database into the current Kexi database."
+msgstr ""
+"डाटाबेस आयात विजार्ड आप मन ल अभी हाल के डाटाबेस ल केएक्जाई डाटाबेस मं आयात करन देथे ."
+
+#: migration/importtablewizard.cpp:124
+#, fuzzy
+#| msgid "Welcome to the Database Importing Wizard"
+msgid "Welcome to the Table Importing Wizard"
+msgstr "डाटाबेस आयात विजार्ड मं आप मन के स्वागत हे"
+
+#: migration/importtablewizard.cpp:169
+#, fuzzy
+#| msgid "Select Type of Import"
+msgid "Select the Table to Import"
+msgstr "आयात के किसिम चुनव"
+
+#: migration/importtablewizard.cpp:227
+msgid "Alter the Detected Design"
+msgstr ""
+
+#: migration/importtablewizard.cpp:350
+msgid ""
+"All required information has now been gathered. Click \"Next\" button to "
+"start importing.\n"
+"\n"
+"Depending on size of the tables this may take some time.\n"
+"\n"
+"You have chosen to import the following table:\n"
+"\n"
+msgstr ""
+
+#: migration/importtablewizard.cpp:490
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1405
+msgid "No project available."
+msgstr "कोई परियोजना नइ मिलत."
+
+#: migration/importtablewizard.cpp:501
+msgid "No table was selected to import."
+msgstr ""
 
 #: plugins/forms/kexidataprovider.cpp:228
 #: plugins/forms/kexidataprovider.cpp:252
