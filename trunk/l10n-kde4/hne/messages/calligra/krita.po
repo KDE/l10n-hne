@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-08 03:05+0100\n"
+"POT-Creation-Date: 2011-01-09 03:03+0100\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -3040,6 +3040,7 @@ msgstr "मल्टी स्पाट"
 #. i18n: file: ui/forms/wdgshapeoptions.ui:66
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbFill)
 #: rc.cpp:861 rc.cpp:4013
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:57
 msgid "Pattern"
 msgstr "पैटर्न"
 
@@ -3758,6 +3759,7 @@ msgstr "अभी हाल के रंग माडल:"
 #. i18n: file: plugins/extensions/separate_channels/wdg_separations.ui:43
 #. i18n: ectx: property (title), widget (QGroupBox, grpSource)
 #: rc.cpp:1219
+#: plugins/paintops/libpaintop/kis_color_source_option_widget.cpp:37
 msgid "Source"
 msgstr "स्रोत"
 
@@ -4248,7 +4250,7 @@ msgstr "त्रिज्या"
 #. i18n: file: plugins/paintops/spray/wdgshapedynamicsoptions.ui:42
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:1399 rc.cpp:2400 rc.cpp:2954
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:42
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:43
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:27
 msgid "Rotation"
 msgstr "परिक्रमन"
@@ -6116,7 +6118,7 @@ msgstr "संतृप्ति"
 
 #. i18n: file: plugins/paintops/experiment/wdgexperimentoptions.ui:57
 #. i18n: ectx: property (text), widget (QCheckBox, speedCHBox)
-#: rc.cpp:2358 plugins/paintops/libpaintop/kis_dynamic_sensor.h:37
+#: rc.cpp:2358 plugins/paintops/libpaintop/kis_dynamic_sensor.h:38
 msgid "Speed"
 msgstr "गति"
 
@@ -6163,7 +6165,7 @@ msgstr "प्रदर्सक"
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
 #: rc.cpp:2373 rc.cpp:2442 rc.cpp:2751 rc.cpp:2975
 #: image/recorder/kis_recorded_shape_paint_action.cpp:54
-#: plugins/assistants/RulerAssistant/EllipseAssistant.cc:99
+#: plugins/assistants/RulerAssistant/EllipseAssistant.cc:101
 #: plugins/tools/defaulttools/kis_tool_ellipse.cc:68
 msgid "Ellipse"
 msgstr "दीर्घवृत्त"
@@ -6840,7 +6842,7 @@ msgstr "अनुपातः"
 
 #. i18n: file: plugins/paintops/libpaintop/wdgautobrush.ui:155
 #. i18n: ectx: property (title), widget (QGroupBox, grpFade_2)
-#: rc.cpp:2682 plugins/paintops/libpaintop/kis_dynamic_sensor.h:38
+#: rc.cpp:2682 plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
 #, fuzzy
 #| msgid "&Fade"
 msgid "Fade"
@@ -7084,7 +7086,7 @@ msgstr "इंक्रीमेंटल"
 
 #. i18n: file: plugins/paintops/libpaintop/wdgcustombrush.ui:74
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: rc.cpp:2815 plugins/paintops/libpaintop/kis_dynamic_sensor.h:43
+#: rc.cpp:2815 plugins/paintops/libpaintop/kis_dynamic_sensor.h:44
 msgid "Pressure"
 msgstr "दबाव"
 
@@ -7344,7 +7346,7 @@ msgstr "दूरी:"
 
 #. i18n: file: plugins/paintops/spray/wdgshapedynamicsoptions.ui:132
 #. i18n: ectx: property (text), widget (QCheckBox, drawingAngle)
-#: rc.cpp:2969 plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
+#: rc.cpp:2969 plugins/paintops/libpaintop/kis_dynamic_sensor.h:42
 msgid "Drawing angle"
 msgstr "ड्राइंग कोन"
 
@@ -9998,12 +10000,6 @@ msgstr "फाइल या यूआरएल जऊन ल खोलना ह
 msgid "Ruler assistant editor tool"
 msgstr "रूलर सहायक संपादन औजार"
 
-#: plugins/assistants/RulerAssistant/EllipseAssistant.cc:33
-#, fuzzy
-#| msgid "Ruler assistant"
-msgid "Ellipse assistant"
-msgstr "रूलर सहायक"
-
 #: plugins/assistants/RulerAssistant/PerspectiveAssistant.cc:34
 #, fuzzy
 #| msgid "Perspective grid"
@@ -10011,7 +10007,7 @@ msgid "Perspective assistant"
 msgstr "पर्सपेक्टिव ग्रिड"
 
 #: plugins/assistants/RulerAssistant/PerspectiveAssistant.cc:311
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:46
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:49
 #, fuzzy
 #| msgid "Perspective grid"
 msgid "Perspective"
@@ -10042,6 +10038,12 @@ msgstr "बीस्प्लाइन"
 #: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:420
 msgid "Errors were encountered. Not all assistants were successfully loaded."
 msgstr ""
+
+#: plugins/assistants/RulerAssistant/EllipseAssistant.cc:33
+#, fuzzy
+#| msgid "Ruler assistant"
+msgid "Ellipse assistant"
+msgstr "रूलर सहायक"
 
 #: plugins/colorspaces/ctlcs/KoCtlCompositeOp.cpp:135
 #, fuzzy
@@ -11485,27 +11487,17 @@ msgstr "ब्रुस आकार"
 msgid "Color options"
 msgstr "विकल्प"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:36
-msgid "Fuzzy"
-msgstr "फजी"
-
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:29
+#: plugins/paintops/libpaintop/kis_curve_option.cpp:31
 #, fuzzy
-#| msgid "Distance: "
-msgid "Distance"
-msgstr "दूरी:"
+#| msgid "1.0"
+msgid "0.0"
+msgstr "1.0"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
-msgid "Time"
-msgstr "समय"
-
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:44
-msgid "X-Tilt"
-msgstr "एक्स-टेढ़ा"
-
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:45
-msgid "Y-Tilt"
-msgstr "वाय-टेढ़ा"
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:30
+#: plugins/paintops/libpaintop/kis_curve_option.cpp:32
+msgid "1.0"
+msgstr "1.0"
 
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:95
 #, fuzzy
@@ -11523,17 +11515,39 @@ msgstr "परिक्रमन"
 msgid "Spacing: "
 msgstr "जगह:"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:28
-#: plugins/paintops/libpaintop/kis_curve_option.cpp:31
-#, fuzzy
-#| msgid "1.0"
-msgid "0.0"
-msgstr "1.0"
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:37
+msgid "Fuzzy"
+msgstr "फजी"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:29
-#: plugins/paintops/libpaintop/kis_curve_option.cpp:32
-msgid "1.0"
-msgstr "1.0"
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
+#, fuzzy
+#| msgid "Distance: "
+msgid "Distance"
+msgstr "दूरी:"
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
+msgid "Time"
+msgstr "समय"
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:45
+msgid "X-Tilt"
+msgstr "एक्स-टेढ़ा"
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:46
+msgid "Y-Tilt"
+msgstr "वाय-टेढ़ा"
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:47
+#, fuzzy
+#| msgid "&Pixel Dimensions"
+msgid "Ascension"
+msgstr "पिक्सेल आयाम (&P)"
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:48
+#, fuzzy
+#| msgid "Destination"
+msgid "Declination"
+msgstr "गंतव्य"
 
 #: plugins/paintops/libpaintop/kis_pressure_darken_option.cpp:27
 msgid "Darken"
@@ -11586,16 +11600,19 @@ msgid "Rate: "
 msgstr "दर:"
 
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:29
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:41
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:47
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:42
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:48
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:78
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:85
 #, fuzzy
 #| msgid "°"
 msgid "0°"
 msgstr "°"
 
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:30
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:42
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:48
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:43
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:49
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:79
 msgid "360°"
 msgstr ""
 
@@ -11677,53 +11694,85 @@ msgstr ""
 msgid "%1 s"
 msgstr ""
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:27
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:28
 #, fuzzy
 #| msgid "&Show"
 msgid "Slow"
 msgstr "देखाव (&S)"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:28
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:29
 #, fuzzy
 #| msgid "Flash"
 msgid "Fast"
 msgstr "फ्लैस"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:59
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:60
 #, fuzzy
 #| msgid "Lower"
 msgid "Low"
 msgstr "निचला"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:60
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:61
 #, fuzzy
 #| msgid "Height"
 msgid "High"
 msgstr "ऊंचाई"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:65
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:71
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:66
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:72
 msgid "-30°"
 msgstr ""
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:66
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:72
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:67
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:73
 #, fuzzy
 #| msgid "°"
 msgid "30°"
 msgstr "°"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:77
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:84
+#, fuzzy
+#| msgid "°"
+msgid "90°"
+msgstr "°"
+
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:91
 #, fuzzy
 #| msgid "Feather"
 msgid "Far"
 msgstr "पंख"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:78
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:92
 #, fuzzy
 #| msgid "Shear X:"
 msgid "Near"
 msgstr "कतरें X:"
+
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:53
+#, fuzzy
+#| msgid "Canvas color:"
+msgid "Plain color"
+msgstr "केनवस रंग:"
+
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:54
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:267
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:273
+msgid "Gradient"
+msgstr "अनुपात"
+
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:55
+msgid "Uniform random"
+msgstr "एकसमान बेतरतीब"
+
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:56
+msgid "Total random"
+msgstr "पूरा बेतरतीब"
+
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:58
+#, fuzzy
+#| msgid "Use pattern"
+msgid "Locked pattern"
+msgstr "पैटर्न परयोग करव"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:81
 msgid ""
@@ -12328,11 +12377,6 @@ msgstr ""
 #: plugins/tools/defaulttools/kis_tool_fill.h:91
 msgid "Fill a contiguous area of color with a color, or fill a selection."
 msgstr "समीप के छेत्र ल कोनो रंग से भरव या चयन ल भरव"
-
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:267
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:273
-msgid "Gradient"
-msgstr "अनुपात"
 
 #: plugins/tools/defaulttools/kis_tool_gradient.cc:327
 msgid "Repeat:"
@@ -14701,12 +14745,6 @@ msgstr "प्रीसेट मं सहेजव (&S)"
 
 #~ msgid "Plain"
 #~ msgstr "सादा"
-
-#~ msgid "Uniform random"
-#~ msgstr "एकसमान बेतरतीब"
-
-#~ msgid "Total random"
-#~ msgstr "पूरा बेतरतीब"
 
 #~ msgid "Edit dynamic shape programs"
 #~ msgstr "डायनामिक आकार प्रोग्राम संपादित करव"
