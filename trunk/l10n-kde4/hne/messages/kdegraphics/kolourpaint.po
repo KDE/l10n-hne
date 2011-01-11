@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kolourpaint4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-26 02:58+0100\n"
+"POT-Creation-Date: 2011-01-11 02:40+0100\n"
 "PO-Revision-Date: 2009-02-26 15:35+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1761,6 +1761,10 @@ msgstr "256 रंग मं कम करव"
 msgid "Invert Colors"
 msgstr "रंग उलटव"
 
+#: commands/imagelib/effects/kpEffectGrayscaleCommand.cpp:41
+msgid "Reduce to Grayscale"
+msgstr "काला-सफेद मं कम करव"
+
 #: commands/imagelib/effects/kpEffectCommandBase.cpp:67
 #: commands/imagelib/effects/kpEffectClearCommand.cpp:62
 #: commands/imagelib/transforms/kpTransformSkewCommand.cpp:78
@@ -1769,10 +1773,6 @@ msgstr "रंग उलटव"
 #, kde-format
 msgid "Selection: %1"
 msgstr "चयन: %1"
-
-#: commands/imagelib/effects/kpEffectGrayscaleCommand.cpp:41
-msgid "Reduce to Grayscale"
-msgstr "काला-सफेद मं कम करव"
 
 #: commands/imagelib/effects/kpEffectBlurSharpenCommand.cpp:58
 msgid "Soften"
@@ -1874,68 +1874,6 @@ msgid_plural "%1 more items"
 msgstr[0] "%1 अउ जादा चीज"
 msgstr[1] "%1 अउ जादा चीज"
 
-#: widgets/toolbars/options/kpToolWidgetBrush.cpp:164
-msgid "1x1"
-msgstr "1x1"
-
-#: widgets/toolbars/options/kpToolWidgetBrush.cpp:172
-msgid "Circle"
-msgstr "वृत्त"
-
-#: widgets/toolbars/options/kpToolWidgetBrush.cpp:175
-msgid "Square"
-msgstr "वर्ग"
-
-#: widgets/toolbars/options/kpToolWidgetBrush.cpp:179
-msgid "Slash"
-msgstr "स्लैस"
-
-#: widgets/toolbars/options/kpToolWidgetBrush.cpp:183
-msgid "Backslash"
-msgstr "बैकस्लैस"
-
-#: widgets/toolbars/options/kpToolWidgetBrush.cpp:190
-#, kde-format
-msgid "%1x%2 %3"
-msgstr "%1x%2 %3"
-
-#: widgets/toolbars/options/kpToolWidgetFillStyle.cpp:136
-msgid "No Fill"
-msgstr "भरव नइ"
-
-#: widgets/toolbars/options/kpToolWidgetFillStyle.cpp:139
-msgid "Fill with Background Color"
-msgstr "पिछोत अंगना रंग से भरव"
-
-#: widgets/toolbars/options/kpToolWidgetFillStyle.cpp:142
-msgid "Fill with Foreground Color"
-msgstr "आगू तरफ रंग से भरव"
-
-#: widgets/toolbars/options/kpToolWidgetOpaqueOrTransparent.cpp:43
-msgid "Opaque"
-msgstr "अपारदर्सी"
-
-#: widgets/toolbars/options/kpToolWidgetOpaqueOrTransparent.cpp:45
-#: widgets/kpTransparentColorCell.cpp:65
-msgid "Transparent"
-msgstr "पारदर्सी"
-
-#: widgets/toolbars/kpColorToolBar.cpp:260
-msgid "KolourPaint Defaults"
-msgstr "कलरपेंट डिफाल्ट्स"
-
-#: widgets/toolbars/kpColorToolBar.cpp:273
-#, kde-format
-msgctxt "Colors: name_or_url_of_color_palette"
-msgid "Colors: %1"
-msgstr "रंग: %1"
-
-#: widgets/toolbars/kpColorToolBar.cpp:280
-#, kde-format
-msgctxt "Colors: name_or_url_of_color_palette [modified]"
-msgid "Colors: %1 [modified]"
-msgstr "रंग: %1 [परिवर्धित]"
-
 #: widgets/colorSimilarity/kpColorSimilarityHolder.cpp:72
 msgid ""
 "<qt><p><b>Color Similarity</b> is how <i>similar</i> the colors of different "
@@ -1998,6 +1936,74 @@ msgid ""
 msgstr ""
 "<p>रंग एकरूपता: सटीक जोड़</p><p align=\"center\">कान्फिगर करे बर किलिक करव.</p>"
 
+#: widgets/toolbars/options/kpToolWidgetBrush.cpp:164
+msgid "1x1"
+msgstr "1x1"
+
+#: widgets/toolbars/options/kpToolWidgetBrush.cpp:172
+msgid "Circle"
+msgstr "वृत्त"
+
+#: widgets/toolbars/options/kpToolWidgetBrush.cpp:175
+msgid "Square"
+msgstr "वर्ग"
+
+#: widgets/toolbars/options/kpToolWidgetBrush.cpp:179
+msgid "Slash"
+msgstr "स्लैस"
+
+#: widgets/toolbars/options/kpToolWidgetBrush.cpp:183
+msgid "Backslash"
+msgstr "बैकस्लैस"
+
+#: widgets/toolbars/options/kpToolWidgetBrush.cpp:190
+#, kde-format
+msgid "%1x%2 %3"
+msgstr "%1x%2 %3"
+
+#: widgets/toolbars/options/kpToolWidgetFillStyle.cpp:136
+msgid "No Fill"
+msgstr "भरव नइ"
+
+#: widgets/toolbars/options/kpToolWidgetFillStyle.cpp:139
+msgid "Fill with Background Color"
+msgstr "पिछोत अंगना रंग से भरव"
+
+#: widgets/toolbars/options/kpToolWidgetFillStyle.cpp:142
+msgid "Fill with Foreground Color"
+msgstr "आगू तरफ रंग से भरव"
+
+#: widgets/toolbars/options/kpToolWidgetOpaqueOrTransparent.cpp:43
+msgid "Opaque"
+msgstr "अपारदर्सी"
+
+#: widgets/toolbars/options/kpToolWidgetOpaqueOrTransparent.cpp:45
+#: widgets/kpTransparentColorCell.cpp:65
+msgid "Transparent"
+msgstr "पारदर्सी"
+
+#: widgets/toolbars/kpColorToolBar.cpp:260
+msgid "KolourPaint Defaults"
+msgstr "कलरपेंट डिफाल्ट्स"
+
+#: widgets/toolbars/kpColorToolBar.cpp:273
+#, kde-format
+msgctxt "Colors: name_or_url_of_color_palette"
+msgid "Colors: %1"
+msgstr "रंग: %1"
+
+#: widgets/toolbars/kpColorToolBar.cpp:280
+#, kde-format
+msgctxt "Colors: name_or_url_of_color_palette [modified]"
+msgid "Colors: %1 [modified]"
+msgstr "रंग: %1 [परिवर्धित]"
+
+#: widgets/imagelib/effects/kpEffectBlurSharpenWidget.cpp:53
+#: widgets/imagelib/effects/kpEffectToneEnhanceWidget.cpp:67
+#: widgets/imagelib/effects/kpEffectEmbossWidget.cpp:54
+msgid "&Amount:"
+msgstr "मात्राः (&A)"
+
 #: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:66
 msgid "&Brightness:"
 msgstr "चमकीलापनः (&B)"
@@ -2045,12 +2051,6 @@ msgstr "सब्बो मूल्य मन ल रीसेट करव (&A
 #: widgets/imagelib/effects/kpEffectBalanceWidget.cpp:169
 msgid "Settings"
 msgstr "सेटिंग"
-
-#: widgets/imagelib/effects/kpEffectBlurSharpenWidget.cpp:53
-#: widgets/imagelib/effects/kpEffectToneEnhanceWidget.cpp:67
-#: widgets/imagelib/effects/kpEffectEmbossWidget.cpp:54
-msgid "&Amount:"
-msgstr "मात्राः (&A)"
 
 #: widgets/imagelib/effects/kpEffectToneEnhanceWidget.cpp:65
 msgid "&Granularity:"
