@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-12 03:04+0100\n"
+"POT-Creation-Date: 2011-01-13 03:01+0100\n"
 "PO-Revision-Date: 2009-03-03 10:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -301,8 +301,7 @@ msgstr "लेटर, लोअर केस"
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:344
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
 #: kernel/kptnode.cpp:136 kernel/kptnode.cpp:1503 kernel/kpttask.cpp:3631
-#: models/kptresourceallocationmodel.cpp:743 models/kptschedulemodel.cpp:458
-#: models/kptschedulemodel.cpp:460 models/kpttreecombobox.cpp:124
+#: models/kptresourceallocationmodel.cpp:743 models/kpttreecombobox.cpp:124
 #: models/kptnodeitemmodel.cpp:355 models/kptnodeitemmodel.cpp:366
 #: models/kptnodeitemmodel.cpp:371 models/kptnodeitemmodel.cpp:381
 #: models/kptnodeitemmodel.cpp:557 models/kptnodeitemmodel.cpp:563
@@ -312,6 +311,7 @@ msgstr "लेटर, लोअर केस"
 #: models/kptnodeitemmodel.cpp:659 models/kptresourcemodel.cpp:189
 #: models/kptresourcemodel.cpp:221 models/kptresourcemodel.cpp:342
 #: models/kptresourcemodel.cpp:346 models/kptresourcemodel.cpp:355
+#: models/kptschedulemodel.cpp:458 models/kptschedulemodel.cpp:460
 #: ui/kptpertresult.cpp:138 ui/kptpertresult.cpp:489
 #: ui/kptresourcedialog.cpp:260 ui/kptresourcedialog.cpp:286
 #: ui/kpttaskcostpanel.cpp:49 ui/kpttaskgeneralpanel.cpp:70 rc.cpp:536
@@ -353,7 +353,7 @@ msgstr "पीरियाडिसिटी:"
 msgid "Summary"
 msgstr "सारांस"
 
-#: kernel/kptnode.cpp:602 kernel/kptglobal.cpp:43 kernel/kptschedule.cpp:1748
+#: kernel/kptnode.cpp:602 kernel/kptglobal.cpp:43 kernel/kptschedule.cpp:1770
 #: models/kptschedulemodel.cpp:664
 msgid "Not scheduled"
 msgstr "सारिनीबद्ध नइ"
@@ -549,48 +549,6 @@ msgstr "संसाधन सुधारव"
 msgid "Cannot fulfill constraints"
 msgstr "सीमाओं ल पूरा नइ कर सके"
 
-#: kernel/kptschedule.cpp:121 kernel/kptschedule.cpp:126
-msgid "Expected"
-msgstr "प्रत्यासित"
-
-#: kernel/kptschedule.cpp:123
-#, fuzzy
-#| msgid "Optimistic:"
-msgid "Optimistic"
-msgstr "आसावादी:"
-
-#: kernel/kptschedule.cpp:125
-#, fuzzy
-#| msgid "Pessimistic:"
-msgid "Pessimistic"
-msgstr "निस्क्रियवादी:"
-
-#: kernel/kptschedule.cpp:1336
-msgid "Info"
-msgstr "जानकारी "
-
-#: kernel/kptschedule.cpp:1337
-msgid "Warning"
-msgstr "चेतावनी"
-
-#: kernel/kptschedule.cpp:1338 kernel/kptschedule.cpp:1752
-#: kernel/kptschedule.cpp:1757 kernel/kptschedule.cpp:1762
-#: models/kptnodeitemmodel.cpp:1468 models/kptnodeitemmodel.cpp:1490
-#: models/kptnodeitemmodel.cpp:1512 models/kptnodeitemmodel.cpp:1534
-#: models/kptnodeitemmodel.cpp:1556 models/kptnodeitemmodel.cpp:1578
-msgid "Error"
-msgstr "गलती"
-
-#: kernel/kptschedule.cpp:1742
-msgid "Baselined"
-msgstr "बेसलाइन्ड"
-
-#: kernel/kptschedule.cpp:1745
-#, fuzzy
-#| msgid "Scheduling Log"
-msgid "Scheduling"
-msgstr "सेड्यूलिंग लाग"
-
 #: kernel/kpttask.cpp:1087
 #, fuzzy
 #| msgid "Early finish date"
@@ -706,6 +664,48 @@ msgstr "भेजव"
 msgid "Receive"
 msgstr "प्राप्त"
 
+#: kernel/kptschedule.cpp:135 kernel/kptschedule.cpp:140
+msgid "Expected"
+msgstr "प्रत्यासित"
+
+#: kernel/kptschedule.cpp:137
+#, fuzzy
+#| msgid "Optimistic:"
+msgid "Optimistic"
+msgstr "आसावादी:"
+
+#: kernel/kptschedule.cpp:139
+#, fuzzy
+#| msgid "Pessimistic:"
+msgid "Pessimistic"
+msgstr "निस्क्रियवादी:"
+
+#: kernel/kptschedule.cpp:1358
+msgid "Info"
+msgstr "जानकारी "
+
+#: kernel/kptschedule.cpp:1359
+msgid "Warning"
+msgstr "चेतावनी"
+
+#: kernel/kptschedule.cpp:1360 kernel/kptschedule.cpp:1774
+#: kernel/kptschedule.cpp:1779 kernel/kptschedule.cpp:1784
+#: models/kptnodeitemmodel.cpp:1468 models/kptnodeitemmodel.cpp:1490
+#: models/kptnodeitemmodel.cpp:1512 models/kptnodeitemmodel.cpp:1534
+#: models/kptnodeitemmodel.cpp:1556 models/kptnodeitemmodel.cpp:1578
+msgid "Error"
+msgstr "गलती"
+
+#: kernel/kptschedule.cpp:1764
+msgid "Baselined"
+msgstr "बेसलाइन्ड"
+
+#: kernel/kptschedule.cpp:1767
+#, fuzzy
+#| msgid "Scheduling Log"
+msgid "Scheduling"
+msgstr "सेड्यूलिंग लाग"
+
 #: models/kcalendar/kdatepicker.cpp:116
 #, kde-format
 msgid "Week %1"
@@ -761,11 +761,12 @@ msgstr "डिफाल्ट खाता:"
 #. i18n: file: ui/kptresourceassignmentview.ui:27
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptaccountsmodel.cpp:122 models/kptaccountsmodel.cpp:1020
-#: models/kptresourceallocationmodel.cpp:332 models/kptschedulemodel.cpp:736
-#: models/kptschedulemodel.cpp:962 models/kptresourceappointmentsmodel.cpp:908
+#: models/kptresourceallocationmodel.cpp:332
+#: models/kptresourceappointmentsmodel.cpp:908
 #: models/kptresourceappointmentsmodel.cpp:923
 #: models/kptresourceappointmentsmodel.cpp:1496
-#: models/kptcalendarmodel.cpp:423 models/kptresourcemodel.cpp:425 rc.cpp:316
+#: models/kptcalendarmodel.cpp:423 models/kptresourcemodel.cpp:425
+#: models/kptschedulemodel.cpp:736 models/kptschedulemodel.cpp:994 rc.cpp:316
 msgid "Name"
 msgstr "नाम"
 
@@ -1710,118 +1711,6 @@ msgstr "संसाधन या संसाधन समूह के ना�
 msgctxt "@info:tooltip"
 msgid "Team resources cannot have required resources"
 msgstr ""
-
-#: models/kptschedulemodel.cpp:351
-#, fuzzy
-#| msgid "Modify Calendar"
-msgid "Modify schedule name"
-msgstr "कलेन्डर सुधारव"
-
-#: models/kptschedulemodel.cpp:418 models/kptschedulemodel.cpp:420
-msgid "Allow"
-msgstr "स्वीकारव"
-
-#: models/kptschedulemodel.cpp:418 models/kptschedulemodel.cpp:420
-msgid "Avoid"
-msgstr "टालें"
-
-#: models/kptschedulemodel.cpp:440
-msgid "Modify allow overbooking"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:458 models/kptschedulemodel.cpp:460
-msgid "PERT"
-msgstr "पीईआरटी"
-
-#: models/kptschedulemodel.cpp:480
-#, fuzzy
-#| msgid "The scheduling direction"
-msgid "Modify scheduling distribution"
-msgstr "सारिनी दिसा"
-
-#: models/kptschedulemodel.cpp:498 models/kptschedulemodel.cpp:500
-msgid "All"
-msgstr "सब्बो"
-
-#: models/kptschedulemodel.cpp:498 models/kptschedulemodel.cpp:500
-msgid "Expected only"
-msgstr "सिरिफ वांछित"
-
-#: models/kptschedulemodel.cpp:584 models/kptschedulemodel.cpp:586
-msgid "Backwards"
-msgstr "पीछू से"
-
-#: models/kptschedulemodel.cpp:584 models/kptschedulemodel.cpp:586
-msgid "Forward"
-msgstr "आगू"
-
-#: models/kptschedulemodel.cpp:606
-#, fuzzy
-#| msgid "The scheduling direction"
-msgid "Modify scheduling direction"
-msgstr "सारिनी दिसा"
-
-#: models/kptschedulemodel.cpp:624
-#, fuzzy
-#| msgid "Unknown"
-msgid "Unknown"
-msgstr "अग्यात"
-
-#: models/kptschedulemodel.cpp:646
-#, fuzzy
-#| msgid "Not scheduled"
-msgid "Modify scheduler"
-msgstr "सारिनीबद्ध नइ"
-
-#: models/kptschedulemodel.cpp:737
-msgid "State"
-msgstr "स्थिति"
-
-#: models/kptschedulemodel.cpp:738
-#, fuzzy
-#| msgid "Duration"
-msgid "Direction"
-msgstr "अवधि"
-
-#: models/kptschedulemodel.cpp:739
-msgid "Overbooking"
-msgstr "ओवरबुकिंग"
-
-#: models/kptschedulemodel.cpp:740
-#, fuzzy
-#| msgid "Description"
-msgid "Distribution"
-msgstr "वर्नन"
-
-#: models/kptschedulemodel.cpp:742
-#, fuzzy
-#| msgid "Planned Effort"
-msgid "Planned Start"
-msgstr "प्लान करे गे प्रयास"
-
-#: models/kptschedulemodel.cpp:743
-#, fuzzy
-#| msgid "Planned cost"
-msgid "Planned Finish"
-msgstr "प्लान करे गे लागत"
-
-#: models/kptschedulemodel.cpp:744
-#, fuzzy
-#| msgid "Schedule:"
-msgid "Scheduler"
-msgstr "समयसारिनी:"
-
-#: models/kptschedulemodel.cpp:962
-msgid "Phase"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:962
-msgid "Severity"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:962
-msgid "Message"
-msgstr "संदेस"
 
 #: models/kpttaskstatusmodel.cpp:50 ui/kptresourceassignmentview.cpp:255
 #: ui/kptresourceassignmentview.cpp:333
@@ -3262,6 +3151,118 @@ msgstr[1] "संसाधन मन के अनुसार"
 #| msgid "Add Resource Group..."
 msgid "Add resource group"
 msgstr "संसाधन समूह जोड़व..."
+
+#: models/kptschedulemodel.cpp:351
+#, fuzzy
+#| msgid "Modify Calendar"
+msgid "Modify schedule name"
+msgstr "कलेन्डर सुधारव"
+
+#: models/kptschedulemodel.cpp:418 models/kptschedulemodel.cpp:420
+msgid "Allow"
+msgstr "स्वीकारव"
+
+#: models/kptschedulemodel.cpp:418 models/kptschedulemodel.cpp:420
+msgid "Avoid"
+msgstr "टालें"
+
+#: models/kptschedulemodel.cpp:440
+msgid "Modify allow overbooking"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:458 models/kptschedulemodel.cpp:460
+msgid "PERT"
+msgstr "पीईआरटी"
+
+#: models/kptschedulemodel.cpp:480
+#, fuzzy
+#| msgid "The scheduling direction"
+msgid "Modify scheduling distribution"
+msgstr "सारिनी दिसा"
+
+#: models/kptschedulemodel.cpp:498 models/kptschedulemodel.cpp:500
+msgid "All"
+msgstr "सब्बो"
+
+#: models/kptschedulemodel.cpp:498 models/kptschedulemodel.cpp:500
+msgid "Expected only"
+msgstr "सिरिफ वांछित"
+
+#: models/kptschedulemodel.cpp:584 models/kptschedulemodel.cpp:586
+msgid "Backwards"
+msgstr "पीछू से"
+
+#: models/kptschedulemodel.cpp:584 models/kptschedulemodel.cpp:586
+msgid "Forward"
+msgstr "आगू"
+
+#: models/kptschedulemodel.cpp:606
+#, fuzzy
+#| msgid "The scheduling direction"
+msgid "Modify scheduling direction"
+msgstr "सारिनी दिसा"
+
+#: models/kptschedulemodel.cpp:624
+#, fuzzy
+#| msgid "Unknown"
+msgid "Unknown"
+msgstr "अग्यात"
+
+#: models/kptschedulemodel.cpp:646
+#, fuzzy
+#| msgid "Not scheduled"
+msgid "Modify scheduler"
+msgstr "सारिनीबद्ध नइ"
+
+#: models/kptschedulemodel.cpp:737
+msgid "State"
+msgstr "स्थिति"
+
+#: models/kptschedulemodel.cpp:738
+#, fuzzy
+#| msgid "Duration"
+msgid "Direction"
+msgstr "अवधि"
+
+#: models/kptschedulemodel.cpp:739
+msgid "Overbooking"
+msgstr "ओवरबुकिंग"
+
+#: models/kptschedulemodel.cpp:740
+#, fuzzy
+#| msgid "Description"
+msgid "Distribution"
+msgstr "वर्नन"
+
+#: models/kptschedulemodel.cpp:742
+#, fuzzy
+#| msgid "Planned Effort"
+msgid "Planned Start"
+msgstr "प्लान करे गे प्रयास"
+
+#: models/kptschedulemodel.cpp:743
+#, fuzzy
+#| msgid "Planned cost"
+msgid "Planned Finish"
+msgstr "प्लान करे गे लागत"
+
+#: models/kptschedulemodel.cpp:744
+#, fuzzy
+#| msgid "Schedule:"
+msgid "Scheduler"
+msgstr "समयसारिनी:"
+
+#: models/kptschedulemodel.cpp:994
+msgid "Phase"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:994
+msgid "Severity"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:994
+msgid "Message"
+msgstr "संदेस"
 
 #: ui/kptaccountseditor.cpp:224
 msgid "Add Account"
