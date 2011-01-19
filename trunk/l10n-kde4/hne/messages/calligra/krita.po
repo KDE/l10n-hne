@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-17 03:04+0100\n"
+"POT-Creation-Date: 2011-01-19 03:04+0100\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -12326,10 +12326,6 @@ msgstr ""
 msgid "Assistant Magnetism"
 msgstr "मैग्नेटिज्म:"
 
-#: plugins/tools/defaulttools/kis_tool_brush.h:79
-msgid "Paint with brushes"
-msgstr "ब्रुस के साथ पेंट करव"
-
 #: plugins/tools/defaulttools/kis_tool_colorpicker.cc:174
 msgid "Cannot pick a color as no layer is active."
 msgstr "रंग चुने नइ जा सकिस काबर कि परत सक्रिय नइ हे."
@@ -12348,10 +12344,6 @@ msgstr "रंगदानी फाइल %1 मं लिख नइ सकि�
 #: ui/kis_custom_palette.cc:113 ui/kis_custom_palette.cc:152
 msgid "Palette"
 msgstr "रंगदानी"
-
-#: plugins/tools/defaulttools/kis_tool_colorpicker.h:96
-msgid "Select a color from the image or current layer"
-msgstr "अभी हाल के परत या फोटू से कोनो रंग चुनव"
 
 #: plugins/tools/defaulttools/kis_tool_ellipse.h:55
 msgid "Draw an ellipse"
@@ -12385,10 +12377,6 @@ msgid ""
 "When checked do not look at the current layer colors, but just fill all of "
 "the selected area"
 msgstr ""
-
-#: plugins/tools/defaulttools/kis_tool_fill.h:91
-msgid "Fill a contiguous area of color with a color, or fill a selection."
-msgstr "समीप के छेत्र ल कोनो रंग से भरव या चयन ल भरव"
 
 #: plugins/tools/defaulttools/kis_tool_gradient.cc:327
 msgid "Repeat:"
@@ -12452,10 +12440,6 @@ msgstr "एन्टी-अलाएस सीमा:"
 msgid "Preview opacity:"
 msgstr "प्रिव्यू अपारदर्सिता:"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.h:123
-msgid "Draw a gradient."
-msgstr "अनुपात बनाव."
-
 #: plugins/tools/defaulttools/kis_tool_line.cc:170
 msgctxt "a straight drawn line"
 msgid "Line"
@@ -12484,20 +12468,48 @@ msgstr "कोन:"
 msgid "Measure the distance between two points"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_move.h:92
-msgid "Move a layer"
-msgstr "कोई परत खिसकाव"
-
-#: plugins/tools/defaulttools/kis_tool_pan.h:74
-msgid "Move and rotate your canvas"
-msgstr ""
-
 #: plugins/tools/defaulttools/kis_tool_path.h:75
 msgid "Draw a path."
 msgstr "एक रस्ता बनाव."
 
+#: plugins/tools/defaulttools/kis_tool_brush.h:79
+#, fuzzy
+#| msgid "Paint with brushes"
+msgid "Paint with brushes (B)"
+msgstr "ब्रुस के साथ पेंट करव"
+
+#: plugins/tools/defaulttools/kis_tool_colorpicker.h:96
+#, fuzzy
+#| msgid "Select a color from the image or current layer"
+msgid "Select a color from the image or current layer (P)"
+msgstr "अभी हाल के परत या फोटू से कोनो रंग चुनव"
+
+#: plugins/tools/defaulttools/kis_tool_fill.h:91
+#, fuzzy
+#| msgid "Fill a contiguous area of color with a color, or fill a selection."
+msgid "Fill a contiguous area of color with a color, or fill a selection. (F)"
+msgstr "समीप के छेत्र ल कोनो रंग से भरव या चयन ल भरव"
+
+#: plugins/tools/defaulttools/kis_tool_gradient.h:123
+#, fuzzy
+#| msgid "Draw a gradient."
+msgid "Draw a gradient. (G)"
+msgstr "अनुपात बनाव."
+
+#: plugins/tools/defaulttools/kis_tool_move.h:92
+#, fuzzy
+#| msgid "Move a layer"
+msgid "Move a layer (SHIFT+V)"
+msgstr "कोई परत खिसकाव"
+
+#: plugins/tools/defaulttools/kis_tool_pan.h:74
+msgid "Move and rotate your canvas  (ALT+V)"
+msgstr ""
+
 #: plugins/tools/defaulttools/kis_tool_rectangle.h:61
-msgid "Draw a rectangle"
+#, fuzzy
+#| msgid "Draw a rectangle"
+msgid "Draw a rectangle (R)"
 msgstr "चतुर्भुज बनाव"
 
 #: plugins/tools/selectiontools/kis_tool_select_brush.cc:64
@@ -12512,12 +12524,6 @@ msgstr "किनारा चयन"
 #| msgid "Brush size"
 msgid "Brush size:"
 msgstr "ब्रुस आकार"
-
-#: plugins/tools/selectiontools/kis_tool_select_brush.h:74
-#, fuzzy
-#| msgid "Selection Brush"
-msgid "Select by brush"
-msgstr "चयन ब्रुस"
 
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:92
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:116
@@ -12538,10 +12544,6 @@ msgstr "रंगों के कंटीगुअस छेत्र चु�
 msgid "Elliptical Selection"
 msgstr "दीर्घवृत्तीय चयन"
 
-#: plugins/tools/selectiontools/kis_tool_select_elliptical.h:69
-msgid "Select an elliptical area"
-msgstr "दीर्घवृत्तीय छेत्र चुनव"
-
 #: plugins/tools/selectiontools/kis_tool_select_magnetic.cc:134
 #, fuzzy
 #| msgid "Magnetic Outline Selection"
@@ -12553,12 +12555,6 @@ msgstr "चुंबकीय आउटलाइन चयन"
 #: plugins/tools/selectiontools/kis_tool_select_path.cc:179
 msgid "Path Selection"
 msgstr "रस्ता चयन"
-
-#: plugins/tools/selectiontools/kis_tool_select_magnetic.h:126
-#, fuzzy
-#| msgid "Magnetic Outline Selection"
-msgid "Magnetic selection tool"
-msgstr "चुंबकीय आउटलाइन चयन"
 
 #: plugins/tools/selectiontools/kis_tool_select_outline.cc:117
 #: plugins/tools/selectiontools/kis_tool_select_outline.cc:196
@@ -12593,14 +12589,34 @@ msgstr "बहुभुजीय छेत्र चुनव"
 msgid "Rectangular Selection"
 msgstr "चतुर्भुज चयन"
 
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.h:67
-msgid "Select a rectangular area"
-msgstr "कोई चतुर्भुजीय छेत्र चुनव"
-
 #: plugins/tools/selectiontools/kis_tool_select_similar.cc:122
 #: plugins/tools/selectiontools/kis_tool_select_similar.cc:141
 msgid "Similar Selection"
 msgstr "एक जइसन चयन"
+
+#: plugins/tools/selectiontools/kis_tool_select_brush.h:74
+#, fuzzy
+#| msgid "Selection Brush"
+msgid "Select by brush (SHIFT+B)"
+msgstr "चयन ब्रुस"
+
+#: plugins/tools/selectiontools/kis_tool_select_elliptical.h:69
+#, fuzzy
+#| msgid "Select an elliptical area"
+msgid "Select an elliptical area (J)"
+msgstr "दीर्घवृत्तीय छेत्र चुनव"
+
+#: plugins/tools/selectiontools/kis_tool_select_magnetic.h:126
+#, fuzzy
+#| msgid "Magnetic Outline Selection"
+msgid "Magnetic selection tool (SHIFT+E)"
+msgstr "चुंबकीय आउटलाइन चयन"
+
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.h:67
+#, fuzzy
+#| msgid "Select a rectangular area"
+msgid "Select a rectangular area (SHIFT+R)"
+msgstr "कोई चतुर्भुजीय छेत्र चुनव"
 
 #: plugins/tools/selectiontools/kis_tool_select_similar.h:62
 msgid "Select similar colors"
