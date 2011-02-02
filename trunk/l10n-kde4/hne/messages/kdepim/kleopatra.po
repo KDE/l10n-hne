@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-28 02:52+0100\n"
+"POT-Creation-Date: 2011-02-02 03:13+0100\n"
 "PO-Revision-Date: 2009-02-27 21:59+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1140,6 +1140,10 @@ msgstr ""
 msgid "DN-Attribute Order"
 msgstr ""
 
+#: conf/configuredialog.cpp:73
+msgid "Configure"
+msgstr "कान्फिगर"
+
 #: conf/dirservconfigpage.cpp:171
 msgid "LDAP &timeout (minutes:seconds):"
 msgstr "एलडीएपी समय खतम (&t)"
@@ -1161,10 +1165,6 @@ msgstr "बैकएन्ड गलती: जीपीजीकान्फ %1
 #, kde-format
 msgid "Backend error: gpgconf has wrong type for %1/%2/%3: %4 %5"
 msgstr "बैकएन्ड गलती: जीपीजीकान्फ मं गलत इनबर गलत किसिम हे: %1/%2/%3: %4 %5"
-
-#: conf/configuredialog.cpp:73
-msgid "Configure"
-msgstr "कान्फिगर"
 
 #: conf/smimevalidationconfigurationwidget.cpp:132
 msgid "This option requires dirmngr >= 0.9.0"
@@ -2536,7 +2536,7 @@ msgstr ""
 msgid "Issuer Certificate Not Found (%1)"
 msgstr "जारीकर्ता प्रमानपत्र नइ मिलिस ( %1)"
 
-#: dialogs/certificatedetailsdialog.cpp:417
+#: dialogs/certificatedetailsdialog.cpp:418
 msgctxt "@title"
 msgid "Subkeys"
 msgstr "उपकुंजी"
@@ -2778,13 +2778,13 @@ msgstr "आयात"
 msgid "(unknown certificate)"
 msgstr "(अग्यात प्रमानपत्र)"
 
-#: dialogs/ownertrustdialog.cpp:102
+#: dialogs/ownertrustdialog.cpp:105
 #, kde-format
 msgctxt "@title"
 msgid "Change Trust Level of %1"
 msgstr ""
 
-#: dialogs/ownertrustdialog.cpp:103
+#: dialogs/ownertrustdialog.cpp:106
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -3246,6 +3246,55 @@ msgstr "फाइल ल सहेज नइ सकिस %1: %2"
 #: kwatchgnupg/tray.cpp:57
 msgid "KWatchGnuPG Log Viewer"
 msgstr "के-वाच-ग्नू-पीजी लाग प्रदर्सक"
+
+#: main.cpp:146
+msgid "Performing Self-Check..."
+msgstr ""
+
+#: main.cpp:163
+msgctxt "did not pass"
+msgid "Self-Check Failed"
+msgstr ""
+
+#: main.cpp:168
+msgid "Self-Check Passed"
+msgstr ""
+
+#: main.cpp:185
+msgid "Loading certificate cache..."
+msgstr ""
+
+#: main.cpp:192
+msgid "Certificate cache loaded."
+msgstr ""
+
+#: main.cpp:231
+msgctxt "@info"
+msgid ""
+"<para>The version of the <application>GpgME</application> library you are "
+"running against is older than the one that the <application>GpgME++</"
+"application> library was built against.</para><para><application>Kleopatra</"
+"application> will not function in this setting.</para><para>Please ask your "
+"administrator for help in resolving this issue.</para>"
+msgstr ""
+
+#: main.cpp:235
+msgctxt "@title"
+msgid "GpgME Too Old"
+msgstr ""
+
+#: main.cpp:328
+msgid "GPG UI Server Error"
+msgstr ""
+
+#: main.cpp:329
+#, kde-format
+msgid ""
+"<qt>The Kleopatra GPG UI Server Module could not be initialized.<br/>The "
+"error given was: <b>%1</b><br/>You can use Kleopatra as a certificate "
+"manager, but cryptographic plugins that rely on a GPG UI Server being "
+"present might not work correctly, or at all.</qt>"
+msgstr ""
 
 #: mainwindow_desktop.cpp:121 mainwindow_mobile.cpp:151
 #, kde-format
@@ -4960,7 +5009,7 @@ msgstr "खोजव: (&S)"
 msgid "Search interactively for icon names (e.g. folder)."
 msgstr ""
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:34
+#. i18n: file: dialogs/certificatedetailsdialog.ui:27
 #. i18n: ectx: property (title), widget (QGroupBox, overviewActionsGB)
 #: utils/kleo_kicondialog.cpp:367 rc.cpp:223 qml/kleopatra-mobile.qml:84
 msgid "Actions"
@@ -5152,8 +5201,8 @@ msgstr ""
 msgid "Stop Operation"
 msgstr "आपरेसन रोकव"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:13
-#. i18n: ectx: property (windowTitle), widget (QDialog, CertificateDetailsDialog)
+#. i18n: file: dialogs/certificatedetailsdialog.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, CertificateDetailsDialog)
 #: view/keylistcontroller.cpp:361 rc.cpp:217
 msgid "Certificate Details"
 msgstr "प्रमानपत्र विवरन"
@@ -5166,7 +5215,7 @@ msgstr "मेटाव"
 msgid "Certify Certificate..."
 msgstr ""
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:60
+#. i18n: file: dialogs/certificatedetailsdialog.ui:53
 #. i18n: ectx: property (text), widget (QPushButton, changeExpiryDatePB)
 #: view/keylistcontroller.cpp:368 rc.cpp:232
 msgid "Change Expiry Date..."
@@ -5188,7 +5237,7 @@ msgstr "प्रमानपत्र निर्यात करव"
 msgid "Distrust Root Certificate"
 msgstr "प्रमानपत्र निर्यात करव"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:40
+#. i18n: file: dialogs/certificatedetailsdialog.ui:33
 #. i18n: ectx: property (text), widget (QPushButton, changePassphrasePB)
 #: view/keylistcontroller.cpp:376 rc.cpp:226
 msgid "Change Passphrase..."
@@ -5296,7 +5345,7 @@ msgstr ""
 msgid "Hierarchical Certificate List"
 msgstr "हियरार्चिकल प्रमानपत्र सूची"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:244
+#. i18n: file: dialogs/certificatedetailsdialog.ui:229
 #. i18n: ectx: property (text), widget (QPushButton, expandAllCertificationsPB)
 #: view/tabwidget.cpp:408 rc.cpp:269
 msgid "Expand All"
@@ -5306,7 +5355,7 @@ msgstr "सब्बो फैलाव"
 msgid "CTRL+."
 msgstr "कंट्रोल+."
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:254
+#. i18n: file: dialogs/certificatedetailsdialog.ui:239
 #. i18n: ectx: property (text), widget (QPushButton, collapseAllCertificationsPB)
 #: view/tabwidget.cpp:410 rc.cpp:272
 msgid "Collapse All"
@@ -5323,55 +5372,6 @@ msgstr "टैब ल नवा नाम देवव"
 #: view/tabwidget.cpp:536
 msgid "New tab title:"
 msgstr "नवा टैब सीर्सक:"
-
-#: main.cpp:150
-msgid "Performing Self-Check..."
-msgstr ""
-
-#: main.cpp:167
-msgctxt "did not pass"
-msgid "Self-Check Failed"
-msgstr ""
-
-#: main.cpp:172
-msgid "Self-Check Passed"
-msgstr ""
-
-#: main.cpp:189
-msgid "Loading certificate cache..."
-msgstr ""
-
-#: main.cpp:196
-msgid "Certificate cache loaded."
-msgstr ""
-
-#: main.cpp:238
-msgctxt "@info"
-msgid ""
-"<para>The version of the <application>GpgME</application> library you are "
-"running against is older than the one that the <application>GpgME++</"
-"application> library was built against.</para><para><application>Kleopatra</"
-"application> will not function in this setting.</para><para>Please ask your "
-"administrator for help in resolving this issue.</para>"
-msgstr ""
-
-#: main.cpp:242
-msgctxt "@title"
-msgid "GpgME Too Old"
-msgstr ""
-
-#: main.cpp:335
-msgid "GPG UI Server Error"
-msgstr ""
-
-#: main.cpp:336
-#, kde-format
-msgid ""
-"<qt>The Kleopatra GPG UI Server Module could not be initialized.<br/>The "
-"error given was: <b>%1</b><br/>You can use Kleopatra as a certificate "
-"manager, but cryptographic plugins that rely on a GPG UI Server being "
-"present might not work correctly, or at all.</qt>"
-msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -5853,19 +5853,19 @@ msgstr "नवा कमइया आईडी जोड़व"
 msgid "This is how the new User-ID will be stored in the certificate:"
 msgstr ""
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:28
+#. i18n: file: dialogs/certificatedetailsdialog.ui:21
 #. i18n: ectx: attribute (title), widget (QWidget, overviewTab)
 #: rc.cpp:220
 msgid "Overview"
 msgstr "ओवरव्यू"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:50
+#. i18n: file: dialogs/certificatedetailsdialog.ui:43
 #. i18n: ectx: property (text), widget (QPushButton, changeTrustLevelPB)
 #: rc.cpp:229
 msgid "Trust Certifications Made by This Certificate..."
 msgstr ""
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:70
+#. i18n: file: dialogs/certificatedetailsdialog.ui:63
 #. i18n: ectx: property (text), widget (QPushButton, revokeCertificatePB)
 #: rc.cpp:235
 #, fuzzy
@@ -5873,13 +5873,13 @@ msgstr ""
 msgid "Revoke This Certificate..."
 msgstr "नवा प्रमानपत्र..."
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:118
+#. i18n: file: dialogs/certificatedetailsdialog.ui:111
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: rc.cpp:238
 msgid "Photo"
 msgstr "फोटू"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:128
+#. i18n: file: dialogs/certificatedetailsdialog.ui:121
 #. i18n: ectx: property (text), widget (QLabel, photoLB)
 #: rc.cpp:241
 msgid ""
@@ -5892,7 +5892,7 @@ msgid ""
 "</ul>"
 msgstr ""
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:153
+#. i18n: file: dialogs/certificatedetailsdialog.ui:138
 #. i18n: ectx: attribute (title), widget (QWidget, certificationsTab)
 #: rc.cpp:248
 #, fuzzy
@@ -5900,39 +5900,39 @@ msgstr ""
 msgid "User-IDs && Certifications"
 msgstr "प्रमानपत्र"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:173
+#. i18n: file: dialogs/certificatedetailsdialog.ui:158
 #. i18n: ectx: property (title), widget (QGroupBox, userIDsActionsGB)
 #: rc.cpp:251
 msgid "User-IDs"
 msgstr "कमइया आईडी"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:179
+#. i18n: file: dialogs/certificatedetailsdialog.ui:164
 #. i18n: ectx: property (text), widget (QPushButton, addUserIDPB)
 #: rc.cpp:254
 msgid "Add..."
 msgstr "जोड़व..."
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:189
+#. i18n: file: dialogs/certificatedetailsdialog.ui:174
 #. i18n: ectx: property (text), widget (QPushButton, revokeUserIDPB)
-#. i18n: file: dialogs/certificatedetailsdialog.ui:218
+#. i18n: file: dialogs/certificatedetailsdialog.ui:203
 #. i18n: ectx: property (text), widget (QPushButton, revokeCertificationPB)
 #: rc.cpp:257 rc.cpp:266
 msgid "Revoke..."
 msgstr ""
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:199
+#. i18n: file: dialogs/certificatedetailsdialog.ui:184
 #. i18n: ectx: property (text), widget (QPushButton, certifyUserIDPB)
 #: rc.cpp:260
 msgid "Certify..."
 msgstr "प्रमानित..."
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:212
+#. i18n: file: dialogs/certificatedetailsdialog.ui:197
 #. i18n: ectx: property (title), widget (QGroupBox, certificationsActionGB)
 #: rc.cpp:263
 msgid "Certifications"
 msgstr "प्रमानपत्र"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:287
+#. i18n: file: dialogs/certificatedetailsdialog.ui:264
 #. i18n: ectx: attribute (title), widget (QWidget, detailsTab)
 #. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:20
 #. i18n: ectx: attribute (title), widget (QWidget, technicalTab)
@@ -5940,25 +5940,25 @@ msgstr "प्रमानपत्र"
 msgid "Technical Details"
 msgstr "तकनीकी विवरन"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:328
+#. i18n: file: dialogs/certificatedetailsdialog.ui:297
 #. i18n: ectx: attribute (title), widget (QWidget, chainTab)
 #: rc.cpp:278
 msgid "Chain"
 msgstr "कड़ियाँ"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:341
+#. i18n: file: dialogs/certificatedetailsdialog.ui:310
 #. i18n: ectx: property (text), widget (QTreeWidget, chainTW)
 #: rc.cpp:281
 msgid "1"
 msgstr "1"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:358
+#. i18n: file: dialogs/certificatedetailsdialog.ui:319
 #. i18n: ectx: attribute (title), widget (QWidget, dumpTab)
 #: rc.cpp:284
 msgid "Dump"
 msgstr "डम्प करव"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:364
+#. i18n: file: dialogs/certificatedetailsdialog.ui:325
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:287
 msgid ""
@@ -5995,55 +5995,55 @@ msgstr ""
 msgid "Send certified certificate to server afterwards"
 msgstr ""
 
-#. i18n: file: dialogs/expirydialog.ui:13
-#. i18n: ectx: property (windowTitle), widget (QDialog, Kleo::Dialogs::ExpiryDialog)
+#. i18n: file: dialogs/expirydialog.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Kleo::Dialogs::ExpiryDialog)
 #: rc.cpp:309
 msgid "Change Certificate Date of Expiry"
 msgstr ""
 
-#. i18n: file: dialogs/expirydialog.ui:19
+#. i18n: file: dialogs/expirydialog.ui:20
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:312
 msgid "Please select when to expire this certificate:"
 msgstr ""
 
-#. i18n: file: dialogs/expirydialog.ui:26
+#. i18n: file: dialogs/expirydialog.ui:27
 #. i18n: ectx: property (text), widget (QRadioButton, neverRB)
 #: rc.cpp:315
 msgid "Never"
 msgstr "कभू नइ"
 
-#. i18n: file: dialogs/expirydialog.ui:38
+#. i18n: file: dialogs/expirydialog.ui:39
 #. i18n: ectx: property (text), widget (QRadioButton, inRB)
 #: rc.cpp:318
 msgid "In"
 msgstr "मं"
 
-#. i18n: file: dialogs/expirydialog.ui:62
+#. i18n: file: dialogs/expirydialog.ui:63
 #. i18n: ectx: property (text), item, widget (QComboBox, inCB)
 #: rc.cpp:321
 msgid "Days"
 msgstr "दिन"
 
-#. i18n: file: dialogs/expirydialog.ui:67
+#. i18n: file: dialogs/expirydialog.ui:68
 #. i18n: ectx: property (text), item, widget (QComboBox, inCB)
 #: rc.cpp:324
 msgid "Weeks"
 msgstr "हफ्ता"
 
-#. i18n: file: dialogs/expirydialog.ui:72
+#. i18n: file: dialogs/expirydialog.ui:73
 #. i18n: ectx: property (text), item, widget (QComboBox, inCB)
 #: rc.cpp:327
 msgid "Months"
 msgstr "महिना"
 
-#. i18n: file: dialogs/expirydialog.ui:77
+#. i18n: file: dialogs/expirydialog.ui:78
 #. i18n: ectx: property (text), item, widget (QComboBox, inCB)
 #: rc.cpp:330
 msgid "Years"
 msgstr "साल"
 
-#. i18n: file: dialogs/expirydialog.ui:100
+#. i18n: file: dialogs/expirydialog.ui:101
 #. i18n: ectx: property (text), widget (QRadioButton, onRB)
 #: rc.cpp:333
 msgid "On this day:"
@@ -6113,20 +6113,20 @@ msgstr "सब्बो मतचुनव"
 msgid "Find:"
 msgstr "खोजव:"
 
-#. i18n: file: dialogs/ownertrustdialog.ui:28
+#. i18n: file: dialogs/ownertrustdialog.ui:29
 #. i18n: ectx: property (text), widget (QRadioButton, unknownRB)
 #: rc.cpp:369
 #, fuzzy
 msgid "I do not know"
 msgstr "में नी जानंव"
 
-#. i18n: file: dialogs/ownertrustdialog.ui:41
+#. i18n: file: dialogs/ownertrustdialog.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: rc.cpp:372
 msgid "<i>(unknown trust)</i>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:74
+#. i18n: file: dialogs/ownertrustdialog.ui:75
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:375
 msgid ""
@@ -6135,19 +6135,19 @@ msgid ""
 "level are ignored when checking the validity of OpenPGP certificates.</font>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:88
+#. i18n: file: dialogs/ownertrustdialog.ui:89
 #. i18n: ectx: property (text), widget (QRadioButton, neverRB)
 #: rc.cpp:378
 msgid "I do NOT trust them"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:98
+#. i18n: file: dialogs/ownertrustdialog.ui:99
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: rc.cpp:381
 msgid "<i>(never trust)</i>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:131
+#. i18n: file: dialogs/ownertrustdialog.ui:132
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:384
 msgid ""
@@ -6158,19 +6158,19 @@ msgid ""
 "certificates.</font>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:145
+#. i18n: file: dialogs/ownertrustdialog.ui:146
 #. i18n: ectx: property (text), widget (QRadioButton, marginalRB)
 #: rc.cpp:387
 msgid "I believe checks are casual"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:155
+#. i18n: file: dialogs/ownertrustdialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #: rc.cpp:390
 msgid "<i>(marginal trust)</i>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:188
+#. i18n: file: dialogs/ownertrustdialog.ui:189
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:393
 msgid ""
@@ -6180,19 +6180,19 @@ msgid ""
 "This is usually a good choice.</font>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:202
+#. i18n: file: dialogs/ownertrustdialog.ui:203
 #. i18n: ectx: property (text), widget (QRadioButton, fullRB)
 #: rc.cpp:396
 msgid "I believe checks are very accurate"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:212
+#. i18n: file: dialogs/ownertrustdialog.ui:213
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #: rc.cpp:399
 msgid "<i>(full trust)</i>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:245
+#. i18n: file: dialogs/ownertrustdialog.ui:246
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:402
 msgid ""
@@ -6202,19 +6202,19 @@ msgid ""
 "font>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:262
+#. i18n: file: dialogs/ownertrustdialog.ui:263
 #. i18n: ectx: property (text), widget (QRadioButton, ultimateRB)
 #: rc.cpp:405
 msgid "This is my certificate"
 msgstr "ए मोर प्रमानपत्र हे"
 
-#. i18n: file: dialogs/ownertrustdialog.ui:272
+#. i18n: file: dialogs/ownertrustdialog.ui:273
 #. i18n: ectx: property (text), widget (QLabel, label_11)
 #: rc.cpp:408
 msgid "<i>(ultimate trust)</i>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:305
+#. i18n: file: dialogs/ownertrustdialog.ui:306
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:411
 msgid ""
@@ -6849,12 +6849,6 @@ msgstr "सीए प्रमानपत्र मिटात हे"
 msgid "Create Encryption Certificate With Same Parameters"
 msgstr ""
 
-#: qml/kleopatra-mobile.qml:73
-#, fuzzy
-#| msgid "No certificate selected"
-msgid "No certificates loaded yet."
-msgstr "कोई प्रमानपत्र चुने नइ गे हे."
-
 #: qml/KleopatraActions.qml:48
 msgid "File"
 msgstr "फाइल"
@@ -6868,6 +6862,12 @@ msgstr "दृस्य"
 #| msgid "&Settings"
 msgid "Settings"
 msgstr "सेटिंग (&S)"
+
+#: qml/kleopatra-mobile.qml:73
+#, fuzzy
+#| msgid "No certificate selected"
+msgid "No certificates loaded yet."
+msgstr "कोई प्रमानपत्र चुने नइ गे हे."
 
 #, fuzzy
 #~| msgid "&Tools"
