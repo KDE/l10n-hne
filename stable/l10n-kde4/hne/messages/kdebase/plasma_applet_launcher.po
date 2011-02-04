@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_launcher\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 12:18+0100\n"
+"POT-Creation-Date: 2011-02-04 10:22+0100\n"
 "PO-Revision-Date: 2009-01-27 17:41+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -56,6 +56,63 @@ msgstr "सब्बो अनुपरयोग"
 #: simpleapplet/simpleapplet.cpp:193 ui/launcher.cpp:116 ui/launcher.cpp:175
 msgid "Favorites"
 msgstr "निसानी"
+
+#: core/models.cpp:121
+msgid "Home Folder"
+msgstr "होम फोल्डर"
+
+#: core/models.cpp:124
+msgid "Network Folders"
+msgstr "नेटवर्क फोल्डर्स"
+
+#: core/recentlyusedmodel.cpp:109
+msgid "Documents"
+msgstr "कागद"
+
+#: core/recentlyusedmodel.cpp:120 core/systemmodel.cpp:84
+#: simpleapplet/simpleapplet.cpp:195 ui/launcher.cpp:118 ui/launcher.cpp:205
+msgid "Applications"
+msgstr "अनुपरयोग"
+
+#: core/recentlyusedmodel.cpp:186 simpleapplet/simpleapplet.cpp:197
+#: ui/launcher.cpp:119 ui/launcher.cpp:218
+msgid "Recently Used"
+msgstr "हाल ही मं उपयोग करे"
+
+#: core/recentlyusedmodel.cpp:188 simpleapplet/simpleapplet.cpp:199
+#, fuzzy
+msgid "Recently Used Documents"
+msgstr "हाल ही मं उपयोग करे"
+
+#: core/recentlyusedmodel.cpp:190 simpleapplet/simpleapplet.cpp:198
+#, fuzzy
+msgid "Recently Used Applications"
+msgstr "हाल ही के अनुपरयोग साफ करव"
+
+#: core/systemmodel.cpp:85
+msgid "Places"
+msgstr "जगह"
+
+#: core/systemmodel.cpp:86
+msgid "Removable Storage"
+msgstr "हटाय जा सके वाले भंडार"
+
+#: core/systemmodel.cpp:87
+msgid "Storage"
+msgstr "भंडारन"
+
+#: core/systemmodel.cpp:215 simpleapplet/simpleapplet.cpp:201
+msgid "Run Command..."
+msgstr ""
+
+#: core/systemmodel.cpp:219
+msgid "Run a command or a search query"
+msgstr ""
+
+#: core/systemmodel.cpp:327 simpleapplet/simpleapplet.cpp:196
+#: ui/launcher.cpp:118 ui/launcher.cpp:239
+msgid "Computer"
+msgstr "कम्प्यूटर"
 
 #: core/leavemodel.cpp:48 simpleapplet/simpleapplet.cpp:210
 #, fuzzy
@@ -154,63 +211,6 @@ msgstr "सत्र"
 #: core/leavemodel.cpp:139
 msgid "System"
 msgstr "तंत्र"
-
-#: core/models.cpp:121
-msgid "Home Folder"
-msgstr "होम फोल्डर"
-
-#: core/models.cpp:124
-msgid "Network Folders"
-msgstr "नेटवर्क फोल्डर्स"
-
-#: core/recentlyusedmodel.cpp:109
-msgid "Documents"
-msgstr "कागद"
-
-#: core/recentlyusedmodel.cpp:120 core/systemmodel.cpp:84
-#: simpleapplet/simpleapplet.cpp:195 ui/launcher.cpp:118 ui/launcher.cpp:205
-msgid "Applications"
-msgstr "अनुपरयोग"
-
-#: core/recentlyusedmodel.cpp:186 simpleapplet/simpleapplet.cpp:197
-#: ui/launcher.cpp:119 ui/launcher.cpp:218
-msgid "Recently Used"
-msgstr "हाल ही मं उपयोग करे"
-
-#: core/recentlyusedmodel.cpp:188 simpleapplet/simpleapplet.cpp:199
-#, fuzzy
-msgid "Recently Used Documents"
-msgstr "हाल ही मं उपयोग करे"
-
-#: core/recentlyusedmodel.cpp:190 simpleapplet/simpleapplet.cpp:198
-#, fuzzy
-msgid "Recently Used Applications"
-msgstr "हाल ही के अनुपरयोग साफ करव"
-
-#: core/systemmodel.cpp:85
-msgid "Places"
-msgstr "जगह"
-
-#: core/systemmodel.cpp:86
-msgid "Removable Storage"
-msgstr "हटाय जा सके वाले भंडार"
-
-#: core/systemmodel.cpp:87
-msgid "Storage"
-msgstr "भंडारन"
-
-#: core/systemmodel.cpp:215 simpleapplet/simpleapplet.cpp:201
-msgid "Run Command..."
-msgstr ""
-
-#: core/systemmodel.cpp:219
-msgid "Run a command or a search query"
-msgstr ""
-
-#: core/systemmodel.cpp:327 simpleapplet/simpleapplet.cpp:196
-#: ui/launcher.cpp:118 ui/launcher.cpp:239
-msgid "Computer"
-msgstr "कम्प्यूटर"
 
 #: main.cpp:32
 msgid "Kickoff"
@@ -332,6 +332,13 @@ msgstr "बाहिर करव"
 msgid "Safely Remove"
 msgstr ""
 
+#: ui/searchbar.cpp:70
+#, fuzzy
+#| msgid "Search:"
+msgctxt "Label of the search bar textedit"
+msgid "Search:"
+msgstr "खोजव:"
+
 #: ui/launcher.cpp:178
 msgid "Sort Alphabetically (A to Z)"
 msgstr "वर्नमाला से छांटव (अ से ज्ञ)"
@@ -359,13 +366,6 @@ msgstr "कमइया <b>%1</b> इहां <b>%2</b>"
 msgctxt "full name, login name, hostname"
 msgid "<b>%1 (%2)</b> on <b>%3</b>"
 msgstr "<b>%1 (%2)</b> इहां <b>%3</b>"
-
-#: ui/searchbar.cpp:70
-#, fuzzy
-#| msgid "Search:"
-msgctxt "Label of the search bar textedit"
-msgid "Search:"
-msgstr "खोजव:"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
