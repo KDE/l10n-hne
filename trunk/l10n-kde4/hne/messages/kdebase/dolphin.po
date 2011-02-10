@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-08 02:35+0100\n"
+"POT-Creation-Date: 2011-02-10 02:47+0100\n"
 "PO-Revision-Date: 2009-02-14 14:05+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -85,7 +85,7 @@ msgctxt "@action:inmenu"
 msgid "Delete"
 msgstr "मेटाव"
 
-#: panels/folders/treeviewcontextmenu.cpp:111 dolphincontextmenu.cpp:365
+#: panels/folders/treeviewcontextmenu.cpp:111 dolphincontextmenu.cpp:367
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "गुन"
@@ -774,7 +774,7 @@ msgctxt "@option:check"
 msgid "Use these view properties as default"
 msgstr "सब्बो फोल्डर मन बर सामान्य दृस्य गुन के उपयोग करव"
 
-#: settings/viewpropertiesdialog.cpp:338
+#: settings/viewpropertiesdialog.cpp:337
 #, fuzzy
 #| msgctxt "@info"
 #| msgid ""
@@ -786,7 +786,7 @@ msgid ""
 "continue?"
 msgstr "सब्बो उप फोल्डर मन के दृस्य गुन बदल जाही. का आप मन जारी रखना चाहथो ?"
 
-#: settings/viewpropertiesdialog.cpp:373
+#: settings/viewpropertiesdialog.cpp:370
 msgctxt "@info"
 msgid ""
 "The view properties of all folders will be changed. Do you want to continue?"
@@ -850,6 +850,67 @@ msgctxt "@info:status Free disk space"
 msgid "%1 free"
 msgstr "%1 खाली"
 
+#: views/dolphinview.cpp:500
+#, kde-format
+msgctxt "@info:status"
+msgid "<filename>%1</filename> selected"
+msgstr "<filename>%1</filename> चुने गे"
+
+#: views/dolphinview.cpp:501
+#, kde-format
+msgctxt "@info:status"
+msgid "<filename>%1</filename> selected (%2)"
+msgstr "<filename>%1</filename> चुने गे (%2)"
+
+#: views/dolphinview.cpp:505
+#, kde-format
+msgctxt "@info:status"
+msgid "1 Folder selected"
+msgid_plural "%1 Folders selected"
+msgstr[0] "१ फोल्डर चुने गे हे"
+msgstr[1] "%1 फोल्डर चुने गे हे"
+
+#: views/dolphinview.cpp:506
+#, kde-format
+msgctxt "@info:status"
+msgid "1 File selected"
+msgid_plural "%1 Files selected"
+msgstr[0] "१ फाइल चुने गे हे"
+msgstr[1] "%1 फाइल चुने गे हे"
+
+#: views/dolphinview.cpp:508
+#, kde-format
+msgctxt "@info:status folders, files (size)"
+msgid "%1, %2 (%3)"
+msgstr "%1, %2 (%3)"
+
+#: views/dolphinview.cpp:511
+#, kde-format
+msgctxt "@info:status files (size)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: views/dolphinview.cpp:1039
+msgctxt "@info:status"
+msgid "Delete operation completed."
+msgstr "मेटाय के काम पूरा होइस"
+
+#: views/dolphinview.cpp:1141
+msgctxt "@info:status"
+msgid "The location is empty."
+msgstr "जगह खाली हे"
+
+#: views/dolphinview.cpp:1143
+#, kde-format
+msgctxt "@info:status"
+msgid "The location '%1' is invalid."
+msgstr "जगह '%1' अवैध हे."
+
+#: views/draganddrophelper.cpp:108
+msgctxt "@info:status"
+msgid "A folder cannot be dropped into itself"
+msgstr "एक फोल्डर ल अपने आप मं नइ छोड़े जा सके"
+
 #: views/renamedialog.cpp:54
 msgctxt "@title:window"
 msgid "Rename Item"
@@ -890,17 +951,173 @@ msgctxt "@info"
 msgid "(# will be replaced by ascending numbers)"
 msgstr "(# आरोहित संख्या मन से बदले जाही)"
 
-#: views/selectiontoggle.cpp:132
-msgctxt "@info:tooltip"
-msgid "Deselect Item"
-msgstr "चीज से चयन हटाव"
+#: views/dolphindetailsview.cpp:144
+msgctxt "@option:check"
+msgid "Expandable Folders"
+msgstr "फैलाए जा सके जा सके फोल्डर"
 
-#: views/selectiontoggle.cpp:133
-msgctxt "@info:tooltip"
-msgid "Select Item"
-msgstr "एक चीज चुनव."
+#: views/dolphindetailsview.cpp:372
+msgctxt "@title:menu"
+msgid "Columns"
+msgstr "खंभा"
 
-#: views/versioncontrol/versioncontrolobserver.cpp:189
+#: views/dolphincolumnview.cpp:88
+msgctxt "@info:tooltip"
+msgid "Resize column"
+msgstr ""
+
+#: views/dolphindirlister.cpp:41
+#, fuzzy
+#| msgctxt "@info:status"
+#| msgid "Unknown size"
+msgctxt "@info:status"
+msgid "Unknown error."
+msgstr "अग्यात आकार"
+
+#: views/dolphinviewactionhandler.cpp:87
+msgctxt "@action"
+msgid "Create Folder..."
+msgstr "फोल्डर बनाव..."
+
+#: views/dolphinviewactionhandler.cpp:95
+msgctxt "@action:inmenu File"
+msgid "Rename..."
+msgstr "नाम बदलव..."
+
+#: views/dolphinviewactionhandler.cpp:101
+msgctxt "@action:inmenu File"
+msgid "Move to Trash"
+msgstr "घुरुवा मं ले जाव"
+
+#: views/dolphinviewactionhandler.cpp:109
+msgctxt "@action:inmenu File"
+msgid "Delete"
+msgstr "मेटाव"
+
+#: views/dolphinviewactionhandler.cpp:119
+#, fuzzy
+#| msgctxt "@action:inmenu File"
+#| msgid "Delete (using shortcut for Trash)"
+msgctxt "@action \"Move to Trash\" for non-local files, etc."
+msgid "Delete (using shortcut for Trash)"
+msgstr "मेटाव (घुरुवा बर बनाए सार्टकट के उपयोग से)"
+
+#: views/dolphinviewactionhandler.cpp:126
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "गुन"
+
+#: views/dolphinviewactionhandler.cpp:137
+#, fuzzy
+#| msgctxt "@title:menu"
+#| msgid "View Mode"
+msgctxt "@action:intoolbar"
+msgid "View Mode"
+msgstr "दृस्य मोड"
+
+#: views/dolphinviewactionhandler.cpp:153
+msgctxt "@action:intoolbar"
+msgid "Preview"
+msgstr "प्रिव्यू"
+
+#: views/dolphinviewactionhandler.cpp:154
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Show preview"
+msgctxt "@info"
+msgid "Show preview of files and folders"
+msgstr "प्रिव्यू देखाव"
+
+#: views/dolphinviewactionhandler.cpp:159
+msgctxt "@action:inmenu Sort"
+msgid "Descending"
+msgstr "घटते क्रम में"
+
+#: views/dolphinviewactionhandler.cpp:163
+#, fuzzy
+#| msgctxt "@title:group Size"
+#| msgid "Folders"
+msgctxt "@action:inmenu Sort"
+msgid "Folders First"
+msgstr "फोल्डर"
+
+#: views/dolphinviewactionhandler.cpp:171
+#, fuzzy
+#| msgctxt "@title:menu"
+#| msgid "Sort By"
+msgctxt "@action:inmenu View"
+msgid "Sort By"
+msgstr "ये आधार मं छांटव"
+
+#: views/dolphinviewactionhandler.cpp:186
+#: views/dolphinviewactionhandler.cpp:212
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Additional Information"
+msgctxt "@action:inmenu View"
+msgid "Additional Information"
+msgstr "अतिरिक्त जानकारी"
+
+#: views/dolphinviewactionhandler.cpp:193
+msgctxt "@action:inmenu View"
+msgid "Show in Groups"
+msgstr "समूह मन मं देखाव"
+
+#: views/dolphinviewactionhandler.cpp:197
+msgctxt "@action:inmenu View"
+msgid "Show Hidden Files"
+msgstr "लुकाए फाइल मन ल देखाव"
+
+#: views/dolphinviewactionhandler.cpp:202
+msgctxt "@action:inmenu View"
+msgid "Adjust View Properties..."
+msgstr "दृस्य गुन मन ल एडजस्ट करव..."
+
+#: views/dolphinviewactionhandler.cpp:237
+msgctxt "@action:inmenu Sort By"
+msgid "Name"
+msgstr "नाम"
+
+#: views/dolphinviewactionhandler.cpp:440
+msgctxt "@action:inmenu View Mode"
+msgid "Icons"
+msgstr "चिनहा"
+
+#: views/dolphinviewactionhandler.cpp:441
+#, fuzzy
+#| msgctxt "@option:check Startup Settings"
+#| msgid "Split view mode"
+msgctxt "@info"
+msgid "Icons view mode"
+msgstr "विभाजित दृस्य मोड"
+
+#: views/dolphinviewactionhandler.cpp:451
+msgctxt "@action:inmenu View Mode"
+msgid "Details"
+msgstr "विवरन"
+
+#: views/dolphinviewactionhandler.cpp:452
+#, fuzzy
+#| msgctxt "@option:check Startup Settings"
+#| msgid "Split view mode"
+msgctxt "@info"
+msgid "Details view mode"
+msgstr "विभाजित दृस्य मोड"
+
+#: views/dolphinviewactionhandler.cpp:462
+msgctxt "@action:inmenu View Mode"
+msgid "Columns"
+msgstr "खंभा"
+
+#: views/dolphinviewactionhandler.cpp:463
+#, fuzzy
+#| msgctxt "@option:check Startup Settings"
+#| msgid "Split view mode"
+msgctxt "@info"
+msgid "Columns view mode"
+msgstr "विभाजित दृस्य मोड"
+
+#: views/versioncontrol/versioncontrolobserver.cpp:190
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "Additional information"
@@ -908,13 +1125,27 @@ msgctxt "@info:status"
 msgid "Update of version information failed."
 msgstr "अतिरिक्त जानकारी"
 
-#: views/versioncontrol/versioncontrolobserver.cpp:242
+#: views/versioncontrol/versioncontrolobserver.cpp:243
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "Additional information"
 msgctxt "@info:status"
 msgid "Updating version information..."
 msgstr "अतिरिक्त जानकारी"
+
+#: views/dolphinremoteencoding.cpp:53
+msgid "Select Remote Charset"
+msgstr ""
+
+#: views/dolphinremoteencoding.cpp:117
+#, fuzzy
+msgid "Reload"
+msgstr "री-लोड"
+
+#: views/dolphinremoteencoding.cpp:118
+#, fuzzy
+msgid "Default"
+msgstr "डिफाल्ट"
 
 #: views/additionalinfoaccessor.cpp:105
 #, fuzzy
@@ -979,29 +1210,6 @@ msgstr "कागद"
 msgctxt "@label"
 msgid "Path"
 msgstr "चिपकाव"
-
-#: views/dolphincolumnview.cpp:88
-msgctxt "@info:tooltip"
-msgid "Resize column"
-msgstr ""
-
-#: views/dolphindetailsview.cpp:144
-msgctxt "@option:check"
-msgid "Expandable Folders"
-msgstr "फैलाए जा सके जा सके फोल्डर"
-
-#: views/dolphindetailsview.cpp:372
-msgctxt "@title:menu"
-msgid "Columns"
-msgstr "खंभा"
-
-#: views/dolphindirlister.cpp:41
-#, fuzzy
-#| msgctxt "@info:status"
-#| msgid "Unknown size"
-msgctxt "@info:status"
-msgid "Unknown error."
-msgstr "अग्यात आकार"
 
 #: views/dolphinmodel.cpp:43
 msgctxt "@title:group Name"
@@ -1159,223 +1367,92 @@ msgctxt "@title:group Files and folders by permissions"
 msgid "(User: %1) (Group: %2) (Others: %3)"
 msgstr "(कमइया: %1) (समूह: %2) (अन्य: %3)"
 
-#: views/dolphinremoteencoding.cpp:53
-msgid "Select Remote Charset"
-msgstr ""
+#: views/selectiontoggle.cpp:132
+msgctxt "@info:tooltip"
+msgid "Deselect Item"
+msgstr "चीज से चयन हटाव"
 
-#: views/dolphinremoteencoding.cpp:117
+#: views/selectiontoggle.cpp:133
+msgctxt "@info:tooltip"
+msgid "Select Item"
+msgstr "एक चीज चुनव."
+
+#: dolphincontextmenu.cpp:169
+msgctxt "@action:inmenu"
+msgid "Empty Trash"
+msgstr "घुरुवा खाली करव"
+
+#: dolphincontextmenu.cpp:175 dolphincontextmenu.cpp:346
+msgctxt "@action:inmenu Add current folder to places"
+msgid "Add to Places"
+msgstr "जगह मं जोड़व"
+
+#: dolphincontextmenu.cpp:191
+msgctxt "@info"
+msgid "Do you really want to empty the Trash? All items will be deleted."
+msgstr "का आप मन सचमुच कचरा पेटी ल खाली करना चाहथो ? सब्बो चीज मन मिट जाही."
+
+#: dolphincontextmenu.cpp:195
+msgctxt "@action:button"
+msgid "Empty Trash"
+msgstr "घुरुवा खाली करव"
+
+#: dolphincontextmenu.cpp:204
+msgctxt "@label"
+msgid "Trash"
+msgstr "घुरुवा"
+
+#: dolphincontextmenu.cpp:214
+msgctxt "@action:inmenu"
+msgid "Restore"
+msgstr "जुन्ना स्तिथी मं लाव"
+
+#: dolphincontextmenu.cpp:253 dolphinmainwindow.cpp:1417
+msgctxt "@title:menu Create new folder, file, link, etc."
+msgid "Create New"
+msgstr "नवा बनाव"
+
+#: dolphincontextmenu.cpp:266
+msgctxt "@action:inmenu Add selected folder to places"
+msgid "Add to Places"
+msgstr "जगह मं जोड़व"
+
+#: dolphincontextmenu.cpp:273
 #, fuzzy
-msgid "Reload"
-msgstr "री-लोड"
+#| msgctxt "@action:inmenu"
+#| msgid "Open in New Window"
+msgctxt "@action:inmenu"
+msgid "Open Path in New Window"
+msgstr "नवा विंडो म खोलव"
 
-#: views/dolphinremoteencoding.cpp:118
+#: dolphincontextmenu.cpp:279
 #, fuzzy
-msgid "Default"
-msgstr "डिफाल्ट"
+#| msgctxt "@action:inmenu"
+#| msgid "Open in New Tab"
+msgctxt "@action:inmenu"
+msgid "Open Path in New Tab"
+msgstr "नवा टैब मं खोलव"
 
-#: views/dolphinview.cpp:500
-#, kde-format
-msgctxt "@info:status"
-msgid "<filename>%1</filename> selected"
-msgstr "<filename>%1</filename> चुने गे"
+#: dolphincontextmenu.cpp:450
+msgctxt "@action:inmenu"
+msgid "Paste Into Folder"
+msgstr "फोल्डर मं चिपकाव"
 
-#: views/dolphinview.cpp:501
-#, kde-format
-msgctxt "@info:status"
-msgid "<filename>%1</filename> selected (%2)"
-msgstr "<filename>%1</filename> चुने गे (%2)"
-
-#: views/dolphinview.cpp:505
-#, kde-format
-msgctxt "@info:status"
-msgid "1 Folder selected"
-msgid_plural "%1 Folders selected"
-msgstr[0] "१ फोल्डर चुने गे हे"
-msgstr[1] "%1 फोल्डर चुने गे हे"
-
-#: views/dolphinview.cpp:506
-#, kde-format
-msgctxt "@info:status"
-msgid "1 File selected"
-msgid_plural "%1 Files selected"
-msgstr[0] "१ फाइल चुने गे हे"
-msgstr[1] "%1 फाइल चुने गे हे"
-
-#: views/dolphinview.cpp:508
-#, kde-format
-msgctxt "@info:status folders, files (size)"
-msgid "%1, %2 (%3)"
-msgstr "%1, %2 (%3)"
-
-#: views/dolphinview.cpp:511
-#, kde-format
-msgctxt "@info:status files (size)"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: views/dolphinview.cpp:1039
-msgctxt "@info:status"
-msgid "Delete operation completed."
-msgstr "मेटाय के काम पूरा होइस"
-
-#: views/dolphinview.cpp:1141
-msgctxt "@info:status"
-msgid "The location is empty."
-msgstr "जगह खाली हे"
-
-#: views/dolphinview.cpp:1143
-#, kde-format
-msgctxt "@info:status"
-msgid "The location '%1' is invalid."
-msgstr "जगह '%1' अवैध हे."
-
-#: views/dolphinviewactionhandler.cpp:87
-msgctxt "@action"
-msgid "Create Folder..."
-msgstr "फोल्डर बनाव..."
-
-#: views/dolphinviewactionhandler.cpp:95
-msgctxt "@action:inmenu File"
-msgid "Rename..."
-msgstr "नाम बदलव..."
-
-#: views/dolphinviewactionhandler.cpp:101
-msgctxt "@action:inmenu File"
-msgid "Move to Trash"
-msgstr "घुरुवा मं ले जाव"
-
-#: views/dolphinviewactionhandler.cpp:109
-msgctxt "@action:inmenu File"
-msgid "Delete"
-msgstr "मेटाव"
-
-#: views/dolphinviewactionhandler.cpp:119
+#: dolphincontextmenu.cpp:562
 #, fuzzy
 #| msgctxt "@action:inmenu File"
-#| msgid "Delete (using shortcut for Trash)"
-msgctxt "@action \"Move to Trash\" for non-local files, etc."
-msgid "Delete (using shortcut for Trash)"
-msgstr "मेटाव (घुरुवा बर बनाए सार्टकट के उपयोग से)"
+#| msgid "Move to Trash"
+msgctxt "@action:inmenu"
+msgid "&Move to Trash"
+msgstr "घुरुवा मं ले जाव"
 
-#: views/dolphinviewactionhandler.cpp:126
-msgctxt "@action:inmenu File"
-msgid "Properties"
-msgstr "गुन"
-
-#: views/dolphinviewactionhandler.cpp:137
+#: dolphincontextmenu.cpp:565
 #, fuzzy
-#| msgctxt "@title:menu"
-#| msgid "View Mode"
-msgctxt "@action:intoolbar"
-msgid "View Mode"
-msgstr "दृस्य मोड"
-
-#: views/dolphinviewactionhandler.cpp:153
-msgctxt "@action:intoolbar"
-msgid "Preview"
-msgstr "प्रिव्यू"
-
-#: views/dolphinviewactionhandler.cpp:154
-#, fuzzy
-#| msgctxt "@label"
-#| msgid "Show preview"
-msgctxt "@info"
-msgid "Show preview of files and folders"
-msgstr "प्रिव्यू देखाव"
-
-#: views/dolphinviewactionhandler.cpp:159
-msgctxt "@action:inmenu Sort"
-msgid "Descending"
-msgstr "घटते क्रम में"
-
-#: views/dolphinviewactionhandler.cpp:163
-#, fuzzy
-#| msgctxt "@title:group Size"
-#| msgid "Folders"
-msgctxt "@action:inmenu Sort"
-msgid "Folders First"
-msgstr "फोल्डर"
-
-#: views/dolphinviewactionhandler.cpp:171
-#, fuzzy
-#| msgctxt "@title:menu"
-#| msgid "Sort By"
-msgctxt "@action:inmenu View"
-msgid "Sort By"
-msgstr "ये आधार मं छांटव"
-
-#: views/dolphinviewactionhandler.cpp:186
-#: views/dolphinviewactionhandler.cpp:212
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Additional Information"
-msgctxt "@action:inmenu View"
-msgid "Additional Information"
-msgstr "अतिरिक्त जानकारी"
-
-#: views/dolphinviewactionhandler.cpp:193
-msgctxt "@action:inmenu View"
-msgid "Show in Groups"
-msgstr "समूह मन मं देखाव"
-
-#: views/dolphinviewactionhandler.cpp:197
-msgctxt "@action:inmenu View"
-msgid "Show Hidden Files"
-msgstr "लुकाए फाइल मन ल देखाव"
-
-#: views/dolphinviewactionhandler.cpp:202
-msgctxt "@action:inmenu View"
-msgid "Adjust View Properties..."
-msgstr "दृस्य गुन मन ल एडजस्ट करव..."
-
-#: views/dolphinviewactionhandler.cpp:237
-msgctxt "@action:inmenu Sort By"
-msgid "Name"
-msgstr "नाम"
-
-#: views/dolphinviewactionhandler.cpp:440
-msgctxt "@action:inmenu View Mode"
-msgid "Icons"
-msgstr "चिनहा"
-
-#: views/dolphinviewactionhandler.cpp:441
-#, fuzzy
-#| msgctxt "@option:check Startup Settings"
-#| msgid "Split view mode"
-msgctxt "@info"
-msgid "Icons view mode"
-msgstr "विभाजित दृस्य मोड"
-
-#: views/dolphinviewactionhandler.cpp:451
-msgctxt "@action:inmenu View Mode"
-msgid "Details"
-msgstr "विवरन"
-
-#: views/dolphinviewactionhandler.cpp:452
-#, fuzzy
-#| msgctxt "@option:check Startup Settings"
-#| msgid "Split view mode"
-msgctxt "@info"
-msgid "Details view mode"
-msgstr "विभाजित दृस्य मोड"
-
-#: views/dolphinviewactionhandler.cpp:462
-msgctxt "@action:inmenu View Mode"
-msgid "Columns"
-msgstr "खंभा"
-
-#: views/dolphinviewactionhandler.cpp:463
-#, fuzzy
-#| msgctxt "@option:check Startup Settings"
-#| msgid "Split view mode"
-msgctxt "@info"
-msgid "Columns view mode"
-msgstr "विभाजित दृस्य मोड"
-
-#: views/draganddrophelper.cpp:108
-msgctxt "@info:status"
-msgid "A folder cannot be dropped into itself"
-msgstr "एक फोल्डर ल अपने आप मं नइ छोड़े जा सके"
+#| msgctxt "@action:inmenu"
+#| msgid "Delete"
+msgctxt "@action:inmenu"
+msgid "&Delete"
+msgstr "मेटाव"
 
 #: dolphinmainwindow.cpp:227
 msgctxt "@info:status"
@@ -1456,11 +1533,6 @@ msgstr "अऊ दूसर टैब बन्द करव"
 msgctxt "@action:inmenu"
 msgid "Close Tab"
 msgstr "टैब बंद करव"
-
-#: dolphinmainwindow.cpp:1417 dolphincontextmenu.cpp:251
-msgctxt "@title:menu Create new folder, file, link, etc."
-msgid "Create New"
-msgstr "नवा बनाव"
 
 #: dolphinmainwindow.cpp:1424
 msgctxt "@action:inmenu File"
@@ -1729,6 +1801,36 @@ msgstr ""
 msgid "Unselect all items matching this pattern:"
 msgstr ""
 
+#: dolphinviewcontainer.cpp:313
+msgctxt "@info:progress"
+msgid "Loading folder..."
+msgstr "फोल्डर लोड होवत हे..."
+
+#: dolphinviewcontainer.cpp:324
+msgctxt "@info"
+msgid "Searching..."
+msgstr ""
+
+#: dolphinviewcontainer.cpp:344
+msgctxt "@info:status"
+msgid "No items found."
+msgstr ""
+
+#: dolphinviewcontainer.cpp:423
+msgctxt "@info:status"
+msgid "Dolphin does not support web pages, the web browser has been launched"
+msgstr "डाल्फिन जाल पेज ल सपोर्ट नइ करे, वेब ब्राउजर चालू कर दे गे हे"
+
+#: dolphinviewcontainer.cpp:435
+msgctxt "@info:status"
+msgid "Protocol not supported by Dolphin, Konqueror has been launched"
+msgstr "डाल्फिन प्रोटोकाल ल सपोर्ट नइ करे, कान्करर ल चालू कर दिस"
+
+#: dolphinviewcontainer.cpp:442
+msgctxt "@info:status"
+msgid "Invalid protocol"
+msgstr "अवैध प्रोटोकाल"
+
 #: main.cpp:35
 msgctxt "@title"
 msgid "Dolphin"
@@ -1812,108 +1914,6 @@ msgstr ""
 msgctxt "@info:shell"
 msgid "Document to open"
 msgstr "कागद जऊन ल खोलना हे"
-
-#: dolphinviewcontainer.cpp:313
-msgctxt "@info:progress"
-msgid "Loading folder..."
-msgstr "फोल्डर लोड होवत हे..."
-
-#: dolphinviewcontainer.cpp:324
-msgctxt "@info"
-msgid "Searching..."
-msgstr ""
-
-#: dolphinviewcontainer.cpp:344
-msgctxt "@info:status"
-msgid "No items found."
-msgstr ""
-
-#: dolphinviewcontainer.cpp:423
-msgctxt "@info:status"
-msgid "Dolphin does not support web pages, the web browser has been launched"
-msgstr "डाल्फिन जाल पेज ल सपोर्ट नइ करे, वेब ब्राउजर चालू कर दे गे हे"
-
-#: dolphinviewcontainer.cpp:435
-msgctxt "@info:status"
-msgid "Protocol not supported by Dolphin, Konqueror has been launched"
-msgstr "डाल्फिन प्रोटोकाल ल सपोर्ट नइ करे, कान्करर ल चालू कर दिस"
-
-#: dolphinviewcontainer.cpp:442
-msgctxt "@info:status"
-msgid "Invalid protocol"
-msgstr "अवैध प्रोटोकाल"
-
-#: dolphincontextmenu.cpp:169
-msgctxt "@action:inmenu"
-msgid "Empty Trash"
-msgstr "घुरुवा खाली करव"
-
-#: dolphincontextmenu.cpp:175 dolphincontextmenu.cpp:344
-msgctxt "@action:inmenu Add current folder to places"
-msgid "Add to Places"
-msgstr "जगह मं जोड़व"
-
-#: dolphincontextmenu.cpp:191
-msgctxt "@info"
-msgid "Do you really want to empty the Trash? All items will be deleted."
-msgstr "का आप मन सचमुच कचरा पेटी ल खाली करना चाहथो ? सब्बो चीज मन मिट जाही."
-
-#: dolphincontextmenu.cpp:195
-msgctxt "@action:button"
-msgid "Empty Trash"
-msgstr "घुरुवा खाली करव"
-
-#: dolphincontextmenu.cpp:204
-msgctxt "@label"
-msgid "Trash"
-msgstr "घुरुवा"
-
-#: dolphincontextmenu.cpp:214
-msgctxt "@action:inmenu"
-msgid "Restore"
-msgstr "जुन्ना स्तिथी मं लाव"
-
-#: dolphincontextmenu.cpp:264
-msgctxt "@action:inmenu Add selected folder to places"
-msgid "Add to Places"
-msgstr "जगह मं जोड़व"
-
-#: dolphincontextmenu.cpp:271
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Open in New Window"
-msgctxt "@action:inmenu"
-msgid "Open Path in New Window"
-msgstr "नवा विंडो म खोलव"
-
-#: dolphincontextmenu.cpp:277
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Open in New Tab"
-msgctxt "@action:inmenu"
-msgid "Open Path in New Tab"
-msgstr "नवा टैब मं खोलव"
-
-#: dolphincontextmenu.cpp:448
-msgctxt "@action:inmenu"
-msgid "Paste Into Folder"
-msgstr "फोल्डर मं चिपकाव"
-
-#: dolphincontextmenu.cpp:560
-#, fuzzy
-#| msgctxt "@action:inmenu File"
-#| msgid "Move to Trash"
-msgctxt "@action:inmenu"
-msgid "&Move to Trash"
-msgstr "घुरुवा मं ले जाव"
-
-#: dolphincontextmenu.cpp:563
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Delete"
-msgctxt "@action:inmenu"
-msgid "&Delete"
-msgstr "मेटाव"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
