@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-15 03:32+0100\n"
+"POT-Creation-Date: 2011-02-20 03:34+0100\n"
 "PO-Revision-Date: 2009-02-10 20:44+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -6185,7 +6185,7 @@ msgid "Reset Toolbars"
 msgstr "औजार-पट्टी रीसेट करव"
 
 #: kdeui/dialogs/kedittoolbar.cpp:602 khtml/khtmlview.cpp:2811
-#: khtml/khtmlview.cpp:2844 khtml/html/html_formimpl.cpp:1836
+#: khtml/khtmlview.cpp:2844 khtml/html/html_formimpl.cpp:1839
 msgid "Reset"
 msgstr "रीसेट"
 
@@ -10332,7 +10332,7 @@ msgid "Access Keys activated"
 msgstr "पहुंच कुंजी सक्रिय करिस"
 
 #: khtml/khtmlview.cpp:2797 khtml/khtmlview.cpp:2839 khtml/khtml_part.cpp:4761
-#: khtml/html/html_formimpl.cpp:1632 khtml/html/html_formimpl.cpp:1844
+#: khtml/html/html_formimpl.cpp:1635 khtml/html/html_formimpl.cpp:1847
 msgid "Submit"
 msgstr "जमा करव"
 
@@ -10957,32 +10957,9 @@ msgstr "जावास्क्रिप्ट "
 msgid "&Stop Script"
 msgstr "स्क्रिप्ट खोलव"
 
-#: khtml/ecma/kjs_html.cpp:2168 khtml/ecma/kjs_window.cpp:1650
+#: khtml/ecma/kjs_window.cpp:1650 khtml/ecma/kjs_html.cpp:2174
 msgid "Confirmation: JavaScript Popup"
 msgstr "पुस्टिकरनः जावास्क्रिप्ट पापअप"
-
-#: khtml/ecma/kjs_html.cpp:2170
-msgid ""
-"This site is submitting a form which will open up a new browser window via "
-"JavaScript.\n"
-"Do you want to allow the form to be submitted?"
-msgstr ""
-
-#: khtml/ecma/kjs_html.cpp:2173
-#, kde-format
-msgid ""
-"<qt>This site is submitting a form which will open <p>%1</p> in a new "
-"browser window via JavaScript.<br />Do you want to allow the form to be "
-"submitted?</qt>"
-msgstr ""
-
-#: khtml/ecma/kjs_html.cpp:2175 khtml/ecma/kjs_window.cpp:1658
-msgid "Allow"
-msgstr "स्वीकारव"
-
-#: khtml/ecma/kjs_html.cpp:2175 khtml/ecma/kjs_window.cpp:1658
-msgid "Do Not Allow"
-msgstr "अनुमति नइ देव"
 
 #: khtml/ecma/kjs_window.cpp:1653
 msgid ""
@@ -11000,6 +10977,14 @@ msgid ""
 msgstr ""
 " <qt>ये साइट जावास्क्रिप्ट के साथ<p>%1</p>नवा ब्राउजर विंडो खोले के निवेदन करत हे.<br /"
 ">का आप मन एखर अनुमति देहू?</qt>"
+
+#: khtml/ecma/kjs_window.cpp:1658 khtml/ecma/kjs_html.cpp:2181
+msgid "Allow"
+msgstr "स्वीकारव"
+
+#: khtml/ecma/kjs_window.cpp:1658 khtml/ecma/kjs_html.cpp:2181
+msgid "Do Not Allow"
+msgstr "अनुमति नइ देव"
 
 #: khtml/ecma/kjs_window.cpp:1971
 msgid "Close window?"
@@ -11035,6 +11020,21 @@ msgstr "प्रविस्ट"
 #: khtml/ecma/kjs_window.cpp:2883
 msgid "Disallow"
 msgstr "अस्वीकार"
+
+#: khtml/ecma/kjs_html.cpp:2176
+msgid ""
+"This site is submitting a form which will open up a new browser window via "
+"JavaScript.\n"
+"Do you want to allow the form to be submitted?"
+msgstr ""
+
+#: khtml/ecma/kjs_html.cpp:2179
+#, kde-format
+msgid ""
+"<qt>This site is submitting a form which will open <p>%1</p> in a new "
+"browser window via JavaScript.<br />Do you want to allow the form to be "
+"submitted?</qt>"
+msgstr ""
 
 #: khtml/ecma/debugger/consoledock.cpp:220
 msgid "Console"
@@ -11161,6 +11161,31 @@ msgstr "काल"
 msgid "Line"
 msgstr "पंक्ति"
 
+#: khtml/html/html_objectimpl.cpp:610
+#, kde-format
+msgid ""
+"No plugin found for '%1'.\n"
+"Do you want to download one from %2?"
+msgstr ""
+" '%1' बर कोनो प्लगइन नइ मिलिस.\n"
+"का आप मन एला %2 से डाउनलोड करना चाहथो ?"
+
+#: khtml/html/html_objectimpl.cpp:611
+msgid "Missing Plugin"
+msgstr "प्लगइन नइ मिलिस"
+
+#: khtml/html/html_objectimpl.cpp:611
+msgid "Download"
+msgstr "डाउनलोड"
+
+#: khtml/html/html_objectimpl.cpp:611
+msgid "Do Not Download"
+msgstr "डाउनलोड नइ करव"
+
+#: khtml/html/htmlparser.cpp:1938
+msgid "This is a searchable index. Enter search keywords: "
+msgstr "ये खोजे जा सके टेबल हे. खोजे बर कीवर्ड भरव: "
+
 #: khtml/html/html_formimpl.cpp:422
 msgid ""
 "The following files will not be uploaded because they could not be found.\n"
@@ -11198,34 +11223,9 @@ msgid_plural "&Send Files"
 msgstr[0] "फाइल मन ल भेजव (&S)"
 msgstr[1] "फाइल मन ल भेजव (&S)"
 
-#: khtml/html/html_formimpl.cpp:2688
+#: khtml/html/html_formimpl.cpp:2701
 msgid "Key Generator"
 msgstr "कुंजी बनइया"
-
-#: khtml/html/html_objectimpl.cpp:610
-#, kde-format
-msgid ""
-"No plugin found for '%1'.\n"
-"Do you want to download one from %2?"
-msgstr ""
-" '%1' बर कोनो प्लगइन नइ मिलिस.\n"
-"का आप मन एला %2 से डाउनलोड करना चाहथो ?"
-
-#: khtml/html/html_objectimpl.cpp:611
-msgid "Missing Plugin"
-msgstr "प्लगइन नइ मिलिस"
-
-#: khtml/html/html_objectimpl.cpp:611
-msgid "Download"
-msgstr "डाउनलोड"
-
-#: khtml/html/html_objectimpl.cpp:611
-msgid "Do Not Download"
-msgstr "डाउनलोड नइ करव"
-
-#: khtml/html/htmlparser.cpp:1938
-msgid "This is a searchable index. Enter search keywords: "
-msgstr "ये खोजे जा सके टेबल हे. खोजे बर कीवर्ड भरव: "
 
 #: khtml/java/kjavaapplet.cpp:224
 #, kde-format
