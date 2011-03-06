@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kolourpaint4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-25 03:31+0100\n"
+"POT-Creation-Date: 2011-03-06 03:36+0100\n"
 "PO-Revision-Date: 2009-02-26 15:35+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -342,6 +342,8 @@ msgstr "असली:"
 
 #: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:137
 #: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:242
+#: mainWindow/kpMainWindow_StatusBar.cpp:86
+#: mainWindow/kpMainWindow_StatusBar.cpp:230
 #, kde-format
 msgid "%1 x %2"
 msgstr "%1 x %2"
@@ -352,7 +354,7 @@ msgid "Preview"
 msgstr "प्रिव्यू"
 
 #: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:173
-#: dialogs/kpColorSimilarityDialog.cpp:59
+#: dialogs/kpColorSimilarityDialog.cpp:58
 msgid "&Update"
 msgstr "अपडेट (&U)"
 
@@ -428,7 +430,7 @@ msgstr "प्रतिसत: (&P)"
 
 #: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:319
 #: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:326
-#: dialogs/kpColorSimilarityDialog.cpp:80
+#: dialogs/kpColorSimilarityDialog.cpp:79
 msgid "%"
 msgstr "%"
 
@@ -465,12 +467,12 @@ msgstr ""
 "p><p>का आप मन सही मं फोटू ल नवा आकार देना चाहथो ?</p></qt>"
 
 #: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:717
-#: mainWindow/kpMainWindow_Tools.cpp:681
+#: mainWindow/kpMainWindow_Tools.cpp:677
 msgid "Resize Image?"
 msgstr "फोटू ल नवा आकार देव?"
 
 #: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:718
-#: mainWindow/kpMainWindow_Tools.cpp:682
+#: mainWindow/kpMainWindow_Tools.cpp:678
 msgid "R&esize Image"
 msgstr "फोटू ल नवा आकार देव (&e)"
 
@@ -694,22 +696,6 @@ msgstr "फोटू मोड़ें?"
 msgid "Sk&ew Image"
 msgstr "फोटू मोड़ें (&e)"
 
-#: dialogs/kpColorSimilarityDialog.cpp:47
-msgid "Color Similarity"
-msgstr "रंग एकरूपता"
-
-#: dialogs/kpColorSimilarityDialog.cpp:73
-msgid "&RGB Color Cube Distance"
-msgstr "आरजीबी रंग घन दूरी (&R)"
-
-#: dialogs/kpColorSimilarityDialog.cpp:81
-msgid "Exact Match"
-msgstr "सटीक जोड़ीदार"
-
-#: dialogs/kpColorSimilarityDialog.cpp:86
-msgid "<a href=\"dummy_to_make_link_clickable\">What is Color Similarity?</a>"
-msgstr "<a href=\"dummy_to_make_link_clickable\">रंग सिमिलेरिटी के हे?</a>"
-
 #: dialogs/kpDocumentSaveOptionsPreviewDialog.cpp:62
 #: dialogs/kpDocumentSaveOptionsPreviewDialog.cpp:68
 msgid "Save Preview"
@@ -721,6 +707,22 @@ msgid "1 byte (approx. %2%)"
 msgid_plural "%1 bytes (approx. %2%)"
 msgstr[0] ""
 msgstr[1] ""
+
+#: dialogs/kpColorSimilarityDialog.cpp:47
+msgid "Color Similarity"
+msgstr "रंग एकरूपता"
+
+#: dialogs/kpColorSimilarityDialog.cpp:72
+msgid "&RGB Color Cube Distance"
+msgstr "आरजीबी रंग घन दूरी (&R)"
+
+#: dialogs/kpColorSimilarityDialog.cpp:80
+msgid "Exact Match"
+msgstr "सटीक जोड़ीदार"
+
+#: dialogs/kpColorSimilarityDialog.cpp:85
+msgid "<a href=\"dummy_to_make_link_clickable\">What is Color Similarity?</a>"
+msgstr "<a href=\"dummy_to_make_link_clickable\">रंग सिमिलेरिटी के हे?</a>"
 
 #: document/kpDocument_Open.cpp:107
 #, kde-format
@@ -811,10 +813,6 @@ msgstr "मेटाय के लिखव"
 #: document/kpDocument_Save.cpp:471
 msgid "Could not save image - failed to upload."
 msgstr "फोटू ल सहेज नइ सकिस - अपलोड करे मं फेल."
-
-#: generic/widgets/kpSqueezedTextLabel.cpp:118
-msgid "..."
-msgstr "..."
 
 #: imagelib/transforms/kpTransformCrop.cpp:71
 #: imagelib/transforms/kpTransformCrop.cpp:73
@@ -996,7 +994,7 @@ msgstr ""
 "का आप मन एखर ऊपर लिखना चाहथो ?"
 
 #: lgpl/generic/kpUrlFormatter.cpp:40 lgpl/generic/kpUrlFormatter.cpp:51
-#: widgets/toolbars/kpColorToolBar.cpp:264
+#: widgets/toolbars/kpColorToolBar.cpp:268
 msgid "Untitled"
 msgstr "बिना सीर्सक"
 
@@ -1343,35 +1341,6 @@ msgstr "पाठ: डब्बा बनाव "
 msgid "Show &Path"
 msgstr "पथ देखाव (&P)"
 
-#: mainWindow/kpMainWindow_StatusBar.cpp:146
-#, kde-format
-msgid "%1,%2"
-msgstr "%1,%2"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:153
-#, kde-format
-msgid "%1,%2 - %3,%4"
-msgstr "%1,%2 - %3,%4"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:194
-#: mainWindow/kpMainWindow_StatusBar.cpp:225
-#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
-#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
-#, kde-format
-msgid "%1x%2"
-msgstr "%1x%2"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:253
-#, kde-format
-msgid "%1bpp"
-msgstr "%1 बीपीपी"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:279
-#: mainWindow/kpMainWindow_View_Zoom.cpp:91
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
 #: mainWindow/kpMainWindow_Text.cpp:60
 msgid "Font Family"
 msgstr "फोंट कुटुंब"
@@ -1463,48 +1432,15 @@ msgstr "फाइल मं नकल करव"
 msgid "Paste From File"
 msgstr "फाइल मं से चिपकाव"
 
-#: mainWindow/kpMainWindow_Tools.cpp:132
-msgid "Previous Tool Option (Group #1)"
-msgstr "पिछला औजार विकल्प (समूह #1)"
-
-#: mainWindow/kpMainWindow_Tools.cpp:138
-msgid "Next Tool Option (Group #1)"
-msgstr "अगला औजार विकल्प (समूह #1)"
-
-#: mainWindow/kpMainWindow_Tools.cpp:144
-msgid "Previous Tool Option (Group #2)"
-msgstr "पिछला औजार विकल्प (समूह #2)"
-
-#: mainWindow/kpMainWindow_Tools.cpp:150
-msgid "Next Tool Option (Group #2)"
-msgstr "अगला औजार विकल्प (समूह #2)"
-
-#: mainWindow/kpMainWindow_Tools.cpp:162
-msgid "&Draw Opaque"
-msgstr "अपारदर्सी बनाव (&D)"
-
-#: mainWindow/kpMainWindow_Tools.cpp:167
-msgid "Draw With Color Similarity..."
-msgstr "रंग एकरूपता के साथ बनाव..."
-
-#: mainWindow/kpMainWindow_Tools.cpp:177
-msgid "Tool Box"
-msgstr "औजार डब्बा"
-
-#: mainWindow/kpMainWindow_Tools.cpp:671
-#, kde-format
-msgid ""
-"<qt><p>Resizing the image to %1x%2 may take a substantial amount of memory. "
-"This can reduce system responsiveness and cause other application resource "
-"problems.</p><p>Are you sure want to resize the image?</p></qt>"
-msgstr ""
-"<qt><p>फोटू ल %1x%2  नवा आकार दे फेर एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
-"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
-"p><p>का आप मन सही मं फोटू ल नवा आकार देना चाहथो ?</p></qt>"
-
 #: mainWindow/kpMainWindow_View.cpp:76
 msgid "Show &Grid"
 msgstr "ग्रिड देखाव (&G)"
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:91
+#: mainWindow/kpMainWindow_StatusBar.cpp:284
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
 
 #: mainWindow/kpMainWindow_View_Zoom.cpp:113
 msgid "&Zoom"
@@ -1522,6 +1458,67 @@ msgstr ""
 #, kde-format
 msgid "Set Zoom Level to %1%"
 msgstr "जूम स्तर ल %1% मं सेट करव"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:149
+#, kde-format
+msgid "%1,%2"
+msgstr "%1,%2"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:156
+#, kde-format
+msgid "%1,%2 - %3,%4"
+msgstr "%1,%2 - %3,%4"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:199
+#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
+#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
+#, kde-format
+msgid "%1x%2"
+msgstr "%1x%2"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:258
+#, kde-format
+msgid "%1bpp"
+msgstr "%1 बीपीपी"
+
+#: mainWindow/kpMainWindow_Tools.cpp:135
+msgid "Previous Tool Option (Group #1)"
+msgstr "पिछला औजार विकल्प (समूह #1)"
+
+#: mainWindow/kpMainWindow_Tools.cpp:141
+msgid "Next Tool Option (Group #1)"
+msgstr "अगला औजार विकल्प (समूह #1)"
+
+#: mainWindow/kpMainWindow_Tools.cpp:147
+msgid "Previous Tool Option (Group #2)"
+msgstr "पिछला औजार विकल्प (समूह #2)"
+
+#: mainWindow/kpMainWindow_Tools.cpp:153
+msgid "Next Tool Option (Group #2)"
+msgstr "अगला औजार विकल्प (समूह #2)"
+
+#: mainWindow/kpMainWindow_Tools.cpp:165
+msgid "&Draw Opaque"
+msgstr "अपारदर्सी बनाव (&D)"
+
+#: mainWindow/kpMainWindow_Tools.cpp:170
+msgid "Draw With Color Similarity..."
+msgstr "रंग एकरूपता के साथ बनाव..."
+
+#: mainWindow/kpMainWindow_Tools.cpp:180
+msgid "Tool Box"
+msgstr "औजार डब्बा"
+
+#: mainWindow/kpMainWindow_Tools.cpp:667
+#, kde-format
+msgid ""
+"<qt><p>Resizing the image to %1x%2 may take a substantial amount of memory. "
+"This can reduce system responsiveness and cause other application resource "
+"problems.</p><p>Are you sure want to resize the image?</p></qt>"
+msgstr ""
+"<qt><p>फोटू ल %1x%2  नवा आकार दे फेर एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
+"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
+"p><p>का आप मन सही मं फोटू ल नवा आकार देना चाहथो ?</p></qt>"
 
 #: tools/flow/kpToolBrush.cpp:35
 msgid "Brush"
@@ -1587,12 +1584,6 @@ msgstr "ग्राफिती स्प्रे करथे "
 #: tools/flow/kpToolSpraycan.cpp:75
 msgid "Click or drag to spray graffiti."
 msgstr "ग्राफिती स्प्रे करे बर किलिक करव या खींचव."
-
-#: tools/kpTool.cpp:149
-#, kde-format
-msgctxt "<Tool Name> (<Single Accel Key>)"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
 
 #: tools/kpToolColorPicker.cpp:47
 msgid "Lets you select a color from the image"
@@ -1876,6 +1867,12 @@ msgstr "पाठ: रेखांकित"
 msgid "Text: Strike Through"
 msgstr "पाठ: लिखकर काटा होइस"
 
+#: tools/kpTool.cpp:155
+#, kde-format
+msgctxt "<Tool Name> (<Single Accel Key>)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
 #: views/kpZoomedThumbnailView.cpp:66
 #, kde-format
 msgid "%1% - Thumbnail"
@@ -1935,12 +1932,12 @@ msgid ""
 "decrease this setting.</p></qt>"
 msgstr ""
 
-#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:224
+#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:226
 #, kde-format
 msgid "<p>Color Similarity: %1%</p><p align=\"center\">Click to configure.</p>"
 msgstr "<p>रंग एकरूपता: %1%</p><p align=\"center\">कान्फिगर करे बर किलिक करव.</p>"
 
-#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:231
+#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:233
 msgid ""
 "<p>Color Similarity: Exact Match</p><p align=\"center\">Click to configure.</"
 "p>"
@@ -2124,22 +2121,6 @@ msgstr "पेज मं सीर्स डेरी मं (&l)"
 msgid "Transparent"
 msgstr "पारदर्सी"
 
-#: widgets/toolbars/kpColorToolBar.cpp:260
-msgid "KolourPaint Defaults"
-msgstr "कलरपेंट डिफाल्ट्स"
-
-#: widgets/toolbars/kpColorToolBar.cpp:273
-#, kde-format
-msgctxt "Colors: name_or_url_of_color_palette"
-msgid "Colors: %1"
-msgstr "रंग: %1"
-
-#: widgets/toolbars/kpColorToolBar.cpp:280
-#, kde-format
-msgctxt "Colors: name_or_url_of_color_palette [modified]"
-msgid "Colors: %1 [modified]"
-msgstr "रंग: %1 [परिवर्धित]"
-
 #: widgets/toolbars/options/kpToolWidgetBrush.cpp:204
 msgid "1x1"
 msgstr "1x1"
@@ -2180,6 +2161,22 @@ msgstr "आगू तरफ रंग से भरव"
 #: widgets/toolbars/options/kpToolWidgetOpaqueOrTransparent.cpp:43
 msgid "Opaque"
 msgstr "अपारदर्सी"
+
+#: widgets/toolbars/kpColorToolBar.cpp:264
+msgid "KolourPaint Defaults"
+msgstr "कलरपेंट डिफाल्ट्स"
+
+#: widgets/toolbars/kpColorToolBar.cpp:277
+#, kde-format
+msgctxt "Colors: name_or_url_of_color_palette"
+msgid "Colors: %1"
+msgstr "रंग: %1"
+
+#: widgets/toolbars/kpColorToolBar.cpp:284
+#, kde-format
+msgctxt "Colors: name_or_url_of_color_palette [modified]"
+msgid "Colors: %1 [modified]"
+msgstr "रंग: %1 [परिवर्धित]"
 
 #: widgets/kpColorCells.cpp:196
 msgid ""
@@ -2258,6 +2255,9 @@ msgstr "चयन औजार आरएमबी मेन्यू"
 #: rc.cpp:23
 msgid "&Edit"
 msgstr "संपादन (&E)"
+
+#~ msgid "..."
+#~ msgstr "..."
 
 #~ msgid "Flip Selection"
 #~ msgstr "चयन लहुटाव"
