@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-10 03:12+0100\n"
+"POT-Creation-Date: 2011-04-01 03:26+0200\n"
 "PO-Revision-Date: 2009-03-03 10:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -238,7 +238,6 @@ msgstr "सेड्यूलिंग लाग"
 #: models/kptresourceallocationmodel.cpp:743 models/kptresourcemodel.cpp:197
 #: models/kptresourcemodel.cpp:229 models/kptresourcemodel.cpp:350
 #: models/kptresourcemodel.cpp:354 models/kptresourcemodel.cpp:363
-#: models/kptschedulemodel.cpp:481 models/kptschedulemodel.cpp:483
 #: models/kpttreecombobox.cpp:124 models/kptnodeitemmodel.cpp:376
 #: models/kptnodeitemmodel.cpp:387 models/kptnodeitemmodel.cpp:392
 #: models/kptnodeitemmodel.cpp:402 models/kptnodeitemmodel.cpp:578
@@ -246,6 +245,7 @@ msgstr "सेड्यूलिंग लाग"
 #: models/kptnodeitemmodel.cpp:612 models/kptnodeitemmodel.cpp:619
 #: models/kptnodeitemmodel.cpp:629 models/kptnodeitemmodel.cpp:664
 #: models/kptnodeitemmodel.cpp:670 models/kptnodeitemmodel.cpp:680
+#: models/kptschedulemodel.cpp:481 models/kptschedulemodel.cpp:483
 #: ui/kptpertresult.cpp:138 ui/kptpertresult.cpp:489
 #: ui/kptresourcedialog.cpp:266 ui/kptresourcedialog.cpp:292
 #: ui/kpttaskcostpanel.cpp:50 ui/kpttaskgeneralpanel.cpp:74 rc.cpp:536
@@ -254,8 +254,8 @@ msgstr "कुछ नइ"
 
 #. i18n: file: ui/kptscheduleeditor.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, projectGroupBox)
-#: kernel/kptnode.cpp:137 models/kptpertcpmmodel.cpp:425
-#: models/kptresourceappointmentsmodel.cpp:1271 rc.cpp:328
+#: kernel/kptnode.cpp:137 models/kptresourceappointmentsmodel.cpp:1271
+#: models/kptpertcpmmodel.cpp:425 rc.cpp:328
 msgid "Project"
 msgstr "परियोजना"
 
@@ -785,10 +785,10 @@ msgstr "डिफाल्ट खाता:"
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptaccountsmodel.cpp:131 models/kptaccountsmodel.cpp:1037
 #: models/kptresourceallocationmodel.cpp:332 models/kptresourcemodel.cpp:433
-#: models/kptschedulemodel.cpp:759 models/kptschedulemodel.cpp:1017
 #: models/kptcalendarmodel.cpp:424 models/kptresourceappointmentsmodel.cpp:908
 #: models/kptresourceappointmentsmodel.cpp:923
-#: models/kptresourceappointmentsmodel.cpp:1519 rc.cpp:316
+#: models/kptresourceappointmentsmodel.cpp:1519
+#: models/kptschedulemodel.cpp:759 models/kptschedulemodel.cpp:1017 rc.cpp:316
 msgid "Name"
 msgstr "नाम"
 
@@ -838,53 +838,22 @@ msgstr "कुल"
 msgid "The total cost for the account shown as: Actual cost [ Planned cost ]"
 msgstr "खाता के कुल कीमत"
 
-#: models/kptdocumentmodel.cpp:171
-msgid "Url"
-msgstr "यूआरएल"
-
-#. i18n: file: ui/kptresourceassignmentview.ui:32
-#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
-#: models/kptdocumentmodel.cpp:172 models/kptrelationmodel.cpp:148
-#: models/kptresourceallocationmodel.cpp:333 models/kptresourcemodel.cpp:434
-#: models/kptresourceappointmentsmodel.cpp:1520 rc.cpp:319
-msgid "Type"
-msgstr "किसिम"
-
-#: models/kptdocumentmodel.cpp:173
-msgid "Status"
-msgstr "स्थिति"
-
-#: models/kptdocumentmodel.cpp:174
-msgid "Send As"
-msgstr "अइसन भेजव"
-
 #: models/kptflatproxymodel.cpp:273 models/kptrelationmodel.cpp:146
 msgid "Parent"
 msgstr "पैरेंट"
 
-#: models/kptpertcpmmodel.cpp:151
-msgid "Path"
-msgstr "पथ"
-
-#: models/kptpertcpmmodel.cpp:430 ui/kptscheduleeditor.cpp:682
-msgid "Critical Path"
-msgstr "क्रिटिकल पथ"
-
-#: models/kptpertcpmmodel.cpp:450
-#, fuzzy
-#| msgid "Critical Path"
-msgid "Critical"
-msgstr "क्रिटिकल पथ"
-
-#: models/kptpertcpmmodel.cpp:454
-#, fuzzy
-#| msgid "Show critical path"
-msgid "Non-critical"
-msgstr "क्रिटिकल रस्ता देखाव"
-
 #: models/kptrelationmodel.cpp:147
 msgid "Child"
 msgstr "लइका"
+
+#. i18n: file: ui/kptresourceassignmentview.ui:32
+#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
+#: models/kptrelationmodel.cpp:148 models/kptresourceallocationmodel.cpp:333
+#: models/kptresourcemodel.cpp:434
+#: models/kptresourceappointmentsmodel.cpp:1520
+#: models/kptdocumentmodel.cpp:172 rc.cpp:319
+msgid "Type"
+msgstr "किसिम"
 
 #: models/kptrelationmodel.cpp:149
 #, fuzzy
@@ -1163,196 +1132,6 @@ msgstr "संसाधन समूह जोड़व..."
 msgid "Add resource"
 msgstr "संसाधन जोड़व..."
 
-#: models/kptschedulemodel.cpp:374
-#, fuzzy
-#| msgid "Modify Calendar"
-msgid "Modify schedule name"
-msgstr "कलेन्डर सुधारव"
-
-#: models/kptschedulemodel.cpp:441 models/kptschedulemodel.cpp:443
-msgid "Allow"
-msgstr "स्वीकारव"
-
-#: models/kptschedulemodel.cpp:441 models/kptschedulemodel.cpp:443
-msgid "Avoid"
-msgstr "टालें"
-
-#: models/kptschedulemodel.cpp:463
-msgid "Modify allow overbooking"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:481 models/kptschedulemodel.cpp:483
-msgid "PERT"
-msgstr "पीईआरटी"
-
-#: models/kptschedulemodel.cpp:503
-#, fuzzy
-#| msgid "The scheduling direction"
-msgid "Modify scheduling distribution"
-msgstr "सारिनी दिसा"
-
-#: models/kptschedulemodel.cpp:521 models/kptschedulemodel.cpp:523
-msgid "All"
-msgstr "सब्बो"
-
-#: models/kptschedulemodel.cpp:521 models/kptschedulemodel.cpp:523
-msgid "Expected only"
-msgstr "सिरिफ वांछित"
-
-#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
-msgid "Backwards"
-msgstr "पीछू से"
-
-#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
-msgid "Forward"
-msgstr "आगू"
-
-#: models/kptschedulemodel.cpp:629
-#, fuzzy
-#| msgid "The scheduling direction"
-msgid "Modify scheduling direction"
-msgstr "सारिनी दिसा"
-
-#: models/kptschedulemodel.cpp:647
-#, fuzzy
-#| msgid "Unknown"
-msgid "Unknown"
-msgstr "अग्यात"
-
-#: models/kptschedulemodel.cpp:669
-#, fuzzy
-#| msgid "Not scheduled"
-msgid "Modify scheduler"
-msgstr "सारिनीबद्ध नइ"
-
-#: models/kptschedulemodel.cpp:760
-msgid "State"
-msgstr "स्थिति"
-
-#: models/kptschedulemodel.cpp:761
-#, fuzzy
-#| msgid "Duration"
-msgid "Direction"
-msgstr "अवधि"
-
-#: models/kptschedulemodel.cpp:762
-msgid "Overbooking"
-msgstr "ओवरबुकिंग"
-
-#: models/kptschedulemodel.cpp:763
-#, fuzzy
-#| msgid "Description"
-msgid "Distribution"
-msgstr "वर्नन"
-
-#: models/kptschedulemodel.cpp:765
-#, fuzzy
-#| msgid "Planned Effort"
-msgid "Planned Start"
-msgstr "प्लान करे गे प्रयास"
-
-#: models/kptschedulemodel.cpp:766
-#, fuzzy
-#| msgid "Planned cost"
-msgid "Planned Finish"
-msgstr "प्लान करे गे लागत"
-
-#: models/kptschedulemodel.cpp:767
-#, fuzzy
-#| msgid "Schedule:"
-msgid "Scheduler"
-msgstr "समयसारिनी:"
-
-#: models/kptschedulemodel.cpp:1017
-msgid "Phase"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:1017
-msgid "Severity"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:1017
-msgid "Message"
-msgstr "संदेस"
-
-#: models/kpttaskstatusmodel.cpp:50 ui/kptresourceassignmentview.cpp:255
-#: ui/kptresourceassignmentview.cpp:333
-msgid "Not Started"
-msgstr "सुरू नइ होइस"
-
-#: models/kpttaskstatusmodel.cpp:51
-msgid "Tasks that should have been started"
-msgstr ""
-
-#. i18n: file: ui/kpttaskcostpanelbase.ui:24
-#. i18n: ectx: property (title), widget (QGroupBox, runningGroup)
-#: models/kpttaskstatusmodel.cpp:54 models/kptnodeitemmodel.cpp:1216
-#: rc.cpp:404
-msgid "Running"
-msgstr "चलत हे"
-
-#: models/kpttaskstatusmodel.cpp:55
-msgid "Tasks that are running"
-msgstr ""
-
-#. i18n: file: ui/kptmilestoneprogresspanelbase.ui:23
-#. i18n: ectx: property (text), widget (QCheckBox, finished)
-#: models/kpttaskstatusmodel.cpp:58 models/kptnodeitemmodel.cpp:1213
-#: ui/kptresourceassignmentview.cpp:257 ui/kptresourceassignmentview.cpp:335
-#: rc.cpp:193
-msgid "Finished"
-msgstr "पूरा"
-
-#: models/kpttaskstatusmodel.cpp:59
-msgid "Tasks that have finished during this period"
-msgstr ""
-
-#: models/kpttaskstatusmodel.cpp:62
-#, fuzzy
-#| msgid "Next year"
-msgid "Next Period"
-msgstr "अगला साल"
-
-#: models/kpttaskstatusmodel.cpp:63
-msgid "Tasks that are scheduled to start next period"
-msgstr ""
-
-#: models/kpttaskstatusmodel.cpp:383 models/kptnodeitemmodel.cpp:2996
-#, fuzzy, no-c-format
-#| msgid "Modify task completion"
-msgid "Modify completion"
-msgstr "काम पूरा सुधारव"
-
-#: models/kpttaskstatusmodel.cpp:412 models/kptnodeitemmodel.cpp:3025
-#, fuzzy
-#| msgid "Finished"
-msgid "Set finished"
-msgstr "पूरा"
-
-#: models/kpttaskstatusmodel.cpp:433 models/kptnodeitemmodel.cpp:3046
-#, fuzzy
-#| msgid "Remaining Effort"
-msgid "Modify remaining effort"
-msgstr "बाकी बचा प्रयास"
-
-#: models/kpttaskstatusmodel.cpp:446 models/kptnodeitemmodel.cpp:3059
-#, fuzzy
-#| msgid "Modify Accounts"
-msgid "Modify actual effort"
-msgstr "खाता सुधारव"
-
-#: models/kpttaskstatusmodel.cpp:460 models/kptnodeitemmodel.cpp:3073
-#, fuzzy
-#| msgid "Modify Standard Worktime"
-msgid "Modify actual start time"
-msgstr "मानक कामसमय सुधारव"
-
-#: models/kpttaskstatusmodel.cpp:488 models/kptnodeitemmodel.cpp:3101
-#, fuzzy
-#| msgid "Modify Standard Worktime"
-msgid "Modify actual finish time"
-msgstr "मानक कामसमय सुधारव"
-
 #: models/kptworkpackagemodel.cpp:76
 #, kde-format
 msgid "Sent to %1 at %2"
@@ -1603,6 +1382,21 @@ msgstr "पूरा"
 #| msgid "Finished"
 msgid "Finished early"
 msgstr "पूरा"
+
+#. i18n: file: ui/kptmilestoneprogresspanelbase.ui:23
+#. i18n: ectx: property (text), widget (QCheckBox, finished)
+#: models/kptnodeitemmodel.cpp:1213 models/kpttaskstatusmodel.cpp:58
+#: ui/kptresourceassignmentview.cpp:257 ui/kptresourceassignmentview.cpp:335
+#: rc.cpp:193
+msgid "Finished"
+msgstr "पूरा"
+
+#. i18n: file: ui/kpttaskcostpanelbase.ui:24
+#. i18n: ectx: property (title), widget (QGroupBox, runningGroup)
+#: models/kptnodeitemmodel.cpp:1216 models/kpttaskstatusmodel.cpp:54
+#: rc.cpp:404
+msgid "Running"
+msgstr "चलत हे"
 
 #: models/kptnodeitemmodel.cpp:1220
 #, fuzzy
@@ -2407,6 +2201,42 @@ msgstr "खाता सुधारव"
 #| msgid "Modify Task Cost"
 msgid "Modify shutdown cost"
 msgstr "काम लागत सुधारव"
+
+#: models/kptnodeitemmodel.cpp:2996 models/kpttaskstatusmodel.cpp:383
+#, fuzzy, no-c-format
+#| msgid "Modify task completion"
+msgid "Modify completion"
+msgstr "काम पूरा सुधारव"
+
+#: models/kptnodeitemmodel.cpp:3025 models/kpttaskstatusmodel.cpp:412
+#, fuzzy
+#| msgid "Finished"
+msgid "Set finished"
+msgstr "पूरा"
+
+#: models/kptnodeitemmodel.cpp:3046 models/kpttaskstatusmodel.cpp:433
+#, fuzzy
+#| msgid "Remaining Effort"
+msgid "Modify remaining effort"
+msgstr "बाकी बचा प्रयास"
+
+#: models/kptnodeitemmodel.cpp:3059 models/kpttaskstatusmodel.cpp:446
+#, fuzzy
+#| msgid "Modify Accounts"
+msgid "Modify actual effort"
+msgstr "खाता सुधारव"
+
+#: models/kptnodeitemmodel.cpp:3073 models/kpttaskstatusmodel.cpp:460
+#, fuzzy
+#| msgid "Modify Standard Worktime"
+msgid "Modify actual start time"
+msgstr "मानक कामसमय सुधारव"
+
+#: models/kptnodeitemmodel.cpp:3101 models/kpttaskstatusmodel.cpp:488
+#, fuzzy
+#| msgid "Modify Standard Worktime"
+msgid "Modify actual finish time"
+msgstr "मानक कामसमय सुधारव"
 
 #: models/kptnodeitemmodel.cpp:3408 models/kptnodeitemmodel.cpp:4624
 #, fuzzy
@@ -3344,6 +3174,177 @@ msgstr "खतम समय"
 msgctxt "@title:column noun"
 msgid "Load"
 msgstr "लोड"
+
+#: models/kptdocumentmodel.cpp:171
+msgid "Url"
+msgstr "यूआरएल"
+
+#: models/kptdocumentmodel.cpp:173
+msgid "Status"
+msgstr "स्थिति"
+
+#: models/kptdocumentmodel.cpp:174
+msgid "Send As"
+msgstr "अइसन भेजव"
+
+#: models/kptpertcpmmodel.cpp:151
+msgid "Path"
+msgstr "पथ"
+
+#: models/kptpertcpmmodel.cpp:430 ui/kptscheduleeditor.cpp:682
+msgid "Critical Path"
+msgstr "क्रिटिकल पथ"
+
+#: models/kptpertcpmmodel.cpp:450
+#, fuzzy
+#| msgid "Critical Path"
+msgid "Critical"
+msgstr "क्रिटिकल पथ"
+
+#: models/kptpertcpmmodel.cpp:454
+#, fuzzy
+#| msgid "Show critical path"
+msgid "Non-critical"
+msgstr "क्रिटिकल रस्ता देखाव"
+
+#: models/kptschedulemodel.cpp:374
+#, fuzzy
+#| msgid "Modify Calendar"
+msgid "Modify schedule name"
+msgstr "कलेन्डर सुधारव"
+
+#: models/kptschedulemodel.cpp:441 models/kptschedulemodel.cpp:443
+msgid "Allow"
+msgstr "स्वीकारव"
+
+#: models/kptschedulemodel.cpp:441 models/kptschedulemodel.cpp:443
+msgid "Avoid"
+msgstr "टालें"
+
+#: models/kptschedulemodel.cpp:463
+msgid "Modify allow overbooking"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:481 models/kptschedulemodel.cpp:483
+msgid "PERT"
+msgstr "पीईआरटी"
+
+#: models/kptschedulemodel.cpp:503
+#, fuzzy
+#| msgid "The scheduling direction"
+msgid "Modify scheduling distribution"
+msgstr "सारिनी दिसा"
+
+#: models/kptschedulemodel.cpp:521 models/kptschedulemodel.cpp:523
+msgid "All"
+msgstr "सब्बो"
+
+#: models/kptschedulemodel.cpp:521 models/kptschedulemodel.cpp:523
+msgid "Expected only"
+msgstr "सिरिफ वांछित"
+
+#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
+msgid "Backwards"
+msgstr "पीछू से"
+
+#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
+msgid "Forward"
+msgstr "आगू"
+
+#: models/kptschedulemodel.cpp:629
+#, fuzzy
+#| msgid "The scheduling direction"
+msgid "Modify scheduling direction"
+msgstr "सारिनी दिसा"
+
+#: models/kptschedulemodel.cpp:647
+#, fuzzy
+#| msgid "Unknown"
+msgid "Unknown"
+msgstr "अग्यात"
+
+#: models/kptschedulemodel.cpp:669
+#, fuzzy
+#| msgid "Not scheduled"
+msgid "Modify scheduler"
+msgstr "सारिनीबद्ध नइ"
+
+#: models/kptschedulemodel.cpp:760
+msgid "State"
+msgstr "स्थिति"
+
+#: models/kptschedulemodel.cpp:761
+#, fuzzy
+#| msgid "Duration"
+msgid "Direction"
+msgstr "अवधि"
+
+#: models/kptschedulemodel.cpp:762
+msgid "Overbooking"
+msgstr "ओवरबुकिंग"
+
+#: models/kptschedulemodel.cpp:763
+#, fuzzy
+#| msgid "Description"
+msgid "Distribution"
+msgstr "वर्नन"
+
+#: models/kptschedulemodel.cpp:765
+#, fuzzy
+#| msgid "Planned Effort"
+msgid "Planned Start"
+msgstr "प्लान करे गे प्रयास"
+
+#: models/kptschedulemodel.cpp:766
+#, fuzzy
+#| msgid "Planned cost"
+msgid "Planned Finish"
+msgstr "प्लान करे गे लागत"
+
+#: models/kptschedulemodel.cpp:767
+#, fuzzy
+#| msgid "Schedule:"
+msgid "Scheduler"
+msgstr "समयसारिनी:"
+
+#: models/kptschedulemodel.cpp:1017
+msgid "Phase"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:1017
+msgid "Severity"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:1017
+msgid "Message"
+msgstr "संदेस"
+
+#: models/kpttaskstatusmodel.cpp:50 ui/kptresourceassignmentview.cpp:255
+#: ui/kptresourceassignmentview.cpp:333
+msgid "Not Started"
+msgstr "सुरू नइ होइस"
+
+#: models/kpttaskstatusmodel.cpp:51
+msgid "Tasks that should have been started"
+msgstr ""
+
+#: models/kpttaskstatusmodel.cpp:55
+msgid "Tasks that are running"
+msgstr ""
+
+#: models/kpttaskstatusmodel.cpp:59
+msgid "Tasks that have finished during this period"
+msgstr ""
+
+#: models/kpttaskstatusmodel.cpp:62
+#, fuzzy
+#| msgid "Next year"
+msgid "Next Period"
+msgstr "अगला साल"
+
+#: models/kpttaskstatusmodel.cpp:63
+msgid "Tasks that are scheduled to start next period"
+msgstr ""
 
 #: ui/kptaccountseditor.cpp:227
 msgid "Add Account"
