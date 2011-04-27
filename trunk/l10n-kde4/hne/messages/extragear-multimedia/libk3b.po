@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libk3b\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-14 03:26+0100\n"
+"POT-Creation-Date: 2011-04-27 03:39+0200\n"
 "PO-Revision-Date: 2009-02-19 11:04+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -22,31 +22,12 @@ msgstr ""
 msgid "Auto"
 msgstr "अपने अपन"
 
-#: jobs/k3baudiocuefilewritingjob.cpp:113
-msgid "Writing Audio Cue File"
+#: core/k3bkjobbridge.cpp:105
+msgid "Source"
 msgstr ""
 
-#: jobs/k3baudiocuefilewritingjob.cpp:196
-msgid "Analysing the audio file failed. Corrupt file?"
-msgstr ""
-
-#: jobs/k3baudiocuefilewritingjob.cpp:264
-msgid "Analysing the audio file"
-msgstr ""
-
-#: jobs/k3baudiocuefilewritingjob.cpp:265
-#, kde-format
-msgid "Analysing %1"
-msgstr ""
-
-#: jobs/k3baudiocuefilewritingjob.cpp:272
-#, kde-format
-msgid "Unable to handle '%1' due to an unsupported format."
-msgstr ""
-
-#: jobs/k3baudiocuefilewritingjob.cpp:277
-#, kde-format
-msgid "No valid audio cue file: '%1'"
+#: core/k3bkjobbridge.cpp:106
+msgid "Target"
 msgstr ""
 
 #: jobs/k3baudiosessionreadingjob.cpp:142
@@ -64,7 +45,7 @@ msgid "Error while initializing audio ripping."
 msgstr "आडियो रिपिंग चालू करे मं गलती होइस."
 
 #: jobs/k3baudiosessionreadingjob.cpp:209 jobs/k3bdatatrackreader.cpp:240
-#: jobs/k3bdvdcopyjob.cpp:360
+#: jobs/k3bdvdcopyjob.cpp:361
 #, kde-format
 msgid "Unable to open '%1' for writing."
 msgstr "'%1' ल लिखे बर नइ खोल सकिस."
@@ -73,37 +54,6 @@ msgstr "'%1' ल लिखे बर नइ खोल सकिस."
 #, kde-format
 msgid "Unrecoverable error while ripping track %1."
 msgstr "ट्रैक %1 ल रिप करे के समय अनरिकवरेबल गलती होइस."
-
-#: jobs/k3bbinimagewritingjob.cpp:60
-msgid "Write Binary Image"
-msgstr "बाइनरी इमेज लिखव"
-
-#: jobs/k3bbinimagewritingjob.cpp:188
-#, fuzzy, kde-format
-#| msgid "%1 copy successfully created"
-#| msgid_plural "%1 copies successfully created"
-msgid "One copy successfully created"
-msgid_plural "%1 copies successfully created"
-msgstr[0] "%1 नकल सफलतापूर्वक बनाइस"
-msgstr[1] "%1 नकल सफलतापूर्वक बनाइस"
-
-#: jobs/k3bbinimagewritingjob.cpp:204 jobs/k3bcdcopyjob.cpp:1181
-#: jobs/k3bcdcopyjob.cpp:1183 jobs/k3bcdcopyjob.cpp:1186
-#: jobs/k3bcdcopyjob.cpp:1188
-#, kde-format
-msgid "Writing track %1 of %2"
-msgstr "ट्रैक %2 मं से %1 लिखत हे "
-
-#: jobs/k3bbinimagewritingjob.cpp:210
-msgid "Writing cue/bin Image"
-msgstr ""
-
-#: jobs/k3bbinimagewritingjob.cpp:212 jobs/k3biso9660imagewritingjob.cpp:346
-#, kde-format
-msgid " - %1 Copy"
-msgid_plural " - %1 Copies"
-msgstr[0] " - %1 नकल"
-msgstr[1] " - %1 नकल"
 
 #: jobs/k3bblankingjob.cpp:74 jobs/k3bblankingjob.cpp:162
 msgid "Erasing CD-RW"
@@ -130,314 +80,9 @@ msgstr "खेद हे, अभी कोनो गलती हेंडलि
 msgid "Quick Format"
 msgstr "तुरंत फार्मेट"
 
-#: jobs/k3bcdcopyjob.cpp:162 jobs/k3bdvdcopyjob.cpp:122
-msgid "Checking Source Medium"
-msgstr ""
-
-#: jobs/k3bcdcopyjob.cpp:165 jobs/k3bdvdcopyjob.cpp:132
-msgid "Waiting for source medium"
-msgstr ""
-
-#: jobs/k3bcdcopyjob.cpp:175 jobs/k3bdvdcopyjob.cpp:144
-msgid "Checking source medium"
-msgstr ""
-
-#: jobs/k3bcdcopyjob.cpp:203
-msgid "K3b does not copy CDs containing multiple data tracks."
-msgstr "के3बी ओखर सीडी के नकल नइ कर सके जऊन मं मल्टीपल डाटा ट्रैक हे."
-
-#: jobs/k3bcdcopyjob.cpp:207
-msgid "Copying Multisession Data CD."
-msgstr "मल्टीसेसन डाटा सीडी नकल करत हे."
-
-#: jobs/k3bcdcopyjob.cpp:209
-msgid "Copying Data CD."
-msgstr "डाटा सीडी नकल करत हे..."
-
-#: jobs/k3bcdcopyjob.cpp:215
-msgid "K3b can only copy CD-Extra mixed mode CDs."
-msgstr "के3बी सिरिफ सीडी-एक्सट्रा मिक्स मोड सीडी के नकल कर सकथे."
-
-#: jobs/k3bcdcopyjob.cpp:219
-msgid "Copying Enhanced Audio CD (CD-Extra)."
-msgstr "एन हैस्ड आडियो सीडी (सीडी-एक्स्ट्रा) नकल करत हे."
-
-#: jobs/k3bcdcopyjob.cpp:224
-msgid "Copying Audio CD."
-msgstr "आडियो सीडी नकल करत हे."
-
-#: jobs/k3bcdcopyjob.cpp:229
-msgid "The source disk is empty."
-msgstr "स्रोत डिस्क खाली हे."
-
-#: jobs/k3bcdcopyjob.cpp:271
-msgid "K3b needs cdrecord 2.01a12 or newer to copy Mode2 data tracks."
-msgstr "मोड2 डाटा ट्रैक्स के नकल करे बर के3बी ल सीडीरेकार्ड 2.01a12 या नवा चाही."
-
-#: jobs/k3bcdcopyjob.cpp:283
-msgid ""
-"You will only be able to copy the first session in raw writing mode. "
-"Continue anyway?"
-msgstr "आप पहिली सत्र मं रा राइटिंग मोड मं ही सक्छम हो पाहू. जइसन भी हो जारी रखव?"
-
-#: jobs/k3bcdcopyjob.cpp:285
-msgid "Multisession CD"
-msgstr "मल्टीसेसन सीडी"
-
-#: jobs/k3bcdcopyjob.cpp:290
-msgid "Only copying first session."
-msgstr "सिरिफ पहिली सत्र के नकल करत हे ."
-
-#: jobs/k3bcdcopyjob.cpp:319 jobs/k3bdvdcopyjob.cpp:344
-#, fuzzy, kde-format
-#| msgid "Unable to determine free space in temporary directory '%1'."
-msgid "Unable to determine free space in temporary folder '%1'."
-msgstr "अस्थाई डिरेक्टरी '%1' मं खाली जगह के पता कर पाय मं अक्छम."
-
-#: jobs/k3bcdcopyjob.cpp:325 jobs/k3bdvdcopyjob.cpp:351
-#, fuzzy
-#| msgid "Not enough space left in temporary directory."
-msgid "Not enough space left in temporary folder."
-msgstr "अस्थाई डिरेक्टरी मं बहुत जगह नइ बचिस हे."
-
-#: jobs/k3bcdcopyjob.cpp:334 jobs/k3bdvdcopyjob.cpp:368
-msgid "Unmounting source medium"
-msgstr ""
-
-#: jobs/k3bcdcopyjob.cpp:363
-#, fuzzy
-msgid "Unable to read Table of contents"
-msgstr "टीओसी पढ़े मं अक्छम"
-
-#: jobs/k3bcdcopyjob.cpp:371
-msgid "Searching CD-TEXT"
-msgstr "सीडी-पाठ खोजत हे"
-
-#: jobs/k3bcdcopyjob.cpp:385
-#, kde-format
-msgid "Found CD-TEXT (%1 - %2)."
-msgstr "सीडी-पाठ मिलिस (%1 - %2)."
-
-#: jobs/k3bcdcopyjob.cpp:390
-msgid "Found corrupted CD-TEXT. Ignoring it."
-msgstr "खराब सीडी-पाठ मिलिस. एखर अनदेखा करत हे ."
-
-#: jobs/k3bcdcopyjob.cpp:395
-msgid "No CD-TEXT found."
-msgstr "कोई सीडी-पाठ नइ मिलिस."
-
-#: jobs/k3bcdcopyjob.cpp:406
-msgid "Querying Cddb"
-msgstr "सीडीडीबी क्वैरी करत हे "
-
-#: jobs/k3bcdcopyjob.cpp:427
-#, kde-format
-msgid "Found Cddb entry (%1 - %2)."
-msgstr "सीडीडीबी प्रविष्टि मिलिस (%1 - %2)."
-
-#: jobs/k3bcdcopyjob.cpp:450
-msgid "No Cddb entry found."
-msgstr "कोई सीडीडीबी प्रविस्टि नइ मिलिस."
-
-#: jobs/k3bcdcopyjob.cpp:453
-#, kde-format
-msgid "Cddb error (%1)."
-msgstr "सीडीडीबी गलती (%1)."
-
-#: jobs/k3bcdcopyjob.cpp:469
-#, kde-format
-msgid ""
-"Found CD-TEXT (%1 - %2) and Cddb (%3 - %4) entries. Which one should be used "
-"to generate the CD-TEXT on the new CD?"
-msgstr ""
-
-#: jobs/k3bcdcopyjob.cpp:475
-msgid "CD-TEXT"
-msgstr "सीडी-पाठ"
-
-#: jobs/k3bcdcopyjob.cpp:476
-msgid "Use CD-TEXT data"
-msgstr ""
-
-#: jobs/k3bcdcopyjob.cpp:477
-msgid "Use Cddb entry"
-msgstr ""
-
-#: jobs/k3bcdcopyjob.cpp:483 projects/k3bcdrdaowriter.cpp:520
-#: projects/k3bcdrecordwriter.cpp:435 projects/k3bgrowisofswriter.cpp:347
-msgid "Preparing write process..."
-msgstr "लिखे के काम बर तैयारी करत हे ..."
-
-#: jobs/k3bcdcopyjob.cpp:542 jobs/k3bcdcopyjob.cpp:588
-#: jobs/k3bdvdcopyjob.cpp:323
-msgid "Specified an unusable temporary path. Using default."
-msgstr "एक अनुपयोगी अस्थाई रस्ता निरधारित कर दे गे हे. डिफाल्ट के उपयोग करत हे."
-
-#: jobs/k3bcdcopyjob.cpp:553 projects/videodvd/k3bvideodvdimager.cpp:112
-#: projects/videodvd/k3bvideodvdimager.cpp:118
-#, fuzzy, kde-format
-#| msgid "Unable to create temporary directory '%1'."
-msgid "Unable to create temporary folder '%1'."
-msgstr "अस्थाई डिरेक्टरी '%1' बनाए मं अक्छम."
-
-#: jobs/k3bcdcopyjob.cpp:560
-#, fuzzy, kde-format
-#| msgid "Using temporary directory %1."
-msgid "Using temporary folder %1."
-msgstr "अस्थाई डिरेक्टरी %1 उपयोग करत हे."
-
-#: jobs/k3bcdcopyjob.cpp:583 jobs/k3bdvdcopyjob.cpp:318
-#, kde-format
-msgid "Do you want to overwrite %1?"
-msgstr "का आप मन %1 ल मेटाय के लिखना चाहथो ?"
-
-#: jobs/k3bcdcopyjob.cpp:584 jobs/k3bdvdcopyjob.cpp:319
-msgid "File Exists"
-msgstr "फाइल अस्तित्व मं हे"
-
-#: jobs/k3bcdcopyjob.cpp:593 jobs/k3bdvdcopyjob.cpp:328
-#, kde-format
-msgid "Writing image file to %1."
-msgstr "इमेज फाइल ल %1 मं लिखत हे."
-
-#: jobs/k3bcdcopyjob.cpp:609
-#, kde-format
-msgid "Reading Session %1"
-msgstr "सत्र %1 पढ़त हे"
-
-#: jobs/k3bcdcopyjob.cpp:611
-msgid "Reading Source Medium"
-msgstr ""
-
-#: jobs/k3bcdcopyjob.cpp:614 jobs/k3bcdcopyjob.cpp:1203
-#, kde-format
-msgid "Reading track %1 of %2"
-msgstr "%2 मं से %1 ट्रैक पढ़त हे"
-
-#: jobs/k3bcdcopyjob.cpp:707
-#, kde-format
-msgid "Simulating Session %1"
-msgstr "सत्र %1 सिमुलेट करत हे"
-
-#: jobs/k3bcdcopyjob.cpp:709
-#, kde-format
-msgid "Writing Copy %1 (Session %2)"
-msgstr "नकल %1 (सत्र %2) लिखत हे"
-
-#: jobs/k3bcdcopyjob.cpp:711
-#, kde-format
-msgid "Writing Copy (Session %1)"
-msgstr "नकल (सत्र %1) लिखत हे"
-
-#: jobs/k3bcdcopyjob.cpp:715 projects/audiocd/k3baudiojob.cpp:652
-#: projects/datacd/k3bdatajob.cpp:440 projects/k3bcdrdaowriter.cpp:562
-#: projects/k3bcdrdaowriter.cpp:580 projects/k3bcdrecordwriter.cpp:463
-#: projects/k3bgrowisofswriter.cpp:372 projects/mixedcd/k3bmixedjob.cpp:1013
-msgid "Simulating"
-msgstr "सिमुलेट करत हे"
-
-#: jobs/k3bcdcopyjob.cpp:717 projects/audiocd/k3baudiojob.cpp:654
-#: projects/datacd/k3bdatajob.cpp:442 projects/mixedcd/k3bmixedjob.cpp:1015
-#, kde-format
-msgid "Writing Copy %1"
-msgstr "नकल %1 लिखत हे"
-
-#: jobs/k3bcdcopyjob.cpp:719
-msgid "Writing Copy"
-msgstr "नकल लिखत हे"
-
-#: jobs/k3bcdcopyjob.cpp:723 jobs/k3bdvdbooktypejob.cpp:114
-#: projects/audiocd/k3baudiojob.cpp:659 projects/mixedcd/k3bmixedjob.cpp:1022
-msgid "Waiting for media"
-msgstr "मीडिया के इंतजार करत हे "
-
-#: jobs/k3bcdcopyjob.cpp:863 jobs/k3bmetawriter.cpp:469
-#: projects/audiocd/k3baudiojob.cpp:303
-msgid "It is not possible to write CD-Text in TAO mode."
-msgstr "टीएओ मोड मं सीडी-पाठ लिखना संभव नइ हे."
-
-#: jobs/k3bcdcopyjob.cpp:982
-#, kde-format
-msgid "Successfully read session %1."
-msgstr "सत्र %1 सफलतापूर्वक पढ़िस."
-
-#: jobs/k3bcdcopyjob.cpp:984
-msgid "Successfully read source disk."
-msgstr "स्रोत डिस्क सफलतापूर्वक पढ़िस."
-
-#: jobs/k3bcdcopyjob.cpp:999
-msgid "K3b was unable to eject the source disk. Please do so manually."
-msgstr ""
-
-#: jobs/k3bcdcopyjob.cpp:1016
-#, kde-format
-msgid "Error while reading session %1."
-msgstr "सत्र  %1 पढते समय गलती होइस."
-
-#: jobs/k3bcdcopyjob.cpp:1044 jobs/k3bverificationjob.cpp:109
-#: projects/mixedcd/k3bmixedjob.cpp:529
-msgid "Need to reload medium to return to proper state."
-msgstr ""
-
-#: jobs/k3bcdcopyjob.cpp:1045
-msgid "Reloading the medium"
-msgstr ""
-
-#: jobs/k3bcdcopyjob.cpp:1063 projects/audiocd/k3baudiojob.cpp:421
-#: projects/datacd/k3bdatajob.cpp:533 projects/mixedcd/k3bmixedjob.cpp:543
-#: projects/videocd/k3bvcdjob.cpp:506
-msgid "K3b was unable to eject the written disk. Please do so manually."
-msgstr ""
-
-#: jobs/k3bcdcopyjob.cpp:1101 jobs/k3bverificationjob.cpp:269
-#: projects/k3bcdrecordwriter.cpp:750 projects/mixedcd/k3bmixedjob.cpp:564
-msgid "Please reload the medium and press 'ok'"
-msgstr "किरपा करके, मीडिया ल फिर से लोड करव अउ 'ठीक' ल दबाव"
-
-#: jobs/k3bcdcopyjob.cpp:1102 jobs/k3bverificationjob.cpp:270
-#, fuzzy
-#| msgid "Unable to eject medium."
-msgid "Failed to reload the medium"
-msgstr "मीडिया ल बाहिर करे मं अक्छम."
-
-#: jobs/k3bcdcopyjob.cpp:1116 projects/audiocd/k3baudiojob.cpp:697
-msgid "Removing temporary files."
-msgstr "अस्थाई फाइल मन ल मिटात हे."
-
-#: jobs/k3bcdcopyjob.cpp:1122 jobs/k3bclonejob.cpp:346
-msgid "Removing image files."
-msgstr "इमेज फाइल मन ल मिटात हे."
-
-#: jobs/k3bcdcopyjob.cpp:1211
-msgid "Creating CD Image"
-msgstr "सीडी इमेज बनात हे"
-
-#: jobs/k3bcdcopyjob.cpp:1215
-msgid "Simulating CD Copy On-The-Fly"
-msgstr ""
-
-#: jobs/k3bcdcopyjob.cpp:1217
-msgid "Simulating CD Copy"
-msgstr "सीडी नकल सिमुलेट करत हे"
-
-#: jobs/k3bcdcopyjob.cpp:1221
-msgid "Copying CD On-The-Fly"
-msgstr ""
-
-#: jobs/k3bcdcopyjob.cpp:1223
-msgid "Copying CD"
-msgstr "सीडी नकल करत हे"
-
-#: jobs/k3bcdcopyjob.cpp:1230 jobs/k3bdvdcopyjob.cpp:956
-#, kde-format
-msgid "Creating 1 copy"
-msgid_plural "Creating %1 copies"
-msgstr[0] ""
-msgstr[1] ""
-
-#: jobs/k3bcdda2wavreader.cpp:97 jobs/k3bclonejob.cpp:88
-#: jobs/k3bdvdbooktypejob.cpp:288 jobs/k3bdvdformattingjob.cpp:464
-#: jobs/k3breadcdreader.cpp:106 projects/datacd/k3bmsinfofetcher.cpp:56
+#: jobs/k3bcdda2wavreader.cpp:97 jobs/k3bdvdbooktypejob.cpp:288
+#: jobs/k3bdvdformattingjob.cpp:464 jobs/k3breadcdreader.cpp:106
+#: jobs/k3bclonejob.cpp:89 projects/datacd/k3bmsinfofetcher.cpp:56
 #: projects/datacd/k3bmsinfofetcher.cpp:92 projects/k3bcdrdaowriter.cpp:447
 #: projects/k3bcdrecordwriter.cpp:214 projects/k3bgrowisofswriter.cpp:156
 #: projects/videocd/k3bvcdjob.cpp:204
@@ -474,83 +119,6 @@ msgstr "%1 ह एक अग्यात गलती लहुटाइस (क
 #, kde-format
 msgid "%1 did not exit cleanly."
 msgstr "%1 अच्छे तरीके से बाहिर नइ होइस."
-
-#: jobs/k3bclonejob.cpp:94
-#, kde-format
-msgid "Cdrecord version %1 does not have cloning support."
-msgstr "सीडी-रेकार्ड संस्करन %1 तिर कोनो क्लोनिंग समर्थन नइ मिलत हे."
-
-#: jobs/k3bclonejob.cpp:102
-msgid "No device set."
-msgstr "कोई उपकरन सेट नइ हे."
-
-#: jobs/k3bclonejob.cpp:111
-#, kde-format
-msgid "CD writer %1 (%2) does not support cloning."
-msgstr "सीडी-राइटर %1 (%2) क्लोनिंग के समर्थन नइ करथे."
-
-#: jobs/k3bclonejob.cpp:144
-msgid "Reading clone image"
-msgstr "क्लोन इमेज पढ़त हे"
-
-#: jobs/k3bclonejob.cpp:225 projects/datacd/k3bdatajob.cpp:471
-#: projects/videocd/k3bvcdjob.cpp:466
-#, kde-format
-msgid "Writing Track %1 of %2"
-msgstr "ट्रैक %2 मं से %1 लिखत हे "
-
-#: jobs/k3bclonejob.cpp:242
-#, kde-format
-msgid "Successfully written clone copy %1."
-msgstr "क्लोन नकल %1 सफलतापूर्वक लिखिस."
-
-#: jobs/k3bclonejob.cpp:290
-msgid "Successfully read disk."
-msgstr "डिस्क सफलतापूर्वक पढ़िस."
-
-#: jobs/k3bclonejob.cpp:302
-msgid "Failed to read disk completely in clone mode."
-msgstr ""
-
-#: jobs/k3bclonejob.cpp:309
-msgid "Error while reading disk."
-msgstr "डिस्क पढते समय गलती होइस."
-
-#: jobs/k3bclonejob.cpp:335
-msgid "Simulating clone copy"
-msgstr "क्लोन नकल सिमुलेट करत हे"
-
-#: jobs/k3bclonejob.cpp:337
-#, kde-format
-msgid "Writing clone copy %1"
-msgstr "क्लोन नकल %1 लिखत हे"
-
-#: jobs/k3bclonejob.cpp:358
-msgid "Creating Clone Image"
-msgstr "क्लोन इमेज बनात हे"
-
-#: jobs/k3bclonejob.cpp:361
-msgid "Simulating Clone Image"
-msgstr "क्लोन नकल सिमुलेट करत हे"
-
-#: jobs/k3bclonejob.cpp:363
-msgid "Burning Clone Image"
-msgstr "क्लोन इमेज बर्न करत हे"
-
-#: jobs/k3bclonejob.cpp:366
-msgid "Simulating CD Cloning"
-msgstr "सीडी क्लोनिंग सिमुलेट करत हे"
-
-#: jobs/k3bclonejob.cpp:368
-msgid "Cloning CD"
-msgstr "सीडी क्लोनिंग"
-
-#: jobs/k3bclonejob.cpp:374
-#, kde-format
-msgid "Creating 1 clone copy"
-msgid_plural "Creating %1 clone copies"
-msgstr[0] "१ क्लोन नकल बनात हे"
-msgstr[1] "%1 क्लोन नकल बनात हे"
 
 #: jobs/k3bdatatrackreader.cpp:178
 msgid "Unable to open libdvdcss."
@@ -611,6 +179,11 @@ msgstr ""
 msgid "No device set"
 msgstr "कोई उपकरन सेट नइ हे"
 
+#: jobs/k3bdvdbooktypejob.cpp:114 jobs/k3bcdcopyjob.cpp:724
+#: projects/audiocd/k3baudiojob.cpp:659 projects/mixedcd/k3bmixedjob.cpp:1022
+msgid "Waiting for media"
+msgstr "मीडिया के इंतजार करत हे "
+
 #: jobs/k3bdvdbooktypejob.cpp:119
 #, kde-format
 msgid ""
@@ -661,217 +234,6 @@ msgstr "मीडिया स्थिति निरधारित कर �
 #: jobs/k3bdvdbooktypejob.cpp:341
 msgid "Changing Booktype"
 msgstr "बुकटाइप बदलत हे"
-
-#: jobs/k3bdvdcopyjob.cpp:127
-#, kde-format
-msgid "K3b does not support writing on-the-fly with growisofs %1."
-msgstr "ग्रोआईएसओएफएस %1 के साथ के3बी आन-द-फ्लाई लिखना समर्थित नइ करे."
-
-#: jobs/k3bdvdcopyjob.cpp:129
-msgid "Disabling on-the-fly writing."
-msgstr "आन-द-फ्लाई लिखना अक्छम करत हे."
-
-#: jobs/k3bdvdcopyjob.cpp:164
-msgid "No source medium found."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:183
-msgid "Found encrypted DVD."
-msgstr "एनक्रिप्टेड डीवीडी मिलिस."
-
-#: jobs/k3bdvdcopyjob.cpp:199
-msgid "Cannot copy encrypted DVDs."
-msgstr "एनक्रिप्टेड डीवीडी के नकल नइ कर सके."
-
-#: jobs/k3bdvdcopyjob.cpp:235
-#, fuzzy
-#| msgid "The writer does not support writing Double Layer DVD."
-msgid "The writer does not support writing Double Layer DVDs."
-msgstr "राइटर डबल लेयर डीवीडी मं लिखना समर्थित नइ करे."
-
-#: jobs/k3bdvdcopyjob.cpp:242
-#, fuzzy
-#| msgid "The writer does not support writing Double Layer DVD."
-msgid "This growisofs version does not support writing Double Layer DVDs."
-msgstr "राइटर डबल लेयर डीवीडी मं लिखना समर्थित नइ करे."
-
-#: jobs/k3bdvdcopyjob.cpp:259
-msgid "K3b does not support copying multi-session DVD or Blu-ray disks."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:282
-msgid "K3b relies on the size saved in the ISO9660 header."
-msgstr "आईएसओ9660 हेडर मं सहेजे गे आकार मं के3बी निर्भर हे."
-
-#: jobs/k3bdvdcopyjob.cpp:283
-msgid ""
-"This might result in a corrupt copy if the source was mastered with buggy "
-"software."
-msgstr "यदि स्रोत ल बगी साफ्टवेयर के साथ मास्टर कर दे गे हे तहां एखर से खराब नकल बनेगी."
-
-#: jobs/k3bdvdcopyjob.cpp:290 jobs/k3bverificationjob.cpp:133
-#: jobs/k3bverificationjob.cpp:363
-msgid "Unable to determine the ISO9660 filesystem size."
-msgstr "आईएसओ9660 फाइलसिसटम आकार के पता लगाय मं अक्छम."
-
-#: jobs/k3bdvdcopyjob.cpp:299
-msgid "K3b does not support copying DVD-RAM."
-msgstr "के3बी डीवीडी-रैम के नकल करना समर्थित नइ करे."
-
-#: jobs/k3bdvdcopyjob.cpp:305
-msgid "Unsupported media type."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:329
-msgid "Reading source medium."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:373
-msgid "Creating image"
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:379
-msgid "Simulating copy"
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:381 jobs/k3bdvdcopyjob.cpp:596
-#: jobs/k3bdvdcopyjob.cpp:686 jobs/k3bdvdcopyjob.cpp:746
-#, kde-format
-msgid "Writing copy %1"
-msgstr "नकल %1 लिखत हे"
-
-#: jobs/k3bdvdcopyjob.cpp:383 jobs/k3bdvdcopyjob.cpp:598
-msgid "Writing copy"
-msgstr "नकल लिखत हे"
-
-#: jobs/k3bdvdcopyjob.cpp:573
-msgid "Successfully read source medium."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:585
-msgid "K3b was unable to eject the source medium. Please do so manually."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:646
-#, kde-format
-msgid "Successfully written copy %1."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:669
-#, kde-format
-msgid "Verifying copy %1"
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:671
-msgid "Verifying copy"
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:681 jobs/k3biso9660imagewritingjob.cpp:155
-msgid "K3b was unable to eject the written medium. Please do so manually."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:791
-#, kde-format
-msgid "Unsupported media type: %1"
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:817 jobs/k3bdvdcopyjob.cpp:910
-#: projects/datacd/k3bdatajob.cpp:825 projects/datacd/k3bdatajob.cpp:942
-#, kde-format
-msgid ""
-"%1 media do not support write simulation. Do you really want to continue? "
-"The disc will actually be written to."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:820 jobs/k3bdvdcopyjob.cpp:913
-#: projects/datacd/k3bdatajob.cpp:828 projects/datacd/k3bdatajob.cpp:945
-#, fuzzy, kde-format
-#| msgid "No Simulation with DVD+R(W)"
-msgid "No Simulation with %1"
-msgstr "डीवीडी+आर(डबल्यू) के साथ कोनो सिमुलेसन नइ"
-
-#: jobs/k3bdvdcopyjob.cpp:826
-msgid "Writing DVD copy"
-msgstr "डीवीडी नकल लिखत हे"
-
-#: jobs/k3bdvdcopyjob.cpp:830
-msgid "Writing mode ignored when writing DVD+R(W) media."
-msgstr "जब डीवीडी+आर(डबल्यू) मीडिया लिखे जाही तहां लिखे के मोड के अनदेखा करव."
-
-#: jobs/k3bdvdcopyjob.cpp:832 jobs/k3bdvdcopyjob.cpp:922
-#: jobs/k3bmetawriter.cpp:854 jobs/k3bmetawriter.cpp:863
-#: projects/datacd/k3bdatajob.cpp:850 projects/datacd/k3bdatajob.cpp:968
-#, kde-format
-msgid "Writing %1."
-msgstr "%1 लिखत हे."
-
-#: jobs/k3bdvdcopyjob.cpp:840 jobs/k3bmetawriter.cpp:506
-#: projects/datacd/k3bdatajob.cpp:858
-#, kde-format
-msgid ""
-"Your writer (%1 %2) does not support simulation with DVD-R(W) media. Do you "
-"really want to continue? The media will actually be written to."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:845 jobs/k3bmetawriter.cpp:511
-#: projects/datacd/k3bdatajob.cpp:863
-msgid "No Simulation with DVD-R(W)"
-msgstr "डीवीडी-आर(डबल्यू) के साथ कोनो सिमुलेसन नइ"
-
-#: jobs/k3bdvdcopyjob.cpp:866 jobs/k3bmetawriter.cpp:850
-#: projects/datacd/k3bdatajob.cpp:877
-msgid "Writing DVD-RW in restricted overwrite mode."
-msgstr "डीवीडी-आरडबल्यू सीमित ओवरराइट मोड मं लिखत हे. "
-
-#: jobs/k3bdvdcopyjob.cpp:874
-msgid "Writing DVD-RW in DAO mode."
-msgstr "डीवीडी-आरडबल्यू सीमित डीएओ मोड मं लिखत हे. "
-
-#: jobs/k3bdvdcopyjob.cpp:878
-msgid "Writing DVD-RW in incremental mode."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:887 jobs/k3bmetawriter.cpp:443
-#: jobs/k3bmetawriter.cpp:492 projects/datacd/k3bdatajob.cpp:918
-msgid "Restricted Overwrite is not possible with DVD-R media."
-msgstr "डीवीडी-आर मीडिया के साथ सीमित ओवरराइट मोड संभव नइ हे."
-
-#: jobs/k3bdvdcopyjob.cpp:892 jobs/k3bmetawriter.cpp:856
-#: projects/datacd/k3bdatajob.cpp:894 projects/datacd/k3bdatajob.cpp:911
-#, kde-format
-msgid "Writing %1 in DAO mode."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:896 jobs/k3bmetawriter.cpp:858
-#: projects/datacd/k3bdatajob.cpp:920
-#, kde-format
-msgid "Writing %1 in incremental mode."
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:919
-#, fuzzy
-#| msgid "Writing DVD copy"
-msgid "Writing BD copy"
-msgstr "डीवीडी नकल लिखत हे"
-
-#: jobs/k3bdvdcopyjob.cpp:935 projects/datacd/k3bdatajob.cpp:1024
-#, kde-format
-msgid "Removed image file %1"
-msgstr "इमेज फाइल %1 ल मेटाय गिस"
-
-#: jobs/k3bdvdcopyjob.cpp:943
-msgid "Creating Image"
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:947
-msgid "Copying DVD or BD On-The-Fly"
-msgstr ""
-
-#: jobs/k3bdvdcopyjob.cpp:949
-#, fuzzy
-#| msgid "Copying Data CD."
-msgid "Copying DVD or BD"
-msgstr "डाटा सीडी नकल करत हे..."
 
 #: jobs/k3bdvdformattingjob.cpp:101
 #, fuzzy
@@ -991,46 +353,6 @@ msgstr "उपयोग करत हे %1 %2 - कापीराइट (C) %3
 msgid "Formatting"
 msgstr "फार्मेट करत हे"
 
-#: jobs/k3biso9660imagewritingjob.cpp:90 projects/audiocd/k3baudiojob.cpp:156
-#: projects/datacd/k3bdatajob.cpp:150 projects/mixedcd/k3bmixedjob.cpp:222
-msgid "Preparing data"
-msgstr "डाटा तैयार करव"
-
-#: jobs/k3biso9660imagewritingjob.cpp:93
-#, kde-format
-msgid "Could not find image %1"
-msgstr "इमेज '%1' खोज नइ सकिस"
-
-#: jobs/k3biso9660imagewritingjob.cpp:139 projects/datacd/k3bdatajob.cpp:524
-msgid "Verifying written data"
-msgstr "लिखिस डाटा ल सत्यापित करत हे"
-
-#: jobs/k3biso9660imagewritingjob.cpp:141
-#, kde-format
-msgid "Verifying written copy %1 of %2"
-msgstr "लिखे गे नकल %2 मं से %1 ल सत्यापित करत हे"
-
-#: jobs/k3biso9660imagewritingjob.cpp:214
-msgid "Writing image"
-msgstr "इमेज ल लिखत हे."
-
-#: jobs/k3biso9660imagewritingjob.cpp:216
-#, kde-format
-msgid "Writing copy %1 of %2"
-msgstr "%2 मं से %1 के नकल करत हे "
-
-#: jobs/k3biso9660imagewritingjob.cpp:235
-msgid "Waiting for medium"
-msgstr ""
-
-#: jobs/k3biso9660imagewritingjob.cpp:342
-msgid "Simulating ISO9660 Image"
-msgstr ""
-
-#: jobs/k3biso9660imagewritingjob.cpp:344
-msgid "Burning ISO9660 Image"
-msgstr ""
-
 #: jobs/k3bmetawriter.cpp:304 projects/datacd/k3bdatajob.cpp:783
 #: projects/datacd/k3bdatajob.cpp:806
 #, kde-format
@@ -1050,6 +372,11 @@ msgstr ""
 msgid "Track lengths below 4 seconds violate the Red Book standard."
 msgstr ""
 
+#: jobs/k3bmetawriter.cpp:443 jobs/k3bmetawriter.cpp:492
+#: jobs/k3bdvdcopyjob.cpp:888 projects/datacd/k3bdatajob.cpp:918
+msgid "Restricted Overwrite is not possible with DVD-R media."
+msgstr "डीवीडी-आर मीडिया के साथ सीमित ओवरराइट मोड संभव नइ हे."
+
 #: jobs/k3bmetawriter.cpp:457 projects/audiocd/k3baudiojob.cpp:291
 #: projects/mixedcd/k3bmixedjob.cpp:1235
 msgid "On-the-fly writing with cdrecord < 2.01a13 not supported."
@@ -1060,6 +387,11 @@ msgstr "सीडीरेकार्ड < 2.01a13 के साथ आन-द-
 #, kde-format
 msgid "Cdrecord %1 does not support CD-Text writing."
 msgstr "सीडीरेकार्ड %1 सीडी-पाठ लिखना समर्थित नइ करे."
+
+#: jobs/k3bmetawriter.cpp:469 jobs/k3bcdcopyjob.cpp:864
+#: projects/audiocd/k3baudiojob.cpp:303
+msgid "It is not possible to write CD-Text in TAO mode."
+msgstr "टीएओ मोड मं सीडी-पाठ लिखना संभव नइ हे."
 
 #: jobs/k3bmetawriter.cpp:476 projects/datacd/k3bdatajob.cpp:901
 #, kde-format
@@ -1081,6 +413,19 @@ msgstr ""
 #: jobs/k3bmetawriter.cpp:500
 msgid "No Simulation with DVD+R(W)"
 msgstr "डीवीडी+आर(डबल्यू) के साथ कोनो सिमुलेसन नइ"
+
+#: jobs/k3bmetawriter.cpp:506 jobs/k3bdvdcopyjob.cpp:841
+#: projects/datacd/k3bdatajob.cpp:858
+#, kde-format
+msgid ""
+"Your writer (%1 %2) does not support simulation with DVD-R(W) media. Do you "
+"really want to continue? The media will actually be written to."
+msgstr ""
+
+#: jobs/k3bmetawriter.cpp:511 jobs/k3bdvdcopyjob.cpp:846
+#: projects/datacd/k3bdatajob.cpp:863
+msgid "No Simulation with DVD-R(W)"
+msgstr "डीवीडी-आर(डबल्यू) के साथ कोनो सिमुलेसन नइ"
 
 #: jobs/k3bmetawriter.cpp:526 projects/datacd/k3bdatajob.cpp:1054
 msgid "Most writers do not support writing multisession CDs in DAO mode."
@@ -1156,9 +501,33 @@ msgstr "डबल लेयर डीवीडी+आर लिखत हे"
 msgid "Appending session to %1."
 msgstr "सत्र %1 पढ़त हे"
 
+#: jobs/k3bmetawriter.cpp:850 jobs/k3bdvdcopyjob.cpp:867
+#: projects/datacd/k3bdatajob.cpp:877
+msgid "Writing DVD-RW in restricted overwrite mode."
+msgstr "डीवीडी-आरडबल्यू सीमित ओवरराइट मोड मं लिखत हे. "
+
 #: jobs/k3bmetawriter.cpp:852
 msgid "Writing Double Layer DVD+R."
 msgstr "डबल लेयर डीवीडी+आर लिखत हे"
+
+#: jobs/k3bmetawriter.cpp:854 jobs/k3bmetawriter.cpp:863
+#: jobs/k3bdvdcopyjob.cpp:833 jobs/k3bdvdcopyjob.cpp:923
+#: projects/datacd/k3bdatajob.cpp:850 projects/datacd/k3bdatajob.cpp:968
+#, kde-format
+msgid "Writing %1."
+msgstr "%1 लिखत हे."
+
+#: jobs/k3bmetawriter.cpp:856 jobs/k3bdvdcopyjob.cpp:893
+#: projects/datacd/k3bdatajob.cpp:894 projects/datacd/k3bdatajob.cpp:911
+#, kde-format
+msgid "Writing %1 in DAO mode."
+msgstr ""
+
+#: jobs/k3bmetawriter.cpp:858 jobs/k3bdvdcopyjob.cpp:897
+#: projects/datacd/k3bdatajob.cpp:920
+#, kde-format
+msgid "Writing %1 in incremental mode."
+msgstr ""
 
 #: jobs/k3breadcdreader.cpp:123
 #, kde-format
@@ -1206,6 +575,16 @@ msgstr "%1 हर गलती: %2 लौटाई"
 msgid "Readcd exited abnormally."
 msgstr "रीडसीडी असादा रूप से बाहिर होइस."
 
+#: jobs/k3bverificationjob.cpp:109 jobs/k3bcdcopyjob.cpp:1045
+#: projects/mixedcd/k3bmixedjob.cpp:529
+msgid "Need to reload medium to return to proper state."
+msgstr ""
+
+#: jobs/k3bverificationjob.cpp:133 jobs/k3bverificationjob.cpp:363
+#: jobs/k3bdvdcopyjob.cpp:291
+msgid "Unable to determine the ISO9660 filesystem size."
+msgstr "आईएसओ9660 फाइलसिसटम आकार के पता लगाय मं अक्छम."
+
 #: jobs/k3bverificationjob.cpp:231
 msgid "no tracks added"
 msgstr ""
@@ -1215,6 +594,17 @@ msgstr ""
 #, kde-format
 msgid "Internal Error: Verification job improperly initialized (%1)"
 msgstr ""
+
+#: jobs/k3bverificationjob.cpp:269 jobs/k3bcdcopyjob.cpp:1102
+#: projects/k3bcdrecordwriter.cpp:750 projects/mixedcd/k3bmixedjob.cpp:564
+msgid "Please reload the medium and press 'ok'"
+msgstr "किरपा करके, मीडिया ल फिर से लोड करव अउ 'ठीक' ल दबाव"
+
+#: jobs/k3bverificationjob.cpp:270 jobs/k3bcdcopyjob.cpp:1103
+#, fuzzy
+#| msgid "Unable to eject medium."
+msgid "Failed to reload the medium"
+msgstr "मीडिया ल बाहिर करे मं अक्छम."
 
 #: jobs/k3bverificationjob.cpp:287 jobs/k3bverificationjob.cpp:310
 #, kde-format
@@ -1408,6 +798,624 @@ msgstr ""
 msgid ""
 "With this setting K3b will create a two-channel stereo MPEG1 Layer III audio "
 "stream."
+msgstr ""
+
+#: jobs/k3baudiocuefilewritingjob.cpp:114
+msgid "Writing Audio Cue File"
+msgstr ""
+
+#: jobs/k3baudiocuefilewritingjob.cpp:212
+msgid "Analysing the audio file failed. Corrupt file?"
+msgstr ""
+
+#: jobs/k3baudiocuefilewritingjob.cpp:280
+msgid "Analysing the audio file"
+msgstr ""
+
+#: jobs/k3baudiocuefilewritingjob.cpp:281
+#, kde-format
+msgid "Analysing %1"
+msgstr ""
+
+#: jobs/k3baudiocuefilewritingjob.cpp:288
+#, kde-format
+msgid "Unable to handle '%1' due to an unsupported format."
+msgstr ""
+
+#: jobs/k3baudiocuefilewritingjob.cpp:293
+#, kde-format
+msgid "No valid audio cue file: '%1'"
+msgstr ""
+
+#: jobs/k3bbinimagewritingjob.cpp:61
+msgid "Write Binary Image"
+msgstr "बाइनरी इमेज लिखव"
+
+#: jobs/k3bbinimagewritingjob.cpp:189
+#, fuzzy, kde-format
+#| msgid "%1 copy successfully created"
+#| msgid_plural "%1 copies successfully created"
+msgid "One copy successfully created"
+msgid_plural "%1 copies successfully created"
+msgstr[0] "%1 नकल सफलतापूर्वक बनाइस"
+msgstr[1] "%1 नकल सफलतापूर्वक बनाइस"
+
+#: jobs/k3bbinimagewritingjob.cpp:205 jobs/k3bcdcopyjob.cpp:1182
+#: jobs/k3bcdcopyjob.cpp:1184 jobs/k3bcdcopyjob.cpp:1187
+#: jobs/k3bcdcopyjob.cpp:1189
+#, kde-format
+msgid "Writing track %1 of %2"
+msgstr "ट्रैक %2 मं से %1 लिखत हे "
+
+#: jobs/k3bbinimagewritingjob.cpp:211
+msgid "Writing cue/bin Image"
+msgstr ""
+
+#: jobs/k3bbinimagewritingjob.cpp:213 jobs/k3biso9660imagewritingjob.cpp:347
+#, kde-format
+msgid " - %1 Copy"
+msgid_plural " - %1 Copies"
+msgstr[0] " - %1 नकल"
+msgstr[1] " - %1 नकल"
+
+#: jobs/k3bcdcopyjob.cpp:163 jobs/k3bdvdcopyjob.cpp:123
+msgid "Checking Source Medium"
+msgstr ""
+
+#: jobs/k3bcdcopyjob.cpp:166 jobs/k3bdvdcopyjob.cpp:133
+msgid "Waiting for source medium"
+msgstr ""
+
+#: jobs/k3bcdcopyjob.cpp:176 jobs/k3bdvdcopyjob.cpp:145
+msgid "Checking source medium"
+msgstr ""
+
+#: jobs/k3bcdcopyjob.cpp:204
+msgid "K3b does not copy CDs containing multiple data tracks."
+msgstr "के3बी ओखर सीडी के नकल नइ कर सके जऊन मं मल्टीपल डाटा ट्रैक हे."
+
+#: jobs/k3bcdcopyjob.cpp:208
+msgid "Copying Multisession Data CD."
+msgstr "मल्टीसेसन डाटा सीडी नकल करत हे."
+
+#: jobs/k3bcdcopyjob.cpp:210
+msgid "Copying Data CD."
+msgstr "डाटा सीडी नकल करत हे..."
+
+#: jobs/k3bcdcopyjob.cpp:216
+msgid "K3b can only copy CD-Extra mixed mode CDs."
+msgstr "के3बी सिरिफ सीडी-एक्सट्रा मिक्स मोड सीडी के नकल कर सकथे."
+
+#: jobs/k3bcdcopyjob.cpp:220
+msgid "Copying Enhanced Audio CD (CD-Extra)."
+msgstr "एन हैस्ड आडियो सीडी (सीडी-एक्स्ट्रा) नकल करत हे."
+
+#: jobs/k3bcdcopyjob.cpp:225
+msgid "Copying Audio CD."
+msgstr "आडियो सीडी नकल करत हे."
+
+#: jobs/k3bcdcopyjob.cpp:230
+msgid "The source disk is empty."
+msgstr "स्रोत डिस्क खाली हे."
+
+#: jobs/k3bcdcopyjob.cpp:272
+msgid "K3b needs cdrecord 2.01a12 or newer to copy Mode2 data tracks."
+msgstr "मोड2 डाटा ट्रैक्स के नकल करे बर के3बी ल सीडीरेकार्ड 2.01a12 या नवा चाही."
+
+#: jobs/k3bcdcopyjob.cpp:284
+msgid ""
+"You will only be able to copy the first session in raw writing mode. "
+"Continue anyway?"
+msgstr "आप पहिली सत्र मं रा राइटिंग मोड मं ही सक्छम हो पाहू. जइसन भी हो जारी रखव?"
+
+#: jobs/k3bcdcopyjob.cpp:286
+msgid "Multisession CD"
+msgstr "मल्टीसेसन सीडी"
+
+#: jobs/k3bcdcopyjob.cpp:291
+msgid "Only copying first session."
+msgstr "सिरिफ पहिली सत्र के नकल करत हे ."
+
+#: jobs/k3bcdcopyjob.cpp:320 jobs/k3bdvdcopyjob.cpp:345
+#, fuzzy, kde-format
+#| msgid "Unable to determine free space in temporary directory '%1'."
+msgid "Unable to determine free space in temporary folder '%1'."
+msgstr "अस्थाई डिरेक्टरी '%1' मं खाली जगह के पता कर पाय मं अक्छम."
+
+#: jobs/k3bcdcopyjob.cpp:326 jobs/k3bdvdcopyjob.cpp:352
+#, fuzzy
+#| msgid "Not enough space left in temporary directory."
+msgid "Not enough space left in temporary folder."
+msgstr "अस्थाई डिरेक्टरी मं बहुत जगह नइ बचिस हे."
+
+#: jobs/k3bcdcopyjob.cpp:335 jobs/k3bdvdcopyjob.cpp:369
+msgid "Unmounting source medium"
+msgstr ""
+
+#: jobs/k3bcdcopyjob.cpp:364
+#, fuzzy
+msgid "Unable to read Table of contents"
+msgstr "टीओसी पढ़े मं अक्छम"
+
+#: jobs/k3bcdcopyjob.cpp:372
+msgid "Searching CD-TEXT"
+msgstr "सीडी-पाठ खोजत हे"
+
+#: jobs/k3bcdcopyjob.cpp:386
+#, kde-format
+msgid "Found CD-TEXT (%1 - %2)."
+msgstr "सीडी-पाठ मिलिस (%1 - %2)."
+
+#: jobs/k3bcdcopyjob.cpp:391
+msgid "Found corrupted CD-TEXT. Ignoring it."
+msgstr "खराब सीडी-पाठ मिलिस. एखर अनदेखा करत हे ."
+
+#: jobs/k3bcdcopyjob.cpp:396
+msgid "No CD-TEXT found."
+msgstr "कोई सीडी-पाठ नइ मिलिस."
+
+#: jobs/k3bcdcopyjob.cpp:407
+msgid "Querying Cddb"
+msgstr "सीडीडीबी क्वैरी करत हे "
+
+#: jobs/k3bcdcopyjob.cpp:428
+#, kde-format
+msgid "Found Cddb entry (%1 - %2)."
+msgstr "सीडीडीबी प्रविष्टि मिलिस (%1 - %2)."
+
+#: jobs/k3bcdcopyjob.cpp:451
+msgid "No Cddb entry found."
+msgstr "कोई सीडीडीबी प्रविस्टि नइ मिलिस."
+
+#: jobs/k3bcdcopyjob.cpp:454
+#, kde-format
+msgid "Cddb error (%1)."
+msgstr "सीडीडीबी गलती (%1)."
+
+#: jobs/k3bcdcopyjob.cpp:470
+#, kde-format
+msgid ""
+"Found CD-TEXT (%1 - %2) and Cddb (%3 - %4) entries. Which one should be used "
+"to generate the CD-TEXT on the new CD?"
+msgstr ""
+
+#: jobs/k3bcdcopyjob.cpp:476
+msgid "CD-TEXT"
+msgstr "सीडी-पाठ"
+
+#: jobs/k3bcdcopyjob.cpp:477
+msgid "Use CD-TEXT data"
+msgstr ""
+
+#: jobs/k3bcdcopyjob.cpp:478
+msgid "Use Cddb entry"
+msgstr ""
+
+#: jobs/k3bcdcopyjob.cpp:484 projects/k3bcdrdaowriter.cpp:520
+#: projects/k3bcdrecordwriter.cpp:435 projects/k3bgrowisofswriter.cpp:347
+msgid "Preparing write process..."
+msgstr "लिखे के काम बर तैयारी करत हे ..."
+
+#: jobs/k3bcdcopyjob.cpp:543 jobs/k3bcdcopyjob.cpp:589
+#: jobs/k3bdvdcopyjob.cpp:324
+msgid "Specified an unusable temporary path. Using default."
+msgstr "एक अनुपयोगी अस्थाई रस्ता निरधारित कर दे गे हे. डिफाल्ट के उपयोग करत हे."
+
+#: jobs/k3bcdcopyjob.cpp:554 projects/videodvd/k3bvideodvdimager.cpp:112
+#: projects/videodvd/k3bvideodvdimager.cpp:118
+#, fuzzy, kde-format
+#| msgid "Unable to create temporary directory '%1'."
+msgid "Unable to create temporary folder '%1'."
+msgstr "अस्थाई डिरेक्टरी '%1' बनाए मं अक्छम."
+
+#: jobs/k3bcdcopyjob.cpp:561
+#, fuzzy, kde-format
+#| msgid "Using temporary directory %1."
+msgid "Using temporary folder %1."
+msgstr "अस्थाई डिरेक्टरी %1 उपयोग करत हे."
+
+#: jobs/k3bcdcopyjob.cpp:584 jobs/k3bdvdcopyjob.cpp:319
+#, kde-format
+msgid "Do you want to overwrite %1?"
+msgstr "का आप मन %1 ल मेटाय के लिखना चाहथो ?"
+
+#: jobs/k3bcdcopyjob.cpp:585 jobs/k3bdvdcopyjob.cpp:320
+msgid "File Exists"
+msgstr "फाइल अस्तित्व मं हे"
+
+#: jobs/k3bcdcopyjob.cpp:594 jobs/k3bdvdcopyjob.cpp:329
+#, kde-format
+msgid "Writing image file to %1."
+msgstr "इमेज फाइल ल %1 मं लिखत हे."
+
+#: jobs/k3bcdcopyjob.cpp:610
+#, kde-format
+msgid "Reading Session %1"
+msgstr "सत्र %1 पढ़त हे"
+
+#: jobs/k3bcdcopyjob.cpp:612
+msgid "Reading Source Medium"
+msgstr ""
+
+#: jobs/k3bcdcopyjob.cpp:615 jobs/k3bcdcopyjob.cpp:1204
+#, kde-format
+msgid "Reading track %1 of %2"
+msgstr "%2 मं से %1 ट्रैक पढ़त हे"
+
+#: jobs/k3bcdcopyjob.cpp:708
+#, kde-format
+msgid "Simulating Session %1"
+msgstr "सत्र %1 सिमुलेट करत हे"
+
+#: jobs/k3bcdcopyjob.cpp:710
+#, kde-format
+msgid "Writing Copy %1 (Session %2)"
+msgstr "नकल %1 (सत्र %2) लिखत हे"
+
+#: jobs/k3bcdcopyjob.cpp:712
+#, kde-format
+msgid "Writing Copy (Session %1)"
+msgstr "नकल (सत्र %1) लिखत हे"
+
+#: jobs/k3bcdcopyjob.cpp:716 projects/audiocd/k3baudiojob.cpp:652
+#: projects/datacd/k3bdatajob.cpp:440 projects/k3bcdrdaowriter.cpp:562
+#: projects/k3bcdrdaowriter.cpp:580 projects/k3bcdrecordwriter.cpp:463
+#: projects/k3bgrowisofswriter.cpp:372 projects/mixedcd/k3bmixedjob.cpp:1013
+msgid "Simulating"
+msgstr "सिमुलेट करत हे"
+
+#: jobs/k3bcdcopyjob.cpp:718 projects/audiocd/k3baudiojob.cpp:654
+#: projects/datacd/k3bdatajob.cpp:442 projects/mixedcd/k3bmixedjob.cpp:1015
+#, kde-format
+msgid "Writing Copy %1"
+msgstr "नकल %1 लिखत हे"
+
+#: jobs/k3bcdcopyjob.cpp:720
+msgid "Writing Copy"
+msgstr "नकल लिखत हे"
+
+#: jobs/k3bcdcopyjob.cpp:983
+#, kde-format
+msgid "Successfully read session %1."
+msgstr "सत्र %1 सफलतापूर्वक पढ़िस."
+
+#: jobs/k3bcdcopyjob.cpp:985
+msgid "Successfully read source disk."
+msgstr "स्रोत डिस्क सफलतापूर्वक पढ़िस."
+
+#: jobs/k3bcdcopyjob.cpp:1000
+msgid "K3b was unable to eject the source disk. Please do so manually."
+msgstr ""
+
+#: jobs/k3bcdcopyjob.cpp:1017
+#, kde-format
+msgid "Error while reading session %1."
+msgstr "सत्र  %1 पढते समय गलती होइस."
+
+#: jobs/k3bcdcopyjob.cpp:1046
+msgid "Reloading the medium"
+msgstr ""
+
+#: jobs/k3bcdcopyjob.cpp:1064 projects/audiocd/k3baudiojob.cpp:421
+#: projects/datacd/k3bdatajob.cpp:533 projects/mixedcd/k3bmixedjob.cpp:543
+#: projects/videocd/k3bvcdjob.cpp:506
+msgid "K3b was unable to eject the written disk. Please do so manually."
+msgstr ""
+
+#: jobs/k3bcdcopyjob.cpp:1117 projects/audiocd/k3baudiojob.cpp:697
+msgid "Removing temporary files."
+msgstr "अस्थाई फाइल मन ल मिटात हे."
+
+#: jobs/k3bcdcopyjob.cpp:1123 jobs/k3bclonejob.cpp:347
+msgid "Removing image files."
+msgstr "इमेज फाइल मन ल मिटात हे."
+
+#: jobs/k3bcdcopyjob.cpp:1212
+msgid "Creating CD Image"
+msgstr "सीडी इमेज बनात हे"
+
+#: jobs/k3bcdcopyjob.cpp:1216
+msgid "Simulating CD Copy On-The-Fly"
+msgstr ""
+
+#: jobs/k3bcdcopyjob.cpp:1218
+msgid "Simulating CD Copy"
+msgstr "सीडी नकल सिमुलेट करत हे"
+
+#: jobs/k3bcdcopyjob.cpp:1222
+msgid "Copying CD On-The-Fly"
+msgstr ""
+
+#: jobs/k3bcdcopyjob.cpp:1224
+msgid "Copying CD"
+msgstr "सीडी नकल करत हे"
+
+#: jobs/k3bcdcopyjob.cpp:1231 jobs/k3bdvdcopyjob.cpp:957
+#, kde-format
+msgid "Creating 1 copy"
+msgid_plural "Creating %1 copies"
+msgstr[0] ""
+msgstr[1] ""
+
+#: jobs/k3bclonejob.cpp:95
+#, kde-format
+msgid "Cdrecord version %1 does not have cloning support."
+msgstr "सीडी-रेकार्ड संस्करन %1 तिर कोनो क्लोनिंग समर्थन नइ मिलत हे."
+
+#: jobs/k3bclonejob.cpp:103
+msgid "No device set."
+msgstr "कोई उपकरन सेट नइ हे."
+
+#: jobs/k3bclonejob.cpp:112
+#, kde-format
+msgid "CD writer %1 (%2) does not support cloning."
+msgstr "सीडी-राइटर %1 (%2) क्लोनिंग के समर्थन नइ करथे."
+
+#: jobs/k3bclonejob.cpp:145
+msgid "Reading clone image"
+msgstr "क्लोन इमेज पढ़त हे"
+
+#: jobs/k3bclonejob.cpp:226 projects/datacd/k3bdatajob.cpp:471
+#: projects/videocd/k3bvcdjob.cpp:466
+#, kde-format
+msgid "Writing Track %1 of %2"
+msgstr "ट्रैक %2 मं से %1 लिखत हे "
+
+#: jobs/k3bclonejob.cpp:243
+#, kde-format
+msgid "Successfully written clone copy %1."
+msgstr "क्लोन नकल %1 सफलतापूर्वक लिखिस."
+
+#: jobs/k3bclonejob.cpp:291
+msgid "Successfully read disk."
+msgstr "डिस्क सफलतापूर्वक पढ़िस."
+
+#: jobs/k3bclonejob.cpp:303
+msgid "Failed to read disk completely in clone mode."
+msgstr ""
+
+#: jobs/k3bclonejob.cpp:310
+msgid "Error while reading disk."
+msgstr "डिस्क पढते समय गलती होइस."
+
+#: jobs/k3bclonejob.cpp:336
+msgid "Simulating clone copy"
+msgstr "क्लोन नकल सिमुलेट करत हे"
+
+#: jobs/k3bclonejob.cpp:338
+#, kde-format
+msgid "Writing clone copy %1"
+msgstr "क्लोन नकल %1 लिखत हे"
+
+#: jobs/k3bclonejob.cpp:359
+msgid "Creating Clone Image"
+msgstr "क्लोन इमेज बनात हे"
+
+#: jobs/k3bclonejob.cpp:362
+msgid "Simulating Clone Image"
+msgstr "क्लोन नकल सिमुलेट करत हे"
+
+#: jobs/k3bclonejob.cpp:364
+msgid "Burning Clone Image"
+msgstr "क्लोन इमेज बर्न करत हे"
+
+#: jobs/k3bclonejob.cpp:367
+msgid "Simulating CD Cloning"
+msgstr "सीडी क्लोनिंग सिमुलेट करत हे"
+
+#: jobs/k3bclonejob.cpp:369
+msgid "Cloning CD"
+msgstr "सीडी क्लोनिंग"
+
+#: jobs/k3bclonejob.cpp:375
+#, kde-format
+msgid "Creating 1 clone copy"
+msgid_plural "Creating %1 clone copies"
+msgstr[0] "१ क्लोन नकल बनात हे"
+msgstr[1] "%1 क्लोन नकल बनात हे"
+
+#: jobs/k3bdvdcopyjob.cpp:128
+#, kde-format
+msgid "K3b does not support writing on-the-fly with growisofs %1."
+msgstr "ग्रोआईएसओएफएस %1 के साथ के3बी आन-द-फ्लाई लिखना समर्थित नइ करे."
+
+#: jobs/k3bdvdcopyjob.cpp:130
+msgid "Disabling on-the-fly writing."
+msgstr "आन-द-फ्लाई लिखना अक्छम करत हे."
+
+#: jobs/k3bdvdcopyjob.cpp:165
+msgid "No source medium found."
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:184
+msgid "Found encrypted DVD."
+msgstr "एनक्रिप्टेड डीवीडी मिलिस."
+
+#: jobs/k3bdvdcopyjob.cpp:200
+msgid "Cannot copy encrypted DVDs."
+msgstr "एनक्रिप्टेड डीवीडी के नकल नइ कर सके."
+
+#: jobs/k3bdvdcopyjob.cpp:236
+#, fuzzy
+#| msgid "The writer does not support writing Double Layer DVD."
+msgid "The writer does not support writing Double Layer DVDs."
+msgstr "राइटर डबल लेयर डीवीडी मं लिखना समर्थित नइ करे."
+
+#: jobs/k3bdvdcopyjob.cpp:243
+#, fuzzy
+#| msgid "The writer does not support writing Double Layer DVD."
+msgid "This growisofs version does not support writing Double Layer DVDs."
+msgstr "राइटर डबल लेयर डीवीडी मं लिखना समर्थित नइ करे."
+
+#: jobs/k3bdvdcopyjob.cpp:260
+msgid "K3b does not support copying multi-session DVD or Blu-ray disks."
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:283
+msgid "K3b relies on the size saved in the ISO9660 header."
+msgstr "आईएसओ9660 हेडर मं सहेजे गे आकार मं के3बी निर्भर हे."
+
+#: jobs/k3bdvdcopyjob.cpp:284
+msgid ""
+"This might result in a corrupt copy if the source was mastered with buggy "
+"software."
+msgstr "यदि स्रोत ल बगी साफ्टवेयर के साथ मास्टर कर दे गे हे तहां एखर से खराब नकल बनेगी."
+
+#: jobs/k3bdvdcopyjob.cpp:300
+msgid "K3b does not support copying DVD-RAM."
+msgstr "के3बी डीवीडी-रैम के नकल करना समर्थित नइ करे."
+
+#: jobs/k3bdvdcopyjob.cpp:306
+msgid "Unsupported media type."
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:330
+msgid "Reading source medium."
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:374
+msgid "Creating image"
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:380
+msgid "Simulating copy"
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:382 jobs/k3bdvdcopyjob.cpp:597
+#: jobs/k3bdvdcopyjob.cpp:687 jobs/k3bdvdcopyjob.cpp:747
+#, kde-format
+msgid "Writing copy %1"
+msgstr "नकल %1 लिखत हे"
+
+#: jobs/k3bdvdcopyjob.cpp:384 jobs/k3bdvdcopyjob.cpp:599
+msgid "Writing copy"
+msgstr "नकल लिखत हे"
+
+#: jobs/k3bdvdcopyjob.cpp:574
+msgid "Successfully read source medium."
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:586
+msgid "K3b was unable to eject the source medium. Please do so manually."
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:647
+#, kde-format
+msgid "Successfully written copy %1."
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:670
+#, kde-format
+msgid "Verifying copy %1"
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:672
+msgid "Verifying copy"
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:682 jobs/k3biso9660imagewritingjob.cpp:156
+msgid "K3b was unable to eject the written medium. Please do so manually."
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:792
+#, kde-format
+msgid "Unsupported media type: %1"
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:818 jobs/k3bdvdcopyjob.cpp:911
+#: projects/datacd/k3bdatajob.cpp:825 projects/datacd/k3bdatajob.cpp:942
+#, kde-format
+msgid ""
+"%1 media do not support write simulation. Do you really want to continue? "
+"The disc will actually be written to."
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:821 jobs/k3bdvdcopyjob.cpp:914
+#: projects/datacd/k3bdatajob.cpp:828 projects/datacd/k3bdatajob.cpp:945
+#, fuzzy, kde-format
+#| msgid "No Simulation with DVD+R(W)"
+msgid "No Simulation with %1"
+msgstr "डीवीडी+आर(डबल्यू) के साथ कोनो सिमुलेसन नइ"
+
+#: jobs/k3bdvdcopyjob.cpp:827
+msgid "Writing DVD copy"
+msgstr "डीवीडी नकल लिखत हे"
+
+#: jobs/k3bdvdcopyjob.cpp:831
+msgid "Writing mode ignored when writing DVD+R(W) media."
+msgstr "जब डीवीडी+आर(डबल्यू) मीडिया लिखे जाही तहां लिखे के मोड के अनदेखा करव."
+
+#: jobs/k3bdvdcopyjob.cpp:875
+msgid "Writing DVD-RW in DAO mode."
+msgstr "डीवीडी-आरडबल्यू सीमित डीएओ मोड मं लिखत हे. "
+
+#: jobs/k3bdvdcopyjob.cpp:879
+msgid "Writing DVD-RW in incremental mode."
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:920
+#, fuzzy
+#| msgid "Writing DVD copy"
+msgid "Writing BD copy"
+msgstr "डीवीडी नकल लिखत हे"
+
+#: jobs/k3bdvdcopyjob.cpp:936 projects/datacd/k3bdatajob.cpp:1024
+#, kde-format
+msgid "Removed image file %1"
+msgstr "इमेज फाइल %1 ल मेटाय गिस"
+
+#: jobs/k3bdvdcopyjob.cpp:944
+msgid "Creating Image"
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:948
+msgid "Copying DVD or BD On-The-Fly"
+msgstr ""
+
+#: jobs/k3bdvdcopyjob.cpp:950
+#, fuzzy
+#| msgid "Copying Data CD."
+msgid "Copying DVD or BD"
+msgstr "डाटा सीडी नकल करत हे..."
+
+#: jobs/k3biso9660imagewritingjob.cpp:91 projects/audiocd/k3baudiojob.cpp:156
+#: projects/datacd/k3bdatajob.cpp:150 projects/mixedcd/k3bmixedjob.cpp:222
+msgid "Preparing data"
+msgstr "डाटा तैयार करव"
+
+#: jobs/k3biso9660imagewritingjob.cpp:94
+#, kde-format
+msgid "Could not find image %1"
+msgstr "इमेज '%1' खोज नइ सकिस"
+
+#: jobs/k3biso9660imagewritingjob.cpp:140 projects/datacd/k3bdatajob.cpp:524
+msgid "Verifying written data"
+msgstr "लिखिस डाटा ल सत्यापित करत हे"
+
+#: jobs/k3biso9660imagewritingjob.cpp:142
+#, kde-format
+msgid "Verifying written copy %1 of %2"
+msgstr "लिखे गे नकल %2 मं से %1 ल सत्यापित करत हे"
+
+#: jobs/k3biso9660imagewritingjob.cpp:215
+msgid "Writing image"
+msgstr "इमेज ल लिखत हे."
+
+#: jobs/k3biso9660imagewritingjob.cpp:217
+#, kde-format
+msgid "Writing copy %1 of %2"
+msgstr "%2 मं से %1 के नकल करत हे "
+
+#: jobs/k3biso9660imagewritingjob.cpp:236
+msgid "Waiting for medium"
+msgstr ""
+
+#: jobs/k3biso9660imagewritingjob.cpp:343
+msgid "Simulating ISO9660 Image"
+msgstr ""
+
+#: jobs/k3biso9660imagewritingjob.cpp:345
+msgid "Burning ISO9660 Image"
 msgstr ""
 
 #: plugin/k3baudiodecoder.cpp:597
