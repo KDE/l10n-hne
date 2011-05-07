@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kolourpaint4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-23 03:56+0200\n"
+"POT-Creation-Date: 2011-05-07 04:02+0200\n"
 "PO-Revision-Date: 2009-02-26 15:35+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -202,10 +202,16 @@ msgid "Flood Fill"
 msgstr "पूरा भरव"
 
 #: dialogs/imagelib/effects/kpEffectsDialog.cpp:91
+#, fuzzy
+#| msgid "More Image Effects (Selection)"
+msgctxt "@title:window"
 msgid "More Image Effects (Selection)"
 msgstr "अधिक फोटू प्रभाव (चयन)"
 
 #: dialogs/imagelib/effects/kpEffectsDialog.cpp:93
+#, fuzzy
+#| msgid "More Image Effects"
+msgctxt "@title:window"
 msgid "More Image Effects"
 msgstr "अधिक फोटू प्रभाव"
 
@@ -221,8 +227,421 @@ msgstr "रंग कम करव"
 msgid "Soften & Sharpen"
 msgstr "मृदु करव अउ सुस्पस्ट करव"
 
+#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:131
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:292
+msgid "Dimensions"
+msgstr "आयाम"
+
+#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:133
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:299
+msgid "Original:"
+msgstr "असली:"
+
+#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:137
+#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:242
+#: mainWindow/kpMainWindow_StatusBar.cpp:86
+#: mainWindow/kpMainWindow_StatusBar.cpp:230
+#, kde-format
+msgid "%1 x %2"
+msgstr "%1 x %2"
+
+#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:166
+#: dialogs/kpColorSimilarityDialog.cpp:53
+msgid "Preview"
+msgstr "प्रिव्यू"
+
+#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:173
+#: dialogs/kpColorSimilarityDialog.cpp:58
+msgid "&Update"
+msgstr "अपडेट (&U)"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:102
+#, fuzzy
+#| msgid "Resize / Scale"
+msgctxt "@title:window"
+msgid "Resize / Scale"
+msgstr "नवा आकार / स्केल"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:165
+msgid "Ac&t on:"
+msgstr "काम: (&t)"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:171
+msgid "Entire Image"
+msgstr "पूरा फोटू"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:174
+#: layers/selections/image/kpAbstractImageSelection.cpp:202
+msgid "Selection"
+msgstr "चयन"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:177
+msgid "Text Box"
+msgstr "पाठ डब्बा"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:215
+msgid "Operation"
+msgstr "आपरेसन"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:217
+msgid ""
+"<qt><ul><li><b>Resize</b>: The size of the picture will be increased by "
+"creating new areas to the right and/or bottom (filled in with the background "
+"color) or decreased by cutting it at the right and/or bottom.</"
+"li><li><b>Scale</b>: The picture will be expanded by duplicating pixels or "
+"squashed by dropping pixels.</li><li><b>Smooth Scale</b>: This is the same "
+"as <i>Scale</i> except that it blends neighboring pixels to produce a "
+"smoother looking picture.</li></ul></qt>"
+msgstr ""
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:238
+msgid "&Resize"
+msgstr "नवा-आकार (&R)"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:243
+msgid "&Scale"
+msgstr "स्केल (&S)"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:248
+msgid "S&mooth Scale"
+msgstr "मृदु स्केल (&m)"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:294
+msgid "Width:"
+msgstr "चौडाईः"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:296
+msgid "Height:"
+msgstr "ऊँचाईः"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:303
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:310
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:320
+msgid "x"
+msgstr "एक्स"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:308
+msgid "&New:"
+msgstr "नवाः (&N)"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:313
+msgid "&Percent:"
+msgstr "प्रतिसत: (&P)"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:319
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:326
+#: dialogs/kpColorSimilarityDialog.cpp:79
+msgid "%"
+msgstr "%"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:328
+msgid "Keep &aspect ratio"
+msgstr "आस्पेक्ट रेसो बनाए रखव (&a)"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:695
+#, kde-format
+msgid ""
+"<qt><p>Resizing the text box to %1x%2 may take a substantial amount of "
+"memory. This can reduce system responsiveness and cause other application "
+"resource problems.</p><p>Are you sure you want to resize the text box?</p></"
+"qt>"
+msgstr ""
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:703
+#, fuzzy
+#| msgid "Resize Text Box?"
+msgctxt "@title:window"
+msgid "Resize Text Box?"
+msgstr "पाठ डब्बा ल नवा आकार देव?"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:704
+msgid "R&esize Text Box"
+msgstr "पाठ डब्बा नवा आकार (&e)"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:709
+#, kde-format
+msgid ""
+"<qt><p>Resizing the image to %1x%2 may take a substantial amount of memory. "
+"This can reduce system responsiveness and cause other application resource "
+"problems.</p><p>Are you sure you want to resize the image?</p></qt>"
+msgstr ""
+"<qt><p>फोटू ल %1x%2  नवा आकार दे मं एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
+"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
+"p><p>का आप मन सही मं फोटू ल नवा आकार देना चाहथो ?</p></qt>"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:717
+#: mainWindow/kpMainWindow_Tools.cpp:670
+#, fuzzy
+#| msgid "Resize Image?"
+msgctxt "@title:window"
+msgid "Resize Image?"
+msgstr "फोटू ल नवा आकार देव?"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:718
+#: mainWindow/kpMainWindow_Tools.cpp:671
+msgid "R&esize Image"
+msgstr "फोटू ल नवा आकार देव (&e)"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:727
+#, kde-format
+msgid ""
+"<qt><p>Scaling the image to %1x%2 may take a substantial amount of memory. "
+"This can reduce system responsiveness and cause other application resource "
+"problems.</p><p>Are you sure you want to scale the image?</p></qt>"
+msgstr ""
+"<qt><p>फोटू ल %1x%2  स्केल करे मं एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
+"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
+"p><p>का आप मन सही मं फोटू ल स्केल करना चाहथो ?</p></qt>"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:735
+#, fuzzy
+#| msgid "Scale Image?"
+msgctxt "@title:window"
+msgid "Scale Image?"
+msgstr "फोटू आकार बदलव?"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:736
+msgid "Scal&e Image"
+msgstr "फोटू स्केल करव (&e)"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:741
+#, kde-format
+msgid ""
+"<qt><p>Scaling the selection to %1x%2 may take a substantial amount of "
+"memory. This can reduce system responsiveness and cause other application "
+"resource problems.</p><p>Are you sure you want to scale the selection?</p></"
+"qt>"
+msgstr ""
+"<qt><p>चुने गे ल %1x%2  स्केल करे बर एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
+"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
+"p><p>का आप मन सही मं चुने गे ल स्केल करना चाहथो ?</p></qt>"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:749
+#, fuzzy
+#| msgid "Scale Selection?"
+msgctxt "@title:window"
+msgid "Scale Selection?"
+msgstr "चयन स्केल करव?"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:750
+msgid "Scal&e Selection"
+msgstr "चयन स्केल करव (&e)"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:759
+#, kde-format
+msgid ""
+"<qt><p>Smooth Scaling the image to %1x%2 may take a substantial amount of "
+"memory. This can reduce system responsiveness and cause other application "
+"resource problems.</p><p>Are you sure you want to smooth scale the image?</"
+"p></qt>"
+msgstr ""
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:767
+#, fuzzy
+#| msgid "Smooth Scale Image?"
+msgctxt "@title:window"
+msgid "Smooth Scale Image?"
+msgstr "फोटू मृदु स्केल करव?"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:768
+msgid "Smooth Scal&e Image"
+msgstr "फोटू मृदु स्केल करव (&e)"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:773
+#, kde-format
+msgid ""
+"<qt><p>Smooth Scaling the selection to %1x%2 may take a substantial amount "
+"of memory. This can reduce system responsiveness and cause other application "
+"resource problems.</p><p>Are you sure you want to smooth scale the selection?"
+"</p></qt>"
+msgstr ""
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:781
+#, fuzzy
+#| msgid "Smooth Scale Selection?"
+msgctxt "@title:window"
+msgid "Smooth Scale Selection?"
+msgstr "चयन मृदु स्केल करव?"
+
+#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:782
+msgid "Smooth Scal&e Selection"
+msgstr "चयन मृदु स्केल करव (&e)"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:70
+#, fuzzy
+#| msgid "Rotate Selection"
+msgctxt "@title:window"
+msgid "Rotate Selection"
+msgstr "चयन घुमाव"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:70
+#, fuzzy
+#| msgid "Rotate Image"
+msgctxt "@title:window"
+msgid "Rotate Image"
+msgstr "फोटू घुमाव"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:71
+msgid "After rotate:"
+msgstr "घुमाय के बाद:"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:99
+msgid "Direction"
+msgstr "दिसा"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:110
+msgid "Cou&nterclockwise"
+msgstr "घड़ी के उलटा दिसा मं (&n)"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:111
+msgid "C&lockwise"
+msgstr "घड़ी के दिसा मं (&l)"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:136
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:101
+msgid "Angle"
+msgstr "कोन"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:140
+msgid "90 &degrees"
+msgstr "90 अंस (&d)"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:141
+msgid "180 d&egrees"
+msgstr "180 अंस (&e)"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:142
+msgid "270 de&grees"
+msgstr "270 अंस (&g)"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:144
+msgid "C&ustom:"
+msgstr "मनमाफिक: (&u)"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:148
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:113
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:124
+msgid "degrees"
+msgstr "कोन"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:271
+#, kde-format
+msgid ""
+"<qt><p>Rotating the selection to %1x%2 may take a substantial amount of "
+"memory. This can reduce system responsiveness and cause other application "
+"resource problems.</p><p>Are you sure want to rotate the selection?</p></qt>"
+msgstr ""
+"<qt><p>चुने गे ल %1x%2  घुमाय मं एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
+"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
+"p><p>का आप मन सही मं चुने गे ल घुमाना चाहथो ?</p></qt>"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:279
+#, fuzzy
+#| msgid "Rotate Selection?"
+msgctxt "@title:window"
+msgid "Rotate Selection?"
+msgstr "चयन घुमाव?"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:280
+msgid "Rotat&e Selection"
+msgstr "चयन घुमाव (&e)"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:286
+#, kde-format
+msgid ""
+"<qt><p>Rotating the image to %1x%2 may take a substantial amount of memory. "
+"This can reduce system responsiveness and cause other application resource "
+"problems.</p><p>Are you sure want to rotate the image?</p></qt>"
+msgstr ""
+"<qt><p>फोटू ल %1x%2  घुमाय मं एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
+"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
+"p><p>का आप मन सही मं फोटू ल घुमाना चाहथो ?</p></qt>"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:294
+#, fuzzy
+#| msgid "Rotate Image?"
+msgctxt "@title:window"
+msgid "Rotate Image?"
+msgstr "फोटू घुमाव?"
+
+#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:295
+msgid "Rotat&e Image"
+msgstr "फोटू घुमाव (&e)"
+
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:70
+#, fuzzy
+#| msgid "Skew Selection"
+msgctxt "@title:window"
+msgid "Skew Selection"
+msgstr "चयन मोड़ें"
+
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:70
+#, fuzzy
+#| msgid "Skew Image"
+msgctxt "@title:window"
+msgid "Skew Image"
+msgstr "फोटू मोड़ें"
+
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:71
+msgid "After skew:"
+msgstr "मोड़ने के बाद:"
+
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:108
+msgid "&Horizontal:"
+msgstr "आड़ा: (&H)"
+
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:119
+msgid "&Vertical:"
+msgstr "खड़ा: (&V)"
+
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:252
+#, kde-format
+msgid ""
+"<qt><p>Skewing the selection to %1x%2 may take a substantial amount of "
+"memory. This can reduce system responsiveness and cause other application "
+"resource problems.</p><p>Are you sure want to skew the selection?</p></qt>"
+msgstr ""
+"<qt><p>चुने गे ल %1x%2  स्क्यू करे मं एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
+"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
+"p><p>का आप मन सही मं चुने गे ल स्क्यू करना चाहथो ?</p></qt>"
+
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:260
+#, fuzzy
+#| msgid "Skew Selection?"
+msgctxt "@title:window"
+msgid "Skew Selection?"
+msgstr "चयन मोड़ें?"
+
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:261
+msgid "Sk&ew Selection"
+msgstr "चयन मोड़ें (&e)"
+
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:267
+#, kde-format
+msgid ""
+"<qt><p>Skewing the image to %1x%2 may take a substantial amount of memory. "
+"This can reduce system responsiveness and cause other application resource "
+"problems.</p><p>Are you sure want to skew the image?</p></qt>"
+msgstr ""
+"<qt><p>फोटू ल %1x%2  स्क्यू करे मं एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
+"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
+"p><p>का आप मन सही मं फोटू ल स्क्यू करना चाहथो ?</p></qt>"
+
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:275
+#, fuzzy
+#| msgid "Skew Image?"
+msgctxt "@title:window"
+msgid "Skew Image?"
+msgstr "फोटू मोड़ें?"
+
+#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:276
+msgid "Sk&ew Image"
+msgstr "फोटू मोड़ें (&e)"
+
 #: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:123
-#: mainWindow/kpMainWindow_File.cpp:711
+#, fuzzy
+#| msgid "Document Properties"
+msgctxt "@title:window"
 msgid "Document Properties"
 msgstr "कागद गुन"
 
@@ -327,388 +746,16 @@ msgstr ""
 "जइसन  हे."
 
 #: dialogs/imagelib/kpDocumentMetaInfoDialog.cpp:831
+#, fuzzy
+#| msgid "Invalid Text Fields"
+msgctxt "@title:window"
 msgid "Invalid Text Fields"
 msgstr "अवैध पाठ फील्ड"
 
-#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:131
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:292
-msgid "Dimensions"
-msgstr "आयाम"
-
-#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:133
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:299
-msgid "Original:"
-msgstr "असली:"
-
-#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:137
-#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:242
-#: mainWindow/kpMainWindow_StatusBar.cpp:86
-#: mainWindow/kpMainWindow_StatusBar.cpp:230
-#, kde-format
-msgid "%1 x %2"
-msgstr "%1 x %2"
-
-#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:166
-#: dialogs/kpColorSimilarityDialog.cpp:53
-msgid "Preview"
-msgstr "प्रिव्यू"
-
-#: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:173
-#: dialogs/kpColorSimilarityDialog.cpp:58
-msgid "&Update"
-msgstr "अपडेट (&U)"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:102
-msgid "Resize / Scale"
-msgstr "नवा आकार / स्केल"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:165
-msgid "Ac&t on:"
-msgstr "काम: (&t)"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:171
-msgid "Entire Image"
-msgstr "पूरा फोटू"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:174
-#: layers/selections/image/kpAbstractImageSelection.cpp:202
-msgid "Selection"
-msgstr "चयन"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:177
-msgid "Text Box"
-msgstr "पाठ डब्बा"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:215
-msgid "Operation"
-msgstr "आपरेसन"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:217
-msgid ""
-"<qt><ul><li><b>Resize</b>: The size of the picture will be increased by "
-"creating new areas to the right and/or bottom (filled in with the background "
-"color) or decreased by cutting it at the right and/or bottom.</"
-"li><li><b>Scale</b>: The picture will be expanded by duplicating pixels or "
-"squashed by dropping pixels.</li><li><b>Smooth Scale</b>: This is the same "
-"as <i>Scale</i> except that it blends neighboring pixels to produce a "
-"smoother looking picture.</li></ul></qt>"
-msgstr ""
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:238
-msgid "&Resize"
-msgstr "नवा-आकार (&R)"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:243
-msgid "&Scale"
-msgstr "स्केल (&S)"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:248
-msgid "S&mooth Scale"
-msgstr "मृदु स्केल (&m)"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:294
-msgid "Width:"
-msgstr "चौडाईः"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:296
-msgid "Height:"
-msgstr "ऊँचाईः"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:303
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:310
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:320
-msgid "x"
-msgstr "एक्स"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:308
-msgid "&New:"
-msgstr "नवाः (&N)"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:313
-msgid "&Percent:"
-msgstr "प्रतिसत: (&P)"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:319
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:326
-#: dialogs/kpColorSimilarityDialog.cpp:79
-msgid "%"
-msgstr "%"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:328
-msgid "Keep &aspect ratio"
-msgstr "आस्पेक्ट रेसो बनाए रखव (&a)"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:695
-#, kde-format
-msgid ""
-"<qt><p>Resizing the text box to %1x%2 may take a substantial amount of "
-"memory. This can reduce system responsiveness and cause other application "
-"resource problems.</p><p>Are you sure you want to resize the text box?</p></"
-"qt>"
-msgstr ""
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:703
-msgid "Resize Text Box?"
-msgstr "पाठ डब्बा ल नवा आकार देव?"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:704
-msgid "R&esize Text Box"
-msgstr "पाठ डब्बा नवा आकार (&e)"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:709
-#, kde-format
-msgid ""
-"<qt><p>Resizing the image to %1x%2 may take a substantial amount of memory. "
-"This can reduce system responsiveness and cause other application resource "
-"problems.</p><p>Are you sure you want to resize the image?</p></qt>"
-msgstr ""
-"<qt><p>फोटू ल %1x%2  नवा आकार दे मं एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
-"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
-"p><p>का आप मन सही मं फोटू ल नवा आकार देना चाहथो ?</p></qt>"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:717
-#: mainWindow/kpMainWindow_Tools.cpp:670
-msgid "Resize Image?"
-msgstr "फोटू ल नवा आकार देव?"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:718
-#: mainWindow/kpMainWindow_Tools.cpp:671
-msgid "R&esize Image"
-msgstr "फोटू ल नवा आकार देव (&e)"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:727
-#, kde-format
-msgid ""
-"<qt><p>Scaling the image to %1x%2 may take a substantial amount of memory. "
-"This can reduce system responsiveness and cause other application resource "
-"problems.</p><p>Are you sure you want to scale the image?</p></qt>"
-msgstr ""
-"<qt><p>फोटू ल %1x%2  स्केल करे मं एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
-"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
-"p><p>का आप मन सही मं फोटू ल स्केल करना चाहथो ?</p></qt>"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:735
-msgid "Scale Image?"
-msgstr "फोटू आकार बदलव?"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:736
-msgid "Scal&e Image"
-msgstr "फोटू स्केल करव (&e)"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:741
-#, kde-format
-msgid ""
-"<qt><p>Scaling the selection to %1x%2 may take a substantial amount of "
-"memory. This can reduce system responsiveness and cause other application "
-"resource problems.</p><p>Are you sure you want to scale the selection?</p></"
-"qt>"
-msgstr ""
-"<qt><p>चुने गे ल %1x%2  स्केल करे बर एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
-"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
-"p><p>का आप मन सही मं चुने गे ल स्केल करना चाहथो ?</p></qt>"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:749
-msgid "Scale Selection?"
-msgstr "चयन स्केल करव?"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:750
-msgid "Scal&e Selection"
-msgstr "चयन स्केल करव (&e)"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:759
-#, kde-format
-msgid ""
-"<qt><p>Smooth Scaling the image to %1x%2 may take a substantial amount of "
-"memory. This can reduce system responsiveness and cause other application "
-"resource problems.</p><p>Are you sure you want to smooth scale the image?</"
-"p></qt>"
-msgstr ""
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:767
-msgid "Smooth Scale Image?"
-msgstr "फोटू मृदु स्केल करव?"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:768
-msgid "Smooth Scal&e Image"
-msgstr "फोटू मृदु स्केल करव (&e)"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:773
-#, kde-format
-msgid ""
-"<qt><p>Smooth Scaling the selection to %1x%2 may take a substantial amount "
-"of memory. This can reduce system responsiveness and cause other application "
-"resource problems.</p><p>Are you sure you want to smooth scale the selection?"
-"</p></qt>"
-msgstr ""
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:781
-msgid "Smooth Scale Selection?"
-msgstr "चयन मृदु स्केल करव?"
-
-#: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:782
-msgid "Smooth Scal&e Selection"
-msgstr "चयन मृदु स्केल करव (&e)"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:70
-msgid "Rotate Selection"
-msgstr "चयन घुमाव"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:70
-msgid "Rotate Image"
-msgstr "फोटू घुमाव"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:71
-msgid "After rotate:"
-msgstr "घुमाय के बाद:"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:99
-msgid "Direction"
-msgstr "दिसा"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:110
-msgid "Cou&nterclockwise"
-msgstr "घड़ी के उलटा दिसा मं (&n)"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:111
-msgid "C&lockwise"
-msgstr "घड़ी के दिसा मं (&l)"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:136
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:101
-msgid "Angle"
-msgstr "कोन"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:140
-msgid "90 &degrees"
-msgstr "90 अंस (&d)"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:141
-msgid "180 d&egrees"
-msgstr "180 अंस (&e)"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:142
-msgid "270 de&grees"
-msgstr "270 अंस (&g)"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:144
-msgid "C&ustom:"
-msgstr "मनमाफिक: (&u)"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:148
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:113
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:124
-msgid "degrees"
-msgstr "कोन"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:271
-#, kde-format
-msgid ""
-"<qt><p>Rotating the selection to %1x%2 may take a substantial amount of "
-"memory. This can reduce system responsiveness and cause other application "
-"resource problems.</p><p>Are you sure want to rotate the selection?</p></qt>"
-msgstr ""
-"<qt><p>चुने गे ल %1x%2  घुमाय मं एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
-"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
-"p><p>का आप मन सही मं चुने गे ल घुमाना चाहथो ?</p></qt>"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:279
-msgid "Rotate Selection?"
-msgstr "चयन घुमाव?"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:280
-msgid "Rotat&e Selection"
-msgstr "चयन घुमाव (&e)"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:286
-#, kde-format
-msgid ""
-"<qt><p>Rotating the image to %1x%2 may take a substantial amount of memory. "
-"This can reduce system responsiveness and cause other application resource "
-"problems.</p><p>Are you sure want to rotate the image?</p></qt>"
-msgstr ""
-"<qt><p>फोटू ल %1x%2  घुमाय मं एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
-"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
-"p><p>का आप मन सही मं फोटू ल घुमाना चाहथो ?</p></qt>"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:294
-msgid "Rotate Image?"
-msgstr "फोटू घुमाव?"
-
-#: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:295
-msgid "Rotat&e Image"
-msgstr "फोटू घुमाव (&e)"
-
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:70
-msgid "Skew Selection"
-msgstr "चयन मोड़ें"
-
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:70
-msgid "Skew Image"
-msgstr "फोटू मोड़ें"
-
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:71
-msgid "After skew:"
-msgstr "मोड़ने के बाद:"
-
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:108
-msgid "&Horizontal:"
-msgstr "आड़ा: (&H)"
-
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:119
-msgid "&Vertical:"
-msgstr "खड़ा: (&V)"
-
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:252
-#, kde-format
-msgid ""
-"<qt><p>Skewing the selection to %1x%2 may take a substantial amount of "
-"memory. This can reduce system responsiveness and cause other application "
-"resource problems.</p><p>Are you sure want to skew the selection?</p></qt>"
-msgstr ""
-"<qt><p>चुने गे ल %1x%2  स्क्यू करे मं एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
-"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
-"p><p>का आप मन सही मं चुने गे ल स्क्यू करना चाहथो ?</p></qt>"
-
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:260
-msgid "Skew Selection?"
-msgstr "चयन मोड़ें?"
-
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:261
-msgid "Sk&ew Selection"
-msgstr "चयन मोड़ें (&e)"
-
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:267
-#, kde-format
-msgid ""
-"<qt><p>Skewing the image to %1x%2 may take a substantial amount of memory. "
-"This can reduce system responsiveness and cause other application resource "
-"problems.</p><p>Are you sure want to skew the image?</p></qt>"
-msgstr ""
-"<qt><p>फोटू ल %1x%2  स्क्यू करे मं एला बहुत से तंत्र मेमोरी के जरूरत होगी. ए सिसटम के "
-"रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
-"p><p>का आप मन सही मं फोटू ल स्क्यू करना चाहथो ?</p></qt>"
-
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:275
-msgid "Skew Image?"
-msgstr "फोटू मोड़ें?"
-
-#: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:276
-msgid "Sk&ew Image"
-msgstr "फोटू मोड़ें (&e)"
-
-#: dialogs/kpDocumentSaveOptionsPreviewDialog.cpp:62
-#: dialogs/kpDocumentSaveOptionsPreviewDialog.cpp:68
-msgid "Save Preview"
-msgstr "प्रिव्यू सहेजव"
-
-#: dialogs/kpDocumentSaveOptionsPreviewDialog.cpp:140
-#, kde-format
-msgid "1 byte (approx. %2%)"
-msgid_plural "%1 bytes (approx. %2%)"
-msgstr[0] ""
-msgstr[1] ""
-
 #: dialogs/kpColorSimilarityDialog.cpp:47
+#, fuzzy
+#| msgid "Color Similarity"
+msgctxt "@title:window"
 msgid "Color Similarity"
 msgstr "रंग एकरूपता"
 
@@ -723,6 +770,24 @@ msgstr "सटीक जोड़ीदार"
 #: dialogs/kpColorSimilarityDialog.cpp:85
 msgid "<a href=\"dummy_to_make_link_clickable\">What is Color Similarity?</a>"
 msgstr "<a href=\"dummy_to_make_link_clickable\">रंग सिमिलेरिटी के हे?</a>"
+
+#: dialogs/kpDocumentSaveOptionsPreviewDialog.cpp:62
+msgid "Save Preview"
+msgstr "प्रिव्यू सहेजव"
+
+#: dialogs/kpDocumentSaveOptionsPreviewDialog.cpp:68
+#, fuzzy
+#| msgid "Save Preview"
+msgctxt "@title:window"
+msgid "Save Preview"
+msgstr "प्रिव्यू सहेजव"
+
+#: dialogs/kpDocumentSaveOptionsPreviewDialog.cpp:140
+#, kde-format
+msgid "1 byte (approx. %2%)"
+msgid_plural "%1 bytes (approx. %2%)"
+msgstr[0] ""
+msgstr[1] ""
 
 #: document/kpDocument_Open.cpp:107
 #, kde-format
@@ -761,6 +826,9 @@ msgstr ""
 "माइम-किसिम: %2"
 
 #: document/kpDocument_Save.cpp:95
+#, fuzzy
+#| msgid "Internal Error"
+msgctxt "@title:window"
 msgid "Internal Error"
 msgstr "अंदर के गलती"
 
@@ -773,6 +841,9 @@ msgid ""
 msgstr ""
 
 #: document/kpDocument_Save.cpp:136
+#, fuzzy
+#| msgid "Lossy File Format"
+msgctxt "@title:window"
 msgid "Lossy File Format"
 msgstr "लासी फाइल फार्मेट"
 
@@ -785,6 +856,9 @@ msgid ""
 msgstr ""
 
 #: document/kpDocument_Save.cpp:155
+#, fuzzy
+#| msgid "Low Color Depth"
+msgctxt "@title:window"
 msgid "Low Color Depth"
 msgstr "कम रंग गहराई"
 
@@ -849,6 +923,9 @@ msgstr ""
 "कलरपेंट चुने गे के अंदर के किनारा ल मिटा नइ सकिस काबर कि एला चिनहित नइ कर सकिस."
 
 #: imagelib/transforms/kpTransformAutoCrop.cpp:624
+#, fuzzy
+#| msgid "Cannot Remove Internal Border"
+msgctxt "@title:window"
 msgid "Cannot Remove Internal Border"
 msgstr "अंदर के किनारा ल नइ मिटा सकिस."
 
@@ -859,6 +936,9 @@ msgid ""
 msgstr "कलरपेंट फोटू ल अपने अपन काट नइ सकिस काबर कि एखर किनारा चिनहित नइ कर सकिस."
 
 #: imagelib/transforms/kpTransformAutoCrop.cpp:632
+#, fuzzy
+#| msgid "Cannot Autocrop"
+msgctxt "@title:window"
 msgid "Cannot Autocrop"
 msgstr "अपने अपन कांट-छांट नइ कर सकिस"
 
@@ -951,10 +1031,6 @@ msgstr "बहुत से दूसर ल घलोक धन्यवाद 
 msgid "Image file to open"
 msgstr "फोटू फाइल जऊन ल खोलना हे"
 
-#: kpThumbnail.cpp:126
-msgid "Thumbnail"
-msgstr "छोटे फोटू"
-
 #: layers/selections/text/kpTextSelection.cpp:136
 #: tools/selection/text/kpToolText.cpp:59
 msgid "Text"
@@ -997,133 +1073,6 @@ msgstr ""
 #: widgets/toolbars/kpColorToolBar.cpp:268
 msgid "Untitled"
 msgstr "बिना सीर्सक"
-
-#: mainWindow/kpMainWindow_Colors.cpp:59
-msgid "Use KolourPaint Defaults"
-msgstr "कलरपेंट डिफाल्ट उपयोग करव"
-
-#: mainWindow/kpMainWindow_Colors.cpp:64
-#, fuzzy
-#| msgid "Use KDE's"
-msgctxt "@item:inmenu colors"
-msgid "Use KDE's"
-msgstr "केडीई के उपयोग करव"
-
-#: mainWindow/kpMainWindow_Colors.cpp:73
-#, fuzzy
-#| msgid "&Open..."
-msgctxt "@item:inmenu colors"
-msgid "&Open..."
-msgstr "खोलव... (&O)"
-
-#: mainWindow/kpMainWindow_Colors.cpp:78
-#, fuzzy
-#| msgid "Reloa&d"
-msgctxt "@item:inmenu colors"
-msgid "Reloa&d"
-msgstr "फिर से लोड करव (&d)"
-
-#: mainWindow/kpMainWindow_Colors.cpp:84
-#, fuzzy
-#| msgid "&Save"
-msgctxt "@item:inmenu colors"
-msgid "&Save"
-msgstr "सहेजव (&S)"
-
-#: mainWindow/kpMainWindow_Colors.cpp:89
-#, fuzzy
-#| msgid "Save &As..."
-msgctxt "@item:inmenu colors"
-msgid "Save &As..."
-msgstr "अइसन सहेजव (&A)"
-
-#: mainWindow/kpMainWindow_Colors.cpp:95
-#, fuzzy
-#| msgid "Add Row"
-msgctxt "@item:inmenu colors"
-msgid "Add Row"
-msgstr "लकीर जोड़व"
-
-#: mainWindow/kpMainWindow_Colors.cpp:100
-#, fuzzy
-#| msgid "Delete Last Row"
-msgctxt "@item:inmenu colors"
-msgid "Delete Last Row"
-msgstr "पिछला लकीर मेटाव"
-
-#: mainWindow/kpMainWindow_Colors.cpp:111
-msgid "Color Box"
-msgstr "रंग डब्बा"
-
-#: mainWindow/kpMainWindow_Colors.cpp:187
-#, kde-format
-msgid ""
-"The color palette \"%1\" has been modified.\n"
-"Do you want to save it?"
-msgstr ""
-"रंग पैलेट \"%1\" सुधार दे गे हे.\n"
-" का आप मन एला सहेजना चाहथो ?"
-
-#: mainWindow/kpMainWindow_Colors.cpp:199
-#, kde-format
-msgid ""
-"The KDE color palette \"%1\" has been modified.\n"
-"Do you want to save it to a file?"
-msgstr ""
-"केडीई रंग पैलेट \"%1\" परिवर्धित करिस.\n"
-"का आप मन एला कोनो फाइल मं सहेजना चाहथो ?"
-
-#: mainWindow/kpMainWindow_Colors.cpp:208
-msgid ""
-"The default color palette has been modified.\n"
-"Do you want to save it to a file?"
-msgstr ""
-"डिफाल्ट रंग पैलेट सुधार दे गे हे.\n"
-"का आप मन एला कोनो फाइल मं सहेजना चाहथो ?"
-
-#: mainWindow/kpMainWindow_Colors.cpp:317
-msgid "Open Color Palette"
-msgstr "रंग पैलेट खोलव"
-
-#: mainWindow/kpMainWindow_Colors.cpp:342
-#, kde-format
-msgid ""
-"The color palette \"%1\" has been modified.\n"
-"Reloading will lose all changes since you last saved it.\n"
-"Are you sure?"
-msgstr ""
-
-#: mainWindow/kpMainWindow_Colors.cpp:347
-#: mainWindow/kpMainWindow_Colors.cpp:360
-#: mainWindow/kpMainWindow_Colors.cpp:369
-#: mainWindow/kpMainWindow_File.cpp:1073 mainWindow/kpMainWindow_File.cpp:1083
-msgid "&Reload"
-msgstr "फिर से  लोड करव (&R)"
-
-#: mainWindow/kpMainWindow_Colors.cpp:355
-#, kde-format
-msgid ""
-"The KDE color palette \"%1\" has been modified.\n"
-"Reloading will lose all changes.\n"
-"Are you sure?"
-msgstr ""
-"केडीई रंग पैलेट \"%1\" सुधार दे गे हे.\n"
-"इसको फिर से लोड करे मं पिछला दफा सहेजे जाय के बाद के सब्बो बदलाव गंवा हो जाही.\n"
-"का आप मन सुनिस्चित हो?"
-
-#: mainWindow/kpMainWindow_Colors.cpp:365
-msgid ""
-"The default color palette has been modified.\n"
-"Reloading will lose all changes.\n"
-"Are you sure?"
-msgstr ""
-"डिफाल्ट रंग पैलेट सुधार दे गे हे.\n"
-"इसको फिर से लोड करे मं पिछला दफा सहेजे जाय के बाद के सब्बो बदलाव गंवा हो जाही.\n"
-"का आप मन सुनिस्चित हो?"
-
-#: mainWindow/kpMainWindow_Colors.cpp:418
-msgid "Save Color Palette As"
-msgstr "रंग पैलेट ल ए रूप मं सहेजव"
 
 #: mainWindow/kpMainWindow_Image.cpp:119
 msgid "R&esize / Scale..."
@@ -1236,61 +1185,6 @@ msgstr "छोटेफोटू मोड मं जूम करव (&m)"
 msgid "Enable Thumbnail &Rectangle"
 msgstr "छोटेफोटू चतुर्भुज सक्छम करव (&R)"
 
-#: mainWindow/kpMainWindow_Edit.cpp:98
-msgid "Paste in &New Window"
-msgstr "नवा विंडो मं चिपकाव (&N)"
-
-#: mainWindow/kpMainWindow_Edit.cpp:105
-msgid "&Delete Selection"
-msgstr "चयन मेटाव (&D)"
-
-#: mainWindow/kpMainWindow_Edit.cpp:113
-msgid "C&opy to File..."
-msgstr "फाइल मन मनकल करव... (&o)"
-
-#: mainWindow/kpMainWindow_Edit.cpp:117
-msgid "Paste &From File..."
-msgstr "फाइल मं से चिपकाव... (&F)"
-
-#: mainWindow/kpMainWindow_Edit.cpp:447
-msgid "Text: Paste"
-msgstr "पाठ: चिपकाव"
-
-#: mainWindow/kpMainWindow_Edit.cpp:631
-msgid ""
-"<qt><p>KolourPaint cannot paste the contents of the clipboard as the data "
-"unexpectedly disappeared.</p><p>This usually occurs if the application which "
-"was responsible for the clipboard contents has been closed.</p></qt>"
-msgstr ""
-
-#: mainWindow/kpMainWindow_Edit.cpp:637
-msgid "Cannot Paste"
-msgstr "चिपका नइ सकिस"
-
-#: mainWindow/kpMainWindow_Edit.cpp:730
-msgid "Text: Delete Box"
-msgstr "पाठ: डब्बा मेटाव"
-
-#: mainWindow/kpMainWindow_Edit.cpp:731
-msgid "Selection: Delete"
-msgstr "चयन: मेटाव"
-
-#: mainWindow/kpMainWindow_Edit.cpp:802
-msgid "Text: Finish"
-msgstr "पाठ: पूरा"
-
-#: mainWindow/kpMainWindow_Edit.cpp:803
-msgid "Selection: Deselect"
-msgstr "चयन: मतचुनव"
-
-#: mainWindow/kpMainWindow_Edit.cpp:882
-msgid "Copy to File"
-msgstr "फाइल मं नकल करव"
-
-#: mainWindow/kpMainWindow_Edit.cpp:930
-msgid "Paste From File"
-msgstr "फाइल मं से चिपकाव"
-
 #: mainWindow/kpMainWindow_View.cpp:76
 msgid "Show &Grid"
 msgstr "ग्रिड देखाव (&G)"
@@ -1340,6 +1234,201 @@ msgstr "%1x%2"
 msgid "%1bpp"
 msgstr "%1 बीपीपी"
 
+#: mainWindow/kpMainWindow_Settings.cpp:67
+msgid "Show &Path"
+msgstr "पथ देखाव (&P)"
+
+#: mainWindow/kpMainWindow_Colors.cpp:59
+msgid "Use KolourPaint Defaults"
+msgstr "कलरपेंट डिफाल्ट उपयोग करव"
+
+#: mainWindow/kpMainWindow_Colors.cpp:64
+#, fuzzy
+#| msgid "Use KDE's"
+msgctxt "@item:inmenu colors"
+msgid "Use KDE's"
+msgstr "केडीई के उपयोग करव"
+
+#: mainWindow/kpMainWindow_Colors.cpp:73
+#, fuzzy
+#| msgid "&Open..."
+msgctxt "@item:inmenu colors"
+msgid "&Open..."
+msgstr "खोलव... (&O)"
+
+#: mainWindow/kpMainWindow_Colors.cpp:78
+#, fuzzy
+#| msgid "Reloa&d"
+msgctxt "@item:inmenu colors"
+msgid "Reloa&d"
+msgstr "फिर से लोड करव (&d)"
+
+#: mainWindow/kpMainWindow_Colors.cpp:84
+#, fuzzy
+#| msgid "&Save"
+msgctxt "@item:inmenu colors"
+msgid "&Save"
+msgstr "सहेजव (&S)"
+
+#: mainWindow/kpMainWindow_Colors.cpp:89
+#, fuzzy
+#| msgid "Save &As..."
+msgctxt "@item:inmenu colors"
+msgid "Save &As..."
+msgstr "अइसन सहेजव (&A)"
+
+#: mainWindow/kpMainWindow_Colors.cpp:95
+#, fuzzy
+#| msgid "Add Row"
+msgctxt "@item:inmenu colors"
+msgid "Add Row"
+msgstr "लकीर जोड़व"
+
+#: mainWindow/kpMainWindow_Colors.cpp:100
+#, fuzzy
+#| msgid "Delete Last Row"
+msgctxt "@item:inmenu colors"
+msgid "Delete Last Row"
+msgstr "पिछला लकीर मेटाव"
+
+#: mainWindow/kpMainWindow_Colors.cpp:111
+msgid "Color Box"
+msgstr "रंग डब्बा"
+
+#: mainWindow/kpMainWindow_Colors.cpp:187
+#, kde-format
+msgid ""
+"The color palette \"%1\" has been modified.\n"
+"Do you want to save it?"
+msgstr ""
+"रंग पैलेट \"%1\" सुधार दे गे हे.\n"
+" का आप मन एला सहेजना चाहथो ?"
+
+#: mainWindow/kpMainWindow_Colors.cpp:199
+#, kde-format
+msgid ""
+"The KDE color palette \"%1\" has been modified.\n"
+"Do you want to save it to a file?"
+msgstr ""
+"केडीई रंग पैलेट \"%1\" परिवर्धित करिस.\n"
+"का आप मन एला कोनो फाइल मं सहेजना चाहथो ?"
+
+#: mainWindow/kpMainWindow_Colors.cpp:208
+msgid ""
+"The default color palette has been modified.\n"
+"Do you want to save it to a file?"
+msgstr ""
+"डिफाल्ट रंग पैलेट सुधार दे गे हे.\n"
+"का आप मन एला कोनो फाइल मं सहेजना चाहथो ?"
+
+#: mainWindow/kpMainWindow_Colors.cpp:317
+#, fuzzy
+#| msgid "Open Color Palette"
+msgctxt "@title:window"
+msgid "Open Color Palette"
+msgstr "रंग पैलेट खोलव"
+
+#: mainWindow/kpMainWindow_Colors.cpp:342
+#, kde-format
+msgid ""
+"The color palette \"%1\" has been modified.\n"
+"Reloading will lose all changes since you last saved it.\n"
+"Are you sure?"
+msgstr ""
+
+#: mainWindow/kpMainWindow_Colors.cpp:347
+#: mainWindow/kpMainWindow_Colors.cpp:360
+#: mainWindow/kpMainWindow_Colors.cpp:369
+#: mainWindow/kpMainWindow_File.cpp:1073 mainWindow/kpMainWindow_File.cpp:1083
+msgid "&Reload"
+msgstr "फिर से  लोड करव (&R)"
+
+#: mainWindow/kpMainWindow_Colors.cpp:355
+#, kde-format
+msgid ""
+"The KDE color palette \"%1\" has been modified.\n"
+"Reloading will lose all changes.\n"
+"Are you sure?"
+msgstr ""
+"केडीई रंग पैलेट \"%1\" सुधार दे गे हे.\n"
+"इसको फिर से लोड करे मं पिछला दफा सहेजे जाय के बाद के सब्बो बदलाव गंवा हो जाही.\n"
+"का आप मन सुनिस्चित हो?"
+
+#: mainWindow/kpMainWindow_Colors.cpp:365
+msgid ""
+"The default color palette has been modified.\n"
+"Reloading will lose all changes.\n"
+"Are you sure?"
+msgstr ""
+"डिफाल्ट रंग पैलेट सुधार दे गे हे.\n"
+"इसको फिर से लोड करे मं पिछला दफा सहेजे जाय के बाद के सब्बो बदलाव गंवा हो जाही.\n"
+"का आप मन सुनिस्चित हो?"
+
+#: mainWindow/kpMainWindow_Colors.cpp:418
+msgid "Save Color Palette As"
+msgstr "रंग पैलेट ल ए रूप मं सहेजव"
+
+#: mainWindow/kpMainWindow_Edit.cpp:98
+msgid "Paste in &New Window"
+msgstr "नवा विंडो मं चिपकाव (&N)"
+
+#: mainWindow/kpMainWindow_Edit.cpp:105
+msgid "&Delete Selection"
+msgstr "चयन मेटाव (&D)"
+
+#: mainWindow/kpMainWindow_Edit.cpp:113
+msgid "C&opy to File..."
+msgstr "फाइल मन मनकल करव... (&o)"
+
+#: mainWindow/kpMainWindow_Edit.cpp:117
+msgid "Paste &From File..."
+msgstr "फाइल मं से चिपकाव... (&F)"
+
+#: mainWindow/kpMainWindow_Edit.cpp:447
+msgid "Text: Paste"
+msgstr "पाठ: चिपकाव"
+
+#: mainWindow/kpMainWindow_Edit.cpp:631
+msgid ""
+"<qt><p>KolourPaint cannot paste the contents of the clipboard as the data "
+"unexpectedly disappeared.</p><p>This usually occurs if the application which "
+"was responsible for the clipboard contents has been closed.</p></qt>"
+msgstr ""
+
+#: mainWindow/kpMainWindow_Edit.cpp:637
+msgid "Cannot Paste"
+msgstr "चिपका नइ सकिस"
+
+#: mainWindow/kpMainWindow_Edit.cpp:730
+msgid "Text: Delete Box"
+msgstr "पाठ: डब्बा मेटाव"
+
+#: mainWindow/kpMainWindow_Edit.cpp:731
+msgid "Selection: Delete"
+msgstr "चयन: मेटाव"
+
+#: mainWindow/kpMainWindow_Edit.cpp:802
+msgid "Text: Finish"
+msgstr "पाठ: पूरा"
+
+#: mainWindow/kpMainWindow_Edit.cpp:803
+msgid "Selection: Deselect"
+msgstr "चयन: मतचुनव"
+
+#: mainWindow/kpMainWindow_Edit.cpp:882
+#, fuzzy
+#| msgid "Copy to File"
+msgctxt "@title:window"
+msgid "Copy to File"
+msgstr "फाइल मं नकल करव"
+
+#: mainWindow/kpMainWindow_Edit.cpp:930
+#, fuzzy
+#| msgid "Paste From File"
+msgctxt "@title:window"
+msgid "Paste From File"
+msgstr "फाइल मं से चिपकाव"
+
 #: mainWindow/kpMainWindow_File.cpp:104
 msgid "E&xport..."
 msgstr "निर्यात... (&x)"
@@ -1363,6 +1452,9 @@ msgid "Reloa&d"
 msgstr "फिर से लोड करव (&d)"
 
 #: mainWindow/kpMainWindow_File.cpp:464
+#, fuzzy
+#| msgid "Open Image"
+msgctxt "@title:window"
 msgid "Open Image"
 msgstr "फोटू खोलव"
 
@@ -1394,11 +1486,21 @@ msgstr ""
 msgid "Hide Main Window"
 msgstr "नवा विंडो मं चिपकाव (&N)"
 
+#: mainWindow/kpMainWindow_File.cpp:711
+msgid "Document Properties"
+msgstr "कागद गुन"
+
 #: mainWindow/kpMainWindow_File.cpp:954
+#, fuzzy
+#| msgid "Save Image As"
+msgctxt "@title:window"
 msgid "Save Image As"
 msgstr "फोटू अइसन सहेजव"
 
 #: mainWindow/kpMainWindow_File.cpp:1003
+#, fuzzy
+#| msgid "Export"
+msgctxt "@title:window"
 msgid "Export"
 msgstr "निर्यात"
 
@@ -1425,6 +1527,9 @@ msgstr ""
 "का आप मन सुनिस्चित हो?"
 
 #: mainWindow/kpMainWindow_File.cpp:1320
+#, fuzzy
+#| msgid "Print Image"
+msgctxt "@title:window"
 msgid "Print Image"
 msgstr "फोटू छापव"
 
@@ -1444,10 +1549,6 @@ msgid ""
 msgstr ""
 "कागद \"%1\" बदल दे गे हे.\n"
 "का आप मन एला सहेजना चाहू?"
-
-#: mainWindow/kpMainWindow_Settings.cpp:67
-msgid "Show &Path"
-msgstr "पथ देखाव (&P)"
 
 #: mainWindow/kpMainWindow_Tools.cpp:136
 msgid "Previous Tool Option (Group #1)"
@@ -2072,18 +2173,6 @@ msgstr "256 रंग (डिथर्ड)"
 msgid "24-bit Color"
 msgstr "24-बिट रंग"
 
-#: widgets/kpPrintDialogPage.cpp:60
-msgid "I&mage Position"
-msgstr "फोटू स्थिति (&m)"
-
-#: widgets/kpPrintDialogPage.cpp:65
-msgid "&Center of the page"
-msgstr "पेज मं केंद्र मं (&C)"
-
-#: widgets/kpPrintDialogPage.cpp:67
-msgid "Top-&left of the page"
-msgstr "पेज मं सीर्स डेरी मं (&l)"
-
 #: widgets/kpTransparentColorCell.cpp:65
 #: widgets/toolbars/options/kpToolWidgetOpaqueOrTransparent.cpp:45
 msgid "Transparent"
@@ -2157,6 +2246,21 @@ msgid ""
 "the color of the source cell.</p></qt>"
 msgstr ""
 
+#: widgets/kpPrintDialogPage.cpp:60
+#, fuzzy
+#| msgid "I&mage Position"
+msgctxt "@title:tab"
+msgid "I&mage Position"
+msgstr "फोटू स्थिति (&m)"
+
+#: widgets/kpPrintDialogPage.cpp:65
+msgid "&Center of the page"
+msgstr "पेज मं केंद्र मं (&C)"
+
+#: widgets/kpPrintDialogPage.cpp:67
+msgid "Top-&left of the page"
+msgstr "पेज मं सीर्स डेरी मं (&l)"
+
 #: kpViewScrollableContainer.cpp:160 kpViewScrollableContainer.cpp:826
 #: kpViewScrollableContainer.cpp:830 kpViewScrollableContainer.cpp:834
 msgid "Left drag the handle to resize the image."
@@ -2169,6 +2273,13 @@ msgstr "फोटू ल नवा आकार देव: सब्बो म�
 #: kpViewScrollableContainer.cpp:231
 msgid "Resize Image: Right click to cancel."
 msgstr "फोटू ल नवा आकार देव: खारिज करे बर जेवनी किलिक करव"
+
+#: kpThumbnail.cpp:126
+#, fuzzy
+#| msgid "Thumbnail"
+msgctxt "@title:window"
+msgid "Thumbnail"
+msgstr "छोटे फोटू"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
