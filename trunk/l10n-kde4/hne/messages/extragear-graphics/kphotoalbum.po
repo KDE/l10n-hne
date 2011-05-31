@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-30 03:42+0200\n"
+"POT-Creation-Date: 2011-05-31 03:56+0200\n"
 "PO-Revision-Date: 2009-02-17 12:43+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -44,11 +44,11 @@ msgstr "पिछले टैग करे फोटू मं से टैग
 msgid "Delete image"
 msgstr "फोटू मेटाव"
 
-#: AnnotationDialog/ListSelect.cpp:77 DB/ImageSearchInfo.cpp:189
+#: AnnotationDialog/ListSelect.cpp:77 DB/ImageSearchInfo.cpp:190
 msgid "or"
 msgstr "या"
 
-#: AnnotationDialog/ListSelect.cpp:78 DB/ImageSearchInfo.cpp:184
+#: AnnotationDialog/ListSelect.cpp:78 DB/ImageSearchInfo.cpp:185
 msgid "and"
 msgstr "और"
 
@@ -419,7 +419,7 @@ msgstr "एक्जइफ बर खोजव"
 msgid "search"
 msgstr "खोजव"
 
-#: Browser/OverviewPage.cpp:276
+#: Browser/OverviewPage.cpp:277
 msgid ""
 "<p>You have not yet configured which tag to use for indicating untagged "
 "images.</p><p>Please follow these steps to do so:<ul><li>In the menu bar "
@@ -428,7 +428,7 @@ msgid ""
 "section <b>Untagged Images</b></li></ul></p>"
 msgstr ""
 
-#: Browser/OverviewPage.cpp:282
+#: Browser/OverviewPage.cpp:283
 msgid "Features has not been configured"
 msgstr ""
 
@@ -578,7 +578,7 @@ msgstr ""
 msgid "Following files could not be read:"
 msgstr "निम्न फाइल मन ल पढ़ नइ सकिस:"
 
-#: DB/ImageSearchInfo.cpp:181
+#: DB/ImageSearchInfo.cpp:182
 #, kde-format
 msgctxt ""
 "As in No persons, no locations etc. I do realize that translators may have "
@@ -587,11 +587,11 @@ msgctxt ""
 msgid "No %1"
 msgstr "%1 नइ"
 
-#: DB/ImageSearchInfo.cpp:190
+#: DB/ImageSearchInfo.cpp:191
 msgid "not"
 msgstr "नइ"
 
-#: DB/ImageSearchInfo.cpp:194
+#: DB/ImageSearchInfo.cpp:195
 #, kde-format
 msgctxt ""
 "As in no other persons, or no other locations. I do realize that translators "
@@ -669,22 +669,6 @@ msgstr ""
 #: Exif/Database.cpp:308
 msgid "Rereading EXIF information from all images"
 msgstr "सब्बो फोटू मन से एक्जिफ जानकारी लोड करत हे "
-
-#: Exif/InfoDialog.cpp:41
-msgid "EXIF Information"
-msgstr "एक्सइफ जानकारी"
-
-#: Exif/InfoDialog.cpp:74
-msgid "Current EXIF Label Search: "
-msgstr "अभी हाल के एक्जइफ लेबल खोज:"
-
-#: Exif/InfoDialog.cpp:88
-msgid "IPTC character set:"
-msgstr "आईपीटीसी अक्छर सेटः"
-
-#: Exif/InfoDialog.cpp:107
-msgid "<No Search>"
-msgstr "<कोई खोज नइ>"
 
 #: Exif/ReReadDialog.cpp:35
 #, fuzzy
@@ -911,6 +895,22 @@ msgstr "जादा"
 #: Exif/SearchDialog.cpp:343
 msgid "No cameras found in the database"
 msgstr "डाटाबेस मं कोई केमरा नइ मिलिस"
+
+#: Exif/InfoDialog.cpp:38
+msgid "EXIF Information"
+msgstr "एक्सइफ जानकारी"
+
+#: Exif/InfoDialog.cpp:67
+msgid "Current EXIF Label Search: "
+msgstr "अभी हाल के एक्जइफ लेबल खोज:"
+
+#: Exif/InfoDialog.cpp:81
+msgid "IPTC character set:"
+msgstr "आईपीटीसी अक्छर सेटः"
+
+#: Exif/InfoDialog.cpp:101
+msgid "<No Search>"
+msgstr "<कोई खोज नइ>"
 
 #: HTMLGenerator/Generator.cpp:47
 msgid "Generating images for HTML page "
@@ -3195,6 +3195,56 @@ msgstr "<p><center><font size=\"+4\">स्लाइडसो बन्द क�
 msgid "Error playing media"
 msgstr "मीडिया बजाय मं गलती होइस"
 
+#: Viewer/VisibleOptionsMenu.cpp:33
+msgid "Show..."
+msgstr "देखाव..."
+
+#: Viewer/VisibleOptionsMenu.cpp:36
+msgid "Show"
+msgstr "दिखाव"
+
+#: Viewer/VisibleOptionsMenu.cpp:40
+msgid "Show Info Box"
+msgstr "जानकारी डब्बा देखाव"
+
+#: Viewer/VisibleOptionsMenu.cpp:46
+msgid "Show Label"
+msgstr "लेबल देखाव"
+
+#: Viewer/VisibleOptionsMenu.cpp:52
+msgid "Show Description"
+msgstr "वर्नन देखाव"
+
+#: Viewer/VisibleOptionsMenu.cpp:58
+msgid "Show Date"
+msgstr "तारीक देखाव"
+
+#: Viewer/VisibleOptionsMenu.cpp:63
+msgid "Show Time"
+msgstr "समय देखाव"
+
+#: Viewer/VisibleOptionsMenu.cpp:68
+msgid "Show Filename"
+msgstr "फाइलनाम दिखाव"
+
+#: Viewer/VisibleOptionsMenu.cpp:73
+msgid "Show EXIF"
+msgstr "एक्सइफ दिखाव"
+
+#: Viewer/VisibleOptionsMenu.cpp:78
+msgid "Show Image Size"
+msgstr "फोटू आकार दिखाव"
+
+#: Viewer/ImageDisplay.cpp:351 Viewer/ImageDisplay.cpp:375
+#: Viewer/ImageDisplay.cpp:436
+msgid "Insufficient color depth for this filter"
+msgstr ""
+
+#: Viewer/ImageDisplay.cpp:498
+#, kde-format
+msgid "[ zoom x%1 ]"
+msgstr "[ जूम x%1 ]"
+
 #: Viewer/ViewerWidget.cpp:146
 msgid "Annotate..."
 msgstr "एन्नोटेट..."
@@ -3325,7 +3375,7 @@ msgstr "पूरा स्क्रीन टागल करव"
 msgid "Slideshow"
 msgstr "स्लाइड-सो"
 
-#: Viewer/ViewerWidget.cpp:400 Viewer/ViewerWidget.cpp:847
+#: Viewer/ViewerWidget.cpp:400 Viewer/ViewerWidget.cpp:849
 msgid "Run Slideshow"
 msgstr "स्लाइड सो चलाव"
 
@@ -3341,165 +3391,115 @@ msgstr "धीमा चलाव"
 msgid "File not available"
 msgstr "फाइल नइ मिलत"
 
-#: Viewer/ViewerWidget.cpp:501
+#: Viewer/ViewerWidget.cpp:503
 msgid "Play"
 msgstr "चलाव"
 
-#: Viewer/ViewerWidget.cpp:503
+#: Viewer/ViewerWidget.cpp:505
 msgid "Pause"
 msgstr "ठहरव"
 
-#: Viewer/ViewerWidget.cpp:796
+#: Viewer/ViewerWidget.cpp:798
 #, fuzzy
 #| msgid "<b>Sub Categories</b>"
 msgid "<b>Setting Category: </b>"
 msgstr "<b>उप स्रेनी</b>"
 
-#: Viewer/ViewerWidget.cpp:803
+#: Viewer/ViewerWidget.cpp:805
 #, fuzzy
 #| msgid "<b>Description: </b> "
 msgid "<b>Assigning: </b>"
 msgstr "<b>वर्नन: </b> "
 
-#: Viewer/ViewerWidget.cpp:854
+#: Viewer/ViewerWidget.cpp:856
 msgid "Stop Slideshow"
 msgstr "स्लाइड सो बन्द करव"
 
-#: Viewer/ViewerWidget.cpp:1274
+#: Viewer/ViewerWidget.cpp:1276
 msgid "Seek"
 msgstr "देखव"
 
-#: Viewer/ViewerWidget.cpp:1278
+#: Viewer/ViewerWidget.cpp:1280
 msgid "10 minutes backward"
 msgstr "10 मिनट पीछू"
 
-#: Viewer/ViewerWidget.cpp:1279
+#: Viewer/ViewerWidget.cpp:1281
 msgid "1 minute backward"
 msgstr "१ मिनट पीछू"
 
-#: Viewer/ViewerWidget.cpp:1280
+#: Viewer/ViewerWidget.cpp:1282
 msgid "10 seconds backward"
 msgstr "१० सेकन्ड पीछू"
 
-#: Viewer/ViewerWidget.cpp:1281
+#: Viewer/ViewerWidget.cpp:1283
 msgid "1 seconds backward"
 msgstr "१ सेकन्ड पीछू"
 
-#: Viewer/ViewerWidget.cpp:1282
+#: Viewer/ViewerWidget.cpp:1284
 #, fuzzy
 #| msgid "100 miliseconds backward"
 msgid "100 milliseconds backward"
 msgstr "१०० मिलायकन्ड पीछू"
 
-#: Viewer/ViewerWidget.cpp:1283
+#: Viewer/ViewerWidget.cpp:1285
 #, fuzzy
 #| msgid "100 miliseconds forward"
 msgid "100 milliseconds forward"
 msgstr "१०० मिलायकन्ड आगू"
 
-#: Viewer/ViewerWidget.cpp:1284
+#: Viewer/ViewerWidget.cpp:1286
 msgid "1 seconds forward"
 msgstr "१ सेकन्ड आगू"
 
-#: Viewer/ViewerWidget.cpp:1285
+#: Viewer/ViewerWidget.cpp:1287
 msgid "10 seconds forward"
 msgstr "१० सेकन्ड आगू"
 
-#: Viewer/ViewerWidget.cpp:1286
+#: Viewer/ViewerWidget.cpp:1288
 msgid "1 minute forward"
 msgstr "१ मिनट आगू"
 
-#: Viewer/ViewerWidget.cpp:1287
+#: Viewer/ViewerWidget.cpp:1289
 msgid "10 minutes forward"
 msgstr "१० मिनट आगू"
 
-#: Viewer/ViewerWidget.cpp:1310
+#: Viewer/ViewerWidget.cpp:1312
 msgid "Stop"
 msgstr "रुकव"
 
-#: Viewer/ViewerWidget.cpp:1316
+#: Viewer/ViewerWidget.cpp:1318
 msgid "Toggle playback"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:1321
+#: Viewer/ViewerWidget.cpp:1323
 msgid "Restart"
 msgstr "फिर से चालू करव"
 
-#: Viewer/ViewerWidget.cpp:1336
+#: Viewer/ViewerWidget.cpp:1338
 #, fuzzy
 #| msgid "First"
 msgid "Filters"
 msgstr "पहिली"
 
-#: Viewer/ViewerWidget.cpp:1339
+#: Viewer/ViewerWidget.cpp:1341
 msgid "Remove All Filters"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:1343
+#: Viewer/ViewerWidget.cpp:1345
 msgid "Apply Grayscale Filter"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:1348
+#: Viewer/ViewerWidget.cpp:1350
 msgid "Apply Contrast Stretching Filter"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:1353
+#: Viewer/ViewerWidget.cpp:1355
 msgid "Apply Histogram Equalization Filter"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:1358
+#: Viewer/ViewerWidget.cpp:1360
 msgid "Apply Monochrome Filter"
 msgstr ""
-
-#: Viewer/VisibleOptionsMenu.cpp:33
-msgid "Show..."
-msgstr "देखाव..."
-
-#: Viewer/VisibleOptionsMenu.cpp:36
-msgid "Show"
-msgstr "दिखाव"
-
-#: Viewer/VisibleOptionsMenu.cpp:40
-msgid "Show Info Box"
-msgstr "जानकारी डब्बा देखाव"
-
-#: Viewer/VisibleOptionsMenu.cpp:46
-msgid "Show Label"
-msgstr "लेबल देखाव"
-
-#: Viewer/VisibleOptionsMenu.cpp:52
-msgid "Show Description"
-msgstr "वर्नन देखाव"
-
-#: Viewer/VisibleOptionsMenu.cpp:58
-msgid "Show Date"
-msgstr "तारीक देखाव"
-
-#: Viewer/VisibleOptionsMenu.cpp:63
-msgid "Show Time"
-msgstr "समय देखाव"
-
-#: Viewer/VisibleOptionsMenu.cpp:68
-msgid "Show Filename"
-msgstr "फाइलनाम दिखाव"
-
-#: Viewer/VisibleOptionsMenu.cpp:73
-msgid "Show EXIF"
-msgstr "एक्सइफ दिखाव"
-
-#: Viewer/VisibleOptionsMenu.cpp:78
-msgid "Show Image Size"
-msgstr "फोटू आकार दिखाव"
-
-#: Viewer/ImageDisplay.cpp:351 Viewer/ImageDisplay.cpp:375
-#: Viewer/ImageDisplay.cpp:436
-msgid "Insufficient color depth for this filter"
-msgstr ""
-
-#: Viewer/ImageDisplay.cpp:498
-#, kde-format
-msgid "[ zoom x%1 ]"
-msgstr "[ जूम x%1 ]"
 
 #: XMLDB/Database.cpp:619
 #, kde-format
