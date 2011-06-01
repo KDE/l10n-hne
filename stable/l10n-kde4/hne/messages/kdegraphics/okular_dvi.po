@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: okular_dvi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-30 14:14+0200\n"
+"POT-Creation-Date: 2011-06-01 14:11+0200\n"
 "PO-Revision-Date: 2009-02-26 15:55+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -230,6 +230,195 @@ msgstr "पेज %1: पोस्टस्क्रिप्ट फाइल <s
 msgid "The papersize data '%1' could not be parsed."
 msgstr "पेपरसाइज डाटा '%1' पार नइ कर सकिस."
 
+#: fontpool.cpp:39
+msgid "Okular is currently generating bitmap fonts..."
+msgstr "ओकुलर अभी हाल मं बिटमैप फोंट तैयार करत हे..."
+
+#: fontpool.cpp:40
+msgid "Aborts the font generation. Do not do this."
+msgstr "फोंट तैयार करना छोड़व. एला नइ बनाव."
+
+#: fontpool.cpp:41
+msgid ""
+"Okular is currently generating bitmap fonts which are needed to display your "
+"document. For this, Okular uses a number of external programs, such as "
+"MetaFont. You can find the output of these programs later in the document "
+"info dialog."
+msgstr ""
+
+#: fontpool.cpp:44
+msgid "Okular is generating fonts. Please wait."
+msgstr "किरपा करके, रुकव... ओकुलर फोंट तैयार करत हे."
+
+#: fontpool.cpp:225
+msgid ""
+"<qt><p>Okular was not able to locate all the font files which are necessary "
+"to display the current DVI file. Your document might be unreadable.</p></qt>"
+msgstr ""
+
+#: fontpool.cpp:229
+msgid "Not All Font Files Found"
+msgstr "सब्बो फोंट फाइल नइ मिलिस"
+
+#: fontpool.cpp:240
+msgid "Locating fonts..."
+msgstr "फोंट लोकेट करत हे..."
+
+#: fontpool.cpp:288
+msgid ""
+"<p>Okular relies on the <b>kpsewhich</b> program to locate font files on "
+"your hard disk and to generate PK fonts, if necessary.</p>"
+msgstr ""
+
+#: fontpool.cpp:296
+msgid ""
+"<p>There were problems running <b>kpsewhich</b>. As a result, some font "
+"files could not be located, and your document might be unreadable.</"
+"p><p><b>Possible reason:</b> The kpsewhich program is perhaps not installed "
+"on your system, or it cannot be found in the current search path.</"
+"p><p><b>What you can do:</b> The kpsewhich program is normally contained in "
+"distributions of the TeX typesetting system. If TeX is not installed on your "
+"system, you could install the TeX Live distribution (www.tug.org/texlive). "
+"If you are sure that TeX is installed, please try to use the kpsewhich "
+"program from the command line to check if it really works.</p>"
+msgstr ""
+
+#: fontpool.cpp:310
+msgid "Problem locating fonts"
+msgstr "फोंट खोजे मं समस्या"
+
+#: fontpool.cpp:329
+#, kde-format
+msgid ""
+"<qt><p>The font generation by <b>kpsewhich</b> was aborted (exit code %1, "
+"error %2). As a result, some font files could not be located, and your "
+"document might be unreadable.</p></qt>"
+msgstr ""
+
+#: fontpool.cpp:331
+msgid "Font generation aborted"
+msgstr "फोंट बनाना छोड़िस"
+
+#: fontpool.cpp:513
+#, kde-format
+msgid "Currently generating %1 at %2 dpi"
+msgstr "अभी हाल के मं बनात हे %1 ल %2 डीपीआई पर"
+
+#: fontprogress.cpp:33
+msgid "Font Generation Progress Dialog"
+msgstr "फोंट जनरेसन प्रगति गोठ"
+
+#: fontprogress.cpp:39
+msgid "Abort"
+msgstr "छोड़व"
+
+#: fontprogress.cpp:43
+msgid "What is happening here?"
+msgstr "इहां का चलत हे?"
+
+#: fontprogress.cpp:58
+msgid "%v of %m"
+msgstr "%m के %v "
+
+#: pageSize.cpp:324
+msgid "portrait"
+msgstr "खड़ा"
+
+#: pageSize.cpp:326
+msgid "landscape"
+msgstr "आड़ा"
+
+#: psgs.cpp:266
+msgid ""
+"<qt>The version of Ghostview that is installed on this computer does not "
+"contain any of the Ghostview device drivers that are known to Okular. "
+"PostScript support has therefore been turned off in Okular.</qt>"
+msgstr ""
+
+#: psgs.cpp:269
+msgid ""
+"<qt><p>The Ghostview program, which Okular uses internally to display the "
+"PostScript graphics that is included in this DVI file, is generally able to "
+"write its output in a variety of formats. The sub-programs that Ghostview "
+"uses for these tasks are called 'device drivers'; there is one device driver "
+"for each format that Ghostview is able to write. Different versions of "
+"Ghostview often have different sets of device drivers available. It seems "
+"that the version of Ghostview that is installed on this computer does not "
+"contain <strong>any</strong> of the device drivers that are known to Okular."
+"</p><p>It seems unlikely that a regular installation of Ghostview would not "
+"contain these drivers. This error may therefore point to a serious "
+"misconfiguration of the Ghostview installation on your computer.</p><p>If "
+"you want to fix the problems with Ghostview, you can use the command "
+"<strong>gs --help</strong> to display the list of device drivers contained "
+"in Ghostview. Among others, Okular can use the 'png256', 'jpeg' and 'pnm' "
+"drivers. Note that Okular needs to be restarted to re-enable PostScript "
+"support.</p></qt>"
+msgstr ""
+
+#: special.cpp:36
+msgid "That makes 25 errors. Further error messages will not be printed."
+msgstr "एला मिला के 25 गलती होइस. अब आगू के गलती संदेस मन ल छापे नइ जाही."
+
+#: special.cpp:217
+#, kde-format
+msgid ""
+"Error in DVIfile '%1', page %2. Color pop command issued when the color "
+"stack is empty."
+msgstr ""
+
+#: special.cpp:302
+#, kde-format
+msgid ""
+"Malformed parameter in the epsf special command.\n"
+"Expected a float to follow %1 in %2"
+msgstr ""
+
+#: special.cpp:428
+#, kde-format
+msgid ""
+"File not found: \n"
+" %1"
+msgstr ""
+"फाइल नइ मिलिसः\n"
+"%1"
+
+#: special.cpp:674
+#, kde-format
+msgid ""
+"Error in DVIfile '%1', page %2. Could not interpret angle in text rotation "
+"special."
+msgstr ""
+
+#: special.cpp:697
+#, kde-format
+msgid "The special command '%1' is not implemented."
+msgstr "विसेस कमांड '%1' लागू नइ हे."
+
+#: util.cpp:77
+msgid ""
+"Fatal error.\n"
+"\n"
+msgstr ""
+"गंभीर गलती.\n"
+"\n"
+
+#: util.cpp:79
+msgid ""
+"\n"
+"\n"
+"This probably means that either you found a bug in Okular,\n"
+"or that the DVI file, or auxiliary files (such as font files, \n"
+"or virtual font files) were really badly broken.\n"
+"Okular will abort after this message. If you believe that you \n"
+"found a bug, or that Okular should behave better in this situation\n"
+"please report the problem."
+msgstr ""
+
+#: vf.cpp:182
+#, kde-format
+msgid "Wrong command byte found in VF macro list: %1"
+msgstr "वीएफ मेक्रो सूची : %1 मं गलत कमांड बाइट मिलिस"
+
 #: dviexport.cpp:74
 msgid "Please be patient"
 msgstr "किरपा करके, धैर्य रखव"
@@ -354,96 +543,6 @@ msgid ""
 "report.</qt>"
 msgstr ""
 
-#: fontpool.cpp:39
-msgid "Okular is currently generating bitmap fonts..."
-msgstr "ओकुलर अभी हाल मं बिटमैप फोंट तैयार करत हे..."
-
-#: fontpool.cpp:40
-msgid "Aborts the font generation. Do not do this."
-msgstr "फोंट तैयार करना छोड़व. एला नइ बनाव."
-
-#: fontpool.cpp:41
-msgid ""
-"Okular is currently generating bitmap fonts which are needed to display your "
-"document. For this, Okular uses a number of external programs, such as "
-"MetaFont. You can find the output of these programs later in the document "
-"info dialog."
-msgstr ""
-
-#: fontpool.cpp:44
-msgid "Okular is generating fonts. Please wait."
-msgstr "किरपा करके, रुकव... ओकुलर फोंट तैयार करत हे."
-
-#: fontpool.cpp:225
-msgid ""
-"<qt><p>Okular was not able to locate all the font files which are necessary "
-"to display the current DVI file. Your document might be unreadable.</p></qt>"
-msgstr ""
-
-#: fontpool.cpp:229
-msgid "Not All Font Files Found"
-msgstr "सब्बो फोंट फाइल नइ मिलिस"
-
-#: fontpool.cpp:240
-msgid "Locating fonts..."
-msgstr "फोंट लोकेट करत हे..."
-
-#: fontpool.cpp:288
-msgid ""
-"<p>Okular relies on the <b>kpsewhich</b> program to locate font files on "
-"your hard disk and to generate PK fonts, if necessary.</p>"
-msgstr ""
-
-#: fontpool.cpp:296
-msgid ""
-"<p>There were problems running <b>kpsewhich</b>. As a result, some font "
-"files could not be located, and your document might be unreadable.</"
-"p><p><b>Possible reason:</b> The kpsewhich program is perhaps not installed "
-"on your system, or it cannot be found in the current search path.</"
-"p><p><b>What you can do:</b> The kpsewhich program is normally contained in "
-"distributions of the TeX typesetting system. If TeX is not installed on your "
-"system, you could install the TeX Live distribution (www.tug.org/texlive). "
-"If you are sure that TeX is installed, please try to use the kpsewhich "
-"program from the command line to check if it really works.</p>"
-msgstr ""
-
-#: fontpool.cpp:310
-msgid "Problem locating fonts"
-msgstr "फोंट खोजे मं समस्या"
-
-#: fontpool.cpp:329
-#, kde-format
-msgid ""
-"<qt><p>The font generation by <b>kpsewhich</b> was aborted (exit code %1, "
-"error %2). As a result, some font files could not be located, and your "
-"document might be unreadable.</p></qt>"
-msgstr ""
-
-#: fontpool.cpp:331
-msgid "Font generation aborted"
-msgstr "फोंट बनाना छोड़िस"
-
-#: fontpool.cpp:513
-#, kde-format
-msgid "Currently generating %1 at %2 dpi"
-msgstr "अभी हाल के मं बनात हे %1 ल %2 डीपीआई पर"
-
-#: fontprogress.cpp:33
-msgid "Font Generation Progress Dialog"
-msgstr "फोंट जनरेसन प्रगति गोठ"
-
-#: fontprogress.cpp:39
-msgid "Abort"
-msgstr "छोड़व"
-
-#: fontprogress.cpp:43
-msgid "What is happening here?"
-msgstr "इहां का चलत हे?"
-
-#: fontprogress.cpp:58
-msgid "%v of %m"
-msgstr "%m के %v "
-
 #: generator_dvi.cpp:54
 msgid "DVI Backend"
 msgstr ""
@@ -465,105 +564,6 @@ msgstr "जेनरेटर/तारीक"
 #: generator_dvi.cpp:448
 msgid "Font file not found"
 msgstr "फोंट फाइल नइ मिलिस"
-
-#: pageSize.cpp:324
-msgid "portrait"
-msgstr "खड़ा"
-
-#: pageSize.cpp:326
-msgid "landscape"
-msgstr "आड़ा"
-
-#: psgs.cpp:266
-msgid ""
-"<qt>The version of Ghostview that is installed on this computer does not "
-"contain any of the Ghostview device drivers that are known to Okular. "
-"PostScript support has therefore been turned off in Okular.</qt>"
-msgstr ""
-
-#: psgs.cpp:269
-msgid ""
-"<qt><p>The Ghostview program, which Okular uses internally to display the "
-"PostScript graphics that is included in this DVI file, is generally able to "
-"write its output in a variety of formats. The sub-programs that Ghostview "
-"uses for these tasks are called 'device drivers'; there is one device driver "
-"for each format that Ghostview is able to write. Different versions of "
-"Ghostview often have different sets of device drivers available. It seems "
-"that the version of Ghostview that is installed on this computer does not "
-"contain <strong>any</strong> of the device drivers that are known to Okular."
-"</p><p>It seems unlikely that a regular installation of Ghostview would not "
-"contain these drivers. This error may therefore point to a serious "
-"misconfiguration of the Ghostview installation on your computer.</p><p>If "
-"you want to fix the problems with Ghostview, you can use the command "
-"<strong>gs --help</strong> to display the list of device drivers contained "
-"in Ghostview. Among others, Okular can use the 'png256', 'jpeg' and 'pnm' "
-"drivers. Note that Okular needs to be restarted to re-enable PostScript "
-"support.</p></qt>"
-msgstr ""
-
-#: special.cpp:36
-msgid "That makes 25 errors. Further error messages will not be printed."
-msgstr "एला मिला के 25 गलती होइस. अब आगू के गलती संदेस मन ल छापे नइ जाही."
-
-#: special.cpp:217
-#, kde-format
-msgid ""
-"Error in DVIfile '%1', page %2. Color pop command issued when the color "
-"stack is empty."
-msgstr ""
-
-#: special.cpp:302
-#, kde-format
-msgid ""
-"Malformed parameter in the epsf special command.\n"
-"Expected a float to follow %1 in %2"
-msgstr ""
-
-#: special.cpp:428
-#, kde-format
-msgid ""
-"File not found: \n"
-" %1"
-msgstr ""
-"फाइल नइ मिलिसः\n"
-"%1"
-
-#: special.cpp:674
-#, kde-format
-msgid ""
-"Error in DVIfile '%1', page %2. Could not interpret angle in text rotation "
-"special."
-msgstr ""
-
-#: special.cpp:697
-#, kde-format
-msgid "The special command '%1' is not implemented."
-msgstr "विसेस कमांड '%1' लागू नइ हे."
-
-#: util.cpp:77
-msgid ""
-"Fatal error.\n"
-"\n"
-msgstr ""
-"गंभीर गलती.\n"
-"\n"
-
-#: util.cpp:79
-msgid ""
-"\n"
-"\n"
-"This probably means that either you found a bug in Okular,\n"
-"or that the DVI file, or auxiliary files (such as font files, \n"
-"or virtual font files) were really badly broken.\n"
-"Okular will abort after this message. If you believe that you \n"
-"found a bug, or that Okular should behave better in this situation\n"
-"please report the problem."
-msgstr ""
-
-#: vf.cpp:182
-#, kde-format
-msgid "Wrong command byte found in VF macro list: %1"
-msgstr "वीएफ मेक्रो सूची : %1 मं गलत कमांड बाइट मिलिस"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
