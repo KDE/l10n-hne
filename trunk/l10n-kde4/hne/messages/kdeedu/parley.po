@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-15 04:12+0200\n"
+"POT-Creation-Date: 2011-06-08 04:09+0200\n"
 "PO-Revision-Date: 2009-02-25 15:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -322,12 +322,6 @@ msgstr "खोजइया वाक्यांस इहां भरव"
 msgid "S&earch:"
 msgstr "खोजव: (&e)"
 
-#: src/editor/latexwidget.cpp:30
-#, fuzzy
-#| msgid "Enter search terms here"
-msgid "Enter LaTeX code here."
-msgstr "खोजइया वाक्यांस इहां भरव"
-
 #: src/editor/synonymwidget.cpp:60
 msgid "Select Synonyms"
 msgstr "समानार्थी चुनव"
@@ -381,6 +375,12 @@ msgctxt ""
 "different meanings) for a word"
 msgid "False Friends of %1:"
 msgstr "%1 के नकली मितान:"
+
+#: src/editor/latexwidget.cpp:30
+#, fuzzy
+#| msgid "Enter search terms here"
+msgid "Enter LaTeX code here."
+msgstr "खोजइया वाक्यांस इहां भरव"
 
 #. i18n: file: src/export/exportdialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ExportOptions)
@@ -1525,79 +1525,6 @@ msgstr ""
 msgid "No Lesson Selected"
 msgstr ""
 
-#: src/vocabulary/vocabularyview.cpp:87
-msgid "&Add New Entry"
-msgstr "नवा प्रविस्टि जोड़व (&A)"
-
-#: src/vocabulary/vocabularyview.cpp:90
-msgid "Append a new row to the vocabulary"
-msgstr "सब्दावली के आखरी मं नवा लकीर जोड़व"
-
-#: src/vocabulary/vocabularyview.cpp:98
-msgid "&Delete Entry"
-msgstr "प्रविस्टि मेटाव (&D)"
-
-#: src/vocabulary/vocabularyview.cpp:101
-msgid "Delete the selected rows"
-msgstr "चुने गे पंक्तियों ल मेटाव"
-
-#: src/vocabulary/vocabularyview.cpp:111
-msgid "Copy"
-msgstr "नकल"
-
-#: src/vocabulary/vocabularyview.cpp:117
-msgid "Cut"
-msgstr "काटव"
-
-#: src/vocabulary/vocabularyview.cpp:123
-msgid "Paste"
-msgstr "चिपकाव"
-
-#: src/vocabulary/vocabularyview.cpp:129
-msgid "Select all rows"
-msgstr "सब्बो पंक्तियों ल चुनव"
-
-#: src/vocabulary/vocabularyview.cpp:134
-msgid "Deselect all rows"
-msgstr "सब्बो पंक्तियों के चयन हटाव"
-
-#: src/vocabulary/vocabularyview.cpp:142
-#, fuzzy
-msgid "Vocabulary Columns..."
-msgstr "सब्दावली स्तम्भ"
-
-#: src/vocabulary/vocabularyview.cpp:143
-msgid "Toggle display of individual vocabulary columns"
-msgstr "अलग अलग सब्दावली स्तम्भ दिखाना टागल करव"
-
-#: src/vocabulary/vocabularyview.cpp:251
-#, kde-format
-msgid "Do you really want to delete the selected entry?"
-msgid_plural "Do you really want to delete the selected %1 entries?"
-msgstr[0] "का आप मन सचमुच चुने गे प्रविस्टि मन ल मिटाना चाहथो ?"
-msgstr[1] "का आप मन सचमुच चुनी गे %1 प्रविस्टि मन ल मिटाना चाहथो ?"
-
-#: src/vocabulary/vocabularyview.cpp:251
-msgid "Delete"
-msgstr "मेटाव"
-
-#: src/vocabulary/vocabularyview.cpp:360
-msgid "Nothing to spell check."
-msgstr ""
-
-#: src/vocabulary/vocabularyview.cpp:385
-msgctxt "@title of a popup"
-msgid "No Spell Checker Available"
-msgstr "हिज्जा जंचइया नइ हे"
-
-#: src/vocabulary/vocabularyview.cpp:385
-#, kde-format
-msgctxt "@popupmessage"
-msgid ""
-"Either the language set up is incorrect or no spellchecker was installed for "
-"this locale: %1."
-msgstr ""
-
 #: src/vocabulary/wordtypeview.cpp:41
 msgid "New"
 msgstr "नवा"
@@ -1696,6 +1623,79 @@ msgid_plural ""
 "Continue?"
 msgstr[0] ""
 msgstr[1] ""
+
+#: src/vocabulary/vocabularyview.cpp:87
+msgid "&Add New Entry"
+msgstr "नवा प्रविस्टि जोड़व (&A)"
+
+#: src/vocabulary/vocabularyview.cpp:90
+msgid "Append a new row to the vocabulary"
+msgstr "सब्दावली के आखरी मं नवा लकीर जोड़व"
+
+#: src/vocabulary/vocabularyview.cpp:98
+msgid "&Delete Entry"
+msgstr "प्रविस्टि मेटाव (&D)"
+
+#: src/vocabulary/vocabularyview.cpp:101
+msgid "Delete the selected rows"
+msgstr "चुने गे पंक्तियों ल मेटाव"
+
+#: src/vocabulary/vocabularyview.cpp:111
+msgid "Copy"
+msgstr "नकल"
+
+#: src/vocabulary/vocabularyview.cpp:117
+msgid "Cut"
+msgstr "काटव"
+
+#: src/vocabulary/vocabularyview.cpp:123
+msgid "Paste"
+msgstr "चिपकाव"
+
+#: src/vocabulary/vocabularyview.cpp:129
+msgid "Select all rows"
+msgstr "सब्बो पंक्तियों ल चुनव"
+
+#: src/vocabulary/vocabularyview.cpp:134
+msgid "Deselect all rows"
+msgstr "सब्बो पंक्तियों के चयन हटाव"
+
+#: src/vocabulary/vocabularyview.cpp:142
+#, fuzzy
+msgid "Vocabulary Columns..."
+msgstr "सब्दावली स्तम्भ"
+
+#: src/vocabulary/vocabularyview.cpp:143
+msgid "Toggle display of individual vocabulary columns"
+msgstr "अलग अलग सब्दावली स्तम्भ दिखाना टागल करव"
+
+#: src/vocabulary/vocabularyview.cpp:251
+#, kde-format
+msgid "Do you really want to delete the selected entry?"
+msgid_plural "Do you really want to delete the selected %1 entries?"
+msgstr[0] "का आप मन सचमुच चुने गे प्रविस्टि मन ल मिटाना चाहथो ?"
+msgstr[1] "का आप मन सचमुच चुनी गे %1 प्रविस्टि मन ल मिटाना चाहथो ?"
+
+#: src/vocabulary/vocabularyview.cpp:251
+msgid "Delete"
+msgstr "मेटाव"
+
+#: src/vocabulary/vocabularyview.cpp:360
+msgid "Nothing to spell check."
+msgstr ""
+
+#: src/vocabulary/vocabularyview.cpp:385
+msgctxt "@title of a popup"
+msgid "No Spell Checker Available"
+msgstr "हिज्जा जंचइया नइ हे"
+
+#: src/vocabulary/vocabularyview.cpp:385
+#, kde-format
+msgctxt "@popupmessage"
+msgid ""
+"Either the language set up is incorrect or no spellchecker was installed for "
+"this locale: %1."
+msgstr ""
 
 #: src/welcomescreen/buttondelegate.cpp:33
 #, fuzzy
