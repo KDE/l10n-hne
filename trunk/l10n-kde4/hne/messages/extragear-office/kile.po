@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kile\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-04 03:55+0200\n"
+"POT-Creation-Date: 2011-06-13 03:56+0200\n"
 "PO-Revision-Date: 2009-02-21 10:38+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -3274,32 +3274,6 @@ msgstr ""
 msgid "The file '%1' does not exist."
 msgstr "खेद हे, फाइल '%1' मौजूद नइ हे."
 
-#: dialogs/usertagsdialog.cpp:56
-msgid "Menu item:"
-msgstr "मेन्यू आइटम:"
-
-#: dialogs/usertagsdialog.cpp:60
-msgid "Value:"
-msgstr "मूल्यः"
-
-#: dialogs/usertagsdialog.cpp:64 kiledocmanager.cpp:1680
-msgid "Add"
-msgstr "जोड़व"
-
-#: dialogs/usertagsdialog.cpp:65
-msgid "Insert"
-msgstr "भरव"
-
-#. i18n: file: widgets/codecompletionconfigwidget.ui:124
-#. i18n: ectx: property (text), widget (KPushButton, m_removeFileButton)
-#. i18n: file: widgets/maintoolconfigwidget.ui:101
-#. i18n: ectx: property (text), widget (KPushButton, m_pshbRemoveTool)
-#. i18n: file: widgets/maintoolconfigwidget.ui:222
-#. i18n: ectx: property (text), widget (KPushButton, m_pshbRemoveConfig)
-#: dialogs/usertagsdialog.cpp:66 rc.cpp:538 rc.cpp:739 rc.cpp:751
-msgid "Remove"
-msgstr "हटाव"
-
 #: dialogs/mathenvironmentdialog.cpp:45
 msgid "Math Environments"
 msgstr "मैथ एनवायरनमेंट"
@@ -3423,7 +3397,7 @@ msgstr ""
 
 #. i18n: file: widgets/helpconfigwidget.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetHelpConfig)
-#: dialogs/configurationdialog.cpp:214 kilehelp.cpp:290 rc.cpp:601
+#: dialogs/configurationdialog.cpp:214 rc.cpp:601 kilehelp.cpp:290
 msgid "Help"
 msgstr ""
 
@@ -3460,6 +3434,41 @@ msgstr "स्ट्रक्चर दृस्य"
 #: dialogs/configurationdialog.cpp:255 rc.cpp:940
 msgid "Symbol View"
 msgstr ""
+
+#: dialogs/usertagsdialog.cpp:56
+msgid "Menu item:"
+msgstr "मेन्यू आइटम:"
+
+#: dialogs/usertagsdialog.cpp:60
+msgid "Value:"
+msgstr "मूल्यः"
+
+#: dialogs/usertagsdialog.cpp:63
+msgid ""
+"Available placeholders:\n"
+"%B: Bullet\n"
+"%C: Cursor position\n"
+"%M: Marked text\n"
+"%S: Source file name without extension"
+msgstr ""
+
+#: dialogs/usertagsdialog.cpp:65 kiledocmanager.cpp:1680
+msgid "Add"
+msgstr "जोड़व"
+
+#: dialogs/usertagsdialog.cpp:66
+msgid "Insert"
+msgstr "भरव"
+
+#. i18n: file: widgets/codecompletionconfigwidget.ui:124
+#. i18n: ectx: property (text), widget (KPushButton, m_removeFileButton)
+#. i18n: file: widgets/maintoolconfigwidget.ui:101
+#. i18n: ectx: property (text), widget (KPushButton, m_pshbRemoveTool)
+#. i18n: file: widgets/maintoolconfigwidget.ui:222
+#. i18n: ectx: property (text), widget (KPushButton, m_pshbRemoveConfig)
+#: dialogs/usertagsdialog.cpp:67 rc.cpp:538 rc.cpp:739 rc.cpp:751
+msgid "Remove"
+msgstr "हटाव"
 
 #: docpart.cpp:61
 #, kde-format
@@ -3850,157 +3859,6 @@ msgstr ""
 #: kileactions.cpp:331
 msgid "&Label:"
 msgstr "लेबल: (&L)"
-
-#: kileerrorhandler.cpp:106 outputfilter.cpp:78
-msgid "Cannot open log file; did you run LaTeX?"
-msgstr "लाग फाइल ल खोल नइ सकिस; का आप मन लेटेक्स चलाय हे?"
-
-#: kileerrorhandler.cpp:147
-#, kde-format
-msgid "Detecting errors (%1), please wait ..."
-msgstr "गलतीयों (%1) के पता लगिसया जात हे,... किरपा करके, अगोरव..."
-
-#: kileerrorhandler.cpp:147 kileerrorhandler.cpp:153
-msgid "Log"
-msgstr "लाग"
-
-#: kileerrorhandler.cpp:153
-msgid "Done."
-msgstr "पूरा."
-
-#: kileerrorhandler.cpp:204
-msgid "No LaTeX errors detected."
-msgstr "कोई लेटेक्स गलतीयों के पता नइ लगा."
-
-#: kileextensions.cpp:57
-msgid "(La)TeX Source Files"
-msgstr "(ले)टेक्स स्रोत फाइल"
-
-#: kileextensions.cpp:61
-msgid "(La)TeX Packages"
-msgstr "(ले)टेक्स पैकेजेस"
-
-#: kileextensions.cpp:65
-msgid "BibTeX Files"
-msgstr "बिबटेक्स फाइल"
-
-#: kileextensions.cpp:69
-msgid "Metapost Files"
-msgstr "मेटापोस्ट फाइल"
-
-#: kileextensions.cpp:73
-msgid "Kile Script Files"
-msgstr ""
-
-#: kileextensions.cpp:77
-msgid "Kile Project Files"
-msgstr "काइल परियोजना फाइल"
-
-#: kilehelp.cpp:122
-#, kde-format
-msgid ""
-"Could not find the teTeX documentation at %1; set the correct path in "
-"Settings->Configure Kile->Help."
-msgstr ""
-
-#: kilehelp.cpp:290
-#, fuzzy, kde-format
-msgid "No help available for %1."
-msgstr "खेद हे, %1 बर कोनो मदद नइ मिलत हे."
-
-#: kileviewmanager.cpp:93
-msgid "Paste as LaTe&X"
-msgstr "लेटेक्स जइसन चिपकाव (&X)"
-
-#: kileviewmanager.cpp:97
-msgid "Convert Selection to &LaTeX"
-msgstr "चुने गे ल लेटेक्स मं बदलव (&L)"
-
-#: kileviewmanager.cpp:151
-msgid "Could not create an editor view."
-msgstr "संपादक दृस्य नइ बना सकिस."
-
-#: kileviewmanager.cpp:151
-msgid "Fatal Error"
-msgstr ""
-
-#: kileviewmanager.cpp:520
-msgid "&QuickPreview Selection"
-msgstr ""
-
-#: kileviewmanager.cpp:521
-msgid "&QuickPreview Environment"
-msgstr ""
-
-#: kileviewmanager.cpp:522
-msgid "&QuickPreview Math"
-msgstr ""
-
-#: kilelauncher.cpp:115 kilelauncher.cpp:372 kilelauncher.cpp:459
-msgid " output: \n"
-msgstr "आउटपुट: \n"
-
-#: kilelauncher.cpp:225
-msgid "Launching failed, diagnostics:"
-msgstr "सुरू करना फेल, निदान:"
-
-#: kilelauncher.cpp:230
-msgid "An error occurred while parsing the options given to the tool."
-msgstr ""
-
-#: kilelauncher.cpp:234
-msgid ""
-"Shell meta characters that cannot be handled are present in the options "
-"given to the tool."
-msgstr ""
-
-#: kilelauncher.cpp:243
-#, kde-format
-msgid "There is no executable named \"%1\" in your path."
-msgstr "एक्जीक्यूटेबल नाम \"%1\" आप मन के रस्ता मं नइ मिलिस."
-
-#: kilelauncher.cpp:249
-#, kde-format
-msgid "You do not have permission to run %1."
-msgstr "%1 ल चलाय बर आप मन तिर अनुमति नइ हे."
-
-#: kilelauncher.cpp:254
-msgid "Diagnostics could not find any obvious problems."
-msgstr "निदान से कोनो प्रत्यक्छ समस्या नइ मिल पाई."
-
-#: kilelauncher.cpp:275
-#, kde-format
-msgid "finished with exit code %1"
-msgstr ""
-
-#: kilelauncher.cpp:287
-msgid "finished abruptly"
-msgstr "अकस्मात् पूरा"
-
-#: kilelauncher.cpp:303
-msgid "failed to start"
-msgstr ""
-
-#: kilelauncher.cpp:306
-#, fuzzy
-#| msgid "Passed"
-msgid "crashed"
-msgstr "सफल"
-
-#: kilelauncher.cpp:309
-#, c-format
-msgid "failed (error code %i)"
-msgstr ""
-
-#: kilelauncher.cpp:398
-#, kde-format
-msgid "Could not find the %1 library."
-msgstr "लाइब्रेरी %1 नइ खोज सकिस."
-
-#: kilelauncher.cpp:408
-#, kde-format
-msgid "Could not create component %1 from the library %2."
-msgstr "अवयव %1 ल लाइब्रेरी %2 से बना नइ सकिस."
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -6449,6 +6307,157 @@ msgstr ""
 #: rc.cpp:1276
 msgid "Should UTF-8 characters instead of commands be inserted"
 msgstr ""
+
+#: kileerrorhandler.cpp:106 outputfilter.cpp:78
+msgid "Cannot open log file; did you run LaTeX?"
+msgstr "लाग फाइल ल खोल नइ सकिस; का आप मन लेटेक्स चलाय हे?"
+
+#: kileerrorhandler.cpp:147
+#, kde-format
+msgid "Detecting errors (%1), please wait ..."
+msgstr "गलतीयों (%1) के पता लगिसया जात हे,... किरपा करके, अगोरव..."
+
+#: kileerrorhandler.cpp:147 kileerrorhandler.cpp:153
+msgid "Log"
+msgstr "लाग"
+
+#: kileerrorhandler.cpp:153
+msgid "Done."
+msgstr "पूरा."
+
+#: kileerrorhandler.cpp:204
+msgid "No LaTeX errors detected."
+msgstr "कोई लेटेक्स गलतीयों के पता नइ लगा."
+
+#: kileextensions.cpp:57
+msgid "(La)TeX Source Files"
+msgstr "(ले)टेक्स स्रोत फाइल"
+
+#: kileextensions.cpp:61
+msgid "(La)TeX Packages"
+msgstr "(ले)टेक्स पैकेजेस"
+
+#: kileextensions.cpp:65
+msgid "BibTeX Files"
+msgstr "बिबटेक्स फाइल"
+
+#: kileextensions.cpp:69
+msgid "Metapost Files"
+msgstr "मेटापोस्ट फाइल"
+
+#: kileextensions.cpp:73
+msgid "Kile Script Files"
+msgstr ""
+
+#: kileextensions.cpp:77
+msgid "Kile Project Files"
+msgstr "काइल परियोजना फाइल"
+
+#: kilehelp.cpp:122
+#, kde-format
+msgid ""
+"Could not find the teTeX documentation at %1; set the correct path in "
+"Settings->Configure Kile->Help."
+msgstr ""
+
+#: kilehelp.cpp:290
+#, fuzzy, kde-format
+msgid "No help available for %1."
+msgstr "खेद हे, %1 बर कोनो मदद नइ मिलत हे."
+
+#: kileviewmanager.cpp:93
+msgid "Paste as LaTe&X"
+msgstr "लेटेक्स जइसन चिपकाव (&X)"
+
+#: kileviewmanager.cpp:97
+msgid "Convert Selection to &LaTeX"
+msgstr "चुने गे ल लेटेक्स मं बदलव (&L)"
+
+#: kileviewmanager.cpp:151
+msgid "Could not create an editor view."
+msgstr "संपादक दृस्य नइ बना सकिस."
+
+#: kileviewmanager.cpp:151
+msgid "Fatal Error"
+msgstr ""
+
+#: kileviewmanager.cpp:520
+msgid "&QuickPreview Selection"
+msgstr ""
+
+#: kileviewmanager.cpp:521
+msgid "&QuickPreview Environment"
+msgstr ""
+
+#: kileviewmanager.cpp:522
+msgid "&QuickPreview Math"
+msgstr ""
+
+#: kilelauncher.cpp:115 kilelauncher.cpp:372 kilelauncher.cpp:459
+msgid " output: \n"
+msgstr "आउटपुट: \n"
+
+#: kilelauncher.cpp:225
+msgid "Launching failed, diagnostics:"
+msgstr "सुरू करना फेल, निदान:"
+
+#: kilelauncher.cpp:230
+msgid "An error occurred while parsing the options given to the tool."
+msgstr ""
+
+#: kilelauncher.cpp:234
+msgid ""
+"Shell meta characters that cannot be handled are present in the options "
+"given to the tool."
+msgstr ""
+
+#: kilelauncher.cpp:243
+#, kde-format
+msgid "There is no executable named \"%1\" in your path."
+msgstr "एक्जीक्यूटेबल नाम \"%1\" आप मन के रस्ता मं नइ मिलिस."
+
+#: kilelauncher.cpp:249
+#, kde-format
+msgid "You do not have permission to run %1."
+msgstr "%1 ल चलाय बर आप मन तिर अनुमति नइ हे."
+
+#: kilelauncher.cpp:254
+msgid "Diagnostics could not find any obvious problems."
+msgstr "निदान से कोनो प्रत्यक्छ समस्या नइ मिल पाई."
+
+#: kilelauncher.cpp:275
+#, kde-format
+msgid "finished with exit code %1"
+msgstr ""
+
+#: kilelauncher.cpp:287
+msgid "finished abruptly"
+msgstr "अकस्मात् पूरा"
+
+#: kilelauncher.cpp:303
+msgid "failed to start"
+msgstr ""
+
+#: kilelauncher.cpp:306
+#, fuzzy
+#| msgid "Passed"
+msgid "crashed"
+msgstr "सफल"
+
+#: kilelauncher.cpp:309
+#, c-format
+msgid "failed (error code %i)"
+msgstr ""
+
+#: kilelauncher.cpp:398
+#, kde-format
+msgid "Could not find the %1 library."
+msgstr "लाइब्रेरी %1 नइ खोज सकिस."
+
+#: kilelauncher.cpp:408
+#, kde-format
+msgid "Could not create component %1 from the library %2."
+msgstr "अवयव %1 ल लाइब्रेरी %2 से बना नइ सकिस."
 
 #: kilelyxserver.cpp:231
 msgid "Cite"
