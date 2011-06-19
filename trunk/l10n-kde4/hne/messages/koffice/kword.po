@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-18 04:34+0200\n"
+"POT-Creation-Date: 2011-06-19 04:29+0200\n"
 "PO-Revision-Date: 2009-03-03 11:08+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -864,38 +864,6 @@ msgstr "टोमास्ज ग्रोबेल्नी"
 msgid "Michael Johnson"
 msgstr "माइकल जान्सन"
 
-#: part/KWDocument.cpp:452
-msgid "Copy"
-msgstr "नकल"
-
-#: part/KWDocument.cpp:541
-#, fuzzy
-msgid "Head 1"
-msgstr "सीर्सक १"
-
-#: part/KWDocument.cpp:548
-#, fuzzy
-msgid "Head 2"
-msgstr "सीर्सक २"
-
-#: part/KWDocument.cpp:555
-#, fuzzy
-msgid "Head 3"
-msgstr "सीर्सक ३"
-
-#: part/KWDocument.cpp:562
-#, fuzzy
-msgid "Bullet List"
-msgstr "बुलेट सूची"
-
-#: part/KWDocument.cpp:896
-msgid "Can not find needed text component, KWord will quit now"
-msgstr "जरूरी पाठ अवयव नइ मिलिस, केवर्ड अब बाहिर होथे "
-
-#: part/KWDocument.cpp:897
-msgid "Installation Error"
-msgstr "संस्थापन गलती"
-
 #: part/KWDLoader.cpp:75
 msgid "Invalid document. No mimetype specified."
 msgstr "अवैध कागद. कोनो माइम-किसिम निरधारित नइ."
@@ -922,25 +890,6 @@ msgstr "डाटाबेस ओब्जैक्ट बनाए मं फ�
 msgid "Unable to locate note-text"
 msgstr "डाटाबेस ओब्जैक्ट बनाए मं फेल"
 
-#: part/KWOdfLoader.cpp:86
-#, fuzzy
-#| msgid "Invalid OASIS OpenDocument file. No office:body tag found."
-msgid "Invalid OpenDocument file. No office:body tag found."
-msgstr "अवैध ओएसिस ओपनडाक्यूमेंट फाइल. कोनो आफिस:बाडी टैग नइ मिलिस."
-
-#: part/KWOdfLoader.cpp:98
-#, fuzzy
-#| msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-msgid "Invalid OpenDocument file. No tag found inside office:body."
-msgstr "अवैध ओएसिस ओपनडाक्यूमेंट फाइल. office:body के भीतर कोनो टैग नइ मिलिस."
-
-#: part/KWOdfLoader.cpp:100
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
-msgstr ""
-
 #: part/commands/KWNewPageStyleCommand.cpp:27
 #, fuzzy
 #| msgid "Insert Page"
@@ -952,12 +901,6 @@ msgstr "पेज भरव"
 #| msgid "Page edge:"
 msgid "Set Page Style"
 msgstr "पेज किनारा:"
-
-#: part/commands/KWClipFrameCommand.cpp:40
-#, fuzzy
-#| msgid "Raise Frame"
-msgid "Clip Frame"
-msgstr "फ्रेम उठाव"
 
 #: part/commands/KWCreateOutlineCommand.cpp:30
 msgid "Create custom outline"
@@ -971,13 +914,19 @@ msgstr "फ्रेम बनाव "
 msgid "Delete Frame"
 msgstr "फ्रेम मेटाव"
 
-#: part/commands/KWPageRemoveCommand.cpp:32
-msgid "Remove Page"
-msgstr "पेज मेटाव"
-
 #: part/commands/KWPageStylePropertiesCommand.cpp:36
 msgid "Page Properties"
 msgstr "पेज गुन"
+
+#: part/commands/KWClipFrameCommand.cpp:40
+#, fuzzy
+#| msgid "Raise Frame"
+msgid "Clip Frame"
+msgstr "फ्रेम उठाव"
+
+#: part/commands/KWPageRemoveCommand.cpp:32
+msgid "Remove Page"
+msgstr "पेज मेटाव"
 
 #: part/dialogs/KWStatisticsDialog.cpp:29
 #: part/dockers/KWStatisticsDocker.cpp:35 part/KWView.cpp:385
@@ -1296,34 +1245,24 @@ msgstr "धूसर सीर्स अउ तल"
 msgid "File to open"
 msgstr "फाइल जऊन ल खोलना हे"
 
-#: part/KWStatusBar.cpp:38
-msgid "Modified"
-msgstr "परिवर्धित"
+#: part/KWOdfLoader.cpp:86
+#, fuzzy
+#| msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgid "Invalid OpenDocument file. No office:body tag found."
+msgstr "अवैध ओएसिस ओपनडाक्यूमेंट फाइल. कोनो आफिस:बाडी टैग नइ मिलिस."
 
-#: part/KWStatusBar.cpp:39
-msgid "Saved"
-msgstr "सहेज ले"
+#: part/KWOdfLoader.cpp:98
+#, fuzzy
+#| msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgid "Invalid OpenDocument file. No tag found inside office:body."
+msgstr "अवैध ओएसिस ओपनडाक्यूमेंट फाइल. office:body के भीतर कोनो टैग नइ मिलिस."
 
-#: part/KWStatusBar.cpp:40
+#: part/KWOdfLoader.cpp:100
 #, kde-format
-msgid "Page: %1/%2"
-msgstr "पेज: %1/%2"
-
-#: part/KWStatusBar.cpp:62
-msgid "Page: current/total"
-msgstr "पेज: अभी हाल के/कुल"
-
-#: part/KWStatusBar.cpp:79
-msgid "State: saved/modified"
-msgstr "स्थिति: सहेजिस/परिवर्धित"
-
-#: part/KWStatusBar.cpp:93
-msgid "Mouseposition: X:Y"
-msgstr "मुसुवास्थिति: X:Y"
-
-#: part/KWStatusBar.cpp:106
-msgid "Zoom Controller"
-msgstr "जूम नियंत्रक"
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
+msgstr ""
 
 #: part/KWView.cpp:251
 #, fuzzy
@@ -1672,6 +1611,67 @@ msgstr ""
 #: part/KWView.cpp:1224
 msgid "Create outlines"
 msgstr "आउटलाइन बनाव"
+
+#: part/KWDocument.cpp:452
+msgid "Copy"
+msgstr "नकल"
+
+#: part/KWDocument.cpp:541
+#, fuzzy
+msgid "Head 1"
+msgstr "सीर्सक १"
+
+#: part/KWDocument.cpp:548
+#, fuzzy
+msgid "Head 2"
+msgstr "सीर्सक २"
+
+#: part/KWDocument.cpp:555
+#, fuzzy
+msgid "Head 3"
+msgstr "सीर्सक ३"
+
+#: part/KWDocument.cpp:562
+#, fuzzy
+msgid "Bullet List"
+msgstr "बुलेट सूची"
+
+#: part/KWDocument.cpp:896
+msgid "Can not find needed text component, KWord will quit now"
+msgstr "जरूरी पाठ अवयव नइ मिलिस, केवर्ड अब बाहिर होथे "
+
+#: part/KWDocument.cpp:897
+msgid "Installation Error"
+msgstr "संस्थापन गलती"
+
+#: part/KWStatusBar.cpp:38
+msgid "Modified"
+msgstr "परिवर्धित"
+
+#: part/KWStatusBar.cpp:39
+msgid "Saved"
+msgstr "सहेज ले"
+
+#: part/KWStatusBar.cpp:40
+#, kde-format
+msgid "Page: %1/%2"
+msgstr "पेज: %1/%2"
+
+#: part/KWStatusBar.cpp:62
+msgid "Page: current/total"
+msgstr "पेज: अभी हाल के/कुल"
+
+#: part/KWStatusBar.cpp:79
+msgid "State: saved/modified"
+msgstr "स्थिति: सहेजिस/परिवर्धित"
+
+#: part/KWStatusBar.cpp:93
+msgid "Mouseposition: X:Y"
+msgstr "मुसुवास्थिति: X:Y"
+
+#: part/KWStatusBar.cpp:106
+msgid "Zoom Controller"
+msgstr "जूम नियंत्रक"
 
 #, fuzzy
 #~| msgid "Create a new frameset:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-18 04:35+0200\n"
+"POT-Creation-Date: 2011-06-19 04:29+0200\n"
 "PO-Revision-Date: 2009-03-03 09:35+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -17,10 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 0.3\n"
-
-#: flake/KoToolBase.cpp:173 flake/KoToolManager.cpp:352
-msgid "Tool Options"
-msgstr "औजार विकल्प"
 
 #: flake/KPathShapeFactory.cpp:32
 #, fuzzy
@@ -32,14 +28,18 @@ msgstr "एक सादा रस्ता आकार"
 msgid "A simple path shape"
 msgstr "एक सादा रस्ता आकार"
 
-#: flake/KShapePaste.cpp:100
-msgid "Paste Shapes"
-msgstr "आकारों ल चिपकाव"
+#: flake/KToolBase.cpp:173 flake/KToolManager.cpp:352
+msgid "Tool Options"
+msgstr "औजार विकल्प"
 
-#: flake/KoToolManager.cpp:351
+#: flake/KToolManager.cpp:351
 #, kde-format
 msgid "Active tool: %1"
 msgstr "सक्रिय औजार: %1"
+
+#: flake/KShapePaste.cpp:100
+msgid "Paste Shapes"
+msgstr "आकारों ल चिपकाव"
 
 #: flake/commands/KPathSegmentBreakCommand.cpp:40
 #, fuzzy
@@ -123,6 +123,12 @@ msgstr "आकारों ल नवा क्रम देव"
 msgid "Resize Shapes"
 msgstr "आकार बदलव"
 
+#: flake/commands/KSubpathRemoveCommand.cpp:30
+#, fuzzy
+#| msgid "Remove subpath"
+msgid "Remove Subpath"
+msgstr "उपपथ मेटाव"
+
 #: flake/commands/KParameterHandleMoveCommand.cpp:34
 #, fuzzy
 #| msgid "Change parameter"
@@ -166,13 +172,6 @@ msgstr "बिन्दु ल मिलाव"
 #: flake/commands/KPathPointMoveCommand.cpp:58
 msgid "Move points"
 msgstr "बिन्दु ल खिसकाव"
-
-#: flake/commands/KPathPointRemoveCommand.cpp:104
-#: flake/commands/KPathPointRemoveCommand.cpp:133
-#, fuzzy
-#| msgid "Remove points"
-msgid "Remove Points"
-msgstr "बिन्दु हटाव"
 
 #: flake/commands/KPathPointTypeCommand.cpp:46
 #, fuzzy
@@ -220,61 +219,44 @@ msgstr "आकार तालाबंद करव"
 msgid "Set Shadow"
 msgstr "छइंहा सेट करव"
 
-#: flake/commands/KoShapeTransparencyCommand.cpp:49
-#: flake/commands/KoShapeTransparencyCommand.cpp:60
-#: flake/commands/KoShapeTransparencyCommand.cpp:73
+#: flake/commands/KPathPointRemoveCommand.cpp:104
+#: flake/commands/KPathPointRemoveCommand.cpp:133
+#, fuzzy
+#| msgid "Remove points"
+msgid "Remove Points"
+msgstr "बिन्दु हटाव"
+
+#: flake/commands/KShapeTransparencyCommand.cpp:49
+#: flake/commands/KShapeTransparencyCommand.cpp:60
+#: flake/commands/KShapeTransparencyCommand.cpp:73
 #, fuzzy
 #| msgid "Opacity"
 msgid "Set Opacity"
 msgstr "अपार्दरसिता"
 
-#: flake/commands/KoShapeUngroupCommand.cpp:57
+#: flake/commands/KShapeUngroupCommand.cpp:57
 #, fuzzy
 #| msgid "Ungroup shapes"
 msgid "Ungroup Shapes"
 msgstr "आकारों से समूह हटाव"
 
-#: flake/commands/KoSubpathJoinCommand.cpp:51
+#: flake/commands/KSubpathJoinCommand.cpp:51
 #, fuzzy
 #| msgid "Close subpath"
 msgid "Close Subpath"
 msgstr "उपपथ बंद करव"
 
-#: flake/commands/KoSubpathJoinCommand.cpp:53
+#: flake/commands/KSubpathJoinCommand.cpp:53
 #, fuzzy
 #| msgid "Join subpaths"
 msgid "Join Subpaths"
 msgstr "उपपथ मं सामिल हों"
-
-#: flake/commands/KoSubpathRemoveCommand.cpp:30
-#, fuzzy
-#| msgid "Remove subpath"
-msgid "Remove Subpath"
-msgstr "उपपथ मेटाव"
 
 #: flake/commands/KShapeShearCommand.cpp:51
 #, fuzzy
 #| msgid "Shear shapes"
 msgid "Shear Shapes"
 msgstr "आकार काटव"
-
-#: flake/tools/KCreatePathTool.cpp:369 flake/tools/KPathTool.cpp:180
-msgid "Snapping"
-msgstr "स्नेपिंग"
-
-#: flake/tools/KCreatePathTool.cpp:374
-msgid "Angle snapping delta"
-msgstr ""
-
-#: flake/tools/KCreatePathTool.cpp:379
-#, fuzzy
-#| msgid "Change Connection"
-msgid "Angle Constraints"
-msgstr "कनेक्सन बदलव"
-
-#: flake/tools/KCreatePathToolFactory.cpp:33
-msgid "Create Path"
-msgstr "पथ तैयार करव"
 
 #: flake/tools/KCreateShapesToolFactory.cpp:33
 msgid "Create object"
@@ -283,12 +265,6 @@ msgstr "चीज बनाव"
 #: flake/tools/KPanToolFactory.cpp:29
 msgid "Pan"
 msgstr "पीएएन"
-
-#: flake/tools/KPathSegmentChangeStrategy.cpp:140
-#, fuzzy
-#| msgid "Change Connection"
-msgid "Change Segment"
-msgstr "कनेक्सन बदलव"
 
 #: flake/tools/KPathTool.cpp:87
 msgid "Corner point"
@@ -350,6 +326,10 @@ msgstr "पथ पर"
 msgid "Line/Curve"
 msgstr "लाइन/वक्र"
 
+#: flake/tools/KPathTool.cpp:180 flake/tools/KCreatePathTool.cpp:369
+msgid "Snapping"
+msgstr "स्नेपिंग"
+
 #: flake/tools/KPathTool.cpp:514
 msgid "Drag to move handle."
 msgstr "हेंडल खिसकाय बर खींचव."
@@ -370,14 +350,34 @@ msgstr ""
 msgid "Press B to break path at selected segments."
 msgstr ""
 
-#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:248
+#: flake/tools/KPathToolFactory.cpp:29
+msgid "Path editing tool"
+msgstr "पथ संपादन औजार"
+
+#: flake/tools/KZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:248
 #: widgets/KoZoomController.cpp:38 widgets/KoZoomInput.cpp:52
 msgid "Zoom"
 msgstr "जूम"
 
-#: flake/tools/KPathToolFactory.cpp:29
-msgid "Path editing tool"
-msgstr "पथ संपादन औजार"
+#: flake/tools/KCreatePathTool.cpp:374
+msgid "Angle snapping delta"
+msgstr ""
+
+#: flake/tools/KCreatePathTool.cpp:379
+#, fuzzy
+#| msgid "Change Connection"
+msgid "Angle Constraints"
+msgstr "कनेक्सन बदलव"
+
+#: flake/tools/KCreatePathToolFactory.cpp:33
+msgid "Create Path"
+msgstr "पथ तैयार करव"
+
+#: flake/tools/KPathSegmentChangeStrategy.cpp:140
+#, fuzzy
+#| msgid "Change Connection"
+msgid "Change Segment"
+msgstr "कनेक्सन बदलव"
 
 #: kokross/KoScriptManager.cpp:177
 msgid "Install Script Package"
@@ -769,6 +769,12 @@ msgstr ""
 msgid "Master Page"
 msgstr "मास्टर पेज"
 
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:93
+#, fuzzy
+#| msgid "Change backgound image"
+msgid "Change background image"
+msgstr "पिछोत अंगना बदलव"
+
 #: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:105
 msgid "Background Tool"
 msgstr "पिछोत अंगना औजार"
@@ -780,12 +786,6 @@ msgstr ""
 #: kopageapp/tools/backgroundTool/KoPABackgroundToolFactory.cpp:30
 msgid "Background editing tool"
 msgstr "पिछोत अंगना संपादन औजार"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:93
-#, fuzzy
-#| msgid "Change backgound image"
-msgid "Change background image"
-msgstr "पिछोत अंगना बदलव"
 
 #: kopageapp/KoPAPastePage.cpp:132
 msgid "Paste Slide"
@@ -921,49 +921,6 @@ msgstr[1] ""
 msgid "Found no match"
 msgstr "कोई जोड़े नइ मिलिस"
 
-#: kotext/InsertTextLocator.cpp:29
-#, fuzzy
-#| msgid "Text Reference"
-msgid "Index Reference"
-msgstr "पाठ संदर्भ"
-
-#: kotext/InsertTextReferenceAction.cpp:35
-#: kotext/InsertTextReferenceAction.cpp:63
-msgid "Text Reference"
-msgstr "पाठ संदर्भ"
-
-#: kotext/InsertTextReferenceAction.cpp:44
-#, fuzzy
-#| msgid "Select the index you want to reference"
-msgid "Please create an index to reference first."
-msgstr "वह निर्देसिका चुनव जेखर संदर्भ आब देना चाहथो "
-
-#: kotext/InsertTextReferenceAction.cpp:53
-msgid "Select the index you want to reference"
-msgstr "वह निर्देसिका चुनव जेखर संदर्भ आब देना चाहथो "
-
-#: kotext/InsertTextReferenceAction.cpp:63 kotext/InsertVariableAction.cpp:51
-#: main/rdf/InsertSemanticObjectCreateAction.cpp:59
-#: main/rdf/InsertSemanticObjectReferenceAction.cpp:63
-#, kde-format
-msgid "%1 Options"
-msgstr "%1 विकल्प"
-
-#: kotext/KoText.cpp:47
-msgctxt "Underline Style"
-msgid "None"
-msgstr "कुछ नइ"
-
-#: kotext/KoText.cpp:48
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "एकल"
-
-#: kotext/KoText.cpp:49
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "दोगुना"
-
 #: kotext/commands/DeleteTableColumnCommand.cpp:40
 #: kotext/KoTextEditor.cpp:1058
 #, fuzzy
@@ -1002,6 +959,71 @@ msgstr "ब्रेक भरव"
 #| msgid "Insert page"
 msgid "Insert Row Above"
 msgstr "पेज भरव"
+
+#: kotext/KoText.cpp:47
+msgctxt "Underline Style"
+msgid "None"
+msgstr "कुछ नइ"
+
+#: kotext/KoText.cpp:48
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "एकल"
+
+#: kotext/KoText.cpp:49
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "दोगुना"
+
+#: kotext/KReplaceStrategy.cpp:58
+msgid ""
+"Found no match\n"
+"\n"
+"No text was replaced"
+msgstr ""
+"कोई जोड़े नइ मिलिस\n"
+"\n"
+"पाठ ल बदले नइ गिस"
+
+#: kotext/KReplaceStrategy.cpp:61
+#, kde-format
+msgid "1 replacement made"
+msgid_plural "%1 replacements made"
+msgstr[0] ""
+msgstr[1] ""
+
+#: kotext/KReplaceStrategy.cpp:74
+#, kde-format
+msgid "Replace %1 with %2?"
+msgstr "%1 ल %2 से बदलव?"
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:344
+msgid "Format"
+msgstr "फार्मेट"
+
+#: kotext/InsertTextReferenceAction.cpp:35
+#: kotext/InsertTextReferenceAction.cpp:63
+msgid "Text Reference"
+msgstr "पाठ संदर्भ"
+
+#: kotext/InsertTextReferenceAction.cpp:44
+#, fuzzy
+#| msgid "Select the index you want to reference"
+msgid "Please create an index to reference first."
+msgstr "वह निर्देसिका चुनव जेखर संदर्भ आब देना चाहथो "
+
+#: kotext/InsertTextReferenceAction.cpp:53
+msgid "Select the index you want to reference"
+msgstr "वह निर्देसिका चुनव जेखर संदर्भ आब देना चाहथो "
+
+#: kotext/InsertTextReferenceAction.cpp:63 kotext/InsertVariableAction.cpp:51
+#: main/rdf/InsertSemanticObjectReferenceAction.cpp:63
+#: main/rdf/InsertSemanticObjectCreateAction.cpp:59
+#, kde-format
+msgid "%1 Options"
+msgstr "%1 विकल्प"
 
 #: kotext/KoTextEditor.cpp:111 kotext/KoTextEditor.cpp:167
 #: kotext/KoTextEditor.cpp:325 widgets/KoCsvImportDialog.cpp:216
@@ -1140,33 +1162,11 @@ msgstr "खड़ा"
 msgid "Line Break"
 msgstr "लकीर चौड़ाई"
 
-#: kotext/KReplaceStrategy.cpp:58
-msgid ""
-"Found no match\n"
-"\n"
-"No text was replaced"
-msgstr ""
-"कोई जोड़े नइ मिलिस\n"
-"\n"
-"पाठ ल बदले नइ गिस"
-
-#: kotext/KReplaceStrategy.cpp:61
-#, kde-format
-msgid "1 replacement made"
-msgid_plural "%1 replacements made"
-msgstr[0] ""
-msgstr[1] ""
-
-#: kotext/KReplaceStrategy.cpp:74
-#, kde-format
-msgid "Replace %1 with %2?"
-msgstr "%1 ल %2 से बदलव?"
-
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:344
-msgid "Format"
-msgstr "फार्मेट"
+#: kotext/InsertTextLocator.cpp:29
+#, fuzzy
+#| msgid "Text Reference"
+msgid "Index Reference"
+msgstr "पाठ संदर्भ"
 
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
@@ -2227,6 +2227,12 @@ msgstr ""
 msgid "Locations"
 msgstr "काम"
 
+#: main/rdf/KoDocumentRdf.cpp:851
+#, fuzzy
+#| msgid "Text Reference"
+msgid "Reference"
+msgstr "पाठ संदर्भ"
+
 #: main/rdf/KoSopranoTableModel.cpp:80
 msgid "Empty"
 msgstr ""
@@ -2293,12 +2299,6 @@ msgstr "रुक गिस"
 #| msgid "Select the index you want to reference"
 msgid "Select the object you want to reference"
 msgstr "वह निर्देसिका चुनव जेखर संदर्भ आब देना चाहथो "
-
-#: main/rdf/KoDocumentRdf.cpp:851
-#, fuzzy
-#| msgid "Text Reference"
-msgid "Reference"
-msgstr "पाठ संदर्भ"
 
 #: main/config/KoConfigDocumentPage.cpp:75
 #, fuzzy
@@ -3230,13 +3230,13 @@ msgstr "लाइन के प्रतिक्छेदन"
 msgid "Guide lines"
 msgstr "गाइड लाइन"
 
-#. i18n: file: flake/tools/KoZoomToolWidget.ui:20
+#. i18n: file: flake/tools/KZoomToolWidget.ui:20
 #. i18n: ectx: property (text), widget (QRadioButton, zoomInButton)
 #: rc.cpp:27
 msgid "Zoom In"
 msgstr "जूम इन"
 
-#. i18n: file: flake/tools/KoZoomToolWidget.ui:30
+#. i18n: file: flake/tools/KZoomToolWidget.ui:30
 #. i18n: ectx: property (text), widget (QRadioButton, zoomOutButton)
 #: rc.cpp:30
 msgid "Zoom Out"
