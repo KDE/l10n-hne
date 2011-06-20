@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-18 03:52+0200\n"
+"POT-Creation-Date: 2011-06-20 03:50+0200\n"
 "PO-Revision-Date: 2009-02-17 12:43+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -559,25 +559,6 @@ msgstr "नवं."
 msgid "dec"
 msgstr "दिसं."
 
-#: DB/NewImageFinder.cpp:121
-msgid ""
-"<p><b>Loading information from new files</b></p><p>Depending on the number "
-"of images, this may take some time.<br/>However, there is only a delay when "
-"new images are found.</p>"
-msgstr ""
-
-#: DB/NewImageFinder.cpp:264
-#, kde-format
-msgid ""
-"<p><b>Calculating checksum for %1 files<b></p><p>By storing a checksum for "
-"each image KPhotoAlbum is capable of finding images even when you have moved "
-"them on the disk.</p>"
-msgstr ""
-
-#: DB/NewImageFinder.cpp:308
-msgid "Following files could not be read:"
-msgstr "निम्न फाइल मन ल पढ़ नइ सकिस:"
-
 #: DB/ImageSearchInfo.cpp:182
 #, kde-format
 msgctxt ""
@@ -600,6 +581,25 @@ msgctxt ""
 "Jesper."
 msgid "No other %1"
 msgstr "कोई %1 नइ"
+
+#: DB/NewImageFinder.cpp:121
+msgid ""
+"<p><b>Loading information from new files</b></p><p>Depending on the number "
+"of images, this may take some time.<br/>However, there is only a delay when "
+"new images are found.</p>"
+msgstr ""
+
+#: DB/NewImageFinder.cpp:269
+#, kde-format
+msgid ""
+"<p><b>Calculating checksum for %1 files<b></p><p>By storing a checksum for "
+"each image KPhotoAlbum is capable of finding images even when you have moved "
+"them on the disk.</p>"
+msgstr ""
+
+#: DB/NewImageFinder.cpp:313
+msgid "Following files could not be read:"
+msgstr "निम्न फाइल मन ल पढ़ नइ सकिस:"
 
 #: DateBar/DateBarWidget.cpp:81
 msgid "Widen selection to include all images and videos again"
@@ -2590,194 +2590,6 @@ msgstr "एक्जइफ गोठ मं देखाय बर एक्ज�
 msgid "Character set for image metadata:"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:36
-msgid "File Version Detection Settings"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:39
-msgid "Try to detect multiple versions of files"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:41
-msgid "File versions search regexp:"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:44
-msgid "Original file replacement text:"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:47
-msgid "Move meta-data (i.e. delete tags from the original):"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:49
-msgid "Auto-stack new files on top of old"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:52
-msgctxt ""
-"Configure the feature to make a copy of a file first and then open the "
-"copied file with an external application"
-msgid "Copy File and Open with an External Application"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:55
-msgid "Copy file search regexp:"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:58
-msgid "Copy file replacement text:"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:62
-msgid ""
-"<p>When KPhotoAlbum searches for new files and finds a file that matches the "
-"<i>modified file search regexp</i> it is assumed that an original version of "
-"the image may exist.  The regexp pattern will be replaced with the "
-"<i>original file string</i> text and if that file exists, all associated "
-"metadata (category information, ratings, etc) will be copied from the "
-"original file to the new one.</p>"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:71
-msgid ""
-"<p>KPhotoAlbum can make a copy of an image before opening it with an "
-"external program.  These settings set the original regexp to search for and "
-"contents to replace it with when deciding what the new filename should be.</"
-"p>"
-msgstr ""
-
-#: Settings/GeneralPage.cpp:40
-msgid "New Images"
-msgstr "नवा फोटू"
-
-#: Settings/GeneralPage.cpp:45
-msgid "Trust image dates:"
-msgstr "फोटू तारीकयों मं भरोसा करव:"
-
-#: Settings/GeneralPage.cpp:47
-msgid "Always"
-msgstr "हमेसा"
-
-#: Settings/GeneralPage.cpp:47
-msgid "Ask"
-msgstr "पूछव"
-
-#: Settings/GeneralPage.cpp:47 Settings/ThumbnailsPage.cpp:98
-msgid "Never"
-msgstr "कभू नइ"
-
-#: Settings/GeneralPage.cpp:55
-msgid "Use EXIF orientation information"
-msgstr "एक्सइफ दिसा-निर्धारन जानकारी उपयोग मं लें"
-
-#: Settings/GeneralPage.cpp:57
-msgid "Use EXIF description"
-msgstr "एक्सइफ वर्नन ईस्तमाल करव"
-
-#: Settings/GeneralPage.cpp:60
-msgid "Search for new images and videos on startup"
-msgstr "सुरू मं नवा फोटू मन अउ वीडियो बर खोजव"
-
-#: Settings/GeneralPage.cpp:61
-#, fuzzy
-#| msgid "Don't read RAW files if matching JPEG/TIFF file exists"
-msgid "Do not read RAW files if a matching JPEG/TIFF file exists"
-msgstr "यदि मिलत जुलत जेपीईजी/टिफ फाइल हे तहां रा फाइल नइ पढ़व"
-
-#: Settings/GeneralPage.cpp:64
-msgid "Use the embedded thumbnail in RAW file or halfsized RAW"
-msgstr ""
-
-#: Settings/GeneralPage.cpp:68
-#, fuzzy
-#| msgid "Reorder Thumbnails"
-msgid "Required size for the thumbnail:"
-msgstr "छोटेफोटू रीआर्डर करत हे"
-
-#: Settings/GeneralPage.cpp:87
-msgid "Directories to exclude from new file search:"
-msgstr ""
-
-#: Settings/GeneralPage.cpp:96
-#, fuzzy
-#| msgid "Size of histogram columns in datebar:"
-msgid "Size of histogram columns in date bar:"
-msgstr "तारीकपट्टी मं हिस्टोग्राम खंभा के आकार:"
-
-#: Settings/GeneralPage.cpp:111
-msgid "Show splash screen"
-msgstr "स्प्लैस स्क्रीन देखाव"
-
-#: Settings/GeneralPage.cpp:115
-msgid "Category for virtual albums:"
-msgstr "आभासी एलबम बर वर्ग:"
-
-#: Settings/GeneralPage.cpp:136
-msgid ""
-"<p>KPhotoAlbum will try to read the image date from EXIF information in the "
-"image. If that fails it will try to get the date from the file's time stamp."
-"</p><p>However, this information will be wrong if the image was scanned in "
-"(you want the date the image was taken, not the date of the scan).</p><p>If "
-"you only scan images, in contrast to sometimes using a digital camera, you "
-"should reply <b>no</b>. If you never scan images, you should reply <b>yes</"
-"b>, otherwise reply <b>ask</b>. This will allow you to decide whether the "
-"images are from the scanner or the camera, from session to session.</p>"
-msgstr ""
-
-#: Settings/GeneralPage.cpp:147
-msgid ""
-"<p>JPEG images may contain information about rotation. If you have a reason "
-"for not using this information to get a default rotation of your images, "
-"uncheck this check box.</p><p>Note: Your digital camera may not write this "
-"information into the images at all.</p>"
-msgstr ""
-
-#: Settings/GeneralPage.cpp:153
-msgid ""
-"<p>JPEG images may contain a description. Check this checkbox to specify if "
-"you want to use this as a default description for your images.</p>"
-msgstr ""
-
-#: Settings/GeneralPage.cpp:158
-msgid ""
-"<p>KPhotoAlbum is capable of searching for new images and videos when "
-"started, this does, however, take some time, so instead you may wish to "
-"manually tell KPhotoAlbum to search for new images using <b>Maintenance-"
-">Rescan for new images</b></p>"
-msgstr ""
-
-#: Settings/GeneralPage.cpp:163
-msgid ""
-"<p>KPhotoAlbum is capable of reading certain kinds of RAW images.  Some "
-"cameras store both a RAW image and a matching JPEG or TIFF image.  This "
-"causes duplicate images to be stored in KPhotoAlbum, which may be "
-"undesirable.  If this option is checked, KPhotoAlbum will not read RAW files "
-"for which matching image files also exist.</p>"
-msgstr ""
-
-#: Settings/GeneralPage.cpp:169
-msgid ""
-"<p>KPhotoAlbum shares plugins with other imaging applications, some of which "
-"have the concept of albums. KPhotoAlbum does not have this concept; "
-"nevertheless, for certain plugins to function, KPhotoAlbum behaves to the "
-"plugin system as if it did.</p><p>KPhotoAlbum does this by defining the "
-"current album to be the current view - that is, all the images the browser "
-"offers to display.</p><p>In addition to the current album, KPhotoAlbum must "
-"also be able to give a list of all albums; the list of all albums is defined "
-"in the following way:<ul><li>When KPhotoAlbum's browser displays the content "
-"of a category, say all People, then each item in this category will look "
-"like an album to the plugin.</li><li>Otherwise, the category you specify "
-"using this option will be used; e.g. if you specify People with this option, "
-"then KPhotoAlbum will act as if you had just chosen to display people and "
-"then invoke the plugin which needs to know about all albums.</li></ul></"
-"p><p>Most users would probably want to specify Events here.</p>"
-msgstr ""
-
-#: Settings/GeneralPage.cpp:185
-msgid "Show the KPhotoAlbum splash screen on start up"
-msgstr "सुरू मं केफोटोएलबम स्प्लैस स्क्रीन दिखाव"
-
 #: Settings/PluginsPage.cpp:35
 msgid "Choose Plugins to load:"
 msgstr "लोड करे बर प्लगइन्स चुनव:"
@@ -2787,38 +2599,6 @@ msgstr "लोड करे बर प्लगइन्स चुनव:"
 #| msgid "Delay loading plug-ins till plug-in menu is opened"
 msgid "Delay loading plugins until the plugin menu is opened"
 msgstr "जब तक प्लगइन मेन्यू खुल नइ जाय, प्लगइन लोड करे मं देरी करव"
-
-#: Settings/SettingsDialog.cpp:67
-#, fuzzy
-#| msgid "Version %1"
-msgid "File Versions"
-msgstr "संस्करन %1"
-
-#: Settings/SettingsDialog.cpp:68
-msgid "Thumbnail View"
-msgstr "छोटे फोटू दृस्य"
-
-#: Settings/SettingsDialog.cpp:69
-msgid "Categories"
-msgstr "स्रेनी"
-
-#: Settings/SettingsDialog.cpp:70
-msgid "Subcategories"
-msgstr "उपस्रेनी"
-
-#. i18n: file: kphotoalbumui.rc:70
-#. i18n: ectx: Menu (plugins)
-#: Settings/SettingsDialog.cpp:73 rc.cpp:14
-msgid "Plugins"
-msgstr "प्लगइन्स"
-
-#: Settings/SettingsDialog.cpp:77
-msgid "EXIF/IPTC Information"
-msgstr "एक्सइफ/आईपीटीसी जानकारी"
-
-#: Settings/SettingsDialog.cpp:79
-msgid "Database backend"
-msgstr "डाटाबेस बैकएन्ड"
 
 #: Settings/SubCategoriesPage.cpp:53
 msgid "Super Categories:"
@@ -3029,6 +2809,10 @@ msgstr "छोटेफोटू दृस्य मं स्रेनी द�
 msgid "Auto display limit: "
 msgstr "अपने अपन देखाय के सीमा:"
 
+#: Settings/ThumbnailsPage.cpp:98 Settings/GeneralPage.cpp:46
+msgid "Never"
+msgstr "कभू नइ"
+
 #: Settings/ThumbnailsPage.cpp:109
 msgid ""
 "<p>If you select <b>Settings -&gt; Show Tooltips</b> in the thumbnail view, "
@@ -3082,6 +2866,228 @@ msgid ""
 "the thumbnails will be shown automatically. The alternative is to continue "
 "showing the browser until you press <i>Show Images</i></p>"
 msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:36
+msgid "New File Searches"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:40
+msgid "Search for new images and videos on startup"
+msgstr "सुरू मं नवा फोटू मन अउ वीडियो बर खोजव"
+
+#: Settings/FileVersionDetectionPage.cpp:41
+#, fuzzy
+#| msgid "Don't read RAW files if matching JPEG/TIFF file exists"
+msgid "Do not read RAW files if a matching JPEG/TIFF file exists"
+msgstr "यदि मिलत जुलत जेपीईजी/टिफ फाइल हे तहां रा फाइल नइ पढ़व"
+
+#: Settings/FileVersionDetectionPage.cpp:44
+msgid "Directories to exclude from new file search:"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:49
+msgid "File Version Detection Settings"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:52
+msgid "Try to detect multiple versions of files"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:54
+msgid "File versions search regexp:"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:57
+msgid "Original file replacement text:"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:60
+msgid "Move meta-data (i.e. delete tags from the original):"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:62
+msgid "Auto-stack new files on top of old"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:65
+msgctxt ""
+"Configure the feature to make a copy of a file first and then open the "
+"copied file with an external application"
+msgid "Copy File and Open with an External Application"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:68
+msgid "Copy file search regexp:"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:71
+msgid "Copy file replacement text:"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:75
+msgid ""
+"<p>KPhotoAlbum is capable of searching for new images and videos when "
+"started, this does, however, take some time, so instead you may wish to "
+"manually tell KPhotoAlbum to search for new images using <b>Maintenance-"
+">Rescan for new images</b></p>"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:80
+msgid ""
+"<p>KPhotoAlbum is capable of reading certain kinds of RAW images.  Some "
+"cameras store both a RAW image and a matching JPEG or TIFF image.  This "
+"causes duplicate images to be stored in KPhotoAlbum, which may be "
+"undesirable.  If this option is checked, KPhotoAlbum will not read RAW files "
+"for which matching image files also exist.</p>"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:86
+msgid ""
+"<p>When KPhotoAlbum searches for new files and finds a file that matches the "
+"<i>modified file search regexp</i> it is assumed that an original version of "
+"the image may exist.  The regexp pattern will be replaced with the "
+"<i>original file string</i> text and if that file exists, all associated "
+"metadata (category information, ratings, etc) will be copied from the "
+"original file to the new one.</p>"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:95
+msgid ""
+"<p>KPhotoAlbum can make a copy of an image before opening it with an "
+"external program.  These settings set the original regexp to search for and "
+"contents to replace it with when deciding what the new filename should be.</"
+"p>"
+msgstr ""
+
+#: Settings/GeneralPage.cpp:39
+#, fuzzy
+#| msgid "New Images"
+msgid "Loading New Images"
+msgstr "नवा फोटू"
+
+#: Settings/GeneralPage.cpp:44
+msgid "Trust image dates:"
+msgstr "फोटू तारीकयों मं भरोसा करव:"
+
+#: Settings/GeneralPage.cpp:46
+msgid "Always"
+msgstr "हमेसा"
+
+#: Settings/GeneralPage.cpp:46
+msgid "Ask"
+msgstr "पूछव"
+
+#: Settings/GeneralPage.cpp:54
+msgid "Use EXIF orientation information"
+msgstr "एक्सइफ दिसा-निर्धारन जानकारी उपयोग मं लें"
+
+#: Settings/GeneralPage.cpp:56
+msgid "Use EXIF description"
+msgstr "एक्सइफ वर्नन ईस्तमाल करव"
+
+#: Settings/GeneralPage.cpp:59
+msgid "Use the embedded thumbnail in RAW file or halfsized RAW"
+msgstr ""
+
+#: Settings/GeneralPage.cpp:63
+#, fuzzy
+#| msgid "Reorder Thumbnails"
+msgid "Required size for the thumbnail:"
+msgstr "छोटेफोटू रीआर्डर करत हे"
+
+#: Settings/GeneralPage.cpp:85
+#, fuzzy
+#| msgid "Size of histogram columns in datebar:"
+msgid "Size of histogram columns in date bar:"
+msgstr "तारीकपट्टी मं हिस्टोग्राम खंभा के आकार:"
+
+#: Settings/GeneralPage.cpp:100
+msgid "Show splash screen"
+msgstr "स्प्लैस स्क्रीन देखाव"
+
+#: Settings/GeneralPage.cpp:104
+msgid "Category for virtual albums:"
+msgstr "आभासी एलबम बर वर्ग:"
+
+#: Settings/GeneralPage.cpp:125
+msgid ""
+"<p>KPhotoAlbum will try to read the image date from EXIF information in the "
+"image. If that fails it will try to get the date from the file's time stamp."
+"</p><p>However, this information will be wrong if the image was scanned in "
+"(you want the date the image was taken, not the date of the scan).</p><p>If "
+"you only scan images, in contrast to sometimes using a digital camera, you "
+"should reply <b>no</b>. If you never scan images, you should reply <b>yes</"
+"b>, otherwise reply <b>ask</b>. This will allow you to decide whether the "
+"images are from the scanner or the camera, from session to session.</p>"
+msgstr ""
+
+#: Settings/GeneralPage.cpp:136
+msgid ""
+"<p>JPEG images may contain information about rotation. If you have a reason "
+"for not using this information to get a default rotation of your images, "
+"uncheck this check box.</p><p>Note: Your digital camera may not write this "
+"information into the images at all.</p>"
+msgstr ""
+
+#: Settings/GeneralPage.cpp:142
+msgid ""
+"<p>JPEG images may contain a description. Check this checkbox to specify if "
+"you want to use this as a default description for your images.</p>"
+msgstr ""
+
+#: Settings/GeneralPage.cpp:147
+msgid ""
+"<p>KPhotoAlbum shares plugins with other imaging applications, some of which "
+"have the concept of albums. KPhotoAlbum does not have this concept; "
+"nevertheless, for certain plugins to function, KPhotoAlbum behaves to the "
+"plugin system as if it did.</p><p>KPhotoAlbum does this by defining the "
+"current album to be the current view - that is, all the images the browser "
+"offers to display.</p><p>In addition to the current album, KPhotoAlbum must "
+"also be able to give a list of all albums; the list of all albums is defined "
+"in the following way:<ul><li>When KPhotoAlbum's browser displays the content "
+"of a category, say all People, then each item in this category will look "
+"like an album to the plugin.</li><li>Otherwise, the category you specify "
+"using this option will be used; e.g. if you specify People with this option, "
+"then KPhotoAlbum will act as if you had just chosen to display people and "
+"then invoke the plugin which needs to know about all albums.</li></ul></"
+"p><p>Most users would probably want to specify Events here.</p>"
+msgstr ""
+
+#: Settings/GeneralPage.cpp:163
+msgid "Show the KPhotoAlbum splash screen on start up"
+msgstr "सुरू मं केफोटोएलबम स्प्लैस स्क्रीन दिखाव"
+
+#: Settings/SettingsDialog.cpp:67
+#, fuzzy
+#| msgid "Version %1"
+msgid "File Searching & Versions"
+msgstr "संस्करन %1"
+
+#: Settings/SettingsDialog.cpp:68
+msgid "Thumbnail View"
+msgstr "छोटे फोटू दृस्य"
+
+#: Settings/SettingsDialog.cpp:69
+msgid "Categories"
+msgstr "स्रेनी"
+
+#: Settings/SettingsDialog.cpp:70
+msgid "Subcategories"
+msgstr "उपस्रेनी"
+
+#. i18n: file: kphotoalbumui.rc:70
+#. i18n: ectx: Menu (plugins)
+#: Settings/SettingsDialog.cpp:73 rc.cpp:14
+msgid "Plugins"
+msgstr "प्लगइन्स"
+
+#: Settings/SettingsDialog.cpp:77
+msgid "EXIF/IPTC Information"
+msgstr "एक्सइफ/आईपीटीसी जानकारी"
+
+#: Settings/SettingsDialog.cpp:79
+msgid "Database backend"
+msgstr "डाटाबेस बैकएन्ड"
 
 #: ThumbnailView/ThumbnailDND.cpp:89
 msgid ""
