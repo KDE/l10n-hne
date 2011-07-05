@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmix\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-17 04:17+0200\n"
+"POT-Creation-Date: 2011-07-05 05:16+0200\n"
 "PO-Revision-Date: 2009-02-26 17:29+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -243,6 +243,10 @@ msgstr "मिलत मिक्सर्स"
 msgid "Mixer"
 msgstr "मिक्सर"
 
+#: core/mixdevice.cpp:112 backends/mixer_oss.cpp:67 backends/mixer_oss.cpp:68
+msgid "unknown"
+msgstr "अग्यात"
+
 #: core/mixertoolbox.cpp:204
 msgid "Sound drivers supported:"
 msgstr "समर्थित अवाज ड्राइवर्स:"
@@ -250,10 +254,6 @@ msgstr "समर्थित अवाज ड्राइवर्स:"
 #: core/mixertoolbox.cpp:205
 msgid "Sound drivers used:"
 msgstr "उपयोग मं अवाज ड्राइवर्स:"
-
-#: core/mixdevice.cpp:112 backends/mixer_oss.cpp:67 backends/mixer_oss.cpp:68
-msgid "unknown"
-msgstr "अग्यात"
 
 #: apps/main.cpp:33
 msgid "KMix - KDE's full featured mini mixer"
@@ -689,6 +689,26 @@ msgid "kmix: Unknown error. Please report how you produced this error."
 msgstr ""
 "के-मिक्स: अग्यात गलती. किरपा करके, रपट करव कि एखर गलती ल कइसन रिपोट करे जाए."
 
+#: backends/mixer_oss4.cpp:495
+#, fuzzy
+#| msgid ""
+#| "kmix: Mixer cannot be found.\n"
+#| "Please check that the soundcard is installed and the\n"
+#| "soundcard driver is loaded.\n"
+#| "On Linux you might need to use 'insmod' to load the driver.\n"
+#| "Use 'soundon' when using commercial OSS."
+msgid ""
+"kmix: Mixer cannot be found.\n"
+"Please check that the soundcard is installed and the\n"
+"soundcard driver is loaded.\n"
+"On Linux you might need to use 'insmod' to load the driver.\n"
+"Use 'soundon' when using OSS4 from 4front."
+msgstr ""
+"के-मिक्स: किरपा करके, जांचव कि साउन्डकार्ड इनस्टाल हे तथा\n"
+"साउन्डकार्ड ड्राइवर लोड करिस होही .\n"
+"लिनक्स सिसटम मं आप मन ल 'insmod' के उपयोग ड्राइवर लोड करे मं करना पड़ सकथे .\n"
+"जब व्यावसायिक ओएसएस उपयोग करते होही तहां उपयोग करव 'soundon' का."
+
 #: backends/mixer_pulse.cpp:318 backends/mixer_pulse.cpp:377
 msgid "Unknown Application"
 msgstr ""
@@ -716,26 +736,6 @@ msgstr ""
 #| msgid "Capture"
 msgid "Capture Streams"
 msgstr "कैप्चर"
-
-#: backends/mixer_oss4.cpp:495
-#, fuzzy
-#| msgid ""
-#| "kmix: Mixer cannot be found.\n"
-#| "Please check that the soundcard is installed and the\n"
-#| "soundcard driver is loaded.\n"
-#| "On Linux you might need to use 'insmod' to load the driver.\n"
-#| "Use 'soundon' when using commercial OSS."
-msgid ""
-"kmix: Mixer cannot be found.\n"
-"Please check that the soundcard is installed and the\n"
-"soundcard driver is loaded.\n"
-"On Linux you might need to use 'insmod' to load the driver.\n"
-"Use 'soundon' when using OSS4 from 4front."
-msgstr ""
-"के-मिक्स: किरपा करके, जांचव कि साउन्डकार्ड इनस्टाल हे तथा\n"
-"साउन्डकार्ड ड्राइवर लोड करिस होही .\n"
-"लिनक्स सिसटम मं आप मन ल 'insmod' के उपयोग ड्राइवर लोड करे मं करना पड़ सकथे .\n"
-"जब व्यावसायिक ओएसएस उपयोग करते होही तहां उपयोग करव 'soundon' का."
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

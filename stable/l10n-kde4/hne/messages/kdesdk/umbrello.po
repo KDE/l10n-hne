@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-12 04:32+0200\n"
+"POT-Creation-Date: 2011-07-05 05:34+0200\n"
 "PO-Revision-Date: 2009-03-01 11:33+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -17,6 +17,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 0.3\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: debug/debug_utils.cpp:44
+#, fuzzy
+#| msgid "Class name"
+msgid "Class Name"
+msgstr "वर्ग नाम"
 
 #: clipboard/umlclipboard.cpp:828
 msgid ""
@@ -97,15 +103,15 @@ msgid "Template Properties"
 msgstr "टेम्प्लेट गुन"
 
 #: dialogs/umltemplatedialog.cpp:65 dialogs/umlentityattributedialog.cpp:71
-#: dialogs/activitydialog.cpp:142 dialogs/umlattributedialog.cpp:69
+#: dialogs/umlattributedialog.cpp:69 dialogs/activitydialog.cpp:142
 #: dialogs/objectnodedialog.cpp:141 dialogs/umloperationdialog.cpp:88
 #: dialogs/statedialog.cpp:121
 msgid "General Properties"
 msgstr "सामान्य गुन"
 
 #: dialogs/umltemplatedialog.cpp:70 dialogs/umlentityattributedialog.cpp:76
-#: dialogs/umlattributedialog.cpp:74 dialogs/parmpropdlg.cpp:78
-#: dialogs/umloperationdialog.cpp:101
+#: dialogs/umlattributedialog.cpp:74 dialogs/umloperationdialog.cpp:101
+#: dialogs/parmpropdlg.cpp:78
 msgid "&Type:"
 msgstr "किसिमः (&T)"
 
@@ -150,8 +156,8 @@ msgid "&Default value:"
 msgstr "डिफाल्ट मान: (&D)"
 
 #: dialogs/umlentityattributedialog.cpp:92 dialogs/umlattributedialog.cpp:90
-#: dialogs/parmpropdlg.cpp:93 dialogs/classgenpage.cpp:346
-#: dialogs/umloperationdialog.cpp:108
+#: dialogs/classgenpage.cpp:346 dialogs/umloperationdialog.cpp:108
+#: dialogs/parmpropdlg.cpp:93
 msgid "Stereotype name:"
 msgstr "स्टीरियोटाइप नामः"
 
@@ -201,11 +207,17 @@ msgstr "एंटिटी गुनधर्म नाम जऊन आप म�
 msgid "Entity Attribute Name Not Unique"
 msgstr "एंटिटी गुनधर्म नाम बेजोड़ नइ हे"
 
+#. i18n: file: dialogs/umlrolepropertiesbase.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
+#: dialogs/umlroledialog.cpp:25 rc.cpp:990
+msgid "Role Properties"
+msgstr "भूमिका गुन"
+
 #: dialogs/assocgenpage.cpp:60 dialogs/umlviewdialog.cpp:35
 #: dialogs/classpropdlg.cpp:128 dialogs/activitydialog.cpp:36
-#: dialogs/activitydialog.cpp:146 dialogs/parmpropdlg.cpp:71
-#: dialogs/objectnodedialog.cpp:39 dialogs/statedialog.cpp:37
-#: dialogs/statedialog.cpp:125 refactoring/refactoringassistant.cpp:453
+#: dialogs/activitydialog.cpp:146 dialogs/objectnodedialog.cpp:39
+#: dialogs/statedialog.cpp:37 dialogs/statedialog.cpp:125
+#: dialogs/parmpropdlg.cpp:71 refactoring/refactoringassistant.cpp:453
 #: listpopupmenu.cpp:583
 msgid "Properties"
 msgstr "गुन"
@@ -222,13 +234,13 @@ msgstr "गुन"
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDocumentation)
 #. i18n: file: dialogs/umlrolepropertiesbase.ui:140
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDocumentation)
-#: dialogs/assocgenpage.cpp:61 dialogs/activitydialog.cpp:200
-#: dialogs/notedialog.cpp:38 dialogs/parmpropdlg.cpp:115
-#: dialogs/classifierlistpage.cpp:219 dialogs/assocrolepage.cpp:80
-#: dialogs/assocrolepage.cpp:81 dialogs/objectnodedialog.cpp:197
-#: dialogs/classgenpage.cpp:225 dialogs/classgenpage.cpp:305
-#: dialogs/classgenpage.cpp:368 dialogs/statedialog.cpp:140 rc.cpp:38
-#: rc.cpp:740 rc.cpp:800 rc.cpp:863 rc.cpp:943 rc.cpp:1026
+#: dialogs/assocgenpage.cpp:61 dialogs/classifierlistpage.cpp:219
+#: dialogs/activitydialog.cpp:200 dialogs/assocrolepage.cpp:80
+#: dialogs/assocrolepage.cpp:81 dialogs/classgenpage.cpp:225
+#: dialogs/classgenpage.cpp:305 dialogs/classgenpage.cpp:368
+#: dialogs/objectnodedialog.cpp:197 dialogs/statedialog.cpp:140
+#: dialogs/notedialog.cpp:38 dialogs/parmpropdlg.cpp:115 rc.cpp:38 rc.cpp:740
+#: rc.cpp:800 rc.cpp:863 rc.cpp:958 rc.cpp:1026
 msgid "Documentation"
 msgstr "कागद लिखना"
 
@@ -241,11 +253,9 @@ msgstr "नांव:"
 msgid "Type:"
 msgstr "किसिमः"
 
-#. i18n: file: dialogs/umlrolepropertiesbase.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
-#: dialogs/umlroledialog.cpp:25 rc.cpp:990
-msgid "Role Properties"
-msgstr "भूमिका गुन"
+#: dialogs/assocpage.cpp:30 dialogs/classpropdlg.cpp:371
+msgid "Associations"
+msgstr "सम्बद्धता"
 
 #: dialogs/selectopdlg.cpp:37 dialogs/selectopdlg.cpp:49
 msgid "Select Operation"
@@ -263,61 +273,108 @@ msgstr "क्लास संचालन:"
 msgid "Custom operation:"
 msgstr "मनमाफिक संचालन:"
 
-#: dialogs/assocpage.cpp:30 dialogs/classpropdlg.cpp:371
-msgid "Associations"
-msgstr "सम्बद्धता"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:50
+msgid "Foreign Key Setup"
+msgstr "विदेसी कुंजी सेटअप"
 
-#. i18n: file: dialogs/exportallviewsdialogbase.ui:52
-#. i18n: ectx: property (toolTip), widget (QLabel, ui_imageTypeLabel)
-#: dialogs/exportallviewsdialog.cpp:86 rc.cpp:973
-msgid "The format that the images will be exported to"
-msgstr "फोटू जऊन फारमेट मं निर्यात करे जाही "
+#: dialogs/umlforeignkeyconstraintdialog.cpp:196
+msgctxt "general page title"
+msgid "General"
+msgstr "सामान्य"
 
-#: dialogs/classoptionspage.cpp:76 dialogs/classoptionspage.cpp:146
-#: dialogs/codeeditor.cpp:696 listpopupmenu.cpp:905
-msgid "Show"
-msgstr "देखाव"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:197 dialogs/umlviewdialog.cpp:84
+#: dialogs/settingsdlg.cpp:120 dialogs/classpropdlg.cpp:249
+#: dialogs/classpropdlg.cpp:383 dialogs/assocpropdlg.cpp:93
+msgid "General Settings"
+msgstr "सामान्य सेटिंग"
 
-#: dialogs/classoptionspage.cpp:83 dialogs/classoptionspage.cpp:152
-msgid "Operatio&ns"
-msgstr "संचालन (&n)"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:201
+msgctxt "general group title"
+msgid "General"
+msgstr "सामान्य"
 
-#: dialogs/classoptionspage.cpp:87 dialogs/classoptionspage.cpp:169
-msgid "&Visibility"
-msgstr "दृस्यता (&V)"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:208
+msgctxt "label for entering name"
+msgid "Name"
+msgstr "नांव"
 
-#: dialogs/classoptionspage.cpp:96 dialogs/classoptionspage.cpp:156
-msgid "O&peration signature"
-msgstr "संचालन दसखत (&p)"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:211
+msgid "Referenced Entity"
+msgstr "रेफरेंस्ड एंटिटी"
 
-#: dialogs/classoptionspage.cpp:100 dialogs/classoptionspage.cpp:173
-msgid "Pac&kage"
-msgstr "पैकेज (&k)"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:218
+msgid "Actions"
+msgstr "काम"
 
-#: dialogs/classoptionspage.cpp:107 dialogs/classoptionspage.cpp:161
-msgid "Att&ributes"
-msgstr "एट्रिब्यूट्स (&r)"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:224
+msgid "On Update"
+msgstr "अपडेट पर"
 
-#: dialogs/classoptionspage.cpp:111 dialogs/classoptionspage.cpp:177
-msgid "Stereot&ype"
-msgstr "स्टीरियोटाइप (&y)"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:230
+msgid "On Delete"
+msgstr "मेटाय पर"
 
-#: dialogs/classoptionspage.cpp:115 dialogs/classoptionspage.cpp:165
-msgid "Attr&ibute signature"
-msgstr "एट्रिब्यूट दसखत (&i)"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:262
+msgid "No Action"
+msgstr "कोई काम नइ"
 
-#: dialogs/classoptionspage.cpp:124 dialogs/classoptionspage.cpp:185
-#, fuzzy
-msgid "&Public Only"
-msgstr "सिरिफ सार्वजनिक"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:262
+msgid "Restrict"
+msgstr "सीमित"
 
-#: dialogs/classoptionspage.cpp:130
-msgid "Draw as circle"
-msgstr "वृत्त के जइसन ड्राइंग बनाव"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:262
+msgid "Cascade"
+msgstr "एक के बाद एक"
 
-#: dialogs/classoptionspage.cpp:181
-msgid "&Attribute associations"
-msgstr "गुन असोसिएसन (&A)"
+#: dialogs/umlforeignkeyconstraintdialog.cpp:262
+msgid "Set Null"
+msgstr "'नल' सेट करव"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:263
+msgid "Set Default"
+msgstr "डिफाल्ट सेट करव"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:281
+#: dialogs/umlforeignkeyconstraintdialog.cpp:282
+msgid "Columns"
+msgstr "खंभा"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:289
+msgctxt "column header local"
+msgid "Local"
+msgstr "लोकल"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:289
+msgctxt "column header referenced"
+msgid "Referenced"
+msgstr "रेफरेंस्ड"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:295
+msgid "Local Column"
+msgstr "लोकल खंभा"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:301
+msgid "Referenced Column"
+msgstr "रेफरेंस्ड खंभा"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:308
+#: dialogs/umluniqueconstraintdialog.cpp:112
+msgid "&Add"
+msgstr "जोड़व (&A)"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:310
+#: dialogs/umluniqueconstraintdialog.cpp:114
+#: dialogs/classifierlistpage.cpp:207 dialogs/umloperationdialog.cpp:166
+#: uml.cpp:414 umldoc.cpp:1406 umlview.cpp:2959
+msgid "&Delete"
+msgstr "मेटाव (&D)"
+
+#: dialogs/umlforeignkeyconstraintdialog.cpp:383
+msgid ""
+"You are attempting to change the Referenced Entity of this ForeignKey "
+"Constraint. Any unapplied changes to the mappings between local and "
+"referenced entities will be lost. Are you sure you want to continue ?"
+msgstr ""
 
 #: dialogs/umluniqueconstraintdialog.cpp:42
 msgid "Unique Constraint Properties"
@@ -333,18 +390,6 @@ msgstr "नांव"
 msgid "Attribute Details"
 msgstr "गुन विवरन"
 
-#: dialogs/umluniqueconstraintdialog.cpp:112
-#: dialogs/umlforeignkeyconstraintdialog.cpp:308
-msgid "&Add"
-msgstr "जोड़व (&A)"
-
-#: dialogs/umluniqueconstraintdialog.cpp:114
-#: dialogs/classifierlistpage.cpp:207 dialogs/umloperationdialog.cpp:166
-#: dialogs/umlforeignkeyconstraintdialog.cpp:310 uml.cpp:414 umldoc.cpp:1406
-#: umlview.cpp:2959
-msgid "&Delete"
-msgstr "मेटाव (&D)"
-
 #: dialogs/umluniqueconstraintdialog.cpp:241
 msgid "You have entered an invalid constraint name."
 msgstr "आप मन एक अवैध प्रतिबंध नाम भरे हो ."
@@ -353,16 +398,69 @@ msgstr "आप मन एक अवैध प्रतिबंध नाम भ
 msgid "Constraint Name Invalid"
 msgstr "प्रतिबंध नाम अवैध हे"
 
+#: dialogs/constraintlistpage.cpp:70 listpopupmenu.cpp:1178
+msgid "Unique Constraint..."
+msgstr "विसिस्ट प्रतिबन्ध..."
+
+#: dialogs/constraintlistpage.cpp:73 listpopupmenu.cpp:1177
+msgid "Primary Key Constraint..."
+msgstr "प्राथमिक कुंजी प्रतिबंध..."
+
+#: dialogs/constraintlistpage.cpp:76 listpopupmenu.cpp:1179
+msgid "Foreign Key Constraint..."
+msgstr "विदेसी कुंजी प्रतिबंध..."
+
+#: dialogs/constraintlistpage.cpp:79 listpopupmenu.cpp:1180
+msgid "Check Constraint..."
+msgstr "प्रतिबन्ध जांचव..."
+
+#. i18n: file: dialogs/exportallviewsdialogbase.ui:52
+#. i18n: ectx: property (toolTip), widget (QLabel, ui_imageTypeLabel)
+#: dialogs/exportallviewsdialog.cpp:86 rc.cpp:973
+msgid "The format that the images will be exported to"
+msgstr "फोटू जऊन फारमेट मं निर्यात करे जाही "
+
+#: dialogs/codeeditor.cpp:690
+msgid "Hide"
+msgstr "लुकाव"
+
+#: dialogs/codeeditor.cpp:696 dialogs/classoptionspage.cpp:76
+#: dialogs/classoptionspage.cpp:146 listpopupmenu.cpp:905
+msgid "Show"
+msgstr "देखाव"
+
+#: dialogs/codeeditor.cpp:705
+msgid "Hide Comment"
+msgstr "टिप्पनी लुकाव"
+
+#: dialogs/codeeditor.cpp:711
+msgid "Show Comment"
+msgstr "टिप्पनी देखाव"
+
+#: dialogs/codeeditor.cpp:719
+msgid "Insert Code Block Before"
+msgstr "कोड ब्लाक पहिली भरव"
+
+#: dialogs/codeeditor.cpp:724
+msgid "Insert Code Block After"
+msgstr "कोड ब्लाक बाद मं भरव"
+
+#: dialogs/codeeditor.cpp:731 listpopupmenu.cpp:595
+msgid "Copy"
+msgstr "नकल"
+
+#: dialogs/codeeditor.cpp:736 listpopupmenu.cpp:598
+msgid "Paste"
+msgstr "चिपकाव"
+
+#: dialogs/codeeditor.cpp:741 listpopupmenu.cpp:592
+msgid "Cut"
+msgstr "काटव"
+
 #: dialogs/umlviewdialog.cpp:83 dialogs/settingsdlg.cpp:119
 msgctxt "general settings page"
 msgid "General"
 msgstr "सामान्य"
-
-#: dialogs/umlviewdialog.cpp:84 dialogs/settingsdlg.cpp:120
-#: dialogs/classpropdlg.cpp:249 dialogs/classpropdlg.cpp:383
-#: dialogs/assocpropdlg.cpp:93 dialogs/umlforeignkeyconstraintdialog.cpp:197
-msgid "General Settings"
-msgstr "सामान्य सेटिंग"
 
 #: dialogs/umlviewdialog.cpp:113
 msgctxt "classes display options page"
@@ -420,53 +518,46 @@ msgstr "जऊन नाम आप मन भरे हो  वो बेजो�
 msgid "Name Not Unique"
 msgstr "नाम बेजोड़ नइ हे"
 
-#: dialogs/constraintlistpage.cpp:70 listpopupmenu.cpp:1178
-msgid "Unique Constraint..."
-msgstr "विसिस्ट प्रतिबन्ध..."
+#: dialogs/classoptionspage.cpp:83 dialogs/classoptionspage.cpp:152
+msgid "Operatio&ns"
+msgstr "संचालन (&n)"
 
-#: dialogs/constraintlistpage.cpp:73 listpopupmenu.cpp:1177
-msgid "Primary Key Constraint..."
-msgstr "प्राथमिक कुंजी प्रतिबंध..."
+#: dialogs/classoptionspage.cpp:87 dialogs/classoptionspage.cpp:169
+msgid "&Visibility"
+msgstr "दृस्यता (&V)"
 
-#: dialogs/constraintlistpage.cpp:76 listpopupmenu.cpp:1179
-msgid "Foreign Key Constraint..."
-msgstr "विदेसी कुंजी प्रतिबंध..."
+#: dialogs/classoptionspage.cpp:96 dialogs/classoptionspage.cpp:156
+msgid "O&peration signature"
+msgstr "संचालन दसखत (&p)"
 
-#: dialogs/constraintlistpage.cpp:79 listpopupmenu.cpp:1180
-msgid "Check Constraint..."
-msgstr "प्रतिबन्ध जांचव..."
+#: dialogs/classoptionspage.cpp:100 dialogs/classoptionspage.cpp:173
+msgid "Pac&kage"
+msgstr "पैकेज (&k)"
 
-#: dialogs/codeeditor.cpp:690
-msgid "Hide"
-msgstr "लुकाव"
+#: dialogs/classoptionspage.cpp:107 dialogs/classoptionspage.cpp:161
+msgid "Att&ributes"
+msgstr "एट्रिब्यूट्स (&r)"
 
-#: dialogs/codeeditor.cpp:705
-msgid "Hide Comment"
-msgstr "टिप्पनी लुकाव"
+#: dialogs/classoptionspage.cpp:111 dialogs/classoptionspage.cpp:177
+msgid "Stereot&ype"
+msgstr "स्टीरियोटाइप (&y)"
 
-#: dialogs/codeeditor.cpp:711
-msgid "Show Comment"
-msgstr "टिप्पनी देखाव"
+#: dialogs/classoptionspage.cpp:115 dialogs/classoptionspage.cpp:165
+msgid "Attr&ibute signature"
+msgstr "एट्रिब्यूट दसखत (&i)"
 
-#: dialogs/codeeditor.cpp:719
-msgid "Insert Code Block Before"
-msgstr "कोड ब्लाक पहिली भरव"
+#: dialogs/classoptionspage.cpp:124 dialogs/classoptionspage.cpp:185
+#, fuzzy
+msgid "&Public Only"
+msgstr "सिरिफ सार्वजनिक"
 
-#: dialogs/codeeditor.cpp:724
-msgid "Insert Code Block After"
-msgstr "कोड ब्लाक बाद मं भरव"
+#: dialogs/classoptionspage.cpp:130
+msgid "Draw as circle"
+msgstr "वृत्त के जइसन ड्राइंग बनाव"
 
-#: dialogs/codeeditor.cpp:731 listpopupmenu.cpp:595
-msgid "Copy"
-msgstr "नकल"
-
-#: dialogs/codeeditor.cpp:736 listpopupmenu.cpp:598
-msgid "Paste"
-msgstr "चिपकाव"
-
-#: dialogs/codeeditor.cpp:741 listpopupmenu.cpp:592
-msgid "Cut"
-msgstr "काटव"
+#: dialogs/classoptionspage.cpp:181
+msgid "&Attribute associations"
+msgstr "गुन असोसिएसन (&A)"
 
 #: dialogs/defaultcodegenpolicypage.cpp:37
 msgid "<p align=\"center\">No Options Available.</p>"
@@ -627,7 +718,7 @@ msgstr "पैकेज देखाव"
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showOpSigs)
 #. i18n: file: umbrello.kcfg:184
 #. i18n: ectx: whatsthis, entry (showOpSig), group (Class Options)
-#: dialogs/settingsdlg.cpp:274 rc.cpp:915 rc.cpp:1355
+#: dialogs/settingsdlg.cpp:274 rc.cpp:930 rc.cpp:1355
 msgid "Show operation signature"
 msgstr "संचालन दसखत देखाव"
 
@@ -816,43 +907,125 @@ msgctxt "instance general settings page name"
 msgid "General"
 msgstr "सामान्य"
 
-#: dialogs/classwizard.cpp:45 model_utils.cpp:404
-msgid "new_class"
-msgstr "नवा_वर्ग"
+#: dialogs/umlattributedialog.cpp:45
+msgid "Attribute Properties"
+msgstr "एट्रीब्यूट गुन"
 
-#: dialogs/classwizard.cpp:60
-msgid "Class Wizard"
-msgstr "वर्ग विजार्ड"
+#: dialogs/umlattributedialog.cpp:82
+msgctxt "attribute name"
+msgid "&Name:"
+msgstr "नांव: (&N)"
 
-#: dialogs/classwizard.cpp:83
-msgid "New Class"
-msgstr "नवा वर्ग"
+#: dialogs/umlattributedialog.cpp:86 dialogs/parmpropdlg.cpp:90
+msgid "&Initial value:"
+msgstr "सुरू के मानः (&I)"
 
-#: dialogs/classwizard.cpp:84
-msgid "Add general info about the new class."
-msgstr ""
+#: dialogs/umlattributedialog.cpp:93 dialogs/umloperationdialog.cpp:116
+msgid "Classifier &scope (\"static\")"
+msgstr "क्लासीफायर स्कोप (\"स्थिर\") (&s)"
 
-#: dialogs/classwizard.cpp:101
-msgid "Class Attributes"
-msgstr "वर्ग गुनधर्म"
+#: dialogs/umlattributedialog.cpp:103
+msgctxt "access control public"
+msgid "&Public"
+msgstr "पब्लिक (&P)"
 
-#: dialogs/classwizard.cpp:102
-msgid "Add attributes to the new class."
-msgstr ""
+#: dialogs/umlattributedialog.cpp:106
+msgctxt "access control private"
+msgid "P&rivate"
+msgstr "निजी (&r)"
 
-#: dialogs/classwizard.cpp:119
-msgid "Class Operations"
-msgstr "क्लास संचालन"
+#: dialogs/umlattributedialog.cpp:109
+msgctxt "access control protected"
+msgid "Prot&ected"
+msgstr "सुरक्छित (&e)"
 
-#: dialogs/classwizard.cpp:120
-msgid "Add operations to the new class."
-msgstr ""
+#: dialogs/umlattributedialog.cpp:112 dialogs/umloperationdialog.cpp:137
+msgid "I&mplementation"
+msgstr "इंप्लीमेंटेसन (&m)"
+
+#: dialogs/umlattributedialog.cpp:160
+msgid "You have entered an invalid attribute name."
+msgstr "आप मन एक अवैध गुनधर्म नाम भरे हो ."
+
+#: dialogs/umlattributedialog.cpp:161 refactoring/refactoringassistant.cpp:829
+msgid "Attribute Name Invalid"
+msgstr "अवैध गुनधर्म नाम"
+
+#: dialogs/umlattributedialog.cpp:168
+msgid ""
+"The attribute name you have chosen is already being used in this operation."
+msgstr "गुनधर्म नाम जऊन आप मन चुने हव  एखर संचालन मं पहिली से ही उपयोग मं हे."
+
+#: dialogs/umlattributedialog.cpp:169
+msgid "Attribute Name Not Unique"
+msgstr "गुनधर्म नाम बेजोड़ नइ हे"
+
+#: dialogs/codeviewerdialog.cpp:107
+msgid "Code Viewer - "
+msgstr "कोड प्रदर्सक -"
+
+#: dialogs/classifierlistpage.cpp:117
+msgid "N&ew Attribute..."
+msgstr "नवा गुनधर्म... (&e)"
+
+#: dialogs/classifierlistpage.cpp:121
+msgid "N&ew Operation..."
+msgstr "नवा संचालन... (&e)"
+
+#: dialogs/classifierlistpage.cpp:125
+msgid "N&ew Template..."
+msgstr "नवा टैम्प्लेट... (&e)"
+
+#: dialogs/classifierlistpage.cpp:129
+msgid "N&ew Enum Literal..."
+msgstr "नवा ईन्यूम लिटरल्स... (&e)"
+
+#: dialogs/classifierlistpage.cpp:133
+msgid "N&ew Entity Attribute..."
+msgstr "नवा एंटिटी गुनधर्म... (&e)"
+
+#: dialogs/classifierlistpage.cpp:136
+msgid "Constraints"
+msgstr "प्रतिबन्ध"
+
+#: dialogs/classifierlistpage.cpp:137
+msgid "N&ew Constraint..."
+msgstr "नवा प्रतिबन्ध... (&e)"
+
+#: dialogs/classifierlistpage.cpp:175 dialogs/activitypage.cpp:80
+msgid "Move selected item to the top"
+msgstr "चुने गे चीज ल सीर्स मं ले जाव"
+
+#: dialogs/classifierlistpage.cpp:181 dialogs/activitypage.cpp:86
+msgid "Move selected item up"
+msgstr "चुने गे चीज ल ऊपर ले जाव"
+
+#: dialogs/classifierlistpage.cpp:187 dialogs/activitypage.cpp:92
+msgid "Move selected item down"
+msgstr "चुने गे चीज ल नीचे ले जाव"
+
+#: dialogs/classifierlistpage.cpp:193 dialogs/activitypage.cpp:98
+msgid "Move selected item to the bottom"
+msgstr "चुने गे चीज ल तल मं ले जाव"
+
+#: dialogs/classifierlistpage.cpp:209 dialogs/umloperationdialog.cpp:168
+#: uml.cpp:429
+msgid "&Properties"
+msgstr "गुन (&P)"
+
+#: dialogs/classifierlistpage.cpp:227
+msgid "Comment"
+msgstr "टिप्पनी"
+
+#: dialogs/classifierlistpage.cpp:228
+msgid "Source Code"
+msgstr "स्रोत कोड"
 
 #: dialogs/activitydialog.cpp:137
 msgid "Initial activity"
 msgstr "सुरू के गतिविधि"
 
-#: dialogs/activitydialog.cpp:137 worktoolbar.cpp:349 association.cpp:54
+#: dialogs/activitydialog.cpp:137 association.cpp:54 worktoolbar.cpp:349
 msgid "Activity"
 msgstr "काम"
 
@@ -919,204 +1092,6 @@ msgstr "पैरामीटर सक्रियता नोड (&P)"
 msgctxt "widget color page"
 msgid "Color"
 msgstr "रंग"
-
-#: dialogs/umlattributedialog.cpp:45
-msgid "Attribute Properties"
-msgstr "एट्रीब्यूट गुन"
-
-#: dialogs/umlattributedialog.cpp:82
-msgctxt "attribute name"
-msgid "&Name:"
-msgstr "नांव: (&N)"
-
-#: dialogs/umlattributedialog.cpp:86 dialogs/parmpropdlg.cpp:90
-msgid "&Initial value:"
-msgstr "सुरू के मानः (&I)"
-
-#: dialogs/umlattributedialog.cpp:93 dialogs/umloperationdialog.cpp:116
-msgid "Classifier &scope (\"static\")"
-msgstr "क्लासीफायर स्कोप (\"स्थिर\") (&s)"
-
-#: dialogs/umlattributedialog.cpp:103
-msgctxt "access control public"
-msgid "&Public"
-msgstr "पब्लिक (&P)"
-
-#: dialogs/umlattributedialog.cpp:106
-msgctxt "access control private"
-msgid "P&rivate"
-msgstr "निजी (&r)"
-
-#: dialogs/umlattributedialog.cpp:109
-msgctxt "access control protected"
-msgid "Prot&ected"
-msgstr "सुरक्छित (&e)"
-
-#: dialogs/umlattributedialog.cpp:112 dialogs/umloperationdialog.cpp:137
-msgid "I&mplementation"
-msgstr "इंप्लीमेंटेसन (&m)"
-
-#: dialogs/umlattributedialog.cpp:160
-msgid "You have entered an invalid attribute name."
-msgstr "आप मन एक अवैध गुनधर्म नाम भरे हो ."
-
-#: dialogs/umlattributedialog.cpp:161 refactoring/refactoringassistant.cpp:829
-msgid "Attribute Name Invalid"
-msgstr "अवैध गुनधर्म नाम"
-
-#: dialogs/umlattributedialog.cpp:168
-msgid ""
-"The attribute name you have chosen is already being used in this operation."
-msgstr "गुनधर्म नाम जऊन आप मन चुने हव  एखर संचालन मं पहिली से ही उपयोग मं हे."
-
-#: dialogs/umlattributedialog.cpp:169
-msgid "Attribute Name Not Unique"
-msgstr "गुनधर्म नाम बेजोड़ नइ हे"
-
-#: dialogs/notedialog.cpp:27
-msgid "Note Documentation"
-msgstr "टीप कागद लिखना"
-
-#: dialogs/parmpropdlg.cpp:47
-msgid "Parameter Properties"
-msgstr "पैरामीटर गुन"
-
-#: dialogs/parmpropdlg.cpp:86
-msgctxt "property name"
-msgid "&Name:"
-msgstr "नांव: (&N)"
-
-#: dialogs/parmpropdlg.cpp:98
-msgid "Passing Direction"
-msgstr "पासिंग दिसा"
-
-#: dialogs/parmpropdlg.cpp:99
-msgid ""
-"\"in\" is a readonly parameter, \"out\" is a writeonly parameter and \"inout"
-"\" is a parameter for reading and writing."
-msgstr ""
-
-#: dialogs/parmpropdlg.cpp:264
-msgid "You have entered an invalid parameter name."
-msgstr "आप मन एक अवैध पैरामीटर नाम भरे हो ."
-
-#: dialogs/parmpropdlg.cpp:265
-msgid "Parameter Name Invalid"
-msgstr "पैरामीटर नाम अवैध हे"
-
-#: dialogs/importprojectdlg.cpp:122
-msgid "You have to choose a directory."
-msgstr "आप मन ल एक डिरेक्टरी चुनना होही."
-
-#: dialogs/importprojectdlg.cpp:127
-msgid "This directory does not exist."
-msgstr "ये डिरेक्टरी मौजूद नइ हे."
-
-#: dialogs/importprojectdlg.cpp:154
-msgid "No source file in this directory."
-msgstr "ये डिरेक्टरी तिर कोनो स्रोत फाइल नइ हे."
-
-#: dialogs/diagramprintpage.cpp:42
-msgid "&Diagrams"
-msgstr "आरेख (&D)"
-
-#: dialogs/diagramprintpage.cpp:47
-msgid "Filter"
-msgstr "फिल्टर"
-
-#: dialogs/diagramprintpage.cpp:54
-msgid "&Current diagram"
-msgstr "अभी हाल के आरेख (&C)"
-
-#: dialogs/diagramprintpage.cpp:58
-msgid "&All diagrams"
-msgstr "सब्बो आरेख (&A)"
-
-#: dialogs/diagramprintpage.cpp:61
-msgid "&Select diagrams"
-msgstr "आरेख चुनव (&S)"
-
-#: dialogs/diagramprintpage.cpp:64
-msgid "&Type of diagram"
-msgstr "आरेख किसिम (&T)"
-
-#: dialogs/diagramprintpage.cpp:67
-msgctxt "diagram selection for printing"
-msgid "Selection"
-msgstr "चयन"
-
-#: dialogs/diagramprintpage.cpp:157
-msgid "No diagrams selected."
-msgstr "कोई आरेख चुने नइ गिस."
-
-#: dialogs/codeviewerdialog.cpp:107
-msgid "Code Viewer - "
-msgstr "कोड प्रदर्सक -"
-
-#: dialogs/classifierlistpage.cpp:117
-msgid "N&ew Attribute..."
-msgstr "नवा गुनधर्म... (&e)"
-
-#: dialogs/classifierlistpage.cpp:121
-msgid "N&ew Operation..."
-msgstr "नवा संचालन... (&e)"
-
-#: dialogs/classifierlistpage.cpp:125
-msgid "N&ew Template..."
-msgstr "नवा टैम्प्लेट... (&e)"
-
-#: dialogs/classifierlistpage.cpp:129
-msgid "N&ew Enum Literal..."
-msgstr "नवा ईन्यूम लिटरल्स... (&e)"
-
-#: dialogs/classifierlistpage.cpp:133
-msgid "N&ew Entity Attribute..."
-msgstr "नवा एंटिटी गुनधर्म... (&e)"
-
-#: dialogs/classifierlistpage.cpp:136
-msgid "Constraints"
-msgstr "प्रतिबन्ध"
-
-#: dialogs/classifierlistpage.cpp:137
-msgid "N&ew Constraint..."
-msgstr "नवा प्रतिबन्ध... (&e)"
-
-#: dialogs/classifierlistpage.cpp:175 dialogs/activitypage.cpp:80
-msgid "Move selected item to the top"
-msgstr "चुने गे चीज ल सीर्स मं ले जाव"
-
-#: dialogs/classifierlistpage.cpp:181 dialogs/activitypage.cpp:86
-msgid "Move selected item up"
-msgstr "चुने गे चीज ल ऊपर ले जाव"
-
-#: dialogs/classifierlistpage.cpp:187 dialogs/activitypage.cpp:92
-msgid "Move selected item down"
-msgstr "चुने गे चीज ल नीचे ले जाव"
-
-#: dialogs/classifierlistpage.cpp:193 dialogs/activitypage.cpp:98
-msgid "Move selected item to the bottom"
-msgstr "चुने गे चीज ल तल मं ले जाव"
-
-#: dialogs/classifierlistpage.cpp:209 dialogs/umloperationdialog.cpp:168
-#: uml.cpp:429
-msgid "&Properties"
-msgstr "गुन (&P)"
-
-#: dialogs/classifierlistpage.cpp:227
-msgid "Comment"
-msgstr "टिप्पनी"
-
-#: dialogs/classifierlistpage.cpp:228
-msgid "Source Code"
-msgstr "स्रोत कोड"
-
-#: dialogs/umlcheckconstraintdialog.cpp:30
-msgid "Check Constraint Properties"
-msgstr "प्रतिबंध गुन मन ल जांचव"
-
-#: dialogs/umlcheckconstraintdialog.cpp:73
-msgid "Check Condition :"
-msgstr "कंडीसन जांचव:"
 
 #: dialogs/assocrolepage.cpp:54
 msgid "Role A Properties"
@@ -1264,64 +1239,38 @@ msgstr "काम नाम बदलव "
 msgid "Enter the new name of the activity:"
 msgstr "गतिविधि के नवा नाम भरव:"
 
-#: dialogs/pkgcontentspage.cpp:40
-msgid "Contained Items"
-msgstr "रखी होइस चीज"
+#: dialogs/diagramprintpage.cpp:42
+msgid "&Diagrams"
+msgstr "आरेख (&D)"
 
-#: dialogs/objectnodedialog.cpp:136
-msgid "Central Buffer"
-msgstr "केंद्रीय बफर"
+#: dialogs/diagramprintpage.cpp:47
+msgid "Filter"
+msgstr "फिल्टर"
 
-#: dialogs/objectnodedialog.cpp:136
-msgid "Data Store"
-msgstr "डाटा भंडार"
+#: dialogs/diagramprintpage.cpp:54
+msgid "&Current diagram"
+msgstr "अभी हाल के आरेख (&C)"
 
-#: dialogs/objectnodedialog.cpp:136
-msgid "ObjectFlow"
-msgstr "ओब्जैक्टफ्लो"
+#: dialogs/diagramprintpage.cpp:58
+msgid "&All diagrams"
+msgstr "सब्बो आरेख (&A)"
 
-#. i18n: file: codegenerators/cpp/cppcodegenerationformbase.ui:51
-#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
-#. i18n: file: codegenwizard/codegenoptionspage.ui:39
-#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
-#: dialogs/objectnodedialog.cpp:140 rc.cpp:95 rc.cpp:1050
-msgid "General"
-msgstr "सामान्य"
+#: dialogs/diagramprintpage.cpp:61
+msgid "&Select diagrams"
+msgstr "आरेख चुनव (&S)"
 
-#: dialogs/objectnodedialog.cpp:145
-msgctxt "properties group title"
-msgid "Properties"
-msgstr "गुन"
+#: dialogs/diagramprintpage.cpp:64
+msgid "&Type of diagram"
+msgstr "आरेख किसिम (&T)"
 
-#: dialogs/objectnodedialog.cpp:159
-msgid "Object Node type:"
-msgstr "आब्जेक्ट नोड किसिम:"
+#: dialogs/diagramprintpage.cpp:67
+msgctxt "diagram selection for printing"
+msgid "Selection"
+msgstr "चयन"
 
-#: dialogs/objectnodedialog.cpp:164
-msgid "Object Node name:"
-msgstr "ओब्जैक्ट नोड नाम:"
-
-#: dialogs/objectnodedialog.cpp:168
-msgctxt "enter state label"
-msgid "State :"
-msgstr "स्थिति :"
-
-#: dialogs/objectnodedialog.cpp:173
-msgid "&Central Buffer"
-msgstr "केंद्रीय बफर (&C)"
-
-#: dialogs/objectnodedialog.cpp:176
-msgid "&Data Store "
-msgstr "डाटा भंडार (&D)"
-
-#: dialogs/objectnodedialog.cpp:179
-msgid "&Object Flow"
-msgstr "ओब्जैक्ट फ्लो (&O)"
-
-#: dialogs/objectnodedialog.cpp:247
-msgctxt "color page title"
-msgid "Color"
-msgstr "रंग"
+#: dialogs/diagramprintpage.cpp:157
+msgid "No diagrams selected."
+msgstr "कोई आरेख चुने नइ गिस."
 
 #: dialogs/classgenpage.cpp:60
 msgid "Class &name:"
@@ -1467,6 +1416,73 @@ msgstr ""
 msgid "Name is Not Unique"
 msgstr "नाम बेजोड़ नइ हे"
 
+#: dialogs/objectnodedialog.cpp:136
+msgid "Central Buffer"
+msgstr "केंद्रीय बफर"
+
+#: dialogs/objectnodedialog.cpp:136
+msgid "Data Store"
+msgstr "डाटा भंडार"
+
+#: dialogs/objectnodedialog.cpp:136
+msgid "ObjectFlow"
+msgstr "ओब्जैक्टफ्लो"
+
+#. i18n: file: codegenerators/cpp/cppcodegenerationformbase.ui:51
+#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
+#. i18n: file: codegenwizard/codegenoptionspage.ui:39
+#. i18n: ectx: attribute (title), widget (QWidget, ui_tabGeneral)
+#: dialogs/objectnodedialog.cpp:140 rc.cpp:95 rc.cpp:1050
+msgid "General"
+msgstr "सामान्य"
+
+#: dialogs/objectnodedialog.cpp:145
+msgctxt "properties group title"
+msgid "Properties"
+msgstr "गुन"
+
+#: dialogs/objectnodedialog.cpp:159
+msgid "Object Node type:"
+msgstr "आब्जेक्ट नोड किसिम:"
+
+#: dialogs/objectnodedialog.cpp:164
+msgid "Object Node name:"
+msgstr "ओब्जैक्ट नोड नाम:"
+
+#: dialogs/objectnodedialog.cpp:168
+msgctxt "enter state label"
+msgid "State :"
+msgstr "स्थिति :"
+
+#: dialogs/objectnodedialog.cpp:173
+msgid "&Central Buffer"
+msgstr "केंद्रीय बफर (&C)"
+
+#: dialogs/objectnodedialog.cpp:176
+msgid "&Data Store "
+msgstr "डाटा भंडार (&D)"
+
+#: dialogs/objectnodedialog.cpp:179
+msgid "&Object Flow"
+msgstr "ओब्जैक्ट फ्लो (&O)"
+
+#: dialogs/objectnodedialog.cpp:247
+msgctxt "color page title"
+msgid "Color"
+msgstr "रंग"
+
+#: dialogs/umlcheckconstraintdialog.cpp:30
+msgid "Check Constraint Properties"
+msgstr "प्रतिबंध गुन मन ल जांचव"
+
+#: dialogs/umlcheckconstraintdialog.cpp:73
+msgid "Check Condition :"
+msgstr "कंडीसन जांचव:"
+
+#: dialogs/pkgcontentspage.cpp:40
+msgid "Contained Items"
+msgstr "रखी होइस चीज"
+
 #: dialogs/umloperationdialog.cpp:57
 msgid "Operation Properties"
 msgstr "संचालन गुन"
@@ -1598,6 +1614,81 @@ msgstr "एक जइसन फाइल नाम तैयार करव (&G
 msgid "&Do Not Generate File"
 msgstr "फाइल तैयार नइ करव (&D)"
 
+#: dialogs/notedialog.cpp:27
+msgid "Note Documentation"
+msgstr "टीप कागद लिखना"
+
+#: dialogs/classwizard.cpp:45 model_utils.cpp:404
+msgid "new_class"
+msgstr "नवा_वर्ग"
+
+#: dialogs/classwizard.cpp:60
+msgid "Class Wizard"
+msgstr "वर्ग विजार्ड"
+
+#: dialogs/classwizard.cpp:83
+msgid "New Class"
+msgstr "नवा वर्ग"
+
+#: dialogs/classwizard.cpp:84
+msgid "Add general info about the new class."
+msgstr ""
+
+#: dialogs/classwizard.cpp:101
+msgid "Class Attributes"
+msgstr "वर्ग गुनधर्म"
+
+#: dialogs/classwizard.cpp:102
+msgid "Add attributes to the new class."
+msgstr ""
+
+#: dialogs/classwizard.cpp:119
+msgid "Class Operations"
+msgstr "क्लास संचालन"
+
+#: dialogs/classwizard.cpp:120
+msgid "Add operations to the new class."
+msgstr ""
+
+#: dialogs/parmpropdlg.cpp:47
+msgid "Parameter Properties"
+msgstr "पैरामीटर गुन"
+
+#: dialogs/parmpropdlg.cpp:86
+msgctxt "property name"
+msgid "&Name:"
+msgstr "नांव: (&N)"
+
+#: dialogs/parmpropdlg.cpp:98
+msgid "Passing Direction"
+msgstr "पासिंग दिसा"
+
+#: dialogs/parmpropdlg.cpp:99
+msgid ""
+"\"in\" is a readonly parameter, \"out\" is a writeonly parameter and \"inout"
+"\" is a parameter for reading and writing."
+msgstr ""
+
+#: dialogs/parmpropdlg.cpp:264
+msgid "You have entered an invalid parameter name."
+msgstr "आप मन एक अवैध पैरामीटर नाम भरे हो ."
+
+#: dialogs/parmpropdlg.cpp:265
+msgid "Parameter Name Invalid"
+msgstr "पैरामीटर नाम अवैध हे"
+
+#: dialogs/importprojectdlg.cpp:122
+msgid "You have to choose a directory."
+msgstr "आप मन ल एक डिरेक्टरी चुनना होही."
+
+#: dialogs/importprojectdlg.cpp:127
+msgid "This directory does not exist."
+msgstr "ये डिरेक्टरी मौजूद नइ हे."
+
+#: dialogs/importprojectdlg.cpp:154
+msgid "No source file in this directory."
+msgstr "ये डिरेक्टरी तिर कोनो स्रोत फाइल नइ हे."
+
 #: dialogs/assocpropdlg.cpp:43
 msgid "Association Properties"
 msgstr "सम्बद्धता गुन"
@@ -1618,91 +1709,6 @@ msgstr "भूमिका सेटिंग "
 #: dialogs/assocpropdlg.cpp:129
 msgid "Association font"
 msgstr "सम्बद्धता फोंट"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:50
-msgid "Foreign Key Setup"
-msgstr "विदेसी कुंजी सेटअप"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:196
-msgctxt "general page title"
-msgid "General"
-msgstr "सामान्य"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:201
-msgctxt "general group title"
-msgid "General"
-msgstr "सामान्य"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:208
-msgctxt "label for entering name"
-msgid "Name"
-msgstr "नांव"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:211
-msgid "Referenced Entity"
-msgstr "रेफरेंस्ड एंटिटी"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:218
-msgid "Actions"
-msgstr "काम"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:224
-msgid "On Update"
-msgstr "अपडेट पर"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:230
-msgid "On Delete"
-msgstr "मेटाय पर"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:262
-msgid "No Action"
-msgstr "कोई काम नइ"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:262
-msgid "Restrict"
-msgstr "सीमित"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:262
-msgid "Cascade"
-msgstr "एक के बाद एक"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:262
-msgid "Set Null"
-msgstr "'नल' सेट करव"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:263
-msgid "Set Default"
-msgstr "डिफाल्ट सेट करव"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:281
-#: dialogs/umlforeignkeyconstraintdialog.cpp:282
-msgid "Columns"
-msgstr "खंभा"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:289
-msgctxt "column header local"
-msgid "Local"
-msgstr "लोकल"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:289
-msgctxt "column header referenced"
-msgid "Referenced"
-msgstr "रेफरेंस्ड"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:295
-msgid "Local Column"
-msgstr "लोकल खंभा"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:301
-msgid "Referenced Column"
-msgstr "रेफरेंस्ड खंभा"
-
-#: dialogs/umlforeignkeyconstraintdialog.cpp:383
-msgid ""
-"You are attempting to change the Referenced Entity of this ForeignKey "
-"Constraint. Any unapplied changes to the mappings between local and "
-"referenced entities will be lost. Are you sure you want to continue ?"
-msgstr ""
 
 #: dialogs/umlwidgetcolorpage.cpp:77
 msgctxt "title of color group"
@@ -1860,14 +1866,6 @@ msgstr "फोल्डर बनाए मं गलती"
 msgid "Please select a valid folder."
 msgstr "किरपा करके, वैध फोल्डर चुनव."
 
-#: widgets/notewidget.cpp:378
-msgid "Note Type"
-msgstr "नोट किसिम"
-
-#: widgets/notewidget.cpp:378
-msgid "Select the Note Type"
-msgstr "नोट किसिम चुनव."
-
 #: widgets/activitywidget.cpp:265 toolbarstateother.cpp:227 umlview.cpp:2763
 msgid "Enter Activity Name"
 msgstr "गतिविधि नाम भरव"
@@ -1937,6 +1935,14 @@ msgstr "आब्जेक्ट ल नवा नाम देव"
 msgid "Enter object name:"
 msgstr "आब्जेक्ट नाम भरव:"
 
+#: widgets/notewidget.cpp:378
+msgid "Note Type"
+msgstr "नोट किसिम"
+
+#: widgets/notewidget.cpp:378
+msgid "Select the Note Type"
+msgstr "नोट किसिम चुनव."
+
 #: widgets/combinedfragmentwidget.cpp:253
 msgid "Enter the name of the diagram referenced"
 msgstr "संदर्भित डायग्राम के नाम भरव"
@@ -1978,6 +1984,18 @@ msgstr "संदर्भिद डायग्राम नाम भरव :"
 #: widgets/combinedfragmentwidget.cpp:348
 msgid "Enter the guard of the loop:"
 msgstr "लूप के गार्ड भरव :"
+
+#: widgets/associationwidget.cpp:2694
+msgid "Multiplicity"
+msgstr "गुननता"
+
+#: widgets/associationwidget.cpp:2712
+msgid "Association Name"
+msgstr "सम्बद्धता नाम"
+
+#: widgets/associationwidget.cpp:2732
+msgid "Role Name"
+msgstr "भूमिका नाम"
 
 #: widgets/objectnodewidget.cpp:200
 msgid "Enter Object Node Name"
@@ -2031,18 +2049,6 @@ msgstr "ओब्जैक्ट फ्लो के स्थिति भर�
 #, fuzzy
 msgid "Enter State (keep '-' if there is no state for the object) "
 msgstr "स्थिति भरव ( '-' ल रखव यदि ओब्जैक्ट बर कोनो स्थिति नइ हे) "
-
-#: widgets/associationwidget.cpp:2694
-msgid "Multiplicity"
-msgstr "गुननता"
-
-#: widgets/associationwidget.cpp:2712
-msgid "Association Name"
-msgstr "सम्बद्धता नाम"
-
-#: widgets/associationwidget.cpp:2732
-msgid "Role Name"
-msgstr "भूमिका नाम"
 
 #: widgets/signalwidget.cpp:217
 msgid "Enter signal name"
@@ -2141,36 +2147,6 @@ msgstr "यूएमएल आब्जेक्ट बनाव:"
 msgid "Create class diagram : %1"
 msgstr "क्लास डायग्राम बनाव"
 
-#: cmds/cmd_create_entityrelationdiag.cpp:25
-#, fuzzy, kde-format
-#| msgid "Create entity relationship diagram"
-msgid "Create entity relationship diagram : %1"
-msgstr "एंटिटी सम्बन्ध डायग्राम बनाव"
-
-#: cmds/cmd_create_usecasediag.cpp:25
-#, fuzzy, kde-format
-#| msgid "Create use case diagram"
-msgid "Create use case diagram : %1"
-msgstr "यूज केस डायग्राम बनाव"
-
-#: cmds/cmd_set_visibility.cpp:24
-#, fuzzy, kde-format
-#| msgid "Change visibility : "
-msgid "Change visibility : %1"
-msgstr "विजिबिलिटी बदलव :"
-
-#: cmds/cmd_create_activitydiag.cpp:25
-#, fuzzy, kde-format
-#| msgid "Create activity diagram"
-msgid "Create activity diagram : %1"
-msgstr "सक्रियता डायग्राम बनाव"
-
-#: cmds/cmd_moveWidget.cpp:26
-#, fuzzy, kde-format
-#| msgid "Move widget :"
-msgid "Move widget : %1"
-msgstr "विजेट खिसकाव :"
-
 #: cmds/cmd_set_stereotype.cpp:25
 #, kde-format
 msgid "Set stereotype : %1 to %2"
@@ -2181,6 +2157,12 @@ msgstr ""
 #| msgid "Change text"
 msgid "Change text : %1 to %2"
 msgstr "पाठ बदलव"
+
+#: cmds/cmd_create_entityrelationdiag.cpp:25
+#, fuzzy, kde-format
+#| msgid "Create entity relationship diagram"
+msgid "Create entity relationship diagram : %1"
+msgstr "एंटिटी सम्बन्ध डायग्राम बनाव"
 
 #: cmds/cmd_create_statediag.cpp:25
 #, fuzzy, kde-format
@@ -2200,11 +2182,29 @@ msgstr "कोलाबोरेसन डायग्राम बनाव"
 msgid "Create sequence diagram : %1"
 msgstr "सीक्वेंस डायग्राम बदलव"
 
+#: cmds/cmd_create_usecasediag.cpp:25
+#, fuzzy, kde-format
+#| msgid "Create use case diagram"
+msgid "Create use case diagram : %1"
+msgstr "यूज केस डायग्राम बनाव"
+
+#: cmds/cmd_set_visibility.cpp:24
+#, fuzzy, kde-format
+#| msgid "Change visibility : "
+msgid "Change visibility : %1"
+msgstr "विजिबिलिटी बदलव :"
+
 #: cmds/cmd_create_deploydiag.cpp:25
 #, fuzzy, kde-format
 #| msgid "Create deployment diagram"
 msgid "Create deployment diagram : %1"
 msgstr "डिपोलायमेंट डायग्राम बनाव"
+
+#: cmds/cmd_create_activitydiag.cpp:25
+#, fuzzy, kde-format
+#| msgid "Create activity diagram"
+msgid "Create activity diagram : %1"
+msgstr "सक्रियता डायग्राम बनाव"
 
 #: cmds/cmd_resizeWidget.cpp:26
 #, fuzzy, kde-format
@@ -2217,6 +2217,12 @@ msgstr "विजेट बनाव :"
 #| msgid "Create component diagram"
 msgid "Create component diagram : %1"
 msgstr "अवयव डायग्राम बनाव"
+
+#: cmds/cmd_moveWidget.cpp:26
+#, fuzzy, kde-format
+#| msgid "Move widget :"
+msgid "Move widget : %1"
+msgstr "विजेट खिसकाव :"
 
 #: refactoring/refactoringassistant.cpp:49
 #, fuzzy
@@ -2510,62 +2516,81 @@ msgctxt "class scope"
 msgid "Class"
 msgstr "वर्ग"
 
-#: debug/debug_utils.cpp:44
-#, fuzzy
-#| msgid "Class name"
-msgid "Class Name"
-msgstr "वर्ग नाम"
+#: association.cpp:39
+msgid "Generalization"
+msgstr "सामान्यीकरन"
 
-#: folder.cpp:405
-#, kde-format
-msgid "The folderfile %1 does not exist."
-msgstr "फोल्डरफाइल %1 अस्तित्व मं नइ हे."
+#: association.cpp:40 worktoolbar.cpp:315
+msgid "Aggregation"
+msgstr "एग्रीगेसन"
 
-#: folder.cpp:405 folder.cpp:409 umldoc.cpp:418 umldoc.cpp:440 umldoc.cpp:478
-#: umldoc.cpp:490 umldoc.cpp:504 umldoc.cpp:516 umldoc.cpp:528 umldoc.cpp:546
-msgid "Load Error"
-msgstr "लोड गलती"
+#: association.cpp:41 worktoolbar.cpp:314
+msgid "Dependency"
+msgstr "डिपेंडेंसी"
 
-#: folder.cpp:409
-#, kde-format
-msgid "The folderfile %1 cannot be opened."
-msgstr "फोल्डरफाइल %1  खोले नइ जा सकिस."
+#: association.cpp:42 worktoolbar.cpp:307
+msgid "Association"
+msgstr "सम्बद्धता"
 
-#: umlcanvasobject.cpp:191 model_utils.cpp:428
-msgid "new_association"
-msgstr "नवा_सम्बद्धता"
+#: association.cpp:43
+msgid "Self Association"
+msgstr "अपने अपन सम्बद्धता"
 
-#: umlcanvasobject.cpp:194
-msgid "new_attribute"
-msgstr "नवा_गुनधर्म"
+#: association.cpp:44
+msgid "Collaboration Message"
+msgstr "कोलाबरेसन संदेस"
 
-#: umlcanvasobject.cpp:197
-msgid "new_template"
-msgstr "नवा-टैम्प्लेट"
+#: association.cpp:45
+msgid "Sequence Message"
+msgstr "अनुक्रम संदेस"
 
-#: umlcanvasobject.cpp:200
-msgid "new_operation"
-msgstr "नवा_संचालन"
+#: association.cpp:46
+msgid "Collaboration Self Message"
+msgstr "कोलाबरेसन सेल्फ संदेस"
 
-#: umlcanvasobject.cpp:203
-msgid "new_literal"
-msgstr "नवा_लिटरल"
+#: association.cpp:47
+msgid "Sequence Self Message"
+msgstr "सीक्वेंस सेल्फ संदेस"
 
-#: umlcanvasobject.cpp:206
-msgid "new_field"
-msgstr "नवा_फील्ड"
+#: association.cpp:48 worktoolbar.cpp:308
+msgid "Containment"
+msgstr "कन्टेनमेंट"
 
-#: umlcanvasobject.cpp:209
-msgid "new_unique_constraint"
-msgstr "नवा_बेजोड़_कान्स्ट्रैंट"
+#: association.cpp:49 worktoolbar.cpp:319
+msgid "Composition"
+msgstr "कम्पोजिसन"
 
-#: umlcanvasobject.cpp:212
-msgid "new_fkey_constraint"
-msgstr "नवा_एफकी_कांस्ट्रैंट"
+#: association.cpp:50
+msgid "Realization"
+msgstr "रीयलाइजेसन"
 
-#: umlcanvasobject.cpp:215
-msgid "new_check_constraint"
-msgstr "नवा_चेक_कास्ट्रैंट"
+#: association.cpp:51
+msgid "Uni Association"
+msgstr "यूनी सम्बद्धता"
+
+#: association.cpp:52 worktoolbar.cpp:309
+msgid "Anchor"
+msgstr "वकर"
+
+#: association.cpp:53 worktoolbar.cpp:347
+msgid "State Transition"
+msgstr "अवस्था बदलाव"
+
+#: association.cpp:55 worktoolbar.cpp:356
+msgid "Exception"
+msgstr "एक्सेप्सन"
+
+#: association.cpp:56 worktoolbar.cpp:360
+msgid "Category to Parent"
+msgstr "अभिभावक मं वर्ग"
+
+#: association.cpp:57 worktoolbar.cpp:361
+msgid "Child to Category"
+msgstr "वर्ग मं सिसु"
+
+#: association.cpp:58 worktoolbar.cpp:316
+msgid "Relationship"
+msgstr "संबन्ध"
 
 #: stereotype.cpp:112 listpopupmenu.cpp:931
 msgid "Stereotype"
@@ -2575,46 +2600,6 @@ msgstr "स्टीरियो-टाइप"
 #: umldoc.cpp:1235 umldoc.cpp:1278 umldoc.cpp:1309 umldoc.cpp:1343
 msgid "Enter name:"
 msgstr "नाम भरव:"
-
-#: toolbarstateother.cpp:235
-msgid "Enter Signal Name"
-msgstr "सिग्नल नाम भरव"
-
-#: toolbarstateother.cpp:236
-msgid "Enter Signal"
-msgstr "सिग्नल भरव"
-
-#: toolbarstateother.cpp:236
-msgid "new Signal"
-msgstr "नवा सिग्नल"
-
-#: toolbarstateother.cpp:242
-msgid "Enter Time Event Name"
-msgstr "समय घटना नाम भरव"
-
-#: toolbarstateother.cpp:243
-msgid "Enter Time Event"
-msgstr "समय घटना भरव"
-
-#: toolbarstateother.cpp:243
-msgid "new time event"
-msgstr "नवा समय घटना"
-
-#: toolbarstateother.cpp:249
-msgid "Enter Combined Fragment Name"
-msgstr "एकीकृत फ्रेगमेंट नाम भरव"
-
-#: toolbarstateother.cpp:250
-msgid "Enter the Combined Fragment"
-msgstr "एकीकृत फ्रेगमेंट भरव"
-
-#: toolbarstateother.cpp:250
-msgid "new Combined Fragment"
-msgstr "नवा एकीकृत फ्रेगमेंट"
-
-#: toolbarstateother.cpp:257 umlview.cpp:2733
-msgid "new state"
-msgstr "नवा अवस्था"
 
 #: worktoolbar.cpp:300
 msgid "Object"
@@ -2644,18 +2629,6 @@ msgstr "कम्बाइंड फ्रेग्मेंट"
 msgid "Precondition"
 msgstr "पूर्वसर्त"
 
-#: worktoolbar.cpp:307 association.cpp:42
-msgid "Association"
-msgstr "सम्बद्धता"
-
-#: worktoolbar.cpp:308 association.cpp:48
-msgid "Containment"
-msgstr "कन्टेनमेंट"
-
-#: worktoolbar.cpp:309 association.cpp:52
-msgid "Anchor"
-msgstr "वकर"
-
 #: worktoolbar.cpp:310
 msgid "Label"
 msgstr "लेबल "
@@ -2672,18 +2645,6 @@ msgstr "डब्बा"
 msgid "Actor"
 msgstr "कर्ता"
 
-#: worktoolbar.cpp:314 association.cpp:41
-msgid "Dependency"
-msgstr "डिपेंडेंसी"
-
-#: worktoolbar.cpp:315 association.cpp:40
-msgid "Aggregation"
-msgstr "एग्रीगेसन"
-
-#: worktoolbar.cpp:316 association.cpp:58
-msgid "Relationship"
-msgstr "संबन्ध"
-
 #: worktoolbar.cpp:317
 msgid "Directional Association"
 msgstr "डायरेक्सनल सम्बद्धता"
@@ -2691,10 +2652,6 @@ msgstr "डायरेक्सनल सम्बद्धता"
 #: worktoolbar.cpp:318
 msgid "Implements"
 msgstr "इम्प्लीमेंट्स"
-
-#: worktoolbar.cpp:319 association.cpp:49
-msgid "Composition"
-msgstr "कम्पोजिसन"
 
 #: worktoolbar.cpp:320 listpopupmenu.cpp:717
 msgid "Use Case"
@@ -2795,10 +2752,6 @@ msgstr "चुनाव"
 msgid "And Line"
 msgstr "अउ लकीर"
 
-#: worktoolbar.cpp:347 association.cpp:53
-msgid "State Transition"
-msgstr "अवस्था बदलाव"
-
 #: worktoolbar.cpp:348
 msgid "Activity Transition"
 msgstr "सक्रियता बदलाव"
@@ -2828,10 +2781,6 @@ msgstr "सुरू के गतिविधि"
 msgid "Message"
 msgstr "संदेस"
 
-#: worktoolbar.cpp:356 association.cpp:55
-msgid "Exception"
-msgstr "एक्सेप्सन"
-
 #: worktoolbar.cpp:357
 msgid "Object Node"
 msgstr "ओब्जैक्ट नोड"
@@ -2844,18 +2793,86 @@ msgstr "प्री/पोस्ट कंडीसन"
 msgid "Category"
 msgstr "स्रेनी"
 
-#: worktoolbar.cpp:360 association.cpp:56
-msgid "Category to Parent"
-msgstr "अभिभावक मं वर्ग"
-
-#: worktoolbar.cpp:361 association.cpp:57
-msgid "Child to Category"
-msgstr "वर्ग मं सिसु"
-
 #: worktoolbar.cpp:372
 msgctxt "selection arrow"
 msgid "Select"
 msgstr "चुनव"
+
+#: umlcanvasobject.cpp:191 model_utils.cpp:428
+msgid "new_association"
+msgstr "नवा_सम्बद्धता"
+
+#: umlcanvasobject.cpp:194
+msgid "new_attribute"
+msgstr "नवा_गुनधर्म"
+
+#: umlcanvasobject.cpp:197
+msgid "new_template"
+msgstr "नवा-टैम्प्लेट"
+
+#: umlcanvasobject.cpp:200
+msgid "new_operation"
+msgstr "नवा_संचालन"
+
+#: umlcanvasobject.cpp:203
+msgid "new_literal"
+msgstr "नवा_लिटरल"
+
+#: umlcanvasobject.cpp:206
+msgid "new_field"
+msgstr "नवा_फील्ड"
+
+#: umlcanvasobject.cpp:209
+msgid "new_unique_constraint"
+msgstr "नवा_बेजोड़_कान्स्ट्रैंट"
+
+#: umlcanvasobject.cpp:212
+msgid "new_fkey_constraint"
+msgstr "नवा_एफकी_कांस्ट्रैंट"
+
+#: umlcanvasobject.cpp:215
+msgid "new_check_constraint"
+msgstr "नवा_चेक_कास्ट्रैंट"
+
+#: toolbarstateother.cpp:235
+msgid "Enter Signal Name"
+msgstr "सिग्नल नाम भरव"
+
+#: toolbarstateother.cpp:236
+msgid "Enter Signal"
+msgstr "सिग्नल भरव"
+
+#: toolbarstateother.cpp:236
+msgid "new Signal"
+msgstr "नवा सिग्नल"
+
+#: toolbarstateother.cpp:242
+msgid "Enter Time Event Name"
+msgstr "समय घटना नाम भरव"
+
+#: toolbarstateother.cpp:243
+msgid "Enter Time Event"
+msgstr "समय घटना भरव"
+
+#: toolbarstateother.cpp:243
+msgid "new time event"
+msgstr "नवा समय घटना"
+
+#: toolbarstateother.cpp:249
+msgid "Enter Combined Fragment Name"
+msgstr "एकीकृत फ्रेगमेंट नाम भरव"
+
+#: toolbarstateother.cpp:250
+msgid "Enter the Combined Fragment"
+msgstr "एकीकृत फ्रेगमेंट भरव"
+
+#: toolbarstateother.cpp:250
+msgid "new Combined Fragment"
+msgstr "नवा एकीकृत फ्रेगमेंट"
+
+#: toolbarstateother.cpp:257 umlview.cpp:2733
+msgid "new state"
+msgstr "नवा अवस्था"
 
 #: enumliteral.cpp:104
 msgctxt "enum name"
@@ -2899,6 +2916,11 @@ msgid ""
 "already exists in the package %2.\n"
 "Please enter a new name:"
 msgstr ""
+
+#: umlviewimageexporterall.cpp:84 uml.cpp:1319 umlviewimageexporter.cpp:77
+msgctxt "reset status bar"
+msgid "Ready."
+msgstr "तैयार."
 
 #: uml.cpp:242
 msgid "&Export model to DocBook"
@@ -3237,11 +3259,6 @@ msgid ""
 "clipboard may be of the wrong type to be pasted here."
 msgstr ""
 
-#: uml.cpp:1319 umlviewimageexporterall.cpp:84 umlviewimageexporter.cpp:77
-msgctxt "reset status bar"
-msgid "Ready."
-msgstr "तैयार."
-
 #: uml.cpp:1857
 msgid "Cannot view code until you generate some first."
 msgstr "कोड दिखा नइ सको जब तक कि पहिली आप मन कुछ तैयार नइ कर लेते."
@@ -3289,38 +3306,6 @@ msgstr "आयात बर कोड चुनव"
 #: uml.cpp:2756
 msgid "XHTML Generation failed ."
 msgstr "एक्सएचटीएमएल बनाए मं फेल."
-
-#: association.cpp:39
-msgid "Generalization"
-msgstr "सामान्यीकरन"
-
-#: association.cpp:43
-msgid "Self Association"
-msgstr "अपने अपन सम्बद्धता"
-
-#: association.cpp:44
-msgid "Collaboration Message"
-msgstr "कोलाबरेसन संदेस"
-
-#: association.cpp:45
-msgid "Sequence Message"
-msgstr "अनुक्रम संदेस"
-
-#: association.cpp:46
-msgid "Collaboration Self Message"
-msgstr "कोलाबरेसन सेल्फ संदेस"
-
-#: association.cpp:47
-msgid "Sequence Self Message"
-msgstr "सीक्वेंस सेल्फ संदेस"
-
-#: association.cpp:50
-msgid "Realization"
-msgstr "रीयलाइजेसन"
-
-#: association.cpp:51
-msgid "Uni Association"
-msgstr "यूनी सम्बद्धता"
 
 #: model_utils.cpp:406
 msgid "new_actor"
@@ -3442,6 +3427,795 @@ msgstr "एंटिटी रिलेसनसिप डायग्राम"
 #: model_utils.cpp:1725
 msgid "No Diagram"
 msgstr "कोई आरेख नइ"
+
+#: object_factory.cpp:191
+msgctxt "UMLObject name"
+msgid "Name"
+msgstr "नांव"
+
+#: object_factory.cpp:202
+msgid ""
+"This is a reserved keyword for the language of the configured code generator."
+msgstr "कान्फिगर कोड जनरेटर के भाखा बर ए सुरक्छित कुंजीसब्द हे."
+
+#: object_factory.cpp:203
+msgid "Reserved Keyword"
+msgstr "सुरक्छित कुंजीसब्द"
+
+#: umlviewimageexportermodel.cpp:214
+#, kde-format
+msgid "Can not create directory: %1"
+msgstr "डिरेक्टरी: %1 बना नइ सकिस"
+
+#: umlviewimageexportermodel.cpp:232
+msgid "Can not save an empty diagram"
+msgstr "एक खाली आरेख सहेज नइ सकिस"
+
+#: umlviewimageexportermodel.cpp:237
+#, kde-format
+msgid "A problem occurred while saving diagram in %1"
+msgstr "डायग्राम ल %1 मं सहेजे मं एक समस्या आई"
+
+#: umlviewimageexportermodel.cpp:243 umllistview.cpp:476 umldoc.cpp:616
+#: umldoc.cpp:626 umldoc.cpp:643 umldoc.cpp:676 umldoc.cpp:694
+#, kde-format
+msgid "There was a problem saving file: %1"
+msgstr "फाइल सहेजे मं गलती होइसः %1"
+
+#: folder.cpp:405
+#, kde-format
+msgid "The folderfile %1 does not exist."
+msgstr "फोल्डरफाइल %1 अस्तित्व मं नइ हे."
+
+#: folder.cpp:405 folder.cpp:409 umldoc.cpp:418 umldoc.cpp:440 umldoc.cpp:478
+#: umldoc.cpp:490 umldoc.cpp:504 umldoc.cpp:516 umldoc.cpp:528 umldoc.cpp:546
+msgid "Load Error"
+msgstr "लोड गलती"
+
+#: folder.cpp:409
+#, kde-format
+msgid "The folderfile %1 cannot be opened."
+msgstr "फोल्डरफाइल %1  खोले नइ जा सकिस."
+
+#: toolbarstateassociation.cpp:182 toolbarstateassociation.cpp:251
+msgid "Incorrect use of associations."
+msgstr "सम्बद्धता के गलत उपयोग."
+
+#: toolbarstateassociation.cpp:182 toolbarstateassociation.cpp:251
+msgid "Association Error"
+msgstr "सम्बद्धता गलती"
+
+#: umllistviewitem.cpp:525 umllistviewitem.cpp:558 umllistviewitem.cpp:589
+#: umllistviewitem.cpp:616
+msgid "Rename canceled"
+msgstr "नाम बदलना खारिज"
+
+#: umllistviewitem.cpp:649
+#, kde-format
+msgid "Renaming an item of listview type %1 is not yet implemented."
+msgstr "कोनो चीज के सूची दृस्य किसिम %1 के नाम बदले जाना अभी तक लागू नइ हे."
+
+#: umllistviewitem.cpp:650
+msgid "Function Not Implemented"
+msgstr "फंक्सन लागू नइ हे"
+
+#: umllistviewitem.cpp:663
+msgid ""
+"The name you entered was invalid.\n"
+"Renaming process has been canceled."
+msgstr ""
+"जऊन नाम आप मन घुसाय हो अवैध हे.\n"
+"नवा नाम दे के काम खारिज करे गे हे."
+
+#: umllistviewitem.cpp:664 umllistview.cpp:2188
+msgid "Name Not Valid"
+msgstr "नाम वैध नइ हे"
+
+#: listpopupmenu.cpp:286 listpopupmenu.cpp:601
+msgid "Change Font..."
+msgstr "फोंट बदलव..."
+
+#: listpopupmenu.cpp:287
+msgid "Delete Selected Items"
+msgstr "चुने गे चीज मेटाव"
+
+#: listpopupmenu.cpp:293 listpopupmenu.cpp:958
+msgid "Draw as Circle"
+msgstr "वृत्त के जइसन ड्राइंग बनाव"
+
+#: listpopupmenu.cpp:295 listpopupmenu.cpp:960
+msgid "Change into Class"
+msgstr "क्लास मं बदलव"
+
+#: listpopupmenu.cpp:299 listpopupmenu.cpp:966
+msgid "Change into Interface"
+msgstr "इंटरफेस मं बदलव"
+
+#: listpopupmenu.cpp:320 listpopupmenu.cpp:1478
+msgid "Category Type"
+msgstr "वर्ग किसिम"
+
+#: listpopupmenu.cpp:371
+msgid "Move Up"
+msgstr "ऊपर जाव"
+
+#: listpopupmenu.cpp:372
+msgid "Move Down"
+msgstr "नीचे जाव"
+
+#: listpopupmenu.cpp:378
+msgid "Rename Class..."
+msgstr "वर्ग ल नवा नाम देव..."
+
+#: listpopupmenu.cpp:379
+msgid "Rename Object..."
+msgstr "आब्जेक्ट ल नवा नाम देव..."
+
+#: listpopupmenu.cpp:398
+msgctxt "clear note"
+msgid "Clear"
+msgstr "साफ करव"
+
+#: listpopupmenu.cpp:400 listpopupmenu.cpp:487 listpopupmenu.cpp:506
+#: listpopupmenu.cpp:547
+msgid "Change Text..."
+msgstr "पाठ बदलव..."
+
+#: listpopupmenu.cpp:419
+msgid "Change State Name..."
+msgstr "अवस्था नाम बदलव..."
+
+#: listpopupmenu.cpp:430
+msgid "Flip Horizontal"
+msgstr "आड़ा लहुटाव"
+
+#: listpopupmenu.cpp:433
+msgid "Flip Vertical"
+msgstr "खड़ा लहुटाव"
+
+#: listpopupmenu.cpp:450
+msgid "Change Activity Name..."
+msgstr "गतिविधि नाम बदलव..."
+
+#: listpopupmenu.cpp:469
+msgid "Change Object Node Name..."
+msgstr "ओब्जैक्ट नोड नाम बदलव..."
+
+#: listpopupmenu.cpp:485
+msgctxt "clear precondition"
+msgid "Clear"
+msgstr "साफ करव"
+
+#: listpopupmenu.cpp:496
+msgid "Add Interaction Operand"
+msgstr "इंटरेक्सन ओपरेन्ड जोड़व"
+
+#: listpopupmenu.cpp:504
+msgctxt "clear combined fragment"
+msgid "Clear"
+msgstr "साफ करव"
+
+#: listpopupmenu.cpp:514 listpopupmenu.cpp:517 listpopupmenu.cpp:1623
+#: listpopupmenu.cpp:1627
+msgid "Change Multiplicity..."
+msgstr "गुननता बदलव..."
+
+#: listpopupmenu.cpp:520 listpopupmenu.cpp:1631
+msgid "Change Name"
+msgstr " नाम बदलव"
+
+#: listpopupmenu.cpp:523 listpopupmenu.cpp:1615 listpopupmenu.cpp:1637
+msgid "Change Role A Name..."
+msgstr "भूमिका ए नाम बदलव..."
+
+#: listpopupmenu.cpp:526 listpopupmenu.cpp:1619 listpopupmenu.cpp:1638
+msgid "Change Role B Name..."
+msgstr "भूमिका बी नाम बदलव..."
+
+#: listpopupmenu.cpp:540 listpopupmenu.cpp:634
+msgid "New Operation..."
+msgstr "नवा संचालन..."
+
+#: listpopupmenu.cpp:541 listpopupmenu.cpp:1657
+msgid "Select Operation..."
+msgstr "संचालन चुनव..."
+
+#: listpopupmenu.cpp:586 listpopupmenu.cpp:1661
+msgid "Rename..."
+msgstr "नाम बदलव..."
+
+#: listpopupmenu.cpp:604 listpopupmenu.cpp:979
+msgid "Line Color..."
+msgstr "रेखा के रंग..."
+
+#: listpopupmenu.cpp:607
+msgid "Expand All"
+msgstr "सब्बो फैलाव"
+
+#: listpopupmenu.cpp:610
+msgid "Collapse All"
+msgstr "सब्बो समेंटव"
+
+#: listpopupmenu.cpp:613
+msgctxt "duplicate action"
+msgid "Duplicate"
+msgstr "दुहरी प्रति"
+
+#: listpopupmenu.cpp:616
+msgid "Externalize Folder..."
+msgstr "फोल्डर एक्सटर्नलाइज करव..."
+
+#: listpopupmenu.cpp:619
+msgid "Internalize Folder"
+msgstr "फोल्डर इंटरनलाइज करव"
+
+#: listpopupmenu.cpp:622
+msgid "Import Classes..."
+msgstr "क्लास आयात करव..."
+
+#: listpopupmenu.cpp:625
+msgid "Import Project..."
+msgstr "परियोजना आयात करव..."
+
+#: listpopupmenu.cpp:628
+msgid "Reset Label Positions"
+msgstr "लेबल स्थिति रीसेट करव"
+
+#: listpopupmenu.cpp:631
+msgid "New Parameter..."
+msgstr "नवा-पैरामीटर..."
+
+#: listpopupmenu.cpp:637
+msgid "New Attribute..."
+msgstr "नवा गुनधर्म..."
+
+#: listpopupmenu.cpp:640 listpopupmenu.cpp:1563
+msgid "New Template..."
+msgstr "नवा टैम्प्लेट..."
+
+#: listpopupmenu.cpp:643
+msgid "New Literal..."
+msgstr "नवा लिटरल..."
+
+#: listpopupmenu.cpp:646
+msgid "New Entity Attribute..."
+msgstr "नवा एंटिटी गुनधर्म..."
+
+#: listpopupmenu.cpp:649
+msgid "Export as Picture..."
+msgstr "फोटू के रूप मं निर्यात करव..."
+
+#: listpopupmenu.cpp:668
+msgid "Subsystem"
+msgstr "सबसिसटम"
+
+#: listpopupmenu.cpp:698 listpopupmenu.cpp:832
+msgid "Folder"
+msgstr "फोल्डर"
+
+#: listpopupmenu.cpp:727
+msgid "Text Line..."
+msgstr "पाठ के पंक्ति..."
+
+#: listpopupmenu.cpp:829
+msgctxt "new container menu"
+msgid "New"
+msgstr "नवा"
+
+#: listpopupmenu.cpp:833
+msgctxt "new class menu item"
+msgid "Class"
+msgstr "वर्ग"
+
+#: listpopupmenu.cpp:914
+msgid "Public Only"
+msgstr "सिरिफ सार्वजनिक"
+
+#: listpopupmenu.cpp:918
+msgid "Operation Signature"
+msgstr "संचालन दसखत"
+
+#: listpopupmenu.cpp:923
+msgid "Attribute Signature"
+msgstr "गुनधर्म दसखत"
+
+#: listpopupmenu.cpp:943
+msgctxt "new classifier menu"
+msgid "New"
+msgstr "नवा"
+
+#: listpopupmenu.cpp:946
+msgid "Attribute..."
+msgstr "विसेसता"
+
+#: listpopupmenu.cpp:947
+msgid "Operation..."
+msgstr "संचालन..."
+
+#: listpopupmenu.cpp:948
+msgid "Template..."
+msgstr "टैम्प्लेट..."
+
+#: listpopupmenu.cpp:962
+msgid "Refactor"
+msgstr "रीफैक्टर"
+
+#: listpopupmenu.cpp:963
+msgid "View Code"
+msgstr "कोड देखाव"
+
+#: listpopupmenu.cpp:978
+msgctxt "color menu"
+msgid "Color"
+msgstr "रंग"
+
+#: listpopupmenu.cpp:980
+msgid "Fill Color..."
+msgstr "भराव रंग..."
+
+#. i18n: file: umbrello.kcfg:96
+#. i18n: ectx: label, entry (useFillColor), group (UI Options)
+#: listpopupmenu.cpp:981 rc.cpp:1250
+msgid "Use Fill Color"
+msgstr "भराव रंग उपयोग करव"
+
+#: listpopupmenu.cpp:1075
+msgctxt "new sub menu"
+msgid "New"
+msgstr "नवा"
+
+#: listpopupmenu.cpp:1124
+msgid "Actor..."
+msgstr "कर्ता..."
+
+#: listpopupmenu.cpp:1125
+msgid "Use Case..."
+msgstr "केस उपयोग करव"
+
+#: listpopupmenu.cpp:1129
+msgctxt "new class menu item"
+msgid "Class..."
+msgstr "वर्ग..."
+
+#: listpopupmenu.cpp:1130
+msgid "Interface..."
+msgstr "इंटरफेस..."
+
+#: listpopupmenu.cpp:1131
+msgid "Datatype..."
+msgstr "डाटाटाइप..."
+
+#: listpopupmenu.cpp:1132
+msgid "Enum..."
+msgstr "ईन्यूम"
+
+#: listpopupmenu.cpp:1133
+msgid "Package..."
+msgstr "पैकेज..."
+
+#: listpopupmenu.cpp:1139
+msgctxt "add new state"
+msgid "State..."
+msgstr "स्थिति..."
+
+#: listpopupmenu.cpp:1145 listpopupmenu.cpp:1187
+msgid "Activity..."
+msgstr "काम..."
+
+#: listpopupmenu.cpp:1150
+msgid "Subsystem..."
+msgstr "सबसिसटम..."
+
+#: listpopupmenu.cpp:1151
+msgid "Component..."
+msgstr "अवयव..."
+
+#: listpopupmenu.cpp:1152
+msgid "Artifact..."
+msgstr "सिल्पतथ्य..."
+
+#: listpopupmenu.cpp:1155
+msgid "Node..."
+msgstr "नोड..."
+
+#: listpopupmenu.cpp:1158
+msgid "Entity..."
+msgstr "एंटिटी..."
+
+#: listpopupmenu.cpp:1159
+msgid "Category..."
+msgstr "वर्ग..."
+
+#: listpopupmenu.cpp:1163
+msgid "Object..."
+msgstr "चीज..."
+
+#: listpopupmenu.cpp:1167
+msgid "Attribute"
+msgstr "विसेसता"
+
+#: listpopupmenu.cpp:1169 listpopupmenu.cpp:1173
+msgid "Template"
+msgstr "टेम्पलेट"
+
+#: listpopupmenu.cpp:1176
+msgid "Entity Attribute..."
+msgstr "एंटिटी गुनधर्म..."
+
+#: listpopupmenu.cpp:1183
+msgid "Enum Literal..."
+msgstr "ईन्यूम लिटरल..."
+
+#: listpopupmenu.cpp:1611
+msgid "Delete Anchor"
+msgstr "वकर मेटाव"
+
+#: listpopupmenu.cpp:1636
+msgid "Change Association Name..."
+msgstr "सम्बद्धता नाम बदलव..."
+
+#: listpopupmenu.cpp:1686
+msgid "Undo"
+msgstr "पहिली जइसन"
+
+#: listpopupmenu.cpp:1687
+msgid "Redo"
+msgstr "दुहराव"
+
+#: listpopupmenu.cpp:1693
+msgid "Clear Diagram"
+msgstr "आरेख साफ करव"
+
+#: listpopupmenu.cpp:1696
+msgid "Snap to Grid"
+msgstr "ग्रिड मं स्नेप करव"
+
+#: listpopupmenu.cpp:1698
+msgid "Show Grid"
+msgstr "ग्रिड देखाव"
+
+#: listpopupmenu.cpp:1710
+msgid "Disjoint(Specialisation)"
+msgstr "डिस्जाइन्ट(विसेसग्यता)"
+
+#: listpopupmenu.cpp:1711
+msgid "Overlapping(Specialisation)"
+msgstr "ओवरलेपिंग (स्पेसियलाइजेसन)"
+
+#: listpopupmenu.cpp:1712
+msgid "Union"
+msgstr "संघ"
+
+#: main.cpp:36 main.cpp:68
+msgid "Umbrello UML Modeller"
+msgstr "अम्बरैलो यूएमएल माडलर"
+
+#: main.cpp:70
+msgid "(c) 2001 Paul Hensgen, (c) 2002-2006 Umbrello UML Modeller Authors"
+msgstr "(c) 2001 पाल हेसगेन, (c) 2002-2006 अम्बरैलो यूएमएल माडलर लिखइया मन"
+
+#: main.cpp:72
+msgid "Paul Hensgen"
+msgstr "पाल हेसगेन"
+
+#: main.cpp:77
+msgid "File to open"
+msgstr "फाइल जऊन ल खोलना हे"
+
+#: main.cpp:78
+msgid "export diagrams to extension and exit"
+msgstr "डायग्राम ल एक्सटेंसन मं निर्यात कर बाहिर हों"
+
+#: main.cpp:79
+msgid "list available export extensions"
+msgstr ""
+
+#: main.cpp:80
+msgid "the local directory to save the exported diagrams in"
+msgstr "लोकल डिरेक्टरी जहाँ निर्यात करे डायग्राम सहेजे जाय हे"
+
+#: main.cpp:80
+msgid "the directory of the file"
+msgstr "फाइल के डिरेक्टरी"
+
+#: main.cpp:81
+msgid ""
+"keep the tree structure used to store the views in the document in the "
+"target directory"
+msgstr ""
+
+#: umllistview.cpp:437
+msgid "Externalize Folder"
+msgstr "एक्सटर्नलाइज फोल्डर"
+
+#: umllistview.cpp:477 umldoc.cpp:616 umldoc.cpp:626 umldoc.cpp:643
+#: umldoc.cpp:676 umldoc.cpp:694 umldoc.cpp:701
+msgid "Save Error"
+msgstr "सहेजे मं गलती"
+
+#: umllistview.cpp:506
+msgid "Enter Model Name"
+msgstr "माडल नाम भरव"
+
+#: umllistview.cpp:507
+msgid "Enter the new name of the model:"
+msgstr "माडल के नवा नाम भरव:"
+
+#: umllistview.cpp:1234
+msgid "Views"
+msgstr "दृस्य"
+
+#: umllistview.cpp:2187
+msgid ""
+"The name you entered was invalid.\n"
+"Creation process has been canceled."
+msgstr ""
+"जऊन नाम आप मन घुसाय हो अवैध हे.\n"
+"बनाए के काम खारिज करे गे हे."
+
+#: umllistview.cpp:2197 umldoc.cpp:1353
+msgid ""
+"The name you entered was not unique.\n"
+"Is this what you wanted?"
+msgstr ""
+"जऊन नाम आप मन घुसाय हो बेजोड़ नइ हे.\n"
+"का यही आप मन चाहथो ?"
+
+#: umllistview.cpp:2198 umldoc.cpp:1354
+msgid "Use Name"
+msgstr "नाम उपयोग करव"
+
+#: umllistview.cpp:2198 umldoc.cpp:1354
+msgid "Enter New Name"
+msgstr "नवा नाम भरव"
+
+#: umllistview.cpp:2204 umllistview.cpp:2466
+msgid ""
+"The name you entered was not unique.\n"
+"Creation process has been canceled."
+msgstr ""
+"जऊन नाम आप मन घुसाय हो बेजोड़ नइ हे.\n"
+"बनाए के काम खारिज करे गे."
+
+#: umllistview.cpp:2424 umllistview.cpp:2441 umllistview.cpp:2456
+#: umllistview.cpp:2486
+msgid "Creation canceled"
+msgstr "बनाइस जाना खारिज"
+
+#: umllistview.cpp:2697
+msgid "Loading listview..."
+msgstr "सूचीदृस्य लोड करत हे..."
+
+#: umllistview.cpp:3072
+msgid "The folder must be emptied before it can be deleted."
+msgstr "फोल्डर ल मिटा सकें एखर बर पहिली एला खाली करना होही."
+
+#: umllistview.cpp:3073
+msgid "Folder Not Empty"
+msgstr "फोल्डर खाली नइ हे"
+
+#: umlviewimageexporter.cpp:71
+msgid "Exporting view..."
+msgstr "दृस्य निर्यात करत हे..."
+
+#: umlviewimageexporter.cpp:75
+msgid "An error happened when exporting the image:\n"
+msgstr "फोटू ल निर्यात करे के समय एक गलती होइस:\n"
+
+#: umlviewimageexporter.cpp:102
+#, kde-format
+msgid ""
+"The selected file %1 exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"फाइल %1 पहिली से ही मौजूद हे. \n"
+"का आप मन एखर ऊपर लिखना चाहथो ?"
+
+#: umlviewimageexporter.cpp:103
+msgid "File Already Exists"
+msgstr "फाइल पहिली से ही अस्तित्व मं हे. "
+
+#: operation.cpp:273
+msgid "new_parameter"
+msgstr "नवा-पैरामीटर"
+
+#: umldoc.cpp:87 umldoc.cpp:1878
+msgid "UML Model"
+msgstr "यूएमएल माडल"
+
+#: umldoc.cpp:120
+msgid "Logical View"
+msgstr "लाजिकल दृस्य"
+
+#: umldoc.cpp:121
+msgid "Use Case View"
+msgstr "केस दृस्य उपयोग करव"
+
+#: umldoc.cpp:122
+msgid "Component View"
+msgstr "अवयव दृस्य"
+
+#: umldoc.cpp:123
+msgid "Deployment View"
+msgstr "डिपोलायमेंट दृस्य"
+
+#: umldoc.cpp:124
+msgid "Entity Relationship Model"
+msgstr "एंटिटी रिलेसनसिप माडल"
+
+#: umldoc.cpp:131 umldoc.cpp:343
+msgid "Datatypes"
+msgstr "डाटाटाइप्स"
+
+#: umldoc.cpp:271
+msgid ""
+"The current file has been modified.\n"
+"Do you want to save it?"
+msgstr ""
+"अभी हाल के फाइल सुधार दे गे हे.\n"
+" का आप मन एला सहेजना चाहथो ?"
+
+#: umldoc.cpp:272
+msgctxt "warning message"
+msgid "Warning"
+msgstr "चेतावनी"
+
+#: umldoc.cpp:418
+#, kde-format
+msgid "The file %1 does not exist."
+msgstr "फाइल %1 अस्तित्व मं नइ हे."
+
+#: umldoc.cpp:440
+#, kde-format
+msgid "The file %1 seems to be corrupted."
+msgstr "फाइल %1 लगथे  कि खराब हे."
+
+#: umldoc.cpp:477 umldoc.cpp:489 umldoc.cpp:515
+#, kde-format
+msgid "There was no XMI file found in the compressed file %1."
+msgstr "संपीडित फाइल %1 तिर कोनो एक्सएमआई फाइल नइ मिलिस."
+
+#: umldoc.cpp:503
+#, kde-format
+msgid "There was a problem loading the extracted file: %1"
+msgstr "निकाली गे फाइल लोड करे मं समस्या आईः %1"
+
+#: umldoc.cpp:527 umldoc.cpp:545
+#, kde-format
+msgid "There was a problem loading file: %1"
+msgstr "फाइल लोड करे मं समस्या आईः %1"
+
+#: umldoc.cpp:701
+#, kde-format
+msgid "There was a problem uploading file: %1"
+msgstr "फाइल अपलोड करे मं गलती होइसः %1"
+
+#: umldoc.cpp:1154
+msgid "use case diagram"
+msgstr "केस आरेख उपयोग करव"
+
+#: umldoc.cpp:1157
+msgid "class diagram"
+msgstr "वर्ग आरेख"
+
+#: umldoc.cpp:1160
+msgid "sequence diagram"
+msgstr "आरेख अनुक्रम"
+
+#: umldoc.cpp:1163
+msgid "collaboration diagram"
+msgstr "कोलाबरेसन आरेख"
+
+#: umldoc.cpp:1166
+msgid "state diagram"
+msgstr "आरेख अवस्था"
+
+#: umldoc.cpp:1169
+msgid "activity diagram"
+msgstr "काम आरेख"
+
+#: umldoc.cpp:1172
+msgid "component diagram"
+msgstr "आरेख अवयव"
+
+#: umldoc.cpp:1175
+msgid "deployment diagram"
+msgstr "डिपोलायमेंट आरेख"
+
+#: umldoc.cpp:1178
+msgid "entity relationship diagram"
+msgstr "एंटिटी रिलेसनसिप डायग्राम"
+
+#: umldoc.cpp:1235
+msgctxt "diagram name"
+msgid "Name"
+msgstr "नांव"
+
+#: umldoc.cpp:1243 umldoc.cpp:1284
+msgid "That is an invalid name for a diagram."
+msgstr "आरेख बर ए एक अवैध नाम हे."
+
+#: umldoc.cpp:1257 umldoc.cpp:1293
+msgid "A diagram is already using that name."
+msgstr "एक आरेख पहिली ही ओ नाम के उपयोग करत हे."
+
+#: umldoc.cpp:1278
+msgctxt "renaming diagram"
+msgid "Name"
+msgstr "नांव"
+
+#: umldoc.cpp:1309
+msgctxt "renaming uml object"
+msgid "Name"
+msgstr "नांव"
+
+#: umldoc.cpp:1343
+msgctxt "renaming child uml object"
+msgid "Name"
+msgstr "नांव"
+
+#: umldoc.cpp:1404
+#, kde-format
+msgid "Are you sure you want to delete diagram %1?"
+msgstr "का आप मन सही मं आरेख %1 ल मिटाना चाहथो ?"
+
+#: umldoc.cpp:1405
+msgid "Delete Diagram"
+msgstr "आरेख मेटाव"
+
+#: umldoc.cpp:1934
+msgid "Setting up the document..."
+msgstr "कागद सेटिंग करत हे..."
+
+#: umldoc.cpp:1963
+msgid "Resolving object references..."
+msgstr "ओब्जैक्ट रेफरेंसेस हल करत हे..."
+
+#: umldoc.cpp:2014
+msgid "Loading UML elements..."
+msgstr "यूएमएल अवयव लोड करत हे..."
+
+#: umldoc.cpp:2209
+msgid "Loading diagrams..."
+msgstr "आरेख लोड करत हे..."
+
+#: umldoc.cpp:2703
+#, kde-format
+msgid "/autosave%1"
+msgstr "/अपने अपन-सहेजव%1"
+
+#: umlview.cpp:317 umlview.cpp:387
+#, kde-format
+msgid "Diagram: %2 Page %1"
+msgstr "आरेखः %2 पेज %1"
+
+#: umlview.cpp:1057
+msgid "Change Line Color"
+msgstr "लकीर रंग बदलव"
+
+#: umlview.cpp:1086
+msgid "Change Fill Color"
+msgstr "भराव रंग बदलव"
+
+#: umlview.cpp:2795
+msgid "Enter Diagram Name"
+msgstr "आरेख नाम भरव"
+
+#: umlview.cpp:2796
+msgid "Enter the new name of the diagram:"
+msgstr "आरेख के नवा नाम भरव:"
+
+#: umlview.cpp:2957
+msgid ""
+"You are about to delete the entire diagram.\n"
+"Are you sure?"
+msgstr ""
+"आप पूरा आरेख ल मेटाय वाले हे.\n"
+"का आप मन सुनिस्चित हो?"
+
+#: umlview.cpp:2959
+msgid "Delete Diagram?"
+msgstr "आरेख मेटाव?"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -4244,46 +5018,72 @@ msgstr "<p align=\"right\">असंपादन जा सके पाठ:</p>
 msgid "<p align=\"right\">Editable text:</p>"
 msgstr "<p align=\"right\">संपादन जा सके पाठ:</p>"
 
+#. i18n: file: dialogs/importprojectdlgbase.ui:23
+#. i18n: ectx: property (toolTip), widget (QLabel, kURLRequesterLabel)
+#. i18n: file: dialogs/importprojectdlgbase.ui:39
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_kURL)
+#: rc.cpp:902 rc.cpp:908
+msgid "The base directory that contains the project"
+msgstr "बेस डिरेक्टरी जेमां परियोजना हे"
+
+#. i18n: file: dialogs/importprojectdlgbase.ui:26
+#. i18n: ectx: property (text), widget (QLabel, kURLRequesterLabel)
+#: rc.cpp:905
+msgid "&Directory of the project:"
+msgstr "परियोजना के डिरेक्टरीः (&D)"
+
+#. i18n: file: dialogs/importprojectdlgbase.ui:50
+#. i18n: ectx: property (toolTip), widget (QLabel, languageLabel)
+#: rc.cpp:911
+msgid "The language of the project"
+msgstr "परियोजना के भाखा"
+
+#. i18n: file: dialogs/importprojectdlgbase.ui:53
+#. i18n: ectx: property (text), widget (QLabel, languageLabel)
+#: rc.cpp:914
+msgid "Language:"
+msgstr "भाखा:"
+
 #. i18n: file: dialogs/diagrampropertiespage.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDiagramProperties)
-#: rc.cpp:902
+#: rc.cpp:917
 msgid "Diagram Properties"
 msgstr "आरेख गुन"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:39
 #. i18n: ectx: property (text), widget (QLabel, ui_labelDiagramName)
-#: rc.cpp:905
+#: rc.cpp:920
 msgid "Name:"
 msgstr "नाम:"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:82
 #. i18n: ectx: property (text), widget (QLabel, ui_labelZoom)
-#: rc.cpp:908
+#: rc.cpp:923
 msgid "Zoom:"
 msgstr "जूमः"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:108
 #. i18n: ectx: property (text), widget (QLabel, ui_labelZoomUnit)
-#: rc.cpp:912
+#: rc.cpp:927
 #, no-c-format
 msgid "%"
 msgstr "%"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, ui_checkBoxShowGrid)
-#: rc.cpp:918
+#: rc.cpp:933
 msgid "Show &grid"
 msgstr "ग्रिड देखाव (&g)"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:160
 #. i18n: ectx: property (text), widget (QCheckBox, ui_snapToGrid)
-#: rc.cpp:921
+#: rc.cpp:936
 msgid "Snap &to grid"
 msgstr "ग्रिड मं स्नेप करव (&t)"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:168
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: rc.cpp:924
+#: rc.cpp:939
 msgid ""
 "Snap the size of the components to be a multiple of the grid spacing.\n"
 "If 'Snap to Grid' is enabled a component will always be aligned with the "
@@ -4292,59 +5092,33 @@ msgstr ""
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:171
 #. i18n: ectx: property (text), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: rc.cpp:928
+#: rc.cpp:943
 msgid "Snap component size"
 msgstr "अवयव आकार स्नैप करव"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:197
 #. i18n: ectx: property (text), widget (QLabel, ui_labelGridSpacing)
-#: rc.cpp:931
+#: rc.cpp:946
 msgid "Grid spacing:  "
 msgstr "ग्रिड स्पेसिंगः"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:207
 #. i18n: ectx: property (text), widget (QLabel, ui_labelX)
-#: rc.cpp:934
+#: rc.cpp:949
 msgid "X"
 msgstr "एक्स"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:243
 #. i18n: ectx: property (text), widget (QLabel, ui_labelY)
-#: rc.cpp:937
+#: rc.cpp:952
 msgid "Y"
 msgstr "वाई"
 
 #. i18n: file: dialogs/diagrampropertiespage.ui:282
 #. i18n: ectx: property (text), widget (QLabel, ui_labeLineWidth)
-#: rc.cpp:940
+#: rc.cpp:955
 msgid "Line width:  "
 msgstr "लकीर के चौड़ाईः"
-
-#. i18n: file: dialogs/importprojectdlgbase.ui:23
-#. i18n: ectx: property (toolTip), widget (QLabel, kURLRequesterLabel)
-#. i18n: file: dialogs/importprojectdlgbase.ui:39
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_kURL)
-#: rc.cpp:946 rc.cpp:952
-msgid "The base directory that contains the project"
-msgstr "बेस डिरेक्टरी जेमां परियोजना हे"
-
-#. i18n: file: dialogs/importprojectdlgbase.ui:26
-#. i18n: ectx: property (text), widget (QLabel, kURLRequesterLabel)
-#: rc.cpp:949
-msgid "&Directory of the project:"
-msgstr "परियोजना के डिरेक्टरीः (&D)"
-
-#. i18n: file: dialogs/importprojectdlgbase.ui:50
-#. i18n: ectx: property (toolTip), widget (QLabel, languageLabel)
-#: rc.cpp:955
-msgid "The language of the project"
-msgstr "परियोजना के भाखा"
-
-#. i18n: file: dialogs/importprojectdlgbase.ui:53
-#. i18n: ectx: property (text), widget (QLabel, languageLabel)
-#: rc.cpp:958
-msgid "Language:"
-msgstr "भाखा:"
 
 #. i18n: file: dialogs/exportallviewsdialogbase.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ExportAllViewsDialogBase)
@@ -4877,12 +5651,6 @@ msgstr "सुरू होए मं डिफाल्ट भाखा"
 #: rc.cpp:1247
 msgid "The Language that Umbrello should start with by default"
 msgstr ""
-
-#. i18n: file: umbrello.kcfg:96
-#. i18n: ectx: label, entry (useFillColor), group (UI Options)
-#: rc.cpp:1250 listpopupmenu.cpp:981
-msgid "Use Fill Color"
-msgstr "भराव रंग उपयोग करव"
 
 #. i18n: file: umbrello.kcfg:97
 #. i18n: ectx: whatsthis, entry (useFillColor), group (UI Options)
@@ -5665,774 +6433,6 @@ msgstr "एसाक एक्सेसर अपने अपन जनरे�
 #, fuzzy
 msgid "Enables/Disables auto generation of association accessors (Ruby)"
 msgstr "एसाक एक्सेसर अपने अपन जनरेट करव (रूबी)"
-
-#: object_factory.cpp:191
-msgctxt "UMLObject name"
-msgid "Name"
-msgstr "नांव"
-
-#: object_factory.cpp:202
-msgid ""
-"This is a reserved keyword for the language of the configured code generator."
-msgstr "कान्फिगर कोड जनरेटर के भाखा बर ए सुरक्छित कुंजीसब्द हे."
-
-#: object_factory.cpp:203
-msgid "Reserved Keyword"
-msgstr "सुरक्छित कुंजीसब्द"
-
-#: main.cpp:36 main.cpp:68
-msgid "Umbrello UML Modeller"
-msgstr "अम्बरैलो यूएमएल माडलर"
-
-#: main.cpp:70
-msgid "(c) 2001 Paul Hensgen, (c) 2002-2006 Umbrello UML Modeller Authors"
-msgstr "(c) 2001 पाल हेसगेन, (c) 2002-2006 अम्बरैलो यूएमएल माडलर लिखइया मन"
-
-#: main.cpp:72
-msgid "Paul Hensgen"
-msgstr "पाल हेसगेन"
-
-#: main.cpp:77
-msgid "File to open"
-msgstr "फाइल जऊन ल खोलना हे"
-
-#: main.cpp:78
-msgid "export diagrams to extension and exit"
-msgstr "डायग्राम ल एक्सटेंसन मं निर्यात कर बाहिर हों"
-
-#: main.cpp:79
-msgid "list available export extensions"
-msgstr ""
-
-#: main.cpp:80
-msgid "the local directory to save the exported diagrams in"
-msgstr "लोकल डिरेक्टरी जहाँ निर्यात करे डायग्राम सहेजे जाय हे"
-
-#: main.cpp:80
-msgid "the directory of the file"
-msgstr "फाइल के डिरेक्टरी"
-
-#: main.cpp:81
-msgid ""
-"keep the tree structure used to store the views in the document in the "
-"target directory"
-msgstr ""
-
-#: umlviewimageexportermodel.cpp:214
-#, kde-format
-msgid "Can not create directory: %1"
-msgstr "डिरेक्टरी: %1 बना नइ सकिस"
-
-#: umlviewimageexportermodel.cpp:232
-msgid "Can not save an empty diagram"
-msgstr "एक खाली आरेख सहेज नइ सकिस"
-
-#: umlviewimageexportermodel.cpp:237
-#, kde-format
-msgid "A problem occurred while saving diagram in %1"
-msgstr "डायग्राम ल %1 मं सहेजे मं एक समस्या आई"
-
-#: umlviewimageexportermodel.cpp:243 umllistview.cpp:476 umldoc.cpp:616
-#: umldoc.cpp:626 umldoc.cpp:643 umldoc.cpp:676 umldoc.cpp:694
-#, kde-format
-msgid "There was a problem saving file: %1"
-msgstr "फाइल सहेजे मं गलती होइसः %1"
-
-#: toolbarstateassociation.cpp:182 toolbarstateassociation.cpp:251
-msgid "Incorrect use of associations."
-msgstr "सम्बद्धता के गलत उपयोग."
-
-#: toolbarstateassociation.cpp:182 toolbarstateassociation.cpp:251
-msgid "Association Error"
-msgstr "सम्बद्धता गलती"
-
-#: listpopupmenu.cpp:286 listpopupmenu.cpp:601
-msgid "Change Font..."
-msgstr "फोंट बदलव..."
-
-#: listpopupmenu.cpp:287
-msgid "Delete Selected Items"
-msgstr "चुने गे चीज मेटाव"
-
-#: listpopupmenu.cpp:293 listpopupmenu.cpp:958
-msgid "Draw as Circle"
-msgstr "वृत्त के जइसन ड्राइंग बनाव"
-
-#: listpopupmenu.cpp:295 listpopupmenu.cpp:960
-msgid "Change into Class"
-msgstr "क्लास मं बदलव"
-
-#: listpopupmenu.cpp:299 listpopupmenu.cpp:966
-msgid "Change into Interface"
-msgstr "इंटरफेस मं बदलव"
-
-#: listpopupmenu.cpp:320 listpopupmenu.cpp:1478
-msgid "Category Type"
-msgstr "वर्ग किसिम"
-
-#: listpopupmenu.cpp:371
-msgid "Move Up"
-msgstr "ऊपर जाव"
-
-#: listpopupmenu.cpp:372
-msgid "Move Down"
-msgstr "नीचे जाव"
-
-#: listpopupmenu.cpp:378
-msgid "Rename Class..."
-msgstr "वर्ग ल नवा नाम देव..."
-
-#: listpopupmenu.cpp:379
-msgid "Rename Object..."
-msgstr "आब्जेक्ट ल नवा नाम देव..."
-
-#: listpopupmenu.cpp:398
-msgctxt "clear note"
-msgid "Clear"
-msgstr "साफ करव"
-
-#: listpopupmenu.cpp:400 listpopupmenu.cpp:487 listpopupmenu.cpp:506
-#: listpopupmenu.cpp:547
-msgid "Change Text..."
-msgstr "पाठ बदलव..."
-
-#: listpopupmenu.cpp:419
-msgid "Change State Name..."
-msgstr "अवस्था नाम बदलव..."
-
-#: listpopupmenu.cpp:430
-msgid "Flip Horizontal"
-msgstr "आड़ा लहुटाव"
-
-#: listpopupmenu.cpp:433
-msgid "Flip Vertical"
-msgstr "खड़ा लहुटाव"
-
-#: listpopupmenu.cpp:450
-msgid "Change Activity Name..."
-msgstr "गतिविधि नाम बदलव..."
-
-#: listpopupmenu.cpp:469
-msgid "Change Object Node Name..."
-msgstr "ओब्जैक्ट नोड नाम बदलव..."
-
-#: listpopupmenu.cpp:485
-msgctxt "clear precondition"
-msgid "Clear"
-msgstr "साफ करव"
-
-#: listpopupmenu.cpp:496
-msgid "Add Interaction Operand"
-msgstr "इंटरेक्सन ओपरेन्ड जोड़व"
-
-#: listpopupmenu.cpp:504
-msgctxt "clear combined fragment"
-msgid "Clear"
-msgstr "साफ करव"
-
-#: listpopupmenu.cpp:514 listpopupmenu.cpp:517 listpopupmenu.cpp:1623
-#: listpopupmenu.cpp:1627
-msgid "Change Multiplicity..."
-msgstr "गुननता बदलव..."
-
-#: listpopupmenu.cpp:520 listpopupmenu.cpp:1631
-msgid "Change Name"
-msgstr " नाम बदलव"
-
-#: listpopupmenu.cpp:523 listpopupmenu.cpp:1615 listpopupmenu.cpp:1637
-msgid "Change Role A Name..."
-msgstr "भूमिका ए नाम बदलव..."
-
-#: listpopupmenu.cpp:526 listpopupmenu.cpp:1619 listpopupmenu.cpp:1638
-msgid "Change Role B Name..."
-msgstr "भूमिका बी नाम बदलव..."
-
-#: listpopupmenu.cpp:540 listpopupmenu.cpp:634
-msgid "New Operation..."
-msgstr "नवा संचालन..."
-
-#: listpopupmenu.cpp:541 listpopupmenu.cpp:1657
-msgid "Select Operation..."
-msgstr "संचालन चुनव..."
-
-#: listpopupmenu.cpp:586 listpopupmenu.cpp:1661
-msgid "Rename..."
-msgstr "नाम बदलव..."
-
-#: listpopupmenu.cpp:604 listpopupmenu.cpp:979
-msgid "Line Color..."
-msgstr "रेखा के रंग..."
-
-#: listpopupmenu.cpp:607
-msgid "Expand All"
-msgstr "सब्बो फैलाव"
-
-#: listpopupmenu.cpp:610
-msgid "Collapse All"
-msgstr "सब्बो समेंटव"
-
-#: listpopupmenu.cpp:613
-msgctxt "duplicate action"
-msgid "Duplicate"
-msgstr "दुहरी प्रति"
-
-#: listpopupmenu.cpp:616
-msgid "Externalize Folder..."
-msgstr "फोल्डर एक्सटर्नलाइज करव..."
-
-#: listpopupmenu.cpp:619
-msgid "Internalize Folder"
-msgstr "फोल्डर इंटरनलाइज करव"
-
-#: listpopupmenu.cpp:622
-msgid "Import Classes..."
-msgstr "क्लास आयात करव..."
-
-#: listpopupmenu.cpp:625
-msgid "Import Project..."
-msgstr "परियोजना आयात करव..."
-
-#: listpopupmenu.cpp:628
-msgid "Reset Label Positions"
-msgstr "लेबल स्थिति रीसेट करव"
-
-#: listpopupmenu.cpp:631
-msgid "New Parameter..."
-msgstr "नवा-पैरामीटर..."
-
-#: listpopupmenu.cpp:637
-msgid "New Attribute..."
-msgstr "नवा गुनधर्म..."
-
-#: listpopupmenu.cpp:640 listpopupmenu.cpp:1563
-msgid "New Template..."
-msgstr "नवा टैम्प्लेट..."
-
-#: listpopupmenu.cpp:643
-msgid "New Literal..."
-msgstr "नवा लिटरल..."
-
-#: listpopupmenu.cpp:646
-msgid "New Entity Attribute..."
-msgstr "नवा एंटिटी गुनधर्म..."
-
-#: listpopupmenu.cpp:649
-msgid "Export as Picture..."
-msgstr "फोटू के रूप मं निर्यात करव..."
-
-#: listpopupmenu.cpp:668
-msgid "Subsystem"
-msgstr "सबसिसटम"
-
-#: listpopupmenu.cpp:698 listpopupmenu.cpp:832
-msgid "Folder"
-msgstr "फोल्डर"
-
-#: listpopupmenu.cpp:727
-msgid "Text Line..."
-msgstr "पाठ के पंक्ति..."
-
-#: listpopupmenu.cpp:829
-msgctxt "new container menu"
-msgid "New"
-msgstr "नवा"
-
-#: listpopupmenu.cpp:833
-msgctxt "new class menu item"
-msgid "Class"
-msgstr "वर्ग"
-
-#: listpopupmenu.cpp:914
-msgid "Public Only"
-msgstr "सिरिफ सार्वजनिक"
-
-#: listpopupmenu.cpp:918
-msgid "Operation Signature"
-msgstr "संचालन दसखत"
-
-#: listpopupmenu.cpp:923
-msgid "Attribute Signature"
-msgstr "गुनधर्म दसखत"
-
-#: listpopupmenu.cpp:943
-msgctxt "new classifier menu"
-msgid "New"
-msgstr "नवा"
-
-#: listpopupmenu.cpp:946
-msgid "Attribute..."
-msgstr "विसेसता"
-
-#: listpopupmenu.cpp:947
-msgid "Operation..."
-msgstr "संचालन..."
-
-#: listpopupmenu.cpp:948
-msgid "Template..."
-msgstr "टैम्प्लेट..."
-
-#: listpopupmenu.cpp:962
-msgid "Refactor"
-msgstr "रीफैक्टर"
-
-#: listpopupmenu.cpp:963
-msgid "View Code"
-msgstr "कोड देखाव"
-
-#: listpopupmenu.cpp:978
-msgctxt "color menu"
-msgid "Color"
-msgstr "रंग"
-
-#: listpopupmenu.cpp:980
-msgid "Fill Color..."
-msgstr "भराव रंग..."
-
-#: listpopupmenu.cpp:1075
-msgctxt "new sub menu"
-msgid "New"
-msgstr "नवा"
-
-#: listpopupmenu.cpp:1124
-msgid "Actor..."
-msgstr "कर्ता..."
-
-#: listpopupmenu.cpp:1125
-msgid "Use Case..."
-msgstr "केस उपयोग करव"
-
-#: listpopupmenu.cpp:1129
-msgctxt "new class menu item"
-msgid "Class..."
-msgstr "वर्ग..."
-
-#: listpopupmenu.cpp:1130
-msgid "Interface..."
-msgstr "इंटरफेस..."
-
-#: listpopupmenu.cpp:1131
-msgid "Datatype..."
-msgstr "डाटाटाइप..."
-
-#: listpopupmenu.cpp:1132
-msgid "Enum..."
-msgstr "ईन्यूम"
-
-#: listpopupmenu.cpp:1133
-msgid "Package..."
-msgstr "पैकेज..."
-
-#: listpopupmenu.cpp:1139
-msgctxt "add new state"
-msgid "State..."
-msgstr "स्थिति..."
-
-#: listpopupmenu.cpp:1145 listpopupmenu.cpp:1187
-msgid "Activity..."
-msgstr "काम..."
-
-#: listpopupmenu.cpp:1150
-msgid "Subsystem..."
-msgstr "सबसिसटम..."
-
-#: listpopupmenu.cpp:1151
-msgid "Component..."
-msgstr "अवयव..."
-
-#: listpopupmenu.cpp:1152
-msgid "Artifact..."
-msgstr "सिल्पतथ्य..."
-
-#: listpopupmenu.cpp:1155
-msgid "Node..."
-msgstr "नोड..."
-
-#: listpopupmenu.cpp:1158
-msgid "Entity..."
-msgstr "एंटिटी..."
-
-#: listpopupmenu.cpp:1159
-msgid "Category..."
-msgstr "वर्ग..."
-
-#: listpopupmenu.cpp:1163
-msgid "Object..."
-msgstr "चीज..."
-
-#: listpopupmenu.cpp:1167
-msgid "Attribute"
-msgstr "विसेसता"
-
-#: listpopupmenu.cpp:1169 listpopupmenu.cpp:1173
-msgid "Template"
-msgstr "टेम्पलेट"
-
-#: listpopupmenu.cpp:1176
-msgid "Entity Attribute..."
-msgstr "एंटिटी गुनधर्म..."
-
-#: listpopupmenu.cpp:1183
-msgid "Enum Literal..."
-msgstr "ईन्यूम लिटरल..."
-
-#: listpopupmenu.cpp:1611
-msgid "Delete Anchor"
-msgstr "वकर मेटाव"
-
-#: listpopupmenu.cpp:1636
-msgid "Change Association Name..."
-msgstr "सम्बद्धता नाम बदलव..."
-
-#: listpopupmenu.cpp:1686
-msgid "Undo"
-msgstr "पहिली जइसन"
-
-#: listpopupmenu.cpp:1687
-msgid "Redo"
-msgstr "दुहराव"
-
-#: listpopupmenu.cpp:1693
-msgid "Clear Diagram"
-msgstr "आरेख साफ करव"
-
-#: listpopupmenu.cpp:1696
-msgid "Snap to Grid"
-msgstr "ग्रिड मं स्नेप करव"
-
-#: listpopupmenu.cpp:1698
-msgid "Show Grid"
-msgstr "ग्रिड देखाव"
-
-#: listpopupmenu.cpp:1710
-msgid "Disjoint(Specialisation)"
-msgstr "डिस्जाइन्ट(विसेसग्यता)"
-
-#: listpopupmenu.cpp:1711
-msgid "Overlapping(Specialisation)"
-msgstr "ओवरलेपिंग (स्पेसियलाइजेसन)"
-
-#: listpopupmenu.cpp:1712
-msgid "Union"
-msgstr "संघ"
-
-#: umllistviewitem.cpp:525 umllistviewitem.cpp:558 umllistviewitem.cpp:589
-#: umllistviewitem.cpp:616
-msgid "Rename canceled"
-msgstr "नाम बदलना खारिज"
-
-#: umllistviewitem.cpp:649
-#, kde-format
-msgid "Renaming an item of listview type %1 is not yet implemented."
-msgstr "कोनो चीज के सूची दृस्य किसिम %1 के नाम बदले जाना अभी तक लागू नइ हे."
-
-#: umllistviewitem.cpp:650
-msgid "Function Not Implemented"
-msgstr "फंक्सन लागू नइ हे"
-
-#: umllistviewitem.cpp:663
-msgid ""
-"The name you entered was invalid.\n"
-"Renaming process has been canceled."
-msgstr ""
-"जऊन नाम आप मन घुसाय हो अवैध हे.\n"
-"नवा नाम दे के काम खारिज करे गे हे."
-
-#: umllistviewitem.cpp:664 umllistview.cpp:2188
-msgid "Name Not Valid"
-msgstr "नाम वैध नइ हे"
-
-#: umllistview.cpp:437
-msgid "Externalize Folder"
-msgstr "एक्सटर्नलाइज फोल्डर"
-
-#: umllistview.cpp:477 umldoc.cpp:616 umldoc.cpp:626 umldoc.cpp:643
-#: umldoc.cpp:676 umldoc.cpp:694 umldoc.cpp:701
-msgid "Save Error"
-msgstr "सहेजे मं गलती"
-
-#: umllistview.cpp:506
-msgid "Enter Model Name"
-msgstr "माडल नाम भरव"
-
-#: umllistview.cpp:507
-msgid "Enter the new name of the model:"
-msgstr "माडल के नवा नाम भरव:"
-
-#: umllistview.cpp:1234
-msgid "Views"
-msgstr "दृस्य"
-
-#: umllistview.cpp:2187
-msgid ""
-"The name you entered was invalid.\n"
-"Creation process has been canceled."
-msgstr ""
-"जऊन नाम आप मन घुसाय हो अवैध हे.\n"
-"बनाए के काम खारिज करे गे हे."
-
-#: umllistview.cpp:2197 umldoc.cpp:1353
-msgid ""
-"The name you entered was not unique.\n"
-"Is this what you wanted?"
-msgstr ""
-"जऊन नाम आप मन घुसाय हो बेजोड़ नइ हे.\n"
-"का यही आप मन चाहथो ?"
-
-#: umllistview.cpp:2198 umldoc.cpp:1354
-msgid "Use Name"
-msgstr "नाम उपयोग करव"
-
-#: umllistview.cpp:2198 umldoc.cpp:1354
-msgid "Enter New Name"
-msgstr "नवा नाम भरव"
-
-#: umllistview.cpp:2204 umllistview.cpp:2466
-msgid ""
-"The name you entered was not unique.\n"
-"Creation process has been canceled."
-msgstr ""
-"जऊन नाम आप मन घुसाय हो बेजोड़ नइ हे.\n"
-"बनाए के काम खारिज करे गे."
-
-#: umllistview.cpp:2424 umllistview.cpp:2441 umllistview.cpp:2456
-#: umllistview.cpp:2486
-msgid "Creation canceled"
-msgstr "बनाइस जाना खारिज"
-
-#: umllistview.cpp:2697
-msgid "Loading listview..."
-msgstr "सूचीदृस्य लोड करत हे..."
-
-#: umllistview.cpp:3072
-msgid "The folder must be emptied before it can be deleted."
-msgstr "फोल्डर ल मिटा सकें एखर बर पहिली एला खाली करना होही."
-
-#: umllistview.cpp:3073
-msgid "Folder Not Empty"
-msgstr "फोल्डर खाली नइ हे"
-
-#: umlviewimageexporter.cpp:71
-msgid "Exporting view..."
-msgstr "दृस्य निर्यात करत हे..."
-
-#: umlviewimageexporter.cpp:75
-msgid "An error happened when exporting the image:\n"
-msgstr "फोटू ल निर्यात करे के समय एक गलती होइस:\n"
-
-#: umlviewimageexporter.cpp:102
-#, kde-format
-msgid ""
-"The selected file %1 exists.\n"
-"Do you want to overwrite it?"
-msgstr ""
-"फाइल %1 पहिली से ही मौजूद हे. \n"
-"का आप मन एखर ऊपर लिखना चाहथो ?"
-
-#: umlviewimageexporter.cpp:103
-msgid "File Already Exists"
-msgstr "फाइल पहिली से ही अस्तित्व मं हे. "
-
-#: operation.cpp:273
-msgid "new_parameter"
-msgstr "नवा-पैरामीटर"
-
-#: umldoc.cpp:87 umldoc.cpp:1878
-msgid "UML Model"
-msgstr "यूएमएल माडल"
-
-#: umldoc.cpp:120
-msgid "Logical View"
-msgstr "लाजिकल दृस्य"
-
-#: umldoc.cpp:121
-msgid "Use Case View"
-msgstr "केस दृस्य उपयोग करव"
-
-#: umldoc.cpp:122
-msgid "Component View"
-msgstr "अवयव दृस्य"
-
-#: umldoc.cpp:123
-msgid "Deployment View"
-msgstr "डिपोलायमेंट दृस्य"
-
-#: umldoc.cpp:124
-msgid "Entity Relationship Model"
-msgstr "एंटिटी रिलेसनसिप माडल"
-
-#: umldoc.cpp:131 umldoc.cpp:343
-msgid "Datatypes"
-msgstr "डाटाटाइप्स"
-
-#: umldoc.cpp:271
-msgid ""
-"The current file has been modified.\n"
-"Do you want to save it?"
-msgstr ""
-"अभी हाल के फाइल सुधार दे गे हे.\n"
-" का आप मन एला सहेजना चाहथो ?"
-
-#: umldoc.cpp:272
-msgctxt "warning message"
-msgid "Warning"
-msgstr "चेतावनी"
-
-#: umldoc.cpp:418
-#, kde-format
-msgid "The file %1 does not exist."
-msgstr "फाइल %1 अस्तित्व मं नइ हे."
-
-#: umldoc.cpp:440
-#, kde-format
-msgid "The file %1 seems to be corrupted."
-msgstr "फाइल %1 लगथे  कि खराब हे."
-
-#: umldoc.cpp:477 umldoc.cpp:489 umldoc.cpp:515
-#, kde-format
-msgid "There was no XMI file found in the compressed file %1."
-msgstr "संपीडित फाइल %1 तिर कोनो एक्सएमआई फाइल नइ मिलिस."
-
-#: umldoc.cpp:503
-#, kde-format
-msgid "There was a problem loading the extracted file: %1"
-msgstr "निकाली गे फाइल लोड करे मं समस्या आईः %1"
-
-#: umldoc.cpp:527 umldoc.cpp:545
-#, kde-format
-msgid "There was a problem loading file: %1"
-msgstr "फाइल लोड करे मं समस्या आईः %1"
-
-#: umldoc.cpp:701
-#, kde-format
-msgid "There was a problem uploading file: %1"
-msgstr "फाइल अपलोड करे मं गलती होइसः %1"
-
-#: umldoc.cpp:1154
-msgid "use case diagram"
-msgstr "केस आरेख उपयोग करव"
-
-#: umldoc.cpp:1157
-msgid "class diagram"
-msgstr "वर्ग आरेख"
-
-#: umldoc.cpp:1160
-msgid "sequence diagram"
-msgstr "आरेख अनुक्रम"
-
-#: umldoc.cpp:1163
-msgid "collaboration diagram"
-msgstr "कोलाबरेसन आरेख"
-
-#: umldoc.cpp:1166
-msgid "state diagram"
-msgstr "आरेख अवस्था"
-
-#: umldoc.cpp:1169
-msgid "activity diagram"
-msgstr "काम आरेख"
-
-#: umldoc.cpp:1172
-msgid "component diagram"
-msgstr "आरेख अवयव"
-
-#: umldoc.cpp:1175
-msgid "deployment diagram"
-msgstr "डिपोलायमेंट आरेख"
-
-#: umldoc.cpp:1178
-msgid "entity relationship diagram"
-msgstr "एंटिटी रिलेसनसिप डायग्राम"
-
-#: umldoc.cpp:1235
-msgctxt "diagram name"
-msgid "Name"
-msgstr "नांव"
-
-#: umldoc.cpp:1243 umldoc.cpp:1284
-msgid "That is an invalid name for a diagram."
-msgstr "आरेख बर ए एक अवैध नाम हे."
-
-#: umldoc.cpp:1257 umldoc.cpp:1293
-msgid "A diagram is already using that name."
-msgstr "एक आरेख पहिली ही ओ नाम के उपयोग करत हे."
-
-#: umldoc.cpp:1278
-msgctxt "renaming diagram"
-msgid "Name"
-msgstr "नांव"
-
-#: umldoc.cpp:1309
-msgctxt "renaming uml object"
-msgid "Name"
-msgstr "नांव"
-
-#: umldoc.cpp:1343
-msgctxt "renaming child uml object"
-msgid "Name"
-msgstr "नांव"
-
-#: umldoc.cpp:1404
-#, kde-format
-msgid "Are you sure you want to delete diagram %1?"
-msgstr "का आप मन सही मं आरेख %1 ल मिटाना चाहथो ?"
-
-#: umldoc.cpp:1405
-msgid "Delete Diagram"
-msgstr "आरेख मेटाव"
-
-#: umldoc.cpp:1934
-msgid "Setting up the document..."
-msgstr "कागद सेटिंग करत हे..."
-
-#: umldoc.cpp:1963
-msgid "Resolving object references..."
-msgstr "ओब्जैक्ट रेफरेंसेस हल करत हे..."
-
-#: umldoc.cpp:2014
-msgid "Loading UML elements..."
-msgstr "यूएमएल अवयव लोड करत हे..."
-
-#: umldoc.cpp:2209
-msgid "Loading diagrams..."
-msgstr "आरेख लोड करत हे..."
-
-#: umldoc.cpp:2703
-#, kde-format
-msgid "/autosave%1"
-msgstr "/अपने अपन-सहेजव%1"
-
-#: umlview.cpp:317 umlview.cpp:387
-#, kde-format
-msgid "Diagram: %2 Page %1"
-msgstr "आरेखः %2 पेज %1"
-
-#: umlview.cpp:1057
-msgid "Change Line Color"
-msgstr "लकीर रंग बदलव"
-
-#: umlview.cpp:1086
-msgid "Change Fill Color"
-msgstr "भराव रंग बदलव"
-
-#: umlview.cpp:2795
-msgid "Enter Diagram Name"
-msgstr "आरेख नाम भरव"
-
-#: umlview.cpp:2796
-msgid "Enter the new name of the diagram:"
-msgstr "आरेख के नवा नाम भरव:"
-
-#: umlview.cpp:2957
-msgid ""
-"You are about to delete the entire diagram.\n"
-"Are you sure?"
-msgstr ""
-"आप पूरा आरेख ल मेटाय वाले हे.\n"
-"का आप मन सुनिस्चित हो?"
-
-#: umlview.cpp:2959
-msgid "Delete Diagram?"
-msgstr "आरेख मेटाव?"
 
 #~ msgid "Resizing Widget."
 #~ msgstr "विजेट ल नवा आकार देना."

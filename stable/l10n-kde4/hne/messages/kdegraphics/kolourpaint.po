@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kolourpaint4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-07 04:02+0200\n"
+"POT-Creation-Date: 2011-07-05 04:35+0200\n"
 "PO-Revision-Date: 2009-02-26 15:35+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -58,11 +58,6 @@ msgstr "चपटा करव"
 msgid "Reduce to Grayscale"
 msgstr "काला-सफेद मं कम करव"
 
-#: commands/imagelib/effects/kpEffectHSVCommand.cpp:37
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:116
-msgid "Hue, Saturation, Value"
-msgstr "वर्न, संतृप्ति, मूल्य"
-
 #: commands/imagelib/effects/kpEffectInvertCommand.cpp:50
 #: commands/imagelib/effects/kpEffectInvertCommand.cpp:58
 msgid "Invert Colors"
@@ -72,6 +67,16 @@ msgstr "रंग उलटव"
 #: dialogs/imagelib/effects/kpEffectsDialog.cpp:117
 msgid "Invert"
 msgstr "उलटव"
+
+#: commands/imagelib/effects/kpEffectToneEnhanceCommand.cpp:41
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:115
+msgid "Histogram Equalizer"
+msgstr "हिस्टोग्राम इक्वलाइजर"
+
+#: commands/imagelib/effects/kpEffectHSVCommand.cpp:37
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:116
+msgid "Hue, Saturation, Value"
+msgstr "वर्न, संतृप्ति, मूल्य"
 
 #: commands/imagelib/effects/kpEffectReduceColorsCommand.cpp:57
 msgid "Reduce to Monochrome (Dithered)"
@@ -89,11 +94,6 @@ msgstr "256 रंग मं कम करव (डिथर्ड)"
 msgid "Reduce to 256 Color"
 msgstr "256 रंग मं कम करव"
 
-#: commands/imagelib/effects/kpEffectToneEnhanceCommand.cpp:41
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:115
-msgid "Histogram Equalizer"
-msgstr "हिस्टोग्राम इक्वलाइजर"
-
 #: commands/imagelib/transforms/kpTransformFlipCommand.cpp:69
 msgid "Flip"
 msgstr "लहुटाव"
@@ -109,6 +109,14 @@ msgstr "आड़ा लहुटाव"
 #: commands/imagelib/transforms/kpTransformFlipCommand.cpp:76
 msgid "Flip vertically"
 msgstr "खड़ा लहुटाव"
+
+#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:72
+msgid "Rotate"
+msgstr "घुमाव"
+
+#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:75
+msgid "Skew"
+msgstr "मोड़ें"
 
 #: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:110
 #: commands/tools/selection/kpToolSelectionResizeScaleCommand.cpp:62
@@ -136,13 +144,14 @@ msgstr "स्केल"
 msgid "Smooth Scale"
 msgstr "मृदु स्केल"
 
-#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:72
-msgid "Rotate"
-msgstr "घुमाव"
+#: commands/tools/kpToolColorPickerCommand.cpp:61
+#: tools/kpToolColorPicker.cpp:47
+msgid "Color Picker"
+msgstr "रंग चुनइया"
 
-#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:75
-msgid "Skew"
-msgstr "मोड़ें"
+#: commands/tools/kpToolFloodFillCommand.cpp:78 tools/kpToolFloodFill.cpp:55
+msgid "Flood Fill"
+msgstr "पूरा भरव"
 
 #: commands/kpCommandHistoryBase.cpp:454
 #, kde-format
@@ -191,15 +200,6 @@ msgid "%1 more item"
 msgid_plural "%1 more items"
 msgstr[0] "%1 अउ जादा चीज"
 msgstr[1] "%1 अउ जादा चीज"
-
-#: commands/tools/kpToolColorPickerCommand.cpp:61
-#: tools/kpToolColorPicker.cpp:47
-msgid "Color Picker"
-msgstr "रंग चुनइया"
-
-#: commands/tools/kpToolFloodFillCommand.cpp:78 tools/kpToolFloodFill.cpp:55
-msgid "Flood Fill"
-msgstr "पूरा भरव"
 
 #: dialogs/imagelib/effects/kpEffectsDialog.cpp:91
 #, fuzzy
@@ -893,12 +893,6 @@ msgstr "फोटू ल सहेज नइ सकिस - अपलोड क�
 msgid "Set as Image"
 msgstr "फोटू अइसन सेट करव"
 
-#: imagelib/transforms/kpTransformCrop_ImageSelection.cpp:248
-#: mainWindow/kpMainWindow_Image.cpp:314 mainWindow/kpMainWindow_Edit.cpp:367
-#: tools/selection/image/kpAbstractImageSelectionTool.cpp:81
-msgid "Selection: Create"
-msgstr "चयन: बनाव"
-
 #: imagelib/transforms/kpTransformAutoCrop.cpp:386
 msgid "Remove Internal B&order"
 msgstr "अंदर के किनारा मेटाव (&o)"
@@ -942,94 +936,11 @@ msgctxt "@title:window"
 msgid "Cannot Autocrop"
 msgstr "अपने अपन कांट-छांट नइ कर सकिस"
 
-#: kolourpaint.cpp:49
-msgid "KolourPaint"
-msgstr "कलर-पेंट"
-
-#: kolourpaint.cpp:51
-msgid "Paint Program for KDE"
-msgstr "केडीई बर पेंट प्रोग्राम"
-
-#: kolourpaint.cpp:54
-msgid "To obtain support, please visit the website."
-msgstr "समर्थन प्राप्त करे बर किरपा करके, जालस्थल मं जाव."
-
-#: kolourpaint.cpp:65
-msgid "Clarence Dang"
-msgstr "क्लेरेंस डैंग"
-
-#: kolourpaint.cpp:65
-msgid "Project Founder"
-msgstr "परियोजना संस्थापक"
-
-#: kolourpaint.cpp:66
-msgid "Thurston Dang"
-msgstr "टर्स्टन डैंग"
-
-#: kolourpaint.cpp:66
-msgid "Chief Investigator"
-msgstr "मुख्य अनुसन्धानकर्ता"
-
-#: kolourpaint.cpp:68
-msgid "Martin Koller"
-msgstr "मार्टिन कोलर"
-
-#: kolourpaint.cpp:68
-msgid "Scanning Support, Alpha Support, Current Maintainer"
-msgstr ""
-
-#: kolourpaint.cpp:69
-msgid "Kristof Borrey"
-msgstr "क्रिस्टाफ बोरे"
-
-#: kolourpaint.cpp:69 kolourpaint.cpp:72 kolourpaint.cpp:73
-msgid "Icons"
-msgstr "चिनहा"
-
-#: kolourpaint.cpp:70
-msgid "Tasuku Suzuki"
-msgstr ""
-
-#: kolourpaint.cpp:70 kolourpaint.cpp:71
-msgid "InputMethod Support"
-msgstr "इनपुटमेथड समर्थन"
-
-#: kolourpaint.cpp:71
-msgid "Kazuki Ohta"
-msgstr "काजुकी ओथा"
-
-#: kolourpaint.cpp:72
-msgid "Nuno Pinheiro"
-msgstr "नुनो पिन्हेरो"
-
-#: kolourpaint.cpp:73
-msgid "Danny Allen"
-msgstr "डैनी एलन"
-
-#: kolourpaint.cpp:74
-msgid "Mike Gashler"
-msgstr "माइक गैसलर"
-
-#: kolourpaint.cpp:74
-msgid "Image Effects"
-msgstr "फोटू प्रभाव"
-
-#: kolourpaint.cpp:76
-msgid "Laurent Montel"
-msgstr "लारेंट मोंटेल"
-
-#: kolourpaint.cpp:76
-msgid "KDE 4 Porting"
-msgstr "केडीई ४ मं पोर्ट करना"
-
-#: kolourpaint.cpp:80
-msgid ""
-"Thanks to the many others who have helped to make this program possible."
-msgstr "बहुत से दूसर ल घलोक धन्यवाद जऊन ए प्रोग्राम ल संभव बनाए मं मदद की."
-
-#: kolourpaint.cpp:85
-msgid "Image file to open"
-msgstr "फोटू फाइल जऊन ल खोलना हे"
+#: imagelib/transforms/kpTransformCrop_ImageSelection.cpp:248
+#: mainWindow/kpMainWindow_Edit.cpp:367 mainWindow/kpMainWindow_Image.cpp:314
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:81
+msgid "Selection: Create"
+msgstr "चयन: बनाव"
 
 #: layers/selections/text/kpTextSelection.cpp:136
 #: tools/selection/text/kpToolText.cpp:59
@@ -1074,81 +985,6 @@ msgstr ""
 msgid "Untitled"
 msgstr "बिना सीर्सक"
 
-#: mainWindow/kpMainWindow_Image.cpp:119
-msgid "R&esize / Scale..."
-msgstr "आकार बदलव / स्केल करव... (&e)"
-
-#: mainWindow/kpMainWindow_Image.cpp:124
-msgid "Se&t as Image (Crop)"
-msgstr "फोटू ल अइसन सेट करव (कांट-छांट) (&t)"
-
-#: mainWindow/kpMainWindow_Image.cpp:134
-#, fuzzy
-#| msgid "&Vertical (upside-down)"
-msgid "&Flip (upside down)"
-msgstr "खड़ा (ऊपर के नीचे) (&V)"
-
-#: mainWindow/kpMainWindow_Image.cpp:139
-#, fuzzy
-#| msgid "Flip horizontally"
-msgid "Mirror (horizontally)"
-msgstr "आड़ा लहुटाव"
-
-#: mainWindow/kpMainWindow_Image.cpp:144
-msgid "&Rotate..."
-msgstr "घुमाव... (&R)"
-
-#: mainWindow/kpMainWindow_Image.cpp:150
-msgid "Rotate &Left"
-msgstr "डेरी घुमाव (&L)"
-
-#: mainWindow/kpMainWindow_Image.cpp:156
-msgid "Rotate Righ&t"
-msgstr "जेवनी घुमाव (&t)"
-
-#: mainWindow/kpMainWindow_Image.cpp:162
-msgid "S&kew..."
-msgstr "मोड़ें...(&k)"
-
-#: mainWindow/kpMainWindow_Image.cpp:167
-msgid "Reduce to Mo&nochrome (Dithered)"
-msgstr "मोनोक्रोम मं कम करव (डिथर्ड) (&n)"
-
-#: mainWindow/kpMainWindow_Image.cpp:171
-msgid "Reduce to &Grayscale"
-msgstr "काला-सफेद मं कम करव (&G)"
-
-#: mainWindow/kpMainWindow_Image.cpp:175
-msgid "&Invert Colors"
-msgstr "रंग उलटव (&I)"
-
-#: mainWindow/kpMainWindow_Image.cpp:180
-msgid "C&lear"
-msgstr "साफ करव (&l)"
-
-#: mainWindow/kpMainWindow_Image.cpp:185
-msgid "&More Effects..."
-msgstr "अधिक प्रभाव... (&M)"
-
-#: mainWindow/kpMainWindow_Image.cpp:225
-msgctxt ""
-"Image/Selection Menu caption - make sure the translation has the same accel "
-"as the Select&ion translation"
-msgid "&Image"
-msgstr "फोटू (&I)"
-
-#: mainWindow/kpMainWindow_Image.cpp:229
-msgctxt ""
-"Image/Selection Menu caption - make sure that translation has the same accel "
-"as the &Image translation"
-msgid "Select&ion"
-msgstr "चयन (&i)"
-
-#: mainWindow/kpMainWindow_Image.cpp:316 mainWindow/kpMainWindow_Edit.cpp:366
-#: mainWindow/kpMainWindow_Edit.cpp:441 tools/selection/text/kpToolText.cpp:93
-msgid "Text: Create Box"
-msgstr "पाठ: डब्बा बनाव "
-
 #: mainWindow/kpMainWindow_Text.cpp:60
 msgid "Font Family"
 msgstr "फोंट कुटुंब"
@@ -1184,59 +1020,6 @@ msgstr "छोटेफोटू मोड मं जूम करव (&m)"
 #: mainWindow/kpMainWindow_View_Thumbnail.cpp:90
 msgid "Enable Thumbnail &Rectangle"
 msgstr "छोटेफोटू चतुर्भुज सक्छम करव (&R)"
-
-#: mainWindow/kpMainWindow_View.cpp:76
-msgid "Show &Grid"
-msgstr "ग्रिड देखाव (&G)"
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:91
-#: mainWindow/kpMainWindow_StatusBar.cpp:284
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:113
-msgid "&Zoom"
-msgstr "जूम (&Z)"
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:194
-#, kde-format
-msgid ""
-"Setting the zoom level to a value that is not a multiple of 100% results in "
-"imprecise editing and redraw glitches.\n"
-"Do you really want to set to zoom level to %1%?"
-msgstr ""
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:199
-#, kde-format
-msgid "Set Zoom Level to %1%"
-msgstr "जूम स्तर ल %1% मं सेट करव"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:149
-#, kde-format
-msgid "%1,%2"
-msgstr "%1,%2"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:156
-#, kde-format
-msgid "%1,%2 - %3,%4"
-msgstr "%1,%2 - %3,%4"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:199
-#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
-#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
-#, kde-format
-msgid "%1x%2"
-msgstr "%1x%2"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:258
-#, kde-format
-msgid "%1bpp"
-msgstr "%1 बीपीपी"
-
-#: mainWindow/kpMainWindow_Settings.cpp:67
-msgid "Show &Path"
-msgstr "पथ देखाव (&P)"
 
 #: mainWindow/kpMainWindow_Colors.cpp:59
 msgid "Use KolourPaint Defaults"
@@ -1383,6 +1166,12 @@ msgstr "फाइल मन मनकल करव... (&o)"
 #: mainWindow/kpMainWindow_Edit.cpp:117
 msgid "Paste &From File..."
 msgstr "फाइल मं से चिपकाव... (&F)"
+
+#: mainWindow/kpMainWindow_Edit.cpp:366 mainWindow/kpMainWindow_Edit.cpp:441
+#: mainWindow/kpMainWindow_Image.cpp:316
+#: tools/selection/text/kpToolText.cpp:93
+msgid "Text: Create Box"
+msgstr "पाठ: डब्बा बनाव "
 
 #: mainWindow/kpMainWindow_Edit.cpp:447
 msgid "Text: Paste"
@@ -1550,6 +1339,108 @@ msgstr ""
 "कागद \"%1\" बदल दे गे हे.\n"
 "का आप मन एला सहेजना चाहू?"
 
+#: mainWindow/kpMainWindow_Image.cpp:119
+msgid "R&esize / Scale..."
+msgstr "आकार बदलव / स्केल करव... (&e)"
+
+#: mainWindow/kpMainWindow_Image.cpp:124
+msgid "Se&t as Image (Crop)"
+msgstr "फोटू ल अइसन सेट करव (कांट-छांट) (&t)"
+
+#: mainWindow/kpMainWindow_Image.cpp:134
+#, fuzzy
+#| msgid "&Vertical (upside-down)"
+msgid "&Flip (upside down)"
+msgstr "खड़ा (ऊपर के नीचे) (&V)"
+
+#: mainWindow/kpMainWindow_Image.cpp:139
+#, fuzzy
+#| msgid "Flip horizontally"
+msgid "Mirror (horizontally)"
+msgstr "आड़ा लहुटाव"
+
+#: mainWindow/kpMainWindow_Image.cpp:144
+msgid "&Rotate..."
+msgstr "घुमाव... (&R)"
+
+#: mainWindow/kpMainWindow_Image.cpp:150
+msgid "Rotate &Left"
+msgstr "डेरी घुमाव (&L)"
+
+#: mainWindow/kpMainWindow_Image.cpp:156
+msgid "Rotate Righ&t"
+msgstr "जेवनी घुमाव (&t)"
+
+#: mainWindow/kpMainWindow_Image.cpp:162
+msgid "S&kew..."
+msgstr "मोड़ें...(&k)"
+
+#: mainWindow/kpMainWindow_Image.cpp:167
+msgid "Reduce to Mo&nochrome (Dithered)"
+msgstr "मोनोक्रोम मं कम करव (डिथर्ड) (&n)"
+
+#: mainWindow/kpMainWindow_Image.cpp:171
+msgid "Reduce to &Grayscale"
+msgstr "काला-सफेद मं कम करव (&G)"
+
+#: mainWindow/kpMainWindow_Image.cpp:175
+msgid "&Invert Colors"
+msgstr "रंग उलटव (&I)"
+
+#: mainWindow/kpMainWindow_Image.cpp:180
+msgid "C&lear"
+msgstr "साफ करव (&l)"
+
+#: mainWindow/kpMainWindow_Image.cpp:185
+msgid "&More Effects..."
+msgstr "अधिक प्रभाव... (&M)"
+
+#: mainWindow/kpMainWindow_Image.cpp:225
+msgctxt ""
+"Image/Selection Menu caption - make sure the translation has the same accel "
+"as the Select&ion translation"
+msgid "&Image"
+msgstr "फोटू (&I)"
+
+#: mainWindow/kpMainWindow_Image.cpp:229
+msgctxt ""
+"Image/Selection Menu caption - make sure that translation has the same accel "
+"as the &Image translation"
+msgid "Select&ion"
+msgstr "चयन (&i)"
+
+#: mainWindow/kpMainWindow_Settings.cpp:67
+msgid "Show &Path"
+msgstr "पथ देखाव (&P)"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:149
+#, kde-format
+msgid "%1,%2"
+msgstr "%1,%2"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:156
+#, kde-format
+msgid "%1,%2 - %3,%4"
+msgstr "%1,%2 - %3,%4"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:199
+#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
+#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
+#, kde-format
+msgid "%1x%2"
+msgstr "%1x%2"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:258
+#, kde-format
+msgid "%1bpp"
+msgstr "%1 बीपीपी"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:284
+#: mainWindow/kpMainWindow_View_Zoom.cpp:91
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
+
 #: mainWindow/kpMainWindow_Tools.cpp:136
 msgid "Previous Tool Option (Group #1)"
 msgstr "पिछला औजार विकल्प (समूह #1)"
@@ -1589,6 +1480,27 @@ msgstr ""
 "रिस्पांसिवनेस ल कम कर सकथे  अउ दुसरा अनुपरयोग रिसोर्स्सों मं समस्या पैदा कर सकथे .</"
 "p><p>का आप मन सही मं फोटू ल नवा आकार देना चाहथो ?</p></qt>"
 
+#: mainWindow/kpMainWindow_View.cpp:76
+msgid "Show &Grid"
+msgstr "ग्रिड देखाव (&G)"
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:113
+msgid "&Zoom"
+msgstr "जूम (&Z)"
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:194
+#, kde-format
+msgid ""
+"Setting the zoom level to a value that is not a multiple of 100% results in "
+"imprecise editing and redraw glitches.\n"
+"Do you really want to set to zoom level to %1%?"
+msgstr ""
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:199
+#, kde-format
+msgid "Set Zoom Level to %1%"
+msgstr "जूम स्तर ल %1% मं सेट करव"
+
 #: tools/flow/kpToolBrush.cpp:35
 msgid "Brush"
 msgstr "ब्रुस"
@@ -1626,11 +1538,11 @@ msgid "Click or drag to erase."
 msgstr "मेटाय बर किलिक करव या खींचव."
 
 #: tools/flow/kpToolFlowBase.cpp:302 tools/kpToolColorPicker.cpp:112
-#: tools/kpToolFloodFill.cpp:144 tools/kpToolZoom.cpp:207
-#: tools/polygonal/kpToolPolygonalBase.cpp:437
+#: tools/kpToolZoom.cpp:207 tools/polygonal/kpToolPolygonalBase.cpp:437
 #: tools/rectangular/kpToolRectangularBase.cpp:356
 #: tools/selection/kpAbstractSelectionTool.cpp:260
 #: tools/selection/kpAbstractSelectionTool.cpp:518
+#: tools/kpToolFloodFill.cpp:144
 msgid "Let go of all the mouse buttons."
 msgstr "सब्बो मुसुवा बटन मन ल जाय देव."
 
@@ -1662,14 +1574,6 @@ msgstr "ये आप मन ल फोटू मं से रंग चुन�
 msgid "Click to select a color."
 msgstr "रंग चुने बर किलिक करव."
 
-#: tools/kpToolFloodFill.cpp:55
-msgid "Fills regions in the image"
-msgstr "फोटू मं छेत्रों ल भरथे "
-
-#: tools/kpToolFloodFill.cpp:75
-msgid "Click to fill a region."
-msgstr "छेत्र मं भरे बर किलिक करव."
-
 #: tools/kpToolZoom.cpp:73
 msgid "Zoom"
 msgstr "जूम"
@@ -1682,19 +1586,6 @@ msgstr "फोटू मं जूम ए अउ जूम आउट हों"
 msgid "Click to zoom in/out or left drag to zoom into a specific area."
 msgstr ""
 "जूम इन या आउट करे बर किलिक करव या विसिस्ट छेत्र मं जूम करे बर डेरी किलिक कर खींचव."
-
-#: tools/kpTool_UserNotifications.cpp:42
-msgid "Right click to cancel."
-msgstr "खारिज करे बर जेवनी किलिक करव."
-
-#: tools/kpTool_UserNotifications.cpp:44
-msgid "Left click to cancel."
-msgstr "खारिज करे बर डेरी किलिक करव."
-
-#: tools/kpTool_UserNotifications.cpp:73
-#, kde-format
-msgid "%1: "
-msgstr "%1: "
 
 #: tools/polygonal/kpToolCurve.cpp:86
 msgid "Curve"
@@ -1803,22 +1694,6 @@ msgstr "चयन ल खिसकाय बर डेरी मुसुवा 
 msgid "Left drag to scale selection."
 msgstr "चयन ल नवा आकार दे बर डेरी मुसुवा बटन से खींचव."
 
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:169
-msgid "Selection: Opaque"
-msgstr "चयन: अपारदर्सी"
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:170
-msgid "Selection: Transparent"
-msgstr "चयन: पारदर्सी"
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:190
-msgid "Selection: Transparency Color"
-msgstr "चयन: पारदर्सी रंग"
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:210
-msgid "Selection: Transparency Color Similarity"
-msgstr "चयन: पारदर्सी रंग एकरूपता"
-
 #: tools/selection/image/kpToolEllipticalSelection.cpp:43
 msgid "Selection (Elliptical)"
 msgstr "चयन (दीर्घवृत्तीय)"
@@ -1843,18 +1718,21 @@ msgstr "चयन (चतुर्भुज)"
 msgid "Makes a rectangular selection"
 msgstr "चतुर्भुज चयन बनाथे "
 
-#: tools/selection/kpAbstractSelectionTool_Move.cpp:319
-msgid "Selection: Move"
-msgstr "चयन: खिसकाव"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:169
+msgid "Selection: Opaque"
+msgstr "चयन: अपारदर्सी"
 
-#: tools/selection/kpAbstractSelectionTool_Move.cpp:341
-#, kde-format
-msgid "%1: Smear"
-msgstr "%1: लेप"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:170
+msgid "Selection: Transparent"
+msgstr "चयन: पारदर्सी"
 
-#: tools/selection/text/kpToolText.cpp:59
-msgid "Writes text"
-msgstr "पाठ लिखथे "
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:190
+msgid "Selection: Transparency Color"
+msgstr "चयन: पारदर्सी रंग"
+
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:210
+msgid "Selection: Transparency Color Similarity"
+msgstr "चयन: पारदर्सी रंग एकरूपता"
 
 #: tools/selection/text/kpToolText_Commands.cpp:70
 msgid "Text: Backspace"
@@ -1891,6 +1769,10 @@ msgstr "पाठ डब्बा ल नवा आकार दे बर ड�
 #: tools/selection/text/kpToolText_SelectText.cpp:56
 msgid "Left click to change cursor position."
 msgstr "मुसुवा संकेतक स्थिति मं बदलाव बर डेरी किलिक करव."
+
+#: tools/selection/text/kpToolText.cpp:59
+msgid "Writes text"
+msgstr "पाठ लिखथे "
 
 #: tools/selection/text/kpToolText_TextStyle.cpp:117
 msgid "Text: Opaque Background"
@@ -1936,11 +1818,41 @@ msgstr "पाठ: रेखांकित"
 msgid "Text: Strike Through"
 msgstr "पाठ: लिखकर काटा होइस"
 
+#: tools/selection/kpAbstractSelectionTool_Move.cpp:319
+msgid "Selection: Move"
+msgstr "चयन: खिसकाव"
+
+#: tools/selection/kpAbstractSelectionTool_Move.cpp:341
+#, kde-format
+msgid "%1: Smear"
+msgstr "%1: लेप"
+
 #: tools/kpTool.cpp:155
 #, kde-format
 msgctxt "<Tool Name> (<Single Accel Key>)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
+
+#: tools/kpToolFloodFill.cpp:55
+msgid "Fills regions in the image"
+msgstr "फोटू मं छेत्रों ल भरथे "
+
+#: tools/kpToolFloodFill.cpp:75
+msgid "Click to fill a region."
+msgstr "छेत्र मं भरे बर किलिक करव."
+
+#: tools/kpTool_UserNotifications.cpp:42
+msgid "Right click to cancel."
+msgstr "खारिज करे बर जेवनी किलिक करव."
+
+#: tools/kpTool_UserNotifications.cpp:44
+msgid "Left click to cancel."
+msgstr "खारिज करे बर डेरी किलिक करव."
+
+#: tools/kpTool_UserNotifications.cpp:73
+#, kde-format
+msgid "%1: "
+msgstr "%1: "
 
 #: views/kpZoomedThumbnailView.cpp:66
 #, kde-format
@@ -2141,38 +2053,6 @@ msgstr "में कम करव"
 msgid "&Granularity:"
 msgstr "ग्रेन्यूलेरिटी: (&G)"
 
-#: widgets/kpDocumentSaveOptionsWidget.cpp:93
-msgid "Convert &to:"
-msgstr "में बदलव: (&t)"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:98
-msgid "Quali&ty:"
-msgstr "गुन: (&t)"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:106
-msgid "&Preview"
-msgstr "प्रिव्यू (&P)"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:228
-msgid "Monochrome"
-msgstr "एकवर्न"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:229
-msgid "Monochrome (Dithered)"
-msgstr "मोनोक्रोम (डिथर्ड)"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:233
-msgid "256 Color"
-msgstr "256 रंग"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:234
-msgid "256 Color (Dithered)"
-msgstr "256 रंग (डिथर्ड)"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:239
-msgid "24-bit Color"
-msgstr "24-बिट रंग"
-
 #: widgets/kpTransparentColorCell.cpp:65
 #: widgets/toolbars/options/kpToolWidgetOpaqueOrTransparent.cpp:45
 msgid "Transparent"
@@ -2246,6 +2126,38 @@ msgid ""
 "the color of the source cell.</p></qt>"
 msgstr ""
 
+#: widgets/kpDocumentSaveOptionsWidget.cpp:93
+msgid "Convert &to:"
+msgstr "में बदलव: (&t)"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:98
+msgid "Quali&ty:"
+msgstr "गुन: (&t)"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:106
+msgid "&Preview"
+msgstr "प्रिव्यू (&P)"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:228
+msgid "Monochrome"
+msgstr "एकवर्न"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:229
+msgid "Monochrome (Dithered)"
+msgstr "मोनोक्रोम (डिथर्ड)"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:233
+msgid "256 Color"
+msgstr "256 रंग"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:234
+msgid "256 Color (Dithered)"
+msgstr "256 रंग (डिथर्ड)"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:239
+msgid "24-bit Color"
+msgstr "24-बिट रंग"
+
 #: widgets/kpPrintDialogPage.cpp:60
 #, fuzzy
 #| msgid "I&mage Position"
@@ -2261,6 +2173,102 @@ msgstr "पेज मं केंद्र मं (&C)"
 msgid "Top-&left of the page"
 msgstr "पेज मं सीर्स डेरी मं (&l)"
 
+#: kolourpaint.cpp:49
+msgid "KolourPaint"
+msgstr "कलर-पेंट"
+
+#: kolourpaint.cpp:51
+msgid "Paint Program for KDE"
+msgstr "केडीई बर पेंट प्रोग्राम"
+
+#: kolourpaint.cpp:54
+msgid "To obtain support, please visit the website."
+msgstr "समर्थन प्राप्त करे बर किरपा करके, जालस्थल मं जाव."
+
+#: kolourpaint.cpp:65
+msgid "Clarence Dang"
+msgstr "क्लेरेंस डैंग"
+
+#: kolourpaint.cpp:65
+msgid "Project Founder"
+msgstr "परियोजना संस्थापक"
+
+#: kolourpaint.cpp:66
+msgid "Thurston Dang"
+msgstr "टर्स्टन डैंग"
+
+#: kolourpaint.cpp:66
+msgid "Chief Investigator"
+msgstr "मुख्य अनुसन्धानकर्ता"
+
+#: kolourpaint.cpp:68
+msgid "Martin Koller"
+msgstr "मार्टिन कोलर"
+
+#: kolourpaint.cpp:68
+msgid "Scanning Support, Alpha Support, Current Maintainer"
+msgstr ""
+
+#: kolourpaint.cpp:69
+msgid "Kristof Borrey"
+msgstr "क्रिस्टाफ बोरे"
+
+#: kolourpaint.cpp:69 kolourpaint.cpp:72 kolourpaint.cpp:73
+msgid "Icons"
+msgstr "चिनहा"
+
+#: kolourpaint.cpp:70
+msgid "Tasuku Suzuki"
+msgstr ""
+
+#: kolourpaint.cpp:70 kolourpaint.cpp:71
+msgid "InputMethod Support"
+msgstr "इनपुटमेथड समर्थन"
+
+#: kolourpaint.cpp:71
+msgid "Kazuki Ohta"
+msgstr "काजुकी ओथा"
+
+#: kolourpaint.cpp:72
+msgid "Nuno Pinheiro"
+msgstr "नुनो पिन्हेरो"
+
+#: kolourpaint.cpp:73
+msgid "Danny Allen"
+msgstr "डैनी एलन"
+
+#: kolourpaint.cpp:74
+msgid "Mike Gashler"
+msgstr "माइक गैसलर"
+
+#: kolourpaint.cpp:74
+msgid "Image Effects"
+msgstr "फोटू प्रभाव"
+
+#: kolourpaint.cpp:76
+msgid "Laurent Montel"
+msgstr "लारेंट मोंटेल"
+
+#: kolourpaint.cpp:76
+msgid "KDE 4 Porting"
+msgstr "केडीई ४ मं पोर्ट करना"
+
+#: kolourpaint.cpp:80
+msgid ""
+"Thanks to the many others who have helped to make this program possible."
+msgstr "बहुत से दूसर ल घलोक धन्यवाद जऊन ए प्रोग्राम ल संभव बनाए मं मदद की."
+
+#: kolourpaint.cpp:85
+msgid "Image file to open"
+msgstr "फोटू फाइल जऊन ल खोलना हे"
+
+#: kpThumbnail.cpp:126
+#, fuzzy
+#| msgid "Thumbnail"
+msgctxt "@title:window"
+msgid "Thumbnail"
+msgstr "छोटे फोटू"
+
 #: kpViewScrollableContainer.cpp:160 kpViewScrollableContainer.cpp:826
 #: kpViewScrollableContainer.cpp:830 kpViewScrollableContainer.cpp:834
 msgid "Left drag the handle to resize the image."
@@ -2273,13 +2281,6 @@ msgstr "फोटू ल नवा आकार देव: सब्बो म�
 #: kpViewScrollableContainer.cpp:231
 msgid "Resize Image: Right click to cancel."
 msgstr "फोटू ल नवा आकार देव: खारिज करे बर जेवनी किलिक करव"
-
-#: kpThumbnail.cpp:126
-#, fuzzy
-#| msgid "Thumbnail"
-msgctxt "@title:window"
-msgid "Thumbnail"
-msgstr "छोटे फोटू"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
