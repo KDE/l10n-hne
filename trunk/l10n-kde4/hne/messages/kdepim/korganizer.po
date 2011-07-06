@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-05 04:24+0200\n"
+"POT-Creation-Date: 2011-07-06 04:34+0200\n"
 "PO-Revision-Date: 2009-02-28 20:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -198,7 +198,7 @@ msgstr "आगू स्क्राल करव"
 msgid "&Day"
 msgstr "दिन (&D)"
 
-#: actionmanager.cpp:596 actionmanager.cpp:1394 calendarview.cpp:2104
+#: actionmanager.cpp:596 actionmanager.cpp:1394 calendarview.cpp:2108
 #, kde-format
 msgid "&Next Day"
 msgid_plural "&Next %1 Days"
@@ -422,7 +422,7 @@ msgstr ""
 msgid "Format Conversion"
 msgstr "फार्मेट कन्वर्सन"
 
-#: actionmanager.cpp:1156 calendarview.cpp:2046
+#: actionmanager.cpp:1156 calendarview.cpp:2050
 msgid "Proceed"
 msgstr "आगू बढ़व"
 
@@ -733,33 +733,65 @@ msgstr "थामस जेंडर"
 msgid "Fester Zigterman"
 msgstr "फेस्तर जिग्तरमन"
 
-#: kdatenavigator.cpp:202
-#, kde-format
-msgctxt "start/end week number of line in date picker"
-msgid "%1/%2"
-msgstr "%1/%2"
-
-#: kdatenavigator.cpp:208
-#, kde-format
-msgid "Scroll to week number %1"
+#: navigatorbar.cpp:47
+msgid "Scroll backward to the previous year"
 msgstr ""
 
-#: kdatenavigator.cpp:210
-#, kde-format
+#: navigatorbar.cpp:48
 msgid ""
-"Click here to scroll the display to week number %1 of the currently "
-"displayed year."
+"Click this button to scroll the display to the same approximate day of the "
+"previous year"
 msgstr ""
 
-#: kdatenavigator.cpp:260
+#: navigatorbar.cpp:53
+msgid "Scroll backward to the previous month"
+msgstr ""
+
+#: navigatorbar.cpp:54
+msgid ""
+"Click this button to scroll the display to the same approximate date of the "
+"previous month"
+msgstr ""
+
+#: navigatorbar.cpp:59
+msgid "Scroll forward to the next month"
+msgstr ""
+
+#: navigatorbar.cpp:60
+msgid ""
+"Click this button to scroll the display to the same approximate date of the "
+"next month"
+msgstr ""
+
+#: navigatorbar.cpp:65
+msgid "Scroll forward to the next year"
+msgstr ""
+
+#: navigatorbar.cpp:66
+msgid ""
+"Click this button to scroll the display to the same approximate day of the "
+"next year"
+msgstr ""
+
+#: navigatorbar.cpp:74
+msgid "Select a month"
+msgstr "महिना चुनव"
+
+#: navigatorbar.cpp:81
+msgid "Select a year"
+msgstr "महिना चुनव"
+
+#: navigatorbar.cpp:134
 #, kde-format
+msgctxt "monthname"
 msgid "%1"
 msgstr "%1"
 
-#: kdatenavigator.cpp:262
+#: navigatorbar.cpp:135
 #, kde-format
-msgid "A column header of the %1 dates in the month."
-msgstr ""
+msgctxt "4 digit year"
+msgid "%1"
+msgstr "%1"
 
 #. i18n: file: htmlexportsettings.kcfg:31
 #. i18n: file: htmlexportsettings.kcfg:79
@@ -775,6 +807,21 @@ msgstr "नवा कलेन्डर"
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "सिरिफ पढ़े जा सके"
+
+#: history.cpp:310
+#, kde-format
+msgid "Delete %1"
+msgstr "मेटाव %1"
+
+#: history.cpp:348
+#, kde-format
+msgid "Add %1"
+msgstr "जोड़व %1"
+
+#: history.cpp:382
+#, kde-format
+msgid "Edit %1"
+msgstr "संपादन %1"
 
 #: akonadicollectionview.cpp:269
 #, fuzzy, kde-format
@@ -904,21 +951,6 @@ msgstr "<qt>का आप मन सचमुच संसाधन <b>%1</b> �
 msgctxt "@title:window"
 msgid "Delete Filter?"
 msgstr "जुन्ना चीज मेटाव"
-
-#: history.cpp:308
-#, kde-format
-msgid "Delete %1"
-msgstr "मेटाव %1"
-
-#: history.cpp:346
-#, kde-format
-msgid "Add %1"
-msgstr "जोड़व %1"
-
-#: history.cpp:380
-#, kde-format
-msgid "Edit %1"
-msgstr "संपादन %1"
 
 #: htmlexportjob.cpp:154
 #, fuzzy
@@ -1139,154 +1171,33 @@ msgstr "नवा कलेन्डर के रूप मं जोड़व"
 msgid "Merge into existing calendar"
 msgstr "अभी हाल के कलेन्डर मं सामिल करव"
 
-#. i18n: file: plugins/printing/year/calprintyearconfig_base.ui:143
-#. i18n: ectx: property (text), item, widget (KComboBox, mSubDays)
-#. i18n: file: plugins/printing/year/calprintyearconfig_base.ui:157
-#. i18n: ectx: property (text), item, widget (KComboBox, mHolidays)
-#: kcmdesignerfields.cpp:82 kcmdesignerfields.cpp:83 kcmdesignerfields.cpp:88
-#: kcmdesignerfields.cpp:89 rc.cpp:1066 rc.cpp:1072
-msgid "Text"
-msgstr "पाठ"
+#: kdatenavigator.cpp:202
+#, kde-format
+msgctxt "start/end week number of line in date picker"
+msgid "%1/%2"
+msgstr "%1/%2"
 
-#: kcmdesignerfields.cpp:84
-msgid "Numeric Value"
+#: kdatenavigator.cpp:208
+#, kde-format
+msgid "Scroll to week number %1"
 msgstr ""
 
-#: kcmdesignerfields.cpp:85
-msgid "Boolean"
-msgstr ""
-
-#: kcmdesignerfields.cpp:86
-#, fuzzy
-#| msgid "Select a month"
-msgid "Selection"
-msgstr "महिना चुनव"
-
-#: kcmdesignerfields.cpp:87 kcmdesignerfields.cpp:90
-#, fuzzy
-#| msgid "Date && Time"
-msgid "Date & Time"
-msgstr "तारीक अउ समय"
-
-#: kcmdesignerfields.cpp:91
-#, fuzzy
-#| msgid "&Date:"
-msgid "Date"
-msgstr "तारीक: (&D)"
-
-#: kcmdesignerfields.cpp:145
-msgid "KCMDesignerfields"
-msgstr ""
-
-#: kcmdesignerfields.cpp:146
-msgid "Qt Designer Fields Dialog"
-msgstr ""
-
-#: kcmdesignerfields.cpp:148
-#, fuzzy
-#| msgid "Tobias König"
-msgid "(c), 2004 Tobias Koenig"
-msgstr "टाबियस कोएनिग"
-
-#: kcmdesignerfields.cpp:150
-#, fuzzy
-#| msgid "Tobias König"
-msgid "Tobias Koenig"
-msgstr "टाबियस कोएनिग"
-
-#: kcmdesignerfields.cpp:189
-#, fuzzy, kde-format
-#| msgid "<qt>Do you really want to remove the resource <b>%1</b>?</qt>"
-msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
-msgstr "<qt>का आप मन सचमुच संसाधन <b>%1</b> ल मिटाना चाहथो?</qt>"
-
-#: kcmdesignerfields.cpp:198
-#, fuzzy
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
-msgid "*.ui|Designer Files"
-msgstr "*.ics|आईकलेन्डर फाइल"
-
-#: kcmdesignerfields.cpp:199
-#, fuzzy
-#| msgid "Import Calendar"
-msgid "Import Page"
-msgstr "कलेन्डर आयात करव"
-
-#: kcmdesignerfields.cpp:295
-msgid ""
-"<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
-"installed. You will only be able to import existing designer files.</qt>"
-msgstr ""
-
-#: kcmdesignerfields.cpp:306
-msgid "Available Pages"
-msgstr ""
-
-#: kcmdesignerfields.cpp:312
-msgid "Preview of Selected Page"
-msgstr ""
-
-#: kcmdesignerfields.cpp:331
+#: kdatenavigator.cpp:210
 #, kde-format
 msgid ""
-"<qt><p>This section allows you to add your own GUI Elements ('<i>Widgets</"
-"i>') to store your own values into %1. Proceed as described below:</"
-"p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the dialog, "
-"select '<i>Widget</i>', then click <i>OK</i></li><li>Add your widgets to the "
-"form</li><li>Save the file in the directory proposed by Qt Designer</"
-"li><li>Close Qt Designer</li></ol><p>In case you already have a designer "
-"file (*.ui) located somewhere on your hard disk, simply choose '<i>Import "
-"Page</i>'</p><p><b>Important:</b> The name of each input widget you place "
-"within the form must start with '<i>X_</i>'; so if you want the widget to "
-"correspond to your custom entry '<i>X-Foo</i>', set the widget's <i>name</i> "
-"property to '<i>X_Foo</i>'.</p><p><b>Important:</b> The widget will edit "
-"custom fields with an application name of %2.  To change the application "
-"name to be edited, set the widget name in Qt Designer.</p></qt>"
+"Click here to scroll the display to week number %1 of the currently "
+"displayed year."
 msgstr ""
 
-#: kcmdesignerfields.cpp:353
+#: kdatenavigator.cpp:260
 #, kde-format
-msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+msgid "%1"
+msgstr "%1"
+
+#: kdatenavigator.cpp:262
+#, kde-format
+msgid "A column header of the %1 dates in the month."
 msgstr ""
-
-#: kcmdesignerfields.cpp:365
-#, fuzzy
-#| msgid "Delete"
-msgid "Delete Page"
-msgstr "मेटाव"
-
-#: kcmdesignerfields.cpp:368
-#, fuzzy
-#| msgid "Import &Calendar..."
-msgid "Import Page..."
-msgstr "कलेन्डर आयात करव... (&C)"
-
-#: kcmdesignerfields.cpp:370
-msgid "Edit with Qt Designer..."
-msgstr ""
-
-#: kcmdesignerfields.cpp:392
-msgid "Key:"
-msgstr ""
-
-#: kcmdesignerfields.cpp:394
-#, fuzzy
-#| msgctxt "@label"
-#| msgid "Type:"
-msgid "Type:"
-msgstr "किसिमः"
-
-#: kcmdesignerfields.cpp:396
-#, fuzzy
-#| msgctxt "login name on the Kolab server"
-#| msgid "Username:"
-msgid "Classname:"
-msgstr "कमइया नाम:"
-
-#: kcmdesignerfields.cpp:398 printing/calprintdefaultplugins.cpp:467
-msgid "Description:"
-msgstr "वर्ननः"
 
 #: koviewmanager.cpp:502
 msgid "Merged calendar"
@@ -1668,6 +1579,538 @@ msgstr "ये प्लगइन ल कान्फिगर करे मं 
 msgctxt "@item:intext delimiter for joining holiday names"
 msgid ","
 msgstr ","
+
+#: koeventpopupmenu.cpp:54 views/todoview/kotodoview.cpp:184
+msgid "&Print..."
+msgstr "छापव...(&P)"
+
+#: koeventpopupmenu.cpp:56 views/todoview/kotodoview.cpp:188
+#, fuzzy
+msgid "Print Previe&w..."
+msgstr "छापव...(&P)"
+
+#: koeventpopupmenu.cpp:62
+msgctxt "cut this event"
+msgid "C&ut"
+msgstr "काटव (&C)"
+
+#: koeventpopupmenu.cpp:65
+msgctxt "copy this event"
+msgid "&Copy"
+msgstr "नकल (&C)"
+
+#: koeventpopupmenu.cpp:69
+msgid "&Paste"
+msgstr "चिपकाव (&P)"
+
+#: koeventpopupmenu.cpp:72
+msgctxt "delete this incidence"
+msgid "&Delete"
+msgstr "मेटाव (&D)"
+
+#: koeventpopupmenu.cpp:77
+#, fuzzy
+msgid "Togg&le To-do Completed"
+msgstr " निकालना पूरा (&g)"
+
+#: koeventpopupmenu.cpp:80
+msgid "&Toggle Reminder"
+msgstr "सुरता टागल करव (&T)"
+
+#: koeventpopupmenu.cpp:84
+#, fuzzy
+msgid "&Dissociate From Recurrence..."
+msgstr "पुनरावृत्ति असंबद्ध करव"
+
+#: koeventpopupmenu.cpp:90
+msgid "Send as iCalendar..."
+msgstr "जैसा हे वइसनेच भेजव (&S)"
+
+#: koeventview.cpp:189
+#, fuzzy
+msgid "Also &Future Items"
+msgstr "सिरिफ भविस्य के चीज (&F)"
+
+#: koeventview.cpp:199
+msgid ""
+"The item you are trying to change is a recurring item. Should the changes be "
+"applied only to this single occurrence, also to future items, or to all "
+"items in the recurrence?"
+msgstr ""
+
+#: koeventview.cpp:204
+msgid ""
+"The item you are trying to change is a recurring item. Should the changes be "
+"applied only to this single occurrence or to all items in the recurrence?"
+msgstr ""
+
+#: koeventview.cpp:214
+msgid "Changing Recurring Item"
+msgstr "पुनरावृत्ति चीज ल बदलत हे"
+
+#: koeventview.cpp:215
+msgid "Only &This Item"
+msgstr "सिरिफ चीज (&T)"
+
+#: koeventview.cpp:217
+msgid "&All Occurrences"
+msgstr "सब्बो पुनरावृत्तियाँ (&A)"
+
+#: koeventviewerdialog.cpp:40
+msgid "Event Viewer"
+msgstr "घटना प्रदर्सक"
+
+#: koeventviewerdialog.cpp:43
+msgid "Edit..."
+msgstr "संपादन..."
+
+#: koeventviewerdialog.cpp:44
+msgid "Show in Context"
+msgstr "संदर्भ मं देखाव"
+
+#: kohelper.cpp:79
+#, kde-format
+msgid "Unable to save %1 \"%2\"."
+msgstr "सहेजे मं फेल %1 \"%2\"."
+
+#: koprefs.cpp:77
+msgctxt "Default export file"
+msgid "calendar.html"
+msgstr "calendar.html"
+
+#. i18n: file: plugins/printing/year/calprintyearconfig_base.ui:143
+#. i18n: ectx: property (text), item, widget (KComboBox, mSubDays)
+#. i18n: file: plugins/printing/year/calprintyearconfig_base.ui:157
+#. i18n: ectx: property (text), item, widget (KComboBox, mHolidays)
+#: kcmdesignerfields.cpp:82 kcmdesignerfields.cpp:83 kcmdesignerfields.cpp:88
+#: kcmdesignerfields.cpp:89 rc.cpp:1066 rc.cpp:1072
+msgid "Text"
+msgstr "पाठ"
+
+#: kcmdesignerfields.cpp:84
+msgid "Numeric Value"
+msgstr ""
+
+#: kcmdesignerfields.cpp:85
+msgid "Boolean"
+msgstr ""
+
+#: kcmdesignerfields.cpp:86
+#, fuzzy
+#| msgid "Select a month"
+msgid "Selection"
+msgstr "महिना चुनव"
+
+#: kcmdesignerfields.cpp:87 kcmdesignerfields.cpp:90
+#, fuzzy
+#| msgid "Date && Time"
+msgid "Date & Time"
+msgstr "तारीक अउ समय"
+
+#: kcmdesignerfields.cpp:91
+#, fuzzy
+#| msgid "&Date:"
+msgid "Date"
+msgstr "तारीक: (&D)"
+
+#: kcmdesignerfields.cpp:145
+msgid "KCMDesignerfields"
+msgstr ""
+
+#: kcmdesignerfields.cpp:146
+msgid "Qt Designer Fields Dialog"
+msgstr ""
+
+#: kcmdesignerfields.cpp:148
+#, fuzzy
+#| msgid "Tobias König"
+msgid "(c), 2004 Tobias Koenig"
+msgstr "टाबियस कोएनिग"
+
+#: kcmdesignerfields.cpp:150
+#, fuzzy
+#| msgid "Tobias König"
+msgid "Tobias Koenig"
+msgstr "टाबियस कोएनिग"
+
+#: kcmdesignerfields.cpp:189
+#, fuzzy, kde-format
+#| msgid "<qt>Do you really want to remove the resource <b>%1</b>?</qt>"
+msgid "<qt>Do you really want to delete '<b>%1</b>'?</qt>"
+msgstr "<qt>का आप मन सचमुच संसाधन <b>%1</b> ल मिटाना चाहथो?</qt>"
+
+#: kcmdesignerfields.cpp:198
+#, fuzzy
+#| msgctxt "@label filter for KUrlRequester"
+#| msgid "*.ics|iCalendar Files"
+msgid "*.ui|Designer Files"
+msgstr "*.ics|आईकलेन्डर फाइल"
+
+#: kcmdesignerfields.cpp:199
+#, fuzzy
+#| msgid "Import Calendar"
+msgid "Import Page"
+msgstr "कलेन्डर आयात करव"
+
+#: kcmdesignerfields.cpp:295
+msgid ""
+"<qt><b>Warning:</b> Qt Designer could not be found. It is probably not "
+"installed. You will only be able to import existing designer files.</qt>"
+msgstr ""
+
+#: kcmdesignerfields.cpp:306
+msgid "Available Pages"
+msgstr ""
+
+#: kcmdesignerfields.cpp:312
+msgid "Preview of Selected Page"
+msgstr ""
+
+#: kcmdesignerfields.cpp:331
+#, kde-format
+msgid ""
+"<qt><p>This section allows you to add your own GUI Elements ('<i>Widgets</"
+"i>') to store your own values into %1. Proceed as described below:</"
+"p><ol><li>Click on '<i>Edit with Qt Designer</i>'</li><li>In the dialog, "
+"select '<i>Widget</i>', then click <i>OK</i></li><li>Add your widgets to the "
+"form</li><li>Save the file in the directory proposed by Qt Designer</"
+"li><li>Close Qt Designer</li></ol><p>In case you already have a designer "
+"file (*.ui) located somewhere on your hard disk, simply choose '<i>Import "
+"Page</i>'</p><p><b>Important:</b> The name of each input widget you place "
+"within the form must start with '<i>X_</i>'; so if you want the widget to "
+"correspond to your custom entry '<i>X-Foo</i>', set the widget's <i>name</i> "
+"property to '<i>X_Foo</i>'.</p><p><b>Important:</b> The widget will edit "
+"custom fields with an application name of %2.  To change the application "
+"name to be edited, set the widget name in Qt Designer.</p></qt>"
+msgstr ""
+
+#: kcmdesignerfields.cpp:353
+#, kde-format
+msgid "<a href=\"whatsthis:%1\">How does this work?</a>"
+msgstr ""
+
+#: kcmdesignerfields.cpp:365
+#, fuzzy
+#| msgid "Delete"
+msgid "Delete Page"
+msgstr "मेटाव"
+
+#: kcmdesignerfields.cpp:368
+#, fuzzy
+#| msgid "Import &Calendar..."
+msgid "Import Page..."
+msgstr "कलेन्डर आयात करव... (&C)"
+
+#: kcmdesignerfields.cpp:370
+msgid "Edit with Qt Designer..."
+msgstr ""
+
+#: kcmdesignerfields.cpp:392
+msgid "Key:"
+msgstr ""
+
+#: kcmdesignerfields.cpp:394
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Type:"
+msgid "Type:"
+msgstr "किसिमः"
+
+#: kcmdesignerfields.cpp:396
+#, fuzzy
+#| msgctxt "login name on the Kolab server"
+#| msgid "Username:"
+msgid "Classname:"
+msgstr "कमइया नाम:"
+
+#: kcmdesignerfields.cpp:398 printing/calprintdefaultplugins.cpp:467
+msgid "Description:"
+msgstr "वर्ननः"
+
+#: korgac/alarmdockwindow.cpp:49
+msgctxt "@title:window"
+msgid "KOrganizer Reminder Daemon"
+msgstr "के-आर्गेनाइजर रीमाइंडर डेमन"
+
+#: korgac/alarmdockwindow.cpp:60
+msgctxt "@info"
+msgid "Cannot load system tray icon."
+msgstr ""
+
+#: korgac/alarmdockwindow.cpp:73
+msgctxt "@action:inmenu"
+msgid "Suspend All Reminders"
+msgstr "सब्बो सुरता निलंबित करव"
+
+#: korgac/alarmdockwindow.cpp:76
+msgctxt "@action:inmenu"
+msgid "Dismiss All Reminders"
+msgstr "सब्बो सुरता खारिज करव"
+
+#: korgac/alarmdockwindow.cpp:83
+msgctxt "@action:inmenu"
+msgid "Enable Reminders"
+msgstr "सुरता सक्छम करव"
+
+#: korgac/alarmdockwindow.cpp:88
+msgctxt "@action:inmenu"
+msgid "Start Reminder Daemon at Login"
+msgstr "सुरता डेमन लागिन मं चालू हो"
+
+#: korgac/alarmdockwindow.cpp:121
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "No active reminders."
+msgctxt "@info:status"
+msgid "There is 1 active reminder."
+msgid_plural "There are %1 active reminders."
+msgstr[0] "कोई सक्रिय सुरता नइ."
+msgstr[1] "कोई सक्रिय सुरता नइ."
+
+#: korgac/alarmdockwindow.cpp:124
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "No active reminders."
+msgctxt "@info:status"
+msgid "No active reminders."
+msgstr "कोई सक्रिय सुरता नइ."
+
+#: korgac/alarmdockwindow.cpp:173
+msgctxt "@info"
+msgid ""
+"Do you want to quit the KOrganizer reminder daemon?<nl/><note> you will not "
+"get calendar reminders unless the daemon is running.</note>"
+msgstr ""
+
+#: korgac/alarmdockwindow.cpp:175 korgac/alarmdockwindow.cpp:187
+msgctxt "@title:window"
+msgid "Close KOrganizer Reminder Daemon"
+msgstr "के-आर्गेनाइजर रीमाइंडर डेमन बन्द करव"
+
+#: korgac/alarmdockwindow.cpp:185
+msgctxt "@info"
+msgid ""
+"Do you want to start the KOrganizer reminder daemon at login?<nl/><note> you "
+"will not get calendar reminders unless the daemon is running.</note>"
+msgstr ""
+
+#: korgac/alarmdockwindow.cpp:188
+msgctxt "@action:button start the reminder daemon"
+msgid "Start"
+msgstr "सुरू"
+
+#: korgac/alarmdockwindow.cpp:189
+msgctxt "@action:button do not start the reminder daemon"
+msgid "Do Not Start"
+msgstr "चालू नइ करव"
+
+#: korgac/korgacmain.cpp:69 korgac/korgacmain.cpp:70
+msgid "KOrganizer Reminder Daemon"
+msgstr "के-आर्गेनाइजर रीमाइंडर डेमन"
+
+#: korgac/korgacmain.cpp:72
+msgid "(c) 2003 Cornelius Schumacher"
+msgstr "(c) 2003 कार्नेलियस सूमेकर"
+
+#: korgac/korgacmain.cpp:78
+msgid "Janitorial Staff"
+msgstr ""
+
+#: korgac/alarmdialog.cpp:143
+msgctxt "@title:window"
+msgid "Reminders"
+msgstr "सुरता"
+
+#: korgac/alarmdialog.cpp:147
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Dismiss All Reminders"
+msgctxt "@action:button"
+msgid "Dismiss Reminder"
+msgstr "सब्बो सुरता खारिज करव"
+
+#: korgac/alarmdialog.cpp:149
+msgctxt "@info:tooltip"
+msgid "Dismiss the reminders for the selected incidences"
+msgstr ""
+
+#: korgac/alarmdialog.cpp:150
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Dismiss all"
+msgctxt "@action:button"
+msgid "Dismiss All"
+msgstr "सब्बो खारिज करव"
+
+#: korgac/alarmdialog.cpp:152
+msgctxt "@info:tooltip"
+msgid "Dismiss the reminders for all listed incidences"
+msgstr ""
+
+#: korgac/alarmdialog.cpp:153
+msgctxt "@action:button"
+msgid "Edit..."
+msgstr "संपादन..."
+
+#: korgac/alarmdialog.cpp:155
+msgctxt "@info:tooltip"
+msgid "Edit the selected incidence"
+msgstr ""
+
+#: korgac/alarmdialog.cpp:156
+msgctxt "@action:button"
+msgid "Suspend"
+msgstr "निलम्बित"
+
+#: korgac/alarmdialog.cpp:158
+msgctxt "@info:tooltip"
+msgid ""
+"Suspend the reminders for the selected incidences by the specified interval"
+msgstr ""
+
+#: korgac/alarmdialog.cpp:169
+msgctxt "@label"
+msgid "Reminders: Click on a title to toggle the details viewer for that item"
+msgstr ""
+
+#: korgac/alarmdialog.cpp:178
+#, fuzzy
+msgctxt "@title:column reminder title"
+msgid "Title"
+msgstr "सीर्सकः (&T)"
+
+#: korgac/alarmdialog.cpp:179
+#, fuzzy
+#| msgid "Date && Time"
+msgctxt "@title:column happens at date/time"
+msgid "Date Time"
+msgstr "तारीक अउ समय"
+
+#: korgac/alarmdialog.cpp:180
+#, fuzzy
+#| msgctxt "@title:column trigger date/time"
+#| msgid "Trigger Date/Time"
+msgctxt "@title:column trigger date/time"
+msgid "Trigger Time"
+msgstr "ट्रिगर तारीक/समय"
+
+#: korgac/alarmdialog.cpp:184
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "The event or to-do title"
+msgstr "घटना या काम कहाँ हो ए सेट करथे."
+
+#: korgac/alarmdialog.cpp:187
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "The reminder is set for this date/time"
+msgstr "ये घटना या काम बर सुरता सक्रिय करथे."
+
+#: korgac/alarmdialog.cpp:190
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "The date/time the reminder was triggered"
+msgstr "घटना या काम कहाँ हो ए सेट करथे."
+
+#: korgac/alarmdialog.cpp:215
+msgctxt "@info default incidence details string"
+msgid ""
+"<emphasis>Select an event or to-do from the list above to view its details "
+"here.</emphasis>"
+msgstr ""
+
+#: korgac/alarmdialog.cpp:226
+msgctxt "@label:spinbox"
+msgid "Suspend &duration:"
+msgstr "निलम्बित अंतराल: (&d)"
+
+#: korgac/alarmdialog.cpp:233
+msgctxt "@info:tooltip"
+msgid "Suspend the reminders by this amount of time"
+msgstr ""
+
+#: korgac/alarmdialog.cpp:236
+msgctxt "@info:whatsthis"
+msgid ""
+"Each reminder for the selected incidences will be suspended by this number "
+"of time units. You can choose the time units (typically minutes) in the "
+"adjacent selector."
+msgstr ""
+
+#: korgac/alarmdialog.cpp:243
+msgctxt "@item:inlistbox suspend in terms of minutes"
+msgid "minute(s)"
+msgstr "मिनट"
+
+#: korgac/alarmdialog.cpp:244
+msgctxt "@item:inlistbox suspend in terms of hours"
+msgid "hour(s)"
+msgstr "घंटा"
+
+#: korgac/alarmdialog.cpp:245
+msgctxt "@item:inlistbox suspend in terms of days"
+msgid "day(s)"
+msgstr "दिन"
+
+#: korgac/alarmdialog.cpp:246
+msgctxt "@item:inlistbox suspend in terms of weeks"
+msgid "week(s)"
+msgstr "हफ्ता"
+
+#: korgac/alarmdialog.cpp:249
+msgctxt "@info:tooltip"
+msgid "Suspend the reminders using this time unit"
+msgstr ""
+
+#: korgac/alarmdialog.cpp:252
+msgctxt "@info:whatsthis"
+msgid ""
+"Each reminder for the selected incidences will be suspended using this time "
+"unit. You can set the number of time units in the adjacent number entry "
+"input."
+msgstr ""
+
+#: korgac/alarmdialog.cpp:288
+#, fuzzy
+#| msgid "Edit..."
+msgctxt "@label an elipsis"
+msgid "..."
+msgstr "संपादन..."
+
+#: korgac/alarmdialog.cpp:432
+#, kde-format
+msgctxt "@info"
+msgid "\"%1\" is a read-only item so modifications are not possible."
+msgstr ""
+
+#: korgac/alarmdialog.cpp:640
+#, fuzzy
+#| msgid "Reminder"
+msgctxt "@title"
+msgid "Reminder"
+msgstr "सुरता"
+
+#: korgac/alarmdialog.cpp:642 korgac/alarmdialog.cpp:645
+#, fuzzy, kde-format
+#| msgid "Reminder: "
+#| msgid_plural "%1 reminders: "
+msgctxt "@title"
+msgid "Reminder: %1"
+msgstr "सुरता:"
+
+#: korgac/alarmdialog.cpp:882
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "Could not start KOrganizer."
+msgctxt "@info"
+msgid "Could not start KOrganizer so editing is not possible."
+msgstr "केओर्गनाइजर चालू नइ कर सकिस."
+
+#: korgac/alarmdialog.cpp:894
+#, kde-format
+msgctxt "@info"
+msgid "An internal KOrganizer error occurred attempting to modify \"%1\""
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -4924,104 +5367,6 @@ msgstr "नियत तारीक के बिना कामसूची �
 msgid "Show custom calendars"
 msgstr "कलेन्डरों ल आजू-बाजू मं देखाव"
 
-#: koeventpopupmenu.cpp:54 views/todoview/kotodoview.cpp:184
-msgid "&Print..."
-msgstr "छापव...(&P)"
-
-#: koeventpopupmenu.cpp:56 views/todoview/kotodoview.cpp:188
-#, fuzzy
-msgid "Print Previe&w..."
-msgstr "छापव...(&P)"
-
-#: koeventpopupmenu.cpp:62
-msgctxt "cut this event"
-msgid "C&ut"
-msgstr "काटव (&C)"
-
-#: koeventpopupmenu.cpp:65
-msgctxt "copy this event"
-msgid "&Copy"
-msgstr "नकल (&C)"
-
-#: koeventpopupmenu.cpp:69
-msgid "&Paste"
-msgstr "चिपकाव (&P)"
-
-#: koeventpopupmenu.cpp:72
-msgctxt "delete this incidence"
-msgid "&Delete"
-msgstr "मेटाव (&D)"
-
-#: koeventpopupmenu.cpp:77
-#, fuzzy
-msgid "Togg&le To-do Completed"
-msgstr " निकालना पूरा (&g)"
-
-#: koeventpopupmenu.cpp:80
-msgid "&Toggle Reminder"
-msgstr "सुरता टागल करव (&T)"
-
-#: koeventpopupmenu.cpp:84
-#, fuzzy
-msgid "&Dissociate From Recurrence..."
-msgstr "पुनरावृत्ति असंबद्ध करव"
-
-#: koeventpopupmenu.cpp:90
-msgid "Send as iCalendar..."
-msgstr "जैसा हे वइसनेच भेजव (&S)"
-
-#: koeventview.cpp:189
-#, fuzzy
-msgid "Also &Future Items"
-msgstr "सिरिफ भविस्य के चीज (&F)"
-
-#: koeventview.cpp:199
-msgid ""
-"The item you are trying to change is a recurring item. Should the changes be "
-"applied only to this single occurrence, also to future items, or to all "
-"items in the recurrence?"
-msgstr ""
-
-#: koeventview.cpp:204
-msgid ""
-"The item you are trying to change is a recurring item. Should the changes be "
-"applied only to this single occurrence or to all items in the recurrence?"
-msgstr ""
-
-#: koeventview.cpp:214
-msgid "Changing Recurring Item"
-msgstr "पुनरावृत्ति चीज ल बदलत हे"
-
-#: koeventview.cpp:215
-msgid "Only &This Item"
-msgstr "सिरिफ चीज (&T)"
-
-#: koeventview.cpp:217
-msgid "&All Occurrences"
-msgstr "सब्बो पुनरावृत्तियाँ (&A)"
-
-#: koeventviewerdialog.cpp:40
-msgid "Event Viewer"
-msgstr "घटना प्रदर्सक"
-
-#: koeventviewerdialog.cpp:43
-msgid "Edit..."
-msgstr "संपादन..."
-
-#: koeventviewerdialog.cpp:44
-msgid "Show in Context"
-msgstr "संदर्भ मं देखाव"
-
-#: kohelper.cpp:79
-#, kde-format
-msgid "Unable to save %1 \"%2\"."
-msgstr "सहेजे मं फेल %1 \"%2\"."
-
-#: koprefs.cpp:77
-msgctxt "Default export file"
-msgid "calendar.html"
-msgstr "calendar.html"
-
 #. i18n: file: tips:2
 #. i18n: ectx: @info:tipoftheday
 #: tips.cpp:3
@@ -5134,291 +5479,6 @@ msgid ""
 "</p>\n"
 msgstr ""
 
-#: korgac/alarmdockwindow.cpp:49
-msgctxt "@title:window"
-msgid "KOrganizer Reminder Daemon"
-msgstr "के-आर्गेनाइजर रीमाइंडर डेमन"
-
-#: korgac/alarmdockwindow.cpp:60
-msgctxt "@info"
-msgid "Cannot load system tray icon."
-msgstr ""
-
-#: korgac/alarmdockwindow.cpp:73
-msgctxt "@action:inmenu"
-msgid "Suspend All Reminders"
-msgstr "सब्बो सुरता निलंबित करव"
-
-#: korgac/alarmdockwindow.cpp:76
-msgctxt "@action:inmenu"
-msgid "Dismiss All Reminders"
-msgstr "सब्बो सुरता खारिज करव"
-
-#: korgac/alarmdockwindow.cpp:83
-msgctxt "@action:inmenu"
-msgid "Enable Reminders"
-msgstr "सुरता सक्छम करव"
-
-#: korgac/alarmdockwindow.cpp:88
-msgctxt "@action:inmenu"
-msgid "Start Reminder Daemon at Login"
-msgstr "सुरता डेमन लागिन मं चालू हो"
-
-#: korgac/alarmdockwindow.cpp:121
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip"
-#| msgid "No active reminders."
-msgctxt "@info:status"
-msgid "There is 1 active reminder."
-msgid_plural "There are %1 active reminders."
-msgstr[0] "कोई सक्रिय सुरता नइ."
-msgstr[1] "कोई सक्रिय सुरता नइ."
-
-#: korgac/alarmdockwindow.cpp:124
-#, fuzzy
-#| msgctxt "@info:tooltip"
-#| msgid "No active reminders."
-msgctxt "@info:status"
-msgid "No active reminders."
-msgstr "कोई सक्रिय सुरता नइ."
-
-#: korgac/alarmdockwindow.cpp:173
-msgctxt "@info"
-msgid ""
-"Do you want to quit the KOrganizer reminder daemon?<nl/><note> you will not "
-"get calendar reminders unless the daemon is running.</note>"
-msgstr ""
-
-#: korgac/alarmdockwindow.cpp:175 korgac/alarmdockwindow.cpp:187
-msgctxt "@title:window"
-msgid "Close KOrganizer Reminder Daemon"
-msgstr "के-आर्गेनाइजर रीमाइंडर डेमन बन्द करव"
-
-#: korgac/alarmdockwindow.cpp:185
-msgctxt "@info"
-msgid ""
-"Do you want to start the KOrganizer reminder daemon at login?<nl/><note> you "
-"will not get calendar reminders unless the daemon is running.</note>"
-msgstr ""
-
-#: korgac/alarmdockwindow.cpp:188
-msgctxt "@action:button start the reminder daemon"
-msgid "Start"
-msgstr "सुरू"
-
-#: korgac/alarmdockwindow.cpp:189
-msgctxt "@action:button do not start the reminder daemon"
-msgid "Do Not Start"
-msgstr "चालू नइ करव"
-
-#: korgac/alarmdialog.cpp:143
-msgctxt "@title:window"
-msgid "Reminders"
-msgstr "सुरता"
-
-#: korgac/alarmdialog.cpp:147
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Dismiss All Reminders"
-msgctxt "@action:button"
-msgid "Dismiss Reminder"
-msgstr "सब्बो सुरता खारिज करव"
-
-#: korgac/alarmdialog.cpp:149
-msgctxt "@info:tooltip"
-msgid "Dismiss the reminders for the selected incidences"
-msgstr ""
-
-#: korgac/alarmdialog.cpp:150
-#, fuzzy
-#| msgctxt "@action:button"
-#| msgid "Dismiss all"
-msgctxt "@action:button"
-msgid "Dismiss All"
-msgstr "सब्बो खारिज करव"
-
-#: korgac/alarmdialog.cpp:152
-msgctxt "@info:tooltip"
-msgid "Dismiss the reminders for all listed incidences"
-msgstr ""
-
-#: korgac/alarmdialog.cpp:153
-msgctxt "@action:button"
-msgid "Edit..."
-msgstr "संपादन..."
-
-#: korgac/alarmdialog.cpp:155
-msgctxt "@info:tooltip"
-msgid "Edit the selected incidence"
-msgstr ""
-
-#: korgac/alarmdialog.cpp:156
-msgctxt "@action:button"
-msgid "Suspend"
-msgstr "निलम्बित"
-
-#: korgac/alarmdialog.cpp:158
-msgctxt "@info:tooltip"
-msgid ""
-"Suspend the reminders for the selected incidences by the specified interval"
-msgstr ""
-
-#: korgac/alarmdialog.cpp:169
-msgctxt "@label"
-msgid "Reminders: Click on a title to toggle the details viewer for that item"
-msgstr ""
-
-#: korgac/alarmdialog.cpp:178
-#, fuzzy
-msgctxt "@title:column reminder title"
-msgid "Title"
-msgstr "सीर्सकः (&T)"
-
-#: korgac/alarmdialog.cpp:179
-#, fuzzy
-#| msgid "Date && Time"
-msgctxt "@title:column happens at date/time"
-msgid "Date Time"
-msgstr "तारीक अउ समय"
-
-#: korgac/alarmdialog.cpp:180
-#, fuzzy
-#| msgctxt "@title:column trigger date/time"
-#| msgid "Trigger Date/Time"
-msgctxt "@title:column trigger date/time"
-msgid "Trigger Time"
-msgstr "ट्रिगर तारीक/समय"
-
-#: korgac/alarmdialog.cpp:184
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "The event or to-do title"
-msgstr "घटना या काम कहाँ हो ए सेट करथे."
-
-#: korgac/alarmdialog.cpp:187
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "The reminder is set for this date/time"
-msgstr "ये घटना या काम बर सुरता सक्रिय करथे."
-
-#: korgac/alarmdialog.cpp:190
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "The date/time the reminder was triggered"
-msgstr "घटना या काम कहाँ हो ए सेट करथे."
-
-#: korgac/alarmdialog.cpp:215
-msgctxt "@info default incidence details string"
-msgid ""
-"<emphasis>Select an event or to-do from the list above to view its details "
-"here.</emphasis>"
-msgstr ""
-
-#: korgac/alarmdialog.cpp:226
-msgctxt "@label:spinbox"
-msgid "Suspend &duration:"
-msgstr "निलम्बित अंतराल: (&d)"
-
-#: korgac/alarmdialog.cpp:233
-msgctxt "@info:tooltip"
-msgid "Suspend the reminders by this amount of time"
-msgstr ""
-
-#: korgac/alarmdialog.cpp:236
-msgctxt "@info:whatsthis"
-msgid ""
-"Each reminder for the selected incidences will be suspended by this number "
-"of time units. You can choose the time units (typically minutes) in the "
-"adjacent selector."
-msgstr ""
-
-#: korgac/alarmdialog.cpp:243
-msgctxt "@item:inlistbox suspend in terms of minutes"
-msgid "minute(s)"
-msgstr "मिनट"
-
-#: korgac/alarmdialog.cpp:244
-msgctxt "@item:inlistbox suspend in terms of hours"
-msgid "hour(s)"
-msgstr "घंटा"
-
-#: korgac/alarmdialog.cpp:245
-msgctxt "@item:inlistbox suspend in terms of days"
-msgid "day(s)"
-msgstr "दिन"
-
-#: korgac/alarmdialog.cpp:246
-msgctxt "@item:inlistbox suspend in terms of weeks"
-msgid "week(s)"
-msgstr "हफ्ता"
-
-#: korgac/alarmdialog.cpp:249
-msgctxt "@info:tooltip"
-msgid "Suspend the reminders using this time unit"
-msgstr ""
-
-#: korgac/alarmdialog.cpp:252
-msgctxt "@info:whatsthis"
-msgid ""
-"Each reminder for the selected incidences will be suspended using this time "
-"unit. You can set the number of time units in the adjacent number entry "
-"input."
-msgstr ""
-
-#: korgac/alarmdialog.cpp:288
-#, fuzzy
-#| msgid "Edit..."
-msgctxt "@label an elipsis"
-msgid "..."
-msgstr "संपादन..."
-
-#: korgac/alarmdialog.cpp:432
-#, kde-format
-msgctxt "@info"
-msgid "\"%1\" is a read-only item so modifications are not possible."
-msgstr ""
-
-#: korgac/alarmdialog.cpp:640
-#, fuzzy
-#| msgid "Reminder"
-msgctxt "@title"
-msgid "Reminder"
-msgstr "सुरता"
-
-#: korgac/alarmdialog.cpp:642 korgac/alarmdialog.cpp:645
-#, fuzzy, kde-format
-#| msgid "Reminder: "
-#| msgid_plural "%1 reminders: "
-msgctxt "@title"
-msgid "Reminder: %1"
-msgstr "सुरता:"
-
-#: korgac/alarmdialog.cpp:882
-#, fuzzy
-#| msgctxt "@info"
-#| msgid "Could not start KOrganizer."
-msgctxt "@info"
-msgid "Could not start KOrganizer so editing is not possible."
-msgstr "केओर्गनाइजर चालू नइ कर सकिस."
-
-#: korgac/alarmdialog.cpp:894
-#, kde-format
-msgctxt "@info"
-msgid "An internal KOrganizer error occurred attempting to modify \"%1\""
-msgstr ""
-
-#: korgac/korgacmain.cpp:69 korgac/korgacmain.cpp:70
-msgid "KOrganizer Reminder Daemon"
-msgstr "के-आर्गेनाइजर रीमाइंडर डेमन"
-
-#: korgac/korgacmain.cpp:72
-msgid "(c) 2003 Cornelius Schumacher"
-msgstr "(c) 2003 कार्नेलियस सूमेकर"
-
-#: korgac/korgacmain.cpp:78
-msgid "Janitorial Staff"
-msgstr ""
-
 #: korganizer_options.h:36
 #, fuzzy
 msgid "Import the specified files as separate calendars"
@@ -5443,66 +5503,6 @@ msgid ""
 "Calendar files or urls. Unless -i, -o or -m is explicitly specified, the "
 "user will be asked whether to import, merge or open in a separate window."
 msgstr ""
-
-#: navigatorbar.cpp:47
-msgid "Scroll backward to the previous year"
-msgstr ""
-
-#: navigatorbar.cpp:48
-msgid ""
-"Click this button to scroll the display to the same approximate day of the "
-"previous year"
-msgstr ""
-
-#: navigatorbar.cpp:53
-msgid "Scroll backward to the previous month"
-msgstr ""
-
-#: navigatorbar.cpp:54
-msgid ""
-"Click this button to scroll the display to the same approximate date of the "
-"previous month"
-msgstr ""
-
-#: navigatorbar.cpp:59
-msgid "Scroll forward to the next month"
-msgstr ""
-
-#: navigatorbar.cpp:60
-msgid ""
-"Click this button to scroll the display to the same approximate date of the "
-"next month"
-msgstr ""
-
-#: navigatorbar.cpp:65
-msgid "Scroll forward to the next year"
-msgstr ""
-
-#: navigatorbar.cpp:66
-msgid ""
-"Click this button to scroll the display to the same approximate day of the "
-"next year"
-msgstr ""
-
-#: navigatorbar.cpp:74
-msgid "Select a month"
-msgstr "महिना चुनव"
-
-#: navigatorbar.cpp:81
-msgid "Select a year"
-msgstr "महिना चुनव"
-
-#: navigatorbar.cpp:134
-#, kde-format
-msgctxt "monthname"
-msgid "%1"
-msgstr "%1"
-
-#: navigatorbar.cpp:135
-#, kde-format
-msgctxt "4 digit year"
-msgid "%1"
-msgstr "%1"
 
 #: plugins/datenums/configdialog.cpp:46
 msgid "Configure Day Numbers"
@@ -6130,6 +6130,14 @@ msgstr "आगू के हे छापव"
 msgid "Prints a list of all upcoming events and todos."
 msgstr "आने वाले सब्बो घटना अउ काम-सूचियों ल सूची के रूप मं छापव."
 
+#: plugins/printing/year/yearprint.h:40
+msgid "Print &year"
+msgstr "साल छापव (&Y)"
+
+#: plugins/printing/year/yearprint.h:41
+msgid "Prints a calendar for an entire year"
+msgstr "पूरा साल बर एक कलेन्डर छापव"
+
 #: plugins/printing/year/yearprint.cpp:176
 #: views/whatsnextview/kowhatsnextview.cpp:93
 #: views/whatsnextview/kowhatsnextview.cpp:277
@@ -6149,14 +6157,6 @@ msgid ""
 msgstr ""
 "%1 -\n"
 "%2"
-
-#: plugins/printing/year/yearprint.h:40
-msgid "Print &year"
-msgstr "साल छापव (&Y)"
-
-#: plugins/printing/year/yearprint.h:41
-msgid "Prints a calendar for an entire year"
-msgstr "पूरा साल बर एक कलेन्डर छापव"
 
 #: plugins/thisdayinhistory/thisdayinhistory.cpp:53
 msgid "This plugin provides links to Wikipedia's 'This Day in History' pages."
@@ -7002,6 +7002,50 @@ msgstr ","
 msgid "View Columns"
 msgstr ""
 
+#: views/todoview/kotodomodel.cpp:670
+msgctxt "yes, recurring to-do"
+msgid "Yes"
+msgstr "हाँ"
+
+#: views/todoview/kotodomodel.cpp:671
+msgctxt "no, not a recurring to-do"
+msgid "No"
+msgstr "नइ"
+
+#: views/todoview/kotodomodel.cpp:688
+msgctxt "delimiter for joining category names"
+msgid ","
+msgstr ","
+
+#: views/todoview/kotodomodel.cpp:810
+msgid "Summary"
+msgstr "सारांस"
+
+#: views/todoview/kotodomodel.cpp:812
+msgid "Recurs"
+msgstr "बारंबार"
+
+#: views/todoview/kotodomodel.cpp:816
+msgctxt "@title:column percent complete"
+msgid "Complete"
+msgstr "पूरा"
+
+#: views/todoview/kotodomodel.cpp:818
+msgid "Due Date/Time"
+msgstr "नियत तारीक/समय"
+
+#: views/todoview/kotodomodel.cpp:822
+msgid "Description"
+msgstr "वर्नन (&D)"
+
+#: views/todoview/kotodomodel.cpp:997
+msgid "Cannot move to-do to itself or a child of itself."
+msgstr "कामसूची ल खुद मं या एखर सिसु मं खिसकाय नइ जा सके."
+
+#: views/todoview/kotodomodel.cpp:998
+msgid "Drop To-do"
+msgstr "कामसूची ड्राप करव"
+
 #: views/todoview/kotodoview.cpp:136
 msgctxt "Checkbox to display todos not hirarchical"
 msgid "Flat View"
@@ -7084,50 +7128,6 @@ msgstr "8"
 msgctxt "lowest priority"
 msgid "9 (lowest)"
 msgstr "९ (सबसे कम)"
-
-#: views/todoview/kotodomodel.cpp:670
-msgctxt "yes, recurring to-do"
-msgid "Yes"
-msgstr "हाँ"
-
-#: views/todoview/kotodomodel.cpp:671
-msgctxt "no, not a recurring to-do"
-msgid "No"
-msgstr "नइ"
-
-#: views/todoview/kotodomodel.cpp:688
-msgctxt "delimiter for joining category names"
-msgid ","
-msgstr ","
-
-#: views/todoview/kotodomodel.cpp:810
-msgid "Summary"
-msgstr "सारांस"
-
-#: views/todoview/kotodomodel.cpp:812
-msgid "Recurs"
-msgstr "बारंबार"
-
-#: views/todoview/kotodomodel.cpp:816
-msgctxt "@title:column percent complete"
-msgid "Complete"
-msgstr "पूरा"
-
-#: views/todoview/kotodomodel.cpp:818
-msgid "Due Date/Time"
-msgstr "नियत तारीक/समय"
-
-#: views/todoview/kotodomodel.cpp:822
-msgid "Description"
-msgstr "वर्नन (&D)"
-
-#: views/todoview/kotodomodel.cpp:997
-msgid "Cannot move to-do to itself or a child of itself."
-msgstr "कामसूची ल खुद मं या एखर सिसु मं खिसकाय नइ जा सके."
-
-#: views/todoview/kotodomodel.cpp:998
-msgid "Drop To-do"
-msgstr "कामसूची ड्राप करव"
 
 #: views/whatsnextview/kowhatsnextview.cpp:85
 msgid "What's Next?"
@@ -7266,9 +7266,9 @@ msgid ""
 "all its sub-to-dos independent, or cut the to-do with all its sub-to-dos?"
 msgstr ""
 
-#: calendarview.cpp:914 calendarview.cpp:955 calendarview.cpp:1772
-#: calendarview.cpp:1785 calendarview.cpp:2571 calendarview.cpp:2645
-#: calendarview.cpp:2676
+#: calendarview.cpp:914 calendarview.cpp:955 calendarview.cpp:1776
+#: calendarview.cpp:1789 calendarview.cpp:2576 calendarview.cpp:2650
+#: calendarview.cpp:2681
 msgid "KOrganizer Confirmation"
 msgstr "के-आर्गेनाइजर पुस्टिकरन"
 
@@ -7338,7 +7338,7 @@ msgctxt "@title:window"
 msgid "Copying Failed"
 msgstr "नकल करना फेल"
 
-#: calendarview.cpp:1716
+#: calendarview.cpp:1718
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -7346,137 +7346,137 @@ msgid ""
 "been put into %3."
 msgstr ""
 
-#: calendarview.cpp:1721 calendarview.cpp:1742
+#: calendarview.cpp:1723 calendarview.cpp:1744
 #, fuzzy
 #| msgid "Moving Failed"
 msgctxt "@title:window"
 msgid "Moving Failed"
 msgstr "खिसकाना फेल"
 
-#: calendarview.cpp:1727
+#: calendarview.cpp:1729
 #, kde-format
 msgctxt "@info"
 msgid "\"%1\" was successfully moved from %2 to %3."
 msgstr ""
 
-#: calendarview.cpp:1731
+#: calendarview.cpp:1733
 #, fuzzy
 #| msgid "Moving Failed"
 msgctxt "@title:window"
 msgid "Moving Succeeded"
 msgstr "खिसकाना फेल"
 
-#: calendarview.cpp:1738
+#: calendarview.cpp:1740
 #, kde-format
 msgctxt "@info"
 msgid "Unable to add the item \"%1\" into %2. This item has not been moved."
 msgstr ""
 
-#: calendarview.cpp:1768
+#: calendarview.cpp:1772
 #, fuzzy, kde-format
 msgid "Do you want to dissociate the occurrence on %1 from the recurrence?"
 msgstr "पुनरावृत्ति से घटना ल अलग करव"
 
-#: calendarview.cpp:1773
+#: calendarview.cpp:1777
 #, fuzzy
 msgid "&Dissociate"
 msgstr "सम्बद्ध समय (&i)"
 
-#: calendarview.cpp:1780
+#: calendarview.cpp:1784
 #, fuzzy, kde-format
 msgid ""
 "Do you want to dissociate the occurrence on %1 from the recurrence or also "
 "dissociate future ones?"
 msgstr "पुनरावृत्ति से घटना ल अलग करव"
 
-#: calendarview.cpp:1786
+#: calendarview.cpp:1790
 #, fuzzy
 msgid "&Only Dissociate This One"
 msgstr "ये घटना से असम्बद्ध करव (&D)"
 
-#: calendarview.cpp:1787
+#: calendarview.cpp:1791
 #, fuzzy
 msgid "&Also Dissociate Future Ones"
 msgstr "भविस्य के पुनरावृत्ति असम्बद्ध करव (&F)"
 
-#: calendarview.cpp:1803
+#: calendarview.cpp:1807
 msgid "Dissociate occurrence"
 msgstr "पुनरावृत्ति असंबद्ध करव"
 
-#: calendarview.cpp:1813
+#: calendarview.cpp:1817
 msgid "Dissociating the occurrence failed."
 msgstr "पुनरावृत्ति असम्बद्ध करे मं फेल."
 
-#: calendarview.cpp:1814 calendarview.cpp:1841
+#: calendarview.cpp:1818 calendarview.cpp:1845
 msgid "Dissociating Failed"
 msgstr "असम्बद्ध करना फेल"
 
-#: calendarview.cpp:1824
+#: calendarview.cpp:1828
 msgid "Dissociate future occurrences"
 msgstr "भविस्य के पुनरावृत्ति असम्बद्ध करव"
 
-#: calendarview.cpp:1840
+#: calendarview.cpp:1844
 msgid "Dissociating the future occurrences failed."
 msgstr "भविस्य के पुनरावृत्ति असम्बद्ध करना फेल."
 
-#: calendarview.cpp:2003
+#: calendarview.cpp:2007
 #, fuzzy
 msgid "*.ics|iCalendars"
 msgstr "*.ics|कलेन्डर"
 
-#: calendarview.cpp:2013 calendarview.cpp:2065
+#: calendarview.cpp:2017 calendarview.cpp:2069
 #, kde-format
 msgid "Do you want to overwrite %1?"
 msgstr ""
 
-#: calendarview.cpp:2028 calendarview.cpp:2080
+#: calendarview.cpp:2032 calendarview.cpp:2084
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr ""
 
-#: calendarview.cpp:2033
+#: calendarview.cpp:2037
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Cannot write iCalendar file %1. %2"
 msgstr "अभिलेख फाइल %1 लिख नइ सकिस. %2"
 
-#: calendarview.cpp:2044
+#: calendarview.cpp:2048
 #, fuzzy
 #| msgid "The journal entries can not be exported to a vCalendar file."
 msgid "The journal entries cannot be exported to a vCalendar file."
 msgstr "दैनिकी प्रविस्टि मन ल वी-कलेन्डर फाइल मं निर्यात नइ कर सकिस."
 
-#: calendarview.cpp:2045
+#: calendarview.cpp:2049
 msgid "Data Loss Warning"
 msgstr "डाटा नुकसान चेतावनी"
 
-#: calendarview.cpp:2056
+#: calendarview.cpp:2060
 msgid "*.vcs|vCalendars"
 msgstr "*.vcs|वीकलेन्डर्स"
 
-#: calendarview.cpp:2085
+#: calendarview.cpp:2089
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Cannot write vCalendar file %1. %2"
 msgstr "अभिलेख फाइल %1 लिख नइ सकिस. %2"
 
-#: calendarview.cpp:2103
+#: calendarview.cpp:2107
 msgid "&Previous Day"
 msgstr "पिछला दिन (&P)"
 
-#: calendarview.cpp:2106
+#: calendarview.cpp:2110
 msgid "&Previous Week"
 msgstr "पिछला हफ्ता (&P)"
 
-#: calendarview.cpp:2107
+#: calendarview.cpp:2111
 msgid "&Next Week"
 msgstr "अगला हफ्ता (&N)"
 
-#: calendarview.cpp:2204 calendarview.cpp:2243
+#: calendarview.cpp:2208 calendarview.cpp:2247
 msgid "No filter"
 msgstr "कोई छनइया नइ"
 
-#: calendarview.cpp:2566
+#: calendarview.cpp:2571
 #, kde-format
 msgid ""
 "The item \"%1\" has sub-to-dos. Do you want to delete just this item and "
@@ -7484,112 +7484,112 @@ msgid ""
 "dos?"
 msgstr ""
 
-#: calendarview.cpp:2572
+#: calendarview.cpp:2577
 msgid "Delete Only This"
 msgstr "सिरिफ एला ही मेटाव"
 
-#: calendarview.cpp:2573 calendarview.cpp:2646
+#: calendarview.cpp:2578 calendarview.cpp:2651
 msgid "Delete All"
 msgstr "सब्बो मेटाव"
 
-#: calendarview.cpp:2575
+#: calendarview.cpp:2580
 msgid "Deleting sub-to-dos"
 msgstr "उप-काम-सूची मिटात हे"
 
-#: calendarview.cpp:2609
+#: calendarview.cpp:2614
 #, kde-format
 msgid ""
 "The item \"%1\" is marked read-only and cannot be deleted; it probably "
 "belongs to a read-only calendar."
 msgstr ""
 
-#: calendarview.cpp:2613
+#: calendarview.cpp:2618
 msgid "Removing not possible"
 msgstr "मिटाना संभव नइ"
 
-#: calendarview.cpp:2642
+#: calendarview.cpp:2647
 #, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates; are you sure you want "
 "to delete it and all its recurrences?"
 msgstr ""
 
-#: calendarview.cpp:2653
+#: calendarview.cpp:2658
 #, fuzzy
 msgid "Also Delete &Future"
 msgstr "भविस्य मेटाव (&F)"
 
-#: calendarview.cpp:2657
+#: calendarview.cpp:2662
 #, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
 "only the current one on %2, also future occurrences, or all its occurrences?"
 msgstr ""
 
-#: calendarview.cpp:2664
+#: calendarview.cpp:2669
 #, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
 "only the current one on %2 or all its occurrences?"
 msgstr ""
 
-#: calendarview.cpp:2677
+#: calendarview.cpp:2682
 msgid "Delete C&urrent"
 msgstr "अभी हाल के मेटाव (&u)"
 
-#: calendarview.cpp:2679
+#: calendarview.cpp:2684
 msgid "Delete &All"
 msgstr "सब्बो मेटाव (&A)"
 
-#: calendarview.cpp:2753
+#: calendarview.cpp:2758
 msgid "Delete all completed to-dos?"
 msgstr "सब्बो काम-सूची मेटाव?"
 
-#: calendarview.cpp:2754
+#: calendarview.cpp:2759
 msgid "Purge To-dos"
 msgstr "काम-सूची अलग करव"
 
-#: calendarview.cpp:2755
+#: calendarview.cpp:2760
 msgid "Purge"
 msgstr "मेटाव"
 
-#: calendarview.cpp:2759
+#: calendarview.cpp:2764
 msgid "Purging completed to-dos"
 msgstr "काम-सूची अलग करना पूरा"
 
-#: calendarview.cpp:2779
+#: calendarview.cpp:2784
 #, fuzzy
 #| msgid "Unable to purge to-dos with uncompleted children."
 msgctxt "@info"
 msgid "Unable to purge to-dos with uncompleted children."
 msgstr "कामसूची ल अधूरा सिसु के साथ अलग करे मं अक्छम."
 
-#: calendarview.cpp:2780
+#: calendarview.cpp:2785
 msgid "Delete To-do"
 msgstr "कामसूची मेटाव"
 
-#: calendarview.cpp:2793
+#: calendarview.cpp:2798
 #, fuzzy, kde-format
 #| msgid "Unable to modify this to-do, because it cannot be locked."
 msgctxt "@info"
 msgid "Unable to edit \"%1\" because it is locked by another process."
 msgstr "ये काम सूची ल सुधार नइ कर सकिस काबर कि एला तालाबंद नइ कर सकिस."
 
-#: calendarview.cpp:2827
+#: calendarview.cpp:2832
 #, kde-format
 msgid "Unable to copy the item to %1."
 msgstr "चीज ल %1 मं नकल करे मं अक्छम."
 
-#: calendarview.cpp:2828
+#: calendarview.cpp:2833
 msgid "Copying Failed"
 msgstr "नकल करना फेल"
 
-#: calendarview.cpp:2874
+#: calendarview.cpp:2879
 #, kde-format
 msgid "Unable to move the item to  %1."
 msgstr "चीज ल %1 मं खिसकाय मं अक्छम."
 
-#: calendarview.cpp:2875
+#: calendarview.cpp:2880
 msgid "Moving Failed"
 msgstr "खिसकाना फेल"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-22 03:47+0200\n"
+"POT-Creation-Date: 2011-07-06 03:59+0200\n"
 "PO-Revision-Date: 2009-02-17 12:43+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -912,63 +912,6 @@ msgstr "आईपीटीसी अक्छर सेटः"
 msgid "<No Search>"
 msgstr "<कोई खोज नइ>"
 
-#: HTMLGenerator/Generator.cpp:47
-msgid "Generating images for HTML page "
-msgstr "एचटीएमएल पेज बर फोटू बनावत हे"
-
-#: HTMLGenerator/Generator.cpp:137
-#, kde-format
-msgid "Error copying %1 to %2"
-msgstr "%1 ल %2 मं नकल करे मं गलती"
-
-#: HTMLGenerator/Generator.cpp:347
-#, kde-format
-msgid "<a href=\"%1\">prev</a>"
-msgstr "<a href=\"%1\">पीछू</a>"
-
-#: HTMLGenerator/Generator.cpp:349 HTMLGenerator/Generator.cpp:357
-msgid "prev"
-msgstr "पीछू"
-
-#: HTMLGenerator/Generator.cpp:361
-#, c-format, kde-format
-msgid "<a href=\"index-%1.html\">index</a>"
-msgstr "<a href=\"index-%1.html\">इंडेक्स</a>"
-
-#: HTMLGenerator/Generator.cpp:370
-#, kde-format
-msgid "<a href=\"%1\">next</a>"
-msgstr "<a href=\"%1\">आगू</a>"
-
-#: HTMLGenerator/Generator.cpp:372 HTMLGenerator/Generator.cpp:379
-msgid "next"
-msgstr "आगू"
-
-#: HTMLGenerator/Generator.cpp:503
-#, kde-format
-msgid "Could not create file '%1'."
-msgstr "फाइल '%1' ल तैयार नइ कर सकिस"
-
-#: HTMLGenerator/Generator.cpp:504
-msgid "Could Not Create File"
-msgstr "फाइल तैयार नइ कर सकिस"
-
-#: HTMLGenerator/Generator.cpp:536
-#, kde-format
-msgid "<p>Unable to copy %1 to %2</p>"
-msgstr "<p>'%1' के नकल '%2' मं करे मं अक्छम</p>"
-
-#: HTMLGenerator/Generator.cpp:568
-#, kde-format
-msgid "Unable to write image '%1'."
-msgstr "फोटू '%1' लिखे मं असमर्थ."
-
-#: HTMLGenerator/Generator.cpp:645 HTMLGenerator/HTMLDialog.cpp:112
-#, fuzzy
-#| msgid "Date: "
-msgid "Date"
-msgstr "तारीक:"
-
 #: HTMLGenerator/HTMLDialog.cpp:50
 msgid "HTML Export"
 msgstr "एचटीएमएल निर्यात"
@@ -1000,6 +943,12 @@ msgstr "पेज मन मं इनलाइन सिनेमा"
 #: HTMLGenerator/HTMLDialog.cpp:104
 msgid "What to Include"
 msgstr "का सामिल करव"
+
+#: HTMLGenerator/HTMLDialog.cpp:112 HTMLGenerator/Generator.cpp:675
+#, fuzzy
+#| msgid "Date: "
+msgid "Date"
+msgstr "तारीक:"
 
 #: HTMLGenerator/HTMLDialog.cpp:141 HTMLGenerator/HTMLDialog.cpp:142
 msgid "Layout"
@@ -1111,6 +1060,57 @@ msgstr "कोई प्रसंग नइ मिलिस- बहुत सं
 #, kde-format
 msgid "More than one theme is set as default, using theme %1"
 msgstr ""
+
+#: HTMLGenerator/Generator.cpp:47
+msgid "Generating images for HTML page "
+msgstr "एचटीएमएल पेज बर फोटू बनावत हे"
+
+#: HTMLGenerator/Generator.cpp:137
+#, kde-format
+msgid "Error copying %1 to %2"
+msgstr "%1 ल %2 मं नकल करे मं गलती"
+
+#: HTMLGenerator/Generator.cpp:377
+#, kde-format
+msgid "<a href=\"%1\">prev</a>"
+msgstr "<a href=\"%1\">पीछू</a>"
+
+#: HTMLGenerator/Generator.cpp:379 HTMLGenerator/Generator.cpp:387
+msgid "prev"
+msgstr "पीछू"
+
+#: HTMLGenerator/Generator.cpp:391
+#, c-format, kde-format
+msgid "<a href=\"index-%1.html\">index</a>"
+msgstr "<a href=\"index-%1.html\">इंडेक्स</a>"
+
+#: HTMLGenerator/Generator.cpp:400
+#, kde-format
+msgid "<a href=\"%1\">next</a>"
+msgstr "<a href=\"%1\">आगू</a>"
+
+#: HTMLGenerator/Generator.cpp:402 HTMLGenerator/Generator.cpp:409
+msgid "next"
+msgstr "आगू"
+
+#: HTMLGenerator/Generator.cpp:533
+#, kde-format
+msgid "Could not create file '%1'."
+msgstr "फाइल '%1' ल तैयार नइ कर सकिस"
+
+#: HTMLGenerator/Generator.cpp:534
+msgid "Could Not Create File"
+msgstr "फाइल तैयार नइ कर सकिस"
+
+#: HTMLGenerator/Generator.cpp:566
+#, kde-format
+msgid "<p>Unable to copy %1 to %2</p>"
+msgstr "<p>'%1' के नकल '%2' मं करे मं अक्छम</p>"
+
+#: HTMLGenerator/Generator.cpp:598
+#, kde-format
+msgid "Unable to write image '%1'."
+msgstr "फोटू '%1' लिखे मं असमर्थ."
 
 #: ImageManager/ThumbnailBuilder.cpp:102
 #, fuzzy
@@ -2347,8 +2347,6 @@ msgstr[1] ""
 
 #: MainWindow/DeleteDialog.cpp:80
 #, kde-format
-#| msgid "Move file to Trash"
-#| msgid_plural "Move files to Trash"
 msgid "Move file to Trash"
 msgid_plural "Move %1 files to Trash"
 msgstr[0] ""
@@ -3404,7 +3402,7 @@ msgstr "पूरा स्क्रीन टागल करव"
 msgid "Slideshow"
 msgstr "स्लाइड-सो"
 
-#: Viewer/ViewerWidget.cpp:400 Viewer/ViewerWidget.cpp:849
+#: Viewer/ViewerWidget.cpp:400 Viewer/ViewerWidget.cpp:843
 msgid "Run Slideshow"
 msgstr "स्लाइड सो चलाव"
 
@@ -3428,105 +3426,105 @@ msgstr "चलाव"
 msgid "Pause"
 msgstr "ठहरव"
 
-#: Viewer/ViewerWidget.cpp:798
+#: Viewer/ViewerWidget.cpp:792
 #, fuzzy
 #| msgid "<b>Sub Categories</b>"
 msgid "<b>Setting Category: </b>"
 msgstr "<b>उप स्रेनी</b>"
 
-#: Viewer/ViewerWidget.cpp:805
+#: Viewer/ViewerWidget.cpp:799
 #, fuzzy
 #| msgid "<b>Description: </b> "
 msgid "<b>Assigning: </b>"
 msgstr "<b>वर्नन: </b> "
 
-#: Viewer/ViewerWidget.cpp:856
+#: Viewer/ViewerWidget.cpp:850
 msgid "Stop Slideshow"
 msgstr "स्लाइड सो बन्द करव"
 
-#: Viewer/ViewerWidget.cpp:1276
+#: Viewer/ViewerWidget.cpp:1270
 msgid "Seek"
 msgstr "देखव"
 
-#: Viewer/ViewerWidget.cpp:1280
+#: Viewer/ViewerWidget.cpp:1274
 msgid "10 minutes backward"
 msgstr "10 मिनट पीछू"
 
-#: Viewer/ViewerWidget.cpp:1281
+#: Viewer/ViewerWidget.cpp:1275
 msgid "1 minute backward"
 msgstr "१ मिनट पीछू"
 
-#: Viewer/ViewerWidget.cpp:1282
+#: Viewer/ViewerWidget.cpp:1276
 msgid "10 seconds backward"
 msgstr "१० सेकन्ड पीछू"
 
-#: Viewer/ViewerWidget.cpp:1283
+#: Viewer/ViewerWidget.cpp:1277
 msgid "1 seconds backward"
 msgstr "१ सेकन्ड पीछू"
 
-#: Viewer/ViewerWidget.cpp:1284
+#: Viewer/ViewerWidget.cpp:1278
 #, fuzzy
 #| msgid "100 miliseconds backward"
 msgid "100 milliseconds backward"
 msgstr "१०० मिलायकन्ड पीछू"
 
-#: Viewer/ViewerWidget.cpp:1285
+#: Viewer/ViewerWidget.cpp:1279
 #, fuzzy
 #| msgid "100 miliseconds forward"
 msgid "100 milliseconds forward"
 msgstr "१०० मिलायकन्ड आगू"
 
-#: Viewer/ViewerWidget.cpp:1286
+#: Viewer/ViewerWidget.cpp:1280
 msgid "1 seconds forward"
 msgstr "१ सेकन्ड आगू"
 
-#: Viewer/ViewerWidget.cpp:1287
+#: Viewer/ViewerWidget.cpp:1281
 msgid "10 seconds forward"
 msgstr "१० सेकन्ड आगू"
 
-#: Viewer/ViewerWidget.cpp:1288
+#: Viewer/ViewerWidget.cpp:1282
 msgid "1 minute forward"
 msgstr "१ मिनट आगू"
 
-#: Viewer/ViewerWidget.cpp:1289
+#: Viewer/ViewerWidget.cpp:1283
 msgid "10 minutes forward"
 msgstr "१० मिनट आगू"
 
-#: Viewer/ViewerWidget.cpp:1312
+#: Viewer/ViewerWidget.cpp:1306
 msgid "Stop"
 msgstr "रुकव"
 
-#: Viewer/ViewerWidget.cpp:1318
+#: Viewer/ViewerWidget.cpp:1312
 msgid "Toggle playback"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:1323
+#: Viewer/ViewerWidget.cpp:1317
 msgid "Restart"
 msgstr "फिर से चालू करव"
 
-#: Viewer/ViewerWidget.cpp:1338
+#: Viewer/ViewerWidget.cpp:1332
 #, fuzzy
 #| msgid "First"
 msgid "Filters"
 msgstr "पहिली"
 
-#: Viewer/ViewerWidget.cpp:1341
+#: Viewer/ViewerWidget.cpp:1335
 msgid "Remove All Filters"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:1345
+#: Viewer/ViewerWidget.cpp:1339
 msgid "Apply Grayscale Filter"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:1350
+#: Viewer/ViewerWidget.cpp:1344
 msgid "Apply Contrast Stretching Filter"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:1355
+#: Viewer/ViewerWidget.cpp:1349
 msgid "Apply Histogram Equalization Filter"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:1360
+#: Viewer/ViewerWidget.cpp:1354
 msgid "Apply Monochrome Filter"
 msgstr ""
 
@@ -3642,15 +3640,15 @@ msgstr "फाइल %1 मं गलती: कोनो एलिमेंट 
 msgid "Error in file %1: expected 'KPhotoAlbum' as top element but found '%2'"
 msgstr "फाइल %1 मं गलती: चाही रहिस 'केफोटोएलबम' के जइसन सीर्स एलिमेंट, फेर मिलिस '%2'"
 
-#: XMLDB/FileWriter.cpp:66
-#, kde-format
-msgid "Could not open file '%1'."
-msgstr "फाइल '%1' खोल नइ सकिस."
-
 #: XMLDB/NumberedBackup.cpp:40
 #, kde-format
 msgid "Error creating zip file %1"
 msgstr "जिप फाइल %1 तैयार करे मं गलती"
+
+#: XMLDB/FileWriter.cpp:64
+#, kde-format
+msgid "Could not open file '%1'."
+msgstr "फाइल '%1' खोल नइ सकिस."
 
 #: main.cpp:41
 msgid "KPhotoAlbum"
@@ -3685,7 +3683,7 @@ msgid "SQL backend and numerous features"
 msgstr "एसक्यूएल बैकएन्ड अउ दुसरा विसेसता"
 
 #: main.cpp:48
-msgid "Jan Kundrat"
+msgid "Jan Kundr&aacute;t"
 msgstr ""
 
 #: main.cpp:49
