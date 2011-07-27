@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-26 03:52+0200\n"
+"POT-Creation-Date: 2011-07-27 03:41+0200\n"
 "PO-Revision-Date: 2009-03-02 23:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -135,6 +135,24 @@ msgstr "प्लगइन \"%1\" ल लोड नइ कर सकिस."
 msgctxt "database connection"
 msgid "(connection %1)"
 msgstr "(कनेक्सन %1)"
+
+#: core/KexiWindow.cpp:612
+msgid ""
+"Design has been changed. You must save it before switching to other view."
+msgstr "डिजाइन बदल गे हे. अउ दृस्य मं स्विच करे से पहिली आप मन ल एला सहेज ले चाही."
+
+#: core/KexiWindow.cpp:677 main/KexiMainWindow.cpp:3582
+#, kde-format
+msgid "Switching to other view failed (%1)."
+msgstr "अऊ दूसर दृस्य मं स्विच करना फेल (%1)."
+
+#: core/KexiWindow.cpp:859
+msgid "Saving object's definition failed."
+msgstr "चीज के परिभासा सहेजे मं फेल."
+
+#: core/KexiWindow.cpp:943
+msgid "Saving object's data failed."
+msgstr "चीज के डाटा सहेजे मं फेल."
 
 #: core/kexicmdlineargs.h:32
 msgid "Options related to entire projects:"
@@ -739,24 +757,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raviratlami@aol.in"
 
-#: core/KexiWindow.cpp:612
-msgid ""
-"Design has been changed. You must save it before switching to other view."
-msgstr "डिजाइन बदल गे हे. अउ दृस्य मं स्विच करे से पहिली आप मन ल एला सहेज ले चाही."
-
-#: core/KexiWindow.cpp:677 main/KexiMainWindow.cpp:3582
-#, kde-format
-msgid "Switching to other view failed (%1)."
-msgstr "अऊ दूसर दृस्य मं स्विच करना फेल (%1)."
-
-#: core/KexiWindow.cpp:859
-msgid "Saving object's definition failed."
-msgstr "चीज के परिभासा सहेजे मं फेल."
-
-#: core/KexiWindow.cpp:943
-msgid "Saving object's data failed."
-msgstr "चीज के डाटा सहेजे मं फेल."
-
 #: core/kexi.cpp:122
 msgid "&No View"
 msgstr "कोई दृस्य नइ (&N)"
@@ -794,7 +794,8 @@ msgstr "स्टेट_एसक्यूएल"
 #| msgid ""
 #| "You can correct data in this row or use \"Cancel row changes\" function."
 msgid ""
-"You can correct data in this row or use \"Cancel record changes\" function."
+"You can correct data in this record or use \"Cancel record changes\" "
+"function."
 msgstr ""
 "आप एखर लकीर मं डाटा सही कर सकथो या \"Cancel row changes\" फंक्सन के परयोग करव."
 
@@ -3027,22 +3028,6 @@ msgstr "चीज मेटाव"
 msgid "file"
 msgstr "फाइल"
 
-#: kexidb/cursor.cpp:145
-msgid "No query statement or schema defined."
-msgstr "कोई क्वैरी कथन या प्रसंग परिभासित नइ."
-
-#: kexidb/cursor.cpp:155
-msgid "Query statement is empty."
-msgstr "क्वैरी कथन खाली हे."
-
-#: kexidb/cursor.cpp:165
-msgid "Error opening database cursor."
-msgstr "डाटाबेस संकेतक खोले मं गलती."
-
-#: kexidb/cursor.cpp:410 kexidb/cursor.cpp:433
-msgid "Cannot fetch next record."
-msgstr "अगला रेकार्ड ला नइ सकिस."
-
 #: kexidb/dbobjectnamevalidator.cpp:46
 #, kde-format
 msgid ""
@@ -3913,6 +3898,22 @@ msgstr "सर्वर मं लकीर मिटाना फेल रह�
 msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
 msgid "expr"
 msgstr "एक्सप्र"
+
+#: kexidb/cursor.cpp:145
+msgid "No query statement or schema defined."
+msgstr "कोई क्वैरी कथन या प्रसंग परिभासित नइ."
+
+#: kexidb/cursor.cpp:155
+msgid "Query statement is empty."
+msgstr "क्वैरी कथन खाली हे."
+
+#: kexidb/cursor.cpp:165
+msgid "Error opening database cursor."
+msgstr "डाटाबेस संकेतक खोले मं गलती."
+
+#: kexidb/cursor.cpp:410 kexidb/cursor.cpp:433
+msgid "Cannot fetch next record."
+msgstr "अगला रेकार्ड ला नइ सकिस."
 
 #: kexiutils/identifier.cpp:92
 #, kde-format
@@ -7603,26 +7604,6 @@ msgstr "बदलाव सुधारव"
 msgid "Discard Changes"
 msgstr "बदलाव मन ल फेंक देव"
 
-#: widget/tableview/kexitableview.cpp:120
-#, fuzzy
-#| msgid "Contains a pointer to the currently selected row"
-msgid "Contains a pointer to the currently selected record"
-msgstr "अभी हाल के चुने गे लकीर मं एक पाइंटर हे"
-
-#: widget/tableview/kexitableview.cpp:122
-#, fuzzy
-#| msgid "Row navigator"
-msgid "Record navigator"
-msgstr "लकीर नेविगेटर"
-
-#: widget/tableview/kexitableview.cpp:242
-msgid "Add Record"
-msgstr "रेकार्ड जोड़व"
-
-#: widget/tableview/kexitableview.cpp:245
-msgid "Remove Record"
-msgstr "रेकार्ड मेटाव"
-
 #: widget/tableview/kexitableviewdata.cpp:596
 #: widget/tableview/kexitableviewdata.cpp:607
 #, kde-format
@@ -7646,6 +7627,26 @@ msgstr "लकीर बदलना फेल."
 #| msgid "Row deleting failed."
 msgid "Record deleting failed."
 msgstr "लकीर मेटाय मं फेल."
+
+#: widget/tableview/kexitableview.cpp:120
+#, fuzzy
+#| msgid "Contains a pointer to the currently selected row"
+msgid "Contains a pointer to the currently selected record"
+msgstr "अभी हाल के चुने गे लकीर मं एक पाइंटर हे"
+
+#: widget/tableview/kexitableview.cpp:122
+#, fuzzy
+#| msgid "Row navigator"
+msgid "Record navigator"
+msgstr "लकीर नेविगेटर"
+
+#: widget/tableview/kexitableview.cpp:242
+msgid "Add Record"
+msgstr "रेकार्ड जोड़व"
+
+#: widget/tableview/kexitableview.cpp:245
+msgid "Remove Record"
+msgstr "रेकार्ड मेटाव"
 
 #: widget/utils/kexidatetimeformatter.cpp:303
 msgid "pm"
