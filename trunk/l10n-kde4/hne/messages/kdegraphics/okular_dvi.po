@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: okular_dvi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-06 04:16+0200\n"
+"POT-Creation-Date: 2011-07-28 04:16+0200\n"
 "PO-Revision-Date: 2009-02-26 15:55+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -164,16 +164,6 @@ msgid ""
 "This is the output of the <strong>pdf2ps</strong> program that Okular used:</"
 "p><p><strong>%2</strong></p></qt>"
 msgstr ""
-
-#: dviRenderer.cpp:232
-msgid ""
-"<qt><strong>File corruption</strong> Okular could not interpret your DVI "
-"file. This is most commonly caused by a corrupted file.</qt>"
-msgstr ""
-
-#: dviRenderer.cpp:234
-msgid "DVI File Error"
-msgstr "डीवीआई फाइल गलती"
 
 #: dviRenderer_draw.cpp:261
 msgid "The DVI code set a character of an unknown font."
@@ -419,27 +409,15 @@ msgstr ""
 msgid "Wrong command byte found in VF macro list: %1"
 msgstr "वीएफ मेक्रो सूची : %1 मं गलत कमांड बाइट मिलिस"
 
-#: generator_dvi.cpp:54
-msgid "DVI Backend"
+#: dviRenderer.cpp:232
+msgid ""
+"<qt><strong>File corruption</strong> Okular could not interpret your DVI "
+"file. This is most commonly caused by a corrupted file.</qt>"
 msgstr ""
 
-#: generator_dvi.cpp:56
-#, fuzzy
-#| msgid "DVI File Error"
-msgid "A DVI file renderer"
+#: dviRenderer.cpp:234
+msgid "DVI File Error"
 msgstr "डीवीआई फाइल गलती"
-
-#: generator_dvi.cpp:58
-msgid "© 2006 Luigi Toscano"
-msgstr ""
-
-#: generator_dvi.cpp:355
-msgid "Generator/Date"
-msgstr "जेनरेटर/तारीक"
-
-#: generator_dvi.cpp:448
-msgid "Font file not found"
-msgstr "फोंट फाइल नइ मिलिस"
 
 #: dviexport.cpp:74
 msgid "Please be patient"
@@ -461,11 +439,11 @@ msgstr ""
 msgid "*.pdf|Portable Document Format (*.pdf)"
 msgstr "*.pdf|पोर्टेबल कागद फार्मेट (*.pdf)"
 
-#: dviexport.cpp:247 dviexport.cpp:334
+#: dviexport.cpp:247 dviexport.cpp:336
 msgid "Export File As"
 msgstr "फाइल अइसन निर्यात करव"
 
-#: dviexport.cpp:255 dviexport.cpp:342
+#: dviexport.cpp:255 dviexport.cpp:344
 #, kde-format
 msgid ""
 "The file %1\n"
@@ -474,11 +452,11 @@ msgstr ""
 "फाइल %1 \n"
 "पहिली से ही मौजूद हे. का आप मन एखर ऊपर लिखना चाहथो ?"
 
-#: dviexport.cpp:256 dviexport.cpp:343
+#: dviexport.cpp:256 dviexport.cpp:345
 msgid "Overwrite File"
 msgstr "फाइल के ऊपर लिखव"
 
-#: dviexport.cpp:257 dviexport.cpp:344
+#: dviexport.cpp:257 dviexport.cpp:346
 msgid "Overwrite"
 msgstr "मेटाय के लिखव"
 
@@ -510,7 +488,7 @@ msgid ""
 "report.</qt>"
 msgstr ""
 
-#: dviexport.cpp:309
+#: dviexport.cpp:311
 msgid ""
 "<qt><P>This DVI file refers to external graphic files which are not in "
 "PostScript format, and cannot be handled by the <strong>dvips</strong> "
@@ -521,11 +499,11 @@ msgid ""
 "p><p>It is planned to add this functionality at a later date.</p></qt>"
 msgstr ""
 
-#: dviexport.cpp:315
+#: dviexport.cpp:317
 msgid "Functionality Unavailable"
 msgstr "फंक्सनलिटी नइ मिलत"
 
-#: dviexport.cpp:321
+#: dviexport.cpp:323
 msgid ""
 "Okular could not locate the program 'dvips' on your computer. That program "
 "is essential for the export function to work.\n"
@@ -533,37 +511,59 @@ msgid ""
 "variable when looking for programs."
 msgstr ""
 
-#: dviexport.cpp:334
+#: dviexport.cpp:336
 msgid "*.ps|PostScript (*.ps)"
 msgstr "*.ps|पोस्टस्क्रिप्ट (*.ps)"
 
-#: dviexport.cpp:421
+#: dviexport.cpp:423
 msgid "Using dvips to export the file to PostScript"
 msgstr "फाइल ल पोस्टस्र्किप्ट मं निर्यात करे बर डीवीआईपीएस उपयोग करत हे"
 
-#: dviexport.cpp:422
+#: dviexport.cpp:424
 msgid ""
 "Okular is currently using the external program 'dvips' to convert your DVI-"
 "file to PostScript. Sometimes that can take a while because dvips needs to "
 "generate its own bitmap fonts Please be patient."
 msgstr ""
 
-#: dviexport.cpp:426
+#: dviexport.cpp:428
 msgid "Waiting for dvips to finish..."
 msgstr "डीवीआईपीएस पूरा होए के इंतजार में..."
 
-#: dviexport.cpp:429
+#: dviexport.cpp:431
 #, kde-format
 msgid "Export: %1 to PostScript"
 msgstr "%1 ल पोस्टस्क्रिप्ट मं निर्यात करव"
 
-#: dviexport.cpp:448
+#: dviexport.cpp:450
 msgid ""
 "<qt>The external program 'dvips', which was used to export the file, "
 "reported an error. You might wish to look at the <strong>document info "
 "dialog</strong> which you will find in the File-Menu for a precise error "
 "report.</qt>"
 msgstr ""
+
+#: generator_dvi.cpp:54
+msgid "DVI Backend"
+msgstr ""
+
+#: generator_dvi.cpp:56
+#, fuzzy
+#| msgid "DVI File Error"
+msgid "A DVI file renderer"
+msgstr "डीवीआई फाइल गलती"
+
+#: generator_dvi.cpp:58
+msgid "© 2006 Luigi Toscano"
+msgstr ""
+
+#: generator_dvi.cpp:355
+msgid "Generator/Date"
+msgstr "जेनरेटर/तारीक"
+
+#: generator_dvi.cpp:448
+msgid "Font file not found"
+msgstr "फोंट फाइल नइ मिलिस"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
