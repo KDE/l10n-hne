@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: k3b\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-16 03:49+0200\n"
+"POT-Creation-Date: 2011-07-30 03:50+0200\n"
 "PO-Revision-Date: 2009-03-08 13:15+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -480,30 +480,9 @@ msgstr ""
 msgid "Setting the read speed failed."
 msgstr "पढ़े के गति सेट करे मं फेल"
 
-#: k3bdirview.cpp:206
-msgid ""
-"K3b uses vcdxrip from the vcdimager package to rip Video CDs. Please make "
-"sure it is installed."
-msgstr ""
-
-#: k3bdirview.cpp:240
-msgid "Mount Failed"
-msgstr "माउन्ट फेल"
-
-#: k3bdirview.cpp:241
-#, kde-format
-msgid "<p>K3b was unable to mount medium <b>%1</b> in device <em>%2 - %3</em>"
-msgstr ""
-
-#: k3bdirview.cpp:256
-msgid "Unmount Failed"
-msgstr "अनमाउन्ट फेल"
-
-#: k3bdirview.cpp:257
-#, kde-format
-msgid ""
-"<p>K3b was unable to unmount medium <b>%1</b> in device <em>%2 - %3</em>"
-msgstr ""
+#: k3bfiletreeview.cpp:96 k3bdiroperator.cpp:55
+msgid "&Add to Project"
+msgstr "परियोजना मं जोड़व (&A)"
 
 #: k3bburnprogressdialog.cpp:39
 msgid "Estimated writing speed:"
@@ -576,6 +555,31 @@ msgstr "क्लिपबोर्ड मं नकल करव"
 msgid "Could not open file %1"
 msgstr "फाइल %1 खोल नइ सकिस"
 
+#: k3bdirview.cpp:206
+msgid ""
+"K3b uses vcdxrip from the vcdimager package to rip Video CDs. Please make "
+"sure it is installed."
+msgstr ""
+
+#: k3bdirview.cpp:240
+msgid "Mount Failed"
+msgstr "माउन्ट फेल"
+
+#: k3bdirview.cpp:241
+#, kde-format
+msgid "<p>K3b was unable to mount medium <b>%1</b> in device <em>%2 - %3</em>"
+msgstr ""
+
+#: k3bdirview.cpp:256
+msgid "Unmount Failed"
+msgstr "अनमाउन्ट फेल"
+
+#: k3bdirview.cpp:257
+#, kde-format
+msgid ""
+"<p>K3b was unable to unmount medium <b>%1</b> in device <em>%2 - %3</em>"
+msgstr ""
+
 #: k3bdiroperator.cpp:48
 msgid "K3b Bookmarks"
 msgstr "के3बी पसंद"
@@ -583,10 +587,6 @@ msgstr "के3बी पसंद"
 #: k3bdiroperator.cpp:51
 msgid "Bookmarks"
 msgstr " निसानी "
-
-#: k3bdiroperator.cpp:55 k3bfiletreeview.cpp:96
-msgid "&Add to Project"
-msgstr "परियोजना मं जोड़व (&A)"
 
 #: k3bdiskinfoview.cpp:80
 msgid "No medium present"
@@ -681,9 +681,9 @@ msgstr "गुनधर्म"
 msgid "First-Last Sector"
 msgstr "पहिली-आखरी सेक्टर"
 
-#: k3bdiskinfoview.cpp:256 rip/k3bvideocdview.cpp:210
-#: rip/k3baudiotrackmodel.cpp:165 rip/k3baudioprojectconvertingdialog.cpp:126
-#: rip/k3baudiorippingdialog.cpp:143
+#: k3bdiskinfoview.cpp:256 rip/k3baudiotrackmodel.cpp:165
+#: rip/k3baudioprojectconvertingdialog.cpp:126
+#: rip/k3baudiorippingdialog.cpp:143 rip/k3bvideocdview.cpp:210
 msgid "Length"
 msgstr "लंबाई"
 
@@ -703,11 +703,11 @@ msgstr "मीडिया पहिचान"
 #: k3bdiskinfoview.cpp:299 rip/k3bpatternparser.cpp:124
 #: rip/k3bpatternparser.cpp:160 rip/k3bpatternparser.cpp:168
 #: rip/videodvd/k3bvideodvdrippingwidget.cpp:277
-#: rip/k3baudioconvertingoptionwidget.cpp:223
-#: rip/k3baudioconvertingoptionwidget.cpp:257
 #: rip/k3baudioprojectconvertingdialog.cpp:275
 #: rip/k3baudioprojectconvertingdialog.cpp:314
 #: rip/k3baudiorippingdialog.cpp:357 rip/k3baudiorippingdialog.cpp:412
+#: rip/k3baudioconvertingoptionwidget.cpp:223
+#: rip/k3baudioconvertingoptionwidget.cpp:257
 msgid "unknown"
 msgstr "अग्यात"
 
@@ -1125,6 +1125,528 @@ msgstr "डिरेक्टरी मं खाली जगह:"
 #| msgid "Capacity:"
 msgid "Capacity: %1"
 msgstr "छमता:"
+
+#: k3bapplication.cpp:161
+msgid "K3b is busy"
+msgstr "के3बी व्यस्त हे"
+
+#: k3bapplication.cpp:162
+msgid "K3b is currently busy and cannot start any other operations."
+msgstr ""
+
+#: k3bprojectmanager.cpp:211
+#, kde-format
+msgid "AudioCD%1"
+msgstr "आडियो-सीडी%1"
+
+#: k3bprojectmanager.cpp:217
+#, kde-format
+msgid "Data%1"
+msgstr "डाटा %1"
+
+#: k3bprojectmanager.cpp:223
+#, kde-format
+msgid "MixedCD%1"
+msgstr "मिक्स्ड-सीडी%1"
+
+#: k3bprojectmanager.cpp:229
+#, kde-format
+msgid "VideoCD%1"
+msgstr "वीडियो-सीडी%1"
+
+#: k3bprojectmanager.cpp:235
+#, kde-format
+msgid "eMovix%1"
+msgstr "ई-मूविक्स %1"
+
+#: k3bprojectmanager.cpp:241
+#, kde-format
+msgid "VideoDVD%1"
+msgstr "वीडियो-डीवीडी%1"
+
+#: k3bprojecttabwidget.cpp:82 projects/k3bprojectburndialog.cpp:61
+msgid "Project"
+msgstr "परियोजना"
+
+#: k3bstatusbarmanager.cpp:60
+msgid "Temp:"
+msgstr "टेम्प:"
+
+#: k3bstatusbarmanager.cpp:120
+msgid "No info"
+msgstr "कोई जानकारी नइ"
+
+#: k3bstatusbarmanager.cpp:162
+#, fuzzy, kde-format
+#| msgid "1 folder"
+#| msgid_plural "%1 folders"
+msgid "one folder"
+msgid_plural "%1 folders"
+msgstr[0] "१ फोल्डर"
+msgstr[1] "%1 फोल्डर"
+
+#: k3bstatusbarmanager.cpp:159
+#, fuzzy, kde-format
+#| msgid "1 file (%2)"
+#| msgid_plural "%1 files (%2)"
+msgid "One file in %2"
+msgid_plural "%1 files in %2"
+msgstr[0] "1 फाइल (%2)"
+msgstr[1] "%1 फाइल (%2)"
+
+#: k3bstatusbarmanager.cpp:189
+#, kde-format
+msgid "Audio CD (1 track)"
+msgid_plural "Audio CD (%1 tracks)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: k3bstatusbarmanager.cpp:195
+#, kde-format
+msgid "Data Project (%1)"
+msgstr "डाटा परियोजना (%1)"
+
+#: k3bstatusbarmanager.cpp:202
+#, kde-format
+msgid "Mixed CD (1 track and %2)"
+msgid_plural "Mixed CD (%1 tracks and %2)"
+msgstr[0] "मिक्सड सीडी (1 ट्रैक अउ %2)"
+msgstr[1] "मिक्सड सीडी (%1 ट्रैक अउ %2)"
+
+#: k3bstatusbarmanager.cpp:209
+#, kde-format
+msgid "Video CD (1 track)"
+msgid_plural "Video CD (%1 tracks)"
+msgstr[0] "वीडियो सीडी (1 ट्रैक)"
+msgstr[1] "वीडियो सीडी (%1 ट्रैक)"
+
+#: k3bstatusbarmanager.cpp:215
+#, kde-format
+msgid "eMovix Project (%1)"
+msgstr "ईमूविक्स परियोजना (%1)"
+
+#: k3bstatusbarmanager.cpp:221
+#, kde-format
+msgid "Video DVD (%1)"
+msgstr "वीडियो डीवीडी (%1)"
+
+#: k3bsystemproblemdialog.cpp:89 k3bsystemproblemdialog.cpp:96
+msgid "System Configuration Problems"
+msgstr "तंत्र कानफिगुरेसन समस्या"
+
+#: k3bsystemproblemdialog.cpp:97
+#, kde-format
+msgid "1 problem"
+msgid_plural "%1 problems"
+msgstr[0] "१ समस्या"
+msgstr[1] "%1 समस्या"
+
+#: k3bsystemproblemdialog.cpp:101
+msgid "Do not show again"
+msgstr "फिर से नइ देखाव"
+
+#: k3bsystemproblemdialog.cpp:106 option/k3bdevicewidget.cpp:57
+#, fuzzy
+#| msgid "&Setup System Permissions..."
+msgid "Modify Permissions..."
+msgstr "सिस्टम अनुमति सेटअप करव... (&S)"
+
+#: k3bsystemproblemdialog.cpp:152
+msgid "Solution"
+msgstr "समाधान"
+
+#: k3bsystemproblemdialog.cpp:181
+msgid "Click \"Modify Permissions...\" to solve this problem."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:188
+#, fuzzy
+#| msgid "No usable medium found."
+msgid "No optical drive found."
+msgstr "कोई उपयोगी मीडियम नइ मिलिस."
+
+#: k3bsystemproblemdialog.cpp:189
+msgid "K3b did not find any optical device in your system."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:191
+msgid "Make sure HAL daemon is running, it is used by K3b for finding devices."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:199
+#, fuzzy
+#| msgid "No CD/DVD writer found."
+msgid "No CD/DVD/BD writer found."
+msgstr "कोई सीडी/डीवीडी राइटर नइ मिलीस."
+
+#: k3bsystemproblemdialog.cpp:200
+msgid ""
+"K3b did not find an optical writing device in your system. Thus, you will "
+"not be able to burn CDs or DVDs. However, you can still use other K3b "
+"features such as audio track extraction, audio transcoding or ISO9660 image "
+"creation."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:210 k3bsystemproblemdialog.cpp:265
+#: k3bsystemproblemdialog.cpp:290 k3bsystemproblemdialog.cpp:335
+#, kde-format
+msgid "Unable to find %1 executable"
+msgstr "एक्जीक्यूटेबल %1 खोजे मं फेल."
+
+#: k3bsystemproblemdialog.cpp:211
+msgid "K3b uses cdrecord to actually write CDs."
+msgstr "के3बी सही मं सीडीरेकार्ड के उपयोग सीडी लिखे मं करथे ."
+
+#: k3bsystemproblemdialog.cpp:212
+msgid "Install the cdrtools package which contains cdrecord."
+msgstr "सीडीआरटूल्स पैकेज इनस्टाल करव जेमां सीडीरेकार्ड हे."
+
+#: k3bsystemproblemdialog.cpp:218 k3bsystemproblemdialog.cpp:299
+#: k3bsystemproblemdialog.cpp:306 k3bsystemproblemdialog.cpp:314
+#: k3bsystemproblemdialog.cpp:346 k3bsystemproblemdialog.cpp:452
+#, kde-format
+msgid "Used %1 version %2 is outdated"
+msgstr "उपयोग करिस %1 संस्करन %2 अप्रचलित हे"
+
+#: k3bsystemproblemdialog.cpp:219
+msgid ""
+"Although K3b supports all cdrtools versions since 1.10 it is highly "
+"recommended to at least use version 2.0."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:222
+msgid "Install a more recent version of the cdrtools."
+msgstr "सीडीआरटूलस के जादा ताजा संस्करन इनस्टाल करव."
+
+#: k3bsystemproblemdialog.cpp:239
+#, kde-format
+msgid "%1 will be run with root privileges on kernel >= 2.6.8"
+msgstr "%1 रूट विसेसाधिकार कर्नेल >= 2.6.8 मं ही चलही"
+
+#: k3bsystemproblemdialog.cpp:240
+#, kde-format
+msgid ""
+"Since Linux kernel 2.6.8 %1 will not work when run suid root for security "
+"reasons anymore."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:250 k3bsystemproblemdialog.cpp:275
+#, kde-format
+msgid "%1 will be run without root privileges"
+msgstr "%1 रूट के विसेसाधिकार के बिना ही चलही"
+
+#: k3bsystemproblemdialog.cpp:251
+msgid ""
+"It is highly recommended to configure cdrecord to run with root privileges, "
+"as then cdrecord runs with high priority that increases the overall "
+"stability of the burning process. As well as this, it allows the size of the "
+"burning buffer to be changed, and a lot of user problems can be solved this "
+"way."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:266
+msgid "K3b uses cdrdao to actually write CDs."
+msgstr "सीडी लिखे बर के3बी सही मं सीडीआरडीएओ के उपयोग करे."
+
+#: k3bsystemproblemdialog.cpp:267
+msgid "Install the cdrdao package."
+msgstr "सीडीआरडीएओ पैकेज इनस्टाल करव."
+
+#: k3bsystemproblemdialog.cpp:276
+msgid ""
+"It is highly recommended to configure cdrdao to run with root privileges to "
+"increase the overall stability of the burning process."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:291
+msgid ""
+"K3b uses growisofs to actually write DVDs. Without growisofs you will not be "
+"able to write DVDs. Make sure to install at least version 5.10."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:294 k3bsystemproblemdialog.cpp:337
+msgid "Install the dvd+rw-tools package."
+msgstr "डीवीडी+आरडबल्यू-टूल्स पैकैज इनस्टाल करव."
+
+#: k3bsystemproblemdialog.cpp:300
+msgid ""
+"K3b needs at least growisofs version 5.10 to write DVDs. All older versions "
+"will not work and K3b will refuse to use them."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:302 k3bsystemproblemdialog.cpp:310
+#: k3bsystemproblemdialog.cpp:318 k3bsystemproblemdialog.cpp:351
+#, kde-format
+msgid "Install a more recent version of %1."
+msgstr "%1 के नवा संस्करन इनस्टाल करव."
+
+#: k3bsystemproblemdialog.cpp:307
+msgid ""
+"K3b will not be able to copy DVDs on-the-fly or write a DVD+RW in multiple "
+"sessions using a growisofs version older than 5.12."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:315
+msgid ""
+"It is highly recommended to use growisofs 7.0 or higher. K3b will not be "
+"able to write a DVD+RW in multiple sessions using a growisofs version older "
+"than 7.0."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:336
+msgid "K3b uses dvd+rw-format to format DVD-RWs and DVD+RWs."
+msgstr ""
+"डीवीडी-आरडबल्यू अउ डीवीडी+आरडबल्यू ल फारमेट करे बर के3बी उपयोग करथे  डीवीडी+आरडबल्यू-"
+"फारमेट."
+
+#: k3bsystemproblemdialog.cpp:349
+msgid ""
+"K3b needs at least mkisofs version 1.14. Older versions may introduce "
+"problems when creating data projects."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:373
+#, kde-format
+msgid "Device %1 - %2 is automounted."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:375
+msgid ""
+"K3b is not able to unmount automounted devices. Thus, especially DVD+RW "
+"rewriting might fail. There is no need to report this as a bug or feature "
+"wish; it is not possible to solve this problem from within K3b."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:379
+msgid ""
+"Replace the automounting entries in /etc/fstab with old-fashioned ones or "
+"use a user-space mounting solution like pmount or ivman."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:388
+msgid "No ATAPI writing support in kernel"
+msgstr "कर्नेल तिर कोनो अटापी लेखन समर्थन नइ हे"
+
+#: k3bsystemproblemdialog.cpp:389
+msgid ""
+"Your kernel does not support writing without SCSI emulation but there is at "
+"least one writer in your system not configured to use SCSI emulation."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:393
+msgid ""
+"The best and recommended solution is to enable ide-scsi (SCSI emulation) for "
+"all devices. This way you will not have any problems. Be aware that you may "
+"still enable DMA on ide-scsi emulated drives."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:409 k3bsystemproblemdialog.cpp:428
+#, kde-format
+msgid "%1 %2 does not support ATAPI"
+msgstr "%1 %2 अटापी के समर्थन नइ करे"
+
+#: k3bsystemproblemdialog.cpp:410 k3bsystemproblemdialog.cpp:431
+#, kde-format
+msgid ""
+"The configured version of %1 does not support writing to ATAPI devices "
+"without SCSI emulation and there is at least one writer in your system not "
+"configured to use SCSI emulation."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:415 k3bsystemproblemdialog.cpp:439
+#, kde-format
+msgid ""
+"The best, and recommended, solution is to use ide-scsi (SCSI emulation) for "
+"all writer devices: this way you will not have any problems; or, you can "
+"install (or select as the default) a more recent version of %1."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:437
+msgid ""
+"Install cdrdao >= 1.1.8 which supports writing to ATAPI devices directly."
+msgstr ""
+"इनस्टाल करव सीडीआरडीएओ >= 1.1.8 जऊन कि अटापी उपकरन मन मं सीधे लिखना समर्थन करथे ."
+
+#: k3bsystemproblemdialog.cpp:453
+msgid ""
+"K3b will not be able to write DVD-R Dual Layer media using a growisofs "
+"version older than 6.0."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:455
+msgid "Install a more recent version of growisofs."
+msgstr "ग्रो-आईएसओ-एफएस के नवा ताजा संस्करन इनस्टाल करव."
+
+#: k3bsystemproblemdialog.cpp:467
+#, kde-format
+msgid "No write access to device %1"
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:468
+#, kde-format
+msgid ""
+"K3b needs write access to all the devices to perform certain tasks. Without "
+"it you might encounter problems with %1 - %2"
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:470
+#, kde-format
+msgid ""
+"Make sure you have write access to %1. In case you are not using devfs or "
+"udev click \"Modify Permissions...\" and setup permissions by hand."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:476
+#, kde-format
+msgid "DMA disabled on device %1 - %2"
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:477
+msgid ""
+"With most modern CD/DVD/BD devices enabling DMA highly increases read/write "
+"performance. If you experience very low writing speeds this is probably the "
+"cause."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:480
+#, kde-format
+msgid "Enable DMA temporarily as root with 'hdparm -d 1 %1'."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:495
+#, kde-format
+msgid "User parameters specified for external program %1"
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:496
+msgid ""
+"Sometimes it may be necessary to specify user parameters in addition to the "
+"parameters generated by K3b. This is simply a warning to make sure that "
+"these parameters are really wanted and will not be part of some bug report."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:499
+#, kde-format
+msgid ""
+"To remove the user parameters for the external program %1 open the K3b "
+"settings page 'Programs' and choose the tab 'User Parameters'."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:520
+msgid "MP3 Audio Decoder plugin not found."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:521
+msgid ""
+"K3b could not load or find the MP3 decoder plugin. This means that you will "
+"not be able to create Audio CDs from MP3 files. Many Linux distributions do "
+"not include MP3 support for legal reasons."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:524
+msgid ""
+"To enable MP3 support, please install the MAD MP3 decoding library as well "
+"as the K3b MAD MP3 decoder plugin (the latter may already be installed but "
+"not functional due to the missing libmad). Some distributions allow "
+"installation of MP3 support via an online update tool."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:539
+msgid "System locale charset is ANSI_X3.4-1968"
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:540
+msgid ""
+"Your system's locale charset (i.e. the charset used to encode filenames) is "
+"set to ANSI_X3.4-1968. It is highly unlikely that this has been done "
+"intentionally. Most likely the locale is not set at all. An invalid setting "
+"will result in problems when creating data projects."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:544
+msgid ""
+"To properly set the locale charset make sure the LC_* environment variables "
+"are set. Normally the distribution setup tools take care of this."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:557
+msgid "Running K3b as root user"
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:558
+msgid ""
+"It is not recommended to run K3b under the root user account. This "
+"introduces unnecessary security risks."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:560
+msgid ""
+"Run K3b from a proper user account and setup the device and external tool "
+"permissions appropriately."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:563
+msgid "The latter can be done via \"Modify Permissions...\"."
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:594
+msgid "System configured properly"
+msgstr ""
+
+#: k3bsystemproblemdialog.cpp:595
+msgid "No problems found in system configuration."
+msgstr ""
+
+#: k3btempdirselectionwidget.cpp:54
+#, fuzzy
+#| msgid "Free space in temporary directory:"
+msgid "Free space in temporary folder:"
+msgstr "अस्थाई डिरेक्टरी मं खाली जगह:"
+
+#: k3btempdirselectionwidget.cpp:79
+#, fuzzy
+#| msgid "The directory in which to save the image files"
+msgid "The folder in which to save the image files"
+msgstr "डिरेक्टरी जहाँ इमेज फाइल मन ल सहेजी जानी हे"
+
+#: k3btempdirselectionwidget.cpp:83
+msgid ""
+"<p>This is the folder in which K3b will save the <em>image files</em>."
+"<p>Please make sure that it resides on a partition that has enough free "
+"space."
+msgstr ""
+
+#: k3btempdirselectionwidget.cpp:190
+#, fuzzy
+#| msgid "Select Temporary File"
+msgid "Select Temporary Folder"
+msgstr "अस्थाई फाइल चुनव"
+
+#: k3btempdirselectionwidget.cpp:192
+msgid "Wri&te image files to:"
+msgstr "इमेज फाइल मन ल इहां लिखव: (&t)"
+
+#: k3btempdirselectionwidget.cpp:193
+#, fuzzy
+#| msgid "Temporary File"
+msgid "Temporary Folder"
+msgstr "अस्थाई फाइल"
+
+#: k3btempdirselectionwidget.cpp:196
+msgid "Select Temporary File"
+msgstr "अस्थाई फाइल चुनव"
+
+#: k3btempdirselectionwidget.cpp:198
+msgid "Wri&te image file to:"
+msgstr "इमेज फाइल इहां लिखव: (&t)"
+
+#: k3btempdirselectionwidget.cpp:199
+msgid "Temporary File"
+msgstr "अस्थाई फाइल"
+
+#: k3btempdirselectionwidget.cpp:209
+msgid "Size of project:"
+msgstr "परियोजना के आकार:"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -2141,9 +2663,8 @@ msgstr "कुछ नइ"
 #: projects/k3baudioburndialog.cpp:79 projects/k3bdatapropertiesdialog.cpp:148
 #: projects/k3bprojectburndialog.cpp:268 projects/k3bvcdburndialog.cpp:415
 #: projects/k3bvcdburndialog.cpp:447 projects/k3bvcdtrackdialog.cpp:456
-#: rip/k3bvideocdrippingdialog.cpp:102
 #: rip/k3baudioprojectconvertingdialog.cpp:144
-#: rip/k3baudiorippingdialog.cpp:163
+#: rip/k3baudiorippingdialog.cpp:163 rip/k3bvideocdrippingdialog.cpp:102
 msgid "Settings"
 msgstr "सेटिंग"
 
@@ -3747,528 +4268,6 @@ msgstr "16-बिट सब्द"
 msgid "32-bit Words"
 msgstr "32-बिट सब्द"
 
-#: k3bapplication.cpp:161
-msgid "K3b is busy"
-msgstr "के3बी व्यस्त हे"
-
-#: k3bapplication.cpp:162
-msgid "K3b is currently busy and cannot start any other operations."
-msgstr ""
-
-#: k3bprojectmanager.cpp:211
-#, kde-format
-msgid "AudioCD%1"
-msgstr "आडियो-सीडी%1"
-
-#: k3bprojectmanager.cpp:217
-#, kde-format
-msgid "Data%1"
-msgstr "डाटा %1"
-
-#: k3bprojectmanager.cpp:223
-#, kde-format
-msgid "MixedCD%1"
-msgstr "मिक्स्ड-सीडी%1"
-
-#: k3bprojectmanager.cpp:229
-#, kde-format
-msgid "VideoCD%1"
-msgstr "वीडियो-सीडी%1"
-
-#: k3bprojectmanager.cpp:235
-#, kde-format
-msgid "eMovix%1"
-msgstr "ई-मूविक्स %1"
-
-#: k3bprojectmanager.cpp:241
-#, kde-format
-msgid "VideoDVD%1"
-msgstr "वीडियो-डीवीडी%1"
-
-#: k3bprojecttabwidget.cpp:82 projects/k3bprojectburndialog.cpp:61
-msgid "Project"
-msgstr "परियोजना"
-
-#: k3bstatusbarmanager.cpp:60
-msgid "Temp:"
-msgstr "टेम्प:"
-
-#: k3bstatusbarmanager.cpp:120
-msgid "No info"
-msgstr "कोई जानकारी नइ"
-
-#: k3bstatusbarmanager.cpp:162
-#, fuzzy, kde-format
-#| msgid "1 folder"
-#| msgid_plural "%1 folders"
-msgid "one folder"
-msgid_plural "%1 folders"
-msgstr[0] "१ फोल्डर"
-msgstr[1] "%1 फोल्डर"
-
-#: k3bstatusbarmanager.cpp:159
-#, fuzzy, kde-format
-#| msgid "1 file (%2)"
-#| msgid_plural "%1 files (%2)"
-msgid "One file in %2"
-msgid_plural "%1 files in %2"
-msgstr[0] "1 फाइल (%2)"
-msgstr[1] "%1 फाइल (%2)"
-
-#: k3bstatusbarmanager.cpp:189
-#, kde-format
-msgid "Audio CD (1 track)"
-msgid_plural "Audio CD (%1 tracks)"
-msgstr[0] ""
-msgstr[1] ""
-
-#: k3bstatusbarmanager.cpp:195
-#, kde-format
-msgid "Data Project (%1)"
-msgstr "डाटा परियोजना (%1)"
-
-#: k3bstatusbarmanager.cpp:202
-#, kde-format
-msgid "Mixed CD (1 track and %2)"
-msgid_plural "Mixed CD (%1 tracks and %2)"
-msgstr[0] "मिक्सड सीडी (1 ट्रैक अउ %2)"
-msgstr[1] "मिक्सड सीडी (%1 ट्रैक अउ %2)"
-
-#: k3bstatusbarmanager.cpp:209
-#, kde-format
-msgid "Video CD (1 track)"
-msgid_plural "Video CD (%1 tracks)"
-msgstr[0] "वीडियो सीडी (1 ट्रैक)"
-msgstr[1] "वीडियो सीडी (%1 ट्रैक)"
-
-#: k3bstatusbarmanager.cpp:215
-#, kde-format
-msgid "eMovix Project (%1)"
-msgstr "ईमूविक्स परियोजना (%1)"
-
-#: k3bstatusbarmanager.cpp:221
-#, kde-format
-msgid "Video DVD (%1)"
-msgstr "वीडियो डीवीडी (%1)"
-
-#: k3bsystemproblemdialog.cpp:89 k3bsystemproblemdialog.cpp:96
-msgid "System Configuration Problems"
-msgstr "तंत्र कानफिगुरेसन समस्या"
-
-#: k3bsystemproblemdialog.cpp:97
-#, kde-format
-msgid "1 problem"
-msgid_plural "%1 problems"
-msgstr[0] "१ समस्या"
-msgstr[1] "%1 समस्या"
-
-#: k3bsystemproblemdialog.cpp:101
-msgid "Do not show again"
-msgstr "फिर से नइ देखाव"
-
-#: k3bsystemproblemdialog.cpp:106 option/k3bdevicewidget.cpp:57
-#, fuzzy
-#| msgid "&Setup System Permissions..."
-msgid "Modify Permissions..."
-msgstr "सिस्टम अनुमति सेटअप करव... (&S)"
-
-#: k3bsystemproblemdialog.cpp:152
-msgid "Solution"
-msgstr "समाधान"
-
-#: k3bsystemproblemdialog.cpp:181
-msgid "Click \"Modify Permissions...\" to solve this problem."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:188
-#, fuzzy
-#| msgid "No usable medium found."
-msgid "No optical drive found."
-msgstr "कोई उपयोगी मीडियम नइ मिलिस."
-
-#: k3bsystemproblemdialog.cpp:189
-msgid "K3b did not find any optical device in your system."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:191
-msgid "Make sure HAL daemon is running, it is used by K3b for finding devices."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:199
-#, fuzzy
-#| msgid "No CD/DVD writer found."
-msgid "No CD/DVD/BD writer found."
-msgstr "कोई सीडी/डीवीडी राइटर नइ मिलीस."
-
-#: k3bsystemproblemdialog.cpp:200
-msgid ""
-"K3b did not find an optical writing device in your system. Thus, you will "
-"not be able to burn CDs or DVDs. However, you can still use other K3b "
-"features such as audio track extraction, audio transcoding or ISO9660 image "
-"creation."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:210 k3bsystemproblemdialog.cpp:265
-#: k3bsystemproblemdialog.cpp:290 k3bsystemproblemdialog.cpp:335
-#, kde-format
-msgid "Unable to find %1 executable"
-msgstr "एक्जीक्यूटेबल %1 खोजे मं फेल."
-
-#: k3bsystemproblemdialog.cpp:211
-msgid "K3b uses cdrecord to actually write CDs."
-msgstr "के3बी सही मं सीडीरेकार्ड के उपयोग सीडी लिखे मं करथे ."
-
-#: k3bsystemproblemdialog.cpp:212
-msgid "Install the cdrtools package which contains cdrecord."
-msgstr "सीडीआरटूल्स पैकेज इनस्टाल करव जेमां सीडीरेकार्ड हे."
-
-#: k3bsystemproblemdialog.cpp:218 k3bsystemproblemdialog.cpp:299
-#: k3bsystemproblemdialog.cpp:306 k3bsystemproblemdialog.cpp:314
-#: k3bsystemproblemdialog.cpp:346 k3bsystemproblemdialog.cpp:452
-#, kde-format
-msgid "Used %1 version %2 is outdated"
-msgstr "उपयोग करिस %1 संस्करन %2 अप्रचलित हे"
-
-#: k3bsystemproblemdialog.cpp:219
-msgid ""
-"Although K3b supports all cdrtools versions since 1.10 it is highly "
-"recommended to at least use version 2.0."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:222
-msgid "Install a more recent version of the cdrtools."
-msgstr "सीडीआरटूलस के जादा ताजा संस्करन इनस्टाल करव."
-
-#: k3bsystemproblemdialog.cpp:239
-#, kde-format
-msgid "%1 will be run with root privileges on kernel >= 2.6.8"
-msgstr "%1 रूट विसेसाधिकार कर्नेल >= 2.6.8 मं ही चलही"
-
-#: k3bsystemproblemdialog.cpp:240
-#, kde-format
-msgid ""
-"Since Linux kernel 2.6.8 %1 will not work when run suid root for security "
-"reasons anymore."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:250 k3bsystemproblemdialog.cpp:275
-#, kde-format
-msgid "%1 will be run without root privileges"
-msgstr "%1 रूट के विसेसाधिकार के बिना ही चलही"
-
-#: k3bsystemproblemdialog.cpp:251
-msgid ""
-"It is highly recommended to configure cdrecord to run with root privileges, "
-"as then cdrecord runs with high priority that increases the overall "
-"stability of the burning process. As well as this, it allows the size of the "
-"burning buffer to be changed, and a lot of user problems can be solved this "
-"way."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:266
-msgid "K3b uses cdrdao to actually write CDs."
-msgstr "सीडी लिखे बर के3बी सही मं सीडीआरडीएओ के उपयोग करे."
-
-#: k3bsystemproblemdialog.cpp:267
-msgid "Install the cdrdao package."
-msgstr "सीडीआरडीएओ पैकेज इनस्टाल करव."
-
-#: k3bsystemproblemdialog.cpp:276
-msgid ""
-"It is highly recommended to configure cdrdao to run with root privileges to "
-"increase the overall stability of the burning process."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:291
-msgid ""
-"K3b uses growisofs to actually write DVDs. Without growisofs you will not be "
-"able to write DVDs. Make sure to install at least version 5.10."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:294 k3bsystemproblemdialog.cpp:337
-msgid "Install the dvd+rw-tools package."
-msgstr "डीवीडी+आरडबल्यू-टूल्स पैकैज इनस्टाल करव."
-
-#: k3bsystemproblemdialog.cpp:300
-msgid ""
-"K3b needs at least growisofs version 5.10 to write DVDs. All older versions "
-"will not work and K3b will refuse to use them."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:302 k3bsystemproblemdialog.cpp:310
-#: k3bsystemproblemdialog.cpp:318 k3bsystemproblemdialog.cpp:351
-#, kde-format
-msgid "Install a more recent version of %1."
-msgstr "%1 के नवा संस्करन इनस्टाल करव."
-
-#: k3bsystemproblemdialog.cpp:307
-msgid ""
-"K3b will not be able to copy DVDs on-the-fly or write a DVD+RW in multiple "
-"sessions using a growisofs version older than 5.12."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:315
-msgid ""
-"It is highly recommended to use growisofs 7.0 or higher. K3b will not be "
-"able to write a DVD+RW in multiple sessions using a growisofs version older "
-"than 7.0."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:336
-msgid "K3b uses dvd+rw-format to format DVD-RWs and DVD+RWs."
-msgstr ""
-"डीवीडी-आरडबल्यू अउ डीवीडी+आरडबल्यू ल फारमेट करे बर के3बी उपयोग करथे  डीवीडी+आरडबल्यू-"
-"फारमेट."
-
-#: k3bsystemproblemdialog.cpp:349
-msgid ""
-"K3b needs at least mkisofs version 1.14. Older versions may introduce "
-"problems when creating data projects."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:373
-#, kde-format
-msgid "Device %1 - %2 is automounted."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:375
-msgid ""
-"K3b is not able to unmount automounted devices. Thus, especially DVD+RW "
-"rewriting might fail. There is no need to report this as a bug or feature "
-"wish; it is not possible to solve this problem from within K3b."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:379
-msgid ""
-"Replace the automounting entries in /etc/fstab with old-fashioned ones or "
-"use a user-space mounting solution like pmount or ivman."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:388
-msgid "No ATAPI writing support in kernel"
-msgstr "कर्नेल तिर कोनो अटापी लेखन समर्थन नइ हे"
-
-#: k3bsystemproblemdialog.cpp:389
-msgid ""
-"Your kernel does not support writing without SCSI emulation but there is at "
-"least one writer in your system not configured to use SCSI emulation."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:393
-msgid ""
-"The best and recommended solution is to enable ide-scsi (SCSI emulation) for "
-"all devices. This way you will not have any problems. Be aware that you may "
-"still enable DMA on ide-scsi emulated drives."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:409 k3bsystemproblemdialog.cpp:428
-#, kde-format
-msgid "%1 %2 does not support ATAPI"
-msgstr "%1 %2 अटापी के समर्थन नइ करे"
-
-#: k3bsystemproblemdialog.cpp:410 k3bsystemproblemdialog.cpp:431
-#, kde-format
-msgid ""
-"The configured version of %1 does not support writing to ATAPI devices "
-"without SCSI emulation and there is at least one writer in your system not "
-"configured to use SCSI emulation."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:415 k3bsystemproblemdialog.cpp:439
-#, kde-format
-msgid ""
-"The best, and recommended, solution is to use ide-scsi (SCSI emulation) for "
-"all writer devices: this way you will not have any problems; or, you can "
-"install (or select as the default) a more recent version of %1."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:437
-msgid ""
-"Install cdrdao >= 1.1.8 which supports writing to ATAPI devices directly."
-msgstr ""
-"इनस्टाल करव सीडीआरडीएओ >= 1.1.8 जऊन कि अटापी उपकरन मन मं सीधे लिखना समर्थन करथे ."
-
-#: k3bsystemproblemdialog.cpp:453
-msgid ""
-"K3b will not be able to write DVD-R Dual Layer media using a growisofs "
-"version older than 6.0."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:455
-msgid "Install a more recent version of growisofs."
-msgstr "ग्रो-आईएसओ-एफएस के नवा ताजा संस्करन इनस्टाल करव."
-
-#: k3bsystemproblemdialog.cpp:467
-#, kde-format
-msgid "No write access to device %1"
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:468
-#, kde-format
-msgid ""
-"K3b needs write access to all the devices to perform certain tasks. Without "
-"it you might encounter problems with %1 - %2"
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:470
-#, kde-format
-msgid ""
-"Make sure you have write access to %1. In case you are not using devfs or "
-"udev click \"Modify Permissions...\" and setup permissions by hand."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:476
-#, kde-format
-msgid "DMA disabled on device %1 - %2"
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:477
-msgid ""
-"With most modern CD/DVD/BD devices enabling DMA highly increases read/write "
-"performance. If you experience very low writing speeds this is probably the "
-"cause."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:480
-#, kde-format
-msgid "Enable DMA temporarily as root with 'hdparm -d 1 %1'."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:495
-#, kde-format
-msgid "User parameters specified for external program %1"
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:496
-msgid ""
-"Sometimes it may be necessary to specify user parameters in addition to the "
-"parameters generated by K3b. This is simply a warning to make sure that "
-"these parameters are really wanted and will not be part of some bug report."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:499
-#, kde-format
-msgid ""
-"To remove the user parameters for the external program %1 open the K3b "
-"settings page 'Programs' and choose the tab 'User Parameters'."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:520
-msgid "MP3 Audio Decoder plugin not found."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:521
-msgid ""
-"K3b could not load or find the MP3 decoder plugin. This means that you will "
-"not be able to create Audio CDs from MP3 files. Many Linux distributions do "
-"not include MP3 support for legal reasons."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:524
-msgid ""
-"To enable MP3 support, please install the MAD MP3 decoding library as well "
-"as the K3b MAD MP3 decoder plugin (the latter may already be installed but "
-"not functional due to the missing libmad). Some distributions allow "
-"installation of MP3 support via an online update tool."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:539
-msgid "System locale charset is ANSI_X3.4-1968"
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:540
-msgid ""
-"Your system's locale charset (i.e. the charset used to encode filenames) is "
-"set to ANSI_X3.4-1968. It is highly unlikely that this has been done "
-"intentionally. Most likely the locale is not set at all. An invalid setting "
-"will result in problems when creating data projects."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:544
-msgid ""
-"To properly set the locale charset make sure the LC_* environment variables "
-"are set. Normally the distribution setup tools take care of this."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:557
-msgid "Running K3b as root user"
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:558
-msgid ""
-"It is not recommended to run K3b under the root user account. This "
-"introduces unnecessary security risks."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:560
-msgid ""
-"Run K3b from a proper user account and setup the device and external tool "
-"permissions appropriately."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:563
-msgid "The latter can be done via \"Modify Permissions...\"."
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:594
-msgid "System configured properly"
-msgstr ""
-
-#: k3bsystemproblemdialog.cpp:595
-msgid "No problems found in system configuration."
-msgstr ""
-
-#: k3btempdirselectionwidget.cpp:54
-#, fuzzy
-#| msgid "Free space in temporary directory:"
-msgid "Free space in temporary folder:"
-msgstr "अस्थाई डिरेक्टरी मं खाली जगह:"
-
-#: k3btempdirselectionwidget.cpp:79
-#, fuzzy
-#| msgid "The directory in which to save the image files"
-msgid "The folder in which to save the image files"
-msgstr "डिरेक्टरी जहाँ इमेज फाइल मन ल सहेजी जानी हे"
-
-#: k3btempdirselectionwidget.cpp:83
-msgid ""
-"<p>This is the folder in which K3b will save the <em>image files</em>."
-"<p>Please make sure that it resides on a partition that has enough free "
-"space."
-msgstr ""
-
-#: k3btempdirselectionwidget.cpp:190
-#, fuzzy
-#| msgid "Select Temporary File"
-msgid "Select Temporary Folder"
-msgstr "अस्थाई फाइल चुनव"
-
-#: k3btempdirselectionwidget.cpp:192
-msgid "Wri&te image files to:"
-msgstr "इमेज फाइल मन ल इहां लिखव: (&t)"
-
-#: k3btempdirselectionwidget.cpp:193
-#, fuzzy
-#| msgid "Temporary File"
-msgid "Temporary Folder"
-msgstr "अस्थाई फाइल"
-
-#: k3btempdirselectionwidget.cpp:196
-msgid "Select Temporary File"
-msgstr "अस्थाई फाइल चुनव"
-
-#: k3btempdirselectionwidget.cpp:198
-msgid "Wri&te image file to:"
-msgstr "इमेज फाइल इहां लिखव: (&t)"
-
-#: k3btempdirselectionwidget.cpp:199
-msgid "Temporary File"
-msgstr "अस्थाई फाइल"
-
-#: k3btempdirselectionwidget.cpp:209
-msgid "Size of project:"
-msgstr "परियोजना के आकार:"
-
 #: k3bwelcomewidget.cpp:86
 msgid "More actions..."
 msgstr "अउ काम..."
@@ -5375,58 +5374,6 @@ msgstr ""
 msgid "You do not have permission to write to %1."
 msgstr ""
 
-#: option/k3boptiondialog.cpp:133
-msgid "Miscellaneous Settings"
-msgstr "विविध सेटिंग"
-
-#: option/k3boptiondialog.cpp:142
-msgid "Devices"
-msgstr "औजार"
-
-#: option/k3boptiondialog.cpp:143
-msgid "Setup Devices"
-msgstr "उपकरन मन ल सेटअप करव"
-
-#: option/k3boptiondialog.cpp:153
-msgid "Setup External Programs"
-msgstr "बाहिरी प्रोग्राम सेटअप करव"
-
-#: option/k3boptiondialog.cpp:162
-msgid "Notifications"
-msgstr "सूचना मन ल"
-
-#: option/k3boptiondialog.cpp:163
-msgid "System Notifications"
-msgstr "तंत्र सूचना मन ल"
-
-#: option/k3boptiondialog.cpp:172
-msgid "Plugins"
-msgstr "प्लगइन्स"
-
-#: option/k3boptiondialog.cpp:173
-msgid "K3b Plugin Configuration"
-msgstr "के3बी प्लगइन कान्फिगरेसन"
-
-#: option/k3boptiondialog.cpp:182
-msgid "Themes"
-msgstr "प्रसंग"
-
-#: option/k3boptiondialog.cpp:183
-msgid "K3b GUI Themes"
-msgstr "के3बी जीयूआई प्रसंग"
-
-#: option/k3boptiondialog.cpp:192
-msgid "CDDB"
-msgstr "सीडीडीबी"
-
-#: option/k3boptiondialog.cpp:193
-msgid "CDDB Audio CD Info Retrieval"
-msgstr ""
-
-#: option/k3boptiondialog.cpp:203
-msgid "Advanced Settings"
-msgstr "विस्तृत सेटिंग"
-
 #: option/k3bthememodel.cpp:99
 msgid "Theme"
 msgstr "प्रसंग"
@@ -5438,57 +5385,6 @@ msgstr "लेखक"
 #: option/k3bthememodel.cpp:102
 msgid "Comment"
 msgstr "टिप्पनी"
-
-#: option/k3bthemeoptiontab.cpp:91
-msgid "K3b - The CD/DVD Kreator"
-msgstr "के3बी - सीडी/डीवीडी बनाए के प्रोग्राम"
-
-#: option/k3bthemeoptiontab.cpp:111
-msgid "Drag or Type Theme URL"
-msgstr "प्रसंग यूआरएल खींचलाव या टाइप करव"
-
-#: option/k3bthemeoptiontab.cpp:123
-#, kde-format
-msgid "Unable to find the icon theme archive %1."
-msgstr "चिनहा प्रसंग अभिलेख %1 पाय मं अक्छम."
-
-#: option/k3bthemeoptiontab.cpp:125
-#, kde-format
-msgid ""
-"Unable to download the icon theme archive.\n"
-"Please check that address %1 is correct."
-msgstr ""
-"चिनहा प्रसंग अभिलेख डाउनलोड करे मं अक्छम;\n"
-"किरपा करके, जांचव कि पता %1 सही हे."
-
-#: option/k3bthemeoptiontab.cpp:157
-msgid "The file is not a valid K3b theme archive."
-msgstr "ए फाइल एक वैध के3बी प्रसंग अभिलेख नइ हे."
-
-#: option/k3bthemeoptiontab.cpp:165
-#, kde-format
-msgid "A theme with the name '%1' already exists. Do you want to overwrite it?"
-msgstr ""
-
-#: option/k3bthemeoptiontab.cpp:167
-msgid "Theme exists"
-msgstr ""
-
-#: option/k3bthemeoptiontab.cpp:186
-#, fuzzy, kde-format
-#| msgid ""
-#| "<qt>Are you sure you want to remove the <strong>%1</strong> icon theme?"
-#| "<br><br>This will delete the files installed by this theme.</qt>"
-msgid ""
-"<qt>Are you sure you want to remove the <strong>%1</strong> theme?"
-"<br><br>This will delete the files installed by this theme.</qt>"
-msgstr ""
-"<qt>का आप मन सही मं<strong>%1</strong> चिनहा प्रसंग हटाना चाहथो ?<br><br>ये एखर "
-"प्रसंग से इनस्टाल फाइल मन ल मिटा देही.</qt>"
-
-#: option/k3bthemeoptiontab.cpp:191
-msgid "Delete"
-msgstr "मेटाव"
 
 #: option/k3bdevicewidget.cpp:58
 msgid "Refresh"
@@ -5560,6 +5456,109 @@ msgstr "राइट मोड्स:"
 #: option/k3bdevicewidget.cpp:217 option/k3bdevicewidget.cpp:222
 msgid "none"
 msgstr "कुछ नइ"
+
+#: option/k3boptiondialog.cpp:133
+msgid "Miscellaneous Settings"
+msgstr "विविध सेटिंग"
+
+#: option/k3boptiondialog.cpp:142
+msgid "Devices"
+msgstr "औजार"
+
+#: option/k3boptiondialog.cpp:143
+msgid "Setup Devices"
+msgstr "उपकरन मन ल सेटअप करव"
+
+#: option/k3boptiondialog.cpp:153
+msgid "Setup External Programs"
+msgstr "बाहिरी प्रोग्राम सेटअप करव"
+
+#: option/k3boptiondialog.cpp:162
+msgid "Notifications"
+msgstr "सूचना मन ल"
+
+#: option/k3boptiondialog.cpp:163
+msgid "System Notifications"
+msgstr "तंत्र सूचना मन ल"
+
+#: option/k3boptiondialog.cpp:172
+msgid "Plugins"
+msgstr "प्लगइन्स"
+
+#: option/k3boptiondialog.cpp:173
+msgid "K3b Plugin Configuration"
+msgstr "के3बी प्लगइन कान्फिगरेसन"
+
+#: option/k3boptiondialog.cpp:182
+msgid "Themes"
+msgstr "प्रसंग"
+
+#: option/k3boptiondialog.cpp:183
+msgid "K3b GUI Themes"
+msgstr "के3बी जीयूआई प्रसंग"
+
+#: option/k3boptiondialog.cpp:192
+msgid "CDDB"
+msgstr "सीडीडीबी"
+
+#: option/k3boptiondialog.cpp:193
+msgid "CDDB Audio CD Info Retrieval"
+msgstr ""
+
+#: option/k3boptiondialog.cpp:203
+msgid "Advanced Settings"
+msgstr "विस्तृत सेटिंग"
+
+#: option/k3bthemeoptiontab.cpp:91
+msgid "K3b - The CD/DVD Kreator"
+msgstr "के3बी - सीडी/डीवीडी बनाए के प्रोग्राम"
+
+#: option/k3bthemeoptiontab.cpp:111
+msgid "Drag or Type Theme URL"
+msgstr "प्रसंग यूआरएल खींचलाव या टाइप करव"
+
+#: option/k3bthemeoptiontab.cpp:123
+#, kde-format
+msgid "Unable to find the icon theme archive %1."
+msgstr "चिनहा प्रसंग अभिलेख %1 पाय मं अक्छम."
+
+#: option/k3bthemeoptiontab.cpp:125
+#, kde-format
+msgid ""
+"Unable to download the icon theme archive.\n"
+"Please check that address %1 is correct."
+msgstr ""
+"चिनहा प्रसंग अभिलेख डाउनलोड करे मं अक्छम;\n"
+"किरपा करके, जांचव कि पता %1 सही हे."
+
+#: option/k3bthemeoptiontab.cpp:157
+msgid "The file is not a valid K3b theme archive."
+msgstr "ए फाइल एक वैध के3बी प्रसंग अभिलेख नइ हे."
+
+#: option/k3bthemeoptiontab.cpp:165
+#, kde-format
+msgid "A theme with the name '%1' already exists. Do you want to overwrite it?"
+msgstr ""
+
+#: option/k3bthemeoptiontab.cpp:167
+msgid "Theme exists"
+msgstr ""
+
+#: option/k3bthemeoptiontab.cpp:186
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Are you sure you want to remove the <strong>%1</strong> icon theme?"
+#| "<br><br>This will delete the files installed by this theme.</qt>"
+msgid ""
+"<qt>Are you sure you want to remove the <strong>%1</strong> theme?"
+"<br><br>This will delete the files installed by this theme.</qt>"
+msgstr ""
+"<qt>का आप मन सही मं<strong>%1</strong> चिनहा प्रसंग हटाना चाहथो ?<br><br>ये एखर "
+"प्रसंग से इनस्टाल फाइल मन ल मिटा देही.</qt>"
+
+#: option/k3bthemeoptiontab.cpp:191
+msgid "Delete"
+msgstr "मेटाव"
 
 #: projects/k3baudioburndialog.cpp:63
 #: projects/k3baudiotracktrmlookupdialog.cpp:123
@@ -7698,10 +7697,6 @@ msgstr "गुन (&P)"
 msgid "Open the properties dialog"
 msgstr "विसेसता गोठ खोलव"
 
-#: projects/k3bvolumenamewidget.cpp:57
-msgid "Volume Name:"
-msgstr "वाल्यूम नाम:"
-
 #: projects/kostore/KoStore.cpp:195
 msgid "The directory mode is not supported for remote locations."
 msgstr "रिमोट जगह बर डिरेक्टरी मोड समर्थित नइ हे."
@@ -7716,6 +7711,10 @@ msgid ""
 "VcdImager >= 0.7.12. You can find this on your distribution’s software "
 "repository or download it from http://www.vcdimager.org"
 msgstr ""
+
+#: projects/k3bvolumenamewidget.cpp:57
+msgid "Volume Name:"
+msgstr "वाल्यूम नाम:"
 
 #: rip/categories.cpp:22
 msgid "Blues"
@@ -7754,367 +7753,10 @@ msgstr "राक"
 msgid "Soundtrack"
 msgstr "साउन्ड-ट्रैक"
 
-#: rip/k3bcddbpatternwidget.cpp:53
-#, fuzzy
-#| msgid "%A - %T/%n - !a='%A'{%a - }%t"
-msgctxt ""
-"Please do NOT modify/translate the quotes, they are part of the pattern!"
-msgid "%A - %T/%n - !a='%A'{%a - }%t"
-msgstr "%A - %T/%n - !a='%A'{%a - }%t"
-
-#: rip/k3bcddbpatternwidget.cpp:54
-msgid "%{albumartist} - %{albumtitle}/%{number} - %{artist} - %{title}"
-msgstr "%{albumartist} - %{albumtitle}/%{number} - %{artist} - %{title}"
-
-#: rip/k3bcddbpatternwidget.cpp:55
-msgid "%{genre}/%{albumartist} - %{albumtitle}/Track%{number}"
-msgstr "%{genre}/%{albumartist} - %{albumtitle}/Track%{number}"
-
-#: rip/k3bcddbpatternwidget.cpp:56
-msgid "music/ripped-tracks/%a - %t"
-msgstr "संगीत/रिप-किए-गए-ट्रैक्स/%a - %t"
-
-#: rip/k3bcddbpatternwidget.cpp:58
-msgid "%{albumartist} - %{albumtitle}"
-msgstr "%{albumartist} - %{albumtitle}"
-
-#: rip/k3bcddbpatternwidget.cpp:59 rip/k3baudiorippingdialog.cpp:427
-msgid "Playlist"
-msgstr "गीत-सूची"
-
-#: rip/k3bcddbpatternwidget.cpp:60
-msgid "playlists/%{albumartist}/%{albumtitle    }"
-msgstr "playlists/%{albumartist}/%{albumtitle    }"
-
-#: rip/k3bcddbpatternwidget.cpp:127
-msgid ""
-"<p><b>Pattern special strings:</b><p>The following strings will be replaced "
-"with their respective meaning in every track name.<br><em>Hint:</em> %A "
-"differs from %a only on soundtracks or compilations.<p><table border=\"0"
-"\"><tr><td></td><td><em>Meaning</em></td><td><em>Alternatives</em></td></"
-"tr><tr><td>%a</td><td>artist of the track</td><td>%{a} or %{artist}</td></"
-"tr><tr><td>%t</td><td>title of the track</td><td>%{t} or %{title}</td></"
-"tr><tr><td>%n</td><td>track number</td><td>%{n} or %{number}</td></"
-"tr><tr><td>%y</td><td>year of the CD</td><td>%{y} or %{year}</td></"
-"tr><tr><td>%c</td><td>extended track information</td><td>%{c} or %{comment}</"
-"td></tr><tr><td>%g</td><td>genre of the CD</td><td>%{g} or %{genre}</td></"
-"tr><tr><td>%A</td><td>album artist</td><td>%{A} or %{albumartist}</td></"
-"tr><tr><td>%T</td><td>album title</td><td>%{T} or %{albumtitle}</td></"
-"tr><tr><td>%C</td><td>extended CD information</td><td>%{C} or %{albumcomment}"
-"</td></tr><tr><td>%d</td><td>current date</td><td>%{d} or %{date}</td></"
-"tr><tr><td>%e</td><td>file extension (if left out, it is added automatically)"
-"</td><td>%{e} or %{ext}</td></tr></table>"
-msgstr ""
-
-#: rip/k3bcddbpatternwidget.cpp:153
-#, c-format
-msgctxt ""
-"Please do NOT modify/translate the quotes, they are part of the pattern!"
-msgid ""
-"<p><b>Conditional inclusion:</b><p>These patterns make it possible to "
-"selectively include texts, depending on the value of CDDB entries. You can "
-"choose only to include or exclude texts if one of the entries is empty, or "
-"if it has a specific value. Examples:<ul><li>@T{TEXT} includes TEXT if the "
-"album title is specified<li>!T{TEXT} includes TEXT if the album title is not "
-"specified<li>@C='Soundtrack'{TEXT} includes TEXT if the CD's extended "
-"information is named Soundtrack<li>!C='Soundtrack'{TEXT} includes TEXT if "
-"the CD's extended information is anything else but Soundtrack<li>It is also "
-"possible to include special strings in texts and conditions, e.g. !a='%A'{%"
-"a} only includes the title's artist information if it does not differ from "
-"the album artist.</ul><p>Conditional includes make use of the same "
-"characters as the special strings, which means that the X in @X{...} can be "
-"one character out of [atnycgATCd]."
-msgstr ""
-
 #: rip/k3bpatternparser.cpp:133
 #, kde-format
 msgid "Track %1"
 msgstr "ट्रैक %1"
-
-#: rip/k3bvideocdrip.cpp:62
-msgid "Job canceled by user."
-msgstr "कमइया से काम खारिज करिस."
-
-#: rip/k3bvideocdrip.cpp:91
-msgid "Check files"
-msgstr "फाइल मन ल जांचव"
-
-#: rip/k3bvideocdrip.cpp:101
-#, kde-format
-msgid "Could not find %1 executable."
-msgstr "एक्जीक्यूटेबल %1 नइ मिलिस."
-
-#: rip/k3bvideocdrip.cpp:102
-#, fuzzy, kde-format
-#| msgid "To rip VideoCD's you must install VcdImager Version %1."
-msgid "To rip Video CDs you have to install VcdImager Version %1."
-msgstr ""
-"वीडियोसीडी ल रिप करे बर आप मन ल वीसीडीइमेजर संस्करन %1 ल जरूरी रूप से इनस्टाल करना "
-"होही."
-
-#: rip/k3bvideocdrip.cpp:103
-#, fuzzy
-#| msgid ""
-#| "You can find this on your distribution disks or download it from http://"
-#| "www.vcdimager.org"
-msgid ""
-"You can find this on your distribution’s software repository or download it "
-"from http://www.vcdimager.org"
-msgstr ""
-"एला आप मन अपन डिस्ट्रीब्यूसन डिस्क मं पा सकथो या एला इहां से डाउनलोड कर सकथो -  "
-"http://www.vcdimager.org"
-
-#: rip/k3bvideocdrip.cpp:111
-#, fuzzy, kde-format
-msgid "%1 executable too old: need version %2 or greater."
-msgstr "%1 एक्जीक्यूटेबल बहुत जुन्ना हे! संस्करन %2 या अधिक के जरूरत हे"
-
-#: rip/k3bvideocdrip.cpp:112
-msgid ""
-"You can find this on your distribution disks or download it from http://www."
-"vcdimager.org"
-msgstr ""
-"एला आप मन अपन डिस्ट्रीब्यूसन डिस्क मं पा सकथो या एला इहां से डाउनलोड कर सकथो -  "
-"http://www.vcdimager.org"
-
-#: rip/k3bvideocdrip.cpp:119
-#, fuzzy, kde-format
-#| msgid "Using %1 %2 - Copyright (C) %3"
-msgid "Using %1 %2 – Copyright © %3"
-msgstr "उपयोग करत हे %1 %2 - कापीराइट (C) %3"
-
-#: rip/k3bvideocdrip.cpp:170
-msgid "Extracting"
-msgstr "एक्स्ट्रेक्टिंग"
-
-#: rip/k3bvideocdrip.cpp:171
-msgid "Start extracting."
-msgstr "एक्स्ट्रेक्टिंग चालू करव."
-
-#: rip/k3bvideocdrip.cpp:172
-#, kde-format
-msgid "Extract files from %1 to %2."
-msgstr "फाइल मन ल %1 से %2 मं निकालव."
-
-#: rip/k3bvideocdrip.cpp:177
-#, kde-format
-msgid "Could not start %1."
-msgstr "%1 चालू नइ कर सकिस."
-
-#: rip/k3bvideocdrip.cpp:267
-msgid "Files successfully extracted."
-msgstr "फाइल मन ल सफलतापूर्वक एक्सट्रेक्ट करे गें."
-
-#: rip/k3bvideocdrip.cpp:270
-#, kde-format
-msgid "%1 returned an unknown error (code %2)."
-msgstr "%1 ह एक अग्यात गलती लहुटाइस (कोड %2)."
-
-#: rip/k3bvideocdrip.cpp:271
-msgid "Please send me an email with the last output..."
-msgstr "आखरी आउटपुट के साथ किरपा करके, मोला ईमेल करव..."
-
-#: rip/k3bvideocdrip.cpp:277
-#, kde-format
-msgid "%1 did not exit cleanly."
-msgstr "%1 अच्छे तरीके से बाहिर नइ होइस."
-
-#: rip/k3bvideocdrip.cpp:291
-#, kde-format
-msgid "%1 encountered non-form2 sector"
-msgstr "%1 नान-फारम2 सेक्टर मिलिस"
-
-#: rip/k3bvideocdrip.cpp:292
-msgid "leaving loop"
-msgstr "लूप छोड़त हे"
-
-#: rip/k3bvideocdrip.cpp:300
-msgid "detected extended VCD2.0 PBC files"
-msgstr "एक्सटेंडेड वीसीडी2.0 पीबीसी फाइल मन ल पाया"
-
-#: rip/k3bvideocdrip.cpp:327 rip/k3bvideocdrip.cpp:345
-#, kde-format
-msgid "Extracting %1"
-msgstr "एक्स्ट्रेक्टिंग %1"
-
-#: rip/k3bvideocdrip.cpp:338
-#, kde-format
-msgid "Extracting %1 to %2"
-msgstr "एक्स्ट्रेक्टिंग %1 ल %2 पर"
-
-#: rip/k3bvideocdrippingdialog.cpp:50
-msgid "Video CD Ripping"
-msgstr "वीडियो सीडी रिप करत हे"
-
-#: rip/k3bvideocdrippingdialog.cpp:74
-#, fuzzy
-#| msgid "Destination Directory"
-msgid "Destination Folder"
-msgstr "गंतव्य डिरेक्टरी"
-
-#: rip/k3bvideocdrippingdialog.cpp:79
-msgid "Rip files to:"
-msgstr "फाइल मन ल इहां रिप करव:"
-
-#: rip/k3bvideocdrippingdialog.cpp:86
-#, fuzzy
-#| msgid "Free space in directory:"
-msgid "Free space in folder:"
-msgstr "डिरेक्टरी मं खाली जगह:"
-
-#: rip/k3bvideocdrippingdialog.cpp:91
-msgid "Necessary storage size:"
-msgstr "जरूरी भंडार आकार:"
-
-#: rip/k3bvideocdrippingdialog.cpp:103
-msgid "Ignore /EXT/PSD_X.VCD"
-msgstr "अनदेखा करव /EXT/PSD_X.VCD"
-
-#: rip/k3bvideocdrippingdialog.cpp:104
-msgid "Use 2336 byte sector mode for image file"
-msgstr "फोटू फाइल मन बर 2336 बाइट सेक्टर मोड उपयोग करव"
-
-#: rip/k3bvideocdrippingdialog.cpp:108
-msgid "Extract XML structure"
-msgstr "एक्सएमएल स्ट्रक्चर एक्सट्रेक्ट करव"
-
-#: rip/k3bvideocdrippingdialog.cpp:118 rip/k3bvideocdview.cpp:386
-#: rip/videodvd/k3bvideodvdrippingview.cpp:347 rip/k3baudiocdview.cpp:235
-#: rip/k3baudiorippingdialog.cpp:200
-msgid "Start Ripping"
-msgstr "रिपिंग चालू करव"
-
-#: rip/k3bvideocdrippingdialog.cpp:118
-msgid "Starts extracting the selected VideoCd tracks"
-msgstr "चुने गे वीडियो ट्रैक्स ल एक्स्ट्रैक्ट करना चालू करथे "
-
-#: rip/k3bvideocdrippingdialog.cpp:129
-#, fuzzy, kde-format
-#| msgid "Free space on destination directory: %1"
-msgid "Free space in destination folder: %1"
-msgstr "गंतव्य डिरेक्टरी मं खाली जगह: %1"
-
-#: rip/k3bvideocdrippingdialog.cpp:131
-msgid "Necessary space for extracted files"
-msgstr "एक्सट्रेक्टेड फाइल मन बर जरूरी जगह"
-
-#: rip/k3bvideocdrippingdialog.cpp:133
-msgid "Ignore extended PSD"
-msgstr "विस्तारित पीएसडी के अनदेखा करव"
-
-#: rip/k3bvideocdrippingdialog.cpp:134
-msgid ""
-"<p>Ignore extended PSD (located in the ISO-9660 filesystem under `/EXT/PSD_X."
-"VCD') and use the <em>standard</em> PSD.</p>"
-msgstr ""
-
-#: rip/k3bvideocdrippingdialog.cpp:136
-msgid "Assume a 2336-byte sector mode"
-msgstr "2336 बाइट सेक्टर मोड मान लें"
-
-#: rip/k3bvideocdrippingdialog.cpp:137
-msgid ""
-"<p>This option only makes sense if you are reading from a BIN CD disk image. "
-"This indicates to `vcdxrip' to assume a 2336-byte sector mode for image file."
-"</p><b>Note: This option is slated to disappear.</b>"
-msgstr ""
-
-#: rip/k3bvideocdrippingdialog.cpp:140
-msgid "Create XML description file."
-msgstr "एक्सएमएल वर्नन फाइल मन ल बनाव."
-
-#: rip/k3bvideocdrippingdialog.cpp:141
-msgid ""
-"<p>This option creates an XML description file with all video CD information."
-"</p><p>This file will always contain all of the information.</p><p>Example: "
-"If you only extract sequences, the description file will also hold the "
-"information for files and segments.</p><p>The filename is the same as the "
-"video CD name, with a .xml extension. The default is VIDEOCD.xml.</p>"
-msgstr ""
-
-#: rip/k3bvideocdrippingdialog.cpp:173
-msgid "Continue although the folder is not empty?"
-msgstr "फोल्डर खाली नइ हे तभो ले जारी रखव?"
-
-#: rip/k3bvideocdrippingdialog.cpp:175
-#: rip/videodvd/k3bvideodvdrippingdialog.cpp:518
-#: rip/k3baudioprojectconvertingdialog.cpp:196
-#: rip/k3baudiorippingdialog.cpp:266
-msgid "Files Exist"
-msgstr "फाइल मन ल मौजूद हे"
-
-#: rip/k3bvideocdview.cpp:208
-msgid "Item Name"
-msgstr "चीज के नाम"
-
-#: rip/k3bvideocdview.cpp:209
-msgid "Extracted Name"
-msgstr "एक्स्ट्रेक्टेड नाम"
-
-#: rip/k3bvideocdview.cpp:269 rip/k3bvideocdview.cpp:433
-msgid "Video CD MPEG tracks"
-msgstr "वीडियो सीडी एमपीईजी ट्रैक्स"
-
-#: rip/k3bvideocdview.cpp:270
-msgid "Video CD DATA track"
-msgstr "वीडियो सीडी डाटा ट्रैक्स"
-
-#: rip/k3bvideocdview.cpp:286
-#, kde-format
-msgid "Sequence-%1"
-msgstr "अनुक्रम-%1"
-
-#: rip/k3bvideocdview.cpp:291 rip/k3bvideocdview.cpp:334
-#: rip/k3bvideocdview.cpp:439
-msgid "Files"
-msgstr "फाइल"
-
-#: rip/k3bvideocdview.cpp:292 rip/k3bvideocdview.cpp:445
-msgid "Segments"
-msgstr "खन्ड"
-
-#: rip/k3bvideocdview.cpp:366 rip/k3baudiocdview.cpp:184
-#: rip/k3baudioprojectconvertingdialog.cpp:105
-#: rip/k3baudiorippingdialog.cpp:124
-#, kde-format
-msgid "1 track (%2)"
-msgid_plural "%1 tracks (%2)"
-msgstr[0] "१ ट्रैक %2"
-msgstr[1] "%1 ट्रैक (%2)"
-
-#: rip/k3bvideocdview.cpp:374
-msgid "Check All"
-msgstr "सब्बो जांचव"
-
-#: rip/k3bvideocdview.cpp:377
-msgid "Uncheck All"
-msgstr "सब्बो मत चुनव"
-
-#: rip/k3bvideocdview.cpp:380
-msgid "Check Track"
-msgstr "ट्रैक चुनव"
-
-#: rip/k3bvideocdview.cpp:383
-msgid "Uncheck Track"
-msgstr "चेक मत चुनव"
-
-#: rip/k3bvideocdview.cpp:389
-#, fuzzy
-#| msgid "Hidden Files"
-msgid "View Files"
-msgstr "लुकाए फाइल"
-
-#: rip/k3bvideocdview.cpp:391
-msgid "View plain data files"
-msgstr ""
-
-#: rip/k3bvideocdview.cpp:452 rip/k3baudiocdview.cpp:319
-msgid "Please select the tracks to rip."
-msgstr "रिप करे बर किरपा करके, ट्रैक्स चुनव."
-
-#: rip/k3bvideocdview.cpp:452 rip/k3baudiocdview.cpp:320
-msgid "No Tracks Selected"
-msgstr "कोई ट्रैक्स नइ चुने गे"
 
 #: rip/videodvd/k3bvideodvdaudiomodel.cpp:155
 #: rip/videodvd/k3bvideodvdtitlemodel.cpp:221
@@ -8194,50 +7836,11 @@ msgstr ""
 msgid "Do you want to overwrite these files?"
 msgstr "का आप मन ए फाइल मन ल मेटाय के लिखना चाहू?"
 
-#: rip/videodvd/k3bvideodvdrippingjob.cpp:110
-msgid "Ripping Video DVD Titles"
-msgstr "वीडियो डीवीडी टाइटल रिप करना"
-
-#: rip/videodvd/k3bvideodvdrippingjob.cpp:116
-#, kde-format
-msgid "Transcoding 1 title to %2/%3"
-msgid_plural "Transcoding %1 titles to %2/%3"
-msgstr[0] ""
-msgstr[1] ""
-
-#: rip/videodvd/k3bvideodvdrippingjob.cpp:145
-#, fuzzy, kde-format
-msgid "Successfully ripped title %1 to '%2'"
-msgstr "ट्रैक %1 ल %2 मं सफलतापूर्वक रिप करिस."
-
-#: rip/videodvd/k3bvideodvdrippingjob.cpp:150
-#, kde-format
-msgid "Failed to rip title %1"
-msgstr ""
-
-#: rip/videodvd/k3bvideodvdrippingjob.cpp:180
-#, kde-format
-msgid "Determined clipping values for title %1"
-msgstr ""
-
-#: rip/videodvd/k3bvideodvdrippingjob.cpp:181
-#, kde-format
-msgid "Top: %1, Bottom: %2"
-msgstr ""
-
-#: rip/videodvd/k3bvideodvdrippingjob.cpp:182
-#, kde-format
-msgid "Left: %1, Right: %2"
-msgstr ""
-
-#: rip/videodvd/k3bvideodvdrippingjob.cpp:189
-msgid "Insane clipping values. No clipping will be done at all."
-msgstr ""
-
-#: rip/videodvd/k3bvideodvdrippingjob.cpp:199
-#, kde-format
-msgid "Failed to determine clipping values for title %1"
-msgstr ""
+#: rip/videodvd/k3bvideodvdrippingdialog.cpp:518
+#: rip/k3baudioprojectconvertingdialog.cpp:196
+#: rip/k3baudiorippingdialog.cpp:266 rip/k3bvideocdrippingdialog.cpp:175
+msgid "Files Exist"
+msgstr "फाइल मन ल मौजूद हे"
 
 #: rip/videodvd/k3bvideodvdtitlemodel.cpp:49
 #, fuzzy, kde-format
@@ -8302,6 +7905,51 @@ msgstr "एनामार्फ"
 #: rip/videodvd/k3bvideodvdtitlemodel.cpp:315
 msgid "Subpicture"
 msgstr "सबपिक्चर"
+
+#: rip/videodvd/k3bvideodvdrippingjob.cpp:110
+msgid "Ripping Video DVD Titles"
+msgstr "वीडियो डीवीडी टाइटल रिप करना"
+
+#: rip/videodvd/k3bvideodvdrippingjob.cpp:116
+#, kde-format
+msgid "Transcoding 1 title to %2/%3"
+msgid_plural "Transcoding %1 titles to %2/%3"
+msgstr[0] ""
+msgstr[1] ""
+
+#: rip/videodvd/k3bvideodvdrippingjob.cpp:145
+#, fuzzy, kde-format
+msgid "Successfully ripped title %1 to '%2'"
+msgstr "ट्रैक %1 ल %2 मं सफलतापूर्वक रिप करिस."
+
+#: rip/videodvd/k3bvideodvdrippingjob.cpp:150
+#, kde-format
+msgid "Failed to rip title %1"
+msgstr ""
+
+#: rip/videodvd/k3bvideodvdrippingjob.cpp:180
+#, kde-format
+msgid "Determined clipping values for title %1"
+msgstr ""
+
+#: rip/videodvd/k3bvideodvdrippingjob.cpp:181
+#, kde-format
+msgid "Top: %1, Bottom: %2"
+msgstr ""
+
+#: rip/videodvd/k3bvideodvdrippingjob.cpp:182
+#, kde-format
+msgid "Left: %1, Right: %2"
+msgstr ""
+
+#: rip/videodvd/k3bvideodvdrippingjob.cpp:189
+msgid "Insane clipping values. No clipping will be done at all."
+msgstr ""
+
+#: rip/videodvd/k3bvideodvdrippingjob.cpp:199
+#, kde-format
+msgid "Failed to determine clipping values for title %1"
+msgstr ""
 
 #: rip/videodvd/k3bvideodvdrippingview.cpp:87
 #, fuzzy
@@ -8379,6 +8027,12 @@ msgstr "ट्रैक चुनव"
 #| msgid "Uncheck Track"
 msgid "Uncheck Tracks"
 msgstr "चेक मत चुनव"
+
+#: rip/videodvd/k3bvideodvdrippingview.cpp:347
+#: rip/k3baudiorippingdialog.cpp:200 rip/k3baudiocdview.cpp:235
+#: rip/k3bvideocdrippingdialog.cpp:118 rip/k3bvideocdview.cpp:386
+msgid "Start Ripping"
+msgstr "रिपिंग चालू करव"
 
 #: rip/videodvd/k3bvideodvdrippingview.cpp:349
 msgid "Open the Video DVD ripping dialog"
@@ -8488,137 +8142,18 @@ msgstr "सीर्सक"
 msgid "Data Track"
 msgstr "ट्रैक बजात हे"
 
-#: rip/k3baudiocdview.cpp:150
-msgid "Searching for Artist information..."
-msgstr ""
-
-#: rip/k3baudiocdview.cpp:206
-msgid "Audio CD"
-msgstr "आडियो सीडी"
-
-#: rip/k3baudiocdview.cpp:223
-#, fuzzy
-#| msgid "Edit Track cddb Info"
-msgid "Edit Track Info..."
-msgstr "ट्रैक सीडीडीबी जानकारी संपादित करव"
-
-#: rip/k3baudiocdview.cpp:224
-msgid "Edit current track information"
-msgstr ""
-
-#: rip/k3baudiocdview.cpp:229
-#, fuzzy
-#| msgid "Edit Album cddb Info"
-msgid "Edit Album Info..."
-msgstr "एलबम सीडीडीबी जानकारी संपादित करव"
-
-#: rip/k3baudiocdview.cpp:230
-#, fuzzy
-#| msgid "Edit Album cddb Info"
-msgid "Edit album information"
-msgstr "एलबम सीडीडीबी जानकारी संपादित करव"
-
-#: rip/k3baudiocdview.cpp:236
-#, fuzzy
-#| msgid "Start Ripping"
-msgid "Start audio ripping process"
-msgstr "रिपिंग चालू करव"
-
-#: rip/k3baudiocdview.cpp:241
-#, fuzzy
-#| msgid "Query Cddb"
-msgid "Query CD Database"
-msgstr "सीडीडीबी क्वैरी"
-
-#: rip/k3baudiocdview.cpp:242
-msgid "Look for information on CDDB"
-msgstr ""
-
-#: rip/k3baudiocdview.cpp:247
-#, fuzzy
-#| msgid "Use CD-Text"
-msgid "Read CD-Text"
-msgstr "सीडी-पाठ उपयोग करव"
-
-#: rip/k3baudiocdview.cpp:248
-msgid "Read CD-Text information"
-msgstr ""
-
-#: rip/k3baudiocdview.cpp:253
-msgid "Load CD Info"
-msgstr ""
-
-#: rip/k3baudiocdview.cpp:254
-msgid "Load track and album information"
-msgstr ""
-
-#: rip/k3baudiocdview.cpp:261
-#, fuzzy
-#| msgid "Save Cddb Entry Locally"
-msgid "Save CD Info Locally"
-msgstr "सीडीडीबी प्रविस्टि मन ल लोकल सहेजव"
-
-#: rip/k3baudiocdview.cpp:262
-msgid "Save track and album information to the local CDDB cache"
-msgstr ""
-
-#: rip/k3baudiocdview.cpp:267
-#, fuzzy
-#| msgid "New &Data Project"
-msgid "Show Data Part"
-msgstr "नवा डाटा परियोजना (&D)"
-
-#: rip/k3baudiocdview.cpp:268
-msgid "Mounts the data part of CD"
-msgstr ""
-
-#: rip/k3baudiocdview.cpp:340
-#, fuzzy
-#| msgid "Merge Tracks"
-msgid "Multiple Tracks"
-msgstr "ट्रैक्स सम्मिलित करव"
-
-#: rip/k3baudiocdview.cpp:342
-#, fuzzy, kde-format
-#| msgid "Cddb Track %1"
-msgid "CDDB Track %1"
-msgstr "सीडीडीबी ट्रैक %1"
-
-#: rip/k3baudiocdview.cpp:356 rip/k3baudiocdview.cpp:413
-msgid "Title:"
-msgstr "सीर्सकः"
-
-#: rip/k3baudiocdview.cpp:358 rip/k3baudiocdview.cpp:414
-msgid "Artist:"
-msgstr "कलाकार:"
-
-#: rip/k3baudiocdview.cpp:359 rip/k3baudiocdview.cpp:415
-msgid "Extra info:"
-msgstr "अतिरिक्त जानकारी:"
-
-#: rip/k3baudiocdview.cpp:376
-msgid "Album Cddb"
-msgstr "एल्बम सीडीडीबी"
-
-#: rip/k3baudiocdview.cpp:416
-msgid "Genre:"
-msgstr "घरानाः"
-
-#: rip/k3baudiocdview.cpp:417
-msgid "Year:"
-msgstr "सालः"
-
-#: rip/k3baudiocdview.cpp:419
-msgid "Category:"
-msgstr "वर्ग:"
-
-#: rip/k3baudioconvertingoptionwidget.cpp:174
-msgid "Wave"
-msgstr "वेव"
-
 #: rip/k3baudioprojectconvertingdialog.cpp:104
 msgid "Audio Project Conversion"
 msgstr "आडियो परियोजना कनवर्सन"
+
+#: rip/k3baudioprojectconvertingdialog.cpp:105
+#: rip/k3baudiorippingdialog.cpp:124 rip/k3baudiocdview.cpp:184
+#: rip/k3bvideocdview.cpp:366
+#, kde-format
+msgid "1 track (%2)"
+msgid_plural "%1 tracks (%2)"
+msgstr[0] "१ ट्रैक %2"
+msgstr[1] "%1 ट्रैक (%2)"
 
 #: rip/k3baudioprojectconvertingdialog.cpp:125
 #, fuzzy
@@ -8775,6 +8310,10 @@ msgstr "क्यू-फाइल"
 msgid "Track%1"
 msgstr "ट्रैक %1"
 
+#: rip/k3baudiorippingdialog.cpp:427 rip/k3bcddbpatternwidget.cpp:59
+msgid "Playlist"
+msgstr "गीत-सूची"
+
 #: rip/k3bmassaudioencodingjob.cpp:159
 #, kde-format
 msgid "1 track (encoding to %2)"
@@ -8813,6 +8352,465 @@ msgstr "गीत-सूची ल %1 मं लिखत हे."
 #, kde-format
 msgid "Writing cue file to %1."
 msgstr "क्यू फाइल ल %1 मं लिखत हे."
+
+#: rip/k3baudiocdview.cpp:150
+msgid "Searching for Artist information..."
+msgstr ""
+
+#: rip/k3baudiocdview.cpp:206
+msgid "Audio CD"
+msgstr "आडियो सीडी"
+
+#: rip/k3baudiocdview.cpp:223
+#, fuzzy
+#| msgid "Edit Track cddb Info"
+msgid "Edit Track Info..."
+msgstr "ट्रैक सीडीडीबी जानकारी संपादित करव"
+
+#: rip/k3baudiocdview.cpp:224
+msgid "Edit current track information"
+msgstr ""
+
+#: rip/k3baudiocdview.cpp:229
+#, fuzzy
+#| msgid "Edit Album cddb Info"
+msgid "Edit Album Info..."
+msgstr "एलबम सीडीडीबी जानकारी संपादित करव"
+
+#: rip/k3baudiocdview.cpp:230
+#, fuzzy
+#| msgid "Edit Album cddb Info"
+msgid "Edit album information"
+msgstr "एलबम सीडीडीबी जानकारी संपादित करव"
+
+#: rip/k3baudiocdview.cpp:236
+#, fuzzy
+#| msgid "Start Ripping"
+msgid "Start audio ripping process"
+msgstr "रिपिंग चालू करव"
+
+#: rip/k3baudiocdview.cpp:241
+#, fuzzy
+#| msgid "Query Cddb"
+msgid "Query CD Database"
+msgstr "सीडीडीबी क्वैरी"
+
+#: rip/k3baudiocdview.cpp:242
+msgid "Look for information on CDDB"
+msgstr ""
+
+#: rip/k3baudiocdview.cpp:247
+#, fuzzy
+#| msgid "Use CD-Text"
+msgid "Read CD-Text"
+msgstr "सीडी-पाठ उपयोग करव"
+
+#: rip/k3baudiocdview.cpp:248
+msgid "Read CD-Text information"
+msgstr ""
+
+#: rip/k3baudiocdview.cpp:253
+msgid "Load CD Info"
+msgstr ""
+
+#: rip/k3baudiocdview.cpp:254
+msgid "Load track and album information"
+msgstr ""
+
+#: rip/k3baudiocdview.cpp:261
+#, fuzzy
+#| msgid "Save Cddb Entry Locally"
+msgid "Save CD Info Locally"
+msgstr "सीडीडीबी प्रविस्टि मन ल लोकल सहेजव"
+
+#: rip/k3baudiocdview.cpp:262
+msgid "Save track and album information to the local CDDB cache"
+msgstr ""
+
+#: rip/k3baudiocdview.cpp:267
+#, fuzzy
+#| msgid "New &Data Project"
+msgid "Show Data Part"
+msgstr "नवा डाटा परियोजना (&D)"
+
+#: rip/k3baudiocdview.cpp:268
+msgid "Mounts the data part of CD"
+msgstr ""
+
+#: rip/k3baudiocdview.cpp:319 rip/k3bvideocdview.cpp:452
+msgid "Please select the tracks to rip."
+msgstr "रिप करे बर किरपा करके, ट्रैक्स चुनव."
+
+#: rip/k3baudiocdview.cpp:320 rip/k3bvideocdview.cpp:452
+msgid "No Tracks Selected"
+msgstr "कोई ट्रैक्स नइ चुने गे"
+
+#: rip/k3baudiocdview.cpp:340
+#, fuzzy
+#| msgid "Merge Tracks"
+msgid "Multiple Tracks"
+msgstr "ट्रैक्स सम्मिलित करव"
+
+#: rip/k3baudiocdview.cpp:342
+#, fuzzy, kde-format
+#| msgid "Cddb Track %1"
+msgid "CDDB Track %1"
+msgstr "सीडीडीबी ट्रैक %1"
+
+#: rip/k3baudiocdview.cpp:356 rip/k3baudiocdview.cpp:413
+msgid "Title:"
+msgstr "सीर्सकः"
+
+#: rip/k3baudiocdview.cpp:358 rip/k3baudiocdview.cpp:414
+msgid "Artist:"
+msgstr "कलाकार:"
+
+#: rip/k3baudiocdview.cpp:359 rip/k3baudiocdview.cpp:415
+msgid "Extra info:"
+msgstr "अतिरिक्त जानकारी:"
+
+#: rip/k3baudiocdview.cpp:376
+msgid "Album Cddb"
+msgstr "एल्बम सीडीडीबी"
+
+#: rip/k3baudiocdview.cpp:416
+msgid "Genre:"
+msgstr "घरानाः"
+
+#: rip/k3baudiocdview.cpp:417
+msgid "Year:"
+msgstr "सालः"
+
+#: rip/k3baudiocdview.cpp:419
+msgid "Category:"
+msgstr "वर्ग:"
+
+#: rip/k3baudioconvertingoptionwidget.cpp:174
+msgid "Wave"
+msgstr "वेव"
+
+#: rip/k3bcddbpatternwidget.cpp:53
+#, fuzzy
+#| msgid "%A - %T/%n - !a='%A'{%a - }%t"
+msgctxt ""
+"Please do NOT modify/translate the quotes, they are part of the pattern!"
+msgid "%A - %T/%n - !a='%A'{%a - }%t"
+msgstr "%A - %T/%n - !a='%A'{%a - }%t"
+
+#: rip/k3bcddbpatternwidget.cpp:54
+msgid "%{albumartist} - %{albumtitle}/%{number} - %{artist} - %{title}"
+msgstr "%{albumartist} - %{albumtitle}/%{number} - %{artist} - %{title}"
+
+#: rip/k3bcddbpatternwidget.cpp:55
+msgid "%{genre}/%{albumartist} - %{albumtitle}/Track%{number}"
+msgstr "%{genre}/%{albumartist} - %{albumtitle}/Track%{number}"
+
+#: rip/k3bcddbpatternwidget.cpp:56
+msgid "music/ripped-tracks/%a - %t"
+msgstr "संगीत/रिप-किए-गए-ट्रैक्स/%a - %t"
+
+#: rip/k3bcddbpatternwidget.cpp:58
+msgid "%{albumartist} - %{albumtitle}"
+msgstr "%{albumartist} - %{albumtitle}"
+
+#: rip/k3bcddbpatternwidget.cpp:60
+msgid "playlists/%{albumartist}/%{albumtitle    }"
+msgstr "playlists/%{albumartist}/%{albumtitle    }"
+
+#: rip/k3bcddbpatternwidget.cpp:127
+msgid ""
+"<p><b>Pattern special strings:</b><p>The following strings will be replaced "
+"with their respective meaning in every track name.<br><em>Hint:</em> %A "
+"differs from %a only on soundtracks or compilations.<p><table border=\"0"
+"\"><tr><td></td><td><em>Meaning</em></td><td><em>Alternatives</em></td></"
+"tr><tr><td>%a</td><td>artist of the track</td><td>%{a} or %{artist}</td></"
+"tr><tr><td>%t</td><td>title of the track</td><td>%{t} or %{title}</td></"
+"tr><tr><td>%n</td><td>track number</td><td>%{n} or %{number}</td></"
+"tr><tr><td>%y</td><td>year of the CD</td><td>%{y} or %{year}</td></"
+"tr><tr><td>%c</td><td>extended track information</td><td>%{c} or %{comment}</"
+"td></tr><tr><td>%g</td><td>genre of the CD</td><td>%{g} or %{genre}</td></"
+"tr><tr><td>%A</td><td>album artist</td><td>%{A} or %{albumartist}</td></"
+"tr><tr><td>%T</td><td>album title</td><td>%{T} or %{albumtitle}</td></"
+"tr><tr><td>%C</td><td>extended CD information</td><td>%{C} or %{albumcomment}"
+"</td></tr><tr><td>%d</td><td>current date</td><td>%{d} or %{date}</td></"
+"tr><tr><td>%e</td><td>file extension (if left out, it is added automatically)"
+"</td><td>%{e} or %{ext}</td></tr></table>"
+msgstr ""
+
+#: rip/k3bcddbpatternwidget.cpp:153
+#, c-format
+msgctxt ""
+"Please do NOT modify/translate the quotes, they are part of the pattern!"
+msgid ""
+"<p><b>Conditional inclusion:</b><p>These patterns make it possible to "
+"selectively include texts, depending on the value of CDDB entries. You can "
+"choose only to include or exclude texts if one of the entries is empty, or "
+"if it has a specific value. Examples:<ul><li>@T{TEXT} includes TEXT if the "
+"album title is specified<li>!T{TEXT} includes TEXT if the album title is not "
+"specified<li>@C='Soundtrack'{TEXT} includes TEXT if the CD's extended "
+"information is named Soundtrack<li>!C='Soundtrack'{TEXT} includes TEXT if "
+"the CD's extended information is anything else but Soundtrack<li>It is also "
+"possible to include special strings in texts and conditions, e.g. !a='%A'{%"
+"a} only includes the title's artist information if it does not differ from "
+"the album artist.</ul><p>Conditional includes make use of the same "
+"characters as the special strings, which means that the X in @X{...} can be "
+"one character out of [atnycgATCd]."
+msgstr ""
+
+#: rip/k3bvideocdrip.cpp:62
+msgid "Job canceled by user."
+msgstr "कमइया से काम खारिज करिस."
+
+#: rip/k3bvideocdrip.cpp:91
+msgid "Check files"
+msgstr "फाइल मन ल जांचव"
+
+#: rip/k3bvideocdrip.cpp:101
+#, kde-format
+msgid "Could not find %1 executable."
+msgstr "एक्जीक्यूटेबल %1 नइ मिलिस."
+
+#: rip/k3bvideocdrip.cpp:102
+#, fuzzy, kde-format
+#| msgid "To rip VideoCD's you must install VcdImager Version %1."
+msgid "To rip Video CDs you have to install VcdImager Version %1."
+msgstr ""
+"वीडियोसीडी ल रिप करे बर आप मन ल वीसीडीइमेजर संस्करन %1 ल जरूरी रूप से इनस्टाल करना "
+"होही."
+
+#: rip/k3bvideocdrip.cpp:103
+#, fuzzy
+#| msgid ""
+#| "You can find this on your distribution disks or download it from http://"
+#| "www.vcdimager.org"
+msgid ""
+"You can find this on your distribution’s software repository or download it "
+"from http://www.vcdimager.org"
+msgstr ""
+"एला आप मन अपन डिस्ट्रीब्यूसन डिस्क मं पा सकथो या एला इहां से डाउनलोड कर सकथो -  "
+"http://www.vcdimager.org"
+
+#: rip/k3bvideocdrip.cpp:111
+#, fuzzy, kde-format
+msgid "%1 executable too old: need version %2 or greater."
+msgstr "%1 एक्जीक्यूटेबल बहुत जुन्ना हे! संस्करन %2 या अधिक के जरूरत हे"
+
+#: rip/k3bvideocdrip.cpp:112
+msgid ""
+"You can find this on your distribution disks or download it from http://www."
+"vcdimager.org"
+msgstr ""
+"एला आप मन अपन डिस्ट्रीब्यूसन डिस्क मं पा सकथो या एला इहां से डाउनलोड कर सकथो -  "
+"http://www.vcdimager.org"
+
+#: rip/k3bvideocdrip.cpp:119
+#, fuzzy, kde-format
+#| msgid "Using %1 %2 - Copyright (C) %3"
+msgid "Using %1 %2 – Copyright © %3"
+msgstr "उपयोग करत हे %1 %2 - कापीराइट (C) %3"
+
+#: rip/k3bvideocdrip.cpp:170
+msgid "Extracting"
+msgstr "एक्स्ट्रेक्टिंग"
+
+#: rip/k3bvideocdrip.cpp:171
+msgid "Start extracting."
+msgstr "एक्स्ट्रेक्टिंग चालू करव."
+
+#: rip/k3bvideocdrip.cpp:172
+#, kde-format
+msgid "Extract files from %1 to %2."
+msgstr "फाइल मन ल %1 से %2 मं निकालव."
+
+#: rip/k3bvideocdrip.cpp:177
+#, kde-format
+msgid "Could not start %1."
+msgstr "%1 चालू नइ कर सकिस."
+
+#: rip/k3bvideocdrip.cpp:267
+msgid "Files successfully extracted."
+msgstr "फाइल मन ल सफलतापूर्वक एक्सट्रेक्ट करे गें."
+
+#: rip/k3bvideocdrip.cpp:270
+#, kde-format
+msgid "%1 returned an unknown error (code %2)."
+msgstr "%1 ह एक अग्यात गलती लहुटाइस (कोड %2)."
+
+#: rip/k3bvideocdrip.cpp:271
+msgid "Please send me an email with the last output..."
+msgstr "आखरी आउटपुट के साथ किरपा करके, मोला ईमेल करव..."
+
+#: rip/k3bvideocdrip.cpp:277
+#, kde-format
+msgid "%1 did not exit cleanly."
+msgstr "%1 अच्छे तरीके से बाहिर नइ होइस."
+
+#: rip/k3bvideocdrip.cpp:291
+#, kde-format
+msgid "%1 encountered non-form2 sector"
+msgstr "%1 नान-फारम2 सेक्टर मिलिस"
+
+#: rip/k3bvideocdrip.cpp:292
+msgid "leaving loop"
+msgstr "लूप छोड़त हे"
+
+#: rip/k3bvideocdrip.cpp:300
+msgid "detected extended VCD2.0 PBC files"
+msgstr "एक्सटेंडेड वीसीडी2.0 पीबीसी फाइल मन ल पाया"
+
+#: rip/k3bvideocdrip.cpp:327 rip/k3bvideocdrip.cpp:345
+#, kde-format
+msgid "Extracting %1"
+msgstr "एक्स्ट्रेक्टिंग %1"
+
+#: rip/k3bvideocdrip.cpp:338
+#, kde-format
+msgid "Extracting %1 to %2"
+msgstr "एक्स्ट्रेक्टिंग %1 ल %2 पर"
+
+#: rip/k3bvideocdrippingdialog.cpp:50
+msgid "Video CD Ripping"
+msgstr "वीडियो सीडी रिप करत हे"
+
+#: rip/k3bvideocdrippingdialog.cpp:74
+#, fuzzy
+#| msgid "Destination Directory"
+msgid "Destination Folder"
+msgstr "गंतव्य डिरेक्टरी"
+
+#: rip/k3bvideocdrippingdialog.cpp:79
+msgid "Rip files to:"
+msgstr "फाइल मन ल इहां रिप करव:"
+
+#: rip/k3bvideocdrippingdialog.cpp:86
+#, fuzzy
+#| msgid "Free space in directory:"
+msgid "Free space in folder:"
+msgstr "डिरेक्टरी मं खाली जगह:"
+
+#: rip/k3bvideocdrippingdialog.cpp:91
+msgid "Necessary storage size:"
+msgstr "जरूरी भंडार आकार:"
+
+#: rip/k3bvideocdrippingdialog.cpp:103
+msgid "Ignore /EXT/PSD_X.VCD"
+msgstr "अनदेखा करव /EXT/PSD_X.VCD"
+
+#: rip/k3bvideocdrippingdialog.cpp:104
+msgid "Use 2336 byte sector mode for image file"
+msgstr "फोटू फाइल मन बर 2336 बाइट सेक्टर मोड उपयोग करव"
+
+#: rip/k3bvideocdrippingdialog.cpp:108
+msgid "Extract XML structure"
+msgstr "एक्सएमएल स्ट्रक्चर एक्सट्रेक्ट करव"
+
+#: rip/k3bvideocdrippingdialog.cpp:118
+msgid "Starts extracting the selected VideoCd tracks"
+msgstr "चुने गे वीडियो ट्रैक्स ल एक्स्ट्रैक्ट करना चालू करथे "
+
+#: rip/k3bvideocdrippingdialog.cpp:129
+#, fuzzy, kde-format
+#| msgid "Free space on destination directory: %1"
+msgid "Free space in destination folder: %1"
+msgstr "गंतव्य डिरेक्टरी मं खाली जगह: %1"
+
+#: rip/k3bvideocdrippingdialog.cpp:131
+msgid "Necessary space for extracted files"
+msgstr "एक्सट्रेक्टेड फाइल मन बर जरूरी जगह"
+
+#: rip/k3bvideocdrippingdialog.cpp:133
+msgid "Ignore extended PSD"
+msgstr "विस्तारित पीएसडी के अनदेखा करव"
+
+#: rip/k3bvideocdrippingdialog.cpp:134
+msgid ""
+"<p>Ignore extended PSD (located in the ISO-9660 filesystem under `/EXT/PSD_X."
+"VCD') and use the <em>standard</em> PSD.</p>"
+msgstr ""
+
+#: rip/k3bvideocdrippingdialog.cpp:136
+msgid "Assume a 2336-byte sector mode"
+msgstr "2336 बाइट सेक्टर मोड मान लें"
+
+#: rip/k3bvideocdrippingdialog.cpp:137
+msgid ""
+"<p>This option only makes sense if you are reading from a BIN CD disk image. "
+"This indicates to `vcdxrip' to assume a 2336-byte sector mode for image file."
+"</p><b>Note: This option is slated to disappear.</b>"
+msgstr ""
+
+#: rip/k3bvideocdrippingdialog.cpp:140
+msgid "Create XML description file."
+msgstr "एक्सएमएल वर्नन फाइल मन ल बनाव."
+
+#: rip/k3bvideocdrippingdialog.cpp:141
+msgid ""
+"<p>This option creates an XML description file with all video CD information."
+"</p><p>This file will always contain all of the information.</p><p>Example: "
+"If you only extract sequences, the description file will also hold the "
+"information for files and segments.</p><p>The filename is the same as the "
+"video CD name, with a .xml extension. The default is VIDEOCD.xml.</p>"
+msgstr ""
+
+#: rip/k3bvideocdrippingdialog.cpp:173
+msgid "Continue although the folder is not empty?"
+msgstr "फोल्डर खाली नइ हे तभो ले जारी रखव?"
+
+#: rip/k3bvideocdview.cpp:208
+msgid "Item Name"
+msgstr "चीज के नाम"
+
+#: rip/k3bvideocdview.cpp:209
+msgid "Extracted Name"
+msgstr "एक्स्ट्रेक्टेड नाम"
+
+#: rip/k3bvideocdview.cpp:269 rip/k3bvideocdview.cpp:433
+msgid "Video CD MPEG tracks"
+msgstr "वीडियो सीडी एमपीईजी ट्रैक्स"
+
+#: rip/k3bvideocdview.cpp:270
+msgid "Video CD DATA track"
+msgstr "वीडियो सीडी डाटा ट्रैक्स"
+
+#: rip/k3bvideocdview.cpp:286
+#, kde-format
+msgid "Sequence-%1"
+msgstr "अनुक्रम-%1"
+
+#: rip/k3bvideocdview.cpp:291 rip/k3bvideocdview.cpp:334
+#: rip/k3bvideocdview.cpp:439
+msgid "Files"
+msgstr "फाइल"
+
+#: rip/k3bvideocdview.cpp:292 rip/k3bvideocdview.cpp:445
+msgid "Segments"
+msgstr "खन्ड"
+
+#: rip/k3bvideocdview.cpp:374
+msgid "Check All"
+msgstr "सब्बो जांचव"
+
+#: rip/k3bvideocdview.cpp:377
+msgid "Uncheck All"
+msgstr "सब्बो मत चुनव"
+
+#: rip/k3bvideocdview.cpp:380
+msgid "Check Track"
+msgstr "ट्रैक चुनव"
+
+#: rip/k3bvideocdview.cpp:383
+msgid "Uncheck Track"
+msgstr "चेक मत चुनव"
+
+#: rip/k3bvideocdview.cpp:389
+#, fuzzy
+#| msgid "Hidden Files"
+msgid "View Files"
+msgstr "लुकाए फाइल"
+
+#: rip/k3bvideocdview.cpp:391
+msgid "View plain data files"
+msgstr ""
 
 #: ../plugins/decoder/ffmpeg/k3bffmpegwrapper.cpp:208
 msgid "Windows Media v1"
@@ -9030,16 +9028,6 @@ msgstr ""
 msgid "No filename specified"
 msgstr "कोई फाइलनाम निरधारित नइ हे"
 
-#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:128
-#, kde-format
-msgid "Constant Bitrate: %1 kbps (%2)"
-msgstr "स्थिर बिटरेट : %1 केबीपीएस (%2)"
-
-#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:132
-#, kde-format
-msgid "Variable Bitrate (%1)"
-msgstr "वेरिएबल बिटरेट (%1)"
-
 #: ../plugins/encoder/lame/k3blamemanualsettingsdialog.cpp:23
 msgid "(Lame) Manual Quality Settings"
 msgstr "(लेम) मेनुअल क्वालिटी सेटिंग"
@@ -9083,6 +9071,16 @@ msgstr "हाईफाई (औसत २३० केबीपीएस)"
 #: ../plugins/encoder/lame/k3blametyes.h:87
 msgid "Archiving (320 kbps)"
 msgstr "अभिलेखन (३२० केबीपीएस)"
+
+#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:128
+#, kde-format
+msgid "Constant Bitrate: %1 kbps (%2)"
+msgstr "स्थिर बिटरेट : %1 केबीपीएस (%2)"
+
+#: ../plugins/encoder/lame/k3blameencoderconfigwidget.cpp:132
+#, kde-format
+msgid "Variable Bitrate (%1)"
+msgstr "वेरिएबल बिटरेट (%1)"
 
 #: ../plugins/encoder/ogg/k3boggvorbisencoderconfigwidget.cpp:63
 msgid "Controls the quality of the encoded files."
