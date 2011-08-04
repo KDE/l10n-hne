@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 17:50+0200\n"
+"POT-Creation-Date: 2011-08-04 02:20+0200\n"
 "PO-Revision-Date: 2009-03-02 23:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -51,54 +51,6 @@ msgstr ""
 "डाटा ल घटते अनुक्रम मं छांटथे  (ए से जेड अउ ० से ९). चुने गे खंभा के डाटा छंटाई के लिए परयोग "
 "मं ले जाही."
 
-#: core/KexiView.cpp:66
-msgid "Switch to data view"
-msgstr "डाटा दृस्य मं स्विच करव"
-
-#: core/KexiView.cpp:67
-msgid "Switches to data view."
-msgstr "डाटा दृस्य मं स्विच करथे ."
-
-#: core/KexiView.cpp:70
-msgid "Switch to design view"
-msgstr "डिजाइन दृस्य मं स्विच करव"
-
-#: core/KexiView.cpp:71
-msgid "Switches to design view."
-msgstr "डिजाइन दृस्य मं स्विच करथे ."
-
-#: core/KexiView.cpp:74
-msgid "Switch to text view"
-msgstr "पाठ दृस्य मं स्विच करव"
-
-#: core/KexiView.cpp:75
-msgid "Switches to text view."
-msgstr "पाठ दृस्य मं स्विच करथे ."
-
-#: core/KexiView.cpp:232
-msgid "Save"
-msgstr "सहेजव"
-
-#: core/KexiView.cpp:233
-msgid "Save current design"
-msgstr "अभी हाल के डिजाइन सहेजव"
-
-#: core/KexiView.cpp:234
-msgid "Saves changes made to the current design."
-msgstr "अभी हाल के डिजाइन मं करे बदलाव मन ल सहेजथे ."
-
-#: core/KexiView.cpp:580
-msgid "Show:"
-msgstr "देखाव:"
-
-#: core/KexiView.cpp:591 main/KexiMainWindow_p.h:198
-msgid "Data"
-msgstr "डाटा"
-
-#: core/KexiView.cpp:602
-msgid "Design"
-msgstr "डिजाइन"
-
 #: core/kexicontexthelp.cpp:34 core/KoContextHelp.cpp:518
 #: core/KoContextHelp.cpp:550 core/KoContextHelp.cpp:560
 #: core/KoContextHelp.cpp:579 core/KoContextHelp.cpp:591
@@ -137,21 +89,47 @@ msgctxt "database connection"
 msgid "(connection %1)"
 msgstr "(कनेक्सन %1)"
 
-#: core/KexiWindow.cpp:612
+#: core/KexiWindow.cpp:608 widget/kexidbconnectionwidget.cpp:89
+msgid "Save Changes"
+msgstr "बदलाव सहेजव"
+
+#: core/KexiWindow.cpp:611
+#, fuzzy
+#| msgctxt "Do Not Add Database Primary Key to a Table"
+#| msgid "Do Not Add"
+msgid "Do Not Switch"
+msgstr "जोड़व नइ"
+
+#: core/KexiWindow.cpp:614
+#, fuzzy, kde-format
+#| msgid ""
+#| "Design has been changed. You must save it before switching to other view."
+msgid ""
+"There are unsaved changes in object \"%1\". Do you want to save these "
+"changes before switching to other view?"
+msgstr "डिजाइन बदल गे हे. अउ दृस्य मं स्विच करे से पहिली आप मन ल एला सहेज ले चाही."
+
+#: core/KexiWindow.cpp:617
+#, fuzzy
+#| msgid "Save Changes"
+msgid "Confirm Saving Changes"
+msgstr "बदलाव सहेजव"
+
+#: core/KexiWindow.cpp:638
 msgid ""
 "Design has been changed. You must save it before switching to other view."
 msgstr "डिजाइन बदल गे हे. अउ दृस्य मं स्विच करे से पहिली आप मन ल एला सहेज ले चाही."
 
-#: core/KexiWindow.cpp:677 main/KexiMainWindow.cpp:3582
+#: core/KexiWindow.cpp:703 main/KexiMainWindow.cpp:3582
 #, kde-format
 msgid "Switching to other view failed (%1)."
 msgstr "अऊ दूसर दृस्य मं स्विच करना फेल (%1)."
 
-#: core/KexiWindow.cpp:859
+#: core/KexiWindow.cpp:885
 msgid "Saving object's definition failed."
 msgstr "चीज के परिभासा सहेजे मं फेल."
 
-#: core/KexiWindow.cpp:943
+#: core/KexiWindow.cpp:969
 msgid "Saving object's data failed."
 msgstr "चीज के डाटा सहेजे मं फेल."
 
@@ -809,6 +787,54 @@ msgstr "ये फंक्सन अनुपरयोग %2 के %1 सं�
 #, kde-format
 msgid "\"%1\" function is not available for version %2 of %3 application."
 msgstr "फंक्सन \"%1\" अनुपरयोग %3 के %2 संस्करन बर नइ मिलत हे."
+
+#: core/KexiView.cpp:66
+msgid "Switch to data view"
+msgstr "डाटा दृस्य मं स्विच करव"
+
+#: core/KexiView.cpp:67
+msgid "Switches to data view."
+msgstr "डाटा दृस्य मं स्विच करथे ."
+
+#: core/KexiView.cpp:70
+msgid "Switch to design view"
+msgstr "डिजाइन दृस्य मं स्विच करव"
+
+#: core/KexiView.cpp:71
+msgid "Switches to design view."
+msgstr "डिजाइन दृस्य मं स्विच करथे ."
+
+#: core/KexiView.cpp:74
+msgid "Switch to text view"
+msgstr "पाठ दृस्य मं स्विच करव"
+
+#: core/KexiView.cpp:75
+msgid "Switches to text view."
+msgstr "पाठ दृस्य मं स्विच करथे ."
+
+#: core/KexiView.cpp:232
+msgid "Save"
+msgstr "सहेजव"
+
+#: core/KexiView.cpp:233
+msgid "Save current design"
+msgstr "अभी हाल के डिजाइन सहेजव"
+
+#: core/KexiView.cpp:234
+msgid "Saves changes made to the current design."
+msgstr "अभी हाल के डिजाइन मं करे बदलाव मन ल सहेजथे ."
+
+#: core/KexiView.cpp:595
+msgid "Show:"
+msgstr "देखाव:"
+
+#: core/KexiView.cpp:606 main/KexiMainWindow_p.h:198
+msgid "Data"
+msgstr "डाटा"
+
+#: core/KexiView.cpp:617
+msgid "Design"
+msgstr "डिजाइन"
 
 #: formeditor/WidgetTreeWidget.cpp:96 formeditor/commands.cpp:2217
 #: main/printing/kexisimpleprintingengine.cpp:326
@@ -7343,10 +7369,6 @@ msgid ""
 "\" combo box."
 msgstr ""
 
-#: widget/kexidbconnectionwidget.cpp:89
-msgid "Save Changes"
-msgstr "बदलाव सहेजव"
-
 #: widget/kexidbconnectionwidget.cpp:90
 msgid "Save all changes made to this connection information"
 msgstr "ये कनेक्सन जानकारी मं करे सब्बो बदलाव मन ल सहेजव"
@@ -7544,22 +7566,66 @@ msgstr "चुने गे टेबल/क्वैरी ल खोलव (&O
 msgid "Click to show available actions for this cell"
 msgstr "ये कक्छ बर मिलत काम मन ल देखाय बर किलिक करव"
 
+#: widget/tableview/kexitableviewdata.cpp:596
+#: widget/tableview/kexitableviewdata.cpp:607
+#, kde-format
+msgid "\"%1\" column requires a value to be entered."
+msgstr "खंभा \"%1\" मं एक मूल्य भरे जाना जरूरी हे."
+
+#: widget/tableview/kexitableviewdata.cpp:598
+#: widget/tableview/kexidataawareobjectiface.cpp:949
+msgid "The column's constraint is declared as NOT NULL."
+msgstr "खंभा के अवरोध नाट नल के रूप मं डिक्लेयर हे."
+
+#: widget/tableview/kexitableviewdata.cpp:609
+#: widget/tableview/kexidataawareobjectiface.cpp:968
+msgid "The column's constraint is declared as NOT EMPTY."
+msgstr "खंभा के अवरोध नाट एमप्टी के रूप मं डिक्लेयर हे."
+
+#: widget/tableview/kexitableviewdata.cpp:620
+#, fuzzy
+#| msgid "Row inserting failed."
+msgid "Record inserting failed."
+msgstr "लकीर भरव करे मं फेल."
+
+#: widget/tableview/kexitableviewdata.cpp:638
+#, fuzzy
+#| msgid "Row changing failed."
+msgid "Record changing failed."
+msgstr "लकीर बदलना फेल."
+
+#: widget/tableview/kexitableviewdata.cpp:706
+#, fuzzy
+#| msgid "Row deleting failed."
+msgid "Record deleting failed."
+msgstr "लकीर मेटाय मं फेल."
+
+#: widget/tableview/kexitableview.cpp:120
+#, fuzzy
+#| msgid "Contains a pointer to the currently selected row"
+msgid "Contains a pointer to the currently selected record"
+msgstr "अभी हाल के चुने गे लकीर मं एक पाइंटर हे"
+
+#: widget/tableview/kexitableview.cpp:122
+#, fuzzy
+#| msgid "Row navigator"
+msgid "Record navigator"
+msgstr "लकीर नेविगेटर"
+
+#: widget/tableview/kexitableview.cpp:242
+msgid "Add Record"
+msgstr "रेकार्ड जोड़व"
+
+#: widget/tableview/kexitableview.cpp:245
+msgid "Remove Record"
+msgstr "रेकार्ड मेटाव"
+
 #: widget/tableview/kexidataawareobjectiface.cpp:933
 #, fuzzy, kde-format
 #| msgid "Error: %1"
 msgctxt "Question"
 msgid "Error: %1?"
 msgstr "गलती: %1"
-
-#: widget/tableview/kexidataawareobjectiface.cpp:949
-#: widget/tableview/kexitableviewdata.cpp:598
-msgid "The column's constraint is declared as NOT NULL."
-msgstr "खंभा के अवरोध नाट नल के रूप मं डिक्लेयर हे."
-
-#: widget/tableview/kexidataawareobjectiface.cpp:968
-#: widget/tableview/kexitableviewdata.cpp:609
-msgid "The column's constraint is declared as NOT EMPTY."
-msgstr "खंभा के अवरोध नाट एमप्टी के रूप मं डिक्लेयर हे."
 
 #: widget/tableview/kexidataawareobjectiface.cpp:983
 msgid "The column's constraint is declared as NOT EMPTY and NOT NULL."
@@ -7604,50 +7670,6 @@ msgstr "बदलाव सुधारव"
 #: widget/tableview/kexidataawareobjectiface.cpp:1851
 msgid "Discard Changes"
 msgstr "बदलाव मन ल फेंक देव"
-
-#: widget/tableview/kexitableviewdata.cpp:596
-#: widget/tableview/kexitableviewdata.cpp:607
-#, kde-format
-msgid "\"%1\" column requires a value to be entered."
-msgstr "खंभा \"%1\" मं एक मूल्य भरे जाना जरूरी हे."
-
-#: widget/tableview/kexitableviewdata.cpp:620
-#, fuzzy
-#| msgid "Row inserting failed."
-msgid "Record inserting failed."
-msgstr "लकीर भरव करे मं फेल."
-
-#: widget/tableview/kexitableviewdata.cpp:638
-#, fuzzy
-#| msgid "Row changing failed."
-msgid "Record changing failed."
-msgstr "लकीर बदलना फेल."
-
-#: widget/tableview/kexitableviewdata.cpp:706
-#, fuzzy
-#| msgid "Row deleting failed."
-msgid "Record deleting failed."
-msgstr "लकीर मेटाय मं फेल."
-
-#: widget/tableview/kexitableview.cpp:120
-#, fuzzy
-#| msgid "Contains a pointer to the currently selected row"
-msgid "Contains a pointer to the currently selected record"
-msgstr "अभी हाल के चुने गे लकीर मं एक पाइंटर हे"
-
-#: widget/tableview/kexitableview.cpp:122
-#, fuzzy
-#| msgid "Row navigator"
-msgid "Record navigator"
-msgstr "लकीर नेविगेटर"
-
-#: widget/tableview/kexitableview.cpp:242
-msgid "Add Record"
-msgstr "रेकार्ड जोड़व"
-
-#: widget/tableview/kexitableview.cpp:245
-msgid "Remove Record"
-msgstr "रेकार्ड मेटाव"
 
 #: widget/utils/kexidatetimeformatter.cpp:303
 msgid "pm"
