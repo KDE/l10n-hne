@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kofficefilters\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-13 02:05+0200\n"
+"POT-Creation-Date: 2011-08-14 02:04+0200\n"
 "PO-Revision-Date: 2009-03-03 09:22+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -72,10 +72,12 @@ msgstr "पीएनजी निर्यात विकल्प"
 #: kchart/svg/svgexport.cc:88 kformula/latex/latexexport.cc:74
 #: kformula/png/pngexportdia.cc:248 kformula/svg/svgexport.cc:94
 #: libdialogfilter/exportsizedia.cpp:268
+#: stage/genericimageexport/genericimageexport.cpp:134
 msgid "Failed to write file."
 msgstr "फाइल लिखे मं फेल."
 
 #: kchart/genericimageexport/genericimageexport.cpp:123
+#: stage/genericimageexport/genericimageexport.cpp:135
 #, kde-format
 msgid "%1 Export Error"
 msgstr "%1 निर्यात गलती"
@@ -160,6 +162,8 @@ msgstr "ऊँचाई (%):"
 #: words/docx/DocxXmlSettingsReader.cpp:87
 #: words/docx/DocxXmlDocumentReader.cpp:194
 #: words/docx/DocxXmlFontTableReader.cpp:89
+#: stage/pptx/PptxXmlDocumentReader.cpp:153
+#: stage/pptx/PptxXmlSlideReader.cpp:307
 #, kde-format
 msgid "Namespace \"%1\" not found"
 msgstr ""
@@ -461,6 +465,7 @@ msgid "Declared number of shared strings too small (%1)"
 msgstr ""
 
 #: tables/xlsx/XlsxImport.cpp:571 words/docx/DocxImport.cpp:168
+#: stage/pptx/PptxImport.cpp:1100
 #, fuzzy, kde-format
 #| msgid "Could not read from file."
 msgid "Unable to find part for type %1"
@@ -720,6 +725,22 @@ msgstr "कागद खोलव"
 #: xsltfilter/import/xsltimportdia.cc:56
 msgid "Import XSLT Configuration"
 msgstr "एक्सएसएलटी कान्फिगरेसन आयात करव"
+
+#: stage/pptx/PptxXmlDocumentReader.cpp:288
+#, fuzzy, kde-format
+#| msgid "Endnote %1"
+msgid "Slide layout \"%1\" not found"
+msgstr "आखरी-टिप्पनी %1"
+
+#: stage/pptx/PptxXmlSlideReader.cpp:552
+#, fuzzy, kde-format
+#| msgid "Slide Title"
+msgid "Slide %1"
+msgstr "स्लाइड सीर्सक"
+
+#: stage/words/kprkword.cc:99 stage/words/odp2odt.cpp:287
+msgid "Slide Title"
+msgstr "स्लाइड सीर्सक"
 
 #. i18n: file: flow/imageexport/flow_imageexportwidget.ui:27
 #. i18n: ectx: property (text), widget (QLabel)
@@ -1725,19 +1746,6 @@ msgstr "निजी एक्सएसएलटी फाइल मन ल"
 #: rc.cpp:649 rc.cpp:667
 msgid "Choose..."
 msgstr "चुनव..."
-
-#, fuzzy
-#~| msgid "Endnote %1"
-#~ msgid "Slide layout \"%1\" not found"
-#~ msgstr "आखरी-टिप्पनी %1"
-
-#, fuzzy
-#~| msgid "Slide Title"
-#~ msgid "Slide %1"
-#~ msgstr "स्लाइड सीर्सक"
-
-#~ msgid "Slide Title"
-#~ msgstr "स्लाइड सीर्सक"
 
 #~ msgid ""
 #~ "The document cannot be loaded, as it seems not to follow the RTF syntax."
