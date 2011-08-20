@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 05:00+0200\n"
+"POT-Creation-Date: 2011-08-20 02:37+0200\n"
 "PO-Revision-Date: 2009-03-10 17:56+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -70,6 +70,14 @@ msgstr "खोल नइ सकिस %1 : %2"
 msgid "Torrent is incomplete."
 msgstr "टोरेंट फाइल"
 
+#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
+#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
+#: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
+#, kde-format
+msgid "Cannot open file %1: %2"
+msgstr "फ़ाइल %1: %2 खोल नइ सकिस"
+
 #: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
 msgstr ""
@@ -85,14 +93,6 @@ msgstr "डाटा चेक करत हे..."
 #| msgid "Checking Data ..."
 msgid "Checking Data"
 msgstr "डाटा चेक करत हे..."
-
-#: src/datachecker/multidatachecker.cpp:209
-#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
-#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
-#: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
-#, kde-format
-msgid "Cannot open file %1: %2"
-msgstr "फ़ाइल %1: %2 खोल नइ सकिस"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:396
@@ -170,6 +170,28 @@ msgstr "बना नइ सकिस %1 : %2"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "बना नइ सकिस %1 : %2"
 
+#: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
+#, fuzzy, kde-format
+#| msgid "Failed to create %1 : %2"
+msgid "Failed to open %1: %2"
+msgstr "बना नइ सकिस %1 : %2"
+
+#: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
+#, fuzzy, kde-format
+#| msgid "Failed to create %1 : %2"
+msgid "Failed to create %1: %2"
+msgstr "बना नइ सकिस %1 : %2"
+
+#: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
+msgid "Unable to write to a piece mapped read only"
+msgstr ""
+
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#, fuzzy, kde-format
+#| msgid "Cannot open file %1 : %2"
+msgid "Cannot open index file %1: %2"
+msgstr "फ़ाइल%1 : %2 खोल नइ सकिस"
+
 #: src/diskio/movedatafilesjob.cpp:140
 msgid "Waiting for other move jobs to finish"
 msgstr ""
@@ -192,28 +214,6 @@ msgstr "गंतव्य"
 msgctxt "@title job"
 msgid "Moving"
 msgstr ""
-
-#: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, fuzzy, kde-format
-#| msgid "Failed to create %1 : %2"
-msgid "Failed to open %1: %2"
-msgstr "बना नइ सकिस %1 : %2"
-
-#: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
-#, fuzzy, kde-format
-#| msgid "Failed to create %1 : %2"
-msgid "Failed to create %1: %2"
-msgstr "बना नइ सकिस %1 : %2"
-
-#: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
-msgid "Unable to write to a piece mapped read only"
-msgstr ""
-
-#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
-#, fuzzy, kde-format
-#| msgid "Cannot open file %1 : %2"
-msgid "Cannot open index file %1: %2"
-msgstr "फ़ाइल%1 : %2 खोल नइ सकिस"
 
 #: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
 #: src/download/webseed.cpp:98
@@ -438,17 +438,6 @@ msgstr ""
 msgid "Redirect without a redirect location"
 msgstr ""
 
-#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
-#: src/tracker/httptracker.cpp:561
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr ""
-
-#: src/tracker/udptracker.cpp:409
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr ""
-
 #: src/tracker/httptracker.cpp:284 src/tracker/httptracker.cpp:304
 #: src/tracker/httptracker.cpp:466
 msgid "Invalid response from tracker"
@@ -464,6 +453,17 @@ msgstr "अवैध यूआरएल %1"
 #| msgid "Invalid URL: "
 msgid "Invalid tracker URL"
 msgstr "अवैध यूआरएल:"
+
+#: src/tracker/httptracker.cpp:561 src/tracker/udptracker.cpp:372
+#: src/tracker/udptracker.cpp:382
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr ""
+
+#: src/tracker/udptracker.cpp:409
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr ""
 
 #: src/upnp/httprequest.cpp:96
 #, fuzzy
