@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-13 03:45+0200\n"
+"POT-Creation-Date: 2011-08-29 04:01+0200\n"
 "PO-Revision-Date: 2009-03-03 09:35+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -41,6 +41,18 @@ msgstr "सक्रिय औजार: %1"
 #: flake/KShapePaste.cpp:100
 msgid "Paste Shapes"
 msgstr "आकारों ल चिपकाव"
+
+#: flake/commands/KShapeGroupCommand.cpp:107
+#, fuzzy
+#| msgid "Group shapes"
+msgid "Group Shapes"
+msgstr "आकार समूहबद्ध करव"
+
+#: flake/commands/KShapeGroupCommand.cpp:109
+#, fuzzy
+#| msgid "Add Group"
+msgid "Add Shapes to Group"
+msgstr "समूह जोड़व"
 
 #: flake/commands/KPathSegmentBreakCommand.cpp:40
 #, fuzzy
@@ -85,18 +97,6 @@ msgstr "किनारा सेट करव"
 #| msgid "Distribute shapes"
 msgid "Distribute Shapes"
 msgstr "आकार वितरित करव"
-
-#: flake/commands/KShapeGroupCommand.cpp:107
-#, fuzzy
-#| msgid "Group shapes"
-msgid "Group Shapes"
-msgstr "आकार समूहबद्ध करव"
-
-#: flake/commands/KShapeGroupCommand.cpp:109
-#, fuzzy
-#| msgid "Add Group"
-msgid "Add Shapes to Group"
-msgstr "समूह जोड़व"
 
 #: flake/commands/KShapeMoveCommand.cpp:42
 #, fuzzy
@@ -276,10 +276,6 @@ msgstr "पथ संपादन औजार"
 msgid "Zoom"
 msgstr "जूम"
 
-#: flake/tools/KCreatePathToolFactory.cpp:33
-msgid "Create Path"
-msgstr "पथ तैयार करव"
-
 #: flake/tools/KCreatePathTool.cpp:370 flake/tools/KPathTool.cpp:181
 msgid "Snapping"
 msgstr "स्नेपिंग"
@@ -293,6 +289,10 @@ msgstr ""
 #| msgid "Change Connection"
 msgid "Angle Constraints"
 msgstr "कनेक्सन बदलव"
+
+#: flake/tools/KCreatePathToolFactory.cpp:33
+msgid "Create Path"
+msgstr "पथ तैयार करव"
 
 #: flake/tools/KPathSegmentChangeStrategy.cpp:140
 #, fuzzy
@@ -502,16 +502,6 @@ msgstr "स्क्रिप्ट"
 msgid "Collection"
 msgstr "संग्रह"
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
-#, kde-format
-msgid "Slide %1"
-msgstr "स्लाइड %1"
-
-#: kopageapp/KoPAPageThumbnailModel.cpp:69
-#, kde-format
-msgid "Page %1"
-msgstr "पेज %1"
-
 #: kopageapp/KoPADocumentStructureDocker.cpp:82 main/KoMainWindow.cpp:1710
 msgid "Document"
 msgstr "कागद"
@@ -621,30 +611,15 @@ msgstr "कम्पनी:"
 msgid "Paste"
 msgstr "तारीक"
 
-#: kopageapp/KoPADocumentModel.cpp:160
+#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
 #, kde-format
-msgid "Page  %1"
+msgid "Slide %1"
+msgstr "स्लाइड %1"
+
+#: kopageapp/KoPAPageThumbnailModel.cpp:69
+#, kde-format
+msgid "Page %1"
 msgstr "पेज %1"
-
-#: kopageapp/KoPADocumentModel.cpp:167
-msgid "Group"
-msgstr "समूह"
-
-#: kopageapp/KoPADocumentModel.cpp:170
-msgid "Shape"
-msgstr "रूप"
-
-#: kopageapp/KoPADocumentModel.cpp:283
-msgid "Visible"
-msgstr "दिखत"
-
-#: kopageapp/KoPADocumentModel.cpp:284
-msgid "Locked"
-msgstr "तालाबंद"
-
-#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
-msgid "Reparent shapes"
-msgstr "रीपैरेन्ट आकार"
 
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 msgid "Change master slide"
@@ -911,6 +886,31 @@ msgid_plural "Paste Pages"
 msgstr[0] "पेज चिपकाव"
 msgstr[1] "पेज चिपकाव"
 
+#: kopageapp/KoPADocumentModel.cpp:160
+#, kde-format
+msgid "Page  %1"
+msgstr "पेज %1"
+
+#: kopageapp/KoPADocumentModel.cpp:167
+msgid "Group"
+msgstr "समूह"
+
+#: kopageapp/KoPADocumentModel.cpp:170
+msgid "Shape"
+msgstr "रूप"
+
+#: kopageapp/KoPADocumentModel.cpp:283
+msgid "Visible"
+msgstr "दिखत"
+
+#: kopageapp/KoPADocumentModel.cpp:284
+msgid "Locked"
+msgstr "तालाबंद"
+
+#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
+msgid "Reparent shapes"
+msgstr "रीपैरेन्ट आकार"
+
 #: kotext/KFindStrategy.cpp:63
 #, kde-format
 msgid "Found 1 match"
@@ -961,21 +961,6 @@ msgstr "ब्रेक भरव"
 msgid "Insert Row Above"
 msgstr "पेज भरव"
 
-#: kotext/KoText.cpp:45
-msgctxt "Underline Style"
-msgid "None"
-msgstr "कुछ नइ"
-
-#: kotext/KoText.cpp:46
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "एकल"
-
-#: kotext/KoText.cpp:47
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "दोगुना"
-
 #: kotext/KReplaceStrategy.cpp:58
 msgid ""
 "Found no match\n"
@@ -998,11 +983,20 @@ msgstr[1] ""
 msgid "Replace %1 with %2?"
 msgstr "%1 ल %2 से बदलव?"
 
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
-msgid "Format"
-msgstr "फार्मेट"
+#: kotext/KOdfText.cpp:45
+msgctxt "Underline Style"
+msgid "None"
+msgstr "कुछ नइ"
+
+#: kotext/KOdfText.cpp:46
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "एकल"
+
+#: kotext/KOdfText.cpp:47
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "दोगुना"
 
 #: kotext/InsertTextReferenceAction.cpp:36
 #: kotext/InsertTextReferenceAction.cpp:64
@@ -1025,6 +1019,12 @@ msgstr "वह निर्देसिका चुनव जेखर सं�
 #, kde-format
 msgid "%1 Options"
 msgstr "%1 विकल्प"
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
+msgid "Format"
+msgstr "फार्मेट"
 
 #: kotext/KoTextEditor.cpp:111 kotext/KoTextEditor.cpp:167
 #: kotext/KoTextEditor.cpp:325 widgets/KoCsvImportDialog.cpp:216
@@ -3040,6 +3040,40 @@ msgstr "रंगदानी"
 msgid "Add/Remove Colors"
 msgstr "रंगों ल जोड़व/मेटाव"
 
+#: widgets/KoPageLayoutWidget.cpp:178
+msgid "Left Edge:"
+msgstr "डेरी किनारा:"
+
+#: widgets/KoPageLayoutWidget.cpp:179
+msgid "Right Edge:"
+msgstr "जेवनी किनारा:"
+
+#: widgets/KoPageLayoutWidget.cpp:182
+msgid "Binding Edge:"
+msgstr "बाइंडिंग किनारा:"
+
+#: widgets/KoPageLayoutWidget.cpp:183
+msgid "Page Edge:"
+msgstr "पेज किनारा:"
+
+#: widgets/KoPageLayoutWidget.cpp:279
+msgid "Facing Pages:"
+msgstr "आमने-सामने के पेज:"
+
+#. i18n: file: widgets/KoPageLayoutWidget.ui:143
+#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
+#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:395
+msgid "Facing pages"
+msgstr "आमने-सामने के पेज"
+
+#: widgets/KoPageLayoutWidget.cpp:282
+msgid "Page Layout:"
+msgstr "पेज ले-आउट:"
+
+#: widgets/KoPageLayoutWidget.cpp:283
+msgid "Page spread"
+msgstr "पेज स्प्रेड"
+
 #: widgets/KoPageLayoutDialog.cpp:47
 msgid "Page Layout"
 msgstr "पेज ले-आउट"
@@ -3086,40 +3120,6 @@ msgstr ""
 #: widgets/KoZoomAction.cpp:279
 msgid "Zoom to All"
 msgstr "सब्बो जूम करव"
-
-#: widgets/KoPageLayoutWidget.cpp:178
-msgid "Left Edge:"
-msgstr "डेरी किनारा:"
-
-#: widgets/KoPageLayoutWidget.cpp:179
-msgid "Right Edge:"
-msgstr "जेवनी किनारा:"
-
-#: widgets/KoPageLayoutWidget.cpp:182
-msgid "Binding Edge:"
-msgstr "बाइंडिंग किनारा:"
-
-#: widgets/KoPageLayoutWidget.cpp:183
-msgid "Page Edge:"
-msgstr "पेज किनारा:"
-
-#: widgets/KoPageLayoutWidget.cpp:279
-msgid "Facing Pages:"
-msgstr "आमने-सामने के पेज:"
-
-#. i18n: file: widgets/KoPageLayoutWidget.ui:143
-#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
-#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:395
-msgid "Facing pages"
-msgstr "आमने-सामने के पेज"
-
-#: widgets/KoPageLayoutWidget.cpp:282
-msgid "Page Layout:"
-msgstr "पेज ले-आउट:"
-
-#: widgets/KoPageLayoutWidget.cpp:283
-msgid "Page spread"
-msgstr "पेज स्प्रेड"
 
 #: widgets/KoZoomMode.cpp:26
 msgid "Fit Page Width"
