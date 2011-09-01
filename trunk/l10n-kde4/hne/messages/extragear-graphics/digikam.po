@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-31 02:10+0200\n"
+"POT-Creation-Date: 2011-09-01 02:39+0200\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -7619,22 +7619,6 @@ msgid ""
 "channel will be reset to the default values."
 msgstr "यदि आप मन ए बटन ल दबाहू, सब्बो चैनल स्तर अपने अपन एडजस्ट हो जाही."
 
-#: libs/dimg/filters/curves/curvessettings.cpp:248
-msgid "Select Gimp Curves File to Load"
-msgstr "लोड करे बर गिम्प कर्व्स फाइल चुनव"
-
-#: libs/dimg/filters/curves/curvessettings.cpp:258
-msgid "Cannot load from the Gimp curves text file."
-msgstr "गिम्प कर्व्स पाठ फाइल से लोड नइ कर सकिस."
-
-#: libs/dimg/filters/curves/curvessettings.cpp:269
-msgid "Gimp Curves File to Save"
-msgstr "सहेजे बर गिम्प कर्व्स फाइल"
-
-#: libs/dimg/filters/curves/curvessettings.cpp:279
-msgid "Cannot save to the Gimp curves text file."
-msgstr "गिम्प कर्व्स पाठ फाइल मं सहेज नइ सकिस."
-
 #: libs/dimg/filters/curves/curveswidget.cpp:185
 #: libs/dimg/filters/levels/histogramwidget.cpp:495
 #: libs/widgets/iccprofiles/cietonguewidget.cpp:845
@@ -7665,6 +7649,22 @@ msgid ""
 msgstr ""
 "x:%1\n"
 "y:%2"
+
+#: libs/dimg/filters/curves/curvessettings.cpp:254
+msgid "Select Gimp Curves File to Load"
+msgstr "लोड करे बर गिम्प कर्व्स फाइल चुनव"
+
+#: libs/dimg/filters/curves/curvessettings.cpp:264
+msgid "Cannot load from the Gimp curves text file."
+msgstr "गिम्प कर्व्स पाठ फाइल से लोड नइ कर सकिस."
+
+#: libs/dimg/filters/curves/curvessettings.cpp:275
+msgid "Gimp Curves File to Save"
+msgstr "सहेजे बर गिम्प कर्व्स फाइल"
+
+#: libs/dimg/filters/curves/curvessettings.cpp:285
+msgid "Cannot save to the Gimp curves text file."
+msgstr "गिम्प कर्व्स पाठ फाइल मं सहेज नइ सकिस."
 
 #: libs/dimg/filters/decorate/borderfilter.h:143
 #, fuzzy
@@ -15423,8 +15423,10 @@ msgid "Color Auto-correction"
 msgstr "रंग संसोधन"
 
 #: utilities/queuemanager/basetools/color/autocorrection.cpp:54
-msgid "A tool to automatically correct image colors."
-msgstr ""
+#, fuzzy
+#| msgid "Color Space"
+msgid "Automatically correct image colors."
+msgstr "रंग जगह"
 
 #: utilities/queuemanager/basetools/color/bcgcorrection.cpp:48
 #, fuzzy
@@ -15434,19 +15436,33 @@ msgstr "रंग संसोधन"
 
 #: utilities/queuemanager/basetools/color/bcgcorrection.cpp:49
 #, fuzzy
-#| msgid "Brightness/Contrast/Gamma"
-msgid "A tool to fix Brightness/Contrast/Gamma."
-msgstr "चमकीलापन/कंट्रास्ट/गामा"
+#| msgid "Brightness/Contrast/Gamma..."
+msgid "Fix Brightness/Contrast/Gamma."
+msgstr "चमकीलापन/कंट्रास्ट/गामा..."
+
+#: utilities/queuemanager/basetools/color/bwconvert.cpp:49
+#, fuzzy
+#| msgid "Invert"
+msgid "B&W Convert"
+msgstr "उलटव"
+
+#: utilities/queuemanager/basetools/color/bwconvert.cpp:50
+#, fuzzy
+#| msgid "Convert to Black & White"
+msgid "Convert to black and white."
+msgstr "काला-सफेद मं बदलव"
 
 #: utilities/queuemanager/basetools/color/channelmixer.cpp:51
 #, fuzzy
 #| msgid "Color Space"
-msgid "A tool to mix color channel."
+msgid "Mix color channel."
 msgstr "रंग जगह"
 
 #: utilities/queuemanager/basetools/color/colorbalance.cpp:49
-msgid "A tool to adjust color balance."
-msgstr ""
+#, fuzzy
+#| msgid "Adjust Color Curves"
+msgid "Adjust color balance."
+msgstr "एडजस्ट कलर कर्व्स"
 
 #: utilities/queuemanager/basetools/color/convert16to8.cpp:42
 #, fuzzy
@@ -15457,7 +15473,7 @@ msgstr "बदलव"
 #: utilities/queuemanager/basetools/color/convert16to8.cpp:43
 #, fuzzy
 #| msgid "Color Space"
-msgid "A tool to convert color depth from 16 to 8 bits."
+msgid "Convert color depth from 16 to 8 bits."
 msgstr "रंग जगह"
 
 #: utilities/queuemanager/basetools/color/convert8to16.cpp:42
@@ -15469,46 +15485,7 @@ msgstr "बदलव"
 #: utilities/queuemanager/basetools/color/convert8to16.cpp:43
 #, fuzzy
 #| msgid "Color Space"
-msgid "A tool to convert color depth from 8 to 16 bits."
-msgstr "रंग जगह"
-
-#: utilities/queuemanager/basetools/color/hslcorrection.cpp:48
-#, fuzzy
-#| msgid "Lens Correction..."
-msgid "HSL Correction"
-msgstr "लेंस सुधार..."
-
-#: utilities/queuemanager/basetools/color/hslcorrection.cpp:49
-#, fuzzy
-#| msgid "Hue/Saturation/Lightness..."
-msgid "A tool to fix Hue/Saturation/Lightness."
-msgstr "वर्न/संतृप्ति/प्रकासमान..."
-
-#: utilities/queuemanager/basetools/color/invert.cpp:47
-#, fuzzy
-msgid "Invert Colors"
-msgstr "आखरी रंगः"
-
-#: utilities/queuemanager/basetools/color/invert.cpp:48
-#, fuzzy
-#| msgid "Color Space"
-msgid "A tool to invert image colors."
-msgstr "रंग जगह"
-
-#: utilities/queuemanager/basetools/color/whitebalance.cpp:49
-msgid "A tool to adjust White Balance."
-msgstr ""
-
-#: utilities/queuemanager/basetools/color/bwconvert.cpp:49
-#, fuzzy
-#| msgid "Invert"
-msgid "B&W Convert"
-msgstr "उलटव"
-
-#: utilities/queuemanager/basetools/color/bwconvert.cpp:50
-#, fuzzy
-#| msgid "Color Space"
-msgid "A tool to convert to black and white."
+msgid "Convert color depth from 8 to 16 bits."
 msgstr "रंग जगह"
 
 #: utilities/queuemanager/basetools/color/curvesadjust.cpp:53
@@ -15520,7 +15497,7 @@ msgstr "कर्व्स एडजस्ट..."
 #: utilities/queuemanager/basetools/color/curvesadjust.cpp:54
 #, fuzzy
 #| msgid "Auto exposure adjustments"
-msgid "A tool to perform curves adjustments."
+msgid "Perform curves adjustments."
 msgstr "अपने अपन एक्सपोजर समायोजना"
 
 #: utilities/queuemanager/basetools/color/curvesadjust.cpp:73
@@ -15529,6 +15506,18 @@ msgstr "अपने अपन एक्सपोजर समायोजना
 #| msgid "Alpha"
 msgid "Alpha"
 msgstr "अल्फा"
+
+#: utilities/queuemanager/basetools/color/hslcorrection.cpp:48
+#, fuzzy
+#| msgid "Lens Correction..."
+msgid "HSL Correction"
+msgstr "लेंस सुधार..."
+
+#: utilities/queuemanager/basetools/color/hslcorrection.cpp:49
+#, fuzzy
+#| msgid "Hue/Saturation/Lightness..."
+msgid "Fix Hue/Saturation/Lightness."
+msgstr "वर्न/संतृप्ति/प्रकासमान..."
 
 #: utilities/queuemanager/basetools/color/iccconvert.cpp:55
 #, fuzzy
@@ -15539,8 +15528,25 @@ msgstr "उलटव"
 #: utilities/queuemanager/basetools/color/iccconvert.cpp:56
 #, fuzzy
 #| msgid "Color Space"
-msgid "A tool to convert image to a color space."
+msgid "Convert image to a color space."
 msgstr "रंग जगह"
+
+#: utilities/queuemanager/basetools/color/invert.cpp:47
+#, fuzzy
+msgid "Invert Colors"
+msgstr "आखरी रंगः"
+
+#: utilities/queuemanager/basetools/color/invert.cpp:48
+#, fuzzy
+#| msgid "Color Space"
+msgid "Invert image colors."
+msgstr "रंग जगह"
+
+#: utilities/queuemanager/basetools/color/whitebalance.cpp:49
+#, fuzzy
+#| msgid "White Balance"
+msgid "Adjust White Balance."
+msgstr "सफेद संतुलन"
 
 #: utilities/queuemanager/basetools/convert/convert2jp2.cpp:49
 #, fuzzy
@@ -15548,7 +15554,7 @@ msgid "Convert To JP2"
 msgstr "बदलव"
 
 #: utilities/queuemanager/basetools/convert/convert2jp2.cpp:50
-msgid "A tool to convert images to JPEG-2000 format."
+msgid "Convert images to JPEG-2000 format."
 msgstr ""
 
 #: utilities/queuemanager/basetools/convert/convert2jpeg.cpp:49
@@ -15557,8 +15563,9 @@ msgid "Convert To JPEG"
 msgstr "बदलव"
 
 #: utilities/queuemanager/basetools/convert/convert2jpeg.cpp:50
-msgid "A tool to convert images to JPEG format."
-msgstr ""
+#, fuzzy
+msgid "Convert images to JPEG format."
+msgstr "बदलव"
 
 #: utilities/queuemanager/basetools/convert/convert2pgf.cpp:49
 #, fuzzy
@@ -15566,8 +15573,10 @@ msgid "Convert To PGF"
 msgstr "बदलव"
 
 #: utilities/queuemanager/basetools/convert/convert2pgf.cpp:50
-msgid "A tool to convert images to PGF format."
-msgstr ""
+#, fuzzy
+#| msgid "New image format:"
+msgid "Convert images to PGF format."
+msgstr "नवा फोटू फारमेट:"
 
 #: utilities/queuemanager/basetools/convert/convert2png.cpp:49
 #, fuzzy
@@ -15575,8 +15584,10 @@ msgid "Convert To PNG"
 msgstr "बदलव"
 
 #: utilities/queuemanager/basetools/convert/convert2png.cpp:50
-msgid "A tool to convert images to PNG format."
-msgstr ""
+#, fuzzy
+#| msgid "New image format:"
+msgid "Convert images to PNG format."
+msgstr "नवा फोटू फारमेट:"
 
 #: utilities/queuemanager/basetools/convert/convert2tiff.cpp:49
 #, fuzzy
@@ -15584,13 +15595,14 @@ msgid "Convert To TIFF"
 msgstr "बदलव"
 
 #: utilities/queuemanager/basetools/convert/convert2tiff.cpp:50
-msgid "A tool to convert images to TIFF format."
-msgstr ""
+#, fuzzy
+msgid "Convert images to TIFF format."
+msgstr "बदलव"
 
 #: utilities/queuemanager/basetools/decorate/border.cpp:49
 #, fuzzy
 #| msgid "A digiKam image plugin to add a border around an image."
-msgid "A tool to add a border around images"
+msgid "Add a border around images"
 msgstr "डिजीकैम बर फोटू मं चारों तरफ किनारा जोड़व प्लगइन."
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:127
@@ -15599,7 +15611,7 @@ msgid "Add Watermark"
 msgstr "कैमरा जोड़व..."
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:128
-msgid "A tool to overlay an image or text as a visible watermark"
+msgid "Overlay an image or text as a visible watermark"
 msgstr ""
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:140
@@ -15770,7 +15782,7 @@ msgid "Anti-Vignetting"
 msgstr "विगनेटिंग"
 
 #: utilities/queuemanager/basetools/enhance/antivignetting.cpp:53
-msgid "A tool to remove/add vignetting to photograph."
+msgid "Remove/add vignetting to photograph."
 msgstr ""
 
 #: utilities/queuemanager/basetools/enhance/blur.cpp:50
@@ -15781,12 +15793,12 @@ msgstr "पूरा फोटू"
 
 #: utilities/queuemanager/basetools/enhance/blur.cpp:51
 #, fuzzy
-#| msgid "Color Space"
-msgid "A tool to blur images"
-msgstr "रंग जगह"
+#| msgid "Full Image"
+msgid "Blur images"
+msgstr "पूरा फोटू"
 
 #: utilities/queuemanager/basetools/enhance/lensautofix.cpp:67
-msgid "A tool to fix automatically lens distortions"
+msgid "Fix automatically lens distortions"
 msgstr ""
 
 #: utilities/queuemanager/basetools/enhance/lensautofix.cpp:79
@@ -15800,17 +15812,19 @@ msgid "Cannot find all lens information to process lens auto-corrections"
 msgstr ""
 
 #: utilities/queuemanager/basetools/enhance/localcontrast.cpp:51
-msgid "A tool to emulate tone mapping."
-msgstr ""
+#, fuzzy
+#| msgid "Donate Money..."
+msgid "Emulate tone mapping."
+msgstr "मुद्रा दानइ करव..."
 
 #: utilities/queuemanager/basetools/enhance/noisereduction.cpp:50
 #, fuzzy
-msgid "A tool to remove photograph noise using wavelets."
+msgid "Remove photograph noise using wavelets."
 msgstr "कैमरा से फोटोग्राफ कैप्चर करे बर एक नवा औजार"
 
 #: utilities/queuemanager/basetools/enhance/restoration.cpp:53
 #, fuzzy
-msgid "A tool to restore photographs based on Greystoration."
+msgid "Restore photographs based on Greystoration."
 msgstr "कैमरा से फोटोग्राफ कैप्चर करे बर एक नवा औजार"
 
 #: utilities/queuemanager/basetools/enhance/sharpen.cpp:52
@@ -15820,14 +15834,16 @@ msgid "Sharpen Image"
 msgstr "फोटू सहेजव"
 
 #: utilities/queuemanager/basetools/enhance/sharpen.cpp:53
-msgid "A tool to sharpen images"
-msgstr ""
+#, fuzzy
+#| msgid "Save Images"
+msgid "Sharpen images"
+msgstr "फोटू सहेजव"
 
 #: utilities/queuemanager/basetools/filters/filmgrain.cpp:51
 #, fuzzy
-#| msgid "Add film grain"
-msgid "A tool to add film grain"
-msgstr "फिल्म ग्रेन जोड़व"
+#| msgid "Add Film Grain..."
+msgid "Add film grain"
+msgstr "फिल्म ग्रेन जोड़व..."
 
 #: utilities/queuemanager/basetools/metadata/assigntemplate.cpp:52
 #, fuzzy
@@ -15836,8 +15852,10 @@ msgid "Apply Metadata Template"
 msgstr "फाइल प्रबंधक मं खोलव"
 
 #: utilities/queuemanager/basetools/metadata/assigntemplate.cpp:53
-msgid "A tool to apply template metadata"
-msgstr ""
+#, fuzzy
+#| msgid "Save metadata"
+msgid "Apply template metadata"
+msgstr "मेटाडाटा सहेजव"
 
 #: utilities/queuemanager/basetools/metadata/removemetadata.cpp:49
 #, fuzzy
@@ -15846,7 +15864,7 @@ msgid "Remove Metadata"
 msgstr "मेटाडाटा उपयोग करव"
 
 #: utilities/queuemanager/basetools/metadata/removemetadata.cpp:50
-msgid "A tool to remove Exif, Iptc, or Xmp metadata from images."
+msgid "Remove Exif, Iptc, or Xmp metadata from images."
 msgstr ""
 
 #: utilities/queuemanager/basetools/metadata/removemetadata.cpp:54
@@ -15871,8 +15889,10 @@ msgid "Flip"
 msgstr ""
 
 #: utilities/queuemanager/basetools/transform/flip.cpp:51
-msgid "A tool to flip images horizontally or vertically."
-msgstr ""
+#, fuzzy
+#| msgid "Flip horizontally"
+msgid "Flip images horizontally or vertically."
+msgstr "आड़ा लहुटाव"
 
 #: utilities/queuemanager/basetools/transform/flip.cpp:57
 #, fuzzy
@@ -15890,7 +15910,7 @@ msgid "Flip:"
 msgstr "बढ़िया:"
 
 #: utilities/queuemanager/basetools/transform/resize.cpp:52
-msgid "A tool to resize images with a customized length."
+msgid "Resize images with a customized length."
 msgstr ""
 
 #: utilities/queuemanager/basetools/transform/resize.cpp:56
@@ -15951,9 +15971,9 @@ msgstr "डेरी मुड़ें"
 
 #: utilities/queuemanager/basetools/transform/rotate.cpp:84
 #, fuzzy
-#| msgid "Color Space"
-msgid "A tool to rotate images."
-msgstr "रंग जगह"
+#| msgid "Select Images"
+msgid "Rotate images."
+msgstr "फोटू चुनव"
 
 #: utilities/queuemanager/basetools/transform/rotate.cpp:88
 #, fuzzy
@@ -20005,6 +20025,36 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+#~| msgid "Brightness/Contrast/Gamma"
+#~ msgid "A tool to fix Brightness/Contrast/Gamma."
+#~ msgstr "चमकीलापन/कंट्रास्ट/गामा"
+
+#, fuzzy
+#~| msgid "Hue/Saturation/Lightness..."
+#~ msgid "A tool to fix Hue/Saturation/Lightness."
+#~ msgstr "वर्न/संतृप्ति/प्रकासमान..."
+
+#, fuzzy
+#~| msgid "Color Space"
+#~ msgid "A tool to convert to black and white."
+#~ msgstr "रंग जगह"
+
+#, fuzzy
+#~| msgid "Color Space"
+#~ msgid "A tool to blur images"
+#~ msgstr "रंग जगह"
+
+#, fuzzy
+#~| msgid "Add film grain"
+#~ msgid "A tool to add film grain"
+#~ msgstr "फिल्म ग्रेन जोड़व"
+
+#, fuzzy
+#~| msgid "Color Space"
+#~ msgid "A tool to rotate images."
+#~ msgstr "रंग जगह"
+
+#, fuzzy
 #~ msgid "Misc Options"
 #~ msgstr "इंटरफेस विकल्प"
 
@@ -21423,11 +21473,6 @@ msgstr ""
 #~ msgstr "फोटोग्राफ रीसाइजिंग पाठ फाइल म सेटिंग सहेज नइ सकिस."
 
 #, fuzzy
-#~| msgid "Donate Money..."
-#~ msgid "Tone Mapping..."
-#~ msgstr "मुद्रा दानइ करव..."
-
-#, fuzzy
 #~| msgid "&Themes"
 #~ msgid "Map Theme"
 #~ msgstr "प्रसंग (&T)"
@@ -22431,9 +22476,6 @@ msgstr ""
 
 #~ msgid "Unai Garro"
 #~ msgstr "उनाई गारो"
-
-#~ msgid "Adjust Color Curves"
-#~ msgstr "एडजस्ट कलर कर्व्स"
 
 #~ msgid "An image-histogram-curves adjustment plugin for digiKam."
 #~ msgstr "डिजीकैम बर इमेज-हिस्टोग्राम-कर्व्स समायोजन प्लगइन."
