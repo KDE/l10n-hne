@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-24 02:15+0200\n"
+"POT-Creation-Date: 2011-09-02 02:21+0200\n"
 "PO-Revision-Date: 2009-03-03 10:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -133,12 +133,12 @@ msgid "Deleted"
 msgstr "मेटाव"
 
 #: kernel/kptglobal.cpp:43 kernel/kptnode.cpp:602 kernel/kptschedule.cpp:1859
-#: models/kptschedulemodel.cpp:687
+#: models/kptschedulemodel.cpp:713
 msgid "Not scheduled"
 msgstr "सारिनीबद्ध नइ"
 
-#: kernel/kptglobal.cpp:45 models/kptschedulemodel.cpp:687
-#: models/kptschedulemodel.cpp:771
+#: kernel/kptglobal.cpp:45 models/kptschedulemodel.cpp:713
+#: models/kptschedulemodel.cpp:797
 #, fuzzy
 #| msgid "Schedule:"
 msgid "Scheduled"
@@ -2801,7 +2801,7 @@ msgstr "खाताः"
 #: models/kptresourceappointmentsmodel.cpp:911
 #: models/kptresourceappointmentsmodel.cpp:926
 #: models/kptresourceappointmentsmodel.cpp:1525
-#: models/kptschedulemodel.cpp:762 models/kptschedulemodel.cpp:1018 rc.cpp:316
+#: models/kptschedulemodel.cpp:788 models/kptschedulemodel.cpp:1044 rc.cpp:316
 msgid "Name"
 msgstr "नाम"
 
@@ -3365,81 +3365,107 @@ msgstr "सब्बो"
 msgid "Expected only"
 msgstr "सिरिफ वांछित"
 
-#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
+#: models/kptschedulemodel.cpp:572
+#, fuzzy, kde-format
+msgctxt "@info:tooltip"
+msgid "Planned start: %1<nl/>Target start: %2"
+msgstr "सारिनी मं चालू समय"
+
+#: models/kptschedulemodel.cpp:574
+#, fuzzy, kde-format
+#| msgid "Earliest start:"
+msgctxt "@info:tooltip"
+msgid "Target start: %1"
+msgstr "अर्लीएस्ट सुरू:"
+
+#: models/kptschedulemodel.cpp:608
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Planned finish: %1<nl/>Target finish: %2"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:610
+#, fuzzy, kde-format
+#| msgid "Latest finish:"
+msgctxt "@info:tooltip"
+msgid "Target finish: %1"
+msgstr "लेटेस्ट खतम:"
+
+#: models/kptschedulemodel.cpp:633 models/kptschedulemodel.cpp:635
 msgid "Backwards"
 msgstr "पीछू से"
 
-#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
+#: models/kptschedulemodel.cpp:633 models/kptschedulemodel.cpp:635
 msgid "Forward"
 msgstr "आगू"
 
-#: models/kptschedulemodel.cpp:629
+#: models/kptschedulemodel.cpp:655
 #, fuzzy
 #| msgid "The scheduling direction"
 msgctxt "(qtundo-format)"
 msgid "Modify scheduling direction"
 msgstr "सारिनी दिसा"
 
-#: models/kptschedulemodel.cpp:647
+#: models/kptschedulemodel.cpp:673
 #, fuzzy
 #| msgid "Unknown"
 msgid "Unknown"
 msgstr "अग्यात"
 
-#: models/kptschedulemodel.cpp:669
+#: models/kptschedulemodel.cpp:695
 #, fuzzy
 #| msgid "Not scheduled"
 msgctxt "(qtundo-format)"
 msgid "Modify scheduler"
 msgstr "सारिनीबद्ध नइ"
 
-#: models/kptschedulemodel.cpp:763
+#: models/kptschedulemodel.cpp:789
 msgid "State"
 msgstr "स्थिति"
 
-#: models/kptschedulemodel.cpp:764
+#: models/kptschedulemodel.cpp:790
 #, fuzzy
 #| msgid "Duration"
 msgid "Direction"
 msgstr "अवधि"
 
-#: models/kptschedulemodel.cpp:765
+#: models/kptschedulemodel.cpp:791
 msgid "Overbooking"
 msgstr "ओवरबुकिंग"
 
-#: models/kptschedulemodel.cpp:766
+#: models/kptschedulemodel.cpp:792
 #, fuzzy
 #| msgid "Description"
 msgid "Distribution"
 msgstr "वर्नन"
 
-#: models/kptschedulemodel.cpp:768
+#: models/kptschedulemodel.cpp:794
 #, fuzzy
 #| msgid "Planned Effort"
 msgid "Planned Start"
 msgstr "प्लान करे गे प्रयास"
 
-#: models/kptschedulemodel.cpp:769
+#: models/kptschedulemodel.cpp:795
 #, fuzzy
 #| msgid "Planned cost"
 msgid "Planned Finish"
 msgstr "प्लान करे गे लागत"
 
-#: models/kptschedulemodel.cpp:770
+#: models/kptschedulemodel.cpp:796
 #, fuzzy
 #| msgid "Schedule:"
 msgid "Scheduler"
 msgstr "समयसारिनी:"
 
-#: models/kptschedulemodel.cpp:1018
+#: models/kptschedulemodel.cpp:1044
 msgid "Phase"
 msgstr ""
 
-#: models/kptschedulemodel.cpp:1018
+#: models/kptschedulemodel.cpp:1044
 msgid "Severity"
 msgstr ""
 
-#: models/kptschedulemodel.cpp:1018
+#: models/kptschedulemodel.cpp:1044
 msgid "Message"
 msgstr "संदेस"
 
