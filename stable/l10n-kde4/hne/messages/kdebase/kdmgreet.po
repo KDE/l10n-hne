@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdmgreet\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:46+0200\n"
+"POT-Creation-Date: 2011-09-09 11:37+0200\n"
 "PO-Revision-Date: 2009-02-09 16:54+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -319,6 +319,74 @@ msgctxt "session (location)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
+#: kgreeter.cpp:482
+msgctxt "@item:inlistbox session type"
+msgid "Default"
+msgstr "डिफाल्ट"
+
+#: kgreeter.cpp:483
+msgctxt "@item:inlistbox session type"
+msgid "Custom"
+msgstr "मनमाफिक"
+
+#: kgreeter.cpp:484
+msgctxt "@item:inlistbox session type"
+msgid "Failsafe"
+msgstr "फेलसेफ"
+
+#: kgreeter.cpp:560
+#, kde-format
+msgctxt "@item:inmenu session type"
+msgid "%1 (previous)"
+msgstr "%1 (पिछला)"
+
+#: kgreeter.cpp:622
+#, kde-format
+msgid ""
+"Your saved session type '%1' is not valid any more.\n"
+"Please select a new one, otherwise 'default' will be used."
+msgstr ""
+"आप मन के सहेजे सत्र किसम '%1' अब वैध नइ रिहिस.\n"
+"किरपा करके, कोनो नवा चुनव, नइ तहां ले 'डिफाल्ट' उपयोग मं ले जाही."
+
+#: kgreeter.cpp:745
+msgid "Warning: this is an unsecured session"
+msgstr "चेतावनी: ए असुरक्छित तंत्र हे"
+
+#: kgreeter.cpp:747
+msgid ""
+"This display requires no X authorization.\n"
+"This means that anybody can connect to it,\n"
+"open windows on it or intercept your input."
+msgstr ""
+"ये प्रदर्सक ल एक्स-ओथोराइजेसन के जरूरत नइ हे.\n"
+"एखर मतलब हे कि कोनो एखर से जुड़ सकथे ,\n"
+"ये मं विंडोज खोलव या अपन इनपुट ल देखव."
+
+#: kgreeter.cpp:799
+msgctxt "@action:button"
+msgid "L&ogin"
+msgstr "लागिन (&o)"
+
+#: kgreeter.cpp:833 kgreeter.cpp:970
+msgctxt "@title:menu"
+msgid "Session &Type"
+msgstr "सत्र किसम (&T)"
+
+#: kgreeter.cpp:838 kgreeter.cpp:976
+msgctxt "@title:menu"
+msgid "&Authentication Method"
+msgstr "प्रमानीकरन विधि (&A)"
+
+#: kgreeter.cpp:843 kgreeter.cpp:981
+msgctxt "@action:inmenu"
+msgid "&Remote Login"
+msgstr "रिमोट लागिन (&R)"
+
+#: kgreeter.cpp:921 kgverify.cpp:1085
+msgid "Login failed"
+msgstr "लागिन फेल"
+
 #: kgverify.cpp:187
 msgid "No greeter widget plugin loaded. Check the configuration."
 msgstr "कोई ग्रीटर विजेट प्लगइन लोड नइ हे. कान्फिगरेसन जांचव."
@@ -423,10 +491,6 @@ msgstr "चेतावनी: कैप्स लाक चालू हे"
 #: kgverify.cpp:1083
 msgid "Change failed"
 msgstr "बदलाव फेल"
-
-#: kgverify.cpp:1085 kgreeter.cpp:921
-msgid "Login failed"
-msgstr "लागिन फेल"
 
 #: kgverify.cpp:1136
 #, kde-format
@@ -573,70 +637,6 @@ msgstr "%1: %2"
 msgctxt "... host"
 msgid "X login on %1"
 msgstr "एक्स %1 मं लागिन होवत हे"
-
-#: kgreeter.cpp:482
-msgctxt "@item:inlistbox session type"
-msgid "Default"
-msgstr "डिफाल्ट"
-
-#: kgreeter.cpp:483
-msgctxt "@item:inlistbox session type"
-msgid "Custom"
-msgstr "मनमाफिक"
-
-#: kgreeter.cpp:484
-msgctxt "@item:inlistbox session type"
-msgid "Failsafe"
-msgstr "फेलसेफ"
-
-#: kgreeter.cpp:560
-#, kde-format
-msgctxt "@item:inmenu session type"
-msgid "%1 (previous)"
-msgstr "%1 (पिछला)"
-
-#: kgreeter.cpp:622
-#, kde-format
-msgid ""
-"Your saved session type '%1' is not valid any more.\n"
-"Please select a new one, otherwise 'default' will be used."
-msgstr ""
-"आप मन के सहेजे सत्र किसम '%1' अब वैध नइ रिहिस.\n"
-"किरपा करके, कोनो नवा चुनव, नइ तहां ले 'डिफाल्ट' उपयोग मं ले जाही."
-
-#: kgreeter.cpp:745
-msgid "Warning: this is an unsecured session"
-msgstr "चेतावनी: ए असुरक्छित तंत्र हे"
-
-#: kgreeter.cpp:747
-msgid ""
-"This display requires no X authorization.\n"
-"This means that anybody can connect to it,\n"
-"open windows on it or intercept your input."
-msgstr ""
-"ये प्रदर्सक ल एक्स-ओथोराइजेसन के जरूरत नइ हे.\n"
-"एखर मतलब हे कि कोनो एखर से जुड़ सकथे ,\n"
-"ये मं विंडोज खोलव या अपन इनपुट ल देखव."
-
-#: kgreeter.cpp:799
-msgctxt "@action:button"
-msgid "L&ogin"
-msgstr "लागिन (&o)"
-
-#: kgreeter.cpp:833 kgreeter.cpp:970
-msgctxt "@title:menu"
-msgid "Session &Type"
-msgstr "सत्र किसम (&T)"
-
-#: kgreeter.cpp:838 kgreeter.cpp:976
-msgctxt "@title:menu"
-msgid "&Authentication Method"
-msgstr "प्रमानीकरन विधि (&A)"
-
-#: kgreeter.cpp:843 kgreeter.cpp:981
-msgctxt "@action:inmenu"
-msgid "&Remote Login"
-msgstr "रिमोट लागिन (&R)"
 
 #~ msgid "Abort S&ession"
 #~ msgstr "सत्र छोड़व (&e)"
