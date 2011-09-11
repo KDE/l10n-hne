@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-04 03:28+0200\n"
+"POT-Creation-Date: 2011-09-11 03:23+0200\n"
 "PO-Revision-Date: 2009-03-10 17:56+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -215,20 +215,6 @@ msgstr ""
 msgid "Cannot open index file %1: %2"
 msgstr "फ़ाइल%1 : %2 खोल नइ सकिस"
 
-#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
-#: src/download/httpconnection.cpp:44
-msgid "Not connected"
-msgstr "कनेक्टेड नइ हे"
-
-#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:135
-msgid "Connection closed"
-msgstr "कनेक्सन बन्द"
-
-#: src/download/webseed.cpp:544
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
-
 #: src/download/downloader.cpp:809
 msgid "Disabled because webseed does not match torrent"
 msgstr ""
@@ -240,6 +226,11 @@ msgid_plural "%1 peers"
 msgstr[0] ""
 msgstr[1] ""
 
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+msgid "Not connected"
+msgstr "कनेक्टेड नइ हे"
+
 #: src/download/httpconnection.cpp:113
 #, kde-format
 msgid "Resolving proxy %1:%2"
@@ -249,6 +240,10 @@ msgstr ""
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr ""
+
+#: src/download/httpconnection.cpp:135 src/download/webseed.cpp:336
+msgid "Connection closed"
+msgstr "कनेक्सन बन्द"
 
 #: src/download/httpconnection.cpp:142
 #, kde-format
@@ -286,6 +281,11 @@ msgstr ""
 
 #: src/download/httpconnection.cpp:404
 msgid "Redirected without a new location."
+msgstr ""
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:58
