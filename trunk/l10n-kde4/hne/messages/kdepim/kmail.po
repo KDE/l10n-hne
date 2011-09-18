@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-17 03:46+0200\n"
+"POT-Creation-Date: 2011-09-18 03:44+0200\n"
 "PO-Revision-Date: 2009-02-28 13:57+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -35,215 +35,845 @@ msgstr ""
 msgid "Invalid Email Address"
 msgstr "अवैध ई-मेल पता"
 
-#: antispamwizard.cpp:116
-msgid "Anti-Spam Wizard"
-msgstr "एन्टी स्पैम विजार्ड"
-
-#: antispamwizard.cpp:117
-msgid "Anti-Virus Wizard"
-msgstr "एन्टी-वायरस विजार्ड"
-
-#: antispamwizard.cpp:121
-msgid "Welcome to the KMail Anti-Spam Wizard"
-msgstr "के-मेल एन्टी-स्पैम विजार्ड मं आप मन के स्वागत हे"
-
-#: antispamwizard.cpp:122
-msgid "Welcome to the KMail Anti-Virus Wizard"
-msgstr "के-मेल एन्टी-वायरस विजार्ड मं आप मन के स्वागत हे"
-
-#: antispamwizard.cpp:128
-msgid "Options to fine-tune the handling of spam messages"
-msgstr "स्पैम संदेस मन ल हेंडल करे ल फाए ट्यून करे बर विकल्प"
-
-#: antispamwizard.cpp:134
-msgid "Options to fine-tune the handling of virus messages"
-msgstr "वायरस संदेस मन ल हेंडल करे ल फाए ट्यून करे बर विकल्प"
-
-#: antispamwizard.cpp:144
-msgid "Summary of changes to be made by this wizard"
-msgstr "ये विजार्ड से करे जाय वाले बदलाव मन के सारांस"
-
-#: antispamwizard.cpp:216
-msgid "Virus handling"
-msgstr "वायरस हेंडलिंग"
-
-#: antispamwizard.cpp:304 antispamwizard.cpp:306 antispamwizard.cpp:632
-msgid "Spam Handling"
-msgstr "स्पैम हेंडलिंग"
-
-#: antispamwizard.cpp:345 antispamwizard.cpp:347 antispamwizard.cpp:645
-msgid "Semi spam (unsure) handling"
-msgstr "सेमी स्पैम (अनिस्चित) हेन्डलिंग"
-
-#: antispamwizard.cpp:407 antispamwizard.cpp:409 antispamwizard.cpp:653
-msgid "Classify as Spam"
-msgstr "स्पैम के रूप मं वर्गीकृत"
-
-#: antispamwizard.cpp:418
-msgid "Spam"
-msgstr "बेकार डाक"
-
-#: antispamwizard.cpp:450 antispamwizard.cpp:452 antispamwizard.cpp:655
-msgid "Classify as NOT Spam"
-msgstr "स्पैम नइ के रूप मं वर्गीकृत"
-
-#: antispamwizard.cpp:461
-msgid "Ham"
-msgstr "हेम"
-
-#: antispamwizard.cpp:529
+#: kmmainwidget.cpp:420
 #, kde-format
-msgid "Scanning for %1..."
-msgstr "%1 बर स्कैन करत हे..."
+msgid "1 new message in %2"
+msgid_plural "%1 new messages in %2"
+msgstr[0] "%2 मं १ नवा संदेस"
+msgstr[1] "%2 मं %1 नवा संदेस"
 
-#: antispamwizard.cpp:574
-msgid "Scanning for anti-spam tools finished."
-msgstr "एन्टी-स्पैम औजार मन बर स्कैनिंग पूरा."
+#: kmmainwidget.cpp:438
+#, kde-format
+msgctxt "%1 is a list of the number of new messages per folder"
+msgid "<b>New mail arrived</b><br />%1"
+msgstr "<b>नवा ईमेल आया</b><br />%1"
 
-#: antispamwizard.cpp:575
-msgid "Scanning for anti-virus tools finished."
-msgstr "एन्टी-वायरस औजार मन बर स्कैनिंग पूरा."
+#: kmmainwidget.cpp:441
+msgid "New mail arrived"
+msgstr "नवा डाक आई"
 
-#: antispamwizard.cpp:578
+#: kmmainwidget.cpp:1002
+msgid "Set Focus to Quick Search"
+msgstr "तेजी से खोज मं फोकस सेट करव"
+
+#: kmmainwidget.cpp:1009
+msgid "Extend Selection to Previous Message"
+msgstr "पिछले संदेस मं चयन फैलाव"
+
+#: kmmainwidget.cpp:1015
+msgid "Extend Selection to Next Message"
+msgstr "अगले संदेस मं चयन फैलाव"
+
+#: kmmainwidget.cpp:1099
+msgid "Move Message to Folder"
+msgstr "संदेस एखर फोल्डर मं खिसकाव"
+
+#: kmmainwidget.cpp:1106
+msgid "Copy Message to Folder"
+msgstr "संदेस एखर फोल्डर मं नकल करव"
+
+#: kmmainwidget.cpp:1113
+#, fuzzy
+#| msgid "Jump to Folder"
+msgid "Jump to Folder..."
+msgstr "ये फोल्डर मं जाव"
+
+#: kmmainwidget.cpp:1120
+msgid "Abort Current Operation"
+msgstr "अभी हाल के आपरेसन छोड़व"
+
+#: kmmainwidget.cpp:1127
+msgid "Focus on Next Folder"
+msgstr "अगले फोल्डर मं फोकस करव"
+
+#: kmmainwidget.cpp:1134
+msgid "Focus on Previous Folder"
+msgstr "पिछले फोल्डर मं फोकस करव"
+
+#: kmmainwidget.cpp:1141
+msgid "Select Folder with Focus"
+msgstr "फोकस के साथ फोल्डर चुनव"
+
+#: kmmainwidget.cpp:1149
+msgid "Focus on Next Message"
+msgstr "अगले संदेस मं फोकस करव"
+
+#: kmmainwidget.cpp:1156
+msgid "Focus on Previous Message"
+msgstr "पिछले संदेस मं फोकस करव"
+
+#: kmmainwidget.cpp:1163
+msgid "Select Message with Focus"
+msgstr "फोकस के साथ संदेस चुनव"
+
+#: kmmainwidget.cpp:1262
 msgid ""
-"<p>Sorry, no spam detection tools have been found. Install your spam "
-"detection software and re-run this wizard.</p>"
+"The Nepomuk semantic search service is not available. Searching is not "
+"possible without it. You can enable it in \"System Settings\"."
 msgstr ""
 
-#: antispamwizard.cpp:581
-msgid "Scanning complete. No anti-virus tools found."
-msgstr "स्कैन पूरा होइस, कोनो एंटीवायरस औजार नइ मिलिस."
+#: kmmainwidget.cpp:1263
+#, fuzzy
+#| msgid "KWallet Not Available"
+msgid "Search Not Available"
+msgstr "केवालेट नइ मिलत"
 
-#: antispamwizard.cpp:608
+#: kmmainwidget.cpp:1271
+msgid ""
+"You have disabled full text indexing of emails. Searching is not possible "
+"without that. You can enable it in \"System Settings\". Note that searching "
+"will only be possible after your emails have been fully indexed, which can "
+"take some time."
+msgstr ""
+
+#: kmmainwidget.cpp:1438
+msgid "No Subject"
+msgstr "कोई विसय नइ"
+
+#: kmmainwidget.cpp:1451
+msgid "(no templates)"
+msgstr "(कोई टैम्प्लेट नइ)"
+
+#: kmmainwidget.cpp:1524
+msgid "This folder does not have any expiry options set"
+msgstr "फोल्डर तिर कोनो मियाद-खतम विकल्प सेट नइ हे."
+
+#: kmmainwidget.cpp:1530
+#, kde-format
+msgid "<qt>Are you sure you want to expire the folder <b>%1</b>?</qt>"
+msgstr "<qt>का आप मन सही मं फोल्डर <b>%1</b> के मियाद बीते देना चाहथो </qt>"
+
+#: kmmainwidget.cpp:1532
+msgid "Expire Folder"
+msgstr "बीत गिस फोल्डर"
+
+#: kmmainwidget.cpp:1533
+msgid "&Expire"
+msgstr "मियाद खतम (&E)"
+
+#: kmmainwidget.cpp:1549
+msgid "Empty Trash"
+msgstr "घुरुवा खाली करव"
+
+#: kmmainwidget.cpp:1549
+msgid "Move to Trash"
+msgstr "घुरुवा मं ले जाव"
+
+#: kmmainwidget.cpp:1551
+msgid "Are you sure you want to empty the trash folder?"
+msgstr "का आप मन सही मं घुरुवा के फोल्डर खाली करना चाहथो ?"
+
+#: kmmainwidget.cpp:1552
 #, kde-format
 msgid ""
-"<p>Messages classified as spam are marked as read.<br />Spam messages are "
-"moved into the folder named <i>%1</i>.</p>"
+"<qt>Are you sure you want to move all messages from folder <b>%1</b> to the "
+"trash?</qt>"
 msgstr ""
+"<qt>का आप मन सही मं फोल्डर <b>%1</b> से सब्बो संदेस मन ल घुरुवा मं खिसकाना चाहते  हे?</"
+"qt>"
 
-#: antispamwizard.cpp:612
-msgid ""
-"<p>Messages classified as spam are marked as read.<br />Spam messages are "
-"not moved into a certain folder.</p>"
-msgstr ""
+#: kmmainwidget.cpp:1574
+msgid "Moved all messages to the trash"
+msgstr "सब्बो संदेस मन ल घुरुवा मं डाला"
 
-#: antispamwizard.cpp:617
+#: kmmainwidget.cpp:1616
+msgid "Delete Search"
+msgstr "खोज मेटाव"
+
+#: kmmainwidget.cpp:1617
 #, kde-format
 msgid ""
-"<p>Messages classified as spam are not marked as read.<br />Spam messages "
-"are moved into the folder named <i>%1</i>.</p>"
+"<qt>Are you sure you want to delete the search <b>%1</b>?<br />Any messages "
+"it shows will still be available in their original folder.</qt>"
 msgstr ""
 
-#: antispamwizard.cpp:621
-msgid ""
-"<p>Messages classified as spam are not marked as read.<br />Spam messages "
-"are not moved into a certain folder.</p>"
-msgstr ""
+#: kmmainwidget.cpp:1620
+#, fuzzy
+msgctxt "@action:button Delete search"
+msgid "&Delete"
+msgstr "मेटाव (&D)"
 
-#: antispamwizard.cpp:647
+#: kmmainwidget.cpp:1622
+msgid "Delete Folder"
+msgstr "फोल्डर मेटाव"
+
+#: kmmainwidget.cpp:1627
+#, kde-format
+msgid "<qt>Are you sure you want to delete the empty folder <b>%1</b>?</qt>"
+msgstr "<qt>का आप मन सही मं खाली फोल्डर<b>%1</b> ल मिटाना चाहथो ?</qt>"
+
+#: kmmainwidget.cpp:1631
 #, kde-format
 msgid ""
-"<p>The folder for messages classified as unsure (probably spam) is <i>%1</i>."
-"</p>"
-msgstr "<p>संदेस बर फोल्डर के वर्गीकरन अनिस्चित (हो सकथे स्पैम) हे  <i>%1</i>.</p>"
+"<qt>Are you sure you want to delete the empty folder <resource>%1</resource> "
+"and all its subfolders? Those subfolders might not be empty and their "
+"contents will be discarded as well. <p><b>Beware</b> that discarded messages "
+"are not saved into your Trash folder and are permanently deleted.</p></qt>"
+msgstr ""
 
-#: antispamwizard.cpp:660
+#: kmmainwidget.cpp:1640
 #, kde-format
-msgid "<p>The wizard will create the following filters:<ul>%1</ul></p>"
-msgstr "<p>विजार्ड नीचे वाले छनइया तैयार करही:<ul>%1</ul></p>"
+msgid ""
+"<qt>Are you sure you want to delete the folder <resource>%1</resource>, "
+"discarding its contents? <p><b>Beware</b> that discarded messages are not "
+"saved into your Trash folder and are permanently deleted.</p></qt>"
+msgstr ""
 
-#: antispamwizard.cpp:663
+#: kmmainwidget.cpp:1646
 #, kde-format
-msgid "<p>The wizard will replace the following filters:<ul>%1</ul></p>"
-msgstr "<p>विजार्ड नीचे वाले छनइया बदलही:<ul>%1</ul></p>"
-
-#: antispamwizard.cpp:928
 msgid ""
-"The wizard will search for any tools to do spam detection\n"
-"and setup KMail to work with them."
+"<qt>Are you sure you want to delete the folder <resource>%1</resource> and "
+"all its subfolders, discarding their contents? <p><b>Beware</b> that "
+"discarded messages are not saved into your Trash folder and are permanently "
+"deleted.</p></qt>"
 msgstr ""
 
-#: antispamwizard.cpp:932
+#: kmmainwidget.cpp:1653
+#, fuzzy
+msgctxt "@action:button Delete folder"
+msgid "&Delete"
+msgstr "मेटाव (&D)"
+
+#: kmmainwidget.cpp:1677
+msgid "Are you sure you want to expire all old messages?"
+msgstr "का आप मन सही मं सब्बो जुन्ना संदेस मन के मियाद खतम करना चाहथो ?"
+
+#: kmmainwidget.cpp:1678
+msgid "Expire Old Messages?"
+msgstr "जुन्ना संदेस मन के मियाद खतम करव?"
+
+#: kmmainwidget.cpp:1678
+msgid "Expire"
+msgstr "हाँ"
+
+#: kmmainwidget.cpp:1694
 msgid ""
-"<p>Here you can get some assistance in setting up KMail's filter rules to "
-"use some commonly-known anti-virus tools.</p><p>The wizard can detect those "
-"tools on your computer as well as create filter rules to classify messages "
-"using these tools and to separate messages containing viruses. The wizard "
-"will not take any existing filter rules into consideration: it will always "
-"append the new rules.</p><p><b>Warning:</b> As KMail appears to be frozen "
-"during the scan of the messages for viruses, you may encounter problems with "
-"the responsiveness of KMail because anti-virus tool operations are usually "
-"time consuming; please consider deleting the filter rules created by the "
-"wizard to get back to the former behavior.</p>"
+"Use of HTML in mail will make you more vulnerable to \"spam\" and may "
+"increase the likelihood that your system will be compromised by other "
+"present and anticipated security exploits."
 msgstr ""
 
-#: antispamwizard.cpp:986
+#: kmmainwidget.cpp:1697 kmmainwidget.cpp:1726
+msgid "Security Warning"
+msgstr "सुरक्छा चेतावनी"
+
+#: kmmainwidget.cpp:1698
+msgid "Use HTML"
+msgstr "एचटीएमएल उपयोग करव"
+
+#: kmmainwidget.cpp:1723
 msgid ""
-"<p>Please select the tools to be used for the detection and go to the next "
-"page.</p>"
+"Loading external references in html mail will make you more vulnerable to "
+"\"spam\" and may increase the likelihood that your system will be "
+"compromised by other present and anticipated security exploits."
 msgstr ""
 
-#: antispamwizard.cpp:1014
-msgid "&Mark detected spam messages as read"
-msgstr "पता लगाए गे स्पैम संदेस मन ल पढ़िस गिस चिनहा लगाव (&M)"
+#: kmmainwidget.cpp:1727
+msgid "Load External References"
+msgstr "बाहिरी संदर्भ मन ल लोड करव"
 
-#: antispamwizard.cpp:1016
-msgid "Mark messages which have been classified as spam as read."
-msgstr "संदेस जऊन स्पैम के रूप मं वर्गीकृत हेओ मन ल पढ़िस गिस चिनहा लगाव."
-
-#: antispamwizard.cpp:1019
-msgid "Move &known spam to:"
-msgstr ""
-
-#: antispamwizard.cpp:1021
+#: kmmainwidget.cpp:1812
+#, kde-format
 msgid ""
-"The default folder for spam messages is the trash folder, but you may change "
-"that in the folder view below."
-msgstr ""
+"<qt>Do you really want to delete the selected message?<br />Once deleted, it "
+"cannot be restored.</qt>"
+msgid_plural ""
+"<qt>Do you really want to delete the %1 selected messages?<br />Once "
+"deleted, they cannot be restored.</qt>"
+msgstr[0] ""
+"<qt>का आप मन सचमुच चुने गे संदेस ल मिटाना चाहथो ?<br />एक बार मेटाव के बाद, एला फिर "
+"से वापस लाया नइ जा सके.</qt>"
+msgstr[1] ""
+"<qt>का आप मन सचमुच चुने गे %1 संदेस मन ल मिटाना चाहथो ?<br />एक बार मेटाव के बाद, ए "
+"मन ल फिर से वापस लाया नइ जा सके.</qt>"
 
-#: antispamwizard.cpp:1036
-msgid "Move &probable spam to:"
-msgstr ""
+#: kmmainwidget.cpp:1818
+msgid "Delete Messages"
+msgstr "संदेस मेटाव"
 
-#: antispamwizard.cpp:1038
+#: kmmainwidget.cpp:1818
+msgid "Delete Message"
+msgstr "संदेस मेटाव"
+
+#: kmmainwidget.cpp:1839
+msgid "Moving messages..."
+msgstr "संदेस खिसकावत हे..."
+
+#: kmmainwidget.cpp:1841
+msgid "Deleting messages..."
+msgstr "संदेस मिटात हे..."
+
+#: kmmainwidget.cpp:1855
+msgid "Messages deleted successfully."
+msgstr "संदेस ल सफलतापूर्वक मेटाइस..."
+
+#: kmmainwidget.cpp:1857
+msgid "Messages moved successfully."
+msgstr "संदेस मन ल सफलतापूर्वक खिसकाइस."
+
+#: kmmainwidget.cpp:1862
+msgid "Deleting messages failed."
+msgstr "संदेस मिटाना फेल."
+
+#: kmmainwidget.cpp:1864
+msgid "Deleting messages canceled."
+msgstr "संदेस मिटाना खारिज."
+
+#: kmmainwidget.cpp:1867
+msgid "Moving messages failed."
+msgstr "संदेस खिसकाना फेल."
+
+#: kmmainwidget.cpp:1869
+msgid "Moving messages canceled."
+msgstr "संदेस खिसकाना खारिज."
+
+#: kmmainwidget.cpp:1915
+msgid "Move Messages to Folder"
+msgstr "संदेस मन ल फोल्डर मं खिसकाव"
+
+#: kmmainwidget.cpp:1945
+msgid "Copying messages..."
+msgstr "संदेस नकल करत हे..."
+
+#: kmmainwidget.cpp:1954
+msgid "Messages copied successfully."
+msgstr "संदेस मन ल सफलतापूर्वक खिसकाइस."
+
+#: kmmainwidget.cpp:1957
+msgid "Copying messages failed."
+msgstr "संदेस नकल करना फेल."
+
+#: kmmainwidget.cpp:1959
+msgid "Copying messages canceled."
+msgstr "संदेस नकल करना खारिज."
+
+#: kmmainwidget.cpp:1966
+msgid "Copy Messages to Folder"
+msgstr "संदेस ल फोल्डर मं नकल करव"
+
+#: kmmainwidget.cpp:2001
+msgid "Moving messages to trash..."
+msgstr "संदेस घुरुवा मं ले जाव..."
+
+#: kmmainwidget.cpp:2011
+msgid "Messages moved to trash successfully."
+msgstr "संदेस मन ल घुरुवा मं सफलतापूर्वक भेजिस."
+
+#: kmmainwidget.cpp:2014
+msgid "Moving messages to trash failed."
+msgstr "संदेस घुरुवा मं ले जाना फेल."
+
+#: kmmainwidget.cpp:2016
+msgid "Moving messages to trash canceled."
+msgstr "संदेस घुरुवा मं खिसकाना खारिज."
+
+#: kmmainwidget.cpp:2248
+msgid "Filter on Mailing-List..."
+msgstr "डाक-सूची मं फिल्टर..."
+
+#: kmmainwidget.cpp:2262
+#, kde-format
+msgid "Filter on Mailing-List %1..."
+msgstr "डाक-सूची %1 मं फिल्टर..."
+
+#: kmmainwidget.cpp:2279
+msgid "Jump to Folder"
+msgstr "ये फोल्डर मं जाव"
+
+#: kmmainwidget.cpp:2347
 msgid ""
-"The default folder is the inbox folder, but you may change that in the "
-"folder view below.<p>Not all tools support a classification as unsure. If "
-"you have not selected a capable tool, you cannot select a folder as well.</p>"
+"KMail's Out of Office Reply functionality relies on server-side filtering. "
+"You have not yet configured an IMAP server for this.\n"
+"You can do this on the \"Filtering\" tab of the IMAP account configuration."
 msgstr ""
 
-#: antispamwizard.cpp:1167
-msgid "Check messages using the anti-virus tools"
-msgstr "एन्टी-वायरस औजार मन के उपयोग से संदेस देखव"
+#: kmmainwidget.cpp:2352
+msgid "No Server-Side Filtering Configured"
+msgstr "सर्वर-साइड फिल्टरिंग कान्फिगर नइ"
 
-#: antispamwizard.cpp:1169
+#: kmmainwidget.cpp:2375
+msgid "Could not start certificate manager; please check your installation."
+msgstr "प्रमानपत्र प्रबंधक चालू नइ कर सकिस. किरपा करके, अपन इंस्टालेसन जांचव."
+
+#: kmmainwidget.cpp:2377 kmmainwidget.cpp:2388
+msgid "KMail Error"
+msgstr "के-मेल गलती"
+
+#: kmmainwidget.cpp:2386
 msgid ""
-"Let the anti-virus tools check your messages. The wizard will create "
-"appropriate filters. The messages are usually marked by the tools so that "
-"following filters can react on this and, for example, move virus messages to "
-"a special folder."
+"Could not start GnuPG LogViewer (kwatchgnupg); please check your "
+"installation."
+msgstr ""
+"ग्नूपीजी लाग-प्रदर्सक (के-वाच-ग्नूपीजी) चालू नइ कर सकिस; किरपा करके, अपन इंस्टालेसन जांचव."
+
+#: kmmainwidget.cpp:2458 kmkernel.cpp:1001
+msgid "Work Offline"
+msgstr "आफलाइन काम करव"
+
+#: kmmainwidget.cpp:2462 kmkernel.cpp:1000
+msgid "Work Online"
+msgstr "आनलाइन काम करव"
+
+#: kmmainwidget.cpp:2473
+#, fuzzy
+#| msgid "KMail is set to be online; all network jobs resumed"
+msgid "Network connection detected, all network jobs resumed"
+msgstr "केमेल ल आनलाइन के रूप मं सेट कर दे गे हे, सब्बो नेटवर्क काम फिर से चालू हे"
+
+#: kmmainwidget.cpp:2477
+#, fuzzy
+#| msgid "KMail is set to be offline; all network jobs are suspended"
+msgid "No network connection detected, all network jobs are suspended"
+msgstr "केमेल ल आफलाइन के रूप मं सेट कर दे गे हे, सब्बो नेटवर्क काम निलंबित हे"
+
+#: kmmainwidget.cpp:2946
+msgid "Save &As..."
+msgstr "अइसन सहेजव (&A)"
+
+#: kmmainwidget.cpp:2955
+msgid "&Expire All Folders"
+msgstr "सब्बो फोल्डर के मियाद खतम करव (&E)"
+
+#: kmmainwidget.cpp:2960
+msgid "Check &Mail"
+msgstr "डाक देखव (&M)"
+
+#: kmmainwidget.cpp:2966
+#, fuzzy
+#| msgid "Check &Mail"
+msgid "Check Mail In"
+msgstr "डाक देखव (&M)"
+
+#: kmmainwidget.cpp:2967 kmmainwidget.cpp:2968
+#, fuzzy
+#| msgid "Check &Mail"
+msgid "Check Mail"
+msgstr "डाक देखव (&M)"
+
+#: kmmainwidget.cpp:2978
+msgid "&Send Queued Messages"
+msgstr "कतारबद्ध संदेस भेजव (&S)"
+
+#: kmmainwidget.cpp:2983
+#, fuzzy
+msgid "Online status (unknown)"
+msgstr "आनलाइन स्थिति (अग्यात)"
+
+#: kmmainwidget.cpp:2988
+msgid "Send Queued Messages Via"
+msgstr "कतार मं लगे संदेस मन ल इहां से भेजव"
+
+#: kmmainwidget.cpp:2998 kmcomposewin.cpp:1161
+msgid "&Address Book"
+msgstr "पता पुस्तिका (&A)"
+
+#: kmmainwidget.cpp:3006
+msgid "Certificate Manager"
+msgstr "प्रमानपत्र प्रबंधक."
+
+#: kmmainwidget.cpp:3013
+msgid "GnuPG Log Viewer"
+msgstr "ग्नूपीजी लाग प्रदर्सक"
+
+#: kmmainwidget.cpp:3025
+msgid "&Import Messages"
+msgstr "संदेस आयात करव (&I)"
+
+#: kmmainwidget.cpp:3033
+msgid "&Debug Sieve..."
+msgstr "डिबग सीव... (&D)"
+
+#: kmmainwidget.cpp:3040
+msgid "Filter &Log Viewer..."
+msgstr "लाग प्रदर्सक छनइया करव... (&L)"
+
+#: kmmainwidget.cpp:3045
+msgid "&Anti-Spam Wizard..."
+msgstr "एन्टी स्पैम विजार्ड... (&A)"
+
+#: kmmainwidget.cpp:3050
+msgid "&Anti-Virus Wizard..."
+msgstr "एन्टी-वायरस विजार्ड... (&A)"
+
+#: kmmainwidget.cpp:3055
+msgid "&Account Wizard..."
+msgstr "खाता विजार्ड... (&A)"
+
+#: kmmainwidget.cpp:3061
+msgid "Edit \"Out of Office\" Replies..."
+msgstr "का संपादन करव \"आफिस से बाहिर\" जवाबों को..."
+
+#: kmmainwidget.cpp:3076 kmmainwidget.cpp:3903
+#, fuzzy
+msgctxt "@action Hard delete, bypassing trash"
+msgid "&Delete"
+msgstr "मेटाव (&D)"
+
+#: kmmainwidget.cpp:3081 kmmainwidget.cpp:3905
+msgid "M&ove Thread to Trash"
+msgstr "लड़ी घुरुवा मं ले जाव (&o)"
+
+#: kmmainwidget.cpp:3085
+msgid "Move thread to trashcan"
+msgstr "लड़ी घुरुवा मं ले जाव"
+
+#: kmmainwidget.cpp:3088 kmmainwidget.cpp:3905
+msgid "Delete T&hread"
+msgstr "संकली मेटाव (&h)"
+
+#: kmmainwidget.cpp:3094
+msgid "&Find Messages..."
+msgstr "संदेस खोजव... (&F)"
+
+#: kmmainwidget.cpp:3100 kmreaderwin.cpp:191
+msgid "&Find in Message..."
+msgstr "संदेस मं खोजव... (&F)"
+
+#: kmmainwidget.cpp:3106
+msgid "Select &All Messages"
+msgstr "सब्बो संदेस चुनव (&A)"
+
+#: kmmainwidget.cpp:3114
+msgid "&Mailing List Management..."
+msgstr "डाक पता सूची प्रबंधन... (&M)"
+
+#: kmmainwidget.cpp:3119
+msgid "&Assign Shortcut..."
+msgstr "सार्टकट आबंटित करव... (&A)"
+
+#: kmmainwidget.cpp:3136
+msgid "&Expiration Settings"
+msgstr "मियाद बीते के सेटिंग (&E)"
+
+#: kmmainwidget.cpp:3154
+#, fuzzy
+#| msgid "&New Folder..."
+msgid "&Archive Folder..."
+msgstr "नवा फोल्डर...(&N)"
+
+#: kmmainwidget.cpp:3158
+msgid "Prefer &HTML to Plain Text"
+msgstr "एचटीएमएल के बदला मा सादा पाठ ल प्राथमिकता देव (&H)"
+
+#: kmmainwidget.cpp:3162
+msgid "Load E&xternal References"
+msgstr "बाहिरी संदर्भ मन ल लोड करव (&x)"
+
+#: kmmainwidget.cpp:3185
+#, fuzzy
+#| msgid "New Message To..."
+msgid "Copy Message To..."
+msgstr "को नवा संदेस..."
+
+#: kmmainwidget.cpp:3187
+#, fuzzy
+#| msgid "New Message To..."
+msgid "Move Message To..."
+msgstr "को नवा संदेस..."
+
+#: kmmainwidget.cpp:3192
+msgid "&New Message..."
+msgstr "नवा संदेस... (&N)"
+
+#: kmmainwidget.cpp:3194
+msgctxt "@action:intoolbar New Empty Message"
+msgid "New"
+msgstr "नवा"
+
+#: kmmainwidget.cpp:3202
+msgid "Message From &Template"
+msgstr "टेम्पलेट से संदेस (&T)"
+
+#: kmmainwidget.cpp:3212
+msgid "New Message t&o Mailing-List..."
+msgstr "डाक-सूची मं नवा संदेस... (&o)"
+
+#: kmmainwidget.cpp:3219
+msgid "Send A&gain..."
+msgstr "फिर भेजव... (&g)"
+
+#: kmmainwidget.cpp:3224
+msgid "&Create Filter"
+msgstr "फिल्टर बनाव (&C)"
+
+#: kmmainwidget.cpp:3228
+msgid "Filter on &Subject..."
+msgstr "विसय मं फिल्टर... (&S)"
+
+#: kmmainwidget.cpp:3233
+msgid "Filter on &From..."
+msgstr "से छनइया ओन... (&F)"
+
+#: kmmainwidget.cpp:3238
+msgid "Filter on &To..."
+msgstr "को छनइया ओन... (&T)"
+
+#: kmmainwidget.cpp:3243
+msgid "Filter on Mailing-&List..."
+msgstr "डाक-सूची मं फिल्टर... (&L)"
+
+#: kmmainwidget.cpp:3248
+msgid "New Message From &Template"
+msgstr "टैम्प्लेट से एक नवा संदेस (&T)"
+
+#: kmmainwidget.cpp:3254
+msgid "Mark &Thread"
+msgstr "मार्क थ्रेड (&T)"
+
+#: kmmainwidget.cpp:3257
+msgid "Mark Thread as &Read"
+msgstr "लड़ी ल पढ़िस चिनहा लगाव (&R)"
+
+#: kmmainwidget.cpp:3260
+msgid "Mark all messages in the selected thread as read"
+msgstr "चुनी गे लड़ी के सब्बो संदेस मन ल पढ़िस चिनहा लगाव"
+
+#: kmmainwidget.cpp:3263
+msgid "Mark Thread as &Unread"
+msgstr "लड़ी बिन पढ़िस चिनहा लगाव (&U)"
+
+#: kmmainwidget.cpp:3266
+msgid "Mark all messages in the selected thread as unread"
+msgstr "चुनी गे लड़ी के सब्बो संदेस मन ल बिन पढ़िस चिनहा लगाव"
+
+#: kmmainwidget.cpp:3272
+msgid "Mark Thread as &Important"
+msgstr "लड़ी ल महत्वपूर्न कहिके चिनहा लगाव (&I)"
+
+#: kmmainwidget.cpp:3275
+msgid "Remove &Important Thread Mark"
 msgstr ""
 
-#: antispamwizard.cpp:1175
-msgid "Move detected viral messages to the selected folder"
-msgstr "पता लगाए गे वायरस संदेस मन ल चुने गे फोल्डर मं खिसकाव"
+#: kmmainwidget.cpp:3278
+msgid "Mark Thread as &Action Item"
+msgstr "लड़ी ल काम चीज के रूप मं चिनहा लगाव (&A)"
 
-#: antispamwizard.cpp:1177
+#: kmmainwidget.cpp:3281
+msgid "Remove &Action Item Thread Mark"
+msgstr ""
+
+#: kmmainwidget.cpp:3285
+msgid "&Watch Thread"
+msgstr "लड़ी देखव (&W)"
+
+#: kmmainwidget.cpp:3289
+msgid "&Ignore Thread"
+msgstr "लड़ी देखव-मत (&I)"
+
+#: kmmainwidget.cpp:3297 kmreadermainwin.cpp:301
+msgid "Save A&ttachments..."
+msgstr "संलग्नक सहेजव... (&t)"
+
+#: kmmainwidget.cpp:3306
+msgid "Appl&y All Filters"
+msgstr "सब्बो फिल्टर लगाव (&y)"
+
+#. i18n: file: kmmainwin.rc:163
+#. i18n: ectx: Menu (apply_filter_actions)
+#. i18n: file: kmail_part.rc:163
+#. i18n: ectx: Menu (apply_filter_actions)
+#: kmmainwidget.cpp:3312 rc.cpp:35 rc.cpp:376
+msgid "A&pply Filter"
+msgstr "फिल्टर लगाव (&p)"
+
+#: kmmainwidget.cpp:3316
+#, fuzzy
+#| msgctxt "View->"
+#| msgid "&Expand Thread"
+msgctxt "View->"
+msgid "&Expand Thread / Group"
+msgstr "लड़ी फैलाव (&E)"
+
+#: kmmainwidget.cpp:3319
+#, fuzzy
+#| msgid "Expand the current thread"
+msgid "Expand the current thread or group"
+msgstr "अभी हाल के लड़ी फैलाव"
+
+#: kmmainwidget.cpp:3323
+#, fuzzy
+#| msgctxt "View->"
+#| msgid "&Collapse Thread"
+msgctxt "View->"
+msgid "&Collapse Thread / Group"
+msgstr "लड़ी समेटव (&C)"
+
+#: kmmainwidget.cpp:3326
+#, fuzzy
+#| msgid "Collapse the current thread"
+msgid "Collapse the current thread or group"
+msgstr "अभी हाल के लड़ी समेटव"
+
+#: kmmainwidget.cpp:3330
+msgctxt "View->"
+msgid "Ex&pand All Threads"
+msgstr "सब्बो लड़ी फैलाव (&p)"
+
+#: kmmainwidget.cpp:3333
+msgid "Expand all threads in the current folder"
+msgstr "अभी हाल के फोल्डर मं सब्बो लड़ी फैलाव"
+
+#: kmmainwidget.cpp:3337
+msgctxt "View->"
+msgid "C&ollapse All Threads"
+msgstr "सब्बो लड़ियाँ समेटव (&o)"
+
+#: kmmainwidget.cpp:3340
+msgid "Collapse all threads in the current folder"
+msgstr "चुनव"
+
+#: kmmainwidget.cpp:3345 kmreadermainwin.cpp:317
+msgid "&View Source"
+msgstr "स्रोत देखव (&V)"
+
+#: kmmainwidget.cpp:3350
+msgid "&Display Message"
+msgstr "संदेस देखाव (&D)"
+
+#: kmmainwidget.cpp:3359
+msgid "&Next Message"
+msgstr "अगला संदेस (&N)"
+
+#: kmmainwidget.cpp:3362
+msgid "Go to the next message"
+msgstr "अगले संदेस मं जाव"
+
+#: kmmainwidget.cpp:3366
+msgid "Next &Unread Message"
+msgstr "अगला बिनपढ़ा संदेस (&U)"
+
+#: kmmainwidget.cpp:3374
+msgctxt "@action:inmenu Goto next unread message"
+msgid "Next"
+msgstr "अगला"
+
+#: kmmainwidget.cpp:3375
+msgid "Go to the next unread message"
+msgstr "अगले बिना-पढ़े संदेस मं जाव"
+
+#: kmmainwidget.cpp:3379
+msgid "&Previous Message"
+msgstr "पिछला संदेस (&P)"
+
+#: kmmainwidget.cpp:3381
+msgid "Go to the previous message"
+msgstr "पिछले संदेस मं जाव"
+
+#: kmmainwidget.cpp:3386
+msgid "Previous Unread &Message"
+msgstr "पिछला बिनपढ़ा संदेस (&M)"
+
+#: kmmainwidget.cpp:3394
+msgctxt "@action:inmenu Goto previous unread message."
+msgid "Previous"
+msgstr "पिछला"
+
+#: kmmainwidget.cpp:3395
+msgid "Go to the previous unread message"
+msgstr "पिछले बिना-पढ़े संदेस मं जाव"
+
+#: kmmainwidget.cpp:3399
+msgid "Next Unread &Folder"
+msgstr "अगला बिनपढ़ा फोल्डर (&F)"
+
+#: kmmainwidget.cpp:3403
+msgid "Go to the next folder with unread messages"
+msgstr "बिना-पढ़े संदेस सहित अगले फोल्डर मं जाव"
+
+#: kmmainwidget.cpp:3409
+msgid "Previous Unread F&older"
+msgstr "पिछला बिनपढ़ा फोल्डर (&o)"
+
+#: kmmainwidget.cpp:3412
+msgid "Go to the previous folder with unread messages"
+msgstr "पिछले फोल्डर मं बिना-पढ़े संदेस मन मं जाव"
+
+#: kmmainwidget.cpp:3419
+msgctxt "Go->"
+msgid "Next Unread &Text"
+msgstr "अगला बिना-पढ़ा पाठ (&T)"
+
+#: kmmainwidget.cpp:3422
+msgid "Go to the next unread text"
+msgstr "अगले बिना-पढ़े पाठ मं जाव"
+
+#: kmmainwidget.cpp:3423
 msgid ""
-"A filter to detect messages classified as virus-infected and to move those "
-"messages into a predefined folder is created. The default folder is the "
-"trash folder, but you may change that in the folder view."
+"Scroll down current message. If at end of current message, go to next unread "
+"message."
 msgstr ""
 
-#: antispamwizard.cpp:1183
-msgid "Additionally, mark detected viral messages as read"
-msgstr "एखर अतिरिक्त, पता लगिसए गे वायरस सहित संदेस मन ल पढ़िस गिस चिनहा लगाव"
+#: kmmainwidget.cpp:3431
+msgid "Configure &Filters..."
+msgstr "फिल्टर कान्फिगर करव... (&F)"
 
-#: antispamwizard.cpp:1186
-msgid ""
-"Mark messages which have been classified as virus-infected as read, as well "
-"as moving them to the selected folder."
+#: kmmainwidget.cpp:3437
+msgid "Manage &Sieve Scripts..."
+msgstr "सीव स्क्रिप्ट्स प्रबंधित करव... (&S)"
+
+#: kmmainwidget.cpp:3442
+msgid "KMail &Introduction"
+msgstr "के-मेल परिचय (&I)"
+
+#: kmmainwidget.cpp:3444
+msgid "Display KMail's Welcome Page"
+msgstr "के-मेल के स्वागत पेज देखाव"
+
+#: kmmainwidget.cpp:3453
+msgid "Configure &Notifications..."
+msgstr "सूचना मन ल कान्फिगर करव.... (&N)"
+
+#: kmmainwidget.cpp:3460
+msgid "&Configure KMail..."
+msgstr "के-मेल कान्फिगर करव... (&C)"
+
+#: kmmainwidget.cpp:3466
+msgid "Expire..."
+msgstr "मियाद खतम..."
+
+#: kmmainwidget.cpp:3472
+msgid "Add Favorite Folder..."
+msgstr "निसानी फोल्डर जोड़व..."
+
+#: kmmainwidget.cpp:3501
+msgid "Add Favorite Folder"
+msgstr "निसानी फोल्डर जोड़व"
+
+#: kmmainwidget.cpp:3825
+msgid "E&mpty Trash"
+msgstr "घुरुवा खाली करव (&m)"
+
+#: kmmainwidget.cpp:3825
+msgid "&Move All Messages to Trash"
+msgstr "सब्बो संदेस घुरुवा मं डालव (&M)"
+
+#: kmmainwidget.cpp:3898
+msgid "&Delete Search"
+msgstr "खोज मेटाव (&D)"
+
+#: kmmainwidget.cpp:3898
+msgid "&Delete Folder"
+msgstr "फोल्डर मेटाव (&D)"
+
+#: kmmainwidget.cpp:3903 kmreadermainwin.cpp:304
+msgid "&Move to Trash"
+msgstr "घुरुवा मं डालव (&M)"
+
+#: kmmainwidget.cpp:4024
+#, kde-format
+msgid "Filter %1"
+msgstr "फिल्टर %1"
+
+#: kmmainwidget.cpp:4204
+msgid "Out of office reply active"
 msgstr ""
+
+#: kmmainwidget.cpp:4324
+#, fuzzy, kde-format
+#| msgid "Properties of Folder %1"
+msgctxt "@title:window"
+msgid "Properties of Folder %1"
+msgstr "फोल्डर %1 के विसेसता"
 
 #: archivefolderdialog.cpp:48
 #, fuzzy
@@ -619,6 +1249,216 @@ msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
 msgstr[0] "संदेस काटव"
 msgstr[1] "संदेस काटव"
+
+#: antispamwizard.cpp:116
+msgid "Anti-Spam Wizard"
+msgstr "एन्टी स्पैम विजार्ड"
+
+#: antispamwizard.cpp:117
+msgid "Anti-Virus Wizard"
+msgstr "एन्टी-वायरस विजार्ड"
+
+#: antispamwizard.cpp:121
+msgid "Welcome to the KMail Anti-Spam Wizard"
+msgstr "के-मेल एन्टी-स्पैम विजार्ड मं आप मन के स्वागत हे"
+
+#: antispamwizard.cpp:122
+msgid "Welcome to the KMail Anti-Virus Wizard"
+msgstr "के-मेल एन्टी-वायरस विजार्ड मं आप मन के स्वागत हे"
+
+#: antispamwizard.cpp:128
+msgid "Options to fine-tune the handling of spam messages"
+msgstr "स्पैम संदेस मन ल हेंडल करे ल फाए ट्यून करे बर विकल्प"
+
+#: antispamwizard.cpp:134
+msgid "Options to fine-tune the handling of virus messages"
+msgstr "वायरस संदेस मन ल हेंडल करे ल फाए ट्यून करे बर विकल्प"
+
+#: antispamwizard.cpp:144
+msgid "Summary of changes to be made by this wizard"
+msgstr "ये विजार्ड से करे जाय वाले बदलाव मन के सारांस"
+
+#: antispamwizard.cpp:216
+msgid "Virus handling"
+msgstr "वायरस हेंडलिंग"
+
+#: antispamwizard.cpp:304 antispamwizard.cpp:306 antispamwizard.cpp:632
+msgid "Spam Handling"
+msgstr "स्पैम हेंडलिंग"
+
+#: antispamwizard.cpp:345 antispamwizard.cpp:347 antispamwizard.cpp:645
+msgid "Semi spam (unsure) handling"
+msgstr "सेमी स्पैम (अनिस्चित) हेन्डलिंग"
+
+#: antispamwizard.cpp:407 antispamwizard.cpp:409 antispamwizard.cpp:653
+msgid "Classify as Spam"
+msgstr "स्पैम के रूप मं वर्गीकृत"
+
+#: antispamwizard.cpp:418
+msgid "Spam"
+msgstr "बेकार डाक"
+
+#: antispamwizard.cpp:450 antispamwizard.cpp:452 antispamwizard.cpp:655
+msgid "Classify as NOT Spam"
+msgstr "स्पैम नइ के रूप मं वर्गीकृत"
+
+#: antispamwizard.cpp:461
+msgid "Ham"
+msgstr "हेम"
+
+#: antispamwizard.cpp:529
+#, kde-format
+msgid "Scanning for %1..."
+msgstr "%1 बर स्कैन करत हे..."
+
+#: antispamwizard.cpp:574
+msgid "Scanning for anti-spam tools finished."
+msgstr "एन्टी-स्पैम औजार मन बर स्कैनिंग पूरा."
+
+#: antispamwizard.cpp:575
+msgid "Scanning for anti-virus tools finished."
+msgstr "एन्टी-वायरस औजार मन बर स्कैनिंग पूरा."
+
+#: antispamwizard.cpp:578
+msgid ""
+"<p>Sorry, no spam detection tools have been found. Install your spam "
+"detection software and re-run this wizard.</p>"
+msgstr ""
+
+#: antispamwizard.cpp:581
+msgid "Scanning complete. No anti-virus tools found."
+msgstr "स्कैन पूरा होइस, कोनो एंटीवायरस औजार नइ मिलिस."
+
+#: antispamwizard.cpp:608
+#, kde-format
+msgid ""
+"<p>Messages classified as spam are marked as read.<br />Spam messages are "
+"moved into the folder named <i>%1</i>.</p>"
+msgstr ""
+
+#: antispamwizard.cpp:612
+msgid ""
+"<p>Messages classified as spam are marked as read.<br />Spam messages are "
+"not moved into a certain folder.</p>"
+msgstr ""
+
+#: antispamwizard.cpp:617
+#, kde-format
+msgid ""
+"<p>Messages classified as spam are not marked as read.<br />Spam messages "
+"are moved into the folder named <i>%1</i>.</p>"
+msgstr ""
+
+#: antispamwizard.cpp:621
+msgid ""
+"<p>Messages classified as spam are not marked as read.<br />Spam messages "
+"are not moved into a certain folder.</p>"
+msgstr ""
+
+#: antispamwizard.cpp:647
+#, kde-format
+msgid ""
+"<p>The folder for messages classified as unsure (probably spam) is <i>%1</i>."
+"</p>"
+msgstr "<p>संदेस बर फोल्डर के वर्गीकरन अनिस्चित (हो सकथे स्पैम) हे  <i>%1</i>.</p>"
+
+#: antispamwizard.cpp:660
+#, kde-format
+msgid "<p>The wizard will create the following filters:<ul>%1</ul></p>"
+msgstr "<p>विजार्ड नीचे वाले छनइया तैयार करही:<ul>%1</ul></p>"
+
+#: antispamwizard.cpp:663
+#, kde-format
+msgid "<p>The wizard will replace the following filters:<ul>%1</ul></p>"
+msgstr "<p>विजार्ड नीचे वाले छनइया बदलही:<ul>%1</ul></p>"
+
+#: antispamwizard.cpp:928
+msgid ""
+"The wizard will search for any tools to do spam detection\n"
+"and setup KMail to work with them."
+msgstr ""
+
+#: antispamwizard.cpp:932
+msgid ""
+"<p>Here you can get some assistance in setting up KMail's filter rules to "
+"use some commonly-known anti-virus tools.</p><p>The wizard can detect those "
+"tools on your computer as well as create filter rules to classify messages "
+"using these tools and to separate messages containing viruses. The wizard "
+"will not take any existing filter rules into consideration: it will always "
+"append the new rules.</p><p><b>Warning:</b> As KMail appears to be frozen "
+"during the scan of the messages for viruses, you may encounter problems with "
+"the responsiveness of KMail because anti-virus tool operations are usually "
+"time consuming; please consider deleting the filter rules created by the "
+"wizard to get back to the former behavior.</p>"
+msgstr ""
+
+#: antispamwizard.cpp:986
+msgid ""
+"<p>Please select the tools to be used for the detection and go to the next "
+"page.</p>"
+msgstr ""
+
+#: antispamwizard.cpp:1014
+msgid "&Mark detected spam messages as read"
+msgstr "पता लगाए गे स्पैम संदेस मन ल पढ़िस गिस चिनहा लगाव (&M)"
+
+#: antispamwizard.cpp:1016
+msgid "Mark messages which have been classified as spam as read."
+msgstr "संदेस जऊन स्पैम के रूप मं वर्गीकृत हेओ मन ल पढ़िस गिस चिनहा लगाव."
+
+#: antispamwizard.cpp:1019
+msgid "Move &known spam to:"
+msgstr ""
+
+#: antispamwizard.cpp:1021
+msgid ""
+"The default folder for spam messages is the trash folder, but you may change "
+"that in the folder view below."
+msgstr ""
+
+#: antispamwizard.cpp:1036
+msgid "Move &probable spam to:"
+msgstr ""
+
+#: antispamwizard.cpp:1038
+msgid ""
+"The default folder is the inbox folder, but you may change that in the "
+"folder view below.<p>Not all tools support a classification as unsure. If "
+"you have not selected a capable tool, you cannot select a folder as well.</p>"
+msgstr ""
+
+#: antispamwizard.cpp:1167
+msgid "Check messages using the anti-virus tools"
+msgstr "एन्टी-वायरस औजार मन के उपयोग से संदेस देखव"
+
+#: antispamwizard.cpp:1169
+msgid ""
+"Let the anti-virus tools check your messages. The wizard will create "
+"appropriate filters. The messages are usually marked by the tools so that "
+"following filters can react on this and, for example, move virus messages to "
+"a special folder."
+msgstr ""
+
+#: antispamwizard.cpp:1175
+msgid "Move detected viral messages to the selected folder"
+msgstr "पता लगाए गे वायरस संदेस मन ल चुने गे फोल्डर मं खिसकाव"
+
+#: antispamwizard.cpp:1177
+msgid ""
+"A filter to detect messages classified as virus-infected and to move those "
+"messages into a predefined folder is created. The default folder is the "
+"trash folder, but you may change that in the folder view."
+msgstr ""
+
+#: antispamwizard.cpp:1183
+msgid "Additionally, mark detected viral messages as read"
+msgstr "एखर अतिरिक्त, पता लगिसए गे वायरस सहित संदेस मन ल पढ़िस गिस चिनहा लगाव"
+
+#: antispamwizard.cpp:1186
+msgid ""
+"Mark messages which have been classified as virus-infected as read, as well "
+"as moving them to the selected folder."
+msgstr ""
 
 #: configuredialog.cpp:150
 msgid ""
@@ -1244,8 +2084,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, mModifyButton)
 #. i18n: file: ui/accountspagereceivingtab.ui:46
 #. i18n: ectx: property (text), widget (KPushButton, mModifyAccountButton)
-#: configuredialog.cpp:2684 simplestringlisteditor.cpp:100 rc.cpp:427
-#: rc.cpp:889
+#: configuredialog.cpp:2684 rc.cpp:427 rc.cpp:889
+#: simplestringlisteditor.cpp:100
 msgid "&Modify..."
 msgstr "सुधारव... (&M)"
 
@@ -1385,81 +2225,6 @@ msgstr "फोल्डर"
 #| msgid "Advanced Options"
 msgid "Invitations"
 msgstr "विस्तृत विकल्प"
-
-#: filterlogdlg.cpp:58
-msgid "Filter Log Viewer"
-msgstr "फिल्टर लाग प्रदर्सक"
-
-#: filterlogdlg.cpp:81
-msgid "&Log filter activities"
-msgstr "लाग छनइया काम (&L)"
-
-#: filterlogdlg.cpp:86
-msgid ""
-"You can turn logging of filter activities on and off here. Of course, log "
-"data is collected and shown only when logging is turned on. "
-msgstr ""
-
-#: filterlogdlg.cpp:90
-msgid "Logging Details"
-msgstr "लागिंग विवरन"
-
-#: filterlogdlg.cpp:97
-msgid "Log pattern description"
-msgstr "लाग पैटर्न विवरन"
-
-#. i18n( "" ) );
-#: filterlogdlg.cpp:107
-msgid "Log filter &rule evaluation"
-msgstr "लाग छनइया नियम मूल्यांकन (&r)"
-
-#: filterlogdlg.cpp:114
-msgid ""
-"You can control the feedback in the log concerning the evaluation of the "
-"filter rules of applied filters: having this option checked will give "
-"detailed feedback for each single filter rule; alternatively, only feedback "
-"about the result of the evaluation of all rules of a single filter will be "
-"given."
-msgstr ""
-
-#: filterlogdlg.cpp:121
-msgid "Log filter pattern evaluation"
-msgstr "लाग छनइया पैटर्न मूल्यांकन"
-
-#. i18n( "" ) );
-#: filterlogdlg.cpp:131
-msgid "Log filter actions"
-msgstr "फिल्टर काम लाग करव"
-
-#: filterlogdlg.cpp:142
-msgid "Log size limit:"
-msgstr "लाग आकार सीमा:"
-
-#: filterlogdlg.cpp:150
-msgctxt "@label:spinbox Set the size of the logfile to unlimited."
-msgid "unlimited"
-msgstr "असीमित"
-
-#: filterlogdlg.cpp:154
-msgid ""
-"Collecting log data uses memory to temporarily store the log data; here you "
-"can limit the maximum amount of memory to be used: if the size of the "
-"collected log data exceeds this limit then the oldest data will be discarded "
-"until the limit is no longer exceeded. "
-msgstr ""
-
-#: filterlogdlg.cpp:265
-#, kde-format
-msgid ""
-"Could not write the file %1:\n"
-"\"%2\" is the detailed error description."
-msgstr ""
-"फाइल %1 मं लिख नइ सकिस.\n"
-"विस्तृत गलती विवरन हे- \"%2\""
-
-#: filterlogdlg.cpp:269 kmmainwidget.cpp:2375 kmmainwidget.cpp:2386
-msgid "KMail Error"
-msgstr "के-मेल गलती"
 
 #: foldershortcutactionmanager.cpp:133 foldershortcutactionmanager.cpp:134
 #, kde-format
@@ -2311,10 +3076,6 @@ msgstr "फाइल भरव... (&I)"
 msgid "&Insert Recent Text File"
 msgstr "हाल ही मं प्रयुक्त फाइल भरव (&I)"
 
-#: kmcomposewin.cpp:1161 kmmainwidget.cpp:2996
-msgid "&Address Book"
-msgstr "पता पुस्तिका (&A)"
-
 #: kmcomposewin.cpp:1164
 msgid "&New Composer"
 msgstr "नवा कम्पोजर (&N)"
@@ -2984,1540 +3745,6 @@ msgid ""
 msgstr ""
 "फिल्टर नाम \"%1\" बदल कर रखव:\n"
 "(अपने अपन नाम दे बर फील्ड ल खाली रहन देव)"
-
-#: kmmainwidget.cpp:413
-#, kde-format
-msgid "1 new message in %2"
-msgid_plural "%1 new messages in %2"
-msgstr[0] "%2 मं १ नवा संदेस"
-msgstr[1] "%2 मं %1 नवा संदेस"
-
-#: kmmainwidget.cpp:430
-#, kde-format
-msgctxt "%1 is a list of the number of new messages per folder"
-msgid "<b>New mail arrived</b><br />%1"
-msgstr "<b>नवा ईमेल आया</b><br />%1"
-
-#: kmmainwidget.cpp:433
-msgid "New mail arrived"
-msgstr "नवा डाक आई"
-
-#: kmmainwidget.cpp:994
-msgid "Set Focus to Quick Search"
-msgstr "तेजी से खोज मं फोकस सेट करव"
-
-#: kmmainwidget.cpp:1001
-msgid "Extend Selection to Previous Message"
-msgstr "पिछले संदेस मं चयन फैलाव"
-
-#: kmmainwidget.cpp:1007
-msgid "Extend Selection to Next Message"
-msgstr "अगले संदेस मं चयन फैलाव"
-
-#: kmmainwidget.cpp:1091
-msgid "Move Message to Folder"
-msgstr "संदेस एखर फोल्डर मं खिसकाव"
-
-#: kmmainwidget.cpp:1098
-msgid "Copy Message to Folder"
-msgstr "संदेस एखर फोल्डर मं नकल करव"
-
-#: kmmainwidget.cpp:1105
-#, fuzzy
-#| msgid "Jump to Folder"
-msgid "Jump to Folder..."
-msgstr "ये फोल्डर मं जाव"
-
-#: kmmainwidget.cpp:1112
-msgid "Abort Current Operation"
-msgstr "अभी हाल के आपरेसन छोड़व"
-
-#: kmmainwidget.cpp:1119
-msgid "Focus on Next Folder"
-msgstr "अगले फोल्डर मं फोकस करव"
-
-#: kmmainwidget.cpp:1126
-msgid "Focus on Previous Folder"
-msgstr "पिछले फोल्डर मं फोकस करव"
-
-#: kmmainwidget.cpp:1133
-msgid "Select Folder with Focus"
-msgstr "फोकस के साथ फोल्डर चुनव"
-
-#: kmmainwidget.cpp:1141
-msgid "Focus on Next Message"
-msgstr "अगले संदेस मं फोकस करव"
-
-#: kmmainwidget.cpp:1148
-msgid "Focus on Previous Message"
-msgstr "पिछले संदेस मं फोकस करव"
-
-#: kmmainwidget.cpp:1155
-msgid "Select Message with Focus"
-msgstr "फोकस के साथ संदेस चुनव"
-
-#: kmmainwidget.cpp:1260
-msgid ""
-"The Nepomuk semantic search service is not available. Searching is not "
-"possible without it. You can enable it in \"System Settings\"."
-msgstr ""
-
-#: kmmainwidget.cpp:1261
-#, fuzzy
-#| msgid "KWallet Not Available"
-msgid "Search Not Available"
-msgstr "केवालेट नइ मिलत"
-
-#: kmmainwidget.cpp:1269
-msgid ""
-"You have disabled full text indexing of emails. Searching is not possible "
-"without that. You can enable it in \"System Settings\". Note that searching "
-"will only be possible after your emails have been fully indexed, which can "
-"take some time."
-msgstr ""
-
-#: kmmainwidget.cpp:1436
-msgid "No Subject"
-msgstr "कोई विसय नइ"
-
-#: kmmainwidget.cpp:1449
-msgid "(no templates)"
-msgstr "(कोई टैम्प्लेट नइ)"
-
-#: kmmainwidget.cpp:1522
-msgid "This folder does not have any expiry options set"
-msgstr "फोल्डर तिर कोनो मियाद-खतम विकल्प सेट नइ हे."
-
-#: kmmainwidget.cpp:1528
-#, kde-format
-msgid "<qt>Are you sure you want to expire the folder <b>%1</b>?</qt>"
-msgstr "<qt>का आप मन सही मं फोल्डर <b>%1</b> के मियाद बीते देना चाहथो </qt>"
-
-#: kmmainwidget.cpp:1530
-msgid "Expire Folder"
-msgstr "बीत गिस फोल्डर"
-
-#: kmmainwidget.cpp:1531
-msgid "&Expire"
-msgstr "मियाद खतम (&E)"
-
-#: kmmainwidget.cpp:1547
-msgid "Empty Trash"
-msgstr "घुरुवा खाली करव"
-
-#: kmmainwidget.cpp:1547
-msgid "Move to Trash"
-msgstr "घुरुवा मं ले जाव"
-
-#: kmmainwidget.cpp:1549
-msgid "Are you sure you want to empty the trash folder?"
-msgstr "का आप मन सही मं घुरुवा के फोल्डर खाली करना चाहथो ?"
-
-#: kmmainwidget.cpp:1550
-#, kde-format
-msgid ""
-"<qt>Are you sure you want to move all messages from folder <b>%1</b> to the "
-"trash?</qt>"
-msgstr ""
-"<qt>का आप मन सही मं फोल्डर <b>%1</b> से सब्बो संदेस मन ल घुरुवा मं खिसकाना चाहते  हे?</"
-"qt>"
-
-#: kmmainwidget.cpp:1572
-msgid "Moved all messages to the trash"
-msgstr "सब्बो संदेस मन ल घुरुवा मं डाला"
-
-#: kmmainwidget.cpp:1614
-msgid "Delete Search"
-msgstr "खोज मेटाव"
-
-#: kmmainwidget.cpp:1615
-#, kde-format
-msgid ""
-"<qt>Are you sure you want to delete the search <b>%1</b>?<br />Any messages "
-"it shows will still be available in their original folder.</qt>"
-msgstr ""
-
-#: kmmainwidget.cpp:1618
-#, fuzzy
-msgctxt "@action:button Delete search"
-msgid "&Delete"
-msgstr "मेटाव (&D)"
-
-#: kmmainwidget.cpp:1620
-msgid "Delete Folder"
-msgstr "फोल्डर मेटाव"
-
-#: kmmainwidget.cpp:1625
-#, kde-format
-msgid "<qt>Are you sure you want to delete the empty folder <b>%1</b>?</qt>"
-msgstr "<qt>का आप मन सही मं खाली फोल्डर<b>%1</b> ल मिटाना चाहथो ?</qt>"
-
-#: kmmainwidget.cpp:1629
-#, kde-format
-msgid ""
-"<qt>Are you sure you want to delete the empty folder <resource>%1</resource> "
-"and all its subfolders? Those subfolders might not be empty and their "
-"contents will be discarded as well. <p><b>Beware</b> that discarded messages "
-"are not saved into your Trash folder and are permanently deleted.</p></qt>"
-msgstr ""
-
-#: kmmainwidget.cpp:1638
-#, kde-format
-msgid ""
-"<qt>Are you sure you want to delete the folder <resource>%1</resource>, "
-"discarding its contents? <p><b>Beware</b> that discarded messages are not "
-"saved into your Trash folder and are permanently deleted.</p></qt>"
-msgstr ""
-
-#: kmmainwidget.cpp:1644
-#, kde-format
-msgid ""
-"<qt>Are you sure you want to delete the folder <resource>%1</resource> and "
-"all its subfolders, discarding their contents? <p><b>Beware</b> that "
-"discarded messages are not saved into your Trash folder and are permanently "
-"deleted.</p></qt>"
-msgstr ""
-
-#: kmmainwidget.cpp:1651
-#, fuzzy
-msgctxt "@action:button Delete folder"
-msgid "&Delete"
-msgstr "मेटाव (&D)"
-
-#: kmmainwidget.cpp:1675
-msgid "Are you sure you want to expire all old messages?"
-msgstr "का आप मन सही मं सब्बो जुन्ना संदेस मन के मियाद खतम करना चाहथो ?"
-
-#: kmmainwidget.cpp:1676
-msgid "Expire Old Messages?"
-msgstr "जुन्ना संदेस मन के मियाद खतम करव?"
-
-#: kmmainwidget.cpp:1676
-msgid "Expire"
-msgstr "हाँ"
-
-#: kmmainwidget.cpp:1692
-msgid ""
-"Use of HTML in mail will make you more vulnerable to \"spam\" and may "
-"increase the likelihood that your system will be compromised by other "
-"present and anticipated security exploits."
-msgstr ""
-
-#: kmmainwidget.cpp:1695 kmmainwidget.cpp:1724
-msgid "Security Warning"
-msgstr "सुरक्छा चेतावनी"
-
-#: kmmainwidget.cpp:1696
-msgid "Use HTML"
-msgstr "एचटीएमएल उपयोग करव"
-
-#: kmmainwidget.cpp:1721
-msgid ""
-"Loading external references in html mail will make you more vulnerable to "
-"\"spam\" and may increase the likelihood that your system will be "
-"compromised by other present and anticipated security exploits."
-msgstr ""
-
-#: kmmainwidget.cpp:1725
-msgid "Load External References"
-msgstr "बाहिरी संदर्भ मन ल लोड करव"
-
-#: kmmainwidget.cpp:1810
-#, kde-format
-msgid ""
-"<qt>Do you really want to delete the selected message?<br />Once deleted, it "
-"cannot be restored.</qt>"
-msgid_plural ""
-"<qt>Do you really want to delete the %1 selected messages?<br />Once "
-"deleted, they cannot be restored.</qt>"
-msgstr[0] ""
-"<qt>का आप मन सचमुच चुने गे संदेस ल मिटाना चाहथो ?<br />एक बार मेटाव के बाद, एला फिर "
-"से वापस लाया नइ जा सके.</qt>"
-msgstr[1] ""
-"<qt>का आप मन सचमुच चुने गे %1 संदेस मन ल मिटाना चाहथो ?<br />एक बार मेटाव के बाद, ए "
-"मन ल फिर से वापस लाया नइ जा सके.</qt>"
-
-#: kmmainwidget.cpp:1816
-msgid "Delete Messages"
-msgstr "संदेस मेटाव"
-
-#: kmmainwidget.cpp:1816
-msgid "Delete Message"
-msgstr "संदेस मेटाव"
-
-#: kmmainwidget.cpp:1837
-msgid "Moving messages..."
-msgstr "संदेस खिसकावत हे..."
-
-#: kmmainwidget.cpp:1839
-msgid "Deleting messages..."
-msgstr "संदेस मिटात हे..."
-
-#: kmmainwidget.cpp:1853
-msgid "Messages deleted successfully."
-msgstr "संदेस ल सफलतापूर्वक मेटाइस..."
-
-#: kmmainwidget.cpp:1855
-msgid "Messages moved successfully."
-msgstr "संदेस मन ल सफलतापूर्वक खिसकाइस."
-
-#: kmmainwidget.cpp:1860
-msgid "Deleting messages failed."
-msgstr "संदेस मिटाना फेल."
-
-#: kmmainwidget.cpp:1862
-msgid "Deleting messages canceled."
-msgstr "संदेस मिटाना खारिज."
-
-#: kmmainwidget.cpp:1865
-msgid "Moving messages failed."
-msgstr "संदेस खिसकाना फेल."
-
-#: kmmainwidget.cpp:1867
-msgid "Moving messages canceled."
-msgstr "संदेस खिसकाना खारिज."
-
-#: kmmainwidget.cpp:1913
-msgid "Move Messages to Folder"
-msgstr "संदेस मन ल फोल्डर मं खिसकाव"
-
-#: kmmainwidget.cpp:1943
-msgid "Copying messages..."
-msgstr "संदेस नकल करत हे..."
-
-#: kmmainwidget.cpp:1952
-msgid "Messages copied successfully."
-msgstr "संदेस मन ल सफलतापूर्वक खिसकाइस."
-
-#: kmmainwidget.cpp:1955
-msgid "Copying messages failed."
-msgstr "संदेस नकल करना फेल."
-
-#: kmmainwidget.cpp:1957
-msgid "Copying messages canceled."
-msgstr "संदेस नकल करना खारिज."
-
-#: kmmainwidget.cpp:1964
-msgid "Copy Messages to Folder"
-msgstr "संदेस ल फोल्डर मं नकल करव"
-
-#: kmmainwidget.cpp:1999
-msgid "Moving messages to trash..."
-msgstr "संदेस घुरुवा मं ले जाव..."
-
-#: kmmainwidget.cpp:2009
-msgid "Messages moved to trash successfully."
-msgstr "संदेस मन ल घुरुवा मं सफलतापूर्वक भेजिस."
-
-#: kmmainwidget.cpp:2012
-msgid "Moving messages to trash failed."
-msgstr "संदेस घुरुवा मं ले जाना फेल."
-
-#: kmmainwidget.cpp:2014
-msgid "Moving messages to trash canceled."
-msgstr "संदेस घुरुवा मं खिसकाना खारिज."
-
-#: kmmainwidget.cpp:2246
-msgid "Filter on Mailing-List..."
-msgstr "डाक-सूची मं फिल्टर..."
-
-#: kmmainwidget.cpp:2260
-#, kde-format
-msgid "Filter on Mailing-List %1..."
-msgstr "डाक-सूची %1 मं फिल्टर..."
-
-#: kmmainwidget.cpp:2277
-msgid "Jump to Folder"
-msgstr "ये फोल्डर मं जाव"
-
-#: kmmainwidget.cpp:2345
-msgid ""
-"KMail's Out of Office Reply functionality relies on server-side filtering. "
-"You have not yet configured an IMAP server for this.\n"
-"You can do this on the \"Filtering\" tab of the IMAP account configuration."
-msgstr ""
-
-#: kmmainwidget.cpp:2350
-msgid "No Server-Side Filtering Configured"
-msgstr "सर्वर-साइड फिल्टरिंग कान्फिगर नइ"
-
-#: kmmainwidget.cpp:2373
-msgid "Could not start certificate manager; please check your installation."
-msgstr "प्रमानपत्र प्रबंधक चालू नइ कर सकिस. किरपा करके, अपन इंस्टालेसन जांचव."
-
-#: kmmainwidget.cpp:2384
-msgid ""
-"Could not start GnuPG LogViewer (kwatchgnupg); please check your "
-"installation."
-msgstr ""
-"ग्नूपीजी लाग-प्रदर्सक (के-वाच-ग्नूपीजी) चालू नइ कर सकिस; किरपा करके, अपन इंस्टालेसन जांचव."
-
-#: kmmainwidget.cpp:2456 kmkernel.cpp:1001
-msgid "Work Offline"
-msgstr "आफलाइन काम करव"
-
-#: kmmainwidget.cpp:2460 kmkernel.cpp:1000
-msgid "Work Online"
-msgstr "आनलाइन काम करव"
-
-#: kmmainwidget.cpp:2471
-#, fuzzy
-#| msgid "KMail is set to be online; all network jobs resumed"
-msgid "Network connection detected, all network jobs resumed"
-msgstr "केमेल ल आनलाइन के रूप मं सेट कर दे गे हे, सब्बो नेटवर्क काम फिर से चालू हे"
-
-#: kmmainwidget.cpp:2475
-#, fuzzy
-#| msgid "KMail is set to be offline; all network jobs are suspended"
-msgid "No network connection detected, all network jobs are suspended"
-msgstr "केमेल ल आफलाइन के रूप मं सेट कर दे गे हे, सब्बो नेटवर्क काम निलंबित हे"
-
-#: kmmainwidget.cpp:2944
-msgid "Save &As..."
-msgstr "अइसन सहेजव (&A)"
-
-#: kmmainwidget.cpp:2953
-msgid "&Expire All Folders"
-msgstr "सब्बो फोल्डर के मियाद खतम करव (&E)"
-
-#: kmmainwidget.cpp:2958
-msgid "Check &Mail"
-msgstr "डाक देखव (&M)"
-
-#: kmmainwidget.cpp:2964
-#, fuzzy
-#| msgid "Check &Mail"
-msgid "Check Mail In"
-msgstr "डाक देखव (&M)"
-
-#: kmmainwidget.cpp:2965 kmmainwidget.cpp:2966
-#, fuzzy
-#| msgid "Check &Mail"
-msgid "Check Mail"
-msgstr "डाक देखव (&M)"
-
-#: kmmainwidget.cpp:2976
-msgid "&Send Queued Messages"
-msgstr "कतारबद्ध संदेस भेजव (&S)"
-
-#: kmmainwidget.cpp:2981
-#, fuzzy
-msgid "Online status (unknown)"
-msgstr "आनलाइन स्थिति (अग्यात)"
-
-#: kmmainwidget.cpp:2986
-msgid "Send Queued Messages Via"
-msgstr "कतार मं लगे संदेस मन ल इहां से भेजव"
-
-#: kmmainwidget.cpp:3004
-msgid "Certificate Manager"
-msgstr "प्रमानपत्र प्रबंधक."
-
-#: kmmainwidget.cpp:3011
-msgid "GnuPG Log Viewer"
-msgstr "ग्नूपीजी लाग प्रदर्सक"
-
-#: kmmainwidget.cpp:3023
-msgid "&Import Messages"
-msgstr "संदेस आयात करव (&I)"
-
-#: kmmainwidget.cpp:3031
-msgid "&Debug Sieve..."
-msgstr "डिबग सीव... (&D)"
-
-#: kmmainwidget.cpp:3038
-msgid "Filter &Log Viewer..."
-msgstr "लाग प्रदर्सक छनइया करव... (&L)"
-
-#: kmmainwidget.cpp:3043
-msgid "&Anti-Spam Wizard..."
-msgstr "एन्टी स्पैम विजार्ड... (&A)"
-
-#: kmmainwidget.cpp:3048
-msgid "&Anti-Virus Wizard..."
-msgstr "एन्टी-वायरस विजार्ड... (&A)"
-
-#: kmmainwidget.cpp:3053
-msgid "&Account Wizard..."
-msgstr "खाता विजार्ड... (&A)"
-
-#: kmmainwidget.cpp:3059
-msgid "Edit \"Out of Office\" Replies..."
-msgstr "का संपादन करव \"आफिस से बाहिर\" जवाबों को..."
-
-#: kmmainwidget.cpp:3074 kmmainwidget.cpp:3901
-#, fuzzy
-msgctxt "@action Hard delete, bypassing trash"
-msgid "&Delete"
-msgstr "मेटाव (&D)"
-
-#: kmmainwidget.cpp:3079 kmmainwidget.cpp:3903
-msgid "M&ove Thread to Trash"
-msgstr "लड़ी घुरुवा मं ले जाव (&o)"
-
-#: kmmainwidget.cpp:3083
-msgid "Move thread to trashcan"
-msgstr "लड़ी घुरुवा मं ले जाव"
-
-#: kmmainwidget.cpp:3086 kmmainwidget.cpp:3903
-msgid "Delete T&hread"
-msgstr "संकली मेटाव (&h)"
-
-#: kmmainwidget.cpp:3092
-msgid "&Find Messages..."
-msgstr "संदेस खोजव... (&F)"
-
-#: kmmainwidget.cpp:3098 kmreaderwin.cpp:191
-msgid "&Find in Message..."
-msgstr "संदेस मं खोजव... (&F)"
-
-#: kmmainwidget.cpp:3104
-msgid "Select &All Messages"
-msgstr "सब्बो संदेस चुनव (&A)"
-
-#: kmmainwidget.cpp:3112
-msgid "&Mailing List Management..."
-msgstr "डाक पता सूची प्रबंधन... (&M)"
-
-#: kmmainwidget.cpp:3117
-msgid "&Assign Shortcut..."
-msgstr "सार्टकट आबंटित करव... (&A)"
-
-#: kmmainwidget.cpp:3134
-msgid "&Expiration Settings"
-msgstr "मियाद बीते के सेटिंग (&E)"
-
-#: kmmainwidget.cpp:3152
-#, fuzzy
-#| msgid "&New Folder..."
-msgid "&Archive Folder..."
-msgstr "नवा फोल्डर...(&N)"
-
-#: kmmainwidget.cpp:3156
-msgid "Prefer &HTML to Plain Text"
-msgstr "एचटीएमएल के बदला मा सादा पाठ ल प्राथमिकता देव (&H)"
-
-#: kmmainwidget.cpp:3160
-msgid "Load E&xternal References"
-msgstr "बाहिरी संदर्भ मन ल लोड करव (&x)"
-
-#: kmmainwidget.cpp:3183
-#, fuzzy
-#| msgid "New Message To..."
-msgid "Copy Message To..."
-msgstr "को नवा संदेस..."
-
-#: kmmainwidget.cpp:3185
-#, fuzzy
-#| msgid "New Message To..."
-msgid "Move Message To..."
-msgstr "को नवा संदेस..."
-
-#: kmmainwidget.cpp:3190
-msgid "&New Message..."
-msgstr "नवा संदेस... (&N)"
-
-#: kmmainwidget.cpp:3192
-msgctxt "@action:intoolbar New Empty Message"
-msgid "New"
-msgstr "नवा"
-
-#: kmmainwidget.cpp:3200
-msgid "Message From &Template"
-msgstr "टेम्पलेट से संदेस (&T)"
-
-#: kmmainwidget.cpp:3210
-msgid "New Message t&o Mailing-List..."
-msgstr "डाक-सूची मं नवा संदेस... (&o)"
-
-#: kmmainwidget.cpp:3217
-msgid "Send A&gain..."
-msgstr "फिर भेजव... (&g)"
-
-#: kmmainwidget.cpp:3222
-msgid "&Create Filter"
-msgstr "फिल्टर बनाव (&C)"
-
-#: kmmainwidget.cpp:3226
-msgid "Filter on &Subject..."
-msgstr "विसय मं फिल्टर... (&S)"
-
-#: kmmainwidget.cpp:3231
-msgid "Filter on &From..."
-msgstr "से छनइया ओन... (&F)"
-
-#: kmmainwidget.cpp:3236
-msgid "Filter on &To..."
-msgstr "को छनइया ओन... (&T)"
-
-#: kmmainwidget.cpp:3241
-msgid "Filter on Mailing-&List..."
-msgstr "डाक-सूची मं फिल्टर... (&L)"
-
-#: kmmainwidget.cpp:3246
-msgid "New Message From &Template"
-msgstr "टैम्प्लेट से एक नवा संदेस (&T)"
-
-#: kmmainwidget.cpp:3252
-msgid "Mark &Thread"
-msgstr "मार्क थ्रेड (&T)"
-
-#: kmmainwidget.cpp:3255
-msgid "Mark Thread as &Read"
-msgstr "लड़ी ल पढ़िस चिनहा लगाव (&R)"
-
-#: kmmainwidget.cpp:3258
-msgid "Mark all messages in the selected thread as read"
-msgstr "चुनी गे लड़ी के सब्बो संदेस मन ल पढ़िस चिनहा लगाव"
-
-#: kmmainwidget.cpp:3261
-msgid "Mark Thread as &Unread"
-msgstr "लड़ी बिन पढ़िस चिनहा लगाव (&U)"
-
-#: kmmainwidget.cpp:3264
-msgid "Mark all messages in the selected thread as unread"
-msgstr "चुनी गे लड़ी के सब्बो संदेस मन ल बिन पढ़िस चिनहा लगाव"
-
-#: kmmainwidget.cpp:3270
-msgid "Mark Thread as &Important"
-msgstr "लड़ी ल महत्वपूर्न कहिके चिनहा लगाव (&I)"
-
-#: kmmainwidget.cpp:3273
-msgid "Remove &Important Thread Mark"
-msgstr ""
-
-#: kmmainwidget.cpp:3276
-msgid "Mark Thread as &Action Item"
-msgstr "लड़ी ल काम चीज के रूप मं चिनहा लगाव (&A)"
-
-#: kmmainwidget.cpp:3279
-msgid "Remove &Action Item Thread Mark"
-msgstr ""
-
-#: kmmainwidget.cpp:3283
-msgid "&Watch Thread"
-msgstr "लड़ी देखव (&W)"
-
-#: kmmainwidget.cpp:3287
-msgid "&Ignore Thread"
-msgstr "लड़ी देखव-मत (&I)"
-
-#: kmmainwidget.cpp:3295 kmreadermainwin.cpp:301
-msgid "Save A&ttachments..."
-msgstr "संलग्नक सहेजव... (&t)"
-
-#: kmmainwidget.cpp:3304
-msgid "Appl&y All Filters"
-msgstr "सब्बो फिल्टर लगाव (&y)"
-
-#. i18n: file: kmmainwin.rc:163
-#. i18n: ectx: Menu (apply_filter_actions)
-#. i18n: file: kmail_part.rc:163
-#. i18n: ectx: Menu (apply_filter_actions)
-#: kmmainwidget.cpp:3310 rc.cpp:35 rc.cpp:376
-msgid "A&pply Filter"
-msgstr "फिल्टर लगाव (&p)"
-
-#: kmmainwidget.cpp:3314
-#, fuzzy
-#| msgctxt "View->"
-#| msgid "&Expand Thread"
-msgctxt "View->"
-msgid "&Expand Thread / Group"
-msgstr "लड़ी फैलाव (&E)"
-
-#: kmmainwidget.cpp:3317
-#, fuzzy
-#| msgid "Expand the current thread"
-msgid "Expand the current thread or group"
-msgstr "अभी हाल के लड़ी फैलाव"
-
-#: kmmainwidget.cpp:3321
-#, fuzzy
-#| msgctxt "View->"
-#| msgid "&Collapse Thread"
-msgctxt "View->"
-msgid "&Collapse Thread / Group"
-msgstr "लड़ी समेटव (&C)"
-
-#: kmmainwidget.cpp:3324
-#, fuzzy
-#| msgid "Collapse the current thread"
-msgid "Collapse the current thread or group"
-msgstr "अभी हाल के लड़ी समेटव"
-
-#: kmmainwidget.cpp:3328
-msgctxt "View->"
-msgid "Ex&pand All Threads"
-msgstr "सब्बो लड़ी फैलाव (&p)"
-
-#: kmmainwidget.cpp:3331
-msgid "Expand all threads in the current folder"
-msgstr "अभी हाल के फोल्डर मं सब्बो लड़ी फैलाव"
-
-#: kmmainwidget.cpp:3335
-msgctxt "View->"
-msgid "C&ollapse All Threads"
-msgstr "सब्बो लड़ियाँ समेटव (&o)"
-
-#: kmmainwidget.cpp:3338
-msgid "Collapse all threads in the current folder"
-msgstr "चुनव"
-
-#: kmmainwidget.cpp:3343 kmreadermainwin.cpp:317
-msgid "&View Source"
-msgstr "स्रोत देखव (&V)"
-
-#: kmmainwidget.cpp:3348
-msgid "&Display Message"
-msgstr "संदेस देखाव (&D)"
-
-#: kmmainwidget.cpp:3357
-msgid "&Next Message"
-msgstr "अगला संदेस (&N)"
-
-#: kmmainwidget.cpp:3360
-msgid "Go to the next message"
-msgstr "अगले संदेस मं जाव"
-
-#: kmmainwidget.cpp:3364
-msgid "Next &Unread Message"
-msgstr "अगला बिनपढ़ा संदेस (&U)"
-
-#: kmmainwidget.cpp:3372
-msgctxt "@action:inmenu Goto next unread message"
-msgid "Next"
-msgstr "अगला"
-
-#: kmmainwidget.cpp:3373
-msgid "Go to the next unread message"
-msgstr "अगले बिना-पढ़े संदेस मं जाव"
-
-#: kmmainwidget.cpp:3377
-msgid "&Previous Message"
-msgstr "पिछला संदेस (&P)"
-
-#: kmmainwidget.cpp:3379
-msgid "Go to the previous message"
-msgstr "पिछले संदेस मं जाव"
-
-#: kmmainwidget.cpp:3384
-msgid "Previous Unread &Message"
-msgstr "पिछला बिनपढ़ा संदेस (&M)"
-
-#: kmmainwidget.cpp:3392
-msgctxt "@action:inmenu Goto previous unread message."
-msgid "Previous"
-msgstr "पिछला"
-
-#: kmmainwidget.cpp:3393
-msgid "Go to the previous unread message"
-msgstr "पिछले बिना-पढ़े संदेस मं जाव"
-
-#: kmmainwidget.cpp:3397
-msgid "Next Unread &Folder"
-msgstr "अगला बिनपढ़ा फोल्डर (&F)"
-
-#: kmmainwidget.cpp:3401
-msgid "Go to the next folder with unread messages"
-msgstr "बिना-पढ़े संदेस सहित अगले फोल्डर मं जाव"
-
-#: kmmainwidget.cpp:3407
-msgid "Previous Unread F&older"
-msgstr "पिछला बिनपढ़ा फोल्डर (&o)"
-
-#: kmmainwidget.cpp:3410
-msgid "Go to the previous folder with unread messages"
-msgstr "पिछले फोल्डर मं बिना-पढ़े संदेस मन मं जाव"
-
-#: kmmainwidget.cpp:3417
-msgctxt "Go->"
-msgid "Next Unread &Text"
-msgstr "अगला बिना-पढ़ा पाठ (&T)"
-
-#: kmmainwidget.cpp:3420
-msgid "Go to the next unread text"
-msgstr "अगले बिना-पढ़े पाठ मं जाव"
-
-#: kmmainwidget.cpp:3421
-msgid ""
-"Scroll down current message. If at end of current message, go to next unread "
-"message."
-msgstr ""
-
-#: kmmainwidget.cpp:3429
-msgid "Configure &Filters..."
-msgstr "फिल्टर कान्फिगर करव... (&F)"
-
-#: kmmainwidget.cpp:3435
-msgid "Manage &Sieve Scripts..."
-msgstr "सीव स्क्रिप्ट्स प्रबंधित करव... (&S)"
-
-#: kmmainwidget.cpp:3440
-msgid "KMail &Introduction"
-msgstr "के-मेल परिचय (&I)"
-
-#: kmmainwidget.cpp:3442
-msgid "Display KMail's Welcome Page"
-msgstr "के-मेल के स्वागत पेज देखाव"
-
-#: kmmainwidget.cpp:3451
-msgid "Configure &Notifications..."
-msgstr "सूचना मन ल कान्फिगर करव.... (&N)"
-
-#: kmmainwidget.cpp:3458
-msgid "&Configure KMail..."
-msgstr "के-मेल कान्फिगर करव... (&C)"
-
-#: kmmainwidget.cpp:3464
-msgid "Expire..."
-msgstr "मियाद खतम..."
-
-#: kmmainwidget.cpp:3470
-msgid "Add Favorite Folder..."
-msgstr "निसानी फोल्डर जोड़व..."
-
-#: kmmainwidget.cpp:3499
-msgid "Add Favorite Folder"
-msgstr "निसानी फोल्डर जोड़व"
-
-#: kmmainwidget.cpp:3823
-msgid "E&mpty Trash"
-msgstr "घुरुवा खाली करव (&m)"
-
-#: kmmainwidget.cpp:3823
-msgid "&Move All Messages to Trash"
-msgstr "सब्बो संदेस घुरुवा मं डालव (&M)"
-
-#: kmmainwidget.cpp:3896
-msgid "&Delete Search"
-msgstr "खोज मेटाव (&D)"
-
-#: kmmainwidget.cpp:3896
-msgid "&Delete Folder"
-msgstr "फोल्डर मेटाव (&D)"
-
-#: kmmainwidget.cpp:3901 kmreadermainwin.cpp:304
-msgid "&Move to Trash"
-msgstr "घुरुवा मं डालव (&M)"
-
-#: kmmainwidget.cpp:4022
-#, kde-format
-msgid "Filter %1"
-msgstr "फिल्टर %1"
-
-#: kmmainwidget.cpp:4203
-msgid "Out of office reply active"
-msgstr ""
-
-#: kmmainwidget.cpp:4323
-#, fuzzy, kde-format
-#| msgid "Properties of Folder %1"
-msgctxt "@title:window"
-msgid "Properties of Folder %1"
-msgstr "फोल्डर %1 के विसेसता"
-
-#: kmkernel.cpp:264
-msgid ""
-"<b>Thanks for using KMail2!</b><p>KMail2 uses a new storage technology that "
-"requires migration of your current KMail data and configuration.</p>\n"
-"<p>The conversion process can take a lot of time (depending on the amount of "
-"email you have) and it <em>must not be interrupted</em>.</p>\n"
-"<p>You can:</p><ul><li>Migrate now (be prepared to wait)</li><li>Skip the "
-"migration and start with fresh data and configuration</li><li>Cancel and "
-"exit KMail2.</li></ul><p><a href=\"http://userbase.kde.org/Akonadi\">More "
-"Information...</a></p>"
-msgstr ""
-
-#: kmkernel.cpp:273
-#, fuzzy
-#| msgid "KMail Question"
-msgid "KMail Migration"
-msgstr "के-मेल प्रस्न"
-
-#: kmkernel.cpp:273
-msgid "Migrate Now"
-msgstr ""
-
-#: kmkernel.cpp:273
-msgid "Skip Migration"
-msgstr ""
-
-#: kmkernel.cpp:306
-msgid ""
-"Migration to KMail 2 failed. In case you want to try again, run 'kmail-"
-"migrator --interactive' manually."
-msgstr ""
-
-#: kmkernel.cpp:307
-#, fuzzy
-#| msgid "Migrate Mail Files?"
-msgid "Migration Failed"
-msgstr "ईमेल फाइल मन ल माइग्रेट करव?"
-
-#: kmkernel.cpp:918
-msgid "KMail is set to be offline; all network jobs are suspended"
-msgstr "केमेल ल आफलाइन के रूप मं सेट कर दे गे हे, सब्बो नेटवर्क काम निलंबित हे"
-
-#: kmkernel.cpp:944
-msgid "KMail is set to be online; all network jobs resumed"
-msgstr "केमेल ल आनलाइन के रूप मं सेट कर दे गे हे, सब्बो नेटवर्क काम फिर से चालू हे"
-
-#: kmkernel.cpp:947
-#, fuzzy
-#| msgid "KMail is set to be online; all network jobs resumed"
-msgid ""
-"KMail is set to be online; all network jobs will resume when a network "
-"connection is detected"
-msgstr "केमेल ल आनलाइन के रूप मं सेट कर दे गे हे, सब्बो नेटवर्क काम फिर से चालू हे"
-
-#: kmkernel.cpp:997
-msgid "KMail is currently in offline mode. How do you want to proceed?"
-msgstr "केमेल अभी आफलाइन मोड मं हे. आप मन कऊन जइसन आगू बढ़ना चाहथो ?"
-
-#: kmkernel.cpp:1099
-#, kde-format
-msgid ""
-"Failed to open autosave file at %1.\n"
-"Reason: %2"
-msgstr ""
-
-#: kmkernel.cpp:1101
-#, fuzzy
-#| msgid "Autosaving Failed"
-msgid "Opening Autosave File Failed"
-msgstr "अपने अपन सहेजना फेल"
-
-#: kmkernel.cpp:1601
-#, kde-format
-msgid "This identity has been changed to use the default transport:"
-msgid_plural ""
-"These %1 identities have been changed to use the default transport:"
-msgstr[0] "डिफाल्ट ट्रांसपोर्ट के परयोग करे बर एखर पहिचान ल बदल दे गे हे:"
-msgstr[1] "डिफाल्ट ट्रांसपोर्ट के परयोग करे बर ए %1 पहिचानों ल बदल दे गे हे:"
-
-#: kmkernel.cpp:1624
-#, kde-format
-msgid "This identity has been changed to use the modified transport:"
-msgid_plural ""
-"These %1 identities have been changed to use the modified transport:"
-msgstr[0] "परिवर्धित ट्रांसपोर्ट के परयोग करे बर एखर पहिचान ल बदल दे गे हे:"
-msgstr[1] "परिवर्धित ट्रांसपोर्ट के परयोग करे बर ए %1 पहिचानों ल बदल दे गे हे:"
-
-#: kmkernel.cpp:1638
-msgid "Sending messages"
-msgstr "संदेस मन ल भेजिस जात हे"
-
-#: kmkernel.cpp:1639
-#, fuzzy
-#| msgid "Initiating sender process..."
-msgid "Initiating sending process..."
-msgstr "भेजने के काम चालू करत हे..."
-
-#: kmkernel.cpp:1690
-#, fuzzy
-msgid "online"
-msgstr "इनलाइन (&I)"
-
-#: kmkernel.cpp:1690
-#, fuzzy
-#| msgid "Work Offline"
-msgid "offline"
-msgstr "आफलाइन काम करव"
-
-#: kmkernel.cpp:1690
-#, kde-format
-msgid "Resource %1 is broken. This resource is now %2"
-msgstr ""
-
-#: kmreadermainwin.cpp:305
-#, fuzzy
-msgctxt "@action:intoolbar Move to Trash"
-msgid "Trash"
-msgstr "घुरुवा"
-
-#: kmreadermainwin.cpp:306
-msgid "Move message to trashcan"
-msgstr "संदेस घुरुवा मं ले जाव"
-
-#: kmreadermainwin.cpp:324
-msgid "Select Font"
-msgstr "फोंट चुनव"
-
-#: kmreadermainwin.cpp:329
-msgid "Select Size"
-msgstr "चुने गे आकार"
-
-#: kmreaderwin.cpp:147
-msgid "New Message To..."
-msgstr "को नवा संदेस..."
-
-#: kmreaderwin.cpp:154
-msgid "Reply To..."
-msgstr "को जवाब भेजव:"
-
-#: kmreaderwin.cpp:161
-msgid "Forward To..."
-msgstr "को आगू भेजव..."
-
-#: kmreaderwin.cpp:168
-msgid "Add to Address Book"
-msgstr "पता पुस्तिका मं जोड़व"
-
-#: kmreaderwin.cpp:175
-msgid "Open in Address Book"
-msgstr "पता पुस्तिका मं खोलव"
-
-#: kmreaderwin.cpp:180
-msgid "Bookmark This Link"
-msgstr "ये संकली ल निसानी मं रखव"
-
-#: kmreaderwin.cpp:186
-msgid "Save Link As..."
-msgstr "संकली अइसन सहेजव..."
-
-#: kmreaderwin.cpp:242
-msgid ""
-"KMail is now based on the Akonadi Personal Information Management framework, "
-"which brings many changes all around."
-msgstr ""
-
-#: kmreaderwin.cpp:253
-msgid "Push email (IMAP IDLE)"
-msgstr ""
-
-#: kmreaderwin.cpp:254
-#, fuzzy
-#| msgid "Removing folder"
-msgid "Improved virtual folders"
-msgstr "फोल्डर मिटात हे"
-
-#: kmreaderwin.cpp:255
-msgid "Improved searches"
-msgstr ""
-
-#: kmreaderwin.cpp:256
-msgid "Support for adding notes (annotations) to mails"
-msgstr ""
-
-#: kmreaderwin.cpp:257
-#, fuzzy
-msgid "Tag folders"
-msgstr "घुरुवा के फोल्डरः (&T)"
-
-#: kmreaderwin.cpp:258
-msgid "Less GUI freezes, mail checks happen in the background"
-msgstr ""
-
-#: kmreaderwin.cpp:286
-msgid ""
-"<h2 style='margin-top: 0px;'>Retrieving Folder Contents</h2><p>Please "
-"wait . . .</p>&nbsp;"
-msgstr ""
-
-#: kmreaderwin.cpp:294
-msgid ""
-"<h2 style='margin-top: 0px;'>Offline</h2><p>KMail is currently in offline "
-"mode. Click <a href=\"kmail:goOnline\">here</a> to go online . . .</p>&nbsp;"
-msgstr ""
-
-#: kmreaderwin.cpp:310
-#, kde-format
-msgctxt ""
-"%1: KMail version; %2: help:// URL; %3: generated list of new features; %4: "
-"First-time user text (only shown on first start); %5: generated list of "
-"important changes; --- end of comment ---"
-msgid ""
-"<h2 style='margin-top: 0px;'>Welcome to KMail %1</h2><p>KMail is the email "
-"client by KDE.It is designed to be fully compatible with Internet mailing "
-"standards including MIME, SMTP, POP3, and IMAP.</p>\n"
-"<ul><li>KMail has many powerful features which are described in the <a href="
-"\"%2\">documentation</a></li>\n"
-"%5\n"
-"%3\n"
-"%4\n"
-"<p>We hope that you will enjoy KMail.</p>\n"
-"<p>Thank you,</p>\n"
-"<p style='margin-bottom: 0px'>&nbsp; &nbsp; The KMail Team</p>"
-msgstr ""
-
-#: kmreaderwin.cpp:327
-#, kde-format
-msgid ""
-"<p>Some of the new features in this release of KMail include (compared to "
-"KMail %1, which is part of KDE Software Compilation %2):</p>\n"
-msgstr ""
-
-#: kmreaderwin.cpp:340
-msgid ""
-"<p>Please take a moment to fill in the KMail configuration panel at Settings-"
-"&gt;Configure KMail.\n"
-"You need to create at least a default identity and an incoming as well as "
-"outgoing mail account.</p>\n"
-msgstr ""
-
-#: kmreaderwin.cpp:352
-#, kde-format
-msgid ""
-"<p><span style='font-size:125%; font-weight:bold;'>Important changes</span> "
-"(compared to KMail %1):</p>\n"
-msgstr ""
-
-#: kmreaderwin.cpp:357
-#, kde-format
-msgid "<li>%1</li>\n"
-msgstr "<li>%1</li>\n"
-
-#: kmstartup.cpp:157
-#, kde-format
-msgid ""
-"%1 already seems to be running on another display on this machine. Running "
-"%2 more than once can cause the loss of mail. You should not start %1 unless "
-"you are sure that it is not already running."
-msgstr ""
-
-#: kmstartup.cpp:167
-#, kde-format
-msgid ""
-"%1 seems to be running on another display on this machine. Running %1 and %2 "
-"at the same time can cause the loss of mail. You should not start %2 unless "
-"you are sure that %1 is not running."
-msgstr ""
-
-#: kmstartup.cpp:175
-#, kde-format
-msgid ""
-"%1 already seems to be running on %2. Running %1 more than once can cause "
-"the loss of mail. You should not start %1 on this computer unless you are "
-"sure that it is not already running on %2."
-msgstr ""
-
-#: kmstartup.cpp:181
-#, kde-format
-msgid ""
-"%1 seems to be running on %3. Running %1 and %2 at the same time can cause "
-"the loss of mail. You should not start %2 on this computer unless you are "
-"sure that %1 is not running on %3."
-msgstr ""
-
-#: kmstartup.cpp:191
-#, kde-format
-msgctxt "Start kmail even when another instance is running."
-msgid "Start %1"
-msgstr "सुरू %1"
-
-#: kmstartup.cpp:192
-msgctxt "Do not start another kmail instance."
-msgid "Exit"
-msgstr "बाहिर"
-
-#: kmsystemtray.cpp:279
-msgid "New Messages In"
-msgstr "में नवा संदेस"
-
-#: kmsystemtray.cpp:379
-#, fuzzy
-#| msgid "KMail - There are no unread messages"
-msgid "There are no unread messages"
-msgstr "केमेल - ओ तिर कोनो बिनपढ़े संदेस नइ हे"
-
-#: kmsystemtray.cpp:380
-#, fuzzy, kde-format
-msgid "1 unread message"
-msgid_plural "%1 unread messages"
-msgstr[0] "बिनपढ़े संदेस"
-msgstr[1] "बिनपढ़े संदेस"
-
-#: mailinglistpropertiesdialog.cpp:55
-msgid "Mailinglist Folder Properties"
-msgstr "डाकपतासूची फोल्डर गुन"
-
-#: mailinglistpropertiesdialog.cpp:69
-msgid "Associated Mailing List"
-msgstr "सम्बद्ध मेलिंग सूची"
-
-#: mailinglistpropertiesdialog.cpp:78
-msgid "&Folder holds a mailing list"
-msgstr "फोल्डर मं एक मेलिंग सूची हे (&F)"
-
-#: mailinglistpropertiesdialog.cpp:85
-msgid "Detect Automatically"
-msgstr "अपने अपन पता लगिस"
-
-#: mailinglistpropertiesdialog.cpp:93
-msgid "Mailing list description:"
-msgstr "डाकपता सूची वर्नन"
-
-#: mailinglistpropertiesdialog.cpp:104
-msgid "Preferred handler:"
-msgstr "निसानी हेन्डलर:"
-
-#: mailinglistpropertiesdialog.cpp:111
-msgid "Browser"
-msgstr "ब्राउज़र"
-
-#: mailinglistpropertiesdialog.cpp:118
-msgid "&Address type:"
-msgstr "पता किसिम: (&A)"
-
-#: mailinglistpropertiesdialog.cpp:131
-msgid "Invoke Handler"
-msgstr " हेंडलर खारिज करव"
-
-#: mailinglistpropertiesdialog.cpp:150
-msgid "Post to List"
-msgstr "सूची मं पोस्ट करव"
-
-#: mailinglistpropertiesdialog.cpp:151 messageactions.cpp:359
-msgid "Subscribe to List"
-msgstr "सूची मं सब्सक्राइब करव"
-
-#: mailinglistpropertiesdialog.cpp:152
-msgid "Unsubscribe From List"
-msgstr "सूची से अनसब्सक्राइब करव"
-
-#: mailinglistpropertiesdialog.cpp:153
-msgid "List Archives"
-msgstr "अभिलेखों के सूची"
-
-#: mailinglistpropertiesdialog.cpp:154
-msgid "List Help"
-msgstr "मदद सूची"
-
-#: mailinglistpropertiesdialog.cpp:173
-msgid "Not available"
-msgstr "नइ मिलत"
-
-#: mailinglistpropertiesdialog.cpp:231 mailinglistpropertiesdialog.cpp:264
-msgid "Not available."
-msgstr "नइ मिलत"
-
-#: mailinglistpropertiesdialog.cpp:261
-msgid ""
-"KMail was unable to detect a mailing list in this folder. Please fill the "
-"addresses by hand."
-msgstr ""
-
-#: undostack.cpp:100
-msgid "There is nothing to undo."
-msgstr "वापस करे बर कुछ घलोक नइ हे."
-
-#: undostack.cpp:107
-#, fuzzy, kde-format
-#| msgid "Copy or Move Messages to %1"
-msgid "Can not move message. %1"
-msgstr "संदेस मन ल %1 मं खिसकाव या नकल करव"
-
-#: newidentitydialog.cpp:46
-msgid "New Identity"
-msgstr "नवा कमइया"
-
-#: newidentitydialog.cpp:61
-msgid "&New identity:"
-msgstr "नवा कमइयाः (&N)"
-
-#: newidentitydialog.cpp:71
-msgid "&With empty fields"
-msgstr "खाली फील्ड्स के साथ (&W)"
-
-#: newidentitydialog.cpp:77
-msgid "&Use System Settings values"
-msgstr ""
-
-#: newidentitydialog.cpp:82
-msgid "&Duplicate existing identity"
-msgstr "अभी हाल के कमइया के नकल बनाव (&D)"
-
-#: newidentitydialog.cpp:93
-msgid "&Existing identities:"
-msgstr "अभी हाल के कमइयाः (&E)"
-
-#: simplestringlisteditor.cpp:58
-msgid "New entry:"
-msgstr "नवा प्रविस्टिः"
-
-#. i18n: file: ui/identitypage.ui:27
-#. i18n: ectx: property (text), widget (QPushButton, mButtonAdd)
-#: simplestringlisteditor.cpp:77 rc.cpp:421
-msgid "&Add..."
-msgstr "जोड़व...(&A)"
-
-#: simplestringlisteditor.cpp:205
-msgid "New Value"
-msgstr "नवा मान"
-
-#: simplestringlisteditor.cpp:228
-msgid "Change Value"
-msgstr "मान बदलव"
-
-#: snippetwidget.cpp:77
-msgid "Text Snippets"
-msgstr ""
-
-#: xfaceconfigurator.cpp:88
-msgid "&Send picture with every message"
-msgstr "हर एक संदेस के साथ फोटू भेजव (&S)"
-
-#: xfaceconfigurator.cpp:90
-msgid ""
-"Check this box if you want KMail to add a so-called X-Face header to "
-"messages written with this identity. An X-Face is a small (48x48 pixels) "
-"black and white image that some mail clients are able to display."
-msgstr ""
-
-#: xfaceconfigurator.cpp:97
-msgid "This is a preview of the picture selected/entered below."
-msgstr "ये नीचे चुने गे/भरे गे फोटू के प्रिव्यू हे."
-
-#: xfaceconfigurator.cpp:111
-msgid "Click on the widgets below to obtain help on the input methods."
-msgstr "इनपुट विधियों मं मदद प्राप्त करे बर नीचे दे गे विजेट मं किलिक करव."
-
-#: xfaceconfigurator.cpp:115
-msgctxt "continuation of \"obtain picture from\""
-msgid "External Source"
-msgstr "बाहिरी स्रोत"
-
-#: xfaceconfigurator.cpp:117
-msgctxt "continuation of \"obtain picture from\""
-msgid "Input Field Below"
-msgstr "इनपुट फील्ड नीचे"
-
-#: xfaceconfigurator.cpp:118
-msgid "Obtain pic&ture from:"
-msgstr "फोटू इहां से प्राप्त करव: (&t)"
-
-#: xfaceconfigurator.cpp:151
-msgid "Select File..."
-msgstr "फाइल चुनव..."
-
-#: xfaceconfigurator.cpp:153
-msgid ""
-"Use this to select an image file to create the picture from. The image "
-"should be of high contrast and nearly quadratic shape. A light background "
-"helps improve the result."
-msgstr ""
-
-#: xfaceconfigurator.cpp:160
-msgid "Set From Address Book"
-msgstr "प्रेसक (द्वारा) पता पुस्तिका सेट करव"
-
-#: xfaceconfigurator.cpp:162
-msgid ""
-"You can use a scaled-down version of the picture you have set in your "
-"address book entry."
-msgstr ""
-
-#: xfaceconfigurator.cpp:168
-msgid ""
-"<qt>KMail can send a small (48x48 pixels), low-quality, monochrome picture "
-"with every message. For example, this could be a picture of you or a glyph. "
-"It is shown in the recipient's mail client (if supported).</qt>"
-msgstr ""
-
-#: xfaceconfigurator.cpp:187
-msgid "Use this field to enter an arbitrary X-Face string."
-msgstr "ये फील्ड के परयोग बेतरतीब एक्स-फेस वाक्यांस ल भरे बर करव."
-
-#: xfaceconfigurator.cpp:191
-msgid ""
-"Examples are available at <a href=\"http://www.xs4all.nl/~ace/X-Faces/"
-"\">http://www.xs4all.nl/~ace/X-Faces/</a>."
-msgstr ""
-"उदाहरन इहां मिलत हे<a href=\"http://www.xs4all.nl/~ace/X-Faces/\">http://www."
-"xs4all.nl/~ace/X-Faces/</a>."
-
-#: xfaceconfigurator.cpp:264
-msgid "You do not have your own contact defined in the address book."
-msgstr "पता पुस्तिका मं आप मन के खुद के संपर्क परिभासित नइ हे."
-
-#: xfaceconfigurator.cpp:264 xfaceconfigurator.cpp:278
-#: xfaceconfigurator.cpp:287
-msgid "No Picture"
-msgstr "कोई फोटू नइ"
-
-#: xfaceconfigurator.cpp:278 xfaceconfigurator.cpp:287
-msgid "No picture set for your address book entry."
-msgstr "आप मन के पता पुस्तिका प्रविस्टि बर कोनो फोटू सेट नइ हे."
-
-#: kmsearchmessagemodel.cpp:77
-#, kde-format
-msgctxt "@label"
-msgid ""
-"This model can only handle email folders. The current collection holds "
-"mimetypes: %1"
-msgstr ""
-
-#: kmsearchmessagemodel.cpp:101
-#, fuzzy
-#| msgctxt "@title:column"
-#| msgid "->"
-msgctxt "@label No size available"
-msgid "-"
-msgstr "->"
-
-#: kmsearchmessagemodel.cpp:139
-#, fuzzy
-#| msgid "Folder"
-msgctxt "@title:column, folder (e.g. email)"
-msgid "Folder"
-msgstr "फोल्डर"
-
-#: tagactionmanager.cpp:117
-#, kde-format
-msgid "Message Tag %1"
-msgstr "संदेस टैग %1"
-
-#: tagactionmanager.cpp:163
-#, kde-format
-msgid "Toggle Message Tag %1"
-msgstr "संदेस टैग टागल करव (%1)"
-
-#: messageactions.cpp:67
-msgctxt "Message->"
-msgid "&Reply"
-msgstr "जवाब... (&R)"
-
-#: messageactions.cpp:79
-msgid "Reply to A&uthor..."
-msgstr "लेखक ल जवाब भेजव... (&u)"
-
-#: messageactions.cpp:100
-msgid "Reply Without &Quote..."
-msgstr "बिना उदाहरन के जवाब भेजव... (&Q)"
-
-#: messageactions.cpp:107
-msgid "Create To-do/Reminder..."
-msgstr ""
-
-#: messageactions.cpp:108
-msgid "Create To-do"
-msgstr ""
-
-#: messageactions.cpp:109
-msgid "Allows you to create a calendar to-do or reminder from this message"
-msgstr ""
-
-#: messageactions.cpp:110
-msgid ""
-"This option starts the KOrganizer to-do editor with initial values taken "
-"from the currently selected message. Then you can edit the to-do to your "
-"liking before saving it to your calendar."
-msgstr ""
-
-#: messageactions.cpp:117
-msgid "Mar&k Message"
-msgstr "संदेस चिनहा लगाव (&k)"
-
-#: messageactions.cpp:135
-msgid "&Edit Message"
-msgstr "संदेस संपादन (&E)"
-
-#: messageactions.cpp:141 messageactions.cpp:565
-#, fuzzy
-#| msgid "Add..."
-msgid "Add Note..."
-msgstr "जोड़व..."
-
-#: messageactions.cpp:153
-#, fuzzy
-#| msgctxt "Message->Forward->"
-#| msgid "As &Attachment..."
-msgctxt "@action:inmenu Message->Forward->"
-msgid "As &Attachment..."
-msgstr "संलग्नक के रूप में... (&A)"
-
-#: messageactions.cpp:161
-msgctxt "@action:inmenu Message->Forward->"
-msgid "&Inline..."
-msgstr "इनलाइन... (&I)"
-
-#: messageactions.cpp:169
-msgctxt "Message->Forward->"
-msgid "&Redirect..."
-msgstr "रीडायरेक्ट करव... (&R)"
-
-#: messageactions.cpp:178
-#, fuzzy
-#| msgid "Reply to Mailing-&List..."
-msgctxt "Message->"
-msgid "Mailing-&List"
-msgstr "डाक-सूची ल जवाब भेजव... (&L)"
-
-#: messageactions.cpp:349
-#, fuzzy
-#| msgid "OpenPGP Message - Bad Signature"
-msgid "Open Message in List Archive"
-msgstr "ओपन-पीजीपी संदेस - खराब दसखत"
-
-#: messageactions.cpp:351
-#, fuzzy
-#| msgid "New Message"
-msgid "Post New Message"
-msgstr "नवा संदेस"
-
-#: messageactions.cpp:353
-#, fuzzy
-#| msgid "List Archives"
-msgid "Go to Archive"
-msgstr "अभिलेखों के सूची"
-
-#: messageactions.cpp:355
-#, fuzzy
-#| msgid "List Help"
-msgid "Request Help"
-msgstr "मदद सूची"
-
-#: messageactions.cpp:357
-#, fuzzy
-#| msgctxt "type of folder content"
-#| msgid "Contacts"
-msgctxt "Contact the owner of the mailing list"
-msgid "Contact Owner"
-msgstr "सम्पर्क"
-
-#: messageactions.cpp:361
-#, fuzzy
-#| msgid "Unsubscribe From List"
-msgid "Unsubscribe from List"
-msgstr "सूची से अनसब्सक्राइब करव"
-
-#: messageactions.cpp:519
-#, fuzzy
-#| msgctxt "@title:column Email of the recipient."
-#| msgid "Email"
-msgid "email"
-msgstr "ईमेल"
-
-#: messageactions.cpp:522
-msgid "web"
-msgstr ""
-
-#: messageactions.cpp:525
-#, fuzzy, kde-format
-msgctxt ""
-"%1 is a 'Contact Owner' or similar action. %2 is a protocol normally web or "
-"email though could be irc/ftp or other url variant"
-msgid "%1 (%2)"
-msgstr "मोर %1 (%2)"
-
-#: messageactions.cpp:567
-#, fuzzy
-#| msgid "Edit With..."
-msgid "Edit Note..."
-msgstr "के साथ संपादन करव..."
-
-#: util.cpp:106
-#, fuzzy
-#| msgid "Could not start certificate manager. Please check your installation."
-msgid "Could not start the account wizard. Please check your installation."
-msgstr "प्रमानपत्र प्रबंधक चालू नइ कर सकिस. किरपा करके, अपन संस्थापन जांचव."
-
-#: util.cpp:108
-#, fuzzy
-#| msgid "Unable to create account"
-msgid "Unable to start account wizard"
-msgstr "खाता बनाए मं अक्छम."
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -5275,6 +4502,12 @@ msgstr ""
 #| msgid "Create a new identity"
 msgid "Add a new identity"
 msgstr "नवा पहिचान बनाव"
+
+#. i18n: file: ui/identitypage.ui:27
+#. i18n: ectx: property (text), widget (QPushButton, mButtonAdd)
+#: rc.cpp:421 simplestringlisteditor.cpp:77
+msgid "&Add..."
+msgstr "जोड़व...(&A)"
 
 #. i18n: file: ui/identitypage.ui:37
 #. i18n: ectx: property (toolTip), widget (QPushButton, mModifyButton)
@@ -6305,6 +5538,119 @@ msgstr "नवा डाक के विस्तृत सूचना (&i)"
 msgid "Other Actio&ns..."
 msgstr "अऊ दूसर काम (&n)"
 
+#: kmkernel.cpp:264
+msgid ""
+"<b>Thanks for using KMail2!</b><p>KMail2 uses a new storage technology that "
+"requires migration of your current KMail data and configuration.</p>\n"
+"<p>The conversion process can take a lot of time (depending on the amount of "
+"email you have) and it <em>must not be interrupted</em>.</p>\n"
+"<p>You can:</p><ul><li>Migrate now (be prepared to wait)</li><li>Skip the "
+"migration and start with fresh data and configuration</li><li>Cancel and "
+"exit KMail2.</li></ul><p><a href=\"http://userbase.kde.org/Akonadi\">More "
+"Information...</a></p>"
+msgstr ""
+
+#: kmkernel.cpp:273
+#, fuzzy
+#| msgid "KMail Question"
+msgid "KMail Migration"
+msgstr "के-मेल प्रस्न"
+
+#: kmkernel.cpp:273
+msgid "Migrate Now"
+msgstr ""
+
+#: kmkernel.cpp:273
+msgid "Skip Migration"
+msgstr ""
+
+#: kmkernel.cpp:306
+msgid ""
+"Migration to KMail 2 failed. In case you want to try again, run 'kmail-"
+"migrator --interactive' manually."
+msgstr ""
+
+#: kmkernel.cpp:307
+#, fuzzy
+#| msgid "Migrate Mail Files?"
+msgid "Migration Failed"
+msgstr "ईमेल फाइल मन ल माइग्रेट करव?"
+
+#: kmkernel.cpp:918
+msgid "KMail is set to be offline; all network jobs are suspended"
+msgstr "केमेल ल आफलाइन के रूप मं सेट कर दे गे हे, सब्बो नेटवर्क काम निलंबित हे"
+
+#: kmkernel.cpp:944
+msgid "KMail is set to be online; all network jobs resumed"
+msgstr "केमेल ल आनलाइन के रूप मं सेट कर दे गे हे, सब्बो नेटवर्क काम फिर से चालू हे"
+
+#: kmkernel.cpp:947
+#, fuzzy
+#| msgid "KMail is set to be online; all network jobs resumed"
+msgid ""
+"KMail is set to be online; all network jobs will resume when a network "
+"connection is detected"
+msgstr "केमेल ल आनलाइन के रूप मं सेट कर दे गे हे, सब्बो नेटवर्क काम फिर से चालू हे"
+
+#: kmkernel.cpp:997
+msgid "KMail is currently in offline mode. How do you want to proceed?"
+msgstr "केमेल अभी आफलाइन मोड मं हे. आप मन कऊन जइसन आगू बढ़ना चाहथो ?"
+
+#: kmkernel.cpp:1099
+#, kde-format
+msgid ""
+"Failed to open autosave file at %1.\n"
+"Reason: %2"
+msgstr ""
+
+#: kmkernel.cpp:1101
+#, fuzzy
+#| msgid "Autosaving Failed"
+msgid "Opening Autosave File Failed"
+msgstr "अपने अपन सहेजना फेल"
+
+#: kmkernel.cpp:1601
+#, kde-format
+msgid "This identity has been changed to use the default transport:"
+msgid_plural ""
+"These %1 identities have been changed to use the default transport:"
+msgstr[0] "डिफाल्ट ट्रांसपोर्ट के परयोग करे बर एखर पहिचान ल बदल दे गे हे:"
+msgstr[1] "डिफाल्ट ट्रांसपोर्ट के परयोग करे बर ए %1 पहिचानों ल बदल दे गे हे:"
+
+#: kmkernel.cpp:1624
+#, kde-format
+msgid "This identity has been changed to use the modified transport:"
+msgid_plural ""
+"These %1 identities have been changed to use the modified transport:"
+msgstr[0] "परिवर्धित ट्रांसपोर्ट के परयोग करे बर एखर पहिचान ल बदल दे गे हे:"
+msgstr[1] "परिवर्धित ट्रांसपोर्ट के परयोग करे बर ए %1 पहिचानों ल बदल दे गे हे:"
+
+#: kmkernel.cpp:1638
+msgid "Sending messages"
+msgstr "संदेस मन ल भेजिस जात हे"
+
+#: kmkernel.cpp:1639
+#, fuzzy
+#| msgid "Initiating sender process..."
+msgid "Initiating sending process..."
+msgstr "भेजने के काम चालू करत हे..."
+
+#: kmkernel.cpp:1690
+#, fuzzy
+msgid "online"
+msgstr "इनलाइन (&I)"
+
+#: kmkernel.cpp:1690
+#, fuzzy
+#| msgid "Work Offline"
+msgid "offline"
+msgstr "आफलाइन काम करव"
+
+#: kmkernel.cpp:1690
+#, kde-format
+msgid "Resource %1 is broken. This resource is now %2"
+msgstr ""
+
 #. i18n: file: tips:2
 #. i18n: ectx: @info:tipoftheday
 #: tips.cpp:3
@@ -6394,6 +5740,624 @@ msgid ""
 "<em>Message-&gt;Reply Without Quote</em>.</p>\n"
 "<p align=\"right\"><em>contributed by David F. Newman</em></p>\n"
 msgstr ""
+
+#: kmreadermainwin.cpp:305
+#, fuzzy
+msgctxt "@action:intoolbar Move to Trash"
+msgid "Trash"
+msgstr "घुरुवा"
+
+#: kmreadermainwin.cpp:306
+msgid "Move message to trashcan"
+msgstr "संदेस घुरुवा मं ले जाव"
+
+#: kmreadermainwin.cpp:324
+msgid "Select Font"
+msgstr "फोंट चुनव"
+
+#: kmreadermainwin.cpp:329
+msgid "Select Size"
+msgstr "चुने गे आकार"
+
+#: kmreaderwin.cpp:147
+msgid "New Message To..."
+msgstr "को नवा संदेस..."
+
+#: kmreaderwin.cpp:154
+msgid "Reply To..."
+msgstr "को जवाब भेजव:"
+
+#: kmreaderwin.cpp:161
+msgid "Forward To..."
+msgstr "को आगू भेजव..."
+
+#: kmreaderwin.cpp:168
+msgid "Add to Address Book"
+msgstr "पता पुस्तिका मं जोड़व"
+
+#: kmreaderwin.cpp:175
+msgid "Open in Address Book"
+msgstr "पता पुस्तिका मं खोलव"
+
+#: kmreaderwin.cpp:180
+msgid "Bookmark This Link"
+msgstr "ये संकली ल निसानी मं रखव"
+
+#: kmreaderwin.cpp:186
+msgid "Save Link As..."
+msgstr "संकली अइसन सहेजव..."
+
+#: kmreaderwin.cpp:242
+msgid ""
+"KMail is now based on the Akonadi Personal Information Management framework, "
+"which brings many changes all around."
+msgstr ""
+
+#: kmreaderwin.cpp:253
+msgid "Push email (IMAP IDLE)"
+msgstr ""
+
+#: kmreaderwin.cpp:254
+#, fuzzy
+#| msgid "Removing folder"
+msgid "Improved virtual folders"
+msgstr "फोल्डर मिटात हे"
+
+#: kmreaderwin.cpp:255
+msgid "Improved searches"
+msgstr ""
+
+#: kmreaderwin.cpp:256
+msgid "Support for adding notes (annotations) to mails"
+msgstr ""
+
+#: kmreaderwin.cpp:257
+#, fuzzy
+msgid "Tag folders"
+msgstr "घुरुवा के फोल्डरः (&T)"
+
+#: kmreaderwin.cpp:258
+msgid "Less GUI freezes, mail checks happen in the background"
+msgstr ""
+
+#: kmreaderwin.cpp:286
+msgid ""
+"<h2 style='margin-top: 0px;'>Retrieving Folder Contents</h2><p>Please "
+"wait . . .</p>&nbsp;"
+msgstr ""
+
+#: kmreaderwin.cpp:294
+msgid ""
+"<h2 style='margin-top: 0px;'>Offline</h2><p>KMail is currently in offline "
+"mode. Click <a href=\"kmail:goOnline\">here</a> to go online . . .</p>&nbsp;"
+msgstr ""
+
+#: kmreaderwin.cpp:310
+#, kde-format
+msgctxt ""
+"%1: KMail version; %2: help:// URL; %3: generated list of new features; %4: "
+"First-time user text (only shown on first start); %5: generated list of "
+"important changes; --- end of comment ---"
+msgid ""
+"<h2 style='margin-top: 0px;'>Welcome to KMail %1</h2><p>KMail is the email "
+"client by KDE.It is designed to be fully compatible with Internet mailing "
+"standards including MIME, SMTP, POP3, and IMAP.</p>\n"
+"<ul><li>KMail has many powerful features which are described in the <a href="
+"\"%2\">documentation</a></li>\n"
+"%5\n"
+"%3\n"
+"%4\n"
+"<p>We hope that you will enjoy KMail.</p>\n"
+"<p>Thank you,</p>\n"
+"<p style='margin-bottom: 0px'>&nbsp; &nbsp; The KMail Team</p>"
+msgstr ""
+
+#: kmreaderwin.cpp:327
+#, kde-format
+msgid ""
+"<p>Some of the new features in this release of KMail include (compared to "
+"KMail %1, which is part of KDE Software Compilation %2):</p>\n"
+msgstr ""
+
+#: kmreaderwin.cpp:340
+msgid ""
+"<p>Please take a moment to fill in the KMail configuration panel at Settings-"
+"&gt;Configure KMail.\n"
+"You need to create at least a default identity and an incoming as well as "
+"outgoing mail account.</p>\n"
+msgstr ""
+
+#: kmreaderwin.cpp:352
+#, kde-format
+msgid ""
+"<p><span style='font-size:125%; font-weight:bold;'>Important changes</span> "
+"(compared to KMail %1):</p>\n"
+msgstr ""
+
+#: kmreaderwin.cpp:357
+#, kde-format
+msgid "<li>%1</li>\n"
+msgstr "<li>%1</li>\n"
+
+#: kmstartup.cpp:157
+#, kde-format
+msgid ""
+"%1 already seems to be running on another display on this machine. Running "
+"%2 more than once can cause the loss of mail. You should not start %1 unless "
+"you are sure that it is not already running."
+msgstr ""
+
+#: kmstartup.cpp:167
+#, kde-format
+msgid ""
+"%1 seems to be running on another display on this machine. Running %1 and %2 "
+"at the same time can cause the loss of mail. You should not start %2 unless "
+"you are sure that %1 is not running."
+msgstr ""
+
+#: kmstartup.cpp:175
+#, kde-format
+msgid ""
+"%1 already seems to be running on %2. Running %1 more than once can cause "
+"the loss of mail. You should not start %1 on this computer unless you are "
+"sure that it is not already running on %2."
+msgstr ""
+
+#: kmstartup.cpp:181
+#, kde-format
+msgid ""
+"%1 seems to be running on %3. Running %1 and %2 at the same time can cause "
+"the loss of mail. You should not start %2 on this computer unless you are "
+"sure that %1 is not running on %3."
+msgstr ""
+
+#: kmstartup.cpp:191
+#, kde-format
+msgctxt "Start kmail even when another instance is running."
+msgid "Start %1"
+msgstr "सुरू %1"
+
+#: kmstartup.cpp:192
+msgctxt "Do not start another kmail instance."
+msgid "Exit"
+msgstr "बाहिर"
+
+#: kmsystemtray.cpp:279
+msgid "New Messages In"
+msgstr "में नवा संदेस"
+
+#: kmsystemtray.cpp:379
+#, fuzzy
+#| msgid "KMail - There are no unread messages"
+msgid "There are no unread messages"
+msgstr "केमेल - ओ तिर कोनो बिनपढ़े संदेस नइ हे"
+
+#: kmsystemtray.cpp:380
+#, fuzzy, kde-format
+msgid "1 unread message"
+msgid_plural "%1 unread messages"
+msgstr[0] "बिनपढ़े संदेस"
+msgstr[1] "बिनपढ़े संदेस"
+
+#: mailinglistpropertiesdialog.cpp:55
+msgid "Mailinglist Folder Properties"
+msgstr "डाकपतासूची फोल्डर गुन"
+
+#: mailinglistpropertiesdialog.cpp:69
+msgid "Associated Mailing List"
+msgstr "सम्बद्ध मेलिंग सूची"
+
+#: mailinglistpropertiesdialog.cpp:78
+msgid "&Folder holds a mailing list"
+msgstr "फोल्डर मं एक मेलिंग सूची हे (&F)"
+
+#: mailinglistpropertiesdialog.cpp:85
+msgid "Detect Automatically"
+msgstr "अपने अपन पता लगिस"
+
+#: mailinglistpropertiesdialog.cpp:93
+msgid "Mailing list description:"
+msgstr "डाकपता सूची वर्नन"
+
+#: mailinglistpropertiesdialog.cpp:104
+msgid "Preferred handler:"
+msgstr "निसानी हेन्डलर:"
+
+#: mailinglistpropertiesdialog.cpp:111
+msgid "Browser"
+msgstr "ब्राउज़र"
+
+#: mailinglistpropertiesdialog.cpp:118
+msgid "&Address type:"
+msgstr "पता किसिम: (&A)"
+
+#: mailinglistpropertiesdialog.cpp:131
+msgid "Invoke Handler"
+msgstr " हेंडलर खारिज करव"
+
+#: mailinglistpropertiesdialog.cpp:150
+msgid "Post to List"
+msgstr "सूची मं पोस्ट करव"
+
+#: mailinglistpropertiesdialog.cpp:151 messageactions.cpp:359
+msgid "Subscribe to List"
+msgstr "सूची मं सब्सक्राइब करव"
+
+#: mailinglistpropertiesdialog.cpp:152
+msgid "Unsubscribe From List"
+msgstr "सूची से अनसब्सक्राइब करव"
+
+#: mailinglistpropertiesdialog.cpp:153
+msgid "List Archives"
+msgstr "अभिलेखों के सूची"
+
+#: mailinglistpropertiesdialog.cpp:154
+msgid "List Help"
+msgstr "मदद सूची"
+
+#: mailinglistpropertiesdialog.cpp:173
+msgid "Not available"
+msgstr "नइ मिलत"
+
+#: mailinglistpropertiesdialog.cpp:231 mailinglistpropertiesdialog.cpp:264
+msgid "Not available."
+msgstr "नइ मिलत"
+
+#: mailinglistpropertiesdialog.cpp:261
+msgid ""
+"KMail was unable to detect a mailing list in this folder. Please fill the "
+"addresses by hand."
+msgstr ""
+
+#: undostack.cpp:100
+msgid "There is nothing to undo."
+msgstr "वापस करे बर कुछ घलोक नइ हे."
+
+#: undostack.cpp:107
+#, fuzzy, kde-format
+#| msgid "Copy or Move Messages to %1"
+msgid "Can not move message. %1"
+msgstr "संदेस मन ल %1 मं खिसकाव या नकल करव"
+
+#: newidentitydialog.cpp:46
+msgid "New Identity"
+msgstr "नवा कमइया"
+
+#: newidentitydialog.cpp:61
+msgid "&New identity:"
+msgstr "नवा कमइयाः (&N)"
+
+#: newidentitydialog.cpp:71
+msgid "&With empty fields"
+msgstr "खाली फील्ड्स के साथ (&W)"
+
+#: newidentitydialog.cpp:77
+msgid "&Use System Settings values"
+msgstr ""
+
+#: newidentitydialog.cpp:82
+msgid "&Duplicate existing identity"
+msgstr "अभी हाल के कमइया के नकल बनाव (&D)"
+
+#: newidentitydialog.cpp:93
+msgid "&Existing identities:"
+msgstr "अभी हाल के कमइयाः (&E)"
+
+#: simplestringlisteditor.cpp:58
+msgid "New entry:"
+msgstr "नवा प्रविस्टिः"
+
+#: simplestringlisteditor.cpp:205
+msgid "New Value"
+msgstr "नवा मान"
+
+#: simplestringlisteditor.cpp:228
+msgid "Change Value"
+msgstr "मान बदलव"
+
+#: snippetwidget.cpp:77
+msgid "Text Snippets"
+msgstr ""
+
+#: xfaceconfigurator.cpp:88
+msgid "&Send picture with every message"
+msgstr "हर एक संदेस के साथ फोटू भेजव (&S)"
+
+#: xfaceconfigurator.cpp:90
+msgid ""
+"Check this box if you want KMail to add a so-called X-Face header to "
+"messages written with this identity. An X-Face is a small (48x48 pixels) "
+"black and white image that some mail clients are able to display."
+msgstr ""
+
+#: xfaceconfigurator.cpp:97
+msgid "This is a preview of the picture selected/entered below."
+msgstr "ये नीचे चुने गे/भरे गे फोटू के प्रिव्यू हे."
+
+#: xfaceconfigurator.cpp:111
+msgid "Click on the widgets below to obtain help on the input methods."
+msgstr "इनपुट विधियों मं मदद प्राप्त करे बर नीचे दे गे विजेट मं किलिक करव."
+
+#: xfaceconfigurator.cpp:115
+msgctxt "continuation of \"obtain picture from\""
+msgid "External Source"
+msgstr "बाहिरी स्रोत"
+
+#: xfaceconfigurator.cpp:117
+msgctxt "continuation of \"obtain picture from\""
+msgid "Input Field Below"
+msgstr "इनपुट फील्ड नीचे"
+
+#: xfaceconfigurator.cpp:118
+msgid "Obtain pic&ture from:"
+msgstr "फोटू इहां से प्राप्त करव: (&t)"
+
+#: xfaceconfigurator.cpp:151
+msgid "Select File..."
+msgstr "फाइल चुनव..."
+
+#: xfaceconfigurator.cpp:153
+msgid ""
+"Use this to select an image file to create the picture from. The image "
+"should be of high contrast and nearly quadratic shape. A light background "
+"helps improve the result."
+msgstr ""
+
+#: xfaceconfigurator.cpp:160
+msgid "Set From Address Book"
+msgstr "प्रेसक (द्वारा) पता पुस्तिका सेट करव"
+
+#: xfaceconfigurator.cpp:162
+msgid ""
+"You can use a scaled-down version of the picture you have set in your "
+"address book entry."
+msgstr ""
+
+#: xfaceconfigurator.cpp:168
+msgid ""
+"<qt>KMail can send a small (48x48 pixels), low-quality, monochrome picture "
+"with every message. For example, this could be a picture of you or a glyph. "
+"It is shown in the recipient's mail client (if supported).</qt>"
+msgstr ""
+
+#: xfaceconfigurator.cpp:187
+msgid "Use this field to enter an arbitrary X-Face string."
+msgstr "ये फील्ड के परयोग बेतरतीब एक्स-फेस वाक्यांस ल भरे बर करव."
+
+#: xfaceconfigurator.cpp:191
+msgid ""
+"Examples are available at <a href=\"http://www.xs4all.nl/~ace/X-Faces/"
+"\">http://www.xs4all.nl/~ace/X-Faces/</a>."
+msgstr ""
+"उदाहरन इहां मिलत हे<a href=\"http://www.xs4all.nl/~ace/X-Faces/\">http://www."
+"xs4all.nl/~ace/X-Faces/</a>."
+
+#: xfaceconfigurator.cpp:264
+msgid "You do not have your own contact defined in the address book."
+msgstr "पता पुस्तिका मं आप मन के खुद के संपर्क परिभासित नइ हे."
+
+#: xfaceconfigurator.cpp:264 xfaceconfigurator.cpp:278
+#: xfaceconfigurator.cpp:287
+msgid "No Picture"
+msgstr "कोई फोटू नइ"
+
+#: xfaceconfigurator.cpp:278 xfaceconfigurator.cpp:287
+msgid "No picture set for your address book entry."
+msgstr "आप मन के पता पुस्तिका प्रविस्टि बर कोनो फोटू सेट नइ हे."
+
+#: kmsearchmessagemodel.cpp:77
+#, kde-format
+msgctxt "@label"
+msgid ""
+"This model can only handle email folders. The current collection holds "
+"mimetypes: %1"
+msgstr ""
+
+#: kmsearchmessagemodel.cpp:101
+#, fuzzy
+#| msgctxt "@title:column"
+#| msgid "->"
+msgctxt "@label No size available"
+msgid "-"
+msgstr "->"
+
+#: kmsearchmessagemodel.cpp:139
+#, fuzzy
+#| msgid "Folder"
+msgctxt "@title:column, folder (e.g. email)"
+msgid "Folder"
+msgstr "फोल्डर"
+
+#: tagactionmanager.cpp:117
+#, kde-format
+msgid "Message Tag %1"
+msgstr "संदेस टैग %1"
+
+#: tagactionmanager.cpp:163
+#, kde-format
+msgid "Toggle Message Tag %1"
+msgstr "संदेस टैग टागल करव (%1)"
+
+#: messageactions.cpp:67
+msgctxt "Message->"
+msgid "&Reply"
+msgstr "जवाब... (&R)"
+
+#: messageactions.cpp:79
+msgid "Reply to A&uthor..."
+msgstr "लेखक ल जवाब भेजव... (&u)"
+
+#: messageactions.cpp:100
+msgid "Reply Without &Quote..."
+msgstr "बिना उदाहरन के जवाब भेजव... (&Q)"
+
+#: messageactions.cpp:107
+msgid "Create To-do/Reminder..."
+msgstr ""
+
+#: messageactions.cpp:108
+msgid "Create To-do"
+msgstr ""
+
+#: messageactions.cpp:109
+msgid "Allows you to create a calendar to-do or reminder from this message"
+msgstr ""
+
+#: messageactions.cpp:110
+msgid ""
+"This option starts the KOrganizer to-do editor with initial values taken "
+"from the currently selected message. Then you can edit the to-do to your "
+"liking before saving it to your calendar."
+msgstr ""
+
+#: messageactions.cpp:117
+msgid "Mar&k Message"
+msgstr "संदेस चिनहा लगाव (&k)"
+
+#: messageactions.cpp:135
+msgid "&Edit Message"
+msgstr "संदेस संपादन (&E)"
+
+#: messageactions.cpp:141 messageactions.cpp:565
+#, fuzzy
+#| msgid "Add..."
+msgid "Add Note..."
+msgstr "जोड़व..."
+
+#: messageactions.cpp:153
+#, fuzzy
+#| msgctxt "Message->Forward->"
+#| msgid "As &Attachment..."
+msgctxt "@action:inmenu Message->Forward->"
+msgid "As &Attachment..."
+msgstr "संलग्नक के रूप में... (&A)"
+
+#: messageactions.cpp:161
+msgctxt "@action:inmenu Message->Forward->"
+msgid "&Inline..."
+msgstr "इनलाइन... (&I)"
+
+#: messageactions.cpp:169
+msgctxt "Message->Forward->"
+msgid "&Redirect..."
+msgstr "रीडायरेक्ट करव... (&R)"
+
+#: messageactions.cpp:178
+#, fuzzy
+#| msgid "Reply to Mailing-&List..."
+msgctxt "Message->"
+msgid "Mailing-&List"
+msgstr "डाक-सूची ल जवाब भेजव... (&L)"
+
+#: messageactions.cpp:349
+#, fuzzy
+#| msgid "OpenPGP Message - Bad Signature"
+msgid "Open Message in List Archive"
+msgstr "ओपन-पीजीपी संदेस - खराब दसखत"
+
+#: messageactions.cpp:351
+#, fuzzy
+#| msgid "New Message"
+msgid "Post New Message"
+msgstr "नवा संदेस"
+
+#: messageactions.cpp:353
+#, fuzzy
+#| msgid "List Archives"
+msgid "Go to Archive"
+msgstr "अभिलेखों के सूची"
+
+#: messageactions.cpp:355
+#, fuzzy
+#| msgid "List Help"
+msgid "Request Help"
+msgstr "मदद सूची"
+
+#: messageactions.cpp:357
+#, fuzzy
+#| msgctxt "type of folder content"
+#| msgid "Contacts"
+msgctxt "Contact the owner of the mailing list"
+msgid "Contact Owner"
+msgstr "सम्पर्क"
+
+#: messageactions.cpp:361
+#, fuzzy
+#| msgid "Unsubscribe From List"
+msgid "Unsubscribe from List"
+msgstr "सूची से अनसब्सक्राइब करव"
+
+#: messageactions.cpp:519
+#, fuzzy
+#| msgctxt "@title:column Email of the recipient."
+#| msgid "Email"
+msgid "email"
+msgstr "ईमेल"
+
+#: messageactions.cpp:522
+msgid "web"
+msgstr ""
+
+#: messageactions.cpp:525
+#, fuzzy, kde-format
+msgctxt ""
+"%1 is a 'Contact Owner' or similar action. %2 is a protocol normally web or "
+"email though could be irc/ftp or other url variant"
+msgid "%1 (%2)"
+msgstr "मोर %1 (%2)"
+
+#: messageactions.cpp:567
+#, fuzzy
+#| msgid "Edit With..."
+msgid "Edit Note..."
+msgstr "के साथ संपादन करव..."
+
+#: util.cpp:106
+#, fuzzy
+#| msgid "Could not start certificate manager. Please check your installation."
+msgid "Could not start the account wizard. Please check your installation."
+msgstr "प्रमानपत्र प्रबंधक चालू नइ कर सकिस. किरपा करके, अपन संस्थापन जांचव."
+
+#: util.cpp:108
+#, fuzzy
+#| msgid "Unable to create account"
+msgid "Unable to start account wizard"
+msgstr "खाता बनाए मं अक्छम."
+
+#~ msgid "Filter Log Viewer"
+#~ msgstr "फिल्टर लाग प्रदर्सक"
+
+#~ msgid "&Log filter activities"
+#~ msgstr "लाग छनइया काम (&L)"
+
+#~ msgid "Logging Details"
+#~ msgstr "लागिंग विवरन"
+
+#~ msgid "Log pattern description"
+#~ msgstr "लाग पैटर्न विवरन"
+
+#~ msgid "Log filter &rule evaluation"
+#~ msgstr "लाग छनइया नियम मूल्यांकन (&r)"
+
+#~ msgid "Log filter pattern evaluation"
+#~ msgstr "लाग छनइया पैटर्न मूल्यांकन"
+
+#~ msgid "Log filter actions"
+#~ msgstr "फिल्टर काम लाग करव"
+
+#~ msgid "Log size limit:"
+#~ msgstr "लाग आकार सीमा:"
+
+#~ msgctxt "@label:spinbox Set the size of the logfile to unlimited."
+#~ msgid "unlimited"
+#~ msgstr "असीमित"
+
+#~ msgid ""
+#~ "Could not write the file %1:\n"
+#~ "\"%2\" is the detailed error description."
+#~ msgstr ""
+#~ "फाइल %1 मं लिख नइ सकिस.\n"
+#~ "विस्तृत गलती विवरन हे- \"%2\""
 
 #~ msgid "Not enough free disk space?"
 #~ msgstr "डिस्क मं बहुत जगह नइ?"
