@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: khangman\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 05:52+0200\n"
+"POT-Creation-Date: 2011-09-26 04:07+0200\n"
 "PO-Revision-Date: 2009-02-23 12:59+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -30,18 +30,160 @@ msgid ""
 "the words; otherwise leave it untranslated as a reminder)"
 msgstr ""
 
+#: timer.cpp:37 timer.cpp:45
+#, kde-format
+msgid "1 second"
+msgid_plural "%1 seconds"
+msgstr[0] "1 सेकन्ड"
+msgstr[1] "%1 सेकन्ड"
+
+#: khangman.cpp:97
+msgid "Play with a new word"
+msgstr "नवा सब्द के साथ खेलें"
+
+#: khangman.cpp:100
+msgid "Opens an existing vocabulary document"
+msgstr "मौजूदा सब्दकोस कागद ल खोलथे "
+
+#: khangman.cpp:103
+msgid "&Show Hint"
+msgstr "संकेत देखाव (&S)"
+
+#: khangman.cpp:104
+msgid "Show/Hide the hint to help guessing the word"
+msgstr "सब्द के अंदाजा लगाय बर संकेत लुकाव/देखाव"
+
+#: khangman.cpp:112
+msgid "&Get Words in New Language..."
+msgstr "नवा भाखा मं सब्द प्राप्त करव...(&G)"
+
+#: khangman.cpp:120
+msgid "&Category"
+msgstr "वर्ग (&C)"
+
+#: khangman.cpp:123
+msgid "Choose the category"
+msgstr "कोई वर्ग चुनव"
+
+#: khangman.cpp:124
+msgid "Choose the category of words"
+msgstr "सब्दों के कोनो वर्ग चुनव"
+
+#: khangman.cpp:127
+msgid "&Language"
+msgstr "भाखा (&L)"
+
+#: khangman.cpp:132 khangman.cpp:133
+msgid "Choose the language"
+msgstr "भाखा चुनव"
+
+#: khangman.cpp:138
+msgid "L&ook"
+msgstr "देखव (&o)"
+
+#: khangman.cpp:144 khangman.cpp:145
+msgid "Choose the look and feel"
+msgstr "रूप आकार चुनव"
+
+#: khangman.cpp:150
+msgid "You can open last opened files"
+msgstr ""
+
+#: khangman.cpp:253
+#, fuzzy
+#| msgid "None"
+msgctxt "@item:inlistbox no language for that locale"
+msgid "None"
+msgstr "कुछ नइ"
+
+#: khangman.cpp:353
+msgid "General"
+msgstr "सामान्य"
+
+#: khangman.cpp:358
+msgid "Languages"
+msgstr "भाखा"
+
+#. i18n: file: timerui.ui:19
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: khangman.cpp:363 rc.cpp:102
+msgid "Timers"
+msgstr "टाइमर"
+
+#. i18n: file: languageui.ui:32
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AccentedLetters)
+#: khangman.cpp:530 rc.cpp:96
+msgid "Type accented letters"
+msgstr "एस्सेंटेड अक्छर टाइप करव"
+
+#: khangman.cpp:558 khangmanview.cpp:726
+#, kde-format
+msgid "Losses: %1"
+msgstr "हारे: %1"
+
+#: khangman.cpp:569
+msgid "Open Vocabulary Document"
+msgstr "सब्दावली कागद खोलव"
+
+#: khangmanview.cpp:73
+msgid "G&uess"
+msgstr "अंदाजा (&u)"
+
+#: khangmanview.cpp:77
+msgid "&Play again"
+msgstr "फिर से खेलव (&P)"
+
+#: khangmanview.cpp:321
+msgid "Misses"
+msgstr "चूकें"
+
+#: khangmanview.cpp:352
+msgid "Hint"
+msgstr "संकेत"
+
+#: khangmanview.cpp:381
+#, kde-format
+msgid "You lost. The word was \"%1\"."
+msgstr "आप मन हार गेव. सब्द रिहिस \"%1\"."
+
+#: khangmanview.cpp:381
+msgid "Congratulations! You won!"
+msgstr "गाड़ा गाड़ा बधाई, आप मन जीत गेव!"
+
+#: khangmanview.cpp:510 main.cpp:38
+msgid "KHangMan"
+msgstr "के- हेगमेन"
+
+#: khangmanview.cpp:510
+msgid "This letter has already been guessed."
+msgstr "ये अक्छर के अन्दाजा पहिली ही लगाही जा गे हे."
+
+#: khangmanview.cpp:592
+#, fuzzy, kde-format
+msgid ""
+"File $KDEDIR/share/apps/kvtml/%1/%2 not found.\n"
+"Please check your installation."
+msgstr ""
+"फाइल $KDEDIR/share/apps/khangman/data/%1/%2 नइ मिलिस!\n"
+"किरपा करके, अपन संस्थापन जांचव!"
+
+#: khangmanview.cpp:596
+msgid "Error"
+msgstr "गलती"
+
+#: khangmanview.cpp:725
+#, kde-format
+msgid "Wins: %1"
+msgstr "जीत: %1"
+
 #: main.cpp:34
 msgid "Classical hangman game for KDE"
 msgstr "केडीई बर क्लासिकल हेगमेन खेल"
 
-#: main.cpp:38 khangmanview.cpp:510
-msgid "KHangMan"
-msgstr "के- हेगमेन"
-
 #: main.cpp:40
 #, fuzzy
 #| msgid "(c) 2001-2008, Anne-Marie Mahfouf"
-msgid "(c) 2001-2009, Anne-Marie Mahfouf"
+msgid "(c) 2001-2011, Anne-Marie Mahfouf"
 msgstr "(c) 2001-2008, एन-मेरी महिनाफोफ"
 
 #: main.cpp:42
@@ -272,148 +414,6 @@ msgstr "इंग वालिन"
 msgid "Code cleaning"
 msgstr "कोड साफ सफाई"
 
-#: timer.cpp:37 timer.cpp:45
-#, kde-format
-msgid "1 second"
-msgid_plural "%1 seconds"
-msgstr[0] "1 सेकन्ड"
-msgstr[1] "%1 सेकन्ड"
-
-#: khangman.cpp:97
-msgid "Play with a new word"
-msgstr "नवा सब्द के साथ खेलें"
-
-#: khangman.cpp:100
-msgid "Opens an existing vocabulary document"
-msgstr "मौजूदा सब्दकोस कागद ल खोलथे "
-
-#: khangman.cpp:103
-msgid "&Show Hint"
-msgstr "संकेत देखाव (&S)"
-
-#: khangman.cpp:104
-msgid "Show/Hide the hint to help guessing the word"
-msgstr "सब्द के अंदाजा लगाय बर संकेत लुकाव/देखाव"
-
-#: khangman.cpp:112
-msgid "&Get Words in New Language..."
-msgstr "नवा भाखा मं सब्द प्राप्त करव...(&G)"
-
-#: khangman.cpp:120
-msgid "&Category"
-msgstr "वर्ग (&C)"
-
-#: khangman.cpp:123
-msgid "Choose the category"
-msgstr "कोई वर्ग चुनव"
-
-#: khangman.cpp:124
-msgid "Choose the category of words"
-msgstr "सब्दों के कोनो वर्ग चुनव"
-
-#: khangman.cpp:127
-msgid "&Language"
-msgstr "भाखा (&L)"
-
-#: khangman.cpp:132 khangman.cpp:133
-msgid "Choose the language"
-msgstr "भाखा चुनव"
-
-#: khangman.cpp:138
-msgid "L&ook"
-msgstr "देखव (&o)"
-
-#: khangman.cpp:144 khangman.cpp:145
-msgid "Choose the look and feel"
-msgstr "रूप आकार चुनव"
-
-#: khangman.cpp:150
-msgid "You can open last opened files"
-msgstr ""
-
-#: khangman.cpp:253
-#, fuzzy
-#| msgid "None"
-msgctxt "@item:inlistbox no language for that locale"
-msgid "None"
-msgstr "कुछ नइ"
-
-#: khangman.cpp:353
-msgid "General"
-msgstr "सामान्य"
-
-#: khangman.cpp:358
-msgid "Languages"
-msgstr "भाखा"
-
-#. i18n: file: timerui.ui:19
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: khangman.cpp:363 rc.cpp:102
-msgid "Timers"
-msgstr "टाइमर"
-
-#. i18n: file: languageui.ui:32
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AccentedLetters)
-#: khangman.cpp:530 rc.cpp:96
-msgid "Type accented letters"
-msgstr "एस्सेंटेड अक्छर टाइप करव"
-
-#: khangman.cpp:558 khangmanview.cpp:726
-#, kde-format
-msgid "Losses: %1"
-msgstr "हारे: %1"
-
-#: khangman.cpp:569
-msgid "Open Vocabulary Document"
-msgstr "सब्दावली कागद खोलव"
-
-#: khangmanview.cpp:73
-msgid "G&uess"
-msgstr "अंदाजा (&u)"
-
-#: khangmanview.cpp:77
-msgid "&Play again"
-msgstr "फिर से खेलव (&P)"
-
-#: khangmanview.cpp:321
-msgid "Misses"
-msgstr "चूकें"
-
-#: khangmanview.cpp:352
-msgid "Hint"
-msgstr "संकेत"
-
-#: khangmanview.cpp:381
-#, kde-format
-msgid "You lost. The word was \"%1\"."
-msgstr "आप मन हार गेव. सब्द रिहिस \"%1\"."
-
-#: khangmanview.cpp:381
-msgid "Congratulations! You won!"
-msgstr "गाड़ा गाड़ा बधाई, आप मन जीत गेव!"
-
-#: khangmanview.cpp:510
-msgid "This letter has already been guessed."
-msgstr "ये अक्छर के अन्दाजा पहिली ही लगाही जा गे हे."
-
-#: khangmanview.cpp:592
-#, fuzzy, kde-format
-msgid ""
-"File $KDEDIR/share/apps/kvtml/%1/%2 not found.\n"
-"Please check your installation."
-msgstr ""
-"फाइल $KDEDIR/share/apps/khangman/data/%1/%2 नइ मिलिस!\n"
-"किरपा करके, अपन संस्थापन जांचव!"
-
-#: khangmanview.cpp:596
-msgid "Error"
-msgstr "गलती"
-
-#: khangmanview.cpp:725
-#, kde-format
-msgid "Wins: %1"
-msgstr "जीत: %1"
-
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -548,11 +548,11 @@ msgstr "इहां आप मन सब्बो भाखा मन बर �
 
 #. i18n: file: generalui.ui:22
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_OneLetter)
-#. i18n: file: khangman.kcfg:48
+#. i18n: file: khangman.kcfg:44
 #. i18n: ectx: label, entry (OneLetter), group (General)
 #. i18n: file: generalui.ui:22
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_OneLetter)
-#. i18n: file: khangman.kcfg:48
+#. i18n: file: khangman.kcfg:44
 #. i18n: ectx: label, entry (OneLetter), group (General)
 #: rc.cpp:52 rc.cpp:126
 msgid ""
@@ -602,11 +602,11 @@ msgstr "अवाज"
 
 #. i18n: file: generalui.ui:58
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_Sound)
-#. i18n: file: khangman.kcfg:56
+#. i18n: file: khangman.kcfg:52
 #. i18n: ectx: label, entry (Sound), group (General)
 #. i18n: file: generalui.ui:58
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_Sound)
-#. i18n: file: khangman.kcfg:56
+#. i18n: file: khangman.kcfg:52
 #. i18n: ectx: label, entry (Sound), group (General)
 #: rc.cpp:73 rc.cpp:132
 msgid "If checked, sounds will be played for New Game and Win Game"
@@ -650,11 +650,11 @@ msgstr ""
 
 #. i18n: file: timerui.ui:41
 #. i18n: ectx: property (toolTip), widget (QSlider, kcfg_MissedTimer)
-#. i18n: file: khangman.kcfg:65
+#. i18n: file: khangman.kcfg:61
 #. i18n: ectx: label, entry (MissedTimer), group (General)
 #. i18n: file: timerui.ui:41
 #. i18n: ectx: property (toolTip), widget (QSlider, kcfg_MissedTimer)
-#. i18n: file: khangman.kcfg:65
+#. i18n: file: khangman.kcfg:61
 #. i18n: ectx: label, entry (MissedTimer), group (General)
 #: rc.cpp:108 rc.cpp:139
 msgid "Time during which the \"Already Guessed\" tooltip is displayed."
@@ -694,13 +694,13 @@ msgstr "कमइया से चुने गे भाखा"
 msgid "Background theme"
 msgstr "पिछोत अंगना प्रसंग"
 
-#. i18n: file: khangman.kcfg:52
+#. i18n: file: khangman.kcfg:48
 #. i18n: ectx: label, entry (EnableAnimations), group (General)
 #: rc.cpp:129
 msgid "Enable Animations"
 msgstr "एनिमेसन सक्छम करव"
 
-#. i18n: file: khangman.kcfg:61
+#. i18n: file: khangman.kcfg:57
 #. i18n: ectx: label, entry (Hint), group (General)
 #: rc.cpp:135
 msgid ""
@@ -710,13 +710,13 @@ msgid ""
 "show the hint."
 msgstr ""
 
-#. i18n: file: khangman.kcfg:72
+#. i18n: file: khangman.kcfg:68
 #. i18n: ectx: label, entry (AccentedLetters), group (Advanced)
 #: rc.cpp:142
 msgid "Type accented letters separately from normal letters"
 msgstr "एसेंट वाले अक्छर ल सामान्य अक्छर से अलग टाइप करव"
 
-#. i18n: file: khangman.kcfg:79
+#. i18n: file: khangman.kcfg:75
 #. i18n: ectx: label, entry (ProvidersUrl), group (KNewStuff)
 #: rc.cpp:145
 msgid "The Providers path for KHangMan"

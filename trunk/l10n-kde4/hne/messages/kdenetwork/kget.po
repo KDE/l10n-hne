@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-24 03:48+0200\n"
+"POT-Creation-Date: 2011-09-26 04:17+0200\n"
 "PO-Revision-Date: 2009-02-26 22:16+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -55,19 +55,19 @@ msgstr "एसक्यूलाइट"
 msgid "Nepomuk"
 msgstr ""
 
-#: conf/preferencesdialog.cpp:60
+#: conf/preferencesdialog.cpp:60 mainwindow.cpp:359
 #, fuzzy
 #| msgid "Turn off the computer"
 msgid "Turn Off Computer"
 msgstr "कम्प्यूटर बन्द करव"
 
-#: conf/preferencesdialog.cpp:61
+#: conf/preferencesdialog.cpp:61 mainwindow.cpp:364
 #, fuzzy
 #| msgid "Turn off the computer"
 msgid "Hibernate Computer"
 msgstr "कम्प्यूटर बन्द करव"
 
-#: conf/preferencesdialog.cpp:62
+#: conf/preferencesdialog.cpp:62 mainwindow.cpp:369
 #, fuzzy
 #| msgid "Turn off the computer"
 msgid "Suspend Computer"
@@ -166,8 +166,8 @@ msgstr ""
 msgid "Syntax"
 msgstr ""
 
-#: core/kget.h:367 ui/tray.cpp:41 main.cpp:104 mainwindow.cpp:91
-#: mainwindow.cpp:460
+#: core/kget.h:367 ui/tray.cpp:41 main.cpp:104 mainwindow.cpp:92
+#: mainwindow.cpp:513
 msgid "KGet"
 msgstr "के-गेट"
 
@@ -2236,7 +2236,7 @@ msgstr "नाम बदलव"
 msgid "Semantic Desktop"
 msgstr ""
 
-#: ui/contextmenu.cpp:142 mainwindow.cpp:197
+#: ui/contextmenu.cpp:142 mainwindow.cpp:198
 #, fuzzy
 #| msgid "Delete Group"
 msgid "Delete Group"
@@ -2244,7 +2244,7 @@ msgid_plural "Delete Groups"
 msgstr[0] "समूह मेटाव"
 msgstr[1] "समूह मेटाव"
 
-#: ui/contextmenu.cpp:146 mainwindow.cpp:203
+#: ui/contextmenu.cpp:146 mainwindow.cpp:204
 #, fuzzy
 #| msgid "Rename Group"
 msgid "Rename Group..."
@@ -2259,20 +2259,20 @@ msgstr "स्टिकी"
 
 #. i18n: file: conf/dlgadvanced.ui:34
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_AfterFinishAction)
-#: ui/droptarget.cpp:91 rc.cpp:107
+#: ui/droptarget.cpp:91 mainwindow.cpp:353 rc.cpp:107
 msgid "Quit KGet"
 msgstr "के-गेट से बाहिर हों"
 
-#: ui/droptarget.cpp:224 mainwindow.cpp:1134
+#: ui/droptarget.cpp:224 mainwindow.cpp:1183
 #, fuzzy
 msgid "The dropped file is a KGet Transfer List"
 msgstr "केगेट ट्रांसफर सूची"
 
-#: ui/droptarget.cpp:225 mainwindow.cpp:1135
+#: ui/droptarget.cpp:225 mainwindow.cpp:1184
 msgid "&Download"
 msgstr "डाउनलोड (&D)"
 
-#: ui/droptarget.cpp:226 mainwindow.cpp:1136
+#: ui/droptarget.cpp:226 mainwindow.cpp:1185
 #, fuzzy
 msgid "&Load transfer list"
 msgstr "ट्रांसफर सूची लोड करव (&L)"
@@ -2599,129 +2599,129 @@ msgstr ""
 msgid "URL(s) to download"
 msgstr "यूआरएल जऊन ल डाउनलोड करे जाही "
 
-#: mainwindow.cpp:141
+#: mainwindow.cpp:142
 msgid "&New Download..."
 msgstr "नवा डाउनलोड... (&N)"
 
-#: mainwindow.cpp:144
+#: mainwindow.cpp:145
 msgid "Opens a dialog to add a transfer to the list"
 msgstr ""
 
-#: mainwindow.cpp:148
+#: mainwindow.cpp:149
 msgid "&Import Transfers..."
 msgstr "ट्रांसफर आयात करव... (&I)"
 
-#: mainwindow.cpp:151
+#: mainwindow.cpp:152
 #, fuzzy
 #| msgid "Upload Limit per Transfer:"
 msgid "Imports a list of transfers"
 msgstr "प्रति ट्रांसफर अपलोड सीमा:"
 
-#: mainwindow.cpp:155
+#: mainwindow.cpp:156
 msgid "&Export Transfers List..."
 msgstr "ट्रांसफर सूची निर्यात करव... (&E)"
 
-#: mainwindow.cpp:158
+#: mainwindow.cpp:159
 msgid "Exports the current transfers into a file"
 msgstr ""
 
-#: mainwindow.cpp:162
+#: mainwindow.cpp:163
 msgid "&Create a Metalink..."
 msgstr ""
 
-#: mainwindow.cpp:164
+#: mainwindow.cpp:165
 msgid "Creates or modifies a metalink and saves it on disk"
 msgstr ""
 
-#: mainwindow.cpp:168
+#: mainwindow.cpp:169
 #, fuzzy
 #| msgid "Priority"
 msgid "Top Priority"
 msgstr "प्राथमिकता"
 
-#: mainwindow.cpp:171
+#: mainwindow.cpp:172
 #, fuzzy
 #| msgid "Download Limit per Transfer:"
 msgid "Download selected transfer first"
 msgstr "प्रति ट्रांसफर अपलोड सीमा:"
 
-#: mainwindow.cpp:175
+#: mainwindow.cpp:176
 #, fuzzy
 #| msgid "Priority"
 msgid "Least Priority"
 msgstr "प्राथमिकता"
 
-#: mainwindow.cpp:178
+#: mainwindow.cpp:179
 #, fuzzy
 #| msgid "Download Limit per Transfer:"
 msgid "Download selected transfer last"
 msgstr "प्रति ट्रांसफर अपलोड सीमा:"
 
-#: mainwindow.cpp:182
+#: mainwindow.cpp:183
 #, fuzzy
 #| msgid "Priority"
 msgid "Increase Priority"
 msgstr "प्राथमिकता"
 
-#: mainwindow.cpp:185
+#: mainwindow.cpp:186
 msgid "Increase priority for selected transfer"
 msgstr ""
 
-#: mainwindow.cpp:189
+#: mainwindow.cpp:190
 #, fuzzy
 #| msgid "Priority"
 msgid "Decrease Priority"
 msgstr "प्राथमिकता"
 
-#: mainwindow.cpp:192
+#: mainwindow.cpp:193
 msgid "Decrease priority for selected transfer"
 msgstr ""
 
-#: mainwindow.cpp:199
+#: mainwindow.cpp:200
 #, fuzzy
 #| msgctxt "Delete selected history-item"
 #| msgid "Delete selected"
 msgid "Delete selected group"
 msgstr "चुने गे ल मेटाव"
 
-#: mainwindow.cpp:208
+#: mainwindow.cpp:209
 #, fuzzy
 #| msgid "Set Icon"
 msgid "Set Icon..."
 msgstr "चिनहा सेट करव"
 
-#: mainwindow.cpp:210
+#: mainwindow.cpp:211
 msgid "Select a custom icon for the selected group"
 msgstr ""
 
-#: mainwindow.cpp:214
+#: mainwindow.cpp:215
 msgid "Auto-Paste Mode"
 msgstr "अपने अपन-चिपकाव मोड"
 
-#: mainwindow.cpp:217
+#: mainwindow.cpp:218
 msgid ""
 "<b>Auto paste</b> button toggles the auto-paste mode on and off.\n"
 "When set, KGet will periodically scan the clipboard for URLs and paste them "
 "automatically."
 msgstr ""
 
-#: mainwindow.cpp:223
+#: mainwindow.cpp:224
 msgid "Use KGet as Konqueror Download Manager"
 msgstr "केगेट ल कान्करर डाउनलोड प्रबंधक के जइसन परयोग करव"
 
-#: mainwindow.cpp:241
+#: mainwindow.cpp:242
 #, fuzzy
 #| msgid "Remove Webseed"
 msgctxt "delete selected transfer item"
 msgid "Remove Selected"
 msgstr "वेबसीड मेटाव"
 
-#: mainwindow.cpp:244
+#: mainwindow.cpp:245
 msgid ""
 "Removes selected transfer and deletes files from disk if it's not finished"
 msgstr ""
 
-#: mainwindow.cpp:248
+#: mainwindow.cpp:249
 #, fuzzy
 #| msgctxt "delete all finished transfers"
 #| msgid "Delete all finished"
@@ -2729,134 +2729,151 @@ msgctxt "delete all finished transfers"
 msgid "Remove All Finished"
 msgstr "सब्बो पूरा करे गे ल मेटाव"
 
-#: mainwindow.cpp:250
+#: mainwindow.cpp:251
 msgid "Removes all finished transfers and leaves all files on disk"
 msgstr ""
 
-#: mainwindow.cpp:254
+#: mainwindow.cpp:255
 msgctxt "redownload selected transfer item"
 msgid "Redownload Selected"
 msgstr "चुने गे ल फिर से डाउनलोड करव"
 
-#: mainwindow.cpp:259
+#: mainwindow.cpp:260
 #, fuzzy
 #| msgctxt "start transfergroup downloads"
 #| msgid "Start"
 msgid "Start All"
 msgstr "सुरू"
 
-#: mainwindow.cpp:262
+#: mainwindow.cpp:263
 #, fuzzy
 #| msgid "Start / Resume All"
 msgid "Starts / resumes all transfers"
 msgstr "सुरू / सब्बो बहाल करव"
 
-#: mainwindow.cpp:266
+#: mainwindow.cpp:267
 #, fuzzy
 #| msgid "Stop Selected"
 msgid "Start Selected"
 msgstr "चुने गे बन्द करव"
 
-#: mainwindow.cpp:268
+#: mainwindow.cpp:269
 #, fuzzy
 #| msgid "Start / Resume Selected"
 msgid "Starts / resumes selected transfer"
 msgstr "सुरू / चुने गे बहाल करव"
 
-#: mainwindow.cpp:272
+#: mainwindow.cpp:273
 msgid "Pause All"
 msgstr ""
 
-#: mainwindow.cpp:275
+#: mainwindow.cpp:276
 #, fuzzy
 #| msgid "Per Transfer:"
 msgid "Pauses all transfers"
 msgstr "प्रति ट्रांसफर:"
 
-#: mainwindow.cpp:279
+#: mainwindow.cpp:280
 msgid "Stop Selected"
 msgstr "चुने गे बन्द करव"
 
-#: mainwindow.cpp:281
+#: mainwindow.cpp:282
 msgid "Pauses selected transfer"
 msgstr ""
 
-#: mainwindow.cpp:284
+#: mainwindow.cpp:285
 #, fuzzy
 #| msgctxt "start transfergroup downloads"
 #| msgid "Start"
 msgid "Start"
 msgstr "सुरू"
 
-#: mainwindow.cpp:292
+#: mainwindow.cpp:293
 msgid "Pause"
 msgstr ""
 
-#: mainwindow.cpp:301
+#: mainwindow.cpp:302
 msgid "Open Destination"
 msgstr "गंतव्य खोलव"
 
-#: mainwindow.cpp:306 mainwindow.cpp:442
+#: mainwindow.cpp:307 mainwindow.cpp:495
 msgid "Open File"
 msgstr "फाइल खोलव"
 
-#: mainwindow.cpp:310
+#: mainwindow.cpp:311
 msgid "Show Details"
 msgstr "विवरन देखाव"
 
-#: mainwindow.cpp:315
+#: mainwindow.cpp:316
 msgid "Copy URL to Clipboard"
 msgstr "यूआरएल के नकल क्लिपबोर्ड मं बनाव"
 
-#: mainwindow.cpp:320
+#: mainwindow.cpp:321
 #, fuzzy
 #| msgid "Transfer History"
 msgid "&Transfer History"
 msgstr "ट्रांसफर सूची"
 
-#: mainwindow.cpp:326
+#: mainwindow.cpp:327
 #, fuzzy
 msgid "&Group Settings"
 msgstr "समूह सेटिंग"
 
-#: mainwindow.cpp:332
+#: mainwindow.cpp:333
 #, fuzzy
 msgid "&Transfer Settings"
 msgstr "ट्रांसफर-विवरन"
 
-#: mainwindow.cpp:338
+#: mainwindow.cpp:339
 msgid "Import &Links..."
 msgstr "संकली आयात करव... (&L)"
 
-#: mainwindow.cpp:371
+#: mainwindow.cpp:345
+msgid "After downloads finished action"
+msgstr ""
+
+#: mainwindow.cpp:347
+#, fuzzy
+#| msgid "Execute action after all downloads have been finished"
+msgid ""
+"Choose an action that is executed after all downloads have been finished."
+msgstr "जब डाउनलोड पूरा होही तहां ए काम करना हे"
+
+#: mainwindow.cpp:349
+#, fuzzy
+#| msgid "Location (URL)"
+msgid "No Action"
+msgstr "जगह (यूआरएल)"
+
+#: mainwindow.cpp:424
 msgid ""
 "This is the first time you have run KGet.\n"
 "Would you like to enable KGet as the download manager for Konqueror?"
 msgstr ""
 
-#: mainwindow.cpp:373
+#: mainwindow.cpp:426
 msgid "Konqueror Integration"
 msgstr "कान्करर के साथ एकीकरन"
 
-#: mainwindow.cpp:373
+#: mainwindow.cpp:426
 msgid "Enable"
 msgstr "सक्छम करव"
 
-#: mainwindow.cpp:374
+#: mainwindow.cpp:427
 msgid "Do Not Enable"
 msgstr "सक्छम नइ करव"
 
-#: mainwindow.cpp:441
+#: mainwindow.cpp:494
 msgid "All Openable Files"
 msgstr "सब्बो खोले जा सके फाइल मन ल"
 
-#: mainwindow.cpp:458
+#: mainwindow.cpp:511
 #, kde-format
 msgctxt "window title including overall download progress in percent"
 msgid "KGet - %1%"
 msgstr "के-गेट - %1%"
 
-#: mainwindow.cpp:508
+#: mainwindow.cpp:561
 msgid ""
 "Some transfers are still running.\n"
 "Are you sure you want to close KGet?"
@@ -2864,33 +2881,33 @@ msgstr ""
 "कुछ हस्तांतरन अभी घलोक होवत हे.\n"
 "का आप मन सही मं के-गेट बन्द करना चाहथो ?"
 
-#: mainwindow.cpp:510
+#: mainwindow.cpp:563
 msgid "Confirm Quit"
 msgstr "बाहिर जाय के पुस्टि करव"
 
-#: mainwindow.cpp:541
+#: mainwindow.cpp:590
 msgid "KGet Transfer List"
 msgstr "केगेट ट्रांसफर सूची"
 
-#: mainwindow.cpp:541
+#: mainwindow.cpp:590
 #, fuzzy
 #| msgid "Move File"
 msgid "Text File"
 msgstr "फाइल खिसकाव"
 
-#: mainwindow.cpp:543
+#: mainwindow.cpp:592
 msgid "Export Transfers"
 msgstr "ट्रांसफर निर्यात करव"
 
-#: mainwindow.cpp:575
+#: mainwindow.cpp:624
 msgid "Enter Group Name"
 msgstr "समूह नाम भरव"
 
-#: mainwindow.cpp:576
+#: mainwindow.cpp:625
 msgid "Group name:"
 msgstr "समूह नामः"
 
-#: mainwindow.cpp:663
+#: mainwindow.cpp:712
 #, fuzzy
 #| msgid ""
 #| "Are you sure that you want to remove\n"
@@ -2904,12 +2921,12 @@ msgstr[1] ""
 "का आप मन सचमुच समूह नाम %1 \n"
 "को मिटाना चाहथो ?"
 
-#: mainwindow.cpp:665
+#: mainwindow.cpp:714
 #, fuzzy
 msgid "Confirm transfer delete"
 msgstr "ट्रांसफर सूची लोड करव (&L)"
 
-#: mainwindow.cpp:1013
+#: mainwindow.cpp:1062
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
