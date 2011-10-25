@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalzium\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-03 03:48+0200\n"
+"POT-Creation-Date: 2011-10-25 04:05+0200\n"
 "PO-Revision-Date: 2009-02-21 22:58+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -3027,8 +3027,8 @@ msgstr "वैद्युतीयरिनात्मकता"
 #. i18n: ectx: property (text), item, widget (KComboBox, KCB_y)
 #. i18n: file: src/settings_gradients.ui:88
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_LogarithmicMeltingPointGradient)
-#: rc.cpp:1363 rc.cpp:1402 rc.cpp:1626 src/kalziumgradienttype.cpp:399
-#: src/detailinfodlg.cpp:207 src/elementdataviewer.cpp:240
+#: rc.cpp:1363 rc.cpp:1402 rc.cpp:1626 src/detailinfodlg.cpp:207
+#: src/kalziumgradienttype.cpp:399 src/elementdataviewer.cpp:240
 #: src/exportdialog.cpp:132
 msgid "Melting Point"
 msgstr "गलनांक"
@@ -3039,8 +3039,8 @@ msgstr "गलनांक"
 #. i18n: ectx: property (text), item, widget (KComboBox, KCB_y)
 #. i18n: file: src/settings_gradients.ui:81
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_LogarithmicBoilingPointGradient)
-#: rc.cpp:1366 rc.cpp:1405 rc.cpp:1623 src/kalziumgradienttype.cpp:343
-#: src/detailinfodlg.cpp:214 src/elementdataviewer.cpp:247
+#: rc.cpp:1366 rc.cpp:1405 rc.cpp:1623 src/detailinfodlg.cpp:214
+#: src/kalziumgradienttype.cpp:343 src/elementdataviewer.cpp:247
 #: src/exportdialog.cpp:133
 msgid "Boiling Point"
 msgstr "क्वथनांक"
@@ -3069,7 +3069,7 @@ msgstr "आनविक त्रिज्या"
 #. i18n: file: data/knowledge.xml:269
 #. i18n: file: data/knowledge.xml:275
 #: rc.cpp:1372 rc.cpp:1411 rc.cpp:1614 rc.cpp:2445 rc.cpp:2455 rc.cpp:2465
-#: rc.cpp:2471 src/kalziumgradienttype.cpp:175 src/detailinfodlg.cpp:235
+#: rc.cpp:2471 src/detailinfodlg.cpp:235 src/kalziumgradienttype.cpp:175
 #: src/elementdataviewer.cpp:261 src/exportdialog.cpp:130
 msgid "Covalent Radius"
 msgstr "कोवेलेंट त्रिज्या"
@@ -8143,6 +8143,201 @@ msgstr "सबसे अधिक: %1"
 msgid "Scheme: %1"
 msgstr "योजना: %1"
 
+#: src/detailinfodlg.cpp:52
+msgctxt "Next element"
+msgid "Next"
+msgstr "अगला"
+
+#: src/detailinfodlg.cpp:53
+msgid "Goes to the next element"
+msgstr "अगले तत्व मं जाथे "
+
+#: src/detailinfodlg.cpp:54
+msgctxt "Previous element"
+msgid "Previous"
+msgstr "पिछला"
+
+#: src/detailinfodlg.cpp:55
+msgid "Goes to the previous element"
+msgstr "पिछले तत्व मं जाथे "
+
+#: src/detailinfodlg.cpp:159
+#, kde-format
+msgid "Block: %1"
+msgstr "ब्लाक: %1"
+
+#: src/detailinfodlg.cpp:173
+#, kde-format
+msgid "It was discovered by %1."
+msgstr "%1 के साथ खोजा गिस."
+
+#: src/detailinfodlg.cpp:180
+#, kde-format
+msgid "Origin of the name:<br/>%1"
+msgstr "नामकरन के सृजन:<br/>%1"
+
+#: src/detailinfodlg.cpp:221 src/exportdialog.cpp:128
+msgid "Electron Affinity"
+msgstr "इलेक्ट्रान एफिनिटी"
+
+#: src/detailinfodlg.cpp:228
+#, fuzzy
+#| msgid "Electronic configuration: %1"
+msgid "Electronic configuration"
+msgstr "इलेक्ट्रानिक कान्फिगरेसन: %1"
+
+#: src/detailinfodlg.cpp:242
+#, fuzzy
+#| msgid "Van der Waals Radius"
+msgid "van der Waals Radius"
+msgstr "वान डेर वाल्स त्रिज्या"
+
+#: src/detailinfodlg.cpp:256
+#, fuzzy
+#| msgid "First Ionizationenergy"
+msgid "Ionization energy"
+msgstr "पहिली आयनीकरन ऊर्जा"
+
+#: src/detailinfodlg.cpp:256
+#, fuzzy
+#| msgid "First Ionizationenergy"
+msgid "First Ionization energy"
+msgstr "पहिली आयनीकरन ऊर्जा"
+
+#: src/detailinfodlg.cpp:270
+#, fuzzy
+#| msgid "Oxidationstages"
+msgid "Oxidation states"
+msgstr "ओक्सीडेसनस्टेजेस"
+
+#: src/detailinfodlg.cpp:283
+#, kde-format
+msgctxt "Link to element's Wikipedia page, %1 is localized language name"
+msgid "Wikipedia (%1)"
+msgstr ""
+
+#: src/detailinfodlg.cpp:331
+msgid "Isotope-Table"
+msgstr "आइसोटोप-टेबल"
+
+#: src/detailinfodlg.cpp:335
+msgid "Neutrons"
+msgstr "न्यूट्रान्स"
+
+#: src/detailinfodlg.cpp:339
+msgid "Half-life period"
+msgstr "अर्ध-जीवन अवधि"
+
+#: src/detailinfodlg.cpp:341
+msgid "Energy and Mode of Decay"
+msgstr "ऊर्जा अउ क्छय के मोड"
+
+#: src/detailinfodlg.cpp:343
+msgid "Spin and Parity"
+msgstr "स्पिन अउ पैरिटी"
+
+#: src/detailinfodlg.cpp:352
+#, kde-format
+msgid "%1 u"
+msgstr "%1 u"
+
+#: src/detailinfodlg.cpp:357
+#, kde-format
+msgctxt "this can for example be '24%'"
+msgid "%1%"
+msgstr "%1%"
+
+#: src/detailinfodlg.cpp:360
+#, kde-format
+msgctxt ""
+"The first argument is the value, the second is the unit. For example '17 s' "
+"for '17 seconds',."
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: src/detailinfodlg.cpp:364 src/detailinfodlg.cpp:373
+#: src/detailinfodlg.cpp:383 src/detailinfodlg.cpp:387
+#: src/detailinfodlg.cpp:397
+#, kde-format
+msgid "%1 MeV"
+msgstr "%1 MeV"
+
+#: src/detailinfodlg.cpp:365
+#, kde-format
+msgid " %1"
+msgstr " %1"
+
+#: src/detailinfodlg.cpp:367 src/detailinfodlg.cpp:376
+#: src/detailinfodlg.cpp:392 src/detailinfodlg.cpp:400
+#, kde-format
+msgid "(%1%)"
+msgstr "(%1%)"
+
+#: src/detailinfodlg.cpp:369 src/detailinfodlg.cpp:379
+msgid ", "
+msgstr ","
+
+#: src/detailinfodlg.cpp:374
+#, kde-format
+msgid " %1<sup>-</sup>"
+msgstr " %1<sup>-</sup>"
+
+#: src/detailinfodlg.cpp:384
+#, kde-format
+msgid " %1<sup>+</sup>"
+msgstr " %1<sup>+</sup>"
+
+#: src/detailinfodlg.cpp:389 src/detailinfodlg.cpp:398
+msgctxt "Acronym of Electron Capture"
+msgid " EC"
+msgstr "ईसी"
+
+#: src/detailinfodlg.cpp:406
+#, kde-format
+msgid "%1 %2<sub>n</sub>"
+msgstr "%1 %2<sub>n</sub>"
+
+#: src/detailinfodlg.cpp:445
+msgid "Data Overview"
+msgstr "डाटा ओवर-व्यू"
+
+#: src/detailinfodlg.cpp:449 src/detailinfodlg.cpp:450
+msgid "Atom Model"
+msgstr "अनु माडल"
+
+#: src/detailinfodlg.cpp:458
+msgid "Isotopes"
+msgstr "आइसोटोप्स"
+
+#: src/detailinfodlg.cpp:459
+msgid "Miscellaneous"
+msgstr "विविध"
+
+#: src/detailinfodlg.cpp:464 src/detailinfodlg.cpp:465
+msgid "Spectrum"
+msgstr "स्पेक्ट्रम"
+
+#: src/detailinfodlg.cpp:478
+#, fuzzy
+msgid "Extra information"
+msgstr "जानकारी"
+
+#: src/detailinfodlg.cpp:478
+#, fuzzy
+msgid "Extra Information"
+msgstr "जानकारी"
+
+#: src/detailinfodlg.cpp:488
+#, kde-format
+msgctxt "For example Carbon (6)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: src/detailinfodlg.cpp:530
+#, kde-format
+msgid "No spectrum of %1 found."
+msgstr ""
+
 #: src/orbitswidget.cpp:208
 #, fuzzy
 #| msgid "Unknown Extension"
@@ -8564,206 +8759,11 @@ msgstr ""
 msgid "This element was known to ancient cultures."
 msgstr "ये तत्व प्राचीन सभ्यताओं मं घलोक ग्यात रहिस."
 
-#: src/kalziumutils.cpp:168
+#: src/kalziumutils.cpp:164
 #, fuzzy
 #| msgid "Plot Data"
 msgid "No Data"
 msgstr "डाटा प्लाट करव"
-
-#: src/detailinfodlg.cpp:52
-msgctxt "Next element"
-msgid "Next"
-msgstr "अगला"
-
-#: src/detailinfodlg.cpp:53
-msgid "Goes to the next element"
-msgstr "अगले तत्व मं जाथे "
-
-#: src/detailinfodlg.cpp:54
-msgctxt "Previous element"
-msgid "Previous"
-msgstr "पिछला"
-
-#: src/detailinfodlg.cpp:55
-msgid "Goes to the previous element"
-msgstr "पिछले तत्व मं जाथे "
-
-#: src/detailinfodlg.cpp:159
-#, kde-format
-msgid "Block: %1"
-msgstr "ब्लाक: %1"
-
-#: src/detailinfodlg.cpp:173
-#, kde-format
-msgid "It was discovered by %1."
-msgstr "%1 के साथ खोजा गिस."
-
-#: src/detailinfodlg.cpp:180
-#, kde-format
-msgid "Origin of the name:<br/>%1"
-msgstr "नामकरन के सृजन:<br/>%1"
-
-#: src/detailinfodlg.cpp:221 src/exportdialog.cpp:128
-msgid "Electron Affinity"
-msgstr "इलेक्ट्रान एफिनिटी"
-
-#: src/detailinfodlg.cpp:228
-#, fuzzy
-#| msgid "Electronic configuration: %1"
-msgid "Electronic configuration"
-msgstr "इलेक्ट्रानिक कान्फिगरेसन: %1"
-
-#: src/detailinfodlg.cpp:242
-#, fuzzy
-#| msgid "Van der Waals Radius"
-msgid "van der Waals Radius"
-msgstr "वान डेर वाल्स त्रिज्या"
-
-#: src/detailinfodlg.cpp:256
-#, fuzzy
-#| msgid "First Ionizationenergy"
-msgid "Ionization energy"
-msgstr "पहिली आयनीकरन ऊर्जा"
-
-#: src/detailinfodlg.cpp:256
-#, fuzzy
-#| msgid "First Ionizationenergy"
-msgid "First Ionization energy"
-msgstr "पहिली आयनीकरन ऊर्जा"
-
-#: src/detailinfodlg.cpp:270
-#, fuzzy
-#| msgid "Atom number"
-msgid "Oxidation numbers"
-msgstr "आनविक संख्या"
-
-#: src/detailinfodlg.cpp:283
-#, kde-format
-msgctxt "Link to element's Wikipedia page, %1 is localized language name"
-msgid "Wikipedia (%1)"
-msgstr ""
-
-#: src/detailinfodlg.cpp:331
-msgid "Isotope-Table"
-msgstr "आइसोटोप-टेबल"
-
-#: src/detailinfodlg.cpp:335
-msgid "Neutrons"
-msgstr "न्यूट्रान्स"
-
-#: src/detailinfodlg.cpp:339
-msgid "Half-life period"
-msgstr "अर्ध-जीवन अवधि"
-
-#: src/detailinfodlg.cpp:341
-msgid "Energy and Mode of Decay"
-msgstr "ऊर्जा अउ क्छय के मोड"
-
-#: src/detailinfodlg.cpp:343
-msgid "Spin and Parity"
-msgstr "स्पिन अउ पैरिटी"
-
-#: src/detailinfodlg.cpp:352
-#, kde-format
-msgid "%1 u"
-msgstr "%1 u"
-
-#: src/detailinfodlg.cpp:357
-#, kde-format
-msgctxt "this can for example be '24%'"
-msgid "%1%"
-msgstr "%1%"
-
-#: src/detailinfodlg.cpp:360
-#, kde-format
-msgctxt ""
-"The first argument is the value, the second is the unit. For example '17 s' "
-"for '17 seconds',."
-msgid "%1 %2"
-msgstr "%1 %2"
-
-#: src/detailinfodlg.cpp:364 src/detailinfodlg.cpp:373
-#: src/detailinfodlg.cpp:383 src/detailinfodlg.cpp:387
-#: src/detailinfodlg.cpp:397
-#, kde-format
-msgid "%1 MeV"
-msgstr "%1 MeV"
-
-#: src/detailinfodlg.cpp:365
-#, kde-format
-msgid " %1"
-msgstr " %1"
-
-#: src/detailinfodlg.cpp:367 src/detailinfodlg.cpp:376
-#: src/detailinfodlg.cpp:392 src/detailinfodlg.cpp:400
-#, kde-format
-msgid "(%1%)"
-msgstr "(%1%)"
-
-#: src/detailinfodlg.cpp:369 src/detailinfodlg.cpp:379
-msgid ", "
-msgstr ","
-
-#: src/detailinfodlg.cpp:374
-#, kde-format
-msgid " %1<sup>-</sup>"
-msgstr " %1<sup>-</sup>"
-
-#: src/detailinfodlg.cpp:384
-#, kde-format
-msgid " %1<sup>+</sup>"
-msgstr " %1<sup>+</sup>"
-
-#: src/detailinfodlg.cpp:389 src/detailinfodlg.cpp:398
-msgctxt "Acronym of Electron Capture"
-msgid " EC"
-msgstr "ईसी"
-
-#: src/detailinfodlg.cpp:406
-#, kde-format
-msgid "%1 %2<sub>n</sub>"
-msgstr "%1 %2<sub>n</sub>"
-
-#: src/detailinfodlg.cpp:445
-msgid "Data Overview"
-msgstr "डाटा ओवर-व्यू"
-
-#: src/detailinfodlg.cpp:449 src/detailinfodlg.cpp:450
-msgid "Atom Model"
-msgstr "अनु माडल"
-
-#: src/detailinfodlg.cpp:458
-msgid "Isotopes"
-msgstr "आइसोटोप्स"
-
-#: src/detailinfodlg.cpp:459
-msgid "Miscellaneous"
-msgstr "विविध"
-
-#: src/detailinfodlg.cpp:464 src/detailinfodlg.cpp:465
-msgid "Spectrum"
-msgstr "स्पेक्ट्रम"
-
-#: src/detailinfodlg.cpp:478
-#, fuzzy
-msgid "Extra information"
-msgstr "जानकारी"
-
-#: src/detailinfodlg.cpp:478
-#, fuzzy
-msgid "Extra Information"
-msgstr "जानकारी"
-
-#: src/detailinfodlg.cpp:488
-#, kde-format
-msgctxt "For example Carbon (6)"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: src/detailinfodlg.cpp:530
-#, kde-format
-msgid "No spectrum of %1 found."
-msgstr ""
 
 #: src/elementdataviewer.cpp:53
 msgid "Plot Data"
@@ -9851,6 +9851,11 @@ msgid ""
 "H<b><sup>+</sup></b> + <b>2</b> O -&gt; <b>2</b> H<b><sub>2</sub></"
 "b>O<b><sup>2+</sub></b>)"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Atom number"
+#~ msgid "Oxidation numbers"
+#~ msgstr "आनविक संख्या"
 
 #, fuzzy
 #~| msgid "Labels:"
@@ -14960,9 +14965,6 @@ msgstr ""
 
 #~ msgid "Elementnumber"
 #~ msgstr "एलिमेंटनंबर"
-
-#~ msgid "Oxidationstages"
-#~ msgstr "ओक्सीडेसनस्टेजेस"
 
 #~ msgid "Field 2:"
 #~ msgstr "छेत्र२:"
