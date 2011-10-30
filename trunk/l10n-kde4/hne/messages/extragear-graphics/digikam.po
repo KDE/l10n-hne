@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-28 03:07+0200\n"
+"POT-Creation-Date: 2011-10-30 02:15+0100\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1797,6 +1797,7 @@ msgid "By Category"
 msgstr "तारीक से"
 
 #: digikam/main/digikamapp.cpp:1011 digikam/main/digikamapp.cpp:1039
+#: utilities/advancedrename/advancedrenamedialog.cpp:196
 msgid "By Date"
 msgstr "तारीक से"
 
@@ -1828,6 +1829,7 @@ msgid ""
 msgstr ""
 
 #: digikam/main/digikamapp.cpp:1037
+#: utilities/advancedrename/advancedrenamedialog.cpp:195
 msgid "By Name"
 msgstr "नाम से"
 
@@ -1836,6 +1838,7 @@ msgid "By Path"
 msgstr "पथ से"
 
 #: digikam/main/digikamapp.cpp:1040
+#: utilities/advancedrename/advancedrenamedialog.cpp:197
 msgid "By File Size"
 msgstr "फाइल आकार से"
 
@@ -1853,10 +1856,12 @@ msgid "Defines whether images are sorted in ascending or descending manner."
 msgstr ""
 
 #: digikam/main/digikamapp.cpp:1063
+#: utilities/advancedrename/advancedrenamedialog.cpp:205
 msgid "Ascending"
 msgstr ""
 
 #: digikam/main/digikamapp.cpp:1064
+#: utilities/advancedrename/advancedrenamedialog.cpp:206
 #, fuzzy
 msgid "Descending"
 msgstr "रा डिकोडिंग"
@@ -12148,18 +12153,19 @@ msgstr ""
 
 #: utilities/advancedrename/common/tooltipcreator.cpp:61
 msgid ""
-"The file list can be sorted, just right-click on it to see the sort criteria."
+"The file list can be sorted, just right-click on it to see the sort criteria "
+"(album UI only)."
 msgstr ""
 
 #. i18n: file: utilities/advancedrename/parser/modifiers/replacemodifierdialogwidget.ui:49
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: utilities/advancedrename/common/tooltipcreator.cpp:105
+#: utilities/advancedrename/common/tooltipcreator.cpp:106
 #: utilities/advancedrename/advancedrenamewidget.cpp:385 rc.cpp:200
 #, fuzzy
 msgid "Options"
 msgstr "इंटरफेस विकल्प"
 
-#: utilities/advancedrename/common/tooltipcreator.cpp:106
+#: utilities/advancedrename/common/tooltipcreator.cpp:107
 #: utilities/advancedrename/advancedrenamewidget.cpp:350
 #, fuzzy
 #| msgid "Modified:"
@@ -12205,36 +12211,6 @@ msgstr ""
 msgid ""
 "Extract a specific range (if '||to||' is omitted, go to the end of string)"
 msgstr ""
-
-#: utilities/advancedrename/parser/modifiers/replacemodifier.cpp:61
-#, fuzzy
-#| msgid "&Replace"
-msgctxt "Replace text"
-msgid "Replace..."
-msgstr "बदलव (&R)"
-
-#: utilities/advancedrename/parser/modifiers/replacemodifier.cpp:61
-#, fuzzy
-#| msgid "File Renaming Options"
-msgid "Replace text in a renaming option"
-msgstr "फाइल नाम बदले के विकल्प"
-
-#: utilities/advancedrename/parser/modifiers/replacemodifier.cpp:65
-msgid ""
-"Replace text (||options||: ||r|| = regular expression, ||i|| = ignore case)"
-msgstr ""
-
-#: utilities/advancedrename/parser/modifiers/trimmedmodifier.cpp:34
-#, fuzzy
-#| msgid "&Title:"
-msgid "Trimmed"
-msgstr "सीर्सकः (&T)"
-
-#: utilities/advancedrename/parser/modifiers/trimmedmodifier.cpp:34
-#, fuzzy
-#| msgid "German translations and beta tester"
-msgid "Remove leading, trailing and extra whitespace"
-msgstr "जर्मन ट्रांसलेसन अउ बीटा परीक्छक"
 
 #: utilities/advancedrename/parser/modifiers/uniquemodifier.cpp:36
 #, fuzzy
@@ -12306,6 +12282,36 @@ msgstr "चीज मेटारव"
 #, fuzzy
 msgid "Remove duplicate words"
 msgstr "चीज मेटारव"
+
+#: utilities/advancedrename/parser/modifiers/replacemodifier.cpp:61
+#, fuzzy
+#| msgid "&Replace"
+msgctxt "Replace text"
+msgid "Replace..."
+msgstr "बदलव (&R)"
+
+#: utilities/advancedrename/parser/modifiers/replacemodifier.cpp:61
+#, fuzzy
+#| msgid "File Renaming Options"
+msgid "Replace text in a renaming option"
+msgstr "फाइल नाम बदले के विकल्प"
+
+#: utilities/advancedrename/parser/modifiers/replacemodifier.cpp:65
+msgid ""
+"Replace text (||options||: ||r|| = regular expression, ||i|| = ignore case)"
+msgstr ""
+
+#: utilities/advancedrename/parser/modifiers/trimmedmodifier.cpp:34
+#, fuzzy
+#| msgid "&Title:"
+msgid "Trimmed"
+msgstr "सीर्सकः (&T)"
+
+#: utilities/advancedrename/parser/modifiers/trimmedmodifier.cpp:34
+#, fuzzy
+#| msgid "German translations and beta tester"
+msgid "Remove leading, trailing and extra whitespace"
+msgstr "जर्मन ट्रांसलेसन अउ बीटा परीक्छक"
 
 #: utilities/advancedrename/parser/options/database/keys/metadatakeys.cpp:56
 #, fuzzy
@@ -12824,64 +12830,32 @@ msgstr "फाइल नाम बदले के विकल्प"
 msgid "<p>Add renaming options to the parse string.</p>"
 msgstr ""
 
-#: utilities/advancedrename/advancedrenamedialog.cpp:185
+#: utilities/advancedrename/advancedrenamedialog.cpp:234
 #, fuzzy
 #| msgid "Count:"
 msgid "Current Name"
 msgstr "गननाः"
 
-#: utilities/advancedrename/advancedrenamedialog.cpp:185
+#: utilities/advancedrename/advancedrenamedialog.cpp:234
 #, fuzzy
 #| msgid "New Name: "
 msgid "New Name"
 msgstr "नवा नाम:"
 
-#: utilities/advancedrename/advancedrenamedialog.cpp:189
+#: utilities/advancedrename/advancedrenamedialog.cpp:238
 msgid ""
 "This list shows the results for your renaming pattern. Red items indicate a "
 "a name collision, either because the new name is equal to the current name, "
 "or because the name has already been assigned to another item."
 msgstr ""
 
-#: utilities/advancedrename/advancedrenamedialog.cpp:275
-#, fuzzy
-msgid "By Name - Ascending"
-msgstr "रा डिकोडिंग"
-
-#: utilities/advancedrename/advancedrenamedialog.cpp:276
-#, fuzzy
-msgid "By Name - Descending"
-msgstr "रा डिकोडिंग"
-
-#: utilities/advancedrename/advancedrenamedialog.cpp:277
-#, fuzzy
-msgid "By Date - Ascending"
-msgstr "रा डिकोडिंग"
-
-#: utilities/advancedrename/advancedrenamedialog.cpp:278
-#, fuzzy
-msgid "By Date - Descending"
-msgstr "रा डिकोडिंग"
-
-#: utilities/advancedrename/advancedrenamedialog.cpp:279
-#, fuzzy
-#| msgid "By File Size"
-msgid "By File Size - Ascending"
-msgstr "फाइल आकार से"
-
-#: utilities/advancedrename/advancedrenamedialog.cpp:280
-#, fuzzy
-#| msgid "By File Size"
-msgid "By File Size - Descending"
-msgstr "फाइल आकार से"
-
-#: utilities/advancedrename/advancedrenamedialog.cpp:285
+#: utilities/advancedrename/advancedrenamedialog.cpp:333
 #, fuzzy
 #| msgid "&Sort Images"
 msgid "Sort Images"
 msgstr "फोटू छांटव (&S)"
 
-#: utilities/advancedrename/advancedrenamedialog.cpp:376
+#: utilities/advancedrename/advancedrenamedialog.cpp:420
 #, fuzzy, kde-format
 #| msgid "Rename..."
 msgid "Rename"
@@ -20168,6 +20142,32 @@ msgid ""
 "Build date: %1 (target: %2)\n"
 "Rev.: %3"
 msgstr ""
+
+#, fuzzy
+#~ msgid "By Name - Ascending"
+#~ msgstr "रा डिकोडिंग"
+
+#, fuzzy
+#~ msgid "By Name - Descending"
+#~ msgstr "रा डिकोडिंग"
+
+#, fuzzy
+#~ msgid "By Date - Ascending"
+#~ msgstr "रा डिकोडिंग"
+
+#, fuzzy
+#~ msgid "By Date - Descending"
+#~ msgstr "रा डिकोडिंग"
+
+#, fuzzy
+#~| msgid "By File Size"
+#~ msgid "By File Size - Ascending"
+#~ msgstr "फाइल आकार से"
+
+#, fuzzy
+#~| msgid "By File Size"
+#~ msgid "By File Size - Descending"
+#~ msgstr "फाइल आकार से"
 
 #, fuzzy
 #~| msgid "Permissions: "
