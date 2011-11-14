@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-07 02:45+0200\n"
+"POT-Creation-Date: 2011-11-14 03:23+0100\n"
 "PO-Revision-Date: 2009-02-17 12:43+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -28,12 +28,12 @@ msgid "Annotate next image"
 msgstr "अगला फोटू एनोटेट करव"
 
 #: AnnotationDialog/ImagePreviewWidget.cpp:58 AnnotationDialog/Dialog.cpp:895
-#: MainWindow/Window.cpp:730 Viewer/ViewerWidget.cpp:270
+#: MainWindow/Window.cpp:738 Viewer/ViewerWidget.cpp:270
 msgid "Rotate counterclockwise"
 msgstr "घड़ी के उलटा दिसा मं घुमाव"
 
 #: AnnotationDialog/ImagePreviewWidget.cpp:64 AnnotationDialog/Dialog.cpp:898
-#: MainWindow/Window.cpp:735 Viewer/ViewerWidget.cpp:260
+#: MainWindow/Window.cpp:743 Viewer/ViewerWidget.cpp:260
 msgid "Rotate clockwise"
 msgstr "घड़ी के दिसा मं घुमाव"
 
@@ -367,49 +367,6 @@ msgstr "पिछला फोटू से टैग नकल करव"
 msgid "Toggle fullscreen preview"
 msgstr "पूरा स्क्रीन टागल करव"
 
-#: Browser/AbstractCategoryModel.cpp:46 MainWindow/StatisticsDialog.cpp:129
-#: Plugins/CategoryImageCollection.cpp:35
-msgid "None"
-msgstr "कुछ नइ"
-
-#: Browser/AbstractCategoryModel.cpp:48
-msgid "No other"
-msgstr "अऊ दूसर कोनो नइ"
-
-#: Browser/AbstractCategoryModel.cpp:51
-msgid "Video"
-msgstr "वीडियो"
-
-#: Browser/AbstractCategoryModel.cpp:53
-msgid "Image"
-msgstr "फोटू"
-
-#: Browser/AbstractCategoryModel.cpp:100
-#, fuzzy, kde-format
-#| msgid "1 image"
-#| msgid_plural "%1 images"
-msgid "1 image"
-msgid_plural "%1 images"
-msgstr[0] "१ फोटू"
-msgstr[1] "%1 फोटू"
-
-#: Browser/AbstractCategoryModel.cpp:101
-#, kde-format
-msgid "1 video"
-msgid_plural "%1 videos"
-msgstr[0] "१ वीडियो"
-msgstr[1] "%1 वीडियो"
-
-#. i18n: file: kphotoalbumui.rc:80
-#. i18n: ectx: Menu (imagesplugins)
-#: Browser/AbstractCategoryModel.cpp:138 rc.cpp:23
-msgid "Images"
-msgstr "फोटू"
-
-#: Browser/AbstractCategoryModel.cpp:139
-msgid "Videos"
-msgstr "वीडियो"
-
 #: Browser/Breadcrumb.cpp:36 MainWindow/StatisticsDialog.cpp:167
 msgid "All"
 msgstr "सब्बो"
@@ -458,6 +415,49 @@ msgstr ""
 #: Browser/OverviewPage.cpp:282
 msgid "Features has not been configured"
 msgstr ""
+
+#: Browser/AbstractCategoryModel.cpp:46 MainWindow/StatisticsDialog.cpp:129
+#: Plugins/CategoryImageCollection.cpp:35
+msgid "None"
+msgstr "कुछ नइ"
+
+#: Browser/AbstractCategoryModel.cpp:48
+msgid "No other"
+msgstr "अऊ दूसर कोनो नइ"
+
+#: Browser/AbstractCategoryModel.cpp:51
+msgid "Video"
+msgstr "वीडियो"
+
+#: Browser/AbstractCategoryModel.cpp:53
+msgid "Image"
+msgstr "फोटू"
+
+#: Browser/AbstractCategoryModel.cpp:100
+#, fuzzy, kde-format
+#| msgid "1 image"
+#| msgid_plural "%1 images"
+msgid "1 image"
+msgid_plural "%1 images"
+msgstr[0] "१ फोटू"
+msgstr[1] "%1 फोटू"
+
+#: Browser/AbstractCategoryModel.cpp:101
+#, kde-format
+msgid "1 video"
+msgid_plural "%1 videos"
+msgstr[0] "१ वीडियो"
+msgstr[1] "%1 वीडियो"
+
+#. i18n: file: kphotoalbumui.rc:80
+#. i18n: ectx: Menu (imagesplugins)
+#: Browser/AbstractCategoryModel.cpp:138 rc.cpp:23
+msgid "Images"
+msgstr "फोटू"
+
+#: Browser/AbstractCategoryModel.cpp:139
+msgid "Videos"
+msgstr "वीडियो"
 
 #: CategoryListView/CheckDropItem.cpp:112
 #, kde-format
@@ -586,25 +586,6 @@ msgstr "नवं."
 msgid "dec"
 msgstr "दिसं."
 
-#: DB/NewImageFinder.cpp:121
-msgid ""
-"<p><b>Loading information from new files</b></p><p>Depending on the number "
-"of images, this may take some time.<br/>However, there is only a delay when "
-"new images are found.</p>"
-msgstr ""
-
-#: DB/NewImageFinder.cpp:269
-#, kde-format
-msgid ""
-"<p><b>Calculating checksum for %1 files<b></p><p>By storing a checksum for "
-"each image KPhotoAlbum is capable of finding images even when you have moved "
-"them on the disk.</p>"
-msgstr ""
-
-#: DB/NewImageFinder.cpp:313
-msgid "Following files could not be read:"
-msgstr "निम्न फाइल मन ल पढ़ नइ सकिस:"
-
 #: DB/ImageSearchInfo.cpp:217
 #, kde-format
 msgctxt ""
@@ -627,6 +608,25 @@ msgctxt ""
 "Jesper."
 msgid "No other %1"
 msgstr "कोई %1 नइ"
+
+#: DB/NewImageFinder.cpp:121
+msgid ""
+"<p><b>Loading information from new files</b></p><p>Depending on the number "
+"of images, this may take some time.<br/>However, there is only a delay when "
+"new images are found.</p>"
+msgstr ""
+
+#: DB/NewImageFinder.cpp:281
+#, kde-format
+msgid ""
+"<p><b>Calculating checksum for %1 files<b></p><p>By storing a checksum for "
+"each image KPhotoAlbum is capable of finding images even when you have moved "
+"them on the disk.</p>"
+msgstr ""
+
+#: DB/NewImageFinder.cpp:325
+msgid "Following files could not be read:"
+msgstr "निम्न फाइल मन ल पढ़ नइ सकिस:"
 
 #: DateBar/DateBarWidget.cpp:81
 msgid "Widen selection to include all images and videos again"
@@ -769,7 +769,7 @@ msgstr "मिमी"
 msgid "Camera"
 msgstr "कैमरा"
 
-#: Exif/SearchDialog.cpp:101
+#: Exif/SearchDialog.cpp:101 Settings/GeneralPage.cpp:109
 msgid "Miscellaneous"
 msgstr "विविध"
 
@@ -1781,7 +1781,7 @@ msgstr "टैग:"
 msgid "Total"
 msgstr "कुल"
 
-#: MainWindow/TokenEditor.cpp:38 MainWindow/Window.cpp:704
+#: MainWindow/TokenEditor.cpp:38 MainWindow/Window.cpp:712
 msgid "Remove Tokens"
 msgstr "टोकन मेटाव"
 
@@ -1859,436 +1859,6 @@ msgstr "विसेसता जांच"
 #: MainWindow/WelcomeDialog.cpp:185
 msgid "Congratulations: all dynamic features have been enabled."
 msgstr ""
-
-#: MainWindow/Window.cpp:141
-msgid "Loading Database"
-msgstr "डाटाबेस लोड करत हे"
-
-#: MainWindow/Window.cpp:147
-msgid "Loading Main Window"
-msgstr "मुख्य विंडो लोड करत हे"
-
-#: MainWindow/Window.cpp:229
-msgid "Searching for New Files"
-msgstr "नवा फाइल मन बर खोजत हे"
-
-#: MainWindow/Window.cpp:235
-msgid "Loading Plug-ins"
-msgstr "प्लगइन लोड करत हे"
-
-#: MainWindow/Window.cpp:256
-msgid ""
-"EXIF database cannot be opened. Check that the image root directory is "
-"writable."
-msgstr ""
-
-#: MainWindow/Window.cpp:265
-msgid ""
-"<p><b>Delete Your Temporary Demo Database</b></p><p>I hope you enjoyed the "
-"KPhotoAlbum demo. The demo database was copied to /tmp, should it be deleted "
-"now? If you do not delete it, it will waste disk space; on the other hand, "
-"if you want to come back and try the demo again, you might want to keep it "
-"around with the changes you made through this session.</p>"
-msgstr ""
-
-#: MainWindow/Window.cpp:270
-msgid "Delete Demo Database"
-msgstr "डेमो डाटाबेस मेटाव"
-
-#: MainWindow/Window.cpp:285
-msgid "Do you want to save the changes?"
-msgstr "का आप मन बदलाव मन ल सहेजना चाहथो ?"
-
-#: MainWindow/Window.cpp:286
-msgid "Save Changes?"
-msgstr "बदलाव सहेजव?"
-
-#: MainWindow/Window.cpp:324
-msgid ""
-"Some of the selected images already belong to a stack. Do you want to remove "
-"them from their stacks and create a completely new one?"
-msgstr ""
-
-#: MainWindow/Window.cpp:326 MainWindow/Window.cpp:331
-msgid "Stacking Error"
-msgstr ""
-
-#: MainWindow/Window.cpp:330
-msgid "Unknown error, stack creation failed."
-msgstr ""
-
-#: MainWindow/Window.cpp:410 MainWindow/Window.cpp:534
-#: MainWindow/Window.cpp:1249
-msgid "No item is selected."
-msgstr "कोई चीज चुने नइ गे हे."
-
-#: MainWindow/Window.cpp:410 MainWindow/Window.cpp:534
-#: MainWindow/Window.cpp:1250
-msgid "No Selection"
-msgstr "कोई चयन नइ"
-
-#: MainWindow/Window.cpp:459
-msgid "Saving..."
-msgstr "सहेजिस जात हे..."
-
-#: MainWindow/Window.cpp:463
-msgid "Saving... Done"
-msgstr "सहेजिस जात हे... पूरा"
-
-#: MainWindow/Window.cpp:598
-msgid "There are no images to be shown."
-msgstr "देखाय बर वहां कोनो फोटू नइ हे."
-
-#: MainWindow/Window.cpp:665
-msgid "Generate HTML..."
-msgstr "एचटीएमएल बनाव..."
-
-#: MainWindow/Window.cpp:669
-msgid "Import..."
-msgstr "आयात करव..."
-
-#: MainWindow/Window.cpp:672
-msgid "Export/Copy Images..."
-msgstr "फोटू निर्यात/नकल करव..."
-
-#: MainWindow/Window.cpp:698
-msgid "Delete Selected"
-msgstr "चुने गे ल मेटाव"
-
-#: MainWindow/Window.cpp:707
-msgid "Open List of Files..."
-msgstr "फाइल मन के सूची खोलव..."
-
-#: MainWindow/Window.cpp:711
-msgid "Annotate Individual Items"
-msgstr "अलग अलग चीज मन के व्याख्या"
-
-#: MainWindow/Window.cpp:715
-msgid "Annotate Multiple Items at a Time"
-msgstr "बहुत से चीज मन के व्याख्या एके समय में"
-
-#: MainWindow/Window.cpp:719
-msgid "Merge Images into a Stack"
-msgstr ""
-
-#: MainWindow/Window.cpp:723
-msgid "Remove Images from Stack"
-msgstr ""
-
-#: MainWindow/Window.cpp:726 Viewer/ViewerWidget.cpp:151
-msgid "Set as First Image in Stack"
-msgstr ""
-
-#: MainWindow/Window.cpp:740
-msgid "View"
-msgstr "दृस्य"
-
-#: MainWindow/Window.cpp:744
-msgid "View (In New Window)"
-msgstr "दृस्य (नवा विंडो में)"
-
-#: MainWindow/Window.cpp:747
-msgid "Run Slide Show"
-msgstr "स्लाइड सो चलाव"
-
-#: MainWindow/Window.cpp:752
-msgid "Run Randomized Slide Show"
-msgstr "स्लाइड सो बेतरतीब चलाव"
-
-#: MainWindow/Window.cpp:758
-msgid "Collapse all stacks"
-msgstr ""
-
-#: MainWindow/Window.cpp:764
-msgid "Expand all stacks"
-msgstr ""
-
-#: MainWindow/Window.cpp:769
-msgid "Show &Oldest First"
-msgstr "सबसे जुन्ना ल पहिली देखाव (&O)"
-
-#: MainWindow/Window.cpp:774
-msgid "Show &Newest First"
-msgstr "सबसे नवा ल पहिली दिखाव (&N)"
-
-#: MainWindow/Window.cpp:779
-msgid "Sort Selected by Date && Time"
-msgstr "तारीक अउ समय से छांटना चुने गे (&&)"
-
-#: MainWindow/Window.cpp:782
-msgid "Limit View to Marked"
-msgstr "दृस्य ल चिनहित तक सीमित करव"
-
-#: MainWindow/Window.cpp:785
-msgid "Jump to Context"
-msgstr "संदर्भ मं जाव"
-
-#: MainWindow/Window.cpp:790
-msgid "Lock Images"
-msgstr "फोटू तालाबंद करव"
-
-#: MainWindow/Window.cpp:793
-msgid "Unlock"
-msgstr "तालाखोलव"
-
-#: MainWindow/Window.cpp:796
-msgid "Change Password..."
-msgstr "पासवर्ड बदलव..."
-
-#: MainWindow/Window.cpp:800
-msgid "Lock Away All Other Items"
-msgstr "सब्बो अउ चीज मन ल तालाबंद करव"
-
-#: MainWindow/Window.cpp:803
-msgid "Lock Away Current Set of Items"
-msgstr "अभी हाल के चीज मन के सेट ल तालाबंद करव"
-
-#: MainWindow/Window.cpp:807
-msgid "Display Images and Videos Not on Disk"
-msgstr "ओ फोटू अउ वीडियो मन ल देखाव जऊन ह डिस्क मं मौजूद नइ हे"
-
-#: MainWindow/Window.cpp:810
-msgid "Display Images and Videos with Incomplete Dates..."
-msgstr "अधूरा तारीक वाले फोटू मन अउ वीडियो दिखाव..."
-
-#: MainWindow/Window.cpp:814
-msgid "Display Images and Videos with Changed MD5 Sum"
-msgstr "बदले एमडी५ सम सहित फोटू अउ वीडियो मन ल दिखाव"
-
-#: MainWindow/Window.cpp:818
-msgid "Recalculate Checksum"
-msgstr "चेकसम फिर से गनना करव"
-
-#: MainWindow/Window.cpp:821
-msgid "Rescan for Images and Videos"
-msgstr "फोटू मन अउ वीडियो ल फिर से स्कैन करव"
-
-#: MainWindow/Window.cpp:824
-msgid "Recreate Exif Search Database"
-msgstr "एक्जिफ सर्च डाटाबेस फिर से बनाव"
-
-#: MainWindow/Window.cpp:827
-msgid "Read EXIF Info From Files..."
-msgstr "फाइल मन से एक्सइफ जानकारी पढ़व..."
-
-#: MainWindow/Window.cpp:829
-msgid ""
-"Recreate Exif Search Database (need to compile KPhotoAlbum with Exif support)"
-msgstr ""
-
-#: MainWindow/Window.cpp:830
-msgid ""
-"Read EXIF Info From Files... (need to compile KPhotoAlbum with Exif support)"
-msgstr ""
-
-#: MainWindow/Window.cpp:836
-msgid "Automatically Stack Selected Images..."
-msgstr ""
-
-#: MainWindow/Window.cpp:840
-msgid "Convert Backend...(Experimental!)"
-msgstr "बैकएन्ड बदलव... (परयोगात्मक!)"
-
-#: MainWindow/Window.cpp:845
-msgid "Build Thumbnails"
-msgstr "छोटे फोटू बनाव"
-
-#: MainWindow/Window.cpp:848
-msgid "Statistics"
-msgstr "आंकड़ा"
-
-#: MainWindow/Window.cpp:857
-msgid "Enable All Messages"
-msgstr "सब्बो संदेस सक्छम करव"
-
-#: MainWindow/Window.cpp:860
-#, fuzzy
-#| msgid "Configure View"
-msgid "Configure Current View"
-msgstr "कान्फिगर दृस्य"
-
-#: MainWindow/Window.cpp:869
-#, fuzzy
-#| msgid "Theme:"
-msgid "Tree"
-msgstr "प्रसंगः"
-
-#: MainWindow/Window.cpp:874
-msgid "Tree with User Icons"
-msgstr ""
-
-#: MainWindow/Window.cpp:880 MainWindow/Window.cpp:886
-#, fuzzy
-#| msgid "Icon:"
-msgid "Icons"
-msgstr "चिनहाः"
-
-#: MainWindow/Window.cpp:898
-msgid "Show Tooltips in Thumbnails Window"
-msgstr "छोटेफोटू विंडो मं औजारयुक्ति दिखाव"
-
-#: MainWindow/Window.cpp:904
-msgid "Run KPhotoAlbum Demo"
-msgstr "केफोटोएलबम डेमो चलाव"
-
-#: MainWindow/Window.cpp:907
-msgid "KPhotoAlbum Feature Status"
-msgstr "केफोटोएलबम विसेसता स्थिति"
-
-#: MainWindow/Window.cpp:910
-msgid "Show Demo Videos"
-msgstr "डेमो वीडियो देखाव"
-
-#: MainWindow/Window.cpp:915
-msgid "Show Exif Info"
-msgstr "एक्जइफ जानकारी देखाव"
-
-#: MainWindow/Window.cpp:918
-msgid "Recreate Selected Thumbnails"
-msgstr "चुने गे लघु-फोटू फिर से बनाव"
-
-#: MainWindow/Window.cpp:943
-msgid "Auto saving...."
-msgstr "अपने अपन सहेजत हे..."
-
-#: MainWindow/Window.cpp:945
-msgid "Auto saving.... Done"
-msgstr "अपने अपन सहेजत हे... पूरा"
-
-#: MainWindow/Window.cpp:1050
-#, kde-format
-msgid ""
-"SQL backend initialization failed, because following error occurred:\n"
-"%1"
-msgstr ""
-"एसक्यूएल बैकएन्ड चालू करना फेल, काबर कि नीचे वाले गलती होइस:\n"
-"%1"
-
-#: MainWindow/Window.cpp:1054
-msgid "SQL database support is not compiled in."
-msgstr "एसक्यूएल डाटाबेस समर्थन कम्पाइल्ड नइ करे गे हे."
-
-#: MainWindow/Window.cpp:1059
-#, kde-format
-msgid "Invalid database backend: %1"
-msgstr "अवैध डाटाबेस बैकएन्ड: %1"
-
-#: MainWindow/Window.cpp:1064
-msgid "Do you want to use XML backend instead?"
-msgstr "एखर बदला मा का आप मन एक्सएमएल बैकएन्ड उपयोग करना चाहू?"
-
-#: MainWindow/Window.cpp:1127
-msgid ""
-"<p>The password protection is only a means of allowing your little sister to "
-"look in your images, without getting to those embarrassing images from your "
-"last party.</p><p>In other words, anyone with access to the index.xml file "
-"can easily circumvent this password.</b></p>"
-msgstr ""
-
-#: MainWindow/Window.cpp:1132
-msgid "Password Protection"
-msgstr "पासवर्ड सुरक्छा"
-
-#: MainWindow/Window.cpp:1146
-msgid "Type in Password to Unlock"
-msgstr "ताला खोले बर पासवर्ड टाइप करव"
-
-#: MainWindow/Window.cpp:1155 MainWindow/Window.cpp:1188
-msgid "Invalid password."
-msgstr "अवैध पासवर्ड."
-
-#: MainWindow/Window.cpp:1179
-msgid "Type in Old Password"
-msgstr "जुन्ना पासवर्ड टाइप करव"
-
-#: MainWindow/Window.cpp:1191
-msgid "Type in New Password"
-msgstr "नवा पासवर्ड टाइप करव"
-
-#: MainWindow/Window.cpp:1201 Settings/SettingsDialog.cpp:66
-msgid "General"
-msgstr "सामान्य"
-
-#: MainWindow/Window.cpp:1202 Settings/SettingsDialog.cpp:71
-msgid "Viewer"
-msgstr "प्रदर्सक"
-
-#: MainWindow/Window.cpp:1215
-msgid "Annotation Dialog"
-msgstr "एनोटेसन गोठ"
-
-#: MainWindow/Window.cpp:1366
-msgid ""
-"<p>Really enable all message boxes where you previously checked the do-not-"
-"show-again check box?</p>"
-msgstr ""
-
-#: MainWindow/Window.cpp:1377
-msgid ""
-"<p>KPhotoAlbum hit an internal error (missing plug-in menu in MainWindow::"
-"Window::setupPluginMenu). This indicate that you forgot to do a make "
-"install. If you did compile KPhotoAlbum yourself, then please run make "
-"install. If not, please report this as a bug.</p><p>KPhotoAlbum will "
-"continue execution, but it is not entirely unlikely that it will crash later "
-"on due to the missing make install.</p>"
-msgstr ""
-
-#: MainWindow/Window.cpp:1377
-#, fuzzy
-#| msgid "Invoke External Program"
-msgid "Internal Error"
-msgstr "बाहिरी प्रोग्राम चलाव"
-
-#: MainWindow/Window.cpp:1547
-msgid "Open List of Files"
-msgstr "फाइल मन के सूची खोलव"
-
-#: MainWindow/Window.cpp:1547
-msgid "Enter file names"
-msgstr "फाइल नाम भरव"
-
-#: MainWindow/Window.cpp:1561
-msgid "No images matching your input were found."
-msgstr "आप मन के इनपुट से मिलत जुलत कोनो फोटू नइ मिलिस."
-
-#: MainWindow/Window.cpp:1561
-msgid "No Matches"
-msgstr "कोई जोड़ नइ"
-
-#: MainWindow/Window.cpp:1630
-msgid "Database conversion from SQL database is not yet supported."
-msgstr "एसक्यूएल डाटाबेस से डाटाबेस बदलाव अभी समर्थित नइ हे."
-
-#: MainWindow/Window.cpp:1637
-msgid ""
-"You should set SQL database settings before the conversion. Do you want to "
-"do this now?"
-msgstr ""
-
-#: MainWindow/Window.cpp:1657
-msgid "Converting database"
-msgstr "डाटाबेस बदलत हे"
-
-#: MainWindow/Window.cpp:1660
-msgid "Converting database to SQL."
-msgstr "डाटाबेस ल एसक्यूएल मं बदलत हे"
-
-#: MainWindow/Window.cpp:1661
-msgid "Please wait."
-msgstr "किरपा करके, अगोरव."
-
-#: MainWindow/Window.cpp:1670
-msgid "Database conversion is ready."
-msgstr "डाटाबेस बदलाव तैयार हे."
-
-#: MainWindow/Window.cpp:1673
-#, kde-format
-msgid ""
-"Database conversion failed, because following error occurred:\n"
-"%1"
-msgstr ""
-"डाटाबेस बदलाव फेल, काबर कि नीचे वाले गलती होइस:\n"
-"%1"
 
 #: MainWindow/DeleteDialog.cpp:45
 msgid "Removing items"
@@ -2401,6 +1971,436 @@ msgstr ""
 msgid "%each"
 msgstr "खोजव"
 
+#: MainWindow/Window.cpp:141
+msgid "Loading Database"
+msgstr "डाटाबेस लोड करत हे"
+
+#: MainWindow/Window.cpp:147
+msgid "Loading Main Window"
+msgstr "मुख्य विंडो लोड करत हे"
+
+#: MainWindow/Window.cpp:237
+msgid "Searching for New Files"
+msgstr "नवा फाइल मन बर खोजत हे"
+
+#: MainWindow/Window.cpp:243
+msgid "Loading Plug-ins"
+msgstr "प्लगइन लोड करत हे"
+
+#: MainWindow/Window.cpp:264
+msgid ""
+"EXIF database cannot be opened. Check that the image root directory is "
+"writable."
+msgstr ""
+
+#: MainWindow/Window.cpp:273
+msgid ""
+"<p><b>Delete Your Temporary Demo Database</b></p><p>I hope you enjoyed the "
+"KPhotoAlbum demo. The demo database was copied to /tmp, should it be deleted "
+"now? If you do not delete it, it will waste disk space; on the other hand, "
+"if you want to come back and try the demo again, you might want to keep it "
+"around with the changes you made through this session.</p>"
+msgstr ""
+
+#: MainWindow/Window.cpp:278
+msgid "Delete Demo Database"
+msgstr "डेमो डाटाबेस मेटाव"
+
+#: MainWindow/Window.cpp:293
+msgid "Do you want to save the changes?"
+msgstr "का आप मन बदलाव मन ल सहेजना चाहथो ?"
+
+#: MainWindow/Window.cpp:294
+msgid "Save Changes?"
+msgstr "बदलाव सहेजव?"
+
+#: MainWindow/Window.cpp:332
+msgid ""
+"Some of the selected images already belong to a stack. Do you want to remove "
+"them from their stacks and create a completely new one?"
+msgstr ""
+
+#: MainWindow/Window.cpp:334 MainWindow/Window.cpp:339
+msgid "Stacking Error"
+msgstr ""
+
+#: MainWindow/Window.cpp:338
+msgid "Unknown error, stack creation failed."
+msgstr ""
+
+#: MainWindow/Window.cpp:418 MainWindow/Window.cpp:542
+#: MainWindow/Window.cpp:1257
+msgid "No item is selected."
+msgstr "कोई चीज चुने नइ गे हे."
+
+#: MainWindow/Window.cpp:418 MainWindow/Window.cpp:542
+#: MainWindow/Window.cpp:1258
+msgid "No Selection"
+msgstr "कोई चयन नइ"
+
+#: MainWindow/Window.cpp:467
+msgid "Saving..."
+msgstr "सहेजिस जात हे..."
+
+#: MainWindow/Window.cpp:471
+msgid "Saving... Done"
+msgstr "सहेजिस जात हे... पूरा"
+
+#: MainWindow/Window.cpp:606
+msgid "There are no images to be shown."
+msgstr "देखाय बर वहां कोनो फोटू नइ हे."
+
+#: MainWindow/Window.cpp:673
+msgid "Generate HTML..."
+msgstr "एचटीएमएल बनाव..."
+
+#: MainWindow/Window.cpp:677
+msgid "Import..."
+msgstr "आयात करव..."
+
+#: MainWindow/Window.cpp:680
+msgid "Export/Copy Images..."
+msgstr "फोटू निर्यात/नकल करव..."
+
+#: MainWindow/Window.cpp:706
+msgid "Delete Selected"
+msgstr "चुने गे ल मेटाव"
+
+#: MainWindow/Window.cpp:715
+msgid "Open List of Files..."
+msgstr "फाइल मन के सूची खोलव..."
+
+#: MainWindow/Window.cpp:719
+msgid "Annotate Individual Items"
+msgstr "अलग अलग चीज मन के व्याख्या"
+
+#: MainWindow/Window.cpp:723
+msgid "Annotate Multiple Items at a Time"
+msgstr "बहुत से चीज मन के व्याख्या एके समय में"
+
+#: MainWindow/Window.cpp:727
+msgid "Merge Images into a Stack"
+msgstr ""
+
+#: MainWindow/Window.cpp:731
+msgid "Remove Images from Stack"
+msgstr ""
+
+#: MainWindow/Window.cpp:734 Viewer/ViewerWidget.cpp:151
+msgid "Set as First Image in Stack"
+msgstr ""
+
+#: MainWindow/Window.cpp:748
+msgid "View"
+msgstr "दृस्य"
+
+#: MainWindow/Window.cpp:752
+msgid "View (In New Window)"
+msgstr "दृस्य (नवा विंडो में)"
+
+#: MainWindow/Window.cpp:755
+msgid "Run Slide Show"
+msgstr "स्लाइड सो चलाव"
+
+#: MainWindow/Window.cpp:760
+msgid "Run Randomized Slide Show"
+msgstr "स्लाइड सो बेतरतीब चलाव"
+
+#: MainWindow/Window.cpp:766
+msgid "Collapse all stacks"
+msgstr ""
+
+#: MainWindow/Window.cpp:772
+msgid "Expand all stacks"
+msgstr ""
+
+#: MainWindow/Window.cpp:777
+msgid "Show &Oldest First"
+msgstr "सबसे जुन्ना ल पहिली देखाव (&O)"
+
+#: MainWindow/Window.cpp:782
+msgid "Show &Newest First"
+msgstr "सबसे नवा ल पहिली दिखाव (&N)"
+
+#: MainWindow/Window.cpp:787
+msgid "Sort Selected by Date && Time"
+msgstr "तारीक अउ समय से छांटना चुने गे (&&)"
+
+#: MainWindow/Window.cpp:790
+msgid "Limit View to Marked"
+msgstr "दृस्य ल चिनहित तक सीमित करव"
+
+#: MainWindow/Window.cpp:793
+msgid "Jump to Context"
+msgstr "संदर्भ मं जाव"
+
+#: MainWindow/Window.cpp:798
+msgid "Lock Images"
+msgstr "फोटू तालाबंद करव"
+
+#: MainWindow/Window.cpp:801
+msgid "Unlock"
+msgstr "तालाखोलव"
+
+#: MainWindow/Window.cpp:804
+msgid "Change Password..."
+msgstr "पासवर्ड बदलव..."
+
+#: MainWindow/Window.cpp:808
+msgid "Lock Away All Other Items"
+msgstr "सब्बो अउ चीज मन ल तालाबंद करव"
+
+#: MainWindow/Window.cpp:811
+msgid "Lock Away Current Set of Items"
+msgstr "अभी हाल के चीज मन के सेट ल तालाबंद करव"
+
+#: MainWindow/Window.cpp:815
+msgid "Display Images and Videos Not on Disk"
+msgstr "ओ फोटू अउ वीडियो मन ल देखाव जऊन ह डिस्क मं मौजूद नइ हे"
+
+#: MainWindow/Window.cpp:818
+msgid "Display Images and Videos with Incomplete Dates..."
+msgstr "अधूरा तारीक वाले फोटू मन अउ वीडियो दिखाव..."
+
+#: MainWindow/Window.cpp:822
+msgid "Display Images and Videos with Changed MD5 Sum"
+msgstr "बदले एमडी५ सम सहित फोटू अउ वीडियो मन ल दिखाव"
+
+#: MainWindow/Window.cpp:826
+msgid "Recalculate Checksum"
+msgstr "चेकसम फिर से गनना करव"
+
+#: MainWindow/Window.cpp:829
+msgid "Rescan for Images and Videos"
+msgstr "फोटू मन अउ वीडियो ल फिर से स्कैन करव"
+
+#: MainWindow/Window.cpp:832
+msgid "Recreate Exif Search Database"
+msgstr "एक्जिफ सर्च डाटाबेस फिर से बनाव"
+
+#: MainWindow/Window.cpp:835
+msgid "Read EXIF Info From Files..."
+msgstr "फाइल मन से एक्सइफ जानकारी पढ़व..."
+
+#: MainWindow/Window.cpp:837
+msgid ""
+"Recreate Exif Search Database (need to compile KPhotoAlbum with Exif support)"
+msgstr ""
+
+#: MainWindow/Window.cpp:838
+msgid ""
+"Read EXIF Info From Files... (need to compile KPhotoAlbum with Exif support)"
+msgstr ""
+
+#: MainWindow/Window.cpp:844
+msgid "Automatically Stack Selected Images..."
+msgstr ""
+
+#: MainWindow/Window.cpp:848
+msgid "Convert Backend...(Experimental!)"
+msgstr "बैकएन्ड बदलव... (परयोगात्मक!)"
+
+#: MainWindow/Window.cpp:853
+msgid "Build Thumbnails"
+msgstr "छोटे फोटू बनाव"
+
+#: MainWindow/Window.cpp:856
+msgid "Statistics"
+msgstr "आंकड़ा"
+
+#: MainWindow/Window.cpp:865
+msgid "Enable All Messages"
+msgstr "सब्बो संदेस सक्छम करव"
+
+#: MainWindow/Window.cpp:868
+#, fuzzy
+#| msgid "Configure View"
+msgid "Configure Current View"
+msgstr "कान्फिगर दृस्य"
+
+#: MainWindow/Window.cpp:877
+#, fuzzy
+#| msgid "Theme:"
+msgid "Tree"
+msgstr "प्रसंगः"
+
+#: MainWindow/Window.cpp:882
+msgid "Tree with User Icons"
+msgstr ""
+
+#: MainWindow/Window.cpp:888 MainWindow/Window.cpp:894
+#, fuzzy
+#| msgid "Icon:"
+msgid "Icons"
+msgstr "चिनहाः"
+
+#: MainWindow/Window.cpp:906
+msgid "Show Tooltips in Thumbnails Window"
+msgstr "छोटेफोटू विंडो मं औजारयुक्ति दिखाव"
+
+#: MainWindow/Window.cpp:912
+msgid "Run KPhotoAlbum Demo"
+msgstr "केफोटोएलबम डेमो चलाव"
+
+#: MainWindow/Window.cpp:915
+msgid "KPhotoAlbum Feature Status"
+msgstr "केफोटोएलबम विसेसता स्थिति"
+
+#: MainWindow/Window.cpp:918
+msgid "Show Demo Videos"
+msgstr "डेमो वीडियो देखाव"
+
+#: MainWindow/Window.cpp:923
+msgid "Show Exif Info"
+msgstr "एक्जइफ जानकारी देखाव"
+
+#: MainWindow/Window.cpp:926
+msgid "Recreate Selected Thumbnails"
+msgstr "चुने गे लघु-फोटू फिर से बनाव"
+
+#: MainWindow/Window.cpp:951
+msgid "Auto saving...."
+msgstr "अपने अपन सहेजत हे..."
+
+#: MainWindow/Window.cpp:953
+msgid "Auto saving.... Done"
+msgstr "अपने अपन सहेजत हे... पूरा"
+
+#: MainWindow/Window.cpp:1058
+#, kde-format
+msgid ""
+"SQL backend initialization failed, because following error occurred:\n"
+"%1"
+msgstr ""
+"एसक्यूएल बैकएन्ड चालू करना फेल, काबर कि नीचे वाले गलती होइस:\n"
+"%1"
+
+#: MainWindow/Window.cpp:1062
+msgid "SQL database support is not compiled in."
+msgstr "एसक्यूएल डाटाबेस समर्थन कम्पाइल्ड नइ करे गे हे."
+
+#: MainWindow/Window.cpp:1067
+#, kde-format
+msgid "Invalid database backend: %1"
+msgstr "अवैध डाटाबेस बैकएन्ड: %1"
+
+#: MainWindow/Window.cpp:1072
+msgid "Do you want to use XML backend instead?"
+msgstr "एखर बदला मा का आप मन एक्सएमएल बैकएन्ड उपयोग करना चाहू?"
+
+#: MainWindow/Window.cpp:1135
+msgid ""
+"<p>The password protection is only a means of allowing your little sister to "
+"look in your images, without getting to those embarrassing images from your "
+"last party.</p><p>In other words, anyone with access to the index.xml file "
+"can easily circumvent this password.</b></p>"
+msgstr ""
+
+#: MainWindow/Window.cpp:1140
+msgid "Password Protection"
+msgstr "पासवर्ड सुरक्छा"
+
+#: MainWindow/Window.cpp:1154
+msgid "Type in Password to Unlock"
+msgstr "ताला खोले बर पासवर्ड टाइप करव"
+
+#: MainWindow/Window.cpp:1163 MainWindow/Window.cpp:1196
+msgid "Invalid password."
+msgstr "अवैध पासवर्ड."
+
+#: MainWindow/Window.cpp:1187
+msgid "Type in Old Password"
+msgstr "जुन्ना पासवर्ड टाइप करव"
+
+#: MainWindow/Window.cpp:1199
+msgid "Type in New Password"
+msgstr "नवा पासवर्ड टाइप करव"
+
+#: MainWindow/Window.cpp:1209 Settings/SettingsDialog.cpp:66
+msgid "General"
+msgstr "सामान्य"
+
+#: MainWindow/Window.cpp:1210 Settings/SettingsDialog.cpp:71
+msgid "Viewer"
+msgstr "प्रदर्सक"
+
+#: MainWindow/Window.cpp:1223
+msgid "Annotation Dialog"
+msgstr "एनोटेसन गोठ"
+
+#: MainWindow/Window.cpp:1374
+msgid ""
+"<p>Really enable all message boxes where you previously checked the do-not-"
+"show-again check box?</p>"
+msgstr ""
+
+#: MainWindow/Window.cpp:1385
+msgid ""
+"<p>KPhotoAlbum hit an internal error (missing plug-in menu in MainWindow::"
+"Window::setupPluginMenu). This indicate that you forgot to do a make "
+"install. If you did compile KPhotoAlbum yourself, then please run make "
+"install. If not, please report this as a bug.</p><p>KPhotoAlbum will "
+"continue execution, but it is not entirely unlikely that it will crash later "
+"on due to the missing make install.</p>"
+msgstr ""
+
+#: MainWindow/Window.cpp:1385
+#, fuzzy
+#| msgid "Invoke External Program"
+msgid "Internal Error"
+msgstr "बाहिरी प्रोग्राम चलाव"
+
+#: MainWindow/Window.cpp:1555
+msgid "Open List of Files"
+msgstr "फाइल मन के सूची खोलव"
+
+#: MainWindow/Window.cpp:1555
+msgid "Enter file names"
+msgstr "फाइल नाम भरव"
+
+#: MainWindow/Window.cpp:1569
+msgid "No images matching your input were found."
+msgstr "आप मन के इनपुट से मिलत जुलत कोनो फोटू नइ मिलिस."
+
+#: MainWindow/Window.cpp:1569
+msgid "No Matches"
+msgstr "कोई जोड़ नइ"
+
+#: MainWindow/Window.cpp:1638
+msgid "Database conversion from SQL database is not yet supported."
+msgstr "एसक्यूएल डाटाबेस से डाटाबेस बदलाव अभी समर्थित नइ हे."
+
+#: MainWindow/Window.cpp:1645
+msgid ""
+"You should set SQL database settings before the conversion. Do you want to "
+"do this now?"
+msgstr ""
+
+#: MainWindow/Window.cpp:1665
+msgid "Converting database"
+msgstr "डाटाबेस बदलत हे"
+
+#: MainWindow/Window.cpp:1668
+msgid "Converting database to SQL."
+msgstr "डाटाबेस ल एसक्यूएल मं बदलत हे"
+
+#: MainWindow/Window.cpp:1669
+msgid "Please wait."
+msgstr "किरपा करके, अगोरव."
+
+#: MainWindow/Window.cpp:1678
+msgid "Database conversion is ready."
+msgstr "डाटाबेस बदलाव तैयार हे."
+
+#: MainWindow/Window.cpp:1681
+#, kde-format
+msgid ""
+"Database conversion failed, because following error occurred:\n"
+"%1"
+msgstr ""
+"डाटाबेस बदलाव फेल, काबर कि नीचे वाले गलती होइस:\n"
+"%1"
+
 #: Plugins/ImageCollection.cpp:44
 #, fuzzy
 msgid "unknown (Selection)"
@@ -2442,47 +2442,47 @@ msgstr "डाटाबेस ड्राइवर नइ मिलिस: %1"
 msgid "Unknown or unsupported database driver: %1"
 msgstr "अग्यात या असमर्थित डाटाबेस ड्राइवर: %1"
 
-#: SQLDB/SQLSettingsWidget.cpp:258
+#: SQLDB/SQLSettingsWidget.cpp:253
 msgid "Database driver:"
 msgstr "डाटाबेस ड्राइवर:"
 
-#: SQLDB/SQLSettingsWidget.cpp:259
+#: SQLDB/SQLSettingsWidget.cpp:254
 msgid "Database file:"
 msgstr "डाटाबेस फाइल:"
 
-#: SQLDB/SQLSettingsWidget.cpp:260
+#: SQLDB/SQLSettingsWidget.cpp:255
 msgid "KPhotoAlbum database files (*.db)"
 msgstr "केफोटोएलबम डाटाबेस फाइल मन ल (*.db)"
 
-#: SQLDB/SQLSettingsWidget.cpp:261
+#: SQLDB/SQLSettingsWidget.cpp:256
 msgid "Server address:"
 msgstr "सर्वर पता:"
 
-#: SQLDB/SQLSettingsWidget.cpp:262
+#: SQLDB/SQLSettingsWidget.cpp:257
 msgid "Server port:"
 msgstr "सर्वर पोर्टः"
 
-#: SQLDB/SQLSettingsWidget.cpp:263
+#: SQLDB/SQLSettingsWidget.cpp:258
 msgid "Default"
 msgstr "डिफाल्ट"
 
-#: SQLDB/SQLSettingsWidget.cpp:264
+#: SQLDB/SQLSettingsWidget.cpp:259
 msgid "Database name:"
 msgstr "डाटाबेस के नामः"
 
-#: SQLDB/SQLSettingsWidget.cpp:265
+#: SQLDB/SQLSettingsWidget.cpp:260
 msgid "Username:"
 msgstr "कमइया नाम:"
 
-#: SQLDB/SQLSettingsWidget.cpp:266
+#: SQLDB/SQLSettingsWidget.cpp:261
 msgid "Password:"
 msgstr "पासवर्ड: "
 
-#: SQLDB/SQLSettingsWidget.cpp:301
+#: SQLDB/SQLSettingsWidget.cpp:296
 msgid "No SQL database drivers found."
 msgstr "कोई एसक्यूएल डाटाबेस ड्राइवर नइ मिलिस."
 
-#: SQLDB/SQLSettingsWidget.cpp:305
+#: SQLDB/SQLSettingsWidget.cpp:300
 msgid "Invalid driver."
 msgstr "अवैध ड्राइवर."
 
@@ -2535,76 +2535,6 @@ msgstr "नवा"
 #, kde-format
 msgid "<p>Really delete category '%1'?</p>"
 msgstr "<p>सचमुच मं मिटा देव स्रेनी '%1' को?</p>"
-
-#: Settings/DatabaseBackendPage.cpp:43
-msgid "Database backend to use"
-msgstr "परयोग मं डाटाबेस बैकएन्ड"
-
-#: Settings/DatabaseBackendPage.cpp:46
-msgid "XML backend (recommended)"
-msgstr "एक्सएमएल बैकएन्ड (अनुसंसित)"
-
-#: Settings/DatabaseBackendPage.cpp:49
-msgid "SQL backend (experimental)"
-msgstr "एसक्यूएल बैकएन्ड (परयोगात्मक)"
-
-#: Settings/DatabaseBackendPage.cpp:54
-msgid "XML Database Setting"
-msgstr "एक्सएमएल डाटाबेस सेटिंग"
-
-#: Settings/DatabaseBackendPage.cpp:58
-msgid "Choose speed over readability for index.xml file"
-msgstr "index.xml फाइल बर पढ़े जा सके के बजाय गति ल चुनव"
-
-#: Settings/DatabaseBackendPage.cpp:59
-msgid "Compress backup file"
-msgstr "बैकअप फाइल संपीडित करव"
-
-#: Settings/DatabaseBackendPage.cpp:63
-msgid "Auto save every:"
-msgstr "अपने अपन सहेजव हर एक:"
-
-#: Settings/DatabaseBackendPage.cpp:66
-msgid "min."
-msgstr "मि."
-
-#: Settings/DatabaseBackendPage.cpp:76
-msgid "Number of backups to keep:"
-msgstr "रखे जाय वाले बैकअप के संख्या:"
-
-#: Settings/DatabaseBackendPage.cpp:81
-msgid "Infinite"
-msgstr "अनगिनत"
-
-#: Settings/DatabaseBackendPage.cpp:86
-msgid ""
-"<p>KPhotoAlbum is capable of backing up the index.xml file by keeping copies "
-"named index.xml~1~ index.xml~2~ etc. and you can use the spinbox to specify "
-"the number of backup files to keep. KPhotoAlbum will delete the oldest "
-"backup file when it reaches the maximum number of backup files.</p><p>The "
-"index.xml file may grow substantially if you have many images, and in that "
-"case it is useful to ask KPhotoAlbum to zip the backup files to preserve "
-"disk space.</p>"
-msgstr ""
-
-#: Settings/DatabaseBackendPage.cpp:96
-msgid ""
-"<p>KPhotoAlbum is using a single index.xml file as its <i>data base</i>. "
-"With lots of images it may take a long time to read this file. You may cut "
-"down this time to approximately half, by checking this check box. The "
-"disadvantage is that the index.xml file is less readable by human eyes.</p>"
-msgstr ""
-
-#: Settings/DatabaseBackendPage.cpp:105
-msgid "SQL Database Settings"
-msgstr "एसक्यूएल डाटाबेस सेटिंग"
-
-#: Settings/DatabaseBackendPage.cpp:112
-#, fuzzy
-#| msgid ""
-#| "Warning! The password is saved as plain text to the configuration file."
-msgid "Warning: The password is saved as plain text to the configuration file."
-msgstr "चेतावनी! पासवर्ड सादा पाठ के रूप मं कान्फिगुरेसन फााइल मं भरे हो ."
 
 #: Settings/ExifPage.cpp:42
 msgid "EXIF/IPTC info to show in the Viewer"
@@ -2755,20 +2685,6 @@ msgstr "पूरा स्क्रीन मं चलाव"
 msgid "Size:"
 msgstr "आकार:"
 
-#: Settings/SettingsData.cpp:197
-msgid ""
-"When reading time information of images, their EXIF info is used. Exif info "
-"may, however, not be supported by your KPhotoAlbum installation, or no valid "
-"information may be in the file. As a backup, KPhotoAlbum may use the "
-"timestamp of the image - this may, however, not be valid in case the image "
-"is scanned in. So the question is, should KPhotoAlbum trust the time stamp "
-"on your images?"
-msgstr ""
-
-#: Settings/SettingsData.cpp:203
-msgid "Trust Time Stamps?"
-msgstr "समय चिनहा मं भरोसा करव?"
-
 #: Settings/ThumbnailsPage.cpp:36
 msgid "Tooltip preview image size:"
 msgstr "औजारयुक्ति प्रिव्यू फोटू आकार:"
@@ -2837,7 +2753,7 @@ msgstr "छोटेफोटू दृस्य मं स्रेनी द�
 msgid "Auto display limit: "
 msgstr "अपने अपन देखाय के सीमा:"
 
-#: Settings/ThumbnailsPage.cpp:98 Settings/GeneralPage.cpp:46
+#: Settings/ThumbnailsPage.cpp:98 Settings/GeneralPage.cpp:50
 msgid "Never"
 msgstr "कभू नइ"
 
@@ -2987,104 +2903,6 @@ msgid ""
 "p>"
 msgstr ""
 
-#: Settings/GeneralPage.cpp:39
-#, fuzzy
-#| msgid "New Images"
-msgid "Loading New Images"
-msgstr "नवा फोटू"
-
-#: Settings/GeneralPage.cpp:44
-msgid "Trust image dates:"
-msgstr "फोटू तारीकयों मं भरोसा करव:"
-
-#: Settings/GeneralPage.cpp:46
-msgid "Always"
-msgstr "हमेसा"
-
-#: Settings/GeneralPage.cpp:46
-msgid "Ask"
-msgstr "पूछव"
-
-#: Settings/GeneralPage.cpp:54
-msgid "Use EXIF orientation information"
-msgstr "एक्सइफ दिसा-निर्धारन जानकारी उपयोग मं लें"
-
-#: Settings/GeneralPage.cpp:56
-msgid "Use EXIF description"
-msgstr "एक्सइफ वर्नन ईस्तमाल करव"
-
-#: Settings/GeneralPage.cpp:59
-msgid "Use the embedded thumbnail in RAW file or halfsized RAW"
-msgstr ""
-
-#: Settings/GeneralPage.cpp:63
-#, fuzzy
-#| msgid "Reorder Thumbnails"
-msgid "Required size for the thumbnail:"
-msgstr "छोटेफोटू रीआर्डर करत हे"
-
-#: Settings/GeneralPage.cpp:85
-#, fuzzy
-#| msgid "Size of histogram columns in datebar:"
-msgid "Size of histogram columns in date bar:"
-msgstr "तारीकपट्टी मं हिस्टोग्राम खंभा के आकार:"
-
-#: Settings/GeneralPage.cpp:100
-msgid "Show splash screen"
-msgstr "स्प्लैस स्क्रीन देखाव"
-
-#: Settings/GeneralPage.cpp:104
-msgid "Category for virtual albums:"
-msgstr "आभासी एलबम बर वर्ग:"
-
-#: Settings/GeneralPage.cpp:125
-msgid ""
-"<p>KPhotoAlbum will try to read the image date from EXIF information in the "
-"image. If that fails it will try to get the date from the file's time stamp."
-"</p><p>However, this information will be wrong if the image was scanned in "
-"(you want the date the image was taken, not the date of the scan).</p><p>If "
-"you only scan images, in contrast to sometimes using a digital camera, you "
-"should reply <b>no</b>. If you never scan images, you should reply <b>yes</"
-"b>, otherwise reply <b>ask</b>. This will allow you to decide whether the "
-"images are from the scanner or the camera, from session to session.</p>"
-msgstr ""
-
-#: Settings/GeneralPage.cpp:136
-msgid ""
-"<p>JPEG images may contain information about rotation. If you have a reason "
-"for not using this information to get a default rotation of your images, "
-"uncheck this check box.</p><p>Note: Your digital camera may not write this "
-"information into the images at all.</p>"
-msgstr ""
-
-#: Settings/GeneralPage.cpp:142
-msgid ""
-"<p>JPEG images may contain a description. Check this checkbox to specify if "
-"you want to use this as a default description for your images.</p>"
-msgstr ""
-
-#: Settings/GeneralPage.cpp:147
-msgid ""
-"<p>KPhotoAlbum shares plugins with other imaging applications, some of which "
-"have the concept of albums. KPhotoAlbum does not have this concept; "
-"nevertheless, for certain plugins to function, KPhotoAlbum behaves to the "
-"plugin system as if it did.</p><p>KPhotoAlbum does this by defining the "
-"current album to be the current view - that is, all the images the browser "
-"offers to display.</p><p>In addition to the current album, KPhotoAlbum must "
-"also be able to give a list of all albums; the list of all albums is defined "
-"in the following way:<ul><li>When KPhotoAlbum's browser displays the content "
-"of a category, say all People, then each item in this category will look "
-"like an album to the plugin.</li><li>Otherwise, the category you specify "
-"using this option will be used; e.g. if you specify People with this option, "
-"then KPhotoAlbum will act as if you had just chosen to display people and "
-"then invoke the plugin which needs to know about all albums.</li></ul></"
-"p><p>Most users would probably want to specify Events here.</p>"
-msgstr ""
-
-#: Settings/GeneralPage.cpp:163
-msgid "Show the KPhotoAlbum splash screen on start up"
-msgstr "सुरू मं केफोटोएलबम स्प्लैस स्क्रीन दिखाव"
-
 #: Settings/SettingsDialog.cpp:67
 #, fuzzy
 #| msgid "Version %1"
@@ -3116,6 +2934,196 @@ msgstr "एक्सइफ/आईपीटीसी जानकारी"
 #: Settings/SettingsDialog.cpp:79
 msgid "Database backend"
 msgstr "डाटाबेस बैकएन्ड"
+
+#: Settings/DatabaseBackendPage.cpp:43
+msgid "Database backend to use"
+msgstr "परयोग मं डाटाबेस बैकएन्ड"
+
+#: Settings/DatabaseBackendPage.cpp:46
+msgid "XML backend (recommended)"
+msgstr "एक्सएमएल बैकएन्ड (अनुसंसित)"
+
+#: Settings/DatabaseBackendPage.cpp:49
+msgid "SQL backend (experimental)"
+msgstr "एसक्यूएल बैकएन्ड (परयोगात्मक)"
+
+#: Settings/DatabaseBackendPage.cpp:53
+msgid "XML Database Setting"
+msgstr "एक्सएमएल डाटाबेस सेटिंग"
+
+#: Settings/DatabaseBackendPage.cpp:57
+msgid "Choose speed over readability for index.xml file"
+msgstr "index.xml फाइल बर पढ़े जा सके के बजाय गति ल चुनव"
+
+#: Settings/DatabaseBackendPage.cpp:58
+msgid "Compress backup file"
+msgstr "बैकअप फाइल संपीडित करव"
+
+#: Settings/DatabaseBackendPage.cpp:62
+msgid "Auto save every:"
+msgstr "अपने अपन सहेजव हर एक:"
+
+#: Settings/DatabaseBackendPage.cpp:65
+msgid "min."
+msgstr "मि."
+
+#: Settings/DatabaseBackendPage.cpp:75
+msgid "Number of backups to keep:"
+msgstr "रखे जाय वाले बैकअप के संख्या:"
+
+#: Settings/DatabaseBackendPage.cpp:80
+msgid "Infinite"
+msgstr "अनगिनत"
+
+#: Settings/DatabaseBackendPage.cpp:85
+msgid ""
+"<p>KPhotoAlbum is capable of backing up the index.xml file by keeping copies "
+"named index.xml~1~ index.xml~2~ etc. and you can use the spinbox to specify "
+"the number of backup files to keep. KPhotoAlbum will delete the oldest "
+"backup file when it reaches the maximum number of backup files.</p><p>The "
+"index.xml file may grow substantially if you have many images, and in that "
+"case it is useful to ask KPhotoAlbum to zip the backup files to preserve "
+"disk space.</p>"
+msgstr ""
+
+#: Settings/DatabaseBackendPage.cpp:95
+msgid ""
+"<p>KPhotoAlbum is using a single index.xml file as its <i>data base</i>. "
+"With lots of images it may take a long time to read this file. You may cut "
+"down this time to approximately half, by checking this check box. The "
+"disadvantage is that the index.xml file is less readable by human eyes.</p>"
+msgstr ""
+
+#: Settings/DatabaseBackendPage.cpp:102
+msgid "SQL Database Settings"
+msgstr "एसक्यूएल डाटाबेस सेटिंग"
+
+#: Settings/DatabaseBackendPage.cpp:109
+#, fuzzy
+#| msgid ""
+#| "Warning! The password is saved as plain text to the configuration file."
+msgid "Warning: The password is saved as plain text to the configuration file."
+msgstr "चेतावनी! पासवर्ड सादा पाठ के रूप मं कान्फिगुरेसन फााइल मं भरे हो ."
+
+#: Settings/GeneralPage.cpp:40
+#, fuzzy
+#| msgid "New Images"
+msgid "Loading New Images"
+msgstr "नवा फोटू"
+
+#: Settings/GeneralPage.cpp:48
+msgid "Trust image dates:"
+msgstr "फोटू तारीकयों मं भरोसा करव:"
+
+#: Settings/GeneralPage.cpp:50
+msgid "Always"
+msgstr "हमेसा"
+
+#: Settings/GeneralPage.cpp:50
+msgid "Ask"
+msgstr "पूछव"
+
+#: Settings/GeneralPage.cpp:57
+msgid "Use EXIF orientation information"
+msgstr "एक्सइफ दिसा-निर्धारन जानकारी उपयोग मं लें"
+
+#: Settings/GeneralPage.cpp:61
+msgid "Use EXIF description"
+msgstr "एक्सइफ वर्नन ईस्तमाल करव"
+
+#: Settings/GeneralPage.cpp:66
+msgid "Use the embedded thumbnail in RAW file or halfsized RAW"
+msgstr ""
+
+#: Settings/GeneralPage.cpp:70
+#, fuzzy
+#| msgid "Reorder Thumbnails"
+msgid "Required size for the thumbnail:"
+msgstr "छोटेफोटू रीआर्डर करत हे"
+
+#: Settings/GeneralPage.cpp:84
+msgid "Histogram"
+msgstr ""
+
+#: Settings/GeneralPage.cpp:91
+msgid "Show histogram:"
+msgstr ""
+
+#: Settings/GeneralPage.cpp:96
+#, fuzzy
+#| msgid "Size of histogram columns in datebar:"
+msgid "Size of histogram columns in date bar:"
+msgstr "तारीकपट्टी मं हिस्टोग्राम खंभा के आकार:"
+
+#: Settings/GeneralPage.cpp:117
+msgid "Show splash screen"
+msgstr "स्प्लैस स्क्रीन देखाव"
+
+#: Settings/GeneralPage.cpp:122
+msgid "Category for virtual albums:"
+msgstr "आभासी एलबम बर वर्ग:"
+
+#: Settings/GeneralPage.cpp:137
+msgid ""
+"<p>KPhotoAlbum will try to read the image date from EXIF information in the "
+"image. If that fails it will try to get the date from the file's time stamp."
+"</p><p>However, this information will be wrong if the image was scanned in "
+"(you want the date the image was taken, not the date of the scan).</p><p>If "
+"you only scan images, in contrast to sometimes using a digital camera, you "
+"should reply <b>no</b>. If you never scan images, you should reply <b>yes</"
+"b>, otherwise reply <b>ask</b>. This will allow you to decide whether the "
+"images are from the scanner or the camera, from session to session.</p>"
+msgstr ""
+
+#: Settings/GeneralPage.cpp:148
+msgid ""
+"<p>JPEG images may contain information about rotation. If you have a reason "
+"for not using this information to get a default rotation of your images, "
+"uncheck this check box.</p><p>Note: Your digital camera may not write this "
+"information into the images at all.</p>"
+msgstr ""
+
+#: Settings/GeneralPage.cpp:154
+msgid ""
+"<p>JPEG images may contain a description. Check this checkbox to specify if "
+"you want to use this as a default description for your images.</p>"
+msgstr ""
+
+#: Settings/GeneralPage.cpp:159
+msgid ""
+"<p>KPhotoAlbum shares plugins with other imaging applications, some of which "
+"have the concept of albums. KPhotoAlbum does not have this concept; "
+"nevertheless, for certain plugins to function, KPhotoAlbum behaves to the "
+"plugin system as if it did.</p><p>KPhotoAlbum does this by defining the "
+"current album to be the current view - that is, all the images the browser "
+"offers to display.</p><p>In addition to the current album, KPhotoAlbum must "
+"also be able to give a list of all albums; the list of all albums is defined "
+"in the following way:<ul><li>When KPhotoAlbum's browser displays the content "
+"of a category, say all People, then each item in this category will look "
+"like an album to the plugin.</li><li>Otherwise, the category you specify "
+"using this option will be used; e.g. if you specify People with this option, "
+"then KPhotoAlbum will act as if you had just chosen to display people and "
+"then invoke the plugin which needs to know about all albums.</li></ul></"
+"p><p>Most users would probably want to specify Events here.</p>"
+msgstr ""
+
+#: Settings/GeneralPage.cpp:175
+msgid "Show the KPhotoAlbum splash screen on start up"
+msgstr "सुरू मं केफोटोएलबम स्प्लैस स्क्रीन दिखाव"
+
+#: Settings/SettingsData.cpp:198
+msgid ""
+"When reading time information of images, their EXIF info is used. Exif info "
+"may, however, not be supported by your KPhotoAlbum installation, or no valid "
+"information may be in the file. As a backup, KPhotoAlbum may use the "
+"timestamp of the image - this may, however, not be valid in case the image "
+"is scanned in. So the question is, should KPhotoAlbum trust the time stamp "
+"on your images?"
+msgstr ""
+
+#: Settings/SettingsData.cpp:204
+msgid "Trust Time Stamps?"
+msgstr "समय चिनहा मं भरोसा करव?"
 
 #: ThumbnailView/ThumbnailDND.cpp:89
 msgid ""
