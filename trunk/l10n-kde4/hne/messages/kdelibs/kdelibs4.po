@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-01 05:27+0100\n"
+"POT-Creation-Date: 2011-11-17 04:04+0100\n"
 "PO-Revision-Date: 2009-02-10 20:44+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -2687,15 +2687,15 @@ msgstr "इंक्रीमेंटल हिज्जा जांच"
 msgid "Too many misspelled words. As-you-type spell checking disabled."
 msgstr "बहुत अकन गलत हिज्जा के सब्द हे. टाइप करे के समय हिज्जा जांच बंद रखे गे हे"
 
-#: kde3support/kdeui/k3textedit.cpp:232 kdeui/widgets/ktextedit.cpp:495
+#: kde3support/kdeui/k3textedit.cpp:232 kdeui/widgets/ktextedit.cpp:493
 msgid "Check Spelling..."
 msgstr "हिज्जा जांचव"
 
-#: kde3support/kdeui/k3textedit.cpp:238 kdeui/widgets/ktextedit.cpp:498
+#: kde3support/kdeui/k3textedit.cpp:238 kdeui/widgets/ktextedit.cpp:496
 msgid "Auto Spell Check"
 msgstr "अपने अपन हिज्जा जांच"
 
-#: kde3support/kdeui/k3textedit.cpp:242 kdeui/widgets/ktextedit.cpp:502
+#: kde3support/kdeui/k3textedit.cpp:242 kdeui/widgets/ktextedit.cpp:500
 msgid "Allow Tabulations"
 msgstr "सारनीकरन स्वीकारव"
 
@@ -9695,6 +9695,32 @@ msgctxt "@item:inmenu Text Completion"
 msgid "Default"
 msgstr "डिफाल्ट"
 
+#: kdeui/widgets/ktextedit.cpp:527
+#, fuzzy
+msgid "Speak Text"
+msgstr "मनमाफिक पाठ बोलव"
+
+#: kdeui/widgets/ktextedit.cpp:542
+msgid "Starting Jovie Text-to-Speech Service Failed"
+msgstr ""
+
+#: kdeui/widgets/ktextedit.cpp:631
+#, fuzzy, kde-format
+msgid "No suggestions for %1"
+msgstr "सुझाव"
+
+#: kdeui/widgets/ktextedit.cpp:642
+msgid "Ignore"
+msgstr "अनदेखा करव"
+
+#: kdeui/widgets/ktextedit.cpp:643
+msgid "Add to Dictionary"
+msgstr "सब्दकोस मं जोड़व"
+
+#: kdeui/widgets/ktextedit.cpp:788
+msgid "Nothing to spell check."
+msgstr "हिज्जा जांच बर कुछ नइ."
+
 #: kdeui/widgets/kpixmapregionselectorwidget.cpp:195
 msgid "Image Operations"
 msgstr "फोटू आपरेसन्स"
@@ -9895,32 +9921,6 @@ msgstr "सुपरस्क्रिप्ट"
 #: kdeui/widgets/ksqueezedtextlabel.cpp:165
 msgid "&Copy Full Text"
 msgstr "पूरा पाठ के नकल बनाव (&C)"
-
-#: kdeui/widgets/ktextedit.cpp:526
-#, fuzzy
-msgid "Speak Text"
-msgstr "मनमाफिक पाठ बोलव"
-
-#: kdeui/widgets/ktextedit.cpp:541
-msgid "Starting Jovie Text-to-Speech Service Failed"
-msgstr ""
-
-#: kdeui/widgets/ktextedit.cpp:630
-#, fuzzy, kde-format
-msgid "No suggestions for %1"
-msgstr "सुझाव"
-
-#: kdeui/widgets/ktextedit.cpp:641
-msgid "Ignore"
-msgstr "अनदेखा करव"
-
-#: kdeui/widgets/ktextedit.cpp:642
-msgid "Add to Dictionary"
-msgstr "सब्दकोस मं जोड़व"
-
-#: kdeui/widgets/ktextedit.cpp:787
-msgid "Nothing to spell check."
-msgstr "हिज्जा जांच बर कुछ नइ."
 
 #: kdeui/widgets/ktimezonewidget.cpp:66
 msgctxt "Define an area in the time zone, like a town area"
@@ -10191,10 +10191,6 @@ msgstr "औजारपट्टी"
 msgid "No text"
 msgstr "कोई पाठ नइ"
 
-#: kdewebkit/kwebpage.cpp:126 khtml/khtml_ext.cpp:879
-msgid "Overwrite File?"
-msgstr "फाइल ल मेटाय के लिखव?"
-
 #: kdewidgets/makekdewidgets.cpp:84
 msgid "Builds Qt widget plugins from an ini style description file."
 msgstr "एक ini सैली के वर्नन फाइल से क्यूटी विजेट प्लगइन बनाथे."
@@ -10359,6 +10355,10 @@ msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr ""
 "फाइल नाम \"%1\"  पहिली से ही अस्तित्व मं हे. का आप मन एखर ऊपर ही मेटाय के लिखना चाहू?"
+
+#: khtml/khtml_ext.cpp:879
+msgid "Overwrite File?"
+msgstr "फाइल ल मेटाय के लिखव?"
 
 #: khtml/khtml_ext.cpp:879
 msgid "Overwrite"
@@ -13716,7 +13716,7 @@ msgstr "-बेनाम-"
 msgid "No service matching the requirements was found"
 msgstr "जरूरत से मिलत जुलत कोनो सेवा नइ मिलिस"
 
-#: kdecore/services/kservice.h:553
+#: kdecore/services/kservice.h:555
 #, kde-format
 msgid "The service '%1' does not provide an interface '%2' with keyword '%3'"
 msgstr "सेवा '%1' इंटरफेस '%2' कुंजीसब्द '%3' के साथ प्रदाय नइ करथे "
