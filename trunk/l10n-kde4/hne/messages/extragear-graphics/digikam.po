@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-17 02:58+0100\n"
+"POT-Creation-Date: 2011-11-18 03:17+0100\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -2606,7 +2606,9 @@ msgstr "नाम:"
 msgid "Date:"
 msgstr "तारीकः"
 
-#: digikam/utils/tooltipfiller.cpp:90 libs/widgets/q3support/thumbbar.cpp:1455
+#: digikam/utils/tooltipfiller.cpp:90
+#: imageplugins/transform/ratiocroptool.cpp:373
+#: libs/widgets/q3support/thumbbar.cpp:1455
 #: utilities/cameragui/views/cameraiconviewtooltip.cpp:155
 msgid "Size:"
 msgstr "आकारः"
@@ -2637,7 +2639,7 @@ msgid "Unknown"
 msgstr "अग्यात"
 
 #: digikam/utils/tooltipfiller.cpp:114
-#: imageplugins/transform/ratiocroptool.cpp:1026
+#: imageplugins/transform/ratiocroptool.cpp:1030
 #: libs/imageproperties/imagepropertiessidebardb.cpp:538
 #: utilities/cameragui/views/cameraiconviewtooltip.cpp:181
 #, kde-format
@@ -5087,7 +5089,6 @@ msgid "Enable this option to maintain aspect ratio with new image sizes."
 msgstr ""
 
 #: imageplugins/transform/resizetool.cpp:215
-#: imageplugins/transform/ratiocroptool.cpp:364
 msgid "Width:"
 msgstr "चौडाईः"
 
@@ -5097,7 +5098,6 @@ msgid "Set here the new image width in pixels."
 msgstr ""
 
 #: imageplugins/transform/resizetool.cpp:223
-#: imageplugins/transform/ratiocroptool.cpp:386
 msgid "Height:"
 msgstr "ऊँचाईः"
 
@@ -5503,8 +5503,8 @@ msgid "Okay"
 msgstr ""
 
 #: imageplugins/transform/ratiocroptool.cpp:221
-#: imageplugins/transform/ratiocroptool.cpp:1071
-#: imageplugins/transform/ratiocroptool.cpp:1077
+#: imageplugins/transform/ratiocroptool.cpp:1074
+#: imageplugins/transform/ratiocroptool.cpp:1080
 msgid "Aspect Ratio Crop"
 msgstr "आस्पेक्ट रेसो काँट-छाँट"
 
@@ -5547,7 +5547,7 @@ msgid "Custom"
 msgstr "मनमाफिक"
 
 #: imageplugins/transform/ratiocroptool.cpp:299
-#: imageplugins/transform/ratiocroptool.cpp:807
+#: imageplugins/transform/ratiocroptool.cpp:811
 msgid "Golden Ratio"
 msgstr "सोना अनुपात"
 
@@ -5626,163 +5626,160 @@ msgstr "इहां वांछित मनमाफिक आस्पेक
 msgid "Set here the desired custom aspect denominator value."
 msgstr "इहां वांछित मनमाफिक आस्पेक्ट डीनामिनेटर मान ल सेट करव."
 
-#: imageplugins/transform/ratiocroptool.cpp:357
-#: imageplugins/transform/ratiocroptool.cpp:380
+#: imageplugins/transform/ratiocroptool.cpp:356
+#: libs/template/templateviewer.cpp:163
+#, fuzzy
+#| msgid "Erosion:"
+msgid "Position:"
+msgstr "इरोजन:"
+
+#: imageplugins/transform/ratiocroptool.cpp:360
+#: imageplugins/transform/ratiocroptool.cpp:366
 msgid "Set here the top left selection corner position for cropping."
 msgstr ""
 
-#: imageplugins/transform/ratiocroptool.cpp:358
-#, fuzzy
-msgctxt "top left corner position for cropping"
-msgid "X:"
-msgstr "एक्स:"
-
-#: imageplugins/transform/ratiocroptool.cpp:365
+#: imageplugins/transform/ratiocroptool.cpp:377
 msgid "Set here the width selection for cropping."
 msgstr ""
 
-#: imageplugins/transform/ratiocroptool.cpp:374
+#: imageplugins/transform/ratiocroptool.cpp:386
 msgid "Set width position to center."
 msgstr ""
 
-#: imageplugins/transform/ratiocroptool.cpp:379
-msgid "Y:"
-msgstr "वाय:"
-
-#: imageplugins/transform/ratiocroptool.cpp:387
+#: imageplugins/transform/ratiocroptool.cpp:389
 msgid "Set here the height selection for cropping."
 msgstr ""
 
-#: imageplugins/transform/ratiocroptool.cpp:396
+#: imageplugins/transform/ratiocroptool.cpp:398
 msgid "Set height position to center."
 msgstr ""
 
-#: imageplugins/transform/ratiocroptool.cpp:420
+#: imageplugins/transform/ratiocroptool.cpp:424
 #, fuzzy
 msgid "Crop Settings"
 msgstr "लोकल सेटिंग"
 
-#: imageplugins/transform/ratiocroptool.cpp:427
+#: imageplugins/transform/ratiocroptool.cpp:431
 #, fuzzy
 #| msgid "Geometry"
 msgid "Geometric form:"
 msgstr "ज्यामिति"
 
-#: imageplugins/transform/ratiocroptool.cpp:429
+#: imageplugins/transform/ratiocroptool.cpp:433
 msgid "Rules of Thirds"
 msgstr "तीसर के नियम"
 
-#: imageplugins/transform/ratiocroptool.cpp:430
+#: imageplugins/transform/ratiocroptool.cpp:434
 #, fuzzy
 msgid "Diagonal Method"
 msgstr "मूल लेखक"
 
-#: imageplugins/transform/ratiocroptool.cpp:431
+#: imageplugins/transform/ratiocroptool.cpp:435
 msgid "Harmonious Triangles"
 msgstr "हारमोनियस त्रिभुज"
 
-#: imageplugins/transform/ratiocroptool.cpp:432
+#: imageplugins/transform/ratiocroptool.cpp:436
 msgid "Golden Mean"
 msgstr "गोल्डन मीन"
 
-#: imageplugins/transform/ratiocroptool.cpp:433
+#: imageplugins/transform/ratiocroptool.cpp:437
 #, fuzzy
 #| msgid "None"
 msgctxt "no geometric form"
 msgid "None"
 msgstr "कुछ नइ"
 
-#: imageplugins/transform/ratiocroptool.cpp:436
+#: imageplugins/transform/ratiocroptool.cpp:440
 msgid ""
 "With this option, you can display guide lines to help compose your "
 "photograph."
 msgstr ""
 
-#: imageplugins/transform/ratiocroptool.cpp:439
+#: imageplugins/transform/ratiocroptool.cpp:443
 msgid "Golden sections"
 msgstr "सोना खण्ड"
 
-#: imageplugins/transform/ratiocroptool.cpp:440
+#: imageplugins/transform/ratiocroptool.cpp:444
 msgid "Enable this option to show golden sections."
 msgstr "सोना खण्ड प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: imageplugins/transform/ratiocroptool.cpp:442
+#: imageplugins/transform/ratiocroptool.cpp:446
 msgid "Golden spiral sections"
 msgstr "सोना स्पिरल खण्ड"
 
-#: imageplugins/transform/ratiocroptool.cpp:443
+#: imageplugins/transform/ratiocroptool.cpp:447
 msgid "Enable this option to show golden spiral sections."
 msgstr ""
 
-#: imageplugins/transform/ratiocroptool.cpp:445
+#: imageplugins/transform/ratiocroptool.cpp:449
 msgid "Golden spiral"
 msgstr "सोना सर्पिल"
 
-#: imageplugins/transform/ratiocroptool.cpp:446
+#: imageplugins/transform/ratiocroptool.cpp:450
 #, fuzzy
 #| msgid "Enable this option to show golden triangles."
 msgid "Enable this option to show a golden spiral guide."
 msgstr "सोना त्रिभुज करे बर ए विकल्प सेट करव."
 
-#: imageplugins/transform/ratiocroptool.cpp:448
+#: imageplugins/transform/ratiocroptool.cpp:452
 msgid "Golden triangles"
 msgstr "सोना त्रिभुज"
 
-#: imageplugins/transform/ratiocroptool.cpp:449
+#: imageplugins/transform/ratiocroptool.cpp:453
 msgid "Enable this option to show golden triangles."
 msgstr "सोना त्रिभुज करे बर ए विकल्प सेट करव."
 
-#: imageplugins/transform/ratiocroptool.cpp:451
+#: imageplugins/transform/ratiocroptool.cpp:455
 msgid "Flip horizontally"
 msgstr "आड़ा लहुटाव"
 
-#: imageplugins/transform/ratiocroptool.cpp:452
+#: imageplugins/transform/ratiocroptool.cpp:456
 #, fuzzy
 #| msgid "Enable this option to show golden triangles."
 msgid "Enable this option to flip the guidelines horizontally."
 msgstr "सोना त्रिभुज करे बर ए विकल्प सेट करव."
 
-#: imageplugins/transform/ratiocroptool.cpp:454
+#: imageplugins/transform/ratiocroptool.cpp:458
 msgid "Flip vertically"
 msgstr "खड़ा लहुटाव"
 
-#: imageplugins/transform/ratiocroptool.cpp:455
+#: imageplugins/transform/ratiocroptool.cpp:459
 #, fuzzy
 #| msgid "Enable this option to show golden triangles."
 msgid "Enable this option to flip the guidelines vertically."
 msgstr "सोना त्रिभुज करे बर ए विकल्प सेट करव."
 
-#: imageplugins/transform/ratiocroptool.cpp:457
+#: imageplugins/transform/ratiocroptool.cpp:461
 msgid "Color and width:"
 msgstr "रंग अउ चौड़ाई:"
 
-#: imageplugins/transform/ratiocroptool.cpp:463
+#: imageplugins/transform/ratiocroptool.cpp:467
 msgid "Set here the color used to draw composition guides."
 msgstr ""
 
-#: imageplugins/transform/ratiocroptool.cpp:464
+#: imageplugins/transform/ratiocroptool.cpp:468
 msgid "Set here the width in pixels used to draw composition guides."
 msgstr ""
 
-#: imageplugins/transform/ratiocroptool.cpp:483
+#: imageplugins/transform/ratiocroptool.cpp:487
 #, fuzzy
 #| msgid "Composition guide:"
 msgid "Composition Guides"
 msgstr "कम्पोजिसन गाइड:"
 
-#: imageplugins/transform/ratiocroptool.cpp:785
+#: imageplugins/transform/ratiocroptool.cpp:789
 #, fuzzy
 msgctxt "custom ratio crop settings"
 msgid "Custom"
 msgstr "मनमाफिक"
 
-#: imageplugins/transform/ratiocroptool.cpp:808
+#: imageplugins/transform/ratiocroptool.cpp:812
 #, fuzzy
 #| msgid "Maintain aspect ratio"
 msgid "Current aspect ratio"
 msgstr "आस्पेक्ट रेसो बनाए रखव"
 
-#: imageplugins/transform/ratiocroptool.cpp:809
+#: imageplugins/transform/ratiocroptool.cpp:813
 #, fuzzy
 msgctxt "no aspect ratio"
 msgid "None"
@@ -10883,12 +10880,6 @@ msgstr "कुछ नइ करव"
 #| msgid "Name:"
 msgid "Names:"
 msgstr "नाम:"
-
-#: libs/template/templateviewer.cpp:163
-#, fuzzy
-#| msgid "Erosion:"
-msgid "Position:"
-msgstr "इरोजन:"
 
 #: libs/template/templateviewer.cpp:169
 #, fuzzy
@@ -20221,6 +20212,14 @@ msgid ""
 "Build date: %1 (target: %2)\n"
 "Rev.: %3"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "top left corner position for cropping"
+#~ msgid "X:"
+#~ msgstr "एक्स:"
+
+#~ msgid "Y:"
+#~ msgstr "वाय:"
 
 #~ msgid "Red:"
 #~ msgstr "लाल:"
