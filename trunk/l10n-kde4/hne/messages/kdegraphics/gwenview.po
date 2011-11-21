@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-20 04:13+0100\n"
+"POT-Creation-Date: 2011-11-21 04:41+0100\n"
 "PO-Revision-Date: 2009-02-26 15:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -155,65 +155,70 @@ msgstr "एखर साथ खोलव"
 msgid "Other Application..."
 msgstr "अऊ दूसर अनुपरयोग..."
 
-#: app/filtercontroller.cpp:128
-msgid "Name contains"
-msgstr "नाम मं हे"
+#: app/fullscreencontent.cpp:111
+msgctxt "@info:tooltip"
+msgid "Configure Full Screen Mode"
+msgstr "पूरा स्क्रीन मोड कान्फिगर करव"
 
-#: app/filtercontroller.cpp:129
-msgid "Name does not contain"
-msgstr "नाम मं नइ हे"
+#: app/fullscreencontent.cpp:277
+msgctxt "@item:intext fullscreen meta info separator"
+msgid ", "
+msgstr ", "
 
-#: app/filtercontroller.cpp:231
-msgid "Date >="
-msgstr "तारीक >="
+#: app/fullscreencontent.cpp:337
+#, kde-format
+msgctxt "Slideshow interval in seconds"
+msgid "%1 sec"
+msgid_plural "%1 secs"
+msgstr[0] "%1 सेक."
+msgstr[1] "%1 सेक."
 
-#: app/filtercontroller.cpp:232
-msgid "Date ="
-msgstr "तारीक ="
+#: app/gvcore.cpp:84
+msgctxt "@info"
+msgid "No image format selected."
+msgstr "कोई फोटू फार्मेट चुने नइ गे हे."
 
-#: app/filtercontroller.cpp:233
-msgid "Date <="
-msgstr "तारीक <="
+#: app/gvcore.cpp:97
+#, kde-format
+msgctxt "@info"
+msgid "Gwenview cannot save images as %1."
+msgstr "ग्वेनव्यू फोटू मन ल %1 जइसन सहेज नइ सकिस."
 
-#: app/filtercontroller.cpp:324
-msgid "Rating >="
-msgstr "रेटिंग >="
+#: app/gvcore.cpp:182
+msgid "Save using another format"
+msgstr "अऊ दूसर फारमेट के साथ सहेजव"
 
-#: app/filtercontroller.cpp:325
-msgid "Rating ="
-msgstr "रेटिंग ="
+#: app/gvcore.cpp:185
+#, kde-format
+msgid "Gwenview cannot save images in '%1' format."
+msgstr "ग्वेनव्यू फोटू मन ल '%1' फारमेट मं सहेज नइ सकिस."
 
-#: app/filtercontroller.cpp:326
-msgid "Rating <="
-msgstr "रेटिंग <="
+#: app/gvcore.cpp:208
+#, kde-format
+msgctxt "@info"
+msgid ""
+"A file named <filename>%1</filename> already exists.\n"
+"Are you sure you want to overwrite it?"
+msgstr ""
 
-#: app/filtercontroller.cpp:421
-msgid "Tagged"
-msgstr "टैग्ड"
+#: app/gvcore.cpp:223 app/gvcore.cpp:246
+#, kde-format
+msgctxt "@info"
+msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
+msgstr ""
 
-#: app/filtercontroller.cpp:422
-msgid "Not Tagged"
-msgstr "टैग्ड नइ"
+#: app/gvcore.cpp:264
+msgid "You are now viewing the new document."
+msgstr ""
 
-#: app/filtercontroller.cpp:556
-msgctxt "@action:inmenu"
-msgid "Filter by Name"
-msgstr "नाम से छानव"
+#: app/gvcore.cpp:266
+msgid "Go back to the original"
+msgstr ""
 
-#: app/filtercontroller.cpp:557
-msgctxt "@action:inmenu"
-msgid "Filter by Date"
-msgstr "तारीक से छानव"
-
-#: app/filtercontroller.cpp:563
-msgctxt "@action:inmenu"
-msgid "Filter by Rating"
-msgstr "दरजा से छानव"
-
-#: app/filtercontroller.cpp:564
-msgctxt "@action:inmenu"
-msgid "Filter by Tag"
-msgstr "टैग से छानव"
+#: app/gvcore.cpp:310 lib/document/documentjob.cpp:78
+msgctxt "@info"
+msgid "Gwenview cannot edit this kind of image."
+msgstr "ग्वेनव्यू अइसन फोटू मन के संपादन नइ कर सके"
 
 #: app/imagemetainfodialog.cpp:125
 #, fuzzy
@@ -221,6 +226,71 @@ msgstr "टैग से छानव"
 msgctxt "@title:window"
 msgid "Meta Information"
 msgstr "मेटा जानकारी"
+
+#: app/imageopscontextmanageritem.cpp:80
+msgctxt "@title actions category - means actions changing image"
+msgid "Edit"
+msgstr "संपादन"
+
+#: app/imageopscontextmanageritem.cpp:82
+msgid "Rotate Left"
+msgstr "डेरी मुड़ें"
+
+#: app/imageopscontextmanageritem.cpp:87
+msgid "Rotate Right"
+msgstr "जेवनी मुड़ें"
+
+#: app/imageopscontextmanageritem.cpp:92
+msgid "Mirror"
+msgstr "प्रतिबिंब"
+
+#: app/imageopscontextmanageritem.cpp:96
+msgid "Flip"
+msgstr "लहुटाव"
+
+#: app/imageopscontextmanageritem.cpp:100 lib/resize/resizeimagedialog.cpp:50
+msgid "Resize"
+msgstr "आकार बदलव"
+
+#. i18n: file: lib/crop/cropwidget.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
+#: app/imageopscontextmanageritem.cpp:105 lib/crop/cropimageoperation.cpp:70
+#: lib/crop/cropwidget.cpp:163 rc.cpp:174
+msgid "Crop"
+msgstr "काँट छाँट करव"
+
+#: app/imageopscontextmanageritem.cpp:110
+msgid "Red Eye Reduction"
+msgstr "रेड आई रिडक्सन मोड"
+
+#: app/imageopscontextmanageritem.cpp:137
+msgid "Image Operations"
+msgstr "फोटू आपरेसन्स"
+
+#: app/saveallhelper.cpp:57
+msgctxt "@info:progress saving all image changes"
+msgid "Saving..."
+msgstr "सहेजत हे..."
+
+#: app/saveallhelper.cpp:58
+msgid "&Stop"
+msgstr "रुकव (&S)"
+
+#: app/saveallhelper.cpp:83
+#, kde-format
+msgctxt "@info"
+msgid "One document could not be saved:"
+msgid_plural "%1 documents could not be saved:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: app/saveallhelper.cpp:107
+#, kde-format
+msgctxt ""
+"@info %1 is the name of the document which failed to save, %2 is the reason "
+"for the failure"
+msgid "<filename>%1</filename>: %2"
+msgstr "<filename>%1</filename>: %2"
 
 #: app/infocontextmanageritem.cpp:168
 #, kde-format
@@ -285,28 +355,6 @@ msgctxt "@label. The two parameters are strings like '2 folders' and '1 file'."
 msgid "%1 and %2 selected"
 msgstr "%1 फोल्डर अउ %2 फाइल मन ल चुने गिस"
 
-#: app/kipiexportaction.cpp:51
-msgid "Last Used Plugin"
-msgstr ""
-
-#: app/kipiexportaction.cpp:53
-#, fuzzy
-#| msgid "&Plugins"
-msgid "Other Plugins"
-msgstr "प्लगइन्स (&l)"
-
-#: app/kipiexportaction.cpp:63 app/kipiinterface.cpp:303
-#, fuzzy
-#| msgid "No Plugin"
-msgid "No Plugin Found"
-msgstr "कोई प्लगइन नइ हे"
-
-#: app/kipiexportaction.cpp:76
-#, fuzzy
-#| msgid "Square"
-msgid "Share"
-msgstr "वर्ग"
-
 #: app/kipiimagecollectionselector.cpp:54
 #, kde-format
 msgctxt "%1 is collection name, %2 is image count in collection"
@@ -370,6 +418,12 @@ msgstr "संग्रह"
 #| msgid "Saving..."
 msgid "Loading..."
 msgstr "सहेजत हे..."
+
+#: app/kipiinterface.cpp:303 app/kipiexportaction.cpp:63
+#, fuzzy
+#| msgid "No Plugin"
+msgid "No Plugin Found"
+msgstr "कोई प्लगइन नइ हे"
 
 #: app/kipiuploadwidget.cpp:43
 #, kde-format
@@ -573,31 +627,6 @@ msgstr[1] "%1 फोटू सुधारे गें."
 msgid "If you quit now, your changes will be lost."
 msgstr "यदि आप मन अभी बाहिर होही, आप मन के बदलाव गंवा हो जाही."
 
-#: app/saveallhelper.cpp:57
-msgctxt "@info:progress saving all image changes"
-msgid "Saving..."
-msgstr "सहेजत हे..."
-
-#: app/saveallhelper.cpp:58
-msgid "&Stop"
-msgstr "रुकव (&S)"
-
-#: app/saveallhelper.cpp:83
-#, kde-format
-msgctxt "@info"
-msgid "One document could not be saved:"
-msgid_plural "%1 documents could not be saved:"
-msgstr[0] ""
-msgstr[1] ""
-
-#: app/saveallhelper.cpp:107
-#, kde-format
-msgctxt ""
-"@info %1 is the name of the document which failed to save, %2 is the reason "
-"for the failure"
-msgid "<filename>%1</filename>: %2"
-msgstr "<filename>%1</filename>: %2"
-
 #: app/savebar.cpp:86
 msgid ""
 "You have modified many images. To avoid memory problems, you should save "
@@ -690,70 +719,21 @@ msgid ""
 "This image has been modified. Reloading it will discard all your changes."
 msgstr ""
 
-#: app/fullscreencontent.cpp:111
-msgctxt "@info:tooltip"
-msgid "Configure Full Screen Mode"
-msgstr "पूरा स्क्रीन मोड कान्फिगर करव"
-
-#: app/fullscreencontent.cpp:277
-msgctxt "@item:intext fullscreen meta info separator"
-msgid ", "
-msgstr ", "
-
-#: app/fullscreencontent.cpp:337
-#, kde-format
-msgctxt "Slideshow interval in seconds"
-msgid "%1 sec"
-msgid_plural "%1 secs"
-msgstr[0] "%1 सेक."
-msgstr[1] "%1 सेक."
-
-#: app/gvcore.cpp:84
-msgctxt "@info"
-msgid "No image format selected."
-msgstr "कोई फोटू फार्मेट चुने नइ गे हे."
-
-#: app/gvcore.cpp:97
-#, kde-format
-msgctxt "@info"
-msgid "Gwenview cannot save images as %1."
-msgstr "ग्वेनव्यू फोटू मन ल %1 जइसन सहेज नइ सकिस."
-
-#: app/gvcore.cpp:182
-msgid "Save using another format"
-msgstr "अऊ दूसर फारमेट के साथ सहेजव"
-
-#: app/gvcore.cpp:185
-#, kde-format
-msgid "Gwenview cannot save images in '%1' format."
-msgstr "ग्वेनव्यू फोटू मन ल '%1' फारमेट मं सहेज नइ सकिस."
-
-#: app/gvcore.cpp:208
-#, kde-format
-msgctxt "@info"
-msgid ""
-"A file named <filename>%1</filename> already exists.\n"
-"Are you sure you want to overwrite it?"
+#: app/kipiexportaction.cpp:51
+msgid "Last Used Plugin"
 msgstr ""
 
-#: app/gvcore.cpp:223 app/gvcore.cpp:246
-#, kde-format
-msgctxt "@info"
-msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
-msgstr ""
+#: app/kipiexportaction.cpp:53
+#, fuzzy
+#| msgid "&Plugins"
+msgid "Other Plugins"
+msgstr "प्लगइन्स (&l)"
 
-#: app/gvcore.cpp:264
-msgid "You are now viewing the new document."
-msgstr ""
-
-#: app/gvcore.cpp:266
-msgid "Go back to the original"
-msgstr ""
-
-#: app/gvcore.cpp:310 lib/document/documentjob.cpp:78
-msgctxt "@info"
-msgid "Gwenview cannot edit this kind of image."
-msgstr "ग्वेनव्यू अइसन फोटू मन के संपादन नइ कर सके"
+#: app/kipiexportaction.cpp:76
+#, fuzzy
+#| msgid "Square"
+msgid "Share"
+msgstr "वर्ग"
 
 #: app/semanticinfocontextmanageritem.cpp:140
 msgid "Semantic Information"
@@ -847,45 +827,89 @@ msgid_plural "%1 documents"
 msgstr[0] "%1 कागद"
 msgstr[1] "%1 कागद"
 
-#: app/imageopscontextmanageritem.cpp:80
-msgctxt "@title actions category - means actions changing image"
-msgid "Edit"
-msgstr "संपादन"
+#: app/filtercontroller.cpp:128
+msgid "Name contains"
+msgstr "नाम मं हे"
 
-#: app/imageopscontextmanageritem.cpp:82
-msgid "Rotate Left"
-msgstr "डेरी मुड़ें"
+#: app/filtercontroller.cpp:129
+msgid "Name does not contain"
+msgstr "नाम मं नइ हे"
 
-#: app/imageopscontextmanageritem.cpp:87
-msgid "Rotate Right"
-msgstr "जेवनी मुड़ें"
+#: app/filtercontroller.cpp:231
+msgid "Date >="
+msgstr "तारीक >="
 
-#: app/imageopscontextmanageritem.cpp:92
-msgid "Mirror"
-msgstr "प्रतिबिंब"
+#: app/filtercontroller.cpp:232
+msgid "Date ="
+msgstr "तारीक ="
 
-#: app/imageopscontextmanageritem.cpp:96
-msgid "Flip"
-msgstr "लहुटाव"
+#: app/filtercontroller.cpp:233
+msgid "Date <="
+msgstr "तारीक <="
 
-#: app/imageopscontextmanageritem.cpp:100 lib/resize/resizeimagedialog.cpp:50
-msgid "Resize"
-msgstr "आकार बदलव"
+#: app/filtercontroller.cpp:324
+msgid "Rating >="
+msgstr "रेटिंग >="
 
-#. i18n: file: lib/crop/cropwidget.ui:20
-#. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
-#: app/imageopscontextmanageritem.cpp:105 lib/crop/cropimageoperation.cpp:70
-#: lib/crop/cropwidget.cpp:163 rc.cpp:174
-msgid "Crop"
-msgstr "काँट छाँट करव"
+#: app/filtercontroller.cpp:325
+msgid "Rating ="
+msgstr "रेटिंग ="
 
-#: app/imageopscontextmanageritem.cpp:110
-msgid "Red Eye Reduction"
-msgstr "रेड आई रिडक्सन मोड"
+#: app/filtercontroller.cpp:326
+msgid "Rating <="
+msgstr "रेटिंग <="
 
-#: app/imageopscontextmanageritem.cpp:137
-msgid "Image Operations"
-msgstr "फोटू आपरेसन्स"
+#: app/filtercontroller.cpp:421
+msgid "Tagged"
+msgstr "टैग्ड"
+
+#: app/filtercontroller.cpp:422
+msgid "Not Tagged"
+msgstr "टैग्ड नइ"
+
+#: app/filtercontroller.cpp:556
+msgctxt "@action:inmenu"
+msgid "Filter by Name"
+msgstr "नाम से छानव"
+
+#: app/filtercontroller.cpp:557
+msgctxt "@action:inmenu"
+msgid "Filter by Date"
+msgstr "तारीक से छानव"
+
+#: app/filtercontroller.cpp:563
+msgctxt "@action:inmenu"
+msgid "Filter by Rating"
+msgstr "दरजा से छानव"
+
+#: app/filtercontroller.cpp:564
+msgctxt "@action:inmenu"
+msgid "Filter by Tag"
+msgstr "टैग से छानव"
+
+#: importer/main.cpp:40
+#, fuzzy
+#| msgid "Gwenview KPart"
+msgid "Gwenview Importer"
+msgstr "ग्वेन-व्यू के-पार्ट"
+
+#: importer/main.cpp:42
+#, fuzzy
+#| msgid "Import"
+msgid "Photo Importer"
+msgstr "आयात"
+
+#: importer/main.cpp:44
+#, fuzzy
+#| msgid "Copyright 2000-2008 Aurélien Gâteau"
+msgid "Copyright 2009-2010 Aurélien Gâteau"
+msgstr "कापीराइट 2000-2008, ओरेलिएन गातेऊ"
+
+#: importer/main.cpp:53
+#, fuzzy
+#| msgid "Create Folder"
+msgid "Source folder"
+msgstr "फोल्डर बनाव"
 
 #: importer/filenameformater.cpp:103
 msgid "Shooting date"
@@ -1032,30 +1056,6 @@ msgctxt "%1 is the importer keyword, %2 is keyword explanation"
 msgid "%1: %2"
 msgstr "%1x%2"
 
-#: importer/main.cpp:40
-#, fuzzy
-#| msgid "Gwenview KPart"
-msgid "Gwenview Importer"
-msgstr "ग्वेन-व्यू के-पार्ट"
-
-#: importer/main.cpp:42
-#, fuzzy
-#| msgid "Import"
-msgid "Photo Importer"
-msgstr "आयात"
-
-#: importer/main.cpp:44
-#, fuzzy
-#| msgid "Copyright 2000-2008 Aurélien Gâteau"
-msgid "Copyright 2009-2010 Aurélien Gâteau"
-msgstr "कापीराइट 2000-2008, ओरेलिएन गातेऊ"
-
-#: importer/main.cpp:53
-#, fuzzy
-#| msgid "Create Folder"
-msgid "Source folder"
-msgstr "फोल्डर बनाव"
-
 #: importer/thumbnailpage.cpp:149
 #, fuzzy
 #| msgctxt "@label"
@@ -1069,12 +1069,6 @@ msgstr "एक फोल्डर चुने गिस"
 #| msgid "Import"
 msgid "Import All"
 msgstr "आयात"
-
-#: lib/fullscreenbar.cpp:260 lib/statusbartoolbutton.cpp:119
-#, kde-format
-msgctxt "@info:tooltip of custom toolbar button"
-msgid "%1"
-msgstr "%1"
 
 #: lib/crop/cropwidget.cpp:117
 msgid "Square"
@@ -1193,6 +1187,11 @@ msgstr "100%"
 msgid "No document selected"
 msgstr "कोई कागद नइ चुने गे"
 
+#: lib/historymodel.cpp:138
+#, kde-format
+msgid "Last visited: %1"
+msgstr ""
+
 #: lib/jpegcontent.cpp:564
 msgctxt "@info"
 msgid "Could not open file for writing."
@@ -1225,6 +1224,12 @@ msgstr "आकार बदलव"
 #: lib/semanticinfo/tagitemdelegate.cpp:66
 msgid "Assign this tag to all selected images"
 msgstr ""
+
+#: lib/statusbartoolbutton.cpp:119 lib/fullscreenbar.cpp:260
+#, kde-format
+msgctxt "@info:tooltip of custom toolbar button"
+msgid "%1"
+msgstr "%1"
 
 #: lib/transformimageoperation.cpp:67
 #, fuzzy
@@ -1260,11 +1265,6 @@ msgstr "लहुटाव"
 msgctxt "(qtundo-format)"
 msgid "Transform"
 msgstr "रूपांतरन"
-
-#: lib/historymodel.cpp:138
-#, kde-format
-msgid "Last visited: %1"
-msgstr ""
 
 #: lib/imagemetainfomodel.cpp:230
 msgctxt "@item:intable Image file name"
