@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-19 02:57+0100\n"
+"POT-Creation-Date: 2011-11-23 02:40+0100\n"
 "PO-Revision-Date: 2009-03-03 10:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -22,47 +22,6 @@ msgstr ""
 #: kernel/kptaccount.cpp:857 models/kptresourcemodel.cpp:447
 msgid "Account"
 msgstr "खाता"
-
-#: kernel/kptdocuments.cpp:72 kernel/kptdocuments.cpp:85
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "@item"
-msgid "Unknown"
-msgstr "अग्यात"
-
-#: kernel/kptdocuments.cpp:73
-#, fuzzy
-#| msgid "Product"
-msgctxt "@item The produced document"
-msgid "Product"
-msgstr "उत्पाद"
-
-#: kernel/kptdocuments.cpp:74
-#, fuzzy
-#| msgid "Reference"
-msgctxt "@item Document is used for refrence"
-msgid "Reference"
-msgstr "संदर्भ"
-
-#: kernel/kptdocuments.cpp:86
-#, fuzzy
-#| msgid "Copy"
-msgctxt "@item Send a copy of the document"
-msgid "Copy"
-msgstr "नकल"
-
-#: kernel/kptdocuments.cpp:87
-#, fuzzy
-#| msgid "Reference"
-msgctxt "@item Send the reference (url) of the document"
-msgid "Reference"
-msgstr "संदर्भ"
-
-#: kernel/kptdocuments.cpp:211 kernel/KPlatoXmlLoaderBase.cpp:1102
-#, fuzzy, kde-format
-#| msgid "Document url already attached: %1"
-msgid "Document loaded, URL=%1"
-msgstr "कागद यूआरएल: %1 पहिली से ही संलग्न हे"
 
 #: kernel/kptglobal.cpp:41
 #, fuzzy
@@ -480,6 +439,12 @@ msgstr "भेजव"
 msgid "Receive"
 msgstr "प्राप्त"
 
+#: kernel/KPlatoXmlLoaderBase.cpp:1102 kernel/kptdocuments.cpp:211
+#, fuzzy, kde-format
+#| msgid "Document url already attached: %1"
+msgid "Document loaded, URL=%1"
+msgstr "कागद यूआरएल: %1 पहिली से ही संलग्न हे"
+
 #: kernel/kptproject.cpp:169 kernel/kptproject.cpp:275
 #: kernel/kptproject.cpp:305
 #, fuzzy
@@ -712,6 +677,41 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Resource %1 available from %2 to %3"
 msgstr "संसाधन नइ मिलत"
+
+#: kernel/kptdocuments.cpp:72 kernel/kptdocuments.cpp:85
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "@item"
+msgid "Unknown"
+msgstr "अग्यात"
+
+#: kernel/kptdocuments.cpp:73
+#, fuzzy
+#| msgid "Product"
+msgctxt "@item The produced document"
+msgid "Product"
+msgstr "उत्पाद"
+
+#: kernel/kptdocuments.cpp:74
+#, fuzzy
+#| msgid "Reference"
+msgctxt "@item Document is used for refrence"
+msgid "Reference"
+msgstr "संदर्भ"
+
+#: kernel/kptdocuments.cpp:86
+#, fuzzy
+#| msgid "Copy"
+msgctxt "@item Send a copy of the document"
+msgid "Copy"
+msgstr "नकल"
+
+#: kernel/kptdocuments.cpp:87
+#, fuzzy
+#| msgid "Reference"
+msgctxt "@item Send the reference (url) of the document"
+msgid "Reference"
+msgstr "संदर्भ"
 
 #: models/kcalendar/kdatepicker.cpp:116
 #, kde-format
@@ -3749,7 +3749,7 @@ msgctxt "(qtundo-format)"
 msgid "Modify resource allocations"
 msgstr "संसाधन सुधारव"
 
-#: models/kptnodeitemmodel.cpp:3781 models/kptnodeitemmodel.cpp:4821
+#: models/kptnodeitemmodel.cpp:3781 models/kptnodeitemmodel.cpp:4839
 #, fuzzy
 #| msgid "Available tasks"
 msgctxt "(qtundo-format)"
@@ -5390,7 +5390,7 @@ msgstr "अर्लीएस्ट सुरू:"
 msgid "Latest finish:"
 msgstr "लेटेस्ट खतम:"
 
-#. i18n: file: ui/kptperformancestatus.ui:92
+#. i18n: file: ui/kptperformancestatus.ui:101
 #. i18n: ectx: property (text), widget (PerformanceTableWidget, ui_performancetable)
 #. i18n: file: ui/kpttaskcostpanelbase.ui:90
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
@@ -5400,13 +5400,13 @@ msgstr "लेटेस्ट खतम:"
 msgid "Cost:"
 msgstr "लागत:"
 
-#. i18n: file: ui/kptperformancestatus.ui:97
+#. i18n: file: ui/kptperformancestatus.ui:106
 #. i18n: ectx: property (text), widget (PerformanceTableWidget, ui_performancetable)
 #: rc.cpp:199
 msgid "Effort:"
 msgstr "प्रयास:"
 
-#. i18n: file: ui/kptperformancestatus.ui:102
+#. i18n: file: ui/kptperformancestatus.ui:111
 #. i18n: ectx: property (text), widget (PerformanceTableWidget, ui_performancetable)
 #: rc.cpp:202
 #, fuzzy
@@ -5415,7 +5415,7 @@ msgstr "प्रयास:"
 msgid "BCWS"
 msgstr "BCWS"
 
-#. i18n: file: ui/kptperformancestatus.ui:107
+#. i18n: file: ui/kptperformancestatus.ui:116
 #. i18n: ectx: property (text), widget (PerformanceTableWidget, ui_performancetable)
 #: rc.cpp:205
 #, fuzzy
@@ -5424,7 +5424,7 @@ msgstr "BCWS"
 msgid "BCWP"
 msgstr "BCWP"
 
-#. i18n: file: ui/kptperformancestatus.ui:112
+#. i18n: file: ui/kptperformancestatus.ui:121
 #. i18n: ectx: property (text), widget (PerformanceTableWidget, ui_performancetable)
 #: rc.cpp:208
 #, fuzzy
@@ -5433,7 +5433,7 @@ msgstr "BCWP"
 msgid "ACWP"
 msgstr "ACWP"
 
-#. i18n: file: ui/kptperformancestatus.ui:117
+#. i18n: file: ui/kptperformancestatus.ui:126
 #. i18n: ectx: property (text), widget (PerformanceTableWidget, ui_performancetable)
 #: rc.cpp:211
 #, fuzzy
@@ -5442,7 +5442,7 @@ msgstr "ACWP"
 msgid "CPI"
 msgstr "SPI"
 
-#. i18n: file: ui/kptperformancestatus.ui:122
+#. i18n: file: ui/kptperformancestatus.ui:131
 #. i18n: ectx: property (text), widget (PerformanceTableWidget, ui_performancetable)
 #: rc.cpp:214
 #, fuzzy
