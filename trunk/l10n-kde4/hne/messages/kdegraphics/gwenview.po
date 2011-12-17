@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-15 03:41+0100\n"
+"POT-Creation-Date: 2011-12-17 03:50+0100\n"
 "PO-Revision-Date: 2009-02-26 15:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -122,23 +122,34 @@ msgstr "स्लाइड सो मोड मं चालू करव"
 msgid "A starting file or folder"
 msgstr "फाइल या फोल्डर चालू करत हे"
 
-#: app/imagemetainfodialog.cpp:125
-#, fuzzy
-#| msgid "Meta Information"
-msgctxt "@title:window"
-msgid "Meta Information"
-msgstr "मेटा जानकारी"
+#: app/fullscreencontent.cpp:113
+msgctxt "@info:tooltip"
+msgid "Configure Full Screen Mode"
+msgstr "पूरा स्क्रीन मोड कान्फिगर करव"
 
-#: app/saveallhelper.cpp:57
+#: app/fullscreencontent.cpp:279
+msgctxt "@item:intext fullscreen meta info separator"
+msgid ", "
+msgstr ", "
+
+#: app/fullscreencontent.cpp:339
+#, kde-format
+msgctxt "Slideshow interval in seconds"
+msgid "%1 sec"
+msgid_plural "%1 secs"
+msgstr[0] "%1 सेक."
+msgstr[1] "%1 सेक."
+
+#: app/saveallhelper.cpp:58
 msgctxt "@info:progress saving all image changes"
 msgid "Saving..."
 msgstr "सहेजत हे..."
 
-#: app/saveallhelper.cpp:58
+#: app/saveallhelper.cpp:59
 msgid "&Stop"
 msgstr "रुकव (&S)"
 
-#: app/saveallhelper.cpp:83
+#: app/saveallhelper.cpp:84
 #, kde-format
 msgctxt "@info"
 msgid "One document could not be saved:"
@@ -146,7 +157,7 @@ msgid_plural "%1 documents could not be saved:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: app/saveallhelper.cpp:107
+#: app/saveallhelper.cpp:108
 #, kde-format
 msgctxt ""
 "@info %1 is the name of the document which failed to save, %2 is the reason "
@@ -154,64 +165,101 @@ msgctxt ""
 msgid "<filename>%1</filename>: %2"
 msgstr "<filename>%1</filename>: %2"
 
-#: app/imageopscontextmanageritem.cpp:80
+#: app/savebar.cpp:87
+msgid ""
+"You have modified many images. To avoid memory problems, you should save "
+"your changes."
+msgstr ""
+
+#: app/savebar.cpp:176
+msgid "Current image modified"
+msgstr "अभी हाल के फोटू परिवर्धित"
+
+#: app/savebar.cpp:182
+msgid "Previous modified image"
+msgstr "पिछला परिवर्धित फोटू"
+
+#: app/savebar.cpp:183
+msgid "Next modified image"
+msgstr "अगला परिवर्धित फोटू"
+
+#: app/savebar.cpp:199
+#, kde-format
+msgid "One image modified"
+msgid_plural "%1 images modified"
+msgstr[0] "%1 फोटू परिवर्धित"
+msgstr[1] "%1 फोटू परिवर्धित"
+
+#: app/savebar.cpp:201
+msgid "Go to first modified image"
+msgstr "पहिली परिवर्धित फोटू मं जाव"
+
+#: app/savebar.cpp:203
+msgid "Go to it"
+msgstr "वहाँ जाव"
+
+#: app/savebar.cpp:302 app/savebar.cpp:307
+msgid "Save All"
+msgstr "सब्बो सहेजव"
+
+#: app/imageopscontextmanageritem.cpp:81
 msgctxt "@title actions category - means actions changing image"
 msgid "Edit"
 msgstr "संपादन"
 
-#: app/imageopscontextmanageritem.cpp:82
+#: app/imageopscontextmanageritem.cpp:83
 msgid "Rotate Left"
 msgstr "डेरी मुड़ें"
 
-#: app/imageopscontextmanageritem.cpp:87
+#: app/imageopscontextmanageritem.cpp:88
 msgid "Rotate Right"
 msgstr "जेवनी मुड़ें"
 
-#: app/imageopscontextmanageritem.cpp:92
+#: app/imageopscontextmanageritem.cpp:93
 msgid "Mirror"
 msgstr "प्रतिबिंब"
 
-#: app/imageopscontextmanageritem.cpp:96
+#: app/imageopscontextmanageritem.cpp:97
 msgid "Flip"
 msgstr "लहुटाव"
 
-#: app/imageopscontextmanageritem.cpp:100 lib/resize/resizeimagedialog.cpp:50
+#: app/imageopscontextmanageritem.cpp:101 lib/resize/resizeimagedialog.cpp:51
 msgid "Resize"
 msgstr "आकार बदलव"
 
 #. i18n: file: lib/crop/cropwidget.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
-#: app/imageopscontextmanageritem.cpp:105 lib/crop/cropimageoperation.cpp:70
-#: lib/crop/cropwidget.cpp:162 rc.cpp:186
+#: app/imageopscontextmanageritem.cpp:106 lib/crop/cropimageoperation.cpp:71
+#: lib/crop/cropwidget.cpp:166 rc.cpp:186
 msgid "Crop"
 msgstr "काँट छाँट करव"
 
-#: app/imageopscontextmanageritem.cpp:110
+#: app/imageopscontextmanageritem.cpp:111
 msgid "Red Eye Reduction"
 msgstr "रेड आई रिडक्सन मोड"
 
-#: app/imageopscontextmanageritem.cpp:137
+#: app/imageopscontextmanageritem.cpp:138
 msgid "Image Operations"
 msgstr "फोटू आपरेसन्स"
 
-#: app/infocontextmanageritem.cpp:168
+#: app/infocontextmanageritem.cpp:176
 #, kde-format
 msgctxt ""
 "@item:intext %1 is a key, we append a colon to it. A value is displayed after"
 msgid "%1:"
 msgstr "%1:"
 
-#: app/infocontextmanageritem.cpp:244
+#: app/infocontextmanageritem.cpp:253
 msgctxt "@action show more image meta info"
 msgid "More..."
 msgstr "जादा..."
 
-#: app/infocontextmanageritem.cpp:255
+#: app/infocontextmanageritem.cpp:264
 msgctxt "@title:group"
 msgid "Meta Information"
 msgstr "मेटा जानकारी"
 
-#: app/infocontextmanageritem.cpp:348
+#: app/infocontextmanageritem.cpp:357
 #, fuzzy, kde-format
 #| msgctxt "@label"
 #| msgid "%1 files selected"
@@ -221,7 +269,7 @@ msgid_plural "%1 files selected"
 msgstr[0] "%1 फाइल मन ल चुने गे हे"
 msgstr[1] "%1 फाइल मन ल चुने गे हे"
 
-#: app/infocontextmanageritem.cpp:350
+#: app/infocontextmanageritem.cpp:359
 #, fuzzy, kde-format
 #| msgctxt "@label"
 #| msgid "One folder selected"
@@ -232,14 +280,14 @@ msgid_plural "%1 folders selected"
 msgstr[0] "एक फोल्डर चुने गिस"
 msgstr[1] "%1 फोल्डर चुने गिस"
 
-#: app/infocontextmanageritem.cpp:353
+#: app/infocontextmanageritem.cpp:362
 #, kde-format
 msgid "%1 folder"
 msgid_plural "%1 folders"
 msgstr[0] ""
 msgstr[1] ""
 
-#: app/infocontextmanageritem.cpp:353
+#: app/infocontextmanageritem.cpp:362
 #, fuzzy, kde-format
 #| msgctxt "Slideshow interval in seconds"
 #| msgid "%1 sec"
@@ -249,7 +297,7 @@ msgid_plural "%1 files"
 msgstr[0] "%1 सेक."
 msgstr[1] "%1 सेक."
 
-#: app/infocontextmanageritem.cpp:353
+#: app/infocontextmanageritem.cpp:362
 #, fuzzy, kde-format
 #| msgctxt "@label"
 #| msgid "%1 folders and %2 files selected"
@@ -257,43 +305,195 @@ msgctxt "@label. The two parameters are strings like '2 folders' and '1 file'."
 msgid "%1 and %2 selected"
 msgstr "%1 फोल्डर अउ %2 फाइल मन ल चुने गिस"
 
-#: app/kipiexportaction.cpp:51
+#: app/kipiexportaction.cpp:52
 msgid "Last Used Plugin"
 msgstr ""
 
-#: app/kipiexportaction.cpp:53
+#: app/kipiexportaction.cpp:54
 #, fuzzy
 #| msgid "&Plugins"
 msgid "Other Plugins"
 msgstr "प्लगइन्स (&l)"
 
-#: app/kipiexportaction.cpp:63 app/kipiinterface.cpp:303
+#: app/kipiexportaction.cpp:64 app/kipiinterface.cpp:312
 #, fuzzy
 #| msgid "No Plugin"
 msgid "No Plugin Found"
 msgstr "कोई प्लगइन नइ हे"
 
-#: app/kipiexportaction.cpp:76
+#: app/kipiexportaction.cpp:77
 #, fuzzy
 #| msgid "Square"
 msgid "Share"
 msgstr "वर्ग"
 
-#: app/configdialog.cpp:71
-msgid "General"
-msgstr "सामान्य"
+#: app/mainwindow.cpp:311 app/fileopscontextmanageritem.cpp:179
+#: app/browsemainpage.cpp:151
+msgctxt "@title actions category"
+msgid "File"
+msgstr "फाइल"
 
-#: app/configdialog.cpp:99
-msgid "Image View"
-msgstr "फोटू दृस्य"
+#: app/mainwindow.cpp:312 app/viewmainpage.cpp:397 app/browsemainpage.cpp:112
+#: lib/documentview/documentviewcontroller.cpp:92
+msgctxt "@title actions category - means actions changing smth in interface"
+msgid "View"
+msgstr "दृस्य"
 
-#: app/configdialog.cpp:104
+#: app/mainwindow.cpp:321
+msgctxt "@action reload the currently viewed image"
+msgid "Reload"
+msgstr "री-लोड"
+
+#: app/mainwindow.cpp:327
+msgctxt "@action Switch to file list"
+msgid "Browse"
+msgstr "ब्राउज"
+
+#: app/mainwindow.cpp:333
+msgctxt "@action Switch to image view"
+msgid "View"
+msgstr "दृस्य"
+
+#: app/mainwindow.cpp:351
+msgctxt "@action Go back to a more general page (start page <- list <- image)"
+msgid "Back"
+msgstr ""
+
+#: app/mainwindow.cpp:356
+msgctxt "@action Go to previous image"
+msgid "Previous"
+msgstr "पिछला"
+
+#: app/mainwindow.cpp:357
+msgid "Go to Previous Image"
+msgstr "पिछला फोटू मं जाव"
+
+#: app/mainwindow.cpp:362
+msgctxt "@action Go to next image"
+msgid "Next"
+msgstr "अगला"
+
+#: app/mainwindow.cpp:363
+msgid "Go to Next Image"
+msgstr "अगले फोटू मं जाव"
+
+#: app/mainwindow.cpp:367
 #, fuzzy
-#| msgid "Image Settings"
-msgid "Advanced"
-msgstr "फोटू सेटिंग"
+#| msgctxt ""
+#| "@action:button Zoom to fit, shown in status bar, keep it short please"
+#| msgid "Fit"
+msgctxt "@action Go to first image"
+msgid "First"
+msgstr "फिट"
 
-#: app/kipiimagecollectionselector.cpp:54
+#: app/mainwindow.cpp:368
+#, fuzzy
+#| msgid "Go to Next Image"
+msgid "Go to First Image"
+msgstr "अगले फोटू मं जाव"
+
+#: app/mainwindow.cpp:372
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Date"
+msgctxt "@action Go to last image"
+msgid "Last"
+msgstr "तारीक"
+
+#: app/mainwindow.cpp:373
+#, fuzzy
+#| msgid "Go to Next Image"
+msgid "Go to Last Image"
+msgstr "अगले फोटू मं जाव"
+
+#: app/mainwindow.cpp:381
+msgctxt "@action"
+msgid "Start Page"
+msgstr "सुरू पेज"
+
+#: app/mainwindow.cpp:388
+#, fuzzy
+#| msgid "Hide Sidebar"
+msgctxt "@action"
+msgid "Sidebar"
+msgstr "बाजू पट्टी लुकाव"
+
+#: app/mainwindow.cpp:423
+msgctxt "@title actions category - means actions changing smth in interface"
+msgid "Edit"
+msgstr "संपादन"
+
+#: app/mainwindow.cpp:428
+msgid "Redo"
+msgstr "दुहराव"
+
+#: app/mainwindow.cpp:435
+msgid "Undo"
+msgstr "पहिली जइसन"
+
+#: app/mainwindow.cpp:481
+#, fuzzy
+#| msgid "Recent Folders"
+msgid "Folders"
+msgstr "मौजूदा फोल्डर"
+
+#: app/mainwindow.cpp:487
+#, fuzzy
+#| msgid "Information"
+msgid "Information"
+msgstr "जानकारी"
+
+#: app/mainwindow.cpp:498
+#, fuzzy
+#| msgid "File Operations"
+msgid "Operations"
+msgstr "फाइल काम"
+
+#: app/mainwindow.cpp:1110
+#, fuzzy
+#| msgid "Hide Sidebar"
+msgid "Hide Sidebar"
+msgstr "बाजू पट्टी लुकाव"
+
+#: app/mainwindow.cpp:1110
+#, fuzzy
+#| msgid "Hide Sidebar"
+msgid "Show Sidebar"
+msgstr "बाजू पट्टी लुकाव"
+
+#: app/mainwindow.cpp:1342
+msgctxt "@title:window"
+msgid "Open Image"
+msgstr "फोटू खोलव"
+
+#: app/mainwindow.cpp:1396
+msgid "Stop Slideshow"
+msgstr "स्लाइड सो बन्द करव"
+
+#: app/mainwindow.cpp:1399
+msgid "Start Slideshow"
+msgstr "स्लाइड सो चालू करव"
+
+#: app/mainwindow.cpp:1413
+msgid "Save All Changes"
+msgstr "सब्बो परितवर्तनों ल सहेजव"
+
+#: app/mainwindow.cpp:1414
+msgid "Discard Changes"
+msgstr "बदलाव मन ल फेंक देव"
+
+#: app/mainwindow.cpp:1415
+#, kde-format
+msgid "One image has been modified."
+msgid_plural "%1 images have been modified."
+msgstr[0] "%1 फोटू सुधारे गें."
+msgstr[1] "%1 फोटू सुधारे गें."
+
+#: app/mainwindow.cpp:1417
+msgid "If you quit now, your changes will be lost."
+msgstr "यदि आप मन अभी बाहिर होही, आप मन के बदलाव गंवा हो जाही."
+
+#: app/kipiimagecollectionselector.cpp:55
 #, kde-format
 msgctxt "%1 is collection name, %2 is image count in collection"
 msgid "%1 (%2 image)"
@@ -301,330 +501,222 @@ msgid_plural "%1 (%2 images)"
 msgstr[0] "%1 (%2 फोटू)"
 msgstr[1] "%1 (%2 फोटू)"
 
-#: app/fileopscontextmanageritem.cpp:165
-msgid "File Operations"
-msgstr "फाइल काम"
+#: app/configdialog.cpp:72
+msgid "General"
+msgstr "सामान्य"
 
-#: app/fileopscontextmanageritem.cpp:176 app/mainwindow.cpp:309
-#: app/browsemainpage.cpp:150
-msgctxt "@title actions category"
-msgid "File"
-msgstr "फाइल"
+#: app/configdialog.cpp:100
+msgid "Image View"
+msgstr "फोटू दृस्य"
 
-#: app/fileopscontextmanageritem.cpp:177
-#: app/semanticinfocontextmanageritem.cpp:162
+#: app/configdialog.cpp:105
+#, fuzzy
+#| msgid "Image Settings"
+msgid "Advanced"
+msgstr "फोटू सेटिंग"
+
+#: app/semanticinfocontextmanageritem.cpp:146
+msgid "Semantic Information"
+msgstr "सीमेंटिक जानकारी"
+
+#: app/semanticinfocontextmanageritem.cpp:168
+#: app/fileopscontextmanageritem.cpp:180
 msgctxt "@title actions category"
 msgid "Edit"
 msgstr "संपादन"
 
-#: app/fileopscontextmanageritem.cpp:192
-msgctxt "Verb"
-msgid "Copy To..."
-msgstr "नकल इहां करव..."
-
-#: app/fileopscontextmanageritem.cpp:196
-msgctxt "Verb"
-msgid "Move To..."
-msgstr "इहां खिसकाव..."
-
-#: app/fileopscontextmanageritem.cpp:200
-msgctxt "Verb: create link to the file where user wants"
-msgid "Link To..."
-msgstr "मं संकली लगाव..."
-
-#: app/fileopscontextmanageritem.cpp:204
-msgctxt "Verb"
-msgid "Rename..."
-msgstr ""
-
-#: app/fileopscontextmanageritem.cpp:208
-msgctxt "Verb"
-msgid "Trash"
-msgstr "घुरुवा"
-
-#: app/fileopscontextmanageritem.cpp:213
-msgid "Delete"
-msgstr "मेटाव"
-
-#: app/fileopscontextmanageritem.cpp:218
-#, fuzzy
-#| msgid "Resize"
-msgid "Restore"
-msgstr "आकार बदलव"
-
-#: app/fileopscontextmanageritem.cpp:221
-msgid "Properties"
-msgstr "गुन"
-
-#: app/fileopscontextmanageritem.cpp:225
-msgid "Create Folder..."
-msgstr "फोल्डर बनाव..."
-
-#: app/fileopscontextmanageritem.cpp:229
-msgid "Open With"
-msgstr "एखर साथ खोलव"
-
-#: app/fileopscontextmanageritem.cpp:419
-msgid "Other Application..."
-msgstr "अऊ दूसर अनुपरयोग..."
-
-#: app/filtercontroller.cpp:128
-msgid "Name contains"
-msgstr "नाम मं हे"
-
-#: app/filtercontroller.cpp:129
-msgid "Name does not contain"
-msgstr "नाम मं नइ हे"
-
-#: app/filtercontroller.cpp:231
-msgid "Date >="
-msgstr "तारीक >="
-
-#: app/filtercontroller.cpp:232
-msgid "Date ="
-msgstr "तारीक ="
-
-#: app/filtercontroller.cpp:233
-msgid "Date <="
-msgstr "तारीक <="
-
-#: app/filtercontroller.cpp:324
-msgid "Rating >="
-msgstr "रेटिंग >="
-
-#: app/filtercontroller.cpp:325
-msgid "Rating ="
-msgstr "रेटिंग ="
-
-#: app/filtercontroller.cpp:326
-msgid "Rating <="
-msgstr "रेटिंग <="
-
-#: app/filtercontroller.cpp:421
-msgid "Tagged"
-msgstr "टैग्ड"
-
-#: app/filtercontroller.cpp:422
-msgid "Not Tagged"
-msgstr "टैग्ड नइ"
-
-#: app/filtercontroller.cpp:556
-msgctxt "@action:inmenu"
-msgid "Filter by Name"
-msgstr "नाम से छानव"
-
-#: app/filtercontroller.cpp:557
-msgctxt "@action:inmenu"
-msgid "Filter by Date"
-msgstr "तारीक से छानव"
-
-#: app/filtercontroller.cpp:563
-msgctxt "@action:inmenu"
-msgid "Filter by Rating"
-msgstr "दरजा से छानव"
-
-#: app/filtercontroller.cpp:564
-msgctxt "@action:inmenu"
-msgid "Filter by Tag"
-msgstr "टैग से छानव"
-
-#: app/semanticinfocontextmanageritem.cpp:140
-msgid "Semantic Information"
-msgstr "सीमेंटिक जानकारी"
-
-#: app/semanticinfocontextmanageritem.cpp:165
+#: app/semanticinfocontextmanageritem.cpp:171
 msgctxt "@action"
 msgid "Edit Tags"
 msgstr "टैग्स के संपादन करव"
 
-#: app/semanticinfocontextmanageritem.cpp:175
+#: app/semanticinfocontextmanageritem.cpp:181
 msgctxt "@action Rating value of zero"
 msgid "Zero"
 msgstr "सून्य"
 
-#: app/semanticinfocontextmanageritem.cpp:211
+#: app/semanticinfocontextmanageritem.cpp:217
 msgid "Edit"
 msgstr "संपादन"
 
-#: app/viewmainpage.cpp:285 app/viewmainpage.cpp:406
+#: app/filtercontroller.cpp:131
+msgid "Name contains"
+msgstr "नाम मं हे"
+
+#: app/filtercontroller.cpp:132
+msgid "Name does not contain"
+msgstr "नाम मं नइ हे"
+
+#: app/filtercontroller.cpp:237
+msgid "Date >="
+msgstr "तारीक >="
+
+#: app/filtercontroller.cpp:238
+msgid "Date ="
+msgstr "तारीक ="
+
+#: app/filtercontroller.cpp:239
+msgid "Date <="
+msgstr "तारीक <="
+
+#: app/filtercontroller.cpp:333
+msgid "Rating >="
+msgstr "रेटिंग >="
+
+#: app/filtercontroller.cpp:334
+msgid "Rating ="
+msgstr "रेटिंग ="
+
+#: app/filtercontroller.cpp:335
+msgid "Rating <="
+msgstr "रेटिंग <="
+
+#: app/filtercontroller.cpp:433
+msgid "Tagged"
+msgstr "टैग्ड"
+
+#: app/filtercontroller.cpp:434
+msgid "Not Tagged"
+msgstr "टैग्ड नइ"
+
+#: app/filtercontroller.cpp:570
+msgctxt "@action:inmenu"
+msgid "Filter by Name"
+msgstr "नाम से छानव"
+
+#: app/filtercontroller.cpp:571
+msgctxt "@action:inmenu"
+msgid "Filter by Date"
+msgstr "तारीक से छानव"
+
+#: app/filtercontroller.cpp:577
+msgctxt "@action:inmenu"
+msgid "Filter by Rating"
+msgstr "दरजा से छानव"
+
+#: app/filtercontroller.cpp:578
+msgctxt "@action:inmenu"
+msgid "Filter by Tag"
+msgstr "टैग से छानव"
+
+#: app/viewmainpage.cpp:286 app/viewmainpage.cpp:409
 msgid "Synchronize"
 msgstr ""
 
-#: app/viewmainpage.cpp:394 app/mainwindow.cpp:310 app/browsemainpage.cpp:111
-#: lib/documentview/documentviewcontroller.cpp:91
-msgctxt "@title actions category - means actions changing smth in interface"
-msgid "View"
-msgstr "दृस्य"
-
-#: app/viewmainpage.cpp:397
+#: app/viewmainpage.cpp:400
 msgid "Thumbnail Bar"
 msgstr "लघुफोटू पट्टी"
 
-#: app/viewmainpage.cpp:669
+#: app/viewmainpage.cpp:672
 msgctxt "@action:button"
 msgid "Discard Changes and Reload"
 msgstr "बदलाव मन ल फेंक देव अउ फिर से लोड करव"
 
-#: app/viewmainpage.cpp:671
+#: app/viewmainpage.cpp:674
 msgctxt "@info"
 msgid ""
 "This image has been modified. Reloading it will discard all your changes."
 msgstr ""
 
-#: app/startmainpage.cpp:297
+#: app/startmainpage.cpp:300
 #, fuzzy
 #| msgid "Places"
 msgid "Add to Places"
 msgstr "जगह"
 
-#: app/startmainpage.cpp:298
+#: app/startmainpage.cpp:301
 #, fuzzy
 #| msgid "Create Folder"
 msgid "Forget this URL"
 msgstr "फोल्डर बनाव"
 
-#: app/startmainpage.cpp:298
+#: app/startmainpage.cpp:301
 #, fuzzy
 #| msgid "Create Folder"
 msgid "Forget this Folder"
 msgstr "फोल्डर बनाव"
 
-#: app/startmainpage.cpp:300
+#: app/startmainpage.cpp:303
 msgid "Forget All"
 msgstr ""
 
-#: app/fullscreencontent.cpp:111
-msgctxt "@info:tooltip"
-msgid "Configure Full Screen Mode"
-msgstr "पूरा स्क्रीन मोड कान्फिगर करव"
-
-#: app/fullscreencontent.cpp:277
-msgctxt "@item:intext fullscreen meta info separator"
-msgid ", "
-msgstr ", "
-
-#: app/fullscreencontent.cpp:337
-#, kde-format
-msgctxt "Slideshow interval in seconds"
-msgid "%1 sec"
-msgid_plural "%1 secs"
-msgstr[0] "%1 सेक."
-msgstr[1] "%1 सेक."
-
-#: app/kipiinterface.cpp:233
+#: app/kipiinterface.cpp:242
 #, fuzzy
 #| msgid "Images"
 msgctxt "@title:menu"
 msgid "Images"
 msgstr "फोटू"
 
-#: app/kipiinterface.cpp:234
+#: app/kipiinterface.cpp:243
 #, fuzzy
 #| msgid "Effects"
 msgctxt "@title:menu"
 msgid "Effects"
 msgstr "प्रभाव"
 
-#: app/kipiinterface.cpp:235
+#: app/kipiinterface.cpp:244
 #, fuzzy
 #| msgid "Tools"
 msgctxt "@title:menu"
 msgid "Tools"
 msgstr "औजार"
 
-#: app/kipiinterface.cpp:236
+#: app/kipiinterface.cpp:245
 #, fuzzy
 #| msgid "Import"
 msgctxt "@title:menu"
 msgid "Import"
 msgstr "आयात"
 
-#: app/kipiinterface.cpp:237
+#: app/kipiinterface.cpp:246
 #, fuzzy
 #| msgid "Export"
 msgctxt "@title:menu"
 msgid "Export"
 msgstr "निर्यात"
 
-#: app/kipiinterface.cpp:238
+#: app/kipiinterface.cpp:247
 #, fuzzy
 #| msgid "Batch Processing"
 msgctxt "@title:menu"
 msgid "Batch Processing"
 msgstr "बैच प्रोसेसिंग"
 
-#: app/kipiinterface.cpp:239
+#: app/kipiinterface.cpp:248
 #, fuzzy
 #| msgid "Collections"
 msgctxt "@title:menu"
 msgid "Collections"
 msgstr "संग्रह"
 
-#: app/kipiinterface.cpp:243
+#: app/kipiinterface.cpp:252
 #, fuzzy
 #| msgctxt "@info:progress saving all image changes"
 #| msgid "Saving..."
 msgid "Loading..."
 msgstr "सहेजत हे..."
 
-#: app/savebar.cpp:86
-msgid ""
-"You have modified many images. To avoid memory problems, you should save "
-"your changes."
-msgstr ""
-
-#: app/savebar.cpp:175
-msgid "Current image modified"
-msgstr "अभी हाल के फोटू परिवर्धित"
-
-#: app/savebar.cpp:181
-msgid "Previous modified image"
-msgstr "पिछला परिवर्धित फोटू"
-
-#: app/savebar.cpp:182
-msgid "Next modified image"
-msgstr "अगला परिवर्धित फोटू"
-
-#: app/savebar.cpp:198
-#, kde-format
-msgid "One image modified"
-msgid_plural "%1 images modified"
-msgstr[0] "%1 फोटू परिवर्धित"
-msgstr[1] "%1 फोटू परिवर्धित"
-
-#: app/savebar.cpp:200
-msgid "Go to first modified image"
-msgstr "पहिली परिवर्धित फोटू मं जाव"
-
-#: app/savebar.cpp:202
-msgid "Go to it"
-msgstr "वहाँ जाव"
-
-#: app/savebar.cpp:301 app/savebar.cpp:306
-msgid "Save All"
-msgstr "सब्बो सहेजव"
-
-#: app/gvcore.cpp:85
+#: app/gvcore.cpp:86
 msgctxt "@info"
 msgid "No image format selected."
 msgstr "कोई फोटू फार्मेट चुने नइ गे हे."
 
-#: app/gvcore.cpp:98
+#: app/gvcore.cpp:99
 #, kde-format
 msgctxt "@info"
 msgid "Gwenview cannot save images as %1."
 msgstr "ग्वेनव्यू फोटू मन ल %1 जइसन सहेज नइ सकिस."
 
-#: app/gvcore.cpp:183
+#: app/gvcore.cpp:184
 msgid "Save using another format"
 msgstr "अऊ दूसर फारमेट के साथ सहेजव"
 
-#: app/gvcore.cpp:186
+#: app/gvcore.cpp:187
 #, kde-format
 msgid "Gwenview cannot save images in '%1' format."
 msgstr "ग्वेनव्यू फोटू मन ल '%1' फारमेट मं सहेज नइ सकिस."
 
-#: app/gvcore.cpp:209
+#: app/gvcore.cpp:210
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -632,21 +724,21 @@ msgid ""
 "Are you sure you want to overwrite it?"
 msgstr ""
 
-#: app/gvcore.cpp:224 app/gvcore.cpp:247
+#: app/gvcore.cpp:225 app/gvcore.cpp:248
 #, kde-format
 msgctxt "@info"
 msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
 msgstr ""
 
-#: app/gvcore.cpp:267
+#: app/gvcore.cpp:268
 msgid "You are now viewing the new document."
 msgstr ""
 
-#: app/gvcore.cpp:269
+#: app/gvcore.cpp:270
 msgid "Go back to the original"
 msgstr ""
 
-#: app/gvcore.cpp:314 lib/document/documentjob.cpp:78
+#: app/gvcore.cpp:315 lib/document/documentjob.cpp:79
 msgctxt "@info"
 msgid "Gwenview cannot edit this kind of image."
 msgstr "ग्वेनव्यू अइसन फोटू मन के संपादन नइ कर सके"
@@ -658,201 +750,102 @@ msgid ""
 "%1"
 msgstr ""
 
-#: app/mainwindow.cpp:319
-msgctxt "@action reload the currently viewed image"
-msgid "Reload"
-msgstr "री-लोड"
-
-#: app/mainwindow.cpp:325
-msgctxt "@action Switch to file list"
-msgid "Browse"
-msgstr "ब्राउज"
-
-#: app/mainwindow.cpp:331
-msgctxt "@action Switch to image view"
-msgid "View"
-msgstr "दृस्य"
-
-#: app/mainwindow.cpp:349
-msgctxt "@action Go back to a more general page (start page <- list <- image)"
-msgid "Back"
-msgstr ""
-
-#: app/mainwindow.cpp:354
-msgctxt "@action Go to previous image"
-msgid "Previous"
-msgstr "पिछला"
-
-#: app/mainwindow.cpp:355
-msgid "Go to Previous Image"
-msgstr "पिछला फोटू मं जाव"
-
-#: app/mainwindow.cpp:360
-msgctxt "@action Go to next image"
-msgid "Next"
-msgstr "अगला"
-
-#: app/mainwindow.cpp:361
-msgid "Go to Next Image"
-msgstr "अगले फोटू मं जाव"
-
-#: app/mainwindow.cpp:365
-#, fuzzy
-#| msgctxt ""
-#| "@action:button Zoom to fit, shown in status bar, keep it short please"
-#| msgid "Fit"
-msgctxt "@action Go to first image"
-msgid "First"
-msgstr "फिट"
-
-#: app/mainwindow.cpp:366
-#, fuzzy
-#| msgid "Go to Next Image"
-msgid "Go to First Image"
-msgstr "अगले फोटू मं जाव"
-
-#: app/mainwindow.cpp:370
-#, fuzzy
-#| msgctxt "@action:inmenu"
-#| msgid "Date"
-msgctxt "@action Go to last image"
-msgid "Last"
-msgstr "तारीक"
-
-#: app/mainwindow.cpp:371
-#, fuzzy
-#| msgid "Go to Next Image"
-msgid "Go to Last Image"
-msgstr "अगले फोटू मं जाव"
-
-#: app/mainwindow.cpp:379
-msgctxt "@action"
-msgid "Start Page"
-msgstr "सुरू पेज"
-
-#: app/mainwindow.cpp:386
-#, fuzzy
-#| msgid "Hide Sidebar"
-msgctxt "@action"
-msgid "Sidebar"
-msgstr "बाजू पट्टी लुकाव"
-
-#: app/mainwindow.cpp:421
-msgctxt "@title actions category - means actions changing smth in interface"
-msgid "Edit"
-msgstr "संपादन"
-
-#: app/mainwindow.cpp:426
-msgid "Redo"
-msgstr "दुहराव"
-
-#: app/mainwindow.cpp:433
-msgid "Undo"
-msgstr "पहिली जइसन"
-
-#: app/mainwindow.cpp:479
-#, fuzzy
-#| msgid "Recent Folders"
-msgid "Folders"
-msgstr "मौजूदा फोल्डर"
-
-#: app/mainwindow.cpp:485
-#, fuzzy
-#| msgid "Information"
-msgid "Information"
-msgstr "जानकारी"
-
-#: app/mainwindow.cpp:496
-#, fuzzy
-#| msgid "File Operations"
-msgid "Operations"
+#: app/fileopscontextmanageritem.cpp:168
+msgid "File Operations"
 msgstr "फाइल काम"
 
-#: app/mainwindow.cpp:1106
+#: app/fileopscontextmanageritem.cpp:195
+msgctxt "Verb"
+msgid "Copy To..."
+msgstr "नकल इहां करव..."
+
+#: app/fileopscontextmanageritem.cpp:199
+msgctxt "Verb"
+msgid "Move To..."
+msgstr "इहां खिसकाव..."
+
+#: app/fileopscontextmanageritem.cpp:203
+msgctxt "Verb: create link to the file where user wants"
+msgid "Link To..."
+msgstr "मं संकली लगाव..."
+
+#: app/fileopscontextmanageritem.cpp:207
+msgctxt "Verb"
+msgid "Rename..."
+msgstr ""
+
+#: app/fileopscontextmanageritem.cpp:211
+msgctxt "Verb"
+msgid "Trash"
+msgstr "घुरुवा"
+
+#: app/fileopscontextmanageritem.cpp:216
+msgid "Delete"
+msgstr "मेटाव"
+
+#: app/fileopscontextmanageritem.cpp:221
 #, fuzzy
-#| msgid "Hide Sidebar"
-msgid "Hide Sidebar"
-msgstr "बाजू पट्टी लुकाव"
+#| msgid "Resize"
+msgid "Restore"
+msgstr "आकार बदलव"
 
-#: app/mainwindow.cpp:1106
-#, fuzzy
-#| msgid "Hide Sidebar"
-msgid "Show Sidebar"
-msgstr "बाजू पट्टी लुकाव"
+#: app/fileopscontextmanageritem.cpp:224
+msgid "Properties"
+msgstr "गुन"
 
-#: app/mainwindow.cpp:1338
-msgctxt "@title:window"
-msgid "Open Image"
-msgstr "फोटू खोलव"
+#: app/fileopscontextmanageritem.cpp:228
+msgid "Create Folder..."
+msgstr "फोल्डर बनाव..."
 
-#: app/mainwindow.cpp:1392
-msgid "Stop Slideshow"
-msgstr "स्लाइड सो बन्द करव"
+#: app/fileopscontextmanageritem.cpp:232
+msgid "Open With"
+msgstr "एखर साथ खोलव"
 
-#: app/mainwindow.cpp:1395
-msgid "Start Slideshow"
-msgstr "स्लाइड सो चालू करव"
+#: app/fileopscontextmanageritem.cpp:422
+msgid "Other Application..."
+msgstr "अऊ दूसर अनुपरयोग..."
 
-#: app/mainwindow.cpp:1409
-msgid "Save All Changes"
-msgstr "सब्बो परितवर्तनों ल सहेजव"
-
-#: app/mainwindow.cpp:1410
-msgid "Discard Changes"
-msgstr "बदलाव मन ल फेंक देव"
-
-#: app/mainwindow.cpp:1411
-#, kde-format
-msgid "One image has been modified."
-msgid_plural "%1 images have been modified."
-msgstr[0] "%1 फोटू सुधारे गें."
-msgstr[1] "%1 फोटू सुधारे गें."
-
-#: app/mainwindow.cpp:1413
-msgid "If you quit now, your changes will be lost."
-msgstr "यदि आप मन अभी बाहिर होही, आप मन के बदलाव गंवा हो जाही."
-
-#: app/browsemainpage.cpp:113
+#: app/browsemainpage.cpp:114
 msgctxt "@action:inmenu Navigation Bar"
 msgid "Edit Location"
 msgstr "जगह संपादित करव"
 
-#: app/browsemainpage.cpp:117
+#: app/browsemainpage.cpp:118
 msgctxt "@action:inmenu"
 msgid "Sort By"
 msgstr ""
 
-#: app/browsemainpage.cpp:118
+#: app/browsemainpage.cpp:119
 msgctxt "@addAction:inmenu"
 msgid "Name"
 msgstr "नाम"
 
-#: app/browsemainpage.cpp:120
+#: app/browsemainpage.cpp:121
 msgctxt "@addAction:inmenu"
 msgid "Date"
 msgstr "तारीक"
 
-#: app/browsemainpage.cpp:122
+#: app/browsemainpage.cpp:123
 msgctxt "@addAction:inmenu"
 msgid "Size"
 msgstr "आकार"
 
-#: app/browsemainpage.cpp:130
+#: app/browsemainpage.cpp:131
 msgctxt "@action:inmenu"
 msgid "Thumbnail Details"
 msgstr "लघु फोटू विवरन"
 
-#: app/browsemainpage.cpp:141
+#: app/browsemainpage.cpp:142
 msgctxt "@action:inmenu"
 msgid "Filename"
 msgstr "फाइलनाम"
 
-#: app/browsemainpage.cpp:142
+#: app/browsemainpage.cpp:143
 msgctxt "@action:inmenu"
 msgid "Date"
 msgstr "तारीक"
 
-#: app/browsemainpage.cpp:143
+#: app/browsemainpage.cpp:144
 #, fuzzy
 #| msgctxt "@item:intable"
 #| msgid "Image Size"
@@ -860,7 +853,7 @@ msgctxt "@action:inmenu"
 msgid "Image Size"
 msgstr "फोटू आकार"
 
-#: app/browsemainpage.cpp:144
+#: app/browsemainpage.cpp:145
 #, fuzzy
 #| msgctxt "@item:intable"
 #| msgid "File Size"
@@ -868,17 +861,17 @@ msgctxt "@action:inmenu"
 msgid "File Size"
 msgstr "फाइल आकार"
 
-#: app/browsemainpage.cpp:146
+#: app/browsemainpage.cpp:147
 msgctxt "@action:inmenu"
 msgid "Rating"
 msgstr "रेटिंग"
 
-#: app/browsemainpage.cpp:152
+#: app/browsemainpage.cpp:153
 msgctxt "@action:inmenu"
 msgid "Add Folder to Places"
 msgstr ""
 
-#: app/browsemainpage.cpp:167
+#: app/browsemainpage.cpp:168
 #, kde-format
 msgctxt "@label"
 msgid "%1 document"
@@ -886,31 +879,12 @@ msgid_plural "%1 documents"
 msgstr[0] "%1 कागद"
 msgstr[1] "%1 कागद"
 
-#: importer/filenameformater.cpp:103
-msgid "Shooting date"
-msgstr ""
-
-#: importer/filenameformater.cpp:104
-msgid "Shooting time"
-msgstr ""
-
-#: importer/filenameformater.cpp:105
+#: app/imagemetainfodialog.cpp:128
 #, fuzzy
-#| msgid "File Operations"
-msgid "Original extension"
-msgstr "फाइल काम"
-
-#: importer/filenameformater.cpp:106
-msgid "Original extension, in lower case"
-msgstr ""
-
-#: importer/filenameformater.cpp:107
-msgid "Original filename"
-msgstr ""
-
-#: importer/filenameformater.cpp:108
-msgid "Original filename, in lower case"
-msgstr ""
+#| msgid "Meta Information"
+msgctxt "@title:window"
+msgid "Meta Information"
+msgstr "मेटा जानकारी"
 
 #: importer/importdialog.cpp:73
 #, fuzzy, kde-format
@@ -1010,27 +984,6 @@ msgstr ""
 msgid "Quit"
 msgstr ""
 
-#: importer/importer.cpp:79
-msgid "Could not create destination folder."
-msgstr ""
-
-#: importer/importer.cpp:86
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Could not upload file."
-msgid ""
-"Could not create temporary upload folder:\n"
-"%1"
-msgstr "फाइल अपलोड नइ कर सकिस"
-
-#: importer/importerconfigdialog.cpp:55
-#, fuzzy, kde-format
-#| msgctxt "@item:intable %1 is image width, %2 is image height"
-#| msgid "%1x%2"
-msgctxt "%1 is the importer keyword, %2 is keyword explanation"
-msgid "%1: %2"
-msgstr "%1x%2"
-
 #: importer/main.cpp:40
 #, fuzzy
 #| msgid "Gwenview KPart"
@@ -1055,7 +1008,54 @@ msgstr "कापीराइट 2000-2008, ओरेलिएन गाते�
 msgid "Source folder"
 msgstr "फोल्डर बनाव"
 
-#: importer/thumbnailpage.cpp:149
+#: importer/filenameformater.cpp:104
+msgid "Shooting date"
+msgstr ""
+
+#: importer/filenameformater.cpp:105
+msgid "Shooting time"
+msgstr ""
+
+#: importer/filenameformater.cpp:106
+#, fuzzy
+#| msgid "File Operations"
+msgid "Original extension"
+msgstr "फाइल काम"
+
+#: importer/filenameformater.cpp:107
+msgid "Original extension, in lower case"
+msgstr ""
+
+#: importer/filenameformater.cpp:108
+msgid "Original filename"
+msgstr ""
+
+#: importer/filenameformater.cpp:109
+msgid "Original filename, in lower case"
+msgstr ""
+
+#: importer/importer.cpp:80
+msgid "Could not create destination folder."
+msgstr ""
+
+#: importer/importer.cpp:87
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not upload file."
+msgid ""
+"Could not create temporary upload folder:\n"
+"%1"
+msgstr "फाइल अपलोड नइ कर सकिस"
+
+#: importer/importerconfigdialog.cpp:56
+#, fuzzy, kde-format
+#| msgctxt "@item:intable %1 is image width, %2 is image height"
+#| msgid "%1x%2"
+msgctxt "%1 is the importer keyword, %2 is keyword explanation"
+msgid "%1: %2"
+msgstr "%1x%2"
+
+#: importer/thumbnailpage.cpp:150
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "One folder selected"
@@ -1063,49 +1063,39 @@ msgstr "फोल्डर बनाव"
 msgid "Import Selected"
 msgstr "एक फोल्डर चुने गिस"
 
-#: importer/thumbnailpage.cpp:153
+#: importer/thumbnailpage.cpp:154
 #, fuzzy
 #| msgid "Import"
 msgid "Import All"
 msgstr "आयात"
 
-#: lib/slideshow.cpp:190
-msgctxt "@item:inmenu toggle loop in slideshow"
-msgid "Loop"
-msgstr "लूप"
-
-#: lib/slideshow.cpp:195
-msgctxt "@item:inmenu toggle random order in slideshow"
-msgid "Random"
-msgstr "बेतरतीब"
-
-#: lib/statusbartoolbutton.cpp:119 lib/fullscreenbar.cpp:260
+#: lib/statusbartoolbutton.cpp:119 lib/fullscreenbar.cpp:263
 #, kde-format
 msgctxt "@info:tooltip of custom toolbar button"
 msgid "%1"
 msgstr "%1"
 
-#: lib/crop/cropwidget.cpp:116
+#: lib/crop/cropwidget.cpp:119
 msgid "Square"
 msgstr "वर्ग"
 
-#: lib/crop/cropwidget.cpp:117
+#: lib/crop/cropwidget.cpp:120
 msgid "This Screen"
 msgstr ""
 
-#: lib/crop/cropwidget.cpp:136
+#: lib/crop/cropwidget.cpp:139
 #, fuzzy
 #| msgid "&Width:"
 msgid "Width"
 msgstr "चौड़ाईः (&W)"
 
-#: lib/crop/cropwidget.cpp:136
+#: lib/crop/cropwidget.cpp:139
 #, fuzzy
 #| msgid "Height:"
 msgid "Height"
 msgstr "ऊंचाई:"
 
-#: lib/document/document.cpp:233
+#: lib/document/document.cpp:234
 #, fuzzy
 #| msgctxt "@info"
 #| msgid "Gwenview cannot edit this kind of image."
@@ -1113,31 +1103,7 @@ msgctxt "@info"
 msgid "Gwenview cannot save this kind of documents."
 msgstr "ग्वेनव्यू अइसन फोटू मन के संपादन नइ कर सके"
 
-#: lib/document/loadingdocumentimpl.cpp:127
-#, kde-format
-msgctxt "@info"
-msgid "Gwenview cannot display documents of type %1."
-msgstr "ग्वेनव्यू %1 किसिम के कागद ल नइ देखा सके."
-
-#: lib/document/loadingdocumentimpl.cpp:303
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Could not open file for writing."
-msgctxt "@info"
-msgid "Could not open file %1"
-msgstr "लिखे बर फाइल खोल नइ सकिस."
-
-#: lib/document/loadingdocumentimpl.cpp:391
-msgctxt "@info"
-msgid "Loading meta information failed."
-msgstr ""
-
-#: lib/document/loadingdocumentimpl.cpp:418
-msgctxt "@info"
-msgid "Loading image failed."
-msgstr "फोटू ल लोड करे मं फेल."
-
-#: lib/document/savejob.cpp:104
+#: lib/document/savejob.cpp:105
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1145,7 +1111,7 @@ msgid ""
 "<filename>%1</filename>."
 msgstr ""
 
-#: lib/document/savejob.cpp:128
+#: lib/document/savejob.cpp:129
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1160,113 +1126,106 @@ msgstr ""
 msgid "Could not load document %1"
 msgstr "फाइल अपलोड नइ कर सकिस"
 
-#: lib/documentview/messageviewadapter.cpp:49
-msgid "No document selected"
-msgstr "कोई कागद नइ चुने गे"
+#: lib/document/loadingdocumentimpl.cpp:128
+#, kde-format
+msgctxt "@info"
+msgid "Gwenview cannot display documents of type %1."
+msgstr "ग्वेनव्यू %1 किसिम के कागद ल नइ देखा सके."
 
-#: lib/documentview/documentview.cpp:156
+#: lib/document/loadingdocumentimpl.cpp:304
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not open file for writing."
+msgctxt "@info"
+msgid "Could not open file %1"
+msgstr "लिखे बर फाइल खोल नइ सकिस."
+
+#: lib/document/loadingdocumentimpl.cpp:392
+msgctxt "@info"
+msgid "Loading meta information failed."
+msgstr ""
+
+#: lib/document/loadingdocumentimpl.cpp:419
+msgctxt "@info"
+msgid "Loading image failed."
+msgstr "फोटू ल लोड करे मं फेल."
+
+#: lib/documentview/documentview.cpp:158
 #, fuzzy
 #| msgctxt "Verb"
 #| msgid "Trash"
 msgid "Trash"
 msgstr "घुरुवा"
 
-#: lib/documentview/documentview.cpp:157
+#: lib/documentview/documentview.cpp:159
 #, fuzzy
 #| msgid "Delete"
 msgid "Deselect"
 msgstr "मेटाव"
 
-#: lib/documentview/documentview.cpp:346
+#: lib/documentview/documentview.cpp:347
 msgid "Gwenview does not know how to display this kind of document"
 msgstr ""
 
-#: lib/documentview/documentview.cpp:436
+#: lib/documentview/documentview.cpp:437
 #, kde-format
 msgid "Loading <filename>%1</filename> failed"
 msgstr "<filename>%1</filename> के लोड करे मं फेल"
 
-#: lib/documentview/documentviewcontroller.cpp:96
+#: lib/documentview/messageviewadapter.cpp:50
+msgid "No document selected"
+msgstr "कोई कागद नइ चुने गे"
+
+#: lib/documentview/documentviewcontroller.cpp:97
 msgid "Zoom to Fit"
 msgstr "फिट बैठे तक जूम करव"
 
-#: lib/documentview/documentviewcontroller.cpp:98
+#: lib/documentview/documentviewcontroller.cpp:99
 msgctxt "@action:button Zoom to fit, shown in status bar, keep it short please"
 msgid "Fit"
 msgstr "फिट"
 
-#: lib/documentview/documentviewcontroller.cpp:102
+#: lib/documentview/documentviewcontroller.cpp:103
 msgctxt ""
 "@action:button Zoom to original size, shown in status bar, keep it short "
 "please"
 msgid "100%"
 msgstr "100%"
 
-#: lib/historymodel.cpp:138
+#: lib/historymodel.cpp:143
 #, kde-format
 msgid "Last visited: %1"
 msgstr ""
 
-#: lib/transformimageoperation.cpp:67
-#, fuzzy
-#| msgid "Rotate Right"
-msgctxt "(qtundo-format)"
-msgid "Rotate Right"
-msgstr "जेवनी मुड़ें"
-
-#: lib/transformimageoperation.cpp:70
-#, fuzzy
-#| msgid "Rotate Left"
-msgctxt "(qtundo-format)"
-msgid "Rotate Left"
-msgstr "डेरी मुड़ें"
-
-#: lib/transformimageoperation.cpp:73
-#, fuzzy
-#| msgid "Mirror"
-msgctxt "(qtundo-format)"
-msgid "Mirror"
-msgstr "प्रतिबिंब"
-
-#: lib/transformimageoperation.cpp:76
-#, fuzzy
-#| msgid "Flip"
-msgctxt "(qtundo-format)"
-msgid "Flip"
-msgstr "लहुटाव"
-
-#: lib/transformimageoperation.cpp:81
-#, fuzzy
-#| msgid "Transform"
-msgctxt "(qtundo-format)"
-msgid "Transform"
-msgstr "रूपांतरन"
-
-#. i18n: file: app/fullscreenconfigdialog.ui:223
-#. i18n: ectx: property (text), widget (QPushButton, mCloseButton)
-#: lib/graphicshudwidget.cpp:87 rc.cpp:51
-msgid "Close"
-msgstr "बंद करव"
-
-#: lib/jpegcontent.cpp:564
+#: lib/jpegcontent.cpp:571
 msgctxt "@info"
 msgid "Could not open file for writing."
 msgstr "लिखे बर फाइल खोल नइ सकिस."
 
-#: lib/jpegcontent.cpp:580
+#: lib/jpegcontent.cpp:587
 msgctxt "@info"
 msgid "No data to store."
 msgstr ""
 
-#: lib/print/printhelper.cpp:130
+#: lib/slideshow.cpp:191
+msgctxt "@item:inmenu toggle loop in slideshow"
+msgid "Loop"
+msgstr "लूप"
+
+#: lib/slideshow.cpp:196
+msgctxt "@item:inmenu toggle random order in slideshow"
+msgid "Random"
+msgstr "बेतरतीब"
+
+#: lib/print/printhelper.cpp:131
 msgid "Print Image"
 msgstr "फोटू छापव"
 
-#: lib/redeyereduction/redeyereductionimageoperation.cpp:76
+#: lib/redeyereduction/redeyereductionimageoperation.cpp:77
 msgid "RedEyeReduction"
 msgstr ""
 
-#: lib/resize/resizeimageoperation.cpp:70
+#: lib/resize/resizeimageoperation.cpp:71
 #, fuzzy
 #| msgid "Resize"
 msgctxt "(qtundo-format)"
@@ -1277,57 +1236,98 @@ msgstr "आकार बदलव"
 msgid "Assign this tag to all selected images"
 msgstr ""
 
-#: lib/imagemetainfomodel.cpp:230
+#. i18n: file: app/fullscreenconfigdialog.ui:223
+#. i18n: ectx: property (text), widget (QPushButton, mCloseButton)
+#: lib/graphicshudwidget.cpp:88 rc.cpp:51
+msgid "Close"
+msgstr "बंद करव"
+
+#: lib/imagemetainfomodel.cpp:244
 msgctxt "@item:intable Image file name"
 msgid "Name"
 msgstr "नाम"
 
-#: lib/imagemetainfomodel.cpp:231
+#: lib/imagemetainfomodel.cpp:245
 msgctxt "@item:intable"
 msgid "File Size"
 msgstr "फाइल आकार"
 
-#: lib/imagemetainfomodel.cpp:232
+#: lib/imagemetainfomodel.cpp:246
 msgctxt "@item:intable"
 msgid "File Time"
 msgstr "फाइल समय"
 
-#: lib/imagemetainfomodel.cpp:233
+#: lib/imagemetainfomodel.cpp:247
 msgctxt "@item:intable"
 msgid "Image Size"
 msgstr "फोटू आकार"
 
-#: lib/imagemetainfomodel.cpp:234
+#: lib/imagemetainfomodel.cpp:248
 msgctxt "@item:intable"
 msgid "Comment"
 msgstr ""
 
-#: lib/imagemetainfomodel.cpp:283
+#: lib/imagemetainfomodel.cpp:297
 msgctxt "@title:group General info about the image"
 msgid "General"
 msgstr "सामान्य"
 
-#: lib/imagemetainfomodel.cpp:312
+#: lib/imagemetainfomodel.cpp:326
 #, kde-format
 msgctxt "@item:intable %1 is image width, %2 is image height"
 msgid "%1x%2"
 msgstr "%1x%2"
 
-#: lib/imagemetainfomodel.cpp:320
+#: lib/imagemetainfomodel.cpp:334
 #, kde-format
 msgctxt "@item:intable %1 is number of millions of pixels in image"
 msgid "(%1MP)"
 msgstr "(%1मे.पि.)"
 
-#: lib/imagemetainfomodel.cpp:467
+#: lib/imagemetainfomodel.cpp:481
 msgctxt "@title:column"
 msgid "Property"
 msgstr "गुन"
 
-#: lib/imagemetainfomodel.cpp:469
+#: lib/imagemetainfomodel.cpp:483
 msgctxt "@title:column"
 msgid "Value"
 msgstr "मान"
+
+#: lib/transformimageoperation.cpp:68
+#, fuzzy
+#| msgid "Rotate Right"
+msgctxt "(qtundo-format)"
+msgid "Rotate Right"
+msgstr "जेवनी मुड़ें"
+
+#: lib/transformimageoperation.cpp:71
+#, fuzzy
+#| msgid "Rotate Left"
+msgctxt "(qtundo-format)"
+msgid "Rotate Left"
+msgstr "डेरी मुड़ें"
+
+#: lib/transformimageoperation.cpp:74
+#, fuzzy
+#| msgid "Mirror"
+msgctxt "(qtundo-format)"
+msgid "Mirror"
+msgstr "प्रतिबिंब"
+
+#: lib/transformimageoperation.cpp:77
+#, fuzzy
+#| msgid "Flip"
+msgctxt "(qtundo-format)"
+msgid "Flip"
+msgstr "लहुटाव"
+
+#: lib/transformimageoperation.cpp:82
+#, fuzzy
+#| msgid "Transform"
+msgctxt "(qtundo-format)"
+msgid "Transform"
+msgstr "रूपांतरन"
 
 #: part/gvpart.cpp:80
 msgctxt "@action"

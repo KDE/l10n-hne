@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-08 02:32+0100\n"
+"POT-Creation-Date: 2011-12-17 03:02+0100\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -13201,10 +13201,6 @@ msgstr "रंग सीमा"
 msgid "Select a color from the image or current layer"
 msgstr "अभी हाल के परत या फोटू से कोनो रंग चुनव"
 
-#: plugins/tools/defaulttools/kis_tool_ellipse.h:55
-msgid "Draw an ellipse"
-msgstr "दीर्घवृत्त बनाव"
-
 #: plugins/tools/defaulttools/kis_tool_fill.h:91
 #, fuzzy
 #| msgid "Fill a contiguous area of color with a color, or fill a selection."
@@ -13216,6 +13212,12 @@ msgstr "समीप के छेत्र ल कोनो रंग से �
 #| msgid "Draw a gradient."
 msgid "Draw a gradient."
 msgstr "अनुपात बनाव."
+
+#: plugins/tools/defaulttools/kis_tool_multihand.h:90
+#, fuzzy
+#| msgid "Paint with brushes"
+msgid "Paint with multibrushes"
+msgstr "ब्रुस के साथ पेंट करव"
 
 #: plugins/tools/defaulttools/kis_tool_measure.cc:51
 #: plugins/tools/tool_curves/kis_tool_moutline.cc:276
@@ -13233,18 +13235,6 @@ msgstr ""
 #: plugins/tools/defaulttools/kis_tool_pan.h:74
 msgid "Move and rotate your canvas"
 msgstr ""
-
-#: plugins/tools/defaulttools/kis_tool_rectangle.h:61
-#, fuzzy
-#| msgid "Draw a rectangle"
-msgid "Draw a rectangle"
-msgstr "चतुर्भुज बनाव"
-
-#: plugins/tools/defaulttools/kis_tool_multihand.h:90
-#, fuzzy
-#| msgid "Paint with brushes"
-msgid "Paint with multibrushes"
-msgstr "ब्रुस के साथ पेंट करव"
 
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:191
 #, fuzzy
@@ -13266,6 +13256,10 @@ msgstr "त्रिभुज"
 #, fuzzy
 msgid "Brush count"
 msgstr "ब्रुस आकार"
+
+#: plugins/tools/defaulttools/kis_tool_ellipse.h:55
+msgid "Draw an ellipse"
+msgstr "दीर्घवृत्त बनाव"
 
 #: plugins/tools/defaulttools/kis_tool_path.h:75
 msgid "Draw a path."
@@ -13303,6 +13297,12 @@ msgstr ""
 #: plugins/tools/defaulttools/kis_tool_line.h:85
 msgid "Draw a straight line with the current brush"
 msgstr "अभी हाल के ब्रुस के साथ एक सीधी लकीर बनाव"
+
+#: plugins/tools/defaulttools/kis_tool_rectangle.h:61
+#, fuzzy
+#| msgid "Draw a rectangle"
+msgid "Draw a rectangle"
+msgstr "चतुर्भुज बनाव"
 
 #: plugins/tools/defaulttools/kis_tool_line.cc:85
 #, fuzzy
@@ -13361,12 +13361,6 @@ msgstr ""
 #| msgid "Magnetism:"
 msgid "Assistant Magnetism"
 msgstr "मैग्नेटिज्म:"
-
-#: plugins/tools/defaulttools/kis_tool_brush.h:65
-#, fuzzy
-#| msgid "Paint with brushes"
-msgid "Paint with brushes"
-msgstr "ब्रुस के साथ पेंट करव"
 
 #: plugins/tools/defaulttools/kis_tool_move.h:88
 #, fuzzy
@@ -13454,6 +13448,12 @@ msgstr "एन्टी-अलाएस सीमा:"
 #: plugins/tools/defaulttools/kis_tool_gradient.cc:367
 msgid "Preview opacity:"
 msgstr "प्रिव्यू अपारदर्सिता:"
+
+#: plugins/tools/defaulttools/kis_tool_brush.h:65
+#, fuzzy
+#| msgid "Paint with brushes"
+msgid "Paint with brushes"
+msgstr "ब्रुस के साथ पेंट करव"
 
 #: plugins/tools/selectiontools/kis_tool_select_brush.h:74
 #, fuzzy
@@ -13694,21 +13694,21 @@ msgstr "पर्सपेक्टिव ग्रिड संपादित 
 msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgstr "बहुभुज बनाव. सिफ्ट-मुसुवाकिलिक बहुभुज ल पूरा करही"
 
-#: plugins/tools/tool_polyline/kis_tool_polyline.h:51
-msgid "Draw a polyline. Shift-mouseclick ends the polyline."
-msgstr "बहुलकीर बनाव. सिफ्ट-मुसुवाकिलिक बहुलकीर ल पूरा करही"
-
 #: plugins/tools/tool_polyline/kis_tool_polyline.cc:65
 msgid "Polyline"
 msgstr "पालिलाईन"
 
-#: plugins/tools/tool_star/kis_tool_star.h:74
-msgid "Draw a star with the current brush"
-msgstr "अभी हाल के ब्रुस के साथ एक तारा बनाव"
+#: plugins/tools/tool_polyline/kis_tool_polyline.h:51
+msgid "Draw a polyline. Shift-mouseclick ends the polyline."
+msgstr "बहुलकीर बनाव. सिफ्ट-मुसुवाकिलिक बहुलकीर ल पूरा करही"
 
 #: plugins/tools/tool_star/kis_tool_star.cc:140
 msgid "Star"
 msgstr "तारा"
+
+#: plugins/tools/tool_star/kis_tool_star.h:74
+msgid "Draw a star with the current brush"
+msgstr "अभी हाल के ब्रुस के साथ एक तारा बनाव"
 
 #: plugins/tools/tool_transform2/kis_tool_transform.h:435
 msgid "Transform a layer or a selection"
