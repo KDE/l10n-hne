@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-14 02:40+0100\n"
+"POT-Creation-Date: 2011-12-20 03:38+0100\n"
 "PO-Revision-Date: 2009-03-02 23:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -289,16 +289,6 @@ msgstr "माइग्रेसन ड्राइवर \"%1\" के अन�
 msgid "Could not load \"%1\" plugin."
 msgstr "प्लगइन \"%1\" ल लोड नइ कर सकिस."
 
-#: core/kexipartinfo.cpp:110
-#, kde-format
-msgid "Create new object of type \"%1\""
-msgstr "नवा चीज \"%1\" किसिम तैयार करव"
-
-#: core/kexipartinfo.cpp:112
-#, kde-format
-msgid "Creates new object of type \"%1\""
-msgstr "नवा चीज \"%1\" किसिम तैयार करथे "
-
 #: core/kexicmdlineargs.h:32
 msgid "Options related to entire projects:"
 msgstr "पूरा परियोजना से सम्बन्धित विकल्प:"
@@ -557,95 +547,21 @@ msgstr "प्लगइन \"%1\" लोड करे के समय गलत
 msgid "No plugin for class \"%1\""
 msgstr "क्लास \"%1\" बर कोनो प्लगइन नइ"
 
-#: core/kexiproject.cpp:215
-#, kde-format
-msgid "Could not open project \"%1\"."
-msgstr "परियोजना \"%1\" खोल नइ सकिस."
-
-#: core/kexiproject.cpp:239
-#, kde-format
-msgid ""
-"Database project %1 does not appear to have been created using Kexi and "
-"cannot be opened.<br><br>It is an SQLite file created using other tools.</qt>"
-msgstr ""
-
-#: core/kexiproject.cpp:262
-#, kde-format
-msgid "Could not create project \"%1\"."
-msgstr "परियोजना \"%1\" बना नइ सकिस."
-
-#: core/kexiproject.cpp:305 core/kexiproject.cpp:370
-msgid "Project major version"
-msgstr "परियोजना के मेजर संस्करन"
-
-#: core/kexiproject.cpp:307 core/kexiproject.cpp:372
-msgid "Project minor version"
-msgstr "परियोजना के माइनर संस्करन"
-
-#: core/kexiproject.cpp:309
-msgid "Project caption"
-msgstr "परियोजना कैप्सन"
-
-#: core/kexiproject.cpp:311
-msgid "Project description"
-msgstr "परियोजना वर्नन"
-
-#: core/kexiproject.cpp:821
-#, kde-format
-msgid "Opening object \"%1\" failed."
-msgstr "चीज  \"%1\" खोलना फेल."
-
-#: core/kexiproject.cpp:840
-msgid "This project is opened as read only."
-msgstr "ये परियोजना सिरिफ पढ़े जइसन खुले हे."
-
-#: core/kexiproject.cpp:897 main/KexiMainWindow.cpp:3558
-msgid "Could not set empty name for this object."
-msgstr "ये चीज बर खाली नाम सेट नइ कर सकिस."
-
-#: core/kexiproject.cpp:901
-#, kde-format
-msgid "Could not use this name. Object with name \"%1\" already exists."
-msgstr "ये नाम परयोग मं नइ ले जा सके. चीज नाम \"%1\" पहिली से ही अस्तित्व मं हे."
-
-#: core/kexiproject.cpp:908
-#, kde-format
-msgid "Could not rename object \"%1\"."
-msgstr "चीज \"%1\" के नाम बदल नइ सकिस."
-
-#: core/kexiproject.cpp:1032
-msgid "Warning: entire project's data will be removed."
-msgstr "चेतावनी: पूरा परियोजना के डाटा मिट जाही."
-
-#: core/kexiproject.cpp:1046
-#, kde-format
-msgid ""
-"The project %1 already exists.\n"
-"Do you want to replace it with a new, blank one?"
-msgstr ""
-"परियोजना %1 पहिली ही मौजूद हे.\n"
-"का आप मन एला एक नवा, खाली परियोजना से बदलना चाहथो ?"
-
-#: core/kexiproject.cpp:1049 main/kexifinddialog.cpp:229
-msgid "Replace"
-msgstr "बदलव"
-
-#: core/kexiproject.cpp:1073
-#, kde-format
-msgid "Do you want to drop the project \"%1\"?"
-msgstr "का आप मन परियोजना \"%1\" ल छोड़ना चाहथो ?"
-
-#: core/kexiproject.cpp:1083
-msgid ""
-"Could not drop this project. Database connection for this project has been "
-"opened as read only."
-msgstr ""
-
 #: core/kexiprojectdata.cpp:192
 #, kde-format
 msgctxt "database connection"
 msgid "(connection %1)"
 msgstr "(कनेक्सन %1)"
+
+#: core/kexipartinfo.cpp:110
+#, kde-format
+msgid "Create new object of type \"%1\""
+msgstr "नवा चीज \"%1\" किसिम तैयार करव"
+
+#: core/kexipartinfo.cpp:112
+#, kde-format
+msgid "Creates new object of type \"%1\""
+msgstr "नवा चीज \"%1\" किसिम तैयार करथे "
 
 #: core/KexiView.cpp:66
 msgid "Switch to data view"
@@ -848,6 +764,90 @@ msgstr "ये फंक्सन अनुपरयोग %2 के %1 सं�
 #, kde-format
 msgid "\"%1\" function is not available for version %2 of %3 application."
 msgstr "फंक्सन \"%1\" अनुपरयोग %3 के %2 संस्करन बर नइ मिलत हे."
+
+#: core/kexiproject.cpp:215
+#, kde-format
+msgid "Could not open project \"%1\"."
+msgstr "परियोजना \"%1\" खोल नइ सकिस."
+
+#: core/kexiproject.cpp:239
+#, kde-format
+msgid ""
+"Database project %1 does not appear to have been created using Kexi and "
+"cannot be opened.<br><br>It is an SQLite file created using other tools.</qt>"
+msgstr ""
+
+#: core/kexiproject.cpp:262
+#, kde-format
+msgid "Could not create project \"%1\"."
+msgstr "परियोजना \"%1\" बना नइ सकिस."
+
+#: core/kexiproject.cpp:305 core/kexiproject.cpp:370
+msgid "Project major version"
+msgstr "परियोजना के मेजर संस्करन"
+
+#: core/kexiproject.cpp:307 core/kexiproject.cpp:372
+msgid "Project minor version"
+msgstr "परियोजना के माइनर संस्करन"
+
+#: core/kexiproject.cpp:309
+msgid "Project caption"
+msgstr "परियोजना कैप्सन"
+
+#: core/kexiproject.cpp:311
+msgid "Project description"
+msgstr "परियोजना वर्नन"
+
+#: core/kexiproject.cpp:821
+#, kde-format
+msgid "Opening object \"%1\" failed."
+msgstr "चीज  \"%1\" खोलना फेल."
+
+#: core/kexiproject.cpp:840
+msgid "This project is opened as read only."
+msgstr "ये परियोजना सिरिफ पढ़े जइसन खुले हे."
+
+#: core/kexiproject.cpp:897 main/KexiMainWindow.cpp:3558
+msgid "Could not set empty name for this object."
+msgstr "ये चीज बर खाली नाम सेट नइ कर सकिस."
+
+#: core/kexiproject.cpp:901
+#, kde-format
+msgid "Could not use this name. Object with name \"%1\" already exists."
+msgstr "ये नाम परयोग मं नइ ले जा सके. चीज नाम \"%1\" पहिली से ही अस्तित्व मं हे."
+
+#: core/kexiproject.cpp:908
+#, kde-format
+msgid "Could not rename object \"%1\"."
+msgstr "चीज \"%1\" के नाम बदल नइ सकिस."
+
+#: core/kexiproject.cpp:1032
+msgid "Warning: entire project's data will be removed."
+msgstr "चेतावनी: पूरा परियोजना के डाटा मिट जाही."
+
+#: core/kexiproject.cpp:1046
+#, kde-format
+msgid ""
+"The project %1 already exists.\n"
+"Do you want to replace it with a new, blank one?"
+msgstr ""
+"परियोजना %1 पहिली ही मौजूद हे.\n"
+"का आप मन एला एक नवा, खाली परियोजना से बदलना चाहथो ?"
+
+#: core/kexiproject.cpp:1049 main/kexifinddialog.cpp:229
+msgid "Replace"
+msgstr "बदलव"
+
+#: core/kexiproject.cpp:1073
+#, kde-format
+msgid "Do you want to drop the project \"%1\"?"
+msgstr "का आप मन परियोजना \"%1\" ल छोड़ना चाहथो ?"
+
+#: core/kexiproject.cpp:1083
+msgid ""
+"Could not drop this project. Database connection for this project has been "
+"opened as read only."
+msgstr ""
 
 #: formeditor/connectiondialog.cpp:55
 #, fuzzy
@@ -3210,33 +3210,33 @@ msgstr "डाटाबेस \"%1\" सघन (काम्पैक्ट) क
 msgid "The database has been compacted. Current size decreased by %1% to %2."
 msgstr "डाटाबेस ल सघन करे जा गे हे. अभी हाल के आकार %1% से घटकर %2 हो गे हे."
 
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:212
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:234
 #, kde-format
 msgid "Do you want to open file \"%1\" as read-only?"
 msgstr "का आप मन फाइल \"%1\" ल सिरिफ पढ़े बर खोलना चाहथो ?"
 
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:215
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:237
 msgid "The file is probably already open on this or another computer."
 msgstr "फाइल हो सकथे एखर या कोनो अउ कंप्यूटर मं पहिली से ही खुले हे."
 
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:216
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:238
 msgid "Could not gain exclusive access for writing the file."
 msgstr "फाइल ल लिखे बर अलग से पहुंच प्राप्त नइ कर सकिस."
 
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:218
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:240
 msgid "Open As Read-Only"
 msgstr "सिरिफ लिखे बर खोलव"
 
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:257
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:279
 msgid "Could not close busy database."
 msgstr "व्यस्त डाटाबेस ल बन्द नइ कर सकिस."
 
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:270
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:301
 #, kde-format
 msgid "Could not remove file \"%1\"."
 msgstr "फाइल \"%1\" ल मिटा नइ सकिस."
 
-#: kexidb/drivers/sqlite/sqliteconnection.cpp:272
+#: kexidb/drivers/sqlite/sqliteconnection.cpp:303
 #: main/startup/KexiStartup.cpp:758 main/startup/KexiStartup.cpp:790
 msgid ""
 "Check the file's permissions and whether it is already opened and locked by "
@@ -3446,11 +3446,6 @@ msgstr "सर्वर के लोकल साकेट फाइलना�
 #, kde-format
 msgid "Enter password for %1: "
 msgstr "%1 बर पासवर्ड भरव:"
-
-#: kexidb/queryschema.cpp:263
-msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
-msgid "expr"
-msgstr "एक्सप्र"
 
 #: kexidb/cursor.cpp:145
 msgid "No query statement or schema defined."
@@ -3954,6 +3949,11 @@ msgstr "लकीर नइ मिटा सकिस काबर कि ये
 #| msgid "Row deletion on the server failed."
 msgid "Record deletion on the server failed."
 msgstr "सर्वर मं लकीर मिटाना फेल रहा."
+
+#: kexidb/queryschema.cpp:263
+msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
+msgid "expr"
+msgstr "एक्सप्र"
 
 #: kexiutils/identifier.cpp:92
 #, kde-format
@@ -5731,7 +5731,7 @@ msgid ""
 msgstr ""
 "डाटाबेस आयात विजार्ड आप मन ल अभी हाल के डाटाबेस ल केएक्जाई डाटाबेस मं आयात करन देथे ."
 
-#: migration/importwizard.cpp:190 migration/importtablewizard.cpp:131
+#: migration/importwizard.cpp:190 migration/importtablewizard.cpp:137
 msgid ""
 "Click \"Next\" button to continue or \"Cancel\" button to exit this wizard."
 msgstr ""
@@ -5742,11 +5742,11 @@ msgstr ""
 msgid "Welcome to the Database Importing Wizard"
 msgstr "डाटाबेस आयात विजार्ड मं आप मन के स्वागत हे"
 
-#: migration/importwizard.cpp:222 migration/importtablewizard.cpp:165
+#: migration/importwizard.cpp:222 migration/importtablewizard.cpp:171
 msgid "Select Location for Source Database"
 msgstr "स्रोत डाटाबेस बर जगह चुनव"
 
-#: migration/importwizard.cpp:234 migration/importtablewizard.cpp:175
+#: migration/importwizard.cpp:234 migration/importtablewizard.cpp:181
 msgid "Select Source Database"
 msgstr "स्रोत डाटाबेस चुनव"
 
@@ -5794,11 +5794,11 @@ msgstr "सिरिफ ढांचा"
 msgid "Select Type of Import"
 msgstr "आयात के किसिम चुनव"
 
-#: migration/importwizard.cpp:383 migration/importtablewizard.cpp:223
+#: migration/importwizard.cpp:383 migration/importtablewizard.cpp:229
 msgid "Advanced Options"
 msgstr "विस्तृत विकल्प"
 
-#: migration/importwizard.cpp:395 migration/importtablewizard.cpp:232
+#: migration/importwizard.cpp:395 migration/importtablewizard.cpp:238
 msgid "Importing"
 msgstr "आयात करत हे"
 
@@ -5807,7 +5807,7 @@ msgid "Open imported project"
 msgstr "आयातित परियोजना खोलव"
 
 #: migration/importwizard.cpp:419 migration/importwizard.cpp:829
-#: migration/importtablewizard.cpp:265
+#: migration/importtablewizard.cpp:271
 msgid "Success"
 msgstr "सफलता"
 
@@ -5827,7 +5827,7 @@ msgstr "डाटा जऊन आप मन भरे हो  ओखर का�
 msgid "Please click 'Back' button and correct these errors."
 msgstr "ए गलतीयों ल ठीक करे बर किरपा करके, 'पीछू' बटन ल किलिक करव."
 
-#: migration/importwizard.cpp:491 migration/importtablewizard.cpp:310
+#: migration/importwizard.cpp:491 migration/importtablewizard.cpp:316
 msgid "Select source database you wish to import:"
 msgstr "जो डाटाबेस आप मन आयात करना चाहथो ओला चुनव:"
 
@@ -5839,7 +5839,7 @@ msgid ""
 "Depending on size of the database this may take some time."
 msgstr ""
 
-#: migration/importwizard.cpp:708 migration/importtablewizard.cpp:447
+#: migration/importwizard.cpp:708 migration/importtablewizard.cpp:455
 msgid "No appropriate migration driver found."
 msgstr "कोई उपयुक्त माइग्रेसन ड्राइवर नइ मिलिस."
 
@@ -5913,7 +5913,7 @@ msgid ""
 "name."
 msgstr "इहां आप मन डाटा ल नवा डाटाबेस नाम से सहेजे बर जगह ल चुन सकथो ."
 
-#: migration/AlterSchemaWidget.cpp:45 migration/AlterSchemaWidget.cpp:102
+#: migration/AlterSchemaWidget.cpp:49 migration/AlterSchemaWidget.cpp:111
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:931
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:944
 #, kde-format
@@ -5924,38 +5924,40 @@ msgstr "खंभा %1"
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
 #. i18n: file: widget/KexiProjectSelector.ui:96
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
-#: migration/AlterSchemaWidget.cpp:46
+#: migration/AlterSchemaWidget.cpp:50
 #: plugins/tables/kexitabledesignerview.cpp:356 rc.cpp:92 rc.cpp:120
 msgid "Type"
 msgstr "किसिम"
 
-#: migration/AlterSchemaWidget.cpp:47
+#: migration/AlterSchemaWidget.cpp:51
 #: plugins/tables/kexitabledesignerview.cpp:193
 #: plugins/tables/kexitabledesignerview.cpp:430
 msgid "Primary Key"
 msgstr "प्राथमिक कुंजी"
 
-#: migration/AlterSchemaWidget.cpp:48
+#: migration/AlterSchemaWidget.cpp:52
 #, fuzzy
 #| msgid "Table field"
 msgid "Table Name"
 msgstr "टेबल छेत्र"
 
-#: migration/importtablewizard.cpp:96
-msgid "Object name exists"
-msgstr ""
+#: migration/importtablewizard.cpp:102
+#, fuzzy
+#| msgid "Project Name"
+msgid "Object Name Exists"
+msgstr "परियोजना नाम"
 
-#: migration/importtablewizard.cpp:96
+#: migration/importtablewizard.cpp:102
 #, fuzzy
 #| msgid ""
 #| "Database %1 already exists.<p>Do you want to replace it with a new one?"
 msgid ""
 "An object with this name already exists, please change the table name to "
-"continue"
+"continue."
 msgstr ""
 "डाटाबेस %1 पहिली ही मौजूद हे.<p>का आप मन एला एक नवा, खाली डाटाबेस से बदलना चाहथो ?"
 
-#: migration/importtablewizard.cpp:128
+#: migration/importtablewizard.cpp:134
 #, fuzzy
 #| msgid ""
 #| "Database Importing wizard allows you to import an existing database into "
@@ -5966,23 +5968,23 @@ msgid ""
 msgstr ""
 "डाटाबेस आयात विजार्ड आप मन ल अभी हाल के डाटाबेस ल केएक्जाई डाटाबेस मं आयात करन देथे ."
 
-#: migration/importtablewizard.cpp:134
+#: migration/importtablewizard.cpp:140
 #, fuzzy
 #| msgid "Welcome to the Database Importing Wizard"
 msgid "Welcome to the Table Importing Wizard"
 msgstr "डाटाबेस आयात विजार्ड मं आप मन के स्वागत हे"
 
-#: migration/importtablewizard.cpp:190
+#: migration/importtablewizard.cpp:196
 #, fuzzy
 #| msgid "Select Type of Import"
 msgid "Select the Table to Import"
 msgstr "आयात के किसिम चुनव"
 
-#: migration/importtablewizard.cpp:248
+#: migration/importtablewizard.cpp:254
 msgid "Alter the Detected Design"
 msgstr ""
 
-#: migration/importtablewizard.cpp:395
+#: migration/importtablewizard.cpp:403
 msgid ""
 "All required information has now been gathered. Click \"Next\" button to "
 "start importing.\n"
@@ -5993,16 +5995,16 @@ msgid ""
 "\n"
 msgstr ""
 
-#: migration/importtablewizard.cpp:536
+#: migration/importtablewizard.cpp:544
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:1388
 msgid "No project available."
 msgstr "कोई परियोजना नइ मिलत."
 
-#: migration/importtablewizard.cpp:547
+#: migration/importtablewizard.cpp:555
 msgid "No table was selected to import."
 msgstr ""
 
-#: migration/importtablewizard.cpp:559
+#: migration/importtablewizard.cpp:567
 #, fuzzy, kde-format
 #| msgid "Could not create database \"%1\"."
 msgid "Unable to create table [%1]"
