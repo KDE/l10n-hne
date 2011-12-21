@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcron\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 05:12+0200\n"
+"POT-Creation-Date: 2011-12-21 04:36+0100\n"
 "PO-Revision-Date: 2009-02-21 15:06+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -32,6 +32,22 @@ msgstr ""
 msgctxt "User login: errorMessage"
 msgid "User %1: %2"
 msgstr "कमइया %1: %2"
+
+#: src/crontablib/ctunit.cpp:172
+msgid ","
+msgstr ","
+
+#: src/crontablib/ctunit.cpp:173 src/crontablib/cttask.cpp:318
+msgid " and "
+msgstr "और"
+
+#: src/crontablib/ctunit.cpp:176 src/crontablib/cttask.cpp:321
+msgid ", "
+msgstr ","
+
+#: src/crontablib/ctHelper.cpp:22
+msgid "No comment"
+msgstr "कोई टिप्पनी नइ"
 
 #: src/crontablib/ctdom.cpp:23 src/crontablib/ctdow.cpp:44
 #: src/crontablib/cttask.cpp:266
@@ -162,25 +178,33 @@ msgstr "30वाँ"
 msgid "31st"
 msgstr "31वाँ"
 
-#: src/crontablib/ctHelper.cpp:22
-msgid "No comment"
-msgstr "कोई टिप्पनी नइ"
-
-#: src/crontablib/ctunit.cpp:172
-msgid ","
-msgstr ","
-
-#: src/crontablib/ctunit.cpp:173 src/crontablib/cttask.cpp:318
-msgid " and "
-msgstr "और"
-
-#: src/crontablib/ctunit.cpp:176 src/crontablib/cttask.cpp:321
-msgid ", "
-msgstr ","
-
 #: src/crontablib/ctGlobalCron.cpp:39
 msgid "All users"
 msgstr "सब्बो कमइया"
+
+#: src/crontablib/ctvariable.cpp:126
+msgid "Override default home folder."
+msgstr "डिफाल्ट होम फोल्डर ल बदलव."
+
+#: src/crontablib/ctvariable.cpp:129
+msgid "Email output to specified account."
+msgstr "आउटपुट ल निरधारित एकाउन्ट ल ईमेल करव"
+
+#: src/crontablib/ctvariable.cpp:132
+msgid "Override default shell."
+msgstr "डिफाल्ट सेल ल बदलव."
+
+#: src/crontablib/ctvariable.cpp:135
+msgid "Folders to search for program files."
+msgstr "प्रोग्राम फाइल मन ल खोजे बर फोल्डर."
+
+#: src/crontablib/ctvariable.cpp:138
+msgid "Dynamic libraries location."
+msgstr "डायनामिक लाइब्रेरीज लोकेसन."
+
+#: src/crontablib/ctvariable.cpp:141
+msgid "Local Variable"
+msgstr "लोकल वेरिएबल"
 
 #: src/crontablib/ctmonth.cpp:23
 msgid "every month"
@@ -235,30 +259,6 @@ msgstr "नवम्बर"
 #: src/crontablib/ctmonth.cpp:33
 msgid "December"
 msgstr "दिसम्बर"
-
-#: src/crontablib/ctvariable.cpp:126
-msgid "Override default home folder."
-msgstr "डिफाल्ट होम फोल्डर ल बदलव."
-
-#: src/crontablib/ctvariable.cpp:129
-msgid "Email output to specified account."
-msgstr "आउटपुट ल निरधारित एकाउन्ट ल ईमेल करव"
-
-#: src/crontablib/ctvariable.cpp:132
-msgid "Override default shell."
-msgstr "डिफाल्ट सेल ल बदलव."
-
-#: src/crontablib/ctvariable.cpp:135
-msgid "Folders to search for program files."
-msgstr "प्रोग्राम फाइल मन ल खोजे बर फोल्डर."
-
-#: src/crontablib/ctvariable.cpp:138
-msgid "Dynamic libraries location."
-msgstr "डायनामिक लाइब्रेरीज लोकेसन."
-
-#: src/crontablib/ctvariable.cpp:141
-msgid "Local Variable"
-msgstr "लोकल वेरिएबल"
 
 #: src/crontablib/ctdow.cpp:56
 msgid "Mon"
@@ -437,47 +437,6 @@ msgstr "सक्छम"
 msgid "Disabled"
 msgstr "अक्छम"
 
-#: src/variableEditorDialog.cpp:60
-msgid "Add or modify a variable"
-msgstr "परिवर्तनीय जोड़व या सुधारव"
-
-#: src/variableEditorDialog.cpp:64
-msgctxt "The environmental variable name ie HOME, MAILTO etc"
-msgid "&Variable:"
-msgstr "वेरिएबलः (&V)"
-
-#: src/variableEditorDialog.cpp:93
-msgid "Va&lue:"
-msgstr "मूल्यः (&l)"
-
-#: src/variableEditorDialog.cpp:102 src/taskEditorDialog.cpp:106
-msgid "&Run as:"
-msgstr "अइसन चलाव: (&R)"
-
-#: src/variableEditorDialog.cpp:120 src/taskEditorDialog.cpp:122
-msgid "Co&mment:"
-msgstr "टिप्पनीः (&m)"
-
-#: src/variableEditorDialog.cpp:128
-msgid "&Enable this variable"
-msgstr ""
-
-#: src/variableEditorDialog.cpp:156
-msgid "<i>This variable will be used by scheduled tasks.</i>"
-msgstr ""
-
-#: src/variableEditorDialog.cpp:200
-msgid "<i>This variable is disabled.</i>"
-msgstr ""
-
-#: src/variableEditorDialog.cpp:207
-msgid "<i>Please enter the variable name...</i>"
-msgstr "<i>किरपा करके, परिवर्तनीय (वेरिएबल) नाम भरव ...</i>"
-
-#: src/variableEditorDialog.cpp:214
-msgid "<i>Please enter the variable value ...</i>"
-msgstr "<i>किरपा करके, परिवर्तनीय (वेरिएबल) मूल्यम भरव ...</i>"
-
 #: src/variablesWidget.cpp:48
 msgid "<b>Environment Variables</b>"
 msgstr "<b>एनवायनमेंट वेरिएबल</b>"
@@ -534,6 +493,47 @@ msgstr "मेटाव (&D)"
 #: src/variablesWidget.cpp:231
 msgid "Delete the selected variable."
 msgstr "चुने गे वेरिएबल मेटाव"
+
+#: src/variableEditorDialog.cpp:60
+msgid "Add or modify a variable"
+msgstr "परिवर्तनीय जोड़व या सुधारव"
+
+#: src/variableEditorDialog.cpp:64
+msgctxt "The environmental variable name ie HOME, MAILTO etc"
+msgid "&Variable:"
+msgstr "वेरिएबलः (&V)"
+
+#: src/variableEditorDialog.cpp:93
+msgid "Va&lue:"
+msgstr "मूल्यः (&l)"
+
+#: src/variableEditorDialog.cpp:102 src/taskEditorDialog.cpp:106
+msgid "&Run as:"
+msgstr "अइसन चलाव: (&R)"
+
+#: src/variableEditorDialog.cpp:120 src/taskEditorDialog.cpp:122
+msgid "Co&mment:"
+msgstr "टिप्पनीः (&m)"
+
+#: src/variableEditorDialog.cpp:128
+msgid "&Enable this variable"
+msgstr ""
+
+#: src/variableEditorDialog.cpp:156
+msgid "<i>This variable will be used by scheduled tasks.</i>"
+msgstr ""
+
+#: src/variableEditorDialog.cpp:200
+msgid "<i>This variable is disabled.</i>"
+msgstr ""
+
+#: src/variableEditorDialog.cpp:207
+msgid "<i>Please enter the variable name...</i>"
+msgstr "<i>किरपा करके, परिवर्तनीय (वेरिएबल) नाम भरव ...</i>"
+
+#: src/variableEditorDialog.cpp:214
+msgid "<i>Please enter the variable value ...</i>"
+msgstr "<i>किरपा करके, परिवर्तनीय (वेरिएबल) मूल्यम भरव ...</i>"
 
 #: src/taskEditorDialog.cpp:76
 msgid "Add or modify a scheduled task"
