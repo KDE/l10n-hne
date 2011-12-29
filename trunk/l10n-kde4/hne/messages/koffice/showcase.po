@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-13 03:45+0200\n"
+"POT-Creation-Date: 2011-12-29 05:30+0100\n"
 "PO-Revision-Date: 2009-03-03 10:38+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -115,11 +115,11 @@ msgstr ""
 msgid "Timothée Lacroix "
 msgstr ""
 
-#: part/SCDocument.cpp:382
+#: part/SCDocument.cpp:384
 msgid "Installation Error"
 msgstr ""
 
-#: part/SCEndOfSlideShowPage.cpp:68
+#: part/SCEndOfSlideShowPage.cpp:67
 msgid "End of presentation. Click to exit."
 msgstr ""
 
@@ -342,6 +342,16 @@ msgstr ""
 msgid "Blackscreen on the presentation..."
 msgstr ""
 
+#. i18n: file: part/showcase.rc:91
+#. i18n: ectx: ToolBar (editToolBar)
+#: part/commands/SCSetCustomSlideShowsCommand.cpp:33 rc.cpp:119
+msgid "Edit"
+msgstr "संपादन"
+
+#: part/commands/SCAnimationCreateCommand.cpp:33
+msgid "Create shape animation"
+msgstr "आकार एनिमेसन बनाव"
+
 #: part/commands/SCPageEffectSetCommand.cpp:38
 msgid "Create page effect"
 msgstr "पेज प्रभाव बनाव"
@@ -353,16 +363,6 @@ msgstr "पेज प्रभाव सुधारव"
 #: part/commands/SCPageEffectSetCommand.cpp:45
 msgid "Delete page effect"
 msgstr "पेज प्रभाव मेटाव"
-
-#. i18n: file: part/showcase.rc:91
-#. i18n: ectx: ToolBar (editToolBar)
-#: part/commands/SCSetCustomSlideShowsCommand.cpp:33 rc.cpp:119
-msgid "Edit"
-msgstr "संपादन"
-
-#: part/commands/SCAnimationCreateCommand.cpp:33
-msgid "Create shape animation"
-msgstr "आकार एनिमेसन बनाव"
 
 #: part/dockers/SCPageLayoutDocker.cpp:46
 msgid "Slide Layouts"
@@ -384,14 +384,6 @@ msgstr "एनिमेसन औजार"
 msgid "Layout Tool"
 msgstr ""
 
-#: part/tools/SCPageEffectDocker.cpp:57
-msgid "No Effect"
-msgstr "कोई प्रभाव नइ"
-
-#: part/tools/SCPageEffectDocker.cpp:80
-msgid " sec"
-msgstr "सेक."
-
 #: part/tools/SCAnimationTool.cpp:69
 msgid "Transitions"
 msgstr ""
@@ -412,6 +404,14 @@ msgstr "आकार एनिमेसन"
 msgid "Edit Shape"
 msgstr "आकार संपादित करव"
 
+#: part/tools/SCPageEffectDocker.cpp:57
+msgid "No Effect"
+msgstr "कोई प्रभाव नइ"
+
+#: part/tools/SCPageEffectDocker.cpp:80
+msgid " sec"
+msgstr "सेक."
+
 #: part/ui/SCConfigurePresenterViewDialog.cpp:42
 #, kde-format
 msgid "Monitor %1 (primary)"
@@ -426,10 +426,21 @@ msgstr ""
 msgid "Configure Presenter View"
 msgstr "प्रजेन्टर दृस्य कान्फिगर करव"
 
+#: part/ui/SCConfigureSlideShowDialog.cpp:40
+#: part/ui/SCConfigureSlideShowDialog.cpp:84
+msgid "All slides"
+msgstr "सब्बो स्लाइड"
+
+#. i18n: file: part/ui/SCConfigureSlideShow.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, SCConfigureSlideShow)
+#: part/ui/SCConfigureSlideShowDialog.cpp:46 rc.cpp:47
+msgid "Configure Slide Show"
+msgstr "स्लाइड-सो कान्फिगर करव"
+
 #: part/ui/SCCustomSlideShowsDialog.cpp:82
 #: part/ui/SCCustomSlideShowsDialog.cpp:239
 #: part/ui/SCCustomSlideShowsDialog.cpp:257 part/ui/SCHtmlExportDialog.cpp:119
-#: part/SCViewModeSlidesSorter.cpp:337
+#: part/SCViewModeSlidesSorter.cpp:325
 #, kde-format
 msgid "Slide %1"
 msgstr "स्लाइड %1"
@@ -459,17 +470,6 @@ msgstr ""
 #: part/ui/SCCustomSlideShowsDialog.cpp:148
 msgid "Confirm action"
 msgstr ""
-
-#: part/ui/SCConfigureSlideShowDialog.cpp:40
-#: part/ui/SCConfigureSlideShowDialog.cpp:84
-msgid "All slides"
-msgstr "सब्बो स्लाइड"
-
-#. i18n: file: part/ui/SCConfigureSlideShow.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, SCConfigureSlideShow)
-#: part/ui/SCConfigureSlideShowDialog.cpp:46 rc.cpp:47
-msgid "Configure Slide Show"
-msgstr "स्लाइड-सो कान्फिगर करव"
 
 #: part/ui/SCHtmlExportDialog.cpp:44
 msgid "Html Export"
