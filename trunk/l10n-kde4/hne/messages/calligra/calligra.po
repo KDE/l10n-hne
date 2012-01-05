@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-03 03:22+0100\n"
+"POT-Creation-Date: 2012-01-05 02:59+0100\n"
 "PO-Revision-Date: 2009-03-03 09:35+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -53,9 +53,13 @@ msgstr "एक सादा रस्ता आकार"
 msgid "A simple path shape"
 msgstr "एक सादा रस्ता आकार"
 
-#: flake/svg/SvgShapeFactory.cpp:35
-msgid "Embedded svg shape"
-msgstr ""
+#: flake/KoShapeController.cpp:70 kotext/InsertTextReferenceAction.cpp:63
+#: kotext/InsertVariableAction.cpp:58
+#: main/rdf/InsertSemanticObjectCreateAction.cpp:59
+#: main/rdf/InsertSemanticObjectReferenceAction.cpp:64
+#, kde-format
+msgid "%1 Options"
+msgstr "%1 विकल्प"
 
 #: flake/KoShapePaste.cpp:168
 #, fuzzy
@@ -64,18 +68,14 @@ msgctxt "(qtundo-format)"
 msgid "Paste Shapes"
 msgstr "आकारों ल चिपकाव"
 
-#: flake/KoShapeController.cpp:70 kotext/InsertTextReferenceAction.cpp:63
-#: kotext/InsertVariableAction.cpp:58
-#: main/rdf/InsertSemanticObjectReferenceAction.cpp:64
-#: main/rdf/InsertSemanticObjectCreateAction.cpp:59
-#, kde-format
-msgid "%1 Options"
-msgstr "%1 विकल्प"
-
 #: flake/KoToolManager.cpp:379
 #, kde-format
 msgid "Active tool: %1"
 msgstr "सक्रिय औजार: %1"
+
+#: flake/svg/SvgShapeFactory.cpp:35
+msgid "Embedded svg shape"
+msgstr ""
 
 #: flake/commands/KoConnectionShapeTypeCommand.cpp:31
 #, fuzzy
@@ -199,6 +199,12 @@ msgctxt "(qtundo-format)"
 msgid "Separate paths"
 msgstr "अलग पथ"
 
+#: flake/commands/KoPathShapeMarkerCommand.cpp:34
+#, fuzzy
+#| msgid "Set border"
+msgid "Set marker"
+msgstr "किनारा सेट करव"
+
 #: flake/commands/KoShapeAlignCommand.cpp:84
 #, fuzzy
 #| msgid "Align shapes"
@@ -223,6 +229,14 @@ msgstr "पिछोत अंगना सेट करव"
 msgctxt "(qtundo-format)"
 msgid "Set border"
 msgstr "किनारा सेट करव"
+
+#: flake/commands/KoShapeClipCommand.cpp:70
+#: flake/commands/KoShapeClipCommand.cpp:86
+#, fuzzy
+#| msgid "Ellipse Shape"
+msgctxt "(qtundo-format)"
+msgid "Clip Shape"
+msgstr "दीर्घवक्र आकार"
 
 #: flake/commands/KoShapeCreateCommand.cpp:52
 #, fuzzy
@@ -330,6 +344,20 @@ msgctxt "(qtundo-format)"
 msgid "Set opacity"
 msgstr "अपार्दरसिता"
 
+#: flake/commands/KoShapeUnclipCommand.cpp:123
+#, fuzzy
+#| msgid "Ellipse Shape"
+msgctxt "(qtundo-format)"
+msgid "Unclip Shape"
+msgstr "दीर्घवक्र आकार"
+
+#: flake/commands/KoShapeUnclipCommand.cpp:132
+#, fuzzy
+#| msgid "Ellipse Shape"
+msgctxt "(qtundo-format)"
+msgid "Unclip Shapes"
+msgstr "दीर्घवक्र आकार"
+
 #: flake/commands/KoShapeUngroupCommand.cpp:57
 #, fuzzy
 #| msgid "Ungroup shapes"
@@ -358,38 +386,6 @@ msgctxt "(qtundo-format)"
 msgid "Remove subpath"
 msgstr "उपपथ मेटाव"
 
-#: flake/commands/KoShapeClipCommand.cpp:70
-#: flake/commands/KoShapeClipCommand.cpp:86
-#, fuzzy
-#| msgid "Ellipse Shape"
-msgctxt "(qtundo-format)"
-msgid "Clip Shape"
-msgstr "दीर्घवक्र आकार"
-
-#: flake/commands/KoShapeUnclipCommand.cpp:123
-#, fuzzy
-#| msgid "Ellipse Shape"
-msgctxt "(qtundo-format)"
-msgid "Unclip Shape"
-msgstr "दीर्घवक्र आकार"
-
-#: flake/commands/KoShapeUnclipCommand.cpp:132
-#, fuzzy
-#| msgid "Ellipse Shape"
-msgctxt "(qtundo-format)"
-msgid "Unclip Shapes"
-msgstr "दीर्घवक्र आकार"
-
-#: flake/commands/KoPathShapeMarkerCommand.cpp:34
-#, fuzzy
-#| msgid "Set border"
-msgid "Set marker"
-msgstr "किनारा सेट करव"
-
-#: flake/tools/KoCreatePathToolFactory.cpp:33
-msgid "Create Path"
-msgstr "पथ तैयार करव"
-
 #: flake/tools/KoCreatePathTool.cpp:374 flake/tools/KoPathTool.cpp:185
 msgid "Snapping"
 msgstr "स्नेपिंग"
@@ -403,6 +399,10 @@ msgstr ""
 #| msgid "Change Connection"
 msgid "Angle Constraints"
 msgstr "कनेक्सन बदलव"
+
+#: flake/tools/KoCreatePathToolFactory.cpp:33
+msgid "Create Path"
+msgstr "पथ तैयार करव"
 
 #: flake/tools/KoCreateShapesToolFactory.cpp:33
 msgid "Create object"
@@ -418,15 +418,6 @@ msgstr "पीएएन"
 msgctxt "(qtundo-format)"
 msgid "Change Segment"
 msgstr "कनेक्सन बदलव"
-
-#: flake/tools/KoPathToolFactory.cpp:29
-msgid "Path editing tool"
-msgstr "पथ संपादन औजार"
-
-#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:255
-#: widgets/KoZoomController.cpp:39
-msgid "Zoom"
-msgstr "जूम"
 
 #: flake/tools/KoPathTool.cpp:90
 msgid "Corner point"
@@ -507,6 +498,15 @@ msgstr ""
 #: flake/tools/KoPathTool.cpp:613
 msgid "Press B to break path at selected segments."
 msgstr ""
+
+#: flake/tools/KoPathToolFactory.cpp:29
+msgid "Path editing tool"
+msgstr "पथ संपादन औजार"
+
+#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:255
+#: widgets/KoZoomController.cpp:39
+msgid "Zoom"
+msgstr "जूम"
 
 #: kokross/KoScriptManager.cpp:177
 msgid "Install Script Package"
@@ -630,297 +630,85 @@ msgstr "स्क्रिप्ट प्रबंधक..."
 msgid "Execute Script File"
 msgstr "स्क्रिप्ट फाइल चलाव"
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:172
+#: kopageapp/KoPADocumentModel.cpp:172 kopageapp/KoPAPageThumbnailModel.cpp:67
 #, kde-format
 msgid "Slide %1"
 msgstr "स्लाइड %1"
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:69
+#: kopageapp/KoPADocumentModel.cpp:174
 #, kde-format
-msgid "Page %1"
+msgid "Page  %1"
 msgstr "पेज %1"
 
-#: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
-#, fuzzy
-#| msgid "Change master slide"
-msgctxt "(qtundo-format)"
-msgid "Change master slide"
-msgstr "मास्टर स्लाइड बदलव"
+#: kopageapp/KoPADocumentModel.cpp:178
+#: kopageapp/KoPADocumentStructureDocker.cpp:121
+msgid "Layer"
+msgstr "लेयर"
 
-#: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:38
-#, fuzzy
-#| msgid "Change master page"
-msgctxt "(qtundo-format)"
-msgid "Change master page"
-msgstr "मास्टर पेज बदलव"
+#: kopageapp/KoPADocumentModel.cpp:181
+msgid "Group"
+msgstr "समूह"
 
-#: kopageapp/commands/KoPAChangePageLayoutCommand.cpp:33
-#, fuzzy
-#| msgid "Page Layout"
-msgctxt "(qtundo-format)"
-msgid "Set Page Layout"
-msgstr "पेज ले-आउट"
+#: kopageapp/KoPADocumentModel.cpp:184
+msgid "Shape"
+msgstr "रूप"
 
-#: kopageapp/commands/KoPADisplayMasterBackgroundCommand.cpp:31
+#: kopageapp/KoPADocumentModel.cpp:270
 #, fuzzy
-#| msgid "Display master background"
-msgctxt "(qtundo-format)"
-msgid "Display master background"
-msgstr "मास्टर पिछोत अंगना देखाव"
+#| msgid "Paste Slide"
+#| msgid_plural "Paste Slides"
+msgid "Rename Slide"
+msgstr "स्लाइड चिपकाव"
 
-#: kopageapp/commands/KoPADisplayMasterBackgroundCommand.cpp:35
-#, fuzzy
-#| msgid "Display slide background"
-msgctxt "(qtundo-format)"
-msgid "Display slide background"
-msgstr "पिछोत अंगना स्लाइड देखाव"
-
-#: kopageapp/commands/KoPADisplayMasterBackgroundCommand.cpp:38
-#, fuzzy
-#| msgid "Display page background"
-msgctxt "(qtundo-format)"
-msgid "Display page background"
-msgstr "पेज पिछोत अंगना देखाव"
-
-#: kopageapp/commands/KoPADisplayMasterShapesCommand.cpp:31
-#, fuzzy
-#| msgid "Show master shapes"
-msgctxt "(qtundo-format)"
-msgid "Show master shapes"
-msgstr "मास्टर आकार देखाव"
-
-#: kopageapp/commands/KoPADisplayMasterShapesCommand.cpp:34
-#, fuzzy
-#| msgid "Hide master shapes"
-msgctxt "(qtundo-format)"
-msgid "Hide master shapes"
-msgstr "मास्टर आकार लुकाव"
-
-#: kopageapp/commands/KoPAPageInsertCommand.cpp:37
-#, fuzzy
-#| msgid "Insert slide"
-msgctxt "(qtundo-format)"
-msgid "Insert slide"
-msgstr "स्लाइड भरव"
-
-#: kopageapp/commands/KoPAPageInsertCommand.cpp:40
-#, fuzzy
-#| msgid "Insert page"
-msgctxt "(qtundo-format)"
-msgid "Insert page"
-msgstr "पेज भरव"
-
-#: kopageapp/commands/KoPAPageMoveCommand.cpp:58
-#, fuzzy
-#| msgid "Move slide"
-msgctxt "(qtundo-format)"
-msgid "Move slide"
-msgid_plural "Move slides"
-msgstr[0] "स्लाइड खिसकाव"
-msgstr[1] "स्लाइड खिसकाव"
-
-#: kopageapp/commands/KoPAPageMoveCommand.cpp:61
+#: kopageapp/KoPADocumentModel.cpp:273
 #, fuzzy
 #| msgid "Move page"
+msgid "Rename Page"
+msgstr "पेज खिसकाव"
+
+#: kopageapp/KoPADocumentModel.cpp:277
+#, fuzzy
+#| msgid "Create Layer"
+msgid "Rename Layer"
+msgstr "परत बनाव"
+
+#: kopageapp/KoPADocumentModel.cpp:313
+#: kopageapp/KoPADocumentStructureDocker.cpp:116
+msgid "Slide"
+msgstr "स्लाइड"
+
+#: kopageapp/KoPADocumentModel.cpp:316
+msgid "Visible"
+msgstr "दिखत"
+
+#: kopageapp/KoPADocumentModel.cpp:317
+msgid "Locked"
+msgstr "तालाबंद"
+
+#: kopageapp/KoPADocumentModel.cpp:525 kopageapp/KoPADocumentModel.cpp:546
+#, fuzzy
+#| msgid "Reparent shapes"
 msgctxt "(qtundo-format)"
-msgid "Move page"
-msgid_plural "Move pages"
-msgstr[0] "पेज खिसकाव"
-msgstr[1] "पेज खिसकाव"
+msgid "Reparent shapes"
+msgstr "रीपैरेन्ट आकार"
 
-#: kopageapp/commands/KoPAPageDeleteCommand.cpp:39
-#: kopageapp/commands/KoPAPageDeleteCommand.cpp:63
+#: kopageapp/KoPADocumentModel.cpp:667
 #, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Delete slide"
-msgid_plural "Delete slides"
-msgstr[0] "स्लाइड मेटाव"
-msgstr[1] "स्लाइड मेटाव"
+#| msgid "Move page"
+msgid "&Move Here"
+msgstr "पेज खिसकाव"
 
-#: kopageapp/commands/KoPAPageDeleteCommand.cpp:42
-#: kopageapp/commands/KoPAPageDeleteCommand.cpp:66
+#: kopageapp/KoPADocumentModel.cpp:671
 #, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Delete page"
-msgid_plural "Delete pages"
-msgstr[0] "पेज मेटाव"
-msgstr[1] "पेज मेटाव"
+#| msgid "Green"
+msgid "&Copy Here"
+msgstr "हरा"
 
-#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:41
-msgid "Select a master slide design:"
-msgstr ""
-
-#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:42
-msgid "Master Slide"
-msgstr "मास्टर स्लाइड"
-
-#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:44
-msgid "Select a master page design:"
-msgstr ""
-
-#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:45
-#: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:111
-msgid "Master Page"
-msgstr "मास्टर पेज"
-
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:35
+#: kopageapp/KoPADocumentModel.cpp:675
 #, fuzzy
-#| msgid "Confirm Save"
-msgid "Configure"
-msgstr "सहेजे के पुस्टि करव"
-
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:40
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:41
-#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:42
-#: pigment/KoCompositeOpRegistry.cpp:36
-msgid "Misc"
-msgstr ""
-
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:45
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:46
-#: main/config/KoConfigGridPage.cpp:65
-#, fuzzy
-msgid "Grid"
-msgstr "ग्रिड देखाव (&G)"
-
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:52
-#, fuzzy
-#| msgid "Document"
-msgctxt "@title:tab Document settings page"
-msgid "Document"
-msgstr "कागद"
-
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:53
-#: main/config/KoConfigDocumentPage.cpp:58
-#, fuzzy
-#| msgid "Document Information"
-msgid "Document Settings"
-msgstr "कागद जानकारी"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolFactory.cpp:30
-msgid "Background editing tool"
-msgstr "पिछोत अंगना संपादन औजार"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:105
-msgid "Background Tool"
-msgstr "पिछोत अंगना औजार"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:107
-msgid "Use the styles docker to manipulate the background."
-msgstr ""
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:94
-#, fuzzy
-#| msgid "Change backgound image"
-msgctxt "(qtundo-format)"
-msgid "Change background image"
-msgstr "पिछोत अंगना बदलव"
-
-#: kopageapp/KoPAView.cpp:311 main/KoToolBoxFactory.cpp:37
-#, fuzzy
-msgid "Tools"
-msgstr "पेन औजार"
-
-#: kopageapp/KoPAView.cpp:348
-msgid "D&elete"
-msgstr "मेटाव (&e)"
-
-#: kopageapp/KoPAView.cpp:359
-msgid "Snap to Grid"
-msgstr "ग्रिड मं स्नेप करव"
-
-#: kopageapp/KoPAView.cpp:369
-msgid "Show Master Pages"
-msgstr "मास्टर पेज देखाव"
-
-#: kopageapp/KoPAView.cpp:373
-msgid "Show Rulers"
-msgstr "रूलर देखाव"
-
-#: kopageapp/KoPAView.cpp:375
-msgid "Show/hide the view's rulers"
-msgstr "प्रदर्सक मं मापनी देखाव/लुकाव."
-
-#: kopageapp/KoPAView.cpp:379
-msgid "Insert Page"
-msgstr "पेज भरव"
-
-#: kopageapp/KoPAView.cpp:381 kopageapp/KoPAView.cpp:382
-msgid "Insert a new page after the current one"
-msgstr "अभी हाल के पेज के बाद एक नवा पेज भरव"
-
-#: kopageapp/KoPAView.cpp:385
-msgid "Copy Page"
-msgstr "पेज नकल करव"
-
-#: kopageapp/KoPAView.cpp:387 kopageapp/KoPAView.cpp:388
-msgid "Copy the current page"
-msgstr "अभी हाल के पेज के नकल बनाव"
-
-#: kopageapp/KoPAView.cpp:391
-msgid "Delete Page"
-msgstr "पेज मेटाव"
-
-#: kopageapp/KoPAView.cpp:394 kopageapp/KoPAView.cpp:395
-msgid "Delete the current page"
-msgstr "अभी हाल के पेज मेटाव"
-
-#: kopageapp/KoPAView.cpp:398
-msgid "Master Page..."
-msgstr "मास्टर पेज..."
-
-#: kopageapp/KoPAView.cpp:402
-#, fuzzy
-#| msgid "Page Layout"
-msgid "Page Layout..."
-msgstr "पेज ले-आउट"
-
-#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:57
-#. i18n: ectx: property (text), widget (QTableWidget, variables)
-#: kopageapp/KoPAView.cpp:411 rc.cpp:316
-msgid "Variable"
-msgstr "परिवर्तनीय"
-
-#: kopageapp/KoPAView.cpp:416
-#, fuzzy
-#| msgid "Import Document"
-msgid "Import Document..."
-msgstr "कागद आयात करव"
-
-#: kopageapp/KoPAView.cpp:420
-#, fuzzy
-#| msgid "Snap Guides"
-msgid "Configure..."
-msgstr "गाइडें स्नेप करव"
-
-#: kopageapp/KoPAView.cpp:487
-#, fuzzy
-#| msgid "Import lines:"
-msgid "Import Slideshow"
-msgstr "लकीरें आयात करव:"
-
-#: kopageapp/KoPAView.cpp:490 main/KoMainWindow.cpp:1204
-msgid "Import Document"
-msgstr "कागद आयात करव"
-
-#: kopageapp/KoPAView.cpp:519 kopageapp/KoPAView.cpp:523
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not open\n"
-#| "%1"
-msgid ""
-"Could not import\n"
-"%1"
-msgstr ""
-"खोल नइ सकिस:\n"
-"%1"
-
-#: kopageapp/KoPAView.cpp:636
-#, fuzzy
-#| msgid "Change parameter"
-msgctxt "(qtundo-format)"
-msgid "Change page layout"
-msgstr "पैरामीटर बदलव"
+#| msgid "Change"
+msgid "C&ancel"
+msgstr "बदलव"
 
 #: kopageapp/KoPADocumentStructureDocker.cpp:96 main/KoMainWindow.cpp:1645
 msgid "Document"
@@ -934,20 +722,10 @@ msgstr "एक नवा स्लाइड या परत जोड़व"
 msgid "Add a new page or layer"
 msgstr "एक नवा पेज या परत जोड़व"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:116
-#: kopageapp/KoPADocumentModel.cpp:313
-msgid "Slide"
-msgstr "स्लाइड"
-
 #: kopageapp/KoPADocumentStructureDocker.cpp:119
 #: widgets/KoPageLayoutDialog.cpp:50
 msgid "Page"
 msgstr "पेज"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:121
-#: kopageapp/KoPADocumentModel.cpp:178
-msgid "Layer"
-msgstr "लेयर"
 
 #: kopageapp/KoPADocumentStructureDocker.cpp:128
 #: kopageapp/KoPADocumentStructureDocker.cpp:644
@@ -1033,9 +811,9 @@ msgstr "मनमाफिक"
 
 #: kopageapp/KoPADocumentStructureDocker.cpp:647
 #: koreport/wrtembed/KoReportDesigner.cpp:833
+#: pigment/KoCompositeOpRegistry.cpp:86
 #: pigment/compositeops/KoCompositeOpCopy.h:37
 #: pigment/compositeops/KoCompositeOpCopy2.h:45
-#: pigment/KoCompositeOpRegistry.cpp:86
 #, fuzzy
 #| msgid "Company:"
 msgid "Copy"
@@ -1047,6 +825,11 @@ msgstr "कम्पनी:"
 #| msgid "Date"
 msgid "Paste"
 msgstr "तारीक"
+
+#: kopageapp/KoPAPageThumbnailModel.cpp:69
+#, kde-format
+msgid "Page %1"
+msgstr "पेज %1"
 
 #: kopageapp/KoPAPastePage.cpp:131
 #, fuzzy
@@ -1068,76 +851,293 @@ msgid_plural "Paste Pages"
 msgstr[0] "पेज चिपकाव"
 msgstr[1] "पेज चिपकाव"
 
-#: kopageapp/KoPADocumentModel.cpp:174
-#, kde-format
-msgid "Page  %1"
-msgstr "पेज %1"
-
-#: kopageapp/KoPADocumentModel.cpp:181
-msgid "Group"
-msgstr "समूह"
-
-#: kopageapp/KoPADocumentModel.cpp:184
-msgid "Shape"
-msgstr "रूप"
-
-#: kopageapp/KoPADocumentModel.cpp:270
+#: kopageapp/KoPAView.cpp:311 main/KoToolBoxFactory.cpp:37
 #, fuzzy
-#| msgid "Paste Slide"
-#| msgid_plural "Paste Slides"
-msgid "Rename Slide"
-msgstr "स्लाइड चिपकाव"
+msgid "Tools"
+msgstr "पेन औजार"
 
-#: kopageapp/KoPADocumentModel.cpp:273
+#: kopageapp/KoPAView.cpp:348
+msgid "D&elete"
+msgstr "मेटाव (&e)"
+
+#: kopageapp/KoPAView.cpp:359
+msgid "Snap to Grid"
+msgstr "ग्रिड मं स्नेप करव"
+
+#: kopageapp/KoPAView.cpp:369
+msgid "Show Master Pages"
+msgstr "मास्टर पेज देखाव"
+
+#: kopageapp/KoPAView.cpp:373
+msgid "Show Rulers"
+msgstr "रूलर देखाव"
+
+#: kopageapp/KoPAView.cpp:375
+msgid "Show/hide the view's rulers"
+msgstr "प्रदर्सक मं मापनी देखाव/लुकाव."
+
+#: kopageapp/KoPAView.cpp:379
+msgid "Insert Page"
+msgstr "पेज भरव"
+
+#: kopageapp/KoPAView.cpp:381 kopageapp/KoPAView.cpp:382
+msgid "Insert a new page after the current one"
+msgstr "अभी हाल के पेज के बाद एक नवा पेज भरव"
+
+#: kopageapp/KoPAView.cpp:385
+msgid "Copy Page"
+msgstr "पेज नकल करव"
+
+#: kopageapp/KoPAView.cpp:387 kopageapp/KoPAView.cpp:388
+msgid "Copy the current page"
+msgstr "अभी हाल के पेज के नकल बनाव"
+
+#: kopageapp/KoPAView.cpp:391
+msgid "Delete Page"
+msgstr "पेज मेटाव"
+
+#: kopageapp/KoPAView.cpp:394 kopageapp/KoPAView.cpp:395
+msgid "Delete the current page"
+msgstr "अभी हाल के पेज मेटाव"
+
+#: kopageapp/KoPAView.cpp:398
+msgid "Master Page..."
+msgstr "मास्टर पेज..."
+
+#: kopageapp/KoPAView.cpp:402
 #, fuzzy
-#| msgid "Move page"
-msgid "Rename Page"
-msgstr "पेज खिसकाव"
+#| msgid "Page Layout"
+msgid "Page Layout..."
+msgstr "पेज ले-आउट"
 
-#: kopageapp/KoPADocumentModel.cpp:277
+#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:57
+#. i18n: ectx: property (text), widget (QTableWidget, variables)
+#: kopageapp/KoPAView.cpp:411 rc.cpp:442
+msgid "Variable"
+msgstr "परिवर्तनीय"
+
+#: kopageapp/KoPAView.cpp:416
 #, fuzzy
-#| msgid "Create Layer"
-msgid "Rename Layer"
-msgstr "परत बनाव"
+#| msgid "Import Document"
+msgid "Import Document..."
+msgstr "कागद आयात करव"
 
-#: kopageapp/KoPADocumentModel.cpp:316
-msgid "Visible"
-msgstr "दिखत"
-
-#: kopageapp/KoPADocumentModel.cpp:317
-msgid "Locked"
-msgstr "तालाबंद"
-
-#: kopageapp/KoPADocumentModel.cpp:525 kopageapp/KoPADocumentModel.cpp:546
+#: kopageapp/KoPAView.cpp:420
 #, fuzzy
-#| msgid "Reparent shapes"
+#| msgid "Snap Guides"
+msgid "Configure..."
+msgstr "गाइडें स्नेप करव"
+
+#: kopageapp/KoPAView.cpp:487
+#, fuzzy
+#| msgid "Import lines:"
+msgid "Import Slideshow"
+msgstr "लकीरें आयात करव:"
+
+#: kopageapp/KoPAView.cpp:490 main/KoMainWindow.cpp:1204
+msgid "Import Document"
+msgstr "कागद आयात करव"
+
+#: kopageapp/KoPAView.cpp:519 kopageapp/KoPAView.cpp:523
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not open\n"
+#| "%1"
+msgid ""
+"Could not import\n"
+"%1"
+msgstr ""
+"खोल नइ सकिस:\n"
+"%1"
+
+#: kopageapp/KoPAView.cpp:636
+#, fuzzy
+#| msgid "Change parameter"
 msgctxt "(qtundo-format)"
-msgid "Reparent shapes"
-msgstr "रीपैरेन्ट आकार"
+msgid "Change page layout"
+msgstr "पैरामीटर बदलव"
 
-#: kopageapp/KoPADocumentModel.cpp:667
+#: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
+#, fuzzy
+#| msgid "Change master slide"
+msgctxt "(qtundo-format)"
+msgid "Change master slide"
+msgstr "मास्टर स्लाइड बदलव"
+
+#: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:38
+#, fuzzy
+#| msgid "Change master page"
+msgctxt "(qtundo-format)"
+msgid "Change master page"
+msgstr "मास्टर पेज बदलव"
+
+#: kopageapp/commands/KoPAChangePageLayoutCommand.cpp:33
+#, fuzzy
+#| msgid "Page Layout"
+msgctxt "(qtundo-format)"
+msgid "Set Page Layout"
+msgstr "पेज ले-आउट"
+
+#: kopageapp/commands/KoPADisplayMasterBackgroundCommand.cpp:31
+#, fuzzy
+#| msgid "Display master background"
+msgctxt "(qtundo-format)"
+msgid "Display master background"
+msgstr "मास्टर पिछोत अंगना देखाव"
+
+#: kopageapp/commands/KoPADisplayMasterBackgroundCommand.cpp:35
+#, fuzzy
+#| msgid "Display slide background"
+msgctxt "(qtundo-format)"
+msgid "Display slide background"
+msgstr "पिछोत अंगना स्लाइड देखाव"
+
+#: kopageapp/commands/KoPADisplayMasterBackgroundCommand.cpp:38
+#, fuzzy
+#| msgid "Display page background"
+msgctxt "(qtundo-format)"
+msgid "Display page background"
+msgstr "पेज पिछोत अंगना देखाव"
+
+#: kopageapp/commands/KoPADisplayMasterShapesCommand.cpp:31
+#, fuzzy
+#| msgid "Show master shapes"
+msgctxt "(qtundo-format)"
+msgid "Show master shapes"
+msgstr "मास्टर आकार देखाव"
+
+#: kopageapp/commands/KoPADisplayMasterShapesCommand.cpp:34
+#, fuzzy
+#| msgid "Hide master shapes"
+msgctxt "(qtundo-format)"
+msgid "Hide master shapes"
+msgstr "मास्टर आकार लुकाव"
+
+#: kopageapp/commands/KoPAPageDeleteCommand.cpp:39
+#: kopageapp/commands/KoPAPageDeleteCommand.cpp:63
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Delete slide"
+msgid_plural "Delete slides"
+msgstr[0] "स्लाइड मेटाव"
+msgstr[1] "स्लाइड मेटाव"
+
+#: kopageapp/commands/KoPAPageDeleteCommand.cpp:42
+#: kopageapp/commands/KoPAPageDeleteCommand.cpp:66
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Delete page"
+msgid_plural "Delete pages"
+msgstr[0] "पेज मेटाव"
+msgstr[1] "पेज मेटाव"
+
+#: kopageapp/commands/KoPAPageInsertCommand.cpp:37
+#, fuzzy
+#| msgid "Insert slide"
+msgctxt "(qtundo-format)"
+msgid "Insert slide"
+msgstr "स्लाइड भरव"
+
+#: kopageapp/commands/KoPAPageInsertCommand.cpp:40
+#, fuzzy
+#| msgid "Insert page"
+msgctxt "(qtundo-format)"
+msgid "Insert page"
+msgstr "पेज भरव"
+
+#: kopageapp/commands/KoPAPageMoveCommand.cpp:58
+#, fuzzy
+#| msgid "Move slide"
+msgctxt "(qtundo-format)"
+msgid "Move slide"
+msgid_plural "Move slides"
+msgstr[0] "स्लाइड खिसकाव"
+msgstr[1] "स्लाइड खिसकाव"
+
+#: kopageapp/commands/KoPAPageMoveCommand.cpp:61
 #, fuzzy
 #| msgid "Move page"
-msgid "&Move Here"
-msgstr "पेज खिसकाव"
+msgctxt "(qtundo-format)"
+msgid "Move page"
+msgid_plural "Move pages"
+msgstr[0] "पेज खिसकाव"
+msgstr[1] "पेज खिसकाव"
 
-#: kopageapp/KoPADocumentModel.cpp:671
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:35
 #, fuzzy
-#| msgid "Green"
-msgid "&Copy Here"
-msgstr "हरा"
+#| msgid "Confirm Save"
+msgid "Configure"
+msgstr "सहेजे के पुस्टि करव"
 
-#: kopageapp/KoPADocumentModel.cpp:675
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:40
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:41
+#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:42
+#: pigment/KoCompositeOpRegistry.cpp:36
+msgid "Misc"
+msgstr ""
+
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:45
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:46
+#: main/config/KoConfigGridPage.cpp:65
 #, fuzzy
-#| msgid "Change"
-msgid "C&ancel"
-msgstr "बदलव"
+msgid "Grid"
+msgstr "ग्रिड देखाव (&G)"
 
-#. i18n: file: main/rdf/KoRdfLocationViewWidgetMarble.ui:24
-#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:52
+#, fuzzy
+#| msgid "Document"
+msgctxt "@title:tab Document settings page"
+msgid "Document"
+msgstr "कागद"
+
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:53
+#: main/config/KoConfigDocumentPage.cpp:58
+#, fuzzy
+#| msgid "Document Information"
+msgid "Document Settings"
+msgstr "कागद जानकारी"
+
+#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:41
+msgid "Select a master slide design:"
+msgstr ""
+
+#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:42
+msgid "Master Slide"
+msgstr "मास्टर स्लाइड"
+
+#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:44
+msgid "Select a master page design:"
+msgstr ""
+
+#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:45
+#: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:111
+msgid "Master Page"
+msgstr "मास्टर पेज"
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:105
+msgid "Background Tool"
+msgstr "पिछोत अंगना औजार"
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:107
+msgid "Use the styles docker to manipulate the background."
+msgstr ""
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolFactory.cpp:30
+msgid "Background editing tool"
+msgstr "पिछोत अंगना संपादन औजार"
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:94
+#, fuzzy
+#| msgid "Change backgound image"
+msgctxt "(qtundo-format)"
+msgid "Change background image"
+msgstr "पिछोत अंगना बदलव"
+
 #. i18n: file: main/rdf/KoRdfLocationEditWidgetMarble.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: koreport/common/KoReportItemBase.cpp:28 rc.cpp:298 rc.cpp:349
+#. i18n: file: main/rdf/KoRdfLocationViewWidgetMarble.ui:24
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: koreport/common/KoReportItemBase.cpp:28 rc.cpp:403 rc.cpp:427
 #, fuzzy
 #| msgid "Name:"
 msgid "Name"
@@ -1320,7 +1320,7 @@ msgstr "बिन्दु किसिम सेट करव"
 #: koreport/items/field/KoReportItemField.cpp:102
 #: koreport/items/label/KoReportItemLabel.cpp:104
 #: koreport/items/text/KoReportItemText.cpp:129
-#: widgets/KoUniColorChooser.cpp:418 widgets/KoColorPopupAction.cpp:85
+#: widgets/KoColorPopupAction.cpp:85 widgets/KoUniColorChooser.cpp:418
 msgid "Opacity"
 msgstr "अपार्दरसिता"
 
@@ -1391,43 +1391,6 @@ msgstr "पाठ-सीर्सक1:"
 #: widgets/KoCsvImportDialog.cpp:581
 msgid "Text"
 msgstr "पाठ"
-
-#: koreport/wrtembed/KoReportDesignerItemBase.cpp:124
-#, fuzzy, kde-format
-#| msgid "%1 %"
-msgctxt "<data-source>: <object>"
-msgid "%1: %2"
-msgstr "%1 %"
-
-#: koreport/wrtembed/reportpropertiesbutton.cpp:27
-msgid ""
-"A button that allows a report's surface to be selected, allowing its "
-"properties to be seen."
-msgstr ""
-
-#: koreport/wrtembed/reportsection.cpp:95
-#, fuzzy
-#| msgid "Detailed View"
-msgid "Detail"
-msgstr "विस्तृत दृस्य"
-
-#: koreport/wrtembed/sectioneditor.cpp:279
-msgid "Ascending"
-msgstr ""
-
-#: koreport/wrtembed/sectioneditor.cpp:280
-msgid "Descending"
-msgstr ""
-
-#: koreport/wrtembed/sectioneditor.cpp:302
-#: koreport/wrtembed/sectioneditor.cpp:343
-msgid "Error Encountered"
-msgstr ""
-
-#: koreport/wrtembed/sectioneditor.cpp:303
-#: koreport/wrtembed/sectioneditor.cpp:344
-msgid "Unable to add a new group because its name would not be unique"
-msgstr ""
 
 #: koreport/wrtembed/KoReportDesigner.cpp:495
 msgid "Page Header (Any)"
@@ -1587,6 +1550,49 @@ msgstr "मेटाव"
 msgid "Line"
 msgstr "पंक्तियाँ"
 
+#: koreport/wrtembed/KoReportDesignerItemBase.cpp:124
+#, fuzzy, kde-format
+#| msgid "%1 %"
+msgctxt "<data-source>: <object>"
+msgid "%1: %2"
+msgstr "%1 %"
+
+#: koreport/wrtembed/reportpropertiesbutton.cpp:27
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: koreport/wrtembed/reportsection.cpp:95
+#, fuzzy
+#| msgid "Detailed View"
+msgid "Detail"
+msgstr "विस्तृत दृस्य"
+
+#: koreport/wrtembed/sectioneditor.cpp:279
+msgid "Ascending"
+msgstr ""
+
+#: koreport/wrtembed/sectioneditor.cpp:280
+msgid "Descending"
+msgstr ""
+
+#: koreport/wrtembed/sectioneditor.cpp:302
+#: koreport/wrtembed/sectioneditor.cpp:343
+msgid "Error Encountered"
+msgstr ""
+
+#: koreport/wrtembed/sectioneditor.cpp:303
+#: koreport/wrtembed/sectioneditor.cpp:344
+msgid "Unable to add a new group because its name would not be unique"
+msgstr ""
+
+#: kotext/InsertTextLocator.cpp:33
+#, fuzzy
+#| msgid "Text Reference"
+msgid "Index Reference"
+msgstr "पाठ संदर्भ"
+
 #: kotext/InsertTextReferenceAction.cpp:35
 #: kotext/InsertTextReferenceAction.cpp:63
 msgid "Text Reference"
@@ -1613,12 +1619,6 @@ msgstr[1] ""
 msgid "Found no match"
 msgstr "कोई जोड़े नइ मिलिस"
 
-#: kotext/InsertTextLocator.cpp:33
-#, fuzzy
-#| msgid "Text Reference"
-msgid "Index Reference"
-msgstr "पाठ संदर्भ"
-
 #: kotext/KoReplaceStrategy.cpp:56
 msgid ""
 "Found no match\n"
@@ -1641,11 +1641,20 @@ msgstr[1] ""
 msgid "Replace %1 with %2?"
 msgstr "%1 ल %2 से बदलव?"
 
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:86 kotext/KoTextEditor_p.h:123 rc.cpp:469
-msgid "Format"
-msgstr "फार्मेट"
+#: kotext/KoText.cpp:30
+msgctxt "Underline Style"
+msgid "None"
+msgstr "कुछ नइ"
+
+#: kotext/KoText.cpp:31
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "एकल"
+
+#: kotext/KoText.cpp:32
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "दोगुना"
 
 #: kotext/KoTextEditor.cpp:135
 #: kotext/commands/ChangeTrackedDeleteCommand.cpp:372
@@ -1847,6 +1856,28 @@ msgstr "स्थिति"
 msgid "Line Break"
 msgstr "लकीर चौड़ाई"
 
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:86 kotext/KoTextEditor_p.h:123 rc.cpp:469
+msgid "Format"
+msgstr "फार्मेट"
+
+#: kotext/commands/ChangeListCommand.cpp:83
+#: kotext/commands/ChangeListCommand.cpp:96
+#, fuzzy
+#| msgid "Change"
+msgctxt "(qtundo-format)"
+msgid "Change List"
+msgstr "बदलव"
+
+#: kotext/commands/ChangeTrackedDeleteCommand.cpp:83
+#: kotext/commands/DeleteCommand.cpp:47
+#, fuzzy
+#| msgid "Delete"
+msgctxt "(qtundo-format)"
+msgid "Delete"
+msgstr "मेटाव"
+
 #: kotext/commands/DeleteTableColumnCommand.cpp:40
 #, fuzzy
 msgctxt "(qtundo-format)"
@@ -1895,14 +1926,6 @@ msgctxt "(qtundo-format)"
 msgid "Change List Numbering"
 msgstr "मास्टर पेज बदलव"
 
-#: kotext/commands/ChangeTrackedDeleteCommand.cpp:83
-#: kotext/commands/DeleteCommand.cpp:47
-#, fuzzy
-#| msgid "Delete"
-msgctxt "(qtundo-format)"
-msgid "Delete"
-msgstr "मेटाव"
-
 #: kotext/commands/TextPasteCommand.cpp:61
 #, fuzzy
 #| msgid "Shadow Offset:"
@@ -1916,53 +1939,44 @@ msgctxt "(qtundo-format)"
 msgid "Paste"
 msgstr "तारीक"
 
-#: kotext/commands/ChangeListCommand.cpp:83
-#: kotext/commands/ChangeListCommand.cpp:96
-#, fuzzy
-#| msgid "Change"
-msgctxt "(qtundo-format)"
-msgid "Change List"
-msgstr "बदलव"
-
 #: kotext/styles/KoStyleManager.cpp:95 kotext/styles/KoStyleManager.cpp:100
 msgid "Default"
 msgstr "डिफाल्ट"
 
-#: kotext/KoText.cpp:30
-msgctxt "Underline Style"
-msgid "None"
-msgstr "कुछ नइ"
-
-#: kotext/KoText.cpp:31
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "एकल"
-
-#: kotext/KoText.cpp:32
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "दोगुना"
-
-#: main/KoPrintingDialog.cpp:147
-msgid "Printing done"
-msgstr "छपाई पूरा"
-
-#: main/KoPrintingDialog.cpp:148
-msgid "Close"
-msgstr "बंद करव"
-
-#: main/KoPrintingDialog.cpp:168
-msgid "Stopped"
-msgstr "रुक गिस"
-
-#: main/KoPrintingDialog.cpp:210
-msgid "Stop"
-msgstr "रुकव"
-
-#: main/KoDocumentSectionDelegate.cpp:511
+#: kundo2/kundo2group.cpp:359 kundo2/kundo2stack.cpp:841
 #, kde-format
-msgid "%1 %"
-msgstr "%1 %"
+msgid "Undo %1"
+msgstr ""
+
+#: kundo2/kundo2group.cpp:359 kundo2/kundo2stack.cpp:841
+msgctxt "Default text for undo action"
+msgid "Undo"
+msgstr ""
+
+#: kundo2/kundo2group.cpp:386 kundo2/kundo2stack.cpp:867
+#, fuzzy, kde-format
+#| msgid "Red"
+msgid "Redo %1"
+msgstr "लाल"
+
+#: kundo2/kundo2group.cpp:386 kundo2/kundo2stack.cpp:867
+#, fuzzy
+#| msgid "Red"
+msgctxt "Default text for redo action"
+msgid "Redo"
+msgstr "लाल"
+
+#: kundo2/kundo2stack.cpp:1074 main/KoMainWindow.cpp:1385
+#: main/KoUndoStackAction.cpp:44 main/KoUndoStackAction.cpp:52
+#, fuzzy
+#| msgid "Red"
+msgid "Redo"
+msgstr "लाल"
+
+#: kundo2/kundo2stack.cpp:1093 main/KoMainWindow.cpp:1384
+#: main/KoUndoStackAction.cpp:36 main/KoUndoStackAction.cpp:52
+msgid "Undo"
+msgstr ""
 
 #: main/KoApplication.cpp:105
 msgid "Only print and exit"
@@ -2030,210 +2044,6 @@ msgstr "अग्यात के-आफिस माइम किसिम %1, 
 #: main/KoDockerManager.cpp:68
 msgid "Tool Bars Docker"
 msgstr ""
-
-#: main/KoDocumentInfo.cpp:51
-msgid "Unknown"
-msgstr "अग्यात"
-
-#: main/KoDocumentInfoDlg.cpp:90 main/KoMainWindow.cpp:274
-msgid "Document Information"
-msgstr "कागद जानकारी"
-
-#: main/KoDocumentInfoDlg.cpp:105 main/KoDocumentInfoDlg.cpp:106
-msgid "General"
-msgstr "सामान्य"
-
-#: main/KoDocumentInfoDlg.cpp:124 main/KoDocumentInfoDlg.cpp:125
-msgid "Author"
-msgstr "लेखक"
-
-#: main/KoDocumentInfoDlg.cpp:140 main/KoDocumentInfoDlg.cpp:141
-#, fuzzy
-#| msgid "Red"
-msgid "Rdf"
-msgstr "लाल"
-
-#: main/KoDocumentInfoDlg.cpp:189
-#, fuzzy
-#| msgid "Use ';' (Example: Office;KDE;KOffice)"
-msgid "Use ';' (Example: Office;KDE;Calligra)"
-msgstr "परयोग ';' (उदाहरन: Office;KDE;KOffice)"
-
-#: main/KoDocumentInfoDlg.cpp:219 main/KoDocumentInfoDlg.cpp:361
-msgid "This document will be decrypted"
-msgstr "ये कागद डीक्रिप्ट करे जाही"
-
-#: main/KoDocumentInfoDlg.cpp:221 main/KoDocumentInfoDlg.cpp:363
-msgid "Do not decrypt"
-msgstr "डीक्रिप्ट नइ करव"
-
-#: main/KoDocumentInfoDlg.cpp:224 main/KoDocumentInfoDlg.cpp:366
-msgid "This document is encrypted"
-msgstr "ये कागद एनक्रिप्टेड हे"
-
-#: main/KoDocumentInfoDlg.cpp:226 main/KoDocumentInfoDlg.cpp:368
-msgid "D&ecrypt"
-msgstr "डीक्रिप्ट (&e)"
-
-#: main/KoDocumentInfoDlg.cpp:231 main/KoDocumentInfoDlg.cpp:373
-msgid "This document will be encrypted."
-msgstr "ये कागद एनक्रिप्टेड हे."
-
-#: main/KoDocumentInfoDlg.cpp:233 main/KoDocumentInfoDlg.cpp:375
-msgid "Do not encrypt"
-msgstr "एनक्रिप्ट नइ करव"
-
-#: main/KoDocumentInfoDlg.cpp:236 main/KoDocumentInfoDlg.cpp:378
-msgid "This document is not encrypted"
-msgstr "ये कागद एनक्रिप्टेड नइ हे."
-
-#. i18n: file: main/koDocumentInfoAboutWidget.ui:301
-#. i18n: ectx: property (text), widget (QPushButton, pbEncrypt)
-#: main/KoDocumentInfoDlg.cpp:238 main/KoDocumentInfoDlg.cpp:380 rc.cpp:409
-msgid "&Encrypt"
-msgstr "एनक्रिप्ट (&E)"
-
-#: main/KoDocumentInfoDlg.cpp:242
-#, fuzzy
-#| msgid "This document is not encrypted"
-msgid "This document does not support encryption"
-msgstr "ये कागद एनक्रिप्टेड नइ हे."
-
-#: main/KoDocumentInfoDlg.cpp:411
-msgid ""
-"No personal contact data set, please use the "
-"option                                     \"Set as Personal Contact Data\" "
-"from the \"Edit\"     menu in KAddressbook to set one."
-msgstr ""
-
-#: main/KoDocumentInfoDlg.cpp:453
-msgid ""
-"<qt>Decrypting the document will remove the password protection from it."
-"<p>Do you still want to decrypt the file?</qt>"
-msgstr ""
-
-#: main/KoDocumentInfoDlg.cpp:455
-msgid "Confirm Decrypt"
-msgstr "डीक्रिप्ट के पुस्टि करव"
-
-#: main/KoDocumentInfoDlg.cpp:456
-msgid "Decrypt"
-msgstr "डीक्रिप्ट"
-
-#: main/KoDocumentInfoDlg.cpp:467
-msgid ""
-"<qt>Your document could not be saved automatically.<p>To complete the "
-"decryption, please save the document.</qt>"
-msgstr ""
-
-#: main/KoDocumentInfoDlg.cpp:469 main/KoDocumentInfoDlg.cpp:477
-#: main/KoDocumentInfoDlg.cpp:510 main/KoDocumentInfoDlg.cpp:518
-msgid "Save Document"
-msgstr "कागद सहेजव"
-
-#: main/KoDocumentInfoDlg.cpp:475
-msgid ""
-"<qt>The document has been changed since it was opened. To complete the "
-"decryption the document needs to be saved.<p>Do you want to save the "
-"document now?</qt>"
-msgstr ""
-
-#: main/KoDocumentInfoDlg.cpp:489 main/KoMainWindow.cpp:744
-#, kde-format
-msgid "%1 (unknown file type)"
-msgstr "%1 (अग्यात फाइल किसिम)"
-
-#: main/KoDocumentInfoDlg.cpp:492
-#, kde-format
-msgid ""
-"<qt>The document is currently saved as %1. The document needs to be changed "
-"to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to change the "
-"file to OASIS OpenDocument?</qt>"
-msgstr ""
-
-#: main/KoDocumentInfoDlg.cpp:494
-msgid "Change Filetype"
-msgstr "फाइल किसिम बदलव"
-
-#: main/KoDocumentInfoDlg.cpp:495
-msgid "Change"
-msgstr "बदलव"
-
-#: main/KoDocumentInfoDlg.cpp:508
-msgid ""
-"<qt>Your document could not be saved automatically.<p>To complete the "
-"encryption, please save the document.</qt>"
-msgstr ""
-
-#: main/KoDocumentInfoDlg.cpp:516
-msgid ""
-"<qt>The document has been changed since it was opened. To complete the "
-"encryption the document needs to be saved.<p>Do you want to save the "
-"document now?</qt>"
-msgstr ""
-
-#: main/KoFileDialog.cpp:98
-#, kde-format
-msgid "%1 (Uncompressed XML Files)"
-msgstr "%1 (अ-संपीडित एक्सएमएल फाइल मन ल)"
-
-#: main/KoFileDialog.cpp:100
-#, kde-format
-msgid "%1 (Flat XML File)"
-msgstr "%1 (सपाट एक्सएमएल फाइल)"
-
-#: main/KoFileDialog.cpp:102
-#, kde-format
-msgid "%1 (Encrypted)"
-msgstr "%1 (एनक्रिप्टेड)"
-
-#: main/KoFileDialog.cpp:120
-#, kde-format
-msgid "%1 (%2 Compatible)"
-msgstr "%1 (%2 कम्पेटिबल)"
-
-#: main/KoDocumentSectionToolTip.cpp:50
-msgid "Yes"
-msgstr "हाँ"
-
-#: main/KoDocumentSectionToolTip.cpp:50
-msgid "No"
-msgstr "नइ"
-
-#: main/KoExistingDocumentPane.cpp:45 main/KoMainWindow.cpp:1202
-#: main/KoOpenPane.cpp:358 main/KoOpenPane.cpp:362
-msgid "Open Document"
-msgstr "कागद खोलव"
-
-#: main/KoFilterManager.cpp:230 main/KoFilterManager.cpp:239
-msgid "Could not export file."
-msgstr "फाइल निर्यात नइ कर सकिस."
-
-#: main/KoFilterManager.cpp:230 main/KoFilterManager.cpp:239
-msgid "Missing Export Filter"
-msgstr "गुमा निर्यात फिल्टर"
-
-#: main/KoFilterManager.cpp:528
-#, kde-format
-msgid ""
-"Could not import file of type\n"
-"%1"
-msgstr ""
-"फाइल किसिम\n"
-"%1 आयात नइ कर सकिस"
-
-#: main/KoFilterManager.cpp:530
-msgid "Missing Import Filter"
-msgstr "गुमा आयात फिल्टर"
-
-#: main/KoFilterManager_p.cpp:43
-msgid "Choose Filter"
-msgstr "फिल्टर चुनव"
-
-#: main/KoGridData.cpp:210
-#, fuzzy
-msgid "Shows or hides grid"
-msgstr "गाइड देखाव या लुकाव"
 
 #: main/KoDocument.cpp:512
 msgid "Making backup..."
@@ -2512,6 +2322,303 @@ msgstr "ड्राइंग"
 msgid "Embedding Object"
 msgstr "चीज सम्मिलित करना"
 
+#: main/KoDocumentInfo.cpp:51
+msgid "Unknown"
+msgstr "अग्यात"
+
+#: main/KoDocumentInfoDlg.cpp:90 main/KoMainWindow.cpp:274
+msgid "Document Information"
+msgstr "कागद जानकारी"
+
+#: main/KoDocumentInfoDlg.cpp:105 main/KoDocumentInfoDlg.cpp:106
+msgid "General"
+msgstr "सामान्य"
+
+#: main/KoDocumentInfoDlg.cpp:124 main/KoDocumentInfoDlg.cpp:125
+msgid "Author"
+msgstr "लेखक"
+
+#: main/KoDocumentInfoDlg.cpp:140 main/KoDocumentInfoDlg.cpp:141
+#, fuzzy
+#| msgid "Red"
+msgid "Rdf"
+msgstr "लाल"
+
+#: main/KoDocumentInfoDlg.cpp:189
+#, fuzzy
+#| msgid "Use ';' (Example: Office;KDE;KOffice)"
+msgid "Use ';' (Example: Office;KDE;Calligra)"
+msgstr "परयोग ';' (उदाहरन: Office;KDE;KOffice)"
+
+#: main/KoDocumentInfoDlg.cpp:219 main/KoDocumentInfoDlg.cpp:361
+msgid "This document will be decrypted"
+msgstr "ये कागद डीक्रिप्ट करे जाही"
+
+#: main/KoDocumentInfoDlg.cpp:221 main/KoDocumentInfoDlg.cpp:363
+msgid "Do not decrypt"
+msgstr "डीक्रिप्ट नइ करव"
+
+#: main/KoDocumentInfoDlg.cpp:224 main/KoDocumentInfoDlg.cpp:366
+msgid "This document is encrypted"
+msgstr "ये कागद एनक्रिप्टेड हे"
+
+#: main/KoDocumentInfoDlg.cpp:226 main/KoDocumentInfoDlg.cpp:368
+msgid "D&ecrypt"
+msgstr "डीक्रिप्ट (&e)"
+
+#: main/KoDocumentInfoDlg.cpp:231 main/KoDocumentInfoDlg.cpp:373
+msgid "This document will be encrypted."
+msgstr "ये कागद एनक्रिप्टेड हे."
+
+#: main/KoDocumentInfoDlg.cpp:233 main/KoDocumentInfoDlg.cpp:375
+msgid "Do not encrypt"
+msgstr "एनक्रिप्ट नइ करव"
+
+#: main/KoDocumentInfoDlg.cpp:236 main/KoDocumentInfoDlg.cpp:378
+msgid "This document is not encrypted"
+msgstr "ये कागद एनक्रिप्टेड नइ हे."
+
+#. i18n: file: main/koDocumentInfoAboutWidget.ui:301
+#. i18n: ectx: property (text), widget (QPushButton, pbEncrypt)
+#: main/KoDocumentInfoDlg.cpp:238 main/KoDocumentInfoDlg.cpp:380 rc.cpp:239
+msgid "&Encrypt"
+msgstr "एनक्रिप्ट (&E)"
+
+#: main/KoDocumentInfoDlg.cpp:242
+#, fuzzy
+#| msgid "This document is not encrypted"
+msgid "This document does not support encryption"
+msgstr "ये कागद एनक्रिप्टेड नइ हे."
+
+#: main/KoDocumentInfoDlg.cpp:411
+msgid ""
+"No personal contact data set, please use the "
+"option                                     \"Set as Personal Contact Data\" "
+"from the \"Edit\"     menu in KAddressbook to set one."
+msgstr ""
+
+#: main/KoDocumentInfoDlg.cpp:453
+msgid ""
+"<qt>Decrypting the document will remove the password protection from it."
+"<p>Do you still want to decrypt the file?</qt>"
+msgstr ""
+
+#: main/KoDocumentInfoDlg.cpp:455
+msgid "Confirm Decrypt"
+msgstr "डीक्रिप्ट के पुस्टि करव"
+
+#: main/KoDocumentInfoDlg.cpp:456
+msgid "Decrypt"
+msgstr "डीक्रिप्ट"
+
+#: main/KoDocumentInfoDlg.cpp:467
+msgid ""
+"<qt>Your document could not be saved automatically.<p>To complete the "
+"decryption, please save the document.</qt>"
+msgstr ""
+
+#: main/KoDocumentInfoDlg.cpp:469 main/KoDocumentInfoDlg.cpp:477
+#: main/KoDocumentInfoDlg.cpp:510 main/KoDocumentInfoDlg.cpp:518
+msgid "Save Document"
+msgstr "कागद सहेजव"
+
+#: main/KoDocumentInfoDlg.cpp:475
+msgid ""
+"<qt>The document has been changed since it was opened. To complete the "
+"decryption the document needs to be saved.<p>Do you want to save the "
+"document now?</qt>"
+msgstr ""
+
+#: main/KoDocumentInfoDlg.cpp:489 main/KoMainWindow.cpp:744
+#, kde-format
+msgid "%1 (unknown file type)"
+msgstr "%1 (अग्यात फाइल किसिम)"
+
+#: main/KoDocumentInfoDlg.cpp:492
+#, kde-format
+msgid ""
+"<qt>The document is currently saved as %1. The document needs to be changed "
+"to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to change the "
+"file to OASIS OpenDocument?</qt>"
+msgstr ""
+
+#: main/KoDocumentInfoDlg.cpp:494
+msgid "Change Filetype"
+msgstr "फाइल किसिम बदलव"
+
+#: main/KoDocumentInfoDlg.cpp:495
+msgid "Change"
+msgstr "बदलव"
+
+#: main/KoDocumentInfoDlg.cpp:508
+msgid ""
+"<qt>Your document could not be saved automatically.<p>To complete the "
+"encryption, please save the document.</qt>"
+msgstr ""
+
+#: main/KoDocumentInfoDlg.cpp:516
+msgid ""
+"<qt>The document has been changed since it was opened. To complete the "
+"encryption the document needs to be saved.<p>Do you want to save the "
+"document now?</qt>"
+msgstr ""
+
+#: main/KoDocumentSectionDelegate.cpp:511
+#, kde-format
+msgid "%1 %"
+msgstr "%1 %"
+
+#: main/KoDocumentSectionToolTip.cpp:50
+msgid "Yes"
+msgstr "हाँ"
+
+#: main/KoDocumentSectionToolTip.cpp:50
+msgid "No"
+msgstr "नइ"
+
+#: main/KoExistingDocumentPane.cpp:45 main/KoMainWindow.cpp:1202
+#: main/KoOpenPane.cpp:358 main/KoOpenPane.cpp:362
+msgid "Open Document"
+msgstr "कागद खोलव"
+
+#: main/KoFileDialog.cpp:98
+#, kde-format
+msgid "%1 (Uncompressed XML Files)"
+msgstr "%1 (अ-संपीडित एक्सएमएल फाइल मन ल)"
+
+#: main/KoFileDialog.cpp:100
+#, kde-format
+msgid "%1 (Flat XML File)"
+msgstr "%1 (सपाट एक्सएमएल फाइल)"
+
+#: main/KoFileDialog.cpp:102
+#, kde-format
+msgid "%1 (Encrypted)"
+msgstr "%1 (एनक्रिप्टेड)"
+
+#: main/KoFileDialog.cpp:120
+#, kde-format
+msgid "%1 (%2 Compatible)"
+msgstr "%1 (%2 कम्पेटिबल)"
+
+#: main/KoFilterManager.cpp:230 main/KoFilterManager.cpp:239
+msgid "Could not export file."
+msgstr "फाइल निर्यात नइ कर सकिस."
+
+#: main/KoFilterManager.cpp:230 main/KoFilterManager.cpp:239
+msgid "Missing Export Filter"
+msgstr "गुमा निर्यात फिल्टर"
+
+#: main/KoFilterManager.cpp:528
+#, kde-format
+msgid ""
+"Could not import file of type\n"
+"%1"
+msgstr ""
+"फाइल किसिम\n"
+"%1 आयात नइ कर सकिस"
+
+#: main/KoFilterManager.cpp:530
+msgid "Missing Import Filter"
+msgstr "गुमा आयात फिल्टर"
+
+#: main/KoFilterManager_p.cpp:43
+msgid "Choose Filter"
+msgstr "फिल्टर चुनव"
+
+#: main/KoFindText.cpp:92
+msgid "Case Sensitive"
+msgstr ""
+
+#: main/KoFindText.cpp:92
+msgid "Match cases when searching"
+msgstr ""
+
+#: main/KoFindText.cpp:93
+msgid "Whole Words Only"
+msgstr ""
+
+#: main/KoFindText.cpp:93
+msgid "Match only whole words"
+msgstr ""
+
+#: main/KoFindToolbar.cpp:99
+#, fuzzy
+#| msgid "Mid:"
+msgctxt "Label for the Find text input box"
+msgid "Find:"
+msgstr "मध्य:"
+
+#: main/KoFindToolbar.cpp:112
+#, fuzzy
+#| msgid "Text"
+msgctxt "Next search result"
+msgid "Next"
+msgstr "पाठ"
+
+#: main/KoFindToolbar.cpp:122
+#, fuzzy
+#| msgid "Preview:"
+msgctxt "Previous search result"
+msgid "Previous"
+msgstr "प्रिव्यूः"
+
+#: main/KoFindToolbar.cpp:131
+#, fuzzy
+#| msgid "%1 Options"
+msgctxt "Search options"
+msgid "Options"
+msgstr "%1 विकल्प"
+
+#: main/KoFindToolbar.cpp:155
+#, fuzzy
+#| msgid "Replace"
+msgctxt "Label for the Replace text input box"
+msgid "Replace:"
+msgstr "बदलव"
+
+#: main/KoFindToolbar.cpp:165
+#, fuzzy
+#| msgid "Replace"
+msgctxt "Replace the current match"
+msgid "Replace"
+msgstr "बदलव"
+
+#: main/KoFindToolbar.cpp:171
+#, fuzzy
+#| msgid "Replace"
+msgctxt "Replace all found matches"
+msgid "Replace All"
+msgstr "बदलव"
+
+#: main/KoFindToolbar.cpp:237
+#, fuzzy, kde-format
+#| msgid "No template found for: %1 "
+msgctxt "Total number of matches"
+msgid "1 match found"
+msgid_plural "%1 matches found"
+msgstr[0] " %1: बर कोनो टैम्पलेट नइ मिलिस"
+msgstr[1] " %1: बर कोनो टैम्पलेट नइ मिलिस"
+
+#: main/KoFindToolbar.cpp:247
+#, fuzzy
+#| msgid "No template found for: %1 "
+msgid "No matches found"
+msgstr " %1: बर कोनो टैम्पलेट नइ मिलिस"
+
+#: main/KoFindToolbar.cpp:253
+msgid "Search hit bottom, continuing from top."
+msgstr ""
+
+#: main/KoFindToolbar.cpp:255
+msgid "Search hit top, continuing from bottom."
+msgstr ""
+
+#: main/KoGridData.cpp:210
+#, fuzzy
+msgid "Shows or hides grid"
+msgstr "गाइड देखाव या लुकाव"
+
 #: main/KoMainWindow.cpp:153
 #, kde-format
 msgid "%1 unsaved document (%2)"
@@ -2617,18 +2724,6 @@ msgstr "चेतावनी"
 msgid "Export to PDF"
 msgstr "पीडीएफ मं निर्यात करव..."
 
-#: main/KoMainWindow.cpp:1384 main/KoUndoStackAction.cpp:36
-#: main/KoUndoStackAction.cpp:52 kundo2/kundo2stack.cpp:1093
-msgid "Undo"
-msgstr ""
-
-#: main/KoMainWindow.cpp:1385 main/KoUndoStackAction.cpp:44
-#: main/KoUndoStackAction.cpp:52 kundo2/kundo2stack.cpp:1074
-#, fuzzy
-#| msgid "Red"
-msgid "Redo"
-msgstr "लाल"
-
 #: main/KoMainWindow.cpp:1577
 #, kde-format
 msgid "Show %1 Toolbar"
@@ -2657,6 +2752,22 @@ msgstr "हाल ही मं प्रयुक्त कागद"
 #: main/KoOpenPane.cpp:272
 msgid "Custom Document"
 msgstr "मनमाफिक कागद"
+
+#: main/KoPrintingDialog.cpp:147
+msgid "Printing done"
+msgstr "छपाई पूरा"
+
+#: main/KoPrintingDialog.cpp:148
+msgid "Close"
+msgstr "बंद करव"
+
+#: main/KoPrintingDialog.cpp:168
+msgid "Stopped"
+msgstr "रुक गिस"
+
+#: main/KoPrintingDialog.cpp:210
+msgid "Stop"
+msgstr "रुकव"
 
 #: main/KoRecentDocumentsPane.cpp:76
 msgid "Open This Document"
@@ -2700,7 +2811,7 @@ msgstr "टैम्पलेट बनाव"
 
 #. i18n: file: main/koDocumentInfoAuthorWidget.ui:16
 #. i18n: ectx: property (text), widget (QLabel, fullNameLabel)
-#: main/KoTemplateCreateDia.cpp:127 rc.cpp:412
+#: main/KoTemplateCreateDia.cpp:127 rc.cpp:242
 msgid "Name:"
 msgstr "नाम:"
 
@@ -2794,10 +2905,6 @@ msgstr "कोई फोटू नइ मिलत."
 msgid "Use This Template"
 msgstr "ये टैम्प्लेट के उपयोग करव"
 
-#: main/KoView.cpp:504
-msgid "&New View"
-msgstr "नवा दृस्य (&N)"
-
 #: main/KoToolDocker.cpp:222
 msgid "Tool Options"
 msgstr "औजार विकल्प"
@@ -2849,11 +2956,213 @@ msgstr "एक नवा संस्करन जोड़ा जा सकथ�
 msgid "Date: %1"
 msgstr "तारीक: %1"
 
+#: main/KoView.cpp:504
+msgid "&New View"
+msgstr "नवा दृस्य (&N)"
+
+#: main/config/KoConfigDocumentPage.cpp:75
+#, fuzzy
+#| msgid "Autosaving..."
+msgid "Auto save (min):"
+msgstr "अपने अपन सहेजत हे..."
+
+#: main/config/KoConfigDocumentPage.cpp:76
+msgid "No auto save"
+msgstr ""
+
+#: main/config/KoConfigDocumentPage.cpp:77
+msgid "min"
+msgstr ""
+
+#: main/config/KoConfigDocumentPage.cpp:80
+#, fuzzy
+#| msgid "Create shape"
+msgid "Create backup file"
+msgstr "आकार बनाव"
+
+#: main/config/KoConfigGridPage.cpp:67
+#, fuzzy
+msgid "Show grid:"
+msgstr "ग्रिड देखाव (&G)"
+
+#: main/config/KoConfigGridPage.cpp:70
+#, fuzzy
+#| msgid "Snap to Grid"
+msgid "Snap to grid:"
+msgstr "ग्रिड मं स्नेप करव"
+
+#: main/config/KoConfigGridPage.cpp:73
+#, fuzzy
+#| msgid "&Background color:"
+msgid "Grid color:"
+msgstr "पिछोत अंगना के रंगः (&B)"
+
+#: main/config/KoConfigGridPage.cpp:86
+#, fuzzy
+#| msgid "Snapping"
+msgid "Spacing"
+msgstr "स्नेपिंग"
+
+#: main/config/KoConfigGridPage.cpp:89
+#, fuzzy
+#| msgid "&Horizontal"
+msgctxt "Horizontal grid spacing"
+msgid "&Horizontal:"
+msgstr "आड़ा (&H)"
+
+#: main/config/KoConfigGridPage.cpp:95
+#, fuzzy
+#| msgid "&Vertical"
+msgctxt "Vertical grid spacing"
+msgid "&Vertical:"
+msgstr "खड़ा (&V)"
+
+#: main/config/KoConfigMiscPage.cpp:89
+#, fuzzy
+#| msgid "Unit:"
+msgid "Units:"
+msgstr "इकाईः"
+
+#: main/config/KoConfigMiscPage.cpp:97
+msgid "Handle radius:"
+msgstr ""
+
+#: main/config/KoConfigMiscPage.cpp:105
+msgid "Grab sensitivity:"
+msgstr ""
+
+#: main/config/KoConfigMiscPage.cpp:113
+#, fuzzy
+#| msgid "Shadow Offset:"
+msgid "Paste offset:"
+msgstr "छइंहा आफसेट:"
+
+#: main/config/KoConfigMiscPage.cpp:122
+msgid "Paste at Cursor"
+msgstr ""
+
 #: main/rdf/InsertSemanticObjectReferenceAction.cpp:56
 #, fuzzy
 #| msgid "Select the index you want to reference"
 msgid "Select the object you want to reference"
 msgstr "वह निर्देसिका चुनव जेखर संदर्भ आब देना चाहथो "
+
+#: main/rdf/KoDocumentRdf.cpp:903
+#, fuzzy
+#| msgid "Text Reference"
+msgid "Reference"
+msgstr "पाठ संदर्भ"
+
+#: main/rdf/KoDocumentRdfEditWidget.cpp:274
+#, kde-format
+msgctxt "statement is an Rdf related term"
+msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
+msgid_plural ""
+"<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: main/rdf/KoDocumentRdfEditWidget.cpp:277
+msgctxt "statement is an Rdf related term"
+msgid "Discard invalid statements?"
+msgstr ""
+
+#: main/rdf/KoRdfCalendarEvent.cpp:161
+msgid "Area"
+msgstr ""
+
+#: main/rdf/KoRdfCalendarEvent.cpp:162
+#, fuzzy
+#| msgid "Version"
+msgid "Region"
+msgstr "संस्करन"
+
+#: main/rdf/KoRdfCalendarEvent.cpp:403
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not save\n"
+#| "%1"
+msgid ""
+"Could not add entry\n"
+"%1"
+msgstr ""
+"सहेज नइ सकिस\n"
+" %1"
+
+#: main/rdf/KoRdfCalendarEvent.cpp:427
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not save\n"
+#| "%1"
+msgid ""
+"Could not save iCal file\n"
+"%1"
+msgstr ""
+"सहेज नइ सकिस\n"
+" %1"
+
+#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:42
+msgid "Calendar Event"
+msgstr ""
+
+#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:49
+#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:70
+#, fuzzy
+#| msgid "Add..."
+msgid "Edit..."
+msgstr "जोड़व..."
+
+#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:52
+msgid "Import event to Calendar"
+msgstr ""
+
+#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:55
+msgid "Export event to iCal file..."
+msgstr ""
+
+#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:52
+#, fuzzy
+#| msgid "Document Information"
+msgid "Contact Information"
+msgstr "कागद जानकारी"
+
+#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:73
+#, fuzzy
+#| msgid "Import Data"
+msgid "Import contact"
+msgstr "डाटा आयात करव"
+
+#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:76
+#, fuzzy
+#| msgid "Export as PDF..."
+msgid "Export as vcard..."
+msgstr "पीडीएफ मं निर्यात करव..."
+
+#: main/rdf/KoRdfLocationTreeWidgetItem.cpp:42
+#, fuzzy
+#| msgid "Document Information"
+msgid "Location Information"
+msgstr "कागद जानकारी"
+
+#: main/rdf/KoRdfSemanticTree.cpp:49
+#, fuzzy
+#| msgid "Replace"
+msgid "People"
+msgstr "बदलव"
+
+#. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:240
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: main/rdf/KoRdfSemanticTree.cpp:52 rc.cpp:349
+msgid "Events"
+msgstr ""
+
+#. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:256
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: main/rdf/KoRdfSemanticTree.cpp:55 rc.cpp:352
+#, fuzzy
+#| msgid "Actions"
+msgid "Locations"
+msgstr "काम"
 
 #: main/rdf/KoRdfSemanticTreeWidgetItem.cpp:112
 msgid "Apply Stylesheet"
@@ -2883,32 +3192,6 @@ msgstr ""
 #, kde-format
 msgid "Edit %1"
 msgstr ""
-
-#: main/rdf/KoRdfLocationTreeWidgetItem.cpp:42
-#, fuzzy
-#| msgid "Document Information"
-msgid "Location Information"
-msgstr "कागद जानकारी"
-
-#: main/rdf/KoRdfSemanticTree.cpp:49
-#, fuzzy
-#| msgid "Replace"
-msgid "People"
-msgstr "बदलव"
-
-#. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:240
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: main/rdf/KoRdfSemanticTree.cpp:52 rc.cpp:262
-msgid "Events"
-msgstr ""
-
-#. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:256
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: main/rdf/KoRdfSemanticTree.cpp:55 rc.cpp:265
-#, fuzzy
-#| msgid "Actions"
-msgid "Locations"
-msgstr "काम"
 
 #: main/rdf/KoSopranoTableModel.cpp:80
 msgid "Empty"
@@ -2970,266 +3253,6 @@ msgstr "डाटा"
 #| msgid "Stopped"
 msgid "Stored In"
 msgstr "रुक गिस"
-
-#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:52
-#, fuzzy
-#| msgid "Document Information"
-msgid "Contact Information"
-msgstr "कागद जानकारी"
-
-#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:70
-#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:49
-#, fuzzy
-#| msgid "Add..."
-msgid "Edit..."
-msgstr "जोड़व..."
-
-#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:73
-#, fuzzy
-#| msgid "Import Data"
-msgid "Import contact"
-msgstr "डाटा आयात करव"
-
-#: main/rdf/KoRdfFoaFTreeWidgetItem.cpp:76
-#, fuzzy
-#| msgid "Export as PDF..."
-msgid "Export as vcard..."
-msgstr "पीडीएफ मं निर्यात करव..."
-
-#: main/rdf/KoDocumentRdfEditWidget.cpp:274
-#, kde-format
-msgctxt "statement is an Rdf related term"
-msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
-msgid_plural ""
-"<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: main/rdf/KoDocumentRdfEditWidget.cpp:277
-msgctxt "statement is an Rdf related term"
-msgid "Discard invalid statements?"
-msgstr ""
-
-#: main/rdf/KoDocumentRdf.cpp:903
-#, fuzzy
-#| msgid "Text Reference"
-msgid "Reference"
-msgstr "पाठ संदर्भ"
-
-#: main/rdf/KoRdfCalendarEvent.cpp:161
-msgid "Area"
-msgstr ""
-
-#: main/rdf/KoRdfCalendarEvent.cpp:162
-#, fuzzy
-#| msgid "Version"
-msgid "Region"
-msgstr "संस्करन"
-
-#: main/rdf/KoRdfCalendarEvent.cpp:403
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not save\n"
-#| "%1"
-msgid ""
-"Could not add entry\n"
-"%1"
-msgstr ""
-"सहेज नइ सकिस\n"
-" %1"
-
-#: main/rdf/KoRdfCalendarEvent.cpp:427
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not save\n"
-#| "%1"
-msgid ""
-"Could not save iCal file\n"
-"%1"
-msgstr ""
-"सहेज नइ सकिस\n"
-" %1"
-
-#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:42
-msgid "Calendar Event"
-msgstr ""
-
-#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:52
-msgid "Import event to Calendar"
-msgstr ""
-
-#: main/rdf/KoRdfCalendarEventTreeWidgetItem.cpp:55
-msgid "Export event to iCal file..."
-msgstr ""
-
-#: main/config/KoConfigDocumentPage.cpp:75
-#, fuzzy
-#| msgid "Autosaving..."
-msgid "Auto save (min):"
-msgstr "अपने अपन सहेजत हे..."
-
-#: main/config/KoConfigDocumentPage.cpp:76
-msgid "No auto save"
-msgstr ""
-
-#: main/config/KoConfigDocumentPage.cpp:77
-msgid "min"
-msgstr ""
-
-#: main/config/KoConfigDocumentPage.cpp:80
-#, fuzzy
-#| msgid "Create shape"
-msgid "Create backup file"
-msgstr "आकार बनाव"
-
-#: main/config/KoConfigMiscPage.cpp:89
-#, fuzzy
-#| msgid "Unit:"
-msgid "Units:"
-msgstr "इकाईः"
-
-#: main/config/KoConfigMiscPage.cpp:97
-msgid "Handle radius:"
-msgstr ""
-
-#: main/config/KoConfigMiscPage.cpp:105
-msgid "Grab sensitivity:"
-msgstr ""
-
-#: main/config/KoConfigMiscPage.cpp:113
-#, fuzzy
-#| msgid "Shadow Offset:"
-msgid "Paste offset:"
-msgstr "छइंहा आफसेट:"
-
-#: main/config/KoConfigMiscPage.cpp:122
-msgid "Paste at Cursor"
-msgstr ""
-
-#: main/config/KoConfigGridPage.cpp:67
-#, fuzzy
-msgid "Show grid:"
-msgstr "ग्रिड देखाव (&G)"
-
-#: main/config/KoConfigGridPage.cpp:70
-#, fuzzy
-#| msgid "Snap to Grid"
-msgid "Snap to grid:"
-msgstr "ग्रिड मं स्नेप करव"
-
-#: main/config/KoConfigGridPage.cpp:73
-#, fuzzy
-#| msgid "&Background color:"
-msgid "Grid color:"
-msgstr "पिछोत अंगना के रंगः (&B)"
-
-#: main/config/KoConfigGridPage.cpp:86
-#, fuzzy
-#| msgid "Snapping"
-msgid "Spacing"
-msgstr "स्नेपिंग"
-
-#: main/config/KoConfigGridPage.cpp:89
-#, fuzzy
-#| msgid "&Horizontal"
-msgctxt "Horizontal grid spacing"
-msgid "&Horizontal:"
-msgstr "आड़ा (&H)"
-
-#: main/config/KoConfigGridPage.cpp:95
-#, fuzzy
-#| msgid "&Vertical"
-msgctxt "Vertical grid spacing"
-msgid "&Vertical:"
-msgstr "खड़ा (&V)"
-
-#: main/KoFindToolbar.cpp:99
-#, fuzzy
-#| msgid "Mid:"
-msgctxt "Label for the Find text input box"
-msgid "Find:"
-msgstr "मध्य:"
-
-#: main/KoFindToolbar.cpp:112
-#, fuzzy
-#| msgid "Text"
-msgctxt "Next search result"
-msgid "Next"
-msgstr "पाठ"
-
-#: main/KoFindToolbar.cpp:122
-#, fuzzy
-#| msgid "Preview:"
-msgctxt "Previous search result"
-msgid "Previous"
-msgstr "प्रिव्यूः"
-
-#: main/KoFindToolbar.cpp:131
-#, fuzzy
-#| msgid "%1 Options"
-msgctxt "Search options"
-msgid "Options"
-msgstr "%1 विकल्प"
-
-#: main/KoFindToolbar.cpp:155
-#, fuzzy
-#| msgid "Replace"
-msgctxt "Label for the Replace text input box"
-msgid "Replace:"
-msgstr "बदलव"
-
-#: main/KoFindToolbar.cpp:165
-#, fuzzy
-#| msgid "Replace"
-msgctxt "Replace the current match"
-msgid "Replace"
-msgstr "बदलव"
-
-#: main/KoFindToolbar.cpp:171
-#, fuzzy
-#| msgid "Replace"
-msgctxt "Replace all found matches"
-msgid "Replace All"
-msgstr "बदलव"
-
-#: main/KoFindToolbar.cpp:237
-#, fuzzy, kde-format
-#| msgid "No template found for: %1 "
-msgctxt "Total number of matches"
-msgid "1 match found"
-msgid_plural "%1 matches found"
-msgstr[0] " %1: बर कोनो टैम्पलेट नइ मिलिस"
-msgstr[1] " %1: बर कोनो टैम्पलेट नइ मिलिस"
-
-#: main/KoFindToolbar.cpp:247
-#, fuzzy
-#| msgid "No template found for: %1 "
-msgid "No matches found"
-msgstr " %1: बर कोनो टैम्पलेट नइ मिलिस"
-
-#: main/KoFindToolbar.cpp:253
-msgid "Search hit bottom, continuing from top."
-msgstr ""
-
-#: main/KoFindToolbar.cpp:255
-msgid "Search hit top, continuing from bottom."
-msgstr ""
-
-#: main/KoFindText.cpp:92
-msgid "Case Sensitive"
-msgstr ""
-
-#: main/KoFindText.cpp:92
-msgid "Match cases when searching"
-msgstr ""
-
-#: main/KoFindText.cpp:93
-msgid "Whole Words Only"
-msgstr ""
-
-#: main/KoFindText.cpp:93
-msgid "Match only whole words"
-msgstr ""
 
 #: odf/KoEncryptedStore.cpp:164
 msgid ""
@@ -3641,6 +3664,484 @@ msgstr "16 बिट्स फ्लोट (एचडीआर)"
 msgid "32 Bits Float"
 msgstr "३२ बिट्स फ्लोट (एचडीआर)"
 
+#: pigment/KoCompositeOp.cpp:30 pigment/KoCompositeOpRegistry.cpp:88
+#: pigment/compositeops/KoCompositeOps.h:141
+msgid "Color"
+msgstr "रंग"
+
+#: pigment/KoCompositeOp.cpp:33 pigment/KoCompositeOpRegistry.cpp:31
+#, fuzzy
+#| msgid "Automatic"
+msgid "Arithmetic"
+msgstr "अपने अपन"
+
+#: pigment/KoCompositeOp.cpp:34 pigment/KoCompositeOpRegistry.cpp:34
+msgid "Negative"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:35 pigment/KoCompositeOpRegistry.cpp:33
+#: pigment/KoCompositeOpRegistry.cpp:55
+#: pigment/compositeops/KoCompositeOps.h:87
+msgid "Lighten"
+msgstr "हल्का करव"
+
+#: pigment/KoCompositeOp.cpp:36 pigment/KoCompositeOpRegistry.cpp:32
+#: pigment/KoCompositeOpRegistry.cpp:50
+#: pigment/compositeops/KoCompositeOps.h:97
+msgid "Darken"
+msgstr "गहरा करव"
+
+#: pigment/KoCompositeOp.cpp:37 pigment/KoCompositeOpRegistry.cpp:37
+msgid "HSY"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:38 pigment/KoCompositeOpRegistry.cpp:38
+msgid "HSI"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:39 pigment/KoCompositeOpRegistry.cpp:39
+msgid "HSL"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:40 pigment/KoCompositeOpRegistry.cpp:40
+msgid "HSV"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:41 pigment/KoCompositeOpRegistry.cpp:35
+msgid "Mix"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:42
+#: pigment/compositeops/KoCompositeOps.h:100
+#, fuzzy
+#| msgid "Position"
+msgid "Addition"
+msgstr "स्थिति"
+
+#: pigment/KoCompositeOpRegistry.cpp:43
+#, fuzzy
+#| msgid "Subtract"
+msgid "Substract"
+msgstr "घटाव"
+
+#: pigment/KoCompositeOpRegistry.cpp:44
+#: pigment/colorspaces/KoAlphaColorSpace.cpp:193
+#: pigment/compositeops/KoCompositeOpMultiply.h:35
+#: pigment/compositeops/KoCompositeOps.h:103
+msgid "Multiply"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:45
+#: pigment/compositeops/KoCompositeOpDivide.h:36
+#: pigment/compositeops/KoCompositeOps.h:104
+msgid "Divide"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:46
+#, fuzzy
+#| msgid "Subtract"
+msgid "Inverse Substract"
+msgstr "घटाव"
+
+#: pigment/KoCompositeOpRegistry.cpp:48
+#: pigment/compositeops/KoCompositeOpBurn.h:37
+msgid "Burn"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:49
+#: pigment/compositeops/KoCompositeOps.h:96
+#, fuzzy
+#| msgid "Line Border"
+msgid "Linear Burn"
+msgstr "लकीर चौड़ाई"
+
+#: pigment/KoCompositeOpRegistry.cpp:51
+#: pigment/compositeops/KoCompositeOps.h:98
+msgid "Gamma Dark"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:53
+#: pigment/compositeops/KoCompositeOps.h:85
+#, fuzzy
+#| msgid "Color Chooser"
+msgid "Color Dodge"
+msgstr "रंग चुनइया"
+
+#: pigment/KoCompositeOpRegistry.cpp:54
+#: pigment/compositeops/KoCompositeOps.h:86
+#, fuzzy
+#| msgid "Line Border"
+msgid "Linear Dodge"
+msgstr "लकीर चौड़ाई"
+
+#: pigment/KoCompositeOpRegistry.cpp:56
+#: pigment/compositeops/KoCompositeOps.h:93
+#, fuzzy
+#| msgid "Lighten"
+msgid "Linear Light"
+msgstr "हल्का करव"
+
+#: pigment/KoCompositeOpRegistry.cpp:57
+#: pigment/compositeops/KoCompositeOpScreen.h:36
+#: pigment/compositeops/KoCompositeOps.h:84
+msgid "Screen"
+msgstr "स्क्रीन"
+
+#: pigment/KoCompositeOpRegistry.cpp:58
+#: pigment/compositeops/KoCompositeOps.h:92
+#, fuzzy
+#| msgid "Lighten"
+msgid "Pin Light"
+msgstr "हल्का करव"
+
+#: pigment/KoCompositeOpRegistry.cpp:59
+#: pigment/compositeops/KoCompositeOps.h:91
+#, fuzzy
+#| msgid "Lighten"
+msgid "Vivid Light"
+msgstr "हल्का करव"
+
+#: pigment/KoCompositeOpRegistry.cpp:60
+#: pigment/compositeops/KoCompositeOps.h:88
+#, fuzzy
+#| msgid "&Height:"
+msgid "Hard Light"
+msgstr "ऊंचाईः (&H)"
+
+#: pigment/KoCompositeOpRegistry.cpp:61
+#: pigment/compositeops/KoCompositeOps.h:89
+#, fuzzy
+#| msgid "Straight"
+msgid "Soft Light"
+msgstr "सीधा"
+
+#: pigment/KoCompositeOpRegistry.cpp:62
+#: pigment/compositeops/KoCompositeOps.h:90
+#, fuzzy
+#| msgid "Lighten"
+msgid "Gamma Light"
+msgstr "हल्का करव"
+
+#: pigment/KoCompositeOpRegistry.cpp:64
+#: pigment/compositeops/KoCompositeOps.h:107
+#, fuzzy
+#| msgid "Text Reference"
+msgid "Difference"
+msgstr "पाठ संदर्भ"
+
+#: pigment/KoCompositeOpRegistry.cpp:65
+#: pigment/compositeops/KoCompositeOps.h:109
+msgid "Equivalence"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:66
+#, fuzzy
+#| msgid "Substract"
+msgid "Additive Substractive"
+msgstr "घटाव"
+
+#: pigment/KoCompositeOpRegistry.cpp:67
+#: pigment/compositeops/KoCompositeOps.h:108
+msgid "Exclusion"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:68
+#: pigment/compositeops/KoCompositeOps.h:106
+msgid "Arcus Tangent"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:70 pigment/KoCompositeOpRegistry.cpp:133
+#: pigment/compositeops/KoCompositeOpOver.h:61
+msgid "Normal"
+msgstr "सामान्य"
+
+#: pigment/KoCompositeOpRegistry.cpp:71
+#: pigment/compositeops/KoCompositeOpOverlay.h:36
+#: pigment/compositeops/KoCompositeOps.h:76
+msgid "Overlay"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:72
+#: pigment/compositeops/KoCompositeOpErase.h:40
+msgid "Erase"
+msgstr "मेटाव"
+
+#: pigment/KoCompositeOpRegistry.cpp:73
+#, fuzzy
+#| msgid "Alpha mask"
+msgid "Alpha Darken"
+msgstr "अल्फा मास्क"
+
+#: pigment/KoCompositeOpRegistry.cpp:74
+#: pigment/compositeops/KoCompositeOps.h:79
+#, fuzzy
+#| msgid "&Height:"
+msgid "Hard Mix"
+msgstr "ऊंचाईः (&H)"
+
+#: pigment/KoCompositeOpRegistry.cpp:75
+#: pigment/compositeops/KoCompositeOps.h:77
+msgid "Grain Merge"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:76
+#: pigment/compositeops/KoCompositeOps.h:78
+msgid "Grain Extract"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:77
+#: pigment/compositeops/KoCompositeOps.h:81
+#, fuzzy
+#| msgid "Variable"
+msgid "Parallel"
+msgstr "परिवर्तनीय"
+
+#: pigment/KoCompositeOpRegistry.cpp:78
+#: pigment/compositeops/KoCompositeOps.h:82
+msgid "Allanon"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:79
+#: pigment/compositeops/KoCompositeOps.h:80
+msgid "Geometric Mean"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:81
+msgid "Bumpmap"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:82
+#: pigment/compositeops/KoCompositeOpDissolve.h:61
+msgid "Dissolve"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:83
+#: pigment/compositeops/KoCompositeOps.h:137
+#, fuzzy
+#| msgid "Copy Page"
+msgid "Copy Red"
+msgstr "पेज नकल करव"
+
+#: pigment/KoCompositeOpRegistry.cpp:84
+#: pigment/compositeops/KoCompositeOps.h:138
+#, fuzzy
+#| msgid "Green"
+msgid "Copy Green"
+msgstr "हरा"
+
+#: pigment/KoCompositeOpRegistry.cpp:85
+#: pigment/compositeops/KoCompositeOps.h:139
+#, fuzzy
+#| msgid "Copy Page"
+msgid "Copy Blue"
+msgstr "पेज नकल करव"
+
+#: pigment/KoCompositeOpRegistry.cpp:89
+#: pigment/compositeops/KoCompositeOps.h:142 widgets/KoUniColorChooser.cpp:116
+msgid "Hue"
+msgstr "वर्न"
+
+#: pigment/KoCompositeOpRegistry.cpp:90
+#: pigment/compositeops/KoCompositeOps.h:143 widgets/KoUniColorChooser.cpp:125
+msgid "Saturation"
+msgstr "संतृप्ति"
+
+#: pigment/KoCompositeOpRegistry.cpp:91
+#: pigment/compositeops/KoCompositeOps.h:146
+msgid "Luminosity"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:92
+#: pigment/compositeops/KoCompositeOps.h:145
+#, fuzzy
+#| msgid "Saturation"
+msgid "Decrease Saturation"
+msgstr "संतृप्ति"
+
+#: pigment/KoCompositeOpRegistry.cpp:93
+#: pigment/compositeops/KoCompositeOps.h:144
+#, fuzzy
+#| msgid "Saturation"
+msgid "Increase Saturation"
+msgstr "संतृप्ति"
+
+#: pigment/KoCompositeOpRegistry.cpp:94
+#: pigment/compositeops/KoCompositeOps.h:148
+#, fuzzy
+#| msgid "Decrease font size"
+msgid "Decrease Luminosity"
+msgstr "फोंट आकार घटाव"
+
+#: pigment/KoCompositeOpRegistry.cpp:95
+#: pigment/compositeops/KoCompositeOps.h:147
+#, fuzzy
+#| msgid "Increase font size"
+msgid "Increase Luminosity"
+msgstr "फोंट आकार बढ़ाव"
+
+#: pigment/KoCompositeOpRegistry.cpp:97
+#: pigment/compositeops/KoCompositeOps.h:150
+#, fuzzy
+#| msgid "Color"
+msgid "Color HSI"
+msgstr "रंग"
+
+#: pigment/KoCompositeOpRegistry.cpp:98
+#: pigment/compositeops/KoCompositeOps.h:151
+#, fuzzy
+#| msgid "Hue"
+msgid "Hue HSI"
+msgstr "वर्न"
+
+#: pigment/KoCompositeOpRegistry.cpp:99
+#: pigment/compositeops/KoCompositeOps.h:152
+#, fuzzy
+#| msgid "Saturation"
+msgid "Saturation HSI"
+msgstr "संतृप्ति"
+
+#: pigment/KoCompositeOpRegistry.cpp:100
+#: pigment/compositeops/KoCompositeOps.h:155
+msgid "Intensity"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:101
+#: pigment/compositeops/KoCompositeOps.h:154
+#, fuzzy
+#| msgid "Saturation"
+msgid "Decrease Saturation HSI"
+msgstr "संतृप्ति"
+
+#: pigment/KoCompositeOpRegistry.cpp:102
+#: pigment/compositeops/KoCompositeOps.h:153
+#, fuzzy
+#| msgid "Saturation"
+msgid "Increase Saturation HSI"
+msgstr "संतृप्ति"
+
+#: pigment/KoCompositeOpRegistry.cpp:103
+#: pigment/compositeops/KoCompositeOps.h:157
+#, fuzzy
+#| msgid "Decrease Indent"
+msgid "Decrease Intensity"
+msgstr "हासिया घटाव"
+
+#: pigment/KoCompositeOpRegistry.cpp:104
+#: pigment/compositeops/KoCompositeOps.h:156
+#, fuzzy
+#| msgid "Increase Indent"
+msgid "Increase Intensity"
+msgstr "हासिया बढ़ाव"
+
+#: pigment/KoCompositeOpRegistry.cpp:106
+#: pigment/compositeops/KoCompositeOps.h:159
+#, fuzzy
+#| msgid "Color"
+msgid "Color HSL"
+msgstr "रंग"
+
+#: pigment/KoCompositeOpRegistry.cpp:107
+#: pigment/compositeops/KoCompositeOps.h:160
+#, fuzzy
+#| msgid "Hue"
+msgid "Hue HSL"
+msgstr "वर्न"
+
+#: pigment/KoCompositeOpRegistry.cpp:108
+#: pigment/compositeops/KoCompositeOps.h:161
+#, fuzzy
+#| msgid "Saturation"
+msgid "Saturation HSL"
+msgstr "संतृप्ति"
+
+#: pigment/KoCompositeOpRegistry.cpp:109
+#: pigment/colorspaces/KoLabColorSpace.cpp:42
+#: pigment/compositeops/KoCompositeOps.h:164 widgets/KoUniColorChooser.cpp:201
+msgid "Lightness"
+msgstr "उजालापन"
+
+#: pigment/KoCompositeOpRegistry.cpp:110
+#: pigment/compositeops/KoCompositeOps.h:163
+#, fuzzy
+#| msgid "Saturation"
+msgid "Decrease Saturation HSL"
+msgstr "संतृप्ति"
+
+#: pigment/KoCompositeOpRegistry.cpp:111
+#: pigment/compositeops/KoCompositeOps.h:162
+#, fuzzy
+#| msgid "Saturation"
+msgid "Increase Saturation HSL"
+msgstr "संतृप्ति"
+
+#: pigment/KoCompositeOpRegistry.cpp:112
+#: pigment/compositeops/KoCompositeOps.h:166
+#, fuzzy
+#| msgid "Decrease Indent"
+msgid "Decrease Lightness"
+msgstr "हासिया घटाव"
+
+#: pigment/KoCompositeOpRegistry.cpp:113
+#: pigment/compositeops/KoCompositeOps.h:165
+#, fuzzy
+#| msgid "Increase Indent"
+msgid "Increase Lightness"
+msgstr "हासिया बढ़ाव"
+
+#: pigment/KoCompositeOpRegistry.cpp:115
+#: pigment/compositeops/KoCompositeOps.h:168
+#, fuzzy
+#| msgid "Color"
+msgid "Color HSV"
+msgstr "रंग"
+
+#: pigment/KoCompositeOpRegistry.cpp:116
+#: pigment/compositeops/KoCompositeOps.h:169
+#, fuzzy
+#| msgid "Hue"
+msgid "Hue HSV"
+msgstr "वर्न"
+
+#: pigment/KoCompositeOpRegistry.cpp:117
+#: pigment/compositeops/KoCompositeOps.h:170
+#, fuzzy
+#| msgid "Saturation"
+msgid "Saturation HSV"
+msgstr "संतृप्ति"
+
+#: pigment/KoCompositeOpRegistry.cpp:118
+#: pigment/compositeops/KoCompositeOps.h:173
+msgid "Value"
+msgstr "मान"
+
+#: pigment/KoCompositeOpRegistry.cpp:119
+#: pigment/compositeops/KoCompositeOps.h:172
+#, fuzzy
+#| msgid "Saturation"
+msgid "Decrease Saturation HSV"
+msgstr "संतृप्ति"
+
+#: pigment/KoCompositeOpRegistry.cpp:120
+#: pigment/compositeops/KoCompositeOps.h:171
+#, fuzzy
+#| msgid "Saturation"
+msgid "Increase Saturation HSV"
+msgstr "संतृप्ति"
+
+#: pigment/KoCompositeOpRegistry.cpp:121
+#: pigment/compositeops/KoCompositeOps.h:175
+#, fuzzy
+#| msgid "Decrease Indent"
+msgid "Decrease Value"
+msgstr "हासिया घटाव"
+
+#: pigment/KoCompositeOpRegistry.cpp:122
+#: pigment/compositeops/KoCompositeOps.h:174
+#, fuzzy
+#| msgid "Increase Indent"
+msgid "Increase Value"
+msgstr "हासिया बढ़ाव"
+
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:48
 msgid "Clear"
 msgstr "साफ करव"
@@ -3650,13 +4151,6 @@ msgstr "साफ करव"
 #: pigment/compositeops/KoCompositeOps.h:101
 msgid "Subtract"
 msgstr "घटाव"
-
-#: pigment/colorspaces/KoAlphaColorSpace.cpp:193
-#: pigment/compositeops/KoCompositeOpMultiply.h:35
-#: pigment/compositeops/KoCompositeOps.h:103
-#: pigment/KoCompositeOpRegistry.cpp:44
-msgid "Multiply"
-msgstr ""
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:259
 #: pigment/colorspaces/KoAlphaColorSpace.h:189
@@ -3680,23 +4174,32 @@ msgstr ""
 msgid "L*a*b* (16-bit integer/channel, unmanaged)"
 msgstr "L*a*b* (16-बिट इंटीजर/चैनल)"
 
-#: pigment/colorspaces/KoLabColorSpace.cpp:42
-#: pigment/compositeops/KoCompositeOps.h:164
-#: pigment/KoCompositeOpRegistry.cpp:109 widgets/KoUniColorChooser.cpp:201
-msgid "Lightness"
-msgstr "उजालापन"
-
 #: pigment/colorspaces/KoRgbU16ColorSpace.cpp:40
 #: pigment/colorspaces/KoRgbU16ColorSpace.h:60
 #, fuzzy
 msgid "RGB (16-bit integer/channel, unmanaged)"
 msgstr "आरजीबी 16-बिट इंटीजर/चैनल)"
 
-#: pigment/colorspaces/KoRgbU8ColorSpace.h:61
 #: pigment/colorspaces/KoRgbU8ColorSpace.cpp:42
+#: pigment/colorspaces/KoRgbU8ColorSpace.h:61
 #, fuzzy
 msgid "RGB (8-bit integer/channel, unmanaged)"
 msgstr "आरजीबी 8-बिट इंटीजर/चैनल)"
+
+#: pigment/colorspaces/KoRgbU8ColorSpace.cpp:47
+#: widgets/KoUniColorChooser.cpp:159
+msgid "Blue"
+msgstr "नीला"
+
+#: pigment/colorspaces/KoRgbU8ColorSpace.cpp:48
+#: widgets/KoUniColorChooser.cpp:151
+msgid "Green"
+msgstr "हरा"
+
+#: pigment/colorspaces/KoRgbU8ColorSpace.cpp:49
+#: widgets/KoUniColorChooser.cpp:143
+msgid "Red"
+msgstr "लाल"
 
 #: pigment/colorspaces/KoSimpleColorSpace.h:74
 #, kde-format
@@ -3718,26 +4221,11 @@ msgstr ""
 msgid "Simple Color Conversion Engine"
 msgstr ""
 
-#: pigment/colorspaces/KoRgbU8ColorSpace.cpp:47
-#: widgets/KoUniColorChooser.cpp:159
-msgid "Blue"
-msgstr "नीला"
-
-#: pigment/colorspaces/KoRgbU8ColorSpace.cpp:48
-#: widgets/KoUniColorChooser.cpp:151
-msgid "Green"
-msgstr "हरा"
-
-#: pigment/colorspaces/KoRgbU8ColorSpace.cpp:49
-#: widgets/KoUniColorChooser.cpp:143
-msgid "Red"
-msgstr "लाल"
-
-#: pigment/compositeops/KoCompositeOpDivide.h:36
-#: pigment/compositeops/KoCompositeOps.h:104
-#: pigment/KoCompositeOpRegistry.cpp:45
-msgid "Divide"
-msgstr ""
+#: pigment/compositeops/KoCompositeOpAlphaDarken.h:40
+#, fuzzy
+#| msgid "Alpha mask"
+msgid "Alpha darken"
+msgstr "अल्फा मास्क"
 
 #: pigment/compositeops/KoCompositeOpDodge.h:37
 #, fuzzy
@@ -3745,44 +4233,11 @@ msgstr ""
 msgid "Dodge"
 msgstr "नोड्स"
 
-#: pigment/compositeops/KoCompositeOpErase.h:40
-#: pigment/KoCompositeOpRegistry.cpp:72
-msgid "Erase"
-msgstr "मेटाव"
-
 #: pigment/compositeops/KoCompositeOpHardlight.h:36
 #, fuzzy
 #| msgid "&Height:"
 msgid "Hard light"
 msgstr "ऊंचाईः (&H)"
-
-#: pigment/compositeops/KoCompositeOpOver.h:61
-#: pigment/KoCompositeOpRegistry.cpp:70 pigment/KoCompositeOpRegistry.cpp:133
-msgid "Normal"
-msgstr "सामान्य"
-
-#: pigment/compositeops/KoCompositeOpOverlay.h:36
-#: pigment/compositeops/KoCompositeOps.h:76
-#: pigment/KoCompositeOpRegistry.cpp:71
-msgid "Overlay"
-msgstr ""
-
-#: pigment/compositeops/KoCompositeOpScreen.h:36
-#: pigment/compositeops/KoCompositeOps.h:84
-#: pigment/KoCompositeOpRegistry.cpp:57
-msgid "Screen"
-msgstr "स्क्रीन"
-
-#: pigment/compositeops/KoCompositeOpSoftlight.h:39
-#, fuzzy
-#| msgid "Straight"
-msgid "Soft light"
-msgstr "सीधा"
-
-#: pigment/compositeops/KoCompositeOpBurn.h:37
-#: pigment/KoCompositeOpRegistry.cpp:48
-msgid "Burn"
-msgstr ""
 
 #: pigment/compositeops/KoCompositeOpInversedSubtract.h:37
 #, fuzzy
@@ -3790,111 +4245,11 @@ msgstr ""
 msgid "Inverse Subtract"
 msgstr "घटाव"
 
-#: pigment/compositeops/KoCompositeOpAlphaDarken.h:40
-#, fuzzy
-#| msgid "Alpha mask"
-msgid "Alpha darken"
-msgstr "अल्फा मास्क"
-
-#: pigment/compositeops/KoCompositeOpDissolve.h:61
-#: pigment/KoCompositeOpRegistry.cpp:82
-msgid "Dissolve"
-msgstr ""
-
-#: pigment/compositeops/KoCompositeOps.h:77
-#: pigment/KoCompositeOpRegistry.cpp:75
-msgid "Grain Merge"
-msgstr ""
-
-#: pigment/compositeops/KoCompositeOps.h:78
-#: pigment/KoCompositeOpRegistry.cpp:76
-msgid "Grain Extract"
-msgstr ""
-
-#: pigment/compositeops/KoCompositeOps.h:79
-#: pigment/KoCompositeOpRegistry.cpp:74
-#, fuzzy
-#| msgid "&Height:"
-msgid "Hard Mix"
-msgstr "ऊंचाईः (&H)"
-
-#: pigment/compositeops/KoCompositeOps.h:80
-#: pigment/KoCompositeOpRegistry.cpp:79
-msgid "Geometric Mean"
-msgstr ""
-
-#: pigment/compositeops/KoCompositeOps.h:81
-#: pigment/KoCompositeOpRegistry.cpp:77
-#, fuzzy
-#| msgid "Variable"
-msgid "Parallel"
-msgstr "परिवर्तनीय"
-
-#: pigment/compositeops/KoCompositeOps.h:82
-#: pigment/KoCompositeOpRegistry.cpp:78
-msgid "Allanon"
-msgstr ""
-
-#: pigment/compositeops/KoCompositeOps.h:85
-#: pigment/KoCompositeOpRegistry.cpp:53
-#, fuzzy
-#| msgid "Color Chooser"
-msgid "Color Dodge"
-msgstr "रंग चुनइया"
-
-#: pigment/compositeops/KoCompositeOps.h:86
-#: pigment/KoCompositeOpRegistry.cpp:54
-#, fuzzy
-#| msgid "Line Border"
-msgid "Linear Dodge"
-msgstr "लकीर चौड़ाई"
-
-#: pigment/compositeops/KoCompositeOps.h:87 pigment/KoCompositeOp.cpp:35
-#: pigment/KoCompositeOpRegistry.cpp:33 pigment/KoCompositeOpRegistry.cpp:55
-msgid "Lighten"
-msgstr "हल्का करव"
-
-#: pigment/compositeops/KoCompositeOps.h:88
-#: pigment/KoCompositeOpRegistry.cpp:60
-#, fuzzy
-#| msgid "&Height:"
-msgid "Hard Light"
-msgstr "ऊंचाईः (&H)"
-
-#: pigment/compositeops/KoCompositeOps.h:89
-#: pigment/KoCompositeOpRegistry.cpp:61
+#: pigment/compositeops/KoCompositeOpSoftlight.h:39
 #, fuzzy
 #| msgid "Straight"
-msgid "Soft Light"
+msgid "Soft light"
 msgstr "सीधा"
-
-#: pigment/compositeops/KoCompositeOps.h:90
-#: pigment/KoCompositeOpRegistry.cpp:62
-#, fuzzy
-#| msgid "Lighten"
-msgid "Gamma Light"
-msgstr "हल्का करव"
-
-#: pigment/compositeops/KoCompositeOps.h:91
-#: pigment/KoCompositeOpRegistry.cpp:59
-#, fuzzy
-#| msgid "Lighten"
-msgid "Vivid Light"
-msgstr "हल्का करव"
-
-#: pigment/compositeops/KoCompositeOps.h:92
-#: pigment/KoCompositeOpRegistry.cpp:58
-#, fuzzy
-#| msgid "Lighten"
-msgid "Pin Light"
-msgstr "हल्का करव"
-
-#: pigment/compositeops/KoCompositeOps.h:93
-#: pigment/KoCompositeOpRegistry.cpp:56
-#, fuzzy
-#| msgid "Lighten"
-msgid "Linear Light"
-msgstr "हल्का करव"
 
 #: pigment/compositeops/KoCompositeOps.h:95
 #, fuzzy
@@ -3902,57 +4257,11 @@ msgstr "हल्का करव"
 msgid "Color Burn"
 msgstr "रंग"
 
-#: pigment/compositeops/KoCompositeOps.h:96
-#: pigment/KoCompositeOpRegistry.cpp:49
-#, fuzzy
-#| msgid "Line Border"
-msgid "Linear Burn"
-msgstr "लकीर चौड़ाई"
-
-#: pigment/compositeops/KoCompositeOps.h:97 pigment/KoCompositeOp.cpp:36
-#: pigment/KoCompositeOpRegistry.cpp:32 pigment/KoCompositeOpRegistry.cpp:50
-msgid "Darken"
-msgstr "गहरा करव"
-
-#: pigment/compositeops/KoCompositeOps.h:98
-#: pigment/KoCompositeOpRegistry.cpp:51
-msgid "Gamma Dark"
-msgstr ""
-
-#: pigment/compositeops/KoCompositeOps.h:100
-#: pigment/KoCompositeOpRegistry.cpp:42
-#, fuzzy
-#| msgid "Position"
-msgid "Addition"
-msgstr "स्थिति"
-
 #: pigment/compositeops/KoCompositeOps.h:102
 #, fuzzy
 #| msgid "Subtract"
 msgid "Inversed-Subtract"
 msgstr "घटाव"
-
-#: pigment/compositeops/KoCompositeOps.h:106
-#: pigment/KoCompositeOpRegistry.cpp:68
-msgid "Arcus Tangent"
-msgstr ""
-
-#: pigment/compositeops/KoCompositeOps.h:107
-#: pigment/KoCompositeOpRegistry.cpp:64
-#, fuzzy
-#| msgid "Text Reference"
-msgid "Difference"
-msgstr "पाठ संदर्भ"
-
-#: pigment/compositeops/KoCompositeOps.h:108
-#: pigment/KoCompositeOpRegistry.cpp:67
-msgid "Exclusion"
-msgstr ""
-
-#: pigment/compositeops/KoCompositeOps.h:109
-#: pigment/KoCompositeOpRegistry.cpp:65
-msgid "Equivalence"
-msgstr ""
 
 #: pigment/compositeops/KoCompositeOps.h:110
 #, fuzzy
@@ -3960,590 +4269,9 @@ msgstr ""
 msgid "Additive-Substractive"
 msgstr "घटाव"
 
-#: pigment/compositeops/KoCompositeOps.h:137
-#: pigment/KoCompositeOpRegistry.cpp:83
-#, fuzzy
-#| msgid "Copy Page"
-msgid "Copy Red"
-msgstr "पेज नकल करव"
-
-#: pigment/compositeops/KoCompositeOps.h:138
-#: pigment/KoCompositeOpRegistry.cpp:84
-#, fuzzy
-#| msgid "Green"
-msgid "Copy Green"
-msgstr "हरा"
-
-#: pigment/compositeops/KoCompositeOps.h:139
-#: pigment/KoCompositeOpRegistry.cpp:85
-#, fuzzy
-#| msgid "Copy Page"
-msgid "Copy Blue"
-msgstr "पेज नकल करव"
-
-#: pigment/compositeops/KoCompositeOps.h:141 pigment/KoCompositeOp.cpp:30
-#: pigment/KoCompositeOpRegistry.cpp:88
-msgid "Color"
-msgstr "रंग"
-
-#: pigment/compositeops/KoCompositeOps.h:142
-#: pigment/KoCompositeOpRegistry.cpp:89 widgets/KoUniColorChooser.cpp:116
-msgid "Hue"
-msgstr "वर्न"
-
-#: pigment/compositeops/KoCompositeOps.h:143
-#: pigment/KoCompositeOpRegistry.cpp:90 widgets/KoUniColorChooser.cpp:125
-msgid "Saturation"
-msgstr "संतृप्ति"
-
-#: pigment/compositeops/KoCompositeOps.h:144
-#: pigment/KoCompositeOpRegistry.cpp:93
-#, fuzzy
-#| msgid "Saturation"
-msgid "Increase Saturation"
-msgstr "संतृप्ति"
-
-#: pigment/compositeops/KoCompositeOps.h:145
-#: pigment/KoCompositeOpRegistry.cpp:92
-#, fuzzy
-#| msgid "Saturation"
-msgid "Decrease Saturation"
-msgstr "संतृप्ति"
-
-#: pigment/compositeops/KoCompositeOps.h:146
-#: pigment/KoCompositeOpRegistry.cpp:91
-msgid "Luminosity"
-msgstr ""
-
-#: pigment/compositeops/KoCompositeOps.h:147
-#: pigment/KoCompositeOpRegistry.cpp:95
-#, fuzzy
-#| msgid "Increase font size"
-msgid "Increase Luminosity"
-msgstr "फोंट आकार बढ़ाव"
-
-#: pigment/compositeops/KoCompositeOps.h:148
-#: pigment/KoCompositeOpRegistry.cpp:94
-#, fuzzy
-#| msgid "Decrease font size"
-msgid "Decrease Luminosity"
-msgstr "फोंट आकार घटाव"
-
-#: pigment/compositeops/KoCompositeOps.h:150
-#: pigment/KoCompositeOpRegistry.cpp:97
-#, fuzzy
-#| msgid "Color"
-msgid "Color HSI"
-msgstr "रंग"
-
-#: pigment/compositeops/KoCompositeOps.h:151
-#: pigment/KoCompositeOpRegistry.cpp:98
-#, fuzzy
-#| msgid "Hue"
-msgid "Hue HSI"
-msgstr "वर्न"
-
-#: pigment/compositeops/KoCompositeOps.h:152
-#: pigment/KoCompositeOpRegistry.cpp:99
-#, fuzzy
-#| msgid "Saturation"
-msgid "Saturation HSI"
-msgstr "संतृप्ति"
-
-#: pigment/compositeops/KoCompositeOps.h:153
-#: pigment/KoCompositeOpRegistry.cpp:102
-#, fuzzy
-#| msgid "Saturation"
-msgid "Increase Saturation HSI"
-msgstr "संतृप्ति"
-
-#: pigment/compositeops/KoCompositeOps.h:154
-#: pigment/KoCompositeOpRegistry.cpp:101
-#, fuzzy
-#| msgid "Saturation"
-msgid "Decrease Saturation HSI"
-msgstr "संतृप्ति"
-
-#: pigment/compositeops/KoCompositeOps.h:155
-#: pigment/KoCompositeOpRegistry.cpp:100
-msgid "Intensity"
-msgstr ""
-
-#: pigment/compositeops/KoCompositeOps.h:156
-#: pigment/KoCompositeOpRegistry.cpp:104
-#, fuzzy
-#| msgid "Increase Indent"
-msgid "Increase Intensity"
-msgstr "हासिया बढ़ाव"
-
-#: pigment/compositeops/KoCompositeOps.h:157
-#: pigment/KoCompositeOpRegistry.cpp:103
-#, fuzzy
-#| msgid "Decrease Indent"
-msgid "Decrease Intensity"
-msgstr "हासिया घटाव"
-
-#: pigment/compositeops/KoCompositeOps.h:159
-#: pigment/KoCompositeOpRegistry.cpp:106
-#, fuzzy
-#| msgid "Color"
-msgid "Color HSL"
-msgstr "रंग"
-
-#: pigment/compositeops/KoCompositeOps.h:160
-#: pigment/KoCompositeOpRegistry.cpp:107
-#, fuzzy
-#| msgid "Hue"
-msgid "Hue HSL"
-msgstr "वर्न"
-
-#: pigment/compositeops/KoCompositeOps.h:161
-#: pigment/KoCompositeOpRegistry.cpp:108
-#, fuzzy
-#| msgid "Saturation"
-msgid "Saturation HSL"
-msgstr "संतृप्ति"
-
-#: pigment/compositeops/KoCompositeOps.h:162
-#: pigment/KoCompositeOpRegistry.cpp:111
-#, fuzzy
-#| msgid "Saturation"
-msgid "Increase Saturation HSL"
-msgstr "संतृप्ति"
-
-#: pigment/compositeops/KoCompositeOps.h:163
-#: pigment/KoCompositeOpRegistry.cpp:110
-#, fuzzy
-#| msgid "Saturation"
-msgid "Decrease Saturation HSL"
-msgstr "संतृप्ति"
-
-#: pigment/compositeops/KoCompositeOps.h:165
-#: pigment/KoCompositeOpRegistry.cpp:113
-#, fuzzy
-#| msgid "Increase Indent"
-msgid "Increase Lightness"
-msgstr "हासिया बढ़ाव"
-
-#: pigment/compositeops/KoCompositeOps.h:166
-#: pigment/KoCompositeOpRegistry.cpp:112
-#, fuzzy
-#| msgid "Decrease Indent"
-msgid "Decrease Lightness"
-msgstr "हासिया घटाव"
-
-#: pigment/compositeops/KoCompositeOps.h:168
-#: pigment/KoCompositeOpRegistry.cpp:115
-#, fuzzy
-#| msgid "Color"
-msgid "Color HSV"
-msgstr "रंग"
-
-#: pigment/compositeops/KoCompositeOps.h:169
-#: pigment/KoCompositeOpRegistry.cpp:116
-#, fuzzy
-#| msgid "Hue"
-msgid "Hue HSV"
-msgstr "वर्न"
-
-#: pigment/compositeops/KoCompositeOps.h:170
-#: pigment/KoCompositeOpRegistry.cpp:117
-#, fuzzy
-#| msgid "Saturation"
-msgid "Saturation HSV"
-msgstr "संतृप्ति"
-
-#: pigment/compositeops/KoCompositeOps.h:171
-#: pigment/KoCompositeOpRegistry.cpp:120
-#, fuzzy
-#| msgid "Saturation"
-msgid "Increase Saturation HSV"
-msgstr "संतृप्ति"
-
-#: pigment/compositeops/KoCompositeOps.h:172
-#: pigment/KoCompositeOpRegistry.cpp:119
-#, fuzzy
-#| msgid "Saturation"
-msgid "Decrease Saturation HSV"
-msgstr "संतृप्ति"
-
-#: pigment/compositeops/KoCompositeOps.h:173
-#: pigment/KoCompositeOpRegistry.cpp:118
-msgid "Value"
-msgstr "मान"
-
-#: pigment/compositeops/KoCompositeOps.h:174
-#: pigment/KoCompositeOpRegistry.cpp:122
-#, fuzzy
-#| msgid "Increase Indent"
-msgid "Increase Value"
-msgstr "हासिया बढ़ाव"
-
-#: pigment/compositeops/KoCompositeOps.h:175
-#: pigment/KoCompositeOpRegistry.cpp:121
-#, fuzzy
-#| msgid "Decrease Indent"
-msgid "Decrease Value"
-msgstr "हासिया घटाव"
-
 #: pigment/resources/KoStopGradient.cpp:420
 msgid "SVG Gradient"
 msgstr ""
-
-#: pigment/KoCompositeOp.cpp:33 pigment/KoCompositeOpRegistry.cpp:31
-#, fuzzy
-#| msgid "Automatic"
-msgid "Arithmetic"
-msgstr "अपने अपन"
-
-#: pigment/KoCompositeOp.cpp:34 pigment/KoCompositeOpRegistry.cpp:34
-msgid "Negative"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:37 pigment/KoCompositeOpRegistry.cpp:37
-msgid "HSY"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:38 pigment/KoCompositeOpRegistry.cpp:38
-msgid "HSI"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:39 pigment/KoCompositeOpRegistry.cpp:39
-msgid "HSL"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:40 pigment/KoCompositeOpRegistry.cpp:40
-msgid "HSV"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:41 pigment/KoCompositeOpRegistry.cpp:35
-msgid "Mix"
-msgstr ""
-
-#: pigment/KoCompositeOpRegistry.cpp:43
-#, fuzzy
-#| msgid "Subtract"
-msgid "Substract"
-msgstr "घटाव"
-
-#: pigment/KoCompositeOpRegistry.cpp:46
-#, fuzzy
-#| msgid "Subtract"
-msgid "Inverse Substract"
-msgstr "घटाव"
-
-#: pigment/KoCompositeOpRegistry.cpp:66
-#, fuzzy
-#| msgid "Substract"
-msgid "Additive Substractive"
-msgstr "घटाव"
-
-#: pigment/KoCompositeOpRegistry.cpp:73
-#, fuzzy
-#| msgid "Alpha mask"
-msgid "Alpha Darken"
-msgstr "अल्फा मास्क"
-
-#: pigment/KoCompositeOpRegistry.cpp:81
-msgid "Bumpmap"
-msgstr ""
-
-#: widgets/KoUniColorChooser.cpp:134
-msgid "Value (brightness)"
-msgstr "मूल्य (चमकीलापन)"
-
-#: widgets/KoUniColorChooser.cpp:168
-msgid "Cyan"
-msgstr "क्यान"
-
-#: widgets/KoUniColorChooser.cpp:176
-msgid "Magenta"
-msgstr "मजेंटा"
-
-#: widgets/KoUniColorChooser.cpp:184
-msgid "Yellow"
-msgstr "पीला"
-
-#: widgets/KoUniColorChooser.cpp:192
-msgid "Black"
-msgstr "काला"
-
-#: widgets/KoUniColorChooser.cpp:209
-msgid "Green to magenta*"
-msgstr "हरा से मजेंटा*"
-
-#: widgets/KoUniColorChooser.cpp:217
-msgid "Blue to yellow"
-msgstr "नीले से पीला"
-
-#: widgets/KoUniColorChooser.cpp:221
-msgid "Opacity:"
-msgstr "अपारदर्सिता:"
-
-#: widgets/KoZoomAction.cpp:173 widgets/KoZoomAction.cpp:175
-#: widgets/KoZoomAction.cpp:187 widgets/KoZoomAction.cpp:189
-#: widgets/KoZoomMode.cpp:26
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
-#: widgets/KoZoomAction.cpp:271
-msgid "Use same aspect as pixels"
-msgstr "पिक्सेल जइसन ही आस्पेक्ट परयोग करव"
-
-#: widgets/KoZoomAction.cpp:279
-msgid "Zoom to Selection"
-msgstr ""
-
-#: widgets/KoZoomAction.cpp:287
-msgid "Zoom to All"
-msgstr "सब्बो जूम करव"
-
-#: widgets/KoEditColorSetDialog.cpp:159
-msgid "Add Color To Palette"
-msgstr "रंगपट्टिका मं रंग जोड़व"
-
-#: widgets/KoEditColorSetDialog.cpp:159
-msgid "Color name:"
-msgstr "रंग नामः"
-
-#: widgets/KoEditColorSetDialog.cpp:197
-#, kde-format
-msgid "Cannot write to palette file %1. Maybe it is read-only. "
-msgstr "रंगपट्टिका फाइल %1 मं लिख नइ सकिस. सायद ए सिरिफ पढ़े जइसन हे."
-
-#: widgets/KoEditColorSetDialog.cpp:197
-msgid "Palette"
-msgstr "रंगदानी"
-
-#: widgets/KoEditColorSetDialog.cpp:211
-msgid "Add/Remove Colors"
-msgstr "रंगों ल जोड़व/मेटाव"
-
-#: widgets/KoColorSetWidget.cpp:189
-msgid "Recent:"
-msgstr "हाले:"
-
-#: widgets/KoColorSetWidget.cpp:196
-msgid "Hide colors with bad contrast"
-msgstr "खराब कंट्रास्ट सहित रंग ल लुकाव"
-
-#: widgets/KoColorSetWidget.cpp:207
-msgid "Add / Remove Colors..."
-msgstr "रंगों ल जोड़व/मेटाव..."
-
-#: widgets/KoCsvImportDialog.cpp:93
-msgid "Import Data"
-msgstr "डाटा आयात करव"
-
-#: widgets/KoCsvImportDialog.cpp:96
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Recommended ( %1 )"
-msgstr "अनुसंसित (%1)"
-
-#: widgets/KoCsvImportDialog.cpp:97
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Locale ( %1 )"
-msgstr "लोकेल (%1)"
-
-#: widgets/KoCsvImportDialog.cpp:100
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Other ( %1 )"
-msgstr "अऊ दूसर (%1)"
-
-#: widgets/KoCsvImportDialog.cpp:215 widgets/KoCsvImportDialog.cpp:556
-#: widgets/KoCsvImportDialog.cpp:579
-msgid "Generic"
-msgstr "जेनेरिक"
-
-#: widgets/KoCsvImportDialog.cpp:219 widgets/KoCsvImportDialog.cpp:583
-msgid "Date"
-msgstr "तारीक"
-
-#: widgets/KoCsvImportDialog.cpp:221 widgets/KoCsvImportDialog.cpp:585
-msgid "Currency"
-msgstr "मुद्रा"
-
-#. i18n: file: widgets/KoCsvImportDialog.ui:268
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: widgets/KoCsvImportDialog.cpp:223 widgets/KoCsvImportDialog.cpp:587
-#: widgets/KoCsvImportDialog.cpp:694 rc.cpp:499
-msgid "None"
-msgstr "कुछ नइ"
-
-#: widgets/KoCsvImportDialog.cpp:721
-msgid ""
-"Please check the ranges you specified. The start value must be lower than "
-"the end value."
-msgstr ""
-
-#: widgets/KoCsvImportDialog.cpp:767
-#, kde-format
-msgid "Cannot find encoding: %1"
-msgstr "एनकोडिंग नइ पा सकिस: %1"
-
-#: widgets/KoSelectionToggle.cpp:133
-msgctxt "@info:tooltip"
-msgid "Deselect Item"
-msgstr ""
-
-#: widgets/KoSelectionToggle.cpp:134
-#, fuzzy
-#| msgid "Select Character"
-msgctxt "@info:tooltip"
-msgid "Select Item"
-msgstr "अक्छर चुनव"
-
-#: widgets/KoUniColorDialog.cpp:39
-#, fuzzy
-#| msgid "Collection"
-msgid "Color Selector"
-msgstr "संग्रह"
-
-#: widgets/KoZoomMode.cpp:27
-msgid "Fit Page Width"
-msgstr "पेज चौड़ाई मं जमाव"
-
-#: widgets/KoZoomMode.cpp:28
-msgid "Fit Page"
-msgstr "पेज मं जमाव"
-
-#: widgets/KoZoomMode.cpp:30
-msgid "Actual Pixels"
-msgstr "सही पिक्सल्स"
-
-#: widgets/KoStrokeConfigWidget.cpp:92
-#, fuzzy
-#| msgid "&Style:"
-msgid "Style:"
-msgstr "सैली: (&S)"
-
-#. i18n: file: widgets/KoPageLayoutWidget.ui:66
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: widgets/KoStrokeConfigWidget.cpp:98 rc.cpp:562
-msgid "Width:"
-msgstr "चौड़ाईः"
-
-#: widgets/KoStrokeConfigWidget.cpp:105
-msgid "Set line width of actual selection"
-msgstr ""
-
-#: widgets/KoStrokeConfigWidget.cpp:109
-msgid "Cap:"
-msgstr ""
-
-#: widgets/KoStrokeConfigWidget.cpp:120
-msgid "Butt cap"
-msgstr ""
-
-#: widgets/KoStrokeConfigWidget.cpp:127
-msgid "Round cap"
-msgstr ""
-
-#: widgets/KoStrokeConfigWidget.cpp:134
-msgid "Square cap"
-msgstr ""
-
-#: widgets/KoStrokeConfigWidget.cpp:139
-msgid "Join:"
-msgstr ""
-
-#: widgets/KoStrokeConfigWidget.cpp:148
-#, fuzzy
-#| msgid "Merge points"
-msgid "Miter join"
-msgstr "बिन्दु ल मिलाव"
-
-#: widgets/KoStrokeConfigWidget.cpp:155
-msgid "Round join"
-msgstr ""
-
-#: widgets/KoStrokeConfigWidget.cpp:162
-#, fuzzy
-#| msgid "Remove point"
-msgid "Bevel join"
-msgstr "बिन्दु मेटाव"
-
-#: widgets/KoStrokeConfigWidget.cpp:167
-msgid "Miter limit:"
-msgstr ""
-
-#: widgets/KoStrokeConfigWidget.cpp:174
-msgid "Set miter limit"
-msgstr ""
-
-#: widgets/KoPageLayoutDialog.cpp:46
-msgid "Page Layout"
-msgstr "पेज ले-आउट"
-
-#: widgets/KoPageLayoutDialog.cpp:110
-msgid "Apply to document"
-msgstr "कागद मं लगाव"
-
-#: widgets/KoPageLayoutWidget.cpp:184
-msgid "Left Edge:"
-msgstr "डेरी किनारा:"
-
-#: widgets/KoPageLayoutWidget.cpp:185
-msgid "Right Edge:"
-msgstr "जेवनी किनारा:"
-
-#: widgets/KoPageLayoutWidget.cpp:188
-msgid "Binding Edge:"
-msgstr "बाइंडिंग किनारा:"
-
-#: widgets/KoPageLayoutWidget.cpp:189
-msgid "Page Edge:"
-msgstr "पेज किनारा:"
-
-#: widgets/KoPageLayoutWidget.cpp:285
-msgid "Facing Pages:"
-msgstr "आमने-सामने के पेज:"
-
-#. i18n: file: widgets/KoPageLayoutWidget.ui:143
-#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
-#: widgets/KoPageLayoutWidget.cpp:286 rc.cpp:583
-msgid "Facing pages"
-msgstr "आमने-सामने के पेज"
-
-#: widgets/KoPageLayoutWidget.cpp:289
-msgid "Page Layout:"
-msgstr "पेज ले-आउट:"
-
-#: widgets/KoPageLayoutWidget.cpp:290
-msgid "Page spread"
-msgstr "पेज स्प्रेड"
-
-#: widgets/KoResourceItemChooser.cpp:93
-#, fuzzy
-#| msgid "Import Document"
-msgid "Import Resource"
-msgstr "कागद आयात करव"
-
-#: widgets/KoResourceItemChooser.cpp:100
-#, fuzzy
-#| msgid "Delete"
-msgid "Delete Resource"
-msgstr "मेटाव"
-
-#: widgets/KoResourceItemChooser.cpp:107
-#, fuzzy
-#| msgid "Download"
-msgid "Download Resource"
-msgstr "डाउनलोड"
-
-#: widgets/KoResourceItemChooser.cpp:115
-msgid "Share Resource"
-msgstr ""
-
-#: widgets/KoResourceItemChooser.cpp:158
-#, fuzzy
-#| msgid "Choose Filter"
-msgid "Choose File to Add"
-msgstr "फिल्टर चुनव"
 
 #: textlayout/ListItemsHelper.cpp:179
 #, fuzzy
@@ -4666,28 +4394,302 @@ msgstr ""
 msgid "ArabicAlphabet"
 msgstr ""
 
-#: kundo2/kundo2group.cpp:359 kundo2/kundo2stack.cpp:841
+#: widgets/KoColorSetWidget.cpp:189
+msgid "Recent:"
+msgstr "हाले:"
+
+#: widgets/KoColorSetWidget.cpp:196
+msgid "Hide colors with bad contrast"
+msgstr "खराब कंट्रास्ट सहित रंग ल लुकाव"
+
+#: widgets/KoColorSetWidget.cpp:207
+msgid "Add / Remove Colors..."
+msgstr "रंगों ल जोड़व/मेटाव..."
+
+#: widgets/KoCsvImportDialog.cpp:93
+msgid "Import Data"
+msgstr "डाटा आयात करव"
+
+#: widgets/KoCsvImportDialog.cpp:96
 #, kde-format
-msgid "Undo %1"
+msgctxt "Descriptive encoding name"
+msgid "Recommended ( %1 )"
+msgstr "अनुसंसित (%1)"
+
+#: widgets/KoCsvImportDialog.cpp:97
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Locale ( %1 )"
+msgstr "लोकेल (%1)"
+
+#: widgets/KoCsvImportDialog.cpp:100
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Other ( %1 )"
+msgstr "अऊ दूसर (%1)"
+
+#: widgets/KoCsvImportDialog.cpp:215 widgets/KoCsvImportDialog.cpp:556
+#: widgets/KoCsvImportDialog.cpp:579
+msgid "Generic"
+msgstr "जेनेरिक"
+
+#: widgets/KoCsvImportDialog.cpp:219 widgets/KoCsvImportDialog.cpp:583
+msgid "Date"
+msgstr "तारीक"
+
+#: widgets/KoCsvImportDialog.cpp:221 widgets/KoCsvImportDialog.cpp:585
+msgid "Currency"
+msgstr "मुद्रा"
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:268
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: widgets/KoCsvImportDialog.cpp:223 widgets/KoCsvImportDialog.cpp:587
+#: widgets/KoCsvImportDialog.cpp:694 rc.cpp:499
+msgid "None"
+msgstr "कुछ नइ"
+
+#: widgets/KoCsvImportDialog.cpp:721
+msgid ""
+"Please check the ranges you specified. The start value must be lower than "
+"the end value."
 msgstr ""
 
-#: kundo2/kundo2group.cpp:359 kundo2/kundo2stack.cpp:841
-msgctxt "Default text for undo action"
-msgid "Undo"
-msgstr ""
+#: widgets/KoCsvImportDialog.cpp:767
+#, kde-format
+msgid "Cannot find encoding: %1"
+msgstr "एनकोडिंग नइ पा सकिस: %1"
 
-#: kundo2/kundo2group.cpp:386 kundo2/kundo2stack.cpp:867
-#, fuzzy, kde-format
-#| msgid "Red"
-msgid "Redo %1"
-msgstr "लाल"
+#: widgets/KoEditColorSetDialog.cpp:159
+msgid "Add Color To Palette"
+msgstr "रंगपट्टिका मं रंग जोड़व"
 
-#: kundo2/kundo2group.cpp:386 kundo2/kundo2stack.cpp:867
+#: widgets/KoEditColorSetDialog.cpp:159
+msgid "Color name:"
+msgstr "रंग नामः"
+
+#: widgets/KoEditColorSetDialog.cpp:197
+#, kde-format
+msgid "Cannot write to palette file %1. Maybe it is read-only. "
+msgstr "रंगपट्टिका फाइल %1 मं लिख नइ सकिस. सायद ए सिरिफ पढ़े जइसन हे."
+
+#: widgets/KoEditColorSetDialog.cpp:197
+msgid "Palette"
+msgstr "रंगदानी"
+
+#: widgets/KoEditColorSetDialog.cpp:211
+msgid "Add/Remove Colors"
+msgstr "रंगों ल जोड़व/मेटाव"
+
+#: widgets/KoPageLayoutDialog.cpp:46
+msgid "Page Layout"
+msgstr "पेज ले-आउट"
+
+#: widgets/KoPageLayoutDialog.cpp:110
+msgid "Apply to document"
+msgstr "कागद मं लगाव"
+
+#: widgets/KoPageLayoutWidget.cpp:184
+msgid "Left Edge:"
+msgstr "डेरी किनारा:"
+
+#: widgets/KoPageLayoutWidget.cpp:185
+msgid "Right Edge:"
+msgstr "जेवनी किनारा:"
+
+#: widgets/KoPageLayoutWidget.cpp:188
+msgid "Binding Edge:"
+msgstr "बाइंडिंग किनारा:"
+
+#: widgets/KoPageLayoutWidget.cpp:189
+msgid "Page Edge:"
+msgstr "पेज किनारा:"
+
+#: widgets/KoPageLayoutWidget.cpp:285
+msgid "Facing Pages:"
+msgstr "आमने-सामने के पेज:"
+
+#. i18n: file: widgets/KoPageLayoutWidget.ui:143
+#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
+#: widgets/KoPageLayoutWidget.cpp:286 rc.cpp:583
+msgid "Facing pages"
+msgstr "आमने-सामने के पेज"
+
+#: widgets/KoPageLayoutWidget.cpp:289
+msgid "Page Layout:"
+msgstr "पेज ले-आउट:"
+
+#: widgets/KoPageLayoutWidget.cpp:290
+msgid "Page spread"
+msgstr "पेज स्प्रेड"
+
+#: widgets/KoResourceItemChooser.cpp:93
 #, fuzzy
-#| msgid "Red"
-msgctxt "Default text for redo action"
-msgid "Redo"
-msgstr "लाल"
+#| msgid "Import Document"
+msgid "Import Resource"
+msgstr "कागद आयात करव"
+
+#: widgets/KoResourceItemChooser.cpp:100
+#, fuzzy
+#| msgid "Delete"
+msgid "Delete Resource"
+msgstr "मेटाव"
+
+#: widgets/KoResourceItemChooser.cpp:107
+#, fuzzy
+#| msgid "Download"
+msgid "Download Resource"
+msgstr "डाउनलोड"
+
+#: widgets/KoResourceItemChooser.cpp:115
+msgid "Share Resource"
+msgstr ""
+
+#: widgets/KoResourceItemChooser.cpp:158
+#, fuzzy
+#| msgid "Choose Filter"
+msgid "Choose File to Add"
+msgstr "फिल्टर चुनव"
+
+#: widgets/KoSelectionToggle.cpp:133
+msgctxt "@info:tooltip"
+msgid "Deselect Item"
+msgstr ""
+
+#: widgets/KoSelectionToggle.cpp:134
+#, fuzzy
+#| msgid "Select Character"
+msgctxt "@info:tooltip"
+msgid "Select Item"
+msgstr "अक्छर चुनव"
+
+#: widgets/KoStrokeConfigWidget.cpp:92
+#, fuzzy
+#| msgid "&Style:"
+msgid "Style:"
+msgstr "सैली: (&S)"
+
+#. i18n: file: widgets/KoPageLayoutWidget.ui:66
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: widgets/KoStrokeConfigWidget.cpp:98 rc.cpp:562
+msgid "Width:"
+msgstr "चौड़ाईः"
+
+#: widgets/KoStrokeConfigWidget.cpp:105
+msgid "Set line width of actual selection"
+msgstr ""
+
+#: widgets/KoStrokeConfigWidget.cpp:109
+msgid "Cap:"
+msgstr ""
+
+#: widgets/KoStrokeConfigWidget.cpp:120
+msgid "Butt cap"
+msgstr ""
+
+#: widgets/KoStrokeConfigWidget.cpp:127
+msgid "Round cap"
+msgstr ""
+
+#: widgets/KoStrokeConfigWidget.cpp:134
+msgid "Square cap"
+msgstr ""
+
+#: widgets/KoStrokeConfigWidget.cpp:139
+msgid "Join:"
+msgstr ""
+
+#: widgets/KoStrokeConfigWidget.cpp:148
+#, fuzzy
+#| msgid "Merge points"
+msgid "Miter join"
+msgstr "बिन्दु ल मिलाव"
+
+#: widgets/KoStrokeConfigWidget.cpp:155
+msgid "Round join"
+msgstr ""
+
+#: widgets/KoStrokeConfigWidget.cpp:162
+#, fuzzy
+#| msgid "Remove point"
+msgid "Bevel join"
+msgstr "बिन्दु मेटाव"
+
+#: widgets/KoStrokeConfigWidget.cpp:167
+msgid "Miter limit:"
+msgstr ""
+
+#: widgets/KoStrokeConfigWidget.cpp:174
+msgid "Set miter limit"
+msgstr ""
+
+#: widgets/KoUniColorChooser.cpp:134
+msgid "Value (brightness)"
+msgstr "मूल्य (चमकीलापन)"
+
+#: widgets/KoUniColorChooser.cpp:168
+msgid "Cyan"
+msgstr "क्यान"
+
+#: widgets/KoUniColorChooser.cpp:176
+msgid "Magenta"
+msgstr "मजेंटा"
+
+#: widgets/KoUniColorChooser.cpp:184
+msgid "Yellow"
+msgstr "पीला"
+
+#: widgets/KoUniColorChooser.cpp:192
+msgid "Black"
+msgstr "काला"
+
+#: widgets/KoUniColorChooser.cpp:209
+msgid "Green to magenta*"
+msgstr "हरा से मजेंटा*"
+
+#: widgets/KoUniColorChooser.cpp:217
+msgid "Blue to yellow"
+msgstr "नीले से पीला"
+
+#: widgets/KoUniColorChooser.cpp:221
+msgid "Opacity:"
+msgstr "अपारदर्सिता:"
+
+#: widgets/KoUniColorDialog.cpp:39
+#, fuzzy
+#| msgid "Collection"
+msgid "Color Selector"
+msgstr "संग्रह"
+
+#: widgets/KoZoomAction.cpp:173 widgets/KoZoomAction.cpp:175
+#: widgets/KoZoomAction.cpp:187 widgets/KoZoomAction.cpp:189
+#: widgets/KoZoomMode.cpp:26
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
+
+#: widgets/KoZoomAction.cpp:271
+msgid "Use same aspect as pixels"
+msgstr "पिक्सेल जइसन ही आस्पेक्ट परयोग करव"
+
+#: widgets/KoZoomAction.cpp:279
+msgid "Zoom to Selection"
+msgstr ""
+
+#: widgets/KoZoomAction.cpp:287
+msgid "Zoom to All"
+msgstr "सब्बो जूम करव"
+
+#: widgets/KoZoomMode.cpp:27
+msgid "Fit Page Width"
+msgstr "पेज चौड़ाई मं जमाव"
+
+#: widgets/KoZoomMode.cpp:28
+msgid "Fit Page"
+msgstr "पेज मं जमाव"
+
+#: widgets/KoZoomMode.cpp:30
+msgid "Actual Pixels"
+msgstr "सही पिक्सल्स"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -4709,7 +4711,7 @@ msgstr "दीर्घवक्र आकार"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: main/koDocumentInfoAboutWidget.ui:109
 #. i18n: ectx: property (text), widget (QLabel, lblTypeDesc)
-#: rc.cpp:8 rc.cpp:385
+#: rc.cpp:8 rc.cpp:215
 msgid "Type:"
 msgstr "किसिमः"
 
@@ -4761,6 +4763,18 @@ msgstr "लाइन के प्रतिक्छेदन"
 msgid "Guide lines"
 msgstr "गाइड लाइन"
 
+#. i18n: file: flake/tools/KoZoomToolWidget.ui:20
+#. i18n: ectx: property (text), widget (QRadioButton, zoomInButton)
+#: rc.cpp:35
+msgid "Zoom In"
+msgstr "जूम इन"
+
+#. i18n: file: flake/tools/KoZoomToolWidget.ui:30
+#. i18n: ectx: property (text), widget (QRadioButton, zoomOutButton)
+#: rc.cpp:38
+msgid "Zoom Out"
+msgstr "जूम आउट"
+
 #. i18n: file: flake/tools/PathToolOptionWidgetBase.ui:39
 #. i18n: ectx: property (text), widget (QToolButton, corner)
 #. i18n: file: flake/tools/PathToolOptionWidgetBase.ui:46
@@ -4795,29 +4809,17 @@ msgstr "गाइड लाइन"
 #. i18n: ectx: property (text), widget (QToolButton, open)
 #. i18n: file: widgets/KoEditColorSet.ui:78
 #. i18n: ectx: property (text), widget (QToolButton, save)
-#: rc.cpp:35 rc.cpp:38 rc.cpp:41 rc.cpp:44 rc.cpp:47 rc.cpp:50 rc.cpp:53
-#: rc.cpp:56 rc.cpp:59 rc.cpp:62 rc.cpp:65 rc.cpp:68 rc.cpp:71 rc.cpp:535
+#: rc.cpp:41 rc.cpp:44 rc.cpp:47 rc.cpp:50 rc.cpp:53 rc.cpp:56 rc.cpp:59
+#: rc.cpp:62 rc.cpp:65 rc.cpp:68 rc.cpp:71 rc.cpp:74 rc.cpp:77 rc.cpp:535
 #: rc.cpp:541 rc.cpp:547 rc.cpp:553
 msgid "..."
 msgstr "..."
 
 #. i18n: file: flake/tools/PathToolOptionWidgetBase.ui:186
 #. i18n: ectx: property (text), widget (QPushButton, convertToPath)
-#: rc.cpp:74
+#: rc.cpp:80
 msgid "Convert To Path"
 msgstr "पथ मं बदलव"
-
-#. i18n: file: flake/tools/KoZoomToolWidget.ui:20
-#. i18n: ectx: property (text), widget (QRadioButton, zoomInButton)
-#: rc.cpp:77
-msgid "Zoom In"
-msgstr "जूम इन"
-
-#. i18n: file: flake/tools/KoZoomToolWidget.ui:30
-#. i18n: ectx: property (text), widget (QRadioButton, zoomOutButton)
-#: rc.cpp:80
-msgid "Zoom Out"
-msgstr "जूम आउट"
 
 #. i18n: file: kopageapp/tools/backgroundTool/BackgroundToolWidget.ui:18
 #. i18n: ectx: property (text), widget (QPushButton, backgroundImage)
@@ -5046,9 +5048,161 @@ msgstr "सेटिंग (&S)"
 msgid "File"
 msgstr "फाइल"
 
+#. i18n: file: main/koDocumentInfoAboutWidget.ui:16
+#. i18n: ectx: property (text), widget (QLabel, filePathInfoLabel)
+#: rc.cpp:200
+msgid "Path:"
+msgstr "पथः"
+
+#. i18n: file: main/koDocumentInfoAboutWidget.ui:37
+#. i18n: ectx: property (text), widget (QLabel, lblTitleDesc)
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:60
+#. i18n: ectx: property (text), widget (QLabel, lblTitleDesc)
+#: rc.cpp:203 rc.cpp:248
+msgid "Title:"
+msgstr "सीर्सक:"
+
+#. i18n: file: main/koDocumentInfoAboutWidget.ui:50
+#. i18n: ectx: property (text), widget (QLabel, lblSubjectDesc)
+#: rc.cpp:206
+msgid "Subject:"
+msgstr "विसय:"
+
+#. i18n: file: main/koDocumentInfoAboutWidget.ui:63
+#. i18n: ectx: property (text), widget (QLabel, lblKeywordsDesc)
+#: rc.cpp:209
+msgid "Keywords:"
+msgstr "की-वर्डस:"
+
+#. i18n: file: main/koDocumentInfoAboutWidget.ui:80
+#. i18n: ectx: property (text), widget (QLabel, lbCommentsDesc)
+#: rc.cpp:212
+msgid "Comments:"
+msgstr "टिप्पनियाँ:"
+
+#. i18n: file: main/koDocumentInfoAboutWidget.ui:129
+#. i18n: ectx: property (text), widget (QLabel, lblCreatedDesc)
+#: rc.cpp:218
+msgid "Created:"
+msgstr "सृजितः"
+
+#. i18n: file: main/koDocumentInfoAboutWidget.ui:149
+#. i18n: ectx: property (text), widget (QLabel, lblModifiedDesc)
+#: rc.cpp:221
+msgid "Modified:"
+msgstr "परिवर्धितः"
+
+#. i18n: file: main/koDocumentInfoAboutWidget.ui:169
+#. i18n: ectx: property (text), widget (QLabel, lblLastPrintedDesc)
+#: rc.cpp:224
+msgid "Last printed:"
+msgstr "आखरी बार मुद्रित:"
+
+#. i18n: file: main/koDocumentInfoAboutWidget.ui:189
+#. i18n: ectx: property (text), widget (QLabel, lblEditingDesc)
+#: rc.cpp:227
+msgid "Total editing time:"
+msgstr "कुल संपादन समय:"
+
+#. i18n: file: main/koDocumentInfoAboutWidget.ui:215
+#. i18n: ectx: property (text), widget (QPushButton, pbReset)
+#: rc.cpp:230
+msgid "&Reset"
+msgstr "रीसेट (&R)"
+
+#. i18n: file: main/koDocumentInfoAboutWidget.ui:228
+#. i18n: ectx: property (text), widget (QLabel, lblRevisionDesc)
+#: rc.cpp:233
+msgid "Revision number:"
+msgstr "संसोधन संख्या:"
+
+#. i18n: file: main/koDocumentInfoAboutWidget.ui:242
+#. i18n: ectx: property (text), widget (QLabel, lblEncryptedDesc)
+#: rc.cpp:236
+msgid "Encryption:"
+msgstr "एनक्रिप्सनः"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:40
+#. i18n: ectx: property (text), widget (QLabel, lblInitialsDesc)
+#: rc.cpp:245
+msgid "Initials:"
+msgstr "पहिलीाक्छर:"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:73
+#. i18n: ectx: property (text), widget (QLabel, lblPositionDesc)
+#: rc.cpp:251
+msgid "Position:"
+msgstr "स्थितिः"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:86
+#. i18n: ectx: property (text), widget (QLabel, lblCompanyDesc)
+#: rc.cpp:254
+msgid "Company:"
+msgstr "कम्पनी:"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:99
+#. i18n: ectx: property (text), widget (QLabel, lblEmailDesc)
+#: rc.cpp:257
+msgid "Email:"
+msgstr "ईमेलः"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:112
+#. i18n: ectx: property (text), widget (QLabel, lblPhoneHome)
+#: rc.cpp:260
+msgid "Telephone (home):"
+msgstr "दूरभास (घर):"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:125
+#. i18n: ectx: property (text), widget (QLabel, lblPhoneWork)
+#: rc.cpp:263
+msgid "Telephone (work):"
+msgstr "दूरभास (काम)"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:138
+#. i18n: ectx: property (text), widget (QLabel, lblFaxDesc)
+#: rc.cpp:266
+msgid "Fax:"
+msgstr "फैक्सः"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:151
+#. i18n: ectx: property (text), widget (QLabel, lblStreetDesc)
+#: rc.cpp:269
+msgid "Street:"
+msgstr "सड़कः"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:164
+#. i18n: ectx: property (text), widget (QLabel, lblPostalDesc)
+#: rc.cpp:272
+msgid "Postal code:"
+msgstr "पिन कोडः"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:177
+#. i18n: ectx: property (text), widget (QLabel, lblCityDesc)
+#: rc.cpp:275
+msgid "City:"
+msgstr "सहर:"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:190
+#. i18n: ectx: property (text), widget (QLabel, lblCountryDesc)
+#: rc.cpp:278
+msgid "Country:"
+msgstr "देस:"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:222
+#. i18n: ectx: property (text), widget (QPushButton, pbLoadKABC)
+#: rc.cpp:281
+msgid "&Load From Address Book"
+msgstr "पता पुस्तिका से लोड करव (&L)"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:235
+#. i18n: ectx: property (text), widget (QPushButton, pbDelete)
+#: rc.cpp:284
+msgid "&Delete Personal Data"
+msgstr "निजी डाटा मेटाव (&D)"
+
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:21
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:200
+#: rc.cpp:287
 #, fuzzy
 #| msgid "Title:"
 msgid "Triples"
@@ -5060,13 +5214,13 @@ msgstr "सीर्सक:"
 #. i18n: ectx: property (text), widget (QPushButton, newNamespaceButton)
 #. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:77
 #. i18n: ectx: property (text), widget (QPushButton, newStylesheet)
-#: rc.cpp:203 rc.cpp:215 rc.cpp:322
+#: rc.cpp:290 rc.cpp:302 rc.cpp:448
 msgid "new"
 msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:46
 #. i18n: ectx: property (text), widget (QPushButton, copyTripleButton)
-#: rc.cpp:206
+#: rc.cpp:293
 #, fuzzy
 #| msgid "Company:"
 msgid "copy"
@@ -5078,7 +5232,7 @@ msgstr "कम्पनी:"
 #. i18n: ectx: property (text), widget (QPushButton, deleteNamespaceButton)
 #. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:84
 #. i18n: ectx: property (text), widget (QPushButton, deleteStylesheet)
-#: rc.cpp:209 rc.cpp:218 rc.cpp:325
+#: rc.cpp:296 rc.cpp:305 rc.cpp:451
 #, fuzzy
 #| msgid "Delete"
 msgid "delete"
@@ -5086,19 +5240,19 @@ msgstr "मेटाव"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:76
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: rc.cpp:212
+#: rc.cpp:299
 msgid "Namespaces"
 msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:123
 #. i18n: ectx: property (text), widget (QTreeWidget, m_namespaceView)
-#: rc.cpp:221
+#: rc.cpp:308
 msgid "Prefix"
 msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:128
 #. i18n: ectx: property (text), widget (QTreeWidget, m_namespaceView)
-#: rc.cpp:224
+#: rc.cpp:311
 #, fuzzy
 #| msgid "Replace"
 msgid "Namespace"
@@ -5106,19 +5260,19 @@ msgstr "बदलव"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:137
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: rc.cpp:227
+#: rc.cpp:314
 msgid "Semantic"
 msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:156
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
-#: rc.cpp:230
+#: rc.cpp:317
 msgid "SPARQL"
 msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:182
 #. i18n: ectx: property (html), widget (QTextEdit, m_sparqlQuery)
-#: rc.cpp:233
+#: rc.cpp:320
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -5178,7 +5332,7 @@ msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:191
 #. i18n: ectx: property (text), widget (QPushButton, m_sparqlExecute)
-#: rc.cpp:253
+#: rc.cpp:340
 #, fuzzy
 #| msgid "US Executive"
 msgid "Execute"
@@ -5186,7 +5340,7 @@ msgstr "यूएस एक्जीक्यूटिव"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:221
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
-#: rc.cpp:256
+#: rc.cpp:343
 #, fuzzy
 #| msgid "Styles"
 msgid "Stylesheets"
@@ -5194,13 +5348,13 @@ msgstr "सैली"
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:227
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:259
+#: rc.cpp:346
 msgid "Contacts"
 msgstr ""
 
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:279
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:268
+#: rc.cpp:355
 msgid ""
 "Set the default stylesheet for Semantic objects in this document. New RDF "
 "objects will use this stylesheet automatically. The buttons allow you to set "
@@ -5216,103 +5370,19 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, m_defaultLocationsSheetButton)
 #. i18n: file: main/rdf/KoDocumentRdfEditWidget.ui:310
 #. i18n: ectx: property (text), widget (QPushButton, m_setAllStylesheetsButton)
-#: rc.cpp:271 rc.cpp:274 rc.cpp:277 rc.cpp:280
+#: rc.cpp:358 rc.cpp:361 rc.cpp:364 rc.cpp:367
 msgid "Set For All Existing"
-msgstr ""
-
-#. i18n: file: main/rdf/KoRdfLocationEditWidget.ui:17
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:283
-#, fuzzy
-#| msgid "Name:"
-msgid "&Name"
-msgstr "नाम:"
-
-#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:26
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: file: main/rdf/KoRdfLocationViewWidget.ui:24
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:286 rc.cpp:307
-#, fuzzy
-#| msgid "Name:"
-msgid "&Name:"
-msgstr "नाम:"
-
-#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:36
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:289
-msgid "&Nick:"
-msgstr ""
-
-#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:46
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:292
-#, fuzzy
-#| msgid "Number:"
-msgid "&Phone Number:"
-msgstr "संख्या:"
-
-#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:59
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:295
-#, fuzzy
-#| msgid "Move page"
-msgid "&Home Page:"
-msgstr "पेज खिसकाव"
-
-#. i18n: file: main/rdf/KoRdfLocationViewWidgetMarble.ui:31
-#. i18n: ectx: property (toolTip), widget (Marble::MarbleWidget, map)
-#. i18n: file: main/rdf/KoRdfLocationEditWidgetMarble.ui:30
-#. i18n: ectx: property (toolTip), widget (Marble::MarbleWidget, map)
-#: rc.cpp:301 rc.cpp:352
-#, fuzzy
-#| msgid "To Path"
-msgid "The Earth"
-msgstr "पथ पर"
-
-#. i18n: file: main/rdf/KoRdfLocationViewWidgetMarble.ui:34
-#. i18n: ectx: property (whatsThis), widget (Marble::MarbleWidget, map)
-#. i18n: file: main/rdf/KoRdfLocationEditWidgetMarble.ui:33
-#. i18n: ectx: property (whatsThis), widget (Marble::MarbleWidget, map)
-#: rc.cpp:304 rc.cpp:355
-msgid "The Marble widget displays a virtual globe."
-msgstr ""
-
-#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:17
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:310
-msgid "Stylesheet Definition"
-msgstr ""
-
-#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:29
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:313
-msgid "Variables Available"
-msgstr ""
-
-#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:62
-#. i18n: ectx: property (text), widget (QTableWidget, variables)
-#: rc.cpp:319
-#, fuzzy
-#| msgid "Decrypt"
-msgid "Description"
-msgstr "डीक्रिप्ट"
-
-#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:107
-#. i18n: ectx: property (text), widget (QTreeWidget, stylesheets)
-#: rc.cpp:328
-msgid "Stylesheet Name"
 msgstr ""
 
 #. i18n: file: main/rdf/KoRdfCalendarEventEditWidget.ui:20
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:331
+#: rc.cpp:370
 msgid "&Summary:"
 msgstr ""
 
 #. i18n: file: main/rdf/KoRdfCalendarEventEditWidget.ui:30
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:334
+#: rc.cpp:373
 #, fuzzy
 #| msgid "Collection"
 msgid "&Location:"
@@ -5320,7 +5390,7 @@ msgstr "संग्रह"
 
 #. i18n: file: main/rdf/KoRdfCalendarEventEditWidget.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:337
+#: rc.cpp:376
 #, fuzzy
 #| msgid "Street:"
 msgid "&Start:"
@@ -5328,199 +5398,131 @@ msgstr "सड़कः"
 
 #. i18n: file: main/rdf/KoRdfCalendarEventEditWidget.ui:56
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:340
+#: rc.cpp:379
 msgid "&End:"
 msgstr ""
 
 #. i18n: file: main/rdf/KoRdfCalendarEventEditWidget.ui:80
 #. i18n: ectx: attribute (title), widget (QWidget, tadtab)
-#: rc.cpp:343
+#: rc.cpp:382
 msgid "Time and Date"
 msgstr ""
 
 #. i18n: file: main/rdf/KoRdfCalendarEventEditWidget.ui:93
 #. i18n: ectx: attribute (title), widget (QWidget, tztab)
-#: rc.cpp:346
+#: rc.cpp:385
 #, fuzzy
 #| msgid "Time:"
 msgid "Timezone"
 msgstr "समय:"
 
+#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:26
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: main/rdf/KoRdfLocationViewWidget.ui:24
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:388 rc.cpp:424
+#, fuzzy
+#| msgid "Name:"
+msgid "&Name:"
+msgstr "नाम:"
+
+#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:36
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:391
+msgid "&Nick:"
+msgstr ""
+
+#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:394
+#, fuzzy
+#| msgid "Number:"
+msgid "&Phone Number:"
+msgstr "संख्या:"
+
+#. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:59
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:397
+#, fuzzy
+#| msgid "Move page"
+msgid "&Home Page:"
+msgstr "पेज खिसकाव"
+
+#. i18n: file: main/rdf/KoRdfLocationEditWidget.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:400
+#, fuzzy
+#| msgid "Name:"
+msgid "&Name"
+msgstr "नाम:"
+
+#. i18n: file: main/rdf/KoRdfLocationEditWidgetMarble.ui:30
+#. i18n: ectx: property (toolTip), widget (Marble::MarbleWidget, map)
+#. i18n: file: main/rdf/KoRdfLocationViewWidgetMarble.ui:31
+#. i18n: ectx: property (toolTip), widget (Marble::MarbleWidget, map)
+#: rc.cpp:406 rc.cpp:430
+#, fuzzy
+#| msgid "To Path"
+msgid "The Earth"
+msgstr "पथ पर"
+
+#. i18n: file: main/rdf/KoRdfLocationEditWidgetMarble.ui:33
+#. i18n: ectx: property (whatsThis), widget (Marble::MarbleWidget, map)
+#. i18n: file: main/rdf/KoRdfLocationViewWidgetMarble.ui:34
+#. i18n: ectx: property (whatsThis), widget (Marble::MarbleWidget, map)
+#: rc.cpp:409 rc.cpp:433
+msgid "The Marble widget displays a virtual globe."
+msgstr ""
+
 #. i18n: file: main/rdf/KoRdfLocationEditWidgetMarble.ui:40
 #. i18n: ectx: property (toolTip), widget (Marble::MarbleNavigator, zoomer)
-#: rc.cpp:358
+#: rc.cpp:412
 msgid "Navigation Control"
 msgstr ""
 
 #. i18n: file: main/rdf/KoRdfLocationEditWidgetMarble.ui:43
 #. i18n: ectx: property (whatsThis), widget (Marble::MarbleNavigator, zoomer)
-#: rc.cpp:361
+#: rc.cpp:415
 msgid "Use this control to navigate."
 msgstr ""
 
 #. i18n: file: main/rdf/KoRdfLocationEditWidgetMarble.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:364
+#: rc.cpp:418
 msgid "Latitude"
 msgstr ""
 
 #. i18n: file: main/rdf/KoRdfLocationEditWidgetMarble.ui:60
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:367
+#: rc.cpp:421
 msgid "Longitude"
 msgstr ""
 
-#. i18n: file: main/koDocumentInfoAboutWidget.ui:16
-#. i18n: ectx: property (text), widget (QLabel, filePathInfoLabel)
-#: rc.cpp:370
-msgid "Path:"
-msgstr "पथः"
-
-#. i18n: file: main/koDocumentInfoAboutWidget.ui:37
-#. i18n: ectx: property (text), widget (QLabel, lblTitleDesc)
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:60
-#. i18n: ectx: property (text), widget (QLabel, lblTitleDesc)
-#: rc.cpp:373 rc.cpp:418
-msgid "Title:"
-msgstr "सीर्सक:"
-
-#. i18n: file: main/koDocumentInfoAboutWidget.ui:50
-#. i18n: ectx: property (text), widget (QLabel, lblSubjectDesc)
-#: rc.cpp:376
-msgid "Subject:"
-msgstr "विसय:"
-
-#. i18n: file: main/koDocumentInfoAboutWidget.ui:63
-#. i18n: ectx: property (text), widget (QLabel, lblKeywordsDesc)
-#: rc.cpp:379
-msgid "Keywords:"
-msgstr "की-वर्डस:"
-
-#. i18n: file: main/koDocumentInfoAboutWidget.ui:80
-#. i18n: ectx: property (text), widget (QLabel, lbCommentsDesc)
-#: rc.cpp:382
-msgid "Comments:"
-msgstr "टिप्पनियाँ:"
-
-#. i18n: file: main/koDocumentInfoAboutWidget.ui:129
-#. i18n: ectx: property (text), widget (QLabel, lblCreatedDesc)
-#: rc.cpp:388
-msgid "Created:"
-msgstr "सृजितः"
-
-#. i18n: file: main/koDocumentInfoAboutWidget.ui:149
-#. i18n: ectx: property (text), widget (QLabel, lblModifiedDesc)
-#: rc.cpp:391
-msgid "Modified:"
-msgstr "परिवर्धितः"
-
-#. i18n: file: main/koDocumentInfoAboutWidget.ui:169
-#. i18n: ectx: property (text), widget (QLabel, lblLastPrintedDesc)
-#: rc.cpp:394
-msgid "Last printed:"
-msgstr "आखरी बार मुद्रित:"
-
-#. i18n: file: main/koDocumentInfoAboutWidget.ui:189
-#. i18n: ectx: property (text), widget (QLabel, lblEditingDesc)
-#: rc.cpp:397
-msgid "Total editing time:"
-msgstr "कुल संपादन समय:"
-
-#. i18n: file: main/koDocumentInfoAboutWidget.ui:215
-#. i18n: ectx: property (text), widget (QPushButton, pbReset)
-#: rc.cpp:400
-msgid "&Reset"
-msgstr "रीसेट (&R)"
-
-#. i18n: file: main/koDocumentInfoAboutWidget.ui:228
-#. i18n: ectx: property (text), widget (QLabel, lblRevisionDesc)
-#: rc.cpp:403
-msgid "Revision number:"
-msgstr "संसोधन संख्या:"
-
-#. i18n: file: main/koDocumentInfoAboutWidget.ui:242
-#. i18n: ectx: property (text), widget (QLabel, lblEncryptedDesc)
-#: rc.cpp:406
-msgid "Encryption:"
-msgstr "एनक्रिप्सनः"
-
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:40
-#. i18n: ectx: property (text), widget (QLabel, lblInitialsDesc)
-#: rc.cpp:415
-msgid "Initials:"
-msgstr "पहिलीाक्छर:"
-
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:73
-#. i18n: ectx: property (text), widget (QLabel, lblPositionDesc)
-#: rc.cpp:421
-msgid "Position:"
-msgstr "स्थितिः"
-
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:86
-#. i18n: ectx: property (text), widget (QLabel, lblCompanyDesc)
-#: rc.cpp:424
-msgid "Company:"
-msgstr "कम्पनी:"
-
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:99
-#. i18n: ectx: property (text), widget (QLabel, lblEmailDesc)
-#: rc.cpp:427
-msgid "Email:"
-msgstr "ईमेलः"
-
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:112
-#. i18n: ectx: property (text), widget (QLabel, lblPhoneHome)
-#: rc.cpp:430
-msgid "Telephone (home):"
-msgstr "दूरभास (घर):"
-
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:125
-#. i18n: ectx: property (text), widget (QLabel, lblPhoneWork)
-#: rc.cpp:433
-msgid "Telephone (work):"
-msgstr "दूरभास (काम)"
-
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:138
-#. i18n: ectx: property (text), widget (QLabel, lblFaxDesc)
+#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:17
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:436
-msgid "Fax:"
-msgstr "फैक्सः"
+msgid "Stylesheet Definition"
+msgstr ""
 
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:151
-#. i18n: ectx: property (text), widget (QLabel, lblStreetDesc)
+#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:29
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: rc.cpp:439
-msgid "Street:"
-msgstr "सड़कः"
+msgid "Variables Available"
+msgstr ""
 
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:164
-#. i18n: ectx: property (text), widget (QLabel, lblPostalDesc)
-#: rc.cpp:442
-msgid "Postal code:"
-msgstr "पिन कोडः"
-
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:177
-#. i18n: ectx: property (text), widget (QLabel, lblCityDesc)
+#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:62
+#. i18n: ectx: property (text), widget (QTableWidget, variables)
 #: rc.cpp:445
-msgid "City:"
-msgstr "सहर:"
+#, fuzzy
+#| msgid "Decrypt"
+msgid "Description"
+msgstr "डीक्रिप्ट"
 
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:190
-#. i18n: ectx: property (text), widget (QLabel, lblCountryDesc)
-#: rc.cpp:448
-msgid "Country:"
-msgstr "देस:"
-
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:222
-#. i18n: ectx: property (text), widget (QPushButton, pbLoadKABC)
-#: rc.cpp:451
-msgid "&Load From Address Book"
-msgstr "पता पुस्तिका से लोड करव (&L)"
-
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:235
-#. i18n: ectx: property (text), widget (QPushButton, pbDelete)
+#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:107
+#. i18n: ectx: property (text), widget (QTreeWidget, stylesheets)
 #: rc.cpp:454
-msgid "&Delete Personal Data"
-msgstr "निजी डाटा मेटाव (&D)"
+msgid "Stylesheet Name"
+msgstr ""
 
 #. i18n: file: widgets/KoCsvImportDialog.ui:52
 #. i18n: ectx: attribute (title), widget (QWidget, m_dataTab)
