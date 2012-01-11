@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_gpssync\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-23 03:51+0100\n"
+"POT-Creation-Date: 2012-01-11 03:27+0100\n"
 "PO-Revision-Date: 2009-02-16 13:55+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,22 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 0.2\n"
-
-#: plugin_gpssync.cpp:74
-#, fuzzy
-#| msgid "Geolocation"
-msgid "Geo-location"
-msgstr "जियोलोकेसन"
-
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "raviratlami@aol.in"
 
 #: rgtagmodel.cpp:93
 msgid "{Country}"
@@ -70,46 +54,24 @@ msgstr ""
 msgid "{Street}"
 msgstr ""
 
-#: gpsbookmarkowner.cpp:108
-#, fuzzy
-#| msgid "Goto Location"
-msgid "Bookmark location"
-msgstr "ये जगह मं जाव"
-
-#: gpsbookmarkowner.cpp:109
-msgctxt "Title of the new gps location bookmark"
-msgid "Title:"
+#: setup.cpp:112
+msgid "Configure"
 msgstr ""
 
-#: gpsbookmarkowner.cpp:345 searchwidget.cpp:745
-#, kde-format
-msgid "1 image snapped to '%2'"
-msgid_plural "%1 images snapped to '%2'"
-msgstr[0] ""
-msgstr[1] ""
-
-#: gpsdataparser.cpp:639
-#, fuzzy, kde-format
-#| msgid "Could not create '%1'"
-msgid "Could not open: %1"
-msgstr "'%1' नइ बना सकिस"
-
-#: gpsdataparser.cpp:645
-msgid "File is empty."
+#: setup.cpp:118
+msgctxt "General setup"
+msgid "General"
 msgstr ""
 
-#: gpsdataparser.cpp:661
-#, kde-format
-msgid "Parsing error: %1"
-msgstr ""
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
 
-#: gpsdataparser.cpp:670
-msgid "No GPX element found - probably not a GPX file."
-msgstr ""
-
-#: gpsdataparser.cpp:674
-msgid "File is a GPX file, but no datapoints were found."
-msgstr ""
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "raviratlami@aol.in"
 
 #: gpscorrelatorwidget.cpp:164
 #, fuzzy
@@ -295,6 +257,29 @@ msgid_plural "%1 images correlated"
 msgstr[0] ""
 msgstr[1] ""
 
+#: gpsdataparser.cpp:639
+#, fuzzy, kde-format
+#| msgid "Could not create '%1'"
+msgid "Could not open: %1"
+msgstr "'%1' नइ बना सकिस"
+
+#: gpsdataparser.cpp:645
+msgid "File is empty."
+msgstr ""
+
+#: gpsdataparser.cpp:661
+#, kde-format
+msgid "Parsing error: %1"
+msgstr ""
+
+#: gpsdataparser.cpp:670
+msgid "No GPX element found - probably not a GPX file."
+msgstr ""
+
+#: gpsdataparser.cpp:674
+msgid "File is a GPX file, but no datapoints were found."
+msgstr ""
+
 #: gpsimagedetails.cpp:120
 #, fuzzy
 #| msgid "Remove Coordinates..."
@@ -345,6 +330,324 @@ msgstr ""
 msgid "Details changed"
 msgstr ""
 
+#: gpslistviewcontextmenu.cpp:102 searchwidget.cpp:172
+#, fuzzy
+#| msgid "Remove Coordinates..."
+msgid "Copy coordinates"
+msgstr "निर्देसांक मेटाव..."
+
+#: gpslistviewcontextmenu.cpp:104
+#, fuzzy
+#| msgid "Edit Coordinates..."
+msgid "Paste coordinates"
+msgstr "निर्देसांक संपादित करव..."
+
+#: gpslistviewcontextmenu.cpp:106
+#, fuzzy
+#| msgid "Remove Coordinates..."
+msgid "Remove coordinates"
+msgstr "निर्देसांक मेटाव..."
+
+#: gpslistviewcontextmenu.cpp:107
+#, fuzzy
+#| msgid "Latitude"
+msgid "Remove altitude"
+msgstr "अच्छांस"
+
+#: gpslistviewcontextmenu.cpp:108
+msgid "Remove uncertainty"
+msgstr ""
+
+#: gpslistviewcontextmenu.cpp:109 gpslistviewcontextmenu.cpp:615
+#, fuzzy
+#| msgid "Remove"
+msgid "Remove speed"
+msgstr "हटाव"
+
+#: gpslistviewcontextmenu.cpp:110
+msgid "Look up missing altitude values"
+msgstr ""
+
+#: gpslistviewcontextmenu.cpp:136 searchwidget.cpp:202
+msgid "Bookmarks"
+msgstr ""
+
+#: gpslistviewcontextmenu.cpp:395
+msgid ""
+"Found more than one point on the clipboard - can only assign one point at a "
+"time."
+msgstr ""
+
+#: gpslistviewcontextmenu.cpp:396 gpslistviewcontextmenu.cpp:453
+#: gpslistviewcontextmenu.cpp:713 gpssyncdialog.cpp:400
+msgid "GPS Sync"
+msgstr "जीपीएस सिंक"
+
+#: gpslistviewcontextmenu.cpp:453
+msgid "Could not find any coordinates on the clipboard."
+msgstr ""
+
+#: gpslistviewcontextmenu.cpp:457
+#, fuzzy
+#| msgid "Remove Coordinates..."
+msgid "Coordinates pasted"
+msgstr "निर्देसांक मेटाव..."
+
+#: gpslistviewcontextmenu.cpp:488
+#, fuzzy
+#| msgid "Goto Location"
+msgid "Bookmark selected"
+msgstr "ये जगह मं जाव"
+
+#: gpslistviewcontextmenu.cpp:592
+#, fuzzy
+#| msgid "Remove Coordinates..."
+msgid "Remove coordinates information"
+msgstr "निर्देसांक मेटाव..."
+
+#: gpslistviewcontextmenu.cpp:597
+msgid "Remove altitude information"
+msgstr ""
+
+#: gpslistviewcontextmenu.cpp:604
+msgid "Remove uncertainty information"
+msgstr ""
+
+#: gpslistviewcontextmenu.cpp:664
+#, fuzzy
+#| msgid "Longitude"
+msgid "Looking up altitudes"
+msgstr "देसान्तर"
+
+#: gpslistviewcontextmenu.cpp:710
+#, fuzzy, kde-format
+#| msgid "Altitude"
+msgid ""
+"Altitude lookup failed:\n"
+"%1"
+msgstr "उन्नतांस"
+
+#: gpslistviewcontextmenu.cpp:719
+#, fuzzy
+#| msgid "Altitude"
+msgid "Altitude looked up"
+msgstr "उन्नतांस"
+
+#: gpssyncdialog.cpp:242
+msgid "Geolocation"
+msgstr "जियोलोकेसन"
+
+#: gpssyncdialog.cpp:268
+msgid "Display bookmarked positions on the map."
+msgstr ""
+
+#: gpssyncdialog.cpp:324
+#, fuzzy
+#| msgid "Settings"
+msgid "Sorting"
+msgstr "सेटिंग"
+
+#: gpssyncdialog.cpp:330
+msgid "Show oldest first"
+msgstr ""
+
+#: gpssyncdialog.cpp:334
+msgid "Show youngest first"
+msgstr ""
+
+#: gpssyncdialog.cpp:375
+msgid "Details"
+msgstr ""
+
+#: gpssyncdialog.cpp:376
+#, fuzzy
+#| msgid "Correlator"
+msgid "GPS Correlator"
+msgstr "कोरीलेटर"
+
+#: gpssyncdialog.cpp:377
+msgid "Undo/Redo"
+msgstr ""
+
+#: gpssyncdialog.cpp:378
+msgid "Reverse Geocoding"
+msgstr ""
+
+#: gpssyncdialog.cpp:379
+msgid "Search"
+msgstr ""
+
+#: gpssyncdialog.cpp:403
+#, fuzzy
+#| msgid "A Plugin to synchronize pictures metadata with a GPS device"
+msgid "A Plugin to synchronize pictures' metadata with a GPS device"
+msgstr "जीपीएस उपकरन से फोटू मेटाडाटा ल सिंक्रोनाइज करे के एक प्लगइन"
+
+#: gpssyncdialog.cpp:404
+#, fuzzy
+msgid "(c) 2006-2011, Gilles Caulier"
+msgstr "(c) 2006-2008, गिल्स काउलिएर"
+
+#: gpssyncdialog.cpp:406
+msgid "Michael G. Hansen"
+msgstr ""
+
+#: gpssyncdialog.cpp:407
+msgid "Developer and maintainer"
+msgstr "डेवलपर अउ मेंटेनर"
+
+#: gpssyncdialog.cpp:410
+msgid "Gabriel Voicu"
+msgstr ""
+
+#: gpssyncdialog.cpp:411 gpssyncdialog.cpp:415
+msgid "Developer"
+msgstr ""
+
+#: gpssyncdialog.cpp:414
+msgid "Gilles Caulier"
+msgstr "गिल्स काउलिएर"
+
+#: gpssyncdialog.cpp:420
+#, fuzzy
+msgid "Handbook"
+msgstr "प्लगइन हेंड-बुक"
+
+#: gpssyncdialog.cpp:596
+msgid "Loading metadata - %p%"
+msgstr ""
+
+#: gpssyncdialog.cpp:773
+#, kde-format
+msgid "You have 1 modified image."
+msgid_plural "You have %1 modified images."
+msgstr[0] ""
+msgstr[1] ""
+
+#: gpssyncdialog.cpp:779
+#, kde-format
+msgid "%1 Would you like to save the changes you made to them?"
+msgstr ""
+
+#: gpssyncdialog.cpp:780
+msgid "Unsaved changes"
+msgstr ""
+
+#: gpssyncdialog.cpp:781
+msgid "Save changes"
+msgstr ""
+
+#: gpssyncdialog.cpp:782
+msgid "Close and discard changes"
+msgstr ""
+
+#: gpssyncdialog.cpp:1001
+#, kde-format
+msgid "1 image moved"
+msgid_plural "%1 images moved"
+msgstr[0] ""
+msgstr[1] ""
+
+#: gpssyncdialog.cpp:1035
+msgid "Saving changes - %p%"
+msgstr ""
+
+#: gpssyncdialog.cpp:1076
+msgid "Failed to save some information:"
+msgstr ""
+
+#: gpssyncdialog.cpp:1076
+msgid "Error"
+msgstr ""
+
+#: kipiimageitem.cpp:362
+msgid "Not available"
+msgstr "नइ मिलत"
+
+#: kipiimageitem.cpp:395
+#, kde-format
+msgid "DOP: %1"
+msgstr ""
+
+#: kipiimageitem.cpp:400
+#, c-format, kde-format
+msgid "Fix: %1d"
+msgstr ""
+
+#: kipiimageitem.cpp:405
+#, kde-format
+msgid "#Sat: %1"
+msgstr ""
+
+#: kipiimageitem.cpp:439
+#, c-format, kde-format
+msgid "%1d"
+msgstr ""
+
+#: kipiimageitem.cpp:459
+msgid "Modified"
+msgstr ""
+
+#: kipiimageitem.cpp:518
+msgid "Thumbnail"
+msgstr "छोटे फोटू"
+
+#: kipiimageitem.cpp:520
+msgid "Date and time"
+msgstr ""
+
+#: kipiimageitem.cpp:524
+msgid "Accuracy"
+msgstr ""
+
+#: kipiimageitem.cpp:529
+msgid "Status"
+msgstr "स्थिति"
+
+#: kipiimageitem.cpp:530
+#, fuzzy
+#| msgid "Tracks"
+msgid "Tags"
+msgstr "ट्रैक्स"
+
+#: kipiimageitem.cpp:713
+msgid "Failed to open file."
+msgstr ""
+
+#: kipiimageitem.cpp:776
+msgid "Failed to add GPS info to image."
+msgstr ""
+
+#: kipiimageitem.cpp:785
+msgid "Failed to remove GPS info from image"
+msgstr ""
+
+#: kipiimageitem.cpp:811 kipiimageitem.cpp:816
+msgid "Failed to save tags to file."
+msgstr ""
+
+#: kipiimageitem.cpp:826
+msgid "Unable to save changes to file"
+msgstr ""
+
+#: gpsbookmarkowner.cpp:108
+#, fuzzy
+#| msgid "Goto Location"
+msgid "Bookmark location"
+msgstr "ये जगह मं जाव"
+
+#: gpsbookmarkowner.cpp:109
+msgctxt "Title of the new gps location bookmark"
+msgid "Title:"
+msgstr ""
+
+#: gpsbookmarkowner.cpp:345 searchwidget.cpp:745
+#, kde-format
+msgid "1 image snapped to '%2'"
+msgid_plural "%1 images snapped to '%2'"
+msgstr[0] ""
+msgstr[1] ""
+
 #: searchbackend.cpp:300
 msgid "GeoNames"
 msgstr ""
@@ -370,12 +673,6 @@ msgstr ""
 msgid "Toggle the visibility of the search results on the map."
 msgstr ""
 
-#: searchwidget.cpp:172 gpslistviewcontextmenu.cpp:102
-#, fuzzy
-#| msgid "Remove Coordinates..."
-msgid "Copy coordinates"
-msgstr "निर्देसांक मेटाव..."
-
 #: searchwidget.cpp:175
 msgid "Move selected images to this position"
 msgstr ""
@@ -386,10 +683,6 @@ msgstr ""
 
 #: searchwidget.cpp:181
 msgid "Select which service you would like to use."
-msgstr ""
-
-#: searchwidget.cpp:202 gpslistviewcontextmenu.cpp:136
-msgid "Bookmarks"
 msgstr ""
 
 #: searchwidget.cpp:255
@@ -753,304 +1046,11 @@ msgstr ""
 msgid "Continue"
 msgstr ""
 
-#: setup.cpp:112
-msgid "Configure"
-msgstr ""
-
-#: setup.cpp:118
-msgctxt "General setup"
-msgid "General"
-msgstr ""
-
-#: kipiimageitem.cpp:362
-msgid "Not available"
-msgstr "नइ मिलत"
-
-#: kipiimageitem.cpp:395
-#, kde-format
-msgid "DOP: %1"
-msgstr ""
-
-#: kipiimageitem.cpp:400
-#, c-format, kde-format
-msgid "Fix: %1d"
-msgstr ""
-
-#: kipiimageitem.cpp:405
-#, kde-format
-msgid "#Sat: %1"
-msgstr ""
-
-#: kipiimageitem.cpp:439
-#, c-format, kde-format
-msgid "%1d"
-msgstr ""
-
-#: kipiimageitem.cpp:459
-msgid "Modified"
-msgstr ""
-
-#: kipiimageitem.cpp:518
-msgid "Thumbnail"
-msgstr "छोटे फोटू"
-
-#: kipiimageitem.cpp:520
-msgid "Date and time"
-msgstr ""
-
-#: kipiimageitem.cpp:524
-msgid "Accuracy"
-msgstr ""
-
-#: kipiimageitem.cpp:529
-msgid "Status"
-msgstr "स्थिति"
-
-#: kipiimageitem.cpp:530
+#: plugin_gpssync.cpp:74
 #, fuzzy
-#| msgid "Tracks"
-msgid "Tags"
-msgstr "ट्रैक्स"
-
-#: kipiimageitem.cpp:713
-msgid "Failed to open file."
-msgstr ""
-
-#: kipiimageitem.cpp:776
-msgid "Failed to add GPS info to image."
-msgstr ""
-
-#: kipiimageitem.cpp:785
-msgid "Failed to remove GPS info from image"
-msgstr ""
-
-#: kipiimageitem.cpp:811 kipiimageitem.cpp:816
-msgid "Failed to save tags to file."
-msgstr ""
-
-#: kipiimageitem.cpp:826
-msgid "Unable to save changes to file"
-msgstr ""
-
-#: gpssyncdialog.cpp:242
-msgid "Geolocation"
+#| msgid "Geolocation"
+msgid "Geo-location"
 msgstr "जियोलोकेसन"
-
-#: gpssyncdialog.cpp:268
-msgid "Display bookmarked positions on the map."
-msgstr ""
-
-#: gpssyncdialog.cpp:324
-#, fuzzy
-#| msgid "Settings"
-msgid "Sorting"
-msgstr "सेटिंग"
-
-#: gpssyncdialog.cpp:330
-msgid "Show oldest first"
-msgstr ""
-
-#: gpssyncdialog.cpp:334
-msgid "Show youngest first"
-msgstr ""
-
-#: gpssyncdialog.cpp:375
-msgid "Details"
-msgstr ""
-
-#: gpssyncdialog.cpp:376
-#, fuzzy
-#| msgid "Correlator"
-msgid "GPS Correlator"
-msgstr "कोरीलेटर"
-
-#: gpssyncdialog.cpp:377
-msgid "Undo/Redo"
-msgstr ""
-
-#: gpssyncdialog.cpp:378
-msgid "Reverse Geocoding"
-msgstr ""
-
-#: gpssyncdialog.cpp:379
-msgid "Search"
-msgstr ""
-
-#: gpssyncdialog.cpp:400 gpslistviewcontextmenu.cpp:396
-#: gpslistviewcontextmenu.cpp:453 gpslistviewcontextmenu.cpp:713
-msgid "GPS Sync"
-msgstr "जीपीएस सिंक"
-
-#: gpssyncdialog.cpp:403
-#, fuzzy
-#| msgid "A Plugin to synchronize pictures metadata with a GPS device"
-msgid "A Plugin to synchronize pictures' metadata with a GPS device"
-msgstr "जीपीएस उपकरन से फोटू मेटाडाटा ल सिंक्रोनाइज करे के एक प्लगइन"
-
-#: gpssyncdialog.cpp:404
-#, fuzzy
-msgid "(c) 2006-2011, Gilles Caulier"
-msgstr "(c) 2006-2008, गिल्स काउलिएर"
-
-#: gpssyncdialog.cpp:406
-msgid "Michael G. Hansen"
-msgstr ""
-
-#: gpssyncdialog.cpp:407
-msgid "Developer and maintainer"
-msgstr "डेवलपर अउ मेंटेनर"
-
-#: gpssyncdialog.cpp:410
-msgid "Gabriel Voicu"
-msgstr ""
-
-#: gpssyncdialog.cpp:411 gpssyncdialog.cpp:415
-msgid "Developer"
-msgstr ""
-
-#: gpssyncdialog.cpp:414
-msgid "Gilles Caulier"
-msgstr "गिल्स काउलिएर"
-
-#: gpssyncdialog.cpp:420
-#, fuzzy
-msgid "Handbook"
-msgstr "प्लगइन हेंड-बुक"
-
-#: gpssyncdialog.cpp:596
-msgid "Loading metadata - %p%"
-msgstr ""
-
-#: gpssyncdialog.cpp:773
-#, kde-format
-msgid "You have 1 modified image."
-msgid_plural "You have %1 modified images."
-msgstr[0] ""
-msgstr[1] ""
-
-#: gpssyncdialog.cpp:779
-#, kde-format
-msgid "%1 Would you like to save the changes you made to them?"
-msgstr ""
-
-#: gpssyncdialog.cpp:780
-msgid "Unsaved changes"
-msgstr ""
-
-#: gpssyncdialog.cpp:781
-msgid "Save changes"
-msgstr ""
-
-#: gpssyncdialog.cpp:782
-msgid "Close and discard changes"
-msgstr ""
-
-#: gpssyncdialog.cpp:1001
-#, kde-format
-msgid "1 image moved"
-msgid_plural "%1 images moved"
-msgstr[0] ""
-msgstr[1] ""
-
-#: gpssyncdialog.cpp:1035
-msgid "Saving changes - %p%"
-msgstr ""
-
-#: gpssyncdialog.cpp:1076
-msgid "Failed to save some information:"
-msgstr ""
-
-#: gpssyncdialog.cpp:1076
-msgid "Error"
-msgstr ""
-
-#: gpslistviewcontextmenu.cpp:104
-#, fuzzy
-#| msgid "Edit Coordinates..."
-msgid "Paste coordinates"
-msgstr "निर्देसांक संपादित करव..."
-
-#: gpslistviewcontextmenu.cpp:106
-#, fuzzy
-#| msgid "Remove Coordinates..."
-msgid "Remove coordinates"
-msgstr "निर्देसांक मेटाव..."
-
-#: gpslistviewcontextmenu.cpp:107
-#, fuzzy
-#| msgid "Latitude"
-msgid "Remove altitude"
-msgstr "अच्छांस"
-
-#: gpslistviewcontextmenu.cpp:108
-msgid "Remove uncertainty"
-msgstr ""
-
-#: gpslistviewcontextmenu.cpp:109 gpslistviewcontextmenu.cpp:615
-#, fuzzy
-#| msgid "Remove"
-msgid "Remove speed"
-msgstr "हटाव"
-
-#: gpslistviewcontextmenu.cpp:110
-msgid "Look up missing altitude values"
-msgstr ""
-
-#: gpslistviewcontextmenu.cpp:395
-msgid ""
-"Found more than one point on the clipboard - can only assign one point at a "
-"time."
-msgstr ""
-
-#: gpslistviewcontextmenu.cpp:453
-msgid "Could not find any coordinates on the clipboard."
-msgstr ""
-
-#: gpslistviewcontextmenu.cpp:457
-#, fuzzy
-#| msgid "Remove Coordinates..."
-msgid "Coordinates pasted"
-msgstr "निर्देसांक मेटाव..."
-
-#: gpslistviewcontextmenu.cpp:488
-#, fuzzy
-#| msgid "Goto Location"
-msgid "Bookmark selected"
-msgstr "ये जगह मं जाव"
-
-#: gpslistviewcontextmenu.cpp:592
-#, fuzzy
-#| msgid "Remove Coordinates..."
-msgid "Remove coordinates information"
-msgstr "निर्देसांक मेटाव..."
-
-#: gpslistviewcontextmenu.cpp:597
-msgid "Remove altitude information"
-msgstr ""
-
-#: gpslistviewcontextmenu.cpp:604
-msgid "Remove uncertainty information"
-msgstr ""
-
-#: gpslistviewcontextmenu.cpp:664
-#, fuzzy
-#| msgid "Longitude"
-msgid "Looking up altitudes"
-msgstr "देसान्तर"
-
-#: gpslistviewcontextmenu.cpp:710
-#, fuzzy, kde-format
-#| msgid "Altitude"
-msgid ""
-"Altitude lookup failed:\n"
-"%1"
-msgstr "उन्नतांस"
-
-#: gpslistviewcontextmenu.cpp:719
-#, fuzzy
-#| msgid "Altitude"
-msgid "Altitude looked up"
-msgstr "उन्नतांस"
 
 #~ msgid "%1 - Edit Geographical Coordinates"
 #~ msgstr "%1 - भौगोलिक निर्देसांक संपादित करव"
