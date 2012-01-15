@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-09 10:06+0100\n"
+"POT-Creation-Date: 2012-01-15 10:27+0100\n"
 "PO-Revision-Date: 2009-03-10 17:56+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -37,27 +37,9 @@ msgstr "जोरिस गुइसन"
 msgid "Document to open"
 msgstr "कागद जऊन ल खोलना हे"
 
-#. i18n: file: ktorrent/dialogs/pastedlgbase.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, PasteDlgBase)
-#: ktorrent/dialogs/pastedialog.cpp:38 rc.cpp:94
-msgid "Open an URL"
-msgstr "यूआरएल खोलव"
-
-#: ktorrent/dialogs/pastedialog.cpp:62
-#: ktorrent/dialogs/torrentcreatordlg.cpp:118
-#: ktorrent/dialogs/fileselectdlg.cpp:430 libktcore/groups/allgroup.cpp:26
-msgid "All Torrents"
-msgstr "सब्बो टोरेंट"
-
-#: ktorrent/dialogs/pastedialog.cpp:105
-#: ktorrent/dialogs/torrentcreatordlg.cpp:251 ktorrent/gui.cpp:337
-#, kde-format
-msgid "Invalid URL: %1"
-msgstr "अवैध यूआरएल: %1"
-
 #. i18n: file: ktorrent/dialogs/speedlimitsdlg.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, SpeedLimitsDlg)
-#: ktorrent/dialogs/speedlimitsdlg.cpp:50 ktorrent/view/view.cpp:251
+#: ktorrent/dialogs/speedlimitsdlg.cpp:50 ktorrent/view/view.cpp:254
 #: rc.cpp:106
 msgid "Speed Limits"
 msgstr "गति सीमा"
@@ -259,31 +241,6 @@ msgstr ""
 msgid " KiB/s"
 msgstr "किबा/से"
 
-#: ktorrent/dialogs/torrentcreatordlg.cpp:44
-msgid "Create A Torrent"
-msgstr "टोरेंट बनाव"
-
-#: ktorrent/dialogs/torrentcreatordlg.cpp:257
-msgid "Only HTTP is supported for webseeding."
-msgstr ""
-
-#: ktorrent/dialogs/torrentcreatordlg.cpp:289
-msgid "You must select a file or a folder."
-msgstr ""
-
-#: ktorrent/dialogs/torrentcreatordlg.cpp:295
-msgid ""
-"You have not added a tracker, are you sure you want to create this torrent?"
-msgstr ""
-
-#: ktorrent/dialogs/torrentcreatordlg.cpp:303
-msgid "You must add at least one node."
-msgstr ""
-
-#: ktorrent/dialogs/torrentcreatordlg.cpp:369
-msgid "Choose a file to save the torrent"
-msgstr ""
-
 #: ktorrent/dialogs/torrentmigratordlg.cpp:97
 #, kde-format
 msgid "Importing 1 torrent ..."
@@ -320,6 +277,46 @@ msgstr "<b>%1</b> ल आयात करे मं फेल :%2"
 #, kde-format
 msgid "Imported <b>%1</b>"
 msgstr "<b>%1</b> ल आयात करिस"
+
+#: ktorrent/dialogs/importdialog.cpp:225 ktorrent/dialogs/importdialog.cpp:257
+#, fuzzy, kde-format
+msgid "Cannot load the torrent file: %1"
+msgstr "टोरेंट बना नइ सकिस: %1"
+
+#: ktorrent/dialogs/importdialog.cpp:285 plugins/ipfilter/convertthread.cpp:67
+#: plugins/ipfilter/convertthread.cpp:167
+#: plugins/search/searchenginelist.cpp:192
+#, fuzzy, kde-format
+msgid "Cannot open %1: %2"
+msgstr "खोल नइ सकिस %1 : %2"
+
+#: ktorrent/dialogs/importdialog.cpp:394 ktorrent/dialogs/importdialog.cpp:411
+#, fuzzy, kde-format
+msgid "Failed to create %1: %2"
+msgstr "बना नइ सकिस %1 : %2"
+
+#: ktorrent/dialogs/missingfilesdlg.cpp:77
+#: ktorrent/dialogs/missingfilesdlg.cpp:110
+msgid "Select the directory where the data now is."
+msgstr ""
+
+#: ktorrent/dialogs/missingfilesdlg.cpp:88
+msgid ""
+"The data files are not present in the location you selected. Do you want to "
+"create all the files in the selected directory?"
+msgstr ""
+
+#: ktorrent/dialogs/missingfilesdlg.cpp:90
+msgid ""
+"Not all files were found in the new location; some are still missing. Do you "
+"want to create the missing files in the selected directory?"
+msgstr ""
+
+#: ktorrent/dialogs/missingfilesdlg.cpp:119
+msgid ""
+"The data file is not present in the location you selected. Do you want to "
+"create the file in the selected directory?"
+msgstr ""
 
 #: ktorrent/dialogs/fileselectdlg.cpp:89
 #, fuzzy
@@ -389,88 +386,90 @@ msgid ""
 "Please select a different location."
 msgstr ""
 
-#: ktorrent/dialogs/fileselectdlg.cpp:504
+#: ktorrent/dialogs/fileselectdlg.cpp:430 ktorrent/dialogs/pastedialog.cpp:62
+#: ktorrent/dialogs/torrentcreatordlg.cpp:118 libktcore/groups/allgroup.cpp:26
+msgid "All Torrents"
+msgstr "सब्बो टोरेंट"
+
+#: ktorrent/dialogs/fileselectdlg.cpp:507
 msgid "<b>Unable to determine free space</b>"
 msgstr ""
 
-#: ktorrent/dialogs/fileselectdlg.cpp:514
+#: ktorrent/dialogs/fileselectdlg.cpp:517
 #, kde-format
 msgid "%1 (%2 in use by existing files)"
 msgstr ""
 
-#: ktorrent/dialogs/fileselectdlg.cpp:523
+#: ktorrent/dialogs/fileselectdlg.cpp:526
 #, fuzzy, kde-format
 msgctxt "We are %1 bytes short of what we need"
 msgid "%1 short"
 msgstr "%1 छोटा!"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:555
+#: ktorrent/dialogs/fileselectdlg.cpp:558
 #, fuzzy
 msgid "Existing files: <b>None</b>"
 msgstr "टाइटल: <b>%1</b>"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:557
+#: ktorrent/dialogs/fileselectdlg.cpp:560
 #, fuzzy
 msgid "Existing files: <b>All</b>"
 msgstr "टाइटल: <b>%1</b>"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:559
+#: ktorrent/dialogs/fileselectdlg.cpp:562
 #, fuzzy, kde-format
 msgid "Existing files: <b>%1</b> of <b>%2</b>"
 msgstr "टाइटल: <b>%1</b><br/>कलाकार: <b>%2</b>"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:566
+#: ktorrent/dialogs/fileselectdlg.cpp:569
 #, fuzzy
 msgid "Existing file: <b>No</b>"
 msgstr "टाइटल: <b>%1</b>"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:571
+#: ktorrent/dialogs/fileselectdlg.cpp:574
 #, fuzzy
 msgid "Existing file: <b>Yes</b>"
 msgstr "टाइटल: <b>%1</b>"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:651
+#: ktorrent/dialogs/fileselectdlg.cpp:654
 msgid "Clear History"
 msgstr ""
 
-#: ktorrent/dialogs/importdialog.cpp:225 ktorrent/dialogs/importdialog.cpp:257
-#, fuzzy, kde-format
-msgid "Cannot load the torrent file: %1"
-msgstr "टोरेंट बना नइ सकिस: %1"
+#. i18n: file: ktorrent/dialogs/pastedlgbase.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, PasteDlgBase)
+#: ktorrent/dialogs/pastedialog.cpp:38 rc.cpp:94
+msgid "Open an URL"
+msgstr "यूआरएल खोलव"
 
-#: ktorrent/dialogs/importdialog.cpp:285 plugins/ipfilter/convertthread.cpp:67
-#: plugins/ipfilter/convertthread.cpp:167
-#: plugins/search/searchenginelist.cpp:192
-#, fuzzy, kde-format
-msgid "Cannot open %1: %2"
-msgstr "खोल नइ सकिस %1 : %2"
+#: ktorrent/dialogs/pastedialog.cpp:106
+#: ktorrent/dialogs/torrentcreatordlg.cpp:252 ktorrent/gui.cpp:337
+#, kde-format
+msgid "Invalid URL: %1"
+msgstr "अवैध यूआरएल: %1"
 
-#: ktorrent/dialogs/importdialog.cpp:394 ktorrent/dialogs/importdialog.cpp:411
-#, fuzzy, kde-format
-msgid "Failed to create %1: %2"
-msgstr "बना नइ सकिस %1 : %2"
+#: ktorrent/dialogs/torrentcreatordlg.cpp:44
+msgid "Create A Torrent"
+msgstr "टोरेंट बनाव"
 
-#: ktorrent/dialogs/missingfilesdlg.cpp:77
-#: ktorrent/dialogs/missingfilesdlg.cpp:110
-msgid "Select the directory where the data now is."
+#: ktorrent/dialogs/torrentcreatordlg.cpp:258
+msgid "Only HTTP is supported for webseeding."
 msgstr ""
 
-#: ktorrent/dialogs/missingfilesdlg.cpp:88
-msgid ""
-"The data files are not present in the location you selected. Do you want to "
-"create all the files in the selected directory?"
+#: ktorrent/dialogs/torrentcreatordlg.cpp:290
+msgid "You must select a file or a folder."
 msgstr ""
 
-#: ktorrent/dialogs/missingfilesdlg.cpp:90
+#: ktorrent/dialogs/torrentcreatordlg.cpp:296
 msgid ""
-"Not all files were found in the new location; some are still missing. Do you "
-"want to create the missing files in the selected directory?"
+"You have not added a tracker, are you sure you want to create this torrent?"
 msgstr ""
 
-#: ktorrent/dialogs/missingfilesdlg.cpp:119
-msgid ""
-"The data file is not present in the location you selected. Do you want to "
-"create the file in the selected directory?"
+#: ktorrent/dialogs/torrentcreatordlg.cpp:304
+msgid "You must add at least one node."
+msgstr ""
+
+#: ktorrent/dialogs/torrentcreatordlg.cpp:370
+msgid "Choose a file to save the torrent"
 msgstr ""
 
 #: ktorrent/groups/grouppolicydlg.cpp:31
@@ -478,31 +477,31 @@ msgstr ""
 msgid "Policy for the %1 group"
 msgstr ""
 
-#: ktorrent/groups/groupview.cpp:117
+#: ktorrent/groups/groupview.cpp:116
 msgid "Custom Groups"
 msgstr "मनमाफिक समूह"
 
-#: ktorrent/groups/groupview.cpp:139 ktorrent/view/view.cpp:219
+#: ktorrent/groups/groupview.cpp:142 ktorrent/view/view.cpp:219
 msgid "New Group"
 msgstr "नवा समूह"
 
-#: ktorrent/groups/groupview.cpp:143
+#: ktorrent/groups/groupview.cpp:146
 msgid "Edit Name"
 msgstr "नाम संपादन "
 
-#: ktorrent/groups/groupview.cpp:147
+#: ktorrent/groups/groupview.cpp:150
 msgid "Remove Group"
 msgstr "समूह हटाव"
 
-#: ktorrent/groups/groupview.cpp:151
+#: ktorrent/groups/groupview.cpp:154
 msgid "Group Policy"
 msgstr "समूह पालिसी"
 
-#: ktorrent/groups/groupview.cpp:317
+#: ktorrent/groups/groupview.cpp:321
 msgid "Please enter the group name."
 msgstr "किरपा करके समूह नांव भरव"
 
-#: ktorrent/groups/groupview.cpp:324 ktorrent/groups/groupview.cpp:445
+#: ktorrent/groups/groupview.cpp:328 ktorrent/groups/groupview.cpp:449
 #, kde-format
 msgid "The group %1 already exists."
 msgstr "समूह %1 पहिली से ही मौजूद हावे."
@@ -555,7 +554,7 @@ msgstr "(= %1/से)"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #. i18n: file: ktorrent/pref/qmpref.ui:27
 #. i18n: ectx: property (title), widget (QGroupBox, m_qm_group_box)
-#: ktorrent/pref/qmpref.cpp:25 ktorrent/torrentactivity.cpp:89 rc.cpp:869
+#: ktorrent/pref/qmpref.cpp:25 ktorrent/torrentactivity.cpp:95 rc.cpp:869
 #: rc.cpp:981
 msgid "Queue Manager"
 msgstr "कतार प्रबंधक"
@@ -777,195 +776,6 @@ msgstr "टोरेंट फाइल"
 msgid "Torrent filter"
 msgstr "टोरेंट फाइल"
 
-#. i18n: file: ktorrent/kttorrentactivityui.rc:75
-#. i18n: ectx: Menu (ColumnsMenu)
-#: ktorrent/view/view.cpp:94 rc.cpp:1294
-msgid "Columns"
-msgstr "खंभा"
-
-#: ktorrent/view/view.cpp:133
-#, fuzzy
-msgctxt "@action Start all selected torrents in the current tab"
-msgid "Start"
-msgstr "सुरू"
-
-#: ktorrent/view/view.cpp:134
-msgid "Start all selected torrents in the current tab"
-msgstr ""
-
-#: ktorrent/view/view.cpp:139
-#, fuzzy
-msgctxt "@action Force start all selected torrents in the current tab"
-msgid "Force Start"
-msgstr "सुरू"
-
-#: ktorrent/view/view.cpp:140
-msgid "Force start all selected torrents in the current tab"
-msgstr ""
-
-#: ktorrent/view/view.cpp:144
-#, fuzzy
-msgctxt "@action Stop all selected torrents in the current tab"
-msgid "Stop"
-msgstr "रुकव"
-
-#: ktorrent/view/view.cpp:145
-msgid "Stop all selected torrents in the current tab"
-msgstr ""
-
-#: ktorrent/view/view.cpp:150
-#, fuzzy
-msgctxt "@action Pause all selected torrents in the current tab"
-msgid "Pause"
-msgstr "ठहरव"
-
-#: ktorrent/view/view.cpp:151
-msgid "Pause all selected torrents in the current tab"
-msgstr ""
-
-#: ktorrent/view/view.cpp:155
-#, fuzzy
-msgctxt "@action Remove all selected torrents in the current tab"
-msgid "Remove"
-msgstr "हटाव"
-
-#: ktorrent/view/view.cpp:156
-msgid "Remove all selected torrents in the current tab"
-msgstr ""
-
-#: ktorrent/view/view.cpp:161
-#, fuzzy
-msgctxt "@action Start all torrents in the current tab"
-msgid "Start All"
-msgstr "सब्बो सुरू करव"
-
-#: ktorrent/view/view.cpp:162
-msgid "Start all torrents in the current tab"
-msgstr ""
-
-#: ktorrent/view/view.cpp:167
-#, fuzzy
-msgctxt "@action Stop all torrents in the current tab"
-msgid "Stop All"
-msgstr "सब्बो बन्द करव"
-
-#: ktorrent/view/view.cpp:168
-msgid "Stop all torrents in the current tab"
-msgstr ""
-
-#: ktorrent/view/view.cpp:173
-msgid "Remove Torrent and Data"
-msgstr "टोरेंट अउ डाटा ल मेटाव"
-
-#: ktorrent/view/view.cpp:178
-msgid "Rename Torrent"
-msgstr "टोरेंट नाम बदलव"
-
-#: ktorrent/view/view.cpp:182
-msgid "Add Peers"
-msgstr "पीअर जोड़व"
-
-#: ktorrent/view/view.cpp:186
-msgid "Manual Announce"
-msgstr ""
-
-#: ktorrent/view/view.cpp:191
-msgid "Scrape"
-msgstr "स्क्रेप"
-
-#: ktorrent/view/view.cpp:195
-msgid "Preview"
-msgstr "प्रिव्यू"
-
-#: ktorrent/view/view.cpp:199
-msgid "Data Directory"
-msgstr "डाटा डिरेक्टरी"
-
-#: ktorrent/view/view.cpp:203
-msgid "Temporary Directory"
-msgstr "अस्थाई डिरेक्टरी"
-
-#: ktorrent/view/view.cpp:207
-msgid "Move Data"
-msgstr "डाटा खिसकाव"
-
-#. i18n: file: plugins/stats/Settings.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, StatsSettingsWgt)
-#: ktorrent/view/view.cpp:211 rc.cpp:2352
-msgid "Settings"
-msgstr "सेटिंग"
-
-#: ktorrent/view/view.cpp:215
-msgid "Remove from Group"
-msgstr "समूह से मेटाव"
-
-#: ktorrent/view/view.cpp:223
-msgid "Check Data"
-msgstr "डाटा जांचव"
-
-#: ktorrent/view/view.cpp:224
-msgid "Check all the data of a torrent"
-msgstr ""
-
-#. i18n: file: ktorrent/kttorrentactivityui.rc:60
-#. i18n: ectx: Menu (OpenDirMenu)
-#: ktorrent/view/view.cpp:237 rc.cpp:1285
-msgid "Open Directory"
-msgstr "ओपन डिरेक्टरी"
-
-#. i18n: file: ktorrent/kttorrentactivityui.rc:66
-#. i18n: ectx: Menu (GroupsSubMenu)
-#: ktorrent/view/view.cpp:240 rc.cpp:1288
-msgid "Add to Group"
-msgstr "समूह जोड़व"
-
-#: ktorrent/view/view.cpp:243
-msgid "Copy Torrent URL"
-msgstr "टोरेंट यूआरएल के नकल बनाव"
-
-#: ktorrent/view/view.cpp:247
-#, fuzzy
-msgid "Export Torrent"
-msgstr "टोरेंट आयात करव"
-
-#: ktorrent/view/view.cpp:252
-msgid "Set the speed limits of individual torrents"
-msgstr ""
-
-#: ktorrent/view/view.cpp:461
-#, kde-format
-msgid ""
-"The torrent <b>%1</b> has not finished downloading, do you want to delete "
-"the incomplete data, too?"
-msgstr ""
-
-#: ktorrent/view/view.cpp:466
-msgid "Remove Download"
-msgstr "डाउनलोड मेटाव"
-
-#: ktorrent/view/view.cpp:467
-msgid "Delete Data"
-msgstr "डाटा मेटाव"
-
-#: ktorrent/view/view.cpp:468
-msgid "Keep Data"
-msgstr "डाटा रखव"
-
-#: ktorrent/view/view.cpp:493
-msgid ""
-"You will lose all the downloaded data of the following torrents. Are you "
-"sure you want to do this?"
-msgstr ""
-
-#: ktorrent/view/view.cpp:494
-msgid "Remove Torrent"
-msgstr "टोरेंट मेटाव"
-
-#: ktorrent/view/view.cpp:590 plugins/infowidget/fileview.cpp:348
-#: plugins/infowidget/fileview.cpp:369
-msgid "Select a directory to move the data to."
-msgstr ""
-
 #: ktorrent/view/viewmodel.cpp:490 plugins/infowidget/peerviewmodel.cpp:266
 #: plugins/infowidget/webseedsmodel.cpp:126
 msgid "Downloaded"
@@ -1104,6 +914,195 @@ msgstr "%1<br>यूआरएल: <b>%2</b>"
 
 #: ktorrent/view/viewmodel.cpp:581
 msgid "<br/><br/>Unable to contact a tracker."
+msgstr ""
+
+#. i18n: file: ktorrent/kttorrentactivityui.rc:75
+#. i18n: ectx: Menu (ColumnsMenu)
+#: ktorrent/view/view.cpp:94 rc.cpp:1294
+msgid "Columns"
+msgstr "खंभा"
+
+#: ktorrent/view/view.cpp:133
+#, fuzzy
+msgctxt "@action Start all selected torrents in the current tab"
+msgid "Start"
+msgstr "सुरू"
+
+#: ktorrent/view/view.cpp:134
+msgid "Start all selected torrents in the current tab"
+msgstr ""
+
+#: ktorrent/view/view.cpp:139
+#, fuzzy
+msgctxt "@action Force start all selected torrents in the current tab"
+msgid "Force Start"
+msgstr "सुरू"
+
+#: ktorrent/view/view.cpp:140
+msgid "Force start all selected torrents in the current tab"
+msgstr ""
+
+#: ktorrent/view/view.cpp:144
+#, fuzzy
+msgctxt "@action Stop all selected torrents in the current tab"
+msgid "Stop"
+msgstr "रुकव"
+
+#: ktorrent/view/view.cpp:145
+msgid "Stop all selected torrents in the current tab"
+msgstr ""
+
+#: ktorrent/view/view.cpp:150
+#, fuzzy
+msgctxt "@action Pause all selected torrents in the current tab"
+msgid "Pause"
+msgstr "ठहरव"
+
+#: ktorrent/view/view.cpp:151
+msgid "Pause all selected torrents in the current tab"
+msgstr ""
+
+#: ktorrent/view/view.cpp:155
+#, fuzzy
+msgctxt "@action Remove all selected torrents in the current tab"
+msgid "Remove"
+msgstr "हटाव"
+
+#: ktorrent/view/view.cpp:156
+msgid "Remove all selected torrents in the current tab"
+msgstr ""
+
+#: ktorrent/view/view.cpp:161
+#, fuzzy
+msgctxt "@action Start all torrents in the current tab"
+msgid "Start All"
+msgstr "सब्बो सुरू करव"
+
+#: ktorrent/view/view.cpp:162
+msgid "Start all torrents in the current tab"
+msgstr ""
+
+#: ktorrent/view/view.cpp:167
+#, fuzzy
+msgctxt "@action Stop all torrents in the current tab"
+msgid "Stop All"
+msgstr "सब्बो बन्द करव"
+
+#: ktorrent/view/view.cpp:168
+msgid "Stop all torrents in the current tab"
+msgstr ""
+
+#: ktorrent/view/view.cpp:173
+msgid "Remove Torrent and Data"
+msgstr "टोरेंट अउ डाटा ल मेटाव"
+
+#: ktorrent/view/view.cpp:178
+msgid "Rename Torrent"
+msgstr "टोरेंट नाम बदलव"
+
+#: ktorrent/view/view.cpp:182
+msgid "Add Peers"
+msgstr "पीअर जोड़व"
+
+#: ktorrent/view/view.cpp:186
+msgid "Manual Announce"
+msgstr ""
+
+#: ktorrent/view/view.cpp:191
+msgid "Scrape"
+msgstr "स्क्रेप"
+
+#: ktorrent/view/view.cpp:195
+msgid "Preview"
+msgstr "प्रिव्यू"
+
+#: ktorrent/view/view.cpp:199
+msgid "Data Directory"
+msgstr "डाटा डिरेक्टरी"
+
+#: ktorrent/view/view.cpp:203
+msgid "Temporary Directory"
+msgstr "अस्थाई डिरेक्टरी"
+
+#: ktorrent/view/view.cpp:207
+msgid "Move Data"
+msgstr "डाटा खिसकाव"
+
+#. i18n: file: plugins/stats/Settings.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, StatsSettingsWgt)
+#: ktorrent/view/view.cpp:211 rc.cpp:2352
+msgid "Settings"
+msgstr "सेटिंग"
+
+#: ktorrent/view/view.cpp:215
+msgid "Remove from Group"
+msgstr "समूह से मेटाव"
+
+#: ktorrent/view/view.cpp:223
+msgid "Check Data"
+msgstr "डाटा जांचव"
+
+#: ktorrent/view/view.cpp:224
+msgid "Check all the data of a torrent"
+msgstr ""
+
+#. i18n: file: ktorrent/kttorrentactivityui.rc:60
+#. i18n: ectx: Menu (OpenDirMenu)
+#: ktorrent/view/view.cpp:240 rc.cpp:1285
+msgid "Open Directory"
+msgstr "ओपन डिरेक्टरी"
+
+#. i18n: file: ktorrent/kttorrentactivityui.rc:66
+#. i18n: ectx: Menu (GroupsSubMenu)
+#: ktorrent/view/view.cpp:243 rc.cpp:1288
+msgid "Add to Group"
+msgstr "समूह जोड़व"
+
+#: ktorrent/view/view.cpp:246
+msgid "Copy Torrent URL"
+msgstr "टोरेंट यूआरएल के नकल बनाव"
+
+#: ktorrent/view/view.cpp:250
+#, fuzzy
+msgid "Export Torrent"
+msgstr "टोरेंट आयात करव"
+
+#: ktorrent/view/view.cpp:255
+msgid "Set the speed limits of individual torrents"
+msgstr ""
+
+#: ktorrent/view/view.cpp:464
+#, kde-format
+msgid ""
+"The torrent <b>%1</b> has not finished downloading, do you want to delete "
+"the incomplete data, too?"
+msgstr ""
+
+#: ktorrent/view/view.cpp:469
+msgid "Remove Download"
+msgstr "डाउनलोड मेटाव"
+
+#: ktorrent/view/view.cpp:470
+msgid "Delete Data"
+msgstr "डाटा मेटाव"
+
+#: ktorrent/view/view.cpp:471
+msgid "Keep Data"
+msgstr "डाटा रखव"
+
+#: ktorrent/view/view.cpp:496
+msgid ""
+"You will lose all the downloaded data of the following torrents. Are you "
+"sure you want to do this?"
+msgstr ""
+
+#: ktorrent/view/view.cpp:497
+msgid "Remove Torrent"
+msgstr "टोरेंट मेटाव"
+
+#: ktorrent/view/view.cpp:593 plugins/infowidget/fileview.cpp:348
+#: plugins/infowidget/fileview.cpp:369
+msgid "Select a directory to move the data to."
 msgstr ""
 
 #: ktorrent/statusbar.cpp:39 ktorrent/statusbar.cpp:71
@@ -1662,78 +1661,6 @@ msgstr ""
 msgid "Silently open torrent given on URL"
 msgstr ""
 
-#. i18n: file: ktorrent/kttorrentactivityui.rc:7
-#. i18n: ectx: Menu (Torrents)
-#. i18n: file: ktorrent/kttorrentactivityui.rc:81
-#. i18n: ectx: ToolBar (TorrentsToolBar)
-#. i18n: file: ktorrent/kttorrentactivityui.rc:7
-#. i18n: ectx: Menu (Torrents)
-#. i18n: file: ktorrent/kttorrentactivityui.rc:81
-#. i18n: ectx: ToolBar (TorrentsToolBar)
-#: ktorrent/torrentactivity.cpp:48 libktcore/interfaces/functions.cpp:179
-#: rc.cpp:1273 rc.cpp:1297
-#, fuzzy
-msgid "Torrents"
-msgstr "टोरेंट"
-
-#: ktorrent/torrentactivity.cpp:89
-msgid "Widget to manage the torrent queue"
-msgstr ""
-
-#: ktorrent/torrentactivity.cpp:92
-#: plugins/magnetgenerator/magnetgeneratorplugin.cpp:143
-msgid "Magnet"
-msgstr ""
-
-#: ktorrent/torrentactivity.cpp:93
-msgid "Displays the currently downloading magnet links"
-msgstr ""
-
-#: ktorrent/torrentactivity.cpp:108
-msgid "Start All"
-msgstr "सब्बो सुरू करव"
-
-#: ktorrent/torrentactivity.cpp:109
-msgid "Start all torrents"
-msgstr "सब्बो टोरेंट सुरू करव"
-
-#: ktorrent/torrentactivity.cpp:113
-msgid "Stop All"
-msgstr "सब्बो बन्द करव"
-
-#: ktorrent/torrentactivity.cpp:114
-msgid "Stop all torrents"
-msgstr "सब्बो टोरेंट बन्द करव"
-
-#: ktorrent/torrentactivity.cpp:118
-#, fuzzy
-msgid "Suspend Torrents"
-msgstr "केटोरेंट ठहराव"
-
-#. i18n: file: plugins/bwscheduler/edititemdlg.ui:109
-#. i18n: ectx: property (text), widget (QCheckBox, m_suspended)
-#: ktorrent/torrentactivity.cpp:120 rc.cpp:1547
-#, fuzzy
-msgid "Suspend all running torrents"
-msgstr "सब्बो टोरेंट बन्द करव"
-
-#: ktorrent/torrentactivity.cpp:125
-msgid "Group View Visible"
-msgstr ""
-
-#: ktorrent/torrentactivity.cpp:126
-msgid "Show or hide the group view"
-msgstr ""
-
-#: ktorrent/torrentactivity.cpp:130
-#, fuzzy
-msgid "Filter Torrents"
-msgstr "सब्बो टोरेंट"
-
-#: ktorrent/torrentactivity.cpp:131
-msgid "Filter torrents based on filter string"
-msgstr ""
-
 #: ktorrent/trayicon.cpp:111
 msgid "Set max upload speed"
 msgstr ""
@@ -1843,6 +1770,83 @@ msgstr "गति सीमा किबा/से मं"
 msgid "Unlimited"
 msgstr "असीमित"
 
+#. i18n: file: ktorrent/kttorrentactivityui.rc:7
+#. i18n: ectx: Menu (Torrents)
+#. i18n: file: ktorrent/kttorrentactivityui.rc:81
+#. i18n: ectx: ToolBar (TorrentsToolBar)
+#. i18n: file: ktorrent/kttorrentactivityui.rc:7
+#. i18n: ectx: Menu (Torrents)
+#. i18n: file: ktorrent/kttorrentactivityui.rc:81
+#. i18n: ectx: ToolBar (TorrentsToolBar)
+#: ktorrent/torrentactivity.cpp:51 libktcore/interfaces/functions.cpp:179
+#: rc.cpp:1273 rc.cpp:1297
+#, fuzzy
+msgid "Torrents"
+msgstr "टोरेंट"
+
+#: ktorrent/torrentactivity.cpp:95
+msgid "Widget to manage the torrent queue"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:98
+#: plugins/magnetgenerator/magnetgeneratorplugin.cpp:143
+msgid "Magnet"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:99
+msgid "Displays the currently downloading magnet links"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:114
+msgid "Start All"
+msgstr "सब्बो सुरू करव"
+
+#: ktorrent/torrentactivity.cpp:115
+msgid "Start all torrents"
+msgstr "सब्बो टोरेंट सुरू करव"
+
+#: ktorrent/torrentactivity.cpp:119
+msgid "Stop All"
+msgstr "सब्बो बन्द करव"
+
+#: ktorrent/torrentactivity.cpp:120
+msgid "Stop all torrents"
+msgstr "सब्बो टोरेंट बन्द करव"
+
+#: ktorrent/torrentactivity.cpp:124
+#, fuzzy
+msgid "Suspend Torrents"
+msgstr "केटोरेंट ठहराव"
+
+#. i18n: file: plugins/bwscheduler/edititemdlg.ui:109
+#. i18n: ectx: property (text), widget (QCheckBox, m_suspended)
+#: ktorrent/torrentactivity.cpp:126 rc.cpp:1547
+#, fuzzy
+msgid "Suspend all running torrents"
+msgstr "सब्बो टोरेंट बन्द करव"
+
+#: ktorrent/torrentactivity.cpp:131
+msgid "Group View Visible"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:132
+msgid "Show or hide the group view"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:136
+#, fuzzy
+msgid "Filter Torrents"
+msgstr "सब्बो टोरेंट"
+
+#: ktorrent/torrentactivity.cpp:137
+msgid "Filter torrents based on filter string"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:142
+#, fuzzy
+msgid "Switch To View"
+msgstr "मिलत ट्रेकर"
+
 #: ktupnptest/main.cpp:40
 msgid "KTUPnPTest"
 msgstr ""
@@ -1863,57 +1867,57 @@ msgstr ""
 msgid "Maximum seed time reached."
 msgstr ""
 
-#: libktcore/groups/ungroupedgroup.cpp:27
-msgid "Ungrouped Torrents"
-msgstr ""
-
-#: libktcore/groups/groupmanager.cpp:100
+#: libktcore/groups/groupmanager.cpp:102
 msgid "Uploads"
 msgstr "अपलोड"
 
-#: libktcore/groups/groupmanager.cpp:102
+#: libktcore/groups/groupmanager.cpp:104
 msgid "Running Uploads"
 msgstr "अपलोड चलत हे"
 
-#: libktcore/groups/groupmanager.cpp:104
+#: libktcore/groups/groupmanager.cpp:106
 msgid "Not Running Uploads"
 msgstr ""
 
-#: libktcore/groups/groupmanager.cpp:108
+#: libktcore/groups/groupmanager.cpp:110
 msgid "Downloads"
 msgstr "डाउनलोड्स"
 
-#: libktcore/groups/groupmanager.cpp:110
+#: libktcore/groups/groupmanager.cpp:112
 msgid "Running Downloads"
 msgstr "डाउनलोड चलत हे"
 
-#: libktcore/groups/groupmanager.cpp:112
+#: libktcore/groups/groupmanager.cpp:114
 msgid "Not Running Downloads"
 msgstr "डाउनलोड नइ चलत हे"
 
-#: libktcore/groups/groupmanager.cpp:116
+#: libktcore/groups/groupmanager.cpp:118
 msgid "Active Torrents"
 msgstr "सक्रिय टोरेंट"
 
-#: libktcore/groups/groupmanager.cpp:118
+#: libktcore/groups/groupmanager.cpp:120
 msgid "Active Downloads"
 msgstr "सक्रिय डाउनलोड"
 
-#: libktcore/groups/groupmanager.cpp:120
+#: libktcore/groups/groupmanager.cpp:122
 msgid "Active Uploads"
 msgstr "सक्रिय अपलोड"
 
-#: libktcore/groups/groupmanager.cpp:122
+#: libktcore/groups/groupmanager.cpp:124
 msgid "Passive Torrents"
 msgstr "पैसिव टोरेंट"
 
-#: libktcore/groups/groupmanager.cpp:124
+#: libktcore/groups/groupmanager.cpp:126
 msgid "Passive Downloads"
 msgstr "पैसिव डाउनलोड"
 
-#: libktcore/groups/groupmanager.cpp:126
+#: libktcore/groups/groupmanager.cpp:128
 msgid "Passive Uploads"
 msgstr "पैसिव अपलोड"
+
+#: libktcore/groups/ungroupedgroup.cpp:27
+msgid "Ungrouped Torrents"
+msgstr ""
 
 #: libktcore/interfaces/functions.cpp:181
 #: plugins/bwscheduler/scheduleeditor.cpp:141
@@ -3017,20 +3021,20 @@ msgstr "खेले बर तैयार"
 msgid "KTorrent is playing a video."
 msgstr ""
 
-#: plugins/scanfolder/scanfolderprefpage.cpp:37
-#: plugins/scanfolder/scanfolderplugin.cpp:64
-#: plugins/scanfolder/scanfolderplugin.cpp:77
-#, fuzzy
-msgctxt "plugin name"
-msgid "Scan Folder"
-msgstr "फोल्डर स्कैन करव"
-
 #: plugins/scanfolder/scanfolder.cpp:69 plugins/scanfolder/scanthread.cpp:194
 #: plugins/scanfolder/torrentloadqueue.cpp:166
 #: plugins/scanfolder/torrentloadqueue.cpp:167
 #: plugins/scanfolder/torrentloadqueue.cpp:170
 msgid "loaded"
 msgstr "लोड होइस"
+
+#: plugins/scanfolder/scanfolderplugin.cpp:64
+#: plugins/scanfolder/scanfolderplugin.cpp:77
+#: plugins/scanfolder/scanfolderprefpage.cpp:37
+#, fuzzy
+msgctxt "plugin name"
+msgid "Scan Folder"
+msgstr "फोल्डर स्कैन करव"
 
 #. i18n: file: plugins/scripting/ktscriptingpluginui.rc:4
 #. i18n: ectx: ToolBar (ScriptingToolbar)
