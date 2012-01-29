@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: okular\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-23 04:27+0100\n"
+"POT-Creation-Date: 2012-01-29 03:02+0100\n"
 "PO-Revision-Date: 2009-02-26 16:58+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -438,35 +438,45 @@ msgstr "फाइल आकार"
 msgid "Page Size"
 msgstr "पेज आकार"
 
-#: ui/annotationmodel.cpp:297 part.cpp:2110
+#: ui/annotationmodel.cpp:297 part.cpp:2108
 #, kde-format
 msgid "Page %1"
 msgstr "पेज %1"
 
-#: ui/annotationpopup.cpp:49
-#, kde-format
-msgid "Annotation"
-msgid_plural "%1 Annotations"
-msgstr[0] "एनोटेसन"
-msgstr[1] "%1 एनोटेसन"
+#: ui/annotwindow.cpp:52
+msgid "Close this note"
+msgstr "ये नोट ल बंद करव"
 
-#: ui/annotationpopup.cpp:50
-msgid "&Open Pop-up Note"
-msgstr "पाप अप नोट खोलव (&O)"
+#: ui/annotwindow.cpp:94 ui/findbar.cpp:64
+msgid "Options"
+msgstr "विकल्प"
 
-#: ui/annotationpopup.cpp:52
-msgid "&Delete"
-msgstr "मेटाव (&D)"
+#: ui/annotwindow.cpp:105
+msgid ""
+"This annotation may contain LaTeX code.\n"
+"Click here to render."
+msgstr ""
 
-#: ui/annotationpopup.cpp:58 ui/propertiesdialog.cpp:49 part.cpp:630
-msgid "&Properties"
-msgstr "गुन (&P)"
+#: ui/annotwindow.cpp:322
+msgid "Cannot find latex executable."
+msgstr ""
 
-#: ui/annotationpopup.cpp:65
-#, kde-format
-msgctxt "%1 is the name of the file to save"
-msgid "&Save '%1'..."
-msgstr "सहेजव '%1'...(&S)"
+#: ui/annotwindow.cpp:322 ui/annotwindow.cpp:327 ui/annotwindow.cpp:332
+#: ui/annotwindow.cpp:337
+msgid "LaTeX rendering failed"
+msgstr ""
+
+#: ui/annotwindow.cpp:327
+msgid "Cannot find dvipng executable."
+msgstr ""
+
+#: ui/annotwindow.cpp:332
+msgid "A problem occurred during the execution of the 'latex' command."
+msgstr ""
+
+#: ui/annotwindow.cpp:337
+msgid "A problem occurred during the execution of the 'dvipng' command."
+msgstr ""
 
 #: ui/pageview.cpp:401
 msgid "Zoom"
@@ -614,116 +624,116 @@ msgstr "ऊपर स्क्राल करव"
 msgid "Scroll Down"
 msgstr "नीचे स्क्राल करव"
 
-#: ui/pageview.cpp:876
+#: ui/pageview.cpp:884
 #, kde-format
 msgid " Loaded a one-page document."
 msgid_plural " Loaded a %1-page document."
 msgstr[0] "%1 पेज के कागद लोड करिस."
 msgstr[1] "%1 पेज के कागद लोड करिस."
 
-#: ui/pageview.cpp:2224
+#: ui/pageview.cpp:2234
 msgid "Follow This Link"
 msgstr "ये संकली मं जाव"
 
-#: ui/pageview.cpp:2227
+#: ui/pageview.cpp:2237
 msgid "Copy Link Address"
 msgstr "संकली पता नकल करव"
 
-#: ui/pageview.cpp:2369
+#: ui/pageview.cpp:2379
 #, kde-format
 msgid "Text (1 character)"
 msgid_plural "Text (%1 characters)"
 msgstr[0] "पाठ (%1 अक्छर)"
 msgstr[1] "पाठ (%1 अक्छर)"
 
-#: ui/pageview.cpp:2370 ui/pageview.cpp:2385
+#: ui/pageview.cpp:2380 ui/pageview.cpp:2395
 msgid "Copy to Clipboard"
 msgstr "क्लिपबोर्ड मं नकल बनाव"
 
-#: ui/pageview.cpp:2375 ui/pageview.cpp:2526 ui/pageview.cpp:2632
+#: ui/pageview.cpp:2385 ui/pageview.cpp:2536 ui/pageview.cpp:2642
 msgid "Copy forbidden by DRM"
 msgstr "डीआरएम से नकल करे जाना प्रतिबंधित हे"
 
-#: ui/pageview.cpp:2378 ui/pageview.cpp:2628
+#: ui/pageview.cpp:2388 ui/pageview.cpp:2638
 msgid "Speak Text"
 msgstr "पाठ बोलव"
 
-#: ui/pageview.cpp:2384
+#: ui/pageview.cpp:2394
 #, kde-format
 msgid "Image (%1 by %2 pixels)"
 msgstr "फोटू (%1 x %2 पिक्सेल्स)"
 
-#: ui/pageview.cpp:2386
+#: ui/pageview.cpp:2396
 msgid "Save to File..."
 msgstr "फाइल मं सहेजव..."
 
-#: ui/pageview.cpp:2408
+#: ui/pageview.cpp:2418
 #, kde-format
 msgid "Image [%1x%2] copied to clipboard."
 msgstr "फोटू [%1x%2] क्लिपबोर्ड मं नकल करिस."
 
-#: ui/pageview.cpp:2416
+#: ui/pageview.cpp:2426
 msgid "File not saved."
 msgstr "फाइल ल सहेजे नइ गिस."
 
-#: ui/pageview.cpp:2426
+#: ui/pageview.cpp:2436
 #, kde-format
 msgid "Image [%1x%2] saved to %3 file."
 msgstr "फोटू [%1x%2] ल %3 फाइल मं सहेजिस."
 
-#: ui/pageview.cpp:2625
+#: ui/pageview.cpp:2635
 msgid "Copy Text"
 msgstr "पाठ के नकल बनाव"
 
 #. i18n: file: conf/dlggeneralbase.ui:287
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_ZoomMode)
-#: ui/pageview.cpp:3405 part.cpp:2116 rc.cpp:311
+#: ui/pageview.cpp:3415 part.cpp:2114 rc.cpp:311
 msgid "Fit Width"
 msgstr "चौड़ाई जमाव"
 
 #. i18n: file: conf/dlggeneralbase.ui:292
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_ZoomMode)
-#: ui/pageview.cpp:3405 rc.cpp:314
+#: ui/pageview.cpp:3415 rc.cpp:314
 msgid "Fit Page"
 msgstr "पेज मं जमाव"
 
-#: ui/pageview.cpp:3533
+#: ui/pageview.cpp:3543
 msgid "Hide Forms"
 msgstr "फारम लुकाव"
 
-#: ui/pageview.cpp:3537
+#: ui/pageview.cpp:3547
 msgid "Show Forms"
 msgstr "फारम देखाव"
 
-#: ui/pageview.cpp:3586
+#: ui/pageview.cpp:3596
 #, fuzzy, kde-format
 #| msgid "Searching for %1"
 msgid "Search for '%1' with"
 msgstr "%1 बर खोजत हे"
 
-#: ui/pageview.cpp:3601
+#: ui/pageview.cpp:3611
 #, fuzzy
 #| msgid "Configure Viewer..."
 msgid "Configure Web Shortcuts..."
 msgstr "प्रदर्सक कान्फिगर करव..."
 
-#: ui/pageview.cpp:4040
+#: ui/pageview.cpp:4050
 msgid "Welcome"
 msgstr "सुस्वागतम"
 
-#: ui/pageview.cpp:4143
+#: ui/pageview.cpp:4153
 msgid "Select zooming area. Right-click to zoom out."
 msgstr "जूमिंग छेत्र चुनव. जूम-आउट होए बर किलिक करव."
 
-#: ui/pageview.cpp:4155
+#: ui/pageview.cpp:4165
 msgid "Draw a rectangle around the text/graphics to copy."
 msgstr "नकल करे बर पाठ/चित्र के चारों तरफ एक आयताकार बनाव."
 
-#: ui/pageview.cpp:4167
+#: ui/pageview.cpp:4177
 msgid "Select text"
 msgstr "पाठ चुनव"
 
-#: ui/pageview.cpp:4180
+#: ui/pageview.cpp:4190
 #, fuzzy
 #| msgid "Draw a rectangle around the text/graphics to copy."
 msgid ""
@@ -731,11 +741,11 @@ msgid ""
 "Esc to clear."
 msgstr "नकल करे बर पाठ/चित्र के चारों तरफ एक आयताकार बनाव."
 
-#: ui/pageview.cpp:4213
+#: ui/pageview.cpp:4223
 msgid "Annotations author"
 msgstr "एन्नोटेसन लेखक"
 
-#: ui/pageview.cpp:4214
+#: ui/pageview.cpp:4224
 msgid "Please insert your name or initials:"
 msgstr "किरपा करके, अपन नाम या आद्याक्छर भरव:"
 
@@ -894,10 +904,6 @@ msgstr "पिछला"
 msgid "Jump to previous match"
 msgstr "पिछला मेल-खाते मं जाव"
 
-#: ui/findbar.cpp:64 ui/annotwindow.cpp:93
-msgid "Options"
-msgstr "विकल्प"
-
 #: ui/findbar.cpp:65
 msgid "Modify search behavior"
 msgstr "खोज बर्ताव सुधारव"
@@ -974,6 +980,31 @@ msgctxt ""
 msgid "Giving a presentation"
 msgstr "प्रस्तुतीकरन देना"
 
+#: ui/annotationpopup.cpp:49
+#, kde-format
+msgid "Annotation"
+msgid_plural "%1 Annotations"
+msgstr[0] "एनोटेसन"
+msgstr[1] "%1 एनोटेसन"
+
+#: ui/annotationpopup.cpp:50
+msgid "&Open Pop-up Note"
+msgstr "पाप अप नोट खोलव (&O)"
+
+#: ui/annotationpopup.cpp:52
+msgid "&Delete"
+msgstr "मेटाव (&D)"
+
+#: ui/annotationpopup.cpp:59 ui/propertiesdialog.cpp:49 part.cpp:628
+msgid "&Properties"
+msgstr "गुन (&P)"
+
+#: ui/annotationpopup.cpp:66
+#, kde-format
+msgctxt "%1 is the name of the file to save"
+msgid "&Save '%1'..."
+msgstr "सहेजव '%1'...(&S)"
+
 #: ui/sidebar.cpp:675 ui/annotationwidgets.cpp:268 shell/main.cpp:42
 #: part.cpp:155
 msgid "Okular"
@@ -994,37 +1025,6 @@ msgstr "सामान्य चिनहा"
 #: ui/sidebar.cpp:694
 msgid "Large Icons"
 msgstr "बड़े चिनहा"
-
-#: ui/annotwindow.cpp:51
-msgid "Close this note"
-msgstr "ये नोट ल बंद करव"
-
-#: ui/annotwindow.cpp:104
-msgid ""
-"This annotation may contain LaTeX code.\n"
-"Click here to render."
-msgstr ""
-
-#: ui/annotwindow.cpp:312
-msgid "Cannot find latex executable."
-msgstr ""
-
-#: ui/annotwindow.cpp:312 ui/annotwindow.cpp:317 ui/annotwindow.cpp:322
-#: ui/annotwindow.cpp:327
-msgid "LaTeX rendering failed"
-msgstr ""
-
-#: ui/annotwindow.cpp:317
-msgid "Cannot find dvipng executable."
-msgstr ""
-
-#: ui/annotwindow.cpp:322
-msgid "A problem occurred during the execution of the 'latex' command."
-msgstr ""
-
-#: ui/annotwindow.cpp:327
-msgid "A problem occurred during the execution of the 'dvipng' command."
-msgstr ""
 
 #: ui/thumbnaillist.cpp:1014
 msgid "Show bookmarked pages only"
@@ -1356,11 +1356,11 @@ msgstr "सिरिफ अभी हाल के कागद"
 msgid "Go to This Bookmark"
 msgstr "ये निसानी मं जाव"
 
-#: ui/bookmarklist.cpp:247 part.cpp:561 part.cpp:1756
+#: ui/bookmarklist.cpp:247 part.cpp:559 part.cpp:1754
 msgid "Rename Bookmark"
 msgstr "निसानी ल नवा नाम देव"
 
-#: ui/bookmarklist.cpp:248 part.cpp:1591 part.cpp:2112
+#: ui/bookmarklist.cpp:248 part.cpp:1589 part.cpp:2110
 msgid "Remove Bookmark"
 msgstr " निसानी  मेटाव"
 
@@ -1705,282 +1705,282 @@ msgid ""
 "View -> Show Forms."
 msgstr ""
 
-#: part.cpp:521
+#: part.cpp:519
 msgctxt "Previous page"
 msgid "Previous"
 msgstr "पिछला"
 
-#: part.cpp:522
+#: part.cpp:520
 msgid "Go back to the Previous Page"
 msgstr "पिछले पेज मं जाव"
 
-#: part.cpp:523
+#: part.cpp:521
 msgid "Moves to the previous page of the document"
 msgstr "कागद के पिछले पेज मं जाथे "
 
-#: part.cpp:532
+#: part.cpp:530
 msgctxt "Next page"
 msgid "Next"
 msgstr "अगला"
 
-#: part.cpp:533
+#: part.cpp:531
 msgid "Advance to the Next Page"
 msgstr "अगले पेज मं जाव"
 
-#: part.cpp:534
+#: part.cpp:532
 msgid "Moves to the next page of the document"
 msgstr "कागद के अगले पेज मं जाथे "
 
-#: part.cpp:544
+#: part.cpp:542
 #, fuzzy
 #| msgid "Reloading the document..."
 msgid "Beginning of the document"
 msgstr "कागद ल रीलोड करत हे..."
 
-#: part.cpp:545
+#: part.cpp:543
 #, fuzzy
 #| msgid "Moves to the next page of the document"
 msgid "Moves to the beginning of the document"
 msgstr "कागद के अगले पेज मं जाथे "
 
-#: part.cpp:549
+#: part.cpp:547
 #, fuzzy
 #| msgid "Reloading the document..."
 msgid "End of the document"
 msgstr "कागद ल रीलोड करत हे..."
 
-#: part.cpp:550
+#: part.cpp:548
 #, fuzzy
 #| msgid "Moves to the next page of the document"
 msgid "Moves to the end of the document"
 msgstr "कागद के अगले पेज मं जाथे "
 
-#: part.cpp:563
+#: part.cpp:561
 #, fuzzy
 #| msgid "Reload the current document from disk."
 msgid "Rename the current page bookmark"
 msgstr "अभी हाल के कागद डिस्क से फिर से  लोड करव"
 
-#: part.cpp:567
+#: part.cpp:565
 msgid "Previous Bookmark"
 msgstr "पिछला  निसानी "
 
-#: part.cpp:569
+#: part.cpp:567
 msgid "Go to the previous bookmarked page"
 msgstr "पिछले निसानी पेज मं जाव"
 
-#: part.cpp:573
+#: part.cpp:571
 msgid "Next Bookmark"
 msgstr "अगला  निसानी "
 
-#: part.cpp:575
+#: part.cpp:573
 msgid "Go to the next bookmarked page"
 msgstr "अगले निसानी पेज मं जाव"
 
-#: part.cpp:601
+#: part.cpp:599
 msgid "Configure Okular..."
 msgstr "ओकुलर कान्फिगर करव..."
 
-#: part.cpp:606
+#: part.cpp:604
 msgid "Configure Viewer..."
 msgstr "प्रदर्सक कान्फिगर करव..."
 
-#: part.cpp:613
+#: part.cpp:611
 #, fuzzy
 #| msgid "Configure Backends..."
 msgid "Configure Viewer Backends..."
 msgstr "बैकएन्ड्स कान्फिगर करव..."
 
-#: part.cpp:617
+#: part.cpp:615
 msgid "Configure Backends..."
 msgstr "बैकएन्ड्स कान्फिगर करव..."
 
-#: part.cpp:644
+#: part.cpp:642
 msgid "About Backend"
 msgstr "बैकएन्ड के बारे में..."
 
-#: part.cpp:649
+#: part.cpp:647
 msgid "Reloa&d"
 msgstr "फिर से लोड करव (&d)"
 
-#: part.cpp:651
+#: part.cpp:649
 msgid "Reload the current document from disk."
 msgstr "अभी हाल के कागद डिस्क से फिर से  लोड करव"
 
-#: part.cpp:656
+#: part.cpp:654
 msgid "Close &Find Bar"
 msgstr "खोज पट्टी बन्द करव (&F)"
 
-#: part.cpp:690
+#: part.cpp:688
 msgid "Save &Copy As..."
 msgstr "नकल अइसन सहेजव... (&C)"
 
-#: part.cpp:699
+#: part.cpp:697
 msgid "Show &Navigation Panel"
 msgstr "नेविगेसन पेनल देखाव (&N)"
 
-#: part.cpp:707
+#: part.cpp:705
 msgid "Show &Page Bar"
 msgstr ""
 
-#: part.cpp:713
+#: part.cpp:711
 msgid "&Embedded Files"
 msgstr "भीतर मं बने फाइल मन ल (&E)"
 
-#: part.cpp:719
+#: part.cpp:717
 msgid "E&xport As"
 msgstr "ये रूप मं निर्यात करव (&x)"
 
-#: part.cpp:729
+#: part.cpp:727
 msgctxt "A document format, Okular-specific"
 msgid "Document Archive"
 msgstr "कागद आर्काइव"
 
-#: part.cpp:735
+#: part.cpp:733
 msgid "P&resentation"
 msgstr "प्रेजेन्टेसन (&r)"
 
-#: part.cpp:742
+#: part.cpp:740
 msgid "&Import PostScript as PDF..."
 msgstr "पोस्ट-स्क्रिप्ट ल पीडीएफ के रूप मं आयात करव...(&I)"
 
-#: part.cpp:747
+#: part.cpp:745
 msgid "&Get Books From Internet..."
 msgstr "इंटरनेट से किताबें लाव... (&G)"
 
-#: part.cpp:754
+#: part.cpp:752
 msgid "Switch Blackscreen Mode"
 msgstr "ब्लेकस्क्रीन मोड मं स्विच करव"
 
-#: part.cpp:759
+#: part.cpp:757
 msgid "Toggle Drawing Mode"
 msgstr "ड्राइंग मोड टागल करव"
 
-#: part.cpp:763
+#: part.cpp:761
 msgid "Erase Drawings"
 msgstr "ड्राइंग मेटाव"
 
-#: part.cpp:901
+#: part.cpp:899
 #, fuzzy, kde-format
 #| msgid "Could not open \"%1\" for writing. File was not saved."
 msgid "Could not open '%1'. File does not exist"
 msgstr "लिखे बर \"%1\" ल खोल नइ सकिस. फाइल सहेजे नइ गे हे."
 
-#: part.cpp:936
+#: part.cpp:934
 #, kde-format
 msgid "The loading of %1 has been canceled."
 msgstr ""
 
-#: part.cpp:951
+#: part.cpp:949
 #, kde-format
 msgid "Could not open %1. Reason: %2"
 msgstr "%1 ल  खोले नइ जा सकिस. कारन: %2"
 
-#: part.cpp:985
+#: part.cpp:983
 #, fuzzy
 #| msgid "Configure Backends"
 msgid "Configure Viewer Backends"
 msgstr "बैकएन्ड्स कान्फिगर करव"
 
-#: part.cpp:989
+#: part.cpp:987
 msgid "Configure Backends"
 msgstr "बैकएन्ड्स कान्फिगर करव"
 
-#: part.cpp:1081
+#: part.cpp:1079
 msgid ""
 "The program \"ps2pdf\" was not found, so Okular can not import PS files "
 "using it."
 msgstr ""
 
-#: part.cpp:1081
+#: part.cpp:1079
 msgid "ps2pdf not found"
 msgstr "ps2pdf नइ मिलिस"
 
-#: part.cpp:1100
+#: part.cpp:1098
 msgid "Importing PS file as PDF (this may take a while)..."
 msgstr "पीएस फाइल ल पीडीएफ बर आयात करत हे (ये मां कुछ समय लग सकथे )..."
 
-#: part.cpp:1229
+#: part.cpp:1227
 msgid ""
 "The document requested to be launched in presentation mode.\n"
 "Do you want to allow it?"
 msgstr ""
 
-#: part.cpp:1231
+#: part.cpp:1229
 msgid "Presentation Mode"
 msgstr "प्रस्तुतीकरन मोड"
 
-#: part.cpp:1232
+#: part.cpp:1230
 msgid "Allow"
 msgstr "स्वीकारव"
 
-#: part.cpp:1232
+#: part.cpp:1230
 msgid "Allow the presentation mode"
 msgstr "प्रस्तुतीकरन मोड स्वीकारव"
 
-#: part.cpp:1233
+#: part.cpp:1231
 msgid "Do Not Allow"
 msgstr "अनुमति नइ देव"
 
-#: part.cpp:1233
+#: part.cpp:1231
 msgid "Do not allow the presentation mode"
 msgstr "प्रस्तुतीकरन मोड स्वीकार नइ करव"
 
-#: part.cpp:1283
+#: part.cpp:1281
 #, kde-format
 msgid "Could not open %1"
 msgstr "%1 ल खोल नइ सकिस"
 
-#: part.cpp:1369
+#: part.cpp:1367
 msgid ""
 "This link points to a close document action that does not work when using "
 "the embedded viewer."
 msgstr ""
 
-#: part.cpp:1375
+#: part.cpp:1373
 msgid ""
 "This link points to a quit application action that does not work when using "
 "the embedded viewer."
 msgstr ""
 
-#: part.cpp:1461
+#: part.cpp:1459
 msgid "Reloading the document..."
 msgstr "कागद ल रीलोड करत हे..."
 
-#: part.cpp:1644
+#: part.cpp:1642
 msgid "Go to Page"
 msgstr "पेज मं जाव"
 
-#: part.cpp:1659
+#: part.cpp:1657
 msgid "&Page:"
 msgstr "पेज: (&P)"
 
-#: part.cpp:1756
+#: part.cpp:1754
 msgid "Enter the new name of the bookmark:"
 msgstr ""
 
-#: part.cpp:1793
+#: part.cpp:1791
 #, fuzzy
 #| msgid "Rename Bookmark"
 msgid "Rename this Bookmark"
 msgstr "निसानी ल नवा नाम देव"
 
-#: part.cpp:1884
+#: part.cpp:1882
 msgid "Could not open the temporary file for saving."
 msgstr "अस्थायी फाइल ल सहेजे बर खोल नइ सकिस."
 
-#: part.cpp:1895 part.cpp:1906 part.cpp:1949 part.cpp:2269
+#: part.cpp:1893 part.cpp:1904 part.cpp:1947 part.cpp:2267
 #, kde-format
 msgid "File could not be saved in '%1'. Try to save it to another location."
 msgstr ""
 
-#: part.cpp:1899
+#: part.cpp:1897
 #, fuzzy, kde-format
 #| msgid "File not saved."
 msgid "File could not be saved in '%1'. %2"
 msgstr "फाइल ल सहेजे नइ गिस."
 
-#: part.cpp:1934
+#: part.cpp:1932
 #, kde-format
 msgid ""
 "Okular cannot copy %1 to the specified location.\n"
@@ -1988,26 +1988,26 @@ msgid ""
 "The document does not exist anymore."
 msgstr ""
 
-#: part.cpp:2114
+#: part.cpp:2112
 msgid "Add Bookmark"
 msgstr "पसंद जोड़व"
 
-#: part.cpp:2131
+#: part.cpp:2129
 msgid "Tools"
 msgstr "औजार"
 
-#: part.cpp:2369
+#: part.cpp:2367
 msgid "Printing this document is not allowed."
 msgstr "ये कागद ल छापना स्वीकार नइ हे."
 
-#: part.cpp:2378
+#: part.cpp:2376
 #, fuzzy
 #| msgid "Could not print the document. Please report to bugs.kde.org"
 msgid ""
 "Could not print the document. Unknown error. Please report to bugs.kde.org"
 msgstr "कागद छाप नइ सकिस. किरपा करके, bugs.kde.org ल बग रिपोट करव."
 
-#: part.cpp:2382
+#: part.cpp:2380
 #, fuzzy, kde-format
 #| msgid "Could not print the document. Please report to bugs.kde.org"
 msgid ""
@@ -2015,15 +2015,15 @@ msgid ""
 "bugs.kde.org"
 msgstr "कागद छाप नइ सकिस. किरपा करके, bugs.kde.org ल बग रिपोट करव."
 
-#: part.cpp:2437
+#: part.cpp:2435
 msgid "Go to the place you were before"
 msgstr "उस जगह मं जाव जहाँ आप मन पहिली जा गे हे"
 
-#: part.cpp:2440
+#: part.cpp:2438
 msgid "Go to the place you were after"
 msgstr "उस जगह मं जाव जहाँ आप मन जाना चाहथो "
 
-#: part.cpp:2464
+#: part.cpp:2462
 #, kde-format
 msgid ""
 "<qt><strong>File Error!</strong> Could not create temporary file "
@@ -2032,7 +2032,7 @@ msgstr ""
 "<qt><strong>फाइल गलती!</strong> अस्थायी फाइल तैयार नइ कर सकिस<nobr><strong>%1</"
 "strong></nobr>.</qt>"
 
-#: part.cpp:2482
+#: part.cpp:2480
 #, kde-format
 msgid ""
 "<qt><strong>File Error!</strong> Could not open the file <nobr><strong>%1</"
@@ -2041,7 +2041,7 @@ msgstr ""
 "<qt><strong>फाइल गलती!</strong> फाइल <nobr><strong>%1</strong></nobr>को "
 "असंपीडित करे बर खोल नइ सकिस. फाइल ल लोड नइ कर सकिस.</qt>"
 
-#: part.cpp:2485
+#: part.cpp:2483
 msgid ""
 "<qt>This error typically occurs if you do not have enough permissions to "
 "read the file. You can check ownership and permissions if you right-click on "
@@ -2049,7 +2049,7 @@ msgid ""
 "qt>"
 msgstr ""
 
-#: part.cpp:2509
+#: part.cpp:2507
 #, kde-format
 msgid ""
 "<qt><strong>File Error!</strong> Could not uncompress the file <nobr><strong>"
@@ -2058,13 +2058,13 @@ msgstr ""
 "<qt><strong>फाइल गलती!</strong> फाइल <nobr><strong>%1</strong> </nobr>को "
 "असंपीडित नइ कर सकिस. फाइल ल लोड नइ कर सकिस.</qt>"
 
-#: part.cpp:2512
+#: part.cpp:2510
 msgid ""
 "<qt>This error typically occurs if the file is corrupt. If you want to be "
 "sure, try to decompress the file manually using command-line tools.</qt>"
 msgstr ""
 
-#: part.cpp:2541
+#: part.cpp:2539
 msgid "No Bookmarks"
 msgstr "कोई निसानी नइ"
 

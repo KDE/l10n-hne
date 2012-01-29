@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-09 03:41+0100\n"
+"POT-Creation-Date: 2012-01-29 03:07+0100\n"
 "PO-Revision-Date: 2009-02-27 17:34+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -248,6 +248,48 @@ msgstr ""
 msgid "All Feeds"
 msgstr "सब्बो फीड्स"
 
+#: src/trayicon.cpp:61 src/trayicon.cpp:62 src/trayicon.cpp:75
+#: src/articleviewer.cpp:693 src/aboutdata.cpp:37
+msgid "Akregator"
+msgstr "ए-के-रेगेटर"
+
+#: src/trayicon.cpp:75
+#, fuzzy, kde-format
+#| msgid " (1 unread article)"
+#| msgid_plural " (%1 unread articles)"
+msgid "1 unread article"
+msgid_plural "%1 unread articles"
+msgstr[0] "(1बिनपढ़ा आलेख)"
+msgstr[1] "(%1 बिनपढ़े आलेख)"
+
+#: src/mainwindow.cpp:104
+#, fuzzy, kde-format
+#| msgid "Could not find the Akregator part; please check your installation."
+msgid ""
+"Could not find the Akregator part; please check your installation.\n"
+"%1"
+msgstr "ए-के-रेगेटर पार्ट नइ मिलिस. किरपा करके, अपन इंस्टालेसन जांचव."
+
+#: src/tabwidget.cpp:113
+msgid "Close the current tab"
+msgstr "अभी हाल के टैब बंद करव"
+
+#: src/articlejobs.cpp:188
+msgid "The feed to be listed was already removed."
+msgstr ""
+
+#: src/akregator_options.h:37 src/akregator_options.h:41
+msgid "Add a feed with the given URL"
+msgstr ""
+
+#: src/akregator_options.h:39
+msgid "When adding feeds, place them in this group"
+msgstr ""
+
+#: src/akregator_options.h:40
+msgid "Hide main window on startup"
+msgstr ""
+
 #: src/searchbar.cpp:77
 msgctxt "Title of article searchbar"
 msgid "S&earch:"
@@ -283,145 +325,6 @@ msgstr "आलेख सूची ल छनइया करे बर स्प
 #: src/searchbar.cpp:103
 msgid "Choose what kind of articles to show in article list"
 msgstr "चुनव कि आलेख सूची मं कऊन किसम के आलेख देखाना हे"
-
-#: src/mainwindow.cpp:104
-#, fuzzy, kde-format
-#| msgid "Could not find the Akregator part; please check your installation."
-msgid ""
-"Could not find the Akregator part; please check your installation.\n"
-"%1"
-msgstr "ए-के-रेगेटर पार्ट नइ मिलिस. किरपा करके, अपन इंस्टालेसन जांचव."
-
-#: src/akregator_part.cpp:125
-msgid "KDE Dot News"
-msgstr "केडीई डाट समाचार"
-
-#: src/akregator_part.cpp:130
-msgid "Planet KDE"
-msgstr "प्लेनेट केडीई"
-
-#: src/akregator_part.cpp:135
-#, fuzzy
-#| msgid "Planet KDE"
-msgid "Planet KDE PIM"
-msgstr "प्लेनेट केडीई"
-
-#: src/akregator_part.cpp:140
-msgid "KDE Apps"
-msgstr "केडीई अनुपरयोग"
-
-#: src/akregator_part.cpp:145
-msgid "KDE Look"
-msgstr "केडीई रूप"
-
-#: src/akregator_part.cpp:219
-#, kde-format
-msgid "Unable to load storage backend plugin \"%1\". No feeds are archived."
-msgstr "भंडार बैकएन्ड प्लगइन \"%1\" लोड करे मं अक्छम. कोनो फीड भंडारित नइ करिस."
-
-#: src/akregator_part.cpp:219
-msgid "Plugin error"
-msgstr "प्लगइन गलती"
-
-#: src/akregator_part.cpp:481
-#, kde-format
-msgid ""
-"Access denied: Cannot save feed list to <b>%1</b>. Please check your "
-"permissions."
-msgstr "पहुंच मना करिस: फीड सूची <b>%1</b> मं सहेज नइ सकिस. अपन अनुमति जांचव."
-
-#: src/akregator_part.cpp:482 src/akregator_part.cpp:541
-msgid "Write Error"
-msgstr "लिखे मं गलती"
-
-#: src/akregator_part.cpp:517
-#, kde-format
-msgid "Could not import the file %1 (no valid OPML)"
-msgstr "फाइल %1 आयात नइ कर सकिस (कोई वैध ओपीएमएल नइ)"
-
-#: src/akregator_part.cpp:517 src/loadfeedlistcommand.cpp:76
-msgid "OPML Parsing Error"
-msgstr "ओपीएमएल पारसिंग गलती"
-
-#: src/akregator_part.cpp:520
-#, kde-format
-msgid ""
-"The file %1 could not be read, check if it exists or if it is readable for "
-"the current user."
-msgstr ""
-"चुने गे फाइल %1 नइ पढ़ सकिस, देखव कि ए मिलत हे, या अभी हाल के कमइया से पढ़े जइसन हे."
-
-#: src/akregator_part.cpp:520 src/loadfeedlistcommand.cpp:142
-msgid "Read Error"
-msgstr "पढ़े मं गलती"
-
-#: src/akregator_part.cpp:534
-#, kde-format
-msgid "The file %1 already exists; do you want to overwrite it?"
-msgstr "फाइल %1 पहिली ही मौजूद हे; का आप मन एला मेटाय के लिखना चाहथो ?"
-
-#: src/akregator_part.cpp:535
-msgid "Export"
-msgstr "निर्यात"
-
-#: src/akregator_part.cpp:541
-#, kde-format
-msgid "Access denied: cannot write to file %1. Please check your permissions."
-msgstr "पहुंच अस्वीकृत: फाइल %1 मं लिख नइ सकिस. अपन अनुमति जांचव."
-
-#: src/akregator_part.cpp:564 src/akregator_part.cpp:574
-msgid "OPML Outlines (*.opml, *.xml)"
-msgstr "ओपीएमएल आउटलाइन्स (*.opml, *.xml)"
-
-#: src/akregator_part.cpp:565 src/akregator_part.cpp:575
-msgid "All Files"
-msgstr "सब्बो फाइल मन ल"
-
-#: src/akregator_part.cpp:721
-msgid "Imported Folder"
-msgstr "आयातित फोल्डर"
-
-#: src/akregator_part.cpp:771
-msgid ""
-"Akregator did not close correctly. Would you like to restore the previous "
-"session?"
-msgstr ""
-
-#: src/akregator_part.cpp:772
-msgid "Restore Session?"
-msgstr ""
-
-#: src/akregator_part.cpp:773
-msgid "Restore Session"
-msgstr ""
-
-#: src/akregator_part.cpp:774
-msgid "Do Not Restore"
-msgstr ""
-
-#: src/akregator_part.cpp:775
-msgid "Ask Me Later"
-msgstr ""
-
-#: src/tabwidget.cpp:113
-msgid "Close the current tab"
-msgstr "अभी हाल के टैब बंद करव"
-
-#: src/articlejobs.cpp:188
-msgid "The feed to be listed was already removed."
-msgstr ""
-
-#: src/akregator_options.h:37 src/akregator_options.h:41
-msgid "Add a feed with the given URL"
-msgstr ""
-
-#: src/akregator_options.h:39
-msgid "When adding feeds, place them in this group"
-msgstr ""
-
-#: src/akregator_options.h:40
-msgid "Hide main window on startup"
-msgstr ""
 
 #: src/progressmanager.cpp:177
 msgid "Fetch completed"
@@ -483,11 +386,6 @@ msgstr ""
 "<p>धन्यवाद,</p>\n"
 "<p style='margin-bottom: 0px'>&nbsp; &nbsp; एकेरेगेटर टोली</p>\n"
 
-#: src/articleviewer.cpp:693 src/trayicon.cpp:61 src/trayicon.cpp:62
-#: src/trayicon.cpp:75 src/aboutdata.cpp:37
-msgid "Akregator"
-msgstr "ए-के-रेगेटर"
-
 #: src/articleviewer.cpp:695
 #, fuzzy
 #| msgid "A KDE Feed Reader"
@@ -508,6 +406,117 @@ msgstr ""
 
 #: src/articleviewer.cpp:735
 msgid "Disable Introduction Page"
+msgstr ""
+
+#: src/akregator_part.cpp:125
+msgid "KDE Dot News"
+msgstr "केडीई डाट समाचार"
+
+#: src/akregator_part.cpp:130
+msgid "Planet KDE"
+msgstr "प्लेनेट केडीई"
+
+#: src/akregator_part.cpp:135
+#, fuzzy
+#| msgid "Planet KDE"
+msgid "Planet KDE PIM"
+msgstr "प्लेनेट केडीई"
+
+#: src/akregator_part.cpp:140
+msgid "KDE Apps"
+msgstr "केडीई अनुपरयोग"
+
+#: src/akregator_part.cpp:145
+msgid "KDE Look"
+msgstr "केडीई रूप"
+
+#: src/akregator_part.cpp:219
+#, kde-format
+msgid "Unable to load storage backend plugin \"%1\". No feeds are archived."
+msgstr "भंडार बैकएन्ड प्लगइन \"%1\" लोड करे मं अक्छम. कोनो फीड भंडारित नइ करिस."
+
+#: src/akregator_part.cpp:219
+msgid "Plugin error"
+msgstr "प्लगइन गलती"
+
+#: src/akregator_part.cpp:481
+#, kde-format
+msgid ""
+"Access denied: Cannot save feed list to <b>%1</b>. Please check your "
+"permissions."
+msgstr "पहुंच मना करिस: फीड सूची <b>%1</b> मं सहेज नइ सकिस. अपन अनुमति जांचव."
+
+#: src/akregator_part.cpp:482 src/akregator_part.cpp:541
+msgid "Write Error"
+msgstr "लिखे मं गलती"
+
+#: src/akregator_part.cpp:517
+#, kde-format
+msgid "Could not import the file %1 (no valid OPML)"
+msgstr "फाइल %1 आयात नइ कर सकिस (कोई वैध ओपीएमएल नइ)"
+
+#: src/akregator_part.cpp:517 src/loadfeedlistcommand.cpp:79
+msgid "OPML Parsing Error"
+msgstr "ओपीएमएल पारसिंग गलती"
+
+#: src/akregator_part.cpp:520
+#, kde-format
+msgid ""
+"The file %1 could not be read, check if it exists or if it is readable for "
+"the current user."
+msgstr ""
+"चुने गे फाइल %1 नइ पढ़ सकिस, देखव कि ए मिलत हे, या अभी हाल के कमइया से पढ़े जइसन हे."
+
+#: src/akregator_part.cpp:520 src/loadfeedlistcommand.cpp:148
+msgid "Read Error"
+msgstr "पढ़े मं गलती"
+
+#: src/akregator_part.cpp:534
+#, kde-format
+msgid "The file %1 already exists; do you want to overwrite it?"
+msgstr "फाइल %1 पहिली ही मौजूद हे; का आप मन एला मेटाय के लिखना चाहथो ?"
+
+#: src/akregator_part.cpp:535
+msgid "Export"
+msgstr "निर्यात"
+
+#: src/akregator_part.cpp:541
+#, kde-format
+msgid "Access denied: cannot write to file %1. Please check your permissions."
+msgstr "पहुंच अस्वीकृत: फाइल %1 मं लिख नइ सकिस. अपन अनुमति जांचव."
+
+#: src/akregator_part.cpp:564 src/akregator_part.cpp:574
+msgid "OPML Outlines (*.opml, *.xml)"
+msgstr "ओपीएमएल आउटलाइन्स (*.opml, *.xml)"
+
+#: src/akregator_part.cpp:565 src/akregator_part.cpp:575
+msgid "All Files"
+msgstr "सब्बो फाइल मन ल"
+
+#: src/akregator_part.cpp:721
+msgid "Imported Folder"
+msgstr "आयातित फोल्डर"
+
+#: src/akregator_part.cpp:771
+msgid ""
+"Akregator did not close correctly. Would you like to restore the previous "
+"session?"
+msgstr ""
+
+#: src/akregator_part.cpp:772
+msgid "Restore Session?"
+msgstr ""
+
+#: src/akregator_part.cpp:773
+msgid "Restore Session"
+msgstr ""
+
+#: src/akregator_part.cpp:774
+msgid "Do Not Restore"
+msgstr ""
+
+#: src/akregator_part.cpp:775
+msgid "Ask Me Later"
 msgstr ""
 
 #: src/articlemodel.cpp:106
@@ -585,11 +594,11 @@ msgstr "फीड मेटाव"
 msgid "No Archive"
 msgstr "कोई अभिलेख नइ हे"
 
-#: src/actions.cpp:35 src/pageviewer.cpp:411
+#: src/actions.cpp:35
 msgid "Open Link in New &Tab"
 msgstr "संकली नवा टैब मं खोलव (&T)"
 
-#: src/actions.cpp:44 src/pageviewer.cpp:413
+#: src/actions.cpp:44
 msgid "Open Link in External &Browser"
 msgstr "संकली बाहिरी ब्राउजर मं खोलव (&B)"
 
@@ -619,15 +628,18 @@ msgstr[1] "दिन"
 
 #. i18n: file: src/feedpropertieswidgetbase.ui:21
 #. i18n: ectx: property (windowTitle), widget (QWidget, Akregator::FeedPropertiesWidgetBase)
-#: src/feedpropertiesdialog.cpp:88 src/feedpropertiesdialog.cpp:130 rc.cpp:488
+#: src/feedpropertiesdialog.cpp:88 src/feedpropertiesdialog.cpp:131 rc.cpp:488
 msgid "Feed Properties"
 msgstr "फीड गुन"
 
-#: src/feedpropertiesdialog.cpp:99
+#: src/feedpropertiesdialog.cpp:100
+#, fuzzy
+#| msgid "Never"
+msgctxt "never fetch new articles"
 msgid "Never"
 msgstr "कभू नइ"
 
-#: src/feedpropertiesdialog.cpp:100
+#: src/feedpropertiesdialog.cpp:101
 #, fuzzy
 #| msgid "1 day"
 msgid " day"
@@ -635,7 +647,7 @@ msgid_plural " days"
 msgstr[0] "1 दिन"
 msgstr[1] "1 दिन"
 
-#: src/feedpropertiesdialog.cpp:101
+#: src/feedpropertiesdialog.cpp:102
 #, fuzzy
 #| msgid "1 article"
 msgid " article"
@@ -643,7 +655,7 @@ msgid_plural " articles"
 msgstr[0] "1 आलेख"
 msgstr[1] "1 आलेख"
 
-#: src/feedpropertiesdialog.cpp:131
+#: src/feedpropertiesdialog.cpp:132
 #, kde-format
 msgid "Properties of %1"
 msgstr " %1 के गुन"
@@ -677,7 +689,7 @@ msgstr "आयातित फोल्डर जोड़व"
 msgid "Imported folder name:"
 msgstr "आयातित फोल्डर नाम:"
 
-#: src/loadfeedlistcommand.cpp:72
+#: src/loadfeedlistcommand.cpp:73
 #, fuzzy, kde-format
 msgid ""
 "<qt>The standard feed list is corrupted (invalid OPML). A backup was created:"
@@ -685,34 +697,36 @@ msgid ""
 msgstr ""
 "<qt>मानक फीड सूची खराब हे (अवैध एक्सएमएल). एक बैकअप बनाइस:<p><b>%1</b></p></qt>"
 
-#: src/loadfeedlistcommand.cpp:73
+#: src/loadfeedlistcommand.cpp:75
 #, fuzzy
 msgid ""
 "<qt>The standard feed list is corrupted (invalid OPML). Could not create a "
-"backup.</p></qt>"
+"backup.</qt>"
 msgstr "<qt>मानक फीड सूची खराब हे (अवैध एक्सएमएल). बैकअप नइ बना सकिस!</p></qt>"
 
-#: src/loadfeedlistcommand.cpp:124
+#: src/loadfeedlistcommand.cpp:127
 msgid "Opening Feed List..."
 msgstr "फीड सूची खोलत हे..."
 
-#: src/loadfeedlistcommand.cpp:142
+#: src/loadfeedlistcommand.cpp:147
 #, kde-format
-msgid "<qt>Could not open feed list (%1) for reading.</p></qt>"
+msgid "<qt>Could not open feed list (%1) for reading.</qt>"
 msgstr ""
 
-#: src/loadfeedlistcommand.cpp:154
+#: src/loadfeedlistcommand.cpp:160
 #, fuzzy
 msgctxt "error message window caption"
 msgid "XML Parsing Error"
 msgstr "एक्सएमएल पारसिंग गलती"
 
-#: src/loadfeedlistcommand.cpp:155
+#: src/loadfeedlistcommand.cpp:162
 #, kde-format
-msgid "<qt><p>XML parsing error in line %1, column %2 of %3:</p><p>%4</p></qt>"
+msgid ""
+"<qt><p>XML parsing error in line <numid>%1</numid>, column <numid>%2</numid> "
+"of %3:</p><p>%4</p></qt>"
 msgstr ""
 
-#: src/loadfeedlistcommand.cpp:161
+#: src/loadfeedlistcommand.cpp:170
 #, kde-format
 msgid ""
 "<qt>The standard feed list is corrupted (invalid XML). A backup was created:"
@@ -720,11 +734,11 @@ msgid ""
 msgstr ""
 "<qt>मानक फीड सूची खराब हे (अवैध एक्सएमएल). एक बैकअप बनाइस:<p><b>%1</b></p></qt>"
 
-#: src/loadfeedlistcommand.cpp:162
+#: src/loadfeedlistcommand.cpp:172
 #, fuzzy
 msgid ""
 "<qt>The standard feed list is corrupted (invalid XML). Could not create a "
-"backup.</p></qt>"
+"backup.</qt>"
 msgstr "<qt>मानक फीड सूची खराब हे (अवैध एक्सएमएल). बैकअप नइ बना सकिस!</p></qt>"
 
 #: src/mainwidget.cpp:180
@@ -789,37 +803,6 @@ msgid ""
 msgstr ""
 "फीडों ल जोड़ दे गिस:\n"
 " %1"
-
-#: src/pageviewer.cpp:101 src/actionmanagerimpl.cpp:577
-msgctxt "Go back in browser history"
-msgid "Back"
-msgstr "पीछू"
-
-#: src/pageviewer.cpp:109 src/actionmanagerimpl.cpp:570
-msgctxt "Go forward in browser history"
-msgid "Forward"
-msgstr "आगू"
-
-#: src/pageviewer.cpp:116 src/actionmanagerimpl.cpp:586
-msgctxt "Reload current page"
-msgid "Reload"
-msgstr "री-लोड"
-
-#: src/pageviewer.cpp:119 src/actionmanagerimpl.cpp:591
-msgid "Stop"
-msgstr "रुकव"
-
-#: src/pageviewer.cpp:412
-msgid "<b>Open Link in New Tab</b><p>Opens current link in a new tab.</p>"
-msgstr "<b>संकली नवा टैब मं खोलव</b><p>अभी हाल के संकली ल नवा टैब मं खोलथे .</p>"
-
-#: src/pageviewer.cpp:445
-msgid "Open Page in External Browser"
-msgstr "आलेख ल बाहिरी ब्राउजर मं खोलव"
-
-#: src/pageviewer.cpp:453
-msgid "Add to Konqueror Bookmarks"
-msgstr "कान्करर निसानी मं जोड़व"
 
 #: src/pluginmanager.cpp:165
 msgctxt "Name of the plugin"
@@ -1019,15 +1002,6 @@ msgstr ""
 "<div align=center><h3>कोई फीड नइ चुने गे</h3>ये छेत्र आलेख सूची हे. फीड सूची मं से फीड "
 "चुनव अउ आप मन इहां आलेख देख सकही.</div>"
 
-#: src/trayicon.cpp:75
-#, fuzzy, kde-format
-#| msgid " (1 unread article)"
-#| msgid_plural " (%1 unread articles)"
-msgid "1 unread article"
-msgid_plural "%1 unread articles"
-msgstr[0] "(1बिनपढ़ा आलेख)"
-msgstr[1] "(%1 बिनपढ़े आलेख)"
-
 #: src/actionmanagerimpl.cpp:77 src/actionmanagerimpl.cpp:259
 msgid "&Fetch Feed"
 msgstr "फीड लाव (&F)"
@@ -1117,18 +1091,18 @@ msgid "Show Quick Filter"
 msgstr "क्विक छनइया देखाव"
 
 #. i18n: file: configuration/settings_browser.ui:20
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LMBBehaviour)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LMBBehaviour)
 #. i18n: file: configuration/settings_browser.ui:46
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MMBBehaviour)
-#: src/actionmanagerimpl.cpp:296 rc.cpp:65 rc.cpp:77
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MMBBehaviour)
+#: src/actionmanagerimpl.cpp:296 rc.cpp:83 rc.cpp:95
 msgid "Open in Tab"
 msgstr "टैब मं खोलव"
 
 #. i18n: file: configuration/settings_browser.ui:30
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LMBBehaviour)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LMBBehaviour)
 #. i18n: file: configuration/settings_browser.ui:56
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MMBBehaviour)
-#: src/actionmanagerimpl.cpp:302 rc.cpp:71 rc.cpp:83
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MMBBehaviour)
+#: src/actionmanagerimpl.cpp:302 rc.cpp:89 rc.cpp:101
 msgid "Open in External Browser"
 msgstr "बाहिरी ब्राउजर मं खोलव"
 
@@ -1295,6 +1269,25 @@ msgstr ""
 #| msgid "Serif font:"
 msgid "Shrink Font"
 msgstr "सेरिफ फोंट:"
+
+#: src/actionmanagerimpl.cpp:570
+msgctxt "Go forward in browser history"
+msgid "Forward"
+msgstr "आगू"
+
+#: src/actionmanagerimpl.cpp:577
+msgctxt "Go back in browser history"
+msgid "Back"
+msgstr "पीछू"
+
+#: src/actionmanagerimpl.cpp:586
+msgctxt "Reload current page"
+msgid "Reload"
+msgstr "री-लोड"
+
+#: src/actionmanagerimpl.cpp:591
+msgid "Stop"
+msgstr "रुकव"
 
 #: src/aboutdata.cpp:37
 msgid "A KDE Feed Reader"
@@ -1535,37 +1528,73 @@ msgstr "एखर से अधिक जुन्ना आलेख मन ल
 msgid "Do not expire important articles"
 msgstr "आयातित आलेख मन ल कालातीत नइ करव"
 
+#. i18n: file: configuration/settings_advancedbase.ui:10
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:62
+msgid "Archive"
+msgstr "अभिलेखागार"
+
+#. i18n: file: configuration/settings_advancedbase.ui:18
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:65
+msgid "Archive backend:"
+msgstr "अभिलेखागार बैकएन्ड: %1."
+
+#. i18n: file: configuration/settings_advancedbase.ui:28
+#. i18n: ectx: property (text), widget (QPushButton, pbBackendConfigure)
+#: rc.cpp:68
+msgid "&Configure..."
+msgstr "कान्फिगर (&C)..."
+
+#. i18n: file: configuration/settings_advancedbase.ui:53
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:71
+msgid "Article List"
+msgstr "आलेख सूची"
+
+#. i18n: file: configuration/settings_advancedbase.ui:61
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseMarkReadDelay)
+#: rc.cpp:74
+msgid "Mar&k selected article read after"
+msgstr "एखर बाद आलेख मन ल पढ़ ले गिस चिनहा लगाव: (&k)"
+
+#. i18n: file: configuration/settings_advancedbase.ui:96
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ResetQuickFilterOnNodeChange)
+#: rc.cpp:77
+msgid "Reset search bar when changing feeds"
+msgstr ""
+
 #. i18n: file: configuration/settings_browser.ui:12
 #. i18n: ectx: property (text), widget (QLabel, LMBlabel)
-#: rc.cpp:62
+#: rc.cpp:80
 msgid "Left mouse click:"
 msgstr "डेरी मुसुवा किलिक:"
 
 #. i18n: file: configuration/settings_browser.ui:25
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LMBBehaviour)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LMBBehaviour)
 #. i18n: file: configuration/settings_browser.ui:51
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MMBBehaviour)
-#: rc.cpp:68 rc.cpp:80
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MMBBehaviour)
+#: rc.cpp:86 rc.cpp:98
 msgid "Open in Background Tab"
 msgstr "पेज-भूमि टैब मं खोलव"
 
 #. i18n: file: configuration/settings_browser.ui:38
 #. i18n: ectx: property (text), widget (QLabel, MMBlabel)
-#: rc.cpp:74
+#: rc.cpp:92
 msgid "Middle mouse click:"
 msgstr "मध्य मुसुवा किलिक:"
 
 #. i18n: file: configuration/settings_browser.ui:66
 #. i18n: ectx: property (title), widget (QGroupBox, externalBrowserGroupBox)
-#: rc.cpp:86
+#: rc.cpp:104
 #, fuzzy
 #| msgid "For External Browsing"
 msgid "External Browsing"
 msgstr "बाहिरी ब्राउजिंग बर"
 
 #. i18n: file: configuration/settings_browser.ui:75
-#. i18n: ectx: property (text), widget (QLineEdit, kcfg_ExternalBrowserCustomCommand)
-#: rc.cpp:90
+#. i18n: ectx: property (text), widget (KLineEdit, kcfg_ExternalBrowserCustomCommand)
+#: rc.cpp:108
 #, no-c-format
 msgid "firefox %u"
 msgstr "फायरफाक्स %u"
@@ -1574,19 +1603,19 @@ msgstr "फायरफाक्स %u"
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExternalBrowserUseCustomCommand)
 #. i18n: file: interfaces/akregator.kcfg:176
 #. i18n: ectx: label, entry, group (Browser)
-#: rc.cpp:93 rc.cpp:328
+#: rc.cpp:111 rc.cpp:328
 msgid "Use this command:"
 msgstr "ये कमांड के उपयोग करव:"
 
 #. i18n: file: configuration/settings_browser.ui:89
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExternalBrowserUseKdeDefault)
-#: rc.cpp:96
+#: rc.cpp:114
 msgid "Use default web browser"
 msgstr "डिफाल्ट वेब ब्राउजर उपयोग करव"
 
 #. i18n: file: configuration/settings_browser.ui:102
 #. i18n: ectx: property (title), widget (QGroupBox, tabsGroupBox)
-#: rc.cpp:99
+#: rc.cpp:117
 msgid "Tabs"
 msgstr ""
 
@@ -1594,13 +1623,13 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AlwaysShowTabBar)
 #. i18n: file: interfaces/akregator.kcfg:156
 #. i18n: ectx: label, entry, group (Browser)
-#: rc.cpp:102 rc.cpp:304
+#: rc.cpp:120 rc.cpp:304
 msgid "Always show the tab bar"
 msgstr ""
 
 #. i18n: file: configuration/settings_browser.ui:115
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_CloseButtonOnTabs)
-#: rc.cpp:105
+#: rc.cpp:123
 #, fuzzy
 msgid "Show close button on each tab"
 msgstr "टैब्स मं बन्द बटन देखाव"
@@ -1609,117 +1638,84 @@ msgstr "टैब्स मं बन्द बटन देखाव"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_NewWindowInTab)
 #. i18n: file: interfaces/akregator.kcfg:166
 #. i18n: ectx: label, entry, group (Browser)
-#: rc.cpp:108 rc.cpp:316
+#: rc.cpp:126 rc.cpp:316
 msgid "Open links in new tab instead of in new window"
 msgstr ""
 
 #. i18n: file: configuration/settings_general.ui:10
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:111
+#: rc.cpp:129
+#, fuzzy
+#| msgid "Global"
+msgctxt "global settings"
 msgid "Global"
 msgstr "वैस्विक"
 
 #. i18n: file: configuration/settings_general.ui:16
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowTrayIcon)
-#: rc.cpp:114
+#: rc.cpp:132
 msgid "Show tra&y icon"
 msgstr "तस्तरी चिनहा देखाव (&y)"
 
 #. i18n: file: configuration/settings_general.ui:47
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableTrayIconUnreadArticleCount)
-#: rc.cpp:117
+#: rc.cpp:135
 msgid "Display an unread article &count in the tray icon"
 msgstr ""
 
 #. i18n: file: configuration/settings_general.ui:59
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_UseNotifications)
-#: rc.cpp:120
+#: rc.cpp:138
 msgid "Select this if you want to get notified when there are new articles."
 msgstr "एला चुनव यदि आप मन चाहथो कि नवा आलेख मन के आने के सूचना दे जाही."
 
 #. i18n: file: configuration/settings_general.ui:62
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseNotifications)
-#: rc.cpp:123
+#: rc.cpp:141
 msgid "Use &notifications for all feeds"
 msgstr "सब्बो फीड मन बर सूचना मन ल उपयोग करव"
 
 #. i18n: file: configuration/settings_general.ui:69
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseIntervalFetch)
-#: rc.cpp:126
+#: rc.cpp:144
 msgid "&Use interval fetching"
 msgstr "अंतराल से प्राप्त करव (&U)"
 
 #. i18n: file: configuration/settings_general.ui:97
 #. i18n: ectx: property (text), widget (QLabel, autoFetchIntervalLabel)
-#: rc.cpp:129
+#: rc.cpp:147
 msgid "Fetch feeds every:"
 msgstr "फीड्स प्राप्त करव हर एक:"
 
 #. i18n: file: configuration/settings_general.ui:138
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:132
+#: rc.cpp:150
 msgid "Startup"
 msgstr "सुरू में"
 
 #. i18n: file: configuration/settings_general.ui:144
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_MarkAllFeedsReadOnStartup)
-#: rc.cpp:135
+#: rc.cpp:153
 msgid "Mark &all feeds as read on startup"
 msgstr "सुरू होत ही सब्बो फीड मन ल पढ़िस होय चिनहा लगाव (&a)"
 
 #. i18n: file: configuration/settings_general.ui:151
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FetchOnStartup)
-#: rc.cpp:138
+#: rc.cpp:156
 msgid "Fetch all fee&ds on startup"
 msgstr "सुरू होत ही सब्बो फीड मन ल लाव (&d)"
 
 #. i18n: file: configuration/settings_general.ui:161
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:141
+#: rc.cpp:159
 msgid "Network"
 msgstr "नेटवर्क"
 
 #. i18n: file: configuration/settings_general.ui:167
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseHTMLCache)
-#: rc.cpp:144
+#: rc.cpp:162
 msgid "Use the &browser cache (less network traffic)"
 msgstr "ब्राउजर कैस परयोग करव (कम नेटवर्क ट्रैफिक) (&b)"
-
-#. i18n: file: configuration/settings_advancedbase.ui:10
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:147
-msgid "Archive"
-msgstr "अभिलेखागार"
-
-#. i18n: file: configuration/settings_advancedbase.ui:18
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:150
-msgid "Archive backend:"
-msgstr "अभिलेखागार बैकएन्ड: %1."
-
-#. i18n: file: configuration/settings_advancedbase.ui:28
-#. i18n: ectx: property (text), widget (QPushButton, pbBackendConfigure)
-#: rc.cpp:153
-msgid "&Configure..."
-msgstr "कान्फिगर (&C)..."
-
-#. i18n: file: configuration/settings_advancedbase.ui:53
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:156
-msgid "Article List"
-msgstr "आलेख सूची"
-
-#. i18n: file: configuration/settings_advancedbase.ui:61
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseMarkReadDelay)
-#: rc.cpp:159
-msgid "Mar&k selected article read after"
-msgstr "एखर बाद आलेख मन ल पढ़ ले गिस चिनहा लगाव: (&k)"
-
-#. i18n: file: configuration/settings_advancedbase.ui:96
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ResetQuickFilterOnNodeChange)
-#: rc.cpp:162
-msgid "Reset search bar when changing feeds"
-msgstr ""
 
 #. i18n: file: interfaces/akregator.kcfg:10
 #. i18n: ectx: whatsthis, entry, group (View)
@@ -2207,6 +2203,7 @@ msgstr ""
 #: rc.cpp:407
 #, fuzzy
 #| msgid "Folder name:"
+msgctxt "login identify for blog account"
 msgid "Username:"
 msgstr "फोल्डर नाम:"
 
@@ -2231,6 +2228,7 @@ msgstr "फीड यूआरएल: (&U)"
 #: rc.cpp:416
 #, fuzzy
 #| msgid "Folder name:"
+msgctxt "login identify for blog account"
 msgid "Username"
 msgstr "फोल्डर नाम:"
 
@@ -2414,6 +2412,15 @@ msgstr "जब आलेख मन ल पढ़ रहे होही तह�
 #: rc.cpp:536
 msgid "Mar&k articles as read when they arrive"
 msgstr "आलेख मन ल पढ़िस गिस चिनहा लगाव जब ओ मन आव (&k)"
+
+#~ msgid "<b>Open Link in New Tab</b><p>Opens current link in a new tab.</p>"
+#~ msgstr "<b>संकली नवा टैब मं खोलव</b><p>अभी हाल के संकली ल नवा टैब मं खोलथे .</p>"
+
+#~ msgid "Open Page in External Browser"
+#~ msgstr "आलेख ल बाहिरी ब्राउजर मं खोलव"
+
+#~ msgid "Add to Konqueror Bookmarks"
+#~ msgstr "कान्करर निसानी मं जोड़व"
 
 #, fuzzy
 #~ msgid "Feed List"
