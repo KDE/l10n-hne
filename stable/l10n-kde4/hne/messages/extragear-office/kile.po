@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kile\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-03 19:01+0100\n"
+"POT-Creation-Date: 2012-02-05 11:27+0100\n"
 "PO-Revision-Date: 2009-02-21 10:38+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -163,7 +163,7 @@ msgstr "फेल, फेर गंभीर नइ"
 msgid "Critical failure, Kile will not function properly"
 msgstr "गंभीर फेल, काइल सही किसम से काम नइ करही"
 
-#: dialogs/configcheckerdialog.cpp:100 kile.cpp:2619
+#: dialogs/configcheckerdialog.cpp:100 kile.cpp:2622
 msgid "System Check"
 msgstr "तंत्र जांच"
 
@@ -220,7 +220,7 @@ msgstr "काइल"
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetEnvironmentConfig)
 #. i18n: file: widgets/latexconfigwidget.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetLatexConfig)
-#: dialogs/configurationdialog.cpp:80 kileinfo.cpp:321 rc.cpp:854 rc.cpp:938
+#: dialogs/configurationdialog.cpp:80 rc.cpp:854 rc.cpp:938 kileinfo.cpp:321
 #: kile.cpp:555 kile.cpp:888
 msgid "LaTeX"
 msgstr "लेटेक्स"
@@ -280,7 +280,7 @@ msgstr ""
 
 #. i18n: file: widgets/helpconfigwidget.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetHelpConfig)
-#: dialogs/configurationdialog.cpp:214 kilehelp.cpp:290 rc.cpp:908
+#: dialogs/configurationdialog.cpp:214 rc.cpp:908 kilehelp.cpp:290
 msgid "Help"
 msgstr ""
 
@@ -480,8 +480,8 @@ msgstr "फाइल मन मं ढूढें"
 msgid "Find in Project"
 msgstr "परियोजना मं खोजव"
 
-#: dialogs/findfilesdialog.cpp:399 kiledocmanager.cpp:781
-#: kiledocmanager.cpp:1013 kileactions.cpp:360
+#: dialogs/findfilesdialog.cpp:399 kileactions.cpp:360 kiledocmanager.cpp:795
+#: kiledocmanager.cpp:1027
 msgid "All Files"
 msgstr "सब्बो फाइल मन ल"
 
@@ -2486,7 +2486,7 @@ msgid ""
 "copied into the edit widget."
 msgstr ""
 
-#: dialogs/userhelpdialog.cpp:432 kiledocmanager.cpp:2003 kileactions.cpp:362
+#: dialogs/userhelpdialog.cpp:432 kileactions.cpp:362 kiledocmanager.cpp:2017
 msgid "Select File"
 msgstr "फाइल चुनव"
 
@@ -2529,7 +2529,7 @@ msgid ""
 "%S: Source file name without extension"
 msgstr ""
 
-#: dialogs/usertagsdialog.cpp:65 kiledocmanager.cpp:1669
+#: dialogs/usertagsdialog.cpp:65 kiledocmanager.cpp:1683
 msgid "Add"
 msgstr "जोड़व"
 
@@ -2669,7 +2669,7 @@ msgstr "गनित"
 msgid "Lists"
 msgstr "सूचियाँ"
 
-#: dialogs/latexcommanddialog.cpp:377 kilestdactions.cpp:79 kile.cpp:840
+#: dialogs/latexcommanddialog.cpp:377 kile.cpp:840 kilestdactions.cpp:79
 msgid "Tabular"
 msgstr "टेबुलर"
 
@@ -2760,542 +2760,6 @@ msgstr "गलती: नाम मं स्लैस (,),[ या ] नइ ह
 #, kde-format
 msgid "No KDE service found for the MIME type \"%1\"."
 msgstr ""
-
-#: kiledocmanager.cpp:122
-msgid "No editor component found. Please check your KDE installation."
-msgstr ""
-
-#: kiledocmanager.cpp:123
-#, fuzzy
-#| msgid "No bibliographies found."
-msgid "No editor component found."
-msgstr "कोई ग्रन्थ सूची नइ मिलिस."
-
-#: kiledocmanager.cpp:166
-msgid ""
-"The internal structure of Kile is corrupted (probably due to a bug in Kile). "
-"Please select Save All from the File menu and close Kile.\n"
-"The Kile team apologizes for any inconvenience and would appreciate a bug "
-"report."
-msgstr ""
-
-#: kiledocmanager.cpp:644
-#, kde-format
-msgid "Could not find template: %1"
-msgstr "टैम्प्लेट: %1 नइ खोज सकिस"
-
-#: kiledocmanager.cpp:644
-msgid "File Not Found"
-msgstr "फाइल नइ मिलिस"
-
-#: kiledocmanager.cpp:702
-msgid "Please save the file first."
-msgstr "किरपा करके, पहिली फाइल मन ल सहेजव."
-
-#: kiledocmanager.cpp:707
-msgid "Open/create a document first."
-msgstr "पहिली कागद खोलव/बनाव."
-
-#: kiledocmanager.cpp:715
-msgid "A template for this type of document cannot be created."
-msgstr ""
-
-#: kiledocmanager.cpp:719
-msgid "Create Template From Document"
-msgstr "कागद से टैम्प्लेट तैयार करव"
-
-#: kiledocmanager.cpp:725
-msgid "Remove Template"
-msgstr "टैम्प्लेट मेटाव"
-
-#: kiledocmanager.cpp:787
-msgid "Open Files"
-msgstr "फाइल मन ल खोलव"
-
-#: kiledocmanager.cpp:895
-#, fuzzy, kde-format
-msgid ""
-"The file %1 could not be saved, check the permissions and free disk space."
-msgstr "फाइल %1/%2 मौजूद नइ हे. यदि आप मन ल आस्चर्य हे तहां फाइल अनुमति जांचव."
-
-#: kiledocmanager.cpp:896
-msgid "Autosave"
-msgstr "अपने अपन-सहेजव"
-
-#: kiledocmanager.cpp:907
-#, kde-format
-msgid ""
-"Kile encountered problems while saving the file %1. Do you have enough free "
-"disk space left?"
-msgstr ""
-
-#: kiledocmanager.cpp:908
-msgid "Saving"
-msgstr "सहेजत हे"
-
-#: kiledocmanager.cpp:1014
-msgid "Save File"
-msgstr "फाइल सहेजव"
-
-#: kiledocmanager.cpp:1024
-#, fuzzy, kde-format
-#| msgid ""
-#| "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
-msgid ""
-"A file with the name \"%1\" exists already. Do you want to overwrite it?"
-msgstr ""
-"फाइल नाम \"%1\"  पहिली से ही अस्तित्व मं हावे. का आप मन एखर ऊपर ही मिटाकर लिखना "
-"चाहू?"
-
-#: kiledocmanager.cpp:1024
-#, fuzzy
-#| msgid "New File"
-msgid "Overwrite File?"
-msgstr "नवा फाइल"
-
-#: kiledocmanager.cpp:1024
-msgid "&Overwrite"
-msgstr ""
-
-#: kiledocmanager.cpp:1247
-msgid "Refresh Project Tree"
-msgstr "परियोजना ट्री रीफ्रेस करव"
-
-#: kiledocmanager.cpp:1255
-msgid ""
-"The current document is not associated to a project. Please activate a "
-"document that is associated to the project you want to build the tree for, "
-"then choose Refresh Project Tree again."
-msgstr ""
-
-#: kiledocmanager.cpp:1255
-msgid "Could Not Refresh Project Tree"
-msgstr "परियोजना रीफ्रेस नइ कर सकिस"
-
-#: kiledocmanager.cpp:1329 kiledocmanager.cpp:2025 kiledocmanager.cpp:2100
-#: kiledocmanager.cpp:2137
-msgid "Select Project"
-msgstr "परियोजना चुनव"
-
-#: kiledocmanager.cpp:1353 kiledocmanager.cpp:1369 kiledocmanager.cpp:1376
-msgid "Add to Project"
-msgstr "परियोजना मं जोड़व"
-
-#: kiledocmanager.cpp:1368
-#, kde-format
-msgid "The file %1 is already member of the project %2"
-msgstr ""
-
-#: kiledocmanager.cpp:1375
-#, kde-format
-msgid ""
-"The file %1 can not be added because it does not exist or is not readable"
-msgstr ""
-
-#: kiledocmanager.cpp:1394
-msgid ""
-"This file is the project file, which holds all the information about your "
-"project.  As such, it cannot be removed from the project."
-msgstr ""
-
-#: kiledocmanager.cpp:1394
-msgid "Cannot Remove File From Project"
-msgstr "परियोजना से फाइल नइ मिटा सके"
-
-#: kiledocmanager.cpp:1452
-msgid ""
-"The project you tried to open is already opened. If you wanted to reload the "
-"project, close the project before you re-open it."
-msgstr ""
-
-#: kiledocmanager.cpp:1452
-msgid "Project Already Open"
-msgstr "परियोजना पहिली ही खुले हे"
-
-#: kiledocmanager.cpp:1462
-#, kde-format
-msgid ""
-"The project file for the project \"%1\" does not exist or is not readable. "
-"Remove this project from the recent projects list?"
-msgstr ""
-
-#: kiledocmanager.cpp:1462
-msgid "Could Not Load Project File"
-msgstr "परियोजना फाइल ल लोड नइ कर सकिस"
-
-#: kiledocmanager.cpp:1559
-msgid ""
-"*.kilepr|Kile Project Files\n"
-"*|All Files"
-msgstr ""
-"*.kilepr|काइल परियोजना फाइल मन ल\n"
-"*|सब्बो फाइल मन ल"
-
-#: kiledocmanager.cpp:1559
-msgid "Open Project"
-msgstr "परियोजना खोलव"
-
-#: kiledocmanager.cpp:1580
-msgid "Save Project"
-msgstr "परियोजना सहेजव"
-
-#: kiledocmanager.cpp:1632
-msgid ""
-"The current document is not associated to a project. Please activate a "
-"document that is associated to the project you want to save, then choose "
-"Save Project again."
-msgstr ""
-
-#: kiledocmanager.cpp:1632
-msgid "Could Determine Active Project"
-msgstr "सक्रिय परियोजना निरधारित कर सकिस"
-
-#: kiledocmanager.cpp:1655
-msgid "Add Files to Project"
-msgstr "परियोजना मं फाइल मन ल जोड़व"
-
-#: kiledocmanager.cpp:1666
-msgid "*|All Files"
-msgstr "*|सब्बो फाइल मन ल"
-
-#: kiledocmanager.cpp:1670
-msgid "Add Files"
-msgstr "फाइल मन ल जोड़व"
-
-#: kiledocmanager.cpp:1686
-msgid ""
-"There are no projects opened. Please open the project you want to add files "
-"to, then choose Add Files again."
-msgstr ""
-
-#: kiledocmanager.cpp:1686 kiledocmanager.cpp:1721
-msgid "Could Not Determine Active Project"
-msgstr "सक्रिय परियोजना निरधारित नइ कर सकिस"
-
-#: kiledocmanager.cpp:1712
-msgid "Project Options For"
-msgstr "बर परियोजना विकल्प "
-
-#: kiledocmanager.cpp:1721
-msgid ""
-"The current document is not associated to a project. Please activate a "
-"document that is associated to the project you want to modify, then choose "
-"Project Options again."
-msgstr ""
-
-#: kiledocmanager.cpp:1749
-msgid "Close Project"
-msgstr "परियोजना बन्द करव"
-
-#: kiledocmanager.cpp:1803
-msgid ""
-"The current document is not associated to a project. Please activate a "
-"document that is associated to the project you want to close, then choose "
-"Close Project again."
-msgstr ""
-
-#: kiledocmanager.cpp:1803
-msgid "Could Not Close Project"
-msgstr "परियोजना बन्द नइ कर सकिस"
-
-#: kiledocmanager.cpp:1873
-#, kde-format
-msgid "Nothing to clean for %1"
-msgstr " %1 बर कुछ घलोक साफ नइ करना हे"
-
-#: kiledocmanager.cpp:1874 kiledocmanager.cpp:1884 kile.cpp:746 kile.cpp:822
-#: kile.cpp:2089
-msgid "Clean"
-msgstr "साफ"
-
-#: kiledocmanager.cpp:1883
-#, fuzzy, kde-format
-#| msgid "Cleaning %1 : %2"
-msgid "Cleaning %1: %2"
-msgstr "साफ करत हे %1 : %2"
-
-#: kiledocmanager.cpp:1933
-msgid "Switch Project"
-msgstr "परियोजना स्विच करव"
-
-#: kiledocmanager.cpp:1992
-msgid "Select Files to Remove"
-msgstr "मिटाय बर फाइल चुनव"
-
-#: kiledocmanager.cpp:2006 kiledocmanager.cpp:2009
-msgid "Show Project Files"
-msgstr "परियोजना फाइल देखाव"
-
-#: kiledocmanager.cpp:2006 kiledocmanager.cpp:2056
-msgid "project configuration file"
-msgstr "परियोजना कान्फिगरेसन फाइल"
-
-#: kiledocmanager.cpp:2009 kiledocmanager.cpp:2059
-msgid "graphics file"
-msgstr "ग्राफिक्स फाइल"
-
-#: kiledocmanager.cpp:2056 kiledocmanager.cpp:2059
-msgid "Open All Project Files"
-msgstr "सब्बो परियोजना फाइल खोलव"
-
-#: kiledocmanager.cpp:2093
-#, kde-format
-msgid "not opened: %1 (%2)"
-msgstr ""
-
-#: kiledocmanager.cpp:2118 kiledocmanager.cpp:2155
-msgid "Project Files"
-msgstr "परियोजना फाइल"
-
-#: kiledocmanager.cpp:2126 kiledocmanager.cpp:2164
-msgid "Could not determine the selected file."
-msgstr ""
-
-#: kiledocmanager.cpp:2126 kiledocmanager.cpp:2164
-msgid "Project Error"
-msgstr "परियोजना गलती"
-
-#: kiledocmanager.cpp:2248
-#, fuzzy
-#| msgid "Open Project..."
-msgid "Opening Project..."
-msgstr "परियोजना खोलव..."
-
-#: kiledocmanager.cpp:2251
-msgid "Scanning project files..."
-msgstr "परियोजना फाइल मन ल स्कैन करत हे ..."
-
-#: editorcommands.cpp:55
-msgid "All documents saved to disk."
-msgstr ""
-
-#: editorcommands.cpp:56
-#, fuzzy
-#| msgid "Starting view of PDF document"
-msgid "Saving of all documents failed."
-msgstr "पीडीएफ कागद के सुरू के दृस्य"
-
-#: editorcommands.cpp:61
-#, fuzzy
-#| msgid "Documentation"
-msgid "Document saved to disk."
-msgstr "कागद लिखना"
-
-#: editorcommands.cpp:62
-#, fuzzy
-#| msgid "Scanning project files..."
-msgid "Saving document failed."
-msgstr "परियोजना फाइल मन ल स्कैन करत हे ..."
-
-#: editorcommands.cpp:76
-msgid "Saving failed and quitting canceled."
-msgstr ""
-
-#: editorkeysequencemanager.cpp:253
-#, kde-format
-msgid "Script execution of %1"
-msgstr ""
-
-#: kileactions.cpp:331
-msgid "&Label:"
-msgstr "लेबल: (&L)"
-
-#: main.cpp:77
-msgid "StandardInput.tex"
-msgstr ""
-
-#: main.cpp:109
-msgid "KDE Integrated LaTeX Environment"
-msgstr "केडीई एकीकृत लेटेक्स वातावरन"
-
-#: main.cpp:111
-#, fuzzy
-msgid "by the Kile Team (2003 - 2012)"
-msgstr "काइल टोली द्वारा (2003 - 2008)"
-
-#: main.cpp:114
-msgid "Michel Ludwig"
-msgstr ""
-
-#: main.cpp:114
-msgid "Project Management/Developer"
-msgstr ""
-
-#: main.cpp:115
-msgid "Thomas Braun"
-msgstr ""
-
-#: main.cpp:115 main.cpp:116
-#, fuzzy
-#| msgid "former developer"
-msgid "Former Developer"
-msgstr "पहिली के डेवलपर"
-
-#: main.cpp:116
-msgid "Holger Danielsson"
-msgstr ""
-
-#: main.cpp:117
-msgid "Jeroen Wijnhout"
-msgstr ""
-
-#: main.cpp:117
-#, fuzzy
-#| msgid "former maintainer/developer"
-msgid "Former Maintainer/Developer"
-msgstr "पहिली के मेंटेनर/डेवलपर"
-
-#: main.cpp:118
-msgid "Brachet Pascal"
-msgstr ""
-
-#: main.cpp:120
-msgid "Andrius Štikonas"
-msgstr ""
-
-#: main.cpp:120
-msgid "Migration from Subversion to Git"
-msgstr ""
-
-#: main.cpp:121
-msgid "Simon Martin"
-msgstr ""
-
-#: main.cpp:121
-#, fuzzy
-#| msgid "KConfig XT, various improvements and bugfixing"
-msgid "KConfig XT, Various Improvements and Bug-Fixing"
-msgstr "के-कान्फिग एक्सटी, विविध सुधार अउ बग-फिक्सिंग"
-
-#: main.cpp:122
-msgid "Roland Schulz"
-msgstr ""
-
-#: main.cpp:122
-#, fuzzy
-#| msgid "KatePart integration"
-msgid "KatePart Integration"
-msgstr "केएटीई-पार्ट एकीकरन"
-
-#: main.cpp:123
-msgid "Thorsten Lück"
-msgstr ""
-
-#: main.cpp:123
-msgid "Log Parsing"
-msgstr "लाग पारसिंग"
-
-#: main.cpp:124
-msgid "Jan-Marek Glogowski"
-msgstr ""
-
-#: main.cpp:124
-#, fuzzy
-#| msgid "Find in Files dialog"
-msgid "Find-in-Files Dialog"
-msgstr "फाइल गोठ मं खोजव"
-
-#: main.cpp:125
-msgid "Jonathan Pechta"
-msgstr ""
-
-#: main.cpp:125 main.cpp:126
-msgid "Documentation"
-msgstr "कागद लिखना"
-
-#: main.cpp:126
-msgid "Federico Zenith"
-msgstr ""
-
-#: main.cpp:130
-msgid "Jump to line"
-msgstr "लकीर मं जाव"
-
-#: main.cpp:131
-msgid "Start a new Kile mainwindow"
-msgstr "नवा काइल मुख्य-विंडो चालू करव"
-
-#: main.cpp:132
-#, fuzzy
-msgid "Files to open"
-msgstr "खोले बर फाइल"
-
-#: main.cpp:133
-msgid "Read from stdin"
-msgstr ""
-
-#: kileerrorhandler.cpp:106 outputfilter.cpp:78
-msgid "Cannot open log file; did you run LaTeX?"
-msgstr "लाग फाइल ल खोल नइ सकिस; का आप मन लेटेक्स चलाय हे?"
-
-#: kileerrorhandler.cpp:147
-#, kde-format
-msgid "Detecting errors (%1), please wait ..."
-msgstr "गलतीयों (%1) के पता लगिसया जात हे,... किरपा करके, अगोरव..."
-
-#: kileerrorhandler.cpp:147 kileerrorhandler.cpp:153
-msgid "Log"
-msgstr "लाग"
-
-#: kileerrorhandler.cpp:153
-msgid "Done."
-msgstr "पूरा."
-
-#: kileerrorhandler.cpp:204
-msgid "No LaTeX errors detected."
-msgstr "कोई लेटेक्स गलतीयों के पता नइ लगा."
-
-#: kileextensions.cpp:57
-msgid "(La)TeX Source Files"
-msgstr "(ले)टेक्स स्रोत फाइल"
-
-#: kileextensions.cpp:61
-msgid "(La)TeX Packages"
-msgstr "(ले)टेक्स पैकेजेस"
-
-#: kileextensions.cpp:65
-msgid "BibTeX Files"
-msgstr "बिबटेक्स फाइल"
-
-#: kileextensions.cpp:69
-msgid "Metapost Files"
-msgstr "मेटापोस्ट फाइल"
-
-#: kileextensions.cpp:73
-msgid "Kile Script Files"
-msgstr ""
-
-#: kileextensions.cpp:77
-msgid "Kile Project Files"
-msgstr "काइल परियोजना फाइल"
-
-#: kilehelp.cpp:122
-#, kde-format
-msgid ""
-"Could not find the teTeX documentation at %1; set the correct path in "
-"Settings->Configure Kile->Help."
-msgstr ""
-
-#: kilehelp.cpp:290
-#, fuzzy, kde-format
-msgid "No help available for %1."
-msgstr "खेद हे, %1 बर कोनो मदद नइ मिलत हे."
-
-#: kileinfo.cpp:317
-msgid "Undefined"
-msgstr ""
-
-#: kileinfo.cpp:319
-msgid "Text"
-msgstr ""
-
-#: kileinfo.cpp:323 kile.cpp:924
-msgid "BibTeX"
-msgstr ""
-
-#: kileinfo.cpp:325
-msgid "Script"
-msgstr "स्क्रिप्ट"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -5771,6 +5235,837 @@ msgstr "चिनहाः"
 msgid "Restore Default Tools..."
 msgstr "डिफाल्ट मं रीसेट करव (&R)"
 
+#: editorcommands.cpp:55
+msgid "All documents saved to disk."
+msgstr ""
+
+#: editorcommands.cpp:56
+#, fuzzy
+#| msgid "Starting view of PDF document"
+msgid "Saving of all documents failed."
+msgstr "पीडीएफ कागद के सुरू के दृस्य"
+
+#: editorcommands.cpp:61
+#, fuzzy
+#| msgid "Documentation"
+msgid "Document saved to disk."
+msgstr "कागद लिखना"
+
+#: editorcommands.cpp:62
+#, fuzzy
+#| msgid "Scanning project files..."
+msgid "Saving document failed."
+msgstr "परियोजना फाइल मन ल स्कैन करत हे ..."
+
+#: editorcommands.cpp:76
+msgid "Saving failed and quitting canceled."
+msgstr ""
+
+#: editorkeysequencemanager.cpp:253
+#, kde-format
+msgid "Script execution of %1"
+msgstr ""
+
+#: kileactions.cpp:331
+msgid "&Label:"
+msgstr "लेबल: (&L)"
+
+#: main.cpp:77
+msgid "StandardInput.tex"
+msgstr ""
+
+#: main.cpp:109
+msgid "KDE Integrated LaTeX Environment"
+msgstr "केडीई एकीकृत लेटेक्स वातावरन"
+
+#: main.cpp:111
+#, fuzzy
+msgid "by the Kile Team (2003 - 2012)"
+msgstr "काइल टोली द्वारा (2003 - 2008)"
+
+#: main.cpp:114
+msgid "Michel Ludwig"
+msgstr ""
+
+#: main.cpp:114
+msgid "Project Management/Developer"
+msgstr ""
+
+#: main.cpp:115
+msgid "Thomas Braun"
+msgstr ""
+
+#: main.cpp:115 main.cpp:116
+#, fuzzy
+#| msgid "former developer"
+msgid "Former Developer"
+msgstr "पहिली के डेवलपर"
+
+#: main.cpp:116
+msgid "Holger Danielsson"
+msgstr ""
+
+#: main.cpp:117
+msgid "Jeroen Wijnhout"
+msgstr ""
+
+#: main.cpp:117
+#, fuzzy
+#| msgid "former maintainer/developer"
+msgid "Former Maintainer/Developer"
+msgstr "पहिली के मेंटेनर/डेवलपर"
+
+#: main.cpp:118
+msgid "Brachet Pascal"
+msgstr ""
+
+#: main.cpp:120
+msgid "Andrius Štikonas"
+msgstr ""
+
+#: main.cpp:120
+msgid "Migration from Subversion to Git"
+msgstr ""
+
+#: main.cpp:121
+msgid "Simon Martin"
+msgstr ""
+
+#: main.cpp:121
+#, fuzzy
+#| msgid "KConfig XT, various improvements and bugfixing"
+msgid "KConfig XT, Various Improvements and Bug-Fixing"
+msgstr "के-कान्फिग एक्सटी, विविध सुधार अउ बग-फिक्सिंग"
+
+#: main.cpp:122
+msgid "Roland Schulz"
+msgstr ""
+
+#: main.cpp:122
+#, fuzzy
+#| msgid "KatePart integration"
+msgid "KatePart Integration"
+msgstr "केएटीई-पार्ट एकीकरन"
+
+#: main.cpp:123
+msgid "Thorsten Lück"
+msgstr ""
+
+#: main.cpp:123
+msgid "Log Parsing"
+msgstr "लाग पारसिंग"
+
+#: main.cpp:124
+msgid "Jan-Marek Glogowski"
+msgstr ""
+
+#: main.cpp:124
+#, fuzzy
+#| msgid "Find in Files dialog"
+msgid "Find-in-Files Dialog"
+msgstr "फाइल गोठ मं खोजव"
+
+#: main.cpp:125
+msgid "Jonathan Pechta"
+msgstr ""
+
+#: main.cpp:125 main.cpp:126
+msgid "Documentation"
+msgstr "कागद लिखना"
+
+#: main.cpp:126
+msgid "Federico Zenith"
+msgstr ""
+
+#: main.cpp:130
+msgid "Jump to line"
+msgstr "लकीर मं जाव"
+
+#: main.cpp:131
+msgid "Start a new Kile mainwindow"
+msgstr "नवा काइल मुख्य-विंडो चालू करव"
+
+#: main.cpp:132
+#, fuzzy
+msgid "Files to open"
+msgstr "खोले बर फाइल"
+
+#: main.cpp:133
+msgid "Read from stdin"
+msgstr ""
+
+#: kileerrorhandler.cpp:106 outputfilter.cpp:78
+msgid "Cannot open log file; did you run LaTeX?"
+msgstr "लाग फाइल ल खोल नइ सकिस; का आप मन लेटेक्स चलाय हे?"
+
+#: kileerrorhandler.cpp:147
+#, kde-format
+msgid "Detecting errors (%1), please wait ..."
+msgstr "गलतीयों (%1) के पता लगिसया जात हे,... किरपा करके, अगोरव..."
+
+#: kileerrorhandler.cpp:147 kileerrorhandler.cpp:153
+msgid "Log"
+msgstr "लाग"
+
+#: kileerrorhandler.cpp:153
+msgid "Done."
+msgstr "पूरा."
+
+#: kileerrorhandler.cpp:204
+msgid "No LaTeX errors detected."
+msgstr "कोई लेटेक्स गलतीयों के पता नइ लगा."
+
+#: kileextensions.cpp:57
+msgid "(La)TeX Source Files"
+msgstr "(ले)टेक्स स्रोत फाइल"
+
+#: kileextensions.cpp:61
+msgid "(La)TeX Packages"
+msgstr "(ले)टेक्स पैकेजेस"
+
+#: kileextensions.cpp:65
+msgid "BibTeX Files"
+msgstr "बिबटेक्स फाइल"
+
+#: kileextensions.cpp:69
+msgid "Metapost Files"
+msgstr "मेटापोस्ट फाइल"
+
+#: kileextensions.cpp:73
+msgid "Kile Script Files"
+msgstr ""
+
+#: kileextensions.cpp:77
+msgid "Kile Project Files"
+msgstr "काइल परियोजना फाइल"
+
+#: kilehelp.cpp:122
+#, kde-format
+msgid ""
+"Could not find the teTeX documentation at %1; set the correct path in "
+"Settings->Configure Kile->Help."
+msgstr ""
+
+#: kilehelp.cpp:290
+#, fuzzy, kde-format
+msgid "No help available for %1."
+msgstr "खेद हे, %1 बर कोनो मदद नइ मिलत हे."
+
+#: kileinfo.cpp:317
+msgid "Undefined"
+msgstr ""
+
+#: kileinfo.cpp:319
+msgid "Text"
+msgstr ""
+
+#: kileinfo.cpp:323 kile.cpp:924
+msgid "BibTeX"
+msgstr ""
+
+#: kileinfo.cpp:325
+msgid "Script"
+msgstr "स्क्रिप्ट"
+
+#: kile.cpp:264
+msgid ""
+"You have defined some tools in the User menu. From now on these tools will "
+"be available from the Build->Other menu and can be configured in the "
+"configuration dialog (go to the Settings menu and choose Configure Kile). "
+"This has some advantages; your own tools can now be used in a QuickBuild "
+"command if you wish."
+msgstr ""
+
+#: kile.cpp:264
+msgid "User Tools Detected"
+msgstr "कमइया औजार के पता चलिस"
+
+#: kile.cpp:270
+msgid ""
+"The standard tool list need to be reloaded because of the switch from KDE3 "
+"to KDE4. This will overwrite any changes in the tools you have made. Do you "
+"want to reload the list now (recommended)?"
+msgstr ""
+
+#: kile.cpp:271
+msgid "Tools need to be updated"
+msgstr ""
+
+#: kile.cpp:384
+msgid "Normal Mode"
+msgstr "सामान्य मोड"
+
+#: kile.cpp:400
+msgid "Open File"
+msgstr "फाइल खोलव"
+
+#: kile.cpp:419
+msgid "Files and Projects"
+msgstr "फाइल अउ परियोजना"
+
+#: kile.cpp:445 widgets/structurewidget.cpp:135
+msgid "Structure"
+msgstr "स्ट्रक्चर"
+
+#: kile.cpp:458
+msgid "Scripts"
+msgstr "स्क्रिप्ट्स"
+
+#: kile.cpp:487
+msgid "Symbols"
+msgstr "चिनहा"
+
+#: kile.cpp:490
+msgid "Most Frequently Used"
+msgstr ""
+
+#: kile.cpp:496
+msgid "Relation"
+msgstr "सम्बन्ध"
+
+#: kile.cpp:501
+msgid "Operators"
+msgstr ""
+
+#: kile.cpp:506
+msgid "Arrows"
+msgstr "तीर चिनहा"
+
+#: kile.cpp:511
+msgid "Miscellaneous Math"
+msgstr "विविध मैथ"
+
+#: kile.cpp:516
+msgid "Miscellaneous Text"
+msgstr "विविध पाठ"
+
+#: kile.cpp:521
+msgid "Delimiters"
+msgstr "डेलिमीटर्स"
+
+#: kile.cpp:526
+msgid "Greek"
+msgstr ""
+
+#: kile.cpp:536
+msgid "Cyrillic Characters"
+msgstr "साइरिलिक अक्छर"
+
+#: kile.cpp:541
+msgid "User Defined"
+msgstr ""
+
+#: kile.cpp:546
+msgid ""
+"<p>Move the mouse over the icons to see the corresponding LaTeX commands.<br/"
+">Click on an image to insert the corresponding command, additionally "
+"pressing \"Shift\" inserts it in math mode, pressing \"Ctrl\" in curly "
+"brackets.</p>"
+msgstr ""
+
+#: kile.cpp:564 widgets/codecompletionconfigwidget.cpp:56
+msgid "Abbreviation"
+msgstr "संक्छिप्त"
+
+#: kile.cpp:593
+msgid "Log and Messages"
+msgstr "लाग अउ संदेस"
+
+#: kile.cpp:599
+msgid "Output"
+msgstr "आउटपुट"
+
+#: kile.cpp:608
+msgid "Konsole"
+msgstr "कंसोल"
+
+#: kile.cpp:689
+msgid "Save All"
+msgstr "सब्बो सहेजव"
+
+#: kile.cpp:690
+msgid "Save Copy As..."
+msgstr ""
+
+#: kile.cpp:691
+msgid "Create Template From Document..."
+msgstr "कागद से टैम्प्लेट तैयार करव..."
+
+#: kile.cpp:692
+msgid "&Remove Template..."
+msgstr "टैम्प्लेट मेटाव... (&R)"
+
+#: kile.cpp:694 kile.cpp:803
+msgid "Close All"
+msgstr "सब्बो बंद करव"
+
+#: kile.cpp:695
+msgid "Close All Ot&hers"
+msgstr "अउ दूसर सब्बो ल बंद करव (&h)"
+
+#: kile.cpp:696
+msgid "S&tatistics"
+msgstr "सांख्यिकी (&t)"
+
+#: kile.cpp:697
+msgid "&ASCII"
+msgstr "ओस्की (&A)"
+
+#: kile.cpp:698
+msgid "Latin-&1 (iso 8859-1)"
+msgstr "लेटिन-&1 (आईएसओ 8859-1)"
+
+#: kile.cpp:699
+msgid "Latin-&2 (iso 8859-2)"
+msgstr "लेटिन-&2 (आईएसओ 8859-2)"
+
+#: kile.cpp:700
+msgid "Latin-&3 (iso 8859-3)"
+msgstr "लेटिन-&3 (आईएसओ 8859-3)"
+
+#: kile.cpp:701
+msgid "Latin-&4 (iso 8859-4)"
+msgstr "लेटिन-&4 (आईएसओ 8859-4)"
+
+#: kile.cpp:702
+msgid "Latin-&5 (iso 8859-5)"
+msgstr "लेटिन-&5 (आईएसओ 8859-5)"
+
+#: kile.cpp:703
+msgid "Latin-&9 (iso 8859-9)"
+msgstr "लेटिन-&9 (आईएसओ 8859-9)"
+
+#: kile.cpp:704
+msgid "&Central European (cp-1250)"
+msgstr "मध्य यूरोपीय (cp-1250) (&C)"
+
+#: kile.cpp:705
+msgid "&Western European (cp-1252)"
+msgstr "मध्य यूरोपीय (cp-1252) (&W) "
+
+#: kile.cpp:708
+msgid "Move Tab Left"
+msgstr ""
+
+#: kile.cpp:709
+msgid "Move Tab Right"
+msgstr ""
+
+#: kile.cpp:711
+msgid "Next section"
+msgstr "अगला खन्ड"
+
+#: kile.cpp:712
+msgid "Prev section"
+msgstr "पिछला खन्ड"
+
+#: kile.cpp:713
+msgid "Next paragraph"
+msgstr "अगला पैराग्राफ"
+
+#: kile.cpp:714
+msgid "Prev paragraph"
+msgstr "पिछला पैराग्राफ"
+
+#: kile.cpp:716
+msgid "Find &in Files..."
+msgstr "फाइल मन मं ढूढें... (&i) "
+
+#: kile.cpp:718
+msgid "Refresh Str&ucture"
+msgstr "स्ट्रक्चर ताजा करव (&u)"
+
+#: kile.cpp:721
+msgid "&New Project..."
+msgstr "नवा परियोजना... (&N)"
+
+#: kile.cpp:722
+msgid "&Open Project..."
+msgstr "परियोजना खोलव... (&O)"
+
+#: kile.cpp:724
+msgid "Open &Recent Project"
+msgstr "अभी हाल के परियोजना खोलव (&R)"
+
+#: kile.cpp:731
+msgid "A&dd Files to Project..."
+msgstr "परियोजना मं फाइल मन ल जोड़व... (&d)"
+
+#: kile.cpp:732 widgets/projectview.cpp:832
+msgid "Refresh Project &Tree"
+msgstr "परियोजना ट्री ताजा करव (&T)"
+
+#: kile.cpp:733 widgets/projectview.cpp:836
+msgid "&Archive"
+msgstr "अभिलेखागार (&A)"
+
+#: kile.cpp:734 widgets/projectview.cpp:834
+msgid "Project &Options"
+msgstr "परियोजना विकल्प (&O)"
+
+#: kile.cpp:735
+msgid "&Close Project"
+msgstr "परियोजना बन्द करव (&C)"
+
+#: kile.cpp:738
+msgid "&Show Projects..."
+msgstr "परियोजना देखाव... (&S)"
+
+#: kile.cpp:739
+msgid "Re&move Files From Project..."
+msgstr "परियोजना से फाइल मेटाव... (&m)"
+
+#: kile.cpp:740
+msgid "Show Project &Files..."
+msgstr "परियोजना फाइल देखाव... (&F)"
+
+#: kile.cpp:742 widgets/projectview.cpp:829
+msgid "Open All &Project Files"
+msgstr "सब्बो परियोजना फाइल खोलव (&P)"
+
+#: kile.cpp:743
+msgid "Find in &Project..."
+msgstr "परियोजना मं खोजव... (&P)"
+
+#: kile.cpp:746 kile.cpp:822 kile.cpp:2089 kiledocmanager.cpp:1888
+#: kiledocmanager.cpp:1898
+msgid "Clean"
+msgstr "साफ"
+
+#: kile.cpp:747
+msgid "&Stop"
+msgstr "रुकव (&S)"
+
+#: kile.cpp:750
+msgid "View Log File"
+msgstr "लाग फाइल देखव"
+
+#: kile.cpp:752
+msgid "Previous LaTeX Error"
+msgstr "पिछला लेटेक्स गलती"
+
+#: kile.cpp:754
+msgid "Next LaTeX Error"
+msgstr "अगला लेटेक्स गलती"
+
+#: kile.cpp:756
+msgid "Previous LaTeX Warning"
+msgstr "पिछला लेटेक्स चेतावनी"
+
+#: kile.cpp:758
+msgid "Next LaTeX Warning"
+msgstr "अगला लेटेक्स चेतावनी"
+
+#: kile.cpp:760
+msgid "Previous LaTeX BadBox"
+msgstr "पिछला लेटेक्स बैड-बाक्स"
+
+#: kile.cpp:762
+msgid "Next LaTeX BadBox"
+msgstr "अगला लेटेक्स बैड-बाक्स"
+
+#: kile.cpp:765
+msgid "Return to Editor"
+msgstr ""
+
+#: kile.cpp:766
+msgid "Next Document"
+msgstr "अगला कागद"
+
+#: kile.cpp:767
+msgid "Previous Document"
+msgstr "पिछला कागद"
+
+#: kile.cpp:768
+msgid "Focus Log/Messages View"
+msgstr "फोकस लाग/संदेस दृस्य"
+
+#: kile.cpp:769
+msgid "Focus Output View"
+msgstr "आउटपुट दृस्य फोकस करव"
+
+#: kile.cpp:770
+msgid "Focus Konsole View"
+msgstr "कंसोल दृस्य फोकस करव"
+
+#: kile.cpp:771
+msgid "Focus Editor View"
+msgstr "संपादक दृस्य फोकस करव"
+
+#: kile.cpp:773
+#, fuzzy
+msgctxt "@action: Starts the completion of the current LaTeX command"
+msgid "Complete (La)TeX Command"
+msgstr "(ले)टेक्स कमांड"
+
+#: kile.cpp:774
+#, fuzzy
+msgctxt "@action: Starts the input (and completion) of a LaTeX environment"
+msgid "Complete LaTeX Environment"
+msgstr "कोड एनवायरनमेंट (&C)"
+
+#: kile.cpp:775
+#, fuzzy
+#| msgid "Delete Abbreviation"
+msgctxt "@action: Starts the completion of the current abbreviation"
+msgid "Complete Abbreviation"
+msgstr "संक्छिप्त मेटाव"
+
+#: kile.cpp:777
+msgid "Next Bullet"
+msgstr "अगला गोली"
+
+#: kile.cpp:778
+msgid "Prev Bullet"
+msgstr "पिछला गोली"
+
+#: kile.cpp:781 kile.cpp:790
+msgid "Environment (inside)"
+msgstr "वातावरन (अंदर)"
+
+#: kile.cpp:782 kile.cpp:791
+msgid "Environment (outside)"
+msgstr "वातावरन (बाहिर)"
+
+#: kile.cpp:783 kile.cpp:792
+msgid "TeX Group (inside)"
+msgstr "टेक्स समूह (अंदर)"
+
+#: kile.cpp:784 kile.cpp:793
+msgid "TeX Group (outside)"
+msgstr "टेक्स समूह (बाहिर)"
+
+#: kile.cpp:785 kile.cpp:794
+msgid "Math Group"
+msgstr "मैथ समूह"
+
+#: kile.cpp:786 kile.cpp:795
+msgid "Paragraph"
+msgstr "पैराग्राफ"
+
+#: kile.cpp:787
+msgid "Line"
+msgstr "पंक्ति"
+
+#: kile.cpp:788 kile.cpp:797
+msgid "TeX Word"
+msgstr "टेक्स सब्द"
+
+#: kile.cpp:796
+msgid "To End of Line"
+msgstr ""
+
+#: kile.cpp:799 kile.cpp:805
+msgid "Go to Begin"
+msgstr "सुरू मं जाव"
+
+#: kile.cpp:800 kile.cpp:806
+msgid "Go to End"
+msgstr "आखरी मं जाव"
+
+#: kile.cpp:801 kile.cpp:807
+msgid "Match"
+msgstr "मिलाव"
+
+#: kile.cpp:802 kile.cpp:808
+msgid "Close"
+msgstr "बंद करव"
+
+#: kile.cpp:810
+msgid "Selection"
+msgstr "चयन"
+
+#: kile.cpp:812
+msgid "Subdocument"
+msgstr "उपकागद"
+
+#: kile.cpp:813
+msgid "Mathgroup"
+msgstr "गनितसमूह"
+
+#: kile.cpp:818
+msgid "&Bibliography"
+msgstr "ग्रन्थ सूची (&B)"
+
+#: kile.cpp:827
+msgid "Settings for BibTeX"
+msgstr ""
+
+#: kile.cpp:831
+msgid "Settings for Biblatex"
+msgstr ""
+
+#: kile.cpp:838 kile.cpp:2199
+msgid "Quick Start"
+msgstr "क्विक स्टार्ट"
+
+#: kile.cpp:841 kilestdactions.cpp:376
+msgid "Array"
+msgstr "ऐरे"
+
+#: kile.cpp:842 kile.cpp:2251 kilestdactions.cpp:78
+msgid "Tabbing"
+msgstr "टैबिंग"
+
+#: kile.cpp:843
+msgid "Floats"
+msgstr ""
+
+#: kile.cpp:847
+msgid "Define Current Document as '&Master Document'"
+msgstr "अभी हाल के कागद ल 'मुख्य कागद' के रूप मं परिभासित करव (&M)"
+
+#: kile.cpp:852
+msgid "Show S&ide Bar"
+msgstr "बाजू-पट्टी देखाव (&i)"
+
+#: kile.cpp:858
+msgid "Show Mess&ages Bar"
+msgstr "संदेस पट्टी देखाव (&a)"
+
+#: kile.cpp:870
+msgid "Watch File Mode"
+msgstr "फाइल मोड देखव"
+
+#: kile.cpp:887
+msgid "TeX Guide"
+msgstr "टेक्स गाइड"
+
+#: kile.cpp:889
+msgid "LaTeX Command"
+msgstr "लेटेक्स कमांड"
+
+#: kile.cpp:890
+msgid "LaTeX Subject"
+msgstr "लेटेक्स विसय"
+
+#: kile.cpp:891
+msgid "LaTeX Env"
+msgstr "लेटेक्स एन्व"
+
+#: kile.cpp:892
+msgid "Context Help"
+msgstr "कान्टेक्स्ट मदद"
+
+#: kile.cpp:895
+msgid "LaTeX Reference"
+msgstr "लेटेक्स संदर्भ"
+
+#: kile.cpp:900
+#, fuzzy
+#| msgid "No bibliographies found."
+msgid "&About Editor Component"
+msgstr "कोई ग्रन्थ सूची नइ मिलिस."
+
+#: kile.cpp:908
+msgid "&System Check..."
+msgstr "तंत्र जांच... (&S)"
+
+#: kile.cpp:927
+msgid "Biblatex"
+msgstr ""
+
+#: kile.cpp:1079 widgets/toolconfigwidget.cpp:76
+msgid "Compile"
+msgstr "कम्पाइल"
+
+#: kile.cpp:1080 widgets/toolconfigwidget.cpp:78
+msgid "View"
+msgstr ""
+
+#: kile.cpp:1081 widgets/toolconfigwidget.cpp:77
+msgid "Convert"
+msgstr "बदलव"
+
+#: kile.cpp:1082 widgets/toolconfigwidget.cpp:75
+msgid "Quick"
+msgstr "क्विक"
+
+#: kile.cpp:1201
+msgid "Edit User Tags..."
+msgstr "कमइया टैग्स के संपादन करव..."
+
+#: kile.cpp:1375
+#, kde-format
+msgid "Project: %1"
+msgstr "परियोजना: %1"
+
+#: kile.cpp:1378
+#, kde-format
+msgid "Project: %1 (Master document: %2)"
+msgstr "परियोजना: %1 (मुख्य कागद: %2)"
+
+#: kile.cpp:1384
+msgid "Normal mode"
+msgstr "सामान्य मोड"
+
+#: kile.cpp:1387
+#, kde-format
+msgid "Master document: %1"
+msgstr "मुख्य कागद: %1"
+
+#: kile.cpp:1392 kile.cpp:2551
+msgid "Define Current Document as 'Master Document'"
+msgstr "अभी हाल के कागद ल 'मुख्य कागद' के रूप मं परिभासित करव"
+
+#: kile.cpp:1396 kile.cpp:2544
+#, kde-format
+msgid "Normal mode (current master document: %1)"
+msgstr "सामान्य मोड (अभी हाल के मुख्य कागद: %1)"
+
+#: kile.cpp:2082
+msgid "There is no active document or it is not saved."
+msgstr "इहां कोनो सक्रिय कागद नइ हे या एला सहेजे नइ गे हे."
+
+#: kile.cpp:2170
+#, kde-format
+msgid "You have to include the package %1."
+msgstr ""
+
+#: kile.cpp:2170 kile.cpp:2173
+msgid "Insert text"
+msgstr "पाठ भरव"
+
+#: kile.cpp:2173
+#, kde-format
+msgid "You have to include the packages %1."
+msgstr ""
+
+#: kile.cpp:2313
+msgid "Edit User Tags"
+msgstr "कमइया टैग्स के संपादन करव"
+
+#: kile.cpp:2337 kile.cpp:2375
+msgid "no name"
+msgstr "कोई नाम नइ"
+
+#: kile.cpp:2567
+msgid ""
+"In order to define the current document as a master document, it has to be "
+"saved first."
+msgstr "अभी हाल के कागद ल मुख्य कागद के रूप मं परिभासित करे बर एला पहिली सहेजना होही."
+
+#: kile.cpp:2622
+msgid ""
+"Please turn off the 'Master Document' mode before performing the System "
+"Check."
+msgstr ""
+
+#: kile.cpp:2872
+#, kde-format
+msgid "Line: %1 Col: %2"
+msgstr "पंक्ति: %1 खंभा: %2"
+
+#: kile.cpp:2900
+msgctxt "@info:status status bar label for block selection mode"
+msgid "BLOCK"
+msgstr ""
+
+#: kile.cpp:2901
+msgctxt "@info:status status bar label for line selection mode"
+msgid "LINE"
+msgstr ""
+
 #: kilelistselector.cpp:137
 #, fuzzy
 #| msgid "Delete Files"
@@ -6244,10 +6539,6 @@ msgstr "\\item[label] हेलो!"
 #: kilestdactions.cpp:78
 msgid "Tabbing - \\begin{tabbing}"
 msgstr "टैबिंग - \\begin{tabbing}"
-
-#: kilestdactions.cpp:78 kile.cpp:842 kile.cpp:2251
-msgid "Tabbing"
-msgstr "टैबिंग"
 
 #: kilestdactions.cpp:78
 msgid ""
@@ -7278,10 +7569,6 @@ msgstr ""
 msgid "Array - \\begin{array}"
 msgstr "ऐरे - \\begin{array}"
 
-#: kilestdactions.cpp:376 kile.cpp:841
-msgid "Array"
-msgstr "ऐरे"
-
 #: kilestdactions.cpp:377
 msgid ""
 "\\begin{array}{col1col2...coln}\n"
@@ -7715,6 +8002,305 @@ msgstr "एकत्रित - \\begin{gather}"
 msgid "Bmatrix"
 msgstr ""
 
+#: kiledocmanager.cpp:122
+msgid "No editor component found. Please check your KDE installation."
+msgstr ""
+
+#: kiledocmanager.cpp:123
+#, fuzzy
+#| msgid "No bibliographies found."
+msgid "No editor component found."
+msgstr "कोई ग्रन्थ सूची नइ मिलिस."
+
+#: kiledocmanager.cpp:180
+msgid ""
+"The internal structure of Kile is corrupted (probably due to a bug in Kile). "
+"Please select Save All from the File menu and close Kile.\n"
+"The Kile team apologizes for any inconvenience and would appreciate a bug "
+"report."
+msgstr ""
+
+#: kiledocmanager.cpp:658
+#, kde-format
+msgid "Could not find template: %1"
+msgstr "टैम्प्लेट: %1 नइ खोज सकिस"
+
+#: kiledocmanager.cpp:658
+msgid "File Not Found"
+msgstr "फाइल नइ मिलिस"
+
+#: kiledocmanager.cpp:716
+msgid "Please save the file first."
+msgstr "किरपा करके, पहिली फाइल मन ल सहेजव."
+
+#: kiledocmanager.cpp:721
+msgid "Open/create a document first."
+msgstr "पहिली कागद खोलव/बनाव."
+
+#: kiledocmanager.cpp:729
+msgid "A template for this type of document cannot be created."
+msgstr ""
+
+#: kiledocmanager.cpp:733
+msgid "Create Template From Document"
+msgstr "कागद से टैम्प्लेट तैयार करव"
+
+#: kiledocmanager.cpp:739
+msgid "Remove Template"
+msgstr "टैम्प्लेट मेटाव"
+
+#: kiledocmanager.cpp:801
+msgid "Open Files"
+msgstr "फाइल मन ल खोलव"
+
+#: kiledocmanager.cpp:909
+#, fuzzy, kde-format
+msgid ""
+"The file %1 could not be saved, check the permissions and free disk space."
+msgstr "फाइल %1/%2 मौजूद नइ हे. यदि आप मन ल आस्चर्य हे तहां फाइल अनुमति जांचव."
+
+#: kiledocmanager.cpp:910
+msgid "Autosave"
+msgstr "अपने अपन-सहेजव"
+
+#: kiledocmanager.cpp:921
+#, kde-format
+msgid ""
+"Kile encountered problems while saving the file %1. Do you have enough free "
+"disk space left?"
+msgstr ""
+
+#: kiledocmanager.cpp:922
+msgid "Saving"
+msgstr "सहेजत हे"
+
+#: kiledocmanager.cpp:1028
+msgid "Save File"
+msgstr "फाइल सहेजव"
+
+#: kiledocmanager.cpp:1038
+#, fuzzy, kde-format
+#| msgid ""
+#| "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
+msgid ""
+"A file with the name \"%1\" exists already. Do you want to overwrite it?"
+msgstr ""
+"फाइल नाम \"%1\"  पहिली से ही अस्तित्व मं हावे. का आप मन एखर ऊपर ही मिटाकर लिखना "
+"चाहू?"
+
+#: kiledocmanager.cpp:1038
+#, fuzzy
+#| msgid "New File"
+msgid "Overwrite File?"
+msgstr "नवा फाइल"
+
+#: kiledocmanager.cpp:1038
+msgid "&Overwrite"
+msgstr ""
+
+#: kiledocmanager.cpp:1261
+msgid "Refresh Project Tree"
+msgstr "परियोजना ट्री रीफ्रेस करव"
+
+#: kiledocmanager.cpp:1269
+msgid ""
+"The current document is not associated to a project. Please activate a "
+"document that is associated to the project you want to build the tree for, "
+"then choose Refresh Project Tree again."
+msgstr ""
+
+#: kiledocmanager.cpp:1269
+msgid "Could Not Refresh Project Tree"
+msgstr "परियोजना रीफ्रेस नइ कर सकिस"
+
+#: kiledocmanager.cpp:1343 kiledocmanager.cpp:2039 kiledocmanager.cpp:2114
+#: kiledocmanager.cpp:2151
+msgid "Select Project"
+msgstr "परियोजना चुनव"
+
+#: kiledocmanager.cpp:1367 kiledocmanager.cpp:1383 kiledocmanager.cpp:1390
+msgid "Add to Project"
+msgstr "परियोजना मं जोड़व"
+
+#: kiledocmanager.cpp:1382
+#, kde-format
+msgid "The file %1 is already member of the project %2"
+msgstr ""
+
+#: kiledocmanager.cpp:1389
+#, kde-format
+msgid ""
+"The file %1 can not be added because it does not exist or is not readable"
+msgstr ""
+
+#: kiledocmanager.cpp:1408
+msgid ""
+"This file is the project file, which holds all the information about your "
+"project.  As such, it cannot be removed from the project."
+msgstr ""
+
+#: kiledocmanager.cpp:1408
+msgid "Cannot Remove File From Project"
+msgstr "परियोजना से फाइल नइ मिटा सके"
+
+#: kiledocmanager.cpp:1466
+msgid ""
+"The project you tried to open is already opened. If you wanted to reload the "
+"project, close the project before you re-open it."
+msgstr ""
+
+#: kiledocmanager.cpp:1466
+msgid "Project Already Open"
+msgstr "परियोजना पहिली ही खुले हे"
+
+#: kiledocmanager.cpp:1476
+#, kde-format
+msgid ""
+"The project file for the project \"%1\" does not exist or is not readable. "
+"Remove this project from the recent projects list?"
+msgstr ""
+
+#: kiledocmanager.cpp:1476
+msgid "Could Not Load Project File"
+msgstr "परियोजना फाइल ल लोड नइ कर सकिस"
+
+#: kiledocmanager.cpp:1573
+msgid ""
+"*.kilepr|Kile Project Files\n"
+"*|All Files"
+msgstr ""
+"*.kilepr|काइल परियोजना फाइल मन ल\n"
+"*|सब्बो फाइल मन ल"
+
+#: kiledocmanager.cpp:1573
+msgid "Open Project"
+msgstr "परियोजना खोलव"
+
+#: kiledocmanager.cpp:1594
+msgid "Save Project"
+msgstr "परियोजना सहेजव"
+
+#: kiledocmanager.cpp:1646
+msgid ""
+"The current document is not associated to a project. Please activate a "
+"document that is associated to the project you want to save, then choose "
+"Save Project again."
+msgstr ""
+
+#: kiledocmanager.cpp:1646
+msgid "Could Determine Active Project"
+msgstr "सक्रिय परियोजना निरधारित कर सकिस"
+
+#: kiledocmanager.cpp:1669
+msgid "Add Files to Project"
+msgstr "परियोजना मं फाइल मन ल जोड़व"
+
+#: kiledocmanager.cpp:1680
+msgid "*|All Files"
+msgstr "*|सब्बो फाइल मन ल"
+
+#: kiledocmanager.cpp:1684
+msgid "Add Files"
+msgstr "फाइल मन ल जोड़व"
+
+#: kiledocmanager.cpp:1700
+msgid ""
+"There are no projects opened. Please open the project you want to add files "
+"to, then choose Add Files again."
+msgstr ""
+
+#: kiledocmanager.cpp:1700 kiledocmanager.cpp:1735
+msgid "Could Not Determine Active Project"
+msgstr "सक्रिय परियोजना निरधारित नइ कर सकिस"
+
+#: kiledocmanager.cpp:1726
+msgid "Project Options For"
+msgstr "बर परियोजना विकल्प "
+
+#: kiledocmanager.cpp:1735
+msgid ""
+"The current document is not associated to a project. Please activate a "
+"document that is associated to the project you want to modify, then choose "
+"Project Options again."
+msgstr ""
+
+#: kiledocmanager.cpp:1763
+msgid "Close Project"
+msgstr "परियोजना बन्द करव"
+
+#: kiledocmanager.cpp:1817
+msgid ""
+"The current document is not associated to a project. Please activate a "
+"document that is associated to the project you want to close, then choose "
+"Close Project again."
+msgstr ""
+
+#: kiledocmanager.cpp:1817
+msgid "Could Not Close Project"
+msgstr "परियोजना बन्द नइ कर सकिस"
+
+#: kiledocmanager.cpp:1887
+#, kde-format
+msgid "Nothing to clean for %1"
+msgstr " %1 बर कुछ घलोक साफ नइ करना हे"
+
+#: kiledocmanager.cpp:1897
+#, fuzzy, kde-format
+#| msgid "Cleaning %1 : %2"
+msgid "Cleaning %1: %2"
+msgstr "साफ करत हे %1 : %2"
+
+#: kiledocmanager.cpp:1947
+msgid "Switch Project"
+msgstr "परियोजना स्विच करव"
+
+#: kiledocmanager.cpp:2006
+msgid "Select Files to Remove"
+msgstr "मिटाय बर फाइल चुनव"
+
+#: kiledocmanager.cpp:2020 kiledocmanager.cpp:2023
+msgid "Show Project Files"
+msgstr "परियोजना फाइल देखाव"
+
+#: kiledocmanager.cpp:2020 kiledocmanager.cpp:2070
+msgid "project configuration file"
+msgstr "परियोजना कान्फिगरेसन फाइल"
+
+#: kiledocmanager.cpp:2023 kiledocmanager.cpp:2073
+msgid "graphics file"
+msgstr "ग्राफिक्स फाइल"
+
+#: kiledocmanager.cpp:2070 kiledocmanager.cpp:2073
+msgid "Open All Project Files"
+msgstr "सब्बो परियोजना फाइल खोलव"
+
+#: kiledocmanager.cpp:2107
+#, kde-format
+msgid "not opened: %1 (%2)"
+msgstr ""
+
+#: kiledocmanager.cpp:2132 kiledocmanager.cpp:2169
+msgid "Project Files"
+msgstr "परियोजना फाइल"
+
+#: kiledocmanager.cpp:2140 kiledocmanager.cpp:2178
+msgid "Could not determine the selected file."
+msgstr ""
+
+#: kiledocmanager.cpp:2140 kiledocmanager.cpp:2178
+msgid "Project Error"
+msgstr "परियोजना गलती"
+
+#: kiledocmanager.cpp:2262
+#, fuzzy
+#| msgid "Open Project..."
+msgid "Opening Project..."
+msgstr "परियोजना खोलव..."
+
+#: kiledocmanager.cpp:2265
+msgid "Scanning project files..."
+msgstr "परियोजना फाइल मन ल स्कैन करत हे ..."
+
 #. i18n: file: tips:2
 #. i18n: ectx: @info:tipoftheday
 #: tips.cpp:3
@@ -8060,10 +8646,6 @@ msgstr "टेक्स/लेटेक्स"
 msgid "Dictionary"
 msgstr "सब्दकोस"
 
-#: widgets/codecompletionconfigwidget.cpp:56 kile.cpp:564
-msgid "Abbreviation"
-msgstr "संक्छिप्त"
-
 #: widgets/codecompletionconfigwidget.cpp:58
 msgid "Try to place the cursor."
 msgstr ""
@@ -8293,22 +8875,6 @@ msgstr "परियोजना से मेटाव (&R)"
 msgid "A&dd Files..."
 msgstr "फाइल मन ल जोड़व... (&d)"
 
-#: widgets/projectview.cpp:829 kile.cpp:742
-msgid "Open All &Project Files"
-msgstr "सब्बो परियोजना फाइल खोलव (&P)"
-
-#: widgets/projectview.cpp:832 kile.cpp:732
-msgid "Refresh Project &Tree"
-msgstr "परियोजना ट्री ताजा करव (&T)"
-
-#: widgets/projectview.cpp:834 kile.cpp:734
-msgid "Project &Options"
-msgstr "परियोजना विकल्प (&O)"
-
-#: widgets/projectview.cpp:836 kile.cpp:733
-msgid "&Archive"
-msgstr "अभिलेखागार (&A)"
-
 #: widgets/projectview.cpp:847
 msgid "&Close"
 msgstr "बंद (&C)"
@@ -8444,10 +9010,6 @@ msgstr "लकीर"
 msgid "Label: %1"
 msgstr "लेबल: %1"
 
-#: widgets/structurewidget.cpp:135 kile.cpp:445
-msgid "Structure"
-msgstr "स्ट्रक्चर"
-
 #: widgets/structurewidget.cpp:156
 msgid "No \"structure data\" to display."
 msgstr "प्रदर्सन बर कोनो \"स्ट्रक्चर डाटा\" नइ."
@@ -8577,22 +9139,6 @@ msgstr "पैकेज:"
 #| msgid "C&omment"
 msgid "Comment: "
 msgstr "टिप्पनी (&o)"
-
-#: widgets/toolconfigwidget.cpp:75 kile.cpp:1082
-msgid "Quick"
-msgstr "क्विक"
-
-#: widgets/toolconfigwidget.cpp:76 kile.cpp:1079
-msgid "Compile"
-msgstr "कम्पाइल"
-
-#: widgets/toolconfigwidget.cpp:77 kile.cpp:1081
-msgid "Convert"
-msgstr "बदलव"
-
-#: widgets/toolconfigwidget.cpp:78 kile.cpp:1080
-msgid "View"
-msgstr ""
 
 #: widgets/toolconfigwidget.cpp:111
 msgid "Run Outside of Kile"
@@ -8777,552 +9323,6 @@ msgstr "कोई ग्रन्थ सूची नइ मिलिस."
 msgid ""
 "Unable to find %1 or %2; if you are trying to view some other HTML file, go "
 "to Settings->Configure Kile->Tools->ViewHTML->Advanced."
-msgstr ""
-
-#: kile.cpp:264
-msgid ""
-"You have defined some tools in the User menu. From now on these tools will "
-"be available from the Build->Other menu and can be configured in the "
-"configuration dialog (go to the Settings menu and choose Configure Kile). "
-"This has some advantages; your own tools can now be used in a QuickBuild "
-"command if you wish."
-msgstr ""
-
-#: kile.cpp:264
-msgid "User Tools Detected"
-msgstr "कमइया औजार के पता चलिस"
-
-#: kile.cpp:270
-msgid ""
-"The standard tool list need to be reloaded because of the switch from KDE3 "
-"to KDE4. This will overwrite any changes in the tools you have made. Do you "
-"want to reload the list now (recommended)?"
-msgstr ""
-
-#: kile.cpp:271
-msgid "Tools need to be updated"
-msgstr ""
-
-#: kile.cpp:384
-msgid "Normal Mode"
-msgstr "सामान्य मोड"
-
-#: kile.cpp:400
-msgid "Open File"
-msgstr "फाइल खोलव"
-
-#: kile.cpp:419
-msgid "Files and Projects"
-msgstr "फाइल अउ परियोजना"
-
-#: kile.cpp:458
-msgid "Scripts"
-msgstr "स्क्रिप्ट्स"
-
-#: kile.cpp:487
-msgid "Symbols"
-msgstr "चिनहा"
-
-#: kile.cpp:490
-msgid "Most Frequently Used"
-msgstr ""
-
-#: kile.cpp:496
-msgid "Relation"
-msgstr "सम्बन्ध"
-
-#: kile.cpp:501
-msgid "Operators"
-msgstr ""
-
-#: kile.cpp:506
-msgid "Arrows"
-msgstr "तीर चिनहा"
-
-#: kile.cpp:511
-msgid "Miscellaneous Math"
-msgstr "विविध मैथ"
-
-#: kile.cpp:516
-msgid "Miscellaneous Text"
-msgstr "विविध पाठ"
-
-#: kile.cpp:521
-msgid "Delimiters"
-msgstr "डेलिमीटर्स"
-
-#: kile.cpp:526
-msgid "Greek"
-msgstr ""
-
-#: kile.cpp:536
-msgid "Cyrillic Characters"
-msgstr "साइरिलिक अक्छर"
-
-#: kile.cpp:541
-msgid "User Defined"
-msgstr ""
-
-#: kile.cpp:546
-msgid ""
-"<p>Move the mouse over the icons to see the corresponding LaTeX commands.<br/"
-">Click on an image to insert the corresponding command, additionally "
-"pressing \"Shift\" inserts it in math mode, pressing \"Ctrl\" in curly "
-"brackets.</p>"
-msgstr ""
-
-#: kile.cpp:593
-msgid "Log and Messages"
-msgstr "लाग अउ संदेस"
-
-#: kile.cpp:599
-msgid "Output"
-msgstr "आउटपुट"
-
-#: kile.cpp:608
-msgid "Konsole"
-msgstr "कंसोल"
-
-#: kile.cpp:689
-msgid "Save All"
-msgstr "सब्बो सहेजव"
-
-#: kile.cpp:690
-msgid "Save Copy As..."
-msgstr ""
-
-#: kile.cpp:691
-msgid "Create Template From Document..."
-msgstr "कागद से टैम्प्लेट तैयार करव..."
-
-#: kile.cpp:692
-msgid "&Remove Template..."
-msgstr "टैम्प्लेट मेटाव... (&R)"
-
-#: kile.cpp:694 kile.cpp:803
-msgid "Close All"
-msgstr "सब्बो बंद करव"
-
-#: kile.cpp:695
-msgid "Close All Ot&hers"
-msgstr "अउ दूसर सब्बो ल बंद करव (&h)"
-
-#: kile.cpp:696
-msgid "S&tatistics"
-msgstr "सांख्यिकी (&t)"
-
-#: kile.cpp:697
-msgid "&ASCII"
-msgstr "ओस्की (&A)"
-
-#: kile.cpp:698
-msgid "Latin-&1 (iso 8859-1)"
-msgstr "लेटिन-&1 (आईएसओ 8859-1)"
-
-#: kile.cpp:699
-msgid "Latin-&2 (iso 8859-2)"
-msgstr "लेटिन-&2 (आईएसओ 8859-2)"
-
-#: kile.cpp:700
-msgid "Latin-&3 (iso 8859-3)"
-msgstr "लेटिन-&3 (आईएसओ 8859-3)"
-
-#: kile.cpp:701
-msgid "Latin-&4 (iso 8859-4)"
-msgstr "लेटिन-&4 (आईएसओ 8859-4)"
-
-#: kile.cpp:702
-msgid "Latin-&5 (iso 8859-5)"
-msgstr "लेटिन-&5 (आईएसओ 8859-5)"
-
-#: kile.cpp:703
-msgid "Latin-&9 (iso 8859-9)"
-msgstr "लेटिन-&9 (आईएसओ 8859-9)"
-
-#: kile.cpp:704
-msgid "&Central European (cp-1250)"
-msgstr "मध्य यूरोपीय (cp-1250) (&C)"
-
-#: kile.cpp:705
-msgid "&Western European (cp-1252)"
-msgstr "मध्य यूरोपीय (cp-1252) (&W) "
-
-#: kile.cpp:708
-msgid "Move Tab Left"
-msgstr ""
-
-#: kile.cpp:709
-msgid "Move Tab Right"
-msgstr ""
-
-#: kile.cpp:711
-msgid "Next section"
-msgstr "अगला खन्ड"
-
-#: kile.cpp:712
-msgid "Prev section"
-msgstr "पिछला खन्ड"
-
-#: kile.cpp:713
-msgid "Next paragraph"
-msgstr "अगला पैराग्राफ"
-
-#: kile.cpp:714
-msgid "Prev paragraph"
-msgstr "पिछला पैराग्राफ"
-
-#: kile.cpp:716
-msgid "Find &in Files..."
-msgstr "फाइल मन मं ढूढें... (&i) "
-
-#: kile.cpp:718
-msgid "Refresh Str&ucture"
-msgstr "स्ट्रक्चर ताजा करव (&u)"
-
-#: kile.cpp:721
-msgid "&New Project..."
-msgstr "नवा परियोजना... (&N)"
-
-#: kile.cpp:722
-msgid "&Open Project..."
-msgstr "परियोजना खोलव... (&O)"
-
-#: kile.cpp:724
-msgid "Open &Recent Project"
-msgstr "अभी हाल के परियोजना खोलव (&R)"
-
-#: kile.cpp:731
-msgid "A&dd Files to Project..."
-msgstr "परियोजना मं फाइल मन ल जोड़व... (&d)"
-
-#: kile.cpp:735
-msgid "&Close Project"
-msgstr "परियोजना बन्द करव (&C)"
-
-#: kile.cpp:738
-msgid "&Show Projects..."
-msgstr "परियोजना देखाव... (&S)"
-
-#: kile.cpp:739
-msgid "Re&move Files From Project..."
-msgstr "परियोजना से फाइल मेटाव... (&m)"
-
-#: kile.cpp:740
-msgid "Show Project &Files..."
-msgstr "परियोजना फाइल देखाव... (&F)"
-
-#: kile.cpp:743
-msgid "Find in &Project..."
-msgstr "परियोजना मं खोजव... (&P)"
-
-#: kile.cpp:747
-msgid "&Stop"
-msgstr "रुकव (&S)"
-
-#: kile.cpp:750
-msgid "View Log File"
-msgstr "लाग फाइल देखव"
-
-#: kile.cpp:752
-msgid "Previous LaTeX Error"
-msgstr "पिछला लेटेक्स गलती"
-
-#: kile.cpp:754
-msgid "Next LaTeX Error"
-msgstr "अगला लेटेक्स गलती"
-
-#: kile.cpp:756
-msgid "Previous LaTeX Warning"
-msgstr "पिछला लेटेक्स चेतावनी"
-
-#: kile.cpp:758
-msgid "Next LaTeX Warning"
-msgstr "अगला लेटेक्स चेतावनी"
-
-#: kile.cpp:760
-msgid "Previous LaTeX BadBox"
-msgstr "पिछला लेटेक्स बैड-बाक्स"
-
-#: kile.cpp:762
-msgid "Next LaTeX BadBox"
-msgstr "अगला लेटेक्स बैड-बाक्स"
-
-#: kile.cpp:765
-msgid "Return to Editor"
-msgstr ""
-
-#: kile.cpp:766
-msgid "Next Document"
-msgstr "अगला कागद"
-
-#: kile.cpp:767
-msgid "Previous Document"
-msgstr "पिछला कागद"
-
-#: kile.cpp:768
-msgid "Focus Log/Messages View"
-msgstr "फोकस लाग/संदेस दृस्य"
-
-#: kile.cpp:769
-msgid "Focus Output View"
-msgstr "आउटपुट दृस्य फोकस करव"
-
-#: kile.cpp:770
-msgid "Focus Konsole View"
-msgstr "कंसोल दृस्य फोकस करव"
-
-#: kile.cpp:771
-msgid "Focus Editor View"
-msgstr "संपादक दृस्य फोकस करव"
-
-#: kile.cpp:773
-#, fuzzy
-msgctxt "@action: Starts the completion of the current LaTeX command"
-msgid "Complete (La)TeX Command"
-msgstr "(ले)टेक्स कमांड"
-
-#: kile.cpp:774
-#, fuzzy
-msgctxt "@action: Starts the input (and completion) of a LaTeX environment"
-msgid "Complete LaTeX Environment"
-msgstr "कोड एनवायरनमेंट (&C)"
-
-#: kile.cpp:775
-#, fuzzy
-#| msgid "Delete Abbreviation"
-msgctxt "@action: Starts the completion of the current abbreviation"
-msgid "Complete Abbreviation"
-msgstr "संक्छिप्त मेटाव"
-
-#: kile.cpp:777
-msgid "Next Bullet"
-msgstr "अगला गोली"
-
-#: kile.cpp:778
-msgid "Prev Bullet"
-msgstr "पिछला गोली"
-
-#: kile.cpp:781 kile.cpp:790
-msgid "Environment (inside)"
-msgstr "वातावरन (अंदर)"
-
-#: kile.cpp:782 kile.cpp:791
-msgid "Environment (outside)"
-msgstr "वातावरन (बाहिर)"
-
-#: kile.cpp:783 kile.cpp:792
-msgid "TeX Group (inside)"
-msgstr "टेक्स समूह (अंदर)"
-
-#: kile.cpp:784 kile.cpp:793
-msgid "TeX Group (outside)"
-msgstr "टेक्स समूह (बाहिर)"
-
-#: kile.cpp:785 kile.cpp:794
-msgid "Math Group"
-msgstr "मैथ समूह"
-
-#: kile.cpp:786 kile.cpp:795
-msgid "Paragraph"
-msgstr "पैराग्राफ"
-
-#: kile.cpp:787
-msgid "Line"
-msgstr "पंक्ति"
-
-#: kile.cpp:788 kile.cpp:797
-msgid "TeX Word"
-msgstr "टेक्स सब्द"
-
-#: kile.cpp:796
-msgid "To End of Line"
-msgstr ""
-
-#: kile.cpp:799 kile.cpp:805
-msgid "Go to Begin"
-msgstr "सुरू मं जाव"
-
-#: kile.cpp:800 kile.cpp:806
-msgid "Go to End"
-msgstr "आखरी मं जाव"
-
-#: kile.cpp:801 kile.cpp:807
-msgid "Match"
-msgstr "मिलाव"
-
-#: kile.cpp:802 kile.cpp:808
-msgid "Close"
-msgstr "बंद करव"
-
-#: kile.cpp:810
-msgid "Selection"
-msgstr "चयन"
-
-#: kile.cpp:812
-msgid "Subdocument"
-msgstr "उपकागद"
-
-#: kile.cpp:813
-msgid "Mathgroup"
-msgstr "गनितसमूह"
-
-#: kile.cpp:818
-msgid "&Bibliography"
-msgstr "ग्रन्थ सूची (&B)"
-
-#: kile.cpp:827
-msgid "Settings for BibTeX"
-msgstr ""
-
-#: kile.cpp:831
-msgid "Settings for Biblatex"
-msgstr ""
-
-#: kile.cpp:838 kile.cpp:2199
-msgid "Quick Start"
-msgstr "क्विक स्टार्ट"
-
-#: kile.cpp:843
-msgid "Floats"
-msgstr ""
-
-#: kile.cpp:847
-msgid "Define Current Document as '&Master Document'"
-msgstr "अभी हाल के कागद ल 'मुख्य कागद' के रूप मं परिभासित करव (&M)"
-
-#: kile.cpp:852
-msgid "Show S&ide Bar"
-msgstr "बाजू-पट्टी देखाव (&i)"
-
-#: kile.cpp:858
-msgid "Show Mess&ages Bar"
-msgstr "संदेस पट्टी देखाव (&a)"
-
-#: kile.cpp:870
-msgid "Watch File Mode"
-msgstr "फाइल मोड देखव"
-
-#: kile.cpp:887
-msgid "TeX Guide"
-msgstr "टेक्स गाइड"
-
-#: kile.cpp:889
-msgid "LaTeX Command"
-msgstr "लेटेक्स कमांड"
-
-#: kile.cpp:890
-msgid "LaTeX Subject"
-msgstr "लेटेक्स विसय"
-
-#: kile.cpp:891
-msgid "LaTeX Env"
-msgstr "लेटेक्स एन्व"
-
-#: kile.cpp:892
-msgid "Context Help"
-msgstr "कान्टेक्स्ट मदद"
-
-#: kile.cpp:895
-msgid "LaTeX Reference"
-msgstr "लेटेक्स संदर्भ"
-
-#: kile.cpp:900
-#, fuzzy
-#| msgid "No bibliographies found."
-msgid "&About Editor Component"
-msgstr "कोई ग्रन्थ सूची नइ मिलिस."
-
-#: kile.cpp:908
-msgid "&System Check..."
-msgstr "तंत्र जांच... (&S)"
-
-#: kile.cpp:927
-msgid "Biblatex"
-msgstr ""
-
-#: kile.cpp:1201
-msgid "Edit User Tags..."
-msgstr "कमइया टैग्स के संपादन करव..."
-
-#: kile.cpp:1375
-#, kde-format
-msgid "Project: %1"
-msgstr "परियोजना: %1"
-
-#: kile.cpp:1378
-#, kde-format
-msgid "Project: %1 (Master document: %2)"
-msgstr "परियोजना: %1 (मुख्य कागद: %2)"
-
-#: kile.cpp:1384
-msgid "Normal mode"
-msgstr "सामान्य मोड"
-
-#: kile.cpp:1387
-#, kde-format
-msgid "Master document: %1"
-msgstr "मुख्य कागद: %1"
-
-#: kile.cpp:1392 kile.cpp:2548
-msgid "Define Current Document as 'Master Document'"
-msgstr "अभी हाल के कागद ल 'मुख्य कागद' के रूप मं परिभासित करव"
-
-#: kile.cpp:1396 kile.cpp:2541
-#, kde-format
-msgid "Normal mode (current master document: %1)"
-msgstr "सामान्य मोड (अभी हाल के मुख्य कागद: %1)"
-
-#: kile.cpp:2082
-msgid "There is no active document or it is not saved."
-msgstr "इहां कोनो सक्रिय कागद नइ हे या एला सहेजे नइ गे हे."
-
-#: kile.cpp:2170
-#, kde-format
-msgid "You have to include the package %1."
-msgstr ""
-
-#: kile.cpp:2170 kile.cpp:2173
-msgid "Insert text"
-msgstr "पाठ भरव"
-
-#: kile.cpp:2173
-#, kde-format
-msgid "You have to include the packages %1."
-msgstr ""
-
-#: kile.cpp:2313
-msgid "Edit User Tags"
-msgstr "कमइया टैग्स के संपादन करव"
-
-#: kile.cpp:2337 kile.cpp:2375
-msgid "no name"
-msgstr "कोई नाम नइ"
-
-#: kile.cpp:2564
-msgid ""
-"In order to define the current document as a master document, it has to be "
-"saved first."
-msgstr "अभी हाल के कागद ल मुख्य कागद के रूप मं परिभासित करे बर एला पहिली सहेजना होही."
-
-#: kile.cpp:2619
-msgid ""
-"Please turn off the 'Master Document' mode before performing the System "
-"Check."
-msgstr ""
-
-#: kile.cpp:2869
-#, kde-format
-msgid "Line: %1 Col: %2"
-msgstr "पंक्ति: %1 खंभा: %2"
-
-#: kile.cpp:2897
-msgctxt "@info:status status bar label for block selection mode"
-msgid "BLOCK"
-msgstr ""
-
-#: kile.cpp:2898
-msgctxt "@info:status status bar label for line selection mode"
-msgid "LINE"
 msgstr ""
 
 #: kilelauncher.cpp:122 kilelauncher.cpp:380 kilelauncher.cpp:467
