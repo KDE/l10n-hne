@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-08 03:09+0100\n"
+"POT-Creation-Date: 2012-02-09 02:54+0100\n"
 "PO-Revision-Date: 2009-03-02 23:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -5569,11 +5569,6 @@ msgstr "छपाई प्रिव्यू से पहिली का आ�
 msgid "Do you want to save changes before showing page setup?"
 msgstr "पेज सेटअप देखाय से पहिली का आप मन बदलाव मन ल सहेजना चाहू?"
 
-#: main/KexiMenuWidget.cpp:2113
-#, kde-format
-msgid "Visit Calligra home page at %1"
-msgstr ""
-
 #: main/kexifinddialog.cpp:176
 msgid "(All fields)"
 msgstr "(सब्बो छेत्र)"
@@ -5605,6 +5600,11 @@ msgstr "ढूंढी जा रही चीज नइ मिलिस"
 #: main/kexinewstuff.cpp:62
 msgid "Choose Directory Where to Install Example Database"
 msgstr "डिरेक्टरी चुनव जहाँ उदाहरन डाटाबेस इनस्टाल करना चाहथो "
+
+#: main/KexiMenuWidget.cpp:2113
+#, kde-format
+msgid "Visit Calligra home page at %1"
+msgstr ""
 
 #: migration/AlterSchemaWidget.cpp:49 migration/AlterSchemaWidget.cpp:111
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:934
@@ -6704,6 +6704,51 @@ msgstr "विकल्प लुकाव <<"
 msgid "Defaults"
 msgstr "डिफाल्ट्स"
 
+#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:100
+msgid "CSV Import Options"
+msgstr "सीएसवी आयात विकल्प"
+
+#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:110
+msgid "Text encoding"
+msgstr "पाठ एनकोडिंग"
+
+#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:124
+msgid "Always use this encoding when importing CSV data files"
+msgstr "जब सीएसवी डाटा फाइल मन ल आयात करे जाथे तहां हमेसा यही एनकोडिंग परयोग करव"
+
+#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:129
+msgctxt "Date format: Auto"
+msgid "Auto"
+msgstr "अपने अपन"
+
+#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:130
+msgid "year"
+msgstr "साल"
+
+#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:130
+msgid "month"
+msgstr "महिना"
+
+#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:130
+msgid "day"
+msgstr "दिन"
+
+#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:131
+#, kde-format
+msgctxt ""
+"do not reorder placeholders, just translate e.g. and - to the separator used "
+"by dates in your language"
+msgid "%1, %2, %3 (e.g. %4-%5-%6)"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:140
+msgid "Date format:"
+msgstr "तारीक फार्मेट:"
+
+#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:145
+msgid "Strip leading and trailing blanks off of text values"
+msgstr "पाठ मूल्य मन मं से आगू अउ पीछू के खाली जगहों ल हटाव"
+
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:153
 msgid "no"
 msgstr "नइ"
@@ -6867,51 +6912,6 @@ msgstr "(पंक्तियाँ: %1 से अधिक)"
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:1728
 msgid "Not all rows are visible on this preview"
 msgstr "ये प्रिव्यू मं सब्बो पंक्तिया दिखत नइ होही"
-
-#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:100
-msgid "CSV Import Options"
-msgstr "सीएसवी आयात विकल्प"
-
-#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:110
-msgid "Text encoding"
-msgstr "पाठ एनकोडिंग"
-
-#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:124
-msgid "Always use this encoding when importing CSV data files"
-msgstr "जब सीएसवी डाटा फाइल मन ल आयात करे जाथे तहां हमेसा यही एनकोडिंग परयोग करव"
-
-#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:129
-msgctxt "Date format: Auto"
-msgid "Auto"
-msgstr "अपने अपन"
-
-#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:130
-msgid "year"
-msgstr "साल"
-
-#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:130
-msgid "month"
-msgstr "महिना"
-
-#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:130
-msgid "day"
-msgstr "दिन"
-
-#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:131
-#, kde-format
-msgctxt ""
-"do not reorder placeholders, just translate e.g. and - to the separator used "
-"by dates in your language"
-msgid "%1, %2, %3 (e.g. %4-%5-%6)"
-msgstr ""
-
-#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:140
-msgid "Date format:"
-msgstr "तारीक फार्मेट:"
-
-#: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:145
-msgid "Strip leading and trailing blanks off of text values"
-msgstr "पाठ मूल्य मन मं से आगू अउ पीछू के खाली जगहों ल हटाव"
 
 #: plugins/queries/kexiquerydesignersql.cpp:117
 msgid "SQL Query Text"
