@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_jpeglossless\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-09 03:21+0100\n"
+"POT-Creation-Date: 2012-02-14 03:37+0100\n"
 "PO-Revision-Date: 2009-02-16 14:14+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -19,75 +19,92 @@ msgstr ""
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: plugin/plugin_jpeglossless.cpp:111
+#: plugin/utils.cpp:89
+msgid "unable to open source file"
+msgstr "स्रोत फाइल खोले मं अक्छम"
+
+#: plugin/utils.cpp:119 plugin/utils.cpp:146
+msgid "unable to open temp file"
+msgstr "अस्थाई फाइल खोले मं अक्छम"
+
+#: plugin/utils.cpp:133
+msgid "Cannot rotate: unable to open temp file"
+msgstr "घुमा नइ सकिस: अस्थाई फाइल खोले मं अक्छम"
+
+#: plugin/utils.cpp:195
+#, kde-format
+msgid "Cannot update metadata: %1"
+msgstr "मेटाडाटा अपडेट नइ कर सकिस: %1"
+
+#: plugin/plugin_jpeglossless.cpp:110
 msgid "Rotate"
 msgstr "घुमाव"
 
-#: plugin/plugin_jpeglossless.cpp:115
+#: plugin/plugin_jpeglossless.cpp:114
 #, fuzzy
 #| msgid "Left"
 msgctxt "rotate image left"
 msgid "Left"
 msgstr "डेरी"
 
-#: plugin/plugin_jpeglossless.cpp:122
+#: plugin/plugin_jpeglossless.cpp:121
 #, fuzzy
 #| msgid "Right"
 msgctxt "rotate image right"
 msgid "Right"
 msgstr "जेवनी"
 
-#: plugin/plugin_jpeglossless.cpp:132
+#: plugin/plugin_jpeglossless.cpp:131
 msgid "Flip"
 msgstr "लहुटाव"
 
-#: plugin/plugin_jpeglossless.cpp:136
+#: plugin/plugin_jpeglossless.cpp:135
 msgid "Horizontally"
 msgstr "आड़ा"
 
-#: plugin/plugin_jpeglossless.cpp:143
+#: plugin/plugin_jpeglossless.cpp:142
 msgid "Vertically"
 msgstr "खड़ा"
 
-#: plugin/plugin_jpeglossless.cpp:154
+#: plugin/plugin_jpeglossless.cpp:153
 msgid "Auto Rotate/Flip Using Exif Information"
 msgstr "एक्जइफ जानकारी के उपयोग से अपने अपन घुमाव/लहुटाव"
 
-#: plugin/plugin_jpeglossless.cpp:163
+#: plugin/plugin_jpeglossless.cpp:162
 msgid "Convert to Black && White"
 msgstr "काला-सफेद मं बदलव"
 
-#: plugin/plugin_jpeglossless.cpp:211
+#: plugin/plugin_jpeglossless.cpp:210
 msgid "horizontally"
 msgstr "आड़ा"
 
-#: plugin/plugin_jpeglossless.cpp:216
+#: plugin/plugin_jpeglossless.cpp:215
 msgid "vertically"
 msgstr "खड़ा"
 
-#: plugin/plugin_jpeglossless.cpp:234
+#: plugin/plugin_jpeglossless.cpp:233
 #, kde-format
 msgid "Flip images %1"
 msgstr "फोटू लहुटाव %1"
 
-#: plugin/plugin_jpeglossless.cpp:247
+#: plugin/plugin_jpeglossless.cpp:246
 msgid "right (clockwise)"
 msgstr "जेवनी (घड़ी के दिसा में)"
 
-#: plugin/plugin_jpeglossless.cpp:252
+#: plugin/plugin_jpeglossless.cpp:251
 msgid "left (counterclockwise)"
 msgstr "डेरी (घड़ी के उलटा दिसा में)"
 
-#: plugin/plugin_jpeglossless.cpp:257
+#: plugin/plugin_jpeglossless.cpp:256
 msgid "using Exif orientation tag"
 msgstr "एक्सइफ दिसा-निर्धारन टैग के साथ"
 
-#: plugin/plugin_jpeglossless.cpp:274
+#: plugin/plugin_jpeglossless.cpp:273
 #, kde-format
 msgid "Rotate images %1"
 msgstr "फोटू मन ल घुमाव %1"
 
-#: plugin/plugin_jpeglossless.cpp:290
+#: plugin/plugin_jpeglossless.cpp:289
 msgid ""
 "<p>Are you sure you wish to convert the selected image(s) to black and "
 "white? This operation <b>cannot</b> be undone.</p>"
@@ -95,7 +112,7 @@ msgstr ""
 "<p>का आप मन सही मं चुने गे फोटू मन ल काला सफेद मं बदलना चाहथो ? ए काम वापस पूर्ववत् "
 "<b>नइ</b> करे जा सकही.</p>"
 
-#: plugin/plugin_jpeglossless.cpp:304
+#: plugin/plugin_jpeglossless.cpp:303
 msgid "Convert images to black & white"
 msgstr "फोटू मन ल काला सफेद मं बदलव "
 
@@ -137,23 +154,6 @@ msgstr "फोटू पलटे मं फेल"
 #: plugin/plugin_jpeglossless.cpp:418
 msgid "Failed to convert image to Black & White"
 msgstr "फोटू ल काला-सफेद मं बदले मं फेल"
-
-#: plugin/utils.cpp:89
-msgid "unable to open source file"
-msgstr "स्रोत फाइल खोले मं अक्छम"
-
-#: plugin/utils.cpp:119 plugin/utils.cpp:146
-msgid "unable to open temp file"
-msgstr "अस्थाई फाइल खोले मं अक्छम"
-
-#: plugin/utils.cpp:133
-msgid "Cannot rotate: unable to open temp file"
-msgstr "घुमा नइ सकिस: अस्थाई फाइल खोले मं अक्छम"
-
-#: plugin/utils.cpp:195
-#, kde-format
-msgid "Cannot update metadata: %1"
-msgstr "मेटाडाटा अपडेट नइ कर सकिस: %1"
 
 #: transform/imageflip.cpp:87 transform/imagerotate.cpp:88
 #: transform/convert2grayscale.cpp:96 transform/convert2grayscale.cpp:177
