@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-22 02:45+0100\n"
+"POT-Creation-Date: 2012-02-23 02:37+0100\n"
 "PO-Revision-Date: 2009-03-03 10:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -383,7 +383,7 @@ msgstr ""
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:344
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: kernel/kpttask.cpp:3665 kernel/kptnode.cpp:138 kernel/kptnode.cpp:1571
+#: kernel/kpttask.cpp:3665 kernel/kptnode.cpp:138 kernel/kptnode.cpp:1572
 #: models/kptschedulemodel.cpp:522 models/kpttreecombobox.cpp:124
 #: models/kptnodeitemmodel.cpp:394 models/kptnodeitemmodel.cpp:410
 #: models/kptnodeitemmodel.cpp:420 models/kptnodeitemmodel.cpp:618
@@ -406,6 +406,70 @@ msgstr "भेजव"
 #: kernel/kpttask.cpp:3671
 msgid "Receive"
 msgstr "प्राप्त"
+
+#. i18n: file: ui/resourcedialogbase.ui:169
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: kernel/kptresource.cpp:123 ui/kptresourceassignmentview.cpp:82 rc.cpp:769
+msgid "Work"
+msgstr "कामस्थल"
+
+#. i18n: file: ui/resourcedialogbase.ui:174
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: kernel/kptresource.cpp:124 ui/kptresourceassignmentview.cpp:86 rc.cpp:772
+msgid "Material"
+msgstr "चीज"
+
+#: kernel/kptresource.cpp:443
+#, fuzzy
+#| msgid "Work"
+msgctxt "@item:inlistbox resource type"
+msgid "Work"
+msgstr "कामस्थल"
+
+#: kernel/kptresource.cpp:444
+#, fuzzy
+#| msgid "Material"
+msgctxt "@item:inlistbox resource type"
+msgid "Material"
+msgstr "चीज"
+
+#: kernel/kptresource.cpp:445
+msgctxt "@item:inlistbox resource type"
+msgid "Team"
+msgstr ""
+
+#: kernel/kptresource.cpp:831
+msgid "Make appointments: Invalid time"
+msgstr ""
+
+#: kernel/kptresource.cpp:836 kernel/kptresource.cpp:894
+#: kernel/kptresource.cpp:1127 kernel/kptresource.cpp:1197
+#, kde-format
+msgid "Resource %1 has no calendar defined"
+msgstr ""
+
+#: kernel/kptresource.cpp:858
+msgid "Make appointments: Node start time is not valid"
+msgstr ""
+
+#: kernel/kptresource.cpp:862
+msgid "Make appointments: Node end time is not valid"
+msgstr ""
+
+#: kernel/kptresource.cpp:901 kernel/kptresource.cpp:917
+#, fuzzy, kde-format
+msgid "Resource %1 not available in interval: %2 to %3"
+msgstr "संसाधन नइ मिलत"
+
+#: kernel/kptresource.cpp:2519
+#, kde-format
+msgid "Could not match effort. Want: %1 got: %2"
+msgstr ""
+
+#: kernel/kptresource.cpp:2522
+#, fuzzy, kde-format
+msgid "Resource %1 available from %2 to %3"
+msgstr "संसाधन नइ मिलत"
 
 #. i18n: file: ui/kptscheduleeditor.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, projectGroupBox)
@@ -488,25 +552,25 @@ msgstr "स्थिर अंतराल"
 #. i18n: ectx: property (title), widget (QGroupBox, ui_effort)
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:281
 #. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
-#: kernel/kptnode.cpp:1538 rc.cpp:238 rc.cpp:509
+#: kernel/kptnode.cpp:1539 rc.cpp:238 rc.cpp:509
 msgid "Effort"
 msgstr "प्रयास"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:286
 #. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
-#: kernel/kptnode.cpp:1539 rc.cpp:512
+#: kernel/kptnode.cpp:1540 rc.cpp:512
 msgid "Duration"
 msgstr "अवधि"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:349
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: kernel/kptnode.cpp:1572 rc.cpp:539
+#: kernel/kptnode.cpp:1573 rc.cpp:539
 msgid "Low"
 msgstr "निम्न"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:354
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: kernel/kptnode.cpp:1573 rc.cpp:542
+#: kernel/kptnode.cpp:1574 rc.cpp:542
 msgid "High"
 msgstr "जादा"
 
@@ -645,73 +709,9 @@ msgstr ""
 msgid "Calculation took: %1"
 msgstr ""
 
-#: kernel/kptproject.cpp:2349
+#: kernel/kptproject.cpp:2363
 msgid "Plan"
 msgstr "प्लान"
-
-#. i18n: file: ui/resourcedialogbase.ui:169
-#. i18n: ectx: property (text), item, widget (QComboBox, type)
-#: kernel/kptresource.cpp:123 ui/kptresourceassignmentview.cpp:82 rc.cpp:769
-msgid "Work"
-msgstr "कामस्थल"
-
-#. i18n: file: ui/resourcedialogbase.ui:174
-#. i18n: ectx: property (text), item, widget (QComboBox, type)
-#: kernel/kptresource.cpp:124 ui/kptresourceassignmentview.cpp:86 rc.cpp:772
-msgid "Material"
-msgstr "चीज"
-
-#: kernel/kptresource.cpp:443
-#, fuzzy
-#| msgid "Work"
-msgctxt "@item:inlistbox resource type"
-msgid "Work"
-msgstr "कामस्थल"
-
-#: kernel/kptresource.cpp:444
-#, fuzzy
-#| msgid "Material"
-msgctxt "@item:inlistbox resource type"
-msgid "Material"
-msgstr "चीज"
-
-#: kernel/kptresource.cpp:445
-msgctxt "@item:inlistbox resource type"
-msgid "Team"
-msgstr ""
-
-#: kernel/kptresource.cpp:831
-msgid "Make appointments: Invalid time"
-msgstr ""
-
-#: kernel/kptresource.cpp:836 kernel/kptresource.cpp:894
-#: kernel/kptresource.cpp:1127 kernel/kptresource.cpp:1197
-#, kde-format
-msgid "Resource %1 has no calendar defined"
-msgstr ""
-
-#: kernel/kptresource.cpp:858
-msgid "Make appointments: Node start time is not valid"
-msgstr ""
-
-#: kernel/kptresource.cpp:862
-msgid "Make appointments: Node end time is not valid"
-msgstr ""
-
-#: kernel/kptresource.cpp:901 kernel/kptresource.cpp:917
-#, fuzzy, kde-format
-msgid "Resource %1 not available in interval: %2 to %3"
-msgstr "संसाधन नइ मिलत"
-
-#: kernel/kptresource.cpp:2519
-#, kde-format
-msgid "Could not match effort. Want: %1 got: %2"
-msgstr ""
-
-#: kernel/kptresource.cpp:2522
-#, fuzzy, kde-format
-msgid "Resource %1 available from %2 to %3"
-msgstr "संसाधन नइ मिलत"
 
 #: models/kcalendar/kdatepicker.cpp:116
 #, kde-format
@@ -3884,7 +3884,7 @@ msgid "Add Subaccount"
 msgstr "उपखाता जोड़व"
 
 #: ui/kptaccountseditor.cpp:239 ui/kptcalendareditor.cpp:629
-#: ui/kptdependencyeditor.cpp:2241 ui/kptresourceeditor.cpp:293
+#: ui/kptdependencyeditor.cpp:2285 ui/kptresourceeditor.cpp:293
 #: ui/kptscheduleeditor.cpp:288 ui/kpttaskeditor.cpp:646
 #, fuzzy
 #| msgid "Delete"
@@ -3949,33 +3949,33 @@ msgstr "%1: अकाम वाले मं सेट हे"
 msgid "Set %1 to Undefined"
 msgstr "%1 अपरिभासित मं सेट हे"
 
-#: ui/kptdependencyeditor.cpp:2210 ui/kpttaskeditor.cpp:615
+#: ui/kptdependencyeditor.cpp:2254 ui/kpttaskeditor.cpp:615
 #: ui/kpttaskeditor.cpp:620
 #, fuzzy
 #| msgid "Add Task..."
 msgid "Add Task"
 msgstr "काम जोड़व..."
 
-#: ui/kptdependencyeditor.cpp:2215
+#: ui/kptdependencyeditor.cpp:2259
 msgid "Add Task..."
 msgstr "काम जोड़व..."
 
-#: ui/kptdependencyeditor.cpp:2220
+#: ui/kptdependencyeditor.cpp:2264
 msgid "Add Milestone..."
 msgstr "पड़ाव जोड़व..."
 
-#: ui/kptdependencyeditor.cpp:2226 ui/kpttaskeditor.cpp:631
+#: ui/kptdependencyeditor.cpp:2270 ui/kpttaskeditor.cpp:631
 #: ui/kpttaskeditor.cpp:636
 #, fuzzy
 #| msgid "Add Sub-Task..."
 msgid "Add Sub-Task"
 msgstr "उप-काम जोड़व..."
 
-#: ui/kptdependencyeditor.cpp:2231
+#: ui/kptdependencyeditor.cpp:2275
 msgid "Add Sub-Task..."
 msgstr "उप-काम जोड़व..."
 
-#: ui/kptdependencyeditor.cpp:2236
+#: ui/kptdependencyeditor.cpp:2280
 #, fuzzy
 #| msgid "Add Milestone..."
 msgid "Add Sub-Milestone..."
