@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-22 03:09+0100\n"
+"POT-Creation-Date: 2012-02-29 03:30+0100\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -3046,6 +3046,36 @@ msgstr[1] "%1 फाईल घुरुवा मं ले जाव"
 msgid "Preparing slideshow"
 msgstr "स्लाइड सो बनावत हे. किरपा करके, इंतजार करव..."
 
+#: digikam/views/digikamview.cpp:286
+#: utilities/queuemanager/views/toolslistview.cpp:75
+#, fuzzy
+#| msgid "F&ilters"
+msgid "Filters"
+msgstr "फिल्टर (&i)"
+
+#: digikam/views/digikamview.cpp:864
+#, fuzzy
+msgid "Fuzzy Sketch Search"
+msgstr "अभी हाल के फजी स्केच खोज"
+
+#: digikam/views/digikamview.cpp:868
+#, fuzzy
+msgid "Fuzzy Image Search"
+msgstr "अभी हाल के फजी फोटू खोज"
+
+#: digikam/views/digikamview.cpp:872
+#, fuzzy
+msgid "Map Search"
+msgstr "मैप खोज"
+
+#: digikam/views/digikamview.cpp:877 libs/database/schemaupdater.cpp:965
+msgid "Last Search"
+msgstr "पिछला खोज"
+
+#: digikam/views/digikamview.cpp:881 digikam/views/leftsidebarwidgets.cpp:666
+msgid "Timeline"
+msgstr "टाइम-लाइन"
+
 #: digikam/views/imagepreviewview.cpp:210
 #: digikam/views/mediaplayerview.cpp:141
 msgid "Back to Album"
@@ -3082,36 +3112,6 @@ msgstr "सब्बो बदलाव मन ल फोटू मन मं �
 #| msgid "Show image tags"
 msgid "Show Face Tags"
 msgstr "फोटू टैग देखाव"
-
-#: digikam/views/digikamview.cpp:286
-#: utilities/queuemanager/views/toolslistview.cpp:75
-#, fuzzy
-#| msgid "F&ilters"
-msgid "Filters"
-msgstr "फिल्टर (&i)"
-
-#: digikam/views/digikamview.cpp:868
-#, fuzzy
-msgid "Fuzzy Sketch Search"
-msgstr "अभी हाल के फजी स्केच खोज"
-
-#: digikam/views/digikamview.cpp:872
-#, fuzzy
-msgid "Fuzzy Image Search"
-msgstr "अभी हाल के फजी फोटू खोज"
-
-#: digikam/views/digikamview.cpp:876
-#, fuzzy
-msgid "Map Search"
-msgstr "मैप खोज"
-
-#: digikam/views/digikamview.cpp:881 libs/database/schemaupdater.cpp:965
-msgid "Last Search"
-msgstr "पिछला खोज"
-
-#: digikam/views/digikamview.cpp:885 digikam/views/leftsidebarwidgets.cpp:666
-msgid "Timeline"
-msgstr "टाइम-लाइन"
 
 #: digikam/views/mediaplayerview.cpp:146
 #, fuzzy
@@ -3358,78 +3358,93 @@ msgstr ""
 msgid "Process Items"
 msgstr "चीज मेटारव"
 
-#: digikam/fileaction/databaseworkeriface.cpp:41
-msgid "Assigning image tags. Please wait..."
-msgstr "फोटू टैग आबंटित करत हे. किरपा करके, अगोरव..."
-
-#: digikam/fileaction/databaseworkeriface.cpp:47
-msgid "Removing image tags. Please wait..."
-msgstr "फोटू टैग हटाय जात हे. किरपा करके, अगोरव..."
-
-#: digikam/fileaction/databaseworkeriface.cpp:97
+#: digikam/fileaction/databaseworkeriface.cpp:86
+#: digikam/fileaction/databaseworkeriface.cpp:124
+#: digikam/fileaction/databaseworkeriface.cpp:162
+#: digikam/fileaction/databaseworkeriface.cpp:201
+#: digikam/fileaction/databaseworkeriface.cpp:272
 #, fuzzy
-#| msgid "Assigning image tags. Please wait..."
-msgid "Assigning image pick label. Please wait..."
-msgstr "फोटू टैग आबंटित करत हे. किरपा करके, अगोरव..."
+#| msgid "Write metadata to each file"
+msgid "Writing metadata to files"
+msgstr "हर एक फाइल मं मेटाडाटा लिखव"
 
-#: digikam/fileaction/databaseworkeriface.cpp:136
+#: digikam/fileaction/databaseworkeriface.cpp:249
 #, fuzzy
-#| msgid "Assigning image tags. Please wait..."
-msgid "Assigning image color label. Please wait..."
-msgstr "फोटू टैग आबंटित करत हे. किरपा करके, अगोरव..."
-
-#: digikam/fileaction/databaseworkeriface.cpp:175
-msgid "Assigning image ratings. Please wait..."
-msgstr "फोटू दरजा आबंटित करत हे. किरपा करके, अगोरव..."
-
-#: digikam/fileaction/databaseworkeriface.cpp:215
-#, fuzzy
-#| msgid "Assigning image tags. Please wait..."
-msgid "Editing group. Please wait..."
-msgstr "फोटू टैग आबंटित करत हे. किरपा करके, अगोरव..."
-
-#: digikam/fileaction/databaseworkeriface.cpp:246
-#, fuzzy
-#| msgid "<b>Updating fingerprint database. Please wait...</b>"
-msgid "Updating orientation in database. Please wait..."
-msgstr "<b>फिंगरप्रिंट डाटाबेस ल अपडेट करत हे. किरपा करके, अगोरव...</b>"
-
-#: digikam/fileaction/databaseworkeriface.cpp:264
-#, fuzzy
-#| msgid "Writing metadata to files. Please wait..."
-msgid "Applying metadata. Please wait..."
-msgstr "फाइल मन मं मेटाडाटा लिखत हे. किरपा करके, अगोरव..."
-
-#: digikam/fileaction/fileworkeriface.cpp:46
-msgid "Revising Exif Orientation tags. Please wait..."
+#| msgid "Revising Exif Orientation tags. Please wait..."
+msgid "Revising Exif Orientation tags"
 msgstr "एक्जिफ दिसा टैग पुनरावलोकन करत हे, किरपा करके, अगोरव..."
 
-#: digikam/fileaction/fileworkeriface.cpp:75
+#: digikam/fileaction/fileactionmngr.cpp:95
+msgctxt "@label"
+msgid "Finishing tasks"
+msgstr ""
+
+#: digikam/fileaction/fileactionmngr.cpp:142
+#, fuzzy
+#| msgid "Assigning image tags. Please wait..."
+msgid "Assigning image tags"
+msgstr "फोटू टैग आबंटित करत हे. किरपा करके, अगोरव..."
+
+#: digikam/fileaction/fileactionmngr.cpp:164
+#, fuzzy
+#| msgid "File Renaming Options"
+msgid "Removing image tags"
+msgstr "फाइल नाम बदले के विकल्प"
+
+#: digikam/fileaction/fileactionmngr.cpp:181
+#, fuzzy
+#| msgid "Assigning image tags. Please wait..."
+msgid "Assigning image pick label"
+msgstr "फोटू टैग आबंटित करत हे. किरपा करके, अगोरव..."
+
+#: digikam/fileaction/fileactionmngr.cpp:188
+#, fuzzy
+#| msgid "Assigning image tags. Please wait..."
+msgid "Assigning image color label"
+msgstr "फोटू टैग आबंटित करत हे. किरपा करके, अगोरव..."
+
+#: digikam/fileaction/fileactionmngr.cpp:200
+#, fuzzy
+#| msgid "Assigning image ratings. Please wait..."
+msgid "Assigning image ratings"
+msgstr "फोटू दरजा आबंटित करत हे. किरपा करके, अगोरव..."
+
+#: digikam/fileaction/fileactionmngr.cpp:207
+#: digikam/fileaction/fileactionmngr.cpp:219
+#: digikam/fileaction/fileactionmngr.cpp:231
+#, fuzzy
+#| msgid "First Image"
+msgid "Editing group"
+msgstr "पहिली फोटू"
+
+#: digikam/fileaction/fileactionmngr.cpp:238
+#, fuzzy
+#| msgid "<b>Updating fingerprint database. Please wait...</b>"
+msgid "Updating orientation in database"
+msgstr "<b>फिंगरप्रिंट डाटाबेस ल अपडेट करत हे. किरपा करके, अगोरव...</b>"
+
+#: digikam/fileaction/fileactionmngr.cpp:245
+#: digikam/fileaction/fileactionmngr.cpp:254
+#, fuzzy
+#| msgid "Save metadata"
+msgid "Applying metadata"
+msgstr "मेटाडाटा सहेजव"
+
+#: digikam/fileaction/fileactionmngr.cpp:261
+#, fuzzy
+#| msgid "Select Images"
+msgid "Rotating images"
+msgstr "फोटू चुनव"
+
+#: digikam/fileaction/fileworkeriface.cpp:71
 msgid "Failed to revise Exif orientation these files:"
 msgstr "ए फाइल मन बर एक्जइफ ओरिएन्टेसन सुधारने मं फेल:"
 
-#: digikam/fileaction/fileworkeriface.cpp:83
-#: digikam/fileaction/fileworkeriface.cpp:112
-#: libs/imageproperties/imagedescedittab.cpp:789
-msgid "Writing metadata to files. Please wait..."
-msgstr "फाइल मन मं मेटाडाटा लिखत हे. किरपा करके, अगोरव..."
-
-#: digikam/fileaction/fileworkeriface.cpp:144
-#, fuzzy
-#| msgid "Prepare slideshow. Please wait..."
-msgid "Transforming items. Please wait..."
-msgstr "स्लाइड सो बनात हे... किरपा करके, अगोरव."
-
-#: digikam/fileaction/fileworkeriface.cpp:282
+#: digikam/fileaction/fileworkeriface.cpp:273
 #, fuzzy
 #| msgid "Failed to revise Exif orientation these files:"
 msgid "Failed to transform these files:"
 msgstr "ए फाइल मन बर एक्जइफ ओरिएन्टेसन सुधारने मं फेल:"
-
-#: digikam/fileaction/fileactionmngr.cpp:102
-msgctxt "@label"
-msgid "Finishing tasks"
-msgstr ""
 
 #: imageplugins/color/adjustcurvestool.cpp:97
 #: libs/dimg/filters/curves/curvesfilter.h:63
@@ -6800,122 +6815,122 @@ msgstr "तुंग न्गुयेन"
 msgid "Bug reports, feedback and icons"
 msgstr "बग रपट, फीडबैक अउ चिनहा"
 
-#: libs/dialogs/deletedialog.cpp:159
+#: libs/dialogs/deletedialog.cpp:160
 #: utilities/cameragui/dialogs/cameramessagebox.cpp:137
 #, fuzzy
 msgid "Thumb"
 msgstr "छोटेफोटू देखाव"
 
-#: libs/dialogs/deletedialog.cpp:159 utilities/setup/setupcamera.cpp:237
+#: libs/dialogs/deletedialog.cpp:160 utilities/setup/setupcamera.cpp:237
 #: utilities/setup/setupcollectionview.cpp:929
 msgid "Path"
 msgstr "पथ"
 
-#: libs/dialogs/deletedialog.cpp:162
+#: libs/dialogs/deletedialog.cpp:163
 msgid "List of files that are about to be deleted."
 msgstr "फाइल मन के सूची जऊन ल मेटाय जाही."
 
-#: libs/dialogs/deletedialog.cpp:163
+#: libs/dialogs/deletedialog.cpp:164
 msgid "This is the list of items that are about to be deleted."
 msgstr "ये चीज मन के सूची हे जऊन ल मेटाय जाही."
 
-#: libs/dialogs/deletedialog.cpp:278
+#: libs/dialogs/deletedialog.cpp:284
 msgid ""
 "If checked, files will be permanently removed instead of being placed in the "
 "Trash."
 msgstr ""
 
-#: libs/dialogs/deletedialog.cpp:280
+#: libs/dialogs/deletedialog.cpp:286
 msgid ""
 "<p>If this box is checked, files will be <b>permanently removed</b> instead "
 "of being placed in the Trash.</p><p><em>Use this option with caution</em>: "
 "most filesystems are unable to undelete deleted files reliably.</p>"
 msgstr ""
 
-#: libs/dialogs/deletedialog.cpp:286
+#: libs/dialogs/deletedialog.cpp:292
 msgid "&Delete files instead of moving them to the trash"
 msgstr "घुरुवा मं ले जाय के बदला मा फाइल मन ल मिटा देव. (&D)"
 
-#: libs/dialogs/deletedialog.cpp:293
+#: libs/dialogs/deletedialog.cpp:299
 msgid "Do not &ask again"
 msgstr "दुबारा मत पूछव (&a)"
 
-#: libs/dialogs/deletedialog.cpp:352
+#: libs/dialogs/deletedialog.cpp:359
 msgid ""
 "If checked, this dialog will no longer be shown, and files will be directly "
 "and permanently deleted."
 msgstr ""
 
-#: libs/dialogs/deletedialog.cpp:354
+#: libs/dialogs/deletedialog.cpp:361
 msgid ""
 "If this box is checked, this dialog will no longer be shown, and files will "
 "be directly and permanently deleted."
 msgstr ""
 
-#: libs/dialogs/deletedialog.cpp:359
+#: libs/dialogs/deletedialog.cpp:366
 msgid ""
 "If checked, this dialog will no longer be shown, and files will be directly "
 "moved to the Trash."
 msgstr ""
 
-#: libs/dialogs/deletedialog.cpp:361
+#: libs/dialogs/deletedialog.cpp:368
 msgid ""
 "If this box is checked, this dialog will no longer be shown, and files will "
 "be directly moved to the Trash."
 msgstr ""
 
-#: libs/dialogs/deletedialog.cpp:373
+#: libs/dialogs/deletedialog.cpp:380
 msgid "These items will be <b>permanently deleted</b> from your hard disk."
 msgstr "ये चीज आप मन के हार्ड डिस्क से <b>हमेसा बर</b> मिटा दे जाही."
 
-#: libs/dialogs/deletedialog.cpp:380
+#: libs/dialogs/deletedialog.cpp:387
 msgid "These items will be moved to Trash."
 msgstr "ए चीज मन ल घुरुवा मं ले जाय जाही."
 
-#: libs/dialogs/deletedialog.cpp:383
+#: libs/dialogs/deletedialog.cpp:390
 #, kde-format
 msgid "<b>1</b> file selected."
 msgid_plural "<b>%1</b> files selected."
 msgstr[0] "<b>%1</b> फाइल मन ल चुने गिसं."
 msgstr[1] "<b>%1</b> फाइल मन ल चुने गिसं."
 
-#: libs/dialogs/deletedialog.cpp:395
+#: libs/dialogs/deletedialog.cpp:402
 msgid "These albums will be <b>permanently deleted</b> from your hard disk."
 msgstr "ये एलबम आप मन के हार्ड डिस्क से <b>हमेसा बर</b> मिटा दे जाही."
 
-#: libs/dialogs/deletedialog.cpp:402
+#: libs/dialogs/deletedialog.cpp:409
 msgid "These albums will be moved to Trash."
 msgstr "ए एलबमों ल घुरुवा मं ले जाय जाही."
 
-#: libs/dialogs/deletedialog.cpp:407 libs/dialogs/deletedialog.cpp:435
+#: libs/dialogs/deletedialog.cpp:414 libs/dialogs/deletedialog.cpp:442
 #, kde-format
 msgid "<b>1</b> album selected."
 msgid_plural "<b>%1</b> albums selected."
 msgstr[0] "<b>1</b> एलबम चुने गे."
 msgstr[1] "<b>%1</b> एलबम चुने गे."
 
-#: libs/dialogs/deletedialog.cpp:417
+#: libs/dialogs/deletedialog.cpp:424
 msgid ""
 "<p>These albums will be <b>permanently deleted</b> from your hard disk.</"
 "p><p>Note that <b>all subalbums</b> are included in this list and will be "
 "deleted permanently as well.</p>"
 msgstr ""
 
-#: libs/dialogs/deletedialog.cpp:427
+#: libs/dialogs/deletedialog.cpp:434
 msgid ""
 "<p>These albums will be moved to Trash.</p><p>Note that <b>all subalbums</b> "
 "are included in this list and will be moved to Trash as well.</p>"
 msgstr ""
 
-#: libs/dialogs/deletedialog.cpp:453
+#: libs/dialogs/deletedialog.cpp:460
 msgid "&Move to Trash"
 msgstr "घुरुवा मं ले जाव (&M)"
 
-#: libs/dialogs/deletedialog.cpp:610
+#: libs/dialogs/deletedialog.cpp:617
 msgid "About to delete selected files"
 msgstr "चुने गे फाइल मन ल मेटाय जाही"
 
-#: libs/dialogs/deletedialog.cpp:615
+#: libs/dialogs/deletedialog.cpp:622
 msgid "About to delete selected albums"
 msgstr "चुने गे अलबमों ल मेटाय जाही"
 
@@ -10001,6 +10016,10 @@ msgstr "बदलाव मन ल हमेसा बिना पुस्ट�
 msgid "Reading metadata from files. Please wait..."
 msgstr "फाइल मन से मेटाडाटा पढ़त हे. किरपा करके, अगोरव..."
 
+#: libs/imageproperties/imagedescedittab.cpp:789
+msgid "Writing metadata to files. Please wait..."
+msgstr "फाइल मन मं मेटाडाटा लिखत हे. किरपा करके, अगोरव..."
+
 #: libs/imageproperties/imagedescedittab.cpp:1161
 msgid "Read metadata from file to database"
 msgstr "फाइल से डाटाबेस मं मेटाडाटा पढ़व"
@@ -11780,22 +11799,22 @@ msgstr ""
 msgid "Sort by rating"
 msgstr "दरजा आयातित"
 
-#: libs/progressmanager/progressmanager.cpp:157
-#, fuzzy
-#| msgid "Load..."
-msgid "Aborting..."
-msgstr "लोड करव..."
-
-#: libs/progressmanager/progressmanager.cpp:386
-#, kde-format
-msgid "A tool named \"%1\" is already running...."
-msgstr ""
-
 #: libs/progressmanager/progressview.cpp:211
 #, fuzzy
 #| msgid "Camera information"
 msgid "Cancel this operation."
 msgstr "कैमरा जानकारी"
+
+#: libs/progressmanager/progressmanager.cpp:159
+#, fuzzy
+#| msgid "Load..."
+msgid "Aborting..."
+msgstr "लोड करव..."
+
+#: libs/progressmanager/progressmanager.cpp:447
+#, kde-format
+msgid "A tool named \"%1\" is already running...."
+msgstr ""
 
 #: libs/progressmanager/statusbarprogresswidget.cpp:121
 msgid "Open detailed progress dialog"
@@ -11807,11 +11826,11 @@ msgstr ""
 msgid "No active process"
 msgstr "कोई सक्रिय छनइया नइ"
 
-#: libs/progressmanager/statusbarprogresswidget.cpp:367
+#: libs/progressmanager/statusbarprogresswidget.cpp:369
 msgid "Hide detailed progress window"
 msgstr ""
 
-#: libs/progressmanager/statusbarprogresswidget.cpp:373
+#: libs/progressmanager/statusbarprogresswidget.cpp:375
 msgid "Show detailed progress window"
 msgstr ""
 
@@ -16267,7 +16286,7 @@ msgstr ""
 msgid "Item \"%1\" from queue \"%2\": %3"
 msgstr ""
 
-#: utilities/queuemanager/manager/batchtool.cpp:194
+#: utilities/queuemanager/manager/batchtool.cpp:196
 #, fuzzy
 #| msgid "No options available"
 msgid "No setting available"
@@ -20484,6 +20503,24 @@ msgid ""
 "Rev.: %3"
 msgstr ""
 
+#~ msgid "Removing image tags. Please wait..."
+#~ msgstr "फोटू टैग हटाय जात हे. किरपा करके, अगोरव..."
+
+#, fuzzy
+#~| msgid "Assigning image tags. Please wait..."
+#~ msgid "Editing group. Please wait..."
+#~ msgstr "फोटू टैग आबंटित करत हे. किरपा करके, अगोरव..."
+
+#, fuzzy
+#~| msgid "Writing metadata to files. Please wait..."
+#~ msgid "Applying metadata. Please wait..."
+#~ msgstr "फाइल मन मं मेटाडाटा लिखत हे. किरपा करके, अगोरव..."
+
+#, fuzzy
+#~| msgid "Prepare slideshow. Please wait..."
+#~ msgid "Transforming items. Please wait..."
+#~ msgstr "स्लाइड सो बनात हे... किरपा करके, अगोरव."
+
 #~ msgid "Checking ICC repository"
 #~ msgstr "आईसीसी रेपासिटरी जांच करत हे "
 
@@ -20590,11 +20627,6 @@ msgstr ""
 #~| msgid "<b>The thumbnails database has been updated.</b>"
 #~ msgid "The database of detected faces has been updated."
 #~ msgstr "<b>छोटेफोटू डाटाबेस अपडेट होगे.</b>"
-
-#, fuzzy
-#~| msgid "Save metadata"
-#~ msgid "Sync metadata"
-#~ msgstr "मेटाडाटा सहेजव"
 
 #~ msgid "Parsing all albums"
 #~ msgstr "सब्बो एलबम ल पारसिंग करत हे"
