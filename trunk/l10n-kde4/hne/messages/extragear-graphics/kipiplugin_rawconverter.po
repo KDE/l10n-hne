@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_rawconverter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-26 02:49+0100\n"
+"POT-Creation-Date: 2012-03-10 03:21+0100\n"
 "PO-Revision-Date: 2009-02-16 19:55+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -33,35 +33,35 @@ msgstr "लक्छ्य फाइल"
 msgid "Camera"
 msgstr "कैमरा"
 
-#: dialogs/singledialog.cpp:128
-msgid "&Preview"
-msgstr "प्रिव्यू (&P)"
+#: dialogs/batchdialog.cpp:141 dialogs/singledialog.cpp:203
+#, fuzzy
+#| msgid "Exit Raw Converter"
+msgid "Exit RAW Converter"
+msgstr "रा कन्वर्टर से बाहर हो"
 
-#: dialogs/singledialog.cpp:129 dialogs/batchdialog.cpp:490
-msgid "Con&vert"
-msgstr "बदलव (&v)"
+#: dialogs/batchdialog.cpp:142
+#, fuzzy
+#| msgid "Raw Images Batch Converter"
+msgid "RAW Image Batch Converter"
+msgstr "रा फोटू बैच कनवर्टर"
 
-#: dialogs/singledialog.cpp:130 dialogs/batchdialog.cpp:484
-msgid "&Abort"
-msgstr "छोड़व (&A)"
-
-#: dialogs/singledialog.cpp:131 dialogs/singledialog.cpp:167
-#: dialogs/batchdialog.cpp:188
-msgid "RAW Image Converter"
-msgstr "रा इमेज कन्वर्टर"
-
-#: dialogs/singledialog.cpp:149 dialogs/singledialog.cpp:152
 #: dialogs/batchdialog.cpp:163 dialogs/batchdialog.cpp:167
+#: dialogs/singledialog.cpp:148 dialogs/singledialog.cpp:151
 msgid "Save settings"
 msgstr "सेटिंग सहेजव"
 
-#: dialogs/singledialog.cpp:170
-#, fuzzy
-#| msgid "A Kipi plugin to convert a Raw image"
-msgid "A Kipi plugin to convert RAW images"
-msgstr "रा फोटू ल बदले के एक केआईपीआई प्लगइन"
+#: dialogs/batchdialog.cpp:188 dialogs/singledialog.cpp:130
+#: dialogs/singledialog.cpp:166
+msgid "RAW Image Converter"
+msgstr "रा इमेज कन्वर्टर"
 
-#: dialogs/singledialog.cpp:171 dialogs/batchdialog.cpp:192
+#: dialogs/batchdialog.cpp:191
+#, fuzzy
+#| msgid "A Kipi plugin to batch convert Raw images"
+msgid "A Kipi plugin to batch convert RAW images"
+msgstr "रा फोटू ल बैच मं बदले के एक केआईपीआई प्लगइन"
+
+#: dialogs/batchdialog.cpp:192 dialogs/singledialog.cpp:170
 #, fuzzy
 msgid ""
 "(c) 2003-2005, Renchi Raju\n"
@@ -70,48 +70,79 @@ msgstr ""
 "(c) 2003-2005, रेंची राजू\n"
 "(c) 2006-2008, गिल्स काउलिएर"
 
-#: dialogs/singledialog.cpp:174 dialogs/batchdialog.cpp:195
+#: dialogs/batchdialog.cpp:195 dialogs/singledialog.cpp:173
 msgid "Renchi Raju"
 msgstr "रेंची राजू"
 
-#: dialogs/singledialog.cpp:175 dialogs/batchdialog.cpp:196
+#: dialogs/batchdialog.cpp:196 dialogs/singledialog.cpp:174
 msgid "Author"
 msgstr "लेखक"
 
-#: dialogs/singledialog.cpp:178 dialogs/batchdialog.cpp:199
+#: dialogs/batchdialog.cpp:199 dialogs/singledialog.cpp:177
 msgid "Gilles Caulier"
 msgstr "गिल्स काउलिएर"
 
-#: dialogs/singledialog.cpp:179 dialogs/batchdialog.cpp:200
+#: dialogs/batchdialog.cpp:200 dialogs/singledialog.cpp:178
 msgid "Developer and maintainer"
 msgstr "डेवलपर अउ मेंटेनर"
 
-#: dialogs/singledialog.cpp:187 dialogs/batchdialog.cpp:208
+#: dialogs/batchdialog.cpp:208 dialogs/singledialog.cpp:186
 #, fuzzy
 msgid "Handbook"
 msgstr "प्लगइन हेंड-बुक"
 
-#: dialogs/singledialog.cpp:195
+#: dialogs/batchdialog.cpp:347
+msgid "There is no RAW file in the list to process."
+msgstr ""
+
+#: dialogs/batchdialog.cpp:483 dialogs/singledialog.cpp:129
+msgid "&Abort"
+msgstr "छोड़व (&A)"
+
+#: dialogs/batchdialog.cpp:484 dialogs/singledialog.cpp:201
+msgid "Abort the current RAW file conversion"
+msgstr ""
+
+#: dialogs/batchdialog.cpp:489 dialogs/singledialog.cpp:128
+msgid "Con&vert"
+msgstr "बदलव (&v)"
+
+#: dialogs/batchdialog.cpp:490
+msgid "Start converting the RAW images using current settings."
+msgstr ""
+
+#: dialogs/batchdialog.cpp:511 dialogs/singledialog.cpp:439
+#, fuzzy, kde-format
+#| msgid "Save Raw Image converted from '%1' as"
+msgid "Save RAW image converted from '%1' as"
+msgstr "'%1' से बदली गे रा फोटू मन ल अइसन सहेजव"
+
+#: dialogs/batchdialog.cpp:540 dialogs/singledialog.cpp:466
+#, kde-format
+msgid "Failed to save image %1"
+msgstr "फोटू %1 सहेजे मं असफल "
+
+#: dialogs/singledialog.cpp:127
+msgid "&Preview"
+msgstr "प्रिव्यू (&P)"
+
+#: dialogs/singledialog.cpp:169
+#, fuzzy
+#| msgid "A Kipi plugin to convert a Raw image"
+msgid "A Kipi plugin to convert RAW images"
+msgstr "रा फोटू ल बदले के एक केआईपीआई प्लगइन"
+
+#: dialogs/singledialog.cpp:194
 msgid ""
 "Generate a preview using current settings. Uses a simple bilinear "
 "interpolation for quick results."
 msgstr ""
 
-#: dialogs/singledialog.cpp:199
+#: dialogs/singledialog.cpp:198
 msgid ""
 "Convert the RAW Image using current settings. This uses a high-quality "
 "adaptive algorithm."
 msgstr ""
-
-#: dialogs/singledialog.cpp:202 dialogs/batchdialog.cpp:485
-msgid "Abort the current RAW file conversion"
-msgstr ""
-
-#: dialogs/singledialog.cpp:204 dialogs/batchdialog.cpp:141
-#, fuzzy
-#| msgid "Exit Raw Converter"
-msgid "Exit RAW Converter"
-msgstr "रा कन्वर्टर से बाहर हो"
 
 #: dialogs/singledialog.cpp:389
 msgid "Generating Preview..."
@@ -127,86 +158,55 @@ msgstr "प्रिव्यू बनाए मं फेल"
 msgid "Processing Images..."
 msgstr "रा फोटू बदलत हे..."
 
-#: dialogs/singledialog.cpp:439 dialogs/batchdialog.cpp:512
-#, fuzzy, kde-format
-#| msgid "Save Raw Image converted from '%1' as"
-msgid "Save RAW image converted from '%1' as"
-msgstr "'%1' से बदली गे रा फोटू मन ल अइसन सहेजव"
-
-#: dialogs/singledialog.cpp:466 dialogs/batchdialog.cpp:541
-#, kde-format
-msgid "Failed to save image %1"
-msgstr "फोटू %1 सहेजे मं असफल "
-
 #: dialogs/singledialog.cpp:481
 #, fuzzy
 #| msgid "Failed to save image %1"
 msgid "Failed to convert RAW image"
 msgstr "फोटू %1 सहेजे मं असफल "
 
-#: dialogs/batchdialog.cpp:142
-#, fuzzy
-#| msgid "Raw Images Batch Converter"
-msgid "RAW Image Batch Converter"
-msgstr "रा फोटू बैच कनवर्टर"
-
-#: dialogs/batchdialog.cpp:191
-#, fuzzy
-#| msgid "A Kipi plugin to batch convert Raw images"
-msgid "A Kipi plugin to batch convert RAW images"
-msgstr "रा फोटू ल बैच मं बदले के एक केआईपीआई प्लगइन"
-
-#: dialogs/batchdialog.cpp:348
-msgid "There is no RAW file in the list to process."
-msgstr ""
-
-#: dialogs/batchdialog.cpp:491
-msgid "Start converting the RAW images using current settings."
-msgstr ""
-
-#: manager/actionthread.cpp:234
+#: manager/actionthread.cpp:248
 #, fuzzy
 #| msgid "Cannot identify Raw image"
 msgid "Cannot identify RAW image"
 msgstr "रा फोटू पहिचान नइ सकिस"
 
-#: manager/actionthread.cpp:241
+#: manager/actionthread.cpp:255
 #, fuzzy, kde-format
 #| msgid "Make: %1\n"
 msgid "<br>Make: %1<br>"
 msgstr "मेक: %1\n"
 
-#: manager/actionthread.cpp:242
+#: manager/actionthread.cpp:256
 #, fuzzy, kde-format
 #| msgid "Model: %1\n"
 msgid "Model: %1<br>"
 msgstr "माडल: %1\n"
 
-#: manager/actionthread.cpp:246
+#: manager/actionthread.cpp:260
 #, fuzzy, kde-format
 #| msgid "Created: %1\n"
 msgid "Created: %1<br>"
 msgstr "बनाइस: %1\n"
 
-#: manager/actionthread.cpp:253
+#: manager/actionthread.cpp:267
 #, fuzzy, kde-format
 #| msgid "Aperture: f/%1\n"
 msgid "Aperture: f/%1<br>"
 msgstr "एपर्चर: f/%1\n"
 
-#: manager/actionthread.cpp:258
+#: manager/actionthread.cpp:272
 #, fuzzy, kde-format
 #| msgid "Focal: %1 mm\n"
 msgid "Focal: %1 mm<br>"
 msgstr "फोकल: %1 मिमी\n"
 
-#: manager/actionthread.cpp:263
+#: manager/actionthread.cpp:277
 #, fuzzy, kde-format
 #| msgid "Exposure: 1/%1 s\n"
 msgid "Exposure: 1/%1 s<br>"
 msgstr "एक्सपोजर: 1/%1 s\n"
 
-#: manager/actionthread.cpp:268
+#: manager/actionthread.cpp:282
 #, kde-format
 msgid "Sensitivity: %1 ISO"
 msgstr "संवेदनसीलता: %1 आइएसओ"
