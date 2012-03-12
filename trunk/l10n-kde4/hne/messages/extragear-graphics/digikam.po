@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-11 02:59+0100\n"
+"POT-Creation-Date: 2012-03-12 02:38+0100\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -3550,6 +3550,7 @@ msgid "Convert to Black and White"
 msgstr "काला-सफेद मं बदलव"
 
 #: imageplugins/color/cbtool.cpp:91 imageplugins/color/cbtool.cpp:199
+#: imageplugins/color/filmtool.cpp:240
 #: utilities/queuemanager/basetools/color/colorbalance.cpp:48
 msgid "Color Balance"
 msgstr "रंग संतुलन"
@@ -3604,7 +3605,7 @@ msgid "Adjust Levels"
 msgstr "स्तर एडजस्ट करव"
 
 #: imageplugins/color/adjustlevelstool.cpp:213
-#: imageplugins/color/filmtool.cpp:198
+#: imageplugins/color/filmtool.cpp:202
 #, fuzzy
 #| msgid ""
 #| "This is the histogram drawing of the selected channel from original image"
@@ -3650,7 +3651,7 @@ msgid "Minimal input intensity."
 msgstr "सबसे कम तीव्रता इनपुट."
 
 #: imageplugins/color/adjustlevelstool.cpp:244
-#: imageplugins/color/filmtool.cpp:274
+#: imageplugins/color/filmtool.cpp:285
 msgid "Gamma input value."
 msgstr "गामा इनपुट मूल्य."
 
@@ -3740,7 +3741,7 @@ msgid ""
 msgstr "यदि आप मन ए बटन ल दबाहू, सब्बो चैनल स्तर अपने अपन एडजस्ट हो जाही."
 
 #: imageplugins/color/adjustlevelstool.cpp:319
-#: imageplugins/color/filmtool.cpp:245
+#: imageplugins/color/filmtool.cpp:256
 #: libs/dimg/filters/bw/mixersettings.cpp:167
 #: libs/dimg/filters/curves/curvesbox.cpp:215
 msgid "&Reset"
@@ -3771,70 +3772,6 @@ msgstr "सहेजे बर गिम्प स्तर फाइल"
 #: imageplugins/color/adjustlevelstool.cpp:964
 msgid "Cannot save to the Gimp levels text file."
 msgstr "गिम्प स्तर पाठ फाइल मं सहेज नइ सकिस."
-
-#: imageplugins/color/filmtool.cpp:162 imageplugins/color/filmtool.cpp:615
-#: libs/dimg/filters/bw/bwsepiasettings.cpp:371
-msgid "Film"
-msgstr "फिल्म"
-
-#: imageplugins/color/filmtool.cpp:208
-msgid "Input range of red color channel."
-msgstr ""
-
-#: imageplugins/color/filmtool.cpp:213
-msgid "Input range of green color channel."
-msgstr ""
-
-#: imageplugins/color/filmtool.cpp:218
-msgid "Input range of blue color channel."
-msgstr ""
-
-#: imageplugins/color/filmtool.cpp:239
-#, fuzzy
-#| msgid "Temperature tone color picker."
-msgid "White point color picker"
-msgstr "तापक्रम टोन रंग चुनइया."
-
-#: imageplugins/color/filmtool.cpp:240
-msgid ""
-"With this button, you can pick the color of the orange mask of the scanned "
-"color negative. It represents white point of the negative, or the darkest "
-"black tone of the positive image after inversion. It is also the reference "
-"point for applying the film profile."
-msgstr ""
-
-#: imageplugins/color/filmtool.cpp:247
-#, fuzzy
-#| msgid "Reset contents"
-msgid "Reset white point."
-msgstr "विसय सूची रीसेट करव"
-
-#: imageplugins/color/filmtool.cpp:248
-#, fuzzy
-#| msgid ""
-#| "If you press this button, all channel levels will be adjusted "
-#| "automatically."
-msgid "If you press this button, the white point is reset to pure white."
-msgstr "यदि आप मन ए बटन ल दबाहू, सब्बो चैनल स्तर अपने अपन एडजस्ट हो जाही."
-
-#: imageplugins/color/filmtool.cpp:266
-#, fuzzy
-#| msgid "Exposure time"
-msgid "Exposure correction."
-msgstr "एक्सपोजर समय"
-
-#: imageplugins/color/filmtool.cpp:267
-msgid ""
-"Move the slider to higher values until maximum brightness is achieved "
-"without clipping any color channel. Use the output histogram to evaluate "
-"each channel."
-msgstr ""
-
-#: imageplugins/color/filmtool.cpp:275
-msgid ""
-"Linear raw scans of film negatives require application of a gamma curve. "
-"Standard values are 1.8 or 2.2."
-msgstr ""
 
 #: imageplugins/color/imageplugin_color.cpp:110
 msgid "Brightness/Contrast/Gamma..."
@@ -3929,6 +3866,76 @@ msgstr "ये चीज मन के सूची हे जऊन ल मे�
 #| msgid "Color Management..."
 msgid "Color Management is disabled..."
 msgstr "रंग प्रबंधन..."
+
+#: imageplugins/color/filmtool.cpp:166 imageplugins/color/filmtool.cpp:644
+#: libs/dimg/filters/bw/bwsepiasettings.cpp:371
+msgid "Film"
+msgstr "फिल्म"
+
+#: imageplugins/color/filmtool.cpp:212
+msgid "Input range of red color channel."
+msgstr ""
+
+#: imageplugins/color/filmtool.cpp:217
+msgid "Input range of green color channel."
+msgstr ""
+
+#: imageplugins/color/filmtool.cpp:222
+msgid "Input range of blue color channel."
+msgstr ""
+
+#: imageplugins/color/filmtool.cpp:242
+msgid ""
+"Check to apply the built-in color balance of the film profile. Un-check if "
+"you want to apply color balance yourself."
+msgstr ""
+
+#: imageplugins/color/filmtool.cpp:250
+#, fuzzy
+#| msgid "Temperature tone color picker."
+msgid "White point color picker"
+msgstr "तापक्रम टोन रंग चुनइया."
+
+#: imageplugins/color/filmtool.cpp:251
+msgid ""
+"With this button, you can pick the color of the orange mask of the scanned "
+"color negative. It represents white point of the negative, or the darkest "
+"black tone of the positive image after inversion. It is also the reference "
+"point for applying the film profile."
+msgstr ""
+
+#: imageplugins/color/filmtool.cpp:258
+#, fuzzy
+#| msgid "Reset contents"
+msgid "Reset white point."
+msgstr "विसय सूची रीसेट करव"
+
+#: imageplugins/color/filmtool.cpp:259
+#, fuzzy
+#| msgid ""
+#| "If you press this button, all channel levels will be adjusted "
+#| "automatically."
+msgid "If you press this button, the white point is reset to pure white."
+msgstr "यदि आप मन ए बटन ल दबाहू, सब्बो चैनल स्तर अपने अपन एडजस्ट हो जाही."
+
+#: imageplugins/color/filmtool.cpp:277
+#, fuzzy
+#| msgid "Exposure time"
+msgid "Exposure correction."
+msgstr "एक्सपोजर समय"
+
+#: imageplugins/color/filmtool.cpp:278
+msgid ""
+"Move the slider to higher values until maximum brightness is achieved "
+"without clipping any color channel. Use the output histogram to evaluate "
+"each channel."
+msgstr ""
+
+#: imageplugins/color/filmtool.cpp:286
+msgid ""
+"Linear raw scans of film negatives require application of a gamma curve. "
+"Standard values are 1.8 or 2.2."
+msgstr ""
 
 #: imageplugins/decorate/bordertool.cpp:79
 #: imageplugins/decorate/bordertool.cpp:176
@@ -9653,7 +9660,7 @@ msgstr ""
 msgid "Unknown filter"
 msgstr "अग्यात गलती"
 
-#: libs/dimg/filters/film/filmfilter.h:144
+#: libs/dimg/filters/film/filmfilter.h:147
 msgid "Color Negative Inverter"
 msgstr ""
 
@@ -10576,6 +10583,22 @@ msgid ""
 "a standard XMP/NAA reference code."
 msgstr ""
 
+#: libs/template/templatelist.cpp:80
+msgid "Here you can see the metadata template list managed by digiKam."
+msgstr ""
+
+#: libs/template/templatelist.cpp:83
+#: utilities/searchwindow/searchfields.cpp:536
+#: utilities/setup/setupcamera.cpp:234
+msgid "Title"
+msgstr "सीर्सक"
+
+#: libs/template/templatelist.cpp:84
+#, fuzzy
+#| msgid "Author"
+msgid "Authors"
+msgstr "लेखक"
+
 #: libs/template/templatepanel.cpp:124
 #, fuzzy
 #| msgid "Author"
@@ -10943,40 +10966,6 @@ msgstr "कंट्रास्टः"
 msgid "Subjects"
 msgstr "विसय दूरी"
 
-#: libs/template/templateviewer.cpp:161
-#, fuzzy
-#| msgid "Name:"
-msgid "Names:"
-msgstr "नाम:"
-
-#: libs/template/templateviewer.cpp:169
-#, fuzzy
-#| msgid "Tags:"
-msgid "Usages:"
-msgstr "टैग्स:"
-
-#: libs/template/templateviewer.cpp:193
-#, fuzzy
-#| msgid "Geolocation"
-msgid "Sublocation:"
-msgstr "जियोलोकेसन"
-
-#: libs/template/templatelist.cpp:80
-msgid "Here you can see the metadata template list managed by digiKam."
-msgstr ""
-
-#: libs/template/templatelist.cpp:83
-#: utilities/searchwindow/searchfields.cpp:536
-#: utilities/setup/setupcamera.cpp:234
-msgid "Title"
-msgstr "सीर्सक"
-
-#: libs/template/templatelist.cpp:84
-#, fuzzy
-#| msgid "Author"
-msgid "Authors"
-msgstr "लेखक"
-
 #: libs/template/templateselector.cpp:78
 #, fuzzy
 #| msgid "&Replace"
@@ -11010,16 +10999,23 @@ msgstr "मेटाव (&R)"
 msgid "Do not change"
 msgstr "कुछ नइ करव"
 
-#: libs/threadimageio/thumbnailloadthread.cpp:220
-#, kde-format
-msgid "Error message: %1"
-msgstr ""
-
-#: libs/threadimageio/thumbnailloadthread.cpp:221
+#: libs/template/templateviewer.cpp:161
 #, fuzzy
-#| msgid "Failed to add tag to database"
-msgid "Failed to initialize thumbnail database"
-msgstr "डाटाबेस मं टैग जोड़े मं फेल"
+#| msgid "Name:"
+msgid "Names:"
+msgstr "नाम:"
+
+#: libs/template/templateviewer.cpp:169
+#, fuzzy
+#| msgid "Tags:"
+msgid "Usages:"
+msgstr "टैग्स:"
+
+#: libs/template/templateviewer.cpp:193
+#, fuzzy
+#| msgid "Geolocation"
+msgid "Sublocation:"
+msgstr "जियोलोकेसन"
 
 #: libs/threadimageio/thumbnailcreator.cpp:215
 msgid "No or invalid size specified"
@@ -11037,6 +11033,17 @@ msgstr "फाइल मौजूद नइ हे"
 #, kde-format
 msgid "Cannot create thumbnail for %1"
 msgstr "%1 बर छोटेफोटू बनाय नइ जा सके"
+
+#: libs/threadimageio/thumbnailloadthread.cpp:220
+#, kde-format
+msgid "Error message: %1"
+msgstr ""
+
+#: libs/threadimageio/thumbnailloadthread.cpp:221
+#, fuzzy
+#| msgid "Failed to add tag to database"
+msgid "Failed to initialize thumbnail database"
+msgstr "डाटाबेस मं टैग जोड़े मं फेल"
 
 #: libs/widgets/common/filesaveoptionsbox.cpp:105
 msgid "No options available"
@@ -11908,22 +11915,22 @@ msgstr ""
 msgid "Sort by rating"
 msgstr "दरजा आयातित"
 
-#: libs/progressmanager/progressview.cpp:211
-#, fuzzy
-#| msgid "Camera information"
-msgid "Cancel this operation."
-msgstr "कैमरा जानकारी"
-
-#: libs/progressmanager/progressmanager.cpp:159
+#: libs/progressmanager/progressmanager.cpp:160
 #, fuzzy
 #| msgid "Load..."
 msgid "Aborting..."
 msgstr "लोड करव..."
 
-#: libs/progressmanager/progressmanager.cpp:447
+#: libs/progressmanager/progressmanager.cpp:450
 #, kde-format
 msgid "A tool named \"%1\" is already running...."
 msgstr ""
+
+#: libs/progressmanager/progressview.cpp:212
+#, fuzzy
+#| msgid "Camera information"
+msgid "Cancel this operation."
+msgstr "कैमरा जानकारी"
 
 #: libs/progressmanager/statusbarprogresswidget.cpp:121
 msgid "Open detailed progress dialog"
