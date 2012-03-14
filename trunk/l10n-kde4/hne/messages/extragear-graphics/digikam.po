@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-13 03:40+0100\n"
+"POT-Creation-Date: 2012-03-14 02:51+0100\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -90,7 +90,7 @@ msgid ""
 msgstr ""
 
 #: digikam/album/albumselectiontreeview.cpp:167
-#: digikam/main/digikamapp.cpp:1250 digikam/tags/tagfolderview.cpp:73
+#: digikam/main/digikamapp.cpp:1252 digikam/tags/tagfolderview.cpp:73
 msgid "Find Duplicates..."
 msgstr "डुप्लीकेट खोजव..."
 
@@ -103,19 +103,26 @@ msgstr "सब्बो छोटेफोटू फिर से बनाव..
 #: digikam/album/albumselectiontreeview.cpp:179
 #: digikam/album/albummanager.cpp:1064 digikam/album/album.cpp:436
 #: digikam/dragdrop/albumdragdrop.cpp:91
-#: digikam/dragdrop/albumdragdrop.cpp:162
-#: digikam/dragdrop/albumdragdrop.cpp:203
-#: digikam/dragdrop/albumdragdrop.cpp:268
-#: digikam/dragdrop/albumdragdrop.cpp:315
-#: digikam/dragdrop/imagedragdrop.cpp:568 libs/models/albummodel.cpp:48
+#: digikam/dragdrop/albumdragdrop.cpp:156
+#: digikam/dragdrop/albumdragdrop.cpp:197
+#: digikam/dragdrop/albumdragdrop.cpp:258
+#: digikam/dragdrop/albumdragdrop.cpp:303
+#: digikam/dragdrop/imagedragdrop.cpp:551 libs/models/albummodel.cpp:48
 #: utilities/kipiiface/kipiimagecollection.cpp:282
 #: utilities/kipiiface/kipiimagecollectionselector.cpp:196
 msgid "My Albums"
 msgstr "मोर एलबम"
 
-#: digikam/album/albumtreeview.cpp:213
-msgid "Context menu"
-msgstr ""
+#: digikam/album/albummodificationhelper.cpp:222
+#: digikam/utils/searchmodificationhelper.cpp:143
+#, kde-format
+msgid "Rename Album (%1)"
+msgstr "एलबम (%1) के नाम बदलव"
+
+#: digikam/album/albummodificationhelper.cpp:223
+#: digikam/utils/searchmodificationhelper.cpp:144
+msgid "Enter new album name:"
+msgstr "नवा एलबम नाम भरव:"
 
 #: digikam/album/albummanager.cpp:408
 #, kde-format
@@ -449,17 +456,6 @@ msgstr "नवा एलबम (&N)"
 msgid "Create new album"
 msgstr "नवा एल्बम बनाव"
 
-#: digikam/album/albummodificationhelper.cpp:229
-#: digikam/utils/searchmodificationhelper.cpp:143
-#, kde-format
-msgid "Rename Album (%1)"
-msgstr "एलबम (%1) के नाम बदलव"
-
-#: digikam/album/albummodificationhelper.cpp:230
-#: digikam/utils/searchmodificationhelper.cpp:144
-msgid "Enter new album name:"
-msgstr "नवा एलबम नाम भरव:"
-
 #: digikam/album/albumpropsedit.cpp:120 digikam/album/albumpropsedit.cpp:237
 msgid "New Album"
 msgstr "नवा एलबम"
@@ -599,6 +595,10 @@ msgstr "अभी हाल के खोज"
 msgid "Current Duplicates Search"
 msgstr "अभी हाल के मैप खोज"
 
+#: digikam/album/albumtreeview.cpp:213
+msgid "Context menu"
+msgstr ""
+
 #: digikam/database/databaseguierrorhandler.cpp:205
 msgid ""
 "Error while opening the database.\n"
@@ -612,7 +612,7 @@ msgid ""
 " %1"
 msgstr ""
 
-#: digikam/database/dbstatdlg.cpp:58 digikam/main/digikamapp.cpp:1215
+#: digikam/database/dbstatdlg.cpp:58 digikam/main/digikamapp.cpp:1217
 #: utilities/cameragui/main/cameraui.cpp:462
 #: utilities/imageeditor/editor/imagewindow.cpp:596
 #: utilities/lighttable/lighttablewindow.cpp:620
@@ -821,45 +821,55 @@ msgctxt "month-name year-string"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: digikam/dragdrop/albumdragdrop.cpp:92
-#: digikam/dragdrop/albumdragdrop.cpp:204
-#: digikam/dragdrop/albumdragdrop.cpp:316
-#: digikam/dragdrop/imagedragdrop.cpp:120 digikam/dragdrop/tagdragdrop.cpp:84
+#: digikam/dragdrop/tagdragdrop.cpp:84 digikam/dragdrop/albumdragdrop.cpp:92
+#: digikam/dragdrop/albumdragdrop.cpp:198
+#: digikam/dragdrop/albumdragdrop.cpp:304
+#: digikam/dragdrop/imagedragdrop.cpp:120
 msgid "&Move Here"
 msgstr "इहां खिसकाव (&M)"
 
-#: digikam/dragdrop/albumdragdrop.cpp:94
-#: digikam/dragdrop/albumdragdrop.cpp:171
-#: digikam/dragdrop/albumdragdrop.cpp:214
-#: digikam/dragdrop/albumdragdrop.cpp:274
-#: digikam/dragdrop/albumdragdrop.cpp:319
+#: digikam/dragdrop/tagdragdrop.cpp:86 digikam/dragdrop/tagdragdrop.cpp:160
+#: digikam/dragdrop/tagdragdrop.cpp:192 digikam/dragdrop/albumdragdrop.cpp:94
+#: digikam/dragdrop/albumdragdrop.cpp:165
+#: digikam/dragdrop/albumdragdrop.cpp:208
+#: digikam/dragdrop/albumdragdrop.cpp:264
+#: digikam/dragdrop/albumdragdrop.cpp:307
 #: digikam/dragdrop/imagedragdrop.cpp:87
-#: digikam/dragdrop/imagedragdrop.cpp:574 digikam/dragdrop/tagdragdrop.cpp:86
-#: digikam/dragdrop/tagdragdrop.cpp:160 digikam/dragdrop/tagdragdrop.cpp:192
+#: digikam/dragdrop/imagedragdrop.cpp:557
 #: utilities/cameragui/views/cameraiconview.cpp:807
 msgid "C&ancel"
 msgstr "खारिज करव (&a)"
 
-#: digikam/dragdrop/albumdragdrop.cpp:167
-#: digikam/dragdrop/albumdragdrop.cpp:210
+#: digikam/dragdrop/tagdragdrop.cpp:156
+#: digikam/utils/contextmenuhelper.cpp:248
+msgid "Set as Tag Thumbnail"
+msgstr "टैग छोटेफोटू के रूप मं सेट करव"
+
+#: digikam/dragdrop/tagdragdrop.cpp:190
+#, kde-format
+msgid "Assign Tag '%1' to Items"
+msgstr "टैग '%1' ए चीज मन मआबंटित करव"
+
+#: digikam/dragdrop/albumdragdrop.cpp:161
+#: digikam/dragdrop/albumdragdrop.cpp:204
 #: digikam/utils/contextmenuhelper.cpp:244
 msgid "Set as Album Thumbnail"
 msgstr "एलबम छोटेफोटू के रूप मं सेट करव"
 
-#: digikam/dragdrop/albumdragdrop.cpp:205
-#: digikam/dragdrop/albumdragdrop.cpp:317
+#: digikam/dragdrop/albumdragdrop.cpp:199
+#: digikam/dragdrop/albumdragdrop.cpp:305
 #: digikam/dragdrop/imagedragdrop.cpp:123
 msgid "&Copy Here"
 msgstr "इहां नकल करव (&C)"
 
-#: digikam/dragdrop/albumdragdrop.cpp:270
-#: digikam/dragdrop/imagedragdrop.cpp:570
+#: digikam/dragdrop/albumdragdrop.cpp:260
+#: digikam/dragdrop/imagedragdrop.cpp:553
 #, fuzzy
 msgid "Download From Camera"
 msgstr "कैमरा से डाउनलोड करव"
 
-#: digikam/dragdrop/albumdragdrop.cpp:272
-#: digikam/dragdrop/imagedragdrop.cpp:572
+#: digikam/dragdrop/albumdragdrop.cpp:262
+#: digikam/dragdrop/imagedragdrop.cpp:555
 #, fuzzy
 msgid "Download && Delete From Camera"
 msgstr "कैमरा डाउनलोड करव अउ मेटाव (&&)"
@@ -877,47 +887,37 @@ msgstr "पहिली चीज मं जाव"
 msgid "Assign Tag to Dropped Items"
 msgstr "चुने गे चीज मन मटैग आबंटित करव (&S)"
 
-#: digikam/dragdrop/imagedragdrop.cpp:469
+#: digikam/dragdrop/imagedragdrop.cpp:452
 #, kde-format
 msgid "Assign '%1' to &Selected Items"
 msgstr "'%1' ल चुने गे चीज मन मआबंटित करव (&S)"
 
-#: digikam/dragdrop/imagedragdrop.cpp:474
+#: digikam/dragdrop/imagedragdrop.cpp:457
 #, kde-format
 msgid "Assign '%1' to &This Item"
 msgstr "'%1' ल चुने गे चीज मं आबंटित करव (&T)"
 
-#: digikam/dragdrop/imagedragdrop.cpp:478
+#: digikam/dragdrop/imagedragdrop.cpp:461
 #, kde-format
 msgid "Assign '%1' to &All Items"
 msgstr "'%1' ल सब्बो चीज मन मआबंटित करव (&A)"
 
-#: digikam/dragdrop/imagedragdrop.cpp:482
-#: digikam/dragdrop/imagedragdrop.cpp:530
+#: digikam/dragdrop/imagedragdrop.cpp:465
+#: digikam/dragdrop/imagedragdrop.cpp:513
 msgid "&Cancel"
 msgstr "खारिज करव (&C)"
 
-#: digikam/dragdrop/imagedragdrop.cpp:517
+#: digikam/dragdrop/imagedragdrop.cpp:500
 msgid "Assign Tags to &Selected Items"
 msgstr "चुने गे चीज मन मटैग आबंटित करव (&S)"
 
-#: digikam/dragdrop/imagedragdrop.cpp:524
+#: digikam/dragdrop/imagedragdrop.cpp:507
 msgid "Assign Tags to &This Item"
 msgstr "ये चीज मं टैग आबंटित करव (&T)"
 
-#: digikam/dragdrop/imagedragdrop.cpp:527
+#: digikam/dragdrop/imagedragdrop.cpp:510
 msgid "Assign Tags to &All Items"
 msgstr "सब्बो चीज मन मटैग आबंटित करव (&A)"
-
-#: digikam/dragdrop/tagdragdrop.cpp:156
-#: digikam/utils/contextmenuhelper.cpp:248
-msgid "Set as Tag Thumbnail"
-msgstr "टैग छोटेफोटू के रूप मं सेट करव"
-
-#: digikam/dragdrop/tagdragdrop.cpp:190
-#, kde-format
-msgid "Assign Tag '%1' to Items"
-msgstr "टैग '%1' ए चीज मन मआबंटित करव"
 
 #: digikam/filters/mimefilter.cpp:36
 #: utilities/cameragui/widgets/filtercombo.cpp:144
@@ -1289,7 +1289,7 @@ msgstr "टैग फिल्टर्स"
 msgid "Labels Filter"
 msgstr "लेंस फिल्टर"
 
-#: digikam/items/digikamimageview.cpp:330
+#: digikam/items/digikamimageview.cpp:327
 #: utilities/cameragui/main/cameraui.cpp:325
 #, fuzzy
 #| msgid "View"
@@ -1297,16 +1297,16 @@ msgctxt "View the selected image"
 msgid "View"
 msgstr "दृस्य"
 
-#: digikam/items/imageviewutilities.cpp:263
+#: digikam/items/imageviewutilities.cpp:168
 msgid ""
 "<p>Please select the destination album from the digiKam library to move the "
 "selected images into.</p>"
 msgstr ""
 
-#: digikam/items/imageviewutilities.cpp:384
-#: utilities/imageeditor/editor/imagewindow.cpp:1617
-#: utilities/imageeditor/editor/imagewindow.cpp:1641
-#: utilities/imageeditor/editor/imagewindow.cpp:1672
+#: digikam/items/imageviewutilities.cpp:287
+#: utilities/imageeditor/editor/imagewindow.cpp:1584
+#: utilities/imageeditor/editor/imagewindow.cpp:1608
+#: utilities/imageeditor/editor/imagewindow.cpp:1639
 #, kde-format
 msgid "Album \"%1\""
 msgstr "एल्बम \"%1\""
@@ -1458,173 +1458,173 @@ msgstr "एल्बम स्केन करव"
 msgid "Initializing..."
 msgstr "सुरू करत हे..."
 
-#: digikam/main/digikamapp.cpp:272 showfoto/main/showfoto.cpp:212
+#: digikam/main/digikamapp.cpp:273 showfoto/main/showfoto.cpp:212
 #, fuzzy
 #| msgid "Checking ICC repository"
 msgid "Checking ICC repository..."
 msgstr "आईसीसी रेपासिटरी जांच करत हे "
 
-#: digikam/main/digikamapp.cpp:280
+#: digikam/main/digikamapp.cpp:281
 #, fuzzy
 #| msgid "Reading database"
 msgid "Reading database..."
 msgstr "डाटाबेस पढ़त हे"
 
-#: digikam/main/digikamapp.cpp:387
+#: digikam/main/digikamapp.cpp:389
 msgid ""
 "<p>The ICC profiles folder seems to be invalid.</p><p>If you want to try "
 "setting it again, choose \"Yes\" here, otherwise choose \"No\", and the "
 "\"Color Management\" feature will be disabled until you solve this issue.</p>"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:449
+#: digikam/main/digikamapp.cpp:451
 #, fuzzy
 #| msgid "Auto Detect Camera"
 msgid "Auto-Detecting Camera..."
 msgstr "कैमरा अपने अपन पता लगाव"
 
-#: digikam/main/digikamapp.cpp:463 digikam/main/digikamapp.cpp:478
+#: digikam/main/digikamapp.cpp:465 digikam/main/digikamapp.cpp:480
 #, fuzzy
 #| msgid "Opening Download Dialog"
 msgid "Opening Download Dialog..."
 msgstr "डाउनलोड गोठ खोलत हे"
 
-#: digikam/main/digikamapp.cpp:514
+#: digikam/main/digikamapp.cpp:516
 #, fuzzy
 #| msgid "Initializing Main View"
 msgid "Initializing Main View..."
 msgstr "मुख्य दृस्य इनिसियलाइज करत हे"
 
-#: digikam/main/digikamapp.cpp:612
+#: digikam/main/digikamapp.cpp:614
 msgid "Exit Preview Mode"
 msgstr "प्रिव्यू मोड से बाहिर हो"
 
-#: digikam/main/digikamapp.cpp:617
+#: digikam/main/digikamapp.cpp:619
 msgid "Next Image"
 msgstr "अगला फोटू"
 
-#: digikam/main/digikamapp.cpp:623 digikam/main/digikamapp.cpp:629
+#: digikam/main/digikamapp.cpp:625 digikam/main/digikamapp.cpp:631
 #: utilities/cameragui/main/cameraui.cpp:474
 #: utilities/imageeditor/editor/editorwindow.cpp:616
 #: utilities/lighttable/lighttablewindow.cpp:632
 msgid "Previous Image"
 msgstr "पिछला फोटू"
 
-#: digikam/main/digikamapp.cpp:634
+#: digikam/main/digikamapp.cpp:636
 msgid "First Image"
 msgstr "पहिली फोटू"
 
-#: digikam/main/digikamapp.cpp:639
+#: digikam/main/digikamapp.cpp:641
 msgid "Last Image"
 msgstr "आखरी फोटू"
 
-#: digikam/main/digikamapp.cpp:675
+#: digikam/main/digikamapp.cpp:677
 msgid "&Back"
 msgstr "पीछू (&B)"
 
-#: digikam/main/digikamapp.cpp:697
+#: digikam/main/digikamapp.cpp:699
 msgid "Forward"
 msgstr "आगू"
 
-#: digikam/main/digikamapp.cpp:715
+#: digikam/main/digikamapp.cpp:717
 msgid "Refresh"
 msgstr "ताजा करव"
 
-#: digikam/main/digikamapp.cpp:717
+#: digikam/main/digikamapp.cpp:719
 msgid "Refresh the contents of the current album."
 msgstr "अभी हाल अलबम के सामान ल ताजा करव."
 
-#: digikam/main/digikamapp.cpp:739
+#: digikam/main/digikamapp.cpp:741
 msgid "&New..."
 msgstr "नवा... (&N)"
 
-#: digikam/main/digikamapp.cpp:741
+#: digikam/main/digikamapp.cpp:743
 msgid "Creates a new empty Album in the collection."
 msgstr "संग्रह मं नवा खाली एलबम बनाथे."
 
-#: digikam/main/digikamapp.cpp:747
+#: digikam/main/digikamapp.cpp:749
 #, fuzzy
 #| msgid "New Album..."
 msgid "&Move to Album..."
 msgstr "नवा एलबम..."
 
-#: digikam/main/digikamapp.cpp:748
+#: digikam/main/digikamapp.cpp:750
 #, fuzzy
 msgid "Move selected images into an album."
 msgstr "अभी हाल के चयन ल नवा आभासी एलबम मं सहेजव"
 
-#: digikam/main/digikamapp.cpp:754
+#: digikam/main/digikamapp.cpp:756
 msgid "Delete Album"
 msgstr "एलबम मेटाव"
 
-#: digikam/main/digikamapp.cpp:760 digikam/main/digikamapp.cpp:818
+#: digikam/main/digikamapp.cpp:762 digikam/main/digikamapp.cpp:820
 #: libs/imageproperties/imagepropertiessidebarcamgui.cpp:91
 #: libs/imageproperties/imagepropertiessidebar.cpp:81
 msgid "Properties"
 msgstr "गुन"
 
-#: digikam/main/digikamapp.cpp:761
+#: digikam/main/digikamapp.cpp:763
 msgid "Edit album properties and collection information."
 msgstr "संग्रह जानकारी अउ एलबम गुन संपादित करव."
 
-#: digikam/main/digikamapp.cpp:767
+#: digikam/main/digikamapp.cpp:769
 #, fuzzy
 #| msgid "Rebuild All Thumbnails..."
 msgid "Rebuild Thumbnails In Current Album"
 msgstr "सब्बो छोटेफोटू फिर से बनाव..."
 
-#: digikam/main/digikamapp.cpp:768
+#: digikam/main/digikamapp.cpp:770
 msgid "Rebuilds all thumbnails for the current selected album"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:774
+#: digikam/main/digikamapp.cpp:776
 #, fuzzy
 #| msgid "Write metadata to each file"
 msgid "Write Metadata to Images"
 msgstr "हर एक फाइल मं मेटाडाटा लिखव"
 
-#: digikam/main/digikamapp.cpp:775 digikam/main/digikamapp.cpp:932
+#: digikam/main/digikamapp.cpp:777 digikam/main/digikamapp.cpp:934
 msgid ""
 "Updates metadata of images in the current album with the contents of digiKam "
 "database (image metadata will be overwritten with data from the database)."
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:784
+#: digikam/main/digikamapp.cpp:786
 #, fuzzy
 #| msgid "Read metadata from file to database"
 msgid "Reread Metadata From Images"
 msgstr "फाइल से डाटाबेस मं मेटाडाटा पढ़व"
 
-#: digikam/main/digikamapp.cpp:785 digikam/main/digikamapp.cpp:942
+#: digikam/main/digikamapp.cpp:787 digikam/main/digikamapp.cpp:944
 msgid ""
 "Updates the digiKam database from the metadata of the files in the current "
 "album (information in the database will be overwritten with data from the "
 "files' metadata)."
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:794
+#: digikam/main/digikamapp.cpp:796
 msgid "Open in File Manager"
 msgstr "फाइल प्रबंधक मं खोलव"
 
-#: digikam/main/digikamapp.cpp:800
+#: digikam/main/digikamapp.cpp:802
 #, fuzzy
 #| msgid "Open in File Manager"
 msgid "Open in Terminal"
 msgstr "फाइल प्रबंधक मं खोलव"
 
-#: digikam/main/digikamapp.cpp:806
+#: digikam/main/digikamapp.cpp:808
 #, fuzzy
 #| msgid "New Tag..."
 msgid "Browse Tags..."
 msgstr "नवा टैग..."
 
-#: digikam/main/digikamapp.cpp:812
+#: digikam/main/digikamapp.cpp:814
 #, fuzzy
 msgctxt "new tag"
 msgid "N&ew..."
 msgstr "नवा... (&e)"
 
-#: digikam/main/digikamapp.cpp:824 digikam/tags/tagmodificationhelper.cpp:254
+#: digikam/main/digikamapp.cpp:826 digikam/tags/tagmodificationhelper.cpp:254
 #: digikam/utils/searchmodificationhelper.cpp:82
 #: digikam/utils/editablesearchtreeview.cpp:68
 #: utilities/cameragui/main/cameraui.cpp:1863
@@ -1632,138 +1632,138 @@ msgstr "नवा... (&e)"
 msgid "Delete"
 msgstr "मेटाव"
 
-#: digikam/main/digikamapp.cpp:830
+#: digikam/main/digikamapp.cpp:832
 #, fuzzy
 #| msgid "View"
 msgid "Views"
 msgstr "दृस्य"
 
-#: digikam/main/digikamapp.cpp:835
+#: digikam/main/digikamapp.cpp:837
 #, fuzzy
 msgctxt "@action Go to thumbnails (icon) view"
 msgid "Thumbnails"
 msgstr "छोटेफोटू देखाव"
 
-#: digikam/main/digikamapp.cpp:840
+#: digikam/main/digikamapp.cpp:842
 #, fuzzy
 #| msgid "Resize Image"
 msgctxt "View the selected image"
 msgid "View Image"
 msgstr "फोटू ल नवा आकार देव"
 
-#: digikam/main/digikamapp.cpp:847
+#: digikam/main/digikamapp.cpp:849
 msgctxt "@action Switch to map view"
 msgid "Map"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:855 utilities/scriptiface/scriptiface.cpp:66
+#: digikam/main/digikamapp.cpp:857 utilities/scriptiface/scriptiface.cpp:66
 msgid "Script Console"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:863
+#: digikam/main/digikamapp.cpp:865
 #: utilities/searchwindow/searchtabheader.cpp:274
 msgid "Edit..."
 msgstr "संपादन..."
 
-#: digikam/main/digikamapp.cpp:865
+#: digikam/main/digikamapp.cpp:867
 msgid "Open the selected item in the image editor."
 msgstr "चुने गे चीज ल फोटू संपादक मं खोलव."
 
-#: digikam/main/digikamapp.cpp:869 showfoto/setup/setup.cpp:109
+#: digikam/main/digikamapp.cpp:871 showfoto/setup/setup.cpp:109
 #: utilities/imageeditor/editor/imagewindow.cpp:645
 msgid "Image Editor"
 msgstr "फोटू संपादक "
 
-#: digikam/main/digikamapp.cpp:870
+#: digikam/main/digikamapp.cpp:872
 #, fuzzy
 #| msgid "Open in File Manager"
 msgid "Open the image editor."
 msgstr "फाइल प्रबंधक मं खोलव"
 
-#: digikam/main/digikamapp.cpp:876
+#: digikam/main/digikamapp.cpp:878
 #: utilities/lighttable/lighttablewindow.cpp:126
 #: utilities/lighttable/lighttablewindow.cpp:1361
 #: utilities/setup/setup.cpp:272
 msgid "Light Table"
 msgstr "प्रकास टेबल"
 
-#: digikam/main/digikamapp.cpp:881
+#: digikam/main/digikamapp.cpp:883
 msgid "Place onto Light Table"
 msgstr "लाइट टेबल मं रखव"
 
-#: digikam/main/digikamapp.cpp:883
+#: digikam/main/digikamapp.cpp:885
 msgid "Place the selected items on the light table thumbbar."
 msgstr "चुने गे चीज मन ल लाइट टेबल थम्बबार मं रखव."
 
-#: digikam/main/digikamapp.cpp:887
+#: digikam/main/digikamapp.cpp:889
 msgid "Add to Light Table"
 msgstr "लाइट टेबल मं जोड़व"
 
-#: digikam/main/digikamapp.cpp:889
+#: digikam/main/digikamapp.cpp:891
 msgid "Add selected items to the light table thumbbar."
 msgstr "चुने गे चीज मन ल लाइट टेबल थम्बबार मं जोड़व"
 
-#: digikam/main/digikamapp.cpp:895 digikam/utils/contextmenuhelper.cpp:788
+#: digikam/main/digikamapp.cpp:897 digikam/utils/contextmenuhelper.cpp:788
 #: utilities/queuemanager/main/queuemgrwindow.cpp:143
 #: utilities/queuemanager/main/queuemgrwindow.cpp:281
 msgid "Batch Queue Manager"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:900
+#: digikam/main/digikamapp.cpp:902
 msgid "Add to Current Queue"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:902
+#: digikam/main/digikamapp.cpp:904
 #, fuzzy
 msgid "Add selected items to current queue from batch manager."
 msgstr "चुने गे चीज मन ल लाइट टेबल थम्बबार मं जोड़व"
 
-#: digikam/main/digikamapp.cpp:906
+#: digikam/main/digikamapp.cpp:908
 msgid "Add to New Queue"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:908
+#: digikam/main/digikamapp.cpp:910
 #, fuzzy
 msgid "Add selected items to a new queue from batch manager."
 msgstr "चुने गे चीज मन ल लाइट टेबल थम्बबार मं जोड़व"
 
-#: digikam/main/digikamapp.cpp:925
+#: digikam/main/digikamapp.cpp:927
 #, fuzzy
 #| msgid "Import"
 msgctxt "@action Import photos from camera"
 msgid "Import"
 msgstr "आयात"
 
-#: digikam/main/digikamapp.cpp:931
+#: digikam/main/digikamapp.cpp:933
 #, fuzzy
 #| msgid "Write metadata to each file"
 msgid "Write Metadata to Selected Images"
 msgstr "हर एक फाइल मं मेटाडाटा लिखव"
 
-#: digikam/main/digikamapp.cpp:941
+#: digikam/main/digikamapp.cpp:943
 #, fuzzy
 #| msgid "Read metadata from file to database"
 msgid "Reread Metadata From Selected Images"
 msgstr "फाइल से डाटाबेस मं मेटाडाटा पढ़व"
 
-#: digikam/main/digikamapp.cpp:951
+#: digikam/main/digikamapp.cpp:953
 msgid "Find Similar..."
 msgstr "एक जइसन चुनव..."
 
-#: digikam/main/digikamapp.cpp:952
+#: digikam/main/digikamapp.cpp:954
 msgid "Find similar images using selected item as reference."
 msgstr "चुने गे चीज ल संदर्भ मान के एक जइसन फोटू चुनव."
 
-#: digikam/main/digikamapp.cpp:958 digikam/utils/editablesearchtreeview.cpp:67
+#: digikam/main/digikamapp.cpp:960 digikam/utils/editablesearchtreeview.cpp:67
 #: digikam/utils/contextmenuhelper.cpp:498
 msgid "Rename..."
 msgstr "नाम बदलव..."
 
-#: digikam/main/digikamapp.cpp:960
+#: digikam/main/digikamapp.cpp:962
 msgid "Change the filename of the currently selected item."
 msgstr "अभी वाले चुने गे चीज के फाइल नाम बदलव."
 
-#: digikam/main/digikamapp.cpp:967 showfoto/main/showfoto.cpp:554
+#: digikam/main/digikamapp.cpp:969 showfoto/main/showfoto.cpp:554
 #: utilities/imageeditor/editor/editorwindow.cpp:416
 #: utilities/lighttable/lighttablewindow.cpp:495
 #, fuzzy
@@ -1773,189 +1773,189 @@ msgctxt "Non-pluralized"
 msgid "Move to Trash"
 msgstr "घुरुवा मं ले जाव"
 
-#: digikam/main/digikamapp.cpp:979
+#: digikam/main/digikamapp.cpp:981
 msgid "Delete Permanently"
 msgstr "हमेसा बर मेटाव"
 
-#: digikam/main/digikamapp.cpp:989
+#: digikam/main/digikamapp.cpp:991
 msgid "Delete permanently without confirmation"
 msgstr "पुस्टि करे बिना हमेसा बर मिटा देव"
 
-#: digikam/main/digikamapp.cpp:997
+#: digikam/main/digikamapp.cpp:999
 msgid "Move to trash without confirmation"
 msgstr "पुस्टि करे बिना घुरुवा मं डाल देव"
 
-#: digikam/main/digikamapp.cpp:1004
+#: digikam/main/digikamapp.cpp:1006
 msgid "&Sort Albums"
 msgstr "एलबम छांटव (&S)"
 
-#: digikam/main/digikamapp.cpp:1005
+#: digikam/main/digikamapp.cpp:1007
 msgid "Sort Albums in tree-view."
 msgstr "एलबम ल फाइल साखा दृस्य मं छांटव."
 
-#: digikam/main/digikamapp.cpp:1012
+#: digikam/main/digikamapp.cpp:1014
 msgid "By Folder"
 msgstr "फोल्डर से"
 
-#: digikam/main/digikamapp.cpp:1013
+#: digikam/main/digikamapp.cpp:1015
 #, fuzzy
 msgid "By Category"
 msgstr "तारीक से"
 
-#: digikam/main/digikamapp.cpp:1014 digikam/main/digikamapp.cpp:1042
+#: digikam/main/digikamapp.cpp:1016 digikam/main/digikamapp.cpp:1044
 #: utilities/advancedrename/advancedrenamedialog.cpp:196
 msgid "By Date"
 msgstr "तारीक से"
 
-#: digikam/main/digikamapp.cpp:1019
+#: digikam/main/digikamapp.cpp:1021
 msgid "Include Album Sub-Tree"
 msgstr "एलबम उप-साखा सामिल करव"
 
-#: digikam/main/digikamapp.cpp:1020
+#: digikam/main/digikamapp.cpp:1022
 msgid "Activate this option to show all sub-albums below the current album."
 msgstr "अभी हाल के एलबम के नीचे के सब्बो उप-एलबम ल प्रदर्सित करे बर ए विकल्प सक्रिय करव."
 
-#: digikam/main/digikamapp.cpp:1025
+#: digikam/main/digikamapp.cpp:1027
 msgid "Include Tag Sub-Tree"
 msgstr "टैग उप-साखा सामिल करव"
 
-#: digikam/main/digikamapp.cpp:1026
+#: digikam/main/digikamapp.cpp:1028
 msgid ""
 "Activate this option to show all images marked by the given tag and all its "
 "sub-tags."
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:1033
+#: digikam/main/digikamapp.cpp:1035
 msgid "&Sort Images"
 msgstr "फोटू छांटव (&S)"
 
-#: digikam/main/digikamapp.cpp:1034
+#: digikam/main/digikamapp.cpp:1036
 msgid ""
 "The value by which the images in one album are sorted in the thumbnail view"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:1040
+#: digikam/main/digikamapp.cpp:1042
 #: utilities/advancedrename/advancedrenamedialog.cpp:195
 msgid "By Name"
 msgstr "नाम से"
 
-#: digikam/main/digikamapp.cpp:1041
+#: digikam/main/digikamapp.cpp:1043
 msgid "By Path"
 msgstr "पथ से"
 
-#: digikam/main/digikamapp.cpp:1043
+#: digikam/main/digikamapp.cpp:1045
 #: utilities/advancedrename/advancedrenamedialog.cpp:197
 msgid "By File Size"
 msgstr "फाइल आकार से"
 
-#: digikam/main/digikamapp.cpp:1044
+#: digikam/main/digikamapp.cpp:1046
 msgid "By Rating"
 msgstr "दरजा से"
 
-#: digikam/main/digikamapp.cpp:1060
+#: digikam/main/digikamapp.cpp:1062
 #, fuzzy
 msgid "Image Sorting &Order"
 msgstr "कैमरा सेटिंग"
 
-#: digikam/main/digikamapp.cpp:1061
+#: digikam/main/digikamapp.cpp:1063
 msgid "Defines whether images are sorted in ascending or descending manner."
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:1066
+#: digikam/main/digikamapp.cpp:1068
 #: utilities/advancedrename/advancedrenamedialog.cpp:205
 msgid "Ascending"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:1067
+#: digikam/main/digikamapp.cpp:1069
 #: utilities/advancedrename/advancedrenamedialog.cpp:206
 #, fuzzy
 msgid "Descending"
 msgstr "रा डिकोडिंग"
 
-#: digikam/main/digikamapp.cpp:1077
+#: digikam/main/digikamapp.cpp:1079
 #, fuzzy
 #| msgid "&Sort Images"
 msgid "&Group Images"
 msgstr "फोटू छांटव (&S)"
 
-#: digikam/main/digikamapp.cpp:1078
+#: digikam/main/digikamapp.cpp:1080
 msgid "The categories in which the images in the thumbnail view are displayed"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:1084
+#: digikam/main/digikamapp.cpp:1086
 #, fuzzy
 msgid "Flat List"
 msgstr "कैमरा सूची"
 
-#: digikam/main/digikamapp.cpp:1085
+#: digikam/main/digikamapp.cpp:1087
 #, fuzzy
 #| msgid "My Albums"
 msgid "By Album"
 msgstr "मोर एलबम"
 
-#: digikam/main/digikamapp.cpp:1086
+#: digikam/main/digikamapp.cpp:1088
 #, fuzzy
 #| msgid "File Format"
 msgid "By Format"
 msgstr "फाइल फार्मेट"
 
-#: digikam/main/digikamapp.cpp:1103
+#: digikam/main/digikamapp.cpp:1105
 #: libs/widgets/metadata/metadataselector.cpp:275
 #: utilities/cameragui/main/cameraui.cpp:291
 msgid "Select All"
 msgstr "सब्बो चुनव"
 
-#: digikam/main/digikamapp.cpp:1110 utilities/cameragui/main/cameraui.cpp:298
+#: digikam/main/digikamapp.cpp:1112 utilities/cameragui/main/cameraui.cpp:298
 #: utilities/imageeditor/editor/editorwindow.cpp:470
 msgid "Select None"
 msgstr "कुछ नइ चुनव"
 
-#: digikam/main/digikamapp.cpp:1117 digikam/utils/contextmenuhelper.cpp:860
+#: digikam/main/digikamapp.cpp:1119 digikam/utils/contextmenuhelper.cpp:860
 #: utilities/cameragui/main/cameraui.cpp:305
 msgid "Invert Selection"
 msgstr "चयन लहुटाव"
 
-#: digikam/main/digikamapp.cpp:1149
+#: digikam/main/digikamapp.cpp:1151
 #: utilities/imageeditor/editor/editorwindow.cpp:489
 #: utilities/lighttable/lighttablewindow.cpp:560
 #: utilities/lighttable/lighttablewindow.cpp:588
 msgid "Zoom to 100%"
 msgstr "100% मं जूम करव"
 
-#: digikam/main/digikamapp.cpp:1156
+#: digikam/main/digikamapp.cpp:1158
 #: utilities/imageeditor/editor/editorwindow.cpp:494
 #: utilities/lighttable/lighttablewindow.cpp:565
 #: utilities/lighttable/lighttablewindow.cpp:593
 msgid "Fit to &Window"
 msgstr "विन्डो मं जमाव (&W)"
 
-#: digikam/main/digikamapp.cpp:1168
+#: digikam/main/digikamapp.cpp:1170
 #: utilities/imageeditor/editor/editorwindow.cpp:512
 #: utilities/lighttable/lighttablewindow.cpp:539
 #: utilities/slideshow/slideshow.cpp:141
 msgid "Slideshow"
 msgstr "स्लाइड-सो"
 
-#: digikam/main/digikamapp.cpp:1172
+#: digikam/main/digikamapp.cpp:1174
 msgid "All"
 msgstr "सब्बो"
 
-#: digikam/main/digikamapp.cpp:1178
+#: digikam/main/digikamapp.cpp:1180
 msgid "Selection"
 msgstr "चयन"
 
-#: digikam/main/digikamapp.cpp:1184
+#: digikam/main/digikamapp.cpp:1186
 #, fuzzy
 msgid "With All Sub-Albums"
 msgstr "सब्बो उप-एलबमों सहित"
 
-#: digikam/main/digikamapp.cpp:1192 libs/widgets/common/thumbbardock.h:109
+#: digikam/main/digikamapp.cpp:1194 libs/widgets/common/thumbbardock.h:109
 #, fuzzy
 #| msgid "Show Thumbnails"
 msgid "Show Thumbbar"
 msgstr "छोटेफोटू देखाव"
 
-#: digikam/main/digikamapp.cpp:1204 utilities/cameragui/main/cameraui.cpp:458
+#: digikam/main/digikamapp.cpp:1206 utilities/cameragui/main/cameraui.cpp:458
 #: utilities/imageeditor/editor/editorwindow.cpp:610
 #: utilities/lighttable/lighttablewindow.cpp:616
 #: utilities/queuemanager/main/queuemgrwindow.cpp:437
@@ -1963,44 +1963,44 @@ msgstr "छोटेफोटू देखाव"
 msgid "Components Information"
 msgstr "अवयव जानकारी"
 
-#: digikam/main/digikamapp.cpp:1221
+#: digikam/main/digikamapp.cpp:1223
 msgid "Kipi Plugins Handbook"
 msgstr "केआईपीआई प्लगइन हेन्डबुक"
 
-#: digikam/main/digikamapp.cpp:1236 libs/widgets/common/searchtextbar.h:101
+#: digikam/main/digikamapp.cpp:1238 libs/widgets/common/searchtextbar.h:101
 msgid "Search..."
 msgstr "खोजव..."
 
-#: digikam/main/digikamapp.cpp:1243
+#: digikam/main/digikamapp.cpp:1245
 #: utilities/searchwindow/searchtabheader.cpp:213
 msgid "Advanced Search..."
 msgstr "विस्तृत खोज..."
 
-#: digikam/main/digikamapp.cpp:1257
+#: digikam/main/digikamapp.cpp:1259
 #, fuzzy
 #| msgid "Database File Path"
 msgid "Database Migration..."
 msgstr "डाटाबेस फाइल रस्ता"
 
-#: digikam/main/digikamapp.cpp:1263
+#: digikam/main/digikamapp.cpp:1265
 #, fuzzy
 #| msgid "Main angle:"
 msgid "Maintenance..."
 msgstr "मुख्य कोन:"
 
-#: digikam/main/digikamapp.cpp:1269
+#: digikam/main/digikamapp.cpp:1271
 #, fuzzy
 #| msgid "Add Camera..."
 msgid "Add Camera Manually..."
 msgstr "कैमरा जोड़व..."
 
-#: digikam/main/digikamapp.cpp:1285
+#: digikam/main/digikamapp.cpp:1287
 #, fuzzy
 #| msgid "Loading cameras"
 msgid "Loading cameras..."
 msgstr "कैमरा लोड करत हे"
 
-#: digikam/main/digikamapp.cpp:1457
+#: digikam/main/digikamapp.cpp:1459
 #, fuzzy, kde-format
 #| msgid "No item selected"
 msgid "No item selected (%1 item)"
@@ -2008,12 +2008,12 @@ msgid_plural "No item selected (%1 items)"
 msgstr[0] "कोई चीज चुने नइ गे हे"
 msgstr[1] "कोई चीज चुने नइ गे हे"
 
-#: digikam/main/digikamapp.cpp:1475
+#: digikam/main/digikamapp.cpp:1477
 #, kde-format
 msgid " (%1 of %2)"
 msgstr " (%2 मं से %1)"
 
-#: digikam/main/digikamapp.cpp:1480
+#: digikam/main/digikamapp.cpp:1482
 #, fuzzy, kde-format
 #| msgid "%1/%2 items selected"
 msgid "%2/%1 item selected"
@@ -2021,7 +2021,7 @@ msgid_plural "%2/%1 items selected"
 msgstr[0] "%1/%2 चीज चुने गे"
 msgstr[1] "%1/%2 चीज चुने गे"
 
-#: digikam/main/digikamapp.cpp:1515
+#: digikam/main/digikamapp.cpp:1517
 #, fuzzy
 #| msgid "Write metadata to each file"
 msgid "Write Metadata to Image"
@@ -2029,7 +2029,7 @@ msgid_plural "Write Metadata to Selected Images"
 msgstr[0] "हर एक फाइल मं मेटाडाटा लिखव"
 msgstr[1] "हर एक फाइल मं मेटाडाटा लिखव"
 
-#: digikam/main/digikamapp.cpp:1517
+#: digikam/main/digikamapp.cpp:1519
 #, fuzzy
 #| msgid "Read metadata from file to database"
 msgid "Reread Metadata From Image"
@@ -2037,88 +2037,88 @@ msgid_plural "Reread Metadata From Selected Images"
 msgstr[0] "फाइल से डाटाबेस मं मेटाडाटा पढ़व"
 msgstr[1] "फाइल से डाटाबेस मं मेटाडाटा पढ़व"
 
-#: digikam/main/digikamapp.cpp:1582 utilities/setup/setup.cpp:284
+#: digikam/main/digikamapp.cpp:1584 utilities/setup/setup.cpp:284
 msgid "Cameras"
 msgstr "कैमरा"
 
-#: digikam/main/digikamapp.cpp:1584
+#: digikam/main/digikamapp.cpp:1586
 msgid "USB Storage Devices"
 msgstr "यूएसबी भंडारन उपकरन"
 
-#: digikam/main/digikamapp.cpp:1586
+#: digikam/main/digikamapp.cpp:1588
 msgid "Card Readers"
 msgstr "कार्ड रीडर"
 
-#: digikam/main/digikamapp.cpp:1595
+#: digikam/main/digikamapp.cpp:1597
 msgid "Add Images..."
 msgstr "फोटू जोड़व..."
 
-#: digikam/main/digikamapp.cpp:1597
+#: digikam/main/digikamapp.cpp:1599
 msgid "Adds new items to an Album."
 msgstr "एलबम मं नवा चीज जोड़थे."
 
-#: digikam/main/digikamapp.cpp:1603
+#: digikam/main/digikamapp.cpp:1605
 msgid "Add Folders..."
 msgstr "फोल्डर जोड़व..."
 
-#: digikam/main/digikamapp.cpp:1604
+#: digikam/main/digikamapp.cpp:1606
 msgid "Adds new folders to Album library."
 msgstr "एलबम लाइब्रेरी मं नवा फोल्डर जोड़थे."
 
-#: digikam/main/digikamapp.cpp:1686
+#: digikam/main/digikamapp.cpp:1688
 #, kde-format
 msgid "Images found in %1"
 msgstr "%1 मं फोटू मिले"
 
-#: digikam/main/digikamapp.cpp:1735
+#: digikam/main/digikamapp.cpp:1737
 #, kde-format
 msgid "The specified device (\"%1\") is not valid."
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:1747
+#: digikam/main/digikamapp.cpp:1749
 #, kde-format
 msgid "The specified camera (\"%1\") is not supported."
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:1907
+#: digikam/main/digikamapp.cpp:1909
 #, fuzzy, kde-format
 msgid "Images on %1"
 msgstr "%1 मं फोटू मिले"
 
-#: digikam/main/digikamapp.cpp:1931
+#: digikam/main/digikamapp.cpp:1933
 msgid "Cannot access the storage device.\n"
 msgstr "भंडार उपकरन मं पहुंचा नइ जा सकिस.\n"
 
-#: digikam/main/digikamapp.cpp:2137
+#: digikam/main/digikamapp.cpp:2139
 msgid "CompactFlash Card Reader"
 msgstr "काम्पैक्टफ्लैस कार्ड रीडर"
 
-#: digikam/main/digikamapp.cpp:2140
+#: digikam/main/digikamapp.cpp:2142
 msgid "Memory Stick Reader"
 msgstr "मेमोरी स्टिक रीडर"
 
-#: digikam/main/digikamapp.cpp:2143
+#: digikam/main/digikamapp.cpp:2145
 msgid "SmartMedia Card Reader"
 msgstr "स्मार्टमीडिया कार्ड रीडर"
 
-#: digikam/main/digikamapp.cpp:2146
+#: digikam/main/digikamapp.cpp:2148
 msgid "SD / MMC Card Reader"
 msgstr "एसडी / एमएमसी कार्ड रीडर"
 
-#: digikam/main/digikamapp.cpp:2149
+#: digikam/main/digikamapp.cpp:2151
 msgid "xD Card Reader"
 msgstr "एक्सडी कार्ड रीडर"
 
-#: digikam/main/digikamapp.cpp:2161
+#: digikam/main/digikamapp.cpp:2163
 msgid "USB Disk"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:2165
+#: digikam/main/digikamapp.cpp:2167
 msgctxt "non-USB removable storage device"
 msgid "Disk"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:2233
+#: digikam/main/digikamapp.cpp:2235
 #, fuzzy, kde-format
 #| msgctxt "<Image file name> (<Image number> of <Images in album>)"
 #| msgid "%1 (%2 of %3)"
@@ -2126,7 +2126,7 @@ msgctxt "<drive type> \"<device name or label>\" at <mount path>"
 msgid "%1 \"%2\" at %3"
 msgstr "%1 (%2 of %3)"
 
-#: digikam/main/digikamapp.cpp:2236
+#: digikam/main/digikamapp.cpp:2238
 #, fuzzy, kde-format
 #| msgctxt "month-name year-string"
 #| msgid "%1 %2"
@@ -2134,7 +2134,7 @@ msgctxt "<drive type> \"<device name or label>\""
 msgid "%1 \"%2\""
 msgstr "%1 %2"
 
-#: digikam/main/digikamapp.cpp:2242
+#: digikam/main/digikamapp.cpp:2244
 #, fuzzy, kde-format
 #| msgctxt "month-name year-string"
 #| msgid "%1 %2"
@@ -2142,130 +2142,130 @@ msgctxt "<drive type> at <mount path>"
 msgid "%1 at %2"
 msgstr "%1 %2"
 
-#: digikam/main/digikamapp.cpp:2251
+#: digikam/main/digikamapp.cpp:2253
 #, fuzzy, kde-format
 #| msgid "%1 (%2)"
 msgctxt "device label etc... (<formatted byte size>)"
 msgid " (%1)"
 msgstr "%1 (%2)"
 
-#: digikam/main/digikamapp.cpp:2394
+#: digikam/main/digikamapp.cpp:2396
 #, fuzzy
 msgctxt "general keyboard shortcuts"
 msgid "General"
 msgstr "सामान्य"
 
-#: digikam/main/digikamapp.cpp:2396
+#: digikam/main/digikamapp.cpp:2398
 #, fuzzy
 msgctxt "KIPI-Plugins keyboard shortcuts"
 msgid "KIPI-Plugins"
 msgstr "केआईपीआई प्लगइन्स"
 
-#: digikam/main/digikamapp.cpp:2529 showfoto/main/showfoto.cpp:220
+#: digikam/main/digikamapp.cpp:2524 showfoto/main/showfoto.cpp:220
 #, fuzzy
 #| msgid "Loading themes"
 msgid "Loading themes..."
 msgstr "प्रसंग लोड करत हे"
 
-#: digikam/main/digikamapp.cpp:2531 showfoto/main/showfoto.cpp:466
+#: digikam/main/digikamapp.cpp:2526 showfoto/main/showfoto.cpp:466
 msgid "&Themes"
 msgstr "प्रसंग (&T)"
 
-#: digikam/main/digikamapp.cpp:2548
+#: digikam/main/digikamapp.cpp:2543
 #, fuzzy
 #| msgid "Loading themes"
 msgid "Loading tools..."
 msgstr "प्रसंग लोड करत हे"
 
-#: digikam/main/digikamapp.cpp:2647
+#: digikam/main/digikamapp.cpp:2642
 msgid "Select folder to parse"
 msgstr "पार करे बर फोल्डर चुनव"
 
-#: digikam/main/digikamapp.cpp:2661
+#: digikam/main/digikamapp.cpp:2656
 msgid "Select folders to import into album"
 msgstr "एलबम मं आयात बर फोल्डर चुनव"
 
-#: digikam/main/digikamapp.cpp:2685
+#: digikam/main/digikamapp.cpp:2680
 msgid ""
 "<p>Please select the destination album from the digiKam library to import "
 "folders into.</p>"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:2817
+#: digikam/main/digikamapp.cpp:2798
 msgid "Adjust Exif Orientation Tag"
 msgstr "एक्सइफ दिसा-निर्धारन टैग एडजस्ट करव"
 
-#: digikam/main/digikamapp.cpp:2821
+#: digikam/main/digikamapp.cpp:2802
 #, fuzzy
 msgctxt "normal exif orientation"
 msgid "Normal"
 msgstr "सामान्य"
 
-#: digikam/main/digikamapp.cpp:2822 libs/dmetadata/dmetadata.cpp:2253
+#: digikam/main/digikamapp.cpp:2803 libs/dmetadata/dmetadata.cpp:2253
 msgid "Flipped Horizontally"
 msgstr "आड़े मं पलटिस"
 
-#: digikam/main/digikamapp.cpp:2823
+#: digikam/main/digikamapp.cpp:2804
 #, fuzzy
 msgid "Rotated Upside Down"
 msgstr "ऊपर से नीचे घुमाइस"
 
-#: digikam/main/digikamapp.cpp:2824 libs/dmetadata/dmetadata.cpp:2257
+#: digikam/main/digikamapp.cpp:2805 libs/dmetadata/dmetadata.cpp:2257
 msgid "Flipped Vertically"
 msgstr "खड़े मं पलटिस"
 
-#: digikam/main/digikamapp.cpp:2825
+#: digikam/main/digikamapp.cpp:2806
 #, fuzzy
 msgid "Rotated Right / Horiz. Flipped"
 msgstr "जेवनी घुमाइस/ आड़ा पलटा"
 
-#: digikam/main/digikamapp.cpp:2826 libs/dmetadata/dmetadata.cpp:2265
+#: digikam/main/digikamapp.cpp:2807 libs/dmetadata/dmetadata.cpp:2265
 msgid "Rotated Right"
 msgstr "जेवनी घुमाइस"
 
-#: digikam/main/digikamapp.cpp:2827
+#: digikam/main/digikamapp.cpp:2808
 #, fuzzy
 msgid "Rotated Right / Vert. Flipped"
 msgstr "जेवनी घुमाइस / खड़ा पलटा"
 
-#: digikam/main/digikamapp.cpp:2828 libs/dmetadata/dmetadata.cpp:2261
+#: digikam/main/digikamapp.cpp:2809 libs/dmetadata/dmetadata.cpp:2261
 msgid "Rotated Left"
 msgstr "डेरी घुमाइस"
 
-#: digikam/main/digikamapp.cpp:2972 digikam/utils/contextmenuhelper.cpp:394
+#: digikam/main/digikamapp.cpp:2953 digikam/utils/contextmenuhelper.cpp:394
 #: utilities/queuemanager/basetools/transform/rotate.cpp:84
 #, fuzzy
 msgid "Rotate"
 msgstr "डेरी मुड़ें"
 
-#: digikam/main/digikamapp.cpp:2976 digikam/utils/contextmenuhelper.cpp:399
+#: digikam/main/digikamapp.cpp:2957 digikam/utils/contextmenuhelper.cpp:399
 msgctxt "rotate image left"
 msgid "Left"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:2983 digikam/utils/contextmenuhelper.cpp:406
+#: digikam/main/digikamapp.cpp:2964 digikam/utils/contextmenuhelper.cpp:406
 #, fuzzy
 #| msgid "Lightness"
 msgctxt "rotate image right"
 msgid "Right"
 msgstr "उजालापन"
 
-#: digikam/main/digikamapp.cpp:2993
+#: digikam/main/digikamapp.cpp:2974
 #: utilities/queuemanager/basetools/transform/flip.cpp:50
 msgid "Flip"
 msgstr ""
 
-#: digikam/main/digikamapp.cpp:2997
+#: digikam/main/digikamapp.cpp:2978
 #, fuzzy
 msgid "Horizontally"
 msgstr "आड़ा लहुटाव"
 
-#: digikam/main/digikamapp.cpp:3004
+#: digikam/main/digikamapp.cpp:2985
 #, fuzzy
 msgid "Vertically"
 msgstr "खड़ा लहुटाव"
 
-#: digikam/main/digikamapp.cpp:3014
+#: digikam/main/digikamapp.cpp:2995
 msgid "Auto Rotate/Flip Using Exif Information"
 msgstr ""
 
@@ -2883,7 +2883,6 @@ msgid "Export"
 msgstr "निर्यात"
 
 #: digikam/utils/contextmenuhelper.cpp:673
-#: utilities/kipiiface/kipipluginloader.cpp:364
 #, fuzzy
 #| msgid "No options available"
 msgid "No export plugins available"
@@ -6282,7 +6281,7 @@ msgstr "दरजा आयातित"
 msgid "Dropped v3 tables"
 msgstr "वी३ टेबल छोड़ा"
 
-#: libs/database/imagescanner.cpp:1358
+#: libs/database/imagescanner.cpp:1363
 #, kde-format
 msgctxt "RAW image file (), the parentheses contain the file suffix, like MRW"
 msgid "RAW image file (%1)"
@@ -10405,7 +10404,7 @@ msgid "Used filters"
 msgstr "फिल्टर उपयोग करव"
 
 #: libs/imageproperties/imagepropertieshistorytab.cpp:120
-#: libs/widgets/common/filtershistorywidget.cpp:121
+#: libs/widgets/common/filtershistorywidget.cpp:122
 #, fuzzy
 #| msgid "Remove item"
 msgid "Remove filter"
@@ -11796,31 +11795,31 @@ msgid ""
 "<b>Title: </b><p>%1</p><b>Value: </b><p>%2</p><b>Description: </b><p>%3</p>"
 msgstr "<b>सीर्सक: </b><p>%1</p><b>मूल्य: </b><p>%2</p><b>वर्नन: </b><p>%3</p>"
 
-#: libs/widgets/graphicsview/dimgpreviewitem.cpp:202
+#: libs/widgets/graphicsview/dimgpreviewitem.cpp:203
 #, fuzzy
 #| msgid "Load..."
 msgid "Loading..."
 msgstr "लोड करव..."
 
-#: libs/widgets/graphicsview/dimgpreviewitem.cpp:210
+#: libs/widgets/graphicsview/dimgpreviewitem.cpp:211
 #, fuzzy
 #| msgid "Show embedded preview"
 msgid "Embedded JPEG Preview"
 msgstr "भीतर मं बने प्रिव्यू देखाव"
 
-#: libs/widgets/graphicsview/dimgpreviewitem.cpp:214
+#: libs/widgets/graphicsview/dimgpreviewitem.cpp:215
 msgid "Half Size Raw Preview"
 msgstr ""
 
-#: libs/widgets/graphicsview/dimgpreviewitem.cpp:221
+#: libs/widgets/graphicsview/dimgpreviewitem.cpp:222
 msgid "Full Size Preview"
 msgstr ""
 
-#: libs/widgets/graphicsview/dimgpreviewitem.cpp:225
+#: libs/widgets/graphicsview/dimgpreviewitem.cpp:226
 msgid "Reduced Size Preview"
 msgstr ""
 
-#: libs/widgets/graphicsview/dimgpreviewitem.cpp:233
+#: libs/widgets/graphicsview/dimgpreviewitem.cpp:234
 #, fuzzy
 msgid "Failed to load image"
 msgstr "%1 मं फाइल सूची बनाना फेल"
@@ -12352,7 +12351,7 @@ msgid "Warning"
 msgstr "चेतावनी"
 
 #: showfoto/main/showfoto.cpp:1212
-#: utilities/imageeditor/editor/imagewindow.cpp:1501
+#: utilities/imageeditor/editor/imagewindow.cpp:1468
 #: utilities/lighttable/lighttablewindow.cpp:1393
 msgid "Preparing slideshow. Please wait..."
 msgstr "स्लाइड सो बनावत हे. किरपा करके, इंतजार करव..."
@@ -12998,27 +12997,6 @@ msgstr "सीक्वेंस नंबर जोड़व"
 msgid "Sequence number (custom start + step)"
 msgstr "सीक्वेंस नंबर जोड़व"
 
-#: utilities/advancedrename/advancedrenameprocessdialog.cpp:81
-#, fuzzy
-#| msgid "File Renaming Options"
-msgid "Renaming images"
-msgstr "फाइल नाम बदले के विकल्प"
-
-#: utilities/advancedrename/advancedrenameprocessdialog.cpp:82
-#, fuzzy
-#| msgid "Removing image tags. Please wait..."
-msgid "<b>Renaming images. Please wait...</b>"
-msgstr "फोटू टैग हटाय जात हे. किरपा करके, अगोरव..."
-
-#: utilities/advancedrename/advancedrenameprocessdialog.cpp:83
-msgid "&Abort"
-msgstr "छोड़व (&A)"
-
-#: utilities/advancedrename/advancedrenameprocessdialog.cpp:95
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1054
-msgid "Processing..."
-msgstr "प्रोसेसिंग..."
-
 #: utilities/advancedrename/advancedrenamewidget.cpp:339
 msgid ""
 "<p>Enter your renaming pattern here. Use the access buttons to quickly add "
@@ -13046,6 +13024,27 @@ msgstr "फाइल नाम बदले के विकल्प"
 #: utilities/advancedrename/advancedrenamewidget.cpp:387
 msgid "<p>Add renaming options to the parse string.</p>"
 msgstr ""
+
+#: utilities/advancedrename/advancedrenameprocessdialog.cpp:82
+#, fuzzy
+#| msgid "File Renaming Options"
+msgid "Renaming images"
+msgstr "फाइल नाम बदले के विकल्प"
+
+#: utilities/advancedrename/advancedrenameprocessdialog.cpp:83
+#, fuzzy
+#| msgid "Removing image tags. Please wait..."
+msgid "<b>Renaming images. Please wait...</b>"
+msgstr "फोटू टैग हटाय जात हे. किरपा करके, अगोरव..."
+
+#: utilities/advancedrename/advancedrenameprocessdialog.cpp:84
+msgid "&Abort"
+msgstr "छोड़व (&A)"
+
+#: utilities/advancedrename/advancedrenameprocessdialog.cpp:96
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1054
+msgid "Processing..."
+msgstr "प्रोसेसिंग..."
 
 #: utilities/advancedrename/advancedrenamedialog.cpp:234
 #, fuzzy
@@ -15219,24 +15218,24 @@ msgstr ""
 msgid "Image Editor - %1"
 msgstr ""
 
-#: utilities/imageeditor/editor/imagewindow.cpp:1366
+#: utilities/imageeditor/editor/imagewindow.cpp:1333
 msgid ""
 "There is no image to show in the current album.\n"
 "The image editor will be closed."
 msgstr ""
 
-#: utilities/imageeditor/editor/imagewindow.cpp:1368
+#: utilities/imageeditor/editor/imagewindow.cpp:1335
 msgid "No Image in Current Album"
 msgstr "अभी हाल के एलबम तिर कोनो फोटू नइ हे"
 
-#: utilities/imageeditor/editor/imagewindow.cpp:1717
+#: utilities/imageeditor/editor/imagewindow.cpp:1684
 #, fuzzy, kde-format
 #| msgid "This collection is currently not available"
 msgctxt "@info"
 msgid "The original file (<filename>%1</filename>) is currently not available"
 msgstr "संग्रह अभी हाल मं नइ मिलत हे"
 
-#: utilities/imageeditor/editor/imagewindow.cpp:1720
+#: utilities/imageeditor/editor/imagewindow.cpp:1687
 #, fuzzy
 #| msgid "No profile available..."
 msgctxt "@title"
@@ -15531,11 +15530,17 @@ msgstr "लक्छ्य यूआरएल %1 वैध नइ हे. "
 msgid "Target album is not in the album library."
 msgstr "लक्छ्य एलबम लाइब्रेरी मं लक्छ्य एलबम नइ हे."
 
-#: utilities/kipiiface/kipipluginloader.cpp:159
+#: utilities/kipiiface/kipipluginloader.cpp:128
 #, fuzzy
 #| msgid "Loading Kipi Plugins"
 msgid "Loading KIPI Plugins..."
 msgstr "केआईपीआई प्लगइन लोड करत हे"
+
+#: utilities/kipiiface/kipipluginloader.cpp:284
+#, fuzzy
+#| msgid "No options available"
+msgid "No tool available"
+msgstr "कोई विकल्प नइ मिलत हे."
 
 #: utilities/lighttable/lighttablepreview.cpp:71
 msgid "Drag and drop an image here"
@@ -20059,9 +20064,9 @@ msgstr "बंद करव (&C)"
 
 #. i18n: file: digikam/main/digikamui.rc:25
 #. i18n: ectx: Menu (Album)
-#. i18n: file: tests/digikamui_bad.rc:7
-#. i18n: ectx: Menu (Album)
 #. i18n: file: tests/digikamui_good.rc:6
+#. i18n: ectx: Menu (Album)
+#. i18n: file: tests/digikamui_bad.rc:7
 #. i18n: ectx: Menu (Album)
 #: rc.cpp:8 rc.cpp:110 rc.cpp:143
 msgid "&Album"
@@ -20069,9 +20074,9 @@ msgstr "एल्बम (&A)"
 
 #. i18n: file: digikam/main/digikamui.rc:39
 #. i18n: ectx: Menu (Tag)
-#. i18n: file: tests/digikamui_bad.rc:26
-#. i18n: ectx: Menu (Tag)
 #. i18n: file: tests/digikamui_good.rc:25
+#. i18n: ectx: Menu (Tag)
+#. i18n: file: tests/digikamui_bad.rc:26
 #. i18n: ectx: Menu (Tag)
 #: rc.cpp:11 rc.cpp:113 rc.cpp:146
 msgid "T&ag"
@@ -20079,9 +20084,9 @@ msgstr "टैग (&a)"
 
 #. i18n: file: digikam/main/digikamui.rc:48
 #. i18n: ectx: Menu (Image)
-#. i18n: file: tests/digikamui_bad.rc:34
-#. i18n: ectx: Menu (Image)
 #. i18n: file: tests/digikamui_good.rc:33
+#. i18n: ectx: Menu (Image)
+#. i18n: file: tests/digikamui_bad.rc:34
 #. i18n: ectx: Menu (Image)
 #. i18n: file: utilities/cameragui/main/cameraui.rc:25
 #. i18n: ectx: Menu (Image)
@@ -20089,13 +20094,13 @@ msgstr "टैग (&a)"
 msgid "&Image"
 msgstr "फोटू (&I)"
 
-#. i18n: file: digikam/main/digikamui.rc:76
+#. i18n: file: digikam/main/digikamui.rc:72
 #. i18n: ectx: Menu (Edit)
 #. i18n: file: showfoto/main/showfotoui.rc:27
 #. i18n: ectx: Menu (Edit)
-#. i18n: file: tests/digikamui_bad.rc:57
-#. i18n: ectx: Menu (Edit)
 #. i18n: file: tests/digikamui_good.rc:56
+#. i18n: ectx: Menu (Edit)
+#. i18n: file: tests/digikamui_bad.rc:57
 #. i18n: ectx: Menu (Edit)
 #. i18n: file: utilities/cameragui/main/cameraui.rc:16
 #. i18n: ectx: Menu (Edit)
@@ -20105,13 +20110,13 @@ msgstr "फोटू (&I)"
 msgid "&Edit"
 msgstr "संपादन (&E)"
 
-#. i18n: file: digikam/main/digikamui.rc:87
+#. i18n: file: digikam/main/digikamui.rc:83
 #. i18n: ectx: Menu (View)
 #. i18n: file: showfoto/main/showfotoui.rc:37
 #. i18n: ectx: Menu (View)
-#. i18n: file: tests/digikamui_bad.rc:64
-#. i18n: ectx: Menu (View)
 #. i18n: file: tests/digikamui_good.rc:63
+#. i18n: ectx: Menu (View)
+#. i18n: file: tests/digikamui_bad.rc:64
 #. i18n: ectx: Menu (View)
 #. i18n: file: utilities/cameragui/main/cameraui.rc:46
 #. i18n: ectx: Menu (View)
@@ -20126,11 +20131,11 @@ msgstr "संपादन (&E)"
 msgid "&View"
 msgstr "देखव (&V)"
 
-#. i18n: file: digikam/main/digikamui.rc:111
-#. i18n: ectx: Menu (Tools)
-#. i18n: file: tests/digikamui_bad.rc:83
+#. i18n: file: digikam/main/digikamui.rc:107
 #. i18n: ectx: Menu (Tools)
 #. i18n: file: tests/digikamui_good.rc:82
+#. i18n: ectx: Menu (Tools)
+#. i18n: file: tests/digikamui_bad.rc:83
 #. i18n: ectx: Menu (Tools)
 #. i18n: file: utilities/queuemanager/main/queuemgrwindowui.rc:20
 #. i18n: ectx: Menu (Tools)
@@ -20138,33 +20143,33 @@ msgstr "देखव (&V)"
 msgid "&Tools"
 msgstr "औजार (&T)"
 
-#. i18n: file: digikam/main/digikamui.rc:130
-#. i18n: ectx: Menu (Import)
-#. i18n: file: tests/digikamui_bad.rc:103
+#. i18n: file: digikam/main/digikamui.rc:126
 #. i18n: ectx: Menu (Import)
 #. i18n: file: tests/digikamui_good.rc:102
+#. i18n: ectx: Menu (Import)
+#. i18n: file: tests/digikamui_bad.rc:103
 #. i18n: ectx: Menu (Import)
 #: rc.cpp:26 rc.cpp:128 rc.cpp:161
 msgid "I&mport"
 msgstr "आयात (&m)"
 
-#. i18n: file: digikam/main/digikamui.rc:141
-#. i18n: ectx: Menu (Export)
-#. i18n: file: tests/digikamui_bad.rc:114
+#. i18n: file: digikam/main/digikamui.rc:137
 #. i18n: ectx: Menu (Export)
 #. i18n: file: tests/digikamui_good.rc:113
+#. i18n: ectx: Menu (Export)
+#. i18n: file: tests/digikamui_bad.rc:114
 #. i18n: ectx: Menu (Export)
 #: rc.cpp:29 rc.cpp:131 rc.cpp:164
 msgid "&Export"
 msgstr "निर्यात (&E)"
 
-#. i18n: file: digikam/main/digikamui.rc:145
+#. i18n: file: digikam/main/digikamui.rc:141
 #. i18n: ectx: Menu (settings)
 #. i18n: file: showfoto/main/showfotoui.rc:87
 #. i18n: ectx: Menu (settings)
-#. i18n: file: tests/digikamui_bad.rc:118
-#. i18n: ectx: Menu (settings)
 #. i18n: file: tests/digikamui_good.rc:117
+#. i18n: ectx: Menu (settings)
+#. i18n: file: tests/digikamui_bad.rc:118
 #. i18n: ectx: Menu (settings)
 #. i18n: file: utilities/cameragui/main/cameraui.rc:66
 #. i18n: ectx: Menu (settings)
@@ -20179,13 +20184,13 @@ msgstr "निर्यात (&E)"
 msgid "&Settings"
 msgstr "सेटिंग (&S)"
 
-#. i18n: file: digikam/main/digikamui.rc:159
+#. i18n: file: digikam/main/digikamui.rc:155
 #. i18n: ectx: Menu (help)
 #. i18n: file: showfoto/main/showfotoui.rc:78
 #. i18n: ectx: Menu (help)
-#. i18n: file: tests/digikamui_bad.rc:130
-#. i18n: ectx: Menu (help)
 #. i18n: file: tests/digikamui_good.rc:129
+#. i18n: ectx: Menu (help)
+#. i18n: file: tests/digikamui_bad.rc:130
 #. i18n: ectx: Menu (help)
 #. i18n: file: utilities/cameragui/main/cameraui.rc:56
 #. i18n: ectx: Menu (help)
@@ -20200,7 +20205,7 @@ msgstr "सेटिंग (&S)"
 msgid "&Help"
 msgstr "मदद (&H)"
 
-#. i18n: file: digikam/main/digikamui.rc:175
+#. i18n: file: digikam/main/digikamui.rc:171
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: imageplugins/color/digikamimageplugin_color_ui.rc:32
 #. i18n: ectx: ToolBar (mainToolBar)
@@ -20214,10 +20219,10 @@ msgstr "मदद (&H)"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: showfoto/main/showfotoui.rc:101
 #. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: tests/digikamui_bad.rc:146
-#. i18n: ectx: ToolBar (ToolBar)
 #. i18n: file: tests/digikamui_good.rc:145
 #. i18n: ectx: ToolBar (mainToolBar)
+#. i18n: file: tests/digikamui_bad.rc:146
+#. i18n: ectx: ToolBar (ToolBar)
 #. i18n: file: utilities/cameragui/main/cameraui.rc:81
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:106
