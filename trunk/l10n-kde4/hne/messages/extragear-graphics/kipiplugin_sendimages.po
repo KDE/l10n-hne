@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_sendimages\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-29 03:12+0200\n"
+"POT-Creation-Date: 2012-03-31 03:55+0200\n"
 "PO-Revision-Date: 2009-02-16 20:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,6 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: plugin_sendimages.cpp:87
+msgid "Email Images..."
+msgstr "फोटू ईमेल करव..."
 
 #: imageresize.cpp:107
 #, fuzzy
@@ -43,46 +47,46 @@ msgstr ""
 msgid "Cannot save resized image (PNG). Aborting."
 msgstr ""
 
-#: sendimages.cpp:130
+#: sendimages.cpp:141
 #, fuzzy
 #| msgid "E-mail images"
 msgid "Email images"
 msgstr "फोटू ईमेल करव"
 
-#: sendimages.cpp:164
+#: sendimages.cpp:183
 msgid "Operation canceled by user"
 msgstr "कमइया ह काम खारिज करिस."
 
-#: sendimages.cpp:176
+#: sendimages.cpp:197
 #, kde-format
 msgid "Resizing %1"
 msgstr "नवा आकार %1"
 
-#: sendimages.cpp:187
+#: sendimages.cpp:210
 #, fuzzy, kde-format
 #| msgid "%1 resized succesfully"
 msgid "%1 resized successfully"
 msgstr "%1 के नवा आकार बनाइस"
 
-#: sendimages.cpp:194
+#: sendimages.cpp:219
 #, fuzzy, kde-format
 #| msgid "Failed to resize %1 : %2"
 msgid "Failed to resize %1: %2"
 msgstr "आकार बदले मं फेल %1 : %2"
 
-#: sendimages.cpp:223
+#: sendimages.cpp:256
 msgid "Build images properties file"
 msgstr ""
 
-#: sendimages.cpp:236
+#: sendimages.cpp:269
 msgid "no caption"
 msgstr "कोई सीर्सक नइ"
 
-#: sendimages.cpp:239
+#: sendimages.cpp:272
 msgid "no keywords"
 msgstr "कोई कुंजी सब्द नइ"
 
-#: sendimages.cpp:241
+#: sendimages.cpp:274
 #, kde-format
 msgid ""
 "file \"%1\":\n"
@@ -91,152 +95,198 @@ msgstr ""
 "फाइल \"%1\":\n"
 "असली फोटू: %2\n"
 
-#: sendimages.cpp:244
+#: sendimages.cpp:277
 #, kde-format
 msgid "Comments: %1\n"
 msgstr "टिप्पणी: %1\n"
 
-#: sendimages.cpp:247
+#: sendimages.cpp:280
 #, kde-format
 msgid "Tags: %1\n"
 msgstr "टैग्स:%1\n"
 
-#: sendimages.cpp:250
+#: sendimages.cpp:283
 #, kde-format
 msgid "Rating: %1\n"
 msgstr "दरजा:%1\n"
 
-#: sendimages.cpp:255
+#: sendimages.cpp:288
 msgid "properties.txt"
 msgstr "properties.txt"
 
-#: sendimages.cpp:264
+#: sendimages.cpp:297
 #, fuzzy
 #| msgid "Image Properties"
 msgid "Image properties file done"
 msgstr "फोटू गुन"
 
-#: sendimages.cpp:281
+#: sendimages.cpp:315
 msgid ""
 "The images listed below cannot be resized.\n"
 "Do you want them to be added as attachments (without resizing)?"
 msgstr ""
 
-#: sendimages.cpp:285
+#: sendimages.cpp:319
 msgid "Failed to resize images"
 msgstr "फोटू के नवा आकार दे मं फेल"
 
-#: sendimages.cpp:347
+#: sendimages.cpp:381
 #, kde-format
 msgid ""
 "The file \"%1\" is too big to be sent, please reduce its size or change your "
 "settings"
 msgstr ""
 
-#: sendimages.cpp:393
+#: sendimages.cpp:430
 #, fuzzy
 #| msgid "Starting default KDE e-mail program..."
 msgid "Starting default KDE email program..."
 msgstr "केडीई ईमेल प्रोग्राम चालू करत हे..."
 
-#: sendimages.cpp:547
+#: sendimages.cpp:584
 #, kde-format
 msgid "Failed to start \"%1\" program. Check your system."
 msgstr "प्रोग्राम \"%1\" चालू कर पाय मं फेल. किरपा करके, अपन सिस्टम जांचव."
 
-#: sendimages.cpp:560
+#: sendimages.cpp:597
 #, kde-format
 msgid "Starting \"%1\" program..."
 msgstr "प्रोग्राम \"%1\" सुरु करत हे..."
 
-#: sendimages.cpp:570
+#: sendimages.cpp:607
 msgid "After having sent your images by email..."
 msgstr ""
 
-#: sendimages.cpp:571
+#: sendimages.cpp:608
 msgid "Press 'Close' button to clean up temporary files"
 msgstr ""
 
-#: emailpage.cpp:88
+#: sendimagesdialog.cpp:88
+#, fuzzy
+#| msgid "E-Mail Images Options"
+msgid "Email Images Options"
+msgstr "ईमेल फोटू विकल्प"
+
+#: sendimagesdialog.cpp:110
+msgid "Send Images"
+msgstr "फोटू भेजव"
+
+#: sendimagesdialog.cpp:113
+#, fuzzy
+#| msgid "A Plugin to e-mail pictures"
+msgid "A plugin to e-mail items"
+msgstr "फोटू ल ईमेल से भेजे बर प्लगइन"
+
+#: sendimagesdialog.cpp:114
+#, fuzzy
+msgid "(c) 2003-2012, Gilles Caulier"
+msgstr "(c) 2003-2008, गिल्स काउलिएर"
+
+#: sendimagesdialog.cpp:116
+msgid "Gilles Caulier"
+msgstr "गिल्स काउलिएर"
+
+#: sendimagesdialog.cpp:116
+msgid "Author and Maintainer"
+msgstr "लेखक अउ मेंटेनर"
+
+#: sendimagesdialog.cpp:119
+msgid "Michael Hoechstetter"
+msgstr "माइकल होएस्टर"
+
+#: sendimagesdialog.cpp:119 sendimagesdialog.cpp:122
+msgid "Developer"
+msgstr "डेवलपर"
+
+#: sendimagesdialog.cpp:122
+msgid "Tom Albers"
+msgstr "टाम अल्बर्स"
+
+#: sendimagesdialog.cpp:130
+#, fuzzy
+msgid "Handbook"
+msgstr "प्लगइन हेंड-बुक"
+
+#: settingswidget.cpp:88
 msgid "Mail program:"
 msgstr "ईमेल प्रोग्राम:"
 
-#: emailpage.cpp:91
+#: settingswidget.cpp:91
 #, fuzzy
 #| msgid "Default"
 msgctxt "default mail agent"
 msgid "Default"
 msgstr "डिफाल्ट"
 
-#: emailpage.cpp:102
+#: settingswidget.cpp:102
 msgid ""
 "Select your preferred external email program here. <b>Default</b> is the "
 "current email program set in KDE System Settings."
 msgstr ""
 
-#: emailpage.cpp:108
+#: settingswidget.cpp:108
 #, kde-format
 msgid "Attach a file with image properties from %1"
 msgstr ""
 
-#: emailpage.cpp:111
+#: settingswidget.cpp:111
 #, kde-format
 msgid ""
 "If you enable this option, all image properties set by %1 as Comments, "
 "Rating, or Tags, will be added as an attached file."
 msgstr ""
 
-#: emailpage.cpp:120
+#: settingswidget.cpp:120
 #, fuzzy
 #| msgid "MB"
 msgid " MB"
 msgstr "मे.बा."
 
-#: emailpage.cpp:122
+#: settingswidget.cpp:122
 #, fuzzy
 #| msgid "Maximum e-mail size limit:"
 msgid "Maximum email size limit:"
 msgstr "सबसे अधिक ईमेल आकार सीमा:"
 
-#: emailpage.cpp:127
+#: settingswidget.cpp:127
 msgid "Adjust image properties"
 msgstr "फोटू गुन मन ल एडजस्ट करव"
 
-#: emailpage.cpp:129
+#: settingswidget.cpp:129
 msgid ""
 "If you enable this option, all images to be sent can be resized and "
 "recompressed."
 msgstr ""
 
-#: emailpage.cpp:132
+#: settingswidget.cpp:132
 msgid "Image Properties"
 msgstr "फोटू गुन"
 
-#: emailpage.cpp:136 emailpage.cpp:154
+#: settingswidget.cpp:136 settingswidget.cpp:154
 msgid "Very Small (320 pixels)"
 msgstr "बहुत छोटे (320 पिक्सेल्स)"
 
-#: emailpage.cpp:137 emailpage.cpp:155
+#: settingswidget.cpp:137 settingswidget.cpp:155
 msgid "Small (640 pixels)"
 msgstr "छोटे (640 पिक्सेल्स)"
 
-#: emailpage.cpp:138 emailpage.cpp:156
+#: settingswidget.cpp:138 settingswidget.cpp:156
 msgid "Medium (800 pixels)"
 msgstr "मध्यम (800 पिक्सेल्स)"
 
-#: emailpage.cpp:139 emailpage.cpp:157
+#: settingswidget.cpp:139 settingswidget.cpp:157
 msgid "Big (1024 pixels)"
 msgstr "बड़े (1024 पिक्सेल्स)"
 
-#: emailpage.cpp:140 emailpage.cpp:158
+#: settingswidget.cpp:140 settingswidget.cpp:158
 msgid "Very Big (1280 pixels)"
 msgstr "बहुत बड़े (1280 पिक्सेल्स)"
 
-#: emailpage.cpp:141 emailpage.cpp:159
+#: settingswidget.cpp:141 settingswidget.cpp:159
 msgid "Huge - for printing (1600 pixels)"
 msgstr "अब्बड़ बड़े - छापे बर (1600 पिक्सेल)"
 
-#: emailpage.cpp:143
+#: settingswidget.cpp:143
 #, kde-format
 msgid ""
 "<p>Select the size of the images that are to be sent:</p><p><b>%1</b>: use "
@@ -250,17 +300,17 @@ msgid ""
 "printing purposes.</p>"
 msgstr ""
 
-#: emailpage.cpp:163
+#: settingswidget.cpp:162
 msgid "Image size:"
 msgstr "फोटू आकार:"
 
-#: emailpage.cpp:172
+#: settingswidget.cpp:171
 #, fuzzy
 #| msgid "<p>Select here the images files format to send.</p>"
 msgid "<p>Select the file format of the image files to be sent.</p>"
 msgstr "<p>भेजे के फोटू फाइल फार्मेट ल इहां चुनव.<p>"
 
-#: emailpage.cpp:173
+#: settingswidget.cpp:172
 msgid ""
 "<p><b>JPEG</b>: The Joint Photographic Experts Group file format is a good "
 "web file format but it uses lossy compression.</p><p><b>PNG</b>: the "
@@ -273,92 +323,26 @@ msgid ""
 "matching on heterogeneous platforms.</p>"
 msgstr ""
 
-#: emailpage.cpp:183
-msgid "Image file format:"
+#: settingswidget.cpp:182
+#, fuzzy
+#| msgid "Image file format:"
+msgid "Image format:"
 msgstr "फोटू फाइल फार्मेट:"
 
-#: emailpage.cpp:191
+#: settingswidget.cpp:190
 msgid "<p>The new compression value of JPEG images to be sent:</p>"
 msgstr ""
 
-#: emailpage.cpp:192
+#: settingswidget.cpp:191
 msgid ""
 "<p><b>1</b>: very high compression<br/><b>25</b>: high compression<br/"
 "><b>50</b>: medium compression<br/><b>75</b>: low compression (default value)"
 "<br/><b>100</b>: no compression</p>"
 msgstr ""
 
-#: emailpage.cpp:200
+#: settingswidget.cpp:199
 msgid "Image quality:"
 msgstr "फोटू क्वालिटी:"
-
-#: plugin_sendimages.cpp:87
-msgid "Email Images..."
-msgstr "फोटू ईमेल करव..."
-
-#: sendimagesdialog.cpp:90
-#, fuzzy
-#| msgid "E-Mail Images Options"
-msgid "Email Images Options"
-msgstr "ईमेल फोटू विकल्प"
-
-#: sendimagesdialog.cpp:99
-msgid "Images"
-msgstr "फोटू"
-
-#: sendimagesdialog.cpp:100
-#, fuzzy
-#| msgid "Images List"
-msgid "Image List"
-msgstr "फोटू सूची"
-
-#: sendimagesdialog.cpp:105
-msgid "Mail"
-msgstr "ईमेल"
-
-#: sendimagesdialog.cpp:106
-msgid "Mail Options"
-msgstr "ईमेल विकल्प"
-
-#: sendimagesdialog.cpp:112
-msgid "Send Images"
-msgstr "फोटू भेजव"
-
-#: sendimagesdialog.cpp:115
-#, fuzzy
-#| msgid "A Plugin to e-mail pictures"
-msgid "A plugin to email pictures"
-msgstr "फोटू ल ईमेल से भेजे बर प्लगइन"
-
-#: sendimagesdialog.cpp:116
-#, fuzzy
-msgid "(c) 2003-2011, Gilles Caulier"
-msgstr "(c) 2003-2008, गिल्स काउलिएर"
-
-#: sendimagesdialog.cpp:118
-msgid "Gilles Caulier"
-msgstr "गिल्स काउलिएर"
-
-#: sendimagesdialog.cpp:118
-msgid "Author and Maintainer"
-msgstr "लेखक अउ मेंटेनर"
-
-#: sendimagesdialog.cpp:121
-msgid "Michael Hoechstetter"
-msgstr "माइकल होएस्टर"
-
-#: sendimagesdialog.cpp:121 sendimagesdialog.cpp:124
-msgid "Developer"
-msgstr "डेवलपर"
-
-#: sendimagesdialog.cpp:124
-msgid "Tom Albers"
-msgstr "टाम अल्बर्स"
-
-#: sendimagesdialog.cpp:132
-#, fuzzy
-msgid "Handbook"
-msgstr "प्लगइन हेंड-बुक"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -369,6 +353,20 @@ msgstr "रविसंकर सिरीवास्तव, जी. करू�
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raviratlami@aol.in"
+
+#~ msgid "Images"
+#~ msgstr "फोटू"
+
+#, fuzzy
+#~| msgid "Images List"
+#~ msgid "Image List"
+#~ msgstr "फोटू सूची"
+
+#~ msgid "Mail"
+#~ msgstr "ईमेल"
+
+#~ msgid "Mail Options"
+#~ msgstr "ईमेल विकल्प"
 
 #~ msgid "very small (320 pixels)"
 #~ msgstr "बहुत छोटे (320 पिक्सेल्स)"
