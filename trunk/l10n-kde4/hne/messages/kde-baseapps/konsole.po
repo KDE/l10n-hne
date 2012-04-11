@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-06 04:07+0200\n"
+"POT-Creation-Date: 2012-04-11 04:16+0200\n"
 "PO-Revision-Date: 2009-01-29 20:59+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: Application.cpp:420
+#: Application.cpp:426
 msgid "Toggle Background Window"
 msgstr ""
 
@@ -343,7 +343,7 @@ msgctxt "@info:status"
 msgid ""
 "When using this option, the scrollback data will be written unencrypted to "
 "temporary files. Those temporary files will be deleted automatically when "
-"quitting Konsole."
+"Konsole is closed in a normal manner."
 msgstr ""
 
 #: HistorySizeWidget.cpp:60
@@ -808,7 +808,7 @@ msgstr "नवा प्रोफाइल"
 msgid "Manage Profiles..."
 msgstr "प्रोफाइल प्रबंधित करव"
 
-#: Profile.cpp:133
+#: Profile.cpp:135
 msgid "Shell"
 msgstr "सेल"
 
@@ -2082,18 +2082,18 @@ msgstr ""
 "आउटपुट सहेजे के समय एक गलती होइस.\n"
 "%1"
 
-#: Session.cpp:376
+#: Session.cpp:377
 msgid "Could not find binary: "
 msgstr "द्विचर खोज नइ सकिस:"
 
-#: Session.cpp:385
+#: Session.cpp:386
 #, fuzzy
 #| msgid "Warning: "
 msgctxt "@info:shell Alert the user with red color text"
 msgid "Warning: "
 msgstr "चेतावनी:"
 
-#: Session.cpp:442
+#: Session.cpp:443
 #, kde-format
 msgid ""
 "Could not find '%1', starting '%2' instead.  Please check your profile "
@@ -2102,59 +2102,59 @@ msgstr ""
 "'%1' ल खोज नइ सकिस, बदला मं '%2' ल चालू करत हे. किरपा करके, अपन प्रोफाइल सेटिंग "
 "जांचव."
 
-#: Session.cpp:445
+#: Session.cpp:446
 msgid "Could not find an interactive shell to start."
 msgstr "सुरू करे बर कोनो इंटरेक्टिव सैल खोज नइ सकिस."
 
-#: Session.cpp:485
+#: Session.cpp:489
 #, kde-format
 msgid "Could not start program '%1' with arguments '%2'."
 msgstr "प्रोग्राम '%1' ल आर्गुमेंट '%2'.के साथ चालू नइ कर सकिस."
 
-#: Session.cpp:591
+#: Session.cpp:595
 #, kde-format
 msgid "Silence in session '%1'"
 msgstr "'%1' सत्र मं सांति"
 
-#: Session.cpp:638
+#: Session.cpp:642
 #, kde-format
 msgid "Bell in session '%1'"
 msgstr "'%1' सत्र मं घंटी"
 
-#: Session.cpp:641
+#: Session.cpp:645
 #, kde-format
 msgid "Activity in session '%1'"
 msgstr "'%1' सत्र मं काम"
 
-#: Session.cpp:809
+#: Session.cpp:814
 #, fuzzy
 #| msgid "Finished"
 msgctxt "@info:shell This session is done"
 msgid "Finished"
 msgstr "पूरा"
 
-#: Session.cpp:823 Session.cpp:835
+#: Session.cpp:828 Session.cpp:840
 #, kde-format
 msgid "Program '%1' crashed."
 msgstr "प्रोग्राम '%1' क्रैस होइस."
 
-#: Session.cpp:825
+#: Session.cpp:830
 #, kde-format
 msgid "Program '%1' exited with status %2."
 msgstr "प्रोग्राम '%1'  स्थिति %2 के साथ बाहिर होइस."
 
-#: Session.cpp:1164
+#: Session.cpp:1169
 msgid "ZModem Progress"
 msgstr "जेड-माडम प्रगति"
 
-#: SessionManager.cpp:380
+#: SessionManager.cpp:384
 #, fuzzy
 #| msgid "Number"
 msgctxt "@item:intable The session index"
 msgid "Number"
 msgstr "संख्या"
 
-#: SessionManager.cpp:382
+#: SessionManager.cpp:386
 #, fuzzy
 #| msgid "Title"
 msgctxt "@item:intable The session title"
@@ -2179,47 +2179,51 @@ msgstr "अभी हाल के डिरेक्टरी (छोटा)"
 msgid "Current Directory (Long): %D"
 msgstr "अभी हाल के डिरेक्टरी (लंबा)"
 
-#: TabTitleFormatButton.cpp:36 TabTitleFormatButton.cpp:47
+#: TabTitleFormatButton.cpp:36 TabTitleFormatButton.cpp:48
 #, fuzzy
 #| msgid "Window Title Set by Shell"
 msgid "Window Title Set by Shell: %w"
 msgstr "सैल से सेट करे गे विंडो सीर्सक"
 
-#: TabTitleFormatButton.cpp:37 TabTitleFormatButton.cpp:48
+#: TabTitleFormatButton.cpp:37 TabTitleFormatButton.cpp:49
 #, fuzzy
 #| msgid "Session number"
 msgid "Session Number: %#"
 msgstr "सत्र संख्या"
 
-#: TabTitleFormatButton.cpp:38 TabTitleFormatButton.cpp:44
+#: TabTitleFormatButton.cpp:38 TabTitleFormatButton.cpp:45
 #, fuzzy, c-format
 #| msgid "User Name"
 msgid "User Name: %u"
 msgstr "कमइया नाम"
 
-#: TabTitleFormatButton.cpp:45
+#: TabTitleFormatButton.cpp:39
+msgid "Local Host: %h"
+msgstr ""
+
+#: TabTitleFormatButton.cpp:46
 #, fuzzy
 #| msgid "Remote Host (Short)"
 msgid "Remote Host (Short): %h"
 msgstr "रिमोट होस्ट (छोटा)"
 
-#: TabTitleFormatButton.cpp:46
+#: TabTitleFormatButton.cpp:47
 #, fuzzy
 #| msgid "Remote Host (Long)"
 msgid "Remote Host (Long): %H"
 msgstr "रिमोट होस्ट (लंबा)"
 
-#: TabTitleFormatButton.cpp:57
+#: TabTitleFormatButton.cpp:58
 msgid "Insert"
 msgstr "भरव"
 
-#: TabTitleFormatButton.cpp:82
+#: TabTitleFormatButton.cpp:83
 #, fuzzy
 #| msgid "Tab title format:"
 msgid "Insert title format"
 msgstr "टैब सीर्सक फारमेट"
 
-#: TabTitleFormatButton.cpp:86
+#: TabTitleFormatButton.cpp:87
 #, fuzzy
 #| msgid "Remote tab title format:"
 msgid "Insert remote title format"
