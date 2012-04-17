@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-16 10:47+0200\n"
+"POT-Creation-Date: 2012-04-17 17:47+0200\n"
 "PO-Revision-Date: 2009-03-03 09:35+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -973,8 +973,8 @@ msgstr "सहेजे के पुस्टि करव"
 
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:40
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:41
-#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:42
-#: pigment/KoCompositeOpRegistry.cpp:36
+#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOpRegistry.cpp:36
+#: pigment/KoCompositeOp.cpp:42
 msgid "Misc"
 msgstr ""
 
@@ -1323,7 +1323,7 @@ msgstr "बिन्दु किसिम सेट करव"
 #: koreport/items/field/KoReportItemField.cpp:102
 #: koreport/items/label/KoReportItemLabel.cpp:104
 #: koreport/items/text/KoReportItemText.cpp:129
-#: widgets/KoColorPopupAction.cpp:86 widgets/KoUniColorChooser.cpp:418
+#: widgets/KoUniColorChooser.cpp:418 widgets/KoColorPopupAction.cpp:93
 msgid "Opacity"
 msgstr "अपार्दरसिता"
 
@@ -3708,51 +3708,44 @@ msgstr "16 बिट्स फ्लोट (एचडीआर)"
 msgid "32 Bits Float"
 msgstr "३२ बिट्स फ्लोट (एचडीआर)"
 
-#: pigment/KoCompositeOp.cpp:30 pigment/KoCompositeOpRegistry.cpp:88
-#: pigment/compositeops/KoCompositeOps.h:141
-msgid "Color"
-msgstr "रंग"
-
-#: pigment/KoCompositeOp.cpp:33 pigment/KoCompositeOpRegistry.cpp:31
+#: pigment/KoCompositeOpRegistry.cpp:31 pigment/KoCompositeOp.cpp:33
 #, fuzzy
 #| msgid "Automatic"
 msgid "Arithmetic"
 msgstr "अपने अपन"
 
-#: pigment/KoCompositeOp.cpp:34 pigment/KoCompositeOpRegistry.cpp:34
-msgid "Negative"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:35 pigment/KoCompositeOpRegistry.cpp:33
-#: pigment/KoCompositeOpRegistry.cpp:55
-#: pigment/compositeops/KoCompositeOps.h:87
-msgid "Lighten"
-msgstr "हल्का करव"
-
-#: pigment/KoCompositeOp.cpp:36 pigment/KoCompositeOpRegistry.cpp:32
-#: pigment/KoCompositeOpRegistry.cpp:50
-#: pigment/compositeops/KoCompositeOps.h:97
+#: pigment/KoCompositeOpRegistry.cpp:32 pigment/KoCompositeOpRegistry.cpp:50
+#: pigment/compositeops/KoCompositeOps.h:97 pigment/KoCompositeOp.cpp:36
 msgid "Darken"
 msgstr "गहरा करव"
 
-#: pigment/KoCompositeOp.cpp:37 pigment/KoCompositeOpRegistry.cpp:37
+#: pigment/KoCompositeOpRegistry.cpp:33 pigment/KoCompositeOpRegistry.cpp:55
+#: pigment/compositeops/KoCompositeOps.h:87 pigment/KoCompositeOp.cpp:35
+msgid "Lighten"
+msgstr "हल्का करव"
+
+#: pigment/KoCompositeOpRegistry.cpp:34 pigment/KoCompositeOp.cpp:34
+msgid "Negative"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:35 pigment/KoCompositeOp.cpp:41
+msgid "Mix"
+msgstr ""
+
+#: pigment/KoCompositeOpRegistry.cpp:37 pigment/KoCompositeOp.cpp:37
 msgid "HSY"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:38 pigment/KoCompositeOpRegistry.cpp:38
+#: pigment/KoCompositeOpRegistry.cpp:38 pigment/KoCompositeOp.cpp:38
 msgid "HSI"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:39 pigment/KoCompositeOpRegistry.cpp:39
+#: pigment/KoCompositeOpRegistry.cpp:39 pigment/KoCompositeOp.cpp:39
 msgid "HSL"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:40 pigment/KoCompositeOpRegistry.cpp:40
+#: pigment/KoCompositeOpRegistry.cpp:40 pigment/KoCompositeOp.cpp:40
 msgid "HSV"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:41 pigment/KoCompositeOpRegistry.cpp:35
-msgid "Mix"
 msgstr ""
 
 #: pigment/KoCompositeOpRegistry.cpp:42
@@ -3979,6 +3972,11 @@ msgstr "हरा"
 #| msgid "Copy Page"
 msgid "Copy Blue"
 msgstr "पेज नकल करव"
+
+#: pigment/KoCompositeOpRegistry.cpp:88
+#: pigment/compositeops/KoCompositeOps.h:141 pigment/KoCompositeOp.cpp:30
+msgid "Color"
+msgstr "रंग"
 
 #: pigment/KoCompositeOpRegistry.cpp:89
 #: pigment/compositeops/KoCompositeOps.h:142 widgets/KoUniColorChooser.cpp:116
@@ -4468,15 +4466,11 @@ msgstr ""
 msgid "ArabicAlphabet"
 msgstr ""
 
-#: widgets/KoColorSetWidget.cpp:189
+#: widgets/KoColorSetWidget.cpp:184
 msgid "Recent:"
 msgstr "हाले:"
 
-#: widgets/KoColorSetWidget.cpp:196
-msgid "Hide colors with bad contrast"
-msgstr "खराब कंट्रास्ट सहित रंग ल लुकाव"
-
-#: widgets/KoColorSetWidget.cpp:207
+#: widgets/KoColorSetWidget.cpp:197
 msgid "Add / Remove Colors..."
 msgstr "रंगों ल जोड़व/मेटाव..."
 
@@ -5863,6 +5857,9 @@ msgstr "पेज किनारा:"
 #: rc.cpp:625
 msgid "Bottom:"
 msgstr "निचला:"
+
+#~ msgid "Hide colors with bad contrast"
+#~ msgstr "खराब कंट्रास्ट सहित रंग ल लुकाव"
 
 #~ msgid "Ellipse Shape"
 #~ msgstr "दीर्घवक्र आकार"
