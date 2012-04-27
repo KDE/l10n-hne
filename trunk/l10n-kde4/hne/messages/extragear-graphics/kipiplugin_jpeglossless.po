@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_jpeglossless\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-06 03:11+0200\n"
+"POT-Creation-Date: 2012-04-27 03:26+0200\n"
 "PO-Revision-Date: 2009-02-16 14:14+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,23 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-
-#: plugin/utils.cpp:87
-msgid "unable to open source file"
-msgstr "स्रोत फाइल खोले मं अक्छम"
-
-#: plugin/utils.cpp:117 plugin/utils.cpp:144
-msgid "unable to open temp file"
-msgstr "अस्थाई फाइल खोले मं अक्छम"
-
-#: plugin/utils.cpp:131
-msgid "Cannot rotate: unable to open temp file"
-msgstr "घुमा नइ सकिस: अस्थाई फाइल खोले मं अक्छम"
-
-#: plugin/utils.cpp:193
-#, kde-format
-msgid "Cannot update metadata: %1"
-msgstr "मेटाडाटा अपडेट नइ कर सकिस: %1"
 
 #: plugin/plugin_jpeglossless.cpp:115
 msgid "Rotate"
@@ -155,11 +138,38 @@ msgstr "फोटू पलटे मं फेल"
 msgid "Failed to convert image to Black & White"
 msgstr "फोटू ल काला-सफेद मं बदले मं फेल"
 
+#: plugin/utils.cpp:87
+msgid "unable to open source file"
+msgstr "स्रोत फाइल खोले मं अक्छम"
+
+#: plugin/utils.cpp:117 plugin/utils.cpp:144
+msgid "unable to open temp file"
+msgstr "अस्थाई फाइल खोले मं अक्छम"
+
+#: plugin/utils.cpp:131
+msgid "Cannot rotate: unable to open temp file"
+msgstr "घुमा नइ सकिस: अस्थाई फाइल खोले मं अक्छम"
+
+#: plugin/utils.cpp:193
+#, kde-format
+msgid "Cannot update metadata: %1"
+msgstr "मेटाडाटा अपडेट नइ कर सकिस: %1"
+
+#: transform/jpegtransform.cpp:225 transform/jpegtransform.cpp:328
 #: transform/convert2grayscale.cpp:92 transform/convert2grayscale.cpp:172
 #: transform/imageflip.cpp:87 transform/imagerotate.cpp:88
-#: transform/jpegtransform.cpp:225 transform/jpegtransform.cpp:328
 msgid "Error in opening input file"
 msgstr "इनपुट फाइल मं गलती"
+
+#: transform/jpegtransform.cpp:243 transform/jpegtransform.cpp:337
+#: transform/convert2grayscale.cpp:180
+msgid "Error in opening output file"
+msgstr "आउटपुट फाइल खोले मं गलती"
+
+#: transform/jpegtransform.cpp:253 transform/jpegtransform.cpp:262
+#, kde-format
+msgid "The JPEG library reported an error: %1"
+msgstr ""
 
 #: transform/convert2grayscale.cpp:98 transform/imageflip.cpp:93
 #: transform/imagerotate.cpp:96
@@ -174,11 +184,6 @@ msgstr "ग्रे स्केल रा फाइल मं बदल नइ
 #: transform/imagerotate.cpp:136
 msgid "Cannot update source image"
 msgstr "स्रोत फोटू अपडेट नइ कर सकिस"
-
-#: transform/convert2grayscale.cpp:180 transform/jpegtransform.cpp:243
-#: transform/jpegtransform.cpp:337
-msgid "Error in opening output file"
-msgstr "आउटपुट फाइल खोले मं गलती"
 
 #: transform/convert2grayscale.cpp:276
 #, kde-format
@@ -206,8 +211,3 @@ msgstr "घुमाय के अ-मानक काम"
 #, kde-format
 msgid "Cannot rotate: %1"
 msgstr "घुमा नइ सकिस: %1"
-
-#: transform/jpegtransform.cpp:253 transform/jpegtransform.cpp:262
-#, kde-format
-msgid "The JPEG library reported an error: %1"
-msgstr ""
