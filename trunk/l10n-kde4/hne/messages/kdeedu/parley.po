@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-20 04:30+0100\n"
+"POT-Creation-Date: 2012-05-17 04:26+0200\n"
 "PO-Revision-Date: 2009-02-25 15:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -319,21 +319,21 @@ msgstr "बहुवचन"
 #. i18n: file: src/editor/declensionwidget.ui:185
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: src/editor/declensionwidget.cpp:171 src/editor/inflectionwidget.cpp:123
-#: src/parleydocument.cpp:301 rc.cpp:389
+#: src/parleydocument.cpp:312 rc.cpp:389
 msgid "Masculine"
 msgstr "पुरुसवाचक"
 
 #. i18n: file: src/editor/declensionwidget.ui:271
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: src/editor/declensionwidget.cpp:172 src/editor/inflectionwidget.cpp:125
-#: src/parleydocument.cpp:304 rc.cpp:392
+#: src/parleydocument.cpp:315 rc.cpp:392
 msgid "Feminine"
 msgstr "स्त्रीवाचक"
 
 #. i18n: file: src/editor/declensionwidget.ui:357
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: src/editor/declensionwidget.cpp:173 src/editor/inflectionwidget.cpp:124
-#: src/parleydocument.cpp:307 rc.cpp:395
+#: src/parleydocument.cpp:318 rc.cpp:395
 msgid "Neuter"
 msgstr "नपुंसक लिंग"
 
@@ -423,19 +423,19 @@ msgid "S&earch:"
 msgstr "खोजव: (&e)"
 
 #: src/editor/inflectionwidget.cpp:36 src/vocabulary/wordtypeview.cpp:123
-#: src/parleydocument.cpp:311
+#: src/parleydocument.cpp:322
 msgid "Verb"
 msgstr "काम"
 
 #: src/editor/inflectionwidget.cpp:41 src/vocabulary/wordtypeview.cpp:74
-#: src/parleydocument.cpp:297
+#: src/parleydocument.cpp:308
 msgid "Noun"
 msgstr "संग्या"
 
 #. i18n: file: src/editor/comparisonwidget.ui:116
 #. i18n: ectx: property (text), widget (QPushButton, makeAdjectiveButton)
 #: src/editor/inflectionwidget.cpp:46 src/vocabulary/wordtypeview.cpp:106
-#: src/parleydocument.cpp:315 rc.cpp:248
+#: src/parleydocument.cpp:326 rc.cpp:248
 msgid "Adjective"
 msgstr "विसेसन"
 
@@ -461,8 +461,8 @@ msgstr "निर्यात"
 msgid "HTML document"
 msgstr "एचटीएमएल कागद "
 
-#: src/export/exportdialog.cpp:105 src/parleydocument.cpp:223
-#: src/parleymainwindow.cpp:139
+#: src/export/exportdialog.cpp:105 src/parleymainwindow.cpp:139
+#: src/parleydocument.cpp:234
 msgid "Untitled"
 msgstr "बिना सीर्सक"
 
@@ -1629,7 +1629,7 @@ msgstr ""
 
 #. i18n: file: src/editor/comparisonwidget.ui:123
 #. i18n: ectx: property (text), widget (QPushButton, makeAdverbButton)
-#: src/vocabulary/wordtypeview.cpp:114 src/parleydocument.cpp:319 rc.cpp:251
+#: src/vocabulary/wordtypeview.cpp:114 src/parleydocument.cpp:330 rc.cpp:251
 msgid "Adverb"
 msgstr "काम-विसेसन"
 
@@ -1641,7 +1641,7 @@ msgstr ""
 msgid "This word type folder contains verbs."
 msgstr ""
 
-#: src/vocabulary/wordtypeview.cpp:131 src/parleydocument.cpp:323
+#: src/vocabulary/wordtypeview.cpp:131 src/parleydocument.cpp:334
 #, fuzzy
 #| msgid "Conjugation"
 msgid "Conjunction"
@@ -1685,7 +1685,17 @@ msgstr "सक्रिय सब्दावली संग्रह ल ए�
 msgid "Last Opened Collections"
 msgstr ""
 
-#: src/parleydocument.cpp:122 src/parleydocument.cpp:398
+#: src/parleymainwindow.cpp:202
+msgid ""
+"Vocabulary is modified.\n"
+"\n"
+"Save file before exit?\n"
+msgstr ""
+"सब्दावलि परिवर्धित हे.\n"
+"\n"
+"बाहिर होए से पहिली सहेजव?\n"
+
+#: src/parleydocument.cpp:122 src/parleydocument.cpp:409
 #, kde-format
 msgctxt "@title:window document properties"
 msgid "Properties for %1"
@@ -1699,24 +1709,35 @@ msgstr "अभ्यास मोड मं खोलव (&m)"
 msgid "Open Vocabulary Collection"
 msgstr "सब्दावली संग्रह खोलव"
 
-#: src/parleydocument.cpp:213
+#: src/parleydocument.cpp:191
+#, fuzzy
+#| msgid "Open Vocabulary Collection"
+msgid "Open Collection"
+msgstr "सब्दावली संग्रह खोलव"
+
+#: src/parleydocument.cpp:191
+#, kde-format
+msgid "Could not read collection from \"%1\""
+msgstr ""
+
+#: src/parleydocument.cpp:224
 msgid "Open Downloaded Vocabulary Collection"
 msgstr "डाउनलोड करे गे सब्दावली संग्रह खोलव"
 
-#: src/parleydocument.cpp:239 src/parleydocument.cpp:289
+#: src/parleydocument.cpp:250 src/parleydocument.cpp:300
 #, kde-format
 msgid "Writing file \"%1\" resulted in an error: %2"
 msgstr "फाइल \"%1\" मं लिखे के कोसिस मं गलती : %2 होइस"
 
-#: src/parleydocument.cpp:240 src/parleydocument.cpp:290
+#: src/parleydocument.cpp:251 src/parleydocument.cpp:301
 msgid "Save File"
 msgstr "फाइल सहेजव"
 
-#: src/parleydocument.cpp:258
+#: src/parleydocument.cpp:269
 msgid "Save Vocabulary As"
 msgstr "सब्दावली अइसन सहेजव"
 
-#: src/parleydocument.cpp:267
+#: src/parleydocument.cpp:278
 #, kde-format
 msgid ""
 "<qt>The file<p><b>%1</b></p>already exists. Do you want to overwrite it?</qt>"
@@ -1724,7 +1745,7 @@ msgstr ""
 "<qt>फाइल<p><b>%1</b></p>पहिली से ही मौजूद हे. का आप मन एला मेटाय के लिखना चाहथो ?"
 "</qt>"
 
-#: src/parleydocument.cpp:273
+#: src/parleydocument.cpp:284
 #, kde-format
 msgctxt "@info:status saving a file"
 msgid "Saving %1"
@@ -1732,7 +1753,7 @@ msgstr "सहेजत हे %1"
 
 #. i18n: file: src/settings/documentproperties.ui:221
 #. i18n: ectx: property (text), item, widget (KComboBox, licenseComboBox)
-#: src/parleydocument.cpp:336 rc.cpp:619
+#: src/parleydocument.cpp:347 rc.cpp:619
 msgid "Public Domain"
 msgstr "पब्लिक डोमेन"
 
@@ -1740,27 +1761,17 @@ msgstr "पब्लिक डोमेन"
 #. i18n: ectx: property (text), item, widget (KComboBox, categoryComboBox)
 #. i18n: file: src/settings/documentproperties.ui:237
 #. i18n: ectx: property (title), widget (QGroupBox, languageGroupBox)
-#: src/parleydocument.cpp:337 rc.cpp:594 rc.cpp:625
+#: src/parleydocument.cpp:348 rc.cpp:594 rc.cpp:625
 msgid "Languages"
 msgstr "भाखा"
 
-#: src/parleydocument.cpp:345
+#: src/parleydocument.cpp:356
 msgid "A Second Language"
 msgstr "दुसरा भाखा"
 
-#: src/parleydocument.cpp:348
+#: src/parleydocument.cpp:359
 msgid "Lesson 1"
 msgstr "सबक 1"
-
-#: src/parleymainwindow.cpp:202
-msgid ""
-"Vocabulary is modified.\n"
-"\n"
-"Save file before exit?\n"
-msgstr ""
-"सब्दावलि परिवर्धित हे.\n"
-"\n"
-"बाहिर होए से पहिली सहेजव?\n"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
