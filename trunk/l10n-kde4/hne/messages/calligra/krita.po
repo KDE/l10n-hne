@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-24 03:27+0200\n"
+"POT-Creation-Date: 2012-05-25 06:12+0200\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -6859,7 +6859,7 @@ msgstr "तारीकः"
 
 #. i18n: file: plugins/paintops/libpaintop/forms/wdgautobrush.ui:107
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:2555 plugins/tools/tool_star/kis_tool_star.cc:217
+#: rc.cpp:2555
 msgid "Ratio:"
 msgstr "अनुपातः"
 
@@ -10319,8 +10319,10 @@ msgid "&Clone Layer"
 msgstr "परत के प्रतिरूप बनाव (&C)"
 
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:179
-msgid "&Shape Layer"
-msgstr "परत ल आकार देव (&S)"
+#, fuzzy
+#| msgid "Shear Layer"
+msgid "&Vector Layer"
+msgstr "परत कतरें"
 
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:182
 #, fuzzy
@@ -10380,7 +10382,6 @@ msgid "Digital Colors Mixer"
 msgstr "पेंटरली ओवरले"
 
 #: plugins/extensions/dockers/dockerplugintemplate/presetdocker_dock.cpp:28
-#: plugins/extensions/dockers/presetdocker/presetdocker_dock.cpp:37
 #, fuzzy
 #| msgid "Palette"
 msgid "Preset docker"
@@ -10394,9 +10395,15 @@ msgstr "छोटा रंग चुनइया"
 
 #: plugins/extensions/dockers/imagedocker/imagedocker_dock.cpp:161
 #, fuzzy
-#| msgid "Palette"
-msgid "Image Docker"
-msgstr "रंगदानी"
+#| msgid "Reference image:"
+msgid "Reference Images"
+msgstr "संदर्भ फोटू:"
+
+#: plugins/extensions/dockers/presetdocker/presetdocker_dock.cpp:37
+#, fuzzy
+#| msgid "Presets:"
+msgid "Brush Presets"
+msgstr "प्रीसेट:"
 
 #: plugins/extensions/dockers/smallcolorselector/smallcolorselector_dock.cc:45
 msgid "Small Color Selector"
@@ -10467,10 +10474,9 @@ msgid "Composition"
 msgstr "कम्पोजिट मोड"
 
 #: plugins/extensions/dockers/patterndocker/patterndocker_dock.cpp:37
-#, fuzzy
-#| msgid "&Save to Presets"
-msgid "Pattern Palette"
-msgstr "प्रीसेट मं सहेजव (&S)"
+#: ui/kis_control_frame.cpp:151
+msgid "Patterns"
+msgstr "पैटर्न"
 
 #: plugins/extensions/dropshadow/dlg_dropshadow.cc:42
 #: plugins/extensions/dropshadow/kis_dropshadow_plugin.cc:80
@@ -12739,18 +12745,6 @@ msgstr "बहुलकीर बनाव. सिफ्ट-मुसुवा�
 msgid "Polyline"
 msgstr "पालिलाईन"
 
-#: plugins/tools/tool_star/kis_tool_star.h:74
-msgid "Draw a star with the current brush"
-msgstr "अभी हाल के ब्रुस के साथ एक तारा बनाव"
-
-#: plugins/tools/tool_star/kis_tool_star.cc:120
-msgid "Star"
-msgstr "तारा"
-
-#: plugins/tools/tool_star/kis_tool_star.cc:211
-msgid "Vertices:"
-msgstr "सीर्सः"
-
 #: plugins/tools/tool_text/kis_tool_text.h:55
 #, fuzzy
 #| msgid "Line tool"
@@ -13236,10 +13230,6 @@ msgstr "रंगः (&C)"
 #: ui/kis_control_frame.cpp:116
 msgid "&Painter's Tools"
 msgstr "पेंटर के औजार (&P)"
-
-#: ui/kis_control_frame.cpp:151
-msgid "Patterns"
-msgstr "पैटर्न"
 
 #: ui/kis_control_frame.cpp:154 ui/kis_control_frame.cpp:156
 msgid "Custom Pattern"
@@ -14074,6 +14064,28 @@ msgstr ""
 #: main.cc:50
 msgid "File(s) or URL(s) to open"
 msgstr "फाइल या यूआरएल जऊन ल खोलना हे"
+
+#~ msgid "&Shape Layer"
+#~ msgstr "परत ल आकार देव (&S)"
+
+#, fuzzy
+#~| msgid "Palette"
+#~ msgid "Image Docker"
+#~ msgstr "रंगदानी"
+
+#, fuzzy
+#~| msgid "&Save to Presets"
+#~ msgid "Pattern Palette"
+#~ msgstr "प्रीसेट मं सहेजव (&S)"
+
+#~ msgid "Draw a star with the current brush"
+#~ msgstr "अभी हाल के ब्रुस के साथ एक तारा बनाव"
+
+#~ msgid "Star"
+#~ msgstr "तारा"
+
+#~ msgid "Vertices:"
+#~ msgstr "सीर्सः"
 
 #~ msgid "Allow resizing"
 #~ msgstr "नवा आकार बनाए देव"
@@ -15146,11 +15158,6 @@ msgstr "फाइल या यूआरएल जऊन ल खोलना ह
 #, fuzzy
 #~ msgid "Brush Editor"
 #~ msgstr "ब्रुस आकार"
-
-#, fuzzy
-#~| msgid "Presets:"
-#~ msgid "Presets"
-#~ msgstr "प्रीसेट:"
 
 #~ msgid "Artist's materials"
 #~ msgstr "कलाकार के चीज मन ल"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-24 03:50+0200\n"
+"POT-Creation-Date: 2012-05-25 06:39+0200\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -2666,7 +2666,7 @@ msgstr "एलबम गुन..."
 #: digikam/utils/tooltipfiller.cpp:383 digikam/utils/tooltipfiller.cpp:453
 #: libs/widgets/q3support/thumbbar.cpp:1419
 #: utilities/cameragui/views/cameraiconviewtooltip.cpp:142
-#: utilities/setup/importfilters.cpp:90
+#: utilities/setup/importfilters.cpp:95
 msgid "Name:"
 msgstr "नाम:"
 
@@ -6814,9 +6814,8 @@ msgstr "बग रपट, फीडबैक अउ चिनहा"
 msgid "Thumb"
 msgstr "छोटेफोटू देखाव"
 
-#: libs/dialogs/deletedialog.cpp:176
+#: libs/dialogs/deletedialog.cpp:176 utilities/setup/setupcamera.cpp:248
 #: utilities/setup/setupcollectionview.cpp:931
-#: utilities/setup/setupcamera.cpp:240
 msgid "Path"
 msgstr "पथ"
 
@@ -10610,7 +10609,7 @@ msgstr ""
 
 #: libs/template/templatelist.cpp:83
 #: utilities/searchwindow/searchfields.cpp:536
-#: utilities/setup/setupcamera.cpp:237
+#: utilities/setup/setupcamera.cpp:245
 msgid "Title"
 msgstr "सीर्सक"
 
@@ -11107,7 +11106,7 @@ msgid "Host Name"
 msgstr "नाम से"
 
 #: libs/widgets/common/databasewidget.cpp:113
-#: utilities/setup/setupcamera.cpp:239
+#: utilities/setup/setupcamera.cpp:247
 msgid "Port"
 msgstr "पोर्ट"
 
@@ -11362,7 +11361,7 @@ msgid "Raw information about the ICC profile manufacturer"
 msgstr "आईसीसी प्रोफाइल बनइया परिचय रा जानकारी"
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:134
-#: utilities/setup/setupcamera.cpp:238
+#: utilities/setup/setupcamera.cpp:246
 msgid "Model"
 msgstr "माडल"
 
@@ -12227,7 +12226,7 @@ msgstr ""
 #: showfoto/setup/setupmetadata.cpp:163 showfoto/setup/setupmisc.cpp:107
 #: utilities/queuemanager/views/queuesettingsview.cpp:138
 #: utilities/setup/setupmetadata.cpp:326 utilities/setup/setupicc.cpp:511
-#: utilities/setup/setupcamera.cpp:307
+#: utilities/setup/setupcamera.cpp:315
 msgid "Behavior"
 msgstr "बर्ताव"
 
@@ -17437,12 +17436,12 @@ msgid ""
 msgstr ""
 
 #: utilities/setup/setupcategory.cpp:100 utilities/setup/setuptemplate.cpp:125
-#: utilities/setup/setupcamera.cpp:254 utilities/setup/setupcamera.cpp:348
+#: utilities/setup/setupcamera.cpp:262 utilities/setup/setupcamera.cpp:356
 msgid "&Add..."
 msgstr "जोड़व...(&A)"
 
 #: utilities/setup/setupcategory.cpp:101 utilities/setup/setuptemplate.cpp:127
-#: utilities/setup/setupcamera.cpp:256 utilities/setup/setupcamera.cpp:350
+#: utilities/setup/setupcamera.cpp:264 utilities/setup/setupcamera.cpp:358
 msgid "&Remove"
 msgstr "मेटाव (&R)"
 
@@ -18059,46 +18058,6 @@ msgctxt "%1: number of plugins activated"
 msgid "(%1 activated)"
 msgstr "कोई सक्रिय छनइया नइ"
 
-#: utilities/setup/importfilters.cpp:82
-#, fuzzy
-#| msgid "Audio Files"
-msgid "Edit Import Filters"
-msgstr "आडियो फाइल मन ल"
-
-#: utilities/setup/importfilters.cpp:96
-#, fuzzy
-#| msgid "Noise filter:"
-msgid "Mime filter:"
-msgstr "नाइस फिल्टर:"
-
-#: utilities/setup/importfilters.cpp:109
-#, fuzzy
-#| msgid "File Name"
-msgid "File name filter:"
-msgstr "फाइल नाम"
-
-#: utilities/setup/importfilters.cpp:119
-#, fuzzy
-#| msgid "No active filter"
-msgid "Path filter:"
-msgstr "कोई सक्रिय छनइया नइ"
-
-#: utilities/setup/importfilters.cpp:129
-#, fuzzy
-#| msgid "Show on left panel"
-msgid "Show only new files"
-msgstr "डेरी पेनल मं देखाव"
-
-#: utilities/setup/importfilters.cpp:186
-msgid "Select the MimeTypes you want for this filter."
-msgstr ""
-
-#: utilities/setup/importfilters.cpp:188
-#, fuzzy
-#| msgid "Select Images"
-msgid "Select Mime Types"
-msgstr "फोटू चुनव"
-
 #: utilities/setup/setupiofiles.cpp:130
 #, fuzzy
 #| msgid "Image Editor: Settings for Saving Image Files"
@@ -18454,6 +18413,108 @@ msgid ""
 "currently these paths exist and are scanned:<ul><li>%1</li></ul>"
 msgstr ""
 
+#: utilities/setup/setupcamera.cpp:241
+msgid ""
+"Here you can see the digital camera list used by digiKam via the Gphoto "
+"interface."
+msgstr ""
+
+#: utilities/setup/setupcamera.cpp:266 utilities/setup/setupcamera.cpp:360
+msgid "&Edit..."
+msgstr "संपादन... (&E)"
+
+#: utilities/setup/setupcamera.cpp:268
+msgid "Auto-&Detect"
+msgstr "अपन आप पता लगाव (&D)"
+
+#: utilities/setup/setupcamera.cpp:281
+msgid "Visit Gphoto project website"
+msgstr "जीफोटो परियोजना वेबसाइट मं जाव"
+
+#: utilities/setup/setupcamera.cpp:302
+#, fuzzy
+#| msgid "&Device"
+msgid "Devices"
+msgstr "उपकरन (&D)"
+
+#: utilities/setup/setupcamera.cpp:310
+msgid ""
+"Use date from metadata to sort items instead file-system date (makes "
+"connection slower)"
+msgstr ""
+
+#: utilities/setup/setupcamera.cpp:311
+msgid "Turn on high quality thumbnail loading (slower loading)"
+msgstr ""
+
+#: utilities/setup/setupcamera.cpp:312
+msgid "Use a default target album to download from camera"
+msgstr ""
+
+#: utilities/setup/setupcamera.cpp:334
+#, fuzzy
+#| msgid "<p>Enter your search criteria to find items in the album library"
+msgid ""
+"Here you can see filters that can be used to filter files in import dialog."
+msgstr "<p>एलबम लाइब्रेरी मं चीज मन ल खोजे बर अपन खोज मापदन्ड भरव"
+
+#: utilities/setup/setupcamera.cpp:353
+msgid "Always ignore"
+msgstr ""
+
+#: utilities/setup/setupcamera.cpp:354
+#, fuzzy
+#| msgid "Show image file name"
+msgid "Ignored file names:"
+msgstr "फोटू फाइल नाम देखाव"
+
+#: utilities/setup/setupcamera.cpp:355
+#, fuzzy
+#| msgid "Show only &image files with extensions:"
+msgid "Ignored file extensions:"
+msgstr "सिरिफ ओही फाइल मन ल देखाव जऊन मं एक्सटेंसन हे: (&i)"
+
+#: utilities/setup/setupcamera.cpp:375
+#, fuzzy
+#| msgid "F&ilters"
+msgid "Import Filters"
+msgstr "फिल्टर (&i)"
+
+#: utilities/setup/setupcamera.cpp:551
+msgid ""
+"No default target album have been selected to process download from camera "
+"device. Please select one."
+msgstr ""
+
+#: utilities/setup/setupcamera.cpp:648
+#, fuzzy
+#| msgid "Canceling current operation, please wait..."
+msgid "Device detection under progress, please wait..."
+msgstr "हाल के आपरेसन ल खारिज करत हे. किरपा करके, अगोरव..."
+
+#: utilities/setup/setupcamera.cpp:659
+msgid ""
+"Failed to auto-detect camera.\n"
+"Please check if your camera is turned on and retry or try setting it "
+"manually."
+msgstr ""
+
+#: utilities/setup/setupcamera.cpp:673
+#, kde-format
+msgid "Camera '%1' (%2) is already in list."
+msgstr "कैमरा '%1' (%2) पहिली ही सूची मं हे."
+
+#: utilities/setup/setupcamera.cpp:677
+#, kde-format
+msgid "Found camera '%1' (%2) and added it to the list."
+msgstr "कैमरा '%1' (%2) मिलिस अउ सूची मं जोड़ दे गिस."
+
+#: utilities/setup/setupcamera.cpp:693
+#, fuzzy
+#| msgid "Title"
+msgid "Untitled"
+msgstr "सीर्सक"
+
 #: utilities/setup/setupfacetags.cpp:90
 msgid ""
 "The accuracy of face detection.\n"
@@ -18774,108 +18835,6 @@ msgstr ""
 msgid ""
 "Uncheck this if you don't want to see icons and text in the image preview."
 msgstr ""
-
-#: utilities/setup/setupcamera.cpp:233
-msgid ""
-"Here you can see the digital camera list used by digiKam via the Gphoto "
-"interface."
-msgstr ""
-
-#: utilities/setup/setupcamera.cpp:258 utilities/setup/setupcamera.cpp:352
-msgid "&Edit..."
-msgstr "संपादन... (&E)"
-
-#: utilities/setup/setupcamera.cpp:260
-msgid "Auto-&Detect"
-msgstr "अपन आप पता लगाव (&D)"
-
-#: utilities/setup/setupcamera.cpp:273
-msgid "Visit Gphoto project website"
-msgstr "जीफोटो परियोजना वेबसाइट मं जाव"
-
-#: utilities/setup/setupcamera.cpp:294
-#, fuzzy
-#| msgid "&Device"
-msgid "Devices"
-msgstr "उपकरन (&D)"
-
-#: utilities/setup/setupcamera.cpp:302
-msgid ""
-"Use date from metadata to sort items instead file-system date (makes "
-"connection slower)"
-msgstr ""
-
-#: utilities/setup/setupcamera.cpp:303
-msgid "Turn on high quality thumbnail loading (slower loading)"
-msgstr ""
-
-#: utilities/setup/setupcamera.cpp:304
-msgid "Use a default target album to download from camera"
-msgstr ""
-
-#: utilities/setup/setupcamera.cpp:326
-#, fuzzy
-#| msgid "<p>Enter your search criteria to find items in the album library"
-msgid ""
-"Here you can see filters that can be used to filter files in import dialog."
-msgstr "<p>एलबम लाइब्रेरी मं चीज मन ल खोजे बर अपन खोज मापदन्ड भरव"
-
-#: utilities/setup/setupcamera.cpp:345
-msgid "Always ignore"
-msgstr ""
-
-#: utilities/setup/setupcamera.cpp:346
-#, fuzzy
-#| msgid "Show image file name"
-msgid "Ignored file names:"
-msgstr "फोटू फाइल नाम देखाव"
-
-#: utilities/setup/setupcamera.cpp:347
-#, fuzzy
-#| msgid "Show only &image files with extensions:"
-msgid "Ignored file extensions:"
-msgstr "सिरिफ ओही फाइल मन ल देखाव जऊन मं एक्सटेंसन हे: (&i)"
-
-#: utilities/setup/setupcamera.cpp:367
-#, fuzzy
-#| msgid "F&ilters"
-msgid "Import Filters"
-msgstr "फिल्टर (&i)"
-
-#: utilities/setup/setupcamera.cpp:543
-msgid ""
-"No default target album have been selected to process download from camera "
-"device. Please select one."
-msgstr ""
-
-#: utilities/setup/setupcamera.cpp:640
-#, fuzzy
-#| msgid "Canceling current operation, please wait..."
-msgid "Device detection under progress, please wait..."
-msgstr "हाल के आपरेसन ल खारिज करत हे. किरपा करके, अगोरव..."
-
-#: utilities/setup/setupcamera.cpp:651
-msgid ""
-"Failed to auto-detect camera.\n"
-"Please check if your camera is turned on and retry or try setting it "
-"manually."
-msgstr ""
-
-#: utilities/setup/setupcamera.cpp:665
-#, kde-format
-msgid "Camera '%1' (%2) is already in list."
-msgstr "कैमरा '%1' (%2) पहिली ही सूची मं हे."
-
-#: utilities/setup/setupcamera.cpp:669
-#, kde-format
-msgid "Found camera '%1' (%2) and added it to the list."
-msgstr "कैमरा '%1' (%2) मिलिस अउ सूची मं जोड़ दे गिस."
-
-#: utilities/setup/setupcamera.cpp:685
-#, fuzzy
-#| msgid "Title"
-msgid "Untitled"
-msgstr "सीर्सक"
 
 #: utilities/setup/setup.cpp:186
 #, fuzzy
@@ -19209,6 +19168,46 @@ msgstr "बर्ताव"
 msgctxt "@title:tab"
 msgid "Default Settings"
 msgstr "सामान्य सेटिंग"
+
+#: utilities/setup/importfilters.cpp:87
+#, fuzzy
+#| msgid "Audio Files"
+msgid "Edit Import Filters"
+msgstr "आडियो फाइल मन ल"
+
+#: utilities/setup/importfilters.cpp:101
+#, fuzzy
+#| msgid "Noise filter:"
+msgid "Mime filter:"
+msgstr "नाइस फिल्टर:"
+
+#: utilities/setup/importfilters.cpp:114
+#, fuzzy
+#| msgid "File Name"
+msgid "File name filter:"
+msgstr "फाइल नाम"
+
+#: utilities/setup/importfilters.cpp:124
+#, fuzzy
+#| msgid "No active filter"
+msgid "Path filter:"
+msgstr "कोई सक्रिय छनइया नइ"
+
+#: utilities/setup/importfilters.cpp:134
+#, fuzzy
+#| msgid "Show on left panel"
+msgid "Show only new files"
+msgstr "डेरी पेनल मं देखाव"
+
+#: utilities/setup/importfilters.cpp:191
+msgid "Select the MimeTypes you want for this filter."
+msgstr ""
+
+#: utilities/setup/importfilters.cpp:193
+#, fuzzy
+#| msgid "Select Images"
+msgid "Select Mime Types"
+msgstr "फोटू चुनव"
 
 #: utilities/setup/setuplighttable.cpp:93
 msgid "Synchronize panels automatically"
