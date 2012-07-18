@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-04 04:10+0200\n"
+"POT-Creation-Date: 2012-07-18 03:50+0200\n"
 "PO-Revision-Date: 2009-02-17 12:43+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -360,12 +360,12 @@ msgid "Copy tags from previous image"
 msgstr "पिछला फोटू से टैग नकल करव"
 
 #: AnnotationDialog/Dialog.cpp:958 AnnotationDialog/ImagePreviewWidget.cpp:56
-#: MainWindow/Window.cpp:726 Viewer/ViewerWidget.cpp:270
+#: MainWindow/Window.cpp:728 Viewer/ViewerWidget.cpp:270
 msgid "Rotate counterclockwise"
 msgstr "घड़ी के उलटा दिसा मं घुमाव"
 
 #: AnnotationDialog/Dialog.cpp:961 AnnotationDialog/ImagePreviewWidget.cpp:62
-#: MainWindow/Window.cpp:731 Viewer/ViewerWidget.cpp:260
+#: MainWindow/Window.cpp:733 Viewer/ViewerWidget.cpp:260
 msgid "Rotate clockwise"
 msgstr "घड़ी के दिसा मं घुमाव"
 
@@ -632,20 +632,20 @@ msgid ""
 "new images are found.</p>"
 msgstr ""
 
-#: DB/NewImageFinder.cpp:296
+#: DB/NewImageFinder.cpp:297
 #, kde-format
 msgid "<p><b>Calculating checksum for %1 file</b></p>"
 msgid_plural "<p><b>Calculating checksums for %1 files</b></p>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: DB/NewImageFinder.cpp:297
+#: DB/NewImageFinder.cpp:298
 msgid ""
 "<p>By storing a checksum for each image KPhotoAlbum is capable of finding "
 "images even when you have moved them on the disk.</p>"
 msgstr ""
 
-#: DB/NewImageFinder.cpp:340
+#: DB/NewImageFinder.cpp:341
 msgid "Following files could not be read:"
 msgstr "निम्न फाइल मन ल पढ़ नइ सकिस:"
 
@@ -1213,6 +1213,37 @@ msgstr "फोटू '%1' लिखे मं असमर्थ."
 msgid "Building thumbnails"
 msgstr "छोटे फोटू बनाव"
 
+#: ImageManager/ExtractOneVideoFrame.cpp:72
+msgid "Failed to start"
+msgstr ""
+
+#: ImageManager/ExtractOneVideoFrame.cpp:73
+msgid "Crashed"
+msgstr ""
+
+#: ImageManager/ExtractOneVideoFrame.cpp:74
+msgid "Timedout"
+msgstr ""
+
+#: ImageManager/ExtractOneVideoFrame.cpp:75
+msgid "Read error"
+msgstr ""
+
+#: ImageManager/ExtractOneVideoFrame.cpp:76
+msgid "Write error"
+msgstr ""
+
+#: ImageManager/ExtractOneVideoFrame.cpp:77
+#, fuzzy
+#| msgid "Unknown"
+msgid "Unknown error"
+msgstr "अग्यात"
+
+#: ImageManager/ExtractOneVideoFrame.cpp:81
+#, kde-format
+msgid "<p>Error when extracting video thumbnails.<br>Error was: %1</p>"
+msgstr ""
+
 #: ImportExport/Import.cpp:63
 msgid "Unable to create temporary file"
 msgstr "अस्थायी फाइल बनाए मं अक्छम"
@@ -1581,7 +1612,7 @@ msgstr "संस्करन %1"
 msgid "Version: %1"
 msgstr "संस्करन %1"
 
-#: MainWindow/TokenEditor.cpp:38 MainWindow/Window.cpp:700
+#: MainWindow/TokenEditor.cpp:38 MainWindow/Window.cpp:702
 msgid "Remove Tokens"
 msgstr "टोकन मेटाव"
 
@@ -1723,144 +1754,6 @@ msgstr "टैग:"
 #: MainWindow/StatisticsDialog.cpp:212
 msgid "Total"
 msgstr "कुल"
-
-#: MainWindow/FeatureDialog.cpp:38
-msgid "Feature Status"
-msgstr "एआरटीएस स्थिति"
-
-#: MainWindow/FeatureDialog.cpp:43
-#, kde-format
-msgid ""
-"<h1>Overview</h1><p>Below you may see the list of compile- and runtime "
-"features KPhotoAlbum has, and their status:</p>%1"
-msgstr ""
-
-#: MainWindow/FeatureDialog.cpp:46
-msgid ""
-"<h1>What can I do if I miss a feature?</h1><p>If you compiled KPhotoAlbum "
-"yourself, then please review the sections below to learn what to install to "
-"get the feature in question. If on the other hand you installed KPhotoAlbum "
-"from a binary package, please tell whoever made the package about this "
-"defect, eventually including the information from the section below.</"
-"p><p>In case you are missing a feature and you did not compile KPhotoAlbum "
-"yourself, please do consider doing so. It really isn't that hard. If you "
-"need help compiling KPhotoAlbum, feel free to ask on the <a href=\"http://"
-"mail.kdab.net/mailman/listinfo/kphotoalbum\">KPhotoAlbum mailing list</a></"
-"p><p>The steps to compile KPhotoAlbum can be seen on <a href=\"http://www."
-"kphotoalbum.org/index.php?page=compile\">the KPhotoAlbum home page</a>. If "
-"you have never compiled a KDE application, then please ensure that you have "
-"the developer packages installed, in most distributions they go under names "
-"like kdelibs<i>-devel</i></p>"
-msgstr ""
-
-#: MainWindow/FeatureDialog.cpp:62
-msgid ""
-"<h1><a name=\"kipi\">Plug-ins support</a></h1><p>KPhotoAlbum has a plug-in "
-"system with lots of extensions. You may among other things find plug-ins for:"
-"<ul><li>Writing images to cds or dvd's</li><li>Adjusting timestamps on your "
-"images</li><li>Making a calendar featuring your images</li><li>Uploading "
-"your images to flickr</li><li>Upload your images to facebook</li></ul></"
-"p><p>The plug-in library is called KIPI, and may be downloaded from the <a "
-"href=\"http://www.kipi-plugins.org\">KIPI Home page</a></p>"
-msgstr ""
-
-#: MainWindow/FeatureDialog.cpp:75
-msgid ""
-"<h1><a name=\"exiv2\">EXIF support</a></h1><p>Images store information like "
-"the date the image was shot, the shooting angle, focal length, and shutter-"
-"speed in what is known as EXIF information.</p><p>KPhotoAlbum uses the <a "
-"href=\"http://freshmeat.net/projects/exiv2/\">EXIV2 library</a> to read EXIF "
-"information from images</p>"
-msgstr ""
-
-#: MainWindow/FeatureDialog.cpp:83
-msgid ""
-"<h1><a name=\"database\">SQL database support</a></h1><p>KPhotoAlbum allows "
-"you to search using a certain number of EXIF tags. For this KPhotoAlbum "
-"needs an Sqlite database. In addition the qt package for sqlite (e.g.qt-sql-"
-"sqlite) must be installed.</p>"
-msgstr ""
-
-#: MainWindow/FeatureDialog.cpp:88
-msgid ""
-"<h1><a name=\"thumbnails\">Video thumbnails support</a></h1><p>KPhotoAlbum "
-"asks the KDE plug-in system for help when it needs to generate a thumbnail "
-"for videos.</p><p>Unfortunately KDE4 does currently not come with any plug-"
-"ins for this, you therefore need manually to install <a href=\"http://www."
-"kde-apps.org/content/show.php?content=41180\">MPlayerThumbs</a>.</p>"
-msgstr ""
-
-#: MainWindow/FeatureDialog.cpp:93
-msgid ""
-"<h1><a name=\"video\">Video support</a></h1><p>KPhotoAlbum relies on Qt's "
-"Phonon architecture for displaying videos; this in turn relies on GStreamer. "
-"If this feature is not enabled for you, have a look at the <a href=\"http://"
-"userbase.kde.org/KPhotoAlbum#Video_Support\">KPhotoAlbum wiki article on "
-"video support</a>.</p>"
-msgstr ""
-
-#: MainWindow/FeatureDialog.cpp:101
-msgid ""
-"<p>No video mime types found, which indicates that either Qt was compiled "
-"without phonon support, or there were missing codecs</p>"
-msgstr ""
-
-#: MainWindow/FeatureDialog.cpp:103
-#, kde-format
-msgid ""
-"<p>Phonon is capable of playing movies of these mime types:<ul><li>%1</ul></"
-"p>"
-msgstr ""
-
-#: MainWindow/FeatureDialog.cpp:105
-msgid ""
-"<h1><a name=\"videoPreview\">Video preview</a></h1><p>KPhotoAlbum uses "
-"<tt>mplayer</tt> to extract thumbnails from videos. These thumbnails are "
-"used to preview videos in the thumbnail viewer.</p>"
-msgstr ""
-
-#: MainWindow/FeatureDialog.cpp:193
-#, fuzzy
-msgid "Plug-ins available"
-msgstr "फाइल नइ मिलत"
-
-#: MainWindow/FeatureDialog.cpp:194
-msgid "EXIF info supported"
-msgstr "एक्जइफ जानकारी समर्थन"
-
-#: MainWindow/FeatureDialog.cpp:195
-#, fuzzy
-msgid "SQL database support"
-msgstr "एसक्यूएल डाटाबेस समर्थन *करना हे*"
-
-#: MainWindow/FeatureDialog.cpp:196
-#, fuzzy
-#| msgid "Sqlite Database Support (used for EXIF searches)"
-msgid "Sqlite database support (used for EXIF searches)"
-msgstr "एसक्यूलाइट डाटाबेस समर्थन (एक्जइफ खोज बर परयोग में)"
-
-#: MainWindow/FeatureDialog.cpp:198
-#, fuzzy
-msgid "Video thumbnail support"
-msgstr "वीडियो छोटे फोटू समर्थन *करना हे*"
-
-#: MainWindow/FeatureDialog.cpp:200
-msgid "Video support"
-msgstr "वीडियो समर्थन"
-
-#: MainWindow/FeatureDialog.cpp:201
-#, fuzzy
-#| msgid "Image Preview"
-msgid "Video preview"
-msgstr "फोटू प्रिव्यू"
-
-#: MainWindow/FeatureDialog.cpp:204
-msgid "Yes"
-msgstr "हाँ"
-
-#: MainWindow/FeatureDialog.cpp:205
-msgid "No"
-msgstr "नइ"
 
 #: MainWindow/CategoryImagePopup.cpp:61
 msgid "Show Category Editor"
@@ -2064,29 +1957,153 @@ msgstr "फाइल गुन पढ़त हे"
 msgid "Reading File Properties"
 msgstr "फाइल गुन पढ़त हे"
 
-#: MainWindow/Window.cpp:133
+#: MainWindow/FeatureDialog.cpp:37
+msgid "Feature Status"
+msgstr "एआरटीएस स्थिति"
+
+#: MainWindow/FeatureDialog.cpp:42
+#, kde-format
+msgid ""
+"<h1>Overview</h1><p>Below you may see the list of compile- and runtime "
+"features KPhotoAlbum has, and their status:</p>%1"
+msgstr ""
+
+#: MainWindow/FeatureDialog.cpp:45
+msgid ""
+"<h1>What can I do if I miss a feature?</h1><p>If you compiled KPhotoAlbum "
+"yourself, then please review the sections below to learn what to install to "
+"get the feature in question. If on the other hand you installed KPhotoAlbum "
+"from a binary package, please tell whoever made the package about this "
+"defect, eventually including the information from the section below.</"
+"p><p>In case you are missing a feature and you did not compile KPhotoAlbum "
+"yourself, please do consider doing so. It really isn't that hard. If you "
+"need help compiling KPhotoAlbum, feel free to ask on the <a href=\"http://"
+"mail.kdab.net/mailman/listinfo/kphotoalbum\">KPhotoAlbum mailing list</a></"
+"p><p>The steps to compile KPhotoAlbum can be seen on <a href=\"http://www."
+"kphotoalbum.org/index.php?page=compile\">the KPhotoAlbum home page</a>. If "
+"you have never compiled a KDE application, then please ensure that you have "
+"the developer packages installed, in most distributions they go under names "
+"like kdelibs<i>-devel</i></p>"
+msgstr ""
+
+#: MainWindow/FeatureDialog.cpp:61
+msgid ""
+"<h1><a name=\"kipi\">Plug-ins support</a></h1><p>KPhotoAlbum has a plug-in "
+"system with lots of extensions. You may among other things find plug-ins for:"
+"<ul><li>Writing images to cds or dvd's</li><li>Adjusting timestamps on your "
+"images</li><li>Making a calendar featuring your images</li><li>Uploading "
+"your images to flickr</li><li>Upload your images to facebook</li></ul></"
+"p><p>The plug-in library is called KIPI, and may be downloaded from the <a "
+"href=\"http://www.kipi-plugins.org\">KIPI Home page</a></p>"
+msgstr ""
+
+#: MainWindow/FeatureDialog.cpp:74
+msgid ""
+"<h1><a name=\"exiv2\">EXIF support</a></h1><p>Images store information like "
+"the date the image was shot, the shooting angle, focal length, and shutter-"
+"speed in what is known as EXIF information.</p><p>KPhotoAlbum uses the <a "
+"href=\"http://freshmeat.net/projects/exiv2/\">EXIV2 library</a> to read EXIF "
+"information from images</p>"
+msgstr ""
+
+#: MainWindow/FeatureDialog.cpp:82
+msgid ""
+"<h1><a name=\"database\">SQL database support</a></h1><p>KPhotoAlbum allows "
+"you to search using a certain number of EXIF tags. For this KPhotoAlbum "
+"needs an Sqlite database. In addition the qt package for sqlite (e.g.qt-sql-"
+"sqlite) must be installed.</p>"
+msgstr ""
+
+#: MainWindow/FeatureDialog.cpp:87
+msgid ""
+"<h1><a name=\"video\">Video support</a></h1><p>KPhotoAlbum relies on Qt's "
+"Phonon architecture for displaying videos; this in turn relies on GStreamer. "
+"If this feature is not enabled for you, have a look at the <a href=\"http://"
+"userbase.kde.org/KPhotoAlbum#Video_Support\">KPhotoAlbum wiki article on "
+"video support</a>.</p>"
+msgstr ""
+
+#: MainWindow/FeatureDialog.cpp:95
+msgid ""
+"<p>No video mime types found, which indicates that either Qt was compiled "
+"without phonon support, or there were missing codecs</p>"
+msgstr ""
+
+#: MainWindow/FeatureDialog.cpp:97
+#, kde-format
+msgid ""
+"<p>Phonon is capable of playing movies of these mime types:<ul><li>%1</ul></"
+"p>"
+msgstr ""
+
+#: MainWindow/FeatureDialog.cpp:99
+msgid ""
+"<h1><a name=\"videoPreview\">Video preview</a></h1><p>KPhotoAlbum uses "
+"<tt>mplayer</tt> to extract thumbnails from videos. These thumbnails are "
+"used to preview videos in the thumbnail viewer.</p>"
+msgstr ""
+
+#: MainWindow/FeatureDialog.cpp:187
+#, fuzzy
+msgid "Plug-ins available"
+msgstr "फाइल नइ मिलत"
+
+#: MainWindow/FeatureDialog.cpp:188
+msgid "EXIF info supported"
+msgstr "एक्जइफ जानकारी समर्थन"
+
+#: MainWindow/FeatureDialog.cpp:189
+#, fuzzy
+msgid "SQL database support"
+msgstr "एसक्यूएल डाटाबेस समर्थन *करना हे*"
+
+#: MainWindow/FeatureDialog.cpp:190
+#, fuzzy
+#| msgid "Sqlite Database Support (used for EXIF searches)"
+msgid "Sqlite database support (used for EXIF searches)"
+msgstr "एसक्यूलाइट डाटाबेस समर्थन (एक्जइफ खोज बर परयोग में)"
+
+#: MainWindow/FeatureDialog.cpp:192
+msgid "Video support"
+msgstr "वीडियो समर्थन"
+
+#: MainWindow/FeatureDialog.cpp:193
+#, fuzzy
+#| msgid "Image Preview"
+msgid "Video preview"
+msgstr "फोटू प्रिव्यू"
+
+#: MainWindow/FeatureDialog.cpp:196
+msgid "Yes"
+msgstr "हाँ"
+
+#: MainWindow/FeatureDialog.cpp:197
+msgid "No"
+msgstr "नइ"
+
+#: MainWindow/Window.cpp:135
 msgid "Loading Database"
 msgstr "डाटाबेस लोड करत हे"
 
-#: MainWindow/Window.cpp:139
+#: MainWindow/Window.cpp:141
 msgid "Loading Main Window"
 msgstr "मुख्य विंडो लोड करत हे"
 
-#: MainWindow/Window.cpp:228
+#: MainWindow/Window.cpp:230
 msgid "Searching for New Files"
 msgstr "नवा फाइल मन बर खोजत हे"
 
-#: MainWindow/Window.cpp:234
+#: MainWindow/Window.cpp:236
 msgid "Loading Plug-ins"
 msgstr "प्लगइन लोड करत हे"
 
-#: MainWindow/Window.cpp:255
+#: MainWindow/Window.cpp:257
 msgid ""
 "EXIF database cannot be opened. Check that the image root directory is "
 "writable."
 msgstr ""
 
-#: MainWindow/Window.cpp:264
+#: MainWindow/Window.cpp:266
 msgid ""
 "<p><b>Delete Your Temporary Demo Database</b></p><p>I hope you enjoyed the "
 "KPhotoAlbum demo. The demo database was copied to /tmp, should it be deleted "
@@ -2095,281 +2112,281 @@ msgid ""
 "around with the changes you made through this session.</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:269
+#: MainWindow/Window.cpp:271
 msgid "Delete Demo Database"
 msgstr "डेमो डाटाबेस मेटाव"
 
-#: MainWindow/Window.cpp:284
+#: MainWindow/Window.cpp:286
 msgid "Do you want to save the changes?"
 msgstr "का आप मन बदलाव मन ल सहेजना चाहथो ?"
 
-#: MainWindow/Window.cpp:285
+#: MainWindow/Window.cpp:287
 msgid "Save Changes?"
 msgstr "बदलाव सहेजव?"
 
-#: MainWindow/Window.cpp:323
+#: MainWindow/Window.cpp:325
 msgid ""
 "Some of the selected images already belong to a stack. Do you want to remove "
 "them from their stacks and create a completely new one?"
 msgstr ""
 
-#: MainWindow/Window.cpp:325 MainWindow/Window.cpp:330
+#: MainWindow/Window.cpp:327 MainWindow/Window.cpp:332
 msgid "Stacking Error"
 msgstr ""
 
-#: MainWindow/Window.cpp:329
+#: MainWindow/Window.cpp:331
 msgid "Unknown error, stack creation failed."
 msgstr ""
 
-#: MainWindow/Window.cpp:407 MainWindow/Window.cpp:531
-#: MainWindow/Window.cpp:1229
+#: MainWindow/Window.cpp:409 MainWindow/Window.cpp:533
+#: MainWindow/Window.cpp:1231
 msgid "No item is selected."
 msgstr "कोई चीज चुने नइ गे हे."
 
-#: MainWindow/Window.cpp:407 MainWindow/Window.cpp:531
-#: MainWindow/Window.cpp:1230
+#: MainWindow/Window.cpp:409 MainWindow/Window.cpp:533
+#: MainWindow/Window.cpp:1232
 msgid "No Selection"
 msgstr "कोई चयन नइ"
 
-#: MainWindow/Window.cpp:456
+#: MainWindow/Window.cpp:458
 msgid "Saving..."
 msgstr "सहेजिस जात हे..."
 
-#: MainWindow/Window.cpp:460
+#: MainWindow/Window.cpp:462
 msgid "Saving... Done"
 msgstr "सहेजिस जात हे... पूरा"
 
-#: MainWindow/Window.cpp:595
+#: MainWindow/Window.cpp:597
 msgid "There are no images to be shown."
 msgstr "देखाय बर वहां कोनो फोटू नइ हे."
 
-#: MainWindow/Window.cpp:661
+#: MainWindow/Window.cpp:663
 msgid "Generate HTML..."
 msgstr "एचटीएमएल बनाव..."
 
-#: MainWindow/Window.cpp:665
+#: MainWindow/Window.cpp:667
 msgid "Import..."
 msgstr "आयात करव..."
 
-#: MainWindow/Window.cpp:668
+#: MainWindow/Window.cpp:670
 msgid "Export/Copy Images..."
 msgstr "फोटू निर्यात/नकल करव..."
 
-#: MainWindow/Window.cpp:694
+#: MainWindow/Window.cpp:696
 msgid "Delete Selected"
 msgstr "चुने गे ल मेटाव"
 
-#: MainWindow/Window.cpp:703
+#: MainWindow/Window.cpp:705
 msgid "Open List of Files..."
 msgstr "फाइल मन के सूची खोलव..."
 
-#: MainWindow/Window.cpp:707
+#: MainWindow/Window.cpp:709
 msgid "Annotate Individual Items"
 msgstr "अलग अलग चीज मन के व्याख्या"
 
-#: MainWindow/Window.cpp:711
+#: MainWindow/Window.cpp:713
 msgid "Annotate Multiple Items at a Time"
 msgstr "बहुत से चीज मन के व्याख्या एके समय में"
 
-#: MainWindow/Window.cpp:715
+#: MainWindow/Window.cpp:717
 msgid "Merge Images into a Stack"
 msgstr ""
 
-#: MainWindow/Window.cpp:719
+#: MainWindow/Window.cpp:721
 msgid "Remove Images from Stack"
 msgstr ""
 
-#: MainWindow/Window.cpp:722 Viewer/ViewerWidget.cpp:151
+#: MainWindow/Window.cpp:724 Viewer/ViewerWidget.cpp:151
 msgid "Set as First Image in Stack"
 msgstr ""
 
-#: MainWindow/Window.cpp:737
+#: MainWindow/Window.cpp:739
 msgid "View"
 msgstr "दृस्य"
 
-#: MainWindow/Window.cpp:741
+#: MainWindow/Window.cpp:743
 msgid "View (In New Window)"
 msgstr "दृस्य (नवा विंडो में)"
 
-#: MainWindow/Window.cpp:744
+#: MainWindow/Window.cpp:746
 msgid "Run Slide Show"
 msgstr "स्लाइड सो चलाव"
 
-#: MainWindow/Window.cpp:749
+#: MainWindow/Window.cpp:751
 msgid "Run Randomized Slide Show"
 msgstr "स्लाइड सो बेतरतीब चलाव"
 
-#: MainWindow/Window.cpp:755
+#: MainWindow/Window.cpp:757
 msgid "Collapse all stacks"
 msgstr ""
 
-#: MainWindow/Window.cpp:761
+#: MainWindow/Window.cpp:763
 msgid "Expand all stacks"
 msgstr ""
 
-#: MainWindow/Window.cpp:766
+#: MainWindow/Window.cpp:768
 msgid "Show &Oldest First"
 msgstr "सबसे जुन्ना ल पहिली देखाव (&O)"
 
-#: MainWindow/Window.cpp:771
+#: MainWindow/Window.cpp:773
 msgid "Show &Newest First"
 msgstr "सबसे नवा ल पहिली दिखाव (&N)"
 
-#: MainWindow/Window.cpp:776
+#: MainWindow/Window.cpp:778
 msgid "Sort Selected by Date && Time"
 msgstr "तारीक अउ समय से छांटना चुने गे (&&)"
 
-#: MainWindow/Window.cpp:779
+#: MainWindow/Window.cpp:781
 msgid "Limit View to Marked"
 msgstr "दृस्य ल चिनहित तक सीमित करव"
 
-#: MainWindow/Window.cpp:782
+#: MainWindow/Window.cpp:784
 msgid "Jump to Context"
 msgstr "संदर्भ मं जाव"
 
-#: MainWindow/Window.cpp:787
+#: MainWindow/Window.cpp:789
 msgid "Lock Images"
 msgstr "फोटू तालाबंद करव"
 
-#: MainWindow/Window.cpp:790
+#: MainWindow/Window.cpp:792
 msgid "Unlock"
 msgstr "तालाखोलव"
 
-#: MainWindow/Window.cpp:793
+#: MainWindow/Window.cpp:795
 msgid "Change Password..."
 msgstr "पासवर्ड बदलव..."
 
-#: MainWindow/Window.cpp:797
+#: MainWindow/Window.cpp:799
 msgid "Lock Away All Other Items"
 msgstr "सब्बो अउ चीज मन ल तालाबंद करव"
 
-#: MainWindow/Window.cpp:800
+#: MainWindow/Window.cpp:802
 msgid "Lock Away Current Set of Items"
 msgstr "अभी हाल के चीज मन के सेट ल तालाबंद करव"
 
-#: MainWindow/Window.cpp:804
+#: MainWindow/Window.cpp:806
 msgid "Display Images and Videos Not on Disk"
 msgstr "ओ फोटू अउ वीडियो मन ल देखाव जऊन ह डिस्क मं मौजूद नइ हे"
 
-#: MainWindow/Window.cpp:807
+#: MainWindow/Window.cpp:809
 msgid "Display Images and Videos with Incomplete Dates..."
 msgstr "अधूरा तारीक वाले फोटू मन अउ वीडियो दिखाव..."
 
-#: MainWindow/Window.cpp:811
+#: MainWindow/Window.cpp:813
 msgid "Display Images and Videos with Changed MD5 Sum"
 msgstr "बदले एमडी५ सम सहित फोटू अउ वीडियो मन ल दिखाव"
 
-#: MainWindow/Window.cpp:815
+#: MainWindow/Window.cpp:817
 msgid "Recalculate Checksum"
 msgstr "चेकसम फिर से गनना करव"
 
-#: MainWindow/Window.cpp:818
+#: MainWindow/Window.cpp:820
 msgid "Rescan for Images and Videos"
 msgstr "फोटू मन अउ वीडियो ल फिर से स्कैन करव"
 
-#: MainWindow/Window.cpp:821
+#: MainWindow/Window.cpp:823
 msgid "Recreate Exif Search Database"
 msgstr "एक्जिफ सर्च डाटाबेस फिर से बनाव"
 
-#: MainWindow/Window.cpp:824
+#: MainWindow/Window.cpp:826
 msgid "Read EXIF Info From Files..."
 msgstr "फाइल मन से एक्सइफ जानकारी पढ़व..."
 
-#: MainWindow/Window.cpp:826
+#: MainWindow/Window.cpp:828
 msgid ""
 "Recreate Exif Search Database (need to compile KPhotoAlbum with Exif support)"
 msgstr ""
 
-#: MainWindow/Window.cpp:827
+#: MainWindow/Window.cpp:829
 msgid ""
 "Read EXIF Info From Files... (need to compile KPhotoAlbum with Exif support)"
 msgstr ""
 
-#: MainWindow/Window.cpp:833
+#: MainWindow/Window.cpp:835
 msgid "Automatically Stack Selected Images..."
 msgstr ""
 
-#: MainWindow/Window.cpp:836
+#: MainWindow/Window.cpp:838
 msgid "Build Thumbnails"
 msgstr "छोटे फोटू बनाव"
 
-#: MainWindow/Window.cpp:839
+#: MainWindow/Window.cpp:841
 msgid "Statistics"
 msgstr "आंकड़ा"
 
-#: MainWindow/Window.cpp:848
+#: MainWindow/Window.cpp:850
 msgid "Enable All Messages"
 msgstr "सब्बो संदेस सक्छम करव"
 
-#: MainWindow/Window.cpp:851
+#: MainWindow/Window.cpp:853
 #, fuzzy
 #| msgid "Configure View"
 msgid "Configure Current View"
 msgstr "कान्फिगर दृस्य"
 
-#: MainWindow/Window.cpp:860
+#: MainWindow/Window.cpp:862
 #, fuzzy
 #| msgid "Theme:"
 msgid "Tree"
 msgstr "प्रसंगः"
 
-#: MainWindow/Window.cpp:865
+#: MainWindow/Window.cpp:867
 msgid "Tree with User Icons"
 msgstr ""
 
-#: MainWindow/Window.cpp:871 MainWindow/Window.cpp:877
+#: MainWindow/Window.cpp:873 MainWindow/Window.cpp:879
 #, fuzzy
 #| msgid "Icon:"
 msgid "Icons"
 msgstr "चिनहाः"
 
-#: MainWindow/Window.cpp:889
+#: MainWindow/Window.cpp:891
 msgid "Show Tooltips in Thumbnails Window"
 msgstr "छोटेफोटू विंडो मं औजारयुक्ति दिखाव"
 
-#: MainWindow/Window.cpp:895
+#: MainWindow/Window.cpp:897
 msgid "Run KPhotoAlbum Demo"
 msgstr "केफोटोएलबम डेमो चलाव"
 
-#: MainWindow/Window.cpp:898
+#: MainWindow/Window.cpp:900
 msgid "KPhotoAlbum Feature Status"
 msgstr "केफोटोएलबम विसेसता स्थिति"
 
-#: MainWindow/Window.cpp:901
+#: MainWindow/Window.cpp:903
 msgid "Show Demo Videos"
 msgstr "डेमो वीडियो देखाव"
 
-#: MainWindow/Window.cpp:906
+#: MainWindow/Window.cpp:908
 msgid "Show Exif Info"
 msgstr "एक्जइफ जानकारी देखाव"
 
-#: MainWindow/Window.cpp:909
+#: MainWindow/Window.cpp:911
 msgid "Recreate Selected Thumbnails"
 msgstr "चुने गे लघु-फोटू फिर से बनाव"
 
-#: MainWindow/Window.cpp:934
+#: MainWindow/Window.cpp:936
 msgid "Auto saving...."
 msgstr "अपने अपन सहेजत हे..."
 
-#: MainWindow/Window.cpp:936
+#: MainWindow/Window.cpp:938
 msgid "Auto saving.... Done"
 msgstr "अपने अपन सहेजत हे... पूरा"
 
-#: MainWindow/Window.cpp:1027
+#: MainWindow/Window.cpp:1029
 #, kde-format
 msgid ""
 "<p>Could not open given index.xml as provided directory does not exist.<br />"
 "%1</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1035
+#: MainWindow/Window.cpp:1037
 #, kde-format
 msgid ""
 "<p>Given index file does not exist, do you want to create following?<br />%1/"
 "index.xml</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1100
+#: MainWindow/Window.cpp:1102
 msgid ""
 "<p>The password protection is only a means of allowing your little sister to "
 "look in your images, without getting to those embarrassing images from your "
@@ -2377,45 +2394,45 @@ msgid ""
 "can easily circumvent this password.</b></p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1105
+#: MainWindow/Window.cpp:1107
 msgid "Password Protection"
 msgstr "पासवर्ड सुरक्छा"
 
-#: MainWindow/Window.cpp:1119
+#: MainWindow/Window.cpp:1121
 msgid "Type in Password to Unlock"
 msgstr "ताला खोले बर पासवर्ड टाइप करव"
 
-#: MainWindow/Window.cpp:1128 MainWindow/Window.cpp:1162
+#: MainWindow/Window.cpp:1130 MainWindow/Window.cpp:1164
 msgid "Invalid password."
 msgstr "अवैध पासवर्ड."
 
-#: MainWindow/Window.cpp:1153
+#: MainWindow/Window.cpp:1155
 msgid "Type in Old Password"
 msgstr "जुन्ना पासवर्ड टाइप करव"
 
-#: MainWindow/Window.cpp:1165
+#: MainWindow/Window.cpp:1167
 msgid "Type in New Password"
 msgstr "नवा पासवर्ड टाइप करव"
 
-#: MainWindow/Window.cpp:1176 Settings/SettingsDialog.cpp:65
+#: MainWindow/Window.cpp:1178 Settings/SettingsDialog.cpp:65
 msgid "General"
 msgstr "सामान्य"
 
-#: MainWindow/Window.cpp:1177 Settings/SettingsDialog.cpp:70
+#: MainWindow/Window.cpp:1179 Settings/SettingsDialog.cpp:70
 msgid "Viewer"
 msgstr "प्रदर्सक"
 
-#: MainWindow/Window.cpp:1190
+#: MainWindow/Window.cpp:1192
 msgid "Annotation Dialog"
 msgstr "एनोटेसन गोठ"
 
-#: MainWindow/Window.cpp:1347
+#: MainWindow/Window.cpp:1349
 msgid ""
 "<p>Really enable all message boxes where you previously checked the do-not-"
 "show-again check box?</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1358
+#: MainWindow/Window.cpp:1360
 msgid ""
 "<p>KPhotoAlbum hit an internal error (missing plug-in menu in MainWindow::"
 "Window::setupPluginMenu). This indicate that you forgot to do a make "
@@ -2425,29 +2442,35 @@ msgid ""
 "on due to the missing make install.</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1358
+#: MainWindow/Window.cpp:1360
 #, fuzzy
 #| msgid "Invoke External Program"
 msgid "Internal Error"
 msgstr "बाहिरी प्रोग्राम चलाव"
 
-#: MainWindow/Window.cpp:1533
+#: MainWindow/Window.cpp:1535
 msgid "Open List of Files"
 msgstr "फाइल मन के सूची खोलव"
 
-#: MainWindow/Window.cpp:1533
+#: MainWindow/Window.cpp:1535
 msgid ""
 "You can open a set of files from KPhotoAlbum's image root by listing the "
 "files here."
 msgstr ""
 
-#: MainWindow/Window.cpp:1549
+#: MainWindow/Window.cpp:1551
 msgid "No images matching your input were found."
 msgstr "आप मन के इनपुट से मिलत जुलत कोनो फोटू नइ मिलिस."
 
-#: MainWindow/Window.cpp:1549
+#: MainWindow/Window.cpp:1551
 msgid "No Matches"
 msgstr "कोई जोड़ नइ"
+
+#: MainWindow/Window.cpp:1709
+msgid ""
+"<p>Unable to find mplayer on the system</p><p>KPhotoAlbum needs mplayer to "
+"extract video thumbnails among other things."
+msgstr ""
 
 #: Plugins/ImageCollection.cpp:44
 #, fuzzy
@@ -3953,29 +3976,29 @@ msgid ""
 "This will make an attempt at saving in a format understandable by KimDaBa 2.1"
 msgstr ""
 
-#: BackgroundJobs/CreateVideoThumbnailsJob.cpp:47
+#: BackgroundJobs/ExtractOneThumbnailJob.cpp:44
 #, fuzzy
 #| msgid "Creating thumbnails"
-msgid "Create Video Thumbnails"
+msgid "Extracting Thumbnail"
+msgstr "छोटे फोटू बनात हे"
+
+#: BackgroundJobs/HandleVideoThumbnailRequestJob.cpp:40
+#, fuzzy
+#| msgid "Creating thumbnails"
+msgid "Extract Video Thumbnail"
 msgstr "छोटे फोटू बनात हे"
 
 #: BackgroundJobs/ReadVideoLengthJob.cpp:46
 msgid "Read Video Length"
 msgstr ""
 
-#: BackgroundJobs/SearchForVideosWithoutLengthInfo.cpp:49
+#: BackgroundJobs/SearchForVideosWithoutLengthInfo.cpp:55
 msgid "Search for videos without length information"
 msgstr ""
 
-#: BackgroundJobs/SearchForVideosWithoutVideoThumbnailsJob.cpp:49
+#: BackgroundJobs/SearchForVideosWithoutVideoThumbnailsJob.cpp:59
 msgid "Searching for videos without video thumbnails"
 msgstr ""
-
-#: BackgroundTaskManager/JobInfo.cpp:55
-#, fuzzy
-#| msgid "Not rotated"
-msgid "Not Started"
-msgstr "नइ घूमे हे"
 
 #: BackgroundTaskManager/JobModel.cpp:94
 msgid "Title"
@@ -3992,6 +4015,12 @@ msgstr ""
 #: BackgroundTaskManager/JobViewer.cpp:30
 msgid "Background Job Viewer"
 msgstr ""
+
+#: BackgroundTaskManager/JobInfo.cpp:61
+#, fuzzy
+#| msgid "Not rotated"
+msgid "Not Started"
+msgstr "नइ घूमे हे"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -4252,6 +4281,10 @@ msgid ""
 "send an email to <a href=\"mailto:kphotoalbum@kdab.com\">kphotoalbum@kdab."
 "com</a>.</p>\n"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Video thumbnail support"
+#~ msgstr "वीडियो छोटे फोटू समर्थन *करना हे*"
 
 #~ msgid "Convert Backend...(Experimental!)"
 #~ msgstr "बैकएन्ड बदलव... (परयोगात्मक!)"
