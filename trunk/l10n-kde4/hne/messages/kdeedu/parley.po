@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-06 04:42+0200\n"
+"POT-Creation-Date: 2012-08-07 07:59+0200\n"
 "PO-Revision-Date: 2009-02-25 15:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -818,37 +818,6 @@ msgstr "उत्तर गलत रहिस."
 msgid "Enter the comparison forms."
 msgstr "तुलना फारम भरव"
 
-#: src/practice/conjugationbackendmode.cpp:121
-#, fuzzy
-#| msgid "A neutral conjugation form exists"
-msgid "All conjugation forms were right."
-msgstr "न्यूट्रल कांजुगेसन फारम पहिली से ही मौजूद हे"
-
-#: src/practice/conjugationbackendmode.cpp:124
-#, fuzzy, kde-format
-#| msgid "A neutral conjugation form exists"
-msgctxt "You did not get the conjugation forms right."
-msgid "You answered %1 conjugation form correctly."
-msgid_plural "You answered %1 conjugation forms correctly."
-msgstr[0] "न्यूट्रल कांजुगेसन फारम पहिली से ही मौजूद हे"
-msgstr[1] "न्यूट्रल कांजुगेसन फारम पहिली से ही मौजूद हे"
-
-#: src/practice/conjugationmodewidget.cpp:104
-#, fuzzy
-#| msgid "Enter the correct conjugation forms."
-msgid "Enter all conjugation forms."
-msgstr "सही कांजुगेसन फारम भरव."
-
-#: src/practice/entryfilter.cpp:83
-msgid ""
-"The vocabulary document contains no entries that can be used for the chosen "
-"type of practice."
-msgstr ""
-
-#: src/practice/entryfilter.cpp:112
-msgid "Start Practice"
-msgstr "अभ्यास चालू करव"
-
 #: src/practice/genderbackendmode.cpp:59
 #, kde-format
 msgid "Choose the right article for \"%1\""
@@ -1144,6 +1113,37 @@ msgid ""
 "When you answered, Parley will display that the answer was right or wrong.\n"
 "This shortcut changes how the answer is counted."
 msgstr ""
+
+#: src/practice/conjugationbackendmode.cpp:102
+#, fuzzy
+#| msgid "A neutral conjugation form exists"
+msgid "All conjugation forms were right."
+msgstr "न्यूट्रल कांजुगेसन फारम पहिली से ही मौजूद हे"
+
+#: src/practice/conjugationbackendmode.cpp:105
+#, fuzzy, kde-format
+#| msgid "A neutral conjugation form exists"
+msgctxt "You did not get the conjugation forms right."
+msgid "You answered %1 conjugation form correctly."
+msgid_plural "You answered %1 conjugation forms correctly."
+msgstr[0] "न्यूट्रल कांजुगेसन फारम पहिली से ही मौजूद हे"
+msgstr[1] "न्यूट्रल कांजुगेसन फारम पहिली से ही मौजूद हे"
+
+#: src/practice/conjugationmodewidget.cpp:115
+#, fuzzy
+#| msgid "Enter the correct conjugation forms."
+msgid "Enter all conjugation forms."
+msgstr "सही कांजुगेसन फारम भरव."
+
+#: src/practice/entryfilter.cpp:82
+msgid ""
+"The vocabulary document contains no entries that can be used for the chosen "
+"type of practice."
+msgstr ""
+
+#: src/practice/entryfilter.cpp:117
+msgid "Start Practice"
+msgstr "अभ्यास चालू करव"
 
 #: src/scripts/script.cpp:53
 msgid "The script file does not exist."
@@ -1710,15 +1710,16 @@ msgid "Open Vocabulary Collection"
 msgstr "सब्दावली संग्रह खोलव"
 
 #: src/parleydocument.cpp:191
-#, fuzzy
-#| msgid "Open Vocabulary Collection"
-msgid "Open Collection"
-msgstr "सब्दावली संग्रह खोलव"
-
-#: src/parleydocument.cpp:191
 #, kde-format
 msgid "Could not read collection from \"%1\""
 msgstr ""
+
+#: src/parleydocument.cpp:191
+#, fuzzy
+#| msgid "Open Vocabulary Collection"
+msgctxt "@title:window"
+msgid "Open Collection"
+msgstr "सब्दावली संग्रह खोलव"
 
 #: src/parleydocument.cpp:224
 msgid "Open Downloaded Vocabulary Collection"
@@ -1730,6 +1731,9 @@ msgid "Writing file \"%1\" resulted in an error: %2"
 msgstr "फाइल \"%1\" मं लिखे के कोसिस मं गलती : %2 होइस"
 
 #: src/parleydocument.cpp:251 src/parleydocument.cpp:301
+#, fuzzy
+#| msgid "Save File"
+msgctxt "@title:window"
 msgid "Save File"
 msgstr "फाइल सहेजव"
 
