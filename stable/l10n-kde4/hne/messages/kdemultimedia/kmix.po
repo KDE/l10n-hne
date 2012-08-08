@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmix\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-05 04:26+0200\n"
+"POT-Creation-Date: 2012-08-07 21:43+0200\n"
 "PO-Revision-Date: 2009-02-26 17:29+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -246,6 +246,35 @@ msgstr ""
 msgid "No sound card is installed or currently plugged in."
 msgstr ""
 
+#: backends/mixer_backend_i18n.cpp:24
+msgid "Recording level of the microphone input."
+msgstr ""
+
+#: backends/mixer_backend_i18n.cpp:25
+msgid ""
+"Controls the volume of the front speakers or all speakers (depending on your "
+"soundcard model). If you use a digital output, you might need to also use "
+"other controls like ADC or DAC. For headphones, soundcards often supply a "
+"Headphone control."
+msgstr ""
+
+#: backends/mixer_backend_i18n.cpp:26
+msgid ""
+"Most media, such as MP3s or Videos, are played back using the PCM channel. "
+"As such, the playback volume of such media is controlled by both this and "
+"the Master or Headphone channels."
+msgstr ""
+
+#: backends/mixer_backend_i18n.cpp:27
+msgid ""
+"Controls the headphone volume. Some soundcards include a switch that must be "
+"manually activated to enable the headphone output."
+msgstr ""
+
+#: backends/mixer_backend_i18n.cpp:28
+msgid "---"
+msgstr ""
+
 #: backends/mixer_alsa9.cpp:891
 #, fuzzy
 #| msgid ""
@@ -298,35 +327,6 @@ msgstr ""
 msgid "kmix: Unknown error. Please report how you produced this error."
 msgstr ""
 "के-मिक्स: अग्यात गलती. किरपा करके, रपट करव कि एखर गलती ल कइसन रिपोट करे जाए."
-
-#: backends/mixer_backend_i18n.cpp:24
-msgid "Recording level of the microphone input."
-msgstr ""
-
-#: backends/mixer_backend_i18n.cpp:25
-msgid ""
-"Controls the volume of the front speakers or all speakers (depending on your "
-"soundcard model). If you use a digital output, you might need to also use "
-"other controls like ADC or DAC. For headphones, soundcards often supply a "
-"Headphone control."
-msgstr ""
-
-#: backends/mixer_backend_i18n.cpp:26
-msgid ""
-"Most media, such as MP3s or Videos, are played back using the PCM channel. "
-"As such, the playback volume of such media is controlled by both this and "
-"the Master or Headphone channels."
-msgstr ""
-
-#: backends/mixer_backend_i18n.cpp:27
-msgid ""
-"Controls the headphone volume. Some soundcards include a switch that must be "
-"manually activated to enable the headphone output."
-msgstr ""
-
-#: backends/mixer_backend_i18n.cpp:28
-msgid "---"
-msgstr ""
 
 #: backends/mixer_mpris2.cpp:49 backends/mixer_pulse.cpp:1025
 msgid "Playback Streams"
@@ -708,23 +708,28 @@ msgstr "उपकरन सेटिंग"
 msgid "Mixer"
 msgstr "मिक्सर"
 
-#: gui/viewsliders.cpp:94
-msgid "Nothing is capturing audio."
-msgstr ""
-
-#: gui/viewsliders.cpp:96 gui/viewsliders.cpp:102
-msgid "Nothing is playing audio."
-msgstr ""
-
-#: gui/viewsliders.cpp:98
+#: gui/kmixdockwidget.cpp:68
 #, fuzzy
-#| msgid "Capture"
-msgid "No capture devices."
-msgstr "कैप्चर"
+#| msgid "Volume"
+msgid "Volume Control"
+msgstr "अवाज निर्धारक"
 
-#: gui/viewsliders.cpp:100
-msgid "No playback devices."
-msgstr ""
+#: gui/kmixdockwidget.cpp:137
+msgid "M&ute"
+msgstr "मौन (&u)"
+
+#: gui/kmixdockwidget.cpp:225
+msgid "Mixer cannot be found"
+msgstr "मिक्सर खोजे नइ जा सकिस"
+
+#: gui/kmixdockwidget.cpp:239
+#, kde-format
+msgid "Volume at %1%"
+msgstr "अवाज %1% पर"
+
+#: gui/kmixdockwidget.cpp:241
+msgid " (Muted)"
+msgstr " (मौन)"
 
 #: gui/kmixprefdlg.cpp:55
 #, fuzzy
@@ -789,28 +794,23 @@ msgstr "आड़ा (&H)"
 msgid "&Vertical"
 msgstr "खड़ा (&V)"
 
-#: gui/kmixdockwidget.cpp:68
+#: gui/viewsliders.cpp:94
+msgid "Nothing is capturing audio."
+msgstr ""
+
+#: gui/viewsliders.cpp:96 gui/viewsliders.cpp:102
+msgid "Nothing is playing audio."
+msgstr ""
+
+#: gui/viewsliders.cpp:98
 #, fuzzy
-#| msgid "Volume"
-msgid "Volume Control"
-msgstr "अवाज निर्धारक"
+#| msgid "Capture"
+msgid "No capture devices."
+msgstr "कैप्चर"
 
-#: gui/kmixdockwidget.cpp:137
-msgid "M&ute"
-msgstr "मौन (&u)"
-
-#: gui/kmixdockwidget.cpp:225
-msgid "Mixer cannot be found"
-msgstr "मिक्सर खोजे नइ जा सकिस"
-
-#: gui/kmixdockwidget.cpp:239
-#, kde-format
-msgid "Volume at %1%"
-msgstr "अवाज %1% पर"
-
-#: gui/kmixdockwidget.cpp:241
-msgid " (Muted)"
-msgstr " (मौन)"
+#: gui/viewsliders.cpp:100
+msgid "No playback devices."
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
