@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-13 03:20+0200\n"
+"POT-Creation-Date: 2012-08-16 03:11+0200\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -432,6 +432,51 @@ msgstr "एलबम (%1) के नाम बदलव"
 msgid "Enter new album name:"
 msgstr "नवा एलबम नाम भरव:"
 
+#: digikam/album/albumselectcombobox.cpp:76
+#: digikam/album/albumselectcombobox.cpp:86
+#, fuzzy
+#| msgid "%1 Albums selected"
+msgid "No Album Selected"
+msgstr "%1 एलबम चुने गे"
+
+#: digikam/album/albumselectcombobox.cpp:93
+#, fuzzy
+#| msgid "%1 Tags selected"
+msgid "No Tag Selected"
+msgstr "%1 टैग चुने गे"
+
+#: digikam/album/albumselectcombobox.cpp:251
+#, fuzzy, kde-format
+#| msgid "%1 Tags selected"
+msgid "1 Tag selected"
+msgid_plural "%1 Tags selected"
+msgstr[0] "%1 टैग चुने गे"
+msgstr[1] "%1 टैग चुने गे"
+
+#: digikam/album/albumselectcombobox.cpp:255
+#, fuzzy, kde-format
+#| msgid "%1 Albums selected"
+msgid "1 Album selected"
+msgid_plural "%1 Albums selected"
+msgstr[0] "%1 एलबम चुने गे"
+msgstr[1] "%1 एलबम चुने गे"
+
+#: digikam/album/albumselectcombobox.cpp:264
+#, fuzzy, kde-format
+#| msgid "%1 Tags selected"
+msgid "1 Tag excluded"
+msgid_plural "%1 Tags excluded"
+msgstr[0] "%1 टैग चुने गे"
+msgstr[1] "%1 टैग चुने गे"
+
+#: digikam/album/albumselectcombobox.cpp:268
+#, fuzzy, kde-format
+#| msgid "%1 Albums selected"
+msgid "1 Album excluded"
+msgid_plural "%1 Albums excluded"
+msgstr[0] "%1 एलबम चुने गे"
+msgstr[1] "%1 एलबम चुने गे"
+
 #: digikam/album/albumselectwidget.cpp:78
 msgid "Create New Album"
 msgstr "नवा एल्बम बनाव"
@@ -511,6 +556,14 @@ msgstr "औसत के गनना नइ कर सकिस."
 msgid "Could Not Calculate Average"
 msgstr "औसत के गनना नइ कर सकिस."
 
+#: digikam/album/albumselectdialog.cpp:75
+msgid "Select Album"
+msgstr "एलबम चुनव"
+
+#: digikam/album/albumtreeview.cpp:213
+msgid "Context menu"
+msgstr ""
+
 #: digikam/album/albumselectiontreeview.cpp:167
 #: digikam/main/digikamapp.cpp:1261 digikam/tags/tagfolderview.cpp:73
 msgid "Find Duplicates..."
@@ -521,55 +574,6 @@ msgstr "डुप्लीकेट खोजव..."
 #| msgid "Rebuild All Thumbnails..."
 msgid "Rebuild Thumbnails..."
 msgstr "सब्बो छोटेफोटू फिर से बनाव..."
-
-#: digikam/album/albumselectdialog.cpp:75
-msgid "Select Album"
-msgstr "एलबम चुनव"
-
-#: digikam/album/albumselectcombobox.cpp:76
-#: digikam/album/albumselectcombobox.cpp:86
-#, fuzzy
-#| msgid "%1 Albums selected"
-msgid "No Album Selected"
-msgstr "%1 एलबम चुने गे"
-
-#: digikam/album/albumselectcombobox.cpp:93
-#, fuzzy
-#| msgid "%1 Tags selected"
-msgid "No Tag Selected"
-msgstr "%1 टैग चुने गे"
-
-#: digikam/album/albumselectcombobox.cpp:251
-#, fuzzy, kde-format
-#| msgid "%1 Tags selected"
-msgid "1 Tag selected"
-msgid_plural "%1 Tags selected"
-msgstr[0] "%1 टैग चुने गे"
-msgstr[1] "%1 टैग चुने गे"
-
-#: digikam/album/albumselectcombobox.cpp:255
-#, fuzzy, kde-format
-#| msgid "%1 Albums selected"
-msgid "1 Album selected"
-msgid_plural "%1 Albums selected"
-msgstr[0] "%1 एलबम चुने गे"
-msgstr[1] "%1 एलबम चुने गे"
-
-#: digikam/album/albumselectcombobox.cpp:264
-#, fuzzy, kde-format
-#| msgid "%1 Tags selected"
-msgid "1 Tag excluded"
-msgid_plural "%1 Tags excluded"
-msgstr[0] "%1 टैग चुने गे"
-msgstr[1] "%1 टैग चुने गे"
-
-#: digikam/album/albumselectcombobox.cpp:268
-#, fuzzy, kde-format
-#| msgid "%1 Albums selected"
-msgid "1 Album excluded"
-msgid_plural "%1 Albums excluded"
-msgstr[0] "%1 एलबम चुने गे"
-msgstr[1] "%1 एलबम चुने गे"
 
 #: digikam/album/album.cpp:695
 #, fuzzy
@@ -598,10 +602,6 @@ msgstr "अभी हाल के खोज"
 #| msgid "Current Map Search"
 msgid "Current Duplicates Search"
 msgstr "अभी हाल के मैप खोज"
-
-#: digikam/album/albumtreeview.cpp:213
-msgid "Context menu"
-msgstr ""
 
 #: digikam/database/databaseguierrorhandler.cpp:205
 msgid ""
@@ -1113,42 +1113,6 @@ msgstr "जियोलोकेसन"
 msgid "Select how geolocation should affect the images which are shown."
 msgstr ""
 
-#: digikam/filters/tagfilterview.cpp:78
-#, fuzzy
-#| msgid "Tag Filters"
-msgid "Restore Tag Filters"
-msgstr "टैग फिल्टर्स"
-
-#: digikam/filters/tagfilterview.cpp:79
-msgid "On"
-msgstr ""
-
-#: digikam/filters/tagfilterview.cpp:80
-msgid "Off"
-msgstr ""
-
-#: digikam/filters/tagfilterview.cpp:82
-#, fuzzy
-#| msgid "Tag Filters"
-msgid "Tag Filter Mode"
-msgstr "टैग फिल्टर्स"
-
-#: digikam/filters/tagfilterview.cpp:83
-#, fuzzy
-#| msgid "Assign this Tag"
-msgid "Ignore This Tag"
-msgstr "ये टैग आबंटित करव"
-
-#: digikam/filters/tagfilterview.cpp:84
-#, fuzzy
-#| msgid "Remove this Tag"
-msgid "Must Have This Tag"
-msgstr "ये टैग मेटाव"
-
-#: digikam/filters/tagfilterview.cpp:85
-msgid "Must Not Have This Tag"
-msgstr ""
-
 #: digikam/filters/filterstatusbar.cpp:83
 #, fuzzy
 #| msgid "No active filter"
@@ -1299,6 +1263,42 @@ msgstr "टैग फिल्टर्स"
 msgid "Labels Filter"
 msgstr "लेंस फिल्टर"
 
+#: digikam/filters/tagfilterview.cpp:78
+#, fuzzy
+#| msgid "Tag Filters"
+msgid "Restore Tag Filters"
+msgstr "टैग फिल्टर्स"
+
+#: digikam/filters/tagfilterview.cpp:79
+msgid "On"
+msgstr ""
+
+#: digikam/filters/tagfilterview.cpp:80
+msgid "Off"
+msgstr ""
+
+#: digikam/filters/tagfilterview.cpp:82
+#, fuzzy
+#| msgid "Tag Filters"
+msgid "Tag Filter Mode"
+msgstr "टैग फिल्टर्स"
+
+#: digikam/filters/tagfilterview.cpp:83
+#, fuzzy
+#| msgid "Assign this Tag"
+msgid "Ignore This Tag"
+msgstr "ये टैग आबंटित करव"
+
+#: digikam/filters/tagfilterview.cpp:84
+#, fuzzy
+#| msgid "Remove this Tag"
+msgid "Must Have This Tag"
+msgstr "ये टैग मेटाव"
+
+#: digikam/filters/tagfilterview.cpp:85
+msgid "Must Not Have This Tag"
+msgstr ""
+
 #: digikam/items/digikamimageview.cpp:330
 #, fuzzy
 #| msgid "Preview"
@@ -1319,41 +1319,6 @@ msgstr ""
 #, kde-format
 msgid "Album \"%1\""
 msgstr "एल्बम \"%1\""
-
-#: digikam/items/facerejectionoverlay.cpp:63
-msgctxt "@info:tooltip"
-msgid "If this is not a face, click to reject it."
-msgstr ""
-
-#: digikam/items/imagerotationoverlay.cpp:68
-#: digikam/views/imagepreviewview.cpp:213
-#, fuzzy
-#| msgid "Rotate Left"
-msgctxt "@info:tooltip"
-msgid "Rotate Left"
-msgstr "डेरी मुड़ें"
-
-#: digikam/items/imagerotationoverlay.cpp:72
-#: digikam/views/imagepreviewview.cpp:214
-#, fuzzy
-#| msgid "Rotate Right"
-msgctxt "@info:tooltip"
-msgid "Rotate Right"
-msgstr "जेवनी मुड़ें"
-
-#: digikam/items/imageselectionoverlay.cpp:59
-#, fuzzy
-#| msgid "Deselect"
-msgctxt "@info:tooltip"
-msgid "Deselect Item"
-msgstr "मत चुनव"
-
-#: digikam/items/imageselectionoverlay.cpp:60
-#, fuzzy
-#| msgid "Select Images"
-msgctxt "@info:tooltip"
-msgid "Select Item"
-msgstr "फोटू चुनव"
 
 #: digikam/items/imagecategorydrawer.cpp:250
 #: digikam/items/imagecategorydrawer.cpp:332
@@ -1419,6 +1384,41 @@ msgstr[1] "विस्तृत खोज"
 msgctxt "Month String - Year String"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#: digikam/items/facerejectionoverlay.cpp:63
+msgctxt "@info:tooltip"
+msgid "If this is not a face, click to reject it."
+msgstr ""
+
+#: digikam/items/imagerotationoverlay.cpp:68
+#: digikam/views/imagepreviewview.cpp:213
+#, fuzzy
+#| msgid "Rotate Left"
+msgctxt "@info:tooltip"
+msgid "Rotate Left"
+msgstr "डेरी मुड़ें"
+
+#: digikam/items/imagerotationoverlay.cpp:72
+#: digikam/views/imagepreviewview.cpp:214
+#, fuzzy
+#| msgid "Rotate Right"
+msgctxt "@info:tooltip"
+msgid "Rotate Right"
+msgstr "जेवनी मुड़ें"
+
+#: digikam/items/imageselectionoverlay.cpp:59
+#, fuzzy
+#| msgid "Deselect"
+msgctxt "@info:tooltip"
+msgid "Deselect Item"
+msgstr "मत चुनव"
+
+#: digikam/items/imageselectionoverlay.cpp:60
+#, fuzzy
+#| msgid "Select Images"
+msgctxt "@info:tooltip"
+msgid "Select Item"
+msgstr "फोटू चुनव"
 
 #: digikam/main/main.cpp:73 digikam/views/welcomepageview.cpp:239
 msgid "digiKam"
@@ -1763,8 +1763,8 @@ msgstr "एक जइसन चुनव..."
 msgid "Find similar images using selected item as reference."
 msgstr "चुने गे चीज ल संदर्भ मान के एक जइसन फोटू चुनव."
 
-#: digikam/main/digikamapp.cpp:961 digikam/utils/editablesearchtreeview.cpp:67
-#: digikam/utils/contextmenuhelper.cpp:498
+#: digikam/main/digikamapp.cpp:961 digikam/utils/contextmenuhelper.cpp:498
+#: digikam/utils/editablesearchtreeview.cpp:67
 msgid "Rename..."
 msgstr "नाम बदलव..."
 
@@ -2312,10 +2312,6 @@ msgstr "टैग '%1' मेटाव?"
 msgid "Delete Tag"
 msgstr "टैग मेटाव"
 
-#: digikam/tags/tagfolderview.cpp:72
-msgid "Reset Tag Icon"
-msgstr "टैग चिनहा रीसेट करव"
-
 #: digikam/tags/addtagscompletionbox.cpp:195
 #, fuzzy, kde-format
 #| msgctxt "month-name year-string"
@@ -2494,6 +2490,236 @@ msgstr "पैरेन्ट्स"
 msgctxt "toggle child and parent tags"
 msgid "Both"
 msgstr "दोनों"
+
+#: digikam/tags/tagfolderview.cpp:72
+msgid "Reset Tag Icon"
+msgstr "टैग चिनहा रीसेट करव"
+
+#: digikam/utils/contextmenuhelper.cpp:314
+msgid "Open With"
+msgstr "एखर साथ खोलव"
+
+#: digikam/utils/contextmenuhelper.cpp:326
+#: imageplugins/color/imageplugin_color.cpp:361
+#, fuzzy
+#| msgid "Shear..."
+msgid "Other..."
+msgstr "कतरें..."
+
+#: digikam/utils/contextmenuhelper.cpp:335
+#, fuzzy
+#| msgid "Open With"
+msgid "Open With..."
+msgstr "एखर साथ खोलव"
+
+#: digikam/utils/contextmenuhelper.cpp:447
+msgid "New Tag..."
+msgstr "नवा टैग..."
+
+#: digikam/utils/contextmenuhelper.cpp:465
+#, fuzzy
+msgctxt "Edit Tag Properties"
+msgid "Properties..."
+msgstr "गुन..."
+
+#: digikam/utils/contextmenuhelper.cpp:506
+msgid "Reset Album Icon"
+msgstr "एलबम चिनहा रीसेट करव"
+
+#: digikam/utils/contextmenuhelper.cpp:517
+#: utilities/imageeditor/editor/imagewindow.cpp:807
+msgid "Assign Tag"
+msgstr "टैग आवंटित करव"
+
+#: digikam/utils/contextmenuhelper.cpp:533
+#: utilities/imageeditor/editor/imagewindow.cpp:808
+msgid "Remove Tag"
+msgstr "टैग हटाव"
+
+#: digikam/utils/contextmenuhelper.cpp:550
+#: utilities/imageeditor/editor/imagewindow.cpp:833
+#, fuzzy
+msgid "Assign Labels"
+msgstr "प्रोफाइल आवंटित करव"
+
+#: digikam/utils/contextmenuhelper.cpp:583
+#, fuzzy
+#| msgid "Create Tag From AddressBook"
+msgid "Create Tag From Address Book"
+msgstr "पतापुस्तिका से टैग बनाव"
+
+#: digikam/utils/contextmenuhelper.cpp:642
+#: utilities/imageeditor/rawimport/rawsettingsbox.cpp:332
+msgid "Import"
+msgstr "आयात"
+
+#: digikam/utils/contextmenuhelper.cpp:651
+#, fuzzy
+#| msgid "No options available"
+msgid "No import plugins available"
+msgstr "कोई विकल्प नइ मिलत हे."
+
+#: digikam/utils/contextmenuhelper.cpp:661
+msgid "Export"
+msgstr "निर्यात"
+
+#: digikam/utils/contextmenuhelper.cpp:674
+#, fuzzy
+#| msgid "No options available"
+msgid "No export plugins available"
+msgstr "कोई विकल्प नइ मिलत हे."
+
+#: digikam/utils/contextmenuhelper.cpp:684
+msgid "Batch Process"
+msgstr "बैच प्रोसेस"
+
+#: digikam/utils/contextmenuhelper.cpp:697
+#, fuzzy
+#| msgid "No options available"
+msgid "No batch process plugins available"
+msgstr "कोई विकल्प नइ मिलत हे."
+
+#: digikam/utils/contextmenuhelper.cpp:743
+#: libs/models/abstractalbummodel.cpp:393
+#: utilities/searchwindow/searchfields.cpp:88
+#: utilities/searchwindow/searchfields.cpp:95
+#: utilities/searchwindow/searchfields.cpp:102
+#: utilities/searchwindow/searchfields.cpp:109
+msgid "Album"
+msgstr "एल्बम"
+
+#: digikam/utils/contextmenuhelper.cpp:744
+#: utilities/searchwindow/searchfields.cpp:183
+msgid "Date"
+msgstr "तारीक"
+
+#: digikam/utils/contextmenuhelper.cpp:752
+msgid "Tag"
+msgstr "टैग"
+
+#: digikam/utils/contextmenuhelper.cpp:779
+msgid "Go To"
+msgstr " मं जाव"
+
+#: digikam/utils/contextmenuhelper.cpp:799
+msgid "Add to Existing Queue"
+msgstr ""
+
+#: digikam/utils/contextmenuhelper.cpp:839
+msgid "All Tags"
+msgstr "सब्बो टैग"
+
+#: digikam/utils/contextmenuhelper.cpp:839
+#, fuzzy
+#| msgid "Albums"
+msgid "All Albums"
+msgstr "एल्बम"
+
+#: digikam/utils/contextmenuhelper.cpp:841
+#, fuzzy
+msgctxt "select tags menu"
+msgid "Select"
+msgstr "चुनव"
+
+#: digikam/utils/contextmenuhelper.cpp:846
+#: digikam/utils/contextmenuhelper.cpp:856
+msgid "Children"
+msgstr "चिल्ड्रन"
+
+#: digikam/utils/contextmenuhelper.cpp:847
+#: digikam/utils/contextmenuhelper.cpp:857
+msgid "Parents"
+msgstr "पैरेन्ट्स"
+
+#: digikam/utils/contextmenuhelper.cpp:851
+#, fuzzy
+msgctxt "deselect tags menu"
+msgid "Deselect"
+msgstr "मत चुनव"
+
+#: digikam/utils/contextmenuhelper.cpp:918
+#, fuzzy
+#| msgid "&Group"
+msgid "Group"
+msgstr "समूह (&G)"
+
+#: digikam/utils/contextmenuhelper.cpp:951
+msgctxt "@action:inmenu"
+msgid "Open All Groups"
+msgstr ""
+
+#: digikam/utils/contextmenuhelper.cpp:957
+msgctxt "@action:inmenu"
+msgid "Close All Groups"
+msgstr ""
+
+#: digikam/utils/contextmenuhelper.cpp:976
+#: digikam/utils/contextmenuhelper.cpp:1021
+#, fuzzy
+#| msgid "&Sort Images"
+msgctxt "@action:inmenu"
+msgid "Show Grouped Images"
+msgstr "फोटू छांटव (&S)"
+
+#: digikam/utils/contextmenuhelper.cpp:982
+#: digikam/utils/contextmenuhelper.cpp:1025
+#, fuzzy
+#| msgid "&Sort Images"
+msgctxt "@action:inmenu"
+msgid "Hide Grouped Images"
+msgstr "फोटू छांटव (&S)"
+
+#: digikam/utils/contextmenuhelper.cpp:992
+#, fuzzy
+#| msgid "&Ungroup"
+msgctxt "@action:inmenu"
+msgid "Ungroup"
+msgstr "समूह से हटाव (&U)"
+
+#: digikam/utils/contextmenuhelper.cpp:998
+#, fuzzy
+#| msgid "Remove Group"
+msgctxt "@action:inmenu"
+msgid "Remove From Group"
+msgstr "समूह हटाव"
+
+#: digikam/utils/contextmenuhelper.cpp:1007
+#, fuzzy
+#| msgid "%1 Albums selected"
+msgctxt "@action:inmenu"
+msgid "Group Selected Here"
+msgstr "%1 एलबम चुने गे"
+
+#: digikam/utils/contextmenuhelper.cpp:1011
+#, fuzzy
+#| msgid "%1 Albums selected"
+msgctxt "@action:inmenu"
+msgid "Group Selected By Time"
+msgstr "%1 एलबम चुने गे"
+
+#: digikam/utils/contextmenuhelper.cpp:1034
+#, fuzzy
+#| msgid "Remove Group"
+msgctxt "@action:inmenu"
+msgid "Remove Selected From Groups"
+msgstr "समूह हटाव"
+
+#: digikam/utils/contextmenuhelper.cpp:1038
+#, fuzzy
+#| msgid "%1 Albums selected"
+msgctxt "@action:inmenu"
+msgid "Ungroup Selected"
+msgstr "%1 एलबम चुने गे"
+
+#: digikam/utils/contextmenuhelper.cpp:1126
+#, fuzzy, kde-format
+#| msgid "Move to Trash"
+#| msgid_plural "Move %1 Files to Trash"
+msgctxt "@action:inmenu Pluralized"
+msgid "Move to Trash"
+msgid_plural "Move %1 Files to Trash"
+msgstr[0] "घुरुवा मं ले जाव"
+msgstr[1] "%1 फाईल घुरुवा मं ले जाव"
 
 #: digikam/utils/tooltipfiller.cpp:72
 #: libs/imageproperties/imagepropertiestab.cpp:215
@@ -2796,232 +3022,6 @@ msgstr ""
 msgid "Name exists"
 msgstr "नाम पहिली से ही मौजूद हे"
 
-#: digikam/utils/contextmenuhelper.cpp:314
-msgid "Open With"
-msgstr "एखर साथ खोलव"
-
-#: digikam/utils/contextmenuhelper.cpp:326
-#: imageplugins/color/imageplugin_color.cpp:361
-#, fuzzy
-#| msgid "Shear..."
-msgid "Other..."
-msgstr "कतरें..."
-
-#: digikam/utils/contextmenuhelper.cpp:335
-#, fuzzy
-#| msgid "Open With"
-msgid "Open With..."
-msgstr "एखर साथ खोलव"
-
-#: digikam/utils/contextmenuhelper.cpp:447
-msgid "New Tag..."
-msgstr "नवा टैग..."
-
-#: digikam/utils/contextmenuhelper.cpp:465
-#, fuzzy
-msgctxt "Edit Tag Properties"
-msgid "Properties..."
-msgstr "गुन..."
-
-#: digikam/utils/contextmenuhelper.cpp:506
-msgid "Reset Album Icon"
-msgstr "एलबम चिनहा रीसेट करव"
-
-#: digikam/utils/contextmenuhelper.cpp:517
-#: utilities/imageeditor/editor/imagewindow.cpp:807
-msgid "Assign Tag"
-msgstr "टैग आवंटित करव"
-
-#: digikam/utils/contextmenuhelper.cpp:533
-#: utilities/imageeditor/editor/imagewindow.cpp:808
-msgid "Remove Tag"
-msgstr "टैग हटाव"
-
-#: digikam/utils/contextmenuhelper.cpp:550
-#: utilities/imageeditor/editor/imagewindow.cpp:833
-#, fuzzy
-msgid "Assign Labels"
-msgstr "प्रोफाइल आवंटित करव"
-
-#: digikam/utils/contextmenuhelper.cpp:583
-#, fuzzy
-#| msgid "Create Tag From AddressBook"
-msgid "Create Tag From Address Book"
-msgstr "पतापुस्तिका से टैग बनाव"
-
-#: digikam/utils/contextmenuhelper.cpp:642
-#: utilities/imageeditor/rawimport/rawsettingsbox.cpp:332
-msgid "Import"
-msgstr "आयात"
-
-#: digikam/utils/contextmenuhelper.cpp:651
-#, fuzzy
-#| msgid "No options available"
-msgid "No import plugins available"
-msgstr "कोई विकल्प नइ मिलत हे."
-
-#: digikam/utils/contextmenuhelper.cpp:661
-msgid "Export"
-msgstr "निर्यात"
-
-#: digikam/utils/contextmenuhelper.cpp:674
-#, fuzzy
-#| msgid "No options available"
-msgid "No export plugins available"
-msgstr "कोई विकल्प नइ मिलत हे."
-
-#: digikam/utils/contextmenuhelper.cpp:684
-msgid "Batch Process"
-msgstr "बैच प्रोसेस"
-
-#: digikam/utils/contextmenuhelper.cpp:697
-#, fuzzy
-#| msgid "No options available"
-msgid "No batch process plugins available"
-msgstr "कोई विकल्प नइ मिलत हे."
-
-#: digikam/utils/contextmenuhelper.cpp:743
-#: libs/models/abstractalbummodel.cpp:393
-#: utilities/searchwindow/searchfields.cpp:88
-#: utilities/searchwindow/searchfields.cpp:95
-#: utilities/searchwindow/searchfields.cpp:102
-#: utilities/searchwindow/searchfields.cpp:109
-msgid "Album"
-msgstr "एल्बम"
-
-#: digikam/utils/contextmenuhelper.cpp:744
-#: utilities/searchwindow/searchfields.cpp:183
-msgid "Date"
-msgstr "तारीक"
-
-#: digikam/utils/contextmenuhelper.cpp:752
-msgid "Tag"
-msgstr "टैग"
-
-#: digikam/utils/contextmenuhelper.cpp:779
-msgid "Go To"
-msgstr " मं जाव"
-
-#: digikam/utils/contextmenuhelper.cpp:799
-msgid "Add to Existing Queue"
-msgstr ""
-
-#: digikam/utils/contextmenuhelper.cpp:839
-msgid "All Tags"
-msgstr "सब्बो टैग"
-
-#: digikam/utils/contextmenuhelper.cpp:839
-#, fuzzy
-#| msgid "Albums"
-msgid "All Albums"
-msgstr "एल्बम"
-
-#: digikam/utils/contextmenuhelper.cpp:841
-#, fuzzy
-msgctxt "select tags menu"
-msgid "Select"
-msgstr "चुनव"
-
-#: digikam/utils/contextmenuhelper.cpp:846
-#: digikam/utils/contextmenuhelper.cpp:856
-msgid "Children"
-msgstr "चिल्ड्रन"
-
-#: digikam/utils/contextmenuhelper.cpp:847
-#: digikam/utils/contextmenuhelper.cpp:857
-msgid "Parents"
-msgstr "पैरेन्ट्स"
-
-#: digikam/utils/contextmenuhelper.cpp:851
-#, fuzzy
-msgctxt "deselect tags menu"
-msgid "Deselect"
-msgstr "मत चुनव"
-
-#: digikam/utils/contextmenuhelper.cpp:918
-#, fuzzy
-#| msgid "&Group"
-msgid "Group"
-msgstr "समूह (&G)"
-
-#: digikam/utils/contextmenuhelper.cpp:951
-msgctxt "@action:inmenu"
-msgid "Open All Groups"
-msgstr ""
-
-#: digikam/utils/contextmenuhelper.cpp:957
-msgctxt "@action:inmenu"
-msgid "Close All Groups"
-msgstr ""
-
-#: digikam/utils/contextmenuhelper.cpp:976
-#: digikam/utils/contextmenuhelper.cpp:1021
-#, fuzzy
-#| msgid "&Sort Images"
-msgctxt "@action:inmenu"
-msgid "Show Grouped Images"
-msgstr "फोटू छांटव (&S)"
-
-#: digikam/utils/contextmenuhelper.cpp:982
-#: digikam/utils/contextmenuhelper.cpp:1025
-#, fuzzy
-#| msgid "&Sort Images"
-msgctxt "@action:inmenu"
-msgid "Hide Grouped Images"
-msgstr "फोटू छांटव (&S)"
-
-#: digikam/utils/contextmenuhelper.cpp:992
-#, fuzzy
-#| msgid "&Ungroup"
-msgctxt "@action:inmenu"
-msgid "Ungroup"
-msgstr "समूह से हटाव (&U)"
-
-#: digikam/utils/contextmenuhelper.cpp:998
-#, fuzzy
-#| msgid "Remove Group"
-msgctxt "@action:inmenu"
-msgid "Remove From Group"
-msgstr "समूह हटाव"
-
-#: digikam/utils/contextmenuhelper.cpp:1007
-#, fuzzy
-#| msgid "%1 Albums selected"
-msgctxt "@action:inmenu"
-msgid "Group Selected Here"
-msgstr "%1 एलबम चुने गे"
-
-#: digikam/utils/contextmenuhelper.cpp:1011
-#, fuzzy
-#| msgid "%1 Albums selected"
-msgctxt "@action:inmenu"
-msgid "Group Selected By Time"
-msgstr "%1 एलबम चुने गे"
-
-#: digikam/utils/contextmenuhelper.cpp:1034
-#, fuzzy
-#| msgid "Remove Group"
-msgctxt "@action:inmenu"
-msgid "Remove Selected From Groups"
-msgstr "समूह हटाव"
-
-#: digikam/utils/contextmenuhelper.cpp:1038
-#, fuzzy
-#| msgid "%1 Albums selected"
-msgctxt "@action:inmenu"
-msgid "Ungroup Selected"
-msgstr "%1 एलबम चुने गे"
-
-#: digikam/utils/contextmenuhelper.cpp:1126
-#, fuzzy, kde-format
-#| msgid "Move to Trash"
-#| msgid_plural "Move %1 Files to Trash"
-msgctxt "@action:inmenu Pluralized"
-msgid "Move to Trash"
-msgid_plural "Move %1 Files to Trash"
-msgstr[0] "घुरुवा मं ले जाव"
-msgstr[1] "%1 फाईल घुरुवा मं ले जाव"
-
 #: digikam/utils/albumsettings.cpp:435
 msgid "Category"
 msgstr ""
@@ -3054,6 +3054,36 @@ msgstr "काम-सूची"
 #: utilities/setup/setup.cpp:304
 msgid "Miscellaneous"
 msgstr "विविध"
+
+#: digikam/views/digikamview.cpp:290
+#: utilities/queuemanager/views/toolslistview.cpp:79
+#, fuzzy
+#| msgid "F&ilters"
+msgid "Filters"
+msgstr "फिल्टर (&i)"
+
+#: digikam/views/digikamview.cpp:868
+#, fuzzy
+msgid "Fuzzy Sketch Search"
+msgstr "अभी हाल के फजी स्केच खोज"
+
+#: digikam/views/digikamview.cpp:872
+#, fuzzy
+msgid "Fuzzy Image Search"
+msgstr "अभी हाल के फजी फोटू खोज"
+
+#: digikam/views/digikamview.cpp:876
+#, fuzzy
+msgid "Map Search"
+msgstr "मैप खोज"
+
+#: digikam/views/digikamview.cpp:881 libs/database/schemaupdater.cpp:965
+msgid "Last Search"
+msgstr "पिछला खोज"
+
+#: digikam/views/digikamview.cpp:885 digikam/views/leftsidebarwidgets.cpp:667
+msgid "Timeline"
+msgstr "टाइम-लाइन"
 
 #: digikam/views/imagepreviewview.cpp:210
 #: digikam/views/mediaplayerview.cpp:141
@@ -3092,41 +3122,121 @@ msgstr "सब्बो बदलाव मन ल फोटू मन मं �
 msgid "Show Face Tags"
 msgstr "फोटू टैग देखाव"
 
-#: digikam/views/digikamview.cpp:290
-#: utilities/queuemanager/views/toolslistview.cpp:79
-#, fuzzy
-#| msgid "F&ilters"
-msgid "Filters"
-msgstr "फिल्टर (&i)"
-
-#: digikam/views/digikamview.cpp:868
-#, fuzzy
-msgid "Fuzzy Sketch Search"
-msgstr "अभी हाल के फजी स्केच खोज"
-
-#: digikam/views/digikamview.cpp:872
-#, fuzzy
-msgid "Fuzzy Image Search"
-msgstr "अभी हाल के फजी फोटू खोज"
-
-#: digikam/views/digikamview.cpp:876
-#, fuzzy
-msgid "Map Search"
-msgstr "मैप खोज"
-
-#: digikam/views/digikamview.cpp:881 libs/database/schemaupdater.cpp:965
-msgid "Last Search"
-msgstr "पिछला खोज"
-
-#: digikam/views/digikamview.cpp:885 digikam/views/leftsidebarwidgets.cpp:667
-msgid "Timeline"
-msgstr "टाइम-लाइन"
-
 #: digikam/views/mediaplayerview.cpp:146
 #, fuzzy
 #| msgid "An error is occurred with media player..."
 msgid "An error has occurred with the media player...."
 msgstr "मीडिया प्लेयर के साथ एक गलती होइस..."
+
+#: digikam/views/leftsidebarwidgets.cpp:338
+msgid "Calendar"
+msgstr "कलेन्डर"
+
+#: digikam/views/leftsidebarwidgets.cpp:417
+msgid "Time Unit:"
+msgstr "समय इकाई:"
+
+#: digikam/views/leftsidebarwidgets.cpp:419
+msgid "Day"
+msgstr "दिन"
+
+#: digikam/views/leftsidebarwidgets.cpp:420
+msgid "Week"
+msgstr "हफ्ता"
+
+#: digikam/views/leftsidebarwidgets.cpp:421
+msgid "Month"
+msgstr "महिना"
+
+#: digikam/views/leftsidebarwidgets.cpp:422
+msgid "Year"
+msgstr "साल"
+
+#: digikam/views/leftsidebarwidgets.cpp:425
+msgid ""
+"<p>Select the histogram time unit.</p><p>You can change the graph decade to "
+"zoom in or zoom out over time.</p>"
+msgstr ""
+
+#: digikam/views/leftsidebarwidgets.cpp:432
+msgid ""
+"<p>Select the histogram scale.</p><p>If the date's maximal counts are small, "
+"you can use the linear scale.</p><p>Logarithmic scale can be used when the "
+"maximal counts are big; if it is used, all values (small and large) will be "
+"visible on the graph.</p>"
+msgstr ""
+
+#: digikam/views/leftsidebarwidgets.cpp:439
+#: libs/dimg/filters/greycstoration/greycstorationsettings.cpp:235
+#: libs/dimg/filters/lc/localcontrastsettings.cpp:175
+msgid "Linear"
+msgstr "लीनियर"
+
+#: digikam/views/leftsidebarwidgets.cpp:445
+msgid "Logarithmic"
+msgstr "लागरिदमिक"
+
+#: digikam/views/leftsidebarwidgets.cpp:482
+msgid "Clear current selection"
+msgstr "अभी हाल के चयन साफ करव"
+
+#: digikam/views/leftsidebarwidgets.cpp:483
+msgid ""
+"If you press this button, the current date selection on the time-line will "
+"be cleared."
+msgstr ""
+
+#: digikam/views/leftsidebarwidgets.cpp:486
+msgid ""
+"Enter the name of the current dates search to save in the \"My Searches\" "
+"view"
+msgstr ""
+
+#: digikam/views/leftsidebarwidgets.cpp:492
+msgid "Save current selection to a new virtual Album"
+msgstr "अभी हाल के चयन ल नवा आभासी एलबम मं सहेजव"
+
+#: digikam/views/leftsidebarwidgets.cpp:493
+msgid ""
+"If you press this button, the dates selected on the time-line will be saved "
+"to a new search virtual Album using the name set on the left."
+msgstr ""
+
+#: digikam/views/leftsidebarwidgets.cpp:920
+#, fuzzy
+#| msgid "Search:"
+msgctxt "Search images, access stored searches"
+msgid "Search"
+msgstr "खोजव:"
+
+#: digikam/views/leftsidebarwidgets.cpp:1008
+msgid "Fuzzy Searches"
+msgstr "फजी खोज"
+
+#: digikam/views/leftsidebarwidgets.cpp:1101
+#, fuzzy
+msgctxt "Search images on a map"
+msgid "Map Search"
+msgstr "मैप खोज"
+
+#: digikam/views/leftsidebarwidgets.cpp:1150
+#, fuzzy
+#| msgid "Local Collections"
+msgid "Scan collection for faces"
+msgstr "लोकर संग्रह"
+
+#: digikam/views/leftsidebarwidgets.cpp:1157
+#, fuzzy
+#| msgid "&Replace"
+msgid "People Tags"
+msgstr "बदलव (&R)"
+
+#: digikam/views/leftsidebarwidgets.cpp:1188
+#, fuzzy
+#| msgid "&Replace"
+msgctxt "Browse images sorted by depicted people"
+msgid "People"
+msgstr "बदलव (&R)"
 
 #: digikam/views/welcomepageview.cpp:100
 #, fuzzy
@@ -3251,116 +3361,6 @@ msgid ""
 "p><p>We hope that you will enjoy digiKam.</p><p>Thank you,</p><p "
 "style='margin-bottom: 0px; margin-left:20px;'>The digiKam team</p>"
 msgstr ""
-
-#: digikam/views/leftsidebarwidgets.cpp:338
-msgid "Calendar"
-msgstr "कलेन्डर"
-
-#: digikam/views/leftsidebarwidgets.cpp:417
-msgid "Time Unit:"
-msgstr "समय इकाई:"
-
-#: digikam/views/leftsidebarwidgets.cpp:419
-msgid "Day"
-msgstr "दिन"
-
-#: digikam/views/leftsidebarwidgets.cpp:420
-msgid "Week"
-msgstr "हफ्ता"
-
-#: digikam/views/leftsidebarwidgets.cpp:421
-msgid "Month"
-msgstr "महिना"
-
-#: digikam/views/leftsidebarwidgets.cpp:422
-msgid "Year"
-msgstr "साल"
-
-#: digikam/views/leftsidebarwidgets.cpp:425
-msgid ""
-"<p>Select the histogram time unit.</p><p>You can change the graph decade to "
-"zoom in or zoom out over time.</p>"
-msgstr ""
-
-#: digikam/views/leftsidebarwidgets.cpp:432
-msgid ""
-"<p>Select the histogram scale.</p><p>If the date's maximal counts are small, "
-"you can use the linear scale.</p><p>Logarithmic scale can be used when the "
-"maximal counts are big; if it is used, all values (small and large) will be "
-"visible on the graph.</p>"
-msgstr ""
-
-#: digikam/views/leftsidebarwidgets.cpp:439
-#: libs/dimg/filters/greycstoration/greycstorationsettings.cpp:235
-#: libs/dimg/filters/lc/localcontrastsettings.cpp:175
-msgid "Linear"
-msgstr "लीनियर"
-
-#: digikam/views/leftsidebarwidgets.cpp:445
-msgid "Logarithmic"
-msgstr "लागरिदमिक"
-
-#: digikam/views/leftsidebarwidgets.cpp:482
-msgid "Clear current selection"
-msgstr "अभी हाल के चयन साफ करव"
-
-#: digikam/views/leftsidebarwidgets.cpp:483
-msgid ""
-"If you press this button, the current date selection on the time-line will "
-"be cleared."
-msgstr ""
-
-#: digikam/views/leftsidebarwidgets.cpp:486
-msgid ""
-"Enter the name of the current dates search to save in the \"My Searches\" "
-"view"
-msgstr ""
-
-#: digikam/views/leftsidebarwidgets.cpp:492
-msgid "Save current selection to a new virtual Album"
-msgstr "अभी हाल के चयन ल नवा आभासी एलबम मं सहेजव"
-
-#: digikam/views/leftsidebarwidgets.cpp:493
-msgid ""
-"If you press this button, the dates selected on the time-line will be saved "
-"to a new search virtual Album using the name set on the left."
-msgstr ""
-
-#: digikam/views/leftsidebarwidgets.cpp:920
-#, fuzzy
-#| msgid "Search:"
-msgctxt "Search images, access stored searches"
-msgid "Search"
-msgstr "खोजव:"
-
-#: digikam/views/leftsidebarwidgets.cpp:1008
-msgid "Fuzzy Searches"
-msgstr "फजी खोज"
-
-#: digikam/views/leftsidebarwidgets.cpp:1101
-#, fuzzy
-msgctxt "Search images on a map"
-msgid "Map Search"
-msgstr "मैप खोज"
-
-#: digikam/views/leftsidebarwidgets.cpp:1150
-#, fuzzy
-#| msgid "Local Collections"
-msgid "Scan collection for faces"
-msgstr "लोकर संग्रह"
-
-#: digikam/views/leftsidebarwidgets.cpp:1157
-#, fuzzy
-#| msgid "&Replace"
-msgid "People Tags"
-msgstr "बदलव (&R)"
-
-#: digikam/views/leftsidebarwidgets.cpp:1188
-#, fuzzy
-#| msgid "&Replace"
-msgctxt "Browse images sorted by depicted people"
-msgid "People"
-msgstr "बदलव (&R)"
 
 #: digikam/fileaction/fileactionprogress.cpp:42
 #, fuzzy
@@ -4330,26 +4330,6 @@ msgstr "चमकाव:"
 msgid "This value adjusts the brightness in image corners."
 msgstr ""
 
-#: imageplugins/enhance/blurtool.cpp:86
-msgid "Blur"
-msgstr "धुंधला"
-
-#: imageplugins/enhance/blurtool.cpp:95
-#: utilities/queuemanager/basetools/enhance/blur.cpp:62
-msgid "Smoothness:"
-msgstr "स्मूथनेस:"
-
-#: imageplugins/enhance/blurtool.cpp:99
-#: utilities/queuemanager/basetools/enhance/blur.cpp:66
-msgid ""
-"A smoothness of 0 has no effect, 1 and above determine the Gaussian blur "
-"matrix radius that determines how much to blur the image."
-msgstr ""
-
-#: imageplugins/enhance/blurtool.cpp:177
-msgid "Gaussian Blur"
-msgstr "गासियन फीका"
-
 #: imageplugins/enhance/localcontrasttool.cpp:96
 #: imageplugins/enhance/localcontrasttool.cpp:196
 #: utilities/queuemanager/basetools/enhance/localcontrast.cpp:50
@@ -4666,6 +4646,26 @@ msgstr "ग्रिड देखाव"
 #| msgid "Set this option to visualize correction grid to be applied."
 msgid "Set this option to visualize the correction grid to be applied."
 msgstr "विसुअलाइज करेक्सन ग्रिड लागू करे बर ए विकल्प सेट करव."
+
+#: imageplugins/enhance/blurtool.cpp:86
+msgid "Blur"
+msgstr "धुंधला"
+
+#: imageplugins/enhance/blurtool.cpp:95
+#: utilities/queuemanager/basetools/enhance/blur.cpp:62
+msgid "Smoothness:"
+msgstr "स्मूथनेस:"
+
+#: imageplugins/enhance/blurtool.cpp:99
+#: utilities/queuemanager/basetools/enhance/blur.cpp:66
+msgid ""
+"A smoothness of 0 has no effect, 1 and above determine the Gaussian blur "
+"matrix radius that determines how much to blur the image."
+msgstr ""
+
+#: imageplugins/enhance/blurtool.cpp:177
+msgid "Gaussian Blur"
+msgstr "गासियन फीका"
 
 #: imageplugins/filters/blurfxtool.cpp:108
 #: imageplugins/filters/blurfxtool.cpp:403
@@ -5455,63 +5455,6 @@ msgstr ""
 msgid "Advanced Settings"
 msgstr "विस्तृत सेटिंग"
 
-#: imageplugins/transform/freerotationtool.cpp:111
-#: imageplugins/transform/freerotationtool.cpp:362
-#: imageplugins/transform/imageplugin_transform.cpp:114
-#: libs/dimg/filters/transform/freerotationfilter.h:106
-msgid "Free Rotation"
-msgstr "मुक्त परिक्रमन"
-
-#: imageplugins/transform/freerotationtool.cpp:115
-msgid ""
-"This is the free rotation operation preview. If you move the mouse cursor on "
-"this preview, a vertical and horizontal dashed line will be drawn to guide "
-"you in adjusting the free rotation correction. Release the left mouse button "
-"to freeze the dashed line's position."
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:143
-msgid ""
-"Select a point in the preview widget, then click this button to assign the "
-"point for auto-correction."
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:191
-#, fuzzy
-#| msgid "Adjustment:"
-msgctxt "Automatic Adjustment"
-msgid "Adjust"
-msgstr "समायोजन:"
-
-#: imageplugins/transform/freerotationtool.cpp:200
-msgid ""
-"<p>Correct the rotation of your images automatically by assigning two points "
-"in the preview widget and clicking <i>Adjust</i>.<br/>You can either adjust "
-"horizontal or vertical lines.</p>"
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:220
-#, fuzzy
-#| msgid "Adjustment:"
-msgid "Automatic Adjustment"
-msgstr "समायोजन:"
-
-#: imageplugins/transform/freerotationtool.cpp:222
-#: utilities/cameragui/main/cameraui.cpp:262
-msgid "Settings"
-msgstr "सेटिंग"
-
-#: imageplugins/transform/freerotationtool.cpp:367
-#, fuzzy
-#| msgid "Click To Exit..."
-msgid "Click to set"
-msgstr "बाहिर होए बर किलिक करव..."
-
-#: imageplugins/transform/freerotationtool.cpp:368
-msgctxt "point has been set and is valid"
-msgid "Okay"
-msgstr ""
-
 #: imageplugins/transform/ratiocroptool.cpp:221
 #: imageplugins/transform/ratiocroptool.cpp:1073
 #: imageplugins/transform/ratiocroptool.cpp:1079
@@ -5896,6 +5839,13 @@ msgstr "आस्पेक्ट रेसो कांट-छांट..."
 msgid "Liquid Rescale..."
 msgstr ""
 
+#: imageplugins/transform/imageplugin_transform.cpp:114
+#: imageplugins/transform/freerotationtool.cpp:111
+#: imageplugins/transform/freerotationtool.cpp:362
+#: libs/dimg/filters/transform/freerotationfilter.h:106
+msgid "Free Rotation"
+msgstr "मुक्त परिक्रमन"
+
 #: imageplugins/transform/imageplugin_transform.cpp:119
 msgid "Set Point 1"
 msgstr ""
@@ -5916,6 +5866,56 @@ msgstr "समायोजन:"
 #| msgid "Tra&nsform"
 msgid "Transform"
 msgstr "ट्रांसफारम (&n)"
+
+#: imageplugins/transform/freerotationtool.cpp:115
+msgid ""
+"This is the free rotation operation preview. If you move the mouse cursor on "
+"this preview, a vertical and horizontal dashed line will be drawn to guide "
+"you in adjusting the free rotation correction. Release the left mouse button "
+"to freeze the dashed line's position."
+msgstr ""
+
+#: imageplugins/transform/freerotationtool.cpp:143
+msgid ""
+"Select a point in the preview widget, then click this button to assign the "
+"point for auto-correction."
+msgstr ""
+
+#: imageplugins/transform/freerotationtool.cpp:191
+#, fuzzy
+#| msgid "Adjustment:"
+msgctxt "Automatic Adjustment"
+msgid "Adjust"
+msgstr "समायोजन:"
+
+#: imageplugins/transform/freerotationtool.cpp:200
+msgid ""
+"<p>Correct the rotation of your images automatically by assigning two points "
+"in the preview widget and clicking <i>Adjust</i>.<br/>You can either adjust "
+"horizontal or vertical lines.</p>"
+msgstr ""
+
+#: imageplugins/transform/freerotationtool.cpp:220
+#, fuzzy
+#| msgid "Adjustment:"
+msgid "Automatic Adjustment"
+msgstr "समायोजन:"
+
+#: imageplugins/transform/freerotationtool.cpp:222
+#: utilities/cameragui/main/cameraui.cpp:262
+msgid "Settings"
+msgstr "सेटिंग"
+
+#: imageplugins/transform/freerotationtool.cpp:367
+#, fuzzy
+#| msgid "Click To Exit..."
+msgid "Click to set"
+msgstr "बाहिर होए बर किलिक करव..."
+
+#: imageplugins/transform/freerotationtool.cpp:368
+msgctxt "point has been set and is valid"
+msgid "Okay"
+msgstr ""
 
 #: kioslave/digikamsearch.cpp:177
 #, fuzzy
@@ -6559,6 +6559,153 @@ msgstr ""
 msgid "Step Progress (%1)"
 msgstr ""
 
+#: libs/dialogs/libsinfodlg.cpp:92 libs/dialogs/infodlg.cpp:73
+msgid "Shared Libraries and Components Information"
+msgstr "साझा जानकारी अउ एलबम गुन संपादित करव."
+
+#: libs/dialogs/libsinfodlg.cpp:97
+msgid "LibQt"
+msgstr "लिबक्यूटी"
+
+#: libs/dialogs/libsinfodlg.cpp:98
+msgid "LibKDE"
+msgstr "लिबकेडीई"
+
+#: libs/dialogs/libsinfodlg.cpp:99
+msgid "LibKdcraw"
+msgstr "लिबकेडीक्रा"
+
+#: libs/dialogs/libsinfodlg.cpp:100
+msgid "LibRaw"
+msgstr "लिब-रा"
+
+#: libs/dialogs/libsinfodlg.cpp:103
+msgid "Parallelized demosaicing"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:106
+msgid "LibKExiv2"
+msgstr "लिब-केएक्सिव२"
+
+#: libs/dialogs/libsinfodlg.cpp:107
+msgid "LibExiv2"
+msgstr "लिबएक्सिव२"
+
+#: libs/dialogs/libsinfodlg.cpp:108
+#, fuzzy
+#| msgid "Exiv2 support XMP metadata"
+msgid "Exiv2 supports XMP metadata"
+msgstr "एक्सिव समर्थन एक्सएमपी मेटाडाटा"
+
+#: libs/dialogs/libsinfodlg.cpp:110
+msgid "Exiv2 can write to Jpeg"
+msgstr "एक्सिव२ जेपीईजी मं लिख सकत हे"
+
+#: libs/dialogs/libsinfodlg.cpp:112
+msgid "Exiv2 can write to Tiff"
+msgstr "एक्सिव२ टिफ मं लिख सकत हे"
+
+#: libs/dialogs/libsinfodlg.cpp:114
+msgid "Exiv2 can write to Png"
+msgstr "एक्सिव२ पीएनजी मं लिख सकत हे"
+
+#: libs/dialogs/libsinfodlg.cpp:116
+msgid "Exiv2 can write to Jp2"
+msgstr "एक्सिव२ जेपी२ मं लिख सकत हे"
+
+#: libs/dialogs/libsinfodlg.cpp:118
+#, fuzzy
+#| msgid "Exiv2 can write to Png"
+msgid "Exiv2 can write to Pgf"
+msgstr "एक्सिव२ पीएनजी मं लिख सकत हे"
+
+#: libs/dialogs/libsinfodlg.cpp:123 libs/dialogs/libsinfodlg.cpp:130
+msgid "LibLensFun"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:123
+#, kde-format
+msgid "%1.%2.%3-%4 - internal library"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:130 libs/dialogs/libsinfodlg.cpp:138
+#: libs/dialogs/libsinfodlg.cpp:151 libs/dialogs/libsinfodlg.cpp:159
+msgid "external shared library"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:135 libs/dialogs/libsinfodlg.cpp:138
+#, fuzzy
+#| msgid "LibLCMS"
+msgid "LibLqr"
+msgstr "लिबएलसीएमएस"
+
+#: libs/dialogs/libsinfodlg.cpp:135 libs/dialogs/libsinfodlg.cpp:153
+#: libs/dialogs/libsinfodlg.cpp:161
+#, fuzzy
+#| msgid "Integral step:"
+msgid "internal library"
+msgstr "इंटीग्रल चरन:"
+
+#: libs/dialogs/libsinfodlg.cpp:141
+msgid "LibPNG"
+msgstr "लिबपीएनजी"
+
+#: libs/dialogs/libsinfodlg.cpp:142
+msgid "LibTIFF"
+msgstr "लिबटिफ"
+
+#: libs/dialogs/libsinfodlg.cpp:143
+msgid "LibJPEG"
+msgstr "लिबजेपीईजी"
+
+#: libs/dialogs/libsinfodlg.cpp:144
+msgid "LibJasper"
+msgstr "लिबजेस्पर"
+
+#: libs/dialogs/libsinfodlg.cpp:145
+msgid "LibCImg"
+msgstr "लिबसीआईएमजी"
+
+#: libs/dialogs/libsinfodlg.cpp:146
+msgid "LibLCMS"
+msgstr "लिबएलसीएमएस"
+
+#: libs/dialogs/libsinfodlg.cpp:147
+#, fuzzy
+#| msgid "LibKipi"
+msgid "LibKGeoMap"
+msgstr "लिबकिपि"
+
+#: libs/dialogs/libsinfodlg.cpp:148
+#, fuzzy
+#| msgid "Marble widget"
+msgid "Marble Widget"
+msgstr "मारबल विजेट"
+
+#: libs/dialogs/libsinfodlg.cpp:151 libs/dialogs/libsinfodlg.cpp:153
+#, fuzzy
+#| msgid "LibPNG"
+msgid "LibPGF"
+msgstr "लिबपीएनजी"
+
+#: libs/dialogs/libsinfodlg.cpp:156
+msgid "Parallelized PGF codec"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:159 libs/dialogs/libsinfodlg.cpp:161
+msgid "LibClapack"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:164
+msgid "Component"
+msgstr "अवयव"
+
+#: libs/dialogs/libsinfodlg.cpp:164
+#: utilities/imageeditor/rawimport/rawsettingsbox.cpp:324
+#: utilities/scriptiface/setupscriptmanager.cpp:134
+msgid "Info"
+msgstr "जानकारी "
+
 #: libs/dialogs/daboutdata.cpp:59
 msgid "Supported RAW Cameras"
 msgstr "समर्थित रा कैमरा"
@@ -6935,10 +7082,6 @@ msgstr "चुने गे फाइल मन ल मेटाय जाही
 msgid "About to delete selected albums"
 msgstr "चुने गे अलबमों ल मेटाय जाही"
 
-#: libs/dialogs/infodlg.cpp:73 libs/dialogs/libsinfodlg.cpp:92
-msgid "Shared Libraries and Components Information"
-msgstr "साझा जानकारी अउ एलबम गुन संपादित करव."
-
 #: libs/dialogs/infodlg.cpp:74 libs/widgets/common/dhistoryview.cpp:135
 msgid "Copy to Clipboard"
 msgstr "क्लिपबोर्ड मं नकल करव"
@@ -6947,149 +7090,6 @@ msgstr "क्लिपबोर्ड मं नकल करव"
 #, kde-format
 msgid "<font size=\"5\">%1</font><br/><b>Version %2</b><p>%3</p>"
 msgstr "<font size=\"5\">%1</font><br/><b>संस्करन %2</b><p>%3</p>"
-
-#: libs/dialogs/libsinfodlg.cpp:97
-msgid "LibQt"
-msgstr "लिबक्यूटी"
-
-#: libs/dialogs/libsinfodlg.cpp:98
-msgid "LibKDE"
-msgstr "लिबकेडीई"
-
-#: libs/dialogs/libsinfodlg.cpp:99
-msgid "LibKdcraw"
-msgstr "लिबकेडीक्रा"
-
-#: libs/dialogs/libsinfodlg.cpp:100
-msgid "LibRaw"
-msgstr "लिब-रा"
-
-#: libs/dialogs/libsinfodlg.cpp:103
-msgid "Parallelized demosaicing"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:106
-msgid "LibKExiv2"
-msgstr "लिब-केएक्सिव२"
-
-#: libs/dialogs/libsinfodlg.cpp:107
-msgid "LibExiv2"
-msgstr "लिबएक्सिव२"
-
-#: libs/dialogs/libsinfodlg.cpp:108
-#, fuzzy
-#| msgid "Exiv2 support XMP metadata"
-msgid "Exiv2 supports XMP metadata"
-msgstr "एक्सिव समर्थन एक्सएमपी मेटाडाटा"
-
-#: libs/dialogs/libsinfodlg.cpp:110
-msgid "Exiv2 can write to Jpeg"
-msgstr "एक्सिव२ जेपीईजी मं लिख सकत हे"
-
-#: libs/dialogs/libsinfodlg.cpp:112
-msgid "Exiv2 can write to Tiff"
-msgstr "एक्सिव२ टिफ मं लिख सकत हे"
-
-#: libs/dialogs/libsinfodlg.cpp:114
-msgid "Exiv2 can write to Png"
-msgstr "एक्सिव२ पीएनजी मं लिख सकत हे"
-
-#: libs/dialogs/libsinfodlg.cpp:116
-msgid "Exiv2 can write to Jp2"
-msgstr "एक्सिव२ जेपी२ मं लिख सकत हे"
-
-#: libs/dialogs/libsinfodlg.cpp:118
-#, fuzzy
-#| msgid "Exiv2 can write to Png"
-msgid "Exiv2 can write to Pgf"
-msgstr "एक्सिव२ पीएनजी मं लिख सकत हे"
-
-#: libs/dialogs/libsinfodlg.cpp:123 libs/dialogs/libsinfodlg.cpp:130
-msgid "LibLensFun"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:123
-#, kde-format
-msgid "%1.%2.%3-%4 - internal library"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:130 libs/dialogs/libsinfodlg.cpp:138
-#: libs/dialogs/libsinfodlg.cpp:151 libs/dialogs/libsinfodlg.cpp:159
-msgid "external shared library"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:135 libs/dialogs/libsinfodlg.cpp:138
-#, fuzzy
-#| msgid "LibLCMS"
-msgid "LibLqr"
-msgstr "लिबएलसीएमएस"
-
-#: libs/dialogs/libsinfodlg.cpp:135 libs/dialogs/libsinfodlg.cpp:153
-#: libs/dialogs/libsinfodlg.cpp:161
-#, fuzzy
-#| msgid "Integral step:"
-msgid "internal library"
-msgstr "इंटीग्रल चरन:"
-
-#: libs/dialogs/libsinfodlg.cpp:141
-msgid "LibPNG"
-msgstr "लिबपीएनजी"
-
-#: libs/dialogs/libsinfodlg.cpp:142
-msgid "LibTIFF"
-msgstr "लिबटिफ"
-
-#: libs/dialogs/libsinfodlg.cpp:143
-msgid "LibJPEG"
-msgstr "लिबजेपीईजी"
-
-#: libs/dialogs/libsinfodlg.cpp:144
-msgid "LibJasper"
-msgstr "लिबजेस्पर"
-
-#: libs/dialogs/libsinfodlg.cpp:145
-msgid "LibCImg"
-msgstr "लिबसीआईएमजी"
-
-#: libs/dialogs/libsinfodlg.cpp:146
-msgid "LibLCMS"
-msgstr "लिबएलसीएमएस"
-
-#: libs/dialogs/libsinfodlg.cpp:147
-#, fuzzy
-#| msgid "LibKipi"
-msgid "LibKGeoMap"
-msgstr "लिबकिपि"
-
-#: libs/dialogs/libsinfodlg.cpp:148
-#, fuzzy
-#| msgid "Marble widget"
-msgid "Marble Widget"
-msgstr "मारबल विजेट"
-
-#: libs/dialogs/libsinfodlg.cpp:151 libs/dialogs/libsinfodlg.cpp:153
-#, fuzzy
-#| msgid "LibPNG"
-msgid "LibPGF"
-msgstr "लिबपीएनजी"
-
-#: libs/dialogs/libsinfodlg.cpp:156
-msgid "Parallelized PGF codec"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:159 libs/dialogs/libsinfodlg.cpp:161
-msgid "LibClapack"
-msgstr ""
-
-#: libs/dialogs/libsinfodlg.cpp:164
-msgid "Component"
-msgstr "अवयव"
-
-#: libs/dialogs/libsinfodlg.cpp:164
-#: utilities/imageeditor/rawimport/rawsettingsbox.cpp:324
-#: utilities/scriptiface/setupscriptmanager.cpp:134
-msgid "Info"
-msgstr "जानकारी "
 
 #: libs/dimg/filters/auto/equalizefilter.h:65
 #, fuzzy
@@ -7825,6 +7825,53 @@ msgstr "इहां फोटू के पीला/नीला रंग स
 msgid "Color Balance Tool"
 msgstr "रंग संतुलन"
 
+#: libs/dimg/filters/curves/curvessettings.cpp:255
+msgid "Select Gimp Curves File to Load"
+msgstr "लोड करे बर गिम्प कर्व्स फाइल चुनव"
+
+#: libs/dimg/filters/curves/curvessettings.cpp:265
+msgid "Cannot load from the Gimp curves text file."
+msgstr "गिम्प कर्व्स पाठ फाइल से लोड नइ कर सकिस."
+
+#: libs/dimg/filters/curves/curvessettings.cpp:276
+msgid "Gimp Curves File to Save"
+msgstr "सहेजे बर गिम्प कर्व्स फाइल"
+
+#: libs/dimg/filters/curves/curvessettings.cpp:286
+msgid "Cannot save to the Gimp curves text file."
+msgstr "गिम्प कर्व्स पाठ फाइल मं सहेज नइ सकिस."
+
+#: libs/dimg/filters/curves/curveswidget.cpp:185
+#: libs/dimg/filters/levels/histogramwidget.cpp:529
+#: libs/widgets/iccprofiles/cietonguewidget.cpp:766
+msgid "Loading image..."
+msgstr "फोटू लोड करत हे ..."
+
+#: libs/dimg/filters/curves/curveswidget.cpp:190
+#: libs/dimg/filters/levels/histogramwidget.cpp:534
+msgid "Histogram calculation..."
+msgstr "हिस्टोग्राम गनना..."
+
+#: libs/dimg/filters/curves/curveswidget.cpp:204
+#: libs/dimg/filters/levels/histogramwidget.cpp:549
+msgid ""
+"Histogram\n"
+"calculation\n"
+"failed."
+msgstr ""
+"हिस्टोग्राम\n"
+"गनना\n"
+"फेल."
+
+#: libs/dimg/filters/curves/curveswidget.cpp:298
+#, kde-format
+msgid ""
+"x:%1\n"
+"y:%2"
+msgstr ""
+"x:%1\n"
+"y:%2"
+
 #: libs/dimg/filters/curves/curvesbox.cpp:145
 msgid "Curve free mode"
 msgstr "वक्र फ्री मोड"
@@ -7882,64 +7929,11 @@ msgid ""
 "channel will be reset to the default values."
 msgstr "यदि आप मन ए बटन ल दबाहू, सब्बो चैनल स्तर अपने अपन एडजस्ट हो जाही."
 
-#: libs/dimg/filters/curves/curvessettings.cpp:255
-msgid "Select Gimp Curves File to Load"
-msgstr "लोड करे बर गिम्प कर्व्स फाइल चुनव"
-
-#: libs/dimg/filters/curves/curvessettings.cpp:265
-msgid "Cannot load from the Gimp curves text file."
-msgstr "गिम्प कर्व्स पाठ फाइल से लोड नइ कर सकिस."
-
-#: libs/dimg/filters/curves/curvessettings.cpp:276
-msgid "Gimp Curves File to Save"
-msgstr "सहेजे बर गिम्प कर्व्स फाइल"
-
-#: libs/dimg/filters/curves/curvessettings.cpp:286
-msgid "Cannot save to the Gimp curves text file."
-msgstr "गिम्प कर्व्स पाठ फाइल मं सहेज नइ सकिस."
-
-#: libs/dimg/filters/curves/curveswidget.cpp:185
-#: libs/dimg/filters/levels/histogramwidget.cpp:529
-#: libs/widgets/iccprofiles/cietonguewidget.cpp:766
-msgid "Loading image..."
-msgstr "फोटू लोड करत हे ..."
-
-#: libs/dimg/filters/curves/curveswidget.cpp:190
-#: libs/dimg/filters/levels/histogramwidget.cpp:534
-msgid "Histogram calculation..."
-msgstr "हिस्टोग्राम गनना..."
-
-#: libs/dimg/filters/curves/curveswidget.cpp:204
-#: libs/dimg/filters/levels/histogramwidget.cpp:549
-msgid ""
-"Histogram\n"
-"calculation\n"
-"failed."
-msgstr ""
-"हिस्टोग्राम\n"
-"गनना\n"
-"फेल."
-
-#: libs/dimg/filters/curves/curveswidget.cpp:298
-#, kde-format
-msgid ""
-"x:%1\n"
-"y:%2"
-msgstr ""
-"x:%1\n"
-"y:%2"
-
 #: libs/dimg/filters/decorate/texturefilter.h:58
 #, fuzzy
 #| msgid "Red Filter"
 msgid "Texture Filter"
 msgstr "लाल फिल्टर"
-
-#: libs/dimg/filters/decorate/borderfilter.h:143
-#, fuzzy
-#| msgid "Border Color: "
-msgid "Border Tool"
-msgstr "किनारा रंग:"
 
 #: libs/dimg/filters/decorate/bordersettings.cpp:134
 #, fuzzy
@@ -8090,6 +8084,12 @@ msgstr "पहिली लकीर के रंग इहां सेट क
 msgid "Set here the color of the second line."
 msgstr "दुसरा लकीर के रंग इहां सेट करव."
 
+#: libs/dimg/filters/decorate/borderfilter.h:143
+#, fuzzy
+#| msgid "Border Color: "
+msgid "Border Tool"
+msgstr "किनारा रंग:"
+
 #: libs/dimg/filters/fx/charcoalfilter.h:52
 #, fuzzy
 #| msgid "Color Effects"
@@ -8237,12 +8237,6 @@ msgstr "संदीप्ति:"
 msgid "Invert Effect"
 msgstr "चयन लहुटाव"
 
-#: libs/dimg/filters/fx/blurfilter.h:59
-#, fuzzy
-#| msgid "Red Filter"
-msgid "Blur Filter"
-msgstr "लाल फिल्टर"
-
 #: libs/dimg/filters/fx/blurfxfilter.h:60
 #, fuzzy
 #| msgid "Red Filter"
@@ -8266,6 +8260,12 @@ msgstr "डिस्टार्सन प्रभाव"
 #| msgid "RainDrop"
 msgid "Rain Drops Effect"
 msgstr "रेन-ड्राप"
+
+#: libs/dimg/filters/fx/blurfilter.h:59
+#, fuzzy
+#| msgid "Red Filter"
+msgid "Blur Filter"
+msgstr "लाल फिल्टर"
 
 #: libs/dimg/filters/greycstoration/greycstorationfilter.h:194
 #, fuzzy
@@ -8965,6 +8965,41 @@ msgstr "लेंस सुधार..."
 msgid "GEO Correction: %1"
 msgstr "रंग संसोधन"
 
+#: libs/dimg/filters/levels/histogrampainter.cpp:474
+#, kde-format
+msgid "x:%1"
+msgstr "x:%1"
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:605
+msgid "Mean:"
+msgstr "मीन:"
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:609
+msgid "Pixels:"
+msgstr "पिक्सेल्स:"
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:613
+msgid "Std dev.:"
+msgstr "मान. विच.:"
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:617
+msgid "Count:"
+msgstr "गननाः"
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:621
+msgid "Median:"
+msgstr "मेडियन:"
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:625
+msgid "Percent:"
+msgstr "प्रतिसत:"
+
+#: libs/dimg/filters/levels/levelsfilter.h:89
+#, fuzzy
+#| msgid "Levels Adjust..."
+msgid "Levels Adjust Tool"
+msgstr "स्तर समायोजन..."
+
 #: libs/dimg/filters/levels/histogrambox.cpp:89
 #: utilities/queuemanager/basetools/color/curvesadjust.cpp:68
 msgid "Channel:"
@@ -9054,41 +9089,6 @@ msgid ""
 "corresponds to the transparency value and is supported by some image "
 "formats, such as PNG or TIF."
 msgstr ""
-
-#: libs/dimg/filters/levels/histogrampainter.cpp:474
-#, kde-format
-msgid "x:%1"
-msgstr "x:%1"
-
-#: libs/dimg/filters/levels/histogramwidget.cpp:605
-msgid "Mean:"
-msgstr "मीन:"
-
-#: libs/dimg/filters/levels/histogramwidget.cpp:609
-msgid "Pixels:"
-msgstr "पिक्सेल्स:"
-
-#: libs/dimg/filters/levels/histogramwidget.cpp:613
-msgid "Std dev.:"
-msgstr "मान. विच.:"
-
-#: libs/dimg/filters/levels/histogramwidget.cpp:617
-msgid "Count:"
-msgstr "गननाः"
-
-#: libs/dimg/filters/levels/histogramwidget.cpp:621
-msgid "Median:"
-msgstr "मेडियन:"
-
-#: libs/dimg/filters/levels/histogramwidget.cpp:625
-msgid "Percent:"
-msgstr "प्रतिसत:"
-
-#: libs/dimg/filters/levels/levelsfilter.h:89
-#, fuzzy
-#| msgid "Levels Adjust..."
-msgid "Levels Adjust Tool"
-msgstr "स्तर समायोजन..."
 
 #: libs/dimg/filters/nr/nrfilter.h:79
 #, fuzzy
@@ -11875,14 +11875,6 @@ msgstr "सृजितः"
 msgid "Flash:"
 msgstr "फ्लैस:"
 
-#: libs/widgets/itemview/ditemdelegate.cpp:150
-#, fuzzy, kde-format
-#| msgid "Image"
-msgid "1 Image"
-msgid_plural "%1 Images"
-msgstr[0] "फोटू"
-msgstr[1] "फोटू"
-
 #: libs/widgets/itemview/imagedelegateoverlay.cpp:339
 #, kde-format
 msgctxt "@info"
@@ -11890,6 +11882,14 @@ msgid "<i>Applying operation to<br/>the selected picture</i>"
 msgid_plural "<i>Applying operation to <br/><b>%1</b> selected pictures</i>"
 msgstr[0] ""
 msgstr[1] ""
+
+#: libs/widgets/itemview/ditemdelegate.cpp:150
+#, fuzzy, kde-format
+#| msgid "Image"
+msgid "1 Image"
+msgid_plural "%1 Images"
+msgstr[0] "फोटू"
+msgstr[1] "फोटू"
 
 #: libs/widgets/itemview/itemviewimagedelegate.cpp:351
 #, fuzzy, kde-format
@@ -12434,6 +12434,61 @@ msgstr "इंटरफेस विकल्प"
 msgid "Modifiers"
 msgstr "परिवर्धितः"
 
+#: utilities/advancedrename/parser/modifiers/removedoublesmodifier.cpp:41
+#, fuzzy
+msgid "Remove Doubles"
+msgstr "चीज मेटारव"
+
+#: utilities/advancedrename/parser/modifiers/removedoublesmodifier.cpp:42
+#, fuzzy
+msgid "Remove duplicate words"
+msgstr "चीज मेटारव"
+
+#: utilities/advancedrename/parser/modifiers/replacemodifier.cpp:61
+#, fuzzy
+#| msgid "&Replace"
+msgctxt "Replace text"
+msgid "Replace..."
+msgstr "बदलव (&R)"
+
+#: utilities/advancedrename/parser/modifiers/replacemodifier.cpp:61
+#, fuzzy
+#| msgid "File Renaming Options"
+msgid "Replace text in a renaming option"
+msgstr "फाइल नाम बदले के विकल्प"
+
+#: utilities/advancedrename/parser/modifiers/replacemodifier.cpp:65
+msgid ""
+"Replace text (||options||: ||r|| = regular expression, ||i|| = ignore case)"
+msgstr ""
+
+#: utilities/advancedrename/parser/modifiers/trimmedmodifier.cpp:34
+#, fuzzy
+#| msgid "&Title:"
+msgid "Trimmed"
+msgstr "सीर्सकः (&T)"
+
+#: utilities/advancedrename/parser/modifiers/trimmedmodifier.cpp:34
+#, fuzzy
+#| msgid "German translations and beta tester"
+msgid "Remove leading, trailing and extra whitespace"
+msgstr "जर्मन ट्रांसलेसन अउ बीटा परीक्छक"
+
+#: utilities/advancedrename/parser/modifiers/uniquemodifier.cpp:36
+#, fuzzy
+#| msgid "Maintainer"
+msgctxt "unique value for duplicate strings"
+msgid "Unique"
+msgstr "मेंटेनर"
+
+#: utilities/advancedrename/parser/modifiers/uniquemodifier.cpp:37
+msgid "Add a suffix number to have unique strings in duplicate values"
+msgstr ""
+
+#: utilities/advancedrename/parser/modifiers/uniquemodifier.cpp:40
+msgid "Add a suffix number, ||n|| specifies the number of digits to use"
+msgstr ""
+
 #: utilities/advancedrename/parser/modifiers/casemodifier.cpp:34
 #, fuzzy
 #| msgid "Change case to:"
@@ -12518,61 +12573,6 @@ msgstr ""
 #: utilities/advancedrename/parser/modifiers/rangemodifier.cpp:73
 msgid ""
 "Extract a specific range (if '||to||' is omitted, go to the end of string)"
-msgstr ""
-
-#: utilities/advancedrename/parser/modifiers/removedoublesmodifier.cpp:41
-#, fuzzy
-msgid "Remove Doubles"
-msgstr "चीज मेटारव"
-
-#: utilities/advancedrename/parser/modifiers/removedoublesmodifier.cpp:42
-#, fuzzy
-msgid "Remove duplicate words"
-msgstr "चीज मेटारव"
-
-#: utilities/advancedrename/parser/modifiers/replacemodifier.cpp:61
-#, fuzzy
-#| msgid "&Replace"
-msgctxt "Replace text"
-msgid "Replace..."
-msgstr "बदलव (&R)"
-
-#: utilities/advancedrename/parser/modifiers/replacemodifier.cpp:61
-#, fuzzy
-#| msgid "File Renaming Options"
-msgid "Replace text in a renaming option"
-msgstr "फाइल नाम बदले के विकल्प"
-
-#: utilities/advancedrename/parser/modifiers/replacemodifier.cpp:65
-msgid ""
-"Replace text (||options||: ||r|| = regular expression, ||i|| = ignore case)"
-msgstr ""
-
-#: utilities/advancedrename/parser/modifiers/trimmedmodifier.cpp:34
-#, fuzzy
-#| msgid "&Title:"
-msgid "Trimmed"
-msgstr "सीर्सकः (&T)"
-
-#: utilities/advancedrename/parser/modifiers/trimmedmodifier.cpp:34
-#, fuzzy
-#| msgid "German translations and beta tester"
-msgid "Remove leading, trailing and extra whitespace"
-msgstr "जर्मन ट्रांसलेसन अउ बीटा परीक्छक"
-
-#: utilities/advancedrename/parser/modifiers/uniquemodifier.cpp:36
-#, fuzzy
-#| msgid "Maintainer"
-msgctxt "unique value for duplicate strings"
-msgid "Unique"
-msgstr "मेंटेनर"
-
-#: utilities/advancedrename/parser/modifiers/uniquemodifier.cpp:37
-msgid "Add a suffix number to have unique strings in duplicate values"
-msgstr ""
-
-#: utilities/advancedrename/parser/modifiers/uniquemodifier.cpp:40
-msgid "Add a suffix number, ||n|| specifies the number of digits to use"
 msgstr ""
 
 #: utilities/advancedrename/parser/options/database/keys/commonkeys.cpp:57
@@ -12802,12 +12802,6 @@ msgstr "टाइल"
 msgid "Accuracy"
 msgstr ""
 
-#: utilities/advancedrename/parser/options/database/dbkeyselector.cpp:98
-#, fuzzy
-#| msgid "Keyword"
-msgid "Key"
-msgstr "कीवर्ड"
-
 #: utilities/advancedrename/parser/options/database/databaseoption.cpp:56
 #: utilities/advancedrename/parser/options/metadataoption.cpp:60
 msgid "Keyword separator:"
@@ -12831,23 +12825,11 @@ msgstr "ए फाइल मन बर एक्जइफ ओरिएन्ट�
 msgid "Add database information"
 msgstr "फोटू जानकारी आयातित"
 
-#: utilities/advancedrename/parser/options/cameranameoption.cpp:39
-#: utilities/searchwindow/searchfields.cpp:300
-#: utilities/searchwindow/searchfields.cpp:308
-msgid "Camera"
-msgstr "कैमरा"
-
-#: utilities/advancedrename/parser/options/cameranameoption.cpp:39
+#: utilities/advancedrename/parser/options/database/dbkeyselector.cpp:98
 #, fuzzy
-#| msgid "Add Camera Name"
-msgid "Add the camera name"
-msgstr "कैमरा नाम जोड़व"
-
-#: utilities/advancedrename/parser/options/cameranameoption.cpp:42
-#, fuzzy
-#| msgid "Add Camera Name"
-msgid "Camera name"
-msgstr "कैमरा नाम जोड़व"
+#| msgid "Keyword"
+msgid "Key"
+msgstr "कीवर्ड"
 
 #: utilities/advancedrename/parser/options/directorynameoption.cpp:40
 #, fuzzy
@@ -12935,6 +12917,18 @@ msgctxt "Group of the file"
 msgid "Group"
 msgstr "समूह (&G)"
 
+#: utilities/advancedrename/parser/options/metadataoption.cpp:107
+#, fuzzy
+#| msgid "Metadata"
+msgid "Metadata..."
+msgstr "मेटाडाटा"
+
+#: utilities/advancedrename/parser/options/metadataoption.cpp:107
+#, fuzzy
+#| msgid "Imported images information"
+msgid "Add metadata information"
+msgstr "फोटू जानकारी आयातित"
+
 #: utilities/advancedrename/parser/options/sequencenumberoption.cpp:62
 #, fuzzy
 #| msgid "Number:"
@@ -12969,17 +12963,23 @@ msgstr "सीक्वेंस नंबर जोड़व"
 msgid "Sequence number (custom start + step)"
 msgstr "सीक्वेंस नंबर जोड़व"
 
-#: utilities/advancedrename/parser/options/metadataoption.cpp:107
-#, fuzzy
-#| msgid "Metadata"
-msgid "Metadata..."
-msgstr "मेटाडाटा"
+#: utilities/advancedrename/parser/options/cameranameoption.cpp:39
+#: utilities/searchwindow/searchfields.cpp:300
+#: utilities/searchwindow/searchfields.cpp:308
+msgid "Camera"
+msgstr "कैमरा"
 
-#: utilities/advancedrename/parser/options/metadataoption.cpp:107
+#: utilities/advancedrename/parser/options/cameranameoption.cpp:39
 #, fuzzy
-#| msgid "Imported images information"
-msgid "Add metadata information"
-msgstr "फोटू जानकारी आयातित"
+#| msgid "Add Camera Name"
+msgid "Add the camera name"
+msgstr "कैमरा नाम जोड़व"
+
+#: utilities/advancedrename/parser/options/cameranameoption.cpp:42
+#, fuzzy
+#| msgid "Add Camera Name"
+msgid "Camera name"
+msgstr "कैमरा नाम जोड़व"
 
 #: utilities/advancedrename/parser/options/dateoption.cpp:48
 #, fuzzy
@@ -13036,56 +13036,6 @@ msgstr ""
 msgid "Date and time"
 msgstr "कैमरा नाम जोड़व"
 
-#: utilities/advancedrename/advancedrenamewidget.cpp:339
-msgid ""
-"<p>Enter your renaming pattern here. Use the access buttons to quickly add "
-"renaming options and modifiers. For further explanations, use the "
-"information toolbutton.</p>"
-msgstr ""
-
-#: utilities/advancedrename/advancedrenamewidget.cpp:346
-#: utilities/cameragui/widgets/albumcustomizer.cpp:122
-#: utilities/cameragui/widgets/scriptingsettings.cpp:88
-msgid "Show a list of all available options"
-msgstr ""
-
-#: utilities/advancedrename/advancedrenamewidget.cpp:352
-msgid ""
-"<p>Add a modifier to a renaming option. To activate this button, place the "
-"cursor behind a renaming option or an already assigned modifier.</p>"
-msgstr ""
-
-#: utilities/advancedrename/advancedrenamewidget.cpp:366
-#, fuzzy
-#| msgid "File Renaming Options"
-msgid "Renaming Options"
-msgstr "फाइल नाम बदले के विकल्प"
-
-#: utilities/advancedrename/advancedrenamewidget.cpp:387
-msgid "<p>Add renaming options to the parse string.</p>"
-msgstr ""
-
-#: utilities/advancedrename/advancedrenameprocessdialog.cpp:82
-#, fuzzy
-#| msgid "File Renaming Options"
-msgid "Renaming images"
-msgstr "फाइल नाम बदले के विकल्प"
-
-#: utilities/advancedrename/advancedrenameprocessdialog.cpp:83
-#, fuzzy
-#| msgid "Removing image tags. Please wait..."
-msgid "<b>Renaming images. Please wait...</b>"
-msgstr "फोटू टैग हटाय जात हे. किरपा करके, अगोरव..."
-
-#: utilities/advancedrename/advancedrenameprocessdialog.cpp:84
-msgid "&Abort"
-msgstr "छोड़व (&A)"
-
-#: utilities/advancedrename/advancedrenameprocessdialog.cpp:96
-#: utilities/queuemanager/main/queuemgrwindow.cpp:1075
-msgid "Processing..."
-msgstr "प्रोसेसिंग..."
-
 #: utilities/advancedrename/advancedrenamedialog.cpp:234
 #, fuzzy
 #| msgid "Count:"
@@ -13118,6 +13068,56 @@ msgid "Rename"
 msgid_plural "Rename (%1 images)"
 msgstr[0] "नाम बदलव..."
 msgstr[1] "नाम बदलव..."
+
+#: utilities/advancedrename/advancedrenameprocessdialog.cpp:82
+#, fuzzy
+#| msgid "File Renaming Options"
+msgid "Renaming images"
+msgstr "फाइल नाम बदले के विकल्प"
+
+#: utilities/advancedrename/advancedrenameprocessdialog.cpp:83
+#, fuzzy
+#| msgid "Removing image tags. Please wait..."
+msgid "<b>Renaming images. Please wait...</b>"
+msgstr "फोटू टैग हटाय जात हे. किरपा करके, अगोरव..."
+
+#: utilities/advancedrename/advancedrenameprocessdialog.cpp:84
+msgid "&Abort"
+msgstr "छोड़व (&A)"
+
+#: utilities/advancedrename/advancedrenameprocessdialog.cpp:96
+#: utilities/queuemanager/main/queuemgrwindow.cpp:1075
+msgid "Processing..."
+msgstr "प्रोसेसिंग..."
+
+#: utilities/advancedrename/advancedrenamewidget.cpp:339
+msgid ""
+"<p>Enter your renaming pattern here. Use the access buttons to quickly add "
+"renaming options and modifiers. For further explanations, use the "
+"information toolbutton.</p>"
+msgstr ""
+
+#: utilities/advancedrename/advancedrenamewidget.cpp:346
+#: utilities/cameragui/widgets/albumcustomizer.cpp:122
+#: utilities/cameragui/widgets/scriptingsettings.cpp:88
+msgid "Show a list of all available options"
+msgstr ""
+
+#: utilities/advancedrename/advancedrenamewidget.cpp:352
+msgid ""
+"<p>Add a modifier to a renaming option. To activate this button, place the "
+"cursor behind a renaming option or an already assigned modifier.</p>"
+msgstr ""
+
+#: utilities/advancedrename/advancedrenamewidget.cpp:366
+#, fuzzy
+#| msgid "File Renaming Options"
+msgid "Renaming Options"
+msgstr "फाइल नाम बदले के विकल्प"
+
+#: utilities/advancedrename/advancedrenamewidget.cpp:387
+msgid "<p>Add renaming options to the parse string.</p>"
+msgstr ""
 
 #: utilities/cameragui/controller/cameracontroller.cpp:420
 msgid "Connecting to camera..."
@@ -13718,12 +13718,6 @@ msgstr "फोल्डर %2 मं एही नाम (%1) के एक फ�
 msgid "Failed to find Album for path '%1'."
 msgstr "पथ '%1' बर एलबम खोज नइ सकिस"
 
-#: utilities/cameragui/views/cameranamehelper.cpp:110
-#, fuzzy
-#| msgid "Cameras (Auto-detected)"
-msgid "auto-detected"
-msgstr "कैमरा (अपने अपन पता लगाय गे)"
-
 #: utilities/cameragui/views/camerafolderview.cpp:68
 msgid "Camera Folders"
 msgstr "कैमरा फोल्डर"
@@ -13746,6 +13740,12 @@ msgstr ""
 #: utilities/cameragui/views/cameraiconview.cpp:840
 msgid "&Upload to camera"
 msgstr "कैमरा मं अपलोड करव (&U)"
+
+#: utilities/cameragui/views/cameranamehelper.cpp:110
+#, fuzzy
+#| msgid "Cameras (Auto-detected)"
+msgid "auto-detected"
+msgstr "कैमरा (अपने अपन पता लगाय गे)"
 
 #: utilities/cameragui/widgets/advancedsettings.cpp:83
 msgid "Fix internal date && time"
@@ -13899,52 +13899,6 @@ msgstr "लक्छ्य यूआरएल %1 वैध नइ हे. "
 msgid "Cannot display camera preview"
 msgstr ""
 
-#: utilities/cameragui/widgets/renamecustomizer.cpp:111
-msgid "Camera filenames"
-msgstr ""
-
-#: utilities/cameragui/widgets/renamecustomizer.cpp:113
-msgid ""
-"Turn on this option to use the camera provided image filenames without "
-"modifications."
-msgstr ""
-
-#: utilities/cameragui/widgets/renamecustomizer.cpp:119
-msgid "Change case to:"
-msgstr "केस बदलव:"
-
-#: utilities/cameragui/widgets/renamecustomizer.cpp:123
-#, fuzzy
-#| msgid "Device Class"
-msgctxt "Leave filename as it is"
-msgid "Leave as-is"
-msgstr "उपकरन क्लास"
-
-#: utilities/cameragui/widgets/renamecustomizer.cpp:124
-#, fuzzy
-#| msgid "Upper"
-msgctxt "Filename to uppercase"
-msgid "Upper"
-msgstr "ऊपरी"
-
-#: utilities/cameragui/widgets/renamecustomizer.cpp:125
-#, fuzzy
-#| msgid "Lower"
-msgctxt "Filename to lowercase"
-msgid "Lower"
-msgstr "निचला"
-
-#: utilities/cameragui/widgets/renamecustomizer.cpp:127
-msgid "Set the method to use to change the case of the image filenames."
-msgstr ""
-
-#: utilities/cameragui/widgets/renamecustomizer.cpp:138
-#, fuzzy
-#| msgid "Customize"
-msgctxt "Custom Image Renaming"
-msgid "Customize"
-msgstr "मनमाफिक"
-
 #: utilities/cameragui/widgets/freespacewidget.cpp:332
 msgid "Camera Media"
 msgstr "कैमरा मीडिया"
@@ -14014,6 +13968,52 @@ msgstr "%1 टैग चुने गे"
 #| msgid "Set here the saturation adjustment of the image."
 msgid "Set here the script that is executed for every imported image."
 msgstr "इहां फोटू के संतृप्ति समायोजन ल सेट करव."
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:111
+msgid "Camera filenames"
+msgstr ""
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:113
+msgid ""
+"Turn on this option to use the camera provided image filenames without "
+"modifications."
+msgstr ""
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:119
+msgid "Change case to:"
+msgstr "केस बदलव:"
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:123
+#, fuzzy
+#| msgid "Device Class"
+msgctxt "Leave filename as it is"
+msgid "Leave as-is"
+msgstr "उपकरन क्लास"
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:124
+#, fuzzy
+#| msgid "Upper"
+msgctxt "Filename to uppercase"
+msgid "Upper"
+msgstr "ऊपरी"
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:125
+#, fuzzy
+#| msgid "Lower"
+msgctxt "Filename to lowercase"
+msgid "Lower"
+msgstr "निचला"
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:127
+msgid "Set the method to use to change the case of the image filenames."
+msgstr ""
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:138
+#, fuzzy
+#| msgid "Customize"
+msgctxt "Custom Image Renaming"
+msgid "Customize"
+msgstr "मनमाफिक"
 
 #: utilities/firstrun/welcomepage.cpp:43
 #, kde-format
@@ -14857,11 +14857,6 @@ msgctxt "@title"
 msgid "File Not Available"
 msgstr "कोई प्रोफाइल नइ मिलत..."
 
-#: utilities/imageeditor/editor/editortool.cpp:346
-#, kde-format
-msgid "(%1,%2) RGBA:%3,%4,%5,%6"
-msgstr "(%1,%2) आरजीबीए:%3,%4,%5,%6"
-
 #: utilities/imageeditor/editor/editortoolsettings.cpp:183
 msgid "Guide:"
 msgstr "गाइड:"
@@ -14902,6 +14897,11 @@ msgstr "कोसिस करव"
 #: utilities/imageeditor/editor/editortoolsettings.cpp:232
 msgid "Try all settings."
 msgstr "सब्बो सेटिंग ल आजमाव."
+
+#: utilities/imageeditor/editor/editortool.cpp:346
+#, kde-format
+msgid "(%1,%2) RGBA:%3,%4,%5,%6"
+msgstr "(%1,%2) आरजीबीए:%3,%4,%5,%6"
 
 #: utilities/imageeditor/editor/editorwindow.cpp:331
 #: utilities/lighttable/lighttablewindow.cpp:451
@@ -17100,14 +17100,6 @@ msgstr ""
 msgid "Edit Stored Search"
 msgstr ""
 
-#: utilities/searchwindow/ratingsearchutilities.cpp:205
-msgid "(No Value Selected)"
-msgstr "(कोई मूल्य चुने नइ गिस)"
-
-#: utilities/searchwindow/ratingsearchutilities.cpp:208
-msgid "No Rating assigned"
-msgstr ""
-
 #: utilities/searchwindow/searchfolderview.cpp:67
 #, fuzzy
 #| msgid "&New..."
@@ -17121,6 +17113,14 @@ msgstr "नवा... (&N)"
 msgctxt "Edit selected search"
 msgid "Edit..."
 msgstr "संपादन..."
+
+#: utilities/searchwindow/ratingsearchutilities.cpp:205
+msgid "(No Value Selected)"
+msgstr "(कोई मूल्य चुने नइ गिस)"
+
+#: utilities/searchwindow/ratingsearchutilities.cpp:208
+msgid "No Rating assigned"
+msgstr ""
 
 #: utilities/setup/setupmetadata.cpp:164
 msgctxt "@info:whatsthis"
@@ -18253,32 +18253,6 @@ msgid ""
 "from the \"Tools\" menu."
 msgstr ""
 
-#: utilities/setup/setupplugins.cpp:82
-#, fuzzy
-#| msgid "Check gamut"
-msgid "Check all"
-msgstr "गेमुट जांचव"
-
-#: utilities/setup/setupplugins.cpp:89
-#, fuzzy
-#| msgid "A list of available Kipi plugins appears below."
-msgid "A list of available Kipi plugins."
-msgstr "मिलत किपि प्लगइन्स के एक सूची नीचे प्रदर्सित हे."
-
-#: utilities/setup/setupplugins.cpp:135
-#, kde-format
-msgid "1 Kipi plugin found"
-msgid_plural "%1 Kipi plugins found"
-msgstr[0] "%1 किपि प्लगइन मिले"
-msgstr[1] "%1 किपि प्लगइन मिले"
-
-#: utilities/setup/setupplugins.cpp:151
-#, fuzzy, kde-format
-#| msgid "No active filter"
-msgctxt "%1: number of plugins activated"
-msgid "(%1 activated)"
-msgstr "कोई सक्रिय छनइया नइ"
-
 #: utilities/setup/setupiofiles.cpp:130
 #, fuzzy
 #| msgid "Image Editor: Settings for Saving Image Files"
@@ -18881,6 +18855,32 @@ msgstr "संग्रह मेटाव"
 #: utilities/setup/setupcollectionview.cpp:934
 msgid "Status"
 msgstr "स्थिति"
+
+#: utilities/setup/setupplugins.cpp:82
+#, fuzzy
+#| msgid "Check gamut"
+msgid "Check all"
+msgstr "गेमुट जांचव"
+
+#: utilities/setup/setupplugins.cpp:89
+#, fuzzy
+#| msgid "A list of available Kipi plugins appears below."
+msgid "A list of available Kipi plugins."
+msgstr "मिलत किपि प्लगइन्स के एक सूची नीचे प्रदर्सित हे."
+
+#: utilities/setup/setupplugins.cpp:135
+#, kde-format
+msgid "1 Kipi plugin found"
+msgid_plural "%1 Kipi plugins found"
+msgstr[0] "%1 किपि प्लगइन मिले"
+msgstr[1] "%1 किपि प्लगइन मिले"
+
+#: utilities/setup/setupplugins.cpp:151
+#, fuzzy, kde-format
+#| msgid "No active filter"
+msgctxt "%1: number of plugins activated"
+msgid "(%1 activated)"
+msgstr "कोई सक्रिय छनइया नइ"
 
 #: utilities/setup/setupalbumview.cpp:114
 #, fuzzy
@@ -19667,49 +19667,11 @@ msgstr ""
 msgid "Evaluate"
 msgstr ""
 
-#: utilities/maintenance/thumbsgenerator.cpp:91
-#, fuzzy
-msgid "Thumbs"
-msgstr "छोटेफोटू देखाव"
-
-#: utilities/maintenance/duplicatesfinder.cpp:115
-#, fuzzy
-#| msgid "Find duplicates"
-msgid "Find duplicates items"
-msgstr "डुप्लीकेट खोजव"
-
-#: utilities/maintenance/facedetector.cpp:288
-#, fuzzy
-#| msgid "<b>Updating fingerprint database. Please wait...</b>"
-msgid "Updating faces database."
-msgstr "<b>फिंगरप्रिंट डाटाबेस ल अपडेट करत हे. किरपा करके, अगोरव...</b>"
-
 #: utilities/maintenance/fingerprintsgenerator.cpp:87
 #, fuzzy
 #| msgid "No Fingerprints"
 msgid "Finger-prints"
 msgstr "फिंगरप्रिंट नइ"
-
-#: utilities/maintenance/maintenancemngr.cpp:235
-#, fuzzy, kde-format
-#| msgid "Reverse ordering"
-msgid ""
-"All operations are done.\n"
-"Duration: %1"
-msgstr "उलटा अनुक्रम"
-
-#: utilities/maintenance/maintenancemngr.cpp:236
-#, fuzzy
-#| msgid "Main angle:"
-msgid "digiKam Maintenance"
-msgstr "मुख्य कोन:"
-
-#: utilities/maintenance/maintenancetool.cpp:93
-#, kde-format
-msgid ""
-"Process is done.\n"
-"Duration: %1"
-msgstr ""
 
 #: utilities/maintenance/metadatasynchronizer.cpp:177
 #, fuzzy
@@ -19722,6 +19684,24 @@ msgstr "फाइल मन मं मेटाडाटा लिखत हे.
 #| msgid "<b>Updating fingerprint database. Please wait...</b>"
 msgid "Updating database from image metadata"
 msgstr "<b>फिंगरप्रिंट डाटाबेस ल अपडेट करत हे. किरपा करके, अगोरव...</b>"
+
+#: utilities/maintenance/facedetector.cpp:288
+#, fuzzy
+#| msgid "<b>Updating fingerprint database. Please wait...</b>"
+msgid "Updating faces database."
+msgstr "<b>फिंगरप्रिंट डाटाबेस ल अपडेट करत हे. किरपा करके, अगोरव...</b>"
+
+#: utilities/maintenance/maintenancetool.cpp:93
+#, kde-format
+msgid ""
+"Process is done.\n"
+"Duration: %1"
+msgstr ""
+
+#: utilities/maintenance/thumbsgenerator.cpp:91
+#, fuzzy
+msgid "Thumbs"
+msgstr "छोटेफोटू देखाव"
 
 #: utilities/maintenance/newitemsfinder.cpp:117
 #, fuzzy
@@ -19810,6 +19790,26 @@ msgstr ""
 #| msgid "Reverse ordering"
 msgid "Face Detection"
 msgstr "उलटा अनुक्रम"
+
+#: utilities/maintenance/duplicatesfinder.cpp:115
+#, fuzzy
+#| msgid "Find duplicates"
+msgid "Find duplicates items"
+msgstr "डुप्लीकेट खोजव"
+
+#: utilities/maintenance/maintenancemngr.cpp:235
+#, fuzzy, kde-format
+#| msgid "Reverse ordering"
+msgid ""
+"All operations are done.\n"
+"Duration: %1"
+msgstr "उलटा अनुक्रम"
+
+#: utilities/maintenance/maintenancemngr.cpp:236
+#, fuzzy
+#| msgid "Main angle:"
+msgid "digiKam Maintenance"
+msgstr "मुख्य कोन:"
 
 #. i18n: file: tips:2
 #. i18n: ectx: @info:tipoftheday
