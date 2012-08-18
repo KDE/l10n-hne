@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krecipes\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-13 04:34+0200\n"
+"POT-Creation-Date: 2012-08-18 04:11+0200\n"
 "PO-Revision-Date: 2009-02-21 12:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -33,11 +33,11 @@ msgstr "का आप मन सचमुच एखर लेखक ल मि�
 #: actionshandlers/categoryactionshandler.cpp:158
 #: actionshandlers/headeractionshandler.cpp:66
 #: actionshandlers/ingredientactionshandler.cpp:65
+#: actionshandlers/kreauthoractionshandler.cpp:70
 #: actionshandlers/prepmethodactionshandler.cpp:65
-#: actionshandlers/unitactionshandler.cpp:133
 #: actionshandlers/recipeactionshandler.cpp:250
 #: actionshandlers/recipeactionshandler.cpp:261
-#: actionshandlers/kreauthoractionshandler.cpp:70 krecipesview.cpp:696
+#: actionshandlers/unitactionshandler.cpp:133 krecipesview.cpp:696
 msgid "Recipes"
 msgstr "रेसिपीज"
 
@@ -149,44 +149,14 @@ msgid ""
 "into one.  Are you sure?"
 msgstr ""
 
-#: actionshandlers/unitactionshandler.cpp:69
-#, fuzzy
-#| msgid "&Rename"
-msgid "Rename Unit"
-msgstr "नाम बदलव (&R)"
-
-#: actionshandlers/unitactionshandler.cpp:139 dialogs/setupdisplay.cpp:128
-#: exporters/htmlexporter.cpp:391 exporters/xsltexporter.cpp:57
-#: krecipesview.cpp:376 krecipesview.cpp:479
-msgid "Properties"
-msgstr "गुन"
-
-#: actionshandlers/unitactionshandler.cpp:145
-msgid "Ingredient Weights"
-msgstr "सामग्री भार"
-
-#: actionshandlers/unitactionshandler.cpp:167
-#: widgets/ingredientinputwidget.cpp:256
-#, fuzzy, kde-format
-msgid "Unit name cannot be longer than 1 character."
-msgid_plural "Unit name cannot be longer than %1 characters."
-msgstr[0] "इकाई नाम %1 अक्छर से अधिक नइ हो सके."
-msgstr[1] "इकाई नाम %1 अक्छर से अधिक नइ हो सके."
-
-#: actionshandlers/unitactionshandler.cpp:205
-msgid ""
-"This unit already exists.  Continuing will merge these two units into one.  "
-"Are you sure?"
-msgstr ""
-
-#: actionshandlers/recipeactionshandler.cpp:229
-msgid "Please select only one recipe."
-msgstr "किरपा करके, सिरिफ एक रेसिपि चुनव."
-
 #: actionshandlers/recipeactionshandler.cpp:229
 #: actionshandlers/recipeactionshandler.cpp:235 krecipesview.cpp:517
 msgid "Edit Recipe"
 msgstr "रेसिपि संपादित करव"
+
+#: actionshandlers/recipeactionshandler.cpp:229
+msgid "Please select only one recipe."
+msgstr "किरपा करके, सिरिफ एक रेसिपि चुनव."
 
 #: actionshandlers/recipeactionshandler.cpp:235
 #: actionshandlers/recipeactionshandler.cpp:267
@@ -253,6 +223,36 @@ msgstr "रेसिपि सहेजी जा रही हे"
 #: actionshandlers/recipeactionshandler.cpp:439
 msgid "Saving recipes..."
 msgstr "रेसिपि सहेजी जा रही हे..."
+
+#: actionshandlers/unitactionshandler.cpp:69
+#, fuzzy
+#| msgid "&Rename"
+msgid "Rename Unit"
+msgstr "नाम बदलव (&R)"
+
+#: actionshandlers/unitactionshandler.cpp:139 dialogs/setupdisplay.cpp:128
+#: exporters/htmlexporter.cpp:391 exporters/xsltexporter.cpp:57
+#: krecipesview.cpp:376 krecipesview.cpp:479
+msgid "Properties"
+msgstr "गुन"
+
+#: actionshandlers/unitactionshandler.cpp:145
+msgid "Ingredient Weights"
+msgstr "सामग्री भार"
+
+#: actionshandlers/unitactionshandler.cpp:167
+#: widgets/ingredientinputwidget.cpp:256
+#, fuzzy, kde-format
+msgid "Unit name cannot be longer than 1 character."
+msgid_plural "Unit name cannot be longer than %1 characters."
+msgstr[0] "इकाई नाम %1 अक्छर से अधिक नइ हो सके."
+msgstr[1] "इकाई नाम %1 अक्छर से अधिक नइ हो सके."
+
+#: actionshandlers/unitactionshandler.cpp:205
+msgid ""
+"This unit already exists.  Continuing will merge these two units into one.  "
+"Are you sure?"
+msgstr ""
 
 #: backends/MySQL/mysqlrecipedb.cpp:474 backends/SQLite/literecipedb.cpp:750
 #, fuzzy
@@ -421,12 +421,12 @@ msgid "Restore Failed"
 msgstr "बहाली फेल"
 
 #: backends/recipedb.cpp:921
-msgid "Nutrient Import"
-msgstr "न्यूट्रिवट आयात करव"
-
-#: backends/recipedb.cpp:921
 msgid "Importing USDA nutrient data"
 msgstr "यूएसडीए न्यूट्रिवट डाटा आयात करत हे "
+
+#: backends/recipedb.cpp:921
+msgid "Nutrient Import"
+msgstr "न्यूट्रिवट आयात करव"
 
 #: convert_sqlite3.cpp:83 convert_sqlite3.cpp:91
 #, kde-format
@@ -764,6 +764,26 @@ msgctxt "@item:inlistbox"
 msgid "No matching recipes found"
 msgstr "कोई मिलत जुलत रेसिपि नइ मिले"
 
+#: dialogs/authorsdialog.cpp:45 dialogs/categorieseditordialog.cpp:44
+#: dialogs/ingredientgroupsdialog.cpp:40 dialogs/ingredientsdialog.cpp:64
+#: dialogs/prepmethodsdialog.cpp:44 dialogs/propertiesdialog.cpp:54
+#: dialogs/unitsdialog.cpp:54
+#, fuzzy
+#| msgid "Create ..."
+msgctxt "@action:button"
+msgid "Create..."
+msgstr "बनाव"
+
+#: dialogs/authorsdialog.cpp:50 dialogs/categorieseditordialog.cpp:49
+#: dialogs/ingredientgroupsdialog.cpp:45 dialogs/ingredientsdialog.cpp:69
+#: dialogs/prepmethodsdialog.cpp:49 dialogs/propertiesdialog.cpp:58
+#: dialogs/selectrecipedialog.cpp:108 dialogs/unitsdialog.cpp:59
+#, fuzzy
+#| msgid "Delete"
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "मेटाव"
+
 #: dialogs/borderdialog.cpp:35
 #, fuzzy
 #| msgid "Choose Property"
@@ -889,26 +909,6 @@ msgstr "आउटसेट"
 #: dialogs/borderdialog.cpp:229
 msgid "Border Preview"
 msgstr "किनारा प्रिव्यू"
-
-#: dialogs/categorieseditordialog.cpp:44 dialogs/ingredientgroupsdialog.cpp:40
-#: dialogs/ingredientsdialog.cpp:64 dialogs/prepmethodsdialog.cpp:44
-#: dialogs/propertiesdialog.cpp:54 dialogs/unitsdialog.cpp:54
-#: dialogs/authorsdialog.cpp:45
-#, fuzzy
-#| msgid "Create ..."
-msgctxt "@action:button"
-msgid "Create..."
-msgstr "बनाव"
-
-#: dialogs/categorieseditordialog.cpp:49 dialogs/ingredientgroupsdialog.cpp:45
-#: dialogs/ingredientsdialog.cpp:69 dialogs/prepmethodsdialog.cpp:49
-#: dialogs/propertiesdialog.cpp:58 dialogs/selectrecipedialog.cpp:108
-#: dialogs/unitsdialog.cpp:59 dialogs/authorsdialog.cpp:50
-#, fuzzy
-#| msgid "Delete"
-msgctxt "@action:button"
-msgid "Delete"
-msgstr "मेटाव"
 
 #: dialogs/conversiondialog.cpp:34
 #, fuzzy
@@ -1291,6 +1291,42 @@ msgstr "पोर्टः"
 msgctxt "@label:textbox Default port"
 msgid "Default"
 msgstr "डिफाल्ट"
+
+#: dialogs/dependanciesdialog.cpp:53
+msgctxt "@title:window"
+msgid "Element with Dependencies"
+msgstr ""
+
+#: dialogs/dependanciesdialog.cpp:65
+#, fuzzy
+#| msgid ""
+#| "<b>WARNING:</b> The following currently use the element you have chosen "
+#| "to be removed."
+msgctxt "@info"
+msgid ""
+"<warning>The following will have to be removed also, since currently they "
+"use the element you have chosen to be removed.</warning>"
+msgstr ""
+"<b>चेतावनी:</b> नीचे वाले अभी हाल के मं परयोग करे जा रहा तत्व आप मन मेटाय बर चुने हव ."
+
+#: dialogs/dependanciesdialog.cpp:68
+#, fuzzy
+#| msgid ""
+#| "<b>WARNING:</b> The following currently use the element you have chosen "
+#| "to be removed."
+msgctxt "@info"
+msgid ""
+"<warning>The following currently use the element you have chosen to be "
+"removed.</warning>"
+msgstr ""
+"<b>चेतावनी:</b> नीचे वाले अभी हाल के मं परयोग करे जा रहा तत्व आप मन मेटाय बर चुने हव ."
+
+#: dialogs/dependanciesdialog.cpp:104
+#, fuzzy
+#| msgid "Are you sure you wish to proceed?"
+msgctxt "@info"
+msgid "Are you sure you wish to proceed?"
+msgstr "का आप मन सही मं आगू बढ़ना चाहथो ?"
 
 #: dialogs/dietviewdialog.cpp:24
 #, fuzzy
@@ -1826,6 +1862,10 @@ msgstr "सहेजव अउ बन्द करव"
 msgid "&Cancel"
 msgstr "खारिज करव (&C)"
 
+#: dialogs/pagesetupdialog.cpp:141 dialogs/pagesetupdialog.cpp:219
+msgid "Save Layout?"
+msgstr "खाका सहेजव?"
+
 #: dialogs/pagesetupdialog.cpp:141
 msgid ""
 "The recipe view layout has been modified.\n"
@@ -1833,10 +1873,6 @@ msgid ""
 msgstr ""
 "रेसिपि दृस्य खाका सुधार दे गे हे.\n"
 " का आप मन एला सहेजना चाहथो ?"
-
-#: dialogs/pagesetupdialog.cpp:141 dialogs/pagesetupdialog.cpp:219
-msgid "Save Layout?"
-msgstr "खाका सहेजव?"
 
 #: dialogs/pagesetupdialog.cpp:195
 msgid "Krecipes style or template file"
@@ -2247,15 +2283,15 @@ msgstr ""
 "<b>%1:</b> कोनो न्यूट्रीसन जानकारी नइ मिलत हे.  <a href=\"ingredient#"
 "%2\">न्यूट्रीएंट जानकारी देव.</a>"
 
-#: dialogs/recipeinputdialog.cpp:1584
-msgid "-No unit-"
-msgstr "-कोई इकाई नइ-"
-
 #: dialogs/recipeinputdialog.cpp:1583
 #, kde-format
 msgctxt "@info"
 msgid "<b>%3:</b> Unit conversion missing for conversion from '%1' to '%2'"
 msgstr ""
+
+#: dialogs/recipeinputdialog.cpp:1584
+msgid "-No unit-"
+msgstr "-कोई इकाई नइ-"
 
 #: dialogs/recipeinputdialog.cpp:1598 dialogs/recipeinputdialog.cpp:1601
 #: dialogs/recipeinputdialog.cpp:1604 dialogs/recipeinputdialog.cpp:1607
@@ -2457,6 +2493,28 @@ msgstr "सून्य यील्ड के साथ रेसिपि ल 
 msgctxt "@info"
 msgid "Invalid input"
 msgstr "अवैध इनपुट"
+
+#: dialogs/selectauthorsdialog.cpp:36
+#, fuzzy
+#| msgid "Authors"
+msgctxt "@title:window"
+msgid "Authors"
+msgstr "लेखक"
+
+#: dialogs/selectauthorsdialog.cpp:74 widgets/kreauthorlistwidget.cpp:28
+#, fuzzy
+#| msgid "Author"
+msgctxt "@title:column"
+msgid "Author"
+msgstr "लेखक"
+
+#: dialogs/selectauthorsdialog.cpp:143
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "Author name cannot be longer than 1 character."
+msgid_plural "Author name cannot be longer than %1 characters."
+msgstr[0] "लेखक नाम %1 अक्छर से अधिक नइ हो सके."
+msgstr[1] "लेखक नाम %1 अक्छर से अधिक नइ हो सके."
 
 #: dialogs/selectcategoriesdialog.cpp:32
 #, fuzzy
@@ -2840,17 +2898,17 @@ msgstr "किरपा करके, सिरिफ एक वर्ग चु
 
 #: dialogs/similarcategoriesdialog.cpp:351
 #, fuzzy
-#| msgid "No recipes selected."
-msgctxt "@info"
-msgid "No recipes selected."
-msgstr "कोई रेसिपि नइ चुने गे"
-
-#: dialogs/similarcategoriesdialog.cpp:351
-#, fuzzy
 #| msgid "Edit Recipe"
 msgctxt "@title"
 msgid "Edit Recipe"
 msgstr "रेसिपि संपादित करव"
+
+#: dialogs/similarcategoriesdialog.cpp:351
+#, fuzzy
+#| msgid "No recipes selected."
+msgctxt "@info"
+msgid "No recipes selected."
+msgstr "कोई रेसिपि नइ चुने गे"
 
 #: dialogs/similarcategoriesdialog.cpp:382
 #, fuzzy
@@ -2886,64 +2944,6 @@ msgstr "आयतन बदलाव"
 msgctxt "@title:window"
 msgid "Finding Unit Ratios"
 msgstr "इकाई अनुपाद खोजत हे"
-
-#: dialogs/dependanciesdialog.cpp:53
-msgctxt "@title:window"
-msgid "Element with Dependencies"
-msgstr ""
-
-#: dialogs/dependanciesdialog.cpp:65
-#, fuzzy
-#| msgid ""
-#| "<b>WARNING:</b> The following currently use the element you have chosen "
-#| "to be removed."
-msgctxt "@info"
-msgid ""
-"<warning>The following will have to be removed also, since currently they "
-"use the element you have chosen to be removed.</warning>"
-msgstr ""
-"<b>चेतावनी:</b> नीचे वाले अभी हाल के मं परयोग करे जा रहा तत्व आप मन मेटाय बर चुने हव ."
-
-#: dialogs/dependanciesdialog.cpp:68
-#, fuzzy
-#| msgid ""
-#| "<b>WARNING:</b> The following currently use the element you have chosen "
-#| "to be removed."
-msgctxt "@info"
-msgid ""
-"<warning>The following currently use the element you have chosen to be "
-"removed.</warning>"
-msgstr ""
-"<b>चेतावनी:</b> नीचे वाले अभी हाल के मं परयोग करे जा रहा तत्व आप मन मेटाय बर चुने हव ."
-
-#: dialogs/dependanciesdialog.cpp:104
-#, fuzzy
-#| msgid "Are you sure you wish to proceed?"
-msgctxt "@info"
-msgid "Are you sure you wish to proceed?"
-msgstr "का आप मन सही मं आगू बढ़ना चाहथो ?"
-
-#: dialogs/selectauthorsdialog.cpp:36
-#, fuzzy
-#| msgid "Authors"
-msgctxt "@title:window"
-msgid "Authors"
-msgstr "लेखक"
-
-#: dialogs/selectauthorsdialog.cpp:74 widgets/kreauthorlistwidget.cpp:28
-#, fuzzy
-#| msgid "Author"
-msgctxt "@title:column"
-msgid "Author"
-msgstr "लेखक"
-
-#: dialogs/selectauthorsdialog.cpp:143
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "Author name cannot be longer than 1 character."
-msgid_plural "Author name cannot be longer than %1 characters."
-msgstr[0] "लेखक नाम %1 अक्छर से अधिक नइ हो सके."
-msgstr[1] "लेखक नाम %1 अक्छर से अधिक नइ हो सके."
 
 #: exporters/htmlexporter.cpp:134
 msgid "Krecipes Recipes"
@@ -3378,6 +3378,150 @@ msgstr ""
 msgid "Unsaved Changes"
 msgstr "सहेजिस नइ गिस बदलाव"
 
+#: krecipesview.cpp:101 krecipesview.cpp:373 krecipesview.cpp:440
+msgid "Find/Edit Recipes"
+msgstr "रेसिपि खोजव/संपादित करव"
+
+#: krecipesview.cpp:126
+msgid "Data..."
+msgstr "डाटा..."
+
+#: krecipesview.cpp:332
+msgid ""
+"\n"
+"You are using SQLite; this error is often caused by using an SQLite 2 "
+"database with Krecipes supporting SQLite 3, if this is the case you could "
+"run the SQLite converter.\n"
+"What do you want to do?"
+msgstr ""
+
+#: krecipesview.cpp:337
+msgid "Run the setup assistant"
+msgstr ""
+
+#: krecipesview.cpp:338
+msgid "Run the SQLite converter"
+msgstr ""
+
+#: krecipesview.cpp:347 krecipesview.cpp:362
+#, fuzzy
+#| msgid "Exiting"
+msgctxt "Exiting Krecipes"
+msgid "Exiting"
+msgstr "बाहिर होवत हे"
+
+#: krecipesview.cpp:354
+msgid ""
+"\n"
+"Would you like to run the setup wizard again? Otherwise, the application "
+"will be closed."
+msgstr ""
+
+#: krecipesview.cpp:377 krecipesview.cpp:487 pref.cpp:419
+#: widgets/propertylistview.cpp:131
+msgid "Units"
+msgstr "इकाई"
+
+#: krecipesview.cpp:378 krecipesview.cpp:495
+msgid "Preparation Methods"
+msgstr "बनाए के विधियाँ"
+
+#: krecipesview.cpp:381 krecipesview.cpp:454
+msgid "Diet Helper"
+msgstr "आहार बर मदद"
+
+#: krecipesview.cpp:382 krecipesview.cpp:462
+msgid "Ingredient Matcher"
+msgstr "संघटक मिलिस करइया"
+
+#: krecipesview.cpp:522
+msgid "View Recipe"
+msgstr "रेसिपि देखव"
+
+#: krecipesview.cpp:768
+msgid ""
+"A recipe contains unsaved changes.\n"
+"Do you want to save changes made to this recipe before editing another "
+"recipe?"
+msgstr ""
+
+#: krecipesview.cpp:770 krecipesview.cpp:857
+msgid "Unsaved changes"
+msgstr "सहेजिस नइ गिस बदलाव"
+
+#: krecipesview.cpp:788
+#, kde-format
+msgid "Are you sure you want to permanently remove the recipe, %1?"
+msgstr "का सही मं आप मन रेसिपि %1 ल हमेसा बर मिटाना चाहथो ?"
+
+#: krecipesview.cpp:789 krecipesview.cpp:837
+msgid "Confirm remove"
+msgstr "मेटाव के पुस्टि करव"
+
+#: krecipesview.cpp:815 widgets/recipelistview.cpp:149
+#, fuzzy
+#| msgid "Created:"
+msgctxt "Recipe created"
+msgid "Created:"
+msgstr "सृजितः"
+
+#: krecipesview.cpp:816 widgets/recipelistview.cpp:150
+#, fuzzy
+#| msgid "Modified:"
+msgctxt "Recipe modified"
+msgid "Modified:"
+msgstr "परिवर्धितः"
+
+#: krecipesview.cpp:817 widgets/recipelistview.cpp:151
+#, fuzzy
+#| msgid "Last Accessed:"
+msgctxt "Recipe last accessed"
+msgid "Last Accessed:"
+msgstr "पिछला मर्तबा एक्सेस्डः"
+
+#: krecipesview.cpp:836
+#, fuzzy
+#| msgid "Are you sure you want to permanently remove the recipe, %1?"
+msgid "Are you sure you want to permanently remove the selected recipes?"
+msgstr "का सही मं आप मन रेसिपि %1 ल हमेसा बर मिटाना चाहथो ?"
+
+#: krecipesview.cpp:855
+msgid ""
+"A recipe contains unsaved changes.\n"
+"Do you want to save changes made to this recipe before creating a new recipe?"
+msgstr ""
+
+#: krecipesview.cpp:1001
+msgid "Unable to setup database"
+msgstr "डाटाबेस सेटअप करे मं अक्छम"
+
+#: krecipesview.cpp:1013
+msgid "Code error. No DB support has been included. Exiting"
+msgstr "कोड गलती. कोनो डीबी समर्थन जोड़े नइ गे हे. बाहिर होवत हे"
+
+#: krecipesview.cpp:1175 krecipesview.cpp:1201
+msgid "Code error. No DB support was built in. Exiting"
+msgstr "कोड गलती. कोनो डीबी समर्थन बनाय नइ गे हे. बाहिर होवत हे"
+
+#: krecipesview.cpp:1184
+msgid "Unable to open database"
+msgstr "डाटाबेस ल खोले मं अक्छम"
+
+#: krecipesview.cpp:1206
+msgid "DB started correctly\n"
+msgstr "डीबी सही किसम से चालू करिस\n"
+
+#: krecipesview.cpp:1214
+#, kde-format
+msgid "The configured database type (%1) is unsupported."
+msgstr "कान्फिगर डाटाबेस किसिम (%1) असमर्थित हे."
+
+#: krecipesview.cpp:1214
+msgid ""
+"Unsupported database type. Database must be either MySQL, SQLite, or "
+"PostgreSQL."
+msgstr ""
+
 #: krepagelayout.cpp:114
 msgid "ISO A3"
 msgstr "आईएसओ ए3"
@@ -3502,20 +3646,20 @@ msgid "Convert the current SQLite 2.x database to SQLite 3 and exit"
 msgstr ""
 
 #: main.cpp:32
-msgid "Krecipes"
-msgstr "के-रेसिपि"
-
-#: main.cpp:32
-msgid "The KDE Cookbook"
-msgstr "केडीई कुक-बुक"
-
-#: main.cpp:32
 msgid ""
 "(C) 2003 Unai Garro\n"
 "(C) 2004-2006 Jason Kivlighn"
 msgstr ""
 "(C) 2003 उनाई गारो\n"
 "(C) 2004-2006 जेसन किवलिग्न"
+
+#: main.cpp:32
+msgid "Krecipes"
+msgstr "के-रेसिपि"
+
+#: main.cpp:32
+msgid "The KDE Cookbook"
+msgstr "केडीई कुक-बुक"
 
 #: main.cpp:32
 msgid ""
@@ -3545,12 +3689,12 @@ msgid "Testing, bug reports, suggestions"
 msgstr "परीक्छन, बग रपटें अउ सुझाव"
 
 #: main.cpp:38
-msgid "Robert Wadley"
-msgstr "राबर्ट वाडले"
-
-#: main.cpp:38
 msgid "Icons and artwork"
 msgstr "चिनहा अउ कलाकृति"
+
+#: main.cpp:38
+msgid "Robert Wadley"
+msgstr "राबर्ट वाडले"
 
 #: main.cpp:39
 msgid "Daniel Sauvé"
@@ -3585,27 +3729,27 @@ msgid "Porting to KDE4, developer"
 msgstr "केडीई ४ मं पोर्ट"
 
 #: main.cpp:45
-msgid "Patrick Spendrin"
-msgstr ""
-
-#: main.cpp:45
 msgid "Patches to make Krecipes work under Windows"
 msgstr ""
 
-#: main.cpp:46
-msgid "Mike Ferguson"
+#: main.cpp:45
+msgid "Patrick Spendrin"
 msgstr ""
 
 #: main.cpp:46
 msgid "Help with bugs, patches"
 msgstr ""
 
-#: main.cpp:47
-msgid "Warren Severin"
+#: main.cpp:46
+msgid "Mike Ferguson"
 msgstr ""
 
 #: main.cpp:47
 msgid "Code to export recipes to *.mx2 files"
+msgstr ""
+
+#: main.cpp:47
+msgid "Warren Severin"
 msgstr ""
 
 #: main.cpp:49
@@ -3621,12 +3765,12 @@ msgid "José Millán Soto"
 msgstr ""
 
 #: main.cpp:56
-msgid "INSERT YOUR NAME HERE"
-msgstr "अपन नाम इहां भरव"
-
-#: main.cpp:56
 msgid "INSERT YOUR EMAIL ADDRESS"
 msgstr "अपन ईमेल पता भरव"
+
+#: main.cpp:56
+msgid "INSERT YOUR NAME HERE"
+msgstr "अपन नाम इहां भरव"
 
 #: mmdata.h:25
 msgid "bunch"
@@ -4030,11 +4174,6 @@ msgid ""
 "Note: Krecipes must be restarted for most server preferences to take effect."
 msgstr ""
 
-#: pref.cpp:419 widgets/propertylistview.cpp:131 krecipesview.cpp:377
-#: krecipesview.cpp:487
-msgid "Units"
-msgstr "इकाई"
-
 #: pref.cpp:420
 msgid "Use abbreviations"
 msgstr "संक्छिप्त उपयोग करव"
@@ -4114,6 +4253,82 @@ msgstr "तत्वों के संख्या जऊन ल एक सा
 msgctxt "Unlimited elements"
 msgid "Unlimited"
 msgstr "असीमित"
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "raviratlami@aol.in"
+
+#. i18n: file: krecipesui.rc:4
+#. i18n: ectx: Menu (file)
+#: rc.cpp:5
+msgid "&File"
+msgstr "फाइल (&F)"
+
+#. i18n: file: krecipesui.rc:12
+#. i18n: ectx: Menu (edit)
+#: rc.cpp:8
+msgid "&Edit"
+msgstr "संपादन (&E)"
+
+#. i18n: file: krecipesui.rc:22
+#. i18n: ectx: Menu (tools)
+#: rc.cpp:11
+msgid "&Tools"
+msgstr "औजार (&T)"
+
+#. i18n: file: widgets/ratingdisplaywidget.ui:115
+#. i18n: ectx: property (text), widget (K3ListView, criteriaListView)
+#: rc.cpp:17
+msgid "Criteria"
+msgstr "मापदन्ड"
+
+#. i18n: file: widgets/ratingdisplaywidget.ui:126
+#. i18n: ectx: property (text), widget (K3ListView, criteriaListView)
+#: rc.cpp:20
+msgid "Stars"
+msgstr "तारे"
+
+#. i18n: file: widgets/ratingdisplaywidget.ui:146
+#. i18n: ectx: property (text), widget (QLabel, comment)
+#: rc.cpp:23
+#, fuzzy
+msgid "Comments"
+msgstr "टिप्पनियाँ:"
+
+#. i18n: file: widgets/ratingdisplaywidget.ui:177
+#. i18n: ectx: property (text), widget (KPushButton, buttonRemove)
+#: rc.cpp:26
+msgid "Remove"
+msgstr "हटाव"
+
+#. i18n: file: widgets/ratingdisplaywidget.ui:187
+#. i18n: ectx: property (text), widget (KPushButton, buttonEdit)
+#: rc.cpp:29
+#, fuzzy
+msgid "Edit..."
+msgstr "संपादन (&E)"
+
+#. i18n: file: widgets/kregenericlistwidget.ui:43
+#. i18n: ectx: property (toolTip), widget (KPushButton, m_previousButton)
+#: rc.cpp:32
+#, fuzzy
+#| msgid "Previous"
+msgid "Previous Page"
+msgstr "पिछला"
+
+#. i18n: file: widgets/kregenericlistwidget.ui:59
+#. i18n: ectx: property (toolTip), widget (KPushButton, m_nextButton)
+#: rc.cpp:35
+#, fuzzy
+#| msgid "Last &Week"
+msgid "Next Page"
+msgstr "पिछले हफ्ता (&W)"
 
 #: setupassistant.cpp:45
 msgid "Welcome to Krecipes"
@@ -4405,6 +4620,16 @@ msgctxt "@option do not specify a date"
 msgid "No Date"
 msgstr "कोई तारीक नइ"
 
+#: widgets/kregenericlistwidget.cpp:88
+msgctxt "@label:textbox"
+msgid "Type here the text to search"
+msgstr ""
+
+#: widgets/kregenericlistwidget.cpp:92
+msgctxt "@label:textbox"
+msgid "Type here the text to search in the current page"
+msgstr ""
+
 #: widgets/kremenu.cpp:130
 #, fuzzy
 #| msgid "Up..."
@@ -4455,27 +4680,6 @@ msgstr "अ-वर्गीकृत"
 #: widgets/recipelistview.cpp:101
 msgid "Recipe"
 msgstr "रेसिपि"
-
-#: widgets/recipelistview.cpp:149 krecipesview.cpp:815
-#, fuzzy
-#| msgid "Created:"
-msgctxt "Recipe created"
-msgid "Created:"
-msgstr "सृजितः"
-
-#: widgets/recipelistview.cpp:150 krecipesview.cpp:816
-#, fuzzy
-#| msgid "Modified:"
-msgctxt "Recipe modified"
-msgid "Modified:"
-msgstr "परिवर्धितः"
-
-#: widgets/recipelistview.cpp:151 krecipesview.cpp:817
-#, fuzzy
-#| msgid "Last Accessed:"
-msgctxt "Recipe last accessed"
-msgid "Last Accessed:"
-msgstr "पिछला मर्तबा एक्सेस्डः"
 
 #: widgets/recipelistview.cpp:236
 msgid "Loading recipes"
@@ -4540,210 +4744,6 @@ msgstr "अवाज निर्धारक"
 #: widgets/weightinput.cpp:23
 msgid "-No Preparation-"
 msgstr "-कोई तैयारी नइ-"
-
-#: widgets/kregenericlistwidget.cpp:88
-msgctxt "@label:textbox"
-msgid "Type here the text to search"
-msgstr ""
-
-#: widgets/kregenericlistwidget.cpp:92
-msgctxt "@label:textbox"
-msgid "Type here the text to search in the current page"
-msgstr ""
-
-#: krecipesview.cpp:101 krecipesview.cpp:373 krecipesview.cpp:440
-msgid "Find/Edit Recipes"
-msgstr "रेसिपि खोजव/संपादित करव"
-
-#: krecipesview.cpp:126
-msgid "Data..."
-msgstr "डाटा..."
-
-#: krecipesview.cpp:332
-msgid ""
-"\n"
-"You are using SQLite; this error is often caused by using an SQLite 2 "
-"database with Krecipes supporting SQLite 3, if this is the case you could "
-"run the SQLite converter.\n"
-"What do you want to do?"
-msgstr ""
-
-#: krecipesview.cpp:337
-msgid "Run the setup assistant"
-msgstr ""
-
-#: krecipesview.cpp:338
-msgid "Run the SQLite converter"
-msgstr ""
-
-#: krecipesview.cpp:347 krecipesview.cpp:362
-#, fuzzy
-#| msgid "Exiting"
-msgctxt "Exiting Krecipes"
-msgid "Exiting"
-msgstr "बाहिर होवत हे"
-
-#: krecipesview.cpp:354
-msgid ""
-"\n"
-"Would you like to run the setup wizard again? Otherwise, the application "
-"will be closed."
-msgstr ""
-
-#: krecipesview.cpp:378 krecipesview.cpp:495
-msgid "Preparation Methods"
-msgstr "बनाए के विधियाँ"
-
-#: krecipesview.cpp:381 krecipesview.cpp:454
-msgid "Diet Helper"
-msgstr "आहार बर मदद"
-
-#: krecipesview.cpp:382 krecipesview.cpp:462
-msgid "Ingredient Matcher"
-msgstr "संघटक मिलिस करइया"
-
-#: krecipesview.cpp:522
-msgid "View Recipe"
-msgstr "रेसिपि देखव"
-
-#: krecipesview.cpp:768
-msgid ""
-"A recipe contains unsaved changes.\n"
-"Do you want to save changes made to this recipe before editing another "
-"recipe?"
-msgstr ""
-
-#: krecipesview.cpp:770 krecipesview.cpp:857
-msgid "Unsaved changes"
-msgstr "सहेजिस नइ गिस बदलाव"
-
-#: krecipesview.cpp:788
-#, kde-format
-msgid "Are you sure you want to permanently remove the recipe, %1?"
-msgstr "का सही मं आप मन रेसिपि %1 ल हमेसा बर मिटाना चाहथो ?"
-
-#: krecipesview.cpp:789 krecipesview.cpp:837
-msgid "Confirm remove"
-msgstr "मेटाव के पुस्टि करव"
-
-#: krecipesview.cpp:836
-#, fuzzy
-#| msgid "Are you sure you want to permanently remove the recipe, %1?"
-msgid "Are you sure you want to permanently remove the selected recipes?"
-msgstr "का सही मं आप मन रेसिपि %1 ल हमेसा बर मिटाना चाहथो ?"
-
-#: krecipesview.cpp:855
-msgid ""
-"A recipe contains unsaved changes.\n"
-"Do you want to save changes made to this recipe before creating a new recipe?"
-msgstr ""
-
-#: krecipesview.cpp:1001
-msgid "Unable to setup database"
-msgstr "डाटाबेस सेटअप करे मं अक्छम"
-
-#: krecipesview.cpp:1013
-msgid "Code error. No DB support has been included. Exiting"
-msgstr "कोड गलती. कोनो डीबी समर्थन जोड़े नइ गे हे. बाहिर होवत हे"
-
-#: krecipesview.cpp:1175 krecipesview.cpp:1201
-msgid "Code error. No DB support was built in. Exiting"
-msgstr "कोड गलती. कोनो डीबी समर्थन बनाय नइ गे हे. बाहिर होवत हे"
-
-#: krecipesview.cpp:1184
-msgid "Unable to open database"
-msgstr "डाटाबेस ल खोले मं अक्छम"
-
-#: krecipesview.cpp:1206
-msgid "DB started correctly\n"
-msgstr "डीबी सही किसम से चालू करिस\n"
-
-#: krecipesview.cpp:1214
-#, kde-format
-msgid "The configured database type (%1) is unsupported."
-msgstr "कान्फिगर डाटाबेस किसिम (%1) असमर्थित हे."
-
-#: krecipesview.cpp:1214
-msgid ""
-"Unsupported database type. Database must be either MySQL, SQLite, or "
-"PostgreSQL."
-msgstr ""
-
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "raviratlami@aol.in"
-
-#. i18n: file: krecipesui.rc:4
-#. i18n: ectx: Menu (file)
-#: rc.cpp:5
-msgid "&File"
-msgstr "फाइल (&F)"
-
-#. i18n: file: krecipesui.rc:12
-#. i18n: ectx: Menu (edit)
-#: rc.cpp:8
-msgid "&Edit"
-msgstr "संपादन (&E)"
-
-#. i18n: file: krecipesui.rc:22
-#. i18n: ectx: Menu (tools)
-#: rc.cpp:11
-msgid "&Tools"
-msgstr "औजार (&T)"
-
-#. i18n: file: widgets/ratingdisplaywidget.ui:115
-#. i18n: ectx: property (text), widget (K3ListView, criteriaListView)
-#: rc.cpp:17
-msgid "Criteria"
-msgstr "मापदन्ड"
-
-#. i18n: file: widgets/ratingdisplaywidget.ui:126
-#. i18n: ectx: property (text), widget (K3ListView, criteriaListView)
-#: rc.cpp:20
-msgid "Stars"
-msgstr "तारे"
-
-#. i18n: file: widgets/ratingdisplaywidget.ui:146
-#. i18n: ectx: property (text), widget (QLabel, comment)
-#: rc.cpp:23
-#, fuzzy
-msgid "Comments"
-msgstr "टिप्पनियाँ:"
-
-#. i18n: file: widgets/ratingdisplaywidget.ui:177
-#. i18n: ectx: property (text), widget (KPushButton, buttonRemove)
-#: rc.cpp:26
-msgid "Remove"
-msgstr "हटाव"
-
-#. i18n: file: widgets/ratingdisplaywidget.ui:187
-#. i18n: ectx: property (text), widget (KPushButton, buttonEdit)
-#: rc.cpp:29
-#, fuzzy
-msgid "Edit..."
-msgstr "संपादन (&E)"
-
-#. i18n: file: widgets/kregenericlistwidget.ui:43
-#. i18n: ectx: property (toolTip), widget (KPushButton, m_previousButton)
-#: rc.cpp:32
-#, fuzzy
-#| msgid "Previous"
-msgid "Previous Page"
-msgstr "पिछला"
-
-#. i18n: file: widgets/kregenericlistwidget.ui:59
-#. i18n: ectx: property (toolTip), widget (KPushButton, m_nextButton)
-#: rc.cpp:35
-#, fuzzy
-#| msgid "Last &Week"
-msgid "Next Page"
-msgstr "पिछले हफ्ता (&W)"
 
 #, fuzzy
 #~| msgid "Recipes"

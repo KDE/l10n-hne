@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kompare\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-15 04:39+0200\n"
+"POT-Creation-Date: 2012-08-18 04:24+0200\n"
 "PO-Revision-Date: 2009-03-01 11:17+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -19,124 +19,225 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 0.3\n"
 
-#: libdiff2/komparemodellist.cpp:66
-msgid "&Apply Difference"
-msgstr "भिन्नता लगाव (&A)"
+#: kompare_shell.cpp:77
+msgid "Could not load our KompareViewPart."
+msgstr "अपन काम्पेयर-व्यू-पार्ट लोड नइ कर सकिस."
 
-#: libdiff2/komparemodellist.cpp:70
-msgid "Un&apply Difference"
-msgstr "भिन्नता लागू नइ करव (&a)"
+#: kompare_shell.cpp:81
+msgid "Navigation"
+msgstr "नेविगेसन"
 
-#: libdiff2/komparemodellist.cpp:74
-msgid "App&ly All"
-msgstr "सब्बो लगाव (&l)"
+#: kompare_shell.cpp:98
+msgid "Could not load our KompareNavigationPart."
+msgstr "अपन काम्पेयर-नेविगेसन-पार्ट लोड नइ कर सकिस."
 
-#: libdiff2/komparemodellist.cpp:78
-msgid "&Unapply All"
-msgstr "सब्बो लागू नइ करव (&U)"
+#: kompare_shell.cpp:199
+msgid "&Open Diff..."
+msgstr "डिफ खोलव... (&O)"
 
-#: libdiff2/komparemodellist.cpp:82
-msgid "P&revious File"
-msgstr "पिछला फाइल (&r)"
+#: kompare_shell.cpp:202
+msgid "&Compare Files..."
+msgstr "फाइल मन के तुलना करव... (&C)"
 
-#: libdiff2/komparemodellist.cpp:86
-msgid "N&ext File"
-msgstr "अगला फाइल (&e)"
+#: kompare_shell.cpp:205
+msgid "&Blend URL with Diff..."
+msgstr "डिफ के साथ यूआरएल ब्लैंड करव... (&B)"
 
-#: libdiff2/komparemodellist.cpp:90
-msgid "&Previous Difference"
-msgstr "पिछला भिन्नता (&P)"
+#: kompare_shell.cpp:211
+msgid "Show T&ext View"
+msgstr "पाठ दृस्य देखाव (&e)"
 
-#: libdiff2/komparemodellist.cpp:94
-msgid "&Next Difference"
-msgstr "अगला भिन्नता (&N)"
+#: kompare_shell.cpp:224
+msgid " 0 of 0 differences "
+msgstr " 0 मं से 0 भिन्नताव"
 
-#: libdiff2/komparemodellist.cpp:253 libdiff2/komparemodellist.cpp:278
+#: kompare_shell.cpp:225
+msgid " 0 of 0 files "
+msgstr " 0 मं से 0 फाइल मन ल"
+
+#: kompare_shell.cpp:240
 #, kde-format
-msgid ""
-"<qt>No models or no differences, this file: <b>%1</b>, is not a valid diff "
-"file.</qt>"
-msgstr ""
-"<qt>कोई माडल नइ या कोनो भिन्नता नइ, ए फाइल:<b>%1</b>, एक वैध डिफ फाइल नइ हे.</"
-"qt>"
+msgid " %2 of %1 file "
+msgid_plural " %2 of %1 files "
+msgstr[0] " %2 मं से %1 फाइल"
+msgstr[1] " %2 मं से %1 फाइल"
 
-#: libdiff2/komparemodellist.cpp:262
+#: kompare_shell.cpp:242
 #, kde-format
-msgid ""
-"<qt>There were problems applying the diff <b>%1</b> to the file <b>%2</b>.</"
-"qt>"
-msgstr "<qt>डिफ <b>%1</b> ल फाइल <b>%2</b> मं लागू करे मं समस्या हे.</qt>"
+msgid " %1 file "
+msgid_plural " %1 files "
+msgstr[0] "%1 फाइल"
+msgstr[1] " %1 फाइल "
 
-#: libdiff2/komparemodellist.cpp:289
+#: kompare_shell.cpp:245
 #, kde-format
-msgid ""
-"<qt>There were problems applying the diff <b>%1</b> to the folder <b>%2</b>."
-"</qt>"
-msgstr "<qt>डिफ <b>%1</b> ल फोल्डर <b>%2</b> मं लागू करे मं कुछ समस्या हे.</qt>"
+msgid " %2 of %1 difference, %3 applied "
+msgid_plural " %2 of %1 differences, %3 applied "
+msgstr[0] ""
+msgstr[1] ""
 
-#: libdiff2/komparemodellist.cpp:321 libdiff2/komparemodellist.cpp:652
-msgid "Could not open a temporary file."
-msgstr "अस्थायी फाइल खोल नइ सकहू."
-
-#: libdiff2/komparemodellist.cpp:369 libdiff2/komparemodellist.cpp:376
+#: kompare_shell.cpp:248
 #, kde-format
-msgid "<qt>Could not write to the temporary file <b>%1</b>, deleting it.</qt>"
-msgstr "<qt>अस्थाई फाइल <b>%1</b> मं लिख नइ सकिस, एला मिटात हे.</qt>"
+msgid " %1 difference "
+msgid_plural " %1 differences "
+msgstr[0] "%1 भिन्नता"
+msgstr[1] "%1 भिन्नता"
 
-#: libdiff2/komparemodellist.cpp:404
-#, kde-format
+#: kompare_shell.cpp:330
+msgid "Blend File/Folder with diff Output"
+msgstr "डिफ आउटपुट के साथ फाइल/फोल्डर ब्लैंड करव"
+
+#: kompare_shell.cpp:331
+msgid "File/Folder"
+msgstr "फाइल/फोल्डर"
+
+#: kompare_shell.cpp:332
+msgid "Diff Output"
+msgstr "डिफ आउटपुट"
+
+#: kompare_shell.cpp:334
+msgid "Blend"
+msgstr "ब्लेंड"
+
+#: kompare_shell.cpp:334
+msgid "Blend this file or folder with the diff output"
+msgstr "ए फाइल या फोल्डर ल डिफ आउटपुट के साथ ब्लैंड करव"
+
+#: kompare_shell.cpp:334
 msgid ""
-"<qt>Could not create destination directory <b>%1</b>.\n"
-"The file has not been saved.</qt>"
-msgstr ""
-
-#: libdiff2/komparemodellist.cpp:421
-#, kde-format
-msgid ""
-"<qt>Could not upload the temporary file to the destination location <b>%1</"
-"b>. The temporary file is still available under: <b>%2</b>. You can manually "
-"copy it to the right place.</qt>"
-msgstr ""
-
-#: libdiff2/komparemodellist.cpp:486 libdiff2/komparemodellist.cpp:599
-#: libdiff2/komparemodellist.cpp:619
-msgid "Could not parse diff output."
-msgstr "डिफ आउटपुट पार्से नइ कर सकिस."
-
-#: libdiff2/komparemodellist.cpp:502
-msgid "The files are identical."
-msgstr "फाइल मन ल एक जैसी हे."
-
-#: libdiff2/komparemodellist.cpp:684
-msgid "Could not write to the temporary file."
-msgstr "अस्थायी फाइल मं लिख नइ सकिस."
-
-#: libdiff2/komparemodellist.cpp:952
-msgid ""
-"The diff is malformed. Some lines could not be parsed and will not be "
-"displayed in the diff view."
+"If you have entered a file or folder name and a file that contains diff "
+"output in the fields in this dialog then this button will be enabled and "
+"pressing it will open kompare's main view where the output of the entered "
+"file or files from the folder are mixed with the diff output so you can then "
+"apply the difference(s) to a file or to the files. "
 msgstr ""
 
-#: komparepart/kompareprefdlg.cpp:35
-msgid "Preferences"
-msgstr "प्राथमिकता"
+#: kompare_shell.cpp:359 main.cpp:201
+msgid "Compare Files or Folders"
+msgstr "फाइल मन या फोल्डर मं तुलना करव"
 
-#: komparepart/kompareprefdlg.cpp:45
-msgid "View"
-msgstr "दृस्य"
+#: kompare_shell.cpp:360 main.cpp:202
+msgid "Source"
+msgstr "स्रोत"
 
-#: komparepart/kompareprefdlg.cpp:47
-msgid "View Settings"
-msgstr "दृस्य सेटिंग"
+#: kompare_shell.cpp:361 main.cpp:203
+msgid "Destination"
+msgstr "गंतव्य"
 
-#: komparepart/kompareprefdlg.cpp:51 libdialogpages/diffpage.cpp:218
-#: kompareurldialog.cpp:52
-msgid "Diff"
-msgstr "डिफ"
+#: kompare_shell.cpp:363 main.cpp:205
+msgid "Compare"
+msgstr "तुलना करव"
 
-#: komparepart/kompareprefdlg.cpp:53
-msgid "Diff Settings"
-msgstr "डिफ सेटिंग"
+#: kompare_shell.cpp:363
+msgid "Compare these files or folders"
+msgstr "ए फाइल मन ल या फोल्डर के तुलना करव"
+
+#: kompare_shell.cpp:363 main.cpp:205
+msgid ""
+"If you have entered 2 filenames or 2 folders in the fields in this dialog "
+"then this button will be enabled and pressing it will start a comparison of "
+"the entered files or folders. "
+msgstr ""
+
+#: kompare_shell.cpp:399
+msgid "Text View"
+msgstr "पाठ दृस्य"
+
+#: komparenavtreepart/komparenavtreepart.cpp:63
+msgid "Source Folder"
+msgstr "स्रोत फोल्डर"
+
+#: komparenavtreepart/komparenavtreepart.cpp:69
+msgid "Destination Folder"
+msgstr "गंतव्य फोल्डर"
+
+#: komparenavtreepart/komparenavtreepart.cpp:75
+msgid "Destination File"
+msgstr "गंतव्य फाइल"
+
+#: komparenavtreepart/komparenavtreepart.cpp:75
+msgid "Source File"
+msgstr "स्रोत फाइल"
+
+#: komparenavtreepart/komparenavtreepart.cpp:82
+msgid "Destination Line"
+msgstr "गंतव्य पंक्ति"
+
+#: komparenavtreepart/komparenavtreepart.cpp:82
+msgid "Difference"
+msgstr "भिन्नता"
+
+#: komparenavtreepart/komparenavtreepart.cpp:82
+msgid "Source Line"
+msgstr "स्रोत पंक्ति"
+
+#: komparenavtreepart/komparenavtreepart.cpp:456
+#, kde-format
+msgid "Applied: Changes made to %1 line undone"
+msgid_plural "Applied: Changes made to  %1 lines undone"
+msgstr[0] ""
+msgstr[1] ""
+
+#: komparenavtreepart/komparenavtreepart.cpp:459
+#, kde-format
+msgid "Changed %1 line"
+msgid_plural "Changed %1 lines"
+msgstr[0] "बदला %1 पंक्ति"
+msgstr[1] "बदलिस %1 पंक्ति"
+
+#: komparenavtreepart/komparenavtreepart.cpp:464
+#, kde-format
+msgid "Applied: Insertion of %1 line undone"
+msgid_plural "Applied: Insertion of %1 lines undone"
+msgstr[0] ""
+msgstr[1] ""
+
+#: komparenavtreepart/komparenavtreepart.cpp:467
+#, kde-format
+msgid "Inserted %1 line"
+msgid_plural "Inserted %1 lines"
+msgstr[0] "भरिस %1 लाइन"
+msgstr[1] "भरिस %1 लाइन"
+
+#: komparenavtreepart/komparenavtreepart.cpp:472
+#, kde-format
+msgid "Applied: Deletion of %1 line undone"
+msgid_plural "Applied: Deletion of %1 lines undone"
+msgstr[0] ""
+msgstr[1] ""
+
+#: komparenavtreepart/komparenavtreepart.cpp:475
+#, fuzzy, kde-format
+msgid "Deleted %1 line"
+msgid_plural "Deleted %1 lines"
+msgstr[0] "मेटाइस %1 पंक्ति"
+msgstr[1] ""
+
+#: komparenavtreepart/komparenavtreepart.cpp:629
+#: komparepart/kompare_part.cpp:851
+msgid "Unknown"
+msgstr "अग्यात"
+
+#: komparenavtreepart/komparenavtreepart.cpp:769
+msgid "KompareNavTreePart"
+msgstr "काम्पेयर-नेव-ट्री-पार्ट"
+
+#: komparenavtreepart/komparenavtreepart.cpp:770
+#: komparenavtreepart/komparenavtreepart.cpp:771
+#: komparepart/kompare_part.cpp:631 komparepart/kompare_part.cpp:632
+#: komparepart/kompare_part.cpp:633 main.cpp:62 main.cpp:63
+msgid "Author"
+msgstr "लेखक"
+
+#: komparenavtreepart/komparenavtreepart.cpp:770
+#: komparepart/kompare_part.cpp:631 main.cpp:62
+msgid "John Firebaugh"
+msgstr "जान फायरबाग"
+
+#: komparenavtreepart/komparenavtreepart.cpp:771
+#: komparepart/kompare_part.cpp:632 main.cpp:63
+msgid "Otto Bruggeman"
+msgstr "ओटो ब्रगमेन"
 
 #: komparepart/kompare_part.cpp:171
 msgid "Save &All"
@@ -183,8 +284,8 @@ msgid "Save .diff"
 msgstr "सहेजव .diff"
 
 #: komparepart/kompare_part.cpp:550
-msgid "The file exists or is write-protected; do you want to overwrite it?"
-msgstr "फाइल मौजूद हे या लिखे से संरक्छित हे, का आप मन एला मेटाय के लिखना चाहथो ?"
+msgid "Do Not Overwrite"
+msgstr "मेटाय के नइ लिखव"
 
 #: komparepart/kompare_part.cpp:550
 msgid "File Exists"
@@ -195,29 +296,12 @@ msgid "Overwrite"
 msgstr "मेटाय के लिखव"
 
 #: komparepart/kompare_part.cpp:550
-msgid "Do Not Overwrite"
-msgstr "मेटाय के नइ लिखव"
+msgid "The file exists or is write-protected; do you want to overwrite it?"
+msgstr "फाइल मौजूद हे या लिखे से संरक्छित हे, का आप मन एला मेटाय के लिखना चाहथो ?"
 
 #: komparepart/kompare_part.cpp:630
 msgid "KomparePart"
 msgstr "काम्पेयर-पार्ट"
-
-#: komparepart/kompare_part.cpp:631
-#: komparenavtreepart/komparenavtreepart.cpp:770 main.cpp:62
-msgid "John Firebaugh"
-msgstr "जान फायरबाग"
-
-#: komparepart/kompare_part.cpp:631 komparepart/kompare_part.cpp:632
-#: komparepart/kompare_part.cpp:633
-#: komparenavtreepart/komparenavtreepart.cpp:770
-#: komparenavtreepart/komparenavtreepart.cpp:771 main.cpp:62 main.cpp:63
-msgid "Author"
-msgstr "लेखक"
-
-#: komparepart/kompare_part.cpp:632
-#: komparenavtreepart/komparenavtreepart.cpp:771 main.cpp:63
-msgid "Otto Bruggeman"
-msgstr "ओटो ब्रगमेन"
 
 #: komparepart/kompare_part.cpp:633 main.cpp:65
 msgid "Kevin Kofler"
@@ -300,11 +384,6 @@ msgstr "ईडी"
 msgid "Normal"
 msgstr "सामान्य"
 
-#: komparepart/kompare_part.cpp:851
-#: komparenavtreepart/komparenavtreepart.cpp:629
-msgid "Unknown"
-msgstr "अग्यात"
-
 #: komparepart/kompare_part.cpp:867
 msgid ""
 "No diff file, or no 2 files have been diffed. Therefore no stats are "
@@ -363,9 +442,51 @@ msgstr ""
 "हंक्स के संख्या: %5\n"
 "भिन्नताओं के संख्या: %6"
 
-#: libdialogpages/filespage.cpp:60
-msgid "Encoding"
-msgstr "एनकोडिंग"
+#: komparepart/kompareprefdlg.cpp:35
+msgid "Preferences"
+msgstr "प्राथमिकता"
+
+#: komparepart/kompareprefdlg.cpp:45
+msgid "View"
+msgstr "दृस्य"
+
+#: komparepart/kompareprefdlg.cpp:47
+msgid "View Settings"
+msgstr "दृस्य सेटिंग"
+
+#: komparepart/kompareprefdlg.cpp:51 kompareurldialog.cpp:52
+#: libdialogpages/diffpage.cpp:218
+msgid "Diff"
+msgstr "डिफ"
+
+#: komparepart/kompareprefdlg.cpp:53
+msgid "Diff Settings"
+msgstr "डिफ सेटिंग"
+
+#: kompareurldialog.cpp:44
+msgid "Files"
+msgstr "फाइल"
+
+#: kompareurldialog.cpp:46
+msgid "Here you can enter the files you want to compare."
+msgstr "इहां आप मन ओखर फाइल मन ल भर सकथो जऊन ल आप मन तुलना करना चाहथो ."
+
+#: kompareurldialog.cpp:54
+msgid "Here you can change the options for comparing the files."
+msgstr "इहां आप मन फाइल मन के तुलना करे के विकल्प मन ल बदल सकथो ."
+
+#: kompareurldialog.cpp:60 libdialogpages/viewpage.cpp:124
+msgid "Appearance"
+msgstr "रूप"
+
+#: kompareurldialog.cpp:62
+msgid "Here you can change the options for the view."
+msgstr "इहां आप मन दृस्य के विकल्प मन ल बदल सकथो ."
+
+#: kompareurldialog.cpp:105
+msgid ""
+"File used for excluding files cannot be found, please specify another file."
+msgstr ""
 
 #: libdialogpages/diffpage.cpp:207
 msgid "Diff Program"
@@ -630,6 +751,10 @@ msgstr ""
 msgid "Exclude"
 msgstr "एक्सक्लूड "
 
+#: libdialogpages/filespage.cpp:60
+msgid "Encoding"
+msgstr "एनकोडिंग"
+
 #: libdialogpages/viewpage.cpp:57
 msgid "Colors"
 msgstr "रंग"
@@ -666,10 +791,6 @@ msgstr "स्पेसेस मं टैब्स"
 msgid "Number of spaces to convert a tab character to:"
 msgstr "स्पेसेस के संख्या जऊन ल टैब कैरेक्टर मं बदलना हेः"
 
-#: libdialogpages/viewpage.cpp:124 kompareurldialog.cpp:60
-msgid "Appearance"
-msgstr "रूप"
-
 #: libdialogpages/viewpage.cpp:134
 msgid "Text Font"
 msgstr "पाठ फोंट"
@@ -686,99 +807,102 @@ msgstr "आकारः"
 msgid "Fonts"
 msgstr "फोंट"
 
-#: komparenavtreepart/komparenavtreepart.cpp:63
-msgid "Source Folder"
-msgstr "स्रोत फोल्डर"
+#: libdiff2/komparemodellist.cpp:66
+msgid "&Apply Difference"
+msgstr "भिन्नता लगाव (&A)"
 
-#: komparenavtreepart/komparenavtreepart.cpp:69
-msgid "Destination Folder"
-msgstr "गंतव्य फोल्डर"
+#: libdiff2/komparemodellist.cpp:70
+msgid "Un&apply Difference"
+msgstr "भिन्नता लागू नइ करव (&a)"
 
-#: komparenavtreepart/komparenavtreepart.cpp:75
-msgid "Source File"
-msgstr "स्रोत फाइल"
+#: libdiff2/komparemodellist.cpp:74
+msgid "App&ly All"
+msgstr "सब्बो लगाव (&l)"
 
-#: komparenavtreepart/komparenavtreepart.cpp:75
-msgid "Destination File"
-msgstr "गंतव्य फाइल"
+#: libdiff2/komparemodellist.cpp:78
+msgid "&Unapply All"
+msgstr "सब्बो लागू नइ करव (&U)"
 
-#: komparenavtreepart/komparenavtreepart.cpp:82
-msgid "Source Line"
-msgstr "स्रोत पंक्ति"
+#: libdiff2/komparemodellist.cpp:82
+msgid "P&revious File"
+msgstr "पिछला फाइल (&r)"
 
-#: komparenavtreepart/komparenavtreepart.cpp:82
-msgid "Destination Line"
-msgstr "गंतव्य पंक्ति"
+#: libdiff2/komparemodellist.cpp:86
+msgid "N&ext File"
+msgstr "अगला फाइल (&e)"
 
-#: komparenavtreepart/komparenavtreepart.cpp:82
-msgid "Difference"
-msgstr "भिन्नता"
+#: libdiff2/komparemodellist.cpp:90
+msgid "&Previous Difference"
+msgstr "पिछला भिन्नता (&P)"
 
-#: komparenavtreepart/komparenavtreepart.cpp:456
+#: libdiff2/komparemodellist.cpp:94
+msgid "&Next Difference"
+msgstr "अगला भिन्नता (&N)"
+
+#: libdiff2/komparemodellist.cpp:253 libdiff2/komparemodellist.cpp:278
 #, kde-format
-msgid "Applied: Changes made to %1 line undone"
-msgid_plural "Applied: Changes made to  %1 lines undone"
-msgstr[0] ""
-msgstr[1] ""
-
-#: komparenavtreepart/komparenavtreepart.cpp:459
-#, kde-format
-msgid "Changed %1 line"
-msgid_plural "Changed %1 lines"
-msgstr[0] "बदला %1 पंक्ति"
-msgstr[1] "बदलिस %1 पंक्ति"
-
-#: komparenavtreepart/komparenavtreepart.cpp:464
-#, kde-format
-msgid "Applied: Insertion of %1 line undone"
-msgid_plural "Applied: Insertion of %1 lines undone"
-msgstr[0] ""
-msgstr[1] ""
-
-#: komparenavtreepart/komparenavtreepart.cpp:467
-#, kde-format
-msgid "Inserted %1 line"
-msgid_plural "Inserted %1 lines"
-msgstr[0] "भरिस %1 लाइन"
-msgstr[1] "भरिस %1 लाइन"
-
-#: komparenavtreepart/komparenavtreepart.cpp:472
-#, kde-format
-msgid "Applied: Deletion of %1 line undone"
-msgid_plural "Applied: Deletion of %1 lines undone"
-msgstr[0] ""
-msgstr[1] ""
-
-#: komparenavtreepart/komparenavtreepart.cpp:475
-#, fuzzy, kde-format
-msgid "Deleted %1 line"
-msgid_plural "Deleted %1 lines"
-msgstr[0] "मेटाइस %1 पंक्ति"
-msgstr[1] ""
-
-#: komparenavtreepart/komparenavtreepart.cpp:769
-msgid "KompareNavTreePart"
-msgstr "काम्पेयर-नेव-ट्री-पार्ट"
-
-#: kompareurldialog.cpp:44
-msgid "Files"
-msgstr "फाइल"
-
-#: kompareurldialog.cpp:46
-msgid "Here you can enter the files you want to compare."
-msgstr "इहां आप मन ओखर फाइल मन ल भर सकथो जऊन ल आप मन तुलना करना चाहथो ."
-
-#: kompareurldialog.cpp:54
-msgid "Here you can change the options for comparing the files."
-msgstr "इहां आप मन फाइल मन के तुलना करे के विकल्प मन ल बदल सकथो ."
-
-#: kompareurldialog.cpp:62
-msgid "Here you can change the options for the view."
-msgstr "इहां आप मन दृस्य के विकल्प मन ल बदल सकथो ."
-
-#: kompareurldialog.cpp:105
 msgid ""
-"File used for excluding files cannot be found, please specify another file."
+"<qt>No models or no differences, this file: <b>%1</b>, is not a valid diff "
+"file.</qt>"
+msgstr ""
+"<qt>कोई माडल नइ या कोनो भिन्नता नइ, ए फाइल:<b>%1</b>, एक वैध डिफ फाइल नइ हे.</"
+"qt>"
+
+#: libdiff2/komparemodellist.cpp:262
+#, kde-format
+msgid ""
+"<qt>There were problems applying the diff <b>%1</b> to the file <b>%2</b>.</"
+"qt>"
+msgstr "<qt>डिफ <b>%1</b> ल फाइल <b>%2</b> मं लागू करे मं समस्या हे.</qt>"
+
+#: libdiff2/komparemodellist.cpp:289
+#, kde-format
+msgid ""
+"<qt>There were problems applying the diff <b>%1</b> to the folder <b>%2</b>."
+"</qt>"
+msgstr "<qt>डिफ <b>%1</b> ल फोल्डर <b>%2</b> मं लागू करे मं कुछ समस्या हे.</qt>"
+
+#: libdiff2/komparemodellist.cpp:321 libdiff2/komparemodellist.cpp:652
+msgid "Could not open a temporary file."
+msgstr "अस्थायी फाइल खोल नइ सकहू."
+
+#: libdiff2/komparemodellist.cpp:369 libdiff2/komparemodellist.cpp:376
+#, kde-format
+msgid "<qt>Could not write to the temporary file <b>%1</b>, deleting it.</qt>"
+msgstr "<qt>अस्थाई फाइल <b>%1</b> मं लिख नइ सकिस, एला मिटात हे.</qt>"
+
+#: libdiff2/komparemodellist.cpp:404
+#, kde-format
+msgid ""
+"<qt>Could not create destination directory <b>%1</b>.\n"
+"The file has not been saved.</qt>"
+msgstr ""
+
+#: libdiff2/komparemodellist.cpp:421
+#, kde-format
+msgid ""
+"<qt>Could not upload the temporary file to the destination location <b>%1</"
+"b>. The temporary file is still available under: <b>%2</b>. You can manually "
+"copy it to the right place.</qt>"
+msgstr ""
+
+#: libdiff2/komparemodellist.cpp:486 libdiff2/komparemodellist.cpp:599
+#: libdiff2/komparemodellist.cpp:619
+msgid "Could not parse diff output."
+msgstr "डिफ आउटपुट पार्से नइ कर सकिस."
+
+#: libdiff2/komparemodellist.cpp:502
+msgid "The files are identical."
+msgstr "फाइल मन ल एक जैसी हे."
+
+#: libdiff2/komparemodellist.cpp:684
+msgid "Could not write to the temporary file."
+msgstr "अस्थायी फाइल मं लिख नइ सकिस."
+
+#: libdiff2/komparemodellist.cpp:952
+msgid ""
+"The diff is malformed. Some lines could not be parsed and will not be "
+"displayed in the diff view."
 msgstr ""
 
 #: main.cpp:43
@@ -802,12 +926,12 @@ msgstr ""
 "2007-2008 केविन कोफ्लर"
 
 #: main.cpp:64
-msgid "Jeff Snyder"
-msgstr "जेफ सिंडर"
-
-#: main.cpp:64
 msgid "Developer"
 msgstr "डेवलपर"
+
+#: main.cpp:64
+msgid "Jeff Snyder"
+msgstr "जेफ सिंडर"
 
 #: main.cpp:65
 msgid "Maintainer"
@@ -822,12 +946,12 @@ msgid "Kompare icon artist"
 msgstr "काम्पेयर चिनहा कलाकार"
 
 #: main.cpp:67
-msgid "Malte Starostik"
-msgstr "माल्ते स्टारोस्टिक"
-
-#: main.cpp:67
 msgid "A lot of good advice"
 msgstr "बहुत से अच्छे परामर्स"
+
+#: main.cpp:67
+msgid "Malte Starostik"
+msgstr "माल्ते स्टारोस्टिक"
 
 #: main.cpp:68
 msgid "Bernd Gehrmann"
@@ -868,133 +992,9 @@ msgid ""
 "will default to the local encoding if not specified."
 msgstr ""
 
-#: main.cpp:201 kompare_shell.cpp:359
-msgid "Compare Files or Folders"
-msgstr "फाइल मन या फोल्डर मं तुलना करव"
-
-#: main.cpp:202 kompare_shell.cpp:360
-msgid "Source"
-msgstr "स्रोत"
-
-#: main.cpp:203 kompare_shell.cpp:361
-msgid "Destination"
-msgstr "गंतव्य"
-
-#: main.cpp:205 kompare_shell.cpp:363
-msgid "Compare"
-msgstr "तुलना करव"
-
 #: main.cpp:205
 msgid "Compare these files or folder"
 msgstr "ए फाइल मन ल या फोल्डर मं तुलना करव"
-
-#: main.cpp:205 kompare_shell.cpp:363
-msgid ""
-"If you have entered 2 filenames or 2 folders in the fields in this dialog "
-"then this button will be enabled and pressing it will start a comparison of "
-"the entered files or folders. "
-msgstr ""
-
-#: kompare_shell.cpp:77
-msgid "Could not load our KompareViewPart."
-msgstr "अपन काम्पेयर-व्यू-पार्ट लोड नइ कर सकिस."
-
-#: kompare_shell.cpp:81
-msgid "Navigation"
-msgstr "नेविगेसन"
-
-#: kompare_shell.cpp:98
-msgid "Could not load our KompareNavigationPart."
-msgstr "अपन काम्पेयर-नेविगेसन-पार्ट लोड नइ कर सकिस."
-
-#: kompare_shell.cpp:199
-msgid "&Open Diff..."
-msgstr "डिफ खोलव... (&O)"
-
-#: kompare_shell.cpp:202
-msgid "&Compare Files..."
-msgstr "फाइल मन के तुलना करव... (&C)"
-
-#: kompare_shell.cpp:205
-msgid "&Blend URL with Diff..."
-msgstr "डिफ के साथ यूआरएल ब्लैंड करव... (&B)"
-
-#: kompare_shell.cpp:211
-msgid "Show T&ext View"
-msgstr "पाठ दृस्य देखाव (&e)"
-
-#: kompare_shell.cpp:224
-msgid " 0 of 0 differences "
-msgstr " 0 मं से 0 भिन्नताव"
-
-#: kompare_shell.cpp:225
-msgid " 0 of 0 files "
-msgstr " 0 मं से 0 फाइल मन ल"
-
-#: kompare_shell.cpp:240
-#, kde-format
-msgid " %2 of %1 file "
-msgid_plural " %2 of %1 files "
-msgstr[0] " %2 मं से %1 फाइल"
-msgstr[1] " %2 मं से %1 फाइल"
-
-#: kompare_shell.cpp:242
-#, kde-format
-msgid " %1 file "
-msgid_plural " %1 files "
-msgstr[0] "%1 फाइल"
-msgstr[1] " %1 फाइल "
-
-#: kompare_shell.cpp:245
-#, kde-format
-msgid " %2 of %1 difference, %3 applied "
-msgid_plural " %2 of %1 differences, %3 applied "
-msgstr[0] ""
-msgstr[1] ""
-
-#: kompare_shell.cpp:248
-#, kde-format
-msgid " %1 difference "
-msgid_plural " %1 differences "
-msgstr[0] "%1 भिन्नता"
-msgstr[1] "%1 भिन्नता"
-
-#: kompare_shell.cpp:330
-msgid "Blend File/Folder with diff Output"
-msgstr "डिफ आउटपुट के साथ फाइल/फोल्डर ब्लैंड करव"
-
-#: kompare_shell.cpp:331
-msgid "File/Folder"
-msgstr "फाइल/फोल्डर"
-
-#: kompare_shell.cpp:332
-msgid "Diff Output"
-msgstr "डिफ आउटपुट"
-
-#: kompare_shell.cpp:334
-msgid "Blend"
-msgstr "ब्लेंड"
-
-#: kompare_shell.cpp:334
-msgid "Blend this file or folder with the diff output"
-msgstr "ए फाइल या फोल्डर ल डिफ आउटपुट के साथ ब्लैंड करव"
-
-#: kompare_shell.cpp:334
-msgid ""
-"If you have entered a file or folder name and a file that contains diff "
-"output in the fields in this dialog then this button will be enabled and "
-"pressing it will open kompare's main view where the output of the entered "
-"file or files from the folder are mixed with the diff output so you can then "
-"apply the difference(s) to a file or to the files. "
-msgstr ""
-
-#: kompare_shell.cpp:363
-msgid "Compare these files or folders"
-msgstr "ए फाइल मन ल या फोल्डर के तुलना करव"
-
-#: kompare_shell.cpp:399
-msgid "Text View"
-msgstr "पाठ दृस्य"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

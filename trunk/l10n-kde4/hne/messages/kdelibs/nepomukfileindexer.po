@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nepomuk\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-16 04:40+0200\n"
+"POT-Creation-Date: 2012-08-18 04:20+0200\n"
 "PO-Revision-Date: 2009-01-28 15:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,61 +18,41 @@ msgstr ""
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: indexer/main.cpp:47
+#: eventmonitor.cpp:70
 #, fuzzy
-#| msgid "Nepomuk Strigi File Indexing"
-msgid "NepomukIndexer"
-msgstr "नेपोमक स्ट्रिगि फाइल इन्डेक्सिंग"
+#| msgid ""
+#| "Strigi file indexing started. Indexing all files for fast desktop "
+#| "searches may take a while."
+msgid "Indexing files for fast searching. This process may take a while."
+msgstr ""
+"स्ट्रिगि फाइल इंडेक्सिंग चालू होगे. डेस्कटाप मं तेजी से खोजे बर सब्बो फाइल के सूची बनाय मं "
+"थोड़कुन समय लगही."
 
-#: indexer/main.cpp:49
-msgid ""
-"NepomukIndexer indexes the contents of a file and saves the results in "
-"Nepomuk"
+#: eventmonitor.cpp:103 eventmonitor.cpp:133
+msgid "Resuming indexing of files for fast searching."
 msgstr ""
 
-#: indexer/main.cpp:51
+#: eventmonitor.cpp:111
 #, fuzzy
-#| msgid "(c) 2008, Sebastian Trüg"
-msgid "(C) 2011, Vishesh Handa, Sebastian Trueg"
-msgstr "(C) 2007, सेबेस्तियन त्रुग"
+#| msgid "Suspending Strigi file indexing to preserve resources."
+msgid "Suspending the indexing of files to preserve resources."
+msgstr "रिसोर्स बचाय बर स्ट्रिगि फाइल इन्डेक्सिंग ल सस्पेंड करत हे."
 
-#: indexer/main.cpp:52
-msgid "Vishesh Handa"
-msgstr ""
+#: eventmonitor.cpp:125
+#, fuzzy, kde-format
+#| msgid ""
+#| "Local disk space is running low (%1 left). Suspending Strigi file "
+#| "indexing."
+msgid "Disk space is running low (%1 left). Suspending indexing of files."
+msgstr "लोकल डिस्क जगह बहुत कम बचे हे (%1 बाकी). स्ट्रिगि फाइल इन्डेक्सिंग ल सस्पेंड करत हे."
 
-#: indexer/main.cpp:52
-#, fuzzy
-#| msgid "Maintainer"
-msgid "Current maintainer"
-msgstr "मेंटेनर"
-
-#: indexer/main.cpp:53
-msgid "Sebastian Trüg"
-msgstr "सेबेस्तियन त्रुग"
-
-#: indexer/main.cpp:53
-msgid "Developer"
-msgstr ""
-
-#: indexer/main.cpp:58
-msgid "The URI provided will be forced on the resource"
-msgstr ""
-
-#: indexer/main.cpp:59
-msgid "The modification time of the resource in time_t format"
-msgstr ""
-
-#: indexer/main.cpp:60
-msgid "The URL of the file to be indexed"
-msgstr ""
-
-#: indexer/main.cpp:61
-msgid "Remove all indexed data of the URL provided"
-msgstr ""
-
-#: indexer/main.cpp:62
-msgid "Strigi plugins to disable."
-msgstr ""
+#: eventmonitor.cpp:153
+#, fuzzy, kde-format
+#| msgctxt "@info %1 is a duration formatted using KLocale::formatDuration"
+#| msgid "Initial Desktop Search file indexing finished in %1"
+msgctxt "@info %1 is a duration formatted using KLocale::prettyFormatDuration"
+msgid "Initial indexing of files for fast searching finished in %1"
+msgstr "%1 मं सुरू के डेस्कटाप खोज सूची बनाए के काम पूरा हो गे"
 
 #: fileindexer.cpp:176
 #, fuzzy
@@ -124,41 +104,61 @@ msgctxt "@info:status"
 msgid "File indexer is idle."
 msgstr "फाइल इन्डेक्सर चुपचाप हे"
 
-#: eventmonitor.cpp:70
+#: indexer/main.cpp:47
 #, fuzzy
-#| msgid ""
-#| "Strigi file indexing started. Indexing all files for fast desktop "
-#| "searches may take a while."
-msgid "Indexing files for fast searching. This process may take a while."
-msgstr ""
-"स्ट्रिगि फाइल इंडेक्सिंग चालू होगे. डेस्कटाप मं तेजी से खोजे बर सब्बो फाइल के सूची बनाय मं "
-"थोड़कुन समय लगही."
+#| msgid "Nepomuk Strigi File Indexing"
+msgid "NepomukIndexer"
+msgstr "नेपोमक स्ट्रिगि फाइल इन्डेक्सिंग"
 
-#: eventmonitor.cpp:103 eventmonitor.cpp:133
-msgid "Resuming indexing of files for fast searching."
+#: indexer/main.cpp:49
+msgid ""
+"NepomukIndexer indexes the contents of a file and saves the results in "
+"Nepomuk"
 msgstr ""
 
-#: eventmonitor.cpp:111
+#: indexer/main.cpp:51
 #, fuzzy
-#| msgid "Suspending Strigi file indexing to preserve resources."
-msgid "Suspending the indexing of files to preserve resources."
-msgstr "रिसोर्स बचाय बर स्ट्रिगि फाइल इन्डेक्सिंग ल सस्पेंड करत हे."
+#| msgid "(c) 2008, Sebastian Trüg"
+msgid "(C) 2011, Vishesh Handa, Sebastian Trueg"
+msgstr "(C) 2007, सेबेस्तियन त्रुग"
 
-#: eventmonitor.cpp:125
-#, fuzzy, kde-format
-#| msgid ""
-#| "Local disk space is running low (%1 left). Suspending Strigi file "
-#| "indexing."
-msgid "Disk space is running low (%1 left). Suspending indexing of files."
-msgstr "लोकल डिस्क जगह बहुत कम बचे हे (%1 बाकी). स्ट्रिगि फाइल इन्डेक्सिंग ल सस्पेंड करत हे."
+#: indexer/main.cpp:52
+#, fuzzy
+#| msgid "Maintainer"
+msgid "Current maintainer"
+msgstr "मेंटेनर"
 
-#: eventmonitor.cpp:153
-#, fuzzy, kde-format
-#| msgctxt "@info %1 is a duration formatted using KLocale::formatDuration"
-#| msgid "Initial Desktop Search file indexing finished in %1"
-msgctxt "@info %1 is a duration formatted using KLocale::prettyFormatDuration"
-msgid "Initial indexing of files for fast searching finished in %1"
-msgstr "%1 मं सुरू के डेस्कटाप खोज सूची बनाए के काम पूरा हो गे"
+#: indexer/main.cpp:52
+msgid "Vishesh Handa"
+msgstr ""
+
+#: indexer/main.cpp:53
+msgid "Developer"
+msgstr ""
+
+#: indexer/main.cpp:53
+msgid "Sebastian Trüg"
+msgstr "सेबेस्तियन त्रुग"
+
+#: indexer/main.cpp:58
+msgid "The URI provided will be forced on the resource"
+msgstr ""
+
+#: indexer/main.cpp:59
+msgid "The modification time of the resource in time_t format"
+msgstr ""
+
+#: indexer/main.cpp:60
+msgid "The URL of the file to be indexed"
+msgstr ""
+
+#: indexer/main.cpp:61
+msgid "Remove all indexed data of the URL provided"
+msgstr ""
+
+#: indexer/main.cpp:62
+msgid "Strigi plugins to disable."
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
