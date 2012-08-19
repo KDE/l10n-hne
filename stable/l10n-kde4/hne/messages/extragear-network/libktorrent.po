@@ -19,6 +19,32 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 0.3\n"
 
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+msgid "Torrent to open"
+msgstr "कागद जऊन ल खोलना हे"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+msgid "Port to use"
+msgstr "सूचना"
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr ""
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr ""
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr ""
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
+
 #: src/bcodec/bdecoder.cpp:71
 #, kde-format
 msgid "Illegal token: %1"
@@ -63,27 +89,6 @@ msgstr "डाटा चेक करत हे..."
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "फ़ाइल %1: %2 खोल नइ सकिस"
-
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
-msgstr ""
-
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
-#, fuzzy
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "स्त्रोत जोड़व"
-
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
-#, fuzzy
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "गंतव्य"
-
-#: src/diskio/movedatafilesjob.cpp:180
-msgctxt "@title job"
-msgid "Moving"
-msgstr ""
 
 #: src/diskio/cache.cpp:170 src/diskio/multifilecache.cpp:118
 #: src/diskio/singlefilecache.cpp:85
@@ -163,6 +168,27 @@ msgstr "बना नइ सकिस %1 : %2"
 #, fuzzy, kde-format
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "बना नइ सकिस %1 : %2"
+
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
+msgstr ""
+
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+#, fuzzy
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "स्त्रोत जोड़व"
+
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+#, fuzzy
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "गंतव्य"
+
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
+msgstr ""
 
 #: src/diskio/multifilecache.cpp:91 src/diskio/singlefilecache.cpp:74
 #, fuzzy, kde-format
@@ -278,11 +304,6 @@ msgstr "डिरेक्टरी %1 मौजूद नइ हे"
 msgid "Unknown client"
 msgstr "अग्यात क्लायंट"
 
-#: src/torrent/torrentcreator.cpp:361
-#, fuzzy, kde-format
-msgid "Cannot create index file: %1"
-msgstr "फाइल बना नइ सकिस %1: %2"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -295,6 +316,44 @@ msgstr "टोरेंट बनाव"
 #, fuzzy, kde-format
 msgid "Unable to open torrent file %1: %2"
 msgstr "फ़ाइल%1 : %2 खोल नइ सकिस"
+
+#: src/torrent/torrentcontrol.cpp:302
+msgid "Error writing to disk, do you have enough diskspace?"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:548
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:578
+#, kde-format
+msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:589
+#, fuzzy, kde-format
+msgid "Unable to create %1: %2"
+msgstr "बना नइ सकिस %1 : %2"
+
+#: src/torrent/torrentcontrol.cpp:604
+#, kde-format
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:609
+#, kde-format
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr ""
+
+#: src/torrent/torrentcreator.cpp:361
+#, fuzzy, kde-format
+msgid "Cannot create index file: %1"
+msgstr "फाइल बना नइ सकिस %1: %2"
 
 #: src/torrent/torrentstats.cpp:73
 msgid "Not started"
@@ -354,39 +413,6 @@ msgstr "ठहरा"
 msgid "Superseeding"
 msgstr "लंबित"
 
-#: src/torrent/torrentcontrol.cpp:302
-msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:548
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:578
-#, kde-format
-msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:589
-#, fuzzy, kde-format
-msgid "Unable to create %1: %2"
-msgstr "बना नइ सकिस %1 : %2"
-
-#: src/torrent/torrentcontrol.cpp:604
-#, kde-format
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:609
-#, kde-format
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr ""
-
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr ""
@@ -417,6 +443,34 @@ msgstr ""
 msgid "Unable to resolve hostname %1"
 msgstr ""
 
+#: src/upnp/httprequest.cpp:96
+#, fuzzy
+msgid "Connection closed unexpectedly"
+msgstr "कनेक्सन बन्द"
+
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+msgid "Failed to download %1: %2"
+msgstr "बना नइ सकिस %1 : %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr ""
+
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
 msgid "Cannot write to %1: %2"
@@ -426,18 +480,6 @@ msgstr "बना नइ सकिस %1: %2"
 #, fuzzy, kde-format
 msgid "Cannot read from %1"
 msgstr "डिरेक्टरी %1 बना नइ सकिस"
-
-#: src/util/functions.cpp:234
-#, kde-format
-msgid "%1/s"
-msgstr "%1/से"
-
-#: src/util/functions.cpp:245
-#, kde-format
-msgid "1 day "
-msgid_plural "%1 days "
-msgstr[0] "१दिन"
-msgstr[1] "%1 दिन"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -490,6 +532,18 @@ msgstr "फ़ाइल %1: %2 खोल नइ सकिस"
 msgid "Cannot seek in file: %1"
 msgstr "फ़ाइल %1: %2 खोल नइ सकिस"
 
+#: src/util/functions.cpp:234
+#, kde-format
+msgid "%1/s"
+msgstr "%1/से"
+
+#: src/util/functions.cpp:245
+#, kde-format
+msgid "1 day "
+msgid_plural "%1 days "
+msgstr[0] "१दिन"
+msgstr[1] "%1 दिन"
+
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
 msgstr "सामान्य"
@@ -523,60 +577,6 @@ msgstr "%1 से पढ़े मं गलती"
 #, fuzzy
 msgid "Error when reading from disk"
 msgstr "%1 से पढ़े मं गलती"
-
-#: src/upnp/httprequest.cpp:96
-#, fuzzy
-msgid "Connection closed unexpectedly"
-msgstr "कनेक्सन बन्द"
-
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr ""
-
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-msgid "Failed to download %1: %2"
-msgstr "बना नइ सकिस %1 : %2"
-
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr ""
-
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr ""
-
-#: examples/ktcli/main.cpp:60
-#, fuzzy
-msgid "Torrent to open"
-msgstr "कागद जऊन ल खोलना हे"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-msgid "Port to use"
-msgstr "सूचना"
-
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr ""
-
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr ""
-
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr ""
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr ""
 
 #~ msgid "Parse Error"
 #~ msgstr "व्याख्या गलती"
