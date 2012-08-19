@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkcddb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:20+0200\n"
+"POT-Creation-Date: 2012-08-19 05:37+0200\n"
 "PO-Revision-Date: 2007-12-31 13:17+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@yahoo.com>\n"
 "Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net>\n"
@@ -18,16 +18,32 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
+#: kcmcddb/kcmcddb.cpp:60
+msgid ""
+"CDDB is used to get information like artist, title and song-names in CD's"
+msgstr ""
+
+#: kcmcddb/kcmcddb.cpp:88
+msgid ""
+"freedb has been set to use HTTP for submissions because the email details "
+"you have entered are incomplete. Please review your email settings and try "
+"again."
+msgstr ""
+
+#: kcmcddb/kcmcddb.cpp:91
+msgid "Incorrect Email Settings"
+msgstr ""
+
 #: kcmcddb/cddbconfigwidget.cpp:59
 msgid "Cache Locations"
 msgstr ""
 
 #: kcmcddb/cddbconfigwidget.cpp:98
-msgid "Could Not Fetch"
+msgid "Could not fetch mirror list."
 msgstr ""
 
 #: kcmcddb/cddbconfigwidget.cpp:98
-msgid "Could not fetch mirror list."
+msgid "Could Not Fetch"
 msgstr ""
 
 #: kcmcddb/cddbconfigwidget.cpp:102
@@ -54,74 +70,9 @@ msgstr ""
 msgid "CDDB"
 msgstr ""
 
-#: kcmcddb/kcmcddb.cpp:60
-msgid ""
-"CDDB is used to get information like artist, title and song-names in CD's"
-msgstr ""
-
-#: kcmcddb/kcmcddb.cpp:88
-msgid ""
-"freedb has been set to use HTTP for submissions because the email details "
-"you have entered are incomplete. Please review your email settings and try "
-"again."
-msgstr ""
-
-#: kcmcddb/kcmcddb.cpp:91
-msgid "Incorrect Email Settings"
-msgstr ""
-
-#: libkcddb/categories.cpp:22 libkcddb/genres.cpp:70
-msgid "Blues"
-msgstr "ब्लूज"
-
-#: libkcddb/categories.cpp:22 libkcddb/genres.cpp:73
-msgid "Classical"
-msgstr "सास्त्रीय"
-
-#: libkcddb/categories.cpp:22 libkcddb/genres.cpp:75
-msgctxt "music genre"
-msgid "Country"
-msgstr "देस"
-
-#: libkcddb/categories.cpp:23
-msgid "Data"
-msgstr "डाटा"
-
-#: libkcddb/categories.cpp:23 libkcddb/genres.cpp:80
-msgid "Folk"
-msgstr "फाक"
-
-#: libkcddb/categories.cpp:23 libkcddb/genres.cpp:86
-msgid "Jazz"
-msgstr "जैज"
-
-#: libkcddb/categories.cpp:23
-msgid "Miscellaneous"
-msgstr "विविध"
-
-#: libkcddb/categories.cpp:24 libkcddb/genres.cpp:88
-msgid "New Age"
-msgstr "न्यू-एज"
-
-#: libkcddb/categories.cpp:24 libkcddb/genres.cpp:94
-msgid "Reggae"
-msgstr "रेग्गे"
-
-#: libkcddb/categories.cpp:24 libkcddb/genres.cpp:95
-msgid "Rock"
-msgstr "राक"
-
-#: libkcddb/categories.cpp:24 libkcddb/genres.cpp:98
-msgid "Soundtrack"
-msgstr "साउन्ड-ट्रैक"
-
 #: libkcddb/cdinfodialog.cpp:146
-msgid "Artist"
-msgstr "कलाकार"
-
-#: libkcddb/cdinfodialog.cpp:146
-msgid "Comment"
-msgstr "टिप्पनी"
+msgid "Track"
+msgstr "ट्रैक"
 
 #: libkcddb/cdinfodialog.cpp:146
 msgid "Length"
@@ -132,18 +83,20 @@ msgid "Title"
 msgstr "सीर्सक"
 
 #: libkcddb/cdinfodialog.cpp:146
-msgid "Track"
-msgstr "ट्रैक"
+msgid "Artist"
+msgstr "कलाकार"
+
+#: libkcddb/cdinfodialog.cpp:146
+msgid "Comment"
+msgstr "टिप्पनी"
 
 #: libkcddb/cdinfodialog.cpp:267
 msgid "Change Encoding"
 msgstr "एनकोडिंग बदलव"
 
-#: libkcddb/cdinfoencodingwidget.cpp:65
-#, kde-format
-msgctxt "artist - cdtitle"
-msgid "%1 - %2"
-msgstr "%1 - %2"
+#: libkcddb/genres.cpp:66
+msgid "Unknown"
+msgstr "अग्यात"
 
 #: libkcddb/genres.cpp:66
 msgid "A Cappella"
@@ -153,17 +106,13 @@ msgstr "ए कप्पेल्ला"
 msgid "Acid Jazz"
 msgstr "एसिड जैज"
 
-#: libkcddb/genres.cpp:66
-msgid "Unknown"
-msgstr "अग्यात"
+#: libkcddb/genres.cpp:67
+msgid "Acid Punk"
+msgstr "एसिड पंक"
 
 #: libkcddb/genres.cpp:67
 msgid "Acid"
 msgstr "एसिड"
-
-#: libkcddb/genres.cpp:67
-msgid "Acid Punk"
-msgstr "एसिड पंक"
 
 #: libkcddb/genres.cpp:67
 msgid "Acoustic"
@@ -217,6 +166,10 @@ msgstr "ब्लेक मेटल"
 msgid "Bluegrass"
 msgstr "ब्लूग्रास"
 
+#: libkcddb/genres.cpp:70 libkcddb/categories.cpp:22
+msgid "Blues"
+msgstr "ब्लूज"
+
 #: libkcddb/genres.cpp:71
 msgid "Booty Bass"
 msgstr "बूटी बास"
@@ -257,17 +210,21 @@ msgstr "क्रिस्चियन रैप"
 msgid "Christian Rock"
 msgstr "क्रिस्चियन राक"
 
+#: libkcddb/genres.cpp:73 libkcddb/categories.cpp:22
+msgid "Classical"
+msgstr "सास्त्रीय"
+
 #: libkcddb/genres.cpp:73
 msgid "Classic Rock"
 msgstr "सास्त्रीय राक"
 
 #: libkcddb/genres.cpp:74
-msgid "Club"
-msgstr "क्लब"
-
-#: libkcddb/genres.cpp:74
 msgid "Club-house"
 msgstr "क्लब-हाउस"
+
+#: libkcddb/genres.cpp:74
+msgid "Club"
+msgstr "क्लब"
 
 #: libkcddb/genres.cpp:74
 msgid "Comedy"
@@ -276,6 +233,11 @@ msgstr "कामेडी"
 #: libkcddb/genres.cpp:74
 msgid "Contemporary Christian"
 msgstr "समकालीन क्रिस्चियन"
+
+#: libkcddb/genres.cpp:75 libkcddb/categories.cpp:22
+msgctxt "music genre"
+msgid "Country"
+msgstr "देस"
 
 #: libkcddb/genres.cpp:75
 msgid "Crossover"
@@ -357,6 +319,10 @@ msgstr "फाकलोर"
 msgid "Folk/Rock"
 msgstr "फाक/ राक"
 
+#: libkcddb/genres.cpp:80 libkcddb/categories.cpp:23
+msgid "Folk"
+msgstr "फाक"
+
 #: libkcddb/genres.cpp:80
 msgid "Freestyle"
 msgstr "फ्रीस्टाइल"
@@ -386,24 +352,24 @@ msgid "Gospel"
 msgstr "गास्पेल"
 
 #: libkcddb/genres.cpp:82
-msgid "Gothic"
-msgstr "गोथिक"
-
-#: libkcddb/genres.cpp:82
 msgid "Gothic Rock"
 msgstr "गोथिक राक"
+
+#: libkcddb/genres.cpp:82
+msgid "Gothic"
+msgstr "गोथिक"
 
 #: libkcddb/genres.cpp:82
 msgid "Grunge"
 msgstr "ग्रंग"
 
 #: libkcddb/genres.cpp:83
-msgid "Hard Rock"
-msgstr "हार्ड राक"
-
-#: libkcddb/genres.cpp:83
 msgid "Hardcore"
 msgstr "हार्डकोर"
+
+#: libkcddb/genres.cpp:83
+msgid "Hard Rock"
+msgstr "हार्ड राक"
 
 #: libkcddb/genres.cpp:83
 msgid "Heavy Metal"
@@ -430,10 +396,6 @@ msgid "Industrial"
 msgstr "इंडस्ट्रीयल"
 
 #: libkcddb/genres.cpp:85
-msgid "Instrumental"
-msgstr "इंस्ट्रूमेंटल"
-
-#: libkcddb/genres.cpp:85
 msgid "Instrumental Pop"
 msgstr "इंस्ट्रूमेंटल पाप"
 
@@ -442,8 +404,16 @@ msgid "Instrumental Rock"
 msgstr "इंस्ट्रूमेंटल राक"
 
 #: libkcddb/genres.cpp:85
+msgid "Instrumental"
+msgstr "इंस्ट्रूमेंटल"
+
+#: libkcddb/genres.cpp:85
 msgid "Jazz+Funk"
 msgstr "जैज+फंक"
+
+#: libkcddb/genres.cpp:86 libkcddb/categories.cpp:23
+msgid "Jazz"
+msgstr "जैज"
 
 #: libkcddb/genres.cpp:86
 msgid "JPop"
@@ -489,6 +459,10 @@ msgstr "नेटिव अमेरिकी"
 msgid "Negerpunk"
 msgstr "नेगर-पंक"
 
+#: libkcddb/genres.cpp:88 libkcddb/categories.cpp:24
+msgid "New Age"
+msgstr "न्यू-एज"
+
 #: libkcddb/genres.cpp:89
 msgid "New Wave"
 msgstr "न्यू वेव"
@@ -522,12 +496,12 @@ msgid "Pop-Funk"
 msgstr "पाप-फंक"
 
 #: libkcddb/genres.cpp:91
-msgid "Pop"
-msgstr "पाप"
-
-#: libkcddb/genres.cpp:91
 msgid "Pop/Funk"
 msgstr "पाप/फंक"
+
+#: libkcddb/genres.cpp:91
+msgid "Pop"
+msgstr "पाप"
 
 #: libkcddb/genres.cpp:91
 msgid "Porn Groove"
@@ -558,12 +532,12 @@ msgid "Psychedelic"
 msgstr "साइकेडेलिक"
 
 #: libkcddb/genres.cpp:93
-msgid "Punk"
-msgstr "पंक"
-
-#: libkcddb/genres.cpp:93
 msgid "Punk Rock"
 msgstr "पंक राक"
+
+#: libkcddb/genres.cpp:93
+msgid "Punk"
+msgstr "पंक"
 
 #: libkcddb/genres.cpp:93
 msgid "R&B"
@@ -576,6 +550,10 @@ msgstr "रैप"
 #: libkcddb/genres.cpp:94
 msgid "Rave"
 msgstr "रैव"
+
+#: libkcddb/genres.cpp:94 libkcddb/categories.cpp:24
+msgid "Reggae"
+msgstr "रेग्गे"
 
 #: libkcddb/genres.cpp:94
 msgid "Retro"
@@ -592,6 +570,10 @@ msgstr "रिदमिक साल"
 #: libkcddb/genres.cpp:95
 msgid "Rock & Roll"
 msgstr "राक अउ रोल"
+
+#: libkcddb/genres.cpp:95 libkcddb/categories.cpp:24
+msgid "Rock"
+msgstr "राक"
 
 #: libkcddb/genres.cpp:96
 msgid "Salsa"
@@ -632,6 +614,10 @@ msgstr "साल"
 #: libkcddb/genres.cpp:98
 msgid "Sound Clip"
 msgstr "अवाज क्लिप"
+
+#: libkcddb/genres.cpp:98 libkcddb/categories.cpp:24
+msgid "Soundtrack"
+msgstr "साउन्ड-ट्रैक"
 
 #: libkcddb/genres.cpp:98
 msgid "Southern Rock"
@@ -740,6 +726,20 @@ msgstr "अवैध वर्ग"
 #: libkcddb/kcddb.cpp:64
 msgid "Unknown error"
 msgstr "अग्यात गलती"
+
+#: libkcddb/categories.cpp:23
+msgid "Data"
+msgstr "डाटा"
+
+#: libkcddb/categories.cpp:23
+msgid "Miscellaneous"
+msgstr "विविध"
+
+#: libkcddb/cdinfoencodingwidget.cpp:65
+#, kde-format
+msgctxt "artist - cdtitle"
+msgid "%1 - %2"
+msgstr "%1 - %2"
 
 #: libkcddb/musicbrainz/musicbrainzlookup.cpp:122
 #, kde-format

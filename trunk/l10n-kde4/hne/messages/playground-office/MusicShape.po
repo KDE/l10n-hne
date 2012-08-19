@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:37+0200\n"
+"POT-Creation-Date: 2012-08-19 06:02+0200\n"
 "PO-Revision-Date: 2009-03-03 11:09+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,56 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 0.3\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-
-#: MusicShapeFactory.cpp:49
-msgid "Music Shape"
-msgstr "संगीत आकार"
-
-#: MusicShapeFactory.cpp:51
-msgid "A shape which provides a music editor"
-msgstr "एक आकार जऊन संगीत संपादक मिलत कराथे ."
-
-#: MusicTool.cpp:89
-msgid "Parts"
-msgstr "पार्ट्स"
-
-#: MusicToolFactory.cpp:30
-msgid "Music editing tool, parts"
-msgstr "संगीत संपादन औजार, पार्ट्स"
-
-#. i18n: file: dialogs/SimpleEntryWidget.ui:384
-#. i18n: ectx: property (text), widget (QToolButton, importButton)
-#: SimpleEntryTool.cpp:90 rc.cpp:66
-msgid "Import"
-msgstr "आयात"
-
-#. i18n: file: dialogs/SimpleEntryWidget.ui:394
-#. i18n: ectx: property (text), widget (QToolButton, exportButton)
-#: SimpleEntryTool.cpp:94 rc.cpp:69
-msgid "Export"
-msgstr "निर्यात"
-
-#. i18n: file: dialogs/SimpleEntryWidget.ui:357
-#. i18n: ectx: property (text), widget (QToolButton, addBarsButton)
-#: SimpleEntryTool.cpp:98 commands/AddBarsCommand.cpp:30 rc.cpp:63
-msgid "Add measures"
-msgstr "मापक जोड़व"
-
-#: SimpleEntryTool.cpp:238
-msgid "Clef"
-msgstr "क्लेफ"
-
-#: SimpleEntryTool.cpp:267
-msgid "Time signature"
-msgstr "समय दसखत"
-
-#: SimpleEntryTool.cpp:297
-msgid "Key signature"
-msgstr "कुंजी दसखत"
-
-#: SimpleEntryToolFactory.cpp:30
-msgid "Music editing tool"
-msgstr "संगीत संपादन औजार"
 
 #: actions/AccidentalAction.cpp:60
 msgid "Double flat"
@@ -151,12 +101,12 @@ msgid "Other"
 msgstr "अऊ दूसर"
 
 #: actions/NoteEntryAction.cpp:67
-msgid "note"
-msgstr "टिप्पनी"
-
-#: actions/NoteEntryAction.cpp:67
 msgid "rest"
 msgstr "रेस्ट"
+
+#: actions/NoteEntryAction.cpp:67
+msgid "note"
+msgstr "टिप्पनी"
 
 #: actions/NoteEntryAction.cpp:69
 msgid "Double whole "
@@ -195,12 +145,12 @@ msgid "128th "
 msgstr "१२८वां"
 
 #: actions/NoteEntryAction.cpp:79
-msgid "Unknown note"
-msgstr "अग्यात टिप्पनी"
-
-#: actions/NoteEntryAction.cpp:79
 msgid "Unknown rest"
 msgstr "अग्यात रेस्ट"
+
+#: actions/NoteEntryAction.cpp:79
+msgid "Unknown note"
+msgstr "अग्यात टिप्पनी"
 
 #: actions/RemoveBarAction.cpp:35 commands/RemoveBarCommand.cpp:31
 msgid "Remove bar"
@@ -248,6 +198,12 @@ msgstr "अग्यात क्लेफ"
 msgid "Tied notes"
 msgstr "टाइड नोट्स"
 
+#. i18n: file: dialogs/SimpleEntryWidget.ui:357
+#. i18n: ectx: property (text), widget (QToolButton, addBarsButton)
+#: commands/AddBarsCommand.cpp:30 SimpleEntryTool.cpp:98 rc.cpp:63
+msgid "Add measures"
+msgstr "मापक जोड़व"
+
 #: commands/AddDotCommand.cpp:30
 msgid "Add dot"
 msgstr "बिंदु जोड़व"
@@ -263,10 +219,6 @@ msgstr "टिप्पनी जोड़व"
 #: commands/AddPartCommand.cpp:38
 msgid "Add part"
 msgstr "पार्ट जोड़व"
-
-#: commands/ChangePartDetailsCommand.cpp:43
-msgid "Change part details"
-msgstr "पार्ट विवरन बदलव"
 
 #: commands/CreateChordCommand.cpp:33
 msgid "Add chord"
@@ -308,6 +260,14 @@ msgstr "स्टाफ अवयव हटाव"
 msgid "Set accidentals"
 msgstr "एक्सीडेंसियल्स सेट करव"
 
+#: commands/ToggleTiedNoteCommand.cpp:32
+msgid "Toggle Note Tie"
+msgstr "नोट टाई टागल करव"
+
+#: commands/ChangePartDetailsCommand.cpp:43
+msgid "Change part details"
+msgstr "पार्ट विवरन बदलव"
+
 #: commands/SetClefCommand.cpp:32
 msgid "Change clef"
 msgstr "क्लेफ बदलव"
@@ -321,10 +281,6 @@ msgstr "कुंजी दसखत बदलव"
 msgid "Change time signature"
 msgstr "समय दसखत बदलावइ करव"
 
-#: commands/ToggleTiedNoteCommand.cpp:32
-msgid "Toggle Note Tie"
-msgstr "नोट टाई टागल करव"
-
 #: dialogs/KeySignatureDialog.cpp:28
 msgid "Set key signature"
 msgstr "कुंजी दसखत सेट करव"
@@ -332,6 +288,50 @@ msgstr "कुंजी दसखत सेट करव"
 #: dialogs/PartDetailsDialog.cpp:32
 msgid "Part details"
 msgstr "पार्ट विवरन"
+
+#: MusicShapeFactory.cpp:49
+msgid "Music Shape"
+msgstr "संगीत आकार"
+
+#: MusicShapeFactory.cpp:51
+msgid "A shape which provides a music editor"
+msgstr "एक आकार जऊन संगीत संपादक मिलत कराथे ."
+
+#: MusicToolFactory.cpp:30
+msgid "Music editing tool, parts"
+msgstr "संगीत संपादन औजार, पार्ट्स"
+
+#: SimpleEntryToolFactory.cpp:30
+msgid "Music editing tool"
+msgstr "संगीत संपादन औजार"
+
+#: MusicTool.cpp:89
+msgid "Parts"
+msgstr "पार्ट्स"
+
+#. i18n: file: dialogs/SimpleEntryWidget.ui:384
+#. i18n: ectx: property (text), widget (QToolButton, importButton)
+#: SimpleEntryTool.cpp:90 rc.cpp:66
+msgid "Import"
+msgstr "आयात"
+
+#. i18n: file: dialogs/SimpleEntryWidget.ui:394
+#. i18n: ectx: property (text), widget (QToolButton, exportButton)
+#: SimpleEntryTool.cpp:94 rc.cpp:69
+msgid "Export"
+msgstr "निर्यात"
+
+#: SimpleEntryTool.cpp:238
+msgid "Clef"
+msgstr "क्लेफ"
+
+#: SimpleEntryTool.cpp:267
+msgid "Time signature"
+msgstr "समय दसखत"
+
+#: SimpleEntryTool.cpp:297
+msgid "Key signature"
+msgstr "कुंजी दसखत"
 
 #. i18n: file: dialogs/KeySignatureDialog.ui:63
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
