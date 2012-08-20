@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksayit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-19 05:51+0200\n"
+"POT-Creation-Date: 2012-08-20 05:53+0200\n"
 "PO-Revision-Date: 2009-02-21 12:41+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,6 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "raviratlami@aol.in"
 
 #: contextmenuhandler.cpp:96
 msgid "New"
@@ -35,10 +43,9 @@ msgstr "मेटाव..."
 msgid "Overview"
 msgstr "ओवरव्यू"
 
-#. i18n: file: DocTreeView.ui:45
 #. i18n: ectx: property (text), widget (K3ListView)
-#: contextmenuhandler.cpp:174 doctreeviewimpl.cpp:49 doctreeviewimpl.cpp:810
-#: doctreeviewimpl.cpp:1629 rc.cpp:14
+#: contextmenuhandler.cpp:174 DocTreeView.ui:45 doctreeviewimpl.cpp:49
+#: doctreeviewimpl.cpp:810 doctreeviewimpl.cpp:1629
 msgid "Chapter"
 msgstr "अध्याय"
 
@@ -117,17 +124,25 @@ msgstr "ये पैराग्राफ मं मिसमैचिंग �
 msgid "XML-Error"
 msgstr "एक्सएमएल-गलती"
 
-#. i18n: file: DocTreeView.ui:56
+#. i18n: ectx: property (windowTitle), widget (QWidget)
+#: DocTreeView.ui:30
+msgid "Document Contents"
+msgstr "कागद सामग्रियाँ"
+
 #. i18n: ectx: property (text), widget (K3ListView)
-#: doctreeviewimpl.cpp:50 rc.cpp:17
+#: DocTreeView.ui:56 doctreeviewimpl.cpp:50
 msgid "Info"
 msgstr "जानकारी "
 
-#. i18n: file: DocTreeView.ui:67
 #. i18n: ectx: property (text), widget (K3ListView)
-#: doctreeviewimpl.cpp:51 rc.cpp:20
+#: DocTreeView.ui:67 doctreeviewimpl.cpp:51
 msgid "Page"
 msgstr "पेज"
+
+#. i18n: ectx: property (text), widget (K3ListView)
+#: DocTreeView.ui:78
+msgid "Hidden"
+msgstr "लुकाय"
 
 #: doctreeviewimpl.cpp:110
 msgid "unnamed"
@@ -236,17 +251,30 @@ msgstr "जारी"
 msgid "New Section Title"
 msgstr "नवा खन्ड सीर्सक"
 
-#: ksayitbookmarkhandler.cpp:59
-msgid "This is not a KSayIt bookmark.\n"
-msgstr "ये के-से-इट निसानी नइ हे.\n"
+#. i18n: ectx: property (windowTitle), widget (QWidget)
+#: fx_setup.ui:16
+msgid "Effect Stack Setup"
+msgstr "प्रभाव स्टैक सेटअप"
 
-#: ksayitbookmarkhandler.cpp:77
-msgid "Bookmark not found"
-msgstr "निसानी नइ मिलिस"
+#. i18n: ectx: property (text), widget (QLabel)
+#: fx_setup.ui:46
+msgid "Available:"
+msgstr "मिलत:"
 
-#: ksayitbookmarkhandler.cpp:88
-msgid "untitled"
-msgstr "बेनाम"
+#. i18n: ectx: property (text), widget (QLabel)
+#: fx_setup.ui:153
+msgid "Active:"
+msgstr "सक्रिय:"
+
+#. i18n: ectx: property (toolTip), widget (QListBox)
+#: fx_setup.ui:167
+msgid "Doubleclick opens the setup dialog."
+msgstr "दोहरा किलिक करे से सेटअप गोठ खुलथे "
+
+#. i18n: ectx: property (text), widget (QPushButton)
+#: fx_setup.ui:204
+msgid "Remove All"
+msgstr "सब्बो मेटाव"
 
 #: ksayit.cpp:168 ksayitsystemtray.cpp:59
 msgid "Say"
@@ -336,6 +364,28 @@ msgstr "सिंथेसाइज करत हे..."
 msgid "Paused..."
 msgstr "ठहरा हे..."
 
+#: ksayitbookmarkhandler.cpp:59
+msgid "This is not a KSayIt bookmark.\n"
+msgstr "ये के-से-इट निसानी नइ हे.\n"
+
+#: ksayitbookmarkhandler.cpp:77
+msgid "Bookmark not found"
+msgstr "निसानी नइ मिलिस"
+
+#: ksayitbookmarkhandler.cpp:88
+msgid "untitled"
+msgstr "बेनाम"
+
+#. i18n: ectx: Menu (action)
+#: ksayitui.rc:14
+msgid "&Action"
+msgstr "काम (&A)"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: ksayitui.rc:27
+msgid "Main Toolbar"
+msgstr "मुख्य औजार पट्टी"
+
 #: main.cpp:34
 msgid "KSayIt - A Text To Speech frontend for KDE"
 msgstr "के-से-इट - केडीई बर पाठ से वार्ता फ्रंटएन्ड"
@@ -351,70 +401,6 @@ msgstr "(c) 1996 - 2005, राबर्ट वोगल"
 #: main.cpp:44
 msgid "Robert Vogl"
 msgstr "राबर्ट वोगल"
-
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "raviratlami@aol.in"
-
-#. i18n: file: ksayitui.rc:14
-#. i18n: ectx: Menu (action)
-#: rc.cpp:5
-msgid "&Action"
-msgstr "काम (&A)"
-
-#. i18n: file: ksayitui.rc:27
-#. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:8
-msgid "Main Toolbar"
-msgstr "मुख्य औजार पट्टी"
-
-#. i18n: file: DocTreeView.ui:30
-#. i18n: ectx: property (windowTitle), widget (QWidget)
-#: rc.cpp:11
-msgid "Document Contents"
-msgstr "कागद सामग्रियाँ"
-
-#. i18n: file: DocTreeView.ui:78
-#. i18n: ectx: property (text), widget (K3ListView)
-#: rc.cpp:23
-msgid "Hidden"
-msgstr "लुकाय"
-
-#. i18n: file: fx_setup.ui:16
-#. i18n: ectx: property (windowTitle), widget (QWidget)
-#: rc.cpp:26
-msgid "Effect Stack Setup"
-msgstr "प्रभाव स्टैक सेटअप"
-
-#. i18n: file: fx_setup.ui:46
-#. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:29
-msgid "Available:"
-msgstr "मिलत:"
-
-#. i18n: file: fx_setup.ui:153
-#. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:32
-msgid "Active:"
-msgstr "सक्रिय:"
-
-#. i18n: file: fx_setup.ui:167
-#. i18n: ectx: property (toolTip), widget (QListBox)
-#: rc.cpp:35
-msgid "Doubleclick opens the setup dialog."
-msgstr "दोहरा किलिक करे से सेटअप गोठ खुलथे "
-
-#. i18n: file: fx_setup.ui:204
-#. i18n: ectx: property (text), widget (QPushButton)
-#: rc.cpp:38
-msgid "Remove All"
-msgstr "सब्बो मेटाव"
 
 #: saxhandler.cpp:129
 msgid "Fatal error while parsing XML-Paragraph:\n"
