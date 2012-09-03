@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-26 03:18+0200\n"
+"POT-Creation-Date: 2012-09-03 02:36+0200\n"
 "PO-Revision-Date: 2009-03-03 10:38+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -33,11 +33,23 @@ msgstr "raviratlami@aol.in"
 msgid "Add custom slide show"
 msgstr "नवा स्लाइडसो जोड़व"
 
-#: part/commands/KPrAnimationCreateCommand.cpp:34
+#: part/commands/KPrAnimationCreateCommand.cpp:32
 #, fuzzy
 #| msgid "Create shape animation"
 msgctxt "(qtundo-format)"
 msgid "Create shape animation"
+msgstr "आकार एनिमेसन बनाव"
+
+#: part/commands/KPrAnimationEditNodeTypeCommand.cpp:36
+msgctxt "(qtundo-format)"
+msgid "Edit animation trigger event"
+msgstr ""
+
+#: part/commands/KPrAnimationRemoveCommand.cpp:30
+#, fuzzy
+#| msgid "Create shape animation"
+msgctxt "(qtundo-format)"
+msgid "Remove shape animation"
 msgstr "आकार एनिमेसन बनाव"
 
 #: part/commands/KPrDelCustomSlideShowCommand.cpp:33
@@ -55,6 +67,11 @@ msgid "Delete slide"
 msgid_plural "Delete slides"
 msgstr[0] "स्लाइड मेटाव"
 msgstr[1] "स्लाइड मेटाव"
+
+#: part/commands/KPrEditAnimationTimeLineCommand.cpp:36
+msgctxt "(qtundo-format)"
+msgid "Edit animation delay/duration"
+msgstr ""
 
 #: part/commands/KPrEditCustomSlideShowsCommand.cpp:32
 #, fuzzy
@@ -88,6 +105,13 @@ msgstr "स्लाइड मेटाव"
 #| msgid "Customs Slideshows"
 msgid "Rename custom slide show"
 msgstr "मनमाफिक स्लाइडसो"
+
+#: part/commands/KPrReorderAnimationCommand.cpp:34
+#, fuzzy
+#| msgid "Slide Show"
+msgctxt "(qtundo-format)"
+msgid "Reorder animations"
+msgstr "स्लाइड सो"
 
 #: part/dockers/KPrPageLayoutDocker.cpp:46
 msgid "Slide Layouts"
@@ -323,6 +347,45 @@ msgstr "अभी हाल के स्लाइड  %1 एमां से- %
 #: part/KPrPresenterViewInterface.cpp:108
 msgid "End of Slide Show"
 msgstr "स्लाइड सो के आखरी"
+
+#: part/KPrShapeAnimations.cpp:173
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:237
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:537
+msgid "start on mouse click"
+msgstr ""
+
+#: part/KPrShapeAnimations.cpp:175
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:240
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:540
+#, fuzzy
+#| msgid "Create shape animation"
+msgid "start after previous animation"
+msgstr "आकार एनिमेसन बनाव"
+
+#: part/KPrShapeAnimations.cpp:177
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:243
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:543
+#, fuzzy
+#| msgid "Create shape animation"
+msgid "start with previous animation"
+msgstr "आकार एनिमेसन बनाव"
+
+#: part/KPrShapeAnimations.cpp:181
+#, kde-format
+msgid "Start after %1 seconds. Duration of %2 seconds"
+msgstr ""
+
+#: part/KPrShapeAnimations.cpp:197
+#: part/tools/animationtool/KPrAnimationToolFactory.cpp:33
+#, fuzzy
+#| msgid "Animation tool"
+msgid "Animation"
+msgstr "एनिमेसन औजार"
+
+#. i18n: ectx: Menu (Insert Shape)
+#: part/KPrShapeAnimations.cpp:203 stage.rc:75
+msgid "Shape"
+msgstr "रूप"
 
 #: part/KPrSlidesSorterDocumentModel.cpp:299
 msgid "&Move Here"
@@ -619,23 +682,75 @@ msgstr "स्लाइड सो (&d)"
 msgid "&Settings"
 msgstr "सेटिंग (&S)"
 
-#: part/tools/animationtool/KPrAnimationTool.cpp:85
+#: part/tools/animationtool/KPrAnimationSelectorWidget.cpp:67
+msgid "Automatic animation preview"
+msgstr ""
+
+#: part/tools/animationtool/KPrAnimationSelectorWidget.cpp:325
+#: part/tools/animationtool/KPrAnimationSelectorWidget.cpp:333
+#, fuzzy
+#| msgid "Presentation"
+msgid "Preview animation"
+msgstr "प्रस्तुतीकरन"
+
+#: part/tools/animationtool/KPrAnimationTool.cpp:219
 #, fuzzy
 #| msgid "Slide Show"
 msgid "Slide Transitions"
 msgstr "स्लाइड सो"
 
-#: part/tools/animationtool/KPrAnimationTool.cpp:87
+#: part/tools/animationtool/KPrAnimationTool.cpp:221
 #, fuzzy
 #| msgid "Shape Animation"
 msgid "Shape Click Actions"
 msgstr "आकार एनिमेसन"
 
-#: part/tools/animationtool/KPrAnimationToolFactory.cpp:33
+#: part/tools/animationtool/KPrAnimationTool.cpp:223
 #, fuzzy
 #| msgid "Animation tool"
-msgid "Animation"
+msgid "Shape Animations"
 msgstr "एनिमेसन औजार"
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:70
+msgid "Manage animation delay and duration: "
+msgstr ""
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:71
+#, fuzzy
+#| msgid "Star"
+msgid "Start: "
+msgstr "तारा"
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:75
+msgid "on mouse click"
+msgstr ""
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:76
+#, fuzzy
+#| msgid "Create shape animation"
+msgid "after previous animation"
+msgstr "आकार एनिमेसन बनाव"
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:77
+#, fuzzy
+#| msgid "Create shape animation"
+msgid "with previous animation"
+msgstr "आकार एनिमेसन बनाव"
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:79
+msgid "Delay: "
+msgstr ""
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:84
+msgid "Duration: "
+msgstr ""
+
+#: part/tools/animationtool/KPrEditAnimationsWidget.cpp:91
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:143
+#, fuzzy
+#| msgid "Create shape animation"
+msgid "Preview Shape Animation"
+msgstr "आकार एनिमेसन बनाव"
 
 #: part/tools/animationtool/KPrPageEffectDocker.cpp:56
 msgid "No Effect"
@@ -644,6 +759,82 @@ msgstr "कोई प्रभाव नइ"
 #: part/tools/animationtool/KPrPageEffectDocker.cpp:79
 msgid " sec"
 msgstr "सेक."
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:181
+msgid "Entrance"
+msgstr ""
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:187
+msgid "Exit"
+msgstr ""
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:192
+msgid "Emphasis"
+msgstr ""
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:197
+msgid "Custom"
+msgstr ""
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:202
+msgid "Motion path"
+msgstr ""
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:207
+msgid "Ole Action"
+msgstr ""
+
+#: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:212
+msgid "Media Call"
+msgstr ""
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:94
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:99
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:531
+#, fuzzy
+#| msgid "Animation tool"
+msgid "Edit animation"
+msgstr "एनिमेसन औजार"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:113
+#, fuzzy
+#| msgid "Animation tool"
+msgid "Add new animation"
+msgstr "एनिमेसन औजार"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:126
+#, fuzzy
+#| msgid "Animation tool"
+msgid "Remove animation"
+msgstr "एनिमेसन औजार"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:130
+msgid "Order: "
+msgstr ""
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:133
+#, fuzzy
+#| msgid "Animation tool"
+msgid "Move animation up"
+msgstr "एनिमेसन औजार"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:138
+#, fuzzy
+#| msgid "Animation Tool"
+msgid "Move animation down"
+msgstr "एनिमेसन औजार"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:529
+#, fuzzy
+#| msgid "Add new slideshow"
+msgid "Add a new animation"
+msgstr "नवा स्लाइडसो जोड़व"
+
+#: part/tools/animationtool/KPrShapeAnimationDocker.cpp:530
+#, fuzzy
+#| msgid "Delete the current slide"
+msgid "Delete current animation"
+msgstr "अभी हाल के स्लाइड मेटाव"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolCrop)
 #: part/tools/animationtool/wdg_tool_crop.ui:16
@@ -1870,11 +2061,6 @@ msgstr "फाइल (&F)"
 msgid "Line"
 msgstr "पंक्ति"
 
-#. i18n: ectx: Menu (Insert Shape)
-#: stage.rc:75
-msgid "Shape"
-msgstr "रूप"
-
 #. i18n: ectx: Menu (Arrange Objects)
 #: stage.rc:93
 msgid "Arra&nge Objects"
@@ -2018,9 +2204,6 @@ msgstr "प्रस्तुतीकरन"
 
 #~ msgid "KPresenter"
 #~ msgstr "के-प्रेजेंटर"
-
-#~ msgid "Animation Tool"
-#~ msgstr "एनिमेसन औजार"
 
 #~ msgid "&OK"
 #~ msgstr "ठीक (&O)"
