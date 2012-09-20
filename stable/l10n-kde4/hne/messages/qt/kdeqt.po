@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeqt\n"
 "Report-Msgid-Bugs-To: qt-bugs@trolltech.com\n"
-"POT-Creation-Date: 2012-09-08 13:06+0200\n"
+"POT-Creation-Date: 2012-09-20 13:02+0200\n"
 "PO-Revision-Date: 2009-03-02 21:02+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1735,6 +1735,25 @@ msgctxt "QIODevice"
 msgid "No space left on device"
 msgstr "उपकरन तिर कोनो जगह नइ बचिस"
 
+#: corelib/io/qprocess.cpp:884 corelib/io/qprocess.cpp:936
+#: corelib/io/qprocess_win.cpp:601 corelib/io/qprocess_win.cpp:651
+#, fuzzy
+msgid "Error reading from process"
+msgstr "एसएसएल सत्र %1 बनाए मं गलती"
+
+#: corelib/io/qprocess.cpp:983 corelib/io/qprocess.cpp:1852
+#: corelib/io/qprocess_win.cpp:791
+msgid "Error writing to process"
+msgstr ""
+
+#: corelib/io/qprocess.cpp:1052
+msgid "Process crashed"
+msgstr ""
+
+#: corelib/io/qprocess.cpp:2054
+msgid "No program defined"
+msgstr ""
+
 #: corelib/io/qiodevice.cpp:1630 corelib/plugin/qlibrary.cpp:1236
 #: corelib/plugin/qpluginloader.cpp:367
 #: corelib/statemachine/qstatemachine.cpp:1046
@@ -1765,25 +1784,6 @@ msgstr ""
 #, fuzzy
 msgid "Process operation timed out"
 msgstr "साकेट आपरेसन टाइम आउट होइस"
-
-#: corelib/io/qprocess.cpp:884 corelib/io/qprocess.cpp:936
-#: corelib/io/qprocess_win.cpp:601 corelib/io/qprocess_win.cpp:651
-#, fuzzy
-msgid "Error reading from process"
-msgstr "एसएसएल सत्र %1 बनाए मं गलती"
-
-#: corelib/io/qprocess.cpp:983 corelib/io/qprocess.cpp:1852
-#: corelib/io/qprocess_win.cpp:791
-msgid "Error writing to process"
-msgstr ""
-
-#: corelib/io/qprocess.cpp:1052
-msgid "Process crashed"
-msgstr ""
-
-#: corelib/io/qprocess.cpp:2054
-msgid "No program defined"
-msgstr ""
 
 #: corelib/io/qprocess_win.cpp:431
 #, qt-format
@@ -6485,6 +6485,69 @@ msgstr "साकेट आपरेसन टाइम आउट होइस"
 msgid "Socket is not connected"
 msgstr "साकेट कनेक्टेड नइ हे"
 
+#: network/ssl/qsslsocket_openssl.cpp:287
+#, qt-format
+msgid "Error creating SSL context (%1)"
+msgstr "एसएसएल संदर्भ (%1) बनाए मं गलती"
+
+#: network/ssl/qsslsocket_openssl.cpp:341
+#, qt-format
+msgid "Invalid or empty cipher list (%1)"
+msgstr "अवैध या खाली साइफर सूची (%1)"
+
+#: network/ssl/qsslsocket_openssl.cpp:385
+#, qt-format
+msgid "Cannot provide a certificate with no key, %1"
+msgstr "नइ कुंजी %1 के साथ प्रमानपत्र प्रदाय नइ कर सकिस"
+
+#: network/ssl/qsslsocket_openssl.cpp:392
+#, qt-format
+msgid "Error loading local certificate, %1"
+msgstr "लोकल प्रमानपत्र %1 ल लोड करे मं गलती होइस"
+
+#: network/ssl/qsslsocket_openssl.cpp:407
+#, qt-format
+msgid "Error loading private key, %1"
+msgstr "प्राइवेट कुंजी %1 ल लोड करे मं गलती होइस"
+
+#: network/ssl/qsslsocket_openssl.cpp:414
+#, fuzzy, qt-format
+#| msgid "Private key does not certificate public key, %1"
+msgid "Private key does not certify public key, %1"
+msgstr "निजी कुंजी सार्वजनिक कुंजी %1 ल प्रमानपत्र नइ देथे "
+
+#: network/ssl/qsslsocket_openssl.cpp:434
+#, qt-format
+msgid "Error creating SSL session, %1"
+msgstr "एसएसएल सत्र %1 बनाए मं गलती"
+
+#: network/ssl/qsslsocket_openssl.cpp:470
+#, qt-format
+msgid "Error creating SSL session: %1"
+msgstr "एसएसएल सत्र: %1 बनाए मं गलती"
+
+#: network/ssl/qsslsocket_openssl.cpp:1023
+#, qt-format
+msgid "Unable to write data: %1"
+msgstr "डाटा: %1 लिखे मं अक्छम"
+
+#: network/ssl/qsslsocket_openssl.cpp:1093
+#, fuzzy, qt-format
+#| msgid "Unable to write data: %1"
+msgid "Unable to decrypt data: %1"
+msgstr "डाटा: %1 लिखे मं अक्छम"
+
+#: network/ssl/qsslsocket_openssl.cpp:1171
+#: network/ssl/qsslsocket_openssl.cpp:1181
+#, qt-format
+msgid "Error while reading: %1"
+msgstr "पढते समय गलती:%1"
+
+#: network/ssl/qsslsocket_openssl.cpp:1276
+#, qt-format
+msgid "Error during SSL handshake: %1"
+msgstr "एसएसएल हेडसेक करे के समय गलती: %1"
+
 #: network/ssl/qsslerror.cpp:217
 msgid "The issuer certificate could not be found"
 msgstr ""
@@ -6579,69 +6642,6 @@ msgstr ""
 #: network/ssl/qsslerror.cpp:286
 msgid "The peer certificate is blacklisted"
 msgstr ""
-
-#: network/ssl/qsslsocket_openssl.cpp:287
-#, qt-format
-msgid "Error creating SSL context (%1)"
-msgstr "एसएसएल संदर्भ (%1) बनाए मं गलती"
-
-#: network/ssl/qsslsocket_openssl.cpp:341
-#, qt-format
-msgid "Invalid or empty cipher list (%1)"
-msgstr "अवैध या खाली साइफर सूची (%1)"
-
-#: network/ssl/qsslsocket_openssl.cpp:385
-#, qt-format
-msgid "Cannot provide a certificate with no key, %1"
-msgstr "नइ कुंजी %1 के साथ प्रमानपत्र प्रदाय नइ कर सकिस"
-
-#: network/ssl/qsslsocket_openssl.cpp:392
-#, qt-format
-msgid "Error loading local certificate, %1"
-msgstr "लोकल प्रमानपत्र %1 ल लोड करे मं गलती होइस"
-
-#: network/ssl/qsslsocket_openssl.cpp:407
-#, qt-format
-msgid "Error loading private key, %1"
-msgstr "प्राइवेट कुंजी %1 ल लोड करे मं गलती होइस"
-
-#: network/ssl/qsslsocket_openssl.cpp:414
-#, fuzzy, qt-format
-#| msgid "Private key does not certificate public key, %1"
-msgid "Private key does not certify public key, %1"
-msgstr "निजी कुंजी सार्वजनिक कुंजी %1 ल प्रमानपत्र नइ देथे "
-
-#: network/ssl/qsslsocket_openssl.cpp:434
-#, qt-format
-msgid "Error creating SSL session, %1"
-msgstr "एसएसएल सत्र %1 बनाए मं गलती"
-
-#: network/ssl/qsslsocket_openssl.cpp:470
-#, qt-format
-msgid "Error creating SSL session: %1"
-msgstr "एसएसएल सत्र: %1 बनाए मं गलती"
-
-#: network/ssl/qsslsocket_openssl.cpp:1023
-#, qt-format
-msgid "Unable to write data: %1"
-msgstr "डाटा: %1 लिखे मं अक्छम"
-
-#: network/ssl/qsslsocket_openssl.cpp:1093
-#, fuzzy, qt-format
-#| msgid "Unable to write data: %1"
-msgid "Unable to decrypt data: %1"
-msgstr "डाटा: %1 लिखे मं अक्छम"
-
-#: network/ssl/qsslsocket_openssl.cpp:1171
-#: network/ssl/qsslsocket_openssl.cpp:1181
-#, qt-format
-msgid "Error while reading: %1"
-msgstr "पढते समय गलती:%1"
-
-#: network/ssl/qsslsocket_openssl.cpp:1276
-#, qt-format
-msgid "Error during SSL handshake: %1"
-msgstr "एसएसएल हेडसेक करे के समय गलती: %1"
 
 #: plugins/accessible/compat/q3complexwidgets.cpp:246
 msgid "System"
