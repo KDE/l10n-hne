@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-10-12 12:42+0200\n"
+"POT-Creation-Date: 2012-10-13 13:00+0200\n"
 "PO-Revision-Date: 2009-01-30 18:10+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1472,17 +1472,17 @@ msgstr ""
 msgid "Do you really want to close all other tabs?"
 msgstr "का आप मन सही मं अउ सब्बो टैब बन्द करना चाहथो ?"
 
-#: src/konqmainwindow.cpp:2596 src/konqmainwindow.cpp:3722
-#: src/konqtabs.cpp:353
-msgid "Close &Other Tabs"
-msgstr "अऊ दूसर टैब बन्द करव (&O)"
-
 #: src/konqmainwindow.cpp:2596
 #, fuzzy
 #| msgid "Close Other Tabs Confirmation"
 msgctxt "@title:window"
 msgid "Close Other Tabs Confirmation"
 msgstr "अऊ दूसर टैब बन्द करे बर पुस्टि"
+
+#: src/konqmainwindow.cpp:2596 src/konqmainwindow.cpp:3722
+#: src/konqtabs.cpp:355
+msgid "Close &Other Tabs"
+msgstr "अऊ दूसर टैब बन्द करव (&O)"
 
 #: src/konqmainwindow.cpp:2611
 msgid ""
@@ -1626,7 +1626,7 @@ msgstr "विभाजित दृस्य डेरी / जेवनी (&L
 msgid "Split View &Top/Bottom"
 msgstr "विभाजित दृस्य ऊपर / नीचे (&T)"
 
-#: src/konqmainwindow.cpp:3695 src/konqtabs.cpp:464
+#: src/konqmainwindow.cpp:3695 src/konqtabs.cpp:462
 msgid "&New Tab"
 msgstr "नवा टैब (&N)"
 
@@ -1679,7 +1679,7 @@ msgstr "दृस्य प्रोफाइल कान्फिगर कर
 msgid "Load &View Profile"
 msgstr "दृस्य प्रोफाइल लोड करव (&V)"
 
-#: src/konqmainwindow.cpp:3784 src/konqtabs.cpp:330
+#: src/konqmainwindow.cpp:3784 src/konqtabs.cpp:332
 msgid "&Reload All Tabs"
 msgstr "सब्बो टैब फिर से लोड करव (&R)"
 
@@ -2100,58 +2100,39 @@ msgstr "मेटाव"
 msgid "Open tabs inside current window"
 msgstr "टैब ल अभी हाल के विंडो मं खोलव"
 
-#: src/konqsessionmanager.cpp:98
+#: src/konqsessionmanager.cpp:330
+#, fuzzy
+msgid ""
+"Konqueror did not close correctly. Would you like to restore the previous "
+"session?"
+msgstr "कान्करर ठीक से बंद नइ होय हे. का आप मन सत्र ल बहाल करना चाहथो?"
+
+#: src/konqsessionmanager.cpp:332
 #, fuzzy
 #| msgid "Restore Session?"
 msgctxt "@title:window"
 msgid "Restore Session?"
 msgstr "सत्र ल बहाल करव?"
 
-#: src/konqsessionmanager.cpp:101
+#: src/konqsessionmanager.cpp:333
 #, fuzzy
 #| msgid "Restore Session"
-msgctxt "@action:button yes"
 msgid "Restore Session"
 msgstr "सत्र ल बहाल करव"
 
-#: src/konqsessionmanager.cpp:102
+#: src/konqsessionmanager.cpp:334
 #, fuzzy
 #| msgid "Do Not Restore"
-msgctxt "@action:button no"
 msgid "Do Not Restore"
 msgstr "बहाल नइ करव"
 
-#: src/konqsessionmanager.cpp:103
+#: src/konqsessionmanager.cpp:335
 #, fuzzy
 #| msgid "Ask Me Later"
-msgctxt "@action:button ask later"
 msgid "Ask Me Later"
 msgstr "मोला बाद मं पूछव"
 
-#: src/konqsessionmanager.cpp:131
-#, fuzzy
-msgid ""
-"Konqueror did not close correctly. Would you like to restore these previous "
-"sessions?"
-msgstr "कान्करर ठीक से बंद नइ होय हे. का आप मन सत्र ल बहाल करना चाहथो?"
-
-#: src/konqsessionmanager.cpp:145
-msgctxt "@tooltip:session list"
-msgid "Uncheck the sessions you do not want to be restored"
-msgstr ""
-
-#: src/konqsessionmanager.cpp:177
-#, fuzzy, kde-format
-#| msgid "&Window"
-msgctxt "@item:treewidget"
-msgid "Window %1"
-msgstr "विंडो (&W)"
-
-#: src/konqsessionmanager.cpp:218
-msgid "Do not ask again"
-msgstr ""
-
-#: src/konqtabs.cpp:67
+#: src/konqtabs.cpp:66
 msgid ""
 "This bar contains the list of currently open tabs. Click on a tab to make it "
 "active. You can also use keyboard shortcuts to navigate through tabs. The "
@@ -2160,31 +2141,31 @@ msgid ""
 "tab width."
 msgstr ""
 
-#: src/konqtabs.cpp:101
+#: src/konqtabs.cpp:100
 msgid "Open a new tab"
 msgstr "नवा टैब खोलव"
 
-#: src/konqtabs.cpp:110
+#: src/konqtabs.cpp:109
 msgid "Close the current tab"
 msgstr "अभी हाल के टैब बंद करव"
 
-#: src/konqtabs.cpp:469
+#: src/konqtabs.cpp:467
 msgid "&Duplicate Tab"
 msgstr "टैब के नकल (&D)"
 
-#: src/konqtabs.cpp:474
+#: src/konqtabs.cpp:472
 msgid "&Reload Tab"
 msgstr "टैब फिर से लोड करव (&R)"
 
-#: src/konqtabs.cpp:481
+#: src/konqtabs.cpp:479
 msgid "Other Tabs"
 msgstr "अऊ दूसर टैब"
 
-#: src/konqtabs.cpp:486
+#: src/konqtabs.cpp:484
 msgid "D&etach Tab"
 msgstr "टैब ल अलग करव (&e)"
 
-#: src/konqtabs.cpp:492
+#: src/konqtabs.cpp:490
 msgid "&Close Tab"
 msgstr "टैब बंद करव (&C)"
 
@@ -2451,6 +2432,12 @@ msgid ""
 msgstr ""
 "ये टैब मं ओ बदलाव हे जऊन ल जमा नइ करे गे हे.\n"
 "प्रोफाइल ल लोड करे से ये बदलाव मिट जाही."
+
+#, fuzzy
+#~| msgid "&Window"
+#~ msgctxt "@item:treewidget"
+#~ msgid "Window %1"
+#~ msgstr "विंडो (&W)"
 
 #~ msgid " min"
 #~ msgstr " मि."
