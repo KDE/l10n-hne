@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-12-31 02:24+0100\n"
+"POT-Creation-Date: 2013-01-21 02:41+0100\n"
 "PO-Revision-Date: 2009-02-17 12:43+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -42,7 +42,7 @@ msgid "Image Preview"
 msgstr "फोटू प्रिव्यू"
 
 #: AnnotationDialog/Dialog.cpp:104 AnnotationDialog/Dialog.cpp:108
-#: HTMLGenerator/HTMLDialog.cpp:109 ImportExport/MD5CheckPage.cpp:75
+#: HTMLGenerator/HTMLDialog.cpp:110 ImportExport/MD5CheckPage.cpp:75
 msgid "Description"
 msgstr "वर्नन"
 
@@ -264,7 +264,7 @@ msgid "OK dialog"
 msgstr "ठीक हे गोठ"
 
 #: AnnotationDialog/Dialog.cpp:1032 AnnotationDialog/ListSelect.cpp:302
-#: Settings/CategoryPage.cpp:102
+#: Settings/CategoryPage.cpp:100
 msgid "Delete"
 msgstr "मेटाव"
 
@@ -273,12 +273,12 @@ msgid "Copy tags from previous image"
 msgstr "पिछला फोटू से टैग नकल करव"
 
 #: AnnotationDialog/Dialog.cpp:1040 AnnotationDialog/ImagePreviewWidget.cpp:56
-#: MainWindow/Window.cpp:730 Viewer/ViewerWidget.cpp:270
+#: MainWindow/Window.cpp:729 Viewer/ViewerWidget.cpp:270
 msgid "Rotate counterclockwise"
 msgstr "घड़ी के उलटा दिसा मं घुमाव"
 
 #: AnnotationDialog/Dialog.cpp:1043 AnnotationDialog/ImagePreviewWidget.cpp:62
-#: MainWindow/Window.cpp:735 Viewer/ViewerWidget.cpp:260
+#: MainWindow/Window.cpp:734 Viewer/ViewerWidget.cpp:260
 msgid "Rotate clockwise"
 msgstr "घड़ी के दिसा मं घुमाव"
 
@@ -304,15 +304,15 @@ msgstr "पिछले टैग करे फोटू मं से टैग
 msgid "Delete image"
 msgstr "फोटू मेटाव"
 
-#: AnnotationDialog/KDateEdit.cpp:85
+#: AnnotationDialog/KDateEdit.cpp:88
 msgid "tomorrow"
 msgstr "कल"
 
-#: AnnotationDialog/KDateEdit.cpp:86
+#: AnnotationDialog/KDateEdit.cpp:89
 msgid "today"
 msgstr "आज"
 
-#: AnnotationDialog/KDateEdit.cpp:87
+#: AnnotationDialog/KDateEdit.cpp:90
 msgid "yesterday"
 msgstr "कल"
 
@@ -385,7 +385,7 @@ msgstr ""
 msgid "Really Delete %1?"
 msgstr "सचमुच %1 ल मेटाव?"
 
-#: AnnotationDialog/ListSelect.cpp:375 Settings/SubCategoriesPage.cpp:189
+#: AnnotationDialog/ListSelect.cpp:375 Settings/SubCategoriesPage.cpp:191
 msgid "&Delete"
 msgstr "मेटाव (&D)"
 
@@ -481,9 +481,17 @@ msgstr ""
 msgid "Continue"
 msgstr "सामग्री"
 
-#: BackgroundTaskManager/JobViewer.cpp:60 Viewer/ViewerWidget.cpp:505
+#. i18n: ectx: property (text), widget (QPushButton, pause)
+#: BackgroundTaskManager/JobViewer.cpp:60
+#: BackgroundTaskManager/JobViewer.ui:45 Viewer/ViewerWidget.cpp:505
 msgid "Pause"
 msgstr "ठहरव"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#: BackgroundTaskManager/JobViewer.ui:52 ImportExport/MiniViewer.cpp:69
+#: Viewer/ViewerWidget.cpp:163
+msgid "Close"
+msgstr "बंद करव"
 
 #: BackgroundTaskManager/StatusIndicator.cpp:89
 #, kde-format
@@ -564,7 +572,7 @@ msgstr "खोज तिर कोनो फोटू या वीडियो 
 msgid "Empty Search Result"
 msgstr "खोज परिनाम खाली"
 
-#: Browser/OverviewPage.cpp:236 Exif/SearchDialog.cpp:37
+#: Browser/OverviewPage.cpp:236 Exif/SearchDialog.cpp:36
 msgid "EXIF Search"
 msgstr "एक्जइफ बर खोजव"
 
@@ -849,19 +857,19 @@ msgstr ""
 msgid "Rereading EXIF information from all images"
 msgstr "सब्बो फोटू मन से एक्जिफ जानकारी लोड करत हे "
 
-#: Exif/InfoDialog.cpp:37
+#: Exif/InfoDialog.cpp:36
 msgid "EXIF Information"
 msgstr "एक्सइफ जानकारी"
 
-#: Exif/InfoDialog.cpp:66
+#: Exif/InfoDialog.cpp:65
 msgid "Current EXIF Label Search: "
 msgstr "अभी हाल के एक्जइफ लेबल खोज:"
 
-#: Exif/InfoDialog.cpp:80
+#: Exif/InfoDialog.cpp:79
 msgid "IPTC character set:"
 msgstr "आईपीटीसी अक्छर सेटः"
 
-#: Exif/InfoDialog.cpp:100
+#: Exif/InfoDialog.cpp:99
 msgid "<No Search>"
 msgstr "<कोई खोज नइ>"
 
@@ -905,7 +913,7 @@ msgstr ""
 msgid "Override image dates"
 msgstr "फोटू तारीक ओवरराइड करव"
 
-#: Exif/SearchDialog.cpp:42 Settings/SettingsDialog.cpp:93
+#: Exif/SearchDialog.cpp:41 Settings/SettingsDialog.cpp:93
 msgid "Settings"
 msgstr "सेटिंग"
 
@@ -917,15 +925,15 @@ msgstr "एपर्चर मान"
 msgid "F Number"
 msgstr "एफ संख्या"
 
-#: Exif/SearchDialog.cpp:70
+#: Exif/SearchDialog.cpp:73
 msgid "Focal Length"
 msgstr "फोकल लम्बाई"
 
-#: Exif/SearchDialog.cpp:74
+#: Exif/SearchDialog.cpp:81
 msgid "to"
 msgstr "से"
 
-#: Exif/SearchDialog.cpp:80
+#: Exif/SearchDialog.cpp:90
 #, fuzzy
 #| msgctxt "This is milimeter for focal length, like 35mm"
 #| msgid "mm"
@@ -933,161 +941,56 @@ msgctxt "This is millimeter for focal length, like 35mm"
 msgid "mm"
 msgstr "मिमी"
 
-#: Exif/SearchDialog.cpp:96
+#: Exif/SearchDialog.cpp:106
 msgid "Camera"
 msgstr "कैमरा"
 
-#: Exif/SearchDialog.cpp:101 Settings/GeneralPage.cpp:109
+#: Exif/SearchDialog.cpp:111 Settings/GeneralPage.cpp:109
 msgid "Miscellaneous"
 msgstr "विविध"
 
-#: Exif/SearchDialog.cpp:127
+#: Exif/SearchDialog.cpp:137
 msgid "Iso setting"
 msgstr "आईएसओ सेटिंग"
 
-#: Exif/SearchDialog.cpp:132
+#: Exif/SearchDialog.cpp:142
 msgctxt "Example 1.6 secs (as in seconds)"
 msgid "secs."
 msgstr "सेकन्ड"
 
-#: Exif/SearchDialog.cpp:171
+#: Exif/SearchDialog.cpp:181
 msgid "1 second"
 msgstr "1 सेकन्ड"
 
-#: Exif/SearchDialog.cpp:188
+#: Exif/SearchDialog.cpp:198
 msgid "Exposure time"
 msgstr "एक्सपोजर समय"
 
-#: Exif/SearchDialog.cpp:231
+#: Exif/SearchDialog.cpp:248
 msgid "Exposure Program"
 msgstr "एक्सपोजर प्रोग्राम"
 
-#: Exif/SearchDialog.cpp:232
-msgid "Not defined"
-msgstr "परिभासित नइ"
-
-#: Exif/SearchDialog.cpp:233
-msgid "Manual"
-msgstr "हस्तचालित"
-
-#: Exif/SearchDialog.cpp:234
-msgid "Normal program"
-msgstr "सामान्य प्रोग्राम"
-
-#: Exif/SearchDialog.cpp:235
-msgid "Aperture priority"
-msgstr "एपर्चर प्राथमिकता"
-
-#: Exif/SearchDialog.cpp:236
-msgid "Shutter priority"
-msgstr "सटर प्राथमिकता"
-
-#: Exif/SearchDialog.cpp:237
-msgid "Creative program (biased toward depth of field)"
-msgstr "क्रिएटिव प्रोग्राम (छेत्र के गहराई के तरफ बायस्ड)"
-
-#: Exif/SearchDialog.cpp:238
-msgid "Action program (biased toward fast shutter speed)"
-msgstr "एक्सन प्रोग्राम (तेज सटर गति के तरफ बायस्ड)"
-
-#: Exif/SearchDialog.cpp:239
-msgid "Portrait mode (for closeup photos with the background out of focus)"
-msgstr "पोर्ट्रेट मोड (क्लोज-अप फोटो बर, पिछोत अंगना फोकस से बाहिर)"
-
-#: Exif/SearchDialog.cpp:240
-msgid "Landscape mode (for landscape photos with the background in focus)"
-msgstr "लैंडस्केप मोड (लैंडस्केप फोटो बर, पिछोत अंगना मं फोकस सहित)"
-
-#: Exif/SearchDialog.cpp:246 ImportExport/MD5CheckPage.cpp:76
+#: Exif/SearchDialog.cpp:265 ImportExport/MD5CheckPage.cpp:76
 msgid "Orientation"
 msgstr "दिसा"
 
-#: Exif/SearchDialog.cpp:247
-msgid "Not rotated"
-msgstr "नइ घूमे हे"
-
-#: Exif/SearchDialog.cpp:248
-msgid "Rotated counterclockwise"
-msgstr "घड़ी के उलटा दिसा मं घुमाइस"
-
-#: Exif/SearchDialog.cpp:249
-msgid "Rotated clockwise"
-msgstr "घड़ी के दिसा मं घुमाइस"
-
-#: Exif/SearchDialog.cpp:250
-msgid "Rotated 180 degrees"
-msgstr "180 अंस घुमाइस"
-
-#: Exif/SearchDialog.cpp:256
+#: Exif/SearchDialog.cpp:277
 msgid "Metering Mode"
 msgstr "मीटरिंग मोड"
 
-#: Exif/SearchDialog.cpp:257
-msgid "Unknown"
-msgstr "अग्यात"
-
-#: Exif/SearchDialog.cpp:258
-msgid "Average"
-msgstr "औसत"
-
-#: Exif/SearchDialog.cpp:259
-msgid "CenterWeightedAverage"
-msgstr "सेंटरविजेटएवरेज"
-
-#: Exif/SearchDialog.cpp:260
-msgid "Spot"
-msgstr "स्पाट"
-
-#: Exif/SearchDialog.cpp:261
-msgid "MultiSpot"
-msgstr "मल्टिस्पाट"
-
-#: Exif/SearchDialog.cpp:262
-msgid "Pattern"
-msgstr "पैटर्न"
-
-#: Exif/SearchDialog.cpp:263
-msgid "Partial"
-msgstr "आंसिक "
-
-#: Exif/SearchDialog.cpp:264
-msgid "Other"
-msgstr "अन्य"
-
-#: Exif/SearchDialog.cpp:270
+#: Exif/SearchDialog.cpp:293
 msgid "Contrast"
 msgstr "कंट्रास्ट"
 
-#: Exif/SearchDialog.cpp:271 Exif/SearchDialog.cpp:280
-#: Exif/SearchDialog.cpp:289
-msgid "Normal"
-msgstr "सामान्य"
-
-#: Exif/SearchDialog.cpp:272 Exif/SearchDialog.cpp:281
-msgid "Soft"
-msgstr "साफ्ट"
-
-#: Exif/SearchDialog.cpp:273 Exif/SearchDialog.cpp:282
-msgid "Hard"
-msgstr "कठोर"
-
-#: Exif/SearchDialog.cpp:279
+#: Exif/SearchDialog.cpp:304
 msgid "Sharpness"
 msgstr "सुस्पस्टता"
 
-#: Exif/SearchDialog.cpp:288
+#: Exif/SearchDialog.cpp:315
 msgid "Saturation"
 msgstr "संतृप्ति"
 
-#: Exif/SearchDialog.cpp:290
-msgid "Low"
-msgstr "निम्न"
-
-#: Exif/SearchDialog.cpp:291
-msgid "High"
-msgstr "जादा"
-
-#: Exif/SearchDialog.cpp:343
+#: Exif/SearchDialog.cpp:372
 msgid "No cameras found in the database"
 msgstr "डाटाबेस मं कोई केमरा नइ मिलिस"
 
@@ -1142,67 +1045,67 @@ msgstr "<p>'%1' के नकल '%2' मं करे मं अक्छम</p
 msgid "Unable to write image '%1'."
 msgstr "फोटू '%1' लिखे मं असमर्थ."
 
-#: HTMLGenerator/Generator.cpp:678 HTMLGenerator/HTMLDialog.cpp:113
+#: HTMLGenerator/Generator.cpp:678 HTMLGenerator/HTMLDialog.cpp:114
 #, fuzzy
 #| msgid "Date: "
 msgid "Date"
 msgstr "तारीक:"
 
-#: HTMLGenerator/HTMLDialog.cpp:51
+#: HTMLGenerator/HTMLDialog.cpp:52
 msgid "HTML Export"
 msgstr "एचटीएमएल निर्यात"
 
-#: HTMLGenerator/HTMLDialog.cpp:64 HTMLGenerator/HTMLDialog.cpp:65
+#: HTMLGenerator/HTMLDialog.cpp:65 HTMLGenerator/HTMLDialog.cpp:66
 msgid "Content"
 msgstr "सामग्री"
 
-#: HTMLGenerator/HTMLDialog.cpp:73
+#: HTMLGenerator/HTMLDialog.cpp:74
 msgid "Page title:"
 msgstr "पेज सीर्सकः"
 
-#: HTMLGenerator/HTMLDialog.cpp:80
+#: HTMLGenerator/HTMLDialog.cpp:81
 msgid "Copyright:"
 msgstr ""
 
-#: HTMLGenerator/HTMLDialog.cpp:89
+#: HTMLGenerator/HTMLDialog.cpp:90
 msgid "Description:"
 msgstr "वर्ननः"
 
-#: HTMLGenerator/HTMLDialog.cpp:96
+#: HTMLGenerator/HTMLDialog.cpp:97
 msgid "Create .kim export file"
 msgstr ".kim निर्यात फाइल बनाव"
 
-#: HTMLGenerator/HTMLDialog.cpp:100
+#: HTMLGenerator/HTMLDialog.cpp:101
 msgid "Inline Movies in pages"
 msgstr "पेज मन मं इनलाइन सिनेमा"
 
-#: HTMLGenerator/HTMLDialog.cpp:105
+#: HTMLGenerator/HTMLDialog.cpp:106
 msgid "What to Include"
 msgstr "का सामिल करव"
 
-#: HTMLGenerator/HTMLDialog.cpp:142 HTMLGenerator/HTMLDialog.cpp:143
+#: HTMLGenerator/HTMLDialog.cpp:143 HTMLGenerator/HTMLDialog.cpp:144
 msgid "Layout"
 msgstr "ले-आउट"
 
-#: HTMLGenerator/HTMLDialog.cpp:152
+#: HTMLGenerator/HTMLDialog.cpp:153
 msgid "Thumbnail size:"
 msgstr "छोटे फोटू आकारः"
 
-#: HTMLGenerator/HTMLDialog.cpp:167
+#: HTMLGenerator/HTMLDialog.cpp:168
 msgid "Number of columns:"
 msgstr "खंभा मन के संख्या:"
 
-#: HTMLGenerator/HTMLDialog.cpp:182
+#: HTMLGenerator/HTMLDialog.cpp:183
 msgid "Theme:"
 msgstr "प्रसंगः"
 
-#: HTMLGenerator/HTMLDialog.cpp:190
+#: HTMLGenerator/HTMLDialog.cpp:191
 #, fuzzy
 #| msgid "Show Description"
 msgid "Theme Description"
 msgstr "वर्नन देखाव"
 
-#: HTMLGenerator/HTMLDialog.cpp:197
+#: HTMLGenerator/HTMLDialog.cpp:198
 msgid "Image Sizes"
 msgstr "फोटू आकार"
 
@@ -1348,49 +1251,49 @@ msgstr ""
 msgid "Building thumbnails"
 msgstr "छोटे फोटू बनाव"
 
-#: ImportExport/Export.cpp:72
+#: ImportExport/Export.cpp:71
 msgid "Export Configuration / Copy Images"
 msgstr "निर्यात कान्फिगरेसन / फोटू नकल करव"
 
-#: ImportExport/Export.cpp:80
+#: ImportExport/Export.cpp:79
 msgid "How to Handle Images"
 msgstr "फोटू कइसन हेंडल करव"
 
-#: ImportExport/Export.cpp:84
+#: ImportExport/Export.cpp:83
 msgid "Include in .kim file"
 msgstr ".kim फाइल मं सामिल करव"
 
-#: ImportExport/Export.cpp:85
+#: ImportExport/Export.cpp:84
 msgid "Manual copy next to .kim file"
 msgstr ".kim फाइल के बाद नकल हस्तचालित बनाव"
 
-#: ImportExport/Export.cpp:86
+#: ImportExport/Export.cpp:85
 msgid "Automatically copy next to .kim file"
 msgstr ".kim फाइल के बाद नकल अपने अपन बनाव"
 
-#: ImportExport/Export.cpp:87
+#: ImportExport/Export.cpp:86
 msgid "Hard link next to .kim file"
 msgstr ".kim फाइल मं हार्ड संकली"
 
-#: ImportExport/Export.cpp:88
+#: ImportExport/Export.cpp:87
 #, fuzzy
 #| msgid "Hard link next to .kim file"
 msgid "Symbolic link next to .kim file"
 msgstr ".kim फाइल मं हार्ड संकली"
 
-#: ImportExport/Export.cpp:98
+#: ImportExport/Export.cpp:97
 msgid "Compress export file"
 msgstr "निर्यात फाइल संपीडित करव"
 
-#: ImportExport/Export.cpp:102
+#: ImportExport/Export.cpp:101
 msgid "Generate thumbnails"
 msgstr "छोटे फोटू तैयार करव"
 
-#: ImportExport/Export.cpp:110
+#: ImportExport/Export.cpp:109
 msgid "Limit maximum image dimensions to: "
 msgstr "फोटू के सबसे अधिक आकार इहां तक सीमित करव:"
 
-#: ImportExport/Export.cpp:122
+#: ImportExport/Export.cpp:121
 msgid ""
 "<p>If your images are stored in a non-compressed file format then you may "
 "check this; otherwise, this just wastes time during import and export "
@@ -1399,11 +1302,11 @@ msgid ""
 "tiff.</p>"
 msgstr ""
 
-#: ImportExport/Export.cpp:128
+#: ImportExport/Export.cpp:127
 msgid "<p>Generate thumbnail images</p>"
 msgstr "<p>छोटे फोटू तैयार करव</p>"
 
-#: ImportExport/Export.cpp:131
+#: ImportExport/Export.cpp:130
 msgid ""
 "<p>With this option you may limit the maximum dimensions (width and height) "
 "of your images. Doing so will make the resulting export file smaller, but "
@@ -1411,7 +1314,7 @@ msgid ""
 "exported images with larger dimensions.</p>"
 msgstr ""
 
-#: ImportExport/Export.cpp:138
+#: ImportExport/Export.cpp:137
 msgid ""
 "<p>When exporting images, bear in mind that there are two things the person "
 "importing these images again will need:<br/>1) meta information (image "
@@ -1426,7 +1329,7 @@ msgid ""
 "</p>"
 msgstr ""
 
-#: ImportExport/Export.cpp:199
+#: ImportExport/Export.cpp:198
 msgid "Error creating zip file"
 msgstr "जिप फाइल तैयार करे मं गलती"
 
@@ -1435,24 +1338,24 @@ msgstr "जिप फाइल तैयार करे मं गलती"
 msgid "&Cancel"
 msgstr "खारिज (&C)"
 
-#: ImportExport/Export.cpp:229
+#: ImportExport/Export.cpp:231
 msgid "Creating index file"
 msgstr "निर्देसिका फाइल बनात हे"
 
-#: ImportExport/Export.cpp:244
+#: ImportExport/Export.cpp:246
 msgid "Creating thumbnails"
 msgstr "छोटे फोटू बनात हे"
 
-#: ImportExport/Export.cpp:266
+#: ImportExport/Export.cpp:268
 msgid "Copying image files"
 msgstr "फोटू फाइल मन के नकल करत हे "
 
-#: ImportExport/Export.cpp:332
+#: ImportExport/Export.cpp:334
 #, kde-format
 msgid "Error writing file %1"
 msgstr "फाइल %1 मं लिखे मं गलती"
 
-#: ImportExport/Export.cpp:362
+#: ImportExport/Export.cpp:364
 msgid ""
 "<p>Other KPhotoAlbum users may now load the import file into their database, "
 "by choosing <b>import</b> in the file menu.</p><p>If they find it on a web "
@@ -1465,7 +1368,7 @@ msgid ""
 "server will just tell konqueror that it is a plain text file.</p>"
 msgstr ""
 
-#: ImportExport/Export.cpp:371
+#: ImportExport/Export.cpp:373
 msgid "How to Use the Export File"
 msgstr "निर्यात फाइल उपयोग कइसन करव"
 
@@ -1678,10 +1581,6 @@ msgstr "डाटा मिलाव"
 #: ImportExport/MD5CheckPage.cpp:77
 msgid "Date and Time"
 msgstr "तारीक़ अउ समय"
-
-#: ImportExport/MiniViewer.cpp:69 Viewer/ViewerWidget.cpp:163
-msgid "Close"
-msgstr "बंद करव"
 
 #. i18n: ectx: Menu (view)
 #: kphotoalbumui.rc:28
@@ -2377,7 +2276,7 @@ msgstr "टैग:"
 msgid "Total"
 msgstr "कुल"
 
-#: MainWindow/TokenEditor.cpp:38 MainWindow/Window.cpp:704
+#: MainWindow/TokenEditor.cpp:38 MainWindow/Window.cpp:703
 msgid "Remove Tokens"
 msgstr "टोकन मेटाव"
 
@@ -2463,29 +2362,29 @@ msgstr "विसेसता जांच"
 msgid "Congratulations: all dynamic features have been enabled."
 msgstr ""
 
-#: MainWindow/Window.cpp:137
+#: MainWindow/Window.cpp:136
 msgid "Loading Database"
 msgstr "डाटाबेस लोड करत हे"
 
-#: MainWindow/Window.cpp:143
+#: MainWindow/Window.cpp:142
 msgid "Loading Main Window"
 msgstr "मुख्य विंडो लोड करत हे"
 
-#: MainWindow/Window.cpp:232
+#: MainWindow/Window.cpp:231
 msgid "Searching for New Files"
 msgstr "नवा फाइल मन बर खोजत हे"
 
-#: MainWindow/Window.cpp:238
+#: MainWindow/Window.cpp:237
 msgid "Loading Plug-ins"
 msgstr "प्लगइन लोड करत हे"
 
-#: MainWindow/Window.cpp:259
+#: MainWindow/Window.cpp:258
 msgid ""
 "EXIF database cannot be opened. Check that the image root directory is "
 "writable."
 msgstr ""
 
-#: MainWindow/Window.cpp:268
+#: MainWindow/Window.cpp:267
 msgid ""
 "<p><b>Delete Your Temporary Demo Database</b></p><p>I hope you enjoyed the "
 "KPhotoAlbum demo. The demo database was copied to /tmp, should it be deleted "
@@ -2494,297 +2393,297 @@ msgid ""
 "around with the changes you made through this session.</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:273
+#: MainWindow/Window.cpp:272
 msgid "Delete Demo Database"
 msgstr "डेमो डाटाबेस मेटाव"
 
-#: MainWindow/Window.cpp:288
+#: MainWindow/Window.cpp:287
 msgid "Do you want to save the changes?"
 msgstr "का आप मन बदलाव मन ल सहेजना चाहथो ?"
 
-#: MainWindow/Window.cpp:289
+#: MainWindow/Window.cpp:288
 msgid "Save Changes?"
 msgstr "बदलाव सहेजव?"
 
-#: MainWindow/Window.cpp:327
+#: MainWindow/Window.cpp:326
 msgid ""
 "Some of the selected images already belong to a stack. Do you want to remove "
 "them from their stacks and create a completely new one?"
 msgstr ""
 
-#: MainWindow/Window.cpp:329 MainWindow/Window.cpp:334
+#: MainWindow/Window.cpp:328 MainWindow/Window.cpp:333
 msgid "Stacking Error"
 msgstr ""
 
-#: MainWindow/Window.cpp:333
+#: MainWindow/Window.cpp:332
 msgid "Unknown error, stack creation failed."
 msgstr ""
 
-#: MainWindow/Window.cpp:411 MainWindow/Window.cpp:535
-#: MainWindow/Window.cpp:1248
+#: MainWindow/Window.cpp:410 MainWindow/Window.cpp:534
+#: MainWindow/Window.cpp:1247
 msgid "No item is selected."
 msgstr "कोई चीज चुने नइ गे हे."
 
-#: MainWindow/Window.cpp:411 MainWindow/Window.cpp:535
-#: MainWindow/Window.cpp:1249
+#: MainWindow/Window.cpp:410 MainWindow/Window.cpp:534
+#: MainWindow/Window.cpp:1248
 msgid "No Selection"
 msgstr "कोई चयन नइ"
 
-#: MainWindow/Window.cpp:460
+#: MainWindow/Window.cpp:459
 msgid "Saving..."
 msgstr "सहेजिस जात हे..."
 
-#: MainWindow/Window.cpp:464
+#: MainWindow/Window.cpp:463
 msgid "Saving... Done"
 msgstr "सहेजिस जात हे... पूरा"
 
-#: MainWindow/Window.cpp:599
+#: MainWindow/Window.cpp:598
 msgid "There are no images to be shown."
 msgstr "देखाय बर वहां कोनो फोटू नइ हे."
 
-#: MainWindow/Window.cpp:665
+#: MainWindow/Window.cpp:664
 msgid "Generate HTML..."
 msgstr "एचटीएमएल बनाव..."
 
-#: MainWindow/Window.cpp:669
+#: MainWindow/Window.cpp:668
 msgid "Import..."
 msgstr "आयात करव..."
 
-#: MainWindow/Window.cpp:672
+#: MainWindow/Window.cpp:671
 msgid "Export/Copy Images..."
 msgstr "फोटू निर्यात/नकल करव..."
 
-#: MainWindow/Window.cpp:698
+#: MainWindow/Window.cpp:697
 msgid "Delete Selected"
 msgstr "चुने गे ल मेटाव"
 
-#: MainWindow/Window.cpp:707
+#: MainWindow/Window.cpp:706
 msgid "Open List of Files..."
 msgstr "फाइल मन के सूची खोलव..."
 
-#: MainWindow/Window.cpp:711
+#: MainWindow/Window.cpp:710
 msgid "Annotate Individual Items"
 msgstr "अलग अलग चीज मन के व्याख्या"
 
-#: MainWindow/Window.cpp:715
+#: MainWindow/Window.cpp:714
 msgid "Annotate Multiple Items at a Time"
 msgstr "बहुत से चीज मन के व्याख्या एके समय में"
 
-#: MainWindow/Window.cpp:719
+#: MainWindow/Window.cpp:718
 msgid "Merge Images into a Stack"
 msgstr ""
 
-#: MainWindow/Window.cpp:723
+#: MainWindow/Window.cpp:722
 msgid "Remove Images from Stack"
 msgstr ""
 
-#: MainWindow/Window.cpp:726 Viewer/ViewerWidget.cpp:151
+#: MainWindow/Window.cpp:725 Viewer/ViewerWidget.cpp:151
 msgid "Set as First Image in Stack"
 msgstr ""
 
-#: MainWindow/Window.cpp:741
+#: MainWindow/Window.cpp:740
 msgid "View"
 msgstr "दृस्य"
 
-#: MainWindow/Window.cpp:745
+#: MainWindow/Window.cpp:744
 msgid "View (In New Window)"
 msgstr "दृस्य (नवा विंडो में)"
 
-#: MainWindow/Window.cpp:748
+#: MainWindow/Window.cpp:747
 msgid "Run Slide Show"
 msgstr "स्लाइड सो चलाव"
 
-#: MainWindow/Window.cpp:753
+#: MainWindow/Window.cpp:752
 msgid "Run Randomized Slide Show"
 msgstr "स्लाइड सो बेतरतीब चलाव"
 
-#: MainWindow/Window.cpp:759
+#: MainWindow/Window.cpp:758
 msgid "Collapse all stacks"
 msgstr ""
 
-#: MainWindow/Window.cpp:765
+#: MainWindow/Window.cpp:764
 msgid "Expand all stacks"
 msgstr ""
 
-#: MainWindow/Window.cpp:770
+#: MainWindow/Window.cpp:769
 msgid "Show &Oldest First"
 msgstr "सबसे जुन्ना ल पहिली देखाव (&O)"
 
-#: MainWindow/Window.cpp:775
+#: MainWindow/Window.cpp:774
 msgid "Show &Newest First"
 msgstr "सबसे नवा ल पहिली दिखाव (&N)"
 
-#: MainWindow/Window.cpp:780
+#: MainWindow/Window.cpp:779
 msgid "Sort Selected by Date && Time"
 msgstr "तारीक अउ समय से छांटना चुने गे (&&)"
 
-#: MainWindow/Window.cpp:783
+#: MainWindow/Window.cpp:782
 msgid "Limit View to Marked"
 msgstr "दृस्य ल चिनहित तक सीमित करव"
 
-#: MainWindow/Window.cpp:786
+#: MainWindow/Window.cpp:785
 msgid "Jump to Context"
 msgstr "संदर्भ मं जाव"
 
-#: MainWindow/Window.cpp:791
+#: MainWindow/Window.cpp:790
 msgid "Lock Images"
 msgstr "फोटू तालाबंद करव"
 
-#: MainWindow/Window.cpp:794
+#: MainWindow/Window.cpp:793
 msgid "Unlock"
 msgstr "तालाखोलव"
 
-#: MainWindow/Window.cpp:797
+#: MainWindow/Window.cpp:796
 msgid "Change Password..."
 msgstr "पासवर्ड बदलव..."
 
-#: MainWindow/Window.cpp:801
+#: MainWindow/Window.cpp:800
 msgid "Lock Away All Other Items"
 msgstr "सब्बो अउ चीज मन ल तालाबंद करव"
 
-#: MainWindow/Window.cpp:804
+#: MainWindow/Window.cpp:803
 msgid "Lock Away Current Set of Items"
 msgstr "अभी हाल के चीज मन के सेट ल तालाबंद करव"
 
-#: MainWindow/Window.cpp:808
+#: MainWindow/Window.cpp:807
 msgid "Display Images and Videos Not on Disk"
 msgstr "ओ फोटू अउ वीडियो मन ल देखाव जऊन ह डिस्क मं मौजूद नइ हे"
 
-#: MainWindow/Window.cpp:811
+#: MainWindow/Window.cpp:810
 msgid "Display Images and Videos with Incomplete Dates..."
 msgstr "अधूरा तारीक वाले फोटू मन अउ वीडियो दिखाव..."
 
-#: MainWindow/Window.cpp:815
+#: MainWindow/Window.cpp:814
 msgid "Display Images and Videos with Changed MD5 Sum"
 msgstr "बदले एमडी५ सम सहित फोटू अउ वीडियो मन ल दिखाव"
 
-#: MainWindow/Window.cpp:819
+#: MainWindow/Window.cpp:818
 #, fuzzy
 #| msgid "Merge data"
 msgid "Merge duplicates"
 msgstr "डाटा मिलाव"
 
-#: MainWindow/Window.cpp:821
+#: MainWindow/Window.cpp:820
 msgid "Recalculate Checksum"
 msgstr "चेकसम फिर से गनना करव"
 
-#: MainWindow/Window.cpp:824
+#: MainWindow/Window.cpp:823
 msgid "Rescan for Images and Videos"
 msgstr "फोटू मन अउ वीडियो ल फिर से स्कैन करव"
 
-#: MainWindow/Window.cpp:827
+#: MainWindow/Window.cpp:826
 msgid "Recreate Exif Search Database"
 msgstr "एक्जिफ सर्च डाटाबेस फिर से बनाव"
 
-#: MainWindow/Window.cpp:830
+#: MainWindow/Window.cpp:829
 msgid "Read EXIF Info From Files..."
 msgstr "फाइल मन से एक्सइफ जानकारी पढ़व..."
 
-#: MainWindow/Window.cpp:832
+#: MainWindow/Window.cpp:831
 msgid ""
 "Recreate Exif Search Database (need to compile KPhotoAlbum with Exif support)"
 msgstr ""
 
-#: MainWindow/Window.cpp:833
+#: MainWindow/Window.cpp:832
 msgid ""
 "Read EXIF Info From Files... (need to compile KPhotoAlbum with Exif support)"
 msgstr ""
 
-#: MainWindow/Window.cpp:839
+#: MainWindow/Window.cpp:838
 msgid "Automatically Stack Selected Images..."
 msgstr ""
 
-#: MainWindow/Window.cpp:842
+#: MainWindow/Window.cpp:841
 msgid "Build Thumbnails"
 msgstr "छोटे फोटू बनाव"
 
-#: MainWindow/Window.cpp:845
+#: MainWindow/Window.cpp:844
 msgid "Statistics"
 msgstr "आंकड़ा"
 
-#: MainWindow/Window.cpp:854
+#: MainWindow/Window.cpp:853
 msgid "Enable All Messages"
 msgstr "सब्बो संदेस सक्छम करव"
 
-#: MainWindow/Window.cpp:857
+#: MainWindow/Window.cpp:856
 #, fuzzy
 #| msgid "Configure View"
 msgid "Configure Current View"
 msgstr "कान्फिगर दृस्य"
 
-#: MainWindow/Window.cpp:866
+#: MainWindow/Window.cpp:865
 #, fuzzy
 #| msgid "Theme:"
 msgid "Tree"
 msgstr "प्रसंगः"
 
-#: MainWindow/Window.cpp:871
+#: MainWindow/Window.cpp:870
 msgid "Tree with User Icons"
 msgstr ""
 
-#: MainWindow/Window.cpp:877 MainWindow/Window.cpp:883
+#: MainWindow/Window.cpp:876 MainWindow/Window.cpp:882
 #, fuzzy
 #| msgid "Icon:"
 msgid "Icons"
 msgstr "चिनहाः"
 
-#: MainWindow/Window.cpp:895
+#: MainWindow/Window.cpp:894
 msgid "Show Tooltips in Thumbnails Window"
 msgstr "छोटेफोटू विंडो मं औजारयुक्ति दिखाव"
 
-#: MainWindow/Window.cpp:901
+#: MainWindow/Window.cpp:900
 msgid "Run KPhotoAlbum Demo"
 msgstr "केफोटोएलबम डेमो चलाव"
 
-#: MainWindow/Window.cpp:904
+#: MainWindow/Window.cpp:903
 msgid "KPhotoAlbum Feature Status"
 msgstr "केफोटोएलबम विसेसता स्थिति"
 
-#: MainWindow/Window.cpp:907
+#: MainWindow/Window.cpp:906
 msgid "Show Demo Videos"
 msgstr "डेमो वीडियो देखाव"
 
-#: MainWindow/Window.cpp:912
+#: MainWindow/Window.cpp:911
 msgid "Show Exif Info"
 msgstr "एक्जइफ जानकारी देखाव"
 
-#: MainWindow/Window.cpp:915
+#: MainWindow/Window.cpp:914
 msgid "Recreate Selected Thumbnails"
 msgstr "चुने गे लघु-फोटू फिर से बनाव"
 
-#: MainWindow/Window.cpp:918
+#: MainWindow/Window.cpp:917
 #, fuzzy
 #| msgid "Generate thumbnails"
 msgid "Use next video thumbnail"
 msgstr "छोटे फोटू तैयार करव"
 
-#: MainWindow/Window.cpp:922
+#: MainWindow/Window.cpp:921
 msgid "Use previous video thumbnail"
 msgstr ""
 
-#: MainWindow/Window.cpp:948
+#: MainWindow/Window.cpp:947
 msgid "Auto saving...."
 msgstr "अपने अपन सहेजत हे..."
 
-#: MainWindow/Window.cpp:950
+#: MainWindow/Window.cpp:949
 msgid "Auto saving.... Done"
 msgstr "अपने अपन सहेजत हे... पूरा"
 
-#: MainWindow/Window.cpp:1041
+#: MainWindow/Window.cpp:1040
 #, kde-format
 msgid ""
 "<p>Could not open given index.xml as provided directory does not exist.<br />"
 "%1</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1049
+#: MainWindow/Window.cpp:1048
 #, kde-format
 msgid ""
 "<p>Given index file does not exist, do you want to create following?<br />%1/"
 "index.xml</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1119
+#: MainWindow/Window.cpp:1118
 msgid ""
 "<p>The password protection is only a means of allowing your little sister to "
 "look in your images, without getting to those embarrassing images from your "
@@ -2792,45 +2691,45 @@ msgid ""
 "can easily circumvent this password.</b></p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1124
+#: MainWindow/Window.cpp:1123
 msgid "Password Protection"
 msgstr "पासवर्ड सुरक्छा"
 
-#: MainWindow/Window.cpp:1138
+#: MainWindow/Window.cpp:1137
 msgid "Type in Password to Unlock"
 msgstr "ताला खोले बर पासवर्ड टाइप करव"
 
-#: MainWindow/Window.cpp:1147 MainWindow/Window.cpp:1181
+#: MainWindow/Window.cpp:1146 MainWindow/Window.cpp:1180
 msgid "Invalid password."
 msgstr "अवैध पासवर्ड."
 
-#: MainWindow/Window.cpp:1172
+#: MainWindow/Window.cpp:1171
 msgid "Type in Old Password"
 msgstr "जुन्ना पासवर्ड टाइप करव"
 
-#: MainWindow/Window.cpp:1184
+#: MainWindow/Window.cpp:1183
 msgid "Type in New Password"
 msgstr "नवा पासवर्ड टाइप करव"
 
-#: MainWindow/Window.cpp:1195 Settings/SettingsDialog.cpp:65
+#: MainWindow/Window.cpp:1194 Settings/SettingsDialog.cpp:65
 msgid "General"
 msgstr "सामान्य"
 
-#: MainWindow/Window.cpp:1196 Settings/SettingsDialog.cpp:70
+#: MainWindow/Window.cpp:1195 Settings/SettingsDialog.cpp:70
 msgid "Viewer"
 msgstr "प्रदर्सक"
 
-#: MainWindow/Window.cpp:1209
+#: MainWindow/Window.cpp:1208
 msgid "Annotation Dialog"
 msgstr "एनोटेसन गोठ"
 
-#: MainWindow/Window.cpp:1366
+#: MainWindow/Window.cpp:1365
 msgid ""
 "<p>Really enable all message boxes where you previously checked the do-not-"
 "show-again check box?</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1377
+#: MainWindow/Window.cpp:1376
 msgid ""
 "<p>KPhotoAlbum hit an internal error (missing plug-in menu in MainWindow::"
 "Window::setupPluginMenu). This indicate that you forgot to do a make "
@@ -2840,38 +2739,38 @@ msgid ""
 "on due to the missing make install.</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1377
+#: MainWindow/Window.cpp:1376
 #, fuzzy
 #| msgid "Invoke External Program"
 msgid "Internal Error"
 msgstr "बाहिरी प्रोग्राम चलाव"
 
-#: MainWindow/Window.cpp:1559
+#: MainWindow/Window.cpp:1558
 msgid "Open List of Files"
 msgstr "फाइल मन के सूची खोलव"
 
-#: MainWindow/Window.cpp:1559
+#: MainWindow/Window.cpp:1558
 msgid ""
 "You can open a set of files from KPhotoAlbum's image root by listing the "
 "files here."
 msgstr ""
 
-#: MainWindow/Window.cpp:1575
+#: MainWindow/Window.cpp:1574
 msgid "No images matching your input were found."
 msgstr "आप मन के इनपुट से मिलत जुलत कोनो फोटू नइ मिलिस."
 
-#: MainWindow/Window.cpp:1575
+#: MainWindow/Window.cpp:1574
 msgid "No Matches"
 msgstr "कोई जोड़ नइ"
 
-#: MainWindow/Window.cpp:1749
+#: MainWindow/Window.cpp:1748
 msgid ""
 "<p>Unable to find mplayer on the system</p><p>KPhotoAlbum needs mplayer to "
 "extract video thumbnails among other things. Please install the mplayer2 "
 "package</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1757
+#: MainWindow/Window.cpp:1756
 msgid ""
 "<p>You have mplayer installed on your system, but it is unfortunately not "
 "version 2. mplayer2 is on most systems a separate package, please install "
@@ -2879,7 +2778,7 @@ msgid ""
 "extracting thumbnails from videos."
 msgstr ""
 
-#: MainWindow/Window.cpp:1760
+#: MainWindow/Window.cpp:1759
 msgid "mplayer is too old"
 msgstr ""
 
@@ -2910,7 +2809,7 @@ msgid ""
 "rooted at %1. Image path was %2</p>"
 msgstr ""
 
-#: Settings/CategoryItem.cpp:121
+#: Settings/CategoryItem.cpp:116
 msgid ""
 "<p>Due to a shortcoming in KPhotoAlbum, you need to save your database after "
 "renaming categories; otherwise all the filenames of the category thumbnails "
@@ -2919,72 +2818,72 @@ msgid ""
 "</p>"
 msgstr ""
 
-#: Settings/CategoryPage.cpp:53
+#: Settings/CategoryPage.cpp:51
 msgid "Label:"
 msgstr "लेबल:"
 
-#: Settings/CategoryPage.cpp:64
+#: Settings/CategoryPage.cpp:62
 msgid "Icon:"
 msgstr "चिनहाः"
 
-#: Settings/CategoryPage.cpp:75
+#: Settings/CategoryPage.cpp:73
 msgid "Thumbnail Size: "
 msgstr "छोटे फोटू आकारः"
 
-#: Settings/CategoryPage.cpp:86
+#: Settings/CategoryPage.cpp:84
 msgid "Preferred view:"
 msgstr "निसानी दृस्य:"
 
-#: Settings/CategoryPage.cpp:92
+#: Settings/CategoryPage.cpp:90
 msgid "List View"
 msgstr "सूची दृस्य"
 
-#: Settings/CategoryPage.cpp:92
+#: Settings/CategoryPage.cpp:90
 msgid "List View with Custom Thumbnails"
 msgstr "मनमाफिक छोटेफोटू मन के साथ सूची दृस्य"
 
-#: Settings/CategoryPage.cpp:92
+#: Settings/CategoryPage.cpp:90
 msgid "Icon View"
 msgstr "चिनहा दृस्य"
 
-#: Settings/CategoryPage.cpp:92
+#: Settings/CategoryPage.cpp:90
 msgid "Icon View with Custom Thumbnails"
 msgstr "मनमाफिक छोटेफोटू मन के साथ चिनहा दृस्य"
 
-#: Settings/CategoryPage.cpp:99
+#: Settings/CategoryPage.cpp:97
 msgid "New"
 msgstr "नवा"
 
-#: Settings/CategoryPage.cpp:171
+#: Settings/CategoryPage.cpp:169
 #, kde-format
 msgid "<p>Really delete category '%1'?</p>"
 msgstr "<p>सचमुच मं मिटा देव स्रेनी '%1' को?</p>"
 
-#: Settings/DatabaseBackendPage.cpp:38
+#: Settings/DatabaseBackendPage.cpp:36
 msgid "Choose speed over readability for index.xml file"
 msgstr "index.xml फाइल बर पढ़े जा सके के बजाय गति ल चुनव"
 
-#: Settings/DatabaseBackendPage.cpp:42
+#: Settings/DatabaseBackendPage.cpp:40
 msgid "Compress backup file"
 msgstr "बैकअप फाइल संपीडित करव"
 
-#: Settings/DatabaseBackendPage.cpp:46
+#: Settings/DatabaseBackendPage.cpp:44
 msgid "Auto save every:"
 msgstr "अपने अपन सहेजव हर एक:"
 
-#: Settings/DatabaseBackendPage.cpp:49
+#: Settings/DatabaseBackendPage.cpp:47
 msgid "min."
 msgstr "मि."
 
-#: Settings/DatabaseBackendPage.cpp:60
+#: Settings/DatabaseBackendPage.cpp:58
 msgid "Number of backups to keep:"
 msgstr "रखे जाय वाले बैकअप के संख्या:"
 
-#: Settings/DatabaseBackendPage.cpp:65
+#: Settings/DatabaseBackendPage.cpp:63
 msgid "Infinite"
 msgstr "अनगिनत"
 
-#: Settings/DatabaseBackendPage.cpp:72
+#: Settings/DatabaseBackendPage.cpp:70
 msgid ""
 "<p>KPhotoAlbum is capable of backing up the index.xml file by keeping copies "
 "named index.xml~1~ index.xml~2~ etc. and you can use the spinbox to specify "
@@ -2995,7 +2894,7 @@ msgid ""
 "disk space.</p>"
 msgstr ""
 
-#: Settings/DatabaseBackendPage.cpp:82
+#: Settings/DatabaseBackendPage.cpp:80
 msgid ""
 "<p>KPhotoAlbum is using a single index.xml file as its <i>data base</i>. "
 "With lots of images it may take a long time to read this file. You may cut "
@@ -3015,74 +2914,33 @@ msgstr "एक्जइफ गोठ मं देखाय बर एक्ज�
 msgid "Character set for image metadata:"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:36
+#: Settings/FileVersionDetectionPage.cpp:39
 msgid "New File Searches"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:40
+#: Settings/FileVersionDetectionPage.cpp:44
 msgid "Search for new images and videos on startup"
 msgstr "सुरू मं नवा फोटू मन अउ वीडियो बर खोजव"
 
-#: Settings/FileVersionDetectionPage.cpp:41
+#: Settings/FileVersionDetectionPage.cpp:47
 msgid "Ignore file extensions when searching for new images and videos"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:42
+#: Settings/FileVersionDetectionPage.cpp:50
 msgid "Skip symbolic links when searching for new images"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:43
+#: Settings/FileVersionDetectionPage.cpp:53
 #, fuzzy
 #| msgid "Don't read RAW files if matching JPEG/TIFF file exists"
 msgid "Do not read RAW files if a matching JPEG/TIFF file exists"
 msgstr "यदि मिलत जुलत जेपीईजी/टिफ फाइल हे तहां रा फाइल नइ पढ़व"
 
-#: Settings/FileVersionDetectionPage.cpp:46
+#: Settings/FileVersionDetectionPage.cpp:57
 msgid "Directories to exclude from new file search:"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:51
-msgid "File Version Detection Settings"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:54
-msgid "Try to detect multiple versions of files"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:56
-msgid "File versions search regexp:"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:59
-msgid "Original file replacement text:"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:62
-msgid "Move meta-data (i.e. delete tags from the original):"
-msgstr ""
-
 #: Settings/FileVersionDetectionPage.cpp:64
-#, fuzzy
-#| msgid "Automatically copy next to .kim file"
-msgid "Automatically stack new versions of images"
-msgstr ".kim फाइल के बाद नकल अपने अपन बनाव"
-
-#: Settings/FileVersionDetectionPage.cpp:67
-msgctxt ""
-"Configure the feature to make a copy of a file first and then open the "
-"copied file with an external application"
-msgid "Copy File and Open with an External Application"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:70
-msgid "Copy file search regexp:"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:73
-msgid "Copy file replacement text:"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:77
 msgid ""
 "<p>KPhotoAlbum is capable of searching for new images and videos when "
 "started, this does, however, take some time, so instead you may wish to "
@@ -3090,7 +2948,7 @@ msgid ""
 ">Rescan for new images</b></p>"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:82
+#: Settings/FileVersionDetectionPage.cpp:69
 msgid ""
 "<p>KPhotoAlbum will normally search new images and videos by their file "
 "extension. If this option is set, <em>all</em> files neither in the database "
@@ -3099,7 +2957,7 @@ msgid ""
 "extension!</p>"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:88
+#: Settings/FileVersionDetectionPage.cpp:75
 msgid ""
 "<p>KPhotoAlbum attempts to read all image files whether actual files or "
 "symbolic links. If you wish to ignore symbolic links, check this option. "
@@ -3107,7 +2965,7 @@ msgid ""
 "and symbolic links to these files within your image directory.</p>"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:93
+#: Settings/FileVersionDetectionPage.cpp:80
 msgid ""
 "<p>KPhotoAlbum is capable of reading certain kinds of RAW images.  Some "
 "cameras store both a RAW image and a matching JPEG or TIFF image.  This "
@@ -3116,14 +2974,40 @@ msgid ""
 "for which matching image files also exist.</p>"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:99
+#: Settings/FileVersionDetectionPage.cpp:86
 msgid ""
 "<p>Directories defined here (separated by comma <tt>,</tt>) are skipped when "
 "searching for new photos. Thumbnail directories of different tools should be "
 "configured here. E.g. <tt>xml,ThumbNails,.thumbs,.thumbnails</tt>.</p>"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:104
+#: Settings/FileVersionDetectionPage.cpp:95
+msgid "File Version Detection Settings"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:99
+msgid "Try to detect multiple versions of files"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:102
+msgid "File versions search regexp:"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:108
+msgid "Original file replacement text:"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:114
+msgid "Move meta-data (i.e. delete tags from the original):"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:117
+#, fuzzy
+#| msgid "Automatically copy next to .kim file"
+msgid "Automatically stack new versions of images"
+msgstr ".kim फाइल के बाद नकल अपने अपन बनाव"
+
+#: Settings/FileVersionDetectionPage.cpp:120
 msgid ""
 "<p>When KPhotoAlbum searches for new files and finds a file that matches the "
 "<i>modified file search regexp</i> it is assumed that an original version of "
@@ -3133,7 +3017,7 @@ msgid ""
 "moved from the original file to the new one.</p>"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:111
+#: Settings/FileVersionDetectionPage.cpp:127
 msgid ""
 "<p>A perl regular expression that should match a modified file. <ul><li>A "
 "dot matches a single character (<tt>\\.</tt> matches a dot)</li>   <li>You "
@@ -3144,7 +3028,7 @@ msgid ""
 "ul>Example: <tt>-modified\\.(jpg|tiff)</tt> </p>"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:121
+#: Settings/FileVersionDetectionPage.cpp:137
 msgid ""
 "<p>A string that is used to replace the match from the <i>File versions "
 "search regexp</i>. This can be a semicolon (<tt>;</tt>) separated list. Each "
@@ -3152,20 +3036,35 @@ msgid ""
 "file is found or we run out of options.</p>"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:127
+#: Settings/FileVersionDetectionPage.cpp:143
 msgid ""
 "<p>The tagging is moved from the original file to the new file. This way "
 "only the latest version of an image is tagged.</p>"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:131
+#: Settings/FileVersionDetectionPage.cpp:147
 msgid ""
 "<p>If this option is set, new versions of an image are automatically stacked "
 "and placed to the top of the stack. This way the new image is shown when the "
 "stack is in collapsed state - the default state in KPhotoAlbum.</p>"
 msgstr ""
 
-#: Settings/FileVersionDetectionPage.cpp:136
+#: Settings/FileVersionDetectionPage.cpp:155
+msgctxt ""
+"Configure the feature to make a copy of a file first and then open the "
+"copied file with an external application"
+msgid "Copy File and Open with an External Application"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:159
+msgid "Copy file search regexp:"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:165
+msgid "Copy file replacement text:"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:171
 msgid ""
 "<p>KPhotoAlbum can make a copy of an image before opening it with an "
 "external application. This configuration defines how the new file is named.</"
@@ -3361,20 +3260,20 @@ msgid ""
 "dialog, simply by dragging items."
 msgstr ""
 
-#: Settings/SubCategoriesPage.cpp:159 Settings/SubCategoriesPage.cpp:175
+#: Settings/SubCategoriesPage.cpp:159 Settings/SubCategoriesPage.cpp:176
 msgid "New Group"
 msgstr "नवा समूह"
 
-#: Settings/SubCategoriesPage.cpp:159 Settings/SubCategoriesPage.cpp:175
+#: Settings/SubCategoriesPage.cpp:159 Settings/SubCategoriesPage.cpp:176
 msgid "Group name:"
 msgstr "समूह नामः"
 
-#: Settings/SubCategoriesPage.cpp:189
+#: Settings/SubCategoriesPage.cpp:191
 #, kde-format
 msgid "Really delete group %1?"
 msgstr "सचमुच समूह %1 मेटाव?"
 
-#: Settings/SubCategoriesPage.cpp:189
+#: Settings/SubCategoriesPage.cpp:191
 msgid "Delete Group"
 msgstr "समूह मेटाव"
 
@@ -3576,11 +3475,11 @@ msgid ""
 "smooth scaling method.</p>"
 msgstr ""
 
-#: Settings/ViewerSizeConfig.cpp:29
+#: Settings/ViewerSizeConfig.cpp:31
 msgid "Launch in full screen"
 msgstr "पूरा स्क्रीन मं चलाव"
 
-#: Settings/ViewerSizeConfig.cpp:34
+#: Settings/ViewerSizeConfig.cpp:38
 msgid "Size:"
 msgstr "आकार:"
 
@@ -3918,12 +3817,12 @@ msgstr "अभी हाल के फोटू:"
 msgid "New image:"
 msgstr "नवा फोटू:"
 
-#: Viewer/ImageDisplay.cpp:349 Viewer/ImageDisplay.cpp:373
-#: Viewer/ImageDisplay.cpp:434
+#: Viewer/ImageDisplay.cpp:348 Viewer/ImageDisplay.cpp:372
+#: Viewer/ImageDisplay.cpp:433
 msgid "Insufficient color depth for this filter"
 msgstr ""
 
-#: Viewer/ImageDisplay.cpp:496
+#: Viewer/ImageDisplay.cpp:495
 #, kde-format
 msgid "[ zoom x%1 ]"
 msgstr "[ जूम x%1 ]"
@@ -4243,7 +4142,7 @@ msgstr "फोटू आकार दिखाव"
 msgid "Show Rating"
 msgstr "सीमा दिखाव"
 
-#: XMLDB/Database.cpp:595
+#: XMLDB/Database.cpp:594
 #, kde-format
 msgid ""
 "<p>Unknown tag %1, while reading configuration file.</p><p>Expected one of: "
@@ -4403,6 +4302,84 @@ msgstr "जिप फाइल %1 तैयार करे मं गलती"
 #| msgid "Error writing file %1"
 msgid "Error writing file %1 to zip file %2"
 msgstr "फाइल %1 मं लिखे मं गलती"
+
+#~ msgid "Not defined"
+#~ msgstr "परिभासित नइ"
+
+#~ msgid "Manual"
+#~ msgstr "हस्तचालित"
+
+#~ msgid "Normal program"
+#~ msgstr "सामान्य प्रोग्राम"
+
+#~ msgid "Aperture priority"
+#~ msgstr "एपर्चर प्राथमिकता"
+
+#~ msgid "Shutter priority"
+#~ msgstr "सटर प्राथमिकता"
+
+#~ msgid "Creative program (biased toward depth of field)"
+#~ msgstr "क्रिएटिव प्रोग्राम (छेत्र के गहराई के तरफ बायस्ड)"
+
+#~ msgid "Action program (biased toward fast shutter speed)"
+#~ msgstr "एक्सन प्रोग्राम (तेज सटर गति के तरफ बायस्ड)"
+
+#~ msgid "Portrait mode (for closeup photos with the background out of focus)"
+#~ msgstr "पोर्ट्रेट मोड (क्लोज-अप फोटो बर, पिछोत अंगना फोकस से बाहिर)"
+
+#~ msgid "Landscape mode (for landscape photos with the background in focus)"
+#~ msgstr "लैंडस्केप मोड (लैंडस्केप फोटो बर, पिछोत अंगना मं फोकस सहित)"
+
+#~ msgid "Not rotated"
+#~ msgstr "नइ घूमे हे"
+
+#~ msgid "Rotated counterclockwise"
+#~ msgstr "घड़ी के उलटा दिसा मं घुमाइस"
+
+#~ msgid "Rotated clockwise"
+#~ msgstr "घड़ी के दिसा मं घुमाइस"
+
+#~ msgid "Rotated 180 degrees"
+#~ msgstr "180 अंस घुमाइस"
+
+#~ msgid "Unknown"
+#~ msgstr "अग्यात"
+
+#~ msgid "Average"
+#~ msgstr "औसत"
+
+#~ msgid "CenterWeightedAverage"
+#~ msgstr "सेंटरविजेटएवरेज"
+
+#~ msgid "Spot"
+#~ msgstr "स्पाट"
+
+#~ msgid "MultiSpot"
+#~ msgstr "मल्टिस्पाट"
+
+#~ msgid "Pattern"
+#~ msgstr "पैटर्न"
+
+#~ msgid "Partial"
+#~ msgstr "आंसिक "
+
+#~ msgid "Other"
+#~ msgstr "अन्य"
+
+#~ msgid "Normal"
+#~ msgstr "सामान्य"
+
+#~ msgid "Soft"
+#~ msgstr "साफ्ट"
+
+#~ msgid "Hard"
+#~ msgstr "कठोर"
+
+#~ msgid "Low"
+#~ msgstr "निम्न"
+
+#~ msgid "High"
+#~ msgstr "जादा"
 
 #, fuzzy
 #~| msgid "Image Preview"
