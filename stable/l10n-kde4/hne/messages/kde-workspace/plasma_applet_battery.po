@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_battery\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-01-24 12:34+0100\n"
+"POT-Creation-Date: 2013-01-25 09:20+0100\n"
 "PO-Revision-Date: 2009-01-28 15:25+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,6 +18,77 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: contents/code/logic.js:52
+#, fuzzy, kde-format
+#| msgid "<b>Battery:</b> %1% (fully charged)<br />"
+msgid "<b>%1% (charged)</b>"
+msgstr "<b>बैटरी:</b> %1% (पूरा चार्ज हे)<br />"
+
+#: contents/code/logic.js:54
+#, fuzzy, kde-format
+#| msgctxt "Shown when a time estimate is not available"
+#| msgid "<b>Battery:</b> %1% (discharging)<br />"
+msgid "<b>%1% (discharging)</b>"
+msgstr "<b>बैटरी:</b> %1% (डिस्चार्ज होवत हे)<br />"
+
+#: contents/code/logic.js:56
+#, fuzzy, kde-format
+#| msgctxt "Shown when a time estimate is not available"
+#| msgid "<b>Battery:</b> %1% (discharging)<br />"
+msgid "<b>%1% (charging)</b>"
+msgstr "<b>बैटरी:</b> %1% (डिस्चार्ज होवत हे)<br />"
+
+#: contents/code/logic.js:60
+#, fuzzy
+#| msgid "Plugged in"
+msgctxt "Battery is not plugged in"
+msgid "<b>Not present</b>"
+msgstr "प्लग मं लगा हे"
+
+#: contents/code/logic.js:67 contents/ui/PopupDialog.qml:54
+#, fuzzy
+#| msgid "Battery"
+msgid "Battery:"
+msgstr "बैटरी"
+
+#: contents/code/logic.js:73
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgctxt "tooltip: placeholder is the battery ID"
+msgid "Battery %1:"
+msgstr "बैटरी"
+
+#: contents/code/logic.js:85
+#, fuzzy
+#| msgid "AC Adapter"
+msgctxt "tooltip"
+msgid "AC Adapter:"
+msgstr "एसी एडाप्टर"
+
+#: contents/code/logic.js:86
+#, fuzzy
+#| msgid "Plugged in"
+msgctxt "tooltip"
+msgid "<b>Plugged in</b>"
+msgstr "प्लग मं लगा हे"
+
+#: contents/code/logic.js:86
+#, fuzzy
+#| msgid "Plugged in"
+msgctxt "tooltip"
+msgid "<b>Not plugged in</b>"
+msgstr "प्लग मं लगा हे"
+
+#: contents/ui/batterymonitor.qml:123
+#, kde-format
+msgctxt "overlay on the battery, needs to be really tiny"
+msgid "%1%"
+msgstr ""
+
+#: contents/ui/batterymonitor.qml:232
+msgid "The battery applet has enabled system-wide inhibition"
+msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, batteryConfig)
 #: contents/ui/config.ui:14
@@ -34,54 +105,76 @@ msgstr ""
 msgid "Show the state for &each battery present"
 msgstr "इहां के हर बेटरी के स्थिति ल देखाव (&e)"
 
-#, fuzzy
-#~| msgid "Battery"
-#~ msgctxt "Placeholder is the battery ID"
-#~ msgid "Battery %1:"
-#~ msgstr "बैटरी"
+#: contents/ui/PopupDialog.qml:54
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgctxt "Placeholder is the battery ID"
+msgid "Battery %1:"
+msgstr "बैटरी"
 
+#: contents/ui/PopupDialog.qml:61
 #, fuzzy
-#~| msgid "Battery"
-#~ msgid "Battery:"
-#~ msgstr "बैटरी"
+#| msgid "AC Adapter"
+msgid "AC Adapter:"
+msgstr "एसी एडाप्टर"
 
-#, fuzzy
-#~| msgid "AC Adapter"
-#~ msgid "AC Adapter:"
-#~ msgstr "एसी एडाप्टर"
+#: contents/ui/PopupDialog.qml:67
+msgctxt "Label for remaining time"
+msgid "Time Remaining:"
+msgstr ""
 
+#: contents/ui/PopupDialog.qml:73
 #, fuzzy
-#~| msgid "Power Management"
-#~ msgctxt "Label for power management inhibition"
-#~ msgid "Power management enabled:"
-#~ msgstr "पावर प्रबंधन"
+#| msgid "Power Management"
+msgctxt "Label for power management inhibition"
+msgid "Power management enabled:"
+msgstr "पावर प्रबंधन"
 
+#: contents/ui/PopupDialog.qml:78
 #, fuzzy
-#~| msgid "Screen Brightness"
-#~ msgid "Screen Brightness:"
-#~ msgstr "स्क्रीन चमकीलापन"
+#| msgid "Screen Brightness"
+msgid "Screen Brightness:"
+msgstr "स्क्रीन चमकीलापन"
 
+#: contents/ui/PopupDialog.qml:108
 #, fuzzy
-#~| msgid "Plugged in"
-#~ msgid "Plugged in"
-#~ msgstr "प्लग मं लगा हे"
+#| msgid "Plugged in"
+msgid "Plugged in"
+msgstr "प्लग मं लगा हे"
 
+#: contents/ui/PopupDialog.qml:108
 #, fuzzy
-#~| msgid "Plugged in"
-#~ msgid "Not plugged in"
-#~ msgstr "प्लग मं लगा हे"
+#| msgid "Plugged in"
+msgid "Not plugged in"
+msgstr "प्लग मं लगा हे"
 
-#, fuzzy
-#~| msgid "Sleep"
-#~ msgctxt "Suspend the computer to RAM; translation should be short"
-#~ msgid "Sleep"
-#~ msgstr "स्लीप"
+#: contents/ui/PopupDialog.qml:154
+#, kde-format
+msgid "1 hour "
+msgid_plural "%1 hours "
+msgstr[0] ""
+msgstr[1] ""
 
+#: contents/ui/PopupDialog.qml:155
+#, kde-format
+msgid "1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: contents/ui/PopupDialog.qml:169
 #, fuzzy
-#~| msgid "Hibernate"
-#~ msgctxt "Suspend the computer to disk; translation should be short"
-#~ msgid "Hibernate"
-#~ msgstr "हिबरनेट"
+#| msgid "Sleep"
+msgctxt "Suspend the computer to RAM; translation should be short"
+msgid "Sleep"
+msgstr "स्लीप"
+
+#: contents/ui/PopupDialog.qml:176
+#, fuzzy
+#| msgid "Hibernate"
+msgctxt "Suspend the computer to disk; translation should be short"
+msgid "Hibernate"
+msgstr "हिबरनेट"
 
 #, fuzzy
 #~| msgid "Battery"
@@ -107,17 +200,6 @@ msgstr "इहां के हर बेटरी के स्थिति ल
 #~ msgstr "प्लग मं लगा हे"
 
 #, fuzzy
-#~| msgctxt "Shown when a time estimate is not available"
-#~| msgid "<b>Battery:</b> %1% (discharging)<br />"
-#~ msgid "%1% (discharging)"
-#~ msgstr "<b>बैटरी:</b> %1% (डिस्चार्ज होवत हे)<br />"
-
-#, fuzzy
-#~| msgid "<b>Battery:</b> %1% (fully charged)<br />"
-#~ msgid "%1% (charged)"
-#~ msgstr "<b>बैटरी:</b> %1% (पूरा चार्ज हे)<br />"
-
-#, fuzzy
 #~| msgid "Size of the battery"
 #~ msgid "Show remaining time for the battery"
 #~ msgstr "बैटरी के आकार"
@@ -133,16 +215,6 @@ msgstr "इहां के हर बेटरी के स्थिति ल
 #~ msgctxt "tooltip on the config button in the popup"
 #~ msgid "Configure Power Management..."
 #~ msgstr "पावर प्रबंधन"
-
-#, fuzzy
-#~| msgid "Plugged in"
-#~ msgid "<b>Plugged in</b>"
-#~ msgstr "प्लग मं लगा हे"
-
-#, fuzzy
-#~| msgid "Plugged in"
-#~ msgid "<b>Not plugged in</b>"
-#~ msgstr "प्लग मं लगा हे"
 
 #, fuzzy
 #~| msgid "Power Profile"
@@ -181,13 +253,6 @@ msgstr "इहां के हर बेटरी के स्थिति ल
 #~| msgid "<b>Battery:</b> %1% (discharging)<br />"
 #~ msgctxt "state of battery"
 #~ msgid "%1% (discharging)"
-#~ msgstr "<b>बैटरी:</b> %1% (डिस्चार्ज होवत हे)<br />"
-
-#, fuzzy
-#~| msgctxt "Shown when a time estimate is not available"
-#~| msgid "<b>Battery:</b> %1% (discharging)<br />"
-#~ msgctxt "state of battery"
-#~ msgid "%1% (charging)"
 #~ msgstr "<b>बैटरी:</b> %1% (डिस्चार्ज होवत हे)<br />"
 
 #, fuzzy
