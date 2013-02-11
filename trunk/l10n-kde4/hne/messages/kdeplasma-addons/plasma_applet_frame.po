@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_frame\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 03:48+0100\n"
+"POT-Creation-Date: 2012-08-20 04:42+0200\n"
 "PO-Revision-Date: 2009-02-28 22:37+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,6 +18,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: appearanceSettings.ui:17
+#, fuzzy
+msgid "Rounded corners:"
+msgstr "गोलीय किनारा परयोग करव"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: appearanceSettings.ui:30
+#, fuzzy
+msgid "Shadow:"
+msgstr "छइंहा दिखाव"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: appearanceSettings.ui:59
+#, fuzzy
+msgid "Frame:"
+msgstr "फ्रेम रंग:"
+
+#. i18n: ectx: property (text), widget (QLabel, changeFrameColorLabel)
+#: appearanceSettings.ui:88
+msgid "Frame color:"
+msgstr "फ्रेम रंग:"
 
 #: configdialog.cpp:51
 msgid ""
@@ -33,13 +56,98 @@ msgstr "फोटू खोलव...(&O)"
 msgid "Set as Wallpaper Image"
 msgstr ""
 
-#: frame.cpp:562
+#. i18n: ectx: property (text), item, widget (KComboBox, pictureComboBox)
+#: frame.cpp:562 imageSettings.ui:21
 msgid "Image"
 msgstr "फोटू"
 
 #: frame.cpp:563
 msgid "Appearance"
 msgstr "रूप"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, pictureComboBox)
+#: imageSettings.ui:26
+msgid "Slideshow"
+msgstr "स्लाइड-सो"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, pictureComboBox)
+#: imageSettings.ui:31
+msgid "Picture of the day"
+msgstr "दिन के चित्र"
+
+#. i18n: ectx: property (text), widget (QLabel, picLabel)
+#: imageSettings.ui:54
+msgid "Picture:"
+msgstr "फोटू:"
+
+#. i18n: ectx: property (filter), widget (KUrlRequester, picRequester)
+#: imageSettings.ui:64
+#, fuzzy
+#| msgid "*.png *.jpeg *.jpg *.svg *.svgz"
+msgid "*.png *.jpeg *.jpg *.svg *.svgz *.bmp *.tif"
+msgstr "*.png *.jpeg *.jpg *.svg *.svgz"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: imageSettings.ui:137
+msgid "Auto-update:"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QTimeEdit, autoUpdateTime)
+#: imageSettings.ui:145
+msgid ""
+"Updates the picture from the source in the given time.\n"
+"Useful if you want a live cam or weather data to be up to date."
+msgstr ""
+
+#. i18n: ectx: property (specialValueText), widget (QTimeEdit, autoUpdateTime)
+#: imageSettings.ui:148
+msgid "never"
+msgstr ""
+
+#. i18n: ectx: property (displayFormat), widget (QTimeEdit, autoUpdateTime)
+#: imageSettings.ui:151
+msgid "hh'h' mm'min'"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KPushButton, addDirButton)
+#: imageSettings.ui:206
+msgid "&Add Folder..."
+msgstr "फोल्डर जोड़व... (&A)"
+
+#. i18n: ectx: property (text), widget (KPushButton, removeDirButton)
+#: imageSettings.ui:216
+msgid "&Remove Folder"
+msgstr "फोल्डर मेटाव (&R)"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: imageSettings.ui:254
+#, fuzzy
+msgid "Include subfolders:"
+msgstr "सब-फोल्डर सामिल करव (&I)"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: imageSettings.ui:274
+#, fuzzy
+msgid "Randomize:"
+msgstr "बेतरतीब"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: imageSettings.ui:294
+msgid "Change images every:"
+msgstr "चित्र ल बदलव हर एक:"
+
+#. i18n: ectx: property (displayFormat), widget (QTimeEdit, slideShowDelay)
+#: imageSettings.ui:320
+msgctxt ""
+"(qtdt-format) Please do not change the quotes (') and translate only the "
+"content of the quotes."
+msgid "hh 'Hours' mm 'Mins' ss 'Secs'"
+msgstr "घघ 'घंटे' मिमि 'मिनट' सेसे 'सेकन्ड'"
+
+#. i18n: ectx: property (text), widget (QLabel, selectPoTDlabel)
+#: imageSettings.ui:353
+msgid "Select Picture of the day source:"
+msgstr "दिन स्रोत के फोटू चुनव"
 
 #: picture.cpp:94
 #, fuzzy
@@ -72,61 +180,6 @@ msgstr ""
 #: slideshow.cpp:227
 msgid "No Picture from this Provider."
 msgstr ""
-
-#, fuzzy
-#~ msgid "Rounded corners:"
-#~ msgstr "गोलीय किनारा परयोग करव"
-
-#, fuzzy
-#~ msgid "Shadow:"
-#~ msgstr "छइंहा दिखाव"
-
-#, fuzzy
-#~ msgid "Frame:"
-#~ msgstr "फ्रेम रंग:"
-
-#~ msgid "Frame color:"
-#~ msgstr "फ्रेम रंग:"
-
-#~ msgid "Slideshow"
-#~ msgstr "स्लाइड-सो"
-
-#~ msgid "Picture of the day"
-#~ msgstr "दिन के चित्र"
-
-#~ msgid "Picture:"
-#~ msgstr "फोटू:"
-
-#, fuzzy
-#~| msgid "*.png *.jpeg *.jpg *.svg *.svgz"
-#~ msgid "*.png *.jpeg *.jpg *.svg *.svgz *.bmp *.tif"
-#~ msgstr "*.png *.jpeg *.jpg *.svg *.svgz"
-
-#~ msgid "&Add Folder..."
-#~ msgstr "फोल्डर जोड़व... (&A)"
-
-#~ msgid "&Remove Folder"
-#~ msgstr "फोल्डर मेटाव (&R)"
-
-#, fuzzy
-#~ msgid "Include subfolders:"
-#~ msgstr "सब-फोल्डर सामिल करव (&I)"
-
-#, fuzzy
-#~ msgid "Randomize:"
-#~ msgstr "बेतरतीब"
-
-#~ msgid "Change images every:"
-#~ msgstr "चित्र ल बदलव हर एक:"
-
-#~ msgctxt ""
-#~ "(qtdt-format) Please do not change the quotes (') and translate only the "
-#~ "content of the quotes."
-#~ msgid "hh 'Hours' mm 'Mins' ss 'Secs'"
-#~ msgstr "घघ 'घंटे' मिमि 'मिनट' सेसे 'सेकन्ड'"
-
-#~ msgid "Select Picture of the day source:"
-#~ msgstr "दिन स्रोत के फोटू चुनव"
 
 #~ msgctxt "Error"
 #~ msgid "Error loading image"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplato\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 02:40+0100\n"
+"POT-Creation-Date: 2012-11-16 02:04+0100\n"
 "PO-Revision-Date: 2009-03-03 09:54+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -262,22 +262,352 @@ msgid ""
 "note></para>"
 msgstr ""
 
-#: kptcolorsconfigpanel.cpp:34
+#. i18n: ectx: label, entry (ColorGradientType), group (TaskColors)
+#: kptcolorsconfigpanel.cpp:34 plansettings.kcfg:93
 #, fuzzy
 #| msgid "Lines"
 msgid "Linear"
 msgstr "पंक्तियाँ"
 
-#: kptcolorsconfigpanel.cpp:35
+#. i18n: ectx: label, entry (ColorGradientType), group (TaskColors)
+#: kptcolorsconfigpanel.cpp:35 plansettings.kcfg:94
 #, fuzzy
 #| msgid "KPlato"
 msgid "Flat"
 msgstr "के-प्लेटो"
 
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: kptcolorsconfigpanel.ui:28
+#, fuzzy
+#| msgid "Gantt"
+msgid "Gradient:"
+msgstr "गेंट"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: kptcolorsconfigpanel.ui:57
+msgctxt "@title:tab"
+msgid "Summary task"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: kptcolorsconfigpanel.ui:69
+#, fuzzy
+#| msgid "Task Defaults"
+msgctxt "@label:chooser"
+msgid "Default:"
+msgstr "काम डिफाल्ट"
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_SummaryTaskLevelColorsEnabled)
+#: kptcolorsconfigpanel.ui:92
+msgctxt "@title:group"
+msgid "Use level colors"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: kptcolorsconfigpanel.ui:110
+msgctxt "@label:chooser"
+msgid "Level 1"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: kptcolorsconfigpanel.ui:139
+msgctxt "@label:chooser"
+msgid "Level 2"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: kptcolorsconfigpanel.ui:168
+msgctxt "@label:chooser"
+msgid "Level 3"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: kptcolorsconfigpanel.ui:197
+msgctxt "@label:chooser"
+msgid "Level 4"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: kptcolorsconfigpanel.ui:231
+#, fuzzy
+#| msgid "Tasks"
+msgctxt "@title:tab"
+msgid "Task"
+msgstr "काम"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, label_12)
+#: kptcolorsconfigpanel.ui:243 kptcolorsconfigpanel.ui:373
+msgctxt "@label:chooser"
+msgid "Normal:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#. i18n: ectx: property (text), widget (QLabel, label_14)
+#: kptcolorsconfigpanel.ui:272 kptcolorsconfigpanel.ui:402
+msgctxt "@label:chooser"
+msgid "Critical:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: ectx: property (text), widget (QLabel, label_13)
+#: kptcolorsconfigpanel.ui:301 kptcolorsconfigpanel.ui:431
+msgctxt "@label:chooser"
+msgid "Finished:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: kptcolorsconfigpanel.ui:330 kptcolorsconfigpanel.ui:460
+msgctxt "@label:chooser"
+msgid "Error:"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_3)
+#: kptcolorsconfigpanel.ui:361
+#, fuzzy
+#| msgid "Milestone Gantt"
+msgctxt "@title:tab"
+msgid "Milestone"
+msgstr "माइलस्टोन गेंट"
+
+#. i18n: ectx: property (title), widget (QButtonGroup)
+#: kptconfigbehaviorpanelbase.ui:25
+msgid "Calculation"
+msgstr "गनना"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: kptconfigbehaviorpanelbase.ui:36
+msgid "Manual"
+msgstr "हस्तचालित"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: kptconfigbehaviorpanelbase.ui:44
+msgid "Immediate on change"
+msgstr "बदलाव मं तुरंत"
+
+#. i18n: ectx: property (title), widget (QGroupBox)
+#: kptconfigbehaviorpanelbase.ui:54
+msgid "Constraints"
+msgstr "प्रतिबन्ध"
+
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: kptconfigbehaviorpanelbase.ui:65
+msgid "Allow overbooking of resources"
+msgstr "संसाधन मन के ओवरबुकिंग स्वीकारव"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: kptconfigtaskpanelbase.ui:25
+msgid "General"
+msgstr "सामान्य"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, leaderlabel)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_Leader)
+#: kptconfigtaskpanelbase.ui:41 kptconfigtaskpanelbase.ui:65
+msgid ""
+"The person responsible for this task.\n"
+"\n"
+"This is not limited to persons available in a resource group but can be "
+"anyone. You can even directly access your address book with the Choose "
+"button."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, leaderlabel)
+#: kptconfigtaskpanelbase.ui:44
+msgid "Responsible:"
+msgstr "जवाबदार:"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, chooseLeader)
+#: kptconfigtaskpanelbase.ui:72
+msgid "Insert a person from your address book"
+msgstr "अपन पता पुस्तिका से एक मनखे भरव"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, chooseLeader)
+#: kptconfigtaskpanelbase.ui:75
+msgid "Insert a person from your address book."
+msgstr "अपन पता पुस्तिका से एक मनखे भरव"
+
+#. i18n: ectx: property (text), widget (QPushButton, chooseLeader)
+#: kptconfigtaskpanelbase.ui:78
+msgid "Choose..."
+msgstr "चुनव..."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: kptconfigtaskpanelbase.ui:96
+msgid "Scheduling constraint:"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
+#: kptconfigtaskpanelbase.ui:116
+msgid "As Soon as Possible"
+msgstr "जितनी जल्दी संभव हो"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
+#: kptconfigtaskpanelbase.ui:121
+msgid "As Late as Possible"
+msgstr "जितनी देरी से संभव हो"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
+#: kptconfigtaskpanelbase.ui:126
+msgid "Must Start On"
+msgstr "पर चालू होना ही चाही"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
+#: kptconfigtaskpanelbase.ui:131
+msgid "Must Finish On"
+msgstr "पर पूरा होना ही चाही"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
+#: kptconfigtaskpanelbase.ui:136
+msgid "Start Not Earlier Than"
+msgstr "से पहिली प्रारंब नइ हो"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
+#: kptconfigtaskpanelbase.ui:141
+msgid "Finish Not Later Than"
+msgstr "के बाद पूरा नइ हो"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
+#: kptconfigtaskpanelbase.ui:146
+msgid "Fixed Interval"
+msgstr "स्थिर अंतराल"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_5)
+#: kptconfigtaskpanelbase.ui:160
+#, fuzzy
+#| msgid "Constraints"
+msgid "Constraint Start time usage:"
+msgstr "प्रतिबन्ध"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartTimeUsage)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EndTimeUsage)
+#: kptconfigtaskpanelbase.ui:180 kptconfigtaskpanelbase.ui:250
+#, fuzzy
+#| msgid "Constraints"
+msgid "Current date and time"
+msgstr "प्रतिबन्ध"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartTimeUsage)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EndTimeUsage)
+#: kptconfigtaskpanelbase.ui:185 kptconfigtaskpanelbase.ui:255
+#, fuzzy
+#| msgid "Constraints"
+msgid "Current date, specified time"
+msgstr "प्रतिबन्ध"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartTimeUsage)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EndTimeUsage)
+#: kptconfigtaskpanelbase.ui:190 kptconfigtaskpanelbase.ui:260
+#, fuzzy
+#| msgid "Constraints"
+msgid "Specified date and time"
+msgstr "प्रतिबन्ध"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_3)
+#: kptconfigtaskpanelbase.ui:204
+#, fuzzy
+#| msgid "Constraints"
+msgid "Constraint start time:"
+msgstr "प्रतिबन्ध"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_6)
+#: kptconfigtaskpanelbase.ui:230
+#, fuzzy
+#| msgid "Constraints"
+msgid "Constraint End time usage:"
+msgstr "प्रतिबन्ध"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_4)
+#: kptconfigtaskpanelbase.ui:274
+#, fuzzy
+#| msgid "Constraints"
+msgid "Constraint end time:"
+msgstr "प्रतिबन्ध"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_7)
+#: kptconfigtaskpanelbase.ui:307
+#, fuzzy
+#| msgid "Estimate:"
+msgid "Estimate type:"
+msgstr "एस्टीमेट:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EstimateType)
+#: kptconfigtaskpanelbase.ui:330
+msgid "Effort"
+msgstr "प्रयास"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EstimateType)
+#: kptconfigtaskpanelbase.ui:335
+msgid "Duration"
+msgstr "अवधि"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_8)
+#: kptconfigtaskpanelbase.ui:349
+#, fuzzy
+#| msgid "Estimate:"
+msgid "Expected estimate:"
+msgstr "एस्टीमेट:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
+#: kptconfigtaskpanelbase.ui:378
+#, fuzzy
+#| msgid "Optimistic:"
+msgid "Optimistic estimate:"
+msgstr "आसावादी:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_OptimisticRatio)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_PessimisticRatio)
+#: kptconfigtaskpanelbase.ui:391 kptconfigtaskpanelbase.ui:426
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
+#: kptconfigtaskpanelbase.ui:410
+#, fuzzy
+#| msgid "Pessimistic:"
+msgid "Pessimistic estimate:"
+msgstr "निस्क्रियवादी:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, widget)
+#: kptconfigtaskpanelbase.ui:457
+#, fuzzy
+#| msgid "Task Execution"
+msgid "Description"
+msgstr "काम प्रोग्राम"
+
 #: kptinsertfiledlg.cpp:36
 #, fuzzy
 #| msgid "Insert Document"
 msgid "Insert File"
+msgstr "कागद भरव"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: kptinsertfilepanel.ui:40
+#, fuzzy
+#| msgid "Constraints"
+msgid "Current node:"
+msgstr "प्रतिबन्ध"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_useProject)
+#: kptinsertfilepanel.ui:68
+#, fuzzy
+#| msgid "Insert Document"
+msgid "Insert on top level"
+msgstr "कागद भरव"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_isParent)
+#: kptinsertfilepanel.ui:75
+#, fuzzy
+#| msgid "Insert Document"
+msgid "Insert as children to current node"
+msgstr "कागद भरव"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_isAfter)
+#: kptinsertfilepanel.ui:82
+#, fuzzy
+#| msgid "Insert Document"
+msgid "Insert after current node"
 msgstr "कागद भरव"
 
 #: kptpart.cpp:184 kptpart.cpp:492
@@ -1034,6 +1364,34 @@ msgctxt "@action:inmenu Insert View"
 msgid "Insert..."
 msgstr "प्रविस्ट"
 
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: kptviewlistaddview.ui:20 kptviewlisteditview.ui:20
+msgid "Category:"
+msgstr "वर्गः"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: kptviewlistaddview.ui:43 kptviewlisteditcategory.ui:20
+#: kptviewlisteditview.ui:43
+msgid "After"
+msgstr "बाद"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: kptviewlistaddview.ui:63
+msgid "View type:"
+msgstr "दृस्य किसिम:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: kptviewlistaddview.ui:80 kptviewlisteditcategory.ui:40
+#: kptviewlisteditview.ui:63
+msgid "Name:"
+msgstr "नाम:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: kptviewlistaddview.ui:93 kptviewlisteditcategory.ui:53
+#: kptviewlisteditview.ui:76
+msgid "Tip:"
+msgstr "नुस्खा:"
+
 #: kptviewlistdialog.cpp:36
 #, fuzzy
 #| msgid "Add View"
@@ -1121,246 +1479,321 @@ msgctxt "@title:window"
 msgid "View Selector"
 msgstr "दृस्य चुनइया"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: kptviewlistdocker.ui:22
+msgid "Words"
+msgstr "सब्द"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: kptviewlistdocker.ui:27
+msgid "Sentences"
+msgstr "वाक्य"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: kptviewlistdocker.ui:32
+msgid "Syllables"
+msgstr "सिलेबल्स"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: kptviewlistdocker.ui:37
+msgid "Lines"
+msgstr "पंक्तियाँ"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: kptviewlistdocker.ui:42
+msgid "Characters incl. spaces"
+msgstr "खाली जगह सहित अक्छर"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: kptviewlistdocker.ui:47
+msgid "Characters without spaces"
+msgstr "खाली जगह रहित अक्छर"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: kptviewlistdocker.ui:52
+msgid "Flesch reading ease"
+msgstr "फ्लैस पठन ईजी"
+
+#. i18n: ectx: property (text), widget (QLineEdit, count)
+#: kptviewlistdocker.ui:63
+msgid "0"
+msgstr "0"
+
+#. i18n: ectx: property (text), widget (QToolButton, refresh)
+#: kptviewlistdocker.ui:73
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (text), widget (QCheckBox, footEndNotes)
+#: kptviewlistdocker.ui:84
+msgid "Include text from foot- and endnotes"
+msgstr "पाद-टिप्पनियों अउ आखरी-टिप्पनी से पाठ सामिल करव"
+
+#. i18n: ectx: property (text), widget (QCheckBox, autoRefresh)
+#: kptviewlistdocker.ui:91
+msgid "Automatically refresh data"
+msgstr "डाटा अपने अपन ताजा करव"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_CheckForWorkPackages)
+#: kptworkpackageconfigpanel.ui:20
+#, fuzzy
+#| msgid "Update from Work Package"
+msgid "Check for work packages"
+msgstr "काम पैकेज से अपडेट करव"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: kptworkpackageconfigpanel.ui:27
+msgid "Retrieve URL:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_DeleteFile)
+#: kptworkpackageconfigpanel.ui:37
+msgid "Delete file after it has been retrieved"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_SaveFile)
+#: kptworkpackageconfigpanel.ui:44
+msgid "Save file after it has been retrieved"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: kptworkpackageconfigpanel.ui:51
+msgid "Save URL:"
+msgstr ""
+
 #: main.cpp:32
 msgid "File to open"
 msgstr "फाइल जऊन ल खोलना हे"
 
+#. i18n: ectx: Menu (file)
+#: plan.rc:4
+msgid "&File"
+msgstr "फाइल (&F)"
+
+#. i18n: ectx: Menu (edit)
+#: plan.rc:8
+msgid "&Edit"
+msgstr "संपादन (&E)"
+
+#. i18n: ectx: Menu (view)
+#: plan.rc:34 plan_readonly.rc:3
+msgid "&View"
+msgstr "देखव (&V)"
+
+#. i18n: ectx: Menu (project)
+#: plan.rc:41
+msgid "&Project"
+msgstr "परियोजना (&P)"
+
+#. i18n: ectx: Menu (tools)
+#: plan.rc:48
+msgid "&Tools"
+msgstr "औजार (&T)"
+
+#. i18n: ectx: Menu (settings)
+#: plan.rc:55
+msgid "&Settings"
+msgstr "सेटिंग (&S)"
+
+#. i18n: ectx: Menu (help)
+#: plan.rc:58
+msgid "&Help"
+msgstr ""
+
+#. i18n: ectx: ToolBar (project)
+#: plan.rc:62
+msgid "Project"
+msgstr "परियोजना"
+
+#. i18n: ectx: label, entry (Leader), group (Task defaults)
+#: plansettings.kcfg:9
+msgid "Name of task responsible"
+msgstr ""
+
+#. i18n: ectx: label, entry (ConstraintType), group (Task defaults)
+#: plansettings.kcfg:12
+msgid "Scheduling constraint type"
+msgstr ""
+
+#. i18n: ectx: label, entry (StartTimeUsage), group (Task defaults)
+#: plansettings.kcfg:25
+msgid "Defines how start constraint time is used"
+msgstr ""
+
+#. i18n: ectx: label, entry (ConstraintStartTime), group (Task defaults)
+#: plansettings.kcfg:34
 #, fuzzy
-#~| msgid "Task Defaults"
-#~ msgctxt "@label:chooser"
-#~ msgid "Default:"
-#~ msgstr "काम डिफाल्ट"
+#| msgid "Constraints"
+msgid "Constraint start date and time"
+msgstr "प्रतिबन्ध"
 
+#. i18n: ectx: label, entry (EndTimeUsage), group (Task defaults)
+#: plansettings.kcfg:37
+msgid "Defines how end constraint time is used"
+msgstr ""
+
+#. i18n: ectx: label, entry (ConstraintEndTime), group (Task defaults)
+#: plansettings.kcfg:46
 #, fuzzy
-#~| msgid "Tasks"
-#~ msgctxt "@title:tab"
-#~ msgid "Task"
-#~ msgstr "काम"
+#| msgid "Constraints"
+msgid "Constraint end date and time"
+msgstr "प्रतिबन्ध"
 
+#. i18n: ectx: label, entry (EstimateType), group (Task defaults)
+#: plansettings.kcfg:50
 #, fuzzy
-#~| msgid "Milestone Gantt"
-#~ msgctxt "@title:tab"
-#~ msgid "Milestone"
-#~ msgstr "माइलस्टोन गेंट"
+#| msgid "Estimate:"
+msgid "Type of estimate"
+msgstr "एस्टीमेट:"
 
-#~ msgid "Calculation"
-#~ msgstr "गनना"
-
-#~ msgid "Manual"
-#~ msgstr "हस्तचालित"
-
-#~ msgid "Immediate on change"
-#~ msgstr "बदलाव मं तुरंत"
-
-#~ msgid "Constraints"
-#~ msgstr "प्रतिबन्ध"
-
-#~ msgid "Allow overbooking of resources"
-#~ msgstr "संसाधन मन के ओवरबुकिंग स्वीकारव"
-
-#~ msgid "General"
-#~ msgstr "सामान्य"
-
-#~ msgid "Responsible:"
-#~ msgstr "जवाबदार:"
-
-#~ msgid "Insert a person from your address book"
-#~ msgstr "अपन पता पुस्तिका से एक मनखे भरव"
-
-#~ msgid "Insert a person from your address book."
-#~ msgstr "अपन पता पुस्तिका से एक मनखे भरव"
-
-#~ msgid "Choose..."
-#~ msgstr "चुनव..."
-
-#~ msgid "As Soon as Possible"
-#~ msgstr "जितनी जल्दी संभव हो"
-
-#~ msgid "As Late as Possible"
-#~ msgstr "जितनी देरी से संभव हो"
-
-#~ msgid "Must Start On"
-#~ msgstr "पर चालू होना ही चाही"
-
-#~ msgid "Must Finish On"
-#~ msgstr "पर पूरा होना ही चाही"
-
-#~ msgid "Start Not Earlier Than"
-#~ msgstr "से पहिली प्रारंब नइ हो"
-
-#~ msgid "Finish Not Later Than"
-#~ msgstr "के बाद पूरा नइ हो"
-
-#~ msgid "Fixed Interval"
-#~ msgstr "स्थिर अंतराल"
-
+#. i18n: ectx: label, entry (Unit), group (Task defaults)
+#: plansettings.kcfg:58
 #, fuzzy
-#~| msgid "Constraints"
-#~ msgid "Current date and time"
-#~ msgstr "प्रतिबन्ध"
+#| msgid "Estimate:"
+msgid "Estimate time unit"
+msgstr "एस्टीमेट:"
 
+#. i18n: ectx: label, entry (ExpectedEstimate), group (Task defaults)
+#: plansettings.kcfg:72
 #, fuzzy
-#~| msgid "Constraints"
-#~ msgid "Constraint start time:"
-#~ msgstr "प्रतिबन्ध"
+#| msgid "Estimate:"
+msgid "Expected estimate"
+msgstr "एस्टीमेट:"
 
+#. i18n: ectx: label, entry (OptimisticRatio), group (Task defaults)
+#: plansettings.kcfg:76
 #, fuzzy
-#~| msgid "Constraints"
-#~ msgid "Constraint end time:"
-#~ msgstr "प्रतिबन्ध"
+#| msgid "Optimistic:"
+msgid "Optimistic estimate"
+msgstr "आसावादी:"
 
+#. i18n: ectx: label, entry (PessimisticRatio), group (Task defaults)
+#: plansettings.kcfg:80
 #, fuzzy
-#~| msgid "Estimate:"
-#~ msgid "Estimate type:"
-#~ msgstr "एस्टीमेट:"
+#| msgid "Pessimistic:"
+msgid "Pessimistic estimate"
+msgstr "निस्क्रियवादी:"
 
-#~ msgid "Effort"
-#~ msgstr "प्रयास"
-
-#~ msgid "Duration"
-#~ msgstr "अवधि"
-
+#. i18n: ectx: label, entry (Description), group (Task defaults)
+#: plansettings.kcfg:85
 #, fuzzy
-#~| msgid "Estimate:"
-#~ msgid "Expected estimate:"
-#~ msgstr "एस्टीमेट:"
+#| msgid "Task Execution"
+msgid "Task description"
+msgstr "काम प्रोग्राम"
 
+#. i18n: ectx: label, entry (ColorGradientType), group (TaskColors)
+#: plansettings.kcfg:91
 #, fuzzy
-#~| msgid "Optimistic:"
-#~ msgid "Optimistic estimate:"
-#~ msgstr "आसावादी:"
+#| msgid "Gantt"
+msgid "Gradient"
+msgstr "गेंट"
 
-#~ msgid "%"
-#~ msgstr "%"
+#. i18n: ectx: label, entry (SummaryTaskLevelColorsEnabled), group (TaskColors)
+#: plansettings.kcfg:99
+msgid "Enable summary task level colors"
+msgstr ""
 
+#. i18n: ectx: label, entry (SummaryTaskDefaultColor), group (TaskColors)
+#: plansettings.kcfg:103
+msgid "Summary task default color"
+msgstr ""
+
+#. i18n: ectx: label, entry (SummaryTaskLevelColor_1), group (TaskColors)
+#: plansettings.kcfg:107
+msgid "Summary task color, level 1"
+msgstr ""
+
+#. i18n: ectx: label, entry (SummaryTaskLevelColor_2), group (TaskColors)
+#: plansettings.kcfg:111
+msgid "Summary task color, level 2"
+msgstr ""
+
+#. i18n: ectx: label, entry (SummaryTaskLevelColor_3), group (TaskColors)
+#: plansettings.kcfg:115
+msgid "Summary task color, level 3"
+msgstr ""
+
+#. i18n: ectx: label, entry (SummaryTaskLevelColor_4), group (TaskColors)
+#: plansettings.kcfg:119
+msgid "Summary task color, level 4"
+msgstr ""
+
+#. i18n: ectx: label, entry (TaskNormalColor), group (TaskColors)
+#: plansettings.kcfg:123
+msgid "Task color in normal state"
+msgstr ""
+
+#. i18n: ectx: label, entry (TaskCriticalColor), group (TaskColors)
+#: plansettings.kcfg:127
+msgid "Task color in critical state"
+msgstr ""
+
+#. i18n: ectx: label, entry (TaskFinishedColor), group (TaskColors)
+#: plansettings.kcfg:131
+msgid "Task color in finished state"
+msgstr ""
+
+#. i18n: ectx: label, entry (TaskErrorColor), group (TaskColors)
+#: plansettings.kcfg:135
+msgid "Task color in error state"
+msgstr ""
+
+#. i18n: ectx: label, entry (MilestoneNormalColor), group (TaskColors)
+#: plansettings.kcfg:139
+msgid "Milestone color in normal state"
+msgstr ""
+
+#. i18n: ectx: label, entry (MilestoneCriticalColor), group (TaskColors)
+#: plansettings.kcfg:143
+msgid "Milestone color in critical state"
+msgstr ""
+
+#. i18n: ectx: label, entry (MilestoneFinishedColor), group (TaskColors)
+#: plansettings.kcfg:147
+msgid "Milestone color in finished state"
+msgstr ""
+
+#. i18n: ectx: label, entry (MilestoneErrorColor), group (TaskColors)
+#: plansettings.kcfg:151
+msgid "Milestone color in error state"
+msgstr ""
+
+#. i18n: ectx: label, entry (CheckForWorkPackages), group (Work Package)
+#: plansettings.kcfg:158
 #, fuzzy
-#~| msgid "Pessimistic:"
-#~ msgid "Pessimistic estimate:"
-#~ msgstr "निस्क्रियवादी:"
+#| msgid "Automatically refresh data"
+msgid "Automatically check for new work packages"
+msgstr "डाटा अपने अपन ताजा करव"
 
-#, fuzzy
-#~| msgid "Task Execution"
-#~ msgid "Description"
-#~ msgstr "काम प्रोग्राम"
+#. i18n: ectx: label, entry (RetrieveUrl), group (Work Package)
+#: plansettings.kcfg:161
+msgid "Directory where Plan retrieves work packages from project members"
+msgstr ""
 
-#, fuzzy
-#~| msgid "Insert Document"
-#~ msgid "Insert after current node"
-#~ msgstr "कागद भरव"
+#. i18n: ectx: label, entry (DeleteFile), group (Work Package)
+#: plansettings.kcfg:164
+msgid "If set, Plan will delete the file after it has been read"
+msgstr ""
 
-#~ msgid "Category:"
-#~ msgstr "वर्गः"
+#. i18n: ectx: label, entry (SaveFile), group (Work Package)
+#: plansettings.kcfg:167
+msgid "If set, Plan will save the file after it has been read"
+msgstr ""
 
-#~ msgid "After"
-#~ msgstr "बाद"
+#. i18n: ectx: label, entry (SaveUrl), group (Work Package)
+#: plansettings.kcfg:170
+msgid "Directory where Plan saves work packages when the package has been read"
+msgstr ""
 
-#~ msgid "View type:"
-#~ msgstr "दृस्य किसिम:"
+#. i18n: ectx: label, entry (MinimumDurationUnit), group (Miscellaneous)
+#: plansettings.kcfg:176
+msgid "The smallest duration unit allowed"
+msgstr ""
 
-#~ msgid "Name:"
-#~ msgstr "नाम:"
-
-#~ msgid "Tip:"
-#~ msgstr "नुस्खा:"
-
-#~ msgid "Words"
-#~ msgstr "सब्द"
-
-#~ msgid "Sentences"
-#~ msgstr "वाक्य"
-
-#~ msgid "Syllables"
-#~ msgstr "सिलेबल्स"
-
-#~ msgid "Lines"
-#~ msgstr "पंक्तियाँ"
-
-#~ msgid "Characters incl. spaces"
-#~ msgstr "खाली जगह सहित अक्छर"
-
-#~ msgid "Characters without spaces"
-#~ msgstr "खाली जगह रहित अक्छर"
-
-#~ msgid "Flesch reading ease"
-#~ msgstr "फ्लैस पठन ईजी"
-
-#~ msgid "0"
-#~ msgstr "0"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Include text from foot- and endnotes"
-#~ msgstr "पाद-टिप्पनियों अउ आखरी-टिप्पनी से पाठ सामिल करव"
-
-#~ msgid "Automatically refresh data"
-#~ msgstr "डाटा अपने अपन ताजा करव"
-
-#, fuzzy
-#~| msgid "Update from Work Package"
-#~ msgid "Check for work packages"
-#~ msgstr "काम पैकेज से अपडेट करव"
-
-#~ msgid "&File"
-#~ msgstr "फाइल (&F)"
-
-#~ msgid "&Edit"
-#~ msgstr "संपादन (&E)"
-
-#~ msgid "&View"
-#~ msgstr "देखव (&V)"
-
-#~ msgid "&Project"
-#~ msgstr "परियोजना (&P)"
-
-#~ msgid "&Tools"
-#~ msgstr "औजार (&T)"
-
-#~ msgid "&Settings"
-#~ msgstr "सेटिंग (&S)"
-
-#~ msgid "Project"
-#~ msgstr "परियोजना"
-
-#, fuzzy
-#~| msgid "Constraints"
-#~ msgid "Constraint start date and time"
-#~ msgstr "प्रतिबन्ध"
-
-#, fuzzy
-#~| msgid "Constraints"
-#~ msgid "Constraint end date and time"
-#~ msgstr "प्रतिबन्ध"
-
-#, fuzzy
-#~| msgid "Estimate:"
-#~ msgid "Expected estimate"
-#~ msgstr "एस्टीमेट:"
-
-#, fuzzy
-#~| msgid "Optimistic:"
-#~ msgid "Optimistic estimate"
-#~ msgstr "आसावादी:"
-
-#, fuzzy
-#~| msgid "Pessimistic:"
-#~ msgid "Pessimistic estimate"
-#~ msgstr "निस्क्रियवादी:"
-
-#, fuzzy
-#~| msgid "Task Execution"
-#~ msgid "Task description"
-#~ msgstr "काम प्रोग्राम"
-
-#, fuzzy
-#~| msgid "Gantt"
-#~ msgid "Gradient"
-#~ msgstr "गेंट"
-
-#, fuzzy
-#~| msgid "Automatically refresh data"
-#~ msgid "Automatically check for new work packages"
-#~ msgstr "डाटा अपने अपन ताजा करव"
+#. i18n: ectx: label, entry (MaximumDurationUnit), group (Miscellaneous)
+#: plansettings.kcfg:180
+msgid "The largest duration unit allowed"
+msgstr ""
 
 #, fuzzy
 #~| msgid "Edit Main Project..."

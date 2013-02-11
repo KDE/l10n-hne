@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 03:44+0100\n"
+"POT-Creation-Date: 2013-01-29 04:58+0100\n"
 "PO-Revision-Date: 2009-02-26 15:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -26,6 +26,37 @@ msgstr "रविसंकर सिरीवास्तव, जी. करू�
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raviratlami@aol.in"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: app/advancedconfigpage.ui:17
+#, fuzzy
+#| msgid "Cancel"
+msgid "Cache:"
+msgstr "खारिज करव"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DeleteThumbnailCacheOnExit)
+#: app/advancedconfigpage.ui:29
+msgid "Delete thumbnail cache folder on exit"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, cacheHelpLabel)
+#: app/advancedconfigpage.ui:51
+msgid ""
+"Enable this option if you do not have a lot of disk space.<br/><br/><em>Be "
+"careful:</em> this will delete the folder named <filename>.thumbnails</"
+"filename> in your home folder, deleting all thumbnails previously generated "
+"by Gwenview and other applications."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: app/advancedconfigpage.ui:77
+msgid "History:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HistoryEnabled)
+#: app/advancedconfigpage.ui:89
+msgid "Remember folders and URLs"
+msgstr ""
 
 #: app/browsemainpage.cpp:116 app/mainwindow.cpp:327 app/viewmainpage.cpp:423
 #: lib/documentview/documentviewcontroller.cpp:92
@@ -112,6 +143,11 @@ msgid "%1 document"
 msgid_plural "%1 documents"
 msgstr[0] "%1 कागद"
 msgstr[1] "%1 कागद"
+
+#. i18n: ectx: property (text), widget (Gwenview::StatusBarToolButton, mAddFilterButton)
+#: app/browsemainpage.ui:88
+msgid "Add Filter"
+msgstr "फिल्टर जोड़व"
 
 #: app/configdialog.cpp:72
 msgid "General"
@@ -317,6 +353,57 @@ msgctxt "@action:inmenu"
 msgid "Filter by Tag"
 msgstr "टैग से छानव"
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: app/fullscreenconfigwidget.ui:20
+msgid "Slideshow"
+msgstr "स्लाइड-सो"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: app/fullscreenconfigwidget.ui:29
+msgid "Interval:"
+msgstr "अंतरालः"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mSlideShowLoopCheckBox)
+#: app/fullscreenconfigwidget.ui:75
+msgid "Loop"
+msgstr "लूप"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mSlideShowRandomCheckBox)
+#: app/fullscreenconfigwidget.ui:82
+msgid "Random"
+msgstr "बेतरतीब"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: app/fullscreenconfigwidget.ui:92
+#, fuzzy
+#| msgid "Meta Information"
+msgid "Image Information"
+msgstr "मेटा जानकारी"
+
+#. i18n: ectx: property (text), widget (QPushButton, mConfigureDisplayedInformationButton)
+#: app/fullscreenconfigwidget.ui:101
+#, fuzzy
+#| msgid "Meta Information"
+msgid "Select Image Information to Display..."
+msgstr "मेटा जानकारी"
+
+#. i18n: ectx: property (title), widget (QGroupBox, mThumbnailGroupBox)
+#: app/fullscreenconfigwidget.ui:111
+#, fuzzy
+#| msgid "Thumbnail Bar"
+msgid "Thumbnails"
+msgstr "लघुफोटू पट्टी"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mShowThumbnailsCheckBox)
+#: app/fullscreenconfigwidget.ui:120
+msgid "Show thumbnails"
+msgstr "छोटेफोटू देखाव"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: app/fullscreenconfigwidget.ui:130
+msgid "Height:"
+msgstr "ऊंचाई:"
+
 #: app/fullscreencontent.cpp:153
 #, fuzzy
 #| msgctxt "@info:tooltip"
@@ -337,6 +424,25 @@ msgid "%1 sec"
 msgid_plural "%1 secs"
 msgstr[0] "%1 सेक."
 msgstr[1] "%1 सेक."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: app/generalconfigpage.ui:17
+#, fuzzy
+#| msgid "&View background color:"
+msgid "Background color:"
+msgstr "पिछोत अंगना के रंग देखाव: (&V)"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: app/generalconfigpage.ui:82
+msgid "Videos:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ListVideos)
+#: app/generalconfigpage.ui:89
+#, fuzzy
+#| msgid "Show Sidebar"
+msgid "Show videos"
+msgstr "बाजू पट्टी देखाव"
 
 #: app/gvcore.cpp:88
 msgctxt "@info"
@@ -385,6 +491,26 @@ msgctxt "@info"
 msgid "Gwenview cannot edit this kind of image."
 msgstr "ग्वेनव्यू अइसन फोटू मन के संपादन नइ कर सके"
 
+#. i18n: ectx: Menu (rating)
+#: app/gwenviewui.rc:47
+msgid "&Rating"
+msgstr "रेटिंग (&R)"
+
+#. i18n: ectx: Menu (plugins)
+#: app/gwenviewui.rc:76
+msgid "&Plugins"
+msgstr "प्लगइन्स (&l)"
+
+#. i18n: ectx: Menu (settings)
+#: app/gwenviewui.rc:79
+msgid "&Settings"
+msgstr "सेटिंग (&S)"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: app/gwenviewui.rc:92 part/gvpart.rc:15
+msgid "Main Toolbar"
+msgstr "मुख्य औजार पट्टी"
+
 #: app/imagemetainfodialog.cpp:128
 #, fuzzy
 #| msgid "Meta Information"
@@ -429,8 +555,9 @@ msgstr "लहुटाव"
 msgid "Resize"
 msgstr "आकार बदलव"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
 #: app/imageopscontextmanageritem.cpp:110 lib/crop/cropimageoperation.cpp:71
-#: lib/crop/cropwidget.cpp:191
+#: lib/crop/cropwidget.cpp:191 lib/crop/cropwidget.ui:20
 msgid "Crop"
 msgstr "काँट छाँट करव"
 
@@ -441,6 +568,95 @@ msgstr "रेड आई रिडक्सन मोड"
 #: app/imageopscontextmanageritem.cpp:142
 msgid "Image Operations"
 msgstr "फोटू आपरेसन्स"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: app/imageviewconfigpage.ui:17
+msgid "Transparent background:"
+msgstr "पारदर्सी पिछोत अंगना:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, checkBoardRadioButton)
+#: app/imageviewconfigpage.ui:38
+msgid "&Check board"
+msgstr "चेक बोर्ड (&C)"
+
+#. i18n: ectx: property (text), widget (QRadioButton, solidColorRadioButton)
+#: app/imageviewconfigpage.ui:71
+msgid "&Solid color:"
+msgstr "ठोस रंग: (&S)"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: app/imageviewconfigpage.ui:119
+msgid "Mouse wheel behavior:"
+msgstr "मुसुवा चकरी बरताव:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mouseWheelScrollRadioButton)
+#: app/imageviewconfigpage.ui:134
+msgctxt "@option:radio action on mouse wheel"
+msgid "Scroll"
+msgstr "स्क्राल"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mouseWheelBrowseRadioButton)
+#: app/imageviewconfigpage.ui:161
+msgctxt "@option:radio action on mouse wheel"
+msgid "Browse"
+msgstr "ब्राउज"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnlargeSmallerImages)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintEnlargeSmallerImages)
+#: app/imageviewconfigpage.ui:201 lib/print/printoptionspage.ui:98
+msgid "Enlarge smaller images"
+msgstr "छोटे फोटू ल बड़ा करव"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: app/imageviewconfigpage.ui:239
+#, fuzzy
+#| msgid "Information"
+msgid "Animations:"
+msgstr "जानकारी"
+
+#. i18n: ectx: property (text), widget (QRadioButton, glAnimationRadioButton)
+#: app/imageviewconfigpage.ui:254
+msgid "OpenGL"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, softwareAnimationRadioButton)
+#: app/imageviewconfigpage.ui:281
+msgid "Software"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, noAnimationRadioButton)
+#: app/imageviewconfigpage.ui:305
+msgid "None"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: app/imageviewconfigpage.ui:327
+#, fuzzy
+#| msgid "Thumbnail Bar"
+msgid "<b>Thumbnail Bar</b>"
+msgstr "लघुफोटू पट्टी"
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: app/imageviewconfigpage.ui:334
+#, fuzzy
+#| msgid "File Operations"
+msgid "Orientation:"
+msgstr "फाइल काम"
+
+#. i18n: ectx: property (text), widget (QRadioButton, horizontalRadioButton)
+#: app/imageviewconfigpage.ui:349
+msgid "Horizontal"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, verticalRadioButton)
+#: app/imageviewconfigpage.ui:373
+msgid "Vertical"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: app/imageviewconfigpage.ui:395
+msgid "Row count:"
+msgstr ""
 
 #: app/infocontextmanageritem.cpp:176
 #, kde-format
@@ -900,6 +1116,38 @@ msgstr "सून्य"
 msgid "Edit"
 msgstr "संपादन"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, SemanticInfoDialog)
+#: app/semanticinfodialog.ui:13
+msgid "Tag Editor"
+msgstr "टैग संपादक"
+
+#. i18n: ectx: property (text), widget (QPushButton, mPreviousButton)
+#: app/semanticinfodialog.ui:31
+msgid "Previous"
+msgstr "पिछला"
+
+#. i18n: ectx: property (text), widget (QPushButton, mNextButton)
+#: app/semanticinfodialog.ui:38
+msgid "Next"
+msgstr "अगला"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: app/semanticinfosidebaritem.ui:22
+msgid "Rating:"
+msgstr "दरजा:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: app/semanticinfosidebaritem.ui:45
+msgid "Tags:"
+msgstr "टैग:"
+
+#. i18n: ectx: property (clickMessage), widget (KTextEdit, mDescriptionTextEdit)
+#: app/semanticinfosidebaritem.ui:76
+#, fuzzy
+#| msgid "Description:"
+msgid "Description"
+msgstr "वर्नन:"
+
 #: app/startmainpage.cpp:307
 #, fuzzy
 #| msgid "Places"
@@ -920,6 +1168,40 @@ msgstr "फोल्डर बनाव"
 
 #: app/startmainpage.cpp:310
 msgid "Forget All"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, mHistoryDisabledLabel)
+#: app/startmainpage.ui:34
+msgid "History has been disabled."
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: app/startmainpage.ui:51
+msgid "Recent Folders"
+msgstr "मौजूदा फोल्डर"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: app/startmainpage.ui:65
+#, fuzzy
+#| msgid "Recent Folders"
+msgid "Recent URLs"
+msgstr "मौजूदा फोल्डर"
+
+#. i18n: ectx: attribute (title), widget (QWidget, placesTab)
+#: app/startmainpage.ui:109
+msgid "Places"
+msgstr "जगह"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tagsTab)
+#: app/startmainpage.ui:132
+msgid "Tags"
+msgstr "टैग"
+
+#. i18n: ectx: property (text), widget (QLabel, mTagLabel)
+#: app/startmainpage.ui:138
+msgid ""
+"Browsing by tags is not available. Make sure Nepomuk is properly installed "
+"on your computer."
 msgstr ""
 
 #: app/viewmainpage.cpp:308 app/viewmainpage.cpp:435
@@ -1086,6 +1368,31 @@ msgctxt "%1 is the importer keyword, %2 is keyword explanation"
 msgid "%1: %2"
 msgstr "%1x%2"
 
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoRename)
+#: importer/importerconfigdialog.ui:17
+msgid "Rename documents automatically"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: importer/importerconfigdialog.ui:39
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Filename"
+msgid "Rename Format:"
+msgstr "फाइलनाम"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: importer/importerconfigdialog.ui:59
+#, fuzzy
+#| msgid "Preview"
+msgid "Preview:"
+msgstr "प्रिव्यू"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: importer/importerconfigdialog.ui:83
+msgid "<i>Type text or click the items below to customize the format</i>"
+msgstr ""
+
 #: importer/main.cpp:40
 #, fuzzy
 #| msgid "Gwenview KPart"
@@ -1114,6 +1421,11 @@ msgstr "फोल्डर बनाव"
 msgid "Device UDI"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: importer/progresspage.ui:30
+msgid "Importing documents..."
+msgstr ""
+
 #: importer/thumbnailpage.cpp:193
 #, fuzzy
 #| msgctxt "@label"
@@ -1127,6 +1439,31 @@ msgstr "एक फोल्डर चुने गिस"
 #| msgid "Import"
 msgid "Import All"
 msgstr "आयात"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: importer/thumbnailpage.ui:173
+#, fuzzy
+#| msgid "One image has been modified."
+#| msgid_plural "%1 images have been modified."
+msgid "Select the documents to import"
+msgstr "%1 फोटू सुधारे गें."
+
+#. i18n: ectx: property (text), widget (QPushButton, mConfigureButton)
+#: importer/thumbnailpage.ui:185
+#, fuzzy
+#| msgid "&Settings"
+msgid "Settings..."
+msgstr "सेटिंग (&S)"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: importer/thumbnailpage.ui:201
+msgid "Enter the import destination"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: importer/thumbnailpage.ui:220
+msgid "Listing content of:"
+msgstr ""
 
 #: lib/crop/cropwidget.cpp:140
 msgid "Square"
@@ -1163,6 +1500,34 @@ msgstr "चौड़ाईः (&W)"
 #| msgid "Height:"
 msgid "Height"
 msgstr "ऊंचाई:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, advancedCheckBox)
+#: lib/crop/cropwidget.ui:29
+#, fuzzy
+#| msgid "Image Settings"
+msgid "Advanced settings"
+msgstr "फोटू सेटिंग"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: lib/crop/cropwidget.ui:55
+#, fuzzy
+#| msgid "Rating:"
+msgid "Ratio:"
+msgstr "दरजा:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: lib/crop/cropwidget.ui:84
+#, fuzzy
+#| msgid "Image Position"
+msgid "Position:"
+msgstr "फोटू स्थिति"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: lib/crop/cropwidget.ui:117
+#, fuzzy
+#| msgid "Size"
+msgid "Size:"
+msgstr "आकार"
 
 #: lib/document/document.cpp:236
 #, fuzzy
@@ -1276,6 +1641,64 @@ msgctxt "@info:tooltip"
 msgid "Close"
 msgstr "बंद करव"
 
+#. i18n: ectx: whatsthis, entry (PercentageOfMemoryUsageWarning), group (General)
+#: lib/gwenviewconfig.kcfg:31
+msgid ""
+"The percentage of memory used by Gwenview before it\n"
+"            warns the user and suggest saving changes."
+msgstr ""
+
+#. i18n: ectx: whatsthis, entry (BlackListedExtensions), group (General)
+#: lib/gwenviewconfig.kcfg:39
+msgid ""
+"A list of filename extensions Gwenview should not try to\n"
+"            load. This is useful to exclude raw files which are recognized "
+"as\n"
+"            TIFF or JPEG. We exclude *.new as well because this is the "
+"extension\n"
+"            used for temporary files by KSaveFile."
+msgstr ""
+
+#. i18n: ectx: whatsthis, entry (LockZoom), group (ImageView)
+#: lib/gwenviewconfig.kcfg:136
+msgid ""
+"Defines what happens when going to image B after having zoomed an area of "
+"image A.\n"
+"                When true: zoom and position is kept. When false: image B is "
+"zoomed out to fit the screen."
+msgstr ""
+
+#. i18n: ectx: label, entry (random), group (slide show)
+#: lib/gwenviewconfig.kcfg:217
+msgid "Display slide show images in random order"
+msgstr ""
+
+#. i18n: ectx: label, entry (fullscreen), group (slide show)
+#: lib/gwenviewconfig.kcfg:221
+#, fuzzy
+#| msgid "Start in fullscreen mode"
+msgid "Show slideshow in fullscreen mode"
+msgstr "पूरा स्क्रीन मोड मं चालू करव"
+
+#. i18n: ectx: label, entry (loop), group (slide show)
+#: lib/gwenviewconfig.kcfg:225
+#, fuzzy
+#| msgid "Go to Next Image"
+msgid "Loop on images"
+msgstr "अगले फोटू मं जाव"
+
+#. i18n: ectx: label, entry (stopAtEnd), group (slide show)
+#: lib/gwenviewconfig.kcfg:229
+#, fuzzy
+#| msgid "A starting file or folder"
+msgid "Stop at last image of folder"
+msgstr "फाइल या फोल्डर चालू करत हे"
+
+#. i18n: ectx: label, entry (interval), group (slide show)
+#: lib/gwenviewconfig.kcfg:233
+msgid "Interval between images (in seconds)"
+msgstr ""
+
 #: lib/historymodel.cpp:145
 #, kde-format
 msgid "Last visited: %1"
@@ -1347,8 +1770,74 @@ msgstr ""
 msgid "Print Image"
 msgstr "फोटू छापव"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
+#: lib/print/printoptionspage.ui:14
+msgid "Image Settings"
+msgstr "फोटू सेटिंग"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: lib/print/printoptionspage.ui:20
+msgid "Image Position"
+msgstr "फोटू स्थिति"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: lib/print/printoptionspage.ui:45
+msgid "Scaling"
+msgstr "आकार बदलना"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mNoScale)
+#: lib/print/printoptionspage.ui:51
+msgid "&No scaling"
+msgstr "कोई स्केलिंग नइ (&N)"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mScaleToPage)
+#: lib/print/printoptionspage.ui:61
+msgid "&Fit image to page"
+msgstr "फोटू ल पेज मं फिट करव (&F)"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mScaleTo)
+#: lib/print/printoptionspage.ui:123
+msgid "&Scale to:"
+msgstr "ए आकार मं बदलव: (&S)"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: lib/print/printoptionspage.ui:158
+msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
+msgid "x"
+msgstr "x"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
+#: lib/print/printoptionspage.ui:185
+msgid "Millimeters"
+msgstr "मिलिसमीटर (मिमी)"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
+#: lib/print/printoptionspage.ui:190
+msgid "Centimeters"
+msgstr "सेंटीमीटर (सेमी)"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
+#: lib/print/printoptionspage.ui:195
+msgid "Inches"
+msgstr "इंच (इं)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintKeepRatio)
+#: lib/print/printoptionspage.ui:224
+msgid "Keep ratio"
+msgstr "अनुपात बनाए रखव"
+
 #: lib/redeyereduction/redeyereductionimageoperation.cpp:77
 msgid "RedEyeReduction"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: lib/redeyereduction/redeyereductionwidget.ui:24
+msgid "Size"
+msgstr "आकार"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: lib/redeyereduction/redeyereductionwidget.ui:63
+msgid "Click on the red eye you want to fix"
 msgstr ""
 
 #: lib/resize/resizeimageoperation.cpp:71
@@ -1357,6 +1846,37 @@ msgstr ""
 msgctxt "(qtundo-format)"
 msgid "Resize"
 msgstr "आकार बदलव"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, ResizeImageWidget)
+#: lib/resize/resizeimagewidget.ui:14
+msgid "Image Resizing"
+msgstr "फोटू आकार बदलना"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: lib/resize/resizeimagewidget.ui:20
+#, fuzzy
+#| msgid "Enter the new size of the image:"
+msgid "Enter the new size for this image."
+msgstr "फोटू के नवा आकार भरव:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: lib/resize/resizeimagewidget.ui:32
+msgid "Current size:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: lib/resize/resizeimagewidget.ui:88
+#, fuzzy
+#| msgid "Size"
+msgid "New Size:"
+msgstr "आकार"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mKeepAspectCheckBox)
+#: lib/resize/resizeimagewidget.ui:135
+#, fuzzy
+#| msgid "Keep ratio"
+msgid "Keep aspect ratio"
+msgstr "अनुपात बनाए रखव"
 
 #: lib/semanticinfo/tagitemdelegate.cpp:66
 msgctxt "@info:tooltip"
@@ -1417,247 +1937,15 @@ msgstr "गुन"
 msgid "Gwenview KPart"
 msgstr "ग्वेन-व्यू के-पार्ट"
 
-#, fuzzy
-#~| msgid "Cancel"
-#~ msgid "Cache:"
-#~ msgstr "खारिज करव"
+#. i18n: ectx: Menu (file)
+#: part/gvpart.rc:4
+msgid "&File"
+msgstr "फाइल (&F)"
 
-#~ msgid "Add Filter"
-#~ msgstr "फिल्टर जोड़व"
-
-#~ msgid "Slideshow"
-#~ msgstr "स्लाइड-सो"
-
-#~ msgid "Interval:"
-#~ msgstr "अंतरालः"
-
-#~ msgid "Loop"
-#~ msgstr "लूप"
-
-#~ msgid "Random"
-#~ msgstr "बेतरतीब"
-
-#, fuzzy
-#~| msgid "Meta Information"
-#~ msgid "Image Information"
-#~ msgstr "मेटा जानकारी"
-
-#, fuzzy
-#~| msgid "Meta Information"
-#~ msgid "Select Image Information to Display..."
-#~ msgstr "मेटा जानकारी"
-
-#, fuzzy
-#~| msgid "Thumbnail Bar"
-#~ msgid "Thumbnails"
-#~ msgstr "लघुफोटू पट्टी"
-
-#~ msgid "Show thumbnails"
-#~ msgstr "छोटेफोटू देखाव"
-
-#~ msgid "Height:"
-#~ msgstr "ऊंचाई:"
-
-#, fuzzy
-#~| msgid "&View background color:"
-#~ msgid "Background color:"
-#~ msgstr "पिछोत अंगना के रंग देखाव: (&V)"
-
-#, fuzzy
-#~| msgid "Show Sidebar"
-#~ msgid "Show videos"
-#~ msgstr "बाजू पट्टी देखाव"
-
-#~ msgid "&Rating"
-#~ msgstr "रेटिंग (&R)"
-
-#~ msgid "&Plugins"
-#~ msgstr "प्लगइन्स (&l)"
-
-#~ msgid "&Settings"
-#~ msgstr "सेटिंग (&S)"
-
-#~ msgid "Main Toolbar"
-#~ msgstr "मुख्य औजार पट्टी"
-
-#~ msgid "Transparent background:"
-#~ msgstr "पारदर्सी पिछोत अंगना:"
-
-#~ msgid "&Check board"
-#~ msgstr "चेक बोर्ड (&C)"
-
-#~ msgid "&Solid color:"
-#~ msgstr "ठोस रंग: (&S)"
-
-#~ msgid "Mouse wheel behavior:"
-#~ msgstr "मुसुवा चकरी बरताव:"
-
-#~ msgctxt "@option:radio action on mouse wheel"
-#~ msgid "Scroll"
-#~ msgstr "स्क्राल"
-
-#~ msgctxt "@option:radio action on mouse wheel"
-#~ msgid "Browse"
-#~ msgstr "ब्राउज"
-
-#~ msgid "Enlarge smaller images"
-#~ msgstr "छोटे फोटू ल बड़ा करव"
-
-#, fuzzy
-#~| msgid "Information"
-#~ msgid "Animations:"
-#~ msgstr "जानकारी"
-
-#, fuzzy
-#~| msgid "Thumbnail Bar"
-#~ msgid "<b>Thumbnail Bar</b>"
-#~ msgstr "लघुफोटू पट्टी"
-
-#, fuzzy
-#~| msgid "File Operations"
-#~ msgid "Orientation:"
-#~ msgstr "फाइल काम"
-
-#~ msgid "Tag Editor"
-#~ msgstr "टैग संपादक"
-
-#~ msgid "Previous"
-#~ msgstr "पिछला"
-
-#~ msgid "Next"
-#~ msgstr "अगला"
-
-#~ msgid "Rating:"
-#~ msgstr "दरजा:"
-
-#~ msgid "Tags:"
-#~ msgstr "टैग:"
-
-#, fuzzy
-#~| msgid "Description:"
-#~ msgid "Description"
-#~ msgstr "वर्नन:"
-
-#~ msgid "Recent Folders"
-#~ msgstr "मौजूदा फोल्डर"
-
-#, fuzzy
-#~| msgid "Recent Folders"
-#~ msgid "Recent URLs"
-#~ msgstr "मौजूदा फोल्डर"
-
-#~ msgid "Places"
-#~ msgstr "जगह"
-
-#~ msgid "Tags"
-#~ msgstr "टैग"
-
-#, fuzzy
-#~| msgctxt "@action:inmenu"
-#~| msgid "Filename"
-#~ msgid "Rename Format:"
-#~ msgstr "फाइलनाम"
-
-#, fuzzy
-#~| msgid "Preview"
-#~ msgid "Preview:"
-#~ msgstr "प्रिव्यू"
-
-#, fuzzy
-#~| msgid "&Settings"
-#~ msgid "Settings..."
-#~ msgstr "सेटिंग (&S)"
-
-#, fuzzy
-#~| msgid "Image Settings"
-#~ msgid "Advanced settings"
-#~ msgstr "फोटू सेटिंग"
-
-#, fuzzy
-#~| msgid "Rating:"
-#~ msgid "Ratio:"
-#~ msgstr "दरजा:"
-
-#, fuzzy
-#~| msgid "Image Position"
-#~ msgid "Position:"
-#~ msgstr "फोटू स्थिति"
-
-#, fuzzy
-#~| msgid "Size"
-#~ msgid "Size:"
-#~ msgstr "आकार"
-
-#, fuzzy
-#~| msgid "Start in fullscreen mode"
-#~ msgid "Show slideshow in fullscreen mode"
-#~ msgstr "पूरा स्क्रीन मोड मं चालू करव"
-
-#, fuzzy
-#~| msgid "A starting file or folder"
-#~ msgid "Stop at last image of folder"
-#~ msgstr "फाइल या फोल्डर चालू करत हे"
-
-#~ msgid "Image Settings"
-#~ msgstr "फोटू सेटिंग"
-
-#~ msgid "Image Position"
-#~ msgstr "फोटू स्थिति"
-
-#~ msgid "Scaling"
-#~ msgstr "आकार बदलना"
-
-#~ msgid "&No scaling"
-#~ msgstr "कोई स्केलिंग नइ (&N)"
-
-#~ msgid "&Fit image to page"
-#~ msgstr "फोटू ल पेज मं फिट करव (&F)"
-
-#~ msgid "&Scale to:"
-#~ msgstr "ए आकार मं बदलव: (&S)"
-
-#~ msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
-#~ msgid "x"
-#~ msgstr "x"
-
-#~ msgid "Millimeters"
-#~ msgstr "मिलिसमीटर (मिमी)"
-
-#~ msgid "Centimeters"
-#~ msgstr "सेंटीमीटर (सेमी)"
-
-#~ msgid "Inches"
-#~ msgstr "इंच (इं)"
-
-#~ msgid "Keep ratio"
-#~ msgstr "अनुपात बनाए रखव"
-
-#~ msgid "Size"
-#~ msgstr "आकार"
-
-#~ msgid "Image Resizing"
-#~ msgstr "फोटू आकार बदलना"
-
-#, fuzzy
-#~| msgid "Enter the new size of the image:"
-#~ msgid "Enter the new size for this image."
-#~ msgstr "फोटू के नवा आकार भरव:"
-
-#, fuzzy
-#~| msgid "Size"
-#~ msgid "New Size:"
-#~ msgstr "आकार"
-
-#, fuzzy
-#~| msgid "Keep ratio"
-#~ msgid "Keep aspect ratio"
-#~ msgstr "अनुपात बनाए रखव"
-
-#~ msgid "&File"
-#~ msgstr "फाइल (&F)"
-
-#~ msgid "&View"
-#~ msgstr "देखव (&V)"
+#. i18n: ectx: Menu (view)
+#: part/gvpart.rc:8
+msgid "&View"
+msgstr "देखव (&V)"
 
 #, fuzzy
 #~| msgid "Thumbnail Bar"

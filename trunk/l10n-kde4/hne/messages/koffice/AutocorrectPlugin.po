@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AutocorrectPlugin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 03:52+0100\n"
+"POT-Creation-Date: 2012-08-19 05:51+0200\n"
 "PO-Revision-Date: 2009-03-02 21:11+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -23,17 +23,277 @@ msgstr ""
 msgid "Configure &Autocorrection..."
 msgstr "अपने अपन सुधार कान्फिगर करव... (&A)"
 
-#: Autocorrect.cpp:41 Autocorrect.cpp:90 AutocorrectConfigDialog.cpp:375
+#. i18n: ectx: property (windowTitle), widget (QWidget, AutocorrectConfig)
+#: Autocorrect.cpp:41 Autocorrect.cpp:90 AutocorrectConfig.ui:13
+#: AutocorrectConfigDialog.cpp:375
 msgid "Autocorrection"
 msgstr "अपने अपन सुधार"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_1)
+#: AutocorrectConfig.ui:23
+msgid "Si&mple Autocorrection"
+msgstr "सरल अपने अपन सुधार (&m)"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, upperCase)
+#: AutocorrectConfig.ui:29
+msgid ""
+"Detect when a new sentence is started and always ensure that the first "
+"character is an uppercase character"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, upperCase)
+#: AutocorrectConfig.ui:33
+msgid ""
+"Convert &first letter of a sentence automatically to uppercase\n"
+"(e.g. \"my house. in this town\" to \"my house. In this town\")"
+msgstr ""
+"वाक्य के पहिली अक्छर ल अपने अपन अपरकेस मं बदलव\n"
+"(जइसन कि. \"my house. in this town\" ल \"my house. In this town\" मं बदले जाए)"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, upperUpper)
+#: AutocorrectConfig.ui:43
+msgid ""
+"All words are checked for the common mistake of holding the shift key down a "
+"bit too long. If some words must have two uppercase characters, then those "
+"exceptions should be added in the 'Exceptions' tab."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, upperUpper)
+#: AutocorrectConfig.ui:47
+msgid ""
+"Convert &two uppercase characters to one uppercase and one lowercase "
+"character\n"
+" (e.g. PErfect to Perfect)"
+msgstr ""
+"दो अपर केस अक्छर ल एक अपर केस अक्छर अउ एक लोअर केस अक्छर मं बदलव\n"
+"(जइसन कि- PErfect to Perfect) (&t)"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, autoFormatUrl)
+#: AutocorrectConfig.ui:54
+msgid ""
+"Detect when a URL (Uniform Resource Locator) is typed and provide formatting "
+"that matches the way an Internet browser would show a URL."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, autoFormatUrl)
+#: AutocorrectConfig.ui:57
+msgid "Autoformat &URLs"
+msgstr "यूआरएल्स ल ओटोफार्मेट करव (&U)"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, ignoreDoubleSpace)
+#: AutocorrectConfig.ui:64
+msgid ""
+"Make sure that more than one space cannot be typed, as this is a common "
+"mistake which is quite hard to find in formatted text."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, ignoreDoubleSpace)
+#: AutocorrectConfig.ui:67
+msgid "&Suppress double spaces"
+msgstr "डबल स्पेसेस ल सप्रेस करव (&S)"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, trimParagraphs)
+#: AutocorrectConfig.ui:74
+msgid ""
+"Keep correct formatting and indenting of sentences by automatically removing "
+"spaces typed at the beginning and end of a paragraph."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, trimParagraphs)
+#: AutocorrectConfig.ui:77
+msgid "R&emove spaces at the beginning and end of paragraphs"
+msgstr "पैराग्राफ के चालू अउ आखरी के खाली जगह ल मेटाव (&e)"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, autoChangeFormat)
+#: AutocorrectConfig.ui:84
+msgid ""
+"When you use _underline_ or *bold*, the text between the underscores or "
+"asterisks will be converted to underlined or bold text."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, autoChangeFormat)
+#: AutocorrectConfig.ui:87
+msgid "Automatically do &bold and underline formatting"
+msgstr "बोल्ड अउ रेखांकित फारमेटिंग ल अपने अपनइ करव (&b)"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, autoReplaceNumber)
+#: AutocorrectConfig.ui:94
+msgid "Most standard fraction notations will be converted when available"
+msgstr "जब मिलत होही तहां बहुत मानक फ्रेक्सन नोटेसनों ल बदले जाही"
+
+#. i18n: ectx: property (text), widget (QCheckBox, autoReplaceNumber)
+#: AutocorrectConfig.ui:97
+msgid "Re&place 1/2... with ½..."
+msgstr "1/2... ल ½... से बदलव (&p)"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, useNumberStyle)
+#: AutocorrectConfig.ui:107
+msgid ""
+"When typing '1)' or similar in front of a paragraph, automatically convert "
+"the paragraph to use that numbering style. This has the advantage that "
+"further paragraphs will also be numbered and the spacing is done correctly."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, useNumberStyle)
+#: AutocorrectConfig.ui:110
+msgid "Use &autonumbering for numbered paragraphs"
+msgstr "नंबरित पैराग्राफों बर अपने अपन नंबर उपयोग करव (&a)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, autoSuperScript)
+#: AutocorrectConfig.ui:120
+msgid "Rep&lace 1st... with 1^st..."
+msgstr "1st... ल 1^st... के साथ बदलव"
+
+#. i18n: ectx: property (text), widget (QCheckBox, capitalizeDaysName)
+#: AutocorrectConfig.ui:127
+msgid "Capitalize name of days"
+msgstr "दिनों के नाम ल केपिटलाइज करव"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, useBulletStyle)
+#: AutocorrectConfig.ui:137
+msgid ""
+"When typing '*' or '-' in front of a paragraph, automatically convert the "
+"paragraph to use that list-style. Using a list-style formatting means that a "
+"correct bullet is used to draw the list."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, useBulletStyle)
+#: AutocorrectConfig.ui:140
+msgid "Use l&ist-formatting for bulleted paragraphs"
+msgstr "गोली सहित पैराग्राफों बर लिस्ट-फारमेटिंग उपयोग करव (&i)"
+
+#. i18n: ectx: property (text), widget (QPushButton, defaultBulletStyle)
+#. i18n: ectx: property (text), widget (QPushButton, doubleDefault)
+#. i18n: ectx: property (text), widget (QPushButton, singleDefault)
+#. i18n: ectx: property (text), item, widget (QComboBox, autoFormatLanguage)
+#: AutocorrectConfig.ui:177 AutocorrectConfig.ui:252 AutocorrectConfig.ui:307
+#: AutocorrectConfig.ui:359
+msgid "Default"
+msgstr "डिफाल्ट"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: AutocorrectConfig.ui:213
+msgid "Custom &Quotes"
+msgstr "मनमाफिक उदाहरन (&Q)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, typographicDoubleQuotes)
+#: AutocorrectConfig.ui:219
+msgid "Replace &double quotes with typographical quotes"
+msgstr "डबल कोट्स ल टाइपोग्राफिकल कोट्स के साथ बदलव (&d)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, typographicSingleQuotes)
+#: AutocorrectConfig.ui:274
+msgid "Replace &single quotes with typographical quotes"
+msgstr "सिंगल कोट्स ल टाइपोग्राफिकल कोट्स के साथ बदलव (&s)"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_3)
+#: AutocorrectConfig.ui:343
+msgid "Ad&vanced Autocorrection"
+msgstr "विस्तृत अपने अपन सुधार (&v)"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: AutocorrectConfig.ui:351
+msgid "Replacements and exceptions for language:"
+msgstr "भाखा बर रिप्लेसमेंट्स अउ एक्सेप्सन्स:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, autoFormatLanguage)
+#: AutocorrectConfig.ui:364
+msgid "All Languages"
+msgstr "सब्बो भाखा"
+
+#. i18n: ectx: property (text), widget (QCheckBox, advancedAutocorrection)
+#: AutocorrectConfig.ui:374
+msgid "&Enable word replacement"
+msgstr "सब्द बदलना सक्छम करव (&E)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, autoCorrectionWithFormat)
+#: AutocorrectConfig.ui:384
+msgid "Replace &text with format"
+msgstr "पाठ ल फारमेट के साथ बदलव (&t)"
+
+#. i18n: ectx: property (text), widget (QLabel, findLabel)
+#: AutocorrectConfig.ui:393
+msgid "&Find"
+msgstr "खोजव (&F)"
+
+#. i18n: ectx: property (text), widget (QToolButton, specialChar1)
+#. i18n: ectx: property (text), widget (QToolButton, specialChar2)
+#: AutocorrectConfig.ui:406 AutocorrectConfig.ui:426
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (text), widget (QLabel, replaceLabel)
+#: AutocorrectConfig.ui:413
+msgid "Re&place"
+msgstr "बदलव (&p)"
+
+#. i18n: ectx: property (text), widget (QPushButton, addButton)
+#. i18n: ectx: property (text), widget (QPushButton, add1)
+#: AutocorrectConfig.ui:437 AutocorrectConfig.ui:558
+#: AutocorrectConfigDialog.cpp:294
+msgid "&Add"
+msgstr "जोड़व (&A)"
+
+#. i18n: ectx: property (text), widget (QPushButton, removeButton)
+#. i18n: ectx: property (text), widget (QPushButton, remove2)
+#: AutocorrectConfig.ui:444 AutocorrectConfig.ui:630
+msgid "Remove"
+msgstr "हटाव"
+
+#. i18n: ectx: property (text), widget (QPushButton, changeFormat)
+#: AutocorrectConfig.ui:454
+msgid "C&hange Format..."
+msgstr "फारमेट बदलव... (&I)"
+
+#. i18n: ectx: property (text), widget (QPushButton, clearFormat)
+#: AutocorrectConfig.ui:464
+msgid "C&lear Format"
+msgstr "फारमेट साफ करव (&I)"
+
+#. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
+#: AutocorrectConfig.ui:502
+msgid "Find"
+msgstr "खोजव"
+
+#. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
+#: AutocorrectConfig.ui:507
+msgid "Replace"
+msgstr "बदलव"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_4)
+#: AutocorrectConfig.ui:516
+msgid "E&xceptions"
+msgstr "एक्सेप्सन्स (&x)"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: AutocorrectConfig.ui:524
+msgid "Do not treat as the end of a sentence:"
+msgstr "वाक्य के आखरी हे अइसन नइ समझव:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, autoinclude1)
+#. i18n: ectx: property (text), widget (QCheckBox, autoinclude2)
+#: AutocorrectConfig.ui:547 AutocorrectConfig.ui:612
+msgid "Autoinclude"
+msgstr "अपने अपन सामिल करव"
+
+#. i18n: ectx: property (text), widget (QPushButton, remove1)
+#: AutocorrectConfig.ui:565
+msgid "R&emove"
+msgstr "मेटाव (&e)"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: AutocorrectConfig.ui:589
+msgid "Accept two uppercase letters in:"
+msgstr "इहां दो अपरकेस अक्छर ल स्वीकारव:"
+
+#. i18n: ectx: property (text), widget (QPushButton, add2)
+#: AutocorrectConfig.ui:623
+msgid "A&dd"
+msgstr "जोड़व (&d)"
 
 #: AutocorrectConfigDialog.cpp:290
 msgid "&Modify"
 msgstr "सुधारव (&M)"
-
-#: AutocorrectConfigDialog.cpp:294
-msgid "&Add"
-msgstr "जोड़व (&A)"
 
 #: AutocorrectConfigDialog.cpp:389
 msgid "Select Character"
@@ -42,121 +302,3 @@ msgstr "अक्छर चुनव"
 #: AutocorrectFactory.cpp:29
 msgid "Autocorrect"
 msgstr "अपने अपन सुधार"
-
-#~ msgid "Si&mple Autocorrection"
-#~ msgstr "सरल अपने अपन सुधार (&m)"
-
-#~ msgid ""
-#~ "Convert &first letter of a sentence automatically to uppercase\n"
-#~ "(e.g. \"my house. in this town\" to \"my house. In this town\")"
-#~ msgstr ""
-#~ "वाक्य के पहिली अक्छर ल अपने अपन अपरकेस मं बदलव\n"
-#~ "(जइसन कि. \"my house. in this town\" ल \"my house. In this town\" मं बदले "
-#~ "जाए)"
-
-#~ msgid ""
-#~ "Convert &two uppercase characters to one uppercase and one lowercase "
-#~ "character\n"
-#~ " (e.g. PErfect to Perfect)"
-#~ msgstr ""
-#~ "दो अपर केस अक्छर ल एक अपर केस अक्छर अउ एक लोअर केस अक्छर मं बदलव\n"
-#~ "(जइसन कि- PErfect to Perfect) (&t)"
-
-#~ msgid "Autoformat &URLs"
-#~ msgstr "यूआरएल्स ल ओटोफार्मेट करव (&U)"
-
-#~ msgid "&Suppress double spaces"
-#~ msgstr "डबल स्पेसेस ल सप्रेस करव (&S)"
-
-#~ msgid "R&emove spaces at the beginning and end of paragraphs"
-#~ msgstr "पैराग्राफ के चालू अउ आखरी के खाली जगह ल मेटाव (&e)"
-
-#~ msgid "Automatically do &bold and underline formatting"
-#~ msgstr "बोल्ड अउ रेखांकित फारमेटिंग ल अपने अपनइ करव (&b)"
-
-#~ msgid "Most standard fraction notations will be converted when available"
-#~ msgstr "जब मिलत होही तहां बहुत मानक फ्रेक्सन नोटेसनों ल बदले जाही"
-
-#~ msgid "Re&place 1/2... with ½..."
-#~ msgstr "1/2... ल ½... से बदलव (&p)"
-
-#~ msgid "Use &autonumbering for numbered paragraphs"
-#~ msgstr "नंबरित पैराग्राफों बर अपने अपन नंबर उपयोग करव (&a)"
-
-#~ msgid "Rep&lace 1st... with 1^st..."
-#~ msgstr "1st... ल 1^st... के साथ बदलव"
-
-#~ msgid "Capitalize name of days"
-#~ msgstr "दिनों के नाम ल केपिटलाइज करव"
-
-#~ msgid "Use l&ist-formatting for bulleted paragraphs"
-#~ msgstr "गोली सहित पैराग्राफों बर लिस्ट-फारमेटिंग उपयोग करव (&i)"
-
-#~ msgid "Default"
-#~ msgstr "डिफाल्ट"
-
-#~ msgid "Custom &Quotes"
-#~ msgstr "मनमाफिक उदाहरन (&Q)"
-
-#~ msgid "Replace &double quotes with typographical quotes"
-#~ msgstr "डबल कोट्स ल टाइपोग्राफिकल कोट्स के साथ बदलव (&d)"
-
-#~ msgid "Replace &single quotes with typographical quotes"
-#~ msgstr "सिंगल कोट्स ल टाइपोग्राफिकल कोट्स के साथ बदलव (&s)"
-
-#~ msgid "Ad&vanced Autocorrection"
-#~ msgstr "विस्तृत अपने अपन सुधार (&v)"
-
-#~ msgid "Replacements and exceptions for language:"
-#~ msgstr "भाखा बर रिप्लेसमेंट्स अउ एक्सेप्सन्स:"
-
-#~ msgid "All Languages"
-#~ msgstr "सब्बो भाखा"
-
-#~ msgid "&Enable word replacement"
-#~ msgstr "सब्द बदलना सक्छम करव (&E)"
-
-#~ msgid "Replace &text with format"
-#~ msgstr "पाठ ल फारमेट के साथ बदलव (&t)"
-
-#~ msgid "&Find"
-#~ msgstr "खोजव (&F)"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Re&place"
-#~ msgstr "बदलव (&p)"
-
-#~ msgid "Remove"
-#~ msgstr "हटाव"
-
-#~ msgid "C&hange Format..."
-#~ msgstr "फारमेट बदलव... (&I)"
-
-#~ msgid "C&lear Format"
-#~ msgstr "फारमेट साफ करव (&I)"
-
-#~ msgid "Find"
-#~ msgstr "खोजव"
-
-#~ msgid "Replace"
-#~ msgstr "बदलव"
-
-#~ msgid "E&xceptions"
-#~ msgstr "एक्सेप्सन्स (&x)"
-
-#~ msgid "Do not treat as the end of a sentence:"
-#~ msgstr "वाक्य के आखरी हे अइसन नइ समझव:"
-
-#~ msgid "Autoinclude"
-#~ msgstr "अपने अपन सामिल करव"
-
-#~ msgid "R&emove"
-#~ msgstr "मेटाव (&e)"
-
-#~ msgid "Accept two uppercase letters in:"
-#~ msgstr "इहां दो अपरकेस अक्छर ल स्वीकारव:"
-
-#~ msgid "A&dd"
-#~ msgstr "जोड़व (&d)"
