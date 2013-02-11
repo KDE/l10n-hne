@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-12-17 03:21+0100\n"
+"POT-Creation-Date: 2013-02-11 13:05+0100\n"
 "PO-Revision-Date: 2009-03-01 11:33+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -166,18 +166,18 @@ msgid ""
 msgstr ""
 "ये नाम अउ दसखत के साथ एक संचालन पहिली ही मौजूद हे. आप मन एला फिर से जोड़ नइ सकहू."
 
+#: classifier.cpp:393 classifier.cpp:770 entity.cpp:125 entity.cpp:178
+#: entity.cpp:228 entity.cpp:277 enum.cpp:107 object_factory.cpp:196
+#: package.cpp:174 umldoc.cpp:1380 umldoc.cpp:1414
+msgid "That is an invalid name."
+msgstr "वह एक अवैध नाम हे."
+
 #: classifier.cpp:393 classifier.cpp:770 dialogs/umlviewdialog.cpp:223
 #: entity.cpp:125 entity.cpp:178 entity.cpp:228 entity.cpp:277 enum.cpp:107
 #: object_factory.cpp:197 package.cpp:175 umldoc.cpp:1285 umldoc.cpp:1350
 #: umldoc.cpp:1380 umldoc.cpp:1414
 msgid "Invalid Name"
 msgstr "अवैध नाम"
-
-#: classifier.cpp:393 classifier.cpp:770 entity.cpp:125 entity.cpp:178
-#: entity.cpp:228 entity.cpp:277 enum.cpp:107 object_factory.cpp:196
-#: package.cpp:174 umldoc.cpp:1380 umldoc.cpp:1414
-msgid "That is an invalid name."
-msgstr "वह एक अवैध नाम हे."
 
 #: classifier.cpp:396 classifier.cpp:772 entity.cpp:127 entity.cpp:180
 #: entity.cpp:230 entity.cpp:279 object_factory.cpp:207 umldoc.cpp:1387
@@ -729,8 +729,8 @@ msgstr "असोसिएसन एक्सेसर विधियाँ"
 msgid "Attribute accessor methods"
 msgstr "एट्रिब्यूट एक्सेसर विधियाँ"
 
-#. i18n: ectx: property (text), widget (QLabel, ui_textLabelAccessorScope)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
+#. i18n: ectx: property (text), widget (QLabel, ui_textLabelAccessorScope)
 #: codegenerators/d/dcodegenerationformbase.ui:154
 #: codegenerators/java/javacodegenerationformbase.ui:154
 #: codegenerators/ruby/rubycodegenerationformbase.ui:133
@@ -786,9 +786,9 @@ msgstr "सुरक्छित"
 msgid "From Parent Object"
 msgstr "पैरेन्ट आब्जेक्ट से"
 
-#. i18n: ectx: property (text), widget (QLabel, ui_textLabelAssocFieldScope)
-#. i18n: ectx: property (text), widget (QLabel, ui_textLabelAssFieldScope)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3_2)
+#. i18n: ectx: property (text), widget (QLabel, ui_textLabelAssFieldScope)
+#. i18n: ectx: property (text), widget (QLabel, ui_textLabelAssocFieldScope)
 #: codegenerators/d/dcodegenerationformbase.ui:207
 #: codegenerators/java/javacodegenerationformbase.ui:207
 #: codegenerators/ruby/rubycodegenerationformbase.ui:174
@@ -1733,16 +1733,16 @@ msgstr "सम्बद्धता"
 msgid "Association Properties"
 msgstr "सम्बद्धता गुन"
 
+#: dialogs/assocpropdlg.cpp:94
+msgctxt "general settings"
+msgid "General"
+msgstr "सामान्य"
+
 #: dialogs/assocpropdlg.cpp:94 dialogs/classpropdlg.cpp:242
 #: dialogs/classpropdlg.cpp:376 dialogs/settingsdlg.cpp:169
 #: dialogs/umlforeignkeyconstraintdialog.cpp:197 dialogs/umlviewdialog.cpp:92
 msgid "General Settings"
 msgstr "सामान्य सेटिंग"
-
-#: dialogs/assocpropdlg.cpp:94
-msgctxt "general settings"
-msgid "General"
-msgstr "सामान्य"
 
 #: dialogs/assocpropdlg.cpp:100
 #, fuzzy
@@ -1768,18 +1768,18 @@ msgstr "सैली:"
 msgid "Role Style"
 msgstr "टिप्पनी सैली"
 
-#: dialogs/assocpropdlg.cpp:112 dialogs/classpropdlg.cpp:395
-#: dialogs/dialogbase.cpp:57 dialogs/settingsdlg.cpp:224
-#: dialogs/umlviewdialog.cpp:154
-msgid "Font Settings"
-msgstr "फोंट सेटिंग"
-
 #: dialogs/assocpropdlg.cpp:112
 #, fuzzy
 #| msgid "Font"
 msgctxt "font page name"
 msgid "Font"
 msgstr "फोंट"
+
+#: dialogs/assocpropdlg.cpp:112 dialogs/classpropdlg.cpp:395
+#: dialogs/dialogbase.cpp:57 dialogs/settingsdlg.cpp:224
+#: dialogs/umlviewdialog.cpp:154
+msgid "Font Settings"
+msgstr "फोंट सेटिंग"
 
 #: dialogs/assocrolepage.cpp:53
 msgid "Role A Properties"
@@ -2243,18 +2243,18 @@ msgctxt "general settings page name"
 msgid "General"
 msgstr "सामान्य"
 
-#: dialogs/classpropdlg.cpp:255 dialogs/dialogbase.cpp:80
-#, fuzzy
-#| msgid "Widget Color"
-msgid "Widget Style"
-msgstr "विजेट रंग"
-
 #: dialogs/classpropdlg.cpp:255
 #, fuzzy
 #| msgid "Style:"
 msgctxt "widget style page name"
 msgid "Style"
 msgstr "सैली:"
+
+#: dialogs/classpropdlg.cpp:255 dialogs/dialogbase.cpp:80
+#, fuzzy
+#| msgid "Widget Color"
+msgid "Widget Style"
+msgstr "विजेट रंग"
 
 #: dialogs/classpropdlg.cpp:267
 msgctxt "display option page name"
@@ -3533,25 +3533,25 @@ msgstr "सीएसएस नकल करे जाना पूरा..."
 msgid "Failed Copying CSS..."
 msgstr "सीएसएस नकल बनाए मं फेल..."
 
-#: enumliteral.cpp:104 object_factory.cpp:191 stereotype.cpp:112
-#: umldoc.cpp:1277 umldoc.cpp:1344 umldoc.cpp:1375 umldoc.cpp:1409
-msgid "Enter name:"
-msgstr "नाम भरव:"
-
 #: enumliteral.cpp:104
 msgctxt "enum name"
 msgid "Name"
 msgstr "नांव"
 
-#: folder.cpp:407 folder.cpp:411 umldoc.cpp:425 umldoc.cpp:447 umldoc.cpp:485
-#: umldoc.cpp:497 umldoc.cpp:511 umldoc.cpp:523 umldoc.cpp:535 umldoc.cpp:553
-msgid "Load Error"
-msgstr "लोड गलती"
+#: enumliteral.cpp:104 object_factory.cpp:191 stereotype.cpp:112
+#: umldoc.cpp:1277 umldoc.cpp:1344 umldoc.cpp:1375 umldoc.cpp:1409
+msgid "Enter name:"
+msgstr "नाम भरव:"
 
 #: folder.cpp:407
 #, kde-format
 msgid "The folderfile %1 does not exist."
 msgstr "फोल्डरफाइल %1 अस्तित्व मं नइ हे."
+
+#: folder.cpp:407 folder.cpp:411 umldoc.cpp:425 umldoc.cpp:447 umldoc.cpp:485
+#: umldoc.cpp:497 umldoc.cpp:511 umldoc.cpp:523 umldoc.cpp:535 umldoc.cpp:553
+msgid "Load Error"
+msgstr "लोड गलती"
 
 #: folder.cpp:411
 #, kde-format
