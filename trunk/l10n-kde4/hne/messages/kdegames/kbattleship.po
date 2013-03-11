@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kbattleship\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-20 03:18+0100\n"
+"POT-Creation-Date: 2013-03-11 03:25+0100\n"
 "PO-Revision-Date: 2009-02-25 18:22+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -27,7 +27,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raviratlami@aol.in"
 
-#: controller.cpp:50
+#: controller.cpp:51
 msgid "Computer"
 msgstr "कम्प्यूटर"
 
@@ -51,8 +51,13 @@ msgstr "कमइया के उपनाम."
 msgid "Whether sound effects should be played."
 msgstr "का अवाज प्रभाव चलाय जाए."
 
+#. i18n: ectx: label, entry (AdjacentShips), group (general)
+#: kbattleship.kcfg:26
+msgid "Allow the ships to be adjacent without one empty space between them."
+msgstr ""
+
 #. i18n: ectx: ToolBar (gameToolbar)
-#: kbattleshipui.rc:27
+#: kbattleshipui.rc:28
 msgid "Game Toolbar"
 msgstr "खेल औजार-पट्टी"
 
@@ -230,23 +235,27 @@ msgstr "होस्ट खेल... (&H)"
 msgid "&Connect to Game..."
 msgstr "खेल से जुड़व... (&C)"
 
-#: mainwindow.cpp:71
+#: mainwindow.cpp:72
 msgid "Change &Nickname..."
 msgstr "उपनाम बदलव... (&N)"
 
-#: mainwindow.cpp:74
+#: mainwindow.cpp:75
 msgid "&Play Sounds"
 msgstr "अवाज बजाव (&P)"
 
-#: mainwindow.cpp:78
+#: mainwindow.cpp:79
+msgid "&Adjacent Ships"
+msgstr ""
+
+#: mainwindow.cpp:84
 msgid "Show End-of-Game Message"
 msgstr ""
 
-#: mainwindow.cpp:83
+#: mainwindow.cpp:89
 msgid "Show &Left Grid"
 msgstr ""
 
-#: mainwindow.cpp:87
+#: mainwindow.cpp:93
 msgid "Show &Right Grid"
 msgstr ""
 
@@ -285,6 +294,14 @@ msgstr "इनकमिंग कनेक्सन बर इंतजार �
 #: networkdialog.cpp:234
 msgid "Could not connect to host"
 msgstr "होस्ट से जुड़ नइ सकिस"
+
+#: networkentity.cpp:213
+msgid "You can place ships adjacent to each other"
+msgstr ""
+
+#: networkentity.cpp:216
+msgid "You must leave an space between ships"
+msgstr ""
 
 #: playerentity.cpp:167
 #, kde-format
@@ -331,44 +348,44 @@ msgstr "उपनाम बदलव"
 msgid "Enter new nickname:"
 msgstr "नवा उपनाम भरव:"
 
-#: playfield.cpp:235
+#: playfield.cpp:241
 msgid "Restart game"
 msgstr "खेल फिर से चालू करव"
 
-#: playfield.cpp:236
+#: playfield.cpp:242
 msgid "Your opponent has requested to restart the game. Do you accept?"
 msgstr ""
 "आप मन के प्रतिद्वंद्वी हर खेल ल फिर से चालू करे बर आमंत्रित करे हे. का आप मन एला स्वीकारते  "
 "हे?"
 
-#: playfield.cpp:245
+#: playfield.cpp:251
 msgid ""
 "Your opponent is using a pre-KDE4 version of Naval Battle. Note that, "
 "according to the rules enforced by old clients, ships cannot be placed "
 "adjacent to one another."
 msgstr ""
 
-#: playfield.cpp:258
+#: playfield.cpp:264
 msgid "Enemy has shot. Shoot now!"
 msgstr "दुस्मन हर गोली चलाई. अभी गोली चलाव!"
 
-#: playfield.cpp:262
+#: playfield.cpp:268
 msgid "Waiting for enemy to shoot..."
 msgstr "दुस्मन के गोली चलाय के इंतजार में..."
 
-#: playfield.cpp:271
+#: playfield.cpp:277
 msgid "Ships placed. Now shoot on the enemy field!"
 msgstr "जहाजों ल रख दे गे हे. अब आप मन दुस्मन ल फील्ड मं गोली मारें!"
 
-#: playfield.cpp:274
+#: playfield.cpp:280
 msgid "Waiting for other player to start the game..."
 msgstr "अऊ दूसर खिलाड़ी से खेल चालू करे के इंतजार में..."
 
-#: playfield.cpp:278
+#: playfield.cpp:284
 msgid "Waiting for other player to place his ships..."
 msgstr "अऊ दूसर खिलाड़ियों से ऊंखर जहाजों ल रखे जाय के इंतजार में..."
 
-#: playfield.cpp:286
+#: playfield.cpp:292
 msgid "Place your ships. Use the right mouse button to rotate them."
 msgstr "अपन जहाज रखव. ओ मन ल घुमाय बर दाहिना मुसुवा बटन के परयोग करव."
 
