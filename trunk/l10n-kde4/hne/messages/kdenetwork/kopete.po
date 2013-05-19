@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-18 04:11+0200\n"
+"POT-Creation-Date: 2013-05-19 03:52+0200\n"
 "PO-Revision-Date: 2009-02-27 17:13+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -168,6 +168,7 @@ msgstr "अभी कनेक्ट करव (&n)"
 
 #: kopete/chatwindow/chatmessagepart.cpp:282
 #: plugins/history/historydialog.cpp:169
+#: plugins/history2/history2dialog.cpp:174
 msgid "Copy Link Address"
 msgstr "संकली पता नकल करव"
 
@@ -3326,8 +3327,8 @@ msgstr "फाइल (&F)"
 #. i18n: ectx: property (text), widget (QPushButton, m_btnEdit)
 #: kopete/kopeteui.rc:17 plugins/autoreplace/autoreplaceprefs.ui:137
 #: plugins/contactnotes/contactnotesui.rc:5 plugins/history/historyui.rc:5
-#: plugins/otr/otrui.rc:5 plugins/statistics/statisticsui.rc:5
-#: plugins/translator/translatorui.rc:5
+#: plugins/history2/history2ui.rc:5 plugins/otr/otrui.rc:5
+#: plugins/statistics/statisticsui.rc:5 plugins/translator/translatorui.rc:5
 #: protocols/groupwise/ui/gwcustomstatus.ui:44 protocols/skype/skypeui.rc:5
 msgid "&Edit"
 msgstr "संपादन (&E)"
@@ -6446,51 +6447,65 @@ msgstr ""
 "%2"
 
 #. i18n: ectx: Menu (tools)
-#: plugins/history/historychatui.rc:5 plugins/latex/latexchatui.rc:5
-#: plugins/nowlistening/nowlisteningchatui.rc:5 plugins/otr/otrchatui.rc:4
-#: plugins/translator/translatorchatui.rc:5 protocols/skype/skypechatui.rc:5
+#: plugins/history/historychatui.rc:5 plugins/history2/history2chatui.rc:5
+#: plugins/latex/latexchatui.rc:5 plugins/nowlistening/nowlisteningchatui.rc:5
+#: plugins/otr/otrchatui.rc:4 plugins/translator/translatorchatui.rc:5
+#: protocols/skype/skypechatui.rc:5
 msgid "&Tools"
 msgstr "औजार (&T)"
 
 #. i18n: ectx: label, entry (Auto_chatwindow), group (History Plugin)
+#. i18n: ectx: label, entry (Auto_chatwindow), group (History2 Plugin)
 #: plugins/history/historyconfig.kcfg:11
+#: plugins/history2/history2config.kcfg:11
 #, fuzzy
 #| msgid "Show chat history in new chats"
 msgid "Show previous messages in new chats."
 msgstr "नवा गपसप मं गपसप इतिहास देखाव"
 
 #. i18n: ectx: label, entry (Number_Auto_chatwindow), group (History Plugin)
+#. i18n: ectx: label, entry (Number_Auto_chatwindow), group (History2 Plugin)
 #: plugins/history/historyconfig.kcfg:16
+#: plugins/history2/history2config.kcfg:16
 #, fuzzy
 #| msgid "Number of messages to show:"
 msgid "Number of messages to show."
 msgstr "देखाय बर संदेस मन के संख्याः"
 
 #. i18n: ectx: label, entry (Number_ChatWindow), group (History Plugin)
+#. i18n: ectx: label, entry (Number_ChatWindow), group (History2 Plugin)
 #: plugins/history/historyconfig.kcfg:21
+#: plugins/history2/history2config.kcfg:21
 #, fuzzy
 #| msgid "Number of messages per page:"
 msgid "Number of messages per page"
 msgstr "प्रति पेज संदेस मन के संख्याः"
 
 #. i18n: ectx: label, entry (History_color), group (History Plugin)
+#. i18n: ectx: label, entry (History_color), group (History2 Plugin)
 #: plugins/history/historyconfig.kcfg:26
+#: plugins/history2/history2config.kcfg:26
 #, fuzzy
 #| msgid "Color of messages:"
 msgid "Color of messages"
 msgstr "संदेस के रंगः"
 
 #. i18n: ectx: label, entry (BrowserStyle), group (History Plugin)
+#. i18n: ectx: label, entry (BrowserStyle), group (History2 Plugin)
 #: plugins/history/historyconfig.kcfg:31
+#: plugins/history2/history2config.kcfg:31
 msgid "Style to use in history-browser."
 msgstr ""
 
 #: plugins/history/historydialog.cpp:87 plugins/history/historydialog.cpp:580
+#: plugins/history2/history2dialog.cpp:91
+#: plugins/history2/history2dialog.cpp:357
 #, kde-format
 msgid "History for %1"
 msgstr " %1 बर इतिहास"
 
 #: plugins/history/historydialog.cpp:109
+#: plugins/history2/history2dialog.cpp:113
 msgid "All"
 msgstr "सब्बो"
 
@@ -6508,6 +6523,8 @@ msgstr "ढूंढ रहे हे..."
 #. i18n: ectx: property (text), widget (QPushButton, m_search)
 #. i18n: ectx: property (text), widget (KPushButton, searchButton)
 #: plugins/history/historydialog.cpp:560 plugins/history/historyviewer.ui:169
+#: plugins/history2/history2dialog.cpp:344
+#: plugins/history2/history2viewer.ui:169
 #: protocols/groupwise/ui/gwcontactsearch.ui:193
 #: protocols/oscar/icq/ui/icqadd.ui:70
 #: protocols/oscar/icq/ui/icqsearchbase.ui:242
@@ -6515,72 +6532,84 @@ msgid "&Search"
 msgstr "खोजव (&S)"
 
 #: plugins/history/historydialog.cpp:573
+#: plugins/history2/history2dialog.cpp:352
 msgid "History for All Contacts"
 msgstr "सब्बो सम्पर्क मन बर इतिहास"
 
 #. i18n: ectx: property (text), widget (QLabel, statusLabel)
 #: plugins/history/historydialog.cpp:596 plugins/history/historyviewer.ui:186
+#: plugins/history2/history2dialog.cpp:371
+#: plugins/history2/history2viewer.ui:186
 msgid "Ready"
 msgstr "तैयार"
 
 #: plugins/history/historyguiclient.cpp:55
+#: plugins/history2/history2guiclient.cpp:53
 msgid "Latest History"
 msgstr "ताजा इतिहास"
 
 #: plugins/history/historyguiclient.cpp:63
 #: plugins/history/historyplugin.cpp:52
+#: plugins/history2/history2guiclient.cpp:61
+#: plugins/history2/history2plugin.cpp:53
 msgid "View &History"
 msgstr "इतिहास देखव (&H)"
 
 #: plugins/history/historyguiclient.cpp:68
+#: plugins/history2/history2guiclient.cpp:66
 msgid "Quote Last Message"
 msgstr "आखरी संदेस उद्धृत करव:"
 
-#: plugins/history/historyimport.cpp:52
+#: plugins/history/historyimport.cpp:52 plugins/history2/history2import.cpp:55
 #, fuzzy
 msgid "Import History"
 msgstr "अगला इतिहास"
 
-#: plugins/history/historyimport.cpp:53
+#: plugins/history/historyimport.cpp:53 plugins/history2/history2import.cpp:56
 #, fuzzy
 msgid "Import Listed Logs"
 msgstr "अगला इतिहास"
 
-#: plugins/history/historyimport.cpp:63
+#: plugins/history/historyimport.cpp:63 plugins/history2/history2import.cpp:66
 #, fuzzy
 msgid "Get History From &Pidgin..."
 msgstr "%1 मं जुन्ना इतिहास व्याख्या करत हे"
 
-#: plugins/history/historyimport.cpp:78
+#: plugins/history/historyimport.cpp:78 plugins/history2/history2import.cpp:84
 msgid "Select log directory by hand"
 msgstr ""
 
-#: plugins/history/historyimport.cpp:89
+#: plugins/history/historyimport.cpp:89 plugins/history2/history2import.cpp:95
 #, fuzzy
 msgid "Parsed History"
 msgstr "पिछला इतिहास"
 
 #: plugins/history/historyimport.cpp:112
+#: plugins/history2/history2import.cpp:124
 #, fuzzy
 msgid "Saving logs to disk ..."
 msgstr "वीकार्ड ल सर्वर मं सहेजत हे..."
 
 #: plugins/history/historyimport.cpp:112
+#: plugins/history2/history2import.cpp:124
 #, fuzzy
 msgid "Abort Saving"
 msgstr "सहेजे मं गलती"
 
 #: plugins/history/historyimport.cpp:113
+#: plugins/history2/history2import.cpp:125
 #, fuzzy
 msgid "Saving"
 msgstr "आकार बदलव"
 
 #: plugins/history/historyimport.cpp:260
+#: plugins/history2/history2import.cpp:323
 #, fuzzy
 msgid "Are You Sure?"
 msgstr "उत्तेजित"
 
 #: plugins/history/historyimport.cpp:261
+#: plugins/history2/history2import.cpp:324
 msgid ""
 "You already imported logs from pidgin. If you do it twice, each message is "
 "imported twice.\n"
@@ -6588,30 +6617,39 @@ msgid ""
 msgstr ""
 
 #: plugins/history/historyimport.cpp:270
+#: plugins/history2/history2import.cpp:269
+#: plugins/history2/history2import.cpp:333
 #, fuzzy
 msgid "Select Log Directory"
 msgstr "फोटो चुनव"
 
 #: plugins/history/historyimport.cpp:273
+#: plugins/history2/history2import.cpp:336
 #, fuzzy
 msgid "Parsing history from pidgin ..."
 msgstr "%1 मं जुन्ना इतिहास व्याख्या करत हे"
 
 #: plugins/history/historyimport.cpp:273
+#: plugins/history2/history2import.cpp:272
+#: plugins/history2/history2import.cpp:336
 msgid "Abort parsing"
 msgstr ""
 
 #: plugins/history/historyimport.cpp:274
+#: plugins/history2/history2import.cpp:273
+#: plugins/history2/history2import.cpp:337
 #, fuzzy
 msgid "Parsing history"
 msgstr "%1 मं जुन्ना इतिहास व्याख्या करत हे"
 
 #: plugins/history/historyimport.cpp:299
+#: plugins/history2/history2import.cpp:387
 #, kde-format
 msgid "WARNING: Cannot find matching account for %1 (%2).\n"
 msgstr ""
 
 #: plugins/history/historyimport.cpp:311
+#: plugins/history2/history2import.cpp:399
 #, kde-format
 msgid ""
 "WARNING: Cannot find %1 (%2) in your contact list. Found logs will not be "
@@ -6619,6 +6657,7 @@ msgid ""
 msgstr ""
 
 #: plugins/history/historyimport.cpp:326
+#: plugins/history2/history2import.cpp:413
 #, fuzzy, kde-format
 msgid "WARNING: Cannot open file %1. Skipping.\n"
 msgstr "फाइल ल लिखे बर खोल नइ सकिस"
@@ -6633,6 +6672,7 @@ msgid "Did you use \"%1\" as nickname in history?"
 msgstr ""
 
 #: plugins/history/historyimport.cpp:423
+#: plugins/history2/history2import.cpp:478
 #, kde-format
 msgid ""
 "WARNING: Cannot parse date \"%1\". You may want to edit the file containing "
@@ -6641,11 +6681,13 @@ msgid ""
 msgstr ""
 
 #: plugins/history/historyimport.cpp:546
+#: plugins/history2/history2import.cpp:669
 #, kde-format
 msgid "WARNING: XML parser error in %1 at line %2, character %3: %4"
 msgstr ""
 
 #: plugins/history/historyimport.cpp:549
+#: plugins/history2/history2import.cpp:672
 #, kde-format
 msgid "\t%1"
 msgstr ""
@@ -6678,31 +6720,34 @@ msgid "Chat History"
 msgstr "गपसप इतिहास"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, lblNoLinesPerPage)
-#: plugins/history/historyprefsui.ui:72
+#: plugins/history/historyprefsui.ui:72 plugins/history2/history2prefsui.ui:94
 msgid ""
 "The number of messages that are shown when browsing history in the chat "
 "window"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lblNoLinesPerPage)
-#: plugins/history/historyprefsui.ui:75
+#: plugins/history/historyprefsui.ui:75 plugins/history2/history2prefsui.ui:97
 msgid "Number of messages per page:"
 msgstr "प्रति पेज संदेस मन के संख्याः"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, colorLabel)
 #. i18n: ectx: property (whatsThis), widget (KColorButton, History_color)
 #: plugins/history/historyprefsui.ui:82 plugins/history/historyprefsui.ui:108
+#: plugins/history2/history2prefsui.ui:117
 msgid "Color of history messages in the chat window"
 msgstr "गपसप विंडो मं इतिहास संदेस के रंग"
 
 #. i18n: ectx: property (text), widget (QLabel, colorLabel)
-#: plugins/history/historyprefsui.ui:85
+#: plugins/history/historyprefsui.ui:85 plugins/history2/history2prefsui.ui:55
 msgid "Color of messages:"
 msgstr "संदेस के रंगः"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, numberLabel)
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, Number_Auto_chatwindow)
 #: plugins/history/historyprefsui.ui:95 plugins/history/historyprefsui.ui:125
+#: plugins/history2/history2prefsui.ui:36
+#: plugins/history2/history2prefsui.ui:104
 msgid ""
 "This is the number of messages that will be added automatically in the chat "
 "window when opening a new chat."
@@ -6710,17 +6755,20 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, numberLabel)
 #: plugins/history/historyprefsui.ui:98
+#: plugins/history2/history2prefsui.ui:107
 msgid "Number of messages to show:"
 msgstr "देखाय बर संदेस मन के संख्याः"
 
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, Number_ChatWindow)
 #: plugins/history/historyprefsui.ui:141
+#: plugins/history2/history2prefsui.ui:134
 msgid ""
 "The number of message that are shown when borwsing history in the chat window"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowPrevious)
 #: plugins/history/historyprefsui.ui:157
+#: plugins/history2/history2prefsui.ui:65
 msgid ""
 "When a new chat is opened, automatically add the last few messages between "
 "you and that contact."
@@ -6728,63 +6776,131 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowPrevious)
 #: plugins/history/historyprefsui.ui:160
+#: plugins/history2/history2prefsui.ui:68
 msgid "Show chat history in new chats"
 msgstr "नवा गपसप मं गपसप इतिहास देखाव"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: plugins/history/historyviewer.ui:39
+#: plugins/history/historyviewer.ui:39 plugins/history2/history2viewer.ui:39
 msgid "Contact:"
 msgstr "सम्पर्क:"
 
 #. i18n: ectx: property (text), widget (QPushButton, importHistory)
-#: plugins/history/historyviewer.ui:56
+#. i18n: ectx: property (text), widget (QPushButton, importHistory2)
+#: plugins/history/historyviewer.ui:56 plugins/history2/history2viewer.ui:56
 #, fuzzy
 msgid "Import History..."
 msgstr "अगला इतिहास"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: plugins/history/historyviewer.ui:63
+#: plugins/history/historyviewer.ui:63 plugins/history2/history2viewer.ui:63
 #, fuzzy
 #| msgid "Message Filter:"
 msgid "Message filter:"
 msgstr "संदेस फिल्टर:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, messageFilterBox)
-#: plugins/history/historyviewer.ui:83
+#: plugins/history/historyviewer.ui:83 plugins/history2/history2viewer.ui:83
 #, fuzzy
 #| msgid "All messages"
 msgid "All Messages"
 msgstr "सब्बो संदेस"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, messageFilterBox)
-#: plugins/history/historyviewer.ui:88
+#: plugins/history/historyviewer.ui:88 plugins/history2/history2viewer.ui:88
 #, fuzzy
 #| msgid "Only incoming"
 msgid "Only Incoming"
 msgstr "सिरिफ आवक"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, messageFilterBox)
-#: plugins/history/historyviewer.ui:93
+#: plugins/history/historyviewer.ui:93 plugins/history2/history2viewer.ui:93
 #, fuzzy
 #| msgid "Only outgoing"
 msgid "Only Outgoing"
 msgstr "सिरिफ जावक"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, dateTreeWidget)
-#: plugins/history/historyviewer.ui:129
+#: plugins/history/historyviewer.ui:129 plugins/history2/history2viewer.ui:129
 msgid "Date"
 msgstr "तारीक"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, dateTreeWidget)
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: plugins/history/historyviewer.ui:134 protocols/qq/ui/qqvcard.ui:304
+#: plugins/history/historyviewer.ui:134 plugins/history2/history2viewer.ui:134
+#: protocols/qq/ui/qqvcard.ui:304
 msgid "Contact"
 msgstr "सम्पर्क"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: plugins/history/historyviewer.ui:156
+#: plugins/history/historyviewer.ui:156 plugins/history2/history2viewer.ui:156
 msgid "Search:"
 msgstr "खोजव:"
+
+#: plugins/history2/history2import.cpp:68
+#, fuzzy
+msgid "Get History From &Kopete..."
+msgstr "%1 मं जुन्ना इतिहास व्याख्या करत हे"
+
+#: plugins/history2/history2import.cpp:272
+#, fuzzy
+msgid "Parsing history from kopete ..."
+msgstr "%1 मं जुन्ना इतिहास व्याख्या करत हे"
+
+#: plugins/history2/history2import.cpp:360
+#, kde-format
+msgid "WARNING: There is no equivalent for protocol %1 in kopete.\n"
+msgstr ""
+
+#: plugins/history2/history2import.cpp:572
+#, kde-format
+msgid "INFORMATION: Guessed %1 to be one of your nicks.\n"
+msgstr ""
+
+#: plugins/history2/history2import.cpp:574
+#, kde-format
+msgid "INFORMATION: Guessed %1 to be one of your buddys nicks.\n"
+msgstr ""
+
+#: plugins/history2/history2import.cpp:588
+msgid "Cannot map Nickname to Account"
+msgstr ""
+
+#: plugins/history2/history2import.cpp:589
+#, kde-format
+msgid "Did you ever use \"%1\" as nickname in your history?"
+msgstr ""
+
+#: plugins/history2/history2plugin.cpp:47
+#, fuzzy
+#| msgid "History"
+msgid "History2"
+msgstr "इतिहास "
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: plugins/history2/history2prefsui.ui:24
+#, fuzzy
+#| msgid "Chat History"
+msgid "Chat History2"
+msgstr "गपसप इतिहास"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, colorLabel)
+#: plugins/history2/history2prefsui.ui:52
+#, fuzzy
+#| msgid "Color of history messages in the chat window"
+msgid "Color of history2 messages in the chat window"
+msgstr "गपसप विंडो मं इतिहास संदेस के रंग"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, import2)
+#: plugins/history2/history2prefsui.ui:150
+msgid "Import history from other kopete history plugin, pidgin,.."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, import2)
+#: plugins/history2/history2prefsui.ui:153
+#, fuzzy
+msgid "Import history"
+msgstr "अगला इतिहास"
 
 #. i18n: ectx: label, entry (HorizontalDPI), group (Latex Plugin)
 #: plugins/latex/latexconfig.kcfg:11
@@ -9349,23 +9465,23 @@ msgid "Gadu-Gadu Plugin"
 msgstr "गडू-गडू प्लगइन"
 
 #: protocols/gadu/gadudcctransaction.cpp:234
-#: protocols/jabber/jabberfiletransfer.cpp:175
+#: protocols/jabber/jabberfiletransfer.cpp:182
 msgid "&Resume"
 msgstr "फिर से चालू (&R)"
 
 #: protocols/gadu/gadudcctransaction.cpp:235
-#: protocols/jabber/jabberfiletransfer.cpp:176
+#: protocols/jabber/jabberfiletransfer.cpp:183
 msgid "Over&write"
 msgstr "मेटाय के लिखव (&w)"
 
 #: protocols/gadu/gadudcctransaction.cpp:237
-#: protocols/jabber/jabberfiletransfer.cpp:179
+#: protocols/jabber/jabberfiletransfer.cpp:186
 #, kde-format
 msgid "The file %1 already exists, do you want to resume or overwrite it?"
 msgstr "फाइल %1 पहिली से ही मौजूद हे. का आप मन एला मेटाय के लिखना चाहथो?"
 
 #: protocols/gadu/gadudcctransaction.cpp:238
-#: protocols/jabber/jabberfiletransfer.cpp:180
+#: protocols/jabber/jabberfiletransfer.cpp:187
 #, kde-format
 msgid "File Exists: %1"
 msgstr "फाइल मौजूद हे: %1"
