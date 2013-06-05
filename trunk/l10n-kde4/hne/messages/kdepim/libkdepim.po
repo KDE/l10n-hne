@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-18 04:11+0200\n"
+"POT-Creation-Date: 2013-06-05 02:11+0000\n"
 "PO-Revision-Date: 2009-02-28 21:12+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -107,14 +107,37 @@ msgstr ""
 msgid "Contact created successfully"
 msgstr ""
 
-#: addresseelineedit.cpp:302
+#: addressline/addresseelineedit.cpp:302
 msgctxt "@title:group"
 msgid "Contacts found in your data"
 msgstr ""
 
-#: addresseelineedit.cpp:1416
+#: addressline/addresseelineedit.cpp:1416
 msgid "Configure Completion Order..."
 msgstr "पूरा अनुक्रम कान्फिगर करव..."
+
+#: addressline/completionordereditor.cpp:77
+#, kde-format
+msgid "LDAP server %1"
+msgstr "एलडीएपी सर्वर %1"
+
+#: addressline/completionordereditor.cpp:198
+msgid "Edit Completion Order"
+msgstr "संपादन पूरा अनुक्रम"
+
+#: addressline/recentaddresses.cpp:182
+msgid "Edit Recent Addresses"
+msgstr "हाल ही के पतों के संपादन करव..."
+
+#: addressline/recentaddresses.cpp:207
+msgid "&Add"
+msgstr ""
+
+#: addressline/recentaddresses.cpp:211
+#, fuzzy
+#| msgid "<< &Remove"
+msgid "&Remove"
+msgstr "<< मेटाव (&R)"
 
 #: broadcaststatus.cpp:74
 #, kde-format
@@ -183,15 +206,6 @@ msgstr[1] ""
 #, kde-format
 msgid "Transmission for account %1 complete. No new messages."
 msgstr "खाता %1 बर हस्तांतरन पूरा. कोनो नवा संदेस नइ"
-
-#: completionordereditor.cpp:77
-#, kde-format
-msgid "LDAP server %1"
-msgstr "एलडीएपी सर्वर %1"
-
-#: completionordereditor.cpp:198
-msgid "Edit Completion Order"
-msgstr "संपादन पूरा अनुक्रम"
 
 #: kdatepickerpopup.cpp:99
 msgctxt "@option today"
@@ -578,39 +592,37 @@ msgid ""
 "will not work correctly:<ul><li>%1</li></ul>"
 msgstr ""
 
-#: progressdialog.cpp:173
+#: progresswidget/progressdialog.cpp:172
 msgid "Cancel this operation."
 msgstr "ये आपरेसन को खारिज करव."
 
-#: progressmanager.cpp:108
+#: progresswidget/progressmanager.cpp:108
 msgid "Aborting..."
 msgstr "छोड़त हे..."
 
-#: recentaddresses.cpp:182
-msgid "Edit Recent Addresses"
-msgstr "हाल ही के पतों के संपादन करव..."
+#: progresswidget/ssllabel.cpp:66
+msgid "Connection is encrypted"
+msgstr "कनेक्सन एनक्रिप्टेड हे"
 
-#: recentaddresses.cpp:207
-msgid "&Add"
-msgstr ""
+#: progresswidget/ssllabel.cpp:71
+msgid "Connection is unencrypted"
+msgstr "कनेक्सन एनक्रिप्टेड हे"
 
-#: recentaddresses.cpp:211
-#, fuzzy
-#| msgid "<< &Remove"
-msgid "&Remove"
-msgstr "<< मेटाव (&R)"
+#: progresswidget/statusbarprogresswidget.cpp:86
+msgid "Open detailed progress dialog"
+msgstr "विस्तृत प्रगति गोठ खोलव"
+
+#: progresswidget/statusbarprogresswidget.cpp:301
+msgid "Hide detailed progress window"
+msgstr "विस्तृत प्रगति विंडो ल लुकाव"
+
+#: progresswidget/statusbarprogresswidget.cpp:305
+msgid "Show detailed progress window"
+msgstr "विस्तृत प्रगति गोठ देखाव"
 
 #: spellchecklineedit.cpp:211
 msgid "Spell Checking Language"
 msgstr ""
-
-#: ssllabel.cpp:66
-msgid "Connection is encrypted"
-msgstr "कनेक्सन एनक्रिप्टेड हे"
-
-#: ssllabel.cpp:71
-msgid "Connection is unencrypted"
-msgstr "कनेक्सन एनक्रिप्टेड हे"
 
 #: statisticsproxymodel.cpp:107
 #, fuzzy
@@ -650,18 +662,6 @@ msgstr ""
 msgctxt "number of unread entities in the collection"
 msgid "Unread"
 msgstr ""
-
-#: statusbarprogresswidget.cpp:86
-msgid "Open detailed progress dialog"
-msgstr "विस्तृत प्रगति गोठ खोलव"
-
-#: statusbarprogresswidget.cpp:303
-msgid "Hide detailed progress window"
-msgstr "विस्तृत प्रगति विंडो ल लुकाव"
-
-#: statusbarprogresswidget.cpp:307
-msgid "Show detailed progress window"
-msgstr "विस्तृत प्रगति गोठ देखाव"
 
 #~ msgid "Send SMS"
 #~ msgstr "एसएमएस भेजव"
