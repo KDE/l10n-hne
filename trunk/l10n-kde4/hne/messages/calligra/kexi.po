@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-05 02:27+0200\n"
+"POT-Creation-Date: 2013-08-11 01:31+0000\n"
 "PO-Revision-Date: 2009-03-02 23:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -2884,7 +2884,7 @@ msgid "Execute"
 msgstr "चलाव"
 
 #: formeditor/kexiactionselectiondialog.cpp:286
-#: plugins/reports/kexireportview.cpp:83
+#: plugins/reports/kexireportview.cpp:92
 msgid "Print"
 msgstr "छापव"
 
@@ -3171,12 +3171,12 @@ msgstr "गंतव्य डाटाबेस मं टेबल \"%1\" क�
 msgid "Could not export data to \"%1\"."
 msgstr "\"%1\" मं डाटा निर्यात नइ कर सकिस."
 
-#: kexiutils/identifier.cpp:74
+#: kexiutils/identifier.cpp:73
 #, kde-format
 msgid "Value of \"%1\" column must be an identifier."
 msgstr "खंभा \"%1\" के मूल्य एक आइडेंटिफायर होना चाही."
 
-#: kexiutils/identifier.cpp:75
+#: kexiutils/identifier.cpp:74
 #, kde-format
 msgid "\"%1\" is not a valid identifier."
 msgstr "\"%1\" वैध आइडेंटिफायर नइ हे."
@@ -4601,26 +4601,26 @@ msgid_plural "Opened %1 years ago"
 msgstr[0] ""
 msgstr[1] ""
 
-#: main/startup/KexiRecentProjectsModel.cpp:112
+#: main/startup/KexiRecentProjectsModel.cpp:111
 #, fuzzy
 #| msgid "Local server"
 msgid "on local server"
 msgstr "लोकल सर्वर"
 
-#: main/startup/KexiRecentProjectsModel.cpp:115
+#: main/startup/KexiRecentProjectsModel.cpp:114
 #, fuzzy, kde-format
 #| msgid "Local server"
 msgid "on \"%1\" server"
 msgstr "लोकल सर्वर"
 
-#: main/startup/KexiRecentProjectsModel.cpp:123
+#: main/startup/KexiRecentProjectsModel.cpp:122
 #, fuzzy, kde-format
 #| msgid "New database"
 msgctxt "File database <file>"
 msgid "File database %1"
 msgstr "नवा डाटाबेस"
 
-#: main/startup/KexiRecentProjectsModel.cpp:128
+#: main/startup/KexiRecentProjectsModel.cpp:127
 #, fuzzy, kde-format
 #| msgid "New database"
 msgctxt "<type> database"
@@ -4999,7 +4999,7 @@ msgstr ""
 "का आप मन एखर ऊपर लिखना चाहथो ?"
 
 #: main/startup/KexiStartupFileHandler.cpp:490
-#: plugins/reports/kexireportview.cpp:191 widget/KexiFileWidget.cpp:433
+#: plugins/reports/kexireportview.cpp:200 widget/KexiFileWidget.cpp:433
 msgid "Overwrite"
 msgstr "मेटाय के लिखव"
 
@@ -6914,80 +6914,140 @@ msgstr "नवा रिपोट बनाथे ."
 msgid "Page"
 msgstr "पेज"
 
-#: plugins/reports/kexireportview.cpp:85
+#: plugins/reports/kexireportview.cpp:75
+#, fuzzy
+#| msgid "Go to first row"
+msgid "Go to first page"
+msgstr "पहिली लकीर मं जाव"
+
+#: plugins/reports/kexireportview.cpp:76
+#, fuzzy
+#| msgid "Go to first row"
+msgid "Goes to first page"
+msgstr "पहिली लकीर मं जाव"
+
+#: plugins/reports/kexireportview.cpp:77
+#, fuzzy
+#| msgid "Previous Page"
+msgid "Go to previous page"
+msgstr "पिछला पेज"
+
+#: plugins/reports/kexireportview.cpp:78
+#, fuzzy
+#| msgid "Previous Page"
+msgid "Goes to previous page"
+msgstr "पिछला पेज"
+
+#: plugins/reports/kexireportview.cpp:79
+#, fuzzy
+#| msgid "Next Page"
+msgid "Go to next page"
+msgstr "अगला पेज"
+
+#: plugins/reports/kexireportview.cpp:80
+#, fuzzy
+#| msgid "Next Page"
+msgid "Goes to next page"
+msgstr "अगला पेज"
+
+#: plugins/reports/kexireportview.cpp:81
+#, fuzzy
+#| msgid "Go to last row"
+msgid "Go to last page"
+msgstr "आखरी लकीर मं जाव"
+
+#: plugins/reports/kexireportview.cpp:82
+#, fuzzy
+#| msgid "Go to last row"
+msgid "Goes to last page"
+msgstr "आखरी लकीर मं जाव"
+
+#: plugins/reports/kexireportview.cpp:83
+#, fuzzy
+#| msgid "Current row number"
+msgid "Current page number"
+msgstr "अभी हाल के लकीर संख्या"
+
+#: plugins/reports/kexireportview.cpp:83
+#, fuzzy
+#| msgid "Number of rows"
+msgid "Number of pages"
+msgstr "पंक्तियों के संख्या"
+
+#: plugins/reports/kexireportview.cpp:94
 #, fuzzy
 #| msgid "Print Report"
 msgid "Print report"
 msgstr "छपाई रपट "
 
-#: plugins/reports/kexireportview.cpp:86
+#: plugins/reports/kexireportview.cpp:95
 msgid "Prints the current report."
 msgstr "अभी हाल के रपट छापथे."
 
-#: plugins/reports/kexireportview.cpp:89
+#: plugins/reports/kexireportview.cpp:98
 #, fuzzy
 #| msgid "Export"
 msgctxt "@title:menu"
 msgid "E&xport As"
 msgstr "निर्यात"
 
-#: plugins/reports/kexireportview.cpp:95
+#: plugins/reports/kexireportview.cpp:104
 #, fuzzy
 #| msgid "Export"
 msgid "Export:"
 msgstr "निर्यात"
 
-#: plugins/reports/kexireportview.cpp:101
+#: plugins/reports/kexireportview.cpp:110
 #, fuzzy
 #| msgid "Set Font..."
 msgctxt "open dialog to export as text document"
 msgid "Text Document..."
 msgstr "फोंट सेट करव..."
 
-#: plugins/reports/kexireportview.cpp:104
+#: plugins/reports/kexireportview.cpp:113
 msgid "Export the report as a text document (in OpenDocument Text format)"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:105
+#: plugins/reports/kexireportview.cpp:114
 msgid "Exports the report as a text document (in OpenDocument Text format)."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:113
+#: plugins/reports/kexireportview.cpp:122
 #, fuzzy
 #| msgid "&Save Row"
 msgctxt "open dialog to export as spreadsheet"
 msgid "Spreadsheet..."
 msgstr "लकीर सहेजव (&S)"
 
-#: plugins/reports/kexireportview.cpp:116
+#: plugins/reports/kexireportview.cpp:125
 msgid "Export the report as a spreadsheet (in OpenDocument Spreadsheet format)"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:117
+#: plugins/reports/kexireportview.cpp:126
 msgid ""
 "Exports the report as a spreadsheet (in OpenDocument Spreadsheet format)."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:125
+#: plugins/reports/kexireportview.cpp:134
 #, fuzzy
 #| msgid "&Add..."
 msgctxt "open dialog to export as web page"
 msgid "Web Page..."
 msgstr "जोड़व...(&A)"
 
-#: plugins/reports/kexireportview.cpp:128
+#: plugins/reports/kexireportview.cpp:137
 #, fuzzy
 #| msgid "Exports the report to a HTML file."
 msgid "Export the report as a web page (in HTML format)"
 msgstr "डाटा ल एक एचटीएमएल फाइल मं निर्यात करव."
 
-#: plugins/reports/kexireportview.cpp:129
+#: plugins/reports/kexireportview.cpp:138
 #, fuzzy
 #| msgid "Exports the report to a HTML file."
 msgid "Exports the report as a web page (in HTML format)."
 msgstr "डाटा ल एक एचटीएमएल फाइल मं निर्यात करव."
 
-#: plugins/reports/kexireportview.cpp:190
+#: plugins/reports/kexireportview.cpp:199
 #, fuzzy, kde-format
 #| msgid ""
 #| "The file %1 exists.\n"
@@ -6999,69 +7059,69 @@ msgstr ""
 "फाइल %1 पहिली से ही मौजूद हे. \n"
 "का आप मन एखर ऊपर लिखना चाहथो ?"
 
-#: plugins/reports/kexireportview.cpp:216
+#: plugins/reports/kexireportview.cpp:225
 #, fuzzy
 #| msgid "Opens the current report in KSpread."
 msgid "Export Report as Spreadsheet"
 msgstr "केस्प्रेड मं अभी हाल के रपट खोलथे."
 
-#: plugins/reports/kexireportview.cpp:223
+#: plugins/reports/kexireportview.cpp:232
 #, fuzzy, kde-format
 #| msgid "Opens the current report in KSpread."
 msgid "Failed to export the report as spreadsheet to %1."
 msgstr "केस्प्रेड मं अभी हाल के रपट खोलथे."
 
-#: plugins/reports/kexireportview.cpp:224
-#: plugins/reports/kexireportview.cpp:248
-#: plugins/reports/kexireportview.cpp:286
+#: plugins/reports/kexireportview.cpp:233
+#: plugins/reports/kexireportview.cpp:257
+#: plugins/reports/kexireportview.cpp:295
 #, fuzzy
 #| msgid "Saving failed"
 msgid "Export Failed"
 msgstr "सहेजना फेल"
 
-#: plugins/reports/kexireportview.cpp:240
+#: plugins/reports/kexireportview.cpp:249
 msgid "Export Report as Text Document"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:247
+#: plugins/reports/kexireportview.cpp:256
 #, kde-format
 msgid "Exporting the report as text document to %1 failed."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:260
+#: plugins/reports/kexireportview.cpp:269
 #, fuzzy
 #| msgid "Export data to a file"
 msgid "Export Report as Web Page"
 msgstr "डाटा ल एक फाइल मं निर्यात करव"
 
-#: plugins/reports/kexireportview.cpp:269
+#: plugins/reports/kexireportview.cpp:278
 msgid ""
 "Would you like to export using a Cascading Style Sheet (CSS), which will "
 "give an output closer to the original, or export using a HTML Table, which "
 "outputs a much simpler format?"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:273
+#: plugins/reports/kexireportview.cpp:282
 msgid "Use CSS"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:274
+#: plugins/reports/kexireportview.cpp:283
 #, fuzzy
 #| msgid "Table"
 msgid "Use Table"
 msgstr "टेबल"
 
-#: plugins/reports/kexireportview.cpp:285
+#: plugins/reports/kexireportview.cpp:294
 #, fuzzy, kde-format
 #| msgid "Exports the report to a HTML file."
 msgid "Exporting the report as web page to %1 failed."
 msgstr "डाटा ल एक एचटीएमएल फाइल मं निर्यात करव."
 
-#: plugins/reports/kexireportview.cpp:364
+#: plugins/reports/kexireportview.cpp:373
 msgid "Report schema appears to be invalid or corrupt"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:364
+#: plugins/reports/kexireportview.cpp:373
 #, fuzzy
 #| msgid "Saving failed"
 msgid "Opening failed"
@@ -8522,95 +8582,95 @@ msgstr "का"
 msgid "Number of records"
 msgstr "पंक्तियों के संख्या"
 
-#: widget/utils/kexirecordnavigator.cpp:480
+#: widget/utils/kexirecordnavigator.cpp:507
 msgid "Editing indicator"
 msgstr "संपादन सूचक"
 
-#: widget/utils/kexirecordnavigator.cpp:507
+#: widget/utils/kexirecordnavigator.cpp:534
 #, fuzzy
 #| msgid "First row"
 msgid "First record"
 msgstr "पहिली पंक्ति"
 
-#: widget/utils/kexirecordnavigator.cpp:507
+#: widget/utils/kexirecordnavigator.cpp:534
 #, fuzzy
 #| msgid "Go to first row"
 msgid "Go to first record"
 msgstr "पहिली लकीर मं जाव"
 
-#: widget/utils/kexirecordnavigator.cpp:508
+#: widget/utils/kexirecordnavigator.cpp:535
 #, fuzzy
 #| msgid "Previous row"
 msgid "Previous record"
 msgstr "पिछला पंक्ति"
 
-#: widget/utils/kexirecordnavigator.cpp:508
+#: widget/utils/kexirecordnavigator.cpp:535
 #, fuzzy
 #| msgid "Go to previous row"
 msgid "Go to previous record"
 msgstr "पिछला लकीर मं जाव"
 
-#: widget/utils/kexirecordnavigator.cpp:509
+#: widget/utils/kexirecordnavigator.cpp:536
 #, fuzzy
 #| msgid "Next row"
 msgid "Next record"
 msgstr "अगला पंक्ति"
 
-#: widget/utils/kexirecordnavigator.cpp:509
+#: widget/utils/kexirecordnavigator.cpp:536
 #, fuzzy
 #| msgid "Go to next row"
 msgid "Go to next record"
 msgstr "अगला लकीर मं जाव"
 
-#: widget/utils/kexirecordnavigator.cpp:510
+#: widget/utils/kexirecordnavigator.cpp:537
 #, fuzzy
 #| msgid "Last row"
 msgid "Last record"
 msgstr "आखरी पंक्ति"
 
-#: widget/utils/kexirecordnavigator.cpp:510
+#: widget/utils/kexirecordnavigator.cpp:537
 #, fuzzy
 #| msgid "Go to last row"
 msgid "Go to last record"
 msgstr "आखरी लकीर मं जाव"
 
-#: widget/utils/kexirecordnavigator.cpp:511
+#: widget/utils/kexirecordnavigator.cpp:538
 #, fuzzy
 #| msgid "New row"
 msgid "New record"
 msgstr "नवा पंक्ति"
 
-#: widget/utils/kexirecordnavigator.cpp:511
+#: widget/utils/kexirecordnavigator.cpp:538
 #, fuzzy
 #| msgid "Go to new row"
 msgid "Go to new record"
 msgstr "नवा लकीर मं जाव"
 
-#: widget/utils/kexirecordnavigator.cpp:512
+#: widget/utils/kexirecordnavigator.cpp:539
 #, fuzzy
 #| msgid "Moves cursor to first row."
 msgid "Moves cursor to first record."
 msgstr "संकेतक ल पहिली लकीर मं खिसकाथे ."
 
-#: widget/utils/kexirecordnavigator.cpp:513
+#: widget/utils/kexirecordnavigator.cpp:540
 #, fuzzy
 #| msgid "Moves cursor to previous row."
 msgid "Moves cursor to previous record."
 msgstr "संकेतक ल पिछला लकीर मं खिसकाथे ."
 
-#: widget/utils/kexirecordnavigator.cpp:514
+#: widget/utils/kexirecordnavigator.cpp:541
 #, fuzzy
 #| msgid "Moves cursor to next row."
 msgid "Moves cursor to next record."
 msgstr "संकेतक ल अगला लकीर मं खिसकाथे ."
 
-#: widget/utils/kexirecordnavigator.cpp:515
+#: widget/utils/kexirecordnavigator.cpp:542
 #, fuzzy
 #| msgid "Moves cursor to last row."
 msgid "Moves cursor to last record."
 msgstr "संकेतक ल आखरी लकीर मं खिसकाथे ."
 
-#: widget/utils/kexirecordnavigator.cpp:516
+#: widget/utils/kexirecordnavigator.cpp:543
 #, fuzzy
 #| msgid "Moves cursor to new row and allows inserting."
 msgid "Moves cursor to new record and allows inserting."
