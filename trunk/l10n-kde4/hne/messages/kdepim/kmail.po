@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-08-15 01:39+0000\n"
+"POT-Creation-Date: 2013-08-17 01:40+0000\n"
 "PO-Revision-Date: 2009-02-28 13:57+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -4378,7 +4378,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr "जवाब... (&R)"
 
-#: messageactions.cpp:84 searchdialog/searchwindow.cpp:227
+#: messageactions.cpp:84 searchdialog/searchwindow.cpp:231
 msgid "&Reply..."
 msgstr "जवाब... (&R)"
 
@@ -4386,11 +4386,11 @@ msgstr "जवाब... (&R)"
 msgid "Reply to A&uthor..."
 msgstr "लेखक ल जवाब भेजव... (&u)"
 
-#: messageactions.cpp:98 searchdialog/searchwindow.cpp:231
+#: messageactions.cpp:98 searchdialog/searchwindow.cpp:235
 msgid "Reply to &All..."
 msgstr "सब ल जवाब भेजव... (&A)"
 
-#: messageactions.cpp:105 searchdialog/searchwindow.cpp:235
+#: messageactions.cpp:105 searchdialog/searchwindow.cpp:239
 msgid "Reply to Mailing-&List..."
 msgstr "डाक-सूची ल जवाब भेजव... (&L)"
 
@@ -4435,7 +4435,7 @@ msgstr "संदेस संपादन (&E)"
 msgid "Add Note..."
 msgstr "जोड़व..."
 
-#: messageactions.cpp:174 searchdialog/searchwindow.cpp:239
+#: messageactions.cpp:174 searchdialog/searchwindow.cpp:243
 msgctxt "Message->"
 msgid "&Forward"
 msgstr "आगू (&F)"
@@ -4598,11 +4598,69 @@ msgctxt "@title:column, folder (e.g. email)"
 msgid "Folder"
 msgstr "फोल्डर"
 
-#: searchdialog/searchwindow.cpp:90
+#: searchdialog/searchdebugdialog.cpp:35
+msgid "Search query debug"
+msgstr ""
+
+#: searchdialog/searchdebugdialog.cpp:37
+msgid "Save As..."
+msgstr "अइसन सहेजव..."
+
+#: searchdialog/searchdebugdialog.cpp:71
+msgid "all files (*)"
+msgstr ""
+
+#: searchdialog/searchdebugdialog.cpp:81
+#, kde-format
+msgid ""
+"Could not write the file %1:\n"
+"\"%2\" is the detailed error description."
+msgstr ""
+"फाइल %1 मं लिख नइ सकिस.\n"
+"विस्तृत गलती विवरन हे- \"%2\""
+
+#: searchdialog/searchdebugdialog.cpp:85
+#, fuzzy
+#| msgid "Leave Editor Open"
+msgid "Sieve Editor Error"
+msgstr "संपादक खुले रहन देव"
+
+#: searchdialog/searchdebugwidget.cpp:52
+msgid "UIDS:"
+msgstr ""
+
+#: searchdialog/searchdebugwidget.cpp:53
+#, fuzzy
+#| msgid "Message"
+msgid "Message:"
+msgstr "संदेस"
+
+#: searchdialog/searchdebugwidget.cpp:57 searchdialog/searchwindow.cpp:410
+#: searchdialog/searchwindow.cpp:438 searchdialog/searchwindow.cpp:441
+#, fuzzy
+msgid "Search"
+msgstr "खोजव"
+
+#: searchdialog/searchdebugwidget.cpp:176
+#, fuzzy, kde-format
+#| msgid " message"
+#| msgid_plural " messages"
+msgid "1 message found"
+msgid_plural "%1 messages found"
+msgstr[0] "संदेस"
+msgstr[1] "संदेस मन"
+
+#: searchdialog/searchdebugwidget.cpp:195
+#, fuzzy
+#| msgid "Error connecting to server %1"
+msgid "Error on fetching item"
+msgstr "सर्वर %1 से कनेक्सन मं गलती"
+
+#: searchdialog/searchwindow.cpp:91
 msgid "Find Messages"
 msgstr "संदेस खोजव"
 
-#: searchdialog/searchwindow.cpp:102
+#: searchdialog/searchwindow.cpp:103
 #, fuzzy
 #| msgctxt "@action:button Search for messags"
 #| msgid "&Search"
@@ -4610,53 +4668,71 @@ msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "खोजव (&S)"
 
-#: searchdialog/searchwindow.cpp:189 searchdialog/searchwindow.cpp:382
+#: searchdialog/searchwindow.cpp:108
+msgid "Debug query"
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:193 searchdialog/searchwindow.cpp:386
 msgid "Last Search"
 msgstr "पिछला खोज"
 
-#: searchdialog/searchwindow.cpp:244
+#: searchdialog/searchwindow.cpp:248
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr "इनलाइन... (&I)"
 
-#: searchdialog/searchwindow.cpp:249
+#: searchdialog/searchwindow.cpp:253
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr "संलग्नक के रूप में... (&A)"
 
-#: searchdialog/searchwindow.cpp:263
+#: searchdialog/searchwindow.cpp:267
 msgid "Save Attachments..."
 msgstr "संलग्नक सहेजव..."
 
-#: searchdialog/searchwindow.cpp:269
+#: searchdialog/searchwindow.cpp:273
 msgid "Clear Selection"
 msgstr "चयन साफ करव"
 
-#: searchdialog/searchwindow.cpp:353
+#: searchdialog/searchwindow.cpp:357
 #, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
 msgstr[0] "%1 एक जैसा"
 msgstr[1] "%1 एक जइसन"
 
-#: searchdialog/searchwindow.cpp:443
+#: searchdialog/searchwindow.cpp:410
+#, fuzzy
+#| msgid "Could not sync maildir folder."
+msgid "You did not selected a valid folder."
+msgstr "मेलडिर फोल्डर सिंक नइ कर सकिस."
+
+#: searchdialog/searchwindow.cpp:438
+msgid "You forgot to define condition."
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:441
+msgid "All folders selected are empty or were not indexed."
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:463
 #, fuzzy
 #| msgid "Starting..."
 msgid "Searching..."
 msgstr "सुरू करत हे..."
 
-#: searchdialog/searchwindow.cpp:451
+#: searchdialog/searchwindow.cpp:471
 #, kde-format
 msgid "Can not get search result. %1"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:562
+#: searchdialog/searchwindow.cpp:582
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
 "that another search folder with the same name already exists."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:665
+#: searchdialog/searchwindow.cpp:685
 #, fuzzy, kde-format
 #| msgid "Copy Messages"
 msgid "Copy Message"
@@ -4664,7 +4740,7 @@ msgid_plural "Copy %1 Messages"
 msgstr[0] "संदेस मन के नकल बनाव"
 msgstr[1] "संदेस मन के नकल बनाव"
 
-#: searchdialog/searchwindow.cpp:668
+#: searchdialog/searchwindow.cpp:688
 #, fuzzy, kde-format
 #| msgid "Cut Messages"
 msgid "Cut Message"
@@ -6588,13 +6664,6 @@ msgstr "बाहिरी संपादक"
 #~ msgid "unlimited"
 #~ msgstr "असीमित"
 
-#~ msgid ""
-#~ "Could not write the file %1:\n"
-#~ "\"%2\" is the detailed error description."
-#~ msgstr ""
-#~ "फाइल %1 मं लिख नइ सकिस.\n"
-#~ "विस्तृत गलती विवरन हे- \"%2\""
-
 #~ msgid "Not enough free disk space?"
 #~ msgstr "डिस्क मं बहुत जगह नइ?"
 
@@ -8477,9 +8546,6 @@ msgstr "बाहिरी संपादक"
 #~ msgid "&Save Attachment As..."
 #~ msgstr "संलग्नक अइसन सहेजव... (&S)"
 
-#~ msgid "Save As..."
-#~ msgstr "अइसन सहेजव..."
-
 #~ msgid "Attachment Pr&operties"
 #~ msgstr "संलग्नक गुन... (&o)"
 
@@ -9691,9 +9757,6 @@ msgstr "बाहिरी संपादक"
 #~ msgid "Connecting to server %1, please wait..."
 #~ msgstr "सर्वर %1 से जुड़ रहा हे, किरपा करके, अगोरव..."
 
-#~ msgid "Error connecting to server %1"
-#~ msgstr "सर्वर %1 से कनेक्सन मं गलती"
-
 #~ msgid ""
 #~ "Error retrieving access control list (ACL) from server\n"
 #~ "%1"
@@ -10233,9 +10296,6 @@ msgstr "बाहिरी संपादक"
 #~ msgid "Error opening %1; this folder is missing."
 #~ msgstr "%1 ल खोले मं गलती; ए फोल्डर गंवा गे हे."
 
-#~ msgid "Could not sync maildir folder."
-#~ msgstr "मेलडिर फोल्डर सिंक नइ कर सकिस."
-
 #~ msgid ""
 #~ "Message could not be added to the folder, possibly disk space is low."
 #~ msgstr "फोल्डर मं संदेस ल जोड़े नइ जा सकिस, हो सकथे डिस्क जगह कम हे."
@@ -10280,11 +10340,6 @@ msgstr "बाहिरी संपादक"
 #~ msgctxt "type of folder storage"
 #~ msgid "Disconnected IMAP"
 #~ msgstr "खाता किसिमः डिस्कनेक्टेड आईमैप खाता"
-
-#, fuzzy
-#~ msgctxt "type of folder storage"
-#~ msgid "Search"
-#~ msgstr "खोजव"
 
 #, fuzzy
 #~ msgctxt "type of folder storage"
@@ -11458,11 +11513,6 @@ msgstr "बाहिरी संपादक"
 #~ msgid "Please specify a server and port on the General tab first."
 #~ msgstr "किरपा करके, पहिली सामान्य टैब मं सर्वर अउ पोर्ट निरधारित करव"
 
-#~ msgid " message"
-#~ msgid_plural " messages"
-#~ msgstr[0] "संदेस"
-#~ msgstr[1] "संदेस मन"
-
 #~ msgid " byte"
 #~ msgid_plural " bytes"
 #~ msgstr[0] "बाइट"
@@ -11867,9 +11917,6 @@ msgstr "बाहिरी संपादक"
 
 #~ msgid "Fancy"
 #~ msgstr "फेंसी"
-
-#~ msgid "Message"
-#~ msgstr "संदेस"
 
 #~ msgid "Status"
 #~ msgstr "स्थिति"
@@ -13142,9 +13189,6 @@ msgstr "बाहिरी संपादक"
 
 #~ msgid "Abort Editor"
 #~ msgstr "संपादक छोड़व"
-
-#~ msgid "Leave Editor Open"
-#~ msgstr "संपादक खुले रहन देव"
 
 #~ msgid "Todo"
 #~ msgstr "काम-सूची"
