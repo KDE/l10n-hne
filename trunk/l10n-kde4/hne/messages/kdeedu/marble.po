@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-08-15 01:35+0000\n"
+"POT-Creation-Date: 2013-08-23 01:34+0000\n"
 "PO-Revision-Date: 2009-02-25 13:50+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1743,6 +1743,20 @@ msgstr "तारा (&S)"
 msgid "Edit"
 msgstr "संपादन (&E)"
 
+#. i18n: ectx: property (windowTitle), widget (QDialog, CloudRoutesDialog)
+#: src/lib/cloudsync/CloudRoutesDialog.ui:14
+#, fuzzy
+#| msgid "Clouds"
+msgid "Cloud Routes"
+msgstr "बादल"
+
+#. i18n: ectx: property (text), widget (QLabel, labelNoRoute)
+#: src/lib/cloudsync/CloudRoutesDialog.ui:20
+#, fuzzy
+#| msgid "not available"
+msgid "No route available."
+msgstr "नइ मिलत"
+
 #. i18n: ectx: property (windowTitle), widget (QWidget, CurrentLocationWidget)
 #: src/lib/CurrentLocationWidget.ui:14
 msgid "Current Location"
@@ -3069,6 +3083,50 @@ msgstr "स्थान नाम: (&P)"
 msgid "&Password:"
 msgstr ""
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, MarbleCloudSyncSettingsWidget)
+#: src/lib/MarbleCloudSyncSettingsWidget.ui:14
+#, fuzzy
+#| msgid "Farm"
+msgid "Form"
+msgstr "खेत"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_enableSync)
+#: src/lib/MarbleCloudSyncSettingsWidget.ui:20
+msgid "Enable synchronization"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: src/lib/MarbleCloudSyncSettingsWidget.ui:27
+msgid "Credentials"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, labelServer)
+#: src/lib/MarbleCloudSyncSettingsWidget.ui:33
+msgid "Server:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, labelUsername)
+#: src/lib/MarbleCloudSyncSettingsWidget.ui:43
+#, fuzzy
+#| msgid "&Place names:"
+msgid "Username:"
+msgstr "स्थान नाम: (&P)"
+
+#. i18n: ectx: property (text), widget (QLabel, labelPassword)
+#: src/lib/MarbleCloudSyncSettingsWidget.ui:50
+msgid "Password:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_syncRoutes)
+#: src/lib/MarbleCloudSyncSettingsWidget.ui:66
+msgid "Enable route synchronization"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_syncBookmarks)
+#: src/lib/MarbleCloudSyncSettingsWidget.ui:73
+msgid "Enable bookmark synchronization"
+msgstr ""
+
 #. i18n: ectx: property (windowTitle), widget (QWidget, MarbleNavigationSettingsWidget)
 #: src/lib/MarbleNavigationSettingsWidget.ui:14
 msgid "Marble Cache Settings"
@@ -3882,7 +3940,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_graphicsSystem)
-#: src/lib/MarbleViewSettingsWidget.ui:262 src/marble_part.cpp:1351
+#: src/lib/MarbleViewSettingsWidget.ui:262 src/marble_part.cpp:1359
 #, fuzzy
 #| msgid "Nation"
 msgid "Native"
@@ -4003,7 +4061,7 @@ msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, NavigationWidget)
 #. i18n: ectx: property (windowTitle), widget (QWidget, Navigation)
-#: src/lib/NavigationWidget.ui:14 src/marble_part.cpp:1368
+#: src/lib/NavigationWidget.ui:14 src/marble_part.cpp:1376
 #: src/plugins/render/navigation/navigation.ui:14
 msgid "Navigation"
 msgstr "नेविगेसन"
@@ -4548,281 +4606,285 @@ msgstr "अनुपरयोग से बाहिर आव"
 msgid "The position tracking plugin used to determine the current location"
 msgstr ""
 
-#: src/marble_part.cpp:114
+#: src/marble_part.cpp:115
 #, kde-format
 msgid "Position: %1"
 msgstr "स्थितिः %1"
 
-#: src/marble_part.cpp:115
+#: src/marble_part.cpp:116
 #, kde-format
 msgid "Altitude: %1"
 msgstr "ऊँचाई: %1"
 
-#: src/marble_part.cpp:116
+#: src/marble_part.cpp:117
 #, kde-format
 msgid "Tile Zoom Level: %1"
 msgstr ""
 
-#: src/marble_part.cpp:117
+#: src/marble_part.cpp:118
 #, fuzzy, kde-format
 #| msgid "&Time"
 msgid "Time: %1"
 msgstr "समय (&T)"
 
-#: src/marble_part.cpp:214
+#: src/marble_part.cpp:215
 msgid "marble_part"
 msgstr "मार्बल_पार्ट"
 
-#: src/marble_part.cpp:215
+#: src/marble_part.cpp:216
 #, fuzzy
 #| msgid "A Desktop Globe"
 msgid "A Virtual Globe"
 msgstr "डेस्कटाप ग्लोब"
 
-#: src/marble_part.cpp:252
+#: src/marble_part.cpp:253
 msgid "All Supported Files"
 msgstr ""
 
-#: src/marble_part.cpp:259
+#: src/marble_part.cpp:260
 msgid "Open File"
 msgstr "फाइल खोलव"
 
-#: src/marble_part.cpp:277
+#: src/marble_part.cpp:278
 msgid "Images *.jpg *.png"
 msgstr "फोटू *.jpg *.png"
 
-#: src/marble_part.cpp:278
+#: src/marble_part.cpp:279
 msgid "Export Map"
 msgstr "नक्सा निर्यात करव"
 
-#: src/marble_part.cpp:292
+#: src/marble_part.cpp:293
 msgctxt "Application name"
 msgid "Marble"
 msgstr "संगमरमर"
 
-#: src/marble_part.cpp:293
+#: src/marble_part.cpp:294
 msgid "An error occurred while trying to save the file.\n"
 msgstr "फाइल ल सहेजे के समय एक गलती होइस\n"
 
-#: src/marble_part.cpp:684
+#: src/marble_part.cpp:692
 #, fuzzy
 msgctxt "Action for downloading an entire region of a map"
 msgid "Download Region..."
 msgstr "डाटा डाउनलोड करत हे..."
 
-#: src/marble_part.cpp:698
+#: src/marble_part.cpp:706
 #, fuzzy
 msgctxt "Action for saving the map to a file"
 msgid "&Export Map..."
 msgstr "नक्सा निर्यात करव... (&E)"
 
-#: src/marble_part.cpp:707
+#: src/marble_part.cpp:715
 #, fuzzy
 msgctxt "Action for toggling offline mode"
 msgid "&Work Offline"
 msgstr "आफलाइन काम करव (&W)"
 
-#: src/marble_part.cpp:717
+#: src/marble_part.cpp:725
 #, fuzzy
 msgctxt "Action for copying the map to the clipboard"
 msgid "&Copy Map"
 msgstr "नक्सा नकल करव (&C)"
 
-#: src/marble_part.cpp:724
+#: src/marble_part.cpp:732
 #, fuzzy
 msgctxt "Action for copying the coordinates to the clipboard"
 msgid "C&opy Coordinates"
 msgstr "निर्देसांक नकल करव (&o)"
 
-#: src/marble_part.cpp:732
+#: src/marble_part.cpp:740
 #, fuzzy
 msgctxt "Action for opening a file"
 msgid "&Open..."
 msgstr "नक्सा खोलव...(&O)"
 
-#: src/marble_part.cpp:740
+#: src/marble_part.cpp:748
 #, fuzzy
 msgctxt "Action for downloading maps (GHNS)"
 msgid "Download Maps..."
 msgstr "डाटा डाउनलोड करत हे..."
 
-#: src/marble_part.cpp:744
+#: src/marble_part.cpp:752
 #, fuzzy
 msgctxt "Status tip"
 msgid "Download new maps"
 msgstr "नवा नक्सा डाउनलोड करव (&D)"
 
-#: src/marble_part.cpp:749
+#: src/marble_part.cpp:757
 msgctxt "Action for creating new maps"
 msgid "&Create a New Map..."
 msgstr ""
 
-#: src/marble_part.cpp:754
+#: src/marble_part.cpp:762
 msgctxt "Status tip"
 msgid "A wizard guides you through the creation of your own map theme."
 msgstr ""
 
-#: src/marble_part.cpp:781
+#: src/marble_part.cpp:789
 #, fuzzy
 msgctxt "Action for toggling clouds"
 msgid "&Clouds"
 msgstr "बादल (&C)"
 
-#: src/marble_part.cpp:788
+#: src/marble_part.cpp:796
 #, fuzzy
 msgctxt "Action for sun control dialog"
 msgid "S&un Control..."
 msgstr "सूर्यप्रकास नियंत्रक... (&u)"
 
-#: src/marble_part.cpp:798
+#: src/marble_part.cpp:806
 #, fuzzy
 msgctxt "Action for time control dialog"
 msgid "&Time Control..."
 msgstr "सूर्यप्रकास नियंत्रक... (&u)"
 
-#: src/marble_part.cpp:807
+#: src/marble_part.cpp:815
 #, fuzzy
 msgctxt "Action for locking float items on the map"
 msgid "Lock Position"
 msgstr "स्थिति मं ताला लगाव"
 
-#: src/marble_part.cpp:818
+#: src/marble_part.cpp:826
 #, fuzzy
 #| msgid "Shadow"
 msgid "Show Shadow"
 msgstr "छइंहा"
 
-#: src/marble_part.cpp:821
+#: src/marble_part.cpp:829
 #, fuzzy
 #| msgid "Shadow"
 msgid "Hide Shadow"
 msgstr "छइंहा"
 
-#: src/marble_part.cpp:822
+#: src/marble_part.cpp:830
 msgid "Shows and hides the shadow of the sun"
 msgstr ""
 
-#: src/marble_part.cpp:826
+#: src/marble_part.cpp:834
 msgid "Show sun icon on the Sub-Solar Point"
 msgstr ""
 
-#: src/marble_part.cpp:828
+#: src/marble_part.cpp:836
 msgid "Hide sun icon on the Sub-Solar Point"
 msgstr ""
 
-#: src/marble_part.cpp:829
+#: src/marble_part.cpp:837
 msgid "Show sun icon on the sub-solar point"
 msgstr ""
 
-#: src/marble_part.cpp:834
+#: src/marble_part.cpp:842
 msgid "Lock Globe to the Sub-Solar Point"
 msgstr ""
 
-#: src/marble_part.cpp:836
+#: src/marble_part.cpp:844
 msgid "Unlock Globe to the Sub-Solar Point"
 msgstr ""
 
-#: src/marble_part.cpp:837
+#: src/marble_part.cpp:845
 msgid "Lock globe to the sub-solar point"
 msgstr ""
 
-#: src/marble_part.cpp:850
+#: src/marble_part.cpp:858
 msgctxt "Add Bookmark"
 msgid "&Add Bookmark"
 msgstr ""
 
-#: src/marble_part.cpp:858
+#: src/marble_part.cpp:866
 #, fuzzy
 #| msgid "&Stars"
 msgctxt "Show Bookmarks"
 msgid "Show &Bookmarks"
 msgstr "तारा (&S)"
 
-#: src/marble_part.cpp:874
+#: src/marble_part.cpp:882
 #, fuzzy
 #| msgid "&Stars"
 msgctxt "Manage Bookmarks"
 msgid "&Manage Bookmarks"
 msgstr "तारा (&S)"
 
-#: src/marble_part.cpp:886
+#: src/marble_part.cpp:894
 #, fuzzy
 #| msgid "&Edit"
 msgctxt "Edit the map in an external application"
 msgid "&Edit Map"
 msgstr "संपादन (&E)"
 
-#: src/marble_part.cpp:1207
+#: src/marble_part.cpp:1215
 #, fuzzy
 msgctxt "Action for toggling"
 msgid "Show Position"
 msgstr "स्थिति मं ताला लगाव"
 
-#: src/marble_part.cpp:1209
+#: src/marble_part.cpp:1217
 #, fuzzy
 #| msgid "Show frame rate"
 msgctxt "Action for toggling"
 msgid "Show Date and Time"
 msgstr "फ्रेम दर देखाव"
 
-#: src/marble_part.cpp:1211
+#: src/marble_part.cpp:1219
 #, fuzzy
 msgctxt "Action for toggling"
 msgid "Show Altitude"
 msgstr "ऊँचाई"
 
-#: src/marble_part.cpp:1214
+#: src/marble_part.cpp:1222
 msgctxt "Action for toggling"
 msgid "Show Tile Zoom Level"
 msgstr ""
 
-#: src/marble_part.cpp:1216
+#: src/marble_part.cpp:1224
 msgctxt "Action for toggling"
 msgid "Show Download Progress Bar"
 msgstr ""
 
-#: src/marble_part.cpp:1345
+#: src/marble_part.cpp:1353
 msgid "View"
 msgstr "दृस्य"
 
-#: src/marble_part.cpp:1354
+#: src/marble_part.cpp:1362
 #, fuzzy
 #| msgid "Nation"
 msgid "Native (X11)"
 msgstr "राज्य"
 
-#: src/marble_part.cpp:1357
+#: src/marble_part.cpp:1365
 msgid "Native (Mac OS X Core Graphics)"
 msgstr ""
 
-#: src/marble_part.cpp:1377
+#: src/marble_part.cpp:1385
 msgid "Cache & Proxy"
 msgstr "कैस अउ प्राक्सी"
 
-#: src/marble_part.cpp:1390
+#: src/marble_part.cpp:1398
 #, fuzzy
 #| msgid "&Time"
 msgid "Date & Time"
 msgstr "समय (&T)"
 
-#: src/marble_part.cpp:1395
+#: src/marble_part.cpp:1406
+msgid "Synchronization"
+msgstr ""
+
+#: src/marble_part.cpp:1411
 #, fuzzy
 #| msgid "Bridge"
 msgid "Routing"
 msgstr "ब्रिज"
 
-#: src/marble_part.cpp:1403
+#: src/marble_part.cpp:1419
 msgid "Plugins"
 msgstr "प्लगइन्स"
 
-#: src/marble_part.cpp:1523
+#: src/marble_part.cpp:1539
 msgid ""
 "You have decided to run Marble with a different graphics system.\n"
 "For this change to become effective, Marble has to be restarted.\n"
 "Please close the application and start Marble again."
 msgstr ""
 
-#: src/marble_part.cpp:1526
+#: src/marble_part.cpp:1542
 msgid "Graphics System Change"
 msgstr ""
 
@@ -6397,11 +6459,6 @@ msgstr "जंगल"
 #| msgid "Forest"
 msgid "Shortest"
 msgstr "जंगल"
-
-#, fuzzy
-#~| msgid "Farm"
-#~ msgid "Form"
-#~ msgstr "खेत"
 
 #, fuzzy
 #~ msgctxt "Action for toggling the atmosphere"
