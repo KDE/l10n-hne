@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-08-30 01:39+0000\n"
+"POT-Creation-Date: 2013-09-07 01:40+0000\n"
 "PO-Revision-Date: 2009-03-01 11:33+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -236,11 +236,15 @@ msgstr ""
 msgid "Change visibility : %1"
 msgstr "विजिबिलिटी बदलव :"
 
-#: cmds/generic/cmd_createUMLObject.cpp:29
+#: cmds/generic/cmd_createUMLObject.cpp:37
 #, fuzzy, kde-format
 #| msgid "Create uml object :"
-msgid "Create uml object : %1"
+msgid "Create UML object : %1"
 msgstr "यूएमएल आब्जेक्ट बनाव:"
+
+#: cmds/generic/cmd_createUMLObject.cpp:44
+msgid "Create UML object : CANNOT DO THAT, OBJECT IS NULL!"
+msgstr ""
 
 #: cmds/generic/cmd_renameUMLObject.cpp:25
 #, fuzzy, kde-format
@@ -248,7 +252,7 @@ msgstr "यूएमएल आब्जेक्ट बनाव:"
 msgid "Rename object : %1 to %2"
 msgstr "आब्जेक्ट ल नवा नाम देव"
 
-#: cmds/widget/cmd_changeFillColor.cpp:26
+#: cmds/widget/cmd_changeFillColor.cpp:27
 #, fuzzy, kde-format
 #| msgid "Change Fill Color"
 msgid "Change fill color : %1"
@@ -260,7 +264,7 @@ msgstr "भराव रंग बदलव"
 msgid "Change font : %1"
 msgstr "फोंट बदलव"
 
-#: cmds/widget/cmd_changeLineColor.cpp:34
+#: cmds/widget/cmd_changeLineColor.cpp:36
 #, fuzzy, kde-format
 #| msgid "Change Line Color"
 msgid "Change line color : %1"
@@ -272,7 +276,7 @@ msgstr "लकीर रंग बदलव"
 msgid "Change multiplicity : %1 to %2"
 msgstr "गुननता बदलव"
 
-#: cmds/widget/cmd_changeTextColor.cpp:24
+#: cmds/widget/cmd_changeTextColor.cpp:26
 #, fuzzy, kde-format
 #| msgid "Change Line Color"
 msgid "Change text color : %1"
@@ -3392,8 +3396,8 @@ msgstr "जऊन नाम आप मन भरे हो  वो अवैध 
 msgid "The name you have entered is not unique."
 msgstr "जऊन नाम आप मन भरे हो  वो बेजोड़ नइ हे."
 
-#: dialogs/umlviewdialog.cpp:233 umldoc.cpp:1416 umllistview.cpp:2330
-#: umllistview.cpp:2337 umllistview.cpp:2602
+#: dialogs/umlviewdialog.cpp:233 umldoc.cpp:1416 umllistview.cpp:2314
+#: umllistview.cpp:2321 umllistview.cpp:2586
 msgid "Name Not Unique"
 msgstr "नाम बेजोड़ नइ हे"
 
@@ -5739,13 +5743,13 @@ msgid "There was a problem loading file: %1"
 msgstr "फाइल लोड करे मं समस्या आईः %1"
 
 #: umldoc.cpp:620 umldoc.cpp:630 umldoc.cpp:647 umldoc.cpp:680 umldoc.cpp:698
-#: umllistview.cpp:562 umlviewimageexportermodel.cpp:257
+#: umllistview.cpp:553 umlviewimageexportermodel.cpp:257
 #, kde-format
 msgid "There was a problem saving file: %1"
 msgstr "फाइल सहेजे मं गलती होइसः %1"
 
 #: umldoc.cpp:620 umldoc.cpp:630 umldoc.cpp:647 umldoc.cpp:680 umldoc.cpp:698
-#: umldoc.cpp:705 umllistview.cpp:563
+#: umldoc.cpp:705 umllistview.cpp:554
 msgid "Save Error"
 msgstr "सहेजे मं गलती"
 
@@ -5818,7 +5822,7 @@ msgctxt "renaming child uml object"
 msgid "Name"
 msgstr "नांव"
 
-#: umldoc.cpp:1415 umllistview.cpp:2329
+#: umldoc.cpp:1415 umllistview.cpp:2313
 msgid ""
 "The name you entered was not unique.\n"
 "Is this what you wanted?"
@@ -5826,11 +5830,11 @@ msgstr ""
 "जऊन नाम आप मन घुसाय हो बेजोड़ नइ हे.\n"
 "का यही आप मन चाहथो ?"
 
-#: umldoc.cpp:1416 umllistview.cpp:2330
+#: umldoc.cpp:1416 umllistview.cpp:2314
 msgid "Use Name"
 msgstr "नाम उपयोग करव"
 
-#: umldoc.cpp:1416 umllistview.cpp:2330
+#: umldoc.cpp:1416 umllistview.cpp:2314
 msgid "Enter New Name"
 msgstr "नवा नाम भरव"
 
@@ -5864,47 +5868,47 @@ msgstr "आरेख लोड करत हे..."
 msgid "/autosave%1"
 msgstr "/अपने अपन-सहेजव%1"
 
-#: umllistview.cpp:523
+#: umllistview.cpp:514
 msgid "Externalize Folder"
 msgstr "एक्सटर्नलाइज फोल्डर"
 
-#: umllistview.cpp:544
+#: umllistview.cpp:535
 #, kde-format
 msgid "Folder %1 must be relative to the main model directory, %2."
 msgstr ""
 
-#: umllistview.cpp:545
+#: umllistview.cpp:536
 #, fuzzy
 #| msgid "Paste Error"
 msgid "Path Error"
 msgstr "चिपकाने मं गलती"
 
-#: umllistview.cpp:553
+#: umllistview.cpp:544
 #, kde-format
 msgid ""
 "File %1 already exists!\n"
 "The existing file will be overwritten."
 msgstr ""
 
-#: umllistview.cpp:554
+#: umllistview.cpp:545
 #, fuzzy
 #| msgid "File Already Exists"
 msgid "File Exist"
 msgstr "फाइल पहिली से ही अस्तित्व मं हे. "
 
-#: umllistview.cpp:594
+#: umllistview.cpp:585
 msgid "Enter Model Name"
 msgstr "माडल नाम भरव"
 
-#: umllistview.cpp:595
+#: umllistview.cpp:586
 msgid "Enter the new name of the model:"
 msgstr "माडल के नवा नाम भरव:"
 
-#: umllistview.cpp:1338
+#: umllistview.cpp:1324
 msgid "Views"
 msgstr "दृस्य"
 
-#: umllistview.cpp:2319
+#: umllistview.cpp:2303
 msgid ""
 "The name you entered was invalid.\n"
 "Creation process has been canceled."
@@ -5912,11 +5916,11 @@ msgstr ""
 "जऊन नाम आप मन घुसाय हो अवैध हे.\n"
 "बनाए के काम खारिज करे गे हे."
 
-#: umllistview.cpp:2320 umllistviewitem.cpp:719
+#: umllistview.cpp:2304 umllistviewitem.cpp:696
 msgid "Name Not Valid"
 msgstr "नाम वैध नइ हे"
 
-#: umllistview.cpp:2336 umllistview.cpp:2601
+#: umllistview.cpp:2320 umllistview.cpp:2585
 msgid ""
 "The name you entered was not unique.\n"
 "Creation process has been canceled."
@@ -5924,38 +5928,38 @@ msgstr ""
 "जऊन नाम आप मन घुसाय हो बेजोड़ नइ हे.\n"
 "बनाए के काम खारिज करे गे."
 
-#: umllistview.cpp:2559 umllistview.cpp:2576 umllistview.cpp:2591
-#: umllistview.cpp:2621
+#: umllistview.cpp:2543 umllistview.cpp:2560 umllistview.cpp:2575
+#: umllistview.cpp:2605
 msgid "Creation canceled"
 msgstr "बनाइस जाना खारिज"
 
-#: umllistview.cpp:2879
+#: umllistview.cpp:2863
 msgid "Loading listview..."
 msgstr "सूचीदृस्य लोड करत हे..."
 
-#: umllistview.cpp:3263
+#: umllistview.cpp:3247
 msgid "The folder must be emptied before it can be deleted."
 msgstr "फोल्डर ल मिटा सकें एखर बर पहिली एला खाली करना होही."
 
-#: umllistview.cpp:3264
+#: umllistview.cpp:3248
 msgid "Folder Not Empty"
 msgstr "फोल्डर खाली नइ हे"
 
-#: umllistviewitem.cpp:578 umllistviewitem.cpp:611 umllistviewitem.cpp:642
-#: umllistviewitem.cpp:669
+#: umllistviewitem.cpp:555 umllistviewitem.cpp:588 umllistviewitem.cpp:619
+#: umllistviewitem.cpp:646
 msgid "Rename canceled"
 msgstr "नाम बदलना खारिज"
 
-#: umllistviewitem.cpp:703
+#: umllistviewitem.cpp:680
 #, kde-format
 msgid "Renaming an item of listview type %1 is not yet implemented."
 msgstr "कोनो चीज के सूची दृस्य किसिम %1 के नाम बदले जाना अभी तक लागू नइ हे."
 
-#: umllistviewitem.cpp:704
+#: umllistviewitem.cpp:681
 msgid "Function Not Implemented"
 msgstr "फंक्सन लागू नइ हे"
 
-#: umllistviewitem.cpp:718
+#: umllistviewitem.cpp:695
 msgid ""
 "The name you entered was invalid.\n"
 "Renaming process has been canceled."
