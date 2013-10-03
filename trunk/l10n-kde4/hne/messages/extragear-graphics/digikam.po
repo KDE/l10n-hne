@@ -4,13 +4,11 @@
 #
 # Ravishankar Shrivastava <raviratlami@yahoo.com>, 2008.
 # Ravishankar Shrivastava <raviratlami@aol.in>, 2009.
-#: digikam/tags/tagsmanager/tagsmanager.cpp:566
-#: digikam/tags/tagsmanager/tagsmanager.cpp:568
 msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-02 01:33+0000\n"
+"POT-Creation-Date: 2013-10-03 01:30+0000\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -2736,6 +2734,7 @@ msgid "&Shortcut:"
 msgstr ""
 
 #: digikam/tags/tageditdlg.cpp:207
+#: digikam/tags/tagsmanager/tagpropwidget.cpp:127
 msgid ""
 "<p><b>Note</b>: this shortcut can be used to assign or unassign tag to items."
 "</p>"
@@ -2802,12 +2801,13 @@ msgid "Delete Tag"
 msgstr "टैग मेटाव"
 
 #: digikam/tags/tagmodificationhelper.cpp:348
-#: digikam/tags/tagsmanager/tagsmanager.cpp:308
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Tag '%2' is assigned to one item. Do you want to continue?"
+#| msgid_plural "Tag '%2' is assigned to %1 items. Do you want to continue?"
 msgid ""
-"Tags '%1' has one or more subtags. Deleting this will also delete the subtag."
-"Do you want to continue?"
-msgstr ""
+"Tags '%1' have one or more subtags. Deleting them will also delete the "
+"subtags.Do you want to continue?"
+msgstr "टैग '%2' ह एक वस्तु मं संबंधित हे. का आप मन जारी रखना चाहथो?"
 
 #: digikam/tags/tagmodificationhelper.cpp:364
 #: digikam/tags/tagsmanager/tagsmanager.cpp:324
@@ -2895,12 +2895,6 @@ msgstr "कुछ नइ चुनव"
 msgid "Remove Tag from Images"
 msgstr "फाइल से डाटाबेस मं मेटाडाटा पढ़व"
 
-#: digikam/tags/tagsmanager/tagpropwidget.cpp:127
-msgid ""
-"<p><b>Note</b>: this shortcut can be usedto assign or unassign tag to items."
-"</p>"
-msgstr ""
-
 #: digikam/tags/tagsmanager/tagpropwidget.cpp:184
 msgid "Previous tags were changed. Save changes? "
 msgstr ""
@@ -2909,6 +2903,13 @@ msgstr ""
 #, fuzzy
 msgid "Tags Manager"
 msgstr "रंग प्रबंधन"
+
+#: digikam/tags/tagsmanager/tagsmanager.cpp:308
+#, kde-format
+msgid ""
+"Tags '%1' has one or more subtags. Deleting this will also delete the subtag."
+"Do you want to continue?"
+msgstr ""
 
 #: digikam/tags/tagsmanager/tagsmanager.cpp:431
 #: digikam/tags/tagsmanager/tagsmanager.cpp:449
@@ -2932,21 +2933,21 @@ msgstr ""
 #: digikam/tags/tagsmanager/tagsmanager.cpp:579
 #, fuzzy
 #| msgid "Create Tag From AddressBook"
-msgid "Create Tag from Addess Book"
+msgid "Create Tag from Address Book"
 msgstr "पतापुस्तिका से टैग बनाव"
 
 #: digikam/tags/tagsmanager/tagsmanager.cpp:593
-msgid "Add new tag to current tag. Current tag is last clicked tag"
+msgid "Add new tag to current tag. Current tag is last clicked tag."
 msgstr ""
 
 #: digikam/tags/tagsmanager/tagsmanager.cpp:596
 msgid ""
 "Delete selected items. Also work with multiple items, but won't delete the "
-"root tag"
+"root tag."
 msgstr ""
 
 #: digikam/tags/tagsmanager/tagsmanager.cpp:600
-msgid "Reset icon to selected tags. Works with multiple selection"
+msgid "Reset icon to selected tags. Works with multiple selection."
 msgstr ""
 
 #: digikam/tags/tagsmanager/tagsmanager.cpp:603
@@ -2962,7 +2963,7 @@ msgid "Selected items will be expanded"
 msgstr ""
 
 #: digikam/tags/tagsmanager/tagsmanager.cpp:610
-msgid "Delete selected tag(s) from images. Works with multiple selection "
+msgid "Delete selected tag(s) from images. Works with multiple selection."
 msgstr ""
 
 #: digikam/tags/tagsmanager/tagsmanager.cpp:640
@@ -2994,7 +2995,7 @@ msgid "Write Tags Metadata to Image."
 msgstr "हर एक फाइल मं मेटाडाटा लिखव"
 
 #: digikam/tags/tagsmanager/tagsmanager.cpp:657
-msgid "Read tags from Images into DatabaseExisting tags won't be affected"
+msgid "Read tags from Images into Database. Existing tags won't be affected"
 msgstr ""
 
 #: digikam/tags/tagsmanager/tagsmanager.cpp:660
@@ -3013,12 +3014,12 @@ msgstr "फाइल मन मं मेटाडाटा लिखत हे.
 
 #: digikam/tags/tagsmanager/tagsmanager.cpp:687
 msgid ""
-"Export all tags from Database to Nepomuk. Digikam with nepomuk support is "
-"required "
+"Export all tags from Database to Nepomuk. digiKam with Nepomuk support is "
+"required."
 msgstr ""
 
 #: digikam/tags/tagsmanager/tagsmanager.cpp:690
-msgid "Import tags from Nepomuk.Digikam with nepomuk support is required"
+msgid "Import tags from Nepomuk. digiKam with Nepomuk support is required."
 msgstr ""
 
 #: digikam/tags/tagsmanager/tagsmanager.cpp:716
@@ -16750,7 +16751,7 @@ msgstr ""
 
 #: utilities/imgqsort/qualityscandialog.cpp:433
 msgctxt "@info:tooltip"
-msgid "This will run quality sorting and compare the results "
+msgid "This will run quality sorting and compare the results."
 msgstr ""
 
 #: utilities/importui/backend/cameracontroller.cpp:422
@@ -20919,7 +20920,7 @@ msgstr ""
 
 #: utilities/setup/setupimagequalitysorter.cpp:107
 msgid ""
-"Enabled this option to assign automatically Pick Labels based on image "
+"Enable this option to assign automatically Pick Labels based on image "
 "quality."
 msgstr ""
 
