@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-08 05:46+0000\n"
+"POT-Creation-Date: 2013-10-07 05:28+0000\n"
 "PO-Revision-Date: 2009-03-01 11:33+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -662,7 +662,7 @@ msgstr "जनरेटेट कोड मं नीचे वाले क्�
 #: dialogs/classgenpage.cpp:391 dialogs/classifierlistpage.cpp:218
 #: dialogs/diagrampropertiespage.ui:307 dialogs/notedialog.cpp:38
 #: dialogs/objectnodedialog.cpp:197 dialogs/parmpropdlg.cpp:115
-#: dialogs/statedialog.cpp:140 dialogs/umlrolepropertiesbase.ui:140
+#: dialogs/statedialog.cpp:170 dialogs/umlrolepropertiesbase.ui:140
 msgid "Documentation"
 msgstr "कागद लिखना"
 
@@ -1139,23 +1139,23 @@ msgstr ""
 msgid "Not Yet Generated"
 msgstr "अभी नइ बना"
 
-#: codegenwizard/codegenstatuspage.cpp:159
+#: codegenwizard/codegenstatuspage.cpp:164
 msgid "Code Generated"
 msgstr "कोड बन गिस"
 
-#: codegenwizard/codegenstatuspage.cpp:163
+#: codegenwizard/codegenstatuspage.cpp:168
 msgid "Not Generated"
 msgstr "नइ बना"
 
-#: codegenwizard/codegenstatuspage.cpp:188
-#: codegenwizard/codegenstatuspage.cpp:218
+#: codegenwizard/codegenstatuspage.cpp:193
+#: codegenwizard/codegenstatuspage.cpp:223
 #: codeimpwizard/codeimpstatuspage.cpp:330
 #, fuzzy
 #| msgid "Cannot Open File"
 msgid "Cannot open file!"
 msgstr "फ़ाइल खोल नइ सकिस"
 
-#: codegenwizard/codegenstatuspage.cpp:208
+#: codegenwizard/codegenstatuspage.cpp:213
 msgid "Umbrello Code Generation - Logger Export"
 msgstr ""
 
@@ -1584,7 +1584,7 @@ msgstr "वर्ग नाम"
 #: dialogs/activitydialog.cpp:36 dialogs/activitydialog.cpp:145
 #: dialogs/assocgenpage.cpp:72 dialogs/classpropdlg.cpp:128
 #: dialogs/objectnodedialog.cpp:39 dialogs/parmpropdlg.cpp:71
-#: dialogs/statedialog.cpp:37 dialogs/statedialog.cpp:125
+#: dialogs/statedialog.cpp:37 dialogs/statedialog.cpp:122
 #: dialogs/umlviewdialog.cpp:40 listpopupmenu.cpp:619
 #: refactoring/refactoringassistant.cpp:455
 msgid "Properties"
@@ -1626,7 +1626,7 @@ msgid "General"
 msgstr "सामान्य"
 
 #: dialogs/activitydialog.cpp:141 dialogs/objectnodedialog.cpp:141
-#: dialogs/statedialog.cpp:121 dialogs/umlattributedialog.cpp:68
+#: dialogs/statedialog.cpp:118 dialogs/umlattributedialog.cpp:68
 #: dialogs/umlentityattributedialog.cpp:70 dialogs/umloperationdialog.cpp:88
 #: dialogs/umltemplatedialog.cpp:64
 msgid "General Properties"
@@ -1660,8 +1660,8 @@ msgstr "इनवोक काम (&I)"
 msgid "&Parameter activity node"
 msgstr "पैरामीटर सक्रियता नोड (&P)"
 
-#: dialogs/activitypage.cpp:58 dialogs/statedialog.cpp:163
-#: dialogs/statedialog.cpp:164
+#: dialogs/activitypage.cpp:58 dialogs/statedialog.cpp:193
+#: dialogs/statedialog.cpp:194
 msgid "Activities"
 msgstr "काम"
 
@@ -2307,7 +2307,7 @@ msgstr "सामान्य"
 msgid "Font"
 msgstr "फोंट"
 
-#: dialogs/classwizard.cpp:44 model_utils.cpp:452
+#: dialogs/classwizard.cpp:44 model_utils.cpp:457
 msgid "new_class"
 msgstr "नवा_वर्ग"
 
@@ -2941,31 +2941,75 @@ msgstr "अपने अपन सहेजव"
 msgid "Auto Layout Settings"
 msgstr "एंटिटी गुन सेटिंग"
 
-#: dialogs/statedialog.cpp:114
-msgctxt "initial state in statechart"
-msgid "Initial state"
-msgstr "सुरू के अवस्था"
-
-#: dialogs/statedialog.cpp:115
-msgctxt "state in statechart"
-msgid "State"
-msgstr "स्थिति"
-
-#: dialogs/statedialog.cpp:116
-msgctxt "end state in statechart"
-msgid "End state"
-msgstr "आखरी अवस्था"
-
-#: dialogs/statedialog.cpp:120
+#: dialogs/statedialog.cpp:117
 msgctxt "general page"
 msgid "General"
 msgstr "सामान्य"
 
-#: dialogs/statedialog.cpp:132
+#: dialogs/statedialog.cpp:131
+msgctxt "initial state in statechart"
+msgid "Initial state"
+msgstr "सुरू के अवस्था"
+
+#: dialogs/statedialog.cpp:134
+msgctxt "state in statechart"
+msgid "State"
+msgstr "स्थिति"
+
+#: dialogs/statedialog.cpp:137
+msgctxt "end state in statechart"
+msgid "End state"
+msgstr "आखरी अवस्था"
+
+#: dialogs/statedialog.cpp:140
+#, fuzzy
+#| msgid "Fork"
+msgctxt "fork state in statechart"
+msgid "Fork"
+msgstr "फार्क"
+
+#: dialogs/statedialog.cpp:143
+#, fuzzy
+#| msgctxt "join states"
+#| msgid "Join"
+msgctxt "join state in statechart"
+msgid "Join"
+msgstr "सामिल हों"
+
+#: dialogs/statedialog.cpp:146
+#, fuzzy
+#| msgid "Junction"
+msgctxt "junction state in statechart"
+msgid "Junction"
+msgstr "जंक्सन"
+
+#: dialogs/statedialog.cpp:149
+#, fuzzy
+#| msgid "Deep History"
+msgctxt "deep history state in statechart"
+msgid "DeepHistory"
+msgstr "डीप इतिहास"
+
+#: dialogs/statedialog.cpp:152
+#, fuzzy
+#| msgid "Shallow History"
+msgctxt "shallow history state in statechart"
+msgid "ShallowHistory"
+msgstr "सैलो इतिहास"
+
+#: dialogs/statedialog.cpp:155
+#, fuzzy
+#| msgctxt "state choice"
+#| msgid "Choice"
+msgctxt "choice state in statechart"
+msgid "Choice"
+msgstr "चुनाव"
+
+#: dialogs/statedialog.cpp:162
 msgid "State type:"
 msgstr "अवस्था किसिमः"
 
-#: dialogs/statedialog.cpp:137
+#: dialogs/statedialog.cpp:167
 msgid "State name:"
 msgstr "अवस्था नामः"
 
@@ -3360,8 +3404,8 @@ msgstr "जऊन नाम आप मन भरे हो  वो अवैध 
 msgid "The name you have entered is not unique."
 msgstr "जऊन नाम आप मन भरे हो  वो बेजोड़ नइ हे."
 
-#: dialogs/umlviewdialog.cpp:233 umldoc.cpp:1416 umllistview.cpp:2314
-#: umllistview.cpp:2321 umllistview.cpp:2586
+#: dialogs/umlviewdialog.cpp:233 umldoc.cpp:1416 umllistview.cpp:2325
+#: umllistview.cpp:2332 umllistview.cpp:2597
 msgid "Name Not Unique"
 msgstr "नाम बेजोड़ नइ हे"
 
@@ -4085,88 +4129,88 @@ msgid ""
 "target directory"
 msgstr ""
 
-#: model_utils.cpp:454
+#: model_utils.cpp:459
 msgid "new_actor"
 msgstr "नवा_अभिनेता"
 
-#: model_utils.cpp:456
+#: model_utils.cpp:461
 msgid "new_usecase"
 msgstr "नवा_यूजकेस"
 
-#: model_utils.cpp:458
+#: model_utils.cpp:463
 msgid "new_package"
 msgstr "नवा_पैकेज"
 
-#: model_utils.cpp:460
+#: model_utils.cpp:465
 msgid "new_component"
 msgstr "नवा_अवयव"
 
-#: model_utils.cpp:462
+#: model_utils.cpp:467
 msgid "new_node"
 msgstr "नवा_नोड"
 
-#: model_utils.cpp:464
+#: model_utils.cpp:469
 msgid "new_artifact"
 msgstr "नवा_सिल्पतथ्य"
 
-#: model_utils.cpp:466
+#: model_utils.cpp:471
 msgid "new_interface"
 msgstr "नवा_इंटरफेस"
 
-#: model_utils.cpp:468
+#: model_utils.cpp:473
 msgid "new_datatype"
 msgstr "नवा_डाटाटाइप"
 
-#: model_utils.cpp:470
+#: model_utils.cpp:475
 msgid "new_enum"
 msgstr "नवा_ईन्यूम"
 
-#: model_utils.cpp:472
+#: model_utils.cpp:477
 msgid "new_entity"
 msgstr "नवा_एंटिटी"
 
-#: model_utils.cpp:474
+#: model_utils.cpp:479
 msgid "new_folder"
 msgstr "नवा_फोल्डर"
 
-#: model_utils.cpp:476 umlcanvasobject.cpp:193
+#: model_utils.cpp:481 umlcanvasobject.cpp:193
 msgid "new_association"
 msgstr "नवा_सम्बद्धता"
 
-#: model_utils.cpp:478
+#: model_utils.cpp:483
 msgid "new_category"
 msgstr "नवा_वर्ग"
 
-#: model_utils.cpp:480
+#: model_utils.cpp:485
 msgid "new_object"
 msgstr "नवा_ओब्जैक्ट"
 
-#: model_utils.cpp:881
+#: model_utils.cpp:886
 msgid "OK"
 msgstr "ठीक"
 
-#: model_utils.cpp:881
+#: model_utils.cpp:886
 msgctxt "parse status"
 msgid "Empty"
 msgstr "खाली"
 
-#: model_utils.cpp:881
+#: model_utils.cpp:886
 msgid "Malformed argument"
 msgstr "खराब आर्गुमेंट"
 
-#: model_utils.cpp:882
+#: model_utils.cpp:887
 msgid "Unknown argument type"
 msgstr "अग्यात आर्गुमेंट किसिम"
 
-#: model_utils.cpp:882
+#: model_utils.cpp:887
 msgid "Illegal method name"
 msgstr "अवैध विधि नाम"
 
-#: model_utils.cpp:883
+#: model_utils.cpp:888
 msgid "Unknown return type"
 msgstr "अग्यात रिटर्न किसिम"
 
-#: model_utils.cpp:883
+#: model_utils.cpp:888
 msgid "Unspecified error"
 msgstr "अ-निरधारित गलती"
 
@@ -5684,13 +5728,13 @@ msgid "There was a problem loading file: %1"
 msgstr "फाइल लोड करे मं समस्या आईः %1"
 
 #: umldoc.cpp:620 umldoc.cpp:630 umldoc.cpp:647 umldoc.cpp:680 umldoc.cpp:698
-#: umllistview.cpp:553 umlviewimageexportermodel.cpp:257
+#: umllistview.cpp:564 umlviewimageexportermodel.cpp:257
 #, kde-format
 msgid "There was a problem saving file: %1"
 msgstr "फाइल सहेजे मं गलती होइसः %1"
 
 #: umldoc.cpp:620 umldoc.cpp:630 umldoc.cpp:647 umldoc.cpp:680 umldoc.cpp:698
-#: umldoc.cpp:705 umllistview.cpp:554
+#: umldoc.cpp:705 umllistview.cpp:565
 msgid "Save Error"
 msgstr "सहेजे मं गलती"
 
@@ -5763,7 +5807,7 @@ msgctxt "renaming child uml object"
 msgid "Name"
 msgstr "नांव"
 
-#: umldoc.cpp:1415 umllistview.cpp:2313
+#: umldoc.cpp:1415 umllistview.cpp:2324
 msgid ""
 "The name you entered was not unique.\n"
 "Is this what you wanted?"
@@ -5771,11 +5815,11 @@ msgstr ""
 "जऊन नाम आप मन घुसाय हो बेजोड़ नइ हे.\n"
 "का यही आप मन चाहथो ?"
 
-#: umldoc.cpp:1416 umllistview.cpp:2314
+#: umldoc.cpp:1416 umllistview.cpp:2325
 msgid "Use Name"
 msgstr "नाम उपयोग करव"
 
-#: umldoc.cpp:1416 umllistview.cpp:2314
+#: umldoc.cpp:1416 umllistview.cpp:2325
 msgid "Enter New Name"
 msgstr "नवा नाम भरव"
 
@@ -5809,47 +5853,47 @@ msgstr "आरेख लोड करत हे..."
 msgid "/autosave%1"
 msgstr "/अपने अपन-सहेजव%1"
 
-#: umllistview.cpp:514
+#: umllistview.cpp:525
 msgid "Externalize Folder"
 msgstr "एक्सटर्नलाइज फोल्डर"
 
-#: umllistview.cpp:535
+#: umllistview.cpp:546
 #, kde-format
 msgid "Folder %1 must be relative to the main model directory, %2."
 msgstr ""
 
-#: umllistview.cpp:536
+#: umllistview.cpp:547
 #, fuzzy
 #| msgid "Paste Error"
 msgid "Path Error"
 msgstr "चिपकाने मं गलती"
 
-#: umllistview.cpp:544
+#: umllistview.cpp:555
 #, kde-format
 msgid ""
 "File %1 already exists!\n"
 "The existing file will be overwritten."
 msgstr ""
 
-#: umllistview.cpp:545
+#: umllistview.cpp:556
 #, fuzzy
 #| msgid "File Already Exists"
 msgid "File Exist"
 msgstr "फाइल पहिली से ही अस्तित्व मं हे. "
 
-#: umllistview.cpp:585
+#: umllistview.cpp:596
 msgid "Enter Model Name"
 msgstr "माडल नाम भरव"
 
-#: umllistview.cpp:586
+#: umllistview.cpp:597
 msgid "Enter the new name of the model:"
 msgstr "माडल के नवा नाम भरव:"
 
-#: umllistview.cpp:1324
+#: umllistview.cpp:1335
 msgid "Views"
 msgstr "दृस्य"
 
-#: umllistview.cpp:2303
+#: umllistview.cpp:2314
 msgid ""
 "The name you entered was invalid.\n"
 "Creation process has been canceled."
@@ -5857,11 +5901,11 @@ msgstr ""
 "जऊन नाम आप मन घुसाय हो अवैध हे.\n"
 "बनाए के काम खारिज करे गे हे."
 
-#: umllistview.cpp:2304 umllistviewitem.cpp:696
+#: umllistview.cpp:2315 umllistviewitem.cpp:696
 msgid "Name Not Valid"
 msgstr "नाम वैध नइ हे"
 
-#: umllistview.cpp:2320 umllistview.cpp:2585
+#: umllistview.cpp:2331 umllistview.cpp:2596
 msgid ""
 "The name you entered was not unique.\n"
 "Creation process has been canceled."
@@ -5869,20 +5913,20 @@ msgstr ""
 "जऊन नाम आप मन घुसाय हो बेजोड़ नइ हे.\n"
 "बनाए के काम खारिज करे गे."
 
-#: umllistview.cpp:2543 umllistview.cpp:2560 umllistview.cpp:2575
-#: umllistview.cpp:2605
+#: umllistview.cpp:2554 umllistview.cpp:2571 umllistview.cpp:2586
+#: umllistview.cpp:2616
 msgid "Creation canceled"
 msgstr "बनाइस जाना खारिज"
 
-#: umllistview.cpp:2863
+#: umllistview.cpp:2874
 msgid "Loading listview..."
 msgstr "सूचीदृस्य लोड करत हे..."
 
-#: umllistview.cpp:3247
+#: umllistview.cpp:3258
 msgid "The folder must be emptied before it can be deleted."
 msgstr "फोल्डर ल मिटा सकें एखर बर पहिली एला खाली करना होही."
 
-#: umllistview.cpp:3248
+#: umllistview.cpp:3259
 msgid "Folder Not Empty"
 msgstr "फोल्डर खाली नइ हे"
 
