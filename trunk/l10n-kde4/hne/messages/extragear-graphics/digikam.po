@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-11-27 01:27+0000\n"
+"POT-Creation-Date: 2013-11-28 01:27+0000\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -6524,6 +6524,7 @@ msgid "Automatic Adjustment"
 msgstr "समायोजन:"
 
 #: imageplugins/transform/freerotationtool.cpp:223
+#: libs/widgets/metadata/metadatawidget.cpp:146
 #: utilities/importui/main/importui.cpp:281
 msgid "Settings"
 msgstr "सेटिंग"
@@ -8053,6 +8054,7 @@ msgid "Shared Libraries and Components Information"
 msgstr "साझा जानकारी अउ एलबम गुन संपादित करव."
 
 #: libs/dialogs/infodlg.cpp:74 libs/widgets/common/dhistoryview.cpp:134
+#: libs/widgets/metadata/metadatawidget.cpp:163
 msgid "Copy to Clipboard"
 msgstr "क्लिपबोर्ड मं नकल करव"
 
@@ -12931,20 +12933,20 @@ msgstr "%1x%2 (%3Mpx)"
 msgid "Standard EXIF Tags"
 msgstr "मानक एक्सइफ टैग्स"
 
-#: libs/widgets/metadata/exifwidget.cpp:153
-#: libs/widgets/metadata/iptcwidget.cpp:145
-#: libs/widgets/metadata/makernotewidget.cpp:148
-#: libs/widgets/metadata/xmpwidget.cpp:164
+#: libs/widgets/metadata/exifwidget.cpp:159
+#: libs/widgets/metadata/iptcwidget.cpp:151
+#: libs/widgets/metadata/makernotewidget.cpp:154
+#: libs/widgets/metadata/xmpwidget.cpp:170
 msgid "No description available"
 msgstr "कोई वर्नन नइ मिलत"
 
-#: libs/widgets/metadata/exifwidget.cpp:161
-#: libs/widgets/metadata/makernotewidget.cpp:156
+#: libs/widgets/metadata/exifwidget.cpp:167
+#: libs/widgets/metadata/makernotewidget.cpp:162
 msgid "EXIF File to Save"
 msgstr "सहेजे बर एक्जइफ फाइल"
 
-#: libs/widgets/metadata/exifwidget.cpp:162
-#: libs/widgets/metadata/makernotewidget.cpp:157
+#: libs/widgets/metadata/exifwidget.cpp:168
+#: libs/widgets/metadata/makernotewidget.cpp:163
 msgid "EXIF binary Files (*.exif)"
 msgstr "एक्जइफ बाइनरी फाइल मन ल (*.exif)"
 
@@ -12952,11 +12954,11 @@ msgstr "एक्जइफ बाइनरी फाइल मन ल (*.exif)"
 msgid "IPTC Records"
 msgstr "आईपीटीसी रेकार्ड"
 
-#: libs/widgets/metadata/iptcwidget.cpp:153
+#: libs/widgets/metadata/iptcwidget.cpp:159
 msgid "IPTC File to Save"
 msgstr "सहेजे बर आईपीटीसी फाइल"
 
-#: libs/widgets/metadata/iptcwidget.cpp:154
+#: libs/widgets/metadata/iptcwidget.cpp:160
 msgid "IPTC binary Files (*.iptc)"
 msgstr "आईपीटीसी बाइनरी फाइल मन ल (*.iptc)"
 
@@ -13120,64 +13122,67 @@ msgstr "कलेन्डर"
 msgid "Default"
 msgstr "डिफाल्ट"
 
-#: libs/widgets/metadata/metadatawidget.cpp:127
-msgid "Switch the tags view to a full list"
-msgstr "टैग दृस्य ल पूरा सूची मं स्विच करव"
-
 #: libs/widgets/metadata/metadatawidget.cpp:128
-msgid "Full list"
-msgstr "पूरा सूची"
-
-#: libs/widgets/metadata/metadatawidget.cpp:135
 #, fuzzy
-#| msgid "Switch the tags view to a simple human-readable list"
-msgid ""
-"Switch the tags view to a custom human-readable list. To customize the tag "
-"filter list, go to the Metadata configuration panel."
-msgstr "एक सामान्य मनुस्य से पढ़िस जा सके जा सके सूची मं टैग दृस्य स्विच करव"
+#| msgid "Rating Filter"
+msgid "Tags filter options"
+msgstr "फिल्टर रेट करव"
 
-#: libs/widgets/metadata/metadatawidget.cpp:137
+#: libs/widgets/metadata/metadatawidget.cpp:131
 #, fuzzy
-msgid "Custom list"
-msgstr "मनमाफिक"
+#| msgid "Save metadata"
+msgid "Apply tags filter over metadata."
+msgstr "मेटाडाटा सहेजव"
+
+#: libs/widgets/metadata/metadatawidget.cpp:136
+#, fuzzy
+#| msgid "Noise filter:"
+msgid "No filter"
+msgstr "नाइस फिल्टर:"
 
 #: libs/widgets/metadata/metadatawidget.cpp:139
 #, fuzzy
-#| msgid "Switch the tags view to a simple human-readable list"
-msgid "Switch the tags view to a human-readable list"
-msgstr "एक सामान्य मनुस्य से पढ़िस जा सके जा सके सूची मं टैग दृस्य स्विच करव"
+#| msgid "Photo Flash"
+msgid "Photograph"
+msgstr "फोटो फ्लैस"
 
-#: libs/widgets/metadata/metadatawidget.cpp:140
-msgid "Human-readable list"
-msgstr ""
+#: libs/widgets/metadata/metadatawidget.cpp:142
+#: utilities/importui/widgets/albumcustomizer.cpp:116
+#: utilities/queuemanager/basetools/transform/rotate.cpp:106
+#, fuzzy
+msgid "Custom"
+msgstr "मनमाफिक"
+
+#: libs/widgets/metadata/metadatawidget.cpp:155
+#: utilities/queuemanager/views/workflowlist.cpp:98
+#, fuzzy
+#| msgid "&Tools"
+msgid "Tools"
+msgstr "औजार (&T)"
+
+#: libs/widgets/metadata/metadatawidget.cpp:158
+#, fuzzy
+#| msgid "Color Space"
+msgid "Run tool over metadata tags."
+msgstr "रंग जगह"
 
 #: libs/widgets/metadata/metadatawidget.cpp:161
-msgid "Save metadata to a binary file"
-msgstr "मेटाडाटा ल बाइनरी फाइल मं सहेजव"
+#, fuzzy
+#| msgid "Movie files"
+msgid "Save in file"
+msgstr "मूवी फाइल मन ल"
 
 #: libs/widgets/metadata/metadatawidget.cpp:162
-msgid "Save metadata"
-msgstr "मेटाडाटा सहेजव"
+#, fuzzy
+msgid "Print"
+msgstr "फोटू छापव..."
 
-#: libs/widgets/metadata/metadatawidget.cpp:167
-msgid "Print metadata to printer"
-msgstr "मेटा डाटा ल प्रिंटर मं छापव"
-
-#: libs/widgets/metadata/metadatawidget.cpp:168
-msgid "Print metadata"
-msgstr "मेटा डाटा ल छापव"
-
-#: libs/widgets/metadata/metadatawidget.cpp:173
-#: libs/widgets/metadata/metadatawidget.cpp:174
-msgid "Copy metadata to clipboard"
-msgstr "मेटा डाटा ल क्लिपबोर्ड मं नकल करव"
-
-#: libs/widgets/metadata/metadatawidget.cpp:336
+#: libs/widgets/metadata/metadatawidget.cpp:326
 #, kde-format
 msgid "File name: %1 (%2)"
 msgstr "फाइल नाम: %1 (%2)"
 
-#: libs/widgets/metadata/metadatawidget.cpp:383
+#: libs/widgets/metadata/metadatawidget.cpp:373
 #, kde-format
 msgid "<p><big><big><b>File name: %1 (%2)</b></big></big>"
 msgstr "<p><big><big><b>फाइल नाम: %1 (%2)</b></big></big>"
@@ -13186,11 +13191,11 @@ msgstr "<p><big><big><b>फाइल नाम: %1 (%2)</b></big></big>"
 msgid "XMP Schema"
 msgstr "एक्सएमपी योजना"
 
-#: libs/widgets/metadata/xmpwidget.cpp:172
+#: libs/widgets/metadata/xmpwidget.cpp:178
 msgid "XMP File to Save"
 msgstr "सहेजे बर एक्सएमपी फाइल"
 
-#: libs/widgets/metadata/xmpwidget.cpp:173
+#: libs/widgets/metadata/xmpwidget.cpp:179
 msgid "XMP text Files (*.xmp)"
 msgstr "एक्सएमपी पाठ फाइल मन ल (*.xmp)"
 
@@ -17476,12 +17481,6 @@ msgstr "पूरा पाठ"
 msgid "Local Settings"
 msgstr "लोकल सेटिंग"
 
-#: utilities/importui/widgets/albumcustomizer.cpp:116
-#: utilities/queuemanager/basetools/transform/rotate.cpp:106
-#, fuzzy
-msgid "Custom"
-msgstr "मनमाफिक"
-
 #: utilities/importui/widgets/albumcustomizer.cpp:135
 msgid "Set how digiKam creates albums automatically when downloading."
 msgstr ""
@@ -19001,12 +19000,6 @@ msgstr "<big><b>फाइल गुन</b></big>"
 #| msgid "Description"
 msgid "Description:"
 msgstr "वर्नन"
-
-#: utilities/queuemanager/views/workflowlist.cpp:98
-#, fuzzy
-#| msgid "&Tools"
-msgid "Tools"
-msgstr "औजार (&T)"
 
 #: utilities/queuemanager/views/workflowlist.cpp:120
 msgid ""
@@ -22288,6 +22281,43 @@ msgctxt ""
 msgid "Giving a presentation"
 msgstr ""
 
+#~ msgid "Switch the tags view to a full list"
+#~ msgstr "टैग दृस्य ल पूरा सूची मं स्विच करव"
+
+#~ msgid "Full list"
+#~ msgstr "पूरा सूची"
+
+#, fuzzy
+#~| msgid "Switch the tags view to a simple human-readable list"
+#~ msgid ""
+#~ "Switch the tags view to a custom human-readable list. To customize the "
+#~ "tag filter list, go to the Metadata configuration panel."
+#~ msgstr "एक सामान्य मनुस्य से पढ़िस जा सके जा सके सूची मं टैग दृस्य स्विच करव"
+
+#, fuzzy
+#~ msgid "Custom list"
+#~ msgstr "मनमाफिक"
+
+#, fuzzy
+#~| msgid "Switch the tags view to a simple human-readable list"
+#~ msgid "Switch the tags view to a human-readable list"
+#~ msgstr "एक सामान्य मनुस्य से पढ़िस जा सके जा सके सूची मं टैग दृस्य स्विच करव"
+
+#~ msgid "Save metadata to a binary file"
+#~ msgstr "मेटाडाटा ल बाइनरी फाइल मं सहेजव"
+
+#~ msgid "Save metadata"
+#~ msgstr "मेटाडाटा सहेजव"
+
+#~ msgid "Print metadata to printer"
+#~ msgstr "मेटा डाटा ल प्रिंटर मं छापव"
+
+#~ msgid "Print metadata"
+#~ msgstr "मेटा डाटा ल छापव"
+
+#~ msgid "Copy metadata to clipboard"
+#~ msgstr "मेटा डाटा ल क्लिपबोर्ड मं नकल करव"
+
 #, fuzzy
 #~| msgid "Unknown"
 #~ msgid "Unknow"
@@ -22826,11 +22856,6 @@ msgstr ""
 #~| msgid "Add film grain"
 #~ msgid "A tool to add film grain"
 #~ msgstr "फिल्म ग्रेन जोड़व"
-
-#, fuzzy
-#~| msgid "Color Space"
-#~ msgid "A tool to rotate images."
-#~ msgstr "रंग जगह"
 
 #, fuzzy
 #~ msgid "Misc Options"
