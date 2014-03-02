@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kontact\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-03-01 01:41+0000\n"
+"POT-Creation-Date: 2014-03-02 02:50+0000\n"
 "PO-Revision-Date: 2009-02-28 14:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -316,8 +316,8 @@ msgctxt "@info:whatsthis"
 msgid "You will be presented with a dialog where you can add a new popup note."
 msgstr ""
 
-#: plugins/knotes/knotes_part.cpp:121 plugins/knotes/knotes_part.cpp:600
-#: plugins/knotes/knotes_part.cpp:602 plugins/knotes/knotes_part.cpp:771
+#: plugins/knotes/knotes_part.cpp:121 plugins/knotes/knotes_part.cpp:613
+#: plugins/knotes/knotes_part.cpp:615 plugins/knotes/knotes_part.cpp:786
 #, fuzzy
 msgctxt "@action:inmenu"
 msgid "Edit..."
@@ -443,31 +443,35 @@ msgstr ""
 msgid "Unlock"
 msgstr ""
 
-#: plugins/knotes/knotes_part.cpp:321
+#: plugins/knotes/knotes_part.cpp:233
+msgid "Set Focus to Quick Search"
+msgstr ""
+
+#: plugins/knotes/knotes_part.cpp:334
 #, fuzzy
 #| msgid "To print notes, first select the notes to print from the list."
 msgctxt "@info"
 msgid "To print notes, first select the notes to print from the list."
 msgstr "नोट्स छापे बर, सूची मं से छापे जाय वाले नोट्स ल पहिली चुनव."
 
-#: plugins/knotes/knotes_part.cpp:322
+#: plugins/knotes/knotes_part.cpp:335
 #, fuzzy
 #| msgid "Print Popup Notes"
 msgctxt "@title:window"
 msgid "Print Popup Notes"
 msgstr "पापअप नोट्स छापव"
 
-#: plugins/knotes/knotes_part.cpp:366
+#: plugins/knotes/knotes_part.cpp:379
 msgid "Note was not created."
 msgstr ""
 
-#: plugins/knotes/knotes_part.cpp:366
+#: plugins/knotes/knotes_part.cpp:379
 #, fuzzy
 #| msgid "Read Popup Note: \"%1\""
 msgid "Create new note"
 msgstr "पापअप नोट पढ़े: \"%1\""
 
-#: plugins/knotes/knotes_part.cpp:388
+#: plugins/knotes/knotes_part.cpp:401
 #: plugins/knotes/knotesselectdeletenotesdialog.cpp:62
 #, fuzzy, kde-format
 #| msgid "Do you really want to delete this note?"
@@ -478,7 +482,7 @@ msgid_plural "Do you really want to delete these %1 notes?"
 msgstr[0] "का आप मन सचमुच ए टिप्पनी ल मिटाना चाहथो?"
 msgstr[1] "का आप मन सचमुच %1 टिप्पनी ल मिटाना चाहथो?"
 
-#: plugins/knotes/knotes_part.cpp:390
+#: plugins/knotes/knotes_part.cpp:403
 #: plugins/knotes/knotesselectdeletenotesdialog.cpp:54
 #, fuzzy
 #| msgid "Confirm Delete"
@@ -486,41 +490,41 @@ msgctxt "@title:window"
 msgid "Confirm Delete"
 msgstr "मिटाना पुस्टि करव"
 
-#: plugins/knotes/knotes_part.cpp:577
+#: plugins/knotes/knotes_part.cpp:590
 #, fuzzy
 #| msgid "Read Popup Note: \"%1\""
 msgctxt "@title:window"
 msgid "Rename Popup Note"
 msgstr "पापअप नोट पढ़े: \"%1\""
 
-#: plugins/knotes/knotes_part.cpp:578
+#: plugins/knotes/knotes_part.cpp:591
 #, fuzzy
 #| msgid "Name:"
 msgctxt "@label:textbox"
 msgid "New Name:"
 msgstr "नाम:"
 
-#: plugins/knotes/knotes_part.cpp:600 plugins/knotes/knotes_part.cpp:771
+#: plugins/knotes/knotes_part.cpp:613 plugins/knotes/knotes_part.cpp:786
 #, fuzzy
 #| msgid "New Popup Note..."
 msgid "Show Note..."
 msgstr "नवा पाप अप नोट..."
 
-#: plugins/knotes/knotes_part.cpp:629
+#: plugins/knotes/knotes_part.cpp:642
 #, fuzzy
 #| msgid "Meeting"
 msgid "Settings"
 msgstr "बैठक"
 
-#: plugins/knotes/knotes_part.cpp:723
+#: plugins/knotes/knotes_part.cpp:736
 msgid "Save note as plain text"
 msgstr ""
 
-#: plugins/knotes/knotes_part.cpp:727
+#: plugins/knotes/knotes_part.cpp:740
 msgid "Save As"
 msgstr ""
 
-#: plugins/knotes/knotes_part.cpp:743
+#: plugins/knotes/knotes_part.cpp:756
 #, kde-format
 msgid ""
 "<qt>A file named <b>%1</b> already exists.<br />Are you sure you want to "
@@ -714,6 +718,12 @@ msgstr "नाम:"
 #, fuzzy
 #| msgid "Print Selected Notes..."
 msgid "Search notes..."
+msgstr "चुने गे नोट्स छापव..."
+
+#: plugins/knotes/knoteslistwidgetsearchline.cpp:38
+#, fuzzy, kde-format
+#| msgid "Print Selected Notes..."
+msgid "Search notes...<%1>"
 msgstr "चुने गे नोट्स छापव..."
 
 #: plugins/knotes/knotesselectdeletenotesdialog.cpp:43
@@ -2677,7 +2687,7 @@ msgctxt "@title:window Plugin dependent window title"
 msgid "%1 - Kontact"
 msgstr "%1 - कान्टेक्ट"
 
-#: src/mainwindow.cpp:1234
+#: src/mainwindow.cpp:1237
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid ""
@@ -2703,7 +2713,7 @@ msgstr ""
 "tr></table><p style=\"margin-bottom: 0px\"> <a href=\"%24\">ये परिचय ल छोड़व</"
 "a></p>"
 
-#: src/mainwindow.cpp:1247
+#: src/mainwindow.cpp:1250
 #, fuzzy
 msgctxt "@item:intext"
 msgid ""
@@ -2712,40 +2722,40 @@ msgstr ""
 "कान्टेक्ट आप मन के ईमेल, पतापुस्तिका, कलेन्डर, काम सूची अउ दुसरा घलोक अउ चीज मन ल "
 "सम्हालथे ."
 
-#: src/mainwindow.cpp:1253
+#: src/mainwindow.cpp:1256
 #, fuzzy
 #| msgid "Read Manual"
 msgctxt "@item:intext"
 msgid "Read Manual"
 msgstr "मैनुअल पढ़व"
 
-#: src/mainwindow.cpp:1254
+#: src/mainwindow.cpp:1257
 #, fuzzy
 #| msgid "Learn more about Kontact and its components"
 msgctxt "@item:intext"
 msgid "Learn more about Kontact and its components"
 msgstr "कान्टेक्ट अउ एखर अवयव मन परिचय अउ अधिक जानें"
 
-#: src/mainwindow.cpp:1260
+#: src/mainwindow.cpp:1263
 #, fuzzy
 #| msgid "Visit Kontact Website"
 msgctxt "@item:intext"
 msgid "Visit Kontact Website"
 msgstr "कान्टेक्ट वेबसाइट मं जाव"
 
-#: src/mainwindow.cpp:1261
+#: src/mainwindow.cpp:1264
 #, fuzzy
 #| msgid "Access online resources and tutorials"
 msgctxt "@item:intext"
 msgid "Access online resources and tutorials"
 msgstr "आनलाइन संसाधन मन अउ सिक्छनपाठ मं पहुंचें"
 
-#: src/mainwindow.cpp:1267
+#: src/mainwindow.cpp:1270
 msgctxt "@item:intext"
 msgid "Setup your Accounts"
 msgstr ""
 
-#: src/mainwindow.cpp:1268
+#: src/mainwindow.cpp:1271
 #, fuzzy
 #| msgid "Prepare Kontact for use in corporate networks"
 msgctxt "@item:intext"
