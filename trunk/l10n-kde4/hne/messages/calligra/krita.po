@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-06 01:29+0000\n"
+"POT-Creation-Date: 2014-05-09 08:42+0000\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -52,9 +52,9 @@ msgstr ""
 msgid "(c) 2014 The Krita team.\n"
 msgstr "(c) 1999-2008 केरिता टोली.\n"
 
-#. i18n: ectx: property (text), widget (QLineEdit, lineEdit_2)
+#. i18n: ectx: property (text), widget (QLineEdit, txtAuthor)
 #: crashreporter/main.cpp:62
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:745
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:689
 #: ui/kis_aboutdata.h:57
 msgid "Boudewijn Rempt"
 msgstr "बाउदविन रेम्प्ट"
@@ -3089,31 +3089,31 @@ msgstr "दृस्य"
 msgid "&Remove Layer"
 msgstr "परत मेटाव"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:207
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:210
 #, fuzzy
 msgid "&Properties..."
 msgstr "गुन..."
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:224
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:228
 #, fuzzy
 #| msgid "Selection mode:"
 msgid "&Select Opaque"
 msgstr "चयन मोड:"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:459
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:469
 #: ui/kis_layer_manager.cc:284
 msgid "&Merge with Layer Below"
 msgstr "निम्न परत के साथ मिलाव (&M)"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:463
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:473
 #, fuzzy
 #| msgid "&Invert"
 msgid "&Convert"
 msgstr "उलटव (&I)"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
 #: plugins/extensions/dockers/defaultdockers/kis_palette_docker.cc:38
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:68
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:61
 msgid "Palettes"
 msgstr "रंगदानियाँ"
 
@@ -3586,9 +3586,9 @@ msgstr "आगू तरफ के रंग"
 msgid "Add color"
 msgstr "नवा रंग जोड़व..."
 
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
 #: plugins/extensions/dockers/patterndocker/patterndocker_dock.cpp:37
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:73
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:66
 #: ui/kis_control_frame.cpp:151
 msgid "Patterns"
 msgstr "पैटर्न"
@@ -8076,9 +8076,9 @@ msgid "Save brush:"
 msgstr "सुमी-ई ब्रस"
 
 #. i18n: ectx: property (text), widget (QPushButton, saveBrush)
-#. i18n: ectx: property (text), widget (QPushButton, pushButton_12)
+#. i18n: ectx: property (text), widget (QPushButton, bnSave)
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:121
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:879
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:823
 #: ui/widgets/kis_workspace_chooser.cpp:89
 #, fuzzy
 #| msgid "Wave"
@@ -9458,101 +9458,79 @@ msgstr "संतृप्ति"
 msgid "Gravity:"
 msgstr "ग्रेविटी"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgResourceManager)
-#: plugins/paintops/resourcemanager/dlg_resourcemanager.cpp:32
-#: plugins/paintops/resourcemanager/wdg_resourcemanager.ui:14
-#, fuzzy
-#| msgid "&Resources"
-msgid "Manage Resources"
-msgstr "संसाधन (&R)"
-
-#. i18n: ectx: property (windowTitle), widget (QDialog, KoBundleCreationWidget)
+#. i18n: ectx: property (windowTitle), widget (QWidget, KoBundleCreationWidget)
 #: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:20
 msgid "New Bundle..."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, bundleName)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:42
+#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:29
 #, fuzzy
 #| msgid "Layer name:"
 msgid "Bundle Name "
 msgstr "परत के नाम:"
 
-#. i18n: ectx: property (text), widget (QPushButton, pushButton_6)
-#. i18n: ectx: property (text), widget (QCheckBox, detailsBox)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:67
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:434
-#: ui/kis_palette_manager.cpp:126
-#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:60
-msgid "Details"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: ectx: property (text), widget (QLabel, author)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:88
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:783
+#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:39
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:727
 #: ui/dialogs/kis_dlg_preferences.cc:701
 msgid "Author"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QLabel, website)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:101
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:712
+#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:59
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:656
 msgid "Website"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: ectx: property (text), widget (QLabel, license)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:108
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:759
+#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:73
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:703
 msgid "License"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, description)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:115
+#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:87
 #, fuzzy
 #| msgid "Description:"
 msgid "Description"
 msgstr "वर्ननः"
 
-#. i18n: ectx: property (text), widget (QPushButton, okButton)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:162
-#, fuzzy
-#| msgid "&OK"
-msgid "OK"
-msgstr "ठीक (&O)"
-
-#. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:175
-#: ui/input/kis_tool_invocation_action.cpp:51 ui/kis_view2.cpp:569
-msgid "Cancel"
-msgstr " खारिज करव"
-
-#. i18n: ectx: property (windowTitle), widget (QMainWindow, KoResourceManagerWidget)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:14
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:45
 #, fuzzy
 #| msgid "&Resources"
-msgid "Resource Manager"
+msgid "Manage Resources"
 msgstr "संसाधन (&R)"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
 #. i18n: ectx: property (text), item, widget (QComboBox, m_colorLimitation)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:43
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:1053
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:86
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:36
 #: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:150
 msgid "All"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:48
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:90
+msgid "Name"
+msgstr "नांव"
+
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:94
+#, fuzzy
+#| msgid "Filename"
+msgid "Filename"
+msgstr "फाइलनाम"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:41
 msgid "Bundles"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbRemoveBrushes)
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:53
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:46
 #: ui/forms/wdgdlgblacklistcleanup.ui:113
 #, fuzzy
 #| msgid "Brush"
@@ -9560,213 +9538,144 @@ msgid "Brushes"
 msgstr "ब्रुस"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbRemoveGradients)
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:58
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:51
 #: ui/forms/wdgdlgblacklistcleanup.ui:73 ui/kis_control_frame.cpp:87
 #: ui/kis_control_frame.cpp:88 ui/kis_control_frame.cpp:188
 msgid "Gradients"
 msgstr "अनुपात"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:63
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:56
 #, fuzzy
 #| msgid "Edit presets"
 msgid "Pt. Presets"
 msgstr "प्रीसेट संपादित करव"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbRemoveWorkspaces)
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:78
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:71
 #: ui/forms/wdgdlgblacklistcleanup.ui:26 ui/kis_paintop_box.cc:253
 #, fuzzy
 #| msgid "Colorspace"
 msgid "Workspaces"
 msgstr "कलरस्पेस"
 
-#. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:123
+#. i18n: ectx: property (text), widget (QPushButton, bnRefresh)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:116
 msgid "Refresh"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:159
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:152
 #, fuzzy
 #| msgid "&Save to Presets"
 msgid "Available"
 msgstr "प्रीसेट मं सहेजव (&S)"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:203
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:187
 msgid "Installed"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:241
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:216
 msgid "Blacklist"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:279
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:245
 msgid "Downloads"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:317
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:274
 #: ui/kis_composite_ops_model.cc:30
 #, fuzzy
 #| msgid "Filter Brush"
 msgid "Favorites"
 msgstr "ब्रुस छानव"
 
-#. i18n: ectx: property (text), widget (QPushButton, pushButton_2)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:396
+#. i18n: ectx: property (text), widget (QPushButton, bnCreateSet)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:344
 #, fuzzy
 #| msgid "Create"
 msgid "Create Set"
 msgstr "बनाव"
 
-#. i18n: ectx: property (text), widget (QPushButton, pushButton_7)
-#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:460
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:1005
+#. i18n: ectx: property (text), widget (QPushButton, bnDetails)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:382
+#: ui/kis_palette_manager.cpp:126
+#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:60
+msgid "Details"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, bnInstall)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:408
 msgid "Install"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QPushButton, pushButton_8)
-#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:470
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:1010
+#. i18n: ectx: property (text), widget (QPushButton, bnUninstall)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:418
 msgid "Uninstall"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonDelete)
-#. i18n: ectx: property (text), widget (QPushButton, pushButton_9)
-#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:490
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:1035
+#. i18n: ectx: property (text), widget (QPushButton, bnDelete)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:438
 #: ui/forms/wdgbookmarkedconfigurationseditor.ui:50
 msgid "Delete"
 msgstr "मेटाव"
 
+#. i18n: ectx: property (text), widget (QPushButton, bnImport)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:460
+#, fuzzy
+#| msgid "Import Image"
+msgid "Import"
+msgstr "फोटू आयात करव"
+
+#. i18n: ectx: property (text), widget (QPushButton, bnExport)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:467
+msgid "Export"
+msgstr "निर्यात"
+
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:752
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:696
 #, fuzzy
 #| msgid "Create"
 msgid "Created"
 msgstr "बनाव"
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:769
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:713
 #, fuzzy
 #| msgid "Update preview"
 msgid "Updated"
 msgstr "प्रिव्यू अपडेट करव"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:776
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:720
 msgid "Tags"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLineEdit, lineEdit_4)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:806
+#. i18n: ectx: property (text), widget (QLineEdit, txtWebsite)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:750
 msgid "www.krita.fr"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLineEdit, lineEdit_3)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:813
+#. i18n: ectx: property (text), widget (QLineEdit, txtLicense)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:757
 msgid "LGPL"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QPushButton, pushButton_11)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:835
+#. i18n: ectx: property (text), widget (QPushButton, bnRemoveTag)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:779
 #, fuzzy
 #| msgid "&Remove"
 msgid "Remove Tag"
 msgstr "मेटाव (&R)"
 
-#. i18n: ectx: property (text), widget (QPushButton, pushButton_3)
-#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:927
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:1000
-msgid "Quit"
-msgstr ""
-
-#. i18n: ectx: property (title), widget (QMenu, menuFile)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:959
-#: ui/kis_file_layer.cpp:90
-#, fuzzy
-#| msgid "&Filter"
-msgid "File"
-msgstr "फिल्टर (&F)"
-
-#. i18n: ectx: property (title), widget (QMenu, menuEdit)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:970
-msgid "Edit"
-msgstr "संपादन"
-
-#. i18n: ectx: property (title), widget (QMenu, menu)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:984
-msgid "?"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:995
-#, fuzzy
-#| msgid "Source files:"
-msgid "Create Resources Set"
-msgstr "स्रोत फाइल मन ल:"
-
-#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:1015
-msgid "About ResManager"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:1020
-#, fuzzy
-#| msgid "Import Image"
-msgid "Import"
-msgstr "फोटू आयात करव"
-
-#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:1025
-msgid "Export"
-msgstr "निर्यात"
-
-#. i18n: ectx: property (text), widget (KPushButton, renameButton)
-#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:1030
-#: ui/input/config/kis_edit_profiles_dialog.ui:17
-#, fuzzy
-#| msgid "Filename"
-msgid "Rename"
-msgstr "फाइलनाम"
-
-#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:1040
-msgid "Undo"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:1045
-msgid "Redo"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:1061
-msgid "Name"
-msgstr "नांव"
-
-#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
-#. i18n: ectx: property (toolTip), widget (QStatusBar, statusbar)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:1069
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:1072
-#, fuzzy
-#| msgid "Filename"
-msgid "Filename"
-msgstr "फाइलनाम"
-
-#: plugins/paintops/resourcemanager/resourcemanager.cpp:37
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:76
 #, fuzzy
 #| msgid "&Resources"
 msgid "Resource Manager..."
@@ -12547,6 +12456,13 @@ msgstr ""
 msgid "Reset All Profiles"
 msgstr "प्रोफाइल लगाव"
 
+#. i18n: ectx: property (text), widget (KPushButton, renameButton)
+#: ui/input/config/kis_edit_profiles_dialog.ui:17
+#, fuzzy
+#| msgid "Filename"
+msgid "Rename"
+msgstr "फाइलनाम"
+
 #. i18n: ectx: property (text), widget (KPushButton, removeButton)
 #: ui/input/config/kis_edit_profiles_dialog.ui:30
 #, fuzzy
@@ -12970,6 +12886,10 @@ msgstr ""
 msgid "Confirm"
 msgstr "कान्फेटी"
 
+#: ui/input/kis_tool_invocation_action.cpp:51 ui/kis_view2.cpp:569
+msgid "Cancel"
+msgstr " खारिज करव"
+
 #: ui/input/kis_zoom_action.cpp:112
 #, fuzzy
 #| msgid "Zoom In"
@@ -13342,6 +13262,12 @@ msgstr ""
 #| msgid "Unnamed"
 msgid "unnamed"
 msgstr "बेनाम"
+
+#: ui/kis_file_layer.cpp:90
+#, fuzzy
+#| msgid "&Filter"
+msgid "File"
+msgstr "फिल्टर (&F)"
 
 #: ui/kis_filter_manager.cc:86
 msgid "Apply Filter Again"
@@ -14476,6 +14402,24 @@ msgstr ""
 #| msgid "Close"
 msgid "&Close"
 msgstr "बंद करव"
+
+#, fuzzy
+#~| msgid "&OK"
+#~ msgid "OK"
+#~ msgstr "ठीक (&O)"
+
+#, fuzzy
+#~| msgid "&Resources"
+#~ msgid "Resource Manager"
+#~ msgstr "संसाधन (&R)"
+
+#~ msgid "Edit"
+#~ msgstr "संपादन"
+
+#, fuzzy
+#~| msgid "Source files:"
+#~ msgid "Create Resources Set"
+#~ msgstr "स्रोत फाइल मन ल:"
 
 #, fuzzy
 #~| msgid "Vertical radius:"
