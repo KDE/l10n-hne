@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-19 01:27+0000\n"
+"POT-Creation-Date: 2014-05-20 01:29+0000\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1329,12 +1329,6 @@ msgstr "फिल्टर परत (&F)"
 
 #: image/brushengine/kis_paintop_factory.cpp:66
 #, fuzzy
-msgctxt "Category of brush engines"
-msgid "Experimental"
-msgstr "डिफार्म त्रिज्या"
-
-#: image/brushengine/kis_paintop_factory.cpp:71
-#, fuzzy
 #| msgid "&Scale"
 msgctxt "Category of brush engines"
 msgid "Stable"
@@ -1505,7 +1499,7 @@ msgid "Generator"
 msgstr "जेनरेटर"
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: image/kis_adjustment_layer.cc:127
+#: image/kis_adjustment_layer.cc:127 plugins/paintops/filterop/filterop.cpp:45
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:50
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:844
 #: ui/dialogs/kis_dlg_filter.cpp:105
@@ -1524,16 +1518,20 @@ msgstr ""
 msgid "Default"
 msgstr "डिफाल्ट"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, editSharpness)
+#. i18n: ectx: property (text), item, widget (QComboBox, editContrast)
 #: image/kis_base_mask_generator.h:33
-#, fuzzy
-msgid "Soft brush"
-msgstr "स्मीयरी ब्रस"
+#: plugins/extensions/metadataeditor/editors/exif.ui:860
+#: plugins/extensions/metadataeditor/editors/exif.ui:892
+#: plugins/paintops/libpaintop/kis_pressure_softness_option.cpp:31
+msgid "Soft"
+msgstr "साफ्ट"
 
 #: image/kis_base_mask_generator.h:34
 #, fuzzy
-#| msgid "Gaussian Blur"
-msgid "Gaussian brush"
-msgstr "गासियन फीका"
+#| msgid "Gaussian:"
+msgid "Gaussian"
+msgstr "गासियन:"
 
 #: image/kis_base_node.cpp:141 ui/kis_node_model.cpp:420
 #, fuzzy
@@ -2687,6 +2685,7 @@ msgstr "किसिम (&T)"
 
 #. i18n: ectx: property (text), widget (QRadioButton, shadeSelectorTypeMyPaint)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:234
+#: plugins/paintops/mypaint/mypaint_paintop_factory.h:55
 #, fuzzy
 msgid "MyPaint"
 msgstr "मुख्य:"
@@ -3680,7 +3679,7 @@ msgstr "मास्क नाम:"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, brushNameLbl)
 #: plugins/extensions/dockers/tasksetdocker/tasksetdocker_dock.cpp:188
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:31
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:22
 #: ui/forms/wdgfilternodecreation.ui:17 ui/forms/wdgflipbookselector.ui:28
 #: ui/forms/wdgpaintopsettings.ui:93
 msgid "Name:"
@@ -4209,6 +4208,7 @@ msgstr "एक्सपोजर मोड:"
 #: plugins/extensions/metadataeditor/editors/exif.ui:101
 #: plugins/extensions/metadataeditor/editors/exif.ui:919
 #: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:88
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:58
 msgid "Auto"
 msgstr "अपन आप"
 
@@ -4636,14 +4636,6 @@ msgstr "सामान्य"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, editSharpness)
 #. i18n: ectx: property (text), item, widget (QComboBox, editContrast)
-#: plugins/extensions/metadataeditor/editors/exif.ui:860
-#: plugins/extensions/metadataeditor/editors/exif.ui:892
-#: plugins/paintops/libpaintop/kis_pressure_softness_option.cpp:31
-msgid "Soft"
-msgstr "साफ्ट"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, editSharpness)
-#. i18n: ectx: property (text), item, widget (QComboBox, editContrast)
 #: plugins/extensions/metadataeditor/editors/exif.ui:865
 #: plugins/extensions/metadataeditor/editors/exif.ui:897
 #: plugins/paintops/libpaintop/kis_pressure_softness_option.cpp:32
@@ -4663,6 +4655,8 @@ msgstr "सफेद संतुलन:"
 #. i18n: ectx: property (text), item, widget (QComboBox, editWhiteBalance)
 #. i18n: ectx: property (text), widget (QRadioButton, customRadioButton)
 #: plugins/extensions/metadataeditor/editors/exif.ui:924
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:64
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:66
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1037
 msgid "Custom"
 msgstr "मनमाफिक"
@@ -7059,7 +7053,7 @@ msgstr "रंग"
 
 #: plugins/paintops/chalk/chalk_paintop_plugin.cpp:43
 #, fuzzy
-msgid "Chalk brush"
+msgid "Chalk"
 msgstr "चाक ब्रस"
 
 #. i18n: ectx: attribute (title), widget (QWidget, inkTab)
@@ -7087,7 +7081,7 @@ msgstr "संतृप्ति भार"
 #: plugins/paintops/colorsmudge/colorsmudge_paintop_plugin.cpp:44
 #, fuzzy
 #| msgid "Smudge Brush"
-msgid "Color Smudge Brush"
+msgid "Color Smudge"
 msgstr "ब्रुस स्मज करव"
 
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
@@ -7156,8 +7150,9 @@ msgstr "ब्रुस स्मज करव"
 
 #: plugins/paintops/curvebrush/curve_paintop_plugin.cpp:43
 #, fuzzy
-msgid "Curve brush"
-msgstr "सुमी-ई ब्रस"
+#| msgid "Curved"
+msgid "Curve"
+msgstr "वक्रीय"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, selectMainStyle)
 #. i18n: ectx: property (text), item, widget (KComboBox, selectSubdivisionStyle)
@@ -7232,14 +7227,20 @@ msgstr "रस्ता चयन"
 msgid "Smoothing"
 msgstr "चिकना"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
+#. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: plugins/paintops/defaultpaintops/defaultpaintops_plugin.cc:47
-msgid "Pixel Brush"
-msgstr "पिक्सेल ब्रुस"
+#: plugins/paintops/experiment/wdgshapeoptions.ui:75
+#: plugins/paintops/gridbrush/wdgshapeoptions.ui:51
+#: plugins/paintops/spray/wdgshapeoptions.ui:75
+#, fuzzy
+msgid "Pixel"
+msgstr "पिक्सलाइज"
 
 #: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_factory.h:50
-msgctxt "duplicate paintbrush"
-msgid "Duplicate"
-msgstr "अनुकृति"
+msgctxt "clone paintbrush (previously \"Duplicate\")"
+msgid "Clone"
+msgstr ""
 
 #: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_option.cpp:45
 #: plugins/paintops/libpaintop/kis_paint_action_type_option.cpp:37
@@ -7272,8 +7273,9 @@ msgstr "ज्यामिती विकल्प"
 
 #: plugins/paintops/deform/kis_deform_paintop_factory.h:45
 #, fuzzy
-msgid "Deform brush"
-msgstr "डिफार्म त्रिज्या"
+#| msgid "Deform Mode"
+msgid "Deform"
+msgstr "डिफार्म मोड"
 
 #. i18n: ectx: property (text), widget (QLabel, deformLabel)
 #: plugins/paintops/deform/wdgdeformoptions.ui:35
@@ -7345,9 +7347,8 @@ msgid "Use undeformed image"
 msgstr ""
 
 #: plugins/paintops/dynadraw/dyna_paintop_plugin.cpp:41
-#, fuzzy
-msgid "Dyna brush"
-msgstr "गतिसील ब्रस"
+msgid "Dyna"
+msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #: plugins/paintops/dynadraw/wdgdynaoptions.ui:51
@@ -7386,6 +7387,7 @@ msgstr "दूरी सीमा:"
 #. i18n: ectx: attribute (title), widget (QWidget, ShapeTab)
 #. i18n: ectx: property (title), widget (QGroupBox, shapeGroup)
 #: plugins/paintops/dynadraw/wdgdynaoptions.ui:160
+#: plugins/paintops/experiment/experiment_paintop_plugin.cpp:45
 #: plugins/paintops/hairy/wdghairyeoptions.ui:43
 #: plugins/paintops/hairy/wdgshapeoptions.ui:84
 msgid "Shape"
@@ -7443,11 +7445,6 @@ msgstr "तारीकः"
 #, fuzzy
 msgid "Fixed angle"
 msgstr "त्रिभुज"
-
-#: plugins/paintops/experiment/experiment_paintop_plugin.cpp:42
-#, fuzzy
-msgid "Experiment brush"
-msgstr "डिफार्म त्रिज्या"
 
 #: plugins/paintops/experiment/kis_experiment_shape_option.cpp:36
 #: plugins/paintops/gridbrush/kis_grid_shape_option.cpp:33
@@ -7517,15 +7514,6 @@ msgstr "किनारे में:"
 msgid "Anti-aliased pixel"
 msgstr "एन्टी-अलियासिंग"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
-#. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
-#: plugins/paintops/experiment/wdgshapeoptions.ui:75
-#: plugins/paintops/gridbrush/wdgshapeoptions.ui:51
-#: plugins/paintops/spray/wdgshapeoptions.ui:75
-#, fuzzy
-msgid "Pixel"
-msgstr "पिक्सलाइज"
-
 #. i18n: ectx: property (text), widget (QCheckBox, proportionalBox)
 #: plugins/paintops/experiment/wdgshapeoptions.ui:213
 #: plugins/paintops/spray/wdgshapeoptions.ui:218
@@ -7553,7 +7541,7 @@ msgstr "परिक्रमन"
 #. i18n: ectx: property (text), widget (QCheckBox, fixedRotation)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
 #: plugins/paintops/experiment/wdgshapeoptions.ui:241
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:77
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:59
 #: plugins/paintops/spray/wdgshapedynamicsoptions.ui:48
 msgid "Constant"
 msgstr "स्थिर"
@@ -7561,7 +7549,7 @@ msgstr "स्थिर"
 #. i18n: ectx: property (text), widget (QCheckBox, randomRotation)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
 #: plugins/paintops/experiment/wdgshapeoptions.ui:289
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:82
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:64
 #: plugins/paintops/spray/wdgshapedynamicsoptions.ui:58
 msgid "Random"
 msgstr "बेतरतीब"
@@ -7582,14 +7570,11 @@ msgstr "संकेतक"
 msgid "Texture:"
 msgstr "पाठ"
 
-#: plugins/paintops/filterop/filterop.cpp:45
-msgid "Filter Brush"
-msgstr "ब्रुस छानव"
-
 #: plugins/paintops/gridbrush/grid_paintop_plugin.cpp:41
-#, fuzzy
-msgid "Grid brush"
-msgstr "स्मीयरी ब्रस"
+#: ui/canvas/kis_grid_manager.cpp:47 ui/dialogs/kis_dlg_preferences.cc:673
+#: ui/dialogs/kis_dlg_preferences.cc:674
+msgid "Grid"
+msgstr "ग्रिड"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/paintops/gridbrush/wdggridoptions.ui:38
@@ -7659,7 +7644,7 @@ msgstr "पंक्ति"
 
 #: plugins/paintops/hairy/hairy_paintop_plugin.cpp:44
 #, fuzzy
-msgid "Hairy brush"
+msgid "Hairy"
 msgstr "स्मीयरी ब्रस"
 
 #: plugins/paintops/hairy/kis_hairy_bristle_option.cpp:46
@@ -7854,7 +7839,7 @@ msgstr ""
 
 #: plugins/paintops/hatching/hatching_paintop_plugin.cpp:43
 #, fuzzy
-msgid "Hatching brush"
+msgid "Hatching"
 msgstr "स्मीयरी ब्रस"
 
 #: plugins/paintops/hatching/kis_hatching_options.cpp:57
@@ -8040,7 +8025,7 @@ msgstr "बेतरतीब"
 #: plugins/paintops/libpaintop/forms/wdgautobrush.ui:266
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:152
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:85
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:207
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:180
 #: plugins/paintops/libpaintop/forms/wdgtextbrush.ui:72
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:112
 #: plugins/paintops/spray/wdgsprayoptions.ui:204
@@ -8108,7 +8093,7 @@ msgstr "खन्ड मेटाव"
 #. i18n: ectx: property (text), widget (QCheckBox, colorAsMask)
 #. i18n: ectx: property (text), widget (QCheckBox, colorAsmask)
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:19
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:131
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:113
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:119
 msgid "Use color as mask"
 msgstr "रंग ल मास्क के रूप मं उपयोग करव"
@@ -8116,8 +8101,9 @@ msgstr "रंग ल मास्क के रूप मं उपयोग �
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:102
 #, fuzzy
-msgid "Save brush:"
-msgstr "सुमी-ई ब्रस"
+#| msgid "Play macro"
+msgid "Save Tip:"
+msgstr "मेक्रो चलाव"
 
 #. i18n: ectx: property (text), widget (QPushButton, saveBrush)
 #. i18n: ectx: property (text), widget (QPushButton, bnSave)
@@ -8219,51 +8205,55 @@ msgstr "वक्र ल आकार देव"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #. i18n: ectx: property (text), widget (QLabel, labelStyle)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:60
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:42
 #: plugins/tools/tool_text/wdgtextoptions.ui:71
 msgid "Style:"
 msgstr "सैली:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:87
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:69
 msgid "Incremental"
 msgstr "इंक्रीमेंटल"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:92
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:74
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:47
 #: plugins/tools/defaulttools/kis_tool_line.cc:70
 msgid "Pressure"
 msgstr "दबाव"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:97
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:79
 msgid "Angular"
 msgstr "कोनीय"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:105
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:87
 msgid "Selection mode:"
 msgstr "चयन मोड:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, brushStyle)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:116
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:98
 msgid "Regular"
 msgstr "नियमित"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, brushStyle)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:121
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:103
 msgid "Animated"
 msgstr "एनिमेटेड"
 
 #. i18n: ectx: property (text), widget (QPushButton, brushButton)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:236
-msgid "Use as Brush"
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:200
+#, fuzzy
+#| msgid "Use as Brush"
+msgid "Use as Tip"
 msgstr "ब्रुस के रूप मं उपयोग करव"
 
 #. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:243
-msgid "Add to Predefined Brushes"
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:207
+#, fuzzy
+#| msgid "Add to Predefined Brushes"
+msgid "Add to Predefined Tips"
 msgstr "पूर्वपरिभासित ब्रुस मं जोड़व"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkBoxSmudgeMode)
@@ -8374,9 +8364,9 @@ msgstr ""
 
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:156
 #, fuzzy
-#| msgid "Remove Mask"
-msgid "Reset Brush"
-msgstr "मास्क मेटाव"
+#| msgid "Predefined Brushes"
+msgid "Reset Predefined Tip"
+msgstr "पूर्व-परिभासित ब्रुस"
 
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:157
 msgid ""
@@ -8390,30 +8380,25 @@ msgstr ""
 msgid "Brush Tip"
 msgstr "ब्रुस आकार"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:58
-msgid "Autobrush"
-msgstr "ओटोब्रस"
-
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:62
-msgid "Predefined Brushes"
+#, fuzzy
+#| msgid "Predefined Brushes"
+msgid "Predefined"
 msgstr "पूर्व-परिभासित ब्रुस"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:64
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:66
-msgid "Custom Brush"
-msgstr "मनमाफिक ब्रुस"
-
+#. i18n: ectx: property (title), widget (QGroupBox, grpClipboard)
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:68
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:70
+#: ui/forms/wdgnewimage.ui:331
 #, fuzzy
-#| msgid "Smudge Brush"
-msgid "Clipboard Brush"
-msgstr "ब्रुस स्मज करव"
+#| msgid "Cork board"
+msgid "Clipboard"
+msgstr "कार्क पटिया"
 
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:72
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:74
-msgid "Text Brush"
-msgstr "पाठ ब्रस"
+msgid "Text"
+msgstr "पाठ"
 
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:98
 msgid ""
@@ -9451,16 +9436,10 @@ msgid ""
 "will make it smoother"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_paintop_factory.h:55
-#, fuzzy
-#| msgid "Paint with brushes"
-msgid "MyPaint brush"
-msgstr "ब्रुस के साथ पेंट करव"
-
 #: plugins/paintops/particle/particle_paintop_plugin.cpp:42
 #, fuzzy
 #| msgid "Vertices:"
-msgid "Particle brush"
+msgid "Particle"
 msgstr "सीर्सः"
 
 #. i18n: ectx: property (text), widget (QLabel, particlesLbl)
@@ -9845,7 +9824,7 @@ msgstr "आफसेट X:"
 
 #: plugins/paintops/sketch/sketch_paintop_plugin.cpp:43
 #, fuzzy
-msgid "Sketch brush"
+msgid "Sketch"
 msgstr "स्मीयरी ब्रस"
 
 #. i18n: ectx: property (suffix), widget (KDoubleNumInput, lineWidthSPBox)
@@ -9916,7 +9895,7 @@ msgstr "स्मीयरी ब्रस"
 
 #: plugins/paintops/spray/spray_paintop_plugin.cpp:41
 #, fuzzy
-msgid "Spray brush"
+msgid "Spray"
 msgstr "स्मीयरी ब्रस"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
@@ -10956,11 +10935,6 @@ msgid ""
 "You are activating wrap-around mode, but have not enabled OpenGL.\n"
 "To visualize wrap-around mode, enable OpenGL."
 msgstr ""
-
-#: ui/canvas/kis_grid_manager.cpp:47 ui/dialogs/kis_dlg_preferences.cc:673
-#: ui/dialogs/kis_dlg_preferences.cc:674
-msgid "Grid"
-msgstr "ग्रिड"
 
 #: ui/canvas/kis_grid_manager.cpp:70
 msgid "Snap To Grid"
@@ -12276,13 +12250,6 @@ msgstr "वेव"
 msgid "&Predefined:"
 msgstr "पूर्व-परिभासित ब्रुस"
 
-#. i18n: ectx: property (title), widget (QGroupBox, grpClipboard)
-#: ui/forms/wdgnewimage.ui:331
-#, fuzzy
-#| msgid "Cork board"
-msgid "Clipboard"
-msgstr "कार्क पटिया"
-
 #. i18n: ectx: property (title), widget (QGroupBox, grpContents)
 #: ui/forms/wdgnewimage.ui:373
 msgid "Contents"
@@ -12490,7 +12457,7 @@ msgid "No Outline"
 msgstr "कोई आउटलाइन नइ"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbOutline)
-#: ui/forms/wdgshapeoptions.ui:38 ui/kis_paintop_option.cpp:26
+#: ui/forms/wdgshapeoptions.ui:38
 msgid "Brush"
 msgstr "ब्रुस"
 
@@ -13838,6 +13805,12 @@ msgstr ""
 msgid "Select Favorite Presets..."
 msgstr "ब्रुस छानव"
 
+#: ui/kis_paintop_option.cpp:26
+#, fuzzy
+#| msgid "Named Colors"
+msgid "Common"
+msgstr "नामांकित रंग "
+
 #: ui/kis_paintop_option.cpp:36
 #, fuzzy
 #| msgid "Text"
@@ -14393,13 +14366,13 @@ msgstr "स्केल चयन"
 msgid "Freehand Stroke"
 msgstr "मुक्तहस्त औजार"
 
-#: ui/tool/kis_tool_paint.cc:89
+#: ui/tool/kis_tool_paint.cc:105
 #, fuzzy
 #| msgid "Chinese Brush"
 msgid "Increase Brush Size"
 msgstr "चीनी ब्रस"
 
-#: ui/tool/kis_tool_paint.cc:95
+#: ui/tool/kis_tool_paint.cc:111
 #, fuzzy
 #| msgid "Brush size"
 msgid "Decrease Brush Size"
@@ -14536,6 +14509,90 @@ msgstr ""
 #| msgid "Close"
 msgid "&Close"
 msgstr "बंद करव"
+
+#, fuzzy
+#~ msgctxt "Category of brush engines"
+#~ msgid "Experimental"
+#~ msgstr "डिफार्म त्रिज्या"
+
+#, fuzzy
+#~ msgid "Soft brush"
+#~ msgstr "स्मीयरी ब्रस"
+
+#, fuzzy
+#~| msgid "Gaussian Blur"
+#~ msgid "Gaussian brush"
+#~ msgstr "गासियन फीका"
+
+#, fuzzy
+#~ msgid "Curve brush"
+#~ msgstr "सुमी-ई ब्रस"
+
+#~ msgid "Pixel Brush"
+#~ msgstr "पिक्सेल ब्रुस"
+
+#~ msgctxt "duplicate paintbrush"
+#~ msgid "Duplicate"
+#~ msgstr "अनुकृति"
+
+#, fuzzy
+#~ msgid "Deform brush"
+#~ msgstr "डिफार्म त्रिज्या"
+
+#, fuzzy
+#~ msgid "Dyna brush"
+#~ msgstr "गतिसील ब्रस"
+
+#, fuzzy
+#~ msgid "Experiment brush"
+#~ msgstr "डिफार्म त्रिज्या"
+
+#~ msgid "Filter Brush"
+#~ msgstr "ब्रुस छानव"
+
+#, fuzzy
+#~ msgid "Grid brush"
+#~ msgstr "स्मीयरी ब्रस"
+
+#, fuzzy
+#~ msgid "Save brush:"
+#~ msgstr "सुमी-ई ब्रस"
+
+#, fuzzy
+#~| msgid "Remove Mask"
+#~ msgid "Reset Brush"
+#~ msgstr "मास्क मेटाव"
+
+#~ msgid "Autobrush"
+#~ msgstr "ओटोब्रस"
+
+#~ msgid "Predefined Brushes"
+#~ msgstr "पूर्व-परिभासित ब्रुस"
+
+#~ msgid "Custom Brush"
+#~ msgstr "मनमाफिक ब्रुस"
+
+#, fuzzy
+#~| msgid "Smudge Brush"
+#~ msgid "Clipboard Brush"
+#~ msgstr "ब्रुस स्मज करव"
+
+#~ msgid "Text Brush"
+#~ msgstr "पाठ ब्रस"
+
+#, fuzzy
+#~| msgid "Paint with brushes"
+#~ msgid "MyPaint brush"
+#~ msgstr "ब्रुस के साथ पेंट करव"
+
+#, fuzzy
+#~| msgid "Vertices:"
+#~ msgid "Particle brush"
+#~ msgstr "सीर्सः"
+
+#, fuzzy
+#~ msgid "Spray brush"
+#~ msgstr "स्मीयरी ब्रस"
 
 #, fuzzy
 #~| msgid "Description:"
@@ -14982,9 +15039,6 @@ msgstr "बंद करव"
 #~| msgid "Angular step:"
 #~ msgid "A_Angular box soft"
 #~ msgstr "कोनीय चरन:"
-
-#~ msgid "Text"
-#~ msgstr "पाठ"
 
 #, fuzzy
 #~ msgid "Initial width"
@@ -16365,11 +16419,6 @@ msgstr "बंद करव"
 #~ msgstr "नामांकित रंग "
 
 #, fuzzy
-#~| msgid "Named Colors"
-#~ msgid "Common Colors"
-#~ msgstr "नामांकित रंग "
-
-#, fuzzy
 #~| msgid "Artistic"
 #~ msgid "Statistics"
 #~ msgstr "कलाकारी"
@@ -16412,16 +16461,6 @@ msgstr "बंद करव"
 #~| msgid "Ink Amount"
 #~ msgid "Ink amount"
 #~ msgstr "स्याही मात्रा"
-
-#, fuzzy
-#~| msgid "Curved"
-#~ msgid "Curve"
-#~ msgstr "वक्रीय"
-
-#, fuzzy
-#~| msgid "Gaussian:"
-#~ msgid "Gaussian"
-#~ msgstr "गासियन:"
 
 #, fuzzy
 #~ msgid "soft brush"
