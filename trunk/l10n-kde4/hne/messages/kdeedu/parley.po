@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-22 01:48+0000\n"
+"POT-Creation-Date: 2014-06-04 01:40+0000\n"
 "PO-Revision-Date: 2009-02-25 15:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -88,7 +88,7 @@ msgstr[1] "सेकन्ड"
 msgid "*.kvtml|Vocabulary Collections"
 msgstr "*.kvtml|सब्दावली संग्रह"
 
-#: plugins/example.py:14 src/vocabulary/lessonview.cpp:37
+#: plugins/example.py:14
 msgid "New Lesson"
 msgstr "नवा सबक"
 
@@ -885,9 +885,9 @@ msgstr "सबक"
 
 #: src/editor/editor.cpp:164
 msgid ""
-"Right click to add, delete, or rename lessons. \n"
-"With the checkboxes you can select which lessons you want to practice. \n"
-"Only checked lessons [x] will be asked in the tests!"
+"Right click to add, delete, or rename units. \n"
+"With the checkboxes you can select which units you want to practice. \n"
+"Only checked units [x] will be asked in the practice!"
 msgstr ""
 
 #: src/editor/editor.cpp:179
@@ -964,8 +964,8 @@ msgstr "दृस्य"
 
 #. i18n: ectx: Menu (lesson)
 #: src/editor/editorui.rc:49
-msgid "&Lesson"
-msgstr "सबक (&L)"
+msgid "&Unit"
+msgstr ""
 
 #. i18n: ectx: Menu (learning)
 #: src/editor/editorui.rc:62 src/practice/practicesummaryui.rc:12
@@ -984,8 +984,9 @@ msgid "Editor Toolbar"
 msgstr "संपादक औजार पट्टी"
 
 #: src/editor/FromToEntryPage.cpp:160
-#, kde-format
-msgid "Grades from %1 to %2"
+#, fuzzy, kde-format
+#| msgid "Grades from %1 to %2"
+msgid "Confidence Levels from %1 to %2"
 msgstr "दर्जा %1 से %2"
 
 #. i18n: ectx: property (title), widget (QGroupBox, direc_label)
@@ -995,8 +996,8 @@ msgstr "मूल से गुन"
 
 #. i18n: ectx: property (text), widget (QLabel, grade_label)
 #: src/editor/FromToEntryPageForm.ui:72
-msgid "&Grade:"
-msgstr "स्रेनीः (&G)"
+msgid "&Confidence Level:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, fauxami_label)
 #: src/editor/FromToEntryPageForm.ui:95
@@ -1050,8 +1051,8 @@ msgstr "dd.MM.yyyy"
 
 #. i18n: ectx: property (text), widget (QPushButton, resetGradesButton)
 #: src/editor/FromToEntryPageForm.ui:260
-msgid "&Reset Grades"
-msgstr "स्रेनी रीसेट करव (&R)"
+msgid "&Reset Confidence Levels"
+msgstr ""
 
 #: src/editor/inflectionwidget.cpp:36 src/parleydocument.cpp:326
 #: src/vocabulary/wordtypeview.cpp:123
@@ -1116,7 +1117,7 @@ msgid "Language"
 msgstr "भाखा"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: src/editor/summarywordwidget.ui:32 src/vocabulary/containermodel.cpp:170
+#: src/editor/summarywordwidget.ui:32
 msgid "Lesson"
 msgstr "सबक"
 
@@ -1457,20 +1458,22 @@ msgid ""
 "Edit which languages are in the collection and their grammar properties."
 msgstr ""
 
-#: src/parleyactions.cpp:121
-msgid "Remove Grades"
-msgstr "स्रेनी मेटाव"
+#: src/parleyactions.cpp:121 src/vocabulary/lessonview.cpp:69
+msgid "Remove Confidence Levels"
+msgstr ""
 
 #: src/parleyactions.cpp:122
-msgid "Remove all grades from the current document"
+#, fuzzy
+#| msgid "Remove all grades from the current document"
+msgid "Remove all confidence levels from the current document"
 msgstr "मौजूदा कागद के सब्बो स्रेनी ल हटाव"
 
 #: src/parleyactions.cpp:129
-msgid "Show Entries from Child Lessons"
+msgid "Show Entries from Child Units"
 msgstr ""
 
 #: src/parleyactions.cpp:130
-msgid "Enable to also see the entries of child lessons in each lesson."
+msgid "Enable to also see the entries of child units in each unit."
 msgstr ""
 
 #: src/parleyactions.cpp:136
@@ -1479,7 +1482,7 @@ msgstr "अपने अपन अनुवाद"
 
 #. i18n: ectx: label, entry (AutomaticTranslation), group (General)
 #: src/parleyactions.cpp:137 src/settings/parley.kcfg:50
-msgid "Enable automatic translation of the lesson entries."
+msgid "Enable automatic translation of the unit entries."
 msgstr ""
 
 #: src/parleyactions.cpp:143
@@ -1875,10 +1878,10 @@ msgstr "नपुंसक लिंग (&t)"
 
 #: src/practice/guifrontend.cpp:129
 #, fuzzy, kde-format
-#| msgid "Lesson 1"
-msgctxt "Display of the current lesson during practice"
-msgid "Lesson: %1"
-msgstr "सबक 1"
+#| msgid "Comment: %1"
+msgctxt "Display of the current unit during practice"
+msgid "Unit: %1"
+msgstr "टिप्पनीः %1"
 
 #: src/practice/guifrontend.cpp:136
 #, fuzzy
@@ -2903,7 +2906,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (EntriesPerLesson), group (General)
 #: src/settings/parley.kcfg:27
-msgid "The number of entries per lesson"
+#, fuzzy
+#| msgid "The number of entries per lesson"
+msgid "The number of entries per unit"
 msgstr "हर सबक मं प्रविस्टि मन के संख्या"
 
 #. i18n: ectx: label, entry (AutoOpenLast), group (General)
@@ -2956,8 +2961,8 @@ msgstr "सीखे के लेइटनर विधि ल उपयोग 
 #. i18n: ectx: label, entry (TestOrderLesson), group (PracticeOptions)
 #: src/settings/parley.kcfg:77
 msgid ""
-"Append new vocabulary in a test in order of their lessons. Note that this "
-"will not be a hard transition, but a slow mix from one lesson to the next."
+"Append new vocabulary in a collection in order of their units. Note that "
+"this will not be a hard transition, but a slow mix from one unit to the next."
 msgstr ""
 
 #. i18n: ectx: label, entry (TestNumberOfEntries), group (PracticeOptions)
@@ -3112,12 +3117,14 @@ msgstr "खोजक पट्टी के प्रदर्सन टाग�
 
 #. i18n: ectx: label, entry (ShowSublessonentries), group (Appearance)
 #: src/settings/parley.kcfg:198
-msgid "When enabled a lesson also shows entries from its sublessons."
+msgid "When enabled a unit also shows entries from its subunits."
 msgstr ""
 
 #. i18n: ectx: label, entry (TableLessonColumnVisible), group (Appearance)
 #: src/settings/parley.kcfg:203
-msgid "Show/hide the lesson column."
+#, fuzzy
+#| msgid "Show/hide the lesson column."
+msgid "Show/hide the unit column."
 msgstr "सबक खंभा देखाव/लुकाव."
 
 #. i18n: ectx: label, entry (TableActiveColumnVisible), group (Appearance)
@@ -3127,7 +3134,7 @@ msgstr "सक्रिय खंभा देखाव/लुकाव"
 
 #. i18n: ectx: label, entry (LessonEditingSelection), group (Appearance)
 #: src/settings/parley.kcfg:213
-msgid "Select which lessons are displayed for editing"
+msgid "Select which units are displayed for editing"
 msgstr ""
 
 #. i18n: ectx: label, entry (MainWindowSplitter), group (Appearance)
@@ -3162,11 +3169,10 @@ msgid "Currently selected row"
 msgstr "अभी हाल चुने गे पंक्ति"
 
 #. i18n: ectx: label, entry (GradeColor), group (Appearance)
-#. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_GradeColor)
-#: src/settings/parley.kcfg:243 src/settings/viewoptionsbase.ui:102
+#: src/settings/parley.kcfg:243
 #, fuzzy
 #| msgid "Color for the grade 7"
-msgid "Color used to display the grades"
+msgid "Color used to display the confidence levels"
 msgstr "7 वाँ दरजा बर रंग"
 
 #. i18n: ectx: label, entry (PracticeMinimumTimesAsked), group (Thresholds)
@@ -3200,14 +3206,15 @@ msgstr ""
 #. i18n: ectx: label, entry (PracticeMinimumGrade), group (Thresholds)
 #: src/settings/parley.kcfg:269
 msgid ""
-"The entry must have at least this grade to be included in the practice "
-"(0..7)."
+"The entry must have at least this confidence level to be included in the "
+"practice (0..7)."
 msgstr ""
 
 #. i18n: ectx: label, entry (PracticeMaximumGrade), group (Thresholds)
 #: src/settings/parley.kcfg:273
 msgid ""
-"The entry must have at most this grade to be included in the practice (0..7)."
+"The entry must have at most this confidence level to be included in the "
+"practice (0..7)."
 msgstr ""
 
 #. i18n: ectx: label, entry (WordTypesInPracticeEnabled), group (Thresholds)
@@ -3265,12 +3272,12 @@ msgstr ""
 
 #. i18n: ectx: label, entry (BlockItem$(Grade)), group (PracticeManager)
 #: src/settings/parley.kcfg:338
-msgid "Amount of time different grades should be blocked"
+msgid "Amount of time different confidence levels should be blocked"
 msgstr ""
 
 #. i18n: ectx: label, entry (ExpireItem$(Grade)), group (PracticeManager)
 #: src/settings/parley.kcfg:349
-msgid "Amount of time after which different grades should expire"
+msgid "Amount of time after which different confidence levels should expire"
 msgstr ""
 
 #. i18n: ectx: label, entry (ProvidersUrl), group (KNewStuff)
@@ -3330,6 +3337,13 @@ msgstr "उच्चारन: %1"
 msgid "Base color for displaying grades:"
 msgstr ""
 
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_GradeColor)
+#: src/settings/viewoptionsbase.ui:102
+#, fuzzy
+#| msgid "Color for the grade 7"
+msgid "Color used to display the grades"
+msgstr "7 वाँ दरजा बर रंग"
+
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcfg_GradeColor)
 #: src/settings/viewoptionsbase.ui:105
 #, fuzzy
@@ -3362,25 +3376,22 @@ msgid "Not practiced"
 msgstr "अभ्यास नइ करिस: (&p)"
 
 #: src/statistics/lessonstatistics.cpp:182
-#, fuzzy
-#| msgid "Remove all grades from the current document"
-msgid "Remove &Grades from this lesson"
-msgstr "मौजूदा कागद के सब्बो स्रेनी ल हटाव"
-
 #: src/statistics/lessonstatistics.cpp:184
 #, fuzzy
 #| msgid "Average grades for each lesson:"
-msgid "Remove grades from this lesson"
+msgid "Remove confidence levels from this unit"
 msgstr "हर अभ्यास बर औसत ग्रेड:"
 
 #: src/statistics/lessonstatistics.cpp:192
-msgid "Remove &Grades from this lesson and all sub-lessons"
-msgstr ""
+#, fuzzy
+#| msgid "Remove all grades from the current document"
+msgid "Remove confidence levels from this unit and all sub-units"
+msgstr "मौजूदा कागद के सब्बो स्रेनी ल हटाव"
 
 #: src/statistics/lessonstatistics.cpp:194
 #, fuzzy
 #| msgid "Remove all grades from the current document"
-msgid "Remove grades from this lesson and all sub-lessons"
+msgid "Remove confidence level from this unit and all sub-units"
 msgstr "मौजूदा कागद के सब्बो स्रेनी ल हटाव"
 
 #: src/statistics/statisticsmainwindow.cpp:196
@@ -3468,27 +3479,31 @@ msgstr "अभ्यास विकल्प"
 
 #: src/statistics/statisticsmodel.cpp:31
 #, kde-format
-msgctxt "Grade in language, table header"
-msgid "Grade (%1)"
-msgstr "ग्रेड (%1)"
+msgctxt "Confidence level in language, table header"
+msgid "Confidence (%1)"
+msgstr ""
 
 #: src/vocabulary/basiccontainermodel.cpp:145
 msgid "None"
 msgstr "कुछ नइ"
 
+#: src/vocabulary/containermodel.cpp:170
+msgid "Unit"
+msgstr ""
+
 #: src/vocabulary/containermodel.cpp:178
 msgid "Number of entries in this lesson."
 msgstr "ए सबक मं प्रविस्टि मन के संख्या"
 
-#: src/vocabulary/leitnerview.cpp:117 src/vocabulary/lessonview.cpp:194
-msgid "The root lesson cannot be deleted."
+#: src/vocabulary/leitnerview.cpp:117
+msgid "The root unit cannot be deleted."
 msgstr ""
 
 #: src/vocabulary/leitnerview.cpp:126 src/vocabulary/lessonview.cpp:203
 #, kde-format
-msgid "There is %1 word left in this lesson. Do you want to delete it?"
+msgid "There is %1 word left in this unit. Do you want to delete it?"
 msgid_plural ""
-"There are %1 words left in this lesson. Do you want to delete them?"
+"There are %1 words left in this unit. Do you want to delete them?"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -3499,86 +3514,104 @@ msgctxt "display of the name of the vocabulary collection"
 msgid "Collection: %1"
 msgstr "विकल्प %1 ल चुनव"
 
+#: src/vocabulary/lessonview.cpp:37
+#, fuzzy
+#| msgid "New type"
+msgid "New Unit"
+msgstr "नवा टाइप"
+
 #: src/vocabulary/lessonview.cpp:39
-msgid "Add a new lesson to your document"
+#, fuzzy
+#| msgid "Add a new lesson to your document"
+msgid "Add a new unit to your document"
 msgstr "अपन कागद मं नवा सबक जोड़व"
 
 #: src/vocabulary/lessonview.cpp:45
-msgid "Rename Lesson"
-msgstr "सबक ल नवा नाम देव"
+#, fuzzy
+#| msgid "Rename"
+msgid "Rename Unit"
+msgstr "नाम बदलव"
 
 #: src/vocabulary/lessonview.cpp:53
-msgid "Delete Lesson"
-msgstr "सबक ल मेटाव"
+#, fuzzy
+#| msgid "&Delete Entry"
+msgid "Delete Unit"
+msgstr "प्रविस्टि मेटाव (&D)"
 
 #: src/vocabulary/lessonview.cpp:55
-msgid "Delete the selected lesson."
+#, fuzzy
+#| msgid "Delete the selected lesson."
+msgid "Delete the selected unit."
 msgstr "चुने गे सबक ल मेटाव."
 
 #: src/vocabulary/lessonview.cpp:61
-msgid "Split Lesson into Smaller Lessons"
+#, fuzzy
+#| msgid "Split Lesson into Smaller Lessons"
+msgid "Split Unit into Smaller Units"
 msgstr "सबक ल छोटे-छोटे सबक मं विभाजित करव"
 
 #: src/vocabulary/lessonview.cpp:63
-msgid "Make multiple smaller lessons out of one big lesson."
-msgstr "एक बड़े सबक मं से बहुत से छोटे छोटे सबक बनाव."
-
-#: src/vocabulary/lessonview.cpp:69
 #, fuzzy
-#| msgid "Remove all grades from the current document"
-msgid "Remove Grades from this Lesson"
-msgstr "मौजूदा कागद के सब्बो स्रेनी ल हटाव"
+#| msgid "Make multiple smaller lessons out of one big lesson."
+msgid "Make multiple smaller units out of one big unit."
+msgstr "एक बड़े सबक मं से बहुत से छोटे छोटे सबक बनाव."
 
 #: src/vocabulary/lessonview.cpp:71
 #, fuzzy
 #| msgid "Average grades for each lesson:"
-msgid "Remove grades from this lesson."
+msgid "Remove confidence levels from this unit."
 msgstr "हर अभ्यास बर औसत ग्रेड:"
 
 #: src/vocabulary/lessonview.cpp:77
 #, fuzzy
 #| msgid "Remove all grades from the current document"
-msgid "Remove Grades from this Lesson and all Sub-Lessons"
+msgid "Remove Confidence Levels From This Unit And All Subunits"
 msgstr "मौजूदा कागद के सब्बो स्रेनी ल हटाव"
 
 #: src/vocabulary/lessonview.cpp:79
 #, fuzzy
 #| msgid "Remove all grades from the current document"
-msgid "Remove grades from this lesson and all sub-lessons."
+msgid "Remove confidence levels from this unit and all subunits."
 msgstr "मौजूदा कागद के सब्बो स्रेनी ल हटाव"
 
 #: src/vocabulary/lessonview.cpp:85
 #, fuzzy
 #| msgid "Remove all grades from the current document"
-msgid "Expand all lessons and sub-lessons"
+msgid "Expand Units and Subunits"
 msgstr "मौजूदा कागद के सब्बो स्रेनी ल हटाव"
 
 #: src/vocabulary/lessonview.cpp:87
 #, fuzzy
 #| msgid "Remove all grades from the current document"
-msgid "Expand all lessons and sub-lessons."
+msgid "Expand all units and subunits."
 msgstr "मौजूदा कागद के सब्बो स्रेनी ल हटाव"
 
 #: src/vocabulary/lessonview.cpp:93
 #, fuzzy
 #| msgid "Remove all grades from the current document"
-msgid "Collapse all lessons and sub-lessons"
+msgid "Collapse All Units And Subunits"
 msgstr "मौजूदा कागद के सब्बो स्रेनी ल हटाव"
 
 #: src/vocabulary/lessonview.cpp:95
 #, fuzzy
 #| msgid "Remove all grades from the current document"
-msgid "Collapse all lessons and sub-lessons."
+msgid "Collapse all units and subunits."
 msgstr "मौजूदा कागद के सब्बो स्रेनी ल हटाव"
 
+#: src/vocabulary/lessonview.cpp:194
+msgid "The root lesson cannot be deleted."
+msgstr ""
+
 #: src/vocabulary/lessonview.cpp:217
-msgid "Entries per Lesson"
+#, fuzzy
+#| msgid "Entries per Lesson"
+msgid "Entries per Unit"
 msgstr "प्रति सबक प्रविस्टि मन के संख्या"
 
 #: src/vocabulary/lessonview.cpp:217
 msgid ""
-"The lesson will be split into smaller lessons. How many entries in each "
-"lesson do you want?"
+"The unit will be split into smaller unit. How many entries in each unit do "
+"you want?"
 msgstr ""
 
 #: src/vocabulary/vocabularycolumnsdialog.cpp:53
@@ -3630,11 +3663,11 @@ msgid "No Languages Defined"
 msgstr "कोई भाखा परिभासित नइ"
 
 #: src/vocabulary/vocabularymodel.cpp:328
-msgid "Select a lesson before adding vocabulary."
+msgid "Select a unit before adding vocabulary."
 msgstr ""
 
 #: src/vocabulary/vocabularymodel.cpp:328
-msgid "No Lesson Selected"
+msgid "No Unit Selected"
 msgstr ""
 
 #: src/vocabulary/vocabularyview.cpp:87
@@ -3938,6 +3971,44 @@ msgid ""
 "<a href=\"http://edu.kde.org/contrib/kvtml2.php\">http://edu.kde.org/contrib/"
 "kvtml2.php</a>.</p>\n"
 msgstr ""
+
+#~ msgid "&Lesson"
+#~ msgstr "सबक (&L)"
+
+#~ msgid "&Grade:"
+#~ msgstr "स्रेनीः (&G)"
+
+#~ msgid "&Reset Grades"
+#~ msgstr "स्रेनी रीसेट करव (&R)"
+
+#~ msgid "Remove Grades"
+#~ msgstr "स्रेनी मेटाव"
+
+#, fuzzy
+#~| msgid "Lesson 1"
+#~ msgctxt "Display of the current lesson during practice"
+#~ msgid "Lesson: %1"
+#~ msgstr "सबक 1"
+
+#, fuzzy
+#~| msgid "Remove all grades from the current document"
+#~ msgid "Remove &Grades from this lesson"
+#~ msgstr "मौजूदा कागद के सब्बो स्रेनी ल हटाव"
+
+#~ msgctxt "Grade in language, table header"
+#~ msgid "Grade (%1)"
+#~ msgstr "ग्रेड (%1)"
+
+#~ msgid "Rename Lesson"
+#~ msgstr "सबक ल नवा नाम देव"
+
+#~ msgid "Delete Lesson"
+#~ msgstr "सबक ल मेटाव"
+
+#, fuzzy
+#~| msgid "Remove all grades from the current document"
+#~ msgid "Remove Grades from this Lesson"
+#~ msgstr "मौजूदा कागद के सब्बो स्रेनी ल हटाव"
 
 #, fuzzy
 #~| msgid "&Statistics..."
@@ -4976,9 +5047,6 @@ msgstr ""
 #~ msgid "Type Descriptions"
 #~ msgstr "किसिम वर्नन"
 
-#~ msgid "New type"
-#~ msgstr "नवा टाइप"
-
 #~ msgid "New subtype"
 #~ msgstr "नवा सब-टाइप"
 
@@ -5035,9 +5103,6 @@ msgstr ""
 
 #~ msgid "Remove Duplicates"
 #~ msgstr "दोहरीप्रति मेटाव"
-
-#~ msgid "Comment: %1"
-#~ msgstr "टिप्पनीः %1"
 
 #~ msgid " (%1)"
 #~ msgstr " (%1)"
