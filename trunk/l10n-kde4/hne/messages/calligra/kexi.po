@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-19 01:29+0000\n"
+"POT-Creation-Date: 2014-06-28 01:33+0000\n"
 "PO-Revision-Date: 2009-03-02 23:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1264,7 +1264,7 @@ msgstr "नीचे जाव (&D)"
 msgid "Contents"
 msgstr "टिप्पनियाँ"
 
-#: formeditor/editlistviewdialog.cpp:119 formeditor/form.cpp:404
+#: formeditor/editlistviewdialog.cpp:119 formeditor/form_p.cpp:254
 #: plugins/queries/kexiquerydesignerguieditor.cpp:1755
 #: plugins/tables/kexitabledesignerview.cpp:374
 msgid "Caption"
@@ -1421,7 +1421,7 @@ msgstr "समूह-डब्बा"
 msgid "A container to group some widgets"
 msgstr "कुछ विजेट मन ल समूहबद्ध करे बर एक कंटेनर"
 
-#: formeditor/factories/containerfactory.cpp:510 formeditor/form.cpp:428
+#: formeditor/factories/containerfactory.cpp:510 formeditor/form_p.cpp:278
 #: plugins/forms/kexidbfactory.cpp:154
 msgid "Frame"
 msgstr "ढांचा"
@@ -1660,7 +1660,7 @@ msgctxt "Edit rich text for a widget"
 msgid "Edit Rich Text"
 msgstr "रिच पाठ संपादित करव"
 
-#: formeditor/factories/stdwidgetfactory.cpp:187 formeditor/form.cpp:731
+#: formeditor/factories/stdwidgetfactory.cpp:187 formeditor/form.cpp:285
 #: plugins/forms/kexidbfactory.cpp:84
 msgid "Form"
 msgstr "फार्म"
@@ -2339,75 +2339,165 @@ msgctxt "default indent value"
 msgid "default"
 msgstr "डिफाल्ट"
 
+#: formeditor/form.cpp:795
+#, fuzzy, kde-format
+#| msgid "Renaming object \"%1\" failed."
+msgid "Renaming widget \"%1\" to \"%2\" failed."
+msgstr "चीज \"%1\" नाम बदलना फेल."
+
+#: formeditor/form.cpp:1366
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
+msgid ""
+"Could not rename widget \"%1\" to \"%2\" because \"%3\" is not a valid name "
+"(identifier) for a widget.\n"
+msgstr "टेबल नाम \"%1\" ल \"%2\" मं बदले नइ जा सके. टेबल \"%3\" पहिली ही मौजूद हे."
+
+#: formeditor/form.cpp:1377
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
+msgid ""
+"Could not rename widget \"%1\" to \"%2\" because a widget with the name "
+"\"%3\" already exists.\n"
+msgstr "टेबल नाम \"%1\" ल \"%2\" मं बदले नइ जा सके. टेबल \"%3\" पहिली ही मौजूद हे."
+
+#: formeditor/form.cpp:1491 formeditor/form.cpp:1750
+#, fuzzy, kde-format
+msgid "Multiple Widgets (%1)"
+msgstr "बहुत से विजेट"
+
+#: formeditor/form.cpp:1740
+#, fuzzy, kde-format
+#| msgctxt "Object name : Object type"
+#| msgid "%1 : %2"
+msgid "%1 : Form"
+msgstr "%1 : %2"
+
+#: formeditor/form.cpp:1802
+msgid "No Buddy"
+msgstr "कोई बड्डी नइ"
+
+#: formeditor/form.cpp:1842
+msgid "Events"
+msgstr "घटना"
+
+#: formeditor/form.cpp:2235
+msgid ""
+"<b>Cannot create the layout.</b>\n"
+"All selected widgets must have the same parent."
+msgstr ""
+"<b>खाका नइ बना सके.</b>\n"
+"सब्बो चुने गे विजेट मं एके पैरेंट होए चाही."
+
+#: formeditor/form.cpp:2300
+msgctxt "Translators: please keep this string short (less than 20 chars)"
+msgid "Hor. Alignment"
+msgstr "आड़ी जमावट"
+
+#: formeditor/form.cpp:2301
+#, fuzzy
+msgid "Horizontal Alignment"
+msgstr "आड़ा (&H)"
+
+#: formeditor/form.cpp:2323
+msgctxt "Translators: please keep this string short (less than 20 chars)"
+msgid "Ver. Alignment"
+msgstr "खड़ी जमावट"
+
+#: formeditor/form.cpp:2324
+#, fuzzy
+msgid "Vertical Alignment"
+msgstr "खड़ा (&V)"
+
+#: formeditor/form.cpp:2336
+msgid "Word Break"
+msgstr "सब्द अवरोध"
+
+#: formeditor/form.cpp:2407
+msgid "Container's Layout"
+msgstr "कंटेनर खाका"
+
+#: formeditor/form.cpp:2414
+msgid "Layout Margin"
+msgstr "खाका हासिया"
+
+#: formeditor/form.cpp:2421
+#, fuzzy
+#| msgid "Layout Widgets"
+msgid "Layout Spacing"
+msgstr "विजेटों के खाके"
+
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
-#: formeditor/form.cpp:402 formeditor/form.cpp:403
+#: formeditor/form_p.cpp:252 formeditor/form_p.cpp:253
 #: plugins/tables/kexitabledesignerview.cpp:337
 #: widget/KexiConnectionSelector.ui:94
 msgid "Name"
 msgstr "नाम"
 
-#: formeditor/form.cpp:405
+#: formeditor/form_p.cpp:255
 #, fuzzy
 #| msgid "&Window"
 msgid "Window title"
 msgstr "विंडो (&W)"
 
-#: formeditor/form.cpp:406
+#: formeditor/form_p.cpp:256
 msgid "Text"
 msgstr "पाठ"
 
-#: formeditor/form.cpp:407
+#: formeditor/form_p.cpp:257
 msgid "Background Pixmap"
 msgstr "पिछोत अंगना पिक्समेप"
 
-#: formeditor/form.cpp:408
+#: formeditor/form_p.cpp:258
 #, fuzzy
 #| msgid "Table"
 msgid "Enabled"
 msgstr "टेबल"
 
-#: formeditor/form.cpp:409
+#: formeditor/form_p.cpp:259
 msgid "Geometry"
 msgstr "ज्यामिति"
 
-#: formeditor/form.cpp:410
+#: formeditor/form_p.cpp:260
 msgid "Size Policy"
 msgstr "आकार पालिसी"
 
-#: formeditor/form.cpp:411
+#: formeditor/form_p.cpp:261
 #, fuzzy
 #| msgctxt "Size Policy"
 #| msgid "Minimum"
 msgid "Minimum Size"
 msgstr "सबसे कम"
 
-#: formeditor/form.cpp:412
+#: formeditor/form_p.cpp:262
 #, fuzzy
 #| msgctxt "Size Policy"
 #| msgid "Maximum"
 msgid "Maximum Size"
 msgstr "मध्यम"
 
-#: formeditor/form.cpp:413
+#: formeditor/form_p.cpp:263
 #, fuzzy
 #| msgid "&Font..."
 msgid "Font"
 msgstr "फोंट... (&F)"
 
-#: formeditor/form.cpp:414
+#: formeditor/form_p.cpp:264
 #, fuzzy
 #| msgctxt "Mouse Cursor Shape"
 #| msgid "No cursor"
 msgid "Cursor"
 msgstr "कोई संकेतक नइ"
 
-#: formeditor/form.cpp:415
+#: formeditor/form_p.cpp:265
 #, fuzzy
 #| msgid "Frame Color"
 msgid "Foreground Color"
 msgstr "फ्रेम रंग"
 
-#: formeditor/form.cpp:416
+#: formeditor/form_p.cpp:266
 #, fuzzy
 #| msgctxt "(a property name, keep the text narrow!)"
 #| msgid ""
@@ -2418,42 +2508,42 @@ msgstr ""
 "लेबल पिछोत अंगना\n"
 " रंग"
 
-#: formeditor/form.cpp:417
+#: formeditor/form_p.cpp:267
 #, fuzzy
 #| msgid "No action"
 msgid "Fill Background"
 msgstr "कोई काम नइ"
 
-#: formeditor/form.cpp:418
+#: formeditor/form_p.cpp:268
 #, fuzzy
 msgid "Focus Policy"
 msgstr "आकार पालिसी"
 
-#: formeditor/form.cpp:419
+#: formeditor/form_p.cpp:269
 #, fuzzy
 #| msgid "margins:"
 msgid "Margin"
 msgstr "हासिए:"
 
-#: formeditor/form.cpp:420 plugins/forms/kexidbfactorybase.cpp:64
+#: formeditor/form_p.cpp:270 plugins/forms/kexidbfactorybase.cpp:64
 #, fuzzy
 #| msgid "Read only"
 msgid "Read Only"
 msgstr "सिरिफ पढ़े बर"
 
-#: formeditor/form.cpp:421
+#: formeditor/form_p.cpp:271
 #, fuzzy
 msgid "Style Sheet"
 msgstr "उपकिसिम"
 
-#: formeditor/form.cpp:422
+#: formeditor/form_p.cpp:272
 #, fuzzy
 #| msgid "Tools"
 msgctxt "Widget's Tooltip"
 msgid "Tooltip"
 msgstr "औजार"
 
-#: formeditor/form.cpp:423
+#: formeditor/form_p.cpp:273
 #, fuzzy
 #| msgctxt "Mouse Cursor Shape"
 #| msgid "What's This?"
@@ -2461,61 +2551,61 @@ msgctxt "Widget's Whats This"
 msgid "What's This"
 msgstr "ये का हे?"
 
-#: formeditor/form.cpp:424
+#: formeditor/form_p.cpp:274
 #, fuzzy
 #| msgid "Layout Widgets"
 msgid "Layout Direction"
 msgstr "विजेटों के खाके"
 
-#: formeditor/form.cpp:425
+#: formeditor/form_p.cpp:275
 #, fuzzy
 #| msgid "Size"
 msgid "Icon Size"
 msgstr "आकार"
 
-#: formeditor/form.cpp:429
+#: formeditor/form_p.cpp:279
 #, fuzzy
 #| msgid "Width"
 msgid "Frame Width"
 msgstr "चौड़ाई"
 
-#: formeditor/form.cpp:430
+#: formeditor/form_p.cpp:280
 msgid "Mid Frame Width"
 msgstr "मध्य फरमा चौड़ाई"
 
-#: formeditor/form.cpp:431
+#: formeditor/form_p.cpp:281
 #, fuzzy
 #| msgid "Frame"
 msgid "Frame Shape"
 msgstr "ढांचा"
 
-#: formeditor/form.cpp:432
+#: formeditor/form_p.cpp:282
 #, fuzzy
 #| msgid "Frame Color"
 msgid "Frame Shadow"
 msgstr "फ्रेम रंग"
 
-#: formeditor/form.cpp:434
+#: formeditor/form_p.cpp:284
 #, fuzzy
 msgid "Vertical Scrollbar"
 msgstr "खड़ा (&V)"
 
-#: formeditor/form.cpp:435
+#: formeditor/form_p.cpp:285
 #, fuzzy
 msgid "Horizontal Scrollbar"
 msgstr "आड़ा (&H)"
 
-#: formeditor/form.cpp:437
+#: formeditor/form_p.cpp:287
 #, fuzzy
 #| msgid "No action"
 msgid "No Background"
 msgstr "कोई काम नइ"
 
-#: formeditor/form.cpp:438
+#: formeditor/form_p.cpp:288
 msgid "Palette Foreground"
 msgstr "पैलेट आगू तरफ"
 
-#: formeditor/form.cpp:439
+#: formeditor/form_p.cpp:289
 #, fuzzy
 #| msgctxt "AutoField editor's type"
 #| msgid "Auto"
@@ -2523,7 +2613,7 @@ msgctxt "Auto (HINT: for AutoText)"
 msgid "Auto"
 msgstr "अपन आप"
 
-#: formeditor/form.cpp:441
+#: formeditor/form_p.cpp:291
 #, fuzzy
 #| msgctxt "AutoField editor's type"
 #| msgid "Auto"
@@ -2531,149 +2621,149 @@ msgctxt "Auto (HINT: for Align)"
 msgid "Auto"
 msgstr "अपन आप"
 
-#: formeditor/form.cpp:442
+#: formeditor/form_p.cpp:292
 #, fuzzy
 #| msgid "Left"
 msgctxt "Left (HINT: for Align)"
 msgid "Left"
 msgstr "डेरी"
 
-#: formeditor/form.cpp:443
+#: formeditor/form_p.cpp:293
 #, fuzzy
 #| msgid "Right"
 msgctxt "Right (HINT: for Align)"
 msgid "Right"
 msgstr "जेवनी"
 
-#: formeditor/form.cpp:444 formeditor/form.cpp:446
+#: formeditor/form_p.cpp:294 formeditor/form_p.cpp:296
 #, fuzzy
 #| msgid "Center"
 msgctxt "Center (HINT: for Align)"
 msgid "Center"
 msgstr "बीच में"
 
-#: formeditor/form.cpp:445
+#: formeditor/form_p.cpp:295
 msgctxt "Justify (HINT: for Align)"
 msgid "Justify"
 msgstr "समान रुप से जेवनी-डेरी"
 
-#: formeditor/form.cpp:447
+#: formeditor/form_p.cpp:297
 #, fuzzy
 #| msgid "Top"
 msgctxt "Top (HINT: for Align)"
 msgid "Top"
 msgstr "ऊपर"
 
-#: formeditor/form.cpp:448
+#: formeditor/form_p.cpp:298
 #, fuzzy
 #| msgid "Bottom"
 msgctxt "Bottom (HINT: for Align)"
 msgid "Bottom"
 msgstr "नीचे"
 
-#: formeditor/form.cpp:450
+#: formeditor/form_p.cpp:300
 #, fuzzy
 #| msgid "Frame"
 msgctxt "No Frame (HINT: for Frame Shape)"
 msgid "No Frame"
 msgstr "ढांचा"
 
-#: formeditor/form.cpp:451
+#: formeditor/form_p.cpp:301
 msgctxt "Box (HINT: for Frame Shape)"
 msgid "Box"
 msgstr "डब्बा"
 
-#: formeditor/form.cpp:452
+#: formeditor/form_p.cpp:302
 #, fuzzy
 #| msgid "Cancel"
 msgctxt "Panel (HINT: for Frame Shape)"
 msgid "Panel"
 msgstr "खारिज करव"
 
-#: formeditor/form.cpp:453
+#: formeditor/form_p.cpp:303
 #, fuzzy
 #| msgid "&Window"
 msgctxt "Windows Panel (HINT: for Frame Shape)"
 msgid "Windows Panel"
 msgstr "विंडो (&W)"
 
-#: formeditor/form.cpp:454
+#: formeditor/form_p.cpp:304
 #, fuzzy
 #| msgid "Horz. Size Type"
 msgctxt "Horiz. Line (HINT: for Frame Shape)"
 msgid "Horiz. Line"
 msgstr "आड़ा आकार किसिम"
 
-#: formeditor/form.cpp:455
+#: formeditor/form_p.cpp:305
 #, fuzzy
 msgctxt "Vertical Line (HINT: for Frame Shape)"
 msgid "Vertical Line"
 msgstr "खड़ा (&V)"
 
-#: formeditor/form.cpp:456
+#: formeditor/form_p.cpp:306
 #, fuzzy
 msgctxt "Styled (HINT: for Frame Shape)"
 msgid "Styled"
 msgstr "उपकिसिम"
 
-#: formeditor/form.cpp:457
+#: formeditor/form_p.cpp:307
 msgctxt "Popup (HINT: for Frame Shape)"
 msgid "Popup"
 msgstr "पाप अप"
 
-#: formeditor/form.cpp:458
+#: formeditor/form_p.cpp:308
 msgctxt "Menu Bar (HINT: for Frame Shape)"
 msgid "Menu Bar"
 msgstr "मेन्यूपट्टी"
 
-#: formeditor/form.cpp:459
+#: formeditor/form_p.cpp:309
 #, fuzzy
 #| msgid "Main Toolbar"
 msgctxt "Toolbar (HINT: for Frame Shape)"
 msgid "Toolbar"
 msgstr "मुख्य औजार पट्टी"
 
-#: formeditor/form.cpp:460
+#: formeditor/form_p.cpp:310
 #, fuzzy
 #| msgid "Text Box"
 msgctxt "Text Box (HINT: for Frame Shape)"
 msgid "Text Box"
 msgstr "पाठ डब्बा"
 
-#: formeditor/form.cpp:461
+#: formeditor/form_p.cpp:311
 #, fuzzy
 #| msgid "To Widest"
 msgctxt "Tab Widget (HINT: for Frame Shape)"
 msgid "Tab Widget"
 msgstr "सबसे चौड़े में"
 
-#: formeditor/form.cpp:462
+#: formeditor/form_p.cpp:312
 #, fuzzy
 #| msgid "Group by"
 msgctxt "Group Box (HINT: for Frame Shape)"
 msgid "Group Box"
 msgstr "के आधार मं समूहबद्ध करव"
 
-#: formeditor/form.cpp:464
+#: formeditor/form_p.cpp:314
 #, fuzzy
 #| msgid "Print"
 msgctxt "Plain (HINT: for Frame Shadow)"
 msgid "Plain"
 msgstr "छापव"
 
-#: formeditor/form.cpp:465
+#: formeditor/form_p.cpp:315
 #, fuzzy
 #| msgid "Raise"
 msgctxt "Raised (HINT: for Frame Shadow)"
 msgid "Raised"
 msgstr "ऊपर उठाव"
 
-#: formeditor/form.cpp:466
+#: formeditor/form_p.cpp:316
 msgctxt "Sunken (HINT: for Frame Shadow)"
 msgid "Sunken"
 msgstr "संकन"
 
-#: formeditor/form.cpp:467
+#: formeditor/form_p.cpp:317
 #, fuzzy
 #| msgctxt "General properties"
 #| msgid "General"
@@ -2681,7 +2771,7 @@ msgctxt "for Frame Shadow"
 msgid "Internal"
 msgstr "सामान्य"
 
-#: formeditor/form.cpp:469
+#: formeditor/form_p.cpp:319
 #, fuzzy
 #| msgctxt "Mouse Cursor Shape"
 #| msgid "No cursor"
@@ -2689,162 +2779,72 @@ msgctxt "No Focus (HINT: for Focus)"
 msgid "No Focus"
 msgstr "कोई संकेतक नइ"
 
-#: formeditor/form.cpp:470
+#: formeditor/form_p.cpp:320
 #, fuzzy
 #| msgid "Table"
 msgctxt "Tab (HINT: for Focus)"
 msgid "Tab"
 msgstr "टेबल"
 
-#: formeditor/form.cpp:471
+#: formeditor/form_p.cpp:321
 #, fuzzy
 #| msgid "On Click"
 msgctxt "Click (HINT: for Focus)"
 msgid "Click"
 msgstr "किलिक करे पर"
 
-#: formeditor/form.cpp:472
+#: formeditor/form_p.cpp:322
 #, fuzzy
 #| msgid "Tick"
 msgctxt "Tab/Click (HINT: for Focus)"
 msgid "Tab/Click"
 msgstr "टिक"
 
-#: formeditor/form.cpp:473
+#: formeditor/form_p.cpp:323
 msgctxt "Tab/Click/MouseWheel (HINT: for Focus)"
 msgid "Tab/Click/MouseWheel"
 msgstr "टैब/किलिक/मुसुवाव्हील"
 
-#: formeditor/form.cpp:475
+#: formeditor/form_p.cpp:325
 #, fuzzy
 #| msgctxt "AutoField editor's type"
 #| msgid "Auto"
 msgid "Auto"
 msgstr "अपन आप"
 
-#: formeditor/form.cpp:476
+#: formeditor/form_p.cpp:326
 msgid "Always Off"
 msgstr "हमेसा बंद"
 
-#: formeditor/form.cpp:477
+#: formeditor/form_p.cpp:327
 msgid "Always On"
 msgstr "हमेसा चालू"
 
-#: formeditor/form.cpp:480
+#: formeditor/form_p.cpp:330
 #, fuzzy
 #| msgid "&Horizontally"
 msgid "Horizontal"
 msgstr "आड़ा (&H)"
 
-#: formeditor/form.cpp:481
+#: formeditor/form_p.cpp:331
 #, fuzzy
 #| msgid "&Vertically"
 msgid "Vertical"
 msgstr "खड़ा (&V)"
 
-#: formeditor/form.cpp:484
+#: formeditor/form_p.cpp:334
 #, fuzzy
 #| msgid "To Right"
 msgid "Left to Right"
 msgstr "जेवनी के तरफ"
 
-#: formeditor/form.cpp:485
+#: formeditor/form_p.cpp:335
 #, fuzzy
 #| msgid "To Left"
 msgid "Right to Left"
 msgstr "डेरी के तरफ"
 
-#: formeditor/form.cpp:1241
-#, fuzzy, kde-format
-#| msgid "Renaming object \"%1\" failed."
-msgid "Renaming widget \"%1\" to \"%2\" failed."
-msgstr "चीज \"%1\" नाम बदलना फेल."
-
-#: formeditor/form.cpp:1812
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
-msgid ""
-"Could not rename widget \"%1\" to \"%2\" because \"%3\" is not a valid name "
-"(identifier) for a widget.\n"
-msgstr "टेबल नाम \"%1\" ल \"%2\" मं बदले नइ जा सके. टेबल \"%3\" पहिली ही मौजूद हे."
-
-#: formeditor/form.cpp:1823
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
-msgid ""
-"Could not rename widget \"%1\" to \"%2\" because a widget with the name "
-"\"%3\" already exists.\n"
-msgstr "टेबल नाम \"%1\" ल \"%2\" मं बदले नइ जा सके. टेबल \"%3\" पहिली ही मौजूद हे."
-
-#: formeditor/form.cpp:1937 formeditor/form.cpp:2196
-#, fuzzy, kde-format
-msgid "Multiple Widgets (%1)"
-msgstr "बहुत से विजेट"
-
-#: formeditor/form.cpp:2186
-#, fuzzy, kde-format
-#| msgctxt "Object name : Object type"
-#| msgid "%1 : %2"
-msgid "%1 : Form"
-msgstr "%1 : %2"
-
-#: formeditor/form.cpp:2248
-msgid "No Buddy"
-msgstr "कोई बड्डी नइ"
-
-#: formeditor/form.cpp:2288
-msgid "Events"
-msgstr "घटना"
-
-#: formeditor/form.cpp:2681
-msgid ""
-"<b>Cannot create the layout.</b>\n"
-"All selected widgets must have the same parent."
-msgstr ""
-"<b>खाका नइ बना सके.</b>\n"
-"सब्बो चुने गे विजेट मं एके पैरेंट होए चाही."
-
-#: formeditor/form.cpp:2746
-msgctxt "Translators: please keep this string short (less than 20 chars)"
-msgid "Hor. Alignment"
-msgstr "आड़ी जमावट"
-
-#: formeditor/form.cpp:2747
-#, fuzzy
-msgid "Horizontal Alignment"
-msgstr "आड़ा (&H)"
-
-#: formeditor/form.cpp:2769
-msgctxt "Translators: please keep this string short (less than 20 chars)"
-msgid "Ver. Alignment"
-msgstr "खड़ी जमावट"
-
-#: formeditor/form.cpp:2770
-#, fuzzy
-msgid "Vertical Alignment"
-msgstr "खड़ा (&V)"
-
-#: formeditor/form.cpp:2782
-msgid "Word Break"
-msgstr "सब्द अवरोध"
-
-#: formeditor/form.cpp:2853
-msgid "Container's Layout"
-msgstr "कंटेनर खाका"
-
-#: formeditor/form.cpp:2860
-msgid "Layout Margin"
-msgstr "खाका हासिया"
-
-#: formeditor/form.cpp:2867
-#, fuzzy
-#| msgid "Layout Widgets"
-msgid "Layout Spacing"
-msgstr "विजेटों के खाके"
-
-#: formeditor/formIO.cpp:141 formeditor/formIO.cpp:321
+#: formeditor/formIO.cpp:140 formeditor/formIO.cpp:320
 msgid "*.ui|Qt Designer UI Files"
 msgstr "*.ui|क्यू-टी डिजाइनर यूआई फाइल"
 
@@ -3294,7 +3294,7 @@ msgid "Fi&nd:"
 msgstr "खोजव: (&n)"
 
 #. i18n: ectx: property (text), widget (KPushButton, m_btnReplace)
-#: main/kexifinddialog.ui:107 migration/importwizard.cpp:815
+#: main/kexifinddialog.ui:107 migration/importwizard.cpp:817
 #: widget/KexiNameDialog.cpp:164 widget/utils/kexicontextmenuutils.cpp:155
 msgid "&Replace"
 msgstr "बदलव (&R)"
@@ -4223,10 +4223,10 @@ msgstr "केएक्जाई अनुपरयोग बर बग रप�
 msgid "Activates \"What's This\" tool."
 msgstr "\"ये का हे\" औजार देखाथे ."
 
-#: main/KexiMainWindow_p.h:897 migration/importwizard.cpp:970
-#: migration/importwizard.cpp:973 migration/importwizard.cpp:975
-#: migration/importwizard.cpp:977 migration/importwizard.cpp:979
-#: migration/importwizard.cpp:981
+#: main/KexiMainWindow_p.h:897 migration/importwizard.cpp:972
+#: migration/importwizard.cpp:975 migration/importwizard.cpp:977
+#: migration/importwizard.cpp:979 migration/importwizard.cpp:981
+#: migration/importwizard.cpp:983
 msgid "Help"
 msgstr "मदद"
 
@@ -5038,8 +5038,8 @@ msgid "Share"
 msgstr ""
 
 #: migration/AlterSchemaWidget.cpp:51 migration/AlterSchemaWidget.cpp:113
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:166
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1366
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1277
+#: plugins/importexport/csv/KexiCSVImportDialogModel.cpp:75
 #, kde-format
 msgid "Column %1"
 msgstr "खंभा %1"
@@ -5153,7 +5153,7 @@ msgid "Alter the Detected Design"
 msgstr ""
 
 #: migration/importtablewizard.cpp:277 migration/importwizard.cpp:457
-#: migration/importwizard.cpp:834
+#: migration/importwizard.cpp:836
 msgid "Success"
 msgstr "सफलता"
 
@@ -5172,13 +5172,13 @@ msgid ""
 "\n"
 msgstr ""
 
-#: migration/importtablewizard.cpp:463 migration/importwizard.cpp:719
+#: migration/importtablewizard.cpp:463 migration/importwizard.cpp:721
 msgid "No appropriate migration driver found."
 msgstr "कोई उपयुक्त माइग्रेसन ड्राइवर नइ मिलिस."
 
 #: migration/importtablewizard.cpp:552
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:481
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1822
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:392
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1733
 msgid "No project available."
 msgstr "कोई परियोजना नइ मिलत."
 
@@ -5293,21 +5293,21 @@ msgid ""
 "Depending on size of the database this may take some time."
 msgstr ""
 
-#: migration/importwizard.cpp:812
+#: migration/importwizard.cpp:814
 #, kde-format
 msgid "Database %1 already exists.<p>Do you want to replace it with a new one?"
 msgstr ""
 "डाटाबेस %1 पहिली ही मौजूद हे.<p>का आप मन एला एक नवा, खाली डाटाबेस से बदलना चाहथो ?"
 
-#: migration/importwizard.cpp:815
+#: migration/importwizard.cpp:817
 msgid "No"
 msgstr "नइ"
 
-#: migration/importwizard.cpp:848
+#: migration/importwizard.cpp:850
 msgid "Failure"
 msgstr "फेल"
 
-#: migration/importwizard.cpp:851
+#: migration/importwizard.cpp:853
 #, kde-format
 msgid ""
 "<p>Import failed.</p>%1<p>%2</p><p>You can click \"Back\" button and try "
@@ -5315,49 +5315,49 @@ msgid ""
 msgstr ""
 "<p>आयात फेल.</p>%1<p>%2</p><p>आप \"पीछू\" बटन ल किलिक कर फिर से आजमा सकथो .</p>"
 
-#: migration/importwizard.cpp:871
+#: migration/importwizard.cpp:873
 msgid "Select source database filename."
 msgstr "स्रोत डाटाबेस फाइलनाम चुनव."
 
-#: migration/importwizard.cpp:876
+#: migration/importwizard.cpp:878
 msgid "Select source database."
 msgstr "स्रोत डाटाबेस चुनव."
 
-#: migration/importwizard.cpp:890
+#: migration/importwizard.cpp:892
 msgid "Could not import database. This type is not supported."
 msgstr "डाटाबेस आयात नइ कर सकिस. ए किसिम समर्थित नइ हे."
 
-#: migration/importwizard.cpp:891
+#: migration/importwizard.cpp:893
 #, kde-format
 msgid "Could not import database \"%1\". This type is not supported."
 msgstr "डाटाबेस \"%1\" आयात नइ कर सकिस. ए किसिम समर्थित नइ हे."
 
-#: migration/importwizard.cpp:905
+#: migration/importwizard.cpp:907
 msgid "Importing in progress..."
 msgstr "आयात प्रगति में..."
 
-#: migration/importwizard.cpp:909
+#: migration/importwizard.cpp:911
 #, kde-format
 msgid "Database has been imported into Kexi database project \"%1\"."
 msgstr "डाटाबेस ल केएक्जाई डाटाबेस परियोजना \"%1\" मं आयात कर ले गे हे."
 
-#: migration/importwizard.cpp:970 migration/importwizard.cpp:981
+#: migration/importwizard.cpp:972 migration/importwizard.cpp:983
 msgid "No help is available for this page."
 msgstr "ये पेज बर कोनो मदद नइ मिलत हे."
 
-#: migration/importwizard.cpp:973
+#: migration/importwizard.cpp:975
 msgid "Here you can choose the location to import data from."
 msgstr "डाटा ल आयात करे बर इहां आप मन डाटाबेस के जगह चुन सकथो ."
 
-#: migration/importwizard.cpp:975
+#: migration/importwizard.cpp:977
 msgid "Here you can choose the actual database to import data from."
 msgstr "डाटा ल आयात करे बर इहां आप मन सही डाटाबेस चुन सकथो ."
 
-#: migration/importwizard.cpp:977
+#: migration/importwizard.cpp:979
 msgid "Here you can choose the location to save the data."
 msgstr "इहां आप मन डाटा ल सहेजे बर जगह चुन सकथो ."
 
-#: migration/importwizard.cpp:979
+#: migration/importwizard.cpp:981
 msgid ""
 "Here you can choose the location to save the data in and the new database "
 "name."
@@ -6302,12 +6302,12 @@ msgid "Show Options >>"
 msgstr "विकल्प देखाव >>"
 
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:176
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:663
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:574
 msgid "Delimiter:"
 msgstr "डेलिमिटर"
 
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:185
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:692
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:603
 msgid "Text quote:"
 msgstr "पाठ उदाहरन:"
 
@@ -6341,138 +6341,131 @@ msgstr "निर्यात करत हे"
 msgid "Hide Options <<"
 msgstr "विकल्प लुकाव <<"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:178
-#, fuzzy
-#| msgid "Column name"
-msgctxt "@title:row"
-msgid "Column name"
-msgstr "खंभा के नाम"
-
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:318
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:229
 msgid "no"
 msgstr "नइ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:320
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:231
 msgid "false"
 msgstr "गलत"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:328
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:239
 #, fuzzy
 #| msgid "Import CSV Data File"
 msgid "Import CSV Data From File"
 msgstr "सीएसवी डाटा फाइल आयात करव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:328
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:239
 #, fuzzy
 #| msgid "Copy Data From Table to Clipboard"
 msgid "Paste CSV Data From Clipboard"
 msgstr "टेबल मं से डाटा क्लिपबोर्ड मं नकल करव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:337
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:248
 #: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:154
 msgid "&Import..."
 msgstr "आयात... (&I)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:339
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:250
 #, fuzzy
 #| msgid "Next Page"
 msgctxt "Opposite to Back"
 msgid "Next"
 msgstr "अगला पेज"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:412
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:323
 msgid "Open CSV Data File"
 msgstr "सीएसवी डाटा फाइल खोलव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:461
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:372
 #, fuzzy
 #| msgid "Select source database filename."
 msgctxt "@info"
 msgid "Select source filename."
 msgstr "स्रोत डाटाबेस फाइलनाम चुनव."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:474
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:385
 msgid "Data set contains no rows. Do you want to import empty table?"
 msgstr "डाटा सेट तिर कोनो लकीर नइ हे. का आप मन खाली टेबल आयात करना चाहथो ?"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:487
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1827
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:398
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1738
 msgid "No database connection available."
 msgstr "कोई डााटाबेस कनेक्सन नइ मिलत हे."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:505
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:416
 #: widget/KexiNameDialog.cpp:155
 msgid "Please choose other name."
 msgstr "किरपा करके, अउ दूसरा नाम चुनव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:555
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:466
 #, fuzzy
 #| msgid "Loading CSV Data"
 msgctxt "@title:window"
 msgid "Loading CSV Data"
 msgstr "सीएसवी डाटा लोड करत हे"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:556
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:467
 #, fuzzy, kde-format
 #| msgid "Loading CSV Data from \"%1\"..."
 msgctxt "@info"
 msgid "Loading CSV Data from <filename>%1</filename>..."
 msgstr "\"%1\" से सीएसवी डाटा लोड करत हे..."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:622
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:836
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:533
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:747
 #, fuzzy
 #| msgid "Table:"
 msgid "To table:"
 msgstr "सारनीः"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:639
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:550
 #, fuzzy
 #| msgid "Select Type of Import"
 msgid "Select file name for import"
 msgstr "आयात के किसिम चुनव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:649
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:560
 msgid "Preview of data from file:"
 msgstr "फाइल से डाटा प्रिव्यू करव:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:650
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:561
 #, fuzzy
 #| msgid "Preview of data from clipboard:"
 msgid "Preview of data from clipboard"
 msgstr "क्लिपबोर्ड से डाटा प्रिव्यू करव:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:684
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:595
 msgid "Primary key"
 msgstr "प्राथमिक कुंजी"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:716
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:627
 msgid "Ignore duplicated delimiters"
 msgstr "अनुकृति डेलिमीटर ल अनदेखा करव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:721
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:632
 msgid "First row contains column names"
 msgstr "पहिली लकीर मं खंभा नाम सम्मिलित हे"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:739
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:650
 #, fuzzy
 #| msgid "CSV Import Options"
 msgid "Import Options"
 msgstr "सीएसवी आयात विकल्प"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:748
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:659
 #, fuzzy
 #| msgid "New database"
 msgctxt "@action:button"
 msgid "New table"
 msgstr "नवा डाटाबेस"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:749
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:660
 msgctxt "CSV import: data will be appended to a new table"
 msgid "Data will be appended to a new table"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:751
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:662
 #, fuzzy
 #| msgctxt "Keep this text narrow: split to multiple rows if needed"
 #| msgid ""
@@ -6484,97 +6477,97 @@ msgstr ""
 "अभी हाल के डाटाबेस\n"
 " आयात करव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:752
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:663
 msgctxt "CSV import: data will be appended to existing table"
 msgid "Data will be appended to existing table"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:763
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:674
 msgid "Choose Method of Saving Imported Data"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:794
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:705
 #, fuzzy
 #| msgid "Caption:"
 msgctxt "@label"
 msgid "Caption:"
 msgstr "सीर्सक:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:795
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:706
 #, fuzzy
 #| msgid "Name:"
 msgctxt "@label"
 msgid "Name:"
 msgstr "नाम:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:796
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:707
 #, fuzzy
 #| msgid "&Break Layout"
 msgctxt "@label"
 msgid "Row count:"
 msgstr "खाका ब्रेक करव (&B)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:797
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:708
 #, fuzzy
 #| msgid "Column name"
 msgctxt "@label"
 msgid "Column count:"
 msgstr "खंभा के नाम"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:823
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:734
 msgctxt "@label"
 msgid "Choose Name of Destination Table"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:831
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:742
 #, fuzzy
 #| msgid "To CSV file:"
 msgid "From CSV file:"
 msgstr "सीएसवी फाइल में:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:831
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:742
 #, fuzzy
 #| msgid "To clipboard:"
 msgid "From Clipboard"
 msgstr "क्लिपबोर्ड में:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:850
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:761
 #, fuzzy
 #| msgid "Importing"
 msgid "Importing..."
 msgstr "आयात करत हे"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:903
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:814
 #, kde-format
 msgid "Cannot open input file <nobr>\"%1\"</nobr>."
 msgstr "इनपुट फाइल <nobr>\"%1\"</nobr> खोल नइ सकिस."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:980
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:891
 #, kde-format
 msgid "Start at line (1-%1):"
 msgstr "लकीर मं चालू (1-%1):"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:981
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:989
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:892
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:900
 msgid "Start at line:"
 msgstr "लकीर मं सुरूः"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1652
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1563
 #: plugins/queries/kexiquerydesignerguieditor.cpp:226
 msgid "Column"
 msgstr "खंभा"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1689
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1600
 msgctxt "@info"
 msgid "An error occurred during insert record."
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1770
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1681
 #, kde-format
 msgid "Format for column %1:"
 msgstr "खंभा %1 बर फारमेट:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1842
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1753
 msgid ""
 "No Primary Key (autonumber) has been defined.\n"
 "Should it be automatically defined on import (recommended)?\n"
@@ -6583,68 +6576,75 @@ msgid ""
 "on database type)."
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1846
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1757
 msgctxt "Add Database Primary Key to a Table"
 msgid "Add Primary Key"
 msgstr "प्राथमिक कुंजी जोड़व"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1847
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1758
 msgctxt "Do Not Add Database Primary Key to a Table"
 msgid "Do Not Add"
 msgstr "जोड़व नइ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1931
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1842
 msgid "<p>Fields count does not match!</p><p>Please choose another table.</p>"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1971
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1882
 #, kde-format
 msgid "Importing CSV Data from <nobr>\"%1\"</nobr> into \"%2\" table..."
 msgstr "सीएसवी डाटा ल <nobr>\"%1\"</nobr> मं से टेबल \"%2\" मं आयात करत हे..."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1987
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1898
 msgid "Import has been canceled."
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1989
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1900
 msgid "Error occurred during import."
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2023
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1934
 #, kde-format
 msgid "Data has been successfully imported to table \"%1\"."
 msgstr "डाटा ल सफलतापूर्वक टेबल \"%1\" मं सहेजे गिस."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2049
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1960
 msgctxt "Text type for column"
 msgid "Text"
 msgstr "पाठ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2051
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1962
 msgctxt "Numeric type for column"
 msgid "Number"
 msgstr "नंबर"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2053
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1964
 msgctxt "Currency type for column"
 msgid "Currency"
 msgstr "मुद्रा"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2134
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2045
 #, kde-format
 msgctxt "row count"
 msgid "(rows: %1)"
 msgstr "(पंक्तियाँ: %1)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2138
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2049
 #, kde-format
 msgctxt "row count"
 msgid "(rows: more than %1)"
 msgstr "(पंक्तियाँ: %1 से अधिक)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2139
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2050
 msgid "Not all rows are visible on this preview"
 msgstr "ये प्रिव्यू मं सब्बो पंक्तिया दिखत नइ होही"
+
+#: plugins/importexport/csv/KexiCSVImportDialogModel.cpp:88
+#, fuzzy
+#| msgid "Column name"
+msgctxt "@title:row"
+msgid "Column name"
+msgstr "खंभा के नाम"
 
 #: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:102
 msgid "CSV Import Options"
