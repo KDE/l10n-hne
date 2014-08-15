@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-08-08 01:42+0000\n"
+"POT-Creation-Date: 2014-08-15 01:50+0000\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -663,7 +663,7 @@ msgstr "एलबम (%1) के नाम बदलव"
 msgid "Enter new album name:"
 msgstr "नवा एलबम नाम भरव:"
 
-#: digikam/album/albumpropsedit.cpp:122 digikam/album/albumpropsedit.cpp:273
+#: digikam/album/albumpropsedit.cpp:122 digikam/album/albumpropsedit.cpp:270
 msgid "New Album"
 msgstr "नवा एलबम"
 
@@ -695,37 +695,37 @@ msgstr ""
 msgid "Ch&ild Of:"
 msgstr ""
 
-#: digikam/album/albumpropsedit.cpp:178
+#: digikam/album/albumpropsedit.cpp:177
 #, fuzzy
 msgid "Ca&ption:"
 msgstr "सीर्सक:"
 
-#: digikam/album/albumpropsedit.cpp:186
+#: digikam/album/albumpropsedit.cpp:185
 msgid "Album &date:"
 msgstr "एलबम तारीक: (&d)"
 
-#: digikam/album/albumpropsedit.cpp:193
+#: digikam/album/albumpropsedit.cpp:192
 msgctxt "Selects the date of the oldest image"
 msgid "&Oldest"
 msgstr "सबसे जुन्ना (&O)"
 
-#: digikam/album/albumpropsedit.cpp:195
+#: digikam/album/albumpropsedit.cpp:194
 msgctxt "Calculates the average date"
 msgid "&Average"
 msgstr "औसत (&A)"
 
-#: digikam/album/albumpropsedit.cpp:197
+#: digikam/album/albumpropsedit.cpp:196
 msgctxt "Selects the date of the newest image"
 msgid "Newest"
 msgstr "एकदम नवा"
 
-#: digikam/album/albumpropsedit.cpp:275
+#: digikam/album/albumpropsedit.cpp:272
 #, fuzzy
 #| msgid "Select Album"
 msgid "Selected Album (Default)"
 msgstr "एलबम चुनव"
 
-#: digikam/album/albumpropsedit.cpp:276
+#: digikam/album/albumpropsedit.cpp:273
 #, fuzzy
 #| msgid "Clear current selection"
 msgctxt "top level folder of album"
@@ -4188,24 +4188,34 @@ msgctxt "Fuzzy Search images, as dupplicates, sketch, similars searches"
 msgid "Fuzzy"
 msgstr ""
 
-#: digikam/views/leftsidebarwidgets.cpp:1303
+#: digikam/views/leftsidebarwidgets.cpp:1258
+#, fuzzy
+#| msgid "Find duplicates"
+msgid "View Non Geolocated Items"
+msgstr "डुप्लीकेट खोजव"
+
+#: digikam/views/leftsidebarwidgets.cpp:1311
 msgctxt "Search images on a map"
 msgid "Map"
 msgstr ""
 
-#: digikam/views/leftsidebarwidgets.cpp:1351
+#: digikam/views/leftsidebarwidgets.cpp:1316
+msgid "No GPS Info Items"
+msgstr ""
+
+#: digikam/views/leftsidebarwidgets.cpp:1382
 #, fuzzy
 #| msgid "Local Collections"
 msgid "Scan collection for faces"
 msgstr "लोकर संग्रह"
 
-#: digikam/views/leftsidebarwidgets.cpp:1356
+#: digikam/views/leftsidebarwidgets.cpp:1387
 #, fuzzy
 #| msgid "&Replace"
 msgid "People Tags"
 msgstr "बदलव (&R)"
 
-#: digikam/views/leftsidebarwidgets.cpp:1432
+#: digikam/views/leftsidebarwidgets.cpp:1463
 #, fuzzy
 #| msgid "&Replace"
 msgctxt "Browse images sorted by depicted people"
@@ -4265,7 +4275,7 @@ msgstr "संपीडन:"
 
 #: digikam/views/tableview/tableview_column_audiovideo.cpp:90
 #: digikam/views/tableview/tableview_column_audiovideo.cpp:115
-#: utilities/searchwindow/searchfields.cpp:583
+#: utilities/searchwindow/searchfields.cpp:588
 #, fuzzy
 #| msgid "Duration: %1"
 msgid "Duration"
@@ -4314,14 +4324,14 @@ msgstr "रंग विधि:"
 #: digikam/views/tableview/tableview_column_digikam.cpp:115
 #: libs/template/templatelist.cpp:83
 #: utilities/queuemanager/views/workflowlist.cpp:97
-#: utilities/searchwindow/searchfields.cpp:536
+#: utilities/searchwindow/searchfields.cpp:541
 #: utilities/setup/setupcamera.cpp:285
 msgid "Title"
 msgstr "सीर्सक"
 
 #: digikam/views/tableview/tableview_column_digikam.cpp:98
 #: digikam/views/tableview/tableview_column_digikam.cpp:117
-#: utilities/searchwindow/searchfields.cpp:515
+#: utilities/searchwindow/searchfields.cpp:520
 msgid "Caption"
 msgstr "सीर्सक"
 
@@ -14946,14 +14956,14 @@ msgid "Display Aspect Ratio"
 msgstr "आस्पेक्ट रेसो बनाए रखव"
 
 #: utilities/advancedrename/parser/options/database/keys/metadatakeys.cpp:87
-#: utilities/searchwindow/searchfields.cpp:635
+#: utilities/searchwindow/searchfields.cpp:640
 #, fuzzy
 #| msgid "Audio Files"
 msgid "Audio Bit Rate"
 msgstr "आडियो फाइल मन ल"
 
 #: utilities/advancedrename/parser/options/database/keys/metadatakeys.cpp:88
-#: utilities/searchwindow/searchfields.cpp:652
+#: utilities/searchwindow/searchfields.cpp:657
 #, fuzzy
 #| msgid "Alpha Channel: "
 msgid "Audio Channel Type"
@@ -20094,69 +20104,82 @@ msgstr ""
 msgid "Macro, close or distant view"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:515
+#: utilities/searchwindow/searchfields.cpp:511
+msgid "GPS"
+msgstr ""
+
+#: utilities/searchwindow/searchfields.cpp:511
+#, fuzzy
+msgid "Image has no GPS info"
+msgstr "%1 मं फोटू मिले"
+
+#: utilities/searchwindow/searchfields.cpp:512
+msgid "No GPS Info"
+msgstr ""
+
+#: utilities/searchwindow/searchfields.cpp:520
 msgid "Return pictures whose comment contains"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:522
+#: utilities/searchwindow/searchfields.cpp:527
 msgid "Author"
 msgstr "लेखक"
 
-#: utilities/searchwindow/searchfields.cpp:522
+#: utilities/searchwindow/searchfields.cpp:527
 msgid "Return pictures commented by"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:529
+#: utilities/searchwindow/searchfields.cpp:534
 msgid "Headline"
 msgstr "हेडलाइन"
 
-#: utilities/searchwindow/searchfields.cpp:529
+#: utilities/searchwindow/searchfields.cpp:534
 msgid "Return pictures with the IPTC headline"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:536
+#: utilities/searchwindow/searchfields.cpp:541
 msgid "Return pictures with the IPTC title"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:543
+#: utilities/searchwindow/searchfields.cpp:548
 msgid "Find pictures that have associated all these words:"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:550
-#: utilities/searchwindow/searchfields.cpp:569
+#: utilities/searchwindow/searchfields.cpp:555
+#: utilities/searchwindow/searchfields.cpp:574
 #, fuzzy
 #| msgid "Aspect ratio:"
 msgid "Aspect Ratio"
 msgstr "आस्पेक्ट रेसो:"
 
-#: utilities/searchwindow/searchfields.cpp:550
+#: utilities/searchwindow/searchfields.cpp:555
 #, fuzzy
 #| msgid "Find Pictures"
 msgid "Return pictures with the aspect ratio"
 msgstr "फोटू खोजव"
 
-#: utilities/searchwindow/searchfields.cpp:557
+#: utilities/searchwindow/searchfields.cpp:562
 #, fuzzy
 #| msgid "File Size"
 msgid "Pixel Size"
 msgstr "फाइल आकार से"
 
-#: utilities/searchwindow/searchfields.cpp:557
+#: utilities/searchwindow/searchfields.cpp:562
 msgid "Value of (Width * Height) between"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:569
+#: utilities/searchwindow/searchfields.cpp:574
 #, fuzzy
 #| msgid "Find Pictures"
 msgid "Return video with the frame aspect ratio"
 msgstr "फोटू खोजव"
 
-#: utilities/searchwindow/searchfields.cpp:583
+#: utilities/searchwindow/searchfields.cpp:588
 #, fuzzy
 msgid "Length of the video"
 msgstr "समर्तित रा कैमरा के सूची"
 
-#: utilities/searchwindow/searchfields.cpp:584
+#: utilities/searchwindow/searchfields.cpp:589
 #, fuzzy
 #| msgctxt "'Return pictures modified between...and..."
 #| msgid "and"
@@ -20164,23 +20187,23 @@ msgctxt "Find video with a length between...and..."
 msgid "and"
 msgstr "और"
 
-#: utilities/searchwindow/searchfields.cpp:585
+#: utilities/searchwindow/searchfields.cpp:590
 msgctxt "Seconds"
 msgid "s"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:600
+#: utilities/searchwindow/searchfields.cpp:605
 #, fuzzy
 msgid "Frame Rate"
 msgstr "<b>निर्मित</b>:"
 
-#: utilities/searchwindow/searchfields.cpp:600
+#: utilities/searchwindow/searchfields.cpp:605
 #, fuzzy
 #| msgid "Find Pictures"
 msgid "Return video with the frame rate"
 msgstr "फोटू खोजव"
 
-#: utilities/searchwindow/searchfields.cpp:601
+#: utilities/searchwindow/searchfields.cpp:606
 #, fuzzy
 #| msgctxt "'Return pictures modified between...and..."
 #| msgid "and"
@@ -20188,28 +20211,28 @@ msgctxt "Find video with frame rate between...and..."
 msgid "and"
 msgstr "और"
 
-#: utilities/searchwindow/searchfields.cpp:602
+#: utilities/searchwindow/searchfields.cpp:607
 msgctxt "Frames per Second"
 msgid "fps"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:616
+#: utilities/searchwindow/searchfields.cpp:621
 #, fuzzy
 #| msgid "Audio Files"
 msgid "Codec"
 msgstr "आडियो फाइल मन ल"
 
-#: utilities/searchwindow/searchfields.cpp:616
+#: utilities/searchwindow/searchfields.cpp:621
 #, fuzzy
 #| msgid "Audio Files"
 msgid "Return video codec"
 msgstr "आडियो फाइल मन ल"
 
-#: utilities/searchwindow/searchfields.cpp:635
+#: utilities/searchwindow/searchfields.cpp:640
 msgid "Return video audio bits rate"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:636
+#: utilities/searchwindow/searchfields.cpp:641
 #, fuzzy
 #| msgctxt "'Return pictures modified between...and..."
 #| msgid "and"
@@ -20217,83 +20240,83 @@ msgctxt "Find video with audio bit rate between...and..."
 msgid "and"
 msgstr "और"
 
-#: utilities/searchwindow/searchfields.cpp:637
+#: utilities/searchwindow/searchfields.cpp:642
 msgctxt "Bits per Second"
 msgid "bps"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:652
+#: utilities/searchwindow/searchfields.cpp:657
 #, fuzzy
 #| msgid "Show image type"
 msgid "Return video audio Channel Type"
 msgstr "फोटू किसिम दिखाव"
 
-#: utilities/searchwindow/searchfields.cpp:654
+#: utilities/searchwindow/searchfields.cpp:659
 msgid "Mono"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:655
+#: utilities/searchwindow/searchfields.cpp:660
 msgid "Stereo"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:664
+#: utilities/searchwindow/searchfields.cpp:669
 #, fuzzy
 #| msgid "Compression: "
 msgid "Audio Compressor"
 msgstr "संपीडन:"
 
-#: utilities/searchwindow/searchfields.cpp:664
+#: utilities/searchwindow/searchfields.cpp:669
 #, fuzzy
 #| msgid "Compression: "
 msgid "Return video audio Compressor"
 msgstr "संपीडन:"
 
-#: utilities/searchwindow/searchfields.cpp:731
+#: utilities/searchwindow/searchfields.cpp:736
 msgid "Reset contents"
 msgstr "विसय सूची रीसेट करव"
 
-#: utilities/searchwindow/searchfields.cpp:1804
+#: utilities/searchwindow/searchfields.cpp:1809
 msgid "Any"
 msgstr "कोई भी"
 
-#: utilities/searchwindow/searchfields.cpp:1863
+#: utilities/searchwindow/searchfields.cpp:1868
 #, kde-format
 msgid "Any of: %1"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:2203
+#: utilities/searchwindow/searchfields.cpp:2208
 msgid "Any Album"
 msgstr "कोई भी एलबम"
 
-#: utilities/searchwindow/searchfields.cpp:2208
+#: utilities/searchwindow/searchfields.cpp:2213
 msgid "Any Tag"
 msgstr "कोई भी टैग"
 
-#: utilities/searchwindow/searchfields.cpp:2623
+#: utilities/searchwindow/searchfields.cpp:2628
 msgid "any color depth"
 msgstr "कोई भी रंग गहराई"
 
-#: utilities/searchwindow/searchfields.cpp:2624
+#: utilities/searchwindow/searchfields.cpp:2629
 msgid "8 bits per channel"
 msgstr "८ बिट प्रति चैनल"
 
-#: utilities/searchwindow/searchfields.cpp:2625
+#: utilities/searchwindow/searchfields.cpp:2630
 msgid "16 bits per channel"
 msgstr "१६ बिट प्रति चैनल"
 
-#: utilities/searchwindow/searchfields.cpp:2659
+#: utilities/searchwindow/searchfields.cpp:2664
 #, fuzzy
 #| msgid "Orientation"
 msgid "Any Orientation"
 msgstr "दिसा निर्धारन"
 
-#: utilities/searchwindow/searchfields.cpp:2660
+#: utilities/searchwindow/searchfields.cpp:2665
 #, fuzzy
 #| msgid "Orientation"
 msgid "Landscape Orientation"
 msgstr "दिसा निर्धारन"
 
-#: utilities/searchwindow/searchfields.cpp:2661
+#: utilities/searchwindow/searchfields.cpp:2666
 #, fuzzy
 #| msgid "Orientation"
 msgid "Portrait orientation"
@@ -20324,6 +20347,12 @@ msgstr "फोटू गुन"
 #: utilities/searchwindow/searchgroup.cpp:161
 msgid "Caption, Comment, Title"
 msgstr ""
+
+#: utilities/searchwindow/searchgroup.cpp:208
+#, fuzzy
+#| msgid "Photograph Restoration"
+msgid "Geographic position"
+msgstr "फोटोग्राफ रीस्टोरेसन"
 
 #: utilities/searchwindow/searchgroup.cpp:446
 msgid "Find Pictures"
