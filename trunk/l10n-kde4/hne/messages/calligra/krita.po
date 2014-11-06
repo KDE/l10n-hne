@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-05 01:32+0000\n"
+"POT-Creation-Date: 2014-11-06 01:34+0000\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -8040,11 +8040,18 @@ msgstr "बाई-लीनियर"
 msgid "Ascii"
 msgstr ""
 
-#: plugins/formats/psd/psd_export.cc:67
+#: plugins/formats/psd/psd_export.cc:90
 msgid ""
 "Unable to save to the Photoshop format.\n"
 "The Photoshop format only supports images that are smaller than 30000x3000 "
 "pixels."
+msgstr ""
+
+#: plugins/formats/psd/psd_export.cc:100
+msgid ""
+"Unable to save to the Photoshop format.\n"
+"The Photoshop format only supports images where all layers have the same "
+"colorspace as the image."
 msgstr ""
 
 #: plugins/formats/psd/psd_loader.cpp:156
@@ -14542,8 +14549,10 @@ msgid "Properties..."
 msgstr "गुन..."
 
 #: ui/kis_image_manager.cc:59
-msgid "Image Background Colorc and Transparency..."
-msgstr ""
+#, fuzzy
+#| msgid "Background Color"
+msgid "Image Background Color and Transparency..."
+msgstr "पिछोत अंगना रंग"
 
 #: ui/kis_image_manager.cc:84
 msgid "Import Image"
@@ -14599,50 +14608,50 @@ msgctxt "(qtundo-format)"
 msgid "Convert to a Paint Layer"
 msgstr "से अभी हाल के परत बदलव"
 
-#: ui/kis_layer_manager.cc:553
+#: ui/kis_layer_manager.cc:554
 msgid "New Filter Layer"
 msgstr "नवा छनइया परत"
 
-#: ui/kis_layer_manager.cc:612
+#: ui/kis_layer_manager.cc:613
 msgid "Could not add layer to image."
 msgstr "फोटू मं परत जोड़े नइ जा सकिस."
 
-#: ui/kis_layer_manager.cc:612
+#: ui/kis_layer_manager.cc:613
 msgid "Layer Error"
 msgstr "परत गलती"
 
-#: ui/kis_layer_manager.cc:698
+#: ui/kis_layer_manager.cc:699
 msgid "The image contains hidden layers that will be lost."
 msgstr "फोटू मं छुपे परत हे जऊन मिट जाही."
 
-#: ui/kis_layer_manager.cc:699
+#: ui/kis_layer_manager.cc:700
 msgid "Flatten Image"
 msgstr "फोटू ल फैलाव"
 
-#: ui/kis_layer_manager.cc:700
+#: ui/kis_layer_manager.cc:701
 msgid "&Flatten Image"
 msgstr "फोटू ल फैलाव (&F)"
 
-#: ui/kis_layer_manager.cc:766
+#: ui/kis_layer_manager.cc:767
 #, fuzzy
 #| msgid "Rotate Layer"
 msgctxt "(qtundo-format)"
 msgid "Rasterize Layer"
 msgstr "परत ल घुमाव"
 
-#: ui/kis_layer_manager.cc:802
+#: ui/kis_layer_manager.cc:803
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:805
+#: ui/kis_layer_manager.cc:806
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:862
+#: ui/kis_layer_manager.cc:863
 msgid "No file name specified."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:862
+#: ui/kis_layer_manager.cc:863
 msgid "No file specified"
 msgstr ""
 
@@ -15529,38 +15538,38 @@ msgstr "आगू तरफ के रंग"
 msgid "Reset Foreground and Background Color"
 msgstr "आगू तरफ के रंग"
 
-#: ui/tool/kis_tool.cc:548
+#: ui/tool/kis_tool.cc:556
 #, fuzzy
 #| msgid "Clear"
 msgctxt "(qtundo-format)"
 msgid "Clear"
 msgstr "साफ करव"
 
-#: ui/tool/kis_tool.cc:577
+#: ui/tool/kis_tool.cc:585
 #, fuzzy
 #| msgid "options"
 msgid "No options"
 msgstr "विकल्प"
 
-#: ui/tool/kis_tool.cc:725
+#: ui/tool/kis_tool.cc:733
 msgid "Layer is locked and invisible."
 msgstr ""
 
-#: ui/tool/kis_tool.cc:727
+#: ui/tool/kis_tool.cc:735
 #, fuzzy
 #| msgid "Layer Size"
 msgid "Layer is locked."
 msgstr "परत आकार"
 
-#: ui/tool/kis_tool.cc:729
+#: ui/tool/kis_tool.cc:737
 msgid "Layer is invisible."
 msgstr ""
 
-#: ui/tool/kis_tool.cc:731
+#: ui/tool/kis_tool.cc:739
 msgid "Group not editable."
 msgstr ""
 
-#: ui/tool/kis_tool.cc:746
+#: ui/tool/kis_tool.cc:754
 #, fuzzy
 msgid "Local selection is locked."
 msgstr "स्केल चयन"
@@ -15760,7 +15769,7 @@ msgstr ""
 msgid "Share Color Profile"
 msgstr "परत प्रोफाइल:"
 
-#: ui/widgets/kis_filter_selector_widget.cc:165
+#: ui/widgets/kis_filter_selector_widget.cc:179
 msgid "No configuration option."
 msgstr "कोई कान्फिगरेसन विकल्प नइ."
 
