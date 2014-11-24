@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-23 01:51+0000\n"
+"POT-Creation-Date: 2014-11-24 01:50+0000\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -3808,7 +3808,7 @@ msgstr "परत या मास्क ल मेटाव"
 #: plugins/extensions/dropshadow/wdg_dropshadow.ui:57
 #: plugins/filters/noisefilter/wdgnoiseoptions.ui:29
 #: plugins/filters/randompickfilter/wdgrandompickoptions.ui:65
-#: plugins/paintops/libpaintop/forms/wdgflowopacityoption.ui:38
+#: plugins/paintops/libpaintop/forms/wdgflowopacityoption.ui:59
 #: ui/forms/wdganimationselector.ui:220 ui/forms/wdgautogradient.ui:81
 #: ui/forms/wdgpaintactioneditor.ui:89 ui/kis_paintop_box.cc:174
 msgid "Opacity:"
@@ -4220,7 +4220,7 @@ msgstr "परत के नाम:"
 #: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:131
 #: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:22
 #: ui/forms/wdgautogradient.ui:25 ui/forms/wdgfilternodecreation.ui:17
-#: ui/forms/wdgflipbookselector.ui:28 ui/forms/wdgpaintopsettings.ui:156
+#: ui/forms/wdgflipbookselector.ui:28 ui/forms/wdgpaintopsettings.ui:177
 msgid "Name:"
 msgstr "नाम:"
 
@@ -9380,7 +9380,7 @@ msgid "Color background"
 msgstr "पिछोत अंगना"
 
 #. i18n: ectx: property (text), widget (QLabel, rateLbl)
-#: plugins/paintops/libpaintop/forms/wdgairbrush.ui:38
+#: plugins/paintops/libpaintop/forms/wdgairbrush.ui:37
 #, fuzzy
 msgid "Rate:"
 msgstr "दर:"
@@ -9696,13 +9696,6 @@ msgstr "ब्रुस स्मज करव"
 #: plugins/paintops/libpaintop/forms/wdgfilteroption.ui:58
 msgid "Filter Settings"
 msgstr "फिल्टर सेटिंग"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: plugins/paintops/libpaintop/forms/wdgflowopacityoption.ui:61
-#, fuzzy
-#| msgid "Opacity: "
-msgid "Opacity Dynamics"
-msgstr "अपार्दरसिता: "
 
 #. i18n: ectx: property (title), widget (QGroupBox, grpIncremental)
 #: plugins/paintops/libpaintop/forms/wdgincremental.ui:20
@@ -13564,42 +13557,73 @@ msgstr "पेंट"
 msgid "Preset Collection"
 msgstr "प्रीसेट संग्रह"
 
+#. i18n: ectx: property (toolTip), widget (QPushButton, paintPresetIcon)
+#: ui/forms/wdgpaintopsettings.ui:71
+#, fuzzy
+#| msgid "&Add to current selection"
+msgid "Fill preset area with current icon"
+msgstr "अभी हाल के चयन मं जोड़व (&A)"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, fillGradient)
+#: ui/forms/wdgpaintopsettings.ui:88
+#, fuzzy
+#| msgid "Fill with Pattern"
+msgid "Fill area with gradient"
+msgstr "पैटर्न से भरव"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, fillSolid)
+#: ui/forms/wdgpaintopsettings.ui:98
+#, fuzzy
+#| msgid "Fill with Background Color"
+msgid "Fill area with background color"
+msgstr "पिछोत अंगना रंग से भरव"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, eraseScratchPad)
+#: ui/forms/wdgpaintopsettings.ui:108
+msgid "Reset area to white"
+msgstr ""
+
 #. i18n: ectx: property (toolTip), widget (QLineEdit, txtPreset)
-#: ui/forms/wdgpaintopsettings.ui:166
+#: ui/forms/wdgpaintopsettings.ui:187
 msgid ""
 "Current Brush Preset. Pink in Color whenever the preset has modified "
 "settings. Stays the same if original settings are loaded."
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, bnSave)
-#: ui/forms/wdgpaintopsettings.ui:173
+#: ui/forms/wdgpaintopsettings.ui:194
 msgid "Save the current brush settings under this name"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, bnSave)
-#: ui/forms/wdgpaintopsettings.ui:176
+#: ui/forms/wdgpaintopsettings.ui:197
 msgid "&Save to Presets"
 msgstr "प्रीसेट मं सहेजव (&S)"
 
 #. i18n: ectx: property (text), widget (QPushButton, reload)
-#: ui/forms/wdgpaintopsettings.ui:183
+#: ui/forms/wdgpaintopsettings.ui:204
 msgid "Reload"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, bnDefaultPreset)
-#: ui/forms/wdgpaintopsettings.ui:224
+#: ui/forms/wdgpaintopsettings.ui:245
 #, fuzzy
 #| msgid "edit presets"
 msgid "Default preset"
 msgstr "प्रीसेट संपादित करव"
 
 #. i18n: ectx: property (text), widget (QCheckBox, dirtyPresetCheckBox)
-#: ui/forms/wdgpaintopsettings.ui:237
+#: ui/forms/wdgpaintopsettings.ui:258
 msgid "Temporarily Save Tweaks To Presets"
 msgstr ""
 
+#. i18n: ectx: property (toolTip), widget (QCheckBox, eraserBrushSizeCheckBox)
+#: ui/forms/wdgpaintopsettings.ui:274
+msgid "Erase mode will use a separate brush size"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QCheckBox, eraserBrushSizeCheckBox)
-#: ui/forms/wdgpaintopsettings.ui:253
+#: ui/forms/wdgpaintopsettings.ui:277
 msgid "Eraser switch size"
 msgstr ""
 
@@ -16082,6 +16106,11 @@ msgstr ""
 #| msgid "Close"
 msgid "&Close"
 msgstr "बंद करव"
+
+#, fuzzy
+#~| msgid "Opacity: "
+#~ msgid "Opacity Dynamics"
+#~ msgstr "अपार्दरसिता: "
 
 #, fuzzy
 #~| msgid "&Show"
