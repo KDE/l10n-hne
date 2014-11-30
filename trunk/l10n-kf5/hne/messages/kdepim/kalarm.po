@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-20 07:58+0000\n"
+"POT-Creation-Date: 2014-11-30 07:50+0000\n"
 "PO-Revision-Date: 2009-02-27 17:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -107,6 +107,24 @@ msgctxt "@info"
 msgid "Disabled"
 msgstr "अक्छम"
 
+#: akonadimodel.cpp:945
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "%1<nl/>%2: <filename>%3</filename><nl/>%4, %5"
+msgstr "%1<nl/>%2: <filename>%3</filename><nl/>%4, %5"
+
+#: akonadimodel.cpp:951
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "%1<nl/>%2: <filename>%3</filename><nl/>%4"
+msgstr "%1<nl/>%2: <filename>%3</filename><nl/>%4"
+
+#: akonadimodel.cpp:956
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "%1<nl/>%2: <filename>%3</filename>"
+msgstr "%1<nl/>%2: <filename>%3</filename>"
+
 #: akonadimodel.cpp:973
 msgctxt "@info"
 msgid "Read-only (old format)"
@@ -162,6 +180,31 @@ msgctxt "@info:whatsthis"
 msgid "Name of the alarm template"
 msgstr "अलार्म टेम्पलेट के नाम"
 
+#: akonadimodel.cpp:1129
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Unable to create resource of type <resource>%1</resource>."
+msgctxt "@info"
+msgid "Failed to remove calendar <resource>%1</resource>."
+msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
+
+#: akonadimodel.cpp:1131 akonadimodel.cpp:1182 akonadimodel.cpp:1511
+#: akonadiresourcecreator.cpp:109 calendarmigrator.cpp:474
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "%1%2"
+msgctxt "@info"
+msgid "%1<nl/>(%2)"
+msgstr "%1%2"
+
+#: akonadimodel.cpp:1180
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Unable to create resource of type <resource>%1</resource>."
+msgctxt "@info"
+msgid "Failed to update calendar <resource>%1</resource>."
+msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
+
 #: akonadimodel.cpp:1495
 #, fuzzy
 #| msgctxt "@info"
@@ -194,6 +237,34 @@ msgctxt "@info"
 msgid "Failed to create new calendar resource"
 msgstr "ई-मेल भेजे मं फेल"
 
+#: alarmcalendar.cpp:250 alarmcalendar.cpp:604
+#, kde-format
+msgctxt "@info"
+msgid "Cannot download calendar: <filename>%1</filename>"
+msgstr "कलेन्डर डाउनलोड नइ कर सकिस: <filename>%1</filename>"
+
+#: alarmcalendar.cpp:267
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Error attaching file: <filename>%1</filename>"
+msgctxt "@info"
+msgid ""
+"<para>Error loading calendar:</para><para><filename>%1</filename></"
+"para><para>Please fix or delete the file.</para>"
+msgstr "फााइल: <filename>%1</filename> ल संलग्न करे मं गलती"
+
+#: alarmcalendar.cpp:325
+#, kde-format
+msgctxt "@info"
+msgid "Failed to save calendar to <filename>%1</filename>"
+msgstr "कलेन्डर ल <filename>%1</filename> मं सहेजे मं फेल"
+
+#: alarmcalendar.cpp:335
+#, kde-format
+msgctxt "@info"
+msgid "Cannot upload calendar to <filename>%1</filename>"
+msgstr "कलेन्डर <filename>%1</filename> ल अपलोड नइ कर सकिस"
+
 #: alarmcalendar.cpp:573 alarmcalendar.cpp:697
 #, fuzzy
 #| msgctxt "@info/plain"
@@ -202,10 +273,34 @@ msgctxt "@info"
 msgid "Calendar Files"
 msgstr "कलेन्डर फाइल मन ल"
 
+#: alarmcalendar.cpp:595 alarmcalendar.cpp:617
+#, kde-format
+msgctxt "@info"
+msgid "Could not load calendar <filename>%1</filename>."
+msgstr "कलेन्डर <filename>%1</filename> ल लोड नइ कर सकिस."
+
 #: alarmcalendar.cpp:698
 msgctxt "@title:window"
 msgid "Choose Export Calendar"
 msgstr ""
+
+#: alarmcalendar.cpp:722
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "Error loading calendar to append to:<nl/><filename>%1</filename>"
+msgstr "कलेन्डर <filename>%1</filename> ल अपलोड नइ कर सकिस"
+
+#: alarmcalendar.cpp:762
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "Failed to save new calendar to:<nl/><filename>%1</filename>"
+msgstr "कलेन्डर ल <filename>%1</filename> मं सहेजे मं फेल"
+
+#: alarmcalendar.cpp:769
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "Cannot upload new calendar to:<nl/><filename>%1</filename>"
+msgstr "कलेन्डर <filename>%1</filename> ल अपलोड नइ कर सकिस"
 
 #: alarmtime.cpp:42 alarmtime.cpp:80
 #, fuzzy
@@ -286,6 +381,20 @@ msgctxt "@info:whatsthis"
 msgid "Specify the date, or date and time, to schedule the alarm."
 msgstr ""
 
+#: alarmtimewidget.cpp:120
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<para>Enter the date to schedule the alarm.</para><para>%1</para>"
+msgstr "<para>अलार्म सेड्यूल करे बर तारीक भरव.</para><para>%1</para>"
+
+#: alarmtimewidget.cpp:134
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter the time to schedule the alarm.</para><para>%1</para><para>%2</"
+"para>"
+msgstr "<para>अलार्म सेड्यूल करे बर समय भरव.</para><para>%1</para><para>%2</para>"
+
 #: alarmtimewidget.cpp:147 recurrenceedit.cpp:293
 msgctxt "@option:check"
 msgid "Any time"
@@ -318,6 +427,18 @@ msgctxt "@info:whatsthis"
 msgid "Schedule the alarm after the specified time interval from now."
 msgstr "अब से लेकर निरधारित समय अंतराल के बाद अलार्म ल सेड्यूल करव."
 
+#: alarmtimewidget.cpp:167 editdlg.cpp:362
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<para>%1</para><para>%2</para>"
+msgstr "<para>%1</para><para>%2</para>"
+
+#: alarmtimewidget.cpp:168
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<para>%1</para><para>%2</para><para>%3</para>"
+msgstr "<para>%1</para><para>%2</para><para>%3</para>"
+
 #: alarmtimewidget.cpp:198
 msgctxt "@action:button"
 msgid "Time Zone..."
@@ -344,6 +465,15 @@ msgstr "ये अलार्म के परयोग करे मं सम
 msgctxt "@option:check"
 msgid "Ignore time zone"
 msgstr "समय छेत्र अनदेखा करव"
+
+#: alarmtimewidget.cpp:229
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Check to use the local computer time, ignoring time zones.</"
+"para><para>You are recommended not to use this option if the alarm has a "
+"recurrence specified in hours/minutes. If you do, the alarm may occur at "
+"unexpected times after daylight saving time shifts.</para>"
+msgstr ""
 
 #: alarmtimewidget.cpp:300 alarmtimewidget.cpp:326
 msgctxt "@info"
@@ -440,6 +570,16 @@ msgctxt "@title:group"
 msgid "Select Birthdays"
 msgstr "जन्मदिन चुनव"
 
+#: birthdaydlg.cpp:151
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Select birthdays to set alarms for.<nl/>This list shows all birthdays "
+"in <application>KAddressBook</application> except those for which alarms "
+"already exist.</para><para>You can select multiple birthdays at one time by "
+"dragging the mouse over the list, or by clicking the mouse while pressing "
+"Ctrl or Shift.</para>"
+msgstr ""
+
 #: birthdaydlg.cpp:157
 msgctxt "@title:group"
 msgid "Alarm Configuration"
@@ -501,11 +641,45 @@ msgctxt "@info"
 msgid "Alarm Templates"
 msgstr "अलार्म टैम्प्लेट्स"
 
+#: calendarmigrator.cpp:344
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Unable to create resource of type <resource>%1</resource>."
+msgctxt "@info/plain"
+msgid "Failed to create default calendar <resource>%1</resource>"
+msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
+
+#: calendarmigrator.cpp:346
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Unable to create resource of type <resource>%1</resource>."
+msgctxt "@info/plain 'Import Alarms' is the name of a menu option"
+msgid ""
+"Failed to convert old configuration for calendar <resource>%1</resource>. "
+"Please use Import Alarms to load its alarms into a new or existing calendar."
+msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
+
 #: calendarmigrator.cpp:348
 #, fuzzy, kde-format
 msgctxt "@info File path or URL"
 msgid "Location: %1"
 msgstr "जगहः"
+
+#: calendarmigrator.cpp:350
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid "<para>%1</para><para>%2</para>"
+msgctxt "@info"
+msgid "<para>%1</para><para>%2</para>"
+msgstr "<para>%1</para><para>%2</para>"
+
+#: calendarmigrator.cpp:352
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid "<para>%1</para><para>%2</para>"
+msgctxt "@info"
+msgid "<para>%1</para><para>%2<nl/>(%3)</para>"
+msgstr "<para>%1</para><para>%2</para>"
 
 #: calendarmigrator.cpp:461
 #, fuzzy
@@ -514,6 +688,14 @@ msgstr "जगहः"
 msgctxt "@info"
 msgid "Invalid collection"
 msgstr "अवैध समय"
+
+#: calendarmigrator.cpp:475
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Unable to create resource of type <resource>%1</resource>."
+msgctxt "@info/plain"
+msgid "Failed to update format of calendar <resource>%1</resource>"
+msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
 
 #: calendarmigrator.cpp:753
 msgctxt "@info"
@@ -551,6 +733,48 @@ msgctxt "@info"
 msgid "Do you really want to disable your default calendar?"
 msgstr "का आप मन सही मं अपन डिफाल्ट रिसोर्स ल अक्छम करना चाहू?"
 
+#: collectionmodel.cpp:871
+#, kde-format
+msgctxt "@info"
+msgid ""
+"The calendar <resource>%1</resource> has been made read-only. This was the "
+"default calendar for active alarms."
+msgstr ""
+
+#: collectionmodel.cpp:876
+#, kde-format
+msgctxt "@info"
+msgid ""
+"The calendar <resource>%1</resource> has been made read-only. This was the "
+"default calendar for archived alarms."
+msgstr ""
+
+#: collectionmodel.cpp:881
+#, kde-format
+msgctxt "@info"
+msgid ""
+"The calendar <resource>%1</resource> has been made read-only. This was the "
+"default calendar for alarm templates."
+msgstr ""
+
+#: collectionmodel.cpp:886
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>The calendar <resource>%1</resource> has been made read-only. This was "
+"the default calendar for:%2</para><para>Please select new default calendars."
+"</para>"
+msgstr ""
+
+#: collectionmodel.cpp:894
+#, fuzzy, kde-format
+#| msgctxt "@info Please set the 'From' email address..."
+#| msgid ""
+#| "<para>%1</para><para>Please set it in the Configuration dialog.</para>"
+msgctxt "@info"
+msgid "<para>%1</para><para>Please select a new default calendar.</para>"
+msgstr "<para>%1</para><para>किरपा करके, एला प्राथमिकता गोठ मं सेट करव.</para>"
+
 #: collectionmodel.cpp:1214
 #, fuzzy
 #| msgctxt "@info/plain"
@@ -558,6 +782,45 @@ msgstr "का आप मन सही मं अपन डिफाल्ट �
 msgctxt "@title:window"
 msgid "Choose Calendar"
 msgstr "कलेन्डर फाइल मन ल"
+
+#: commandoptions.cpp:187
+#, kde-format
+msgctxt "@info:shell"
+msgid "<icode>%1</icode>: invalid email address"
+msgstr "<icode>%1</icode>: अवैध ईमेल पता"
+
+#: commandoptions.cpp:300 commandoptions.cpp:315 commandoptions.cpp:391
+#, kde-format
+msgctxt "@info:shell"
+msgid "Invalid <icode>%1</icode> parameter for date-only alarm"
+msgstr "सिरिफ तारीक अलार्म बर अवैध <icode>%1</icode> पैरामीटर"
+
+#: commandoptions.cpp:304
+#, kde-format
+msgctxt "@info:shell"
+msgid "<icode>%1</icode> earlier than <icode>%2</icode>"
+msgstr "<icode>%2</icode> से पहिली <icode>%1</icode>"
+
+#: commandoptions.cpp:324
+#, kde-format
+msgctxt "@info:shell"
+msgid ""
+"Invalid <icode>%1</icode> and <icode>%2</icode> parameters: repetition is "
+"longer than <icode>%3</icode> interval"
+msgstr ""
+"अवैध <icode>%1</icode> अउ <icode>%2</icode> पैरामीटर: बारंबारता <icode>%3</"
+"icode> अंतराल से अधिक हे"
+
+#: commandoptions.cpp:374
+#, fuzzy, kde-format
+#| msgctxt "@info:shell"
+#| msgid ""
+#| "<icode>%1</icode> requires speech synthesis to be configured using KTTSD"
+msgctxt "@info:shell"
+msgid ""
+"<icode>%1</icode> requires speech synthesis to be configured using Jovie"
+msgstr ""
+"<icode>%1</icode> ल चाही कि केटीटीएसडी के साथ स्पीच सिंथेसिस कान्फिगर होना चाही"
 
 #: commandoptions.cpp:476
 #, fuzzy
@@ -576,6 +839,30 @@ msgid ""
 msgstr ""
 "\n"
 "--help  के उपयोग करव मिलत कमांड लकीर विकल्प मन के सूची प्राप्त करे बर.\n"
+
+#: commandoptions.cpp:525
+#, kde-format
+msgctxt "@info:shell"
+msgid "<icode>%1</icode> requires <icode>%2</icode>"
+msgstr "<icode>%1</icode> ल जरूरी हे <icode>%2</icode>"
+
+#: commandoptions.cpp:527
+#, kde-format
+msgctxt "@info:shell"
+msgid "<icode>%1</icode> requires <icode>%2</icode> or <icode>%3</icode>"
+msgstr "<icode>%1</icode> ल चाही <icode>%2</icode> या <icode>%3</icode>"
+
+#: commandoptions.cpp:532
+#, kde-format
+msgctxt "@info:shell"
+msgid "Invalid <icode>%1</icode> parameter"
+msgstr "अवैध <icode>%1</icode> पैरामीटर"
+
+#: commandoptions.cpp:543
+#, kde-format
+msgctxt "@info:shell"
+msgid "<icode>%1</icode> incompatible with <icode>%2</icode>"
+msgstr "<icode>%2</icode> से संगत नइ हे <icode>%1</icode>"
 
 #: deferdlg.cpp:43
 msgctxt "@title:window"
@@ -719,10 +1006,28 @@ msgctxt "@info:whatsthis"
 msgid "Specify a start time for alarms based on this template."
 msgstr "ये टैम्प्लेट मं आधार से अलार्म के चालू समय ल निरधारित करव."
 
+#: editdlg.cpp:333
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid "<para>Enter the start time of the working day.</para><para>%1</para>"
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter the start time for alarms based on this template.</para><para>"
+"%1</para>"
+msgstr "<para>काम के दिन के चालू समय भरव.</para><para>%1</para>"
+
 #: editdlg.cpp:340
 msgctxt "@option:radio"
 msgid "Date only"
 msgstr "सिरिफ-तारीक"
+
+#: editdlg.cpp:343
+msgctxt "@info:whatsthis"
+msgid ""
+"Set the <interface>Any time</interface> option for alarms based on this "
+"template."
+msgstr ""
+"ये टैम्प्लेट के आधार से अलार्म के <interface>कोई भी समय</interface> विकल्प ल सेट करव"
 
 #: editdlg.cpp:354
 msgctxt "@info:whatsthis"
@@ -776,6 +1081,14 @@ msgstr "आवृत्ति पहिली ही बीत चुकी"
 msgctxt "@info"
 msgid "The alarm will never occur during working hours"
 msgstr "अलार्म कभी घलोक काम घंटों मं नइ चलही"
+
+#: editdlg.cpp:1029
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Reminder period must be less than the recurrence interval, unless <interface>"
+"%1</interface> is checked."
+msgstr ""
 
 #: editdlg.cpp:1044
 msgctxt "@info"
@@ -859,6 +1172,17 @@ msgctxt "@item:inlistbox"
 msgid "Command output"
 msgstr "कमांड आउटपुट"
 
+#: editdlgtypes.cpp:178
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Select what the alarm should display:<list><item><interface>%1</"
+"interface>: the alarm will display the text message you type in.</"
+"item><item><interface>%2</interface>: the alarm will display the contents of "
+"a text or image file.</item><item><interface>%3</interface>: the alarm will "
+"display the output from a command.</item></list></para>"
+msgstr ""
+
 #: editdlgtypes.cpp:189
 msgctxt "@info:whatsthis"
 msgid "Enter the text of the alarm message. It may be multi-line."
@@ -895,6 +1219,16 @@ msgid ""
 "Check to additionally display a reminder in advance of or after the main "
 "alarm time(s)."
 msgstr "जन्मदिन से पहिली स्मरन दिलाने बर जांचव."
+
+#: editdlgtypes.cpp:264
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter how long in advance of or after the main alarm to display a "
+"reminder alarm.</para><para>%1</para>"
+msgstr "<para>अलार्म ल दोहराने बर आखिरी तारीक भरव.</para><para>%1</para>"
 
 #: editdlgtypes.cpp:265
 msgctxt "@info:whatsthis"
@@ -1016,6 +1350,12 @@ msgid ""
 "Log file must be the name or path of a local file, with write permission."
 msgstr ""
 
+#: editdlgtypes.cpp:1002
+#, kde-format
+msgctxt "@info"
+msgid "Command executed: <icode>%1</icode>"
+msgstr "चलाया गिस कमांड: <icode>%1</icode>"
+
 #: editdlgtypes.cpp:1036
 msgctxt "@option:check"
 msgid "Copy email to self"
@@ -1130,10 +1470,22 @@ msgctxt "@info:whatsthis"
 msgid "If checked, the email will be blind copied to you."
 msgstr "यदि चुने जाथे , आप मन ल ई-मेल के नकल भेजी जाही."
 
+#: editdlgtypes.cpp:1348
+#, kde-format
+msgctxt "@info"
+msgid "Invalid email address: <email>%1</email>"
+msgstr "अवैध ई-मेल पता: <email>%1</email>"
+
 #: editdlgtypes.cpp:1355
 msgctxt "@info"
 msgid "No email address specified"
 msgstr "कोई ई-मेल पता निरधारित नइ"
+
+#: editdlgtypes.cpp:1372
+#, kde-format
+msgctxt "@info"
+msgid "Invalid email attachment: <filename>%1</filename>"
+msgstr "अवैध ई-मेल संलग्नक: <filename>%1</filename>"
 
 #: editdlgtypes.cpp:1376
 msgctxt "@info"
@@ -1149,6 +1501,18 @@ msgstr "ई-मेल पुस्टि करव"
 msgctxt "@action:button"
 msgid "Send"
 msgstr "भेजव"
+
+#: editdlgtypes.cpp:1403
+#, kde-format
+msgctxt "@info"
+msgid "Email sent to:<nl/>%1<nl/>Bcc: <email>%2</email>"
+msgstr "ईमेल भेजिस:<nl/>%1<nl/>बेनामी प्रति: <email>%2</email>"
+
+#: editdlgtypes.cpp:1406
+#, kde-format
+msgctxt "@info"
+msgid "Email sent to:<nl/>%1"
+msgstr "ईमेल भेजिस:<nl/>%1"
 
 #: editdlgtypes.cpp:1438
 msgctxt "@title:window"
@@ -1300,6 +1664,20 @@ msgctxt "@info"
 msgid "No alarm types are selected to search"
 msgstr "खोज तिर कोनो अलार्म किसिम नइ चुने गे हे"
 
+#: find.cpp:407
+msgctxt "@info"
+msgid ""
+"<para>End of alarm list reached.</para><para>Continue from the beginning?</"
+"para>"
+msgstr "<para>अलार्म सूची के आखरी आ गिस .</para><para>सुरू से जारी रखव?</para>"
+
+#: find.cpp:408
+msgctxt "@info"
+msgid ""
+"<para>Beginning of alarm list reached.</para><para>Continue from the end?</"
+"para>"
+msgstr "<para>अलार्म सूची के चालू पहुंचा.</para><para>आखरी से जारी रखव?</para>"
+
 #: fontcolour.cpp:69
 msgctxt "@label:listbox"
 msgid "Foreground color:"
@@ -1392,6 +1770,24 @@ msgctxt "@info"
 msgid "Unable to delete alarm from KOrganizer"
 msgstr "अलार्मों ल केओर्गनाइजर से मेटाय मं अक्छम"
 
+#: functions.cpp:809
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "<para>%1</para><para>(Could not start KOrganizer)</para>"
+msgstr "<para>%1</para><para>का आप मन सही मं बदलाव मन ल सहेजना चाहथो ?<para>"
+
+#: functions.cpp:812
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "<para>%1</para><para>(KOrganizer not fully started)</para>"
+msgstr "<para>%1</para><para>%2</para>"
+
+#: functions.cpp:815
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "<para>%1</para><para>(Error communicating with KOrganizer)</para>"
+msgstr "<para>%1</para><para>का आप मन सही मं बदलाव मन ल सहेजना चाहथो ?<para>"
+
 #: functions.cpp:1038
 msgctxt "info"
 msgid "The scheduled Wake from Suspend has been cancelled."
@@ -1409,6 +1805,21 @@ msgctxt "@info"
 msgid "You must enable a template calendar to save the template in"
 msgstr "जिस संसाधन मं अलार्म ल सहेजना हे ओला आप मन ल चुनना होही"
 
+#: functions.cpp:1328
+#, kde-format
+msgctxt "@info Please set the 'From' email address..."
+msgid "<para>%1</para><para>Please set it in the Configuration dialog.</para>"
+msgstr "<para>%1</para><para>किरपा करके, एला प्राथमिकता गोठ मं सेट करव.</para>"
+
+#: functions.cpp:1332
+msgctxt "@info"
+msgid ""
+"<para>Alarms are currently disabled.</para><para>Do you want to enable "
+"alarms now?</para>"
+msgstr ""
+"<para>अलार्म अभी अक्छम हे.</para><para>. का आप मन अलार्मों ल अभी सक्छम करना चाहथो ?"
+"</para>"
+
 #: functions.cpp:1333
 msgctxt "@action:button"
 msgid "Enable"
@@ -1418,6 +1829,14 @@ msgstr "सक्छम करव"
 msgctxt "@action:button"
 msgid "Keep Disabled"
 msgstr "अक्छम बनाए रखव"
+
+#: functions.cpp:1400
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Unable to start <application>KMail</application><nl/>(<message>%1</message>)"
+msgstr ""
+"<application>केमेल</application> चालू करे मं अक्छम<nl />(<message>%1</message>)"
 
 #: functions.cpp:1687
 msgctxt "@info"
@@ -1431,6 +1850,58 @@ msgstr "फाइल प्रदर्सित करे बर किरप�
 msgctxt "@info"
 msgid "Please select a file to play"
 msgstr "फाइल प्रदर्सित करे बर किरपा करके, चुनव"
+
+#: functions.cpp:1695
+#, kde-format
+msgctxt "@info"
+msgid "<filename>%1</filename> is a folder"
+msgstr "<filename>%1</filename> एक फोल्डर हे"
+
+#: functions.cpp:1697
+#, kde-format
+msgctxt "@info"
+msgid "<filename>%1</filename> not found"
+msgstr "<filename>%1</filename> नइ मिलिस"
+
+#: functions.cpp:1698
+#, kde-format
+msgctxt "@info"
+msgid "<filename>%1</filename> is not readable"
+msgstr "<filename>%1</filename> पढ़े जइसन नइ हे"
+
+#: functions.cpp:1699
+#, kde-format
+msgctxt "@info"
+msgid "<filename>%1</filename> appears not to be a text or image file"
+msgstr "लगथे  कि <filename>%1</filename> पाठ या फोटू फाइल नइ हे"
+
+#: functions.cpp:1768
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Calendar <resource>%1</resource> is in an old format (<application>KAlarm</"
+"application> version %2), and will be read-only unless you choose to update "
+"it to the current format."
+msgstr ""
+
+#: functions.cpp:1771
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Some or all of the alarms in calendar <resource>%1</resource> are in an old "
+"<application>KAlarm</application> format, and will be read-only unless you "
+"choose to update them to the current format."
+msgstr ""
+
+#: functions.cpp:1774
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>%1</para><para><warning>Do not update the calendar if it is also used "
+"with an older version of <application>KAlarm</application> (e.g. on another "
+"computer). If you do so, the calendar may become unusable there.</warning></"
+"para><para>Do you wish to update the calendar?</para>"
+msgstr ""
 
 #: functions.cpp:1822
 msgctxt "@info"
@@ -1472,6 +1943,38 @@ msgctxt "@info"
 msgid "Error saving alarm template"
 msgstr "अलार्म टैम्प्लेट सहेजे मं गलती होइस"
 
+#: kalarmapp.cpp:368
+#, fuzzy, kde-format
+#| msgctxt "@info:shell"
+#| msgid ""
+#| "<icode>%1</icode>: Event <resource>%2</resource> not found, or not "
+#| "editable"
+msgctxt "@info:shell"
+msgid "%1: Event <resource>%2</resource> not found, or not unique"
+msgstr ""
+"<icode>%1</icode>: कारक्रम <resource>%2</resource> नइ मिलिस या संपादन जा सके नइ "
+"हे"
+
+#: kalarmapp.cpp:396
+#, fuzzy, kde-format
+#| msgctxt "@info:shell"
+#| msgid ""
+#| "<icode>%1</icode>: Event <resource>%2</resource> not found, or not "
+#| "editable"
+msgctxt "@info:shell"
+msgid "%1: Event <resource>%2</resource> not found, or not editable"
+msgstr ""
+"<icode>%1</icode>: कारक्रम <resource>%2</resource> नइ मिलिस या संपादन जा सके नइ "
+"हे"
+
+#: kalarmapp.cpp:582
+msgctxt "@info"
+msgid ""
+"Time zones are not accessible:<nl/>KAlarm will use the UTC time zone.<nl/"
+"><nl/>(The KDE time zone service is not available:<nl/>check that "
+"<application>ktimezoned</application> is installed.)"
+msgstr ""
+
 #: kalarmapp.cpp:661
 msgctxt "@info"
 msgid ""
@@ -1482,6 +1985,21 @@ msgstr ""
 #: kalarmapp.cpp:670
 msgctxt "@info"
 msgid "Quitting will cancel the scheduled Wake from Suspend."
+msgstr ""
+
+#: kalarmapp.cpp:682
+msgctxt "@info"
+msgid ""
+"Do you want to start KAlarm at login?<nl/>(Note that alarms will be disabled "
+"if KAlarm is not started.)"
+msgstr ""
+
+#: kalarmapp.cpp:1142
+msgctxt "@info"
+msgid ""
+"Alarms cannot be created or updated, because no writable active alarm "
+"calendar is enabled.<nl/><nl/>To fix this, use <interface>View | Show "
+"Calendars</interface> to check or change calendar statuses."
 msgstr ""
 
 #: kalarmapp.cpp:2140
@@ -2491,6 +3009,59 @@ msgctxt ""
 msgid "sent-mail"
 msgstr "भेजी -डाक"
 
+#: kamail.cpp:117
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Invalid 'From' email address.<nl/>Email identity <resource>%1</resource> not "
+"found"
+msgstr "अवैध 'प्रेसक' ईमेल पता.<nl/>ईमेल पहिचान <resource>%1</resource> नइ मिलिस"
+
+#: kamail.cpp:123
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Invalid 'From' email address.<nl/>Email identity <resource>%1</resource> has "
+"no email address"
+msgstr ""
+"अवैध 'प्रेसक' ईमेल पता.<nl/>ईमेल पहिचान <resource>%1</resource> तिर कोनो ईमेल पता "
+"नइ हे"
+
+#: kamail.cpp:133
+msgctxt "@info"
+msgid ""
+"<para>No 'From' email address is configured (no default email identity found)"
+"</para><para>Please set it in <application>KMail</application> or in the "
+"<application>KAlarm</application> Configuration dialog.</para>"
+msgstr ""
+
+#: kamail.cpp:137
+msgctxt "@info"
+msgid ""
+"<para>No 'From' email address is configured.</para><para>Please set it in "
+"the KDE System Settings or in the <application>KAlarm</application> "
+"Configuration dialog.</para>"
+msgstr ""
+
+#: kamail.cpp:142
+#, fuzzy
+#| msgctxt "@info Please set the 'From' email address..."
+#| msgid ""
+#| "<para>%1</para><para>Please set it in the Configuration dialog.</para>"
+msgctxt "@info"
+msgid ""
+"<para>No 'From' email address is configured.</para><para>Please set it in "
+"the <application>KAlarm</application> Configuration dialog.</para>"
+msgstr "<para>%1</para><para>किरपा करके, एला प्राथमिकता गोठ मं सेट करव.</para>"
+
+#: kamail.cpp:191
+#, kde-format
+msgctxt "@info"
+msgid "No mail transport configured for email identity <resource>%1</resource>"
+msgstr ""
+"ईमेल पहिचान <resource>%1</resource> बर कोनो ईमेल ट्रांसपोर्ट कान्फिगर करिस होय नइ "
+"हे."
+
 #: kamail.cpp:253
 msgctxt "@info"
 msgid "Emails may not have been sent"
@@ -2500,6 +3071,18 @@ msgstr "ईमेलों ल सायद भेजिस नइ गिस"
 msgctxt "@info"
 msgid "Program error"
 msgstr "प्रोग्राम गलती"
+
+#: kamail.cpp:356
+#, kde-format
+msgctxt "@info"
+msgid "Error attaching file: <filename>%1</filename>"
+msgstr "फााइल: <filename>%1</filename> ल संलग्न करे मं गलती"
+
+#: kamail.cpp:362
+#, kde-format
+msgctxt "@info"
+msgid "Attachment not found: <filename>%1</filename>"
+msgstr "संलग्नक नइ मिलिस: <filename>%1</filename>"
 
 #: kamail.cpp:440
 msgctxt "@info"
@@ -2530,6 +3113,17 @@ msgstr "ये समय के बाद विंडो अपने अपन
 msgctxt "@option:check"
 msgid "Auto-close window after late-cancellation time"
 msgstr "लेट-कैंसेलेसन समय के बाद विंडो अपने अपन बंद करव"
+
+#: latecancel.cpp:51
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>If checked, the alarm will be canceled if it cannot be triggered "
+"within the specified period after its scheduled time. Possible reasons for "
+"not triggering include your being logged off, X not running, or "
+"<application>KAlarm</application> not running.</para><para>If unchecked, the "
+"alarm will be triggered at the first opportunity after its scheduled time, "
+"regardless of how late it is.</para>"
+msgstr ""
 
 #: latecancel.cpp:77
 msgctxt "@option:check Cancel if late by 10 minutes"
@@ -2862,6 +3456,14 @@ msgctxt "@option:check"
 msgid "Show time until alarm"
 msgstr "अगले अलार्म के बचा समय देखाव"
 
+#: mainwindow.cpp:401
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Failure to create menus (perhaps <filename>%1</filename> missing or "
+"corrupted)"
+msgstr "मेन्यू बनाए मं अक्छम (सायद <filename>%1</filename> गंवा गे हे या खराब हे)"
+
 #: mainwindow.cpp:422
 msgctxt "@action"
 msgid "&Templates..."
@@ -3142,6 +3744,13 @@ msgctxt "@action:button"
 msgid "&Defer..."
 msgstr "टालें... (&D)"
 
+#: messagewin.cpp:694
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Defer the alarm until later.</para><para>You will be prompted to "
+"specify when the alarm should be redisplayed.</para>"
+msgstr ""
+
 #: messagewin.cpp:709 sounddlg.cpp:458
 msgctxt "@info:tooltip"
 msgid "Stop sound"
@@ -3151,6 +3760,26 @@ msgstr "अवाज बन्द करव"
 msgctxt "@info:whatsthis"
 msgid "Stop playing the sound"
 msgstr "बजाना बंद करव"
+
+#: messagewin.cpp:724
+msgctxt "@info:tooltip Locate this email in KMail"
+msgid "Locate in <application>KMail</application>"
+msgstr "<application>केमेल</application> मं पता लगिस"
+
+#: messagewin.cpp:725
+msgctxt "@info:whatsthis"
+msgid "Locate and highlight this email in <application>KMail</application>"
+msgstr "ये ईमेल ल <application>केमेल</application> मं पता करव अउ चमकाव"
+
+#: messagewin.cpp:734
+msgctxt "@info:tooltip"
+msgid "Activate <application>KAlarm</application>"
+msgstr "<application>केअलार्म</application> सक्रिय करव"
+
+#: messagewin.cpp:735
+msgctxt "@info:whatsthis"
+msgid "Activate <application>KAlarm</application>"
+msgstr "<application>केअलार्म</application> सक्रिय करव"
 
 #: messagewin.cpp:895
 msgctxt "@info"
@@ -3224,6 +3853,21 @@ msgctxt "@info"
 msgid "D-Bus call say() failed"
 msgstr "डी-बस काल संदेस बोलना फेल"
 
+#: messagewin.cpp:1554
+#, kde-format
+msgctxt "@info"
+msgid "Cannot open audio file: <filename>%1</filename>"
+msgstr "फाइल : <filename>%1</filename> खोल नइ सकिस"
+
+#: messagewin.cpp:1652
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Error attaching file: <filename>%1</filename>"
+msgctxt "@info"
+msgid ""
+"<para>Error playing audio file: <filename>%1</filename></para><para>%2</para>"
+msgstr "फााइल: <filename>%1</filename> ल संलग्न करे मं गलती"
+
 #: messagewin.cpp:1981
 msgctxt "@info"
 msgid "Do you really want to acknowledge this alarm?"
@@ -3238,6 +3882,16 @@ msgstr "अलार्म पावती देव"
 msgctxt "@action:button"
 msgid "Acknowledge"
 msgstr "पावती देव"
+
+#: messagewin.cpp:2028
+msgctxt "@info"
+msgid "Unable to locate this email in <application>KMail</application>"
+msgstr "ये ईमेल ल <application>केमेल</application> मं पता लगाय मं अक्छम"
+
+#: messagewin.cpp:2185
+msgctxt "@info"
+msgid "<para>Cannot defer alarm:</para><para>Alarm not found.</para>"
+msgstr "<para>अलार्म ल टाला नइ जा सकिस:</para><para>अलार्म नइ मिलिस.</para>"
 
 #: newalarmaction.cpp:54
 msgctxt "@item:inmenu"
@@ -3380,10 +4034,27 @@ msgctxt "@option:check"
 msgid "Start at login"
 msgstr "लागिन मं चालू हों"
 
+#: prefdlg.cpp:420
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Automatically start <application>KAlarm</application> whenever you "
+"start KDE.</para><para>This option should always be checked unless you "
+"intend to discontinue use of <application>KAlarm</application>.</para>"
+msgstr ""
+
 #: prefdlg.cpp:424
 msgctxt "@option:check"
 msgid "Warn before quitting"
 msgstr "बाहिर होए से पहिली चेतावनी देखाव"
+
+#: prefdlg.cpp:425
+msgctxt "@info:whatsthis"
+msgid ""
+"Check to display a warning prompt before quitting <application>KAlarm</"
+"application>."
+msgstr ""
+"<application>केअलार्म</application> से बाहिर होए से पहिली चेतावनी संदेस देखाय जाय के "
+"लिए चुनव."
 
 #: prefdlg.cpp:433
 msgctxt "@option:check"
@@ -3416,10 +4087,46 @@ msgid ""
 "terminal window"
 msgstr ""
 
+#: prefdlg.cpp:480
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check to execute command alarms in a terminal window by <icode>%1</icode>"
+msgstr "<icode>%1</icode> के साथ कमांड अलार्म ल टर्मिनल विंडो मं चलाय बर चुनव"
+
 #: prefdlg.cpp:489
 msgctxt "@option:radio Other terminal window command"
 msgid "Other:"
 msgstr "अन्यः"
+
+#: prefdlg.cpp:499
+msgctxt "@info:whatsthis"
+msgid ""
+"Enter the full command line needed to execute a command in your chosen "
+"terminal window. By default the alarm's command string will be appended to "
+"what you enter here. See the <application>KAlarm</application> Handbook for "
+"details of special codes to tailor the command line."
+msgstr ""
+
+#: prefdlg.cpp:545
+#, kde-format
+msgctxt "@info"
+msgid "Command to invoke terminal window not found: <command>%1</command>"
+msgstr "टर्मिनल विंडो चालू करे के कमांड नइ मिलिस: <command>%1</command>"
+
+#: prefdlg.cpp:588
+msgctxt "@info"
+msgid ""
+"You should not uncheck this option unless you intend to discontinue use of "
+"<application>KAlarm</application>"
+msgstr ""
+
+#: prefdlg.cpp:626
+msgctxt "@info:whatsthis"
+msgid ""
+"Select the time zone which <application>KAlarm</application> should use as "
+"its default for displaying and entering dates and times."
+msgstr ""
 
 #: prefdlg.cpp:638
 msgctxt "@label:listbox"
@@ -3452,6 +4159,16 @@ msgctxt "@label:spinbox"
 msgid "Start of day for date-only alarms:"
 msgstr "सिरिफ-दिन के अलार्म बर चालू होए के दिन:"
 
+#: prefdlg.cpp:675
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid "<para>Enter the start time of the working day.</para><para>%1</para>"
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>The earliest time of day at which a date-only alarm will be triggered."
+"</para><para>%1</para>"
+msgstr "<para>काम के दिन के चालू समय भरव.</para><para>%1</para>"
+
 #: prefdlg.cpp:681
 msgctxt "@title:group"
 msgid "Working Hours"
@@ -3467,10 +4184,22 @@ msgctxt "@label:spinbox"
 msgid "Daily start time:"
 msgstr "नित्य चालू समय:"
 
+#: prefdlg.cpp:711
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<para>Enter the start time of the working day.</para><para>%1</para>"
+msgstr "<para>काम के दिन के चालू समय भरव.</para><para>%1</para>"
+
 #: prefdlg.cpp:721
 msgctxt "@label:spinbox"
 msgid "Daily end time:"
 msgstr "नित्य के खतम समय:"
+
+#: prefdlg.cpp:726
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<para>Enter the end time of the working day.</para><para>%1</para>"
+msgstr "<para>काम के दिन के खतम समय भरव.</para><para>%1</para>"
 
 #: prefdlg.cpp:732
 #, fuzzy
@@ -3484,6 +4213,16 @@ msgstr "के-ओर्गनाइजर मं देखाव"
 msgctxt "@label:spinbox"
 msgid "KOrganizer event duration:"
 msgstr ""
+
+#: prefdlg.cpp:748
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter the event duration in hours and minutes, for alarms which are "
+"copied to KOrganizer.</para><para>%1</para>"
+msgstr "<para>अलार्म ल दोहराने बर आखिरी तारीक भरव.</para><para>%1</para>"
 
 #: prefdlg.cpp:833
 msgctxt "@title:group"
@@ -3512,6 +4251,15 @@ msgstr ""
 msgctxt "@option:radio"
 msgid "Prompt for which calendar to store in"
 msgstr "किस संसाधन मं भंडारित करना हे ओखर बर पूछव"
+
+#: prefdlg.cpp:846
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>When saving a new alarm or alarm template, prompt for which calendar "
+"to store it in, if there is more than one active calendar.</para><para>Note "
+"that archived alarms are always stored in the default archived alarm "
+"calendar.</para>"
+msgstr ""
 
 #: prefdlg.cpp:851
 msgctxt "@title:group"
@@ -3570,6 +4318,15 @@ msgid ""
 msgstr ""
 "सब्बो अभी हाल के अभिलेखित अलार्म ल मेटाव (सिरिफ डिफाल्ट अभिलेखित अलार्म संसाधन मन से)."
 
+#: prefdlg.cpp:931
+msgctxt "@info"
+msgid ""
+"<para>A default calendar is required in order to archive alarms, but none is "
+"currently enabled.</para><para>If you wish to keep expired alarms, please "
+"first use the calendars view to select a default archived alarms calendar.</"
+"para>"
+msgstr ""
+
 #: prefdlg.cpp:947
 msgctxt "@info"
 msgid "Do you really want to delete all archived alarms?"
@@ -3599,6 +4356,43 @@ msgstr "के-मेल"
 msgctxt "@option:radio"
 msgid "Sendmail"
 msgstr "सेंडमेल"
+
+#: prefdlg.cpp:980
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Choose how to send email when an email alarm is triggered."
+"<list><item><interface>%1</interface>: The email is sent automatically via "
+"<application>KMail</application>. <application>KMail</application> is "
+"started first if necessary.</item><item><interface>%2</interface>: The email "
+"is sent automatically. This option will only work if your system is "
+"configured to use <application>sendmail</application> or a sendmail "
+"compatible mail transport agent.</item></list></para>"
+msgstr ""
+
+#: prefdlg.cpp:988
+#, kde-format
+msgctxt "@option:check"
+msgid ""
+"Copy sent emails into <application>KMail</application>'s <resource>%1</"
+"resource> folder"
+msgstr ""
+"ईमेल भेजे के बाद् एक नकल <application>केमेल</application> के <resource>%1</resource> "
+"फोल्डर मं रखव"
+
+#: prefdlg.cpp:989
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid ""
+#| "Copy sent emails into <application>KMail</application>'s <resource>%1</"
+#| "resource> folder"
+msgctxt "@info:whatsthis"
+msgid ""
+"After sending an email, store a copy in <application>KMail</application>'s "
+"<resource>%1</resource> folder"
+msgstr ""
+"ईमेल भेजे के बाद् एक नकल <application>केमेल</application> के <resource>%1</resource> "
+"फोल्डर मं रखव"
 
 #: prefdlg.cpp:995
 msgctxt "@option:check"
@@ -3634,10 +4428,34 @@ msgid ""
 "as the sender when sending email alarms."
 msgstr ""
 
+#: prefdlg.cpp:1036
+msgctxt "@option:radio"
+msgid "Use <application>KMail</application> identities"
+msgstr "<application>केमेल</application> पहिचान उपयोग करव"
+
+#: prefdlg.cpp:1039
+msgctxt "@info:whatsthis"
+msgid ""
+"Check to use <application>KMail</application>'s email identities to identify "
+"you as the sender when sending email alarms. For existing email alarms, "
+"<application>KMail</application>'s default identity will be used. For new "
+"email alarms, you will be able to pick which of <application>KMail</"
+"application>'s identities to use."
+msgstr ""
+
 #: prefdlg.cpp:1046
 msgctxt "@label 'Bcc' email address"
 msgid "Bcc:"
 msgstr "बेनामी प्रतिलिपि: "
+
+#: prefdlg.cpp:1057
+msgctxt "@info:whatsthis"
+msgid ""
+"Your email address, used for blind copying email alarms to yourself. If you "
+"want blind copies to be sent to your account on the computer which "
+"<application>KAlarm</application> runs on, you can simply enter your user "
+"login name."
+msgstr ""
 
 #: prefdlg.cpp:1068
 msgctxt "@info:whatsthis"
@@ -3654,11 +4472,34 @@ msgctxt "@info"
 msgid "No valid 'Bcc' email address is specified."
 msgstr "कोई वैध बेनामी प्रति ईमेल पता निरधारित नइ हे."
 
+#: prefdlg.cpp:1159
+#, kde-format
+msgctxt "@info"
+msgid "<para>%1</para><para>Are you sure you want to save your changes?</para>"
+msgstr "<para>%1</para><para>का आप मन सही मं बदलाव मन ल सहेजना चाहथो ?</para>"
+
 #: prefdlg.cpp:1165
 #, kde-format
 msgctxt "@info"
 msgid "No email address is currently set in KDE System Settings. %1"
 msgstr "केडीई नियंत्रन केंद्र तिर कोनो ई-मेल पता अभी हाल मं सेट नइ हे. %1"
+
+#: prefdlg.cpp:1170
+#, kde-format
+msgctxt "@info"
+msgid "No <application>KMail</application> identities currently exist. %1"
+msgstr "कोई <application>केमेल</application> पहिचान अभी अस्तित्व मं नइ हे. %1"
+
+#: prefdlg.cpp:1188
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis sound file 'Repeat' checkbox"
+#| msgid ""
+#| "The default setting for sound file <interface>%1</interface> in the alarm "
+#| "edit dialog."
+msgctxt "@info:whatsthis"
+msgid ""
+"The default setting for <interface>%1</interface> in the alarm edit dialog."
+msgstr "अलार्म संपादन गोठ मं अवाज फाइल <interface>%1</interface> बर डिफाल्ट सेटिंग."
 
 #: prefdlg.cpp:1195 prefdlg.cpp:1581
 msgctxt "@title:tab"
@@ -3698,6 +4539,14 @@ msgctxt "@option:radio"
 msgid "Do not repeat"
 msgstr "दुहराव नइ"
 
+#: prefdlg.cpp:1264
+msgctxt "@info:whatsthis"
+msgid ""
+"For yearly recurrences, choose what date, if any, alarms due on February "
+"29th should occur in non-leap years.<note>The next scheduled occurrence of "
+"existing alarms is not re-evaluated when you change this setting.</note>"
+msgstr ""
+
 #: prefdlg.cpp:1272
 msgctxt "@title:group"
 msgid "Display Alarms"
@@ -3735,6 +4584,14 @@ msgctxt "@option:check"
 msgid "Repeat sound file"
 msgstr "अवाज फाइल दुहराव"
 
+#: prefdlg.cpp:1326
+#, kde-format
+msgctxt "@info:whatsthis sound file 'Repeat' checkbox"
+msgid ""
+"The default setting for sound file <interface>%1</interface> in the alarm "
+"edit dialog."
+msgstr "अलार्म संपादन गोठ मं अवाज फाइल <interface>%1</interface> बर डिफाल्ट सेटिंग."
+
 #: prefdlg.cpp:1332
 msgctxt "@label:textbox"
 msgid "Sound file:"
@@ -3765,6 +4622,18 @@ msgctxt "@title:group"
 msgid "Message Font && Color"
 msgstr "संदेस फोंट अउ रंग"
 
+#: prefdlg.cpp:1564
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis sound file 'Repeat' checkbox"
+#| msgid ""
+#| "The default setting for sound file <interface>%1</interface> in the alarm "
+#| "edit dialog."
+msgctxt "@info"
+msgid ""
+"You must enter a sound file when <interface>%1</interface> is selected as "
+"the default sound type"
+msgstr "अलार्म संपादन गोठ मं अवाज फाइल <interface>%1</interface> बर डिफाल्ट सेटिंग."
+
 #: prefdlg.cpp:1585
 msgctxt "@title:tab"
 msgid "Alarm Windows"
@@ -3775,14 +4644,56 @@ msgctxt "@option:check"
 msgid "Show in system tray"
 msgstr "तंत्र तस्तरी मं देखाव"
 
+#: prefdlg.cpp:1591
+#, fuzzy
+#| msgctxt "@info:whatsthis"
+#| msgid ""
+#| "Check to run <application>KAlarm</application> whenever you start KDE."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Check to show <application>KAlarm</application>'s icon in the system "
+"tray. Showing it in the system tray provides easy access and a status "
+"indication.</para>"
+msgstr ""
+"जब आप मन केडीई चालू करथो तहां <application>केअलार्म</application> चलाय बर चुनव."
+
 #: prefdlg.cpp:1602
 msgctxt "@option:radio Always show KAlarm icon"
 msgid "Always show"
 msgstr ""
 
+#: prefdlg.cpp:1606
+#, fuzzy
+#| msgctxt "@info:whatsthis"
+#| msgid ""
+#| "Check to run <application>KAlarm</application> whenever you start KDE."
+msgctxt "@info:whatsthis"
+msgid ""
+"Check to show <application>KAlarm</application>'s icon in the system tray "
+"regardless of whether alarms are due."
+msgstr ""
+"जब आप मन केडीई चालू करथो तहां <application>केअलार्म</application> चलाय बर चुनव."
+
 #: prefdlg.cpp:1610
 msgctxt "@option:radio"
 msgid "Automatically hide if no active alarms"
+msgstr ""
+
+#: prefdlg.cpp:1614
+msgctxt "@info:whatsthis"
+msgid ""
+"Check to automatically hide <application>KAlarm</application>'s icon in the "
+"system tray if there are no active alarms. When hidden, the icon can always "
+"be made visible by use of the system tray option to show hidden icons."
+msgstr ""
+
+#: prefdlg.cpp:1620
+msgctxt "@info:whatsthis"
+msgid ""
+"Check to automatically hide <application>KAlarm</application>'s icon in the "
+"system tray if no alarms are due within the specified time period. When "
+"hidden, the icon can always be made visible by use of the system tray option "
+"to show hidden icons."
 msgstr ""
 
 #: prefdlg.cpp:1623
@@ -3839,6 +4750,16 @@ msgctxt "@title:group"
 msgid "Alarm Message Windows"
 msgstr ""
 
+#: prefdlg.cpp:1728
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Choose how to reduce the chance of alarm messages being accidentally "
+"acknowledged:<list><item>Position alarm message windows as far as possible "
+"from the current mouse cursor location, or</item><item>Position alarm "
+"message windows in the center of the screen, but disable buttons for a short "
+"time after the window is displayed.</item></list></para>"
+msgstr ""
+
 #: prefdlg.cpp:1731
 msgctxt "@option:radio"
 msgid "Position windows far from mouse cursor"
@@ -3865,6 +4786,16 @@ msgstr ""
 msgctxt "@option:check"
 msgid "Message windows have a title bar and take keyboard focus"
 msgstr "संदेस विंडो मं सीर्सक पट्टी हो अउ कुंजीपट फोकस प्राप्त करे"
+
+#: prefdlg.cpp:1759
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Specify the characteristics of alarm message windows:<list><item>If "
+"checked, the window is a normal window with a title bar, which grabs "
+"keyboard input when it is displayed.</item><item>If unchecked, the window "
+"does not interfere with your typing when it is displayed, but it has no "
+"title bar and cannot be moved or resized.</item></list></para>"
+msgstr ""
 
 #: recurrenceedit.cpp:77
 msgctxt "@item:inlistbox Recurrence type"
@@ -3910,6 +4841,14 @@ msgstr "आवृत्ति नियम"
 msgctxt "@info:whatsthis"
 msgid "Do not repeat the alarm"
 msgstr "अलार्म दुहराव नइ"
+
+#: recurrenceedit.cpp:135
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Trigger the alarm at the specified date/time and at every login until "
+"then.</para><para>Note that it will also be triggered any time "
+"<application>KAlarm</application> is restarted.</para>"
+msgstr ""
 
 #: recurrenceedit.cpp:143
 msgctxt "@info:whatsthis"
@@ -3983,6 +4922,14 @@ msgctxt "@option:radio"
 msgid "End by:"
 msgstr "को आखरी:"
 
+#: recurrenceedit.cpp:277
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Repeat the alarm until the date/time specified.</para><para><note>This "
+"applies to the main recurrence only. It does not limit any sub-repetition "
+"which will occur regardless after the last main recurrence.</note></para>"
+msgstr ""
+
 #: recurrenceedit.cpp:282
 #, fuzzy
 #| msgctxt "@info/plain"
@@ -3990,6 +4937,21 @@ msgstr "को आखरी:"
 msgctxt "@info"
 msgid "This uses the same time zone as the start time."
 msgstr "ये चालू समय जइसन ही समय छेत्र परयोग करथे ."
+
+#: recurrenceedit.cpp:284
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
+msgstr "<para>अलार्म ल दोहराने बर आखिरी तारीक भरव.</para><para>%1</para>"
+
+#: recurrenceedit.cpp:291
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter the last time to repeat the alarm.</para><para>%1</para><para>"
+"%2</para>"
+msgstr ""
+"<para>अलार्म दोहराने बर आखिरी समय भरव.</para><para>%1</para><para>%2</para>"
 
 #: recurrenceedit.cpp:296
 msgctxt "@info:whatsthis"
@@ -4052,10 +5014,29 @@ msgctxt "@option:check"
 msgid "Exclude holidays"
 msgstr ""
 
+#: recurrenceedit.cpp:373
+#, fuzzy
+#| msgctxt "@info Please set the 'From' email address..."
+#| msgid ""
+#| "<para>%1</para><para>Please set it in the Configuration dialog.</para>"
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Do not trigger the alarm on holidays.</para><para>You can specify your "
+"holiday region in the Configuration dialog.</para>"
+msgstr "<para>%1</para><para>किरपा करके, एला प्राथमिकता गोठ मं सेट करव.</para>"
+
 #: recurrenceedit.cpp:378
 msgctxt "@option:check"
 msgid "Only during working time"
 msgstr "सिरिफ काम के समय"
+
+#: recurrenceedit.cpp:381
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Only execute the alarm during working hours, on working days.</"
+"para><para>You can specify working days and hours in the Configuration "
+"dialog.</para>"
+msgstr ""
 
 #: recurrenceedit.cpp:424
 msgctxt "@info"
@@ -4427,6 +5408,14 @@ msgctxt "@info:whatsthis"
 msgid "Edit the highlighted calendar"
 msgstr "चमकाय गे संसाधन संपादित करव"
 
+#: resourceselector.cpp:118
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Remove the highlighted calendar from the list.</para><para>The "
+"calendar itself is left intact, and may subsequently be reinstated in the "
+"list if desired.</para>"
+msgstr ""
+
 #: resourceselector.cpp:147
 #, fuzzy
 #| msgctxt "@info:tooltip"
@@ -4468,6 +5457,66 @@ msgid ""
 "You cannot remove your default archived alarm calendar while expired alarms "
 "are configured to be kept."
 msgstr "आप अपन डिफाल्ट सक्रिय अलार्म संसाधन ल मिटा नइ सकहू."
+
+#: resourceselector.cpp:324
+#, kde-format
+msgctxt "@info"
+msgid "<para>It also contains:%1</para>"
+msgstr ""
+
+#: resourceselector.cpp:325
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "<para>Alarms are currently disabled.</para><para>Do you want to enable "
+#| "alarms now?</para>"
+msgctxt "@info"
+msgid ""
+"<para><resource>%1</resource> is the default calendar for:%2</para>"
+"%3<para>Do you really want to remove it from all calendar lists?</para>"
+msgstr ""
+"<para>अलार्म अभी अक्छम हे.</para><para>. का आप मन अलार्मों ल अभी सक्छम करना चाहथो ?"
+"</para>"
+
+#: resourceselector.cpp:329
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Do you really want to remove your default resource (<resource>%1</"
+#| "resource>) from the list?"
+msgctxt "@info"
+msgid ""
+"Do you really want to remove your default calendar (<resource>%1</resource>) "
+"from the list?"
+msgstr ""
+"का आप मन सही मं ए डिफाल्ट संसाधन मन <resource>%1</resource> ल सूची से मिटाना "
+"चाहथो ?"
+
+#: resourceselector.cpp:332
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "<para>Alarms are currently disabled.</para><para>Do you want to enable "
+#| "alarms now?</para>"
+msgctxt "@info"
+msgid ""
+"<para><resource>%1</resource> contains:%2</para><para>Do you really want to "
+"remove it from all calendar lists?</para>"
+msgstr ""
+"<para>अलार्म अभी अक्छम हे.</para><para>. का आप मन अलार्मों ल अभी सक्छम करना चाहथो ?"
+"</para>"
+
+#: resourceselector.cpp:335
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Do you really want to remove the resource <resource>%1</resource> from "
+#| "the list?"
+msgctxt "@info"
+msgid ""
+"Do you really want to remove the calendar <resource>%1</resource> from the "
+"list?"
+msgstr "का आप मन संसाधन <resource>%1</resource> ल सूची से मिटाना चाहथो ?"
 
 #: resourceselector.cpp:358
 #, fuzzy
@@ -4587,6 +5636,31 @@ msgstr "हाँ"
 msgctxt "@info Parameter in 'Default calendar: Yes/No'"
 msgid "No"
 msgstr "नइ"
+
+#: resourceselector.cpp:603
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<title>%1</title><para>ID: %2<nl/>Calendar type: %3<nl/>Contents: %4<nl/>%5: "
+"<filename>%6</filename><nl/>Permissions: %7<nl/>Status: %8<nl/>Default "
+"calendar: %9</para>"
+msgstr ""
+
+#: rtcwakeaction.cpp:89
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "<command>%1</command> not found"
+msgctxt "@text/plain"
+msgid "Could not run <command>%1</command> to set wake from suspend"
+msgstr "<command>%1</command> नइ मिलिस."
+
+#: rtcwakeaction.cpp:92
+#, kde-format
+msgctxt "@text/plain"
+msgid ""
+"Error setting wake from suspend.<nl/>Command was: <command>%1</command><nl/"
+">Error code: %2."
+msgstr ""
 
 #: sounddlg.cpp:55
 msgctxt "@option:check"
@@ -4734,6 +5808,48 @@ msgctxt "@info:whatsthis"
 msgid "Configure a sound file to play when the alarm is displayed."
 msgstr "जब अलार्म प्रदर्सित होही तहां बजाय वाले अवाज फाइल ल कान्फिगर करव."
 
+#: soundpicker.cpp:134
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<interface>%1</interface>: the message is displayed silently."
+msgstr "<interface>%1</interface>: संदेस बिना सोर के देखाय  जाही."
+
+#: soundpicker.cpp:135
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<interface>%1</interface>: a simple beep is sounded."
+msgstr "<interface>%1</interface>: एक सादा बीप बजाइस जााएगा."
+
+#: soundpicker.cpp:136
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<interface>%1</interface>: an audio file is played. You will be prompted to "
+"choose the file and set play options."
+msgstr ""
+
+#: soundpicker.cpp:140
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<interface>%1</interface>: the message text is spoken."
+msgstr "<interface>%1</interface>: संदेस पाठ ल पढ़िस जाही."
+
+#: soundpicker.cpp:142
+#, kde-format
+msgctxt "@info:whatsthis Combination of multiple whatsthis items"
+msgid ""
+"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
+"item><item>%2</item><item>%3</item><item>%4</item></list></para>"
+msgstr ""
+
+#: soundpicker.cpp:150
+#, kde-format
+msgctxt "@info:whatsthis Combination of multiple whatsthis items"
+msgid ""
+"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
+"item><item>%2</item><item>%3</item></list></para>"
+msgstr ""
+
 #: soundpicker.cpp:270
 msgctxt "@title:window"
 msgid "Sound File"
@@ -4769,9 +5885,27 @@ msgctxt "@label:textbox"
 msgid "Command:"
 msgstr "कमांड:"
 
+#: specialactions.cpp:186
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter a shell command to execute before the alarm is displayed.</"
+"para><para>Note that it is executed only when the alarm proper is displayed, "
+"not when a reminder or deferred alarm is displayed.</para><para><note>KAlarm "
+"will wait for the command to complete before displaying the alarm.</note></"
+"para>"
+msgstr ""
+
 #: specialactions.cpp:192
 msgctxt "@option:check"
 msgid "Execute for deferred alarms"
+msgstr ""
+
+#: specialactions.cpp:193
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>If unchecked, the command is only executed before the alarm proper is "
+"displayed.</para><para>If checked, the pre-alarm command is also executed "
+"before a deferred alarm is displayed.</para>"
 msgstr ""
 
 #: specialactions.cpp:197
@@ -4801,6 +5935,15 @@ msgstr ""
 msgctxt "@title:group"
 msgid "Post-Alarm Action"
 msgstr "अलार्म के बाद के काम"
+
+#: specialactions.cpp:220
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter a shell command to execute after the alarm window is closed.</"
+"para><para>Note that it is not executed after closing a reminder window. If "
+"you defer the alarm, it is not executed until the alarm is finally "
+"acknowledged or closed.</para>"
+msgstr ""
 
 #: templatedlg.cpp:62
 msgctxt "@title:window"
@@ -5070,6 +6213,17 @@ msgctxt "@info"
 msgid "Cannot schedule wakeup time for a date-only alarm"
 msgstr "अलार्म के अगला सेट तारीक या समय"
 
+#: wakedlg.cpp:165
+msgctxt "@info"
+msgid ""
+"<para>This wakeup will cancel any existing wakeup which has been set by "
+"KAlarm or any other application, because your computer can only schedule a "
+"single wakeup time.</para><para><b>Note:</b> Wake From Suspend is not "
+"supported at all on some computers, especially older ones, and some "
+"computers only support setting a wakeup time up to 24 hours ahead. You may "
+"wish to set up a test alarm to check your system's capability.</para>"
+msgstr ""
+
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: wakedlg.ui:17
 msgid "Wake From Suspend Alarm"
@@ -5182,292 +6336,6 @@ msgstr ""
 #~ msgid "Your emails"
 #~ msgstr "raviratlami@aol.in,"
 
-#~ msgctxt "@info:tooltip"
-#~ msgid "%1<nl/>%2: <filename>%3</filename><nl/>%4, %5"
-#~ msgstr "%1<nl/>%2: <filename>%3</filename><nl/>%4, %5"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "%1<nl/>%2: <filename>%3</filename><nl/>%4"
-#~ msgstr "%1<nl/>%2: <filename>%3</filename><nl/>%4"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "%1<nl/>%2: <filename>%3</filename>"
-#~ msgstr "%1<nl/>%2: <filename>%3</filename>"
-
-#, fuzzy
-#~| msgctxt "@info"
-#~| msgid "Unable to create resource of type <resource>%1</resource>."
-#~ msgctxt "@info"
-#~ msgid "Failed to remove calendar <resource>%1</resource>."
-#~ msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
-
-#, fuzzy
-#~| msgctxt "@info:tooltip"
-#~| msgid "%1%2"
-#~ msgctxt "@info"
-#~ msgid "%1<nl/>(%2)"
-#~ msgstr "%1%2"
-
-#, fuzzy
-#~| msgctxt "@info"
-#~| msgid "Unable to create resource of type <resource>%1</resource>."
-#~ msgctxt "@info"
-#~ msgid "Failed to update calendar <resource>%1</resource>."
-#~ msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
-
-#~ msgctxt "@info"
-#~ msgid "Cannot download calendar: <filename>%1</filename>"
-#~ msgstr "कलेन्डर डाउनलोड नइ कर सकिस: <filename>%1</filename>"
-
-#~ msgctxt "@info"
-#~ msgid "Failed to save calendar to <filename>%1</filename>"
-#~ msgstr "कलेन्डर ल <filename>%1</filename> मं सहेजे मं फेल"
-
-#~ msgctxt "@info"
-#~ msgid "Cannot upload calendar to <filename>%1</filename>"
-#~ msgstr "कलेन्डर <filename>%1</filename> ल अपलोड नइ कर सकिस"
-
-#~ msgctxt "@info"
-#~ msgid "Could not load calendar <filename>%1</filename>."
-#~ msgstr "कलेन्डर <filename>%1</filename> ल लोड नइ कर सकिस."
-
-#, fuzzy
-#~ msgctxt "@info"
-#~ msgid "Error loading calendar to append to:<nl/><filename>%1</filename>"
-#~ msgstr "कलेन्डर <filename>%1</filename> ल अपलोड नइ कर सकिस"
-
-#, fuzzy
-#~ msgctxt "@info"
-#~ msgid "Failed to save new calendar to:<nl/><filename>%1</filename>"
-#~ msgstr "कलेन्डर ल <filename>%1</filename> मं सहेजे मं फेल"
-
-#, fuzzy
-#~ msgctxt "@info"
-#~ msgid "Cannot upload new calendar to:<nl/><filename>%1</filename>"
-#~ msgstr "कलेन्डर <filename>%1</filename> ल अपलोड नइ कर सकिस"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid "<para>Enter the date to schedule the alarm.</para><para>%1</para>"
-#~ msgstr "<para>अलार्म सेड्यूल करे बर तारीक भरव.</para><para>%1</para>"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "<para>Enter the time to schedule the alarm.</para><para>%1</para><para>"
-#~ "%2</para>"
-#~ msgstr ""
-#~ "<para>अलार्म सेड्यूल करे बर समय भरव.</para><para>%1</para><para>%2</para>"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid "<para>%1</para><para>%2</para>"
-#~ msgstr "<para>%1</para><para>%2</para>"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid "<para>%1</para><para>%2</para><para>%3</para>"
-#~ msgstr "<para>%1</para><para>%2</para><para>%3</para>"
-
-#, fuzzy
-#~| msgctxt "@info"
-#~| msgid "Unable to create resource of type <resource>%1</resource>."
-#~ msgctxt "@info/plain"
-#~ msgid "Failed to create default calendar <resource>%1</resource>"
-#~ msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
-
-#, fuzzy
-#~| msgctxt "@info"
-#~| msgid "Unable to create resource of type <resource>%1</resource>."
-#~ msgctxt "@info/plain 'Import Alarms' is the name of a menu option"
-#~ msgid ""
-#~ "Failed to convert old configuration for calendar <resource>%1</resource>. "
-#~ "Please use Import Alarms to load its alarms into a new or existing "
-#~ "calendar."
-#~ msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
-
-#, fuzzy
-#~| msgctxt "@info:whatsthis"
-#~| msgid "<para>%1</para><para>%2</para>"
-#~ msgctxt "@info"
-#~ msgid "<para>%1</para><para>%2</para>"
-#~ msgstr "<para>%1</para><para>%2</para>"
-
-#, fuzzy
-#~| msgctxt "@info:whatsthis"
-#~| msgid "<para>%1</para><para>%2</para>"
-#~ msgctxt "@info"
-#~ msgid "<para>%1</para><para>%2<nl/>(%3)</para>"
-#~ msgstr "<para>%1</para><para>%2</para>"
-
-#, fuzzy
-#~| msgctxt "@info"
-#~| msgid "Unable to create resource of type <resource>%1</resource>."
-#~ msgctxt "@info/plain"
-#~ msgid "Failed to update format of calendar <resource>%1</resource>"
-#~ msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
-
-#, fuzzy
-#~| msgctxt "@info Please set the 'From' email address..."
-#~| msgid ""
-#~| "<para>%1</para><para>Please set it in the Configuration dialog.</para>"
-#~ msgctxt "@info"
-#~ msgid "<para>%1</para><para>Please select a new default calendar.</para>"
-#~ msgstr "<para>%1</para><para>किरपा करके, एला प्राथमिकता गोठ मं सेट करव.</para>"
-
-#~ msgctxt "@info:shell"
-#~ msgid "<icode>%1</icode>: invalid email address"
-#~ msgstr "<icode>%1</icode>: अवैध ईमेल पता"
-
-#~ msgctxt "@info:shell"
-#~ msgid "Invalid <icode>%1</icode> parameter for date-only alarm"
-#~ msgstr "सिरिफ तारीक अलार्म बर अवैध <icode>%1</icode> पैरामीटर"
-
-#~ msgctxt "@info:shell"
-#~ msgid "<icode>%1</icode> earlier than <icode>%2</icode>"
-#~ msgstr "<icode>%2</icode> से पहिली <icode>%1</icode>"
-
-#~ msgctxt "@info:shell"
-#~ msgid ""
-#~ "Invalid <icode>%1</icode> and <icode>%2</icode> parameters: repetition is "
-#~ "longer than <icode>%3</icode> interval"
-#~ msgstr ""
-#~ "अवैध <icode>%1</icode> अउ <icode>%2</icode> पैरामीटर: बारंबारता <icode>%3</"
-#~ "icode> अंतराल से अधिक हे"
-
-#, fuzzy
-#~| msgctxt "@info:shell"
-#~| msgid ""
-#~| "<icode>%1</icode> requires speech synthesis to be configured using KTTSD"
-#~ msgctxt "@info:shell"
-#~ msgid ""
-#~ "<icode>%1</icode> requires speech synthesis to be configured using Jovie"
-#~ msgstr ""
-#~ "<icode>%1</icode> ल चाही कि केटीटीएसडी के साथ स्पीच सिंथेसिस कान्फिगर होना चाही"
-
-#~ msgctxt "@info:shell"
-#~ msgid "<icode>%1</icode> requires <icode>%2</icode>"
-#~ msgstr "<icode>%1</icode> ल जरूरी हे <icode>%2</icode>"
-
-#~ msgctxt "@info:shell"
-#~ msgid "<icode>%1</icode> requires <icode>%2</icode> or <icode>%3</icode>"
-#~ msgstr "<icode>%1</icode> ल चाही <icode>%2</icode> या <icode>%3</icode>"
-
-#~ msgctxt "@info:shell"
-#~ msgid "Invalid <icode>%1</icode> parameter"
-#~ msgstr "अवैध <icode>%1</icode> पैरामीटर"
-
-#~ msgctxt "@info:shell"
-#~ msgid "<icode>%1</icode> incompatible with <icode>%2</icode>"
-#~ msgstr "<icode>%2</icode> से संगत नइ हे <icode>%1</icode>"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Set the <interface>Any time</interface> option for alarms based on this "
-#~ "template."
-#~ msgstr ""
-#~ "ये टैम्प्लेट के आधार से अलार्म के <interface>कोई भी समय</interface> विकल्प ल सेट करव"
-
-#, fuzzy
-#~| msgctxt "@info:whatsthis"
-#~| msgid ""
-#~| "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "<para>Enter how long in advance of or after the main alarm to display a "
-#~ "reminder alarm.</para><para>%1</para>"
-#~ msgstr "<para>अलार्म ल दोहराने बर आखिरी तारीक भरव.</para><para>%1</para>"
-
-#~ msgctxt "@info"
-#~ msgid "Command executed: <icode>%1</icode>"
-#~ msgstr "चलाया गिस कमांड: <icode>%1</icode>"
-
-#~ msgctxt "@info"
-#~ msgid "Invalid email address: <email>%1</email>"
-#~ msgstr "अवैध ई-मेल पता: <email>%1</email>"
-
-#~ msgctxt "@info"
-#~ msgid "Invalid email attachment: <filename>%1</filename>"
-#~ msgstr "अवैध ई-मेल संलग्नक: <filename>%1</filename>"
-
-#~ msgctxt "@info"
-#~ msgid "Email sent to:<nl/>%1<nl/>Bcc: <email>%2</email>"
-#~ msgstr "ईमेल भेजिस:<nl/>%1<nl/>बेनामी प्रति: <email>%2</email>"
-
-#~ msgctxt "@info"
-#~ msgid "Email sent to:<nl/>%1"
-#~ msgstr "ईमेल भेजिस:<nl/>%1"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "<para>End of alarm list reached.</para><para>Continue from the beginning?"
-#~ "</para>"
-#~ msgstr "<para>अलार्म सूची के आखरी आ गिस .</para><para>सुरू से जारी रखव?</para>"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "<para>Beginning of alarm list reached.</para><para>Continue from the end?"
-#~ "</para>"
-#~ msgstr "<para>अलार्म सूची के चालू पहुंचा.</para><para>आखरी से जारी रखव?</para>"
-
-#, fuzzy
-#~ msgctxt "@info"
-#~ msgid "<para>%1</para><para>(Could not start KOrganizer)</para>"
-#~ msgstr "<para>%1</para><para>का आप मन सही मं बदलाव मन ल सहेजना चाहथो ?<para>"
-
-#, fuzzy
-#~ msgctxt "@info"
-#~ msgid "<para>%1</para><para>(KOrganizer not fully started)</para>"
-#~ msgstr "<para>%1</para><para>%2</para>"
-
-#, fuzzy
-#~ msgctxt "@info"
-#~ msgid "<para>%1</para><para>(Error communicating with KOrganizer)</para>"
-#~ msgstr "<para>%1</para><para>का आप मन सही मं बदलाव मन ल सहेजना चाहथो ?<para>"
-
-#~ msgctxt "@info Please set the 'From' email address..."
-#~ msgid ""
-#~ "<para>%1</para><para>Please set it in the Configuration dialog.</para>"
-#~ msgstr "<para>%1</para><para>किरपा करके, एला प्राथमिकता गोठ मं सेट करव.</para>"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "<para>Alarms are currently disabled.</para><para>Do you want to enable "
-#~ "alarms now?</para>"
-#~ msgstr ""
-#~ "<para>अलार्म अभी अक्छम हे.</para><para>. का आप मन अलार्मों ल अभी सक्छम करना "
-#~ "चाहथो ?</para>"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "Unable to start <application>KMail</application><nl/>(<message>%1</"
-#~ "message>)"
-#~ msgstr ""
-#~ "<application>केमेल</application> चालू करे मं अक्छम<nl />(<message>%1</message>)"
-
-#~ msgctxt "@info"
-#~ msgid "<filename>%1</filename> is a folder"
-#~ msgstr "<filename>%1</filename> एक फोल्डर हे"
-
-#~ msgctxt "@info"
-#~ msgid "<filename>%1</filename> not found"
-#~ msgstr "<filename>%1</filename> नइ मिलिस"
-
-#~ msgctxt "@info"
-#~ msgid "<filename>%1</filename> is not readable"
-#~ msgstr "<filename>%1</filename> पढ़े जइसन नइ हे"
-
-#~ msgctxt "@info"
-#~ msgid "<filename>%1</filename> appears not to be a text or image file"
-#~ msgstr "लगथे  कि <filename>%1</filename> पाठ या फोटू फाइल नइ हे"
-
-#, fuzzy
-#~| msgctxt "@info:shell"
-#~| msgid ""
-#~| "<icode>%1</icode>: Event <resource>%2</resource> not found, or not "
-#~| "editable"
-#~ msgctxt "@info:shell"
-#~ msgid "%1: Event <resource>%2</resource> not found, or not unique"
-#~ msgstr ""
-#~ "<icode>%1</icode>: कारक्रम <resource>%2</resource> नइ मिलिस या संपादन जा सके "
-#~ "नइ हे"
-
 #, fuzzy
 #~| msgctxt "@info:shell"
 #~| msgid ""
@@ -5478,186 +6346,6 @@ msgstr ""
 #~ msgstr ""
 #~ "<icode>%1</icode>: कारक्रम <resource>%2</resource> नइ मिलिस या संपादन जा सके "
 #~ "नइ हे"
-
-#, fuzzy
-#~| msgctxt "@info:shell"
-#~| msgid ""
-#~| "<icode>%1</icode>: Event <resource>%2</resource> not found, or not "
-#~| "editable"
-#~ msgctxt "@info:shell"
-#~ msgid "%1: Event <resource>%2</resource> not found, or not editable"
-#~ msgstr ""
-#~ "<icode>%1</icode>: कारक्रम <resource>%2</resource> नइ मिलिस या संपादन जा सके "
-#~ "नइ हे"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "Invalid 'From' email address.<nl/>Email identity <resource>%1</resource> "
-#~ "not found"
-#~ msgstr "अवैध 'प्रेसक' ईमेल पता.<nl/>ईमेल पहिचान <resource>%1</resource> नइ मिलिस"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "Invalid 'From' email address.<nl/>Email identity <resource>%1</resource> "
-#~ "has no email address"
-#~ msgstr ""
-#~ "अवैध 'प्रेसक' ईमेल पता.<nl/>ईमेल पहिचान <resource>%1</resource> तिर कोनो ईमेल "
-#~ "पता नइ हे"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "No mail transport configured for email identity <resource>%1</resource>"
-#~ msgstr ""
-#~ "ईमेल पहिचान <resource>%1</resource> बर कोनो ईमेल ट्रांसपोर्ट कान्फिगर करिस होय "
-#~ "नइ हे."
-
-#~ msgctxt "@info"
-#~ msgid "Error attaching file: <filename>%1</filename>"
-#~ msgstr "फााइल: <filename>%1</filename> ल संलग्न करे मं गलती"
-
-#~ msgctxt "@info"
-#~ msgid "Attachment not found: <filename>%1</filename>"
-#~ msgstr "संलग्नक नइ मिलिस: <filename>%1</filename>"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "Failure to create menus (perhaps <filename>%1</filename> missing or "
-#~ "corrupted)"
-#~ msgstr "मेन्यू बनाए मं अक्छम (सायद <filename>%1</filename> गंवा गे हे या खराब हे)"
-
-#~ msgctxt "@info:tooltip Locate this email in KMail"
-#~ msgid "Locate in <application>KMail</application>"
-#~ msgstr "<application>केमेल</application> मं पता लगिस"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid "Locate and highlight this email in <application>KMail</application>"
-#~ msgstr "ये ईमेल ल <application>केमेल</application> मं पता करव अउ चमकाव"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Activate <application>KAlarm</application>"
-#~ msgstr "<application>केअलार्म</application> सक्रिय करव"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid "Activate <application>KAlarm</application>"
-#~ msgstr "<application>केअलार्म</application> सक्रिय करव"
-
-#~ msgctxt "@info"
-#~ msgid "Cannot open audio file: <filename>%1</filename>"
-#~ msgstr "फाइल : <filename>%1</filename> खोल नइ सकिस"
-
-#, fuzzy
-#~| msgctxt "@info"
-#~| msgid "Error attaching file: <filename>%1</filename>"
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "<para>Error playing audio file: <filename>%1</filename></para><para>%2</"
-#~ "para>"
-#~ msgstr "फााइल: <filename>%1</filename> ल संलग्न करे मं गलती"
-
-#~ msgctxt "@info"
-#~ msgid "Unable to locate this email in <application>KMail</application>"
-#~ msgstr "ये ईमेल ल <application>केमेल</application> मं पता लगाय मं अक्छम"
-
-#~ msgctxt "@info"
-#~ msgid "<para>Cannot defer alarm:</para><para>Alarm not found.</para>"
-#~ msgstr "<para>अलार्म ल टाला नइ जा सकिस:</para><para>अलार्म नइ मिलिस.</para>"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Check to display a warning prompt before quitting <application>KAlarm</"
-#~ "application>."
-#~ msgstr ""
-#~ "<application>केअलार्म</application> से बाहिर होए से पहिली चेतावनी संदेस देखाय जाय "
-#~ "के लिए चुनव."
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Check to execute command alarms in a terminal window by <icode>%1</icode>"
-#~ msgstr "<icode>%1</icode> के साथ कमांड अलार्म ल टर्मिनल विंडो मं चलाय बर चुनव"
-
-#~ msgctxt "@info"
-#~ msgid "Command to invoke terminal window not found: <command>%1</command>"
-#~ msgstr "टर्मिनल विंडो चालू करे के कमांड नइ मिलिस: <command>%1</command>"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid "<para>Enter the start time of the working day.</para><para>%1</para>"
-#~ msgstr "<para>काम के दिन के चालू समय भरव.</para><para>%1</para>"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid "<para>Enter the end time of the working day.</para><para>%1</para>"
-#~ msgstr "<para>काम के दिन के खतम समय भरव.</para><para>%1</para>"
-
-#, fuzzy
-#~| msgctxt "@info:whatsthis"
-#~| msgid ""
-#~| "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "<para>Enter the event duration in hours and minutes, for alarms which are "
-#~ "copied to KOrganizer.</para><para>%1</para>"
-#~ msgstr "<para>अलार्म ल दोहराने बर आखिरी तारीक भरव.</para><para>%1</para>"
-
-#~ msgctxt "@option:check"
-#~ msgid ""
-#~ "Copy sent emails into <application>KMail</application>'s <resource>%1</"
-#~ "resource> folder"
-#~ msgstr ""
-#~ "ईमेल भेजे के बाद् एक नकल <application>केमेल</application> के <resource>%1</"
-#~ "resource> फोल्डर मं रखव"
-
-#~ msgctxt "@option:radio"
-#~ msgid "Use <application>KMail</application> identities"
-#~ msgstr "<application>केमेल</application> पहिचान उपयोग करव"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "<para>%1</para><para>Are you sure you want to save your changes?</para>"
-#~ msgstr "<para>%1</para><para>का आप मन सही मं बदलाव मन ल सहेजना चाहथो ?</para>"
-
-#~ msgctxt "@info"
-#~ msgid "No <application>KMail</application> identities currently exist. %1"
-#~ msgstr "कोई <application>केमेल</application> पहिचान अभी अस्तित्व मं नइ हे. %1"
-
-#, fuzzy
-#~| msgctxt "@info:whatsthis sound file 'Repeat' checkbox"
-#~| msgid ""
-#~| "The default setting for sound file <interface>%1</interface> in the "
-#~| "alarm edit dialog."
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "The default setting for <interface>%1</interface> in the alarm edit "
-#~ "dialog."
-#~ msgstr ""
-#~ "अलार्म संपादन गोठ मं अवाज फाइल <interface>%1</interface> बर डिफाल्ट सेटिंग."
-
-#~ msgctxt "@info:whatsthis sound file 'Repeat' checkbox"
-#~ msgid ""
-#~ "The default setting for sound file <interface>%1</interface> in the alarm "
-#~ "edit dialog."
-#~ msgstr ""
-#~ "अलार्म संपादन गोठ मं अवाज फाइल <interface>%1</interface> बर डिफाल्ट सेटिंग."
-
-#, fuzzy
-#~| msgctxt "@info:whatsthis"
-#~| msgid ""
-#~| "Check to run <application>KAlarm</application> whenever you start KDE."
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Check to show <application>KAlarm</application>'s icon in the system tray "
-#~ "regardless of whether alarms are due."
-#~ msgstr ""
-#~ "जब आप मन केडीई चालू करथो तहां <application>केअलार्म</application> चलाय बर चुनव."
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
-#~ msgstr "<para>अलार्म ल दोहराने बर आखिरी तारीक भरव.</para><para>%1</para>"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "<para>Enter the last time to repeat the alarm.</para><para>%1</para><para>"
-#~ "%2</para>"
-#~ msgstr ""
-#~ "<para>अलार्म दोहराने बर आखिरी समय भरव.</para><para>%1</para><para>%2</para>"
 
 #, fuzzy
 #~| msgctxt "@title:group"
@@ -5760,43 +6448,6 @@ msgstr ""
 #~ msgstr ""
 #~ "का आप मन सचमुच अपन डिफाल्ट रिसोर्स ल सिरिफ पढ़िस जाय जा सके बनाना चाहथो ?"
 
-#, fuzzy
-#~| msgctxt "@info"
-#~| msgid ""
-#~| "Do you really want to remove your default resource (<resource>%1</"
-#~| "resource>) from the list?"
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "Do you really want to remove your default calendar (<resource>%1</"
-#~ "resource>) from the list?"
-#~ msgstr ""
-#~ "का आप मन सही मं ए डिफाल्ट संसाधन मन <resource>%1</resource> ल सूची से मिटाना "
-#~ "चाहथो ?"
-
-#, fuzzy
-#~| msgctxt "@info"
-#~| msgid ""
-#~| "<para>Alarms are currently disabled.</para><para>Do you want to enable "
-#~| "alarms now?</para>"
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "<para><resource>%1</resource> contains:%2</para><para>Do you really want "
-#~ "to remove it from all calendar lists?</para>"
-#~ msgstr ""
-#~ "<para>अलार्म अभी अक्छम हे.</para><para>. का आप मन अलार्मों ल अभी सक्छम करना "
-#~ "चाहथो ?</para>"
-
-#, fuzzy
-#~| msgctxt "@info"
-#~| msgid ""
-#~| "Do you really want to remove the resource <resource>%1</resource> from "
-#~| "the list?"
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "Do you really want to remove the calendar <resource>%1</resource> from "
-#~ "the list?"
-#~ msgstr "का आप मन संसाधन <resource>%1</resource> ल सूची से मिटाना चाहथो ?"
-
 #~ msgctxt "@action"
 #~ msgid "&Save"
 #~ msgstr "सहेजव (&S)"
@@ -5821,25 +6472,6 @@ msgstr ""
 #~ msgctxt "@info/plain"
 #~ msgid "It is not an alarm template calendar."
 #~ msgstr "एक नवा अलार्म टैम्पलेट संसाधन जोड़व"
-
-#, fuzzy
-#~| msgctxt "@info"
-#~| msgid "<command>%1</command> not found"
-#~ msgctxt "@text/plain"
-#~ msgid "Could not run <command>%1</command> to set wake from suspend"
-#~ msgstr "<command>%1</command> नइ मिलिस."
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid "<interface>%1</interface>: the message is displayed silently."
-#~ msgstr "<interface>%1</interface>: संदेस बिना सोर के देखाय  जाही."
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid "<interface>%1</interface>: a simple beep is sounded."
-#~ msgstr "<interface>%1</interface>: एक सादा बीप बजाइस जााएगा."
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid "<interface>%1</interface>: the message text is spoken."
-#~ msgstr "<interface>%1</interface>: संदेस पाठ ल पढ़िस जाही."
 
 #, fuzzy
 #~| msgctxt "@title:tab"

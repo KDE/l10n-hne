@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-29 08:06+0000\n"
+"POT-Creation-Date: 2014-11-30 07:50+0000\n"
 "PO-Revision-Date: 2009-02-26 15:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -222,6 +222,15 @@ msgstr "खारिज करव"
 msgctxt "@title:window"
 msgid "Rename"
 msgstr "फाइलनाम"
+
+#: app/fileoperations.cpp:206
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "@info %1 is the name of the document which failed to save, %2 is the "
+#| "reason for the failure"
+#| msgid "<filename>%1</filename>: %2"
+msgid "Rename <filename>%1</filename> to:"
+msgstr "<filename>%1</filename>: %2"
 
 #: app/fileopscontextmanageritem.cpp:158
 msgid "File Operations"
@@ -454,6 +463,21 @@ msgstr "अऊ दूसर फारमेट के साथ सहेजव"
 #, kde-format
 msgid "Gwenview cannot save images in '%1' format."
 msgstr "ग्वेनव्यू फोटू मन ल '%1' फारमेट मं सहेज नइ सकिस."
+
+#: app/gvcore.cpp:262
+#, kde-format
+msgctxt "@info"
+msgid ""
+"A file named <filename>%1</filename> already exists.\n"
+"Are you sure you want to overwrite it?"
+msgstr ""
+
+#: app/gvcore.cpp:277 app/gvcore.cpp:300
+#, fuzzy, kde-format
+#| msgid "Loading <filename>%1</filename> failed"
+msgctxt "@info"
+msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
+msgstr "<filename>%1</filename> के लोड करे मं फेल"
 
 #: app/gvcore.cpp:320
 msgid "You are now viewing the new document."
@@ -1068,6 +1092,14 @@ msgid_plural "%1 documents could not be saved:"
 msgstr[0] ""
 msgstr[1] ""
 
+#: app/saveallhelper.cpp:108
+#, kde-format
+msgctxt ""
+"@info %1 is the name of the document which failed to save, %2 is the reason "
+"for the failure"
+msgid "<filename>%1</filename>: %2"
+msgstr "<filename>%1</filename>: %2"
+
 #: app/savebar.cpp:87
 msgid ""
 "You have modified many images. To avoid memory problems, you should save "
@@ -1579,6 +1611,22 @@ msgstr "फोटू ल लोड करे मं फेल."
 msgid "Could not load document %1"
 msgstr "फाइल अपलोड नइ कर सकिस"
 
+#: lib/document/savejob.cpp:107
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Could not open file for writing, check that you have the necessary rights in "
+"<filename>%1</filename>."
+msgstr ""
+
+#: lib/document/savejob.cpp:132
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Could not overwrite file, check that you have the necessary rights to write "
+"in <filename>%1</filename>."
+msgstr ""
+
 #: lib/documentview/documentview.cpp:178
 #, fuzzy
 #| msgctxt "Verb"
@@ -1597,6 +1645,11 @@ msgstr "मेटाव"
 #: lib/documentview/documentview.cpp:369
 msgid "Gwenview does not know how to display this kind of document"
 msgstr ""
+
+#: lib/documentview/documentview.cpp:467
+#, kde-format
+msgid "Loading <filename>%1</filename> failed"
+msgstr "<filename>%1</filename> के लोड करे मं फेल"
 
 #: lib/documentview/documentviewcontroller.cpp:97
 msgid "Zoom to Fit"
@@ -1997,23 +2050,6 @@ msgstr "देखव (&V)"
 
 #~ msgid "Size"
 #~ msgstr "आकार"
-
-#, fuzzy
-#~| msgctxt ""
-#~| "@info %1 is the name of the document which failed to save, %2 is the "
-#~| "reason for the failure"
-#~| msgid "<filename>%1</filename>: %2"
-#~ msgid "Rename <filename>%1</filename> to:"
-#~ msgstr "<filename>%1</filename>: %2"
-
-#~ msgctxt ""
-#~ "@info %1 is the name of the document which failed to save, %2 is the "
-#~ "reason for the failure"
-#~ msgid "<filename>%1</filename>: %2"
-#~ msgstr "<filename>%1</filename>: %2"
-
-#~ msgid "Loading <filename>%1</filename> failed"
-#~ msgstr "<filename>%1</filename> के लोड करे मं फेल"
 
 #, fuzzy
 #~| msgid "Copyright 2000-2008 Aurélien Gâteau"
