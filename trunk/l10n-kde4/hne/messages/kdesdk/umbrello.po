@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-14 02:00+0000\n"
+"POT-Creation-Date: 2014-12-16 02:00+0000\n"
 "PO-Revision-Date: 2009-03-01 11:33+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -713,8 +713,8 @@ msgstr "जनरेटेट कोड मं नीचे वाले क्�
 #: codegenerators/ruby/rubycodegenerationformbase.ui:52
 #: dialogs/activitydialog.cpp:200 dialogs/objectnodedialog.cpp:193
 #: dialogs/pages/associationgeneralpage.cpp:83
+#: dialogs/pages/associationrolepage.cpp:91
 #: dialogs/pages/associationrolepage.cpp:92
-#: dialogs/pages/associationrolepage.cpp:93
 #: dialogs/pages/classgeneralpage.cpp:186
 #: dialogs/pages/classgeneralpage.cpp:248
 #: dialogs/pages/classgeneralpage.cpp:301
@@ -1567,32 +1567,21 @@ msgstr "इनवोक काम (&I)"
 msgid "&Parameter activity node"
 msgstr "पैरामीटर सक्रियता नोड (&P)"
 
-#: dialogs/associationpropertiesdialog.cpp:54
+#: dialogs/associationpropertiesdialog.cpp:53
 msgid "Association Properties"
 msgstr "सम्बद्धता गुन"
 
-#: dialogs/associationpropertiesdialog.cpp:98
+#: dialogs/associationpropertiesdialog.cpp:91
 #: dialogs/classpropertiesdialog.cpp:241 dialogs/classpropertiesdialog.cpp:366
 #: dialogs/settingsdialog.cpp:173
 #: dialogs/umlforeignkeyconstraintdialog.cpp:202 dialogs/umlviewdialog.cpp:93
 msgid "General Settings"
 msgstr "सामान्य सेटिंग"
 
-#: dialogs/associationpropertiesdialog.cpp:98
+#: dialogs/associationpropertiesdialog.cpp:91
 msgctxt "general settings"
 msgid "General"
 msgstr "सामान्य"
-
-#: dialogs/associationpropertiesdialog.cpp:104
-#, fuzzy
-#| msgid "Roles"
-msgctxt "role page name"
-msgid "Roles"
-msgstr "भूमिकाव"
-
-#: dialogs/associationpropertiesdialog.cpp:104
-msgid "Role Settings"
-msgstr "भूमिका सेटिंग "
 
 #: dialogs/classpropertiesdialog.cpp:241
 msgctxt "general settings page name"
@@ -1687,7 +1676,7 @@ msgctxt "instance general settings page name"
 msgid "General"
 msgstr "सामान्य"
 
-#: dialogs/classwizard.cpp:44 model_utils.cpp:466
+#: dialogs/classwizard.cpp:44 model_utils.cpp:478
 msgid "new_class"
 msgstr "नवा_वर्ग"
 
@@ -1824,41 +1813,52 @@ msgstr "<p align=\"right\">संपादन जा सके पाठ:</p>"
 
 #. i18n: ectx: label, entry (uiFont), group (UI Options)
 #. i18n: ectx: label, entry (codeViewerFont), group (Code Viewer Options)
-#: dialogs/dialogbase.cpp:98 dialogs/settingsdialog.cpp:227
+#: dialogs/dialogbase.cpp:100 dialogs/settingsdialog.cpp:227
 #: dialogs/umlviewdialog.cpp:153 umbrello.kcfg:165 umbrello.kcfg:275
 msgid "Font"
 msgstr "फोंट"
 
-#: dialogs/dialogbase.cpp:98 dialogs/settingsdialog.cpp:228
+#: dialogs/dialogbase.cpp:100 dialogs/settingsdialog.cpp:228
 #: dialogs/umlviewdialog.cpp:154
 msgid "Font Settings"
 msgstr "फोंट सेटिंग"
 
-#: dialogs/dialogbase.cpp:125
+#: dialogs/dialogbase.cpp:127
 #, fuzzy
 #| msgid "Style:"
 msgctxt "style page name"
 msgid "Style"
 msgstr "सैली:"
 
-#: dialogs/dialogbase.cpp:125
+#: dialogs/dialogbase.cpp:127
 #, fuzzy
 #| msgid "Comment Style"
 msgid "Role Style"
 msgstr "टिप्पनी सैली"
 
-#: dialogs/dialogbase.cpp:127
+#: dialogs/dialogbase.cpp:129
 #, fuzzy
 #| msgid "Style:"
 msgctxt "widget style page"
 msgid "Style"
 msgstr "सैली:"
 
-#: dialogs/dialogbase.cpp:127
+#: dialogs/dialogbase.cpp:129
 #, fuzzy
 #| msgid "Widget Color"
 msgid "Widget Style"
 msgstr "विजेट रंग"
+
+#: dialogs/dialogbase.cpp:151
+#, fuzzy
+#| msgid "Roles"
+msgctxt "role page name"
+msgid "Roles"
+msgstr "भूमिकाव"
+
+#: dialogs/dialogbase.cpp:151
+msgid "Role Settings"
+msgstr "भूमिका सेटिंग "
 
 #. i18n: ectx: property (toolTip), widget (QLabel, ui_imageTypeLabel)
 #: dialogs/exportallviewsdialog.cpp:73 dialogs/exportallviewsdialogbase.ui:52
@@ -2090,62 +2090,62 @@ msgstr "स्टीरियो-टाइप"
 msgid "Type:"
 msgstr "किसिमः"
 
-#: dialogs/pages/associationrolepage.cpp:68
+#: dialogs/pages/associationrolepage.cpp:67
 msgid "Role A Properties"
 msgstr "भूमिका ए गुन"
 
-#: dialogs/pages/associationrolepage.cpp:69
+#: dialogs/pages/associationrolepage.cpp:68
 msgid "Role B Properties"
 msgstr "भूमिका बी गुन"
 
-#: dialogs/pages/associationrolepage.cpp:86
+#: dialogs/pages/associationrolepage.cpp:85
 msgid "Role A Changeability"
 msgstr "भूमिका ए परिवर्तनीयता"
 
-#: dialogs/pages/associationrolepage.cpp:87
+#: dialogs/pages/associationrolepage.cpp:86
 msgid "Role B Changeability"
 msgstr "भूमिका बी परिवर्तनीयता"
 
 #. i18n: ectx: property (text), widget (QLabel, ui_labelRoleName)
-#: dialogs/pages/associationrolepage.cpp:116
-#: dialogs/pages/associationrolepage.cpp:165
+#: dialogs/pages/associationrolepage.cpp:115
+#: dialogs/pages/associationrolepage.cpp:164
 #: dialogs/pages/umlrolepropertiesbase.ui:36
 msgid "Rolename:"
 msgstr "भूमिका-नामः"
 
 #. i18n: ectx: property (text), widget (QLabel, ui_labelMultiplicity)
-#: dialogs/pages/associationrolepage.cpp:121
-#: dialogs/pages/associationrolepage.cpp:170
+#: dialogs/pages/associationrolepage.cpp:120
+#: dialogs/pages/associationrolepage.cpp:169
 #: dialogs/pages/umlrolepropertiesbase.ui:49
 msgid "Multiplicity:"
 msgstr "गुननताः"
 
-#: dialogs/pages/associationrolepage.cpp:141
+#: dialogs/pages/associationrolepage.cpp:140
 msgctxt "changeability for A is changeable"
 msgid "Changeable"
 msgstr "परिवर्तनीय"
 
-#: dialogs/pages/associationrolepage.cpp:144
+#: dialogs/pages/associationrolepage.cpp:143
 msgctxt "changeability for A is frozen"
 msgid "Frozen"
 msgstr "फ्रोजन"
 
-#: dialogs/pages/associationrolepage.cpp:147
+#: dialogs/pages/associationrolepage.cpp:146
 msgctxt "changeability for A is add only"
 msgid "Add only"
 msgstr "सिरिफ जोड़व"
 
-#: dialogs/pages/associationrolepage.cpp:190
+#: dialogs/pages/associationrolepage.cpp:189
 msgctxt "changeability for B is changeable"
 msgid "Changeable"
 msgstr "परिवर्तनीय"
 
-#: dialogs/pages/associationrolepage.cpp:193
+#: dialogs/pages/associationrolepage.cpp:192
 msgctxt "changeability for B is frozen"
 msgid "Frozen"
 msgstr "फ्रोजन"
 
-#: dialogs/pages/associationrolepage.cpp:196
+#: dialogs/pages/associationrolepage.cpp:195
 msgctxt "changeability for B is add only"
 msgid "Add only"
 msgstr "सिरिफ जोड़व"
@@ -4213,94 +4213,94 @@ msgid ""
 "target directory"
 msgstr ""
 
-#: model_utils.cpp:468
+#: model_utils.cpp:480
 msgid "new_actor"
 msgstr "नवा_अभिनेता"
 
-#: model_utils.cpp:470
+#: model_utils.cpp:482
 msgid "new_usecase"
 msgstr "नवा_यूजकेस"
 
-#: model_utils.cpp:472
+#: model_utils.cpp:484
 msgid "new_package"
 msgstr "नवा_पैकेज"
 
-#: model_utils.cpp:474
+#: model_utils.cpp:486
 msgid "new_component"
 msgstr "नवा_अवयव"
 
-#: model_utils.cpp:476
+#: model_utils.cpp:488
 #, fuzzy
 #| msgid "new_actor"
 msgid "new_port"
 msgstr "नवा_अभिनेता"
 
-#: model_utils.cpp:478
+#: model_utils.cpp:490
 msgid "new_node"
 msgstr "नवा_नोड"
 
-#: model_utils.cpp:480
+#: model_utils.cpp:492
 msgid "new_artifact"
 msgstr "नवा_सिल्पतथ्य"
 
-#: model_utils.cpp:482
+#: model_utils.cpp:494
 msgid "new_interface"
 msgstr "नवा_इंटरफेस"
 
-#: model_utils.cpp:484
+#: model_utils.cpp:496
 msgid "new_datatype"
 msgstr "नवा_डाटाटाइप"
 
-#: model_utils.cpp:486
+#: model_utils.cpp:498
 msgid "new_enum"
 msgstr "नवा_ईन्यूम"
 
-#: model_utils.cpp:488
+#: model_utils.cpp:500
 msgid "new_entity"
 msgstr "नवा_एंटिटी"
 
-#: model_utils.cpp:490
+#: model_utils.cpp:502
 msgid "new_folder"
 msgstr "नवा_फोल्डर"
 
-#: model_utils.cpp:492 umlcanvasobject.cpp:193
+#: model_utils.cpp:504 umlcanvasobject.cpp:193
 msgid "new_association"
 msgstr "नवा_सम्बद्धता"
 
-#: model_utils.cpp:494
+#: model_utils.cpp:506
 msgid "new_category"
 msgstr "नवा_वर्ग"
 
-#: model_utils.cpp:496
+#: model_utils.cpp:508
 msgid "new_object"
 msgstr "नवा_ओब्जैक्ट"
 
-#: model_utils.cpp:909
+#: model_utils.cpp:921
 msgid "OK"
 msgstr "ठीक"
 
-#: model_utils.cpp:909
+#: model_utils.cpp:921
 msgctxt "parse status"
 msgid "Empty"
 msgstr "खाली"
 
-#: model_utils.cpp:909
+#: model_utils.cpp:921
 msgid "Malformed argument"
 msgstr "खराब आर्गुमेंट"
 
-#: model_utils.cpp:910
+#: model_utils.cpp:922
 msgid "Unknown argument type"
 msgstr "अग्यात आर्गुमेंट किसिम"
 
-#: model_utils.cpp:910
+#: model_utils.cpp:922
 msgid "Illegal method name"
 msgstr "अवैध विधि नाम"
 
-#: model_utils.cpp:911
+#: model_utils.cpp:923
 msgid "Unknown return type"
 msgstr "अग्यात रिटर्न किसिम"
 
-#: model_utils.cpp:911
+#: model_utils.cpp:923
 msgid "Unspecified error"
 msgstr "अ-निरधारित गलती"
 
