@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-11 01:51+0000\n"
+"POT-Creation-Date: 2015-01-16 01:50+0000\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -2022,7 +2022,7 @@ msgstr ""
 msgid "Open the selected item with default assigned application."
 msgstr "चुने गे चीज ल फोटू संपादक मं खोलव."
 
-#: app/main/digikamapp.cpp:926 showfoto/setup/setup.cpp:112
+#: app/main/digikamapp.cpp:926 showfoto/setup/showfotosetup.cpp:112
 #: utilities/imageeditor/main/imagewindow.cpp:526
 msgid "Image Editor"
 msgstr "फोटू संपादक "
@@ -2794,8 +2794,8 @@ msgstr "पार्टी"
 msgid "Todo"
 msgstr "काम-सूची"
 
-#: app/settings/applicationsettings_p.cpp:226 showfoto/setup/setup.cpp:154
-#: utilities/setup/setup.cpp:319
+#: app/settings/applicationsettings_p.cpp:226
+#: showfoto/setup/showfotosetup.cpp:154 utilities/setup/setup.cpp:319
 msgid "Miscellaneous"
 msgstr "विविध"
 
@@ -4341,7 +4341,7 @@ msgstr "फाइल नाम"
 #: app/views/tableview/tableview_column_file.cpp:67
 #: app/views/tableview/tableview_column_file.cpp:97
 #: libs/dialogs/deletedialog.cpp:177 utilities/setup/setupcamera.cpp:287
-#: utilities/setup/setupcollectionview.cpp:936
+#: utilities/setup/setupcollectionview.cpp:938
 msgid "Path"
 msgstr "पथ"
 
@@ -11707,7 +11707,7 @@ msgstr "एक्सएमपी"
 
 #: libs/imageproperties/imagepropertiessidebar.cpp:91
 #: libs/imageproperties/imagepropertiessidebarcamgui.cpp:99
-#: showfoto/setup/setup.cpp:118
+#: showfoto/setup/showfotosetup.cpp:118
 #: utilities/queuemanager/views/toolslistview.cpp:89
 #: utilities/setup/setup.cpp:229
 msgid "Metadata"
@@ -12634,7 +12634,7 @@ msgstr ""
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:131
 #: libs/widgets/metadata/metadataselector.cpp:97
-#: utilities/setup/setupcollectionview.cpp:933
+#: utilities/setup/setupcollectionview.cpp:935
 msgid "Name"
 msgstr "नाम"
 
@@ -13164,8 +13164,8 @@ msgstr "आर्नद बेकर"
 msgid "Francisco J. Cruz"
 msgstr "फ्रांसिस्को जे. क्रुज"
 
-#: libs/widgets/mainview/daboutdata.cpp:298 showfoto/setup/setup.cpp:136
-#: utilities/setup/setup.cpp:271
+#: libs/widgets/mainview/daboutdata.cpp:298
+#: showfoto/setup/showfotosetup.cpp:136 utilities/setup/setup.cpp:271
 msgid "Color Management"
 msgstr "रंग प्रबंधन"
 
@@ -13431,7 +13431,7 @@ msgid "Image Information"
 msgstr "फोटू जानकारी"
 
 #: libs/widgets/metadata/mdkeylistviewitem.cpp:62
-#: showfoto/setup/setuptooltip.cpp:143
+#: showfoto/setup/showfotosetuptooltip.cpp:143
 #: utilities/searchwindow/searchgroup.cpp:179
 #: utilities/setup/setuptooltip.cpp:232
 msgid "Photograph Information"
@@ -13759,330 +13759,352 @@ msgstr "फाइल (&F)"
 msgid "F&ilters"
 msgstr "फिल्टर (&i)"
 
-#: showfoto/setup/setup.cpp:104 utilities/setup/setup.cpp:191
+#: showfoto/setup/showfotosetup.cpp:104 utilities/setup/setup.cpp:191
 msgid "Configure"
 msgstr "कान्फिगर"
 
-#: showfoto/setup/setup.cpp:113
+#: showfoto/setup/showfotosetup.cpp:113
 msgid ""
 "<qt>Image Editor Settings<br/><i>Customize image editor behavior</i></qt>"
 msgstr ""
 
-#: showfoto/setup/setup.cpp:119 utilities/setup/setup.cpp:230
+#: showfoto/setup/showfotosetup.cpp:119 utilities/setup/setup.cpp:230
 msgid ""
 "<qt>Embedded Image Information Management<br/><i>Setup relations between "
 "images and metadata</i></qt>"
 msgstr ""
 
-#: showfoto/setup/setup.cpp:124
+#: showfoto/setup/showfotosetup.cpp:124
 msgid "Tool Tip"
 msgstr "औजार नुस्खा"
 
-#: showfoto/setup/setup.cpp:125
+#: showfoto/setup/showfotosetup.cpp:125
 msgid ""
 "<qt>Thumbbar Items Tool-Tip Settings<br/><i>Customize information in tool-"
 "tips</i></qt>"
 msgstr ""
 
-#: showfoto/setup/setup.cpp:130 utilities/setup/setup.cpp:259
+#: showfoto/setup/showfotosetup.cpp:130 utilities/setup/setup.cpp:259
 #, fuzzy
 msgid "RAW Decoding"
 msgstr "रा डिकोडिंग"
 
-#: showfoto/setup/setup.cpp:131
+#: showfoto/setup/showfotosetup.cpp:131
 msgid ""
 "<qt>RAW Files Decoding Settings<br/><i>Customize default RAW decoding "
 "settings</i></qt>"
 msgstr ""
 
-#: showfoto/setup/setup.cpp:137
+#: showfoto/setup/showfotosetup.cpp:137
 msgid ""
 "<qt>Settings for Color Management<br/><i>Customize color management "
 "settings</i></qt>"
 msgstr ""
 
-#: showfoto/setup/setup.cpp:142
+#: showfoto/setup/showfotosetup.cpp:142
 msgid "Save Images"
 msgstr "फोटू सहेजव"
 
-#: showfoto/setup/setup.cpp:143
+#: showfoto/setup/showfotosetup.cpp:143
 msgid ""
 "<qt>Settings for Saving Image Files<br/><i>Set default configuration used to "
 "save images</i></qt>"
 msgstr ""
 
-#: showfoto/setup/setup.cpp:148 utilities/setup/setup.cpp:283
+#: showfoto/setup/showfotosetup.cpp:148 utilities/setup/setup.cpp:283
 msgid "Slide Show"
 msgstr "स्लाइड सो"
 
-#: showfoto/setup/setup.cpp:149 utilities/setup/setup.cpp:284
+#: showfoto/setup/showfotosetup.cpp:149 utilities/setup/setup.cpp:284
 msgid "<qt>Slide Show Settings<br/><i>Customize slideshow settings</i></qt>"
 msgstr ""
 
-#: showfoto/setup/setup.cpp:155
+#: showfoto/setup/showfotosetup.cpp:155
 msgid ""
 "<qt>Miscellaneous Settings<br/><i>Customize behavior of the other parts of "
 "Showfoto</i></qt>"
 msgstr ""
 
-#: showfoto/setup/setupmetadata.cpp:95
+#: showfoto/setup/showfotosetupmetadata.cpp:95
 msgid "EXIF Actions"
 msgstr "एक्जइफ काम"
 
-#: showfoto/setup/setupmetadata.cpp:99 utilities/setup/setupmetadata.cpp:424
+#: showfoto/setup/showfotosetupmetadata.cpp:99
+#: utilities/setup/setupmetadata.cpp:424
 #, fuzzy
 #| msgid "Show images/thumbnails &rotated according to orientation tag"
 msgid "Show images/thumbnails &rotated according to orientation tag."
 msgstr "फोटू मन अउ छोटे फोटू मन ल दिसानिर्धारन टैग के अनुसार घुमाकार दिखाव (&r)"
 
-#: showfoto/setup/setupmetadata.cpp:102 utilities/setup/setupmetadata.cpp:426
+#: showfoto/setup/showfotosetupmetadata.cpp:102
+#: utilities/setup/setupmetadata.cpp:426
 #, fuzzy
 #| msgid "Set orientation tag to normal after rotate/flip"
 msgid "Set orientation tag to normal after rotate/flip."
 msgstr "घुमाय/पलटने के बाद दिसानिर्धारन टैग ल सामान्य सेट कर देव"
 
-#: showfoto/setup/setupmetadata.cpp:119 utilities/setup/setupmetadata.cpp:302
+#: showfoto/setup/showfotosetupmetadata.cpp:119
+#: utilities/setup/setupmetadata.cpp:302
 msgid "Visit Exiv2 project website"
 msgstr "एक्सिव२ परियोजना वेबसाइट मं जाव"
 
-#: showfoto/setup/setupmetadata.cpp:126 utilities/setup/setupmetadata.cpp:309
+#: showfoto/setup/showfotosetupmetadata.cpp:126
+#: utilities/setup/setupmetadata.cpp:309
 msgid ""
 "<p><a href='http://en.wikipedia.org/wiki/Exif'>EXIF</a> - a standard used by "
 "most digital cameras today to store technical information (like aperture and "
 "shutter speed) about an image.</p>"
 msgstr ""
 
-#: showfoto/setup/setupmetadata.cpp:130 utilities/setup/setupmetadata.cpp:313
+#: showfoto/setup/showfotosetupmetadata.cpp:130
+#: utilities/setup/setupmetadata.cpp:313
 msgid ""
 "<p><a href='http://en.wikipedia.org/wiki/"
 "IPTC_Information_Interchange_Model'>IPTC</a> - an older standard used in "
 "digital photography to store photographer information in images.</p>"
 msgstr ""
 
-#: showfoto/setup/setupmetadata.cpp:136 utilities/setup/setupmetadata.cpp:318
+#: showfoto/setup/showfotosetupmetadata.cpp:136
+#: utilities/setup/setupmetadata.cpp:318
 msgid ""
 "<p><a href='http://en.wikipedia.org/wiki/Extensible_Metadata_Platform'>XMP</"
 "a> - a new standard used in digital photography, designed to replace IPTC.</"
 "p>"
 msgstr ""
 
-#: showfoto/setup/setupmetadata.cpp:158 showfoto/setup/setupmisc.cpp:103
+#: showfoto/setup/showfotosetupmetadata.cpp:158
+#: showfoto/setup/showfotosetupmisc.cpp:103
 #: utilities/queuemanager/views/queuesettingsview.cpp:237
 #: utilities/setup/setupcamera.cpp:352 utilities/setup/setupicc.cpp:511
 msgid "Behavior"
 msgstr "बर्ताव"
 
-#: showfoto/setup/setupmisc.cpp:106
+#: showfoto/setup/showfotosetupmisc.cpp:106
 msgid "&Deleted items should go to the trash"
 msgstr "चीज मन ल मेटाय मं ओ मन घुरुवा मं ले जाय जाही (&D)"
 
-#: showfoto/setup/setupmisc.cpp:107 utilities/setup/setupmisc.cpp:95
+#: showfoto/setup/showfotosetupmisc.cpp:107 utilities/setup/setupmisc.cpp:95
 msgid "&Show splash screen at startup"
 msgstr "सुरू मं स्प्लैस स्क्रीन देखाव (&S)"
 
-#: showfoto/setup/setupmisc.cpp:108
+#: showfoto/setup/showfotosetupmisc.cpp:108
 #, fuzzy
 #| msgid "Show image rating"
 msgid "&Show image Format"
 msgstr "फोटू दरजा देखाव"
 
-#: showfoto/setup/setupmisc.cpp:109 utilities/setup/setupalbumview.cpp:165
-#: utilities/setup/setupcamera.cpp:439
+#: showfoto/setup/showfotosetupmisc.cpp:109
+#: utilities/setup/setupalbumview.cpp:165 utilities/setup/setupcamera.cpp:439
 #, fuzzy
 #| msgid "Set this option to display the date when the image was taken."
 msgid "Set this option to show image format over image thumbnail."
 msgstr "फोटू जब ले गे हे ओ तारीक ल प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: showfoto/setup/setupmisc.cpp:110
+#: showfoto/setup/showfotosetupmisc.cpp:110
 #, fuzzy
 #| msgid "Green Filter"
 msgid "&Show Geolocation Indicator"
 msgstr "हरियर फिल्टर"
 
-#: showfoto/setup/setupmisc.cpp:111 utilities/setup/setupalbumview.cpp:188
-#: utilities/setup/setupcamera.cpp:442
+#: showfoto/setup/showfotosetupmisc.cpp:111
+#: utilities/setup/setupalbumview.cpp:188 utilities/setup/setupcamera.cpp:442
 #, fuzzy
 #| msgid "Set this option to display the image captions."
 msgid "Set this option to indicate if image has geolocation information."
 msgstr "फोटू सीर्सक प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: showfoto/setup/setupmisc.cpp:114 utilities/setup/setupmisc.cpp:100
+#: showfoto/setup/showfotosetupmisc.cpp:114 utilities/setup/setupmisc.cpp:100
 #, fuzzy
 msgid "Sidebar tab title:"
 msgstr "बाजूपट्टी छोटे फोटू आकार:"
 
-#: showfoto/setup/setupmisc.cpp:116 utilities/setup/setupmisc.cpp:102
+#: showfoto/setup/showfotosetupmisc.cpp:116 utilities/setup/setupmisc.cpp:102
 msgid "Only For Active Tab"
 msgstr ""
 
-#: showfoto/setup/setupmisc.cpp:117 utilities/setup/setupmisc.cpp:103
+#: showfoto/setup/showfotosetupmisc.cpp:117 utilities/setup/setupmisc.cpp:103
 #, fuzzy
 msgid "For All Tabs"
 msgstr "सब्बो टैग"
 
-#: showfoto/setup/setupmisc.cpp:118
+#: showfoto/setup/showfotosetupmisc.cpp:118
 #, fuzzy
 msgid "Set this option to configure how sidebars tab title are visible."
 msgstr "फोटू फाइल आकार प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: showfoto/setup/setupmisc.cpp:121 utilities/setup/setupmisc.cpp:124
+#: showfoto/setup/showfotosetupmisc.cpp:121 utilities/setup/setupmisc.cpp:124
 msgid "Widget style:"
 msgstr ""
 
-#: showfoto/setup/setupmisc.cpp:123 utilities/setup/setupmisc.cpp:126
+#: showfoto/setup/showfotosetupmisc.cpp:123 utilities/setup/setupmisc.cpp:126
 #, fuzzy
 msgid "Set this option to choose the default window decoration and looks."
 msgstr "एलबम नाम प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: showfoto/setup/setupmisc.cpp:142
+#: showfoto/setup/showfotosetupmisc.cpp:142
 msgid "Sort order for images"
 msgstr "फोटू छांटव"
 
-#: showfoto/setup/setupmisc.cpp:146
+#: showfoto/setup/showfotosetupmisc.cpp:146
 msgid "Sort images by:"
 msgstr "फोटू अइसन छांटव:"
 
-#: showfoto/setup/setupmisc.cpp:148
+#: showfoto/setup/showfotosetupmisc.cpp:148
 #, fuzzy
 msgctxt "sort images by date"
 msgid "Date"
 msgstr "तारीक"
 
-#: showfoto/setup/setupmisc.cpp:149
+#: showfoto/setup/showfotosetupmisc.cpp:149
 #, fuzzy
 msgctxt "sort images by name"
 msgid "Name"
 msgstr "नाम"
 
-#: showfoto/setup/setupmisc.cpp:150
+#: showfoto/setup/showfotosetupmisc.cpp:150
 #, fuzzy
 msgctxt "sort images by size"
 msgid "File Size"
 msgstr "फाइल आकार से"
 
-#: showfoto/setup/setupmisc.cpp:151
+#: showfoto/setup/showfotosetupmisc.cpp:151
 msgid ""
 "Here, select whether newly-loaded images are sorted by their date, name, or "
 "size on disk."
 msgstr ""
 
-#: showfoto/setup/setupmisc.cpp:154
+#: showfoto/setup/showfotosetupmisc.cpp:154
 msgid "Reverse ordering"
 msgstr "उलटा अनुक्रम"
 
-#: showfoto/setup/setupmisc.cpp:155
+#: showfoto/setup/showfotosetupmisc.cpp:155
 msgid ""
 "If this option is enabled, newly-loaded images will be sorted in descending "
 "order."
 msgstr ""
 
-#: showfoto/setup/setuptooltip.cpp:106
+#: showfoto/setup/showfotosetuptooltip.cpp:106
 #, fuzzy
 #| msgid "Show Thumbbar items toolti&ps"
 msgid "Show Thumbbar items' toolti&ps"
 msgstr "छोटेफोटूपट्टी चीज औजार-युक्ति देखाव"
 
-#: showfoto/setup/setuptooltip.cpp:107
+#: showfoto/setup/showfotosetuptooltip.cpp:107
 msgid ""
 "Set this option to display the image information when the mouse hovers over "
 "a thumbbar item."
 msgstr ""
 
-#: showfoto/setup/setuptooltip.cpp:110
+#: showfoto/setup/showfotosetuptooltip.cpp:110
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:198
 #, fuzzy
 msgid "Font:"
 msgstr "गननाः"
 
-#: showfoto/setup/setuptooltip.cpp:111
+#: showfoto/setup/showfotosetuptooltip.cpp:111
 #, fuzzy
 msgid "Select here the font used to display text in tooltips."
 msgstr "फोटू किसिम प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: showfoto/setup/setuptooltip.cpp:115
+#: showfoto/setup/showfotosetuptooltip.cpp:115
 msgid "File/Image Information"
 msgstr "फाइल/फोटू जानकारी"
 
-#: showfoto/setup/setuptooltip.cpp:118 utilities/setup/setuptooltip.cpp:202
+#: showfoto/setup/showfotosetuptooltip.cpp:118
+#: utilities/setup/setuptooltip.cpp:202
 msgid "Show file name"
 msgstr "फाइल नाम देखाव"
 
-#: showfoto/setup/setuptooltip.cpp:119 utilities/setup/setuptooltip.cpp:203
+#: showfoto/setup/showfotosetuptooltip.cpp:119
+#: utilities/setup/setuptooltip.cpp:203
 msgid "Set this option to display the image file name."
 msgstr "फोटू फाइल नाम प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: showfoto/setup/setuptooltip.cpp:121 utilities/setup/setuptooltip.cpp:205
+#: showfoto/setup/showfotosetuptooltip.cpp:121
+#: utilities/setup/setuptooltip.cpp:205
 msgid "Show file date"
 msgstr "फाइल तारीक देखाव"
 
-#: showfoto/setup/setuptooltip.cpp:122 utilities/setup/setuptooltip.cpp:206
+#: showfoto/setup/showfotosetuptooltip.cpp:122
+#: utilities/setup/setuptooltip.cpp:206
 msgid "Set this option to display the image file date."
 msgstr "फोटू फाइल तारीक प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: showfoto/setup/setuptooltip.cpp:124 utilities/setup/setuptooltip.cpp:208
+#: showfoto/setup/showfotosetuptooltip.cpp:124
+#: utilities/setup/setuptooltip.cpp:208
 msgid "Show file size"
 msgstr "फाइल आकार देखाव"
 
-#: showfoto/setup/setuptooltip.cpp:125 utilities/setup/setuptooltip.cpp:209
+#: showfoto/setup/showfotosetuptooltip.cpp:125
+#: utilities/setup/setuptooltip.cpp:209
 msgid "Set this option to display the image file size."
 msgstr "फोटू फाइल आकार प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: showfoto/setup/setuptooltip.cpp:127 utilities/setup/setuptooltip.cpp:211
+#: showfoto/setup/showfotosetuptooltip.cpp:127
+#: utilities/setup/setuptooltip.cpp:211
 msgid "Show image type"
 msgstr "फोटू किसिम दिखाव"
 
-#: showfoto/setup/setuptooltip.cpp:128 utilities/setup/setuptooltip.cpp:212
+#: showfoto/setup/showfotosetuptooltip.cpp:128
+#: utilities/setup/setuptooltip.cpp:212
 msgid "Set this option to display the image type."
 msgstr "फोटू किसिम प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: showfoto/setup/setuptooltip.cpp:130 utilities/setup/setuptooltip.cpp:214
+#: showfoto/setup/showfotosetuptooltip.cpp:130
+#: utilities/setup/setuptooltip.cpp:214
 msgid "Show image dimensions"
 msgstr "फोटू आयाम देखाव"
 
-#: showfoto/setup/setuptooltip.cpp:131 utilities/setup/setuptooltip.cpp:215
+#: showfoto/setup/showfotosetuptooltip.cpp:131
+#: utilities/setup/setuptooltip.cpp:215
 msgid "Set this option to display the image dimensions in pixels."
 msgstr "पिक्सल मं फोटू आयाम प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: showfoto/setup/setuptooltip.cpp:146 utilities/setup/setupslideshow.cpp:132
-#: utilities/setup/setuptooltip.cpp:235 utilities/setup/setuptooltip.cpp:409
+#: showfoto/setup/showfotosetuptooltip.cpp:146
+#: utilities/setup/setupslideshow.cpp:132 utilities/setup/setuptooltip.cpp:235
+#: utilities/setup/setuptooltip.cpp:409
 msgid "Show camera make and model"
 msgstr "कैमरा मेक अउ माडल देखाव"
 
-#: showfoto/setup/setuptooltip.cpp:147 utilities/setup/setuptooltip.cpp:236
-#: utilities/setup/setuptooltip.cpp:410
+#: showfoto/setup/showfotosetuptooltip.cpp:147
+#: utilities/setup/setuptooltip.cpp:236 utilities/setup/setuptooltip.cpp:410
 msgid ""
 "Set this option to display the make and model of the camera with which the "
 "image has been taken."
 msgstr ""
 
-#: showfoto/setup/setuptooltip.cpp:150 utilities/setup/setuptooltip.cpp:239
+#: showfoto/setup/showfotosetuptooltip.cpp:150
+#: utilities/setup/setuptooltip.cpp:239
 msgid "Show camera date"
 msgstr "कैमरा तारीक देखाव"
 
-#: showfoto/setup/setuptooltip.cpp:151 utilities/setup/setuptooltip.cpp:240
+#: showfoto/setup/showfotosetuptooltip.cpp:151
+#: utilities/setup/setuptooltip.cpp:240
 msgid "Set this option to display the date when the image was taken."
 msgstr "फोटू जब ले गे हे ओ तारीक ल प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: showfoto/setup/setuptooltip.cpp:153 utilities/setup/setupslideshow.cpp:126
-#: utilities/setup/setuptooltip.cpp:242 utilities/setup/setuptooltip.cpp:413
+#: showfoto/setup/showfotosetuptooltip.cpp:153
+#: utilities/setup/setupslideshow.cpp:126 utilities/setup/setuptooltip.cpp:242
+#: utilities/setup/setuptooltip.cpp:413
 msgid "Show camera aperture and focal length"
 msgstr "कैमरा एपर्चर अउ फोकल लंबाई दिखाव"
 
-#: showfoto/setup/setuptooltip.cpp:154 utilities/setup/setuptooltip.cpp:243
-#: utilities/setup/setuptooltip.cpp:414
+#: showfoto/setup/showfotosetuptooltip.cpp:154
+#: utilities/setup/setuptooltip.cpp:243 utilities/setup/setuptooltip.cpp:414
 msgid ""
 "Set this option to display the camera aperture and focal settings used to "
 "take the image."
 msgstr ""
 "फोटो खींचे बर उपयोग मं ले गे केमरा एपर्चर अउ फोकल सेटिंग प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: showfoto/setup/setuptooltip.cpp:157 utilities/setup/setupslideshow.cpp:129
-#: utilities/setup/setuptooltip.cpp:246 utilities/setup/setuptooltip.cpp:417
+#: showfoto/setup/showfotosetuptooltip.cpp:157
+#: utilities/setup/setupslideshow.cpp:129 utilities/setup/setuptooltip.cpp:246
+#: utilities/setup/setuptooltip.cpp:417
 msgid "Show camera exposure and sensitivity"
 msgstr "कैमरा एक्सपोजर अउ संवेदनसीलता दिखाव"
 
-#: showfoto/setup/setuptooltip.cpp:158 utilities/setup/setuptooltip.cpp:247
-#: utilities/setup/setuptooltip.cpp:418
+#: showfoto/setup/showfotosetuptooltip.cpp:158
+#: utilities/setup/setuptooltip.cpp:247 utilities/setup/setuptooltip.cpp:418
 msgid ""
 "Set this option to display the camera exposure and sensitivity used to take "
 "the image."
@@ -14090,35 +14112,37 @@ msgstr ""
 "फोटो खींचे बर उपयोग मं ले गे केमरा एक्सपोजर अउ सेंसिटिविटि प्रदर्सित करे बर ए विकल्प सेट "
 "करव."
 
-#: showfoto/setup/setuptooltip.cpp:161 utilities/setup/setuptooltip.cpp:250
+#: showfoto/setup/showfotosetuptooltip.cpp:161
+#: utilities/setup/setuptooltip.cpp:250
 msgid "Show camera mode and program"
 msgstr "कैमरा मोड अउ प्रोग्राम दिखाव"
 
-#: showfoto/setup/setuptooltip.cpp:162 utilities/setup/setuptooltip.cpp:251
+#: showfoto/setup/showfotosetuptooltip.cpp:162
+#: utilities/setup/setuptooltip.cpp:251
 msgid ""
 "Set this option to display the camera mode and program used to take the "
 "image."
 msgstr ""
 "फोटो खींचे बर उपयोग मं ले गे केमरा मोड अउ प्रोग्राम प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: showfoto/setup/setuptooltip.cpp:165 utilities/setup/setuptooltip.cpp:254
-#: utilities/setup/setuptooltip.cpp:421
+#: showfoto/setup/showfotosetuptooltip.cpp:165
+#: utilities/setup/setuptooltip.cpp:254 utilities/setup/setuptooltip.cpp:421
 msgid "Show camera flash settings"
 msgstr "कैमरा फ्लैस सेटिंग मन ल देखाव"
 
-#: showfoto/setup/setuptooltip.cpp:166 utilities/setup/setuptooltip.cpp:255
-#: utilities/setup/setuptooltip.cpp:422
+#: showfoto/setup/showfotosetuptooltip.cpp:166
+#: utilities/setup/setuptooltip.cpp:255 utilities/setup/setuptooltip.cpp:422
 msgid ""
 "Set this option to display the camera flash settings used to take the image."
 msgstr "फोटो खींचे बर उपयोग मं ले गे केमरा फ्लेस सेटिंग प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: showfoto/setup/setuptooltip.cpp:169 utilities/setup/setuptooltip.cpp:258
-#: utilities/setup/setuptooltip.cpp:425
+#: showfoto/setup/showfotosetuptooltip.cpp:169
+#: utilities/setup/setuptooltip.cpp:258 utilities/setup/setuptooltip.cpp:425
 msgid "Show camera white balance settings"
 msgstr "कैमरा सफेद संतुलन सेटिंग मन ल देखाव"
 
-#: showfoto/setup/setuptooltip.cpp:170 utilities/setup/setuptooltip.cpp:259
-#: utilities/setup/setuptooltip.cpp:426
+#: showfoto/setup/showfotosetuptooltip.cpp:170
+#: utilities/setup/setuptooltip.cpp:259 utilities/setup/setuptooltip.cpp:426
 msgid ""
 "Set this option to display the camera white balance settings used to take "
 "the image."
@@ -16282,41 +16306,41 @@ msgstr "प्रोफाइल आवंटित करव"
 msgid "<b>No Profile</b>"
 msgstr "<b>फाइल</b>:"
 
-#: utilities/imageeditor/dialogs/softproofdialog.cpp:79
+#: utilities/imageeditor/dialogs/softproofdialog.cpp:81
 #, fuzzy
 #| msgid "Soft-proofing"
 msgid "Soft Proofing Options"
 msgstr "साफ्ट-प्रूफिंग"
 
-#: utilities/imageeditor/dialogs/softproofdialog.cpp:86
+#: utilities/imageeditor/dialogs/softproofdialog.cpp:88
 #, fuzzy
 #| msgid "Soft-proofing"
 msgid "Soft Proofing On"
 msgstr "साफ्ट-प्रूफिंग"
 
-#: utilities/imageeditor/dialogs/softproofdialog.cpp:87
+#: utilities/imageeditor/dialogs/softproofdialog.cpp:89
 msgid "Enable soft-proofing color managed view"
 msgstr ""
 
-#: utilities/imageeditor/dialogs/softproofdialog.cpp:88
+#: utilities/imageeditor/dialogs/softproofdialog.cpp:90
 #, fuzzy
 #| msgid "Soft-proofing"
 msgid "Soft Proofing Off"
 msgstr "साफ्ट-प्रूफिंग"
 
-#: utilities/imageeditor/dialogs/softproofdialog.cpp:89
+#: utilities/imageeditor/dialogs/softproofdialog.cpp:91
 msgid "Disable soft-proofing color managed view"
 msgstr ""
 
-#: utilities/imageeditor/dialogs/softproofdialog.cpp:97
+#: utilities/imageeditor/dialogs/softproofdialog.cpp:99
 msgid "<b>Configure the Soft Proofing View</b>"
 msgstr ""
 
-#: utilities/imageeditor/dialogs/softproofdialog.cpp:105
+#: utilities/imageeditor/dialogs/softproofdialog.cpp:107
 msgid "Profile of the output device to simulate:"
 msgstr ""
 
-#: utilities/imageeditor/dialogs/softproofdialog.cpp:108
+#: utilities/imageeditor/dialogs/softproofdialog.cpp:110
 #: utilities/setup/setupicc.cpp:436
 msgid ""
 "<p>Select the profile for your output device (usually, your printer). This "
@@ -16324,27 +16348,39 @@ msgid ""
 "an image will be rendered via an output device.</p>"
 msgstr ""
 
-#: utilities/imageeditor/dialogs/softproofdialog.cpp:114
+#: utilities/imageeditor/dialogs/softproofdialog.cpp:116
 msgid ""
 "Press this button to get detailed information about the selected proofing "
 "profile.</p>"
 msgstr ""
 
-#: utilities/imageeditor/dialogs/softproofdialog.cpp:130
+#: utilities/imageeditor/dialogs/softproofdialog.cpp:132
 #, fuzzy
 #| msgid "Rendering Intent:"
 msgid "Rendering intent:"
 msgstr "रेंडरिंग इंटेंट:"
 
-#: utilities/imageeditor/dialogs/softproofdialog.cpp:135
+#: utilities/imageeditor/dialogs/softproofdialog.cpp:137
 msgid "Highlight out-of-gamut colors"
 msgstr ""
 
-#: utilities/imageeditor/dialogs/softproofdialog.cpp:137
+#: utilities/imageeditor/dialogs/softproofdialog.cpp:139
 #, fuzzy
 #| msgid "Regularity:"
 msgid "Highlighting color:"
 msgstr "रेगुलरिटी:"
+
+#: utilities/imageeditor/dialogs/softproofdialog.cpp:228
+#: utilities/setup/setupicc.cpp:868
+#, fuzzy
+#| msgid "No item selected"
+msgid "No profile is selected."
+msgstr "कोई चीज चुने नइ गे हे"
+
+#: utilities/imageeditor/dialogs/softproofdialog.cpp:228
+#: utilities/setup/setupicc.cpp:868
+msgid "Profile Error"
+msgstr "प्रोफाइल गलती"
 
 #: utilities/imageeditor/editor/editortool.cpp:358
 #, kde-format
@@ -21366,92 +21402,92 @@ msgid ""
 "p>"
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:493
+#: utilities/setup/setupcollectionview.cpp:495
 msgid "It was not possible to add a collection for the following paths:"
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:548
-#: utilities/setup/setupcollectionview.cpp:551
+#: utilities/setup/setupcollectionview.cpp:550
+#: utilities/setup/setupcollectionview.cpp:553
 msgid "Choose the folder containing your collection"
 msgstr "फोल्डर जऊन में आप मन के संग्रह हावे, ओ मन ल चुनव"
 
-#: utilities/setup/setupcollectionview.cpp:591
+#: utilities/setup/setupcollectionview.cpp:593
 #, fuzzy, kde-format
 #| msgid "There is already a collection containing the folder \"%1\""
 msgid "You have previously added a collection that contains the path \"%1\"."
 msgstr "फोल्डर \"%1\" के साथ एक कलेक्सन पहिली से हावे"
 
-#: utilities/setup/setupcollectionview.cpp:615
+#: utilities/setup/setupcollectionview.cpp:617
 msgid "Problem Adding Collection"
 msgstr "संग्रह जोड़व मं समस्या"
 
-#: utilities/setup/setupcollectionview.cpp:622
+#: utilities/setup/setupcollectionview.cpp:624
 #, fuzzy
 msgid "Adding Collection"
 msgstr "संग्रह जोड़व"
 
-#: utilities/setup/setupcollectionview.cpp:629
+#: utilities/setup/setupcollectionview.cpp:631
 msgid "Your new collection will be created with this name:"
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:723
+#: utilities/setup/setupcollectionview.cpp:725
 msgid "Remove Collection"
 msgstr "संग्रह मेटाव"
 
-#: utilities/setup/setupcollectionview.cpp:725
+#: utilities/setup/setupcollectionview.cpp:727
 #, kde-format
 msgid ""
 "Do you want to remove the collection \"%1\" from your list of collections?"
 msgstr "का आप मन संग्रह \"%1\" ल अपन संग्रह सूची से मिटाना चाहथो ?"
 
-#: utilities/setup/setupcollectionview.cpp:726
+#: utilities/setup/setupcollectionview.cpp:728
 msgid "Remove Collection?"
 msgstr "संग्रह मेटाव?"
 
-#: utilities/setup/setupcollectionview.cpp:759
+#: utilities/setup/setupcollectionview.cpp:761
 msgid "Local Collections"
 msgstr "लोकर संग्रह"
 
-#: utilities/setup/setupcollectionview.cpp:762
+#: utilities/setup/setupcollectionview.cpp:764
 msgid "Collections on Removable Media"
 msgstr "हटाय जा सके वाले मीडिया मं संग्रह"
 
-#: utilities/setup/setupcollectionview.cpp:765
+#: utilities/setup/setupcollectionview.cpp:767
 msgid "Collections on Network Shares"
 msgstr "नेटवक्र साझा मं संग्रह"
 
-#: utilities/setup/setupcollectionview.cpp:790
+#: utilities/setup/setupcollectionview.cpp:792
 msgid "Add Collection"
 msgstr "संग्रह जोड़व"
 
-#: utilities/setup/setupcollectionview.cpp:820
+#: utilities/setup/setupcollectionview.cpp:822
 #, kde-format
 msgid "Col. %1"
 msgstr "खंभा %1"
 
-#: utilities/setup/setupcollectionview.cpp:887
+#: utilities/setup/setupcollectionview.cpp:889
 #, fuzzy
 #| msgid "This collection is currently not available"
 msgid "This collection is currently not available."
 msgstr "संग्रह अभी हाल मं नइ मिलत हे"
 
-#: utilities/setup/setupcollectionview.cpp:890
+#: utilities/setup/setupcollectionview.cpp:892
 #, fuzzy
 #| msgid "No problems found: Enjoy this collection"
 msgid "No problems found, enjoy this collection."
 msgstr "कोई समस्या नइ मिलिस: ए संग्रह के मजा लेव"
 
-#: utilities/setup/setupcollectionview.cpp:893
+#: utilities/setup/setupcollectionview.cpp:895
 #, fuzzy
 #| msgid "This collection is hidden"
 msgid "This collection is hidden."
 msgstr "ए संग्रह लुकाय हे"
 
-#: utilities/setup/setupcollectionview.cpp:907
+#: utilities/setup/setupcollectionview.cpp:909
 msgid "Remove collection"
 msgstr "संग्रह मेटाव"
 
-#: utilities/setup/setupcollectionview.cpp:939
+#: utilities/setup/setupcollectionview.cpp:941
 msgid "Status"
 msgstr "स्थिति"
 
@@ -21844,16 +21880,6 @@ msgstr "कोई प्रोफाइल नइ मिलत..."
 #| msgid "No profile available..."
 msgid "No Output Profile Available"
 msgstr "कोई प्रोफाइल नइ मिलत..."
-
-#: utilities/setup/setupicc.cpp:868
-#, fuzzy
-#| msgid "No item selected"
-msgid "No profile is selected."
-msgstr "कोई चीज चुने नइ गे हे"
-
-#: utilities/setup/setupicc.cpp:868
-msgid "Profile Error"
-msgstr "प्रोफाइल गलती"
 
 #: utilities/setup/setupicc.cpp:893
 #, fuzzy
