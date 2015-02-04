@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-03 09:58+0000\n"
+"POT-Creation-Date: 2015-02-04 07:46+0000\n"
 "PO-Revision-Date: 2009-02-23 19:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -389,14 +389,14 @@ msgid "Catalog Preview"
 msgstr "कैटलाग प्रिव्यू"
 
 #: dialogs/addcatdialog.cpp:209 ekos/capture.cpp:1929
-#: fitsviewer/fitstab.cpp:263 imageviewer.cpp:265 kstarsactions.cpp:725
+#: fitsviewer/fitstab.cpp:264 imageviewer.cpp:265 kstarsactions.cpp:725
 #: printing/pwizprint.cpp:88 tools/scriptbuilder.cpp:828
 #, kde-format
 msgid "A file named \"%1\" already exists. Overwrite it?"
 msgstr "एक फाइल नाम \"%1\" से पहिली से ही अस्तित्व मं हे. एखर ऊपर ही लिखव?"
 
 #: dialogs/addcatdialog.cpp:211 ekos/capture.cpp:1931
-#: fitsviewer/fitstab.cpp:265 imageviewer.cpp:267 kstarsactions.cpp:726
+#: fitsviewer/fitstab.cpp:266 imageviewer.cpp:267 kstarsactions.cpp:726
 #: printing/pwizprint.cpp:89 tools/scriptbuilder.cpp:830
 msgid "Overwrite File?"
 msgstr "फाइल ल मेटाय के लिखव?"
@@ -529,7 +529,7 @@ msgstr ""
 "गूगल सर्च इंजिन मं ब्राउजर विंडो खोलना पसंद करहू?"
 
 #: dialogs/addlinkdialog.cpp:62 ekos/capture.cpp:1733 ekos/capture.cpp:1950
-#: fitsviewer/fitstab.cpp:292 indi/streamwg.cpp:194
+#: fitsviewer/fitstab.cpp:297 indi/streamwg.cpp:194
 #: tools/scriptbuilder.cpp:787 tools/scriptbuilder.cpp:873
 msgid "Invalid URL"
 msgstr "अवैध यूआरएल"
@@ -618,7 +618,7 @@ msgid "General"
 msgstr "सामान्य"
 
 #: dialogs/detaildialog.cpp:147 kspopupmenu.cpp:187 kspopupmenu.cpp:271
-#: kstarsinit.cpp:631 printing/detailstable.cpp:87
+#: kstarsinit.cpp:632 printing/detailstable.cpp:87
 #: printing/pwizobjectselection.cpp:114 skycomponents/starcomponent.cpp:451
 #: skycomponents/starcomponent.cpp:460 skycomponents/starcomponent.cpp:469
 #: skyobjects/starobject.cpp:501 tools/observinglist.cpp:470
@@ -1349,7 +1349,7 @@ msgstr "कोई भी"
 msgid "Stars"
 msgstr "तारे"
 
-#: dialogs/finddialog.cpp:38 kstarsactions.cpp:567 kstarsinit.cpp:408
+#: dialogs/finddialog.cpp:38 kstarsactions.cpp:567 kstarsinit.cpp:409
 #: tools/astrocalc.cpp:174 tools/conjunctions.cpp:78
 msgid "Solar System"
 msgstr "सौर मन्डल"
@@ -2933,8 +2933,8 @@ msgstr "के-स्टार एफआईटीएस प्रदर्सक
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_solverPreview)
 #. i18n: ectx: property (text), widget (QPushButton, previewB)
-#: ekos/align.ui:419 ekos/capture.ui:905 fitsviewer/fitsviewer.cpp:250
-#: fitsviewer/fitsviewer.cpp:314
+#: ekos/align.ui:419 ekos/capture.ui:905 fitsviewer/fitsviewer.cpp:253
+#: fitsviewer/fitsviewer.cpp:320
 #, fuzzy
 #| msgid "Preview of %1"
 msgid "Preview"
@@ -3153,7 +3153,7 @@ msgstr ""
 msgid "Waiting..."
 msgstr "अन्य"
 
-#: ekos/capture.cpp:953
+#: ekos/capture.cpp:953 fitsviewer/fitsdebayer.cpp:67
 #, fuzzy
 #| msgid "completed"
 msgid "Complete."
@@ -3274,7 +3274,7 @@ msgstr "डिफाल्ट एफआईटीएस डिरेक्टर�
 msgid "Open Ekos Sequence Queue"
 msgstr ""
 
-#: ekos/capture.cpp:1732 ekos/capture.cpp:1949 fitsviewer/fitstab.cpp:291
+#: ekos/capture.cpp:1732 ekos/capture.cpp:1949 fitsviewer/fitstab.cpp:296
 #: indi/streamwg.cpp:193 tools/scriptbuilder.cpp:786
 #: tools/scriptbuilder.cpp:872
 #, kde-format
@@ -3291,7 +3291,7 @@ msgstr "फाइल %1 खोल नइ सकिस."
 msgid "Save Ekos Sequence Queue"
 msgstr ""
 
-#: ekos/capture.cpp:1932 fitsviewer/fitstab.cpp:266
+#: ekos/capture.cpp:1932 fitsviewer/fitstab.cpp:267
 msgid "&Overwrite"
 msgstr "मेटाय के लिखव (&O)"
 
@@ -3299,7 +3299,7 @@ msgstr "मेटाय के लिखव (&O)"
 msgid "Failed to save sequence queue"
 msgstr ""
 
-#: ekos/capture.cpp:1941 fitsviewer/fitstab.cpp:280
+#: ekos/capture.cpp:1941 fitsviewer/fitstab.cpp:285
 msgid "FITS Save"
 msgstr "एफआईटीएस सहेजव"
 
@@ -3610,8 +3610,10 @@ msgid "S&top"
 msgstr "रुकें (&t)"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2_3)
+#. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, label_18)
-#: ekos/capture.ui:994 ekos/focus.ui:358 oal/execute.ui:418
+#: ekos/capture.ui:994 ekos/focus.ui:358 fitsviewer/fitsdebayer.ui:22
+#: oal/execute.ui:418
 msgid "Filter:"
 msgstr "फिल्टर:"
 
@@ -3835,7 +3837,7 @@ msgid "Alignment"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PlayFocusAlarm)
-#: ekos/ekosmanager.cpp:1470 ekos/opsekos.ui:169 fitsviewer/fitsviewer.cpp:258
+#: ekos/ekosmanager.cpp:1470 ekos/opsekos.ui:169 fitsviewer/fitsviewer.cpp:261
 msgid "Focus"
 msgstr ""
 
@@ -3846,7 +3848,7 @@ msgid "Mount"
 msgstr "गननाः"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PlayGuideAlarm)
-#: ekos/ekosmanager.cpp:1510 ekos/opsekos.ui:182 fitsviewer/fitsviewer.cpp:262
+#: ekos/ekosmanager.cpp:1510 ekos/opsekos.ui:182 fitsviewer/fitsviewer.cpp:265
 #, fuzzy
 #| msgid "Guides"
 msgid "Guide"
@@ -3858,7 +3860,7 @@ msgid "Guider port from %1 is ready."
 msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, EkosManager)
-#: ekos/ekosmanager.ui:14 kstarsactions.cpp:579 kstarsinit.cpp:394
+#: ekos/ekosmanager.ui:14 kstarsactions.cpp:579 kstarsinit.cpp:395
 msgid "Ekos"
 msgstr ""
 
@@ -5357,74 +5359,210 @@ msgstr "मुख्य औजार पट्टी"
 msgid "Process ToolBar"
 msgstr "औजार-पट्टी काम"
 
-#: fitsviewer/fitsdata.cpp:114
+#: fitsviewer/fitsdata.cpp:120
 msgid "Please hold while loading FITS file..."
 msgstr "किरपा करके, होल्ड करव, एफआईटीएस फाइल लोड करत हे..."
 
-#: fitsviewer/fitsdata.cpp:115
+#: fitsviewer/fitsdata.cpp:121
 msgid "Loading FITS"
 msgstr "फिट्स लोड करत हे"
 
-#: fitsviewer/fitsdata.cpp:145
+#: fitsviewer/fitsdata.cpp:151
 #, fuzzy, kde-format
 #| msgid "Could not open the file %1 for writing."
 msgid "Could not open file %1 (fits_get_img_param). Error %2"
 msgstr "लिखे बर फाइल %1 खोल नइ सकिस."
 
-#: fitsviewer/fitsdata.cpp:145 fitsviewer/fitsdata.cpp:163
-#: fitsviewer/fitsdata.cpp:170 fitsviewer/fitsdata.cpp:180
-#: fitsviewer/fitsdata.cpp:191
+#: fitsviewer/fitsdata.cpp:151 fitsviewer/fitsdata.cpp:169
+#: fitsviewer/fitsdata.cpp:176 fitsviewer/fitsdata.cpp:200
+#: fitsviewer/fitsdata.cpp:211 fitsviewer/fitsdata.cpp:262
 msgid "FITS Open"
 msgstr "एफआईटीएस खोलव"
 
-#: fitsviewer/fitsdata.cpp:163
+#: fitsviewer/fitsdata.cpp:169
 #, fuzzy, kde-format
 #| msgid "FITS file open error: %1"
 msgid "FITS file open error (fits_get_img_param): %1"
 msgstr "एफआईटीएस फाइल ल खोले के समय गलती: %1"
 
-#: fitsviewer/fitsdata.cpp:170
+#: fitsviewer/fitsdata.cpp:176
 msgid "1D FITS images are not supported in KStars."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:180
+#: fitsviewer/fitsdata.cpp:200
+#, kde-format
+msgid "Bit depth %1 is not supported."
+msgstr ""
+
+#: fitsviewer/fitsdata.cpp:211
 #, kde-format
 msgid "Image has invalid dimensions %1x%2"
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:191
+#: fitsviewer/fitsdata.cpp:262
 #, fuzzy, kde-format
-#| msgid "FITS file open error: %1"
-msgid "FITS file open error (fits_get_img_type): %1"
-msgstr "एफआईटीएस फाइल ल खोले के समय गलती: %1"
+#| msgid "Error: Unable to save image: %1 "
+msgid "Error reading image: %1"
+msgstr "गलती: फोटू: %1 ल सहेजेने मं अक्छम"
 
-#. i18n: ectx: property (windowTitle), widget (QDialog, fitsdebayer)
-#: fitsviewer/fitsdebayer.ui:14
-msgid "Dialog"
+#: fitsviewer/fitsdata.cpp:350
+msgid ""
+"Are you sure you want to overwrite original image data with debayered data? "
+"This action is irreversible!"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: fitsviewer/fitsdebayer.ui:22
-msgid "Pattern:"
+#: fitsviewer/fitsdata.cpp:350 fitsviewer/fitstab.cpp:250
+#, fuzzy
+#| msgid "Save"
+msgid "Save FITS"
+msgstr "सहेजव"
+
+#: fitsviewer/fitsdata.cpp:1963
+msgid "Only 8 and 16 bits bayered images supported."
+msgstr ""
+
+#: fitsviewer/fitsdata.cpp:1963 fitsviewer/fitsdata.cpp:2029
+#, fuzzy
+#| msgctxt "City name (optional, probably does not need a translation)"
+#| msgid "Dyer Observatory"
+msgid "Debayer error"
+msgstr "दायर ओब्सर्वेटरी"
+
+#: fitsviewer/fitsdata.cpp:1988
+msgid "Unable to allocate memory for bayer buffer."
+msgstr ""
+
+#: fitsviewer/fitsdata.cpp:1988 kstarsactions.cpp:691
+#, fuzzy
+#| msgid "Open FITS..."
+msgid "Open FITS"
+msgstr "एफआईटीएस खोलव..."
+
+#: fitsviewer/fitsdata.cpp:2023
+msgid "Unable to allocate memory for temporary bayer buffer."
+msgstr ""
+
+#: fitsviewer/fitsdata.cpp:2023 fitsviewer/fitsdata.cpp:2047
+msgid "Debayer Error"
+msgstr ""
+
+#: fitsviewer/fitsdata.cpp:2029
+#, kde-format
+msgid "Debayer failed (%1)"
+msgstr ""
+
+#: fitsviewer/fitsdata.cpp:2047
+msgid "Unable to allocate memory for debayerd buffer."
+msgstr ""
+
+#: fitsviewer/fitsdebayer.cpp:61
+#, fuzzy
+#| msgid "Focused on: "
+msgid "Processing..."
+msgstr "ये मं फोकसः"
+
+#: fitsviewer/fitsdebayer.cpp:72
+#, fuzzy
+#| msgid "Upload"
+msgid "Debayer failed."
+msgstr "अपलोड"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, FITSDebayerDialog)
+#: fitsviewer/fitsdebayer.ui:14
+#, fuzzy
+#| msgid "Image Links"
+msgid "Image Debayering"
+msgstr "फोटू संकली"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, filterCombo)
+#: fitsviewer/fitsdebayer.ui:30
+msgid "RGGB"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, filterCombo)
+#: fitsviewer/fitsdebayer.ui:35
+msgid "GBRG"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, filterCombo)
+#: fitsviewer/fitsdebayer.ui:40
+msgid "GRBG"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, filterCombo)
+#: fitsviewer/fitsdebayer.ui:45
+msgid "BGGR"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: fitsviewer/fitsdebayer.ui:53
+msgid "Method:"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, methodCombo)
+#: fitsviewer/fitsdebayer.ui:61
+#, fuzzy
+#| msgctxt "City name (optional, probably does not need a translation)"
+#| msgid "Bucarest"
+msgid "Nearest"
+msgstr "बुकारेस्ट"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, methodCombo)
+#: fitsviewer/fitsdebayer.ui:66
+msgid "Simple"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, methodCombo)
+#: fitsviewer/fitsdebayer.ui:71
+#, fuzzy
+#| msgid "Linear"
+msgid "BILinear"
+msgstr "लीनियर"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, methodCombo)
+#: fitsviewer/fitsdebayer.ui:76
+#, fuzzy
+#| msgid "Linear"
+msgid "HQLinear"
+msgstr "लीनियर"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, methodCombo)
+#: fitsviewer/fitsdebayer.ui:81
+msgid "VNG"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: fitsviewer/fitsdebayer.ui:32
+#: fitsviewer/fitsdebayer.ui:89
 #, fuzzy
 #| msgid "UT offset:"
 msgid "X Offset:"
 msgstr "यूटी आफसेट:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: fitsviewer/fitsdebayer.ui:42
+#: fitsviewer/fitsdebayer.ui:106
 #, fuzzy
 #| msgid "UT offset:"
 msgid "Y Offset:"
 msgstr "यूटी आफसेट:"
 
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: fitsviewer/fitsdebayer.ui:123
+#, fuzzy
+#| msgid "Status"
+msgid "Status:"
+msgstr "स्थिति"
+
+#. i18n: ectx: property (text), widget (QLineEdit, statusEdit)
+#: fitsviewer/fitsdebayer.ui:130 fitsviewer/fitsviewer.cpp:708
+#, fuzzy
+#| msgctxt "City name (optional, probably does not need a translation)"
+#| msgid "Reading"
+msgid "Ready."
+msgstr "पढ़त हे"
+
 #. i18n: ectx: property (windowTitle), widget (QDialog, fitsHeaderDialog)
-#: fitsviewer/fitsheaderdialog.ui:13 fitsviewer/fitstab.cpp:190
-#: fitsviewer/fitsviewer.cpp:156
+#: fitsviewer/fitsheaderdialog.ui:13 fitsviewer/fitstab.cpp:191
+#: fitsviewer/fitsviewer.cpp:158
 msgid "FITS Header"
 msgstr "एफआईटीएस हेडर"
 
@@ -5449,29 +5587,29 @@ msgstr "टिप्पनी"
 msgid "&Close"
 msgstr "बंद करव (&C)"
 
-#: fitsviewer/fitshistogram.cpp:564
+#: fitsviewer/fitshistogram.cpp:565
 msgid "Auto Scale"
 msgstr "आटो स्केल"
 
-#: fitsviewer/fitshistogram.cpp:567
+#: fitsviewer/fitshistogram.cpp:568
 msgid "Linear Scale"
 msgstr "लीनियर स्केल"
 
-#: fitsviewer/fitshistogram.cpp:570
+#: fitsviewer/fitshistogram.cpp:571
 msgid "Logarithmic Scale"
 msgstr "लागरिदमिक स्केल"
 
-#: fitsviewer/fitshistogram.cpp:573
+#: fitsviewer/fitshistogram.cpp:574
 msgid "Square Root Scale"
 msgstr "वर्ग असली स्केल"
 
-#: fitsviewer/fitshistogram.cpp:582
+#: fitsviewer/fitshistogram.cpp:583
 #: skycomponents/constellationboundarylines.cpp:269
 msgid "Unknown"
 msgstr "अग्यात"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, FITSHistogramUI)
-#: fitsviewer/fitshistogramui.ui:32 fitsviewer/fitsviewer.cpp:138
+#: fitsviewer/fitshistogramui.ui:32 fitsviewer/fitsviewer.cpp:140
 msgid "Histogram"
 msgstr "हिस्टोग्राम"
 
@@ -5520,7 +5658,7 @@ msgstr "न्यून."
 msgid "&Apply"
 msgstr "लगाव (&A)"
 
-#: fitsviewer/fitstab.cpp:59 fitsviewer/fitsviewer.cpp:530
+#: fitsviewer/fitstab.cpp:59 fitsviewer/fitsviewer.cpp:544
 msgid "Save Changes to FITS?"
 msgstr "बदलाव मन ल फिट्स मं सहेजव?"
 
@@ -5530,145 +5668,151 @@ msgid ""
 "closing it?"
 msgstr ""
 
-#: fitsviewer/fitstab.cpp:190
+#: fitsviewer/fitstab.cpp:191
 #, kde-format
 msgid "FITS record error: %1"
 msgstr "एफआईटीएस रेकार्ड गलती: %1"
 
-#: fitsviewer/fitstab.cpp:249
-#, fuzzy
-#| msgid "Save"
-msgid "Save FITS"
-msgstr "सहेजव"
-
-#: fitsviewer/fitstab.cpp:279
+#: fitsviewer/fitstab.cpp:284
 #, kde-format
 msgid "FITS file save error: %1"
 msgstr "एफआईटीएस फाइल ल सहेजे के समय गलती: %1"
 
-#: fitsviewer/fitstab.cpp:286
+#: fitsviewer/fitstab.cpp:291
 #, fuzzy, kde-format
 #| msgid "FITS file saved to %1"
 msgid "File saved to %1"
 msgstr "एफआईटीएस फाइल ल %1 मं सहेजिस"
 
-#: fitsviewer/fitsview.cpp:250
+#: fitsviewer/fitsview.cpp:263
 #, fuzzy
 #| msgid "Capture Image"
 msgid "Image is saturated!"
 msgstr "फोटू कैप्चर करव"
 
-#: fitsviewer/fitsview.cpp:554
+#: fitsviewer/fitsview.cpp:566
+#, fuzzy
+#| msgid "Loading stars"
+msgid "Finding stars..."
+msgstr "तारा लोड करत हे"
+
+#: fitsviewer/fitsview.cpp:570
 #, kde-format
 msgid "1 star detected."
 msgid_plural "%1 stars detected."
 msgstr[0] ""
 msgstr[1] ""
 
-#: fitsviewer/fitsviewer.cpp:71
+#: fitsviewer/fitsviewer.cpp:72
 #, fuzzy
 #| msgid "Auto Scale"
 msgid "Auto Stretch"
 msgstr "आटो स्केल"
 
-#: fitsviewer/fitsviewer.cpp:71
+#: fitsviewer/fitsviewer.cpp:72
 #, fuzzy
 #| msgctxt "Region/state name (optional, rarely needs a translation)"
 #| msgid "Connacht"
 msgid "High Contrast"
 msgstr "कोनाच"
 
-#: fitsviewer/fitsviewer.cpp:72
+#: fitsviewer/fitsviewer.cpp:73
 msgid "Equalize"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:72
+#: fitsviewer/fitsviewer.cpp:73
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "High Prairie"
 msgid "High Pass"
 msgstr "हाई प्रेयरी"
 
-#: fitsviewer/fitsviewer.cpp:73 fitsviewer/fitsviewer.cpp:120
+#: fitsviewer/fitsviewer.cpp:74 fitsviewer/fitsviewer.cpp:122
 #, fuzzy
 msgid "Rotate Right"
 msgstr "ब्लूमिंगटन"
 
-#: fitsviewer/fitsviewer.cpp:73 fitsviewer/fitsviewer.cpp:124
+#: fitsviewer/fitsviewer.cpp:74 fitsviewer/fitsviewer.cpp:126
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Cadotte Lake"
 msgid "Rotate Left"
 msgstr "कैडोट लेक"
 
-#: fitsviewer/fitsviewer.cpp:74 fitsviewer/fitsviewer.cpp:128
+#: fitsviewer/fitsviewer.cpp:75 fitsviewer/fitsviewer.cpp:130
 #, fuzzy
 #| msgid "Horizontal "
 msgid "Flip Horizontal"
 msgstr "आड़ा"
 
-#: fitsviewer/fitsviewer.cpp:74 fitsviewer/fitsviewer.cpp:132
+#: fitsviewer/fitsviewer.cpp:75 fitsviewer/fitsviewer.cpp:134
 #, fuzzy
 #| msgctxt "Advanced URLs: description or category"
 #| msgid "Optical"
 msgid "Flip Vertical"
 msgstr "आप्टिकल"
 
-#: fitsviewer/fitsviewer.cpp:161
+#: fitsviewer/fitsviewer.cpp:164
 msgid "Debayer..."
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:165
+#: fitsviewer/fitsviewer.cpp:168
 #, fuzzy
 #| msgid "Auto Scale"
 msgid "Auto stretch"
 msgstr "आटो स्केल"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, statForm)
-#: fitsviewer/fitsviewer.cpp:186 fitsviewer/statform.ui:14
+#: fitsviewer/fitsviewer.cpp:189 fitsviewer/statform.ui:14
 msgid "Statistics"
 msgstr "आंकड़ा"
 
-#: fitsviewer/fitsviewer.cpp:190 fitsviewer/fitsviewer.cpp:665
+#: fitsviewer/fitsviewer.cpp:193 fitsviewer/fitsviewer.cpp:679
 #, fuzzy
 msgid "Mark Stars"
 msgstr "मर्कर्स"
 
-#: fitsviewer/fitsviewer.cpp:213
+#: fitsviewer/fitsviewer.cpp:216
 #, fuzzy
 #| msgid "Welcome to KStars FITS Viewer"
 msgid "KStars FITS Viewer"
 msgstr "के-स्टार एफआईटीएस प्रदर्सक मं आप मन के स्वागत हे"
 
-#: fitsviewer/fitsviewer.cpp:254
+#: fitsviewer/fitsviewer.cpp:257
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Caliente"
 msgid "Calibrate"
 msgstr "केलिएन्टे"
 
-#: fitsviewer/fitsviewer.cpp:346
+#: fitsviewer/fitsviewer.cpp:354
 #, kde-format
 msgid "%1 star detected."
 msgid_plural "%1 stars detected."
 msgstr[0] ""
 msgstr[1] ""
 
-#: fitsviewer/fitsviewer.cpp:392
+#: fitsviewer/fitsviewer.cpp:414
 #, fuzzy
 #| msgid "Open FITS..."
 msgid "Open FITS Image"
 msgstr "एफआईटीएस खोलव..."
 
-#: fitsviewer/fitsviewer.cpp:531
+#: fitsviewer/fitsviewer.cpp:545
 #, kde-format
 msgid "%1 has unsaved changes.  Would you like to save before closing it?"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:670
+#: fitsviewer/fitsviewer.cpp:684
 #, fuzzy
 msgid "Unmark Stars"
 msgstr "मर्कर्स"
+
+#: fitsviewer/fitsviewer.cpp:702
+#, fuzzy, kde-format
+#| msgid "Focused on: "
+msgid "Processing %1..."
+msgstr "ये मं फोकसः"
 
 #. i18n: ectx: property (text), widget (QLabel, widthLabel)
 #: fitsviewer/statform.ui:20
@@ -6701,24 +6845,24 @@ msgstr "क्रासहेयर ट्रैक करव"
 msgid "Stop &Tracking"
 msgstr "ट्रेकिंग बंद करव (&T)"
 
-#: kstars.cpp:169 kstarsactions.cpp:1100 kstarsinit.cpp:235
+#: kstars.cpp:169 kstarsactions.cpp:1100 kstarsinit.cpp:236
 #, fuzzy
 #| msgid "Horizontal &Coordinates"
 msgid "Switch to horizonal view (Horizontal &Coordinates)"
 msgstr "छैतिज निर्देसांक (&C)"
 
-#: kstars.cpp:169 kstarsactions.cpp:1106 kstarsinit.cpp:235
+#: kstars.cpp:169 kstarsactions.cpp:1106 kstarsinit.cpp:236
 #, fuzzy
 #| msgid "Equatorial &Coordinates"
 msgid "Switch to star globe view (Equatorial &Coordinates)"
 msgstr "विसुवत निर्देसांक (&C)"
 
-#: kstars.cpp:173 kstarsinit.cpp:241 skymap.cpp:1103
+#: kstars.cpp:173 kstarsinit.cpp:242 skymap.cpp:1103
 msgid "Switch to QPainter backend"
 msgstr ""
 
 #. i18n: ectx: label, entry (UseGL), group (View)
-#: kstars.cpp:173 kstars.kcfg:740 kstarsinit.cpp:241 skymap.cpp:1081
+#: kstars.cpp:173 kstars.kcfg:740 kstarsinit.cpp:242 skymap.cpp:1081
 #: skymap.cpp:1089 skymap.cpp:1097
 msgid "Switch to OpenGL backend"
 msgstr ""
@@ -43601,12 +43745,6 @@ msgstr "ग्रह"
 msgid "KStars::slotFind() - Not enough memory for dialog"
 msgstr "के-स्टार्स::slotFind() - गोठ बर बहुत मेमोरी नइ"
 
-#: kstarsactions.cpp:691
-#, fuzzy
-#| msgid "Open FITS..."
-msgid "Open FITS"
-msgstr "एफआईटीएस खोलव..."
-
 #: kstarsactions.cpp:714
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
@@ -43724,7 +43862,7 @@ msgstr "रंग योजना स्विच करव"
 msgid "Do Not Switch"
 msgstr "स्विच नइ करव"
 
-#: kstarsactions.cpp:974 kstarsinit.cpp:213
+#: kstarsactions.cpp:974 kstarsinit.cpp:214
 msgid "Engage &Tracking"
 msgstr "वगेज ट्रेकिंग (&T)"
 
@@ -43882,216 +44020,216 @@ msgstr "गलती [DCOP setGeoLocation]: सहर "
 msgid "Print Sky"
 msgstr "आकास छापव"
 
-#: kstarsinit.cpp:136
+#: kstarsinit.cpp:137
 msgid "Download New Data..."
 msgstr "नवा डाटा डाउनलोड करव..."
 
-#: kstarsinit.cpp:138
+#: kstarsinit.cpp:139
 msgid "Downloads new data"
 msgstr "नवा डाटा डाउनलोड"
 
-#: kstarsinit.cpp:144
+#: kstarsinit.cpp:145
 msgid "Open FITS..."
 msgstr "एफआईटीएस खोलव..."
 
-#: kstarsinit.cpp:150
+#: kstarsinit.cpp:151
 msgid "&Save Sky Image..."
 msgstr "आकास फोटू सहेजव... (&S)"
 
-#: kstarsinit.cpp:154
+#: kstarsinit.cpp:155
 msgid "&Run Script..."
 msgstr "स्क्रिप्ट चलाव... (&R)"
 
-#: kstarsinit.cpp:158
+#: kstarsinit.cpp:159
 #, fuzzy
 #| msgid "Observing List Wizard"
 msgctxt "start Printing Wizard"
 msgid "Printing &Wizard"
 msgstr "देखे के सूची के विजार्ड"
 
-#: kstarsinit.cpp:164
+#: kstarsinit.cpp:165
 msgid "Set Time to &Now"
 msgstr "समय अभी मं सेट करव (&N)"
 
-#: kstarsinit.cpp:169
+#: kstarsinit.cpp:170
 msgctxt "set Clock to New Time"
 msgid "&Set Time..."
 msgstr "अस्त समय... (&S)"
 
-#: kstarsinit.cpp:174
+#: kstarsinit.cpp:175
 msgid "Stop &Clock"
 msgstr "घड़ी बन्द करव (&C)"
 
-#: kstarsinit.cpp:183
+#: kstarsinit.cpp:184
 msgid "Advance one step forward in time"
 msgstr ""
 
-#: kstarsinit.cpp:187
+#: kstarsinit.cpp:188
 msgid "Advance one step backward in time"
 msgstr ""
 
-#: kstarsinit.cpp:193
+#: kstarsinit.cpp:194
 msgid "&Zenith"
 msgstr "सिरोबिन्दु (&Z)"
 
-#: kstarsinit.cpp:196
+#: kstarsinit.cpp:197
 msgid "&North"
 msgstr "उत्तर (&N)"
 
-#: kstarsinit.cpp:199
+#: kstarsinit.cpp:200
 msgid "&East"
 msgstr "पूर्व (&E)"
 
-#: kstarsinit.cpp:202
+#: kstarsinit.cpp:203
 msgid "&South"
 msgstr "दक्छिन (&S)"
 
-#: kstarsinit.cpp:205
+#: kstarsinit.cpp:206
 msgid "&West"
 msgstr "पस्चिम (&W)"
 
-#: kstarsinit.cpp:209
+#: kstarsinit.cpp:210
 msgid "&Find Object..."
 msgstr "चीज खोजव... (&F)"
 
-#: kstarsinit.cpp:217
+#: kstarsinit.cpp:218
 #, fuzzy
 #| msgid "Set Focus &Manually..."
 msgid "Set Coordinates &Manually..."
 msgstr "फोकस हस्तचालित सेट करव... (&M)"
 
-#: kstarsinit.cpp:224
+#: kstarsinit.cpp:225
 msgid "&Default Zoom"
 msgstr "डिफाल्ट जूम (&D)"
 
-#: kstarsinit.cpp:228
+#: kstarsinit.cpp:229
 msgid "&Zoom to Angular Size..."
 msgstr "कोनीय आकार मं जूम करव... (&Z)"
 
-#: kstarsinit.cpp:245
+#: kstarsinit.cpp:246
 msgid "&Lambert Azimuthal Equal-area"
 msgstr "लैम्बार्ट अजिमुथल इक्वल-एरिया (&L)"
 
-#: kstarsinit.cpp:250
+#: kstarsinit.cpp:251
 msgid "&Azimuthal Equidistant"
 msgstr "अजीमुथल इक्विडिस्टेंट (&A)"
 
-#: kstarsinit.cpp:255
+#: kstarsinit.cpp:256
 msgid "&Orthographic"
 msgstr "ओर्थोग्राफिक (&O)"
 
-#: kstarsinit.cpp:260
+#: kstarsinit.cpp:261
 msgid "&Equirectangular"
 msgstr "इक्विरेक्टेंगुलर (&E)"
 
-#: kstarsinit.cpp:265
+#: kstarsinit.cpp:266
 msgid "&Stereographic"
 msgstr "स्टीरियोग्राफिक (&S)"
 
-#: kstarsinit.cpp:270
+#: kstarsinit.cpp:271
 msgid "&Gnomonic"
 msgstr "ग्नोमोनिक (&G)"
 
-#: kstarsinit.cpp:278
+#: kstarsinit.cpp:279
 msgctxt "Show the information boxes"
 msgid "Show &Info Boxes"
 msgstr "जानकारी डब्बा देखाव (&I)"
 
-#: kstarsinit.cpp:284
+#: kstarsinit.cpp:285
 msgctxt "Show time-related info box"
 msgid "Show &Time Box"
 msgstr "समय डब्बा देखाव (&T)"
 
-#: kstarsinit.cpp:291
+#: kstarsinit.cpp:292
 msgctxt "Show focus-related info box"
 msgid "Show &Focus Box"
 msgstr "फोकस डब्बा देखाव (&F)"
 
-#: kstarsinit.cpp:298
+#: kstarsinit.cpp:299
 msgctxt "Show location-related info box"
 msgid "Show &Location Box"
 msgstr "स्थिति डब्बा देखाव (&L)"
 
-#: kstarsinit.cpp:306
+#: kstarsinit.cpp:307
 msgid "Show Main Toolbar"
 msgstr "मुख्य औजार-पट्टी देखाव"
 
-#: kstarsinit.cpp:308
+#: kstarsinit.cpp:309
 msgid "Show View Toolbar"
 msgstr "दृस्य औजार-पट्टी देखाव"
 
-#: kstarsinit.cpp:312
+#: kstarsinit.cpp:313
 msgid "Show Statusbar"
 msgstr "स्थिति-पट्टी देखाव"
 
-#: kstarsinit.cpp:314
+#: kstarsinit.cpp:315
 msgid "Show Az/Alt Field"
 msgstr "Az/Alt फील्ड देखाव"
 
-#: kstarsinit.cpp:316
+#: kstarsinit.cpp:317
 msgid "Show RA/Dec Field"
 msgstr "RA/Dec फील्ड देखाव"
 
-#: kstarsinit.cpp:321
+#: kstarsinit.cpp:322
 msgid "C&olor Schemes"
 msgstr "रंग योजना (&o)"
 
-#: kstarsinit.cpp:322
+#: kstarsinit.cpp:323
 msgid "&Classic"
 msgstr "क्लासिक (&C)"
 
-#: kstarsinit.cpp:323
+#: kstarsinit.cpp:324
 msgid "&Star Chart"
 msgstr "चार्ट चालू करव (&S)"
 
-#: kstarsinit.cpp:324
+#: kstarsinit.cpp:325
 msgid "&Night Vision"
 msgstr "रात अवलोकन (&N)"
 
-#: kstarsinit.cpp:325
+#: kstarsinit.cpp:326
 msgid "&Moonless Night"
 msgstr "चंद्र रहित रात (&M)"
 
-#: kstarsinit.cpp:342
+#: kstarsinit.cpp:343
 msgid "&FOV Symbols"
 msgstr "एफओवी चिनहा (&F)"
 
-#: kstarsinit.cpp:346
+#: kstarsinit.cpp:347
 msgctxt "Location on Earth"
 msgid "&Geographic..."
 msgstr "जियोग्राफिक... (&G)"
 
-#: kstarsinit.cpp:351
+#: kstarsinit.cpp:352
 msgid "Startup Wizard..."
 msgstr "स्टार्टअप विजार्ड..."
 
-#: kstarsinit.cpp:356
+#: kstarsinit.cpp:357
 #, fuzzy
 #| msgid "Creating Earth satellites"
 msgid "Update comets orbital elements"
 msgstr "पृथ्वी के उपग्रह बनात हे"
 
-#: kstarsinit.cpp:358
+#: kstarsinit.cpp:359
 #, fuzzy
 #| msgid "Creating Earth satellites"
 msgid "Update asteroids orbital elements"
 msgstr "पृथ्वी के उपग्रह बनात हे"
 
-#: kstarsinit.cpp:360
+#: kstarsinit.cpp:361
 msgid "Update Recent Supernovae data"
 msgstr ""
 
-#: kstarsinit.cpp:362
+#: kstarsinit.cpp:363
 #, fuzzy
 #| msgid "Creating Earth satellites"
 msgid "Update satellites orbital elements"
 msgstr "पृथ्वी के उपग्रह बनात हे"
 
-#: kstarsinit.cpp:366 tools/astrocalc.cpp:124
+#: kstarsinit.cpp:367 tools/astrocalc.cpp:124
 msgid "Calculator"
 msgstr "गनक"
 
-#: kstarsinit.cpp:376 tools/observinglist.cpp:94
+#: kstarsinit.cpp:377 tools/observinglist.cpp:94
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Dyer Observatory"
@@ -44099,79 +44237,79 @@ msgid "Observation Planner"
 msgstr "दायर ओब्सर्वेटरी"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, AltVsTime)
-#: kstarsinit.cpp:380 obslistpopupmenu.cpp:63 tools/altvstime.cpp:56
+#: kstarsinit.cpp:381 obslistpopupmenu.cpp:63 tools/altvstime.cpp:56
 #: tools/altvstime.ui:14
 msgid "Altitude vs. Time"
 msgstr "उन्नतांस वि. समय"
 
-#: kstarsinit.cpp:383 tools/wutdialog.cpp:61
+#: kstarsinit.cpp:384 tools/wutdialog.cpp:61
 msgid "What's up Tonight"
 msgstr "आज रात मं का हे"
 
-#: kstarsinit.cpp:386 tools/whatsinteresting/qml/wiview.qml:28
+#: kstarsinit.cpp:387 tools/whatsinteresting/qml/wiview.qml:28
 #, fuzzy
 #| msgid "What's up Tonight..."
 msgid "What's Interesting..."
 msgstr "आज रात मं का हे..."
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, SkyCalendar)
-#: kstarsinit.cpp:389 tools/skycalendar.cpp:56 tools/skycalendar.cpp:362
+#: kstarsinit.cpp:390 tools/skycalendar.cpp:56 tools/skycalendar.cpp:362
 #: tools/skycalendar.ui:20
 msgid "Sky Calendar"
 msgstr ""
 
-#: kstarsinit.cpp:405 tools/scriptbuilder.cpp:161
+#: kstarsinit.cpp:406 tools/scriptbuilder.cpp:161
 msgid "Script Builder"
 msgstr "स्क्रिप्ट बिल्डर"
 
-#: kstarsinit.cpp:411
+#: kstarsinit.cpp:412
 #, fuzzy
 #| msgid "Jupiter's Moons..."
 msgid "Jupiter's Moons"
 msgstr "वृहस्पति के चन्द्रमा"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowFlags)
-#: kstarsinit.cpp:414 options/opsguides.ui:296
+#: kstarsinit.cpp:415 options/opsguides.ui:296
 #, fuzzy
 msgid "Flags"
 msgstr "फ्लेगस्टाफ"
 
-#: kstarsinit.cpp:417
+#: kstarsinit.cpp:418
 #, fuzzy
 #| msgid "Configure Hidden Objects"
 msgid "List your &Equipment..."
 msgstr "लुकाए चीज कान्फिगर करव"
 
-#: kstarsinit.cpp:420
+#: kstarsinit.cpp:421
 #, fuzzy
 #| msgid "Find Object"
 msgid "Add Observer..."
 msgstr "चीज खोजव"
 
-#: kstarsinit.cpp:425
+#: kstarsinit.cpp:426
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Ascension Island"
 msgid "Execute the session Plan..."
 msgstr "उचित आरोहन"
 
-#: kstarsinit.cpp:434
+#: kstarsinit.cpp:435
 msgid "Telescope Wizard..."
 msgstr "टेलिस्कोप विजार्ड..."
 
-#: kstarsinit.cpp:437
+#: kstarsinit.cpp:438
 msgid "Device Manager..."
 msgstr "उपकरन प्रबंधक..."
 
-#: kstarsinit.cpp:440
+#: kstarsinit.cpp:441
 msgid "INDI Control Panel..."
 msgstr "आईएनडीआई नियंत्रन फलक..."
 
-#: kstarsinit.cpp:449
+#: kstarsinit.cpp:450
 msgid "Displays the Tip of the Day"
 msgstr ""
 
-#: kstarsinit.cpp:456
+#: kstarsinit.cpp:457
 msgctxt "Tooltip describing the nature of the time step control"
 msgid ""
 "Use this to set the rate at which time in the simulation flows.\n"
@@ -44181,162 +44319,162 @@ msgid ""
 "of 'X'."
 msgstr ""
 
-#: kstarsinit.cpp:462
+#: kstarsinit.cpp:463
 msgid "Time step control"
 msgstr "समय चरन नियंत्रन"
 
-#: kstarsinit.cpp:466
+#: kstarsinit.cpp:467
 msgctxt "Toggle Stars in the display"
 msgid "Stars"
 msgstr "तारे"
 
-#: kstarsinit.cpp:468
+#: kstarsinit.cpp:469
 msgid "Toggle stars"
 msgstr "तारे टागल करव"
 
-#: kstarsinit.cpp:470
+#: kstarsinit.cpp:471
 msgctxt "Toggle Deep Sky Objects in the display"
 msgid "Deep Sky"
 msgstr "आकास के गहराई में"
 
-#: kstarsinit.cpp:472
+#: kstarsinit.cpp:473
 msgid "Toggle deep sky objects"
 msgstr "गहरे आकास के चीज टागल करव"
 
-#: kstarsinit.cpp:474
+#: kstarsinit.cpp:475
 msgctxt "Toggle Solar System objects in the display"
 msgid "Solar System"
 msgstr "सौर मन्डल"
 
-#: kstarsinit.cpp:476
+#: kstarsinit.cpp:477
 msgid "Toggle Solar system objects"
 msgstr "सौर मन्डल के चीज मन ल टागल करव"
 
-#: kstarsinit.cpp:478
+#: kstarsinit.cpp:479
 msgctxt "Toggle Constellation Lines in the display"
 msgid "Const. Lines"
 msgstr "तारामंडल पंक्तियाँ"
 
-#: kstarsinit.cpp:480
+#: kstarsinit.cpp:481
 msgid "Toggle constellation lines"
 msgstr "तारामंडल लाइन टागल करव"
 
-#: kstarsinit.cpp:482
+#: kstarsinit.cpp:483
 msgctxt "Toggle Constellation Names in the display"
 msgid "Const. Names"
 msgstr "तारामंडल नाम"
 
-#: kstarsinit.cpp:484
+#: kstarsinit.cpp:485
 msgid "Toggle constellation names"
 msgstr "तारामंडल नाम टागल करव"
 
-#: kstarsinit.cpp:486
+#: kstarsinit.cpp:487
 msgctxt "Toggle Constellation Boundaries in the display"
 msgid "C. Boundaries"
 msgstr "ता. सीमा"
 
-#: kstarsinit.cpp:488
+#: kstarsinit.cpp:489
 msgid "Toggle constellation boundaries"
 msgstr "तारामंडल सीमा टागल करव"
 
-#: kstarsinit.cpp:490
+#: kstarsinit.cpp:491
 msgctxt "Toggle Milky Way in the display"
 msgid "Milky Way"
 msgstr "मिल्की वे"
 
-#: kstarsinit.cpp:492
+#: kstarsinit.cpp:493
 msgid "Toggle milky way"
 msgstr "मिल्की ओ मन टागल करव"
 
-#: kstarsinit.cpp:494
+#: kstarsinit.cpp:495
 #, fuzzy
 #| msgid "Equatorial Coordinates"
 msgctxt "Toggle Equatorial Coordinate Grid in the display"
 msgid "Equatorial coord. grid"
 msgstr "विसुवत निर्देसांक"
 
-#: kstarsinit.cpp:496
+#: kstarsinit.cpp:497
 #, fuzzy
 #| msgid "Toggle coordinate grid"
 msgid "Toggle equatorial coordinate grid"
 msgstr "निर्देसांक ग्रिड टागल करव"
 
-#: kstarsinit.cpp:498
+#: kstarsinit.cpp:499
 #, fuzzy
 #| msgid "Horizontal Coordinates"
 msgctxt "Toggle Horizontal Coordinate Grid in the display"
 msgid "Horizontal coord. grid"
 msgstr "छैतिज निर्देसांक"
 
-#: kstarsinit.cpp:500
+#: kstarsinit.cpp:501
 #, fuzzy
 #| msgid "Toggle coordinate grid"
 msgid "Toggle horizontal coordinate grid"
 msgstr "निर्देसांक ग्रिड टागल करव"
 
-#: kstarsinit.cpp:502
+#: kstarsinit.cpp:503
 msgctxt "Toggle the opaque fill of the ground polygon in the display"
 msgid "Ground"
 msgstr "आधार"
 
-#: kstarsinit.cpp:504
+#: kstarsinit.cpp:505
 msgid "Toggle opaque ground"
 msgstr "अपारदर्सी मैदान टागल करव"
 
-#: kstarsinit.cpp:506
+#: kstarsinit.cpp:507
 #, fuzzy
 msgctxt "Toggle flags in the display"
 msgid "Flags"
 msgstr "फ्लेगस्टाफ"
 
-#: kstarsinit.cpp:508
+#: kstarsinit.cpp:509
 #, fuzzy
 msgid "Toggle flags"
 msgstr "तारे टागल करव"
 
-#: kstarsinit.cpp:510
+#: kstarsinit.cpp:511
 #, fuzzy
 #| msgid "Satellite Track"
 msgctxt "Toggle satellites in the display"
 msgid "Satellites"
 msgstr "उपग्रह ट्रैक"
 
-#: kstarsinit.cpp:512
+#: kstarsinit.cpp:513
 #, fuzzy
 #| msgid "Toggle constellation lines"
 msgid "Toggle satellites"
 msgstr "तारामंडल लाइन टागल करव"
 
-#: kstarsinit.cpp:514
+#: kstarsinit.cpp:515
 #, fuzzy
 #| msgid "Supernova Remnant"
 msgctxt "Toggle supernovae in the display"
 msgid "Supernovae"
 msgstr "सुपरनोवा अवसिस्ट"
 
-#: kstarsinit.cpp:516
+#: kstarsinit.cpp:517
 #, fuzzy
 #| msgid "Toggle stars"
 msgid "Toggle supernovae"
 msgstr "तारे टागल करव"
 
-#: kstarsinit.cpp:541
+#: kstarsinit.cpp:542
 msgid "Edit FOV Symbols..."
 msgstr "एफओवी चिनहा के संपादन करव..."
 
-#: kstarsinit.cpp:548
+#: kstarsinit.cpp:549
 msgid " Welcome to KStars "
 msgstr "के-स्टार मं आप मन के स्वागत हे"
 
-#: kstarsinit.cpp:629 skymap.cpp:364 widgets/infoboxwidget.cpp:127
+#: kstarsinit.cpp:630 skymap.cpp:364 widgets/infoboxwidget.cpp:127
 msgid "nothing"
 msgstr "कुछ नइ"
 
-#: kstarsinit.cpp:675
+#: kstarsinit.cpp:676
 msgid "Initial Position is Below Horizon"
 msgstr "सुरू के स्थिति छितिज से नीचे हे"
 
-#: kstarsinit.cpp:676
+#: kstarsinit.cpp:677
 msgid ""
 "The initial position is below the horizon.\n"
 "Would you like to reset to the default position?"
@@ -44344,11 +44482,11 @@ msgstr ""
 "सुरू के स्थिति छितिज से नीचे हे.\n"
 "का आप मन डिफाल्ट स्थिति ल रीसेट करना चाहू?"
 
-#: kstarsinit.cpp:678
+#: kstarsinit.cpp:679
 msgid "Reset Position"
 msgstr "स्थिति रीसेट करव"
 
-#: kstarsinit.cpp:678
+#: kstarsinit.cpp:679
 msgid "Do Not Reset"
 msgstr "रीसेट नइ करव"
 
@@ -56137,6 +56275,11 @@ msgstr "जानकारी-डब्बा पिछोत अंगना �
 msgid "Set the color for the background."
 msgstr "आकास के पिछोत अंगना के रंग."
 
+#, fuzzy
+#~| msgid "FITS file open error: %1"
+#~ msgid "FITS file open error (fits_get_img_type): %1"
+#~ msgstr "एफआईटीएस फाइल ल खोले के समय गलती: %1"
+
 # translation of kstars.po to Hindi
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
@@ -58856,13 +58999,6 @@ msgstr "आकास के पिछोत अंगना के रंग."
 
 #~ msgid "Object type"
 #~ msgstr "चीज किसिम"
-
-#, fuzzy
-#~| msgctxt "City name (optional, probably does not need a translation)"
-#~| msgid "Bucarest"
-#~ msgctxt "City in Romania"
-#~ msgid "Bucarest"
-#~ msgstr "बुकारेस्ट"
 
 #, fuzzy
 #~| msgctxt "City name (optional, probably does not need a translation)"
