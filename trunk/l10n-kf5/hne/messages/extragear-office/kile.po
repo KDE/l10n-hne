@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kile\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-26 07:48+0000\n"
+"POT-Creation-Date: 2015-02-08 08:41+0000\n"
 "PO-Revision-Date: 2009-02-21 10:38+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -165,15 +165,15 @@ msgstr "संक्छिप्त नांव: (&A)"
 msgid "&Expanded Text:"
 msgstr ""
 
-#: dialogs/cleandialog.cpp:41
+#: dialogs/cleandialog.cpp:39
 msgid "Delete Files"
 msgstr "फाइल मन ल मेटाव"
 
-#: dialogs/cleandialog.cpp:77
+#: dialogs/cleandialog.cpp:62
 msgid "Do you really want to delete these files?"
 msgstr "का आप मन सही मं ए फाइल मन ल मिटाना चाहथो?"
 
-#: dialogs/cleandialog.cpp:85 dialogs/listselector.cpp:80
+#: dialogs/cleandialog.cpp:70 dialogs/listselector.cpp:80
 msgid "Files"
 msgstr "फाइल"
 
@@ -402,8 +402,8 @@ msgstr "स्ट्रक्चर दृस्य"
 msgid "Symbol View"
 msgstr ""
 
-#: dialogs/findfilesdialog.cpp:114 dialogs/projectdialogs.cpp:81
-#: kileproject.cpp:476
+#: dialogs/findfilesdialog.cpp:114 dialogs/projectdialogs.cpp:62
+#: kileproject.cpp:471
 msgid "Project"
 msgstr "परियोजना"
 
@@ -465,7 +465,7 @@ msgstr "संदर्भ"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: dialogs/findfilesdialog.cpp:172 dialogs/includegraphicsdialog_base.ui:17
-#: dialogs/projectdialogs.cpp:271
+#: dialogs/projectdialogs.cpp:231
 msgid "File"
 msgstr "फाइल"
 
@@ -1460,7 +1460,8 @@ msgstr "मैथ एनवायरनमेंट"
 msgid "Without n&umbering:"
 msgstr "कोई नंबर नइ: (&u)"
 
-#: dialogs/mathenvironmentdialog.cpp:61
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: dialogs/mathenvironmentdialog.cpp:61 dialogs/tabbingdialog_base.ui:45
 msgid "Number of &rows:"
 msgstr "पंक्तियों के संख्या: (&r)"
 
@@ -2083,7 +2084,7 @@ msgid "Background:"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, m_tbProperties)
-#: dialogs/pdf-wizard/pdfdialog_base.ui:376 dialogs/projectdialogs.cpp:481
+#: dialogs/pdf-wizard/pdfdialog_base.ui:376 dialogs/projectdialogs.cpp:420
 #: widgets/previewconfigwidget.cpp:118
 msgid "Properties"
 msgstr "गुन"
@@ -2382,119 +2383,193 @@ msgstr ""
 msgid "When you want to copy pages, you must enter the number of copies"
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:89
+#: dialogs/projectdialogs.cpp:63
+msgid "Extensions"
+msgstr "एक्सटेंसन (&g)"
+
+#: dialogs/projectdialogs.cpp:69
 msgid "Insert a short descriptive name of your project here."
 msgstr "अपन परियोजना के संक्छिप्त वर्नननात्मक नाम इहां भरव."
 
-#: dialogs/projectdialogs.cpp:90
+#: dialogs/projectdialogs.cpp:70
 msgid ""
 "Insert a list (separated by spaces) of file extensions which should be "
 "treated also as files of the corresponding type in this project."
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:91
-msgid "Default graphic extension to open when none specified by file name."
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:95
+#: dialogs/projectdialogs.cpp:74
 msgid "Project &title:"
 msgstr "परियोजना सीर्सक: (%t)"
 
-#: dialogs/projectdialogs.cpp:100
-msgid "Extensions"
-msgstr "एक्सटेंसन (&g)"
-
-#: dialogs/projectdialogs.cpp:114
-#, fuzzy
-msgid "(use global settings)"
-msgstr "(वैस्विक सेटिंग उपयोग करव)"
-
-#: dialogs/projectdialogs.cpp:115
-msgid "Default Graphics Extension:"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:123
-msgid "Source Files"
-msgstr "स्रोत फाइल मन ल"
-
-#: dialogs/projectdialogs.cpp:124
-msgid "Package Files"
-msgstr "पैकेज फाइल मन ल"
-
-#: dialogs/projectdialogs.cpp:125
-msgid "Image Files"
-msgstr "फोटू फाइल मन ल"
-
-#: dialogs/projectdialogs.cpp:126
-msgid "Predefined:"
-msgstr "तयसुदा"
-
-#: dialogs/projectdialogs.cpp:175
-msgid "Error in extension"
-msgstr "एक्सटेंसन मं गलती"
-
-#: dialogs/projectdialogs.cpp:175
-msgid "All user-defined extensions should look like '.xyz'"
-msgstr ""
-
-#: dialogs/projectdialogs.cpp:175
-msgid "Invalid extension"
-msgstr "अवैध एक्सटेंसन"
-
-#: dialogs/projectdialogs.cpp:241
-msgid "Create New Project"
-msgstr "नवा परियोजना बनाव"
-
-#: dialogs/projectdialogs.cpp:260
-#, fuzzy
-msgid "Insert the path to your project here."
-msgstr "अपन परियोजना के संक्छिप्त वर्नननात्मक नाम इहां भरव."
-
-#: dialogs/projectdialogs.cpp:262
+#: dialogs/projectdialogs.cpp:87
 #, fuzzy
 msgid "Project &folder:"
 msgstr "परियोजना फाइल: (&f)"
 
-#: dialogs/projectdialogs.cpp:278
+#: dialogs/projectdialogs.cpp:89
+#, fuzzy
+msgid "Insert the path to your project here."
+msgstr "अपन परियोजना के संक्छिप्त वर्नननात्मक नाम इहां भरव."
+
+#: dialogs/projectdialogs.cpp:101
+#, fuzzy
+msgid "(use global settings)"
+msgstr "(वैस्विक सेटिंग उपयोग करव)"
+
+#: dialogs/projectdialogs.cpp:102
+msgid "Default graphic extension to open when none specified by file name."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:113
+msgid "Source Files"
+msgstr "स्रोत फाइल मन ल"
+
+#: dialogs/projectdialogs.cpp:114
+msgid "Package Files"
+msgstr "पैकेज फाइल मन ल"
+
+#: dialogs/projectdialogs.cpp:115
+msgid "Image Files"
+msgstr "फोटू फाइल मन ल"
+
+#: dialogs/projectdialogs.cpp:122
+msgid "Default Graphics Extension:"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:124
+msgid "Predefined:"
+msgstr "तयसुदा"
+
+#: dialogs/projectdialogs.cpp:156
+msgid "Error in extension"
+msgstr "एक्सटेंसन मं गलती"
+
+#: dialogs/projectdialogs.cpp:156
+msgid "All user-defined extensions should look like '.xyz'"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:156
+msgid "Invalid extension"
+msgstr "अवैध एक्सटेंसन"
+
+#: dialogs/projectdialogs.cpp:221
+msgid "Create New Project"
+msgstr "नवा परियोजना बनाव"
+
+#: dialogs/projectdialogs.cpp:235
 msgid "Create a new file and add it to this project"
 msgstr "एक नवा फाइल बनाव अउ ओला एखर परियोजना मं जोड़व"
 
-#: dialogs/projectdialogs.cpp:280
+#: dialogs/projectdialogs.cpp:237
 msgid "File&name (relative to where the project file is):"
 msgstr "फाइलनाम (जहाँ परियोजना फाइल मन ल हेओखर सापेक्छ):"
 
-#: dialogs/projectdialogs.cpp:287
+#: dialogs/projectdialogs.cpp:244
 msgid ""
 "If you want Kile to create a new file and add it to the project, then check "
 "this option and select a template from the list that will appear below."
 msgstr ""
 
+#: dialogs/projectdialogs.cpp:326
+msgid ""
+"You have not entered a project name. If you decide to proceed, the project "
+"name will be set to \"Untitled\".\n"
+"Do you want to create the project nevertheless?"
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:327
+#, fuzzy
+#| msgid "No File Name Given"
+msgid "No Project Name Given"
+msgstr "कोई फाइल नाम नइ दे हे"
+
+#: dialogs/projectdialogs.cpp:328 kileviewmanager.cpp:872
+msgid "Untitled"
+msgstr "बेसीर्सक"
+
+#: dialogs/projectdialogs.cpp:336
+#, fuzzy
+msgid "Please enter the folder where the project file should be saved to."
+msgstr "फाइलनाम (जहाँ परियोजना फाइल मन ल हेओखर सापेक्छ):"
+
+#: dialogs/projectdialogs.cpp:336
+msgid "Empty Location"
+msgstr "खाली जगह"
+
+#: dialogs/projectdialogs.cpp:342
+#, fuzzy
+msgid "Please enter an absolute (local) path to the project folder."
+msgstr "फाइलनाम (जहाँ परियोजना फाइल मन ल हेओखर सापेक्छ):"
+
+#: dialogs/projectdialogs.cpp:342
+#, fuzzy
+#| msgid "Invalid extension"
+msgid "Invalid Location"
+msgstr "अवैध एक्सटेंसन"
+
+#: dialogs/projectdialogs.cpp:354
+msgid "Could not create the project folder, check your permissions."
+msgstr "परयोजना फोल्डर तैयार नइ कर सकिस, अपन अनुमति जांचव."
+
+#: dialogs/projectdialogs.cpp:360
+msgid "The project folder is not writable, check your permissions."
+msgstr "परियोजना फोल्डर लिखे जा सके नइ हे, अपन अनुमति जांचव."
+
+#: dialogs/projectdialogs.cpp:365
+msgid ""
+"The project file already exists, please select another name. Delete the "
+"existing project file if your intention was to overwrite it."
+msgstr ""
+
+#: dialogs/projectdialogs.cpp:365
+msgid "Project File Already Exists"
+msgstr "परियोजना फाइल पहिली से ही मौजूद हे"
+
+#: dialogs/projectdialogs.cpp:371
+#, fuzzy
+msgid ""
+"Please enter a filename for the file that should be added to this project."
+msgstr "फाइलनाम (जहाँ परियोजना फाइल मन ल हेओखर सापेक्छ):"
+
+#: dialogs/projectdialogs.cpp:371
+msgid "No File Name Given"
+msgstr "कोई फाइल नाम नइ दे हे"
+
+#: dialogs/projectdialogs.cpp:385
+#, kde-format
+msgid "The file \"%1\" already exists, overwrite it?"
+msgstr "फाइल \"%1\" से पहिली से ही मौजूद हे, एखर ऊपर ही लिखव?"
+
+#: dialogs/projectdialogs.cpp:385 documentinfo.cpp:132
+msgid "File Already Exists"
+msgstr "फाइल पहिली से ही मौजूद हे"
+
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox5)
-#: dialogs/projectdialogs.cpp:456 widgets/generalconfigwidget.ui:32
+#: dialogs/projectdialogs.cpp:410 widgets/generalconfigwidget.ui:32
 msgid "Project Options"
 msgstr "परियोजना विकल्प "
 
-#: dialogs/projectdialogs.cpp:457
+#: dialogs/projectdialogs.cpp:411
 msgid "(use global setting)"
 msgstr "(वैस्विक सेटिंग उपयोग करव)"
 
-#: dialogs/projectdialogs.cpp:490
+#: dialogs/projectdialogs.cpp:426
 msgid "Select the default master document. Leave empty for auto detection."
 msgstr "डिफाल्ट मास्टर कागद चुनव. अपने अपन पता लगाय बर खाली छोड़ देव."
 
-#: dialogs/projectdialogs.cpp:495
+#: dialogs/projectdialogs.cpp:431
 msgid "&Master document:"
 msgstr "मास्टर कागद: (&M)"
 
-#: dialogs/projectdialogs.cpp:501
+#: dialogs/projectdialogs.cpp:437
 msgid "(auto-detect)"
 msgstr "(अपने-आप-पता-लगाव)"
 
-#: dialogs/projectdialogs.cpp:518
+#: dialogs/projectdialogs.cpp:454
 msgid "&QuickBuild configuration:"
 msgstr "क्विकबिल्ड कान्फिगरेसन: (&Q)"
 
-#: dialogs/projectdialogs.cpp:536
+#: dialogs/projectdialogs.cpp:473
 msgid "&MakeIndex options"
 msgstr "मेकइंडेक्स विकल्प (&M)"
 
@@ -3444,14 +3519,8 @@ msgstr "अनाम बर आंकड़ा"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: dialogs/tabbingdialog_base.ui:28
 #, fuzzy
-msgid "Num of &columns:"
+msgid "Number of &columns:"
 msgstr "खंभा मन के संख्या: "
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: dialogs/tabbingdialog_base.ui:45
-#, fuzzy
-msgid "Num of &rows:"
-msgstr "पंक्तियों के संख्या: (&r)"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: dialogs/tabbingdialog_base.ui:62
@@ -4485,10 +4554,6 @@ msgid ""
 "The filename contains invalid characters ($~ #).<br>Please provide another "
 "one, or click \"Cancel\" to save anyway."
 msgstr ""
-
-#: documentinfo.cpp:132
-msgid "File Already Exists"
-msgstr "फाइल पहिली से ही मौजूद हे"
 
 #: documentinfo.cpp:133
 #, fuzzy, kde-format
@@ -6317,7 +6382,7 @@ msgstr ""
 msgid "Paste"
 msgstr "चिपकाव"
 
-#: kileproject.cpp:483
+#: kileproject.cpp:478
 #, kde-format
 msgid ""
 "The project file of %1 was created by a newer version of kile. Opening it "
@@ -8674,10 +8739,6 @@ msgstr ""
 msgid "&QuickPreview Math"
 msgstr ""
 
-#: kileviewmanager.cpp:872
-msgid "Untitled"
-msgstr "बेसीर्सक"
-
 #: kileviewmanager.cpp:974
 #, fuzzy
 #| msgid "Create Template From Document..."
@@ -10819,6 +10880,10 @@ msgstr ""
 msgid "Show the user menu in the menu bar"
 msgstr ""
 
+#, fuzzy
+#~ msgid "Num of &rows:"
+#~ msgstr "पंक्तियों के संख्या: (&r)"
+
 #~ msgid "*.png *.jpg *.pdf|Graphics\n"
 #~ msgstr "*.png *.jpg *.pdf|चित्रादि\n"
 
@@ -10839,42 +10904,6 @@ msgstr ""
 
 #~ msgid "'command'"
 #~ msgstr "कमांड"
-
-#, fuzzy
-#~| msgid "No File Name Given"
-#~ msgid "No Project Name Given"
-#~ msgstr "कोई फाइल नाम नइ दे हे"
-
-#, fuzzy
-#~ msgid "Please enter the folder where the project file should be saved to."
-#~ msgstr "फाइलनाम (जहाँ परियोजना फाइल मन ल हेओखर सापेक्छ):"
-
-#~ msgid "Empty Location"
-#~ msgstr "खाली जगह"
-
-#, fuzzy
-#~ msgid "Please enter an absolute (local) path to the project folder."
-#~ msgstr "फाइलनाम (जहाँ परियोजना फाइल मन ल हेओखर सापेक्छ):"
-
-#, fuzzy
-#~| msgid "Invalid extension"
-#~ msgid "Invalid Location"
-#~ msgstr "अवैध एक्सटेंसन"
-
-#~ msgid "Could not create the project folder, check your permissions."
-#~ msgstr "परयोजना फोल्डर तैयार नइ कर सकिस, अपन अनुमति जांचव."
-
-#~ msgid "The project folder is not writable, check your permissions."
-#~ msgstr "परियोजना फोल्डर लिखे जा सके नइ हे, अपन अनुमति जांचव."
-
-#~ msgid "Project File Already Exists"
-#~ msgstr "परियोजना फाइल पहिली से ही मौजूद हे"
-
-#~ msgid "No File Name Given"
-#~ msgstr "कोई फाइल नाम नइ दे हे"
-
-#~ msgid "The file \"%1\" already exists, overwrite it?"
-#~ msgstr "फाइल \"%1\" से पहिली से ही मौजूद हे, एखर ऊपर ही लिखव?"
 
 #~ msgid "This document class already exists."
 #~ msgstr "ये कागद क्लास पहिली से ही मौजूद हे."
