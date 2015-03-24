@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-03-18 08:07+0000\n"
+"POT-Creation-Date: 2015-03-24 11:24+0000\n"
 "PO-Revision-Date: 2009-02-28 13:57+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -116,7 +116,7 @@ msgid "Multiple encryption keys per address"
 msgstr "हर एक पता बहुत से एनक्रिप्सन कुंजियाँ"
 
 #: aboutdata.cpp:363 collectionpage/collectionmailinglistpage.cpp:104
-#: editor/kmcomposewin.cpp:2144 kmsystemtray.cpp:74 kmsystemtray.cpp:116
+#: editor/kmcomposewin.cpp:2105 kmsystemtray.cpp:74 kmsystemtray.cpp:116
 msgid "KMail"
 msgstr "के-मेल"
 
@@ -1715,12 +1715,12 @@ msgstr "संलग्नक अइसन सहेजव"
 msgid "Show attachment list"
 msgstr "संलग्नक अइसन सहेजव"
 
-#: editor/codecaction.cpp:57
+#: editor/codec/codecaction.cpp:61
 msgctxt "Encodings menu"
 msgid "us-ascii"
 msgstr ""
 
-#: editor/codecaction.cpp:67
+#: editor/codec/codecaction.cpp:71
 #, fuzzy
 #| msgid "Encoding"
 msgctxt "Menu item"
@@ -1845,7 +1845,7 @@ msgid "Send"
 msgstr "भेजव"
 
 #: editor/kmcomposewin.cpp:1105 editor/kmcomposewin.cpp:1118
-#: editor/kmcomposewin.cpp:2819
+#: editor/kmcomposewin.cpp:2780
 msgid "Send &Later"
 msgstr "बाद मं भेजव (&L)"
 
@@ -2070,13 +2070,13 @@ msgstr ""
 msgid "Configure KMail..."
 msgstr "के-मेल कान्फिगर करव..."
 
-#: editor/kmcomposewin.cpp:1437 editor/kmcomposewin.cpp:3217
+#: editor/kmcomposewin.cpp:1437 editor/kmcomposewin.cpp:3178
 #, kde-format
 msgctxt "Shows the linenumber of the cursor position."
 msgid " Line: %1 "
 msgstr "पंक्ति: %1"
 
-#: editor/kmcomposewin.cpp:1442 editor/kmcomposewin.cpp:3219
+#: editor/kmcomposewin.cpp:1442 editor/kmcomposewin.cpp:3180
 #, kde-format
 msgid " Column: %1 "
 msgstr "खंभा: %1 "
@@ -2137,21 +2137,21 @@ msgstr "अपने अपन सहेजना फेल"
 msgid "Sending Message Failed"
 msgstr "अपने अपन सहेजना फेल"
 
-#: editor/kmcomposewin.cpp:2127
+#: editor/kmcomposewin.cpp:2088
 msgid "Add as &Inline Image"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2128
+#: editor/kmcomposewin.cpp:2089
 #, fuzzy
 #| msgid "Add as Attachment"
 msgid "Add as &Attachment"
 msgstr "संलग्नक के रूप मं जोड़व"
 
-#: editor/kmcomposewin.cpp:2144 editor/kmcomposewin.cpp:2223
+#: editor/kmcomposewin.cpp:2105 editor/kmcomposewin.cpp:2184
 msgid "Name of the attachment:"
 msgstr "संलग्नक के नाम"
 
-#: editor/kmcomposewin.cpp:2182
+#: editor/kmcomposewin.cpp:2143
 #, fuzzy
 #| msgid "Quoted Message"
 msgid "Add URL into Message"
@@ -2159,7 +2159,7 @@ msgid_plural "Add URLs into Message"
 msgstr[0] "उद्धृत संदेस"
 msgstr[1] "उद्धृत संदेस"
 
-#: editor/kmcomposewin.cpp:2183
+#: editor/kmcomposewin.cpp:2144
 #, fuzzy
 #| msgid "Add as Attachment"
 msgid "Add File as &Attachment"
@@ -2167,16 +2167,16 @@ msgid_plural "Add Files as &Attachment"
 msgstr[0] "संलग्नक के रूप मं जोड़व"
 msgstr[1] "संलग्नक के रूप मं जोड़व"
 
-#: editor/kmcomposewin.cpp:2222
+#: editor/kmcomposewin.cpp:2183
 #, fuzzy
 msgid "Insert clipboard text as attachment"
 msgstr "पाठ या संलग्नक के रूप मं चिपकाव?"
 
-#: editor/kmcomposewin.cpp:2327
+#: editor/kmcomposewin.cpp:2288
 msgid "unnamed"
 msgstr "बेनाम"
 
-#: editor/kmcomposewin.cpp:2353
+#: editor/kmcomposewin.cpp:2314
 msgid ""
 "<qt><p>You have requested that messages be encrypted to yourself, but the "
 "currently selected identity does not define an (OpenPGP or S/MIME) "
@@ -2184,36 +2184,36 @@ msgid ""
 "identity configuration.</p></qt>"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2360
+#: editor/kmcomposewin.cpp:2321
 msgid "Undefined Encryption Key"
 msgstr "अपरिभासित एनक्रिप्सन कुंजी"
 
-#: editor/kmcomposewin.cpp:2404
+#: editor/kmcomposewin.cpp:2365
 msgid ""
 "<qt><p>In order to be able to sign this message you first have to define the "
 "(OpenPGP or S/MIME) signing key to use.</p><p>Please select the key to use "
 "in the identity configuration.</p></qt>"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2411
+#: editor/kmcomposewin.cpp:2372
 msgid "Undefined Signing Key"
 msgstr "अपरिभासित साइनिंग कुंजी"
 
-#: editor/kmcomposewin.cpp:2537
+#: editor/kmcomposewin.cpp:2498
 #, kde-format
 msgid "There is %1 file upload in progress."
 msgid_plural "There are %1 file uploads in progress."
 msgstr[0] ""
 msgstr[1] ""
 
-#: editor/kmcomposewin.cpp:2557
+#: editor/kmcomposewin.cpp:2518
 msgid ""
 "You must enter your email address in the From: field. You should also set "
 "your email address for all identities, so that you do not have to enter it "
 "for each message."
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2566
+#: editor/kmcomposewin.cpp:2527
 #, fuzzy
 #| msgid ""
 #| "You must specify at least one receiver,either in the To: field or as CC "
@@ -2225,31 +2225,31 @@ msgstr ""
 "आप मन ल मिलेः फील्ड मं या ए मन ल घलोक या बेनामी प्रति मं कम से कम एक पावइया ल "
 "निरधारित करना जरूरी होही."
 
-#: editor/kmcomposewin.cpp:2572
+#: editor/kmcomposewin.cpp:2533
 msgid "To: field is empty. Send message anyway?"
 msgstr "को: फील्ड खाली हे. जऊन घलोक हो संदेस भेजव?"
 
-#: editor/kmcomposewin.cpp:2574
+#: editor/kmcomposewin.cpp:2535
 msgid "No To: specified"
 msgstr "इनको नइ: निरधारित"
 
-#: editor/kmcomposewin.cpp:2588
+#: editor/kmcomposewin.cpp:2549
 msgid "You did not specify a subject. Send message anyway?"
 msgstr "आप मन कोनो विसय अंकित नइ करे हे. जइसन भी हो, संदेस भेज देव?"
 
-#: editor/kmcomposewin.cpp:2590
+#: editor/kmcomposewin.cpp:2551
 msgid "No Subject Specified"
 msgstr "कोई विसय निरधारित नइ हे."
 
-#: editor/kmcomposewin.cpp:2591
+#: editor/kmcomposewin.cpp:2552
 msgid "S&end as Is"
 msgstr "जैसा हे वइसनेच भेजव (&e)"
 
-#: editor/kmcomposewin.cpp:2592
+#: editor/kmcomposewin.cpp:2553
 msgid "&Specify the Subject"
 msgstr "विसय निरधारित करव (&S)"
 
-#: editor/kmcomposewin.cpp:2627
+#: editor/kmcomposewin.cpp:2588
 #, fuzzy
 #| msgid ""
 #| "You must specify at least one receiver,either in the To: field or as CC "
@@ -2261,93 +2261,72 @@ msgstr ""
 "आप मन ल मिलेः फील्ड मं या ए मन ल घलोक या बेनामी प्रति मं कम से कम एक पावइया ल "
 "निरधारित करना जरूरी होही."
 
-#: editor/kmcomposewin.cpp:2816
+#: editor/kmcomposewin.cpp:2777
 msgid "About to send email..."
 msgstr "ई-मेल भेजे में..."
 
-#: editor/kmcomposewin.cpp:2817
+#: editor/kmcomposewin.cpp:2778
 msgid "Send Confirmation"
 msgstr "पुस्टिकरन भेजव"
 
-#: editor/kmcomposewin.cpp:2818
+#: editor/kmcomposewin.cpp:2779
 msgid "&Send Now"
 msgstr "अभी भेजव (&S)"
 
-#: editor/kmcomposewin.cpp:2882
+#: editor/kmcomposewin.cpp:2843
 #, kde-format
 msgid ""
 "You are trying to send the mail to more than %1 recipients. Send message "
 "anyway?"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2883
+#: editor/kmcomposewin.cpp:2844
 #, fuzzy
 msgid "Too many recipients"
 msgstr "कोई पावइया नइ"
 
-#: editor/kmcomposewin.cpp:2884
+#: editor/kmcomposewin.cpp:2845
 msgid "&Send as Is"
 msgstr "जैसा हे वइसनेच भेजव (&S)"
 
-#: editor/kmcomposewin.cpp:2885
+#: editor/kmcomposewin.cpp:2846
 #, fuzzy
 msgid "&Edit Recipients"
 msgstr "सब्बो पावइया"
 
-#: editor/kmcomposewin.cpp:2924
+#: editor/kmcomposewin.cpp:2885
 msgid ""
 "Turning HTML mode off will cause the text to lose the formatting. Are you "
 "sure?"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2926
+#: editor/kmcomposewin.cpp:2887
 msgid "Lose the formatting?"
 msgstr ""
 
-#: editor/kmcomposewin.cpp:2926
+#: editor/kmcomposewin.cpp:2887
 #, fuzzy
 #| msgid "Login Information"
 msgid "Lose Formatting"
 msgstr "लागिन जानकारी"
 
-#: editor/kmcomposewin.cpp:2926
+#: editor/kmcomposewin.cpp:2887
 #, fuzzy
 #| msgid "Message as Plain Text"
 msgid "Add Markup Plain Text"
 msgstr "संदेस सादा पाठ में"
 
-#: editor/kmcomposewin.cpp:3262
+#: editor/kmcomposewin.cpp:3223
 #, fuzzy
 #| msgid "Lose Characters"
 msgid "Insert Special Character"
 msgstr "लूज कैरेक्टर्स"
 
-#: editor/kmcomposewin.cpp:3263
+#: editor/kmcomposewin.cpp:3224
 #, fuzzy
 #| msgid "Insert Command..."
 msgid "Insert"
 msgstr "कमांड भरव..."
-
-#: editor/kmstorageservice.cpp:53
-#, fuzzy
-#| msgid "A critical error occurred. Processing stops here."
-msgid "An error occurred while sending the file."
-msgstr "एक गंभीर गलती होइस. काम इहां बन्द होथे ."
-
-#: editor/kmstorageservice.cpp:53
-#, fuzzy
-#| msgid "Load Profile"
-msgid "Upload file"
-msgstr "प्रोफाइल लोड करव"
-
-#: editor/kmstorageservice.cpp:72
-#, kde-format
-msgid "%1 return an error '%2'"
-msgstr ""
-
-#: editor/kmstorageservice.cpp:72
-msgid "Error"
-msgstr "गलती"
 
 #: editor/potentialphishingemail/potentialphishingdetaildialog.cpp:36
 #, fuzzy
@@ -2364,6 +2343,27 @@ msgid ""
 "Some email address seems a potential phishing email <a href=\"phishingdetails"
 "\">(Details...)</a>"
 msgstr ""
+
+#: editor/storageservice/kmstorageservice.cpp:53
+#, fuzzy
+#| msgid "A critical error occurred. Processing stops here."
+msgid "An error occurred while sending the file."
+msgstr "एक गंभीर गलती होइस. काम इहां बन्द होथे ."
+
+#: editor/storageservice/kmstorageservice.cpp:53
+#, fuzzy
+#| msgid "Load Profile"
+msgid "Upload file"
+msgstr "प्रोफाइल लोड करव"
+
+#: editor/storageservice/kmstorageservice.cpp:72
+#, kde-format
+msgid "%1 return an error '%2'"
+msgstr ""
+
+#: editor/storageservice/kmstorageservice.cpp:72
+msgid "Error"
+msgstr "गलती"
 
 #: editor/validatesendmailshortcut.cpp:44
 msgid ""
