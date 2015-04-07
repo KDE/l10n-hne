@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-04-03 01:49+0000\n"
+"POT-Creation-Date: 2015-04-07 02:06+0000\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -80,9 +80,9 @@ msgstr "फिल्टर परत (&F)"
 #: ui/KisDocument.cpp:1214 ui/KisDocument.cpp:1258 ui/KisDocument.cpp:1398
 #: ui/KisDocument.cpp:2028 ui/KisDocument.cpp:2031
 #: ui/KisImportExportManager.cpp:230 ui/KisImportExportManager.cpp:241
-#: ui/KisImportExportManager.cpp:531 ui/KisMainWindow.cpp:657
-#: ui/KisMainWindow.cpp:708 ui/KisMainWindow.cpp:722 ui/KisMainWindow.cpp:1370
-#: ui/KisMainWindow.cpp:1551 ui/KisMainWindow.cpp:1563
+#: ui/KisImportExportManager.cpp:531 ui/KisMainWindow.cpp:658
+#: ui/KisMainWindow.cpp:709 ui/KisMainWindow.cpp:723 ui/KisMainWindow.cpp:1371
+#: ui/KisMainWindow.cpp:1554 ui/KisMainWindow.cpp:1566
 #: ui/KisTemplateCreateDia.cpp:324 ui/KisView.cpp:792
 #: ui/opengl/kis_opengl.cpp:91 ui/opengl/kis_opengl_canvas2.cpp:504
 #: ui/thememanager.cpp:271 ui/widgets/kis_custom_image_widget.cc:245
@@ -1802,7 +1802,9 @@ msgid "%1%"
 msgstr "%1%"
 
 #. i18n: ectx: property (text), widget (QCheckBox, opacityCBox)
-#: image/kis_layer.cc:175 plugins/paintops/hairy/wdghairyeoptions.ui:297
+#: image/kis_layer.cc:175
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:230
+#: plugins/paintops/hairy/wdghairyeoptions.ui:297
 #: plugins/paintops/hairy/wdgInkOptions.ui:58
 #: plugins/paintops/libpaintop/kis_pressure_flow_opacity_option.cpp:32
 #: plugins/paintops/libpaintop/kis_pressure_opacity_option.cpp:26
@@ -2038,7 +2040,7 @@ msgstr "फोटू आयात करव"
 
 #. i18n: ectx: Menu (LayerConvert)
 #: krita.rc:149
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:504
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:510
 #, fuzzy
 #| msgid "&Invert"
 msgid "&Convert"
@@ -2046,7 +2048,7 @@ msgstr "उलटव (&I)"
 
 #. i18n: ectx: Menu (LayerSplitAlpha)
 #: krita.rc:157
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:511
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:517
 #, fuzzy
 #| msgid "Color to Alpha"
 msgid "S&plit Alpha"
@@ -3240,7 +3242,8 @@ msgstr "रंगों ल प्रतिसत के रूप मं दे
 #: plugins/formats/pdf/pdfimportwidgetbase.ui:214
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:103
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1776
-#: ui/forms/wdgdisplaysettings.ui:72 ui/kis_paintop_box.cc:183
+#: ui/forms/wdgdisplaysettings.ui:72 ui/kis_paintop_box.cc:199
+#: ui/kis_paintop_box.cc:204
 #, fuzzy
 #| msgid "Size"
 msgid "Size:"
@@ -3605,70 +3608,70 @@ msgstr "नाम:"
 msgid "Composition"
 msgstr "कम्पोजिट मोड"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:119
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:120
 #, fuzzy
 msgid "Layers"
 msgstr "लेयर"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:147
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:150
 msgid "Minimal View"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:149
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:152
 msgid "Detailed View"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:151
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:154
 msgid "Thumbnail View"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:163
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:166
 #, fuzzy
 msgid "View mode"
 msgstr "दृस्य"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:190
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:193
 #, fuzzy
 msgid "&Remove Layer"
 msgstr "परत मेटाव"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:198
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:201
 #, fuzzy
 #| msgid "Move Layer"
 msgid "Move Layer Left"
 msgstr "परत खिसकाव"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:206
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:209
 #, fuzzy
 #| msgid "Move Layer"
 msgid "Move Layer Right"
 msgstr "परत खिसकाव"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:213
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:216
 #, fuzzy
 msgid "&Properties..."
 msgstr "गुन..."
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:233
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:240
 #, fuzzy
 #| msgid "Selection mode:"
 msgid "&Select Opaque"
 msgstr "चयन मोड:"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:257
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:264
 #, fuzzy
 #| msgid "Selection Mask..."
 msgid "&Show Global Selection Mask"
 msgstr "चयन मास्क..."
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:259
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:266
 msgctxt "@info:tooltip"
 msgid ""
 "Shows global selection as a usual selection mask in <interface>Layers</"
 "interface> docker"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:500
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:506
 #: ui/kis_layer_manager.cc:290
 msgid "&Merge with Layer Below"
 msgstr "निम्न परत के साथ मिलाव (&M)"
@@ -3676,6 +3679,7 @@ msgstr "निम्न परत के साथ मिलाव (&M)"
 #. i18n: ectx: property (toolTip), widget (KisCompositeOpComboBox, cmbComposite)
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:37
 #: plugins/paintops/libpaintop/kis_compositeop_option.cpp:34
+#: ui/widgets/kis_cmb_composite.cc:70
 #, fuzzy
 #| msgid "Blending mode"
 msgid "Blending Mode"
@@ -3799,7 +3803,7 @@ msgstr "परत या मास्क ल मेटाव"
 #: plugins/filters/randompickfilter/wdgrandompickoptions.ui:65
 #: plugins/paintops/libpaintop/forms/wdgflowopacityoption.ui:59
 #: ui/forms/wdgautogradient.ui:81 ui/forms/wdgpaintactioneditor.ui:89
-#: ui/kis_paintop_box.cc:181
+#: ui/kis_paintop_box.cc:197 ui/kis_paintop_box.cc:202
 msgid "Opacity:"
 msgstr "अपारदर्सिता:"
 
@@ -4121,7 +4125,7 @@ msgstr "ओवरव्यू"
 
 #: plugins/extensions/dockers/palettedocker/colorsetchooser.cpp:97
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:61
-#: ui/KisMainWindow.cpp:622 ui/widgets/kis_workspace_chooser.cpp:92
+#: ui/KisMainWindow.cpp:623 ui/widgets/kis_workspace_chooser.cpp:92
 #, fuzzy
 #| msgid "Wave"
 msgid "Save"
@@ -5836,7 +5840,7 @@ msgstr "रंगदानियाँ"
 #. i18n: ectx: property (text), widget (QCheckBox, cbRemoveWorkspaces)
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:255
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:105
-#: ui/forms/wdgdlgblacklistcleanup.ui:26 ui/kis_paintop_box.cc:288
+#: ui/forms/wdgdlgblacklistcleanup.ui:26 ui/kis_paintop_box.cc:309
 #, fuzzy
 #| msgid "Colorspace"
 msgid "Workspaces"
@@ -10152,7 +10156,7 @@ msgstr "रंग सीमा"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:30
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:246
-#: ui/kis_paintop_box.cc:284
+#: ui/kis_paintop_box.cc:305
 #, fuzzy
 #| msgid "Crop Image"
 msgid "Mirror"
@@ -12021,7 +12025,7 @@ msgstr "उलटा"
 
 #. i18n: ectx: property (text), widget (QLabel, lblFlow)
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1754
-#: ui/kis_paintop_box.cc:182
+#: ui/kis_paintop_box.cc:198 ui/kis_paintop_box.cc:203
 #, fuzzy
 #| msgid "&Show"
 msgid "Flow:"
@@ -12993,7 +12997,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLineEdit, palettename)
 #: ui/forms/wdgcustompalette.ui:18 ui/KisDocument.cpp:2480
-#: ui/KisMainWindow.cpp:835 ui/KisPart.cpp:593 ui/KisPart.cpp:609
+#: ui/KisMainWindow.cpp:836 ui/KisPart.cpp:593 ui/KisPart.cpp:609
 msgid "Unnamed"
 msgstr "बेनाम"
 
@@ -17825,53 +17829,49 @@ msgstr "आड़ा लहर"
 msgid "Set vertical mirror mode"
 msgstr "मीटरिंग मोड"
 
-#: ui/kis_paintop_box.cc:207
-msgid "Mode: "
-msgstr "मोड"
-
-#: ui/kis_paintop_box.cc:218
+#: ui/kis_paintop_box.cc:236
 #, fuzzy
 #| msgid "Colorspace"
 msgid "Choose workspace"
 msgstr "कलरस्पेस"
 
-#: ui/kis_paintop_box.cc:245
+#: ui/kis_paintop_box.cc:265
 #, fuzzy
 #| msgid "Brush size"
 msgid "Brush composite"
 msgstr "ब्रुस आकार"
 
-#: ui/kis_paintop_box.cc:249
+#: ui/kis_paintop_box.cc:269
 #, fuzzy
 #| msgid "Bristles"
 msgid "Brush option slider 1"
 msgstr "ब्रिसल्स"
 
-#: ui/kis_paintop_box.cc:254
+#: ui/kis_paintop_box.cc:274
 #, fuzzy
 #| msgid "Bristles"
 msgid "Brush option slider 2"
 msgstr "ब्रिसल्स"
 
-#: ui/kis_paintop_box.cc:259
+#: ui/kis_paintop_box.cc:279
 #, fuzzy
 #| msgid "Bristles"
 msgid "Brush option slider 3"
 msgstr "ब्रिसल्स"
 
-#: ui/kis_paintop_box.cc:264
+#: ui/kis_paintop_box.cc:284
 #, fuzzy
 #| msgid "Filter Brush"
 msgid "Next Favourite Preset"
 msgstr "ब्रुस छानव"
 
-#: ui/kis_paintop_box.cc:269
+#: ui/kis_paintop_box.cc:289
 #, fuzzy
 #| msgid "Filter Brush"
 msgid "Previous Favourite Preset"
 msgstr "ब्रुस छानव"
 
-#: ui/kis_paintop_box.cc:274
+#: ui/kis_paintop_box.cc:294
 msgid "Switch to Previous Preset"
 msgstr ""
 
@@ -18285,7 +18285,7 @@ msgid ""
 "Error message: %4"
 msgstr ""
 
-#: ui/KisDocument.cpp:1538 ui/KisMainWindow.cpp:657
+#: ui/KisDocument.cpp:1538 ui/KisMainWindow.cpp:658
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr ""
@@ -18459,186 +18459,186 @@ msgstr "रूट परत देखाव"
 msgid "Hide %1 Toolbar"
 msgstr "औजार (&T)"
 
-#: ui/KisMainWindow.cpp:612
+#: ui/KisMainWindow.cpp:613
 msgid "(write protected)"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:620
+#: ui/KisMainWindow.cpp:621
 #, fuzzy, kde-format
 #| msgid "Play macro"
 msgid "Save as %1"
 msgstr "मेक्रो चलाव"
 
-#: ui/KisMainWindow.cpp:820
+#: ui/KisMainWindow.cpp:821
 #, fuzzy
 #| msgid "untitled-1"
 msgid "untitled"
 msgstr "अनाम-1"
 
-#: ui/KisMainWindow.cpp:1125
+#: ui/KisMainWindow.cpp:1126
 #, fuzzy
 #| msgid "Import Image"
 msgid "Import Images"
 msgstr "फोटू आयात करव"
 
-#: ui/KisMainWindow.cpp:1125
+#: ui/KisMainWindow.cpp:1126
 #, fuzzy
 #| msgid "Image"
 msgid "Open Images"
 msgstr "फोटू"
 
-#: ui/KisMainWindow.cpp:1328
+#: ui/KisMainWindow.cpp:1329
 #, fuzzy
 #| msgid "Export Layer"
 msgid "Export as PDF"
 msgstr "परत निर्यात करव"
 
-#: ui/KisMainWindow.cpp:1370
+#: ui/KisMainWindow.cpp:1371
 msgid "Cannot export to the specified file"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1521
+#: ui/KisMainWindow.cpp:1524
 msgid "Document"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1529
+#: ui/KisMainWindow.cpp:1532
 #, kde-format
 msgid "Document - %1"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1552
+#: ui/KisMainWindow.cpp:1555
 msgid ""
 "You will lose all changes made since your last save\n"
 "Do you want to continue?"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1563
+#: ui/KisMainWindow.cpp:1566
 #, fuzzy
 #| msgid "Could not add layer to image."
 msgid "Error: Could not reload this document"
 msgstr "फोटू मं परत जोड़े नइ जा सकिस."
 
-#: ui/KisMainWindow.cpp:1824
+#: ui/KisMainWindow.cpp:1827
 #, kde-format
 msgid "&%1 %2"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1828
+#: ui/KisMainWindow.cpp:1831
 #, kde-format
 msgid "%1 %2"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1914
+#: ui/KisMainWindow.cpp:1917
 msgid ""
 "The Calligra LittleCMS color management plugin is not installed. Krita will "
 "quit now."
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1922
+#: ui/KisMainWindow.cpp:1925
 #, fuzzy
 msgid "Krita cannot find any brush presets! Krita will quit now."
 msgstr "एचडीआर कलरस्पेस आरजीबीएएफ३२ नइ मिलिस, किरपा करके, अपन इंस्टालेसन जांचव."
 
-#: ui/KisMainWindow.cpp:1931
+#: ui/KisMainWindow.cpp:1934
 #, fuzzy
 #| msgid "Layer Creation Error"
 msgctxt "@title:window"
 msgid "Installation error"
 msgstr "परत बनाए मं गलती"
 
-#: ui/KisMainWindow.cpp:1990
+#: ui/KisMainWindow.cpp:1993
 #, kde-format
 msgid "%1 unsaved document (%2)"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2026
+#: ui/KisMainWindow.cpp:2029
 #, fuzzy
 #| msgid "Export Layer"
 msgctxt "@action:inmenu"
 msgid "Export as PDF..."
 msgstr "परत निर्यात करव"
 
-#: ui/KisMainWindow.cpp:2034
+#: ui/KisMainWindow.cpp:2037
 #, fuzzy
 #| msgid "Close"
 msgctxt "@action:inmenu"
 msgid "Close All"
 msgstr "बंद करव"
 
-#: ui/KisMainWindow.cpp:2045
+#: ui/KisMainWindow.cpp:2048
 msgctxt "@action:inmenu"
 msgid "Open ex&isting Document as Untitled Document..."
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2049
+#: ui/KisMainWindow.cpp:2052
 #, fuzzy
 #| msgid "Export"
 msgctxt "@action:inmenu"
 msgid "E&xport..."
 msgstr "निर्यात"
 
-#: ui/KisMainWindow.cpp:2056
+#: ui/KisMainWindow.cpp:2059
 #, fuzzy
 #| msgid "Tool information"
 msgctxt "@action:inmenu"
 msgid "Document Information"
 msgstr "औजार जानकारी"
 
-#: ui/KisMainWindow.cpp:2064
+#: ui/KisMainWindow.cpp:2067
 msgctxt "@action:inmenu"
 msgid "&Themes"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2070
+#: ui/KisMainWindow.cpp:2073
 #, fuzzy
 #| msgid "Rocks"
 msgctxt "@action:inmenu"
 msgid "Show Dockers"
 msgstr "चट्टानें"
 
-#: ui/KisMainWindow.cpp:2076
+#: ui/KisMainWindow.cpp:2079
 #, fuzzy
 #| msgid "Rocks"
 msgctxt "@action:inmenu"
 msgid "Show Docker Titlebars"
 msgstr "चट्टानें"
 
-#: ui/KisMainWindow.cpp:2086
+#: ui/KisMainWindow.cpp:2089
 msgctxt "@action:inmenu"
 msgid "Cascade"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2091
+#: ui/KisMainWindow.cpp:2094
 msgctxt "@action:inmenu"
 msgid "Tile"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2096
+#: ui/KisMainWindow.cpp:2099
 msgctxt "@action:inmenu"
 msgid "Next"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2101
+#: ui/KisMainWindow.cpp:2104
 #, fuzzy
 #| msgid "Filter Brush"
 msgctxt "@action:inmenu"
 msgid "Previous"
 msgstr "ब्रुस छानव"
 
-#: ui/KisMainWindow.cpp:2106
+#: ui/KisMainWindow.cpp:2109
 #, fuzzy
 msgctxt "@action:inmenu"
 msgid "&New Window"
 msgstr "फिल्टर परत (&F)"
 
-#: ui/KisMainWindow.cpp:2110
+#: ui/KisMainWindow.cpp:2113
 #, fuzzy
 #| msgid "Close"
 msgctxt "@action:inmenu"
 msgid "Close"
 msgstr "बंद करव"
 
-#: ui/KisMainWindow.cpp:2118
+#: ui/KisMainWindow.cpp:2121
 msgid "Expanding Spacer"
 msgstr ""
 
@@ -19315,135 +19315,135 @@ msgid ""
 msgstr ""
 "सक्रिय चैनलों के सेट चुनव. पेंटिंग से छनइया करे या प्रभावित सिरिफ सक्रिय चैनल ही दिखही."
 
-#: ui/widgets/kis_cmb_composite.cc:94
+#: ui/widgets/kis_cmb_composite.cc:96
 #, fuzzy
 #| msgid "Blending mode"
 msgid "Select Normal Blending Mode"
 msgstr "ब्लेंडिंग मोड"
 
-#: ui/widgets/kis_cmb_composite.cc:101
+#: ui/widgets/kis_cmb_composite.cc:103
 #, fuzzy
 #| msgid "Selection mode:"
 msgid "Select Dissolve Blending Mode"
 msgstr "चयन मोड:"
 
-#: ui/widgets/kis_cmb_composite.cc:108
+#: ui/widgets/kis_cmb_composite.cc:110
 #, fuzzy
 #| msgid "Blending mode"
 msgid "Select Behind Blending Mode"
 msgstr "ब्लेंडिंग मोड"
 
-#: ui/widgets/kis_cmb_composite.cc:115
+#: ui/widgets/kis_cmb_composite.cc:117
 #, fuzzy
 #| msgid "Blending mode"
 msgid "Select Clear Blending Mode"
 msgstr "ब्लेंडिंग मोड"
 
-#: ui/widgets/kis_cmb_composite.cc:122
+#: ui/widgets/kis_cmb_composite.cc:124
 #, fuzzy
 #| msgid "Blending mode"
 msgid "Select Darken Blending Mode"
 msgstr "ब्लेंडिंग मोड"
 
-#: ui/widgets/kis_cmb_composite.cc:129
+#: ui/widgets/kis_cmb_composite.cc:131
 #, fuzzy
 #| msgid "Blending mode"
 msgid "Select Multiply Blending Mode"
 msgstr "ब्लेंडिंग मोड"
 
-#: ui/widgets/kis_cmb_composite.cc:136
+#: ui/widgets/kis_cmb_composite.cc:138
 msgid "Select Color Burn Blending Mode"
 msgstr ""
 
-#: ui/widgets/kis_cmb_composite.cc:143
+#: ui/widgets/kis_cmb_composite.cc:145
 msgid "Select Linear Burn Blending Mode"
 msgstr ""
 
-#: ui/widgets/kis_cmb_composite.cc:150
+#: ui/widgets/kis_cmb_composite.cc:152
 #, fuzzy
 #| msgid "Blending mode"
 msgid "Select Lighten Blending Mode"
 msgstr "ब्लेंडिंग मोड"
 
-#: ui/widgets/kis_cmb_composite.cc:157
+#: ui/widgets/kis_cmb_composite.cc:159
 #, fuzzy
 #| msgid "Blending mode"
 msgid "Select Screen Blending Mode"
 msgstr "ब्लेंडिंग मोड"
 
-#: ui/widgets/kis_cmb_composite.cc:164
+#: ui/widgets/kis_cmb_composite.cc:166
 msgid "Select Color Dodge Blending Mode"
 msgstr ""
 
-#: ui/widgets/kis_cmb_composite.cc:171
+#: ui/widgets/kis_cmb_composite.cc:173
 msgid "Select Linear Dodge Blending Mode"
 msgstr ""
 
-#: ui/widgets/kis_cmb_composite.cc:178
+#: ui/widgets/kis_cmb_composite.cc:180
 #, fuzzy
 #| msgid "Blending mode"
 msgid "Select Overlay Blending Mode"
 msgstr "ब्लेंडिंग मोड"
 
-#: ui/widgets/kis_cmb_composite.cc:185
+#: ui/widgets/kis_cmb_composite.cc:187
 #, fuzzy
 #| msgid "Select the set of active channels."
 msgid "Select Soft Light Blending Mode"
 msgstr "सक्रिय चैनल के सेट चुनव."
 
-#: ui/widgets/kis_cmb_composite.cc:192
+#: ui/widgets/kis_cmb_composite.cc:194
 msgid "Select Hard Light Blending Mode"
 msgstr ""
 
-#: ui/widgets/kis_cmb_composite.cc:199
+#: ui/widgets/kis_cmb_composite.cc:201
 msgid "Select Vivid Light Blending Mode"
 msgstr ""
 
-#: ui/widgets/kis_cmb_composite.cc:206
+#: ui/widgets/kis_cmb_composite.cc:208
 msgid "Select Linear Light Blending Mode"
 msgstr ""
 
-#: ui/widgets/kis_cmb_composite.cc:213
+#: ui/widgets/kis_cmb_composite.cc:215
 #, fuzzy
 #| msgid "Blending mode"
 msgid "Select Pin Light Blending Mode"
 msgstr "ब्लेंडिंग मोड"
 
-#: ui/widgets/kis_cmb_composite.cc:220
+#: ui/widgets/kis_cmb_composite.cc:222
 #, fuzzy
 #| msgid "Blending mode"
 msgid "Select Hard Mix Blending Mode"
 msgstr "ब्लेंडिंग मोड"
 
-#: ui/widgets/kis_cmb_composite.cc:227
+#: ui/widgets/kis_cmb_composite.cc:229
 msgid "Select Difference Blending Mode"
 msgstr ""
 
-#: ui/widgets/kis_cmb_composite.cc:234
+#: ui/widgets/kis_cmb_composite.cc:236
 #, fuzzy
 #| msgid "Selection mode:"
 msgid "Select Exclusion Blending Mode"
 msgstr "चयन मोड:"
 
-#: ui/widgets/kis_cmb_composite.cc:241
+#: ui/widgets/kis_cmb_composite.cc:243
 #, fuzzy
 #| msgid "Blending mode"
 msgid "Select Hue Blending Mode"
 msgstr "ब्लेंडिंग मोड"
 
-#: ui/widgets/kis_cmb_composite.cc:248
+#: ui/widgets/kis_cmb_composite.cc:250
 #, fuzzy
 #| msgid "Selection mode:"
 msgid "Select Saturation Blending Mode"
 msgstr "चयन मोड:"
 
-#: ui/widgets/kis_cmb_composite.cc:255
+#: ui/widgets/kis_cmb_composite.cc:257
 #, fuzzy
 #| msgid "Blending mode"
 msgid "Select Color Blending Mode"
 msgstr "ब्लेंडिंग मोड"
 
-#: ui/widgets/kis_cmb_composite.cc:262
+#: ui/widgets/kis_cmb_composite.cc:264
 #, fuzzy
 #| msgid "Selection mode:"
 msgid "Select Luminosity Blending Mode"
@@ -19589,6 +19589,9 @@ msgstr "कलरस्पेस"
 #| msgid "Colorspace"
 msgid "Workspace %1"
 msgstr "कलरस्पेस"
+
+#~ msgid "Mode: "
+#~ msgstr "मोड"
 
 #~ msgid "Duplicate the currently selected layer or mask"
 #~ msgstr "अभी हाल के चुने गे परत या मास्क ल दोहरता बनाथे "
