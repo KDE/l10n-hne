@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-05-20 08:23+0000\n"
+"POT-Creation-Date: 2015-05-29 08:38+0000\n"
 "PO-Revision-Date: 2009-02-28 20:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -373,7 +373,8 @@ msgctxt "@action Jump to today"
 msgid "To &Today"
 msgstr "आज मं (&T)"
 
-#: actionmanager.cpp:463
+#. i18n: ectx: property (text), widget (QPushButton, mTodayBtn)
+#: actionmanager.cpp:463 views/collectionview/quickview.ui:85
 msgid "Today"
 msgstr "आज"
 
@@ -413,7 +414,7 @@ msgstr "आगू स्क्राल करव"
 msgid "&Day"
 msgstr "दिन (&D)"
 
-#: actionmanager.cpp:505 actionmanager.cpp:1231 calendarview.cpp:1930
+#: actionmanager.cpp:505 actionmanager.cpp:1231 calendarview.cpp:1932
 #, kde-format
 msgid "&Next Day"
 msgid_plural "&Next %1 Days"
@@ -480,12 +481,12 @@ msgid "Configure the view"
 msgstr "तारीक अउ समय ल कान्फिगर करव... (&D)"
 
 #: actionmanager.cpp:559 actionmanager.cpp:1521 actionmanager.cpp:1556
-#: koeventpopupmenu.cpp:48
+#: koeventpopupmenu.cpp:58
 msgid "&Show"
 msgstr "देखाव (&S)"
 
 #: actionmanager.cpp:564 actionmanager.cpp:1524 actionmanager.cpp:1557
-#: koeventpopupmenu.cpp:51
+#: koeventpopupmenu.cpp:61
 msgid "&Edit..."
 msgstr "संपादन... (&E)"
 
@@ -639,7 +640,7 @@ msgstr ""
 msgid "Format Conversion"
 msgstr "फार्मेट कन्वर्सन"
 
-#: actionmanager.cpp:977 calendarview.cpp:1876
+#: actionmanager.cpp:977 calendarview.cpp:1878
 msgid "Proceed"
 msgstr "आगू बढ़व"
 
@@ -819,7 +820,21 @@ msgstr "अभी हाल के कलेन्डर मं सामिल 
 msgid "Add as new calendar"
 msgstr "नवा कलेन्डर के रूप मं जोड़व"
 
-#: akonadicollectionview.cpp:303
+#: akonadicollectionview.cpp:516
+#, fuzzy
+#| msgctxt "@label in QuickSearchLine"
+#| msgid "Search"
+msgctxt "@info/plain Displayed grayed-out inside the textbox, verb to search"
+msgid "Search"
+msgstr "खोजव"
+
+#: akonadicollectionview.cpp:598
+#, fuzzy
+#| msgid "Loading…"
+msgid "searching..."
+msgstr "लोड करत हे..."
+
+#: akonadicollectionview.cpp:658
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Properties for %1"
@@ -827,147 +842,156 @@ msgctxt "@title:window"
 msgid "Properties of Calendar Folder %1"
 msgstr " %1 बर गुन"
 
-#: akonadicollectionview.cpp:313
+#: akonadicollectionview.cpp:671
 msgid "&Disable Color"
 msgstr "रंग अक्छम करव (&D)"
 
-#: akonadicollectionview.cpp:320
+#: akonadicollectionview.cpp:678
 msgid "&Assign Color..."
 msgstr "रंग निरधारित करव... (&A)"
 
-#: akonadicollectionview.cpp:326
+#: akonadicollectionview.cpp:684
 msgid "Use as &Default Calendar"
 msgstr "डिफाल्ट कलेन्डर के रूप मं उपयोग करव (&D)"
 
-#: akonadicollectionview.cpp:478
+#: akonadicollectionview.cpp:691
+#, fuzzy
+msgid "Remove from list"
+msgstr "नवा टैम्प्लेट"
+
+#: akonadicollectionview.cpp:696
+msgid "Add to list permanently"
+msgstr ""
+
+#: akonadicollectionview.cpp:841
 #, fuzzy
 #| msgid "Add calendar"
 msgid "Add Calendar"
 msgstr "कलेन्डर जोड़व"
 
-#: akonadicollectionview.cpp:520
+#: akonadicollectionview.cpp:883
 #, fuzzy, kde-format
 #| msgid "<qt>Do you really want to remove the resource <b>%1</b>?</qt>"
 msgid "Do you really want to delete calendar %1?"
 msgstr "<qt>का आप मन सचमुच संसाधन <b>%1</b> ल मिटाना चाहथो?</qt>"
 
-#: akonadicollectionview.cpp:521
+#: akonadicollectionview.cpp:884
 #, fuzzy
 #| msgid "Default Calendar"
 msgid "Delete Calendar"
 msgstr "डिफाल्ट कलेन्डर"
 
-#: calendarview.cpp:275
+#: calendarview.cpp:277
 msgid ""
 "<p><em>No Item Selected</em></p><p>Select an event, to-do or journal entry "
 "to view its details here.</p>"
 msgstr ""
 
-#: calendarview.cpp:281
+#: calendarview.cpp:283
 msgid ""
 "View the details of events, journal entries or to-dos selected in "
 "KOrganizer's main view here."
 msgstr ""
 
-#: calendarview.cpp:602
+#: calendarview.cpp:604
 msgid ""
 "The time zone setting was changed. Do you want to keep the absolute time of "
 "the items in your calendar, which will show them to be at a different time "
 "than before, or move them to be at the old time also in the new time zone?"
 msgstr ""
 
-#: calendarview.cpp:609
+#: calendarview.cpp:611
 msgid "Keep Absolute Times?"
 msgstr "निरपेक्छ (एब्सल्यूट) समय रखे रहें?"
 
-#: calendarview.cpp:610
+#: calendarview.cpp:612
 msgid "Keep Times"
 msgstr "समय रखव"
 
-#: calendarview.cpp:611
+#: calendarview.cpp:613
 msgid "Move Times"
 msgstr "समय खिसकाव"
 
-#: calendarview.cpp:682
+#: calendarview.cpp:684
 #, kde-format
 msgid "Todo completed: %1 (%2)"
 msgstr "कामसूची पूरा: %1 (%2)"
 
-#: calendarview.cpp:692
+#: calendarview.cpp:694
 #, kde-format
 msgid "Journal of %1"
 msgstr "%1 के दैनिकी"
 
-#: calendarview.cpp:742
+#: calendarview.cpp:744
 #, kde-format
 msgid ""
 "The item \"%1\" is filtered by your current filter rules, so it will be "
 "hidden and not appear in the view."
 msgstr ""
 
-#: calendarview.cpp:817
+#: calendarview.cpp:819
 #, fuzzy, kde-format
 #| msgid "<qt>Do you really want to remove the resource <b>%1</b>?</qt>"
 msgctxt "@info"
 msgid "Do you really want to permanently remove the item \"%1\"?"
 msgstr "<qt>का आप मन सचमुच संसाधन <b>%1</b> ल मिटाना चाहथो?</qt>"
 
-#: calendarview.cpp:819
+#: calendarview.cpp:821
 #, fuzzy
 #| msgid "Delete Old Items"
 msgctxt "@title:window"
 msgid "Delete Item?"
 msgstr "जुन्ना चीज मेटाव"
 
-#: calendarview.cpp:895
+#: calendarview.cpp:897
 #, fuzzy
 #| msgid "Please specify a valid start date."
 msgid "Paste failed: unable to determine a valid target date."
 msgstr "किरपा करके, एक वैध चालू तारीक निरधारित करव."
 
-#: calendarview.cpp:1339
+#: calendarview.cpp:1341
 msgid "Make sub-to-dos independent"
 msgstr "उप-काम-सूची ल स्वतंत्र बनाव"
 
-#: calendarview.cpp:1397
+#: calendarview.cpp:1399
 #, fuzzy
 #| msgid "&Toggle Reminder"
 msgid "Toggle Reminder"
 msgstr "सुरता टागल करव (&T)"
 
-#: calendarview.cpp:1426
+#: calendarview.cpp:1428
 #, fuzzy
 msgid "Toggle To-do Completed"
 msgstr " निकालना पूरा (&g)"
 
-#: calendarview.cpp:1480
+#: calendarview.cpp:1482
 #, kde-format
 msgctxt "@info"
 msgid "\"%1\" was successfully copied to %2."
 msgstr ""
 
-#: calendarview.cpp:1483
+#: calendarview.cpp:1485
 #, fuzzy
 #| msgid "Copying Failed"
 msgctxt "@title:window"
 msgid "Copying Succeeded"
 msgstr "नकल करना फेल"
 
-#: calendarview.cpp:1489
+#: calendarview.cpp:1491
 #, fuzzy, kde-format
 #| msgid "Unable to copy the item to %1."
 msgctxt "@info"
 msgid "Unable to copy the item \"%1\" to %2."
 msgstr "चीज ल %1 मं नकल करे मं अक्छम."
 
-#: calendarview.cpp:1492
+#: calendarview.cpp:1494
 #, fuzzy
 #| msgid "Copying Failed"
 msgctxt "@title:window"
 msgid "Copying Failed"
 msgstr "नकल करना फेल"
 
-#: calendarview.cpp:1552
+#: calendarview.cpp:1554
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -975,142 +999,142 @@ msgid ""
 "been put into %3."
 msgstr ""
 
-#: calendarview.cpp:1557 calendarview.cpp:1578
+#: calendarview.cpp:1559 calendarview.cpp:1580
 #, fuzzy
 #| msgid "Moving Failed"
 msgctxt "@title:window"
 msgid "Moving Failed"
 msgstr "खिसकाना फेल"
 
-#: calendarview.cpp:1563
+#: calendarview.cpp:1565
 #, kde-format
 msgctxt "@info"
 msgid "\"%1\" was successfully moved from %2 to %3."
 msgstr ""
 
-#: calendarview.cpp:1567
+#: calendarview.cpp:1569
 #, fuzzy
 #| msgid "Moving Failed"
 msgctxt "@title:window"
 msgid "Moving Succeeded"
 msgstr "खिसकाना फेल"
 
-#: calendarview.cpp:1574
+#: calendarview.cpp:1576
 #, kde-format
 msgctxt "@info"
 msgid "Unable to add the item \"%1\" into %2. This item has not been moved."
 msgstr ""
 
-#: calendarview.cpp:1606
+#: calendarview.cpp:1608
 #, fuzzy, kde-format
 msgid "Do you want to dissociate the occurrence on %1 from the recurrence?"
 msgstr "पुनरावृत्ति से घटना ल अलग करव"
 
-#: calendarview.cpp:1610 calendarview.cpp:1623 calendarview.cpp:2363
-#: calendarview.cpp:2435 calendarview.cpp:2468
+#: calendarview.cpp:1612 calendarview.cpp:1625 calendarview.cpp:2365
+#: calendarview.cpp:2437 calendarview.cpp:2470
 msgid "KOrganizer Confirmation"
 msgstr "के-आर्गेनाइजर पुस्टिकरन"
 
-#: calendarview.cpp:1611
+#: calendarview.cpp:1613
 #, fuzzy
 msgid "&Dissociate"
 msgstr "सम्बद्ध समय (&i)"
 
-#: calendarview.cpp:1618
+#: calendarview.cpp:1620
 #, fuzzy, kde-format
 msgid ""
 "Do you want to dissociate the occurrence on %1 from the recurrence or also "
 "dissociate future ones?"
 msgstr "पुनरावृत्ति से घटना ल अलग करव"
 
-#: calendarview.cpp:1624
+#: calendarview.cpp:1626
 #, fuzzy
 msgid "&Only Dissociate This One"
 msgstr "ये घटना से असम्बद्ध करव (&D)"
 
-#: calendarview.cpp:1625
+#: calendarview.cpp:1627
 #, fuzzy
 msgid "&Also Dissociate Future Ones"
 msgstr "भविस्य के पुनरावृत्ति असम्बद्ध करव (&F)"
 
-#: calendarview.cpp:1642
+#: calendarview.cpp:1644
 msgid "Dissociate future occurrences"
 msgstr "भविस्य के पुनरावृत्ति असम्बद्ध करव"
 
-#: calendarview.cpp:1644
+#: calendarview.cpp:1646
 msgid "Dissociate occurrence"
 msgstr "पुनरावृत्ति असंबद्ध करव"
 
-#: calendarview.cpp:1657
+#: calendarview.cpp:1659
 msgid "Dissociating the future occurrences failed."
 msgstr "भविस्य के पुनरावृत्ति असम्बद्ध करना फेल."
 
-#: calendarview.cpp:1658 calendarview.cpp:1663
+#: calendarview.cpp:1660 calendarview.cpp:1665
 msgid "Dissociating Failed"
 msgstr "असम्बद्ध करना फेल"
 
-#: calendarview.cpp:1662
+#: calendarview.cpp:1664
 msgid "Dissociating the occurrence failed."
 msgstr "पुनरावृत्ति असम्बद्ध करे मं फेल."
 
-#: calendarview.cpp:1836
+#: calendarview.cpp:1838
 #, fuzzy
 msgid "*.ics|iCalendars"
 msgstr "*.ics|कलेन्डर"
 
-#: calendarview.cpp:1846 calendarview.cpp:1894
+#: calendarview.cpp:1848 calendarview.cpp:1896
 #, kde-format
 msgid "Do you want to overwrite %1?"
 msgstr ""
 
-#: calendarview.cpp:1858 calendarview.cpp:1906
+#: calendarview.cpp:1860 calendarview.cpp:1908
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr ""
 
-#: calendarview.cpp:1863
+#: calendarview.cpp:1865
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Cannot write iCalendar file %1. %2"
 msgstr "अभिलेख फाइल %1 लिख नइ सकिस. %2"
 
-#: calendarview.cpp:1874
+#: calendarview.cpp:1876
 #, fuzzy
 #| msgid "The journal entries can not be exported to a vCalendar file."
 msgid "The journal entries cannot be exported to a vCalendar file."
 msgstr "दैनिकी प्रविस्टि मन ल वी-कलेन्डर फाइल मं निर्यात नइ कर सकिस."
 
-#: calendarview.cpp:1875
+#: calendarview.cpp:1877
 msgid "Data Loss Warning"
 msgstr "डाटा नुकसान चेतावनी"
 
-#: calendarview.cpp:1885
+#: calendarview.cpp:1887
 msgid "*.vcs|vCalendars"
 msgstr "*.vcs|वीकलेन्डर्स"
 
-#: calendarview.cpp:1911
+#: calendarview.cpp:1913
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Cannot write vCalendar file %1. %2"
 msgstr "अभिलेख फाइल %1 लिख नइ सकिस. %2"
 
-#: calendarview.cpp:1929
+#: calendarview.cpp:1931
 msgid "&Previous Day"
 msgstr "पिछला दिन (&P)"
 
-#: calendarview.cpp:1932
+#: calendarview.cpp:1934
 msgid "&Previous Week"
 msgstr "पिछला हफ्ता (&P)"
 
-#: calendarview.cpp:1933
+#: calendarview.cpp:1935
 msgid "&Next Week"
 msgstr "अगला हफ्ता (&N)"
 
-#: calendarview.cpp:2023 calendarview.cpp:2062
+#: calendarview.cpp:2025 calendarview.cpp:2064
 msgid "No filter"
 msgstr "कोई छनइया नइ"
 
-#: calendarview.cpp:2358
+#: calendarview.cpp:2360
 #, kde-format
 msgid ""
 "The item \"%1\" has sub-to-dos. Do you want to delete just this item and "
@@ -1118,128 +1142,128 @@ msgid ""
 "dos?"
 msgstr ""
 
-#: calendarview.cpp:2364
+#: calendarview.cpp:2366
 msgid "Delete Only This"
 msgstr "सिरिफ एला ही मेटाव"
 
-#: calendarview.cpp:2365 calendarview.cpp:2436
+#: calendarview.cpp:2367 calendarview.cpp:2438
 msgid "Delete All"
 msgstr "सब्बो मेटाव"
 
-#: calendarview.cpp:2369
+#: calendarview.cpp:2371
 #, fuzzy
 #| msgid "Delete To-do"
 msgid "Delete parent to-do"
 msgstr "कामसूची मेटाव"
 
-#: calendarview.cpp:2375
+#: calendarview.cpp:2377
 #, fuzzy
 #| msgid "Deleting sub-to-dos"
 msgid "Delete parent to-do and sub-to-dos"
 msgstr "उप-काम-सूची मिटात हे"
 
-#: calendarview.cpp:2406
+#: calendarview.cpp:2408
 #, kde-format
 msgid ""
 "The item \"%1\" is marked read-only and cannot be deleted; it probably "
 "belongs to a read-only calendar."
 msgstr ""
 
-#: calendarview.cpp:2410
+#: calendarview.cpp:2412
 msgid "Removing not possible"
 msgstr "मिटाना संभव नइ"
 
-#: calendarview.cpp:2432
+#: calendarview.cpp:2434
 #, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates; are you sure you want "
 "to delete it and all its recurrences?"
 msgstr ""
 
-#: calendarview.cpp:2443
+#: calendarview.cpp:2445
 #, fuzzy
 msgid "Also Delete &Future"
 msgstr "भविस्य मेटाव (&F)"
 
-#: calendarview.cpp:2448
+#: calendarview.cpp:2450
 #, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
 "only the current one on %2, also future occurrences, or all its occurrences?"
 msgstr ""
 
-#: calendarview.cpp:2456
+#: calendarview.cpp:2458
 #, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
 "only the current one on %2 or all its occurrences?"
 msgstr ""
 
-#: calendarview.cpp:2469
+#: calendarview.cpp:2471
 msgid "Delete C&urrent"
 msgstr "अभी हाल के मेटाव (&u)"
 
-#: calendarview.cpp:2471
+#: calendarview.cpp:2473
 msgid "Delete &All"
 msgstr "सब्बो मेटाव (&A)"
 
-#: calendarview.cpp:2526
+#: calendarview.cpp:2528
 msgid ""
 "All calendars are unchecked in the Calendar Manager. No to-do was purged."
 msgstr ""
 
-#: calendarview.cpp:2531 calendarview.cpp:2816
+#: calendarview.cpp:2533 calendarview.cpp:2818
 #, fuzzy
 #| msgid "Strike &out completed to-do summaries"
 msgid "There are no completed to-dos to purge."
 msgstr "पूरा करे कामसूची सारांसों ल काट देव (&o)"
 
-#: calendarview.cpp:2537
+#: calendarview.cpp:2539
 #, fuzzy
 #| msgid "Delete all completed to-dos?"
 msgid "Delete all completed to-dos from checked calendars?"
 msgstr "सब्बो काम-सूची मेटाव?"
 
-#: calendarview.cpp:2538
+#: calendarview.cpp:2540
 msgid "Purge To-dos"
 msgstr "काम-सूची अलग करव"
 
-#: calendarview.cpp:2539
+#: calendarview.cpp:2541
 msgid "Purge"
 msgstr "मेटाव"
 
-#: calendarview.cpp:2553
+#: calendarview.cpp:2555
 #, fuzzy, kde-format
 #| msgid "Unable to modify this to-do, because it cannot be locked."
 msgctxt "@info"
 msgid "Unable to edit \"%1\" because it is locked by another process."
 msgstr "ये काम सूची ल सुधार नइ कर सकिस काबर कि एला तालाबंद नइ कर सकिस."
 
-#: calendarview.cpp:2568
+#: calendarview.cpp:2570
 #, kde-format
 msgid "Unable to copy the item to %1."
 msgstr "चीज ल %1 मं नकल करे मं अक्छम."
 
-#: calendarview.cpp:2569
+#: calendarview.cpp:2571
 msgid "Copying Failed"
 msgstr "नकल करना फेल"
 
-#: calendarview.cpp:2608
+#: calendarview.cpp:2610
 #, kde-format
 msgid "Unable to move the item to  %1."
 msgstr "चीज ल %1 मं खिसकाय मं अक्छम."
 
-#: calendarview.cpp:2609
+#: calendarview.cpp:2611
 msgid "Moving Failed"
 msgstr "खिसकाना फेल"
 
-#: calendarview.cpp:2810
+#: calendarview.cpp:2812
 #, fuzzy
 #| msgid "Hide co&mpleted to-dos"
 msgid "0 completed to-dos were purged."
 msgstr "पूरा काम सूची ल लुकाव (&m)"
 
-#: calendarview.cpp:2811 calendarview.cpp:2820
+#: calendarview.cpp:2813 calendarview.cpp:2822
 #, kde-format
 msgid "%1 to-do was ignored because it has uncompleted or read-only children."
 msgid_plural ""
@@ -1247,7 +1271,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: calendarview.cpp:2814 calendarview.cpp:2819
+#: calendarview.cpp:2816 calendarview.cpp:2821
 #, fuzzy, kde-format
 #| msgid "Hide co&mpleted to-dos"
 msgid "%1 completed to-do was purged."
@@ -1255,19 +1279,19 @@ msgid_plural "%1 completed to-dos were purged."
 msgstr[0] "पूरा काम सूची ल लुकाव (&m)"
 msgstr[1] "पूरा काम सूची ल लुकाव (&m)"
 
-#: calendarview.cpp:2824
+#: calendarview.cpp:2826
 #, fuzzy, kde-format
 #| msgid "Purging completed to-dos"
 msgid "An error occurred while purging completed to-dos: %1"
 msgstr "काम-सूची अलग करना पूरा"
 
-#: calendarview.cpp:2876
+#: calendarview.cpp:2878
 msgid ""
 "You created an incidence in a calendar that is currently filtered out.\n"
 "On the left sidebar, enable it in the calendar manager to see the incidence."
 msgstr ""
 
-#: calendarview.cpp:2879
+#: calendarview.cpp:2881
 msgid ""
 "You created an incidence in a calendar that is currently filtered out.\n"
 "You can enable it through the calendar manager (Settings->Sidebar->Show "
@@ -1908,49 +1932,67 @@ msgstr "जोड़व (&A)"
 msgid "&Cancel"
 msgstr "खारिज करव (&C)"
 
-#: koeventpopupmenu.cpp:54
+#: koeventpopupmenu.cpp:64
 msgid "&Print..."
 msgstr "छापव...(&P)"
 
-#: koeventpopupmenu.cpp:58
+#: koeventpopupmenu.cpp:68
 #, fuzzy
 msgid "Print Previe&w..."
 msgstr "छापव...(&P)"
 
-#: koeventpopupmenu.cpp:65
+#: koeventpopupmenu.cpp:75
 msgctxt "cut this event"
 msgid "C&ut"
 msgstr "काटव (&C)"
 
-#: koeventpopupmenu.cpp:68
+#: koeventpopupmenu.cpp:78
 msgctxt "copy this event"
 msgid "&Copy"
 msgstr "नकल (&C)"
 
-#: koeventpopupmenu.cpp:72
+#: koeventpopupmenu.cpp:82
 msgid "&Paste"
 msgstr "चिपकाव (&P)"
 
-#: koeventpopupmenu.cpp:75
+#: koeventpopupmenu.cpp:85
 msgctxt "delete this incidence"
 msgid "&Delete"
 msgstr "मेटाव (&D)"
 
-#: koeventpopupmenu.cpp:80
+#: koeventpopupmenu.cpp:91
+#, fuzzy
+#| msgid "Create a new To-do"
+msgid "Create To-do"
+msgstr "नवा कामसूची बनाव"
+
+#: koeventpopupmenu.cpp:97
+#, fuzzy
+#| msgid "Create a new To-do"
+msgid "Create Event"
+msgstr "नवा कामसूची बनाव"
+
+#: koeventpopupmenu.cpp:103
+#, fuzzy
+#| msgid "Create a new To-do"
+msgid "Create Note"
+msgstr "नवा कामसूची बनाव"
+
+#: koeventpopupmenu.cpp:109
 #, fuzzy
 msgid "Togg&le To-do Completed"
 msgstr " निकालना पूरा (&g)"
 
-#: koeventpopupmenu.cpp:83
+#: koeventpopupmenu.cpp:112
 msgid "&Toggle Reminder"
 msgstr "सुरता टागल करव (&T)"
 
-#: koeventpopupmenu.cpp:87
+#: koeventpopupmenu.cpp:116
 #, fuzzy
 msgid "&Dissociate From Recurrence..."
 msgstr "पुनरावृत्ति असंबद्ध करव"
 
-#: koeventpopupmenu.cpp:93
+#: koeventpopupmenu.cpp:122
 msgid "Send as iCalendar..."
 msgstr "जैसा हे वइसनेच भेजव (&S)"
 
@@ -3051,6 +3093,44 @@ msgid ""
 "preferences."
 msgstr ""
 
+#: noteeditdialog.cpp:48
+#, fuzzy
+#| msgid "Create a new To-do"
+msgctxt "@title:window"
+msgid "Create Note"
+msgstr "नवा कामसूची बनाव"
+
+#: noteeditdialog.cpp:58
+#, fuzzy
+#| msgid "&Cancel"
+msgctxt "@action:discard creating note"
+msgid "Cancel"
+msgstr "खारिज करव (&C)"
+
+#: noteeditdialog.cpp:64
+#, fuzzy
+#| msgctxt "@title:tab"
+#| msgid "Save"
+msgctxt "@action:save note"
+msgid "Save"
+msgstr "सहेजव"
+
+#: noteeditdialog.cpp:85 noteeditdialog.cpp:87
+msgid "Calendar where the new note will be stored."
+msgstr ""
+
+#: noteeditdialog.cpp:101
+#, fuzzy
+#| msgid "&Title:"
+msgid "Title:"
+msgstr "सीर्सकः (&T)"
+
+#: noteeditdialog.cpp:106
+#, fuzzy
+#| msgid "Text"
+msgid "Text:"
+msgstr "पाठ"
+
 #: plugins/datenums/configdialog.cpp:39
 msgid "Configure Day Numbers"
 msgstr "दिन संख्या मन ल कान्फिगर करव"
@@ -3996,6 +4076,18 @@ msgstr "अऊ दूसर प्लगइन्स"
 msgctxt "@info"
 msgid "Unable to configure this plugin"
 msgstr "ये प्लगइन ल कान्फिगर करे मं अक्छम"
+
+#: searchcollectionhelper.cpp:116
+#, fuzzy
+msgctxt "A collection of all declined invidations."
+msgid "Declined Invitations"
+msgstr "मिटाना पुस्टिकरन"
+
+#: searchcollectionhelper.cpp:123
+#, fuzzy
+msgctxt "A collection of all open invidations."
+msgid "Open Invitations"
+msgstr "मिटाना पुस्टिकरन"
 
 #. i18n: ectx: label, entry, group ($(application)-General)
 #: settings/htmlexportsettings.kcfg:13
@@ -6229,6 +6321,83 @@ msgstr "जब चीज मन ल मेटाय जाय तहां प�
 msgid "Include To-dos &without a due date"
 msgstr "नियत तारीक के बिना कामसूची सामिल करव (&w)"
 
+#: views/collectionview/controller.cpp:91
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "Location: %1"
+msgctxt "Collection: name collectionId"
+msgid "Collection: %1(%2)"
+msgstr "जगहः %1"
+
+#: views/collectionview/controller.cpp:170
+#, kde-format
+msgid "Person: %1"
+msgstr "मनखे: %1"
+
+#: views/collectionview/controller.cpp:172
+#, fuzzy, kde-format
+#| msgid "KMail"
+msgid "Mail: %1"
+msgstr "के-मेल"
+
+#: views/collectionview/controller.cpp:175
+#, fuzzy, kde-format
+#| msgid "Organizer: %1"
+msgid "Organization Unit: %1"
+msgstr "आर्गेनाइजर: %1"
+
+#: views/collectionview/quickview.cpp:62
+#, fuzzy, kde-format
+#| msgid "Delegated from %1"
+msgid "Freebusycalendar from %1"
+msgstr "%1 से प्रतिनिधित्व"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, quickview)
+#: views/collectionview/quickview.ui:14
+msgid "Form"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, mDayBtn)
+#: views/collectionview/quickview.ui:25
+#, fuzzy
+#| msgctxt "@item:inlistbox range in days"
+#| msgid "Day"
+msgid "Day"
+msgstr "दिन"
+
+#. i18n: ectx: property (text), widget (QPushButton, mWeekBtn)
+#: views/collectionview/quickview.ui:32
+#, fuzzy
+#| msgctxt "@item:inlistbox range in weeks"
+#| msgid "Week"
+msgid "Week"
+msgstr "हफ्ता"
+
+#. i18n: ectx: property (text), widget (QPushButton, mMothBtn)
+#: views/collectionview/quickview.ui:42
+#, fuzzy
+#| msgctxt "@item:inlistbox range in months"
+#| msgid "Month"
+msgid "Month"
+msgstr "महिना"
+
+#. i18n: ectx: property (text), widget (QPushButton, mAgendaBtn)
+#: views/collectionview/quickview.ui:52
+#, fuzzy
+#| msgid "Agenda view"
+msgid "Agenda"
+msgstr "एजेंडा दृस्य"
+
+#. i18n: ectx: property (text), widget (QPushButton, mPreviousBtn)
+#: views/collectionview/quickview.ui:75
+msgid "<"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, mNextBtn)
+#: views/collectionview/quickview.ui:95
+msgid ">"
+msgstr ""
+
 #: views/multiagendaview/multiagendaview.cpp:50
 #, fuzzy, kde-format
 #| msgid "Agenda view"
@@ -7199,9 +7368,6 @@ msgstr "%1"
 #~ msgid "%1 - %2"
 #~ msgstr "%1 - %2"
 
-#~ msgid "Person: %1"
-#~ msgstr "मनखे: %1"
-
 #~ msgctxt "Date range: Month dayStart - dayEnd"
 #~ msgid "%1 %2 - %3"
 #~ msgstr "%1 %2 - %3"
@@ -7209,9 +7375,6 @@ msgstr "%1"
 #~ msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 #~ msgid "%1 %2 - %3 %4"
 #~ msgstr "%1 %2 - %3 %4"
-
-#~ msgid "&Title:"
-#~ msgstr "सीर्सकः (&T)"
 
 #, fuzzy
 #~| msgctxt "@item@intable N days/hours/minutes before/after the start/end"
@@ -7907,14 +8070,6 @@ msgstr "%1"
 #~ msgstr "महिना दृस्य"
 
 #, fuzzy
-#~| msgctxt "@label in QuickSearchLine"
-#~| msgid "Search"
-#~ msgctxt ""
-#~ "@info/plain Displayed grayed-out inside the textbox, verb to search"
-#~ msgid "Search"
-#~ msgstr "खोजव"
-
-#, fuzzy
 #~| msgid "Categories"
 #~ msgid "Edit Categories"
 #~ msgstr "स्रेनी"
@@ -8481,12 +8636,6 @@ msgstr "%1"
 
 #, fuzzy
 #~| msgid "Create a new To-do"
-#~ msgctxt "@title:window"
-#~ msgid "Create to-do"
-#~ msgstr "नवा कामसूची बनाव"
-
-#, fuzzy
-#~| msgid "Create a new To-do"
 #~ msgctxt "@action:button"
 #~ msgid "Create to-do"
 #~ msgstr "नवा कामसूची बनाव"
@@ -8550,10 +8699,6 @@ msgstr "%1"
 #, fuzzy
 #~ msgid "Are you sure that you want to remove the template <b>%1</b>?"
 #~ msgstr "<qt>का आप मन सचमुच संसाधन <b>%1</b> ल मिटाना चाहथो?</qt>"
-
-#, fuzzy
-#~ msgid "Remove Template"
-#~ msgstr "नवा टैम्प्लेट"
 
 #, fuzzy
 #~ msgid "Remove"
@@ -8678,22 +8823,10 @@ msgstr "%1"
 #~ msgstr "ये काम बर सेट तारीक सेट करथे."
 
 #, fuzzy
-#~| msgid "Organizer: %1"
-#~ msgctxt "@label"
-#~ msgid "Organizer: %1"
-#~ msgstr "आर्गेनाइजर: %1"
-
-#, fuzzy
 #~| msgid "Delegated to %1"
 #~ msgctxt "@label"
 #~ msgid "Delegated to %1"
 #~ msgstr "%1 मं प्रतिनिधित्व"
-
-#, fuzzy
-#~| msgid "Delegated from %1"
-#~ msgctxt "@label"
-#~ msgid "Delegated from %1"
-#~ msgstr "%1 से प्रतिनिधित्व"
 
 #, fuzzy
 #~| msgid "No item selected."
@@ -9435,11 +9568,6 @@ msgstr "%1"
 #~ msgstr "अस्वीकार"
 
 #, fuzzy
-#~ msgctxt "@info:tooltip"
-#~ msgid "Decline the invitation"
-#~ msgstr "मिटाना पुस्टिकरन"
-
-#, fuzzy
 #~ msgctxt "@info:whatsthis"
 #~ msgid "Click this button to decline the invitation."
 #~ msgstr "एक नवा छनइया परिभासित करे बर ए बटन ल दबाव."
@@ -9618,10 +9746,6 @@ msgstr "%1"
 #~ msgid "No Changes"
 #~ msgstr "कोई बदलाव नइ"
 
-#~ msgctxt "@info:tooltip"
-#~ msgid "Location: %1"
-#~ msgstr "जगहः %1"
-
 #~ msgctxt "@label"
 #~ msgid "Scale: "
 #~ msgstr "स्केलः"
@@ -9629,18 +9753,6 @@ msgstr "%1"
 #~ msgctxt "@item:inlistbox range in hours"
 #~ msgid "Hour"
 #~ msgstr "घंटा"
-
-#~ msgctxt "@item:inlistbox range in days"
-#~ msgid "Day"
-#~ msgstr "दिन"
-
-#~ msgctxt "@item:inlistbox range in weeks"
-#~ msgid "Week"
-#~ msgstr "हफ्ता"
-
-#~ msgctxt "@item:inlistbox range in months"
-#~ msgid "Month"
-#~ msgstr "महिना"
 
 #~ msgctxt "@action:button"
 #~ msgid "Center on Start"
