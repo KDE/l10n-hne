@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kile\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-05-11 09:03+0000\n"
+"POT-Creation-Date: 2015-06-05 08:41+0000\n"
 "PO-Revision-Date: 2009-02-21 10:38+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -300,8 +300,8 @@ msgstr "काइल"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetLatexConfig)
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetEnvironmentConfig)
-#: dialogs/configurationdialog.cpp:87 kile.cpp:624 kile.cpp:944
-#: kileinfo.cpp:327 widgets/environmentconfigwidget.ui:19
+#: dialogs/configurationdialog.cpp:87 kile.cpp:632 kile.cpp:952
+#: kileinfo.cpp:328 widgets/environmentconfigwidget.ui:19
 #: widgets/latexconfigwidget.ui:14
 msgid "LaTeX"
 msgstr "लेटेक्स"
@@ -318,7 +318,7 @@ msgstr "संपादक"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetGeneralConfig)
-#: dialogs/configurationdialog.cpp:176 dialogs/configurationdialog.cpp:265
+#: dialogs/configurationdialog.cpp:176 dialogs/configurationdialog.cpp:262
 #: widgets/appearanceconfigwidget.ui:20 widgets/generalconfigwidget.ui:26
 #: widgets/maintoolconfigwidget.ui:265
 msgid "General"
@@ -341,65 +341,71 @@ msgstr "स्क्रिप्टिंग"
 msgid "Scripting Support"
 msgstr ""
 
-#: dialogs/configurationdialog.cpp:219
+#. i18n: ectx: Menu (menu_usermenu)
+#: dialogs/configurationdialog.cpp:204 kileui.rc:475 usermenu/usermenu.cpp:71
+#, fuzzy
+msgid "User Menu"
+msgstr "मीडियम"
+
+#: dialogs/configurationdialog.cpp:216
 msgid "Complete"
 msgstr "पूरा"
 
-#: dialogs/configurationdialog.cpp:219
+#: dialogs/configurationdialog.cpp:216
 msgid "Code Completion"
 msgstr "कोड पूरा करना"
 
-#: dialogs/configurationdialog.cpp:229 kile.cpp:670
+#: dialogs/configurationdialog.cpp:226 kile.cpp:678
 msgid "Preview"
 msgstr ""
 
 #. i18n: ectx: Menu (quickpreview)
-#: dialogs/configurationdialog.cpp:229 kileui.rc:139
+#: dialogs/configurationdialog.cpp:226 kileui.rc:139
 msgid "Quick Preview"
 msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetHelpConfig)
-#: dialogs/configurationdialog.cpp:237 kilehelp.cpp:323
+#: dialogs/configurationdialog.cpp:234 kilehelp.cpp:323
 #: widgets/helpconfigwidget.ui:20
 msgid "Help"
 msgstr ""
 
 #. i18n: ectx: Menu (menu_livepreview)
-#: dialogs/configurationdialog.cpp:245 kileui.rc:136
+#: dialogs/configurationdialog.cpp:242 kileui.rc:136
 msgid "Live Preview"
 msgstr ""
 
-#: dialogs/configurationdialog.cpp:253
+#: dialogs/configurationdialog.cpp:250
 msgid "Appearance"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, pageEnvironments)
-#: dialogs/configurationdialog.cpp:272 dialogs/latexcommanddialog_base.ui:41
+#: dialogs/configurationdialog.cpp:269 dialogs/latexcommanddialog_base.ui:41
 msgid "Environments"
 msgstr "एनवायरनमेंट्स"
 
-#: dialogs/configurationdialog.cpp:279 widgets/previewconfigwidget.cpp:246
+#: dialogs/configurationdialog.cpp:276 widgets/previewconfigwidget.cpp:246
 #: widgets/previewconfigwidget.cpp:247
 msgid "installed"
 msgstr ""
 
-#: dialogs/configurationdialog.cpp:279 widgets/previewconfigwidget.cpp:246
+#: dialogs/configurationdialog.cpp:276 widgets/previewconfigwidget.cpp:246
 #: widgets/previewconfigwidget.cpp:247
 msgid "not installed"
 msgstr "इनस्टाल नइ"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetGraphicsConfig)
-#: dialogs/configurationdialog.cpp:280 widgets/graphicsconfigwidget.ui:13
+#: dialogs/configurationdialog.cpp:277 widgets/graphicsconfigwidget.ui:13
 msgid "Graphics"
 msgstr "ग्राफिक्स"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetStructureViewConfig)
-#: dialogs/configurationdialog.cpp:287 widgets/structureviewconfigwidget.ui:25
+#: dialogs/configurationdialog.cpp:284 widgets/structureviewconfigwidget.ui:25
 msgid "Structure View"
 msgstr "स्ट्रक्चर दृस्य"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, KileWidgetSymbolViewConfig)
-#: dialogs/configurationdialog.cpp:294 widgets/symbolviewconfigwidget.ui:14
+#: dialogs/configurationdialog.cpp:291 widgets/symbolviewconfigwidget.ui:14
 msgid "Symbol View"
 msgstr ""
 
@@ -446,7 +452,7 @@ msgstr "कमांड []"
 #. i18n: ectx: property (text), widget (QTreeWidget, environments)
 #: dialogs/findfilesdialog.cpp:146 dialogs/floatdialog_base.ui:19
 #: dialogs/latexcommanddialog_base.ui:69 dialogs/mathenvironmentdialog.cpp:56
-#: dialogs/tabular/newtabulardialog.cpp:124 kile.cpp:857
+#: dialogs/tabular/newtabulardialog.cpp:124 kile.cpp:865
 msgid "Environment"
 msgstr "वातावरन"
 
@@ -1048,7 +1054,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QTreeWidget, environments)
 #. i18n: ectx: ToolBar (mathToolBar)
 #: dialogs/latexcommanddialog.cpp:399 dialogs/latexcommanddialog_base.ui:84
-#: kile.cpp:890 kileui.rc:562
+#: kile.cpp:898 kileui.rc:562
 msgid "Math"
 msgstr "गनित"
 
@@ -1056,7 +1062,7 @@ msgstr "गनित"
 msgid "Lists"
 msgstr "सूचियाँ"
 
-#: dialogs/latexcommanddialog.cpp:401 kile.cpp:886 kilestdactions.cpp:80
+#: dialogs/latexcommanddialog.cpp:401 kile.cpp:894 kilestdactions.cpp:80
 msgid "Tabular"
 msgstr "टेबुलर"
 
@@ -1859,7 +1865,7 @@ msgid ""
 msgstr ""
 
 #: dialogs/pdf-wizard/pdfdialog.cpp:905 dialogs/pdf-wizard/pdfdialog.cpp:1698
-#: dialogs/pdf-wizard/pdfdialog.cpp:1766 kile.cpp:892
+#: dialogs/pdf-wizard/pdfdialog.cpp:1766 kile.cpp:900
 #, fuzzy
 #| msgid "Tools"
 msgid "PDF Tools"
@@ -2383,7 +2389,7 @@ msgstr ""
 msgid "Copies:"
 msgstr "नकल:"
 
-#: dialogs/postscriptdialog.cpp:493 kile.cpp:891
+#: dialogs/postscriptdialog.cpp:493 kile.cpp:899
 msgid "Postscript Tools"
 msgstr ""
 
@@ -3488,7 +3494,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, m_rbShortcut)
 #: dialogs/scriptshortcutdialog_base.ui:106
-#: dialogs/usermenu/usermenudialog.cpp:51
+#: dialogs/usermenu/usermenudialog.cpp:53
 #, fuzzy
 #| msgid "Short"
 msgid "Shortcut"
@@ -3817,7 +3823,7 @@ msgstr ""
 msgid "Empty Clipboard"
 msgstr ""
 
-#: dialogs/texdocumentationdialog.cpp:58 kile.cpp:949
+#: dialogs/texdocumentationdialog.cpp:58 kile.cpp:957
 msgid "Documentation Browser"
 msgstr "कागद लिखइया ब्राउजर"
 
@@ -3905,7 +3911,7 @@ msgid "Configure User Help"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, m_gbUserHelp)
-#: dialogs/userhelpdialog.cpp:58 dialogs/userhelpdialog.cpp:379 kile.cpp:971
+#: dialogs/userhelpdialog.cpp:58 dialogs/userhelpdialog.cpp:379 kile.cpp:979
 #: widgets/helpconfigwidget.ui:168
 msgid "User Help"
 msgstr ""
@@ -3933,7 +3939,7 @@ msgstr "नीचे जाव (&D)"
 
 #. i18n: ectx: property (text), widget (QLabel, m_lbXmlFile)
 #. i18n: ectx: property (text), widget (QLabel, m_lbFile)
-#: dialogs/userhelpdialog.cpp:119 dialogs/usermenu/usermenudialog.cpp:175
+#: dialogs/userhelpdialog.cpp:119 dialogs/usermenu/usermenudialog.cpp:174
 #: dialogs/usermenu/usermenudialog_base.ui:336
 #: dialogs/usermenu/usermenudialog_base.ui:479
 msgid "File:"
@@ -3977,15 +3983,15 @@ msgstr ""
 msgid "Select File"
 msgstr "फाइल चुनव"
 
-#: dialogs/userhelpdialog.cpp:442 dialogs/usermenu/usermenudialog.cpp:326
+#: dialogs/userhelpdialog.cpp:442 dialogs/usermenu/usermenudialog.cpp:287
 #: dialogs/usermenu/usermenutree.cpp:290 usermenu/usermenu.cpp:334
-#: widgets/usermenuconfigwidget.cpp:72
+#: widgets/usermenuconfigwidget.cpp:74
 #, kde-format
 msgid "File '%1' does not exist."
 msgstr "फाइल '%1' मौजूद नइ हे."
 
 #. i18n: ectx: property (title), widget (QGroupBox, m_gbMenuEntry)
-#: dialogs/usermenu/usermenudialog.cpp:51
+#: dialogs/usermenu/usermenudialog.cpp:53
 #: dialogs/usermenu/usermenudialog_base.ui:435
 #, fuzzy
 #| msgid "&Menu entry:"
@@ -3993,23 +3999,23 @@ msgid "Menu Entry"
 msgstr "मेन्यू-एंट्री: (&M)"
 
 #. i18n: ectx: property (text), widget (QLabel, m_lbMenuentryType)
-#: dialogs/usermenu/usermenudialog.cpp:54
-#: dialogs/usermenu/usermenudialog_base.ui:559 kileinfo.cpp:325
+#: dialogs/usermenu/usermenudialog.cpp:56
+#: dialogs/usermenu/usermenudialog_base.ui:559 kileinfo.cpp:326
 msgid "Text"
 msgstr ""
 
-#: dialogs/usermenu/usermenudialog.cpp:54
+#: dialogs/usermenu/usermenudialog.cpp:56
 #, fuzzy
 #| msgid "Insert bullets"
 msgid "Insert file contents"
 msgstr "बुलेट भरव"
 
-#: dialogs/usermenu/usermenudialog.cpp:54
+#: dialogs/usermenu/usermenudialog.cpp:56
 msgid "Execute program"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, m_pbInsertSeparator)
-#: dialogs/usermenu/usermenudialog.cpp:54
+#: dialogs/usermenu/usermenudialog.cpp:56
 #: dialogs/usermenu/usermenudialog_base.ui:103
 #, fuzzy
 #| msgid "&Separator"
@@ -4017,12 +4023,12 @@ msgid "Separator"
 msgstr "अलगइया (&S)"
 
 #. i18n: ectx: property (text), widget (QPushButton, m_pbInsertSubmenu)
-#: dialogs/usermenu/usermenudialog.cpp:54
+#: dialogs/usermenu/usermenudialog.cpp:56
 #: dialogs/usermenu/usermenudialog_base.ui:143
 msgid "Submenu"
 msgstr ""
 
-#: dialogs/usermenu/usermenudialog.cpp:57
+#: dialogs/usermenu/usermenudialog.cpp:59
 msgid ""
 "Text, which will be inserted, if the action is executed. Some placeholders "
 "are available: <ul><li>%M - selected (marked) text</li><li>%C - cursor "
@@ -4031,7 +4037,7 @@ msgid ""
 "list</li></ul>"
 msgstr ""
 
-#: dialogs/usermenu/usermenudialog.cpp:58
+#: dialogs/usermenu/usermenudialog.cpp:60
 msgid ""
 "Available placeholders:\n"
 "%M: Selected (marked) text\n"
@@ -4043,7 +4049,7 @@ msgid ""
 "%S: Source file name without extension"
 msgstr ""
 
-#: dialogs/usermenu/usermenudialog.cpp:242
+#: dialogs/usermenu/usermenudialog.cpp:208
 msgid ""
 "<p>You can create, change and install a user-defined menu, which will appear "
 "as a part of Kile's menu. To create or change this menu, use the six buttons "
@@ -4068,37 +4074,37 @@ msgid ""
 "this</i> feature of most widgets.</p>"
 msgstr ""
 
-#: dialogs/usermenu/usermenudialog.cpp:264
+#: dialogs/usermenu/usermenudialog.cpp:230
 msgid "UserMenu Dialog"
 msgstr ""
 
-#: dialogs/usermenu/usermenudialog.cpp:291
-#: dialogs/usermenu/usermenudialog.cpp:309
+#: dialogs/usermenu/usermenudialog.cpp:252
+#: dialogs/usermenu/usermenudialog.cpp:270
 msgid ""
 "Current menu tree was modified, but not saved.\n"
 "Discard this tree?"
 msgstr ""
 
-#: dialogs/usermenu/usermenudialog.cpp:315
-#: dialogs/usermenu/usermenudialog.cpp:416 usermenu/usermenu.cpp:326
-#: widgets/usermenuconfigwidget.cpp:60
+#: dialogs/usermenu/usermenudialog.cpp:276
+#: dialogs/usermenu/usermenudialog.cpp:377 usermenu/usermenu.cpp:326
+#: widgets/usermenuconfigwidget.cpp:62
 msgid "*.xml|Latex Menu Files"
 msgstr ""
 
-#: dialogs/usermenu/usermenudialog.cpp:317 usermenu/usermenu.cpp:328
-#: widgets/usermenuconfigwidget.cpp:62
+#: dialogs/usermenu/usermenudialog.cpp:278 usermenu/usermenu.cpp:328
+#: widgets/usermenuconfigwidget.cpp:64
 #, fuzzy
 #| msgid "Select File"
 msgid "Select Menu File"
 msgstr "फाइल चुनव"
 
-#: dialogs/usermenu/usermenudialog.cpp:418
+#: dialogs/usermenu/usermenudialog.cpp:379
 #, fuzzy
 #| msgid "Save File"
 msgid "Save Menu File"
 msgstr "फाइल सहेजव"
 
-#: dialogs/usermenu/usermenudialog.cpp:424
+#: dialogs/usermenu/usermenudialog.cpp:385
 #, fuzzy, kde-format
 #| msgid "The file \"%1\" already exists, overwrite it?"
 msgid ""
@@ -4106,27 +4112,27 @@ msgid ""
 "Overwrite this file?"
 msgstr "फाइल \"%1\" से पहिली से ही मौजूद हे, एखर ऊपर ही लिखव?"
 
-#: dialogs/usermenu/usermenudialog.cpp:437
+#: dialogs/usermenu/usermenudialog.cpp:398
 msgid ""
 "The menu tree contains some errors and installing this file may lead to "
 "unpredictable results.\n"
 "Do you really want to save this file?"
 msgstr ""
 
-#: dialogs/usermenu/usermenudialog.cpp:595
+#: dialogs/usermenu/usermenudialog.cpp:552
 #, fuzzy
 #| msgid "Menu item:"
 msgid "Menutype"
 msgstr "मेन्यू आइटम:"
 
-#: dialogs/usermenu/usermenudialog.cpp:595
+#: dialogs/usermenu/usermenudialog.cpp:552
 #, fuzzy
 #| msgid "Please choose an icon first."
 msgid "Please choose a menutype"
 msgstr "किरपा करके पहिली एक चिनहा चुनव."
 
 #. i18n: ectx: property (text), widget (QPushButton, m_pbIcon)
-#: dialogs/usermenu/usermenudialog.cpp:1015
+#: dialogs/usermenu/usermenudialog.cpp:951
 #: dialogs/usermenu/usermenudialog_base.ui:505
 msgid "Choose"
 msgstr ""
@@ -4820,72 +4826,72 @@ msgstr ""
 msgid "Tools need to be updated"
 msgstr ""
 
-#: kile.cpp:469
+#: kile.cpp:467
 msgid "Open File"
 msgstr "फाइल खोलव"
 
-#: kile.cpp:488
+#: kile.cpp:486
 msgid "Files and Projects"
 msgstr "फाइल अउ परियोजना"
 
-#: kile.cpp:514 widgets/structurewidget.cpp:140
+#: kile.cpp:512 widgets/structurewidget.cpp:140
 msgid "Structure"
 msgstr "स्ट्रक्चर"
 
-#: kile.cpp:527
+#: kile.cpp:525
 msgid "Scripts"
 msgstr "स्क्रिप्ट्स"
 
-#: kile.cpp:556
+#: kile.cpp:564
 msgid "Symbols"
 msgstr "चिनहा"
 
-#: kile.cpp:559
+#: kile.cpp:567
 msgid "Most Frequently Used"
 msgstr ""
 
-#: kile.cpp:565
+#: kile.cpp:573
 msgid "Relation"
 msgstr "सम्बन्ध"
 
-#: kile.cpp:570
+#: kile.cpp:578
 msgid "Operators"
 msgstr ""
 
-#: kile.cpp:575
+#: kile.cpp:583
 msgid "Arrows"
 msgstr "तीर चिनहा"
 
-#: kile.cpp:580
+#: kile.cpp:588
 msgid "Miscellaneous Math"
 msgstr "विविध मैथ"
 
-#: kile.cpp:585
+#: kile.cpp:593
 msgid "Miscellaneous Text"
 msgstr "विविध पाठ"
 
-#: kile.cpp:590
+#: kile.cpp:598
 msgid "Delimiters"
 msgstr "डेलिमीटर्स"
 
-#: kile.cpp:595
+#: kile.cpp:603
 msgid "Greek"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: kile.cpp:600 widgets/latexconfigwidget.ui:133
+#: kile.cpp:608 widgets/latexconfigwidget.ui:133
 msgid "Special Characters"
 msgstr "विसिस्ट अक्छर"
 
-#: kile.cpp:605
+#: kile.cpp:613
 msgid "Cyrillic Characters"
 msgstr "साइरिलिक अक्छर"
 
-#: kile.cpp:610
+#: kile.cpp:618
 msgid "User Defined"
 msgstr ""
 
-#: kile.cpp:615
+#: kile.cpp:623
 msgid ""
 "<p>Move the mouse over the icons to see the corresponding LaTeX commands.<br/"
 ">Click on an image to insert the corresponding command, additionally "
@@ -4893,481 +4899,481 @@ msgid ""
 "brackets.</p>"
 msgstr ""
 
-#: kile.cpp:633 widgets/codecompletionconfigwidget.cpp:56
+#: kile.cpp:641 widgets/codecompletionconfigwidget.cpp:56
 msgid "Abbreviation"
 msgstr "संक्छिप्त"
 
-#: kile.cpp:657
+#: kile.cpp:665
 msgid "Log and Messages"
 msgstr "लाग अउ संदेस"
 
-#: kile.cpp:663
+#: kile.cpp:671
 msgid "Output"
 msgstr "आउटपुट"
 
-#: kile.cpp:666
+#: kile.cpp:674
 msgid "Konsole"
 msgstr "कंसोल"
 
-#: kile.cpp:747
+#: kile.cpp:755
 msgid "Save All"
 msgstr "सब्बो सहेजव"
 
-#: kile.cpp:748
+#: kile.cpp:756
 msgid "Save Copy As..."
 msgstr ""
 
-#: kile.cpp:749
+#: kile.cpp:757
 msgid "Create Template From Document..."
 msgstr "कागद से टैम्प्लेट तैयार करव..."
 
-#: kile.cpp:750
+#: kile.cpp:758
 msgid "&Remove Template..."
 msgstr "टैम्प्लेट मेटाव... (&R)"
 
-#: kile.cpp:752 kile.cpp:849
+#: kile.cpp:760 kile.cpp:857
 msgid "Close All"
 msgstr "सब्बो बंद करव"
 
-#: kile.cpp:753
+#: kile.cpp:761
 msgid "Close All Ot&hers"
 msgstr "अउ दूसर सब्बो ल बंद करव (&h)"
 
-#: kile.cpp:754
+#: kile.cpp:762
 msgid "S&tatistics"
 msgstr "सांख्यिकी (&t)"
 
-#: kile.cpp:755
+#: kile.cpp:763
 msgid "&ASCII"
 msgstr "ओस्की (&A)"
 
-#: kile.cpp:756
+#: kile.cpp:764
 msgid "Latin-&1 (iso 8859-1)"
 msgstr "लेटिन-&1 (आईएसओ 8859-1)"
 
-#: kile.cpp:757
+#: kile.cpp:765
 msgid "Latin-&2 (iso 8859-2)"
 msgstr "लेटिन-&2 (आईएसओ 8859-2)"
 
-#: kile.cpp:758
+#: kile.cpp:766
 msgid "Latin-&3 (iso 8859-3)"
 msgstr "लेटिन-&3 (आईएसओ 8859-3)"
 
-#: kile.cpp:759
+#: kile.cpp:767
 msgid "Latin-&4 (iso 8859-4)"
 msgstr "लेटिन-&4 (आईएसओ 8859-4)"
 
-#: kile.cpp:760
+#: kile.cpp:768
 msgid "Latin-&5 (iso 8859-5)"
 msgstr "लेटिन-&5 (आईएसओ 8859-5)"
 
-#: kile.cpp:761
+#: kile.cpp:769
 msgid "Latin-&9 (iso 8859-9)"
 msgstr "लेटिन-&9 (आईएसओ 8859-9)"
 
-#: kile.cpp:762
+#: kile.cpp:770
 msgid "&Central European (cp-1250)"
 msgstr "मध्य यूरोपीय (cp-1250) (&C)"
 
-#: kile.cpp:763
+#: kile.cpp:771
 msgid "&Western European (cp-1252)"
 msgstr "मध्य यूरोपीय (cp-1252) (&W) "
 
-#: kile.cpp:766
+#: kile.cpp:774
 msgid "Move Tab Left"
 msgstr ""
 
-#: kile.cpp:767
+#: kile.cpp:775
 msgid "Move Tab Right"
 msgstr ""
 
-#: kile.cpp:769
+#: kile.cpp:777
 msgid "Next section"
 msgstr "अगला खन्ड"
 
-#: kile.cpp:770
+#: kile.cpp:778
 msgid "Prev section"
 msgstr "पिछला खन्ड"
 
-#: kile.cpp:771
+#: kile.cpp:779
 msgid "Next paragraph"
 msgstr "अगला पैराग्राफ"
 
-#: kile.cpp:772
+#: kile.cpp:780
 msgid "Prev paragraph"
 msgstr "पिछला पैराग्राफ"
 
-#: kile.cpp:774
+#: kile.cpp:782
 msgid "Find &in Files..."
 msgstr "फाइल मन मं ढूढें... (&i) "
 
-#: kile.cpp:776
+#: kile.cpp:784
 msgid "Refresh Str&ucture"
 msgstr "स्ट्रक्चर ताजा करव (&u)"
 
-#: kile.cpp:779
+#: kile.cpp:787
 msgid "&New Project..."
 msgstr "नवा परियोजना... (&N)"
 
-#: kile.cpp:780
+#: kile.cpp:788
 msgid "&Open Project..."
 msgstr "परियोजना खोलव... (&O)"
 
-#: kile.cpp:782
+#: kile.cpp:790
 msgid "Open &Recent Project"
 msgstr "अभी हाल के परियोजना खोलव (&R)"
 
-#: kile.cpp:789
+#: kile.cpp:797
 msgid "A&dd Files to Project..."
 msgstr "परियोजना मं फाइल मन ल जोड़व... (&d)"
 
-#: kile.cpp:790 widgets/projectview.cpp:855
+#: kile.cpp:798 widgets/projectview.cpp:855
 msgid "Refresh Project &Tree"
 msgstr "परियोजना ट्री ताजा करव (&T)"
 
-#: kile.cpp:791 widgets/projectview.cpp:859
+#: kile.cpp:799 widgets/projectview.cpp:859
 msgid "&Archive"
 msgstr "अभिलेखागार (&A)"
 
-#: kile.cpp:792 widgets/projectview.cpp:857
+#: kile.cpp:800 widgets/projectview.cpp:857
 msgid "Project &Options"
 msgstr "परियोजना विकल्प (&O)"
 
-#: kile.cpp:793
+#: kile.cpp:801
 msgid "&Close Project"
 msgstr "परियोजना बन्द करव (&C)"
 
-#: kile.cpp:796
+#: kile.cpp:804
 msgid "&Show Projects..."
 msgstr "परियोजना देखाव... (&S)"
 
-#: kile.cpp:797
+#: kile.cpp:805
 msgid "Re&move Files From Project..."
 msgstr "परियोजना से फाइल मेटाव... (&m)"
 
-#: kile.cpp:798
+#: kile.cpp:806
 msgid "Show Project &Files..."
 msgstr "परियोजना फाइल देखाव... (&F)"
 
-#: kile.cpp:800 widgets/projectview.cpp:852
+#: kile.cpp:808 widgets/projectview.cpp:852
 msgid "Open All &Project Files"
 msgstr "सब्बो परियोजना फाइल खोलव (&P)"
 
-#: kile.cpp:801
+#: kile.cpp:809
 msgid "Find in &Project..."
 msgstr "परियोजना मं खोजव... (&P)"
 
-#: kile.cpp:804 kile.cpp:868 kile.cpp:2187 kiledocmanager.cpp:2027
+#: kile.cpp:812 kile.cpp:876 kile.cpp:2195 kiledocmanager.cpp:2027
 #: kiledocmanager.cpp:2037
 msgid "Clean"
 msgstr "साफ"
 
-#: kile.cpp:805
+#: kile.cpp:813
 msgid "&Stop"
 msgstr "रुकव (&S)"
 
-#: kile.cpp:811
+#: kile.cpp:819
 msgid "Return to Editor"
 msgstr ""
 
-#: kile.cpp:812
+#: kile.cpp:820
 msgid "Next Document"
 msgstr "अगला कागद"
 
-#: kile.cpp:813
+#: kile.cpp:821
 msgid "Previous Document"
 msgstr "पिछला कागद"
 
-#: kile.cpp:814
+#: kile.cpp:822
 msgid "Focus Log/Messages View"
 msgstr "फोकस लाग/संदेस दृस्य"
 
-#: kile.cpp:815
+#: kile.cpp:823
 msgid "Focus Output View"
 msgstr "आउटपुट दृस्य फोकस करव"
 
-#: kile.cpp:816
+#: kile.cpp:824
 msgid "Focus Konsole View"
 msgstr "कंसोल दृस्य फोकस करव"
 
-#: kile.cpp:817
+#: kile.cpp:825
 msgid "Focus Editor View"
 msgstr "संपादक दृस्य फोकस करव"
 
-#: kile.cpp:819
+#: kile.cpp:827
 #, fuzzy
 msgctxt "@action: Starts the completion of the current LaTeX command"
 msgid "Complete (La)TeX Command"
 msgstr "(ले)टेक्स कमांड"
 
-#: kile.cpp:820
+#: kile.cpp:828
 #, fuzzy
 msgctxt "@action: Starts the input (and completion) of a LaTeX environment"
 msgid "Complete LaTeX Environment"
 msgstr "कोड एनवायरनमेंट (&C)"
 
-#: kile.cpp:821
+#: kile.cpp:829
 #, fuzzy
 #| msgid "Delete Abbreviation"
 msgctxt "@action: Starts the completion of the current abbreviation"
 msgid "Complete Abbreviation"
 msgstr "संक्छिप्त मेटाव"
 
-#: kile.cpp:823
+#: kile.cpp:831
 msgid "Next Bullet"
 msgstr "अगला गोली"
 
-#: kile.cpp:824
+#: kile.cpp:832
 msgid "Prev Bullet"
 msgstr "पिछला गोली"
 
-#: kile.cpp:827 kile.cpp:836
+#: kile.cpp:835 kile.cpp:844
 msgid "Environment (inside)"
 msgstr "वातावरन (अंदर)"
 
-#: kile.cpp:828 kile.cpp:837
+#: kile.cpp:836 kile.cpp:845
 msgid "Environment (outside)"
 msgstr "वातावरन (बाहिर)"
 
-#: kile.cpp:829 kile.cpp:838
+#: kile.cpp:837 kile.cpp:846
 msgid "TeX Group (inside)"
 msgstr "टेक्स समूह (अंदर)"
 
-#: kile.cpp:830 kile.cpp:839
+#: kile.cpp:838 kile.cpp:847
 msgid "TeX Group (outside)"
 msgstr "टेक्स समूह (बाहिर)"
 
-#: kile.cpp:831 kile.cpp:840
+#: kile.cpp:839 kile.cpp:848
 msgid "Math Group"
 msgstr "मैथ समूह"
 
-#: kile.cpp:832 kile.cpp:841
+#: kile.cpp:840 kile.cpp:849
 msgid "Paragraph"
 msgstr "पैराग्राफ"
 
-#: kile.cpp:833
+#: kile.cpp:841
 msgid "Line"
 msgstr "पंक्ति"
 
-#: kile.cpp:834 kile.cpp:843
+#: kile.cpp:842 kile.cpp:851
 msgid "TeX Word"
 msgstr "टेक्स सब्द"
 
-#: kile.cpp:842
+#: kile.cpp:850
 msgid "To End of Line"
 msgstr ""
 
-#: kile.cpp:845 kile.cpp:851
+#: kile.cpp:853 kile.cpp:859
 msgid "Go to Begin"
 msgstr "सुरू मं जाव"
 
-#: kile.cpp:846 kile.cpp:852
+#: kile.cpp:854 kile.cpp:860
 msgid "Go to End"
 msgstr "आखरी मं जाव"
 
-#: kile.cpp:847 kile.cpp:853
+#: kile.cpp:855 kile.cpp:861
 msgid "Match"
 msgstr "मिलाव"
 
-#: kile.cpp:848 kile.cpp:854
+#: kile.cpp:856 kile.cpp:862
 msgid "Close"
 msgstr "बंद करव"
 
-#: kile.cpp:856
+#: kile.cpp:864
 msgid "Selection"
 msgstr "चयन"
 
-#: kile.cpp:858
+#: kile.cpp:866
 msgid "Subdocument"
 msgstr "उपकागद"
 
-#: kile.cpp:859
+#: kile.cpp:867
 msgid "Mathgroup"
 msgstr "गनितसमूह"
 
-#: kile.cpp:864
+#: kile.cpp:872
 msgid "&Bibliography"
 msgstr "ग्रन्थ सूची (&B)"
 
 #. i18n: ectx: Menu (settings)
-#: kile.cpp:870 kileui.rc:494
+#: kile.cpp:878 kileui.rc:494
 msgid "&Settings"
 msgstr "सेटिंग (&S)"
 
-#: kile.cpp:873
+#: kile.cpp:881
 msgid "Settings for BibTeX"
 msgstr ""
 
-#: kile.cpp:877
+#: kile.cpp:885
 msgid "Settings for Biblatex"
 msgstr ""
 
-#: kile.cpp:884 kile.cpp:2296
+#: kile.cpp:892 kile.cpp:2304
 msgid "Quick Start"
 msgstr "क्विक स्टार्ट"
 
-#: kile.cpp:887 kilestdactions.cpp:377
+#: kile.cpp:895 kilestdactions.cpp:377
 msgid "Array"
 msgstr "ऐरे"
 
-#: kile.cpp:888 kile.cpp:2349 kilestdactions.cpp:79
+#: kile.cpp:896 kile.cpp:2357 kilestdactions.cpp:79
 msgid "Tabbing"
 msgstr "टैबिंग"
 
-#: kile.cpp:889
+#: kile.cpp:897
 msgid "Floats"
 msgstr ""
 
-#: kile.cpp:894
+#: kile.cpp:902
 msgid "Define Current Document as '&Master Document'"
 msgstr "अभी हाल के कागद ल 'मुख्य कागद' के रूप मं परिभासित करव (&M)"
 
-#: kile.cpp:900
+#: kile.cpp:908
 #, fuzzy
 #| msgid "Document Type"
 msgid "Show Document Viewer"
 msgstr "कागद किसम"
 
-#: kile.cpp:908
+#: kile.cpp:916
 msgid "Show S&ide Bar"
 msgstr "बाजू-पट्टी देखाव (&i)"
 
-#: kile.cpp:914
+#: kile.cpp:922
 msgid "Show Mess&ages Bar"
 msgstr "संदेस पट्टी देखाव (&a)"
 
-#: kile.cpp:926
+#: kile.cpp:934
 msgid "Watch File Mode"
 msgstr "फाइल मोड देखव"
 
-#: kile.cpp:943
+#: kile.cpp:951
 msgid "TeX Guide"
 msgstr "टेक्स गाइड"
 
-#: kile.cpp:945
+#: kile.cpp:953
 msgid "LaTeX Command"
 msgstr "लेटेक्स कमांड"
 
-#: kile.cpp:946
+#: kile.cpp:954
 msgid "LaTeX Subject"
 msgstr "लेटेक्स विसय"
 
-#: kile.cpp:947
+#: kile.cpp:955
 msgid "LaTeX Env"
 msgstr "लेटेक्स एन्व"
 
-#: kile.cpp:948
+#: kile.cpp:956
 msgid "Context Help"
 msgstr "कान्टेक्स्ट मदद"
 
-#: kile.cpp:951
+#: kile.cpp:959
 msgid "LaTeX Reference"
 msgstr "लेटेक्स संदर्भ"
 
-#: kile.cpp:960
+#: kile.cpp:968
 #, fuzzy
 #| msgid "No bibliographies found."
 msgid "&About Editor Component"
 msgstr "कोई ग्रन्थ सूची नइ मिलिस."
 
-#: kile.cpp:969
+#: kile.cpp:977
 msgid "&System Check..."
 msgstr "तंत्र जांच... (&S)"
 
-#: kile.cpp:985 kileinfo.cpp:329
+#: kile.cpp:993 kileinfo.cpp:330
 msgid "BibTeX"
 msgstr ""
 
-#: kile.cpp:988
+#: kile.cpp:996
 msgid "Biblatex"
 msgstr ""
 
-#: kile.cpp:1140 widgets/toolconfigwidget.cpp:76
+#: kile.cpp:1148 widgets/toolconfigwidget.cpp:76
 msgid "Compile"
 msgstr "कम्पाइल"
 
-#: kile.cpp:1141 widgets/toolconfigwidget.cpp:78
+#: kile.cpp:1149 widgets/toolconfigwidget.cpp:78
 msgid "View"
 msgstr ""
 
-#: kile.cpp:1142 widgets/toolconfigwidget.cpp:77
+#: kile.cpp:1150 widgets/toolconfigwidget.cpp:77
 msgid "Convert"
 msgstr "बदलव"
 
-#: kile.cpp:1143 widgets/toolconfigwidget.cpp:75
+#: kile.cpp:1151 widgets/toolconfigwidget.cpp:75
 msgid "Quick"
 msgstr "क्विक"
 
-#: kile.cpp:1324
+#: kile.cpp:1332
 msgid ""
 "It was impossible to create the \"Archive\" tool.\n"
 "\n"
 "Please check and repair your installation of Kile."
 msgstr ""
 
-#: kile.cpp:1326
+#: kile.cpp:1334
 msgid "Unable to Create Archive Tool"
 msgstr ""
 
-#: kile.cpp:1416 kile.cpp:2741
+#: kile.cpp:1424 kile.cpp:2747
 msgid "Define Current Document as 'Master Document'"
 msgstr "अभी हाल के कागद ल 'मुख्य कागद' के रूप मं परिभासित करव"
 
-#: kile.cpp:1420 kile.cpp:2731
+#: kile.cpp:1428 kile.cpp:2737
 #, kde-format
 msgid "Normal mode (current master document: %1)"
 msgstr "सामान्य मोड (अभी हाल के मुख्य कागद: %1)"
 
-#: kile.cpp:1663
+#: kile.cpp:1671
 #, kde-format
 msgctxt "Window caption in read-only mode: <file name> [Read-Only]"
 msgid "%1 [Read-Only]"
 msgstr ""
 
-#: kile.cpp:2180
+#: kile.cpp:2188
 msgid "There is no active document or it is not saved."
 msgstr "इहां कोनो सक्रिय कागद नइ हे या एला सहेजे नइ गे हे."
 
-#: kile.cpp:2267
+#: kile.cpp:2275
 #, kde-format
 msgid "You have to include the package %1."
 msgstr ""
 
-#: kile.cpp:2267 kile.cpp:2270
+#: kile.cpp:2275 kile.cpp:2278
 msgid "Insert text"
 msgstr "पाठ भरव"
 
-#: kile.cpp:2270
+#: kile.cpp:2278
 #, kde-format
 msgid "You have to include the packages %1."
 msgstr ""
 
-#: kile.cpp:2453
+#: kile.cpp:2459
 #, fuzzy
 #| msgid "Could not create a tempfile!"
 msgid "Could not create the \"ViewHTML\" tool. Please reset the tools."
 msgstr "टैम्पफाइल नइ बना सकिस!"
 
-#: kile.cpp:2502
+#: kile.cpp:2508
 msgid "No Name"
 msgstr "कोई नाम नइ"
 
-#: kile.cpp:2549
+#: kile.cpp:2555
 msgid "no name"
 msgstr "कोई नाम नइ"
 
-#: kile.cpp:2759
+#: kile.cpp:2765
 msgid ""
 "In order to define the current document as a master document, it has to be "
 "saved first."
 msgstr "अभी हाल के कागद ल मुख्य कागद के रूप मं परिभासित करे बर एला पहिली सहेजना होही."
 
-#: kile.cpp:3128
+#: kile.cpp:3134
 msgctxt "@info:status status bar label for block selection mode"
 msgid "BLOCK"
 msgstr ""
 
-#: kile.cpp:3129
+#: kile.cpp:3135
 msgctxt "@info:status status bar label for line selection mode"
 msgid "LINE"
 msgstr ""
@@ -6327,11 +6333,11 @@ msgstr ""
 msgid "No help available for %1."
 msgstr "खेद हे, %1 बर कोनो मदद नइ मिलत हे."
 
-#: kileinfo.cpp:323
+#: kileinfo.cpp:324
 msgid "Undefined"
 msgstr ""
 
-#: kileinfo.cpp:331
+#: kileinfo.cpp:332
 msgid "Script"
 msgstr "स्क्रिप्ट"
 
@@ -8725,12 +8731,6 @@ msgstr "जगह"
 msgid "Rubber Lengths"
 msgstr ""
 
-#. i18n: ectx: Menu (menu_usermenu)
-#: kileui.rc:475 usermenu/usermenu.cpp:71
-#, fuzzy
-msgid "User Menu"
-msgstr "मीडियम"
-
 #. i18n: ectx: Menu (wizard)
 #: kileui.rc:478
 msgid "&Wizard"
@@ -10890,7 +10890,7 @@ msgstr "हर एक औजार बर आप मन ल कम-से-कम
 msgid "Cannot Remove Configuration"
 msgstr "कान्फिगरेसन मिटा नइ सकिस"
 
-#: widgets/usermenuconfigwidget.cpp:87
+#: widgets/usermenuconfigwidget.cpp:89
 #, fuzzy
 #| msgid "not installed"
 msgid "no file installed"
