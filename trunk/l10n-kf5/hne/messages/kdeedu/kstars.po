@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-07-07 11:59+0000\n"
+"POT-Creation-Date: 2015-07-10 08:38+0000\n"
 "PO-Revision-Date: 2009-02-23 19:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -241,7 +241,7 @@ msgstr ""
 #: auxiliary/colorscheme.cpp:238 auxiliary/colorscheme.cpp:253
 #: dialogs/detaildialog.cpp:617 ekos/capture.cpp:1946 ekos/capture.cpp:2211
 #: indi/drivermanager.cpp:1388 indi/indidriver.cpp:937 kstarsactions.cpp:848
-#: oal/execute.cpp:313 options/opscolors.cpp:200 tools/modcalcangdist.cpp:126
+#: oal/execute.cpp:313 options/opscolors.cpp:200 tools/modcalcangdist.cpp:133
 #: tools/modcalcapcoord.cpp:150 tools/modcalcdaylength.cpp:247
 #: tools/modcalcgalcoord.cpp:193 tools/modcalcgeodcoord.cpp:232
 #: tools/modcalcjd.cpp:121 tools/modcalcplanets.cpp:208
@@ -1461,7 +1461,7 @@ msgstr "निर्देसांक"
 #: dialogs/details_position.ui:311 dialogs/details_position.ui:403
 #: dialogs/details_position.ui:421 dialogs/details_position.ui:752
 #: dialogs/details_position.ui:770 dialogs/details_position.ui:788
-#: tools/modcalcangdist.ui:277
+#: tools/modcalcangdist.ui:321
 msgid "00:00:00"
 msgstr "00:00:00"
 
@@ -2721,7 +2721,9 @@ msgstr "वांछित फील्ड-ओफ-व्यू आकार, आ
 #. i18n: ectx: property (text), widget (QLineEdit, FOVEditOffsetX)
 #. i18n: ectx: property (text), widget (QLineEdit, FOVEditOffsetY)
 #. i18n: ectx: property (text), widget (QLineEdit, FOVEditRotation)
+#. i18n: ectx: property (text), widget (QLabel, PositionAngle)
 #: dialogs/newfov.ui:1074 dialogs/newfov.ui:1101 dialogs/newfov.ui:1128
+#: tools/modcalcangdist.ui:353
 msgid "0"
 msgstr ""
 
@@ -2752,7 +2754,8 @@ msgid "Desired rotation with respect to center in degrees"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: dialogs/newfov.ui:1135
+#. i18n: ectx: property (text), widget (QLabel, AngDistLabel_4)
+#: dialogs/newfov.ui:1135 tools/modcalcangdist.ui:331
 #, fuzzy
 #| msgid "degrees"
 msgid "Degrees"
@@ -50774,7 +50777,7 @@ msgstr "उचित आरोहन"
 #. i18n: ectx: property (text), widget (QCheckBox, decCheckBatch)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: oal/execute.ui:188 tools/flagmanager.ui:47 tools/modcalcaltaz.ui:232
-#: tools/modcalcangdist.ui:118 tools/modcalcangdist.ui:203
+#: tools/modcalcangdist.ui:148 tools/modcalcangdist.ui:251
 #: tools/modcalcapcoord.ui:78 tools/modcalcapcoord.ui:293
 #: tools/modcalcapcoord.ui:424 tools/modcalceclipticcoords.ui:121
 #: tools/modcalcgalcoord.ui:66 tools/modcalcvlsr.ui:236
@@ -55299,7 +55302,7 @@ msgstr "लेबल:"
 #. i18n: ectx: property (text), widget (QCheckBox, raCheckBatch)
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: tools/flagmanager.ui:30 tools/modcalcaltaz.ui:239
-#: tools/modcalcangdist.ui:125 tools/modcalcangdist.ui:210
+#: tools/modcalcangdist.ui:155 tools/modcalcangdist.ui:258
 #: tools/modcalcapcoord.ui:105 tools/modcalcapcoord.ui:321
 #: tools/modcalcapcoord.ui:414 tools/modcalceclipticcoords.ui:114
 #: tools/modcalcgalcoord.ui:73 tools/modcalcvlsr.ui:193
@@ -55387,7 +55390,7 @@ msgstr "अब से तब तक समय (दिनों में)"
 #. i18n: ectx: attribute (title), widget (QWidget, interact)
 #. i18n: ectx: attribute (title), widget (QWidget, tab1)
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: tools/modcalcaltaz.ui:42 tools/modcalcangdist.ui:30
+#: tools/modcalcaltaz.ui:42 tools/modcalcangdist.ui:39
 #: tools/modcalcapcoord.ui:33 tools/modcalcdaylength.ui:24
 #: tools/modcalceclipticcoords.ui:36 tools/modcalcgalcoord.ui:34
 #: tools/modcalcgeod.ui:31 tools/modcalcjd.ui:28 tools/modcalcplanets.ui:36
@@ -55418,29 +55421,29 @@ msgstr "विसुवत निर्देसांक (J2000)"
 msgid "Select Object..."
 msgstr "चीज चुनव..."
 
-#: tools/modcalcangdist.cpp:96
+#: tools/modcalcangdist.cpp:103
 #, fuzzy, kde-format
 #| msgid "First position"
 msgid "First position: %1"
 msgstr "पहिली स्थिति"
 
-#: tools/modcalcangdist.cpp:100
+#: tools/modcalcangdist.cpp:107
 #, fuzzy, kde-format
 #| msgid "Second position"
 msgid "Second position: %1"
 msgstr "दुसरा स्थिति"
 
 #. i18n: ectx: property (title), widget (QGroupBox, FirstPositionBox)
-#: tools/modcalcangdist.cpp:111 tools/modcalcangdist.ui:50
+#: tools/modcalcangdist.cpp:118 tools/modcalcangdist.ui:62
 msgid "First position"
 msgstr "पहिली स्थिति"
 
 #. i18n: ectx: property (title), widget (QGroupBox, SecondPositionBox)
-#: tools/modcalcangdist.cpp:113 tools/modcalcangdist.ui:135
+#: tools/modcalcangdist.cpp:120 tools/modcalcangdist.ui:165
 msgid "Second position"
 msgstr "दुसरा स्थिति"
 
-#: tools/modcalcangdist.cpp:125 tools/modcalcapcoord.cpp:149
+#: tools/modcalcangdist.cpp:132 tools/modcalcapcoord.cpp:149
 #: tools/modcalcdaylength.cpp:246 tools/modcalcgalcoord.cpp:192
 #: tools/modcalcgeodcoord.cpp:231 tools/modcalcjd.cpp:120
 #: tools/modcalcplanets.cpp:207 tools/modcalcsidtime.cpp:199
@@ -55451,7 +55454,7 @@ msgstr "दुसरा स्थिति"
 msgid "Could not open file %1."
 msgstr "फाइल %1 खोल नइ सकिस."
 
-#: tools/modcalcangdist.cpp:137 tools/modcalcapcoord.cpp:161
+#: tools/modcalcangdist.cpp:144 tools/modcalcapcoord.cpp:161
 #: tools/modcalcdaylength.cpp:257 tools/modcalcgalcoord.cpp:204
 #: tools/modcalcgeodcoord.cpp:243 tools/modcalcjd.cpp:131
 #: tools/modcalcplanets.cpp:217 tools/modcalcsidtime.cpp:212
@@ -55460,7 +55463,7 @@ msgstr "फाइल %1 खोल नइ सकिस."
 msgid "Invalid file: %1"
 msgstr "अवैध फाइल: %1"
 
-#: tools/modcalcangdist.cpp:138 tools/modcalcapcoord.cpp:162
+#: tools/modcalcangdist.cpp:145 tools/modcalcapcoord.cpp:162
 #: tools/modcalcdaylength.cpp:258 tools/modcalcgalcoord.cpp:205
 #: tools/modcalcgeodcoord.cpp:244 tools/modcalcjd.cpp:132
 #: tools/modcalcplanets.cpp:218 tools/modcalcsidtime.cpp:213
@@ -55470,19 +55473,33 @@ msgstr "अवैध फाइल"
 
 #. i18n: ectx: property (text), widget (QPushButton, FirstObjectButton)
 #. i18n: ectx: property (text), widget (QPushButton, SecondObjectButton)
-#: tools/modcalcangdist.ui:83 tools/modcalcangdist.ui:168
+#: tools/modcalcangdist.ui:113 tools/modcalcangdist.ui:216
 msgid "Select object..."
 msgstr "चीज चुनव..."
 
 #. i18n: ectx: property (text), widget (QLabel, AngDistLabel)
-#: tools/modcalcangdist.ui:262
+#: tools/modcalcangdist.ui:306
 msgid "Angular distance:"
 msgstr "कोनीय दूरी:"
+
+#. i18n: ectx: property (text), widget (QLabel, AngDistLabel_2)
+#: tools/modcalcangdist.ui:338
+#, fuzzy
+#| msgid "Position Angle"
+msgid "Position Angle:"
+msgstr "कोन स्थिति"
+
+#. i18n: ectx: property (text), widget (QLabel, AngDistLabel_3)
+#: tools/modcalcangdist.ui:363
+#, fuzzy
+#| msgid "degrees"
+msgid "Degrees E of N"
+msgstr "डिग्री"
 
 #. i18n: ectx: attribute (title), widget (QWidget, batch)
 #. i18n: ectx: attribute (title), widget (QWidget, tab2)
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: tools/modcalcangdist.ui:322 tools/modcalcapcoord.ui:362
+#: tools/modcalcangdist.ui:407 tools/modcalcapcoord.ui:362
 #: tools/modcalcgalcoord.ui:171 tools/modcalcgeod.ui:331
 #: tools/modcalcjd.ui:101 tools/modcalcplanets.ui:494
 #: tools/modcalcsidtime.ui:153 tools/modcalcvizequinox.ui:258
@@ -55492,40 +55509,40 @@ msgstr "बैच मोड"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_6)
-#: tools/modcalcangdist.ui:334 tools/modcalcapcoord.ui:374
+#: tools/modcalcangdist.ui:428 tools/modcalcapcoord.ui:374
 msgid "Select Fields in Input File"
 msgstr "इनपुट फाइल मं फील्ड्स चुनव"
 
 #. i18n: ectx: property (text), widget (QCheckBox, ra0CheckBatch)
-#: tools/modcalcangdist.ui:354
+#: tools/modcalcangdist.ui:466
 #, fuzzy
 msgid "Initial right ascension:"
 msgstr "सुरू के जेवनी आरोहन:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, dec0CheckBatch)
-#: tools/modcalcangdist.ui:364
+#: tools/modcalcangdist.ui:476
 msgid "Initial declination:"
 msgstr "सुरू के अवरोहन:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, ra1CheckBatch)
-#: tools/modcalcangdist.ui:374
+#: tools/modcalcangdist.ui:486
 #, fuzzy
 msgid "Final right ascension:"
 msgstr "आखरी जेवनी आरोहन:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, dec1CheckBatch)
-#: tools/modcalcangdist.ui:384
+#: tools/modcalcangdist.ui:496
 msgid "Final declination:"
 msgstr "आखरी अवरोहन:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: tools/modcalcangdist.ui:421
+#: tools/modcalcangdist.ui:542
 msgid "Fields in Output File Plus Result"
 msgstr "आउटपुट फाइल मं परिनाम अउ फील्ड्स"
 
 #. i18n: ectx: property (text), widget (QRadioButton, allRadioBatch)
 #. i18n: ectx: property (text), widget (QRadioButton, AllRadioBatch)
-#: tools/modcalcangdist.ui:433 tools/modcalcapcoord.ui:506
+#: tools/modcalcangdist.ui:563 tools/modcalcapcoord.ui:506
 #: tools/modcalcgalcoord.ui:333 tools/modcalcgeod.ui:487
 #: tools/modcalcplanets.ui:847 tools/modcalcvlsr.ui:668
 msgid "All parameters"
@@ -55533,34 +55550,34 @@ msgstr "सब्बो पैरामीटर्स"
 
 #. i18n: ectx: property (text), widget (QRadioButton, inputRadioBatch)
 #. i18n: ectx: property (text), widget (QRadioButton, InputRadioBatch)
-#: tools/modcalcangdist.ui:440 tools/modcalcapcoord.ui:513
+#: tools/modcalcangdist.ui:570 tools/modcalcapcoord.ui:513
 #: tools/modcalcgalcoord.ui:340 tools/modcalcgeod.ui:494
 #: tools/modcalcplanets.ui:854 tools/modcalcvlsr.ui:675
 msgid "Only parameters in input file"
 msgstr "इनपुट फाइल मं सिरिफ यही पैरामीटर्स"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: tools/modcalcangdist.ui:453 tools/modcalcapcoord.ui:526
+#: tools/modcalcangdist.ui:583 tools/modcalcapcoord.ui:526
 msgid "Files"
 msgstr "फाइल"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: tools/modcalcangdist.ui:471 tools/modcalcapcoord.ui:544
+#: tools/modcalcangdist.ui:610 tools/modcalcapcoord.ui:544
 #: tools/modcalcgalcoord.ui:378 tools/modcalcgeod.ui:526
 msgid "Input File:"
 msgstr "इनपुट फाइल:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: tools/modcalcangdist.ui:478 tools/modcalcapcoord.ui:551
+#: tools/modcalcangdist.ui:617 tools/modcalcapcoord.ui:551
 #: tools/modcalcgalcoord.ui:371 tools/modcalcgeod.ui:519
 msgid "Output File:"
 msgstr "आउटपुट फाइल:"
 
 #. i18n: ectx: property (text), widget (QPushButton, runButtonBatch)
 #. i18n: ectx: property (text), widget (QPushButton, RunButtonBatch)
-#: tools/modcalcangdist.ui:518 tools/modcalcapcoord.ui:591
+#: tools/modcalcangdist.ui:666 tools/modcalcapcoord.ui:591
 #: tools/modcalcgalcoord.ui:418 tools/modcalcgeod.ui:572
 #: tools/modcalcplanets.ui:932 tools/modcalcvlsr.ui:750
 msgid "Run"
