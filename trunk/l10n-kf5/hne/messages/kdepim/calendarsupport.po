@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-14 08:08+0000\n"
+"POT-Creation-Date: 2015-09-15 10:32+0000\n"
 "PO-Revision-Date: 2009-02-28 20:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -462,6 +462,100 @@ msgstr "अभिलेख फाइल %1 लिख नइ सकिस."
 #| msgid "Archive events"
 msgid "Archiving events"
 msgstr "घटना अभिलेखित करव"
+
+#: freebusymodel/freebusycalendar.cpp:133
+#, fuzzy
+#| msgctxt "show event as free time"
+#| msgid "Free"
+msgid "Free"
+msgstr "मुक्त"
+
+#: freebusymodel/freebusycalendar.cpp:136
+#, fuzzy
+#| msgctxt "show event as busy time"
+#| msgid "Busy"
+msgid "Busy"
+msgstr "व्यस्त"
+
+#: freebusymodel/freebusycalendar.cpp:139
+msgid "Unavailable"
+msgstr ""
+
+#: freebusymodel/freebusycalendar.cpp:142
+msgid "Tentative"
+msgstr ""
+
+#: freebusymodel/freebusycalendar.cpp:145
+#, fuzzy
+#| msgctxt "@label unknown mimetype"
+#| msgid "Unknown"
+msgid "Unknown"
+msgstr "अग्यात"
+
+#: freebusymodel/freebusyitemmodel.cpp:230
+#, fuzzy
+#| msgctxt "@title:column attendee name"
+#| msgid "Attendee"
+msgid "Attendee"
+msgstr "उपस्थित"
+
+#: freebusymodel/freeperiodmodel.cpp:150
+#, fuzzy, kde-format
+#| msgid "%1"
+msgctxt "@label Day of the week name, example: Monday,"
+msgid "%1,"
+msgstr "%1"
+
+#: freebusymodel/freeperiodmodel.cpp:165
+#, fuzzy, kde-format
+#| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
+#| msgid "%1 %2 - %3 %4"
+msgctxt ""
+"@label A time period duration. It is preceded/followed (based on the "
+"orientation) by the name of the week, see the message above. example: 12 "
+"June, 8:00am to 9:30am"
+msgid "%1 %2, %3 to %4"
+msgstr "%1 %2 - %3 %4"
+
+#: freebusymodel/freeperiodmodel.cpp:185
+#, fuzzy, kde-format
+#| msgctxt "starttime - endtime summary, location"
+#| msgid "%1-%2 %3, %4"
+msgctxt ""
+"@label A time period duration. KLocale is used to format the components. "
+"example: Monday, 12 June, 8:00am to 9:30am"
+msgid "%1, %2 %3, %4 to %5"
+msgstr "%1-%2 %3, %4"
+
+#: freebusymodel/freeperiodmodel.cpp:199
+#, fuzzy
+#| msgctxt "@title:group"
+#| msgid "Working Hours"
+msgctxt "@info:tooltip"
+msgid "Free Period"
+msgstr "काम घंटे"
+
+#: freebusymodel/freeperiodmodel.cpp:201
+#, fuzzy
+#| msgctxt "@label event start time"
+#| msgid "&Start:"
+msgctxt "@info:tooltip period start time"
+msgid "Start:"
+msgstr "सुरूः (&S)"
+
+#: freebusymodel/freeperiodmodel.cpp:204
+#, fuzzy
+#| msgid "&End:"
+msgctxt "@info:tooltip period end time"
+msgid "End:"
+msgstr "आखरीः (&E)"
+
+#: freebusymodel/freeperiodmodel.cpp:207
+#, fuzzy
+#| msgid "Duration: "
+msgctxt "@info:tooltip period duration"
+msgid "Duration:"
+msgstr "अवधिः"
 
 #: kcalmodel.cpp:128
 #, kde-format
@@ -3969,9 +4063,6 @@ msgstr "संलग्नक (&m)"
 #~ msgid "%1/%2"
 #~ msgstr "%1/%2"
 
-#~ msgid "%1"
-#~ msgstr "%1"
-
 #, fuzzy
 #~| msgid "To-do"
 #~ msgid "To-do"
@@ -4194,13 +4285,6 @@ msgstr "संलग्नक (&m)"
 #~ msgctxt "No holiday region"
 #~ msgid "None"
 #~ msgstr "(कुछ नइ)"
-
-#, fuzzy
-#~| msgctxt "@title:group"
-#~| msgid "Working Hours"
-#~ msgctxt "@title:group"
-#~ msgid "Working Period"
-#~ msgstr "काम घंटे"
 
 #, fuzzy
 #~ msgctxt "@title:group"
@@ -7267,10 +7351,6 @@ msgstr "संलग्नक (&m)"
 #~ msgid "Sets options related to the date and time of the event or to-do."
 #~ msgstr "तारीक अउ समय के घटनाोओं या कामसूची से संबंधित विकल्प मन लट करथे."
 
-#~ msgctxt "@label event start time"
-#~ msgid "&Start:"
-#~ msgstr "सुरूः (&S)"
-
 #, fuzzy
 #~ msgctxt "@info:tooltip"
 #~ msgid "Set the start date"
@@ -7302,12 +7382,6 @@ msgstr "संलग्नक (&m)"
 #~ msgstr "ये घटना बर समयछेत्र चुनव. ए पुनरावृत्ति ल घलोक प्रभावित करथे."
 
 #, fuzzy
-#~| msgid "&End:"
-#~ msgctxt "@label"
-#~ msgid "&End:"
-#~ msgstr "आखरीः (&E)"
-
-#, fuzzy
 #~| msgid "T&ime associated"
 #~ msgctxt "@option:check"
 #~ msgid "T&ime associated"
@@ -7323,20 +7397,6 @@ msgstr "संलग्नक (&m)"
 #~ msgctxt "@info:whatsthis"
 #~ msgid "Sets how this time will appear on your Free/Busy information."
 #~ msgstr "सेट करथे  कि कइसन ए समय आप मन के मिलत/व्यस्त जानकारी मं प्रदर्सित हो."
-
-#, fuzzy
-#~| msgctxt "show event as busy time"
-#~| msgid "Busy"
-#~ msgctxt "@item:inlistbox show event as busy time"
-#~ msgid "Busy"
-#~ msgstr "व्यस्त"
-
-#, fuzzy
-#~| msgctxt "show event as free time"
-#~| msgid "Free"
-#~ msgctxt "@item:inlistbox show event as free time"
-#~ msgid "Free"
-#~ msgstr "मुक्त"
 
 #, fuzzy
 #~| msgid "Accept"
@@ -7587,10 +7647,6 @@ msgstr "संलग्नक (&m)"
 #~ msgctxt "@action:button reload freebusy data"
 #~ msgid "Reload"
 #~ msgstr "री-लोड"
-
-#~ msgctxt "@title:column attendee name"
-#~ msgid "Attendee"
-#~ msgstr "उपस्थित"
 
 #~ msgctxt "@info"
 #~ msgid "The meeting already has suitable start/end times."
