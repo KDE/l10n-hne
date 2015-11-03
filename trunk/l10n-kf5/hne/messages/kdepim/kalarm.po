@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-25 08:12+0000\n"
+"POT-Creation-Date: 2015-11-03 13:59+0000\n"
 "PO-Revision-Date: 2009-02-27 17:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -2996,7 +2996,7 @@ msgstr "काम (&A)"
 msgid "&Settings"
 msgstr "सेटिंग (&S)"
 
-#: kamail.cpp:83
+#: kamail.cpp:84
 #, fuzzy
 #| msgctxt "@info/plain"
 #| msgid ""
@@ -3007,7 +3007,7 @@ msgid ""
 "A 'From' email address must be configured in order to execute email alarms."
 msgstr "ईमेल अलार्म ल चलाय बर 'प्रेसक' ईमेल पता कान्फिगर करिस होय होना चाही."
 
-#: kamail.cpp:86
+#: kamail.cpp:87
 #, fuzzy
 #| msgctxt ""
 #| "@info/plain KMail folder name: this should be translated the same as in "
@@ -3018,7 +3018,7 @@ msgctxt ""
 msgid "sent-mail"
 msgstr "भेजी -डाक"
 
-#: kamail.cpp:117
+#: kamail.cpp:118
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -3026,7 +3026,7 @@ msgid ""
 "found"
 msgstr "अवैध 'प्रेसक' ईमेल पता.<nl/>ईमेल पहिचान <resource>%1</resource> नइ मिलिस"
 
-#: kamail.cpp:123
+#: kamail.cpp:124
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -3036,7 +3036,7 @@ msgstr ""
 "अवैध 'प्रेसक' ईमेल पता.<nl/>ईमेल पहिचान <resource>%1</resource> तिर कोनो ईमेल पता "
 "नइ हे"
 
-#: kamail.cpp:133
+#: kamail.cpp:134
 msgctxt "@info"
 msgid ""
 "<para>No 'From' email address is configured (no default email identity found)"
@@ -3044,7 +3044,7 @@ msgid ""
 "<application>KAlarm</application> Configuration dialog.</para>"
 msgstr ""
 
-#: kamail.cpp:137
+#: kamail.cpp:138
 msgctxt "@info"
 msgid ""
 "<para>No 'From' email address is configured.</para><para>Please set it in "
@@ -3052,7 +3052,7 @@ msgid ""
 "Configuration dialog.</para>"
 msgstr ""
 
-#: kamail.cpp:142
+#: kamail.cpp:143
 #, fuzzy
 #| msgctxt "@info Please set the 'From' email address..."
 #| msgid ""
@@ -3063,7 +3063,15 @@ msgid ""
 "the <application>KAlarm</application> Configuration dialog.</para>"
 msgstr "<para>%1</para><para>किरपा करके, एला प्राथमिकता गोठ मं सेट करव.</para>"
 
-#: kamail.cpp:194
+#: kamail.cpp:176
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "<command>%1</command> not found"
+msgctxt "@info"
+msgid "<command>%1</command> not found"
+msgstr "<command>%1</command> नइ मिलिस."
+
+#: kamail.cpp:238
 #, kde-format
 msgctxt "@info"
 msgid "No mail transport configured for email identity <resource>%1</resource>"
@@ -3071,42 +3079,52 @@ msgstr ""
 "ईमेल पहिचान <resource>%1</resource> बर कोनो ईमेल ट्रांसपोर्ट कान्फिगर करिस होय नइ "
 "हे."
 
-#: kamail.cpp:256
+#: kamail.cpp:299
 msgctxt "@info"
 msgid "Emails may not have been sent"
 msgstr "ईमेलों ल सायद भेजिस नइ गिस"
 
-#: kamail.cpp:257 undo.cpp:407
+#: kamail.cpp:300 undo.cpp:407
 msgctxt "@info"
 msgid "Program error"
 msgstr "प्रोग्राम गलती"
 
-#: kamail.cpp:359
+#: kamail.cpp:402
 #, kde-format
 msgctxt "@info"
 msgid "Error attaching file: <filename>%1</filename>"
 msgstr "फााइल: <filename>%1</filename> ल संलग्न करे मं गलती"
 
-#: kamail.cpp:369
+#: kamail.cpp:412
 #, kde-format
 msgctxt "@info"
 msgid "Attachment not found: <filename>%1</filename>"
 msgstr "संलग्नक नइ मिलिस: <filename>%1</filename>"
 
-#: kamail.cpp:448
+#: kamail.cpp:491
 msgctxt "@info"
 msgid "An email has been queued to be sent"
 msgstr "भेजे जाय बर एक ई-मेल कतार मं लगाही"
 
-#: kamail.cpp:615
+#: kamail.cpp:658
 msgctxt "@info"
 msgid "Failed to send email"
 msgstr "ई-मेल भेजे मं फेल"
 
-#: kamail.cpp:616
+#: kamail.cpp:659
 msgctxt "@info"
 msgid "Error sending email"
 msgstr "ईमेल भेजते समय गलती"
+
+#: kamail.cpp:661
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Error copying sent email to <application>KMail</application> <resource>%1</"
+"resource> folder"
+msgstr ""
+"भेजे गे ईमेल ल <application>केमेल</application> <resource>%1</resource> फोल्डर मं "
+"नकल करे मं गलती"
 
 #: latecancel.cpp:39
 msgctxt "@option:check"
@@ -7211,14 +7229,6 @@ msgstr ""
 #~ msgctxt "@info"
 #~ msgid "Error calling <application>KMail</application>"
 #~ msgstr "<application>केमेल</application> ल काल करे मं गलती"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "Error copying sent email to <application>KMail</application> <resource>"
-#~ "%1</resource> folder"
-#~ msgstr ""
-#~ "भेजे गे ईमेल ल <application>केमेल</application> <resource>%1</resource> फोल्डर मं "
-#~ "नकल करे मं गलती"
 
 #~ msgctxt "@title:column Name of person"
 #~ msgid "Name"
