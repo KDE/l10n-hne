@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-11-24 04:47+0000\n"
+"POT-Creation-Date: 2015-11-25 13:29+0000\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -3471,10 +3471,10 @@ msgstr "परत चयन (&L)"
 
 #: image/kis_sync_lod_cache_stroke_strategy.cpp:34
 #, fuzzy
-#| msgid "Update preview"
+#| msgid "Distant view"
 msgctxt "(qtundo-format)"
-msgid "Update LOD"
-msgstr "प्रिव्यू अपडेट करव"
+msgid "Instant Preview"
+msgstr "दूर से दृस्य"
 
 #: image/kis_update_scheduler.cpp:115
 msgid "Updating..."
@@ -6914,7 +6914,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Preview: "
 msgctxt "action"
-msgid "&Fast Preview Mode (LOD)"
+msgid "&Instant Preview Mode"
 msgstr "प्रिव्यू:"
 
 #. i18n: context: Action (level_of_detail_mode), Actions (View), ActionCollection (Menu)
@@ -6922,7 +6922,7 @@ msgstr "प्रिव्यू:"
 #, fuzzy
 #| msgid "Preview: "
 msgctxt "action"
-msgid "Fast Preview Mode (LOD)"
+msgid "Instant Preview Mode"
 msgstr "प्रिव्यू:"
 
 #. i18n: context: Action (mirror_canvas), Actions (View), ActionCollection (Menu)
@@ -8733,25 +8733,25 @@ msgid "Workspaces"
 msgstr "कलरस्पेस"
 
 #: libbrush/kis_auto_brush.cpp:352
-msgctxt "PaintOp LoD limitation"
+msgctxt "PaintOp instant preview limitation"
 msgid "Brush Density recommended value 100.0"
 msgstr ""
 
 #: libbrush/kis_auto_brush.cpp:356
-msgctxt "PaintOp LoD limitation"
+msgctxt "PaintOp instant preview limitation"
 msgid "Brush Randomness recommended value 0.0"
 msgstr ""
 
 #: libbrush/kis_brush.cpp:632
 #, fuzzy
 #| msgid "Spacing"
-msgctxt "PaintOp LoD limitation"
+msgctxt "PaintOp instant preview limitation"
 msgid "Auto Spacing"
 msgstr "जगह"
 
 #: libbrush/kis_brush.cpp:634
-msgctxt "PaintOp LoD limitation"
-msgid "Spacing > 0.5, consider disabling LoD"
+msgctxt "PaintOp instant preview limitation"
+msgid "Spacing > 0.5, consider disabling Instant Preview"
 msgstr ""
 
 #: libglobal/kis_assert.cpp:69
@@ -16403,7 +16403,7 @@ msgstr ""
 
 #: plugins/paintops/colorsmudge/kis_overlay_mode_option.h:51
 #, fuzzy
-msgctxt "PaintOp LoD limitation"
+msgctxt "PaintOp instant preview limitation"
 msgid "Overlay Option"
 msgstr "वक्रीय"
 
@@ -16548,7 +16548,7 @@ msgid "Clone"
 msgstr ""
 
 #: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:73
-msgctxt "PaintOp LoD limitation"
+msgctxt "PaintOp instant preview limitation"
 msgid "Clone Brush (temporarily disabled)"
 msgstr ""
 
@@ -16611,9 +16611,11 @@ msgid "Deform"
 msgstr "डिफार्म मोड"
 
 #: plugins/paintops/deform/kis_deform_option.cpp:112
-msgctxt "PaintOp LoD limitation"
+#, fuzzy
+#| msgid "Dynamic Brush"
+msgctxt "PaintOp instant preview limitation"
 msgid "Deform Brush (unsupported)"
-msgstr ""
+msgstr "गतिसील ब्रस"
 
 #: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:40
 #, fuzzy
@@ -16699,7 +16701,7 @@ msgstr ""
 #: plugins/paintops/dynadraw/kis_dynaop_option.cpp:182
 #, fuzzy
 #| msgid "Dynamic Brush"
-msgctxt "PaintOp LoD limitation"
+msgctxt "PaintOp instant preview limitation"
 msgid "Dyna Brush (not supported)"
 msgstr "गतिसील ब्रस"
 
@@ -16813,7 +16815,7 @@ msgstr "डिफार्म त्रिज्या"
 
 #: plugins/paintops/experiment/kis_experimentop_option.cpp:129
 #, fuzzy
-msgctxt "PaintOp LoD limitation"
+msgctxt "PaintOp instant preview limitation"
 msgid "Displacement Option"
 msgstr "डिफार्म त्रिज्या"
 
@@ -16987,7 +16989,7 @@ msgid "Bristle"
 msgstr "ब्रिसल्स"
 
 #: plugins/paintops/hairy/kis_hairy_bristle_option.cpp:103
-msgctxt "PaintOp LoD limitation"
+msgctxt "PaintOp instant preview limitation"
 msgid "Bristle Brush (the lines will be thinner than on preview)"
 msgstr ""
 
@@ -17210,8 +17212,8 @@ msgid "Hatching"
 msgstr "स्मीयरी ब्रस"
 
 #: plugins/paintops/hatching/kis_hatching_options.cpp:122
-msgctxt "PaintOp LoD limitation"
-msgid "Hatching Brush (heavy aliasing in LOD mode)"
+msgctxt "PaintOp instant preview limitation"
+msgid "Hatching Brush (heavy aliasing in preview mode)"
 msgstr ""
 
 #: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:52
@@ -17874,21 +17876,23 @@ msgstr "पैटर्न परयोग करव"
 #: plugins/paintops/libpaintop/kis_color_source_option_widget.cpp:90
 #, fuzzy
 #| msgid "Total random"
-msgctxt "PaintOp LoD limitation"
+msgctxt "PaintOp instant preview limitation"
 msgid "Source -> Total Random"
 msgstr "पूरा बेतरतीब"
 
 #: plugins/paintops/libpaintop/kis_color_source_option_widget.cpp:92
 #, fuzzy
 #| msgid "Use as Pattern"
-msgctxt "PaintOp LoD limitation"
+msgctxt "PaintOp instant preview limitation"
 msgid "Source -> Pattern"
 msgstr "पैटर्न के रूप मं उपयोग करव"
 
 #: plugins/paintops/libpaintop/kis_color_source_option_widget.cpp:94
-msgctxt "PaintOp LoD limitation"
+#, fuzzy
+#| msgid "Use as Pattern"
+msgctxt "PaintOp instant preview limitation"
 msgid "Source -> Pattern Locked"
-msgstr ""
+msgstr "पैटर्न के रूप मं उपयोग करव"
 
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:200
 msgid "0 px"
@@ -18028,8 +18032,8 @@ msgstr "मुसुवा दबाव"
 
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:203
 #, kde-format
-msgctxt "PaintOp LoD limitation"
-msgid "\"%1\" does not support LOD (non-linear filter)"
+msgctxt "PaintOp instant preview limitation"
+msgid "\"%1\" does not support scaled preview (non-linear filter)"
 msgstr ""
 
 #: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:30
@@ -18119,12 +18123,12 @@ msgid "Scatter amount"
 msgstr "छितराया"
 
 #: plugins/paintops/libpaintop/kis_pressure_size_option.cpp:44
-msgctxt "PaintOp LoD limitation"
+msgctxt "PaintOp instant preview limitation"
 msgid "Size -> Fuzzy (sensor)"
 msgstr ""
 
 #: plugins/paintops/libpaintop/kis_pressure_size_option.cpp:48
-msgctxt "PaintOp LoD limitation"
+msgctxt "PaintOp instant preview limitation"
 msgid "Size -> Fade (sensor)"
 msgstr ""
 
@@ -18224,7 +18228,7 @@ msgid "Invert Pattern:"
 msgstr "संतृप्ति"
 
 #: plugins/paintops/libpaintop/kis_texture_option.cpp:257
-msgctxt "PaintOp LoD limitation"
+msgctxt "PaintOp instant preview limitation"
 msgid "Texture -> Pattern (low quality preview)"
 msgstr ""
 
@@ -18260,9 +18264,11 @@ msgid "s"
 msgstr ""
 
 #: plugins/paintops/particle/kis_particleop_option.cpp:132
-msgctxt "PaintOp LoD limitation"
+#, fuzzy
+#| msgid "Dynamic Brush"
+msgctxt "PaintOp instant preview limitation"
 msgid "Particle Brush (not supported)"
-msgstr ""
+msgstr "गतिसील ब्रस"
 
 #: plugins/paintops/particle/particle_paintop_plugin.cpp:42
 #, fuzzy
@@ -18323,7 +18329,7 @@ msgid "Density"
 msgstr ""
 
 #: plugins/paintops/sketch/kis_sketchop_option.cpp:107
-msgctxt "PaintOp LoD limitation"
+msgctxt "PaintOp instant preview limitation"
 msgid "Sketch brush (differences in connecting lines are possible)"
 msgstr ""
 
@@ -20235,9 +20241,10 @@ msgid ""
 msgstr ""
 
 #: ui/canvas/kis_canvas_controller.cpp:257
-#, kde-format
-msgid "Fast Preview Mode (LOD): %1"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Preview: "
+msgid "Instant Preview Mode: %1"
+msgstr "प्रिव्यू:"
 
 #: ui/canvas/kis_perspective_grid_manager.cpp:73
 #, fuzzy
@@ -26209,18 +26216,22 @@ msgid "Remove Segment"
 msgstr "खन्ड मेटाव"
 
 #: ui/widgets/kis_lod_availability_widget.cpp:93
-msgid "(LOD)*"
-msgstr ""
+#, fuzzy
+#| msgid "Distant view"
+msgid "(Instant Preview)*"
+msgstr "दूर से दृस्य"
 
 #: ui/widgets/kis_lod_availability_widget.cpp:93
-msgid "LOD"
-msgstr ""
+#, fuzzy
+#| msgid "Distant view"
+msgid "Instant Preview"
+msgstr "दूर से दृस्य"
 
 #: ui/widgets/kis_lod_availability_widget.cpp:99
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
-"<para>Fast Preview Mode (LOD) is disabled by the following options:<list>%1</"
+"<para>Instant Preview Mode is disabled by the following options:<list>%1</"
 "list></para>"
 msgstr ""
 
@@ -26228,13 +26239,13 @@ msgstr ""
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
-"<para>Fast Preview (LOD) may look different from the final result. In case "
-"of troubles try disabling the following options:<list>%1</list></para>"
+"<para>Instant Preview may look different from the final result. In case of "
+"troubles try disabling the following options:<list>%1</list></para>"
 msgstr ""
 
 #: ui/widgets/kis_lod_availability_widget.cpp:110
 msgctxt "@info:tooltip"
-msgid "<para>Fast Preview Mode (LOD) is available</para>"
+msgid "<para>Instant Preview Mode is available</para>"
 msgstr ""
 
 #: ui/widgets/kis_meta_data_merge_strategy_chooser_widget.cc:75
@@ -26304,6 +26315,12 @@ msgstr "कलरस्पेस"
 #| msgid "Colorspace"
 msgid "Workspace %1"
 msgstr "कलरस्पेस"
+
+#, fuzzy
+#~| msgid "Update preview"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Update LOD"
+#~ msgstr "प्रिव्यू अपडेट करव"
 
 #, fuzzy
 #~| msgid "Filter Brush"
