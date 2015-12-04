@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-11-02 08:31+0000\n"
+"POT-Creation-Date: 2015-12-04 07:25+0000\n"
 "PO-Revision-Date: 2009-03-01 12:04+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -560,29 +560,36 @@ msgstr ""
 msgid "Preserve paths when extracting"
 msgstr ""
 
-#: kerfuffle/jobs.cpp:198
+#: kerfuffle/jobs.cpp:199
 msgid "Loading archive..."
 msgstr "अभिलेख लोड करत हे..."
 
-#: kerfuffle/jobs.cpp:262
+#: kerfuffle/jobs.cpp:263
 msgid "Extracting all files"
 msgstr "सब्बो फाइल मन ल बाहिर निकाली जा रही हे"
 
-#: kerfuffle/jobs.cpp:264
+#: kerfuffle/jobs.cpp:265
 #, kde-format
 msgid "Extracting one file"
 msgid_plural "Extracting %1 files"
 msgstr[0] "एक फाइल निकालत हे"
 msgstr[1] "%1 फाइल निकालत हे"
 
-#: kerfuffle/jobs.cpp:318
+#: kerfuffle/jobs.cpp:271
+#, kde-format
+msgid ""
+"Could not write to destination <filename>%1</filename>.<nl/>Check whether "
+"you have sufficient permissions."
+msgstr ""
+
+#: kerfuffle/jobs.cpp:326
 #, kde-format
 msgid "Adding a file"
 msgid_plural "Adding %1 files"
 msgstr[0] "1 फाइल जोड़त हे"
 msgstr[1] "%1 फाइल जोड़त हे"
 
-#: kerfuffle/jobs.cpp:341
+#: kerfuffle/jobs.cpp:349
 #, kde-format
 msgid "Deleting a file from the archive"
 msgid_plural "Deleting %1 files"
@@ -616,11 +623,11 @@ msgstr ""
 msgid " megabytes"
 msgstr ""
 
-#: kerfuffle/queries.cpp:94
+#: kerfuffle/queries.cpp:96
 msgid "File already exists"
 msgstr ""
 
-#: kerfuffle/queries.cpp:177
+#: kerfuffle/queries.cpp:179
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -628,11 +635,11 @@ msgid ""
 "password to extract the file."
 msgstr ""
 
-#: kerfuffle/queries.cpp:181
+#: kerfuffle/queries.cpp:183
 msgid "Incorrect password, please try again."
 msgstr ""
 
-#: kerfuffle/queries.cpp:216
+#: kerfuffle/queries.cpp:218
 msgctxt "@info"
 msgid ""
 "Corrupt archive detected. Do you want Ark to attempt loading the archive?<nl/"
@@ -640,12 +647,27 @@ msgid ""
 "read-only."
 msgstr ""
 
-#: kerfuffle/queries.cpp:219
+#: kerfuffle/queries.cpp:221
 #, fuzzy
 #| msgid "Source archive"
 msgctxt "@title:window"
 msgid "Corrupt archive"
 msgstr "स्रोत अभिलेख"
+
+#: kerfuffle/queries.cpp:241
+msgid "Error during extraction"
+msgstr ""
+
+#: kerfuffle/queries.cpp:242
+#, kde-format
+msgid ""
+"Extraction of the entry:<nl/>    <filename>%1</filename><nl/>failed with the "
+"error message:<nl/>    %2<nl/><nl/>Do you want to continue extraction?<nl/>"
+msgstr ""
+
+#: kerfuffle/queries.cpp:248
+msgid "Don't ask again."
+msgstr ""
 
 #: part/archivemodel.cpp:396
 msgctxt "Name of a file inside an archive"
@@ -857,55 +879,55 @@ msgstr "टिप्पनी"
 msgid "ArkPart"
 msgstr "आर्क-पार्ट"
 
-#: part/part.cpp:258
+#: part/part.cpp:273
 #, fuzzy
 #| msgid "Information Panel"
 msgctxt "@action:inmenu"
 msgid "Show information panel"
 msgstr "जानकारी पेनल"
 
-#: part/part.cpp:267
+#: part/part.cpp:282
 #, fuzzy
 #| msgid "Open file"
 msgctxt "open a file with external program"
 msgid "&Open File"
 msgstr "फाइल खोलव"
 
-#: part/part.cpp:269
+#: part/part.cpp:284
 #, fuzzy
 #| msgid "Click to preview the selected file"
 msgid "Click to open the selected file with the associated application"
 msgstr "चुने गे फाइल मन के प्रिव्यू देखे बर इहां किलिक करव"
 
-#: part/part.cpp:274
+#: part/part.cpp:289
 #, fuzzy
 #| msgid "Open file"
 msgctxt "open a file with external program"
 msgid "Open File &With..."
 msgstr "फाइल खोलव"
 
-#: part/part.cpp:276
+#: part/part.cpp:291
 #, fuzzy
 #| msgid "Click to preview the selected file"
 msgid "Click to open the selected file with an external program"
 msgstr "चुने गे फाइल मन के प्रिव्यू देखे बर इहां किलिक करव"
 
-#: part/part.cpp:281
+#: part/part.cpp:296
 msgctxt "to preview a file inside an archive"
 msgid "Pre&view"
 msgstr "प्रिव्यू (&v)"
 
-#: part/part.cpp:283
+#: part/part.cpp:298
 msgid "Click to preview the selected file"
 msgstr "चुने गे फाइल मन के प्रिव्यू देखे बर इहां किलिक करव"
 
-#: part/part.cpp:289
+#: part/part.cpp:304
 #, fuzzy
 #| msgid "Extract"
 msgid "E&xtract"
 msgstr "निकालें"
 
-#: part/part.cpp:291
+#: part/part.cpp:306
 msgid ""
 "Click to open an extraction dialog, where you can choose to extract either "
 "all files or just the selected ones"
@@ -913,49 +935,49 @@ msgstr ""
 "एक्सट्रेक्सन गोठ खोले बर किलिक करव, जहाँ आप मन या तो सब्बो फाइल मन ल या चुने गे फाइल "
 "मन ल को एक्सट्रैक्ट करे बर चुन सकथो "
 
-#: part/part.cpp:298
+#: part/part.cpp:313
 msgid "Add &File..."
 msgstr "फाइल जोड़व... (&F)"
 
-#: part/part.cpp:299
+#: part/part.cpp:314
 msgid "Click to add files to the archive"
 msgstr "अभिलेखागार मं फाइल मन ल जोड़े बर किलिक करव"
 
-#: part/part.cpp:305
+#: part/part.cpp:320
 msgid "Add Fo&lder..."
 msgstr "फोल्डर जोड़व... (&l)"
 
-#: part/part.cpp:306
+#: part/part.cpp:321
 msgid "Click to add a folder to the archive"
 msgstr "अभिलेखागार मं फोल्डर ल जोड़े बर किलिक करव"
 
-#: part/part.cpp:312
+#: part/part.cpp:327
 msgid "De&lete"
 msgstr "मेटाव (&l)"
 
-#: part/part.cpp:314
+#: part/part.cpp:329
 msgid "Click to delete the selected files"
 msgstr "चुने गे फाइल मन ल मेटाय बर किलिक करव"
 
-#: part/part.cpp:367
+#: part/part.cpp:382
 #, fuzzy
 #| msgid "E&xtract..."
 msgid "Extract To..."
 msgstr "एक्सट्रेक्ट... (&x)"
 
-#: part/part.cpp:374
+#: part/part.cpp:389
 #, fuzzy
 #| msgid "Quick extract to..."
 msgid "Quick Extract To..."
 msgstr "इहां तुरंत एक्सट्रेक्ट..."
 
-#: part/part.cpp:443
+#: part/part.cpp:458
 #, kde-format
 msgctxt "@info"
 msgid "<filename>%1</filename> is a directory."
 msgstr ""
 
-#: part/part.cpp:450
+#: part/part.cpp:465
 #, fuzzy, kde-format
 #| msgid "The source file could not be read."
 msgctxt "@info"
@@ -964,33 +986,33 @@ msgid ""
 "it instead?"
 msgstr "स्रोत फाइल पढ़ नइ सकिस."
 
-#: part/part.cpp:450
+#: part/part.cpp:465
 #, fuzzy
 #| msgid "File exists"
 msgctxt "@title:window"
 msgid "File Exists"
 msgstr "फाइल अस्तित्व मं हे"
 
-#: part/part.cpp:450
+#: part/part.cpp:465
 #, fuzzy
 #| msgid "Open file"
 msgid "Open File"
 msgstr "फाइल खोलव"
 
-#: part/part.cpp:458
+#: part/part.cpp:473
 #, kde-format
 msgctxt "@info"
 msgid "The archive <filename>%1</filename> was not found."
 msgstr ""
 
-#: part/part.cpp:458 part/part.cpp:477 part/part.cpp:484 part/part.cpp:549
+#: part/part.cpp:473 part/part.cpp:492 part/part.cpp:499 part/part.cpp:564
 #, fuzzy
 #| msgid "Error opening archive"
 msgctxt "@title:window"
 msgid "Error Opening Archive"
 msgstr "अभिलेख खोले मं गलती"
 
-#: part/part.cpp:463
+#: part/part.cpp:478
 #, fuzzy, kde-format
 #| msgid "The source file could not be read."
 msgctxt "@info"
@@ -999,7 +1021,7 @@ msgid ""
 "possible to read from it."
 msgstr "स्रोत फाइल पढ़ नइ सकिस."
 
-#: part/part.cpp:474
+#: part/part.cpp:489
 #, fuzzy, kde-format
 #| msgid "Could not open the archive '%1' for reading"
 msgctxt "@info"
@@ -1008,7 +1030,7 @@ msgid ""
 "<nl/><nl/>Ark does not seem to support this file type."
 msgstr "अभिलेख '%1' ल पढ़े बर खोल नइ सकिस"
 
-#: part/part.cpp:481
+#: part/part.cpp:496
 #, fuzzy, kde-format
 #| msgid "Could not open the archive '%1' for reading"
 msgctxt "@info"
@@ -1018,20 +1040,20 @@ msgid ""
 "are installed."
 msgstr "अभिलेख '%1' ल पढ़े बर खोल नइ सकिस"
 
-#: part/part.cpp:530
+#: part/part.cpp:545
 #, fuzzy
 #| msgid "Extraction Dialog"
 msgid "Extraction settings"
 msgstr "एक्सट्रैक्सन गोठ"
 
-#: part/part.cpp:531
+#: part/part.cpp:546
 #, fuzzy
 #| msgctxt "to preview a file inside an archive"
 #| msgid "Pre&view"
 msgid "Preview settings"
 msgstr "प्रिव्यू (&v)"
 
-#: part/part.cpp:546
+#: part/part.cpp:561
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1039,11 +1061,11 @@ msgid ""
 "<nl/><nl/><message>%2</message>"
 msgstr ""
 
-#: part/part.cpp:625
+#: part/part.cpp:640
 msgid "Ark cannot open symlinks."
 msgstr ""
 
-#: part/part.cpp:737
+#: part/part.cpp:752
 #, fuzzy, kde-format
 #| msgid "The source file could not be read."
 msgid ""
@@ -1051,43 +1073,43 @@ msgid ""
 "archive?"
 msgstr "स्रोत फाइल पढ़ नइ सकिस."
 
-#: part/part.cpp:739
+#: part/part.cpp:754
 msgid "File modified"
 msgstr ""
 
-#: part/part.cpp:998
+#: part/part.cpp:1013
 #, fuzzy
 #| msgid "Add Files"
 msgctxt "@title:window"
 msgid "Add Files"
 msgstr "फाइल मन ल जोड़व"
 
-#: part/part.cpp:1005
+#: part/part.cpp:1020
 #, fuzzy
 #| msgid "Add Folder"
 msgctxt "@title:window"
 msgid "Add Folder"
 msgstr "फोल्डर जोड़व"
 
-#: part/part.cpp:1030
+#: part/part.cpp:1045
 msgid "Deleting these files is not undoable. Are you sure you want to do this?"
 msgstr ""
 
-#: part/part.cpp:1031
+#: part/part.cpp:1046
 #, fuzzy
 #| msgid "&Selected files only"
 msgctxt "@title:window"
 msgid "Delete files"
 msgstr "सिरिफ चुने गे फाइल (&S)"
 
-#: part/part.cpp:1063
+#: part/part.cpp:1078
 #, fuzzy
 #| msgid "Source archive"
 msgctxt "@title:window"
 msgid "Save Archive As"
 msgstr "स्रोत अभिलेख"
 
-#: part/part.cpp:1070
+#: part/part.cpp:1085
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1095,7 +1117,7 @@ msgid ""
 "want to overwrite it?"
 msgstr ""
 
-#: part/part.cpp:1084
+#: part/part.cpp:1099
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1103,7 +1125,7 @@ msgid ""
 "location. The archive does not exist anymore."
 msgstr ""
 
-#: part/part.cpp:1098
+#: part/part.cpp:1113
 #, fuzzy, kde-format
 #| msgid "Could not open the archive '%1' for writing."
 msgctxt "@info"
@@ -1179,61 +1201,83 @@ msgid ""
 "The archive reading failed with the following error: <message>%1</message>"
 msgstr ""
 
-#: plugins/libarchive/libarchivehandler.cpp:246
+#: plugins/libarchive/libarchivehandler.cpp:249
 msgid ""
-"This archive contains archive entries with absolute paths, which are not yet "
-"supported by ark."
+"This archive contains archive entries with absolute paths, which are not "
+"supported by Ark."
 msgstr ""
 
-#: plugins/libarchive/libarchivehandler.cpp:406
-#: plugins/libarchive/libarchivehandler.cpp:585
+#: plugins/libarchive/libarchivehandler.cpp:388
+#, fuzzy, kde-format
+#| msgid "Could not open the archive '%1' for writing."
+msgctxt "@info"
+msgid "Extraction failed at:<nl/><filename>%1</filename>"
+msgstr "अभिलेख '%1' ल लिखे बर खोल नइ सकिस."
+
+#: plugins/libarchive/libarchivehandler.cpp:442
+#: plugins/libarchive/libarchivehandler.cpp:635
 msgid "The archive reader could not be initialized."
 msgstr ""
 
-#: plugins/libarchive/libarchivehandler.cpp:419
-#: plugins/libarchive/libarchivehandler.cpp:598
+#: plugins/libarchive/libarchivehandler.cpp:455
+#: plugins/libarchive/libarchivehandler.cpp:648
 msgid "The source file could not be read."
 msgstr "स्रोत फाइल पढ़ नइ सकिस."
 
-#: plugins/libarchive/libarchivehandler.cpp:430
-#: plugins/libarchive/libarchivehandler.cpp:608
+#: plugins/libarchive/libarchivehandler.cpp:466
 #, fuzzy, kde-format
 #| msgid "Could not open the archive '%1' for writing."
 msgctxt "@info"
 msgid "Failed to create a temporary file to compress <filename>%1</filename>."
 msgstr "अभिलेख '%1' ल लिखे बर खोल नइ सकिस."
 
-#: plugins/libarchive/libarchivehandler.cpp:436
-#: plugins/libarchive/libarchivehandler.cpp:614
+#: plugins/libarchive/libarchivehandler.cpp:472
+#: plugins/libarchive/libarchivehandler.cpp:664
 msgid "The archive writer could not be initialized."
 msgstr ""
 
-#: plugins/libarchive/libarchivehandler.cpp:466
-#: plugins/libarchive/libarchivehandler.cpp:494
-#: plugins/libarchive/libarchivehandler.cpp:644
+#: plugins/libarchive/libarchivehandler.cpp:502
+#: plugins/libarchive/libarchivehandler.cpp:530
+#: plugins/libarchive/libarchivehandler.cpp:694
 #, kde-format
 msgctxt "@info"
 msgid ""
-"Setting the compression method failed with the following error: <message>%1</"
-"message>"
+"Setting the compression method failed with the following error:<nl/><message>"
+"%1</message>"
 msgstr ""
 
-#: plugins/libarchive/libarchivehandler.cpp:489
-#: plugins/libarchive/libarchivehandler.cpp:639
+#: plugins/libarchive/libarchivehandler.cpp:524
+#: plugins/libarchive/libarchivehandler.cpp:689
 #, kde-format
 msgid "The compression type '%1' is not supported by Ark."
 msgstr ""
 
-#: plugins/libarchive/libarchivehandler.cpp:501
-#: plugins/libarchive/libarchivehandler.cpp:650
+#: plugins/libarchive/libarchivehandler.cpp:538
+#: plugins/libarchive/libarchivehandler.cpp:701
 #, kde-format
 msgctxt "@info"
 msgid ""
-"Opening the archive for writing failed with the following error: <message>"
-"%1</message>"
+"Opening the archive for writing failed with the following error:<nl/"
+"><message>%1</message>"
 msgstr ""
 
-#: plugins/libarchive/libarchivehandler.cpp:830
+#: plugins/libarchive/libarchivehandler.cpp:605
+#: plugins/libarchive/libarchivehandler.cpp:732
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Compression failed while processing:<nl/><filename>%1</filename><nl/><nl/"
+">Operation aborted."
+msgstr ""
+
+#: plugins/libarchive/libarchivehandler.cpp:658
+#, fuzzy
+#| msgid "Could not open the archive '%1' for writing."
+msgctxt "@info"
+msgid "Failed to create a temporary file."
+msgstr "अभिलेख '%1' ल लिखे बर खोल नइ सकिस."
+
+#: plugins/libarchive/libarchivehandler.cpp:895
 #, kde-format
 msgctxt "@info Error in a message box"
 msgid "Ark could not compress <filename>%1</filename>:<nl/>%2"
