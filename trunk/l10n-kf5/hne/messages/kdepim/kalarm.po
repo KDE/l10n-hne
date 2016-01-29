@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-23 08:31+0000\n"
+"POT-Creation-Date: 2016-01-29 07:44+0000\n"
 "PO-Revision-Date: 2009-02-27 17:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -469,7 +469,7 @@ msgid ""
 "zone set in KAlarm's configuration dialog."
 msgstr ""
 
-#: alarmtimewidget.cpp:214 prefdlg.cpp:618
+#: alarmtimewidget.cpp:214 prefdlg.cpp:617
 msgctxt "@label:listbox"
 msgid "Time zone:"
 msgstr "समय छेत्र:"
@@ -525,7 +525,7 @@ msgstr "लागिन मं केअलार्म अपने अपन �
 msgid "Copyright 2001,2008 David Jarvie"
 msgstr "कापीराइट 2001-2008 डेविड जारवी"
 
-#: autostart/autostart.cpp:49 main.cpp:48
+#: autostart/autostart.cpp:49 main.cpp:54
 msgid "David Jarvie"
 msgstr "डेविड जारवी"
 
@@ -559,7 +559,7 @@ msgctxt "@title:group"
 msgid "Alarm Text"
 msgstr "अलार्म पाठ"
 
-#: birthdaydlg.cpp:83 prefdlg.cpp:1738
+#: birthdaydlg.cpp:83 prefdlg.cpp:1737
 msgctxt "@label:textbox"
 msgid "Prefix:"
 msgstr "प्रीफिक्स:"
@@ -801,25 +801,207 @@ msgctxt "@title:window"
 msgid "Choose Calendar"
 msgstr "कलेन्डर फाइल मन ल"
 
-#: commandoptions.cpp:189
+#: commandoptions.cpp:63
+msgid "Prompt for confirmation when alarm is acknowledged"
+msgstr "जब अलार्म के पावती मिले तहां पुस्टि बर पूछव"
+
+#: commandoptions.cpp:66
+msgid "Attach file to email (repeat as needed)"
+msgstr "फाइल ल ई-मेल मं संलग्न करव (जब जरूरी होथे दुहराव)"
+
+#: commandoptions.cpp:70
+msgid "Auto-close alarm window after --late-cancel period"
+msgstr "लेट कैंसल काल के बाद अलार्म विंडो ल अपने अपन बन्द करव"
+
+#: commandoptions.cpp:73
+msgid "Blind copy email to self"
+msgstr "स्वयं ल ई-मेल के नकल"
+
+#: commandoptions.cpp:76
+msgid "Beep when message is displayed"
+msgstr "जब संदेस प्रदर्सित करे जाए, बीप बजाव"
+
+#: commandoptions.cpp:79
+msgid "Message background color (name or hex 0xRRGGBB)"
+msgstr "संदेस के पिछोत अंगना रंग (नाम या हेक्स 0xRRGGBB)"
+
+#: commandoptions.cpp:83
+msgid "Message foreground color (name or hex 0xRRGGBB)"
+msgstr "संदेस के आगू तरफ रंग (नाम या हेक्स 0xRRGGBB)"
+
+#: commandoptions.cpp:87
+msgid "Cancel alarm with the specified event ID"
+msgstr "निरधारित घटना आईडी के साथ अलार्म को खारिज करव"
+
+#: commandoptions.cpp:91
+msgid "Disable the alarm"
+msgstr "अलार्म अक्छम करव"
+
+#: commandoptions.cpp:94
+#, fuzzy
+#| msgid "Disable the alarm"
+msgid "Disable monitoring of all alarms"
+msgstr "अलार्म अक्छम करव"
+
+#: commandoptions.cpp:97
+msgid "Execute a shell command line"
+msgstr "एक सेल कमांड लकीर चलाव"
+
+#: commandoptions.cpp:101
+msgid "Command line to generate alarm message text"
+msgstr ""
+
+#: commandoptions.cpp:105
+msgid "Display the alarm edit dialog to edit the specified alarm"
+msgstr "निरधारित अलार्म ल संपादित करे बर अलार्म संपादन गोठ देखाव"
+
+#: commandoptions.cpp:109
+msgid "Display the alarm edit dialog to edit a new display alarm"
+msgstr "नवा डिस्प्ले अलार्म ल संपादित करे बर अलार्म संपादन गोठ देखाव"
+
+#: commandoptions.cpp:112
+msgid "Display the alarm edit dialog to edit a new command alarm"
+msgstr "नवा कमांड अलार्म ल संपादित करे बर अलार्म संपादन गोठ देखाव"
+
+#: commandoptions.cpp:115
+msgid "Display the alarm edit dialog to edit a new email alarm"
+msgstr "नवा ईमेल अलार्म ल संपादित करे बर अलार्म संपादन गोठ देखाव"
+
+#: commandoptions.cpp:118
+#, fuzzy
+#| msgid "Display the alarm edit dialog to edit a new email alarm"
+msgid "Display the alarm edit dialog to edit a new audio alarm"
+msgstr "नवा ईमेल अलार्म ल संपादित करे बर अलार्म संपादन गोठ देखाव"
+
+#: commandoptions.cpp:121
+msgid "Display the alarm edit dialog, preset with a template"
+msgstr "टैम्प्लेट के साथ प्रीसेट सहित अलार्म संपादन गोठ देखाव"
+
+#: commandoptions.cpp:125
+msgid "File to display"
+msgstr "प्रदर्सन बर फाइल"
+
+#: commandoptions.cpp:129
+msgid "KMail identity to use as sender of email"
+msgstr "ईमेल प्रेसक के रूप उपयोग करे जाय वाला के-मेल पहिचान"
+
+#: commandoptions.cpp:133
+msgid "Interval between alarm repetitions"
+msgstr "अलार्म दोहराव के बीच अंतराल"
+
+#: commandoptions.cpp:137
+msgid "Show alarm as an event in KOrganizer"
+msgstr "अलार्म ल केओर्गनाइजर मं एक घटना के रूप मं देखाव"
+
+#: commandoptions.cpp:140
+msgid "Cancel alarm if more than 'period' late when triggered"
+msgstr "जब ट्रिगर होही तहां अलार्म कोखारिज करव यदि 'पीरियड' देरी अधिक हो जाए"
+
+#: commandoptions.cpp:145
+#, fuzzy
+#| msgctxt "@info:whatsthis"
+#| msgid "List of scheduled alarms"
+msgid "Output list of scheduled alarms to stdout"
+msgstr "नियत अलार्म के सूची"
+
+#: commandoptions.cpp:148
+msgid "Repeat alarm at every login"
+msgstr "हर एक लागिन मं अलार्म ल दुहराव"
+
+#: commandoptions.cpp:151
+msgid "Send an email to the given address (repeat as needed)"
+msgstr "दे गे पते मं एक ई-मेल भेजव (जब जरूरी होथे, दुहराव)"
+
+#: commandoptions.cpp:155
+msgid "Audio file to play once"
+msgstr "एक बार बजाय बर अवाज फाइल"
+
+#: commandoptions.cpp:159
+msgid "Audio file to play repeatedly"
+msgstr "बारंबार बजाय बर अवाज फाइल"
+
+#: commandoptions.cpp:163
+msgid "Specify alarm recurrence using iCalendar syntax"
+msgstr "आई-कलेन्डर सिंटेक्स के उपयोग से अलार्म आवृत्ति निरधारित करव"
+
+#: commandoptions.cpp:167
+#, fuzzy
+#| msgid "Display reminder in advance of alarm"
+msgid "Display reminder before or after alarm"
+msgstr "अलार्म से पहिली ही स्मरन देखाव"
+
+#: commandoptions.cpp:171
+#, fuzzy
+#| msgid "Display reminder once, before first alarm recurrence"
+msgid "Display reminder once, before or after first alarm recurrence"
+msgstr "पहली दफा अलार्म चले से पहिली स्मरन देखाव"
+
+#: commandoptions.cpp:175
+msgid "Number of times to repeat alarm (including initial occasion)"
+msgstr "अलार्म ल दोहराने के संख्या (सुरू के अवसर सहित)"
+
+#: commandoptions.cpp:179
+msgid "Speak the message when it is displayed"
+msgstr "जब संदेस प्रदर्सित होही तहां ओला बोलव"
+
+#: commandoptions.cpp:182
+msgid "Email subject line"
+msgstr "ईमेल विसय पंक्ति"
+
+#: commandoptions.cpp:187
+#, fuzzy
+#| msgid ""
+#| "Repeat until time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
+msgid "Simulate system time [[[yyyy-]mm-]dd-]hh:mm [TZ] (debug mode)"
+msgstr ""
+"ये समय तक [[[yyyy-]mm-]dd-]hh:mm [TZ], या तारीक yyyy-mm-dd [TZ] तक दुहराव"
+
+#: commandoptions.cpp:192
+msgid ""
+"Trigger alarm at time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
+msgstr ""
+"अलार्म ल ए समय ट्रिगर करव [[[yyyy-]mm-]dd-]hh:mm [TZ], या तारीक yyyy-mm-dd [TZ]"
+
+#: commandoptions.cpp:196
+msgid "Display system tray icon"
+msgstr "तंत्र तस्तरी चिनहा देखाव"
+
+#: commandoptions.cpp:199
+msgid "Trigger alarm with the specified event ID"
+msgstr "निरधारित घटना आईडी के साथ अलार्म ल ट्रिगर करव"
+
+#: commandoptions.cpp:203
+msgid "Repeat until time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
+msgstr ""
+"ये समय तक [[[yyyy-]mm-]dd-]hh:mm [TZ], या तारीक yyyy-mm-dd [TZ] तक दुहराव"
+
+#: commandoptions.cpp:207
+msgid "Volume to play audio file"
+msgstr "आडियो फाइल बजाय बर अवाज स्तर"
+
+#: commandoptions.cpp:220
+msgid "Message text to display"
+msgstr "प्रदर्सन बर पाठ संदेस"
+
+#: commandoptions.cpp:384
 #, kde-format
 msgctxt "@info:shell"
 msgid "<icode>%1</icode>: invalid email address"
 msgstr "<icode>%1</icode>: अवैध ईमेल पता"
 
-#: commandoptions.cpp:302 commandoptions.cpp:317 commandoptions.cpp:394
+#: commandoptions.cpp:498 commandoptions.cpp:513 commandoptions.cpp:590
 #, kde-format
 msgctxt "@info:shell"
 msgid "Invalid <icode>%1</icode> parameter for date-only alarm"
 msgstr "सिरिफ तारीक अलार्म बर अवैध <icode>%1</icode> पैरामीटर"
 
-#: commandoptions.cpp:306
+#: commandoptions.cpp:502
 #, kde-format
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> earlier than <icode>%2</icode>"
 msgstr "<icode>%2</icode> से पहिली <icode>%1</icode>"
 
-#: commandoptions.cpp:328
+#: commandoptions.cpp:524
 #, kde-format
 msgctxt "@info:shell"
 msgid ""
@@ -829,14 +1011,14 @@ msgstr ""
 "अवैध <icode>%1</icode> अउ <icode>%2</icode> पैरामीटर: बारंबारता <icode>%3</"
 "icode> अंतराल से अधिक हे"
 
-#: commandoptions.cpp:377
+#: commandoptions.cpp:573
 #, kde-format
 msgctxt "@info:shell"
 msgid ""
 "<icode>%1</icode> requires KAlarm to be compiled with QTextToSpeech support"
 msgstr ""
 
-#: commandoptions.cpp:479
+#: commandoptions.cpp:677
 #, fuzzy
 #| msgctxt "@info:shell"
 #| msgid ""
@@ -845,7 +1027,7 @@ msgctxt "@info:shell"
 msgid ": option(s) only valid with an appropriate action option or message"
 msgstr ": विकल्प सिरिफ एक संदेस के साथ वैध हे/<icode>%1</icode>/<icode>%2</icode>"
 
-#: commandoptions.cpp:499
+#: commandoptions.cpp:697
 msgctxt "@info:shell"
 msgid ""
 "\n"
@@ -854,25 +1036,25 @@ msgstr ""
 "\n"
 "--help  के उपयोग करव मिलत कमांड लकीर विकल्प मन के सूची प्राप्त करे बर.\n"
 
-#: commandoptions.cpp:528
+#: commandoptions.cpp:726
 #, kde-format
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> requires <icode>%2</icode>"
 msgstr "<icode>%1</icode> ल जरूरी हे <icode>%2</icode>"
 
-#: commandoptions.cpp:530
+#: commandoptions.cpp:728
 #, kde-format
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> requires <icode>%2</icode> or <icode>%3</icode>"
 msgstr "<icode>%1</icode> ल चाही <icode>%2</icode> या <icode>%3</icode>"
 
-#: commandoptions.cpp:535
+#: commandoptions.cpp:733
 #, kde-format
 msgctxt "@info:shell"
 msgid "Invalid <icode>%1</icode> parameter"
 msgstr "अवैध <icode>%1</icode> पैरामीटर"
 
-#: commandoptions.cpp:546
+#: commandoptions.cpp:738
 #, kde-format
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> incompatible with <icode>%2</icode>"
@@ -1962,7 +2144,7 @@ msgctxt "@info"
 msgid "Error saving alarm template"
 msgstr "अलार्म टैम्प्लेट सहेजे मं गलती होइस"
 
-#: kalarmapp.cpp:356
+#: kalarmapp.cpp:375
 #, fuzzy, kde-format
 #| msgctxt "@info:shell"
 #| msgid ""
@@ -1974,7 +2156,7 @@ msgstr ""
 "<icode>%1</icode>: कारक्रम <resource>%2</resource> नइ मिलिस या संपादन जा सके नइ "
 "हे"
 
-#: kalarmapp.cpp:384
+#: kalarmapp.cpp:403
 #, fuzzy, kde-format
 #| msgctxt "@info:shell"
 #| msgid ""
@@ -1986,7 +2168,7 @@ msgstr ""
 "<icode>%1</icode>: कारक्रम <resource>%2</resource> नइ मिलिस या संपादन जा सके नइ "
 "हे"
 
-#: kalarmapp.cpp:570
+#: kalarmapp.cpp:589
 msgctxt "@info"
 msgid ""
 "Time zones are not accessible:<nl/>KAlarm will use the UTC time zone.<nl/"
@@ -1994,26 +2176,26 @@ msgid ""
 "<application>ktimezoned</application> is installed.)"
 msgstr ""
 
-#: kalarmapp.cpp:649
+#: kalarmapp.cpp:668
 msgctxt "@info"
 msgid ""
 "Quitting will disable alarms (once any alarm message windows are closed)."
 msgstr ""
 "बाहिर होए से अलार्म अक्छम हो जाही (एक बार कोनो अलार्म संदेस से विंडो बन्द होथे )."
 
-#: kalarmapp.cpp:658
+#: kalarmapp.cpp:677
 msgctxt "@info"
 msgid "Quitting will cancel the scheduled Wake from Suspend."
 msgstr ""
 
-#: kalarmapp.cpp:670
+#: kalarmapp.cpp:689
 msgctxt "@info"
 msgid ""
 "Do you want to start KAlarm at login?<nl/>(Note that alarms will be disabled "
 "if KAlarm is not started.)"
 msgstr ""
 
-#: kalarmapp.cpp:1130
+#: kalarmapp.cpp:1139
 msgctxt "@info"
 msgid ""
 "Alarms cannot be created or updated, because no writable active alarm "
@@ -2021,17 +2203,17 @@ msgid ""
 "Calendars</interface> to check or change calendar statuses."
 msgstr ""
 
-#: kalarmapp.cpp:2149
+#: kalarmapp.cpp:2158
 msgctxt "@info"
 msgid "Error creating temporary script file"
 msgstr "अस्थाई स्क्रिप्ट फाइल बनाए मं गलती"
 
-#: kalarmapp.cpp:2238
+#: kalarmapp.cpp:2247
 msgctxt "@info"
 msgid "Pre-alarm action:"
 msgstr "प्री-अलार्म काम:"
 
-#: kalarmapp.cpp:2244
+#: kalarmapp.cpp:2253
 msgctxt "@info"
 msgid "Post-alarm action:"
 msgstr "पोस्ट-अलार्म काम:"
@@ -2300,7 +2482,7 @@ msgid "Show alarm times in system tray tooltip"
 msgstr "तंत्र तस्तरी औजारयुक्ति मं अलार्म समय देखाव"
 
 #. i18n: ectx: whatsthis, entry (ShowTooltipAlarmTime), group (General)
-#: kalarmconfig.kcfg:157 prefdlg.cpp:1725
+#: kalarmconfig.kcfg:157 prefdlg.cpp:1724
 msgctxt "@info:whatsthis"
 msgid ""
 "Specify whether to show in the system tray tooltip, the time at which each "
@@ -2314,7 +2496,7 @@ msgid "Show time to alarms in system tray tooltip"
 msgstr "तंत्र तस्तरी औजार युक्ति मं अलार्म बर समय देखाव"
 
 #. i18n: ectx: whatsthis, entry (ShowTooltipTimeToAlarm), group (General)
-#: kalarmconfig.kcfg:163 prefdlg.cpp:1731
+#: kalarmconfig.kcfg:163 prefdlg.cpp:1730
 msgctxt "@info:whatsthis"
 msgid ""
 "Specify whether to show in the system tray tooltip, how long until each "
@@ -2328,7 +2510,7 @@ msgid "Time-to-alarm prefix in system tray tooltip"
 msgstr "तंत्र तस्तरी औजार युक्ति मं अलार्म-के-लिए-समय प्रीफिक्स"
 
 #. i18n: ectx: whatsthis, entry (TooltipTimeToPrefix), group (General)
-#: kalarmconfig.kcfg:169 prefdlg.cpp:1743
+#: kalarmconfig.kcfg:169 prefdlg.cpp:1742
 msgctxt "@info:whatsthis"
 msgid ""
 "Enter the text to be displayed in front of the time until the alarm, in the "
@@ -2482,7 +2664,7 @@ msgid "Disabled alarm color"
 msgstr "अलार्म रंग अक्छम करव"
 
 #. i18n: ectx: whatsthis, entry (DisabledColour), group (General)
-#: kalarmconfig.kcfg:227 prefdlg.cpp:1766
+#: kalarmconfig.kcfg:227 prefdlg.cpp:1765
 msgctxt "@info:whatsthis"
 msgid "Choose the text color in the alarm list for disabled alarms."
 msgstr "अलार्म सूची मं अक्छम करे अलार्म के पाठ रंग चुनव."
@@ -2494,7 +2676,7 @@ msgid "Archived alarm color"
 msgstr "अभिलेखित अलार्म रंग"
 
 #. i18n: ectx: whatsthis, entry (ArchivedColour), group (General)
-#: kalarmconfig.kcfg:233 prefdlg.cpp:1779
+#: kalarmconfig.kcfg:233 prefdlg.cpp:1778
 msgctxt "@info:whatsthis"
 msgid "Choose the text color in the alarm list for archived alarms."
 msgstr "अभिलेखित अलार्म बर अलार्म सूची मं पाठ रंग चुनव."
@@ -2731,7 +2913,7 @@ msgid "Recurrence period"
 msgstr "बारंबारता के अवधि"
 
 #. i18n: ectx: whatsthis, entry (DefaultRecurPeriod), group (Defaults)
-#: kalarmconfig.kcfg:334 prefdlg.cpp:1279
+#: kalarmconfig.kcfg:334 prefdlg.cpp:1278
 msgctxt "@info:whatsthis"
 msgid "The default setting for the recurrence rule in the alarm edit dialog."
 msgstr "अलार्म संपादन गोठ मं बारंबारता के नियम बर डिफाल्ट सेटिंग."
@@ -2755,7 +2937,7 @@ msgid "Hourly/minutely"
 msgstr "घंटा मं/मिनट मं"
 
 #. i18n: ectx: label, entry (DefaultFeb29Type), group (Defaults)
-#: kalarmconfig.kcfg:347 prefdlg.cpp:1287
+#: kalarmconfig.kcfg:347 prefdlg.cpp:1286
 msgctxt "@label"
 msgid "In non-leap years, repeat yearly February 29th alarms on:"
 msgstr "गैर लीप सालों मं हर एक २९ फरवरी ल वार्सिक अलार्म एखर वक्त बजाव:"
@@ -2901,7 +3083,7 @@ msgid "Confirm alarm deletions"
 msgstr "अलार्म मेटाव के पुस्टि करव"
 
 #. i18n: ectx: whatsthis, entry (Base_ConfirmAlarmDeletion), group (Notification Messages)
-#: kalarmconfig.kcfg:399 prefdlg.cpp:434
+#: kalarmconfig.kcfg:399 prefdlg.cpp:433
 msgctxt "@info:whatsthis"
 msgid "Check to be prompted for confirmation each time you delete an alarm."
 msgstr ""
@@ -2914,7 +3096,7 @@ msgid "Notify when remote emails are queued"
 msgstr "जब रिमोट ई-मेल कतारबद्ध होही तहां सूचित करव"
 
 #. i18n: ectx: whatsthis, entry (Base_EmailQueuedNotify), group (Notification Messages)
-#: kalarmconfig.kcfg:404 prefdlg.cpp:1034
+#: kalarmconfig.kcfg:404 prefdlg.cpp:1033
 msgctxt "@info:whatsthis"
 msgid ""
 "Display a notification message whenever an email alarm has queued an email "
@@ -3243,200 +3425,22 @@ msgid ""
 "larger step (6 hours / 5 minutes)."
 msgstr ""
 
-#: main.cpp:44
+#: main.cpp:48
 msgid "KAlarm"
 msgstr "के-अलार्म"
 
-#: main.cpp:45
+#: main.cpp:50
 msgid "Personal alarm message, command and email scheduler for KDE"
 msgstr "केडीई बर निजी अलार्म संदेस, कमांड अउ ई-मेल सेड्यूलर"
 
-#: main.cpp:47
+#: main.cpp:52
 #, fuzzy, kde-format
 msgid "Copyright 2001-%1, David Jarvie"
 msgstr "कापीराइट 2001-2008 डेविड जारवी"
 
-#: main.cpp:55
-msgid "Prompt for confirmation when alarm is acknowledged"
-msgstr "जब अलार्म के पावती मिले तहां पुस्टि बर पूछव"
-
-#: main.cpp:57
-msgid "Attach file to email (repeat as needed)"
-msgstr "फाइल ल ई-मेल मं संलग्न करव (जब जरूरी होथे दुहराव)"
-
-#: main.cpp:58
-msgid "Auto-close alarm window after --late-cancel period"
-msgstr "लेट कैंसल काल के बाद अलार्म विंडो ल अपने अपन बन्द करव"
-
-#: main.cpp:59
-msgid "Blind copy email to self"
-msgstr "स्वयं ल ई-मेल के नकल"
-
-#: main.cpp:61
-msgid "Beep when message is displayed"
-msgstr "जब संदेस प्रदर्सित करे जाए, बीप बजाव"
-
-#: main.cpp:64
-msgid "Message background color (name or hex 0xRRGGBB)"
-msgstr "संदेस के पिछोत अंगना रंग (नाम या हेक्स 0xRRGGBB)"
-
-#: main.cpp:67
-msgid "Message foreground color (name or hex 0xRRGGBB)"
-msgstr "संदेस के आगू तरफ रंग (नाम या हेक्स 0xRRGGBB)"
-
-#: main.cpp:68
-msgid "Cancel alarm with the specified event ID"
-msgstr "निरधारित घटना आईडी के साथ अलार्म को खारिज करव"
-
-#: main.cpp:70
-msgid "Disable the alarm"
-msgstr "अलार्म अक्छम करव"
-
-#: main.cpp:71
-#, fuzzy
-#| msgid "Disable the alarm"
-msgid "Disable monitoring of all alarms"
-msgstr "अलार्म अक्छम करव"
-
-#: main.cpp:73
-msgid "Execute a shell command line"
-msgstr "एक सेल कमांड लकीर चलाव"
-
-#: main.cpp:75
-msgid "Command line to generate alarm message text"
-msgstr ""
-
-#: main.cpp:76
-msgid "Display the alarm edit dialog to edit the specified alarm"
-msgstr "निरधारित अलार्म ल संपादित करे बर अलार्म संपादन गोठ देखाव"
-
-#: main.cpp:77
-msgid "Display the alarm edit dialog to edit a new display alarm"
-msgstr "नवा डिस्प्ले अलार्म ल संपादित करे बर अलार्म संपादन गोठ देखाव"
-
-#: main.cpp:78
-msgid "Display the alarm edit dialog to edit a new command alarm"
-msgstr "नवा कमांड अलार्म ल संपादित करे बर अलार्म संपादन गोठ देखाव"
-
-#: main.cpp:79
-msgid "Display the alarm edit dialog to edit a new email alarm"
-msgstr "नवा ईमेल अलार्म ल संपादित करे बर अलार्म संपादन गोठ देखाव"
-
-#: main.cpp:80
-#, fuzzy
-#| msgid "Display the alarm edit dialog to edit a new email alarm"
-msgid "Display the alarm edit dialog to edit a new audio alarm"
-msgstr "नवा ईमेल अलार्म ल संपादित करे बर अलार्म संपादन गोठ देखाव"
-
-#: main.cpp:81
-msgid "Display the alarm edit dialog, preset with a template"
-msgstr "टैम्प्लेट के साथ प्रीसेट सहित अलार्म संपादन गोठ देखाव"
-
-#: main.cpp:83
-msgid "File to display"
-msgstr "प्रदर्सन बर फाइल"
-
-#: main.cpp:85
-msgid "KMail identity to use as sender of email"
-msgstr "ईमेल प्रेसक के रूप उपयोग करे जाय वाला के-मेल पहिचान"
-
-#: main.cpp:87
-msgid "Interval between alarm repetitions"
-msgstr "अलार्म दोहराव के बीच अंतराल"
-
-#: main.cpp:89
-msgid "Show alarm as an event in KOrganizer"
-msgstr "अलार्म ल केओर्गनाइजर मं एक घटना के रूप मं देखाव"
-
-#: main.cpp:91
-msgid "Cancel alarm if more than 'period' late when triggered"
-msgstr "जब ट्रिगर होही तहां अलार्म कोखारिज करव यदि 'पीरियड' देरी अधिक हो जाए"
-
-#: main.cpp:92
-#, fuzzy
-#| msgctxt "@info:whatsthis"
-#| msgid "List of scheduled alarms"
-msgid "Output list of scheduled alarms to stdout"
-msgstr "नियत अलार्म के सूची"
-
-#: main.cpp:94
-msgid "Repeat alarm at every login"
-msgstr "हर एक लागिन मं अलार्म ल दुहराव"
-
-#: main.cpp:96
-msgid "Send an email to the given address (repeat as needed)"
-msgstr "दे गे पते मं एक ई-मेल भेजव (जब जरूरी होथे, दुहराव)"
-
-#: main.cpp:98
-msgid "Audio file to play once"
-msgstr "एक बार बजाय बर अवाज फाइल"
-
-#: main.cpp:100
-msgid "Audio file to play repeatedly"
-msgstr "बारंबार बजाय बर अवाज फाइल"
-
-#: main.cpp:101
-msgid "Specify alarm recurrence using iCalendar syntax"
-msgstr "आई-कलेन्डर सिंटेक्स के उपयोग से अलार्म आवृत्ति निरधारित करव"
-
-#: main.cpp:103
-#, fuzzy
-#| msgid "Display reminder in advance of alarm"
-msgid "Display reminder before or after alarm"
-msgstr "अलार्म से पहिली ही स्मरन देखाव"
-
-#: main.cpp:104
-#, fuzzy
-#| msgid "Display reminder once, before first alarm recurrence"
-msgid "Display reminder once, before or after first alarm recurrence"
-msgstr "पहली दफा अलार्म चले से पहिली स्मरन देखाव"
-
-#: main.cpp:106
-msgid "Number of times to repeat alarm (including initial occasion)"
-msgstr "अलार्म ल दोहराने के संख्या (सुरू के अवसर सहित)"
-
-#: main.cpp:108
-msgid "Speak the message when it is displayed"
-msgstr "जब संदेस प्रदर्सित होही तहां ओला बोलव"
-
-#: main.cpp:110
-msgid "Email subject line"
-msgstr "ईमेल विसय पंक्ति"
-
-#: main.cpp:112
-#, fuzzy
-#| msgid ""
-#| "Repeat until time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
-msgid "Simulate system time [[[yyyy-]mm-]dd-]hh:mm [TZ] (debug mode)"
-msgstr ""
-"ये समय तक [[[yyyy-]mm-]dd-]hh:mm [TZ], या तारीक yyyy-mm-dd [TZ] तक दुहराव"
-
-#: main.cpp:115
-msgid ""
-"Trigger alarm at time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
-msgstr ""
-"अलार्म ल ए समय ट्रिगर करव [[[yyyy-]mm-]dd-]hh:mm [TZ], या तारीक yyyy-mm-dd [TZ]"
-
-#: main.cpp:116
-msgid "Display system tray icon"
-msgstr "तंत्र तस्तरी चिनहा देखाव"
-
-#: main.cpp:117
-msgid "Trigger alarm with the specified event ID"
-msgstr "निरधारित घटना आईडी के साथ अलार्म ल ट्रिगर करव"
-
-#: main.cpp:119
-msgid "Repeat until time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
-msgstr ""
-"ये समय तक [[[yyyy-]mm-]dd-]hh:mm [TZ], या तारीक yyyy-mm-dd [TZ] तक दुहराव"
-
-#: main.cpp:121
-msgid "Volume to play audio file"
-msgstr "आडियो फाइल बजाय बर अवाज स्तर"
-
-#: main.cpp:122
-msgid "Message text to display"
-msgstr "प्रदर्सन बर पाठ संदेस"
+#: main.cpp:54
+msgid "Author"
+msgstr "लेखक"
 
 #: mainwindow.cpp:115
 msgctxt "@action"
@@ -3458,7 +3462,7 @@ msgctxt "@option:check"
 msgid "Show time until alarm"
 msgstr "अगले अलार्म के बचा समय देखाव"
 
-#: mainwindow.cpp:404
+#: mainwindow.cpp:405
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -3466,37 +3470,37 @@ msgid ""
 "corrupted)"
 msgstr "मेन्यू बनाए मं अक्छम (सायद <filename>%1</filename> गंवा गे हे या खराब हे)"
 
-#: mainwindow.cpp:425
+#: mainwindow.cpp:426
 msgctxt "@action"
 msgid "&Templates..."
 msgstr "टैम्प्लेट्स... (&T)"
 
-#: mainwindow.cpp:429
+#: mainwindow.cpp:430
 msgctxt "@action"
 msgid "&New"
 msgstr "नवा (&N)"
 
-#: mainwindow.cpp:460
+#: mainwindow.cpp:461
 msgctxt "@action"
 msgid "Create Tem&plate..."
 msgstr "टैम्प्लेट बनाव... (&p)"
 
-#: mainwindow.cpp:464
+#: mainwindow.cpp:465
 msgctxt "@action"
 msgid "&Copy..."
 msgstr "नकल... (&C)"
 
-#: mainwindow.cpp:469 resourceselector.cpp:363
+#: mainwindow.cpp:470 resourceselector.cpp:363
 msgctxt "@action"
 msgid "&Edit..."
 msgstr "संपादन... (&E)"
 
-#: mainwindow.cpp:474
+#: mainwindow.cpp:475
 msgctxt "@action"
 msgid "&Delete"
 msgstr "मेटाव (&D)"
 
-#: mainwindow.cpp:480
+#: mainwindow.cpp:481
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "Resource Configuration"
@@ -3504,17 +3508,17 @@ msgctxt "@action"
 msgid "Delete Without Confirmation"
 msgstr "रिसोर्स कान्फिगरेसन"
 
-#: mainwindow.cpp:485
+#: mainwindow.cpp:486
 msgctxt "@action"
 msgid "Reac&tivate"
 msgstr "फिर से सक्रिय करव (&t)"
 
-#: mainwindow.cpp:495
+#: mainwindow.cpp:496
 msgctxt "@action"
 msgid "Wake From Suspend..."
 msgstr ""
 
-#: mainwindow.cpp:512
+#: mainwindow.cpp:513
 #, fuzzy
 #| msgctxt "@info:tooltip"
 #| msgid "Show Archived Alarms"
@@ -3522,12 +3526,12 @@ msgctxt "@action"
 msgid "Show Archi&ved Alarms"
 msgstr "अभिलेखित अलार्म देखाव"
 
-#: mainwindow.cpp:517
+#: mainwindow.cpp:518
 msgctxt "@action"
 msgid "Show in System &Tray"
 msgstr "तंत्र तस्तरी मं देखाव (&T)"
 
-#: mainwindow.cpp:521
+#: mainwindow.cpp:522
 #, fuzzy
 #| msgctxt "@info/plain"
 #| msgid "Calendar Files"
@@ -3535,34 +3539,34 @@ msgctxt "@action"
 msgid "Show &Calendars"
 msgstr "कलेन्डर फाइल मन ल"
 
-#: mainwindow.cpp:531
+#: mainwindow.cpp:532
 msgctxt "@action"
 msgid "Import &Alarms..."
 msgstr "अलार्म आयात करव... (&A)"
 
-#: mainwindow.cpp:535
+#: mainwindow.cpp:536
 msgctxt "@action"
 msgid "Import &Birthdays..."
 msgstr "जन्मतारीक आयात करव... (&B)"
 
-#: mainwindow.cpp:539
+#: mainwindow.cpp:540
 #, fuzzy
 msgctxt "@action"
 msgid "E&xport Selected Alarms..."
 msgstr "अलार्म आयात करव... (&A)"
 
-#: mainwindow.cpp:543 resourceselector.cpp:381
+#: mainwindow.cpp:544 resourceselector.cpp:381
 #, fuzzy
 msgctxt "@action"
 msgid "E&xport..."
 msgstr "आयात करव... (&p)"
 
-#: mainwindow.cpp:547
+#: mainwindow.cpp:548
 msgctxt "@action"
 msgid "&Refresh Alarms"
 msgstr "अलार्म ताजा करव (&R)"
 
-#: mainwindow.cpp:757
+#: mainwindow.cpp:758
 #, kde-format
 msgctxt "@info"
 msgid "Do you really want to delete the selected alarm?"
@@ -3570,76 +3574,76 @@ msgid_plural "Do you really want to delete the %1 selected alarms?"
 msgstr[0] "का आप मन सचमुच चुने गे अलार्म ल मिटाना चाहथो ?"
 msgstr[1] "का आप मन सचमुच %1 चुने गे अलार्म ल मिटाना चाहथो ?"
 
-#: mainwindow.cpp:759
+#: mainwindow.cpp:760
 msgctxt "@title:window"
 msgid "Delete Alarm"
 msgid_plural "Delete Alarms"
 msgstr[0] "अलार्म ल मेटाव"
 msgstr[1] "अलार्मों ल मेटाव"
 
-#: mainwindow.cpp:760 templatedlg.cpp:188
+#: mainwindow.cpp:761 templatedlg.cpp:188
 msgctxt "@action:button"
 msgid "&Delete"
 msgstr "मेटाव (&D)"
 
-#: mainwindow.cpp:873
+#: mainwindow.cpp:874
 msgctxt "@info:tooltip"
 msgid "Hide Archived Alarms"
 msgstr "अभिलेखित अलार्म लुकाव"
 
-#: mainwindow.cpp:874
+#: mainwindow.cpp:875
 msgctxt "@info:tooltip"
 msgid "Show Archived Alarms"
 msgstr "अभिलेखित अलार्म देखाव"
 
-#: mainwindow.cpp:947
+#: mainwindow.cpp:948
 msgctxt "@info"
 msgid "Import birthdays"
 msgstr "जन्मतारीक आयात करव"
 
-#: mainwindow.cpp:1117
+#: mainwindow.cpp:1118
 #, kde-format
 msgctxt "@action Undo/Redo [action]"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: mainwindow.cpp:1118
+#: mainwindow.cpp:1119
 #, kde-format
 msgctxt "@action Undo [action]: message"
 msgid "%1 %2: %3"
 msgstr "%1 %2: %3"
 
-#: mainwindow.cpp:1384
+#: mainwindow.cpp:1385
 msgctxt "@item:inlistbox"
 msgid "Display Alarm"
 msgstr "डिस्प्ले अलार्म"
 
-#: mainwindow.cpp:1386
+#: mainwindow.cpp:1387
 msgctxt "@item:inlistbox"
 msgid "Email Alarm"
 msgstr "ईमेल अलार्म"
 
-#: mainwindow.cpp:1388
+#: mainwindow.cpp:1389
 msgctxt "@item:inlistbox"
 msgid "Command Alarm"
 msgstr "कमांड अलार्म"
 
-#: mainwindow.cpp:1390
+#: mainwindow.cpp:1391
 msgctxt "@title:window"
 msgid "Alarm Type"
 msgstr "अलार्म किसिम"
 
-#: mainwindow.cpp:1391
+#: mainwindow.cpp:1392
 msgctxt "@info"
 msgid "Choose alarm type to create:"
 msgstr "अलार्म बनाए बर किसिम चुनव:"
 
-#: mainwindow.cpp:1522
+#: mainwindow.cpp:1523
 msgctxt "@action"
 msgid "Ena&ble"
 msgstr "सक्छम करव (&b)"
 
-#: mainwindow.cpp:1522
+#: mainwindow.cpp:1523
 msgctxt "@action"
 msgid "Disa&ble"
 msgstr "अक्छम करव (&b)"
@@ -3943,97 +3947,97 @@ msgctxt "@action"
 msgid "New Alarm From &Template"
 msgstr "टैम्प्लेट से नवा अलार्म तैयार करव"
 
-#: prefdlg.cpp:151
+#: prefdlg.cpp:150
 msgctxt "@title:window"
 msgid "Configure"
 msgstr "कान्फिगर करव"
 
-#: prefdlg.cpp:158
+#: prefdlg.cpp:157
 msgctxt "@title:tab General preferences"
 msgid "General"
 msgstr "सामान्य"
 
-#: prefdlg.cpp:159
+#: prefdlg.cpp:158
 msgctxt "@title General preferences"
 msgid "General"
 msgstr "सामान्य"
 
-#: prefdlg.cpp:164
+#: prefdlg.cpp:163
 msgctxt "@title:tab"
 msgid "Time & Date"
 msgstr "समय अउ तारीक"
 
-#: prefdlg.cpp:165
+#: prefdlg.cpp:164
 msgctxt "@title"
 msgid "Time and Date"
 msgstr "तारीक अउ समय"
 
-#: prefdlg.cpp:170
+#: prefdlg.cpp:169
 msgctxt "@title:tab"
 msgid "Storage"
 msgstr "भंडारन"
 
-#: prefdlg.cpp:171
+#: prefdlg.cpp:170
 msgctxt "@title"
 msgid "Alarm Storage"
 msgstr "अलार्म भंडारन"
 
-#: prefdlg.cpp:176
+#: prefdlg.cpp:175
 msgctxt "@title:tab Email preferences"
 msgid "Email"
 msgstr "ईमेल"
 
-#: prefdlg.cpp:177
+#: prefdlg.cpp:176
 msgctxt "@title"
 msgid "Email Alarm Settings"
 msgstr "ईमेल अलार्म सेटिंग"
 
-#: prefdlg.cpp:182
+#: prefdlg.cpp:181
 msgctxt "@title:tab"
 msgid "View"
 msgstr "दृस्य"
 
-#: prefdlg.cpp:183
+#: prefdlg.cpp:182
 msgctxt "@title"
 msgid "View Settings"
 msgstr "दृस्य सेटिंग"
 
-#: prefdlg.cpp:188
+#: prefdlg.cpp:187
 msgctxt "@title:tab"
 msgid "Edit"
 msgstr "संपादन"
 
-#: prefdlg.cpp:189
+#: prefdlg.cpp:188
 msgctxt "@title"
 msgid "Default Alarm Edit Settings"
 msgstr "डिफाल्ट अलार्म संपादन सेटिंग"
 
-#: prefdlg.cpp:264
+#: prefdlg.cpp:263
 msgctxt "@info"
 msgid "Reset all tabs to their default values, or only reset the current tab?"
 msgstr ""
 
-#: prefdlg.cpp:266
+#: prefdlg.cpp:265
 msgctxt "@action:button Reset ALL tabs"
 msgid "&All"
 msgstr ""
 
-#: prefdlg.cpp:267
+#: prefdlg.cpp:266
 msgctxt "@action:button Reset the CURRENT tab"
 msgid "C&urrent"
 msgstr ""
 
-#: prefdlg.cpp:410
+#: prefdlg.cpp:409
 msgctxt "@title:group"
 msgid "Run Mode"
 msgstr "रन मोड"
 
-#: prefdlg.cpp:417
+#: prefdlg.cpp:416
 msgctxt "@option:check"
 msgid "Start at login"
 msgstr "लागिन मं चालू हों"
 
-#: prefdlg.cpp:420
+#: prefdlg.cpp:419
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>Automatically start <application>KAlarm</application> whenever you "
@@ -4041,12 +4045,12 @@ msgid ""
 "intend to discontinue use of <application>KAlarm</application>.</para>"
 msgstr ""
 
-#: prefdlg.cpp:424
+#: prefdlg.cpp:423
 msgctxt "@option:check"
 msgid "Warn before quitting"
 msgstr "बाहिर होए से पहिली चेतावनी देखाव"
 
-#: prefdlg.cpp:425
+#: prefdlg.cpp:424
 msgctxt "@info:whatsthis"
 msgid ""
 "Check to display a warning prompt before quitting <application>KAlarm</"
@@ -4055,7 +4059,7 @@ msgstr ""
 "<application>केअलार्म</application> से बाहिर होए से पहिली चेतावनी संदेस देखाय जाय के "
 "लिए चुनव."
 
-#: prefdlg.cpp:429
+#: prefdlg.cpp:428
 #, fuzzy
 #| msgctxt "@action:button"
 #| msgid "Delete"
@@ -4063,18 +4067,18 @@ msgctxt "@title:group"
 msgid "Deletion"
 msgstr "मेटाव"
 
-#: prefdlg.cpp:432
+#: prefdlg.cpp:431
 msgctxt "@option:check"
 msgid "Confirm alarm deletions"
 msgstr "अलार्म मेटाव के पुस्टि करव"
 
-#: prefdlg.cpp:442
+#: prefdlg.cpp:441
 #, fuzzy
 msgctxt "@label:spinbox"
 msgid "Default defer time interval:"
 msgstr "समय अंतराल तक बर टालें:"
 
-#: prefdlg.cpp:448
+#: prefdlg.cpp:447
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid ""
@@ -4082,31 +4086,31 @@ msgid ""
 "the Defer Alarm dialog."
 msgstr "अलार्म संपादन गोठ मं परयोग करे बर डिफाल्ट अवाज फाइल भरव."
 
-#: prefdlg.cpp:453
+#: prefdlg.cpp:452
 msgctxt "@title:group"
 msgid "Terminal for Command Alarms"
 msgstr "कमांड अलार्म बर टर्मिनल"
 
-#: prefdlg.cpp:454
+#: prefdlg.cpp:453
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose which application to use when a command alarm is executed in a "
 "terminal window"
 msgstr ""
 
-#: prefdlg.cpp:481
+#: prefdlg.cpp:480
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Check to execute command alarms in a terminal window by <icode>%1</icode>"
 msgstr "<icode>%1</icode> के साथ कमांड अलार्म ल टर्मिनल विंडो मं चलाय बर चुनव"
 
-#: prefdlg.cpp:490
+#: prefdlg.cpp:489
 msgctxt "@option:radio Other terminal window command"
 msgid "Other:"
 msgstr "अन्यः"
 
-#: prefdlg.cpp:500
+#: prefdlg.cpp:499
 msgctxt "@info:whatsthis"
 msgid ""
 "Enter the full command line needed to execute a command in your chosen "
@@ -4115,37 +4119,37 @@ msgid ""
 "details of special codes to tailor the command line."
 msgstr ""
 
-#: prefdlg.cpp:546
+#: prefdlg.cpp:545
 #, kde-format
 msgctxt "@info"
 msgid "Command to invoke terminal window not found: <command>%1</command>"
 msgstr "टर्मिनल विंडो चालू करे के कमांड नइ मिलिस: <command>%1</command>"
 
-#: prefdlg.cpp:589
+#: prefdlg.cpp:588
 msgctxt "@info"
 msgid ""
 "You should not uncheck this option unless you intend to discontinue use of "
 "<application>KAlarm</application>"
 msgstr ""
 
-#: prefdlg.cpp:633
+#: prefdlg.cpp:632
 msgctxt "@info:whatsthis"
 msgid ""
 "Select the time zone which <application>KAlarm</application> should use as "
 "its default for displaying and entering dates and times."
 msgstr ""
 
-#: prefdlg.cpp:648
+#: prefdlg.cpp:647
 msgctxt "@label:listbox"
 msgid "Holiday region:"
 msgstr ""
 
-#: prefdlg.cpp:657
+#: prefdlg.cpp:656
 msgctxt "@info:whatsthis"
 msgid "Select which holiday region to use"
 msgstr ""
 
-#: prefdlg.cpp:665
+#: prefdlg.cpp:664
 #, fuzzy, kde-format
 #| msgctxt "@action Undo/Redo [action]"
 #| msgid "%1 %2"
@@ -4153,7 +4157,7 @@ msgctxt "Holiday region, region language"
 msgid "%1 (%2)"
 msgstr "%1 %2"
 
-#: prefdlg.cpp:669
+#: prefdlg.cpp:668
 #, fuzzy
 #| msgctxt "@info/plain No recurrence"
 #| msgid "None"
@@ -4161,12 +4165,12 @@ msgctxt "No holiday region"
 msgid "None"
 msgstr "कुछ नइ"
 
-#: prefdlg.cpp:686
+#: prefdlg.cpp:685
 msgctxt "@label:spinbox"
 msgid "Start of day for date-only alarms:"
 msgstr "सिरिफ-दिन के अलार्म बर चालू होए के दिन:"
 
-#: prefdlg.cpp:693
+#: prefdlg.cpp:692
 #, fuzzy, kde-format
 #| msgctxt "@info:whatsthis"
 #| msgid "<para>Enter the start time of the working day.</para><para>%1</para>"
@@ -4176,39 +4180,39 @@ msgid ""
 "</para><para>%1</para>"
 msgstr "<para>काम के दिन के चालू समय भरव.</para><para>%1</para>"
 
-#: prefdlg.cpp:698
+#: prefdlg.cpp:697
 msgctxt "@title:group"
 msgid "Working Hours"
 msgstr "काम घंटे"
 
-#: prefdlg.cpp:715
+#: prefdlg.cpp:714
 msgctxt "@info:whatsthis"
 msgid "Check the days in the week which are work days"
 msgstr "हफ्ता के दिनों ल चुनव जऊन कि काम के दिन हे"
 
-#: prefdlg.cpp:726
+#: prefdlg.cpp:725
 msgctxt "@label:spinbox"
 msgid "Daily start time:"
 msgstr "नित्य चालू समय:"
 
-#: prefdlg.cpp:733
+#: prefdlg.cpp:732
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "<para>Enter the start time of the working day.</para><para>%1</para>"
 msgstr "<para>काम के दिन के चालू समय भरव.</para><para>%1</para>"
 
-#: prefdlg.cpp:746
+#: prefdlg.cpp:745
 msgctxt "@label:spinbox"
 msgid "Daily end time:"
 msgstr "नित्य के खतम समय:"
 
-#: prefdlg.cpp:753
+#: prefdlg.cpp:752
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "<para>Enter the end time of the working day.</para><para>%1</para>"
 msgstr "<para>काम के दिन के खतम समय भरव.</para><para>%1</para>"
 
-#: prefdlg.cpp:758
+#: prefdlg.cpp:757
 #, fuzzy
 #| msgctxt "@option:check"
 #| msgid "Show in KOrganizer"
@@ -4216,12 +4220,12 @@ msgctxt "@title:group"
 msgid "KOrganizer"
 msgstr "के-ओर्गनाइजर मं देखाव"
 
-#: prefdlg.cpp:769
+#: prefdlg.cpp:768
 msgctxt "@label:spinbox"
 msgid "KOrganizer event duration:"
 msgstr ""
 
-#: prefdlg.cpp:776
+#: prefdlg.cpp:775
 #, fuzzy, kde-format
 #| msgctxt "@info:whatsthis"
 #| msgid "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
@@ -4231,12 +4235,12 @@ msgid ""
 "copied to KOrganizer.</para><para>%1</para>"
 msgstr "<para>अलार्म ल दोहराने बर आखिरी तारीक भरव.</para><para>%1</para>"
 
-#: prefdlg.cpp:860
+#: prefdlg.cpp:859
 msgctxt "@title:group"
 msgid "New Alarms && Templates"
 msgstr "नवा अलार्म टैम्प्लेट्स (&&)"
 
-#: prefdlg.cpp:867
+#: prefdlg.cpp:866
 #, fuzzy
 #| msgctxt "@option:radio"
 #| msgid "Store in default resource"
@@ -4244,14 +4248,14 @@ msgctxt "@option:radio"
 msgid "Store in default calendar"
 msgstr "डिफाल्ट संसाधन मं भंडारित करव"
 
-#: prefdlg.cpp:869
+#: prefdlg.cpp:868
 msgctxt "@info:whatsthis"
 msgid ""
 "Add all new alarms and alarm templates to the default calendars, without "
 "prompting."
 msgstr ""
 
-#: prefdlg.cpp:871
+#: prefdlg.cpp:870
 #, fuzzy
 #| msgctxt "@option:radio"
 #| msgid "Prompt for which resource to store in"
@@ -4259,7 +4263,7 @@ msgctxt "@option:radio"
 msgid "Prompt for which calendar to store in"
 msgstr "किस संसाधन मं भंडारित करना हे ओखर बर पूछव"
 
-#: prefdlg.cpp:874
+#: prefdlg.cpp:873
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>When saving a new alarm or alarm template, prompt for which calendar "
@@ -4268,51 +4272,51 @@ msgid ""
 "calendar.</para>"
 msgstr ""
 
-#: prefdlg.cpp:879
+#: prefdlg.cpp:878
 msgctxt "@title:group"
 msgid "Archived Alarms"
 msgstr "अभिलेखित अलार्म"
 
-#: prefdlg.cpp:886
+#: prefdlg.cpp:885
 msgctxt "@option:check"
 msgid "Keep alarms after expiry"
 msgstr "मियाद बीते के बाद घलोक अलार्म रखव"
 
-#: prefdlg.cpp:889
+#: prefdlg.cpp:888
 msgctxt "@info:whatsthis"
 msgid ""
 "Check to archive alarms after expiry or deletion (except deleted alarms "
 "which were never triggered)."
 msgstr ""
 
-#: prefdlg.cpp:896
+#: prefdlg.cpp:895
 msgctxt "@option:check"
 msgid "Discard archived alarms after:"
 msgstr "मियाद बीते के बाद अभिलेखित अलार्म ल फेंक देव:"
 
-#: prefdlg.cpp:905
+#: prefdlg.cpp:904
 msgctxt "@label Time unit for user-entered number"
 msgid "days"
 msgstr "दिन"
 
-#: prefdlg.cpp:909
+#: prefdlg.cpp:908
 msgctxt "@info:whatsthis"
 msgid ""
 "Uncheck to store archived alarms indefinitely. Check to enter how long "
 "archived alarms should be stored."
 msgstr ""
 
-#: prefdlg.cpp:912
+#: prefdlg.cpp:911
 msgctxt "@action:button"
 msgid "Clear Archived Alarms"
 msgstr "अभिलेखित अलार्म साफ करव"
 
-#: prefdlg.cpp:915
+#: prefdlg.cpp:914
 msgctxt "@info:whatsthis"
 msgid "Delete all existing archived alarms."
 msgstr "सब्बो अभी हाल के अभिलेखित अलार्म ल मेटाव."
 
-#: prefdlg.cpp:916
+#: prefdlg.cpp:915
 #, fuzzy
 #| msgctxt "@info:whatsthis"
 #| msgid ""
@@ -4325,7 +4329,7 @@ msgid ""
 msgstr ""
 "सब्बो अभी हाल के अभिलेखित अलार्म ल मेटाव (सिरिफ डिफाल्ट अभिलेखित अलार्म संसाधन मन से)."
 
-#: prefdlg.cpp:962
+#: prefdlg.cpp:961
 msgctxt "@info"
 msgid ""
 "<para>A default calendar is required in order to archive alarms, but none is "
@@ -4334,12 +4338,12 @@ msgid ""
 "para>"
 msgstr ""
 
-#: prefdlg.cpp:979
+#: prefdlg.cpp:978
 msgctxt "@info"
 msgid "Do you really want to delete all archived alarms?"
 msgstr "का आप मन सचमुच सब्बो अभिलेखित अलार्म ल मिटाना चाहथो ?"
 
-#: prefdlg.cpp:980
+#: prefdlg.cpp:979
 #, fuzzy
 #| msgctxt "@info"
 #| msgid "Do you really want to delete all archived alarms?"
@@ -4349,22 +4353,22 @@ msgid ""
 "calendar?"
 msgstr "का आप मन सचमुच सब्बो अभिलेखित अलार्म ल मिटाना चाहथो ?"
 
-#: prefdlg.cpp:1000
+#: prefdlg.cpp:999
 msgctxt "@label"
 msgid "Email client:"
 msgstr "ईमेल क्लायंट"
 
-#: prefdlg.cpp:1003
+#: prefdlg.cpp:1002
 msgctxt "@option:radio"
 msgid "KMail"
 msgstr "के-मेल"
 
-#: prefdlg.cpp:1004
+#: prefdlg.cpp:1003
 msgctxt "@option:radio"
 msgid "Sendmail"
 msgstr "सेंडमेल"
 
-#: prefdlg.cpp:1015
+#: prefdlg.cpp:1014
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -4377,7 +4381,7 @@ msgid ""
 "compatible mail transport agent.</item></list></para>"
 msgstr ""
 
-#: prefdlg.cpp:1024
+#: prefdlg.cpp:1023
 #, kde-format
 msgctxt "@option:check"
 msgid ""
@@ -4387,7 +4391,7 @@ msgstr ""
 "ईमेल भेजे के बाद् एक नकल <application>केमेल</application> के <resource>%1</resource> "
 "फोल्डर मं रखव"
 
-#: prefdlg.cpp:1025
+#: prefdlg.cpp:1024
 #, fuzzy, kde-format
 #| msgctxt "@option:check"
 #| msgid ""
@@ -4401,46 +4405,46 @@ msgstr ""
 "ईमेल भेजे के बाद् एक नकल <application>केमेल</application> के <resource>%1</resource> "
 "फोल्डर मं रखव"
 
-#: prefdlg.cpp:1032
+#: prefdlg.cpp:1031
 msgctxt "@option:check"
 msgid "Notify when remote emails are queued"
 msgstr "जब रिमोट ई-मेल कतारबद्ध होही तहां सूचित करव"
 
-#: prefdlg.cpp:1040
+#: prefdlg.cpp:1039
 msgctxt "@title:group"
 msgid "Your Email Address"
 msgstr "आप मन के ईमेल पता"
 
-#: prefdlg.cpp:1048
+#: prefdlg.cpp:1047
 msgctxt "@label 'From' email address"
 msgid "From:"
 msgstr "सेः"
 
-#: prefdlg.cpp:1060
+#: prefdlg.cpp:1059
 msgctxt "@info:whatsthis"
 msgid ""
 "Your email address, used to identify you as the sender when sending email "
 "alarms."
 msgstr ""
 
-#: prefdlg.cpp:1067 prefdlg.cpp:1103
+#: prefdlg.cpp:1066 prefdlg.cpp:1102
 msgctxt "@option:radio"
 msgid "Use address from System Settings"
 msgstr "तंत्र सेटिंग से पता उपयोग करव"
 
-#: prefdlg.cpp:1070
+#: prefdlg.cpp:1069
 msgctxt "@info:whatsthis"
 msgid ""
 "Check to use the email address set in KDE System Settings, to identify you "
 "as the sender when sending email alarms."
 msgstr ""
 
-#: prefdlg.cpp:1074
+#: prefdlg.cpp:1073
 msgctxt "@option:radio"
 msgid "Use <application>KMail</application> identities"
 msgstr "<application>केमेल</application> पहिचान उपयोग करव"
 
-#: prefdlg.cpp:1077
+#: prefdlg.cpp:1076
 msgctxt "@info:whatsthis"
 msgid ""
 "Check to use <application>KMail</application>'s email identities to identify "
@@ -4450,12 +4454,12 @@ msgid ""
 "application>'s identities to use."
 msgstr ""
 
-#: prefdlg.cpp:1084
+#: prefdlg.cpp:1083
 msgctxt "@label 'Bcc' email address"
 msgid "Bcc:"
 msgstr "बेनामी प्रतिलिपि: "
 
-#: prefdlg.cpp:1095
+#: prefdlg.cpp:1094
 msgctxt "@info:whatsthis"
 msgid ""
 "Your email address, used for blind copying email alarms to yourself. If you "
@@ -4464,14 +4468,14 @@ msgid ""
 "login name."
 msgstr ""
 
-#: prefdlg.cpp:1106
+#: prefdlg.cpp:1105
 msgctxt "@info:whatsthis"
 msgid ""
 "Check to use the email address set in KDE System Settings, for blind copying "
 "email alarms to yourself."
 msgstr ""
 
-#: prefdlg.cpp:1188
+#: prefdlg.cpp:1187
 #, fuzzy
 #| msgctxt "@info/plain"
 #| msgid "No valid 'Bcc' email address is specified."
@@ -4479,25 +4483,25 @@ msgctxt "@info"
 msgid "No valid 'Bcc' email address is specified."
 msgstr "कोई वैध बेनामी प्रति ईमेल पता निरधारित नइ हे."
 
-#: prefdlg.cpp:1195
+#: prefdlg.cpp:1194
 #, kde-format
 msgctxt "@info"
 msgid "<para>%1</para><para>Are you sure you want to save your changes?</para>"
 msgstr "<para>%1</para><para>का आप मन सही मं बदलाव मन ल सहेजना चाहथो ?</para>"
 
-#: prefdlg.cpp:1201
+#: prefdlg.cpp:1200
 #, kde-format
 msgctxt "@info"
 msgid "No email address is currently set in KDE System Settings. %1"
 msgstr "केडीई नियंत्रन केंद्र तिर कोनो ई-मेल पता अभी हाल मं सेट नइ हे. %1"
 
-#: prefdlg.cpp:1206
+#: prefdlg.cpp:1205
 #, kde-format
 msgctxt "@info"
 msgid "No <application>KMail</application> identities currently exist. %1"
 msgstr "कोई <application>केमेल</application> पहिचान अभी अस्तित्व मं नइ हे. %1"
 
-#: prefdlg.cpp:1224
+#: prefdlg.cpp:1223
 #, fuzzy, kde-format
 #| msgctxt "@info:whatsthis sound file 'Repeat' checkbox"
 #| msgid ""
@@ -4508,17 +4512,17 @@ msgid ""
 "The default setting for <interface>%1</interface> in the alarm edit dialog."
 msgstr "अलार्म संपादन गोठ मं अवाज फाइल <interface>%1</interface> बर डिफाल्ट सेटिंग."
 
-#: prefdlg.cpp:1232 prefdlg.cpp:1633
+#: prefdlg.cpp:1231 prefdlg.cpp:1632
 msgctxt "@title:tab"
 msgid "General"
 msgstr "सामान्य"
 
-#: prefdlg.cpp:1236
+#: prefdlg.cpp:1235
 msgctxt "@title:tab"
 msgid "Alarm Types"
 msgstr "अलार्म किसिम"
 
-#: prefdlg.cpp:1240
+#: prefdlg.cpp:1239
 #, fuzzy
 #| msgctxt "@title:tab"
 #| msgid "Font & Color"
@@ -4526,27 +4530,27 @@ msgctxt "@title:tab"
 msgid "Font && Color"
 msgstr "फोंट अउ रंग"
 
-#: prefdlg.cpp:1266
+#: prefdlg.cpp:1265
 msgctxt "@label:listbox"
 msgid "Recurrence:"
 msgstr "आवृत्तिः"
 
-#: prefdlg.cpp:1299
+#: prefdlg.cpp:1298
 msgctxt "@option:radio"
 msgid "February 2&8th"
 msgstr "फरवरी 2&8वीं"
 
-#: prefdlg.cpp:1303
+#: prefdlg.cpp:1302
 msgctxt "@option:radio"
 msgid "March &1st"
 msgstr "&1ला मार्च"
 
-#: prefdlg.cpp:1307
+#: prefdlg.cpp:1306
 msgctxt "@option:radio"
 msgid "Do not repeat"
 msgstr "दुहराव नइ"
 
-#: prefdlg.cpp:1312
+#: prefdlg.cpp:1311
 msgctxt "@info:whatsthis"
 msgid ""
 "For yearly recurrences, choose what date, if any, alarms due on February "
@@ -4554,44 +4558,44 @@ msgid ""
 "existing alarms is not re-evaluated when you change this setting.</note>"
 msgstr ""
 
-#: prefdlg.cpp:1318
+#: prefdlg.cpp:1317
 msgctxt "@title:group"
 msgid "Display Alarms"
 msgstr "डिस्प्ले अलार्म"
 
-#: prefdlg.cpp:1339
+#: prefdlg.cpp:1338
 msgctxt "@label:listbox"
 msgid "Reminder units:"
 msgstr "स्मरन इकाईयाँ:"
 
-#: prefdlg.cpp:1342
+#: prefdlg.cpp:1341
 msgctxt "@item:inlistbox"
 msgid "Minutes"
 msgstr "मिनट"
 
-#: prefdlg.cpp:1343
+#: prefdlg.cpp:1342
 msgctxt "@item:inlistbox"
 msgid "Hours/Minutes"
 msgstr "घंटे/मिनट्स"
 
-#: prefdlg.cpp:1346
+#: prefdlg.cpp:1345
 msgctxt "@info:whatsthis"
 msgid ""
 "The default units for the reminder in the alarm edit dialog, for alarms due "
 "soon."
 msgstr ""
 
-#: prefdlg.cpp:1352
+#: prefdlg.cpp:1351
 msgctxt "@title:group Audio options group"
 msgid "Sound"
 msgstr "अवाज"
 
-#: prefdlg.cpp:1371
+#: prefdlg.cpp:1370
 msgctxt "@option:check"
 msgid "Repeat sound file"
 msgstr "अवाज फाइल दुहराव"
 
-#: prefdlg.cpp:1374
+#: prefdlg.cpp:1373
 #, kde-format
 msgctxt "@info:whatsthis sound file 'Repeat' checkbox"
 msgid ""
@@ -4599,37 +4603,37 @@ msgid ""
 "edit dialog."
 msgstr "अलार्म संपादन गोठ मं अवाज फाइल <interface>%1</interface> बर डिफाल्ट सेटिंग."
 
-#: prefdlg.cpp:1381
+#: prefdlg.cpp:1380
 msgctxt "@label:textbox"
 msgid "Sound file:"
 msgstr "अवाज फाइल:"
 
-#: prefdlg.cpp:1389
+#: prefdlg.cpp:1388
 msgctxt "@info:tooltip"
 msgid "Choose a sound file"
 msgstr "अवाज फाइल चुनव"
 
-#: prefdlg.cpp:1391
+#: prefdlg.cpp:1390
 msgctxt "@info:whatsthis"
 msgid "Enter the default sound file to use in the alarm edit dialog."
 msgstr "अलार्म संपादन गोठ मं परयोग करे बर डिफाल्ट अवाज फाइल भरव."
 
-#: prefdlg.cpp:1395
+#: prefdlg.cpp:1394
 msgctxt "@title:group"
 msgid "Command Alarms"
 msgstr "कमांड अलार्म"
 
-#: prefdlg.cpp:1416
+#: prefdlg.cpp:1415
 msgctxt "@title:group"
 msgid "Email Alarms"
 msgstr "ईमेल अलार्म"
 
-#: prefdlg.cpp:1431
+#: prefdlg.cpp:1430
 msgctxt "@title:group"
 msgid "Message Font && Color"
 msgstr "संदेस फोंट अउ रंग"
 
-#: prefdlg.cpp:1613
+#: prefdlg.cpp:1612
 #, fuzzy, kde-format
 #| msgctxt "@info:whatsthis sound file 'Repeat' checkbox"
 #| msgid ""
@@ -4641,17 +4645,17 @@ msgid ""
 "the default sound type"
 msgstr "अलार्म संपादन गोठ मं अवाज फाइल <interface>%1</interface> बर डिफाल्ट सेटिंग."
 
-#: prefdlg.cpp:1639
+#: prefdlg.cpp:1638
 msgctxt "@title:tab"
 msgid "Alarm Windows"
 msgstr "अलार्म विंडोज"
 
-#: prefdlg.cpp:1642
+#: prefdlg.cpp:1641
 msgctxt "@option:check"
 msgid "Show in system tray"
 msgstr "तंत्र तस्तरी मं देखाव"
 
-#: prefdlg.cpp:1645
+#: prefdlg.cpp:1644
 #, fuzzy
 #| msgctxt "@info:whatsthis"
 #| msgid ""
@@ -4664,12 +4668,12 @@ msgid ""
 msgstr ""
 "जब आप मन केडीई चालू करथो तहां <application>केअलार्म</application> चलाय बर चुनव."
 
-#: prefdlg.cpp:1657
+#: prefdlg.cpp:1656
 msgctxt "@option:radio Always show KAlarm icon"
 msgid "Always show"
 msgstr ""
 
-#: prefdlg.cpp:1661
+#: prefdlg.cpp:1660
 #, fuzzy
 #| msgctxt "@info:whatsthis"
 #| msgid ""
@@ -4681,12 +4685,12 @@ msgid ""
 msgstr ""
 "जब आप मन केडीई चालू करथो तहां <application>केअलार्म</application> चलाय बर चुनव."
 
-#: prefdlg.cpp:1665
+#: prefdlg.cpp:1664
 msgctxt "@option:radio"
 msgid "Automatically hide if no active alarms"
 msgstr ""
 
-#: prefdlg.cpp:1669
+#: prefdlg.cpp:1668
 msgctxt "@info:whatsthis"
 msgid ""
 "Check to automatically hide <application>KAlarm</application>'s icon in the "
@@ -4694,7 +4698,7 @@ msgid ""
 "be made visible by use of the system tray option to show hidden icons."
 msgstr ""
 
-#: prefdlg.cpp:1675
+#: prefdlg.cpp:1674
 msgctxt "@info:whatsthis"
 msgid ""
 "Check to automatically hide <application>KAlarm</application>'s icon in the "
@@ -4703,61 +4707,61 @@ msgid ""
 "to show hidden icons."
 msgstr ""
 
-#: prefdlg.cpp:1678
+#: prefdlg.cpp:1677
 msgctxt "@option:radio"
 msgid "Automatically hide if no alarm due within time period:"
 msgstr ""
 
-#: prefdlg.cpp:1689
+#: prefdlg.cpp:1688
 msgctxt "@title:group"
 msgid "System Tray Tooltip"
 msgstr "तंत्र तस्तरी औजार-नुस्खा"
 
-#: prefdlg.cpp:1698
+#: prefdlg.cpp:1697
 msgctxt "@option:check"
 msgid "Show next &24 hours' alarms"
 msgstr "अगले 24 घंटे के अलार्म देखाव (&2)"
 
-#: prefdlg.cpp:1702
+#: prefdlg.cpp:1701
 msgctxt "@info:whatsthis"
 msgid ""
 "Specify whether to include in the system tray tooltip, a summary of alarms "
 "due in the next 24 hours."
 msgstr ""
 
-#: prefdlg.cpp:1709
+#: prefdlg.cpp:1708
 msgctxt "@option:check"
 msgid "Maximum number of alarms to show:"
 msgstr "देखाय जाय वाले अलार्म के सबसे अधिक संख्या:"
 
-#: prefdlg.cpp:1718
+#: prefdlg.cpp:1717
 msgctxt "@info:whatsthis"
 msgid ""
 "Uncheck to display all of the next 24 hours' alarms in the system tray "
 "tooltip. Check to enter an upper limit on the number to be displayed."
 msgstr ""
 
-#: prefdlg.cpp:1747
+#: prefdlg.cpp:1746
 msgctxt "@title:group"
 msgid "Alarm List"
 msgstr "अलार्म सूची"
 
-#: prefdlg.cpp:1760
+#: prefdlg.cpp:1759
 msgctxt "@label:listbox"
 msgid "Disabled alarm color:"
 msgstr "अलार्म रंग अक्छम करव:"
 
-#: prefdlg.cpp:1773
+#: prefdlg.cpp:1772
 msgctxt "@label:listbox"
 msgid "Archived alarm color:"
 msgstr "अभिलेखित अलार्म रंगः"
 
-#: prefdlg.cpp:1786
+#: prefdlg.cpp:1785
 msgctxt "@title:group"
 msgid "Alarm Message Windows"
 msgstr ""
 
-#: prefdlg.cpp:1797
+#: prefdlg.cpp:1796
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>Choose how to reduce the chance of alarm messages being accidentally "
@@ -4767,34 +4771,34 @@ msgid ""
 "time after the window is displayed.</item></list></para>"
 msgstr ""
 
-#: prefdlg.cpp:1800
+#: prefdlg.cpp:1799
 msgctxt "@option:radio"
 msgid "Position windows far from mouse cursor"
 msgstr ""
 
-#: prefdlg.cpp:1804
+#: prefdlg.cpp:1803
 msgctxt "@option:radio"
 msgid "Center windows, delay activating window buttons"
 msgstr ""
 
-#: prefdlg.cpp:1813
+#: prefdlg.cpp:1812
 msgctxt "@label:spinbox"
 msgid "Button activation delay (seconds):"
 msgstr ""
 
-#: prefdlg.cpp:1820
+#: prefdlg.cpp:1819
 msgctxt "@info:whatsthis"
 msgid ""
 "Enter how long its buttons should remain disabled after the alarm message "
 "window is shown."
 msgstr ""
 
-#: prefdlg.cpp:1826
+#: prefdlg.cpp:1825
 msgctxt "@option:check"
 msgid "Message windows have a title bar and take keyboard focus"
 msgstr "संदेस विंडो मं सीर्सक पट्टी हो अउ कुंजीपट फोकस प्राप्त करे"
 
-#: prefdlg.cpp:1829
+#: prefdlg.cpp:1828
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>Specify the characteristics of alarm message windows:<list><item>If "
@@ -7361,9 +7365,6 @@ msgstr ""
 
 #~ msgid "Cornelius Schumacher"
 #~ msgstr "कार्नेलियस सूमेकर"
-
-#~ msgid "Author"
-#~ msgstr "लेखक"
 
 #~ msgid "Preston Brown"
 #~ msgstr "प्रेस्टन ब्राउन"
