@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-03-24 08:11+0000\n"
+"POT-Creation-Date: 2016-03-31 08:01+0000\n"
 "PO-Revision-Date: 2009-02-27 21:59+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -621,6 +621,56 @@ msgctxt "@info"
 msgid "OpenPGP certificates exported successfully."
 msgstr "प्रमानपत्र सफलता से बनाय गिस"
 
+#: src/commands/exportpaperkeycommand.cpp:87
+msgctxt "@info"
+msgid ""
+"<para><application>Kleopatra</application> uses <application>PaperKey</"
+"application> to create a minimzied and printable version of your secret key."
+"</para><para>Please make sure it is installed.</para>"
+msgstr ""
+
+#: src/commands/exportpaperkeycommand.cpp:91
+msgctxt "@title"
+msgid "Failed to find PaperKey executable."
+msgstr ""
+
+#: src/commands/exportpaperkeycommand.cpp:106
+#, fuzzy
+#| msgid "Exporting secret key..."
+msgctxt "@title"
+msgid "Print secret key"
+msgstr "गोपनीय कुंजी निर्यात करत हे ..."
+
+#: src/commands/exportpaperkeycommand.cpp:120
+#, fuzzy
+#| msgid "Exporting secret key..."
+msgctxt "@title:window"
+msgid "Error printing secret key"
+msgstr "गोपनीय कुंजी निर्यात करत हे ..."
+
+#: src/commands/exportpaperkeycommand.cpp:126
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>The GPG process that tried to export the secret key ended prematurely "
+"because of an unexpected error.</para><para>Please check the output of "
+"<icode>%1</icode> for details.</para>"
+msgstr ""
+
+#: src/commands/exportpaperkeycommand.cpp:135
+#: src/commands/exportsecretkeycommand.cpp:156
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt><p>An error occurred while trying to export the certificate:</p><p><b>"
+#| "%1</b></p></qt>"
+msgctxt "@info"
+msgid ""
+"<para>An error occurred while trying to export the secret key.</para> "
+"<para>The output from <command>%1</command> was: <message>%2</message></para>"
+msgstr ""
+"<qt><p>प्रमानपत्र:</p><p><b>%1</b></p> निर्यात करे के कोसिसों के समय एक गलती हो "
+"गिस</qt>"
+
 #: src/commands/exportsecretkeycommand.cpp:137
 #, fuzzy
 #| msgid "Secret Key Export Error"
@@ -644,19 +694,6 @@ msgid ""
 "output of <icode>%1</icode> for details.</para>"
 msgstr ""
 
-#: src/commands/exportsecretkeycommand.cpp:156
-#, fuzzy, kde-format
-#| msgid ""
-#| "<qt><p>An error occurred while trying to export the certificate:</p><p><b>"
-#| "%1</b></p></qt>"
-msgctxt "@info"
-msgid ""
-"<para>An error occurred while trying to export the secret key.</para> "
-"<para>The output from <command>%1</command> was: <message>%2</message></para>"
-msgstr ""
-"<qt><p>प्रमानपत्र:</p><p><b>%1</b></p> निर्यात करे के कोसिसों के समय एक गलती हो "
-"गिस</qt>"
-
 #: src/commands/exportsecretkeycommand.cpp:163
 #, fuzzy
 #| msgid "Secret key successfully exported."
@@ -668,18 +705,18 @@ msgstr "गोपनीय कुंजी सफलता से निर्�
 msgid "Subprocess Diagnostics"
 msgstr ""
 
-#: src/commands/gnupgprocesscommand.cpp:275
+#: src/commands/gnupgprocesscommand.cpp:276
 #, kde-format
 msgid "Unable to start process %1. Please check your installation."
 msgstr "काम %1 चालू कर पाय मं अक्छम. किरपा करके, अपन इंस्टालेसन जांचव."
 
-#: src/commands/gnupgprocesscommand.cpp:281
+#: src/commands/gnupgprocesscommand.cpp:282
 #, fuzzy, kde-format
 #| msgid "Verifying: %1..."
 msgid "Starting %1..."
 msgstr "सत्यापित करत हे: %1..."
 
-#: src/commands/gnupgprocesscommand.cpp:301
+#: src/commands/gnupgprocesscommand.cpp:302
 msgid "Process finished"
 msgstr ""
 
@@ -3023,7 +3060,7 @@ msgstr "उपकुंजी"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CertificateDetailsDialog)
 #: src/dialogs/certificatedetailsdialog.ui:14
-#: src/view/keylistcontroller.cpp:417
+#: src/view/keylistcontroller.cpp:422
 msgid "Certificate Details"
 msgstr "प्रमानपत्र विवरन"
 
@@ -3039,7 +3076,7 @@ msgstr "काम"
 
 #. i18n: ectx: property (text), widget (QPushButton, changePassphrasePB)
 #: src/dialogs/certificatedetailsdialog.ui:33
-#: src/view/keylistcontroller.cpp:446
+#: src/view/keylistcontroller.cpp:451
 msgid "Change Passphrase..."
 msgstr ""
 
@@ -3050,7 +3087,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, changeExpiryDatePB)
 #: src/dialogs/certificatedetailsdialog.ui:53
-#: src/view/keylistcontroller.cpp:430
+#: src/view/keylistcontroller.cpp:435
 msgid "Change Expiry Date..."
 msgstr ""
 
@@ -3899,38 +3936,38 @@ msgid "&File"
 msgstr "फाइल (&F)"
 
 #. i18n: ectx: Menu (view)
-#: src/kleopatra.rc:24
+#: src/kleopatra.rc:25
 msgid "&View"
 msgstr "देखव (&V)"
 
 #. i18n: ectx: Menu (certMenu)
 #. i18n: ectx: Menu (listview_popup)
-#: src/kleopatra.rc:36 src/kleopatra.rc:98
+#: src/kleopatra.rc:37 src/kleopatra.rc:99
 msgid "&Certificates"
 msgstr "प्रमानपत्र (&C)"
 
 #. i18n: ectx: Menu (tools)
-#: src/kleopatra.rc:51
+#: src/kleopatra.rc:52
 msgid "&Tools"
 msgstr "औजार (&T)"
 
 #. i18n: ectx: Menu (settings)
-#: src/kleopatra.rc:65
+#: src/kleopatra.rc:66
 msgid "&Settings"
 msgstr "सेटिंग (&S)"
 
 #. i18n: ectx: Menu (window)
-#: src/kleopatra.rc:69
+#: src/kleopatra.rc:70
 msgid "&Window"
 msgstr "विंडो (&W)"
 
 #. i18n: ectx: Menu (help)
-#: src/kleopatra.rc:80
+#: src/kleopatra.rc:81
 msgid "&Help"
 msgstr ""
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: src/kleopatra.rc:86 src/kwatchgnupg/kwatchgnupgui.rc:13
+#: src/kleopatra.rc:87 src/kwatchgnupg/kwatchgnupgui.rc:13
 msgid "Main Toolbar"
 msgstr "मुख्य औजार पट्टी"
 
@@ -6190,105 +6227,111 @@ msgstr ""
 msgid "Cannot remove file %1: %2"
 msgstr "फाइल ल सहेज नइ सकिस %1: %2"
 
-#: src/view/keylistcontroller.cpp:368
+#: src/view/keylistcontroller.cpp:369
 msgid "New Certificate..."
 msgstr "नवा प्रमानपत्र..."
 
-#: src/view/keylistcontroller.cpp:372
+#: src/view/keylistcontroller.cpp:373
 msgid "Export Certificates..."
 msgstr "प्रमानपत्र निर्यात करव..."
 
-#: src/view/keylistcontroller.cpp:376
+#: src/view/keylistcontroller.cpp:377
 msgid "Export Certificates to Server..."
 msgstr "सर्वर मं प्रमानपत्र निर्यात करव..."
 
-#: src/view/keylistcontroller.cpp:380
+#: src/view/keylistcontroller.cpp:381
 #, fuzzy
 #| msgid "Export Secret Key..."
 msgid "Export Secret Keys..."
 msgstr "गोपनीय कुंजी निर्यात करव..."
 
-#: src/view/keylistcontroller.cpp:384
+#: src/view/keylistcontroller.cpp:385
+#, fuzzy
+#| msgid "Export Secret Key..."
+msgid "Print Secret Key..."
+msgstr "गोपनीय कुंजी निर्यात करव..."
+
+#: src/view/keylistcontroller.cpp:389
 msgid "Lookup Certificates on Server..."
 msgstr ""
 
-#: src/view/keylistcontroller.cpp:388
+#: src/view/keylistcontroller.cpp:393
 msgid "Import Certificates..."
 msgstr "प्रमानपत्र आयात करव..."
 
-#: src/view/keylistcontroller.cpp:392
+#: src/view/keylistcontroller.cpp:397
 msgid "Decrypt/Verify Files..."
 msgstr ""
 
-#: src/view/keylistcontroller.cpp:396
+#: src/view/keylistcontroller.cpp:401
 msgid "Sign/Encrypt Files..."
 msgstr ""
 
-#: src/view/keylistcontroller.cpp:400
+#: src/view/keylistcontroller.cpp:405
 msgid "Create Checksum Files..."
 msgstr ""
 
-#: src/view/keylistcontroller.cpp:404
+#: src/view/keylistcontroller.cpp:409
 msgid "Verify Checksum Files..."
 msgstr ""
 
-#: src/view/keylistcontroller.cpp:409
+#: src/view/keylistcontroller.cpp:414
 msgid "Redisplay"
 msgstr ""
 
-#: src/view/keylistcontroller.cpp:413
+#: src/view/keylistcontroller.cpp:418
 msgid "Stop Operation"
 msgstr "आपरेसन रोकव"
 
-#: src/view/keylistcontroller.cpp:422
+#: src/view/keylistcontroller.cpp:427
 msgid "Delete"
 msgstr "मेटाव"
 
-#: src/view/keylistcontroller.cpp:426
+#: src/view/keylistcontroller.cpp:431
 msgid "Certify Certificate..."
 msgstr ""
 
-#: src/view/keylistcontroller.cpp:434
+#: src/view/keylistcontroller.cpp:439
 msgid "Change Owner Trust..."
 msgstr ""
 
-#: src/view/keylistcontroller.cpp:438
+#: src/view/keylistcontroller.cpp:443
 #, fuzzy
 #| msgid "Export Certificates"
 msgid "Trust Root Certificate"
 msgstr "प्रमानपत्र निर्यात करव"
 
-#: src/view/keylistcontroller.cpp:442
+#: src/view/keylistcontroller.cpp:447
 #, fuzzy
 #| msgid "Export Certificates"
 msgid "Distrust Root Certificate"
 msgstr "प्रमानपत्र निर्यात करव"
 
-#: src/view/keylistcontroller.cpp:450
+#: src/view/keylistcontroller.cpp:455
 msgid "Add User-ID..."
 msgstr "कमइया आईडी जोड़व..."
 
-#: src/view/keylistcontroller.cpp:454
+#: src/view/keylistcontroller.cpp:459
 msgid "Dump Certificate"
 msgstr ""
 
-#: src/view/keylistcontroller.cpp:459
+#: src/view/keylistcontroller.cpp:464
 msgid "Refresh X.509 Certificates"
 msgstr ""
 
-#: src/view/keylistcontroller.cpp:463
+#: src/view/keylistcontroller.cpp:468
 msgid "Refresh OpenPGP Certificates"
 msgstr "ओपनपीजीपी प्रमानपत्र ताजा करव"
 
-#: src/view/keylistcontroller.cpp:467
+#: src/view/keylistcontroller.cpp:472
 msgid "Clear CRL Cache"
 msgstr "सीआरएल कैस साफ करव"
 
-#: src/view/keylistcontroller.cpp:471
+#: src/view/keylistcontroller.cpp:476
 msgid "Dump CRL Cache"
 msgstr "सीआरएल कैस डम्प करव"
 
-#: src/view/keylistcontroller.cpp:475
+#: src/view/keylistcontroller.cpp:480
 msgid "Import CRL From File..."
 msgstr "सीआरएल फाइल से आयात करव..."
 
@@ -6942,9 +6985,6 @@ msgstr "नवा टैब सीर्सक:"
 
 #~ msgid "Save Certificate"
 #~ msgstr "प्रमानपत्र सहेजव"
-
-#~ msgid "Exporting secret key..."
-#~ msgstr "गोपनीय कुंजी निर्यात करत हे ..."
 
 #, fuzzy
 #~ msgctxt ""
