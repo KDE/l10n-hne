@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-04-06 07:43+0000\n"
+"POT-Creation-Date: 2016-04-08 07:41+0000\n"
 "PO-Revision-Date: 2009-02-27 21:59+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -311,7 +311,7 @@ msgstr ""
 #: src/commands/encryptclipboardcommand.cpp:180
 #: src/commands/signclipboardcommand.cpp:169
 #: src/commands/signclipboardcommand.cpp:183
-#: src/commands/signencryptfilescommand.cpp:258
+#: src/commands/signencryptfilescommand.cpp:260
 #, kde-format
 msgid "An error occurred: %1"
 msgstr ""
@@ -705,18 +705,18 @@ msgstr "गोपनीय कुंजी सफलता से निर्�
 msgid "Subprocess Diagnostics"
 msgstr ""
 
-#: src/commands/gnupgprocesscommand.cpp:276
+#: src/commands/gnupgprocesscommand.cpp:275
 #, kde-format
 msgid "Unable to start process %1. Please check your installation."
 msgstr "काम %1 चालू कर पाय मं अक्छम. किरपा करके, अपन इंस्टालेसन जांचव."
 
-#: src/commands/gnupgprocesscommand.cpp:282
+#: src/commands/gnupgprocesscommand.cpp:281
 #, fuzzy, kde-format
 #| msgid "Verifying: %1..."
 msgid "Starting %1..."
 msgstr "सत्यापित करत हे: %1..."
 
-#: src/commands/gnupgprocesscommand.cpp:302
+#: src/commands/gnupgprocesscommand.cpp:301
 msgid "Process finished"
 msgstr ""
 
@@ -1212,11 +1212,11 @@ msgstr ""
 msgid "Sign Clipboard Error"
 msgstr ""
 
-#: src/commands/signencryptfilescommand.cpp:260
+#: src/commands/signencryptfilescommand.cpp:262
 msgid "Sign/Encrypt Files Error"
 msgstr ""
 
-#: src/commands/signencryptfilescommand.cpp:273
+#: src/commands/signencryptfilescommand.cpp:275
 msgid "Select One or More Files to Sign and/or Encrypt"
 msgstr ""
 
@@ -2300,11 +2300,13 @@ msgstr ""
 #: src/crypto/gui/newsignencryptfileswizard.cpp:398
 #: src/newcertificatewizard/newcertificatewizard.cpp:1574
 #: src/newcertificatewizard/newcertificatewizard.cpp:1603
+#: src/utils/formatting.cpp:748
 msgid "Encrypt"
 msgstr "एनक्रिप्ट"
 
 #: src/crypto/gui/newsignencryptfileswizard.cpp:399
 #: src/newcertificatewizard/newcertificatewizard.cpp:1570
+#: src/utils/formatting.cpp:745
 msgid "Sign"
 msgstr "दसखत"
 
@@ -3150,12 +3152,12 @@ msgid "Certifications"
 msgstr "प्रमानपत्र"
 
 #. i18n: ectx: property (text), widget (QPushButton, expandAllCertificationsPB)
-#: src/dialogs/certificatedetailsdialog.ui:229 src/view/tabwidget.cpp:480
+#: src/dialogs/certificatedetailsdialog.ui:229 src/view/tabwidget.cpp:789
 msgid "Expand All"
 msgstr "सब्बो फैलाव"
 
 #. i18n: ectx: property (text), widget (QPushButton, collapseAllCertificationsPB)
-#: src/dialogs/certificatedetailsdialog.ui:239 src/view/tabwidget.cpp:484
+#: src/dialogs/certificatedetailsdialog.ui:239 src/view/tabwidget.cpp:793
 msgid "Collapse All"
 msgstr "सब्बो समेटव"
 
@@ -3276,6 +3278,7 @@ msgstr "प्रमानपत्र उपयोग:"
 
 #: src/dialogs/certifycertificatedialog.cpp:202
 #: src/newcertificatewizard/newcertificatewizard.cpp:1578
+#: src/utils/formatting.cpp:742
 msgid "Certify"
 msgstr "प्रमानित"
 
@@ -4338,6 +4341,12 @@ msgstr "स्थिति"
 msgid "Strength"
 msgstr "सामर्थ्य"
 
+#: src/models/subkeylistmodel.cpp:176
+#, fuzzy
+#| msgid "Key Usage:"
+msgid "Usage"
+msgstr "कुंजी उपयोग:"
+
 #. i18n: ectx: property (windowTitle), widget (QDialog, Kleo::NewCertificateUi::AdvancedSettingsDialog)
 #: src/newcertificatewizard/advancedsettingsdialog.ui:14
 msgid "Advanced Settings"
@@ -4689,6 +4698,7 @@ msgid "Certificate Creation Wizard"
 msgstr "प्रमानपत्र बनाए के विजार्ड"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:1581
+#: src/utils/formatting.cpp:751
 msgid "Authenticate"
 msgstr ""
 
@@ -6347,59 +6357,71 @@ msgstr "खोजव"
 msgid "Search...<%1>"
 msgstr "खोजव"
 
-#: src/view/tabwidget.cpp:448
+#: src/view/tabwidget.cpp:572
+msgid "Rename Tab"
+msgstr "टैब ल नवा नाम देवव"
+
+#: src/view/tabwidget.cpp:572
+msgid "New tab title:"
+msgstr "नवा टैब सीर्सक:"
+
+#: src/view/tabwidget.cpp:757
 msgid "New Tab"
 msgstr "नवा टैब"
 
-#: src/view/tabwidget.cpp:448
+#: src/view/tabwidget.cpp:757
 msgid "Open a new tab"
 msgstr "नवा टैब खोलव"
 
-#: src/view/tabwidget.cpp:456
+#: src/view/tabwidget.cpp:765
 msgid "Rename Tab..."
 msgstr "टैब नाम बदलव..."
 
-#: src/view/tabwidget.cpp:456
+#: src/view/tabwidget.cpp:765
 msgid "Rename this tab"
 msgstr "ए टैब के नाम बदलव"
 
-#: src/view/tabwidget.cpp:460
+#: src/view/tabwidget.cpp:769
 #, fuzzy
 msgid "Duplicate Tab"
 msgstr "मौजूदा टैब के नकल बनाव"
 
-#: src/view/tabwidget.cpp:460
+#: src/view/tabwidget.cpp:769
 #, fuzzy
 msgid "Duplicate this tab"
 msgstr "मौजूदा टैब के नकल बनाव"
 
-#: src/view/tabwidget.cpp:464
+#: src/view/tabwidget.cpp:773
 msgid "Close Tab"
 msgstr "टैब बंद करव"
 
-#: src/view/tabwidget.cpp:464
+#: src/view/tabwidget.cpp:773
 msgid "Close this tab"
 msgstr "ए टैब बंद करव"
 
-#: src/view/tabwidget.cpp:468
+#: src/view/tabwidget.cpp:777
 msgid "Move Tab Left"
 msgstr "टैब ल डेरी खिसकाव"
 
-#: src/view/tabwidget.cpp:472
+#: src/view/tabwidget.cpp:777
+#, fuzzy
+#| msgid "Move Tab Left"
+msgid "Move this tab left"
+msgstr "टैब ल डेरी खिसकाव"
+
+#: src/view/tabwidget.cpp:781
 msgid "Move Tab Right"
 msgstr "टैब ल जेवनी खिसकाव"
 
-#: src/view/tabwidget.cpp:476
+#: src/view/tabwidget.cpp:781
+#, fuzzy
+#| msgid "Move Tab Right"
+msgid "Move this tab right"
+msgstr "टैब ल जेवनी खिसकाव"
+
+#: src/view/tabwidget.cpp:785
 msgid "Hierarchical Certificate List"
 msgstr "हियरार्चिकल प्रमानपत्र सूची"
-
-#: src/view/tabwidget.cpp:630
-msgid "Rename Tab"
-msgstr "टैब ल नवा नाम देवव"
-
-#: src/view/tabwidget.cpp:630
-msgid "New tab title:"
-msgstr "नवा टैब सीर्सक:"
 
 #, fuzzy
 #~| msgid "Passed"
@@ -6735,9 +6757,6 @@ msgstr "नवा टैब सीर्सक:"
 #~| msgid "Secret key successfully exported."
 #~ msgid "Smart card certificates successfully learned."
 #~ msgstr "गोपनीय कुंजी सफलता से निर्यात करिस."
-
-#~ msgid "Key Usage:"
-#~ msgstr "कुंजी उपयोग:"
 
 #~ msgid "Real Name:"
 #~ msgstr "सही नामः"
