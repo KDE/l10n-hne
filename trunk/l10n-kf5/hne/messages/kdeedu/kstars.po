@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-05-15 07:28+0000\n"
+"POT-Creation-Date: 2016-05-16 08:22+0000\n"
 "PO-Revision-Date: 2009-02-23 19:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -242,14 +242,14 @@ msgstr ""
 #: dialogs/detaildialog.cpp:618 ekos/capture.cpp:1829 ekos/capture.cpp:2160
 #: ekos/scheduler.cpp:2904 ekos/scheduler.cpp:3184 ekos/scheduler.cpp:3584
 #: ekos/scheduler.cpp:4233 ekos/scheduler.cpp:4262 ekos/scheduler.cpp:4304
-#: indi/drivermanager.cpp:1444 indi/indidriver.cpp:937 kstarsactions.cpp:934
+#: indi/drivermanager.cpp:1444 indi/indidriver.cpp:937 kstarsactions.cpp:947
 #: oal/execute.cpp:314 options/opscolors.cpp:200 tools/modcalcangdist.cpp:133
 #: tools/modcalcapcoord.cpp:150 tools/modcalcdaylength.cpp:247
 #: tools/modcalcgalcoord.cpp:193 tools/modcalcgeodcoord.cpp:232
 #: tools/modcalcjd.cpp:121 tools/modcalcplanets.cpp:208
-#: tools/modcalcsidtime.cpp:200 tools/modcalcvizequinox.cpp:84
-#: tools/modcalcvlsr.cpp:274 tools/observinglist.cpp:754
-#: tools/observinglist.cpp:877 tools/scriptbuilder.cpp:777
+#: tools/modcalcsidtime.cpp:201 tools/modcalcvizequinox.cpp:85
+#: tools/modcalcvlsr.cpp:274 tools/observinglist.cpp:778
+#: tools/observinglist.cpp:901 tools/scriptbuilder.cpp:777
 #: tools/scriptbuilder.cpp:845 tools/scriptbuilder.cpp:917
 msgid "Could Not Open File"
 msgstr "फाइल खोल नइ सकिस"
@@ -320,8 +320,8 @@ msgstr "%1 के फोटू फार्मेट के व्याख्�
 msgid "Error: Unable to save image: %1 "
 msgstr "गलती: फोटू: %1 ल सहेजेने मं अक्छम"
 
-#: auxiliary/imageexporter.cpp:233 kstarsactions.cpp:899
-#: printing/foveditordialog.cpp:186 tools/scriptbuilder.cpp:865
+#: auxiliary/imageexporter.cpp:233 printing/foveditordialog.cpp:186
+#: tools/scriptbuilder.cpp:865
 #, kde-format
 msgid "Could not upload image to remote location: %1"
 msgstr "रिमोट जगह: %1पर फोटू अपलोड नइ कर सकिस"
@@ -332,61 +332,67 @@ msgstr "रिमोट जगह: %1पर फोटू अपलोड नइ 
 msgid "Could not export image: URL %1 invalid"
 msgstr "फाइल अपलोड नइ कर सकिस"
 
-#: auxiliary/imageviewer.cpp:123
+#: auxiliary/imageviewer.cpp:122
 #, fuzzy, kde-format
 #| msgid "KStars image viewer"
 msgid "KStars image viewer: %1"
 msgstr "के-स्टार फोटू प्रदर्सक"
 
-#: auxiliary/imageviewer.cpp:137 tools/eyepiecefield.cpp:92
+#: auxiliary/imageviewer.cpp:136 tools/eyepiecefield.cpp:92
 msgid "Invert colors"
 msgstr ""
 
-#: auxiliary/imageviewer.cpp:138
+#: auxiliary/imageviewer.cpp:137
 msgid ""
 "Reverse colors of the image. This is useful to enhance contrast at times. "
 "This affects only the display and not the saving."
 msgstr ""
 
-#: auxiliary/imageviewer.cpp:139 ekos/capture.cpp:2129 ekos/scheduler.cpp:3163
+#: auxiliary/imageviewer.cpp:138 ekos/capture.cpp:2129 ekos/scheduler.cpp:3163
 msgid "Save"
 msgstr "सहेजव"
 
-#: auxiliary/imageviewer.cpp:140
+#: auxiliary/imageviewer.cpp:139
 msgid "Save the image to disk"
 msgstr "फोटू ल डिस्क मं सहेजव"
 
-#: auxiliary/imageviewer.cpp:225
+#: auxiliary/imageviewer.cpp:219
+#, fuzzy
+#| msgid "Welcome to KStars FITS Viewer"
+msgid "Image Viewer"
+msgstr "के-स्टार एफआईटीएस प्रदर्सक मं आप मन के स्वागत हे"
+
+#: auxiliary/imageviewer.cpp:240
 #, kde-format
 msgid "Loading of the image %1 failed."
 msgstr "फोटू %1 ल लोड करे मं फेल."
 
-#: auxiliary/imageviewer.cpp:275 indi/streamwg.cpp:158
+#: auxiliary/imageviewer.cpp:290 indi/streamwg.cpp:158
 #: printing/foveditordialog.cpp:124
 #, fuzzy
 #| msgid "&Save Sky Image..."
 msgid "Save Image"
 msgstr "आकास फोटू सहेजव... (&S)"
 
-#: auxiliary/imageviewer.cpp:282 dialogs/addcatdialog.cpp:209
+#: auxiliary/imageviewer.cpp:297 dialogs/addcatdialog.cpp:209
 #: ekos/capture.cpp:2117 ekos/scheduler.cpp:3151 fitsviewer/fitstab.cpp:276
 #: kstarsactions.cpp:820 printing/pwizprint.cpp:88 tools/scriptbuilder.cpp:829
 #, kde-format
 msgid "A file named \"%1\" already exists. Overwrite it?"
 msgstr "एक फाइल नाम \"%1\" से पहिली से ही अस्तित्व मं हे. एखर ऊपर ही लिखव?"
 
-#: auxiliary/imageviewer.cpp:284 dialogs/addcatdialog.cpp:211
+#: auxiliary/imageviewer.cpp:299 dialogs/addcatdialog.cpp:211
 #: ekos/capture.cpp:2119 ekos/scheduler.cpp:3153 fitsviewer/fitstab.cpp:278
 #: kstarsactions.cpp:821 printing/pwizprint.cpp:89 tools/scriptbuilder.cpp:831
 msgid "Overwrite File?"
 msgstr "फाइल ल मेटाय के लिखव?"
 
-#: auxiliary/imageviewer.cpp:302
+#: auxiliary/imageviewer.cpp:320
 #, kde-format
 msgid "Saving of the image %1 failed."
 msgstr "फोटू %1 ल सहेजे मं फेल."
 
-#: auxiliary/imageviewer.cpp:306
+#: auxiliary/imageviewer.cpp:324
 #, fuzzy, kde-format
 #| msgid "Save the image to disk"
 msgid "Saved image to %1"
@@ -967,7 +973,7 @@ msgstr "सामान्य"
 #: kstarsinit.cpp:675 printing/detailstable.cpp:87
 #: printing/pwizobjectselection.cpp:114 skycomponents/starcomponent.cpp:451
 #: skycomponents/starcomponent.cpp:460 skycomponents/starcomponent.cpp:469
-#: skyobjects/starobject.cpp:417 tools/observinglist.cpp:483
+#: skyobjects/starobject.cpp:417 tools/observinglist.cpp:494
 #: tools/wutdialog.cpp:279
 msgid "star"
 msgstr "तारा"
@@ -1144,7 +1150,7 @@ msgid "Log"
 msgstr "लाग"
 
 #: dialogs/detaildialog.cpp:684 skyobjects/skyobject.cpp:429
-#: tools/observinglist.cpp:493 tools/observinglist.cpp:718
+#: tools/observinglist.cpp:504 tools/observinglist.cpp:742
 #, kde-format
 msgid "Record here observation logs and/or data on %1."
 msgstr "इहां %1पर अवलोकन लाग और/या डाटा रेकार्ड करव."
@@ -1166,12 +1172,12 @@ msgstr "मिटाना पुस्टिकरन"
 #: dialogs/detaildialog.cpp:1093 dialogs/detaildialog.cpp:1123
 #: fitsviewer/fitsview.cpp:202 fitsviewer/fitsview.cpp:237
 #: tools/flagmanager.cpp:257 tools/flagmanager.cpp:286
-#: tools/observinglist.cpp:583 tools/observinglist.cpp:613
+#: tools/observinglist.cpp:607 tools/observinglist.cpp:637
 msgid "KStars did not find any active telescopes."
 msgstr "के-स्टार ल कोनो सक्रिय दूरदर्सी उपकरन नइ मिलिस..."
 
 #: dialogs/detaildialog.cpp:1109 fitsviewer/fitsview.cpp:218
-#: tools/flagmanager.cpp:273 tools/observinglist.cpp:599
+#: tools/flagmanager.cpp:273 tools/observinglist.cpp:623
 #, kde-format
 msgid "Telescope %1 is offline. Please connect and retry again."
 msgstr "दूरदर्सी %1 आफलाइन हे. किरपा करके, कनेक्ट होही अउ फिर से कोसिस करव."
@@ -1752,7 +1758,7 @@ msgid "Constellations"
 msgstr "नक्छत्र"
 
 #. i18n: ectx: property (text), widget (QPushButton, FindButton)
-#: dialogs/finddialog.cpp:60 tools/observinglist.ui:319
+#: dialogs/finddialog.cpp:60 tools/observinglist.ui:329
 msgid "Find Object"
 msgstr "चीज खोजव"
 
@@ -3044,7 +3050,7 @@ msgid_plural "Solver aborted after %1 seconds"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ekos/align.cpp:877 ekos/capture.cpp:1129 ekos/ekosmanager.cpp:2538
+#: ekos/align.cpp:877 ekos/capture.cpp:1129 ekos/ekosmanager.cpp:2534
 #: ekos/focus.cpp:1638 ekos/guide.cpp:574 ekos/mount.cpp:316
 #: ekos/scheduler.cpp:241
 #, fuzzy, kde-format
@@ -4676,91 +4682,91 @@ msgid "completed"
 msgstr "पूरा"
 
 #. i18n: ectx: property (title), widget (QGroupBox, setupGroup)
-#: ekos/ekosmanager.cpp:165 ekos/guide/guider.ui:470
+#: ekos/ekosmanager.cpp:161 ekos/guide/guider.ui:470
 msgid "Setup"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_6)
-#: ekos/ekosmanager.cpp:170 ekos/opsekos.ui:93
+#: ekos/ekosmanager.cpp:166 ekos/opsekos.ui:93
 #, fuzzy
 #| msgctxt "star name"
 #| msgid "Schedar"
 msgid "Scheduler"
 msgstr "सेदर"
 
-#: ekos/ekosmanager.cpp:233
+#: ekos/ekosmanager.cpp:229
 msgid "Cannot switch modes while INDI services are running."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:233
+#: ekos/ekosmanager.cpp:229
 #, fuzzy
 #| msgid "Focused on: "
 msgid "Ekos Mode"
 msgstr "ये मं फोकसः"
 
-#: ekos/ekosmanager.cpp:242
+#: ekos/ekosmanager.cpp:238
 msgid ""
 "Please fill the remote server information in Ekos options before switching "
 "to remote mode."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, processINDIB)
-#: ekos/ekosmanager.cpp:844 ekos/ekosmanager.cpp:1718 ekos/ekosmanager.ui:259
+#: ekos/ekosmanager.cpp:840 ekos/ekosmanager.cpp:1714 ekos/ekosmanager.ui:259
 #, fuzzy
 #| msgid "Start"
 msgid "Start INDI"
 msgstr "सुरू"
 
-#: ekos/ekosmanager.cpp:1001 ekos/ekosmanager.cpp:1036
+#: ekos/ekosmanager.cpp:997 ekos/ekosmanager.cpp:1032
 msgid "Ekos requires at least one CCD or Guider to operate."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1089
+#: ekos/ekosmanager.cpp:1085
 msgid ""
 "Ekos detected an instance of INDI server running. Do you wish to shut down "
 "the existing instance before starting a new one?"
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1090
+#: ekos/ekosmanager.cpp:1086
 #, fuzzy
 #| msgid "INDI Server:"
 msgid "INDI Server"
 msgstr "आईएनडीआई सर्वर:"
 
-#: ekos/ekosmanager.cpp:1099
+#: ekos/ekosmanager.cpp:1095
 #, fuzzy
 #| msgid "Connect or Disconnect an INDI device."
 msgid "Starting INDI services..."
 msgstr "आईएनडीआई उपकरन ल कनेक्ट या डिसकेक्ट करव."
 
-#: ekos/ekosmanager.cpp:1110
+#: ekos/ekosmanager.cpp:1106
 #, kde-format
 msgid "INDI services started on port %1. Please connect devices."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1120
+#: ekos/ekosmanager.cpp:1116
 #, fuzzy, kde-format
 #| msgid "Connection to INDI host at %1 on port %2 failed."
 msgid "Connecting to remote INDI server at %1 on port %2 ..."
 msgstr "इंडी होस्ट %1 मं पोर्ट %2 मं कनेक्सन फेल."
 
-#: ekos/ekosmanager.cpp:1127
+#: ekos/ekosmanager.cpp:1123
 #, fuzzy
 #| msgid "Cannot start INDI server: port error."
 msgid "Failed to connect to remote INDI server!"
 msgstr "आईएनडीआई सर्वर चालू नइ कर सकिसः पोर्ट गलती."
 
-#: ekos/ekosmanager.cpp:1139
+#: ekos/ekosmanager.cpp:1135
 msgid "INDI services started. Connection to remote INDI server is successful."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1151
+#: ekos/ekosmanager.cpp:1147
 #, fuzzy
 #| msgid "INDI"
 msgid "Stop INDI"
 msgstr "इन्डी"
 
-#: ekos/ekosmanager.cpp:1482
+#: ekos/ekosmanager.cpp:1478
 #, kde-format
 msgid ""
 "Unable to establish:\n"
@@ -4768,14 +4774,14 @@ msgid ""
 "Please ensure the device is connected and powered on."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1483 ekos/ekosmanager.cpp:1488
-#: ekos/ekosmanager.cpp:1524 ekos/ekosmanager.cpp:1529
+#: ekos/ekosmanager.cpp:1479 ekos/ekosmanager.cpp:1484
+#: ekos/ekosmanager.cpp:1520 ekos/ekosmanager.cpp:1525
 #, fuzzy
 #| msgid "Loading stars"
 msgid "Ekos startup error"
 msgstr "तारा लोड करत हे"
 
-#: ekos/ekosmanager.cpp:1487
+#: ekos/ekosmanager.cpp:1483
 #, kde-format
 msgid ""
 "Unable to establish the following devices:\n"
@@ -4783,7 +4789,7 @@ msgid ""
 "Please ensure each device is connected and powered on."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1523
+#: ekos/ekosmanager.cpp:1519
 #, kde-format
 msgid ""
 "Unable to establish remote device:\n"
@@ -4791,7 +4797,7 @@ msgid ""
 "Please ensure remote device name corresponds to actual device name."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1528
+#: ekos/ekosmanager.cpp:1524
 #, kde-format
 msgid ""
 "Unable to establish remote devices:\n"
@@ -4799,46 +4805,46 @@ msgid ""
 "Please ensure remote device name corresponds to actual device name."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1609
+#: ekos/ekosmanager.cpp:1605
 #, fuzzy
 #| msgid "Connect or Disconnect an INDI device."
 msgid "Connecting INDI devices..."
 msgstr "आईएनडीआई उपकरन ल कनेक्ट या डिसकेक्ट करव."
 
-#: ekos/ekosmanager.cpp:1681
+#: ekos/ekosmanager.cpp:1677
 #, fuzzy
 #| msgid "Connect or Disconnect an INDI device."
 msgid "Disconnecting INDI devices..."
 msgstr "आईएनडीआई उपकरन ल कनेक्ट या डिसकेक्ट करव."
 
-#: ekos/ekosmanager.cpp:1725
+#: ekos/ekosmanager.cpp:1721
 msgid "INDI services stopped."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:1926
+#: ekos/ekosmanager.cpp:1922
 msgid "Remote devices established. Please connect devices."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:2086 ekos/ekosmanager.cpp:2133
-#: ekos/ekosmanager.cpp:2245 ekos/ekosmanager.cpp:2256
-#: ekos/ekosmanager.cpp:2267 ekos/ekosmanager.cpp:2278 indi/indistd.cpp:417
+#: ekos/ekosmanager.cpp:2082 ekos/ekosmanager.cpp:2129
+#: ekos/ekosmanager.cpp:2241 ekos/ekosmanager.cpp:2252
+#: ekos/ekosmanager.cpp:2263 ekos/ekosmanager.cpp:2274 indi/indistd.cpp:417
 #, kde-format
 msgid "%1 is online."
 msgstr "%1 आनलाइन हे."
 
-#: ekos/ekosmanager.cpp:2221
+#: ekos/ekosmanager.cpp:2217
 #, fuzzy, kde-format
 #| msgid "%1 is online."
 msgid "%1 filter is online."
 msgstr "%1 आनलाइन हे."
 
-#: ekos/ekosmanager.cpp:2309
+#: ekos/ekosmanager.cpp:2305
 #, fuzzy, kde-format
 #| msgid "%1 is online."
 msgid "%1 is offline."
 msgstr "%1 आनलाइन हे."
 
-#: ekos/ekosmanager.cpp:2575
+#: ekos/ekosmanager.cpp:2571
 #, fuzzy
 #| msgid "CCD B"
 msgctxt "Charge-Coupled Device"
@@ -4846,7 +4852,7 @@ msgid "CCD"
 msgstr "सीसीडी बी"
 
 #. i18n: ectx: property (text), widget (QCheckBox, alignStepCheck)
-#: ekos/ekosmanager.cpp:2621 ekos/scheduler.ui:131
+#: ekos/ekosmanager.cpp:2617 ekos/scheduler.ui:131
 #, fuzzy
 #| msgid "Focused on: "
 msgid "Align"
@@ -4854,13 +4860,13 @@ msgstr "ये मं फोकसः"
 
 #. i18n: ectx: property (text), widget (QCheckBox, focusStepCheck)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FocusLogging)
-#: ekos/ekosmanager.cpp:2651 ekos/scheduler.ui:115
+#: ekos/ekosmanager.cpp:2647 ekos/scheduler.ui:115
 #: fitsviewer/fitsviewer.cpp:298 options/opsadvanced.ui:387
 msgid "Focus"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_MountLogging)
-#: ekos/ekosmanager.cpp:2688 options/opsadvanced.ui:426
+#: ekos/ekosmanager.cpp:2684 options/opsadvanced.ui:426
 #, fuzzy
 #| msgid "Count:"
 msgid "Mount"
@@ -4869,35 +4875,35 @@ msgstr "गननाः"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_7)
 #. i18n: ectx: property (text), widget (QCheckBox, guideStepCheck)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_GuideLogging)
-#: ekos/ekosmanager.cpp:2713 ekos/opsekos.ui:231 ekos/scheduler.ui:147
+#: ekos/ekosmanager.cpp:2709 ekos/opsekos.ui:231 ekos/scheduler.ui:147
 #: fitsviewer/fitsviewer.cpp:302 options/opsadvanced.ui:413
 #, fuzzy
 #| msgid "Guides"
 msgid "Guide"
 msgstr "मार्गदर्सक"
 
-#: ekos/ekosmanager.cpp:2780
+#: ekos/ekosmanager.cpp:2776
 #, kde-format
 msgid "Guider port from %1 is ready."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:3121
+#: ekos/ekosmanager.cpp:3117
 #, fuzzy
 #| msgid "Are you sure you want to remove the %1 client?"
 msgid "Are you sure you want to delete the profile?"
 msgstr "का आप मन सही मं क्लायंट %1 ल मिटाना चाहथो ?"
 
-#: ekos/ekosmanager.cpp:3121
+#: ekos/ekosmanager.cpp:3117
 #, fuzzy
 msgid "Confirm Delete"
 msgstr "फाइल खोले मं गलती"
 
-#: ekos/ekosmanager.cpp:3160
+#: ekos/ekosmanager.cpp:3156
 #, kde-format
 msgid "Site location updated to %1."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:3162
+#: ekos/ekosmanager.cpp:3158
 #, kde-format
 msgid "Failed to update site location to %1. City not found."
 msgstr ""
@@ -5911,7 +5917,7 @@ msgstr ""
 msgid "Guiding calibration failed with errors"
 msgstr "केलिएन्टे"
 
-#: ekos/guide/rcalibration.cpp:531 skycomponents/satellitescomponent.cpp:125
+#: ekos/guide/rcalibration.cpp:531 skycomponents/satellitescomponent.cpp:126
 #: tools/conjunctions.cpp:339
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
@@ -6213,7 +6219,7 @@ msgstr "गननाः"
 #. i18n: ectx: property (text), widget (QPushButton, updateB)
 #. i18n: ectx: property (text), widget (QPushButton, updateButton)
 #. i18n: ectx: property (text), widget (QPushButton, Update)
-#: ekos/mosaic.ui:573 tools/altvstime.ui:535 tools/observinglist.ui:273
+#: ekos/mosaic.ui:573 tools/altvstime.ui:535 tools/observinglist.ui:283
 msgid "Update"
 msgstr "अपडेट"
 
@@ -9885,17 +9891,17 @@ msgstr "जानकारी"
 msgid "Center Crosshair"
 msgstr "क्रासहेयर ट्रैक करव"
 
-#: kstars.cpp:199 kstarsactions.cpp:1087 skymap.cpp:406
+#: kstars.cpp:199 kstarsactions.cpp:1100 skymap.cpp:406
 msgid "Stop &Tracking"
 msgstr "ट्रेकिंग बंद करव (&T)"
 
-#: kstars.cpp:204 kstarsactions.cpp:1195 kstarsinit.cpp:236
+#: kstars.cpp:204 kstarsactions.cpp:1208 kstarsinit.cpp:236
 #, fuzzy
 #| msgid "Horizontal &Coordinates"
 msgid "Switch to horizonal view (Horizontal &Coordinates)"
 msgstr "छैतिज निर्देसांक (&C)"
 
-#: kstars.cpp:204 kstarsactions.cpp:1201 kstarsinit.cpp:236
+#: kstars.cpp:204 kstarsactions.cpp:1214 kstarsinit.cpp:236
 #, fuzzy
 #| msgid "Equatorial &Coordinates"
 msgid "Switch to star globe view (Equatorial &Coordinates)"
@@ -46279,585 +46285,580 @@ msgstr "एचएसटी देखाव (वलय अउ चन्द्र�
 
 #: kstars_i18n.cpp:4377
 msgctxt "Image/info menu item (should be translated)"
-msgid "Show HST/VLT Image"
-msgstr "एचएसटी/वीएलटी फोटू देखाव"
-
-#: kstars_i18n.cpp:4378
-msgctxt "Image/info menu item (should be translated)"
 msgid "Show KPNO AOP Image"
 msgstr "केपीएनओ एओपी फोटू देखाव"
 
-#: kstars_i18n.cpp:4379
+#: kstars_i18n.cpp:4378
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show Magellan Surface Image"
 msgstr "मेगेलन सतह फोटू देखाव"
 
-#: kstars_i18n.cpp:4380
+#: kstars_i18n.cpp:4379
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show MGS Image"
 msgstr "एमजीएस फोटू देखाव"
 
-#: kstars_i18n.cpp:4381
+#: kstars_i18n.cpp:4380
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show NASA Mosaic"
 msgstr "नासा मोजाएक देखाव"
 
-#: kstars_i18n.cpp:4382
+#: kstars_i18n.cpp:4381
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show New Horizons Image"
 msgstr "नवा छितिज के फोटू देखाव"
 
-#: kstars_i18n.cpp:4383
+#: kstars_i18n.cpp:4382
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show NOAO Image"
 msgstr "नोआओ फोटू देखाव"
 
-#: kstars_i18n.cpp:4384
+#: kstars_i18n.cpp:4383
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show NOAO Image (Halpha)"
 msgstr "एनओएओ फोटू देखाव (हालफा)"
 
-#: kstars_i18n.cpp:4385
+#: kstars_i18n.cpp:4384
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show NOAO Image (Optical)"
 msgstr "एनओएओ फोटू देखाव (आप्टिकल)"
 
-#: kstars_i18n.cpp:4386
+#: kstars_i18n.cpp:4385
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show Pathfinder Lander Image"
 msgstr "पाथफाइंडर लैंडर फोटू देखाव"
 
-#: kstars_i18n.cpp:4387
+#: kstars_i18n.cpp:4386
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show SEDS Image"
 msgstr "सेड्स फोटू देखाव"
 
-#: kstars_i18n.cpp:4388
+#: kstars_i18n.cpp:4387
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show Spitzer Image"
 msgstr "स्पिट्जर फोटू देखाव"
 
-#: kstars_i18n.cpp:4389
+#: kstars_i18n.cpp:4388
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show Sun Image"
 msgstr "सुरुज फोटू देखाव"
 
-#: kstars_i18n.cpp:4390
+#: kstars_i18n.cpp:4389
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show Viking Lander Image"
 msgstr "वाइकिंग लैंडर फोटू देखाव"
 
-#: kstars_i18n.cpp:4391
+#: kstars_i18n.cpp:4390
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show VLT Image"
 msgstr "वीएलटी फोटू देखाव"
 
-#: kstars_i18n.cpp:4392
+#: kstars_i18n.cpp:4391
 msgctxt "Image/info menu item (should be translated)"
 msgid "Show Voyager 1 Image"
 msgstr "वोएजर १ फोटू देखाव"
 
-#: kstars_i18n.cpp:4393
+#: kstars_i18n.cpp:4392
 msgctxt "Image/info menu item (should be translated)"
 msgid "Total Eclipse Image"
 msgstr "पूरा ग्रहन फोटू"
 
-#: kstars_i18n.cpp:4394
+#: kstars_i18n.cpp:4393
 msgctxt "Image/info menu item (should be translated)"
 msgid "Triple Eclipse (HST)"
 msgstr "तिहरा ग्रहन (एचएसटी)"
 
-#: kstars_i18n.cpp:4395
+#: kstars_i18n.cpp:4394
 msgctxt "Image/info menu item (should be translated)"
 msgid "Comet Shoemaker-Levy 9"
 msgstr "पुक्छलतारा सूमेकर लेवी 9"
 
-#: kstars_i18n.cpp:4396
+#: kstars_i18n.cpp:4395
 msgctxt "Image/info menu item (should be translated)"
 msgid "Daily Solar Images"
 msgstr "नित्य सुरुज फोटू"
 
-#: kstars_i18n.cpp:4397
+#: kstars_i18n.cpp:4396
 msgctxt "Image/info menu item (should be translated)"
 msgid "Fred Espanek's Eclipse page"
 msgstr "फ्रेड एसपांक के ग्रहन पेज"
 
-#: kstars_i18n.cpp:4398
+#: kstars_i18n.cpp:4397
 msgctxt "Image/info menu item (should be translated)"
 msgid "HST Press Release (2002)"
 msgstr "एचएसटी प्रेस रिलीज (२००२)"
 
-#: kstars_i18n.cpp:4399
+#: kstars_i18n.cpp:4398
 msgctxt "Image/info menu item (should be translated)"
 msgid "NASA JPL Page"
 msgstr "नासा जेपीएल पेज"
 
-#: kstars_i18n.cpp:4400
+#: kstars_i18n.cpp:4399
 msgctxt "Image/info menu item (should be translated)"
 msgid "NASA Mars Missions"
 msgstr "नासा मंगल मिसन"
 
-#: kstars_i18n.cpp:4401
+#: kstars_i18n.cpp:4400
 msgctxt "Image/info menu item (should be translated)"
 msgid "SEDS Information Page"
 msgstr "एसईडीएस जानकारी पेज"
 
-#: kstars_i18n.cpp:4402
+#: kstars_i18n.cpp:4401
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Apollo Program"
 msgstr "द अपोलो प्रोग्राम"
 
-#: kstars_i18n.cpp:4403
+#: kstars_i18n.cpp:4402
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Cassini Mission"
 msgstr "द कैसिनि मिसन"
 
-#: kstars_i18n.cpp:4404
+#: kstars_i18n.cpp:4403
 msgctxt "Image/info menu item (should be translated)"
 msgid "The \"face\" on Mars"
 msgstr "मंगल का \"चेहरा\""
 
-#: kstars_i18n.cpp:4405
+#: kstars_i18n.cpp:4404
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Galileo Mission"
 msgstr "द गैलिलियो मिसन"
 
-#: kstars_i18n.cpp:4406
+#: kstars_i18n.cpp:4405
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Magellan Mission"
 msgstr "द मैगेलन मिसन"
 
-#: kstars_i18n.cpp:4407
+#: kstars_i18n.cpp:4406
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Mariner 10 Mission"
 msgstr "द मैरिनर १० मिसन"
 
-#: kstars_i18n.cpp:4408
+#: kstars_i18n.cpp:4407
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Mars Society"
 msgstr "द मार सोसायटी"
 
-#: kstars_i18n.cpp:4409
+#: kstars_i18n.cpp:4408
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Voyager Missions"
 msgstr "द वोयेजर मिसन्स"
 
-#: kstars_i18n.cpp:4410
+#: kstars_i18n.cpp:4409
 msgctxt "Image/info menu item (should be translated)"
 msgid "The Whole Mars Catalog"
 msgstr "पूरा मंगल कैटलाग"
 
-#: kstars_i18n.cpp:4411
+#: kstars_i18n.cpp:4410
 msgctxt "Image/info menu item (should be translated)"
 msgid "Welcome to Mars!"
 msgstr "मंगल मं आप मन के स्वागत हे!"
 
-#: kstars_i18n.cpp:4412
+#: kstars_i18n.cpp:4411
 msgctxt "Image/info menu item (should be translated)"
 msgid "Wikipedia Page"
 msgstr "विकिपीडिया पेज"
 
-#: kstars_i18n.cpp:4413
+#: kstars_i18n.cpp:4412
 msgctxt "star name"
 msgid "Sirius"
 msgstr "सिरियस"
 
-#: kstars_i18n.cpp:4414
+#: kstars_i18n.cpp:4413
 msgctxt "star name"
 msgid "Canopus"
 msgstr "केनोपस"
 
-#: kstars_i18n.cpp:4415
+#: kstars_i18n.cpp:4414
 msgctxt "star name"
 msgid "Arcturus"
 msgstr "आर्कटुरुस"
 
-#: kstars_i18n.cpp:4416
+#: kstars_i18n.cpp:4415
 msgctxt "star name"
 msgid "Rigel Kentaurus"
 msgstr "रिगेल केन्ताउरुस"
 
-#: kstars_i18n.cpp:4417
+#: kstars_i18n.cpp:4416
 msgctxt "star name"
 msgid "Vega"
 msgstr "वेगा"
 
-#: kstars_i18n.cpp:4418
+#: kstars_i18n.cpp:4417
 msgctxt "star name"
 msgid "Capella"
 msgstr "कपेला"
 
-#: kstars_i18n.cpp:4419
+#: kstars_i18n.cpp:4418
 msgctxt "star name"
 msgid "Rigel"
 msgstr "रिगेल"
 
-#: kstars_i18n.cpp:4420
+#: kstars_i18n.cpp:4419
 msgctxt "star name"
 msgid "Procyon"
 msgstr "प्रोक्यान"
 
-#: kstars_i18n.cpp:4421
+#: kstars_i18n.cpp:4420
 msgctxt "star name"
 msgid "Achernar"
 msgstr "एचेरनार"
 
-#: kstars_i18n.cpp:4422
+#: kstars_i18n.cpp:4421
 msgctxt "star name"
 msgid "Betelgeuse"
 msgstr "बेतेलगेउसे"
 
-#: kstars_i18n.cpp:4423
+#: kstars_i18n.cpp:4422
 msgctxt "star name"
 msgid "Hadar"
 msgstr "हदर"
 
-#: kstars_i18n.cpp:4424
+#: kstars_i18n.cpp:4423
 msgctxt "star name"
 msgid "Altair"
 msgstr "अल्तेयर"
 
-#: kstars_i18n.cpp:4425
+#: kstars_i18n.cpp:4424
 msgctxt "star name"
 msgid "Acrux"
 msgstr "एक्रुक्स"
 
-#: kstars_i18n.cpp:4426
+#: kstars_i18n.cpp:4425
 msgctxt "star name"
 msgid "Aldebaran"
 msgstr "आल्देबारान"
 
-#: kstars_i18n.cpp:4427
+#: kstars_i18n.cpp:4426
 msgctxt "star name"
 msgid "Spica"
 msgstr "स्पिका"
 
-#: kstars_i18n.cpp:4428
+#: kstars_i18n.cpp:4427
 msgctxt "star name"
 msgid "Antares"
 msgstr "आंतारेस"
 
-#: kstars_i18n.cpp:4429
+#: kstars_i18n.cpp:4428
 msgctxt "star name"
 msgid "Pollux"
 msgstr "पोलुक्स"
 
-#: kstars_i18n.cpp:4430
+#: kstars_i18n.cpp:4429
 msgctxt "star name"
 msgid "Fomalhaut"
 msgstr "फोमालहाउत"
 
-#: kstars_i18n.cpp:4431
+#: kstars_i18n.cpp:4430
 msgctxt "star name"
 msgid "Mimosa"
 msgstr "मिमोसा"
 
-#: kstars_i18n.cpp:4432
+#: kstars_i18n.cpp:4431
 msgctxt "star name"
 msgid "Deneb"
 msgstr "डेनेब"
 
-#: kstars_i18n.cpp:4433
+#: kstars_i18n.cpp:4432
 msgctxt "star name"
 msgid "Regulus"
 msgstr "रेगुलस"
 
-#: kstars_i18n.cpp:4434
+#: kstars_i18n.cpp:4433
 msgctxt "star name"
 msgid "Adhara"
 msgstr "आधार"
 
-#: kstars_i18n.cpp:4435
+#: kstars_i18n.cpp:4434
 msgctxt "star name"
 msgid "Castor"
 msgstr "केस्टर"
 
-#: kstars_i18n.cpp:4436
+#: kstars_i18n.cpp:4435
 msgctxt "star name"
 msgid "Gacrux"
 msgstr "गाक्रक्स"
 
-#: kstars_i18n.cpp:4437
+#: kstars_i18n.cpp:4436
 msgctxt "star name"
 msgid "Shaula"
 msgstr "साउला"
 
-#: kstars_i18n.cpp:4438
+#: kstars_i18n.cpp:4437
 msgctxt "star name"
 msgid "Bellatrix"
 msgstr "बेलेट्रिक्स"
 
-#: kstars_i18n.cpp:4439
+#: kstars_i18n.cpp:4438
 msgctxt "star name"
 msgid "Alnath"
 msgstr "अलनाथ"
 
-#: kstars_i18n.cpp:4440
+#: kstars_i18n.cpp:4439
 msgctxt "star name"
 msgid "Miaplacidus"
 msgstr "मिआप्लासिदस"
 
-#: kstars_i18n.cpp:4441
+#: kstars_i18n.cpp:4440
 msgctxt "star name"
 msgid "Alnilam"
 msgstr "अलनिलम"
 
-#: kstars_i18n.cpp:4442
+#: kstars_i18n.cpp:4441
 msgctxt "star name"
 msgid "Al Na'ir"
 msgstr "अल नायर"
 
-#: kstars_i18n.cpp:4443
+#: kstars_i18n.cpp:4442
 msgctxt "star name"
 msgid "Alnitak"
 msgstr "अलनितक"
 
-#: kstars_i18n.cpp:4444
+#: kstars_i18n.cpp:4443
 msgctxt "star name"
 msgid "Regor"
 msgstr "रेगोर"
 
-#: kstars_i18n.cpp:4445
+#: kstars_i18n.cpp:4444
 msgctxt "star name"
 msgid "Alioth"
 msgstr "अलिओथ"
 
-#: kstars_i18n.cpp:4446
+#: kstars_i18n.cpp:4445
 msgctxt "star name"
 msgid "Mirfak"
 msgstr "मिराफक"
 
-#: kstars_i18n.cpp:4447
+#: kstars_i18n.cpp:4446
 msgctxt "star name"
 msgid "Kaus Australis"
 msgstr "काउस आस्ट्रालिस"
 
-#: kstars_i18n.cpp:4448
+#: kstars_i18n.cpp:4447
 msgctxt "star name"
 msgid "Dubhe"
 msgstr "दुबहे"
 
-#: kstars_i18n.cpp:4449
+#: kstars_i18n.cpp:4448
 msgctxt "star name"
 msgid "Wezen"
 msgstr "वेजेन"
 
-#: kstars_i18n.cpp:4450
+#: kstars_i18n.cpp:4449
 msgctxt "star name"
 msgid "Alkaid"
 msgstr "अलकेद"
 
-#: kstars_i18n.cpp:4451
+#: kstars_i18n.cpp:4450
 msgctxt "star name"
 msgid "Sargas"
 msgstr "सारगस"
 
-#: kstars_i18n.cpp:4452
+#: kstars_i18n.cpp:4451
 msgctxt "star name"
 msgid "Avior"
 msgstr "एविओर"
 
-#: kstars_i18n.cpp:4453
+#: kstars_i18n.cpp:4452
 msgctxt "star name"
 msgid "Menkalinan"
 msgstr "मेनकालिनान"
 
-#: kstars_i18n.cpp:4454
+#: kstars_i18n.cpp:4453
 msgctxt "star name"
 msgid "Alhena"
 msgstr "अलहेना"
 
-#: kstars_i18n.cpp:4455
+#: kstars_i18n.cpp:4454
 msgctxt "star name"
 msgid "Peacock"
 msgstr "पीकाक"
 
-#: kstars_i18n.cpp:4456
+#: kstars_i18n.cpp:4455
 msgctxt "star name"
 msgid "Polaris"
 msgstr "पोलारिस"
 
-#: kstars_i18n.cpp:4457
+#: kstars_i18n.cpp:4456
 msgctxt "star name"
 msgid "Mirzam"
 msgstr "मिरजाम"
 
-#: kstars_i18n.cpp:4458
+#: kstars_i18n.cpp:4457
 msgctxt "star name"
 msgid "Alphard"
 msgstr "अलफार्ड"
 
-#: kstars_i18n.cpp:4459
+#: kstars_i18n.cpp:4458
 msgctxt "star name"
 msgid "Hamal"
 msgstr "हमल"
 
-#: kstars_i18n.cpp:4460
+#: kstars_i18n.cpp:4459
 msgctxt "star name"
 msgid "Al Gieba"
 msgstr "अल गिएबा"
 
-#: kstars_i18n.cpp:4461
+#: kstars_i18n.cpp:4460
 msgctxt "star name"
 msgid "Diphda"
 msgstr "दिफदा"
 
-#: kstars_i18n.cpp:4462
+#: kstars_i18n.cpp:4461
 msgctxt "star name"
 msgid "Nunki"
 msgstr "नुनकी"
 
-#: kstars_i18n.cpp:4463
+#: kstars_i18n.cpp:4462
 msgctxt "star name"
 msgid "Menkent"
 msgstr "मेनकेन्त"
 
-#: kstars_i18n.cpp:4464
+#: kstars_i18n.cpp:4463
 msgctxt "star name"
 msgid "Alpheratz"
 msgstr "अलफेरात्ज"
 
-#: kstars_i18n.cpp:4465
+#: kstars_i18n.cpp:4464
 msgctxt "star name"
 msgid "Saiph"
 msgstr "साइफ"
 
-#: kstars_i18n.cpp:4466
+#: kstars_i18n.cpp:4465
 msgctxt "star name"
 msgid "Mirach"
 msgstr "मिराच"
 
-#: kstars_i18n.cpp:4467
+#: kstars_i18n.cpp:4466
 msgctxt "star name"
 msgid "Kocab"
 msgstr "कोकाब"
 
-#: kstars_i18n.cpp:4468
+#: kstars_i18n.cpp:4467
 msgctxt "star name"
 msgid "Rasalhague"
 msgstr "रसलहग"
 
-#: kstars_i18n.cpp:4469
+#: kstars_i18n.cpp:4468
 msgctxt "star name"
 msgid "Algol"
 msgstr "अलगोल"
 
-#: kstars_i18n.cpp:4470
+#: kstars_i18n.cpp:4469
 msgctxt "star name"
 msgid "Almach"
 msgstr "अलमाच"
 
-#: kstars_i18n.cpp:4471
+#: kstars_i18n.cpp:4470
 msgctxt "star name"
 msgid "Denebola"
 msgstr "देनेबोला"
 
-#: kstars_i18n.cpp:4472
+#: kstars_i18n.cpp:4471
 msgctxt "star name"
 msgid "Tsih"
 msgstr "त्सिह"
 
-#: kstars_i18n.cpp:4473
+#: kstars_i18n.cpp:4472
 msgctxt "star name"
 msgid "Naos"
 msgstr "नाओस"
 
-#: kstars_i18n.cpp:4474
+#: kstars_i18n.cpp:4473
 msgctxt "star name"
 msgid "Aspidiske"
 msgstr "असपिदिस्के"
 
-#: kstars_i18n.cpp:4475
+#: kstars_i18n.cpp:4474
 msgctxt "star name"
 msgid "Alphecca"
 msgstr "अलफेका"
 
-#: kstars_i18n.cpp:4476
+#: kstars_i18n.cpp:4475
 msgctxt "star name"
 msgid "Mizar"
 msgstr "मिजार"
 
-#: kstars_i18n.cpp:4477
+#: kstars_i18n.cpp:4476
 msgctxt "star name"
 msgid "Sadr"
 msgstr "सदर"
 
-#: kstars_i18n.cpp:4478
+#: kstars_i18n.cpp:4477
 msgctxt "star name"
 msgid "Suhail"
 msgstr "सुहैल"
 
-#: kstars_i18n.cpp:4479
+#: kstars_i18n.cpp:4478
 msgctxt "star name"
 msgid "Schedar"
 msgstr "सेदर"
 
-#: kstars_i18n.cpp:4480
+#: kstars_i18n.cpp:4479
 msgctxt "star name"
 msgid "Eltanin"
 msgstr "एलतानिन"
 
-#: kstars_i18n.cpp:4481
+#: kstars_i18n.cpp:4480
 msgctxt "star name"
 msgid "Mintaka"
 msgstr "मिनताका"
 
-#: kstars_i18n.cpp:4482
+#: kstars_i18n.cpp:4481
 msgctxt "star name"
 msgid "Caph"
 msgstr "केफ"
 
-#: kstars_i18n.cpp:4483
+#: kstars_i18n.cpp:4482
 msgctxt "star name"
 msgid "Dschubba"
 msgstr "द्सचुबा"
 
-#: kstars_i18n.cpp:4484
+#: kstars_i18n.cpp:4483
 msgctxt "star name"
 msgid "Men"
 msgstr "मेन"
 
-#: kstars_i18n.cpp:4485
+#: kstars_i18n.cpp:4484
 msgctxt "star name"
 msgid "Merak"
 msgstr "मेराक"
 
-#: kstars_i18n.cpp:4486
+#: kstars_i18n.cpp:4485
 msgctxt "star name"
 msgid "Pulcherrima"
 msgstr "पुलचेरिमा"
 
-#: kstars_i18n.cpp:4487
+#: kstars_i18n.cpp:4486
 msgctxt "star name"
 msgid "Enif"
 msgstr "एनिफ"
 
-#: kstars_i18n.cpp:4488
+#: kstars_i18n.cpp:4487
 msgctxt "star name"
 msgid "Ankaa"
 msgstr "अंका"
 
-#: kstars_i18n.cpp:4489
+#: kstars_i18n.cpp:4488
 msgctxt "star name"
 msgid "Phecda"
 msgstr "फेकदा"
 
-#: kstars_i18n.cpp:4490
+#: kstars_i18n.cpp:4489
 msgctxt "star name"
 msgid "Scheat"
 msgstr "स्चेअत"
 
-#: kstars_i18n.cpp:4491
+#: kstars_i18n.cpp:4490
 msgctxt "star name"
 msgid "Aludra"
 msgstr "अलुद्रा"
 
-#: kstars_i18n.cpp:4492
+#: kstars_i18n.cpp:4491
 msgctxt "star name"
 msgid "Alderamin"
 msgstr "एल्डरमिन"
 
-#: kstars_i18n.cpp:4493
+#: kstars_i18n.cpp:4492
 #, fuzzy
 #| msgctxt "star name"
 #| msgid "Markab"
@@ -46865,638 +46866,638 @@ msgctxt "star name"
 msgid "Merkab"
 msgstr "मरकब"
 
-#: kstars_i18n.cpp:4494
+#: kstars_i18n.cpp:4493
 msgctxt "star name"
 msgid "Gienah"
 msgstr "जिएनाह"
 
-#: kstars_i18n.cpp:4495
+#: kstars_i18n.cpp:4494
 msgctxt "star name"
 msgid "Markab"
 msgstr "मरकब"
 
-#: kstars_i18n.cpp:4496
+#: kstars_i18n.cpp:4495
 msgctxt "star name"
 msgid "Menkab"
 msgstr "मेनकाब"
 
-#: kstars_i18n.cpp:4497
+#: kstars_i18n.cpp:4496
 msgctxt "star name"
 msgid "Zozma"
 msgstr "जोज्मा"
 
-#: kstars_i18n.cpp:4498
+#: kstars_i18n.cpp:4497
 msgctxt "star name"
 msgid "Graffias"
 msgstr "ग्राफिआस"
 
-#: kstars_i18n.cpp:4499
+#: kstars_i18n.cpp:4498
 msgctxt "star name"
 msgid "Arneb"
 msgstr "अरनेब"
 
-#: kstars_i18n.cpp:4500
+#: kstars_i18n.cpp:4499
 #, fuzzy
 msgctxt "star name"
 msgid "Gienah Corvi"
 msgstr "जिएनाह"
 
-#: kstars_i18n.cpp:4501
+#: kstars_i18n.cpp:4500
 msgctxt "star name"
 msgid "Zuben el Chamali"
 msgstr "जुबेन अल चमाली"
 
-#: kstars_i18n.cpp:4502
+#: kstars_i18n.cpp:4501
 msgctxt "star name"
 msgid "Unukalhai"
 msgstr "उनुकलहइ"
 
-#: kstars_i18n.cpp:4503
+#: kstars_i18n.cpp:4502
 msgctxt "star name"
 msgid "Sheratan"
 msgstr "सेरटन"
 
-#: kstars_i18n.cpp:4504
+#: kstars_i18n.cpp:4503
 msgctxt "star name"
 msgid "Phakt"
 msgstr "फक्त"
 
-#: kstars_i18n.cpp:4505
+#: kstars_i18n.cpp:4504
 msgctxt "star name"
 msgid "Kraz"
 msgstr "क्रज"
 
-#: kstars_i18n.cpp:4506
+#: kstars_i18n.cpp:4505
 msgctxt "star name"
 msgid "Ruchbah"
 msgstr "रुचबाह"
 
-#: kstars_i18n.cpp:4507
+#: kstars_i18n.cpp:4506
 msgctxt "star name"
 msgid "Muphrid"
 msgstr "मुफरिद"
 
-#: kstars_i18n.cpp:4508
+#: kstars_i18n.cpp:4507
 msgctxt "star name"
 msgid "Kabdhilinan"
 msgstr "कबधहिलिनान"
 
-#: kstars_i18n.cpp:4509
+#: kstars_i18n.cpp:4508
 msgctxt "star name"
 msgid "Lesath"
 msgstr "लेसाथ"
 
-#: kstars_i18n.cpp:4510
+#: kstars_i18n.cpp:4509
 msgctxt "star name"
 msgid "Kaus Media"
 msgstr "काउस मीडिया"
 
-#: kstars_i18n.cpp:4511
+#: kstars_i18n.cpp:4510
 msgctxt "star name"
 msgid "Tarazed"
 msgstr "ताराज्द"
 
-#: kstars_i18n.cpp:4512
+#: kstars_i18n.cpp:4511
 msgctxt "star name"
 msgid "Yed Prior"
 msgstr "येद प्रियर"
 
-#: kstars_i18n.cpp:4513
+#: kstars_i18n.cpp:4512
 msgctxt "star name"
 msgid "Na'ir al Saif"
 msgstr "नायर अल सेफ"
 
-#: kstars_i18n.cpp:4514
+#: kstars_i18n.cpp:4513
 msgctxt "star name"
 msgid "Zuben El Genubi"
 msgstr "जुबेन अल जेनुबी"
 
-#: kstars_i18n.cpp:4515
+#: kstars_i18n.cpp:4514
 msgctxt "star name"
 msgid "Kelb al Rai"
 msgstr "केल्ब अल राय"
 
-#: kstars_i18n.cpp:4516
+#: kstars_i18n.cpp:4515
 msgctxt "star name"
 msgid "Cursa"
 msgstr "कुर्सा"
 
-#: kstars_i18n.cpp:4517
+#: kstars_i18n.cpp:4516
 msgctxt "star name"
 msgid "Kornephoros"
 msgstr "कार्नफोरस"
 
-#: kstars_i18n.cpp:4518
+#: kstars_i18n.cpp:4517
 msgctxt "star name"
 msgid "Ras Algethi"
 msgstr "रास अलगेती"
 
-#: kstars_i18n.cpp:4519
+#: kstars_i18n.cpp:4518
 msgctxt "star name"
 msgid "Rastaban"
 msgstr "रास्ताबान"
 
-#: kstars_i18n.cpp:4520
+#: kstars_i18n.cpp:4519
 msgctxt "star name"
 msgid "Nihal"
 msgstr "निहाल"
 
-#: kstars_i18n.cpp:4521
+#: kstars_i18n.cpp:4520
 msgctxt "star name"
 msgid "Kaus Borealis"
 msgstr "काउस बोरेआलिस"
 
-#: kstars_i18n.cpp:4522
+#: kstars_i18n.cpp:4521
 msgctxt "star name"
 msgid "Algenib"
 msgstr "अल्जेनिब"
 
-#: kstars_i18n.cpp:4523
+#: kstars_i18n.cpp:4522
 msgctxt "star name"
 msgid "Atik"
 msgstr "अतिक"
 
-#: kstars_i18n.cpp:4524
+#: kstars_i18n.cpp:4523
 msgctxt "star name"
 msgid "Tchou"
 msgstr "त्चोऊ"
 
-#: kstars_i18n.cpp:4525
+#: kstars_i18n.cpp:4524
 msgctxt "star name"
 msgid "Alcyone"
 msgstr "एल्सायोन"
 
-#: kstars_i18n.cpp:4526
+#: kstars_i18n.cpp:4525
 msgctxt "star name"
 msgid "Vindemiatrix"
 msgstr "विंदेमियाट्रिक्स"
 
-#: kstars_i18n.cpp:4527
+#: kstars_i18n.cpp:4526
 msgctxt "star name"
 msgid "Deneb Algiedi"
 msgstr "देनेब अरगिएदी"
 
-#: kstars_i18n.cpp:4528
+#: kstars_i18n.cpp:4527
 msgctxt "star name"
 msgid "Tejat"
 msgstr "तेजत"
 
-#: kstars_i18n.cpp:4529
+#: kstars_i18n.cpp:4528
 msgctxt "star name"
 msgid "Acamar"
 msgstr "अकामार"
 
-#: kstars_i18n.cpp:4530
+#: kstars_i18n.cpp:4529
 msgctxt "star name"
 msgid "Gomeisa"
 msgstr "गोमेसिया"
 
-#: kstars_i18n.cpp:4531
+#: kstars_i18n.cpp:4530
 msgctxt "star name"
 msgid "Cor Caroli"
 msgstr "कोर कारोली"
 
-#: kstars_i18n.cpp:4532
+#: kstars_i18n.cpp:4531
 msgctxt "star name"
 msgid "Al Niyat"
 msgstr "अल नियत"
 
-#: kstars_i18n.cpp:4533
+#: kstars_i18n.cpp:4532
 msgctxt "star name"
 msgid "Sadalsud"
 msgstr "सादालसुद"
 
-#: kstars_i18n.cpp:4534
+#: kstars_i18n.cpp:4533
 msgctxt "star name"
 msgid "Matar"
 msgstr "मातार"
 
-#: kstars_i18n.cpp:4535
+#: kstars_i18n.cpp:4534
 msgctxt "star name"
 msgid "Algorab"
 msgstr "अलगोराब"
 
-#: kstars_i18n.cpp:4536
+#: kstars_i18n.cpp:4535
 msgctxt "star name"
 msgid "Sadalmelik"
 msgstr "सादालमेलिक"
 
-#: kstars_i18n.cpp:4537
+#: kstars_i18n.cpp:4536
 msgctxt "star name"
 msgid "Zaurak"
 msgstr "जाउराक"
 
-#: kstars_i18n.cpp:4538
+#: kstars_i18n.cpp:4537
 msgctxt "star name"
 msgid "Al Nasl"
 msgstr "अल नसल"
 
-#: kstars_i18n.cpp:4539
+#: kstars_i18n.cpp:4538
 msgctxt "star name"
 msgid "Pherkab"
 msgstr "फेरकाब"
 
-#: kstars_i18n.cpp:4540
+#: kstars_i18n.cpp:4539
 msgctxt "star name"
 msgid "Al Dhanab"
 msgstr "अल दानाब"
 
-#: kstars_i18n.cpp:4541
+#: kstars_i18n.cpp:4540
 msgctxt "star name"
 msgid "Furud"
 msgstr "फुरुद"
 
-#: kstars_i18n.cpp:4542
+#: kstars_i18n.cpp:4541
 msgctxt "star name"
 msgid "Minkar"
 msgstr "मिनकर"
 
-#: kstars_i18n.cpp:4543
+#: kstars_i18n.cpp:4542
 msgctxt "star name"
 msgid "Maaz"
 msgstr "माज"
 
-#: kstars_i18n.cpp:4544
+#: kstars_i18n.cpp:4543
 msgctxt "star name"
 msgid "Seginus"
 msgstr "सेगिनस"
 
-#: kstars_i18n.cpp:4545
+#: kstars_i18n.cpp:4544
 msgctxt "star name"
 msgid "Dabih"
 msgstr "दाबिह"
 
-#: kstars_i18n.cpp:4546
+#: kstars_i18n.cpp:4545
 msgctxt "star name"
 msgid "Albireo"
 msgstr "अलबिरेओ"
 
-#: kstars_i18n.cpp:4547
+#: kstars_i18n.cpp:4546
 msgctxt "star name"
 msgid "Mebsuta"
 msgstr "मेबसुता"
 
-#: kstars_i18n.cpp:4548
+#: kstars_i18n.cpp:4547
 msgctxt "star name"
 msgid "Tania Australis"
 msgstr "तानिया आस्ट्रेलिस"
 
-#: kstars_i18n.cpp:4549
+#: kstars_i18n.cpp:4548
 msgctxt "star name"
 msgid "Altais"
 msgstr "अलताइस"
 
-#: kstars_i18n.cpp:4550
+#: kstars_i18n.cpp:4549
 msgctxt "star name"
 msgid "Al Nair"
 msgstr "अल नायर"
 
-#: kstars_i18n.cpp:4551
+#: kstars_i18n.cpp:4550
 msgctxt "star name"
 msgid "Talitha Borealis"
 msgstr "तालिथा बोरेआलिस"
 
-#: kstars_i18n.cpp:4552
+#: kstars_i18n.cpp:4551
 msgctxt "star name"
 msgid "Sarin"
 msgstr "सरिन"
 
-#: kstars_i18n.cpp:4553
+#: kstars_i18n.cpp:4552
 msgctxt "star name"
 msgid "Wazn"
 msgstr "वाज्न"
 
-#: kstars_i18n.cpp:4554
+#: kstars_i18n.cpp:4553
 msgctxt "star name"
 msgid "Kaou Pih"
 msgstr "काउ पिह"
 
-#: kstars_i18n.cpp:4555
+#: kstars_i18n.cpp:4554
 msgctxt "star name"
 msgid "Er Rai"
 msgstr "एर राइ"
 
-#: kstars_i18n.cpp:4556
+#: kstars_i18n.cpp:4555
 msgctxt "star name"
 msgid "Yed Posterior"
 msgstr "येद पोस्टेरियर"
 
-#: kstars_i18n.cpp:4557
+#: kstars_i18n.cpp:4556
 msgctxt "star name"
 msgid "Alphirk"
 msgstr "अलफ्रिक"
 
-#: kstars_i18n.cpp:4558
+#: kstars_i18n.cpp:4557
 msgctxt "star name"
 msgid "Sulaphat"
 msgstr "सुलाफट"
 
-#: kstars_i18n.cpp:4559
+#: kstars_i18n.cpp:4558
 msgctxt "star name"
 msgid "Skat"
 msgstr "स्कत"
 
-#: kstars_i18n.cpp:4560
+#: kstars_i18n.cpp:4559
 msgctxt "star name"
 msgid "Edasich"
 msgstr "एदासिच"
 
-#: kstars_i18n.cpp:4561
+#: kstars_i18n.cpp:4560
 msgctxt "star name"
 msgid "Megrez"
 msgstr "मगरेज"
 
-#: kstars_i18n.cpp:4562
+#: kstars_i18n.cpp:4561
 msgctxt "star name"
 msgid "Chertan"
 msgstr "चेरटन"
 
-#: kstars_i18n.cpp:4563
+#: kstars_i18n.cpp:4562
 msgctxt "star name"
 msgid "Asmidiske"
 msgstr "एसमिदिस्के"
 
-#: kstars_i18n.cpp:4564
+#: kstars_i18n.cpp:4563
 msgctxt "star name"
 msgid "Navi"
 msgstr "नावी"
 
-#: kstars_i18n.cpp:4565
+#: kstars_i18n.cpp:4564
 msgctxt "star name"
 msgid "Muscida"
 msgstr "मुसिदा"
 
-#: kstars_i18n.cpp:4566
+#: kstars_i18n.cpp:4565
 msgctxt "star name"
 msgid "Heze"
 msgstr "हेज"
 
-#: kstars_i18n.cpp:4567
+#: kstars_i18n.cpp:4566
 msgctxt "star name"
 msgid "Auva"
 msgstr "अउवा"
 
-#: kstars_i18n.cpp:4568
+#: kstars_i18n.cpp:4567
 msgctxt "star name"
 msgid "Homan"
 msgstr "होमन"
 
-#: kstars_i18n.cpp:4569
+#: kstars_i18n.cpp:4568
 msgctxt "star name"
 msgid "Mothallah"
 msgstr "मोथालाह"
 
-#: kstars_i18n.cpp:4570
+#: kstars_i18n.cpp:4569
 msgctxt "star name"
 msgid "Adhafera"
 msgstr "अधाफेरा"
 
-#: kstars_i18n.cpp:4571
+#: kstars_i18n.cpp:4570
 msgctxt "star name"
 msgid "Al Thalimain"
 msgstr "अल थालिमेन"
 
-#: kstars_i18n.cpp:4572
+#: kstars_i18n.cpp:4571
 msgctxt "star name"
 msgid "Tania Borealis"
 msgstr "तानिया बोरेआलिस"
 
-#: kstars_i18n.cpp:4573
+#: kstars_i18n.cpp:4572
 msgctxt "star name"
 msgid "Nekkar"
 msgstr "नेक्कर"
 
-#: kstars_i18n.cpp:4574
+#: kstars_i18n.cpp:4573
 msgctxt "star name"
 msgid "Alula Borealis"
 msgstr "अलुला बोरेआलिस"
 
-#: kstars_i18n.cpp:4575
+#: kstars_i18n.cpp:4574
 msgctxt "star name"
 msgid "Wasat"
 msgstr "वासत"
 
-#: kstars_i18n.cpp:4576
+#: kstars_i18n.cpp:4575
 msgctxt "star name"
 msgid "Sadalbari"
 msgstr "सादलबारी"
 
-#: kstars_i18n.cpp:4577
+#: kstars_i18n.cpp:4576
 msgctxt "star name"
 msgid "Rana"
 msgstr "राना"
 
-#: kstars_i18n.cpp:4578
+#: kstars_i18n.cpp:4577
 msgctxt "star name"
 msgid "Tseen Ke"
 msgstr "त्सीन के"
 
-#: kstars_i18n.cpp:4579
+#: kstars_i18n.cpp:4578
 msgctxt "star name"
 msgid "Sheliak"
 msgstr "सेलियाक"
 
-#: kstars_i18n.cpp:4580
+#: kstars_i18n.cpp:4579
 msgctxt "star name"
 msgid "Baham"
 msgstr "बाहम"
 
-#: kstars_i18n.cpp:4581
+#: kstars_i18n.cpp:4580
 msgctxt "star name"
 msgid "Ain"
 msgstr "एइन"
 
-#: kstars_i18n.cpp:4582
+#: kstars_i18n.cpp:4581
 msgctxt "star name"
 msgid "Tarf"
 msgstr "तर्फ"
 
-#: kstars_i18n.cpp:4583
+#: kstars_i18n.cpp:4582
 msgctxt "star name"
 msgid "Schemali"
 msgstr "सेमाली"
 
-#: kstars_i18n.cpp:4584
+#: kstars_i18n.cpp:4583
 msgctxt "star name"
 msgid "Talitha Australis"
 msgstr "तलिथा आस्ट्रालिस"
 
-#: kstars_i18n.cpp:4585
+#: kstars_i18n.cpp:4584
 msgctxt "star name"
 msgid "Al Giedi"
 msgstr "अल जिएदी"
 
-#: kstars_i18n.cpp:4586
+#: kstars_i18n.cpp:4585
 msgctxt "star name"
 msgid "Zawijah"
 msgstr "जाविजाह"
 
-#: kstars_i18n.cpp:4587
+#: kstars_i18n.cpp:4586
 msgctxt "star name"
 msgid "Atlas"
 msgstr "एटलस"
 
-#: kstars_i18n.cpp:4588
+#: kstars_i18n.cpp:4587
 msgctxt "star name"
 msgid "Rotanev"
 msgstr "रोटानेव"
 
-#: kstars_i18n.cpp:4589
+#: kstars_i18n.cpp:4588
 msgctxt "star name"
 msgid "Primus Hyadum"
 msgstr "प्रिमस हायदम"
 
-#: kstars_i18n.cpp:4590
+#: kstars_i18n.cpp:4589
 msgctxt "star name"
 msgid "Chow"
 msgstr "चोव"
 
-#: kstars_i18n.cpp:4591
+#: kstars_i18n.cpp:4590
 msgctxt "star name"
 msgid "Nusakan"
 msgstr "नुसाकान"
 
-#: kstars_i18n.cpp:4592
+#: kstars_i18n.cpp:4591
 msgctxt "star name"
 msgid "Thuban"
 msgstr "थुबान"
 
-#: kstars_i18n.cpp:4593
+#: kstars_i18n.cpp:4592
 msgctxt "star name"
 msgid "Nashira"
 msgstr "नासिरा"
 
-#: kstars_i18n.cpp:4594
+#: kstars_i18n.cpp:4593
 msgctxt "star name"
 msgid "Sadatoni"
 msgstr "सादाटोनी"
 
-#: kstars_i18n.cpp:4595
+#: kstars_i18n.cpp:4594
 msgctxt "star name"
 msgid "Marfik"
 msgstr "मारफिक"
 
-#: kstars_i18n.cpp:4596
+#: kstars_i18n.cpp:4595
 msgctxt "star name"
 msgid "Alshain"
 msgstr "अलसैन"
 
-#: kstars_i18n.cpp:4597
+#: kstars_i18n.cpp:4596
 msgctxt "star name"
 msgid "Electra"
 msgstr "इलेक्ट्रा"
 
-#: kstars_i18n.cpp:4598
+#: kstars_i18n.cpp:4597
 msgctxt "star name"
 msgid "Prijipati"
 msgstr "प्रिजिपति"
 
-#: kstars_i18n.cpp:4599
+#: kstars_i18n.cpp:4598
 msgctxt "star name"
 msgid "Grumium"
 msgstr "ग्रुमियम"
 
-#: kstars_i18n.cpp:4600
+#: kstars_i18n.cpp:4599
 msgctxt "star name"
 msgid "Baten"
 msgstr "बातेन"
 
-#: kstars_i18n.cpp:4601
+#: kstars_i18n.cpp:4600
 msgctxt "star name"
 msgid "Svalocin"
 msgstr "स्वालोसिन"
 
-#: kstars_i18n.cpp:4602
+#: kstars_i18n.cpp:4601
 msgctxt "star name"
 msgid "Albali"
 msgstr "अलबाली"
 
-#: kstars_i18n.cpp:4603
+#: kstars_i18n.cpp:4602
 msgctxt "star name"
 msgid "Praecipula"
 msgstr "प्रेसिपुला"
 
-#: kstars_i18n.cpp:4604
+#: kstars_i18n.cpp:4603
 msgctxt "star name"
 msgid "Sadachbia"
 msgstr "सादाचबिया"
 
-#: kstars_i18n.cpp:4605
+#: kstars_i18n.cpp:4604
 msgctxt "star name"
 msgid "Maia"
 msgstr "माइया"
 
-#: kstars_i18n.cpp:4606
+#: kstars_i18n.cpp:4605
 msgctxt "star name"
 msgid "Mesarthim"
 msgstr "मेसारथिम"
 
-#: kstars_i18n.cpp:4607
+#: kstars_i18n.cpp:4606
 msgctxt "star name"
 msgid "Rasalas"
 msgstr "रासालास"
 
-#: kstars_i18n.cpp:4608
+#: kstars_i18n.cpp:4607
 msgctxt "star name"
 msgid "Azha"
 msgstr "आजहा"
 
-#: kstars_i18n.cpp:4609
+#: kstars_i18n.cpp:4608
 msgctxt "star name"
 msgid "Zuben el Hakrabi"
 msgstr "जुबेन अल हकराबी"
 
-#: kstars_i18n.cpp:4610
+#: kstars_i18n.cpp:4609
 msgctxt "star name"
 msgid "Kitalpha"
 msgstr "किताल्फा"
 
-#: kstars_i18n.cpp:4611
+#: kstars_i18n.cpp:4610
 msgctxt "star name"
 msgid "Asellus Australis"
 msgstr "एसेलुस आस्ट्रेलिस"
 
-#: kstars_i18n.cpp:4612
+#: kstars_i18n.cpp:4611
 msgctxt "star name"
 msgid "Menkib"
 msgstr "मेनकिब"
 
-#: kstars_i18n.cpp:4613
+#: kstars_i18n.cpp:4612
 msgctxt "star name"
 msgid "Alcor"
 msgstr "एल्कोर"
 
-#: kstars_i18n.cpp:4614
+#: kstars_i18n.cpp:4613
 msgctxt "star name"
 msgid "Mekbuda"
 msgstr "मेकबुदा"
 
-#: kstars_i18n.cpp:4615
+#: kstars_i18n.cpp:4614
 msgctxt "star name"
 msgid "Dulfim"
 msgstr "दुलफिम"
 
-#: kstars_i18n.cpp:4616
+#: kstars_i18n.cpp:4615
 msgctxt "star name"
 msgid "Beid"
 msgstr "बेइद"
 
-#: kstars_i18n.cpp:4617
+#: kstars_i18n.cpp:4616
 msgctxt "star name"
 msgid "Syrma"
 msgstr "साइरमा"
 
-#: kstars_i18n.cpp:4618
+#: kstars_i18n.cpp:4617
 msgctxt "star name"
 msgid "Alkes"
 msgstr "अलकेस"
 
-#: kstars_i18n.cpp:4619
+#: kstars_i18n.cpp:4618
 msgctxt "star name"
 msgid "Muliphein"
 msgstr "मुलिफेइन"
 
-#: kstars_i18n.cpp:4620
+#: kstars_i18n.cpp:4619
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Meridian"
@@ -47504,87 +47505,87 @@ msgctxt "star name"
 msgid "Alphekka Meridiana"
 msgstr "मेरिडियन"
 
-#: kstars_i18n.cpp:4621
+#: kstars_i18n.cpp:4620
 msgctxt "star name"
 msgid "Merope"
 msgstr "मेरोप"
 
-#: kstars_i18n.cpp:4622
+#: kstars_i18n.cpp:4621
 msgctxt "star name"
 msgid "Ancha"
 msgstr "अंचा"
 
-#: kstars_i18n.cpp:4623
+#: kstars_i18n.cpp:4622
 msgctxt "star name"
 msgid "Chara"
 msgstr "चारा"
 
-#: kstars_i18n.cpp:4624
+#: kstars_i18n.cpp:4623
 msgctxt "star name"
 msgid "Acubens"
 msgstr "एकुबेन्स"
 
-#: kstars_i18n.cpp:4625
+#: kstars_i18n.cpp:4624
 msgctxt "star name"
 msgid "Taygeta"
 msgstr "तायगेता"
 
-#: kstars_i18n.cpp:4626
+#: kstars_i18n.cpp:4625
 msgctxt "star name"
 msgid "Alkalurops"
 msgstr "अलकालुरोप्पस"
 
-#: kstars_i18n.cpp:4627
+#: kstars_i18n.cpp:4626
 msgctxt "star name"
 msgid "Botein"
 msgstr "बोतेइन"
 
-#: kstars_i18n.cpp:4628
+#: kstars_i18n.cpp:4627
 msgctxt "star name"
 msgid "Minhar al Shuja"
 msgstr "मिनहार अल सुजा"
 
-#: kstars_i18n.cpp:4629
+#: kstars_i18n.cpp:4628
 msgctxt "star name"
 msgid "Cujam"
 msgstr "कुजाम"
 
-#: kstars_i18n.cpp:4630
+#: kstars_i18n.cpp:4629
 msgctxt "star name"
 msgid "Dziban"
 msgstr "द्जिबेन"
 
-#: kstars_i18n.cpp:4631
+#: kstars_i18n.cpp:4630
 msgctxt "star name"
 msgid "Alya"
 msgstr "अल्या"
 
-#: kstars_i18n.cpp:4632
+#: kstars_i18n.cpp:4631
 msgctxt "star name"
 msgid "Asellus Borealis"
 msgstr "आसेलस बोरेआलिस"
 
-#: kstars_i18n.cpp:4633
+#: kstars_i18n.cpp:4632
 msgctxt "star name"
 msgid "Marsik"
 msgstr "मारसिक"
 
-#: kstars_i18n.cpp:4634
+#: kstars_i18n.cpp:4633
 msgctxt "star name"
 msgid "Pleione"
 msgstr "प्लेइओन"
 
-#: kstars_i18n.cpp:4635
+#: kstars_i18n.cpp:4634
 msgctxt "star name"
 msgid "Asterope"
 msgstr "आस्तेरोप"
 
-#: kstars_i18n.cpp:4636
+#: kstars_i18n.cpp:4635
 msgctxt "star name"
 msgid "Mira"
 msgstr "मिरा"
 
-#: kstars_i18n.cpp:4637
+#: kstars_i18n.cpp:4636
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "East Lansing"
@@ -47592,7 +47593,7 @@ msgctxt "Satellite group name"
 msgid "Last Launches"
 msgstr "ईस्ट लेनसिंग"
 
-#: kstars_i18n.cpp:4638
+#: kstars_i18n.cpp:4637
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Huntington Station"
@@ -47600,12 +47601,12 @@ msgctxt "Satellite group name"
 msgid "International Space Station"
 msgstr "हन्टिंगटन स्टेसन"
 
-#: kstars_i18n.cpp:4639
+#: kstars_i18n.cpp:4638
 msgctxt "Satellite group name"
 msgid "Brightest"
 msgstr ""
 
-#: kstars_i18n.cpp:4640
+#: kstars_i18n.cpp:4639
 #, fuzzy
 #| msgctxt "Constellation name (optional)"
 #| msgid "C Western"
@@ -47613,97 +47614,97 @@ msgctxt "Satellite group name"
 msgid "Weather"
 msgstr "सी पस्चिमी"
 
-#: kstars_i18n.cpp:4641
+#: kstars_i18n.cpp:4640
 msgctxt "Satellite group name"
 msgid "NOAA"
 msgstr ""
 
-#: kstars_i18n.cpp:4642
+#: kstars_i18n.cpp:4641
 msgctxt "Satellite group name"
 msgid "GOES"
 msgstr ""
 
-#: kstars_i18n.cpp:4643
+#: kstars_i18n.cpp:4642
 #, fuzzy
 #| msgid "View Resource"
 msgctxt "Satellite group name"
 msgid "Earth Resources"
 msgstr "रिसोर्स देखव"
 
-#: kstars_i18n.cpp:4644
+#: kstars_i18n.cpp:4643
 msgctxt "Satellite group name"
 msgid "Search & Rescue (SARSAT)"
 msgstr ""
 
-#: kstars_i18n.cpp:4645
+#: kstars_i18n.cpp:4644
 msgctxt "Satellite group name"
 msgid "Disaster Monitoring"
 msgstr ""
 
-#: kstars_i18n.cpp:4646
+#: kstars_i18n.cpp:4645
 msgctxt "Satellite group name"
 msgid "Tracking and Data Relay Satellite System (TDRSS)"
 msgstr ""
 
-#: kstars_i18n.cpp:4647
+#: kstars_i18n.cpp:4646
 #, fuzzy
 #| msgid "Location:"
 msgctxt "Satellite group name"
 msgid "Geostationary"
 msgstr "जगहः"
 
-#: kstars_i18n.cpp:4648
+#: kstars_i18n.cpp:4647
 #, fuzzy
 #| msgid "Intensity:"
 msgctxt "Satellite group name"
 msgid "Intelsat"
 msgstr "तीव्रताः"
 
-#: kstars_i18n.cpp:4649
+#: kstars_i18n.cpp:4648
 #, fuzzy
 #| msgid "Horizon"
 msgctxt "Satellite group name"
 msgid "Gorizont"
 msgstr "छितिज"
 
-#: kstars_i18n.cpp:4650
+#: kstars_i18n.cpp:4649
 msgctxt "Satellite group name"
 msgid "Raduga"
 msgstr ""
 
-#: kstars_i18n.cpp:4651
+#: kstars_i18n.cpp:4650
 msgctxt "Satellite group name"
 msgid "Molniya"
 msgstr ""
 
-#: kstars_i18n.cpp:4652
+#: kstars_i18n.cpp:4651
 msgctxt "Satellite group name"
 msgid "Iridium"
 msgstr ""
 
-#: kstars_i18n.cpp:4653
+#: kstars_i18n.cpp:4652
 msgctxt "Satellite group name"
 msgid "Orbcomm"
 msgstr ""
 
-#: kstars_i18n.cpp:4654
+#: kstars_i18n.cpp:4653
 #, fuzzy
 #| msgid "Globular Cluster"
 msgctxt "Satellite group name"
 msgid "Globalstar"
 msgstr "ग्लोबुलर गुक्छ"
 
-#: kstars_i18n.cpp:4655
+#: kstars_i18n.cpp:4654
 msgctxt "Satellite group name"
 msgid "Amateur Radio"
 msgstr ""
 
-#: kstars_i18n.cpp:4656
+#: kstars_i18n.cpp:4655
 msgctxt "Satellite group name"
 msgid "Experimental"
 msgstr ""
 
-#: kstars_i18n.cpp:4657
+#: kstars_i18n.cpp:4656
 #, fuzzy
 #| msgctxt "Advanced URLs: description or category"
 #| msgid "Other"
@@ -47711,7 +47712,7 @@ msgctxt "Satellite group name"
 msgid "Other"
 msgstr "अन्य"
 
-#: kstars_i18n.cpp:4658
+#: kstars_i18n.cpp:4657
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Saratov"
@@ -47719,59 +47720,59 @@ msgctxt "Satellite group name"
 msgid "GPS Operational"
 msgstr "सारातोव"
 
-#: kstars_i18n.cpp:4659
+#: kstars_i18n.cpp:4658
 msgctxt "Satellite group name"
 msgid "Glonass Operational"
 msgstr ""
 
-#: kstars_i18n.cpp:4660
+#: kstars_i18n.cpp:4659
 msgctxt "Satellite group name"
 msgid "Galileo"
 msgstr ""
 
-#: kstars_i18n.cpp:4661
+#: kstars_i18n.cpp:4660
 msgctxt "Satellite group name"
 msgid "Satellite-Based Augmentation System (WAAS/EGNOS/MSAS)"
 msgstr ""
 
-#: kstars_i18n.cpp:4662
+#: kstars_i18n.cpp:4661
 msgctxt "Satellite group name"
 msgid "Navy Navigation Satellite System (NNSS)"
 msgstr ""
 
-#: kstars_i18n.cpp:4663
+#: kstars_i18n.cpp:4662
 msgctxt "Satellite group name"
 msgid "Russian LEO Navigation"
 msgstr ""
 
-#: kstars_i18n.cpp:4664
+#: kstars_i18n.cpp:4663
 msgctxt "Satellite group name"
 msgid "Space & Earth Science"
 msgstr ""
 
-#: kstars_i18n.cpp:4665
+#: kstars_i18n.cpp:4664
 msgctxt "Satellite group name"
 msgid "Geodetic"
 msgstr ""
 
-#: kstars_i18n.cpp:4666
+#: kstars_i18n.cpp:4665
 msgctxt "Satellite group name"
 msgid "Engineering"
 msgstr ""
 
-#: kstars_i18n.cpp:4667
+#: kstars_i18n.cpp:4666
 #, fuzzy
 #| msgid "location"
 msgctxt "Satellite group name"
 msgid "Education"
 msgstr "जगह"
 
-#: kstars_i18n.cpp:4668
+#: kstars_i18n.cpp:4667
 msgctxt "Satellite group name"
 msgid "Miscellaneous Military"
 msgstr ""
 
-#: kstars_i18n.cpp:4669
+#: kstars_i18n.cpp:4668
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Caliente"
@@ -47779,12 +47780,12 @@ msgctxt "Satellite group name"
 msgid "Radar Calibration"
 msgstr "केलिएन्टे"
 
-#: kstars_i18n.cpp:4670
+#: kstars_i18n.cpp:4669
 msgctxt "Satellite group name"
 msgid "CubeSats"
 msgstr ""
 
-#: kstars_i18n.cpp:4671
+#: kstars_i18n.cpp:4670
 #, fuzzy
 #| msgctxt "Advanced URLs: description or category"
 #| msgid "Other Missions"
@@ -47792,94 +47793,94 @@ msgctxt "Satellite group name"
 msgid "Other Miscellaneous"
 msgstr "अऊ दूसर मिसन"
 
-#: kstars_i18n.cpp:4672
+#: kstars_i18n.cpp:4671
 msgctxt "Satellite group name"
 msgid "Supplemental GPS"
 msgstr ""
 
-#: kstars_i18n.cpp:4673
+#: kstars_i18n.cpp:4672
 msgctxt "Satellite group name"
 msgid "Supplemental GLONASS"
 msgstr ""
 
-#: kstars_i18n.cpp:4674
+#: kstars_i18n.cpp:4673
 msgctxt "Satellite group name"
 msgid "Supplemental METEOSAT"
 msgstr ""
 
-#: kstars_i18n.cpp:4675
+#: kstars_i18n.cpp:4674
 msgctxt "Satellite group name"
 msgid "Supplemental INTELSAT"
 msgstr ""
 
-#: kstars_i18n.cpp:4676
+#: kstars_i18n.cpp:4675
 msgctxt "Satellite group name"
 msgid "Supplemental ORBCOMM"
 msgstr ""
 
-#: kstars_i18n.cpp:4677
+#: kstars_i18n.cpp:4676
 msgctxt "object name (optional)"
 msgid "47 Tucanae"
 msgstr "४७ टुकाने"
 
-#: kstars_i18n.cpp:4678
+#: kstars_i18n.cpp:4677
 msgctxt "object name (optional)"
 msgid "Andromeda Galaxy"
 msgstr "वड्रोमेडा आकासगंगा"
 
-#: kstars_i18n.cpp:4679
+#: kstars_i18n.cpp:4678
 #, fuzzy
 #| msgid "Planetary Nebula"
 msgctxt "object name (optional)"
 msgid "Antares Nebula"
 msgstr "प्लेनेटेरी नीहारिका"
 
-#: kstars_i18n.cpp:4680
+#: kstars_i18n.cpp:4679
 msgctxt "object name (optional)"
 msgid "Antennae Galaxies"
 msgstr "एन्टेनी आकासगंगा"
 
-#: kstars_i18n.cpp:4681
+#: kstars_i18n.cpp:4680
 msgctxt "object name (optional)"
 msgid "Atoms for Peace Galaxy"
 msgstr "एटम्स फार पीस आकासगंगा"
 
-#: kstars_i18n.cpp:4682
+#: kstars_i18n.cpp:4681
 msgctxt "object name (optional)"
 msgid "Barnard's Galaxy"
 msgstr "बर्नार्ड आकासगंगा"
 
-#: kstars_i18n.cpp:4683
+#: kstars_i18n.cpp:4682
 msgctxt "object name (optional)"
 msgid "Baxendell's unphotographable nebula (Non-existent)"
 msgstr ""
 
-#: kstars_i18n.cpp:4684
+#: kstars_i18n.cpp:4683
 msgctxt "object name (optional)"
 msgid "Bear Claw Galaxy"
 msgstr "बीअर क्ला आकासगंगा"
 
-#: kstars_i18n.cpp:4685
+#: kstars_i18n.cpp:4684
 msgctxt "object name (optional)"
 msgid "Black-Eye Galaxy"
 msgstr "ब्लेक-आई आकासगंगा"
 
-#: kstars_i18n.cpp:4686
+#: kstars_i18n.cpp:4685
 msgctxt "object name (optional)"
 msgid "Blinking Planetary"
 msgstr "टिमटिमाता प्लेनेटेरी"
 
-#: kstars_i18n.cpp:4687
+#: kstars_i18n.cpp:4686
 msgctxt "object name (optional)"
 msgid "Blue Flash Nebula"
 msgstr "नीला चमकता नेबुला"
 
-#: kstars_i18n.cpp:4688
+#: kstars_i18n.cpp:4687
 msgctxt "object name (optional)"
 msgid "Blue Planetary"
 msgstr "नीली प्लेनेटेरी"
 
-#: kstars_i18n.cpp:4689
+#: kstars_i18n.cpp:4688
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Blue Snowball"
@@ -47887,17 +47888,17 @@ msgctxt "object name (optional)"
 msgid "Blue Racquetball"
 msgstr "ब्लू स्नोबाल"
 
-#: kstars_i18n.cpp:4690
+#: kstars_i18n.cpp:4689
 msgctxt "object name (optional)"
 msgid "Blue Snowball"
 msgstr "ब्लू स्नोबाल"
 
-#: kstars_i18n.cpp:4691
+#: kstars_i18n.cpp:4690
 msgctxt "object name (optional)"
 msgid "Bode's Galaxy"
 msgstr "बोडे आकासगंगा"
 
-#: kstars_i18n.cpp:4692
+#: kstars_i18n.cpp:4691
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Box Nebula"
@@ -47905,42 +47906,42 @@ msgctxt "object name (optional)"
 msgid "Bow-Tie Nebula"
 msgstr "बाक्स नीहारिका"
 
-#: kstars_i18n.cpp:4693
+#: kstars_i18n.cpp:4692
 msgctxt "object name (optional)"
 msgid "Box Galaxies"
 msgstr "बाक्स आकासगंगा"
 
-#: kstars_i18n.cpp:4694
+#: kstars_i18n.cpp:4693
 msgctxt "object name (optional)"
 msgid "Box Nebula"
 msgstr "बाक्स नीहारिका"
 
-#: kstars_i18n.cpp:4695
+#: kstars_i18n.cpp:4694
 msgctxt "object name (optional)"
 msgid "Brocchi's Cluster, Coathanger Asterism"
 msgstr ""
 
-#: kstars_i18n.cpp:4696
+#: kstars_i18n.cpp:4695
 msgctxt "object name (optional)"
 msgid "Bubble Nebula"
 msgstr "बबल नीहारिका"
 
-#: kstars_i18n.cpp:4697
+#: kstars_i18n.cpp:4696
 msgctxt "object name (optional)"
 msgid "Bug Nebula"
 msgstr "बग नीहारिका"
 
-#: kstars_i18n.cpp:4698
+#: kstars_i18n.cpp:4697
 msgctxt "object name (optional)"
 msgid "Butterfly Cluster"
 msgstr "बटरफ्लाई क्लस्टर"
 
-#: kstars_i18n.cpp:4699
+#: kstars_i18n.cpp:4698
 msgctxt "object name (optional)"
 msgid "California Nebula"
 msgstr "कैलीफोर्निया नीहारिका"
 
-#: kstars_i18n.cpp:4700
+#: kstars_i18n.cpp:4699
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Cat Eye Nebula"
@@ -47948,12 +47949,12 @@ msgctxt "object name (optional)"
 msgid "Camel's Eye Nebula"
 msgstr "केट आई नीहारिका"
 
-#: kstars_i18n.cpp:4701
+#: kstars_i18n.cpp:4700
 msgctxt "object name (optional)"
 msgid "Carafe Group"
 msgstr "कराफे समूह"
 
-#: kstars_i18n.cpp:4702
+#: kstars_i18n.cpp:4701
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Ptolemy's Cluster"
@@ -47961,7 +47962,7 @@ msgctxt "object name (optional)"
 msgid "Caroline's Cluster"
 msgstr "टालमी के गुक्छ "
 
-#: kstars_i18n.cpp:4703
+#: kstars_i18n.cpp:4702
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Cat Eye Nebula"
@@ -47969,7 +47970,7 @@ msgctxt "object name (optional)"
 msgid "Cat's Eye Nebula"
 msgstr "केट आई नीहारिका"
 
-#: kstars_i18n.cpp:4704
+#: kstars_i18n.cpp:4703
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Cat Eye Nebula"
@@ -47977,12 +47978,12 @@ msgctxt "object name (optional)"
 msgid "Cat's Paw Nebula"
 msgstr "केट आई नीहारिका"
 
-#: kstars_i18n.cpp:4705
+#: kstars_i18n.cpp:4704
 msgctxt "object name (optional)"
 msgid "Centaurus A"
 msgstr "सेंटारस ए"
 
-#: kstars_i18n.cpp:4706
+#: kstars_i18n.cpp:4705
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Centaurus A"
@@ -47990,12 +47991,12 @@ msgctxt "object name (optional)"
 msgid "Centaurus Chain"
 msgstr "सेंटारस ए"
 
-#: kstars_i18n.cpp:4707
+#: kstars_i18n.cpp:4706
 msgctxt "object name (optional)"
 msgid "Cetus A"
 msgstr "सेटस ए"
 
-#: kstars_i18n.cpp:4708
+#: kstars_i18n.cpp:4707
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Orion Nebula"
@@ -48003,17 +48004,17 @@ msgctxt "object name (optional)"
 msgid "Cheerio Nebula"
 msgstr "ओरियन नीहारिका"
 
-#: kstars_i18n.cpp:4709
+#: kstars_i18n.cpp:4708
 msgctxt "object name (optional)"
 msgid "Chi Persei, Double Cluster"
 msgstr "चि पेर्सी, दोहरा गुक्छ"
 
-#: kstars_i18n.cpp:4710
+#: kstars_i18n.cpp:4709
 msgctxt "object name (optional)"
 msgid "Christmas Tree Cluster"
 msgstr "क्रिसमस ट्री गुक्छ"
 
-#: kstars_i18n.cpp:4711
+#: kstars_i18n.cpp:4710
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Ursa Major A"
@@ -48021,12 +48022,12 @@ msgctxt "object name (optional)"
 msgid "Cigar Galaxy, Ursa Major A"
 msgstr "उर्सा मेजर ए"
 
-#: kstars_i18n.cpp:4712
+#: kstars_i18n.cpp:4711
 msgctxt "object name (optional)"
 msgid "Cleopatra's Eye"
 msgstr ""
 
-#: kstars_i18n.cpp:4713
+#: kstars_i18n.cpp:4712
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Cocoon Nebula"
@@ -48034,42 +48035,42 @@ msgctxt "object name (optional)"
 msgid "Cocoon Galaxy"
 msgstr "कोकून नीहारिका"
 
-#: kstars_i18n.cpp:4714
+#: kstars_i18n.cpp:4713
 msgctxt "object name (optional)"
 msgid "Cocoon Nebula"
 msgstr "कोकून नीहारिका"
 
-#: kstars_i18n.cpp:4715
+#: kstars_i18n.cpp:4714
 msgctxt "object name (optional)"
 msgid "Coddington Nebula"
 msgstr "कोडिंगटन नीहारिका"
 
-#: kstars_i18n.cpp:4716
+#: kstars_i18n.cpp:4715
 msgctxt "object name (optional)"
 msgid "Cooling Tower"
 msgstr ""
 
-#: kstars_i18n.cpp:4717
+#: kstars_i18n.cpp:4716
 msgctxt "object name (optional)"
 msgid "Copeland Septet"
 msgstr "कोपलैंड सेप्टेट"
 
-#: kstars_i18n.cpp:4718
+#: kstars_i18n.cpp:4717
 msgctxt "object name (optional)"
 msgid "Crab Nebula"
 msgstr "क्रैब नीहारिका"
 
-#: kstars_i18n.cpp:4719
+#: kstars_i18n.cpp:4718
 msgctxt "object name (optional)"
 msgid "Crescent Nebula"
 msgstr "क्रेसेंट नीहारिका"
 
-#: kstars_i18n.cpp:4720
+#: kstars_i18n.cpp:4719
 msgctxt "object name (optional)"
 msgid "Delle Caustiche"
 msgstr "डेल कास्टिक"
 
-#: kstars_i18n.cpp:4721
+#: kstars_i18n.cpp:4720
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Maia Nebula"
@@ -48077,63 +48078,63 @@ msgctxt "object name (optional)"
 msgid "De Mairan's Nebula"
 msgstr "माइया नीहारिका"
 
-#: kstars_i18n.cpp:4722
+#: kstars_i18n.cpp:4721
 #, fuzzy
 #| msgid "globular cluster"
 msgctxt "object name (optional)"
 msgid "Dragonfly Cluster"
 msgstr "ग्लोबुलर  गुक्छ"
 
-#: kstars_i18n.cpp:4723
+#: kstars_i18n.cpp:4722
 msgctxt "object name (optional)"
 msgid "Dumbbell Nebula"
 msgstr "डंबबेल नीहारिका"
 
-#: kstars_i18n.cpp:4724
+#: kstars_i18n.cpp:4723
 msgctxt "object name (optional)"
 msgid "Eagle Nebula"
 msgstr "ईगल नीहारिका"
 
-#: kstars_i18n.cpp:4725
+#: kstars_i18n.cpp:4724
 msgctxt "object name (optional)"
 msgid "Eight-Burst Planetary"
 msgstr "एट-बर्स्ट ग्रहमंडल"
 
-#: kstars_i18n.cpp:4726
+#: kstars_i18n.cpp:4725
 #, fuzzy
 #| msgid "Globular Cluster"
 msgctxt "object name (optional)"
 msgid "Electric Guitar Cluster"
 msgstr "ग्लोबुलर गुक्छ"
 
-#: kstars_i18n.cpp:4727
+#: kstars_i18n.cpp:4726
 msgctxt "object name (optional)"
 msgid "Elephant Trunk"
 msgstr ""
 
-#: kstars_i18n.cpp:4728
+#: kstars_i18n.cpp:4727
 msgctxt "object name (optional)"
 msgid "Epsilon Orionis Nebula"
 msgstr "एप्सिलान ओरिआनिस नेबुला"
 
-#: kstars_i18n.cpp:4729
+#: kstars_i18n.cpp:4728
 msgctxt "object name (optional)"
 msgid "Eskimo Nebula"
 msgstr "एस्किमो नीहारिका"
 
-#: kstars_i18n.cpp:4730
+#: kstars_i18n.cpp:4729
 msgctxt "object name (optional)"
 msgid "Eta Carina, Keyhole Nebula"
 msgstr "एटा केरिना, की-होल नेबुला"
 
-#: kstars_i18n.cpp:4731
+#: kstars_i18n.cpp:4730
 #, fuzzy
 #| msgid "Gaseous Nebula"
 msgctxt "object name (optional)"
 msgid "Fetus Nebula"
 msgstr "गैसीय नीहारिका"
 
-#: kstars_i18n.cpp:4732
+#: kstars_i18n.cpp:4731
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Sombrero Galaxy"
@@ -48141,7 +48142,7 @@ msgctxt "object name (optional)"
 msgid "Fireworks Galaxy"
 msgstr "सोम्ब्रेरो आकासगंगा"
 
-#: kstars_i18n.cpp:4733
+#: kstars_i18n.cpp:4732
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Eagle Nebula"
@@ -48149,17 +48150,17 @@ msgctxt "object name (optional)"
 msgid "Flame Nebula"
 msgstr "ईगल नीहारिका"
 
-#: kstars_i18n.cpp:4734
+#: kstars_i18n.cpp:4733
 msgctxt "object name (optional)"
 msgid "Flaming Star Nebula"
 msgstr "फ्लेमिंग स्टार नेबुला"
 
-#: kstars_i18n.cpp:4735
+#: kstars_i18n.cpp:4734
 msgctxt "object name (optional)"
 msgid "Fornax A"
 msgstr "फार्नेक्स ए"
 
-#: kstars_i18n.cpp:4736
+#: kstars_i18n.cpp:4735
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Fornax A"
@@ -48167,7 +48168,7 @@ msgctxt "object name (optional)"
 msgid "Fornax B"
 msgstr "फार्नेक्स ए"
 
-#: kstars_i18n.cpp:4737
+#: kstars_i18n.cpp:4736
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Spindle Galaxy"
@@ -48175,17 +48176,17 @@ msgctxt "object name (optional)"
 msgid "Fried-egg Galaxy"
 msgstr "स्पिंडल आकासगंगा"
 
-#: kstars_i18n.cpp:4738
+#: kstars_i18n.cpp:4737
 msgctxt "object name (optional)"
 msgid "Gamma Cas Nebula"
 msgstr "गामास कास नेबुला"
 
-#: kstars_i18n.cpp:4739
+#: kstars_i18n.cpp:4738
 msgctxt "object name (optional)"
 msgid "Gamma Cyg Nebula"
 msgstr "गामा साइग नेबुला"
 
-#: kstars_i18n.cpp:4740
+#: kstars_i18n.cpp:4739
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Carafe Group"
@@ -48193,12 +48194,12 @@ msgctxt "object name (optional)"
 msgid "Gamma Leonis Group"
 msgstr "कराफे समूह"
 
-#: kstars_i18n.cpp:4741
+#: kstars_i18n.cpp:4740
 msgctxt "object name (optional)"
 msgid "Gem Cluster"
 msgstr "जेम क्लस्टर"
 
-#: kstars_i18n.cpp:4742
+#: kstars_i18n.cpp:4741
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Witch Head Nebula"
@@ -48206,12 +48207,12 @@ msgctxt "object name (optional)"
 msgid "Ghost Head Nebula"
 msgstr "डायन सिर नीहारिका"
 
-#: kstars_i18n.cpp:4743
+#: kstars_i18n.cpp:4742
 msgctxt "object name (optional)"
 msgid "Ghost of Jupiter"
 msgstr "वृहस्पति के भूत"
 
-#: kstars_i18n.cpp:4744
+#: kstars_i18n.cpp:4743
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Barnard's Galaxy"
@@ -48219,19 +48220,19 @@ msgctxt "object name (optional)"
 msgid "Grand Design Galaxy"
 msgstr "बर्नार्ड आकासगंगा"
 
-#: kstars_i18n.cpp:4745
+#: kstars_i18n.cpp:4744
 msgctxt "object name (optional)"
 msgid "Grus Quartet"
 msgstr "ग्रस क्वार्टेट"
 
-#: kstars_i18n.cpp:4746
+#: kstars_i18n.cpp:4745
 #, fuzzy
 #| msgid "planetary nebula"
 msgctxt "object name (optional)"
 msgid "Heart Nebula"
 msgstr "प्लेनेटेरी नीहारिका"
 
-#: kstars_i18n.cpp:4747
+#: kstars_i18n.cpp:4746
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Hercules Cluster"
@@ -48239,39 +48240,39 @@ msgctxt "object name (optional)"
 msgid "Heart-Shaped Cluster"
 msgstr "हरक्यूलिस क्लस्टर"
 
-#: kstars_i18n.cpp:4748
+#: kstars_i18n.cpp:4747
 msgctxt "object name (optional)"
 msgid "Helix"
 msgstr "कुन्डल"
 
-#: kstars_i18n.cpp:4749
+#: kstars_i18n.cpp:4748
 msgctxt "object name (optional)"
 msgid "Helix Galaxy"
 msgstr "हेलिक्स आकासगंगा"
 
-#: kstars_i18n.cpp:4750
+#: kstars_i18n.cpp:4749
 msgctxt "object name (optional)"
 msgid "Helix Nebula"
 msgstr "हेलिक्स नीहारिका"
 
-#: kstars_i18n.cpp:4751
+#: kstars_i18n.cpp:4750
 #, fuzzy
 #| msgid "Globular Cluster"
 msgctxt "object name (optional)"
 msgid "Hercules Globular Cluster"
 msgstr "ग्लोबुलर गुक्छ"
 
-#: kstars_i18n.cpp:4752
+#: kstars_i18n.cpp:4751
 msgctxt "object name (optional)"
 msgid "Herschel's Ray"
 msgstr "हर्सेल्स रे"
 
-#: kstars_i18n.cpp:4753
+#: kstars_i18n.cpp:4752
 msgctxt "object name (optional)"
 msgid "Hind's Variable Nebula"
 msgstr "हिंद के बदलावसील नीहारिका"
 
-#: kstars_i18n.cpp:4754
+#: kstars_i18n.cpp:4753
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Seyfert Galaxies"
@@ -48279,39 +48280,39 @@ msgctxt "object name (optional)"
 msgid "Hockey Stick Galaxies"
 msgstr "सेफर्ट आकासगंगा"
 
-#: kstars_i18n.cpp:4755
+#: kstars_i18n.cpp:4754
 #, fuzzy
 #| msgid "open cluster"
 msgctxt "object name (optional)"
 msgid "Hole in a cluster"
 msgstr "गुक्छ खोलव"
 
-#: kstars_i18n.cpp:4756
+#: kstars_i18n.cpp:4755
 msgctxt "object name (optional)"
 msgid "Holmberg VI"
 msgstr ""
 
-#: kstars_i18n.cpp:4757
+#: kstars_i18n.cpp:4756
 msgctxt "object name (optional)"
 msgid "Horsehead Nebula"
 msgstr "अस्वसिर नीहारिका"
 
-#: kstars_i18n.cpp:4758
+#: kstars_i18n.cpp:4757
 msgctxt "object name (optional)"
 msgid "H Persei, Double Cluster"
 msgstr "एच पेर्सी, दोहरा गुक्छ"
 
-#: kstars_i18n.cpp:4759
+#: kstars_i18n.cpp:4758
 msgctxt "object name (optional)"
 msgid "Hubble's Variable Nebula"
 msgstr "हबल के बदलावसील नीहारिका"
 
-#: kstars_i18n.cpp:4760
+#: kstars_i18n.cpp:4759
 msgctxt "object name (optional)"
 msgid "Intergalactic Wanderer"
 msgstr "इंटरगैलेक्टिक वांडेरर"
 
-#: kstars_i18n.cpp:4761
+#: kstars_i18n.cpp:4760
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Helix Nebula"
@@ -48319,48 +48320,48 @@ msgctxt "object name (optional)"
 msgid "Jellyfish Nebula"
 msgstr "हेलिक्स नीहारिका"
 
-#: kstars_i18n.cpp:4762
+#: kstars_i18n.cpp:4761
 msgctxt "object name (optional)"
 msgid "Jewel Box"
 msgstr "ज्वेल डब्बा"
 
-#: kstars_i18n.cpp:4763
+#: kstars_i18n.cpp:4762
 msgctxt "object name (optional)"
 msgid "Keenan's System"
 msgstr "कीनान्स सिसटम"
 
-#: kstars_i18n.cpp:4764
+#: kstars_i18n.cpp:4763
 msgctxt "object name (optional)"
 msgid "Kidney Bean Galaxy"
 msgstr "किडनी बीन आकासगंगा"
 
-#: kstars_i18n.cpp:4765
+#: kstars_i18n.cpp:4764
 msgctxt "object name (optional)"
 msgid "Lagoon Nebula"
 msgstr "लैगून नीहारिका"
 
-#: kstars_i18n.cpp:4766
+#: kstars_i18n.cpp:4765
 #, fuzzy
 msgctxt "object name (optional)"
 msgid "Large Magellanic Cloud"
 msgstr "बड़े मैगेलेनिक बादल ल लोड करत हे"
 
-#: kstars_i18n.cpp:4767
+#: kstars_i18n.cpp:4766
 msgctxt "object name (optional)"
 msgid "Leo Triplet"
 msgstr ""
 
-#: kstars_i18n.cpp:4768
+#: kstars_i18n.cpp:4767
 msgctxt "object name (optional)"
 msgid "Little Dumbbell Nebula"
 msgstr "लिटिल डम्बबेल नीहारिका"
 
-#: kstars_i18n.cpp:4769
+#: kstars_i18n.cpp:4768
 msgctxt "object name (optional)"
 msgid "Little Gem"
 msgstr "लिटिल जैम"
 
-#: kstars_i18n.cpp:4770
+#: kstars_i18n.cpp:4769
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Little Dumbbell Nebula"
@@ -48368,49 +48369,49 @@ msgctxt "object name (optional)"
 msgid "Little Ghost Nebula"
 msgstr "लिटिल डम्बबेल नीहारिका"
 
-#: kstars_i18n.cpp:4771
+#: kstars_i18n.cpp:4770
 msgctxt "object name (optional)"
 msgid "Lobster Nebula; War and Peace Nebula"
 msgstr ""
 
-#: kstars_i18n.cpp:4772
+#: kstars_i18n.cpp:4771
 msgctxt "object name (optional)"
 msgid "Maia Nebula"
 msgstr "माइया नीहारिका"
 
-#: kstars_i18n.cpp:4773
+#: kstars_i18n.cpp:4772
 msgctxt "object name (optional)"
 msgid "Markarian Chain"
 msgstr "मार्कारियन चैन"
 
-#: kstars_i18n.cpp:4774
+#: kstars_i18n.cpp:4773
 #, fuzzy
 #| msgid "Messier Object"
 msgctxt "object name (optional)"
 msgid "McLeish's Object"
 msgstr "मेसियर चीज"
 
-#: kstars_i18n.cpp:4775
+#: kstars_i18n.cpp:4774
 msgctxt "object name (optional)"
 msgid "Melotte 111, Coma Star Cluster"
 msgstr ""
 
-#: kstars_i18n.cpp:4776
+#: kstars_i18n.cpp:4775
 msgctxt "object name (optional)"
 msgid "Merope Nebula"
 msgstr "मेरोप नीहारिका"
 
-#: kstars_i18n.cpp:4777
+#: kstars_i18n.cpp:4776
 msgctxt "object name (optional)"
 msgid "Miniature Spiral"
 msgstr "मिनिएचर स्पिरल"
 
-#: kstars_i18n.cpp:4778
+#: kstars_i18n.cpp:4777
 msgctxt "object name (optional)"
 msgid "Mirach's Ghost (Galaxy not found :)"
 msgstr "मिराक के भूत (आकासगंगा नइ मिलिस :)"
 
-#: kstars_i18n.cpp:4779
+#: kstars_i18n.cpp:4778
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Horsehead Nebula"
@@ -48418,7 +48419,7 @@ msgctxt "object name (optional)"
 msgid "Monkey Head Nebula"
 msgstr "अस्वसिर नीहारिका"
 
-#: kstars_i18n.cpp:4780
+#: kstars_i18n.cpp:4779
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Gem Cluster"
@@ -48426,7 +48427,7 @@ msgctxt "object name (optional)"
 msgid "Mu Normae Cluster"
 msgstr "जेम क्लस्टर"
 
-#: kstars_i18n.cpp:4781
+#: kstars_i18n.cpp:4780
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Spindle Galaxy"
@@ -48434,12 +48435,12 @@ msgctxt "object name (optional)"
 msgid "Needle Galaxy"
 msgstr "स्पिंडल आकासगंगा"
 
-#: kstars_i18n.cpp:4782
+#: kstars_i18n.cpp:4781
 msgctxt "object name (optional)"
 msgid "North American Nebula"
 msgstr "उत्तरी अमेरिकी नीहारिका"
 
-#: kstars_i18n.cpp:4783
+#: kstars_i18n.cpp:4782
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Jewel Box"
@@ -48447,27 +48448,27 @@ msgctxt "object name (optional)"
 msgid "Northern Jewel Box"
 msgstr "ज्वेल डब्बा"
 
-#: kstars_i18n.cpp:4784
+#: kstars_i18n.cpp:4783
 msgctxt "object name (optional)"
 msgid "Omega Centauri"
 msgstr "ओमेगा सेंटुआरी"
 
-#: kstars_i18n.cpp:4785
+#: kstars_i18n.cpp:4784
 msgctxt "object name (optional)"
 msgid "Omicron Velorum Cluster"
 msgstr "ओमिक्रान वेलोरम गुक्छ"
 
-#: kstars_i18n.cpp:4786
+#: kstars_i18n.cpp:4785
 msgctxt "object name (optional)"
 msgid "Orion Nebula"
 msgstr "ओरियन नीहारिका"
 
-#: kstars_i18n.cpp:4787
+#: kstars_i18n.cpp:4786
 msgctxt "object name (optional)"
 msgid "Owl Nebula"
 msgstr "आउल नीहारिका"
 
-#: kstars_i18n.cpp:4788
+#: kstars_i18n.cpp:4787
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Pelican Nebula"
@@ -48475,76 +48476,76 @@ msgctxt "object name (optional)"
 msgid "Pacman Nebula"
 msgstr "पेलिकन नीहारिका"
 
-#: kstars_i18n.cpp:4789
+#: kstars_i18n.cpp:4788
 msgctxt "object name (optional)"
 msgid "Papillon Galaxy"
 msgstr "पेपिलान आकासगंगा"
 
-#: kstars_i18n.cpp:4790
+#: kstars_i18n.cpp:4789
 msgctxt "object name (optional)"
 msgid "(part of Rho Ophiuchi complex)"
 msgstr ""
 
-#: kstars_i18n.cpp:4791
+#: kstars_i18n.cpp:4790
 #, fuzzy
 #| msgid "Globular Cluster"
 msgctxt "object name (optional)"
 msgid "Pavo Globular Cluster"
 msgstr "ग्लोबुलर गुक्छ"
 
-#: kstars_i18n.cpp:4792
+#: kstars_i18n.cpp:4791
 #, fuzzy
 #| msgid "Star Clusters"
 msgctxt "object name (optional)"
 msgid "Pearl Cluster"
 msgstr "तारा गुक्छ"
 
-#: kstars_i18n.cpp:4793
+#: kstars_i18n.cpp:4792
 msgctxt "object name (optional)"
 msgid "Pelican Nebula"
 msgstr "पेलिकन नीहारिका"
 
-#: kstars_i18n.cpp:4794
+#: kstars_i18n.cpp:4793
 msgctxt "object name (optional)"
 msgid "Perseus A"
 msgstr "पेर्सस ए"
 
-#: kstars_i18n.cpp:4795
+#: kstars_i18n.cpp:4794
 msgctxt "object name (optional)"
 msgid "Pinwheel Galaxy"
 msgstr "पिनव्हील आकासगंगा"
 
-#: kstars_i18n.cpp:4796
+#: kstars_i18n.cpp:4795
 msgctxt "object name (optional)"
 msgid "Pipe Nebula"
 msgstr "पाइप नीहारिका"
 
-#: kstars_i18n.cpp:4797
+#: kstars_i18n.cpp:4796
 msgctxt "object name (optional)"
 msgid "Pisces Cloud"
 msgstr ""
 
-#: kstars_i18n.cpp:4798
+#: kstars_i18n.cpp:4797
 msgctxt "object name (optional)"
 msgid "Pleiades"
 msgstr "प्लेयादेस"
 
-#: kstars_i18n.cpp:4799
+#: kstars_i18n.cpp:4798
 msgctxt "object name (optional)"
 msgid "Polarissima Australis"
 msgstr "पोलारिसीमा ओस्ट्रालिस"
 
-#: kstars_i18n.cpp:4800
+#: kstars_i18n.cpp:4799
 msgctxt "object name (optional)"
 msgid "Polarissima Borealis"
 msgstr "पोलारिसिमा बोरेआलिस"
 
-#: kstars_i18n.cpp:4801
+#: kstars_i18n.cpp:4800
 msgctxt "object name (optional)"
 msgid "Praesepe, Beehive Cluster"
 msgstr "प्राएस्पे, बीहाइव गुक्छ"
 
-#: kstars_i18n.cpp:4802
+#: kstars_i18n.cpp:4801
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Lagoon Nebula"
@@ -48552,12 +48553,12 @@ msgctxt "object name (optional)"
 msgid "Prawn Nebula"
 msgstr "लैगून नीहारिका"
 
-#: kstars_i18n.cpp:4803
+#: kstars_i18n.cpp:4802
 msgctxt "object name (optional)"
 msgid "Ptolemy's Cluster"
 msgstr "टालमी के गुक्छ "
 
-#: kstars_i18n.cpp:4804
+#: kstars_i18n.cpp:4803
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Merope Nebula"
@@ -48565,12 +48566,12 @@ msgctxt "object name (optional)"
 msgid "Red Spider Nebula"
 msgstr "मेरोप नीहारिका"
 
-#: kstars_i18n.cpp:4805
+#: kstars_i18n.cpp:4804
 msgctxt "object name (optional)"
 msgid "Reinmuth 80"
 msgstr ""
 
-#: kstars_i18n.cpp:4806
+#: kstars_i18n.cpp:4805
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Ring Nebula"
@@ -48578,7 +48579,7 @@ msgctxt "object name (optional)"
 msgid "Retina Nebula"
 msgstr "रिंग नीहारिका"
 
-#: kstars_i18n.cpp:4807
+#: kstars_i18n.cpp:4806
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Rho Ophiucus Nebula"
@@ -48586,7 +48587,7 @@ msgctxt "object name (optional)"
 msgid "Rho Ophiuchi Nebula"
 msgstr "रो ओपियुकस नीहारिका"
 
-#: kstars_i18n.cpp:4808
+#: kstars_i18n.cpp:4807
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Ring Nebula"
@@ -48594,41 +48595,41 @@ msgctxt "object name (optional)"
 msgid "Rim Nebula"
 msgstr "रिंग नीहारिका"
 
-#: kstars_i18n.cpp:4809
+#: kstars_i18n.cpp:4808
 msgctxt "object name (optional)"
 msgid "Ring Nebula"
 msgstr "रिंग नीहारिका"
 
-#: kstars_i18n.cpp:4810
+#: kstars_i18n.cpp:4809
 msgctxt "object name (optional)"
 msgid "Rosette Nebula"
 msgstr "रोसेट्टी नीहारिका"
 
-#: kstars_i18n.cpp:4811
+#: kstars_i18n.cpp:4810
 msgctxt "object name (optional)"
 msgid "Running Chicken Nebula"
 msgstr "रनिंग चिकन नीहारिका"
 
-#: kstars_i18n.cpp:4812
+#: kstars_i18n.cpp:4811
 #, fuzzy
 #| msgid "Globular Cluster"
 msgctxt "object name (optional)"
 msgid "Sailboat Cluster"
 msgstr "ग्लोबुलर गुक्छ"
 
-#: kstars_i18n.cpp:4813
+#: kstars_i18n.cpp:4812
 #, fuzzy
 #| msgid "Satellite Track"
 msgctxt "object name (optional)"
 msgid "Satellite Cluster"
 msgstr "उपग्रह ट्रैक"
 
-#: kstars_i18n.cpp:4814
+#: kstars_i18n.cpp:4813
 msgctxt "object name (optional)"
 msgid "Saturn Nebula"
 msgstr "सनि नीहारिका"
 
-#: kstars_i18n.cpp:4815
+#: kstars_i18n.cpp:4814
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Sculptor Galaxy"
@@ -48636,7 +48637,7 @@ msgctxt "object name (optional)"
 msgid "Sculptor Galaxy, Silver Dollar"
 msgstr "स्कल्पचर आकासगंगा"
 
-#: kstars_i18n.cpp:4816
+#: kstars_i18n.cpp:4815
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Dumbbell Nebula"
@@ -48644,7 +48645,7 @@ msgctxt "object name (optional)"
 msgid "Seagull Nebula"
 msgstr "डंबबेल नीहारिका"
 
-#: kstars_i18n.cpp:4817
+#: kstars_i18n.cpp:4816
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Seyfert Galaxies"
@@ -48652,17 +48653,17 @@ msgctxt "object name (optional)"
 msgid "Seyfert's Sextet"
 msgstr "सेफर्ट आकासगंगा"
 
-#: kstars_i18n.cpp:4818
+#: kstars_i18n.cpp:4817
 msgctxt "object name (optional)"
 msgid "Shapley-Ames 2"
 msgstr ""
 
-#: kstars_i18n.cpp:4819
+#: kstars_i18n.cpp:4818
 msgctxt "object name (optional)"
 msgid "Siamese Twins"
 msgstr "सियामी जुड़वां"
 
-#: kstars_i18n.cpp:4820
+#: kstars_i18n.cpp:4819
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Dumbbell Nebula"
@@ -48670,7 +48671,7 @@ msgctxt "object name (optional)"
 msgid "Skull and Crossbones Nebula"
 msgstr "डंबबेल नीहारिका"
 
-#: kstars_i18n.cpp:4821
+#: kstars_i18n.cpp:4820
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Dumbbell Nebula"
@@ -48678,17 +48679,17 @@ msgctxt "object name (optional)"
 msgid "Skull Nebula"
 msgstr "डंबबेल नीहारिका"
 
-#: kstars_i18n.cpp:4822
+#: kstars_i18n.cpp:4821
 msgctxt "object name (optional)"
 msgid "Small Magellanic Cloud"
 msgstr "छोटा मैगेलेनिक बादल"
 
-#: kstars_i18n.cpp:4823
+#: kstars_i18n.cpp:4822
 msgctxt "object name (optional)"
 msgid "Sombrero Galaxy"
 msgstr "सोम्ब्रेरो आकासगंगा"
 
-#: kstars_i18n.cpp:4824
+#: kstars_i18n.cpp:4823
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Owl Nebula"
@@ -48696,12 +48697,12 @@ msgctxt "object name (optional)"
 msgid "Soul Nebula"
 msgstr "आउल नीहारिका"
 
-#: kstars_i18n.cpp:4825
+#: kstars_i18n.cpp:4824
 msgctxt "object name (optional)"
 msgid "Southern Integral Galaxy"
 msgstr "दक्छिनी एकीकृत आकासगंगा"
 
-#: kstars_i18n.cpp:4826
+#: kstars_i18n.cpp:4825
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Southern Integral Galaxy"
@@ -48709,29 +48710,29 @@ msgctxt "object name (optional)"
 msgid "Southern Pinwheel Galaxy"
 msgstr "दक्छिनी एकीकृत आकासगंगा"
 
-#: kstars_i18n.cpp:4827
+#: kstars_i18n.cpp:4826
 msgctxt "object name (optional)"
 msgid "Southern Pleiades; Theta Carinae Cluster"
 msgstr ""
 
-#: kstars_i18n.cpp:4828
+#: kstars_i18n.cpp:4827
 msgctxt "object name (optional)"
 msgid "Spindle"
 msgstr "स्पिंडल"
 
-#: kstars_i18n.cpp:4829
+#: kstars_i18n.cpp:4828
 msgctxt "object name (optional)"
 msgid "Spindle Galaxy"
 msgstr "स्पिंडल आकासगंगा"
 
-#: kstars_i18n.cpp:4830
+#: kstars_i18n.cpp:4829
 #, fuzzy
 #| msgid "Planetary Nebula"
 msgctxt "object name (optional)"
 msgid "Spiral Planetary Nebula"
 msgstr "प्लेनेटेरी नीहारिका"
 
-#: kstars_i18n.cpp:4831
+#: kstars_i18n.cpp:4830
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Merope Nebula"
@@ -48739,51 +48740,51 @@ msgctxt "object name (optional)"
 msgid "Spirograph Nebula"
 msgstr "मेरोप नीहारिका"
 
-#: kstars_i18n.cpp:4832
+#: kstars_i18n.cpp:4831
 #, fuzzy
 #| msgid "Star Clusters"
 msgctxt "object name (optional)"
 msgid "Starfish Cluster"
 msgstr "तारा गुक्छ"
 
-#: kstars_i18n.cpp:4833
+#: kstars_i18n.cpp:4832
 msgctxt "object name (optional)"
 msgid "Star Queen Nebula"
 msgstr "स्टार क्वीन नीहारिका"
 
-#: kstars_i18n.cpp:4834
+#: kstars_i18n.cpp:4833
 msgctxt "object name (optional)"
 msgid "Stephan's Quintet"
 msgstr "स्टीफन क्विंटेट"
 
-#: kstars_i18n.cpp:4835
+#: kstars_i18n.cpp:4834
 msgctxt "object name (optional)"
 msgid "Struve's Lost Nebula"
 msgstr "स्ट्रूव के गंवा गे नीहारिका"
 
-#: kstars_i18n.cpp:4836
+#: kstars_i18n.cpp:4835
 msgctxt "object name (optional)"
 msgid "Sunflower Galaxy"
 msgstr "सुरुजमुखी आकासगंगा"
 
-#: kstars_i18n.cpp:4837
+#: kstars_i18n.cpp:4836
 #, fuzzy
 #| msgid "Supernova Remnant"
 msgctxt "object name (optional)"
 msgid "Supernova Factory"
 msgstr "सुपरनोवा अवसिस्ट"
 
-#: kstars_i18n.cpp:4838
+#: kstars_i18n.cpp:4837
 msgctxt "object name (optional)"
 msgid "Swan Nebula, Omega Nebula"
 msgstr "स्वान नीहारिका, ओमेगा नीहारिका"
 
-#: kstars_i18n.cpp:4839
+#: kstars_i18n.cpp:4838
 msgctxt "object name (optional)"
 msgid "Tarantula Nebula, 30 Doradus"
 msgstr "टरंटुला नीहारिका, 30 डोराडस"
 
-#: kstars_i18n.cpp:4840
+#: kstars_i18n.cpp:4839
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Ptolemy's Cluster"
@@ -48791,7 +48792,7 @@ msgctxt "object name (optional)"
 msgid "Tau Canis Majoris Cluster"
 msgstr "टालमी के गुक्छ "
 
-#: kstars_i18n.cpp:4841
+#: kstars_i18n.cpp:4840
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Gem Cluster"
@@ -48799,17 +48800,17 @@ msgctxt "object name (optional)"
 msgid "The 37 Cluster"
 msgstr "जेम क्लस्टर"
 
-#: kstars_i18n.cpp:4842
+#: kstars_i18n.cpp:4841
 msgctxt "object name (optional)"
 msgid "The Guitar"
 msgstr ""
 
-#: kstars_i18n.cpp:4843
+#: kstars_i18n.cpp:4842
 msgctxt "object name (optional)"
 msgid "The Guitar, has Ambartsumian's Knot"
 msgstr ""
 
-#: kstars_i18n.cpp:4844
+#: kstars_i18n.cpp:4843
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Spindle Galaxy"
@@ -48817,7 +48818,7 @@ msgctxt "object name (optional)"
 msgid "The Lost Galaxy"
 msgstr "स्पिंडल आकासगंगा"
 
-#: kstars_i18n.cpp:4845
+#: kstars_i18n.cpp:4844
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Seyfert Galaxies"
@@ -48825,7 +48826,7 @@ msgctxt "object name (optional)"
 msgid "The Mice Galaxies"
 msgstr "सेफर्ट आकासगंगा"
 
-#: kstars_i18n.cpp:4846
+#: kstars_i18n.cpp:4845
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "The Pas"
@@ -48833,12 +48834,12 @@ msgctxt "object name (optional)"
 msgid "The Phantom"
 msgstr "द पास"
 
-#: kstars_i18n.cpp:4847
+#: kstars_i18n.cpp:4846
 msgctxt "object name (optional)"
 msgid "Thor's Helmet"
 msgstr ""
 
-#: kstars_i18n.cpp:4848
+#: kstars_i18n.cpp:4847
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Bug Nebula"
@@ -48846,44 +48847,44 @@ msgctxt "object name (optional)"
 msgid "Toby Jug Nebula"
 msgstr "बग नीहारिका"
 
-#: kstars_i18n.cpp:4849
+#: kstars_i18n.cpp:4848
 msgctxt "object name (optional)"
 msgid "Triangulum Galaxy"
 msgstr "ट्रावगुलम आकासगंगा"
 
-#: kstars_i18n.cpp:4850
+#: kstars_i18n.cpp:4849
 msgctxt "object name (optional)"
 msgid "Trifid Nebula"
 msgstr "ट्रिफिड नीहारिका"
 
-#: kstars_i18n.cpp:4851
+#: kstars_i18n.cpp:4850
 #, fuzzy
 #| msgid "Planetary Nebula"
 msgctxt "object name (optional)"
 msgid "Turtle Planetary Nebula"
 msgstr "प्लेनेटेरी नीहारिका"
 
-#: kstars_i18n.cpp:4852
+#: kstars_i18n.cpp:4851
 msgctxt "object name (optional)"
 msgid "Veil Nebula (Network Nebula fragment)"
 msgstr ""
 
-#: kstars_i18n.cpp:4853
+#: kstars_i18n.cpp:4852
 msgctxt "object name (optional)"
 msgid "Veil Nebula (Pickering's Triangle fragment)"
 msgstr ""
 
-#: kstars_i18n.cpp:4854
+#: kstars_i18n.cpp:4853
 msgctxt "object name (optional)"
 msgid "Veil Nebula (Witch's Broom fragment)"
 msgstr ""
 
-#: kstars_i18n.cpp:4855
+#: kstars_i18n.cpp:4854
 msgctxt "object name (optional)"
 msgid "Virgo A"
 msgstr "विर्गो ए"
 
-#: kstars_i18n.cpp:4856
+#: kstars_i18n.cpp:4855
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Spindle Galaxy"
@@ -48891,27 +48892,27 @@ msgctxt "object name (optional)"
 msgid "Whale Galaxy"
 msgstr "स्पिंडल आकासगंगा"
 
-#: kstars_i18n.cpp:4857
+#: kstars_i18n.cpp:4856
 msgctxt "object name (optional)"
 msgid "Whirlpool Galaxy"
 msgstr "वर्लपूल आकासगंगा"
 
-#: kstars_i18n.cpp:4858
+#: kstars_i18n.cpp:4857
 msgctxt "object name (optional)"
 msgid "White-Eyed Pea"
 msgstr "व्हाइट-आईड पी"
 
-#: kstars_i18n.cpp:4859
+#: kstars_i18n.cpp:4858
 msgctxt "object name (optional)"
 msgid "Wild Duck Cluster"
 msgstr "वाइल्ड डक गुक्छ"
 
-#: kstars_i18n.cpp:4860
+#: kstars_i18n.cpp:4859
 msgctxt "object name (optional)"
 msgid "Witch Head Nebula"
 msgstr "डायन सिर नीहारिका"
 
-#: kstars_i18n.cpp:4861
+#: kstars_i18n.cpp:4860
 #, fuzzy
 #| msgctxt "object name (optional)"
 #| msgid "Maia Nebula"
@@ -48919,167 +48920,167 @@ msgctxt "object name (optional)"
 msgid "Wizard Nebula"
 msgstr "माइया नीहारिका"
 
-#: kstars_i18n.cpp:4862
+#: kstars_i18n.cpp:4861
 msgctxt "object name (optional)"
 msgid "Zwicky's Triplet"
 msgstr "विकी के ट्रिप्लेट"
 
-#: kstars_i18n.cpp:4863
+#: kstars_i18n.cpp:4862
 msgctxt "Advanced URLs: description or category"
 msgid "Simbad"
 msgstr "सिमबाद"
 
-#: kstars_i18n.cpp:4864
+#: kstars_i18n.cpp:4863
 msgctxt "Advanced URLs: description or category"
 msgid "Aladin"
 msgstr "अलादिन"
 
-#: kstars_i18n.cpp:4865
+#: kstars_i18n.cpp:4864
 msgctxt "Advanced URLs: description or category"
 msgid "Skyview"
 msgstr "स्काईव्यू"
 
-#: kstars_i18n.cpp:4866
+#: kstars_i18n.cpp:4865
 msgctxt "Advanced URLs: description or category"
 msgid "Gamma-ray"
 msgstr "गामा-रे"
 
-#: kstars_i18n.cpp:4867
+#: kstars_i18n.cpp:4866
 msgctxt "Advanced URLs: description or category"
 msgid "X-ray"
 msgstr "एक्स-रे"
 
-#: kstars_i18n.cpp:4868
+#: kstars_i18n.cpp:4867
 msgctxt "Advanced URLs: description or category"
 msgid "EUV"
 msgstr "ईयूवी"
 
-#: kstars_i18n.cpp:4869
+#: kstars_i18n.cpp:4868
 msgctxt "Advanced URLs: description or category"
 msgid "UV"
 msgstr "यूवी"
 
-#: kstars_i18n.cpp:4870
+#: kstars_i18n.cpp:4869
 msgctxt "Advanced URLs: description or category"
 msgid "Optical"
 msgstr "आप्टिकल"
 
-#: kstars_i18n.cpp:4871
+#: kstars_i18n.cpp:4870
 msgctxt "Advanced URLs: description or category"
 msgid "Infrared"
 msgstr "इन्फ्रारेड"
 
-#: kstars_i18n.cpp:4872
+#: kstars_i18n.cpp:4871
 msgctxt "Advanced URLs: description or category"
 msgid "Radio"
 msgstr "रेडियो"
 
-#: kstars_i18n.cpp:4873
+#: kstars_i18n.cpp:4872
 msgctxt "Advanced URLs: description or category"
 msgid "High Energy Astrophysical Archive (HEASARC)"
 msgstr "जादा ऊर्जा एस्ट्रोफिजिकल अभिलेख (HEASARC)"
 
-#: kstars_i18n.cpp:4874
+#: kstars_i18n.cpp:4873
 msgctxt "Advanced URLs: description or category"
 msgid "Recent X-Ray Missions"
 msgstr "हाल केएक्स-रे मिसन्स"
 
-#: kstars_i18n.cpp:4875
+#: kstars_i18n.cpp:4874
 msgctxt "Advanced URLs: description or category"
 msgid "Past X-ray Mission"
 msgstr "पिछले एक्स-रे मिसन"
 
-#: kstars_i18n.cpp:4876
+#: kstars_i18n.cpp:4875
 msgctxt "Advanced URLs: description or category"
 msgid "Gamma-Ray Missions"
 msgstr "गामा-रे मिसन्स"
 
-#: kstars_i18n.cpp:4877
+#: kstars_i18n.cpp:4876
 msgctxt "Advanced URLs: description or category"
 msgid "Other Missions"
 msgstr "अऊ दूसर मिसन"
 
-#: kstars_i18n.cpp:4878
+#: kstars_i18n.cpp:4877
 msgctxt "Advanced URLs: description or category"
 msgid "Popular Catalog Choices"
 msgstr "लोकप्रिय सूचीपत्र चुनाव"
 
-#: kstars_i18n.cpp:4879
+#: kstars_i18n.cpp:4878
 msgctxt "Advanced URLs: description or category"
 msgid "Multiwavelength Catalogs"
 msgstr "मल्टीवेवलैंथ केटलाग"
 
-#: kstars_i18n.cpp:4880
+#: kstars_i18n.cpp:4879
 msgctxt "Advanced URLs: description or category"
 msgid "NASA Extragalactic Database (NED)"
 msgstr "नासा एक्स्ट्रागेलेक्टिक डाटाबेस (एनईडी)"
 
-#: kstars_i18n.cpp:4881
+#: kstars_i18n.cpp:4880
 msgctxt "Advanced URLs: description or category"
 msgid "Positions"
 msgstr "स्थिति"
 
-#: kstars_i18n.cpp:4882
+#: kstars_i18n.cpp:4881
 msgctxt "Advanced URLs: description or category"
 msgid "NASA Astrophysics Data System (ADS)"
 msgstr "नासा एस्ट्रोफिजिक्स डाटा सिसटम (एडीएस)"
 
-#: kstars_i18n.cpp:4883
+#: kstars_i18n.cpp:4882
 msgctxt "Advanced URLs: description or category"
 msgid "Astronomy and Astrophysics"
 msgstr "खगोलविद्या अउ खगोलसास्त्र"
 
-#: kstars_i18n.cpp:4884
+#: kstars_i18n.cpp:4883
 msgctxt "Advanced URLs: description or category"
 msgid "Instrumentation"
 msgstr "इंस्ट्रूमेंटेसन"
 
-#: kstars_i18n.cpp:4885
+#: kstars_i18n.cpp:4884
 msgctxt "Advanced URLs: description or category"
 msgid "Physics and Geophysics"
 msgstr "भौतिकी अउ भूभौतिकी"
 
-#: kstars_i18n.cpp:4886
+#: kstars_i18n.cpp:4885
 msgctxt "Advanced URLs: description or category"
 msgid "Astrophysics preprints"
 msgstr "खगोलसास्त्र प्रीप्रिंट्स"
 
-#: kstars_i18n.cpp:4887
+#: kstars_i18n.cpp:4886
 msgctxt "Advanced URLs: description or category"
 msgid "Multimission Archive at Space Telescope (MAST)"
 msgstr "मल्टी मिसन अभिलेख स्पेस दूरदर्सी मं (एमएएसटी)"
 
-#: kstars_i18n.cpp:4888
+#: kstars_i18n.cpp:4887
 msgctxt "Advanced URLs: description or category"
 msgid "HST"
 msgstr "एचएसटी"
 
-#: kstars_i18n.cpp:4889
+#: kstars_i18n.cpp:4888
 msgctxt "Advanced URLs: description or category"
 msgid "ASTRO"
 msgstr "आस्ट्रो"
 
-#: kstars_i18n.cpp:4890
+#: kstars_i18n.cpp:4889
 msgctxt "Advanced URLs: description or category"
 msgid "ORFEUS"
 msgstr "ओरफ्यूस"
 
-#: kstars_i18n.cpp:4891
+#: kstars_i18n.cpp:4890
 msgctxt "Advanced URLs: description or category"
 msgid "COPERNICUS"
 msgstr "कोपरनिकस"
 
-#: kstars_i18n.cpp:4892
+#: kstars_i18n.cpp:4891
 msgctxt "Advanced URLs: description or category"
 msgid "Images"
 msgstr "फोटू"
 
-#: kstars_i18n.cpp:4893
+#: kstars_i18n.cpp:4892
 msgctxt "Advanced URLs: description or category"
 msgid "Spectra"
 msgstr "स्पेक्ट्रा"
 
-#: kstars_i18n.cpp:4894
+#: kstars_i18n.cpp:4893
 msgctxt "Advanced URLs: description or category"
 msgid "Other"
 msgstr "अन्य"
@@ -49144,72 +49145,24 @@ msgstr "के-स्टार्स::slotFind() - गोठ बर बहुत
 msgid "Export Image"
 msgstr "ईस्टपोर्ट"
 
-#: kstarsactions.cpp:846 kstarsactions.cpp:865 kstarsactions.cpp:873
-#: tools/scriptbuilder.cpp:754 tools/scriptbuilder.cpp:816
+#: kstarsactions.cpp:846 tools/scriptbuilder.cpp:754
+#: tools/scriptbuilder.cpp:816
 msgctxt "Filter by file type: KStars Scripts."
 msgid "KStars Scripts (*.kstars)"
 msgstr ""
 
-#: kstarsactions.cpp:854
-msgid ""
-"Warning:  You are about to execute a remote shell script on your machine. "
-msgstr "चेतावनी: आप मन अपन मसीन मं रिमोट सैल स्क्रिप्ट चलाय जा रहे हे."
-
 #: kstarsactions.cpp:855
-msgid ""
-"If you absolutely trust the source of this script, press Continue to execute "
-"the script; "
-msgstr ""
-"यदि आप मन एखर स्क्रिप्ट मं पूरा जइसन भरोसा करथो तहां स्क्रिप्ट ल चलाय बर जारी रखव ल "
-"दबाव;"
+#, fuzzy
+#| msgid "completed"
+msgid "Executing remote scripts is not supported."
+msgstr "पूरा"
 
-#: kstarsactions.cpp:856
-msgid "to save the file without executing it, press Save; "
-msgstr "फाइल ल चलाए बिना एला सहेजे बर सहेजव ल दबाव."
-
-#: kstarsactions.cpp:857
-msgid "to cancel the download, press Cancel. "
-msgstr "डाउनलोड निरस्त करे बर खारिज दबाव."
-
-#: kstarsactions.cpp:859
-msgid "Really Execute Remote Script?"
-msgstr "रिमोट स्क्रिप्ट सचमुच चलाव?"
-
-#: kstarsactions.cpp:871
-msgid "Save location is invalid. Try another location?"
-msgstr "सहेजे के जगह अवैध हे.  अउ जगह मं कोसिस करव?"
-
-#: kstarsactions.cpp:872
-msgid "Invalid Save Location"
-msgstr "सहेजे के अवैध जगह"
-
-#: kstarsactions.cpp:872
-msgid "Try Another"
-msgstr "अऊ दूसर कोसिस करव"
-
-#: kstarsactions.cpp:872 tools/observinglist.cpp:877
-msgid "Do Not Try"
-msgstr "कोसिस नइ करव"
-
-#: kstarsactions.cpp:900 printing/foveditordialog.cpp:187
-#: printing/pwizprint.cpp:134 tools/scriptbuilder.cpp:866
-msgid "Could not upload file"
-msgstr "फाइल अपलोड नइ कर सकिस"
-
-#: kstarsactions.cpp:905
-msgid "Could not download the file."
-msgstr "फाइल डाउनलोड नइ कर सकिस."
-
-#: kstarsactions.cpp:905 tools/scriptbuilder.cpp:771
-msgid "Download Error"
-msgstr "डाउनलोड गलती"
-
-#: kstarsactions.cpp:933 oal/execute.cpp:313 tools/observinglist.cpp:753
+#: kstarsactions.cpp:946 oal/execute.cpp:313 tools/observinglist.cpp:777
 #, kde-format
 msgid "Could not open file %1"
 msgstr "फाइल %1 खोल नइ सकिस"
 
-#: kstarsactions.cpp:959
+#: kstarsactions.cpp:972
 msgid ""
 "The selected script contains unrecognized elements, indicating that it was "
 "not created using the KStars script builder. This script may not function "
@@ -49217,84 +49170,84 @@ msgid ""
 "it anyway?"
 msgstr ""
 
-#: kstarsactions.cpp:963
+#: kstarsactions.cpp:976
 msgid "Script Validation Failed"
 msgstr "स्क्रिप्ट वेलिडेसन फेल."
 
-#: kstarsactions.cpp:963
+#: kstarsactions.cpp:976
 msgid "Run Nevertheless"
 msgstr "जइसन भी हो, चलाव"
 
-#: kstarsactions.cpp:968
+#: kstarsactions.cpp:981
 #, kde-format
 msgid "Running script: %1"
 msgstr "स्क्रिप्ट: %1 चलाय जात हे"
 
-#: kstarsactions.cpp:982
+#: kstarsactions.cpp:995
 msgid "Script finished."
 msgstr "स्क्रिप्ट पूरा."
 
-#: kstarsactions.cpp:991
+#: kstarsactions.cpp:1004
 msgid ""
 "You can save printer ink by using the \"Star Chart\" color scheme, which "
 "uses a white background. Would you like to temporarily switch to the Star "
 "Chart color scheme for printing?"
 msgstr ""
 
-#: kstarsactions.cpp:996
+#: kstarsactions.cpp:1009
 msgid "Switch to Star Chart Colors?"
 msgstr "स्टार चार्ट रंग मं स्विच करव?"
 
-#: kstarsactions.cpp:997
+#: kstarsactions.cpp:1010
 msgid "Switch Color Scheme"
 msgstr "रंग योजना स्विच करव"
 
-#: kstarsactions.cpp:997
+#: kstarsactions.cpp:1010
 msgid "Do Not Switch"
 msgstr "स्विच नइ करव"
 
-#: kstarsactions.cpp:1069 kstarsinit.cpp:214
+#: kstarsactions.cpp:1082 kstarsinit.cpp:214
 msgid "Engage &Tracking"
 msgstr "वगेज ट्रेकिंग (&T)"
 
-#: kstarsactions.cpp:1153
+#: kstarsactions.cpp:1166
 #, kde-format
 msgctxt "approximate field of view"
 msgid "Approximate FOV: %1 degrees"
 msgstr ""
 
-#: kstarsactions.cpp:1156
+#: kstarsactions.cpp:1169
 #, kde-format
 msgctxt "approximate field of view"
 msgid "Approximate FOV: %1 arcminutes"
 msgstr ""
 
-#: kstarsactions.cpp:1160
+#: kstarsactions.cpp:1173
 #, kde-format
 msgctxt "approximate field of view"
 msgid "Approximate FOV: %1 arcseconds"
 msgstr ""
 
-#: kstarsactions.cpp:1174
+#: kstarsactions.cpp:1187
 msgctxt "The user should enter an angle for the field-of-view of the display"
 msgid "Enter Desired Field-of-View Angle"
 msgstr "वांछित फील्ड-ओफ-व्यू कोन भरव"
 
-#: kstarsactions.cpp:1175
+#: kstarsactions.cpp:1188
 msgid "Enter a field-of-view angle in degrees: "
 msgstr "फील्ड-ओफ-व्यू कोन डिग्री मं भरव:"
 
-#: kstarsactions.cpp:1306
+#: kstarsactions.cpp:1319
 msgid "Attempt to determine from image"
 msgstr ""
 
-#: kstarsactions.cpp:1307
+#: kstarsactions.cpp:1320
 #, fuzzy
 #| msgid "Select a shape for the field-of-view symbol"
 msgid "Eyepiece View: Choose a field-of-view"
 msgstr "फील्ड-ओफ-व्यू (एफओवी) चिनहा बर एक आकृति चुनव"
 
-#: kstarsactions.cpp:1307
+#: kstarsactions.cpp:1320
 msgid "FOV to render eyepiece view for:"
 msgstr ""
 
@@ -53712,7 +53665,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_LogToDefault)
-#: options/opsadvanced.ui:312 skycomponents/flagcomponent.cpp:42
+#: options/opsadvanced.ui:312 skycomponents/flagcomponent.cpp:41
 #, fuzzy
 #| msgctxt "Region/state name (optional, rarely needs a translation)"
 #| msgid "Herault"
@@ -55253,6 +55206,11 @@ msgstr "तारीक अउ जगह"
 msgid "Field of View Snapshot Browser"
 msgstr "फील्ड-ओफ-व्यू (आर्कमिन):"
 
+#: printing/foveditordialog.cpp:187 printing/pwizprint.cpp:134
+#: tools/scriptbuilder.cpp:866
+msgid "Could not upload file"
+msgstr "फाइल अपलोड नइ कर सकिस"
+
 #: printing/foveditordialog.cpp:236
 #, kde-format
 msgid "FOV (%1/%2): %3 (%4' x %5')"
@@ -55816,24 +55774,36 @@ msgid ""
 "<p>To get started, press the <b>Next</b> button.</p>"
 msgstr ""
 
-#: skycomponents/asteroidscomponent.cpp:88
+#: skycomponents/asteroidscomponent.cpp:90
 msgid "Loading asteroids"
 msgstr "छुद्र ग्रह ल लोड करत हे"
 
-#: skycomponents/asteroidscomponent.cpp:134
+#: skycomponents/asteroidscomponent.cpp:136
 #, fuzzy
 #| msgid "Asteroid"
 msgid " (Asteroid)"
 msgstr "छुद्रग्रह"
+
+#: skycomponents/asteroidscomponent.cpp:289
+#, fuzzy, kde-format
+#| msgid "Error: Unable to save image: %1 "
+msgid "Error downloading asteroids data: %1"
+msgstr "गलती: फोटू: %1 ल सहेजेने मं अक्छम"
 
 #: skycomponents/catalogcomponent.cpp:53
 #, kde-format
 msgid "Loading custom catalog: %1"
 msgstr "मनमाफिक केटलाग लोड करत हे: %1"
 
-#: skycomponents/cometscomponent.cpp:89
+#: skycomponents/cometscomponent.cpp:88
 msgid "Loading comets"
 msgstr "पुच्छल तारा लोड करत हे "
+
+#: skycomponents/cometscomponent.cpp:247
+#, fuzzy, kde-format
+#| msgid "Error: Unable to save image: %1 "
+msgid "Error downloading comets data: %1"
+msgstr "गलती: फोटू: %1 ल सहेजेने मं अक्छम"
 
 #: skycomponents/constellationboundarylines.cpp:45
 msgid "Constellation Boundaries"
@@ -55866,7 +55836,7 @@ msgstr "एनजीसी/आईसी चीज लोड करत हे "
 msgid "Unnamed Object"
 msgstr "बेनाम चीज"
 
-#: skycomponents/flagcomponent.cpp:40
+#: skycomponents/flagcomponent.cpp:39
 msgid "No icon"
 msgstr ""
 
@@ -55980,22 +55950,28 @@ msgstr "चीज चुनव..."
 msgid "New supernova(e) discovered!"
 msgstr ""
 
-#: skycomponents/satellitescomponent.cpp:42
+#: skycomponents/satellitescomponent.cpp:44
 #, fuzzy
 #| msgid "Loading asteroids"
 msgid "Loading satellites"
 msgstr "छुद्र ग्रह ल लोड करत हे"
 
-#: skycomponents/satellitescomponent.cpp:125
+#: skycomponents/satellitescomponent.cpp:126
 #, fuzzy
 #| msgid "Update"
 msgid "Update TLEs..."
 msgstr "अपडेट"
 
-#: skycomponents/satellitescomponent.cpp:136
+#: skycomponents/satellitescomponent.cpp:138
 #, fuzzy, kde-format
 #| msgid "Creating Earth satellites"
 msgid "Update %1 satellites"
+msgstr "पृथ्वी के उपग्रह बनात हे"
+
+#: skycomponents/satellitescomponent.cpp:139
+#, fuzzy
+#| msgid "Creating Earth satellites"
+msgid "Satellite Orbital Elements Update"
 msgstr "पृथ्वी के उपग्रह बनात हे"
 
 #: skycomponents/skymapcomposite.cpp:515
@@ -58085,7 +58061,7 @@ msgstr "एस्तोनिया"
 msgid "Preset: "
 msgstr "एरीस"
 
-#: tools/eyepiecefield.cpp:542 tools/observinglist.cpp:1128
+#: tools/eyepiecefield.cpp:542 tools/observinglist.cpp:1154
 #, fuzzy
 #| msgid "Failed to load image"
 msgid "Failed to download DSS/SDSS image!"
@@ -58422,8 +58398,8 @@ msgstr "दुसरा स्थिति"
 #: tools/modcalcangdist.cpp:132 tools/modcalcapcoord.cpp:149
 #: tools/modcalcdaylength.cpp:246 tools/modcalcgalcoord.cpp:192
 #: tools/modcalcgeodcoord.cpp:231 tools/modcalcjd.cpp:120
-#: tools/modcalcplanets.cpp:207 tools/modcalcsidtime.cpp:199
-#: tools/modcalcvizequinox.cpp:83 tools/modcalcvlsr.cpp:273
+#: tools/modcalcplanets.cpp:207 tools/modcalcsidtime.cpp:200
+#: tools/modcalcvizequinox.cpp:84 tools/modcalcvlsr.cpp:273
 #: tools/scriptbuilder.cpp:776 tools/scriptbuilder.cpp:844
 #: tools/scriptbuilder.cpp:916
 #, kde-format
@@ -58433,8 +58409,8 @@ msgstr "फाइल %1 खोल नइ सकिस."
 #: tools/modcalcangdist.cpp:144 tools/modcalcapcoord.cpp:161
 #: tools/modcalcdaylength.cpp:257 tools/modcalcgalcoord.cpp:204
 #: tools/modcalcgeodcoord.cpp:243 tools/modcalcjd.cpp:131
-#: tools/modcalcplanets.cpp:217 tools/modcalcsidtime.cpp:212
-#: tools/modcalcvizequinox.cpp:96 tools/modcalcvlsr.cpp:285
+#: tools/modcalcplanets.cpp:217 tools/modcalcsidtime.cpp:213
+#: tools/modcalcvizequinox.cpp:97 tools/modcalcvlsr.cpp:285
 #, kde-format
 msgid "Invalid file: %1"
 msgstr "अवैध फाइल: %1"
@@ -58442,8 +58418,8 @@ msgstr "अवैध फाइल: %1"
 #: tools/modcalcangdist.cpp:145 tools/modcalcapcoord.cpp:162
 #: tools/modcalcdaylength.cpp:258 tools/modcalcgalcoord.cpp:205
 #: tools/modcalcgeodcoord.cpp:244 tools/modcalcjd.cpp:132
-#: tools/modcalcplanets.cpp:218 tools/modcalcsidtime.cpp:213
-#: tools/modcalcvizequinox.cpp:97 tools/modcalcvlsr.cpp:286
+#: tools/modcalcplanets.cpp:218 tools/modcalcsidtime.cpp:214
+#: tools/modcalcvizequinox.cpp:98 tools/modcalcvlsr.cpp:286
 msgid "Invalid file"
 msgstr "अवैध फाइल"
 
@@ -59004,50 +58980,50 @@ msgstr "इनपुट फाइल:"
 msgid "Output file:"
 msgstr "आउटपुट फाइलः"
 
-#: tools/modcalcsidtime.cpp:140
+#: tools/modcalcsidtime.cpp:141
 msgid ""
 "Location strings consist of the comma-separated names of the city, province "
 "and country.  If the string contains spaces, enclose it in quotes so it gets "
 "parsed properly."
 msgstr ""
 
-#: tools/modcalcsidtime.cpp:145
+#: tools/modcalcsidtime.cpp:146
 msgid "Hint for writing location strings"
 msgstr "जगह वाक्यांस लिखे बर संकेत"
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_XplanetLabelLocalTime)
-#: tools/modcalcsidtime.cpp:153 xplanet/opsxplanet.ui:466
+#: tools/modcalcsidtime.cpp:154 xplanet/opsxplanet.ui:466
 msgid "local time"
 msgstr "लोकल समय"
 
-#: tools/modcalcsidtime.cpp:155
+#: tools/modcalcsidtime.cpp:156
 msgid "sidereal time"
 msgstr "साइडरीयल समय"
 
-#: tools/modcalcsidtime.cpp:158
+#: tools/modcalcsidtime.cpp:159
 msgid "date"
 msgstr "तारीक"
 
-#: tools/modcalcsidtime.cpp:161
+#: tools/modcalcsidtime.cpp:162
 msgid "location"
 msgstr "जगह"
 
-#: tools/modcalcsidtime.cpp:165
+#: tools/modcalcsidtime.cpp:166
 #, kde-format
 msgid "%1 and %2"
 msgstr "%1 अउ %2"
 
-#: tools/modcalcsidtime.cpp:167
+#: tools/modcalcsidtime.cpp:168
 #, kde-format
 msgid "%1, %2 and %3"
 msgstr "%1, %2 अउ %3"
 
-#: tools/modcalcsidtime.cpp:169
+#: tools/modcalcsidtime.cpp:170
 #, kde-format
 msgid "Specify %1 in the input file."
 msgstr "इनपुट फाइल मं %1 ल निरधारित करव."
 
-#: tools/modcalcsidtime.cpp:332 tools/modcalcvizequinox.cpp:149
+#: tools/modcalcsidtime.cpp:333 tools/modcalcvizequinox.cpp:150
 msgid "Results of Sidereal time calculation"
 msgstr "साइडरीयल समय गनना के परिनाम"
 
@@ -59087,15 +59063,15 @@ msgstr "इनपुट फाइल से पढ़व"
 msgid "Specify local time in the input file."
 msgstr "इनपुट फाइल मं लोकल समय निरधारित करव."
 
-#: tools/modcalcvizequinox.cpp:48
+#: tools/modcalcvizequinox.cpp:49
 msgid "Sun's Declination"
 msgstr "सुरुज के उतार"
 
-#: tools/modcalcvizequinox.cpp:110
+#: tools/modcalcvizequinox.cpp:111
 msgid "# Timing of Equinoxes and Solstices\n"
 msgstr "# इक्विनाक्स तथी सोलास्टिक्सिस\n"
 
-#: tools/modcalcvizequinox.cpp:111
+#: tools/modcalcvizequinox.cpp:112
 msgid ""
 "# computed by KStars\n"
 "#\n"
@@ -59103,7 +59079,7 @@ msgstr ""
 "# के-स्टार से कम्प्यूटित करिस\n"
 "#\n"
 
-#: tools/modcalcvizequinox.cpp:112
+#: tools/modcalcvizequinox.cpp:113
 msgid ""
 "# Vernal Equinox\t\tSummer Solstice\t\t\tAutumnal Equinox\t\tWinter "
 "Solstice\n"
@@ -59228,43 +59204,43 @@ msgstr "तारामंडल नाम"
 msgid "Local Time"
 msgstr "लोकल समय"
 
-#: tools/observinglist.cpp:256
+#: tools/observinglist.cpp:263
 msgid "Unnamed stars are not supported in the observing lists"
 msgstr ""
 
-#: tools/observinglist.cpp:264
+#: tools/observinglist.cpp:271
 #, fuzzy, kde-format
 #| msgid "%1 is already in the observing list."
 msgid "%1 is already in your wishlist."
 msgstr "%1 पहिली से ही देखे के सूची मं हे."
 
-#: tools/observinglist.cpp:270
+#: tools/observinglist.cpp:277
 #, fuzzy, kde-format
 #| msgid "%1 is already in the observing list."
 msgid "%1 is already in the session plan."
 msgstr "%1 पहिली से ही देखे के सूची मं हे."
 
-#: tools/observinglist.cpp:309
+#: tools/observinglist.cpp:316
 #, kde-format
 msgid "Added %1 to observing list."
 msgstr "%1 ल ओब्जर्विंग सूची मं जोड़ा."
 
-#: tools/observinglist.cpp:353
+#: tools/observinglist.cpp:360
 #, fuzzy, kde-format
 #| msgid "Added %1 to observing list."
 msgid "Added %1 to session list."
 msgstr "%1 ल ओब्जर्विंग सूची मं जोड़ा."
 
-#: tools/observinglist.cpp:491
+#: tools/observinglist.cpp:502
 #, kde-format
 msgid "observing notes for %1:"
 msgstr "%1 बर नोट्स देखत हे:"
 
-#: tools/observinglist.cpp:505
+#: tools/observinglist.cpp:516
 msgid "observing notes (disabled for unnamed star)"
 msgstr "ओब्जर्विंग नोट्स (अनाम तारे बर अक्छम करिस)"
 
-#: tools/observinglist.cpp:523
+#: tools/observinglist.cpp:541
 #, kde-format
 msgid ""
 "DSS Image metadata: \n"
@@ -59273,159 +59249,163 @@ msgid ""
 " Version: %4"
 msgstr ""
 
-#: tools/observinglist.cpp:527
+#: tools/observinglist.cpp:545
 msgid "No image info available."
 msgstr ""
 
-#: tools/observinglist.cpp:532
+#: tools/observinglist.cpp:552
 msgid "No image available. Click on the placeholder image to download one."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, NotesLabel)
-#: tools/observinglist.cpp:540 tools/observinglist.cpp:1027
+#: tools/observinglist.cpp:564 tools/observinglist.cpp:1051
 #: tools/observinglist.ui:664
 msgid "Select an object to record notes on it here:"
 msgstr ""
 
-#: tools/observinglist.cpp:553
+#: tools/observinglist.cpp:577
 msgid "Select a single object to record notes on it here:"
 msgstr ""
 
-#: tools/observinglist.cpp:721
+#: tools/observinglist.cpp:745
 msgid "Observing notes for object:"
 msgstr "चीज बर ओब्जर्विंग नोट्स:"
 
-#: tools/observinglist.cpp:728
+#: tools/observinglist.cpp:752
 #, fuzzy
 #| msgid "Observing List"
 msgid "Open Observing List"
 msgstr "सूची ल देखत हे"
 
-#: tools/observinglist.cpp:783
+#: tools/observinglist.cpp:807
 #, fuzzy
 #| msgid "The specified file is invalid.  Try another file?"
 msgid "The specified file is invalid"
 msgstr "निरधारित फाइल अवैध हे.  अउ फााइल मं कोसिस करव?"
 
-#: tools/observinglist.cpp:792
+#: tools/observinglist.cpp:816
 #, fuzzy
 #| msgid "Are you sure you want to remove the %1 client?"
 msgid "Do you want to save the current session?"
 msgstr "का आप मन सही मं क्लायंट %1 ल मिटाना चाहथो ?"
 
-#: tools/observinglist.cpp:794
+#: tools/observinglist.cpp:818
 #, fuzzy
 #| msgid "Save Current List?"
 msgid "Save Current session?"
 msgstr "अभी हाल के सूची सहेजव?"
 
-#: tools/observinglist.cpp:801
+#: tools/observinglist.cpp:825
 #, fuzzy
 #| msgid "Observing List"
 msgid "Save Observing List"
 msgstr "सूची ल देखत हे"
 
-#: tools/observinglist.cpp:876
+#: tools/observinglist.cpp:900
 #, kde-format
 msgid "Could not open file %1.  Try a different filename?"
 msgstr "फाइल %1 लोड नइ कर सकिस.  भिन्न फाइलनाम कोसिस करव?"
 
-#: tools/observinglist.cpp:877
+#: tools/observinglist.cpp:901
 msgid "Try Different"
 msgstr "कोई अउ आजमाव"
 
-#: tools/observinglist.cpp:950
+#: tools/observinglist.cpp:901
+msgid "Do Not Try"
+msgstr "कोसिस नइ करव"
+
+#: tools/observinglist.cpp:974
 #, fuzzy
 #| msgid "UT:"
 msgctxt "Abbreviation of What's Up Tonight"
 msgid "WUT"
 msgstr "UT:"
 
-#: tools/observinglist.cpp:955
+#: tools/observinglist.cpp:979
 msgctxt "Abbreviation for Reference Images:"
 msgid "RefImg:"
 msgstr ""
 
-#: tools/observinglist.cpp:956
+#: tools/observinglist.cpp:980
 msgctxt "Add objects to a list"
 msgid "Add:"
 msgstr ""
 
-#: tools/observinglist.cpp:1002
+#: tools/observinglist.cpp:1026
 #, fuzzy
 #| msgid "Find Object"
 msgid "Find &Object"
 msgstr "चीज खोजव"
 
 #. i18n: ectx: property (text), widget (QPushButton, saveImages)
-#: tools/observinglist.cpp:1003 tools/observinglist.ui:368
+#: tools/observinglist.cpp:1027 tools/observinglist.ui:378
 #, fuzzy
 #| msgid "Select all major bodies"
 msgid "Download all Images"
 msgstr "सब्बो मुख्य चीज चुनव"
 
 #. i18n: ectx: property (text), widget (QPushButton, DeleteAllImages)
-#: tools/observinglist.cpp:1004 tools/observinglist.ui:378
+#: tools/observinglist.cpp:1028 tools/observinglist.ui:388
 #, fuzzy
 #| msgid "Select all major bodies"
 msgid "Delete all Images"
 msgstr "सब्बो मुख्य चीज चुनव"
 
 #. i18n: ectx: property (text), widget (QPushButton, WUTButton)
-#: tools/observinglist.cpp:1008 tools/observinglist.ui:338
+#: tools/observinglist.cpp:1032 tools/observinglist.ui:348
 #, fuzzy
 #| msgid "What's up Tonight"
 msgid "What's up Tonight tool"
 msgstr "आज रात मं का हे"
 
-#: tools/observinglist.cpp:1009
+#: tools/observinglist.cpp:1033
 #, fuzzy
 #| msgid "Preview of %1"
 msgctxt "Abbreviation for Reference Images:"
 msgid "Reference Images:"
 msgstr "%1 के प्रिव्यू"
 
-#: tools/observinglist.cpp:1010
+#: tools/observinglist.cpp:1034
 #, fuzzy
 #| msgid "Find Object"
 msgctxt "Add objects to a list"
 msgid "Adding Objects:"
 msgstr "चीज खोजव"
 
-#: tools/observinglist.cpp:1090 tools/observinglist.cpp:1091
-#: tools/observinglist.cpp:1093
+#: tools/observinglist.cpp:1115 tools/observinglist.cpp:1116
+#: tools/observinglist.cpp:1118
 msgid "Customized DSS Download"
 msgstr ""
 
-#: tools/observinglist.cpp:1090
+#: tools/observinglist.cpp:1115
 #, fuzzy
 #| msgid "Specify image location:"
 msgid "Specify image width (arcminutes): "
 msgstr "फोटू जगह निरधारित करव:"
 
-#: tools/observinglist.cpp:1091
+#: tools/observinglist.cpp:1116
 #, fuzzy
 #| msgid "Specify image location:"
 msgid "Specify image height (arcminutes): "
 msgstr "फोटू जगह निरधारित करव:"
 
-#: tools/observinglist.cpp:1093
+#: tools/observinglist.cpp:1118
 #, fuzzy
 #| msgid "Specify image location:"
 msgid "Specify version: "
 msgstr "फोटू जगह निरधारित करव:"
 
-#: tools/observinglist.cpp:1223
+#: tools/observinglist.cpp:1250
 msgid "This will delete all saved images. Are you sure you want to do this?"
 msgstr ""
 
-#: tools/observinglist.cpp:1223
+#: tools/observinglist.cpp:1250
 #, fuzzy
 #| msgid "Select all major bodies"
 msgid "Delete All Images"
 msgstr "सब्बो मुख्य चीज चुनव"
 
-#: tools/observinglist.cpp:1304
+#: tools/observinglist.cpp:1332
 #, fuzzy
 #| msgid "Image Format"
 msgid "Image Chooser"
@@ -59505,59 +59485,64 @@ msgstr ""
 msgid "Choose"
 msgstr "सहर चुनव"
 
-#. i18n: ectx: property (toolTip), widget (QPushButton, Update)
+#. i18n: ectx: property (displayFormat), widget (QDateEdit, DateEdit)
 #: tools/observinglist.ui:270
+msgid "dd/mm/yy"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, Update)
+#: tools/observinglist.ui:280
 msgid "Update the table and the plot for the new date and location."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, addLabel)
-#: tools/observinglist.ui:300
+#: tools/observinglist.ui:310
 #, fuzzy
 #| msgid "Find Object"
 msgid "Adding Objects:"
 msgstr "चीज खोजव"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, FindButton)
-#: tools/observinglist.ui:313
+#: tools/observinglist.ui:323
 msgid "Open Find Dialog"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QPushButton, FindButton)
-#: tools/observinglist.ui:316
+#: tools/observinglist.ui:326
 msgid "Open the Find Dialog for adding objects to the list"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, WUTButton)
-#: tools/observinglist.ui:332
+#: tools/observinglist.ui:342
 msgid "Open the WUT dialog"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QPushButton, WUTButton)
-#: tools/observinglist.ui:335
+#: tools/observinglist.ui:345
 msgid ""
 "Opens the What's up tonight dialog, from which objects can be added to the "
 "list"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, refLabel)
-#: tools/observinglist.ui:358
+#: tools/observinglist.ui:368
 #, fuzzy
 #| msgid "Preview of %1"
 msgid "Reference Images:"
 msgstr "%1 के प्रिव्यू"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, saveImages)
-#: tools/observinglist.ui:365
+#: tools/observinglist.ui:375
 msgid "Download the SDSS/DSS images of all the objects in the current list."
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, DeleteAllImages)
-#: tools/observinglist.ui:375
+#: tools/observinglist.ui:385
 msgid "Deletes all the stored DSS/SDSS images"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, WishList)
-#: tools/observinglist.ui:403
+#: tools/observinglist.ui:413
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "H. List"
@@ -59565,7 +59550,7 @@ msgid "Wish List"
 msgstr "एच. लिस्ट"
 
 #. i18n: ectx: attribute (title), widget (QWidget, Session)
-#: tools/observinglist.ui:435
+#: tools/observinglist.ui:445
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Ascension Island"
@@ -59573,16 +59558,22 @@ msgid "Session Plan"
 msgstr "उचित आरोहन"
 
 #. i18n: ectx: property (text), widget (QLabel, scheduledTimeLabel)
-#: tools/observinglist.ui:475
+#: tools/observinglist.ui:485
 #, fuzzy
 msgid "Scheduled Time"
 msgstr "समय सेट करव..."
 
 #. i18n: ectx: property (text), widget (QPushButton, SetTime)
-#: tools/observinglist.ui:498
+#: tools/observinglist.ui:508
 #, fuzzy
 msgid "Set Time"
 msgstr "समय सेट करव..."
+
+#. i18n: ectx: property (text), widget (QLabel, ImagePreview)
+#: tools/observinglist.ui:592
+#, fuzzy
+msgid "TextLabel"
+msgstr "लेबल:"
 
 #. i18n: ectx: property (text), widget (QLabel, dssMetadataLabel)
 #: tools/observinglist.ui:611
@@ -60493,6 +60484,10 @@ msgstr ""
 #: tools/scriptbuilder.cpp:771
 msgid "Could not download remote file."
 msgstr "रिमोट फाइल डाउनलोड नइ कर सकिस."
+
+#: tools/scriptbuilder.cpp:771
+msgid "Download Error"
+msgstr "डाउनलोड गलती"
 
 #: tools/scriptbuilder.cpp:887
 msgid "Save Changes to Script?"
@@ -62044,6 +62039,42 @@ msgstr "जानकारी-डब्बा पिछोत अंगना �
 #, fuzzy
 msgid "Set the color for the background."
 msgstr "आकास के पिछोत अंगना के रंग."
+
+#~ msgctxt "Image/info menu item (should be translated)"
+#~ msgid "Show HST/VLT Image"
+#~ msgstr "एचएसटी/वीएलटी फोटू देखाव"
+
+#~ msgid ""
+#~ "Warning:  You are about to execute a remote shell script on your machine. "
+#~ msgstr "चेतावनी: आप मन अपन मसीन मं रिमोट सैल स्क्रिप्ट चलाय जा रहे हे."
+
+#~ msgid ""
+#~ "If you absolutely trust the source of this script, press Continue to "
+#~ "execute the script; "
+#~ msgstr ""
+#~ "यदि आप मन एखर स्क्रिप्ट मं पूरा जइसन भरोसा करथो तहां स्क्रिप्ट ल चलाय बर जारी रखव "
+#~ "ल दबाव;"
+
+#~ msgid "to save the file without executing it, press Save; "
+#~ msgstr "फाइल ल चलाए बिना एला सहेजे बर सहेजव ल दबाव."
+
+#~ msgid "to cancel the download, press Cancel. "
+#~ msgstr "डाउनलोड निरस्त करे बर खारिज दबाव."
+
+#~ msgid "Really Execute Remote Script?"
+#~ msgstr "रिमोट स्क्रिप्ट सचमुच चलाव?"
+
+#~ msgid "Save location is invalid. Try another location?"
+#~ msgstr "सहेजे के जगह अवैध हे.  अउ जगह मं कोसिस करव?"
+
+#~ msgid "Invalid Save Location"
+#~ msgstr "सहेजे के अवैध जगह"
+
+#~ msgid "Try Another"
+#~ msgstr "अऊ दूसर कोसिस करव"
+
+#~ msgid "Could not download the file."
+#~ msgstr "फाइल डाउनलोड नइ कर सकिस."
 
 #, fuzzy
 #~ msgid "No equipment"
