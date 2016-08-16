@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-07-26 08:11+0000\n"
+"POT-Creation-Date: 2016-08-16 07:43+0000\n"
 "PO-Revision-Date: 2009-03-02 23:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -39,17 +39,17 @@ msgstr "पाठ दृस्य (&T)"
 msgid "&Unknown"
 msgstr "अग्यात (&U)"
 
-#: core/kexi.cpp:330
+#: core/kexi.cpp:339
 #, kde-format
 msgid "This function is not available for version %1 of %2 application."
 msgstr "ये फंक्सन अनुपरयोग %2 के %1 संस्करन बर नइ मिलत हे."
 
-#: core/kexi.cpp:335
+#: core/kexi.cpp:344
 #, kde-format
 msgid "\"%1\" function is not available for version %2 of %3 application."
 msgstr "फंक्सन \"%1\" अनुपरयोग %3 के %2 संस्करन बर नइ मिलत हे."
 
-#: core/kexi.cpp:388
+#: core/kexi.cpp:397
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -636,7 +636,7 @@ msgid "%1"
 msgstr "आईडी%1"
 
 #: core/kexiguimsghandler.cpp:175 core/kexitextmsghandler.cpp:92
-#: migration/importtablewizard.cpp:407
+#: migration/importtablewizard.cpp:411
 msgid "Unknown error"
 msgstr "अग्यात गलती"
 
@@ -874,21 +874,21 @@ msgid ""
 "para><para>Do you want to open the file as read only?</para>"
 msgstr ""
 
-#: core/kexiprojectdata.cpp:197
+#: core/kexiprojectdata.cpp:200
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info database connection"
 msgid "<resource>%1</resource> (connection <resource>%2</resource>)"
 msgstr "चीज \"%1\" सहेजे मं फेल."
 
-#: core/kexiprojectdata.cpp:202
+#: core/kexiprojectdata.cpp:205
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info database name"
 msgid "<resource>%1</resource>"
 msgstr "चीज \"%1\" सहेजे मं फेल."
 
-#: core/kexiprojectdata.cpp:232
+#: core/kexiprojectdata.cpp:240
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not remove project.\n"
@@ -898,20 +898,20 @@ msgstr ""
 "परियोजना मिटाय नइ जा सकी.\n"
 "फाइल \"%1\" मौजूद नइ हे."
 
-#: core/kexiprojectdata.cpp:240
+#: core/kexiprojectdata.cpp:248
 #, kde-format
 msgid ""
 "File <filename>%1</filename> does not contain group <resource>%2</resource>."
 msgstr ""
 
-#: core/kexiprojectdata.cpp:256
+#: core/kexiprojectdata.cpp:264
 #, kde-format
 msgid ""
 "Invalid value <resource>%1</resource> type specified in group <resource>%2</"
 "resource> of file <filename>%3</filename>."
 msgstr ""
 
-#: core/kexiprojectdata.cpp:264
+#: core/kexiprojectdata.cpp:272
 #, kde-format
 msgid ""
 "No valid \"engine\" field specified in group <resource>%1</resource> of file "
@@ -2459,7 +2459,7 @@ msgstr "डाटा दृस्य मं खोलव"
 
 #: formeditor/kexiactionselectiondialog.cpp:286
 #: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:117
-#: widget/navigator/KexiProjectNavigator.cpp:207
+#: widget/navigator/KexiProjectNavigator.cpp:210
 msgid "Execute"
 msgstr "चलाव"
 
@@ -3691,9 +3691,9 @@ msgstr "टेबल छेत्र \"%1\""
 #, kde-format
 msgctxt "@info Remove <objecttype> <objectname>?"
 msgid ""
-"Do you want to permanently delete the following object?<nl/><nl/>%1 "
-"<resource>%2</resource><nl/><nl/><note>If you click <interface>Delete</"
-"interface>, you will not be able to undo the deletion.</note>"
+"<para>Do you want to permanently delete the following object?<nl/><nl/>%1 "
+"<resource>%2</resource></para><para><note>If you click <interface>Delete</"
+"interface>, you will not be able to undo the deletion.</note></para>"
 msgstr ""
 
 #: main/KexiMainWindow.cpp:3404
@@ -3802,10 +3802,10 @@ msgstr "केएक्जाई अनुपरयोग बर बग रप�
 msgid "Activates a \"What's This?\" tool."
 msgstr "\"ये का हे\" औजार देखाथे ."
 
-#: main/KexiMainWindow_p.cpp:662 migration/importwizard.cpp:1071
-#: migration/importwizard.cpp:1074 migration/importwizard.cpp:1076
-#: migration/importwizard.cpp:1078 migration/importwizard.cpp:1080
-#: migration/importwizard.cpp:1082
+#: main/KexiMainWindow_p.cpp:662 migration/importwizard.cpp:1092
+#: migration/importwizard.cpp:1095 migration/importwizard.cpp:1097
+#: migration/importwizard.cpp:1099 migration/importwizard.cpp:1101
+#: migration/importwizard.cpp:1103
 msgid "Help"
 msgstr "मदद"
 
@@ -3970,12 +3970,14 @@ msgid "Enter project caption."
 msgstr "परियोजना के सीर्सक भरव."
 
 #: main/startup/KexiNewProjectAssistant.cpp:259
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "File \"%1\" already exists.<p>Do you want to replace it with a new one?"
 msgctxt "@info"
 msgid ""
-"<filename>%1</filename> is a relative path. <note>Enter absolute path of a "
-"file to be created.</note>"
-msgstr ""
+"<para><filename>%1</filename> is a relative path.</para><para><note>Enter "
+"absolute path of a file to be created.</note></para>"
+msgstr "फाइल \"%1\" पहिली ही मौजूद हे.<p>का आप मन एला कोनो नवा से बदलना चाहू?"
 
 #: main/startup/KexiNewProjectAssistant.cpp:267
 msgid ""
@@ -3983,20 +3985,22 @@ msgid ""
 msgstr ""
 
 #: main/startup/KexiNewProjectAssistant.cpp:273
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "File \"%1\" already exists.<p>Do you want to replace it with a new one?"
 msgctxt "@info"
 msgid ""
-"<filename>%1</filename> is a directory name. <note>Enter name of a file to "
-"be created.</note>"
-msgstr ""
+"<para><filename>%1</filename> is a directory name.</para><para><note>Enter "
+"name of a file to be created.</note></para>"
+msgstr "फाइल \"%1\" पहिली ही मौजूद हे.<p>का आप मन एला कोनो नवा से बदलना चाहू?"
 
 #: main/startup/KexiNewProjectAssistant.cpp:285
 #, kde-format
 msgctxt "@info"
 msgid ""
-"Could not create database file <filename>%1</filename>. <note>There is no "
-"permission to create this file. Pick another directory or change permissions "
-"so the file can be created.</note>"
+"<para>Could not create database file <filename>%1</filename>.</"
+"para><para><note>There is no permission to create this file. Pick another "
+"directory or change permissions so the file can be created.</note></para>"
 msgstr ""
 
 #: main/startup/KexiNewProjectAssistant.cpp:298
@@ -4305,9 +4309,9 @@ msgstr "डाटाबेस ड्राइवर नाम"
 #, kde-format
 msgctxt "@info"
 msgid ""
-"Could not read connection information from connection shortcut file "
-"<filename>%1</filename>.<note>Check whether the file has valid contents.</"
-"note>"
+"<para>Could not read connection information from connection shortcut file "
+"<filename>%1</filename>.</para><para><note>Check whether the file has valid "
+"contents.</note></para>"
 msgstr ""
 
 #: main/startup/KexiStartup.cpp:349
@@ -4427,9 +4431,9 @@ msgstr ""
 #, kde-format
 msgctxt "@info"
 msgid ""
-"Could not open file <filename>%1</filename> for reading. <note>Check the "
-"file's permissions and whether it is already opened and locked by another "
-"application.</note>"
+"<para>Could not open file <filename>%1</filename> for reading.</"
+"para><para><note>Check the file's permissions and whether it is already "
+"opened and locked by another application.</note></para>"
 msgstr ""
 
 #: main/startup/KexiStartup.cpp:871
@@ -4643,8 +4647,8 @@ msgctxt "donations count"
 msgid "%1 (thanks!)"
 msgstr ""
 
-#: migration/AlterSchemaWidget.cpp:51 migration/AlterSchemaWidget.cpp:113
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1354
+#: migration/AlterSchemaWidget.cpp:51 migration/AlterSchemaWidget.cpp:112
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1363
 #, kde-format
 msgid "Column %1"
 msgstr "खंभा %1"
@@ -4689,145 +4693,159 @@ msgstr "पाठ एनकोडिंग:"
 msgid "Always use this encoding in similar situations"
 msgstr "समान हालत मं हमेसा यही एनकोडिंग परयोग करव"
 
-#: migration/importtablewizard.cpp:115
+#: migration/importtablewizard.cpp:117
 #, kde-format
+msgctxt "@info"
 msgid ""
 "<resource>%1</resource> name is already used by an existing table. Enter "
 "different table name to continue."
 msgstr ""
 
-#: migration/importtablewizard.cpp:117
+#: migration/importtablewizard.cpp:120
 msgid "Name Already Used"
 msgstr ""
 
-#: migration/importtablewizard.cpp:156
+#: migration/importtablewizard.cpp:160
+#, fuzzy
+#| msgid ""
+#| "Click \"Next\" button to continue or \"Cancel\" button to exit this "
+#| "wizard."
+msgctxt "@info"
 msgid ""
 "<para>Table Importing Assistant allows you to import a table from an "
 "existing database into the current Kexi project.</para><para>Click "
 "<interface>Next</interface> button to continue or <interface>Cancel</"
 "interface> button to exit this assistant.</para>"
 msgstr ""
+"जारी रखे बर \"अगला\" बटन दबाव या फिर एखर विजार्ड से बाहिर होए बर \"खारिज\" बटन "
+"दबाव."
 
-#: migration/importtablewizard.cpp:163
+#: migration/importtablewizard.cpp:167
 #, fuzzy
 #| msgid "Welcome to the Database Importing Wizard"
 msgid "Welcome to the Table Importing Assistant"
 msgstr "डाटाबेस आयात विजार्ड मं आप मन के स्वागत हे"
 
-#: migration/importtablewizard.cpp:190 migration/importwizard.cpp:291
+#: migration/importtablewizard.cpp:194 migration/importwizard.cpp:295
 msgid "Select Location for Source Database"
 msgstr "स्रोत डाटाबेस बर जगह चुनव"
 
-#: migration/importtablewizard.cpp:200 migration/importwizard.cpp:302
+#: migration/importtablewizard.cpp:204 migration/importwizard.cpp:306
 msgid "Select Source Database"
 msgstr "स्रोत डाटाबेस चुनव"
 
-#: migration/importtablewizard.cpp:217
+#: migration/importtablewizard.cpp:221
 #, fuzzy
 #| msgid "Select Type of Import"
 msgid "Select the Table to Import"
 msgstr "आयात के किसिम चुनव"
 
-#: migration/importtablewizard.cpp:245 migration/importwizard.cpp:457
+#: migration/importtablewizard.cpp:249 migration/importwizard.cpp:464
 msgid "Advanced Options"
 msgstr "विस्तृत विकल्प"
 
-#: migration/importtablewizard.cpp:252 migration/importwizard.cpp:469
+#: migration/importtablewizard.cpp:256 migration/importwizard.cpp:476
 msgid "Importing"
 msgstr "आयात करत हे"
 
-#: migration/importtablewizard.cpp:268
+#: migration/importtablewizard.cpp:272
 msgid "Alter the Detected Table Design"
 msgstr ""
 
-#: migration/importtablewizard.cpp:294
+#: migration/importtablewizard.cpp:298
 #, fuzzy
 #| msgid "Print Report"
 msgid "Processing Import"
 msgstr "छपाई रपट "
 
-#: migration/importtablewizard.cpp:309
+#: migration/importtablewizard.cpp:313
 #, fuzzy
 #| msgid "Open imported project"
 msgid "Open imported table"
 msgstr "आयातित परियोजना खोलव"
 
-#: migration/importtablewizard.cpp:315 migration/importwizard.cpp:493
-#: migration/importwizard.cpp:882
+#: migration/importtablewizard.cpp:319 migration/importwizard.cpp:501
+#: migration/importwizard.cpp:892
 msgid "Success"
 msgstr "सफलता"
 
-#: migration/importtablewizard.cpp:370 migration/importwizard.cpp:552
+#: migration/importtablewizard.cpp:374 migration/importwizard.cpp:561
 msgid "Select source database you wish to import:"
 msgstr "जो डाटाबेस आप मन आयात करना चाहथो ओला चुनव:"
 
-#: migration/importtablewizard.cpp:450
+#: migration/importtablewizard.cpp:448 migration/importtablewizard.cpp:462
 #, kde-format
-msgctxt "<basename-filename> <tablename>"
-msgid "%1 %2"
+msgctxt "@info"
+msgid ""
+"Could not import table <resource>%1</resource>. Select different table or "
+"cancel importing."
 msgstr ""
 
-#: migration/importtablewizard.cpp:458
+#: migration/importtablewizard.cpp:480
 #, kde-format
+msgctxt "@info"
 msgid ""
 "No data has been found in table <resource>%1</resource>. Select different "
 "table or cancel importing."
 msgstr ""
 
-#: migration/importtablewizard.cpp:491
+#: migration/importtablewizard.cpp:504
 #, kde-format
 msgctxt "@info Table import wizard, final message"
 msgid ""
 "<para>All required information has now been gathered. Click <interface>Next</"
 "interface> button to start importing table <resource>%1</resource>.</"
-"para><note>Depending on size of the table this may take some time.</note>"
+"para><para><note>Depending on size of the table this may take some time.</"
+"note></para>"
 msgstr ""
 
-#: migration/importtablewizard.cpp:522
+#: migration/importtablewizard.cpp:536
 #, fuzzy
 #| msgid "Please enter the password."
 msgctxt "@info"
 msgid "Please wait while the table is imported."
 msgstr "किरपा करके, पासवर्ड भरव."
 
-#: migration/importtablewizard.cpp:543
+#: migration/importtablewizard.cpp:558
 #, fuzzy, kde-format
 #| msgid "Design of table \"%1\" has been modified."
+msgctxt "@info"
 msgid "Table <resource>%1</resource> has been imported."
 msgstr "टेबल \"%1\" के ढांचा सुधार दे गे हे."
 
-#: migration/importtablewizard.cpp:547
+#: migration/importtablewizard.cpp:562
 msgid "An error occured."
 msgstr ""
 
-#: migration/importtablewizard.cpp:564 migration/importwizard.cpp:760
+#: migration/importtablewizard.cpp:579 migration/importwizard.cpp:770
 msgid "No appropriate migration driver found."
 msgstr "कोई उपयुक्त माइग्रेसन ड्राइवर नइ मिलिस."
 
-#: migration/importtablewizard.cpp:659
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:425
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1829
+#: migration/importtablewizard.cpp:674
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:423
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1838
 msgid "No project available."
 msgstr "कोई परियोजना नइ मिलत."
 
-#: migration/importtablewizard.cpp:671
+#: migration/importtablewizard.cpp:686
 msgid "No table was selected to import."
 msgstr ""
 
-#: migration/importtablewizard.cpp:686
+#: migration/importtablewizard.cpp:701
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
 msgid "Unable to create table <resource>%1</resource>."
 msgstr "चीज \"%1\" सहेजे मं फेल."
 
-#: migration/importwizard.cpp:140
+#: migration/importwizard.cpp:142
 #, fuzzy
 #| msgid "Import Database"
 msgctxt "@title:window"
 msgid "Import Database"
 msgstr "डाटाबेस आयात करव"
 
-#: migration/importwizard.cpp:240
+#: migration/importwizard.cpp:243
 #, fuzzy, kde-format
 #| msgid ""
 #| "Database Importing wizard allows you to import an existing database into "
@@ -4839,7 +4857,7 @@ msgid ""
 msgstr ""
 "डाटाबेस आयात विजार्ड आप मन ल अभी हाल के डाटाबेस ल केएक्जाई डाटाबेस मं आयात करन देथे ."
 
-#: migration/importwizard.cpp:251
+#: migration/importwizard.cpp:254
 #, fuzzy, kde-format
 #| msgid ""
 #| "Database Importing wizard allows you to import an existing database into "
@@ -4851,7 +4869,7 @@ msgid ""
 msgstr ""
 "डाटाबेस आयात विजार्ड आप मन ल अभी हाल के डाटाबेस ल केएक्जाई डाटाबेस मं आयात करन देथे ."
 
-#: migration/importwizard.cpp:255
+#: migration/importwizard.cpp:258
 #, fuzzy
 #| msgid ""
 #| "Database Importing wizard allows you to import an existing database into "
@@ -4862,11 +4880,12 @@ msgid ""
 msgstr ""
 "डाटाबेस आयात विजार्ड आप मन ल अभी हाल के डाटाबेस ल केएक्जाई डाटाबेस मं आयात करन देथे ."
 
-#: migration/importwizard.cpp:259
+#: migration/importwizard.cpp:263
 #, fuzzy
 #| msgid ""
 #| "Click \"Next\" button to continue or \"Cancel\" button to exit this "
 #| "wizard."
+msgctxt "@info"
 msgid ""
 "Click <interface>Next</interface> button to continue or <interface>Cancel</"
 "interface> button to exit this assistant."
@@ -4874,246 +4893,277 @@ msgstr ""
 "जारी रखे बर \"अगला\" बटन दबाव या फिर एखर विजार्ड से बाहिर होए बर \"खारिज\" बटन "
 "दबाव."
 
-#: migration/importwizard.cpp:264
+#: migration/importwizard.cpp:268
 #, fuzzy
 #| msgid "Welcome to the Database Importing Wizard"
 msgid "Welcome to the Database Importing Assistant"
 msgstr "डाटाबेस आयात विजार्ड मं आप मन के स्वागत हे"
 
-#: migration/importwizard.cpp:317
+#: migration/importwizard.cpp:321
 msgid "Destination database type:"
 msgstr "गंतव्य डाटाबेस किसिम:"
 
-#: migration/importwizard.cpp:323
+#: migration/importwizard.cpp:328
 msgid "Database project stored in a file"
 msgstr "डाटाबेस परियोजना फाइल मं भरे हो "
 
-#: migration/importwizard.cpp:324
+#: migration/importwizard.cpp:329
 msgid "Database project stored on a server"
 msgstr "डाटाबेस परियोजना सर्वर मं भंडारित"
 
-#: migration/importwizard.cpp:328
+#: migration/importwizard.cpp:333
 msgid "Select Destination Database Type"
 msgstr "गंतव्य डाटाबेस किसिम चुनव"
 
-#: migration/importwizard.cpp:336
+#: migration/importwizard.cpp:341
 #, fuzzy
 #| msgid "Destination project's caption:"
 msgid "Destination project's caption:"
 msgstr "गंतव्य परियोजना के सीर्सक:"
 
-#: migration/importwizard.cpp:348
+#: migration/importwizard.cpp:353
 #, fuzzy
 #| msgid "Destination project's caption:"
 msgid "Destination project's name:"
 msgstr "गंतव्य परियोजना के सीर्सक:"
 
-#: migration/importwizard.cpp:357
+#: migration/importwizard.cpp:362
 #, fuzzy
 #| msgid "Select Destination Database Project's Caption"
 msgid "Enter Destination Database Project's Caption"
 msgstr "गंतव्य डाटाबेस परियोजना के सीर्सक चुनव"
 
-#: migration/importwizard.cpp:393
+#: migration/importwizard.cpp:398
 #, fuzzy
 #| msgid "Select Location for Destination Database"
 msgid "Select Location for Destination Database Project"
 msgstr "गंतव्य डाटाबेस बर जगह चुनव"
 
-#: migration/importwizard.cpp:411
+#: migration/importwizard.cpp:416
 #, fuzzy
 #| msgid "Structure and data"
 msgctxt "Scope of import"
 msgid "Structure and data"
 msgstr "ढांचा अउ डाटा"
 
-#: migration/importwizard.cpp:416
+#: migration/importwizard.cpp:421
 #, fuzzy
 #| msgid "Structure only"
 msgctxt "Scope of import"
 msgid "Structure only"
 msgstr "सिरिफ ढांचा"
 
-#: migration/importwizard.cpp:422
+#: migration/importwizard.cpp:427
 #, fuzzy
 #| msgid "Select Type of Import"
 msgid "Select Scope of Import"
 msgstr "आयात के किसिम चुनव"
 
-#: migration/importwizard.cpp:486
+#: migration/importwizard.cpp:494
 msgid "Open imported project"
 msgstr "आयातित परियोजना खोलव"
 
-#: migration/importwizard.cpp:504
-msgid "No new database name was entered."
+#: migration/importwizard.cpp:512
+#, fuzzy
+#| msgid "No new database name was entered."
+msgctxt "@info"
+msgid "<para>No new database name was entered.</para>"
 msgstr "कोई नवा डाटाबेस नाम भरे नइ गे हे."
 
-#: migration/importwizard.cpp:510
-msgid "Source database is the same as destination."
+#: migration/importwizard.cpp:518
+#, fuzzy, kde-format
+#| msgid "Source database is the same as destination."
+msgctxt "@info"
+msgid "%1<para>Source database is the same as destination.</para>"
 msgstr "स्रोत डाटाबेस गंतव्य डाटाबेस जइसन ही हे."
 
-#: migration/importwizard.cpp:514
-#, fuzzy
-#| msgid "Following problems were found with the data you entered:"
-msgid "Following issues were found with the data you entered:"
-msgstr "डाटा जऊन आप मन भरे हो  ओखर कारन नीचे वाले समस्या मिलिस:"
-
-#: migration/importwizard.cpp:516
-#, fuzzy
+#: migration/importwizard.cpp:523
+#, fuzzy, kde-format
 #| msgid "Please click 'Back' button and correct these errors."
+msgctxt "@info"
 msgid ""
-"Please click <interface>Back</interface> button and correct these issues."
+"<para>Following issues were found with the data you entered:</para>"
+"%1<para>Please click <interface>Back</interface> button and correct these "
+"issues.</para>"
 msgstr "ए गलतीयों ल ठीक करे बर किरपा करके, 'पीछू' बटन ल किलिक करव."
 
-#: migration/importwizard.cpp:612
+#: migration/importwizard.cpp:621
+msgctxt "@info"
 msgid ""
 "<para>All required information has now been gathered. Click <interface>Next</"
 "interface> button to start importing.</para><para><note>Depending on size of "
 "the database this may take some time.</note></para>"
 msgstr ""
 
-#: migration/importwizard.cpp:854
+#: migration/importwizard.cpp:864
 #, fuzzy, kde-format
 #| msgid ""
-#| "Database %1 already exists.<p>Do you want to replace it with a new one?"
+#| "File \"%1\" already exists.<p>Do you want to replace it with a new one?"
 msgctxt "@info (don't add tags around %1, it's done already)"
 msgid ""
-"Database %1 already exists.<nl/>Do you want to replace it with a new one?"
-msgstr ""
-"डाटाबेस %1 पहिली ही मौजूद हे.<p>का आप मन एला एक नवा, खाली डाटाबेस से बदलना चाहथो ?"
+"<para>Database <resource>%1</resource> already exists.</para><para>Do you "
+"want to replace it with a new one?</para>"
+msgstr "फाइल \"%1\" पहिली ही मौजूद हे.<p>का आप मन एला कोनो नवा से बदलना चाहू?"
 
-#: migration/importwizard.cpp:857
+#: migration/importwizard.cpp:867
 #, fuzzy
 #| msgid "&Replace"
 msgctxt "@action:button Replace Database"
 msgid "&Replace"
 msgstr "बदलव (&R)"
 
-#: migration/importwizard.cpp:896
+#: migration/importwizard.cpp:906
 msgid "Failure"
 msgstr "फेल"
 
-#: migration/importwizard.cpp:899
+#: migration/importwizard.cpp:909
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Import failed.</p>%1<p>%2</p><p>You can click \"Back\" button and try "
 #| "again.</p>"
+msgctxt "@info"
 msgid ""
 "<para>Import failed.</para><para>%1</para><para>%2</para><para>You can click "
 "<interface>Back</interface> button and try again.</para>"
 msgstr ""
 "<p>आयात फेल.</p>%1<p>%2</p><p>आप \"पीछू\" बटन ल किलिक कर फिर से आजमा सकथो .</p>"
 
-#: migration/importwizard.cpp:919
+#: migration/importwizard.cpp:932
 msgid "Select source database filename."
 msgstr "स्रोत डाटाबेस फाइलनाम चुनव."
 
-#: migration/importwizard.cpp:925
+#: migration/importwizard.cpp:938
 msgid "Select source database."
 msgstr "स्रोत डाटाबेस चुनव."
 
-#: migration/importwizard.cpp:938
+#: migration/importwizard.cpp:952
 msgid "Could not import database. This type is not supported."
 msgstr "डाटाबेस आयात नइ कर सकिस. ए किसिम समर्थित नइ हे."
 
-#: migration/importwizard.cpp:939
-#, kde-format
-msgid "Could not import database \"%1\". This type is not supported."
+#: migration/importwizard.cpp:954
+#, fuzzy, kde-format
+#| msgid "Could not import database \"%1\". This type is not supported."
+msgctxt "@info"
+msgid ""
+"Could not import database <resource>%1</resource>. This type is not "
+"supported."
 msgstr "डाटाबेस \"%1\" आयात नइ कर सकिस. ए किसिम समर्थित नइ हे."
 
-#: migration/importwizard.cpp:994
+#: migration/importwizard.cpp:1013
 msgid "Importing in progress..."
 msgstr "आयात प्रगति में..."
 
-#: migration/importwizard.cpp:998
+#: migration/importwizard.cpp:1018
 #, fuzzy, kde-format
 #| msgid "Database has been imported into Kexi database project \"%1\"."
-msgid "Database has been imported into Kexi project \"%1\"."
+msgctxt "@info"
+msgid "Database has been imported into Kexi project <resource>%1</resource>."
 msgstr "डाटाबेस ल केएक्जाई डाटाबेस परियोजना \"%1\" मं आयात कर ले गे हे."
 
-#: migration/importwizard.cpp:1071 migration/importwizard.cpp:1082
+#: migration/importwizard.cpp:1092 migration/importwizard.cpp:1103
 msgid "No help is available for this page."
 msgstr "ये पेज बर कोनो मदद नइ मिलत हे."
 
-#: migration/importwizard.cpp:1074
+#: migration/importwizard.cpp:1095
 msgid "Here you can choose the location to import data from."
 msgstr "डाटा ल आयात करे बर इहां आप मन डाटाबेस के जगह चुन सकथो ."
 
-#: migration/importwizard.cpp:1076
+#: migration/importwizard.cpp:1097
 msgid "Here you can choose the actual database to import data from."
 msgstr "डाटा ल आयात करे बर इहां आप मन सही डाटाबेस चुन सकथो ."
 
-#: migration/importwizard.cpp:1078
+#: migration/importwizard.cpp:1099
 msgid "Here you can choose the location to save the data."
 msgstr "इहां आप मन डाटा ल सहेजे बर जगह चुन सकथो ."
 
-#: migration/importwizard.cpp:1080
+#: migration/importwizard.cpp:1101
 msgid ""
 "Here you can choose the location to save the data in and the new database "
 "name."
 msgstr "इहां आप मन डाटा ल नवा डाटाबेस नाम से सहेजे बर जगह ल चुन सकथो ."
 
-#: migration/keximigrate.cpp:149 migration/keximigrate.cpp:196
-#: migration/keximigrate.cpp:307 migration/keximigrate.cpp:377
-#, kde-format
-msgid "Could not create database \"%1\"."
-msgstr "डाटाबेस \"%1\" नइ बना सकिस."
+#: migration/keximigrate.cpp:56
+#, fuzzy, kde-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Could not create database <resource>%1</resource>."
+msgstr "चीज \"%1\" सहेजे मं फेल."
 
-#: migration/keximigrate.cpp:208
-#, kde-format
-msgid "Could not connect to data source \"%1\"."
+#: migration/keximigrate.cpp:210
+#, fuzzy, kde-format
+#| msgid "Could not connect to data source \"%1\"."
+msgid "Could not connect to database %1."
 msgstr "डाटा स्रोत \"%1\" से कनेक्ट नइ हो सके."
 
-#: migration/keximigrate.cpp:219
-#, kde-format
-msgid "Could not get a list of table names for data source \"%1\"."
+#: migration/keximigrate.cpp:396
+#, fuzzy, kde-format
+#| msgid "Could not get a list of table names for data source \"%1\"."
+msgid "Could not get a list of table names for database %1."
 msgstr "डाटा स्रोत \"%1\" बर टेबल नांव मन के सूची प्राप्त नइ कर सके."
 
-#: migration/keximigrate.cpp:229
-#, kde-format
-msgid "No tables to import found in data source \"%1\"."
+#: migration/keximigrate.cpp:406
+#, fuzzy, kde-format
+#| msgid "No tables to export found in data source \"%1\"."
+msgid "No tables have been found in database %1."
 msgstr "डाटा स्रोत \"%1\" मं आयात करे बर कोनो टेबल नइ."
 
-#: migration/keximigrate.cpp:278
-#, kde-format
+#: migration/keximigrate.cpp:472
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not import project from data source \"%1\". Error reading table "
+#| "\"%2\"."
+msgctxt "@info"
 msgid ""
-"Could not import project from data source \"%1\". Error reading table \"%2\"."
+"Could not import project from database %1. Error reading table <resource>%2</"
+"resource>."
 msgstr "डाटा स्रोत \"%1\" से परियोजना आयात नइ कर सकिस. टेबल \"%2\" ल पढ़े मं गलती."
 
-#: migration/keximigrate.cpp:405
-#, kde-format
-msgid "Could not import project from data source \"%1\"."
+#: migration/keximigrate.cpp:522
+#, fuzzy, kde-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Could not import table <resource>%1</resource>."
+msgstr "चीज \"%1\" सहेजे मं फेल."
+
+#: migration/keximigrate.cpp:565
+#, fuzzy, kde-format
+#| msgid "Could not import project from data source \"%1\"."
+msgid "Could not import project from data source %1."
 msgstr "डाटा स्रोत \"%1\" से परियोजना आयात नइ कर सकिस."
 
-#: migration/keximigrate.cpp:456
-#, kde-format
-msgid "Could not copy table \"%1\" to destination database."
+#: migration/keximigrate.cpp:614
+#, fuzzy, kde-format
+#| msgid "Could not copy table \"%1\" to destination database."
+msgctxt "@info"
+msgid "Could not copy table <resource>%1</resource> to destination database."
 msgstr "गंतव्य डाटाबेस मं टेबल \"%1\" के नकल नइ कर सकिस."
 
-#: migration/keximigrate.cpp:480
-#, kde-format
-msgid "Could not import data from data source \"%1\"."
+#: migration/keximigrate.cpp:635
+#, fuzzy, kde-format
+#| msgid "Could not import data from data source \"%1\"."
+msgid "Could not import data from data source %1."
 msgstr "डाटा स्रोत \"%1\" से डाटा आयात नइ कर सकिस."
 
-#: migration/keximigrate.cpp:561
+#: migration/keximigrate.cpp:713
 #, fuzzy
 #| msgid "Field Type"
 msgctxt "@title:window"
 msgid "Field Type"
 msgstr "छेत्र किसिम"
 
-#: migration/keximigrate.cpp:562
+#: migration/keximigrate.cpp:715
 #, fuzzy, kde-format
 #| msgid ""
 #| "The data type for %1 could not be determined. Please select one of the "
 #| "following data types"
+msgctxt "@info"
 msgid ""
 "The data type for field <resource>%1</resource> could not be determined. "
 "Please select one of the following data types."
 msgstr ""
 "%1 बर डाटा टाइप निरधारित नइ कर सके. किरपा करके, नीचे वाले डाटा किसिम मं से एक चुनव"
 
-#: migration/migratemanager.cpp:125
+#: migration/migratemanager.cpp:128
 #, fuzzy
 #| msgid "Could not find any import/export database drivers."
 msgid "Could not find any migration database drivers."
@@ -6033,7 +6083,7 @@ msgid "Copy"
 msgstr "नकल"
 
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:65
-#: widget/navigator/KexiProjectNavigator.cpp:213
+#: widget/navigator/KexiProjectNavigator.cpp:216
 msgid "Export"
 msgstr "निर्यात"
 
@@ -6114,12 +6164,12 @@ msgid "Show Options &gt;&gt;"
 msgstr "विकल्प देखाव >>"
 
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:186
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:616
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:615
 msgid "Delimiter:"
 msgstr "डेलिमिटर"
 
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:195
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:653
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:652
 msgid "Text quote:"
 msgstr "पाठ उदाहरन:"
 
@@ -6155,131 +6205,124 @@ msgstr "निर्यात करत हे"
 msgid "Hide Options &lt;&lt;"
 msgstr "विकल्प लुकाव <<"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:266
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:265
 msgid "no"
 msgstr "नइ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:268
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:267
 msgid "false"
 msgstr "गलत"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:276
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:275
 #, fuzzy
 #| msgid "Import CSV Data File"
 msgctxt "@title:window"
 msgid "Import CSV Data From File"
 msgstr "सीएसवी डाटा फाइल आयात करव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:277
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:276
 #, fuzzy
 #| msgid "Copy Data From Table to Clipboard"
 msgctxt "@title:window"
 msgid "Paste CSV Data From Clipboard"
 msgstr "टेबल मं से डाटा क्लिपबोर्ड मं नकल करव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:405
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:403
 #, fuzzy
 #| msgid "Select source database filename."
 msgctxt "@info"
 msgid "Select source filename."
 msgstr "स्रोत डाटाबेस फाइलनाम चुनव."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:418
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:416
 msgid "Data set contains no rows. Do you want to import empty table?"
 msgstr "डाटा सेट तिर कोनो लकीर नइ हे. का आप मन खाली टेबल आयात करना चाहथो ?"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:431
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1834
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:429
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1843
 msgid "No database connection available."
 msgstr "कोई डााटाबेस कनेक्सन नइ मिलत हे."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:450
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:448
 #: widget/KexiNameDialog.cpp:173
 msgid "Please choose other name."
 msgstr "किरपा करके, अउ दूसरा नाम चुनव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:491
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1792
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:490
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1801
 #, fuzzy
 #| msgid "&Import..."
 msgctxt "@action:button Import CSV"
 msgid "&Import..."
 msgstr "आयात... (&I)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:508
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:507
 #, fuzzy, kde-format
 #| msgid "Loading CSV Data from \"%1\"..."
 msgctxt "@info"
 msgid "Loading CSV Data from <filename>%1</filename>..."
 msgstr "\"%1\" से सीएसवी डाटा लोड करत हे..."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:510
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:509
 #, fuzzy
 #| msgid "Loading CSV Data"
 msgctxt "@title:window"
 msgid "Loading CSV Data"
 msgstr "सीएसवी डाटा लोड करत हे"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:575
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:799
-#, fuzzy
-#| msgid "Table:"
-msgid "To table:"
-msgstr "सारनीः"
-
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:592
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:591
 #, fuzzy
 #| msgid "Select source database filename."
 msgid "Select Import Filename"
 msgstr "स्रोत डाटाबेस फाइलनाम चुनव."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:602
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:601
 msgid "Preview of data from file:"
 msgstr "फाइल से डाटा प्रिव्यू करव:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:603
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:602
 #, fuzzy
 #| msgid "Preview of data from clipboard:"
 msgid "Preview of data from clipboard"
 msgstr "क्लिपबोर्ड से डाटा प्रिव्यू करव:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:624
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:623
 #, fuzzy
 #| msgid "Comments"
 msgid "Comment symbol:"
 msgstr "टिप्पनियाँ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:645
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:644
 msgid "Primary key"
 msgstr "प्राथमिक कुंजी"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:677
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:676
 msgid "Ignore duplicated delimiters"
 msgstr "अनुकृति डेलिमीटर ल अनदेखा करव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:682
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:681
 msgid "First row contains column names"
 msgstr "पहिली लकीर मं खंभा नाम सम्मिलित हे"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:702
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:701
 #, fuzzy
 #| msgid "CSV Import Options"
 msgid "Import Options"
 msgstr "सीएसवी आयात विकल्प"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:711
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:710
 #, fuzzy
 #| msgid "New database"
 msgctxt "@action:button"
 msgid "New table"
 msgstr "नवा डाटाबेस"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:712
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:711
 msgctxt "CSV import: data will be appended to a new table"
 msgid "Data will be appended to a new table"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:714
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:713
 #, fuzzy
 #| msgctxt "Keep this text narrow: split to multiple rows if needed"
 #| msgid ""
@@ -6291,93 +6334,126 @@ msgstr ""
 "अभी हाल के डाटाबेस\n"
 " आयात करव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:715
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:714
 msgctxt "CSV import: data will be appended to existing table"
 msgid "Data will be appended to existing table"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:726
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:725
 msgid "Choose Method of Saving Imported Data"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:757
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:750
 #, fuzzy
-#| msgid "Caption:"
+#| msgctxt "Keep this text narrow: split to multiple rows if needed"
+#| msgid ""
+#| "Import Existing\n"
+#| "Database"
 msgctxt "@label"
-msgid "Caption:"
-msgstr "सीर्सक:"
+msgid "Select existing table:"
+msgstr ""
+"अभी हाल के डाटाबेस\n"
+" आयात करव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:758
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:771
+#, fuzzy
+#| msgid "Table field"
+msgctxt "@label Preview of selected table"
+msgid "Table preview:"
+msgstr "टेबल छेत्र"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:772
 #, fuzzy
 #| msgid "Name:"
 msgctxt "@label"
 msgid "Name:"
 msgstr "नाम:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:759
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:774
+#, fuzzy
+#| msgid "Caption:"
+msgctxt "@label"
+msgid "Caption:"
+msgstr "सीर्सक:"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:776
 #, fuzzy
 #| msgid "&Break Layout"
 msgctxt "@label"
 msgid "Row count:"
 msgstr "खाका ब्रेक करव (&B)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:760
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:778
 #, fuzzy
 #| msgid "Column name"
 msgctxt "@label"
 msgid "Column count:"
 msgstr "खंभा के नाम"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:786
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:788
+#, fuzzy
+#| msgid "Field"
+msgctxt "@label"
+msgid "Fields:"
+msgstr "छेत्र"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:794
 msgctxt "@label"
 msgid "Choose Name of Destination Table"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:794
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:802
 #, fuzzy
 #| msgid "To CSV file:"
 msgid "From CSV file:"
 msgstr "सीएसवी फाइल में:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:794
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:802
 #, fuzzy
 #| msgid "To clipboard:"
 msgid "From Clipboard"
 msgstr "क्लिपबोर्ड में:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:813
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:807
+#, fuzzy
+#| msgid "Table:"
+msgctxt "@label Importing CSV data to table:"
+msgid "To table:"
+msgstr "सारनीः"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:822
 #, fuzzy
 #| msgid "Importing"
 msgid "Importing..."
 msgstr "आयात करत हे"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:864
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:873
 #, fuzzy, kde-format
 #| msgid "Cannot open input file <nobr>\"%1\"</nobr>."
 msgid "Cannot open input file <filename>%1</filename>."
 msgstr "इनपुट फाइल <nobr>\"%1\"</nobr> खोल नइ सकिस."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:942
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:951
 #, kde-format
 msgid "Start at line (1-%1):"
 msgstr "लकीर मं चालू (1-%1):"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:943
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:951
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:952
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:960
 msgid "Start at line:"
 msgstr "लकीर मं सुरूः"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1647
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1656
 #: plugins/queries/kexiquerydesignerguieditor.cpp:246
 msgid "Column"
 msgstr "खंभा"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1676
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1685
 msgctxt "@info"
 msgid "An error occurred during insert record."
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1721
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1730
 #: plugins/importexport/csv/kexicsvwidgets.cpp:189
 #: plugins/importexport/csv/kexicsvwidgets.cpp:239
 #: plugins/importexport/csv/kexicsvwidgets.cpp:251
@@ -6386,12 +6462,12 @@ msgstr ""
 msgid "None"
 msgstr "कुछ नइ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1770
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1779
 #, kde-format
 msgid "Format for column %1:"
 msgstr "खंभा %1 बर फारमेट:"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1850
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1859
 msgctxt "@info"
 msgid ""
 "<para>No primary key (autonumber) has been defined.</para><para>Should it be "
@@ -6400,7 +6476,7 @@ msgid ""
 "</note></para>"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1855
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1864
 #: plugins/tables/kexitabledesignerview.cpp:1205
 #, fuzzy
 #| msgid "&Add Primary Key"
@@ -6408,7 +6484,7 @@ msgctxt "@action:button Add Database Primary Key to a Table"
 msgid "&Add Primary Key"
 msgstr "प्राथमिक कुंजी जोड़व (&A)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1856
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1865
 #: plugins/tables/kexitabledesignerview.cpp:1206
 #, fuzzy
 #| msgctxt "Do Not Add Database Primary Key to a Table"
@@ -6417,14 +6493,14 @@ msgctxt "@action:button Do Not Add Database Primary Key to a Table"
 msgid "Do &Not Add"
 msgstr "जोड़व नइ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1892
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1950
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1901
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1959
 #, fuzzy
 #| msgid "Clear bound column"
 msgid "Cannot add column."
 msgstr "बाउन्ड खंभा साफ करव"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1906
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1915
 #: plugins/importexport/csv/KexiCSVImportDialogModel.cpp:115
 #, fuzzy, kde-format
 #| msgid "Column %1"
@@ -6432,61 +6508,59 @@ msgctxt "@title:column Column 1, Column 2, etc."
 msgid "Column %1"
 msgstr "खंभा %1"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1966
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1975
 msgid ""
 "<para>Field count does not match.</para><para>Please choose another table.</"
 "para>"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2006
-#, fuzzy, kde-format
-#| msgid "Importing CSV Data from <nobr>\"%1\"</nobr> into \"%2\" table..."
-msgid ""
-"Importing CSV Data from <filename>%1</filename> into <resource>%2</resource> "
-"table..."
-msgstr "सीएसवी डाटा ल <nobr>\"%1\"</nobr> मं से टेबल \"%2\" मं आयात करत हे..."
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2014
+#, fuzzy
+#| msgid "Importing"
+msgid "Importing data..."
+msgstr "आयात करत हे"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2022
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2029
 msgid "Import has been canceled."
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2024
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2031
 msgid "Error occurred during import."
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2058
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2065
 #, kde-format
 msgid "Data has been successfully imported to table \"%1\"."
 msgstr "डाटा ल सफलतापूर्वक टेबल \"%1\" मं सहेजे गिस."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2085
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2092
 msgctxt "Text type for column"
 msgid "Text"
 msgstr "पाठ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2087
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2094
 msgctxt "Numeric type for column"
 msgid "Number"
 msgstr "नंबर"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2089
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2096
 msgctxt "Currency type for column"
 msgid "Currency"
 msgstr "मुद्रा"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2169
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2176
 #, kde-format
 msgctxt "row count"
 msgid "(rows: %1)"
 msgstr "(पंक्तियाँ: %1)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2173
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2180
 #, kde-format
 msgctxt "row count"
 msgid "(rows: more than %1)"
 msgstr "(पंक्तियाँ: %1 से अधिक)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2174
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2181
 msgid "Not all rows are visible on this preview"
 msgstr "ये प्रिव्यू मं सब्बो पंक्तिया दिखत नइ होही"
 
@@ -7059,8 +7133,9 @@ msgstr "डाटा ल एक फाइल मं निर्यात कर
 #: plugins/reports/kexireportview.cpp:310
 msgctxt "@info"
 msgid ""
-"Would you like to use Cascading Style Sheets (CSS) in the exported web page "
-"or use HTML tables?<note>CSS give output closer to the original.</note>"
+"<para>Would you like to use Cascading Style Sheets (CSS) in the exported web "
+"page or use HTML tables?</para><para><note>CSS give output closer to the "
+"original.</note></para>"
 msgstr ""
 
 #: plugins/reports/kexireportview.cpp:314
@@ -7375,7 +7450,7 @@ msgid "Describes caption for the field"
 msgstr "छेत्र बर सीर्सक वर्नित करथे "
 
 #: plugins/tables/kexitabledesignerview.cpp:135
-#: widget/fields/KexiFieldListModel.cpp:141
+#: widget/fields/KexiFieldListModel.cpp:145
 msgid "Data Type"
 msgstr "डाटा किसिम "
 
@@ -7844,7 +7919,7 @@ msgstr[1] ""
 msgid "NAME"
 msgstr "नाम"
 
-#: widget/fields/KexiFieldListModel.cpp:139
+#: widget/fields/KexiFieldListModel.cpp:143
 msgid "Field Name"
 msgstr "फील्ड नाम"
 
@@ -8176,7 +8251,7 @@ msgid "(unspecified)"
 msgstr "(अविसिस्ट)"
 
 #: widget/KexiDBPasswordDialog.cpp:94
-#: widget/navigator/KexiProjectNavigator.cpp:166
+#: widget/navigator/KexiProjectNavigator.cpp:169
 msgid "&Open"
 msgstr "खोलव (&O)"
 
@@ -8200,27 +8275,27 @@ msgstr "परियोजना नाम"
 msgid "All supported formats"
 msgstr "सब्बो समर्थित फाइल मन ल (%1)"
 
-#: widget/KexiFileWidget.cpp:223 widget/KexiStartupFileHandler.cpp:259
+#: widget/KexiFileWidget.cpp:224 widget/KexiStartupFileHandler.cpp:259
 #, kde-format
 msgid "All Supported Files (%1)"
 msgstr "सब्बो समर्थित फाइल मन ल (%1)"
 
-#: widget/KexiFileWidget.cpp:319 widget/KexiFileWidget.cpp:361
+#: widget/KexiFileWidget.cpp:320 widget/KexiFileWidget.cpp:362
 #: widget/KexiStartupFileHandler.cpp:354 widget/KexiStartupFileHandler.cpp:398
 msgid "Enter a filename."
 msgstr "कोई फाइलनाम भरव."
 
-#: widget/KexiFileWidget.cpp:356 widget/KexiStartupFileHandler.cpp:392
+#: widget/KexiFileWidget.cpp:357 widget/KexiStartupFileHandler.cpp:392
 #, kde-format
 msgid "The file \"%1\" does not exist."
 msgstr "फाइल \"%1\" मौजूद नइ हे."
 
-#: widget/KexiFileWidget.cpp:364 widget/KexiStartupFileHandler.cpp:402
+#: widget/KexiFileWidget.cpp:365 widget/KexiStartupFileHandler.cpp:402
 #, kde-format
 msgid "The file \"%1\" is not readable."
 msgstr "फ़ाइल \"%1\" पढ़े जा सके नइ हे."
 
-#: widget/KexiFileWidget.cpp:382
+#: widget/KexiFileWidget.cpp:383
 #, kde-format
 msgid ""
 "The file \"%1\" already exists.\n"
@@ -8229,7 +8304,7 @@ msgstr ""
 "फाइल \"%1\" पहिली से ही मौजूद हे. \n"
 "का आप मन एखर ऊपर लिखना चाहथो ?"
 
-#: widget/KexiFileWidget.cpp:384
+#: widget/KexiFileWidget.cpp:385
 #, fuzzy
 #| msgid "Overwrite"
 msgctxt "@action:button Overwrite File"
@@ -8412,137 +8487,137 @@ msgctxt "@title:window"
 msgid "Project Navigator"
 msgstr "परियोजना नेविगेटर"
 
-#: widget/navigator/KexiProjectNavigator.cpp:167
+#: widget/navigator/KexiProjectNavigator.cpp:170
 msgid "Open object"
 msgstr "चीज खोलव"
 
-#: widget/navigator/KexiProjectNavigator.cpp:167
+#: widget/navigator/KexiProjectNavigator.cpp:170
 msgid "Opens object selected in the list."
 msgstr "सूची मं चुने गे चीज मन ल खोलथे ."
 
-#: widget/navigator/KexiProjectNavigator.cpp:178
+#: widget/navigator/KexiProjectNavigator.cpp:181
 #, fuzzy
 #| msgid "&Delete"
 msgid "&Delete..."
 msgstr "मेटाव (&D)"
 
-#: widget/navigator/KexiProjectNavigator.cpp:179
+#: widget/navigator/KexiProjectNavigator.cpp:182
 msgid "Delete object"
 msgstr "चीज मेटाव"
 
-#: widget/navigator/KexiProjectNavigator.cpp:180
+#: widget/navigator/KexiProjectNavigator.cpp:183
 msgid "Deletes the object selected in the list."
 msgstr "सूची मं चुने गे चीज ल मिटाथे ."
 
-#: widget/navigator/KexiProjectNavigator.cpp:183
+#: widget/navigator/KexiProjectNavigator.cpp:186
 #, fuzzy
 #| msgid "&Rename"
 msgid "&Rename..."
 msgstr "नाम बदलव (&R)"
 
-#: widget/navigator/KexiProjectNavigator.cpp:184
+#: widget/navigator/KexiProjectNavigator.cpp:187
 msgid "Rename object"
 msgstr "आब्जेक्ट ल नवा नाम देव"
 
-#: widget/navigator/KexiProjectNavigator.cpp:185
+#: widget/navigator/KexiProjectNavigator.cpp:188
 msgid "Renames the object selected in the list."
 msgstr "सूची मं चुने गे चीज मन के नाम बदलथे ."
 
-#: widget/navigator/KexiProjectNavigator.cpp:194
+#: widget/navigator/KexiProjectNavigator.cpp:197
 msgid "&Design"
 msgstr "डिजाइन (&D)"
 
-#: widget/navigator/KexiProjectNavigator.cpp:195
+#: widget/navigator/KexiProjectNavigator.cpp:198
 msgid "Design object"
 msgstr "चीज के डिजाइन बनाव"
 
-#: widget/navigator/KexiProjectNavigator.cpp:196
+#: widget/navigator/KexiProjectNavigator.cpp:199
 msgid "Starts designing of the object selected in the list."
 msgstr "सूची मं चुने गे चीज के डिजाइनिंग चालू करथे ."
 
-#: widget/navigator/KexiProjectNavigator.cpp:199
+#: widget/navigator/KexiProjectNavigator.cpp:202
 #, fuzzy
 #| msgid "Open in &Text View"
 msgid "Design in &Text View"
 msgstr "पाठ दृस्य मं खोलव (&T)"
 
-#: widget/navigator/KexiProjectNavigator.cpp:200
+#: widget/navigator/KexiProjectNavigator.cpp:203
 #, fuzzy
 #| msgid "Open object in text view"
 msgid "Design object in text view"
 msgstr "चीज ल पाठ दृस्य मं खोलव"
 
-#: widget/navigator/KexiProjectNavigator.cpp:201
+#: widget/navigator/KexiProjectNavigator.cpp:204
 #, fuzzy
 #| msgid "Starts designing of the object selected in the list."
 msgid "Starts designing of the object in the list in text view."
 msgstr "सूची मं चुने गे चीज के डिजाइनिंग चालू करथे ."
 
-#: widget/navigator/KexiProjectNavigator.cpp:215
+#: widget/navigator/KexiProjectNavigator.cpp:218
 #, fuzzy
 #| msgid "To clipboard:"
 msgctxt "Export->To Clipboard as Data... "
 msgid "To &Clipboard..."
 msgstr "क्लिपबोर्ड में:"
 
-#: widget/navigator/KexiProjectNavigator.cpp:216
+#: widget/navigator/KexiProjectNavigator.cpp:219
 #, fuzzy
 #| msgid "Export data to a file"
 msgid "Export data to clipboard"
 msgstr "डाटा ल एक फाइल मं निर्यात करव"
 
-#: widget/navigator/KexiProjectNavigator.cpp:217
+#: widget/navigator/KexiProjectNavigator.cpp:220
 #, fuzzy
 #| msgid ""
 #| "Exports data from the currently selected table or query data to a file."
 msgid "Exports data from the currently selected table or query to clipboard."
 msgstr "अभी हाल के चुने गे टेबल या क्वैरी डाटा से डाटा ल एक फाइल मं निर्यात करव"
 
-#: widget/navigator/KexiProjectNavigator.cpp:222
+#: widget/navigator/KexiProjectNavigator.cpp:225
 msgctxt "Export->To File As Data &Table... "
 msgid "To &File As Data Table..."
 msgstr "डाटा टेबल के रूप मं फाइल मे... (&F)"
 
-#: widget/navigator/KexiProjectNavigator.cpp:223
+#: widget/navigator/KexiProjectNavigator.cpp:226
 msgid "Export data to a file"
 msgstr "डाटा ल एक फाइल मं निर्यात करव"
 
-#: widget/navigator/KexiProjectNavigator.cpp:224
+#: widget/navigator/KexiProjectNavigator.cpp:227
 #, fuzzy
 #| msgid ""
 #| "Exports data from the currently selected table or query data to a file."
 msgid "Exports data from the currently selected table or query to a file."
 msgstr "अभी हाल के चुने गे टेबल या क्वैरी डाटा से डाटा ल एक फाइल मं निर्यात करव"
 
-#: widget/navigator/KexiProjectNavigator.cpp:380
+#: widget/navigator/KexiProjectNavigator.cpp:387
 #, kde-format
 msgid "&Create Object: %1..."
 msgstr "चीज बनाव: %1 (&C)"
 
-#: widget/navigator/KexiProjectNavigator.cpp:386
+#: widget/navigator/KexiProjectNavigator.cpp:393
 msgid "&Create Object..."
 msgstr "चीज बनाव... (&C)"
 
-#: widget/navigator/KexiProjectNavigator.cpp:480
+#: widget/navigator/KexiProjectNavigator.cpp:487
 #, kde-format
 msgctxt "@info Rename object %1:"
 msgid "Rename <resource>%1</resource>:"
 msgstr ""
 
-#: widget/navigator/KexiProjectNavigator.cpp:482
+#: widget/navigator/KexiProjectNavigator.cpp:489
 #, fuzzy
 #| msgid "&Rename"
 msgctxt "@action:button Rename object"
 msgid "Rename"
 msgstr "नाम बदलव (&R)"
 
-#: widget/navigator/KexiProjectNavigator.cpp:492
+#: widget/navigator/KexiProjectNavigator.cpp:499
 #, kde-format
 msgctxt "@title:window Rename Object %1."
 msgid "Rename <resource>%1</resource>"
 msgstr ""
 
-#: widget/navigator/KexiProjectNavigator.cpp:657
+#: widget/navigator/KexiProjectNavigator.cpp:664
 #, kde-format
 msgctxt "@info Message for empty state in project navigator"
 msgid ""
@@ -8846,6 +8921,34 @@ msgid "Moves cursor to new record and allows inserting."
 msgstr "संकेतक ल नवा लकीर मं खिसकाथे  अउ भरव स्वीकारथे ."
 
 #, fuzzy
+#~| msgid "Following problems were found with the data you entered:"
+#~ msgid "Following issues were found with the data you entered:"
+#~ msgstr "डाटा जऊन आप मन भरे हो  ओखर कारन नीचे वाले समस्या मिलिस:"
+
+#, fuzzy
+#~| msgid ""
+#~| "Database %1 already exists.<p>Do you want to replace it with a new one?"
+#~ msgctxt "@info (don't add tags around %1, it's done already)"
+#~ msgid ""
+#~ "Database %1 already exists.<nl/>Do you want to replace it with a new one?"
+#~ msgstr ""
+#~ "डाटाबेस %1 पहिली ही मौजूद हे.<p>का आप मन एला एक नवा, खाली डाटाबेस से बदलना "
+#~ "चाहथो ?"
+
+#~ msgid "Could not create database \"%1\"."
+#~ msgstr "डाटाबेस \"%1\" नइ बना सकिस."
+
+#~ msgid "No tables to import found in data source \"%1\"."
+#~ msgstr "डाटा स्रोत \"%1\" मं आयात करे बर कोनो टेबल नइ."
+
+#, fuzzy
+#~| msgid "Importing CSV Data from <nobr>\"%1\"</nobr> into \"%2\" table..."
+#~ msgid ""
+#~ "Importing CSV Data from <filename>%1</filename> into <resource>%2</"
+#~ "resource> table..."
+#~ msgstr "सीएसवी डाटा ल <nobr>\"%1\"</nobr> मं से टेबल \"%2\" मं आयात करत हे..."
+
+#, fuzzy
 #~| msgid "Source Database Non-Unicode Encoding"
 #~ msgid "Source Database Non-Unicode Character Encoding"
 #~ msgstr "स्रोत डाटाबेस गैर-यूनिकोड एनकोडिंग"
@@ -8920,9 +9023,6 @@ msgstr "संकेतक ल नवा लकीर मं खिसकाथ�
 #~ msgctxt "Unbound Image Box"
 #~ msgid "(unbound)"
 #~ msgstr "(अनबाउन्ड)"
-
-#~ msgid "Table field"
-#~ msgstr "टेबल छेत्र"
 
 #~ msgid "Query column"
 #~ msgstr "क्वैरी खंभा"
@@ -9649,9 +9749,6 @@ msgstr "संकेतक ल नवा लकीर मं खिसकाथ�
 
 #~ msgid "Could not export back to destination database"
 #~ msgstr "गंतव्य डाटाबेस मं वापस निर्यात नइ कर सकिस"
-
-#~ msgid "No tables to export found in data source \"%1\"."
-#~ msgstr "डाटा स्रोत \"%1\" मं आयात करे बर कोनो टेबल नइ."
 
 #~ msgid ""
 #~ "Could not create table in destination \"%1\". Error reading table \"%2\"."
