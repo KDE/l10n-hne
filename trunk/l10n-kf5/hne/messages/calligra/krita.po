@@ -50,7 +50,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-08-16 07:43+0000\n"
+"POT-Creation-Date: 2016-08-17 06:28+0000\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -9277,7 +9277,7 @@ msgstr "पोस्टप्रोसेसिंग"
 
 #. i18n: ectx: property (text), widget (QLineEdit, palettename)
 #: libs/image/kis_psd_layer_style.cpp:99 libs/ui/forms/wdgcustompalette.ui:18
-#: libs/ui/KisDocument.cpp:2264 libs/ui/KisMainWindow.cpp:1021
+#: libs/ui/KisDocument.cpp:2310 libs/ui/KisMainWindow.cpp:1021
 #: libs/ui/KisMainWindow.cpp:1393 libs/ui/KisMainWindow.cpp:1412
 #: libs/ui/kra/kis_kra_saver.cpp:80
 msgid "Unnamed"
@@ -9687,7 +9687,7 @@ msgstr "अग्यात"
 msgid "No store backend"
 msgstr "कोई भंडार बैकएन्ड नइ"
 
-#: libs/odf/KoOdfReadStore.cpp:111 libs/ui/KisDocument.cpp:1331
+#: libs/odf/KoOdfReadStore.cpp:111 libs/ui/KisDocument.cpp:1376
 #, fuzzy, kde-format
 msgid "Could not find %1"
 msgstr "फोटू मं परत जोड़े नइ जा सकिस."
@@ -11337,17 +11337,17 @@ msgstr "पिछोत अंगना"
 #: libs/ui/kis_filter_manager.cc:225 libs/ui/kis_layer_manager.cc:767
 #: libs/ui/KisApplication.cpp:659 libs/ui/KisApplication.cpp:662
 #: libs/ui/KisApplication.cpp:688 libs/ui/KisApplication.cpp:714
-#: libs/ui/KisApplication.cpp:735 libs/ui/KisDocument.cpp:724
-#: libs/ui/KisDocument.cpp:726 libs/ui/KisDocument.cpp:1126
-#: libs/ui/KisDocument.cpp:1172 libs/ui/KisDocument.cpp:1220
-#: libs/ui/KisDocument.cpp:1869 libs/ui/KisDocument.cpp:1872
+#: libs/ui/KisApplication.cpp:735 libs/ui/KisDocument.cpp:770
+#: libs/ui/KisDocument.cpp:772 libs/ui/KisDocument.cpp:1171
+#: libs/ui/KisDocument.cpp:1217 libs/ui/KisDocument.cpp:1265
+#: libs/ui/KisDocument.cpp:1914 libs/ui/KisDocument.cpp:1917
 #: libs/ui/KisImportExportManager.cpp:198
 #: libs/ui/KisImportExportManager.cpp:210
 #: libs/ui/KisImportExportManager.cpp:266 libs/ui/KisMainWindow.cpp:791
 #: libs/ui/KisMainWindow.cpp:865 libs/ui/KisMainWindow.cpp:879
 #: libs/ui/KisMainWindow.cpp:1695 libs/ui/KisMainWindow.cpp:1727
 #: libs/ui/KisMainWindow.cpp:1751 libs/ui/KisMainWindow.cpp:1898
-#: libs/ui/KisMainWindow.cpp:1910 libs/ui/KisRemoteFileFetcher.cpp:57
+#: libs/ui/KisMainWindow.cpp:1910 libs/ui/KisRemoteFileFetcher.cpp:56
 #: libs/ui/KisTemplateCreateDia.cpp:297 libs/ui/KisView.cpp:699
 #: libs/ui/opengl/kis_opengl_canvas2.cpp:590
 #: libs/ui/opengl/kis_opengl_image_textures.cpp:610
@@ -14948,54 +14948,79 @@ msgstr "रंगदानी"
 msgid "Palette %1"
 msgstr "रंगदानी"
 
-#: libs/ui/KisDocument.cpp:677
+#: libs/ui/KisDocument.cpp:675
 #, fuzzy
 msgid "Saving Document"
 msgstr "कागद सहेजव"
 
-#: libs/ui/KisDocument.cpp:724
+#: libs/ui/KisDocument.cpp:722
+#, fuzzy, kde-format
+msgid "Could not rename original file to %1: %2"
+msgstr "फोटू मं परत जोड़े नइ जा सकिस."
+
+#: libs/ui/KisDocument.cpp:730
+#, kde-format
+msgid "Copying the temporary file failed: %1 to %2: %3"
+msgstr ""
+
+#: libs/ui/KisDocument.cpp:735
+#, fuzzy, kde-format
+msgid "Could not remove temporary file %1: %2"
+msgstr "फोटू मं परत जोड़े नइ जा सकिस."
+
+#: libs/ui/KisDocument.cpp:740
+#, fuzzy, kde-format
+msgid "Could not remove saved original file: %1"
+msgstr "फोटू मं परत जोड़े नइ जा सकिस."
+
+#: libs/ui/KisDocument.cpp:746
+#, kde-format
+msgid "The temporary file %1 is gone before we could copy it!"
+msgstr ""
+
+#: libs/ui/KisDocument.cpp:770
 #, fuzzy, kde-format
 msgid ""
 "Could not save\n"
 "%1"
 msgstr "फोटू मं परत जोड़े नइ जा सकिस."
 
-#: libs/ui/KisDocument.cpp:726
+#: libs/ui/KisDocument.cpp:772
 #, fuzzy, kde-format
 msgid ""
 "Could not save %1\n"
 "Reason: %2"
 msgstr "सदिस चयन"
 
-#: libs/ui/KisDocument.cpp:830
+#: libs/ui/KisDocument.cpp:875
 msgid ""
 "The password of this encrypted document is not known. Autosave aborted! "
 "Please save your work manually."
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:833
+#: libs/ui/KisDocument.cpp:878
 msgid "Autosaving..."
 msgstr "अपने अपन सहेजत हे..."
 
-#: libs/ui/KisDocument.cpp:845
+#: libs/ui/KisDocument.cpp:890
 msgid "Error during autosave! Partition full?"
 msgstr "अपने अपन सहेजे के समय गलती! पार्टीसन पूरा भरे हो ?"
 
-#: libs/ui/KisDocument.cpp:914
+#: libs/ui/KisDocument.cpp:959
 msgid "Could not create the file for saving"
 msgstr "सहेजे बर फाइल बना नइ सकिस"
 
-#: libs/ui/KisDocument.cpp:922
+#: libs/ui/KisDocument.cpp:967
 #, fuzzy
 msgid "Saving document..."
 msgstr "कागद सहेजव"
 
-#: libs/ui/KisDocument.cpp:941
+#: libs/ui/KisDocument.cpp:986
 #, kde-format
 msgid "Not able to write '%1'. Partition full?"
 msgstr "'%1' ल लिखे मं अक्छम. पार्टीसन पूरा भरे हो ?"
 
-#: libs/ui/KisDocument.cpp:1110
+#: libs/ui/KisDocument.cpp:1155
 #, kde-format
 msgid ""
 "Malformed URL\n"
@@ -15004,7 +15029,7 @@ msgstr ""
 "गलत URL\n"
 "%1"
 
-#: libs/ui/KisDocument.cpp:1127
+#: libs/ui/KisDocument.cpp:1172
 msgid ""
 "An autosaved file exists for this document.\n"
 "Do you want to open it instead?"
@@ -15012,16 +15037,16 @@ msgstr ""
 "ये कागद बर एक अपने अपन सहेजी गे फाइल मौजूद हे.\n"
 "एखर बदला मा का आप मन एला खोलना चाहू?"
 
-#: libs/ui/KisDocument.cpp:1172
+#: libs/ui/KisDocument.cpp:1217
 #, kde-format
 msgid "File %1 does not exist."
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1207
+#: libs/ui/KisDocument.cpp:1252
 msgid "Opening Document"
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1219
+#: libs/ui/KisDocument.cpp:1264
 #, fuzzy, kde-format
 msgid ""
 "Could not open %2.\n"
@@ -15029,7 +15054,7 @@ msgid ""
 "%3"
 msgstr "फोटू मं परत जोड़े नइ जा सकिस."
 
-#: libs/ui/KisDocument.cpp:1343
+#: libs/ui/KisDocument.cpp:1388
 #, kde-format
 msgid ""
 "Parsing error in %1 at line %2, column %3\n"
@@ -15038,26 +15063,26 @@ msgstr ""
 "%1 मं लकीर %2, खंभा %3 मं पारसिंग गलती\n"
 "गलती संदेस: %4"
 
-#: libs/ui/KisDocument.cpp:1358 libs/ui/KisMainWindow.cpp:791
+#: libs/ui/KisDocument.cpp:1403 libs/ui/KisMainWindow.cpp:791
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr "फाइल %1 अस्तित्व मं नइ हे."
 
-#: libs/ui/KisDocument.cpp:1365
+#: libs/ui/KisDocument.cpp:1410
 #, fuzzy, kde-format
 msgid "%1 is not a file."
 msgstr "परत आकार"
 
-#: libs/ui/KisDocument.cpp:1380
+#: libs/ui/KisDocument.cpp:1425
 msgid "Could not open the file for reading (check read permissions)."
 msgstr "फाइल ल पढ़े बर  खोले नइ जा सकिस (पाठ अनुमति जांचव)."
 
-#: libs/ui/KisDocument.cpp:1391
+#: libs/ui/KisDocument.cpp:1436
 #, fuzzy
 msgid "Could not read the beginning of the file."
 msgstr "सक्रिय चैनल के सेट चुनव."
 
-#: libs/ui/KisDocument.cpp:1421
+#: libs/ui/KisDocument.cpp:1466
 #, kde-format
 msgid ""
 "parsing error in the main document at line %1, column %2\n"
@@ -15066,74 +15091,74 @@ msgstr ""
 "मुख्य कागद के लकीर %1 , खंभा %2 मं पारसिंग गलती\n"
 "गलती संदेस: %3"
 
-#: libs/ui/KisDocument.cpp:1437
+#: libs/ui/KisDocument.cpp:1482
 #, fuzzy, kde-format
 msgid "Not a valid Krita file: %1"
 msgstr "परत आकार"
 
-#: libs/ui/KisDocument.cpp:1502
+#: libs/ui/KisDocument.cpp:1547
 msgid "Invalid document: no file 'maindoc.xml'."
 msgstr "अवैध कागद: कोनो फाइल 'maindoc.xml' नइ."
 
-#: libs/ui/KisDocument.cpp:1559 libs/ui/KisDocument.cpp:1567
+#: libs/ui/KisDocument.cpp:1604 libs/ui/KisDocument.cpp:1612
 msgid "Krita does not support the OpenDocument file format."
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1676 libs/ui/KisDocument.cpp:1795
+#: libs/ui/KisDocument.cpp:1721 libs/ui/KisDocument.cpp:1840
 #, fuzzy
 msgid "Unknown error."
 msgstr "अग्यात"
 
-#: libs/ui/KisDocument.cpp:1770
+#: libs/ui/KisDocument.cpp:1815
 msgid "The format is not supported or the file is corrupted"
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1776
+#: libs/ui/KisDocument.cpp:1821
 #, kde-format
 msgid "The file is too new for this version of Krita (%1)."
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1781
+#: libs/ui/KisDocument.cpp:1826
 msgid "The file has no layers."
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1806
+#: libs/ui/KisDocument.cpp:1851
 msgid "The file does not contain an image."
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1869
+#: libs/ui/KisDocument.cpp:1914
 #, fuzzy, kde-format
 msgid ""
 "Could not open\n"
 "%1"
 msgstr "फोटू मं परत जोड़े नइ जा सकिस."
 
-#: libs/ui/KisDocument.cpp:1872
+#: libs/ui/KisDocument.cpp:1917
 #, fuzzy, kde-format
 msgid ""
 "Could not open %1\n"
 "Reason: %2"
 msgstr "फोटू मं परत जोड़े नइ जा सकिस."
 
-#: libs/ui/KisDocument.cpp:1936
+#: libs/ui/KisDocument.cpp:1981
 #, fuzzy
 msgid "a word processing"
 msgstr "पोस्टप्रोसेसिंग"
 
-#: libs/ui/KisDocument.cpp:1937
+#: libs/ui/KisDocument.cpp:1982
 msgid "a spreadsheet"
 msgstr "स्प्रेडसीट"
 
-#: libs/ui/KisDocument.cpp:1938
+#: libs/ui/KisDocument.cpp:1983
 #, fuzzy
 msgid "a presentation"
 msgstr "दिसा"
 
-#: libs/ui/KisDocument.cpp:1939
+#: libs/ui/KisDocument.cpp:1984
 msgid "a chart"
 msgstr "चार्ट"
 
-#: libs/ui/KisDocument.cpp:1940
+#: libs/ui/KisDocument.cpp:1985
 msgid "a drawing"
 msgstr "ड्राइंग"
 
@@ -15153,87 +15178,87 @@ msgstr ""
 msgid "XMP"
 msgstr ""
 
-#: libs/ui/KisImportExportFilter.cpp:87
+#: libs/ui/KisImportExportFilter.cpp:86
 #, fuzzy
 msgid "Could not create the filter plugin"
 msgstr "सहेजे बर फाइल बना नइ सकिस"
 
-#: libs/ui/KisImportExportFilter.cpp:90
+#: libs/ui/KisImportExportFilter.cpp:89
 #, fuzzy
 msgid "Could not create the output document"
 msgstr "सहेजे बर फाइल बना नइ सकिस"
 
-#: libs/ui/KisImportExportFilter.cpp:93
+#: libs/ui/KisImportExportFilter.cpp:92
 msgid "File not found"
 msgstr "फाइल नइ मिलिस"
 
-#: libs/ui/KisImportExportFilter.cpp:96
+#: libs/ui/KisImportExportFilter.cpp:95
 msgid "Cannot create storage"
 msgstr "भंडार तैयार नइ कर सके"
 
-#: libs/ui/KisImportExportFilter.cpp:99
+#: libs/ui/KisImportExportFilter.cpp:98
 msgid "Bad MIME type"
 msgstr "खराब माइम किसिम"
 
-#: libs/ui/KisImportExportFilter.cpp:102
+#: libs/ui/KisImportExportFilter.cpp:101
 msgid "Error in embedded document"
 msgstr "भीतर मं बने कागद मं गलती"
 
-#: libs/ui/KisImportExportFilter.cpp:105
+#: libs/ui/KisImportExportFilter.cpp:104
 msgid "Format not recognized"
 msgstr "फार्मेट पहिचान नइ सकिस"
 
-#: libs/ui/KisImportExportFilter.cpp:108
+#: libs/ui/KisImportExportFilter.cpp:107
 #, fuzzy
 msgid "Not implemented"
 msgstr "भरा नइ"
 
-#: libs/ui/KisImportExportFilter.cpp:111
+#: libs/ui/KisImportExportFilter.cpp:110
 msgid "Parsing error"
 msgstr "पारसिंग गलती"
 
-#: libs/ui/KisImportExportFilter.cpp:114
+#: libs/ui/KisImportExportFilter.cpp:113
 msgid "Document is password protected"
 msgstr "कागद पासवर्ड से संरक्छित हे"
 
-#: libs/ui/KisImportExportFilter.cpp:117
+#: libs/ui/KisImportExportFilter.cpp:116
 #, fuzzy
 msgid "Invalid file format"
 msgstr "फोटू आकार"
 
-#: libs/ui/KisImportExportFilter.cpp:124
+#: libs/ui/KisImportExportFilter.cpp:123
 #, fuzzy
 msgid "Internal error"
 msgstr "इंटीग्रल चरन:"
 
-#: libs/ui/KisImportExportFilter.cpp:127
+#: libs/ui/KisImportExportFilter.cpp:126
 #, fuzzy
 msgid "Out of memory"
 msgstr "गेमुट से बाहिर"
 
-#: libs/ui/KisImportExportFilter.cpp:130
+#: libs/ui/KisImportExportFilter.cpp:129
 #, fuzzy
 msgid "Empty Filter Plugin"
 msgstr "फिल्टर फिर से लगाव"
 
-#: libs/ui/KisImportExportFilter.cpp:133
+#: libs/ui/KisImportExportFilter.cpp:132
 msgid "Trying to load into the wrong kind of document"
 msgstr ""
 
-#: libs/ui/KisImportExportFilter.cpp:136
+#: libs/ui/KisImportExportFilter.cpp:135
 msgid "Failed to download remote file"
 msgstr ""
 
-#: libs/ui/KisImportExportFilter.cpp:139
+#: libs/ui/KisImportExportFilter.cpp:138
 msgid "Cancelled by user"
 msgstr ""
 
-#: libs/ui/KisImportExportFilter.cpp:143
+#: libs/ui/KisImportExportFilter.cpp:142
 #, fuzzy
 msgid "Unknown file type"
 msgstr "%1 (अग्यात फाइल किसिम)"
 
-#: libs/ui/KisImportExportFilter.cpp:150
+#: libs/ui/KisImportExportFilter.cpp:149
 #, fuzzy
 msgid "Unknown error"
 msgstr "अग्यात"
