@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-09-12 06:56+0000\n"
+"POT-Creation-Date: 2016-09-13 07:50+0000\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -6241,7 +6241,7 @@ msgctxt "Convert image bit depth"
 msgid "Convert Depth"
 msgstr "बदलव"
 
-#: libs/dimg/filters/dimgfiltermanager.cpp:424
+#: libs/dimg/filters/dimgfiltermanager.cpp:423
 #, fuzzy
 msgid "Unknown filter"
 msgstr "अग्यात गलती"
@@ -7383,7 +7383,7 @@ msgstr "फोटोग्राफ सोर कम करे के सेट�
 msgid "Raw Conversion"
 msgstr "रंग जगह"
 
-#: libs/dimg/filters/redeye/redeyecorrectionfilter.h:60
+#: libs/dimg/filters/redeye/redeyecorrectionfilter.h:62
 #, fuzzy
 #| msgid "Red-Eye Correction Tool"
 msgid "RedEye Correction Filter"
@@ -7396,9 +7396,8 @@ msgstr "स्तरः"
 
 #: libs/dimg/filters/redeye/redeyecorrectionsettings.cpp:82
 #, fuzzy
-#| msgid "Set here the level of the effect."
-msgid "Set here the red level you want to correct."
-msgstr "इहां प्रभाव स्तर सेट करव."
+msgid "Set here the reducing level of red to the average of blue and green."
+msgstr "डिजिटल रिप्रेजेंटेसन बनाए के तारीक़ आज के सेट करव"
 
 #: libs/dimg/filters/sharp/refocusfilter.h:58
 #: libs/dimg/filters/sharp/sharpsettings.cpp:144
@@ -14137,6 +14136,7 @@ msgid "Photograph"
 msgstr "फोटो फ्लैस"
 
 #: libs/widgets/metadata/metadatawidget.cpp:139
+#: utilities/advancedrename/parser/options/dateoption.cpp:61
 #: utilities/queuemanager/tools/transform/rotate.cpp:103
 #, fuzzy
 msgid "Custom"
@@ -15408,6 +15408,26 @@ msgctxt "date format settings"
 msgid "format settings"
 msgstr "सेटिंग"
 
+#: utilities/advancedrename/parser/options/dateoption.cpp:57
+#: utilities/metadataedit/exif/exifdevice.cpp:302
+msgid "Standard"
+msgstr "मानक"
+
+#: utilities/advancedrename/parser/options/dateoption.cpp:58
+#, fuzzy
+msgid "ISO"
+msgstr "आईएसओ"
+
+#: utilities/advancedrename/parser/options/dateoption.cpp:59
+#: utilities/queuemanager/tools/decorate/watermark.cpp:162
+#, fuzzy
+msgid "Text"
+msgstr "संरचना:"
+
+#: utilities/advancedrename/parser/options/dateoption.cpp:60
+msgid "Unix Time Stamp"
+msgstr ""
+
 #: utilities/advancedrename/parser/options/dateoption.cpp:121
 #, fuzzy
 msgctxt "Get date information from the image"
@@ -15424,6 +15444,11 @@ msgstr "फोटू तारीक"
 msgid "Enter custom format"
 msgstr ""
 
+#: utilities/advancedrename/parser/options/dateoption.cpp:240
+#, fuzzy
+msgid "example: "
+msgstr "नाम:"
+
 #: utilities/advancedrename/parser/options/dateoption.cpp:247
 #, fuzzy
 msgid "Date && Time..."
@@ -15439,9 +15464,6 @@ msgid "Date and time (standard format)"
 msgstr ""
 
 #: utilities/advancedrename/parser/options/dateoption.cpp:252
-msgid "Date and time (||key|| = Standard|ISO|UnixTimeStamp|Text)"
-msgstr ""
-
 #: utilities/advancedrename/parser/options/dateoption.cpp:253
 #: utilities/geolocation/editor/items/gpsimageitem.cpp:503
 #, fuzzy
@@ -24197,10 +24219,6 @@ msgstr "इहां भाखा सामान ल चुनव."
 msgid "Scene capture type:"
 msgstr "सीन कैप्चर किसिम:"
 
-#: utilities/metadataedit/exif/exifdevice.cpp:302
-msgid "Standard"
-msgstr "मानक"
-
 #: utilities/metadataedit/exif/exifdevice.cpp:305
 #: utilities/metadataedit/xmp/xmpproperties.cpp:87
 msgid "Night scene"
@@ -27591,11 +27609,6 @@ msgstr ""
 #, fuzzy
 msgid "Watermark type:"
 msgstr "कैमरा जोड़व..."
-
-#: utilities/queuemanager/tools/decorate/watermark.cpp:162
-#, fuzzy
-msgid "Text"
-msgstr "संरचना:"
 
 #: utilities/queuemanager/tools/decorate/watermark.cpp:169
 #, fuzzy
@@ -31982,6 +31995,11 @@ msgstr "पूरा स्क्रीन मोड से बाहिर ह�
 msgctxt "%1 is the screen number (0, 1, ...)"
 msgid "Screen %1"
 msgstr "हराः"
+
+#, fuzzy
+#~| msgid "Set here the level of the effect."
+#~ msgid "Set here the red level you want to correct."
+#~ msgstr "इहां प्रभाव स्तर सेट करव."
 
 #, fuzzy
 #~| msgid "Rotation:"
