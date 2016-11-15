@@ -1,0 +1,718 @@
+# translation of libmailtransport.po to Hindi
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ravishankar Shrivastava <raviratlami@yahoo.com>, 2008.
+# Ravishankar Shrivastava <raviratlami@aol.in>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: libmailtransport\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2016-08-22 07:10+0000\n"
+"PO-Revision-Date: 2009-02-28 22:34+0530\n"
+"Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
+"Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 0.2\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: addtransportdialog.cpp:112
+msgid "Create Outgoing Account"
+msgstr ""
+
+#: addtransportdialog.cpp:115
+msgctxt "create and configure a mail transport"
+msgid "Create and Configure"
+msgstr ""
+
+#. i18n: ectx: label, entry (id), group (Transport $(transportId))
+#: mailtransport.kcfg:12
+msgid "Unique identifier"
+msgstr "बेजोड़ पहिचान"
+
+#. i18n: ectx: label, entry (name), group (Transport $(transportId))
+#: mailtransport.kcfg:16
+#, fuzzy
+msgid "User-visible transport name"
+msgstr "कमइया ल दिखाई दे वाला ट्रांसपोर्ट नाम"
+
+#. i18n: ectx: whatsthis, entry (name), group (Transport $(transportId))
+#: mailtransport.kcfg:17
+msgid "The name that will be used when referring to this server."
+msgstr "ये सर्वर के उल्लेख करत समय जऊन नाम उपयोग मं ले जाही."
+
+#: mailtransport.kcfg:18
+#, fuzzy
+#| msgid "&Name:"
+msgid "Unnamed"
+msgstr "नाम: (&N)"
+
+#. i18n: ectx: label, entry (type), group (Transport $(transportId))
+#: mailtransport.kcfg:23
+msgid "SMTP Server"
+msgstr "एसएमटीपी सर्वर"
+
+#. i18n: ectx: label, entry (type), group (Transport $(transportId))
+#: mailtransport.kcfg:26
+msgid "Akonadi Resource"
+msgstr ""
+
+#. i18n: ectx: label, entry (type), group (Transport $(transportId))
+#: mailtransport.kcfg:29
+msgid "Transport type"
+msgstr "ट्रांसपोर्ट किसिम"
+
+#. i18n: ectx: label, entry (host), group (Transport $(transportId))
+#: mailtransport.kcfg:33
+msgid "Host name of the server"
+msgstr "सर्वर के होस्टनाम"
+
+#. i18n: ectx: whatsthis, entry (host), group (Transport $(transportId))
+#: mailtransport.kcfg:34
+msgid "The domain name or numerical address of the SMTP server."
+msgstr "डोमेन नाम या एसएमटीपी सर्वर के संख्यात्मक पता."
+
+#. i18n: ectx: label, entry (port), group (Transport $(transportId))
+#: mailtransport.kcfg:37
+msgid "Port number of the server"
+msgstr "सर्वर के पोर्ट नंबर"
+
+#. i18n: ectx: whatsthis, entry (port), group (Transport $(transportId))
+#: mailtransport.kcfg:38
+msgid ""
+"The port number that the SMTP server is listening on. The default port is 25."
+msgstr "पोर्ट नंबर जऊन मं एसएमटीपी सर्वर सुनथे . डिफाल्ट पोर्ट हे 25."
+
+#. i18n: ectx: label, entry (userName), group (Transport $(transportId))
+#: mailtransport.kcfg:42
+msgid "User name needed for login"
+msgstr "लागिन बर जरूरी कमइया के नाम"
+
+#. i18n: ectx: whatsthis, entry (userName), group (Transport $(transportId))
+#: mailtransport.kcfg:43
+msgid "The user name to send to the server for authorization."
+msgstr "अनुमोदन बर सर्वर ल भेजे जाय वाले कमइया नाम."
+
+#. i18n: ectx: label, entry (precommand), group (Transport $(transportId))
+#: mailtransport.kcfg:46
+msgid "Command to execute before sending a mail"
+msgstr "ईमेल भेजे से पहिली चलाय जाय वाला कमांड"
+
+#. i18n: ectx: whatsthis, entry (precommand), group (Transport $(transportId))
+#: mailtransport.kcfg:47
+msgid ""
+"A command to run locally, prior to sending email. This can be used to set up "
+"SSH tunnels, for example. Leave it empty if no command should be run."
+msgstr ""
+
+#. i18n: ectx: label, entry (requiresAuthentication), group (Transport $(transportId))
+#: mailtransport.kcfg:50
+msgid "Server requires authentication"
+msgstr "सर्वर ल प्रमानीकरन के जरूरत हे"
+
+#. i18n: ectx: whatsthis, entry (requiresAuthentication), group (Transport $(transportId))
+#: mailtransport.kcfg:51
+msgid ""
+"Check this option if your SMTP server requires authentication before "
+"accepting mail. This is known as 'Authenticated SMTP' or simply ASMTP."
+msgstr ""
+
+#. i18n: ectx: label, entry (storePassword), group (Transport $(transportId))
+#: mailtransport.kcfg:55
+msgid "Store password"
+msgstr "पासवर्ड भंडारित करव"
+
+#. i18n: ectx: whatsthis, entry (storePassword), group (Transport $(transportId))
+#: mailtransport.kcfg:58
+msgid ""
+"Check this option to have your password stored.\n"
+"If KWallet is available the password will be stored there, which is "
+"considered safe.\n"
+"However, if KWallet is not available, the password will be stored in the "
+"configuration file. The password is stored in an obfuscated format, but "
+"should not be considered secure from decryption efforts if access to the "
+"configuration file is obtained."
+msgstr ""
+
+#. i18n: ectx: label, entry (encryption), group (Transport $(transportId))
+#: mailtransport.kcfg:62
+msgid "Encryption method used for communication"
+msgstr "संचार बर परयोग मं लिए जा रहे एनक्रिप्सन के विधि"
+
+#. i18n: ectx: label, entry (encryption), group (Transport $(transportId))
+#: mailtransport.kcfg:65
+msgid "No encryption"
+msgstr "कोई एनक्रिप्सन नइ"
+
+#. i18n: ectx: label, entry (encryption), group (Transport $(transportId))
+#: mailtransport.kcfg:68
+msgid "SSL encryption"
+msgstr "एसएसएल एनक्रिप्सन"
+
+#. i18n: ectx: label, entry (encryption), group (Transport $(transportId))
+#: mailtransport.kcfg:71
+msgid "TLS encryption"
+msgstr "टीएलएस एनक्रिप्सन"
+
+#. i18n: ectx: label, entry (authenticationType), group (Transport $(transportId))
+#: mailtransport.kcfg:76
+msgid "Authentication method"
+msgstr "प्रमानीकरन विधि"
+
+#. i18n: ectx: label, entry (specifyHostname), group (Transport $(transportId))
+#. i18n: ectx: label, entry (localHostname), group (Transport $(transportId))
+#. i18n: ectx: label, entry (specifySenderOverwriteAddress), group (Transport $(transportId))
+#. i18n: ectx: label, entry (senderOverwriteAddress), group (Transport $(transportId))
+#: mailtransport.kcfg:92 mailtransport.kcfg:97 mailtransport.kcfg:101
+#: mailtransport.kcfg:106
+msgid "<!-- TODO -->"
+msgstr "<!-- काम-सूची -->"
+
+#. i18n: ectx: whatsthis, entry (specifyHostname), group (Transport $(transportId))
+#: mailtransport.kcfg:93
+msgid ""
+"Check this option to use a custom hostname when identifying to the mail "
+"server. This is useful when your system's hostname may not be set correctly "
+"or to mask your system's true hostname."
+msgstr ""
+
+#. i18n: ectx: whatsthis, entry (localHostname), group (Transport $(transportId))
+#: mailtransport.kcfg:98
+msgid "Enter the hostname that should be used when identifying to the server."
+msgstr "होस्टनाम भरव जेखर परयोग तब करे जाही जब सर्वर के पहिचान करे जाही."
+
+#. i18n: ectx: whatsthis, entry (specifySenderOverwriteAddress), group (Transport $(transportId))
+#: mailtransport.kcfg:102
+msgid ""
+"Check this option to use a custom sender address when identifying to the "
+"mail server. If not checked, the address from the identity is used."
+msgstr ""
+
+#. i18n: ectx: whatsthis, entry (senderOverwriteAddress), group (Transport $(transportId))
+#: mailtransport.kcfg:107
+#, fuzzy
+#| msgid ""
+#| "Enter the hostname that should be used when identifying to the server."
+msgid ""
+"Enter the address that should be used to overwrite the default sender "
+"address."
+msgstr "होस्टनाम भरव जेखर परयोग तब करे जाही जब सर्वर के पहिचान करे जाही."
+
+#: messagequeuejob.cpp:78
+msgid "Empty message."
+msgstr ""
+
+#: messagequeuejob.cpp:86
+msgid "Message has no recipients."
+msgstr ""
+
+#: messagequeuejob.cpp:94
+msgid "Message has invalid transport."
+msgstr ""
+
+#: messagequeuejob.cpp:102
+msgid "Message has invalid sent-mail folder."
+msgstr ""
+
+#: precommandjob.cpp:79
+msgid "Executing precommand"
+msgstr "प्री-कमांड चलात हे"
+
+#: precommandjob.cpp:80
+#, kde-format
+msgid "Executing precommand '%1'."
+msgstr "प्री-कमांड '%1' चलाय जात हे."
+
+#: precommandjob.cpp:87
+#, fuzzy, kde-format
+#| msgid "Could not execute precommand '%1'."
+msgid "Unable to start precommand '%1'."
+msgstr "प्री-कमांड '%1' चला नइ सकिस."
+
+#: precommandjob.cpp:89
+#, fuzzy, kde-format
+#| msgid "Executing precommand '%1'."
+msgid "Error while executing precommand '%1'."
+msgstr "प्री-कमांड '%1' चलाय जात हे."
+
+#: precommandjob.cpp:105
+msgid "The precommand crashed."
+msgstr "प्रीकमांड क्रैस होइस."
+
+#: precommandjob.cpp:108
+#, kde-format
+msgid "The precommand exited with code %1."
+msgstr "कोड %1 के साथ प्रीकमांड बाहिर होइस."
+
+#: smtpconfigwidget.cpp:269
+msgid ""
+"Failed to check capabilities. Please verify port and authentication mode."
+msgstr ""
+
+#: smtpconfigwidget.cpp:269
+msgid "Check Capabilities Failed"
+msgstr ""
+
+#: smtpjob.cpp:183
+msgid "You need to supply a username and a password to use this SMTP server."
+msgstr "ये एसएमटीपी सर्वर के उपयोग करे बर आप मन ल एक कमइया नाम अउ पासवर्ड देना होही."
+
+#: smtpjob.cpp:241
+msgid "Unable to create SMTP job."
+msgstr "एसएमटीपी काम बनाए मं अक्छम."
+
+#: transport.cpp:95
+#, kde-format
+msgctxt ""
+"%1: name; %2: number appended to it to make it unique among a list of names"
+msgid "%1 #%2"
+msgstr "%1 #%2"
+
+#: transport.cpp:143
+msgctxt "Authentication method"
+msgid "Clear text"
+msgstr ""
+
+#: transport.cpp:147
+msgctxt "Authentication method"
+msgid "Anonymous"
+msgstr ""
+
+#: transport.cpp:185
+msgctxt "An unknown transport type"
+msgid "Unknown"
+msgstr ""
+
+#: transport.cpp:239
+#, kde-format
+msgid ""
+"KWallet is not available. It is strongly recommended to use KWallet for "
+"managing your passwords.\n"
+"However, the password can be stored in the configuration file instead. The "
+"password is stored in an obfuscated format, but should not be considered "
+"secure from decryption efforts if access to the configuration file is "
+"obtained.\n"
+"Do you want to store the password for server '%1' in the configuration file?"
+msgstr ""
+
+#: transport.cpp:247
+msgid "KWallet Not Available"
+msgstr "केवालेट नइ मिलत"
+
+#: transport.cpp:248
+msgid "Store Password"
+msgstr "पासवर्ड भंडारित करव"
+
+#: transport.cpp:249
+msgid "Do Not Store Password"
+msgstr "पासवर्ड भंडारित नइ करव"
+
+#: transportconfigdialog.cpp:95
+#, fuzzy
+msgid "This outgoing account cannot be configured."
+msgstr "ईमेल ट्रांसपोर्ट \"%1\" ठीक तरीके से कान्फिगर नइ होय हे."
+
+#: transportjob.cpp:124
+#, fuzzy, kde-format
+msgid "The outgoing account \"%1\" is not correctly configured."
+msgstr "ईमेल ट्रांसपोर्ट \"%1\" ठीक तरीके से कान्फिगर नइ होय हे."
+
+#: transportlistview.cpp:41
+msgctxt "@title:column email transport name"
+msgid "Name"
+msgstr "नांव"
+
+#: transportlistview.cpp:42
+msgctxt "@title:column email transport type"
+msgid "Type"
+msgstr "किसिम"
+
+#: transportlistview.cpp:113
+msgctxt "@label the default mail transport"
+msgid " (Default)"
+msgstr "(डिफाल्ट)"
+
+#: transportmanagementwidget.cpp:136
+#, kde-format
+msgid "Do you want to remove outgoing account '%1'?"
+msgstr ""
+
+#: transportmanagementwidget.cpp:138
+msgid "Remove outgoing account?"
+msgstr ""
+
+#: transportmanagementwidget.cpp:160
+#, fuzzy
+#| msgid "A&dd..."
+msgid "Add..."
+msgstr "जोड़व... (&d)"
+
+#: transportmanagementwidget.cpp:163
+#, fuzzy
+#| msgid "&Modify..."
+msgid "Modify..."
+msgstr "सुधारव... (&M)"
+
+#: transportmanagementwidget.cpp:164
+#, fuzzy
+#| msgid "&Name:"
+msgid "Rename"
+msgstr "नाम: (&N)"
+
+#: transportmanagementwidget.cpp:165
+#, fuzzy
+#| msgid "R&emove"
+msgid "Remove"
+msgstr "मेटाव (&e)"
+
+#: transportmanagementwidget.cpp:168
+#, fuzzy
+#| msgid "Set Default"
+msgid "Set as Default"
+msgstr "डिफाल्ट सेट करव"
+
+#: transportmanager.cpp:251
+msgid "Default Transport"
+msgstr "डिफाल्ट ट्रांसपोर्ट"
+
+#: transportmanager.cpp:271
+msgid "You must create an outgoing account before sending."
+msgstr ""
+
+#: transportmanager.cpp:272
+msgid "Create Account Now?"
+msgstr ""
+
+#: transportmanager.cpp:273
+msgid "Create Account Now"
+msgstr ""
+
+#: transportmanager.cpp:300
+msgid "Configure account"
+msgstr ""
+
+#: transportmanager.cpp:499
+msgctxt "@option SMTP transport"
+msgid "SMTP"
+msgstr "एसएमटीपी"
+
+#: transportmanager.cpp:500
+msgid "An SMTP server on the Internet"
+msgstr ""
+
+#: transportmanager.cpp:721
+msgid ""
+"The following mail transports store their passwords in an unencrypted "
+"configuration file.\n"
+"For security reasons, please consider migrating these passwords to KWallet, "
+"the KDE Wallet management tool,\n"
+"which stores sensitive data for you in a strongly encrypted file.\n"
+"Do you want to migrate your passwords to KWallet?"
+msgstr ""
+
+#: transportmanager.cpp:727
+msgid "Question"
+msgstr "प्रस्न"
+
+#: transportmanager.cpp:728
+msgid "Migrate"
+msgstr "माइग्रेट करव"
+
+#: transportmanager.cpp:728
+msgid "Keep"
+msgstr "रखव"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AddTransportDialog)
+#: ui/addtransportdialog.ui:20
+#, fuzzy
+#| msgid "Transport Type"
+msgid "Step One: Select Transport Type"
+msgstr "ट्रांसपोर्ट किसिम"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/addtransportdialog.ui:41
+#, fuzzy
+#| msgid "&Name:"
+msgctxt "The name of a mail transport"
+msgid "Name:"
+msgstr "नाम: (&N)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, setDefault)
+#: ui/addtransportdialog.ui:51
+msgid "Make this the default outgoing account."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, descLabel)
+#: ui/addtransportdialog.ui:64
+msgid "Select an account type from the list below:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QTreeWidget, typeListView)
+#: ui/addtransportdialog.ui:84
+#, fuzzy
+#| msgctxt "@title:column email transport type"
+#| msgid "Type"
+msgid "Type"
+msgstr "किसिम"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, typeListView)
+#: ui/addtransportdialog.ui:89
+#, fuzzy
+#| msgid "No encryption"
+msgid "Description"
+msgstr "कोई एनक्रिप्सन नइ"
+
+#. i18n: ectx: attribute (title), widget (QWidget, smptTab)
+#: ui/smtpsettings.ui:34
+#, fuzzy
+msgctxt "general smtp settings"
+msgid "General"
+msgstr "सामान्य (&G)"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ui/smtpsettings.ui:40
+msgid "Account Information"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, hostLabel)
+#: ui/smtpsettings.ui:46
+msgid "Outgoing &mail server:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, usernameLabel)
+#: ui/smtpsettings.ui:69
+msgid "&Login:"
+msgstr "लागइनः (&L)"
+
+#. i18n: ectx: property (text), widget (QLabel, passwordLabel)
+#: ui/smtpsettings.ui:95
+msgid "P&assword:"
+msgstr "पासवर्डः (&a)"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, password)
+#: ui/smtpsettings.ui:111
+msgid "The password to send to the server for authorization."
+msgstr "अनुमोदन बर सर्वर ल भेजिस जाय वाला पासवर्ड."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_storePassword)
+#: ui/smtpsettings.ui:127
+msgid "&Store SMTP password"
+msgstr "एसएमटीपी पासवर्ड भंडारित करव (&S)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_requiresAuthentication)
+#: ui/smtpsettings.ui:134
+msgid "Server &requires authentication"
+msgstr "सर्वर ल प्रमानीकरन के जरूरत हे (&r)"
+
+#. i18n: ectx: attribute (title), widget (QWidget, advancedTab)
+#: ui/smtpsettings.ui:158
+#, fuzzy
+msgctxt "advanced smtp settings"
+msgid "Advanced"
+msgstr "विस्तृत (&A)"
+
+#. i18n: ectx: property (title), widget (QGroupBox, encryptionGroup)
+#: ui/smtpsettings.ui:167
+msgid "Connection Settings"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, checkCapabilities)
+#: ui/smtpsettings.ui:180
+msgid "Auto Detect"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, noAuthPossible)
+#: ui/smtpsettings.ui:214
+msgid "This server does not support authentication"
+msgstr "सर्वर प्रमानीकरन समर्थित नइ करथे "
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/smtpsettings.ui:229
+#, fuzzy
+#| msgid "Encryption"
+msgid "Encryption:"
+msgstr "एनक्रिप्सन"
+
+#. i18n: ectx: property (text), widget (QRadioButton, encryptionNone)
+#: ui/smtpsettings.ui:238
+msgid "&None"
+msgstr "कुछ नइ (&N)"
+
+#. i18n: ectx: property (text), widget (QRadioButton, encryptionSsl)
+#: ui/smtpsettings.ui:245
+msgid "&SSL"
+msgstr "एसएसएल (&S)"
+
+#. i18n: ectx: property (text), widget (QRadioButton, encryptionTls)
+#: ui/smtpsettings.ui:252
+msgid "&TLS"
+msgstr "टीएलएस (&T)"
+
+#. i18n: ectx: property (text), widget (QLabel, portLabel)
+#: ui/smtpsettings.ui:261
+msgid "&Port:"
+msgstr "पोर्टः (&P)"
+
+#. i18n: ectx: property (text), widget (QLabel, authLabel)
+#: ui/smtpsettings.ui:287
+#, fuzzy
+#| msgid "Authentication method"
+msgid "Authentication:"
+msgstr "प्रमानीकरन विधि"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: ui/smtpsettings.ui:302
+msgid "SMTP Settings"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_specifyHostname)
+#: ui/smtpsettings.ui:308
+msgid "Sen&d custom hostname to server"
+msgstr "सर्वर ल मनमाफिक होस्टनाम भेजव (&d)"
+
+#. i18n: ectx: property (text), widget (QLabel, hostnameLabel)
+#: ui/smtpsettings.ui:318
+#, fuzzy
+#| msgid "&Host:"
+msgid "Hostna&me:"
+msgstr "होस्टः (&H)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_specifySenderOverwriteAddress)
+#: ui/smtpsettings.ui:341
+msgid "Use custom sender address"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ui/smtpsettings.ui:351
+msgid "Sender Address:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, precommandLabel)
+#: ui/smtpsettings.ui:368
+msgid "Precommand:"
+msgstr "प्री-कमांड:"
+
+#. i18n: ectx: property (text), widget (QPushButton, removeButton)
+#: ui/transportmanagementwidget.ui:17
+#, fuzzy
+#| msgid "R&emove"
+msgid "Remo&ve"
+msgstr "मेटाव (&e)"
+
+#. i18n: ectx: property (text), widget (QPushButton, defaultButton)
+#: ui/transportmanagementwidget.ui:24
+#, fuzzy
+#| msgid "Set Default"
+msgid "&Set as Default"
+msgstr "डिफाल्ट सेट करव"
+
+#. i18n: ectx: property (text), widget (QPushButton, addButton)
+#: ui/transportmanagementwidget.ui:51
+msgid "A&dd..."
+msgstr "जोड़व... (&d)"
+
+#. i18n: ectx: property (text), widget (QPushButton, renameButton)
+#: ui/transportmanagementwidget.ui:58
+#, fuzzy
+#| msgid "&Name:"
+msgid "&Rename"
+msgstr "नाम: (&N)"
+
+#. i18n: ectx: property (text), widget (QPushButton, editButton)
+#: ui/transportmanagementwidget.ui:65
+msgid "&Modify..."
+msgstr "सुधारव... (&M)"
+
+#~ msgid "Hos&tname:"
+#~ msgstr "होस्ट-नामः (&t)"
+
+#~ msgid "Local sendmail"
+#~ msgstr "लोकल सेंडमेल"
+
+#~ msgid "Failed to execute mailer program %1"
+#~ msgstr "मेलर प्रोग्राम %1 ल चलाय मं फेल"
+
+#~ msgid "Sendmail exited abnormally."
+#~ msgstr "सेंडमेल असादा रूप से बाहिर होइस."
+
+#~ msgid "Sendmail exited abnormally: %1"
+#~ msgstr "सेंडमेल असादा रूप से बाहिर होइस: %1"
+
+#~ msgctxt "@option sendmail transport"
+#~ msgid "Sendmail"
+#~ msgstr "सेंडमेल"
+
+#, fuzzy
+#~| msgid "Local sendmail"
+#~ msgid "A local sendmail installation"
+#~ msgstr "लोकल सेंडमेल"
+
+#, fuzzy
+#~| msgid "Choose sendmail Location"
+#~ msgid "Sendmail &Location:"
+#~ msgstr "सेंडमेल जगह चुनव"
+
+#~ msgid "Check &What the Server Supports"
+#~ msgstr "जांचव कि सर्वर के समर्थित करथे  (&W)"
+
+#~ msgid "Authentication Method"
+#~ msgstr "प्रमानीकरन विधि"
+
+#~ msgid "&LOGIN"
+#~ msgstr "लागिन (&L)"
+
+#~ msgid "&PLAIN"
+#~ msgstr "सादा (&P)"
+
+#~ msgid "CRAM-MD&5"
+#~ msgstr "CRAM-MD&5"
+
+#~ msgid "&DIGEST-MD5"
+#~ msgstr "&DIGEST-MD5"
+
+#~ msgid "&GSSAPI"
+#~ msgstr "जीएसएसएपीआई (&G)"
+
+#~ msgid "&NTLM"
+#~ msgstr "एनटीएलएम (&N)"
+
+#~ msgid "Transport: Sendmail"
+#~ msgstr "हस्तांतरनः सेंडमेल"
+
+#~ msgid "&Location:"
+#~ msgstr "जगहः (&L)"
+
+#~ msgid "Choos&e..."
+#~ msgstr "चुनव... (&e)"
+
+#~ msgid "Transport: SMTP"
+#~ msgstr "परिवहनः एसएमटीपी"
+
+#~ msgid "1"
+#~ msgstr "1"
+
+#~ msgid "Use Sendmail"
+#~ msgstr "सेंडमेल उपयोग करव"
+
+#~ msgid "Only local files allowed."
+#~ msgstr "सिरिफ लोकल फाइल मन ल ही स्वीकार."
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Transport"
+#~ msgstr "हस्तांतरन जोड़व"
+
+#~ msgctxt "@title:window"
+#~ msgid "Modify Transport"
+#~ msgstr "हस्तांतरन सुधारव"
+
+#~ msgid "SM&TP"
+#~ msgstr "एसएमटीपी (&T)"
+
+#~ msgid "&Sendmail"
+#~ msgstr "सेंडमेल (&S)"
+
+#~ msgid "Add Transport"
+#~ msgstr "हस्तांतरन जोड़व"
