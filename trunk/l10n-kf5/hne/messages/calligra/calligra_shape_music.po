@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2009-03-03 11:09+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -119,13 +119,13 @@ msgstr "अऊ दूसर"
 
 #: actions/NoteEntryAction.cpp:68
 #, kde-format
-msgid "rest"
-msgstr "रेस्ट"
+msgid "note"
+msgstr "टिप्पनी"
 
 #: actions/NoteEntryAction.cpp:68
 #, kde-format
-msgid "note"
-msgstr "टिप्पनी"
+msgid "rest"
+msgstr "रेस्ट"
 
 #: actions/NoteEntryAction.cpp:70
 #, kde-format
@@ -174,13 +174,13 @@ msgstr "१२८वां"
 
 #: actions/NoteEntryAction.cpp:80
 #, kde-format
-msgid "Unknown rest"
-msgstr "अग्यात रेस्ट"
+msgid "Unknown note"
+msgstr "अग्यात टिप्पनी"
 
 #: actions/NoteEntryAction.cpp:80
 #, kde-format
-msgid "Unknown note"
-msgstr "अग्यात टिप्पनी"
+msgid "Unknown rest"
+msgstr "अग्यात रेस्ट"
 
 #: actions/RemoveBarAction.cpp:35
 #, kde-format
@@ -237,11 +237,159 @@ msgstr "अग्यात क्लेफ"
 msgid "Tied notes"
 msgstr "टाइड नोट्स"
 
+#: commands/AddBarsCommand.cpp:30
+#, fuzzy
+#| msgid "Add measures"
+msgctxt "(qtundo-format)"
+msgid "Add measures"
+msgstr "मापक जोड़व"
+
+#: commands/AddDotCommand.cpp:30
+#, fuzzy
+#| msgid "Add dot"
+msgctxt "(qtundo-format)"
+msgid "Add dot"
+msgstr "बिंदु जोड़व"
+
+#: commands/AddNoteCommand.cpp:42
+#, fuzzy
+#| msgid "Set chord duration"
+msgctxt "(qtundo-format)"
+msgid "Set chord duration"
+msgstr "कार्ड अवधि सेट करव"
+
+#: commands/AddNoteCommand.cpp:44
+#, fuzzy
+#| msgid "Add note"
+msgctxt "(qtundo-format)"
+msgid "Add note"
+msgstr "टिप्पनी जोड़व"
+
+#: commands/AddPartCommand.cpp:38
+#, fuzzy
+#| msgid "Add part"
+msgctxt "(qtundo-format)"
+msgid "Add part"
+msgstr "पार्ट जोड़व"
+
 #: commands/AddPartCommand.cpp:39
 #, fuzzy, kde-format
 #| msgid "Parts"
 msgid "Part %1"
 msgstr "पार्ट्स"
+
+#: commands/ChangePartDetailsCommand.cpp:43
+#, fuzzy
+#| msgid "Change part details"
+msgctxt "(qtundo-format)"
+msgid "Change part details"
+msgstr "पार्ट विवरन बदलव"
+
+#: commands/CreateChordCommand.cpp:33
+#, fuzzy
+#| msgid "Add chord"
+msgctxt "(qtundo-format)"
+msgid "Add chord"
+msgstr "कार्ड जोड़व"
+
+#: commands/CreateChordCommand.cpp:41
+#, fuzzy
+#| msgid "Add rest"
+msgctxt "(qtundo-format)"
+msgid "Add rest"
+msgstr "रेस्ट जोड़व"
+
+#: commands/MakeRestCommand.cpp:32
+#, fuzzy
+#| msgid "Convert chord to rest"
+msgctxt "(qtundo-format)"
+msgid "Convert chord to rest"
+msgstr "कार्ड ल रेस्ट मं बदलव"
+
+#: commands/RemoveBarCommand.cpp:31
+#, fuzzy
+#| msgid "Remove bar"
+msgctxt "(qtundo-format)"
+msgid "Remove bar"
+msgstr "पट्टी हटाव"
+
+#: commands/RemoveChordCommand.cpp:32
+#, fuzzy
+#| msgid "Remove rest"
+msgctxt "(qtundo-format)"
+msgid "Remove rest"
+msgstr "रेस्ट मेटाव"
+
+#: commands/RemoveChordCommand.cpp:34
+#, fuzzy
+#| msgid "Remove chord"
+msgctxt "(qtundo-format)"
+msgid "Remove chord"
+msgstr "कार्ड मेटाव"
+
+#: commands/RemoveNoteCommand.cpp:32
+#, fuzzy
+#| msgid "Remove note"
+msgctxt "(qtundo-format)"
+msgid "Remove note"
+msgstr "टिप्पनी बदलव"
+
+#: commands/RemovePartCommand.cpp:34
+#, fuzzy
+#| msgid "Remove part"
+msgctxt "(qtundo-format)"
+msgid "Remove part"
+msgstr "पार्ट मेटाव"
+
+#: commands/RemoveStaffElementCommand.cpp:35
+#, fuzzy
+#| msgid "Remove clef"
+msgctxt "(qtundo-format)"
+msgid "Remove clef"
+msgstr "क्लेफ मेटाव"
+
+#: commands/RemoveStaffElementCommand.cpp:37
+#, fuzzy
+#| msgid "Remove staff element"
+msgctxt "(qtundo-format)"
+msgid "Remove staff element"
+msgstr "स्टाफ अवयव हटाव"
+
+#: commands/SetAccidentalsCommand.cpp:32
+#, fuzzy
+#| msgid "Set accidentals"
+msgctxt "(qtundo-format)"
+msgid "Set accidentals"
+msgstr "एक्सीडेंसियल्स सेट करव"
+
+#: commands/SetClefCommand.cpp:32
+#, fuzzy
+#| msgid "Change clef"
+msgctxt "(qtundo-format)"
+msgid "Change clef"
+msgstr "क्लेफ बदलव"
+
+#: commands/SetKeySignatureCommand.cpp:38
+#: commands/SetKeySignatureCommand.cpp:85
+#, fuzzy
+#| msgid "Change key signature"
+msgctxt "(qtundo-format)"
+msgid "Change key signature"
+msgstr "कुंजी दसखत बदलव"
+
+#: commands/SetTimeSignatureCommand.cpp:34
+#, fuzzy
+#| msgid "Change time signature"
+msgctxt "(qtundo-format)"
+msgid "Change time signature"
+msgstr "समय दसखत बदलावइ करव"
+
+#: commands/ToggleTiedNoteCommand.cpp:32
+#, fuzzy
+#| msgid "Toggle Note Tie"
+msgctxt "(qtundo-format)"
+msgid "Toggle Note Tie"
+msgstr "नोट टाई टागल करव"
 
 #: dialogs/KeySignatureDialog.cpp:28
 #, kde-format
@@ -739,12 +887,6 @@ msgstr "संगीत संपादन औजार"
 #~ msgstr "अग्यात रेस्ट"
 
 #, fuzzy
-#~| msgid "Remove bar"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove bar"
-#~ msgstr "पट्टी हटाव"
-
-#, fuzzy
 #~| msgid "Select"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Select"
@@ -804,130 +946,10 @@ msgstr "संगीत संपादन औजार"
 #~ msgstr "टाइड नोट्स"
 
 #, fuzzy
-#~| msgid "Add measures"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add measures"
-#~ msgstr "मापक जोड़व"
-
-#, fuzzy
-#~| msgid "Add dot"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add dot"
-#~ msgstr "बिंदु जोड़व"
-
-#, fuzzy
-#~| msgid "Set chord duration"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set chord duration"
-#~ msgstr "कार्ड अवधि सेट करव"
-
-#, fuzzy
-#~| msgid "Add note"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add note"
-#~ msgstr "टिप्पनी जोड़व"
-
-#, fuzzy
-#~| msgid "Add part"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add part"
-#~ msgstr "पार्ट जोड़व"
-
-#, fuzzy
 #~| msgid "Parts"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Part %1"
 #~ msgstr "पार्ट्स"
-
-#, fuzzy
-#~| msgid "Change part details"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change part details"
-#~ msgstr "पार्ट विवरन बदलव"
-
-#, fuzzy
-#~| msgid "Add chord"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add chord"
-#~ msgstr "कार्ड जोड़व"
-
-#, fuzzy
-#~| msgid "Add rest"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add rest"
-#~ msgstr "रेस्ट जोड़व"
-
-#, fuzzy
-#~| msgid "Convert chord to rest"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Convert chord to rest"
-#~ msgstr "कार्ड ल रेस्ट मं बदलव"
-
-#, fuzzy
-#~| msgid "Remove rest"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove rest"
-#~ msgstr "रेस्ट मेटाव"
-
-#, fuzzy
-#~| msgid "Remove chord"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove chord"
-#~ msgstr "कार्ड मेटाव"
-
-#, fuzzy
-#~| msgid "Remove note"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove note"
-#~ msgstr "टिप्पनी बदलव"
-
-#, fuzzy
-#~| msgid "Remove part"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove part"
-#~ msgstr "पार्ट मेटाव"
-
-#, fuzzy
-#~| msgid "Remove clef"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove clef"
-#~ msgstr "क्लेफ मेटाव"
-
-#, fuzzy
-#~| msgid "Remove staff element"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove staff element"
-#~ msgstr "स्टाफ अवयव हटाव"
-
-#, fuzzy
-#~| msgid "Set accidentals"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set accidentals"
-#~ msgstr "एक्सीडेंसियल्स सेट करव"
-
-#, fuzzy
-#~| msgid "Change clef"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change clef"
-#~ msgstr "क्लेफ बदलव"
-
-#, fuzzy
-#~| msgid "Change key signature"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change key signature"
-#~ msgstr "कुंजी दसखत बदलव"
-
-#, fuzzy
-#~| msgid "Change time signature"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change time signature"
-#~ msgstr "समय दसखत बदलावइ करव"
-
-#, fuzzy
-#~| msgid "Toggle Note Tie"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Toggle Note Tie"
-#~ msgstr "नोट टाई टागल करव"
 
 #, fuzzy
 #~| msgid "Set key signature"

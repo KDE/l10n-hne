@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karbon\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:48+0100\n"
 "PO-Revision-Date: 2009-03-02 21:39+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,6 +18,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 0.3\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: common/commands/KarbonBooleanCommand.cpp:68 ui/KarbonView.cpp:917
+#, fuzzy
+#| msgid "Boolean Operation"
+msgctxt "(qtundo-format)"
+msgid "Boolean Operation"
+msgstr "बूलिए आपरेसन"
 
 #. i18n: ectx: Menu (object_order)
 #: data/karbon.rc:16 data/karbon.rc:77
@@ -132,6 +139,20 @@ msgstr "गुन"
 msgid "Flatness:"
 msgstr "समतलताः"
 
+#: plugins/flattenpath/KarbonPathFlattenCommand.cpp:163
+#, fuzzy
+#| msgid "Flatten path"
+msgctxt "(qtundo-format)"
+msgid "Flatten path"
+msgstr "पथ चपटा करव"
+
+#: plugins/refinepath/KarbonPathRefineCommand.cpp:41
+#, fuzzy
+#| msgid "Refine path"
+msgctxt "(qtundo-format)"
+msgid "Refine path"
+msgstr "पथ रीफाइनइ करव"
+
 #: plugins/refinepath/RefinePathPlugin.cpp:64
 #, kde-format
 msgid "&Refine Path..."
@@ -146,6 +167,12 @@ msgstr "पथ रीफाइनइ करव"
 #, kde-format
 msgid "Subdivisions:"
 msgstr "उप-विभाजन:"
+
+#: plugins/roundcorners/RoundCornersCommand.cpp:41
+#: plugins/roundcorners/RoundCornersPlugin.cpp:95
+msgctxt "(qtundo-format)"
+msgid "Round Corners"
+msgstr ""
 
 #: plugins/roundcorners/RoundCornersPlugin.cpp:66
 #, kde-format
@@ -162,6 +189,13 @@ msgstr ""
 #, kde-format
 msgid "Radius:"
 msgstr "त्रिज्याः"
+
+#: plugins/whirlpinch/KarbonWhirlPinchCommand.cpp:108
+#, fuzzy
+#| msgid "Whirl & pinch"
+msgctxt "(qtundo-format)"
+msgid "Whirl & pinch"
+msgstr "व्हिर्ल अउ पिंच"
 
 #: plugins/whirlpinch/WhirlPinchPlugin.cpp:68
 #, kde-format
@@ -194,6 +228,22 @@ msgstr "कोनः"
 #, kde-format
 msgid "Pinch:"
 msgstr "पिंच:"
+
+#: ui/commands/KarbonLayerReorderCommand.cpp:37
+#: ui/commands/KarbonLayerReorderCommand.cpp:46
+#, fuzzy
+#| msgid "Raise Layer"
+msgctxt "(qtundo-format)"
+msgid "Raise Layer"
+msgstr "परत उठाव"
+
+#: ui/commands/KarbonLayerReorderCommand.cpp:39
+#: ui/commands/KarbonLayerReorderCommand.cpp:48
+#, fuzzy
+#| msgid "Lower Layer"
+msgctxt "(qtundo-format)"
+msgid "Lower Layer"
+msgstr "निचली परत"
 
 #: ui/dialogs/KarbonConfigureDialog.cpp:45
 #, kde-format
@@ -302,6 +352,20 @@ msgstr "नवा परत के नाम भरव:"
 msgid "New layer"
 msgstr "नवा परत"
 
+#: ui/dockers/KarbonLayerDocker.cpp:293
+#, fuzzy
+#| msgid "Create Layer"
+msgctxt "(qtundo-format)"
+msgid "Create Layer"
+msgstr "परत बनाव"
+
+#: ui/dockers/KarbonLayerDocker.cpp:317
+#, fuzzy
+#| msgid "Delete Layer"
+msgctxt "(qtundo-format)"
+msgid "Delete Layer"
+msgstr "परत मेटाव"
+
 #: ui/dockers/KarbonLayerDocker.cpp:319
 #, kde-format
 msgid "Could not delete all layers. At least one layer is required."
@@ -361,15 +425,22 @@ msgstr ""
 
 #: ui/dockers/KarbonLayerModel.cpp:263
 #, fuzzy, kde-format
+#| msgid "Info"
+msgid "no"
+msgstr "जानकारी "
+
+#: ui/dockers/KarbonLayerModel.cpp:263
+#, fuzzy, kde-format
 #| msgid "Styles"
 msgid "yes"
 msgstr "सैली"
 
-#: ui/dockers/KarbonLayerModel.cpp:263
-#, fuzzy, kde-format
-#| msgid "Info"
-msgid "no"
-msgstr "जानकारी "
+#: ui/dockers/KarbonLayerModel.cpp:464
+#, fuzzy
+#| msgid "Reparent shapes"
+msgctxt "(qtundo-format)"
+msgid "Reparent shapes"
+msgstr "रीपैरेन्ट आकार"
 
 #: ui/KarbonAboutData.h:35
 #, fuzzy, kde-format
@@ -493,6 +564,13 @@ msgstr ""
 msgid "Master Page"
 msgstr ""
 
+#: ui/KarbonDocumentMergeCommand.cpp:59 ui/KarbonView.cpp:560
+#, fuzzy
+#| msgid "Intersect Paths"
+msgctxt "(qtundo-format)"
+msgid "Insert graphics"
+msgstr "रस्ता इंटरसेक्ट करव"
+
 #: ui/KarbonView.cpp:491
 #, fuzzy, kde-format
 msgid "Choose Graphic to Add"
@@ -513,6 +591,37 @@ msgstr "रस्ता इंटरसेक्ट करव"
 #, kde-format
 msgid "Could not create image shape."
 msgstr ""
+
+#: ui/KarbonView.cpp:791
+#, fuzzy
+#| msgctxt "Horizontal grid spacing"
+#| msgid "&Horizontal:"
+msgctxt "(qtundo-format)"
+msgid "Mirror Horizontally"
+msgstr "आड़ा: (&H)"
+
+#: ui/KarbonView.cpp:793
+#, fuzzy
+#| msgctxt "Horizontal grid spacing"
+#| msgid "&Horizontal:"
+msgctxt "(qtundo-format)"
+msgid "Mirror Vertically"
+msgstr "आड़ा: (&H)"
+
+#: ui/KarbonView.cpp:795
+#, fuzzy
+#| msgctxt "Horizontal grid spacing"
+#| msgid "&Horizontal:"
+msgctxt "(qtundo-format)"
+msgid "Mirror Horizontally and Vertically"
+msgstr "आड़ा: (&H)"
+
+#: ui/KarbonView.cpp:850
+#, fuzzy
+#| msgid "Se&parate Path"
+msgctxt "(qtundo-format)"
+msgid "Separate paths"
+msgstr "रस्ता अलग करव (&p)"
 
 #: ui/KarbonView.cpp:1028
 #, kde-format
@@ -870,12 +979,6 @@ msgstr "भरव:"
 #~ msgstr "दृस्य"
 
 #, fuzzy
-#~| msgid "Boolean Operation"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Boolean Operation"
-#~ msgstr "बूलिए आपरेसन"
-
-#, fuzzy
 #~| msgid "&Flatten Path..."
 #~ msgctxt "(qtundo-format)"
 #~ msgid "&Flatten Path..."
@@ -900,18 +1003,6 @@ msgstr "भरव:"
 #~ msgstr "समतलताः"
 
 #, fuzzy
-#~| msgid "Flatten path"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Flatten path"
-#~ msgstr "पथ चपटा करव"
-
-#, fuzzy
-#~| msgid "Refine path"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Refine path"
-#~ msgstr "पथ रीफाइनइ करव"
-
-#, fuzzy
 #~| msgid "&Refine Path..."
 #~ msgctxt "(qtundo-format)"
 #~ msgid "&Refine Path..."
@@ -934,12 +1025,6 @@ msgstr "भरव:"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Radius:"
 #~ msgstr "त्रिज्याः"
-
-#, fuzzy
-#~| msgid "Whirl & pinch"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Whirl & pinch"
-#~ msgstr "व्हिर्ल अउ पिंच"
 
 #, fuzzy
 #~| msgid "&Whirl/Pinch..."
@@ -970,18 +1055,6 @@ msgstr "भरव:"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Pinch:"
 #~ msgstr "पिंच:"
-
-#, fuzzy
-#~| msgid "Raise Layer"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Raise Layer"
-#~ msgstr "परत उठाव"
-
-#, fuzzy
-#~| msgid "Lower Layer"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Lower Layer"
-#~ msgstr "निचली परत"
 
 #, fuzzy
 #~| msgid "Configure"
@@ -1075,18 +1148,6 @@ msgstr "भरव:"
 #~ msgstr "नवा परत"
 
 #, fuzzy
-#~| msgid "Create Layer"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create Layer"
-#~ msgstr "परत बनाव"
-
-#, fuzzy
-#~| msgid "Delete Layer"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete Layer"
-#~ msgstr "परत मेटाव"
-
-#, fuzzy
 #~| msgid "Could not delete all layers. At least one layer is required."
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Could not delete all layers. At least one layer is required."
@@ -1155,12 +1216,6 @@ msgstr "भरव:"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "yes"
 #~ msgstr "सैली"
-
-#, fuzzy
-#~| msgid "Reparent shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reparent shapes"
-#~ msgstr "रीपैरेन्ट आकार"
 
 #, fuzzy
 #~| msgid "Karbon14"
@@ -1272,12 +1327,6 @@ msgstr "भरव:"
 #~ msgstr "raviratlami@aol.in,"
 
 #, fuzzy
-#~| msgid "Intersect Paths"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert graphics"
-#~ msgstr "रस्ता इंटरसेक्ट करव"
-
-#, fuzzy
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Choose Graphic to Add"
 #~ msgstr "जोड़े बर अनुपात चुनव"
@@ -1287,33 +1336,6 @@ msgstr "भरव:"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Import graphic"
 #~ msgstr "रस्ता इंटरसेक्ट करव"
-
-#, fuzzy
-#~| msgctxt "Horizontal grid spacing"
-#~| msgid "&Horizontal:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Mirror Horizontally"
-#~ msgstr "आड़ा: (&H)"
-
-#, fuzzy
-#~| msgctxt "Horizontal grid spacing"
-#~| msgid "&Horizontal:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Mirror Vertically"
-#~ msgstr "आड़ा: (&H)"
-
-#, fuzzy
-#~| msgctxt "Horizontal grid spacing"
-#~| msgid "&Horizontal:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Mirror Horizontally and Vertically"
-#~ msgstr "आड़ा: (&H)"
-
-#, fuzzy
-#~| msgid "Se&parate Path"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Separate paths"
-#~ msgstr "रस्ता अलग करव (&p)"
 
 #, fuzzy
 #~| msgid "Intersect Paths"

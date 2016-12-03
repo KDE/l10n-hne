@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplato\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2009-03-03 09:54+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -444,17 +444,17 @@ msgid ""
 "Opening it in Plan may lose information."
 msgstr ""
 
-#: KPlatoXmlLoader.cpp:70
-#, fuzzy, kde-format
-#| msgid "File-Format Mismatch"
-msgid "File-Format Error"
-msgstr "फाइल फार्मेट मिसमैच"
-
 #: KPlatoXmlLoader.cpp:70 KPlatoXmlLoader.cpp:82 KPlatoXmlLoader.cpp:124
 #: kptmaindocument.cpp:209 kptmaindocument.cpp:496
 #, kde-format
 msgid "Continue"
 msgstr "जारी रखव"
+
+#: KPlatoXmlLoader.cpp:70
+#, fuzzy, kde-format
+#| msgid "File-Format Mismatch"
+msgid "File-Format Error"
+msgstr "फाइल फार्मेट मिसमैच"
 
 #: KPlatoXmlLoader.cpp:79
 #, kde-format
@@ -997,6 +997,13 @@ msgstr ""
 msgid "Internal error, failed to insert file."
 msgstr ""
 
+#: kptmaindocument.cpp:988
+#, fuzzy
+#| msgid "Insert"
+msgctxt "(qtundo-format)"
+msgid "Insert project"
+msgstr "प्रविस्ट"
+
 #: kptschedulesdocker.cpp:38
 #, fuzzy, kde-format
 #| msgid "Show Selector"
@@ -1371,6 +1378,13 @@ msgstr "काम प्रोग्राम"
 msgid "Reports"
 msgstr "संसाधन "
 
+#: kptview.cpp:1682
+#, fuzzy, kde-format
+#| msgid "Calculate %1"
+msgctxt "(qtundo-format) @info:status 1=schedule name"
+msgid "Calculate %1"
+msgstr "गनना करव %1"
+
 #: kptview.cpp:1701
 #, kde-format
 msgid "Cannot baseline. The project is already baselined."
@@ -1380,6 +1394,55 @@ msgstr ""
 #, kde-format
 msgid "This schedule is baselined. Do you want to remove the baseline?"
 msgstr ""
+
+#: kptview.cpp:1710
+#, fuzzy, kde-format
+#| msgid "Delete Schedule %1"
+msgctxt "(qtundo-format)"
+msgid "Reset baseline %1"
+msgstr "समय-सारिनी %1 मेटाव"
+
+#: kptview.cpp:1712
+#, fuzzy, kde-format
+#| msgid "Delete Schedule %1"
+msgctxt "(qtundo-format)"
+msgid "Baseline %1"
+msgstr "समय-सारिनी %1 मेटाव"
+
+#: kptview.cpp:1723
+#, fuzzy, kde-format
+#| msgid "Add Schedule %1"
+msgctxt "(qtundo-format)"
+msgid "Add schedule %1"
+msgstr "समय सारिनी जोड़व %1"
+
+#: kptview.cpp:1732
+#, fuzzy, kde-format
+#| msgid "Delete Schedule %1"
+msgctxt "(qtundo-format)"
+msgid "Delete schedule %1"
+msgstr "समय-सारिनी %1 मेटाव"
+
+#: kptview.cpp:1741
+#, fuzzy, kde-format
+#| msgid "Add Schedule %1"
+msgctxt "(qtundo-format)"
+msgid "Move schedule %1"
+msgstr "समय सारिनी जोड़व %1"
+
+#: kptview.cpp:1810
+#, fuzzy
+#| msgid "Add Milestone"
+msgctxt "(qtundo-format)"
+msgid "Add milestone"
+msgstr "पड़ाव जोड़व"
+
+#: kptview.cpp:1836
+#, fuzzy
+#| msgid "Add Milestone"
+msgctxt "(qtundo-format)"
+msgid "Add sub-milestone"
+msgstr "पड़ाव जोड़व"
 
 #: kptview.cpp:1877
 #, kde-format
@@ -1404,10 +1467,79 @@ msgid ""
 "schedule."
 msgstr "एक काम ल मेटाय बर सारिनीबद्ध कर दे गे हे. ए समयसारिनी ल अवैध कर देही."
 
+#: kptview.cpp:2210 kptview.cpp:2214 kptview.cpp:2230 kptview.cpp:2254
+#, fuzzy
+#| msgid "Delete Task"
+msgctxt "(qtundo-format)"
+msgid "Delete task"
+msgid_plural "Delete tasks"
+msgstr[0] "...काम मेटाव"
+msgstr[1] "...काम मेटाव"
+
 #: kptview.cpp:2249
 #, kde-format
 msgid "This task has been scheduled. This will invalidate the schedule."
 msgstr "ये काम सारिनीबद्ध कर दे गे हे. ए समयसारिनी ल अवैध कर देही."
+
+#: kptview.cpp:2273
+#, fuzzy
+#| msgid "Indent Task"
+msgctxt "(qtundo-format)"
+msgid "Indent task"
+msgstr "काम इंडेंट करव"
+
+#: kptview.cpp:2287
+#, fuzzy
+#| msgid "Unindent Task"
+msgctxt "(qtundo-format)"
+msgid "Unindent task"
+msgstr "काम अनइंडेंट करव"
+
+#: kptview.cpp:2309
+#, fuzzy
+#| msgid "Move Task Up"
+msgctxt "(qtundo-format)"
+msgid "Move task up"
+msgstr "काम ऊपर खिसकाव"
+
+#: kptview.cpp:2330
+#, fuzzy
+#| msgid "Move Task Down"
+msgctxt "(qtundo-format)"
+msgid "Move task down"
+msgstr "काम नीचे खिसकाव"
+
+#: kptview.cpp:2368
+#, fuzzy
+#| msgid "Edit task dependencies"
+msgctxt "(qtundo-format)"
+msgid "Add task dependency"
+msgstr "काम डिपेंडेंसीज संपादित करव"
+
+#: kptview.cpp:2431
+#, fuzzy
+#| msgid "Delete Task Dependency"
+msgctxt "(qtundo-format)"
+msgid "Delete task dependency"
+msgstr "काम डिपेंडेंसी मेटाव"
+
+#: kptview.cpp:2470 kptview.cpp:2531
+#, fuzzy
+#| msgid "Delete Resource"
+msgctxt "(qtundo-format)"
+msgid "Delete resource"
+msgid_plural "Delete resources"
+msgstr[0] "संसाधन मेटाव"
+msgstr[1] "संसाधन मेटाव"
+
+#: kptview.cpp:2475 kptview.cpp:2533
+#, fuzzy
+#| msgid "Delete Resourcegroup"
+msgctxt "(qtundo-format)"
+msgid "Delete resourcegroup"
+msgid_plural "Delete resourcegroups"
+msgstr[0] "संसाधनसमूह मेटाव"
+msgstr[1] "संसाधनसमूह मेटाव"
 
 #: kptview.cpp:2484 kptview.cpp:2492
 #, kde-format
@@ -1416,12 +1548,54 @@ msgid ""
 "schedule."
 msgstr "संसाधन जऊन ल सारिनीबद्ध करे रिहिस, मेटाय जाही. ए सारिनी ल अवैध कर देही."
 
+#: kptview.cpp:2529
+#, fuzzy
+#| msgid "Delete Resourcegroup"
+msgctxt "(qtundo-format)"
+msgid "Delete resourcegroups and resources"
+msgstr "संसाधनसमूह मेटाव"
+
 #: kptview.cpp:2701
 #, fuzzy, kde-kuit-format
 #| msgid "Failed to save to temporary file: %1"
 msgctxt "@info"
 msgid "Cannot open file:<br/><filename>%1</filename>"
 msgstr "अस्थाई फाइल: %1 मं सहेजे मं फेल"
+
+#: kptview.cpp:2810
+#, fuzzy
+#| msgid "Modify Name"
+msgctxt "(qtundo-format)"
+msgid "Modify name"
+msgstr "नाम सुधारव"
+
+#: kptview.cpp:2812
+#, fuzzy
+#| msgid "Modify Name"
+msgctxt "(qtundo-format)"
+msgid "Modify task name"
+msgstr "नाम सुधारव"
+
+#: kptview.cpp:2813
+#, fuzzy
+#| msgid "Modify Name"
+msgctxt "(qtundo-format)"
+msgid "Modify milestone name"
+msgstr "नाम सुधारव"
+
+#: kptview.cpp:2814
+#, fuzzy
+#| msgid "Modify Name"
+msgctxt "(qtundo-format)"
+msgid "Modify summarytask name"
+msgstr "नाम सुधारव"
+
+#: kptview.cpp:2815
+#, fuzzy
+#| msgid "Project name:"
+msgctxt "(qtundo-format)"
+msgid "Modify project name"
+msgstr "परियोजना नाम:"
 
 #: kptview.cpp:2901
 #, fuzzy, kde-kuit-format
@@ -2491,12 +2665,6 @@ msgstr ""
 #~ "अवैध कागद. वांछित माइम किसिम application/x-vnd.kde.kplato.work, मिलिस %1"
 
 #, fuzzy
-#~| msgid "Insert"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert project"
-#~ msgstr "प्रविस्ट"
-
-#, fuzzy
 #~| msgid "Show Selector"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Schedule Selector"
@@ -2857,48 +3025,6 @@ msgstr ""
 #~ msgstr "संसाधन "
 
 #, fuzzy
-#~| msgid "Calculate %1"
-#~ msgctxt "(qtundo-format) @info:status 1=schedule name"
-#~ msgid "Calculate %1"
-#~ msgstr "गनना करव %1"
-
-#, fuzzy
-#~| msgid "Delete Schedule %1"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reset baseline %1"
-#~ msgstr "समय-सारिनी %1 मेटाव"
-
-#, fuzzy
-#~| msgid "Add Schedule %1"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add schedule %1"
-#~ msgstr "समय सारिनी जोड़व %1"
-
-#, fuzzy
-#~| msgid "Delete Schedule %1"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete schedule %1"
-#~ msgstr "समय-सारिनी %1 मेटाव"
-
-#, fuzzy
-#~| msgid "Add Schedule %1"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Move schedule %1"
-#~ msgstr "समय सारिनी जोड़व %1"
-
-#, fuzzy
-#~| msgid "Add Milestone"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add milestone"
-#~ msgstr "पड़ाव जोड़व"
-
-#, fuzzy
-#~| msgid "Add Milestone"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add sub-milestone"
-#~ msgstr "पड़ाव जोड़व"
-
-#, fuzzy
 #~| msgid "Task Defaults"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Task Defaults"
@@ -2927,70 +3053,10 @@ msgstr ""
 #~ msgstr "एक काम ल मेटाय बर सारिनीबद्ध कर दे गे हे. ए समयसारिनी ल अवैध कर देही."
 
 #, fuzzy
-#~| msgid "Delete Task"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete task"
-#~ msgid_plural "Delete tasks"
-#~ msgstr[0] "...काम मेटाव"
-#~ msgstr[1] "...काम मेटाव"
-
-#, fuzzy
 #~| msgid "This task has been scheduled. This will invalidate the schedule."
 #~ msgctxt "(qtundo-format)"
 #~ msgid "This task has been scheduled. This will invalidate the schedule."
 #~ msgstr "ये काम सारिनीबद्ध कर दे गे हे. ए समयसारिनी ल अवैध कर देही."
-
-#, fuzzy
-#~| msgid "Indent Task"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Indent task"
-#~ msgstr "काम इंडेंट करव"
-
-#, fuzzy
-#~| msgid "Unindent Task"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Unindent task"
-#~ msgstr "काम अनइंडेंट करव"
-
-#, fuzzy
-#~| msgid "Move Task Up"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Move task up"
-#~ msgstr "काम ऊपर खिसकाव"
-
-#, fuzzy
-#~| msgid "Move Task Down"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Move task down"
-#~ msgstr "काम नीचे खिसकाव"
-
-#, fuzzy
-#~| msgid "Edit task dependencies"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add task dependency"
-#~ msgstr "काम डिपेंडेंसीज संपादित करव"
-
-#, fuzzy
-#~| msgid "Delete Task Dependency"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete task dependency"
-#~ msgstr "काम डिपेंडेंसी मेटाव"
-
-#, fuzzy
-#~| msgid "Delete Resource"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete resource"
-#~ msgid_plural "Delete resources"
-#~ msgstr[0] "संसाधन मेटाव"
-#~ msgstr[1] "संसाधन मेटाव"
-
-#, fuzzy
-#~| msgid "Delete Resourcegroup"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete resourcegroup"
-#~ msgid_plural "Delete resourcegroups"
-#~ msgstr[0] "संसाधनसमूह मेटाव"
-#~ msgstr[1] "संसाधनसमूह मेटाव"
 
 #, fuzzy
 #~| msgid ""
@@ -3003,46 +3069,10 @@ msgstr ""
 #~ msgstr "संसाधन जऊन ल सारिनीबद्ध करे रिहिस, मेटाय जाही. ए सारिनी ल अवैध कर देही."
 
 #, fuzzy
-#~| msgid "Delete Resourcegroup"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete resourcegroups and resources"
-#~ msgstr "संसाधनसमूह मेटाव"
-
-#, fuzzy
 #~| msgid "Failed to save to temporary file: %1"
 #~ msgctxt "(qtundo-format) @info"
 #~ msgid "Cannot open file:<br/><filename>%1</filename>"
 #~ msgstr "अस्थाई फाइल: %1 मं सहेजे मं फेल"
-
-#, fuzzy
-#~| msgid "Modify Name"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify name"
-#~ msgstr "नाम सुधारव"
-
-#, fuzzy
-#~| msgid "Modify Name"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify task name"
-#~ msgstr "नाम सुधारव"
-
-#, fuzzy
-#~| msgid "Modify Name"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify milestone name"
-#~ msgstr "नाम सुधारव"
-
-#, fuzzy
-#~| msgid "Modify Name"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify summarytask name"
-#~ msgstr "नाम सुधारव"
-
-#, fuzzy
-#~| msgid "Project name:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify project name"
-#~ msgstr "परियोजना नाम:"
 
 #, fuzzy
 #~| msgid "Not scheduled"
