@@ -592,9 +592,7 @@ msgstr "%1 सेकन्ड"
 #| msgid "%1 milliseconds"
 msgctxt "KFormat|"
 msgid "%n millisecond(s)"
-msgid_plural "%n millisecond(s)"
-msgstr[0] "%1 मिलिस-सेकन्ड्स"
-msgstr[1] "%1 मिलिस-सेकन्ड्स"
+msgstr "%1 मिलिस-सेकन्ड्स"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:300
@@ -602,9 +600,7 @@ msgstr[1] "%1 मिलिस-सेकन्ड्स"
 #| msgid "%1 days"
 msgctxt "KFormat|"
 msgid "%n day(s)"
-msgid_plural "%n day(s)"
-msgstr[0] "%1 दिन"
-msgstr[1] "%1 दिन"
+msgstr "%1 दिन"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:305
@@ -612,9 +608,7 @@ msgstr[1] "%1 दिन"
 #| msgid "%1 hours"
 msgctxt "KFormat|"
 msgid "%n hour(s)"
-msgid_plural "%n hour(s)"
-msgstr[0] "%1 घंटा"
-msgstr[1] "%1 घंटा"
+msgstr "%1 घंटा"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:310
@@ -622,9 +616,7 @@ msgstr[1] "%1 घंटा"
 #| msgid "%1 minutes"
 msgctxt "KFormat|"
 msgid "%n minute(s)"
-msgid_plural "%n minute(s)"
-msgstr[0] "%1 मिनट"
-msgstr[1] "%1 मिनट"
+msgstr "%1 मिनट"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:315
@@ -632,9 +624,7 @@ msgstr[1] "%1 मिनट"
 #| msgid "%1 seconds"
 msgctxt "KFormat|"
 msgid "%n second(s)"
-msgid_plural "%n second(s)"
-msgstr[0] "%1 सेकन्ड"
-msgstr[1] "%1 सेकन्ड"
+msgstr "%1 सेकन्ड"
 
 #. @item:intext days and hours. This uses the previous item:intext messages. If this does not fit the grammar of your language please contact the i18n team to solve the problem
 #. ----------
@@ -653,48 +643,150 @@ msgctxt "KFormat|"
 msgid "%1 and %2"
 msgstr "%1 अउ %2"
 
-#: lib/util/kformatprivate.cpp:372
+#: lib/util/kformatprivate.cpp:366
+#, fuzzy
+msgctxt ""
+"KFormat|used when a relative date string can't be generated because the date "
+"is invalid"
+msgid "Invalid date"
+msgstr "अवैध फाइल नाम"
+
+#: lib/util/kformatprivate.cpp:376
 msgctxt "KFormat|"
 msgid "Tomorrow"
 msgstr ""
 
-#: lib/util/kformatprivate.cpp:374
+#: lib/util/kformatprivate.cpp:378
 #, fuzzy
 #| msgid "Today"
 msgctxt "KFormat|"
 msgid "Today"
 msgstr "आज"
 
-#: lib/util/kformatprivate.cpp:376
+#: lib/util/kformatprivate.cpp:380
 #, fuzzy
 #| msgid "Yesterday"
 msgctxt "KFormat|"
 msgid "Yesterday"
 msgstr "कल"
 
-#: lib/util/kformatprivate.cpp:383
-#, fuzzy, qt-format
-#| msgid "&Last Page"
-msgctxt "KFormat|"
-msgid "Last %1"
-msgstr "आखरी पेज (&L)"
+#: lib/util/kformatprivate.cpp:386
+#, fuzzy
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Monday"
+msgstr "अगला महिना"
 
 #: lib/util/kformatprivate.cpp:388
-#, fuzzy, qt-format
-#| msgctxt "Opposite to Back"
-#| msgid "Next"
-msgctxt "KFormat|"
-msgid "Next %1"
-msgstr "अगला"
+#, fuzzy
+#| msgid "Tuesday"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Tuesday"
+msgstr "मंगलवार"
+
+#: lib/util/kformatprivate.cpp:390
+#, fuzzy
+#| msgid "Wednesday"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Wednesday"
+msgstr "बुधवार"
+
+#: lib/util/kformatprivate.cpp:392
+#, fuzzy
+#| msgid "Thursday"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Thursday"
+msgstr "बिरसपतवार"
+
+#: lib/util/kformatprivate.cpp:394
+#, fuzzy
+#| msgid "Friday"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Friday"
+msgstr "सुकरवार"
+
+#: lib/util/kformatprivate.cpp:396
+#, fuzzy
+#| msgid "Saturday"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Saturday"
+msgstr "सनिवार"
+
+#: lib/util/kformatprivate.cpp:398
+#, fuzzy
+#| msgid "Sunday"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Sunday"
+msgstr "इतवार"
+
+#: lib/util/kformatprivate.cpp:403
+#, fuzzy
+msgctxt "KFormat|the next such day after today"
+msgid "Next Monday"
+msgstr "अगला महिना"
+
+#: lib/util/kformatprivate.cpp:405
+#, fuzzy
+#| msgid "Tuesday"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Tuesday"
+msgstr "मंगलवार"
+
+#: lib/util/kformatprivate.cpp:407
+#, fuzzy
+#| msgid "Wednesday"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Wednesday"
+msgstr "बुधवार"
+
+#: lib/util/kformatprivate.cpp:409
+#, fuzzy
+#| msgid "Thursday"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Thursday"
+msgstr "बिरसपतवार"
+
+#: lib/util/kformatprivate.cpp:411
+#, fuzzy
+#| msgid "Friday"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Friday"
+msgstr "सुकरवार"
+
+#: lib/util/kformatprivate.cpp:413
+#, fuzzy
+#| msgid "Saturday"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Saturday"
+msgstr "सनिवार"
+
+#: lib/util/kformatprivate.cpp:415
+#, fuzzy
+#| msgid "Sunday"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Sunday"
+msgstr "इतवार"
 
 #. relative datetime with %1 result of formatReleativeDate() and %2 the formatted time If this does not fit the grammar of your language please contact the i18n team to solve the problem
-#: lib/util/kformatprivate.cpp:402
+#: lib/util/kformatprivate.cpp:430
 #, fuzzy, qt-format
 #| msgctxt "concatenation of dates and time"
 #| msgid "%1 %2"
 msgctxt "KFormat|"
 msgid "%1, %2"
 msgstr "%1 %2"
+
+#, fuzzy
+#~| msgid "&Last Page"
+#~ msgctxt "KFormat|"
+#~ msgid "Last %1"
+#~ msgstr "आखरी पेज (&L)"
+
+#, fuzzy
+#~| msgctxt "Opposite to Back"
+#~| msgid "Next"
+#~ msgctxt "KFormat|"
+#~ msgid "Next %1"
+#~ msgstr "अगला"
 
 #, fuzzy
 #~ msgctxt "KPluginLoader|"
@@ -6110,11 +6202,6 @@ msgstr "%1 %2"
 #~ msgstr "अगला साल"
 
 #, fuzzy
-#~ msgctxt "@option next month"
-#~ msgid "Next Month"
-#~ msgstr "अगला महिना"
-
-#, fuzzy
 #~ msgctxt "@option next week"
 #~ msgid "Next Week"
 #~ msgstr "अगला साल"
@@ -6128,11 +6215,6 @@ msgstr "%1 %2"
 #~ msgctxt "@option yesterday"
 #~ msgid "Yesterday"
 #~ msgstr "कल"
-
-#, fuzzy
-#~ msgctxt "@option last month"
-#~ msgid "Last Month"
-#~ msgstr "अगला महिना"
 
 #, fuzzy
 #~ msgctxt "@option last year"
@@ -8302,10 +8384,6 @@ msgstr "%1 %2"
 #~ msgstr "इनस्टाल करव"
 
 #, fuzzy
-#~ msgid "Invalid item."
-#~ msgstr "अवैध फाइल नाम"
-
-#, fuzzy
 #~ msgid "Possibly bad download link"
 #~ msgstr "अस्थायी फाइल बना नइ सकिस."
 
@@ -9790,24 +9868,6 @@ msgstr "%1 %2"
 
 #~ msgid "Monday"
 #~ msgstr "सोमवार"
-
-#~ msgid "Tuesday"
-#~ msgstr "मंगलवार"
-
-#~ msgid "Wednesday"
-#~ msgstr "बुधवार"
-
-#~ msgid "Thursday"
-#~ msgstr "बिरसपतवार"
-
-#~ msgid "Friday"
-#~ msgstr "सुकरवार"
-
-#~ msgid "Saturday"
-#~ msgstr "सनिवार"
-
-#~ msgid "Sunday"
-#~ msgstr "इतवार"
 
 #, fuzzy
 #~ msgctxt "Indian National month 1 - ShortNamePossessive"
