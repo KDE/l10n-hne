@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-03-14 08:30+0100\n"
+"POT-Creation-Date: 2017-04-15 02:47+0200\n"
 "PO-Revision-Date: 2009-02-27 17:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -2897,9 +2897,9 @@ msgstr "'द्वारा' ईमेल पता"
 msgctxt "@info:whatsthis"
 msgid ""
 "Your email address, used to identify you as the sender when sending email "
-"alarms. Enter \"@SystemSettings\" to use the email address set in System "
-"Settings, \"@KMail\" to allow choice of KMail identities, or enter the "
-"actual email address otherwise."
+"alarms. Enter \"@SystemSettings\" to use the default email address set in "
+"KMail or System Settings, \"@KMail\" to allow choice of KMail identities, or "
+"enter the actual email address otherwise."
 msgstr ""
 
 #. i18n: ectx: label, entry (Base_EmailBccAddress), group (General)
@@ -2917,8 +2917,8 @@ msgid ""
 "Your email address, used for blind copying email alarms to yourself. If you "
 "want blind copies to be sent to your account on the computer which KAlarm "
 "runs on, you can simply enter your user login name. Enter \"@SystemSettings"
-"\" to use the email address set in System Settings, or enter the actual "
-"email address otherwise."
+"\" to use the default email address set in KMail or System Settings, or "
+"enter the actual email address otherwise."
 msgstr ""
 
 #. i18n: ectx: label, entry (Base_CmdXTermCommand), group (General)
@@ -3647,13 +3647,16 @@ msgid ""
 msgstr ""
 
 #: kamail.cpp:138
-#, kde-kuit-format
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info Please set the 'From' email address..."
+#| msgid ""
+#| "<para>%1</para><para>Please set it in the Configuration dialog.</para>"
 msgctxt "@info"
 msgid ""
-"<para>No 'From' email address is configured.</para><para>Please set it in "
-"the KDE System Settings or in the <application>KAlarm</application> "
-"Configuration dialog.</para>"
-msgstr ""
+"<para>No 'From' email address is configured.</para><para>Please set a "
+"default address in <application>KMail</application> or KDE System Settings "
+"or in the <application>KAlarm</application> Configuration dialog.</para>"
+msgstr "<para>%1</para><para>किरपा करके, एला प्राथमिकता गोठ मं सेट करव.</para>"
 
 #: kamail.cpp:143
 #, fuzzy, kde-kuit-format
@@ -4991,17 +4994,21 @@ msgid ""
 msgstr ""
 
 #: prefdlg.cpp:1067 prefdlg.cpp:1103
-#, kde-format
+#, fuzzy, kde-kuit-format
+#| msgctxt "@option:radio"
+#| msgid "Use <application>KMail</application> identities"
 msgctxt "@option:radio"
-msgid "Use address from System Settings"
-msgstr "तंत्र सेटिंग से पता उपयोग करव"
+msgid ""
+"Use default address from <application>KMail</application> or System Settings"
+msgstr "<application>केमेल</application> पहिचान उपयोग करव"
 
 #: prefdlg.cpp:1070
-#, kde-format
+#, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
-"Check to use the email address set in KDE System Settings, to identify you "
-"as the sender when sending email alarms."
+"Check to use the default email address set in <application>KMail</"
+"application> or KDE System Settings, to identify you as the sender when "
+"sending email alarms."
 msgstr ""
 
 #: prefdlg.cpp:1074
@@ -5038,11 +5045,12 @@ msgid ""
 msgstr ""
 
 #: prefdlg.cpp:1106
-#, kde-format
+#, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
-"Check to use the email address set in KDE System Settings, for blind copying "
-"email alarms to yourself."
+"Check to use the default email address set in <application>KMail</"
+"application> or KDE System Settings, for blind copying email alarms to "
+"yourself."
 msgstr ""
 
 #: prefdlg.cpp:1188
@@ -5060,9 +5068,13 @@ msgid "<para>%1</para><para>Are you sure you want to save your changes?</para>"
 msgstr "<para>%1</para><para>का आप मन सही मं बदलाव मन ल सहेजना चाहथो ?</para>"
 
 #: prefdlg.cpp:1201
-#, kde-format
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid "No email address is currently set in KDE System Settings. %1"
 msgctxt "@info"
-msgid "No email address is currently set in KDE System Settings. %1"
+msgid ""
+"No default email address is currently set in <application>KMail</"
+"application> or KDE System Settings. %1"
 msgstr "केडीई नियंत्रन केंद्र तिर कोनो ई-मेल पता अभी हाल मं सेट नइ हे. %1"
 
 #: prefdlg.cpp:1206
@@ -7101,6 +7113,10 @@ msgstr ""
 #, kde-format
 msgid "Number of minutes before alarm to wake from suspend"
 msgstr ""
+
+#~ msgctxt "@option:radio"
+#~ msgid "Use address from System Settings"
+#~ msgstr "तंत्र सेटिंग से पता उपयोग करव"
 
 #, fuzzy
 #~| msgctxt "@info"
