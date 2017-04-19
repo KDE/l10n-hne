@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-03-30 02:47+0200\n"
+"POT-Creation-Date: 2017-04-19 02:51+0200\n"
 "PO-Revision-Date: 2009-02-27 21:59+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -675,7 +675,7 @@ msgid ""
 msgstr ""
 
 #: src/commands/exportpaperkeycommand.cpp:91
-#: src/commands/importpaperkeycommand.cpp:174
+#: src/commands/importpaperkeycommand.cpp:182
 #, kde-format
 msgctxt "@title"
 msgid "Failed to find PaperKey executable."
@@ -1167,14 +1167,14 @@ msgstr "सीआरएल फाइल ल सफलतापूर्वक �
 msgid "Import CRL Finished"
 msgstr "सीआरएल आयात पूरा"
 
-#: src/commands/importpaperkeycommand.cpp:108
+#: src/commands/importpaperkeycommand.cpp:110
 #: src/crypto/autodecryptverifyfilescontroller.cpp:225
 #, fuzzy, kde-kuit-format
 #| msgid "Could not remove file \"%1\" for overwriting."
 msgid "Cannot open <filename>%1</filename> for reading."
 msgstr "फाइल ल मिटा के लिखे बर \"%1\" ल मिटा नइ सकिस."
 
-#: src/commands/importpaperkeycommand.cpp:151
+#: src/commands/importpaperkeycommand.cpp:161
 #, fuzzy, kde-format
 #| msgid ""
 #| "Failed to execute gpgsm:\n"
@@ -1184,7 +1184,13 @@ msgstr ""
 "जीपीजीएसएम चलाय मं फेल:\n"
 "%1"
 
-#: src/commands/importpaperkeycommand.cpp:170
+#: src/commands/importpaperkeycommand.cpp:169
+#, kde-kuit-format
+msgctxt "@info"
+msgid "Successfully restored the secret key parts from <filename>%1</filename>"
+msgstr ""
+
+#: src/commands/importpaperkeycommand.cpp:178
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1193,20 +1199,20 @@ msgid ""
 "installed.</para>"
 msgstr ""
 
-#: src/commands/importpaperkeycommand.cpp:179
+#: src/commands/importpaperkeycommand.cpp:187
 #, fuzzy, kde-format
 #| msgid "Select File"
 msgid "Select input file"
 msgstr "फाइल चुनव"
 
-#: src/commands/importpaperkeycommand.cpp:215
+#: src/commands/importpaperkeycommand.cpp:223
 #, fuzzy, kde-format
 #| msgid "Exporting secret key..."
 msgctxt "@title:window"
 msgid "Error importing secret key"
 msgstr "गोपनीय कुंजी निर्यात करत हे ..."
 
-#: src/commands/importpaperkeycommand.cpp:221
+#: src/commands/importpaperkeycommand.cpp:229
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1215,7 +1221,7 @@ msgid ""
 "<icode>%1</icode> for details.</para>"
 msgstr ""
 
-#: src/commands/importpaperkeycommand.cpp:230
+#: src/commands/importpaperkeycommand.cpp:238
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "<qt><p>An error occurred while trying to export the certificate:</p><p><b>"
@@ -1228,12 +1234,6 @@ msgid ""
 msgstr ""
 "<qt><p>प्रमानपत्र:</p><p><b>%1</b></p> निर्यात करे के कोसिसों के समय एक गलती हो "
 "गिस</qt>"
-
-#: src/commands/importpaperkeycommand.cpp:238
-#, kde-kuit-format
-msgctxt "@info"
-msgid "Successfully restored the secret key parts from <filename>%1</filename>"
-msgstr ""
 
 #: src/commands/keytocardcommand.cpp:103
 #, fuzzy, kde-format
@@ -6081,18 +6081,18 @@ msgid ""
 "<application>%1</application> support.</para>"
 msgstr ""
 
-#: src/selftest/enginecheck.cpp:115
+#: src/selftest/enginecheck.cpp:118
 #, kde-format
 msgid "not properly installed"
 msgstr ""
 
-#: src/selftest/enginecheck.cpp:117
+#: src/selftest/enginecheck.cpp:120
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<para>Backend <command>%1</command> is not installed properly.</para>"
 msgstr ""
 
-#: src/selftest/enginecheck.cpp:119
+#: src/selftest/enginecheck.cpp:122
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -6100,12 +6100,12 @@ msgid ""
 "para>"
 msgstr ""
 
-#: src/selftest/enginecheck.cpp:122
+#: src/selftest/enginecheck.cpp:125
 #, kde-format
 msgid "too old"
 msgstr ""
 
-#: src/selftest/enginecheck.cpp:124
+#: src/selftest/enginecheck.cpp:127
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -6113,19 +6113,19 @@ msgid ""
 "version %3 is required.</para>"
 msgstr ""
 
-#: src/selftest/enginecheck.cpp:130 src/selftest/enginecheck.cpp:182
+#: src/selftest/enginecheck.cpp:133 src/selftest/enginecheck.cpp:185
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
 "<para>Install <application>%1</application> version %2 or higher.</para>"
 msgstr ""
 
-#: src/selftest/enginecheck.cpp:133
+#: src/selftest/enginecheck.cpp:136
 #, kde-format
 msgid "unknown problem"
 msgstr ""
 
-#: src/selftest/enginecheck.cpp:135
+#: src/selftest/enginecheck.cpp:138
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -6133,7 +6133,7 @@ msgid ""
 "<envar>PATH</envar>.</para>"
 msgstr ""
 
-#: src/selftest/enginecheck.cpp:179
+#: src/selftest/enginecheck.cpp:182
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -6141,7 +6141,7 @@ msgid ""
 "only %5 is installed.</para>"
 msgstr ""
 
-#: src/selftest/enginecheck.cpp:187
+#: src/selftest/enginecheck.cpp:190
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -6149,7 +6149,7 @@ msgid ""
 "seem available.</para><para>See tests further up for more information.</para>"
 msgstr ""
 
-#: src/selftest/enginecheck.cpp:191
+#: src/selftest/enginecheck.cpp:194
 #, kde-kuit-format
 msgctxt "@info %1: test name"
 msgid "<para>See \"%1\" above.</para>"
