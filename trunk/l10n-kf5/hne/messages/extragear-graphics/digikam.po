@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-04-30 02:51+0200\n"
+"POT-Creation-Date: 2017-05-02 05:37+0200\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -2210,8 +2210,10 @@ msgstr "नाम:"
 msgid "Date:"
 msgstr "तारीकः"
 
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
 #: app/utils/tooltipfiller.cpp:97
 #: showfoto/thumbbar/showfototooltipfiller.cpp:84
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:314
 #: utilities/imageeditor/tools/transform/ratiocroptool.cpp:369
 #: utilities/importui/items/importtooltipfiller.cpp:82
 #: utilities/queuemanager/tools/transform/crop.cpp:117
@@ -2604,7 +2606,7 @@ msgstr "फोटू टैग देखाव"
 msgid "Show Fullscreen"
 msgstr "पूरा स्क्रीन मोड से बाहिर हों"
 
-#: app/views/leftsidebarwidgets.cpp:171 libs/album/album.cpp:472
+#: app/views/leftsidebarwidgets.cpp:171 libs/album/album.cpp:473
 #: libs/album/albummanager.cpp:1041 libs/album/albumselectiontreeview.cpp:187
 #: libs/album/albumselectors.cpp:131 libs/database/utils/dbstatdlg.cpp:70
 #: libs/models/albummodel.cpp:50
@@ -2635,7 +2637,7 @@ msgstr "पहिली फोटू"
 msgid "No Tags Album"
 msgstr "मोर एलबम"
 
-#: app/views/leftsidebarwidgets.cpp:379 libs/album/album.cpp:534
+#: app/views/leftsidebarwidgets.cpp:379 libs/album/album.cpp:535
 #: libs/album/albummanager.cpp:1044 libs/album/albumselectors.cpp:134
 #: libs/database/utils/dbstatdlg.cpp:74
 #: libs/dmetadata/dmetadatasettingscontainer.h:53
@@ -3314,10 +3316,12 @@ msgstr ""
 msgid "Unit"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, label_2)
 #: app/views/tableview/tableview_column_thumbnail.cpp:83
 #: app/views/tableview/tableview_column_thumbnail.cpp:93
 #: libs/dtrash/dtrashitemmodel.cpp:190
 #: utilities/assistants/common/dimageslist.cpp:286
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:225
 #: utilities/geolocation/editor/items/gpsimageitem.cpp:501
 #: utilities/queuemanager/views/queuelist.cpp:315
 #, fuzzy, kde-format
@@ -3552,32 +3556,32 @@ msgstr ""
 msgid "Trash"
 msgstr ""
 
-#: libs/album/album.cpp:734
+#: libs/album/album.cpp:735
 #, fuzzy, kde-format
 msgid "Current Timeline Search"
 msgstr "अभी हाल के खोज"
 
-#: libs/album/album.cpp:740
+#: libs/album/album.cpp:741
 #, kde-format
 msgid "Current Fuzzy Image Search"
 msgstr "अभी हाल के फजी फोटू खोज"
 
-#: libs/album/album.cpp:744
+#: libs/album/album.cpp:745
 #, kde-format
 msgid "Current Fuzzy Sketch Search"
 msgstr "अभी हाल के फजी स्केच खोज"
 
-#: libs/album/album.cpp:751
+#: libs/album/album.cpp:752
 #, kde-format
 msgid "Current Map Search"
 msgstr "अभी हाल के मैप खोज"
 
-#: libs/album/album.cpp:756
+#: libs/album/album.cpp:757
 #, kde-format
 msgid "Current Search"
 msgstr "अभी हाल के खोज"
 
-#: libs/album/album.cpp:759
+#: libs/album/album.cpp:760
 #, fuzzy, kde-format
 msgid "Current Duplicates Search"
 msgstr "अभी हाल के मैप खोज"
@@ -9982,7 +9986,9 @@ msgstr "16 बिट्स"
 msgid "8 bits"
 msgstr "8 बिट्स"
 
+#. i18n: ectx: property (text), widget (QLabel, label)
 #: libs/imageproperties/imagepropertiescolorstab.cpp:721
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:22
 #, kde-format
 msgid "Full Image"
 msgstr "पूरा फोटू"
@@ -12550,6 +12556,7 @@ msgid "Raw information about the ICC profile manufacturer"
 msgstr "आईसीसी प्रोफाइल बनइया परिचय रा जानकारी"
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:134
+#: utilities/assistants/htmlexport/generator/generator.cpp:353
 #: utilities/setup/camera/setupcamera.cpp:300
 #, kde-format
 msgid "Model"
@@ -13312,6 +13319,7 @@ msgid "Developer (2004)"
 msgstr "डेवलपर (२००४)"
 
 #: libs/widgets/mainview/ditemtooltip.cpp:55
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:223
 #, kde-format
 msgid "unavailable"
 msgstr "नइ मिलत "
@@ -18716,6 +18724,397 @@ msgid ""
 "risk.</p></qt>"
 msgstr ""
 
+#: utilities/assistants/htmlexport/generator/generator.cpp:144
+#, fuzzy, kde-format
+msgid "Could not find theme in '%1'"
+msgstr "'%1' नइ बना सकिस"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:153
+#, fuzzy, kde-format
+#| msgid "Loading themes"
+msgid "Copying theme"
+msgstr "प्रसंग लोड करत हे"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:169
+#, fuzzy, kde-format
+msgid "Could not copy theme"
+msgstr "'%1' नइ बना सकिस"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:197
+#, fuzzy, kde-format
+#| msgid "Downloading file %1..."
+msgid "Downloading remote files for \"%1\""
+msgstr "फाइल %1 डाउनलोड करत हे..."
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:217
+#, fuzzy, kde-format
+#| msgid "Failed to delete file \"%1\"."
+msgid "Could not open temporary file"
+msgstr "फाइल \"%1\" मेटाय मं फेल."
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:233
+#, fuzzy, kde-format
+msgid "Could not download %1"
+msgstr "'%1' नइ बना सकिस"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:256
+#, fuzzy, kde-format
+msgid "Could not create gallery.xml"
+msgstr "औसत के गनना नइ कर सकिस."
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:308
+#, fuzzy, kde-format
+#| msgid "Deleting file %1..."
+msgid "Generating files for \"%1\""
+msgstr "फाइल %1 मिटात हे..."
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:346
+#, fuzzy, kde-format
+msgid "Previous"
+msgstr "पिछला"
+
+#. i18n: ectx: property (text), widget (QPushButton, m_nextButton)
+#: utilities/assistants/htmlexport/generator/generator.cpp:347
+#: utilities/presentation/audio/presentationaudiowidget.ui:50
+#: utilities/presentation/widgets/presentationctrlwidget.ui:51
+#, fuzzy, kde-format
+msgid "Next"
+msgstr "अगला"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:348
+#, fuzzy, kde-format
+#| msgid "Collections"
+msgid "Collection List"
+msgstr "संग्रह"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:349
+#, fuzzy, kde-format
+msgid "Original Image"
+msgstr "असली फोटू:"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:350
+#, kde-format
+msgid "Go Up"
+msgstr ""
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:352
+#, fuzzy, kde-format
+msgid "Make"
+msgstr "मेक:"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:354
+#, fuzzy, kde-format
+msgid "Image Orientation"
+msgstr "फोटू सीर्सक"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:355
+#, fuzzy, kde-format
+msgid "Image X Resolution"
+msgstr "फोटू आयाम देखाव"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:356
+#, fuzzy, kde-format
+msgid "Image Y Resolution"
+msgstr "फोटू आयाम देखाव"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:357
+#, fuzzy, kde-format
+msgid "Image Resolution Unit"
+msgstr "फोटू आयाम देखाव"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:358
+#, fuzzy, kde-format
+#| msgid "Date & Time"
+msgid "Image Date Time"
+msgstr "तारीक अउ समय"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:359
+#, fuzzy, kde-format
+msgid "YCBCR Positioning"
+msgstr "इरोजन:"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:360
+#, fuzzy, kde-format
+#| msgid "Exposure time"
+msgid "Exposure Time"
+msgstr "एक्सपोजर समय"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:361
+#, fuzzy, kde-format
+#| msgid "Number:"
+msgid "F Number"
+msgstr "संख्या:"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:362
+#, fuzzy, kde-format
+msgid "Exposure Index"
+msgstr "एक्सपोजर समय"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:363
+#, fuzzy, kde-format
+#| msgid "Imported ratings"
+msgid "ISO Speed Ratings"
+msgstr "दरजा आयातित"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:364
+#, kde-format
+msgid "Shutter Speed Value"
+msgstr ""
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:365
+#, fuzzy, kde-format
+#| msgid "Aperture: "
+msgid "Aperture Value"
+msgstr "एपर्चरः"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:366
+#, fuzzy, kde-format
+msgid "Focal Length"
+msgstr "फोकल लंबाई:"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:367
+#, fuzzy, kde-format
+msgid "GPS Altitude"
+msgstr "<b>ऊँचाई</b>:"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:368
+#, fuzzy, kde-format
+#| msgid "Latitude"
+msgid "GPS Latitude"
+msgstr "अच्छांस"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:369
+#, fuzzy, kde-format
+#| msgid "Longitude"
+msgid "GPS Longitude"
+msgstr "देसान्तर"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:396
+#, fuzzy, kde-format
+msgid "Generating HTML files"
+msgstr "एक्जइफ रोटेटिंग फाइल %1..."
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:404
+#, fuzzy, kde-format
+msgid "Could not load XSL file '%1'"
+msgstr "'%1' नइ बना सकिस"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:413
+#, fuzzy, kde-format
+msgid "Could not load XML file '%1'"
+msgstr "'%1' नइ बना सकिस"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:449
+#, fuzzy, kde-format
+msgid "Error processing XML file"
+msgstr "फोटू '%1' ल लोड करे मं गलती होइस"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:458
+#: utilities/assistants/htmlexport/generator/generator.cpp:466
+#, fuzzy, kde-format
+#| msgid "Failed to open file for writing"
+msgid "Could not open '%1' for writing"
+msgstr "फाइल ल लिखे बर खोले मं फेल"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:489
+#, fuzzy, kde-format
+msgid "Could not create folder '%1' in '%2'"
+msgstr "फोटू '%1' ल '%2' मं सहेज नइ सकिस"
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:102
+#, fuzzy, kde-format
+msgid "Could not read image '%1'"
+msgstr "'%1' नइ बना सकिस"
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:115
+#, fuzzy, kde-format
+msgid "Error loading RAW image '%1'"
+msgstr "फोटू '%1' ल लोड करे मं गलती होइस"
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:125
+#, kde-format
+msgid "Format of image '%1' is unknown"
+msgstr ""
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:136
+#, fuzzy, kde-format
+#| msgid "Error Saving File"
+msgid "Error loading image '%1'"
+msgstr "फाइल सहेजे मं गलती होइस"
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:185
+#, fuzzy, kde-format
+msgid "Could not save image '%1' to '%2'"
+msgstr "फोटू '%1' ल '%2' मं सहेज नइ सकिस"
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:214
+#, fuzzy, kde-format
+#| msgid "Cannot create thumbnail for %1"
+msgid "Could not save thumbnail for image '%1' to '%2'"
+msgstr "%1 बर छोटेफोटू बनाय नइ जा सके"
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:446
+#, fuzzy, kde-format
+#| msgid "Failed to open file for writing"
+msgid "Could not open file '%1' for writing"
+msgstr "फाइल ल लिखे बर खोले मं फेल"
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:452
+#, fuzzy, kde-format
+msgid "Could not save image to file '%1'"
+msgstr "%1 मं फाइल सूची बनाना फेल"
+
+#: utilities/assistants/htmlexport/plugin_htmlexport.cpp:103
+#, kde-format
+msgid "Export to &HTML..."
+msgstr ""
+
+#: utilities/assistants/htmlexport/plugin_htmlexport.cpp:133
+#, fuzzy, kde-format
+#| msgid "Deleting file %1..."
+msgid "Generating gallery..."
+msgstr "फाइल %1 मिटात हे..."
+
+#: utilities/assistants/htmlexport/plugin_htmlexport.cpp:145
+#, kde-format
+msgid "Finished, but some warnings occurred."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, mSaveImageButton)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:29
+#, fuzzy, kde-format
+#| msgid "Save Images"
+msgid "Save image"
+msgstr "फोटू सहेजव"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2_2_2)
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2_2)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:39
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:232
+#: utilities/metadataedit/iptc/iptcenvelope.cpp:246
+#, kde-format
+msgid "Format:"
+msgstr "फार्मेटः"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_fullFormat)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_thumbnailFormat)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:56
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:249
+#: utilities/queuemanager/tools/custom/userscript.cpp:101
+#, fuzzy, kde-format
+msgid "JPEG"
+msgstr "लिबजेपीईजी"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_fullFormat)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_thumbnailFormat)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:61
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:254
+#: utilities/queuemanager/tools/custom/userscript.cpp:102
+#, fuzzy, kde-format
+msgid "PNG"
+msgstr "लिबपीएनजी"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#. i18n: ectx: property (text), widget (QLabel, textLabel4_2)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:85
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:278
+#, fuzzy, kde-format
+msgid "Quality:"
+msgstr "जेपीईजी गुन:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_fullResize)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:130
+#, fuzzy, kde-format
+#| msgid "Matrix size:"
+msgid "Max size:"
+msgstr "माट्रिक्स आकार:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_copyOriginalImage)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:171
+#, kde-format
+msgid "Include full-size original images for download"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, mUseOriginalImageButton)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:196
+#, fuzzy, kde-format
+msgid "Use original image"
+msgstr "असली फोटू:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_thumbnailSquare)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:346
+#, fuzzy, kde-format
+msgid "Square thumbnails"
+msgstr "छोटेफोटू देखाव"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: utilities/assistants/htmlexport/wizard/outputpage.ui:21
+#, fuzzy, kde-format
+#| msgid "Destination:"
+msgid "Destination folder:"
+msgstr "गंतव्य:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_openInBrowser)
+#: utilities/assistants/htmlexport/wizard/outputpage.ui:39
+#, fuzzy, kde-format
+#| msgid "Open in Konqueror"
+msgid "Open in browser"
+msgstr "कान्करर मं खोलव"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: utilities/assistants/htmlexport/wizard/themeparameterspage.ui:22
+#, kde-format
+msgid ""
+"In this page, you can change some theme parameters. Depending on the theme, "
+"different parameters are available."
+msgstr ""
+
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:176
+#, kde-format
+msgctxt "'%1' is a label for a theme parameter"
+msgid "%1:"
+msgstr ""
+
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:216
+#, kde-format
+msgid "Export image collections to HTML pages"
+msgstr ""
+
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:221
+#, fuzzy, kde-format
+msgid "Collection Selection"
+msgstr "चयन लहुटाव"
+
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:227
+#, fuzzy, kde-format
+#| msgid "&Themes"
+msgid "Theme"
+msgstr "प्रसंग (&T)"
+
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:233
+#, fuzzy, kde-format
+msgid "Theme Parameters"
+msgstr "पैरेन्ट्स"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:234
+#: utilities/imageeditor/printiface/printoptionspage.ui:13
+#, fuzzy, kde-format
+msgid "Image Settings"
+msgstr "कैमरा सेटिंग"
+
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:235
+#, fuzzy, kde-format
+#| msgid "Output device"
+msgid "Output"
+msgstr "आउटपुट उपकरन"
+
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:295
+#, fuzzy, kde-format
+#| msgid "Author:"
+msgid "Author: %1"
+msgstr "लेखकः"
+
 #: utilities/assistants/panorama/importwizard/panointropage.cpp:93
 #, kde-format
 msgctxt "@title:window"
@@ -21905,12 +22304,6 @@ msgid ""
 "<p>Color Management is disabled.</p> <p>You can enable it now by clicking on "
 "the \"Settings\" button.</p>"
 msgstr ""
-
-#. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
-#: utilities/imageeditor/printiface/printoptionspage.ui:13
-#, fuzzy, kde-format
-msgid "Image Settings"
-msgstr "कैमरा सेटिंग"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintAutoRotate)
 #: utilities/imageeditor/printiface/printoptionspage.ui:49
@@ -28131,11 +28524,6 @@ msgstr "परिभासित नइ"
 msgid "Select here the envelope priority."
 msgstr "इहां भाखा सामान ल चुनव."
 
-#: utilities/metadataedit/iptc/iptcenvelope.cpp:246
-#, kde-format
-msgid "Format:"
-msgstr "फार्मेटः"
-
 #: utilities/metadataedit/iptc/iptcenvelope.cpp:259
 #, fuzzy, kde-format
 msgid "Select here envelope file format."
@@ -29984,13 +30372,6 @@ msgstr "स्टोन"
 msgid "Prev"
 msgstr "प्रिव्यू"
 
-#. i18n: ectx: property (text), widget (QPushButton, m_nextButton)
-#: utilities/presentation/audio/presentationaudiowidget.ui:50
-#: utilities/presentation/widgets/presentationctrlwidget.ui:51
-#, fuzzy, kde-format
-msgid "Next"
-msgstr "अगला"
-
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: utilities/presentation/audio/presentationaudiowidget.ui:70
 #, fuzzy, kde-format
@@ -30870,16 +31251,6 @@ msgstr "आउटपुट उपकरन"
 #, kde-format
 msgid "Same as input"
 msgstr ""
-
-#: utilities/queuemanager/tools/custom/userscript.cpp:101
-#, fuzzy, kde-format
-msgid "JPEG"
-msgstr "लिबजेपीईजी"
-
-#: utilities/queuemanager/tools/custom/userscript.cpp:102
-#, fuzzy, kde-format
-msgid "PNG"
-msgstr "लिबपीएनजी"
 
 #: utilities/queuemanager/tools/custom/userscript.cpp:103
 #, fuzzy, kde-format
@@ -36668,16 +37039,10 @@ msgstr "हराः"
 #~ msgid "Getting Metadata for %1..."
 #~ msgstr "%1 बर छोटेफोटू बनाय नइ जा सके"
 
-#~ msgid "Downloading file %1..."
-#~ msgstr "फाइल %1 डाउनलोड करत हे..."
-
 #, fuzzy
 #~| msgid "Failed to delete file \"%1\"."
 #~ msgid "Fix Internal date to file %1..."
 #~ msgstr "फाइल \"%1\" मेटाय मं फेल."
-
-#~ msgid "Deleting file %1..."
-#~ msgstr "फाइल %1 मिटात हे..."
 
 #, fuzzy
 #~| msgid "Downloading file %1..."
@@ -37047,9 +37412,6 @@ msgstr "हराः"
 
 #~ msgid "Checking ICC repository"
 #~ msgstr "आईसीसी रेपासिटरी जांच करत हे "
-
-#~ msgid "Loading themes"
-#~ msgstr "प्रसंग लोड करत हे"
 
 #, fuzzy
 #~| msgid "Reverse ordering"
@@ -37470,9 +37832,6 @@ msgstr "हराः"
 
 #~ msgid "Border Color: "
 #~ msgstr "किनारा रंग:"
-
-#~ msgid "Failed to open file for writing"
-#~ msgstr "फाइल ल लिखे बर खोले मं फेल"
 
 #~ msgid "Album Banner"
 #~ msgstr "एलबम बैनर"
@@ -38326,11 +38685,6 @@ msgstr "हराः"
 #~ msgstr "लोकल सेटिंग"
 
 #, fuzzy
-#~| msgid "Author:"
-#~ msgid "Authors:"
-#~ msgstr "लेखकः"
-
-#, fuzzy
 #~| msgid "Auto Correction"
 #~ msgid "Author Position"
 #~ msgstr "अपने-अपन-सुधार"
@@ -38564,9 +38918,6 @@ msgstr "हराः"
 #~| msgid "Tag name already exists"
 #~ msgid "A root album in folder \"%1\" already exists."
 #~ msgstr "टैग नाम पहिली से ही मौजूद हे"
-
-#~ msgid "Open in Konqueror"
-#~ msgstr "कान्करर मं खोलव"
 
 #~ msgid "<b>Modified</b>:"
 #~ msgstr "<b>परिवर्धित</b>:"
