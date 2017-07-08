@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-07-05 06:18+0200\n"
+"POT-Creation-Date: 2017-07-08 03:01+0200\n"
 "PO-Revision-Date: 2009-03-03 10:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -30,19 +30,19 @@ msgstr "कागद यूआरएल: %1 पहिली से ही सं
 msgid "Account"
 msgstr "खाता"
 
-#: kernel/kptcalendar.cpp:46 kernel/kptcalendar.cpp:58
-#: ui/kptcalendareditor.cpp:199 ui/kptcalendareditor.cpp:643
+#: kernel/kptcalendar.cpp:53 kernel/kptcalendar.cpp:65
+#: ui/kptcalendareditor.cpp:202 ui/kptcalendareditor.cpp:646
 #, kde-format
 msgid "Undefined"
 msgstr "अपरिभासित "
 
-#: kernel/kptcalendar.cpp:48 kernel/kptcalendar.cpp:58
-#: ui/kptcalendareditor.cpp:197 ui/kptcalendareditor.cpp:641
+#: kernel/kptcalendar.cpp:55 kernel/kptcalendar.cpp:65
+#: ui/kptcalendareditor.cpp:200 ui/kptcalendareditor.cpp:644
 #, kde-format
 msgid "Non-working"
 msgstr "अकाम वाले"
 
-#: kernel/kptcalendar.cpp:50 kernel/kptcalendar.cpp:58
+#: kernel/kptcalendar.cpp:57 kernel/kptcalendar.cpp:65
 #, kde-format
 msgid "Working"
 msgstr "काम वाले"
@@ -204,6 +204,7 @@ msgstr "सेड्यूलिंग लाग"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
 #: kernel/kptnode.cpp:140 kernel/kptnode.cpp:1641 kernel/kpttask.cpp:3753
+#: models/kptcalendarmodel.cpp:419 models/kptcalendarmodel.cpp:439
 #: models/kptnodeitemmodel.cpp:398 models/kptnodeitemmodel.cpp:414
 #: models/kptnodeitemmodel.cpp:424 models/kptnodeitemmodel.cpp:622
 #: models/kptnodeitemmodel.cpp:639 models/kptnodeitemmodel.cpp:657
@@ -945,68 +946,94 @@ msgstr "कुल"
 msgid "The total cost for the account shown as: Actual cost [ Planned cost ]"
 msgstr "खाता के कुल कीमत"
 
-#: models/kptcalendarmodel.cpp:288
+#: models/kptcalendarmodel.cpp:296
 #, fuzzy, kde-kuit-format
 #| msgid "Default account:"
 msgctxt "1=calendar name"
 msgid "%1 (Default calendar)"
 msgstr "डिफाल्ट खाता:"
 
-#: models/kptcalendarmodel.cpp:305 models/kptresourcemodel.cpp:138
+#: models/kptcalendarmodel.cpp:313 models/kptresourcemodel.cpp:138
 #: models/kptresourcemodel.cpp:147 models/kptresourcemodel.cpp:163
 #: models/kptresourcemodel.cpp:172
 #, kde-format
 msgid "Local"
 msgstr ""
 
-#: models/kptcalendarmodel.cpp:305 models/kptresourcemodel.cpp:138
+#: models/kptcalendarmodel.cpp:313 models/kptresourcemodel.cpp:138
 #: models/kptresourcemodel.cpp:147 models/kptresourcemodel.cpp:163
 #: models/kptresourcemodel.cpp:172
 #, kde-format
 msgid "Shared"
 msgstr ""
 
-#: models/kptcalendarmodel.cpp:310
+#: models/kptcalendarmodel.cpp:318
 #, kde-kuit-format
 msgctxt "@info:tooltip 1=calendar name"
 msgid "%1 is a <emphasis>Local</emphasis> calendar"
 msgstr ""
 
-#: models/kptcalendarmodel.cpp:312
+#: models/kptcalendarmodel.cpp:320
 #, kde-kuit-format
 msgctxt "@info:tooltip 1=calendar name"
 msgid "%1 is a <emphasis>Shared</emphasis> calendar"
 msgstr ""
 
-#: models/kptcalendarmodel.cpp:325
+#: models/kptcalendarmodel.cpp:333
 #, fuzzy
 #| msgid "Modify Calendar"
 msgctxt "(qtundo-format)"
 msgid "Modify calendar name"
 msgstr "कलेन्डर सुधारव"
 
-#: models/kptcalendarmodel.cpp:333
+#: models/kptcalendarmodel.cpp:341
 #, fuzzy
 #| msgid "Default account:"
 msgctxt "(qtundo-format)"
 msgid "De-select as default calendar"
 msgstr "डिफाल्ट खाता:"
 
-#: models/kptcalendarmodel.cpp:339
+#: models/kptcalendarmodel.cpp:347
 #, fuzzy
 #| msgid "Default account:"
 msgctxt "(qtundo-format)"
 msgid "Select as default calendar"
 msgstr "डिफाल्ट खाता:"
 
-#: models/kptcalendarmodel.cpp:397
+#: models/kptcalendarmodel.cpp:405
 #, fuzzy
 #| msgid "Modify Calendar"
 msgctxt "(qtundo-format)"
 msgid "Modify calendar timezone"
 msgstr "कलेन्डर सुधारव"
 
-#: models/kptcalendarmodel.cpp:448 models/kptnodeitemmodel.cpp:2277
+#: models/kptcalendarmodel.cpp:422 models/kptcalendarmodel.cpp:439
+#, fuzzy, kde-format
+#| msgid "Default"
+msgid "Default"
+msgstr "डिफाल्ट"
+
+#: models/kptcalendarmodel.cpp:432
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "No holidays"
+msgstr ""
+
+#: models/kptcalendarmodel.cpp:434
+#, fuzzy, kde-kuit-format
+#| msgid "Default Definition"
+msgctxt "@info:tooltip"
+msgid "Default region"
+msgstr "डिफाल्ट परिभासा"
+
+#: models/kptcalendarmodel.cpp:474
+#, fuzzy
+#| msgid "Modify Calendar"
+msgctxt "(qtundo-format)"
+msgid "Modify calendar holiday region"
+msgstr "कलेन्डर सुधारव"
+
+#: models/kptcalendarmodel.cpp:532 models/kptnodeitemmodel.cpp:2277
 #: models/kptnodeitemmodel.cpp:5069
 #, fuzzy, kde-kuit-format
 #| msgid "Name"
@@ -1014,120 +1041,141 @@ msgctxt "@title:column"
 msgid "Name"
 msgstr "नाम"
 
-#: models/kptcalendarmodel.cpp:449
+#: models/kptcalendarmodel.cpp:533
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Scope"
 msgstr ""
 
-#: models/kptcalendarmodel.cpp:450
+#: models/kptcalendarmodel.cpp:534
 #, fuzzy, kde-kuit-format
 #| msgid "Timezone"
 msgctxt "@title:column"
 msgid "Timezone"
 msgstr "समयछेत्र"
 
-#: models/kptcalendarmodel.cpp:539
+#: models/kptcalendarmodel.cpp:536
+#, fuzzy, kde-kuit-format
+#| msgid "Modify Relation"
+msgctxt "@title:column"
+msgid "Holiday Region"
+msgstr "संबंध सुधारव"
+
+#: models/kptcalendarmodel.cpp:552
+#, fuzzy, kde-kuit-format
+#| msgid "The scheduling direction"
+msgctxt "@info:tooltip"
+msgid "The holiday region"
+msgstr "सारिनी दिसा"
+
+#: models/kptcalendarmodel.cpp:629
 #, fuzzy
 #| msgid "Parent calendar:"
 msgctxt "(qtundo-format)"
 msgid "Re-parent calendar"
 msgstr "पैरेन्ट कलेन्डर:"
 
-#: models/kptcalendarmodel.cpp:542
+#: models/kptcalendarmodel.cpp:632
 #, fuzzy
 #| msgid "Add Calendar"
 msgctxt "(qtundo-format)"
 msgid "Move calendar"
 msgstr "कलेन्डर जोड़व"
 
-#: models/kptcalendarmodel.cpp:598
+#: models/kptcalendarmodel.cpp:688
 #, fuzzy
 #| msgid "Add Calendar"
 msgctxt "(qtundo-format)"
 msgid "Add calendar"
 msgstr "कलेन्डर जोड़व"
 
-#: models/kptcalendarmodel.cpp:621
+#: models/kptcalendarmodel.cpp:711
 #, fuzzy
 #| msgid "Delete Selected Calendar"
 msgctxt "(qtundo-format)"
 msgid "Delete calendar"
 msgstr "चुने गे कलेन्डर मेटाव"
 
-#: models/kptcalendarmodel.cpp:789
+#: models/kptcalendarmodel.cpp:879
 #, kde-format
 msgctxt "Undefined"
 msgid "U"
 msgstr "ऊ"
 
-#: models/kptcalendarmodel.cpp:790 models/kptcalendarmodel.cpp:1014
+#: models/kptcalendarmodel.cpp:880 models/kptcalendarmodel.cpp:1100
+#: models/kptcalendarmodel.cpp:1109
 #, kde-format
 msgctxt "NonWorking"
 msgid "NW"
 msgstr "उप"
 
-#: models/kptcalendarmodel.cpp:791
+#: models/kptcalendarmodel.cpp:881
 #, kde-format
 msgctxt "Working"
 msgid "W"
 msgstr "प"
 
-#: models/kptcalendarmodel.cpp:820
+#: models/kptcalendarmodel.cpp:910
 #, fuzzy
 #| msgid "Modify Calendar"
 msgctxt "(qtundo-format)"
 msgid "Modify calendar state"
 msgstr "कलेन्डर सुधारव"
 
-#: models/kptcalendarmodel.cpp:841
+#: models/kptcalendarmodel.cpp:931
 #, fuzzy, kde-format
 msgctxt "1=time 2=The number of hours of work duration (non integer)"
 msgid "%1, %2 hours"
 msgstr "%1 घंटे"
 
-#: models/kptcalendarmodel.cpp:896 models/kptcalendarmodel.cpp:1052
+#: models/kptcalendarmodel.cpp:986 models/kptcalendarmodel.cpp:1152
 #, fuzzy, kde-kuit-format
 #| msgid "Undefined"
 msgctxt "@info:tooltip"
 msgid "Undefined"
 msgstr "अपरिभासित "
 
-#: models/kptcalendarmodel.cpp:899 models/kptcalendarmodel.cpp:1055
+#: models/kptcalendarmodel.cpp:989 models/kptcalendarmodel.cpp:1155
 #, fuzzy, kde-kuit-format
 #| msgid "Non-working"
 msgctxt "@info:tooltip"
 msgid "Non-working"
 msgstr "अकाम वाले"
 
-#: models/kptcalendarmodel.cpp:905 models/kptcalendarmodel.cpp:1061
+#: models/kptcalendarmodel.cpp:995 models/kptcalendarmodel.cpp:1161
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip 1=time 2=The work duration (non integer)"
 msgid "%1, %2"
 msgstr "हफ्ता %1 (%2)"
 
-#: models/kptcalendarmodel.cpp:1245 models/kptcalendarmodel.cpp:1269
+#: models/kptcalendarmodel.cpp:1149
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "Holiday"
+msgstr ""
+
+#: models/kptcalendarmodel.cpp:1345 models/kptcalendarmodel.cpp:1369
 #, fuzzy
 #| msgid "Modify Calendar"
 msgctxt "(qtundo-format)"
 msgid "Modify calendar weekday"
 msgstr "कलेन्डर सुधारव"
 
-#: models/kptcalendarmodel.cpp:1297 models/kptcalendarmodel.cpp:1321
+#: models/kptcalendarmodel.cpp:1397 models/kptcalendarmodel.cpp:1421
 #, fuzzy
 #| msgid "Modify Calendar"
 msgctxt "(qtundo-format)"
 msgid "Modify calendar date"
 msgstr "कलेन्डर सुधारव"
 
-#: models/kptcalendarmodel.cpp:1338
+#: models/kptcalendarmodel.cpp:1438
 #, fuzzy, kde-kuit-format
 #| msgid "Week"
 msgctxt "@title:column"
 msgid "Weekday"
 msgstr "हफ्ता"
 
-#: models/kptcalendarmodel.cpp:1339
+#: models/kptcalendarmodel.cpp:1439
 #, fuzzy, kde-kuit-format
 #| msgid "Date"
 msgctxt "@title:column"
@@ -4539,7 +4587,7 @@ msgstr "खाता जोड़व"
 msgid "Add Subaccount"
 msgstr "उपखाता जोड़व"
 
-#: ui/kptaccountseditor.cpp:270 ui/kptcalendareditor.cpp:630
+#: ui/kptaccountseditor.cpp:270 ui/kptcalendareditor.cpp:633
 #: ui/kptdependencyeditor.cpp:2326 ui/kptresourceeditor.cpp:287
 #: ui/kptscheduleeditor.cpp:290 ui/kpttaskeditor.cpp:729
 #, fuzzy, kde-format, kde-kuit-format
@@ -4666,19 +4714,19 @@ msgstr "अभी हाल के तारीक"
 msgid "Project end"
 msgstr "परियोजना खतम"
 
-#: ui/kptcalendareditor.cpp:195 ui/kptcalendareditor.cpp:639
+#: ui/kptcalendareditor.cpp:198 ui/kptcalendareditor.cpp:642
 #, kde-format
 msgid "Work..."
 msgstr "काम..."
 
-#: ui/kptcalendareditor.cpp:271 ui/kptcalendareditor.cpp:301
+#: ui/kptcalendareditor.cpp:274 ui/kptcalendareditor.cpp:304
 #, fuzzy
 #| msgid "Modify Weekday State"
 msgctxt "(qtundo-format)"
 msgid "Modify Weekday State"
 msgstr "साप्ताहिक स्थिति सुधारव"
 
-#: ui/kptcalendareditor.cpp:388
+#: ui/kptcalendareditor.cpp:391
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -4696,31 +4744,31 @@ msgid ""
 "working resource, when the resources calendar is not explicitly set.</para>"
 msgstr ""
 
-#: ui/kptcalendareditor.cpp:620
+#: ui/kptcalendareditor.cpp:623
 #, kde-format
 msgid "Add Calendar"
 msgstr "कलेन्डर जोड़व"
 
-#: ui/kptcalendareditor.cpp:625
+#: ui/kptcalendareditor.cpp:628
 #, kde-format
 msgid "Add Subcalendar"
 msgstr "उप कलेन्डर जोड़व"
 
-#: ui/kptcalendareditor.cpp:787 ui/kptcalendareditor.cpp:821
+#: ui/kptcalendareditor.cpp:790 ui/kptcalendareditor.cpp:824
 #, fuzzy
 #| msgid "Modify Calendar"
 msgctxt "(qtundo-format)"
 msgid "Modify Calendar"
 msgstr "कलेन्डर सुधारव"
 
-#: ui/kptcalendareditor.cpp:796 ui/kptcalendareditor.cpp:802
+#: ui/kptcalendareditor.cpp:799 ui/kptcalendareditor.cpp:805
 #, fuzzy, kde-format
 #| msgid "%1: Set to Non-Working"
 msgctxt "(qtundo-format)"
 msgid "%1: Set to Non-Working"
 msgstr "%1: अकाम वाले मं सेट हे"
 
-#: ui/kptcalendareditor.cpp:828
+#: ui/kptcalendareditor.cpp:831
 #, fuzzy, kde-format
 #| msgid "Set %1 to Undefined"
 msgctxt "(qtundo-format)"
@@ -7704,9 +7752,6 @@ msgstr ""
 
 #~ msgid "Edit Relationship"
 #~ msgstr "संबंधता संपादित करव"
-
-#~ msgid "Modify Relation"
-#~ msgstr "संबंध सुधारव"
 
 #~ msgctxt "Budgeted Cost of Work Scheduled"
 #~ msgid "BCWS"
