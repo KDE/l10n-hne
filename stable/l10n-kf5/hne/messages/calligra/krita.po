@@ -50,7 +50,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-09-29 05:32+0200\n"
+"POT-Creation-Date: 2017-09-30 05:48+0200\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -9025,8 +9025,8 @@ msgstr "आकार"
 #: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:128
 #: plugins/paintops/libpaintop/kis_auto_brush_widget.cpp:59
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:113
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:86
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:96
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:99
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:109
 #: plugins/paintops/roundmarker/kis_roundmarker_option.cpp:31
 #: plugins/paintops/sketch/kis_sketchop_option.cpp:44
 #: plugins/paintops/spray/kis_spray_shape_option.cpp:57
@@ -10388,7 +10388,7 @@ msgstr "साफ करव"
 #: libs/pigment/colorspaces/KoAlphaColorSpace.cpp:122
 #: libs/pigment/compositeops/KoCompositeOps.h:141
 #: libs/pigment/KoCompositeOpRegistry.cpp:49
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:105
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:118
 #, kde-format
 msgid "Subtract"
 msgstr "घटाव"
@@ -10396,7 +10396,7 @@ msgstr "घटाव"
 #: libs/pigment/colorspaces/KoAlphaColorSpace.cpp:194
 #: libs/pigment/compositeops/KoCompositeOps.h:143
 #: libs/pigment/KoCompositeOpRegistry.cpp:50
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:105
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:118
 #: plugins/tools/karbonplugins/filtereffects/BlendEffectConfigWidget.cpp:39
 #, fuzzy, kde-format
 msgid "Multiply"
@@ -11307,7 +11307,7 @@ msgstr "पथ जोड़व"
 #: libs/pigment/resources/KoColorSet.cpp:485
 #: libs/pigment/resources/KoColorSet.cpp:504
 #: libs/pigment/resources/KoColorSet.cpp:545
-#: libs/ui/actions/kis_selection_action_factories.cpp:421
+#: libs/ui/actions/kis_selection_action_factories.cpp:398
 #: libs/ui/KisView.cpp:705
 #: plugins/extensions/animationrenderer/DlgAnimationRenderer.cpp:63
 #, fuzzy, kde-format
@@ -11361,31 +11361,31 @@ msgctxt "(qtundo-format)"
 msgid "Copy Merged"
 msgstr "फोटू मं कांट-छांट करव"
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:396
-#: libs/ui/actions/kis_selection_action_factories.cpp:428
-#, kde-format
-msgid "(pasted)"
-msgstr "(चिपकाइस)"
-
-#: libs/ui/actions/kis_selection_action_factories.cpp:426
+#: libs/ui/actions/kis_selection_action_factories.cpp:403
 #, fuzzy, kde-format
 msgid "Pasted"
 msgstr "पेस्टल"
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:470
+#: libs/ui/actions/kis_selection_action_factories.cpp:405
+#: libs/ui/actions/KisPasteActionFactory.cpp:86
+#, kde-format
+msgid "(pasted)"
+msgstr "(चिपकाइस)"
+
+#: libs/ui/actions/kis_selection_action_factories.cpp:447
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert to Vector Selection"
 msgstr "सदिस चयन"
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:503
+#: libs/ui/actions/kis_selection_action_factories.cpp:480
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert shapes to vector selection"
 msgstr "सदिस चयन"
 
-#: libs/ui/actions/kis_selection_action_factories.cpp:575
-#: libs/ui/actions/kis_selection_action_factories.cpp:635
+#: libs/ui/actions/kis_selection_action_factories.cpp:552
+#: libs/ui/actions/kis_selection_action_factories.cpp:612
 #: plugins/tools/tool_polyline/kis_tool_polyline.cc:73
 #, fuzzy
 msgctxt "(qtundo-format)"
@@ -15730,12 +15730,12 @@ msgctxt "Auto-generated layer style name for embedded styles (style itself)"
 msgid "<%1> (embedded)"
 msgstr ""
 
-#: libs/ui/kis_selection_manager.cc:553
+#: libs/ui/kis_selection_manager.cc:555
 #, fuzzy, kde-format
 msgid "Stroked Shapes"
 msgstr "स्मीयरी ब्रस"
 
-#: libs/ui/kis_selection_manager.cc:555
+#: libs/ui/kis_selection_manager.cc:557
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Stroke Shapes"
@@ -24764,6 +24764,7 @@ msgstr "कठिन"
 
 #. i18n: ectx: property (text), widget (QLabel, label_20)
 #: plugins/extensions/metadataeditor/editors/exif.ui:873
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:93
 #, kde-format
 msgid "Contrast:"
 msgstr "कंट्रास्टः"
@@ -34094,65 +34095,75 @@ msgid ""
 "depending on its size"
 msgstr ""
 
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:85
+#, kde-format
+msgid "Makes texture lighter or darker"
+msgstr ""
+
 #: plugins/paintops/libpaintop/kis_texture_option.cpp:87
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:97
+#, fuzzy, kde-format
+msgid "Brightness:"
+msgstr "चमकीलापनः"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:100
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:110
 #, fuzzy, kde-format
 msgid "Random Offset"
 msgstr "बेतरतीब आफसेट"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:90
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:103
 #, fuzzy, kde-format
 msgid "Horizontal Offset:"
 msgstr "आड़ा:"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:100
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:113
 #, fuzzy, kde-format
 msgid "Vertical Offset:"
 msgstr "खड़ा:"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:107
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:120
 #, fuzzy, kde-format
 msgid "Texturing Mode:"
 msgstr "मीटरिंग मोड"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:113
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:126
 #, fuzzy, kde-format
 msgid "Cut Off Brush"
 msgstr "मनमाफिक ब्रुस"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:113
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:126
 #, kde-format
 msgid "Cut Off Disabled"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:113
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:126
 #, fuzzy, kde-format
 msgid "Cut Off Pattern"
 msgstr "मनमाफिक पैटर्न"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:115
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:128
 #, fuzzy, kde-format
 msgid "Cutoff Policy:"
 msgstr "काफी"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:121
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:134
 #, kde-format
 msgid ""
 "When pattern texture values are outside the range specified by the slider, "
 "the cut-off policy will be applied."
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:123
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:136
 #, fuzzy, kde-format
 msgid "Cutoff:"
 msgstr "काफी"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:127
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:140
 #, fuzzy, kde-format
 msgid "Invert Pattern:"
 msgstr "संतृप्ति"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:260
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:285
 #, kde-format
 msgctxt "PaintOp instant preview limitation"
 msgid "Texture->Pattern (low quality preview)"
