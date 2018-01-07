@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-12-19 02:59+0100\n"
+"POT-Creation-Date: 2018-01-07 03:03+0100\n"
 "PO-Revision-Date: 2009-03-02 23:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -5052,8 +5052,8 @@ msgstr "चुने गे फारम के डाटा स्रोत म
 msgid "Goes to selected form's data source"
 msgstr "चुने गे फारम के डाटा स्रोत मं जाव"
 
-#: plugins/forms/kexidbfactorybase.cpp:49 plugins/forms/kexiformpart.cpp:365
-#: plugins/reports/kexireportpart.cpp:175
+#: plugins/forms/kexidbfactorybase.cpp:49 plugins/forms/kexiformpart.cpp:366
+#: plugins/reports/kexireportpart.cpp:210
 #, kde-kuit-format
 msgid "Data Source"
 msgstr "डाटा स्रोत"
@@ -5214,24 +5214,31 @@ msgstr "सबसे संकरे में"
 msgid "To Widest"
 msgstr "सबसे चौड़े में"
 
-#: plugins/forms/kexiformpart.cpp:319
+#: plugins/forms/kexiformpart.cpp:320
 #, fuzzy, kde-format
 #| msgid "Design of form \"%1\" has been modified."
 msgctxt "@info"
 msgid "Design of form <resource>%1</resource> has been modified."
 msgstr "फारम के डिजाइन \"%1\" सुधार दे गे हे."
 
-#: plugins/forms/kexiformpart.cpp:321
+#: plugins/forms/kexiformpart.cpp:322
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info"
 msgid "Form <resource>%1</resource> already exists."
 msgstr "चीज \"%1\" सहेजे मं फेल."
 
-#: plugins/forms/kexiformpart.cpp:376
+#: plugins/forms/kexiformpart.cpp:377
 #, kde-kuit-format
 msgid "Widgets"
 msgstr "विजेट्स"
+
+#: plugins/forms/kexiformpart.cpp:446
+#, fuzzy, kde-kuit-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Form <resource>%1</resource>"
+msgstr "चीज \"%1\" सहेजे मं फेल."
 
 #: plugins/forms/kexiformview.cpp:246
 #: plugins/forms/widgets/main/KexiMainFormWidgetsFactory.cpp:86
@@ -7339,7 +7346,7 @@ msgstr "जोड़व नइ"
 msgid "<para>This query is invalid.</para><para>Do you want to save it?</para>"
 msgstr "फाइल \"%1\" पहिली ही मौजूद हे.<p>का आप मन एला कोनो नवा से बदलना चाहू?"
 
-#: plugins/queries/kexiquerypart.cpp:45
+#: plugins/queries/kexiquerypart.cpp:48
 #, kde-kuit-format
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
@@ -7349,38 +7356,74 @@ msgctxt ""
 msgid "query"
 msgstr "क्वैरी"
 
-#: plugins/queries/kexiquerypart.cpp:46
+#: plugins/queries/kexiquerypart.cpp:49
 #, kde-kuit-format
 msgctxt "tooltip"
 msgid "Create new query"
 msgstr "नवा क्वेरी बनाव"
 
-#: plugins/queries/kexiquerypart.cpp:47
+#: plugins/queries/kexiquerypart.cpp:50
 #, kde-kuit-format
 msgctxt "what's this"
 msgid "Creates new query."
 msgstr "नवा क्वैरी बनाथे ."
 
-#: plugins/queries/kexiquerypart.cpp:50
+#: plugins/queries/kexiquerypart.cpp:53
 #, kde-kuit-format
 msgid "SQL"
 msgstr "एसक्यूएल"
 
-#: plugins/queries/kexiquerypart.cpp:174
+#: plugins/queries/kexiquerypart.cpp:108
+#, kde-kuit-format
+msgid ""
+"<para>You are about to delete query <resource>%1</resource> but it is used "
+"by following opened windows:</para>"
+msgstr ""
+
+#: plugins/queries/kexiquerypart.cpp:186
 #, fuzzy, kde-format
 #| msgid "Design of query \"%1\" has been modified."
 msgctxt "@info"
 msgid "Design of query <resource>%1</resource> has been modified."
 msgstr "क्वैरी \"%1\" के ढांचा सुधार दे गे हे."
 
-#: plugins/queries/kexiquerypart.cpp:176
+#: plugins/queries/kexiquerypart.cpp:188
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info"
 msgid "Query <resource>%1</resource> already exists."
 msgstr "चीज \"%1\" सहेजे मं फेल."
 
-#: plugins/queries/kexiquerypart.cpp:202
+#: plugins/queries/kexiquerypart.cpp:236 plugins/tables/kexitablepart.cpp:207
+#, kde-format
+msgctxt "@info/plain Sentence1 Sentence2 Sentence3"
+msgid "%1%2%3"
+msgstr ""
+
+#: plugins/queries/kexiquerypart.cpp:239 plugins/tables/kexitablepart.cpp:210
+#, fuzzy, kde-kuit-format
+#| msgid "Do you want to save the design now?"
+msgctxt "@info"
+msgid ""
+"<para>Do you want to close these windows and save the design or cancel "
+"saving?</para>"
+msgstr "का आप मन ढांचा अभी सहेजना चाहथो ?"
+
+#: plugins/queries/kexiquerypart.cpp:244 plugins/tables/kexitablepart.cpp:215
+#, fuzzy, kde-kuit-format
+#| msgid "Close windows"
+msgctxt "@action:button Close all windows and save"
+msgid "Close Windows and Save"
+msgstr "विंडो बन्द करव"
+
+#: plugins/queries/kexiquerypart.cpp:246 plugins/tables/kexitablepart.cpp:217
+#, fuzzy, kde-kuit-format
+#| msgid "Close windows"
+msgctxt "@info:tooltip Close all windows and save design"
+msgid "Close all windows and save design"
+msgstr "विंडो बन्द करव"
+
+#: plugins/queries/kexiquerypart.cpp:273
 #, fuzzy, kde-kuit-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info"
@@ -7392,23 +7435,23 @@ msgstr "चीज \"%1\" सहेजे मं फेल."
 msgid "Query executing failed."
 msgstr "क्वैरी चलाय मं फेल."
 
-#: plugins/reports/kexireportdesignview.cpp:57
+#: plugins/reports/kexireportdesignview.cpp:58
 #, fuzzy, kde-kuit-format
 #| msgid "Edit Collection..."
 msgid "Edit Sections"
 msgstr "संग्रह संपादित करव..."
 
-#: plugins/reports/kexireportdesignview.cpp:60
+#: plugins/reports/kexireportdesignview.cpp:61
 #, kde-kuit-format
 msgid "Raise"
 msgstr "ऊपर उठाव"
 
-#: plugins/reports/kexireportdesignview.cpp:62
+#: plugins/reports/kexireportdesignview.cpp:63
 #, kde-kuit-format
 msgid "Lower"
 msgstr "निचला"
 
-#: plugins/reports/kexireportpart.cpp:64
+#: plugins/reports/kexireportpart.cpp:65
 #, fuzzy, kde-kuit-format
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
@@ -7418,268 +7461,275 @@ msgctxt ""
 msgid "report"
 msgstr "एक रपट"
 
-#: plugins/reports/kexireportpart.cpp:65
+#: plugins/reports/kexireportpart.cpp:66
 #, kde-kuit-format
 msgctxt "tooltip"
 msgid "Create new report"
 msgstr "नवा रिपोट बनाव"
 
-#: plugins/reports/kexireportpart.cpp:66
+#: plugins/reports/kexireportpart.cpp:67
 #, kde-kuit-format
 msgctxt "what's this"
 msgid "Creates new report."
 msgstr "नवा रिपोट बनाथे ."
 
-#: plugins/reports/kexireportpart.cpp:85
+#: plugins/reports/kexireportpart.cpp:86
 #, fuzzy, kde-format
 #| msgid "Design of report \"%1\" has been modified."
 msgctxt "@info"
 msgid "Design of report <resource>%1</resource> has been modified."
 msgstr "रिपोट के डिजाइन \"%1\" सुधार दे गे हे."
 
-#: plugins/reports/kexireportpart.cpp:87
+#: plugins/reports/kexireportpart.cpp:88
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info"
 msgid "Report <resource>%1</resource> already exists."
 msgstr "चीज \"%1\" सहेजे मं फेल."
 
-#: plugins/reports/kexireportview.cpp:68
+#: plugins/reports/kexireportpart.cpp:183
+#, fuzzy, kde-kuit-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Report <resource>%1</resource>"
+msgstr "चीज \"%1\" सहेजे मं फेल."
+
+#: plugins/reports/kexireportview.cpp:64
 #, fuzzy, kde-kuit-format
 #| msgid "Page:"
 msgctxt "Page selector label"
 msgid "Page:"
 msgstr "पेजः"
 
-#: plugins/reports/kexireportview.cpp:69
+#: plugins/reports/kexireportview.cpp:65
 #, fuzzy, kde-kuit-format
 #| msgid "Go to first row"
 msgid "Go to first page"
 msgstr "पहिली लकीर मं जाव"
 
-#: plugins/reports/kexireportview.cpp:70
+#: plugins/reports/kexireportview.cpp:66
 #, fuzzy, kde-kuit-format
 #| msgid "Go to first row"
 msgid "Goes to first page"
 msgstr "पहिली लकीर मं जाव"
 
-#: plugins/reports/kexireportview.cpp:71
+#: plugins/reports/kexireportview.cpp:67
 #, fuzzy, kde-kuit-format
 #| msgid "Previous Page"
 msgid "Go to previous page"
 msgstr "पिछला पेज"
 
-#: plugins/reports/kexireportview.cpp:72
+#: plugins/reports/kexireportview.cpp:68
 #, fuzzy, kde-kuit-format
 #| msgid "Previous Page"
 msgid "Goes to previous page"
 msgstr "पिछला पेज"
 
-#: plugins/reports/kexireportview.cpp:73
+#: plugins/reports/kexireportview.cpp:69
 #, fuzzy, kde-kuit-format
 #| msgid "Next Page"
 msgid "Go to next page"
 msgstr "अगला पेज"
 
-#: plugins/reports/kexireportview.cpp:74
+#: plugins/reports/kexireportview.cpp:70
 #, fuzzy, kde-kuit-format
 #| msgid "Next Page"
 msgid "Goes to next page"
 msgstr "अगला पेज"
 
-#: plugins/reports/kexireportview.cpp:75
+#: plugins/reports/kexireportview.cpp:71
 #, fuzzy, kde-kuit-format
 #| msgid "Go to last row"
 msgid "Go to last page"
 msgstr "आखरी लकीर मं जाव"
 
-#: plugins/reports/kexireportview.cpp:76
+#: plugins/reports/kexireportview.cpp:72
 #, fuzzy, kde-kuit-format
 #| msgid "Go to last row"
 msgid "Goes to last page"
 msgstr "आखरी लकीर मं जाव"
 
-#: plugins/reports/kexireportview.cpp:77
+#: plugins/reports/kexireportview.cpp:73
 #, fuzzy, kde-kuit-format
 #| msgid "Current row number"
 msgid "Current page number"
 msgstr "अभी हाल के लकीर संख्या"
 
-#: plugins/reports/kexireportview.cpp:77
+#: plugins/reports/kexireportview.cpp:73
 #, fuzzy, kde-kuit-format
 #| msgid "Number of rows"
 msgid "Number of pages"
 msgstr "पंक्तियों के संख्या"
 
-#: plugins/reports/kexireportview.cpp:86
+#: plugins/reports/kexireportview.cpp:82
 #, kde-kuit-format
 msgid "Print"
 msgstr "छापव"
 
-#: plugins/reports/kexireportview.cpp:88
+#: plugins/reports/kexireportview.cpp:84
 #, fuzzy, kde-kuit-format
 #| msgid "Print Report"
 msgid "Print report"
 msgstr "छपाई रपट "
 
-#: plugins/reports/kexireportview.cpp:89
+#: plugins/reports/kexireportview.cpp:85
 #, kde-kuit-format
 msgid "Prints the current report."
 msgstr "अभी हाल के रपट छापथे."
 
-#: plugins/reports/kexireportview.cpp:92
+#: plugins/reports/kexireportview.cpp:88
 #, fuzzy, kde-kuit-format
 #| msgid "Export"
 msgctxt "@title:menu"
 msgid "E&xport As"
 msgstr "निर्यात"
 
-#: plugins/reports/kexireportview.cpp:99
+#: plugins/reports/kexireportview.cpp:95
 #, fuzzy, kde-kuit-format
 #| msgid "Export"
 msgid "Export:"
 msgstr "निर्यात"
 
-#: plugins/reports/kexireportview.cpp:106
+#: plugins/reports/kexireportview.cpp:102
 #, fuzzy, kde-kuit-format
 #| msgid "Set Font..."
 msgctxt "open dialog to export as text document"
 msgid "Text Document..."
 msgstr "फोंट सेट करव..."
 
-#: plugins/reports/kexireportview.cpp:109
+#: plugins/reports/kexireportview.cpp:105
 #, kde-kuit-format
 msgid "Export the report as a text document (in OpenDocument Text format)"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:110
+#: plugins/reports/kexireportview.cpp:106
 #, kde-kuit-format
 msgid "Exports the report as a text document (in OpenDocument Text format)."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:119
+#: plugins/reports/kexireportview.cpp:115
 #, kde-kuit-format
 msgctxt "Portable Document Format..."
 msgid "PDF..."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:122
+#: plugins/reports/kexireportview.cpp:118
 #, fuzzy, kde-kuit-format
 #| msgid "Export data to a file"
 msgid "Export as PDF"
 msgstr "डाटा ल एक फाइल मं निर्यात करव"
 
-#: plugins/reports/kexireportview.cpp:123
+#: plugins/reports/kexireportview.cpp:119
 #, fuzzy, kde-kuit-format
 #| msgid "Prints the current report."
 msgid "Exports the current report as PDF."
 msgstr "अभी हाल के रपट छापथे."
 
-#: plugins/reports/kexireportview.cpp:132
+#: plugins/reports/kexireportview.cpp:128
 #, fuzzy, kde-kuit-format
 #| msgid "&Save Row"
 msgctxt "open dialog to export as spreadsheet"
 msgid "Spreadsheet..."
 msgstr "लकीर सहेजव (&S)"
 
-#: plugins/reports/kexireportview.cpp:135
+#: plugins/reports/kexireportview.cpp:131
 #, kde-kuit-format
 msgid "Export the report as a spreadsheet (in OpenDocument Spreadsheet format)"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:136
+#: plugins/reports/kexireportview.cpp:132
 #, kde-kuit-format
 msgid ""
 "Exports the report as a spreadsheet (in OpenDocument Spreadsheet format)."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:146
+#: plugins/reports/kexireportview.cpp:142
 #, fuzzy, kde-kuit-format
 #| msgid "&Add..."
 msgctxt "open dialog to export as web page"
 msgid "Web Page..."
 msgstr "जोड़व...(&A)"
 
-#: plugins/reports/kexireportview.cpp:149
+#: plugins/reports/kexireportview.cpp:145
 #, fuzzy, kde-kuit-format
 #| msgid "Exports the report to a HTML file."
 msgid "Export the report as a web page (in HTML format)"
 msgstr "डाटा ल एक एचटीएमएल फाइल मं निर्यात करव."
 
-#: plugins/reports/kexireportview.cpp:150
+#: plugins/reports/kexireportview.cpp:146
 #, fuzzy, kde-kuit-format
 #| msgid "Exports the report to a HTML file."
 msgid "Exports the report as a web page (in HTML format)."
 msgstr "डाटा ल एक एचटीएमएल फाइल मं निर्यात करव."
 
-#: plugins/reports/kexireportview.cpp:185
+#: plugins/reports/kexireportview.cpp:181
 #, fuzzy, kde-kuit-format
 #| msgid "Row inserting on the server failed."
 msgid "Printing the report failed."
 msgstr "सर्वर मं लकीर भरव फेल रहा."
 
-#: plugins/reports/kexireportview.cpp:186
+#: plugins/reports/kexireportview.cpp:182
 #, fuzzy, kde-kuit-format
 #| msgid "Saving failed"
 msgid "Print Failed"
 msgstr "सहेजना फेल"
 
-#: plugins/reports/kexireportview.cpp:198
+#: plugins/reports/kexireportview.cpp:194
 #, fuzzy, kde-kuit-format
 #| msgid "Export data to a file"
 msgid "Export Report as PDF"
 msgstr "डाटा ल एक फाइल मं निर्यात करव"
 
-#: plugins/reports/kexireportview.cpp:217
+#: plugins/reports/kexireportview.cpp:213
 #, fuzzy, kde-kuit-format
 #| msgid "Exports the report to a HTML file."
 msgid "Exporting the report as PDF to %1 failed."
 msgstr "डाटा ल एक एचटीएमएल फाइल मं निर्यात करव."
 
-#: plugins/reports/kexireportview.cpp:218
-#: plugins/reports/kexireportview.cpp:274
-#: plugins/reports/kexireportview.cpp:299
-#: plugins/reports/kexireportview.cpp:339
+#: plugins/reports/kexireportview.cpp:214
+#: plugins/reports/kexireportview.cpp:270
+#: plugins/reports/kexireportview.cpp:295
+#: plugins/reports/kexireportview.cpp:335
 #, fuzzy, kde-kuit-format
 #| msgid "Saving failed"
 msgid "Export Failed"
 msgstr "सहेजना फेल"
 
-#: plugins/reports/kexireportview.cpp:246
+#: plugins/reports/kexireportview.cpp:242
 #, fuzzy, kde-kuit-format
 #| msgid "Do you want to open it in Text View?"
 msgid "Do you want to open exported document?"
 msgstr "का आप मन एला पाठ दृस्य मं खोलना चाहू?"
 
-#: plugins/reports/kexireportview.cpp:264
+#: plugins/reports/kexireportview.cpp:260
 #, fuzzy, kde-kuit-format
 #| msgid "Opens the current report in KSpread."
 msgid "Export Report as Spreadsheet"
 msgstr "केस्प्रेड मं अभी हाल के रपट खोलथे."
 
-#: plugins/reports/kexireportview.cpp:273
+#: plugins/reports/kexireportview.cpp:269
 #, fuzzy, kde-kuit-format
 #| msgid "Opens the current report in KSpread."
 msgid "Failed to export the report as spreadsheet to %1."
 msgstr "केस्प्रेड मं अभी हाल के रपट खोलथे."
 
-#: plugins/reports/kexireportview.cpp:289
+#: plugins/reports/kexireportview.cpp:285
 #, kde-kuit-format
 msgid "Export Report as Text Document"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:298
+#: plugins/reports/kexireportview.cpp:294
 #, kde-kuit-format
 msgid "Exporting the report as text document to %1 failed."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:309
+#: plugins/reports/kexireportview.cpp:305
 #, fuzzy, kde-kuit-format
 #| msgid "Export data to a file"
 msgid "Export Report as Web Page"
 msgstr "डाटा ल एक फाइल मं निर्यात करव"
 
-#: plugins/reports/kexireportview.cpp:323
+#: plugins/reports/kexireportview.cpp:319
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7688,37 +7738,37 @@ msgid ""
 "original.</note></para>"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:327
+#: plugins/reports/kexireportview.cpp:323
 #, kde-kuit-format
 msgctxt "@action:button"
 msgid "Use CSS"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:328
+#: plugins/reports/kexireportview.cpp:324
 #, fuzzy, kde-kuit-format
 #| msgid "Table"
 msgctxt "@action:button"
 msgid "Use Table"
 msgstr "टेबल"
 
-#: plugins/reports/kexireportview.cpp:338
+#: plugins/reports/kexireportview.cpp:334
 #, fuzzy, kde-kuit-format
 #| msgid "Exports the report to a HTML file."
 msgid "Exporting the report as web page to %1 failed."
 msgstr "डाटा ल एक एचटीएमएल फाइल मं निर्यात करव."
 
-#: plugins/reports/kexireportview.cpp:400
+#: plugins/reports/kexireportview.cpp:396
 #, fuzzy, kde-kuit-format
 #| msgid "Saving failed"
 msgid "Opening failed"
 msgstr "सहेजना फेल"
 
-#: plugins/reports/kexireportview.cpp:400
+#: plugins/reports/kexireportview.cpp:396
 #, kde-kuit-format
 msgid "Report schema appears to be invalid or corrupt"
 msgstr ""
 
-#: plugins/reports/kexisourceselector.cpp:60
+#: plugins/reports/kexisourceselector.cpp:59
 #, fuzzy, kde-kuit-format
 #| msgid "Form's data source:"
 msgid "Report's data source:"
@@ -8293,18 +8343,18 @@ msgstr "आईडी%1"
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
-"You are about to change the design of table <resource>%1</resource> but "
-"following objects using this table are opened:"
+"<para>You are about to change the design of table <resource>%1</resource> "
+"but following objects using this table are open:</para>"
 msgstr ""
 
-#: plugins/tables/kexitabledesignerview.cpp:1622
+#: plugins/tables/kexitabledesignerview.cpp:1627
 #, fuzzy, kde-kuit-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info"
 msgid "Table field <resource>%1</resource>"
 msgstr "चीज \"%1\" सहेजे मं फेल."
 
-#: plugins/tables/kexitabledesignerview.cpp:1624
+#: plugins/tables/kexitabledesignerview.cpp:1629
 #, kde-kuit-format
 msgctxt "Empty table row"
 msgid "Empty Row"
@@ -8317,7 +8367,7 @@ msgctxt "@info"
 msgid "<para>Do you want to save the design now?</para>%1"
 msgstr "का आप मन ढांचा अभी सहेजना चाहथो ?"
 
-#: plugins/tables/kexitablepart.cpp:62
+#: plugins/tables/kexitablepart.cpp:63
 #, kde-kuit-format
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
@@ -8327,65 +8377,47 @@ msgctxt ""
 msgid "table"
 msgstr "टेबल"
 
-#: plugins/tables/kexitablepart.cpp:63
+#: plugins/tables/kexitablepart.cpp:64
 #, kde-kuit-format
 msgctxt "tooltip"
 msgid "Create new table"
 msgstr "नवा टेबल बनाव"
 
-#: plugins/tables/kexitablepart.cpp:64
+#: plugins/tables/kexitablepart.cpp:65
 #, kde-kuit-format
 msgctxt "what's this"
 msgid "Creates new table."
 msgstr "नवा टेबल बनाथे ."
 
-#: plugins/tables/kexitablepart.cpp:136
+#: plugins/tables/kexitablepart.cpp:137
 #, kde-kuit-format
 msgid ""
-"You are about to remove table <resource>%1</resource> but following objects "
-"using this table are opened:"
+"<para>You are about to delete table <resource>%1</resource> but it is used "
+"by following opened windows:</para>"
 msgstr ""
 
-#: plugins/tables/kexitablepart.cpp:156
-#, kde-kuit-format
-msgid ""
-"You are about to rename table <resource>%1</resource> but following objects "
-"using this table are opened:"
-msgstr ""
-
-#: plugins/tables/kexitablepart.cpp:203
+#: plugins/tables/kexitablepart.cpp:158
 #, kde-format
-msgctxt "@info"
-msgid "<para>%1</para><para>%2</para>"
+msgid ""
+"<para>You are about to rename table <resource>%1</resource> but it is used "
+"by following opened windows:"
 msgstr ""
 
-#: plugins/tables/kexitablepart.cpp:205
-#, kde-kuit-format
-msgid "Do you want to close all windows for these objects?"
-msgstr "का आप मन ए चीज मन के सब्बो विंडो ल बन्द करना चाहथो ?"
-
-#: plugins/tables/kexitablepart.cpp:207
-#, fuzzy, kde-kuit-format
-#| msgid "Close windows"
-msgctxt "@action:button Close All Windows"
-msgid "Close Windows"
-msgstr "विंडो बन्द करव"
-
-#: plugins/tables/kexitablepart.cpp:225
+#: plugins/tables/kexitablepart.cpp:239
 #, fuzzy, kde-format
 #| msgid "Design of table \"%1\" has been modified."
 msgctxt "@info"
 msgid "Design of table <resource>%1</resource> has been modified."
 msgstr "टेबल \"%1\" के ढांचा सुधार दे गे हे."
 
-#: plugins/tables/kexitablepart.cpp:228
+#: plugins/tables/kexitablepart.cpp:242
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info"
 msgid "Table <resource>%1</resource> already exists."
 msgstr "चीज \"%1\" सहेजे मं फेल."
 
-#: plugins/tables/kexitablepart.cpp:232
+#: plugins/tables/kexitablepart.cpp:246
 #, fuzzy, kde-format
 #| msgid ""
 #| "Warning! Any data in this table will be removed upon design's saving!"
@@ -8395,12 +8427,12 @@ msgid ""
 "warning>"
 msgstr "चेतावनी! एखर टेबल के कोनो डाटा डिजाइन ल सहेजे के उपरांत मिटा दे जाही!"
 
-#: plugins/tables/kexitablepart.cpp:261
+#: plugins/tables/kexitablepart.cpp:275
 #, kde-kuit-format
 msgid "Lookup column"
 msgstr "खंभा देखव"
 
-#: plugins/tables/kexitablepart.cpp:290
+#: plugins/tables/kexitablepart.cpp:304
 #, fuzzy, kde-kuit-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info"
@@ -9609,6 +9641,15 @@ msgstr "संकेतक ल आखरी लकीर मं खिसका�
 #| msgid "Moves cursor to new row and allows inserting."
 msgid "Moves cursor to new record and allows inserting."
 msgstr "संकेतक ल नवा लकीर मं खिसकाथे  अउ भरव स्वीकारथे ."
+
+#~ msgid "Do you want to close all windows for these objects?"
+#~ msgstr "का आप मन ए चीज मन के सब्बो विंडो ल बन्द करना चाहथो ?"
+
+#, fuzzy
+#~| msgid "Close windows"
+#~ msgctxt "@action:button Close All Windows"
+#~ msgid "Close Windows"
+#~ msgstr "विंडो बन्द करव"
 
 #, fuzzy
 #~| msgid "Data"
