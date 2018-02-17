@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-02-14 03:21+0100\n"
+"POT-Creation-Date: 2018-02-17 03:23+0100\n"
 "PO-Revision-Date: 2009-01-29 14:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -148,7 +148,7 @@ msgid "Default"
 msgstr "डिफाल्ट"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_Duration)
-#: coverswitch/coverswitch_config.ui:161 slide/slide_config.ui:39
+#: coverswitch/coverswitch_config.ui:161 slide/slide_config.ui:53
 #, fuzzy, kde-format
 #| msgid " msec"
 msgid " milliseconds"
@@ -961,10 +961,11 @@ msgid "Slide"
 msgstr ""
 
 #: effect_builtins.cpp:523
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Display the cube when switching desktops"
 msgctxt "Comment describing the KWin Effect"
-msgid "Slide windows across the screen when switching virtual desktops"
-msgstr ""
+msgid "Slide desktops when switching virtual desktops"
+msgstr "जब डेस्कटाप मं स्विच करथे घन देखाव"
 
 #: effect_builtins.cpp:537
 #, kde-format
@@ -1719,19 +1720,43 @@ msgstr "पाठ रंगः"
 msgid "Text alpha:"
 msgstr "पाठ अल्फा:"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: slide/slide_config.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label_Duration)
+#: slide/slide_config.ui:25
 #, fuzzy, kde-format
 #| msgid "Decorations:"
-msgid "Duration:"
+msgid "D&uration:"
 msgstr "सजावट:"
 
+#. i18n: Duration of the slide animation.
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_Duration)
-#: slide/slide_config.ui:36
+#: slide/slide_config.ui:50
 #, fuzzy, kde-format
-msgctxt "Duration of the slide animation"
 msgid "Default"
 msgstr "डिफाल्ट"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupbox_Gaps)
+#: slide/slide_config.ui:71
+#, kde-format
+msgid "Gap between desktops"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_HorizontalGap)
+#: slide/slide_config.ui:85
+#, kde-format
+msgid "Hori&zontal:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_VerticalGap)
+#: slide/slide_config.ui:127
+#, kde-format
+msgid "Ver&tical:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlideDocks)
+#: slide/slide_config.ui:161
+#, kde-format
+msgid "Slide docks"
+msgstr ""
 
 #: thumbnailaside/thumbnailaside.cpp:38
 #: thumbnailaside/thumbnailaside_config.cpp:73
@@ -2125,6 +2150,11 @@ msgid "Mouse Tracking:"
 msgstr ""
 
 #, fuzzy
+#~ msgctxt "Duration of the slide animation"
+#~ msgid "Default"
+#~ msgstr "डिफाल्ट"
+
+#, fuzzy
 #~| msgid "Right"
 #~ msgctxt "More brightness"
 #~ msgid "Lighter"
@@ -2183,11 +2213,6 @@ msgstr ""
 #~| msgid "Wo&bble when moving"
 #~ msgid "Slide when grouping"
 #~ msgstr "जब खिसकाय जाए, डगमगाव (&b)"
-
-#, fuzzy
-#~| msgid "Display the cube when switching desktops"
-#~ msgid "Slide when switching tabs"
-#~ msgstr "जब डेस्कटाप मं स्विच करथे घन देखाव"
 
 #~ msgid "Snow"
 #~ msgstr "बर्फीला"
