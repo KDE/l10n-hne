@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-01-09 07:09+0100\n"
+"POT-Creation-Date: 2019-01-16 07:26+0100\n"
 "PO-Revision-Date: 2009-03-02 23:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -713,7 +713,7 @@ msgstr "फाइल \"%1\" ल मिटा नइ सकिस."
 msgid "Could not remove connection file <filename>%1</filename>."
 msgstr "फाइल \"%1\" ल मिटा नइ सकिस."
 
-#: core/KexiFileFilters.cpp:242 widget/KexiStartupFileHandler.cpp:279
+#: core/KexiFileFilters.cpp:242 widget/KexiStartupFileHandler.cpp:287
 #, fuzzy, kde-kuit-format
 #| msgid "All Supported Files (%1)"
 msgid "All Supported Files"
@@ -2509,18 +2509,18 @@ msgctxt "'Dirty (modified) object' flag"
 msgid "%1*"
 msgstr ""
 
-#: kexiutils/utils.cpp:1139
+#: kexiutils/utils.cpp:1138
 #, kde-kuit-format
 msgid "modified"
 msgstr ""
 
-#: kexiutils/utils.cpp:1150
+#: kexiutils/utils.cpp:1149
 #, kde-kuit-format
 msgctxt "Document/application separator in titlebar"
 msgid " – "
 msgstr ""
 
-#: kexiutils/utils.cpp:1196
+#: kexiutils/utils.cpp:1195
 #, kde-kuit-format
 msgctxt "@info/plain Concatenated sentence1 sentence2 ..."
 msgid "<html>%1%2%3%4%5%6</html>"
@@ -4133,14 +4133,14 @@ msgid "Last opened on %1"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: main/startup/KexiServerDBNamePage.ui:22
+#: main/startup/KexiServerDBNamePage.ui:31
 #, fuzzy, kde-format
 #| msgid "Project caption"
 msgid "Project caption:"
 msgstr "परियोजना कैप्सन"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: main/startup/KexiServerDBNamePage.ui:51
+#: main/startup/KexiServerDBNamePage.ui:60
 #, fuzzy, kde-format
 #| msgid "Project's database name: "
 msgid "Project's database name:"
@@ -4454,12 +4454,7 @@ msgctxt "@info"
 msgid "Select one of the recently used projects to open."
 msgstr "अभी हाल के परियोजना खोलथे . अभी हाल के मं खुले परियोजना प्रभावित नइ होती."
 
-#: main/startup/KexiWelcomeStatusBar.cpp:905
-#, kde-kuit-format
-msgid "Share"
-msgstr ""
-
-#: main/startup/KexiWelcomeStatusBar.cpp:937
+#: main/startup/KexiWelcomeStatusBar.cpp:751
 #, kde-kuit-format
 msgctxt "@info donate to the project"
 msgid ""
@@ -4479,42 +4474,22 @@ msgid ""
 "</para><para>Thanks for your support!</para>"
 msgstr ""
 
-#: main/startup/KexiWelcomeStatusBar.cpp:949
+#: main/startup/KexiWelcomeStatusBar.cpp:763
 #, fuzzy, kde-kuit-format
 #| msgid "Options related to entire projects:"
 msgid "Donate to the Project"
 msgstr "पूरा परियोजना से सम्बन्धित विकल्प:"
 
-#: main/startup/KexiWelcomeStatusBar.cpp:950
+#: main/startup/KexiWelcomeStatusBar.cpp:764
 #, kde-kuit-format
 msgctxt "@action:button Go to Donation"
 msgid "Proceed to the Donation Web Page"
 msgstr ""
 
-#: main/startup/KexiWelcomeStatusBar.cpp:951
+#: main/startup/KexiWelcomeStatusBar.cpp:765
 #, kde-kuit-format
 msgctxt "Do not donate now"
 msgid "Not Now"
-msgstr ""
-
-#: main/startup/KexiWelcomeStatusBar.cpp:1132
-#, kde-kuit-format
-msgctxt "Donation today"
-msgid "today"
-msgstr ""
-
-#: main/startup/KexiWelcomeStatusBar.cpp:1135
-#, kde-kuit-format
-msgctxt "Recent donation date (xx days)"
-msgid "%1 (1 day)"
-msgid_plural "%1 (%2 days)"
-msgstr[0] ""
-msgstr[1] ""
-
-#: main/startup/KexiWelcomeStatusBar.cpp:1147
-#, kde-kuit-format
-msgctxt "donations count"
-msgid "%1 (thanks!)"
 msgstr ""
 
 #: migration/AlterSchemaWidget.cpp:51 migration/AlterSchemaWidget.cpp:112
@@ -8721,6 +8696,20 @@ msgstr "का आप मन डाटाबेस कनेक्सन \"%1\" 
 msgid "Define Query..."
 msgstr "क्वैरी परिभासित करव..."
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: widget/KexiDBCaptionPage.ui:31
+#, fuzzy, kde-format
+#| msgid "Project caption"
+msgid "Pro&ject caption: "
+msgstr "परियोजना कैप्सन"
+
+#. i18n: ectx: property (text), widget (QLabel, label_requester)
+#: widget/KexiDBCaptionPage.ui:63
+#, fuzzy, kde-format
+#| msgid "Project Name"
+msgid "Project file&name:"
+msgstr "परियोजना नाम"
+
 #: widget/kexidbconnectionwidget.cpp:90
 #, kde-kuit-format
 msgid "Load database list from the server"
@@ -8971,20 +8960,6 @@ msgstr "(अविसिस्ट)"
 msgid "&Open"
 msgstr "खोलव (&O)"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: widget/KexiDBTitlePage.ui:22
-#, fuzzy, kde-format
-#| msgid "Project caption: "
-msgid "Project title: "
-msgstr "परियोजना सीर्सक:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_requester)
-#: widget/KexiDBTitlePage.ui:54
-#, fuzzy, kde-format
-#| msgid "Project Name"
-msgid "Project filename:"
-msgstr "परियोजना नाम"
-
 #: widget/KexiFileDialog.cpp:480
 #, fuzzy, kde-format
 #| msgid "All Supported Files (%1)"
@@ -9025,12 +9000,12 @@ msgstr "नाम:"
 msgid "Filter:"
 msgstr "फिल्टर (&F)"
 
-#: widget/KexiFileWidgetInterface.cpp:235 widget/KexiStartupFileHandler.cpp:372
+#: widget/KexiFileWidgetInterface.cpp:235 widget/KexiStartupFileHandler.cpp:380
 #, kde-kuit-format
 msgid "Enter a filename."
 msgstr "कोई फाइलनाम भरव."
 
-#: widget/KexiFileWidgetInterface.cpp:271 widget/KexiStartupFileHandler.cpp:417
+#: widget/KexiFileWidgetInterface.cpp:271 widget/KexiStartupFileHandler.cpp:425
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Could not remove project.\n"
@@ -9041,14 +9016,14 @@ msgstr ""
 "परियोजना मिटाय नइ जा सकी.\n"
 "फाइल \"%1\" मौजूद नइ हे."
 
-#: widget/KexiFileWidgetInterface.cpp:276 widget/KexiStartupFileHandler.cpp:423
+#: widget/KexiFileWidgetInterface.cpp:276 widget/KexiStartupFileHandler.cpp:431
 #, fuzzy, kde-kuit-format
 #| msgid "Enter a filename."
 msgctxt "@info"
 msgid "Enter a filename."
 msgstr "कोई फाइलनाम भरव."
 
-#: widget/KexiFileWidgetInterface.cpp:281 widget/KexiStartupFileHandler.cpp:427
+#: widget/KexiFileWidgetInterface.cpp:281 widget/KexiStartupFileHandler.cpp:435
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Could not remove project.\n"
@@ -9225,7 +9200,7 @@ msgid ""
 "on the operating system you use.</para>"
 msgstr ""
 
-#: widget/KexiStartupFileHandler.cpp:472
+#: widget/KexiStartupFileHandler.cpp:483
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "The file \"%1\" already exists.\n"
@@ -9235,7 +9210,7 @@ msgstr ""
 "फाइल \"%1\" पहिली से ही मौजूद हे. \n"
 "का आप मन एखर ऊपर लिखना चाहथो ?"
 
-#: widget/KexiStartupFileHandler.cpp:473
+#: widget/KexiStartupFileHandler.cpp:484
 #, kde-kuit-format
 msgid "Overwrite"
 msgstr "मेटाय के लिखव"
@@ -9695,6 +9670,11 @@ msgstr "संकेतक ल आखरी लकीर मं खिसका�
 #| msgid "Moves cursor to new row and allows inserting."
 msgid "Moves cursor to new record and allows inserting."
 msgstr "संकेतक ल नवा लकीर मं खिसकाथे  अउ भरव स्वीकारथे ."
+
+#, fuzzy
+#~| msgid "Project caption: "
+#~ msgid "Project title: "
+#~ msgstr "परियोजना सीर्सक:"
 
 #~ msgid "Do you want to close all windows for these objects?"
 #~ msgstr "का आप मन ए चीज मन के सब्बो विंडो ल बन्द करना चाहथो ?"
