@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdiff3\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-01-15 03:09+0100\n"
+"POT-Creation-Date: 2019-01-19 03:15+0100\n"
 "PO-Revision-Date: 2009-03-20 10:56+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -90,8 +90,8 @@ msgstr "लकीर खतम होए के सैलीः"
 
 #: difftextwindow.cpp:1854 directorymergewindow.cpp:381
 #: directorymergewindow.cpp:432 directorymergewindow.cpp:523
-#: directorymergewindow.cpp:3082 directorymergewindow.cpp:3213
-#: directorymergewindow.cpp:3443 mergeresultwindow.cpp:910
+#: directorymergewindow.cpp:3057 directorymergewindow.cpp:3188
+#: directorymergewindow.cpp:3418 mergeresultwindow.cpp:910
 #: mergeresultwindow.cpp:912 mergeresultwindow.cpp:914
 #: mergeresultwindow.cpp:916 mergeresultwindow.cpp:1782
 #: mergeresultwindow.cpp:3424 mergeresultwindow.cpp:3431 optiondialog.cpp:952
@@ -104,8 +104,8 @@ msgstr "अ"
 
 #: difftextwindow.cpp:1854 directorymergewindow.cpp:383
 #: directorymergewindow.cpp:435 directorymergewindow.cpp:525
-#: directorymergewindow.cpp:3088 directorymergewindow.cpp:3214
-#: directorymergewindow.cpp:3444 mergeresultwindow.cpp:910
+#: directorymergewindow.cpp:3063 directorymergewindow.cpp:3189
+#: directorymergewindow.cpp:3419 mergeresultwindow.cpp:910
 #: mergeresultwindow.cpp:912 mergeresultwindow.cpp:918
 #: mergeresultwindow.cpp:920 mergeresultwindow.cpp:1784
 #: mergeresultwindow.cpp:3426 mergeresultwindow.cpp:3433 optiondialog.cpp:953
@@ -118,8 +118,8 @@ msgstr "ब"
 
 #: difftextwindow.cpp:1854 directorymergewindow.cpp:385
 #: directorymergewindow.cpp:438 directorymergewindow.cpp:527
-#: directorymergewindow.cpp:3094 directorymergewindow.cpp:3215
-#: directorymergewindow.cpp:3445 mergeresultwindow.cpp:914
+#: directorymergewindow.cpp:3069 directorymergewindow.cpp:3190
+#: directorymergewindow.cpp:3420 mergeresultwindow.cpp:914
 #: mergeresultwindow.cpp:916 mergeresultwindow.cpp:918
 #: mergeresultwindow.cpp:920 mergeresultwindow.cpp:1786
 #: mergeresultwindow.cpp:3428 mergeresultwindow.cpp:3435 optiondialog.cpp:967
@@ -203,22 +203,22 @@ msgstr "सफेद-नइ"
 msgid "White"
 msgstr "सफेद"
 
-#: directorymergewindow.cpp:408 directorymergewindow.cpp:3450
+#: directorymergewindow.cpp:408 directorymergewindow.cpp:3425
 #, kde-format
 msgid "Copy A to B"
 msgstr "अ के नकल ब मं करव"
 
-#: directorymergewindow.cpp:411 directorymergewindow.cpp:3451
+#: directorymergewindow.cpp:411 directorymergewindow.cpp:3426
 #, kde-format
 msgid "Copy B to A"
 msgstr "ब के नकल अ मं करव"
 
-#: directorymergewindow.cpp:414 directorymergewindow.cpp:3452
+#: directorymergewindow.cpp:414 directorymergewindow.cpp:3427
 #, kde-format
 msgid "Delete A"
 msgstr "अ ल मेटाव"
 
-#: directorymergewindow.cpp:417 directorymergewindow.cpp:3453
+#: directorymergewindow.cpp:417 directorymergewindow.cpp:3428
 #, kde-format
 msgid "Delete B"
 msgstr "ब ल मेटाव"
@@ -228,12 +228,12 @@ msgstr "ब ल मेटाव"
 msgid "Delete A & B"
 msgstr "अ अउ ब ल मेटाव"
 
-#: directorymergewindow.cpp:423 directorymergewindow.cpp:3455
+#: directorymergewindow.cpp:423 directorymergewindow.cpp:3430
 #, kde-format
 msgid "Merge to A"
 msgstr "अ मं सम्मिलित करव"
 
-#: directorymergewindow.cpp:426 directorymergewindow.cpp:3456
+#: directorymergewindow.cpp:426 directorymergewindow.cpp:3431
 #, kde-format
 msgid "Merge to B"
 msgstr "ब मं सम्मिलित करव"
@@ -243,13 +243,13 @@ msgstr "ब मं सम्मिलित करव"
 msgid "Merge to A & B"
 msgstr "अ अउ ब मं सम्मिलित करव"
 
-#: directorymergewindow.cpp:441 directorymergewindow.cpp:3447
+#: directorymergewindow.cpp:441 directorymergewindow.cpp:3422
 #, kde-format
 msgid "Delete (if exists)"
 msgstr "मेटाव (यदि मौजूद हे)"
 
 #: directorymergewindow.cpp:444 directorymergewindow.cpp:447
-#: directorymergewindow.cpp:3446 optiondialog.cpp:915 smalldialogs.cpp:113
+#: directorymergewindow.cpp:3421 optiondialog.cpp:915 smalldialogs.cpp:113
 #, kde-format
 msgid "Merge"
 msgstr "सम्मिलित करव"
@@ -340,76 +340,60 @@ msgstr "आकार."
 msgid "Date & Size: "
 msgstr "तारीक अउ आकार:"
 
-#: directorymergewindow.cpp:725 directorymergewindow.cpp:731
-#, kde-format
-msgid "Creating temp copy of %1 failed."
-msgstr "%1 के अस्थाई नकल बनाना फेल."
-
-#: directorymergewindow.cpp:748 directorymergewindow.cpp:756
-#, fuzzy, kde-format
-#| msgid "Opening %1 failed."
-msgid "Opening %1 failed. %2"
-msgstr "%1 ल खोलना फेल"
-
-#: directorymergewindow.cpp:760
+#: directorymergewindow.cpp:735
 #, kde-format
 msgid "Comparing file..."
 msgstr "फाइल के तुलना करत हे ..."
 
-#: directorymergewindow.cpp:772 directorymergewindow.cpp:778
-#, kde-format
-msgid "Error reading from %1"
-msgstr "%1 से पढ़े मं गलती"
-
-#: directorymergewindow.cpp:813
+#: directorymergewindow.cpp:788
 #, kde-format
 msgid ""
 "You are currently doing a directory merge. Are you sure, you want to abort "
 "the merge and rescan the directory?"
 msgstr ""
 
-#: directorymergewindow.cpp:814 kdiff3.cpp:687 kdiff3.cpp:697 kdiff3.cpp:709
+#: directorymergewindow.cpp:789 kdiff3.cpp:687 kdiff3.cpp:697 kdiff3.cpp:709
 #: mergeresultwindow.cpp:342 pdiff.cpp:958 pdiff.cpp:1859 pdiff.cpp:1869
 #, kde-format
 msgid "Warning"
 msgstr "चेतावनी"
 
-#: directorymergewindow.cpp:815 directorymergewindow.cpp:3419
+#: directorymergewindow.cpp:790 directorymergewindow.cpp:3394
 #, kde-format
 msgid "Rescan"
 msgstr "री-स्कैन"
 
-#: directorymergewindow.cpp:816 pdiff.cpp:960
+#: directorymergewindow.cpp:791 pdiff.cpp:960
 #, kde-format
 msgid "Continue Merging"
 msgstr "मिलाय जाना जारी रखव"
 
-#: directorymergewindow.cpp:980
+#: directorymergewindow.cpp:955
 #, kde-format
 msgid "Opening of directories failed:"
 msgstr "डिरेक्टरीज खोलना फेल:"
 
-#: directorymergewindow.cpp:984
+#: directorymergewindow.cpp:959
 #, kde-format
 msgid "Dir A \"%1\" does not exist or is not a directory.\n"
 msgstr "डिरेक्टरी अ \"%1\" या तो मौजूद नइ हे या फिर वो डिरेक्टरी नइ हे.\n"
 
-#: directorymergewindow.cpp:989
+#: directorymergewindow.cpp:964
 #, kde-format
 msgid "Dir B \"%1\" does not exist or is not a directory.\n"
 msgstr "डिरेक्टरी ब \"%1\" या तो मौजूद नइ हे या फिर वो डिरेक्टरी नइ हे.\n"
 
-#: directorymergewindow.cpp:994
+#: directorymergewindow.cpp:969
 #, kde-format
 msgid "Dir C \"%1\" does not exist or is not a directory.\n"
 msgstr "डिरेक्टरी स \"%1\" या तो मौजूद नइ हे या फिर वो डिरेक्टरी नइ हे.\n"
 
-#: directorymergewindow.cpp:997
+#: directorymergewindow.cpp:972
 #, kde-format
 msgid "Directory Open Error"
 msgstr "डिरेक्टरी खोले मं गलती"
 
-#: directorymergewindow.cpp:1005
+#: directorymergewindow.cpp:980
 #, kde-format
 msgid ""
 "The destination directory must not be the same as A or B when three "
@@ -417,49 +401,49 @@ msgid ""
 "Check again before continuing."
 msgstr ""
 
-#: directorymergewindow.cpp:1007
+#: directorymergewindow.cpp:982
 #, kde-format
 msgid "Parameter Warning"
 msgstr "पैरामीटर चेतावनी"
 
-#: directorymergewindow.cpp:1012
+#: directorymergewindow.cpp:987
 #, kde-format
 msgid "Scanning directories..."
 msgstr "डिरेक्टरीज स्कैन करत हे..."
 
-#: directorymergewindow.cpp:1040
+#: directorymergewindow.cpp:1015
 #, kde-format
 msgid "Reading Directory A"
 msgstr "डिरेक्टरी अ ल पढ़त हे"
 
-#: directorymergewindow.cpp:1053
+#: directorymergewindow.cpp:1028
 #, kde-format
 msgid "Reading Directory B"
 msgstr "डिरेक्टरी ब ल पढ़त हे"
 
-#: directorymergewindow.cpp:1067
+#: directorymergewindow.cpp:1042
 #, kde-format
 msgid "Reading Directory C"
 msgstr "डिरेक्टरी स ल पढ़त हे"
 
-#: directorymergewindow.cpp:1087
+#: directorymergewindow.cpp:1062
 #, kde-format
 msgid "Some subdirectories were not readable in"
 msgstr "कुछ सबडिरेक्टरीज ये मां पढ़े नइ जा सके वाले हे"
 
-#: directorymergewindow.cpp:1092
+#: directorymergewindow.cpp:1067
 #, kde-format
 msgid "Check the permissions of the subdirectories."
 msgstr "सबडिरेक्टरीज के अनुमति जांचव."
 
-#: directorymergewindow.cpp:1129 kdiff3.cpp:655 kdiff3.cpp:742 kdiff3.cpp:766
+#: directorymergewindow.cpp:1104 kdiff3.cpp:655 kdiff3.cpp:742 kdiff3.cpp:766
 #: kdiff3.cpp:1054 kdiff3.cpp:1075 pdiff.cpp:1039 pdiff.cpp:1111 pdiff.cpp:1156
 #: pdiff.cpp:1172 pdiff.cpp:1215 pdiff.cpp:1238
 #, kde-format
 msgid "Ready."
 msgstr "तैयार."
 
-#: directorymergewindow.cpp:1144
+#: directorymergewindow.cpp:1119
 #, kde-format
 msgid ""
 "Directory Comparison Status\n"
@@ -469,23 +453,23 @@ msgid ""
 "Number of different files: %3"
 msgstr ""
 
-#: directorymergewindow.cpp:1151
+#: directorymergewindow.cpp:1126
 #, fuzzy, kde-format
 #| msgid "Number of manual merges:"
 msgid "Number of manual merges: %1"
 msgstr "हस्तचालित सम्मिलित करे के संख्या:"
 
-#: directorymergewindow.cpp:1417
+#: directorymergewindow.cpp:1392
 #, kde-format
 msgid "This affects all merge operations."
 msgstr "ये सब्बो सम्मिलित आपरेसन ल प्रभावित करही"
 
-#: directorymergewindow.cpp:1418
+#: directorymergewindow.cpp:1393
 #, kde-format
 msgid "Changing All Merge Operations"
 msgstr "सब्बो सम्मिलित करे के आपरेसन ल बदलत हे"
 
-#: directorymergewindow.cpp:1719
+#: directorymergewindow.cpp:1694
 #, fuzzy, kde-format
 #| msgid "Processing "
 msgid ""
@@ -493,45 +477,45 @@ msgid ""
 "%3"
 msgstr "प्रोसेसिंग"
 
-#: directorymergewindow.cpp:1762 directorymergewindow.cpp:1766
+#: directorymergewindow.cpp:1737 directorymergewindow.cpp:1741
 #, kde-format
 msgid "Some files could not be processed."
 msgstr ""
 
-#: directorymergewindow.cpp:2246 directorymergewindow.cpp:2271
-#: directorymergewindow.cpp:2295
+#: directorymergewindow.cpp:2221 directorymergewindow.cpp:2246
+#: directorymergewindow.cpp:2270
 #, kde-format
 msgid "This operation is currently not possible."
 msgstr "ये आपरेसन अभी हाल के मं संभव नइ हे."
 
-#: directorymergewindow.cpp:2246 directorymergewindow.cpp:2271
-#: directorymergewindow.cpp:2295 directorymergewindow.cpp:2576
+#: directorymergewindow.cpp:2221 directorymergewindow.cpp:2246
+#: directorymergewindow.cpp:2270 directorymergewindow.cpp:2551
 #, kde-format
 msgid "Operation Not Possible"
 msgstr "आपरेसन अभी हाल के मं संभव नइ"
 
-#: directorymergewindow.cpp:2342
+#: directorymergewindow.cpp:2317
 #, fuzzy, kde-format
 #| msgid "An error occurred while copying.\n"
 msgid "An error occurred while copying."
 msgstr "नकल करे के समय एक गलती होइस.\n"
 
-#: directorymergewindow.cpp:2343 directorymergewindow.cpp:2783
+#: directorymergewindow.cpp:2318 directorymergewindow.cpp:2758
 #, kde-format
 msgid "Merge Error"
 msgstr "सम्मिलित करे मं गलती"
 
-#: directorymergewindow.cpp:2420
+#: directorymergewindow.cpp:2395
 #, kde-format
 msgid "Unknown merge operation. (This must never happen!)"
 msgstr "सम्मिलित करे के अग्यात आपरेसन. (अइसन कभू नइ होना चाही!)"
 
-#: directorymergewindow.cpp:2465
+#: directorymergewindow.cpp:2440
 #, kde-format
 msgid "Unknown merge operation."
 msgstr "सम्मिलित करे के अग्यात आपरेसन. "
 
-#: directorymergewindow.cpp:2478
+#: directorymergewindow.cpp:2453
 #, kde-format
 msgid ""
 "The merge is about to begin.\n"
@@ -544,50 +528,50 @@ msgid ""
 "whatsoever! Make backups of your vital data!"
 msgstr ""
 
-#: directorymergewindow.cpp:2483
+#: directorymergewindow.cpp:2458
 #, kde-format
 msgid "Starting Merge"
 msgstr "सम्मिलित करना चालू करत हे"
 
-#: directorymergewindow.cpp:2484
+#: directorymergewindow.cpp:2459
 #, kde-format
 msgid "Do It"
 msgstr "एला करव"
 
-#: directorymergewindow.cpp:2485
+#: directorymergewindow.cpp:2460
 #, kde-format
 msgid "Simulate It"
 msgstr "एला सिमुलेट करव"
 
-#: directorymergewindow.cpp:2511
+#: directorymergewindow.cpp:2486
 #, kde-format
 msgid ""
 "The highlighted item has a different type in the different directories. "
 "Select what to do."
 msgstr ""
 
-#: directorymergewindow.cpp:2515
+#: directorymergewindow.cpp:2490
 #, kde-format
 msgid ""
 "The modification dates of the file are equal but the files are not. Select "
 "what to do."
 msgstr ""
 
-#: directorymergewindow.cpp:2519
+#: directorymergewindow.cpp:2494
 #, kde-format
 msgid ""
 "The highlighted item was changed in one directory and deleted in the other. "
 "Select what to do."
 msgstr ""
 
-#: directorymergewindow.cpp:2576
+#: directorymergewindow.cpp:2551
 #, kde-format
 msgid ""
 "This operation is currently not possible because directory merge is "
 "currently running."
 msgstr ""
 
-#: directorymergewindow.cpp:2633
+#: directorymergewindow.cpp:2608
 #, kde-format
 msgid ""
 "There was an error in the last step.\n"
@@ -595,242 +579,242 @@ msgid ""
 "to skip this item?"
 msgstr ""
 
-#: directorymergewindow.cpp:2635
+#: directorymergewindow.cpp:2610
 #, kde-format
 msgid "Continue merge after an error"
 msgstr "गलती के बाद घलोक सम्मिलित करना जारी रखव"
 
-#: directorymergewindow.cpp:2636
+#: directorymergewindow.cpp:2611
 #, kde-format
 msgid "Continue With Last Item"
 msgstr "पिछला चीज के साथ जारी रखव"
 
-#: directorymergewindow.cpp:2637
+#: directorymergewindow.cpp:2612
 #, kde-format
 msgid "Skip Item"
 msgstr "चीज छोड़व"
 
-#: directorymergewindow.cpp:2733
+#: directorymergewindow.cpp:2708
 #, kde-format
 msgid "Merge operation complete."
 msgstr "सम्मिलित करे के काम पूरा होइस."
 
-#: directorymergewindow.cpp:2733 directorymergewindow.cpp:2736
+#: directorymergewindow.cpp:2708 directorymergewindow.cpp:2711
 #, kde-format
 msgid "Merge Complete"
 msgstr "सम्मिलित करना पूरा"
 
-#: directorymergewindow.cpp:2746
+#: directorymergewindow.cpp:2721
 #, kde-format
 msgid ""
 "Simulated merge complete: Check if you agree with the proposed operations."
 msgstr ""
 
-#: directorymergewindow.cpp:2782
+#: directorymergewindow.cpp:2757
 #, fuzzy, kde-format
 #| msgid "An error occurred. Press OK to see detailed information.\n"
 msgid "An error occurred. Press OK to see detailed information."
 msgstr "एक गलती होइस. विस्तृत जानकारी देखे बर ठीक ल दबाव\n"
 
-#: directorymergewindow.cpp:2815
+#: directorymergewindow.cpp:2790
 #, kde-format
 msgid "Error: While deleting %1: Creating backup failed."
 msgstr "गलती: %1 ल मेटाव के समय: बैकअप बनाए मं फेल."
 
-#: directorymergewindow.cpp:2822
+#: directorymergewindow.cpp:2797
 #, kde-format
 msgid "delete directory recursively( %1 )"
 msgstr "डिरेक्टरी ( %1 ) ल रिकर्सिवली मेटाव"
 
-#: directorymergewindow.cpp:2824
+#: directorymergewindow.cpp:2799
 #, kde-format
 msgid "delete( %1 )"
 msgstr "मेटाव (%1)"
 
-#: directorymergewindow.cpp:2839
+#: directorymergewindow.cpp:2814
 #, kde-format
 msgid "Error: delete dir operation failed while trying to read the directory."
 msgstr "गलती: डिरेक्टरी ल पढ़े के कोसिस मं डिरेक्टरी मेटाव के काम फेल."
 
-#: directorymergewindow.cpp:2858
+#: directorymergewindow.cpp:2833
 #, kde-format
 msgid "Error: rmdir( %1 ) operation failed."
 msgstr "गलती: rmdir( %1 ) काम फेल."
 
-#: directorymergewindow.cpp:2868
+#: directorymergewindow.cpp:2843
 #, kde-format
 msgid "Error: delete operation failed."
 msgstr "गलती: डिरेक्टरी मेटाव के काम फेल."
 
-#: directorymergewindow.cpp:2894
+#: directorymergewindow.cpp:2869
 #, kde-format
 msgid "manual merge( %1, %2, %3 -> %4)"
 msgstr "हस्तचालित सम्मिलित करव( %1, %2, %3 -> %4)"
 
-#: directorymergewindow.cpp:2897
+#: directorymergewindow.cpp:2872
 #, kde-format
 msgid ""
 "     Note: After a manual merge the user should continue by pressing F7."
 msgstr "टीप: हस्तचालित सम्मिलित करे के बाद कमइया ल F7 ल दबाकर जारी रखना चाही."
 
-#: directorymergewindow.cpp:2924
+#: directorymergewindow.cpp:2899
 #, kde-format
 msgid "Error: copy( %1 -> %2 ) failed.Deleting existing destination failed."
 msgstr "गलती: नकल ( %1 -> %2 ) फेल. अभी हाल के गंतव्य ल मिटाना फेल."
 
-#: directorymergewindow.cpp:2933
+#: directorymergewindow.cpp:2908
 #, kde-format
 msgid "copyLink( %1 -> %2 )"
 msgstr "कापीसंकली ( %1 -> %2 )"
 
-#: directorymergewindow.cpp:2942
+#: directorymergewindow.cpp:2917
 #, kde-format
 msgid "Error: copyLink failed: Remote links are not yet supported."
 msgstr "गलती: कापीसंकली फेल: रिमोट कड़ियाँ अभी समर्थित नइ हे."
 
-#: directorymergewindow.cpp:2952
+#: directorymergewindow.cpp:2927
 #, kde-format
 msgid "Error: copyLink failed."
 msgstr "गलती: कापीसंकली फेल."
 
-#: directorymergewindow.cpp:2977
+#: directorymergewindow.cpp:2952
 #, kde-format
 msgid "copy( %1 -> %2 )"
 msgstr "नकल( %1 -> %2 )"
 
-#: directorymergewindow.cpp:3003
+#: directorymergewindow.cpp:2978
 #, kde-format
 msgid "Error during rename( %1 -> %2 ): Cannot delete existing destination."
 msgstr ""
 
-#: directorymergewindow.cpp:3010
+#: directorymergewindow.cpp:2985
 #, kde-format
 msgid "rename( %1 -> %2 )"
 msgstr "नाम बदलव( %1 -> %2 )"
 
-#: directorymergewindow.cpp:3019
+#: directorymergewindow.cpp:2994
 #, kde-format
 msgid "Error: Rename failed."
 msgstr "गलती: नाम-बदलना फेल."
 
-#: directorymergewindow.cpp:3037
+#: directorymergewindow.cpp:3012
 #, kde-format
 msgid "Error during makeDir of %1. Cannot delete existing file."
 msgstr "%1 के मेकडिर के समय गलती. अभी हाल के फाइल मिटा नइ सकहू."
 
-#: directorymergewindow.cpp:3054
+#: directorymergewindow.cpp:3029
 #, kde-format
 msgid "makeDir( %1 )"
 msgstr "मेकडिर( %1 )"
 
-#: directorymergewindow.cpp:3064
+#: directorymergewindow.cpp:3039
 #, kde-format
 msgid "Error while creating directory."
 msgstr "डिरेक्टरी बनाए के समय गलती."
 
-#: directorymergewindow.cpp:3100 directorymergewindow.cpp:3219
+#: directorymergewindow.cpp:3075 directorymergewindow.cpp:3194
 #, kde-format
 msgid "Dest"
 msgstr "गंतव्य"
 
-#: directorymergewindow.cpp:3108 directorymergewindow.cpp:3137
+#: directorymergewindow.cpp:3083 directorymergewindow.cpp:3112
 #, kde-format
 msgid "Dir"
 msgstr "डिर."
 
-#: directorymergewindow.cpp:3108
+#: directorymergewindow.cpp:3083
 #, kde-format
 msgid "Type"
 msgstr "किसिम"
 
-#: directorymergewindow.cpp:3108
+#: directorymergewindow.cpp:3083
 #, kde-format
 msgid "Size"
 msgstr "आकार"
 
-#: directorymergewindow.cpp:3109
+#: directorymergewindow.cpp:3084
 #, kde-format
 msgid "Attr"
 msgstr "एट्रि."
 
-#: directorymergewindow.cpp:3109
+#: directorymergewindow.cpp:3084
 #, kde-format
 msgid "Last Modification"
 msgstr "आखरी परिवर्धन"
 
-#: directorymergewindow.cpp:3109
+#: directorymergewindow.cpp:3084
 #, kde-format
 msgid "Link-Destination"
 msgstr "संकली-गंतव्य"
 
-#: directorymergewindow.cpp:3137
+#: directorymergewindow.cpp:3112
 #, kde-format
 msgid "File"
 msgstr "फाइल"
 
-#: directorymergewindow.cpp:3137
+#: directorymergewindow.cpp:3112
 #, fuzzy, kde-format
 #| msgid "Link: "
 msgid "-Link"
 msgstr "कड़ी"
 
-#: directorymergewindow.cpp:3143
+#: directorymergewindow.cpp:3118
 #, kde-format
 msgid "not available"
 msgstr "नइ मिलत"
 
-#: directorymergewindow.cpp:3161
+#: directorymergewindow.cpp:3136
 #, kde-format
 msgid "A (Dest): "
 msgstr "A (गंत.): "
 
-#: directorymergewindow.cpp:3165
+#: directorymergewindow.cpp:3140
 #, kde-format
 msgid "A (Base): "
 msgstr "A (आधार): "
 
-#: directorymergewindow.cpp:3171
+#: directorymergewindow.cpp:3146
 #, kde-format
 msgid "B (Dest): "
 msgstr "B (गंत.): "
 
-#: directorymergewindow.cpp:3180
+#: directorymergewindow.cpp:3155
 #, kde-format
 msgid "C (Dest): "
 msgstr "C (गंत.): "
 
-#: directorymergewindow.cpp:3187
+#: directorymergewindow.cpp:3162
 #, kde-format
 msgid "Dest: "
 msgstr "गंतव्य:"
 
 #. i18n("Saving Directory Merge State ..."));
-#: directorymergewindow.cpp:3262
+#: directorymergewindow.cpp:3237
 #, kde-format
 msgid "Save Directory Merge State As..."
 msgstr ""
 
-#: directorymergewindow.cpp:3413
+#: directorymergewindow.cpp:3388
 #, kde-format
 msgid "Start/Continue Directory Merge"
 msgstr "डिरेक्टरी सम्मिलित करना चालू करव/जारी रखव"
 
-#: directorymergewindow.cpp:3414
+#: directorymergewindow.cpp:3389
 #, kde-format
 msgid "Run Operation for Current Item"
 msgstr "अभी हाल के चीज बर आपरेसन चलाव"
 
-#: directorymergewindow.cpp:3415
+#: directorymergewindow.cpp:3390
 #, kde-format
 msgid "Compare Selected File"
 msgstr "चुने गे फाइल के तुलना करव"
 
-#: directorymergewindow.cpp:3416
+#: directorymergewindow.cpp:3391
 #, kde-format
 msgid "Merge Current File"
 msgstr "अभी हाल के फाइल सम्मिलित करव"
 
-#: directorymergewindow.cpp:3416
+#: directorymergewindow.cpp:3391
 #, kde-format
 msgid ""
 "Merge\n"
@@ -839,194 +823,210 @@ msgstr ""
 "फाइल\n"
 "मिलाव"
 
-#: directorymergewindow.cpp:3417
+#: directorymergewindow.cpp:3392
 #, kde-format
 msgid "Fold All Subdirs"
 msgstr "सब्बो सबडिरेक्टरीज फोल्ड करव"
 
-#: directorymergewindow.cpp:3418
+#: directorymergewindow.cpp:3393
 #, kde-format
 msgid "Unfold All Subdirs"
 msgstr "सब्बो सबडिरेक्टरीज अनफोल्ड करव"
 
 #. i18n("Save Directory Merge State ..."), 0, this, &DirectoryMergeWindow::slotSaveMergeState, ac, "dir_save_merge_state");
 #. i18n("Load Directory Merge State ..."), 0, this, &DirectoryMergeWindow::slotLoadMergeState, ac, "dir_load_merge_state");
-#: directorymergewindow.cpp:3422
+#: directorymergewindow.cpp:3397
 #, kde-format
 msgid "Choose A for All Items"
 msgstr "सब्बो चीज मन बर अ के चुनव"
 
-#: directorymergewindow.cpp:3423
+#: directorymergewindow.cpp:3398
 #, kde-format
 msgid "Choose B for All Items"
 msgstr "सब्बो चीज मन बर ब के चुनव"
 
-#: directorymergewindow.cpp:3424
+#: directorymergewindow.cpp:3399
 #, kde-format
 msgid "Choose C for All Items"
 msgstr "सब्बो चीज मन बर स के चुनव"
 
-#: directorymergewindow.cpp:3425
+#: directorymergewindow.cpp:3400
 #, kde-format
 msgid "Auto-Choose Operation for All Items"
 msgstr "सब्बो चीज मन बर काम अपने अपन चुनव"
 
-#: directorymergewindow.cpp:3426
+#: directorymergewindow.cpp:3401
 #, kde-format
 msgid "No Operation for All Items"
 msgstr "सब्बो चीज मन बर कोनो काम नइ"
 
 #. i18n("Synchronize Directories"), 0, this, &DirectoryMergeWindow::slotSynchronizeDirectories, ac, "dir_synchronize_directories");
 #. d->m_pDirChooseNewerFiles = GuiUtils::createAction< KToggleAction >(i18n("Copy Newer Files Instead of Merging"), 0, this, &DirectoryMergeWindow::slotChooseNewerFiles, ac, "dir_choose_newer_files");
-#: directorymergewindow.cpp:3431
+#: directorymergewindow.cpp:3406
 #, kde-format
 msgid "Show Identical Files"
 msgstr ""
 
-#: directorymergewindow.cpp:3431
+#: directorymergewindow.cpp:3406
 #, kde-format
 msgid ""
 "Identical\n"
 "Files"
 msgstr ""
 
-#: directorymergewindow.cpp:3432
+#: directorymergewindow.cpp:3407
 #, kde-format
 msgid "Show Different Files"
 msgstr "भिन्न फाइल देखाव"
 
-#: directorymergewindow.cpp:3433
+#: directorymergewindow.cpp:3408
 #, kde-format
 msgid "Show Files only in A"
 msgstr ""
 
-#: directorymergewindow.cpp:3433
+#: directorymergewindow.cpp:3408
 #, kde-format
 msgid ""
 "Files\n"
 "only in A"
 msgstr ""
 
-#: directorymergewindow.cpp:3434
+#: directorymergewindow.cpp:3409
 #, kde-format
 msgid "Show Files only in B"
 msgstr ""
 
-#: directorymergewindow.cpp:3434
+#: directorymergewindow.cpp:3409
 #, kde-format
 msgid ""
 "Files\n"
 "only in B"
 msgstr ""
 
-#: directorymergewindow.cpp:3435
+#: directorymergewindow.cpp:3410
 #, kde-format
 msgid "Show Files only in C"
 msgstr ""
 
-#: directorymergewindow.cpp:3435
+#: directorymergewindow.cpp:3410
 #, kde-format
 msgid ""
 "Files\n"
 "only in C"
 msgstr ""
 
-#: directorymergewindow.cpp:3439
+#: directorymergewindow.cpp:3414
 #, kde-format
 msgid "Compare Explicitly Selected Files"
 msgstr ""
 
-#: directorymergewindow.cpp:3440
+#: directorymergewindow.cpp:3415
 #, kde-format
 msgid "Merge Explicitly Selected Files"
 msgstr ""
 
-#: directorymergewindow.cpp:3442 directorymergewindow.cpp:3449
+#: directorymergewindow.cpp:3417 directorymergewindow.cpp:3424
 #, kde-format
 msgid "Do Nothing"
 msgstr "कुछ नइ करव"
 
-#: directorymergewindow.cpp:3454
+#: directorymergewindow.cpp:3429
 #, kde-format
 msgid "Delete A && B"
 msgstr "अ अउ ब ल मेटाव"
 
-#: directorymergewindow.cpp:3457
+#: directorymergewindow.cpp:3432
 #, kde-format
 msgid "Merge to A && B"
 msgstr "अ अउ ब मं सम्मिलित करव"
 
-#: fileaccess.cpp:703
+#: fileaccess.cpp:593
+#, kde-format
+msgid "Creating temp copy of %1 failed."
+msgstr "%1 के अस्थाई नकल बनाना फेल."
+
+#: fileaccess.cpp:601 fileaccess.cpp:606
+#, fuzzy, kde-format
+#| msgid "Opening %1 failed."
+msgid "Opening %1 failed. %2"
+msgstr "%1 ल खोलना फेल"
+
+#: fileaccess.cpp:623
+#, kde-format
+msgid "Error reading from %1"
+msgstr "%1 से पढ़े मं गलती"
+
+#: fileaccess.cpp:754
 #, kde-format
 msgid ""
 "While trying to make a backup, deleting an older backup failed.\n"
 "Filename: %1"
 msgstr ""
 
-#: fileaccess.cpp:710
+#: fileaccess.cpp:761
 #, kde-format
 msgid ""
 "While trying to make a backup, renaming failed.\n"
 "Filenames: %1 -> %2"
 msgstr ""
 
-#: fileaccess.cpp:780
+#: fileaccess.cpp:831
 #, kde-format
 msgid "Getting file status: %1"
 msgstr "फाइल स्थिति प्राप्त करत हे : %1"
 
-#: fileaccess.cpp:821
+#: fileaccess.cpp:872
 #, kde-format
 msgid "Reading file: %1"
 msgstr "फ़ाइल पढ़त हे: %1"
 
-#: fileaccess.cpp:859
+#: fileaccess.cpp:910
 #, kde-format
 msgid "Writing file: %1"
 msgstr "फाइल: %1 लिखत हे"
 
-#: fileaccess.cpp:892
+#: fileaccess.cpp:943
 #, kde-format
 msgid "Out of memory"
 msgstr "मेमोरी कम पड़ गिस"
 
-#: fileaccess.cpp:927
+#: fileaccess.cpp:978
 #, kde-format
 msgid "Making directory: %1"
 msgstr "डिरेक्टरी बनात हे: %1"
 
-#: fileaccess.cpp:947
+#: fileaccess.cpp:998
 #, kde-format
 msgid "Removing directory: %1"
 msgstr "डिरेक्टरी मिटात हे: %1"
 
-#: fileaccess.cpp:962
+#: fileaccess.cpp:1013
 #, kde-format
 msgid "Removing file: %1"
 msgstr "फाइल मिटात हे: %1"
 
-#: fileaccess.cpp:978
+#: fileaccess.cpp:1029
 #, kde-format
 msgid "Creating symbolic link: %1 -> %2"
 msgstr "सिंबालिक संकली बनावत हे: %1 -> %2"
 
-#: fileaccess.cpp:1006
+#: fileaccess.cpp:1057
 #, kde-format
 msgid "Renaming file: %1 -> %2"
 msgstr "फाइलनाम बदलत हे: %1 -> %2"
 
-#: fileaccess.cpp:1037
+#: fileaccess.cpp:1088
 #, kde-format
 msgid "Copying file: %1 -> %2"
 msgstr "फाइल नकल करत हे : %1 -> %2"
 
-#: fileaccess.cpp:1059
+#: fileaccess.cpp:1110
 #, fuzzy, kde-format
 #| msgid "Reading directory: "
 msgid "Reading directory: %1"
 msgstr "डिरेक्टरी ल पढ़त हे:"
 
-#: fileaccess.cpp:1113
+#: fileaccess.cpp:1164
 #, kde-format
 msgid "Listing directory: %1"
 msgstr "डिरेक्टरी सूची मं करत हे : %1"
