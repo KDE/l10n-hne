@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-08-31 03:40+0200\n"
+"POT-Creation-Date: 2019-02-18 02:53+0100\n"
 "PO-Revision-Date: 2009-03-10 17:56+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -176,7 +176,7 @@ msgstr "127.0.0.1"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_11)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: ktorrent/dialogs/addpeersdlg.ui:57 ktorrent/dialogs/torrentcreatordlg.ui:233
+#: ktorrent/dialogs/addpeersdlg.ui:57 ktorrent/dialogs/torrentcreatordlg.ui:253
 #: ktorrent/pref/networkpref.ui:23 ktorrent/pref/proxypref.ui:49
 #: ktorrent/pref/proxypref.ui:130 ktupnptest/upnptestwidget.ui:65
 #: plugins/scripting/scripts/email_notifications/emailconfig.ui:61
@@ -190,9 +190,9 @@ msgstr "पोर्टः"
 #. i18n: ectx: property (text), widget (QPushButton, m_add_webseed)
 #. i18n: ectx: property (text), widget (QPushButton, m_add)
 #: ktorrent/dialogs/addpeersdlg.ui:109
-#: ktorrent/dialogs/torrentcreatordlg.ui:166
-#: ktorrent/dialogs/torrentcreatordlg.ui:255
-#: ktorrent/dialogs/torrentcreatordlg.ui:316 ktorrent/ipfilterwidget.ui:46
+#: ktorrent/dialogs/torrentcreatordlg.ui:186
+#: ktorrent/dialogs/torrentcreatordlg.ui:275
+#: ktorrent/dialogs/torrentcreatordlg.ui:336 ktorrent/ipfilterwidget.ui:46
 #: plugins/search/searchpref.ui:170 plugins/syndication/managefiltersdlg.ui:60
 #, kde-format
 msgid "Add"
@@ -283,7 +283,7 @@ msgid ""
 msgstr ""
 
 #: ktorrent/dialogs/fileselectdlg.cpp:450 ktorrent/dialogs/pastedialog.cpp:71
-#: ktorrent/dialogs/torrentcreatordlg.cpp:129 libktcore/groups/allgroup.cpp:27
+#: ktorrent/dialogs/torrentcreatordlg.cpp:134 libktcore/groups/allgroup.cpp:27
 #, kde-format
 msgid "All Torrents"
 msgstr "सब्बो टोरेंट"
@@ -457,7 +457,7 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
 #: ktorrent/dialogs/fileselectdlg.ui:205
-#: ktorrent/dialogs/torrentcreatordlg.ui:43
+#: ktorrent/dialogs/torrentcreatordlg.ui:63
 #: plugins/logviewer/logprefwidget.ui:36
 #: plugins/scanfolder/scanfolderprefpage.ui:72
 #: plugins/syndication/filtereditor.ui:242
@@ -676,7 +676,7 @@ msgid "Open an URL"
 msgstr "यूआरएल खोलव"
 
 #: ktorrent/dialogs/pastedialog.cpp:115
-#: ktorrent/dialogs/torrentcreatordlg.cpp:257 ktorrent/gui.cpp:344
+#: ktorrent/dialogs/torrentcreatordlg.cpp:262 ktorrent/gui.cpp:344
 #, kde-format
 msgid "Invalid URL: %1"
 msgstr "अवैध यूआरएल: %1"
@@ -859,28 +859,28 @@ msgstr ""
 msgid "Create A Torrent"
 msgstr "टोरेंट बनाव"
 
-#: ktorrent/dialogs/torrentcreatordlg.cpp:263
+#: ktorrent/dialogs/torrentcreatordlg.cpp:268
 #, kde-format
 msgid "Only HTTP is supported for webseeding."
 msgstr ""
 
-#: ktorrent/dialogs/torrentcreatordlg.cpp:291
+#: ktorrent/dialogs/torrentcreatordlg.cpp:296
 #, kde-format
 msgid "You must select a file or a folder."
 msgstr ""
 
-#: ktorrent/dialogs/torrentcreatordlg.cpp:297
+#: ktorrent/dialogs/torrentcreatordlg.cpp:302
 #, kde-format
 msgid ""
 "You have not added a tracker, are you sure you want to create this torrent?"
 msgstr ""
 
-#: ktorrent/dialogs/torrentcreatordlg.cpp:305
+#: ktorrent/dialogs/torrentcreatordlg.cpp:310
 #, kde-format
 msgid "You must add at least one node."
 msgstr ""
 
-#: ktorrent/dialogs/torrentcreatordlg.cpp:371
+#: ktorrent/dialogs/torrentcreatordlg.cpp:376
 #, kde-format
 msgid "Choose a file to save the torrent"
 msgstr ""
@@ -892,94 +892,108 @@ msgstr ""
 msgid "Create a torrent"
 msgstr "नवा टोरेंट बनाव"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: ktorrent/dialogs/torrentcreatordlg.ui:20
 #, kde-format
 msgid "File or directory to create torrent from:"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QRadioButton, m_selectDirectory)
+#: ktorrent/dialogs/torrentcreatordlg.ui:44
+#, fuzzy, kde-format
+#| msgid "Open Directory"
+msgid "Select Directory"
+msgstr "ओपन डिरेक्टरी"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_selectFile)
 #: ktorrent/dialogs/torrentcreatordlg.ui:51
+#, fuzzy, kde-format
+#| msgid "Select &All"
+msgid "Select File"
+msgstr "सब्बो चुनव (&A)"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ktorrent/dialogs/torrentcreatordlg.ui:71
 #, kde-format
 msgid "Size of each chunk:"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_chunk_size)
-#: ktorrent/dialogs/torrentcreatordlg.ui:62
+#: ktorrent/dialogs/torrentcreatordlg.ui:82
 #, kde-format
 msgid "32 KiB"
 msgstr "३२ कि.बा."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_chunk_size)
-#: ktorrent/dialogs/torrentcreatordlg.ui:67
+#: ktorrent/dialogs/torrentcreatordlg.ui:87
 #, kde-format
 msgid "64 KiB"
 msgstr "६४ कि.बा."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_chunk_size)
-#: ktorrent/dialogs/torrentcreatordlg.ui:72
+#: ktorrent/dialogs/torrentcreatordlg.ui:92
 #, kde-format
 msgid "128 KiB"
 msgstr "१२८ कि.बा."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_chunk_size)
-#: ktorrent/dialogs/torrentcreatordlg.ui:77
+#: ktorrent/dialogs/torrentcreatordlg.ui:97
 #, kde-format
 msgid "256 KiB"
 msgstr "२५६ कि.बा."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_chunk_size)
-#: ktorrent/dialogs/torrentcreatordlg.ui:82
+#: ktorrent/dialogs/torrentcreatordlg.ui:102
 #, kde-format
 msgid "512 KiB"
 msgstr "५१२ कि.बा."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_chunk_size)
-#: ktorrent/dialogs/torrentcreatordlg.ui:87
+#: ktorrent/dialogs/torrentcreatordlg.ui:107
 #, kde-format
 msgid "1 MiB"
 msgstr "१ मे.बा."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_chunk_size)
-#: ktorrent/dialogs/torrentcreatordlg.ui:92
+#: ktorrent/dialogs/torrentcreatordlg.ui:112
 #, kde-format
 msgid "2 MiB"
 msgstr "2 मे.बा."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_chunk_size)
-#: ktorrent/dialogs/torrentcreatordlg.ui:97
+#: ktorrent/dialogs/torrentcreatordlg.ui:117
 #, kde-format
 msgid "4 MiB"
 msgstr "4 मे.बा."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_chunk_size)
-#: ktorrent/dialogs/torrentcreatordlg.ui:102
+#: ktorrent/dialogs/torrentcreatordlg.ui:122
 #, kde-format
 msgid "8 MiB"
 msgstr "8 मे.बा."
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_start_seeding)
-#: ktorrent/dialogs/torrentcreatordlg.ui:112
+#: ktorrent/dialogs/torrentcreatordlg.ui:132
 #, fuzzy, kde-format
 #| msgid "Pending"
 msgid "Start seeding"
 msgstr "लंबित"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_private)
-#: ktorrent/dialogs/torrentcreatordlg.ui:122
+#: ktorrent/dialogs/torrentcreatordlg.ui:142
 #, kde-format
 msgid "Private torrent (DHT not allowed)"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_dht)
-#: ktorrent/dialogs/torrentcreatordlg.ui:129
+#: ktorrent/dialogs/torrentcreatordlg.ui:149
 #, kde-format
 msgid "Decentralized (DHT only)"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_addToGroup)
-#: ktorrent/dialogs/torrentcreatordlg.ui:138
+#: ktorrent/dialogs/torrentcreatordlg.ui:158
 #: plugins/scanfolder/scanfolderprefpage.ui:125
 #, fuzzy, kde-format
 #| msgid "Add to Group"
@@ -987,7 +1001,7 @@ msgid "Add torrent to group:"
 msgstr "समूह जोड़व"
 
 #. i18n: ectx: attribute (title), widget (QWidget, m_tracker_tab)
-#: ktorrent/dialogs/torrentcreatordlg.ui:157
+#: ktorrent/dialogs/torrentcreatordlg.ui:177
 #: plugins/infowidget/infowidgetplugin.cpp:268
 #: plugins/scripting/scripts/tracker_groups/tracker_groups.py:59
 #, kde-format
@@ -998,9 +1012,9 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, m_remove_node)
 #. i18n: ectx: property (text), widget (QPushButton, m_remove_webseed)
 #. i18n: ectx: property (text), widget (QPushButton, m_remove)
-#: ktorrent/dialogs/torrentcreatordlg.ui:178
-#: ktorrent/dialogs/torrentcreatordlg.ui:284
-#: ktorrent/dialogs/torrentcreatordlg.ui:328 ktorrent/ipfilterwidget.ui:65
+#: ktorrent/dialogs/torrentcreatordlg.ui:198
+#: ktorrent/dialogs/torrentcreatordlg.ui:304
+#: ktorrent/dialogs/torrentcreatordlg.ui:348 ktorrent/ipfilterwidget.ui:65
 #: plugins/mediaplayer/playlistwidget.cpp:53
 #: plugins/syndication/managefiltersdlg.ui:67
 #, kde-format
@@ -1008,34 +1022,34 @@ msgid "Remove"
 msgstr "हटाव"
 
 #. i18n: ectx: property (text), widget (QPushButton, m_move_up)
-#: ktorrent/dialogs/torrentcreatordlg.ui:185
+#: ktorrent/dialogs/torrentcreatordlg.ui:205
 #: ktorrent/tools/queuemanagerwidget.cpp:78
 #, kde-format
 msgid "Move Up"
 msgstr "ऊपर जाव"
 
 #. i18n: ectx: property (text), widget (QPushButton, m_move_down)
-#: ktorrent/dialogs/torrentcreatordlg.ui:192
+#: ktorrent/dialogs/torrentcreatordlg.ui:212
 #: ktorrent/tools/queuemanagerwidget.cpp:81
 #, kde-format
 msgid "Move Down"
 msgstr "नीचे जाव"
 
 #. i18n: ectx: attribute (title), widget (QWidget, m_dht_tab)
-#: ktorrent/dialogs/torrentcreatordlg.ui:215
+#: ktorrent/dialogs/torrentcreatordlg.ui:235
 #, fuzzy, kde-format
 #| msgid "Nodes"
 msgid "DHT Nodes"
 msgstr "नोड्स"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: ktorrent/dialogs/torrentcreatordlg.ui:223
+#: ktorrent/dialogs/torrentcreatordlg.ui:243
 #, kde-format
 msgid "Node:"
 msgstr "नोड:"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, m_node_list)
-#: ktorrent/dialogs/torrentcreatordlg.ui:269
+#: ktorrent/dialogs/torrentcreatordlg.ui:289
 #, fuzzy, kde-format
 msgid "IP or Hostname"
 msgstr "अग्यात क्लायंट"
@@ -1043,14 +1057,14 @@ msgstr "अग्यात क्लायंट"
 #. i18n: ectx: label, entry (port), group (downloads)
 #. i18n: ectx: label, entry (udpTrackerPort), group (downloads)
 #. i18n: ectx: property (text), widget (QTreeWidget, m_node_list)
-#: ktorrent/dialogs/torrentcreatordlg.ui:274 libktcore/ktorrent.kcfg:54
+#: ktorrent/dialogs/torrentcreatordlg.ui:294 libktcore/ktorrent.kcfg:54
 #: libktcore/ktorrent.kcfg:60
 #, kde-format
 msgid "Port"
 msgstr "पोर्ट"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: ktorrent/dialogs/torrentcreatordlg.ui:307
+#: ktorrent/dialogs/torrentcreatordlg.ui:327
 #, fuzzy, kde-format
 #| msgid "Web Server"
 msgid "Web Seeds"
@@ -1058,7 +1072,7 @@ msgstr "वेब सर्वर"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QLabel, label_17)
-#: ktorrent/dialogs/torrentcreatordlg.ui:356
+#: ktorrent/dialogs/torrentcreatordlg.ui:376
 #: plugins/infowidget/statustab.ui:140
 #, kde-format
 msgid "Comments:"
@@ -6510,7 +6524,7 @@ msgstr ""
 msgid "Scan directories recursively."
 msgstr ""
 
-#: plugins/scanfolder/scanfolder.cpp:81 plugins/scanfolder/scanthread.cpp:193
+#: plugins/scanfolder/scanfolder.cpp:81 plugins/scanfolder/scanthread.cpp:198
 #: plugins/scanfolder/torrentloadqueue.cpp:168
 #: plugins/scanfolder/torrentloadqueue.cpp:169
 #: plugins/scanfolder/torrentloadqueue.cpp:172
