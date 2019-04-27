@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-03-27 03:32+0100\n"
+"POT-Creation-Date: 2019-04-27 03:31+0200\n"
 "PO-Revision-Date: 2009-02-27 21:59+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -138,7 +138,7 @@ msgstr ""
 msgid "<a href=https://www.gpg4win.org>Visit the Gpg4win homepage</a>"
 msgstr ""
 
-#: src/commands/adduseridcommand.cpp:245
+#: src/commands/adduseridcommand.cpp:280
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "<qt><p>An error occurred while trying to export the secret key:</p><p><b>"
@@ -151,21 +151,21 @@ msgstr ""
 "<qt><p>गोपनीय कुंजी:</p><p><b>%1</b></p> ल निर्यात करे के कोसिसों के समय एक गलती "
 "होइस</qt>"
 
-#: src/commands/adduseridcommand.cpp:248
+#: src/commands/adduseridcommand.cpp:283
 #, fuzzy, kde-format
 #| msgid "Add User-ID..."
 msgctxt "@title:window"
 msgid "Add User-ID Error"
 msgstr "कमइया आईडी जोड़व..."
 
-#: src/commands/adduseridcommand.cpp:253
+#: src/commands/adduseridcommand.cpp:288
 #, fuzzy, kde-format
 #| msgid "Secret key successfully exported."
 msgctxt "@info"
 msgid "User-ID successfully added."
 msgstr "गोपनीय कुंजी सफलता से निर्यात करिस."
 
-#: src/commands/adduseridcommand.cpp:254
+#: src/commands/adduseridcommand.cpp:289
 #, fuzzy, kde-format
 #| msgid "Add User-ID..."
 msgctxt "@title:window"
@@ -1296,7 +1296,7 @@ msgstr "दसखत फाइल"
 
 #. i18n: ectx: property (text), widget (QCheckBox, encryptionCB)
 #: src/commands/keytocardcommand.cpp:106
-#: src/dialogs/certificatedetailswidget.cpp:387
+#: src/dialogs/certificatedetailswidget.cpp:389
 #: src/newcertificatewizard/advancedsettingsdialog.ui:216
 #, kde-format
 msgid "Encryption"
@@ -1414,15 +1414,15 @@ msgstr ""
 msgid "Show Details"
 msgstr "विवरन देखाव"
 
-#: src/commands/lookupcertificatescommand.cpp:336
-#: src/commands/lookupcertificatescommand.cpp:341
+#: src/commands/lookupcertificatescommand.cpp:337
+#: src/commands/lookupcertificatescommand.cpp:342
 #, fuzzy, kde-format
 #| msgid "Export Certificates to Server..."
 msgctxt "@title %1:\"OpenPGP\" or \"CMS\""
 msgid "%1 Certificate Server"
 msgstr "सर्वर मं प्रमानपत्र निर्यात करव..."
 
-#: src/commands/lookupcertificatescommand.cpp:374
+#: src/commands/lookupcertificatescommand.cpp:375
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1430,7 +1430,7 @@ msgid ""
 "%1"
 msgstr ""
 
-#: src/commands/lookupcertificatescommand.cpp:383
+#: src/commands/lookupcertificatescommand.cpp:384
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1441,13 +1441,13 @@ msgid ""
 "have to refine your search.</para>"
 msgstr ""
 
-#: src/commands/lookupcertificatescommand.cpp:391
+#: src/commands/lookupcertificatescommand.cpp:392
 #, kde-format
 msgctxt "@title"
 msgid "Result Truncated"
 msgstr ""
 
-#: src/commands/lookupcertificatescommand.cpp:413
+#: src/commands/lookupcertificatescommand.cpp:414
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1457,33 +1457,10 @@ msgid ""
 "Kleopatra</interface>.</para>"
 msgstr ""
 
-#: src/commands/lookupcertificatescommand.cpp:418
+#: src/commands/lookupcertificatescommand.cpp:419
 #, kde-format
 msgctxt "@title"
 msgid "No Directory Servers Configured"
-msgstr ""
-
-#: src/commands/lookupcertificatescommand.cpp:427
-#, kde-format
-msgid ""
-"<p>You seem to be searching for a fingerPrint or a key-id.</p><p>Different "
-"keyservers expect different ways to search for these. Some require a \"0x\" "
-"prefix, while others require there be no such prefix.</p><p>If your search "
-"does not yield any results, try removing the 0x prefix from your search.</p>"
-msgstr ""
-
-#: src/commands/lookupcertificatescommand.cpp:431
-#, kde-format
-msgid ""
-"<p>You seem to be searching for a fingerPrint or a key-id.</p><p>Different "
-"keyservers expect different ways to search for these. Some require a \"0x\" "
-"prefix, while others require there be no such prefix.</p><p>If your search "
-"does not yield any results, try adding the 0x prefix to your search.</p>"
-msgstr ""
-
-#: src/commands/lookupcertificatescommand.cpp:435
-#, kde-format
-msgid "Hex-String Search"
 msgstr ""
 
 #: src/commands/refreshopenpgpcertscommand.cpp:64
@@ -3805,6 +3782,22 @@ msgstr ""
 msgid "Verifying checksums (%2) in %1"
 msgstr ""
 
+#: src/dialogs/addemaildialog.cpp:72
+#, kde-format
+msgid "Advanced"
+msgstr "विस्तृत"
+
+#: src/dialogs/addemaildialog.cpp:82 src/dialogs/adduseriddialog.cpp:74
+#: src/newcertificatewizard/newcertificatewizard.cpp:1276
+#, kde-format
+msgid "EMail"
+msgstr "ईमेल"
+
+#: src/dialogs/addemaildialog.cpp:110
+#, kde-format
+msgid "Add New EMail"
+msgstr ""
+
 #: src/dialogs/adduseriddialog.cpp:70
 #: src/dialogs/certificatedetailswidget.cpp:136
 #: src/newcertificatewizard/newcertificatewizard.cpp:1273
@@ -3816,12 +3809,6 @@ msgstr "नांव"
 #, kde-format
 msgid "Comment"
 msgstr ""
-
-#: src/dialogs/adduseriddialog.cpp:74
-#: src/newcertificatewizard/newcertificatewizard.cpp:1276
-#, kde-format
-msgid "EMail"
-msgstr "ईमेल"
 
 #: src/dialogs/adduseriddialog.cpp:90
 #: src/newcertificatewizard/newcertificatewizard.cpp:1292
@@ -3857,14 +3844,14 @@ msgstr ""
 msgid "(optional)"
 msgstr "(वैकल्पिक)"
 
-#: src/dialogs/adduseriddialog.cpp:300
+#: src/dialogs/adduseriddialog.cpp:301
 #: src/newcertificatewizard/newcertificatewizard.cpp:1570
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is required, but empty."
 msgstr ""
 
-#: src/dialogs/adduseriddialog.cpp:302
+#: src/dialogs/adduseriddialog.cpp:303
 #: src/newcertificatewizard/newcertificatewizard.cpp:1572
 #, kde-kuit-format
 msgctxt "@info"
@@ -3873,14 +3860,14 @@ msgid ""
 "<icode>%2</icode>"
 msgstr ""
 
-#: src/dialogs/adduseriddialog.cpp:308
+#: src/dialogs/adduseriddialog.cpp:309
 #: src/newcertificatewizard/newcertificatewizard.cpp:1578
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is incomplete."
 msgstr ""
 
-#: src/dialogs/adduseriddialog.cpp:310
+#: src/dialogs/adduseriddialog.cpp:311
 #: src/newcertificatewizard/newcertificatewizard.cpp:1580
 #, kde-kuit-format
 msgctxt "@info"
@@ -3889,14 +3876,14 @@ msgid ""
 "icode>"
 msgstr ""
 
-#: src/dialogs/adduseriddialog.cpp:315
+#: src/dialogs/adduseriddialog.cpp:316
 #: src/newcertificatewizard/newcertificatewizard.cpp:1585
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is invalid."
 msgstr ""
 
-#: src/dialogs/adduseriddialog.cpp:317
+#: src/dialogs/adduseriddialog.cpp:318
 #: src/newcertificatewizard/newcertificatewizard.cpp:1587
 #, kde-kuit-format
 msgctxt "@info"
@@ -3945,76 +3932,76 @@ msgstr "निर्यात"
 msgid "Revoke this User ID"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:328
+#: src/dialogs/certificatedetailswidget.cpp:330
 #, fuzzy, kde-format
 #| msgid "Certify..."
 msgid "Certify ..."
 msgstr "प्रमानित..."
 
-#: src/dialogs/certificatedetailswidget.cpp:381
+#: src/dialogs/certificatedetailswidget.cpp:383
 #, fuzzy, kde-format
 #| msgid "Never"
 msgid "never"
 msgstr "कभू नइ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, signingCB)
-#: src/dialogs/certificatedetailswidget.cpp:383
+#: src/dialogs/certificatedetailswidget.cpp:385
 #: src/newcertificatewizard/advancedsettingsdialog.ui:206
 #, kde-format
 msgid "Signing"
 msgstr "दसखत करे मं"
 
-#: src/dialogs/certificatedetailswidget.cpp:384
-#: src/dialogs/certificatedetailswidget.cpp:388
+#: src/dialogs/certificatedetailswidget.cpp:386
+#: src/dialogs/certificatedetailswidget.cpp:390
 #, kde-format
 msgid "First message"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:385
-#: src/dialogs/certificatedetailswidget.cpp:389
+#: src/dialogs/certificatedetailswidget.cpp:387
+#: src/dialogs/certificatedetailswidget.cpp:391
 #, kde-format
 msgid "Last message"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:386
-#: src/dialogs/certificatedetailswidget.cpp:390
+#: src/dialogs/certificatedetailswidget.cpp:388
+#: src/dialogs/certificatedetailswidget.cpp:392
 #, kde-format
 msgid "Message count"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:426
+#: src/dialogs/certificatedetailswidget.cpp:428
 #, kde-format
 msgid "Common Name"
 msgstr "सामान्य नाम"
 
-#: src/dialogs/certificatedetailswidget.cpp:427
+#: src/dialogs/certificatedetailswidget.cpp:429
 #, kde-format
 msgid "Organization"
 msgstr "संगठन "
 
-#: src/dialogs/certificatedetailswidget.cpp:428
+#: src/dialogs/certificatedetailswidget.cpp:430
 #, fuzzy, kde-format
 #| msgid "Strength"
 msgid "Street"
 msgstr "सामर्थ्य"
 
-#: src/dialogs/certificatedetailswidget.cpp:429
+#: src/dialogs/certificatedetailswidget.cpp:431
 #, kde-format
 msgid "City"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:430
+#: src/dialogs/certificatedetailswidget.cpp:432
 #, fuzzy, kde-format
 #| msgid "Status"
 msgid "State"
 msgstr "स्थिति"
 
-#: src/dialogs/certificatedetailswidget.cpp:431
+#: src/dialogs/certificatedetailswidget.cpp:433
 #, kde-format
 msgid "Country"
 msgstr "देस"
 
-#: src/dialogs/certificatedetailswidget.cpp:454
+#: src/dialogs/certificatedetailswidget.cpp:456
 #, kde-format
 msgctxt "<name> of <company>"
 msgid "%1 of %2"
@@ -4022,7 +4009,7 @@ msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CertificateDetailsWidget)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: src/dialogs/certificatedetailswidget.cpp:582
+#: src/dialogs/certificatedetailswidget.cpp:584
 #: src/dialogs/certificatedetailswidget.ui:14
 #: src/dialogs/certificatedetailswidget.ui:76
 #, kde-format
@@ -7608,6 +7595,11 @@ msgstr "सीआरएल कैस डम्प करव"
 msgid "Import CRL From File..."
 msgstr "सीआरएल फाइल से आयात करव..."
 
+#: src/view/keytreeview.cpp:98
+#, kde-format
+msgid "View Columns"
+msgstr ""
+
 #: src/view/netkeywidget.cpp:90 src/view/pgpcardwidget.cpp:151
 #, fuzzy, kde-format
 #| msgid "Serial number"
@@ -8073,89 +8065,89 @@ msgstr ""
 msgid "Smartcard Management"
 msgstr ""
 
-#: src/view/tabwidget.cpp:583
+#: src/view/tabwidget.cpp:586
 #, kde-format
 msgid "Rename Tab"
 msgstr "टैब ल नवा नाम देवव"
 
-#: src/view/tabwidget.cpp:583
+#: src/view/tabwidget.cpp:586
 #, kde-format
 msgid "New tab title:"
 msgstr "नवा टैब सीर्सक:"
 
-#: src/view/tabwidget.cpp:781
+#: src/view/tabwidget.cpp:784
 #, kde-format
 msgid "New Tab"
 msgstr "नवा टैब"
 
-#: src/view/tabwidget.cpp:781
+#: src/view/tabwidget.cpp:784
 #, kde-format
 msgid "Open a new tab"
 msgstr "नवा टैब खोलव"
 
-#: src/view/tabwidget.cpp:789
+#: src/view/tabwidget.cpp:792
 #, kde-format
 msgid "Rename Tab..."
 msgstr "टैब नाम बदलव..."
 
-#: src/view/tabwidget.cpp:789
+#: src/view/tabwidget.cpp:792
 #, kde-format
 msgid "Rename this tab"
 msgstr "ए टैब के नाम बदलव"
 
-#: src/view/tabwidget.cpp:793
+#: src/view/tabwidget.cpp:796
 #, fuzzy, kde-format
 msgid "Duplicate Tab"
 msgstr "मौजूदा टैब के नकल बनाव"
 
-#: src/view/tabwidget.cpp:793
+#: src/view/tabwidget.cpp:796
 #, fuzzy, kde-format
 msgid "Duplicate this tab"
 msgstr "मौजूदा टैब के नकल बनाव"
 
-#: src/view/tabwidget.cpp:797
+#: src/view/tabwidget.cpp:800
 #, kde-format
 msgid "Close Tab"
 msgstr "टैब बंद करव"
 
-#: src/view/tabwidget.cpp:797
+#: src/view/tabwidget.cpp:800
 #, kde-format
 msgid "Close this tab"
 msgstr "ए टैब बंद करव"
 
-#: src/view/tabwidget.cpp:801
+#: src/view/tabwidget.cpp:804
 #, kde-format
 msgid "Move Tab Left"
 msgstr "टैब ल डेरी खिसकाव"
 
-#: src/view/tabwidget.cpp:801
+#: src/view/tabwidget.cpp:804
 #, fuzzy, kde-format
 #| msgid "Move Tab Left"
 msgid "Move this tab left"
 msgstr "टैब ल डेरी खिसकाव"
 
-#: src/view/tabwidget.cpp:805
+#: src/view/tabwidget.cpp:808
 #, kde-format
 msgid "Move Tab Right"
 msgstr "टैब ल जेवनी खिसकाव"
 
-#: src/view/tabwidget.cpp:805
+#: src/view/tabwidget.cpp:808
 #, fuzzy, kde-format
 #| msgid "Move Tab Right"
 msgid "Move this tab right"
 msgstr "टैब ल जेवनी खिसकाव"
 
-#: src/view/tabwidget.cpp:809
+#: src/view/tabwidget.cpp:812
 #, kde-format
 msgid "Hierarchical Certificate List"
 msgstr "हियरार्चिकल प्रमानपत्र सूची"
 
-#: src/view/tabwidget.cpp:813
+#: src/view/tabwidget.cpp:816
 #, kde-format
 msgid "Expand All"
 msgstr "सब्बो फैलाव"
 
-#: src/view/tabwidget.cpp:817
+#: src/view/tabwidget.cpp:820
 #, kde-format
 msgid "Collapse All"
 msgstr "सब्बो समेटव"
@@ -8642,9 +8634,6 @@ msgstr ""
 
 #~ msgid "Basic"
 #~ msgstr "मूल"
-
-#~ msgid "Advanced"
-#~ msgstr "विस्तृत"
 
 #~ msgid "Expert"
 #~ msgstr "एक्सपर्ट"
