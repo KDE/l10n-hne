@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfileshare\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-08-16 09:09+0200\n"
+"POT-Creation-Date: 2019-05-18 03:01+0200\n"
 "PO-Revision-Date: 2009-02-26 18:10+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -52,16 +52,21 @@ msgstr ""
 
 #: samba/filepropertiesplugin/sambausershareplugin.cpp:92
 #, fuzzy, kde-format
-#| msgid "No Samba server installed on this system"
-msgid "Samba is not installed on your system."
-msgstr "ये तंत्र तिर कोनो साम्बा सर्वर इनस्टाल नइ हे"
+#| msgid "Only local folders can be shared."
+msgid "Samba must be installed before folders can be shared."
+msgstr "सिरिफ लोकल फोल्डर ही साझा हो सकथे ."
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:95
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:97
 #, kde-format
-msgid "Install Samba..."
+msgid "Install Samba"
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:257
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:155
+#, kde-format
+msgid "Installing Samba..."
+msgstr ""
+
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:264
 #, kde-format
 msgid ""
 "<qt>There is already a share with the name <strong>%1</strong>.<br /> Please "
@@ -73,22 +78,32 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, sambaChk)
 #: samba/filepropertiesplugin/sambausershareplugin.ui:19
 #, fuzzy, kde-format
-#| msgid "Share with S&amba (Microsoft(R) Windows(R))"
-msgid "Share with S&amba (Microsoft Windows)"
-msgstr "साम्बा (माइक्रोसाफ्ट(R) विंडोज (R)) के साथ साझा करव (&a)"
+#| msgid "S&hare this folder in the local network"
+msgid "Sh&are this folder with other computers on the local network"
+msgstr "ये फोल्डर ल लोकल नेटवर्क मं साझा करव (&h)"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: samba/filepropertiesplugin/sambausershareplugin.ui:36
+#: samba/filepropertiesplugin/sambausershareplugin.ui:39
 #, kde-format
 msgid "Name:"
 msgstr "नाम:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, sambaAllowGuestChk)
-#: samba/filepropertiesplugin/sambausershareplugin.ui:56
+#: samba/filepropertiesplugin/sambausershareplugin.ui:59
 #, fuzzy, kde-format
 #| msgid "Allo&w guest logins"
 msgid "Allow Guests"
 msgstr "मेहमान लागिन स्वीकारव (&w)"
+
+#, fuzzy
+#~| msgid "No Samba server installed on this system"
+#~ msgid "Samba is not installed on your system."
+#~ msgstr "ये तंत्र तिर कोनो साम्बा सर्वर इनस्टाल नइ हे"
+
+#, fuzzy
+#~| msgid "Share with S&amba (Microsoft(R) Windows(R))"
+#~ msgid "Share with S&amba (Microsoft Windows)"
+#~ msgstr "साम्बा (माइक्रोसाफ्ट(R) विंडोज (R)) के साथ साझा करव (&a)"
 
 #~ msgid "Select Users"
 #~ msgstr "कमइया चुनव"
@@ -1876,9 +1891,6 @@ msgstr "मेहमान लागिन स्वीकारव (&w)"
 #~ msgid "Folder:"
 #~ msgstr "फोल्डरः"
 
-#~ msgid "S&hare this folder in the local network"
-#~ msgstr "ये फोल्डर ल लोकल नेटवर्क मं साझा करव (&h)"
-
 #~ msgid "Share with &NFS (Linux/UNIX)"
 #~ msgstr "एनवाफएस के साथ साझेदारी (लिनक्स/यूनिक्स) (&N)"
 
@@ -2111,9 +2123,6 @@ msgstr "मेहमान लागिन स्वीकारव (&w)"
 
 #~ msgid "Please enter a valid path."
 #~ msgstr "किरपा करके, एक वैध रस्ता भरव."
-
-#~ msgid "Only local folders can be shared."
-#~ msgstr "सिरिफ लोकल फोल्डर ही साझा हो सकथे ."
 
 #~ msgid "The folder does not exists."
 #~ msgstr "फोल्डर अस्तित्व मं नइ हे."
