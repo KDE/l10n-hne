@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalzium\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-07-19 03:02+0200\n"
+"POT-Creation-Date: 2019-09-12 02:52+0200\n"
 "PO-Revision-Date: 2009-02-21 22:58+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -247,7 +247,7 @@ msgstr "बहुत से सुद्ध पदार्थों के ह�
 #. i18n: ectx: property (text), item, widget (KComboBox, finalAmtType)
 #: data/knowledge.xml:66 data/knowledge.xml:131
 #: src/calculator/nuclearCalculator.ui:334
-#: src/calculator/nuclearCalculator.ui:354 src/detailinfodlg.cpp:353
+#: src/calculator/nuclearCalculator.ui:354 src/detailinfodlg.cpp:320
 #: src/exportdialog.cpp:151 src/settings_gradients.ui:74
 #, kde-format
 msgid "Mass"
@@ -454,7 +454,7 @@ msgid ""
 "internal masses, but is intrinsic to the particle itself."
 msgstr ""
 
-#: data/knowledge.xml:149 src/detailinfodlg.cpp:365
+#: data/knowledge.xml:149 src/detailinfodlg.cpp:332
 #, kde-format
 msgid "Magnetic Moment"
 msgstr "चुम्बकीय मोमेंट"
@@ -622,7 +622,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (KComboBox, KCB_x)
 #. i18n: ectx: property (text), item, widget (KComboBox, KCB_y)
 #: data/knowledge.xml:247 data/knowledge.xml:256 data/knowledge.xml:265
-#: data/knowledge.xml:271 src/detailinfodlg.cpp:257
+#: data/knowledge.xml:271 src/detailinfodlg.cpp:227
 #: src/elementdataviewer.cpp:289 src/exportdialog.cpp:156
 #: src/kalziumgradienttype.cpp:176 src/plotsetupwidget.ui:106
 #: src/plotsetupwidget.ui:427 src/settings_gradients.ui:60
@@ -4276,39 +4276,34 @@ msgctxt "For example '1.0079u', the mass of an element in units"
 msgid "%1 u"
 msgstr "%1 u"
 
-#: src/detailinfodlg.cpp:60
+#: src/detailinfodlg.cpp:57
 #, kde-format
 msgctxt "Next element"
 msgid "Next"
 msgstr "अगला"
 
-#: src/detailinfodlg.cpp:61
+#: src/detailinfodlg.cpp:58
 #, kde-format
 msgid "Goes to the next element"
 msgstr "अगले तत्व मं जाथे "
 
-#: src/detailinfodlg.cpp:64
+#: src/detailinfodlg.cpp:61
 #, kde-format
 msgctxt "Previous element"
 msgid "Previous"
 msgstr "पिछला"
 
-#: src/detailinfodlg.cpp:65
+#: src/detailinfodlg.cpp:62
 #, kde-format
 msgid "Goes to the previous element"
 msgstr "पिछले तत्व मं जाथे "
 
-#: src/detailinfodlg.cpp:182
-#, kde-format
-msgid "Block: %1"
-msgstr "ब्लाक: %1"
-
-#: src/detailinfodlg.cpp:195
+#: src/detailinfodlg.cpp:165
 #, kde-format
 msgid "It was discovered by %1."
 msgstr "%1 के साथ खोजा गिस."
 
-#: src/detailinfodlg.cpp:202
+#: src/detailinfodlg.cpp:172
 #, kde-format
 msgid "Origin of the name:<br/>%1"
 msgstr "नामकरन के सृजन:<br/>%1"
@@ -4316,7 +4311,7 @@ msgstr "नामकरन के सृजन:<br/>%1"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_LogarithmicMeltingPointGradient)
 #. i18n: ectx: property (text), item, widget (KComboBox, KCB_x)
 #. i18n: ectx: property (text), item, widget (KComboBox, KCB_y)
-#: src/detailinfodlg.cpp:229 src/elementdataviewer.cpp:268
+#: src/detailinfodlg.cpp:199 src/elementdataviewer.cpp:268
 #: src/exportdialog.cpp:158 src/kalziumgradienttype.cpp:400
 #: src/plotsetupwidget.ui:91 src/plotsetupwidget.ui:412
 #: src/settings_gradients.ui:88
@@ -4327,7 +4322,7 @@ msgstr "गलनांक"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_LogarithmicBoilingPointGradient)
 #. i18n: ectx: property (text), item, widget (KComboBox, KCB_x)
 #. i18n: ectx: property (text), item, widget (KComboBox, KCB_y)
-#: src/detailinfodlg.cpp:236 src/elementdataviewer.cpp:275
+#: src/detailinfodlg.cpp:206 src/elementdataviewer.cpp:275
 #: src/exportdialog.cpp:159 src/kalziumgradienttype.cpp:344
 #: src/plotsetupwidget.ui:96 src/plotsetupwidget.ui:417
 #: src/settings_gradients.ui:81
@@ -4335,37 +4330,37 @@ msgstr "गलनांक"
 msgid "Boiling Point"
 msgstr "क्वथनांक"
 
-#: src/detailinfodlg.cpp:243 src/exportdialog.cpp:154
+#: src/detailinfodlg.cpp:213 src/exportdialog.cpp:154
 #, kde-format
 msgid "Electron Affinity"
 msgstr "इलेक्ट्रान एफिनिटी"
 
-#: src/detailinfodlg.cpp:250
+#: src/detailinfodlg.cpp:220
 #, fuzzy, kde-format
 #| msgid "Electronic configuration: %1"
 msgid "Electronic configuration"
 msgstr "इलेक्ट्रानिक कान्फिगरेसन: %1"
 
-#: src/detailinfodlg.cpp:264
+#: src/detailinfodlg.cpp:234
 #, fuzzy, kde-format
 #| msgid "Van der Waals Radius"
 msgid "van der Waals Radius"
 msgstr "वान डेर वाल्स त्रिज्या"
 
 #. i18n: ectx: property (text), widget (QTableWidget, table)
-#: src/detailinfodlg.cpp:271 src/molcalcwidgetbase.ui:218
+#: src/detailinfodlg.cpp:241 src/molcalcwidgetbase.ui:218
 #, fuzzy, kde-format
 #| msgid "Atomic Mass"
 msgid "Atomic mass"
 msgstr "आनविक द्रव्यमान"
 
-#: src/detailinfodlg.cpp:278
+#: src/detailinfodlg.cpp:248
 #, fuzzy, kde-format
 #| msgid "First Ionizationenergy"
 msgid "Ionization energy"
 msgstr "पहिली आयनीकरन ऊर्जा"
 
-#: src/detailinfodlg.cpp:278
+#: src/detailinfodlg.cpp:248
 #, fuzzy, kde-format
 #| msgid "First Ionizationenergy"
 msgid "First Ionization energy"
@@ -4374,68 +4369,63 @@ msgstr "पहिली आयनीकरन ऊर्जा"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_LogarithmicElectronegativityGradient)
 #. i18n: ectx: property (text), item, widget (KComboBox, KCB_x)
 #. i18n: ectx: property (text), item, widget (KComboBox, KCB_y)
-#: src/detailinfodlg.cpp:285 src/elementdataviewer.cpp:262
+#: src/detailinfodlg.cpp:255 src/elementdataviewer.cpp:262
 #: src/exportdialog.cpp:155 src/plotsetupwidget.ui:86
 #: src/plotsetupwidget.ui:407 src/settings_gradients.ui:95
 #, kde-format
 msgid "Electronegativity"
 msgstr "वैद्युतीयरिनात्मकता"
 
-#: src/detailinfodlg.cpp:292
+#: src/detailinfodlg.cpp:262
 #, fuzzy, kde-format
 #| msgid "Oxidationstages"
 msgid "Oxidation states"
 msgstr "ओक्सीडेसनस्टेजेस"
 
-#: src/detailinfodlg.cpp:303
+#: src/detailinfodlg.cpp:273
 #, kde-format
 msgctxt "Link to element's Wikipedia page, %1 is localized language name"
 msgid "Wikipedia (%1)"
 msgstr ""
 
-#: src/detailinfodlg.cpp:351
-#, kde-format
-msgid "Isotope-Table"
-msgstr "आइसोटोप-टेबल"
-
-#: src/detailinfodlg.cpp:355
+#: src/detailinfodlg.cpp:322
 #, kde-format
 msgid "Neutrons"
 msgstr "न्यूट्रान्स"
 
 #. i18n: ectx: property (text), widget (QTableWidget, table)
-#: src/detailinfodlg.cpp:357 src/molcalcwidgetbase.ui:228
+#: src/detailinfodlg.cpp:324 src/molcalcwidgetbase.ui:228
 #, kde-format
 msgid "Percentage"
 msgstr "प्रतिसत"
 
-#: src/detailinfodlg.cpp:359
+#: src/detailinfodlg.cpp:326
 #, kde-format
 msgid "Half-life period"
 msgstr "अर्ध-जीवन अवधि"
 
-#: src/detailinfodlg.cpp:361
+#: src/detailinfodlg.cpp:328
 #, kde-format
 msgid "Energy and Mode of Decay"
 msgstr "ऊर्जा अउ क्छय के मोड"
 
-#: src/detailinfodlg.cpp:363
+#: src/detailinfodlg.cpp:330
 #, kde-format
 msgid "Spin and Parity"
 msgstr "स्पिन अउ पैरिटी"
 
-#: src/detailinfodlg.cpp:371
+#: src/detailinfodlg.cpp:338
 #, kde-format
 msgid "%1 u"
 msgstr "%1 u"
 
-#: src/detailinfodlg.cpp:377
+#: src/detailinfodlg.cpp:344
 #, kde-format
 msgctxt "this can for example be '24%'"
 msgid "%1%"
 msgstr "%1%"
 
-#: src/detailinfodlg.cpp:381
+#: src/detailinfodlg.cpp:348
 #, kde-format
 msgctxt ""
 "The first argument is the value, the second is the unit. For example '17 s' "
@@ -4443,46 +4433,46 @@ msgctxt ""
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: src/detailinfodlg.cpp:386 src/detailinfodlg.cpp:398
-#: src/detailinfodlg.cpp:411 src/detailinfodlg.cpp:416
-#: src/detailinfodlg.cpp:427
+#: src/detailinfodlg.cpp:354 src/detailinfodlg.cpp:366
+#: src/detailinfodlg.cpp:379 src/detailinfodlg.cpp:384
+#: src/detailinfodlg.cpp:395
 #, kde-format
 msgid "%1 MeV"
 msgstr "%1 MeV"
 
-#: src/detailinfodlg.cpp:388
+#: src/detailinfodlg.cpp:356
 #, kde-format
 msgid " %1"
 msgstr " %1"
 
-#: src/detailinfodlg.cpp:390 src/detailinfodlg.cpp:402
-#: src/detailinfodlg.cpp:421 src/detailinfodlg.cpp:431
+#: src/detailinfodlg.cpp:358 src/detailinfodlg.cpp:370
+#: src/detailinfodlg.cpp:389 src/detailinfodlg.cpp:399
 #, kde-format
 msgid "(%1%)"
 msgstr "(%1%)"
 
-#: src/detailinfodlg.cpp:393 src/detailinfodlg.cpp:406
+#: src/detailinfodlg.cpp:361 src/detailinfodlg.cpp:374
 #, kde-format
 msgid ", "
 msgstr ","
 
-#: src/detailinfodlg.cpp:400
+#: src/detailinfodlg.cpp:368
 #, kde-format
 msgid " %1<sup>-</sup>"
 msgstr " %1<sup>-</sup>"
 
-#: src/detailinfodlg.cpp:413
+#: src/detailinfodlg.cpp:381
 #, kde-format
 msgid " %1<sup>+</sup>"
 msgstr " %1<sup>+</sup>"
 
-#: src/detailinfodlg.cpp:418 src/detailinfodlg.cpp:429
+#: src/detailinfodlg.cpp:386 src/detailinfodlg.cpp:397
 #, kde-format
 msgctxt "Acronym of Electron Capture"
 msgid " EC"
 msgstr "ईसी"
 
-#: src/detailinfodlg.cpp:438
+#: src/detailinfodlg.cpp:406
 #, kde-format
 msgid "%1 %2<sub>n</sub>"
 msgstr "%1 %2<sub>n</sub>"
@@ -4506,48 +4496,48 @@ msgstr "%1 %2<sub>n</sub>"
 #. X      piclabel->setMinimumSize(400, 350);
 #. X      mainLayout->addWidget(piclabel);
 #. html tab
-#: src/detailinfodlg.cpp:477
+#: src/detailinfodlg.cpp:445
 #, kde-format
 msgid "Data Overview"
 msgstr "डाटा ओवर-व्यू"
 
-#: src/detailinfodlg.cpp:481 src/detailinfodlg.cpp:482
+#: src/detailinfodlg.cpp:449 src/detailinfodlg.cpp:450
 #, kde-format
 msgid "Atom Model"
 msgstr "अनु माडल"
 
-#: src/detailinfodlg.cpp:490
+#: src/detailinfodlg.cpp:458
 #, kde-format
 msgid "Isotopes"
 msgstr "आइसोटोप्स"
 
-#: src/detailinfodlg.cpp:491
+#: src/detailinfodlg.cpp:459
 #, kde-format
 msgid "Miscellaneous"
 msgstr "विविध"
 
-#: src/detailinfodlg.cpp:496 src/detailinfodlg.cpp:497
+#: src/detailinfodlg.cpp:463 src/detailinfodlg.cpp:464
 #, kde-format
 msgid "Spectrum"
 msgstr "स्पेक्ट्रम"
 
-#: src/detailinfodlg.cpp:510
+#: src/detailinfodlg.cpp:477
 #, fuzzy, kde-format
 msgid "Extra information"
 msgstr "जानकारी"
 
-#: src/detailinfodlg.cpp:510
+#: src/detailinfodlg.cpp:477
 #, fuzzy, kde-format
 msgid "Extra Information"
 msgstr "जानकारी"
 
-#: src/detailinfodlg.cpp:520
+#: src/detailinfodlg.cpp:488
 #, kde-format
-msgctxt "For example Carbon (6)"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
+msgctxt "For example: [C] Carbon (6 - Block p)"
+msgid "[%1] %2 (%3 - Block %4)"
+msgstr ""
 
-#: src/detailinfodlg.cpp:558
+#: src/detailinfodlg.cpp:524
 #, kde-format
 msgid "No spectrum of %1 found."
 msgstr ""
@@ -4878,42 +4868,42 @@ msgstr "अग्यात"
 msgid "Exact mass: %1 u"
 msgstr "सटीक द्रव्यमान: %1 u"
 
-#: src/kalzium.cpp:130
+#: src/kalzium.cpp:129
 #, kde-format
 msgid "&Export Data..."
 msgstr "डाटा निर्यात करव... (&E)"
 
-#: src/kalzium.cpp:139
+#: src/kalzium.cpp:138
 #, kde-format
 msgid "&Scheme"
 msgstr "योजना (&S)"
 
-#: src/kalzium.cpp:147
+#: src/kalzium.cpp:146
 #, kde-format
 msgid "&Gradients"
 msgstr "अनुपात (&G)"
 
-#: src/kalzium.cpp:156
+#: src/kalzium.cpp:155
 #, kde-format
 msgid "&Tables"
 msgstr "टेबलव (&T)"
 
-#: src/kalzium.cpp:163
+#: src/kalzium.cpp:162
 #, kde-format
 msgid "&Numeration"
 msgstr "गनना (&N)"
 
-#: src/kalzium.cpp:170
+#: src/kalzium.cpp:169
 #, kde-format
 msgid "&Plot Data..."
 msgstr "डाटा प्लाट करव... (&P)"
 
-#: src/kalzium.cpp:176
+#: src/kalzium.cpp:175
 #, kde-format
 msgid "Perform &Calculations..."
 msgstr ""
 
-#: src/kalzium.cpp:178
+#: src/kalzium.cpp:177
 #, fuzzy, kde-format
 #| msgctxt "WhatsThis Help"
 #| msgid "This tool allows you to solve chemical equations."
@@ -4921,33 +4911,33 @@ msgctxt "WhatsThis Help"
 msgid "This is the calculator, it performs basic chemical calculations."
 msgstr "ये औजार से आप मन रासायनिक समीकरनों ल सुलझा सकथो ."
 
-#: src/kalzium.cpp:182
+#: src/kalzium.cpp:181
 #, kde-format
 msgid "&Isotope Table..."
 msgstr "आइसोटोप टेबल... (&I)"
 
-#: src/kalzium.cpp:184
+#: src/kalzium.cpp:183
 #, kde-format
 msgctxt "WhatsThis Help"
 msgid "This table shows all of the known isotopes of the chemical elements."
 msgstr "ये टेबल रासायनिक तत्व मन के सब्बो ग्यात आइसोटोपों ल देखाथे."
 
-#: src/kalzium.cpp:188
+#: src/kalzium.cpp:187
 #, kde-format
 msgid "&Glossary..."
 msgstr "सब्दसंग्रह... (&G)"
 
-#: src/kalzium.cpp:193
+#: src/kalzium.cpp:192
 #, kde-format
 msgid "&R/S Phrases..."
 msgstr "आर/एस वाक्यांस... (&R)"
 
-#: src/kalzium.cpp:198
+#: src/kalzium.cpp:197
 #, kde-format
 msgid "Convert chemical files..."
 msgstr "रासायनिक फाइल मन के रूपान्तरन करव..."
 
-#: src/kalzium.cpp:200
+#: src/kalzium.cpp:199
 #, kde-format
 msgctxt "WhatsThis Help"
 msgid ""
@@ -4955,23 +4945,23 @@ msgid ""
 "various file formats."
 msgstr ""
 
-#: src/kalzium.cpp:207
+#: src/kalzium.cpp:206
 #, kde-format
 msgid "Molecular Editor..."
 msgstr "आनविक संपादक..."
 
-#: src/kalzium.cpp:209
+#: src/kalzium.cpp:208
 #, kde-format
 msgctxt "WhatsThis Help"
 msgid "This tool allows you to view and edit 3D molecular structures."
 msgstr "ये औजार आप मन ल ३डी आनविक ढांचा ल देखन अउ संपादन करन देथे."
 
-#: src/kalzium.cpp:216
+#: src/kalzium.cpp:215
 #, kde-format
 msgid "&Tables..."
 msgstr "टेबलव... (&T)"
 
-#: src/kalzium.cpp:218
+#: src/kalzium.cpp:217
 #, kde-format
 msgctxt "WhatsThis Help"
 msgid ""
@@ -4979,13 +4969,13 @@ msgid ""
 "chemistry."
 msgstr ""
 
-#: src/kalzium.cpp:226
+#: src/kalzium.cpp:225
 #, kde-format
 msgctxt "WhatsThis Help"
 msgid "This will show or hide the legend for the periodic table."
 msgstr "ये पीरियाडिक टेबल के लीजैन्ड ल छुपाता या देखाथे."
 
-#: src/kalzium.cpp:231
+#: src/kalzium.cpp:230
 #, kde-format
 msgctxt "WhatsThis Help"
 msgid ""
@@ -4993,7 +4983,7 @@ msgid ""
 "tools."
 msgstr ""
 
-#: src/kalzium.cpp:236
+#: src/kalzium.cpp:235
 #, fuzzy, kde-format
 #| msgctxt "WhatsThis Help"
 #| msgid "This will show or hide the legend for the periodic table."
@@ -5002,90 +4992,90 @@ msgid ""
 "This will show or hide a sidebar with additional information about the table."
 msgstr "ये पीरियाडिक टेबल के लीजैन्ड ल छुपाता या देखाथे."
 
-#: src/kalzium.cpp:267
+#: src/kalzium.cpp:266
 #, kde-format
 msgid "Legend"
 msgstr "लीजेंड"
 
-#: src/kalzium.cpp:280
+#: src/kalzium.cpp:279
 #, fuzzy, kde-format
 #| msgid "Table Information"
 msgid "Table Information"
 msgstr "टेबल जानकारी"
 
-#: src/kalzium.cpp:286
+#: src/kalzium.cpp:285
 #, fuzzy, kde-format
 #| msgid "Table Information"
 msgid "Information"
 msgstr "टेबल जानकारी"
 
-#: src/kalzium.cpp:298
+#: src/kalzium.cpp:297
 #, kde-format
 msgid "Overview"
 msgstr "ओवरव्यू"
 
-#: src/kalzium.cpp:310
+#: src/kalzium.cpp:309
 #, fuzzy, kde-format
 #| msgid "&View"
 msgid "View"
 msgstr "देखव (&V)"
 
-#: src/kalzium.cpp:321
+#: src/kalzium.cpp:320
 #, fuzzy, kde-format
 msgid "Save Kalzium's Table In"
 msgstr "केएल्जियम टेबल ये मां सहेजव"
 
-#: src/kalzium.cpp:321
+#: src/kalzium.cpp:320
 #, fuzzy, kde-format
 #| msgid "*.png *.xpm *.jpg *.svg"
 msgid "Image files (*.png *.xpm *.jpg *.svg)"
 msgstr "*.png *.xpm *.jpg *.svg"
 
-#: src/kalzium.cpp:342
+#: src/kalzium.cpp:341
 #, kde-format
 msgid "Knowledge"
 msgstr "ग्यान"
 
-#: src/kalzium.cpp:347
+#: src/kalzium.cpp:346
 #, kde-format
 msgid "Tools"
 msgstr "औजार"
 
-#: src/kalzium.cpp:377
+#: src/kalzium.cpp:376
 #, kde-format
 msgid "Kalzium Error"
 msgstr "केएल्जियम गलती"
 
-#: src/kalzium.cpp:377
+#: src/kalzium.cpp:376
 #, kde-format
 msgid "This system does not support OpenGL."
 msgstr "तंत्र मं ओपनजीएल के समर्थन नइ हे."
 
-#: src/kalzium.cpp:503
+#: src/kalzium.cpp:502
 #, fuzzy, kde-format
 #| msgid "&Scheme"
 msgid "Schemes"
 msgstr "योजना (&S)"
 
-#: src/kalzium.cpp:510
+#: src/kalzium.cpp:509
 #, fuzzy, kde-format
 #| msgid "&Gradients"
 msgid "Gradients"
 msgstr "अनुपात (&G)"
 
-#: src/kalzium.cpp:515
+#: src/kalzium.cpp:514
 #, kde-format
 msgid "Units"
 msgstr "इकाईयाँ"
 
 #. i18n: ectx: attribute (title), widget (QWidget, calcTab)
-#: src/kalzium.cpp:520 src/molcalcwidgetbase.ui:24
+#: src/kalzium.cpp:519 src/molcalcwidgetbase.ui:24
 #, fuzzy, kde-format
 #| msgid "Calculate"
 msgid "Calculator"
 msgstr "गनना"
 
-#: src/kalzium.cpp:566
+#: src/kalzium.cpp:565
 #, kde-format
 msgctxt "For example: \"Carbon (6), Mass: 12.0107 u\""
 msgid "%1 (%2), Mass: %3 u"
@@ -6004,19 +5994,19 @@ msgstr "ये तत्व प्राचीन सभ्यताओं म�
 msgid "No Data"
 msgstr "डाटा प्लाट करव"
 
-#: src/kdeeduglossary.cpp:146 src/kdeeduglossary.cpp:322
+#: src/kdeeduglossary.cpp:142 src/kdeeduglossary.cpp:318
 #, fuzzy, kde-format
 #| msgid "&Glossary..."
 msgid "Glossary"
 msgstr "सब्दसंग्रह... (&G)"
 
-#: src/kdeeduglossary.cpp:504
+#: src/kdeeduglossary.cpp:494
 #, fuzzy, kde-format
 #| msgid "Francium"
 msgid "References"
 msgstr "फ्रांसियम"
 
-#: src/kdeeduglossary.cpp:508
+#: src/kdeeduglossary.cpp:498
 #, kde-format
 msgid "Go to '%1'"
 msgstr ""
@@ -9292,6 +9282,16 @@ msgstr "तरंगदैर्य्य"
 #, kde-format
 msgid "Temperature:"
 msgstr "तापमानः"
+
+#~ msgid "Block: %1"
+#~ msgstr "ब्लाक: %1"
+
+#~ msgid "Isotope-Table"
+#~ msgstr "आइसोटोप-टेबल"
+
+#~ msgctxt "For example Carbon (6)"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
 
 #, fuzzy
 #~| msgid "Search:"
