@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-11-08 02:56+0100\n"
+"POT-Creation-Date: 2019-11-09 02:48+0100\n"
 "PO-Revision-Date: 2009-02-10 20:44+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -487,21 +487,22 @@ msgid "Configure menu - %1"
 msgstr "%1 कान्फिगर करव...(&C)"
 
 #: kmoretools/kmoretoolsmenufactory.cpp:185
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "$GenericName - current folder"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Path to documents folder"
+msgctxt "@action:inmenu %1=\"$GenericName\""
+msgid "%1 - current folder"
+msgstr "कागद फोल्डर के पथ"
 
 #: kmoretools/kmoretoolsmenufactory.cpp:193
 #, kde-format
-msgctxt "@action:inmenu"
-msgid "$GenericName - current device"
+msgctxt "@action:inmenu %1=\"$GenericName\""
+msgid "%1 - current device"
 msgstr ""
 
 #: kmoretools/kmoretoolsmenufactory.cpp:208
 #, kde-format
-msgctxt "@action:inmenu"
-msgid "$GenericName - all devices"
+msgctxt "@action:inmenu %1=\"$GenericName\""
+msgid "%1 - all devices"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbMainSection)
@@ -756,13 +757,13 @@ msgctxt "Request installation of this item"
 msgid "Install"
 msgstr "इनस्टाल करव"
 
-#: qtquick/qml/NewStuffList.qml:83 qtquick/qml/Page.qml:166
+#: qtquick/qml/NewStuffList.qml:83 qtquick/qml/Page.qml:179
 #, kde-format
 msgctxt "List option which will set the filter to show everything"
 msgid "Show Everything"
 msgstr ""
 
-#: qtquick/qml/NewStuffList.qml:84 qtquick/qml/Page.qml:167
+#: qtquick/qml/NewStuffList.qml:84 qtquick/qml/Page.qml:180
 #, fuzzy, kde-format
 #| msgid "Install"
 msgctxt ""
@@ -770,7 +771,7 @@ msgctxt ""
 msgid "Installed Only"
 msgstr "इनस्टाल करव"
 
-#: qtquick/qml/NewStuffList.qml:85 qtquick/qml/Page.qml:168
+#: qtquick/qml/NewStuffList.qml:85 qtquick/qml/Page.qml:181
 #, kde-format
 msgctxt ""
 "List option which will set the filter so only installed items with updates "
@@ -778,7 +779,7 @@ msgctxt ""
 msgid "Updateable Only"
 msgstr ""
 
-#: qtquick/qml/NewStuffList.qml:97 qtquick/qml/Page.qml:180
+#: qtquick/qml/NewStuffList.qml:97 qtquick/qml/Page.qml:193
 #, fuzzy, kde-format
 #| msgid "Show directories first"
 msgctxt ""
@@ -787,7 +788,7 @@ msgctxt ""
 msgid "Show most recent first"
 msgstr "पहिली डिरेक्टरी देखाव"
 
-#: qtquick/qml/NewStuffList.qml:98 qtquick/qml/Page.qml:181
+#: qtquick/qml/NewStuffList.qml:98 qtquick/qml/Page.qml:194
 #, kde-format
 msgctxt ""
 "List option which will set the sort order to be alphabetical based on the "
@@ -795,14 +796,14 @@ msgctxt ""
 msgid "Sort alphabetically"
 msgstr ""
 
-#: qtquick/qml/NewStuffList.qml:99 qtquick/qml/Page.qml:182
+#: qtquick/qml/NewStuffList.qml:99 qtquick/qml/Page.qml:195
 #, fuzzy, kde-format
 #| msgid "Show directories first"
 msgctxt "List option which will set the sort order to based on user ratings"
 msgid "Show highest rated first"
 msgstr "पहिली डिरेक्टरी देखाव"
 
-#: qtquick/qml/NewStuffList.qml:100 qtquick/qml/Page.qml:183
+#: qtquick/qml/NewStuffList.qml:100 qtquick/qml/Page.qml:196
 #, fuzzy, kde-format
 #| msgid "Most Downloads"
 msgctxt ""
@@ -818,11 +819,19 @@ msgctxt ""
 msgid "Use"
 msgstr ""
 
-#: qtquick/qml/Page.qml:133
+#: qtquick/qml/Page.qml:146
 #, fuzzy, kde-format
 #| msgid "Search"
 msgid "Search..."
 msgstr "खोजव"
+
+#: qtquick/qml/Page.qml:243
+#, fuzzy, kde-format
+#| msgid "Loading Preview"
+msgctxt ""
+"A text shown beside a busy indicator suggesting that data is being fetched"
+msgid "Loading more..."
+msgstr "प्रिव्यू लोड करत हे"
 
 #: qtquick/qml/private/EntryCommentDelegate.qml:125
 #, fuzzy, kde-format
@@ -913,7 +922,7 @@ msgstr "विवरन"
 msgid "None"
 msgstr "कुछ नइ"
 
-#: qtquick/quickengine.cpp:97
+#: qtquick/quickengine.cpp:111
 #, kde-format
 msgctxt ""
 "An informational message which is shown to inform the user they are not "
@@ -923,7 +932,7 @@ msgid ""
 "please contact the person in charge of your permissions."
 msgstr ""
 
-#: qtquick/quickitemsmodel.cpp:418
+#: qtquick/quickitemsmodel.cpp:428
 #, fuzzy, kde-format
 #| msgid "Rating: "
 msgid "Using %1"
@@ -10320,11 +10329,6 @@ msgstr "बदलना चालू करव"
 #~ msgid "Tag Exists"
 #~ msgstr "टैग पहिली ही मौजूद हे"
 
-#, fuzzy
-#~| msgid "Loading Preview"
-#~ msgid "Loading preview..."
-#~ msgstr "प्रिव्यू लोड करत हे"
-
 #~ msgid "Error: HOME environment variable not set.\n"
 #~ msgstr "गलतीः होम एनवायरनमेंट वेरिएबल सेट नइ हे.\n"
 
@@ -12196,9 +12200,6 @@ msgstr "बदलना चालू करव"
 
 #~ msgid "Directory where the files on the desktop are stored"
 #~ msgstr "ये डिरेक्टरी मं डेस्कटाप के फाइल मन ह भंडारित रहिथें"
-
-#~ msgid "Path to documents folder"
-#~ msgstr "कागद फोल्डर के पथ"
 
 #~ msgid ""
 #~ "<b>Changes in this section require root access.</b><br />On applying your "
