@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-01-21 02:42+0100\n"
+"POT-Creation-Date: 2020-01-23 02:46+0100\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -508,7 +508,7 @@ msgstr "पूरा स्क्रीन मोड से बाहिर ह�
 #: core/app/items/overlays/itemrotationoverlay.cpp:68
 #: core/app/views/preview/itempreviewview.cpp:162
 #: core/utilities/import/items/importoverlays.cpp:444
-#: core/utilities/import/views/importpreviewview.cpp:195
+#: core/utilities/import/views/importpreviewview.cpp:219
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Rotate Left"
@@ -517,7 +517,7 @@ msgstr "डेरी मुड़ें"
 #: core/app/items/overlays/itemrotationoverlay.cpp:72
 #: core/app/views/preview/itempreviewview.cpp:163
 #: core/utilities/import/items/importoverlays.cpp:448
-#: core/utilities/import/views/importpreviewview.cpp:196
+#: core/utilities/import/views/importpreviewview.cpp:220
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Rotate Right"
@@ -705,7 +705,7 @@ msgstr " मं जाव"
 
 #: core/app/items/utils/contextmenuhelper.cpp:854
 #: core/app/main/digikamapp_setup.cpp:364
-#: core/libs/settings/applicationsettings_miscs.cpp:401
+#: core/libs/settings/applicationsettings_miscs.cpp:386
 #: core/utilities/queuemanager/main/queuemgrwindow.cpp:113
 #: core/utilities/queuemanager/main/queuemgrwindow.cpp:249
 #: core/utilities/queuemanager/views/workflowlist.cpp:123
@@ -1083,7 +1083,7 @@ msgstr "एपर्चर/फोकल:"
 #: core/libs/properties/itempropertiessidebardb.cpp:595
 #: core/showfoto/thumbbar/showfototooltipfiller.cpp:211
 #: core/utilities/import/items/importtooltipfiller.cpp:194
-#: core/utilities/slideshow/slideproperties.cpp:212
+#: core/utilities/slideshow/slideproperties.cpp:214
 #, kde-format
 msgid "%1 ISO"
 msgstr "%1 आईएसओ"
@@ -1662,7 +1662,7 @@ msgid "Open the image editor."
 msgstr "फाइल प्रबंधक मं खोलव"
 
 #: core/app/main/digikamapp_setup.cpp:345
-#: core/libs/settings/applicationsettings_miscs.cpp:399
+#: core/libs/settings/applicationsettings_miscs.cpp:383
 #: core/utilities/lighttable/lighttablewindow.cpp:56
 #: core/utilities/lighttable/lighttablewindow_tools.cpp:42
 #: core/utilities/setup/setup.cpp:198
@@ -2004,10 +2004,10 @@ msgstr "विन्डो मं जमाव (&W)"
 
 #: core/app/main/digikamapp_setup.cpp:692
 #: core/dplugins/generic/view/slideshow/slideshowplugin.cpp:103
-#: core/libs/settings/applicationsettings_miscs.cpp:403
+#: core/libs/settings/applicationsettings_miscs.cpp:389
 #: core/utilities/imageeditor/editor/editorwindow.cpp:421
 #: core/utilities/lighttable/lighttablewindow_setup.cpp:142
-#: core/utilities/slideshow/slideshow.cpp:117
+#: core/utilities/slideshow/slideshow.cpp:125
 #, kde-format
 msgid "Slideshow"
 msgstr "स्लाइड-सो"
@@ -2089,7 +2089,7 @@ msgstr "अगला फोटू"
 
 #: core/app/main/digikamapp_setup.cpp:822
 #: core/utilities/imageeditor/editor/editorwindow.cpp:523
-#: core/utilities/lighttable/lighttablewindow_setup.cpp:217
+#: core/utilities/lighttable/lighttablewindow_setup.cpp:221
 #, kde-format
 msgid "Previous Image"
 msgstr "पिछला फोटू"
@@ -2565,7 +2565,7 @@ msgstr ""
 
 #: core/app/views/preview/itempreviewview.cpp:160
 #: core/libs/video/player/mediaplayerview.cpp:201
-#: core/utilities/import/views/importpreviewview.cpp:193
+#: core/utilities/import/views/importpreviewview.cpp:217
 #, fuzzy, kde-format
 msgctxt "go to previous image"
 msgid "Back"
@@ -2573,7 +2573,7 @@ msgstr "पीछू"
 
 #: core/app/views/preview/itempreviewview.cpp:161
 #: core/libs/video/player/mediaplayerview.cpp:202
-#: core/utilities/import/views/importpreviewview.cpp:194
+#: core/utilities/import/views/importpreviewview.cpp:218
 #, fuzzy, kde-format
 msgctxt "go to next image"
 msgid "Forward"
@@ -17673,59 +17673,64 @@ msgstr "टैग '%2' ह एक वस्तु मं संबंधित �
 msgid "Facebook Call Failed: %1"
 msgstr ""
 
-#: core/dplugins/generic/webservices/filecopy/fcexportwidget.cpp:76
+#: core/dplugins/generic/webservices/filecopy/fcexportwidget.cpp:78
 #, kde-format
 msgid "Overwrite existing items in the target"
 msgstr ""
 
-#: core/dplugins/generic/webservices/filecopy/fcexportwidget.cpp:78
+#: core/dplugins/generic/webservices/filecopy/fcexportwidget.cpp:79
+#, kde-format
+msgid "Create symlinks in the target"
+msgstr ""
+
+#: core/dplugins/generic/webservices/filecopy/fcexportwidget.cpp:81
 #: core/dplugins/generic/webservices/filetransfer/ftexportwidget.cpp:85
 #, fuzzy, kde-format
 #| msgid "Show image caption"
 msgid "Target location: "
 msgstr "फोटू सीर्सक देखाव"
 
-#: core/dplugins/generic/webservices/filecopy/fcexportwidget.cpp:80
+#: core/dplugins/generic/webservices/filecopy/fcexportwidget.cpp:83
 #, fuzzy, kde-format
 #| msgid "By Folder"
 msgid "Target Folder"
 msgstr "फोल्डर से"
 
-#: core/dplugins/generic/webservices/filecopy/fcexportwidget.cpp:81
+#: core/dplugins/generic/webservices/filecopy/fcexportwidget.cpp:84
 #, fuzzy, kde-format
 msgid "Sets the target address to copy the items to."
 msgstr "एलबम नाम प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: core/dplugins/generic/webservices/filecopy/fcexportwidget.cpp:89
+#: core/dplugins/generic/webservices/filecopy/fcexportwidget.cpp:92
 #, fuzzy, kde-format
 msgid "This is the list of items to copy to the specified target."
 msgstr "ये चीज मन के सूची हे जऊन ल मेटाय जाही."
 
-#: core/dplugins/generic/webservices/filecopy/fcexportwindow.cpp:81
+#: core/dplugins/generic/webservices/filecopy/fcexportwindow.cpp:83
 #, fuzzy, kde-format
 msgid "Export to Local Storage"
 msgstr "निर्यात"
 
-#: core/dplugins/generic/webservices/filecopy/fcexportwindow.cpp:84
+#: core/dplugins/generic/webservices/filecopy/fcexportwindow.cpp:86
 #: core/dplugins/generic/webservices/filetransfer/ftexportwindow.cpp:84
 #, fuzzy, kde-format
 #| msgid "Start Color: "
 msgid "Start export"
 msgstr "सुरु रंगः"
 
-#: core/dplugins/generic/webservices/filecopy/fcexportwindow.cpp:85
+#: core/dplugins/generic/webservices/filecopy/fcexportwindow.cpp:87
 #: core/dplugins/generic/webservices/filetransfer/ftexportwindow.cpp:85
 #, fuzzy, kde-format
 msgid "Start export to the specified target"
 msgstr "अभी हाल के चयन ल नवा आभासी एलबम मं सहेजव"
 
-#: core/dplugins/generic/webservices/filecopy/fcexportwindow.cpp:192
+#: core/dplugins/generic/webservices/filecopy/fcexportwindow.cpp:196
 #, fuzzy, kde-format
 #| msgid "Download Selected"
 msgid "Copy not completed"
 msgstr "चुने गे डाउनलोड करव"
 
-#: core/dplugins/generic/webservices/filecopy/fcexportwindow.cpp:193
+#: core/dplugins/generic/webservices/filecopy/fcexportwindow.cpp:197
 #, kde-format
 msgid ""
 "Some of the items have not been copied and are still in the list. You can "
@@ -26552,7 +26557,7 @@ msgstr "औजार (&T)"
 #: core/libs/dplugins/core/dpluginaction.cpp:103
 #: core/libs/properties/import/importitempropertiessidebar.cpp:97
 #: core/libs/properties/itempropertiessidebar.cpp:100
-#: core/libs/settings/applicationsettings_miscs.cpp:397
+#: core/libs/settings/applicationsettings_miscs.cpp:380
 #: core/showfoto/setup/showfotosetup.cpp:122
 #: core/utilities/queuemanager/manager/batchtool.cpp:218
 #: core/utilities/queuemanager/views/toolslistview.cpp:93
@@ -30027,107 +30032,107 @@ msgstr "फोटू दरजा देखाव"
 msgid "Canon Digital Camera RAW Image Format version 3.0"
 msgstr ""
 
-#: core/libs/settings/applicationsettings_miscs.cpp:367
+#: core/libs/settings/applicationsettings_miscs.cpp:350
 #, kde-format
 msgid "Do you want to do this operation on all group items?"
 msgstr ""
 
-#: core/libs/settings/applicationsettings_miscs.cpp:369
+#: core/libs/settings/applicationsettings_miscs.cpp:352
 #, fuzzy, kde-format
 msgid "Remember choice for this operation"
 msgstr "कैमरा जानकारी"
 
-#: core/libs/settings/applicationsettings_miscs.cpp:405
+#: core/libs/settings/applicationsettings_miscs.cpp:392
 #, fuzzy, kde-format
 msgid "Renaming"
 msgstr "फाइल नाम बदले के विकल्प"
 
-#: core/libs/settings/applicationsettings_miscs.cpp:407
+#: core/libs/settings/applicationsettings_miscs.cpp:395
 #, fuzzy, kde-format
 msgid "Import/Export tools"
 msgstr "सजावटी पाइन"
 
-#: core/libs/settings/applicationsettings_miscs.cpp:409
+#: core/libs/settings/applicationsettings_miscs.cpp:398
 #, kde-format
 msgid "Tools (editor, panorama, stack blending, calendar, external program)"
 msgstr ""
 
-#: core/libs/settings/applicationsettings_miscs.cpp:421
+#: core/libs/settings/applicationsettings_miscs.cpp:410
 #, kde-format
 msgid ""
 "Operations related to metadata, labels, ratings, tags, geolocation and "
 "rotation"
 msgstr ""
 
-#: core/libs/settings/applicationsettings_miscs.cpp:423
+#: core/libs/settings/applicationsettings_miscs.cpp:413
 #, fuzzy, kde-format
 #| msgid "Add to Light Table"
 msgid "Adding items to the Light Table"
 msgstr "लाइट टेबल मं जोड़व"
 
-#: core/libs/settings/applicationsettings_miscs.cpp:425
+#: core/libs/settings/applicationsettings_miscs.cpp:416
 #, kde-format
 msgid "Adding items to the Batch Queue Manager"
 msgstr ""
 
-#: core/libs/settings/applicationsettings_miscs.cpp:427
+#: core/libs/settings/applicationsettings_miscs.cpp:419
 #, kde-format
 msgid "Opening items in the Slideshow"
 msgstr ""
 
-#: core/libs/settings/applicationsettings_miscs.cpp:429
+#: core/libs/settings/applicationsettings_miscs.cpp:422
 #, fuzzy, kde-format
 msgid "Renaming items"
 msgstr "फाइल नाम बदले के विकल्प"
 
-#: core/libs/settings/applicationsettings_miscs.cpp:431
+#: core/libs/settings/applicationsettings_miscs.cpp:425
 #, kde-format
 msgid "Passing items to import/export tools"
 msgstr ""
 
-#: core/libs/settings/applicationsettings_miscs.cpp:433
+#: core/libs/settings/applicationsettings_miscs.cpp:428
 #, kde-format
 msgid ""
 "Several tools including the editor, panorama, stack blending, calendar, html "
 "gallery and opening with external programs"
 msgstr ""
 
-#: core/libs/settings/applicationsettings_p.cpp:273
+#: core/libs/settings/applicationsettings_p.cpp:259
 #, kde-format
 msgid "Category"
 msgstr ""
 
-#: core/libs/settings/applicationsettings_p.cpp:274
+#: core/libs/settings/applicationsettings_p.cpp:260
 #, kde-format
 msgid "Travel"
 msgstr "यात्रा"
 
-#: core/libs/settings/applicationsettings_p.cpp:275
+#: core/libs/settings/applicationsettings_p.cpp:261
 #, kde-format
 msgid "Holidays"
 msgstr "अवकास"
 
-#: core/libs/settings/applicationsettings_p.cpp:276
+#: core/libs/settings/applicationsettings_p.cpp:262
 #, kde-format
 msgid "Friends"
 msgstr "मित्र"
 
-#: core/libs/settings/applicationsettings_p.cpp:277
+#: core/libs/settings/applicationsettings_p.cpp:263
 #, kde-format
 msgid "Nature"
 msgstr "प्रकृति"
 
-#: core/libs/settings/applicationsettings_p.cpp:278
+#: core/libs/settings/applicationsettings_p.cpp:264
 #, kde-format
 msgid "Party"
 msgstr "पार्टी"
 
-#: core/libs/settings/applicationsettings_p.cpp:279
+#: core/libs/settings/applicationsettings_p.cpp:265
 #, kde-format
 msgid "Todo"
 msgstr "काम-सूची"
 
-#: core/libs/settings/applicationsettings_p.cpp:280
+#: core/libs/settings/applicationsettings_p.cpp:266
 #: core/showfoto/setup/showfotosetup.cpp:164 core/utilities/setup/setup.cpp:230
 #, kde-format
 msgid "Miscellaneous"
@@ -37294,14 +37299,14 @@ msgid ""
 "can be added later under the <i>Settings</i> menu. </p> "
 msgstr ""
 
-#: core/utilities/firstrun/collectionpage.cpp:96
+#: core/utilities/firstrun/collectionpage.cpp:97
 #, kde-format
 msgid ""
 "<p><i>Note:</i> removable media (such as USB drives or DVDs) and remote file "
 "systems (such as NFS, or Samba mounted with cifs/smbfs) are supported.</p>"
 msgstr ""
 
-#: core/utilities/firstrun/collectionpage.cpp:157
+#: core/utilities/firstrun/collectionpage.cpp:159
 #, kde-format
 msgid ""
 "You must select a folder for digiKam to use as the root album. All of your "
@@ -37310,24 +37315,24 @@ msgstr ""
 "डिजिकैम बर आप मन ल एक फोल्डर चुनना होही ताकि ओला रूट एलबम के रूप मं परयोग करे जा सके. "
 "आप मन के सब्बो फोटू उहां जाही."
 
-#: core/utilities/firstrun/collectionpage.cpp:185
+#: core/utilities/firstrun/collectionpage.cpp:187
 #, kde-format
 msgid "Create Root Album Folder?"
 msgstr "रूट एलबम फोल्डर बनाव?"
 
-#: core/utilities/firstrun/collectionpage.cpp:186
+#: core/utilities/firstrun/collectionpage.cpp:188
 #, kde-format
 msgid ""
 "<p>The folder to use as the root album path does not exist:</p><p><b>%1</b></"
 "p>Would you like digiKam to create it for you?"
 msgstr ""
 
-#: core/utilities/firstrun/collectionpage.cpp:198
+#: core/utilities/firstrun/collectionpage.cpp:200
 #, kde-format
 msgid "Create Root Album Folder Failed"
 msgstr "रूट एलबम फोल्डर बनाए मं फेल"
 
-#: core/utilities/firstrun/collectionpage.cpp:199
+#: core/utilities/firstrun/collectionpage.cpp:201
 #, fuzzy, kde-format
 msgid ""
 "<p>digiKam could not create the folder to use as the root album.\n"
@@ -37336,7 +37341,7 @@ msgstr ""
 "डिजिकैम आप मन के होम फोल्डर ल रूट एलबम के रूप मं परयोग मं नइ ले सके. किरपा करके कोनो "
 "दुसरा स्थान चुनव."
 
-#: core/utilities/firstrun/collectionpage.cpp:219
+#: core/utilities/firstrun/collectionpage.cpp:226
 #, kde-format
 msgid ""
 "You do not seem to have write access for the folder selected to be the root "
@@ -37567,7 +37572,7 @@ msgid ""
 "digiKam quickly.</p></qt>"
 msgstr ""
 
-#: core/utilities/firstrun/welcomepage.cpp:72
+#: core/utilities/firstrun/welcomepage.cpp:75
 #, kde-format
 msgid ""
 "<qt><br/><p>You can ignore the following if you use digiKam for the first "
@@ -39687,7 +39692,7 @@ msgid "Remove Tag"
 msgstr "टैग हटाव"
 
 #: core/utilities/imageeditor/main/imagewindow_setup.cpp:275
-#: core/utilities/import/widgets/importcontextmenu.cpp:374
+#: core/utilities/import/widgets/importcontextmenu.cpp:394
 #, fuzzy, kde-format
 msgid "Assign Labels"
 msgstr "प्रोफाइल आवंटित करव"
@@ -40701,72 +40706,72 @@ msgstr "उपकरन (&D)"
 msgid "Camera Folders"
 msgstr "कैमरा फोल्डर"
 
-#: core/utilities/import/views/importpreviewview.cpp:192
+#: core/utilities/import/views/importpreviewview.cpp:216
 #, kde-format
 msgid "Escape preview"
 msgstr ""
 
-#: core/utilities/import/views/importstackedview.cpp:104
+#: core/utilities/import/views/importstackedview.cpp:112
 #, fuzzy, kde-format
 msgid "Import Thumbnail Dock"
 msgstr "छोटेफोटू देखाव"
 
-#: core/utilities/import/widgets/advancedsettings.cpp:89
+#: core/utilities/import/widgets/advancedsettings.cpp:90
 #, kde-format
 msgctxt "@option:check"
 msgid "Write the document name to EXIF"
 msgstr ""
 
-#: core/utilities/import/widgets/advancedsettings.cpp:90
+#: core/utilities/import/widgets/advancedsettings.cpp:91
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Fix internal date && time"
 msgstr "फाइल \"%1\" मेटाय मं फेल."
 
-#: core/utilities/import/widgets/advancedsettings.cpp:92
+#: core/utilities/import/widgets/advancedsettings.cpp:93
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Auto-rotate/flip image"
 msgstr "फोटू चुनव"
 
-#: core/utilities/import/widgets/advancedsettings.cpp:93
+#: core/utilities/import/widgets/advancedsettings.cpp:94
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Convert to lossless file format"
 msgstr "घुरुवा मं ले जाव"
 
-#: core/utilities/import/widgets/advancedsettings.cpp:95
+#: core/utilities/import/widgets/advancedsettings.cpp:96
 #, kde-format
 msgid "New image format:"
 msgstr "नवा फोटू फारमेट:"
 
-#: core/utilities/import/widgets/advancedsettings.cpp:118
+#: core/utilities/import/widgets/advancedsettings.cpp:125
 #, kde-format
 msgid ""
 "Set here all options to fix/transform JPEG files automatically as they are "
 "downloaded."
 msgstr ""
 
-#: core/utilities/import/widgets/advancedsettings.cpp:120
+#: core/utilities/import/widgets/advancedsettings.cpp:127
 #, kde-format
 msgid ""
 "Enable this option if you want images automatically rotated or flipped using "
 "EXIF information provided by the camera."
 msgstr ""
 
-#: core/utilities/import/widgets/advancedsettings.cpp:122
+#: core/utilities/import/widgets/advancedsettings.cpp:129
 #, fuzzy, kde-format
 msgid "Select here which metadata template you want to apply to images."
 msgstr "फोटू मं लगाय बर इहां टैक्सचर किसिम सेट करव."
 
-#: core/utilities/import/widgets/advancedsettings.cpp:124
+#: core/utilities/import/widgets/advancedsettings.cpp:131
 #, kde-format
 msgid ""
 "Enable this option to write the document name to the EXIF metadata. The "
 "document name is the original file name of the imported file."
 msgstr ""
 
-#: core/utilities/import/widgets/advancedsettings.cpp:126
+#: core/utilities/import/widgets/advancedsettings.cpp:133
 #, kde-format
 msgid ""
 "Enable this option to set date and time metadata tags to the right values if "
@@ -40775,7 +40780,7 @@ msgid ""
 "and IPTC tags."
 msgstr ""
 
-#: core/utilities/import/widgets/advancedsettings.cpp:130
+#: core/utilities/import/widgets/advancedsettings.cpp:137
 #, kde-format
 msgid ""
 "Enable this option to automatically convert all JPEG files to a lossless "
@@ -40783,7 +40788,7 @@ msgid ""
 "computer."
 msgstr ""
 
-#: core/utilities/import/widgets/advancedsettings.cpp:133
+#: core/utilities/import/widgets/advancedsettings.cpp:140
 #, kde-format
 msgid ""
 "Select your preferred lossless image file format to convert to. <b>Note:</b> "
@@ -40890,13 +40895,13 @@ msgid ""
 "Show the result of converted date 1968-12-26 using your customized format."
 msgstr ""
 
-#: core/utilities/import/widgets/albumcustomizer.cpp:254
+#: core/utilities/import/widgets/albumcustomizer.cpp:255
 #, kde-format
 msgctxt "Example of custom date format for album naming"
 msgid "Ex.: %1"
 msgstr ""
 
-#: core/utilities/import/widgets/albumcustomizer.cpp:258
+#: core/utilities/import/widgets/albumcustomizer.cpp:259
 #, fuzzy, kde-format
 msgctxt "Custom date format"
 msgid "Format is not valid..."
@@ -40937,79 +40942,79 @@ msgid ""
 "Enable this option to convert RAW images to DNG container automatically."
 msgstr "नवा फोटू फारमेट:"
 
-#: core/utilities/import/widgets/freespacewidget.cpp:333
+#: core/utilities/import/widgets/freespacewidget.cpp:339
 #, kde-format
 msgid "Camera Media"
 msgstr "कैमरा मीडिया"
 
-#: core/utilities/import/widgets/freespacewidget.cpp:337
+#: core/utilities/import/widgets/freespacewidget.cpp:343
 #, kde-format
 msgid "Album Library"
 msgstr "एलबम लाइब्रेरी"
 
-#: core/utilities/import/widgets/freespacewidget.cpp:347
-#: core/utilities/import/widgets/freespacewidget.cpp:358
+#: core/utilities/import/widgets/freespacewidget.cpp:353
+#: core/utilities/import/widgets/freespacewidget.cpp:364
 #, fuzzy, kde-format
 msgctxt "@info Storage"
 msgid "Capacity:"
 msgstr "छमता:"
 
-#: core/utilities/import/widgets/freespacewidget.cpp:350
-#: core/utilities/import/widgets/freespacewidget.cpp:361
+#: core/utilities/import/widgets/freespacewidget.cpp:356
+#: core/utilities/import/widgets/freespacewidget.cpp:367
 #, fuzzy, kde-format
 msgctxt "@info Storage"
 msgid "Available:"
 msgstr "मिलत:"
 
-#: core/utilities/import/widgets/freespacewidget.cpp:353
+#: core/utilities/import/widgets/freespacewidget.cpp:359
 #, fuzzy, kde-format
 msgctxt "@info Storage"
 msgid "Require:"
 msgstr "जरूरी:"
 
-#: core/utilities/import/widgets/importcontextmenu.cpp:226
+#: core/utilities/import/widgets/importcontextmenu.cpp:229
 #, fuzzy, kde-format
 msgctxt "@title:menu"
 msgid "Open With"
 msgstr "एखर साथ खोलव"
 
-#: core/utilities/import/widgets/importcontextmenu.cpp:239
+#: core/utilities/import/widgets/importcontextmenu.cpp:243
 #, fuzzy, kde-format
 msgctxt "@item:inmenu"
 msgid "Other..."
 msgstr "कतरें..."
 
-#: core/utilities/import/widgets/importcontextmenu.cpp:248
+#: core/utilities/import/widgets/importcontextmenu.cpp:252
 #, fuzzy, kde-format
 msgctxt "@title:menu"
 msgid "Open With..."
 msgstr "एखर साथ खोलव"
 
-#: core/utilities/import/widgets/importfiltercombobox.cpp:118
+#: core/utilities/import/widgets/importfiltercombobox.cpp:120
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox"
 msgid "All Files"
 msgstr "सब्बो फाइल मन ल"
 
-#: core/utilities/import/widgets/importfiltercombobox.cpp:122
+#: core/utilities/import/widgets/importfiltercombobox.cpp:124
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox"
 msgid "Only New Files"
 msgstr "सब्बो फाइल मन ल"
 
-#: core/utilities/import/widgets/importfiltercombobox.cpp:127
+#: core/utilities/import/widgets/importfiltercombobox.cpp:129
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox"
 msgid "Raw Files"
 msgstr "रा फाइल मन ल"
 
-#: core/utilities/import/widgets/importfiltercombobox.cpp:137
+#: core/utilities/import/widgets/importfiltercombobox.cpp:139
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox"
 msgid "JPG/TIFF Files"
 msgstr "टिफ फाइल मन ल"
 
-#: core/utilities/import/widgets/importfiltercombobox.cpp:142
+#: core/utilities/import/widgets/importfiltercombobox.cpp:144
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox"
 msgid "Video Files"
@@ -41140,7 +41145,7 @@ msgstr "सब्बो साफ करव"
 msgid "Drag and drop images here"
 msgstr "फोटू इहां खींचव अउ छोड़व"
 
-#: core/utilities/lighttable/lighttablewindow.cpp:197
+#: core/utilities/lighttable/lighttablewindow.cpp:200
 #, fuzzy, kde-format
 msgid "%1 item on Light Table"
 msgid_plural "%1 items on Light Table"
@@ -41217,37 +41222,37 @@ msgstr ""
 msgid "Remove all images from the light table when it is closed"
 msgstr ""
 
-#: core/utilities/lighttable/lighttablewindow_setup.cpp:225
+#: core/utilities/lighttable/lighttablewindow_setup.cpp:230
 #, fuzzy, kde-format
 msgid "Edit Titles on the Right"
 msgstr "पाठ ल जेवनी तरफ जमाव"
 
-#: core/utilities/lighttable/lighttablewindow_setup.cpp:230
+#: core/utilities/lighttable/lighttablewindow_setup.cpp:235
 #, fuzzy, kde-format
 msgid "Edit Comments on the Right"
 msgstr "इहां फोटू के वर्न समायोजन ल सेट करव."
 
-#: core/utilities/lighttable/lighttablewindow_setup.cpp:235
+#: core/utilities/lighttable/lighttablewindow_setup.cpp:240
 #, fuzzy, kde-format
 msgid "Show Assigned Tags on the Right"
 msgstr "ये चीज मं टैग आबंटित करव (&T)"
 
-#: core/utilities/lighttable/lighttablewindow_setup.cpp:240
+#: core/utilities/lighttable/lighttablewindow_setup.cpp:245
 #, fuzzy, kde-format
 msgid "Edit Titles on the Left"
 msgstr "पाठ ल डेरी तरफ जमाव"
 
-#: core/utilities/lighttable/lighttablewindow_setup.cpp:245
+#: core/utilities/lighttable/lighttablewindow_setup.cpp:250
 #, fuzzy, kde-format
 msgid "Edit Comments on the Left"
 msgstr "इहां फोटू के वर्न समायोजन ल सेट करव."
 
-#: core/utilities/lighttable/lighttablewindow_setup.cpp:250
+#: core/utilities/lighttable/lighttablewindow_setup.cpp:255
 #, fuzzy, kde-format
 msgid "Show Assigned Tags on the Left"
 msgstr "ये चीज मं टैग आबंटित करव (&T)"
 
-#: core/utilities/lighttable/lighttablewindow_setup.cpp:442
+#: core/utilities/lighttable/lighttablewindow_setup.cpp:451
 #, fuzzy, kde-format
 #| msgid "Set as Tag Thumbnail"
 msgid "Light Table Thumbnail Dock"
@@ -45137,7 +45142,7 @@ msgctxt "@title:tab"
 msgid "Ignored Directories"
 msgstr "ये टैग आबंटित करव"
 
-#: core/utilities/setup/setupdatabase.cpp:263
+#: core/utilities/setup/setupdatabase.cpp:265
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -45147,19 +45152,19 @@ msgid ""
 "version prior to 2.0.</i></p> <p>Do you want to begin the update?</p>"
 msgstr ""
 
-#: core/utilities/setup/setupdatabase.cpp:278
+#: core/utilities/setup/setupdatabase.cpp:280
 #, fuzzy, kde-format
 msgctxt "@title:group"
 msgid "Updates"
 msgstr "अपडेट"
 
-#: core/utilities/setup/setupdatabase.cpp:281
+#: core/utilities/setup/setupdatabase.cpp:283
 #, fuzzy, kde-format
 msgctxt "@action:button"
 msgid "Update File Hashes"
 msgstr "डाटाबेस फाइल रस्ता"
 
-#: core/utilities/setup/setupdatabase.cpp:283
+#: core/utilities/setup/setupdatabase.cpp:285
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -45170,13 +45175,13 @@ msgid ""
 "your database with a digiKam version prior to 2.0.</qt>"
 msgstr ""
 
-#: core/utilities/setup/setupdatabase.cpp:292
+#: core/utilities/setup/setupdatabase.cpp:294
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Get information about <interface>Update File Hashes</interface>"
 msgstr ""
 
-#: core/utilities/setup/setupdatabase.cpp:316
+#: core/utilities/setup/setupdatabase.cpp:318
 #, kde-format
 msgid ""
 "<p>Directories starting with a dot are ignored by default.<br/> <code>%1</"
@@ -46383,7 +46388,7 @@ msgid ""
 "td></tr></table></qt>"
 msgstr ""
 
-#: core/utilities/slideshow/slideshow.cpp:588
+#: core/utilities/slideshow/slideshow.cpp:637
 #, fuzzy, kde-format
 msgctxt ""
 "Reason for inhibiting the screensaver activation, when the presentation mode "
