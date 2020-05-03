@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-02 03:23+0200\n"
+"POT-Creation-Date: 2020-05-03 03:33+0200\n"
 "PO-Revision-Date: 2009-02-27 17:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1477,7 +1477,8 @@ msgctxt "@info:whatsthis"
 msgid "List of scheduled alarms"
 msgstr "नियत अलार्म के सूची"
 
-#: find.cpp:112
+#. i18n: ectx: property (title), widget (QGroupBox, alarmTypeGroupBox)
+#: find.cpp:112 resources/singlefileresourceconfigdialog.ui:74
 #, kde-format
 msgctxt "@title:group"
 msgid "Alarm Type"
@@ -1681,8 +1682,6 @@ msgid "Import Calendar Files"
 msgstr "कलेन्डर फाइल मन ल"
 
 #: functions.cpp:787 functions.cpp:839
-#: resources/dirresourceimportdialog.cpp:264
-#: resources/singlefileresourceconfigdialog.cpp:52
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Calendar Files"
@@ -5665,8 +5664,6 @@ msgid ""
 msgstr ""
 
 #: resources/akonadiresourcemigrator.cpp:269
-#: resources/fileresourcemigrator.cpp:448
-#: resources/resourcedatamodelbase.cpp:88
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Active Alarms"
@@ -5675,8 +5672,6 @@ msgid "Active Alarms"
 msgstr "सक्रिय अलार्म"
 
 #: resources/akonadiresourcemigrator.cpp:277
-#: resources/fileresourcemigrator.cpp:450
-#: resources/resourcedatamodelbase.cpp:90
 #, fuzzy, kde-format
 #| msgctxt "@title:group"
 #| msgid "Archived Alarms"
@@ -5685,8 +5680,6 @@ msgid "Archived Alarms"
 msgstr "अभिलेखित अलार्म"
 
 #: resources/akonadiresourcemigrator.cpp:285
-#: resources/fileresourcemigrator.cpp:452
-#: resources/resourcedatamodelbase.cpp:92
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Alarm Templates"
@@ -5695,7 +5688,6 @@ msgid "Alarm Templates"
 msgstr "अलार्म टैम्प्लेट्स"
 
 #: resources/akonadiresourcemigrator.cpp:323
-#: resources/fileresourcemigrator.cpp:472
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid "Unable to create resource of type <resource>%1</resource>."
@@ -5714,14 +5706,12 @@ msgid ""
 msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
 
 #: resources/akonadiresourcemigrator.cpp:327
-#: resources/fileresourcemigrator.cpp:473
 #, fuzzy, kde-format
 msgctxt "@info File path or URL"
 msgid "Location: %1"
 msgstr "जगहः"
 
 #: resources/akonadiresourcemigrator.cpp:328
-#: resources/fileresourcemigrator.cpp:474
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info:whatsthis"
 #| msgid "<para>%1</para><para>%2</para>"
@@ -5755,6 +5745,7 @@ msgstr "कलेन्डर डाउनलोड नइ कर सकिस: 
 
 #: resources/calendarupdater.cpp:97
 #, kde-kuit-format
+msgctxt "@info"
 msgid ""
 "Calendar <resource>%1</resource> is in an old format (<application>KAlarm</"
 "application> version %2), and will be read-only unless you choose to update "
@@ -5763,6 +5754,7 @@ msgstr ""
 
 #: resources/calendarupdater.cpp:100
 #, kde-kuit-format
+msgctxt "@info"
 msgid ""
 "Some or all of the alarms in calendar <resource>%1</resource> are in an old "
 "<application>KAlarm</application> format, and will be read-only unless you "
@@ -5780,14 +5772,18 @@ msgid ""
 msgstr ""
 
 #: resources/dirresourceimportdialog.cpp:47
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Calendar Files"
+msgctxt "@title:window"
 msgid "Import Directory Resource"
-msgstr ""
+msgstr "कलेन्डर फाइल मन ल"
 
 #: resources/dirresourceimportdialog.cpp:52
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Calendar Files"
+msgctxt "@title:tab"
 msgid "Import Calendar Directory Resource"
 msgstr "कलेन्डर फाइल मन ल"
 
@@ -5795,6 +5791,7 @@ msgstr "कलेन्डर फाइल मन ल"
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Active Alarms"
+msgctxt "@title:tab"
 msgid "Import Active Alarms"
 msgstr "सक्रिय अलार्म"
 
@@ -5802,6 +5799,7 @@ msgstr "सक्रिय अलार्म"
 #, fuzzy, kde-format
 #| msgctxt "@title:group"
 #| msgid "Archived Alarms"
+msgctxt "@title:tab"
 msgid "Import Archived Alarms"
 msgstr "अभिलेखित अलार्म"
 
@@ -5809,6 +5807,7 @@ msgstr "अभिलेखित अलार्म"
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Alarm Templates"
+msgctxt "@title:tab"
 msgid "Import Alarm Templates"
 msgstr "अलार्म टैम्प्लेट्स"
 
@@ -5816,6 +5815,7 @@ msgstr "अलार्म टैम्प्लेट्स"
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Active alarms"
+msgctxt "@item:intext"
 msgid "Active alarms"
 msgstr "सक्रिय अलार्म"
 
@@ -5823,6 +5823,7 @@ msgstr "सक्रिय अलार्म"
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Archived alarms"
+msgctxt "@item:intext"
 msgid "Archived alarms"
 msgstr "अभिलेखित अलार्म"
 
@@ -5830,8 +5831,18 @@ msgstr "अभिलेखित अलार्म"
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Alarm templates"
+msgctxt "@item:intext"
 msgid "Alarm templates"
 msgstr "अलार्म टैम्प्लेट्स"
+
+#: resources/dirresourceimportdialog.cpp:264
+#: resources/singlefileresourceconfigdialog.cpp:52
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Calendar Files"
+msgctxt "@item:inlistbox"
+msgid "Calendar Files"
+msgstr "कलेन्डर फाइल मन ल"
 
 #: resources/dirresourceimportdialog.cpp:410
 #: resources/singlefileresourceconfigdialog.cpp:222
@@ -5849,7 +5860,6 @@ msgstr ""
 
 #: resources/dirresourceimportdialog.cpp:424
 #: resources/dirresourceimportdialog.cpp:475
-#: resources/dirresourceimportdialog.cpp:483
 #, kde-format
 msgctxt "@info:status"
 msgid "Error! Cannot create file (directory does not exist)."
@@ -5857,15 +5867,27 @@ msgstr ""
 
 #: resources/dirresourceimportdialog.cpp:429
 #: resources/dirresourceimportdialog.cpp:477
-#: resources/dirresourceimportdialog.cpp:485
 #, kde-format
 msgctxt "@info:status"
+msgid "Error! Cannot create file (directory is not writable)."
+msgstr ""
+
+#: resources/dirresourceimportdialog.cpp:483
+#, kde-format
+msgctxt "@info"
+msgid "Error! Cannot create file (directory does not exist)."
+msgstr ""
+
+#: resources/dirresourceimportdialog.cpp:485
+#, kde-format
+msgctxt "@info"
 msgid "Error! Cannot create file (directory is not writable)."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, warning1)
 #: resources/dirresourceimportdialog_intro.ui:12
 #, kde-format
+msgctxt "@info"
 msgid ""
 "KAlarm no longer supports calendar directory resources. In order to continue "
 "using the contents of the directory resource below, you must import it into "
@@ -5875,6 +5897,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, warning2)
 #: resources/dirresourceimportdialog_intro.ui:22
 #, kde-format
+msgctxt "@info"
 msgid ""
 "KAlarm no longer supports calendar directory resources. In order to continue "
 "using the contents of the directory resource below, you must import each of "
@@ -5888,6 +5911,7 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgctxt "@item:inlistbox"
 #| msgid "Display Alarm"
+msgctxt "@label:textbox"
 msgid "Display name:"
 msgstr "डिस्प्ले अलार्म"
 
@@ -5896,6 +5920,7 @@ msgstr "डिस्प्ले अलार्म"
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Calendar Files"
+msgctxt "@label:textbox"
 msgid "Calendar directory:"
 msgstr "कलेन्डर फाइल मन ल"
 
@@ -5904,12 +5929,14 @@ msgstr "कलेन्डर फाइल मन ल"
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Alarm Type"
+msgctxt "@label:textbox"
 msgid "Alarm types:"
 msgstr "अलार्म किसिम"
 
 #. i18n: ectx: property (text), widget (QLabel, note)
 #: resources/dirresourceimportdialog_intro.ui:74
 #, kde-format
+msgctxt "@info"
 msgid ""
 "If you prefer, you can import this calendar directory resource later, by "
 "using the Import Alarms menu option to import the calendar files contained "
@@ -5921,12 +5948,14 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Failed to send email"
+msgctxt "@option:radio"
 msgid "Import into existing calendar file resource"
 msgstr "ई-मेल भेजे मं फेल"
 
 #. i18n: ectx: property (whatsThis), widget (QComboBox, mergeResource)
 #: resources/dirresourceimportdialog_type.ui:22
 #, kde-format
+msgctxt "@info:whatsthis"
 msgid "Select the resource to import the directory resource's alarms into."
 msgstr ""
 
@@ -5935,6 +5964,7 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Failed to send email"
+msgctxt "@option:radio"
 msgid "Import into new calendar file resource"
 msgstr "ई-मेल भेजे मं फेल"
 
@@ -5943,12 +5973,14 @@ msgstr "ई-मेल भेजे मं फेल"
 #: resources/singlefileresourceconfigdialog.ui:25
 #, fuzzy, kde-format
 #| msgid "&File"
+msgctxt "@label:textbox"
 msgid "Filename:"
 msgstr "फाइल (&F)"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, pathRequester)
 #: resources/dirresourceimportdialog_type.ui:70
 #, kde-format
+msgctxt "@info:tooltip"
 msgid ""
 "Select the file to contain this resource. The file must not already exist."
 msgstr ""
@@ -5956,6 +5988,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, pathRequester)
 #: resources/dirresourceimportdialog_type.ui:75
 #, kde-format
+msgctxt "@info:whatsthis"
 msgid ""
 "Select the file to contain this resource.\n"
 "The file must not already exist.\n"
@@ -5963,22 +5996,21 @@ msgid ""
 "changes will not work."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, statusLabel)
-#: resources/dirresourceimportdialog_type.ui:88
-#: resources/singlefileresourceconfigdialog.ui:49
-#, kde-format
-msgid "Status:"
-msgstr ""
-
 #. i18n: ectx: property (toolTip), widget (KLineEdit, nameText)
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, nameText)
-#. i18n: ectx: property (html), widget (QTextEdit, nameDescription)
 #: resources/dirresourceimportdialog_type.ui:105
-#: resources/dirresourceimportdialog_type.ui:108
-#: resources/singlefileresourceconfigdialog.ui:218
 #, fuzzy, kde-format
 #| msgctxt "@info:whatsthis"
 #| msgid "Enter the name or URL of a text or image file to display."
+msgctxt "@info:tooltip"
+msgid "Enter the name used to identify this resource in displays."
+msgstr "पाठ या फोटू फाइल के यूआरएल या नाम भरव जऊन ल प्रदर्सित करे जाही ."
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, nameText)
+#: resources/dirresourceimportdialog_type.ui:108
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid "Enter the name or URL of a text or image file to display."
+msgctxt "@info:whatsthis"
 msgid "Enter the name used to identify this resource in displays."
 msgstr "पाठ या फोटू फाइल के यूआरएल या नाम भरव जऊन ल प्रदर्सित करे जाही ."
 
@@ -5987,37 +6019,46 @@ msgstr "पाठ या फोटू फाइल के यूआरएल य
 #, fuzzy, kde-format
 #| msgctxt "@option"
 #| msgid "Do not repeat"
+msgctxt "@option:radio"
 msgid "Do not import"
 msgstr "दुहराव नइ"
 
-#: resources/fileresource.cpp:36
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Error saving alarm"
-msgid "Error loading calendar '%1'."
-msgstr "अलार्म सहेजे मं गलती"
-
-#: resources/fileresource.cpp:37
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Error saving alarm"
-msgid "Error saving calendar '%1'."
-msgstr "अलार्म सहेजे मं गलती"
-
-#: resources/fileresource.cpp:313 resources/fileresource.cpp:430
+#: resources/fileresource.cpp:308 resources/fileresource.cpp:425
 #, kde-format
+msgctxt "@info"
 msgid "Resource is not configured."
 msgstr ""
 
-#: resources/fileresource.cpp:437
+#: resources/fileresource.cpp:337 resources/fileresource.cpp:352
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid "Unable to create resource of type <resource>%1</resource>."
+msgctxt "@info"
+msgid "Error loading calendar <resource>%1</resource>."
+msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
+
+#: resources/fileresource.cpp:411 resources/fileresource.cpp:442
+#: resources/fileresource.cpp:452
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid "Unable to create resource of type <resource>%1</resource>."
+msgctxt "@info"
+msgid "Error saving calendar <resource>%1</resource>."
+msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
+
+#: resources/fileresource.cpp:432
 #, kde-format
+msgctxt "@info"
 msgid "Resource is read-only."
 msgstr ""
 
-#: resources/fileresource.cpp:442
-#, kde-format
-msgid "Calendar file is in wrong format: '%1'."
-msgstr ""
+#: resources/fileresource.cpp:437
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid "%1: invalid calendar file name: <filename>%2</filename>"
+msgctxt "@info"
+msgid "Calendar file is in wrong format: <filename>%1</filename>."
+msgstr "%1: अवैध कलेन्डर फाइल नाम: <filename>%2</filename>"
 
 #: resources/fileresourcecreator.cpp:66
 #, fuzzy, kde-format
@@ -6031,33 +6072,93 @@ msgstr "अलार्म कान्फिगरेसन"
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Select storage type of new resource:"
-msgctxt "@info"
+msgctxt "@label:listbox"
 msgid "Select storage type of new calendar:"
 msgstr "नवा रिसोर्स के भंडार सैली चुनव:"
 
 #: resources/fileresourcecreator.cpp:149
 #, kde-kuit-format
 msgctxt "@info"
-msgid "Error!  The file is already used by an existing resource."
+msgid ""
+"Error!  The file <filename>%1</filename> is already used by an existing "
+"resource."
 msgstr ""
+
+#: resources/fileresourcemigrator.cpp:448
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Active Alarms"
+msgctxt "@info/plain Name of a calendar"
+msgid "Active Alarms"
+msgstr "सक्रिय अलार्म"
+
+#: resources/fileresourcemigrator.cpp:450
+#, fuzzy, kde-format
+#| msgctxt "@title:group"
+#| msgid "Archived Alarms"
+msgctxt "@info/plain Name of a calendar"
+msgid "Archived Alarms"
+msgstr "अभिलेखित अलार्म"
+
+#: resources/fileresourcemigrator.cpp:452
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Alarm Templates"
+msgctxt "@info/plain Name of a calendar"
+msgid "Alarm Templates"
+msgstr "अलार्म टैम्प्लेट्स"
+
+#: resources/fileresourcemigrator.cpp:472
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid "Unable to create resource of type <resource>%1</resource>."
+msgctxt "@info"
+msgid ""
+"<para>Failed to create default calendar <resource>%1</resource></"
+"para><para>Location: <filename>%2</filename></para>"
+msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
+
+#: resources/resourcedatamodelbase.cpp:88
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Active Alarms"
+msgctxt "@item:intext"
+msgid "Active Alarms"
+msgstr "सक्रिय अलार्म"
+
+#: resources/resourcedatamodelbase.cpp:90
+#, fuzzy, kde-format
+#| msgctxt "@title:group"
+#| msgid "Archived Alarms"
+msgctxt "@item:intext"
+msgid "Archived Alarms"
+msgstr "अभिलेखित अलार्म"
+
+#: resources/resourcedatamodelbase.cpp:92
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Alarm Templates"
+msgctxt "@item:intext"
+msgid "Alarm Templates"
+msgstr "अलार्म टैम्प्लेट्स"
 
 #: resources/resourcedatamodelbase.cpp:108
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Read-only"
-msgctxt "@info"
+msgctxt "@item:intext Calendar status"
 msgid "Read-only"
 msgstr "सिरिफ पढ़े बर"
 
 #: resources/resourcedatamodelbase.cpp:111
 #, kde-format
-msgctxt "@info"
+msgctxt "@item:intext Calendar status"
 msgid "Read-only (old format)"
 msgstr ""
 
 #: resources/resourcedatamodelbase.cpp:114
 #, kde-format
-msgctxt "@info"
+msgctxt "@item:intext Calendar status"
 msgid "Read-only (other format)"
 msgstr ""
 
@@ -6135,11 +6236,11 @@ msgctxt "@info:tooltip"
 msgid "Pre- and post-alarm action execution failed"
 msgstr ""
 
-#: resources/resourcedatamodelbase.cpp:502 resourceselector.cpp:528
+#: resources/resourcedatamodelbase.cpp:502
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Disabled"
-msgctxt "@info"
+msgctxt "@item:intext Calendar status"
 msgid "Disabled"
 msgstr "अक्छम"
 
@@ -6268,6 +6369,7 @@ msgstr "कलेन्डर फाइल मन ल"
 
 #: resources/resources.cpp:481
 #, kde-kuit-format
+msgctxt "@info"
 msgid ""
 "The calendar <resource>%1</resource> has been made read-only. This was the "
 "default calendar for active alarms."
@@ -6275,6 +6377,7 @@ msgstr ""
 
 #: resources/resources.cpp:486
 #, kde-kuit-format
+msgctxt "@info"
 msgid ""
 "The calendar <resource>%1</resource> has been made read-only. This was the "
 "default calendar for archived alarms."
@@ -6282,6 +6385,7 @@ msgstr ""
 
 #: resources/resources.cpp:491
 #, kde-kuit-format
+msgctxt "@info"
 msgid ""
 "The calendar <resource>%1</resource> has been made read-only. This was the "
 "default calendar for alarm templates."
@@ -6306,18 +6410,16 @@ msgid "<para>%1</para><para>Please select a new default calendar.</para>"
 msgstr "<para>%1</para><para>किरपा करके, एला प्राथमिकता गोठ मं सेट करव.</para>"
 
 #: resources/resourceselectdialog.cpp:48
-#, fuzzy, kde-format
-#| msgctxt "Month of the year"
-#| msgid "March"
+#, kde-kuit-format
 msgctxt "@info A prompt for user to enter what to search for"
-msgid "Search"
-msgstr "मार्च"
+msgid "<placeholder>Search</placeholder>"
+msgstr ""
 
 #: resources/resourcetype.cpp:337
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Calendar Files"
-msgctxt "@info"
+msgctxt "@item:inlistbox"
 msgid "KAlarm Calendar File"
 msgstr "कलेन्डर फाइल मन ल"
 
@@ -6325,15 +6427,15 @@ msgstr "कलेन्डर फाइल मन ल"
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Calendar Files"
-msgctxt "@info"
+msgctxt "@item:inlistbox"
 msgid "KAlarm Calendar Directory"
 msgstr "कलेन्डर फाइल मन ल"
 
 #: resources/resourcetype.cpp:338
 #, fuzzy, kde-format
-#| msgctxt "@info/plain"
+#| msgctxt "@option:check Alarm action = file display"
 #| msgid "File"
-msgctxt "@info"
+msgctxt "@item:intext What a resource is stored in"
 msgid "File"
 msgstr "फाइल"
 
@@ -6341,7 +6443,7 @@ msgstr "फाइल"
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "URL"
-msgctxt "@info"
+msgctxt "@item:intext What a resource is stored in"
 msgid "URL"
 msgstr "यूआरएल"
 
@@ -6349,73 +6451,75 @@ msgstr "यूआरएल"
 #, fuzzy, kde-format
 #| msgctxt "@info/plain Directory in filesystem"
 #| msgid "Directory"
-msgctxt "@info Directory in filesystem"
+msgctxt "@item:intext What a resource is stored in (directory in filesystem)"
 msgid "Directory"
 msgstr "डिरेक्टरी"
 
-#: resources/singlefileresource.cpp:56
-#, fuzzy, kde-format
-#| msgctxt "@info/plain"
-#| msgid "Calendar Files"
-msgid "Calendar '%1' has been reloaded."
-msgstr "कलेन्डर फाइल मन ल"
-
-#: resources/singlefileresource.cpp:191 resources/singlefileresource.cpp:347
+#: resources/singlefileresource.cpp:190 resources/singlefileresource.cpp:346
 #, kde-format
+msgctxt "@info"
 msgid "A previous load is still in progress."
 msgstr ""
 
-#: resources/singlefileresource.cpp:197 resources/singlefileresource.cpp:353
+#: resources/singlefileresource.cpp:196 resources/singlefileresource.cpp:352
 #, kde-format
+msgctxt "@info"
 msgid "A previous save is still in progress."
 msgstr ""
 
-#: resources/singlefileresource.cpp:246
-#, fuzzy, kde-format
+#: resources/singlefileresource.cpp:245
+#, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid "Could not load calendar <filename>%1</filename>."
-msgid "Could not create calendar file '%1'."
+msgctxt "@info"
+msgid "Could not create calendar file <filename>%1</filename>."
 msgstr "कलेन्डर <filename>%1</filename> ल लोड नइ कर सकिस."
 
-#: resources/singlefileresource.cpp:584
-#, fuzzy, kde-format
+#: resources/singlefileresource.cpp:583
+#, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid "Could not load calendar <filename>%1</filename>."
-msgid "Could not load file '%1'."
+msgctxt "@info"
+msgid "Could not load file <filename>%1</filename>."
 msgstr "कलेन्डर <filename>%1</filename> ल लोड नइ कर सकिस."
 
-#: resources/singlefileresource.cpp:616
+#: resources/singlefileresource.cpp:615
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Calendar Files"
+msgctxt "@info"
 msgid "Calendar not open."
 msgstr "कलेन्डर फाइल मन ल"
 
-#: resources/singlefileresource.cpp:629
-#, fuzzy, kde-format
+#: resources/singlefileresource.cpp:628
+#, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid "Could not load calendar <filename>%1</filename>."
-msgid "Could not save file '%1'."
+msgctxt "@info"
+msgid "Could not save file <filename>%1</filename>."
 msgstr "कलेन्डर <filename>%1</filename> ल लोड नइ कर सकिस."
 
-#: resources/singlefileresource.cpp:720
-#, fuzzy, kde-format
+#: resources/singlefileresource.cpp:719
+#, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid "Could not load calendar <filename>%1</filename>."
-msgid "Could not load file '%1'. (%2)"
+msgctxt "@info"
+msgid "Could not load file <filename>%1</filename>. (%2)"
 msgstr "कलेन्डर <filename>%1</filename> ल लोड नइ कर सकिस."
 
-#: resources/singlefileresource.cpp:760
-#, fuzzy, kde-format
+#: resources/singlefileresource.cpp:759
+#, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid "Could not load calendar <filename>%1</filename>."
-msgid "Could not save file '%1'. (%2)"
+msgctxt "@info"
+msgid "Could not save file <filename>%1</filename>. (%2)"
 msgstr "कलेन्डर <filename>%1</filename> ल लोड नइ कर सकिस."
 
 #: resources/singlefileresourceconfigdialog.cpp:45
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Calendar Files"
+msgctxt "@title:window"
 msgid "Configure Calendar"
 msgstr "कलेन्डर फाइल मन ल"
 
@@ -6424,6 +6528,7 @@ msgstr "कलेन्डर फाइल मन ल"
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Calendar Files"
+msgctxt "@title:group"
 msgid "Calendar File"
 msgstr "कलेन्डर फाइल मन ल"
 
@@ -6437,29 +6542,21 @@ msgid ""
 "in this case."
 msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, alarmTypeGroupBox)
-#: resources/singlefileresourceconfigdialog.ui:74
-#, fuzzy, kde-format
-#| msgctxt "@title:group"
-#| msgid "Alarm Type"
-msgid "Alarm Type"
-msgstr "अलार्म किसिम"
-
 #. i18n: ectx: property (text), widget (QRadioButton, activeRadio)
 #: resources/singlefileresourceconfigdialog.ui:82
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Active Alarms"
+msgctxt "@option:radio"
 msgid "Acti&ve Alarms"
 msgstr "सक्रिय अलार्म"
 
 #. i18n: ectx: property (text), widget (QRadioButton, archivedRadio)
-#. i18n: ectx: property (text), widget (QLineEdit, archivedAlarmsText)
 #: resources/singlefileresourceconfigdialog.ui:95
-#: resources/singlefileresourceconfigdialog.ui:164
 #, fuzzy, kde-format
 #| msgctxt "@title:group"
 #| msgid "Archived Alarms"
+msgctxt "@option:radio"
 msgid "Archived Alarms"
 msgstr "अभिलेखित अलार्म"
 
@@ -6468,6 +6565,7 @@ msgstr "अभिलेखित अलार्म"
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Alarm Templates"
+msgctxt "@option:radio"
 msgid "Alarm &Templates"
 msgstr "अलार्म टैम्प्लेट्स"
 
@@ -6482,6 +6580,7 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Alarm Type"
+msgctxt "@label:textbox"
 msgid "Alarm type:"
 msgstr "अलार्म किसिम"
 
@@ -6490,14 +6589,25 @@ msgstr "अलार्म किसिम"
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Active Alarms"
+msgctxt "@item"
 msgid "Active Alarms"
 msgstr "सक्रिय अलार्म"
+
+#. i18n: ectx: property (text), widget (QLineEdit, archivedAlarmsText)
+#: resources/singlefileresourceconfigdialog.ui:164
+#, fuzzy, kde-format
+#| msgctxt "@title:group"
+#| msgid "Archived Alarms"
+msgctxt "@item"
+msgid "Archived Alarms"
+msgstr "अभिलेखित अलार्म"
 
 #. i18n: ectx: property (text), widget (QLineEdit, templateAlarmsText)
 #: resources/singlefileresourceconfigdialog.ui:177
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Alarm Templates"
+msgctxt "@item"
 msgid "Alarm Templates"
 msgstr "अलार्म टैम्प्लेट्स"
 
@@ -6506,6 +6616,7 @@ msgstr "अलार्म टैम्प्लेट्स"
 #, fuzzy, kde-format
 #| msgctxt "@item:inlistbox"
 #| msgid "Display Alarm"
+msgctxt "@title:group"
 msgid "Display Name"
 msgstr "डिस्प्ले अलार्म"
 
@@ -6514,12 +6625,22 @@ msgstr "डिस्प्ले अलार्म"
 #, fuzzy, kde-format
 #| msgctxt "@label:textbox Resource name"
 #| msgid "Name:"
+msgctxt "@label:textbox"
 msgid "&Name:"
 msgstr "नाम:"
+
+#. i18n: ectx: property (html), widget (QTextEdit, nameDescription)
+#: resources/singlefileresourceconfigdialog.ui:218
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid "Enter the name or URL of a text or image file to display."
+msgid "Enter the name used to identify this resource in displays."
+msgstr "पाठ या फोटू फाइल के यूआरएल या नाम भरव जऊन ल प्रदर्सित करे जाही ."
 
 #. i18n: ectx: property (title), widget (QGroupBox, readOnlyGroupBox)
 #: resources/singlefileresourceconfigdialog.ui:228
 #, kde-format
+msgctxt "@title:group"
 msgid "Access Rights"
 msgstr ""
 
@@ -6528,6 +6649,7 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Read-only"
+msgctxt "@option:check"
 msgid "Read only"
 msgstr "सिरिफ पढ़े बर"
 
@@ -6822,6 +6944,14 @@ msgstr "पढ़व-लिखव"
 msgctxt "@info"
 msgid "Enabled"
 msgstr "सक्छम"
+
+#: resourceselector.cpp:528
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Disabled"
+msgctxt "@info"
+msgid "Disabled"
+msgstr "अक्छम"
 
 #: resourceselector.cpp:530
 #, fuzzy, kde-format
@@ -7568,6 +7698,74 @@ msgstr ""
 msgid "Number of minutes before alarm to wake from suspend"
 msgstr ""
 
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid "Error saving alarm"
+#~ msgid "Error loading calendar '%1'."
+#~ msgstr "अलार्म सहेजे मं गलती"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid "Error saving alarm"
+#~ msgid "Error saving calendar '%1'."
+#~ msgstr "अलार्म सहेजे मं गलती"
+
+#, fuzzy
+#~| msgctxt "Month of the year"
+#~| msgid "March"
+#~ msgctxt "@info A prompt for user to enter what to search for"
+#~ msgid "Search"
+#~ msgstr "मार्च"
+
+#, fuzzy
+#~| msgctxt "@info/plain"
+#~| msgid "File"
+#~ msgctxt "@info"
+#~ msgid "File"
+#~ msgstr "फाइल"
+
+#, fuzzy
+#~| msgctxt "@info/plain"
+#~| msgid "Calendar Files"
+#~ msgid "Calendar '%1' has been reloaded."
+#~ msgstr "कलेन्डर फाइल मन ल"
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid "Could not load calendar <filename>%1</filename>."
+#~ msgid "Could not create calendar file '%1'."
+#~ msgstr "कलेन्डर <filename>%1</filename> ल लोड नइ कर सकिस."
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid "Could not load calendar <filename>%1</filename>."
+#~ msgid "Could not load file '%1'."
+#~ msgstr "कलेन्डर <filename>%1</filename> ल लोड नइ कर सकिस."
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid "Could not load calendar <filename>%1</filename>."
+#~ msgid "Could not save file '%1'."
+#~ msgstr "कलेन्डर <filename>%1</filename> ल लोड नइ कर सकिस."
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid "Could not load calendar <filename>%1</filename>."
+#~ msgid "Could not load file '%1'. (%2)"
+#~ msgstr "कलेन्डर <filename>%1</filename> ल लोड नइ कर सकिस."
+
+#, fuzzy
+#~| msgctxt "@info"
+#~| msgid "Could not load calendar <filename>%1</filename>."
+#~ msgid "Could not save file '%1'. (%2)"
+#~ msgstr "कलेन्डर <filename>%1</filename> ल लोड नइ कर सकिस."
+
+#, fuzzy
+#~| msgctxt "@title:group"
+#~| msgid "Alarm Type"
+#~ msgid "Alarm Type"
+#~ msgstr "अलार्म किसिम"
+
 #~ msgctxt "@info"
 #~ msgid "Cannot upload calendar to <filename>%1</filename>"
 #~ msgstr "कलेन्डर <filename>%1</filename> ल अपलोड नइ कर सकिस"
@@ -7591,13 +7789,6 @@ msgstr ""
 #~ "%1\n"
 #~ "(%2)"
 #~ msgstr "%1 %2"
-
-#, fuzzy
-#~| msgctxt "@info"
-#~| msgid "Unable to create resource of type <resource>%1</resource>."
-#~ msgctxt "@info"
-#~ msgid "Failed to remove calendar <resource>%1</resource>."
-#~ msgstr "रिसोर्स सैली <resource>%1</resource> बनाए मं अक्छम."
 
 #~ msgctxt "@action"
 #~ msgid "Show &Alarm Times"
@@ -7750,10 +7941,6 @@ msgstr ""
 #~ msgctxt "@info/plain"
 #~ msgid "Disabled (wrong alarm type)"
 #~ msgstr "अलार्म रंग अक्छम करव"
-
-#~ msgctxt "@info"
-#~ msgid "%1: invalid calendar file name: <filename>%2</filename>"
-#~ msgstr "%1: अवैध कलेन्डर फाइल नाम: <filename>%2</filename>"
 
 #~ msgctxt "@info"
 #~ msgid "%1: file name not permitted: <filename>%2</filename>"
