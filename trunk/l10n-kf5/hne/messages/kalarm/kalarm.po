@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-06-08 02:13+0200\n"
+"POT-Creation-Date: 2020-06-11 02:14+0200\n"
 "PO-Revision-Date: 2009-02-27 17:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -28,22 +28,6 @@ msgstr "रविसंकर सिरीवास्तव, जी. करू�
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raviratlami@aol.in,"
-
-#: alarmcalendar.cpp:235
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid "Error attaching file: <filename>%1</filename>"
-msgctxt "@info"
-msgid ""
-"<para>Error loading calendar:</para><para><filename>%1</filename></"
-"para><para>Please fix or delete the file.</para>"
-msgstr "फााइल: <filename>%1</filename> ल संलग्न करे मं गलती"
-
-#: alarmcalendar.cpp:329
-#, kde-kuit-format
-msgctxt "@info"
-msgid "Failed to save calendar to <filename>%1</filename>"
-msgstr "कलेन्डर ल <filename>%1</filename> मं सहेजे मं फेल"
 
 #: alarmtimewidget.cpp:52
 #, fuzzy, kde-format
@@ -649,53 +633,69 @@ msgctxt "@info:shell"
 msgid "<icode>%1</icode> incompatible with <icode>%2</icode>"
 msgstr "<icode>%2</icode> से संगत नइ हे <icode>%1</icode>"
 
-#: deferdlg.cpp:50
+#: deferdlg.cpp:51
 #, kde-format
 msgctxt "@title:window"
 msgid "Defer Alarm"
 msgstr "अलार्म टालें"
 
-#: deferdlg.cpp:65
+#: deferdlg.cpp:66
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Defer the alarm until the specified time."
 msgstr "विसिस्ट समय बर अलार्म टालें."
 
-#: deferdlg.cpp:73
+#: deferdlg.cpp:74
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel Deferral"
 msgstr "टालना खारिज करव"
 
-#: deferdlg.cpp:74
+#: deferdlg.cpp:75
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Cancel the deferred alarm. This does not affect future recurrences."
 msgstr "टाले गे अलार्म खारिज करव. ए आगू के रिकरवसों मं प्रभाव नइ डालही."
 
-#: deferdlg.cpp:112
+#: deferdlg.cpp:114
 #, kde-format
 msgctxt "@info"
 msgid "Cannot defer past the alarm's next sub-repetition (currently %1)"
 msgstr "अलार्म के अगले सब-रिपीटीसन ल बाद बर टाल नइ सकिस (अभी हाल के मं %1)"
 
-#: deferdlg.cpp:116
+#: deferdlg.cpp:118
 #, kde-format
 msgctxt "@info"
 msgid "Cannot defer past the alarm's next recurrence (currently %1)"
 msgstr "अलार्म के अगले रीकरवस ल बाद बर टाल नइ सकिस (अभी हाल के मं %1)"
 
-#: deferdlg.cpp:120
+#: deferdlg.cpp:122
 #, kde-format
 msgctxt "@info"
 msgid "Cannot defer past the alarm's next reminder (currently %1)"
 msgstr "अलार्म के अगले संस्मरन ल बाद बर टाल नइ सकिस (अभी हाल के मं %1)"
 
-#: deferdlg.cpp:124
+#: deferdlg.cpp:126
 #, kde-format
 msgctxt "@info"
 msgid "Cannot defer reminder past the main alarm time (%1)"
 msgstr "मुख्य अलार्म समय के बाद बर स्मरन ल टाल नइ सकिस (%1)"
+
+#: displaycalendar.cpp:154
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid "Error attaching file: <filename>%1</filename>"
+msgctxt "@info"
+msgid ""
+"<para>Error loading calendar:</para><para><filename>%1</filename></"
+"para><para>Please fix or delete the file.</para>"
+msgstr "फााइल: <filename>%1</filename> ल संलग्न करे मं गलती"
+
+#: displaycalendar.cpp:199
+#, kde-kuit-format
+msgctxt "@info"
+msgid "Failed to save calendar to <filename>%1</filename>"
+msgstr "कलेन्डर ल <filename>%1</filename> मं सहेजे मं फेल"
 
 #: editdlg.cpp:90
 #, kde-format
@@ -1655,25 +1655,25 @@ msgctxt "@title:window"
 msgid "Choose Alarm Font & Color"
 msgstr "अलार्म फोंट अउ रंग चुनव"
 
-#: functions.cpp:200
+#: functions.cpp:201
 #, kde-format
 msgctxt "@action"
 msgid "Enable &Alarms"
 msgstr "अलार्म सक्छम करव (&A)"
 
-#: functions.cpp:213
+#: functions.cpp:214
 #, kde-format
 msgctxt "@action"
 msgid "Stop Play"
 msgstr ""
 
-#: functions.cpp:226
+#: functions.cpp:227
 #, fuzzy, kde-format
 msgctxt "@action"
 msgid "Spread Windows"
 msgstr "अलार्म विंडोज"
 
-#: functions.cpp:860
+#: functions.cpp:861
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Calendar Files"
@@ -1681,7 +1681,7 @@ msgctxt "@title:window"
 msgid "Import Calendar Files"
 msgstr "कलेन्डर फाइल मन ल"
 
-#: functions.cpp:921
+#: functions.cpp:922
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Calendar Files"
@@ -1689,103 +1689,103 @@ msgctxt "@item:inlistbox File type selection filter"
 msgid "Calendar Files"
 msgstr "कलेन्डर फाइल मन ल"
 
-#: functions.cpp:922
+#: functions.cpp:923
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Export Calendar"
 msgstr ""
 
-#: functions.cpp:947
+#: functions.cpp:948
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid "Error loading calendar to append to:<nl/><filename>%1</filename>"
 msgstr "कलेन्डर <filename>%1</filename> ल अपलोड नइ कर सकिस"
 
-#: functions.cpp:987
+#: functions.cpp:988
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid "Failed to save new calendar to:<nl/><filename>%1</filename>"
 msgstr "कलेन्डर ल <filename>%1</filename> मं सहेजे मं फेल"
 
-#: functions.cpp:1000
+#: functions.cpp:1001
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid "Cannot upload new calendar to:<nl/><filename>%1</filename>"
 msgstr "कलेन्डर <filename>%1</filename> ल अपलोड नइ कर सकिस"
 
-#: functions.cpp:1020
+#: functions.cpp:1021
 #, kde-format
 msgctxt "@info"
 msgid "Unable to show alarms in KOrganizer"
 msgstr "अलार्मों ल केओर्गनाइजर मं देखाय मं अक्छम"
 
-#: functions.cpp:1021
+#: functions.cpp:1022
 #, kde-format
 msgctxt "@info"
 msgid "Unable to show alarm in KOrganizer"
 msgstr "अलार्मों ल केओर्गनाइजर मं देखाय मं अक्छम"
 
-#: functions.cpp:1024
+#: functions.cpp:1025
 #, kde-format
 msgctxt "@info"
 msgid "Unable to update alarm in KOrganizer"
 msgstr "केओर्गनाइजर मं अलार्म ल अपडेट करे मं अक्छम"
 
-#: functions.cpp:1027
+#: functions.cpp:1028
 #, kde-format
 msgctxt "@info"
 msgid "Unable to delete alarms from KOrganizer"
 msgstr "अलार्मों ल केओर्गनाइजर से मेटाय मं अक्छम"
 
-#: functions.cpp:1028
+#: functions.cpp:1029
 #, kde-format
 msgctxt "@info"
 msgid "Unable to delete alarm from KOrganizer"
 msgstr "अलार्मों ल केओर्गनाइजर से मेटाय मं अक्छम"
 
-#: functions.cpp:1038
+#: functions.cpp:1039
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid "<para>%1</para><para>(Could not start KOrganizer)</para>"
 msgstr "<para>%1</para><para>का आप मन सही मं बदलाव मन ल सहेजना चाहथो ?<para>"
 
-#: functions.cpp:1041
+#: functions.cpp:1042
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid "<para>%1</para><para>(KOrganizer not fully started)</para>"
 msgstr "<para>%1</para><para>%2</para>"
 
-#: functions.cpp:1044
+#: functions.cpp:1045
 #, fuzzy, kde-kuit-format
 msgctxt "@info"
 msgid "<para>%1</para><para>(Error communicating with KOrganizer)</para>"
 msgstr "<para>%1</para><para>का आप मन सही मं बदलाव मन ल सहेजना चाहथो ?<para>"
 
-#: functions.cpp:1278
+#: functions.cpp:1283
 #, kde-format
 msgctxt "info"
 msgid "The scheduled Wake from Suspend has been cancelled."
 msgstr ""
 
-#: functions.cpp:1311
+#: functions.cpp:1316
 #, kde-format
 msgctxt "@info"
 msgid "Error obtaining authorization (%1)"
 msgstr ""
 
-#: functions.cpp:1359
+#: functions.cpp:1364
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "You must enable a template calendar to save the template in"
 msgstr "जिस संसाधन मं अलार्म ल सहेजना हे ओला आप मन ल चुनना होही"
 
-#: functions.cpp:1582
+#: functions.cpp:1587
 #, kde-kuit-format
 msgctxt "@info Please set the 'From' email address..."
 msgid "<para>%1</para><para>Please set it in the Configuration dialog.</para>"
 msgstr "<para>%1</para><para>किरपा करके, एला प्राथमिकता गोठ मं सेट करव.</para>"
 
-#: functions.cpp:1586
+#: functions.cpp:1591
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1795,19 +1795,19 @@ msgstr ""
 "<para>अलार्म अभी अक्छम हे.</para><para>. का आप मन अलार्मों ल अभी सक्छम करना चाहथो ?"
 "</para>"
 
-#: functions.cpp:1587
+#: functions.cpp:1592
 #, kde-format
 msgctxt "@action:button"
 msgid "Enable"
 msgstr "सक्छम करव"
 
-#: functions.cpp:1587
+#: functions.cpp:1592
 #, kde-format
 msgctxt "@action:button"
 msgid "Keep Disabled"
 msgstr "अक्छम बनाए रखव"
 
-#: functions.cpp:1652
+#: functions.cpp:1659
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1815,55 +1815,55 @@ msgid ""
 msgstr ""
 "<application>केमेल</application> चालू करे मं अक्छम<nl />(<message>%1</message>)"
 
-#: functions.cpp:1947
+#: functions.cpp:1954
 #, kde-format
 msgctxt "@info"
 msgid "Error saving alarms"
 msgstr "अलार्म सहेजे मं गलती"
 
-#: functions.cpp:1948
+#: functions.cpp:1955
 #, kde-format
 msgctxt "@info"
 msgid "Error saving alarm"
 msgstr "अलार्म सहेजे मं गलती"
 
-#: functions.cpp:1951
+#: functions.cpp:1958
 #, kde-format
 msgctxt "@info"
 msgid "Error deleting alarms"
 msgstr "अलार्म मेटाय मं गलती"
 
-#: functions.cpp:1952
+#: functions.cpp:1959
 #, kde-format
 msgctxt "@info"
 msgid "Error deleting alarm"
 msgstr "अलार्म मेटाय मं गलती"
 
-#: functions.cpp:1955
+#: functions.cpp:1962
 #, kde-format
 msgctxt "@info"
 msgid "Error saving reactivated alarms"
 msgstr "फिर से सक्रिय करे वाले अलार्मों ल सहेजे मं गलती"
 
-#: functions.cpp:1956
+#: functions.cpp:1963
 #, kde-format
 msgctxt "@info"
 msgid "Error saving reactivated alarm"
 msgstr "फिर से सक्रिय करे अलार्म ल सहेजे मं गलती होइस"
 
-#: functions.cpp:1959
+#: functions.cpp:1966
 #, kde-format
 msgctxt "@info"
 msgid "Error saving alarm templates"
 msgstr "अलार्म टैम्प्लेट सहेजे मं गलती होइस"
 
-#: functions.cpp:1960
+#: functions.cpp:1967
 #, kde-format
 msgctxt "@info"
 msgid "Error saving alarm template"
 msgstr "अलार्म टैम्प्लेट सहेजे मं गलती होइस"
 
-#: kalarmapp.cpp:755
+#: kalarmapp.cpp:756
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1871,13 +1871,13 @@ msgid ""
 msgstr ""
 "बाहिर होए से अलार्म अक्छम हो जाही (एक बार कोनो अलार्म संदेस से विंडो बन्द होथे )."
 
-#: kalarmapp.cpp:764
+#: kalarmapp.cpp:765
 #, kde-format
 msgctxt "@info"
 msgid "Quitting will cancel the scheduled Wake from Suspend."
 msgstr ""
 
-#: kalarmapp.cpp:776
+#: kalarmapp.cpp:777
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1885,7 +1885,7 @@ msgid ""
 "if KAlarm is not started.)"
 msgstr ""
 
-#: kalarmapp.cpp:1035
+#: kalarmapp.cpp:1036
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info:shell"
 #| msgid ""
@@ -1897,7 +1897,7 @@ msgstr ""
 "<icode>%1</icode>: कारक्रम <resource>%2</resource> नइ मिलिस या संपादन जा सके नइ "
 "हे"
 
-#: kalarmapp.cpp:1342
+#: kalarmapp.cpp:1344
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1906,7 +1906,7 @@ msgid ""
 "Calendars</interface> to check or change calendar statuses."
 msgstr ""
 
-#: kalarmapp.cpp:1382
+#: kalarmapp.cpp:1384
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info:shell"
 #| msgid ""
@@ -1918,7 +1918,7 @@ msgstr ""
 "<icode>%1</icode>: कारक्रम <resource>%2</resource> नइ मिलिस या संपादन जा सके नइ "
 "हे"
 
-#: kalarmapp.cpp:1410
+#: kalarmapp.cpp:1412
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1928,7 +1928,7 @@ msgid ""
 "statuses."
 msgstr ""
 
-#: kalarmapp.cpp:1418
+#: kalarmapp.cpp:1420
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1939,7 +1939,7 @@ msgid ""
 "interface>."
 msgstr ""
 
-#: kalarmapp.cpp:2328
+#: kalarmapp.cpp:2330
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Failed to execute command (shell access not authorized)"
@@ -1949,19 +1949,19 @@ msgid ""
 "(no terminal selected for command alarms)"
 msgstr "कमांड लागू करे मं फेल (सेल एक्सेस अधिकृत नइ):"
 
-#: kalarmapp.cpp:2476
+#: kalarmapp.cpp:2478
 #, kde-format
 msgctxt "@info"
 msgid "Error creating temporary script file"
 msgstr "अस्थाई स्क्रिप्ट फाइल बनाए मं गलती"
 
-#: kalarmapp.cpp:2565
+#: kalarmapp.cpp:2567
 #, kde-format
 msgctxt "@info"
 msgid "Pre-alarm action:"
 msgstr "प्री-अलार्म काम:"
 
-#: kalarmapp.cpp:2571
+#: kalarmapp.cpp:2573
 #, kde-format
 msgctxt "@info"
 msgid "Post-alarm action:"
@@ -3610,19 +3610,19 @@ msgctxt "@action"
 msgid "Disa&ble"
 msgstr "अक्छम करव (&b)"
 
-#: messagewin.cpp:341
+#: messagewin.cpp:342
 #, kde-format
 msgctxt "@title:window"
 msgid "Reminder"
 msgstr "स्मरन"
 
-#: messagewin.cpp:341 messagewin.cpp:781
+#: messagewin.cpp:342 messagewin.cpp:782
 #, kde-format
 msgctxt "@title:window"
 msgid "Message"
 msgstr "संदेस"
 
-#: messagewin.cpp:360
+#: messagewin.cpp:361
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -3630,109 +3630,109 @@ msgid ""
 "display)."
 msgstr ""
 
-#: messagewin.cpp:370
+#: messagewin.cpp:371
 #, kde-format
 msgctxt "@info"
 msgid "Reminder"
 msgstr "स्मरन"
 
-#: messagewin.cpp:394
+#: messagewin.cpp:395
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "The file whose contents are displayed below"
 msgstr "फाइल जेखर विसय-चीज नीचे प्रदर्सित हे"
 
-#: messagewin.cpp:465
+#: messagewin.cpp:466
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "The contents of the file to be displayed"
 msgstr "प्रदर्सित करे बर फाइल के विसय-चीज"
 
-#: messagewin.cpp:471
+#: messagewin.cpp:472
 #, kde-format
 msgctxt "@info"
 msgid "File is a folder"
 msgstr "फाइल एक फोल्डर हे"
 
-#: messagewin.cpp:471
+#: messagewin.cpp:472
 #, kde-format
 msgctxt "@info"
 msgid "Failed to open file"
 msgstr "फाइल खोले मं फेल"
 
-#: messagewin.cpp:471
+#: messagewin.cpp:472
 #, kde-format
 msgctxt "@info"
 msgid "File not found"
 msgstr "फाइल नइ मिलिस"
 
-#: messagewin.cpp:491
+#: messagewin.cpp:492
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "The alarm message"
 msgstr "अलार्म संदेस"
 
-#: messagewin.cpp:518
+#: messagewin.cpp:519
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "The output of the alarm's command"
 msgstr ""
 
-#: messagewin.cpp:560
+#: messagewin.cpp:561
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "The email to send"
 msgstr "ई-मेल भेजे बर"
 
-#: messagewin.cpp:566
+#: messagewin.cpp:567
 #, kde-format
 msgctxt "@info Email addressee"
 msgid "To:"
 msgstr "को:"
 
-#: messagewin.cpp:573
+#: messagewin.cpp:574
 #, kde-format
 msgctxt "@info Email subject"
 msgid "Subject:"
 msgstr "विसय:"
 
-#: messagewin.cpp:599
+#: messagewin.cpp:600
 #, kde-format
 msgctxt "@title:window"
 msgid "Error"
 msgstr "गलती"
 
-#: messagewin.cpp:620
+#: messagewin.cpp:621
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not display this error message again for this alarm"
 msgstr "ये अलार्म बर ए गलती संदेस नइ देखाव"
 
-#: messagewin.cpp:639
+#: messagewin.cpp:640
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Acknowledge the alarm"
 msgstr "अलार्म पावती देव"
 
-#: messagewin.cpp:644
+#: messagewin.cpp:645
 #, kde-format
 msgctxt "@action:button"
 msgid "&Edit..."
 msgstr "संपादन... (&E)"
 
-#: messagewin.cpp:649
+#: messagewin.cpp:650
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Edit the alarm."
 msgstr "अलार्म संपादित करव."
 
-#: messagewin.cpp:653
+#: messagewin.cpp:654
 #, kde-format
 msgctxt "@action:button"
 msgid "&Defer..."
 msgstr "टालें... (&D)"
 
-#: messagewin.cpp:658
+#: messagewin.cpp:659
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -3740,49 +3740,49 @@ msgid ""
 "specify when the alarm should be redisplayed.</para>"
 msgstr ""
 
-#: messagewin.cpp:672 sounddlg.cpp:462
+#: messagewin.cpp:673 sounddlg.cpp:462
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Stop sound"
 msgstr "अवाज बन्द करव"
 
-#: messagewin.cpp:673 sounddlg.cpp:463
+#: messagewin.cpp:674 sounddlg.cpp:463
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Stop playing the sound"
 msgstr "बजाना बंद करव"
 
-#: messagewin.cpp:685
+#: messagewin.cpp:686
 #, kde-kuit-format
 msgctxt "@info:tooltip Locate this email in KMail"
 msgid "Locate in <application>KMail</application>"
 msgstr "<application>केमेल</application> मं पता लगिस"
 
-#: messagewin.cpp:686
+#: messagewin.cpp:687
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid "Locate and highlight this email in <application>KMail</application>"
 msgstr "ये ईमेल ल <application>केमेल</application> मं पता करव अउ चमकाव"
 
-#: messagewin.cpp:694
+#: messagewin.cpp:695
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Activate <application>KAlarm</application>"
 msgstr "<application>केअलार्म</application> सक्रिय करव"
 
-#: messagewin.cpp:695
+#: messagewin.cpp:696
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid "Activate <application>KAlarm</application>"
 msgstr "<application>केअलार्म</application> सक्रिय करव"
 
-#: messagewin.cpp:861
+#: messagewin.cpp:862
 #, kde-format
 msgctxt "@info"
 msgid "Today"
 msgstr "आज"
 
-#: messagewin.cpp:863
+#: messagewin.cpp:864
 #, kde-format
 msgctxt "@info"
 msgid "Tomorrow"
@@ -3790,7 +3790,7 @@ msgid_plural "in %1 days' time"
 msgstr[0] "1 दिन में"
 msgstr[1] "%1 दिन में"
 
-#: messagewin.cpp:865
+#: messagewin.cpp:866
 #, kde-format
 msgctxt "@info"
 msgid "in 1 week's time"
@@ -3798,7 +3798,7 @@ msgid_plural "in %1 weeks' time"
 msgstr[0] "1 हफ्ता में"
 msgstr[1] "%1 हफ्ता में"
 
-#: messagewin.cpp:879
+#: messagewin.cpp:880
 #, kde-format
 msgctxt "@info"
 msgid "in 1 minute's time"
@@ -3806,7 +3806,7 @@ msgid_plural "in %1 minutes' time"
 msgstr[0] "1 मिनट में"
 msgstr[1] "%1 मिनटों में"
 
-#: messagewin.cpp:881
+#: messagewin.cpp:882
 #, kde-format
 msgctxt "@info"
 msgid "in 1 hour's time"
@@ -3814,7 +3814,7 @@ msgid_plural "in %1 hours' time"
 msgstr[0] "1 घंटे में"
 msgstr[1] "%1 घंटे में"
 
-#: messagewin.cpp:884
+#: messagewin.cpp:885
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "1 Hour"
@@ -3825,7 +3825,7 @@ msgid_plural "%1 hours"
 msgstr[0] "1 घंटा"
 msgstr[1] "%1 घंटे"
 
-#: messagewin.cpp:885
+#: messagewin.cpp:886
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "in 1 minute's time"
@@ -3836,25 +3836,25 @@ msgid_plural "in %2 %1 minutes' time"
 msgstr[0] "1 मिनट में"
 msgstr[1] "%1 मिनटों में"
 
-#: messagewin.cpp:1348
+#: messagewin.cpp:1349
 #, kde-format
 msgctxt "@info"
 msgid "Unable to speak message"
 msgstr "संदेस बोलने मं अक्छम"
 
-#: messagewin.cpp:1348
+#: messagewin.cpp:1349
 #, kde-format
 msgctxt "@info"
 msgid "Text-to-speech subsystem is not available"
 msgstr ""
 
-#: messagewin.cpp:1511
+#: messagewin.cpp:1512
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Cannot open audio file: <filename>%1</filename>"
 msgstr "फाइल : <filename>%1</filename> खोल नइ सकिस"
 
-#: messagewin.cpp:1609
+#: messagewin.cpp:1610
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid "Error attaching file: <filename>%1</filename>"
@@ -3863,31 +3863,31 @@ msgid ""
 "<para>Error playing audio file: <filename>%1</filename></para><para>%2</para>"
 msgstr "फााइल: <filename>%1</filename> ल संलग्न करे मं गलती"
 
-#: messagewin.cpp:1941
+#: messagewin.cpp:1942
 #, kde-format
 msgctxt "@info"
 msgid "Do you really want to acknowledge this alarm?"
 msgstr "का आप मन सचमुच एखर अलार्म के पावती देना चाहथो ?"
 
-#: messagewin.cpp:1942
+#: messagewin.cpp:1943
 #, kde-format
 msgctxt "@action:button"
 msgid "Acknowledge Alarm"
 msgstr "अलार्म पावती देव"
 
-#: messagewin.cpp:1942
+#: messagewin.cpp:1943
 #, kde-format
 msgctxt "@action:button"
 msgid "Acknowledge"
 msgstr "पावती देव"
 
-#: messagewin.cpp:2013
+#: messagewin.cpp:2014
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Unable to locate this email in <application>KMail</application>"
 msgstr "ये ईमेल ल <application>केमेल</application> मं पता लगाय मं अक्छम"
 
-#: messagewin.cpp:2175
+#: messagewin.cpp:2176
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<para>Cannot defer alarm:</para><para>Alarm not found.</para>"
@@ -7527,7 +7527,7 @@ msgctxt "@info"
 msgid "Create multiple alarms"
 msgstr "मल्टीपल अलार्म बनाव"
 
-#: undo.cpp:1059
+#: undo.cpp:1058
 #, fuzzy, kde-format
 #| msgctxt "@info/plain Action to edit an alarm"
 #| msgid "Edit alarm"
@@ -7535,7 +7535,7 @@ msgctxt "@info Action to edit an alarm"
 msgid "Edit alarm"
 msgstr "अलार्म के संपादन करव"
 
-#: undo.cpp:1061
+#: undo.cpp:1060
 #, fuzzy, kde-format
 #| msgctxt "@info/plain Action to edit an alarm template"
 #| msgid "Edit template"
@@ -7543,7 +7543,7 @@ msgctxt "@info Action to edit an alarm template"
 msgid "Edit template"
 msgstr "टैम्प्लेट के संपादन करव"
 
-#: undo.cpp:1269
+#: undo.cpp:1268
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Delete multiple alarms"
@@ -7551,7 +7551,7 @@ msgctxt "@info"
 msgid "Delete multiple alarms"
 msgstr "बहुत से अलार्म मेटाव"
 
-#: undo.cpp:1271
+#: undo.cpp:1270
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Delete multiple templates"
@@ -7559,7 +7559,7 @@ msgctxt "@info"
 msgid "Delete multiple templates"
 msgstr "बहुत से टैम्प्लेटों ल मेटाव"
 
-#: undo.cpp:1278
+#: undo.cpp:1277
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Delete multiple archived alarms"
@@ -7567,7 +7567,7 @@ msgctxt "@info"
 msgid "Delete multiple archived alarms"
 msgstr "बहुत से अभिलेखित अलार्म मेटाव"
 
-#: undo.cpp:1331 undo.cpp:1385
+#: undo.cpp:1330 undo.cpp:1384
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Reactivate alarm"
@@ -7575,7 +7575,7 @@ msgctxt "@info"
 msgid "Reactivate alarm"
 msgstr "अलार्म फिर से सक्रिय करव"
 
-#: undo.cpp:1418
+#: undo.cpp:1417
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Reactivate multiple alarms"
