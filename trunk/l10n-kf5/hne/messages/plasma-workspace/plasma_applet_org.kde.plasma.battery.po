@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_battery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-06-15 02:20+0200\n"
+"POT-Creation-Date: 2020-07-16 02:18+0200\n"
 "PO-Revision-Date: 2009-01-28 15:25+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -54,52 +54,65 @@ msgstr "<b>बैटरी:</b> %1% (डिस्चार्ज होवत �
 #, fuzzy, kde-format
 #| msgctxt "Shown when a time estimate is not available"
 #| msgid "<b>Battery:</b> %1% (discharging)<br />"
+msgid "Battery at %1%, plugged in but still discharging"
+msgstr "<b>बैटरी:</b> %1% (डिस्चार्ज होवत हे)<br />"
+
+#: package/contents/ui/batterymonitor.qml:66
+#, fuzzy, kde-format
+#| msgctxt "Shown when a time estimate is not available"
+#| msgid "<b>Battery:</b> %1% (discharging)<br />"
 msgid "Battery at %1%, Charging"
 msgstr "<b>बैटरी:</b> %1% (डिस्चार्ज होवत हे)<br />"
 
-#: package/contents/ui/batterymonitor.qml:67
+#: package/contents/ui/batterymonitor.qml:69
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Battery at %1%"
 msgstr "बैटरी"
 
-#: package/contents/ui/batterymonitor.qml:79
+#: package/contents/ui/batterymonitor.qml:77
+#, fuzzy, kde-format
+#| msgid "Show the percentage of &charge on the battery"
+msgid "The power supply is not powerful enough to charge the battery"
+msgstr "बैटरी मं चार्ज के प्रतिसत देखाव (&c)"
+
+#: package/contents/ui/batterymonitor.qml:87
 #, fuzzy, kde-format
 #| msgid "<b>Battery:</b> %1% (fully charged)<br />"
 msgctxt "time until fully charged - HH:MM"
 msgid "%1 until fully charged"
 msgstr "<b>बैटरी:</b> %1% (पूरा चार्ज हे)<br />"
 
-#: package/contents/ui/batterymonitor.qml:81
+#: package/contents/ui/batterymonitor.qml:89
 #, kde-format
 msgctxt "remaining time left of battery usage - HH:MM"
 msgid "%1 remaining"
 msgstr ""
 
-#: package/contents/ui/batterymonitor.qml:84
+#: package/contents/ui/batterymonitor.qml:92
 #, fuzzy, kde-format
 #| msgctxt "Shown when a time estimate is not available"
 #| msgid "<b>Battery:</b> %1% (discharging)<br />"
 msgid "Not charging"
 msgstr "<b>बैटरी:</b> %1% (डिस्चार्ज होवत हे)<br />"
 
-#: package/contents/ui/batterymonitor.qml:88
+#: package/contents/ui/batterymonitor.qml:96
 #, kde-format
 msgid "Automatic sleep and screen locking are disabled"
 msgstr ""
 
-#: package/contents/ui/batterymonitor.qml:160
+#: package/contents/ui/batterymonitor.qml:168
 #, kde-format
 msgid "&Show Energy Information..."
 msgstr ""
 
-#: package/contents/ui/batterymonitor.qml:163
+#: package/contents/ui/batterymonitor.qml:171
 #, fuzzy, kde-format
 #| msgid "More..."
 msgid "&Configure Power Saving..."
 msgstr "जादा..."
 
-#: package/contents/ui/batterymonitor.qml:252
+#: package/contents/ui/batterymonitor.qml:260
 #, kde-format
 msgid "The battery applet has enabled system-wide inhibition"
 msgstr ""
@@ -425,10 +438,6 @@ msgstr ""
 #~ msgid_plural "<b>%1 minutes</b> remaining<br />"
 #~ msgstr[0] "<b>%1 मिनट</b> बाकी बचे हे<br />"
 #~ msgstr[1] "<b>%1 मिनट</b> बाकी बचे हे<br />"
-
-#~| msgid "Show the &charge percentage on the battery"
-#~ msgid "Show the percentage of &charge on the battery"
-#~ msgstr "बैटरी मं चार्ज के प्रतिसत देखाव (&c)"
 
 #~ msgid "Percent"
 #~ msgstr "प्रतिसत"
