@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-05 02:09+0200\n"
+"POT-Creation-Date: 2020-08-06 02:11+0200\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -3351,7 +3351,7 @@ msgstr "पथ"
 
 #: core/app/views/tableview/tableview_column_file.cpp:65
 #: core/app/views/tableview/tableview_column_file.cpp:98
-#: core/dplugins/editor/enhance/hotpixels/blackframelistview.cpp:157
+#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:157
 #: core/libs/widgets/fonts/dfontproperties.cpp:332
 #, kde-format
 msgid "Size"
@@ -3827,7 +3827,8 @@ msgstr "अपने अपन एक्सपोजर"
 
 #: core/dplugins/bqm/colors/autocorrection/autocorrection.cpp:69
 #: core/dplugins/bqm/enhance/restoration/restoration.cpp:66
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:117
+#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:116
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:87
 #, kde-format
 msgid "Filter:"
 msgstr "फिल्टर:"
@@ -6544,79 +6545,65 @@ msgid ""
 "This filter can be used to clone a part in a photo to erase unwanted region."
 msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, previewGroupBox)
-#: core/dplugins/editor/enhance/hotpixels/blackframelistview.cpp:156
-#: core/dplugins/generic/tools/calendar/ui/caltemplate.ui:26
-#, kde-format
-msgid "Preview"
-msgstr "प्रिव्यू"
-
-#: core/dplugins/editor/enhance/hotpixels/blackframelistview.cpp:159
-#, kde-format
-msgctxt ""
-"This is a column which will contain the amount of HotPixels found in the "
-"black frame file"
-msgid "HP"
-msgstr "एचपी"
-
-#: core/dplugins/editor/enhance/hotpixels/hotpixelfixer.cpp:90
-#, fuzzy, kde-format
-msgid "Hot Pixels Tool"
-msgstr "हाट पिक्सल्स"
-
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:104
+#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:103
 #: core/dplugins/editor/enhance/hotpixels/hotpixelstoolplugin.cpp:52
 #, kde-format
 msgid "Hot Pixels"
 msgstr "हाट पिक्सल्स"
 
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:119
+#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:118
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:89
 #, fuzzy, kde-format
 msgctxt "average filter mode"
 msgid "Average"
 msgstr "औसत"
 
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:120
+#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:119
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:90
 #, fuzzy, kde-format
 msgctxt "linear filter mode"
 msgid "Linear"
 msgstr "लीनियर"
 
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:121
+#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:120
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:91
 #, fuzzy, kde-format
 msgctxt "quadratic filter mode"
 msgid "Quadratic"
 msgstr "द्विघात"
 
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:122
+#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:121
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:92
 #, fuzzy, kde-format
 msgctxt "cubic filter mode"
 msgid "Cubic"
 msgstr "घन"
 
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:125
+#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:124
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:95
 #, kde-format
 msgid "Black Frame..."
 msgstr "काला फ्रेम..."
 
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:127
+#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:126
+#: core/libs/dimg/filters/hotpixels/hotpixelsettings.cpp:97
 #, kde-format
 msgid ""
 "Use this button to add a new black frame file which will be used by the hot "
 "pixels removal filter."
 msgstr ""
 
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:186
+#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:185
 #, kde-format
 msgid "Loading: "
 msgstr "लोड करत हे:"
 
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:230
+#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:229
 #, kde-format
 msgid "Select Black Frame Image"
 msgstr "काला फ्रेम फोटू चुनव"
 
-#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:289
+#: core/dplugins/editor/enhance/hotpixels/hotpixelstool.cpp:288
 #, kde-format
 msgid "Hot Pixels Correction"
 msgstr "हाट पिक्सेल सुधार"
@@ -12887,6 +12874,13 @@ msgstr "चीज"
 #| msgid "Create Database Folder Failed"
 msgid "Create Template for Calendar"
 msgstr "डाटाबेस फोल्डर बनाए मं फेल"
+
+#. i18n: ectx: property (title), widget (QGroupBox, previewGroupBox)
+#: core/dplugins/generic/tools/calendar/ui/caltemplate.ui:26
+#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:156
+#, kde-format
+msgid "Preview"
+msgstr "प्रिव्यू"
 
 #. i18n: ectx: property (text), widget (QLabel, paperSizeLabel)
 #: core/dplugins/generic/tools/calendar/ui/caltemplate.ui:57
@@ -24041,7 +24035,7 @@ msgstr "इक्वलाइज"
 msgid "Auto Normalize"
 msgstr "सामान्य करव"
 
-#: core/libs/dimg/filters/bcg/bcgfilter.cpp:138
+#: core/libs/dimg/filters/bcg/bcgfilter.cpp:95
 #, fuzzy, kde-format
 msgid "Brightness / Contrast / Gamma Filter"
 msgstr "चमकीलापन/कंट्रास्ट/गामा"
@@ -25470,6 +25464,19 @@ msgstr "तीव्र एप्राक्सीमेसन"
 #, kde-format
 msgid "Enable fast approximation when rendering images."
 msgstr "फोटू प्रदर्सित करे बर तीव्र एप्राक्सीमेसन सक्छम करव."
+
+#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:159
+#, kde-format
+msgctxt ""
+"This is a column which will contain the amount of HotPixels found in the "
+"black frame file"
+msgid "HP"
+msgstr "एचपी"
+
+#: core/libs/dimg/filters/hotpixels/hotpixelfixer.cpp:90
+#, fuzzy, kde-format
+msgid "Hot Pixels Tool"
+msgstr "हाट पिक्सल्स"
 
 #: core/libs/dimg/filters/hsl/hslfilter.cpp:94
 #, fuzzy, kde-format
