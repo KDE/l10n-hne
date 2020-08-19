@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-16 02:22+0200\n"
+"POT-Creation-Date: 2020-08-19 02:26+0200\n"
 "PO-Revision-Date: 2009-02-27 21:59+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -3707,7 +3707,7 @@ msgstr ""
 msgid "&Next"
 msgstr "अगला (&N)"
 
-#: src/crypto/gui/wizard.cpp:112 src/view/smartcardwidget.cpp:69
+#: src/crypto/gui/wizard.cpp:112 src/view/smartcardwidget.cpp:72
 #, kde-format
 msgid "Back"
 msgstr "पीछू"
@@ -7631,6 +7631,7 @@ msgid "View Columns"
 msgstr ""
 
 #: src/view/netkeywidget.cpp:68 src/view/pgpcardwidget.cpp:124
+#: src/view/pivcardwidget.cpp:75
 #, fuzzy, kde-format
 #| msgid "Serial number"
 msgid "Serial number:"
@@ -7824,7 +7825,7 @@ msgctxt ""
 msgid "Pubkey URL:"
 msgstr "उपकुंजी"
 
-#: src/view/pgpcardwidget.cpp:158
+#: src/view/pgpcardwidget.cpp:158 src/view/pivcardwidget.cpp:84
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Subkeys"
@@ -8051,7 +8052,7 @@ msgctxt "@info"
 msgid "URL successfully changed."
 msgstr "गोपनीय कुंजी सफलता से निर्यात करिस."
 
-#: src/view/pgpcardwidget.cpp:450
+#: src/view/pgpcardwidget.cpp:450 src/view/pivcardwidget.cpp:135
 #, kde-format
 msgid "Slot empty"
 msgstr ""
@@ -8059,6 +8060,36 @@ msgstr ""
 #: src/view/pgpcardwidget.cpp:460
 #, kde-format
 msgid "Public key not found."
+msgstr ""
+
+#: src/view/pivcardwidget.cpp:86
+#, fuzzy, kde-format
+#| msgid "Authentication"
+msgid "PIV authentication:"
+msgstr "प्रमानीकरन"
+
+#: src/view/pivcardwidget.cpp:90
+#, fuzzy, kde-format
+#| msgid "Authentication"
+msgid "Card authentication:"
+msgstr "प्रमानीकरन"
+
+#: src/view/pivcardwidget.cpp:94
+#, fuzzy, kde-format
+#| msgid "New signatures:"
+msgid "Digital signature:"
+msgstr "नवा दसखत:"
+
+#: src/view/pivcardwidget.cpp:98
+#, fuzzy, kde-format
+#| msgid "KDE Key Manager"
+msgid "Key management:"
+msgstr "केडीई कुंजी प्रबंधक"
+
+#: src/view/pivcardwidget.cpp:111
+#, kde-format
+msgctxt "Placeholder is a version number"
+msgid "PIV v%1 card"
 msgstr ""
 
 #: src/view/searchbar.cpp:108
@@ -8081,23 +8112,23 @@ msgstr ""
 msgid "Search...<%1>"
 msgstr "खोजव"
 
-#: src/view/smartcardwidget.cpp:45
+#: src/view/smartcardwidget.cpp:48
 #, fuzzy, kde-format
 #| msgid "Selected secret certificate:"
 msgid "Please insert a compatible smartcard."
 msgstr "गुप्त प्रमानपत्र चुनव:"
 
-#: src/view/smartcardwidget.cpp:48
+#: src/view/smartcardwidget.cpp:51
 #, kde-format
 msgid "Kleopatra currently supports the following card types:"
 msgstr ""
 
-#: src/view/smartcardwidget.cpp:52
+#: src/view/smartcardwidget.cpp:55
 #, kde-format
 msgid "Refresh the view (F5) to update the smartcard status."
 msgstr ""
 
-#: src/view/smartcardwidget.cpp:72
+#: src/view/smartcardwidget.cpp:75
 #, kde-format
 msgid "Smartcard Management"
 msgstr ""
@@ -9191,11 +9222,6 @@ msgstr ""
 
 #, fuzzy
 #~| msgid "New signatures:"
-#~ msgid "Local signature"
-#~ msgstr "नवा दसखत:"
-
-#, fuzzy
-#~| msgid "New signatures:"
 #~ msgid "Exportable signature"
 #~ msgstr "नवा दसखत:"
 
@@ -9220,9 +9246,6 @@ msgstr ""
 #~| msgid "Not imported:"
 #~ msgid "Not yet implemented"
 #~ msgstr "आयातित नइ:"
-
-#~ msgid "KDE Key Manager"
-#~ msgstr "केडीई कुंजी प्रबंधक"
 
 #~ msgid "Decentralized Key Generation"
 #~ msgstr "डी-सेंट्रलाइज कुंजी जेनरेसन"
