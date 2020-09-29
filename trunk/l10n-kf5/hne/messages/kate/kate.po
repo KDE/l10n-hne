@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-09-28 02:35+0200\n"
+"POT-Creation-Date: 2020-09-29 02:30+0200\n"
 "PO-Revision-Date: 2009-03-01 09:45+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -95,42 +95,33 @@ msgstr "फाइल '%1'  खोले नइ जा सके: ए साम�
 msgid "&Color Scheme"
 msgstr ""
 
-#: kateconfigdialog.cpp:47
+#: kateconfigdialog.cpp:43
 #, kde-format
 msgid "Configure"
 msgstr "कान्फिगर"
 
-#: kateconfigdialog.cpp:56
+#: kateconfigdialog.cpp:75 katemdi.cpp:533
 #, kde-format
-msgid "Application"
-msgstr "अनुपरयोग"
+msgid "Behavior"
+msgstr "बर्ताव"
 
-#: kateconfigdialog.cpp:58
-#, kde-format
-msgid "Application Options"
-msgstr "अनुपरयोग विकल्प"
+#: kateconfigdialog.cpp:76
+#, fuzzy, kde-format
+#| msgid "Behavior"
+msgid "Behavior Options"
+msgstr "बर्ताव"
 
-#: kateconfigdialog.cpp:65
-#, kde-format
-msgid "General"
-msgstr "सामान्य"
-
-#: kateconfigdialog.cpp:66
-#, kde-format
-msgid "General Options"
-msgstr "सामान्य विकल्प"
-
-#: kateconfigdialog.cpp:74
+#: kateconfigdialog.cpp:83
 #, kde-format
 msgid "&Behavior"
 msgstr "व्यवहार (&B)"
 
-#: kateconfigdialog.cpp:79
+#: kateconfigdialog.cpp:88
 #, kde-format
 msgid "Wa&rn about files modified by foreign processes"
 msgstr "विदेसी काम मन से परिवर्धित फाइल मन परिचय चेतावनी दे (&r)"
 
-#: kateconfigdialog.cpp:82
+#: kateconfigdialog.cpp:91
 #, kde-format
 msgid ""
 "If enabled, when Kate receives focus you will be asked what to do with files "
@@ -139,49 +130,80 @@ msgid ""
 "that file is tried to be saved."
 msgstr ""
 
-#: kateconfigdialog.cpp:91
+#: kateconfigdialog.cpp:102 katemainwindow.cpp:256
 #, kde-format
-msgid "Close Kate entirely when the last file is closed"
+msgid "&Quick Open"
+msgstr "जल्दी खोलव (&Q)"
+
+#: kateconfigdialog.cpp:107
+#, fuzzy, kde-format
+#| msgid "&View"
+msgid "&Match Mode:"
+msgstr "देखव (&V)"
+
+#: kateconfigdialog.cpp:112 katemwmodonhddialog.cpp:89
+#, kde-format
+msgid "Filename"
+msgstr "फाइलनाम"
+
+#: kateconfigdialog.cpp:113
+#, fuzzy, kde-format
+#| msgid "Filename"
+msgid "Filepath"
+msgstr "फाइलनाम"
+
+#: kateconfigdialog.cpp:120
+#, fuzzy, kde-format
+#| msgid "&View"
+msgid "&List Mode:"
+msgstr "देखव (&V)"
+
+#: kateconfigdialog.cpp:125
+#, kde-format
+msgid "Current Project Files"
 msgstr ""
 
-#: kateconfigdialog.cpp:94
+#: kateconfigdialog.cpp:126
+#, fuzzy, kde-format
+#| msgid "Projects"
+msgid "All Projects Files"
+msgstr "परियोजना"
+
+#: kateconfigdialog.cpp:134
+#, fuzzy, kde-format
+#| msgid "Show Side&bars"
+msgid "&Tabs"
+msgstr "बाजू पट्टी मन देखाव (&b)"
+
+#: kateconfigdialog.cpp:138
 #, kde-format
-msgid ""
-"If enabled, Kate will shutdown when the last file being edited is closed, "
-"otherwise a blank page will open so that you can start a new file."
+msgid "&Limit number of tabs:"
 msgstr ""
 
-#: kateconfigdialog.cpp:102
+#: kateconfigdialog.cpp:144
 #, kde-format
-msgid "Meta-Information"
-msgstr "मेटा-जानकारी"
-
-#: kateconfigdialog.cpp:108
-#, kde-format
-msgid "Keep &meta-information past sessions"
-msgstr "पिछले सत्र के मेटा जानकारी रखे रहव (&m)"
-
-#: kateconfigdialog.cpp:111
-#, kde-format
-msgid ""
-"Check this if you want document configuration like for example bookmarks to "
-"be saved past editor sessions. The configuration will be restored if the "
-"document has not changed when reopened."
+msgid "Unlimited"
 msgstr ""
 
-#: kateconfigdialog.cpp:123
-#, kde-format
-msgid "&Delete unused meta-information after:"
-msgstr "एखर बाद अनुपयोगी मेटा जानकारी मिटा देव (&D)"
+#: kateconfigdialog.cpp:159
+#, fuzzy, kde-format
+#| msgid "Sessions"
+msgid "Session"
+msgstr "सत्र"
 
-#: kateconfigdialog.cpp:127
+#: kateconfigdialog.cpp:160
+#, kde-format
+msgid "Session Management"
+msgstr "सत्र प्रबंधन"
+
+#: kateconfigdialog.cpp:171
 #, fuzzy, kde-format
 #| msgid "(never)"
 msgctxt "The special case of 'Delete unused meta-information after'"
 msgid "(never)"
 msgstr "(कभू नइ)"
 
-#: kateconfigdialog.cpp:128
+#: kateconfigdialog.cpp:172
 #, fuzzy, kde-format
 msgctxt "The suffix of 'Delete unused meta-information after'"
 msgid " day"
@@ -189,98 +211,22 @@ msgid_plural " days"
 msgstr[0] "दिन"
 msgstr[1] "दिन"
 
-#: kateconfigdialog.cpp:139 katemainwindow.cpp:256
-#, kde-format
-msgid "&Quick Open"
-msgstr "जल्दी खोलव (&Q)"
-
-#: kateconfigdialog.cpp:144
-#, fuzzy, kde-format
-#| msgid "&View"
-msgid "&Match Mode:"
-msgstr "देखव (&V)"
-
-#: kateconfigdialog.cpp:149 katemwmodonhddialog.cpp:89
-#, kde-format
-msgid "Filename"
-msgstr "फाइलनाम"
-
-#: kateconfigdialog.cpp:150
-#, fuzzy, kde-format
-#| msgid "Filename"
-msgid "Filepath"
-msgstr "फाइलनाम"
-
-#: kateconfigdialog.cpp:157
-#, fuzzy, kde-format
-#| msgid "&View"
-msgid "&List Mode:"
-msgstr "देखव (&V)"
-
-#: kateconfigdialog.cpp:162
-#, kde-format
-msgid "Current Project Files"
-msgstr ""
-
-#: kateconfigdialog.cpp:163
-#, fuzzy, kde-format
-#| msgid "Projects"
-msgid "All Projects Files"
-msgstr "परियोजना"
-
-#: kateconfigdialog.cpp:171
-#, fuzzy, kde-format
-#| msgid "Show Side&bars"
-msgid "&Tabs"
-msgstr "बाजू पट्टी मन देखाव (&b)"
-
-#: kateconfigdialog.cpp:175
-#, kde-format
-msgid "&Limit number of tabs:"
-msgstr ""
-
-#: kateconfigdialog.cpp:181
-#, kde-format
-msgid "Unlimited"
-msgstr ""
-
-#: kateconfigdialog.cpp:192
-#, fuzzy, kde-format
-#| msgid "Sessions"
-msgid "Session"
-msgstr "सत्र"
-
-#: kateconfigdialog.cpp:193
-#, kde-format
-msgid "Session Management"
-msgstr "सत्र प्रबंधन"
-
-#: kateconfigdialog.cpp:229
+#: kateconfigdialog.cpp:211
 #, kde-format
 msgid "Plugins"
 msgstr "प्लगइन्स"
 
-#: kateconfigdialog.cpp:230
+#: kateconfigdialog.cpp:212
 #, kde-format
 msgid "Plugin Manager"
 msgstr "प्लगइन प्रबंधक"
 
-#: kateconfigdialog.cpp:253 kateconfigdialog.cpp:254
+#: kateconfigdialog.cpp:230 kateconfigdialog.cpp:231
 #, kde-format
 msgid "User Feedback"
 msgstr ""
 
-#: kateconfigdialog.cpp:259
-#, kde-format
-msgid "Editor Component"
-msgstr "संपादक अवयव"
-
-#: kateconfigdialog.cpp:261
-#, kde-format
-msgid "Editor Component Options"
-msgstr "संपादक अवयव विकल्प"
-
-#: kateconfigdialog.cpp:481
+#: kateconfigdialog.cpp:444
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The document '%1' has been modified, but not saved.</p><p>Do you want "
@@ -291,7 +237,7 @@ msgstr ""
 "<p>कागद '%1' सुधार दे गे हे, मं सहेजे नइ गे हे.</p><p>का आप मन एला रखना चाहथो या अपन "
 "बदलाव मन ल फेंकना चाहथो ?</p>"
 
-#: kateconfigdialog.cpp:481
+#: kateconfigdialog.cpp:444
 #, kde-format
 msgid "Warning"
 msgstr ""
@@ -771,11 +717,6 @@ msgstr "%1 देखाव"
 #| msgid "Configure Paths..."
 msgid "Configure ..."
 msgstr "रस्ता कान्फिगर करव..."
-
-#: katemdi.cpp:533
-#, kde-format
-msgid "Behavior"
-msgstr "बर्ताव"
 
 #: katemdi.cpp:535
 #, kde-format
@@ -1745,15 +1686,62 @@ msgstr "सत्र बर नवा नाम निरधारित कर�
 msgid "Specify a new name for session: %1"
 msgstr "सत्र बर नवा नाम निरधारित करव"
 
+#. i18n: ectx: property (title), widget (QGroupBox, gbAppStartup)
+#: ui/sessionconfigwidget.ui:17
+#, fuzzy, kde-format
+#| msgid "Application Options"
+msgid "Application Startup Behavior"
+msgstr "अनुपरयोग विकल्प"
+
+#. i18n: ectx: property (text), widget (QRadioButton, startNewSessionRadioButton)
+#: ui/sessionconfigwidget.ui:23
+#, kde-format
+msgid "&Start new session"
+msgstr "नवा सत्र चालू करव (&S)"
+
+#. i18n: ectx: property (text), widget (QRadioButton, loadLastUserSessionRadioButton)
+#: ui/sessionconfigwidget.ui:30
+#, fuzzy, kde-format
+#| msgid "&Load last-used session"
+msgid "&Load last used session"
+msgstr "पिछला बार परयोग करे सत्र ल लोड करव (&L)"
+
+#. i18n: ectx: property (text), widget (QRadioButton, manuallyChooseSessionRadioButton)
+#: ui/sessionconfigwidget.ui:37
+#, kde-format
+msgid "&Manually choose a session"
+msgstr "सत्र ल हस्तचालित चुनव (&M)"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ui/sessionconfigwidget.ui:47
+#, fuzzy, kde-format
+#| msgid "Application Options"
+msgid "Application Shutdown Behavior"
+msgstr "अनुपरयोग विकल्प"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, modCloseAfterLast)
+#: ui/sessionconfigwidget.ui:53
+#, kde-format
+msgid ""
+"If enabled, Kate will shutdown when the last file being edited is closed, "
+"otherwise a blank page will open so that you can start a new file."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, modCloseAfterLast)
+#: ui/sessionconfigwidget.ui:56
+#, kde-format
+msgid "Close Kate entirely when the last file is closed"
+msgstr ""
+
 #. i18n: ectx: property (title), widget (QGroupBox, gbElements)
-#: ui/sessionconfigwidget.ui:29
+#: ui/sessionconfigwidget.ui:66
 #, fuzzy, kde-format
 #| msgid "Session Management"
 msgid "Session Elements"
 msgstr "सत्र प्रबंधन"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ui/sessionconfigwidget.ui:35
+#: ui/sessionconfigwidget.ui:72
 #, kde-format
 msgid ""
 "The session contains the list of open documents, recently opened files list, "
@@ -1762,13 +1750,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: ui/sessionconfigwidget.ui:47
+#: ui/sessionconfigwidget.ui:84
 #, kde-format
 msgid "Maximum number of entries in recent file list:"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, restoreVC)
-#: ui/sessionconfigwidget.ui:75
+#: ui/sessionconfigwidget.ui:112
 #, fuzzy, kde-format
 #| msgid ""
 #| "Check this if you want all your views and frames restored each time you "
@@ -1781,36 +1769,54 @@ msgstr ""
 "बहाल हों"
 
 #. i18n: ectx: property (text), widget (QCheckBox, restoreVC)
-#: ui/sessionconfigwidget.ui:78
+#: ui/sessionconfigwidget.ui:115
 #, kde-format
 msgid "Include &window configuration"
 msgstr "विडो कान्फिगरेसन सामिल करव (&w)"
 
-#. i18n: ectx: property (title), widget (QGroupBox, gbAppStartup)
-#: ui/sessionconfigwidget.ui:88
-#, fuzzy, kde-format
-#| msgid "Behavior on Application Startup"
-msgid "Behaviour on Application Startup"
-msgstr "अनुपरयोग स्टार्टअप के व्यवहार"
-
-#. i18n: ectx: property (text), widget (QRadioButton, startNewSessionRadioButton)
-#: ui/sessionconfigwidget.ui:94
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, saveMetaInfos)
+#: ui/sessionconfigwidget.ui:125
 #, kde-format
-msgid "&Start new session"
-msgstr "नवा सत्र चालू करव (&S)"
+msgid ""
+"Check this if you want document configuration like for example bookmarks to "
+"be saved past editor sessions. The configuration will be restored if the "
+"document has not changed when reopened."
+msgstr ""
 
-#. i18n: ectx: property (text), widget (QRadioButton, loadLastUserSessionRadioButton)
-#: ui/sessionconfigwidget.ui:101
-#, fuzzy, kde-format
-#| msgid "&Load last-used session"
-msgid "&Load last used session"
-msgstr "पिछला बार परयोग करे सत्र ल लोड करव (&L)"
-
-#. i18n: ectx: property (text), widget (QRadioButton, manuallyChooseSessionRadioButton)
-#: ui/sessionconfigwidget.ui:108
+#. i18n: ectx: property (title), widget (QGroupBox, saveMetaInfos)
+#: ui/sessionconfigwidget.ui:128
 #, kde-format
-msgid "&Manually choose a session"
-msgstr "सत्र ल हस्तचालित चुनव (&M)"
+msgid "Keep &meta-information past sessions"
+msgstr "पिछले सत्र के मेटा जानकारी रखे रहव (&m)"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: ui/sessionconfigwidget.ui:139
+#, kde-format
+msgid "&Delete unused meta-information after:"
+msgstr "एखर बाद अनुपयोगी मेटा जानकारी मिटा देव (&D)"
+
+#~ msgid "Application"
+#~ msgstr "अनुपरयोग"
+
+#~ msgid "General"
+#~ msgstr "सामान्य"
+
+#~ msgid "General Options"
+#~ msgstr "सामान्य विकल्प"
+
+#~ msgid "Meta-Information"
+#~ msgstr "मेटा-जानकारी"
+
+#~ msgid "Editor Component"
+#~ msgstr "संपादक अवयव"
+
+#~ msgid "Editor Component Options"
+#~ msgstr "संपादक अवयव विकल्प"
+
+#, fuzzy
+#~| msgid "Behavior on Application Startup"
+#~ msgid "Behaviour on Application Startup"
+#~ msgstr "अनुपरयोग स्टार्टअप के व्यवहार"
 
 #~ msgid "&Help"
 #~ msgstr "मदद (&H)"
