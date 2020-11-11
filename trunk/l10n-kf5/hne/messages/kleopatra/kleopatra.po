@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-11-10 02:28+0100\n"
+"POT-Creation-Date: 2020-11-11 02:50+0100\n"
 "PO-Revision-Date: 2009-02-27 21:59+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1932,18 +1932,6 @@ msgstr "प्रमानपत्र सफलता से बनाय ग�
 
 #: src/commands/revokecertificationcommand.cpp:126
 #, fuzzy, kde-format
-#| msgid "Certificate created successfully."
-msgid "Revocation successful."
-msgstr "प्रमानपत्र सफलता से बनाय गिस"
-
-#: src/commands/revokecertificationcommand.cpp:127
-#, fuzzy, kde-format
-#| msgid "Certification canceled."
-msgid "Revocation Succeeded"
-msgstr "प्रमानपत्र खारिज"
-
-#: src/commands/revokecertificationcommand.cpp:129
-#, fuzzy, kde-format
 #| msgid ""
 #| "<qt><p>An error occurred while trying to export the secret key:</p><p><b>"
 #| "%1</b></p></qt>"
@@ -1954,11 +1942,23 @@ msgstr ""
 "<qt><p>गोपनीय कुंजी:</p><p><b>%1</b></p> ल निर्यात करे के कोसिसों के समय एक गलती "
 "होइस</qt>"
 
-#: src/commands/revokecertificationcommand.cpp:133
+#: src/commands/revokecertificationcommand.cpp:130
 #, fuzzy, kde-format
 #| msgid "Certification"
 msgid "Revocation Error"
 msgstr "प्रमानपत्र"
+
+#: src/commands/revokecertificationcommand.cpp:132
+#, fuzzy, kde-format
+#| msgid "Certificate created successfully."
+msgid "Revocation successful."
+msgstr "प्रमानपत्र सफलता से बनाय गिस"
+
+#: src/commands/revokecertificationcommand.cpp:133
+#, fuzzy, kde-format
+#| msgid "Certification canceled."
+msgid "Revocation Succeeded"
+msgstr "प्रमानपत्र खारिज"
 
 #: src/commands/setinitialpincommand.cpp:54
 #, fuzzy, kde-format
@@ -4365,14 +4365,15 @@ msgid "Revoke this User ID"
 msgstr ""
 
 #: src/dialogs/certificatedetailswidget.cpp:339
-#: src/dialogs/weboftrustwidget.cpp:94 src/view/keylistcontroller.cpp:416
+#: src/dialogs/weboftrustwidget.cpp:99 src/view/keylistcontroller.cpp:416
 #, fuzzy, kde-format
 #| msgid "Certify..."
 msgid "Certify..."
 msgstr "प्रमानित..."
 
 #: src/dialogs/certificatedetailswidget.cpp:353
-#: src/dialogs/weboftrustwidget.cpp:109 src/view/keylistcontroller.cpp:420
+#: src/dialogs/weboftrustwidget.cpp:114 src/dialogs/weboftrustwidget.cpp:141
+#: src/view/keylistcontroller.cpp:420
 #, fuzzy, kde-format
 #| msgid "New Certificate..."
 msgid "Revoke Certification..."
@@ -5548,7 +5549,42 @@ msgctxt "@title:window"
 msgid "Certifications"
 msgstr "प्रमानपत्र"
 
-#: src/dialogs/weboftrustwidget.cpp:213
+#: src/dialogs/weboftrustwidget.cpp:133
+#, fuzzy, kde-format
+#| msgid "Show certificate details"
+msgid "Show Certificate Details..."
+msgstr "प्रमानपत्र विवरन देखाव"
+
+#: src/dialogs/weboftrustwidget.cpp:158
+#, kde-format
+msgid "Revokation of self-certifications is currently not possible."
+msgstr ""
+
+#: src/dialogs/weboftrustwidget.cpp:160
+#, kde-format
+msgid ""
+"You cannot revoke this certification because it wasn't made with one of your "
+"keys (or the required secret key is missing)."
+msgstr ""
+
+#: src/dialogs/weboftrustwidget.cpp:162
+#, kde-format
+msgid ""
+"You cannot revoke this revokation certification. (But you can re-certify the "
+"corresponding user ID.)"
+msgstr ""
+
+#: src/dialogs/weboftrustwidget.cpp:164
+#, kde-format
+msgid "You cannot revoke this expired certification."
+msgstr ""
+
+#: src/dialogs/weboftrustwidget.cpp:166
+#, kde-format
+msgid "You cannot revoke this invalid certification."
+msgstr ""
+
+#: src/dialogs/weboftrustwidget.cpp:265
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "<qt><p>An error occurred while trying to export the certificate:</p><p><b>"
@@ -5561,7 +5597,7 @@ msgstr ""
 "<qt><p>प्रमानपत्र:</p><p><b>%1</b></p> निर्यात करे के कोसिसों के समय एक गलती हो "
 "गिस</qt>"
 
-#: src/dialogs/weboftrustwidget.cpp:216
+#: src/dialogs/weboftrustwidget.cpp:268
 #, kde-format
 msgctxt "@title"
 msgid "Certifications Loading Failed"
