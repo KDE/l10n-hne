@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-01-11 02:49+0100\n"
+"POT-Creation-Date: 2021-01-12 02:50+0100\n"
 "PO-Revision-Date: 2009-02-28 13:57+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1461,40 +1461,40 @@ msgstr ""
 msgid "Akonadi Agents"
 msgstr ""
 
-#: configuredialog/configuresecuritypage.cpp:43
+#: configuredialog/configuresecuritypage.cpp:45
 #, kde-format
 msgid "Reading"
 msgstr "पढ़त हे"
 
-#: configuredialog/configuresecuritypage.cpp:45
+#: configuredialog/configuresecuritypage.cpp:47
 #, kde-format
 msgid "Message Disposition Notifications"
 msgstr "संदेस डिस्पोजीसन सूचना मन ल"
 
-#: configuredialog/configuresecuritypage.cpp:51
+#: configuredialog/configuresecuritypage.cpp:53
 #, kde-format
 msgid "Composing"
 msgstr "लिखत हे"
 
-#: configuredialog/configuresecuritypage.cpp:57
+#: configuredialog/configuresecuritypage.cpp:59
 #, fuzzy, kde-format
 #| msgctxt "Miscellaneous template commands menu"
 #| msgid "Miscellaneous"
 msgid "Miscellaneous"
 msgstr "विविध"
 
-#: configuredialog/configuresecuritypage.cpp:63
+#: configuredialog/configuresecuritypage.cpp:65
 #, kde-format
 msgid "S/MIME Validation"
 msgstr "एस/माइम वेलिडेसन"
 
-#: configuredialog/configuresecuritypage.cpp:89
+#: configuredialog/configuresecuritypage.cpp:92
 #, fuzzy, kde-format
 #| msgid "Email Address"
 msgid "Email Address:"
 msgstr "ई-मेल पता"
 
-#: configuredialog/configuresecuritypage.cpp:90
+#: configuredialog/configuresecuritypage.cpp:93
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Do you really want to execute <filename>%1</filename>?"
@@ -1503,7 +1503,7 @@ msgstr ""
 "का आप मन सचमुच मं चलाना चाहथो एला-\n"
 " <filename>%1</filename>?"
 
-#: configuredialog/configuresecuritypage.cpp:118
+#: configuredialog/configuresecuritypage.cpp:128
 #, fuzzy, kde-format
 #| msgid ""
 #| "Changing the global threading setting will override all folder specific "
@@ -1512,42 +1512,42 @@ msgid ""
 "Changing the global HTML setting will override all folder specific values."
 msgstr "वैस्विक थ्रेडिंग सेटिंग ल बदले से ए सब्बो विसिस्ट फोल्डर के मूल्य मन ल बदल देही."
 
-#: configuredialog/configuresecuritypage.cpp:319
-#: configuredialog/configuresecuritypage.cpp:322
-#: configuredialog/configuresecuritypage.cpp:324
-#: configuredialog/configuresecuritypage.cpp:326
 #: configuredialog/configuresecuritypage.cpp:329
-#: configuredialog/configuresecuritypage.cpp:331
+#: configuredialog/configuresecuritypage.cpp:332
+#: configuredialog/configuresecuritypage.cpp:334
+#: configuredialog/configuresecuritypage.cpp:336
+#: configuredialog/configuresecuritypage.cpp:339
+#: configuredialog/configuresecuritypage.cpp:341
 #, kde-format
 msgid " day"
 msgid_plural " days"
 msgstr[0] " दिन"
 msgstr[1] " दिनों"
 
-#: configuredialog/configuresecuritypage.cpp:363
+#: configuredialog/configuresecuritypage.cpp:373
 #, kde-format
 msgid ""
 "The module is missing. Please verify your installation. This module is "
 "provided by Kleopatra."
 msgstr ""
 
-#: configuredialog/configuresecuritypage.cpp:368
+#: configuredialog/configuresecuritypage.cpp:378
 #, kde-format
 msgid "GnuPG Configure Module Error"
 msgstr ""
 
-#: configuredialog/configuresecuritypage.cpp:438
+#: configuredialog/configuresecuritypage.cpp:448
 #, kde-format
 msgid "This option requires dirmngr >= 0.9.0"
 msgstr "ये विकल्प ल जरूरी हे dirmngr >= 0.9.0"
 
 #. i18n: ectx: property (text), widget (QLabel, systemHTTPProxy)
-#: configuredialog/configuresecuritypage.cpp:550 ui/smimeconfiguration.ui:186
+#: configuredialog/configuresecuritypage.cpp:560 ui/smimeconfiguration.ui:186
 #, kde-format
 msgid "no proxy"
 msgstr "प्राक्सी नइ"
 
-#: configuredialog/configuresecuritypage.cpp:552
+#: configuredialog/configuresecuritypage.cpp:562
 #, kde-format
 msgid "(Current system setting: %1)"
 msgstr "(अभी हाल के तंत्र सेटिंग: %1)"
@@ -6519,8 +6519,36 @@ msgstr "संदेस खोलव (&M)"
 msgid "HTML Messages"
 msgstr "एचटीएमएल संदेस"
 
-#. i18n: ectx: property (text), widget (QLabel, labelWarnHTML)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mExternalReferences)
+#: ui/securitypagegeneraltab.ui:29
+#, kde-format
+msgid ""
+"<qt><p>Some mail advertisements are in HTML and contain references to, for "
+"example, images that the advertisers employ to find out that you have read "
+"their message (\"web bugs\").</p><p>There is no valid reason to load images "
+"off the Internet like this, since the sender can always attach the required "
+"images directly to the message.</p><p>To guard from such a misuse of the "
+"HTML displaying feature of KMail, this option is <em>disabled</em> by "
+"default.</p><p>However, if you wish to, for example, view images in HTML "
+"messages that were not attached to it, you can enable this option, but you "
+"should be aware of the possible problem.</p></qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, mExternalReferences)
 #: ui/securitypagegeneraltab.ui:32
+#, kde-format
+msgid "Allow messages to load external references from the Internet"
+msgstr "संदेस मन मं इंटरनेट से बाहिरी उल्लेखों ल लोड होना स्वीकारव"
+
+#. i18n: ectx: property (text), widget (QPushButton, mConfigureExternalReference)
+#: ui/securitypagegeneraltab.ui:52
+#, fuzzy, kde-format
+#| msgid "&Options"
+msgid "Exceptions"
+msgstr "विकल्प (&O)"
+
+#. i18n: ectx: property (text), widget (QLabel, labelWarnHTML)
+#: ui/securitypagegeneraltab.ui:62
 #, kde-format
 msgid ""
 "<b>WARNING:</b> Allowing HTML in email may increase the risk that your "
@@ -6530,7 +6558,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mHtmlMailCheck)
-#: ui/securitypagegeneraltab.ui:45
+#: ui/securitypagegeneraltab.ui:75
 #, kde-format
 msgid ""
 "<qt><p>Messages sometimes come in both formats. This option controls whether "
@@ -6548,41 +6576,20 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mHtmlMailCheck)
-#: ui/securitypagegeneraltab.ui:48
+#: ui/securitypagegeneraltab.ui:78
 #, kde-format
 msgid "Prefer HTML to plain text"
 msgstr "एचटीएमएल के बदला मा सादा पाठ ल प्राथमिकता देव"
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, mExternalReferences)
-#: ui/securitypagegeneraltab.ui:55
-#, kde-format
-msgid ""
-"<qt><p>Some mail advertisements are in HTML and contain references to, for "
-"example, images that the advertisers employ to find out that you have read "
-"their message (\"web bugs\").</p><p>There is no valid reason to load images "
-"off the Internet like this, since the sender can always attach the required "
-"images directly to the message.</p><p>To guard from such a misuse of the "
-"HTML displaying feature of KMail, this option is <em>disabled</em> by "
-"default.</p><p>However, if you wish to, for example, view images in HTML "
-"messages that were not attached to it, you can enable this option, but you "
-"should be aware of the possible problem.</p></qt>"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, mExternalReferences)
-#: ui/securitypagegeneraltab.ui:58
-#, kde-format
-msgid "Allow messages to load external references from the Internet"
-msgstr "संदेस मन मं इंटरनेट से बाहिरी उल्लेखों ल लोड होना स्वीकारव"
-
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: ui/securitypagegeneraltab.ui:74
+#: ui/securitypagegeneraltab.ui:94
 #, fuzzy, kde-format
 #| msgid "E-mail address:"
 msgid "E-mails Scams"
 msgstr "ई-मेल पता:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ui/securitypagegeneraltab.ui:80
+#: ui/securitypagegeneraltab.ui:100
 #, kde-format
 msgid ""
 "KMail can analyze messages for suspected email scams by looking for common "
@@ -6590,58 +6597,58 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mScamDetection)
-#: ui/securitypagegeneraltab.ui:90
+#: ui/securitypagegeneraltab.ui:110
 #, kde-format
 msgid "Informs if message reading is a suspected email scam"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: ui/securitypagegeneraltab.ui:97
+#: ui/securitypagegeneraltab.ui:117
 #, kde-format
 msgid "Whitelist:"
 msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: ui/securitypagegeneraltab.ui:116
-#, kde-format
-msgid "Encrypted Messages"
-msgstr "एनक्रिप्टेड संदेस"
-
-#. i18n: ectx: property (text), widget (QCheckBox, mAlwaysDecrypt)
-#: ui/securitypagegeneraltab.ui:122
-#, kde-format
-msgid "Attempt decryption of encrypted messages when viewing"
-msgstr ""
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: ui/securitypagegeneraltab.ui:138
-#, kde-format
-msgid "Certificate && Key Bundle Attachments"
-msgstr "प्रमानपत्र अउ कुंजी बंडल संलग्नक"
-
-#. i18n: ectx: property (text), widget (QCheckBox, mAutomaticallyImportAttachedKeysCheck)
-#: ui/securitypagegeneraltab.ui:144
-#, fuzzy, kde-format
-msgid "Automatically import keys and certificate"
-msgstr "कुंजियाँ अउ प्रमानपत्र अपने अपन आयात करव"
-
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_5)
-#: ui/securitypagegeneraltab.ui:154
+#: ui/securitypagegeneraltab.ui:130
 #, kde-format
 msgid "Safe Browsing"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mCheckUrl)
-#: ui/securitypagegeneraltab.ui:160
+#: ui/securitypagegeneraltab.ui:136
 #, kde-format
 msgid "Check URL With Phishing Google System"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mCheckMailUrlTracking)
-#: ui/securitypagegeneraltab.ui:167
+#: ui/securitypagegeneraltab.ui:143
 #, kde-format
 msgid "Scan emails for tracking URLs"
 msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: ui/securitypagegeneraltab.ui:159
+#, kde-format
+msgid "Encrypted Messages"
+msgstr "एनक्रिप्टेड संदेस"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mAlwaysDecrypt)
+#: ui/securitypagegeneraltab.ui:165
+#, kde-format
+msgid "Attempt decryption of encrypted messages when viewing"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: ui/securitypagegeneraltab.ui:181
+#, kde-format
+msgid "Certificate && Key Bundle Attachments"
+msgstr "प्रमानपत्र अउ कुंजी बंडल संलग्नक"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mAutomaticallyImportAttachedKeysCheck)
+#: ui/securitypagegeneraltab.ui:187
+#, fuzzy, kde-format
+msgid "Automatically import keys and certificate"
+msgstr "कुंजियाँ अउ प्रमानपत्र अपने अपन आयात करव"
 
 #. i18n: ectx: property (text), widget (QLabel, labelSend)
 #: ui/securitypagemdntab.ui:20
@@ -10870,11 +10877,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&Automatic invitation sending"
 #~ msgstr "अपने अपन निमंत्रन भेजना"
-
-#, fuzzy
-#~| msgid "&Options"
-#~ msgid "Options"
-#~ msgstr "विकल्प (&O)"
 
 #~ msgid "Mangle From:/To: headers in replies to replies"
 #~ msgstr "जवाब के जवाब मं द्वारा:/को: हेडर बिगड़े"
