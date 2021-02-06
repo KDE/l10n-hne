@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-02-03 02:46+0100\n"
+"POT-Creation-Date: 2021-02-06 02:22+0100\n"
 "PO-Revision-Date: 2009-02-10 20:44+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -506,7 +506,7 @@ msgstr "%1 ल इनस्टाल  नइ कर सकिस"
 msgid "Get Hot New Stuff!"
 msgstr "नवा ताजा माल प्राप्त करव!"
 
-#: downloadwidget.cpp:263 qtquick/qml/Page.qml:199
+#: downloadwidget.cpp:263
 #, kde-format
 msgid "Icons view mode"
 msgstr ""
@@ -539,7 +539,7 @@ msgstr "प्रदाता: %1"
 
 #. i18n: ectx: property (text), widget (QLabel, m_categoryLabel)
 #. i18n: ectx: property (text), widget (QLabel, mCategoryLabel)
-#: downloadwidget.ui:71 uploaddialog.ui:304
+#: downloadwidget.ui:71 qtquick/qml/Page.qml:347 uploaddialog.ui:304
 #, fuzzy, kde-format
 #| msgid "Character:"
 msgid "Category:"
@@ -561,14 +561,14 @@ msgid "Newest"
 msgstr "नवा"
 
 #. i18n: ectx: property (text), widget (QRadioButton, ratingRadio)
-#: downloadwidget.ui:110
+#: downloadwidget.ui:110 qtquick/qml/Page.qml:274
 #, fuzzy, kde-format
 #| msgid "Rating: "
 msgid "Rating"
 msgstr "रेटिंग:"
 
 #. i18n: ectx: property (text), widget (QRadioButton, installedRadio)
-#: downloadwidget.ui:117
+#: downloadwidget.ui:117 qtquick/qml/Page.qml:223
 #, fuzzy, kde-format
 #| msgid "Install"
 msgid "Installed"
@@ -589,7 +589,7 @@ msgid "Search:"
 msgstr "खोजव: (&e)"
 
 #. i18n: ectx: property (placeholderText), widget (KLineEdit, m_searchEdit)
-#: downloadwidget.ui:217 qtquick/qml/Page.qml:213
+#: downloadwidget.ui:217 qtquick/qml/Page.qml:327 qtquick/qml/Page.qml:332
 #, fuzzy, kde-format
 #| msgid "Search"
 msgid "Search..."
@@ -980,7 +980,7 @@ msgctxt "List option which will set the filter to show everything"
 msgid "Show Everything"
 msgstr ""
 
-#: qtquick/qml/NewStuffList.qml:69 qtquick/qml/Page.qml:253
+#: qtquick/qml/NewStuffList.qml:69
 #, fuzzy, kde-format
 #| msgid "Install"
 msgctxt ""
@@ -988,7 +988,7 @@ msgctxt ""
 msgid "Installed Only"
 msgstr "इनस्टाल करव"
 
-#: qtquick/qml/NewStuffList.qml:70 qtquick/qml/Page.qml:254
+#: qtquick/qml/NewStuffList.qml:70
 #, kde-format
 msgctxt ""
 "List option which will set the filter so only installed items with updates "
@@ -1038,63 +1038,126 @@ msgid ""
 "not be found."
 msgstr ""
 
-#: qtquick/qml/Page.qml:190
+#: qtquick/qml/Page.qml:176
 #, fuzzy, kde-format
-#| msgid "Detailed View"
-msgid "Tiles view mode"
-msgstr "विस्तृत दृस्य"
+#| msgid "File"
+msgid "Tiles"
+msgstr "फाइल"
 
-#: qtquick/qml/Page.qml:208
-#, fuzzy, kde-format
-#| msgid "Detailed View"
-msgid "Preview view mode"
-msgstr "विस्तृत दृस्य"
-
-#: qtquick/qml/Page.qml:234
-#, fuzzy, kde-format
-#| msgid "Show %1"
-msgid "Show:"
-msgstr "%1 देखाव"
-
-#: qtquick/qml/Page.qml:252
+#: qtquick/qml/Page.qml:178
 #, kde-format
-msgctxt "List option which will set the filter to show everything"
+msgid "Icons"
+msgstr "चिनहा"
+
+#: qtquick/qml/Page.qml:180
+#, fuzzy, kde-format
+#| msgid "No Preview"
+msgid "Preview"
+msgstr "प्रिव्यू नइ"
+
+#: qtquick/qml/Page.qml:195
+#, fuzzy, kde-format
+#| msgid "Detailed View"
+msgid "Detailed Tiles View Mode"
+msgstr "विस्तृत दृस्य"
+
+#: qtquick/qml/Page.qml:203
+#, fuzzy, kde-format
+#| msgid "Icons Only"
+msgid "Icons Only View Mode"
+msgstr "सिरिफ चिनहा"
+
+#: qtquick/qml/Page.qml:211
+#, fuzzy, kde-format
+#| msgid "Detailed View"
+msgid "Large Preview View Mode"
+msgstr "विस्तृत दृस्य"
+
+#: qtquick/qml/Page.qml:221
+#, kde-format
 msgid "Everything"
 msgstr ""
 
-#: qtquick/qml/Page.qml:266
+#: qtquick/qml/Page.qml:225
+#, fuzzy, kde-format
+#| msgid "Update"
+msgid "Updateable"
+msgstr "अपडेट"
+
+#: qtquick/qml/Page.qml:244
+#, fuzzy, kde-format
+#| msgid "&Show All Entries"
+msgctxt "List option which will set the filter to show everything"
+msgid "Show All Entries"
+msgstr "सब्बो प्रविस्टि देखाव (&S)"
+
+#: qtquick/qml/Page.qml:252
+#, fuzzy, kde-format
+#| msgid "&Show All Entries"
+msgctxt ""
+"List option which will set the filter so only installed items are shown"
+msgid "Show Only Installed Entries"
+msgstr "सब्बो प्रविस्टि देखाव (&S)"
+
+#: qtquick/qml/Page.qml:260
+#, fuzzy, kde-format
+#| msgid "&Show All Entries"
+msgctxt ""
+"List option which will set the filter so only installed items with updates "
+"available are shown"
+msgid "Show Only Updateable Entries"
+msgstr "सब्बो प्रविस्टि देखाव (&S)"
+
+#: qtquick/qml/Page.qml:270
+#, fuzzy, kde-format
+#| msgid "Open &Recent"
+msgid "Recent"
+msgstr "अभी हाल के वाले ल खोलव  (&R)"
+
+#: qtquick/qml/Page.qml:272
+#, kde-format
+msgid "Alphabetical"
+msgstr ""
+
+#: qtquick/qml/Page.qml:276
+#, fuzzy, kde-format
+#| msgid "Download"
+msgid "Downloads"
+msgstr "डाउनलोड"
+
+#: qtquick/qml/Page.qml:295
 #, fuzzy, kde-format
 #| msgid "Show directories first"
 msgctxt ""
 "List option which will set the sort order to based on when items were most "
 "recently updated"
-msgid "Most recent first"
+msgid "Show Most Recent First"
 msgstr "पहिली डिरेक्टरी देखाव"
 
-#: qtquick/qml/Page.qml:267
+#: qtquick/qml/Page.qml:303
 #, kde-format
 msgctxt ""
 "List option which will set the sort order to be alphabetical based on the "
 "name"
-msgid "A-Z"
+msgid "Sort Alphabetically By Name"
 msgstr ""
 
-#: qtquick/qml/Page.qml:268
+#: qtquick/qml/Page.qml:311
 #, fuzzy, kde-format
 #| msgid "Show directories first"
 msgctxt "List option which will set the sort order to based on user ratings"
-msgid "Highest rated first"
+msgid "Show Highest Rated First"
 msgstr "पहिली डिरेक्टरी देखाव"
 
-#: qtquick/qml/Page.qml:269
+#: qtquick/qml/Page.qml:319
 #, fuzzy, kde-format
 #| msgid "Most Downloads"
 msgctxt ""
 "List option which will set the sort order to based on number of downloads"
-msgid "Most downloaded first"
+msgid "Show Most Downloaded First"
 msgstr "सबसे अधिक डाउनलोड"
 
-#: qtquick/qml/Page.qml:344
+#: qtquick/qml/Page.qml:426
 #, fuzzy, kde-format
 #| msgid "Loading Preview"
 msgctxt ""
@@ -1102,7 +1165,7 @@ msgctxt ""
 msgid "Loading more..."
 msgstr "प्रिव्यू लोड करत हे"
 
-#: qtquick/qml/Page.qml:355
+#: qtquick/qml/Page.qml:437
 #, kde-format
 msgctxt ""
 "A message shown when there are no entries in the list, and when it is not "
@@ -1717,6 +1780,37 @@ msgstr ""
 #| msgid "Start replace"
 msgid "Start Upload"
 msgstr "बदलना चालू करव"
+
+#, fuzzy
+#~| msgid "Detailed View"
+#~ msgid "Tiles view mode"
+#~ msgstr "विस्तृत दृस्य"
+
+#, fuzzy
+#~| msgid "Show %1"
+#~ msgid "Show:"
+#~ msgstr "%1 देखाव"
+
+#, fuzzy
+#~| msgid "Show directories first"
+#~ msgctxt ""
+#~ "List option which will set the sort order to based on when items were "
+#~ "most recently updated"
+#~ msgid "Most recent first"
+#~ msgstr "पहिली डिरेक्टरी देखाव"
+
+#, fuzzy
+#~| msgid "Show directories first"
+#~ msgctxt "List option which will set the sort order to based on user ratings"
+#~ msgid "Highest rated first"
+#~ msgstr "पहिली डिरेक्टरी देखाव"
+
+#, fuzzy
+#~| msgid "Most Downloads"
+#~ msgctxt ""
+#~ "List option which will set the sort order to based on number of downloads"
+#~ msgid "Most downloaded first"
+#~ msgstr "सबसे अधिक डाउनलोड"
 
 #, fuzzy
 #~| msgid "Rating: "
@@ -2402,9 +2496,6 @@ msgstr "बदलना चालू करव"
 
 #~ msgid "HTML documentation"
 #~ msgstr "एचटीएमएल कागद"
-
-#~ msgid "Icons"
-#~ msgstr "चिनहा"
 
 #~ msgid "Configuration description files"
 #~ msgstr "वर्नन फाइल मन के कान्फिगरेसन"
@@ -7972,9 +8063,6 @@ msgstr "बदलना चालू करव"
 #~ msgid "Text Position"
 #~ msgstr "पाठ स्थिति"
 
-#~ msgid "Icons Only"
-#~ msgstr "सिरिफ चिनहा"
-
 #~ msgid "Text Only"
 #~ msgstr "सिरिफ पाठ"
 
@@ -8289,9 +8377,6 @@ msgstr "बदलना चालू करव"
 
 #~ msgid "Missing Plugin"
 #~ msgstr "प्लगइन नइ मिलिस"
-
-#~ msgid "Download"
-#~ msgstr "डाउनलोड"
 
 #~ msgid "Do Not Download"
 #~ msgstr "डाउनलोड नइ करव"
@@ -10453,12 +10538,6 @@ msgstr "बदलना चालू करव"
 #~ msgstr "काम"
 
 #, fuzzy
-#~| msgid "File"
-#~ msgctxt "@option:check Do filter on type - show only files"
-#~ msgid "Files"
-#~ msgstr "फाइल"
-
-#, fuzzy
 #~| msgctxt "@item Text character set"
 #~| msgid "Other"
 #~ msgctxt "@option:check Do filter on type - show everything but files"
@@ -10713,11 +10792,6 @@ msgstr "बदलना चालू करव"
 #~| msgid "Comment"
 #~ msgid "Community"
 #~ msgstr "टिप्पनी"
-
-#, fuzzy
-#~| msgid "No Preview"
-#~ msgid "Preview"
-#~ msgstr "प्रिव्यू नइ"
 
 #, fuzzy
 #~| msgid "BSD"
@@ -12722,12 +12796,6 @@ msgstr "बदलना चालू करव"
 #~ msgstr "डीक्रिप्सन गलती."
 
 #, fuzzy
-#~| msgid "Open &Recent"
-#~ msgctxt "@action"
-#~ msgid "OpenRecent"
-#~ msgstr "अभी हाल के वाले ल खोलव  (&R)"
-
-#, fuzzy
 #~| msgid "Save As"
 #~ msgctxt "@action"
 #~ msgid "SaveAs"
@@ -12805,9 +12873,6 @@ msgstr "बदलना चालू करव"
 
 #~ msgid "&Hide '%1'"
 #~ msgstr "लुकाव '%1' (&H)"
-
-#~ msgid "&Show All Entries"
-#~ msgstr "सब्बो प्रविस्टि देखाव (&S)"
 
 #~ msgid "&Remove '%1'"
 #~ msgstr "मेटाव '%1' (&R)"
@@ -13118,11 +13183,6 @@ msgstr "बदलना चालू करव"
 #, fuzzy
 #~| msgid "Detailed View"
 #~ msgid "Tree View"
-#~ msgstr "विस्तृत दृस्य"
-
-#, fuzzy
-#~| msgid "Detailed View"
-#~ msgid "Detailed Tree View"
 #~ msgstr "विस्तृत दृस्य"
 
 #~ msgid "Show Hidden Files"
