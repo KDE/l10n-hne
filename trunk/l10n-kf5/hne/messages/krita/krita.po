@@ -50,7 +50,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-01 02:39+0100\n"
+"POT-Creation-Date: 2021-03-02 02:46+0100\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -5171,7 +5171,7 @@ msgstr "सब्स्क्रिप्ट"
 msgid "Setti&ngs"
 msgstr "सेटिंग"
 
-#: krita/krita5.xmlgui:372 libs/widgetutils/xmlgui/khelpmenu.cpp:141
+#: krita/krita5.xmlgui:372 libs/widgetutils/xmlgui/khelpmenu.cpp:143
 #: libs/widgetutils/xmlgui/ui_standards.xmlgui:177
 #, fuzzy, kde-format
 msgid "&Help"
@@ -8184,7 +8184,7 @@ msgstr "आकार"
 #: libs/ui/forms/wdgrectangleconstraints.ui:86
 #: libs/ui/forms/wdgrectangleconstraints.ui:134
 #: libs/ui/forms/wdgrectangleconstraints.ui:184
-#: libs/ui/forms/wdgrectangleconstraints.ui:226 libs/ui/kis_paintop_box.cc:293
+#: libs/ui/forms/wdgrectangleconstraints.ui:226 libs/ui/kis_paintop_box.cc:294
 #: libs/ui/widgets/kis_lod_availability_widget.cpp:75
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:488
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:762
@@ -8611,9 +8611,17 @@ msgstr "फोटू आयात करव"
 msgid "Selection Mask"
 msgstr "चयन मास्क..."
 
-#: libs/image/kis_image.cc:686
-#, kde-format
-msgid "background"
+#. i18n: ectx: property (text), widget (QRadioButton, leftBackgroundRadioButton)
+#. i18n: ectx: property (text), widget (QRadioButton, rightBackgroundRadioButton)
+#. i18n: ectx: property (text), widget (QRadioButton, backgroundRadioButton)
+#: libs/image/kis_image.cc:686 libs/ui/forms/wdgautogradient.ui:212
+#: libs/ui/forms/wdgautogradient.ui:280
+#: libs/ui/forms/wdgstopgradienteditor.ui:146
+#: plugins/impex/psd/psd_loader.cpp:161
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:69
+#: plugins/python/comics_project_management_tools/comics_template_dialog.py:302
+#, fuzzy, kde-format
+msgid "Background"
 msgstr "पिछोत अंगना"
 
 #: libs/image/kis_image.cc:690 libs/ui/kis_layer_manager.cc:540
@@ -12896,7 +12904,7 @@ msgstr "प्रदर्सक"
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QLabel, labelX)
 #: libs/ui/animation/VideoHDRMetadataOptionsDialog.ui:46
-#: libs/ui/kis_paintop_box.cc:305
+#: libs/ui/kis_paintop_box.cc:306
 #: plugins/dockers/recorder/recorder_export.ui:233
 #, fuzzy, kde-format
 #| msgid "Fax:"
@@ -13681,8 +13689,8 @@ msgstr "परत गुन"
 #. i18n: ectx: property (suffix), widget (KisDoubleParseSpinBox, spbScaleWidth)
 #. i18n: ectx: property (suffix), widget (KisDoubleParseSpinBox, spbScaleHeight)
 #: libs/ui/dialogs/kis_dlg_layer_properties.cc:97
-#: libs/ui/forms/wdgdisplaysettings.ui:364 libs/ui/kis_paintop_box.cc:275
-#: libs/ui/kis_paintop_box.cc:283 libs/ui/layerstyles/wdgInnerGlow.ui:220
+#: libs/ui/forms/wdgdisplaysettings.ui:364 libs/ui/kis_paintop_box.cc:276
+#: libs/ui/kis_paintop_box.cc:284 libs/ui/layerstyles/wdgInnerGlow.ui:220
 #: libs/ui/layerstyles/wdgInnerGlow.ui:322
 #: libs/ui/layerstyles/wdgInnerGlow.ui:351
 #: libs/ui/widgets/kis_custom_image_widget.cc:85
@@ -15062,7 +15070,7 @@ msgstr "आगू तरफ के रंग"
 #. i18n: ectx: property (text), widget (QLabel, opacityLbl)
 #. i18n: ectx: property (text), widget (QLabel, opacityLabel)
 #: libs/ui/forms/wdgautogradient.ui:205 libs/ui/forms/wdgdisplaysettings.ui:391
-#: libs/ui/kis_paintop_box.cc:260 libs/ui/kis_paintop_box.cc:266
+#: libs/ui/kis_paintop_box.cc:261 libs/ui/kis_paintop_box.cc:267
 #: plugins/dockers/layerdocker/WdgLayerBox.ui:113
 #: plugins/filters/noisefilter/wdgnoiseoptions.ui:56
 #: plugins/filters/randompickfilter/wdgrandompickoptions.ui:57
@@ -15070,18 +15078,6 @@ msgstr "आगू तरफ के रंग"
 #, kde-format
 msgid "Opacity:"
 msgstr "अपारदर्सिता:"
-
-#. i18n: ectx: property (text), widget (QRadioButton, leftBackgroundRadioButton)
-#. i18n: ectx: property (text), widget (QRadioButton, rightBackgroundRadioButton)
-#. i18n: ectx: property (text), widget (QRadioButton, backgroundRadioButton)
-#: libs/ui/forms/wdgautogradient.ui:212 libs/ui/forms/wdgautogradient.ui:280
-#: libs/ui/forms/wdgstopgradienteditor.ui:146
-#: plugins/impex/psd/psd_loader.cpp:161
-#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:69
-#: plugins/python/comics_project_management_tools/comics_template_dialog.py:302
-#, fuzzy, kde-format
-msgid "Background"
-msgstr "पिछोत अंगना"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: libs/ui/forms/wdgautogradient.ui:273
@@ -16991,7 +16987,7 @@ msgid "path"
 msgstr "पथ"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgPaintOpSettings)
-#: libs/ui/forms/wdgpaintopsettings.ui:18 libs/ui/kis_paintop_box.cc:454
+#: libs/ui/forms/wdgpaintopsettings.ui:18 libs/ui/kis_paintop_box.cc:455
 #, fuzzy, kde-format
 msgid "Brush Editor"
 msgstr "ब्रुस आकार"
@@ -19245,23 +19241,23 @@ msgstr ""
 msgid "Painter's Toolchest"
 msgstr "पेंटर के औजारपेटी"
 
-#: libs/ui/kis_paintop_box.cc:117
+#: libs/ui/kis_paintop_box.cc:118
 #, fuzzy, kde-format
 msgid "Tool Settings"
 msgstr "रंग सेटिंग"
 
-#: libs/ui/kis_paintop_box.cc:125
+#: libs/ui/kis_paintop_box.cc:126
 #, fuzzy, kde-format
 msgid "Edit brush settings"
 msgstr "ब्रुस प्रीसेट संपादित करव"
 
-#: libs/ui/kis_paintop_box.cc:132
+#: libs/ui/kis_paintop_box.cc:133
 #, fuzzy, kde-format
 msgid "Choose brush preset"
 msgstr "ब्रुस प्रीसेट संपादित करव"
 
 #. i18n: ectx: property (text), widget (QLabel, lblFlow)
-#: libs/ui/kis_paintop_box.cc:261 libs/ui/kis_paintop_box.cc:267
+#: libs/ui/kis_paintop_box.cc:262 libs/ui/kis_paintop_box.cc:268
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1882
 #, fuzzy, kde-format
 msgid "Flow:"
@@ -19270,7 +19266,7 @@ msgstr "देखाव (&S)"
 #. i18n: ectx: property (text), widget (QLabel, brushSizeLabel)
 #. i18n: ectx: property (text), widget (QLabel, labelSize)
 #. i18n: ectx: property (text), widget (QLabel, lblSize)
-#: libs/ui/kis_paintop_box.cc:262 libs/ui/kis_paintop_box.cc:268
+#: libs/ui/kis_paintop_box.cc:263 libs/ui/kis_paintop_box.cc:269
 #: plugins/generators/screentone/KisScreentoneConfigWidget.ui:214
 #: plugins/paintops/libpaintop/forms/wdgpredefinedbrushchooser.ui:185
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1904
@@ -19278,23 +19274,23 @@ msgstr "देखाव (&S)"
 msgid "Size:"
 msgstr "आकार"
 
-#: libs/ui/kis_paintop_box.cc:263 libs/ui/kis_paintop_box.cc:269
+#: libs/ui/kis_paintop_box.cc:264 libs/ui/kis_paintop_box.cc:270
 #, fuzzy, kde-format
 msgid "Pattern Scale:"
 msgstr "पैटर्न"
 
-#: libs/ui/kis_paintop_box.cc:321
+#: libs/ui/kis_paintop_box.cc:322
 #, fuzzy, kde-format
 msgid "Choose workspace"
 msgstr "कलरस्पेस"
 
-#: libs/ui/kis_paintop_box.cc:358
+#: libs/ui/kis_paintop_box.cc:359
 #, fuzzy, kde-format
 msgid "Brush composite"
 msgstr "ब्रुस आकार"
 
-#: libs/ui/kis_paintop_box.cc:1225 libs/ui/kis_paintop_box.cc:1247
-#: libs/ui/kis_paintop_box.cc:1261
+#: libs/ui/kis_paintop_box.cc:1226 libs/ui/kis_paintop_box.cc:1248
+#: libs/ui/kis_paintop_box.cc:1262
 #, fuzzy, kde-format
 msgid ""
 "%1\n"
@@ -32652,7 +32648,7 @@ msgstr "सामान्य"
 msgid "&Oilpaint..."
 msgstr "आइलपेंट... (&O)"
 
-#: plugins/filters/oilpaintfilter/kis_oilpaint_filter.cpp:179
+#: plugins/filters/oilpaintfilter/kis_oilpaint_filter.cpp:205
 #: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:28
 #: plugins/paintops/gridbrush/kis_grid_paintop_settings_widget.cpp:26
 #: plugins/paintops/particle/kis_particle_paintop_settings_widget.cpp:25
@@ -32661,7 +32657,7 @@ msgstr "आइलपेंट... (&O)"
 msgid "Brush size"
 msgstr "ब्रुस आकार"
 
-#: plugins/filters/oilpaintfilter/kis_oilpaint_filter.cpp:180
+#: plugins/filters/oilpaintfilter/kis_oilpaint_filter.cpp:206
 #, kde-format
 msgctxt "smooth out the painting strokes the filter creates"
 msgid "Smooth"
@@ -45056,6 +45052,9 @@ msgstr ""
 #, kde-format
 msgid "Work Recursively"
 msgstr ""
+
+#~ msgid "background"
+#~ msgstr "पिछोत अंगना"
 
 #, fuzzy
 #~ msgctxt "floating message in layer manager"
