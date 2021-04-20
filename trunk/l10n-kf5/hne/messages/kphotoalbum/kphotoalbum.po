@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-04-14 00:16+0000\n"
+"POT-Creation-Date: 2021-04-20 00:16+0000\n"
 "PO-Revision-Date: 2009-02-17 12:43+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -392,12 +392,12 @@ msgstr "मेटाव"
 msgid "Copy tags from previous image"
 msgstr "पिछला फोटू से टैग नकल करव"
 
-#: AnnotationDialog/Dialog.cpp:1294 MainWindow/Window.cpp:795
+#: AnnotationDialog/Dialog.cpp:1294 MainWindow/Window.cpp:800
 #, kde-format
 msgid "Rotate counterclockwise"
 msgstr "घड़ी के उलटा दिसा मं घुमाव"
 
-#: AnnotationDialog/Dialog.cpp:1297 MainWindow/Window.cpp:799
+#: AnnotationDialog/Dialog.cpp:1297 MainWindow/Window.cpp:804
 #, kde-format
 msgid "Rotate clockwise"
 msgstr "घड़ी के दिसा मं घुमाव"
@@ -945,7 +945,7 @@ msgctxt "Breadcrumb denoting that we 'browsed' to a search result."
 msgid "search"
 msgstr "खोजव"
 
-#: Browser/OverviewPage.cpp:314 MainWindow/Window.cpp:1648
+#: Browser/OverviewPage.cpp:314 MainWindow/Window.cpp:1676
 #, kde-format
 msgid ""
 "<p>You have not yet configured which tag to use for indicating untagged "
@@ -955,7 +955,7 @@ msgid ""
 "section <b>Untagged Images</b></li></ul></p>"
 msgstr ""
 
-#: Browser/OverviewPage.cpp:320 MainWindow/Window.cpp:1655
+#: Browser/OverviewPage.cpp:320 MainWindow/Window.cpp:1683
 #, kde-format
 msgid "Feature has not been configured"
 msgstr ""
@@ -2796,81 +2796,23 @@ msgstr "वर्ग संपादक देखाव"
 msgid "Make Category Image"
 msgstr "स्रेनी फोटू कान्फिगर करव"
 
-#: MainWindow/CopyPopup.cpp:33
-#, fuzzy, kde-format
-#| msgid "Export/Copy Images..."
-msgid "Copy image(s) to..."
-msgstr "फोटू निर्यात/नकल करव..."
-
-#: MainWindow/CopyPopup.cpp:34
-#, fuzzy, kde-format
-#| msgid "Export/Copy Images..."
-msgid "Copy currently selected image to..."
-msgstr "फोटू निर्यात/नकल करव..."
-
-#: MainWindow/CopyPopup.cpp:38
-#, fuzzy, kde-format
-#| msgid "Export/Copy Images..."
-msgid "Copy all selected images to..."
-msgstr "फोटू निर्यात/नकल करव..."
-
-#: MainWindow/CopyPopup.cpp:44
-#, fuzzy, kde-format
-#| msgid "Export/Copy Images..."
-msgid "Link currently selected image to..."
-msgstr "फोटू निर्यात/नकल करव..."
-
-#: MainWindow/CopyPopup.cpp:45
-#, fuzzy, kde-format
-#| msgid "Export/Copy Images..."
-msgid "Link image(s) to..."
-msgstr "फोटू निर्यात/नकल करव..."
-
-#: MainWindow/CopyPopup.cpp:49
-#, fuzzy, kde-format
-#| msgid "Export/Copy Images..."
-msgid "Link all selected images to..."
-msgstr "फोटू निर्यात/नकल करव..."
-
-#: MainWindow/CopyPopup.cpp:68 Viewer/ViewerWidget.cpp:1441
+#: MainWindow/CopyLinkEngine.cpp:37
 #, fuzzy, kde-format
 #| msgid "Export/Copy Images..."
 msgctxt "@title:window"
-msgid "Copy Image to..."
-msgstr "फोटू निर्यात/नकल करव..."
+msgid "Copy image to ..."
+msgid_plural "Copy images to ..."
+msgstr[0] "फोटू निर्यात/नकल करव..."
+msgstr[1] "फोटू निर्यात/नकल करव..."
 
-#: MainWindow/CopyPopup.cpp:69 Viewer/ViewerWidget.cpp:1446
-#, kde-format
-msgctxt "@action:button"
-msgid "Copy"
-msgstr ""
-
-#: MainWindow/CopyPopup.cpp:71
+#: MainWindow/CopyLinkEngine.cpp:40
 #, fuzzy, kde-format
 #| msgid "Export/Copy Images..."
 msgctxt "@title:window"
-msgid "Link Image to..."
-msgstr "फोटू निर्यात/नकल करव..."
-
-#: MainWindow/CopyPopup.cpp:72
-#, kde-format
-msgctxt "@action:button"
-msgid "Link"
-msgstr ""
-
-#: MainWindow/CopyPopup.cpp:95
-#, fuzzy, kde-format
-#| msgid "Export/Copy Images..."
-msgctxt "@title:window"
-msgid "Copy images to..."
-msgstr "फोटू निर्यात/नकल करव..."
-
-#: MainWindow/CopyPopup.cpp:97
-#, fuzzy, kde-format
-#| msgid "Export/Copy Images..."
-msgctxt "@title:window"
-msgid "Link images to..."
-msgstr "फोटू निर्यात/नकल करव..."
+msgid "Link image to ..."
+msgid_plural "Link images to ..."
+msgstr[0] "फोटू निर्यात/नकल करव..."
+msgstr[1] "फोटू निर्यात/नकल करव..."
 
 #: MainWindow/DeleteDialog.cpp:24
 #, fuzzy, kde-format
@@ -3535,12 +3477,12 @@ msgstr "डाटाबेस लोड करत हे"
 msgid "Loading Main Window"
 msgstr "मुख्य विंडो लोड करत हे"
 
-#: MainWindow/Window.cpp:260
+#: MainWindow/Window.cpp:262
 #, kde-format
 msgid "Searching for New Files"
 msgstr "नवा फाइल मन बर खोजत हे"
 
-#: MainWindow/Window.cpp:294
+#: MainWindow/Window.cpp:296
 #, kde-format
 msgid ""
 "<p><b>Delete Your Temporary Demo Database</b></p><p>I hope you enjoyed the "
@@ -3550,367 +3492,387 @@ msgid ""
 "around with the changes you made through this session.</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:299
+#: MainWindow/Window.cpp:301
 #, kde-format
 msgid "Delete Demo Database"
 msgstr "डेमो डाटाबेस मेटाव"
 
-#: MainWindow/Window.cpp:313
+#: MainWindow/Window.cpp:315
 #, kde-format
 msgid "Do you want to save the changes?"
 msgstr "का आप मन बदलाव मन ल सहेजना चाहथो ?"
 
-#: MainWindow/Window.cpp:314
+#: MainWindow/Window.cpp:316
 #, kde-format
 msgid "Save Changes?"
 msgstr "बदलाव सहेजव?"
 
-#: MainWindow/Window.cpp:357
+#: MainWindow/Window.cpp:359
 #, kde-format
 msgid ""
 "Some of the selected images already belong to a stack. Do you want to remove "
 "them from their stacks and create a completely new one?"
 msgstr ""
 
-#: MainWindow/Window.cpp:360 MainWindow/Window.cpp:366
+#: MainWindow/Window.cpp:362 MainWindow/Window.cpp:368
 #, kde-format
 msgid "Stacking Error"
 msgstr ""
 
-#: MainWindow/Window.cpp:365
+#: MainWindow/Window.cpp:367
 #, kde-format
 msgid "Unknown error, stack creation failed."
 msgstr ""
 
-#: MainWindow/Window.cpp:445 MainWindow/Window.cpp:571
-#: MainWindow/Window.cpp:1306
+#: MainWindow/Window.cpp:447 MainWindow/Window.cpp:573
+#: MainWindow/Window.cpp:1238 MainWindow/Window.cpp:1334
 #, kde-format
 msgid "No item is selected."
 msgstr "कोई चीज चुने नइ गे हे."
 
-#: MainWindow/Window.cpp:445 MainWindow/Window.cpp:571
-#: MainWindow/Window.cpp:1307
+#: MainWindow/Window.cpp:447 MainWindow/Window.cpp:573
+#: MainWindow/Window.cpp:1238 MainWindow/Window.cpp:1335
 #, kde-format
 msgid "No Selection"
 msgstr "कोई चयन नइ"
 
-#: MainWindow/Window.cpp:491
+#: MainWindow/Window.cpp:493
 #, kde-format
 msgid "Saving..."
 msgstr "सहेजिस जात हे..."
 
-#: MainWindow/Window.cpp:496
+#: MainWindow/Window.cpp:498
 #, kde-format
 msgid "Saving... Done"
 msgstr "सहेजिस जात हे... पूरा"
 
-#: MainWindow/Window.cpp:644
+#: MainWindow/Window.cpp:646
 #, kde-format
 msgid "There are no images to be shown."
 msgstr "देखाय बर वहां कोनो फोटू नइ हे."
 
-#: MainWindow/Window.cpp:730
+#: MainWindow/Window.cpp:735
 #, kde-format
 msgid "Generate HTML..."
 msgstr "एचटीएमएल बनाव..."
 
-#: MainWindow/Window.cpp:734
+#: MainWindow/Window.cpp:739
 #, kde-format
 msgid "Import..."
 msgstr "आयात करव..."
 
-#: MainWindow/Window.cpp:737
+#: MainWindow/Window.cpp:742
 #, kde-format
 msgid "Export/Copy Images..."
 msgstr "फोटू निर्यात/नकल करव..."
 
-#: MainWindow/Window.cpp:764
+#: MainWindow/Window.cpp:769
 #, fuzzy, kde-format
 #| msgid "Delete Selected"
 msgctxt "Delete selected images"
 msgid "Delete Selected"
 msgstr "चुने गे ल मेटाव"
 
-#: MainWindow/Window.cpp:770
+#: MainWindow/Window.cpp:775
 #, fuzzy, kde-format
 #| msgid "Remove Tokens"
 msgid "Remove Tokens..."
 msgstr "टोकन मेटाव"
 
-#: MainWindow/Window.cpp:773
+#: MainWindow/Window.cpp:778
 #, kde-format
 msgid "Open List of Files..."
 msgstr "फाइल मन के सूची खोलव..."
 
-#: MainWindow/Window.cpp:776
+#: MainWindow/Window.cpp:781
 #, kde-format
 msgid "Annotate Individual Items"
 msgstr "अलग अलग चीज मन के व्याख्या"
 
-#: MainWindow/Window.cpp:780
+#: MainWindow/Window.cpp:785
 #, kde-format
 msgid "Annotate Multiple Items at a Time"
 msgstr "बहुत से चीज मन के व्याख्या एके समय में"
 
-#: MainWindow/Window.cpp:784
+#: MainWindow/Window.cpp:789
 #, kde-format
 msgid "Merge Images into a Stack"
 msgstr ""
 
-#: MainWindow/Window.cpp:788
+#: MainWindow/Window.cpp:793
 #, kde-format
 msgid "Remove Images from Stack"
 msgstr ""
 
-#: MainWindow/Window.cpp:791
+#: MainWindow/Window.cpp:796
 #, kde-format
 msgid "Set as First Image in Stack"
 msgstr ""
 
-#: MainWindow/Window.cpp:804
+#: MainWindow/Window.cpp:809
 #, kde-format
 msgid "View"
 msgstr "दृस्य"
 
-#: MainWindow/Window.cpp:808
+#: MainWindow/Window.cpp:813
 #, kde-format
 msgid "View (In New Window)"
 msgstr "दृस्य (नवा विंडो में)"
 
-#: MainWindow/Window.cpp:811
+#: MainWindow/Window.cpp:816
 #, kde-format
 msgid "Run Slide Show"
 msgstr "स्लाइड सो चलाव"
 
-#: MainWindow/Window.cpp:816
+#: MainWindow/Window.cpp:821
 #, kde-format
 msgid "Run Randomized Slide Show"
 msgstr "स्लाइड सो बेतरतीब चलाव"
 
-#: MainWindow/Window.cpp:822
+#: MainWindow/Window.cpp:827
 #, kde-format
 msgid "Collapse all stacks"
 msgstr ""
 
-#: MainWindow/Window.cpp:828
+#: MainWindow/Window.cpp:833
 #, kde-format
 msgid "Expand all stacks"
 msgstr ""
 
-#: MainWindow/Window.cpp:833
+#: MainWindow/Window.cpp:838
 #, kde-format
 msgid "Show &Oldest First"
 msgstr "सबसे जुन्ना ल पहिली देखाव (&O)"
 
-#: MainWindow/Window.cpp:838
+#: MainWindow/Window.cpp:843
 #, kde-format
 msgid "Show &Newest First"
 msgstr "सबसे नवा ल पहिली दिखाव (&N)"
 
-#: MainWindow/Window.cpp:843
+#: MainWindow/Window.cpp:848
 #, kde-format
 msgid "Sort Selected by Date && Time"
 msgstr "तारीक अउ समय से छांटना चुने गे (&&)"
 
-#: MainWindow/Window.cpp:846
+#: MainWindow/Window.cpp:851
 #, fuzzy, kde-format
 #| msgid "Limit View to Marked"
 msgid "Limit View to Selection"
 msgstr "दृस्य ल चिनहित तक सीमित करव"
 
-#: MainWindow/Window.cpp:849
+#: MainWindow/Window.cpp:854
 #, kde-format
 msgid "Jump to Context"
 msgstr "संदर्भ मं जाव"
 
-#: MainWindow/Window.cpp:855
+#: MainWindow/Window.cpp:860
 #, kde-format
 msgid "Lock Images"
 msgstr "फोटू तालाबंद करव"
 
-#: MainWindow/Window.cpp:859
+#: MainWindow/Window.cpp:864
 #, kde-format
 msgid "Unlock"
 msgstr "तालाखोलव"
 
-#: MainWindow/Window.cpp:862
+#: MainWindow/Window.cpp:867
 #, kde-format
 msgid "Lock Away All Other Items"
 msgstr "सब्बो अउ चीज मन ल तालाबंद करव"
 
-#: MainWindow/Window.cpp:865
+#: MainWindow/Window.cpp:870
 #, kde-format
 msgid "Lock Away Current Set of Items"
 msgstr "अभी हाल के चीज मन के सेट ल तालाबंद करव"
 
-#: MainWindow/Window.cpp:869
+#: MainWindow/Window.cpp:874
 #, kde-format
 msgid "Display Images and Videos Not on Disk"
 msgstr "ओ फोटू अउ वीडियो मन ल देखाव जऊन ह डिस्क मं मौजूद नइ हे"
 
-#: MainWindow/Window.cpp:872
+#: MainWindow/Window.cpp:877
 #, kde-format
 msgid "Display Images and Videos with Incomplete Dates..."
 msgstr "अधूरा तारीक वाले फोटू मन अउ वीडियो दिखाव..."
 
-#: MainWindow/Window.cpp:876
+#: MainWindow/Window.cpp:881
 #, kde-format
 msgid "Display Images and Videos with Changed MD5 Sum"
 msgstr "बदले एमडी५ सम सहित फोटू अउ वीडियो मन ल दिखाव"
 
-#: MainWindow/Window.cpp:880
+#: MainWindow/Window.cpp:885
 #, fuzzy, kde-format
 #| msgid "Merge data"
 msgid "Merge duplicates"
 msgstr "डाटा मिलाव"
 
-#: MainWindow/Window.cpp:882
+#: MainWindow/Window.cpp:887
 #, kde-format
 msgid "Recalculate Checksum"
 msgstr "चेकसम फिर से गनना करव"
 
-#: MainWindow/Window.cpp:886
+#: MainWindow/Window.cpp:891
 #, kde-format
 msgid "Rescan for Images and Videos"
 msgstr "फोटू मन अउ वीडियो ल फिर से स्कैन करव"
 
-#: MainWindow/Window.cpp:889
+#: MainWindow/Window.cpp:894
 #, kde-format
 msgid "Recreate Exif Search Database"
 msgstr "एक्जिफ सर्च डाटाबेस फिर से बनाव"
 
-#: MainWindow/Window.cpp:892
+#: MainWindow/Window.cpp:897
 #, fuzzy, kde-format
 #| msgid "Read EXIF Info From Files..."
 msgid "Read Exif Info from Files..."
 msgstr "फाइल मन से एक्सइफ जानकारी पढ़व..."
 
-#: MainWindow/Window.cpp:895
+#: MainWindow/Window.cpp:900
 #, fuzzy, kde-format
 #| msgid "Sort Selected by Date && Time"
 msgid "Sort All by Date && Time"
 msgstr "तारीक अउ समय से छांटना चुने गे (&&)"
 
-#: MainWindow/Window.cpp:899
+#: MainWindow/Window.cpp:904
 #, kde-format
 msgid "Automatically Stack Selected Images..."
 msgstr ""
 
-#: MainWindow/Window.cpp:902
+#: MainWindow/Window.cpp:907
 #, kde-format
 msgid "Build Thumbnails"
 msgstr "छोटे फोटू बनाव"
 
-#: MainWindow/Window.cpp:905
+#: MainWindow/Window.cpp:910
 #, fuzzy, kde-format
 #| msgid "Statistics"
 msgid "Statistics..."
 msgstr "आंकड़ा"
 
-#: MainWindow/Window.cpp:909
+#: MainWindow/Window.cpp:914
 #, kde-format
 msgid "Mark As Untagged"
 msgstr ""
 
-#: MainWindow/Window.cpp:918
+#: MainWindow/Window.cpp:923
 #, kde-format
 msgid "Enable All Messages"
 msgstr "सब्बो संदेस सक्छम करव"
 
-#: MainWindow/Window.cpp:921
+#: MainWindow/Window.cpp:926
 #, fuzzy, kde-format
 #| msgid "Configure View"
 msgid "Configure Current View"
 msgstr "कान्फिगर दृस्य"
 
-#: MainWindow/Window.cpp:933
+#: MainWindow/Window.cpp:938
 #, fuzzy, kde-format
 #| msgid "Theme:"
 msgid "Tree"
 msgstr "प्रसंगः"
 
-#: MainWindow/Window.cpp:938
+#: MainWindow/Window.cpp:943
 #, kde-format
 msgid "Tree with User Icons"
 msgstr ""
 
-#: MainWindow/Window.cpp:943
+#: MainWindow/Window.cpp:948
 #, fuzzy, kde-format
 #| msgid "Icon:"
 msgid "Icons"
 msgstr "चिनहाः"
 
-#: MainWindow/Window.cpp:951
+#: MainWindow/Window.cpp:956
 #, kde-format
 msgid "Show Tooltips in Thumbnails Window"
 msgstr "छोटेफोटू विंडो मं औजारयुक्ति दिखाव"
 
-#: MainWindow/Window.cpp:960
+#: MainWindow/Window.cpp:965
 #, kde-format
 msgid "Choose Color Scheme"
 msgstr ""
 
-#: MainWindow/Window.cpp:973
+#: MainWindow/Window.cpp:978
 #, kde-format
 msgid "Run KPhotoAlbum Demo"
 msgstr "केफोटोएलबम डेमो चलाव"
 
-#: MainWindow/Window.cpp:976
+#: MainWindow/Window.cpp:981
 #, kde-format
 msgid "KPhotoAlbum Feature Status"
 msgstr "केफोटोएलबम विसेसता स्थिति"
 
-#: MainWindow/Window.cpp:979
+#: MainWindow/Window.cpp:984
 #, kde-format
 msgid "Show Demo Videos"
 msgstr "डेमो वीडियो देखाव"
 
-#: MainWindow/Window.cpp:983
+#: MainWindow/Window.cpp:988
 #, kde-format
 msgid "Show Exif Info"
 msgstr "एक्जइफ जानकारी देखाव"
 
-#: MainWindow/Window.cpp:986
+#: MainWindow/Window.cpp:991
 #, kde-format
 msgid "Recreate Selected Thumbnails"
 msgstr "चुने गे लघु-फोटू फिर से बनाव"
 
-#: MainWindow/Window.cpp:989
+#: MainWindow/Window.cpp:994
 #, fuzzy, kde-format
 #| msgid "Generate thumbnails"
 msgid "Use next video thumbnail"
 msgstr "छोटे फोटू तैयार करव"
 
-#: MainWindow/Window.cpp:993
+#: MainWindow/Window.cpp:998
 #, kde-format
 msgid "Use previous video thumbnail"
 msgstr ""
 
-#: MainWindow/Window.cpp:1019
+#: MainWindow/Window.cpp:1002 MainWindow/Window.cpp:1216
+#: Viewer/ViewerWidget.cpp:160
+#, fuzzy, kde-format
+#| msgid "Export/Copy Images..."
+msgctxt "@action:inmenu"
+msgid "Copy image to ..."
+msgid_plural "Copy images to ..."
+msgstr[0] "फोटू निर्यात/नकल करव..."
+msgstr[1] "फोटू निर्यात/नकल करव..."
+
+#: MainWindow/Window.cpp:1006 MainWindow/Window.cpp:1220
+#: Viewer/ViewerWidget.cpp:165
+#, fuzzy, kde-format
+#| msgid "Export/Copy Images..."
+msgctxt "@action:inmenu"
+msgid "Link image to ..."
+msgid_plural "Link images to ..."
+msgstr[0] "फोटू निर्यात/नकल करव..."
+msgstr[1] "फोटू निर्यात/नकल करव..."
+
+#: MainWindow/Window.cpp:1032
 #, kde-format
 msgid "Auto saving...."
 msgstr "अपने अपन सहेजत हे..."
 
-#: MainWindow/Window.cpp:1022
+#: MainWindow/Window.cpp:1035
 #, kde-format
 msgid "Auto saving.... Done"
 msgstr "अपने अपन सहेजत हे... पूरा"
 
-#: MainWindow/Window.cpp:1121
+#: MainWindow/Window.cpp:1134
 #, kde-format
 msgid ""
 "<p>Could not open given index.xml as provided directory does not exist.<br />"
 "%1</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1128
+#: MainWindow/Window.cpp:1141
 #, kde-format
 msgid ""
 "<p>Given index file does not exist, do you want to create following?<br />%1/"
 "index.xml</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1148
+#: MainWindow/Window.cpp:1161
 #, kde-format
 msgid ""
 "<p>You have configured a tag for untagged images, but either the tag itself "
@@ -3919,34 +3881,34 @@ msgid ""
 "Categories</interface></p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1259 Settings/SettingsDialog.cpp:47
+#: MainWindow/Window.cpp:1287 Settings/SettingsDialog.cpp:47
 #, kde-format
 msgid "General"
 msgstr "सामान्य"
 
-#: MainWindow/Window.cpp:1260 Settings/SettingsDialog.cpp:53
+#: MainWindow/Window.cpp:1288 Settings/SettingsDialog.cpp:53
 #, kde-format
 msgid "Viewer"
 msgstr "प्रदर्सक"
 
-#: MainWindow/Window.cpp:1263
+#: MainWindow/Window.cpp:1291
 #, kde-format
 msgid "Annotation Dialog"
 msgstr "एनोटेसन गोठ"
 
-#: MainWindow/Window.cpp:1264 Settings/SettingsDialog.cpp:49
+#: MainWindow/Window.cpp:1292 Settings/SettingsDialog.cpp:49
 #, kde-format
 msgid "Thumbnail View"
 msgstr "छोटे फोटू दृस्य"
 
-#: MainWindow/Window.cpp:1409
+#: MainWindow/Window.cpp:1437
 #, kde-format
 msgid ""
 "<p>Really enable all message boxes where you previously checked the do-not-"
 "show-again check box?</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1419
+#: MainWindow/Window.cpp:1447
 #, kde-format
 msgid ""
 "<p>KPhotoAlbum hit an internal error (missing plug-in menu in MainWindow::"
@@ -3957,63 +3919,63 @@ msgid ""
 "on due to the missing make install.</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1419
+#: MainWindow/Window.cpp:1447
 #, fuzzy, kde-format
 #| msgid "Invoke External Program"
 msgid "Internal Error"
 msgstr "बाहिरी प्रोग्राम चलाव"
 
-#: MainWindow/Window.cpp:1430
+#: MainWindow/Window.cpp:1458
 #, kde-format
 msgid "Successfully shared image(s). Copying location to clipboard..."
 msgstr ""
 
-#: MainWindow/Window.cpp:1433
+#: MainWindow/Window.cpp:1461
 #, kde-format
 msgid "Successfully shared image(s)."
 msgstr ""
 
-#: MainWindow/Window.cpp:1438
+#: MainWindow/Window.cpp:1466
 #, kde-format
 msgid "Image sharing failed with message: %1"
 msgstr ""
 
-#: MainWindow/Window.cpp:1501
+#: MainWindow/Window.cpp:1529
 #, kde-format
 msgid "Open List of Files"
 msgstr "फाइल मन के सूची खोलव"
 
-#: MainWindow/Window.cpp:1502
+#: MainWindow/Window.cpp:1530
 #, kde-format
 msgid ""
 "You can open a set of files from KPhotoAlbum's image root by listing the "
 "files here."
 msgstr ""
 
-#: MainWindow/Window.cpp:1515
+#: MainWindow/Window.cpp:1543
 #, kde-format
 msgid "No images matching your input were found."
 msgstr "आप मन के इनपुट से मिलत जुलत कोनो फोटू नइ मिलिस."
 
-#: MainWindow/Window.cpp:1515
+#: MainWindow/Window.cpp:1543
 #, kde-format
 msgid "No Matches"
 msgstr "कोई जोड़ नइ"
 
-#: MainWindow/Window.cpp:1672
+#: MainWindow/Window.cpp:1700
 #, fuzzy, kde-format
 #| msgid "Rereading EXIF information from all images"
 msgid "Rereading Exif information from all images"
 msgstr "सब्बो फोटू मन से एक्जिफ जानकारी लोड करत हे "
 
-#: MainWindow/Window.cpp:1699
+#: MainWindow/Window.cpp:1727
 #, fuzzy, no-c-format, kde-format
 #| msgid "Thumbnail image size:"
 msgctxt "@info:status"
 msgid "Thumbnail width: %1px (storage size: %2px)"
 msgstr "छोटेफोटू फोटू के आकार:"
 
-#: MainWindow/Window.cpp:1752
+#: MainWindow/Window.cpp:1780
 #, kde-format
 msgid ""
 "<p>Unable to find ffmpeg on the system.</p><p>Without it, KPhotoAlbum will "
@@ -4021,7 +3983,7 @@ msgid ""
 "the ffmpeg package</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1755
+#: MainWindow/Window.cpp:1783
 #, fuzzy, kde-format
 #| msgid "File not available"
 msgid "Video thumbnails are not available"
@@ -5930,405 +5892,398 @@ msgstr "<p><center><font size=\"+4\">स्लाइडसो बन्द क�
 msgid "Error playing media"
 msgstr "मीडिया बजाय मं गलती होइस"
 
-#: Viewer/ViewerWidget.cpp:142
+#: Viewer/ViewerWidget.cpp:144
 #, fuzzy, kde-format
 #| msgid "Annotate..."
 msgctxt "@action:inmenu"
 msgid "Annotate..."
 msgstr "एन्नोटेट..."
 
-#: Viewer/ViewerWidget.cpp:147
+#: Viewer/ViewerWidget.cpp:149
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set as First Image in Stack"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:152
+#: Viewer/ViewerWidget.cpp:154
 #, fuzzy, kde-format
 #| msgid "Show EXIF Viewer"
 msgctxt "@action:inmenu"
 msgid "Show Exif Viewer"
 msgstr "एक्सइफ प्रदर्सक दिखाव"
 
-#: Viewer/ViewerWidget.cpp:156
-#, fuzzy, kde-format
-#| msgid "Export/Copy Images..."
-msgctxt "@action:inmenu"
-msgid "Copy Image to..."
-msgstr "फोटू निर्यात/नकल करव..."
-
-#: Viewer/ViewerWidget.cpp:162
+#: Viewer/ViewerWidget.cpp:173
 #, fuzzy, kde-format
 #| msgid "Close"
 msgctxt "@action:inmenu"
 msgid "Close"
 msgstr "बंद करव"
 
-#: Viewer/ViewerWidget.cpp:218
+#: Viewer/ViewerWidget.cpp:229
 #, fuzzy, kde-format
 #| msgid "Rotate"
 msgctxt "@title:inmenu"
 msgid "Rotate"
 msgstr "घुमाव"
 
-#: Viewer/ViewerWidget.cpp:221
+#: Viewer/ViewerWidget.cpp:232
 #, fuzzy, kde-format
 #| msgid "Rotate clockwise"
 msgctxt "@action:inmenu"
 msgid "Rotate clockwise"
 msgstr "घड़ी के दिसा मं घुमाव"
 
-#: Viewer/ViewerWidget.cpp:227
+#: Viewer/ViewerWidget.cpp:238
 #, fuzzy, kde-format
 #| msgid "Flip Over"
 msgctxt "@action:inmenu"
 msgid "Flip Over"
 msgstr "पलटव"
 
-#: Viewer/ViewerWidget.cpp:234
+#: Viewer/ViewerWidget.cpp:245
 #, fuzzy, kde-format
 #| msgid "Rotate counterclockwise"
 msgctxt "@action:inmenu"
 msgid "Rotate counterclockwise"
 msgstr "घड़ी के उलटा दिसा मं घुमाव"
 
-#: Viewer/ViewerWidget.cpp:245
+#: Viewer/ViewerWidget.cpp:256
 #, fuzzy, kde-format
 #| msgid "Skip"
 msgctxt "@title:inmenu As in 'skip 2 images'"
 msgid "Skip"
 msgstr "छोड़व "
 
-#: Viewer/ViewerWidget.cpp:248
+#: Viewer/ViewerWidget.cpp:259
 #, fuzzy, kde-format
 #| msgid "First"
 msgctxt "@action:inmenu Go to first image"
 msgid "First"
 msgstr "पहिली"
 
-#: Viewer/ViewerWidget.cpp:255
+#: Viewer/ViewerWidget.cpp:266
 #, fuzzy, kde-format
 #| msgid "Last"
 msgctxt "@action:inmenu Go to last image"
 msgid "Last"
 msgstr "आखरी"
 
-#: Viewer/ViewerWidget.cpp:262
+#: Viewer/ViewerWidget.cpp:273
 #, fuzzy, kde-format
 #| msgid "Show Next"
 msgctxt "@action:inmenu"
 msgid "Show Next"
 msgstr "अगला देखाव"
 
-#: Viewer/ViewerWidget.cpp:268
+#: Viewer/ViewerWidget.cpp:279
 #, fuzzy, kde-format
 #| msgid "Skip 10 Forward"
 msgctxt "@action:inmenu"
 msgid "Skip 10 Forward"
 msgstr "10 छोड़ के आगू बढ़व"
 
-#: Viewer/ViewerWidget.cpp:274
+#: Viewer/ViewerWidget.cpp:285
 #, fuzzy, kde-format
 #| msgid "Skip 100 Forward"
 msgctxt "@action:inmenu"
 msgid "Skip 100 Forward"
 msgstr "100 छोड़ के आगू बढ़व"
 
-#: Viewer/ViewerWidget.cpp:280
+#: Viewer/ViewerWidget.cpp:291
 #, fuzzy, kde-format
 #| msgid "Skip 1000 Forward"
 msgctxt "@action:inmenu"
 msgid "Skip 1000 Forward"
 msgstr "1000 छोड़ के आगू बढ़व"
 
-#: Viewer/ViewerWidget.cpp:286
+#: Viewer/ViewerWidget.cpp:297
 #, fuzzy, kde-format
 #| msgid "Show Previous"
 msgctxt "@action:inmenu"
 msgid "Show Previous"
 msgstr "पिछला देखाव"
 
-#: Viewer/ViewerWidget.cpp:292
+#: Viewer/ViewerWidget.cpp:303
 #, fuzzy, kde-format
 #| msgid "Skip 10 Backward"
 msgctxt "@action:inmenu"
 msgid "Skip 10 Backward"
 msgstr "10 छोड़ के पीछू जाव"
 
-#: Viewer/ViewerWidget.cpp:298
+#: Viewer/ViewerWidget.cpp:309
 #, fuzzy, kde-format
 #| msgid "Skip 100 Backward"
 msgctxt "@action:inmenu"
 msgid "Skip 100 Backward"
 msgstr "100 छोड़ के पीछू जाव"
 
-#: Viewer/ViewerWidget.cpp:304
+#: Viewer/ViewerWidget.cpp:315
 #, fuzzy, kde-format
 #| msgid "Skip 1000 Backward"
 msgctxt "@action:inmenu"
 msgid "Skip 1000 Backward"
 msgstr "1000 छोड़ के पीछू जाव"
 
-#: Viewer/ViewerWidget.cpp:310
+#: Viewer/ViewerWidget.cpp:321
 #, fuzzy, kde-format
 #| msgid "Delete image"
 msgctxt "@action:inmenu"
 msgid "Delete Image"
 msgstr "फोटू मेटाव"
 
-#: Viewer/ViewerWidget.cpp:315
+#: Viewer/ViewerWidget.cpp:326
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Remove Image from Display List"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:326
+#: Viewer/ViewerWidget.cpp:337
 #, fuzzy, kde-format
 #| msgid "Zoom"
 msgctxt "@action:inmenu"
 msgid "Zoom"
 msgstr "जूम"
 
-#: Viewer/ViewerWidget.cpp:330
+#: Viewer/ViewerWidget.cpp:341
 #, fuzzy, kde-format
 #| msgid "Zoom In"
 msgctxt "@action:inmenu"
 msgid "Zoom In"
 msgstr "बड़ा आकार दिखाव"
 
-#: Viewer/ViewerWidget.cpp:336
+#: Viewer/ViewerWidget.cpp:347
 #, fuzzy, kde-format
 #| msgid "Zoom Out"
 msgctxt "@action:inmenu"
 msgid "Zoom Out"
 msgstr "आकार छोटा दिखाव"
 
-#: Viewer/ViewerWidget.cpp:342
+#: Viewer/ViewerWidget.cpp:353
 #, fuzzy, kde-format
 #| msgid "Full View"
 msgctxt "@action:inmenu"
 msgid "Full View"
 msgstr "पूरा दृस्य"
 
-#: Viewer/ViewerWidget.cpp:348
+#: Viewer/ViewerWidget.cpp:359
 #, fuzzy, kde-format
 #| msgid "Pixel for Pixel View"
 msgctxt "@action:inmenu"
 msgid "Pixel for Pixel View"
 msgstr "पिक्सेल से पिक्सेल दृस्य"
 
-#: Viewer/ViewerWidget.cpp:354
+#: Viewer/ViewerWidget.cpp:365
 #, fuzzy, kde-format
 #| msgid "Toggle Full Screen"
 msgctxt "@action:inmenu"
 msgid "Toggle Full Screen"
 msgstr "पूरा स्क्रीन टागल करव"
 
-#: Viewer/ViewerWidget.cpp:364
+#: Viewer/ViewerWidget.cpp:375
 #, fuzzy, kde-format
 #| msgid "Slideshow"
 msgctxt "@title:inmenu"
 msgid "Slideshow"
 msgstr "स्लाइड-सो"
 
-#: Viewer/ViewerWidget.cpp:367 Viewer/ViewerWidget.cpp:778
+#: Viewer/ViewerWidget.cpp:378 Viewer/ViewerWidget.cpp:789
 #, fuzzy, kde-format
 #| msgid "Run Slideshow"
 msgctxt "@action:inmenu"
 msgid "Run Slideshow"
 msgstr "स्लाइड सो चलाव"
 
-#: Viewer/ViewerWidget.cpp:372
+#: Viewer/ViewerWidget.cpp:383
 #, fuzzy, kde-format
 #| msgid "Run Faster"
 msgctxt "@action:inmenu"
 msgid "Run Faster"
 msgstr "तेज चलाव"
 
-#: Viewer/ViewerWidget.cpp:377
+#: Viewer/ViewerWidget.cpp:388
 #, fuzzy, kde-format
 #| msgid "Run Slower"
 msgctxt "@action:inmenu"
 msgid "Run Slower"
 msgstr "धीमा चलाव"
 
-#: Viewer/ViewerWidget.cpp:409
+#: Viewer/ViewerWidget.cpp:420
 #, kde-format
 msgid "File not available"
 msgstr "फाइल नइ मिलत"
 
-#: Viewer/ViewerWidget.cpp:460
+#: Viewer/ViewerWidget.cpp:471
 #, fuzzy, kde-format
 #| msgid "%1 to %2  %3"
 msgctxt "@title:window %1 is the filename, %2 its detail info"
 msgid "%1 %2"
 msgstr "%1 से %2  %3"
 
-#: Viewer/ViewerWidget.cpp:476
+#: Viewer/ViewerWidget.cpp:487
 #, fuzzy, kde-format
 #| msgid "Play"
 msgctxt "@action:inmenu Start video playback"
 msgid "Play"
 msgstr "चलाव"
 
-#: Viewer/ViewerWidget.cpp:478
+#: Viewer/ViewerWidget.cpp:489
 #, fuzzy, kde-format
 #| msgid "Pause"
 msgctxt "@action:inmenu Pause video playback"
 msgid "Pause"
 msgstr "ठहरव"
 
-#: Viewer/ViewerWidget.cpp:731
+#: Viewer/ViewerWidget.cpp:742
 #, fuzzy, kde-format
 #| msgid "<b>Sub Categories</b>"
 msgctxt "Basically 'enter a category name'"
 msgid "<b>Setting Category: </b>"
 msgstr "<b>उप स्रेनी</b>"
 
-#: Viewer/ViewerWidget.cpp:736
+#: Viewer/ViewerWidget.cpp:747
 #, fuzzy, kde-format
 #| msgid "<b>Description: </b> "
 msgctxt "Basically 'enter a tag name'"
 msgid "<b>Assigning: </b>"
 msgstr "<b>वर्नन: </b> "
 
-#: Viewer/ViewerWidget.cpp:784
+#: Viewer/ViewerWidget.cpp:795
 #, fuzzy, kde-format
 #| msgid "Stop Slideshow"
 msgctxt "@action:inmenu"
 msgid "Stop Slideshow"
 msgstr "स्लाइड सो बन्द करव"
 
-#: Viewer/ViewerWidget.cpp:1196
+#: Viewer/ViewerWidget.cpp:1207
 #, fuzzy, kde-format
 #| msgid "Seek"
 msgctxt "@title:inmenu"
 msgid "Seek"
 msgstr "देखव"
 
-#: Viewer/ViewerWidget.cpp:1200
+#: Viewer/ViewerWidget.cpp:1211
 #, fuzzy, kde-format
 #| msgid "10 minutes backward"
 msgctxt "@action:inmenu"
 msgid "10 minutes backward"
 msgstr "10 मिनट पीछू"
 
-#: Viewer/ViewerWidget.cpp:1201
+#: Viewer/ViewerWidget.cpp:1212
 #, fuzzy, kde-format
 #| msgid "1 minute backward"
 msgctxt "@action:inmenu"
 msgid "1 minute backward"
 msgstr "१ मिनट पीछू"
 
-#: Viewer/ViewerWidget.cpp:1202
+#: Viewer/ViewerWidget.cpp:1213
 #, fuzzy, kde-format
 #| msgid "10 seconds backward"
 msgctxt "@action:inmenu"
 msgid "10 seconds backward"
 msgstr "१० सेकन्ड पीछू"
 
-#: Viewer/ViewerWidget.cpp:1203
+#: Viewer/ViewerWidget.cpp:1214
 #, fuzzy, kde-format
 #| msgid "1 seconds backward"
 msgctxt "@action:inmenu"
 msgid "1 seconds backward"
 msgstr "१ सेकन्ड पीछू"
 
-#: Viewer/ViewerWidget.cpp:1204
+#: Viewer/ViewerWidget.cpp:1215
 #, fuzzy, kde-format
 #| msgid "100 miliseconds backward"
 msgctxt "@action:inmenu"
 msgid "100 milliseconds backward"
 msgstr "१०० मिलायकन्ड पीछू"
 
-#: Viewer/ViewerWidget.cpp:1205
+#: Viewer/ViewerWidget.cpp:1216
 #, fuzzy, kde-format
 #| msgid "100 miliseconds forward"
 msgctxt "@action:inmenu"
 msgid "100 milliseconds forward"
 msgstr "१०० मिलायकन्ड आगू"
 
-#: Viewer/ViewerWidget.cpp:1206
+#: Viewer/ViewerWidget.cpp:1217
 #, fuzzy, kde-format
 #| msgid "1 seconds forward"
 msgctxt "@action:inmenu"
 msgid "1 seconds forward"
 msgstr "१ सेकन्ड आगू"
 
-#: Viewer/ViewerWidget.cpp:1207
+#: Viewer/ViewerWidget.cpp:1218
 #, fuzzy, kde-format
 #| msgid "10 seconds forward"
 msgctxt "@action:inmenu"
 msgid "10 seconds forward"
 msgstr "१० सेकन्ड आगू"
 
-#: Viewer/ViewerWidget.cpp:1208
+#: Viewer/ViewerWidget.cpp:1219
 #, fuzzy, kde-format
 #| msgid "1 minute forward"
 msgctxt "@action:inmenu"
 msgid "1 minute forward"
 msgstr "१ मिनट आगू"
 
-#: Viewer/ViewerWidget.cpp:1209
+#: Viewer/ViewerWidget.cpp:1220
 #, fuzzy, kde-format
 #| msgid "10 minutes forward"
 msgctxt "@action:inmenu"
 msgid "10 minutes forward"
 msgstr "१० मिनट आगू"
 
-#: Viewer/ViewerWidget.cpp:1234
+#: Viewer/ViewerWidget.cpp:1245
 #, fuzzy, kde-format
 #| msgid "Stop"
 msgctxt "@action:inmenu Stop video playback"
 msgid "Stop"
 msgstr "रुकव"
 
-#: Viewer/ViewerWidget.cpp:1247
+#: Viewer/ViewerWidget.cpp:1258
 #, fuzzy, kde-format
 #| msgid "Display categories in thumbnail view"
 msgctxt "@action:inmenu"
 msgid "Use current frame in thumbnail view"
 msgstr "छोटेफोटू दृस्य मं स्रेनी देखाव"
 
-#: Viewer/ViewerWidget.cpp:1252
+#: Viewer/ViewerWidget.cpp:1263
 #, fuzzy, kde-format
 #| msgid "Restart"
 msgctxt "@action:inmenu Restart video playback."
 msgid "Restart"
 msgstr "फिर से चालू करव"
 
-#: Viewer/ViewerWidget.cpp:1267
+#: Viewer/ViewerWidget.cpp:1278
 #, fuzzy, kde-format
 #| msgid "First"
 msgctxt "@title:inmenu"
 msgid "Filters"
 msgstr "पहिली"
 
-#: Viewer/ViewerWidget.cpp:1270
+#: Viewer/ViewerWidget.cpp:1281
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Remove All Filters"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:1274
+#: Viewer/ViewerWidget.cpp:1285
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Apply Grayscale Filter"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:1279
+#: Viewer/ViewerWidget.cpp:1290
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Apply Contrast Stretching Filter"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:1284
+#: Viewer/ViewerWidget.cpp:1295
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Apply Histogram Equalization Filter"
 msgstr ""
 
-#: Viewer/ViewerWidget.cpp:1289
+#: Viewer/ViewerWidget.cpp:1300
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Apply Monochrome Filter"
@@ -6707,6 +6662,54 @@ msgstr ""
 #| msgid "Converting database"
 msgid "Error while reading database file"
 msgstr "डाटाबेस बदलत हे"
+
+#, fuzzy
+#~| msgid "Export/Copy Images..."
+#~ msgid "Copy image(s) to..."
+#~ msgstr "फोटू निर्यात/नकल करव..."
+
+#, fuzzy
+#~| msgid "Export/Copy Images..."
+#~ msgid "Copy currently selected image to..."
+#~ msgstr "फोटू निर्यात/नकल करव..."
+
+#, fuzzy
+#~| msgid "Export/Copy Images..."
+#~ msgid "Copy all selected images to..."
+#~ msgstr "फोटू निर्यात/नकल करव..."
+
+#, fuzzy
+#~| msgid "Export/Copy Images..."
+#~ msgid "Link currently selected image to..."
+#~ msgstr "फोटू निर्यात/नकल करव..."
+
+#, fuzzy
+#~| msgid "Export/Copy Images..."
+#~ msgid "Link image(s) to..."
+#~ msgstr "फोटू निर्यात/नकल करव..."
+
+#, fuzzy
+#~| msgid "Export/Copy Images..."
+#~ msgid "Link all selected images to..."
+#~ msgstr "फोटू निर्यात/नकल करव..."
+
+#, fuzzy
+#~| msgid "Export/Copy Images..."
+#~ msgctxt "@title:window"
+#~ msgid "Copy Image to..."
+#~ msgstr "फोटू निर्यात/नकल करव..."
+
+#, fuzzy
+#~| msgid "Export/Copy Images..."
+#~ msgctxt "@title:window"
+#~ msgid "Link Image to..."
+#~ msgstr "फोटू निर्यात/नकल करव..."
+
+#, fuzzy
+#~| msgid "Export/Copy Images..."
+#~ msgctxt "@action:inmenu"
+#~ msgid "Copy Image to..."
+#~ msgstr "फोटू निर्यात/नकल करव..."
 
 #, fuzzy
 #~| msgid "Current EXIF Label Search: "
