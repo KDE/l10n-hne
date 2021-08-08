@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konquest\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-01-01 02:18+0100\n"
+"POT-Creation-Date: 2021-08-08 00:14+0000\n"
 "PO-Revision-Date: 2009-02-26 10:55+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -30,7 +30,9 @@ msgid "Your emails"
 msgstr "raviratlami@aol.in,"
 
 #: dialogs/fleetdlg.cc:33
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Fleet Overview"
+msgctxt "@title:window"
 msgid "Fleet Overview"
 msgstr "फ्लीट ओवरव्यू"
 
@@ -119,7 +121,8 @@ msgid "&Height:"
 msgstr "ऊंचाईः (&H)"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: dialogs/newGameDialog.ui:153
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: dialogs/newGameDialog.ui:153 dialogs/newGameDialog.ui:287
 #, fuzzy, kde-format
 #| msgid "Production: %1"
 msgid "Production:"
@@ -129,7 +132,7 @@ msgstr "उत्पादनः %1"
 #: dialogs/newGameDialog.ui:192
 #, fuzzy, kde-format
 #| msgid "Kill Percentage"
-msgid "Kill Percentage:"
+msgid "Kill percentage:"
 msgstr "मार प्रतिसत"
 
 #. i18n: ectx: property (text), widget (QPushButton, randomizeMap)
@@ -142,7 +145,7 @@ msgstr ""
 #: dialogs/newGameDialog.ui:209
 #, fuzzy, kde-format
 #| msgid "Owner: %1"
-msgid "Owner"
+msgid "Owner:"
 msgstr "मालिक: %1"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
@@ -154,20 +157,20 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, BlindMapCB)
 #: dialogs/newGameDialog.ui:234
 #, kde-format
-msgid "Blind Map"
+msgid "Blind map"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, CumulativeProductionCB)
 #: dialogs/newGameDialog.ui:241
 #, fuzzy, kde-format
 #| msgid "Production: %1"
-msgid "Cumulative Production"
+msgid "Cumulative production"
 msgstr "उत्पादनः %1"
 
 #. i18n: ectx: property (text), widget (QCheckBox, ProductionAfterConquereCB)
 #: dialogs/newGameDialog.ui:248
 #, kde-format
-msgid "Production After Capture"
+msgid "Production after capture"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
@@ -181,22 +184,15 @@ msgstr "न्यूट्रल ग्रह: (&N)"
 #: dialogs/newGameDialog.ui:273
 #, fuzzy, kde-format
 #| msgid "Ships"
-msgid "Show Ships"
+msgid "Show ships"
 msgstr "जहाज"
 
 #. i18n: ectx: property (text), widget (QCheckBox, NeutralsShowStatsCB)
 #: dialogs/newGameDialog.ui:280
 #, fuzzy, kde-format
 #| msgid "&Show Standings"
-msgid "Show Stats"
+msgid "Show stats"
 msgstr "स्टैंडिंग्स देखाव (&S)"
-
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: dialogs/newGameDialog.ui:287
-#, fuzzy, kde-format
-#| msgid "Production: %1"
-msgid "Production"
-msgstr "उत्पादनः %1"
 
 #: dialogs/newgamedlg.cc:80
 #, kde-format
@@ -216,7 +212,9 @@ msgid "Type"
 msgstr "किसिम"
 
 #: dialogs/newgamedlg.cc:315
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Start New Game"
+msgctxt "@title:window"
 msgid "Start New Game"
 msgstr "नवा खेल चालू करव"
 
@@ -311,12 +309,16 @@ msgid "Do you wish to retire this game?"
 msgstr "का आप मन एखर से निवृत्त होना चाहथो ?"
 
 #: gameview.cc:524
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "End Game"
+msgctxt "@title:window"
 msgid "End Game"
 msgstr "खेल खतम करव"
 
 #: gameview.cc:552
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Final Standings"
+msgctxt "@title:window"
 msgid "Final Standings"
 msgstr "फाइनल स्टैंडिंग्स"
 
@@ -412,19 +414,28 @@ msgstr ""
 msgid "Main Toolbar"
 msgstr "मुख्य औजार पट्टी"
 
-#: mainwin.cc:33 mainwin.cc:40
+#: mainwin.cc:33
+#, fuzzy, kde-format
+#| msgid "Galactic Conquest"
+msgctxt "@title:window"
+msgid "Galactic Conquest"
+msgstr "गेलेक्टिक कानक्वेस्ट"
+
+#: mainwin.cc:40
 #, kde-format
 msgid "Galactic Conquest"
 msgstr "गेलेक्टिक कानक्वेस्ट"
 
 #: mainwin.cc:74
-#, kde-format
-msgid "&Measure Distance"
+#, fuzzy, kde-format
+#| msgid "&Measure Distance"
+msgid "&Measure Distance..."
 msgstr "दूरी मापें (&M)"
 
 #: mainwin.cc:80
-#, kde-format
-msgid "&Fleet Overview"
+#, fuzzy, kde-format
+#| msgid "&Fleet Overview"
+msgid "&Fleet Overview..."
 msgstr "फ्लीट ओवरव्यू (&F)"
 
 #: mainwin.cc:89
@@ -590,6 +601,11 @@ msgid ""
 "Current\n"
 "Fleet Size"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Production: %1"
+#~ msgid "Production"
+#~ msgstr "उत्पादनः %1"
 
 #~ msgid "Current Standings"
 #~ msgstr "अभी हाल के स्टैंडिंग्स"
