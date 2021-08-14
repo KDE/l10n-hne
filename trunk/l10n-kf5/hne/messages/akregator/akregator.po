@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-08 00:17+0000\n"
+"POT-Creation-Date: 2021-08-14 00:17+0000\n"
 "PO-Revision-Date: 2009-02-27 17:34+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1769,6 +1769,7 @@ msgstr "केडीई फीड रीडर"
 #: src/articleviewer-ng/webengine/articleviewerwebengine.cpp:190
 #, fuzzy, kde-format
 #| msgid "&Save Link As..."
+msgctxt "@title:window"
 msgid "Save As"
 msgstr "संकली अइसन सहेजव (&S)"
 
@@ -2043,7 +2044,7 @@ msgid_plural "Days"
 msgstr[0] "दिन"
 msgstr[1] "दिन"
 
-#: src/feed/feedpropertiesdialog.cpp:62
+#: src/feed/feedpropertiesdialog.cpp:62 src/feed/feedpropertiesdialog.cpp:116
 #, fuzzy, kde-format
 #| msgid "Feed Properties"
 msgctxt "@title:window"
@@ -2073,14 +2074,10 @@ msgid_plural " articles"
 msgstr[0] "1 आलेख"
 msgstr[1] "1 आलेख"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, Akregator::FeedPropertiesWidgetBase)
-#: src/feed/feedpropertiesdialog.cpp:116 src/ui/feedpropertieswidgetbase.ui:20
-#, kde-format
-msgid "Feed Properties"
-msgstr "फीड गुन"
-
 #: src/feed/feedpropertiesdialog.cpp:116
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Properties of %1"
+msgctxt "@title:window"
 msgid "Properties of %1"
 msgstr " %1 के गुन"
 
@@ -2402,6 +2399,12 @@ msgstr "नवा स्त्रोत जोड़व"
 #, kde-format
 msgid "Feed &URL:"
 msgstr "फीड यूआरएल: (&U)"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, Akregator::FeedPropertiesWidgetBase)
+#: src/ui/feedpropertieswidgetbase.ui:20
+#, kde-format
+msgid "Feed Properties"
+msgstr "फीड गुन"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab1)
 #: src/ui/feedpropertieswidgetbase.ui:42
