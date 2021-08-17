@@ -50,7 +50,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-14 00:15+0000\n"
+"POT-Creation-Date: 2021-08-17 00:15+0000\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18159,11 +18159,9 @@ msgstr "फोटू आयात करव"
 
 #. i18n: ectx: property (text), widget (QPushButton, bnDelete)
 #. i18n: ectx: property (text), widget (QPushButton, deleteAllAssistantsButton)
-#. i18n: ectx: property (text), widget (QRadioButton, btnAllView)
 #: libs/resources/KisTagModel.cpp:117 libs/resources/KisTagModel.cpp:279
 #: libs/ui/widgets/kis_paintop_presets_editor.cpp:593
 #: plugins/assistants/Assistants/AssistantsToolOptions.ui:262
-#: plugins/dockers/storyboarddocker/wdgarrangemenu.ui:70
 #: plugins/tools/defaulttool/referenceimagestool/WdgToolOptions.ui:207
 #, kde-format
 msgid "All"
@@ -20347,10 +20345,8 @@ msgid "Snap to:"
 msgstr "ग्रिड मं स्नेप करव"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#. i18n: ectx: property (text), widget (QRadioButton, btnGridMode)
 #: libs/ui/canvas/kis_guides_manager.cpp:776
 #: plugins/dockers/griddocker/grid_config_widget.ui:43
-#: plugins/dockers/storyboarddocker/wdgarrangemenu.ui:49
 #, kde-format
 msgid "Grid"
 msgstr "ग्रिड"
@@ -21553,11 +21549,6 @@ msgstr "नाम:"
 #, fuzzy, kde-format
 msgid "Vector Layer %1"
 msgstr "लेयर %1"
-
-#: libs/ui/flake/kis_shape_layer.cc:617
-#, kde-format
-msgid "No store backend"
-msgstr "कोई भंडार बैकएन्ड नइ"
 
 #: libs/ui/flake/kis_take_all_shapes_command.cpp:15
 #, fuzzy
@@ -36696,45 +36687,62 @@ msgctxt "Remove current scene from storyboards"
 msgid "Remove Scene"
 msgstr "खन्ड मेटाव"
 
-#. i18n: ectx: property (title), widget (QGroupBox, buttonGroup1)
 #. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: ectx: property (text), widget (QToolButton, btnArrange)
 #: plugins/dockers/storyboarddocker/wdgarrangemenu.ui:28
-#: plugins/dockers/storyboarddocker/wdgstoryboarddock.ui:76
-#: plugins/filters/dodgeburn/DodgeBurnConfigurationBaseWidget.ui:21
-#: plugins/python/channels2layers/channels2layers.py:1076
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Mode"
+msgctxt "list view layout mode"
 msgid "Mode"
 msgstr "मोड"
 
 #. i18n: ectx: property (text), widget (QRadioButton, btnColumnMode)
 #: plugins/dockers/storyboarddocker/wdgarrangemenu.ui:35
 #, fuzzy, kde-format
+msgctxt "list view layout mode"
 msgid "Column"
 msgstr "मान"
 
 #. i18n: ectx: property (text), widget (QRadioButton, btnRowMode)
 #: plugins/dockers/storyboarddocker/wdgarrangemenu.ui:42
 #, fuzzy, kde-format
+msgctxt "list view layout mode"
 msgid "Row"
 msgstr "निचला"
+
+#. i18n: ectx: property (text), widget (QRadioButton, btnGridMode)
+#: plugins/dockers/storyboarddocker/wdgarrangemenu.ui:49
+#, fuzzy, kde-format
+#| msgid "Grid"
+msgctxt "list view layout mode"
+msgid "Grid"
+msgstr "ग्रिड"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: plugins/dockers/storyboarddocker/wdgarrangemenu.ui:63
 #, fuzzy, kde-format
+msgctxt "list view fields visibility"
 msgid "View"
 msgstr "दृस्य"
+
+#. i18n: ectx: property (text), widget (QRadioButton, btnAllView)
+#: plugins/dockers/storyboarddocker/wdgarrangemenu.ui:70
+#, kde-format
+msgctxt "list view fields visibility"
+msgid "All"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, btnThumbnailsView)
 #: plugins/dockers/storyboarddocker/wdgarrangemenu.ui:77
 #, fuzzy, kde-format
 #| msgid "Import Image"
+msgctxt "list view fields visibility"
 msgid "Thumbnails Only"
 msgstr "फोटू आयात करव"
 
 #. i18n: ectx: property (text), widget (QRadioButton, btnCommentsView)
 #: plugins/dockers/storyboarddocker/wdgarrangemenu.ui:84
 #, fuzzy, kde-format
+msgctxt "list view fields visibility"
 msgid "Comments Only"
 msgstr "विसय-चीज टेबल मं सामिल करव"
 
@@ -36860,6 +36868,15 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Comments"
 msgstr "विसय-चीज टेबल मं सामिल करव"
+
+#. i18n: ectx: property (title), widget (QGroupBox, buttonGroup1)
+#. i18n: ectx: property (text), widget (QToolButton, btnArrange)
+#: plugins/dockers/storyboarddocker/wdgstoryboarddock.ui:76
+#: plugins/filters/dodgeburn/DodgeBurnConfigurationBaseWidget.ui:21
+#: plugins/python/channels2layers/channels2layers.py:1076
+#, kde-format
+msgid "Mode"
+msgstr "मोड"
 
 #: plugins/dockers/svgcollectiondocker/SvgSymbolCollectionDocker.cpp:156
 #, fuzzy, kde-format
@@ -54582,6 +54599,9 @@ msgstr "सब्बो जूम करव"
 msgctxt "action"
 msgid "Reference Images Tool"
 msgstr "संदर्भ फोटू:"
+
+#~ msgid "No store backend"
+#~ msgstr "कोई भंडार बैकएन्ड नइ"
 
 #, fuzzy
 #~| msgid "Import Image"
