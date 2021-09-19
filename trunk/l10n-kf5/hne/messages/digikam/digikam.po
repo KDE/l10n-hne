@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-18 00:15+0000\n"
+"POT-Creation-Date: 2021-09-19 00:18+0000\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -578,7 +578,7 @@ msgid "Open..."
 msgstr "एखर साथ खोलव"
 
 #: core/app/items/utils/contextmenuhelper.cpp:282
-#: core/showfoto/folderview/showfotofolderviewlist.cpp:121
+#: core/showfoto/folderview/showfotofolderviewlist.cpp:122
 #, fuzzy, kde-format
 #| msgid "Open in File Manager"
 msgctxt "@action: context menu"
@@ -24397,6 +24397,7 @@ msgstr ""
 #: core/dplugins/rawimport/native/rawsettingsbox.cpp:271
 #: core/dplugins/rawimport/native/rawsettingsbox.cpp:323
 #: core/libs/tags/widgets/tageditdlg.cpp:200
+#: core/showfoto/folderview/showfotofolderviewbookmarkdlg.cpp:140
 #: core/utilities/searchwindow/searchview.cpp:517
 #, kde-format
 msgid "Reset"
@@ -36457,6 +36458,7 @@ msgid ""
 msgstr ""
 
 #: core/libs/tags/widgets/tageditdlg.cpp:189
+#: core/showfoto/folderview/showfotofolderviewbookmarkdlg.cpp:129
 #, kde-format
 msgid "&Icon:"
 msgstr "चिनहाः (&I)"
@@ -43521,135 +43523,195 @@ msgctxt "@info: search text bar"
 msgid "Case sensitive"
 msgstr "संवेदनसीलता"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:105
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:107
 #, fuzzy, kde-format
 msgctxt "action"
 msgid "Go to Previous"
 msgstr "पिछला"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:106
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:108
 #, kde-format
 msgctxt "@info"
 msgid "Go to previous place in folder-view hierarchy"
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:122
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:124
 #, fuzzy, kde-format
 #| msgid "Go to the next item"
 msgctxt "action"
 msgid "Go to Next"
 msgstr "अगला चीज मं जाव"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:123
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:125
 #, kde-format
 msgctxt "@info"
 msgid "Go to next place in folder-view hierarchy"
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:139
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:141
 #, kde-format
 msgctxt "action"
 msgid "Go Up"
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:140
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:142
 #, kde-format
 msgctxt "@info"
 msgid "Go up in folder-view hierarchy"
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:156
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:158
 #, kde-format
 msgctxt "action"
 msgid "Go Home"
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:157
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:159
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Go to home directory"
 msgstr "फाइल नाम"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:185
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:187
 #, fuzzy, kde-format
 msgctxt "@info: folder-view"
 msgid "Folder-View Options"
 msgstr "इंटरफेस विकल्प"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:188
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:190
 #, kde-format
 msgctxt "@info: folder-view"
 msgid "Selection options to render folder-view."
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:193
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:195
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Short View"
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:196
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:198
 #, kde-format
 msgctxt "@info"
 msgid "Switch Folder-View to Short Mode"
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:202
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:204
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Detailed View"
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:205
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:207
 #, kde-format
 msgctxt "@info"
 msgid "Switch Folder-View to Detailed Mode"
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:213
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:215
+#, fuzzy, kde-format
+msgctxt "@action:inmenu"
+msgid "Show Bookmarks"
+msgstr "फोटू टैग देखाव"
+
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:218
+#, kde-format
+msgctxt "@info"
+msgid "Show or Hide the Bookmarked places"
+msgstr ""
+
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:223
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "More Settings..."
 msgstr "सेटिंग"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:216
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:226
 #, kde-format
 msgctxt "@info"
 msgid "Open configure dialog with more settings options"
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:230
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:240
 #, fuzzy, kde-format
 #| msgid "Content"
 msgctxt "action"
 msgid "Load Contents"
 msgstr "सामग्री"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:231
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:241
 #, fuzzy, kde-format
 #| msgid "Content"
 msgctxt "@info"
 msgid "Load Contents to Editor"
 msgstr "सामग्री"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:250
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:260
 #, fuzzy, kde-format
 #| msgid "Custom ratio:"
 msgctxt "@info"
 msgid "Enter the customized folder-view path or select from history"
 msgstr "मनमाफिक अनुपात:"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:251
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:261
 #, fuzzy, kde-format
 msgctxt "@info: folder-view path edit"
 msgid "Enter local path here..."
 msgstr "अपन पाठ इहां भरव!"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:348
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:374
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Icon Size: %1"
 msgstr "आकारः"
+
+#: core/showfoto/folderview/showfotofolderviewbookmarkdlg.cpp:99
+#, fuzzy, kde-format
+msgid "New Bookmark"
+msgstr "कैमरा जोड़व..."
+
+#: core/showfoto/folderview/showfotofolderviewbookmarkdlg.cpp:103
+#, fuzzy, kde-format
+msgid "Edit Bookmark"
+msgstr "कैमरा जोड़व..."
+
+#: core/showfoto/folderview/showfotofolderviewbookmarkdlg.cpp:120
+#, fuzzy, kde-format
+#| msgid "&Title:"
+msgctxt "@label: bookmark properties"
+msgid "&Title:"
+msgstr "सीर्सकः (&T)"
+
+#: core/showfoto/folderview/showfotofolderviewbookmarkdlg.cpp:123
+#, fuzzy, kde-format
+#| msgid "Enter tag name here..."
+msgid "Enter bookmark name here..."
+msgstr "अपन टैग नाम इहां भरव..."
+
+#: core/showfoto/folderview/showfotofolderviewbookmarkdlg.cpp:153
+#, fuzzy, kde-format
+#| msgid "Path:"
+msgctxt "@label: bookmark properties"
+msgid "&Path:"
+msgstr "पथः"
+
+#: core/showfoto/folderview/showfotofolderviewbookmarkdlg.cpp:158
+#, fuzzy, kde-format
+msgid "Enter bookmark path here..."
+msgstr "अपन पाठ इहां भरव!"
+
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:127
+#, fuzzy, kde-format
+msgid "Places"
+msgstr "बदलव (&R)"
+
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:132
+#: core/utilities/setup/album/setupcategory.cpp:99
+#, kde-format
+msgid ""
+"You can add or remove Album category types here to improve how your Albums "
+"are sorted in digiKam."
+msgstr ""
 
 #: core/showfoto/folderview/showfotofolderviewlist.cpp:108
 #, fuzzy, kde-format
@@ -43657,7 +43719,7 @@ msgctxt "@title"
 msgid "Folder-View Options"
 msgstr "इंटरफेस विकल्प"
 
-#: core/showfoto/folderview/showfotofolderviewsidebar.cpp:336
+#: core/showfoto/folderview/showfotofolderviewsidebar.cpp:348
 #, fuzzy, kde-format
 #| msgid "Folder: "
 msgctxt "@title: file system tree"
@@ -52743,13 +52805,6 @@ msgstr ""
 msgid "Manage categories to sort and re-arrange album tree-view."
 msgstr ""
 
-#: core/utilities/setup/album/setupcategory.cpp:99
-#, kde-format
-msgid ""
-"You can add or remove Album category types here to improve how your Albums "
-"are sorted in digiKam."
-msgstr ""
-
 #: core/utilities/setup/album/setupcategory.cpp:105
 #: core/utilities/setup/camera/setupcamera.cpp:325
 #: core/utilities/setup/camera/setupcamera.cpp:443
@@ -57734,10 +57789,6 @@ msgstr ""
 #~ msgstr "पताः"
 
 #, fuzzy
-#~ msgid "Show All Bookmarks"
-#~ msgstr "फोटू टैग देखाव"
-
-#, fuzzy
 #~ msgid "Selected Images"
 #~ msgstr "फोटू चुनव"
 
@@ -59924,9 +59975,6 @@ msgstr ""
 
 #~ msgid "&New"
 #~ msgstr "नवा (&N)"
-
-#~ msgid "Path:"
-#~ msgstr "पथः"
 
 #, fuzzy
 #~| msgid "digiKam cannot use your home folder as the Album Library folder."
