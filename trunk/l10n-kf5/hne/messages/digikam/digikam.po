@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-10-07 00:15+0000\n"
+"POT-Creation-Date: 2021-10-08 00:15+0000\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -579,7 +579,7 @@ msgstr "एखर साथ खोलव"
 
 #: core/app/items/utils/contextmenuhelper.cpp:282
 #: core/showfoto/folderview/showfotofolderviewbookmarklist.cpp:144
-#: core/showfoto/folderview/showfotofolderviewlist.cpp:169
+#: core/showfoto/folderview/showfotofolderviewlist.cpp:170
 #: core/showfoto/stackview/showfotostackviewfavoritelist.cpp:141
 #: core/showfoto/stackview/showfotostackviewlist.cpp:406
 #, fuzzy, kde-format
@@ -1255,7 +1255,6 @@ msgstr "एलबम गुन..."
 
 #: core/app/items/utils/tooltipfiller.cpp:583
 #: core/app/items/utils/tooltipfiller.cpp:662
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:113
 #, fuzzy, kde-format
 #| msgid "Name:"
 msgctxt "@info: item properties"
@@ -1263,7 +1262,6 @@ msgid "Name:"
 msgstr "नाम:"
 
 #: core/app/items/utils/tooltipfiller.cpp:589
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:116
 #: core/utilities/fuzzysearch/fuzzysearchview_sketch.cpp:80
 #, kde-format
 msgid "Items:"
@@ -38749,7 +38747,7 @@ msgid "Mod.: %1"
 msgstr "परिवर्धित: %1"
 
 #: core/libs/widgets/itemview/itemviewdelegate.cpp:427
-#: core/showfoto/main/showfoto.cpp:597
+#: core/showfoto/main/showfoto.cpp:614
 #: core/showfoto/thumbbar/showfotoitemviewdelegate.cpp:316
 #: core/utilities/import/items/itemviewimportdelegate.cpp:368
 #, fuzzy, kde-format
@@ -43639,13 +43637,13 @@ msgstr ""
 #: core/showfoto/folderview/showfotofolderviewbar.cpp:247
 #, fuzzy, kde-format
 msgctxt "@info: folder-view"
-msgid "Folder-View Run Actions"
+msgid "Stack Options"
 msgstr "इंटरफेस विकल्प"
 
 #: core/showfoto/folderview/showfotofolderviewbar.cpp:250
 #, kde-format
 msgctxt "@info: folder-view"
-msgid "Run actions to handle folder-view contents."
+msgid "Stack options to handle folder-view contents."
 msgstr ""
 
 #: core/showfoto/folderview/showfotofolderviewbar.cpp:254
@@ -43666,80 +43664,101 @@ msgstr "सामग्री"
 #, fuzzy, kde-format
 #| msgid "Content"
 msgctxt "@info"
-msgid "Load Contents to Editor"
+msgid "Load contents to editor stack"
 msgstr "सामग्री"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:272
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:265
+#, fuzzy, kde-format
+#| msgid "Content"
+msgctxt "@action:inmenu"
+msgid "Append Contents"
+msgstr "सामग्री"
+
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:268
+#, fuzzy, kde-format
+#| msgid "Content"
+msgctxt "@action"
+msgid "Append Contents"
+msgstr "सामग्री"
+
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:269
+#, fuzzy, kde-format
+#| msgid "Content"
+msgctxt "@info"
+msgid "Append contents to editor stack"
+msgstr "सामग्री"
+
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:283
 #, fuzzy, kde-format
 #| msgid "Custom ratio:"
 msgctxt "@info"
 msgid "Enter the customized folder-view path or select from history"
 msgstr "मनमाफिक अनुपात:"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:273
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:284
 #, fuzzy, kde-format
 msgctxt "@info: folder-view path edit"
 msgid "Enter local path here..."
 msgstr "अपन पाठ इहां भरव!"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:285
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:296
 #, fuzzy, kde-format
 #| msgid "JPEG 2000 quality:"
 msgctxt "@item: filter type mime"
 msgid "JPEG images"
 msgstr "जेपीईजी 2000 गुन:"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:286
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:297
 #, fuzzy, kde-format
 msgctxt "@item: filter type mime"
 msgid "TIFF images"
 msgstr "टिफ फाइल मन ल"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:287
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:298
 #, fuzzy, kde-format
 msgctxt "@item: filter type mime"
 msgid "PNG images"
 msgstr "पीएनजी फाइल मन ल"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:288
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:299
 #, fuzzy, kde-format
 msgctxt "@item: filter type mime"
 msgid "PGF images"
 msgstr "पीएनजी फाइल मन ल"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:289
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:300
 #, fuzzy, kde-format
 msgctxt "@item: filter type mime"
 msgid "HEIF images"
 msgstr "टिफ फाइल मन ल"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:290
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:301
 #, fuzzy, kde-format
 msgctxt "@item: filter type mime"
 msgid "DNG images"
 msgstr "पीएनजी फाइल मन ल"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:291
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:302
 #, fuzzy, kde-format
 #| msgid "RAW Image"
 msgctxt "@item: filter type mime"
 msgid "RAW images"
 msgstr "रा फोटू"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:300
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:311
 #, fuzzy, kde-format
 #| msgid "RAW Image"
 msgctxt "@item: filter type mime"
 msgid "No RAW images"
 msgstr "रा फोटू"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:307
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:318
 #, fuzzy, kde-format
 msgctxt "@item: filter type mime"
 msgid "All supported files"
 msgstr "फाइल छोड़ा %1"
 
-#: core/showfoto/folderview/showfotofolderviewbar.cpp:447
+#: core/showfoto/folderview/showfotofolderviewbar.cpp:458
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Icon Size: %1"
@@ -43778,7 +43797,7 @@ msgid "The bookmark title which must be unique and not empty"
 msgstr ""
 
 #: core/showfoto/folderview/showfotofolderviewbookmarkdlg.cpp:137
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:151
+#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:164
 #, fuzzy, kde-format
 #| msgid "&Icon:"
 msgctxt "@label"
@@ -43786,7 +43805,7 @@ msgid "&Icon:"
 msgstr "चिनहाः (&I)"
 
 #: core/showfoto/folderview/showfotofolderviewbookmarkdlg.cpp:145
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:159
+#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:172
 #, fuzzy, kde-format
 #| msgid "Reset"
 msgctxt "@action:button"
@@ -43840,7 +43859,7 @@ msgid "Add Bookmark"
 msgstr "कैमरा जोड़व..."
 
 #: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:115
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:118
+#: core/showfoto/stackview/showfotostackviewfavorites.cpp:105
 #, fuzzy, kde-format
 #| msgid "Add a new value to the list"
 msgctxt "@info"
@@ -43854,7 +43873,7 @@ msgid "Del Bookmark"
 msgstr "कैमरा जोड़व..."
 
 #: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:132
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:136
+#: core/showfoto/stackview/showfotostackviewfavorites.cpp:123
 #, fuzzy, kde-format
 #| msgid "Remove the current selected value from the list"
 msgctxt "@info"
@@ -43868,7 +43887,7 @@ msgid "Edit Bookmark"
 msgstr "कैमरा जोड़व..."
 
 #: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:150
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:154
+#: core/showfoto/stackview/showfotostackviewfavorites.cpp:141
 #, fuzzy, kde-format
 #| msgid "Remove the current selected value from the list"
 msgctxt "@info"
@@ -43966,13 +43985,13 @@ msgctxt "@title"
 msgid "Folder-View Options"
 msgstr "इंटरफेस विकल्प"
 
-#: core/showfoto/folderview/showfotofolderviewlist.cpp:162
+#: core/showfoto/folderview/showfotofolderviewlist.cpp:163
 #, fuzzy, kde-format
 msgctxt "@action: context menu"
 msgid "Add Bookmark"
 msgstr "कैमरा जोड़व..."
 
-#: core/showfoto/folderview/showfotofolderviewsidebar.cpp:374
+#: core/showfoto/folderview/showfotofolderviewsidebar.cpp:390
 #, fuzzy, kde-format
 #| msgid "Folder: "
 msgctxt "@title: file system tree"
@@ -44010,60 +44029,60 @@ msgstr ""
 msgid "Open Images From Folder"
 msgstr "फोल्डर से फोटू खोलव"
 
-#: core/showfoto/main/showfoto.cpp:533
+#: core/showfoto/main/showfoto.cpp:550
 #, fuzzy, kde-format
 msgid "There is no item to process."
 msgstr "ये फोल्डर मं वहां कोनो फोटू नइ हे."
 
-#: core/showfoto/main/showfoto.cpp:555
+#: core/showfoto/main/showfoto.cpp:572
 #, fuzzy, kde-format
 #| msgid "Error Saving File"
 msgid "Error Loading File"
 msgstr "फाइल सहेजे मं गलती होइस"
 
-#: core/showfoto/main/showfoto.cpp:556
+#: core/showfoto/main/showfoto.cpp:573
 #, kde-format
 msgid ""
 "Failed to load file: %1\n"
 "Remote file handling is not supported"
 msgstr ""
 
-#: core/showfoto/main/showfoto.cpp:596
+#: core/showfoto/main/showfoto.cpp:613
 #, fuzzy, kde-format
 msgctxt "unknown image dimensions"
 msgid "Unknown"
 msgstr "अग्यात"
 
-#: core/showfoto/main/showfoto.cpp:635
+#: core/showfoto/main/showfoto.cpp:652
 #: core/utilities/imageeditor/main/imagewindow.cpp:500
 #, kde-format
 msgctxt "<Image file name> (<Image number> of <Images in album>)"
 msgid "%1 (%2 of %3)"
 msgstr "%1 (%2 of %3)"
 
-#: core/showfoto/main/showfoto.cpp:765
+#: core/showfoto/main/showfoto.cpp:782
 #, kde-format
 msgid "Error Saving File"
 msgstr "फाइल सहेजे मं गलती होइस"
 
-#: core/showfoto/main/showfoto.cpp:766
+#: core/showfoto/main/showfoto.cpp:783
 #, fuzzy, kde-format
 msgid "Failed to save file: %1"
 msgstr "%1 मं फाइल सूची बनाना फेल"
 
-#: core/showfoto/main/showfoto.cpp:767
+#: core/showfoto/main/showfoto.cpp:784
 #, kde-format
 msgid "Remote file handling is not supported"
 msgstr ""
 
-#: core/showfoto/main/showfoto.cpp:789
+#: core/showfoto/main/showfoto.cpp:806
 #: core/utilities/imageeditor/main/imagewindow.cpp:583
 #: core/utilities/imageeditor/main/imagewindow.cpp:698
 #, fuzzy, kde-format
 msgid "Image saved successfully"
 msgstr "फाइल %1 डाउनलोड करत हे..."
 
-#: core/showfoto/main/showfoto.cpp:872
+#: core/showfoto/main/showfoto.cpp:889
 #, kde-format
 msgid ""
 "About to delete file \"%1\"\n"
@@ -44072,7 +44091,7 @@ msgstr ""
 "आप फाइल \"%1\" ल मेटाय वाले हे.\n"
 "का आप मन सुनिस्चित हो?"
 
-#: core/showfoto/main/showfoto.cpp:888
+#: core/showfoto/main/showfoto.cpp:905
 #, fuzzy, kde-format
 #| msgid "Cannot delete Root Tag"
 msgid "Cannot delete \"%1\""
@@ -44794,65 +44813,90 @@ msgid ""
 msgstr ""
 "फोटो खींचे बर उपयोग मं ले गे केमरा सफेद बैलेंस सेटिंग प्रदर्सित करे बर ए विकल्प सेट करव."
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:112
+#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:113
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "New Favorite"
 msgstr "विसेसता"
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:116
+#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:117
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "Edit Favorite"
 msgstr "फोटू फाइल मन ल"
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:132
+#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:133
 #, fuzzy, kde-format
-msgctxt "@label: favorite properties"
+msgctxt "@label: favorite title properties"
 msgid "&Name:"
 msgstr "नाम:"
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:135
+#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:136
 #, fuzzy, kde-format
 #| msgid "Enter tag name here..."
 msgctxt "#info"
 msgid "Enter favorite name here..."
 msgstr "अपन टैग नाम इहां भरव..."
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:136
+#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:137
 #, kde-format
 msgctxt "#info"
 msgid "The favorite name which must be unique and not empty"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:142
+#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:143
 #, fuzzy, kde-format
-msgctxt "@label: favorite properties"
+msgctxt "@label: favorite caption properties"
 msgid "&Description:"
 msgstr "वर्नन"
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:145
+#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:146
 #, fuzzy, kde-format
 #| msgid "Enter tag name here..."
 msgctxt "#info"
 msgid "Enter favorite description here..."
 msgstr "अपन टैग नाम इहां भरव..."
 
-#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:172
+#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:152
+#, fuzzy, kde-format
+msgctxt "@label: favorite date properties"
+msgid "&Created:"
+msgstr "सृजितः"
+
+#: core/showfoto/stackview/showfotostackviewfavoritedlg.cpp:185
 #, fuzzy, kde-format
 msgctxt "@label: favorites properties"
 msgid "&Items:"
 msgstr "चीज"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:111
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:123
 #, fuzzy, kde-format
 #| msgid "File Properties"
+msgctxt "@title"
 msgid "Favorite Properties"
 msgstr "फाइल गुन"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:119
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:125
 #, fuzzy, kde-format
-msgctxt "@info: item properties"
+msgctxt "@info: item title property"
+msgid "Name:"
+msgstr "नाम:"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:128
+#, fuzzy, kde-format
+msgctxt "@info: item date property"
+msgid "Created:"
+msgstr "सृजितः"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:131
+#, fuzzy, kde-format
+msgctxt "@info; item count elements property"
+msgid "Items:"
+msgstr "चीज"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitem.cpp:134
+#, fuzzy, kde-format
+msgctxt "@info: item caption property"
 msgid "Description:"
 msgstr "वर्नन"
 
@@ -44862,50 +44906,50 @@ msgctxt "@info"
 msgid "You can add or remove favorite stacks here."
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:108
+#: core/showfoto/stackview/showfotostackviewfavorites.cpp:95
 #, kde-format
 msgctxt "@title"
 msgid "Favorites"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:117
+#: core/showfoto/stackview/showfotostackviewfavorites.cpp:104
 #, fuzzy, kde-format
 #| msgid "Add Folders..."
 msgctxt "@action"
 msgid "Add Favorite"
 msgstr "फोल्डर जोड़व..."
 
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:135
+#: core/showfoto/stackview/showfotostackviewfavorites.cpp:122
 #, kde-format
 msgctxt "@action"
 msgid "Del Favorite"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:153
+#: core/showfoto/stackview/showfotostackviewfavorites.cpp:140
 #, fuzzy, kde-format
 msgctxt "@action"
 msgid "Edit Favorite"
 msgstr "फोटू फाइल मन ल"
 
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:262
+#: core/showfoto/stackview/showfotostackviewfavorites.cpp:251
 #, fuzzy, kde-format
 msgctxt "@title: window"
 msgid "Confirm Favorite Deletion"
 msgstr "कोरिलेसन:"
 
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:263
+#: core/showfoto/stackview/showfotostackviewfavorites.cpp:252
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Are you sure you want to remove the favorite \"%1\"?"
 msgstr "का आप मन सही मं चुने गे खोज \"%1\" ल मिटाना चाहथो?"
 
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:400
+#: core/showfoto/stackview/showfotostackviewfavorites.cpp:395
 #, kde-format
 msgctxt "@title"
 msgid "My Favorites"
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavorites.cpp:458
+#: core/showfoto/stackview/showfotostackviewfavorites.cpp:453
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "Unnamed"
@@ -44983,7 +45027,7 @@ msgstr "नवा टैग जोड़व..."
 
 #: core/showfoto/stackview/showfotostackviewsidebar.cpp:202
 #, kde-format
-msgctxt "@title: file system tree"
+msgctxt "@title: stack-view list on items"
 msgid "Stack"
 msgstr ""
 
@@ -56441,6 +56485,16 @@ msgid ""
 "<b>Note: All changes to these settings only take effect after the restart. "
 "Some settings are hardware dependent and may have no effect.</b>"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "@info: folder-view"
+#~ msgid "Folder-View Run Actions"
+#~ msgstr "इंटरफेस विकल्प"
+
+#, fuzzy
+#~ msgctxt "@info: item properties"
+#~ msgid "Description:"
+#~ msgstr "वर्नन"
 
 #, fuzzy
 #~ msgctxt "@title: window"
