@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-29 00:14+0000\n"
+"POT-Creation-Date: 2021-10-25 00:14+0000\n"
 "PO-Revision-Date: 2009-02-25 15:53+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -318,20 +318,23 @@ msgstr "पारले"
 
 #. i18n: ectx: property (text), widget (QPushButton, newButton)
 #: src/dashboard/dashboard.ui:120
-#, kde-format
-msgid "Create a New Collection"
+#, fuzzy, kde-format
+#| msgid "Create a New Collection"
+msgid "Create a New Collection..."
 msgstr "नवा संग्रह बनाव"
 
 #. i18n: ectx: property (text), widget (QPushButton, openButton)
 #: src/dashboard/dashboard.ui:127
-#, kde-format
-msgid "Open an Existing Collection"
+#, fuzzy, kde-format
+#| msgid "Open an Existing Collection"
+msgid "Open an Existing Collection..."
 msgstr "अभी हाल के संग्रह ल खोलव"
 
 #. i18n: ectx: property (text), widget (QPushButton, ghnsButton)
 #: src/dashboard/dashboard.ui:134
-#, kde-format
-msgid "Download New Collections"
+#, fuzzy, kde-format
+#| msgid "Download New Collections"
+msgid "Download New Collections..."
 msgstr "नवा संग्रह डाउनलोड करव"
 
 #. i18n: ectx: property (text), widget (QLabel, headingLabel)
@@ -657,9 +660,11 @@ msgstr "अक्छर किसम"
 msgid "Inflection (verbs, adjectives, nouns)"
 msgstr ""
 
-#: src/editor/editor.cpp:192
-#, kde-format
-msgid "Comparison forms"
+#. i18n: ectx: property (text), widget (QRadioButton, comparisonForms)
+#: src/editor/editor.cpp:192 src/statistics/statisticsmainwindow.ui:135
+#, fuzzy, kde-format
+#| msgid "Comparison forms"
+msgid "Comparison Forms"
 msgstr "तुलना फार्म"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
@@ -879,6 +884,7 @@ msgstr "\"%1\" काम हे"
 #: src/editor/inflectionwidget.cpp:124
 #, fuzzy, kde-format
 #| msgid "Please select the second column data:"
+msgctxt "@title:window"
 msgid "Please select the noun's gender"
 msgstr "किरपा करके, दुसरा खंभा डाटा चुनव:"
 
@@ -1120,7 +1126,9 @@ msgid "False Friends of %1:"
 msgstr "%1 के नकली मितान:"
 
 #: src/editor/vocabularycolumnsdialog.cpp:43
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Vocabulary Columns"
+msgctxt "@title:window"
 msgid "Vocabulary Columns"
 msgstr "सब्दावली स्तम्भ"
 
@@ -1356,9 +1364,10 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, ExportOptions)
-#: src/exportdialog.cpp:55 src/exportdialog.ui:14
-#, kde-format
+#: src/exportdialog.cpp:55
+#, fuzzy, kde-format
+#| msgid "Export"
+msgctxt "@title:window"
 msgid "Export"
 msgstr "निर्यात"
 
@@ -1382,6 +1391,12 @@ msgstr "अइसन निर्यात करव"
 #, kde-format
 msgid "Untitled"
 msgstr "बिना सीर्सक"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, ExportOptions)
+#: src/exportdialog.ui:14
+#, kde-format
+msgid "Export"
+msgstr "निर्यात"
 
 #. i18n: ectx: property (text), widget (QRadioButton, flashCardRadio)
 #: src/exportdialog.ui:20
@@ -1699,7 +1714,7 @@ msgstr "अभ्यास सेटिंग बदलव"
 #: src/parleyactions.cpp:203
 #, fuzzy, kde-format
 #| msgid "&Export..."
-msgid "Export results..."
+msgid "Export Results..."
 msgstr "निर्यात... (&E)"
 
 #: src/parleyactions.cpp:204
@@ -1745,7 +1760,9 @@ msgid "Properties for %1"
 msgstr " %1 बर गुन"
 
 #: src/parleydocument.cpp:164
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Open Vocabulary Collection"
+msgctxt "@title:window"
 msgid "Open Vocabulary Collection"
 msgstr "सब्दावली संग्रह खोलव"
 
@@ -1794,7 +1811,9 @@ msgstr ""
 "बाहिर होए से पहिली सहेजव?\n"
 
 #: src/parleydocument.cpp:299
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Open Downloaded Vocabulary Collection"
+msgctxt "@title:window"
 msgid "Open Downloaded Vocabulary Collection"
 msgstr "डाउनलोड करे गे सब्दावली संग्रह खोलव"
 
@@ -1820,7 +1839,9 @@ msgid "Save File"
 msgstr "फाइल सहेजव"
 
 #: src/parleydocument.cpp:382
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Vocabulary As"
+msgctxt "@title:window"
 msgid "Save Vocabulary As"
 msgstr "सब्दावली अइसन सहेजव"
 
@@ -2302,7 +2323,7 @@ msgstr ""
 #: src/practice/configure/generalpracticeoptions.ui:26
 #, fuzzy, kde-format
 #| msgid "Ignore Lessons"
-msgid "Ignore Accents"
+msgid "Ignore accents"
 msgstr "सबक अनदेखा करव"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_IgnoreCapitalizationMistakes)
@@ -2315,7 +2336,7 @@ msgstr ""
 #: src/practice/configure/generalpracticeoptions.ui:39
 #, fuzzy, kde-format
 #| msgid "Ignore Configuration for:"
-msgid "Ignore Capitalization"
+msgid "Ignore capitalization"
 msgstr "एखर बर कान्फिगरेसन अनदेखा करव:"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_IgnorePunctuationMistakes)
@@ -2328,7 +2349,7 @@ msgstr ""
 #: src/practice/configure/generalpracticeoptions.ui:52
 #, fuzzy, kde-format
 #| msgid "Ignore Configuration for:"
-msgid "Ignore Punctuation"
+msgid "Ignore punctuation"
 msgstr "एखर बर कान्फिगरेसन अनदेखा करव:"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_ShowHints)
@@ -2340,8 +2361,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowHints)
 #: src/practice/configure/generalpracticeoptions.ui:65
-#, kde-format
-msgid "Enable Hints"
+#, fuzzy, kde-format
+#| msgid "Enable Hints"
+msgid "Enable hints"
 msgstr "संकेत सक्छम करव"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
@@ -2361,7 +2383,7 @@ msgstr ""
 #: src/practice/configure/generalpracticeoptions.ui:100
 #, fuzzy, kde-format
 #| msgid "Solution"
-msgid "Image for Question"
+msgid "Image for question"
 msgstr "हल"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_FlashcardsBackImage)
@@ -2374,7 +2396,7 @@ msgstr ""
 #: src/practice/configure/generalpracticeoptions.ui:113
 #, fuzzy, kde-format
 #| msgid "Show Solution"
-msgid "Image for Solution"
+msgid "Image for solution"
 msgstr "हल देखाव"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AllowImageInsteadOfWord)
@@ -2408,7 +2430,7 @@ msgstr ""
 #: src/practice/configure/generalpracticeoptions.ui:168
 #, fuzzy, kde-format
 #| msgid "Select Synonyms"
-msgid "Accept any Synonym"
+msgid "Accept any synonym"
 msgstr "समानार्थी चुनव"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
@@ -2421,14 +2443,14 @@ msgstr "एक्सप्रेसन"
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: src/practice/configure/generalpracticeoptions.ui:202
 #, kde-format
-msgid "Max session size"
+msgid "Max session size:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: src/practice/configure/generalpracticeoptions.ui:251
 #, fuzzy, kde-format
 #| msgid "Maximum number of &fields:"
-msgid "Max number of new words"
+msgid "Max number of new words:"
 msgstr "फील्ड के सबसे अधिक संख्या: (&f)"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_MultipleChoiceWordTypeConsistancy)
@@ -2472,20 +2494,22 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: src/practice/configure/thresholdoptions.ui:43
-#, kde-format
-msgid "Grade"
-msgstr "ग्रेड"
+#, fuzzy, kde-format
+#| msgid "&Grade:"
+msgid "Grade:"
+msgstr "स्रेनीः (&G)"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: src/practice/configure/thresholdoptions.ui:53
-#, kde-format
-msgid "Times practiced"
+#, fuzzy, kde-format
+#| msgid "Times practiced"
+msgid "Times practiced:"
 msgstr "अतका बार अभ्यास करिस"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: src/practice/configure/thresholdoptions.ui:80
 #, fuzzy, kde-format
-msgid "Answered incorrectly"
+msgid "Answered incorrectly:"
 msgstr "सही उत्तर (पहिली प्रयास):"
 
 #: src/practice/conjugationbackendmode.cpp:93
@@ -2625,14 +2649,14 @@ msgstr "जारी रखव"
 #: src/practice/practice_mainwindow.ui:219
 #, fuzzy, kde-format
 #| msgid "I Don't Know It"
-msgid "I did not know it"
+msgid "I Did not Know it"
 msgstr "में नी जानंव"
 
 #. i18n: ectx: property (text), widget (QPushButton, countAsCorrectButton)
 #: src/practice/practice_mainwindow.ui:226
 #, fuzzy, kde-format
 #| msgid "I Know It"
-msgid "I knew it"
+msgid "I Knew it"
 msgstr "में जानत हों"
 
 #. i18n: ectx: property (format), widget (QProgressBar, totalProgress)
@@ -3084,7 +3108,7 @@ msgstr "कोई अतिरिक्त जानकारी."
 #: src/settings/documentproperties.ui:160
 #, fuzzy, kde-format
 #| msgid "Cat&egory"
-msgid "Cate&gory"
+msgid "Cate&gory:"
 msgstr "वर्ग (&e)"
 
 #. i18n: ectx: property (toolTip), widget (KComboBox, categoryComboBox)
@@ -3158,15 +3182,16 @@ msgstr "दुसरा भाखा: (&S)"
 
 #. i18n: ectx: property (text), widget (QCheckBox, grammarCheckBox)
 #: src/settings/documentproperties.ui:311
-#, kde-format
-msgid "&Setup Grammar Details"
+#, fuzzy, kde-format
+#| msgid "&Setup Grammar Details"
+msgid "&Setup grammar details"
 msgstr "ग्रामर विवरन सेटअप करव (&S)"
 
 #. i18n: ectx: property (text), widget (QCheckBox, downloadGrammarCheckBox)
 #: src/settings/documentproperties.ui:321
 #, fuzzy, kde-format
 msgctxt "Attept to download grammar properties for the selected languages"
-msgid "Download Grammar"
+msgid "Download grammar"
 msgstr "व्याकरन"
 
 #. i18n: ectx: label, entry (ConjugationTenses), group (Document $(fileurl))
@@ -3374,7 +3399,9 @@ msgid "Author:"
 msgstr "लेखकः"
 
 #: src/settings/languageproperties.cpp:23
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Edit Languages"
+msgctxt "@title:window"
 msgid "Edit Languages"
 msgstr "भाखा संपादित करव"
 
@@ -3462,7 +3489,7 @@ msgstr "कुंजीपट खाकाः"
 #. i18n: ectx: property (text), widget (QPushButton, downloadGrammarButton)
 #: src/settings/languagepropertiespage.ui:75
 #, fuzzy, kde-format
-msgid "&Download Grammar"
+msgid "&Download grammar"
 msgstr "व्याकरन"
 
 #. i18n: ectx: property (text), widget (QLabel, spellcheckerLabel)
@@ -4433,13 +4460,6 @@ msgstr "उदाहरन वाक्य"
 msgid "&Gender of Nouns"
 msgstr "संग्या के किसम"
 
-#. i18n: ectx: property (text), widget (QRadioButton, comparisonForms)
-#: src/statistics/statisticsmainwindow.ui:135
-#, fuzzy, kde-format
-#| msgid "Comparison forms"
-msgid "Comparison Forms"
-msgstr "तुलना फार्म"
-
 #. i18n: ectx: property (text), widget (QRadioButton, conjugations)
 #: src/statistics/statisticsmainwindow.ui:145
 #, fuzzy, kde-format
@@ -4472,9 +4492,9 @@ msgstr ""
 msgid ""
 "<p>Parley enables you to edit many additional properties of the words you "
 "enter.</p>\n"
-"<p>Use \"Settings\" -> \"Tools\" to enable different tools that will help "
-"you set additional information for your vocabulary. These include images, "
-"sound, word types and many more. Choose the ones you like.</p>\n"
+"<p>Use \"View -> ...\" check boxes to enable different information that will "
+"help you set additional information for your vocabulary. These include "
+"Image, Sound, Word Types and many more. Choose the ones you like.</p>\n"
 msgstr ""
 
 #. i18n: ectx: @info:tipoftheday
@@ -4488,26 +4508,13 @@ msgstr ""
 #: tips:15
 #, kde-format
 msgid ""
-"<p>If you do not want to see the answer again after pressing enter when "
-"practicing, you can configure Parley to directly skip to the next entry.</"
-"p>\n"
-"<p>You can even choose to display the answer for a fixed amount of time. Use "
-"\"Configure Practice...\" -> \"Advanced\" -> \"Show solution after answering"
-"\".</p>\n"
+"<p>If you want to see all words of a certain word type (e.g. nouns), simply "
+"select the word type in the list.</p>\n"
+"<p>To show the word type list, use \"View -> Word Types\" check box.</p>\n"
 msgstr ""
 
 #. i18n: ectx: @info:tipoftheday
 #: tips:22
-#, kde-format
-msgid ""
-"<p>If you want to see all words of a certain word type (e.g. nouns), simply "
-"select the word type in the list.</p>\n"
-"<p>To show the word type list, use \"Settings\" -> \"Tools\" -> \"Word Types"
-"\" in the menu.</p>\n"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:29
 #, kde-format
 msgid ""
 "<p>You can drag and drop your lessons to change their order or even make a "
@@ -4515,7 +4522,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: @info:tipoftheday
-#: tips:35
+#: tips:28
 #, kde-format
 msgid ""
 "<p>You can simply drag a word into the word types list to change its type.</"
@@ -4524,7 +4531,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: @info:tipoftheday
-#: tips:42
+#: tips:35
 #, kde-format
 msgid ""
 "<p><em>Setting Images</em></p>\n"
@@ -4533,7 +4540,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: @info:tipoftheday
-#: tips:49
+#: tips:42
 #, kde-format
 msgid ""
 "<p><em>Word Types</em></p>\n"
@@ -4543,7 +4550,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: @info:tipoftheday
-#: tips:57
+#: tips:50
 #, kde-format
 msgid ""
 "<p><em>Multiple Choice</em></p>\n"
@@ -4554,7 +4561,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: @info:tipoftheday
-#: tips:64
+#: tips:57
 #, kde-format
 msgid ""
 "<p>Want to enter pronunciation symbols quickly? <em>Double-click</em> the "
@@ -4562,7 +4569,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: @info:tipoftheday
-#: tips:70
+#: tips:63
 #, kde-format
 msgid ""
 "<p>You can use the \"Download New Vocabulary\" dialog or visit the website "
@@ -4570,6 +4577,12 @@ msgid ""
 "<a href=\"https://edu.kde.org/contrib/kvtml2.php\">https://edu.kde.org/"
 "contrib/kvtml2.php</a>.</p>\n"
 msgstr ""
+
+#~ msgid "Comparison forms"
+#~ msgstr "तुलना फार्म"
+
+#~ msgid "Grade"
+#~ msgstr "ग्रेड"
 
 #, fuzzy
 #~| msgid "Sound"
@@ -4695,9 +4708,6 @@ msgstr ""
 
 #~ msgid "&Lesson"
 #~ msgstr "सबक (&L)"
-
-#~ msgid "&Grade:"
-#~ msgstr "स्रेनीः (&G)"
 
 #~ msgid "&Reset Grades"
 #~ msgstr "स्रेनी रीसेट करव (&R)"
