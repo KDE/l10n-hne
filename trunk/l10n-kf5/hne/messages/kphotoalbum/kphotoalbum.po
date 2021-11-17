@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-11-15 00:26+0000\n"
+"POT-Creation-Date: 2021-11-17 00:25+0000\n"
 "PO-Revision-Date: 2009-02-17 12:43+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -1292,24 +1292,123 @@ msgstr ""
 msgid "Following files could not be read:"
 msgstr "निम्न फाइल मन ल पढ़ नइ सकिस:"
 
-#: Exif/InfoDialog.cpp:30
+#: Exif/InfoDialog.cpp:32
 #, fuzzy, kde-format
 #| msgid "EXIF Information"
 msgctxt "@title:window"
-msgid "Exif Information"
+msgid "Exif Information and file metadata"
 msgstr "एक्सइफ जानकारी"
 
-#: Exif/InfoDialog.cpp:65
+#: Exif/InfoDialog.cpp:72
 #, kde-format
 msgctxt ""
 "@label:textbox The search box allows the user to filter by exif label names"
 msgid "Filter labels ..."
 msgstr ""
 
-#: Exif/InfoDialog.cpp:69
+#: Exif/InfoDialog.cpp:76
 #, kde-format
 msgid "IPTC character set:"
 msgstr "आईपीटीसी अक्छर सेटः"
+
+#: Exif/InfoDialog.cpp:94
+#, fuzzy, kde-format
+#| msgid "Exif Info"
+msgid "Exif info"
+msgstr "एक्जइफ जानकारी"
+
+#: Exif/InfoDialog.cpp:95
+#, fuzzy, kde-format
+#| msgid "Video support"
+msgid "File metadata"
+msgstr "वीडियो समर्थन"
+
+#: Exif/MetaDataDisplay.cpp:35
+#, kde-format
+msgid "Absolute path:"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:40
+#, kde-format
+msgid "MIME type:"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:44 Settings/ViewerSizeConfig.cpp:26
+#, kde-format
+msgid "Size:"
+msgstr "आकार:"
+
+#: Exif/MetaDataDisplay.cpp:48
+#, kde-format
+msgid "Created:"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:52
+#, kde-format
+msgid "Changed:"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:56
+#, kde-format
+msgid "Owner:"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:60
+#, kde-format
+msgid "Group:"
+msgstr "समूहः"
+
+#: Exif/MetaDataDisplay.cpp:64
+#, fuzzy, kde-format
+#| msgid "Version: %1"
+msgid "Permissions:"
+msgstr "संस्करन %1"
+
+#: Exif/MetaDataDisplay.cpp:99
+#, kde-format
+msgid "Open directory with a file manager"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:106
+#, fuzzy, kde-format
+#| msgid "%1 (by %2)"
+msgctxt ""
+"File size composed of a pre-formatted (already localized) human-readable "
+"file size (%1) and the number of bytes (%2)"
+msgid "%1 (%2 B)"
+msgstr "%1 (द्वारा %2)"
+
+#: Exif/MetaDataDisplay.cpp:120 Exif/MetaDataDisplay.cpp:126
+#: Exif/MetaDataDisplay.cpp:132
+#, fuzzy, kde-format
+#| msgid "or"
+msgctxt "File permission shortcut for \"reading allowed\""
+msgid "r"
+msgstr "या"
+
+#: Exif/MetaDataDisplay.cpp:122 Exif/MetaDataDisplay.cpp:128
+#: Exif/MetaDataDisplay.cpp:134
+#, kde-format
+msgctxt "File permission shortcut for \"writing allowed\""
+msgid "w"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:124 Exif/MetaDataDisplay.cpp:130
+#: Exif/MetaDataDisplay.cpp:136
+#, fuzzy, kde-format
+#| msgid "x"
+msgctxt "File permission shortcut for \"executing allowed\""
+msgid "x"
+msgstr "x"
+
+#: Exif/MetaDataDisplay.cpp:153
+#, fuzzy, kde-format
+#| msgid "%1 (by %2)"
+msgctxt ""
+"File permissions string compiled from a parsed variant (e.g. \"rw-rw-r--\", "
+"%1) and it's octal representation (e.g. \"0644\")"
+msgid "%1 (%2)"
+msgstr "%1 (द्वारा %2)"
 
 #: Exif/ReReadDialog.cpp:28
 #, fuzzy, kde-format
@@ -3788,8 +3887,9 @@ msgid "Show Demo Videos"
 msgstr "डेमो वीडियो देखाव"
 
 #: MainWindow/Window.cpp:988 Viewer/ViewerWidget.cpp:173
-#, kde-format
-msgid "Show Exif Info"
+#, fuzzy, kde-format
+#| msgid "Show Exif Info"
+msgid "Show Exif Info and file metadata"
 msgstr "एक्जइफ जानकारी देखाव"
 
 #: MainWindow/Window.cpp:991
@@ -5366,11 +5466,6 @@ msgstr "डाटाबेस बैकएन्ड"
 #, kde-format
 msgid "Launch in full screen"
 msgstr "पूरा स्क्रीन मं चलाव"
-
-#: Settings/ViewerSizeConfig.cpp:26
-#, kde-format
-msgid "Size:"
-msgstr "आकार:"
 
 #: ThumbnailView/Delegate.cpp:237
 #, fuzzy, kde-format
@@ -7131,9 +7226,6 @@ msgstr "डाटाबेस बदलत हे"
 #~ msgid "Version %1"
 #~ msgstr "संस्करन %1"
 
-#~ msgid "Version: %1"
-#~ msgstr "संस्करन %1"
-
 #~ msgid "Add Time Info..."
 #~ msgstr "समय जानकारी जोड़व..."
 
@@ -7162,14 +7254,8 @@ msgstr "डाटाबेस बदलत हे"
 #~ msgid "Auto display limit: "
 #~ msgstr "अपने अपन देखाय के सीमा:"
 
-#~ msgid "Group:"
-#~ msgstr "समूहः"
-
 #~ msgid "Member:"
 #~ msgstr "सदस्य:"
-
-#~ msgid "x"
-#~ msgstr "x"
 
 #~ msgctxt "Short for Mega Pixels"
 #~ msgid "MP"
