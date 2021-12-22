@@ -50,7 +50,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-21 00:41+0000\n"
+"POT-Creation-Date: 2021-12-22 00:42+0000\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -14868,6 +14868,8 @@ msgstr "जूम आउट"
 #. i18n: ectx: property (text), widget (KoColorPopupButton, btnChoosePredefinedGradient)
 #. i18n: ectx: property (text), widget (QToolButton, btnSaveGradient)
 #. i18n: ectx: property (text), widget (QToolButton, bnFont)
+#. i18n: ectx: property (text), widget (QToolButton, previousButton)
+#. i18n: ectx: property (text), widget (QToolButton, nextButton)
 #. i18n: ectx: property (text), widget (KisIconWidget, paletteIconWidget)
 #. i18n: ectx: property (text), widget (QToolButton, vectorPresetsConfigureButton)
 #. i18n: ectx: property (text), widget (KisLayerFilterWidgetToolButton, bnLayerFilters)
@@ -14961,6 +14963,8 @@ msgstr "जूम आउट"
 #: plugins/filters/palettize/palettize.ui:49
 #: plugins/paintops/libpaintop/forms/wdgtextbrush.ui:91
 #: plugins/python/exportlayers/uiexportlayers.py:29
+#: plugins/python/photobash_images/photobash_images_docker.ui:439
+#: plugins/python/photobash_images/photobash_images_docker.ui:461
 #: plugins/python/scriptdocker/scriptdocker.py:33
 #: plugins/python/tenscripts/uitenscripts.py:59
 #, kde-format
@@ -24747,8 +24751,10 @@ msgstr "प्रिव्यू:"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgPopupPaletteSettings)
 #. i18n: ectx: property (windowTitle), widget (QWidget, KisAutoLevelsWidget)
+#. i18n: ectx: property (windowTitle), widget (QWidget, photobashWidget)
 #: libs/ui/forms/WdgPopupPaletteSettings.ui:14
 #: libs/ui/widgets/KisAutoLevelsWidget.ui:14
+#: plugins/python/photobash_images/photobash_images_docker.ui:14
 #, fuzzy, kde-format
 msgid "Form"
 msgstr "फर्मर"
@@ -51485,6 +51491,38 @@ msgstr "एक्सपोजर मोड:"
 msgid "{input} has been exported to {output}."
 msgstr ""
 
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, filterTextEdit)
+#: plugins/python/photobash_images/photobash_images_docker.ui:71
+#, fuzzy, kde-format
+#| msgid "Remove Layer"
+msgid "Filter images by words..."
+msgstr "परत मेटाव"
+
+#. i18n: ectx: property (text), widget (QPushButton, changePathButton)
+#: plugins/python/photobash_images/photobash_images_docker.ui:96
+#, fuzzy, kde-format
+msgid "Set References Folder"
+msgstr "प्राथमिकता"
+
+#. i18n: ectx: property (text), widget (QLabel, scaleSliderLabel)
+#: plugins/python/photobash_images/photobash_images_docker.ui:328
+#, fuzzy, kde-format
+msgid "Image Scale :"
+msgstr "पैटर्न"
+
+#. i18n: ectx: property (text), widget (QCheckBox, fitCanvasCheckBox)
+#: plugins/python/photobash_images/photobash_images_docker.ui:388
+#, fuzzy, kde-format
+#| msgid "Update Whole Canvas"
+msgid "Scale To Canvas"
+msgstr "पूरा केनवस अपडेट करव"
+
+#. i18n: ectx: property (text), widget (QLabel, paginationLabel)
+#: plugins/python/photobash_images/photobash_images_docker.ui:413
+#, fuzzy, kde-format
+msgid "0/0"
+msgstr "1.0"
+
 #: plugins/python/plugin_importer/plugin_downloader.py:70
 msgid "Could not determine download link from URL"
 msgstr ""
@@ -54753,26 +54791,26 @@ msgstr "स्ट्रोक"
 msgid "Strongest (Similitude)"
 msgstr "एम्प्लीट्यूड:"
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:213
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:214
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Size of the deformation brush"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:219
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:221
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Amount of the deformation you get"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:225
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:228
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
 "When in non-buildup mode, shows how fast the deformation limit is reached."
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:229
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:233
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -54781,79 +54819,79 @@ msgid ""
 "deforms the piece to the selected deformation level."
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:236
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:241
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Space between two sequential applications of the deformation"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:240
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:246
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Scale <b>Size</b> value according to current stylus pressure"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:244
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:251
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Scale <b>Amount</b> value according to current stylus pressure"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:248
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:256
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reverse direction of the current deformation tool"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:263
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:272
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Move: drag the image along the brush stroke"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:264
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:273
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Scale: grow/shrink image under cursor"
 msgstr "के साथ चयन सीमित करव"
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:265
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:274
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Rotate: twirl image under cursor"
 msgstr "वक्रों के साथ पेंट करव"
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:266
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:275
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Offset: shift the image to the right of the stroke direction"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:267
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:276
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Undo: erase actions of other tools"
 msgstr ""
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:608
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:617
 #, kde-format
 msgid "Switch between editing and deforming cage"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, lockUnlockPointsButton)
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:669
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:678
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1618
 #, fuzzy, kde-format
 msgid "Lock Points"
 msgstr "विकल्प"
 
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:671
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:680
 #, fuzzy, kde-format
 msgid "Unlock Points"
 msgstr "विकल्प"
 
 #. i18n: ectx: property (text), widget (QLabel, cageTransformDirections)
-#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:748
+#: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:757
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1656
 #, kde-format
 msgid "Create 3 points on the canvas to begin"
@@ -57022,11 +57060,6 @@ msgstr "संदर्भ फोटू:"
 #, fuzzy
 #~ msgid "Frame Rate:"
 #~ msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
-
-#, fuzzy
-#~| msgid "Remove Layer"
-#~ msgid "Filter Frames by Color"
-#~ msgstr "परत मेटाव"
 
 #~ msgid "Preview modified layer"
 #~ msgstr "परिवर्धित परत के प्रिव्यू"
@@ -59989,11 +60022,6 @@ msgstr "संदर्भ फोटू:"
 #~| msgid "&Move checkers when scrolling"
 #~ msgid "&Move checkers  when scrolling"
 #~ msgstr "जब स्क्रालिंग के जाय तहां चेकर खिसकाव (&M)"
-
-#, fuzzy
-#~ msgctxt "action"
-#~ msgid "References Tool"
-#~ msgstr "प्राथमिकता"
 
 #, fuzzy
 #~ msgctxt "action"
@@ -84259,9 +84287,6 @@ msgstr "संदर्भ फोटू:"
 
 #~ msgid "Projection Thread Number:"
 #~ msgstr "परियोजना थ्रेड संख्या:"
-
-#~ msgid "Update Whole Canvas"
-#~ msgstr "पूरा केनवस अपडेट करव"
 
 #~ msgid "Faster but ugly zooming. Not compatible with OpenGL"
 #~ msgstr "तीव्र, फेर कुरूप जूमिंग. ओपनजीएल से संगतता नइ"
