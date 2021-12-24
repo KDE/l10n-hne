@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-23 00:45+0000\n"
+"POT-Creation-Date: 2021-12-24 00:44+0000\n"
 "PO-Revision-Date: 2009-02-27 21:59+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -2039,15 +2039,50 @@ msgctxt "@title"
 msgid "Smartcard Readers"
 msgstr ""
 
-#: src/commands/lookupcertificatescommand.cpp:474
-#: src/commands/lookupcertificatescommand.cpp:480
+#: src/commands/lookupcertificatescommand.cpp:447
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"<para>One of the X.509 directory services returned certificates without "
+"fingerprints. Those certificates are ignored because fingerprints are "
+"required as unique identifiers for certificates.</para><para>You may want to "
+"configure a different X.509 directory service in the configuration dialog.</"
+"para>"
+msgstr ""
+
+#: src/commands/lookupcertificatescommand.cpp:454
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"<para>The OpenPGP keyserver returned certificates without fingerprints. "
+"Those certificates are ignored because fingerprints are required as unique "
+"identifiers for certificates.</para><para>You may want to configure a "
+"different OpenPGP keyserver in the configuration dialog.</para>"
+msgstr ""
+
+#: src/commands/lookupcertificatescommand.cpp:460
+#, kde-format
+msgctxt "@title"
+msgid "Invalid Server Reply"
+msgstr ""
+
+#: src/commands/lookupcertificatescommand.cpp:496
+#, kde-format
+msgctxt "@info"
+msgid "One certificate without name and email address was ignored."
+msgid_plural "%1 certificates without name and email address were ignored."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/commands/lookupcertificatescommand.cpp:542
+#: src/commands/lookupcertificatescommand.cpp:548
 #, fuzzy, kde-format
 #| msgid "Export Certificates to Server..."
-msgctxt "@title %1:\"OpenPGP\" or \"CMS\""
+msgctxt "@title %1:\"OpenPGP\" or \"S/MIME\""
 msgid "%1 Certificate Server"
 msgstr "सर्वर मं प्रमानपत्र निर्यात करव..."
 
-#: src/commands/lookupcertificatescommand.cpp:514
+#: src/commands/lookupcertificatescommand.cpp:582
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -2055,7 +2090,7 @@ msgid ""
 "%1"
 msgstr ""
 
-#: src/commands/lookupcertificatescommand.cpp:523
+#: src/commands/lookupcertificatescommand.cpp:591
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2066,13 +2101,13 @@ msgid ""
 "have to refine your search.</para>"
 msgstr ""
 
-#: src/commands/lookupcertificatescommand.cpp:531
+#: src/commands/lookupcertificatescommand.cpp:599
 #, kde-format
 msgctxt "@title"
 msgid "Result Truncated"
 msgstr ""
 
-#: src/commands/lookupcertificatescommand.cpp:542
+#: src/commands/lookupcertificatescommand.cpp:610
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2082,7 +2117,7 @@ msgid ""
 "Kleopatra</interface>.</para>"
 msgstr ""
 
-#: src/commands/lookupcertificatescommand.cpp:547
+#: src/commands/lookupcertificatescommand.cpp:615
 #, kde-format
 msgctxt "@title"
 msgid "No Directory Servers Configured"
@@ -4612,9 +4647,8 @@ msgctxt "Caption for an unknown key/certificate where only ID is known."
 msgid "Unknown Recipient:"
 msgstr "पावइया:"
 
-#. i18n: ectx: property (text), widget (QPushButton, findPB)
 #: src/crypto/gui/unknownrecipientwidget.cpp:35
-#: src/dialogs/lookupcertificatesdialog.ui:24
+#: src/dialogs/lookupcertificatesdialog.cpp:128
 #, kde-format
 msgid "Search"
 msgstr "खोजव"
@@ -5698,46 +5732,40 @@ msgstr "विवरन देखाव"
 msgid "Note: This group is defined in the configuration files of gpg."
 msgstr ""
 
-#: src/dialogs/lookupcertificatesdialog.cpp:107 src/view/padwidget.cpp:476
+#: src/dialogs/lookupcertificatesdialog.cpp:121
 #, kde-format
-msgid "Import"
-msgstr "आयात"
+msgid "Find:"
+msgstr "खोजव:"
 
-#. i18n: ectx: property (windowTitle), widget (QDialog, LookupCertificatesDialog)
-#: src/dialogs/lookupcertificatesdialog.ui:13
-#, kde-format
-msgid "Lookup on Server"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, detailsPB)
-#: src/dialogs/lookupcertificatesdialog.ui:44
-#, kde-format
-msgid "Details..."
-msgstr "विवरन..."
-
-#. i18n: ectx: property (text), widget (QPushButton, saveAsPB)
-#: src/dialogs/lookupcertificatesdialog.ui:57
-#, kde-format
-msgid "Save As..."
-msgstr "अइसन सहेजव..."
-
-#. i18n: ectx: property (text), widget (QPushButton, selectAllPB)
-#: src/dialogs/lookupcertificatesdialog.ui:70
+#: src/dialogs/lookupcertificatesdialog.cpp:143
 #, kde-format
 msgid "Select All"
 msgstr "सब्बो चुनव"
 
-#. i18n: ectx: property (text), widget (QPushButton, deselectAllPB)
-#: src/dialogs/lookupcertificatesdialog.ui:96
+#: src/dialogs/lookupcertificatesdialog.cpp:148
 #, kde-format
 msgid "Deselect All"
 msgstr "सब्बो मतचुनव"
 
-#. i18n: ectx: property (text), widget (QLabel, findLB)
-#: src/dialogs/lookupcertificatesdialog.ui:106
+#: src/dialogs/lookupcertificatesdialog.cpp:155
 #, kde-format
-msgid "Find:"
-msgstr "खोजव:"
+msgid "Details..."
+msgstr "विवरन..."
+
+#: src/dialogs/lookupcertificatesdialog.cpp:160
+#, kde-format
+msgid "Save As..."
+msgstr "अइसन सहेजव..."
+
+#: src/dialogs/lookupcertificatesdialog.cpp:192
+#, kde-format
+msgid "Lookup on Server"
+msgstr ""
+
+#: src/dialogs/lookupcertificatesdialog.cpp:202 src/view/padwidget.cpp:476
+#, kde-format
+msgid "Import"
+msgstr "आयात"
 
 #: src/dialogs/ownertrustdialog.cpp:35
 #, kde-format
