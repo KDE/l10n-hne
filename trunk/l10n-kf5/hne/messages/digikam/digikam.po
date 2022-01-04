@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-01-03 00:41+0000\n"
+"POT-Creation-Date: 2022-01-04 00:42+0000\n"
 "PO-Revision-Date: 2009-02-15 18:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -20830,7 +20830,6 @@ msgstr "टैग '%2' ह एक वस्तु मं संबंधित �
 #: core/dplugins/generic/webservices/pinterest/pwindow.cpp:264
 #: core/dplugins/generic/webservices/smugmug/smugwindow.cpp:683
 #: core/dplugins/generic/webservices/twitter/twitterwindow.cpp:268
-#: core/libs/database/utils/ifaces/dio.cpp:363
 #: core/libs/dialogs/dmessagebox.cpp:164
 #, kde-format
 msgid "Continue"
@@ -24507,7 +24506,7 @@ msgid ""
 msgstr ""
 
 #: core/libs/album/engine/album.cpp:378
-#: core/libs/database/utils/ifaces/dio.cpp:711
+#: core/libs/database/utils/ifaces/dio.cpp:714
 #, kde-format
 msgid "Trash"
 msgstr ""
@@ -26289,69 +26288,81 @@ msgstr "फाइल नाम"
 msgid ""
 "Files or folders with the same name already exist in the target folder.\n"
 "\n"
-"What action is applied in the event of a file conflict?"
+"What action is applied in the event of a file conflict?\n"
+"\n"
+"Available options are:\n"
+"Rename automatically: conflicting files will be renamed.\n"
+"Overwrite automatically: conflicting files will be overwritten.\n"
+"Skip automatically: conflicting files will be skipped."
 msgstr ""
 
-#: core/libs/database/utils/ifaces/dio.cpp:359
+#: core/libs/database/utils/ifaces/dio.cpp:362
 #, fuzzy, kde-format
 msgid "Rename automatically"
 msgstr "फाइल ल मेटाय के लिखव?"
 
-#: core/libs/database/utils/ifaces/dio.cpp:361
+#: core/libs/database/utils/ifaces/dio.cpp:364
 #: core/libs/widgets/files/filesaveconflictbox.cpp:78
 #: core/utilities/setup/camera/setupcamera.cpp:384
 #, fuzzy, kde-format
 msgid "Overwrite automatically"
 msgstr "फाइल ल मेटाय के लिखव?"
 
-#: core/libs/database/utils/ifaces/dio.cpp:675
+#: core/libs/database/utils/ifaces/dio.cpp:366
+#: core/libs/widgets/files/filesaveconflictbox.cpp:79
+#: core/utilities/setup/camera/setupcamera.cpp:385
+#, fuzzy, kde-format
+msgid "Skip automatically"
+msgstr "फाइल ल मेटाय के लिखव?"
+
+#: core/libs/database/utils/ifaces/dio.cpp:678
 #, fuzzy, kde-format
 #| msgid "My Albums"
 msgid "Copy Album"
 msgstr "मोर एलबम"
 
-#: core/libs/database/utils/ifaces/dio.cpp:680
+#: core/libs/database/utils/ifaces/dio.cpp:683
 #, fuzzy, kde-format
 #| msgid "Add Images..."
 msgid "Copy Images"
 msgstr "फोटू जोड़व..."
 
-#: core/libs/database/utils/ifaces/dio.cpp:686
+#: core/libs/database/utils/ifaces/dio.cpp:689
 #, fuzzy, kde-format
 #| msgid "&Copy Here"
 msgid "Copy Files"
 msgstr "इहां नकल करव (&C)"
 
-#: core/libs/database/utils/ifaces/dio.cpp:691
+#: core/libs/database/utils/ifaces/dio.cpp:694
 #, fuzzy, kde-format
 msgid "Move Album"
 msgstr "नवा एलबम..."
 
-#: core/libs/database/utils/ifaces/dio.cpp:696
+#: core/libs/database/utils/ifaces/dio.cpp:699
 #, fuzzy, kde-format
 #| msgid "Save Images"
 msgid "Move Images"
 msgstr "फोटू सहेजव"
 
-#: core/libs/database/utils/ifaces/dio.cpp:701
+#: core/libs/database/utils/ifaces/dio.cpp:704
 #, fuzzy, kde-format
 #| msgid "Movie Files"
 msgid "Move Files"
 msgstr "मूवी फाइल मन ल"
 
-#: core/libs/database/utils/ifaces/dio.cpp:706
+#: core/libs/database/utils/ifaces/dio.cpp:709
 #: core/utilities/searchwindow/editablesearchtreeview.cpp:72
 #: core/utilities/setup/metadata/advancedmetadatatab.cpp:371
 #, kde-format
 msgid "Delete"
 msgstr "मेटाव"
 
-#: core/libs/database/utils/ifaces/dio.cpp:716
+#: core/libs/database/utils/ifaces/dio.cpp:719
 #, fuzzy, kde-format
 msgid "Restore Trash"
 msgstr "रीस्टोरेसन"
 
-#: core/libs/database/utils/ifaces/dio.cpp:721
+#: core/libs/database/utils/ifaces/dio.cpp:724
 #, kde-format
 msgid "Empty Trash"
 msgstr ""
@@ -38122,12 +38133,6 @@ msgstr "फोटू फाइल मन ल"
 #, kde-format
 msgid "Store as a different name"
 msgstr ""
-
-#: core/libs/widgets/files/filesaveconflictbox.cpp:79
-#: core/utilities/setup/camera/setupcamera.cpp:385
-#, fuzzy, kde-format
-msgid "Skip automatically"
-msgstr "फाइल ल मेटाय के लिखव?"
 
 #: core/libs/widgets/files/filesaveoptionsbox.cpp:129
 #, kde-format
