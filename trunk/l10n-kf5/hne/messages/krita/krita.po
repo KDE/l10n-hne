@@ -50,7 +50,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-01-25 00:41+0000\n"
+"POT-Creation-Date: 2022-01-28 00:42+0000\n"
 "PO-Revision-Date: 2009-03-03 11:00+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -14309,19 +14309,19 @@ msgstr "दीर्घवृत्त"
 msgid "Line"
 msgstr "पंक्ति"
 
-#: libs/brush/kis_auto_brush.cpp:406
+#: libs/brush/kis_auto_brush.cpp:392
 #, kde-format
 msgctxt "PaintOp instant preview limitation"
 msgid "Brush Density recommended value 100.0"
 msgstr ""
 
-#: libs/brush/kis_auto_brush.cpp:410
+#: libs/brush/kis_auto_brush.cpp:396
 #, kde-format
 msgctxt "PaintOp instant preview limitation"
 msgid "Brush Randomness recommended value 0.0"
 msgstr ""
 
-#: libs/brush/kis_brush.cpp:737
+#: libs/brush/kis_brush.cpp:727
 #, kde-format
 msgctxt "PaintOp instant preview limitation"
 msgid "Spacing > 0.5, consider disabling Instant Preview"
@@ -17904,8 +17904,8 @@ msgstr "स्रोत फाइल मन ल:"
 #: libs/ui/utils/KisClipboardUtil.cpp:131
 #: libs/ui/utils/KisClipboardUtil.cpp:241
 #: libs/ui/widgets/kis_custom_image_widget.cc:299
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:1080
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:1083
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:1301
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:1304
 #: plugins/dockers/gamutmask/gamutmask_dock.cpp:304
 #: plugins/dockers/storyboarddocker/DlgExportStoryboard.cpp:175
 #: plugins/dockers/storyboarddocker/DlgExportStoryboard.cpp:178
@@ -18259,7 +18259,7 @@ msgstr "फोटू आयात करव"
 #. i18n: ectx: property (text), widget (QPushButton, deleteAllAssistantsButton)
 #: libs/resources/KisTagModel.cpp:124 libs/resources/KisTagModel.cpp:297
 #: libs/ui/widgets/kis_paintop_presets_editor.cpp:592
-#: plugins/assistants/Assistants/AssistantsToolOptions.ui:262
+#: plugins/assistants/Assistants/AssistantsToolOptions.ui:325
 #: plugins/tools/defaulttool/referenceimagestool/WdgToolOptions.ui:220
 #, kde-format
 msgid "All"
@@ -29765,6 +29765,7 @@ msgstr ""
 #: libs/ui/tool/kis_tool_freehand.cc:200
 #: libs/ui/tool/kis_tool_polyline_base.cpp:81
 #: libs/ui/tool/kis_tool_rectangle_base.cpp:125
+#: libs/ui/tool/KisToolOutlineBase.cpp:88
 #: plugins/tools/basictools/kis_tool_line.cc:175
 #: plugins/tools/basictools/kis_tool_path.cc:70
 #: plugins/tools/basictools/kis_tool_pencil.cc:53
@@ -29785,6 +29786,7 @@ msgstr "%1 %"
 
 #: libs/ui/tool/kis_tool_polyline_base.cpp:75
 #: libs/ui/tool/kis_tool_rectangle_base.cpp:119
+#: libs/ui/tool/KisToolOutlineBase.cpp:82
 #, kde-format
 msgid ""
 "This tool cannot paint on clone layers.  Please select a paint or vector "
@@ -30099,8 +30101,8 @@ msgid "Transparent"
 msgstr "पारदर्सी"
 
 #: libs/ui/widgets/gradient/KisGradientColorEditor.cpp:92
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:1238
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:1244
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:1463
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:1469
 #: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:50
 #: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:53
 #: plugins/generators/screentone/KisScreentoneConfigWidget.cpp:39
@@ -33715,26 +33717,32 @@ msgstr ""
 msgid "Enable vertical ruler"
 msgstr "खड़े मं सोबेल"
 
+#. i18n: ectx: property (text), widget (QCheckBox, fixedLengthCheckbox)
+#: plugins/assistants/Assistants/AssistantsToolOptions.ui:117
+#, fuzzy, kde-format
+msgid "Fixed Length"
+msgstr "त्रिभुज"
+
 #. i18n: ectx: property (text), widget (QLabel, globalColorLabel)
-#: plugins/assistants/Assistants/AssistantsToolOptions.ui:97
+#: plugins/assistants/Assistants/AssistantsToolOptions.ui:160
 #, fuzzy, kde-format
 msgid "Global Color:"
 msgstr "छोटा रंग चुनइया"
 
 #. i18n: ectx: property (text), widget (QCheckBox, useCustomAssistantColor)
-#: plugins/assistants/Assistants/AssistantsToolOptions.ui:146
+#: plugins/assistants/Assistants/AssistantsToolOptions.ui:209
 #, fuzzy, kde-format
 msgid "Custom Color"
 msgstr "स्टाप रंग:"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, loadAssistantButton)
-#: plugins/assistants/Assistants/AssistantsToolOptions.ui:211
+#: plugins/assistants/Assistants/AssistantsToolOptions.ui:274
 #, fuzzy, kde-format
 msgid "Load Assistant Set"
 msgstr "सहायक:"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, saveAssistantButton)
-#: plugins/assistants/Assistants/AssistantsToolOptions.ui:230
+#: plugins/assistants/Assistants/AssistantsToolOptions.ui:293
 #, fuzzy, kde-format
 msgid "Save Assistant Set"
 msgstr "सहायक:"
@@ -33799,33 +33807,45 @@ msgstr "विकल्प"
 msgid "Infinite Ruler assistant"
 msgstr "रूलर सहायक"
 
-#: plugins/assistants/Assistants/InfiniteRulerAssistant.cc:154
+#: plugins/assistants/Assistants/InfiniteRulerAssistant.cc:260
 #, fuzzy, kde-format
 msgid "Infinite Ruler"
 msgstr "रूलर सहायक"
 
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:935
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:1156
 #, fuzzy, kde-format
 msgid "Select an Assistant"
 msgstr "रूलर सहायक"
 
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:1083
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:1304
 #, kde-format
 msgid "Errors were encountered. Not all assistants were successfully loaded."
 msgstr ""
 
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:1168
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:1389
 #, fuzzy, kde-format
 msgid "Save Assistant"
 msgstr "सहायक:"
 
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:1251
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:1255
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:1476
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:1480
 #, fuzzy, kde-format
 msgid "Density: "
 msgstr "वर्ननः"
 
-#: plugins/assistants/Assistants/kis_assistant_tool.h:167
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:1485
+#, fuzzy, kde-format
+#| msgid "Subdivision:"
+msgid "Subdivisions: "
+msgstr "उपविभाजन:"
+
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:1489
+#, fuzzy, kde-format
+#| msgid "Subdivision:"
+msgid "Minor Subdivisions: "
+msgstr "उपविभाजन:"
+
+#: plugins/assistants/Assistants/kis_assistant_tool.h:174
 #, fuzzy, kde-format
 msgid "Assistant Tool"
 msgstr "सहायक:"
@@ -33907,26 +33927,26 @@ msgstr "रूलर सहायक"
 msgid "Parallel Ruler"
 msgstr "रूलर सहायक"
 
-#: plugins/assistants/Assistants/PerspectiveAssistant.cc:28
+#: plugins/assistants/Assistants/PerspectiveAssistant.cc:29
 #, fuzzy, kde-format
 msgid "Perspective assistant"
 msgstr "पर्सपेक्टिव ग्रिड"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, perspectiveTransformButton)
 #. i18n: ectx: property (text), widget (QToolButton, perspectiveTransformButton)
-#: plugins/assistants/Assistants/PerspectiveAssistant.cc:499
+#: plugins/assistants/Assistants/PerspectiveAssistant.cc:526
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:152
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:155
 #, fuzzy, kde-format
 msgid "Perspective"
 msgstr "पर्सपेक्टिव ग्रिड"
 
-#: plugins/assistants/Assistants/RulerAssistant.cc:24
+#: plugins/assistants/Assistants/RulerAssistant.cc:25
 #, kde-format
 msgid "Ruler assistant"
 msgstr "रूलर सहायक"
 
-#: plugins/assistants/Assistants/RulerAssistant.cc:160
+#: plugins/assistants/Assistants/RulerAssistant.cc:339
 #, fuzzy, kde-format
 msgid "Ruler"
 msgstr "नियमित"
@@ -53478,18 +53498,18 @@ msgstr "दीर्घवृत्तीय चयन"
 msgid "Elliptical Selection Tool"
 msgstr "दीर्घवृत्तीय चयन"
 
-#: plugins/tools/selectiontools/kis_tool_select_outline.cc:52
-#, fuzzy, kde-format
-msgid "Freehand Selection"
-msgstr "रस्ता चयन"
-
-#: plugins/tools/selectiontools/kis_tool_select_outline.cc:165
+#: plugins/tools/selectiontools/kis_tool_select_outline.cc:54
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Freehand Selection"
 msgstr "रस्ता चयन"
 
-#: plugins/tools/selectiontools/kis_tool_select_outline.h:68
+#: plugins/tools/selectiontools/kis_tool_select_outline.cc:106
+#, fuzzy, kde-format
+msgid "Freehand Selection"
+msgstr "रस्ता चयन"
+
+#: plugins/tools/selectiontools/kis_tool_select_outline.h:55
 #, fuzzy, kde-format
 msgid "Freehand Selection Tool"
 msgstr "किनारा चयन"
@@ -60016,10 +60036,6 @@ msgstr "संदर्भ फोटू:"
 #, fuzzy
 #~ msgid "Dynamics settings"
 #~ msgstr "गतिसील ब्रस"
-
-#, fuzzy
-#~ msgid "Fixed angle"
-#~ msgstr "त्रिभुज"
 
 #, fuzzy
 #~| msgid "Circle"
