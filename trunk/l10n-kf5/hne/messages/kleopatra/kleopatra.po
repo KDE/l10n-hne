@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-04-27 00:46+0000\n"
+"POT-Creation-Date: 2022-04-28 00:44+0000\n"
 "PO-Revision-Date: 2009-02-27 21:59+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -9972,7 +9972,7 @@ msgstr "हियरार्चिकल प्रमानपत्र सू�
 msgid "List of certificates"
 msgstr "ए मोर प्रमानपत्र हे"
 
-#: src/view/netkeywidget.cpp:80 src/view/p15cardwidget.cpp:77
+#: src/view/netkeywidget.cpp:80 src/view/p15cardwidget.cpp:82
 #: src/view/pgpcardwidget.cpp:137 src/view/pivcardwidget.cpp:110
 #, fuzzy, kde-format
 #| msgid "Serial number"
@@ -10174,34 +10174,59 @@ msgctxt "@info"
 msgid "Sorry, I cannot find the key with fingerprint %1."
 msgstr ""
 
-#: src/view/p15cardwidget.cpp:92
+#: src/view/p15cardwidget.cpp:97
 #, fuzzy, kde-format
 #| msgid "OpenPGP"
 msgid "OpenPGP keys:"
 msgstr "ओपनपीजीपी"
 
-#: src/view/p15cardwidget.cpp:113
+#: src/view/p15cardwidget.cpp:110
+#, fuzzy, kde-format
+#| msgid "&Certificates"
+msgid "Load additional certificates"
+msgstr "प्रमानपत्र (&C)"
+
+#: src/view/p15cardwidget.cpp:111
+#, kde-format
+msgid ""
+"Search for additional certificates on the card and add them to the list. The "
+"certificates might be usable for S/MIME."
+msgstr ""
+
+#: src/view/p15cardwidget.cpp:125
+#, fuzzy, kde-format
+#| msgid "Exporting certificates..."
+msgid "Loading certificates..."
+msgstr "प्रमानपत्र निर्यात करत हे..."
+
+#: src/view/p15cardwidget.cpp:128
+#, fuzzy, kde-format
+#| msgid "Certifying other Certificates"
+msgid "Certificates added to the certificate list."
+msgstr "दूसर प्रमानपत्र प्रमानित करत हे"
+
+#: src/view/p15cardwidget.cpp:151
 #, fuzzy, kde-format
 #| msgid "Fetching certificate from server..."
 msgid "Searching in directory service..."
 msgstr "सर्वर से प्रमानपत्र प्राप्त करत हे..."
 
-#: src/view/p15cardwidget.cpp:128
+#: src/view/p15cardwidget.cpp:166
 #, kde-format
 msgid "Automatic import finished."
 msgstr ""
 
-#: src/view/p15cardwidget.cpp:133
+#: src/view/p15cardwidget.cpp:171
 #, kde-format
 msgid "Error multiple keys found on server."
 msgstr ""
 
-#: src/view/p15cardwidget.cpp:136
+#: src/view/p15cardwidget.cpp:174
 #, kde-format
 msgid "Key not found in directory service."
 msgstr ""
 
-#: src/view/p15cardwidget.cpp:145
+#: src/view/p15cardwidget.cpp:183
 #, kde-format
 msgctxt "%1 is a smartcard manufacturer"
 msgid "%1 PKCS#15 card"
@@ -11245,11 +11270,6 @@ msgstr ""
 #~| msgid_plural "Recipients:"
 #~ msgid "<h3>Recipients:</h3>"
 #~ msgstr "पावइया:"
-
-#, fuzzy
-#~| msgid "Certifying other Certificates"
-#~ msgid "Certificate Server Certificate Lookup"
-#~ msgstr "दूसर प्रमानपत्र प्रमानित करत हे"
 
 #~ msgid "Certificate Usage:"
 #~ msgstr "प्रमानपत्र उपयोग:"
