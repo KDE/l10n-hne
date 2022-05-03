@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-04-30 00:45+0000\n"
+"POT-Creation-Date: 2022-05-03 00:44+0000\n"
 "PO-Revision-Date: 2009-02-27 21:59+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -675,7 +675,7 @@ msgid "CRL cache cleared successfully."
 msgstr "सीआरएल कैस ल सफलतापूर्वक साफ करिस."
 
 #: src/commands/createcsrforcardkeycommand.cpp:147
-#: src/dialogs/certificatedetailswidget.cpp:196
+#: src/dialogs/certificatedetailswidget.cpp:205
 #, kde-format
 msgid "Certificate Details"
 msgstr "प्रमानपत्र विवरन"
@@ -2311,6 +2311,52 @@ msgctxt "@info"
 msgid "Key successfully generated."
 msgstr "गोपनीय कुंजी सफलता से निर्यात करिस."
 
+#: src/commands/refreshcertificatecommand.cpp:108
+#, kde-format
+msgid "The backend does not support refreshing individual certificates."
+msgstr ""
+
+#: src/commands/refreshcertificatecommand.cpp:143
+#, fuzzy, kde-format
+#| msgid "Refreshing keys..."
+msgctxt "@info:status"
+msgid "Refreshing key..."
+msgstr "कुंजियाँ ताजा करत हे ..."
+
+#: src/commands/refreshcertificatecommand.cpp:158
+#, fuzzy, kde-format
+#| msgid "Certificate created successfully."
+msgctxt "@info"
+msgid "The key was refreshed successfully."
+msgstr "प्रमानपत्र सफलता से बनाय गिस"
+
+#: src/commands/refreshcertificatecommand.cpp:159
+#, fuzzy, kde-format
+#| msgid "Newly revoked:"
+msgctxt "@title:window"
+msgid "Key Refreshed"
+msgstr "नवा नवा खारिज करिस:"
+
+#: src/commands/refreshcertificatecommand.cpp:167
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "<qt><p>An error occurred while trying to export the certificate:</p><p><b>"
+#| "%1</b></p></qt>"
+msgctxt "@info"
+msgid ""
+"<para>An error occurred while refreshing the key:</para><para><message>%1</"
+"message></para>"
+msgstr ""
+"<qt><p>प्रमानपत्र:</p><p><b>%1</b></p> निर्यात करे के कोसिसों के समय एक गलती हो "
+"गिस</qt>"
+
+#: src/commands/refreshcertificatecommand.cpp:170
+#, fuzzy, kde-format
+#| msgid "Refreshing Keys Failed"
+msgctxt "@title:window"
+msgid "Refreshing Failed"
+msgstr "कुंजियाँ ताजा करे मं फेल"
+
 #: src/commands/refreshopenpgpcertscommand.cpp:41
 #, kde-kuit-format
 msgctxt "@info"
@@ -2734,7 +2780,7 @@ msgstr "सब्बो विवरन देखाव"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_tags)
 #: src/conf/appearanceconfigwidget.ui:175
-#: src/dialogs/certificatedetailswidget.cpp:440
+#: src/dialogs/certificatedetailswidget.cpp:451
 #: src/dialogs/certifywidget.cpp:339
 #, kde-format
 msgid "Tags"
@@ -5405,27 +5451,27 @@ msgid ""
 "<interface>%1</interface> is invalid.<nl/>Local Admin rule: <icode>%2</icode>"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:169
+#: src/dialogs/certificatedetailswidget.cpp:172
 #, fuzzy, kde-format
 #| msgid "Add User-ID..."
 msgctxt "@action:button"
 msgid "Add User ID"
 msgstr "कमइया आईडी जोड़व..."
 
-#: src/dialogs/certificatedetailswidget.cpp:173
+#: src/dialogs/certificatedetailswidget.cpp:176
 #, kde-format
 msgctxt "@action:button"
 msgid "Change Passphrase"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:177
+#: src/dialogs/certificatedetailswidget.cpp:180
 #, fuzzy, kde-format
 #| msgid "Details..."
 msgctxt "@action:button"
 msgid "Trust Chain Details..."
 msgstr "विवरन..."
 
-#: src/dialogs/certificatedetailswidget.cpp:181
+#: src/dialogs/certificatedetailswidget.cpp:184
 #, fuzzy, kde-format
 #| msgctxt "@info:tooltip"
 #| msgid "Create a new certificate"
@@ -5433,7 +5479,7 @@ msgctxt "@action:button"
 msgid "Generate Revocation Certificate"
 msgstr "नवा प्रमानपत्र बनाव"
 
-#: src/dialogs/certificatedetailswidget.cpp:183
+#: src/dialogs/certificatedetailswidget.cpp:186
 #, kde-format
 msgid ""
 "A revocation certificate is a file that serves as a \"kill switch\" to "
@@ -5441,156 +5487,163 @@ msgid ""
 "to retract such a revocation certificate once it has been published."
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:190
+#: src/dialogs/certificatedetailswidget.cpp:193
+#, fuzzy, kde-format
+#| msgid "Refresh CRLs"
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr "सीआरएल ताजा करव"
+
+#: src/dialogs/certificatedetailswidget.cpp:199
 #, fuzzy, kde-format
 #| msgid "Certify"
 msgctxt "@action:button"
 msgid "Certify"
 msgstr "प्रमानित"
 
-#: src/dialogs/certificatedetailswidget.cpp:200
+#: src/dialogs/certificatedetailswidget.cpp:209
 #, fuzzy, kde-format
 #| msgid "Valid From"
 msgid "Valid from:"
 msgstr "तब से वैध"
 
-#: src/dialogs/certificatedetailswidget.cpp:214
+#: src/dialogs/certificatedetailswidget.cpp:223
 #, fuzzy, kde-format
 #| msgid "expired"
 msgid "Expires:"
 msgstr "मियाद खतम"
 
-#: src/dialogs/certificatedetailswidget.cpp:227
+#: src/dialogs/certificatedetailswidget.cpp:236
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Change the expiration date"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:234
+#: src/dialogs/certificatedetailswidget.cpp:243
 #, kde-format
 msgid "Type:"
 msgstr "किसिमः"
 
-#: src/dialogs/certificatedetailswidget.cpp:244
+#: src/dialogs/certificatedetailswidget.cpp:253
 #, fuzzy, kde-format
 #| msgid "Fingerprint"
 msgid "Fingerprint:"
 msgstr "फिंगरप्रिंट"
 
-#: src/dialogs/certificatedetailswidget.cpp:256
+#: src/dialogs/certificatedetailswidget.cpp:265
 #, fuzzy, kde-format
 #| msgid "Could not write to clipboard"
 msgctxt "@info:tooltip"
 msgid "Copy the fingerprint to the clipboard"
 msgstr "क्लिपबोर्ड मं लिख नइ सकिस."
 
-#: src/dialogs/certificatedetailswidget.cpp:265
+#: src/dialogs/certificatedetailswidget.cpp:274
 #, kde-format
 msgid "Publishing:"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:269
+#: src/dialogs/certificatedetailswidget.cpp:278
 #, fuzzy, kde-format
 #| msgid "Certificates"
 msgctxt "@action:button"
 msgid "Publish Certificate"
 msgstr "प्रमानपत्र"
 
-#: src/dialogs/certificatedetailswidget.cpp:274
+#: src/dialogs/certificatedetailswidget.cpp:283
 #, fuzzy, kde-format
 #| msgid "Issuer"
 msgid "Issuer:"
 msgstr "जारीकर्ता"
 
-#: src/dialogs/certificatedetailswidget.cpp:285
+#: src/dialogs/certificatedetailswidget.cpp:294
 #, fuzzy, kde-format
 #| msgid "Component:"
 msgid "Compliance:"
 msgstr "अवयव:"
 
-#: src/dialogs/certificatedetailswidget.cpp:298
+#: src/dialogs/certificatedetailswidget.cpp:307
 #, kde-format
 msgid "Trusted introducer for:"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:299
-#: src/dialogs/certificatedetailswidget.cpp:306
+#: src/dialogs/certificatedetailswidget.cpp:308
+#: src/dialogs/certificatedetailswidget.cpp:315
 #, fuzzy, kde-format
 #| msgid "Show certificate details"
 msgid "See certifications for details."
 msgstr "प्रमानपत्र विवरन देखाव"
 
-#: src/dialogs/certificatedetailswidget.cpp:313
+#: src/dialogs/certificatedetailswidget.cpp:322
 #, fuzzy, kde-format
 #| msgid "Details..."
 msgctxt "@action:button"
 msgid "More Details..."
 msgstr "विवरन..."
 
-#: src/dialogs/certificatedetailswidget.cpp:317
+#: src/dialogs/certificatedetailswidget.cpp:326
 #, fuzzy, kde-format
 #| msgid "Export"
 msgctxt "@action:button"
 msgid "Export..."
 msgstr "निर्यात"
 
-#: src/dialogs/certificatedetailswidget.cpp:321
+#: src/dialogs/certificatedetailswidget.cpp:330
 #, fuzzy, kde-format
 #| msgid "Certification"
 msgctxt "@action:button"
 msgid "Certifications..."
 msgstr "प्रमानपत्र"
 
-#: src/dialogs/certificatedetailswidget.cpp:345
+#: src/dialogs/certificatedetailswidget.cpp:354
 #, kde-format
 msgid ""
 "You can use this certificate to secure communication with the following "
 "email addresses:"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:350
+#: src/dialogs/certificatedetailswidget.cpp:359
 #, fuzzy, kde-format
 #| msgid "untrusted"
 msgid "Owner:"
 msgstr "अविस्वसनीय"
 
-#: src/dialogs/certificatedetailswidget.cpp:354
+#: src/dialogs/certificatedetailswidget.cpp:363
 #, fuzzy, kde-format
 #| msgid "EMail address:"
 msgid "Related addresses:"
 msgstr "ई-मेल पताः"
 
-#: src/dialogs/certificatedetailswidget.cpp:428
+#: src/dialogs/certificatedetailswidget.cpp:439
 #, fuzzy, kde-format
 #| msgid "Never"
 msgctxt "Expires"
 msgid "never"
 msgstr "कभू नइ"
 
-#: src/dialogs/certificatedetailswidget.cpp:440
+#: src/dialogs/certificatedetailswidget.cpp:451
 #, kde-format
 msgid "Email"
 msgstr "ईमेल"
 
-#: src/dialogs/certificatedetailswidget.cpp:440
+#: src/dialogs/certificatedetailswidget.cpp:451
 #: src/newcertificatewizard/newcertificatewizard.cpp:1420
 #, kde-format
 msgid "Name"
 msgstr "नांव"
 
-#: src/dialogs/certificatedetailswidget.cpp:440
+#: src/dialogs/certificatedetailswidget.cpp:451
 #, fuzzy, kde-format
 #| msgid "Newly revoked:"
 msgid "Trust Level"
 msgstr "नवा नवा खारिज करिस:"
 
-#: src/dialogs/certificatedetailswidget.cpp:485
+#: src/dialogs/certificatedetailswidget.cpp:496
 #, fuzzy, kde-format
 #| msgid "Export"
 msgid "Updating..."
 msgstr "निर्यात"
 
-#: src/dialogs/certificatedetailswidget.cpp:532
+#: src/dialogs/certificatedetailswidget.cpp:543
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "<qt><p>An error occurred while trying to export the secret key:</p><p><b>"
@@ -5603,35 +5656,35 @@ msgstr ""
 "<qt><p>गोपनीय कुंजी:</p><p><b>%1</b></p> ल निर्यात करे के कोसिसों के समय एक गलती "
 "होइस</qt>"
 
-#: src/dialogs/certificatedetailswidget.cpp:535
+#: src/dialogs/certificatedetailswidget.cpp:546
 #, fuzzy, kde-format
 #| msgid "Signed user IDs:"
 msgctxt "@action:button"
 msgid "Revoke User ID"
 msgstr "हस्ताक्छरित कमइया आईडी:"
 
-#: src/dialogs/certificatedetailswidget.cpp:538
+#: src/dialogs/certificatedetailswidget.cpp:549
 #, fuzzy, kde-format
 #| msgid "Information"
 msgctxt "@title:window"
 msgid "Confirm Revocation"
 msgstr "जानकारी"
 
-#: src/dialogs/certificatedetailswidget.cpp:693
+#: src/dialogs/certificatedetailswidget.cpp:715
 #: src/dialogs/weboftrustwidget.cpp:100 src/view/keylistcontroller.cpp:430
 #, fuzzy, kde-format
 #| msgid "Certify..."
 msgid "Certify..."
 msgstr "प्रमानित..."
 
-#: src/dialogs/certificatedetailswidget.cpp:706
+#: src/dialogs/certificatedetailswidget.cpp:728
 #, fuzzy, kde-format
 #| msgid "Signed user IDs:"
 msgctxt "@action:inmenu"
 msgid "Revoke User ID"
 msgstr "हस्ताक्छरित कमइया आईडी:"
 
-#: src/dialogs/certificatedetailswidget.cpp:714
+#: src/dialogs/certificatedetailswidget.cpp:736
 #: src/dialogs/weboftrustwidget.cpp:115 src/dialogs/weboftrustwidget.cpp:142
 #: src/view/keylistcontroller.cpp:434
 #, fuzzy, kde-format
@@ -5639,78 +5692,78 @@ msgstr "हस्ताक्छरित कमइया आईडी:"
 msgid "Revoke Certification..."
 msgstr "नवा प्रमानपत्र..."
 
-#: src/dialogs/certificatedetailswidget.cpp:772
+#: src/dialogs/certificatedetailswidget.cpp:794
 #, fuzzy, kde-format
 #| msgid "Never"
 msgid "never"
 msgstr "कभू नइ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, signingCB)
-#: src/dialogs/certificatedetailswidget.cpp:774
+#: src/dialogs/certificatedetailswidget.cpp:796
 #: src/newcertificatewizard/advancedsettingsdialog.ui:190
 #, kde-format
 msgid "Signing"
 msgstr "दसखत करे मं"
 
-#: src/dialogs/certificatedetailswidget.cpp:775
-#: src/dialogs/certificatedetailswidget.cpp:779
+#: src/dialogs/certificatedetailswidget.cpp:797
+#: src/dialogs/certificatedetailswidget.cpp:801
 #, kde-format
 msgid "First message"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:776
-#: src/dialogs/certificatedetailswidget.cpp:780
+#: src/dialogs/certificatedetailswidget.cpp:798
+#: src/dialogs/certificatedetailswidget.cpp:802
 #, kde-format
 msgid "Last message"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:777
-#: src/dialogs/certificatedetailswidget.cpp:781
+#: src/dialogs/certificatedetailswidget.cpp:799
+#: src/dialogs/certificatedetailswidget.cpp:803
 #, kde-format
 msgid "Message count"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, encryptionCB)
-#: src/dialogs/certificatedetailswidget.cpp:778
+#: src/dialogs/certificatedetailswidget.cpp:800
 #: src/newcertificatewizard/advancedsettingsdialog.ui:200
 #: src/smartcard/openpgpcard.cpp:95
 #, kde-format
 msgid "Encryption"
 msgstr "एनक्रिप्सन"
 
-#: src/dialogs/certificatedetailswidget.cpp:859
+#: src/dialogs/certificatedetailswidget.cpp:881
 #, kde-format
 msgid "Common Name"
 msgstr "सामान्य नाम"
 
-#: src/dialogs/certificatedetailswidget.cpp:860
+#: src/dialogs/certificatedetailswidget.cpp:882
 #, kde-format
 msgid "Organization"
 msgstr "संगठन "
 
-#: src/dialogs/certificatedetailswidget.cpp:861
+#: src/dialogs/certificatedetailswidget.cpp:883
 #, fuzzy, kde-format
 #| msgid "Strength"
 msgid "Street"
 msgstr "सामर्थ्य"
 
-#: src/dialogs/certificatedetailswidget.cpp:862
+#: src/dialogs/certificatedetailswidget.cpp:884
 #, kde-format
 msgid "City"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:863
+#: src/dialogs/certificatedetailswidget.cpp:885
 #, fuzzy, kde-format
 #| msgid "Status"
 msgid "State"
 msgstr "स्थिति"
 
-#: src/dialogs/certificatedetailswidget.cpp:864
+#: src/dialogs/certificatedetailswidget.cpp:886
 #, kde-format
 msgid "Country"
 msgstr "देस"
 
-#: src/dialogs/certificatedetailswidget.cpp:888
+#: src/dialogs/certificatedetailswidget.cpp:910
 #, kde-format
 msgctxt "<name> of <company>"
 msgid "%1 of %2"
@@ -11870,9 +11923,6 @@ msgstr ""
 #~ msgid "Hierarchical Key List"
 #~ msgstr "हियरार्चिकल कुंजी सूची"
 
-#~ msgid "Refresh CRLs"
-#~ msgstr "सीआरएल ताजा करव"
-
 #~ msgid "Extend"
 #~ msgstr "विस्तार देव"
 
@@ -11917,9 +11967,6 @@ msgstr ""
 #~ msgstr ""
 #~ "कुंजियाँ ताजा करे के कोसिस मं एक गलती होइस:\n"
 #~ "%1"
-
-#~ msgid "Refreshing Keys Failed"
-#~ msgstr "कुंजियाँ ताजा करे मं फेल"
 
 #~ msgid ""
 #~ "<qt><p>An error occurred while fetching the certificates from the backend:"
