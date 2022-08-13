@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-12 00:46+0000\n"
+"POT-Creation-Date: 2022-08-13 00:46+0000\n"
 "PO-Revision-Date: 2009-02-27 21:59+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -3040,7 +3040,6 @@ msgstr "सब्बो विवरन देखाव"
 #. i18n: ectx: attribute (title), widget (QWidget, tab_tags)
 #: src/conf/appearanceconfigwidget.ui:178
 #: src/dialogs/certificatedetailswidget.cpp:637
-#: src/dialogs/certifywidget.cpp:337
 #, kde-format
 msgid "Tags"
 msgstr ""
@@ -5692,6 +5691,7 @@ msgid "User IDs:"
 msgstr "कमइया आईडी"
 
 #: src/dialogs/certificatedetailswidget.cpp:337
+#: src/dialogs/certifywidget.cpp:353
 #, fuzzy, kde-format
 #| msgid "User-IDs"
 msgid "User IDs"
@@ -6187,31 +6187,31 @@ msgctxt "@title:window"
 msgid "Certificate Selection"
 msgstr "प्रमानपत्र चयन"
 
-#: src/dialogs/certifycertificatedialog.cpp:53
+#: src/dialogs/certifycertificatedialog.cpp:55
 #, kde-format
 msgid "Certify"
 msgstr "प्रमानित"
 
-#: src/dialogs/certifycertificatedialog.cpp:83
+#: src/dialogs/certifycertificatedialog.cpp:85
 #, fuzzy, kde-format
 #| msgid "No certificate selected"
 msgctxt "@title:window arg is name, email of certificate holder"
 msgid "Certify Certificate: %1"
 msgstr "कोई प्रमानपत्र चुने नइ गे हे."
 
-#: src/dialogs/certifywidget.cpp:282
+#: src/dialogs/certifywidget.cpp:325
 #, fuzzy, kde-format
 #| msgid "Certify"
 msgid "Certify with:"
 msgstr "प्रमानित"
 
-#: src/dialogs/certifywidget.cpp:292
+#: src/dialogs/certifywidget.cpp:338
 #, kde-format
 msgctxt "@action:button"
 msgid "Set Owner Trust"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:295
+#: src/dialogs/certifywidget.cpp:341
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -6219,78 +6219,84 @@ msgid ""
 "trust. This is what you usually want to do for your own keys."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:311
+#: src/dialogs/certifywidget.cpp:358
 #, kde-format
 msgid "Advanced"
 msgstr "विस्तृत"
 
-#: src/dialogs/certifywidget.cpp:317
+#: src/dialogs/certifywidget.cpp:358
+#, fuzzy, kde-format
+#| msgid "Advanced Settings"
+msgid "Show advanced options"
+msgstr "विस्तृत सेटिंग"
+
+#: src/dialogs/certifywidget.cpp:364
 #, kde-format
 msgid "Certify for everyone to see (exportable)"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:324
+#: src/dialogs/certifywidget.cpp:371
 #, kde-format
 msgid "Publish on keyserver afterwards"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:338
+#: src/dialogs/certifywidget.cpp:383
+#, kde-format
+msgid "Tags:"
+msgstr ""
+
+#: src/dialogs/certifywidget.cpp:387
 #, kde-format
 msgid "You can use this to add additional info to a certification."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:340
+#: src/dialogs/certifywidget.cpp:389
 #, kde-format
 msgid ""
 "Tags created by anyone with full certification trust are shown in the "
 "keylist and can be searched."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:343
+#: src/dialogs/certifywidget.cpp:392
 #, kde-format
 msgid "Explain tags"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:345
-#, kde-format
-msgid "Tags:"
-msgstr ""
-
-#: src/dialogs/certifywidget.cpp:356
+#: src/dialogs/certifywidget.cpp:405
 #, fuzzy, kde-format
 #| msgid "Option:"
 msgid "Expiration:"
 msgstr "विकल्प:"
 
-#: src/dialogs/certifywidget.cpp:364
+#: src/dialogs/certifywidget.cpp:413
 #, kde-format
 msgid "The certification must be valid at least until tomorrow."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:365
+#: src/dialogs/certifywidget.cpp:414
 #, fuzzy, kde-format
 #| msgid "(unknown certificate)"
 msgid "The latest allowed certification date is %1."
 msgstr "(अग्यात प्रमानपत्र)"
 
-#: src/dialogs/certifywidget.cpp:368
+#: src/dialogs/certifywidget.cpp:417
 #, kde-format
 msgctxt "Date for expiration of certification"
 msgid "Two years from now"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:369
+#: src/dialogs/certifywidget.cpp:418
 #, kde-format
 msgctxt "Date for expiration of certification"
 msgid "One year from now"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:374
+#: src/dialogs/certifywidget.cpp:423
 #, kde-format
 msgid "You can use this to set an expiration date for a certification."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:376
+#: src/dialogs/certifywidget.cpp:425
 #, kde-format
 msgid ""
 "By setting an expiration date, you can limit the validity of your "
@@ -6298,23 +6304,23 @@ msgid ""
 "passed, your certification is no longer valid."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:380
+#: src/dialogs/certifywidget.cpp:429
 #, fuzzy, kde-format
 #| msgid "Unchanged:"
 msgid "Explain expiration"
 msgstr "बिन बदले:"
 
-#: src/dialogs/certifywidget.cpp:393
+#: src/dialogs/certifywidget.cpp:442
 #, kde-format
 msgid "Certify as trusted introducer"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:394
+#: src/dialogs/certifywidget.cpp:443
 #, kde-format
 msgid "You can use this to certify a trusted introducer for a domain."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:396
+#: src/dialogs/certifywidget.cpp:445
 #, kde-format
 msgid ""
 "All certificates with email addresses belonging to the domain that have been "
@@ -6322,33 +6328,33 @@ msgid ""
 "introducer acts as a kind of intermediate CA for a domain."
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:401
+#: src/dialogs/certifywidget.cpp:450
 #, kde-format
 msgid "Explain trusted introducer"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:412
+#: src/dialogs/certifywidget.cpp:460
 #, kde-format
-msgid "Domain"
+msgid "Domain:"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:506
+#: src/dialogs/certifywidget.cpp:560
 #, fuzzy, kde-format
 #| msgid "Fingerprint"
 msgid "Fingerprint: <b>%1</b>"
 msgstr "फिंगरप्रिंट"
 
-#: src/dialogs/certifywidget.cpp:508
+#: src/dialogs/certifywidget.cpp:562
 #, kde-format
 msgid "<i>Only the fingerprint clearly identifies the key and its owner.</i>"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:602
+#: src/dialogs/certifywidget.cpp:656
 #, kde-format
 msgid "Is this your own key?"
 msgstr ""
 
-#: src/dialogs/certifywidget.cpp:617
+#: src/dialogs/certifywidget.cpp:671
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><p>An error occurred while trying to export the secret key:</p><p><b>"
@@ -6359,12 +6365,12 @@ msgstr ""
 "<qt><p>गोपनीय कुंजी:</p><p><b>%1</b></p> ल निर्यात करे के कोसिसों के समय एक गलती "
 "होइस</qt>"
 
-#: src/dialogs/certifywidget.cpp:620
+#: src/dialogs/certifywidget.cpp:674
 #, fuzzy, kde-format
 msgid "Certification Trust Change Failed"
 msgstr "प्रमानपत्र ल डाउनलोड करे मं फेल"
 
-#: src/dialogs/certifywidget.cpp:627
+#: src/dialogs/certifywidget.cpp:681
 #, fuzzy, kde-format
 #| msgid "Secret key successfully exported."
 msgid "Owner trust set successfully."
