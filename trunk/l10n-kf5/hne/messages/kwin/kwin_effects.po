@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-11 00:46+0000\n"
+"POT-Creation-Date: 2022-08-18 00:47+0000\n"
 "PO-Revision-Date: 2009-01-29 14:19+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -57,9 +57,9 @@ msgid ""
 msgstr ""
 
 #: desktopgrid/desktopgrid_config.cpp:49 invert/invert_config.cpp:35
-#: lookingglass/lookingglass_config.cpp:53 magnifier/magnifier_config.cpp:55
-#: mouseclick/mouseclick_config.cpp:48 mousemark/mousemark_config.cpp:50
-#: overview/kcm/overvieweffectkcm.cpp:35 showpaint/showpaint_config.cpp:33
+#: magnifier/magnifier_config.cpp:55 mouseclick/mouseclick_config.cpp:48
+#: mousemark/mousemark_config.cpp:50 overview/kcm/overvieweffectkcm.cpp:35
+#: showpaint/showpaint_config.cpp:33
 #: thumbnailaside/thumbnailaside_config.cpp:54
 #: trackmouse/trackmouse_config.cpp:52
 #: windowview/kcm/windowvieweffectkcm.cpp:35 zoom/zoom_config.cpp:58
@@ -332,12 +332,6 @@ msgstr "विंडो मं इनवर्ट प्रभाव टाग�
 msgid "Fade to black (fullscreen splash screens only)"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: lookingglass/lookingglass_config.ui:24
-#, kde-format
-msgid "&Radius:"
-msgstr "त्रिज्या: (&R)"
-
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: magiclamp/magiclamp_config.ui:17
 #, kde-format
@@ -498,8 +492,7 @@ msgid "Ring Count:"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, font)
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: mouseclick/mouseclick_config.ui:210 showfps/showfps_config.ui:17
+#: mouseclick/mouseclick_config.ui:210
 #, kde-format
 msgid "Text"
 msgstr "पाठ"
@@ -558,6 +551,12 @@ msgstr "रंग: (&C)"
 #, kde-format
 msgid "Draw with the mouse by holding Shift+Meta keys and moving the mouse."
 msgstr "सिफ्ट + मेटा कुंजी ल दबाए रख कर अउ मुसुवा ल खिसकाकर आप मन ड्राइंग कर सकथो "
+
+#: outputlocator/outputlocator.cpp:40
+#, kde-format
+msgctxt "@label"
+msgid "Unknown"
+msgstr ""
 
 #: overview/kcm/overvieweffectkcm.cpp:41 overview/overvieweffect.cpp:31
 #, fuzzy, kde-format
@@ -662,107 +661,36 @@ msgid ""
 "Escape or right click to cancel."
 msgstr ""
 
-#: showfps/showfps.cpp:48
+#: showfps/qml/main.qml:110
+#, fuzzy, kde-format
+#| msgid "Fading duration:"
+msgctxt "@label"
+msgid "Paint Duration"
+msgstr "फीका पड़े के अवधिः"
+
+#: showfps/qml/main.qml:162
 #, kde-format
+msgctxt "@label"
+msgid "Paint Amount"
+msgstr ""
+
+#: showfps/qml/main.qml:175
+#, kde-format
+msgctxt "@label"
+msgid "Current FPS"
+msgstr ""
+
+#: showfps/qml/main.qml:184
+#, fuzzy, kde-format
+#| msgid "Maximum &width:"
+msgctxt "@label"
+msgid "Maximum FPS"
+msgstr "सबसे अधिक चौड़ाई (&W):"
+
+#: showfps/qml/main.qml:192
+#, kde-format
+msgctxt "@label"
 msgid "This effect is not a benchmark"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: showfps/showfps_config.ui:23
-#, kde-format
-msgid "Text position:"
-msgstr "पाठ स्थिति:"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
-#: showfps/showfps_config.ui:43
-#, kde-format
-msgid "Inside Graph"
-msgstr "ग्राफ के भीतर"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
-#: showfps/showfps_config.ui:48
-#, kde-format
-msgid "Nowhere"
-msgstr "कहीं नइ"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
-#: showfps/showfps_config.ui:53
-#, kde-format
-msgid "Top Left"
-msgstr "ऊपरी डेरी "
-
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
-#: showfps/showfps_config.ui:58
-#, kde-format
-msgid "Top Right"
-msgstr "ऊपरी जेवनी "
-
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
-#: showfps/showfps_config.ui:63
-#, kde-format
-msgid "Bottom Left"
-msgstr "निचला डेरी "
-
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
-#: showfps/showfps_config.ui:68
-#, kde-format
-msgid "Bottom Right"
-msgstr "निचला जेवनी "
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: showfps/showfps_config.ui:76
-#, kde-format
-msgid "Text font:"
-msgstr "पाठ फोंटः"
-
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: showfps/showfps_config.ui:96
-#, kde-format
-msgid "Text color:"
-msgstr "पाठ रंगः"
-
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: showfps/showfps_config.ui:119
-#, kde-format
-msgid "Text alpha:"
-msgstr "पाठ अल्फा:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: showfps/showfps_config.ui:154
-#, fuzzy, kde-format
-#| msgid "Show caps"
-msgid "Show graph:"
-msgstr "कैप्स देखाव"
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowGraph)
-#: showfps/showfps_config.ui:167
-#, kde-format
-msgid "Show on active screen"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: showfps/showfps_config.ui:174
-#, fuzzy, kde-format
-#| msgid "Show Desktop Grid"
-msgid "Show Message:"
-msgstr "डेस्कटाप ग्रिड देखाव"
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowNoBenchmark)
-#: showfps/showfps_config.ui:187
-#, kde-format
-msgid "Show \"not a benchmark\" message"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: showfps/showfps_config.ui:194
-#, kde-format
-msgid "Colorize Text:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ColorizeText)
-#: showfps/showfps_config.ui:207
-#, kde-format
-msgid "Color text by value (green > yellow > red)"
 msgstr ""
 
 #: showpaint/showpaint.cpp:38 showpaint/showpaint_config.cpp:38
@@ -1230,6 +1158,49 @@ msgstr "अक्छम"
 #, kde-format
 msgid "Mouse Tracking:"
 msgstr ""
+
+#~ msgid "&Radius:"
+#~ msgstr "त्रिज्या: (&R)"
+
+#~ msgid "Text position:"
+#~ msgstr "पाठ स्थिति:"
+
+#~ msgid "Inside Graph"
+#~ msgstr "ग्राफ के भीतर"
+
+#~ msgid "Nowhere"
+#~ msgstr "कहीं नइ"
+
+#~ msgid "Top Left"
+#~ msgstr "ऊपरी डेरी "
+
+#~ msgid "Top Right"
+#~ msgstr "ऊपरी जेवनी "
+
+#~ msgid "Bottom Left"
+#~ msgstr "निचला डेरी "
+
+#~ msgid "Bottom Right"
+#~ msgstr "निचला जेवनी "
+
+#~ msgid "Text font:"
+#~ msgstr "पाठ फोंटः"
+
+#~ msgid "Text color:"
+#~ msgstr "पाठ रंगः"
+
+#~ msgid "Text alpha:"
+#~ msgstr "पाठ अल्फा:"
+
+#, fuzzy
+#~| msgid "Show caps"
+#~ msgid "Show graph:"
+#~ msgstr "कैप्स देखाव"
+
+#, fuzzy
+#~| msgid "Show Desktop Grid"
+#~ msgid "Show Message:"
+#~ msgstr "डेस्कटाप ग्रिड देखाव"
 
 #~ msgid "Zoom &duration:"
 #~ msgstr "जूम अवधिः (&d)"
